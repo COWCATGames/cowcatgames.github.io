@@ -1,0 +1,806 @@
+﻿#-------------------------------
+#=Factory front
+#-------------------------------
+
+
+#----------------------
+#= First
+#----------------------
+ID=PC18_ARRIVE1
+T=Must be the factory.
+W=BROK
+A=MOCK
+CONTEXT=Brok comes to pick up Dr. Gherkin who asked for his help
+
+T=Now, where's that guy?...
+W=BROK
+A=WONDER
+TEN=PC18_ARRIVE2
+
+#----------------------
+#= Hologram
+#----------------------
+ID=PC18_HOLOGRAM1
+T=Holo-news of the day.
+W=BROK
+A=THINK
+TEN=PC18_HOLOGRAM_CHECK
+CONTEXT=The hologram displays news, which changes according to player actions
+
+#----------------------
+ID=PC18_HOLOGRAM_DEADALL
+T="Two scientists and a guard found dead in Engineer Lab 21."
+TEXTONLY=1
+TEN=PC18_HOLOGRAM_DEADNEXTCHECK
+
+#----------------------
+ID=PC18_HOLOGRAM_DEADEXCEPTMINK
+T="One scientist and a guard found dead in Engineer Lab 21."
+TEXTONLY=1
+TEN=PC18_HOLOGRAM_DEADNEXTCHECK
+
+#----------------------
+ID=PC18_HOLOGRAM_DEADEXCEPTGUARD
+T="Two scientists found dead in Engineer Lab 21."
+TEXTONLY=1
+TEN=PC18_HOLOGRAM_DEADNEXTCHECK
+
+
+#----------------------
+ID=PC18_HOLOGRAM_DEADNEXT
+T=Oh my gosh...! Those guys... They're...
+W=BROK
+A=WORRIED
+
+T=What happened? Did I incriminate the wrong person yesterday?...
+W=BROK
+A=TIRED
+TEN=PC18_HOLOGRAM_DEADNEXT_CHECKGHERKIN
+
+#----------------------
+ID=PC18_HOLOGRAM_DEADNEXT_GHERKIN
+T=This is awful! Who would do such a thing to scientists?
+W=GHERKIN
+C1=BROK
+C1A=TIRED
+C2=GHERKIN
+C2A=WORRIED
+
+T=I-I hope it's not some Untail fanatist...
+W=GHERKIN
+C2A=ANGRY
+TEN=PC18_HOLOGRAM_DEADNEXT2
+
+#----------------------
+ID=PC18_HOLOGRAM_DEADNEXT2
+T="The criminal remains unidentified."
+TEXTONLY=1
+
+T="Be careful today! Stay inside and lock your entrance!"
+TEXTONLY=1
+
+T="Following these dramatic events, an Aircar presumably stolen by the murderer caused havoc on the highway."
+TEXTONLY=1
+TEN=PC18_HOLOGRAM_CHASE1B
+
+
+#----------------------
+ID=PC18_HOLOGRAM_CHASE1
+T="Dramatic chase on the highway."
+TEXTONLY=1
+T="Yesterday an individual stole an Aircar to persecute a bot, causing havoc in the process."
+TEXTONLY=1
+
+T=I wonder who would be stupid enough to do this!...
+W=BROK
+A=HAPPY
+TEN=PC18_HOLOGRAM_CHECKGHERKIN
+
+#----------------------
+ID=PC18_HOLOGRAM_CHASE1_GHERKIN
+T=F-for sure! Youngsters are crazy these days!
+W=GHERKIN
+C1=BROK
+C1A=HAPPY
+C2=GHERKIN
+C2A=ANGRY
+TEN=PC18_HOLOGRAM_CHASE1B
+
+#----------------------
+ID=PC18_HOLOGRAM_CHASE1B
+T="The last remotely related event in the Drums goes back to 3030."
+TEXTONLY=1
+T="A police investigator miraculously survived an Aircar accident while chasing a criminal."
+TEXTONLY=1
+
+T=Hmm... I didn't remember this.
+W=BROK
+A=WONDER
+CLUE=CLUE_POLICE_CARACCIDENT
+
+
+#----------------------
+#= Fix bot
+#----------------------
+ID=PC18_FIXBOT1
+T=A Fix-Bot!
+W=BROK
+A=ALRIGHT
+CONTEXT=Room interactions
+
+T=It's stuck on that container. Must be used to repair that membrane.
+W=BROK
+A=MOCK
+
+T=I have a feeling it's not doing its job...
+W=BROK
+A=MEH
+TEN=PC18_FIXBOT_CHOICE
+
+#----------------------
+ID=PC18_FIXBOT2
+T=Seems stuck in that corner!
+W=BROK
+A=MEH
+TEN=PC18_FIXBOT_CHOICE
+
+#----------------------
+ID=PC18_FIXBOT_SHOULDUSEREMOTE
+T=Let's use the remote control.
+W=BROK
+A=MOCK
+
+#----------------------
+ID=PC18_FIXBOT_HURT1
+T=Argh...
+W=BROK
+A=CONFUSED
+
+T=I don't have much luck with bots today...
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC18_FIXBOT_REMOTE
+T=Hmm... I wonder if...
+W=BROK
+A=THINK
+TEN=PC18_FIXBOT_USEREMOTE
+
+#----------------------
+ID=PC18_FIXBOT_REMOTE2
+T=Nice!
+W=BROK
+A=HAPPY
+TEN=PC18_FIXBOT_ACCESS
+
+#----------------------
+ID=PC18_FIXBOT_OTHERS
+T=I dun wanna damage it!
+W=BROK
+A=ANGRY
+
+
+
+#----------------------
+#= Hole
+#----------------------
+ID=PC18_HOLE1
+T=A hole in the membrane...
+W=BROK
+A=THINK
+
+T=And here I thought this side was a perfect world. Color me disappointed.
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC18_HOLE_FINISHED
+T=There ya go! Brand new.
+W=BROK
+A=ALRIGHT
+
+#----------------------
+#= Container
+#----------------------
+ID=PC18_CONTAINER1
+T=A self-contained vegetation growth system.
+W=BROK
+A=THINK
+
+T=That noisy pump inside irrigates the roots of the plants.
+W=BROK
+
+#----------------------
+ID=PC18_CONTAINER2
+T=An artificial environment requires an artificial way of living, I guess.
+W=BROK
+A=MAYBE
+
+T=It's supposed to be sealed so why am I hearing this pump?...
+W=BROK
+A=WONDER
+
+
+#----------------------
+#= Pipe
+#----------------------
+ID=PC18_PIPE1
+T=I guess this pipe brings water, food and whatever the officer inside requests.
+W=BROK
+A=THINK
+
+T=And if there's toilets... The opposite.
+W=BROK
+A=MEH
+
+
+#----------------------
+#= Factory
+#----------------------
+ID=PC18_FACTORY1
+T=So this is where Toxout pills are made...
+W=BROK
+A=THINK
+
+T=Where are the pipes to transport them? Underground, maybe?
+W=BROK
+A=WONDER
+TEN=PC18_FACTORY_RESET
+
+#----------------------
+#= Sentry box
+#----------------------
+ID=PC18_SENTRYBOX1
+T=Seems hermetic.
+W=BROK
+A=MOCK
+
+T=Only one way in... For a human, at least.
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+#= Door
+#----------------------
+ID=PC18_DOOR_KNOCK1
+T=Hey?... Is someone there?...
+W=BROK
+A=WONDER
+CONTEXT=Brok knocks on the sentry box door
+
+#----------------------
+ID=PC18_DOOR_KNOCK2
+T=Doctor Gherkin?...
+W=BROK
+A=READY
+
+#----------------------
+ID=PC18_DOOR_KNOCKAFTER1
+T=At least let me enter!
+W=BROK
+C1=BROK
+C1A=READY
+
+T=And allow those monsters to sneak in?!
+W=GHERKIN
+C2=GHERKIN
+C2A=WORRIED
+
+T=Never!
+W=GHERKIN
+
+#----------------------
+ID=PC18_DOOR_KNOCKAFTER2
+T=Locked...
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC18_DOOR_HIT1
+T=This is Brok! Can't you hear me?...
+W=BROK
+C1=BROK
+C1A=READY
+
+T=I know you're in there!
+W=BROK
+TEN=PC18_WINDOW_GHERKINAPPEAR
+
+#----------------------
+ID=PC18_DOOR_HIT2
+T=What are you doing?...
+NB=1
+D=60
+BNAMESP=GHERKIN
+BVOICESP=GHERKIN
+
+T=Stop that!
+D=60
+BNAMESP=GHERKIN
+BVOICESP=GHERKIN
+
+T=Only when I've got you outta here!
+D=60
+BNAMESP=BROK
+BVOICESP=BROK
+
+#----------------------
+ID=PC18_DOOR_HIT3
+T=Help! Somebody!
+NB=1
+D=60
+BNAME=GHERKIN
+BVOICE=GHERKIN
+
+T=I-I'm scared!...
+D=60
+
+#----------------------
+ID=PC18_DOOR_AFTERDEATH
+T=...
+W=BROK
+C1=BROK
+C1A=READY
+TEN=PC18_GHERKIN_RUNSAWAY
+CONTEXT=If we break the door
+
+T=Aaaaaaaaaahhhh!!!
+BNAMESP=GHERKIN
+BVOICESP=GHERKIN
+TEN=PC18_DOOR_AFTERDEATH2
+
+#----------------------
+ID=PC18_DOOR_AFTERDEATH2
+T=No way! He escaped!
+W=BROK
+A=SURPRISED
+
+T=Maybe I went too far?...
+W=BROK
+A=WORRIED
+
+#----------------------
+#= Window
+#----------------------
+ID=PC18_WINDOW_BEFORE1
+T=Uh?...
+W=BROK
+C1=BROK
+C1A=WONDER
+CONTEXT=Talking to Gherkin
+
+T=Doctor Gherkin! I can see you!
+W=BROK
+C1A=MOCK
+
+T=You can stop hiding in that corner!
+W=BROK
+C1A=HAPPY
+TEN=PC18_WINDOW_GHERKINAPPEAR
+
+
+#----------------------
+ID=PC18_GHERKIN_TALK1
+T=Oh!... Mister Brok...
+W=GHERKIN
+C1=BROK
+C1A=HAPPY
+C2=GHERKIN
+C2A=EMBARRASSED
+TEN=PC18_GHERKIN_TALK_BROKCOMES
+
+T=Sorry, I thought...
+W=GHERKIN
+C2A=HAPPY
+
+T=Yikes!...
+W=GHERKIN
+C1A=SURPRISED
+C2A=WORRIED
+
+T=What's going on?...
+W=BROK
+C1A=THINK
+
+T=The Tribots! They're coming!
+W=GHERKIN
+
+T=What?...
+W=BROK
+C1A=WORRIED
+
+T=I hear them!
+W=GHERKIN
+
+T=Oh, great... Another paranoid scientist.
+W=BROK
+C1A=STUPID
+
+T=Come on! We gotta go!
+W=BROK
+C1A=MOCK
+
+T=No!...
+W=GHERKIN
+
+
+#----------------------
+ID=PC18_WINDOW_RUNAWAY
+T=He has run away.
+W=BROK
+A=TIRED
+
+
+#----------------------
+ID=PC18_WINDOW_EMPTY
+T=Empty...
+W=BROK
+A=TIRED
+
+#----------------------
+# When back
+ID=PC18_GHERKIN_TALKAGAIN1
+T=Hey, Doc! Me again!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GHERKIN
+C2A=WORRIED
+
+T=M-Mister Detective?...
+W=GHERKIN
+
+T=What happened? What'ya doin' back in there?
+W=BROK
+C1A=WONDER
+
+T=I... I panicked...
+W=GHERKIN
+
+T=You were gone... I thought I heard some bots around...
+W=GHERKIN
+
+T=So you ran to the only place you consider safe.
+W=BROK
+C1A=MEH
+
+T=How did you know?!
+W=GHERKIN
+
+T=Just a hunch.
+W=BROK
+TEN=PC18_GHERKIN_BOTSAGAIN
+
+T=Well, come out. We don't have much...
+W=BROK
+C1A=READY
+TEN=PC18_BROK_TURNROBOTS
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=Oooh no.
+W=BROK
+C1A=ANGRY
+
+T=What is it?
+W=GHERKIN
+TEN=PC18_GHERKIN_BOTSAGAIN_SHOW
+
+
+#----------------------
+ID=PC18_GHERKIN_TALKAGAIN1B
+T=Erm... Your "friends" are here.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=GHERKIN
+C2A=WORRIED
+
+T=Ahhhhh!
+W=GHERKIN
+
+T=Fortunately they're too dumb to have noticed us yet.
+W=BROK
+TEN=PC18_GHERKIN_BOTSAGAIN_CAMERABACK
+
+T=Oh boy... This nightmare will never end...
+W=GHERKIN
+C2_EYESHUT=1
+
+T=What do we do?!
+W=GHERKIN
+C2_EYESHUT=0
+
+T=Hmm...
+W=BROK
+C1A=THINK
+
+T=They're blocking the way to the left.
+W=BROK
+
+T=What about that path on the right?
+W=BROK
+C1A=MOCK
+
+T=I-Is that one safe?
+W=GHERKIN
+
+T=As far as I can tell.
+W=BROK
+
+T=I-I believe this leads back to the Border Post but that's a long detour...
+W=GHERKIN
+C2A=ANGRY
+
+T=Y-you choose...
+W=GHERKIN
+
+T=Just... don't leave me here!
+W=GHERKIN
+C2A=WORRIED
+TEN=CLICKERS_BACK
+
+#----------------------
+ID=PC18_GHERKIN_TALKAGAIN2
+T=Do something!...
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+
+T=Working on it!
+W=BROK
+C1A=ANGRY
+
+#----------------------
+#= Window
+#----------------------
+ID=PC18_WINDOW_GHERKIN1
+T=Come on! Don't be a chicken!
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=WORRIED
+
+T=You're the one who asked me to come, remember?
+W=BROK
+
+T=I won't get out till it's safe!...
+W=GHERKIN
+C2A=ANGRY
+
+T=It is safe!
+W=BROK
+C1A=ANGRY
+
+T=I-I don't believe you!...
+W=GHERKIN
+
+T=What if a bot jumps at me suddenly? Or falls from the sky?...
+W=GHERKIN
+C2A=WORRIED
+
+T=Aww...
+W=BROK
+C1A=STUPID
+
+#----------------------
+ID=PC18_WINDOW_GHERKIN2
+T=I assure you. There's no Tribots around.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=Are you crazy?! Can't you hear those footsteps?
+W=GHERKIN
+C2A=WORRIED
+
+T=Get rid of them!
+W=GHERKIN
+C2A=ANGRY
+
+#----------------------
+ID=PC18_WINDOW_MOST1
+T=They're gone!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GHERKIN
+C2A=WORRIED
+
+T=Are you sure?... I can still faintly hear their footsteps...
+W=GHERKIN
+C2A=ANGRY
+
+T=Man, you've got quite the hearing for an old man!
+W=BROK
+C1A=TIRED
+
+T=Erm... No offense.
+W=BROK
+
+T=Well... Back to work.
+W=BROK
+C1A=STUPID
+
+#----------------------
+ID=PC18_WINDOW_ALL1
+T=I took care of those terrible creatures. It's safe now. 
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=NORMAL
+
+T=...
+W=GHERKIN
+
+T=You're right!
+W=GHERKIN
+C2A=HAPPY
+TEN=PC18_GHERKIN_GOESOUT
+
+T=Finally...
+W=BROK
+C1A=TIRED
+TEN=CLICKERS_BACK
+
+#----------------------
+ID=PC18_WINDOW_ALL2
+T=What are you waiting for?!
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+
+T=Let's move! To the border!
+W=GHERKIN
+
+T=Okay... Follow me.
+W=BROK
+C1A=READY
+
+#----------------------
+ID=PC18_WINDOW_BACK1
+T=Hey! Doc!
+W=BROK
+C1=BROK
+C1A=HAPPY
+TEN=PC18_WINDOW_MOVETOWINDOW
+
+T=I figured you'd come back here.
+W=BROK
+C1A=MOCK
+
+T=Did you get them?
+W=GHERKIN
+C2=GHERKIN
+C2A=WORRIED
+
+T=Yeah. Totally destroyed and in little pieces.
+W=BROK
+
+T=Look... Truly sorry about earlier.
+W=BROK
+C1A=MAYBE
+
+T=Oh... That's what I get for hiring a rough fighter.
+W=GHERKIN
+C2A=NORMAL
+
+T=I... I'm ready now.
+W=GHERKIN
+C1A=HAPPY
+TEN=PC18_GHERKIN_GOESOUT
+
+T=Let's go to the border first.
+W=GHERKIN
+
+T=Good.
+W=BROK
+TEN=ACTIVATE_CLICKERS
+
+
+#----------------------
+ID=PC18_BOTS_SEEBROK
+T=Oh-oh...
+W=BROK
+A=SURPRISED
+CONTEXT=Bots notice Brok
+
+T=Maybe the doctor's not so paranoid after all!
+W=BROK
+TEN=PC18_BOTS_COME
+
+T=Target acquired!
+W=TRIBOT
+C2=TRIBOT
+C2A=NORMAL
+TEN=PC18_BOTS_STARTFIGHT_CHECK
+
+
+#----------------------
+#= Come back again
+#----------------------
+ID=PC18_ARRIVEAGAIN1
+T=Look who's back!
+W=BROK
+A=MOCK
+TEN=PC18_ARRIVEAGAIN2
+
+#----------------------
+#= Fight (again) over
+#----------------------
+
+ID=PC18_BOTSAGAIN_ENDFIGHT1
+T=Doctor! The coast is clear!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GHERKIN
+C2A=NORMAL
+CONTEXT=AFter winning the fight
+
+T=Oh... Okay!
+W=GHERKIN
+TEN=PC18_BOTSAGAIN_GHERKINCOMES
+
+T=We gotta hurry!
+W=BROK
+C1A=READY
+TEN=PC18_BOTSAGAIN_TOPC12
+
+#--------------------------------------------
+#= Fight (again) over, if we need a pill
+#--------------------------------------------
+ID=PC18_BOTSAGAIN_ENDFIGHT_PILL
+T=No way! That bot had a Toxout pill!
+W=BROK
+A=SURPRISED
+TEN=PC18_PILL_GET
+
+#--------------------------------------------
+ID=PC18_BOTSAGAIN_ENDFIGHT_PILL2
+T=Now to leave this place...
+W=BROK
+A=READY
+TEN=PC18_BOTSAGAIN_ENDFIGHT1
+
+#----------------------
+#= Escape
+#----------------------
+ID=PC18_EXITRIGHT1
+T=Come on, Dr. Gherkin! We can escape through there!
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=WORRIED
+
+T=B-b-but... The Tribots are still...
+W=GHERKIN
+
+T=No time for this!
+W=BROK
+C1A=ANGRY
+
+T=If you wait, they'll get closer!
+W=BROK
+
+T=Oh boy...
+W=GHERKIN
+TEN=PC18_EXITRIGHT_GO
+
+
+###############################################
+# PROOFREAD - jblaker - 03/09/2019
+###############################################

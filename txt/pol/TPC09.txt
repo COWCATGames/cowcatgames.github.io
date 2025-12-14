@@ -1,0 +1,781 @@
+#-------------------------------
+#=POLICE ENTRANCE
+#-------------------------------
+
+#----- Interactions --------
+PC_JAIL=Do aresztu
+PC_OFFICE=Biuro
+PC_BARRIER=Bariera
+
+#----- Choices / Items --------
+
+
+#----- Topics --------
+GOT_SPEAKER=Głośnik!
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Go there before getting chip OR the mission for the hacker
+# *****************************************************************
+# Wes                                 
+PC09_TOOSOON1-1=...
+# Brok                                 
+PC09_TOOSOON1-2=Hej. Co tam?
+# Wes                                 
+PC09_TOOSOON1-3=Nie oczekiwałem cię tak wcześnie.
+# Wes                                 
+PC09_TOOSOON1-4=Zmiana planów. Muszę iść.
+# Brok                                 
+PC09_TOOSOON1-5=Hej, czekaj! Miałem...
+# Wes                                 
+PC09_TOOSOON1-6=Później dam ci zadanie.
+#----------------------------------------------------
+# Brok                                 
+PC09_TOOSOON2-1=Stary... Nie dziwię się, że ten koleś jest otoczony przez boty.
+# Brok                                 
+PC09_TOOSOON2-2=Jest tak zimny jak one.
+# Brok                                 
+PC09_TOOSOON2-3=Cóż, nie ma sensu tu czekać.
+# Brok                                 
+PC09_TOOSOON2-4=Lepiej zrobię coś dla Graffa w międzyczasie!
+#----------------------------------------------------
+# Brok                                 
+PC09_DOOR_TOOSOON-1=Zamknięte...
+# Brok                                 
+PC09_DOOR_TOOSOON-2=Na razie powinienem się martwić, żeby wyciągnąć Graffa z tarapatów.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC09_WINDOW1-1=Zbyt ciemno... Nie wiem, czy ktoś jest w środku.
+#----------------------------------------------------
+# Brok                                 
+PC09_BUTTON1-1=Och... Myślałem, że to będzie bardziej przydatne.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When sneaking after escaping jail
+# *****************************************************************
+# Brok                                 
+PC09_TO_JAIL1-1=Za późno, żeby wrócić!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Shutting down tribot
+# *****************************************************************
+# Brok                                 
+PC09_TRIBOT_TOOFAR-1=Chyba mogę go wyłączyć...
+# Brok                                 
+PC09_TRIBOT_TOOFAR-2=Muszę się tylko zbliżyć do niego niezauważony.
+#----------------------------------------------------
+# Brok                                 
+PC09_TRIBOT_ALREADY-1=Już nie będzie mi przeszkadzał...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More interactions
+# *****************************************************************
+# Brok                                 
+PC09_TO_OFFICE1-1=Jest tylko jedno wyjście. I to nie tu!
+#----------------------------------------------------
+# Brok                                 
+#This Tribot is actually a special model. He is blind because his captors are defective. Like other Tribots he refers to himself as "us"
+PC09_SPEAKER1-1=Nie pamiętam tego głośnika.
+# Tribot                                 
+PC09_SPEAKER1-2=Potwierdzamy. Był zepsuty. Dzisiaj go wymieniliśmy.
+# Tribot                                 
+PC09_SPEAKER1-3=Bez poprawnie działających kamer dźwięk jest niezbędny do zrozumienia przez nas żądań odwiedzających.
+#----------------------------------------------------
+# Brok                                 
+#We stole the speaker
+PC09_SPEAKERGONE-1=(Gwiżdże)
+#----------------------------------------------------
+# Brok                                 
+PC09_SPEAKERTAKEOK-1=...
+# Brok                                 
+PC09_SPEAKERTAKEOK-2=Mam!
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE1-1=Zamknięte...
+# Tribot                                 
+PC09_OFFICE1-2=Wstęp do tego miejsca jest zabroniony.
+# Brok                                 
+PC09_OFFICE1-3=Nie dla mnie!
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE1B-1=Znajdę sposób. Jak zawsze.
+# Tribot                                 
+PC09_OFFICE1B-2=Taka pewność siebie. Ludzie nie są sensowni.
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE2-1=(Zamknięte... Nie ma opcji otworzenia ich bez używania siły.)
+# Tribot                                 
+PC09_OFFICE2-2=Prosimy zaprzestać prób otwarcia tych drzwi.
+# Brok                                 
+PC09_OFFICE2-3=Skąd wiesz? Nie masz oczu!
+# Tribot                                 
+PC09_OFFICE2-4=Mamy mikrofony.
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE_STORY190-1=Zamknięte...
+# Tribot                                 
+PC09_OFFICE_STORY190-2=Komendant Wes. Nie przyjmuje. Nikogo.
+# Brok                                 
+PC09_OFFICE_STORY190-3=Ale ja nie jestem nikim!
+# Tribot                                 
+PC09_OFFICE_STORY190-4=Sprawdzimy.
+# Tribot                                 
+PC09_OFFICE_STORY190-5=Nieprawda. Nie jesteś. Na liście osób o "wysokim priorytecie".
+# Tribot                                 
+PC09_OFFICE_STORY190-6=Jesteś po prostu kimkolwiek.
+# Brok                                 
+PC09_OFFICE_STORY190-7=Ach...
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE_STORY280-1=Zamknięte...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to the blind bot at the reception
+# *****************************************************************
+# Brok                                 
+PC09_BLINDBOT1-1=Halo!
+# Blindbot                                 
+PC09_BLINDBOT1-2=Prosimy stanąć na odpowiednim kafelku, by wezwać pomoc.
+# Brok                                 
+PC09_BLINDBOT1-3=Na... kafelku?
+# Blindbot                                 
+PC09_BLINDBOT1-4=Tak. Prosimy, gościu.
+# Brok                                 
+PC09_BLINDBOT1-5=Nie mam czasu na te bzdury!
+#----------------------------------------------------
+# Brok                                 
+PC09_THESITUATION-1=Wes powiedział, że mamy się rano spotkać.
+# Blindbot                                 
+PC09_THESITUATION-2=Sprawdzamy...
+# Blindbot                                 
+PC09_THESITUATION-3=Potwierdzamy. Czekał na ciebie, ale musiał pilnie wyjść.
+# Blindbot                                 
+PC09_THESITUATION-4=Zażądał, żebyś pozostał tu do jego powrotu.
+# Blindbot                                 
+PC09_THESITUATION-5=Zawsze sumiennie wykonujemy rozkazy komendanta!
+# Brok                                 
+PC09_THESITUATION-6=Ale... zrobił ze mnie tymczasowego glinę!
+# Blindbot                                 
+PC09_THESITUATION-7=Sprawdzamy...
+# Blindbot                                 
+PC09_THESITUATION-8=Ta informacja jest prawdziwa.
+# Blindbot                                 
+PC09_THESITUATION-9=Jednakże nie masz wymaganych uprawnień, by otworzyć biuro komendanta.
+# Brok                                 
+PC09_THESITUATION-10=Szlag...
+# Brok                                 
+PC09_THESITUATION-11=Gdzie on jest?
+# Blindbot                                 
+PC09_THESITUATION-12=Ta informacja jest tajna.
+# Brok                                 
+PC09_THESITUATION-13=Kiedy wróci?
+# Blindbot                                 
+PC09_THESITUATION-14=Ta informacja jest tajna.
+# Brok                                 
+PC09_THESITUATION-15=No jasne...
+# Brok                                 
+PC09_THESITUATION-16=(Cóż, nie mogę tu czekać w nieskończoność.)
+# Brok                                 
+PC09_THESITUATION-17=(Hmm...)
+# Brok                                 
+PC09_THESITUATION-18=(Wczorajsze spotkanie z Wesem... Przypominają się dawne czasy.)
+# Brok                                 
+PC09_THESITUATION-19=(Był inspektorem, który prowadził dochodzenie w sprawie śmierci Lii.)
+# Brok                                 
+PC09_THESITUATION-20=(Cały ten czas...)
+# Brok                                 
+PC09_THESITUATION-21=(Byłem przekonany, że... on coś ukrywa.)
+# Brok                                 
+PC09_THESITUATION-22=(To może być moja jedyna szansa...)
+# Brok                                 
+PC09_THESITUATION-23=(Muszę znaleźć sposób na wejście do jego biura!)
+#----------------------------------------------------
+# Brok                                 
+PC09_BLINDBOT2-1=Hej!
+# Blindbot                                 
+PC09_BLINDBOT2-2=Dzień dobry panu.
+# Blindbot                                 
+PC09_BLINDBOT2-3=Prosimy stanąć na odpowiednim kafelku, by wezwać pomoc.
+# Brok                                 
+PC09_BLINDBOT2-4=Możemy po prostu pogadać?
+# Blindbot                                 
+PC09_BLINDBOT2-5=Nie. Nie stoisz na odpowiednim kafelku.
+# Brok                                 
+PC09_BLINDBOT2-6=Nieważne. Jestem ciekaw, czy...
+# Brok                                 
+PC09_BLINDBOT2-7=Jesteś ślepym botem? Co się stało z twoimi oczyma?
+# Blindbot                                 
+PC09_BLINDBOT2-8=Nie mamy oczu. Zapewne masz na myśli "kamery".
+# Brok                                 
+PC09_BLINDBOT2-9=Chyba tak...
+# Blindbot                                 
+PC09_BLINDBOT2-10=Byliśmy w trakcie napraw, ale z uwagi na braki w szeregach zostaliśmy wezwani do pracy.
+# Blindbot                                 
+PC09_BLINDBOT2-11=To nie problem! Nasze mikrofony działają prawidłowo, więc słyszymy, co mówią odwiedzający i co rozkazuje komendant.
+# Blindbot                                 
+PC09_BLINDBOT2-12=A teraz, jeśli masz zapytanie, proszę stanąć na odpowiednim kafelku.
+# Brok                                 
+PC09_BLINDBOT2-13=Dobra, dobra... Naciśnę ten przeklęty przycisk.
+#----------------------------------------------------
+# Brok                                 
+PC09_BLINDBOT3-1=No to... Jak mogę dostać się do biura?
+# Blindbot                                 
+PC09_BLINDBOT3-2=Tylko bezpośrednie polecenie komendanta pozwoliłby ci wejść.
+# Brok                                 
+PC09_BLINDBOT3-3=Bezpośrednie polecenie od Wesa...?
+# Blindbot                                 
+PC09_BLINDBOT3-4=Potwierdzamy! Zawsze wykonuj polecenia komendanta co do joty!
+# Brok                                 
+PC09_BLINDBOT3-5=Hmm...
+#----------------------------------------------------
+# Brok                                 
+PC09_BLINDBOT_ASK1-1=Jak życie?
+# Blindbot                                 
+PC09_BLINDBOT_ASK1-2=Teoretycznie nie żyjemy. Ale w środowisku naukowym jest debata o...
+# Brok                                 
+PC09_BLINDBOT_ASK1-3=Tak, tak. Po prostu byłem miły. Możesz się zamknąć.
+#----------------------------------------------------
+# Blindbot                                 
+#Hitting the bot
+PC09_BLINDBOT_HIT1-1=Prosimy nie dewastować mienia.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_BLINDBOT_HIT2-1=Popełniasz błąd. Powstrzymaj swoje wybuchy gniewu.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_BLINDBOT_HIT3-1=Obywatel zwariował! Należy się lanie!
+#----------------------------------------------------
+# Blindbot                                 
+#Losing fight
+PC09_BLINDBOT_GAMEOVER1-1=Lanie zakończone.
+#----------------------------------------------------
+# Brok                                 
+#Killing the bot
+PC09_BLINDBOT_DEATH1-1=...
+# Brok                                 
+PC09_BLINDBOT_DEATH1-2=Słyszałem dźwięk zapadek. Czy to znaczy...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When solving the puzzle (stepping on the panels in correct order)
+# *****************************************************************
+# Blindbot                                 
+PC09_BLINDBOT_OK-1=Sprawdzamy...
+# Blindbot                                 
+PC09_BLINDBOT_OK-2=Polecenie komendanta potwierdzone. Biuro jest dla ciebie odblokowane.
+# Brok                                 
+PC09_BLINDBOT_OK-3=To znaczy... Mogę wejść?
+# Blindbot                                 
+PC09_BLINDBOT_OK-4=Potwierdzamy.
+# Brok                                 
+PC09_BLINDBOT_OK-5=Świetnie...!
+# Brok                                 
+PC09_BLINDBOT_OK-6=(Zaawansowane SI, taa, jasne...!)
+#----------------------------------------------------
+# Blindbot                                 
+PC09_BLINDBOT_NOPE-1=Sprawdzamy...
+# Blindbot                                 
+PC09_BLINDBOT_NOPE-2=Ten rozkaz jest niepoprawny.
+# Blindbot                                 
+PC09_BLINDBOT_NOPE-3=Nasz komendant jest zawsze bardzo miły, gdy do nas mówi.
+# Brok                                 
+PC09_BLINDBOT_NOPE-4=(Co...?)
+#----------------------------------------------------
+# Blindbot                                 
+#This happens when we almost step on the correct panels but not quite
+PC09_BLINDBOT_REACT-1=...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - IMPORTANT : The floor panels are part of a puzzle.
+# *****************************************************************
+# Wes                                 
+#The player must "play" them in the correct order in order to form the sentence : "Please Mister Pork, Enter My office!" => Be sure to translate these so the order makes a legible sentence!
+PC09_FLOOR1A-1=Proszę!
+# Wes                                 
+PC09_FLOOR1A-2=Zostań tutaj i złóż skargę.
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR1B-1=Proszę!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR2A-1=Panie Bruk!
+# Wes                                 
+PC09_FLOOR2A-2=Twoje osobiste dane są z nami bezpieczne!
+# Wes                                 
+PC09_FLOOR2A-3=Wszystkie dane, którymi się pan podzieli, będą przechowywane na naszym globalnym serwerze z wieloma kopiami zapasowymi, by zapewnić spójność danych.
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR2B-1=Panie Bruk!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR3A-1=Pytaj o cokolwiek!
+# Wes                                 
+PC09_FLOOR3A-2=Nasi automatyczni agenci zrobią wszystko, co w ich mocy, by pomóc!
+# Wes                                 
+PC09_FLOOR3A-3=To jest płatna usługa. 5 Uni za minutę.
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR3B-1=Pytaj o cokolwiek!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR4A-1=Wejdź!
+# Wes                                 
+PC09_FLOOR4A-2=W tym miejscu możesz zapytać o specjalny dostęp do cel, stołówki albo naszych biur!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR4B-1=Wejdź!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR5A-1=Do biura!
+# Wes                                 
+#25 hours isn't a mistake. In this universe each day is 25 hours long.
+PC09_FLOOR5A-2=Obsłużymy cię 25 godzin na dobę, każdego dnia. Zostań tu, by zamówić coś do picia!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR5B-1=Do biura!
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER0-1=Czy to... głos Wesa...?
+# Blindbot                                 
+PC09_PANELAFTER0-2=Potwierdzamy.
+# Blindbot                                 
+PC09_PANELAFTER0-3=Nasz komendant ma wielki szacunek do klientów.
+# Blindbot                                 
+PC09_PANELAFTER0-4=Nalegał, by osobiście nagrać wiadomości informacyjne.
+# Brok                                 
+PC09_PANELAFTER0-5=To... niespodziewane.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER1_1-1=Powiedz, jaką masz skargę?
+# Brok                                 
+PC09_PANELAFTER1_1-2=Chrzanić to! Lepiej daj mi dostęp do tego biura albo...!
+# Blindbot                                 
+PC09_PANELAFTER1_1-3=To nie jest akceptowana forma skargi.
+# Blindbot                                 
+PC09_PANELAFTER1_1-4=Proszę spróbować ponownie.
+# Brok                                 
+PC09_PANELAFTER1_1-5=Hmm...
+# Brok                                 
+PC09_PANELAFTER1_1-6=Pięknie proszę, wasza robotowość!
+# Brok                                 
+PC09_PANELAFTER1_1-7=Proszę o dostęp do tego pokoju, zanim zwariuję!
+# Blindbot                                 
+PC09_PANELAFTER1_1-8=Skarga odrzucona!
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER1_2-1=Zapomnij. Nie jesteś warty mojego czasu.
+# Blindbot                                 
+PC09_PANELAFTER1_2-2=Dziękuję!
+# Brok                                 
+PC09_PANELAFTER1_2-3=(Tak, wszystkie Triboty są inteligentne na tak samo niskim poziomie.)
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER2_1-1=Nawet ten nagrany głos nie chce wymówić mojego imienia prawidłowo... Jak to w ogóle działa?
+# Blindbot                                 
+PC09_PANELAFTER2_1-2=Stoisz na panelu naciskowym.
+# Blindbot                                 
+PC09_PANELAFTER2_1-3=Może zeskanować ci stopę i połączyć się z naszą bazą danych, by uzyskać twoją tożsamość.
+# Blindbot                                 
+PC09_PANELAFTER2_1-4=Łatwiejsza identyfikacja sprawia, że wszystko załatwia się szybciej!
+# Brok                                 
+PC09_PANELAFTER2_1-5=Może powinienem zacząć nosić buty...
+# Blindbot                                 
+PC09_PANELAFTER2_1-6=O nie! Skaner działa też przez buty.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER2_2-1=Pozwól nam przetransferować kopię twoich osobistych danych w ramach przejrzystej poufności!
+# Brok                                 
+PC09_PANELAFTER2_2-2=Czy to pozwoli mi odzyskać utracone wspomnienia?
+# Blindbot                                 
+PC09_PANELAFTER2_2-3=Nie!
+# Blindbot                                 
+PC09_PANELAFTER2_2-4=Ludzie są znani z zawodności, jeśli chodzi o przechowywanie tak istotnych informacji.
+# Blindbot                                 
+PC09_PANELAFTER2_2-5=Z tego powodu wszystkie twoje informacje są zakodowane! Tylko personel administracyjny, na przykład my, jest w stanie je odczytać.
+# Brok                                 
+PC09_PANELAFTER2_2-6=Ależ to przydatne...
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER3_1-1=Uwielbiamy szyfrowanie asymetryczne! A ty?
+# Brok                                 
+PC09_PANELAFTER3_1-2=Czy to nie ja powinienem mówić?
+# Blindbot                                 
+PC09_PANELAFTER3_1-3=Nasze statystyki pokazują, że ludzie mają niesamowite problemy w wybieraniu istotnych tematów rozmów.
+# Brok                                 
+PC09_PANELAFTER3_1-4=Cóż, nie mam ochoty na rozmowę z tobą o jakimś szyfrowaniu!
+# Blindbot                                 
+PC09_PANELAFTER3_1-5=Jak sobie życzysz!
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER3_2-1=Czy mogę zasugerować...
+# Brok                                 
+PC09_PANELAFTER3_2-2=Zamknij się.
+# Blindbot                                 
+PC09_PANELAFTER3_2-3=Dobrze. Zamkniemy zatem wszystkie drzwi.
+# Brok                                 
+PC09_PANELAFTER3_2-4=N-Nie! Nie to miałem...
+# Blindbot                                 
+PC09_PANELAFTER3_2-5=Operacja odrzucona.
+# Brok                                 
+PC09_PANELAFTER3_2-6=Fiu!
+# Brok                                 
+PC09_PANELAFTER3_2-7=Ostatnia rzecz, której chcę, to utknięcie tu z kupą odrażających robotów.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER4_1-1=Mogę odwiedzić wnętrze biura Wesa...?
+# Blindbot                                 
+PC09_PANELAFTER4_1-2=Przepraszamy. Odwiedzający nie mają tam wstępu.
+# Brok                                 
+PC09_PANELAFTER4_1-3=Tak myślałem...
+# Brok                                 
+PC09_PANELAFTER4_1-4=Więc... mogę odwiedzić Sina? Jest w celi.
+# Blindbot                                 
+PC09_PANELAFTER4_1-5=Jesteś krewnym?
+# Brok                                 
+PC09_PANELAFTER4_1-6=Em... Przyjacielem.
+# Blindbot                                 
+PC09_PANELAFTER4_1-7=Prośba odrzucona.
+# Brok                                 
+PC09_PANELAFTER4_1-8=Hmm.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER4_2-1=A co ze stołówką? Mogę ją odwiedzić, tak?
+# Blindbot                                 
+PC09_PANELAFTER4_2-2=Nie.
+# Blindbot                                 
+PC09_PANELAFTER4_2-3=Jest obecnie zamknięta. Żadne z nas nie je.
+# Brok                                 
+PC09_PANELAFTER4_2-4=Żadne z nas? A co z Wesem, R.J'em... I więźniami?
+# Blindbot                                 
+PC09_PANELAFTER4_2-5=Potwierdzamy. Żaden z agentów tu nie je.
+# Blindbot                                 
+PC09_PANELAFTER4_2-6=A co do więźniów, nie są uznawani za dostatecznie istotnych, by dostawać stałe jedzenie.
+# Blindbot                                 
+PC09_PANELAFTER4_2-7=Są karmieni płynnym odpowiednikiem jedzenia.
+# Brok                                 
+PC09_PANELAFTER4_2-8=Uch... Dobrze, że udało mi się uciec...
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER5_1-1=Zastanawiam się, czym zajmujesz się w nocy...
+# Blindbot                                 
+PC09_PANELAFTER5_1-2=Pilnuję miejsca. Sprzątam pomieszczenia. Przygotowuję planowanie. Zatwierdzam zasady. Zamawiam materiały. Zabijam więźniów.
+# Brok                                 
+PC09_PANELAFTER5_1-3=Tak, tak. Łapię...
+# Brok                                 
+PC09_PANELAFTER5_1-4=Err... Co powiedziałeś o więźniach...?
+# Blindbot                                 
+PC09_PANELAFTER5_1-5=Zajmuję się więźniami. Doglądam ich.
+# Brok                                 
+PC09_PANELAFTER5_1-6=Racja...
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER5_2-1=Otwarte bez przerwy... Gdy cały personel to boty, nie jest to trudne.
+# Blindbot                                 
+PC09_PANELAFTER5_2-2=Nie rozumiemy zapytania. Prosimy powtórzyć.
+# Brok                                 
+PC09_PANELAFTER5_2-3=To nie było zapytanie. Po prostu dygresja.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER5_3-1=Mogę się napić?
+# Blindbot                                 
+PC09_PANELAFTER5_3-2=Niestety tak.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER5_DRINK-1=Nie lubimy cię, ale jesteśmy zobowiązani zapytać.
+# Blindbot                                 
+PC09_PANELAFTER5_DRINK-2=Chciałbyś się czegoś napić?
+#----------------------------------------------------
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-1=Weź.
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-2=Łoł! To płynie! Prawdziwy wodospad!
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-3=Muszę uważać, by nie pochlapać mojego pięknego płaszcza.
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-4=Pięknego...?
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-5=Jeśli potrafilibyśmy się śmiać, turlalibyśmy się ze śmiechu.
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-6=Hej! Jesteś botem! Ślepym w dodatku!
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-7=Ty nie powinieneś znać się na modzie, ale ja tak.
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-8=Dokładnie.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_DRINK_SEWAGE_SLUDGE1-1=Weź.
+# Brok                                 
+PC09_DRINK_SEWAGE_SLUDGE1-2=(Wącha)
+# Brok                                 
+PC09_DRINK_SEWAGE_SLUDGE1-3=... Naprawdę muszę...?
+# Blindbot                                 
+PC09_DRINK_SEWAGE_SLUDGE1-4=Tego sobie życzyłeś. Nie możesz odmówić.
+# Brok                                 
+PC09_DRINK_SEWAGE_SLUDGE1-5=Okej...
+#----------------------------------------------------
+# Blindbot                                 
+PC09_DRINK_SOLID_JUICE1-1=Weź.
+# Brok                                 
+PC09_DRINK_SOLID_JUICE1-2=To jest sok...? Sądziłem, że będzie płynny.
+# Blindbot                                 
+PC09_DRINK_SOLID_JUICE1-3=Jasne, że nie. To jest stały sok.
+# Brok                                 
+PC09_DRINK_SOLID_JUICE1-4=Nie brzmi jak coś, co się łatwo pije.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANEL5_GETDRINK1-1=Hej, ślepy bocie! Chciałbym się napić!
+# Blindbot                                 
+PC09_PANEL5_GETDRINK1-2=Niczego nie słyszałem?
+# Brok                                 
+PC09_PANEL5_GETDRINK1-3=Tak, twój system jest trochę... zepsuty.
+# Blindbot                                 
+PC09_PANEL5_GETDRINK1-4=Taki zawodny sprzęt.
+# Blindbot                                 
+PC09_PANEL5_GETDRINK1-5=Co byś chciał?
+#----------------------------------------------------
+# Brok                                 
+PC09_PANEL5_GETDRINK2-1=Mogę dostać...
+#----------------------------------------------------
+# Brok                                 
+#In this case we killed the bot
+PC09_PANEL5_GETDRINKGONE1-1=Hej, ślepy bocie! Chciałbym...
+# Brok                                 
+PC09_PANEL5_GETDRINKGONE1-2=Ups, zapomniałem.
+# Brok                                 
+PC09_PANEL5_GETDRINKGONE1-3=Sam się poczęstuję!
+#----------------------------------------------------
+# Brok                                 
+PC09_PANEL5_GETDRINKGONE2-1=Hmm...
+#----------------------------------------------------
+# Blindbot                                 
+PC09_LASER_FORBIDDEN-1=Dostęp tylko dla upoważnionego personelu i więźniów.
+# Brok                                 
+PC09_LASER_FORBIDDEN-2=Ale... Ppowinienem być gliną!
+# Blindbot                                 
+PC09_LASER_FORBIDDEN-3=Dokłanie. Agentem I stopnia.
+# Blindbot                                 
+PC09_LASER_FORBIDDEN-4=Masz przyzwolenie na dostęp do korytarzy i patrolowanie wszędzie na zewnątrz.
+# Brok                                 
+PC09_LASER_FORBIDDEN-5=Argh...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Cutscene
+# *****************************************************************
+# Unknown                                 
+PC09_LATER-1=Chwilę później...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to sneak, no alarm yet
+# *****************************************************************
+# Brok                                 
+PC09_ARRIVE_SNEAK-1=Trzy boty...
+# Brok                                 
+PC09_ARRIVE_SNEAK-2=Kamery są z przodu. Nie zauważą mnie, jeśli będę ostrożny, ale...
+# Brok                                 
+PC09_ARRIVE_SNEAK-3=Jeden bot pilnuje drzwi i się nie ruszy. Co zrobić...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, Wes arrives when opening door
+# *****************************************************************
+# Wes                                 
+PC09_AFTER_TRYOPEN1-1=Stop!
+# Brok                                 
+PC09_AFTER_TRYOPEN1-2=...
+# Wes                                 
+PC09_AFTER_TRYOPEN1-3=Odradzam otwieranie tych drzwi.
+# Brok                                 
+PC09_AFTER_TRYOPEN1-4=A tak...? Patrz!
+#----------------------------------------------------
+# Brok                                 
+PC09_AFTER_TRYOPEN2-1=Co do ch... c...
+# Brok                                 
+PC09_AFTER_TRYOPEN2-2=(...)
+# Wes                                 
+#To enforce that this is a cutscene in which Brok cannot hear anything (he's frozen) and he talks about his evil plans, Wes should probably address Brok in an informal way for this dialog.
+PC09_AFTER_TRYOPEN2-3=Porządne zamrożenie powinno na nowo poukładać ci w głowie.
+# Wes                                 
+PC09_AFTER_TRYOPEN2-4=...
+# Wes                                 
+PC09_AFTER_TRYOPEN2-5=Jesteś sprytniejszy niż myślałem...
+# Wes                                 
+PC09_AFTER_TRYOPEN2-6=A to może stać się problemem.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, Wes arrives when all robots dead
+# *****************************************************************
+# Wes                                 
+PC09_AFTERFIGHT1-1=Zawsze sprawiasz problemy, co?
+# Wes                                 
+PC09_AFTERFIGHT1-2=Koniec zabawy. Ręce do góry.
+# Brok                                 
+PC09_AFTERFIGHT1-3=Nie możesz mnie...
+#----------------------------------------------------
+# Unknown                                 
+PC09_AFTERFIGHT2-1=(Zap)
+#----------------------------------------------------
+# Wes                                 
+PC09_AFTERFIGHT3-1=...
+# Wes                                 
+PC09_AFTERFIGHT3-2=Jesteś silniejszy niż myślałem...
+# Wes                                 
+#Same thing here for this alternate dialog, Wes talks to Brok in informal way.
+PC09_AFTERFIGHT3-3=A dla nas to niestety niezbyt dobrze.
+#----------------------------------------------------
+# Wes                                 
+PC09_AFTERCUTSCENE-1=Mam polecenie utrzymać cię przy życiu.
+# Wes                                 
+PC09_AFTERCUTSCENE-2=Nie rozumiem tego. Po tym, co mu zrobiłeś...
+# Wes                                 
+PC09_AFTERCUTSCENE-3=Nieważne. Bez znaczenia.
+# Wes                                 
+PC09_AFTERCUTSCENE-4=Ostateczne rozwiązanie już się zaczęło. Wszystko mam pod kontrolą.
+# Wes                                 
+PC09_AFTERCUTSCENE-5=Lepiej, żebyś współpracował, albo...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, robots spot us
+# *****************************************************************
+# Tribot                                 
+PC09_SPOTTED1-1=Alarm! Intruz!
+#----------------------------------------------------
+# Tribot                                 
+PC09_SPOTTED_STORY280B-1=Co ten. Człowiek robi?!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - rescuing Sin with Dee
+# *****************************************************************
+# Tribot                                 
+PC09_SPOTTED_FIGHT1-1=Możemy pomóc?
+# Brok                                 
+PC09_SPOTTED_FIGHT1-2=Tak. Możesz się zepsuć, proszę?
+# Tribot                                 
+PC09_SPOTTED_FIGHT1-3=Nielogiczne.
+# Brok                                 
+PC09_SPOTTED_FIGHT1-4=Szkoda. Wygląda na to, że będę musiał to zrobić samodzielnie!
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND1-1=Świetna robota!
+# Brok                                 
+PC09_SMASH_FIGHTEND1-2=Dzięki! Lepiej już chodźmy. Mam złe przeczucia...
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND1B-1=Patrz! Przejście na zaplecze...!
+# Brok                                 
+PC09_SMASH_FIGHTEND1B-2=To jest... SolidiField?!
+# Dee                                 
+PC09_SMASH_FIGHTEND1B-3=I co teraz?
+# Brok                                 
+PC09_SMASH_FIGHTEND1B-4=Przebijemy się! Niby co innego...?
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND1C-1=A niech to! Nadchodzi więcej!
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND2-1=Ta ściana... Musimy się nią zająć zanim...
+# Brok                                 
+PC09_SMASH_FIGHTEND2-2=Argh! To się nie kończy...!
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND3-1=Rozwal ścianę! Albo to się nie skończy!
+#----------------------------------------------------
+# Brok                                 
+PC09_SMASH_FINALLY-1=W końcu!
+# Dee                                 
+PC09_SMASH_FINALLY-2=Ruszajmy!
+#----------------------------------------------------
+# Dee                                 
+PC09_OFFICE_INFILTRATE-1=Hej...! Gdzie idziesz?
+# Dee                                 
+PC09_OFFICE_INFILTRATE-2=Sądziłam, że znasz to miejsce.
+# Brok                                 
+PC09_OFFICE_INFILTRATE-3=Em... Tak.
+#----------------------------------------------------
+# Brok                                 
+PC09_BARRIER1-1=(Szepcze) A niech to... Zapomniałem o tej barierze.
+# Dee                                 
+PC09_BARRIER1-2=Argh...
+# Dee                                 
+PC09_BARRIER1-3=Rozwalmy wszystkie boty, a potem...
+# Brok                                 
+PC09_BARRIER1-4=Nie, nie...!
+# Brok                                 
+PC09_BARRIER1-5=Musi być jakiś sposób. Pomyślmy!
+#----------------------------------------------------
+# Brok                                 
+PC09_BARRIER2-1=Chciałbym, żeby Shay tu była. Pomogłaby...
+# Brok                                 
+PC09_BARRIER2-2=Hmm...
+#----------------------------------------------------
+# Brok                                 
+PC09_BARRIER_REMOTECONTROL1-1=Działa...?!
+# Brok                                 
+PC09_BARRIER_REMOTECONTROL1-2=Szybko! Chodźmy!
+#----------------------------------------------------
+# Brok                                 
+#Talking to the tribots
+PC09_TRIBOT_INFILTRATE1-1=Halo!
+# Dee                                 
+PC09_TRIBOT_INFILTRATE1-2=Co ty robisz?!
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE1-3=Dzień dobry. Panu.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE1-4=Chcielibyśmy odwiedzić więźnia. Możesz otworzyć nam drzwi?
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE1-5=Przepraszamy. Żadnych wizyt. Zabronione.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE1-6=Ale jestem jego przyjacielem!
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE1-7=Przepraszamy. Żadnych wizyt. Zabronione.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE1-8=Cóż, warto było spróbować.
+# Dee                                 
+PC09_TRIBOT_INFILTRATE1-9=Nie, nie było...!
+#----------------------------------------------------
+# Brok                                 
+PC09_TRIBOT_INFILTRATE2-1=Jesteś pewien, że nie możemy odwiedzić aresztu?
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE2-2=Kontynuuj zapytania. A zostaniesz zaaresztowany.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE2-3=Hej, to nie byłby taki zły pomysł!
+# Dee                                 
+PC09_TRIBOT_INFILTRATE2-4=Zapomnij. Nie stać nas na ucieczkę z więzienia.
+#----------------------------------------------------
+# Brok                                 
+PC09_DEE1-1=Na razie niczego nie podejrzewają.
+# Dee                                 
+PC09_DEE1-2=Najwyraźniej... Nie zrobiliśmy niczego podejrzanego.
+#----------------------------------------------------
+
+
+#----------------------------------------------------
+# Brok
+PC09_TOOSOON_SHAY-1=Co już chciała Shay...?
+#----------------------------------------------------
+# Brok
+PC09_DAY2_BARRIER-1=Nie mogę się przedostać.
+#----------------------------------------------------
+# Brok
+PC09_BARRIER_REMOTECONTROL_DAY2-1=Hmm...!
+#----------------------------------------------------
+# Dee
+PC09_DEE1_ALT-1=Co jest podejrzane. Czy to ty nie jesteś ich celem?
+#----------------------------------------------------
+# Brok
+PC09_BLINDBOT_REMOTECONTROL-1=To nie wystarczy.
+#----------------------------------------------------
+# Brok
+PC09_WINDOWOFF_AD1-1=Hej! Reklama tu utknęła.
+#----------------------------------------------------
+# Brok
+PC09_WINDOWOFF_AD2-1=Wciąż zaklinowana.
+#----------------------------------------------------
+# Brok
+PC09_WINDOWOFF_ADOK-1=No, już!
+
+
+
+
+COOP_PC09_BLINDBOT1-1=Powinniśmy skorzystać z niewidomego bota.
+

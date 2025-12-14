@@ -1,0 +1,585 @@
+﻿#-------------------------------
+#=IN FRONT OF LAB
+#-------------------------------
+
+#----------------------
+#= Arrive
+#----------------------
+ID=PC15_FIRST1
+T=It's here! The building right in front of us.
+W=OTT
+A=ALRIGHT
+TEN=PC15_JET_OTTMOVES
+CONTEXT=Ott and Brok arrive from the Aircar.
+COMM=Here Ott has a good relationship with Brok
+
+#----------------------
+ID=PC15_FIRST_OTTKO1
+T=Well... Looks like we've arrived.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=WONDER
+COMM=Here Ott was KOed by Brok
+
+T=...
+W=OTT
+C2A=OPPOSITE
+TEN=PC15_JET_OTTMOVES
+
+#----------------------
+ID=PC15_OTT_NOPE1
+T=...
+W=OTT
+A=DISAPPOINTED
+
+#----------------------
+ID=PC15_FIRST_OTTKO2
+T=Mister Brok...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=OPPOSITE
+TEN=PC15_BROKFACEOTT
+
+T=Why?...
+W=OTT
+
+T=Uh?
+W=BROK
+C1A=WONDER
+
+T=Why... did you hit me?
+W=OTT
+
+T=Oh...
+W=BROK
+C1A=TIRED
+
+T=I... didn't have a choice...
+W=BROK
+
+T=We always have a choice.
+W=OTT
+
+T=I guess you wanted to spy on my uncle's computer that much.
+W=OTT
+C2A=WONDER
+
+T=Listen...
+W=BROK
+C1A=MAYBE
+
+T=It's a long story but...
+W=BROK
+
+T=I did it for Graff.
+W=BROK
+C1A=DISAPPOINTED
+
+T=...?
+W=OTT
+
+T=Alright...
+W=OTT
+
+T=We're meant to cooperate on this, so...
+W=OTT
+
+T=I'll cooperate with you. But I'm not sure I can forget what happened.
+W=OTT
+C2A=DISAPPOINTED
+
+T=Fair enough.
+W=BROK
+C1A=DOWN
+
+T=Let's go.
+W=OTT
+TEN=PC15_ELEVATOR1_DO
+
+#----------------------------
+#= Brok moves
+#----------------------------
+ID=PC15_GETFURTHER_OTT
+T=Where are you going, Mister Brok?
+W=OTT
+A=WONDER
+NB=1
+D=90
+CONTEXT=Wandering around
+
+#----------------------
+ID=PC15_JETAREA_OTT
+T=Watch out, Mister Brok!!!
+W=OTT
+A=SURPRISED
+NB=1
+D=90
+
+#----------------------
+ID=PC15_FALL_OTT
+T=Oh nooooo!
+W=OTT
+A=SAD
+NB=1
+D=90
+TEN=GAMEOVER
+COMM=Get killed by aircar or by jumping
+
+
+#----------------------------
+#= Bike
+#----------------------------
+ID=PC15_BIKE1
+T=Now that's a cool hoverbike!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=When I was young, I always dreamt of riding one of these.
+W=BROK
+C1A=MOCK
+
+T=Still do, actually!
+W=BROK
+C1A=ALRIGHT
+
+T=That looks dangerous to me! I thought these were illegal...
+W=OTT
+C2A= WONDER
+
+T=Can't make a real livin' without some risks.
+W=BROK
+
+#----------------------------
+ID=PC15_BIKE2
+T=Hmm...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=OPPOSITE
+
+T=Don't tell me you're considering riding it?
+W=OTT
+
+T=You just read my mind!
+W=BROK
+
+
+#----------------------------
+#= Brok moves
+#----------------------------
+ID=PC15_ELEVATOR_FRONT
+T=Lasers.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=OTT
+C2A=WONDER
+
+T=Hmm. Maybe we should...
+W=OTT
+TEE=PC15_ELEVATOR_DISABLELASERS
+
+
+#----------------------------
+ID=PC15_ELEVATOR_FRONT2
+T=!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=OTT
+C2A=SURPRISED
+
+T=Someone heard us?
+W=OTT
+
+T=Let's enter.
+W=BROK
+C1A=READY
+C2A=ALRIGHT
+TEN=PC15_ELEVATOR_ENTER
+
+
+#----------------------------
+ID=PC15_ELEVATOR2_TRY
+T=That elevator thing keeps pushing me back!
+W=BROK
+A=ANGRY
+NB=1
+D=90
+
+
+
+
+#----------------------------
+#= Tidy flees
+#----------------------------
+
+ID=PC15_STORY170_TIYDYFLEES1
+T=Hey, wait! That's mine!
+W=GUARD
+C1=GUARD
+C1A=ANGRY
+NB=1
+D=90
+CONTEXT=After the investigation, Tidy flees on the highway. Brok takes the guard hovercar to chase it
+
+T=...
+W=GUARD
+D=60
+
+T=Okay, get that sucker and BRING IT BACK!
+W=GUARD
+D=90
+COMM=The sucker is Tidy (the bot). The hoverbiker belongs to the guard.
+
+#----------------------------
+#= Tidy flees
+#----------------------------
+
+ID=PC15_STORY180_BACK1
+T=Hey chief!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=WES
+C2A=WONDER
+CONTEXT=After the chase
+
+T=...
+W=WES
+
+T=I... Erm, got a little lost on my way back...
+W=BROK
+
+T=...
+W=WES
+
+T=Well. Here's that criminal bot.
+W=BROK
+C1A=MEH
+TEN=PC15_STORY180_DROPTIDYREMAINS
+
+T=What's left of it, anyway.
+W=BROK
+
+T=There. You can have some scientists check its components and confirm...
+W=BROK
+C1A=MOCK
+SKIPEND=1
+
+T=Do you realize what you've done?
+W=WES
+C2A=ANGRY
+TEN=PC15_STORY180_LOOKWES
+
+T=Yeah. I stopped a dangerous criminal at the risk of my life!
+W=BROK
+C1A=THINK
+TEN=PC15_MUSIC_TENSE
+
+T=You put hundreds of citizens at risk during your little highway escape!
+W=WES
+
+T=My escape?!
+W=BROK
+C1A=WONDER
+
+T=People are in shock. There are news reports everywhere.
+W=WES
+
+T=You stole a hoverbike. You bumped into Aircars!
+W=WES
+C1A=ANGRY
+
+T=Innocents could have been killed!
+W=WES
+
+T=No chaos like this ever happened in the Drums for ages!
+W=WES
+
+T=Good. I gave those rich folks some events to talk about.
+W=BROK
+C1A=MEH
+
+T=So what?...
+W=BROK
+
+T=You think that's funny?...
+W=WES
+
+T=What did you expect me to do? Sit back and wait for that bag of screws to wreck the city?!
+W=BROK
+C1A=ANGRY
+
+T=There was no other way!
+W=BROK
+
+T=There's always another way.
+W=WES
+
+T=This robot wasn't much of a threat.
+W=WES
+C1A=THINK
+
+T=You, on the contrary...
+W=WES
+
+T=Our collaboration ends here.
+W=WES
+
+T=What? You're firing me?
+W=BROK
+C1A=SURPRISED
+
+T=Consider yourself lucky I don't throw you back in jail.
+W=WES
+
+T=Perfect! I'm outta here!
+W=BROK
+C1A=OPPOSITE
+TEN=PC15_STORY180_BROKGOESAWAY
+
+T=Don't call me back, 'cause next time...
+W=BROK
+C1A=ANGRY
+
+T=I won't be here to save your bacon!
+W=BROK
+TEN=PC15_STORY180_CHECK
+
+#----------------------------
+
+ID=PC15_STORY180_OTTBAD1
+T=...
+W=OTT
+C2=WES
+C2A=NORMAL
+C4=OTT
+C4A=DISAPPOINTED
+
+T=This is for the best.
+W=WES
+
+T=I'm sorry, Ott.
+W=WES
+
+T=I shouldn't have let you stay around that dangerous man.
+W=WES
+C2A=ANGRY
+
+T=You mean...
+W=OTT
+
+T=I know what he's done to you.
+W=WES
+
+T=Nothing justifies such brutality.
+W=WES
+
+T=You're probably right...
+W=OTT
+C4A=WONDER
+
+T=Still...
+W=OTT
+
+T=Forget him.
+W=WES
+TEN=PC15_STORY180_FADEOUT
+
+
+#----------------------------
+
+ID=PC15_STORY180_OTTGOOD1
+T=Mister Brok!...
+W=OTT
+C2=WES
+C2A=ANGRY
+C4=OTT
+C4A=SAD
+
+T=Nephew. Don't bother.
+W=WES
+
+T=This man only brings misery to everyone around him.
+W=WES
+
+T=...
+W=OTT
+
+T=Listen to me. I forbid you to get close to him, ever again.
+W=WES
+
+T=But...
+W=OTT
+C4A=DISAPPOINTED
+
+T=No but. The situation will get dangerous soon.
+W=WES
+C2A=NORMAL
+
+T=What do you mean?...
+W=OTT
+C4A=WONDER
+
+T=Come on, now. I've got to berry some suspects for another case.
+W=WES
+COMM=Like in PC09C, Wes uses the wrong word.
+
+T=To berry?...
+W=OTT
+
+T=Yes. To interrogate.
+W=WES
+C2A=WONDER
+
+T=Oh, I see! You're using codenames.
+W=OTT
+
+T=...
+W=WES
+
+T=I'll be right behind you, Uncle.
+W=OTT
+C4A=ALRIGHT
+TEN=PC15_STORY180_FADEOUT
+
+#----------------------------
+
+ID=PC15_STORY180_BACK2
+T=(I felt so angry and pointless...)
+MOOD=THINK
+BVOICE=BROK
+CONTEXT=AFter this scene, Brok thinks to himself
+
+T=(Deep down... I knew Wes was right.)
+MOOD=THINK
+
+T=(This was just one little robot.)
+MOOD=THINK
+
+T=(It couldn't have done so much damage... Could it?)
+MOOD=THINK
+
+T=(Who knows.)
+MOOD=THINK
+
+T=(But that's when I noticed it.)
+MOOD=THINK
+
+T=What the...?
+W=BROK
+A=SURPRISED
+
+T=All these calls and messages?...
+W=BROK
+
+T=Graff! He's in trouble!
+W=BROK
+A=WORRIED
+
+T=Shoot! I need to...
+W=BROK
+
+T=I... I'm coming, son!
+W=BROK
+A=READY
+TEN=PC15_STORY180_FADEOUT2
+
+
+#----------------------
+#= Talk to Ott
+#----------------------
+ID=PC15_OTT1
+T=Got a bad feeling about this place...
+W=OTT
+C1=BROK
+C1A=MAYBE
+C2=OTT
+C2A=PEE
+CONTEXT=Before the investigation, Brok talk to Ott
+
+T=Both of us then.
+W=BROK
+
+T=...
+W=OTT
+
+T=Don't worry. If anything happens, I'm here.
+W=BROK
+C1A=COCKY
+
+T=Thanks...
+W=OTT
+C2A=HAPPY
+
+T=Graff is lucky to have you...
+W=OTT
+C1A=ALRIGHT
+
+T=...
+W=BROK
+C1A=MAYBE
+
+
+
+
+#----------------------
+#= Hit Ott several times
+#----------------------
+ID=PC15_OTT_HITGAMEOVER1
+T=Hey, wait!
+W=BROK
+A=SURPRISED
+
+T=Where are you going?
+W=BROK
+A=SURPRISED
+TEN=PC15_OTT_HITGAMEOVER_NEXT
+
+#----------------------
+ID=PC15_OTT_HITGAMEOVER2
+T=(Sigh)
+W=BROK
+A=DOWN
+
+T=I can't go on like this.
+W=BROK
+A=DOWN
+TEN=GAMEOVER
+
+
+#----------------------
+#= Hit bike
+#----------------------
+ID=PC15_BIKE_HIT1
+T=What are you doing?!
+W=OTT
+A=SURPRISED
+NB=1
+D=60
+
+#----------------------
+ID=PC15_BIKE_HIT2
+T=Please... Stop!...
+W=OTT
+A=DISAPPOINTED
+NB=1
+D=60
+
+
+
+
+
+###############################################
+# PROOFREAD - stroszek - 26/06/2019
+# EXPRESSIONS - Pete - 09/08/2019
+###############################################

@@ -1,0 +1,603 @@
+﻿#-------------------------------
+#=VIRTUAL ARENA
+#-------------------------------
+
+#----------------------
+ID=BM02_DIE1
+T=It... It can't be!
+BNAME=SHAY
+BVOICE=SHAY
+CONTEXT=Brok dies during VR night fight
+TEN=BM02_GAMEOVER2
+
+#----------------------
+ID=BM02_DIE2
+T=Impossible!...
+BNAME=SHAY
+BVOICE=SHAY
+TEN=BM02_GAMEOVER2
+
+#----------------------
+ID=BM02_DEE1
+T=Who are you?
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+CONTEXT=Brok meets Dee for the first time. She should look mysterious and with a deep voice so we don't know she's a woman yet
+
+T=Erm... Your opponent?
+W=BROK
+
+T=No. It was supposed to be...
+W=DEE
+C2A=WONDER
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=Never mind.
+W=DEE
+C2A=ANGRY
+#TODO She takes her weapon
+
+T=Let's rock, croc!
+W=DEE
+TEN=BM02_DEE_STARTFIGHT
+
+#----------------------
+ID=BM02_DEE_REVEAL
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=SURPRISED
+CONTEXT=Brok accidentally removes her hood, revealing she's a woman
+
+T=You... You're a...!
+W=BROK
+
+T=Darn! You blew my cover!
+W=DEE
+C2A=ANGRY
+
+T=Shay, I gotta go!
+W=BROK
+C1A=MAYBE
+
+T=What?! No way! Not an option!
+BVOICESP=SHAY
+BNAMESP=SHAY
+
+T=I-I can't hit a lady!
+W=BROK
+C1A=ANGRY
+
+T=Well I am one and I'm telling you...
+BVOICESP=SHAY
+BNAMESP=SHAY
+
+T=Smash her down!
+BVOICESP=SHAY
+BNAMESP=SHAY
+
+T=Don't be a gentleman. I can handle you.
+W=DEE
+C2A=COCKY
+TEN=BM02_DEE_CHOICEFIGHT
+
+#----------------------
+ID=BM02_DEE_FIGHTYES1
+T=Very well.
+W=BROK
+C1=BROK
+C1A=READY
+C2=DEE
+C2A=COCKY
+
+T=I won't hold back!
+W=BROK
+TEN=BM02_DEE_RESUMEFIGHT
+
+
+
+#----------------------
+ID=BM02_DEE_FIGHTNO1
+T=Sorry. Not gonna happen.
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+W=BROK
+CONTEXT=Brok gives up
+
+T=Good.
+W=DEE
+C2A=MEH
+
+T=...
+W=BROK
+
+T=Goodbye, ma'am.
+W=BROK
+A=MEH
+TEN=BM02_DEE_ENDFIGHT
+
+
+
+#----------------------
+ID=BM02_RJ_BEFORELOSING
+T=Argh...
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=RJ
+C2A=COCKY
+CONTEXT=Brok loses
+
+T=Not your day, Bro'...
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=You'd better quit now.
+BNAMESP=SHAY
+BVOICESP=SHAY
+TEN=BM02_RJ_CHOICEGIVEUP
+
+
+#----------------------
+ID=BM02_DEE_BEFORELOSING
+T=Argh...
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=DEE
+C2A=COCKY
+CONTEXT=Brok loses
+
+T=I win.
+W=DEE
+
+T=Not your day, Bro'...
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=You'd better quit now.
+BNAMESP=SHAY
+BVOICESP=SHAY
+TEN=BM02_DEE_CHOICEGIVEUP
+
+
+#----------------------
+ID=BM02_DEE_WELOSE
+T=No choice.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=DEE
+C2A=COCKY
+TEN=BM02_DEE_ENDFIGHT
+
+
+#----------------------
+ID=BM02_DEE_LOST1
+T=Urgh...
+W=DEE
+C1=BROK
+C1A=READY
+C2=DEE
+C2A=ANGRY
+C2_EYESHUT=1
+CONTEXT=Brok wins
+
+T=Sorry it came to this.
+W=BROK
+C1A=OPPOSITE
+TEN=BM02_DEE_STAND
+
+T=You're a skilled fighter... But don't worry about it.
+W=DEE
+
+T=I wasn't here for the money anyway.
+W=DEE
+
+T=Then... What for?
+W=BROK
+C1A=WONDER
+
+T=Goodbye.
+W=DEE
+TEE=BM02_DEE_DISAPPEARS
+
+T=...
+W=BROK
+C2=NONE
+
+T=Well, I won...
+W=BROK
+C1A=ALRIGHT
+
+T=What a day.
+W=BROK
+C1A=MAYBE
+TEN=BM02_FINISH
+
+
+
+
+
+#----------------------
+ID=BM02_RJ1
+T=...
+W=RJ
+C1=BROK
+C1A=SURPRISED
+C2=RJ
+C2A=OPPOSITE
+CONTEXT=Day 2 - Brok's opponent is R.J.!
+SILENCE=1
+
+T=R.J.?!
+W=BROK
+
+T=What are you doing here, man?
+W=BROK
+C1A=THINK
+
+T=Whaddya think?
+W=RJ
+
+T=I'm here for my revenge!
+W=RJ
+
+T=Revenge?...
+W=BROK
+C1A=WONDER
+
+T=You...
+W=RJ
+
+T=Wrecked my life!
+W=RJ
+C2A=ANGRY
+TEN=BM02_RJ_CHECK
+
+#----------------------
+ID=BM02_RJ_ATTACK
+T=You attacked me...
+W=RJ
+C1=BROK
+C1A=DISAPPOINTED
+C2=RJ
+C2A=ANGRY
+TEN=BM02_RJ1B
+
+#----------------------
+ID=BM02_RJ_TRICK
+T=You tricked me...
+W=RJ
+C1=BROK
+C1A=DISAPPOINTED
+C2=RJ
+C2A=ANGRY
+TEN=BM02_RJ1B
+
+#----------------------
+ID=BM02_RJ1B
+T=Chief fired me...
+W=RJ
+C1=BROK
+C1A=TIRED
+C2=RJ
+C2A=SAD
+
+T=Hacker... too...
+W=RJ
+
+T=All... because of you!
+W=RJ
+C2A=ANGRY
+
+T=Oh, gosh...
+W=BROK
+C1A=STUPID
+
+T=I didn't realize...
+W=BROK
+
+T=Looks like I ruined someone else's life today...
+W=BROK
+C1A=TIRED
+
+T=I'm so sorry...
+W=BROK
+
+T=Dun' care!
+W=RJ
+
+T=Ya gonna get it!
+W=RJ
+
+T=Well. If that's a good fight you want...
+W=BROK
+C1A=READY
+TEN=BM02_BROK_FIGHTSTANCE
+
+T=I won't let you down!
+W=BROK
+TEN=BM02_RJ_STARTFIGHT
+
+
+#----------------------
+ID=BM02_BROK_LOSES1
+T=You, ah... Ya got me.
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=RJ
+C2A=ANGRY
+CONTEXT=Day 2 - Brok loses
+
+T=Agh! Darn...
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=Come on...
+W=BROK
+C1A=DISAPPOINTED
+
+T=If you wanna finish me...
+W=BROK
+
+T=Now's your shot!
+W=BROK
+
+T=He won't.
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=...
+W=RJ
+C2A=OPPOSITE
+
+T=Urgh!
+W=RJ
+
+T=I...!...
+W=RJ
+
+T=...
+W=RJ
+C2A=WONDER
+
+T=No.
+W=RJ
+C2A=NORMAL
+
+T=Me... I'm no killer.
+W=RJ
+
+T=Got what I want.
+W=RJ
+
+T=Go away.
+W=RJ
+
+T=Told ya!
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=...
+W=BROK
+C1A=THINK
+
+T=I'll find a way to make it up for you.
+W=BROK
+
+T=Tomorrow.
+W=BROK
+C1A=READY
+
+T=...
+W=RJ
+TEN=BM02_PLAYER_LEAVES_LOST
+
+#----------------------
+ID=BM02_RJ_LOSES1
+T=Argh!
+W=RJ
+C1=BROK
+C1A=READY
+C2=RJ
+C2A=OPPOSITE
+CONTEXT=Day 2 - RJ loses
+
+T=That's enough.
+W=BROK
+C1A=MAYBE
+
+T=No... No!
+W=RJ
+C2A=ANGRY
+
+T=I'll... get ya...
+W=RJ
+
+T=Even if...
+W=RJ
+
+T=I...
+W=RJ
+C2A=OPPOSITE
+
+T=I said stop!
+W=BROK
+C1A=READY
+
+T=You won't get anything out of this.
+W=BROK
+
+T=Don't make me...
+W=BROK
+TEN=BM02_RJ_CHOICELOST
+
+
+#----------------------
+ID=BM02_RJ_TALK1
+T=Listen...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=RJ
+C2A=SAD
+CONTEXT=Day 2 - Brok chooses to talk to RJ. He doesn't want to kill him
+
+T=I'm hurt... bad, on the inside...
+W=RJ
+
+T=Let's... end this!
+W=RJ
+C2A=ANGRY
+
+T=I won't. No matter what you try and pull.
+W=BROK
+C1A=OPPOSITE
+
+T=You prefer...
+W=RJ
+
+T=Mental... torture?
+W=RJ
+C2A=OPPOSITE
+
+T=I'm gonna get you some help.
+W=BROK
+C1A=MOCK
+
+T=I'll convince the hacker to hire you back.
+W=BROK
+
+T=Bro'... You probably shouldn't bring that up out here...
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=...
+W=RJ
+C2A=OPPOSITE
+
+T=OK. Your last chance.
+W=RJ
+TEN=BM02_RJ_TALK_LEAVES
+
+#----------------------
+ID=BM02_RJ_TALK2
+T=Oh well. We won.
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=You mean I won!...
+W=BROK
+A=MEH
+
+T=Yeah, yeah.
+BNAMESP=SHAY
+BVOICESP=SHAY
+TEN=BM02_FINISH
+
+#----------------------
+ID=BM02_RJ_GIVEUP1
+T=What?!
+W=RJ
+C2=RJ
+C2A=ANGRY
+CONTEXT=Day 2 - Brok gives up
+
+T=Come back!
+W=RJ
+
+T=Coward!
+W=RJ
+
+T=Seriously...?
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+TEN=BM_VIRTUAL_QUIT_DO
+
+#----------------------
+ID=BM02_RJ_KNOCKDOWN1
+T=(Bump)
+CONTEXT=Day 2 - Brok knocks RJ out so he doesn't have to kill him
+
+T=Sorry for the smackdown...
+W=BROK
+A=DISAPPOINTED
+
+T=Good job, Bro'!
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=...
+W=BROK
+
+T=Why the long face? Longer than usual, that is... You won!
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+TEN=BM02_FINISH
+
+
+#----------------------
+ID=BM02_LOWHEALTH_REFUSE
+T=Never!
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=DEE
+C2A=SURPRISED
+
+T=What?!
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=As long as I'm standing...
+W=BROK
+C2A=NORMAL
+
+T=I'll keep fighting!
+W=BROK
+
+T=You're insane.
+W=DEE
+
+T=But it's your choice. I won't be responsible for what happens next.
+W=DEE
+C2A=MEH
+TEN=BM02_LOWHEALTH_STARTAGAIN
+
+#----------------------
+ID=BM02_RJ_LOWHEALTH_REFUSE
+T=Never!
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=RJ
+C2A=SURPRISED
+
+T=What?!
+BNAMESP=SHAY
+BVOICESP=SHAY
+
+T=As long as I'm standing...
+W=BROK
+C2A=NORMAL
+
+T=I'll keep fighting!
+W=BROK
+
+T=No choice.
+W=RJ
+TEN=BM02_LOWHEALTH_STARTAGAIN

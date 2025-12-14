@@ -1,0 +1,702 @@
+﻿#-------------------------------
+#=OUTSIDE BROK APARTMENT
+#-------------------------------
+
+#----------------------
+#= Button
+#----------------------
+ID=PC02_BUTTON1
+T=When I first came here, I thought this was a doorbell.
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+T=I pressed it several times. Nothin'.
+W=BROK
+A=THINK
+
+T=Then I noticed a huge stack of letters filling my mailbox... "Someone came to visit while you were out" with my picture on it.
+W=BROK
+A=OPPOSITE
+
+T=So I ripped off the wires to deactivate it.
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC02_BUTTON2
+T=Nope! I reactivate it only when I'm running out of free toilet paper.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+#= Mail
+#----------------------
+ID=PC02_BROKMAIL_CLOSED1
+T=Our mailbox. 
+W=BROK
+A=MAYBE
+
+T=Graff drew a little cat and croc drawing on it, so we can easily spot it.
+W=BROK
+A=HAPPY
+
+T=It's shut, and I can't open it from there.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+ID=PC02_BROKMAIL_CLOSED2
+T=Closed.
+W=BROK
+A=ANGRY
+
+
+#----------------------
+ID=PC02_BROKMAIL_OPEN1
+T=My biggest source of stress. Opening that rack...
+W=BROK
+A=DOWN
+
+T=Tons of bills, security notices, more laws, and advertisements...
+W=BROK
+A=DOWN
+
+T=(Sigh) Let's get this over with.
+W=BROK
+A=STUPID
+TEN=PC02_BROKMAIL_DOOPEN
+
+#----------------------
+ID=PC02_BROKMAIL_OPEN1B
+T=...
+W=BROK
+A=THINK
+
+T=Just one bill? Great!
+W=BROK
+A=SURPRISED
+TEN=PC02_BILLA_TAKE
+
+#----------------------
+ID=PC02_BROKMAIL1C
+T=The wire energy bill. {amount} Unis?!
+W=BROK
+A=THINK
+COMM=Amount is 245
+
+T=Must be Graff. He's constantly in front of screens.
+W=BROK
+A=WONDER
+
+T=Can't blame him though. There's nothing much exciting to do around here.
+W=BROK
+A=DOWN
+
+T=Say... Another paper.
+W=BROK
+A=READY
+
+T="Please note. Due to numerous fraud attempts, direct transfer from phones is no longer accepted."
+W=BROK
+A=THINK
+
+T=Whaaat?!
+W=BROK
+A=SURPRISED
+
+T="All payments must now be processed through Pipe terminals, within two days of receiving your bill."
+W=BROK
+A=SURPRISED
+
+T=Oh, great... I'm gonna have to find one of those.
+W=BROK
+A=STUPID
+
+T=And most importantly... How am I gonna find so much dough on such short notice?
+W=BROK
+A=DOWN
+TEN=PC02_BROKMAIL_DOSEMICLOSE
+
+#----------------------
+ID=PC02_BROKMAIL_OPEN2
+T=I missed something. There's one little ad stuck between two racks!
+W=BROK
+A=THINK
+TEN=PC02_BROKMAIL_ADVERT
+
+#----------------------
+ID=PC02_BROKMAIL_OPEN3
+T=Nothing more. What a relief!
+W=BROK
+A=ALRIGHT
+TEN=PC02_BROKMAIL_DOSEMICLOSE
+
+
+#----------------------
+ID=PC02_BROKMAILB_OPEN1
+T=Fingers crossed...
+W=BROK
+A=TIRED
+TEN=PC02_BROKMAIL_DOOPEN
+
+
+#----------------------
+#If we open it for the first time in day 2
+ID=PC02_BROKMAILB_OPENFIRST
+T=Oh, my. Two bills...!
+W=BROK
+A=THINK
+TEN=PC02_BILLS_TAKE
+
+
+
+#----------------------
+ID=PC02_BROKMAILB_OPEN1B
+T=Just one letter.
+W=BROK
+A=THINK
+
+T=A bill. Of course. Hmm...
+W=BROK
+A=ANGRY
+TEN=PC02_BILLB_TAKE
+
+#----------------------
+ID=PC02_BROKMAILB_OPEN1C
+T=That's the rent. Why does it seem to always come earlier each month?
+W=BROK
+A=WONDER
+
+T=Gotta find {amount} Unis fast...
+W=BROK
+A=READY
+COMM=Amount is 500
+TEN=PC02_BROKMAIL_DOSEMICLOSE
+
+
+
+
+#----------------------
+#= Mail system
+#----------------------
+ID=PC02_MAILSYSTEM1
+T=The mail security system.
+W=BROK
+A=MOCK
+
+T=Please confirm your identity by pressing the touch panel.
+BVOICESP=VARIOUS
+
+T=Security, tighter security, always more security.
+W=BROK
+A=ANGRY
+
+T=When did the world become so complex?
+W=BROK
+A=OPPOSITE
+TEN=PC02_MAILSYSTEM_USE
+
+#----------------------
+ID=PC02_MAILSYSTEMB1
+T=You've got mail.
+BVOICESP=VARIOUS
+
+T=I was afraid it was gonna say that...
+W=BROK
+A=OPPOSITE
+TEN=PC02_MAILSYSTEM_OPEN
+
+#----------------------
+ID=PC02_MAILSYSTEM_ALREADYOPEN
+T=Our mailbox is already open.
+W=BROK
+A=READY
+
+T=Your mailbox is already open.
+BVOICESP=VARIOUS
+
+T=Ah! Beat you to it!
+W=BROK
+A=MOCK
+
+#----------------------
+ID=PC02_MAILSYSTEM_NOTHING
+T=No new mail.
+BVOICESP=VARIOUS
+
+T=Good!
+W=BROK
+A=HAPPY
+TEN=PC02_MAILSYSTEM_OPEN
+
+#----------------------
+ID=PC02_MAILSYSTEM_NOTHING2
+T=No idea why it opens the mailbox when it's empty.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC02_MAILSYSTEM_STORY210
+T=No new mail since the last opening this morning.
+BVOICESP=VARIOUS
+
+T=What...?
+W=BROK
+A=SURPRISED
+
+T=That's unusual. Did someone steal my bills?
+W=BROK
+A=THINK
+
+T=I wish!
+W=BROK
+A=ALRIGHT
+
+
+
+#----------------------
+#= Plaque "Detective"
+#----------------------
+ID=PC02_NAMEPLATE1
+T="Private detective (and handyman)"
+W=BROK
+A=THINK
+
+T=I wish the "handyman" part wasn't 95% of my day job. I've done enough plumbing for a lifetime...
+W=BROK
+A=OPPOSITE
+
+T=But we gotta make a livin'.
+W=BROK
+A=TIRED
+
+
+#----------------------
+#= Job board
+#----------------------
+ID=PC02_JOBBOARD1
+T=This used to be an "Ask anything" assistant to welcome new visitors.
+W=BROK
+A=THINK
+
+T=Back when right-thinking Drumers built this place.
+W=BROK
+
+T=It broke ages ago, so we've recycled it into a job board.
+W=BROK
+A=MAYBE
+
+T=Much more appropriate!
+W=BROK
+A=HAPPY
+
+T=So! What's new today...?
+W=BROK
+A=WONDER
+TEN=PC02_JOBBOARD_CLOSEUP
+
+
+
+#----------------------
+#= Shower door
+#----------------------
+ID=PC02_SHOWERDOOR1
+T=Later. I'm partial to showering after my nightly fight!
+W=BROK
+A=COCKY
+
+#----------------------
+ID=PC02_SHOWERDOOR_DO
+T=Good idea! I'm all filthy.
+W=BROK
+A=HAPPY
+TEN=PC02_SHOWERDOOR_FADEOUT
+
+#----------------------
+ID=PC02_SHOWERDOOR_DO2
+T=(Whistles)
+W=BROK
+A=SHOWER
+TEN=PC02_SHOWERDOOR_FADEIN
+
+#----------------------
+ID=PC02_SHOWERDOOR_DO3
+T=Ah! Much better.
+W=BROK
+A=HAPPY
+
+T=Next time I'll think twice before dropping into Shay's polluted lake...
+W=BROK
+A=ALRIGHT
+
+#----------------------
+#= Toilets door
+#----------------------
+ID=PC02_TOILETSDOOR1
+T=I can hold it in for several days if needed. There are more urgent matters!
+W=BROK
+A=ANGRY
+
+
+#----------------------
+#= Robots
+#----------------------
+ID=PC02_ROBOT1
+T=It won't turn on.
+W=BROK
+A=THINK
+
+T=Poor little thing. It's been rusting here for days and leaking some kind of powder on the floor.
+W=BROK
+A=DOWN
+
+T=I wonder what it's for and where it comes from.
+W=BROK
+A=WONDER
+
+
+#----------------------
+ID=PC02_ROBOT_POWDER1
+T=Some kind of bluish powder is leaking out of of it.
+W=BROK
+A=THINK
+
+T=(Sniff, sniff) Eww. Smells like rotten Pampalos...
+W=BROK
+A=STUPID
+
+#----------------------
+ID=PC02_ROBOT_MINEBROKEN
+T=Seems like an idea!
+W=BROK
+A=HAPPY
+TEN=PC02_ROBOT_MINELOADED_GET
+
+#----------------------
+ID=PC02_ROBOT_POWDER1B
+T=There, I've refilled the mine with that powder. I hope it works.
+W=BROK
+A=WONDER
+
+T=Oops, I pushed it a bit! That's three times the regular dose!
+W=BROK
+A=CONFUSED
+
+T=I better not move too quickly! (Gulp)
+W=BROK
+A=CONFUSED
+
+#----------------------
+#= Job board
+#----------------------
+ID=PC02_AD_JOBBOARD1
+T=There's a cool collectible ad behind this ad! 
+W=BROK
+A=HAPPY
+COMM=The collectible advert is behind a job advert on the panel.
+TEN=PC02_AD_JOBBOARD_TAKE
+
+#----------------------
+ID=PC02_AD_BABYSITTER1
+T="70-year old lady, ready to take care of your kids in your absence!"
+W=BROK
+A=THINK
+
+T="Price starting from 9 Unis per hour, varies according to species. (I reserve the right to refuse Wolves, Crocs and Squealer cubs!)"
+W=BROK
+A=THINK
+
+T=Mrph.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC02_AD_TRASHERHUNT1
+T="You wouldn't believe what Drumers throw away!"
+W=BROK
+A=THINK
+
+T="To get some of the best stuff, try our 'Trasher Hunt'!"
+W=BROK
+A=THINK
+
+T="Participation costs 10 Unis. Entrance located on the roof of this building." 
+W=BROK
+A=THINK
+
+T=Yeah, I've used it before. Really a great deal when you're lucky!
+W=BROK
+A=HAPPY
+
+T=I'll give it a go if I find time today.
+W=BROK
+A=READY
+
+#----------------------
+ID=PC02_AD_MUSIC1
+T="Two great Katshu groups will perform next Wednesday in sector 54X. Free entry. Come join us!"
+W=BROK
+A=THINK
+
+T=Darn, this was last week. Missed it.
+W=BROK
+A=MEH
+
+
+
+#----------------------
+#= Floor crack ad
+#----------------------
+ID=PC02_FLOORCRACK_AD
+T=Huh? The floor is all cracked!
+W=BROK
+A=SURPRISED
+
+T=Maybe I shouldn't have jumped on it...
+W=BROK
+A=CONFUSED
+
+T=But... Hey! Look at that! An ad was hidden underneath!
+W=BROK
+A=HAPPY
+TEN=PC02_AD_FLOORCRACK_TAKE
+
+#----------------------
+#= Required to check mail
+#----------------------
+ID=PC02_TO_PC03_MAIL1
+T=You've got mail! Pick it up!
+BVOICE=VARIOUS
+CONTEXT=Brok encounters lasers blocking the way out
+TEN=PC02_TO_PC03_CHECKMAIL
+
+#----------------------
+ID=PC02_TO_PC03_REACT1
+T=The heck?!
+W=BROK
+A=SURPRISED
+
+T=That thing wasn't there yesterday!
+W=BROK
+A=SURPRISED
+
+#----------------------
+ID=PC02_TO_PC03_REACT2
+T=No good. I can't get out of here until I check my mail!
+W=BROK
+A=ANGRY
+
+
+#----------------------
+#= Hit things
+#----------------------
+ID=PC02_DOORBROK_HIT1
+T=Gotta make sure we're safe from outside threats!
+W=BROK
+A=MOCK
+NB=1
+D=90
+CONTEXT=Brok hits his own door
+
+
+#----------------------
+ID=PC02_DOORBROK_HIT2
+T=Yup! Very sturdy!
+W=BROK
+A=READY
+NB=1
+D=60
+
+#----------------------
+ID=PC02_MAILSYSTEM_HIT1
+T=Fingerprint not recognized. Please try again.
+BVOICESP=VARIOUS
+NB=1
+D=90
+
+T=Stupid scanner!
+W=BROK
+A=ANGRY
+D=60
+
+#----------------------
+ID=PC02_MAILSYSTEM_HIT2
+T=Fingerprint not recognized. Please try again.
+BVOICESP=VARIOUS
+NB=1
+D=90
+
+#----------------------
+ID=PC02_DOORTOILETS_HIT1
+T=Hey! Wait your turn!
+BNAME=UNKNOWN
+BVOICE=VARIOUS
+CONTEXT=Brok hits the toilets door
+NB=1
+D=90
+
+#----------------------
+ID=PC02_DOORTOILETS_HIT2
+T=A little patience! I won't be long!
+BNAME=UNKNOWN
+BVOICE=VARIOUS
+NB=1
+D=90
+
+#----------------------
+ID=PC02_DOORTOILETS_HIT3
+T=...
+BNAME=UNKNOWN
+BVOICE=VARIOUS
+NB=1
+D=60
+
+#----------------------
+ID=PC02_DOORTOILETS_DAY2_HIT1
+T=Oh no. Not that guy again.
+BNAME=UNKNOWN
+BVOICE=VARIOUS
+NB=1
+D=90
+
+#----------------------
+ID=PC02_DOORTOILETS_DAY2_HIT2
+T=Please stop... You're stressing me out...
+BNAME=UNKNOWN
+BVOICE=VARIOUS
+NB=1
+D=90
+
+#----------------------
+ID=PC02_DOORTOILETS_DAY2_HIT3
+T=I'll get out whenever I feel like it! Okay?!
+BNAME=UNKNOWN
+BVOICE=VARIOUS
+NB=1
+D=90
+
+#----------------------
+ID=PC02_DOORTOILETS_DAY3_HIT1
+T=Huh...? No reply?
+W=BROK
+A=THINK
+
+T=Great. Now I'm getting worried.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC02_DOORTOILETS_DAY3_HIT2
+T=Will you stop already?! Can't a man do his business in peace?!
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+NB=1
+D=90
+
+T=Phew! I'm glad you're okay.
+W=BROK
+A=HAPPY
+D=90
+
+T=Huh...?
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+D=60
+
+#----------------------
+ID=PC02_JOBBOARD_DEATH1
+T=Whoa... Good thing nobody saw this...
+W=BROK
+A=CONFUSED
+CONTEXT=Brok breaks the job board
+
+
+
+
+#----------------------
+#= Sin Calls
+#----------------------
+ID=PC02_SINCALL1
+T=Another call?
+W=BROK
+A=THINK
+CONTEXT=Sin calls Brok right after exiting his apartment
+
+T=Hey! Where are you?!
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=ANGRY
+SOUND=bleep
+
+T=Well... On my way.
+W=BROK
+C1A=MOCK
+
+T=I said it was urgent!
+W=SIN
+C2A=ANGRY
+
+T=Please hurry!
+W=SIN
+C2A=WORRIED
+
+T=Okay, okay!
+W=BROK
+C1A=ALRIGHT
+
+T=[...]
+C2=NONE
+SOUND=phone_end
+
+T=Gee... What's up with that guy?
+W=BROK
+C1A=THINK
+
+T=Never had such a stressed client before.
+W=BROK
+C1A=WONDER
+
+T=That doesn't bode well.
+W=BROK
+TEN=PC02_CLUES_TUTORIAL
+CLUE=CLUE_SIN_STRESSED
+
+
+
+
+#----------------------------------
+#= Brok comes back, Graff fainted
+#----------------------------------
+ID=PC02_STORY180_DRONEA
+T=...!
+W=BROK
+A=THINK
+CONTEXT=Day 2 - Brok checks who put the pill under the door, Graff has fainted
+
+T=A drone...?
+W=BROK
+A=THINK
+
+T=Who sent it?
+W=BROK
+A=THINK
+
+T=...
+W=BROK
+A=WONDER
+
+T=Doesn't matter. I better give that pill to Graff, and fast!
+W=BROK
+A=READY
+TEN=PC02_STORY180_DRONEB
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 19/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# EXPRESSIONS - Oggy Cather 25/09/2019
+###############################################

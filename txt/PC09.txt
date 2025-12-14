@@ -1,0 +1,1659 @@
+﻿#-------------------------------
+#=POLICE ENTRANCE
+#-------------------------------
+#----------------------------------------------------------------
+#= Go there before getting chip OR the mission for the hacker
+#----------------------------------------------------------------
+ID=PC09_TOOSOON1
+T=...
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+CONTEXT=Go there before getting chip OR the mission for the hacker
+
+T=Hey. What's up?
+W=BROK
+C1A=HAPPY
+
+T=I didn't expect you so early.
+W=WES
+C2A=WONDER
+
+T=Change of plans. I gotta go.
+W=WES
+TEN=PC09_TOOSOON_WESGO
+
+T=Hey, wait! What am I supposed to...
+W=BROK
+C1A=READY
+SKIPEND=1
+
+T=I will assign you a mission later.
+W=WES
+TEN=PC09_TOOSOON_WESGO2
+
+#----------------------------------------------------------------
+ID=PC09_TOOSOON2
+T=Man... No wonder that guy is surrounded by bots.
+W=BROK
+A=MAYBE
+
+T=He's as cold as them.
+W=BROK
+A=MEH
+
+T=Well, no point waiting here.
+W=BROK
+A=ALRIGHT
+
+T=I better do my part for Graff in the mean time!
+W=BROK
+TEN=PC09_TOOSOON_AFTER
+
+#----------------------------------------------------------------
+ID=PC09_TOOSOON_SHAY
+T=What did Shay want, already?...
+W=BROK
+A=WONDER
+
+#----------------------------------------------------------------
+ID=PC09_DOOR_TOOSOON
+T=Locked...
+W=BROK
+A=THINK
+
+T=For now I should worry about getting Graff out of this mess.
+W=BROK
+
+
+#----------------------------------
+#= Window
+#----------------------------------
+ID=PC09_WINDOW1
+T=Too dark... I can't tell if anyone's inside.
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+#----------------------------------
+#= Button
+#----------------------------------
+ID=PC09_BUTTON1
+T=Oh... I hoped it'd be more useful.
+W=BROK
+A=DOWN
+
+#----------------------
+#= Go back
+#----------------------
+ID=PC09_TO_JAIL1
+T=Too late to go back!
+W=BROK
+A=MAYBE
+TEN=PC09_TO_JAIL2
+CONTEXT=When sneaking after escaping jail
+
+#----------------------
+#= Tribot Shut down
+#----------------------
+ID=PC09_TRIBOT_TOOFAR
+T=I might be able to shut it down...
+W=BROK
+A=THINK
+CONTEXT=Shutting down tribot
+
+T=If I can get close without being noticed.
+W=BROK
+
+#----------------------
+#= Tribot Shut down
+#----------------------
+ID=PC09_TRIBOT_ALREADY
+T=He won't bother me anymore...
+W=BROK
+A=MEH
+
+
+
+#----------------------
+#= Go to office
+#----------------------
+ID=PC09_TO_OFFICE1
+T=There's only one exit, and it isn't there!
+W=BROK
+A=ANGRY
+CONTEXT=More interactions
+
+#----------------------------------------------------------------------------------------
+#= 										INTERACTIONS
+#----------------------------------------------------------------------------------------
+
+#----------------------
+#= Speaker
+#----------------------
+ID=PC09_SPEAKER1
+T=I don't remember this speaker?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=BLINDBOT
+C2A=NORMAL
+COMM=This Tribot is actually a special model. He is blind because his captors are defective. Like other Tribots he refers to himself as "us"
+
+T=Affirmative. It was broken. We replaced it today.
+W=BLINDBOT
+
+T=Without properly working cameras, sound is crucial for us to understand the visitors' requests.
+W=BLINDBOT
+
+
+#-----------------------------------
+ID=PC09_SPEAKERGONE
+T=(Whistles)
+W=BROK
+A=HAPPY
+COMM=We stole the speaker
+
+#-----------------------------------
+ID=PC09_SPEAKERTAKEOK
+T=...
+W=BROK
+A=THINK
+
+T=There ya go!
+W=BROK
+A=HAPPY
+TEN=PC09_SPEAKER_GET2
+
+#----------------------
+#= Office door
+#----------------------
+ID=PC09_OFFICE1
+T=Locked...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Access to this area is forbidden.
+W=BLINDBOT
+
+T=Not for me!
+W=BROK
+C1A=MEH
+TEN=PC09_THESITUATION_CHECK
+
+#----------------------
+ID=PC09_OFFICE1B
+T=I'll find a way. I always do.
+W=BROK
+C1=BROK
+C1A=MEH
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Such confidence. Humans make no sense.
+W=BLINDBOT
+
+#----------------------
+ID=PC09_OFFICE2
+T=(It's shut tight... No chance of opening it with brute force.)
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=BLINDBOT
+C2A=NORMAL
+MOOD=THINK
+
+T=Please stop trying to open this door.
+W=BLINDBOT
+
+T=How did you know? You don't have any eyes!
+W=BROK
+C1A=ANGRY
+
+T=But we have microphones.
+W=BLINDBOT
+
+#----------------------
+ID=PC09_OFFICE_STORY190
+T=Locked...
+W=BROK
+C1=BROK
+C1A=ANGRY
+
+T=Chief Wes. Does not receive. Anyone.
+W=BLINDBOT
+C2=BLINDBOT
+C2A=NORMAL
+
+T=But I'm not just anyone!
+W=BROK
+C1A=READY
+
+T=Let us check.
+W=BLINDBOT
+C1A=ANGRY
+
+T=Incorrect. You're not. On the "high priority list."
+W=BLINDBOT
+
+T=You're just anyone.
+W=BLINDBOT
+
+T=Gah...
+W=BROK
+C1A=STUPID
+
+
+#----------------------
+ID=PC09_OFFICE_STORY280
+T=Locked...
+W=BROK
+C1=BROK
+C1A=ANGRY
+
+#----------------------
+#= Blind robot
+#----------------------
+ID=PC09_BLINDBOT1
+T=Hello!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BLINDBOT
+C2A=NORMAL
+CONTEXT=Talking to the blind bot at the reception
+
+T=Please stand on the appropriate floor panel for assistance.
+W=BLINDBOT
+
+T=Floor... panel?
+W=BROK
+C1A=THINK
+
+T=Yes. Please do, visitor.
+W=BLINDBOT
+
+T=I don't have time for this nonsense!
+W=BROK
+C1A=ANGRY
+TEN=PC09_THESITUATION_CHECK2
+
+#----------------------
+ID=PC09_THESITUATION
+T=Wes said I should meet him this morning.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Checking...
+W=BLINDBOT
+
+T=Affirmative. He had been awaiting you before leaving for an urgent mission.
+W=BLINDBOT
+
+T=He required you to stay here and wait for his return.
+W=BLINDBOT
+
+T=We always follow the chief's orders to a T!
+W=BLINDBOT
+
+T=But... He made me a temporary cop!
+W=BROK
+
+T=Checking...
+W=BLINDBOT
+
+T=This information is true.
+W=BLINDBOT
+
+T=However, you do not have the required permissions to access the chief's office.
+W=BLINDBOT
+
+T=Bummer...
+W=BROK
+C1A=OPPOSITE
+
+T=Where is he?
+W=BROK
+C1A=ANGRY
+
+T=This information is confidential.
+W=BLINDBOT
+
+T=When does he come back?
+W=BROK
+
+T=This information is confidential.
+W=BLINDBOT
+
+T=Obviously...
+W=BROK
+
+T=(Well, I can't just sit around indefinitely.)
+W=BROK
+C1A=OPPOSITE
+C2=NONE
+MOOD=THINK
+#TODO Brok s'éloigne pour réfléchir.
+
+T=(Hmm...)
+W=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(Meeting Wes yesterday... This sure brought back memories.)
+W=BROK
+MOOD=THINK
+
+T=(He was the inspector in charge of investigating Lia's death.)
+W=BROK
+MOOD=THINK
+
+T=(All this time...)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+
+T=(I've been convinced... He's been hiding things.)
+W=BROK
+MOOD=THINK
+
+T=(This may be my only chance...)
+W=BROK
+MOOD=THINK
+
+T=(I need to find a way to enter his office!)
+W=BROK
+C1A=READY
+MOOD=THINK
+TEN=PC09_OBJECTIVEENTER_ADD
+
+#----------------------
+ID=PC09_BLINDBOT2
+T=Hey!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Hello, Mister.
+W=BLINDBOT
+
+T=Please stand on the appropriate floor panel for assistance.
+W=BLINDBOT
+
+T=Can we talk freely?
+W=BROK
+
+T=No. You're not standing on the correct panel.
+W=BLINDBOT
+
+T=Whatever. I'm curious...
+W=BROK
+C1A=ANGRY
+
+T=Are you a blind robot? What happened to your eyes?
+W=BROK
+C1A=WONDER
+
+T=We do not have any eyes. You probably mean "cameras."
+W=BLINDBOT
+
+T=I guess...
+W=BROK
+
+T=We were under maintenance but due to the staff shortage we were called back from our repairs.
+W=BLINDBOT
+
+T=This is no trouble at all! Our microphone is functioning properly, so we can hear the visitors' requests and the chief's orders.
+W=BLINDBOT
+
+T=Now. If you have a request, please stand on the appropriate floor panel. 
+W=BLINDBOT
+
+T=Alright, alright... I'll press your darn buttons.
+W=BROK
+C1A=OPPOSITE
+
+#----------------------
+ID=PC09_BLINDBOT3
+T=So... How can I get inside the office?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Only a direct order from the chief would allow you to enter.
+W=BLINDBOT
+
+T=A direct order from Wes...?
+W=BROK
+C1A=THINK
+
+T=Affirmative! We always follow the chief's orders to a T!
+W=BLINDBOT
+
+T=Hmm...
+W=BROK
+
+#----------------------
+ID=PC09_BLINDBOT_ASK1
+T=How's life?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Technically we are not alive. But there is a debate in the scientific community about...
+W=BLINDBOT
+SKIPEND=1
+
+T=Yeah, yeah. Just me being polite. You can shut up now.
+W=BROK
+C1A=OPPOSITE
+
+#----------------------
+ID=PC09_BLINDBOT_HIT1
+T=Please do not damage the material.
+W=BLINDBOT
+A=NORMAL
+COMM=Hitting the bot
+
+#----------------------
+ID=PC09_BLINDBOT_HIT2
+T=You are making a mistake. Please restrain your outbursts of anger.
+W=BLINDBOT
+A=NORMAL
+
+#----------------------
+ID=PC09_BLINDBOT_HIT3
+T=A citizen has gone insane! Spanking is due!
+W=BLINDBOT
+A=NORMAL
+TEN=PC09_BLINDBOT_FIGHT
+
+#----------------------
+ID=PC09_BLINDBOT_GAMEOVER1
+T=Spanking over.
+W=BLINDBOT
+A=NORMAL
+TEN=GAMEOVER
+COMM=Losing fight
+
+#----------------------
+ID=PC09_BLINDBOT_DEATH1
+T=...
+W=BROK
+A=ANGRY
+COMM=Killing the bot
+
+T=I heard a mechanism unlocking. Could this mean...?
+W=BROK
+A=THINK
+TEN=PC09_BLINDBOT_OBJECTIVE
+
+#----------------------
+
+ID=PC09_BLINDBOT_OK
+T=Checking...
+W=BLINDBOT
+C1=BROK
+C1A=THINK
+C2=BLINDBOT
+C2A=NORMAL
+CONTEXT=When solving the puzzle (stepping on the panels in correct order)
+
+T=The chief's order is confirmed. The office is unlocked for you.
+W=BLINDBOT
+
+T=That means... I can enter?
+W=BROK
+C1A=HAPPY
+
+T=Affirmative.
+W=BLINDBOT
+
+T=Great...!
+W=BROK
+
+T=(Advanced AIs, my foot...!)
+W=BROK
+C1A=MEH
+MOOD=THINK
+TEN=PC09_BLINDBOT_OK_OBJECTIVE
+#The office checks prints, so it only opens to authorized personnel
+
+#----------------------
+
+ID=PC09_BLINDBOT_NOPE
+T=Checking...
+W=BLINDBOT
+C1=BROK
+C1A=WONDER
+C2=BLINDBOT
+C2A=NORMAL
+
+T=This order is invalid.
+W=BLINDBOT
+
+T=Our chief is always very polite when directing us.
+W=BLINDBOT
+
+T=(What...?)
+W=BROK
+MOOD=THINK
+
+#----------------------
+
+ID=PC09_BLINDBOT_REACT
+T=...?
+W=BLINDBOT
+C1=BROK
+C1A=THINK
+C2=BLINDBOT
+C2A=NORMAL
+COMM=This happens when we almost step on the correct panels but not quite
+
+#----------------------
+#= Floor panels
+#----------------------
+ID=PC09_FLOOR1A
+T=Please!
+BVOICE=WES
+NB=1
+D=60
+CONTEXT=IMPORTANT : The floor panels are part of a puzzle. 
+COMM=The player must "play" them in the correct order in order to form the sentence : "Please Mister Pork, Enter My office!" => Be sure to translate these so the order makes a legible sentence!
+
+T=Stay here to file a complaint.
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------
+ID=PC09_FLOOR1B
+T=Please!
+BVOICE=WES
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR2A
+T=Mister Pork!
+BVOICE=WES
+NB=1
+D=60
+
+T=Your personal data is safe with us!
+NB=1
+D=60
+
+T=Any information you share will be kept on all of our worldwide servers, with multiple backups to ensure their integrity.
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR2B
+T=Mister Pork!
+BVOICE=WES
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR3A
+T=Ask us anything!
+BVOICE=WES
+NB=1
+D=60
+
+T=Our automated agents will do their best to answer you!
+NB=1
+D=60
+
+T=This is a paid service. 5 Unis per minute.
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR3B
+T=Ask us anything!
+BVOICE=WES
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR4A
+T=Enter!
+BVOICE=WES
+NB=1
+D=60
+
+T=On this spot you may request a special entrance to visit a cell, the cafeteria, or our offices!
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR4B
+T=Enter!
+BVOICE=WES
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR5A
+T=My office!
+BVOICE=WES
+NB=1
+D=60
+
+T=We will welcome you 25 hours a day, everyday. Stay here to order a drink!
+NB=1
+D=60
+COMM=25 hours isn't a mistake. In this universe each day is 25 hours long.
+TEN=PC09_PANELAFTER
+
+#----------------------------------------------------------------------------------------
+ID=PC09_FLOOR5B
+T=My office!
+BVOICE=WES
+NB=1
+D=60
+TEN=PC09_PANELAFTER
+
+#----------------------
+#= Floor panels AFTER
+#----------------------
+ID=PC09_PANELAFTER0
+T=Was that... Wes's voice...?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Affirmative.
+W=BLINDBOT
+
+T=Our chief has a lot of respect for our visitors.
+W=BLINDBOT
+
+T=He insisted that he record these informational messages himself.
+W=BLINDBOT
+
+T=That's... unexpected.
+W=BROK
+TEN=PC09_PANELAFTER
+
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER1_1
+T=Tell me, what is your complaint?
+W=BLINDBOT
+C1=BROK
+C1A=ANGRY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Screw that! You better get me to that bloody office, or else...!
+W=BROK
+
+T=This isn't an acceptable type of complaint.
+W=BLINDBOT
+
+T=Please reformulate.
+W=BLINDBOT
+
+T=Hmm... 
+W=BROK
+C1A=THINK
+
+T=Pretty please, your robotness!
+W=BROK
+C1A=ALRIGHT
+
+T=Allow me access to that wonderful room before I go off the rails!
+W=BROK
+C1A=ALRIGHT
+
+T=Complaint denied!
+W=BLINDBOT
+
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER1_2
+T=Forget it. You're not worth my time.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Thank you!
+W=BLINDBOT
+
+T=(Yeah, all Tribots seem to share the same level of intelligence.)
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER2_1
+T=Even his recorded voice doesn't want to pronounce my name correctly... How does that even work?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BLINDBOT
+C2A=NORMAL
+
+T=You're standing on a pressure panel.
+W=BLINDBOT
+
+T=It can scan your foot prints and connects to our database for identity retrieval. 
+W=BLINDBOT
+
+T=Easier identification makes procedures much more simple as well!
+W=BLINDBOT
+
+T=Maybe I should start wearing shoes...
+W=BROK
+C1A=STUPID
+
+T=Oh, no! We can scan through shoes as well.
+W=BLINDBOT
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER2_2
+T=Allow us to transfer you a copy of your personal data for transparent confidentiality!
+W=BLINDBOT
+C1=BROK
+C1A=THINK
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Will this allow me to retrieve some of my lost memories?
+W=BROK
+
+T=Negative!
+W=BLINDBOT
+
+T=Humans are deemed unreliable to carry crucial information like this.
+W=BLINDBOT
+C1A=ANGRY
+
+T=Therefore, all your data is encrypted! Only administrative services like us are able to decrypt your private information.
+W=BLINDBOT
+
+T=Lot of good that does me.
+W=BROK
+#Well then, I couldn't care less.
+
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER3_1
+T=We love asymmetric cryptography! Don't you?
+W=BLINDBOT
+C1=BROK
+C1A=ANGRY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Am I not supposed to be the one talking?
+W=BROK
+
+T=Our statistics indicate humans have tremendous difficulties choosing relevant conversations.
+W=BLINDBOT
+
+T=Well I have no intention of discussing crypto-thingumabob!
+W=BROK
+C1A=OPPOSITE
+
+T=As you wish!
+W=BLINDBOT
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER3_2
+T=May I suggest...
+W=BLINDBOT
+C1=BROK
+C1A=ANGRY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Shut up.
+W=BROK
+
+T=Very well. We shall then shut all the department doors.
+W=BLINDBOT
+
+T=N-no! I didn't mean...
+W=BROK
+C1A=WORRIED
+
+T=Operation rejected.
+W=BLINDBOT
+
+T=Phew!
+W=BROK
+C1A=TIRED
+
+T=Last thing I want is to get trapped here again with creepy robots.
+W=BROK
+C1A=OPPOSITE
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER4_1
+T=May I visit the inside of Wes's office...?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=We're sorry. Visitors are not allowed in this area.
+W=BLINDBOT
+
+T=I thought so...
+W=BROK
+C1A=MAYBE
+
+T=Then... May I visit Sin? He's in jail.
+W=BROK
+C1A=THINK
+
+T=Are you a relative?
+W=BLINDBOT
+
+T=Erm... A friend.
+W=BROK
+
+T=Request rejected.
+W=BLINDBOT
+
+T=Hmph.
+W=BROK
+C1A=ANGRY
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER4_2
+T=What about the cafeteria? I can visit it, right?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Negative.
+W=BLINDBOT
+
+T=It was recently closed down. None of us eat food.
+W=BLINDBOT
+
+T=None of us? What about Wes, R.J... and the prisoners?
+W=BROK
+C1A=WONDER
+
+T=I can confirm. No agent still here eats food.
+W=BLINDBOT
+
+T=As for prisoners, they're not deemed important enough to deserve solid food.
+W=BLINDBOT
+
+T=They're fed liquid meal replacements.
+W=BLINDBOT
+
+T=Urgh... Good thing I was able to escape...
+W=BROK
+C1A=WORRIED
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER5_1
+T=I wonder, what's your job at night...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Guarding the place. Cleaning the rooms. Preparing the planning. Validating rules. Ordering materials. Killing the prisoners.
+W=BLINDBOT
+
+T=Yeah, yeah. I get the picture...
+W=BROK
+C1A=MAYBE
+
+T=Err... What did you just say about the prisoners...?
+W=BROK
+C1A=SURPRISED
+
+T=Dealing with the prisoners. Look after them.
+W=BLINDBOT
+
+T=Right...
+W=BROK
+C1A=WONDER
+TEN=PC09_PANELAFTER5_DRINK
+IT=1
+
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER5_2
+T=Open all the time... When all the personnel are bots, that's not hard to achieve.
+W=BROK
+C1=BROK
+C1A=MEH
+C2=BLINDBOT
+C2A=NORMAL
+
+T=We do not understand your query. Please reformulate.
+W=BLINDBOT
+
+T=This wasn't a query. Just a rant.
+W=BROK
+TEN=PC09_PANELAFTER5_DRINK
+IT=1
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER5_3
+T=May I have a drink?
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Unfortunately yes.
+W=BLINDBOT
+TEN=PC09_DRINK_CHOICE
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_PANELAFTER5_DRINK
+T=We do not like you but are required to ask anyway.
+W=BLINDBOT
+C1=BROK
+C1A=ANGRY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Would you like a drink?
+W=BLINDBOT
+TEN=PC09_DRINK_CHOICE
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_DRINK_FLOWING_WATER1
+T=Take.
+W=BLINDBOT
+C1=BROK
+C1A=THINK
+C2=BLINDBOT
+C2A=NORMAL
+
+T=Whoa! It's flowing, all right! A real waterfall!
+W=BROK
+C1A=CONFUSED
+
+T=Gotta be careful not to spill it on my beautiful coat.
+W=BROK
+C1A=HAPPY
+
+T=Beautiful...?
+W=BLINDBOT
+
+T=If we could laugh, we would be rolling on the floor right now.
+W=BLINDBOT
+
+T=Hey! You're a bot! And blind!
+W=BROK
+C1A=ANGRY
+
+T=You're not supposed to have taste but I should.
+W=BROK
+
+T=Exactly.
+W=BLINDBOT
+TEN=PC09_DRINK_FLOWING_WATER_GET
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_DRINK_SEWAGE_SLUDGE1
+T=Take.
+W=BLINDBOT
+C1=BROK
+C1A=THINK
+C2=BLINDBOT
+C2A=NORMAL
+
+T=(Smells)
+W=BROK
+
+T=...Do I really have to...?
+W=BROK
+C1A=CONFUSED
+
+T=This is your request. It cannot be refused.
+W=BLINDBOT
+
+T=Okay...
+W=BROK
+C1A=DOWN
+TEN=PC09_DRINK_SEWAGE_SLUDGE_GET
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_DRINK_SOLID_JUICE1
+T=Take.
+W=BLINDBOT
+C1=BROK
+C1A=THINK
+C2=BLINDBOT
+C2A=NORMAL
+
+T=That's juice...? I thought that it'd be liquid.
+W=BROK
+C1A=WONDER
+
+T=Of course not. It's called solid juice.
+W=BLINDBOT
+
+T=Doesn't sound easy to drink. 
+W=BROK
+TEN=PC09_DRINK_SOLID_JUICE_GET
+
+#----------------------
+ID=PC09_PANEL5_GETDRINK1
+T=Hey, blind bot! I'd like a drink!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=BLINDBOT
+C2A=NORMAL
+
+T=I didn't hear anything?
+W=BLINDBOT
+
+T=Yeah, your system is kinda... broken.
+W=BROK
+C1A=HAPPY
+
+T=Such unreliable hardware.
+W=BLINDBOT
+
+T=What is it you want?
+W=BLINDBOT
+TEN=PC09_DRINK_CHOICE
+
+#----------------------
+ID=PC09_PANEL5_GETDRINK2
+T=Can you get me...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=BLINDBOT
+C2A=NORMAL
+TEN=PC09_DRINK_CHOICE
+
+#----------------------
+ID=PC09_PANEL5_GETDRINKGONE1
+T=Hey, blind bot! I'd like...
+W=BROK
+A=ALRIGHT
+COMM=In this case we killed the bot
+
+T=Oops, I forgot.
+W=BROK
+C1A=CONFUSED
+
+T=I'll have to help myself!
+W=BROK
+C1A=MAYBE
+TEN=PC09_DRINK_CHOICE
+
+#----------------------
+ID=PC09_PANEL5_GETDRINKGONE2
+T=Hmm...
+W=BROK
+A=THINK
+TEN=PC09_DRINK_CHOICE
+
+#----------------------------------------------------------------------------------------
+
+ID=PC09_LASER_FORBIDDEN
+T=This access is restricted to allowed personnel and prisoners.
+W=BLINDBOT
+C1=BROK
+C1A=ANGRY
+C2=BLINDBOT
+C2A=NORMAL
+
+T=But... I'm supposed to be a cop right now!
+W=BROK
+
+T=Correct. A level 1 agent.
+W=BLINDBOT
+
+T=You are allowed within the hallway and to patrol in all the exterior areas.
+W=BLINDBOT
+
+T=Argh...
+W=BROK
+C1A=STUPID
+
+#----------------------------------------------------------------------------------------
+#= 										CUTSCENES
+#----------------------------------------------------------------------------------------
+
+#----------------------
+#= Later
+#----------------------
+ID=PC09_LATER
+T=A bit later...
+TEXTONLY=1
+TEN=PC09_TO_PC10_LATER1
+CONTEXT=Cutscene
+
+#------------------------------
+#= Try to sneak, no alarm yet
+#------------------------------
+ID=PC09_ARRIVE_SNEAK
+T=Three bots...
+W=BROK
+A=THINK
+CONTEXT=Try to sneak, no alarm yet
+
+T=Cameras on the front. They won't see me if I'm careful but...
+W=BROK
+
+T=One bot is guarding the exit and won't move. What should I do...?
+W=BROK
+A=WONDER
+TEN=PC09_ARRIVE_SNEAK_DO
+
+#----------------------------------
+#= Wes arrives when opening door
+#----------------------------------
+ID=PC09_AFTER_TRYOPEN1
+T=Stop!
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=ANGRY
+CONTEXT=After escaping, Wes arrives when opening door
+
+T=...
+W=BROK
+C1A=ANGRY
+TEN=PC09_WES_COMES
+
+T=I don't advise you to open this door.
+W=WES
+
+T=Oh, yeah...? Watch!
+W=BROK
+TEN=PC09_AFTER_TRYOPENDOOR
+
+#----------------------
+ID=PC09_AFTER_TRYOPEN2
+T=What the h... h...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=HAPPY
+
+T=(...)
+W=BROK
+SILENCE=1
+TEN=PC09_AFTER_STOPAIM
+
+T=A good freezing should put your ideas back into place.
+W=WES
+C1=NONE
+COMM=To enforce that this is a cutscene in which Brok cannot hear anything (he's frozen) and he talks about his evil plans, Wes should probably address Brok in an informal way for this dialog.
+
+T=...
+W=WES
+C2A=NORMAL
+
+T=You're more clever than I thought.
+W=WES
+
+T=And this could become a problem.
+W=WES
+TEN=PC09_AFTERCUTSCENE
+
+
+#-----------------------------------
+#= Wes arrives when all robots dead
+#-----------------------------------
+ID=PC09_AFTERFIGHT1
+T=Always the trouble maker, aren't you?
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+TEN=PC09_WES_COMES
+CONTEXT=After escaping, Wes arrives when all robots dead
+
+T=The game is up. Hands over your head.
+W=WES
+TEN=PC09_AFTERFIGHT_SHOOTPREPARE
+
+T=You can't stop m...
+W=BROK
+
+#----------------------
+ID=PC09_AFTERFIGHT2
+T=(Zap)
+
+#-----------------------------------
+ID=PC09_AFTERFIGHT3
+T=...
+W=WES
+C1A=READY
+C2=WES
+C2A=NORMAL
+TEB=PC09_AFTERFIGHT_MUSIC
+SILENCE=1
+TEN=PC09_AFTER_STOPAIM
+
+T=You're stronger than I thought.
+W=WES
+
+T=And fortunately for us, not very bright.
+W=WES
+C2A=HAPPY
+COMM=Same thing here for this alternate dialog, Wes talks to Brok in informal way.
+TEN=PC09_AFTERCUTSCENE
+
+
+#-----------------------------------
+ID=PC09_AFTERCUTSCENE
+T=I've been asked to keep you alive.
+W=WES
+C2=WES
+C2A=NORMAL
+
+T=I really can't understand it. After what you've done to him...
+W=WES
+C2A=NORMAL
+
+T=Well. Doesn't matter.
+W=WES
+C2A=HAPPY
+
+T=The final plan has started. I have the situation under control.
+W=WES
+
+T=You better cooperate. Or else...
+W=WES
+C2A=NORMAL
+TEN=PC09_STORY100_END
+
+
+
+#----------------------------------
+#----------------------------------
+#= Spotted!
+ID=PC09_SPOTTED1
+T=Intruder alert!
+W=TRIBOTCOP
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOTCOP
+C2A=NORMAL
+TEN=PC09_STORY100_STARTFIGHT
+CONTEXT=After escaping, robots spot us
+
+#----------------------------------
+ID=PC09_SPOTTED_STORY280B
+T=What is. The Human doing?!
+W=TRIBOTCOP
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOTCOP
+C2A=NORMAL
+TEN=PC09_SPOTTED_STORY280C
+
+
+#----------------------------------
+#= Rescuing Sin
+#----------------------------------
+ID=PC09_SPOTTED_FIGHT1
+T=May we help you?
+W=TRIBOTCOP
+C1=BROK
+C1A=ANGRY
+C2=TRIBOTCOP
+C2A=NORMAL
+CONTEXT=Day 3 - rescuing Sin with Dee
+
+T=Yeah. Can you break down, please?
+W=BROK
+
+T=Does not compute.
+W=TRIBOTCOP
+
+T=Shame. Looks like I'll have to do it myself, then!
+W=BROK
+C1A=READY
+TEN=PC09_STORY280_STARTFIGHT
+
+
+
+#----------------------------------
+ID=PC09_SMASH_FIGHTEND1
+T=Good job!
+W=DEE
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+
+T=Thanks! But we better move. I have a bad feeling...
+W=BROK
+C1A=READY
+TEN=PC09_STORY280_WALLTRANSFORM
+
+#----------------------------------
+ID=PC09_SMASH_FIGHTEND1B
+T=Look! The passage to the back rooms...!
+W=DEE
+C1=BROK
+C1A=WONDER
+C2=DEE
+C2A=SURPRISED
+
+T=It's... solidified?!
+W=BROK
+TEN=PC09_SMASH_CAMERARESET
+
+T=What do we do?
+W=DEE
+C2A=NORMAL
+
+T=Smash our way through! What else...?
+W=BROK
+C1A=READY
+TEN=PC09_STORY280_NEWENEMYWAVE
+
+#----------------------------------
+ID=PC09_SMASH_FIGHTEND1C
+T=Darn! Here comes more!
+W=DEE
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=ANGRY
+TEN=PC09_STORY280_STARTFIGHT
+
+#----------------------------------
+ID=PC09_SMASH_FIGHTEND2
+T=That wall. We have to get rid of it before...
+W=DEE
+C1=BROK
+C1A=TIRED
+C2=DEE
+C2A=WONDER
+TEN=PC09_STORY280_NEWENEMYWAVE
+
+T=Argh! It's endless...!
+W=BROK
+
+#----------------------------------
+ID=PC09_SMASH_FIGHTEND3
+T=Break that wall! Or it will never end!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=ANGRY
+TEB=PC09_STORY280_NEWENEMYWAVE
+
+
+#----------------------------------
+ID=PC09_SMASH_FINALLY
+T=Finally!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=DEE
+C2A=LISTEN
+
+T=Let's move on!
+W=DEE
+C2A=READY
+TEN=PC09_SMASH_TOPC09D
+
+
+#----------------------------------
+#= Rescuing Sin
+#----------------------------------
+ID=PC09_OFFICE_INFILTRATE
+T=Hey...! Where are you going?
+W=DEE
+C1=BROK
+C1A=WONDER
+C2=DEE
+C2A=NORMAL
+
+T=I thought you knew the place.
+W=DEE
+
+T=Erm... Yeah.
+W=BROK
+C1A=HAPPY
+
+#----------------------------------
+#= Barrier when infiltrate
+#----------------------------------
+ID=PC09_BARRIER1
+T=(Whisper) Darn... I forgot about this barrier.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=DEE
+C2A=NORMAL
+
+T=Argh...
+W=DEE
+
+T=Let's just wreck all those bots and...
+W=DEE
+SKIPEND=1
+
+T=No, no...!
+W=BROK
+C1A=MAYBE
+
+T=There must be a way. Let me think!
+W=BROK
+
+#----------------------------------
+ID=PC09_BARRIER2
+T=I wish Shay was here. She would help...
+W=BROK
+A=DOWN
+
+T=Hmm...
+W=BROK
+A=THINK
+
+#----------------------------------
+ID=PC09_BARRIER_REMOTECONTROL1
+T=It works...?!
+W=BROK
+A=SURPRISED
+
+T=Quick! Let's go!
+W=BROK
+A=READY
+#TEN=PC09_SMASH_TOPC09D
+
+#------------------------------------
+ID=PC09_DAY2_BARRIER
+T=I can't get through.
+W=BROK
+A=OPPOSITE
+
+#----------------------------------
+ID=PC09_BARRIER_REMOTECONTROL_DAY2
+T=Hmm...!
+W=BROK
+A=ALRIGHT
+TEN=PC09_BARRIER_REMOTECONTROL_DAY2_NEXT
+
+#----------------------------------
+#= Talking to Tribot when infiltrate
+#----------------------------------
+ID=PC09_TRIBOT_INFILTRATE1
+T=Hello!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C3=DEE
+C3A=LISTEN
+C2=TRIBOTCOP
+C2A=NORMAL
+COMM=Talking to the tribots
+
+T=What are you doing?!
+W=DEE
+C3A=WONDER
+
+T=Hello. Mister.
+W=TRIBOTCOP
+
+T=We'd like to visit a prisoner. Can you open the door for us?
+W=BROK
+C1A=MOCK
+
+T=Sorry. No visitors. Not allowed.
+W=TRIBOTCOP
+
+T=But I'm a friend!
+W=BROK
+
+T=Sorry. No visitors. Not allowed.
+W=TRIBOTCOP
+
+T=Well it was worth a try.
+W=BROK
+C1A=ALRIGHT
+
+T=No, it wasn't...!
+W=DEE
+C3A=MEH
+
+#----------------------------------
+ID=PC09_TRIBOT_INFILTRATE2
+T=Ya sure we can't visit the jail?
+W=BROK
+C1=BROK
+C1A=THINK
+C3=DEE
+C3A=LISTEN
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Continue to ask. And we'll incarcerate you.
+W=TRIBOTCOP
+
+T=Hey, that wouldn't be such a bad idea!
+W=BROK
+C1A=WONDER
+
+T=Forget it. We can't afford to play prison break.
+W=DEE
+C3A=NORMAL
+
+#----------------------------------
+#= Talking to Tribot when infiltrate
+#----------------------------------
+ID=PC09_DEE1
+T=For now they don't suspect anything.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+
+T=Obviously. We haven't done anything suspicious.
+W=DEE
+C2A=MEH
+TEN=PC09_DEE1_CHECK
+
+#----------------------------------
+ID=PC09_DEE1_ALT
+T=Which is suspicious. Aren't you their target?
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=WONDER
+
+
+#----------------------------------
+ID=PC09_BLINDBOT_REMOTECONTROL
+T=That's not enough.
+W=BROK
+A=MAYBE
+
+
+#----------------------------------
+ID=PC09_WINDOWOFF_AD1
+T=Hey! There's an ad stuck.
+W=BROK
+A=THINK
+
+#----------------------------------
+ID=PC09_WINDOWOFF_AD2
+T=Still stuck.
+W=BROK
+A=MAYBE
+
+#----------------------------------
+ID=PC09_WINDOWOFF_ADOK
+T=There ya go!
+W=BROK
+A=ALRIGHT
+TEN=PC09_WINDOWOFF_ADGET
+
+#----------------------------------
+ID=COOP_PC09_BLINDBOT1
+T=We should take advantage of this bot's blindness.
+
+###############################################
+# PROOFREAD - jblaker - 14/06/2019
+# EXPRESSIONS   ZedOjisan 23/09/2019
+###############################################

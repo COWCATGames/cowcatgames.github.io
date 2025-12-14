@@ -1,0 +1,111 @@
+﻿#-------------------------------
+#=GRAFF - FRONT SHAY
+#-------------------------------
+
+#----------------------
+#= Odor
+#----------------------
+
+ID=GPC08_FIRST1
+T=Urgh... What a smell!
+W=GRAFF
+A=YUCK
+CONTEXT=Graff arriving in front of Shay's garage
+
+T=Good thing I'm used to searching through trash. Anyone could get poisoned.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+#= Buttons
+#----------------------
+
+ID=GPC08_BUTTONS1
+T=I don't feel like pressing this button. Looks suspicious...
+W=GRAFF
+A=TURN
+CONTEXT=Room interactions
+
+
+#----------------------
+#= Slot
+#----------------------
+
+ID=GPC08_SLOT1
+T=...!
+W=GRAFF
+A=GASP
+
+T=Is that a saw I'm seeing in here?...
+W=GRAFF
+
+T=...I'll try not to get too close...
+W=GRAFF
+A=MEH
+
+
+#----------------------
+#= Garage
+#----------------------
+
+ID=GPC08_GARAGE1_STORY165
+T=Closed?... (Cough)
+W=GRAFF
+A=CHOKE
+CONTEXT=Graff is affected by pollution and desperately tries to find a solution
+
+T=(Knocks)
+
+T=It's Graff! This is urgent!
+W=GRAFF
+A=GASP
+
+T=I need your help! Please open!
+W=GRAFF
+
+T=...
+W=GRAFF
+A=TURN
+
+T=No use... (Sigh)
+W=GRAFF
+A=SAD
+
+T=(Cough, cough, cough)
+W=GRAFF
+A=CHOKE
+
+#----------------------
+
+ID=GPC08_GARAGE1
+T=Closed...
+W=GRAFF
+A=MEH
+CONTEXT=Graff is affected by pollution and desperately tries to find a solution
+
+T=(Knocks)
+
+T=...
+W=GRAFF
+A=TURN
+
+T=Darn.
+W=GRAFF
+A=SAD
+
+
+
+#----------------------
+ID=GPC08_CABIN1
+T=Forbidden access!
+BVOICE=VARIOUS
+D=60
+NB=1
+
+T=I should have guessed...
+W=GRAFF
+C1A=SAD
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 25/08/2019
+###############################################

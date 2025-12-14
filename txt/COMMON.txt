@@ -1,0 +1,2870 @@
+#-----------------------------------------
+#=COMMON TEXT POTENTIALLY USED EVERYWHERE
+#-----------------------------------------
+
+
+#----------------------------------------------------
+#= INTERFACE : No money
+#----------------------------------------------------
+ID=INTERFACE_MONEY_NONE1
+T=Well... At least I'm not in the red!
+W=BROK
+A=DOWN
+CONTEXT=Click on money icon in menu
+
+#----------------------------------------------------
+ID=INTERFACE_MONEY_NOTMUCH1
+T=Not much money in my account...
+W=BROK
+A=WONDER
+
+T=I'll just have to double my efforts today!
+W=BROK
+A=READY
+
+#----------------------------------------------------
+ID=INTERFACE_MONEY_MEDIUM1
+T=Cool! I've got... enough for today... I hope?
+W=BROK
+A=HAPPY
+
+#----------------------------------------------------
+ID=INTERFACE_MONEY_RICH1
+T=Huh?! Did I really get all this money?
+W=BROK
+A=SURPRISED
+
+
+#----------------------------------------------------
+#= INTERFACE : Refuse hint
+#----------------------------------------------------
+ID=INTERFACE_HINT_REFUSE1
+T=Yeah, no need for that! I'll trust my gut.
+W=BROK
+A=MEH
+CONTEXT=Refuse to get a hint
+
+#----------------------------------------------------
+ID=INTERFACE_HINT_REFUSE2
+T=Better not. I don't trust this.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=INTERFACE_HINT_GRAFF_REFUSE1
+T=I need more time to think!
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+#= INTERFACE : No hint
+#----------------------------------------------------
+ID=INTERFACE_HINT_NONE1
+T=Erm... Looks like I can't get a hint right now...
+W=BROK
+A=THINK
+SOUND=wrong
+
+T=I should collect some ads and scan'em with my phone.
+W=BROK
+A=THINK
+
+T=Or I can rely on my competence and skills!...#Don't need stinkin' technology to tell me what to do!
+W=BROK
+A=COCKY
+
+#----------------------------------------------------
+ID=INTERFACE_HINT_NONE2
+T=That won't work. I don't have any ads for my phone!
+W=BROK
+A=DISAPPOINTED
+SOUND=wrong
+
+#----------------------------------------------------
+ID=INTERFACE_HINT_GRAFF_NONE1
+T=Uh oh... No ads left.
+W=GRAFF
+A=GASP
+SOUND=wrong
+
+T=I'd better look around for some!
+W=GRAFF
+A=READY
+
+#----------------------------------------------------
+#= INTERFACE : Graff money
+#----------------------------------------------------
+ID=INTERFACE_MONEY_GRAFF1
+T=I've got a limited account.
+W=GRAFF
+A=MEH
+CONTEXT=Click on money icon in menu (when Graff)
+
+T=I can only keep a small amount of money. Anything over 50 Unis automatically goes back to Brok at the end of the day...
+W=GRAFF
+A=TURN
+
+T=If I press this button I can request some money though.
+W=GRAFF
+A=MEH
+
+T=An algorithm makes the decision...
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_MONEYGRAFF_CHOICE
+
+#----------------------------------------------------
+ID=INTERFACE_MONEY_GRAFF2
+T=Can't wait to be sixteen in a few days and get a real account!
+W=GRAFF
+A=HAPPY
+
+T=Should I request some money...?
+W=GRAFF
+A=THINK
+TEN=INTERFACE_MONEYGRAFF_CHOICE
+
+
+#----------------------------------------------------
+ID=INTERFACE_MONEY_REQUEST_NOTENOUGH
+T=Insufficient credits on tutor account. ({amount} Unis available)
+BVOICESP=VARIOUS
+COMM=Do not pronounce the last part (amount)
+
+T=(Sigh...)
+W=GRAFF
+A=TURN
+
+#----------------------------------------------------
+ID=INTERFACE_MONEY_REQUEST_OK
+T=Checking...
+BVOICESP=VARIOUS
+
+T=Transfer allowed.
+BVOICESP=VARIOUS
+SOUND=beam
+TEN=INTERFACE_MONEY_REQUEST_DO
+
+#----------------------------------------------------
+ID=INTERFACE_MONEY_REQUEST_NOTOK
+T=Checking...
+BVOICESP=VARIOUS
+
+T=Transfer refused. Please try again later with a lesser amount.
+BVOICESP=VARIOUS
+SOUND=wrong
+
+T=(Sigh...)
+W=GRAFF
+A=TURN
+
+
+#----------------------------------------------------
+#= INTERFACE : Using a hint
+#----------------------------------------------------
+ID=INTERFACE_HINT_YES1
+T=So... I should scan the barcode on this ad?
+W=BROK
+A=THINK
+CONTEXT=Use a hint
+
+T=Looks like it worked, but I can only use each ad once.
+W=BROK
+A=THINK
+SOUND=bleep
+TEN=INTERFACE_HINTS_YES_NEXT
+
+#----------------------------------------------------
+ID=INTERFACE_HINT_YES2
+T=Burn this ad and gimme a clue!
+W=BROK
+A=MOCK
+SOUND=bleep
+TEN=INTERFACE_HINTS_YES_NEXT
+
+#----------------------------------------------------
+ID=INTERFACE_HINT_YES3
+T=Let's see...
+W=BROK
+A=MEH
+SOUND=bleep
+TEN=INTERFACE_HINTS_YES_NEXT
+
+
+#----------------------------------------------------
+#= COMBINING ITEMS DEFAULT
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT1
+T=Combining these together... Hmm...
+W=BROK
+A=THINK
+CONTEXT=Combining items
+
+T=Nope!
+W=BROK
+A=ALRIGHT
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT2
+T=Err... I don't think that would work.
+W=BROK
+A=WONDER
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT3
+T=I'm tryin', I'm tryin'! But nothin' happens!
+W=BROK
+A=ANGRY
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT4
+T=That'll break it! And I don't want that.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT5
+T=That's just silly.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT6
+T=Yeah... No.
+W=BROK
+A=DOWN
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT7
+T=Of course! I just need to know what I'm doing.
+W=BROK
+A=MOCK
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT8
+T=No way...
+W=BROK
+A=ANGRY
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT9
+T=Oh, how I wish I was clever like Graff... All my ideas are stupid.
+W=BROK
+A=DOWN
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT10
+T=That makes no sense! I think I'm starting to lose it.
+W=BROK
+A=STUPID
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT11
+T=If Shay was here, she'd tell me to keep trying and something amazing might happen!
+W=BROK
+A=READY
+
+T=But she's not here.
+W=BROK
+A=DISAPPOINTED
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT12
+T=And then I would get...
+W=BROK
+A=THINK
+
+T=What, exactly?
+W=BROK
+A=WONDER
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT13
+T=I want to but it's not letting me do it!
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT14
+T=...
+W=BROK
+A=THINK
+
+T=Uh-oh... I better stop before I break it.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT15
+T=Oh yeah! That'd be fun!
+W=BROK
+A=HAPPY
+
+T=But I can't take that risk.
+W=BROK
+A=DOWN
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT16
+T=So many possibilities.
+W=BROK
+A=THINK
+
+T=So many failed attempts.
+W=BROK
+A=DOWN
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT17
+T=I don't think I've seen any detectives do this.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT18
+T=It's like putting a square peg in a round hole.
+W=BROK
+A=THINK
+
+T=That only works sometimes!
+W=BROK
+A=ANGRY
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT19
+T=Let's stay positive and assume it worked.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_DEFAULT20
+T=Not every mix makes for a good recipe. I've learned this from cooking weird ingredients.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+#= COMBINING GENERIC FOR EACH ITEM
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY
+T=Let's take a closer look...
+W=BROK
+A=WONDER
+
+T=Yup. Looks the same, just bigger.
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_INV_CATFUR
+T=Already got enough cat fur on my stuff...
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_INV_APARTMENTKEY
+T=That doesn't need to be unlocked... or unscrewed.
+W=BROK
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_INV_HANDKERCHIEF
+T=There. Good as new!
+W=BROK
+A=HAPPY
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_MINEBROKEN
+T=Hmm... I doubt that will fix the mine.
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_INV_BILL
+T=If only I could trade this for the bill...
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_HOOVER
+T=I bet the cleaning bot could devour it... But not in this state.
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_INV_PILL
+T=The only way to use this pill is to swallow it.
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_INV_TRAMPPRESCR
+T=No use... I guess I'll need a doctor after all.
+W=BROK
+A=STUPID
+
+#----------------------------------------------------
+ID=COMBINE_INV_EARBUDSB
+T=It doesn't want to be deaf!
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_SCREWDRIVER
+T=It doesn't have any screws...
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_STATUETTE
+T=Not even a prayer could make this work...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_STICKER
+T=There, I stuck it.
+W=GRAFF
+A=MEH
+
+T=...
+W=GRAFF
+A=THINK
+
+T=Not helping... I'll take it back.
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_FLOUR
+T=This would make for an awful cake.
+W=GRAFF
+A=YUCK
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_EARBUDS
+T=It doesn't have any ears! ...I think.
+W=GRAFF
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_FORCEFIELD
+T=Whoa! It gets attracted like a magnet!
+W=GRAFF
+A=SURPRISED
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DETECTOR
+T=This isn't what I need to detect...
+W=GRAFF
+A=DISDAIN
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_NEON
+T=It's brighter... But pointless.
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEATHBUTTON
+T=No... I could damage it as well.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_SELFIE
+T=I like this picture but... not enough to hang it everywhere.
+W=GRAFF
+A=MEH
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_WINGS
+T=It doesn't wanna fly...
+W=BROK
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_INV_RUBBERCUTTER
+T=Better think twice before cutting through my stuff!
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_INV_PRED
+T=I almost expect the toy to say...
+W=BROK
+A=THINK
+
+T="What the heck are you doing?!"
+W=BROK
+A=ANGRY
+
+#----------------------------------------------------
+ID=COMBINE_INV_PIPECHUNK
+T=I can't attach it to the pipe...
+W=BROK
+A=MAYBE
+
+T=What would be the point anyway?
+W=BROK
+A=WONDER
+
+#----------------------------------------------------
+ID=COMBINE_INV_STRING
+T=Good! It's tied...!
+W=BROK
+A=HAPPY
+
+T=(Sigh) I have weird ideas sometimes...
+W=BROK
+A=TIRED
+
+#----------------------------------------------------
+ID=COMBINE_INV_HACKPHONE
+T=...Rubbish phone! It refuses to do what I want!
+W=BROK
+A=ANGRY
+
+#----------------------------------------------------
+ID=COMBINE_INV_PHOTO
+T=No need to plaster his picture everywhere.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_SPEAKER
+T=Weird. No sound.
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_INV_LAMP
+T=That doesn't sound very bright.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_LABFLOWER
+T=Poor little flower... It's bad enough I ripped it.
+W=BROK
+A=DOWN
+
+#----------------------------------------------------
+ID=COMBINE_INV_TABLETHUSH
+T=That tablet doesn't seem like it can analyze anything...
+W=BROK
+A=MEH
+
+T=Maybe the opposite though?
+W=BROK
+A=THINK
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_WRAPPING
+T=Nah... I might accidentally put sauce on it.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_POLLUTIONPILLG
+T=I should hold on to it.
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_WEIGHT
+T=It only makes it heavier...
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_WEIGHT_WEIGHT
+T=They're almost identical except for that flower button logo at the top.
+W=GRAFF
+A=THINK
+
+T=Their weight seems a bit different, but...
+W=GRAFF
+A=THINK
+
+T=I can't say for sure which is lighter. I can't afford to make mistakes...
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_TRIANGLEBUNKER
+T=This piece can't fit in here.
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_BANKSTATEMENT
+T=This won't help me to understand these figures...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_INVOICEHACKER
+T=I'll let Brok pay for this one...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_BILLC
+T=Nah. Better find a Pipe-Pill to pay this.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_PRINT
+T=Pretty sure I was allowed to print this for another reason...
+W=GRAFF
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_PHONEMUSEUM
+T=That old thing won't even turn on...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_PARCHMENT
+T=This parchment is fragile... I probably shouldn't do that.
+W=GRAFF
+A=THINK
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_PENDANT
+T=Pretty sure Lia wouldn't have wanted me to use it this way.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_REMOTECONTROL
+T=Weird! I can't deactivate it...
+W=BROK
+A=WONDER
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_STICK
+T=Hitting it will hardly help.
+W=BROK
+A=ANGRY
+
+
+
+#----------------------------------------------------
+#= COMBINING SPECIFIC ITEMS FOR BROK & GRAFF
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY_CATFUR
+T=Hmm...
+W=BROK
+A=THINK
+
+T=No fleas. That's good!
+W=BROK
+A=HAPPY
+
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY_LABFLOWER
+T=I'll need another way to identify this flower.
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_INV_STICK_SOMETHING
+T=Nuh-uh! I'm not damaging it further!
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_INV_CATFUR_HOOVER
+T=There's still plenty of fur inside it...
+W=BROK
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_INV_CATFUR_PRED
+T=It's already furry enough.
+W=BROK
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_INV_CATFUR_MINE
+T=Fur is hardly fuel for this mine.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_CATFUR_DISGUISE
+T=I'm not trying to disguise myself as a cat...
+W=BROK
+A=OPPOSITE
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_TABLETHUSH_ANALYZE
+T=Dr. Hush's tablet is locked...
+W=BROK
+A=MEH
+
+T=Maybe I could use Dr. Mink's tablet to analyze this instead?
+W=BROK
+A=WONDER
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_APARTMENTKEY_UNSCREW
+T=High tech technology... without screws.
+W=BROK
+A=OPPOSITE
+
+T=You're not supposed to fix these. Just replace them!
+W=BROK
+A=ANGRY
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_SCREWDRIVER_TRY
+T=Dismantle it? For what?
+W=GRAFF
+A=THINK
+
+
+
+#----------------------------------------------------
+
+ID=COMBINE_INV_WINGS_STRING
+T=Yup! Surprisingly there's already a hole on each wing, so if I insert the string here...
+W=BROK
+A=THINK
+TEB=INTERFACE_REMOVEHOLDINGITEM
+
+T=And there...
+W=BROK
+A=THINK
+
+T=Looks good!
+W=BROK
+A=HAPPY
+TEN=COMBINE_INV_WINGS_STRING_GET
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_PIPECHUNK_STRING
+T=Alright... I make a hole on each side...
+W=BROK
+A=WONDER
+TEB=INTERFACE_REMOVEHOLDINGITEM
+
+T=Then the string...
+W=BROK
+A=THINK
+
+T=Nice!
+W=BROK
+A=ALRIGHT
+TEN=COMBINE_INV_PIPECHUNK_STRING_GET
+
+#----------------------------------------------------
+ID=COMBINE_INV_PIPECHUNKSTRING_WINGSSTRING
+T=Yeah, that should do it!
+W=BROK
+A=HAPPY
+TEB=INTERFACE_REMOVEHOLDINGITEM
+TEN=COMBINE_INV_PIPECHUNKSTRING_WINGSSTRING_GET
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_PIPECHUNKSTRING_WINGS
+T=Hmm... I'll attach this end of the string to the wings...
+W=BROK
+A=THINK
+TEB=INTERFACE_REMOVEHOLDINGITEM
+TEN=COMBINE_INV_PIPECHUNKSTRING_WINGSSTRING
+
+#----------------------------------------------------
+ID=COMBINE_INV_PIPECHUNK_WINGSSTRING
+T=Hmm... I'll attach this end of the string to the pipe...
+W=BROK
+A=THINK
+TEB=INTERFACE_REMOVEHOLDINGITEM
+TEN=COMBINE_INV_PIPECHUNKSTRING_WINGSSTRING
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_PIPECHUNK_WINGS
+T=Hmm... I feel like an idea is popping in my head but I'm not quite sure yet...
+W=BROK
+A=WONDER
+
+T=Maybe I'm missing something.
+W=BROK
+A=MAYBE
+
+#----------------------------------------------------
+ID=COMBINE_INV_HACKPHONE_PHOTOWES1
+T=Let's get a picture of that... picture!
+W=BROK
+A=MOCK
+
+T=...
+W=BROK
+A=THINK
+TEN=COMMON_WES_HACKPHONE_CHECK
+
+#----------------------------------------------------
+ID=COMBINE_INV_HACKPHONE3D_OK
+T="2D picture analyzed. 3D model generated."
+W=BROK
+A=THINK
+
+T=The device is now displaying a holographic image of Wes! Nice.
+W=BROK
+A=HAPPY
+TEN=COMBINE_INV_HACKPHONE3D_GET
+
+#----------------------------------------------------
+ID=COMBINE_INV_HACKPHONE3D_NOTOK
+T=It worked. But now I need a three-quarter view.
+W=BROK
+A=THINK
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_HOOVER_MINEBROKEN
+T=I could put it inside but... what's the point?
+W=BROK
+A=WONDER
+
+#----------------------------------------------------
+ID=COMBINE_INV_CATFUR_MINEBROKEN
+T=Not the right fuel!
+W=BROK
+A=ANGRY
+
+#----------------------------------------------------
+ID=COMBINE_INV_EARBUDS_DETECTOR
+T=Only Shay has worn these... And I don't want to detect her.
+W=GRAFF
+A=STUPID
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY1
+T=Hmm... When taking a closer look...
+W=BROK
+A=THINK
+
+T=It's exactly the same.
+W=BROK
+A=ALRIGHT
+
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY2
+T=Hey! This is really dirty.
+W=BROK
+A=SURPRISED
+
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY3
+T=I'm just straining my eyes for nothin'.
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY4
+T=Using his favorite magnifying glass, the detective finds...
+W=BROK
+A=READY
+
+T=Nothing.
+W=BROK
+A=MAYBE
+
+
+#----------------------------------------------------
+ID=COMBINE_INV_MAGNIFY5
+T=Ha-ha! An ant!
+W=BROK
+A=HAPPY
+
+T=Hmm... That's a good snack.
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_INV_RADAR_REMOTECONTROL
+T=Shay would get mad if I disabled her radar...
+W=BROK
+A=MAYBE
+
+
+#----------------------------------------------------
+#= COMBINING ITEMS DEFAULT FOR GRAFF
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT1
+T=Hmm... No.
+W=GRAFF
+A=TURN
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT2
+T=I'm worried about the result if I did that...
+W=GRAFF
+A=TURN
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT3
+T=I can't...
+W=GRAFF
+A=SAD
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT4
+T=That seemed like a great idea... in theory.
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT5
+T=No, that's stupid...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT6
+T=I'm ashamed of myself for thinking of such a foolish solution...
+W=GRAFF
+A=TORN
+
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT7
+T=People say I'm clever...
+W=GRAFF
+A=SAD
+
+T=That's because they haven't seen me try this.
+W=GRAFF
+A=DISDAIN
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT8
+T=Pffft.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT9
+T=Am I losing it...?
+W=GRAFF
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT10
+T=Brok would definitely do that... But that wouldn't work.
+W=GRAFF
+A=DISDAIN
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT11
+T=Whoa. I have weird ideas.
+W=GRAFF
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT12
+T=Maybe... or maybe not.
+W=GRAFF
+A=THINK
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT13
+T=Let's try...
+W=GRAFF
+A=THINK
+
+T=Nope... I can't make this work.
+W=GRAFF
+A=MEH
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT14
+T=Good thing Ott didn't see me try this...
+W=GRAFF
+A=TURN
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT15
+T=I tried this once. I didn't like it.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT16
+T=I didn't go through all these studies to do something so silly, did I...?
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT17
+T=Yeah! And then I'll put some salt on it and have a good meal.
+W=GRAFF
+A=DISDAIN
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT18
+T=I tried this! When I was a kitten.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT19
+T=Let's put it to the test...
+W=GRAFF
+A=THINK
+
+T=Whoops. My bad.
+W=GRAFF
+A=STUPID
+
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_DEFAULT20
+T=I'm straining myself...
+W=GRAFF
+A=TURN
+
+
+#----------------------------------------------------
+#= BAD COMBINATIONS FOR GRAFF
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_FORCEFIELD_DEATHBUTTON
+T=Yeah, that should work!
+W=GRAFF
+A=FRIENDLY
+
+T=But I better put that force field on my desk first.
+W=GRAFF
+A=READY
+
+
+
+#----------------------------------------------------
+#= COMBINING SPECIFIC ITEMS FOR GRAFF
+#----------------------------------------------------
+ID=COMBINE_GRAFF_INV_STICKER_FLOUR
+T=Yes, that could definitely work!
+W=GRAFF
+A=READY
+
+T=But first I should apply flour directly on the "surface" I want a print of.
+W=GRAFF
+A=HAPPY
+
+
+#-----------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------
+#= INVENTORY DESCRIBE FOR BROK
+#-----------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Blanket
+#----------------------------------------------------
+ID=DESCRIBE_INV_BLANKET1
+T=Some kind of ornamental blanket. Very sturdy!
+W=BROK
+A=HAPPY
+CONTEXT=Describe items (in menu)
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Metal bar
+#----------------------------------------------------
+ID=DESCRIBE_INV_METALBAR1
+T=That should do it...
+W=BROK
+A=THINK
+
+T=I should hurry and help Lia!
+W=BROK
+A=READY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pendant
+#----------------------------------------------------
+ID=DESCRIBE_INV_PENDANT1
+T=This belonged to Lia...
+W=BROK
+A=DISAPPOINTED
+
+T=I'm always wearing it... so I never forget.
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Apartment key
+#----------------------------------------------------
+ID=DESCRIBE_INV_APARTMENTKEY1
+T=The key to my apartment.
+W=BROK
+A=THINK
+
+T=The door used to have an auto-lock but it often failed to recognize me.
+W=BROK
+A=MOCK
+
+T=So I replaced it with an old fashioned lock!
+W=BROK
+A=MOCK
+
+T=And it doubles up as a screwdriver! Pretty neat!
+W=BROK
+A=HAPPY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Magnify
+#----------------------------------------------------
+ID=DESCRIBE_INV_MAGNIFY1
+T=My good old magnifying glass!
+W=BROK
+A=HAPPY
+
+T=With it, I can zoom in to see objects at a distance.
+W=BROK
+A=MOCK
+
+T=Haven't used it much. No need for that to go on errands or do plumbing...
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Stick
+#----------------------------------------------------
+ID=DESCRIBE_INV_STICK1
+T=Grandpa's walking and fighting stick.
+W=BROK
+A=THINK
+
+T=Just the right size, so it's easy to carry!
+W=BROK
+A=ALRIGHT
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pred normal
+#----------------------------------------------------
+ID=DESCRIBE_INV_PREDNORMAL1
+T=A "Pred" cuddly toy. Wet it and it gets as big as a balloon!
+W=BROK
+A=HAPPY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pred inflated
+#----------------------------------------------------
+ID=DESCRIBE_INV_PREDINFLATED1
+T=It's all big and cute now!
+W=BROK
+A=HAPPY
+
+T=To get it back to normal, I can either wait or press this button.
+W=BROK
+A=MOCK
+TEN=INTERFACE_PREDINFLATED_CHOICE
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Remote control damaged
+#----------------------------------------------------
+ID=DESCRIBE_INV_REMOTECONTROLDAMAGED1
+T=Is this really a tablet remote control...?
+W=BROK
+A=WONDER
+
+T=I'd better bring this to Shay.
+W=BROK
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Remote control
+#----------------------------------------------------
+ID=DESCRIBE_INV_REMOTECONTROL1
+T=Shay fixed it! And... I guess Sin won't have a use for it now.
+W=BROK
+A=MAYBE
+
+T=It's supposed to interfere with electronic devices...
+W=BROK
+A=MEH
+
+T=Hmm.
+W=BROK
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Sin's Pill
+#----------------------------------------------------
+ID=DESCRIBE_INV_PILL1
+T=One thing's for sure - that isn't an anti-pollution pill.
+W=BROK
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pollution Pill
+#----------------------------------------------------
+ID=DESCRIBE_INV_POLLUTIONPILL1
+T=Ingest a pill to protect yourself from the Haze.
+W=BROK
+A=THINK
+
+T=Anti-pollution effects guaranteed. I don't need it myself.
+W=BROK
+A=THINK
+
+T=Such a peculiar shape... Most likely to distinguish it from less important pills.
+W=BROK
+A=WONDER
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+
+
+#----------------------------------------------------
+#= AD DESCRIBE : Fridge
+#----------------------------------------------------
+ID=DESCRIBE_AD_PC01_FRIDGE
+T=I don't eat candy anymore, but I did in my youth!
+W=BROK
+A=MAYBE
+
+T=Fortunately my teeth get replaced every year!
+W=BROK
+A=HAPPY
+TEN=INTERFACE_DESCRIBEAD_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Handkerchief
+#----------------------------------------------------
+ID=DESCRIBE_INV_HANDKERCHIEF1
+T=Eww... Dirty.
+W=BROK
+A=CONFUSED
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Hoover
+#----------------------------------------------------
+ID=DESCRIBE_INV_HOOVER1
+T=I hope it can be repaired.
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Cat fur
+#----------------------------------------------------
+ID=DESCRIBE_INV_CATFUR1
+T=This cat fur is sticky! I just can't get rid of it!
+W=BROK
+A=OPPOSITE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Broken mine
+#----------------------------------------------------
+ID=DESCRIBE_INV_MINEBROKEN1
+T=Seems broken. I hope it won't trigger by itself...
+W=BROK
+A=WORRIED
+
+T=Eww... Where does that rotten Pampalos smell come from?
+W=BROK
+A=CONFUSED
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Loaded mine
+#----------------------------------------------------
+ID=DESCRIBE_INV_MINELOADED1
+T=Good mine! You haven't exploded on me... yet.
+W=BROK
+A=HAPPY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Medical prescription
+#----------------------------------------------------
+ID=DESCRIBE_INV_TRAMPPRESCR1
+T=The old man gave me this. Let's try and get him some medicine!
+W=BROK
+A=READY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Energy Bill
+#----------------------------------------------------
+ID=DESCRIBE_INV_BILLA1
+T=I owe {amount} Unis... And I need to pay this within two days on a Pipe-Mail.
+W=BROK
+A=DISAPPOINTED
+
+T=Graff spends more and more time in front of screens. Must be that age...
+W=BROK
+A=OPPOSITE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Screw
+#----------------------------------------------------
+ID=DESCRIBE_INV_SCREW1
+T=A memory of a short-lived friendship...
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Gun
+#----------------------------------------------------
+ID=DESCRIBE_INV_GUN1
+T=That gun can't kill anyone, but I'd better not use it.
+W=BROK
+A=MAYBE
+
+T=I bet a tracker activates when you fire...
+W=BROK
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Data key
+#----------------------------------------------------
+ID=DESCRIBE_INV_USBKEY1
+T=I gotta insert this in the main server...
+W=BROK
+A=THINK
+
+T=Shay said it will work automatically but knowing her... I should be ready for anything.
+W=BROK
+A=READY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Rent Bill
+#----------------------------------------------------
+ID=DESCRIBE_INV_BILLB1
+T=Gotta find {amount} Unis now...
+W=BROK
+A=MAYBE
+COMM=Amount is 500
+
+T=Why do bills all come at the same time?... (Sigh)
+W=BROK
+A=DOWN
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Radar
+#----------------------------------------------------
+ID=DESCRIBE_INV_RADAR1
+T=How did Shay talk me into doing more work for her...?
+W=BROK
+A=THINK
+
+T=Oh well. It's worth checking once in a while.
+W=BROK
+A=ALRIGHT
+
+T=Maybe I'll find what she needs... and make some extra bucks!
+W=BROK
+A=HAPPY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Wings
+#----------------------------------------------------
+ID=DESCRIBE_INV_WINGS1
+T=Just vandalized this... I hope it'll be worth it.
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Lever
+#----------------------------------------------------
+ID=DESCRIBE_INV_LEVER1
+T=It's weird... Is that even a lever?
+W=BROK
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Rubber cutter
+#----------------------------------------------------
+ID=DESCRIBE_INV_RUBBERCUTTER1
+T=I thought this was a lever!
+W=BROK
+A=SURPRISED
+
+T=That thing only cuts through rubber. At least, that's what she said...
+W=BROK
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pipe chunk
+#----------------------------------------------------
+ID=DESCRIBE_INV_PIPECHUNK1
+T=Now that's a big pipe!
+W=BROK
+A=SURPRISED
+
+T=If only I knew why I took this.
+W=BROK
+A=WONDER
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : String
+#----------------------------------------------------
+ID=DESCRIBE_INV_STRING1
+T=String! What a great item.
+W=BROK
+A=HAPPY
+
+T=With this you can tie things and...
+W=BROK
+A=WONDER
+
+T=Tie more things!
+W=BROK
+A=HAPPY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Wings with string
+#----------------------------------------------------
+ID=DESCRIBE_INV_WINGSSTRING1
+T=That's a first step...
+W=BROK
+A=MEH
+
+T=But to what...?
+W=BROK
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pipe chunk with string
+#----------------------------------------------------
+ID=DESCRIBE_INV_PIPECHUNKSTRING1
+T=Okay... What's next?
+W=BROK
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Disguise
+#----------------------------------------------------
+ID=DESCRIBE_INV_DISGUISE1
+T=Perfect!
+W=BROK
+A=HAPPY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Hackphone
+#----------------------------------------------------
+ID=DESCRIBE_INV_HACKPHONE1
+T=It's full of inputs... Extension slots...?
+W=BROK
+A=THINK
+
+T=Hey, look! I can press there and it lights up! I'm impressed.
+W=BROK
+A=HAPPY
+TEN=INTERFACE_HACKPHONE_CHOICE
+
+#----------------------------------------------------
+ID=INTERFACE_HACKPHONE_INSTRUCTIONS
+T="Before using this app, take two pictures of the subject."
+W=BROK
+A=THINK
+
+T="One front-facing, one 3/4 view."
+W=BROK
+A=THINK
+
+
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Photo wes
+#----------------------------------------------------
+ID=DESCRIBE_INV_PHOTOWES1
+T=Better not wander around with this for too long. Someone might get the wrong idea.
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Photo RJ
+#----------------------------------------------------
+ID=DESCRIBE_INV_PHOTORJ1
+T=Yup, no mistake. That's the big bear!
+W=BROK
+A=ALRIGHT
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Hackphone with holographic pic
+#----------------------------------------------------
+ID=DESCRIBE_INV_HACKPHONE3D1
+T=This displays a tridimensional hologram of Wes!
+W=BROK
+A=HAPPY
+
+T=Scary.
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Speaker
+#----------------------------------------------------
+ID=DESCRIBE_INV_SPEAKER1
+T=Uh-oh... I hope I didn't break it...
+W=BROK
+A=MAYBE
+
+T=It's not making sound anymore!
+W=BROK
+A=SURPRISED
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Lamp Mink
+#----------------------------------------------------
+ID=DESCRIBE_INV_LAMPMINK1
+T=That's the lamp I found next to the body in Dr. Mink's room.
+W=BROK
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Lamp Hush
+#----------------------------------------------------
+ID=DESCRIBE_INV_LAMPHUSH1
+T=This one was on the shelf in Dr. Hush's room.
+W=BROK
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Tablet Dr. Hush
+#----------------------------------------------------
+ID=DESCRIBE_INV_TABLETHUSH1
+T=Locked by a fingerprint reader...
+W=BROK
+A=MAYBE
+
+T=Who knows how many secrets transitioned through this device?
+W=BROK
+A=WONDER
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pill Dr. Hush
+#----------------------------------------------------
+ID=DESCRIBE_INV_PILLHUSH1
+T=Found it in the restroom...
+W=BROK
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Lab flower
+#----------------------------------------------------
+ID=DESCRIBE_INV_LABFLOWER1
+T=This came from a weird plant in the hall.
+W=BROK
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Map building
+#----------------------------------------------------
+ID=DESCRIBE_INV_MAPBUILDING1
+T=Fortunately this building is small...
+W=BROK
+A=MAYBE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Battery
+#----------------------------------------------------
+ID=DESCRIBE_INV_BATTERY1
+T=I bet this stores energy!
+W=BROK
+A=ALRIGHT
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Medicine for tramp
+#----------------------------------------------------
+ID=DESCRIBE_INV_TRAMPMEDICINE1
+T=Let's get this to him ASAP!
+W=BROK
+A=READY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Ear buds
+#----------------------------------------------------
+ID=DESCRIBE_INV_EARBUDSB1
+T=Graff gave me these...
+W=BROK
+A=DOWN
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#-----------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------
+#= INVENTORY DESCRIBE FOR GRAFF!!!
+#-----------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Screwdriver
+#----------------------------------------------------
+ID=DESCRIBE_INV_SCREWDRIVER1
+T=Just your basic screwdriver. Could still be useful!
+W=GRAFF
+A=FRIENDLY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Keys
+#----------------------------------------------------
+ID=DESCRIBE_INV_KEYGRAFF1
+T=The key to our apartment.
+W=GRAFF
+A=MEH
+
+T=It's rusting. Poor quality...
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Statuette
+#----------------------------------------------------
+ID=DESCRIBE_INV_STATUETTE1
+T=I... still can't believe I've picked this up...
+W=GRAFF
+A=OPPOSITE
+
+T=It makes me uncomfortable. Better get rid of it quickly!
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Sticker
+#----------------------------------------------------
+ID=DESCRIBE_INV_STICKER1
+T=My favorite band! But that fee...
+W=GRAFF
+A=SAD
+
+T=I doubt Brok would ever lend me enough to afford it... (Sigh)
+W=GRAFF
+A=TURN
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Flour
+#----------------------------------------------------
+ID=DESCRIBE_INV_FLOUR1
+T=Wait a sec... What am I doing with this...?
+W=GRAFF
+A=THINK
+
+T=I better be careful when traveling around...
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Pipe weapon
+#----------------------------------------------------
+ID=DESCRIBE_INV_PIPEWEAPON1
+T=...
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Ear buds
+#----------------------------------------------------
+ID=DESCRIBE_INV_EARBUDS1
+T=Shay gave me those ear buds. They block outside noise.
+W=GRAFF
+A=MEH
+
+T=They were for Brok but...
+W=GRAFF
+A=OPPOSITE
+
+T=Well... He snores at night.
+W=GRAFF
+A=DISDAIN
+
+T=Maybe I'll keep them... at least until exams are over.
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Force field
+#----------------------------------------------------
+ID=DESCRIBE_INV_FORCEFIELD1
+T=That device applies a small force field around whatever this is inserted in.
+W=GRAFF
+A=MEH
+
+T=It's meant to be combined with other devices.
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Button of the death
+#----------------------------------------------------
+ID=DESCRIBE_INV_DEATHBUTTON1
+T=Ouch!
+W=GRAFF
+A=STUPID
+
+T=The heck?! It's not connected anymore! Why did I get zapped...?
+W=GRAFF
+A=GASP
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Detector
+#----------------------------------------------------
+ID=DESCRIBE_INV_DETECTOR1
+T=This generates a signal as soon as a threat comes near it.
+W=GRAFF
+A=MEH
+
+T=The "threat" remains to be defined with another item...
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Operator
+#----------------------------------------------------
+ID=DESCRIBE_INV_OPERATOR1
+T=This device triggers a reaction when associated with a detector.
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Melt plastic
+#----------------------------------------------------
+ID=DESCRIBE_INV_MELTPLASTIC1
+T=Oh gosh... Hopefully I won't go to hell after this.
+W=GRAFF
+A=GASP
+COMM=Because he burnt the religious statuette.
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Neon
+#----------------------------------------------------
+ID=DESCRIBE_INV_NEON1
+T=Now that's what I call a bright light!
+W=GRAFF
+A=FRIENDLY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Fingerprint
+#----------------------------------------------------
+ID=DESCRIBE_INV_FINGERPRINT1
+T=Klay's fingerprint.
+W=GRAFF
+A=MEH
+
+T=No touching... No way I'm doing this again!
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Selfie
+#----------------------------------------------------
+ID=DESCRIBE_INV_SELFIE1
+T=That picture... It's totally him.
+W=GRAFF
+A=THINK
+
+T=Always unexpected!
+W=GRAFF
+A=FRIENDLY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : POllution pill for Graff
+#----------------------------------------------------
+ID=DESCRIBE_INV_POLLUTIONPILLG1
+T=The only thing keeping us alive here in the Slums... Or barely.
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Weight
+#----------------------------------------------------
+ID=DESCRIBE_INV_WEIGHT1
+T=I'm afraid I'm pretty bad at comparing the weights of... weights.
+W=GRAFF
+A=DISDAIN
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+ID=DESCRIBE_INV_WEIGHT2
+T=Weird shape...
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+ID=DESCRIBE_INV_WEIGHT3
+T=I wonder if there's a way to tell how much each weight is?
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+ID=DESCRIBE_INV_WEIGHT4
+T=...
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Triangle bunker
+#----------------------------------------------------
+ID=DESCRIBE_INV_TRIANGLEBUNKER1
+T=I won this...?
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Bank statement
+#----------------------------------------------------
+ID=DESCRIBE_INV_BANKSTATEMENT1
+T=What's this account? Why is my mother's name on it...?
+W=GRAFF
+A=THINK
+
+T=And also... Where did this money come from?!
+W=GRAFF
+A=SURPRISED
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : INVOICEHACKER
+#----------------------------------------------------
+ID=DESCRIBE_INV_INVOICEHACKER1
+T=I can't put my finger on it but... This invoice seems fishy.
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : BILL C
+#----------------------------------------------------
+ID=DESCRIBE_INV_BILLC1
+T=150 Unis...
+W=GRAFF
+A=MEH
+
+T=I'm almost an adult now. I should do my part and pay this.
+W=GRAFF
+A=READY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Printed shapes
+#----------------------------------------------------
+ID=DESCRIBE_INV_TRIANGLEPRINT1
+T=Also called a pyramid... with a triangular tip.
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+ID=DESCRIBE_INV_HALFCIRCLEPRINT1
+T=A sphere that would have been cut in half.
+W=GRAFF
+A=MEH
+
+T=This reminds me of something...
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+ID=DESCRIBE_INV_FULLCIRCLEPRINT1
+T=A crystal sphere. Really cool!
+W=GRAFF
+A=FRIENDLY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+ID=DESCRIBE_INV_RECTANGLEPRINT1
+T=A small rectangular box... made of crystal.
+W=GRAFF
+A=MEH
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Museum key
+#----------------------------------------------------
+ID=DESCRIBE_INV_MUSEUMKEY1
+T=To think this was hidden right under my nose...
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Museum phone
+#----------------------------------------------------
+ID=DESCRIBE_INV_PHONEMUSEUM1
+T=An ancient device...
+W=GRAFF
+A=THINK
+
+T=I wonder what kind of creatures used these. They must be creepy!
+W=GRAFF
+A=FRIENDLY
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Parchment
+#----------------------------------------------------
+ID=DESCRIBE_INV_PARCHMENT1
+T=Must be part of a puzzle...
+W=GRAFF
+A=THINK
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Chief rat pic
+#----------------------------------------------------
+ID=DESCRIBE_INV_CHIEFRATPIC1
+T=...
+W=GRAFF
+A=MEH
+
+T=It really does look like Brok...
+W=GRAFF
+A=TURN
+
+T=What could this mean...?
+W=GRAFF
+A=SAD
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#----------------------------------------------------
+#= INVENTORY DESCRIBE : Any present given by Brok
+#----------------------------------------------------
+ID=DESCRIBE_INV_GRAFF_GIVEN1
+T=Brok gave me this...
+W=GRAFF
+A=SAD
+
+T=I... can't even remember the last time I got a present...
+W=GRAFF
+A=TURN
+TEN=INTERFACE_DESCRIBEITEM_END
+
+
+
+#----------------------------------------------------
+#= INTERFACE : Materials
+#----------------------------------------------------
+ID=INTERFACE_MATERIALS1
+T=For a digital list, I expected something less... archaic looking!
+W=BROK
+A=THINK
+CONTEXT=Shay's materials icon in menu
+
+#----------------------------------------------------
+ID=INTERFACE_MATERIAL_TOFIND1
+T=Gotta find this!
+W=BROK
+A=READY
+
+#----------------------------------------------------
+ID=INTERFACE_MATERIAL_TOFIND2
+T=No idea what this is but... Shay will pay a good price for it!
+W=BROK
+A=HAPPY
+
+#----------------------------------------------------
+ID=INTERFACE_MATERIAL_FOUND
+T=I found that one!
+W=BROK
+A=HAPPY
+
+
+#----------------------------------------------------
+#= GAMEPLAY : Not enough money
+#----------------------------------------------------
+ID=GAMEPLAY_NOT_ENOUGH_MONEY
+T=I don't have enough money...
+W=BROK
+A=DISAPPOINTED
+CONTEXT=Various gameplay possibilities
+
+#----------------------------------------------------
+#= GAMEPLAY : Already max number of item
+#----------------------------------------------------
+ID=GAMEPLAY_TOOMANY_ITEM1
+T=The Government forbids me from carrying any more...
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=GAMEPLAY_TOOMANY_ITEM2
+T=I've got the maximum number allowed for this item.
+W=BROK
+A=MEH
+
+
+#------------------------------------------
+#= INTERROGATION : Missing clues default
+#------------------------------------------
+ID=GAMEPLAY_MISSINGCLUES_DEFAULT1
+T=(Did I miss an important clue related to this...?)
+W=BROK
+A=WONDER
+MOOD=THINK
+CONTEXT=Interrogation default dialog when missing clues or wrong combination
+
+#------------------------------------------
+ID=GAMEPLAY_MISSINGCLUES_DEFAULT2
+T=(Something's not right... I need to resume my investigation.)
+W=BROK
+A=STUPID
+MOOD=THINK
+
+#----------------------
+ID=GAMEPLAY_INTERROGATE_WEAKLINK
+T=(There must be a link... It's not clear enough yet.)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#----------------------
+ID=GAMEPLAY_INTERROGATE_MISSINGSTEP
+T=(Hmm... There's an idea there but I feel like I'm missing a step...)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=GAMEPLAY_INTERROGATE_NOTBRING
+T=(I can see the link but that doesn't bring anything new...?)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#----------------------
+ID=GAMEPLAY_INTERROGATE_TOOSOON
+T=(Yes, definitely something there... But I'll keep this for the right moment!)
+W=BROK
+A=READY
+MOOD=THINK
+
+#------------------------------------------
+#= INTERROGATION : Combine clues default
+#------------------------------------------
+ID=GAMEPLAY_COMBINECLUES_DEFAULT1
+T=I... can't see any link between those two clues.
+W=BROK
+A=MAYBE
+
+#------------------------------------------
+ID=GAMEPLAY_COMBINECLUES_DEFAULT2
+T=Erm... Maybe... No, that's silly...
+W=BROK
+A=STUPID
+
+#------------------------------------------
+ID=GAMEPLAY_COMBINECLUES_DEFAULT3
+T=My brain is melting!
+W=BROK
+A=CONFUSED
+
+#------------------------------------------
+ID=GAMEPLAY_COMBINECLUES_DEFAULT4
+T=I'm starting to wonder if I'm really fit to be a detective...
+W=BROK
+A=DISAPPOINTED
+
+#----------------------------------------------------
+#= SPECIALS
+#----------------------------------------------------
+ID=GAMEOVER_TUTORIAL1
+T=Huh... What just happened...?
+W=BROK
+A=WONDER
+TEN=CLICKERS_BACK
+CONTEXT=Gameovers
+
+#----------------------------------------------------
+ID=CH_CALL_SIN
+T=I'm afraid he can't reply from jail...
+W=BROK
+A=MAYBE
+CONTEXT=Phone calls
+
+#-------------------------------------------------------------------------------------
+#= OTT : Inventory (we put this here because we can talk to Ott in many game rooms)
+#-------------------------------------------------------------------------------------
+ID=COMMON_OTT_INV_DEFAULT1
+T=Here!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+CONTEXT=Showing inventory to Ott
+
+T=For me?!
+W=OTT
+C2A=SURPRISED
+
+T=That's super nice of you but... I can't accept!
+W=OTT
+C2A=HAPPY
+
+T=Okay... Maybe something else then?
+W=BROK
+C1A=THINK
+
+T=I don't get it...
+W=OTT
+C2A=NORMAL
+
+T=Are you... trying to bribe me or something?
+W=OTT
+C2A=WONDER
+
+T=N-no! I just thought...
+W=BROK
+C1A=SURPRISED
+
+T=(Better stop before I embarrass myself)
+W=BROK
+C1A=STUPID
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=COMMON_OTT_INV_DEFAULT2
+T=Erm...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=Oh, you're checking for clues! Pretty cool!
+W=OTT
+
+T=Yeah...! Exactly...!
+W=BROK
+C1A=MAYBE
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=COMMON_OTT_INV_APARTMENTKEY
+T=You should come live with us!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=Erm... With you and Graff...?
+W=OTT
+C2A=WONDER
+
+T=Wouldn't that be... awkward...?
+W=OTT
+
+T=I have a home, you know.
+W=OTT
+C2A=NORMAL
+
+T=Oh.
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+
+#----------------------
+ID=COMMON_OTT_INV_BILL1
+T=Yeah, I know... The bills are taking a toll on us.
+W=OTT
+C1=BROK
+C1A=MAYBE
+C2=OTT
+C2A=DISAPPOINTED
+
+T=Sorry I can't help with that.
+W=OTT
+
+T=No worries! I'll handle it.
+W=BROK
+C1A=READY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=COMMON_OTT_INV_CATFUR
+T=Watch out...! You're covered in fur!
+W=OTT
+C1=BROK
+C1A=MEH
+C2=OTT
+C2A=SURPRISED
+
+T=That's Graff's!
+W=BROK
+
+T=Oh...
+W=OTT
+C2A=NORMAL
+
+T=Cool.
+W=OTT
+
+T=(...? I expected a different reaction.)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=COMMON_OTT_INV_MAGNIFY
+T=Cool!
+W=OTT
+C1=BROK
+C1A=MAYBE
+C2=OTT
+C2A=HAPPY
+
+T=I bet you solved many crimes with this!
+W=OTT
+
+T=Erm... Many clogged drains, at least!
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=COMMON_OTT_INV_POLLUTIONPILL
+T=Thanks, I'm good! Save it for Graff.
+W=OTT
+C1=BROK
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=COMMON_OTT_INV_PREDNORMAL
+T=Oh, I know these! I had one when I was little.
+W=OTT
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=Graff, too! I'm gonna give it to him.
+W=BROK
+
+T=Erm... Okay...
+W=OTT
+C2A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#-----------------------------------
+#= Think
+#-----------------------------------
+ID=COMMON_OTT_THINK
+T=(He seems like a genuinely good person... who has his share of trouble with life.)
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+MOOD=THINK
+
+T=(I can see why he relates to Graff. I'm certainly glad they're friends.)
+W=BROK
+MOOD=THINK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+
+#----------------------------------------------------
+#= GRAFF CALLS OTT
+#----------------------------------------------------
+ID=PC_GRAFF_CALL_OTT_SAMEROOM
+T=Graff? What are you doing?!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+CONTEXT=More phone calls
+
+T=What's the problem?
+W=GRAFF
+
+T=I'm right next to you!
+W=OTT
+
+T=Duh.
+W=GRAFF
+C1A=STUPID
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=PC_GRAFF_CALL_KLAYDEAD
+T=...
+W=GRAFF
+A=SAD
+
+T=That... won't be possible anymore...
+W=GRAFF
+
+
+
+#----------------------------------------------------
+ID=PC_GRAFF_CALL_SHAY
+T=Hello?
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=Erm... Miss Shay?
+W=GRAFF
+A=MEH
+
+T=Yes and no.
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=The real Shay is busy right now. I'm just a reply bot!
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=How can I help you?
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=I doubt you can...
+W=GRAFF
+A=TURN
+
+T=You underestimate me, but that's fine!
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=Bye!
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+TEN=INTERFACE_CALL_END
+
+###############################################
+# PROOFREAD - illuminati1556 - 19/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# PROOFREAD & UPDATED - Chris Barnes - 26/09/2019
+###############################################
+
+
+
+#----------------------------------------------------
+ID=COMMON_AD_GET1
+T=Hey, that's a collectible ad!
+W=BROK
+A=HAPPY
+TEN=INTERFACE_GETAD
+
+#----------------------------------------------------
+ID=COMMON_AD_GET2
+T=Nice... An ad coupon!
+W=BROK
+A=MOCK
+TEN=INTERFACE_GETAD
+
+#----------------------------------------------------
+ID=COMMON_AD_GET3
+T=I didn't have that one!
+W=BROK
+A=MOCK
+TEN=INTERFACE_GETAD
+
+#----------------------------------------------------
+ID=COMMON_AD_CLOSER
+T=Hmm... I need to get closer.
+W=BROK
+A=THINK
+
+#----------------------------------------------------
+ID=COMMON_AD_GRAFF_GET1
+T=A collectible ad? Great!
+W=GRAFF
+A=HAPPY
+TEN=INTERFACE_GETAD
+
+#----------------------------------------------------
+ID=COMMON_AD_GRAFF_GET2
+T=Awesome, I've found another one!
+W=GRAFF
+A=READY
+TEN=INTERFACE_GETAD
+
+#----------------------------------------------------
+ID=COMMON_AD_GRAFF_GET3
+T=One more to the collection!
+W=GRAFF
+A=HAPPY
+TEN=INTERFACE_GETAD
+
+#----------------------------------------------------
+ID=COMMON_AD_GRAFF_CLOSER
+T=Hmm... I need to get closer.
+W=GRAFF
+A=THINK
+
+
+#----------------------
+# Similar to GPC05D_OTT_GRAFFJUMPS
+ID=COMMON_OTT_GRAFFDIES
+T=Graff!!!
+W=OTT
+A=SURPRISED
+COMM=If Graff dies when Ott is around
+TEN=GAMEOVER
+
+#----------------------
+ID=COMMON_GRAFF_HITOTT1
+T=Argh!!!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SURPRISED
+CONTEXT=When Graff hits Ott
+
+T=That hurts, you know!
+W=OTT
+C2A=DISAPPOINTED
+
+T=Erm...
+W=GRAFF
+C1A=TURN
+
+#----------------------
+ID=COMMON_GRAFF_HITOTT2
+T=Ouch!
+W=OTT
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=SURPRISED
+CONTEXT=When Graff hits Ott
+
+T=What did I do?...
+W=OTT
+C2A=OPPOSITE
+
+T=Sorry...
+W=GRAFF
+C1A=TURN
+
+
+#----------------------
+ID=COMMON_GRAFF_HITOTT3
+T=No...!
+W=OTT
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=SURPRISED
+CONTEXT=When Graff hits Ott
+
+T=Enough!!! I get it!
+W=OTT
+C1A=GASP
+C2A=ANGRY
+
+T=Figure that trial on your own. I'm outta here!
+W=OTT
+TEN=DAY3_OTT_HIT_LEAVES
+
+#----------------------
+ID=COMMON_GRAFF_OTT_FOLLOWS1
+T=Why are we here?
+W=OTT
+C2=OTT
+C2A=WONDER
+NB=1
+D=60
+
+
+#----------------------
+ID=COMMON_GRAFF_OTT_FOLLOWS2
+T=I'm not sure what you're looking for...
+W=OTT
+C2=OTT
+C2A=WONDER
+NB=1
+D=60
+
+
+#----------------------
+ID=COMMON_GRAFF_OTT_FOLLOWS3
+T=Graff?...
+W=OTT
+C2=OTT
+C2A=WONDER
+NB=1
+D=60
+
+
+#----------------------
+ID=COMMON_TRIBOT_GAMEOVER1
+T=Good job. The fat croc no longer rocks.
+W=TRIBOT
+A=NORMAL
+
+T=Time to report and get our reward.
+W=TRIBOT
+A=NORMAL
+TEN=CH5_TRIBOTCOPS_GAMEOVERNEXT
+
+#----------------------
+ID=COMMON_TRIBOT_GAMEOVER2
+T=Error 404: Target no longer exists.
+W=TRIBOT
+A=NORMAL
+TEN=CH5_TRIBOTCOPS_GAMEOVERNEXT
+
+#----------------------
+ID=COMMON_TRIBOT_GAMEOVER3
+T=Next time, listen to your intellectual superiors.
+W=TRIBOT
+A=NORMAL
+
+T=Error: One cannot listen when they are dead.
+W=TRIBOT
+A=NORMAL
+
+T=Never mind, then.
+W=TRIBOT
+A=NORMAL
+TEN=CH5_TRIBOTCOPS_GAMEOVERNEXT
+
+
+#----------------------
+ID=COMMON_TRIBOTWITHDEE_GAMEOVER1
+T=Two for the price of one!
+W=TRIBOT
+A=NORMAL
+TEN=CH6_TRIBOTCOPS_GAMEOVERNEXT
+
+#----------------------
+ID=COMMON_TRIBOTWITHDEE_GAMEOVER2
+T=Game over!
+W=TRIBOT
+A=NORMAL
+TEN=CH6_TRIBOTCOPS_GAMEOVERNEXT
+
+#----------------------
+ID=COMMON_DEE_BROKLOSE
+T=Nooo!...
+W=DEE
+A=SURPRISED
+TEN=CH5_TRIBOTCOPS_GAMEOVER
+
+#----------------------
+ID=COMMON_DEE_LOSE
+T=Dee!
+BVOICE=BROK
+BNAME=BROK
+NB=1
+D=60
+
+
+
+
+#----------------------
+ID=COMMON_DEE_HITATTACK1
+T=Argh!!!
+W=DEE
+C2=DEE
+C2A=ANGRY
+TEN=CH6_DEE_HITREPLY
+
+#----------------------
+ID=COMMON_DEE_HITATTACK2
+T=Hey! Stop!
+W=DEE
+C2=DEE
+C2A=ANGRY
+TEN=CH6_DEE_HITREPLY
+
+#----------------------
+ID=COMMON_DEE_HITATTACK3
+T=Are you crazy?...
+W=DEE
+C2=DEE
+C2A=ANGRY
+TEN=CH6_DEE_HITREPLY
+
+#----------------------
+ID=COMMON_DEE_BROKDEAD
+T=Oh no!
+W=DEE
+C2=DEE
+C2A=SURPRISED
+TEN=GAMEOVER
+
+#----------------------
+ID=COMMON_OTT_BREAK
+T=Why did you do this?...
+W=OTT
+A=SURPRISED
+
+
+#----------------------
+ID=COMMON_GHERKIN_BREAK
+T=...
+W=GHERKIN
+A=ANGRY
+
+#---------------------------------------------
+ID=COMMON_RJ_CATFUR
+T=A--choo!
+NB=1
+D=60
+BNAME=RJ
+BVOICE=RJ
+SILENCE=1
+
+
+#----------------------------------------------------
+#= COOP SPECIFIC
+#----------------------------------------------------
+ID=COOP_INTERACT_DOOR1
+T=I can't open that door!
+
+#----------------------------------------------------
+ID=COOP_INTERACT_DOOR2
+T=I'm a ghost! I can't go through doors!
+T=Hmm...I'm starting to question my existence.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_DOOR3
+T=Gotta ask the {whomain} to open it.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_PASSAGE1
+T=I have to stay around my host.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_PASSAGE2
+T=I only exist to help the {whomain}. So I can't go there until they decide it.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_PASSAGE3
+T=Too far for me!
+
+#----------------------------------------------------
+ID=COOP_INTERACT_UNKNOWN1
+T=Huh?...
+
+#----------------------------------------------------
+ID=COOP_INTERACT_UNKNOWN2
+T=No idea what that is.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_UNKNOWN3
+T=My limited brain can't understand this.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_USE1
+T=I can't touch this! I'm a ghost!
+T=You gotta believe me!
+
+#----------------------------------------------------
+ID=COOP_INTERACT_USE2
+T=Only a real person can use this.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_USE3
+T=I wish I could, but I can only destroy stuff.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_AD1
+T=Nice! The {whomain} will be pleased that I found this ad for him!
+TEN=COOP_INTERACT_ADNEXT
+
+#----------------------------------------------------
+ID=COOP_INTERACT_AD2
+T=Cool, we should be able to get a hint with that!
+TEN=COOP_INTERACT_ADNEXT
+
+#----------------------------------------------------
+ID=COOP_INTERACT_AD3
+T=Another one for his collection!
+TEN=COOP_INTERACT_ADNEXT
+
+#----------------------------------------------------
+ID=COOP_INTERACT_ITEMPICK1
+T=Looks interesting, I need to tell the {whomain} to pick it up!
+
+#----------------------------------------------------
+ID=COOP_INTERACT_ITEMPICK2
+T=I want it, but my ghost hands can't touch it.
+T=Not until the main player gets it, anyway.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_ITEMPICK3
+T=Hey look, we need to take this!
+
+#----------------------------------------------------
+ID=COOP_INTERACT_CANNOTINTERRUPT1
+T=I would, if the main player wasn't busy talking or whatever.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_CANNOTINTERRUPT2
+T=Gotta wait a bit.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_CANNOTINTERRUPT3
+T=Yes, as soon as the main player finally shuts it.
+
+#----------------------------------------------------
+ID=COOP_INTERACT_NOTENOUGHMONEY
+T=Not enough money...
+
+
+#----------------------------
+ID=COOP_OTT1
+T=He's the best one of us.
+T=We need to stay close and protect him at all cost!
+
+#----------------------------
+ID=COOP_STUBOT1
+T=Meh.
+T=Never trusted those tin cans, this one's no different.
+
+#----------------------------
+ID=COOP_KLAY1
+T=I don't remember this kid...
+T=Maybe because he's unremarkable.
+
+#----------------------------
+ID=COOP_GUARD1
+T=Round yet strong guy.
+T=Very friendly despite appearances.
+
+#----------------------------
+ID=COOP_MINK1
+T=Spoiler: this cranky lab nerd didn't do it.
+T=Believe me or not, I don't care! After all I don't exist.
+
+#----------------------------
+ID=COOP_TIDY1
+T=The laboratory slave.
+
+#----------------------------
+ID=COOP_HUSH1
+T=I'm trying hard, but he won't say a word!
+T=Scientists are so impolite.
+
+#----------------------------
+ID=COOP_GHERKIN1
+T=Great, we're doing geriatrics today!
+
+#----------------------------
+ID=COOP_DEE1
+T=Journalism ain't what it used to be.

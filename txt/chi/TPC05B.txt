@@ -1,0 +1,543 @@
+#-------------------------------
+#= Sewers inside action
+#-------------------------------
+
+#----- Interactions --------
+PC_INSCRIPTION=铭文
+PC_MINE=地雷
+PC_BASKET=篮子
+PC_WIRES=电线
+
+#----- Choices / Items --------
+GOT_MINEBROKEN=损坏的地雷！
+
+#----- Topics --------
+PC05B_THREATEN=威胁
+PC05B_TRADE=交易
+PC05B_ESCAPE=逃跑
+PC05B_ATTACK=攻击
+PC05B_TALK=对话
+PC05B_BLUFF=虚张声势
+PC05B_MINEBROKEN_CHOICE=捡取损坏的地雷？
+
+#----- Dialog --------
+
+
+
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 17/06/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Brok enters room and sees mines
+# *****************************************************************
+# Brok
+PC05B_MINE_LOOK-1=咦，那好像是……
+# Brok
+PC05B_MINE_LOOK-2=自我再生地雷？
+# Brok
+PC05B_MINE_LOOK-3=我得放慢点脚步……
+#----------------------------------------------------
+# Brok
+PC05B_WIRES1-1=一团非常细的电线……必定是那些地雷的部分零件。
+# Brok
+PC05B_WIRES1-2=毕竟那种地雷都是电子设备。
+#----------------------------------------------------
+# Brok
+PC05B_WIRES_MINEBROKEN-1=不行……看来这地雷失效的原因不仅仅在于缺电。
+# Brok
+PC05B_WIRES_MINEBROKEN-2=我应该去请教下专家！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Welcome to the rats place.
+# *****************************************************************
+# Brok
+PC05B_INSCRIPTION1-1=唔……这个地方让我有种似曾相识的感觉……
+# Brok
+PC05B_INSCRIPTION1-2=究竟是在哪里见过呢……？
+# Brok
+PC05B_INSCRIPTION1-3=无论如何，这不是好兆头。
+#----------------------------------------------------
+# Brok
+PC05B_TROUBLE1-1=糟糕……碰上麻烦了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rats prevent Brok from going further
+# *****************************************************************
+# Chiefrat
+PC05B_CHIEFRAT_FIRST-1=下水道中的鳄鱼人。真是老套。
+# Brok
+PC05B_CHIEFRAT_FIRST-2=呃……你好！我是……
+# Chiefrat
+PC05B_CHIEFRAT_FIRST-3=我管你是什么人。
+# Brok
+PC05B_CHIEFRAT_FIRST-4=唔，鼠人果然都是直来直往。
+# Chiefrat
+PC05B_CHIEFRAT_FIRST-5=不过……你看起来有点眼熟……
+# Brok
+PC05B_CHIEFRAT_FIRST-6=同感。在我眼中你们也全都长同一个样。
+#----------------------------------------------------
+# Kins
+PC05B_CHIEFRAT_TALKFIGHT-1=老大！就是这家伙今早揍了我们！
+# Chiefrat
+PC05B_CHIEFRAT_TALKFIGHT-2=什么……？你们竟然败给了这么个废物？
+# Kins
+PC05B_CHIEFRAT_TALKFIGHT-3=老大你放心！之前只是因为我们被打了个措手不及。
+# Kins
+PC05B_CHIEFRAT_TALKFIGHT-4=这次保证会让他有来无回！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_FIRST1B-1=我有事要忙，而你们恰好挡住了我的路！
+# Chiefrat
+PC05B_CHIEFRAT_FIRST1B-2=鳄鱼头，这里可是我们的地盘。
+# Brok
+PC05B_CHIEFRAT_FIRST1B-3=你错了，下水道是公共设施。
+# Chiefrat
+PC05B_CHIEFRAT_FIRST1B-4=这道理你去跟那些政府高层说去吧。是他们放逐我们到这里来，任由我们自生自灭。
+# Brok
+PC05B_CHIEFRAT_FIRST1B-5=我真不想惹麻烦……
+# Chiefrat
+PC05B_CHIEFRAT_FIRST1B-6=太晚了，发现我们的人都必须死！
+# Chiefrat
+PC05B_CHIEFRAT_FIRST1B-7=弟兄们……
+# Brok
+PC05B_CHIEFRAT_FIRST1B-8=等一下！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_CHITCHAT1-1=你们怎么跑到市区里来了？
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT1-2=错。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT1-3=这不是市区。这是我们的家。
+# Brok
+PC05B_CHIEFRAT_CHITCHAT1-4=可是……
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT1-5=这家伙真是烦人。
+# Kins
+PC05B_CHIEFRAT_CHITCHAT1-6=老大，让我来应付他吧！
+# Kins
+PC05B_CHIEFRAT_CHITCHAT1-7=你听好了，下水道从市区一直延伸到贫民区的南部。
+# Kins
+PC05B_CHIEFRAT_CHITCHAT1-8=但是市区对我们鼠人来说是禁区。
+# Kins
+PC05B_CHIEFRAT_CHITCHAT1-9=因为我们不是“认证公民”。
+# Kins
+PC05B_CHIEFRAT_CHITCHAT1-10=我们要是踏入市区一步，那些可恶的机器人就会追杀我们。
+# Brok
+PC05B_CHIEFRAT_CHITCHAT1-11=那是你们咎由自取，这就是叛国贼所该付出的代价。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT1-12=够了！
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT1-13=你们给我灭了这个废物。
+# Brok
+PC05B_CHIEFRAT_CHITCHAT1-14=先别动手！其实我有件事想告诉你们……
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_CHITCHAT2-1=你在大街上威胁了一位无辜的人！
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-2=你是指那个退伍流浪汉？
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-3=他无辜个屁！当初政变时，他就是其中一位出手对付我们的士兵。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-4=他大概手里沾满了我们族人的鲜血。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-5=我们都那么宽容地给了他改过自新的机会，帮他找来了他所需要的药物。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-6=可结果呢，他却不报答我们。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-7=你说我们该怎么处理把我们当成傻瓜的人？
+# Brok
+PC05B_CHIEFRAT_CHITCHAT2-8=可是……
+# Kins
+PC05B_CHIEFRAT_CHITCHAT2-9=老大，这家伙是在拖延时间。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-10=我的老天，阿金，你说得对。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-11=我们不欠你任何解释。
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT2-12=这是给你最后一次警告了，鳄鱼头！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_CHITCHAT3-1=我很好奇……
+# Chiefrat
+PC05B_CHIEFRAT_CHITCHAT3-2=你是聋了吗？
+# Kins
+PC05B_CHIEFRAT_CHITCHAT3-3=没人可以骚扰咱们的老大！
+# Kins
+PC05B_CHIEFRAT_CHITCHAT3-4=你完蛋了……！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_BYE1-1=那我先走了。
+# Chiefrat
+PC05B_CHIEFRAT_BYE1-2=我们会监视着你的，鳄鱼头。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_BYE2-1=我稍后再来。
+# Kins
+PC05B_CHIEFRAT_BYE2-2=傻子。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_THREAT-1=我对你们族人知根知底。
+# Brok
+PC05B_CHIEFRAT_THREAT-2=你们鼠人是最卑鄙的种族。
+# Brok
+PC05B_CHIEFRAT_THREAT-3=你们被放逐并非毫无缘由的。
+# Brok
+PC05B_CHIEFRAT_THREAT-4=给我让开别挡道。
+# Chiefrat
+PC05B_CHIEFRAT_THREAT-5=哎哟，鳄鱼头都发脾气了？好怕怕哟！
+# Chiefrat
+PC05B_CHIEFRAT_THREAT-6=很抱歉告诉你，鳄鱼头……
+# Chiefrat
+PC05B_CHIEFRAT_THREAT-7=我们一人一口唾沫都能淹死你。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_THREAT_ATTACK-1=我是不会向败类妥协的！
+# Brok
+PC05B_CHIEFRAT_THREAT_ATTACK-2=我今天就是要通过这条路，你们休想阻止我！
+# Chiefrat
+PC05B_CHIEFRAT_THREAT_ATTACK-3=可恶！你死定了！
+#----------------------------------------------------
+# Chiefrat
+PC05B_RAT_MORE1-1=大家抄家伙上！把他拿下！
+#----------------------------------------------------
+# Chiefrat
+PC05B_RAT_BOSSCOMES1-1=你打败了我的全部手下……好吧。
+# Chiefrat
+PC05B_RAT_BOSSCOMES1-2=但你休想打败我！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_THREAT_TALK1-1=别低估我的实力。
+# Brok
+PC05B_CHIEFRAT_THREAT_TALK1-2=也许我会倒下……
+# Brok
+PC05B_CHIEFRAT_THREAT_TALK1-3=但至少可以拉几个垫背的。
+# Brok
+PC05B_CHIEFRAT_THREAT_TALK1-4=你自己好好想想吧。
+# Brok
+PC05B_CHIEFRAT_THREAT_TALK1-5=为了我而牺牲几位同胞的性命到底值不值得？
+# Kins
+PC05B_CHIEFRAT_THREAT_TALK1-6=老大，鳄鱼头说得有点道理……
+# Chiefrat
+PC05B_CHIEFRAT_THREAT_TALK1-7=闭嘴！
+# Chiefrat
+PC05B_CHIEFRAT_THREAT_TALK1-8=难道你都忘了我们的口号？
+# Kins
+PC05B_CHIEFRAT_THREAT_TALK1-9=“抗争到底……光复家园……”
+# Kins
+PC05B_CHIEFRAT_THREAT_TALK1-10=我知道但是……
+# Chiefrat
+PC05B_CHIEFRAT_THREAT_TALK1-11=鳄鱼头，我们是绝不会放你通行的。
+# Chiefrat
+PC05B_CHIEFRAT_THREAT_TALK1-12=但是今天我大发慈悲放你一马，哪来的就回哪去吧。
+# Chiefrat
+PC05B_CHIEFRAT_THREAT_TALK1-13=你要是敢向任何人提及我们，那我们会日日夜夜纠缠你，以及你的朋友、家人、身边的每一个人。
+# Chiefrat
+PC05B_CHIEFRAT_THREAT_TALK1-14=不管何时何地，不管使用什么方法。
+# Brok
+PC05B_CHIEFRAT_THREAT_TALK1-15=嗯，那我走了……
+# Brok
+PC05B_CHIEFRAT_THREAT_TALK1-16=（但这也意味着我必须再找别的方法通过去。）
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_TRADE-1=我有东西想交换。
+# Chiefrat
+PC05B_CHIEFRAT_TRADE-2=真的吗？你有什么好宝贝？
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_DEFAULT1-1=就这个……
+# Chiefrat
+PC05B_CHIEFRAT_INV_DEFAULT1-2=滚。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_DEFAULT2-1=这个你感兴趣吗？
+# Chiefrat
+PC05B_CHIEFRAT_INV_DEFAULT2-2=你是在耍我吗？！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_BILLA-1=你可以替我缴费吗？
+# Chiefrat
+PC05B_CHIEFRAT_INV_BILLA-2=还缴什么费呢？！你都是将死之人了。
+#----------------------------------------------------
+# Chiefrat
+PC05B_CHIEFRAT_INV_STICK-1=啥？！你敢威胁我们？！
+# Brok
+PC05B_CHIEFRAT_INV_STICK-2=不不！拿错了……
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_APARTMENTKEY-1=我想到了！我把公寓送给你们吧！
+# Brok
+PC05B_CHIEFRAT_INV_APARTMENTKEY-2=你们可以在那里建立大本营！
+# Chiefrat
+PC05B_CHIEFRAT_INV_APARTMENTKEY-3=不可能。地面上到处都有无人机，我们不能光明正大行动。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_HOOVER-1=这吸尘器怎么样？这么肮脏的地方很需要清理下吧？
+# Chiefrat
+PC05B_CHIEFRAT_INV_HOOVER-2=你说什么？！
+# Brok
+PC05B_CHIEFRAT_INV_HOOVER-3=呃……毕竟这里是下水道嘛……
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_MINEBROKEN-1=（别闹……这地雷本来就是属于他们的。）
+# Brok
+PC05B_CHIEFRAT_INV_MINEBROKEN-2=（还是留着日后使用吧……）
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_PENDANT-1=也许……
+# Chiefrat
+PC05B_CHIEFRAT_INV_PENDANT-2=省省吧，这玩意根本不值钱！
+# Brok
+PC05B_CHIEFRAT_INV_PENDANT-3=谁说的！这东西有纪念价值。
+# Chiefrat
+PC05B_CHIEFRAT_INV_PENDANT-4=关我啥事。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-1=那这个呢……
+# Chiefrat
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-2=这是免费的玩意。我们随时能拿到。
+# Brok
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-3=哦，对哦……
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-1=那个……其实我患上了不治之症……
+# Chiefrat
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-2=那行，我们来给你个解脱。
+# Brok
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-3=别……先别！我还能再活一段时间。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_MONEY-1=拿去吧，我所有的钱都在这了！
+# Chiefrat
+PC05B_CHIEFRAT_INV_MONEY-2=你休想收买我们。
+# Brok
+PC05B_CHIEFRAT_INV_MONEY-3=不是吧……？还以为鼠人……
+# Chiefrat
+PC05B_CHIEFRAT_INV_MONEY-4=我说过，我们是有原则的人。
+# Brok
+PC05B_CHIEFRAT_INV_MONEY-5=（盗亦有道……这年头很罕见了。）
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_INV_EXIT-1=我弄错了，其实我根本没有可交易的东西。不过……
+#----------------------------------------------------
+# Brok
+#Try to escape
+PC05B_CHIEFRAT_ESCAPE-1=后会无期！
+# Chiefrat
+PC05B_CHIEFRAT_ESCAPE-2=抓住他！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_ESCAPEHURT-1=啊……
+# Various
+PC05B_CHIEFRAT_ESCAPEHURT-2=哈哈哈！
+# Chiefrat
+PC05B_CHIEFRAT_ESCAPEHURT-3=你真是个笨鳄鱼！你以为我们安装的地雷是拿来摆设的吗？
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_ESCAPEAFTER-1=……唔……
+#----------------------------------------------------
+# Various
+PC05B_CHIEFRAT_ESCAPEDEAD-1=哈哈哈哈！
+#----------------------------------------------------
+# Chiefrat
+#Trying to get past them
+PC05B_CHIEFRAT_ADVANCE1-1=想去哪呢？
+#----------------------------------------------------
+# Chiefrat
+PC05B_CHIEFRAT_ADVANCE2-1=站住！
+# Chiefrat
+PC05B_CHIEFRAT_ADVANCE2-2=再走一步你就死定了！
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_TALK1-1=我们能谈一谈吗？
+# Chiefrat
+PC05B_CHIEFRAT_TALK1-2=有话快说……等下你可能就说不出话了。
+#----------------------------------------------------
+# Brok
+PC05B_CHIEFRAT_MORERATS-1=还有帮手？这都是从哪冒出来的？！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok threw the mine at them from a distance to get rid of them and finds them all unconscious on the floor
+# *****************************************************************
+# Brok
+PC05B_CHIEFRAT_BEAT1-1=哇……！
+# Brok
+PC05B_CHIEFRAT_BEAT1-2=呼……他们全都晕倒了。
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-3=……不可能……你怎么……
+# Brok
+PC05B_CHIEFRAT_BEAT1-4=抱歉，这是你逼我的。
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-5=……少废话……给我们个了断吧……
+# Brok
+PC05B_CHIEFRAT_BEAT1-6=我没打算伤害你们。我跟你们可不同。
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-7=这声音……和我认识的那个鳄鱼人……
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-8=可是……这……不可能……
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-9=是……
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-10=真的是你……！
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-11=我认得你了！这些年来……
+# Brok
+PC05B_CHIEFRAT_BEAT1-12=啥？
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-13=我们被放逐……都是你害的！
+# Brok
+PC05B_CHIEFRAT_BEAT1-14=你在胡说什么呢？
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-15=你将为此付出代价！！
+# Brok
+PC05B_CHIEFRAT_BEAT1-16=哇！
+# Unknown
+PC05B_CHIEFRAT_BEAT1-17=（撞击声）
+# Chiefrat
+PC05B_CHIEFRAT_BEAT1-18=……
+# Brok
+PC05B_CHIEFRAT_BEAT1-19=我只能把他打晕了。
+# Brok
+PC05B_CHIEFRAT_BEAT1-20=他刚才是怎么回事？
+#----------------------------------------------------
+# Chiefrat
+PC05B_CHIEFRAT_DEFEND1-1=你在浪费你的时间。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Various with rats
+# *****************************************************************
+# Chiefrat
+PC05B_CHIEFRAT_ATTACK1-1=你竟敢攻击我们？！
+#----------------------------------------------------
+# Chiefrat
+PC05B_CHIEFRAT_GAMEOVER1-1=这是你自找的，肮脏的家伙。
+# Chiefrat
+PC05B_CHIEFRAT_GAMEOVER1-2=兄弟们，把他的财物收走，然后将尸体扔进酸液中。
+# Kins
+PC05B_CHIEFRAT_GAMEOVER1-3=好的，老大！
+# Kins
+PC05B_CHIEFRAT_GAMEOVER1-4=我们可以先玩弄他吗？
+# Chiefrat
+PC05B_CHIEFRAT_GAMEOVER1-5=没问题。
+# Kins
+PC05B_CHIEFRAT_GAMEOVER1-6=谢谢老大！老大最棒了！
+#----------------------------------------------------
+# Brok
+PC05B_RAT1-1=他昏倒了……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Broken mine
+# *****************************************************************
+# Brok
+PC05B_MINEBROKEN-1=隔着那么远依然能看见那地雷……难道说……
+# Brok
+PC05B_MINEBROKEN-2=嗯，它坏掉了。
+#----------------------------------------------------
+# Brok
+PC05B_MINEBROKEN_TOOFAR-1=我得再靠近些……
+#----------------------------------------------------
+# Brok
+PC05B_MINEBROKEN_TAKE_NEXT-1=拿着这玩意时最好别动作太大……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming back
+# *****************************************************************
+# Brok
+PC05B_BACK-1=终于摆脱了他们……？
+# Brok
+PC05B_BACK-2=还是得提高警惕，我肯定还会碰上那些家伙的……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok isn't here. A rat checks the items that fall through the pipe (items people are getting rid of).
+# *****************************************************************
+# Kins
+PC05B_ITEMFALL1-1=……
+# Normal
+PC05B_ITEMFALL1-2=垃圾。
+#----------------------------------------------------
+# Kins
+PC05B_ITEMFALL2-1=那是什么？
+#----------------------------------------------------
+# Kins
+PC05B_ITEMFALL3-1=又是破烂。
+#----------------------------------------------------
+# Kins
+PC05B_ITEMFALL_MINE-1=咦！这东西会发出有趣的声音……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok gets back items from the basket
+# *****************************************************************
+# Brok
+PC05B_GETBACKITEMS-1=在继续赶路前，我得取回我的物品……
+#----------------------------------------------------
+# Brok
+PC05B_BASKET1-1=所以说……市民扔掉的垃圾最终都出现在这里了？
+# Brok
+PC05B_BASKET1-2=鼠人一定是在贩运这些废品。
+#----------------------------------------------------
+# Brok
+PC05B_BASKET_FULL1-1=无论如何，我还是先拿回自己的东西吧。
+#----------------------------------------------------
+# Brok
+PC05B_BASKET_FULLMINE-1=幸亏没炸掉我的物品！
+#----------------------------------------------------
+# Brok
+PC05B_BASKET_EMPTY1-1=让我来瞧瞧……
+# Brok
+PC05B_BASKET_EMPTY1-2=破旧的衣服……破盘子……
+# Brok
+PC05B_BASKET_EMPTY1-3=这是椅子？这是怎么通过邮件运管的？
+# Brok
+PC05B_BASKET_EMPTY1-4=哈，竟然有蠕虫！
+# Brok
+PC05B_BASKET_EMPTY1-5=真好吃！
+#----------------------------------------------------
+# Brok
+PC05B_BASKET_EMPTY2-1=还有其他好东西不？
+# Brok
+PC05B_BASKET_EMPTY2-2=好像没了，不过再查看一遍也无妨。
+# Brok
+PC05B_BASKET_EMPTY2-3=……
+# Brok
+PC05B_BASKET_EMPTY2-4=……好极了！找到了一则广告！
+#----------------------------------------------------
+# Brok
+PC05B_BASKET_EMPTY3-1=没有任何变化……稍后再看看吧。
+#----------------------------------------------------
+# Brok
+PC05B_BASKET_PICKBACK1-1=等等……我的部分财物就在那个篮子里！
+#----------------------------------------------------
+# Brok
+PC05B_BASKET_OTHERS-1=呃……捡东西是我的爱好，但丢东西就免了。
+#----------------------------------------------------
+# Brok
+PC05B_ADVERT_FLOOR-1=这一趟虽然很危险，但的确物有所值呀！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Using remote control
+# *****************************************************************
+# Brok
+PC05B_REMOTECONTROL_MINES1-1=……
+# Brok
+PC05B_REMOTECONTROL_MINES1-2=咦，这个应该可以用来关闭地雷！
+# Brok
+PC05B_REMOTECONTROL_MINES1-3=不过只能暂时性关闭……
+#----------------------------------------------------
+# Chiefrat
+PC05B_CHIEFRAT_GUARDS1-1=滚。
+#----------------------------------------------------
+# Chiefrat
+PC05B_CHIEFRAT_FIGHTSTART1-1=抓住他！
+#----------------------------------------------------
+# Rat
+PC05B_CHAPTER6END-1=想要去哪儿，鳄鱼头？
+# Brok
+PC05B_CHAPTER6END-2=滚开。
+#----------------------------------------------------
+
+
+
+COOP_PC05B_CHIEFRAT1-1=那些家伙会利用任何机会来杀我们。
+
+COOP_PC05B_CHIEFRAT1-2=但是...有时我会为他们感到遗憾...

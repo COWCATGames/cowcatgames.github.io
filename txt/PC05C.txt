@@ -1,0 +1,217 @@
+#-------------------------------
+#=Sewers last room
+#-------------------------------
+
+#----------------------
+#= Marks
+#----------------------
+ID=PC05C_MARKS1
+T=Seems like the object I'm tracking went through that machine...
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+#----------------------
+#= Machine
+#----------------------
+ID=PC05C_MACHINE1
+T=The water coming out of it is clear.
+W=BROK
+A=WONDER
+
+T=I bet this is a purifying engine!
+W=BROK
+A=HAPPY
+
+T=I'm glad there's no acid leaking into it...
+W=BROK
+A=WORRIED
+
+
+#----------------------
+#= Panel
+#----------------------
+ID=PC05C_PANEL1
+T=Hmm...
+W=BROK
+A=WONDER
+CONTEXT=Mini-game with a "snake" to get items stuck inside the engine
+
+T=Must be an inside view of the purifying engine.
+W=BROK
+A=THINK
+
+T=Some things are stuck inside...
+W=BROK
+
+T=Let's try and get'em out!
+W=BROK
+A=READY
+
+#----------------------
+ID=PC05C_PANEL2
+T=The gun might be in there!
+W=BROK
+A=MOCK
+
+T=Gotta push those things to the exit!
+W=BROK
+
+
+#----------------------
+ID=PC05C_PANEL_TOOLONG1
+T=Can't move any further!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC05C_PANEL_TOOLONG2
+T=Gotta pull the cord out... Maybe one of those buttons can help.
+W=BROK
+A=WONDER
+
+
+#----------------------
+ID=PC05C_PANEL_LENGTH1
+T=This indicates the cord length.
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Panel
+#----------------------
+ID=PC05C_GUN1
+T=What do we have here!? A gun!
+W=BROK
+A=HAPPY
+CONTEXT=Got the gun
+
+T=Let's examine it further...
+W=BROK
+A=MOCK
+TEN=PC05C_GUN_NEXT
+
+
+#----------------------
+#= Gun
+#----------------------
+ID=PC05C_GUN_LOGO1
+T=There's the police logo here... Definitely the one I'm looking for.
+W=BROK
+A=READY
+
+#----------------------
+ID=PC05C_GUN_DIRT1
+T=It's dirty... No wonder, considering where it's been!
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC05C_GUN_DIRT2
+T=That dirt might be covering somethin'. Any way to remove it?
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC05C_GUN_DIRT_HANDKERCHIEF
+T=There ya go!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC05C_GUN_INITIALS1
+T=Some initials. R.J...
+W=BROK
+A=THINK
+
+T=Those can't be Sin's initials... What does this mean?
+W=BROK
+A=THINK
+
+T=I'd better get to the bottom of this.
+W=BROK
+A=MAYBE
+CLUE=CLUE_SEWERS_INITIALSGUN
+
+T=Time to return to Sin's and have a lil' chat!
+W=BROK
+A=MOCK
+TEN=PC05C_GUNCLOSEUP_EXIT
+
+#----------------------
+ID=PC05C_GUN_SCRATCHES1
+T=It has seen better days. Must have been used for a long time.
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC05C_GUN_SCRATCHES_MAGNIFY
+T=Yup... Really scratched.
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC05C_GUN_BATTERY1
+T=Seems loaded.
+W=BROK
+A=SURPRISED
+
+T=I should resist shooting it... The gun may be tracked. Who knows what kind of info this could transmit!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC05C_GUN_NUMBER1
+T=A serial number...
+W=BROK
+A=THINK
+
+T=I doubt I could access the police database, so it's no use to me.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+ID=PC05C_GUN_AD1
+T=Hey, I thought this looked different!
+W=BROK
+A=HAPPY
+
+T=Someone stuck a small ad here!
+W=BROK
+TEN=PC05C_GUN_AD_GET
+
+#----------------------
+ID=PC05C_GUN_BACK1
+T=Not yet... I should examine it thoroughly.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC05C_GUN_BACK2
+T=I'm pretty sure I missed somethin'!
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC05C_GUN_BACK3
+T=That dirt spot... Could there be something beneath it...?
+W=BROK
+A=WONDER
+
+
+
+#----------------------
+#= Rooms
+#----------------------
+ID=PC05C_BARRIER1
+T=The way is blocked...
+W=BROK
+A=OPPOSITE
+
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 21/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+###############################################

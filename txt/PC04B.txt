@@ -1,0 +1,311 @@
+#-------------------------------
+#=BACK ALLEY
+#-------------------------------
+
+#----------------------
+#= Gutter
+#----------------------
+ID=PC04B_GUTTER_THING1
+T=Something's there... I'm not quite sure what this is but it sure stands out.
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+COMM=Looking through gutter
+
+T=Any way to get a closer look without going down there?
+W=BROK
+A=WONDER
+
+
+#----------------------
+ID=PC04B_GUTTER_THING2
+T=That's not the usual junk. If only I could take a better look at it...
+W=BROK
+A=READY
+
+
+
+#----------------------
+#= Manhole
+#----------------------
+ID=PC04B_MANHOLE1
+T=Err... Nope.
+W=BROK
+A=HAPPY
+COMM=Manhole
+
+T=We hear all kinds of things about the sewers.
+W=BROK
+A=MAYBE
+
+T=For instance, they've fully automated the maintenance to ensure no personnel need to go down there anymore... for good reasons.
+W=BROK
+
+#----------------------
+ID=PC04B_MANHOLE2
+T=I'd better think twice before going down there.
+W=BROK
+A=WONDER
+
+T=Even if I wanted to, it's sealed.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC04B_MANHOLE_GO1
+T=I'm gonna try...
+W=BROK
+A=THINK
+
+T=Ngggh!
+W=BROK
+A=CONFUSED
+
+T=Nope. Can't open it with my bare hands...
+W=BROK
+A=TIRED
+TEN=PC04B_MANHOLE_NEXT
+
+#----------------------
+ID=PC04B_MANHOLE_GO2
+T=The cover is stuck. There's gotta be a way...
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC04B_MANHOLE_COVER_STICK
+T=I wonder if...
+W=BROK
+A=THINK
+
+T=Ngggh!
+W=BROK
+A=CONFUSED
+
+T=No way... There must be a mechanism holding it down.
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC04B_MANHOLE_WRONG1
+T=That didn't work...
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC04B_MANHOLE_WRONG2
+T=Still stuck...
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC04B_MANHOLE_OPEN
+T=Yes!
+W=BROK
+A=HAPPY
+
+
+#----------------------
+#= Sewers
+#----------------------
+ID=PC04B_SEWERS_THING1
+T=There is a... Err... 
+W=BROK
+A=THINK
+
+T=I can't really tell from here.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC04B_SEWERS_THING2
+T=I can't make it out...
+W=BROK
+A=MAYBE
+
+T=I'd need something to take a better look.
+W=BROK
+
+#----------------------
+ID=PC04B_SEWERS_THING3
+T=That's a totally weird thingy there!
+W=BROK
+A=HAPPY
+
+
+#----------------------
+ID=PC04B_BOTTLE1
+T=An old bottle. I doubt this has any link to my case.
+W=BROK
+A=OPPOSITE
+
+
+
+#----------------------
+ID=PC04B_PEBBLES1
+T=A few pebbles. Nothing unusual.
+W=BROK
+A=THINK
+
+
+#----------------------
+ID=PC04B_WORM1
+T=A worm... Makes me hungry!
+W=BROK
+A=HAPPY
+
+
+#----------------------
+ID=PC04B_BOTTLECAP1
+T=This looks like a bottle cap. I wouldn't have any use for it.
+W=BROK
+A=MEH
+
+
+#----------------------
+ID=PC04B_BREAD1
+T=Some bread? Did someone eat here?
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC04B_FLYER1
+T=I believe that's a flyer. It must have fallen down there.
+W=BROK
+A=THINK
+
+
+#----------------------
+ID=PC04B_NEWSPAPER1
+T=Looks like a... Newspaper, is it...?
+W=BROK
+A=WONDER
+
+T=Haven't seen one in ages!
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+ID=PC04B_MAGNIFY_USE1
+T=Good idea!
+W=BROK
+A=HAPPY
+TEN=PC04B_GUTTER_MAGNIFY
+
+#----------------------
+ID=PC04B_ACID1
+T=Is that... Acid?!
+W=BROK
+A=SURPRISED
+
+T=Whoa... Those sewers might be even more dangerous than I thought.
+W=BROK
+A=WORRIED
+
+
+
+#----------------------
+ID=PC04B_HANDKERCHIEF1
+T=Some blue cloth... With SIN written on it?!
+W=BROK
+A=WONDER
+TEN=PC04B_HANDKERCHIEF_CHECK
+
+#----------------------
+ID=PC04B_HANDKERCHIEF1_NOHINT
+T=Can't be a coincidence...
+W=BROK
+A=WONDER
+TEN=PC04B_HANDKERCHIEF1_AFTER
+
+#----------------------
+ID=PC04B_HANDKERCHIEF1_HASHINT
+T=Bingo! Here's the lost handkerchief!
+W=BROK
+A=HAPPY
+TEN=PC04B_HANDKERCHIEF1_AFTER
+
+#----------------------
+ID=PC04B_HANDKERCHIEF1_AFTER
+T=Then... I definitely need to go down there.
+W=BROK
+A=READY
+TEN=PC04B_GUTTER_BACK
+
+
+#----------------------
+ID=PC04B_HANDKERCHIEF2
+T=Sin's handkerchief, more likely. Let's check it out!
+W=BROK
+A=READY
+
+
+#----------------------
+#= Target
+#----------------------
+ID=PC04B_TARGET1
+T=A small target has been placed in this corner.
+W=BROK
+A=THINK
+
+T=To play, maybe...? Too bad I don't have any darts!
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+#= Ad take
+#----------------------
+ID=PC04B_TARGET_AD1
+T=This ad... Is it my reward for hitting the target?
+W=BROK
+A=SURPRISED
+TEN=PC04B_TARGET_AD_TAKE
+#What is target supposed to be? It fell down that target sounds extremely odd...
+
+
+#----------------------
+#= Cardboard box
+#----------------------
+ID=PC04B_WELCOME1
+T=What's with all the cardboard boxes...?
+W=BROK
+A=SURPRISED
+CONTEXT=Coming here for the first time
+
+T=Hmm... It rains every night, yet they're dry...
+W=BROK
+A=THINK
+
+T=Someone put them here today.
+W=BROK
+A=MAYBE
+CLUE=CLUE_DRUMERSTREET_CARDBOARD
+
+#----------------------
+ID=PC04B_CARDBOARD1
+T=They're blocking the way!
+W=BROK
+A=ANGRY
+
+#----------------------
+#= Wanted sign
+#----------------------
+ID=PC04B_WANTED1
+T=Wow! It's been years since I've seen one of those "wanted" signs!
+W=BROK
+A=SURPRISED
+
+T=No one really cares in the Slums anymore... While in the Drums it's much more efficient to display holos all over the city.
+W=BROK
+A=THINK
+
+T=This face looks very familiar... Must have been a famous affair?
+W=BROK
+A=WONDER
+
+###############################################
+# PROOFREAD - illuminati1556 - 21/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 05/09/2019
+###############################################

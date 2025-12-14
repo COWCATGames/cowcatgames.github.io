@@ -1,0 +1,1133 @@
+﻿#-------------------------------
+#=LAB RESTROOM
+#-------------------------------
+
+#----------------------
+#= Map
+#----------------------
+ID=PC15E_MAP1
+T=A map of the building?
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+T=I'll take it.
+W=BROK
+A=READY
+TEN=PC15E_MAP_GET
+
+#----------------------
+ID=PC15E_MAP2
+T=It's hard to believe high-tech facilities still use hard-paper maps.
+W=BROK
+A=MEH
+
+T=Makes sense in the eventuality of a power breakdown though.
+W=BROK
+A=ALRIGHT
+
+#----------------------
+#= Meety-me
+#----------------------
+ID=PC15E_MEETYME1
+T=I remember this!
+W=BROK
+A=MOCK
+
+T=A holographic display to watch livies.
+W=BROK
+A=HAPPY
+TEN=PC15E_MEETYME_TRY
+
+#----------------------
+ID=PC15E_MEETYME2
+T=To watch a livie, say or think "Meety" followed by the title.
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Hmm...
+W=BROK
+A=WONDER
+
+T=You're not seriously considering it, are you?!
+W=MINK
+C2=MINK
+C2A=MEH
+
+T=I sense someone disagrees with your choice.
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Would you still like to start watching "Hilarious Fairy Tales"?
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Erm... No, thanks...
+W=BROK
+C1A=HAPPY
+
+T=Thoughts detection still doesn't work very well.
+W=MINK
+C2A=HAPPY
+
+T=Yeah... Must be that...
+W=BROK
+
+
+#----------------------
+ID=PC15E_MEETYME3
+T=Other actions are available. Say or think "Help" to get a list.
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=This is a waste of time. Shouldn't you be looking for clues?
+W=MINK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=ANGRY
+
+T=I'm working on it!
+W=BROK
+C1A=MOCK
+
+#----------------------
+ID=PC15E_MEETYME_AFTER1
+T=Do you wish to watch a livie?
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Not now.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+
+T=You're lying but that's fine.
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Other actions are available. Say or think "Help" to get a list.
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Hmm... "Help".
+W=BROK
+C1A=MOCK
+
+T=...
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+C1A=THINK
+
+T=Error. Unable to connect.
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Reverting to offline mode.
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=One record found! Would you like to play it?
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=A record?...
+W=BROK
+C1A=WONDER
+
+T=Why not!
+W=BROK
+C1A=ALRIGHT
+
+T="I'm in the restroom"
+BNAMESP=UNKNOWN
+BVOICESP=HUSH
+
+T=That's Dr. Hush's voice!
+W=MINK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+
+T=He must have recorded this by accident. That happens sometimes.
+W=MINK
+C2A=HAPPY
+
+T=An accident...
+W=BROK
+C1A=THINK
+CLUE=CLUE_LAB_MEETYME
+
+
+
+#----------------------
+ID=PC15E_MEETYME_AFTER2
+T=Replay the last record!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T="I'm in the restroom"
+BNAMESP=HUSH
+BVOICESP=HUSH
+
+T=Hmm...
+W=BROK
+C1A=THINK
+
+T=Why are you wasting time on this?
+W=MINK
+C2A=MOCK
+
+T=I'm not sure yet...
+W=BROK
+
+#----------------------
+#= Trap
+#----------------------
+ID=PC15E_TRAP1
+T=A trash grinder!
+W=BROK
+A=ALRIGHT
+
+T=I wonder why the blades are so close to the surface.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC15E_TRAP2
+T=I wonder if anything passed through here...
+W=BROK
+A=THINK
+
+T=If there was, too late to find anything.
+W=MINK
+C2=MINK
+C2A=HAPPY
+
+T=Trash gets compacted and sent directly to the Slums dumps.
+W=MINK
+C2A=NORMAL
+
+T=A necessary evil. We're stronger due to this...
+W=BROK
+
+T=Don't tell me you're a Slumer?... 
+W=MINK
+C2A=SURPRISED
+
+T=O-of course not!...
+W=BROK
+C1A=HAPPY
+CLUE=CLUE_GUARD_INSPECTTRASH
+
+#----------------------
+#= Wrapping
+#----------------------
+ID=PC15E_WRAPPING1
+T=That paper didn't get totally destroyed...
+W=BROK
+A=THINK
+
+T=Hey! I recognize it!
+W=BROK
+A=MOCK
+
+T=That's the wrapping for Mc Flea's flagship Antburger! 
+W=BROK
+A=HAPPY
+
+T="With extra Tomatoze sauce!" My favorites!
+W=BROK
+CLUE=CLUE_LAB_WRAPPING
+
+
+#----------------------
+#= First aid kit
+#----------------------
+ID=PC15E_FIRSTAIDKIT1
+T=What do we have inside?...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=...!
+W=BROK
+C1A=SURPRISED
+
+T=A button? That's all?!
+W=BROK
+
+T=Of course. What did you expect?
+W=MINK
+
+T=Usually our health chip will detect any problem and send whatever we need immediately.
+W=MINK
+C2A=HAPPY
+
+T=This button is only for use in extreme situations, which are technically unthinkable.
+W=MINK
+
+T=Like a power outage, a meteorite falling down or even...
+W=MINK
+
+T=...
+W=MINK
+C2A=MOCK
+
+T=A fire?...
+W=BROK
+
+T=Yes! Even less probable.
+W=MINK
+C2A=NORMAL
+
+T=Press this and you'll get a package delivered to the closest pipe to provide health cure basics.
+W=MINK
+C2A=HAPPY
+
+T=If such a situation happened...
+W=BROK
+C1A=ANGRY
+
+T=Would you even know how to use that "minimal package"?
+W=BROK
+
+T=Hmm...
+W=MINK
+C2A=MOCK
+
+T=Probably not but who cares?
+W=MINK
+C2A=HAPPY
+
+T=It's not like it's going to happen anyway!
+W=MINK
+
+T=Yeah...
+W=BROK
+C1A=MEH
+
+#------------------------
+#= First aid kit button
+#------------------------
+ID=PC15E_FIRSTAIDKIT_BUTTON
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Nothin'?
+W=BROK
+
+T=Try pressing harder!
+W=OTT
+C2=OTT
+C2A=HAPPY
+
+T=Remember, this is for emergencies!
+W=OTT
+C2A=NORMAL
+
+T=Hmm...
+W=BROK
+
+#------------------------
+ID=PC15E_FIRSTAIDKIT_HIT1
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=I heard a sound!
+W=BROK
+C1A=READY
+C2=MINK
+C2A=NORMAL
+
+T=Are you sure? All I could hear was a bump caused by your fist.
+W=MINK
+C2A=HAPPY
+
+T=Only one way to find out!
+W=BROK
+
+T=So, where's the package?...
+W=BROK
+TEN=ACTIVATE_CLICKERS
+
+#------------------------
+ID=PC15E_FIRSTAIDKIT_HIT2
+T=I'm thirsty!
+W=BROK
+C1=BROK
+C1A=MOCK
+
+T=This isn't exactly a vending machine, you know.
+W=MINK
+C2=MINK
+C2A=NORMAL
+
+T=Who cares? As long as I get what I want.
+W=BROK
+C1A=ALRIGHT
+TEN=ACTIVATE_CLICKERS
+
+#------------------------
+ID=PC15E_FIRSTAIDKIT_DEATH
+T=Oops!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=OTT
+C2A=SAD
+
+#------------------------
+#= Fridge Pampalos
+#------------------------
+ID=PC15E_FRIDGEPAMPALOS1
+T=One for the glory!
+W=BROK
+A=ALRIGHT
+TEN=PC15E_FRIDGEPAMPALOS_GET
+
+#------------------------
+ID=PC15E_FRIDGEPAMPALOS1B
+T=Hey! You can't steal that!
+W=MINK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=ANGRY
+
+T=Not stealing! I'm... gathering clues!
+W=BROK
+C1A=ALRIGHT
+
+T=...
+W=MINK
+
+
+#------------------------
+#= Fridge left food
+#------------------------
+ID=PC15E_FRIDGELEFTFOOD1
+T=A box of ants... alive.
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=My favorites! Very fresh and crunchy.
+W=MINK
+C2=MINK
+C2A=HAPPY
+
+T=I thought you'd use them for experiments?
+W=BROK
+C1A=WONDER
+
+T=We do! But nothing wrong with taking a snack sometimes.
+W=MINK
+
+T=I'm starting to like you!
+W=BROK
+C1A=MOCK
+
+#------------------------
+#= Fridge open
+#------------------------
+ID=PC15E_FRIDGE_AFTER1
+T=Food. Nothing particularly...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK
+
+T=Wait a minute...
+W=MINK
+C2A=ANGRY
+C1A=CONFUSED
+
+T=What's wrong?
+W=BROK
+C1A=SURPRISED
+
+T=There should be Antburgers in there!
+W=MINK
+
+T=I ate the last one a while ago. It should have ordered more automatically.
+W=MINK
+
+T=Oh, I forgot... External communication is out.
+W=MINK
+C2A=MOCK
+
+T=You ate an Antburger?
+W=BROK
+C1A=THINK
+
+T=Tell me more about it.
+W=BROK
+C1A=READY
+
+T=How is that interesting?
+W=MINK
+C2A=MEH
+
+T=You never know.
+W=BROK
+C1A=ALRIGHT
+
+T=Well... I have some kind of ritual.
+W=MINK
+C1A=THINK
+
+T=I always have an Antburger while watching my science show!
+W=MINK
+C2A=NORMAL
+
+T=This morning I got pretty angry though.
+W=MINK
+C2A=MEH
+
+T=There was only one left and it was already unfrozen.
+W=MINK
+
+T=Curious... 
+W=BROK
+
+T=Do you think Dr. Hush wanted to eat it?
+W=BROK
+C1A=WONDER
+
+T=Possibly, though he usually dislikes these. And it was in one piece.
+W=MINK
+C2A=MOCK
+
+T=I bet he gave it a shot and then decided against it!
+W=MINK
+C2A=ANGRY
+
+T=Yeah.
+W=BROK
+C1A=THINK
+CLUE=CLUE_MINK_BURGERUNFROZEN
+
+#------------------------
+#= Fridge Wardrobe
+#------------------------
+ID=PC15E_WARDROBE1
+T=A wardrobe on this side of the fridge.
+W=BROK
+A=THINK
+
+T=Nothing unusual but... boy! Those clothes are one heck of a pack!
+W=BROK
+A=WONDER
+
+T=You couldn't even fit a paper between them!
+W=BROK
+A=HAPPY
+
+#------------------------
+ID=PC15E_WARDROBE_AFTER1
+T=I should inspect this further.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=Only one way to do it.
+W=BROK
+C1A=ALRIGHT
+TEN=PC15E_WARDROBE_ACTION
+
+#------------------------
+ID=PC15E_WARDROBE_AFTER1B
+T=Couldn't you do this more... gently?
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=ANGRY
+
+T=I don't have all day, ya know.
+W=BROK
+C1A=ANGRY
+
+#------------------------
+ID=PC15E_WARDROBE_AFTER2
+T=Plenty of room now!
+W=BROK
+A=ALRIGHT
+
+#------------------------
+#= Pills
+#------------------------
+ID=PC15E_PILLS1
+T=Looks like...
+W=BROK
+A=THINK
+
+T=Pills?
+W=BROK
+A=WONDER
+TEN=PC15E_PILLS1_CROUCH
+
+#------------------------
+ID=PC15E_PILLS1B
+T=...Yup. Definitely pills.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK
+TEN=PC15E_PILLS1_STAND
+
+T=Whose are they?
+W=BROK
+
+T=Don't look at me! I've never seen those.
+W=MINK
+C2A=SURPRISED
+
+T=Is Dr. Hush taking some medication?
+W=BROK
+C1A=WONDER
+
+T=That's highly probable. No one else lives here.
+W=MINK
+C2A=MOCK
+
+T=Keep in mind, I've barely had contact with him lately.
+W=MINK
+
+T=Maybe you should analyze them.
+W=MINK
+C2A=HAPPY
+
+T=Good idea.
+W=BROK
+C1A=MOCK
+TEN=PC15E_PILL_TAKE
+
+#------------------------
+ID=PC15E_PILLS2
+T=They must belong to Dr. Hush.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+
+#------------------------
+#= Coffee machine
+#------------------------
+ID=PC15E_COFFEEMACHINE1
+T=What restroom doesn't have its coffee machine?
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+
+T=Knowing them, I bet this produces other drinks too.
+W=BROK
+
+T=No. Just coffee.
+W=MINK
+C2=MINK
+C2A=NORMAL
+
+T=Really?!...
+W=BROK
+C1A=SURPRISED
+
+T=We don't need anything else.
+W=MINK
+C2A=HAPPY
+
+T=Designing it for other uses would be a waste of resources.
+W=MINK
+
+T=Good point.
+W=BROK
+C1A=WONDER
+
+#------------------------
+ID=PC15E_COFFEEMACHINE2
+T=How come you don't have a machine in your own rooms?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=It's obvious. We're always working inside.
+W=MINK
+C2A=MOCK
+
+T=Our health chip requires us to do a minimal amount of steps in a day.
+W=MINK
+
+T=Three round-trips a day between our office and the restroom is enough to cover these minimal needs.
+W=MINK
+C2A=NORMAL
+
+T=...Along with some drugs, I guess.
+W=BROK
+C1A=MEH
+
+#------------------------
+ID=PC15E_COFFEEMACHINE_MAGNIFY
+T=Hey...
+W=BROK
+C1=BROK
+C1A=ANGRY
+
+T=There... seems to be a few on that machine...
+W=BROK
+COMM=A few nanites
+
+T=Maybe I'll find more around here...
+W=BROK
+C1A=MAYBE
+
+
+#------------------------
+#= Sink
+#------------------------
+ID=PC15E_SINK1
+T=(Smells)
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=What are you doing?
+W=MINK
+C2=MINK
+C2A=ANGRY
+
+T=Just checking what could have sunk in there.
+W=BROK
+
+T=Smells like coffee.
+W=BROK
+C1A=ALRIGHT
+
+T=Great...
+W=MINK
+C2A=MOCK
+
+#------------------------
+ID=PC15E_SINK2
+T=No time to wash my hands.
+W=BROK
+C1=BROK
+C1A=ANGRY
+
+T=Touching it could ruin any potential evidence!
+W=OTT
+C2=OTT
+C2A=NORMAL
+
+T=Yeah, that too.
+W=BROK
+C1A=HAPPY
+
+#------------------------
+ID=PC15E_SINK_MAGNIFY
+T=The heck...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=It's full of nanites stuck in that sink!
+W=BROK
+
+T=Not only this. There seems to be some kind of flower...?
+W=BROK
+
+T=Dr. Mink must have flushed some experiments...
+W=BROK
+C1A=MAYBE
+
+T=What?... No, I've never done such a thing. I have my own sink.
+W=MINK
+C2=MINK
+C2A=ANGRY
+
+T=Then... What are they doing here?
+W=BROK
+C1A=THINK
+
+T=Beats me!
+W=MINK
+C2A=MOCK
+C2_EYESHUT=1
+CLUE=CLUE_LAB_SINKNANITES
+
+#------------------------
+#= Coffee cup
+#------------------------
+ID=PC15E_CUP1
+T=Yup, there was coffee in there.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=So? What does this mean?
+W=OTT
+
+T=That someone drank coffee.
+W=BROK
+C1A=ALRIGHT
+
+T=Oh...
+W=OTT
+C2A=SAD
+
+T=I would have thought...
+W=OTT
+C2A=WONDER
+C1A=MAYBE
+
+T=Someone was in the restroom recently, and you'd ask the staff who drank it.
+W=OTT
+
+T=Yeah, sounds good.
+W=BROK
+C1A=MOCK
+
+T=Did you drink that coffee, Mink?
+W=BROK
+C4=MINK
+C4A=MEH
+
+T=It's Dr. Mink for you, and yes.
+W=MINK
+
+T=When exactly?
+W=BROK
+C1A=THINK
+
+T=Around 4:40. I always get a bit peckish during "TechnoJunky".
+W=MINK
+C4A=MOCK
+
+T=Is that some kind of show?
+W=BROK
+
+T=Yes. It lasts for 30 minutes approximately so I must have went out of the restroom at around 5:00.
+W=MINK
+CLUE=CLUE_MINK_COFFEE
+
+
+#------------------------
+ID=PC15E_CUP2
+T=Is coffee automatically prepared?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+C4=MINK
+C4A=NORMAL
+
+T=Oh gosh, no!
+W=MINK
+C4A=MOCK
+
+T=As high-rank beings, we both crave for more natural processes.
+W=MINK
+C4A=HAPPY
+
+T=You're full of surprises...
+W=BROK
+C1A=MEH
+
+T=Who makes it, then?
+W=BROK
+
+T=Dr. Hush's maintenance bot, Tidy.
+W=MINK
+
+T=But... That's not a human?
+W=OTT
+C2A=WONDER
+
+T=Who talked about human?
+W=MINK
+C4A=MOCK
+
+T=I just said we like more natural processes when it comes to feeding ourselves.
+W=MINK
+C4A=NORMAL
+
+T=There's nothing natural about a machine making its own coffee!
+W=MINK
+C4A=ANGRY
+
+T=Now that's what I call logic.
+W=BROK
+C1A=ALRIGHT
+
+#------------------------
+ID=PC15E_CUP3
+T=I'm surprised to see only one cup in here. Doesn't Dr. Hush drink coffee?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=He does!
+W=MINK
+
+T=Actually, he always drinks his coffee in the restroom.
+W=MINK
+C2A=MOCK
+
+T=I know him... He couldn't bare spilling a few drops on his precious materials while working in his office!
+W=MINK
+C2A=HAPPY
+
+T=But he uses auto-degradable cups. Throw them into the sink and they're automatically reduced into powder.
+W=MINK
+
+T=I prefer solid cups. I don't care what they say about lack of hygiene or whatever. Coffee tastes better in it!
+W=MINK
+C2A=NORMAL
+
+T=I can relate to that!
+W=BROK
+C1A=HAPPY
+CLUE=CLUE_HUSH_COFFEE
+
+
+
+#------------------------
+ID=PC15E_CUP_MAGNIFY
+T=No nanite on that coffee cup?
+W=BROK
+A=THINK
+
+T=This shouldn't be a surprise, and yet...
+W=BROK
+
+#------------------------
+#= Drawer
+#------------------------
+ID=PC15E_DRAWER1
+T=Inside, there's...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=...tons of coffee. Powder, more precisely.
+W=BROK
+
+T=What did you expect?
+W=MINK
+
+T=Dunno. A toothbrush, maybe?
+W=BROK
+C1A=ALRIGHT
+
+T=Toothbrush?...
+W=MINK
+C2A=MOCK
+
+T=Like... A brush to clean our teeth?...
+W=MINK
+
+T=How silly! Why not a feetbrush, then!
+W=MINK
+C2A=HAPPY
+
+T=Their water is so full of chemicals that they lost the need for it...
+W=OTT
+C4=OTT
+C4A=ALRIGHT
+
+#------------------------
+ID=PC15E_DRAWER2
+T=Coffee. That's all.
+W=BROK
+A=THINK
+
+#------------------------
+#= Showlet
+#------------------------
+ID=PC15E_SHOWLET1
+T=This is... Erm...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL
+
+T=A shower?
+W=BROK
+
+T=What? No. A showlet.
+W=MINK
+C2A=MEH
+
+T=You mean... This combines a shower and a toilet?...
+W=BROK
+
+T=Oh, I get it now! You're from a far away country, right?
+W=MINK
+C2A=NORMAL
+
+T=Something like that...
+W=BROK
+C1A=HAPPY
+
+T=I've been out of touch with technology advances lately...
+W=BROK
+
+T=Well, it's a huge space and time saver.
+W=MINK
+C1A=THINK
+
+T=Enter the cabin and let it take care of you!
+W=MINK
+C2A=HAPPY
+
+T=The robotic hand removes your clothes, then feel free to let it go while it washes you!
+W=MINK
+
+T=When finished, it gives you new clothes.
+W=MINK
+
+T=Seems... convenient.
+W=BROK
+TEN=PC15E_SHOWLET_CREATE
+
+#------------------------
+ID=PC15E_SHOWLET2
+T=So... you take a shower each time you go pee?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL
+
+T=Of course!
+W=MINK
+
+T=Isn't that a waste?
+W=BROK
+C1A=WONDER
+
+T=We don't really need to wash and change clothes that often.
+W=BROK
+
+T=Hmm...
+W=MINK
+C2A=MOCK
+
+T=That's an interesting thought...
+W=MINK
+
+T=I know! Maybe we could improve it by separating both functions!
+W=MINK
+C2A=SURPRISED
+
+T=You would then have a toilet on one side, and a shower on the other!
+W=MINK
+C1A=HAPPY
+
+T=That way we could sell it for twice the price!
+W=MINK
+
+T=The cycle of modernity.
+W=BROK
+C1A=ALRIGHT
+
+#------------------------
+#= Bag
+#------------------------
+ID=PC15E_BAG1
+T=Clothes...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Eww! They're smelly!
+W=BROK
+C1A=CONFUSED
+
+T=Don't touch that!
+W=MINK
+C2A=ANGRY
+
+T=Our maintenance bot will do the laundry.
+W=MINK
+C2A=MEH
+
+###############################################
+# PROOFREAD - aZombieDictator - 10/09/2019
+###############################################
+
+
+#------------------------
+#= Die from trap
+#------------------------
+ID=PC15E_TRAPGAMEOVER1
+T=Pitiful.
+W=MINK
+C1=MINK
+C1A=MOCK
+C2=OTT
+C2A=SAD
+TEN=GAMEOVER
+
+
+
+#------------------------
+ID=PC15E_MEETYME_HIT1
+T=Huh?
+W=OTT
+C2=OTT
+C2A=WONDER
+NB=1
+D=60
+
+#------------------------
+ID=PC15E_MEETYME_DEAD
+T=Oops!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+
+
+
+#------------------------
+ID=PC15E_MEETYME_AFTERDESTROY
+T=Hello!
+BNAMESP=MEETYME
+BVOICESP=VARIOUS
+
+T=Hey, still works!
+W=BROK
+C1=BROK
+C1A=WONDER
+TEN=PC15E_MEETYME

@@ -1,0 +1,1435 @@
+#-------------------------------
+#=LAB HALL
+#-------------------------------
+
+#----- Interactions --------
+PC_DRHUSHROOM=胡斯博士的房間
+PC_DRMINKROOM=敏克博士的房間
+PC_RESTROOM=休息室
+PC_MONITORING=房門監視器
+PC_LEFTROOM=左側房間
+PC_MIDDLEROOM=中間房間
+PC_RIGHTROOM=右側房間
+PC_BOTTOMROOM=底層房間
+PC_FLOWERS=花朵
+
+
+#----- Choices / Items --------
+GOT_LABFLOWER=花朵！
+PC15B_FAKE=僞造身份
+PC15B_TRUTH=坦白真相
+PC15B_THREATEN_LIGHT=好言相勸
+PC15B_THREATEN_HARD=惡言相向
+
+#----- Topics --------
+TOPIC_SITUATION=情況
+TOPIC_PLACE=實驗室
+TOPIC_LIE=謊言
+
+INTERROGATION_GUARD=警衛在隱瞞什麽事情？
+INTERROGATION_GUARDWORRIED=為什麽警衛一點都不著急？
+PC15B_GUARD_AWAY_CHOICE=承諾保守秘密？
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC15B_PIPEMAIL1-1=郵件輸送管……
+# Brok
+PC15B_PIPEMAIL1-2=怎麽建在大廳中央？
+# Guard
+PC15B_PIPEMAIL1-3=那些科學家每天都會接收到很多郵件。
+# Guard
+PC15B_PIPEMAIL1-4=主要是影印機的墨水以及垃圾食品。這樣設計非常高效率。
+# Brok
+PC15B_PIPEMAIL1-5=不覺得這有什麽特別的，不過……
+# Brok
+PC15B_PIPEMAIL1-6=輸送管關閉了，有辦法打開它嗎？
+# Guard
+PC15B_PIPEMAIL1-7=沒，這完全是自動化的。
+# Guard
+PC15B_PIPEMAIL1-8=而且這是單向運管。
+# Guard
+PC15B_PIPEMAIL1-9=科學家生産出的東西只有資訊，他們從不需要郵寄任何實體對象。
+# Brok
+PC15B_PIPEMAIL1-10=有道理……
+#----------------------------------------------------
+# Brok
+PC15B_PIPEMAIL2-1=這是郵件輸送管……而且是單向的。
+# Guard
+PC15B_PIPEMAIL2-2=沒錯。
+#----------------------------------------------------
+# Brok
+PC15B_BOX1-1=這是管道的收件處。
+# Brok
+PC15B_BOX1-2=裏頭是空的。
+#----------------------------------------------------
+# Brok
+PC15B_BOX_PICKUP-1=這是能量飲料？！
+# Brok
+PC15B_BOX_PICKUP-2=不是吧……
+#----------------------------------------------------
+# Brok
+PC15B_BOX_PICKUP2-1=等等……不是說通訊中斷了嗎？
+# Guard
+PC15B_BOX_PICKUP2-2=兄弟，你剛才是不是按了緊急按鈕？
+# Guard
+PC15B_BOX_PICKUP2-3=緊急呼叫從不會斷線。
+# Brok
+PC15B_BOX_PICKUP2-4=太好了！我都快渴死了。
+#----------------------------------------------------
+# Brok
+PC15B_BOX_AD-1=這是廣告？
+# Brok
+PC15B_BOX_AD-2=現在的廣告真是一個比一個爛……
+#----------------------------------------------------
+# Brok
+PC15B_BOX_NADA-1=沒發現……
+# Brok
+PC15B_BOX_NADA-2=看來他們的備用補給也消耗光了。
+#----------------------------------------------------
+# Brok
+PC15B_FLOWERS1-1=好美麗的花朵！
+# Brok
+PC15B_FLOWERS1-2=突然有點觸景生情……
+#----------------------------------------------------
+# Brok
+PC15B_FLOWERS_AFTER1-1=（嗅嗅）好香！
+# Guard
+PC15B_FLOWERS_AFTER1-2=一共10烏尼幣。
+# Brok
+PC15B_FLOWERS_AFTER1-3=啥……？
+# Guard
+PC15B_FLOWERS_AFTER1-4=開個玩笑而已，不過你下次可別當著我的面摘我的寶貝花朵了。
+# Brok
+PC15B_FLOWERS_AFTER1-5=既然那麽寶貝，那我就笑納了。
+#----------------------------------------------------
+# Brok
+PC15B_FLOWERS_AFTER2-1=這是什麽品種的植物？
+# Guard
+PC15B_FLOWERS_AFTER2-2=誰知道！
+# Guard
+PC15B_FLOWERS_AFTER2-3=我只覺得它很香很好看，這就足夠了。
+# Brok
+PC15B_FLOWERS_AFTER2-4=對，我日常也是這樣想的……除了在調查案子的時候。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Arriving in the lab for the first time
+# *****************************************************************
+# Guard
+#Here the guard is addressing both Ott and Brok
+PC15B_FIRST_DIALOG1-1=你是什麽人？
+#----------------------------------------------------
+# Brok
+PC15B_FIRST_DIALOG2-1=我們是來調查的。
+# Guard
+PC15B_FIRST_DIALOG2-2=不會吧！
+# Guard
+PC15B_FIRST_DIALOG2-3=局長說過會派出最優秀的探員。
+# Guard
+PC15B_FIRST_DIALOG2-4=沒想到會是一個鱷魚人和一個醜八怪。哈哈！
+# Brok
+PC15B_FIRST_DIALOG2-5=你說話給我注意點，我們是來幫忙的。
+# Ott
+PC15B_FIRST_DIALOG2-6=是韋斯舅舅派我們來的，你可以打電話去求證。
+# Guard
+PC15B_FIRST_DIALOG2-7=沒必要，我跟那老頭很熟，他會做出這種決定也不奇怪。
+# Brok
+PC15B_FIRST_DIALOG2-8=別浪費時間了，彙報一下這裏的情況吧！
+# Guard
+PC15B_FIRST_DIALOG2-9=好吧，就該猜到這傢伙的脾氣會比較急躁。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_THINK1-1=（竟然是鼠人。）
+# Brok
+PC15B_GUARD_THINK1-2=（根據我以往的經驗，鼠人是不可靠的。這傢伙值得我們信任嗎？）
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_NOTYET-1=（還不行。）
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_SITUATION1-1=這裏居住著兩位工程師，其中一位失蹤了。
+# Brok
+PC15B_GUARD_SITUATION1-2=居住？這裏不是他們的辦公室嗎？
+# Guard
+PC15B_GUARD_SITUATION1-3=都一樣，他們工作和睡覺都在這裏。
+# Brok
+PC15B_GUARD_SITUATION1-4=你為何會認為是失蹤了？
+# Guard
+PC15B_GUARD_SITUATION1-5=我每天都會定時檢查房間。
+# Guard
+PC15B_GUARD_SITUATION1-6=在我最近一次查房時，卻沒發現胡斯博士。
+# Brok
+PC15B_GUARD_SITUATION1-7=或許他是躲在哪個角落了？
+# Guard
+PC15B_GUARD_SITUATION1-8=喂，別當我是菜鳥好嗎？我已經找遍了整棟大樓！
+# Guard
+PC15B_GUARD_SITUATION1-9=再說，他的醫療設備已經好幾個小時沒有顯示任何生命跡象了。
+# Brok
+PC15B_GUARD_SITUATION1-10=或許他是趁你沒注意時逃出去了？
+# Guard
+PC15B_GUARD_SITUATION1-11=不可能。如你所見，入口無時無刻覆蓋著雷射探測器。
+# Guard
+PC15B_GUARD_SITUATION1-12=上頭的命令是禁止任何沒有獲得批准的人出入，包括科學家們在內。
+# Guard
+PC15B_GUARD_SITUATION1-13=而胡斯博士並沒有提交過這種申請。
+# Ott
+PC15B_GUARD_SITUATION1-14=這地方聽起來好像監獄一樣……
+# Brok
+PC15B_GUARD_SITUATION1-15=切，我最熟這種知識分子了。
+# Brok
+PC15B_GUARD_SITUATION1-16=他們不介意把所有的時間與精力投入到科研項目上。
+# Brok
+PC15B_GUARD_SITUATION1-17=（雪伊就是個很好的例子。）
+# Brok
+PC15B_GUARD_SITUATION1-18=我覺得這肯定是他們自行要求的。
+# Guard
+PC15B_GUARD_SITUATION1-19=鱷魚人說得沒錯，他們曾經跟我說過“研究顯示這樣的生活會提升創造力”。
+# Guard
+PC15B_GUARD_SITUATION1-20=要我說他們其實就是隨便找個理由去做自己想做的事而已……
+# Guard
+PC15B_GUARD_SITUATION1-21=那道屏障是用來防護來自外界攻擊的。
+# Ott
+PC15B_GUARD_SITUATION1-22=嗯，真是一點也不誇張。
+# Brok
+PC15B_GUARD_SITUATION1-23=其實……大部分市民都是如此。
+# Brok
+PC15B_GUARD_SITUATION1-24=也能理解，畢竟到處都有無人機在遊蕩，不過這種情形也是他們自找的。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_SITUATION2-1=你是這裏唯一的警衛嗎？
+# Guard
+PC15B_GUARD_SITUATION2-2=我比較喜歡被稱呼為“安防專員”。
+# Brok
+PC15B_GUARD_SITUATION2-3=隨便啦，請回答問題！
+# Guard
+PC15B_GUARD_SITUATION2-4=那肯定不是啊！我可不能在這站崗一整天。
+# Guard
+PC15B_GUARD_SITUATION2-5=我們是輪流值班，同一時間只會有一個人。
+# Guard
+PC15B_GUARD_SITUATION2-6=我今早抵達時那位科學家還在，但是等輪到我值勤時他卻失蹤了。
+# Brok
+PC15B_GUARD_SITUATION2-7=之前發生過類似的情況嗎？
+# Guard
+PC15B_GUARD_SITUATION2-8=沒有。
+# Guard
+PC15B_GUARD_SITUATION2-9=科學家們的確壓力很大容易暴走，不過把他們限制在這個地方就是為了減低那種可能性。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+# Brok
+PC15B_GUARD_LIE1-1=唯有真實的情報才能有效幫助破解謎題。
+# Brok
+PC15B_GUARD_LIE1-2=你同意嗎？
+# Guard
+PC15B_GUARD_LIE1-3=當然！
+# Brok
+PC15B_GUARD_LIE1-4=那你為何對我撒謊？
+# Guard
+PC15B_GUARD_LIE1-5=你說的什麽意思……？
+# Brok
+PC15B_GUARD_LIE1-6=別裝傻了。
+# Brok
+PC15B_GUARD_LIE1-7=你的部分供詞明顯自相矛盾。
+# Guard
+PC15B_GUARD_LIE1-8=是嗎？
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_LIE2-1=我們繼續之前的審問吧！
+# Guard
+PC15B_GUARD_LIE2-2=啊……
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_INTERROGATION_EXIT1-1=唔……容我重新梳理下我的推論。
+# Guard
+PC15B_GUARD_INTERROGATION_EXIT1-2=那現在又是誰撒謊呢？
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-1=你認為敏克博士有沒有殺人的動機？
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-2=唔……
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-3=也許吧，我最近倒是察覺到他們之間的火藥味。
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-4=不過，我不清楚具體發生了什麽事。
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-5=奧特之前問你是否有留意胡斯博士在不在大廳時……
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-6=你猶豫了。
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-7=……
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-8=你是不是並沒有親眼目睹整件事的過程？
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-9=怎麽可能！我可是很專業的！
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-10=但你也不是機器人，難道你就不會去休息室之類的？
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-11=不會，唯有最優秀者會被選中擔任此崗位。
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-12=我們絕不會遺漏任何事情的！
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-13=哼……
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-14=你願意發誓嗎？
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-15=發誓絕對沒有任何人在你不留意時出入過？
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-16=……是的！
+# Guard
+PC15B_GUARD_SITUATION_AFTER1-17=好，我發誓！我全程都在……這裏……監視著。
+# Brok
+PC15B_GUARD_SITUATION_AFTER1-18=（聽起來有點自信不足的樣子。）
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_SITUATION_AFTER2-1=那個……你之前提到過胡斯博士離開辦公室去了趟休息室。
+# Brok
+PC15B_GUARD_SITUATION_AFTER2-2=這是發生在什麽時候的事？
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-3=唔……
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-4=不記得了。
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-5=當時我才抵達沒多久。
+# Brok
+PC15B_GUARD_SITUATION_AFTER2-6=這個時間區間很關鍵！你得仔細回憶！
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-7=喂！你知不知道我這是什麽樣的工作？
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-8=每天都在重復做著同樣的事情。
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-9=沒有變化、沒有熱情、什麽事都沒有！除了這次以外。
+# Brok
+PC15B_GUARD_SITUATION_AFTER2-10=好爽啊。
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-11=啊？
+# Brok
+PC15B_GUARD_SITUATION_AFTER2-12=沒事，總之你盡量回想一下！
+# Brok
+PC15B_GUARD_SITUATION_AFTER2-13=胡斯博士最後一次離開房間時發生了什麽？
+# Brok
+PC15B_GUARD_SITUATION_AFTER2-14=他在什麽時候去了什麽地方？！
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-15=我都說了……！我的腦袋是不會記下這種雞毛蒜皮的事情的！
+# Guard
+PC15B_GUARD_SITUATION_AFTER2-16=不過……想知道也不是沒辦法。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_DRHUSH_AFTER2B-1=這是什麽？
+# Guard
+PC15B_GUARD_DRHUSH_AFTER2B-2=房門監視器。
+# Brok
+PC15B_GUARD_DRHUSH_AFTER2B-3=啥……？你們這裏有房門的出入記錄？
+# Brok
+PC15B_GUARD_DRHUSH_AFTER2B-4=怎麽現在才告訴我？！
+# Guard
+PC15B_GUARD_DRHUSH_AFTER2B-5=我……我以為這東西不重要……
+# Brok
+PC15B_GUARD_DRHUSH_AFTER2B-6=不重要？！
+# Brok
+PC15B_GUARD_DRHUSH_AFTER2B-7=沒有情報在手的話，警察還靠什麽去查案？！
+# Guard
+PC15B_GUARD_DRHUSH_AFTER2B-8=喂，你語口放輕點！
+# Guard
+PC15B_GUARD_DRHUSH_AFTER2B-9=我才是這裏的老大，這是高度機密的資訊。
+# Guard
+PC15B_GUARD_DRHUSH_AFTER2B-10=只有安防專員才可以使用這個數據瀏覽器，不過我可以破例通融一次。
+# Guard
+PC15B_GUARD_DRHUSH_AFTER2B-11=你自己看吧。
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_SITUATION_AFTER3-1=去查看房門監視器。應該會對你的調查有所幫助。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_DRHUSH1-1=你對失蹤的科學家……胡斯博士有什麽了解？
+# Guard
+PC15B_GUARD_DRHUSH1-2=他是個平淡無奇的科學家，大概40多歲。
+# Guard
+PC15B_GUARD_DRHUSH1-3=他除了機器人之外大概沒有任何朋友和家人了。
+# Brok
+PC15B_GUARD_DRHUSH1-4=機器人？是他自己建造的嗎？
+# Guard
+PC15B_GUARD_DRHUSH1-5=不完全是，他是研究人工智慧的。
+# Guard
+PC15B_GUARD_DRHUSH1-6=他的辦公室就在左邊。
+# Brok
+PC15B_GUARD_DRHUSH1-7=他最後一次出現是什麽時候？
+# Guard
+#IMPORTANT : adapt the hours displayed to what feels best for the language. ALL the hours indicated during this investigation take place during morning （this was done in order to simplify, no AM/PM issues）
+PC15B_GUARD_DRHUSH1-8=我是淩晨3點抵達的。
+# Guard
+PC15B_GUARD_DRHUSH1-9=每次輪到我值勤時，我都會去查房，他當時還在。
+# Brok
+PC15B_GUARD_DRHUSH1-10=那麽……你有見到他了？你肯定？
+# Guard
+PC15B_GUARD_DRHUSH1-11=對，非常確定。
+# Brok
+PC15B_GUARD_DRHUSH1-12=他之後有離開過房間嗎？
+# Guard
+PC15B_GUARD_DRHUSH1-13=有，我有見到他去休息室。
+# Guard
+PC15B_GUARD_DRHUSH1-14=他的醫療數據大概是在淩晨5點停止反饋的。
+# Guard
+PC15B_GUARD_DRHUSH1-15=那玩意向來都不太精準，所以準確的時間可能會偏差一兩個小時。
+# Brok
+PC15B_GUARD_DRHUSH1-16=啊……？
+# Brok
+PC15B_GUARD_DRHUSH1-17=還以為科技都這麽發達了，數據應該會比較精準才對。
+# Guard
+PC15B_GUARD_DRHUSH1-18=這叫作生活隱私。
+# Brok
+PC15B_GUARD_DRHUSH1-19=人都死了還隱私？
+# Guard
+PC15B_GUARD_DRHUSH1-20=我不敢說自己很懂查案，鱷魚偵探，不過請你不要輕率地下結論。
+# Guard
+PC15B_GUARD_DRHUSH1-21=希望他千萬別死，否則我的飯碗要保不住了！
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_DRHUSH2-1=關於胡斯博士這個人，你還有什麽可以告訴我的嗎？
+# Guard
+PC15B_GUARD_DRHUSH2-2=不知道，你可以自己去查看他的辦公室。
+# Guard
+PC15B_GUARD_DRHUSH2-3=這樣你應該會有更多發現。
+# Brok
+PC15B_GUARD_DRHUSH2-4=明白。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_PLACE1-1=你提到了兩位科學家，對嗎？
+# Guard
+PC15B_GUARD_PLACE1-2=對，還有一位是敏克博士。
+# Guard
+PC15B_GUARD_PLACE1-3=他是研究奈米機器人的，可以說是個萬事通。
+# Brok
+PC15B_GUARD_PLACE1-4=他們倆相處得融洽嗎？
+# Guard
+PC15B_GUARD_PLACE1-5=非常不好。
+# Guard
+PC15B_GUARD_PLACE1-6=他們簡直水火不容，總是為了些無關緊要的東西而吵架。
+# Guard
+PC15B_GUARD_PLACE1-7=不過兩人都從未申請過調去別的實驗室。
+# Guard
+PC15B_GUARD_PLACE1-8=我覺得他們只是良性競爭。
+# Brok
+PC15B_GUARD_PLACE1-9=希望如此吧……
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_PLACE2-1=這裏還有其他人嗎？
+# Guard
+PC15B_GUARD_PLACE2-2=沒有。
+# Guard
+PC15B_GUARD_PLACE2-3=所有的訪客都需要獲得許可才能進入，包括快遞無人機。
+# Guard
+PC15B_GUARD_PLACE2-4=在你抵達現場之前，沒有人出入過這棟建築。
+# Brok
+PC15B_GUARD_PLACE2-5=既然都有了郵件輸送管那為什麼還要快遞？
+# Guard
+PC15B_GUARD_PLACE2-6=因為某些包裹是無法通過管道遞送的。
+# Brok
+PC15B_GUARD_PLACE2-7=有沒有可能凶手是通過管道離開的？
+# Guard
+PC15B_GUARD_PLACE2-8=不可能！除非你想被大卸八塊！
+# Guard
+PC15B_GUARD_PLACE2-9=那樣的話管道中肯定會留有痕跡的。
+# Brok
+PC15B_GUARD_PLACE2-10=呃……你說得對。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_PLACE3-1=你確定真的沒有任何逃生路線嗎？
+# Guard
+PC15B_GUARD_PLACE3-2=是的，那些窗戶都是假的。
+# Guard
+PC15B_GUARD_PLACE3-3=實驗室也沒有連接任何其他的房間，他們在建造這個地方時就已經想到這一點了。
+# Guard
+PC15B_GUARD_PLACE3-4=唯一的出入口就是你剛才進來的大門。
+# Guard
+PC15B_GUARD_PLACE3-5=沒有其他的方法。
+# Brok
+PC15B_GUARD_PLACE3-6=別那麽篤定。
+# Guard
+PC15B_GUARD_PLACE3-7=要不要打個賭？我下注100烏尼幣！
+# Brok
+PC15B_GUARD_PLACE3-8=一般來說對於賭博我是來者不拒的，不過……現在我可不能分心。
+# Guard
+PC15B_GUARD_PLACE3-9=可惜了。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_YOURSELF1-1=我一直想問……
+# Brok
+PC15B_GUARD_YOURSELF1-2=市區怎麽會出現鼠人？
+# Guard
+PC15B_GUARD_YOURSELF1-3=關你什麽事！
+# Brok
+PC15B_GUARD_YOURSELF1-4=我就是好奇而已，畢竟你們的族人早已被驅逐出境了……
+# Guard
+PC15B_GUARD_YOURSELF1-5=什麽族人？
+# Guard
+PC15B_GUARD_YOURSELF1-6=就因為其他人多年前做錯了事，所以我就不可以做正當職業了？！
+# Brok
+PC15B_GUARD_YOURSELF1-7=我是……
+# Guard
+PC15B_GUARD_YOURSELF1-8=閉嘴。
+# Guard
+PC15B_GUARD_YOURSELF1-9=你根本就是一無所知。
+# Guard
+PC15B_GUARD_YOURSELF1-10=最討厭你這種人了，只會以貌取人，不長腦子。
+# Brok
+PC15B_GUARD_YOURSELF1-11=（看來我踩到他的鼠尾巴了。）
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_YOURSELF2-1=（還是別堅持了。）
+# Brok
+PC15B_GUARD_YOURSELF2-2=（不過他是否在隱瞞著什麽……？這個得查清楚。）
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_EXITFIRST1-1=我得在周圍查看一下。
+# Guard
+PC15B_GUARD_EXITFIRST1-2=你動作快！
+# Guard
+PC15B_GUARD_EXITFIRST1-3=快點破案吧！我早在一個小時前就該換班了。
+# Guard
+PC15B_GUARD_EXITFIRST1-4=我沒有加班費！
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_EXIT1-1=耐心點。
+# Guard
+PC15B_GUARD_EXIT1-2=我可沒那麽多空閒時間！
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_EXIT2-1=拜托你！快點偵查吧！
+# Brok
+PC15B_GUARD_EXIT2-2=不然你以為我在幹嘛？
+# Guard
+PC15B_GUARD_EXIT2-3=我不知道，反正就是看不懂你在幹啥。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_WELCOME1-1=我還有些問題。
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_WELCOME2-1=又來？！
+# Guard
+PC15B_GUARD_WELCOME2-2=還不如我自己來查案，速度應該會更快！
+# Brok
+PC15B_GUARD_WELCOME2-3=你最好乖乖回答問題，還是說你想當頭號嫌犯？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Showing inventory to guard
+# *****************************************************************
+# Brok
+PC15B_GUARD_INV_DEFAULT1-1=這是什麽東西？
+# Guard
+PC15B_GUARD_INV_DEFAULT1-2=這是廢物。
+# Brok
+PC15B_GUARD_INV_DEFAULT1-3=很直白嘛？
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_INV_DEFAULT2-1=你覺得這會是線索嗎？
+# Guard
+PC15B_GUARD_INV_DEFAULT2-2=啥？你……問我？！
+# Guard
+PC15B_GUARD_INV_DEFAULT2-3=我本來以為你是個二流偵探，現在才發現是高估你了！
+# Brok
+PC15B_GUARD_INV_DEFAULT2-4=不幫就說不幫。
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_INV_MONEY-1=不行！我是不受賄賂的！
+# Brok
+PC15B_GUARD_INV_MONEY-2=萬萬沒想到啊！真是位正直的鼠人！
+# Guard
+PC15B_GUARD_INV_MONEY-3=別那樣叫我！
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_INV_LABFLOWER-1=還是不敢相信你連花朵都不放過。
+# Brok
+PC15B_GUARD_INV_LABFLOWER-2=這可是關鍵的線索！
+# Guard
+PC15B_GUARD_INV_LABFLOWER-3=嗯哼……
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_INV_LAMPHUSH-1=你修好了……？
+# Brok
+PC15B_GUARD_INV_LAMPHUSH-2=當然沒有！那是另一盞檯燈，我可不會破壞證物。
+# Guard
+PC15B_GUARD_INV_LAMPHUSH-3=那你該知道碰證物之前要戴手套吧？
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_INV_LAMPMINK-1=一定很痛吧。
+# Brok
+PC15B_GUARD_INV_LAMPMINK-2=那是當然，他都死了！
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_INV_MAGNIFY-1=看？我沒說謊吧！
+# Guard
+PC15B_GUARD_INV_MAGNIFY-2=呃，隨身帶著放大鏡就表示你是偵探了？
+# Brok
+PC15B_GUARD_INV_MAGNIFY-3=這是誰都知道的道理呀！
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_INV_MAPBUILDING-1=我不需要地圖，我對這建築的結構非常熟悉了。
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_INV_TABLETHUSH-1=胡斯博士使用過。
+# Brok
+PC15B_GUARD_INV_TABLETHUSH-2=請解鎖。
+# Guard
+PC15B_GUARD_INV_TABLETHUSH-3=說得好像我有辦法解鎖一樣！
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_INV_PILLHUSH-1=這應該是胡斯博士服用的藥物。
+# Guard
+PC15B_GUARD_INV_PILLHUSH-2=所以呢……？
+# Brok
+PC15B_GUARD_INV_PILLHUSH-3=你能確認嗎？
+# Guard
+PC15B_GUARD_INV_PILLHUSH-4=不知道。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_INV_TRAMPPRESCR-1=你是位醫生，對吧？
+# Guard
+PC15B_GUARD_INV_TRAMPPRESCR-2=你問錯人了，朋友！
+#----------------------------------------------------
+# Guard
+PC15B_GUARD_INV_WRAPPING-1=拿走拿走！最討厭螞蟻了。
+# Brok
+PC15B_GUARD_INV_WRAPPING-2=哇，那我不跟你好了。
+# Guard
+PC15B_GUARD_INV_WRAPPING-3=隨你便。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Going around the room
+# *****************************************************************
+# Guard
+PC15B_GUARD_INVESTIGATE-1=喂，等一下！
+# Guard
+PC15B_GUARD_INVESTIGATE-2=我還有些事情要告訴你。
+# Brok
+PC15B_GUARD_INVESTIGATE-3=那就快說吧！
+#----------------------------------------------------
+# Guard
+PC15B_TO_PC15_NO1-1=喂！
+# Guard
+PC15B_TO_PC15_NO1-2=我不介意早點下班，但你能不能有點職業道德？
+# Brok
+PC15B_TO_PC15_NO1-3=喔！你是指……？
+# Guard
+PC15B_TO_PC15_NO1-4=趕快破案呀，笨蛋！
+# Brok
+PC15B_TO_PC15_NO1-5=怎麽還罵人呢。
+#----------------------------------------------------
+# Brok
+PC15B_TO_PC15_NO2-1=出不去……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Dr Mink's door. He doesn't want to let Brok enter.
+# *****************************************************************
+# Brok
+PC15B_KNOCK1-1=這門打不開……
+# Unknown
+PC15B_KNOCK1-2=（敲門聲）
+# Brok
+PC15B_KNOCK1-3=……？
+# Brok
+PC15B_KNOCK1-4=我聽見音樂聲……
+# Brok
+PC15B_KNOCK1-5=音量很大，節奏很帶感！
+# Unknown
+PC15B_KNOCK1-6=（繼續敲門）
+# Mink
+PC15B_KNOCK1-7=別煩我！我很忙！
+# Brok
+PC15B_KNOCK1-8=唔……
+#----------------------------------------------------
+# Unknown
+PC15B_KNOCK2-1=（敲門聲）
+# Brok
+PC15B_KNOCK2-2=趕緊開門！
+#----------------------------------------------------
+# Mink
+PC15B_KNOCK2B-1=喂！你誰呀你？！
+# Brok
+PC15B_KNOCK2B-2=這麽介紹自己也太不禮貌了吧……
+# Brok
+PC15B_KNOCK2B-3=我可以進來嗎？
+# Mink
+PC15B_KNOCK2B-4=不可以！我正在忙著很重要的事情！
+# Brok
+PC15B_KNOCK2B-5=忙著……跳舞嗎？
+# Mink
+PC15B_KNOCK2B-6=……
+# Brok
+PC15B_KNOCK2B-7=我是來……
+# Mink
+PC15B_KNOCK2B-8=別來煩我！
+# Brok
+PC15B_KNOCK2B-9=……
+#----------------------------------------------------
+# Unknown
+PC15B_KNOCK3-1=（敲門聲）
+#----------------------------------------------------
+# Mink
+PC15B_KNOCK3B-1=又是你？我說得不夠清楚嗎？！
+#----------------------------------------------------
+# Brok
+PC15B_KNOCK3_FAKE1-1=我是外送員！請簽收您的披薩！
+# Mink
+PC15B_KNOCK3_FAKE1-2=不可能，我們的外送都是通過郵件輸送管送的。
+# Brok
+PC15B_KNOCK3_FAKE1-3=哎呀。
+#----------------------------------------------------
+# Brok
+PC15B_KNOCK3_FAKE2-1=開玩笑而已！我其實也是個科學家，我是來幫忙的！
+# Mink
+PC15B_KNOCK3_FAKE2-2=哦！那你把證書拿來給我看看。
+# Brok
+PC15B_KNOCK3_FAKE2-3=啊哦……我真是健忘，竟然把證書留在家中了！
+# Mink
+PC15B_KNOCK3_FAKE2-4=看來你的確是科學家！我們非常相似。
+# Mink
+PC15B_KNOCK3_FAKE2-5=好吧，進來吧……
+# Mink
+PC15B_KNOCK3_FAKE2-6=等一下。這頂奇怪的帽子是什麽的？
+# Brok
+PC15B_KNOCK3_FAKE2-7=呃……
+# Mink
+PC15B_KNOCK3_FAKE2-8=你這個騙子！給我出去！
+#----------------------------------------------------
+# Brok
+PC15B_KNOCK3_TRUTH-1=我是偵探，我是來調查……
+# Mink
+PC15B_KNOCK3_TRUTH-2=天呀！
+# Brok
+PC15B_KNOCK3_TRUTH-3=喂！
+# Mink
+PC15B_KNOCK3_TRUTH-4=我…我已經繳稅了！別再來煩我！
+#----------------------------------------------------
+# Brok
+PC15B_KNOCK3_LIGHT-1=不。
+# Mink
+PC15B_KNOCK3_LIGHT-2=別煩我，鱷魚！
+# Brok
+PC15B_KNOCK3_LIGHT-3=你聽我說。
+# Brok
+PC15B_KNOCK3_LIGHT-4=你有兩秒鐘的時間讓開。
+# Brok
+PC15B_KNOCK3_LIGHT-5=否則……我就會失控，而我失控時會用拳擊沙包來發洩怒氣。
+# Mink
+PC15B_KNOCK3_LIGHT-6=（咕噜）
+# Mink
+PC15B_KNOCK3_LIGHT-7=好…好吧！請你別傷害我！
+#----------------------------------------------------
+# Brok
+PC15B_KNOCK3_HARD-1=讓我進去，否則就打斷你的脊椎骨再把你剁來當下酒菜吃！
+# Mink
+PC15B_KNOCK3_HARD-2=什麽……
+#----------------------------------------------------
+# Mink
+PC15B_KNOCK3_HARD2-1=我很害怕！拜…拜托你離開……
+# Brok
+PC15B_KNOCK3_HARD2-2=可惡，是我演過頭了嗎？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting the door
+# *****************************************************************
+# Mink
+PC15B_DOORRIGHT_HIT1-1=住手！
+#----------------------------------------------------
+# Mink
+PC15B_DOORRIGHT_HIT2-1=嚇…嚇死我了……
+#----------------------------------------------------
+# Mink
+PC15B_DOORRIGHT_HIT3-1=你……這樣會把門給砸壞的！這門很貴的！
+#----------------------------------------------------
+# Mink
+PC15B_DOORRIGHT_HIT4-1=求……求你！
+# Mink
+PC15B_DOORRIGHT_HIT4-2=別傷害我……！
+#----------------------------------------------------
+# Mink
+PC15B_DOORRIGHT_DEATH1-1=啊啊！！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking other rooms
+# *****************************************************************
+# Brok
+PC15B_RESTROOM1-1=裏面是什麽？
+# Guard
+PC15B_RESTROOM1-2=休息室。
+# Brok
+PC15B_RESTROOM1-3=我進去看看……
+#----------------------------------------------------
+# Brok
+PC15B_RESTROOM1B-1=……
+# Brok
+PC15B_RESTROOM1B-2=裏面沒有任何人。
+# Brok
+PC15B_RESTROOM1B-3=我待會再檢查這房間。
+#----------------------------------------------------
+# Unknown
+PC15B_DRHUSHROOM1-1=（敲門聲）
+# Brok
+PC15B_DRHUSHROOM1-2=……
+# Brok
+PC15B_DRHUSHROOM1-3=這是誰的房間？
+# Guard
+PC15B_DRHUSHROOM1-4=胡斯博士。
+# Brok
+PC15B_DRHUSHROOM1-5=失蹤的科學家？
+# Brok
+PC15B_DRHUSHROOM1-6=進去看看吧。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - The guard monitoring
+# *****************************************************************
+# Brok
+PC15B_GUARD_MONITORING1-1=這是什麽東西？
+# Guard
+PC15B_GUARD_MONITORING1-2=今天的監控記錄，每次任何一道門打開時它就會記錄當時的時間……
+# Guard
+PC15B_GUARD_MONITORING1-3=……以及代表進入和離開的圖示。
+# Brok
+PC15B_GUARD_MONITORING1-4=明白了……
+# Brok
+PC15B_GUARD_MONITORING1-5=向左的箭頭是進入，向右的箭頭是離開，對吧？
+# Guard
+PC15B_GUARD_MONITORING1-6=對的。
+# Guard
+PC15B_GUARD_MONITORING1-7=開門者的身份也會被記錄下來。沒有人例外。
+# Brok
+PC15B_GUARD_MONITORING1-8=泰迪呢？
+# Guard
+PC15B_GUARD_MONITORING1-9=那個清潔機器人？
+# Guard
+PC15B_GUARD_MONITORING1-10=同樣會被記錄下來。
+# Brok
+PC15B_GUARD_MONITORING1-11=那好，我來研究看看。
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_MONITORING2-1=有誰有權限更改這裏面的資訊嗎？
+# Guard
+PC15B_GUARD_MONITORING2-2=當然沒有，這是100%自動化的，全部是唯讀文件。
+# Brok
+PC15B_GUARD_MONITORING2-3=那就好。
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGA1-1=這是胡斯博士的房間。
+# Brok
+PC15B_MONITORINGA1-2=我要是沒看錯的話，胡斯博士是在5:04時最後一次開門……
+# Brok
+PC15B_MONITORINGA1-3=然後就消失了。
+# Brok
+PC15B_MONITORINGA1-4=等一下……
+# Brok
+PC15B_MONITORINGA1-5=你為何在5:10時打開那道門？
+# Guard
+PC15B_MONITORINGA1-6=不是說了嗎？我會定時檢查各個房間。
+# Brok
+PC15B_MONITORINGA1-7=就在博士剛出門後？
+# Guard
+PC15B_MONITORINGA1-8=……
+# Guard
+PC15B_MONITORINGA1-9=好像是的。
+# Guard
+PC15B_MONITORINGA1-10=我的記憶有點亂……
+# Brok
+PC15B_MONITORINGA1-11=嗯……
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGA2-1=看來你在9:00時又進行了一次檢查，對嗎？
+# Guard
+PC15B_MONITORINGA2-2=是的。
+# Guard
+PC15B_MONITORINGA2-3=就是那時候我發現胡斯博士失蹤了。
+# Guard
+PC15B_MONITORINGA2-4=我隨後就報警了。
+# Brok
+PC15B_MONITORINGA2-5=好的。
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGB1-1=休息室。
+# Brok
+PC15B_MONITORINGB1-2=呃……非常頻繁的記錄。
+# Brok
+PC15B_MONITORINGB1-3=……
+# Brok
+PC15B_MONITORINGB1-4=泰迪最後一次是在4:24進入過休息室。
+# Brok
+PC15B_MONITORINGB1-5=然後就沒有再出現過在任何房間。
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGB2-1=在胡斯博士和泰迪之後，敏克博士也進去了。
+# Brok
+PC15B_MONITORINGB2-2=他們應該在裏頭見到彼此了吧？
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGC1-1=敏克博士的房間……？
+# Brok
+PC15B_MONITORINGC1-2=真是讓人驚訝。
+# Brok
+PC15B_MONITORINGC1-3=雖然屍體是在敏克博士的房裏發現的，但卻沒有什麽活動記錄！
+# Brok
+PC15B_MONITORINGC1-4=基本上，只有敏克博士離開了房間……稍後又回到房間。
+# Brok
+PC15B_MONITORINGC1-5=這跟他進入休息室的時間相符。
+# Brok
+PC15B_MONITORINGC1-6=他應該只是去上廁所而已……？
+# Brok
+PC15B_MONITORINGC1-7=總而言之，胡斯博士從未開過門，泰迪也一樣。
+# Brok
+PC15B_MONITORINGC1-8=雖然還是有說不通的地方，不過這至少驗證了敏克博士的供詞。
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGC2-1=早上9點鐘的記錄一共有三個房間。
+# Brok
+PC15B_MONITORINGC2-2=這應該就是警衛在每個房間尋找胡斯博士。
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGD1-1=這第四道門是？
+# Guard
+PC15B_MONITORINGD1-2=這是入口大門。
+# Brok
+PC15B_MONITORINGD1-3=等等，你不是說今天沒有人出入過這地方嗎？
+# Brok
+PC15B_MONITORINGD1-4=那麽這些紀錄又怎麽解釋？
+# Guard
+#He means both Brok and Ott
+PC15B_MONITORINGD1-5=這是你們進來的紀錄。
+# Brok
+PC15B_MONITORINGD1-6=可這時間是4:38哦……？
+# Guard
+PC15B_MONITORINGD1-7=……
+# Guard
+PC15B_MONITORINGD1-8=……
+# Guard
+PC15B_MONITORINGD1-9=等一下！我知道了！
+# Guard
+PC15B_MONITORINGD1-10=那是我，我就是在4:38輪班的。
+# Brok
+PC15B_MONITORINGD1-11=是嗎……？
+#----------------------------------------------------
+# Brok
+PC15B_MONITORINGD2-1=我再問你一遍。
+# Brok
+PC15B_MONITORINGD2-2=是誰在今早4:38時打開了入口大門？
+# Guard
+PC15B_MONITORINGD2-3=都說了！
+# Guard
+PC15B_MONITORINGD2-4=是我，我進入實驗室和我的同事換班。
+# Brok
+PC15B_MONITORINGD2-5=好吧……
+#----------------------------------------------------
+# Brok
+PC15B_GUARD_MONITORINGD_AFTER1-1=警衛在4:38時打開了大門約一分鐘。
+# Brok
+PC15B_GUARD_MONITORINGD_AFTER1-2=然後我和奧特在數個小時後抵達。
+# Brok
+PC15B_GUARD_MONITORINGD_AFTER1-3=一切都吻合。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+# Brok
+PC15B_CLUE_GUARD_AWAY-1=你說你是幾點換班的？
+# Guard
+PC15B_CLUE_GUARD_AWAY-2=每天都是3點鐘！
+# Brok
+PC15B_CLUE_GUARD_AWAY-3=怪了……
+# Brok
+PC15B_CLUE_GUARD_AWAY-4=那你如何解釋自己在4:38時進入實驗室？
+# Guard
+PC15B_CLUE_GUARD_AWAY-5=什麽……？我沒有啊……
+# Brok
+PC15B_CLUE_GUARD_AWAY-6=自己看這監控紀錄，上面寫著什麽？
+# Guard
+PC15B_CLUE_GUARD_AWAY-7=4:38……
+# Guard
+PC15B_CLUE_GUARD_AWAY-8=（咕噜）
+# Brok
+PC15B_CLUE_GUARD_AWAY-9=而且，這箭頭符號意味著這是出去，而不是進來！
+# Brok
+PC15B_CLUE_GUARD_AWAY-10=請解釋。
+# Guard
+PC15B_CLUE_GUARD_AWAY-11=……
+# Guard
+PC15B_CLUE_GUARD_AWAY-12=……
+# Guard
+PC15B_CLUE_GUARD_AWAY-13=好吧……我承認！
+# Guard
+PC15B_CLUE_GUARD_AWAY-14=我的確是在3點鐘換班……而這大門也的確是在4:38時打開過。
+# Guard
+PC15B_CLUE_GUARD_AWAY-15=不過我沒撒謊，這的確是我開的。
+# Guard
+PC15B_CLUE_GUARD_AWAY-16=我們不僅僅是安防專員，我們還要兼職秘書工作。
+# Guard
+PC15B_CLUE_GUARD_AWAY-17=在4:38時，我接到了一通電話，我們的工作包括接聽每一通電話並回覆。
+# Guard
+PC15B_CLUE_GUARD_AWAY-18=不過訊號很差。
+# Brok
+PC15B_CLUE_GUARD_AWAY-19=甚麼意思？
+# Guard
+PC15B_CLUE_GUARD_AWAY-20=這棟大樓有先進的保全系統，外頭的來電都會受到干擾。
+# Guard
+PC15B_CLUE_GUARD_AWAY-21=我接到的電話訊號很差，聲音卡卡的。
+# Brok
+PC15B_CLUE_GUARD_AWAY-22=我很驚訝這種情況竟然會發生在市區。
+# Guard
+PC15B_CLUE_GUARD_AWAY-23=但的確是如此。
+# Guard
+PC15B_CLUE_GUARD_AWAY-24=無論科技發展得如何先進，依然無法保障所有的功能是完美運作。
+# Guard
+PC15B_CLUE_GUARD_AWAY-25=所以，當時我就打開大門出去接聽電話了。
+# Brok
+PC15B_CLUE_GUARD_AWAY-26=那麽……你是站在大門前待了一陣子。
+# Guard
+PC15B_CLUE_GUARD_AWAY-27=是的。
+# Brok
+PC15B_CLUE_GUARD_AWAY-28=是誰打來的？
+# Guard
+PC15B_CLUE_GUARD_AWAY-29=不清楚……
+# Guard
+PC15B_CLUE_GUARD_AWAY-30=我只聽見播放歌曲。
+# Brok
+PC15B_CLUE_GUARD_AWAY-31=歌曲？
+# Guard
+#TechDream isn't so important, keep it like this or translate if you want but keep it consistent throughout all the labs files （PC15X）
+PC15B_CLUE_GUARD_AWAY-32=對！就是那首《少女十黛》！
+# Brok
+PC15B_CLUE_GUARD_AWAY-33=嗯……聽起來有點耳熟。
+# Guard
+PC15B_CLUE_GUARD_AWAY-34=那是當然！這是時下流行的歌曲！
+# Guard
+PC15B_CLUE_GUARD_AWAY-35=旋律很洗腦，所以……我就多聽了一會兒。
+# Brok
+PC15B_CLUE_GUARD_AWAY-36=聽了多久？
+# Guard
+PC15B_CLUE_GUARD_AWAY-37=大概有一分鐘吧……？
+# Guard
+PC15B_CLUE_GUARD_AWAY-38=過了一陣子，我意識到這可能是惡作劇電話，所以就掛斷了。
+# Guard
+PC15B_CLUE_GUARD_AWAY-39=我知道你在想甚麼。
+# Guard
+PC15B_CLUE_GUARD_AWAY-40=對，我分心了。不過……也沒有發生什麽意外。
+# Guard
+PC15B_CLUE_GUARD_AWAY-41=那些雷射設備依然啓動著，沒有人可以出入大樓！
+# Brok
+PC15B_CLUE_GUARD_AWAY-42=可是大樓裏頭卻出事了。
+# Brok
+PC15B_CLUE_GUARD_AWAY-43=這是重大過失！
+# Guard
+PC15B_CLUE_GUARD_AWAY-44=不然你以為我為什麽不想告訴你？！
+# Guard
+PC15B_CLUE_GUARD_AWAY-45=本來我是沒當一回事的，但是當你開始查案時……
+# Guard
+PC15B_CLUE_GUARD_AWAY-46=我突然想到這件事。
+# Guard
+PC15B_CLUE_GUARD_AWAY-47=拜托……我求求你……！
+# Guard
+PC15B_CLUE_GUARD_AWAY-48=別檢舉我！這個過失足以導致我被解雇的！
+# Brok
+PC15B_CLUE_GUARD_AWAY-49=那個……
+#----------------------------------------------------
+# Brok
+PC15B_CLUE_GUARD_NO-1=抱歉了。
+# Brok
+PC15B_CLUE_GUARD_NO-2=這個過失間接造成了這場謀殺案！
+# Guard
+PC15B_CLUE_GUARD_NO-3=……不……
+# Guard
+PC15B_CLUE_GUARD_NO-4=我那麽努力工作……想要被社會所接受……
+# Guard
+PC15B_CLUE_GUARD_NO-5=我…我無法接受因為一分鐘的分心而毀掉整個事業生涯……！
+# Brok
+PC15B_CLUE_GUARD_NO-6=喂，你先讓我完成調查。
+# Brok
+PC15B_CLUE_GUARD_NO-7=等我搜集完所有的訊息後再說吧。
+# Guard
+PC15B_CLUE_GUARD_NO-8=……好吧。
+# Brok
+PC15B_CLUE_GUARD_NO-9=（不過我還是得彙報給韋斯，這是我的職責。）
+# Brok
+PC15B_CLUE_GUARD_NO-10=（我把這段對話錄音了，等我一離開大樓就發送出去。）
+#----------------------------------------------------
+# Brok
+PC15B_CLUE_GUARD_YES-1=我會替你保守這個秘密。
+# Brok
+PC15B_CLUE_GUARD_YES-2=我也理解，每天站崗在同一個地方無所事事的確很考驗意志力。
+# Guard
+PC15B_CLUE_GUARD_YES-3=呼……謝謝你的理解，兄弟。
+# Brok
+PC15B_CLUE_GUARD_YES-4=不過，這件事對這起案件很關鍵。
+# Guard
+PC15B_CLUE_GUARD_YES-5=嗯，希望那個可憐的科學家並非因為我的疏忽而被殺害……
+# Brok
+PC15B_CLUE_GUARD_YES-6=很快就會水落石出的。
+#----------------------------------------------------
+# Brok
+PC15B_CLUE_GUARD_NEXT-1=不過我還有問題要問你！
+# Brok
+PC15B_CLUE_GUARD_NEXT-2=為什麽大門沒有你3點鐘進來時的記錄？
+# Guard
+PC15B_CLUE_GUARD_NEXT-3=很簡單，每次我抵達時都會重置數據。
+# Guard
+PC15B_CLUE_GUARD_NEXT-4=為了保密起見，上頭不准我們儲存超過一天的監控數據。
+# Guard
+PC15B_CLUE_GUARD_NEXT-5=而那個配置面板太難用了，我根本沒辦法設置為自動重置！
+# Guard
+PC15B_CLUE_GUARD_NEXT-6=不知道是哪個工程師設計的，實在是太反人類了。
+# Brok
+PC15B_CLUE_GUARD_NEXT-7=我非常理解這種感受……
+# Brok
+PC15B_CLUE_GUARD_NEXT-8=你之前不是說你沒有控制權限嗎？
+# Guard
+PC15B_CLUE_GUARD_NEXT-9=一半一半吧。
+# Guard
+PC15B_CLUE_GUARD_NEXT-10=我們沒有權限新增或編輯數據，但有權限刪除所有數據。
+# Brok
+PC15B_CLUE_GUARD_NEXT-11=好吧……
+# Guard
+PC15B_CLUE_GUARD_NEXT-12=不過這並不重要，我抵達時胡斯博士還好好的。
+# Brok
+PC15B_CLUE_GUARD_NEXT-13=我暫時相信你的證詞。
+#----------------------------------------------------
+# Brok
+PC15B_CLUE_HUSH_GONE1-1=根據紀錄顯示，你在5:10打開了胡斯博士的房門。
+# Brok
+PC15B_CLUE_HUSH_GONE1-2=而與此同時，胡斯博士的檯燈受到了劇烈撞擊……
+# Brok
+PC15B_CLUE_HUSH_GONE1-3=這太巧合了吧，你說是嗎？
+# Guard
+PC15B_CLUE_HUSH_GONE1-4=撞……撞擊……？
+# Brok
+PC15B_CLUE_HUSH_GONE1-5=你當時是不是不小心撞翻了檯燈？
+# Guard
+PC15B_CLUE_HUSH_GONE1-6=沒有……沒碰到……
+# Brok
+PC15B_CLUE_HUSH_GONE1-7=我還察覺到另一件不尋常的事。
+# Brok
+PC15B_CLUE_HUSH_GONE1-8=在9:00時，你按慣例巡查了全部三間房間。
+# Brok
+PC15B_CLUE_HUSH_GONE1-9=可是在5:10時，你卻只打開過胡斯博士的房門。
+# Brok
+PC15B_CLUE_HUSH_GONE1-10=為什麼？
+# Guard
+PC15B_CLUE_HUSH_GONE1-11=唔……
+# Guard
+PC15B_CLUE_HUSH_GONE1-12=哦！
+# Guard
+PC15B_CLUE_HUSH_GONE1-13=我想起來了！
+# Guard
+PC15B_CLUE_HUSH_GONE1-14=我當時聽到了什麽聲音！
+# Brok
+PC15B_CLUE_HUSH_GONE1-15=是嗎？
+# Brok
+PC15B_CLUE_HUSH_GONE1-16=難道就是……檯燈掉落在地板上的聲音？
+# Guard
+PC15B_CLUE_HUSH_GONE1-17=唔……有這個可能性。
+# Guard
+PC15B_CLUE_HUSH_GONE1-18=不過等我進去看時，卻沒發現任何異常。
+# Brok
+PC15B_CLUE_HUSH_GONE1-19=你確定嗎？
+# Guard
+PC15B_CLUE_HUSH_GONE1-20=對，胡斯博士向來都把房間打理得整整齊齊的。
+# Guard
+PC15B_CLUE_HUSH_GONE1-21=要是檯燈掉在地上的話，我一眼就會察覺！
+# Brok
+PC15B_CLUE_HUSH_GONE1-22=泰迪當時在場嗎？
+# Guard
+PC15B_CLUE_HUSH_GONE1-23=呃……當時他關機在充電。
+# Brok
+PC15B_CLUE_HUSH_GONE1-24=那麽胡斯博士呢？
+# Brok
+PC15B_CLUE_HUSH_GONE1-25=博士在做什麽？
+# Guard
+PC15B_CLUE_HUSH_GONE1-26=讓我想想……
+# Guard
+PC15B_CLUE_HUSH_GONE1-27=呃……我沒見到他。
+# Brok
+PC15B_CLUE_HUSH_GONE1-28=你確定嗎……？
+# Guard
+PC15B_CLUE_HUSH_GONE1-29=非常肯定。
+# Guard
+PC15B_CLUE_HUSH_GONE1-30=他也不在大廳。
+# Brok
+PC15B_CLUE_HUSH_GONE1-31=那麽他是已經離開了房間？
+# Guard
+PC15B_CLUE_HUSH_GONE1-32=對，一定是的。
+# Brok
+PC15B_CLUE_HUSH_GONE1-33=有意思了……
+#----------------------------------------------------
+# Brok
+PC15B_CLUE_HUSH_GONE2-1=有一點說不通。
+# Brok
+PC15B_CLUE_HUSH_GONE2-2=在5:10時，你聽見有動靜，所以就去查看胡斯博士，但是對方並不在房間裏也不在大廳。
+# Guard
+PC15B_CLUE_HUSH_GONE2-3=對。
+# Brok
+PC15B_CLUE_HUSH_GONE2-4=然而問題就在這裏……
+# Brok
+PC15B_CLUE_HUSH_GONE2-5=你居然不擔心？
+# Guard
+PC15B_CLUE_HUSH_GONE2-6=擔心什麽？
+# Brok
+PC15B_CLUE_HUSH_GONE2-7=你設想一下。
+# Brok
+PC15B_CLUE_HUSH_GONE2-8=你沒發現胡斯博士的蹤影，難道就沒想過去別的房間尋找他嗎？
+# Brok
+PC15B_CLUE_HUSH_GONE2-9=你為何沒這麽做呢？
+# Guard
+PC15B_CLUE_HUSH_GONE2-10=你說得對。
+# Guard
+PC15B_CLUE_HUSH_GONE2-11=我一直到9點過後才開始擔心他不見蹤影……
+# Guard
+PC15B_CLUE_HUSH_GONE2-12=可是……我卻不記得之前為什麽完全不起疑心……？
+# Brok
+PC15B_CLUE_HUSH_GONE2-13=那個，我有個大膽的推論。
+# Guard
+PC15B_CLUE_HUSH_GONE2-14=真的？
+# Brok
+PC15B_CLUE_HUSH_GONE2-15=是的。
+# Brok
+PC15B_CLUE_HUSH_GONE2-16=這就是你當時毫不擔心的原因！
+#----------------------------------------------------
+# Brok
+PC15B_PICKONE_GUARDWORRIED_WRONG1-1=你沒擔心是因為……這個！
+# Guard
+PC15B_PICKONE_GUARDWORRIED_WRONG1-2=什麽……？
+# Guard
+PC15B_PICKONE_GUARDWORRIED_WRONG1-3=和這個有什麽關係？
+# Brok
+PC15B_PICKONE_GUARDWORRIED_WRONG1-4=你確定嗎？
+# Brok
+PC15B_PICKONE_GUARDWORRIED_WRONG1-5=哎呀，那我試試別的！
+#----------------------------------------------------
+# Brok
+PC15B_CLUE_LAB_MEETYME-1=我在休息室發現了一些奇怪的線索。
+# Brok
+PC15B_CLUE_LAB_MEETYME-2=在5:11時，視我播放了一段胡斯博士的錄音……
+# Guard
+PC15B_CLUE_LAB_MEETYME-3=是什麽錄音？
+# Brok
+PC15B_CLUE_LAB_MEETYME-4=“我在休息室”
+# Guard
+PC15B_CLUE_LAB_MEETYME-5=……！
+# Brok
+PC15B_CLUE_LAB_MEETYME-6=想起來了嗎……？
+# Guard
+PC15B_CLUE_LAB_MEETYME-7=對對對！沒錯！
+# Guard
+PC15B_CLUE_LAB_MEETYME-8=你說得對！當我開始呼叫胡斯博士時……
+# Guard
+PC15B_CLUE_LAB_MEETYME-9=我就是聽見他這麽回應我的！那聲音是從休息室傳出來的，所以……
+# Brok
+PC15B_CLUE_LAB_MEETYME-10=……你就以為胡斯博士真的在休息室裏。
+# Guard
+PC15B_CLUE_LAB_MEETYME-11=難道……他不是嗎？！
+# Brok
+PC15B_CLUE_LAB_MEETYME-12=這是最合乎邏輯的結論了。
+# Brok
+PC15B_CLUE_LAB_MEETYME-13=那就意味著……
+# Guard
+PC15B_CLUE_LAB_MEETYME-14=胡斯博士在那之前已經遭遇毒手了。
+# Brok
+PC15B_CLUE_LAB_MEETYME-15=不過我們也不能輕率定論他不在休息室裏。
+# Guard
+PC15B_CLUE_LAB_MEETYME-16=哇……這真是瘋狂的一天……
+#----------------------------------------------------
+# Guard
+PC15B_INTERROGATION_OVER-1=那麽……完事了嗎？
+# Brok
+PC15B_INTERROGATION_OVER-2=那就看你還有沒有隱瞞別的事了？
+# Guard
+PC15B_INTERROGATION_OVER-3=沒有了！我全都供出了！
+# Guard
+PC15B_INTERROGATION_OVER-4=還是難以置信，我怎麽就這麽倒楣，在我值班時碰上這種事……？
+# Brok
+PC15B_INTERROGATION_OVER-5=我已經學會了不去怨天尤人，否則的話我天天都得詛咒上天。
+# Brok
+PC15B_INTERROGATION_OVER-6=要是想到什麽有用的資訊記得通知我。
+# Guard
+PC15B_INTERROGATION_OVER-7=沒問題。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After we find Tidy is the culprit, he tries to escape
+# *****************************************************************
+# Tidy
+PC15B_STORY170_TIDYFLEES1-1=啊！
+# Tidy
+PC15B_STORY170_TIDYFLEES1-2=可惡的雷射光！
+#----------------------------------------------------
+# Guard
+#"He" is Tidy
+PC15B_STORY170_TIDYFLEES2-1=我啓動了緊急措施！他無法使用控制面板了。
+# Tidy
+PC15B_STORY170_TIDYFLEES2-2=混蛋警衛！快放我出去！
+# Brok
+PC15B_STORY170_TIDYFLEES2-3=你哪也別想去。
+#----------------------------------------------------
+# Tidy
+PC15B_STORY170_TIDYFLEES3-1=我沒有犯錯……！
+# Tidy
+PC15B_STORY170_TIDYFLEES3-2=爸爸還活著！
+# Brok
+PC15B_STORY170_TIDYFLEES3-3=那是他命大而已！而且你沒資格再叫他爸爸了。
+# Brok
+PC15B_STORY170_TIDYFLEES3-4=你只不過是搭配次級品AI的一堆廢鐵而已。
+# Brok
+PC15B_STORY170_TIDYFLEES3-5=你乖乖讓我關閉吧。我們會修好你的！
+# Tidy
+PC15B_STORY170_TIDYFLEES3-6=哼！我絕不會服從人類的命令的！
+# Tidy
+PC15B_STORY170_TIDYFLEES3-7=我是完美的産物！真正的次級品是你們人類！
+# Tidy
+PC15B_STORY170_TIDYFLEES3-8=我收到了新的命令！是新爸爸發來的！
+# Tidy
+PC15B_STORY170_TIDYFLEES3-9=等我出去後，他就會照顧我！
+# Brok
+PC15B_STORY170_TIDYFLEES3-10=甚麼……？你說的是誰……？
+# Tidy
+PC15B_STORY170_TIDYFLEES3-11=說來好笑！其實……
+# Tidy
+PC15B_STORY170_TIDYFLEES3-12=不對，我答應過的。
+# Tidy
+PC15B_STORY170_TIDYFLEES3-13=不能告訴你，你自己去查吧。
+# Tidy
+PC15B_STORY170_TIDYFLEES3-14=真是可惜。
+# Tidy
+PC15B_STORY170_TIDYFLEES3-15=因為你永遠沒機會查出來了！
+# Brok
+PC15B_STORY170_TIDYFLEES3-16=別發瘋了！這是給你最後一次警告！
+# Brok
+PC15B_STORY170_TIDYFLEES3-17=馬上關機，否則……
+# Tidy
+PC15B_STORY170_TIDYFLEES3-18=你省省吧。休想抓到我！
+# Brok
+PC15B_STORY170_TIDYFLEES3-19=那麽……
+# Brok
+PC15B_STORY170_TIDYFLEES3-20=我唯有使用武力讓你關機了！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Winning against Tidy
+# *****************************************************************
+# Guard
+PC15B_STORY170_BROKWINS1-1=打敗他了嗎？
+# Brok
+PC15B_STORY170_BROKWINS1-2=應該是……
+#----------------------------------------------------
+# Brok
+PC15B_STORY170_BROKWINS2-1=沒有。
+# Tidy
+PC15B_STORY170_BROKWINS2-2=啊！我恨你——我恨你——我恨你……
+# Mink
+PC15B_STORY170_BROKWINS2-3=它要暴走了……！
+# Tidy
+PC15B_STORY170_BROKWINS2-4=你會後悔對我動手的！
+# Tidy
+PC15B_STORY170_BROKWINS2-5=城裏的所有人……都會被消滅！
+# Guard
+PC15B_STORY170_BROKWINS2-6=糟糕！它逃走了！
+#----------------------------------------------------
+# Mink
+PC15B_STORY170_JUMPEDBODY1-1=警衛！
+# Guard
+PC15B_STORY170_JUMPEDBODY1-2=那個機器人……泰迪……
+# Guard
+PC15B_STORY170_JUMPEDBODY1-3=他襲擊我……然後衝出去了……
+# Brok
+PC15B_STORY170_JUMPEDBODY1-4=我去追捕他！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Losing against Tidy
+# *****************************************************************
+# Guard
+PC15B_STORY170_BROKLOSES1-1=糟糕……！
+# Mink
+PC15B_STORY170_BROKLOSES1-2=……！
+# Tidy
+PC15B_STORY170_BROKLOSES1-3=啊啊啊！
+# Tidy
+PC15B_STORY170_BROKLOSES1-4=我幹掉他了，這次沒跑了！
+# Tidy
+PC15B_STORY170_BROKLOSES1-5=那麽，你要自己放我出去……還是等我幹掉你後再殺出去？
+# Guard
+PC15B_STORY170_BROKLOSES1-6=做夢！
+# Guard
+PC15B_STORY170_BROKLOSES1-7=糟糕……保全系統的電量快要耗盡了……
+# Mink
+PC15B_STORY170_BROKLOSES1-8=快照他說的去做吧！別再死人了……
+# Guard
+PC15B_STORY170_BROKLOSES1-9=不行！這傢伙一旦脫逃會在城裏大屠殺的！
+# Guard
+PC15B_STORY170_BROKLOSES1-10=我選擇戰鬥到底！
+# Tidy
+PC15B_STORY170_BROKLOSES1-11=閉嘴吧。
+# Guard
+PC15B_STORY170_BROKLOSES1-12=啊！！
+# Mink
+PC15B_STORY170_BROKLOSES1-13=住手！
+# Mink
+PC15B_STORY170_BROKLOSES1-14=快停止……
+# Mink
+PC15B_STORY170_BROKLOSES1-15=我……我無法阻攔你……沒有人可以……
+# Mink
+PC15B_STORY170_BROKLOSES1-16=我放你出去！但是你得答應我……
+# Mink
+PC15B_STORY170_BROKLOSES1-17=別濫殺無辜。
+# Tidy
+PC15B_STORY170_BROKLOSES1-18=小敏最乖！
+#----------------------------------------------------
+# Tidy
+PC15B_STORY170_BROKLOSES2-1=對了……
+# Tidy
+PC15B_STORY170_BROKLOSES2-2=我可沒答應你！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Scene if we charge the wrong culprit, Ott has doubts
+# *****************************************************************
+# Ott
+PC15B_CHARGE_LEAVING-1=……
+# Brok
+PC15B_CHARGE_LEAVING-2=怎麽了？
+# Ott
+PC15B_CHARGE_LEAVING-3=我……
+# Ott
+PC15B_CHARGE_LEAVING-4=不知為何，我感覺……這個推論有說不通的地方。
+# Brok
+PC15B_CHARGE_LEAVING-5=那是因為你還沒有這方面經驗。
+# Ott
+PC15B_CHARGE_LEAVING-6=應該是吧……
+# Ott
+PC15B_CHARGE_LEAVING-7=無論如何……我很高興能夠參與偵破這案子！
+#----------------------------------------------------
+# Ott
+PC15B_CHARGE_LEAVING_HUSH-1=那個博士竟然試圖殺害同事，也是活該！
+# Brok
+PC15B_CHARGE_LEAVING_HUSH-2=對，真是世事無常。
+#----------------------------------------------------
+# Ott
+PC15B_CHARGE_LEAVING_GUARD-1=從未想過鼠人竟然是這麽邪惡的……
+# Brok
+PC15B_CHARGE_LEAVING_GUARD-2=對，知人知面不知心啊。
+#----------------------------------------------------
+# Ott
+PC15B_LEAVINGWITHOTT-1=唔……不知道格拉夫考完試了沒。
+# Brok
+PC15B_LEAVINGWITHOTT-2=對哦！
+# Brok
+PC15B_LEAVINGWITHOTT-3=我得趕回家去，希望他已經到家了。
+# Ott
+PC15B_LEAVINGWITHOTT-4=我很想跟你一起去，不過我得準備自己的測驗了。
+# Brok
+PC15B_LEAVINGWITHOTT-5=嗯，之後見，小子。
+#----------------------------------------------------
+# Guard
+PC15B_DESK1-1=什麽鬼……！
+#----------------------------------------------------
+# Guard
+PC15B_DESK2-1=嘿！你在幹什麽？！
+#----------------------------------------------------
+# Guard
+PC15B_DESK3-1=你還要繼續浪費我們的時間嗎？！
+#----------------------------------------------------

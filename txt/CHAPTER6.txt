@@ -1,0 +1,2105 @@
+﻿#-----------------------------------------
+#=CHAPTER 6 TEXT POTENTIALLY USED EVERYWHERE
+#-----------------------------------------
+
+
+#---------------------------------------------------------
+#= Ott follows Graff to his apartment after the results
+#---------------------------------------------------------
+ID=CH6_OTTFOLLOWED1
+T=...
+W=GRAFF
+A=SAD
+
+T=All these efforts... All these years...
+W=GRAFF
+
+T=For nothing.
+W=GRAFF
+A=TORN
+
+T=What will I tell Brok...
+W=GRAFF
+
+T=No... I have no reason to blame myself.
+W=GRAFF
+A=TURN
+
+T=It's his fault I'm in this situation!
+W=GRAFF
+
+T=I don't get it...
+W=GRAFF
+
+T=Why do so many people believe in the Untail...an entity watching over everyone?
+W=GRAFF
+
+T=If this was true... Why would it let us suffer like this?
+W=GRAFF
+
+T=Living under constant threat. Whether it's pollution, aggression or...
+W=GRAFF
+
+T=This is nonsense! No one's watching over me!
+W=GRAFF
+A=STUPID
+
+T=I'm... alone...
+W=GRAFF
+A=TORN
+TEN=PC01_CH6_OTTCOMES
+
+#-------------------------------------
+
+ID=CH6_OTTFOLLOWED2
+T=...!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=OTT
+C2A=SAD
+
+T=What?... Did you follow me?
+W=GRAFF
+C1A=GASP
+
+T=You've already forgot what I said?
+W=OTT
+C2A=NORMAL
+
+T=I'm sticking with you. No matter what!
+W=OTT
+C2A=ALRIGHT
+
+T=You mean...
+W=GRAFF
+C1A=SAD
+
+T=No! You can't!...
+W=GRAFF
+C1A=GASP
+
+T=You've worked so hard! You've earned it!
+W=GRAFF
+C1A=SAD
+
+T=I don't care! What future do I have if I don't have any freedom?
+W=OTT
+C2A=OPPOSITE
+
+T=If... I can't be with my best friend?...
+W=OTT
+C2A=HAPPY
+
+T=What will your parents say? And your uncle?
+W=GRAFF
+C1A=SAD
+
+T=It's my decision. Not theirs.
+W=OTT
+C2A=OPPOSITE
+
+T=If you stay in the Slums, I stay too.
+W=OTT
+C2A=ALRIGHT
+
+T=...
+W=GRAFF
+
+T=Then...
+W=GRAFF
+
+T=I can't let you ruin your future for me...
+W=GRAFF
+C1A=TORN
+
+T=I'd better find a solution so we both go.
+W=GRAFF
+C1A=OPPOSITE
+
+T=That's the spirit!
+W=OTT
+C2A=HAPPY
+
+T=And... I have an idea.
+W=OTT
+C2A=NORMAL
+TEN=CH6_THEIDEA1
+
+#-------------------------------------
+
+ID=CH6_THEIDEA1
+T=The Director said the results would be transmitted to the Government's mainframe tonight.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+
+T=Which implies...
+W=OTT
+
+T=They're not yet!
+W=GRAFF
+C1A=GASP
+
+T=Yes! She's been giving us a hint!
+W=OTT
+C2A=HAPPY
+
+T=If we can find a way to change the Center's data before it gets transmitted...
+W=GRAFF
+C1A=THINK
+
+T=You'll be accepted!
+W=OTT
+
+T=This is cheating.
+W=GRAFF
+C1A=MEH
+
+T=Just this once! For a good cause.
+W=OTT
+C2A=ALRIGHT
+
+T=And probably very risky. Are you sure you want to go along with this?
+W=GRAFF
+
+T=Is there any other choice?
+W=OTT
+
+T=I guess not.
+W=GRAFF
+
+T=The only question is... Where do we start?
+W=OTT
+C2A=WONDER
+TEN=CH6_DAY3RESULTS_CHOICES
+
+
+
+#----------------------------------------------------
+#= Break into the school
+#----------------------------------------------------
+ID=CH6_CHOICE_BREAK
+T=Let's break into the Consc'.
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=SURPRISED
+
+T=You can't be serious!
+W=OTT
+
+T=The place is shut down and there are cameras all around.
+W=OTT
+
+T=Right...
+W=GRAFF
+C1A=SAD
+TEN=CH6_DAY3RESULTS_CHOICES
+IT=1
+
+#----------------------------------------------------
+ID=CH6_CHOICE_SHAY
+T=I know someone who can hack into computers...!
+W=GRAFF
+C1=GRAFF
+C1A=DISDAIN
+C2=OTT
+C2A=WONDER
+
+T=(...)
+
+T=Darn... She's not replying!
+W=GRAFF
+C1A=STUPID
+
+T=That's not normal...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Do we have another option?
+W=OTT
+TEN=CH6_DAY3RESULTS_CHOICES
+IT=1
+
+#----------------------------------------------------
+ID=CH6_CHOICE_BROK
+T=No choice. I'll call Brok.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=How would he help?
+W=OTT
+
+T=I'm not sure yet but it's worth a try.
+W=GRAFF
+C1A=MEH
+
+T=(Calls...)
+
+T=...Hello?
+W=BROK
+C3=BROK
+C3A=THINK
+
+T=Hi... Erm... I might need your...
+W=GRAFF
+SKIPEND=1
+
+T=Bad timing son. We're trying to reach some kind of bunker right now and...
+W=BROK
+C3A=TIRED
+SKIPEND=1
+
+T=Oh gosh! More are coming!
+W=BROK
+C3A=WORRIED
+
+T=(Punch noises)
+C3=NONE
+C1A=GASP
+C2A=SURPRISED
+
+T=(...)
+
+T=What's going on?... Looks like he's the one who needs help!
+W=OTT
+
+T=Oh, great...
+W=GRAFF
+C1A=STUPID
+C2A=SAD
+
+T=I have no idea what he's involved into but... My future is at stake!
+W=GRAFF
+C1A=SAD
+
+T=I know him. He'll be fine.
+W=GRAFF
+C1A=MEH
+
+T=If you say so...
+W=OTT
+
+T=Any another ideas?
+W=OTT
+TEN=CH6_DAY3RESULTS_CHOICES
+IT=1
+
+
+#----------------------------------------------------
+ID=CH6_CHOICE_INVENTORY
+T=My belongings...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SAD
+
+T=...?
+W=GRAFF
+C1A=THINK
+
+T=I know! This morning, in the mail...
+W=GRAFF
+C1A=GASP
+
+T=...There. An invoice from... "MISTER REKCAH".
+W=GRAFF
+C1A=THINK
+
+T=Rekcah? What a weird name.
+W=OTT
+C2A=WONDER
+
+T=It does sound suspicious.
+W=GRAFF
+
+T=And I get it now!
+W=GRAFF
+C1A=HAPPY
+
+T=Oh! Spelled backwards, it becomes...
+W=OTT
+C2A=NORMAL
+
+T=Hacker! Yeah!
+W=GRAFF
+
+T=What kind of hacker sends an invoice?!
+W=OTT
+C2A=WONDER
+
+T=Maybe one who wants additional work...
+W=GRAFF
+C1A=DISDAIN
+
+T=There's even an address here... "Only valid for a few days"
+W=GRAFF
+C1A=FRIENDLY
+
+T=That's silly.
+W=OTT
+C2A=NORMAL
+
+T=Maybe that's why he's not detected by the automated security system.
+W=GRAFF
+
+T=Sometimes the best solutions are the easiest ones!
+W=GRAFF
+
+T=Okay. It's worth a shot.
+W=OTT
+C2A=ALRIGHT
+
+T=Yeah. Besides, I'm curious to know what business my old man had with him.
+W=GRAFF
+C1A=MEH
+
+T=Let's check this out!
+W=OTT
+TEN=CH6_CHOICES_ACTIVATE
+
+
+#----------------------------------------------------
+#= Chapter 6 Ott
+#----------------------------------------------------
+ID=CH6_OTT_HACKER1
+T=Let's go meet that hacker!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+CONTEXT=Day 3 - Ott with Graff in the city
+
+#----------------------------------------------------
+ID=CH6_OTT_HACKER2
+T=There's gotta be a way to get that hacker to help.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=OTT
+C2A=WONDER
+
+T=I don't know...
+W=OTT
+
+T=Sorry. I'm starting to have a bad feeling about this.
+W=OTT
+C2A=DISAPPOINTED
+
+T=I won't give up now!
+W=GRAFF
+
+
+#----------------------------------------------------
+ID=CH6_OTT1
+T=I don't get it.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=OTT
+C2A=SAD
+
+T=Why would the Director give me a hint? Couldn't she change the results?
+W=GRAFF
+
+T=I guess she's got her "hands" tied.
+W=OTT
+C2A=WONDER
+
+T=Or maybe that's another trial specifically for you. Who knows.
+W=OTT
+C2A=OPPOSITE
+
+T=Do you have another solution?
+W=OTT
+
+T=Nope...
+W=GRAFF
+
+
+#----------------------------------------------------
+ID=CH6_OTT2
+T=I feel so tired... Exhausted... 
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=OTT
+C2A=SAD
+
+T=Maybe I should just let it go and start looking for a lousy job in the Slums...
+W=GRAFF
+
+T=You can't be serious! You're almost there!
+W=OTT
+C2A=ALRIGHT
+
+T=Besides, what do you have to lose?!
+W=OTT
+
+T=Dunno... Getting locked up in a cell?
+W=GRAFF
+C1A=TURN
+
+T=Look. If you don't do it for yourself... Do it for me.
+W=OTT
+C2A=HAPPY
+
+T=Because if you don't give it a try, I'll take that risk for you!
+W=OTT
+C2A=ALRIGHT
+
+T=Ott...
+W=GRAFF
+C1A=GASP
+
+#----------------------------------------------------
+ID=CH6_OTT3
+T=(I should stop complaining and focus...)
+W=GRAFF
+A=TURN
+MOOD=THINK
+
+
+
+#----------------------------------------------------
+ID=CH6_CALL_GRAFF_STORY280
+T=...
+W=BROK
+A=THINK
+CONTEXT=Various phone calls (or attempts)
+
+T=Come on... Reply!
+W=BROK
+A=READY
+
+T=I'm getting worried...
+W=BROK
+A=DOWN
+
+T=(Sigh)
+W=BROK
+TEN=INTERFACE_CALL_END
+
+
+
+#----------------------------------------------------
+ID=CH6_CALL_WES_STORY280
+T=...
+W=BROK
+A=READY
+
+T=Come on, old man! It's urgent!
+W=BROK
+TEN=INTERFACE_CALL_END
+
+
+
+
+#----------------------------------------------------
+ID=CH6_CALL_SHAY_STORY280
+T=Shay...
+W=BROK
+A=DOWN
+
+T=What are you up to?...
+W=BROK
+A=TIRED
+TEN=INTERFACE_CALL_END
+
+
+
+
+
+#----------------------
+ID=CH6_TO_BROK
+T=When leaving the police department...
+BVOICE=BROK
+CONTEXT=After the whole bunker scene, Brok is nervous
+
+T=I suddenly felt weirdly apprehensive.
+
+T=This whole investigation was coming to an end. I could feel it.
+
+T="Prepare yourself."
+
+T=These two words reverberated in my head.
+
+T=But I couldn't really grasp the reason.
+
+T=Were there any signs my mind caught?...
+
+T=In the meantime, I figured I should go home and check on Graff. I had no news since morning.
+
+T=Hopefully his day had been less eventful...
+TEN=PC05D_TO_BROK2
+
+
+
+
+#----------------------------------------------------
+ID=CH6_CALL_SIN_AFTER
+T=Dee is taking care of him.
+W=BROK
+A=THINK
+CONTEXT=Various phone calls (or attempts)
+
+
+#----------------------------------------------------
+ID=CH6_GRAFF_CALL_BROK_STORY270
+T=...
+W=GRAFF
+A=MEH
+
+T=No point insisting.
+W=GRAFF
+A=TURN
+
+T=We can handle this by ourselves!
+W=GRAFF
+A=READY
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+ID=CH6_GRAFF_CALL_KLAY
+T=Nah.
+W=GRAFF
+A=OPPOSITE
+
+T=Ott is with me. That's all the help I need.
+W=GRAFF
+A=DISDAIN
+
+#----------------------------------------------------
+ID=CH6_ENDING_FIGHTTOGETHER1
+T=Home, sweet home.
+W=BROK
+A=HAPPY
+CONTEXT=Ending "fight together" - after the big fight, they come back home
+TEN=PC01_FIGHTTOGETHER_LOOKBROK
+
+#----------------------------------------------------
+ID=CH6_ENDING_FIGHTTOGETHER2
+T=Brok...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=SAD
+
+T=There's something I need to tell you.
+W=GRAFF
+C2A=TORN
+
+T=You didn't pass.
+W=BROK
+C1A=MAYBE
+
+T=That's why you met that hacker.
+W=BROK
+
+T=How did you know?
+W=GRAFF
+C2A=GASP
+
+T=Call it a hunch.
+W=BROK
+C1A=THINK
+
+T=You're a good detective...
+W=GRAFF
+TEN=PC01_ENDING_FIGHTTOGETHER2B
+
+#----------------------------------------------------
+ID=CH6_ENDING_FIGHTTOGETHER3
+T=(Sigh) I'm so sorry.
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+C2=GRAFF
+C2A=SAD
+
+T=I guess... I'm responsible for this failure.
+W=BROK
+C1_EYESHUT=1
+
+T=No...
+W=GRAFF
+C2A=TORN
+
+T=You shouldn't worry.
+W=GRAFF
+
+T=I've been thinking and...
+W=GRAFF
+TEN=PC01_ENDING_OTTCOMES
+
+#----------------------------------------------------
+ID=CH6_ENDING_FIGHTTOGETHER4
+T=Ott?...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+C3=GRAFF
+C3A=GASP
+
+T=Your parents okay?
+W=BROK
+
+T=Yes...
+W=OTT
+C2A=WONDER
+
+T=Graff. The Director just called me.
+W=OTT
+C2A=DISAPPOINTED
+
+T=The situation in the Slums forced them to rush preparations.
+W=OTT
+
+T=I gotta move to the Drums. Now.
+W=OTT
+COMM=Move as in, quit the Slums and live forever in the Drums.
+
+T=...
+W=GRAFF
+
+T=Well...
+W=GRAFF
+C3A=SAD
+
+T=Good luck, Ott.
+W=GRAFF
+C3A=HAPPY
+
+T=Graff...
+W=OTT
+C2A=SAD
+
+T=I... I'm not sure...
+W=OTT
+
+T=I can't leave you... Leave my parents... 
+W=OTT
+C2A=DISAPPOINTED
+
+T=With everything that's happening?
+W=OTT
+C2A=SAD
+
+T=Ott!
+W=GRAFF
+C3A=ANGRY
+
+T=You have to go!
+W=GRAFF
+C3A=SAD
+
+T=This is your only chance to get out of this dump.
+W=GRAFF
+
+T=But...
+W=OTT
+C2A=DISAPPOINTED
+
+T=There's no but.
+W=GRAFF
+C3A=TORN
+
+T=We said we'd go together!
+W=OTT
+C3A=SAD
+
+T=We promised!
+W=OTT
+
+T=I... changed my mind.
+W=GRAFF
+
+T=Will you be alright?...
+W=OTT
+C2A=SAD
+
+T=It's not safe out there!
+W=OTT
+
+T=Nothing new.
+W=GRAFF
+C3A=SAD
+
+T=And I've got Brok. You've seen us, right?...
+W=GRAFF
+C3A=HAPPY
+
+T=...
+W=OTT
+C2A=DISAPPOINTED
+
+T=Leave it to us. We'll take care of the Slums.
+W=GRAFF
+C3A=READY
+
+T=Graff...
+W=OTT
+
+T=I...
+W=OTT
+COMM=Ott is almost crying
+
+T=I'll miss you...
+W=OTT
+C2A=SAD
+
+T=Just promise to visit me sometimes. Okay?
+W=GRAFF
+C3A=FRIENDLY
+
+T=Sure... I will.
+W=OTT
+
+T=Go ahead.
+W=GRAFF
+C3A=HAPPY
+
+T=...
+W=OTT
+
+T=Goodbye...
+W=OTT
+C2A=SAD
+TEN=PC01_ENDING_OTTGOES1
+
+
+
+#----------------------------------------------------
+ID=CH6_ENDING_FIGHTTOGETHER5
+T=Goodbye Ott...
+W=GRAFF
+C1=BROK
+C1A=HEARTBROKEN
+C2=GRAFF
+C2A=TORN
+TEN=PC01_FIGHTTOGETHER_MUSICFADE
+
+T=...
+W=GRAFF
+
+T=Graff...
+W=BROK
+
+T=I'll find a way to make you join the Drums. I swear.
+W=BROK
+C1A=READY
+TEN=PC01_FIGHTTOGETHER_MUSICBROK
+
+T=Listen...
+W=GRAFF
+
+T=When I fought with you...
+W=GRAFF
+C2A=TURN
+
+T=I never felt like this before.
+W=GRAFF
+TEN=
+
+T=I thought I would die so I gave it my best and...
+W=GRAFF
+
+T=I loved it.
+W=GRAFF
+C2A=READY
+
+T=That's when I realized.
+W=GRAFF
+C2A=MEH
+
+T=All this time...
+W=GRAFF
+
+T=I've been lying to myself.
+W=GRAFF
+
+T=I will stay in the Slums.
+W=GRAFF
+C2A=FRIENDLY
+
+T=What?...
+W=BROK
+C1A=SURPRISED
+
+T=This...
+W=GRAFF
+
+T=This is my destiny...
+W=GRAFF
+C2A=HAPPY
+
+T=To make the Slums a better place.
+W=GRAFF
+
+T=Graff...
+W=BROK
+C1A=TIRED
+
+T=Ya realize this is a dangerous path...?
+W=BROK
+
+T=I know.
+W=GRAFF
+C2A=TURN
+
+T=But these days... I've already faced certain death several times.
+W=GRAFF
+TEN=PC01_FIGHTTOGETHER_LOOKBROK3
+
+#----------------------------------------------------
+ID=CH6_ENDING_FIGHTTOGETHER6
+T=I'm not afraid anymore.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=READY
+
+T=You're gonna put all your dreams aside...?
+W=BROK
+
+T=They never were my dreams.
+W=GRAFF
+C2A=MEH
+
+T=You've always thought this would be better for me.
+W=GRAFF
+C2A=TURN
+
+T=I don't blame you but...
+W=GRAFF
+
+T=This is my own decision.
+W=GRAFF
+C2A=MEH
+
+T=Will you help me?
+W=GRAFF
+
+T=...
+W=BROK
+
+T=You bet I will!
+W=BROK
+C1A=ALRIGHT
+
+T=I still think you're making a hasty decision.
+W=BROK
+C1A=MAYBE
+
+T=I'm not.
+W=GRAFF
+
+T=Ha ha. If we were blood related...
+W=BROK
+C1A=HAPPY
+
+T=I'd say you've inherited this from me!
+W=BROK
+
+T=Maybe I did!
+W=GRAFF
+C2A=HAPPY
+
+T=I'll have to make you change your mind but...
+W=BROK
+C1A=MEH
+
+T=Don't count on it.
+W=GRAFF
+C2A=FRIENDLY
+
+T=For now...
+W=BROK
+C1A=MOCK
+
+T=Let's save the Slums.
+W=BROK
+
+T=Together.
+W=BROK
+
+T=...
+W=GRAFF
+C2A=SAD
+
+T=Thank you...
+W=GRAFF
+C2A=SOB
+
+T=For understanding.
+W=GRAFF
+
+T=Don't mention it.
+W=BROK
+
+T=Well, no time to waste!
+W=GRAFF
+C2A=READY
+
+T=Let's go!
+W=GRAFF
+
+T=Huh?
+W=BROK
+C1A=WONDER
+
+T=You mean... Now?
+W=BROK
+
+T=This city won't save itself!
+W=GRAFF
+
+T=Right!
+W=BROK
+C1A=COCKY
+TEN=PC01_FIGHTTOGETHER_RUN
+
+#----------------------------------------------------
+ID=CH6_ENDING_FIGHTTOGETHER_END
+
+T=I had never imagined this.
+BVOICE=BROK
+
+T=Graff... stayed with me.
+T=He chose this dangerous path...
+T=To help me everyday.
+T=Whether it's my detective (and handyman) job...
+T=Or to fight crime.
+T=Every day is a struggle...
+T=But he's enjoying this life anyway.
+T=As much as I do enjoy his company.
+T=I still feel there was so much he could have done in the Drums by using his intellect.
+T=In any case... He's brave and I could never be more proud of him.
+
+T=As for me...
+T=I missed the opportunity to get to the bottom of this whole case.
+T=Who was behind the pill shortage?
+T=Who controlled the Tribots? Why did they target me?
+T=I may never find out but I promised myself.
+T=I will avenge Dee.
+T=Because of my blunder a little girl has to grow up without her mother.
+T=If only I could go back and change things...
+T=For now...
+TEN=PC01_FIGHTTOGETHER_PICTURE
+T=We'll keep fighting.
+T=Together.
+TEN=PC01_FIGHTTOGETHER_ENDING
+
+
+
+#---------------------------------
+#= "Till end of time" ending
+#--------------------------------
+ID=CH6_TILLENDTIME_ENDING1
+T=...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=TURN
+TEN=CH6_TILLENDTIME_LOOKGRAFF
+CONTEXT="Till end of time" ending - Graff & Brok arrive in Shay's garage
+
+T=Come on. We need to enter.
+W=BROK
+COMM=They're in front of the time machine.
+
+T=You realize...
+W=GRAFF
+C2A=SAD
+T=...what you're saying?
+W=GRAFF
+
+T=Do you really think... it's possible?
+W=GRAFF
+
+T=You know Shay.
+W=BROK
+C1A=HAPPY
+
+T=If anyone can... She can.
+W=BROK
+C1A=ALRIGHT
+TEN=CH6_TILLENDTIME_LOOKDOOR
+
+T=...
+W=GRAFF
+C2A=TORN
+
+T=Darn... It's closed.
+W=BROK
+C1A=ANGRY
+
+T=Wait here.
+W=BROK
+
+#--------------------------------
+ID=CH6_TILLENDTIME_TALK
+T=...
+W=GRAFF
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=TORN
+
+T=(He's lost in his thoughts.)
+W=BROK
+MOOD=THINK
+
+#--------------------------------
+ID=CH6_TILLENDTIME_HITGRAFF2
+T=He's unconscious...
+W=BROK
+A=SURPRISED
+COMM=In case we hit Graff during that scene
+
+T=Why did I do this?!...
+W=BROK
+A=STUPID
+TEN=CH6_TILLENDTIME_HITGRAFF_GAMEOVER
+
+
+
+
+
+#------------------------------------------
+#= Brok comes back (SLUMER ending)
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER1
+T=You're here...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+COMM=Slumer (good) ending - Brok comes back after the big fight with Wes and sees Graff waiting for him
+
+T=Thank goodness.
+W=BROK
+C1A=HAPPY
+
+T=...
+W=GRAFF
+C2=GRAFF
+C2A=MEH
+
+T=That man...
+W=GRAFF
+C2A=TURN
+C1A=THINK
+
+T=You almost...
+W=GRAFF
+
+T=I know... I shouldn't have.
+W=BROK
+C1A=TIRED
+
+T=But...
+W=BROK
+
+T=Seeing you like this, inert on the ground...
+W=BROK
+C1A=MAYBE
+
+T=I couldn't help it.
+W=BROK
+C1A=READY
+
+T=I won't let anyone hurt you. Ever.
+W=BROK
+TEN=PC01_SLUMER_GRAFFTURNS
+
+T=Anyone but you...?
+W=GRAFF
+
+T=Huh?...
+W=BROK
+C1A=WONDER
+
+T=It's not intentional but...
+W=GRAFF
+
+T=...everything you do ends up having terrible consequences.
+W=GRAFF
+C2A=SAD
+TEN=PC01_SLUMER_MUSIC
+
+T=Today... I didn't pass.
+W=GRAFF
+C2A=TORN
+
+T=Oh no...
+W=BROK
+C1A=DOWN
+
+T=What happened?
+W=BROK
+C1A=TIRED
+
+T=I got a penalty.
+W=GRAFF
+C2A=SAD
+
+T=You weren't supposed to be a Drumer.
+W=GRAFF
+
+T=Me? A Drumer?...
+W=BROK
+
+T=Oh... I see...
+W=BROK
+C1A=STUPID
+
+T=What a fool.
+W=BROK
+
+T=You didn't tell me the truth. Again.
+W=GRAFF
+
+T=You're right. I didn't think this was important.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Two days ago I had to cheat and get access to the Dome for a case.
+W=BROK
+C1A=DOWN
+
+T=I never imagined...
+W=BROK
+
+T=...
+W=GRAFF
+TEN=PC01_SLUMER_GRAFFAWAY1
+
+
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER2
+T=That doesn't matter.
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=TORN
+
+T=How can you say that?
+W=BROK
+C1A=MAYBE
+
+T=I just shattered your dream.
+W=BROK
+C1A=TIRED
+
+T=Listen.
+W=BROK
+TEN=PC01_SLUMER_BROKCLOSER1
+
+T=I'll find a way.
+W=BROK
+C1A=READY
+
+T=There's always one.
+W=BROK
+
+T=Even if I have to cross through a room filled with deadly lasers again...
+W=BROK
+
+T=Yeah. I'll do it!
+W=BROK
+
+T=...
+W=GRAFF
+
+T=Always so optimistic...
+W=GRAFF
+
+T=You say you'll prevent anyone from hurting me.
+W=GRAFF
+
+T=But... You're looking at this the wrong way.
+W=GRAFF
+
+T=I don't need anyone else but myself to be miserable...
+W=GRAFF
+
+T=I'm a failure...
+W=GRAFF
+C2A=SOB
+
+T=That's not true and you know it.
+W=BROK
+C1A=ANGRY
+
+T=You're wrong.
+W=GRAFF
+
+T=Today... I did something... awful.
+W=GRAFF
+
+T=And... I'm afraid...
+W=GRAFF
+
+T=When you find out... You'll never want me again.
+W=GRAFF
+
+T=Whatever you've done... I've done worse. Bet on this!
+W=BROK
+C1A=MOCK
+
+T=Come on. Tell me.
+W=BROK
+C1A=READY
+TEN=PC01_SLUMER_WAIT1
+
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER3
+T=This...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=TURN
+
+T=Oh...
+W=BROK
+C1A=MAYBE
+
+T=It was supposed to be a surprise.
+W=BROK
+
+T=A surprise?...
+W=GRAFF
+
+T=When we moved here... Right after the accident.
+W=BROK
+
+T=I suddenly was responsible for you.
+W=BROK
+
+T=We left everything behind for this lousy place because of me.
+W=BROK
+
+T=I promised myself I would make you come back to the Drums.
+W=BROK
+C1A=READY
+
+T=But you couldn't start a new life with empty pockets.
+W=BROK
+C1A=THINK
+
+T=So... I've saved up.
+W=BROK
+
+T=For five years. 50 Unis per day transferred to that account.
+W=BROK
+
+T=Wait... 
+W=GRAFF
+C2A=GASP
+
+T=This money.... isn't Mom's?...
+W=GRAFF
+
+T=No.
+W=BROK
+C1A=MAYBE
+TEN=PC01_SLUMER_GRAFFAWAY2
+
+T=She opened this account for you but never deposited anything.
+W=BROK
+
+T=It may be hard to believe but...
+W=BROK
+
+T=Oh gosh...
+W=GRAFF
+C1A=THINK
+C2A=STUPID
+
+T=That makes it even worse...
+W=GRAFF
+C2A=SAD
+
+T=Your money...
+W=GRAFF
+C2A=TORN
+
+T=I... I've wasted it.
+W=GRAFF
+
+T=What?
+W=BROK
+C1A=SURPRISED
+
+T=After the results... I was devastated.
+W=GRAFF
+
+T=Ott and I found a solution which involved hacking into the Center's data.
+W=GRAFF
+
+T=So... The hacker?
+W=BROK
+C1A=THINK
+
+T=Yes.
+W=GRAFF
+
+T=I... gave him the money...
+W=GRAFF
+
+T=Then he turned against us... and sent the Squealers to capture us.
+W=GRAFF
+
+T=Ohhh... I hate them so much.
+W=BROK
+C1A=OPPOSITE
+
+T=I'm... (sobs)
+W=GRAFF
+C2A=SOB
+
+T=I'm so sorry...!
+W=GRAFF
+TEN=PC01_SLUMER_BROKCLOSER2
+
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER4
+T=Don't worry about it.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=GASP
+
+T=...
+W=GRAFF
+TEN=PC01_SLUMER_GRAFFTURNS2
+
+T=You're... not furious?
+W=GRAFF
+
+T=Well I can't say this is good news...
+W=BROK
+C1A=MAYBE
+
+T=But you shouldn't feel bad for this.
+W=BROK
+C1A=THINK
+
+T=You did what you thought was best.
+W=BROK
+C1A=READY
+
+T=It's just money. We can get that back.
+W=BROK
+
+T=So... You forgive me...
+W=GRAFF
+C2A=TURN
+
+T=Of course I do.
+W=BROK
+C1A=HAPPY
+
+T=Why?...
+W=GRAFF
+
+T=You shouldn't!
+W=GRAFF
+C1A=CONFUSED
+C2A=ANGRY
+
+T=I'm just a stupid crybaby... Weak...
+W=GRAFF
+C1A=THINK
+C2A=TORN
+
+T=You try your best and yet I constantly blame you for all my problems...
+W=GRAFF
+
+T=I'm despicable...
+W=GRAFF
+
+T=I don't deserve your forgiveness!
+W=GRAFF
+C2A=ANGRY
+
+T=Graff...
+W=BROK
+C1A=DOWN
+
+T=Why should you be so kind to me when there are so many people who deserve it more?!
+W=GRAFF
+C2A=SOB
+
+T=I wanna know!
+W=GRAFF
+
+T=Because...
+W=BROK
+TEN=CH6_STORY300_INITSLUMER4B
+
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER4B
+T=You're here.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=GASP
+
+T=You're there when I come back late and you're the first friendly contact I've had for a whole crappy day.
+W=BROK
+C1A=MAYBE
+
+T=You're there when we're sorting stale food to decide what we can make for dinner.
+W=BROK
+C1A=THINK
+
+T=You're there when you pretend you're playing games but you actually take a peek at what I'm doing.
+W=BROK
+C1A=MOCK
+
+T=Ever since that accident...
+W=BROK
+C1A=READY
+
+T=You've always been there.
+W=BROK
+
+T=It's all those small, insignificant details.
+W=BROK
+
+T=And whether you admit it or not... I know you care as well.
+W=BROK
+C1A=MAYBE
+
+T=I pretend to watch over you but...
+W=BROK
+
+T=It's the opposite.
+W=BROK
+C1A=HAPPY
+
+T=You're the only reason I wanna fight for this life.
+W=BROK
+C1A=HEARTBROKEN
+
+T=...
+W=GRAFF
+
+T=When I was your age... I've been through this myself.
+W=BROK
+C1A=MAYBE
+
+T=Grandpa told me those things. He made me who I am.
+W=BROK
+C1A=DISAPPOINTED
+
+T=That's why I won't let you sink!
+W=BROK
+C1A=READY
+
+T=You're brave. Hard working.
+W=BROK
+
+T=You've got everything needed to live and achieve whatever you choose to do.
+W=BROK
+
+T=All you need is to trust me and believe in yourself.
+W=BROK
+
+T=...
+W=GRAFF
+C2A=TORN
+
+T=I trust you...
+W=GRAFF
+
+T=Then you know what's left to do.
+W=BROK
+
+T=But...
+W=GRAFF
+C2A=TURN
+
+T=No but.
+W=BROK
+
+T=...Okay.
+W=GRAFF
+C2A=MEH
+TEN=PC01_SLUMER_BROKTOUCH
+
+  
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER5
+T=Huh...!
+W=GRAFF
+C1=BROK
+C1A=WONDER
+C2=GRAFF
+C2A=GASP
+COMM=Graff reacts to being touched. He hates that.
+
+T=Sorry... I just wanted to comfort you.
+W=BROK
+C1A=TIRED
+
+T=I know...
+W=GRAFF
+C2A=SAD
+
+T=I... I just can't stand it when someone makes physical contact with me.
+W=GRAFF
+C2A=TORN
+
+T=It's okay. I understand.
+W=BROK
+C1A=THINK
+
+T=Maybe someday... You'll trust me on this as well.
+W=BROK
+
+T=Well! Looks like I'll have to force that hacker to do his job.
+W=BROK
+C1A=ALRIGHT
+
+T=After all you still need to go to the Drums...
+W=BROK
+TEN=PC01_SLUMER_GRAFFTURNS3
+
+T=No!
+W=GRAFF
+C1A=CONFUSED
+C2A=ANGRY
+
+T=I don't want to.
+W=GRAFF
+C1A=SURPRISED
+
+T=Huh?...
+W=BROK
+C1A=WONDER
+
+T=You're not listening!
+W=GRAFF
+
+T=I won't go to the Dome!
+W=GRAFF
+
+T=Because...
+W=GRAFF
+C2A=TURN
+
+T=You couldn't be there.
+W=GRAFF
+
+T=I want to stay with you.
+W=GRAFF
+
+T=...
+W=BROK
+C1A=HEARTBROKEN
+
+T=Graff... This is a mistake.
+W=BROK
+
+T=Then it's my mistake. My choice!
+W=GRAFF
+C2A=ANGRY
+
+T=Please... Let me.
+W=GRAFF
+C2A=SAD
+
+T=If this is what you truly want...
+W=BROK
+C1A=THINK
+
+T=Alright.
+W=BROK
+C1A=READY
+
+T=Gotta admit... That makes me happy.
+W=BROK
+C1A=HAPPY
+
+T=After all this I'm still curious why you would want to lead such a terrible life.
+W=BROK
+C1A=WONDER
+
+T=It's not!
+W=GRAFF
+C2A=MEH
+
+T=You've always protected me. Provided me shelter and food.
+W=GRAFF
+
+T=I don't regret one single moment spent here.
+W=GRAFF
+C2A=TURN
+
+T=Even those times we argued to each other?
+W=BROK
+C1A=MAYBE
+
+T=Yeah. Even those.
+W=GRAFF
+
+T=Because it made me understand a lot of things.
+W=GRAFF
+
+T=Thanks to you I found out who I really am.
+W=GRAFF
+C2A=TORN
+
+T=And that makes you the best detective there ever was.
+W=GRAFF
+C2A=HAPPY
+
+T=Well I don't know if I deserve all this praise.
+W=BROK
+
+T=That makes two of us!
+W=GRAFF
+
+T=Ah ah! Oh, man. You're right.
+W=BROK
+C1A=HAPPY
+
+T=It's really time we both stop feeling sorry for ourselves.
+W=BROK
+TEN=PC01_SLUMER_WAIT2
+
+
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER6
+T=...?
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=HAPPY
+
+T=That's weird...
+W=BROK
+C1A=THINK
+C2A=MEH
+
+T=Something's tickling in my pocket...
+W=BROK
+TEN=PC01_SLUMER_ENVELOPE
+
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER7
+T=An envelope?
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T="Open when desperate"?...
+W=BROK
+
+T=...!
+W=BROK
+C1A=SURPRISED
+C2A=SURPRISED
+TEN=PC01_SLUMER_REMOVEPIC
+
+
+#------------------------------------------
+ID=CH6_STORY300_INITSLUMER8
+T=What just happened?...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=Dunno...
+W=BROK
+
+T=Weren't you... holding something?...
+W=GRAFF
+
+T=I was?...
+W=BROK
+C1A=WONDER
+
+T=Well... That's weird. Now I can't remember.
+W=GRAFF
+C2A=STUPID
+
+T=Ha ha.
+W=BROK
+C1A=HAPPY
+
+T=It's comforting to know I'm not the only one losing my memory!
+W=BROK
+C2A=MEH
+
+T=Yeah. It's much better to lose our memories together!
+W=GRAFF
+C2A=HAPPY
+
+T=Definitely!
+W=BROK
+
+T=Now! What would you say about making new memories?
+W=BROK
+C1A=READY
+
+T=You mean...?
+W=GRAFF
+C2A=MEH
+
+T=Come on! Follow me.
+W=BROK
+TEN=PC01_SLUMER_LEAVE
+
+T=Where are we going?
+W=GRAFF
+C2A=GASP
+
+T=To buy some good food! Our fridge is still as empty as my wallet, ya know.
+W=BROK
+
+T=And when we're back...
+W=BROK
+
+T=I shall cook you the best meal you've ever had!
+W=BROK
+
+T=Oooh... I like that idea!
+W=GRAFF
+C2A=HAPPY
+
+T=I thought you had no money left?
+W=GRAFF
+C2A=THINK
+
+T=Let's just say... This day wasn't so worthless after all.
+W=BROK
+C1A=ALRIGHT
+
+T=Oh and...
+W=BROK
+C1A=HAPPY
+
+T=Lemme get you a surprise on the way.
+W=BROK
+C1A=READY
+
+T=A good one?
+W=GRAFF
+C2A=DISDAIN
+
+T=An excellent one!
+W=BROK
+TEN=PC01_SLUMER_LEAVE3
+
+
+#------------------------------------------
+ID=CH6_SLUMER_END1
+T=Ladies and gentlemen.
+BVOICESP=VARIOUS
+CONTEXT=Brok bought tickets for the music band Graff wanted  (and invited Ott too)
+
+T=Please welcome the infamous band you've been waiting for.
+BVOICESP=VARIOUS
+
+T=The MasterTweaks!
+BVOICESP=VARIOUS
+TEN=PC01_SLUMER_PICTURE1
+
+T=I can't thank you enough for buying those tickets!
+W=GRAFF
+C1=GRAFF
+C1A=HAPPY
+C2=OTT
+C2A=HAPPY
+C4=BROK
+C4A=HAPPY
+
+T=Yeah! Thank you Mister Brok!
+W=OTT
+
+T=Don't mention it, kiddos.
+W=BROK
+
+T=So... When will you move, Ott?
+W=GRAFF
+C1A=FRIENDLY
+C2A=NORMAL
+C4=NONE
+
+T=Tomorrow.
+W=OTT
+C2A=WONDER
+
+T=Actually... I don't know.
+W=OTT
+C2A=DISAPPOINTED
+
+T=If you're staying here... Then...
+W=OTT
+
+T=Ott. You have to go!
+W=GRAFF
+C1A=TURN
+
+T=You've worked so hard for this!
+W=GRAFF
+
+T=So have you. What changed?
+W=OTT
+C2A=SAD
+
+T=I just realized...
+W=GRAFF
+
+T=My place is here.
+W=GRAFF
+C1A=FRIENDLY
+
+T=...
+W=OTT
+
+T=Hey, that doesn't mean we can't work together!
+W=GRAFF
+C1A=HAPPY
+
+T=Being on both sides, we can collaborate to better understand the world and make it better.
+W=GRAFF
+C1A=READY
+
+T=Maybe you're right.
+W=OTT
+C2A=NORMAL
+
+T=Will you be okay?
+W=OTT
+
+T=No worries. Brok and I can watch on each other.
+W=GRAFF
+C1A=HAPPY
+
+T=(Sigh) Alright...
+W=OTT
+C2A=DISAPPOINTED
+
+T=I'm gonna get us some drinks!
+W=OTT
+C2A=HAPPY
+
+T=Good idea!
+W=GRAFF
+
+T=Hot, flowing water for me!
+W=BROK
+C4=BROK
+C4A=MOCK
+
+T=Sure!
+W=OTT
+TEN=PC01_SLUMER_LEAVE4
+
+#------------------------------------------
+ID=CH6_SLUMER_END2
+T=He'll be fine.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GRAFF
+C2A=MEH
+
+T=I know.
+W=GRAFF
+
+T=Say...
+W=BROK
+C1A=THINK
+
+T=Tomorrow I'll need to make some moolah.
+W=BROK
+
+T=Now that things have settled down, I'm back to my usual activities.
+W=BROK
+
+T=What would you say of assisting me?
+W=BROK
+
+T=For real?!
+W=GRAFF
+C2A=GASP
+
+T=Well... You know how this is. Clearly not as exciting as you may think.
+W=BROK
+C1A=WONDER
+
+T=Usually more of a bunch of tiring tasks.
+W=BROK
+
+T=That doesn't matter.
+W=GRAFF
+C2A=HAPPY
+
+T=I can't wait!
+W=GRAFF
+
+T=Great.
+W=BROK
+C1A=HAPPY
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=Graff... There's...
+W=BROK
+
+T=One last thing I've been hiding from you.
+W=BROK
+C1A=DOWN
+
+T=And I feel I can never gain your full trust until I tell you...
+W=BROK
+
+T=You've still got family.
+W=BROK
+
+T=Thanks. I'm glad you're here too.
+W=GRAFF
+
+T=No. I mean...
+W=BROK
+C2A=MEH
+
+T=A living person in your mother's family.
+W=BROK
+C1A=DISAPPOINTED
+
+T=What...?
+W=GRAFF
+C2A=GASP
+
+T=There's a reason I never told you about this but...
+W=BROK
+
+T=Oh well.
+W=BROK
+
+T=His name is...
+W=BROK
+
+T=No.
+W=GRAFF
+C2A=TURN
+
+T=No?...
+W=BROK
+C1A=THINK
+
+T=I don't wanna know.
+W=GRAFF
+C2A=MEH
+
+T=I trust your judgement.
+W=GRAFF
+
+T=You're all the family I need.
+W=GRAFF
+C2A=HAPPY
+
+T=...
+W=BROK
+C1A=HEARTBROKEN
+
+T=And you're mine.
+W=BROK
+C1A=READY
+
+T=Thanks kiddo.
+W=BROK
+C1A=MAYBE
+
+T=Thanks... for being here.
+W=BROK
+C1A=MAYBE
+C1_EYESHUT=1
+
+T=(Applause sounds)
+BVOICESP=VARIOUS
+TEN=PC01_SLUMER_ENDING
+
+
+###############################################
+# PROOFREAD - jblaker - 16/08/2019
+###############################################
+
+
+
+#----------------------
+ID=CH6_GRAFF_HITOTT3
+T=...!
+W=GRAFF
+A=GASP
+
+T=Oh... N... No!...
+W=GRAFF
+A=TORN
+
+T=I've... turned evil... Argh...
+W=GRAFF
+TEN=DAY3_OTT_GAMEOVER1
+
+T=Can't... breathe...
+W=GRAFF
+A=CHOKE
+
+T=Help... (Cough)
+W=GRAFF
+A=CHOKE
+TEN=DAY3_OTT_GAMEOVER2
+CONTEXT=When Graff hits Ott
+
+
+
+
+
+
+#----------------------------------------------------
+#While escaping bots to enter bunker
+ID=CH6_CALL_STORY255
+T=No time for this!...
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+#While inside bunker
+ID=CH6_CALL_STORY260
+T=Phone calls don't go through here...
+W=BROK
+A=STUPID
+
+

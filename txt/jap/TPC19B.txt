@@ -1,0 +1,1714 @@
+#-------------------------------
+#=BUNKER MAIN ROOM
+#-------------------------------
+
+#----- Interactions --------
+# A screen on the floor
+PC_FOOTSCREEN=スクリーン
+PC_THISWAY=奥へ続く道
+# Kinda like a screen the player can use to see what's happening on the outside of the bunker
+PC_FRAME=フレーム
+PC_TRIBOTS=トライボット
+PC_WALL=壁
+PC_CONTROLPANEL=コントロールパネル
+PC_FURNITURE=家具
+PC_LITTLEBOX=小箱
+
+
+#----- Choices / Items --------
+GOT_BATTERY=小箱を手に入れた！
+
+#----- Topics --------
+PC19B_CHOICE_OFF=何がおかしいか？
+PC19B_CHOICE_TARGET=トライボットの行動
+PC19B_CHOICE_PILLS=薬の配給不足
+
+INTERROGATION_GHERKIN=ゲルキン博士は何を隠しているか？
+INTERROGATION_TRIANGLE=政府の高官は何人？
+
+PC19B_CHOICE_LETBROK=自分で電源を切ってくる
+PC19B_CHOICE_LETDEE=ディーに任せる
+PC19B_CHOICE_FIGHT=トライボットと戦う
+PC19B_DOOR_CHOICE=地下壕を出てトライボットと戦いますか？
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+# *****************************************************************
+# CONTEXT - Dee has tied up Dr. Gherkin to interrogate him. In this room a button can be pushed to do a shock to whoever is tied up so she uses that to interrogate him.
+# *****************************************************************
+#----------------------
+#= Dr. Gherkin
+#----------------------
+# Brok                                 
+PC19B_GHERKIN1-1=意識を失ってる…
+# Brok                                 
+PC19B_GHERKIN1-2=あの女イカレてやがんな！
+# Dee                                 
+PC19B_GHERKIN1-3=おい！！！
+# Brok                                 
+PC19B_GHERKIN1-4=おっと…。お前に聞こえちまうほど大声で言ったっけか…？
+#----------------------------------------------------
+
+#----------------------
+#= Dr. Gherkin
+#----------------------
+# Brok                                 
+#Brok presses the button
+PC19B_BUTTON1-1=…
+# Brok                                 
+PC19B_BUTTON1-2=まだ目を覚まさねえな
+# Dee                                 
+PC19B_BUTTON1-3=気をつけろよ。死んじまったら何の役にも立たないんだから
+#----------------------------------------------------
+# Brok                                 
+PC19B_BUTTON2-1=…
+#----------------------------------------------------
+# Dee                                 
+PC19B_BUTTON3-1=やめろ！ 奴を殺す気か！
+# Brok                                 
+PC19B_BUTTON3-2=けどよぉ…。ボタン押すのって楽しいな！
+# Dee                                 
+PC19B_BUTTON3-3=自分の事を棚上げしてアタシがイカレてるって？！
+#----------------------------------------------------
+# Dee                                 
+#Brok kills Dr. Gherkin
+PC19B_GHERKIN_DEAD1-1=…あぁなんて事
+# Brok                                 
+PC19B_GHERKIN_DEAD1-2=おっと
+# Dee                                 
+PC19B_GHERKIN_DEAD1-3=さっき警告しただろ！ これで真実は永遠に闇の中だぞ！
+# Brok                                 
+PC19B_GHERKIN_DEAD1-4=そいつはその…残念…だよな？
+# Dee                                 
+PC19B_GHERKIN_DEAD1-5=お前、人を一人殺したんだぞ！ しかもお前が護衛する筈だった相手をだ！
+# Brok                                 
+PC19B_GHERKIN_DEAD1-6=あぁ…。ダメだダメだダメだ！
+# Brok                                 
+PC19B_GHERKIN_DEAD1-7=大金払ってくれる約束してたってのに！
+# Brok                                 
+PC19B_GHERKIN_DEAD1-8=起きろ！ 起きろよ！
+#----------------------------------------------------
+
+#----------------------
+#= Door Bots
+#----------------------
+# Brok                                 
+#Trying to open the door of the room which is filled with Tribots
+PC19B_DOORBOTS1-1=えっと…
+# Brok                                 
+PC19B_DOORBOTS1-2=やってみたくはあるんだが…。でも一度でもやっちまうと結末に後悔しそうでならねえな
+#----------------------------------------------------
+# Brok                                 
+PC19B_DOORBOTS2-1=耐えろ、俺…！ 開けちゃいけねえ…
+#----------------------------------------------------
+# Dee                                 
+PC19B_DOORBOTS3-1=…！
+# Dee                                 
+PC19B_DOORBOTS3-2=お前何しやがった！
+# Brok                                 
+PC19B_DOORBOTS3-3=えっと…。やっちまったか？
+# Dee                                 
+PC19B_DOORBOTS3-4=お前がやらかした事だ。尻拭いぐらい自分でやりな
+# Brok                                 
+PC19B_DOORBOTS3-5=こんなの楽勝だぜ！ 見てろって！
+#----------------------------------------------------
+# Brok                                 
+#Winning a fight against them
+PC19B_DOORBOTS_WIN-1=(はぁ、はぁ) ほらな…言っただろ…！
+# Dee                                 
+PC19B_DOORBOTS_WIN-2=…
+# Dee                                 
+PC19B_DOORBOTS_WIN-3=見事だ。随分大した腕っぷしの持ち主みたいだな
+# Brok                                 
+PC19B_DOORBOTS_WIN-4=ハハッ！ 機械なんかに負けてたまるかよ！
+#----------------------------------------------------
+# Dee                                 
+PC19B_DOORBOTS_AFTER-1=おい！
+# Dee                                 
+PC19B_DOORBOTS_AFTER-2=何か忘れ物をしてないか？
+# Brok                                 
+PC19B_DOORBOTS_AFTER-3=この部屋を調べておきたい
+# Dee                                 
+PC19B_DOORBOTS_AFTER-4=そりゃ名案だ。けどそんなやり方はないだろ
+# Dee                                 
+PC19B_DOORBOTS_AFTER-5=隠れてな。アタシがロボットの電源を切ってきてやるから
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_DISABLE-1=了解だ。一つ残らず電源落としてきてやるよ
+#----------------------------------------------------
+# Brok                                 
+PC19B_DOORBOTS_FIGHTANYWAY-1=隠れてろだって？！
+# Brok                                 
+PC19B_DOORBOTS_FIGHTANYWAY-2=おいおいそりゃねえだろ！ 俺が片付けてやるよ
+# Dee                                 
+PC19B_DOORBOTS_FIGHTANYWAY-3=お前正気か…
+# Dee                                 
+PC19B_DOORBOTS_FIGHTANYWAY-4=あぁもう言うまでもないな。好きにすればいい
+# Dee                                 
+PC19B_DOORBOTS_FIGHTANYWAY-5=けど後でアタシに助けを求めたりするなよ！
+# Brok                                 
+PC19B_DOORBOTS_FIGHTANYWAY-6=俺が？ 助けを求めるって？
+# Brok                                 
+PC19B_DOORBOTS_FIGHTANYWAY-7=まぁ黙って座って見てろって！
+#----------------------------------------------------
+# Brok                                 
+PC19B_DOORBOTS_DEEDISABLE-1=頼んだぜ
+#----------------------------------------------------
+# Dee                                 
+PC19B_DOORBOTS_DEE-1=ほら。もう安全だ
+# Brok                                 
+PC19B_DOORBOTS_DEE-2=助かったぜ。一つ借りが出来ちまったな！
+# Dee                                 
+PC19B_DOORBOTS_DEE-3=脱出する方法を探してくれ。そのためにやったんだ
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_BROK-1=そらよっと！
+# Dee
+PC19B_DOORBOTS_BROK-2=フン
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+
+#----------------------
+#= Screen
+#----------------------
+# Brok                                 
+PC19B_SCREEN1-1=呑気にスカイボールの試合中継なんぞ見てても、この状況が何とかなるワケでもねえな
+#----------------------------------------------------
+
+#----------------------
+#= Rooms
+#----------------------
+# Brok                                 
+PC19B_GRAFFROOMS1-1=道が塞がってるな
+#----------------------------------------------------
+# Brok                                 
+PC19B_KLAYROOMS1-1=こっちには行けねえな…
+#----------------------------------------------------
+
+#----------------------
+#= Tribots
+#----------------------
+# Brok                                 
+PC19B_TRIBOTS1-1=にしても分かんねえな。あのロボットども、俺のガサガサの肌の何をそう気に入ってるんだ？
+#----------------------------------------------------
+# Brok
+PC19B_TRIBOTS1_ALTERNATIVE-1=見てるだけで胸糞悪くなるぜ
+#----------------------------------------------------
+
+#----------------------
+#= Door A & B
+#----------------------
+# Brok                                 
+PC19B_DOOR1-1=そりゃ、こっから外に出られるだろう
+# Brok                                 
+PC19B_DOOR1-2=何百体も殺人ロボットがすぐ外で待ち構えていなければ、のハナシだが
+#----------------------------------------------------
+# Dee                                 
+PC19B_DOOR2-1=待て！
+# Dee                                 
+PC19B_DOOR2-2=何の準備もなしにここから出るのは愚策じゃないのか？
+# Dee                                 
+PC19B_DOOR2-3=あんな大軍を前に勝ち目があると思っているのか？
+#----------------------------------------------------
+# Brok                                 
+PC19B_DOOR_NO-1=そうだな…。自殺行為以外の何物でもねえ
+#----------------------------------------------------
+# Brok                                 
+PC19B_DOOR_GO-1=もう他に方法がねえだろ！
+# Dee                                 
+PC19B_DOOR_GO-2=いいだろう
+# Dee                                 
+PC19B_DOOR_GO-3=けど、アタシはまだ諦めたわけじゃないからな！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Alternative to go out of the room - we decide to fight all the bots outside
+# *****************************************************************
+# Brok                                 
+PC19B_DOOR_YES3-1=ディーはゲルキン博士と一緒に解決策を模索していたが…
+# Brok                                 
+PC19B_DOOR_YES3-2=残念ながら上手くいかなかった
+# Brok                                 
+PC19B_DOOR_YES3-3=周りを家探ししている間に、ドクターは妙な事を言っていた
+# Brok                                 
+PC19B_DOOR_YES3-4=例えば…「科学の領域では、卵はループのシンボルだ」とかなんとか
+# Brok                                 
+PC19B_DOOR_YES3-5=状況に退屈してた俺は、何となく博士が言った事をメモしていた
+# Brok                                 
+PC19B_DOOR_YES3-6=結局、俺たちは博士を地下壕に残していく事にした…
+# Brok                                 
+PC19B_DOOR_YES3-7=…そして人生最大の危機に向けて覚悟を決めた…
+# Brok                                 
+PC19B_DOOR_YES3-8=…俺たちの命が懸かった戦いに向けて
+# Brok                                 
+PC19B_DOOR_YES3-9=準備はいいか？
+# Dee                                 
+PC19B_DOOR_YES3-10=夫を助ける準備の事？ これ以上ないほど準備したさ
+# Brok                                 
+PC19B_DOOR_YES3-11=わかった
+# Brok                                 
+PC19B_DOOR_YES3-12=3…
+# Brok                                 
+PC19B_DOOR_YES3-13=2…
+# Brok                                 
+PC19B_DOOR_YES3-14=1…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+#----------------------
+#= Furniture
+#----------------------
+# Brok                                 
+PC19B_FURNITURE_BEFORE1-1=ふむ…！ 俺の目が狂ってるじゃなけりゃ…中に食い物が入ってるぞ！
+# Brok                                 
+PC19B_FURNITURE_BEFORE1-2=けど届かねえな
+#----------------------------------------------------
+# Brok                                 
+PC19B_FURNITURE_MOVE-1=コイツを動かしてみるか
+#----------------------------------------------------
+# Brok                                 
+PC19B_FURNITURE_MOVE2-1=よっしゃ！
+#----------------------------------------------------
+# Brok                                 
+PC19B_FURNITURE_AFTER1-1=あぁくそ…。閉まってるな
+#----------------------------------------------------
+# Brok                                 
+PC19B_FURNITURE_EMPTY-1=カラッポだな
+#----------------------------------------------------
+# Brok                                 
+PC19B_FURNITURE_BREAK-1=おっと！ こりゃ…偶然壊れちまった！
+# Dee                                 
+PC19B_FURNITURE_BREAK-2=偶然、ねぇ…
+# Brok                                 
+PC19B_FURNITURE_BREAK-3=その…腐っちまう前に喰っちまった方がいいだろ！
+#----------------------------------------------------
+
+#----------------------
+#= Control panel
+#----------------------
+# Brok                                 
+PC19B_CONTROLPANEL_BEFORE1-1=こりゃ見たところワイヤーか…？ 多分コイツの後ろには何ぞ複雑な機械でもあるんだろうな
+#----------------------------------------------------
+# Dee                                 
+PC19B_CONTROLPANEL_OTHERS-1=おい、待て！
+# Dee                                 
+PC19B_CONTROLPANEL_OTHERS-2=自分が何をしてるのか分かってるのか？
+# Brok                                 
+PC19B_CONTROLPANEL_OTHERS-3=いや、よく分からん
+# Dee                                 
+PC19B_CONTROLPANEL_OTHERS-4=(はぁ…)
+#----------------------------------------------------
+# Brok                                 
+PC19B_CONTROLPANEL1-1=ふむ…
+# Brok                                 
+PC19B_CONTROLPANEL1-2=ドクター。ちょっと手伝ってくれ
+# Brok                                 
+PC19B_CONTROLPANEL1-3=この機械が何なのか知ってるか？
+# Gherkin                                 
+PC19B_CONTROLPANEL1-4=…
+# Gherkin                                 
+PC19B_CONTROLPANEL1-5=ここからではよく見えないのだ。どんな見た目か説明してくれんかね？
+# Brok                                 
+PC19B_CONTROLPANEL1-6=なんか大量に…卵っぽいものがあるな
+# Gherkin                                 
+PC19B_CONTROLPANEL1-7=それはまず間違いなく地下壕の装備のコントロールパネルだろう
+# Brok                                 
+PC19B_CONTROLPANEL1-8=装備って、どんなのだ？
+# Gherkin                                 
+PC19B_CONTROLPANEL1-9=電気…冷蔵庫…シールド…
+# Dee                                 
+PC19B_CONTROLPANEL1-10=シールド…？
+# Gherkin                                 
+PC19B_CONTROLPANEL1-11=無論だとも！ この施設は地下壕だぞ
+# Gherkin                                 
+PC19B_CONTROLPANEL1-12=外敵から身を守るために建造された施設だ
+# Dee                                 
+PC19B_CONTROLPANEL1-13=今まさにそういう状況だな！ 外敵がスグ外にウジャウジャいる！
+# Gherkin                                 
+PC19B_CONTROLPANEL1-14=ん…？
+# Gherkin                                 
+PC19B_CONTROLPANEL1-15=あぁ、そうだな！
+# Brok                                 
+PC19B_CONTROLPANEL1-16=よし、コイツを使って奴らを片付けちまおうぜ！
+# Gherkin                                 
+PC19B_CONTROLPANEL1-17=ざ、残念だが…それは出来ん
+# Gherkin                                 
+PC19B_CONTROLPANEL1-18=知ってのとおり、シールドはロボットの侵入を食い止めるだけで、攻撃には使えんのだよ
+# Dee                                 
+PC19B_CONTROLPANEL1-19=不十分だな。奴らを電子的に行動不能に陥らせるか、物理的にダメージを与える手段が必要だ
+# Brok                                 
+PC19B_CONTROLPANEL1-20=上手く使うにはもうちぃと考えなきゃならねえな
+#----------------------------------------------------
+# Brok                                 
+PC19B_CONTROLPANEL2-1=…
+# Dee                                 
+PC19B_CONTROLPANEL2-2=待て！ 何やってるんだ？
+# Brok                                 
+PC19B_CONTROLPANEL2-3=ちょいとワイヤーをちょん切ってだな…
+# Dee                                 
+PC19B_CONTROLPANEL2-4=うわ！ 何てことするんだ！
+# Dee                                 
+PC19B_CONTROLPANEL2-5=もうそいつに触るのは禁止だ！
+# Brok                                 
+PC19B_CONTROLPANEL2-6=おい！ お前いつから俺の母ちゃんになったんだよ。ガミガミ言うなよ。ちょっと試してみるだけさ
+# Dee                                 
+PC19B_CONTROLPANEL2-7=好きにしろ。だが、続けるならアンタの顔面にアタシの警棒を喰らわせてやるよ
+# Brok                                 
+PC19B_CONTROLPANEL2-8=冗談の通じねえヤツだな
+#----------------------------------------------------
+# Brok                                 
+PC19B_CONTROLPANEL_AFTER-1=コイツはドクターに任せるとしよう
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKIN_BEFORECONTROLPANEL-1=大丈夫か？
+# Gherkin                                 
+PC19B_GHERKIN_BEFORECONTROLPANEL-2=私を解放してくれたらもっと楽になるのだが
+# Brok                                 
+PC19B_GHERKIN_BEFORECONTROLPANEL-3=俺たちがここを離れる前に解放するよ。約束する
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL1-1=なぁドクター。あんたあのコントロールパネルを使えるんじゃないか？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL1-2=よく分からない…
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL1-3=近くでよく調べてみないと何とも言えん！
+# Dee                                 
+PC19B_GHERKIN_CONTROLPANEL1-4=そうやって逃げようとしてるんじゃないだろうな？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL1-5=…頼む！
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL1-6=俺からも頼むよ。博士を解放しよう、ディー。きっと役に立ってくれる
+# Dee                                 
+PC19B_GHERKIN_CONTROLPANEL1-7=…
+# Dee                                 
+PC19B_GHERKIN_CONTROLPANEL1-8=わかった。けど逃げるなよ！
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL1-9=あんな大量のロボットが待ち構えている場所に逃げ込むのかね？ 私は自殺志願者ではないぞ！
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL2-1=で…？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL2-2=このパネルがどうしてこんな特徴的な形状をしているか考えた事があるかね？
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL2-3=いいや。けどご高説を長々と聞かなきゃならなくなる気がするな
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL2-4=科学の世界では、卵はループのシンボルなのだよ
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL2-5=容器の中でエネルギーの入出力が循環し、ループ状の流れを形成しておる
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL2-6=なるほど…。で、それが何の役に立つんだ？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL2-7=少々変更を加えた
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL2-8=マジかよ！ こんな短時間でか？
+# Gherkin                                 
+#This is random scientific blah blah, don't search any meaning and translate how you want
+PC19B_GHERKIN_CONTROLPANEL2-9=蓄電池の性質を変更するために極性操作器の非中性構造体を反転させた
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL2-10=それつまりどういう事だ…？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL2-11=シールドは今、入り口の周囲にエネルギーを発生させられるようになっておる
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL2-12=今から試してみる。効果の程を確かめてくれるか？
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL2-13=了解だ
+#----------------------------------------------------
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECK1-1=1…2…3…
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECK2-1=…
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECK2-2=なんか…入り口の周りに青い光が見えるな…
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECK2-3=それだけか？
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECK2-4=ロボットはどうなった？
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECK2-5=どうもなってないぞ
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECK2-6=なんという…
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECK2-7=残念ながらこの手は使えそうにない
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECK2-8=おい、まだ始めたばっかりだろ！ 最初にしちゃ上出来じゃねえか！
+#----------------------------------------------------
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-1=もうお終いだ…。我々は永遠にこの場所に閉じ込められてしまったのだ…
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL3-2=ねえよ！ 道がねえなら戦ってでも無理矢理切り開くまでだ！
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL3-3=さっきのお前さんのアイデアって、一体何がいけなかったんだ？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-4=この機器を用いれば小規模なパワーフィールドを生成出来るという確信があった…
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-5=入り口のすぐ隣にあるパワーコンテナに伝達するには十分な出力だと思ったのだ
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL3-6=あのピラミッド型のやつか？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-7=そうだ。そうすれば、パワーコンテナ内部に閉鎖回路が形成され、大きな衝撃波を放つはずだ
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL3-8=おい！ それ最高のアイデアじゃねえか！ やっちまおうぜ！
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-9=先ほど試しただろう！ 結果は見てのとおりだ
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-10=生成したパワーフィールドが短すぎて、パワーコンテナに届かんのだ
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL3-11=何かこう、出力を上げる方法とかあるだろ
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-12=必要な素材があれば、出来そうだ
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-13=だが、この場所で手に入るのか？
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL3-14=正確には何が必要なんだ？
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-15=分からない…
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-16=おそらくは…発電機の類だろうか…？
+# Brok                                 
+PC19B_GHERKIN_CONTROLPANEL3-17=俺が取ってきてやるよ！
+# Gherkin                                 
+PC19B_GHERKIN_CONTROLPANEL3-18=私の作戦にあまり期待しないでくれよ…
+#----------------------------------------------------
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECKB1-1=1…2…3…
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECKB2-1=おいマジかよ！ やりやがったぞ！！
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECKB2-2=本当か？！
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECKB2-3=ああ！ ロボット共はみんなキレイに掃除されちまったぜ！
+# Dee                                 
+PC19B_GHERKIN_FRAMECHECKB2-4=ついにやったな。さぁ一分一秒無駄に出来ないよ！
+# Dee                                 
+PC19B_GHERKIN_FRAMECHECKB2-5=行くぞ、ブロク！
+#----------------------------------------------------
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECKB3-1=こら、私を忘れて行かないでくれ！
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECKB3-2=ディー！ まさかお前…
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECKB3-3=私はまだ閉じ込められているぞ！
+# Dee                                 
+PC19B_GHERKIN_FRAMECHECKB3-4=心配するなって。コイツは地下壕だ。必要な生活物資はごまんとある
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECKB3-5=し、しかし…！
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECKB3-6=おいおい。この期に及んでまだ何ぞイカレた事企んでるんじゃねえよな？
+# Dee                                 
+PC19B_GHERKIN_FRAMECHECKB3-7=彼とまだ話が済んでない
+# Dee                                 
+#Here she addresses the doc
+PC19B_GHERKIN_FRAMECHECKB3-8=用事が済んだらすぐに迎えに来る
+# Gherkin                                 
+PC19B_GHERKIN_FRAMECHECKB3-9=あぁ…。いつになったらこの悪夢は終わるのだ
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECKB3-10=(はぁ…)
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECKB3-11=わかった…。確かにここなら博士は安全だな
+# Brok                                 
+PC19B_GHERKIN_FRAMECHECKB3-12=行こう
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKIN_BATTERY-1=おいドクター。このなんかよく分かんねえ装置は役に立ちそうか？
+# Gherkin                                 
+PC19B_GHERKIN_BATTERY-2=…
+# Gherkin                                 
+PC19B_GHERKIN_BATTERY-3=一体どこで見つけたのだね？！
+# Brok                                 
+PC19B_GHERKIN_BATTERY-4=あのスイッチだよ。その…アンタを感電させたヤツ
+# Brok                                 
+PC19B_GHERKIN_BATTERY-5=コイツがあの電気椅子の電源だと思うぜ
+# Gherkin                                 
+PC19B_GHERKIN_BATTERY-6=これは…完璧だ！
+# Brok                                 
+PC19B_GHERKIN_BATTERY-7=マジか？ …そいつはいい！
+# Brok                                 
+PC19B_GHERKIN_BATTERY-8=って事は、これで上手くいくのか？
+# Gherkin                                 
+PC19B_GHERKIN_BATTERY-9=見込みは非常に少ない
+# Brok                                 
+PC19B_GHERKIN_BATTERY-10=けどさっきは出来そうだって言ってなかったか…？
+# Gherkin                                 
+PC19B_GHERKIN_BATTERY-11=試すだけ試してみよう。発電機をケーブルに繋いでみる
+# Gherkin                                 
+PC19B_GHERKIN_BATTERY-12=少し時間がかかるだろう
+# Brok                                 
+PC19B_GHERKIN_BATTERY-13=わかった。邪魔しないでおくよ
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Brok tries to comfort Dee after the news her husband Sin is in danger
+# *****************************************************************
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-1=大丈夫か？
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-2=…
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-3=彼の姿がアパートに見当たらなくなった時、彼はもう出て行ったんだと思った
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-4=けどまさかこんな事になってたなんて…
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-5=落ち着けよ。今から俺たちが助けに行くんだろ
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-6=何故そんな呑気な事が言ってられるんだ？！
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-7=もう手遅れかもしれないんだぞ…！
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-8=きっと大丈夫だよ
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-9=…
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-10=お前みたいな奴には今まで出会った事もなかったな
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-11=そりゃそうだろうね
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-12=アタシは自宅にこもって家事や子育てするようなタイプじゃないからね
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-13=アタシらみたいな事をやる連中が他に誰もいなかったとしても、どうでもいい。誰かがやらなきゃいけない事なんだ
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-14=誰一人として社会の間違いを正すために立ち上がらないなら、アタシがやらなきゃ
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-15=けどお前さん、娘がいるんだろ
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-16=そうよ…
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-17=…
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-18=あの子が恋しいわ…。シンの事も…
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-19=そう言うアンタはどうなんだ？
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-20=俺にも妻がいたさ…短い間だったけどな。もう他界した
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-21=あぁ…。すまない
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-22=それと、子供がいる…。血は繋がってねえけどな。他界した妻の連れ子だ
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-23=アイツは俺の事を好いてくれねえが
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-24=そりゃ違うね
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-25=なんだって？
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-26=その子はあんたが好きだよ。保証する
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-27=どうしてそんな事分かるんだよ？ 会った事もねえだろうが
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-28=アンタの事は知ってる
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-29=あぁ、確かに会ってまだ間もないクセに何言ってんだって思うかもしれないが…
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-30=アタシはさ…アンタの事、信用出来るって気がするんだよ
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-31=おいおい…。ほんの1時間前に俺を殺そうとしたヤツの言うセリフかよそれ
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-32=単にアンタをからかってるだけさ！ 女の冗談って奴が分かんないみたいだね、旦那？
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-33=冗談か…。なるほどな！ ハハッ
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-34=…
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-35=…
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-36=えーっと…。俺の顔に何かついてるのか…？
+# Dee                                 
+PC19B_GHERKIN_AFTERGIVEN1-37=あのさ…。もしこんな状況じゃなかったなら…
+# Gherkin                                 
+PC19B_GHERKIN_AFTERGIVEN1-38=ブロク殿！
+# Gherkin                                 
+PC19B_GHERKIN_AFTERGIVEN1-39=準備が整ったぞ。入り口を確認してくれるか？
+# Brok                                 
+PC19B_GHERKIN_AFTERGIVEN1-40=了解だ
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Checking frame on the wall
+# *****************************************************************
+#----------------------
+#= Frame
+#----------------------
+# Brok                                 
+PC19B_FRAME1-1=コイツは…地下壕の入り口の様子か？
+#----------------------------------------------------
+# Brok                                 
+PC19B_ENTRANCE_PICTURE1-1=あぁ、コイツは…
+# Brok                                 
+PC19B_ENTRANCE_PICTURE1-2=グチャグチャになった最悪な状況ってヤツには過去に何度も出くわしてきたつもりだが…
+# Brok                                 
+PC19B_ENTRANCE_PICTURE1-3=コイツはその中でもとびきりの一級品だな！
+# Dee                                 
+PC19B_ENTRANCE_PICTURE1-4=で、アタシらはとびきりの被害者になりそうだね
+#----------------------------------------------------
+# Brok                                 
+PC19B_ENTRANCE_PICTURE2-1=さて。こんなトンでもない状況を一体どうやって突破するんだ…？
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Pressing the button
+# *****************************************************************
+#----------------------
+#= Dr. Gherkin
+#----------------------
+# Gherkin                                 
+PC19B_BUTTON_GHERKIN1-1=やめてくれ！
+# Gherkin                                 
+PC19B_BUTTON_GHERKIN1-2=何故こんな事をするのかね？
+# Brok                                 
+PC19B_BUTTON_GHERKIN1-3=楽しいから？
+# Gherkin                                 
+PC19B_BUTTON_GHERKIN1-4=頼む…！ 私を傷付けないでくれ！　
+# Brok                                 
+PC19B_BUTTON_GHERKIN1-5=わかったわかった。指を引っ込めとくとするぜ
+#----------------------------------------------------
+# Gherkin                                 
+PC19B_BUTTON_GHERKIN2-1=頼む…！ やめてくれ！
+# Brok                                 
+PC19B_BUTTON_GHERKIN2-2=ただの冗談だよ！
+#----------------------------------------------------
+# Brok                                 
+PC19B_BUTTON_WITHOUT1-1=なんでまた地下壕の中にこんな拷問器具なんか設えたんだ？
+#----------------------------------------------------
+# Brok                                 
+PC19B_BUTTON_WITHOUT2-1=…
+# Brok                                 
+PC19B_BUTTON_WITHOUT2-2=コイツは電撃を放つんだよな。電源は一体どこにあるんだ…？
+#----------------------------------------------------
+# Dee                                 
+#Dee is talking to Brok here (informal)
+PC19B_BUTTON_NODESTROY1-1=おい！ やめろ！
+# Dee                                 
+PC19B_BUTTON_NODESTROY1-2=アンタはこんなやり方は認めないだろうけど、アタシはそいつにちゃんと働いてもらわないと困るんだよ
+#----------------------------------------------------
+# Dee                                 
+PC19B_BUTTON_DESTROY1-1=アンタそれ…まさか素手で壊したのか？！
+# Brok                                 
+PC19B_BUTTON_DESTROY1-2=さぁ捜査を始めるぜ、少佐！
+#----------------------------------------------------
+# Brok                                 
+PC19B_BUTTON_REMOTECONTROL-1=何のためにだ？ 無力化するためか…？
+#----------------------------------------------------
+# Brok                                 
+PC19B_BUTTON_OTHERS-1=もう時間がねえ。いよいよ覚悟を決めなきゃならねえみてえだな！
+----------------------------------------------------
+#----------------------
+#= Battery
+#----------------------
+# Brok                                 
+PC19B_BATTERY1-1=このガラクタは一体なんだ…？
+# Brok                                 
+PC19B_BATTERY1-2=なんか気になるな。一応持っていくか！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Coming in this room for the first time, Brok sees Dee who already tied up Dr Gherkin
+# *****************************************************************
+#----------------------
+#= Init
+#----------------------
+# Brok                                 
+#Here he addresses both of them
+PC19B_INIT1-1=さてと、入れたな…
+# Brok                                 
+#And here, only Dee
+PC19B_INIT1-2=おいおい…？ お前さん一体何をしてるんだよ？！
+# Dee                                 
+PC19B_INIT1-3=尋問だよ
+# Gherkin                                 
+PC19B_INIT1-4=この人が…この女が私を監禁したのだよ！
+# Brok                                 
+PC19B_INIT1-5=おいバカかテメエ？！
+# Brok                                 
+PC19B_INIT1-6=今はこんな事してる場合かよ？！
+# Dee                                 
+PC19B_INIT1-7=この男は何か隠してるんだ！
+# Brok                                 
+PC19B_INIT1-8=そう言うお前はどうなんだよ？！
+# Dee                                 
+PC19B_INIT1-9=アタシはもう言うべき事は全部言ったとばかり思ってたんだが
+# Brok                                 
+PC19B_INIT1-10=いやまだだ！ あのロボット共が押し寄せてくる前に、もっと聞きたい事があったんだ
+# Dee                                 
+PC19B_INIT1-11=いいだろう
+# Dee                                 
+PC19B_INIT1-12=アタシの知ってる事は全て話そう。その代わり、アタシがこの男を尋問するのを邪魔しないでもらいたい
+# Brok                                 
+PC19B_INIT1-13=そいつは約束出来ねえな
+# Dee                                 
+PC19B_INIT1-14=なら、ここで決着をつけるしかないんじゃないか
+# Brok                                 
+PC19B_INIT1-15=おいおい喧嘩売ろうってのか？！
+# Brok                                 
+PC19B_INIT1-16=やめとくよ。もう十分すぎるほどスパーリングして疲れてんだよ
+# Brok                                 
+PC19B_INIT1-17=まさか、俺たちを殺したがってるロボット共が外にウジャウジャしてるのを忘れたとか言うなよ？
+# Brok                                 
+PC19B_INIT1-18=今は体力を無駄に出来るような状況じゃねえだろ
+# Dee                                 
+PC19B_INIT1-19=(はぁ…)
+# Dee                                 
+PC19B_INIT1-20=お前が言ってる事が正しいようだ
+# Brok                                 
+PC19B_INIT1-21=で、ロボット共の事なんだが…
+# Brok                                 
+PC19B_INIT1-22=ったく。アイツらホントにどこにでも居やがる…。しかも向こう見ずに襲って来やがって！
+# Gherkin                                 
+PC19B_INIT1-23=た、頼む…。誰か解いてくれ…。恐ろしくてかなわんのだ…
+# Dee                                 
+PC19B_INIT1-24=まだだ
+# Gherkin                                 
+PC19B_INIT1-25=だ、だがしかし…！
+# Brok                                 
+PC19B_INIT1-26=なぁ、お前もしかして、ロボットが暴走してる原因はドクターだと思ってるのか？
+# Dee                                 
+PC19B_INIT1-27=…
+# Dee                                 
+PC19B_INIT1-28=有り得る話だ。この男は色々な事件に関わりすぎている
+# Brok                                 
+PC19B_INIT1-29=そんなまさか…
+# Gherkin                                 
+PC19B_INIT1-30=これは私が引き起こした事ではない！ 誓って言う！
+# Brok                                 
+PC19B_INIT1-31=仮に博士がロボット共を放ったんなら、なんで博士は自分の命を危険に晒してまでスラムに来てるんだ？
+# Brok                                 
+PC19B_INIT1-32=そんな事をして博士になんの得がある？
+# Dee                                 
+PC19B_INIT1-33=…
+# Dee                                 
+PC19B_INIT1-34=まだ全ての情報が出揃ってるわけじゃない。けど、アタシには真実を明らかにしなきゃならない理由があるんだ！
+#----------------------------------------------------
+# Brok                                 
+PC19B_INIT1B-1=その…。正直分からねえんだよ…
+# Brok                                 
+PC19B_INIT1B-2=…？
+# Brok                                 
+PC19B_INIT1B-3=何か、ボタンを掛け違えてるような気がしてならねえ…
+# Dee                                 
+PC19B_INIT1B-4=それどういう事だ？
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKINPROB1-1=ゲルキン博士は俺たちに嘘を吐いてるな
+# Dee                                 
+PC19B_GHERKINPROB1-2=やっとアタシの話を信じる気になったかい！
+# Dee                                 
+PC19B_GHERKINPROB1-3=さぁ、コイツを片付けちまおう。どうやったら博士の腹に詰まってるものを吐かせられるかアタシはよく知ってるからね
+# Brok                                 
+PC19B_GHERKINPROB1-4=ちょっと待てよ…！
+# Brok                                 
+PC19B_GHERKINPROB1-5=お前が思ってる以外にも、何かと事情がありそうだぞ…
+#----------------------------------------------------
+# Brok                                 
+PC19B_PILLS1-1=薬の配給不足は普通じゃねえ
+# Dee                                 
+PC19B_PILLS1-2=脳みそ絞って出てきた唯一の答えはそれだけか？ 頼むよシャーロック！
+# Dee                                 
+PC19B_PILLS1-3=アンタならもう少し賢い事を言ってくれるもんだと思ってたが
+# Dee                                 
+PC19B_PILLS1-4=どうやら期待しすぎたようだ。アンタみたいなのに期待したアタシがバカだったよ
+# Brok                                 
+PC19B_PILLS1-5=俺みたいなヤツって、どういう意味だよ？！
+# Dee                                 
+PC19B_PILLS1-6=ハッキリ言わないと分かんないのかい？ 脂肪とウロコで出来たイカした見た目のデクノボウって
+# Brok                                 
+PC19B_PILLS1-7=イカした…なんだって？
+# Dee                                 
+PC19B_PILLS1-8=アンタさぁ、ずっと長い事独り暮らししてたんだろ。違うかい？
+# Brok                                 
+PC19B_PILLS1-9=まぁな…。いや…正確には違うんだが
+# Dee                                 
+PC19B_PILLS1-10=あぁ、悪かったよ。アンタにも色々と辛い事があったんだろ。アンタが黙ってても雰囲気でよく分かるよ
+# Dee                                 
+PC19B_PILLS1-11=そういう一つ一つの苦労が今のアンタを形作った…。アンタの人柄ってヤツをさ
+# Brok                                 
+PC19B_PILLS1-12=まぁ実際、お前さんに言われて唐突に思い出したぜ。女子ってのは何でもかんでもまどろっこしい言い方するのが好きだってな
+# Dee                                 
+PC19B_PILLS1-13=フン
+# Dee                                 
+PC19B_PILLS1-14=で！ 何か他に気付いた事はあるかい、天才さん？
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Brok wants to test the behavior of robots
+# *****************************************************************
+# Brok                                 
+PC19B_TARGET1-1=ちょっと試してみたい事があるんだよ
+# Brok                                 
+PC19B_TARGET1-2=なぁ、一瞬だけ扉を開けて、ロボットを入れてやる事は出来るか？
+# Dee                                 
+PC19B_TARGET1-3=出来ると思うが。何故そんな事を？
+# Brok                                 
+PC19B_TARGET1-4=俺は隠れてるから。一体だけ入れてくれ
+# Dee                                 
+PC19B_TARGET1-5=お前正気か？！
+# Dee                                 
+PC19B_TARGET1-6=ドアを開けた瞬間に一斉に全部なだれ込んでくる可能性だってあるの、分かってるよな…？
+# Brok                                 
+PC19B_TARGET1-7=俺を信じろって
+# Dee                                 
+PC19B_TARGET1-8=いいだろう…
+# Dee                                 
+PC19B_TARGET1-9=やってみるよ。一体だけな
+#----------------------------------------------------
+# Dee                                 
+PC19B_TARGET2-1=…
+# Tribot                                 
+PC19B_TARGET2-2=こんにちは。何かお手伝い出来ますか？
+# Dee                                 
+PC19B_TARGET2-3=コイツは良い奴みたいだな
+# Brok                                 
+PC19B_TARGET2-4=ふむ
+# Brok                                 
+PC19B_TARGET2-5=ゲルキン博士の近くまで連れて行ってくれ
+# Gherkin                                 
+PC19B_TARGET2-6=や、やめろ…！
+# Dee                                 
+PC19B_TARGET2-7=ほら、いってこいよロボット。目の前にいるあのオッサンのところまで
+# Gherkin                                 
+PC19B_TARGET2-8=やめろ…！ やめてくれ！
+#----------------------------------------------------
+# Tribot                                 
+PC19B_TARGET3-1=こんにちは。
+# Gherkin                                 
+PC19B_TARGET3-2=あれ…？
+# Dee                                 
+PC19B_TARGET3-3=お前が何を期待してたのか、アタシにはまるで理解出来ないんだが
+# Brok                                 
+PC19B_TARGET3-4=なら、これでどうなるか試してみようじゃねえか…
+#----------------------------------------------------
+# Tribot                                 
+PC19B_TARGET4-1=ターゲットを確認！
+# Brok                                 
+PC19B_TARGET4-2=…！
+# Dee                                 
+PC19B_TARGET4-3=暴走したぞ！
+# Brok                                 
+PC19B_TARGET4-4=俺に任せとけ
+#----------------------------------------------------
+# Brok
+PC19B_TARGET5_ALTERNATIVE-1=アンタが正しかったみてえだな、ドクター！
+# Brok
+PC19B_TARGET5_ALTERNATIVE-2=コイツらはアンタを狙ってる！
+# Gherkin
+PC19B_TARGET5_ALTERNATIVE-3=今なら信じてくれるかね？
+#----------------------------------------------------
+# Brok                                 
+PC19B_TARGET5-1=やっぱりな。思ったとおりだ
+# Brok                                 
+PC19B_TARGET5-2=奴らが狙ってるのは博士じゃねえ…
+# Brok                                 
+PC19B_TARGET5-3=俺を狙ってやがったんだ！
+# Gherkin                                 
+PC19B_TARGET5-4=なんたる事か！
+# Dee                                 
+PC19B_TARGET5-5=ちょっと待てよ
+# Dee                                 
+PC19B_TARGET5-6=こんな災厄な目に遭ってる原因は…アンタだっていうのか？！
+# Dee                                 
+PC19B_TARGET5-7=大声でハッキリ言ってみな、アンタ一体何やらかしたんだ？！
+# Brok                                 
+PC19B_TARGET5-8=しらねえよ！ 本当だ
+# Brok                                 
+PC19B_TARGET5-9=だが…。俺はここ最近ロボット共のお友達を大量にブッ壊してきた。けど正当防衛だったんだよ！
+# Dee                                 
+PC19B_TARGET5-10=ロボットは自我を持ったりしない。友情だの逆恨みだのでアンタを攻撃してるんじゃない
+# Dee                                 
+PC19B_TARGET5-11=要するに、コイツらをコントロールしてる誰かがアンタを殺したがってるって事だよ！
+# Dee                                 
+PC19B_TARGET5-12=ただまぁ…。逆に言うなら、アンタさえ殺してしまえばロボット共もおとなしくなりそう、って事か。悪くない選択肢だね…
+# Brok                                 
+PC19B_TARGET5-13=おい！ そんな事言うなよ！
+# Brok                                 
+PC19B_TARGET5-14=俺も自分の身に何が起きてるのか暴いてみるからよ。だからお前らも俺に隠してる事を洗いざらい吐けよ！
+# Brok                                 
+PC19B_TARGET5-15=まずは…。ドクター
+# Gherkin                                 
+PC19B_TARGET5-16=近寄るな！！ 奴らはお前を狙っているのだろう！
+# Brok                                 
+PC19B_TARGET5-17=おい！ ちょっとは冷静になれよ！
+# Gherkin                                 
+PC19B_TARGET5-18=キミが居ない方がまだ安全じゃないか！
+# Brok                                 
+PC19B_TARGET5-19=ふむ。なら、アンタを残して俺はこっから出ていくとしよう。あの女とよろしくやってくれ
+# Dee                                 
+PC19B_TARGET5-20=フン
+# Gherkin                                 
+PC19B_TARGET5-21=…
+# Gherkin                                 
+PC19B_TARGET5-22=そ、そんな事しないでくれ…！
+# Gherkin                                 
+PC19B_TARGET5-23=あぁなんて事だ。私はどう足掻いたところでもうおしまいじゃないか
+# Brok                                 
+PC19B_TARGET5-24=ドクター。ロボット共の狙いがアンタじゃないとするなら…
+# Brok                                 
+PC19B_TARGET5-25=何故わざわざ俺に電話をよこしたんだ？
+# Gherkin                                 
+PC19B_TARGET5-26=わ…分からない！
+# Gherkin                                 
+PC19B_TARGET5-27=だが今になって思えばようやく全てに合点がいった
+# Gherkin                                 
+PC19B_TARGET5-28=今朝の事だ…。工場には私一人しかいなかった
+# Brok                                 
+PC19B_TARGET5-29=一人だって？
+# Gherkin                                 
+PC19B_TARGET5-30=そうだ。生産ラインは完全に自動化されておる。人間のオペレーターは必要ないのだよ
+# Gherkin                                 
+PC19B_TARGET5-31=実のところ…。薬の配給不足こそが、私がわざわざ工場に出向いた唯一の理由だったのだ
+# Gherkin                                 
+PC19B_TARGET5-32=一体何が配給不足の原因だったのか、私は徐々に理解していった。だが突然…
+# Gherkin                                 
+PC19B_TARGET5-33=大量のロボットが工場から一斉に出て行って、その過程で私に何度も体当たりしていったのだ！
+# Gherkin                                 
+PC19B_TARGET5-34=だから私はロボットの暴走こそが薬の配給不足の根本原因だと結論付けたのだ！
+# Gherkin                                 
+PC19B_TARGET5-35=恐ろしくなった私は逃げ出して…。警備員の詰所に通りがかって、そして…
+# Gherkin                                 
+PC19B_TARGET5-36=後の事は知っておるだろう
+# Brok                                 
+PC19B_TARGET5-37=でもってだ…。工場の仕事をあの金属のハコ共に完全に丸投げする事が悪い事だなんて、お前さんちっとも思ってなかったわけだな…？
+# Gherkin                                 
+PC19B_TARGET5-38=問題なかろう！ 工場の生産ラインは何年もの間、何のトラブルも起こさず稼動していたのだぞ！
+# Gherkin                                 
+PC19B_TARGET5-39=今回の出来事は全くもって不可解だ
+# Gherkin                                 
+PC19B_TARGET5-40=あのロボットは工場の仕事に合わせてたった一つの限られた作業しか出来ないようにプログラムされておる。人を攻撃するなど不可能なのだ！
+# Brok                                 
+PC19B_TARGET5-41=アンタの言ってる事を信じないワケじゃないんだがな、ドクター。けど…俺はどうもそのプログラムってヤツが信用出来なくてな
+# Brok                                 
+PC19B_TARGET5-42=ところでだ。アンタはなんでこの地下壕に入れたんだ？
+# Brok                                 
+PC19B_TARGET5-43=アンタはスラムの人間じゃねえだろ
+# Gherkin                                 
+PC19B_TARGET5-44=…
+# Gherkin                                 
+PC19B_TARGET5-45=そ、その…。つまりだな…
+#----------------------------------------------------
+# Gherkin                                 
+#Dee presses the button
+PC19B_TARGET6-1=いぎゃあああああ！
+# Brok                                 
+PC19B_TARGET6-2=気を失っちまったぞ…
+# Brok                                 
+PC19B_TARGET6-3=一体何が気に入らなかったんだよ？！
+# Dee                                 
+PC19B_TARGET6-4=コイツはお前に真実を伝えるつもりがなかったって事さ
+# Brok                                 
+PC19B_TARGET6-5=なら、お前は本当の事を教えてくれるってのか？！
+# Dee                                 
+PC19B_TARGET6-6=今度は…ちゃんと言うよ
+# Brok                                 
+PC19B_TARGET6-7=いいだろう。一言も逃さず聞いてやる
+# Dee                                 
+PC19B_TARGET6-8=政府高官であれば、奴が「公共施設の鍵」を持ってるのも頷ける
+# Brok                                 
+PC19B_TARGET6-9=やっぱりな。単に事実を認めさせたいだけだったんだが
+# Brok                                 
+PC19B_TARGET6-10=どうにしろだ。少し休憩するしかねえだろこりゃ
+# Brok                                 
+PC19B_TARGET6-11=その間にちぃとこの部屋を調べておくよ
+# Dee                                 
+PC19B_TARGET6-12=時間を無駄にするなよ
+#----------------------------------------------------
+# Brok                                 
+PC19B_DEE_NOTYET-1=まだだ…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - After checking the room, Dee tells her story
+# *****************************************************************
+# Dee                                 
+PC19B_DEE1-1=もう終わったのか？
+# Brok                                 
+PC19B_DEE1-2=俺たちはここに閉じ込められちまったらしい…
+# Dee                                 
+PC19B_DEE1-3=ほらみろ。警告しただろう。だが、何とかしてここから脱出しなきゃならないよ
+# Brok                                 
+PC19B_DEE1-4=一つ一つ物事を解決していこうじゃねえか
+# Brok                                 
+PC19B_DEE1-5=まず始めにだ。お前さん自身の事について聞かせてもらおうじゃねえか！
+# Dee                                 
+PC19B_DEE1-6=…
+# Dee                                 
+PC19B_DEE1-7=アンタも知ってのとおり、アタシはジャーナリストだ
+# Dee                                 
+PC19B_DEE1-8=アタシがこの仕事に就いた直後は、記者の仕事ってのはただの作業以上に大事なものだった
+# Dee                                 
+PC19B_DEE1-9=隠された真実を暴き出して、無感動で無気力な奴らばっかりしかいないこの世の中に少しでも変革をもたらす、そんなまたとないチャンスだったんだよ
+# Dee                                 
+PC19B_DEE1-10=だからさ。「最高に美味しいワームケーキの作り方」だの「今年一番人気の番組」だの、くだらない記事を書かされるのに心底嫌気が差したんだ
+# Dee                                 
+PC19B_DEE1-11=だから…本業とは別の隠密捜査に何カ月もの時間を費やした
+# Brok                                 
+PC19B_DEE1-12=家事とか娘の世話とかどうしたんだよ？ そんな事やってる暇あるのか？
+# Dee                                 
+PC19B_DEE1-13=大丈夫だ。ジャーナリストってのはここ一番の特ダネを手に入れるためには何とかして時間を捻り出すモンなんだよ！
+# Brok                                 
+PC19B_DEE1-14=あぁ。そいや、お前らドラマーって、1日4時間働くのも稀なぐらいのユルい勤務体制だったな。忘れてたぜ
+# Dee                                 
+PC19B_DEE1-15=どんなステロタイプだいそりゃ
+# Dee                                 
+PC19B_DEE1-16=アタシが子供だった時からずっと、アタシは違和感を覚えてた…。何かが変わってる、って
+# Dee                                 
+PC19B_DEE1-17=ドラマーはみんな批判的じゃなくなった。みんなそれぞれの殻に閉じこもって、互いを見向きもしなくなった
+# Brok                                 
+PC19B_DEE1-18=それ、そんな最近始まった事かよ…？
+# Dee                                 
+PC19B_DEE1-19=最近の傾向については、ハッキリYESと答えられる
+# Dee                                 
+PC19B_DEE1-20=アタシは社会の動きの変化についても調査を進めてた
+# Dee                                 
+PC19B_DEE1-21=そして重大な発見をしたんだ
+# Dee                                 
+PC19B_DEE1-22=アタシはその事を社のメディアを通じて公にしようとしたんだが、その時だよ。何もかもが狂い始めたのは
+# Dee                                 
+PC19B_DEE1-23=分かるだろ。アタシには自分のキャリア以上に大事なものが一つだけある
+# Brok                                 
+PC19B_DEE1-24=身の安全か？
+# Dee                                 
+PC19B_DEE1-25=違う！ 家族だよ
+# Dee                                 
+PC19B_DEE1-26=アタシの同僚がシンが映ってる動画を見つけたんだ…。他の女に浮気してるのが映ってた
+# Dee                                 
+PC19B_DEE1-27=そいつを見た時、アタシの中で火が付いたんだ
+# Dee                                 
+PC19B_DEE1-28=アイツはアタシを裏切った。アイツは娘を裏切った
+# Dee                                 
+PC19B_DEE1-29=アタシの同僚はアタシの前では同情したり慰めたりしてくれたけど…
+# Dee                                 
+PC19B_DEE1-30=でも陰では笑ってたんだよ
+# Dee                                 
+PC19B_DEE1-31=アタシは耐えられなくなった。アタシはカンカンに怒って
+# Dee                                 
+PC19B_DEE1-32=会社を辞めたんだ
+# Dee                                 
+PC19B_DEE1-33=だから…。情報を拡散する一番の方法を、アタシは自ら手放してしまったんだ
+# Brok                                 
+PC19B_DEE1-34=この話がどこに続いてるのか、想像がついたぜ…
+# Dee                                 
+PC19B_DEE1-35=シンとは口論になった。彼が言うには、全部出任せの嘘だって
+# Dee                                 
+PC19B_DEE1-36=アタシは彼の言葉に耳を貸さなかった。彼が信じられなかった。出来るワケがなかった
+# Dee                                 
+PC19B_DEE1-37=目の前にあんな明確な証拠があったんだ。あの動画はどう見ても本物にしか見えなかった！
+# Dee                                 
+PC19B_DEE1-38=けど彼は頑なに認めなかった。だから彼がずっと自分がした事を認めず謝ろうともしないなら、その時は…
+# Brok                                 
+PC19B_DEE1-39=…追放処分にするって奴さんを脅したんだろ
+# Dee                                 
+PC19B_DEE1-40=そうだ…
+# Dee                                 
+PC19B_DEE1-41=だが…彼は自分から家を出て行ったんだ
+# Dee                                 
+PC19B_DEE1-42=身の回りがメチャクチャになったにもかかわらず、アタシは自分がやってた捜査を諦めたりしなかった。だから他のメディアにコンタクトを取った
+# Dee                                 
+PC19B_DEE1-43=けどどのメディアも取り合ってくれなかった。どの社も、どの担当者に頼んでもだ
+# Dee                                 
+PC19B_DEE1-44=アタシにはワケが分からなかった。独占的に大ブレイク必至の特ダネをなんでどの社も扱ってくれないのかってね
+# Dee                                 
+PC19B_DEE1-45=どいつもこいつも「証拠がなければただの嫌疑に過ぎない、話にならない」って。だが論理的に考えれば…
+# Dee                                 
+PC19B_DEE1-46=アイツらみんな見掛け倒しのチキン野郎だったって事さ。隠された真実よりも自分のクビのが大事だったんだよ
+# Brok                                 
+PC19B_DEE1-47=お前さんさっき自分で言ってたな
+# Brok                                 
+PC19B_DEE1-48=ドラムの情報は全部たった一つの存在によってコントロールされている。違うか？
+# Dee                                 
+PC19B_DEE1-49=その通りだ
+# Dee                                 
+PC19B_DEE1-50=アタシが見つけた証拠の数々が全部痕跡も残らず消えてたのを目の当たりにした時は…アタシの推論の信憑性が余計に上がったよ
+# Dee                                 
+PC19B_DEE1-51=アタシのDNAに転写されたローカルデータ、保存しておいたバックアップ
+# Dee                                 
+PC19B_DEE1-52=オリジナルのソースや、そっからリンクしてる関連サイトも全部
+# Dee                                 
+PC19B_DEE1-53=何もかも消えちまった
+# Dee                                 
+PC19B_DEE1-54=まるで全部アタシにしか見えない幻覚みたいだった
+#----------------------------------------------------
+# Dee                                 
+PC19B_DEE1B-1=友人には正気を失ってると疑われたよ
+# Dee                                 
+PC19B_DEE1B-2=精神病院に放り込まれる寸前までいった
+# Brok                                 
+PC19B_DEE1B-3=そりゃまた…
+# Dee                                 
+PC19B_DEE1B-4=黙れ。笑いごとじゃない
+# Dee                                 
+PC19B_DEE1B-5=友人には娘まで取り上げられた！
+# Dee                                 
+PC19B_DEE1B-6=誰も信じてくれなかったんだ！
+# Dee                                 
+PC19B_DEE1B-7=アタシは全てを失った
+# Dee                                 
+PC19B_DEE1B-8=仕事も。家族も。友人も。アタシ自身の心も…
+# Dee                                 
+PC19B_DEE1B-9=だが、不運にばっかり見舞われてたアタシにも、ようやくツキが回ってきた
+# Dee                                 
+PC19B_DEE1B-10=アタシはいつもメモリーチップを服に隠して持ち歩いてる
+# Dee                                 
+PC19B_DEE1B-11=捜査の最中に、チップが壊れてネットに繋がらなくなったんだ
+# Dee                                 
+PC19B_DEE1B-12=その時に気付いたんだ。アタシが取ってたバックアップはみんな、トライウェブに接続した時に消されたんじゃないか、って
+# Dee                                 
+PC19B_DEE1B-13=だが、気付いたところで確かめる術はなかった。端末に繋いだ瞬間にまたサポート外だのデータが消去されただのって言われるリスクは避けたかったんだ
+# Dee                                 
+PC19B_DEE1B-14=だから…。グルームってヤツに直接会ってチップを手渡すためにスラムまで来たんだよ
+# Brok                                 
+PC19B_DEE1B-15=フン。あのネズミ野郎なしじゃ俺たちは何も出来ねえってワケかよ！
+# Dee                                 
+PC19B_DEE1B-16=これが最後の望みだった。アタシの頭がおかしくなったんじゃないって証明できる最後のチャンスだったんだ
+# Dee                                 
+PC19B_DEE1B-17=結局、アタシは正しかったよ
+# Dee                                 
+PC19B_DEE1B-18=データはちゃんと存在した。アタシが見つけた全体像のほんの一部に過ぎなかったが、それでもアタシの推論を実証するには十分だった
+# Dee                                 
+PC19B_DEE1B-19=今にして思えば、アタシはトンだ大バカ者だったって思うよ…
+# Dee                                 
+PC19B_DEE1B-20=アタシの身の回りで起こった事全てが、アタシの気を散らすための罠だったんだ
+# Dee                                 
+PC19B_DEE1B-21=ビデオはフェイクだ。随分手の込んだ編集がされてて、人間の目には本物にしか映らない
+# Dee                                 
+PC19B_DEE1B-22=アイツらはたった一つの目的のために、アタシの人生を完全にブッ壊しやがったんだ…
+# Dee                                 
+PC19B_DEE1B-23=アタシを生贄にして真実が白日のもとに晒されるのを拒んだんだよ！
+# Brok                                 
+PC19B_DEE1B-24=けど、誰がそんな事を？ お前が掴んだ真実って何だよ…？
+# Gherkin                                 
+PC19B_DEE1B-25=うーん…
+# Brok                                 
+PC19B_DEE1B-26=お友達が目を覚ましそうだな
+# Dee                                 
+PC19B_DEE1B-27=いいタイミングだね
+# Gherkin                                 
+PC19B_DEE1B-28=…
+# Gherkin                                 
+PC19B_DEE1B-29=気分が悪い…
+# Gherkin                                 
+PC19B_DEE1B-30=私を解放してくれ
+# Dee                                 
+PC19B_DEE1B-31=お前が白状するまではダメだ！
+# Dee                                 
+PC19B_DEE1B-32=認めろ！ お前は政府高官の一人だろう
+# Gherkin                                 
+PC19B_DEE1B-33=わ…私には何の事やらさっぱり分からんよ！
+# Dee                                 
+PC19B_DEE1B-34=いいだろう
+# Dee                                 
+PC19B_DEE1B-35=もう一度ボタンを押せば、お前の記憶に「揺さぶり」をかける事も出来るだろう
+# Gherkin                                 
+PC19B_DEE1B-36=や、やめてくれ…！
+# Brok                                 
+PC19B_DEE1B-37=そのぐらいにしとけよ！
+# Brok                                 
+PC19B_DEE1B-38=こっからの仕事は俺にやらせてくれ
+# Dee                                 
+PC19B_DEE1B-39=いいや、無理だね！
+# Brok                                 
+PC19B_DEE1B-40=俺を信じろ！ 鞭を打つだけじゃ何も吐かねえよ。時には飴だって必要なんだ
+# Dee                                 
+PC19B_DEE1B-41=フン…
+# Dee                                 
+PC19B_DEE1B-42=いいだろう。アンタの思うままやってみな、カウボーイ
+# Brok                                 
+PC19B_DEE1B-43=この難解なパズルを解くピースを集めていくとしようぜ！
+#----------------------------------------------------
+# Brok                                 
+PC19B_DEE2-1=ドクター。アンタが口を割らないように、何かが邪魔をしてるってのは察しがついてるんだ。それに、この状況は腹を割って落ち着いて話すには程遠いな。だが…
+# Brok                                 
+PC19B_DEE2-2=俺の事を信用してくれ
+# Gherkin                                 
+PC19B_DEE2-3=えぇ…その…わ、分かった…
+# Brok                                 
+PC19B_DEE2-4=まず、今朝の事を話そうじゃないか
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Interrogation
+# *****************************************************************
+# Brok                                 
+PC19B_GHERKIN_RESUME-1=続きをやろう
+#----------------------------------------------------
+# Brok                                 
+PC19B_GHERKIN_EXIT1-1=要約するのにちょいと時間が必要だな
+# Dee                                 
+PC19B_GHERKIN_EXIT1-2=無駄にしてる時間はないよ！
+# Brok                                 
+PC19B_GHERKIN_EXIT1-3=ほんの一分だよ。なぁいいだろ？
+# Dee                                 
+PC19B_GHERKIN_EXIT1-4=…いいだろう
+#----------------------------------------------------
+# Brok                                 
+PC19B_INTERROGATE_BAD_SCARED-1=(いや、ねえな。博士はビビりまくってた。独りでコッソリ配給管をブッ壊すなんて出来っこないだろう)
+#----------------------------------------------------
+# Brok                                 
+PC19B_INTERROGATE_BAD_CONTROL-1=(そりゃ、政府はいろんなものをコントロールしてるに違いないが…そいつはさすがに政府の管轄外じゃねえか？)
+#----------------------------------------------------
+# Brok                                 
+PC19B_INTERROGATE_BAD_KNOW-1=(そうだな。普通に考えりゃ博士がそいつを知ってて当然だ。だが…なんだってんだ？)
+#----------------------------------------------------
+# Brok                                 
+PC19B_INTERROGATE_OUTJAIL-1=(警察署の署長でさえ、俺を牢に閉じ込めておく事は出来なかった。俺は犯罪者ってワケじゃねえからな！)
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE_ALT-1=トライボットは今朝から様子がおかしいってアンタ言ってたよな
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE_ALT-2=でもって、さっきの「実験」でトライボット共はアンタのみをターゲットにしてるって実証された！
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-1=トライボットは今朝から様子がおかしいってアンタ言ってたよな
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-2=全く同じ時間帯に、俺は自宅でトライボットに襲われたんだ！
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-3=奴らが工場から出ていく前に、何か気付いた事はあるか？
+# Gherkin                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-4=工場を出ていく前…
+# Gherkin                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-5=あぁそうだ。お主の言う通りだ
+# Gherkin                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-6=奴らにはファームウェアのアップデートがインストールされていた
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-7=アップデートねぇ…
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-8=誰がアップデートをやってるんだ？
+# Gherkin                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-9=AIの開発を専門に行う研究施設がある。そこに勤めるエンジニアが行っているはずだ
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-10=あぁ。昨日会った博士二人が例のエンジニアだろうよ
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-11=けど、あいつらが直接アップデートを送信するのか？
+# Gherkin                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-12=いや。製品にファームウェアアップデートを送信するかどうかの判断は政府の手に委ねられている
+# Brok                                 
+PC19B_CLUE_TRIBOT_FIRMWARE-13=なるほどな…？
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-1=博士。アンタ、薬剤配給管には正確には何をしたんだ？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-2=修理しようと試みたのだ
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-3=試みて…それで
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-4=失敗したのか？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-5=その…
+# Dee                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-6=そのようだ。自分でも調べてみた
+# Dee                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-7=アンタが配給管を触った後で試してみたが、動作しなかった
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-8=そうだ。しかし実際問題…
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-9=私自身、理由が分からないのだ
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-10=もっと詳しく教えてくれないか？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-11=工場の話に戻ろう。薬がスラムに配給されなくなったのは、電子署名が失われたからだと気付いたのだ
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-12=電子署名…？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-13=配給管が正しく動作するためには認証を済ませなければならないのだよ
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-14=なぜ？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-15=そうしなければ、誰もが配給管を用いて未認可の薬剤を好き勝手流通させる事が出来てしまうのだ！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-16=いずれにせよ…。スラムの配給管の電子署名が全て消失したのは事実だ
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-17=恐らく外的な損傷によるものだろう
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-18=だから個々の配給管に電子署名を再入力しようと試みたのだ
+# Dee                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-19=馬鹿らしい。何故全ての配給管を一斉に変更しないんだ？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-20=無理だ！ 電子署名はハードウェアに固有で保存されているものだ。再入力には直接接触が不可欠なのだ
+# Brok              
+PC19B_CLUE_GHERKIN_SIGNATURE-21=わかった。なら…。俺たち全員で手分けしてやろうぜ。それなら早く済むだろ！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-22=不可能だ
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-23=ったくもう。単純明快な解決策をいつもダメにしてくれるよな、アンタら技術屋って奴らはよぉ
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-24=で、理由はなんだ？
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-25=まさか、アンタがこの国でただ一人電子署名を入力できるエラい人だなんて言うんじゃねえよな！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-26=全くもってそのとおりだが
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-27=はぁ？！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-28=電子署名については機密事項になっておる。知る者が少ないからこそ秘密は守られる
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-29=おいおい冗談も程ほどにしてくれよ！ アンタの身にもしもの事があったらどうするんだよ？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-30=もしもの事が起こらぬようにお主を雇ったのだが。他にどんな理由があると？
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-31=あぁもう…
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-32=いやちょっと待てよ…
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-33=もしそいつが本当だとすると。コイツは…
+# Brok                                 
+PC19B_CLUE_GHERKIN_SIGNATURE-34=俺たちが疑ってた事の信憑性がぐんと上がるんじゃねえか
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-1=ドクターゲルキン。アンタは極めて重要なポストにいる人物だ。違うか？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-2=そ、そうだとも。私は工場の運営に関して総責任を…
+# Brok                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-3=そうじゃねえ。もっと重要な件があるだろうが
+# Brok                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-4=薬剤配給管の電子署名についてどうやって知った？
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-5=…
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-6=そ、それは…。守秘義務で話せない
+# Dee                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-7=そのセリフ、もう聞き飽きたわ。ボタンを押させてちょうだい
+# Brok                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-8=いいだろう。やっちまえ
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-9=いや！ だめだめだめだめ！ 頼むこのとおりだ！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-10=…あぁ…。お主らの勝ちだ…
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-11=そうだ。私は政府高官の一人だ
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-12=電子署名の件は我々政府関係者しか知り得ない秘匿事項だ
+# Dee                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-13=ようやく認めたか！
+# Dee                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-14=さぁ、知ってる事を洗いざらい全部吐きな！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-15=どこから話せばいいか分からないぞ！
+# Brok                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-16=まずは人数からだ。政府関係者は何人いる？
+# Dee                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-17=答えは明白だろう
+# Brok                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-18=ふむ…
+# Brok                                 
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-19=お前の言ったとおりだな。俺は前々から知ってたワケだ。感謝するぜ
+#----------------------------------------------------
+# Brok                                 
+PC19B_PICKONE_TRIANGLE_WRONG1-1=(違う…)
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-1=トライアングル…
+# Brok                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-2=政府高官は三人なんだな
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-3=そうだ
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-4=だが…他のメンバーが誰なのかは知らない
+# Dee                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-5=嘘だ！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-6=本当の事だ！ これは…基本約款に記されていた契約事項の一つだ！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-7=我々はそれぞれ個別に意思決定をしなければならない
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-8=我々が互いに面識がない事こそが、互いの考えや判断に影響を受けず、自らの判断を独自に行える最善の手段なのだ
+# Dee                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-9=あぁ…。世界がどれほど醜く荒んでいるか全く知らずに純粋培養されたエリートの典型的な「善意による模範解答」だな
+# Brok                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-10=だな。同意せざるを得ん
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-11=か、完璧な統治システムなどどこにも存在しないのだ！ 国を治める意思決定をするというのは複雑な事なのだよ
+# Brok                                 
+PC19B_CLUE_GHERKIN_TRIANGLE-12=政治の話は置いといてだ。今は手が届く場所にある目の前の事に集中しようぜ
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-1=さっき、政府がトライボットのアップデートを管理してるってアンタ自分で言ったよな
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-2=でもって、アンタはその政府高官の一人だ！
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-3=こりゃどう考えても、他の政府の誰かがトライボットにアンタを狙わせたって事だろ！
+#---------------------------------------------------------------
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-1=さっき、政府がトライボットのアップデートを管理してるってアンタ自分で言ったよな
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-2=でもって、アンタはその政府高官の一人だ！
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-3=お前の仕業なんだろ！ トライボット共に俺を襲わせるよう焚き付けたのは！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-4=ち、違う！ 私はそんな事をしない！
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-5=もうちぃを俺を納得させられるような言い訳をした方がいいぞ、ドクター
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-6=わ、私は…知らないんだ…！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-7=こんな事…本来なら起こるはずがないのだよ！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-8=いいかね…。政府の意思決定は同じ手順で行われる
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-9=新たな問題が浮上した場合、関連する中立的な条件が表示され、我々の決定を促してくれる
+# Dee                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-10=中立的ねぇ。よく言うよ…
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-11=政府高官は3人のみだ。3人全員が全会一致した場合、意思決定は認可され施行される
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-12=一方で、誰か一人でも意思決定に異を唱えれば、閣議決定を阻止できるのだ
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-13=私はエンジニアだ。プログラムのソースコードなら読める
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-14=私がこのような危険なアップデートを認可して頒布するなど有り得ん話だ！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-15=そもそも、ロボットが暴走した原因がお主自身にあるとは思わんのかね…
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-16=おい、俺は被害者だぞ！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-17=なら、私がわざわざ自分の命を危険に晒すような真似をする理由でもあるのかね？
+# Dee                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-18=博士の言う事には一理ある
+# Dee                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-19=仮にロボットが直接博士を襲わなかったとしても、混乱の最中に暴走したロボットにぶつかったり轢かれたりする事故に遭うリスクは避けられない
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-20=そうだとするなら…
+# Dee                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-21=他の二人のトライアングルうちの誰かがアンタを破壊しようとしてるって事だろう。あるいは、犯人は片方じゃなくて両方かもな
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-22=そいつはまた…最高だな。俺の未来は明るくなる一方だなオイ
+# Dee                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-23=少なくとも、何が脅威かハッキリしたんだ。この事態を終わらせるキッカケが掴めた
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-24=それまでに俺の身体がバラバラにされちまわなきゃいいんだがな
+# Dee                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-25=そう心配するな。トライボット共は馬鹿でかいハサミを装備してるわけでもないんだし
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-26=面白くねえ冗談だ
+# Brok                                 
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-27=(この事実で一つだけ良い面があるとするなら…トライボット共はグラッフを襲う事はないって事だ)
+#----------------------------------------------------
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-1=もういい！ それよりこの男がアタシの状況について何を知ってるか暴かないと！
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-2=俺もそろそろそいつを始めようと思ってたトコだ！
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-3=この…その…レディはだな。仕事柄調査してた特ダネが原因で、勤めてた報道機関でハブられて辞職を余儀なくされたと思ってるんだよ
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-4=ついでに言うなら、彼女はメディアというメディアが政府によってコントロールされてると信じてらっしゃる
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-5=彼女の言ってる事は本当か？
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-6=それは…。まぁ。ある程度は真実だ
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-7=とはいえ、我々は重要な案件にしか介入は…
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-8=キサマは一体何をしたんだ？！ この薄汚い…
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-9=待ってくれ…！ 私は…何も悪い事はしていない！
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-10=何もしてないだって？！
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-11=アタシの人生をメチャクチャにしやがったクセに！！！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-12=ぎやああぁっ！
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-13=ちょっと落ち着けよ！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-14=私は…お主に関しては何の決定もしておらん！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-15=仮に私がそのような不当な処分を下したなら、必ず記憶に残るだろう！ そうであれば、お主と直接面会する事など受け容れなかったはずだ！ 逆恨みされるに決まっておろう！
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-16=そうだな。俺が同じ立場なら、自分が何か後ろめたい事をしちまった人物からは距離を置くだろう
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-17=黙れ！
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-18=なら誰がやったっていうんだ？！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-19=恐らく他の誰かだろう。トライアングルの中の…
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-20=フン。便利な言い訳だな
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-21=「大いなる決断を下す者」のクセに、実のところ殆ど何にも関わってないじゃないか！
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-22=た、頼む…
+# Gherkin                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-23=私は皆を助けたかっただけだ。私なりに最善を尽くしたのだよ！
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-24=俺は信じるぜ
+# Dee                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-25=フン！ お前が間違ってるってすぐに証明してやるよ
+# Brok                                 
+PC19B_CLUE_TRIANGLE_DEELIFE-26=話の続きといこう。まだ情報が出揃ってねえが、お前さんにはまだ何か隠し玉があるんだろ
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT-1=ディー。お前もしかして気付いてねえのか…？
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT-2=お前も博士も二人とも、トライアングルのメンバーの標的になってるぞ
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-1=ディー。お前もしかして気付いてねえのか…？
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-2=俺もお前も二人とも、トライアングルのメンバーの標的になってるぞ
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-3=この事態を打開するには、お互い協力するしかねえんじゃねえか？
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-4=…
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-5=お前さんが携わってきた潜入捜査の内容に光を当てる時が来たんじゃねえか
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-6=一体何を捜査してたんだ？
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-7=もしかしたら、お前さんの捜査の内容が、今起きてる事を理解するキッカケになるかもしれねえ
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-8=…いいだろう
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-9=随分長い間、アタシはこの社会のいろんな機能不全を目の当たりにしてきた
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-10=けど、政府が一体どんな風に機能してるか知った今となっては…驚きもしないわ
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-11=とにかく。アタシが一番懸念してる事は、スラムの住人が投獄された場合の身の上よ
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-12=ここ数ケ月、捕まったスラムの住人は例外なく全員死刑になってるの
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-13=全員だって？
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-14=ソースはちゃんと二重チェックした
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-15=一度でも牢に入れられた者が、その後牢から生きて出てきた痕跡は一切ない
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-16=厳重警備されてる刑務所の牢でも、警察署に併設されてる留置所でも同じだ。結果は変わらない
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-17=彼らはみんな…唐突にこの地上から消えてしまった
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-18=しかも、全く同じ時期から死体が火葬されたり処理されたりする件数が劇的に増えたんだよ
+# Dee                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-19=囚人の身に何が起きたのか、想像するは容易いだろう
+# Gherkin                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-20=そ、そんな…まさか…！
+# Brok                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-21=何か言いたい事があるのか、ドクター…？
+# Gherkin                                 
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-22=…
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-1=もう一度聞くぞ、ドクター…
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-2=何を言いたいのか分かっておる。手短に済ませよう
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-3=認めよう。トライアングルは囚人の刑を裁定する裁判権を持っている
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-4=それぞれの事件の捜査が終わり、最終判決を下す為に必要な情報が全て全て送られてくるのだ…
+# Brok                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-5=人の生死を決めるためのだろ
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-6=そうだ。だが…
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-7=彼女が言った事が起こり得るはずがないのだ…！
+# Dee                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-8=証拠ならちゃんと持ってる！
+# Brok                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-9=ちゃんと説明してくれ！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-10=私はどのような事件にも一貫して処刑には反対票を入れていたのだ
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-11=一人でも反対票を入れれば死刑判決は否決され、執行されないのだ！ 先ほど言っただろう！
+# Dee                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-12=なら、どうやって事実を確認したんだ？
+# Dee                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-13=アンタ一度でも自分の机を離れて、自分が下した決断の行方を確認した事があるのか？！
+# Gherkin                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-14=い、いや…。そのような事はしておらん…
+# Brok                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-15=おいちょっと待てよ…！
+# Brok                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-16=囚人は全員…死刑になってるって言ったよな…？
+# Dee                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-17=そうだ。平均すると、捕まってから二日後には処刑されてる事が多い
+# Brok                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-18=二日だって…！
+# Brok                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-19=おい、それがもし本当だったら…それってまさか…！
+# Dee                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-20=どうした？ 一体何が起こってるんだ…？
+# Dee                                 
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-21=言えよ！
+#----------------------------------------------------
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-1=ディー。お前の旦那が俺を雇って捜査させてたのは覚えてるか…？
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-2=あの件は…上手くいかなかったんだ
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-3=それ、どういう事…？
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-4=奴は投獄されてる。警察署の留置所だ
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-5=そ、そんな…！
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-6=いつから？！
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-7=二日ほど前からだ…
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-8=早く行かなきゃ！
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-9=今すぐに！！！
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-10=だめだ！
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-11=トライボットが狙ってるのはアンタだろ！ アタシじゃない！
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-12=何百体もの奴らが俺たちを囲んでるんだぞ！ それにお前もアイツらを殴ってただろ！
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-13=アイツら見境なく襲ってくるぞ！
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-14=けどチャンスがあるならみすみす見逃せない！
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-15=それに、警察署に着いてからどうするんだよ？
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-16=警備ロボットはお前を中に入れちゃくれないだろうし、シンを牢から出してもくれねえぞ！
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-17=それに…
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-18=この件の責任の一端は俺にもあるんだ
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-19=俺にはヤツを無理矢理連れ出すチャンスがあった。なのにしなかったんだ
+# Brok                                 
+PC19B_CLUE_SIN_DANGER-20=あの場所の仕掛けはよく知ってる！ 俺も手伝うぜ！
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-21=…
+# Dee                                 
+PC19B_CLUE_SIN_DANGER-22=後になって後悔しなきゃいいんだけど
+#----------------------------------------------------
+# Dee                                 
+PC19B_INTERROGATION_OVER-1=とりあえず、ここから脱出するのが先決だ！
+# Brok                                 
+PC19B_INTERROGATION_OVER-2=準備出来てるぜ！
+# Gherkin                                 
+PC19B_INTERROGATION_OVER-3=私はどうすればいいのだね…？
+# Brok                                 
+PC19B_INTERROGATION_OVER-4=頭を使え！ 何か役に立つものがあるだろ！
+# Gherkin                                 
+PC19B_INTERROGATION_OVER-5=あぁ…。お主が外に連れ出してくれるものとばかり思っていたのだが
+#----------------------------------------------------
+# Brok                                 
+PC19B_DEE_AFTER-1=何か見つけたか？
+# Dee                                 
+PC19B_DEE_AFTER-2=残念ながら、収穫なしだ…
+# Brok                                 
+PC19B_DEE_AFTER-3=心配するな。俺が何とかしてやる！
+# Dee                                 
+PC19B_DEE_AFTER-4=…助かるよ
+# Brok                                 
+PC19B_DEE_AFTER-5=(どうみても奴さん参っちまってるみたいだな。俺一人で片付けるのが賢明だな)
+#----------------------------------------------------
+
+# - - -
+# AddedPart 2022.07.29
+# - - -
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_INV_DEFAULT-1=ほらよ。持ってけ
+# Gherkin
+PC19B_GHERKIN_INV_DEFAULT-2=何のために…？ お主が持っていたまえ
+

@@ -1,0 +1,776 @@
+#-------------------------------
+#=POLICE ENTRANCE
+#-------------------------------
+
+#----- Interactions --------
+PC_JAIL=감옥으로
+PC_OFFICE=사무실
+PC_BARRIER=장벽
+
+#----- Choices / Items --------
+
+
+#----- Topics --------
+GOT_SPEAKER=스피커다!
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Go there before getting chip OR the mission for the hacker
+# *****************************************************************
+# Wes                                 
+PC09_TOOSOON1-1=...
+# Brok                                 
+PC09_TOOSOON1-2=이봐, 무슨 일이야?
+# Wes                                 
+PC09_TOOSOON1-3=이렇게 일찍 올 줄은 몰랐는데.
+# Wes                                 
+PC09_TOOSOON1-4=계획이 바뀌었다. 난 이만 가봐야겠어.
+# Brok                                 
+PC09_TOOSOON1-5=아니, 잠깐! 내가 뭘 해야...
+# Wes                                 
+PC09_TOOSOON1-6=나중에 임무를 맡기도록 하지.
+#----------------------------------------------------
+# Brok                                 
+PC09_TOOSOON2-1=와... 어쩜 저렇게 차갑게 대할 수 있지?
+# Brok                                 
+PC09_TOOSOON2-2=마치 로봇 같잖아.
+# Brok                                 
+PC09_TOOSOON2-3=음, 여기서 기다려봤자 의미 없군.
+# Brok                                 
+PC09_TOOSOON2-4=그동안 그래프를 위해 할 일을 해야겠어!
+#----------------------------------------------------
+# Brok                                 
+PC09_TOOSOON_SHAY-1=셰이가 뭘 원했더라...?
+#----------------------------------------------------
+# Brok                                 
+PC09_DOOR_TOOSOON-1=잠겼어...
+# Brok                                 
+PC09_DOOR_TOOSOON-2=지금은 그래프를 이 난장판에서 구하는 게 우선으로 걱정해야겠지.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC09_WINDOW1-1=너무 어두워... 안에 누가 있는지도 확인 못 하겠다.
+#----------------------------------------------------
+# Brok                                 
+PC09_BUTTON1-1=아... 이게 쓸만했으면 좋겠는데.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When sneaking after escaping jail
+# *****************************************************************
+# Brok                                 
+PC09_TO_JAIL1-1=돌아가기엔 너무 늦었어!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Shutting down tribot
+# *****************************************************************
+# Brok                                 
+PC09_TRIBOT_TOOFAR-1=저 전원을 끌 수 있을지도...
+# Brok                                 
+PC09_TRIBOT_TOOFAR-2=아무도 눈치 못채게 가까이 갈 수 있다면 말이지.
+#----------------------------------------------------
+# Brok                                 
+PC09_TRIBOT_ALREADY-1=더 이상 날 귀찮게 하지 않겠지...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More interactions
+# *****************************************************************
+# Brok                                 
+PC09_TO_OFFICE1-1=문이라곤 여기 뿐인데, 안에는 없어!
+#----------------------------------------------------
+# Brok                                 
+#This Tribot is actually a special model. He is blind because his captors are defective. Like other Tribots he refers to himself as "us"
+PC09_SPEAKER1-1=이 스피커는 내 기억에 없는데?
+# Blindbot                                 
+PC09_SPEAKER1-2=긍정. 망가진 관계로 오늘 바꿨습니다.
+# Blindbot                                 
+PC09_SPEAKER1-3=카메라가 제대로 작동하지 않을 경우 소리로 방문객의 요청을 이해하는 게 매우 중요하니까요.
+#----------------------------------------------------
+# Brok                                 
+#We stole the speaker
+PC09_SPEAKERGONE-1=(휘파람 소리)
+#----------------------------------------------------
+# Brok                                 
+PC09_SPEAKERTAKEOK-1=...
+# Brok                                 
+PC09_SPEAKERTAKEOK-2=됐다!
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE1-1=잠겼어...
+# Blindbot                                 
+PC09_OFFICE1-2=그 장소에 대한 입장은 금지되어있습니다.
+# Brok                                 
+PC09_OFFICE1-3=난 아니거든!
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE1B-1=언제나 그래왔듯 방법을 찾아야겠어.
+# Blindbot                                 
+PC09_OFFICE1B-2=그저 우연일 겁니다.. 인간들이 그런 걸 할 수 있을 리가요.
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE2-1=(꽉 닫혀 있어... 이거 열려고 폭력까지 쓰는 건 뭔가 아니야.
+# Blindbot                                 
+PC09_OFFICE2-2=이 문을 열려고 하지 말아 주세요.
+# Brok                                 
+PC09_OFFICE2-3=그걸 어떻게 아는데? 눈도 없으면서!
+# Blindbot                                 
+PC09_OFFICE2-4=하지만 저희에게 마이크로폰이 있으니까요.
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE_STORY190-1=잠겼어...
+# Blindbot                                 
+PC09_OFFICE_STORY190-2=웨스 서장 님은 물론 아무도 받질 않는군요.
+# Brok                                 
+PC09_OFFICE_STORY190-3=하지만 난 그 아무나가 아니야!
+# Blindbot                                 
+PC09_OFFICE_STORY190-4=저희가 확인해보겠습니다.
+# Blindbot                                 
+PC09_OFFICE_STORY190-5=틀렸군요. 당신은 "고 우선 사항"에 해당되지 않았습니다.
+# Blindbot                                 
+PC09_OFFICE_STORY190-6=당신은 그저 아무나로군요.
+# Brok                                 
+PC09_OFFICE_STORY190-7=큭...
+#----------------------------------------------------
+# Brok                                 
+PC09_OFFICE_STORY280-1=잠겼어...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to the blind bot at the reception
+# *****************************************************************
+# Brok                                 
+PC09_BLINDBOT1-1=안녕!
+# Blindbot                                 
+PC09_BLINDBOT1-2=적절한 바닥 패널에 서서 도움을 요청해 주세요.
+# Brok                                 
+PC09_BLINDBOT1-3=바닥... 패널?
+# Blindbot                                 
+PC09_BLINDBOT1-4=네. 서 주시길 바랍니다 방문자 님.
+# Brok                                 
+PC09_BLINDBOT1-5=이런 엉뚱한 짓을 할 시간 없다고!
+#----------------------------------------------------
+# Brok                                 
+PC09_THESITUATION-1=웨스가 오늘 아침에 만나자고 했어.
+# Blindbot                                 
+PC09_THESITUATION-2=확인 중입니다...
+# Blindbot                                 
+PC09_THESITUATION-3=긍정. 서장 님은 긴급 임무를 맡기 전 당신을 기다리고 있었습니다.
+# Blindbot                                 
+PC09_THESITUATION-4=서장 님은 복귀할 때까지 당신이 여기서 머물기를 요구했습니다.
+# Blindbot                                 
+PC09_THESITUATION-5=저흰 언제나 완벽하게 서장 님의 명에 따를 뿐입니다!
+# Brok                                 
+PC09_THESITUATION-6=하지만... 그 서장이란 사람이 날 임시로 경찰로 만들어줬다고!
+# Blindbot                                 
+PC09_THESITUATION-7=확인 중입니다...
+# Blindbot                                 
+PC09_THESITUATION-8=말하신 정보는 사실입니다.
+# Blindbot                                 
+PC09_THESITUATION-9=하지만 당신은 서장 님의 사무실로 접근할 수 있는 허가를 받지 못했습니다.
+# Brok                                 
+PC09_THESITUATION-10=실망이군...
+# Brok                                 
+PC09_THESITUATION-11=서장은 어디에 있나?
+# Blindbot                                 
+PC09_THESITUATION-12=그 정보는 기밀입니다.
+# Brok                                 
+PC09_THESITUATION-13=서장은 언제 돌아오는데?
+# Blindbot                                 
+PC09_THESITUATION-14=그 정보는 기밀입니다.
+# Brok                                 
+PC09_THESITUATION-15=확실히...
+# Brok                                 
+PC09_THESITUATION-16=(음, 무작정 앉아 있을 수는 없어.)
+# Brok                                 
+PC09_THESITUATION-17=(흠...)
+# Brok                                 
+PC09_THESITUATION-18=(어제 웨스를 만나다 보니... 기억난 게 있어.)
+# Brok                                 
+PC09_THESITUATION-19=(웨스는 리아의 죽음을 조사하는 책임자였어.)
+# Brok                                 
+PC09_THESITUATION-20=(그동안...)
+# Brok                                 
+PC09_THESITUATION-21=(의심하고 있었어... 웨스는 뭔가 숨기고 있다고.)
+# Brok                                 
+PC09_THESITUATION-22=(이게 유일한 기회일지도 몰라...)
+# Brok                                 
+PC09_THESITUATION-23=(웨스의 사무실로 들어갈 방법을 찾아야겠어!)
+#----------------------------------------------------
+# Brok                                 
+PC09_BLINDBOT2-1=저기!
+# Blindbot                                 
+PC09_BLINDBOT2-2=안녕하십니까 고객 님.
+# Blindbot                                 
+PC09_BLINDBOT2-3=적절한 바닥 패널에 서서 도움을 요청해 주세요.
+# Brok                                 
+PC09_BLINDBOT2-4=자유롭게 이야기할 수 있을까?
+# Blindbot                                 
+PC09_BLINDBOT2-5=아뇨. 올바른 패널에 서서 계시지 않습니다.
+# Brok                                 
+PC09_BLINDBOT2-6=그래서 뭐. 궁금한 게 있는데...
+# Brok                                 
+PC09_BLINDBOT2-7=넌 눈 먼 로봇이야? 네 눈엔 무슨 일이 벌어진 거지?
+# Blindbot                                 
+PC09_BLINDBOT2-8=저희는 눈이란 게 없습니다. 아마 "카메라"를 말씀하시는군요.
+# Brok                                 
+PC09_BLINDBOT2-9=그렇지...
+# Blindbot                                 
+PC09_BLINDBOT2-10=저희는 유지 보수 중이었지만, 직원 부족으로 인해 수리를 마치고 다시 연락을 받았습니다.
+# Blindbot                                 
+PC09_BLINDBOT2-11=그렇다고 해서 전혀 문제가 되지 않습니다! 저희 마이크가 제대로 작동해서 방문객들의 요청과 서장 님의 지시를 들을 수 있습니다.
+# Blindbot                                 
+PC09_BLINDBOT2-12=자, 부탁하실 게 있으시면 적절한 바닥 패널에 서 주시길 바랍니다.
+# Brok                                 
+PC09_BLINDBOT2-13=알았다, 알았어... 그 망할 버튼 눌러주지.
+#----------------------------------------------------
+# Brok                                 
+PC09_BLINDBOT3-1=그래서... 사무실로 들어가려면 어떻게 해야 하지?
+# Blindbot                                 
+PC09_BLINDBOT3-2=서장 님이 직접 지시했을 경우에만 당신을 들일 수 있습니다.
+# Brok                                 
+PC09_BLINDBOT3-3=웨스가 직접 지시했을 경우라...?
+# Blindbot                                 
+PC09_BLINDBOT3-4=긍정! 저희는 언제나 완벽하게 서장 님의 명에 따를 뿐입니다!
+# Brok                                 
+PC09_BLINDBOT3-5=흠...
+#----------------------------------------------------
+# Brok                                 
+PC09_BLINDBOT_ASK1-1=어떻게 살아가고 있니?
+# Blindbot                                 
+PC09_BLINDBOT_ASK1-2=기술적으로 우리는 살아있지 않습니다. 하지만 과학계에선 그에 대해 논쟁이...
+# Brok                                 
+PC09_BLINDBOT_ASK1-3=그래, 그래. 얌전히 굴 테니 제발 좀 닥쳐 줄래.
+#----------------------------------------------------
+# Blindbot                                 
+#Hitting the bot
+PC09_BLINDBOT_HIT1-1=물건에 손상을 주지 말아 주세요.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_BLINDBOT_HIT2-1=당신은 실수를 저지르고 있는 겁니다. 분노의 폭발을 자제해 주세요.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_BLINDBOT_HIT3-1=시민이 미쳐버렸습니다! 엉덩이를 때려줘야겠군요!
+#----------------------------------------------------
+# Blindbot                                 
+#Losing fight
+PC09_BLINDBOT_GAMEOVER1-1=체벌 종료.
+#----------------------------------------------------
+# Brok                                 
+#Killing the bot
+PC09_BLINDBOT_DEATH1-1=...
+# Brok                                 
+PC09_BLINDBOT_DEATH1-2=기계장치가 해제된 소리를 들었어. 그렇다는 건...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When solving the puzzle (stepping on the panels in correct order)
+# *****************************************************************
+# Blindbot                                 
+PC09_BLINDBOT_OK-1=확인 중입니다...
+# Blindbot                                 
+PC09_BLINDBOT_OK-2=서장 님의 지시가 확인되었습니다. 당신을 위해 사무실의 잠금을 해제했습니다.
+# Brok                                 
+PC09_BLINDBOT_OK-3=그 말은... 들어가도 된다는 거지?
+# Blindbot                                 
+PC09_BLINDBOT_OK-4=긍정.
+# Brok                                 
+PC09_BLINDBOT_OK-5=좋았어...!
+# Brok                                 
+PC09_BLINDBOT_OK-6=(AI보다 진보된 나의 발바닥이여...!)
+#----------------------------------------------------
+# Blindbot                                 
+PC09_BLINDBOT_NOPE-1=확인 중입니다...
+# Blindbot                                 
+PC09_BLINDBOT_NOPE-2=유효한 지시가 아닙니다.
+# Blindbot                                 
+PC09_BLINDBOT_NOPE-3=저희 서장 님은 언제나 저희에게 지시를 정중히 내립니다.
+# Brok                                 
+PC09_BLINDBOT_NOPE-4=(뭐라고...?)
+#----------------------------------------------------
+# Blindbot                                 
+#This happens when we almost step on the correct panels but not quite
+PC09_BLINDBOT_REACT-1=...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - IMPORTANT : The floor panels are part of a puzzle.
+# *****************************************************************
+# Wes                                 
+#The player must "play" them in the correct order in order to form the sentence : "Please Mister Pork, Enter My office!" => Be sure to translate these so the order makes a legible sentence!
+PC09_FLOOR1A-1=자!
+# Wes                                 
+PC09_FLOOR1A-2=여기서 불만을 제기해 주시길 바랍니다.
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR1B-1=자!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR2A-1=포크 씨!
+# Wes                                 
+PC09_FLOOR2A-2=저희와 함께 라면 당신의 개인 정보는 안전합니다!
+# Wes                                 
+PC09_FLOOR2A-3=귀하가 공유하는 모든 정보는 전 세계 모든 서버에 보관되며, 무결성을 보장하기 위해 여러 백업을 수행합니다.
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR2B-1=포크 씨!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR3A-1=뭐든지 물어보시죠!
+# Wes                                 
+PC09_FLOOR3A-2=우리의 자동화된 요원들이 최선을 위해 당신에게 응답해 줄 겁니다!
+# Wes                                 
+PC09_FLOOR3A-3=유료 서비스이므로 매분 5 유니스 씩 받습니다.
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR3B-1=뭐든지 물어보시죠!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR4A-1=내 사무실로!
+# Wes                                 
+PC09_FLOOR4A-2=이 자리에서는 감옥, 식당 또는 사무실을 방문하기 위해 특별 입장을 요청할 수 있습니다!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR4B-1=내 사무실로!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR5A-1=어서 오게나!
+# Wes                                 
+#25 hours isn't a mistake. In this universe each day is 25 hours long.
+PC09_FLOOR5A-2=저희는 매일 25시간 당신을 반길 것입니다. 여기에 계셔서 마실 것이라도 주문하는 게 어떻겠습니까!
+#----------------------------------------------------
+# Wes                                 
+PC09_FLOOR5B-1=어서 오게나!
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER0-1=방금 그거... 웨스의 목소리인가...?
+# Blindbot                                 
+PC09_PANELAFTER0-2=긍정.
+# Blindbot                                 
+PC09_PANELAFTER0-3=저희 서장 님은 방문객들을 매우 존경하는 의미로.
+# Blindbot                                 
+PC09_PANELAFTER0-4=과장 님께서 직접 녹음한 메시지를 써먹어야 한다고 주장하셨습니다.
+# Brok                                 
+PC09_PANELAFTER0-5=예상... 밖인 걸.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER1_1-1=말해 주십시오. 불만 사항이 무엇입니까?
+# Brok                                 
+PC09_PANELAFTER1_1-2=젠장! 어서 그 망할 사무실로 안내하는 게 좋을 거야, 안 그러면...!
+# Blindbot                                 
+PC09_PANELAFTER1_1-3=받아들일 수 없는 종류의 불만 사항이로군요.
+# Blindbot                                 
+PC09_PANELAFTER1_1-4=다시 질문해 주십시오.
+# Brok                                 
+PC09_PANELAFTER1_1-5=흠...
+# Brok                                 
+PC09_PANELAFTER1_1-6=간절히 부탁합니다 로봇님!
+# Brok                                 
+PC09_PANELAFTER1_1-7=제가 필름이 끊기기 전에 저 멋진 방으로 들어가게 해주실 수 있을까요!
+# Blindbot                                 
+PC09_PANELAFTER1_1-8=불만 사항 접수가 거부되었습니다!
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER1_2-1=다 잊어버려. 아무리 불만해봤자 시간 낭비만 할 뿐이니까.
+# Blindbot                                 
+PC09_PANELAFTER1_2-2=감사합니다!
+# Brok                                 
+PC09_PANELAFTER1_2-3=(음, 모든 트라이봇들은 같은 수준의 지능을 공유하는 모양이로군.)
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER2_1-1=서장의 녹음된 목소리를 듣자 하니, 결국 내 이름을 제대로 발음하지 않으려나 본데... 저게 어떻게 작동하는 거지?
+# Blindbot                                 
+PC09_PANELAFTER2_1-2=압력 패널 위에 서서 계십니다.
+# Blindbot                                 
+PC09_PANELAFTER2_1-3=발 지문을 스캔하여 신원 조회를 위해 데이터베이스에 연결할 수 있습니다.
+# Blindbot                                 
+PC09_PANELAFTER2_1-4=식별이 쉬울수록 절차도 훨씬 더 간단해진답니다!
+# Brok                                 
+PC09_PANELAFTER2_1-5=아무래도 신발을 신어야겠어...
+# Blindbot                                 
+PC09_PANELAFTER2_1-6=이럴 수가! 저희는 신발을 신은 상태에서도 발 지문을 스캔할 수 있답니다.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER2_2-1=명료한 기밀 유지를 위해 귀하의 개인 데이터 사본을 전송해 드리겠습니다!
+# Brok                                 
+PC09_PANELAFTER2_2-2=이렇게 하면 잃어버린 기억을 되찾을 수 있을까?
+# Blindbot                                 
+PC09_PANELAFTER2_2-3=부정!
+# Blindbot                                 
+PC09_PANELAFTER2_2-4=인간은 이렇게 중요한 정보를 이런 식으로 전달하는데 있어서 신뢰성이 떨어진다고 간주됩니다.
+# Blindbot                                 
+PC09_PANELAFTER2_2-5=따라서 당신의 모든 데이터는 암호화되어 있습니다! 저희와 같은 행정 서비스만이 귀하의 개인 정보를 해독할 수 있습니다.
+# Brok                                 
+PC09_PANELAFTER2_2-6=그것 참 많이도 도움 되겠구만...
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER3_1-1=저희는 비대칭 암호문을 좋아합니다! 당신은 어떠십니까?
+# Brok                                 
+PC09_PANELAFTER3_1-2=내가 그런 대화를 나누지 못 한다 생각해?
+# Blindbot                                 
+PC09_PANELAFTER3_1-3=저희의 통계에 따르면 인간은 적절한 대화 주제를 선택하는 데 엄청난 어려움을 겪고 있습니다.
+# Brok                                 
+PC09_PANELAFTER3_1-4=뭐, 비밀 어쩌구 뭐시기 갖고 토론할 의도는 없다고!
+# Blindbot                                 
+PC09_PANELAFTER3_1-5=원하신다면!
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER3_2-1=제가 제안...
+# Brok                                 
+PC09_PANELAFTER3_2-2=떠드는 입 좀 닫아라.
+# Blindbot                                 
+PC09_PANELAFTER3_2-3=그러죠. 그러면 건물의 모든 문을 닫도록 하겠습니다.
+# Brok                                 
+PC09_PANELAFTER3_2-4=아, 아니! 그런 의도로 말한 게 아니라...
+# Blindbot                                 
+PC09_PANELAFTER3_2-5=작업이 거부되었습니다.
+# Brok                                 
+PC09_PANELAFTER3_2-6=휴!
+# Brok                                 
+PC09_PANELAFTER3_2-7=끔찍한 로봇과 사이좋게 갇히는 게 내 마지막 말이 될 뻔했네.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER4_1-1=웨스의 사무실 내부로 방문해도 될까...?
+# Blindbot                                 
+PC09_PANELAFTER4_1-2=죄송합니다. 그곳으로 방문객이 출입할 수 없습니다.
+# Brok                                 
+PC09_PANELAFTER4_1-3=그런 듯 하네...
+# Brok                                 
+PC09_PANELAFTER4_1-4=그러면... 씬에게 방문해도 될까? 감옥에 있거든.
+# Blindbot                                 
+PC09_PANELAFTER4_1-5=당신은 관계자이십니까?
+# Brok                                 
+PC09_PANELAFTER4_1-6=엄... 친구지.
+# Blindbot                                 
+PC09_PANELAFTER4_1-7=요청 사항이 거부되었습니다.
+# Brok                                 
+PC09_PANELAFTER4_1-8=흐음.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER4_2-1=식당에 가는 건? 방문할 수 있는 거 맞지?
+# Blindbot                                 
+PC09_PANELAFTER4_2-2=부정.
+# Blindbot                                 
+PC09_PANELAFTER4_2-3=최근에 닫혀 있었습니다. 저희 중 아무도 음식을 먹지 않으니까요.
+# Brok                                 
+PC09_PANELAFTER4_2-4=너희들 중 아무도? 웨스나 R.J.나 수감자들은...?
+# Blindbot                                 
+PC09_PANELAFTER4_2-5=그에 대해 답을 드릴 수 있군요. 요원들은 여기서 식사를 하지 않습니다.
+# Blindbot                                 
+PC09_PANELAFTER4_2-6=수감자들에게 고형물의 식사를 제공할 가치가 충분하지 않다고 판단되었기에.
+# Blindbot                                 
+PC09_PANELAFTER4_2-7=액상형 대체 식사를 제공하고 있습니다.
+# Brok                                 
+PC09_PANELAFTER4_2-8=으윽... 저기서 탈출할 수 있어서 다행이로군...
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER5_1-1=넌 밤에 무슨 일을 하는지 궁금한걸...
+# Blindbot                                 
+PC09_PANELAFTER5_1-2=경찰서를 지키기. 방을 청소하기. 계획 준비하기. 물건 주문하기. 수감자를 죽이기.
+# Brok                                 
+PC09_PANELAFTER5_1-3=그래, 그래. 이해했...
+# Brok                                 
+PC09_PANELAFTER5_1-4=어... 방금 수감자랑 뭐라고 말했지...?
+# Blindbot                                 
+PC09_PANELAFTER5_1-5=수감자를 다루기. 살펴본다는 말입니다.
+# Brok                                 
+PC09_PANELAFTER5_1-6=그렇겠지...
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER5_2-1=항상 열려 있다 라... 모든 직원이 로봇이라면 어렵지도 않지.
+# Blindbot                                 
+PC09_PANELAFTER5_2-2=문의 사항을 이해하지 못했습니다. 다시 질문해 주세요.
+# Brok                                 
+PC09_PANELAFTER5_2-3=이건 문의 사항이 아니라 그냥 고함이라고.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANELAFTER5_3-1=뭔가 마셔도 될까?
+# Blindbot                                 
+PC09_PANELAFTER5_3-2=안타깝게도 됩니다.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_PANELAFTER5_DRINK-1=우리는 당신이 마음에 들진 않지만, 어쨌든 물어봐야겠군요.
+# Blindbot                                 
+PC09_PANELAFTER5_DRINK-2=마실 것 드릴까요?
+#----------------------------------------------------
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-1=여기요.
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-2=우와! 이거 완전 거침없이 흐르잖아! 마치 폭포수처럼!
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-3=내 아름다운 코트에 흘리지 않게 조심해야겠어.
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-4=아름다운...?
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-5=저희가 웃을 수만 있다면 지금쯤 바닥에서 나뒹굴고 있겠죠.
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-6=야! 너 로봇이잖아! 그리고 눈도 멀었고!
+# Brok                                 
+PC09_DRINK_FLOWING_WATER1-7=나라면 몰라도 너희가 그런 취향을 가질 리가 없잖아.
+# Blindbot                                 
+PC09_DRINK_FLOWING_WATER1-8=정확합니다.
+#----------------------------------------------------
+# Blindbot                                 
+PC09_DRINK_SEWAGE_SLUDGE1-1=여기요.
+# Brok                                 
+PC09_DRINK_SEWAGE_SLUDGE1-2=(냄새나)
+# Brok                                 
+PC09_DRINK_SEWAGE_SLUDGE1-3=...정말로 이딴 걸...?
+# Blindbot                                 
+PC09_DRINK_SEWAGE_SLUDGE1-4=당신의 요청 사항입니다. 거부할 수 없습니다.
+# Brok                                 
+PC09_DRINK_SEWAGE_SLUDGE1-5=알았어...
+#----------------------------------------------------
+# Blindbot                                 
+PC09_DRINK_SOLID_JUICE1-1=여기요.
+# Brok                                 
+PC09_DRINK_SOLID_JUICE1-2=그거 주스 맞아...? 고형물인 줄 알았는데.
+# Blindbot                                 
+PC09_DRINK_SOLID_JUICE1-3=물론 아닙니다. 고형물 주스라고 합니다.
+# Brok                                 
+PC09_DRINK_SOLID_JUICE1-4=마시기엔 쉽지 않아 보이네.
+#----------------------------------------------------
+# Brok                                 
+PC09_PANEL5_GETDRINK1-1=야, 장님 로봇! 마실 게 필요해!
+# Blindbot                                 
+PC09_PANEL5_GETDRINK1-2=잘못 들었습니다?
+# Brok                                 
+PC09_PANEL5_GETDRINK1-3=하긴, 네 시스템이 좀... 망가지긴 했지.
+# Blindbot                                 
+PC09_PANEL5_GETDRINK1-4=참 의지가 안 되는 하드웨어로군요.
+# Blindbot                                 
+PC09_PANEL5_GETDRINK1-5=무엇을 원하십니까?
+#----------------------------------------------------
+# Brok                                 
+PC09_PANEL5_GETDRINK2-1=혹시 그거 줄 수 있나...
+#----------------------------------------------------
+# Brok                                 
+#In this case we killed the bot
+PC09_PANEL5_GETDRINKGONE1-1=야, 장님 로봇! 마실...
+# Brok                                 
+PC09_PANEL5_GETDRINKGONE1-2=이런, 까먹고 있었다.
+# Brok                                 
+PC09_PANEL5_GETDRINKGONE1-3=알아서 찾지 뭐!
+#----------------------------------------------------
+# Brok                                 
+PC09_PANEL5_GETDRINKGONE2-1=흠...
+#----------------------------------------------------
+# Blindbot                                 
+PC09_LASER_FORBIDDEN-1=허가 받은 사람들과 수감자들에게만 접근이 가능한 모양인데.
+# Brok                                 
+PC09_LASER_FORBIDDEN-2=하지만... 난 지금 경찰이다 이 말이야!
+# Blindbot                                 
+PC09_LASER_FORBIDDEN-3=맞습니다. 1등급 요원이죠.
+# Blindbot                                 
+PC09_LASER_FORBIDDEN-4=당신에게 현관과 외부 지역을 순찰하는 것만 허용됩니다.
+# Brok                                 
+PC09_LASER_FORBIDDEN-5=으윽...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Cutscene
+# *****************************************************************
+# Unknown                                 
+PC09_LATER-1=얼마 뒤...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to sneak, no alarm yet
+# *****************************************************************
+# Brok                                 
+PC09_ARRIVE_SNEAK-1=로봇이 셋...
+# Brok                                 
+PC09_ARRIVE_SNEAK-2=카메라는 앞에 있군. 조금만 조심하면 들키진 않겠지만...
+# Brok                                 
+PC09_ARRIVE_SNEAK-3=로봇 하나는 출구에서 꼼짝하지 않고 지키고 있군. 어떻게 해야 하지...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, Wes arrives when opening door
+# *****************************************************************
+# Wes                                 
+PC09_AFTER_TRYOPEN1-1=멈춰!
+# Brok                                 
+PC09_AFTER_TRYOPEN1-2=...
+# Wes                                 
+PC09_AFTER_TRYOPEN1-3=이 문을 열지 않는 게 좋을 걸.
+# Brok                                 
+PC09_AFTER_TRYOPEN1-4=아, 그래...? 맛 좀!
+#----------------------------------------------------
+# Brok                                 
+PC09_AFTER_TRYOPEN2-1=아니 ㅁ... ㅁ....
+# Brok                                 
+PC09_AFTER_TRYOPEN2-2=(...)
+# Wes                                 
+#To enforce that this is a cutscene in which Brok cannot hear anything (he's frozen) and he talks about his evil plans, Wes should probably address Brok in an informal way for this dialog.
+PC09_AFTER_TRYOPEN2-3=한 번 얼어봐야 정신을 차리겠지.
+# Wes                                 
+PC09_AFTER_TRYOPEN2-4=...
+# Wes                                 
+PC09_AFTER_TRYOPEN2-5=내 생각보다 넌 꽤 머리가 돌아가는 녀석이었군.
+# Wes                                 
+PC09_AFTER_TRYOPEN2-6=이게 문제가 될 수도 있겠어.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, Wes arrives when all robots dead
+# *****************************************************************
+# Wes                                 
+PC09_AFTERFIGHT1-1=언제나 속을 썩이는 군, 안 그래?
+# Wes                                 
+PC09_AFTERFIGHT1-2=놀이는 여기까지다. 손 머리 위로 올려.
+# Brok                                 
+PC09_AFTERFIGHT1-3=날 멈출 수 없을 ㄱ...
+#----------------------------------------------------
+# Unknown                                 
+PC09_AFTERFIGHT2-1=(척)
+#----------------------------------------------------
+# Wes                                 
+PC09_AFTERFIGHT3-1=...
+# Wes                                 
+PC09_AFTERFIGHT3-2=내 생각보다 더 강한 녀석이었군.
+# Wes                                 
+#Same thing here for this alternate dialog, Wes talks to Brok in informal way.
+PC09_AFTERFIGHT3-3=그래도 다행스럽게도 그렇게 똑똑한 녀석은 아니었어.
+#----------------------------------------------------
+# Wes                                 
+PC09_AFTERCUTSCENE-1=널 살려달라는 요청을 받았다.
+# Wes                                 
+PC09_AFTERCUTSCENE-2=하나도 이해가 안 가더군. 결국 당신이 그 녀석한테 한 짓을 생각하면...
+# Wes                                 
+PC09_AFTERCUTSCENE-3=음. 문제될 건 없어.
+# Wes                                 
+PC09_AFTERCUTSCENE-4=마지막 계획이 시작됐다. 모든 게 내 손바닥 아래에 있어.
+# Wes                                 
+PC09_AFTERCUTSCENE-5=나한테 협력하는 게 좋을 거야. 그렇지 않으면...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, robots spot us
+# *****************************************************************
+# Tribotcop                                 
+PC09_SPOTTED1-1=침입자 경보!
+#----------------------------------------------------
+# Tribotcop                                 
+PC09_SPOTTED_STORY280B-1=저 인간이. 뭘 하고 있지?!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - rescuing Sin with Dee
+# *****************************************************************
+# Tribotcop                                 
+PC09_SPOTTED_FIGHT1-1=도와드릴 일이 있습니까?
+# Brok                                 
+PC09_SPOTTED_FIGHT1-2=응. 자살해 줄래?
+# Tribotcop                                 
+PC09_SPOTTED_FIGHT1-3=못 들은 걸로 하겠습니다.
+# Brok                                 
+PC09_SPOTTED_FIGHT1-4=실망이군. 그렇다면 내가 직접 박살 낼 수 밖에!
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND1-1=멋진데!
+# Brok                                 
+PC09_SMASH_FIGHTEND1-2=고마워! 하지만 어서 이동하는 게 좋겠어. 느낌이 안 좋아...
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND1B-1=저길 봐! 안쪽으로 향하는 통로가...!
+# Brok                                 
+PC09_SMASH_FIGHTEND1B-2=굳혀져... 있잖아?!
+# Dee                                 
+PC09_SMASH_FIGHTEND1B-3=우리가 뭘 해야 하지?
+# Brok                                 
+PC09_SMASH_FIGHTEND1B-4=통로를 부숴버리자! 말고 뭐가 있겠어...?
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND1C-1=젠장! 더 오고 있잖아!
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND2-1=저 벽. 녀석들이 오기 전에 박살...
+# Brok                                 
+PC09_SMASH_FIGHTEND2-2=으윽! 끝이 없잖아...!
+#----------------------------------------------------
+# Dee                                 
+PC09_SMASH_FIGHTEND3-1=저 벽을 부숴버려! 안 그러면 끝도 없을걸!
+#----------------------------------------------------
+# Brok                                 
+PC09_SMASH_FINALLY-1=마침내!
+# Dee                                 
+PC09_SMASH_FINALLY-2=어서 가자고!
+#----------------------------------------------------
+# Dee                                 
+PC09_OFFICE_INFILTRATE-1=야...! 뭐하고 있어?
+# Dee                                 
+PC09_OFFICE_INFILTRATE-2=네가 이 장소를 알고 있다 생각했는데.
+# Brok                                 
+PC09_OFFICE_INFILTRATE-3=엄... 맞아.
+#----------------------------------------------------
+# Brok                                 
+PC09_BARRIER1-1=(속삭임) 젠장... 장벽을 잊고 있었어.
+# Dee                                 
+PC09_BARRIER1-2=으윽...
+# Dee                                 
+PC09_BARRIER1-3=어서 저 로봇들을 박살 내고...
+# Brok                                 
+PC09_BARRIER1-4=아니, 그러지 마...!
+# Brok                                 
+PC09_BARRIER1-5=뾰족한 수가 있을 테니 생각 좀 하자고!
+#----------------------------------------------------
+# Brok                                 
+PC09_BARRIER2-1=셰이가 여기에 있었으면 도움이 됐을 텐데...
+# Brok                                 
+PC09_BARRIER2-2=흠...
+#----------------------------------------------------
+# Brok                                 
+PC09_BARRIER_REMOTECONTROL1-1=이게 되네...?!
+# Brok                                 
+PC09_BARRIER_REMOTECONTROL1-2=빨리! 어서 가자고!
+#----------------------------------------------------
+# Brok                                 
+PC09_DAY2_BARRIER-1=지나갈 수 없어.
+#----------------------------------------------------
+# Brok                                 
+PC09_BARRIER_REMOTECONTROL_DAY2-1=흠...!
+#----------------------------------------------------
+# Brok                                 
+#Talking to the tribots
+PC09_TRIBOT_INFILTRATE1-1=안녕!
+# Dee                                 
+PC09_TRIBOT_INFILTRATE1-2=대체 뭔 짓을 벌이는 거야?!
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE1-3=안녕하십니까.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE1-4=수감자를 방문하고 싶은데, 우릴 위해 문을 열어 줄 수 있어?
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE1-5=죄송합니다. 방문자. 받지 않습니다.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE1-6=하지만 난 친구인 걸!
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE1-7=죄송합니다. 방문자. 받지 않습니다.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE1-8=뭐 적어도 시도는 나쁘지 않았지.
+# Dee                                 
+PC09_TRIBOT_INFILTRATE1-9=그게 무슨 소리야...!
+#----------------------------------------------------
+# Brok                                 
+PC09_TRIBOT_INFILTRATE2-1=감옥에 방문 못 하는 거, 확실해?
+# Tribotcop                                 
+PC09_TRIBOT_INFILTRATE2-2=계속 물어보시죠. 그러면 저희가 당신을 감금할 테니까요.
+# Brok                                 
+PC09_TRIBOT_INFILTRATE2-3=헤에, 그거 그렇게 나쁜 생각은 아닌데!
+# Dee                                 
+PC09_TRIBOT_INFILTRATE2-4=관둬. 우린 지금 탈옥 놀이 할 때가 아니라고.
+#----------------------------------------------------
+# Brok                                 
+PC09_DEE1-1=적어도 저 녀석들, 아무것도 의심하고 있지 않군.
+# Dee                                 
+PC09_DEE1-2=확실히. 우린 아무것도 의심스러운 짓을 하지 않았으니까.
+#----------------------------------------------------
+# Dee                                 
+PC09_DEE1_ALT-1=뭔가 수상해. 넌 저들의 목표 대상이 아니었어?
+#----------------------------------------------------
+# Brok                                 
+PC09_BLINDBOT_REMOTECONTROL-1=이걸로는 부족해.
+#----------------------------------------------------
+# Brok                                 
+PC09_WINDOWOFF_AD1-1=이야! 광고 쿠폰이 끼어있었네.
+#----------------------------------------------------
+# Brok                                 
+PC09_WINDOWOFF_AD2-1=여전히 끼어있어.
+#----------------------------------------------------
+# Brok                                 
+PC09_WINDOWOFF_ADOK-1=됐다!
+#----------------------------------------------------
+# Unknown                                 
+COOP_PC09_BLINDBOT1-1=저 로봇이 눈이 먼 점을 이용해야겠어.
+#----------------------------------------------------

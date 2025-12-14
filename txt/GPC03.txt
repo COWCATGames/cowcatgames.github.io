@@ -1,0 +1,620 @@
+﻿#-------------------------------
+#=GRAFF - OUTSIDE BROK SECTOR
+#-------------------------------
+
+#----------------------
+#= Tramp
+#----------------------
+
+ID=GPC03_FIRST_TRAMP1
+T=(A beggar...)
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+MOOD=THINK
+#TODO movements
+CONTEXT=Graff meeting the tramp for the first time - he usually stays away from weird strangers
+
+T=(Don't look at him, keep your eyes to the ground...)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+T=Hello, my boy!
+W=TRAMP
+C2=TRAMP
+C2A=NORMAL
+
+T=(Oh no...)
+W=GRAFF
+A=GASP
+MOOD=THINK
+
+T=Please wait! You live here, right? With the detective?
+W=TRAMP
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=How do you know? Are you spying on us?!
+W=GRAFF
+C1A=ANGRY
+
+T=I'd better call...
+W=GRAFF
+SKIPEND=1
+
+T=Look at me, boy. Do you really expect that from an old geezer?
+W=TRAMP
+
+T=I'm alive right now because your dad stood up for me against Squealers this morning.
+W=TRAMP
+
+T=He's not my father. Leave me alone.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Fine!
+W=TRAMP
+
+T=Farewell.
+W=TRAMP
+
+T=...
+W=GRAFF
+C2=NONE
+
+T=(Maybe I was a bit harsh.)
+W=GRAFF
+C1A=TURN
+MOOD=THINK
+
+T=(After all... I could be in the same situation if it wasn't for Brok...)
+W=GRAFF
+MOOD=THINK
+TEN=CLICKERS_BACK
+
+#----------------------
+
+ID=GPC03_WELCOME_TRAMP1
+T=What did Brok do, exactly?...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=TRAMP
+C2A=NORMAL
+
+T=Long story short... I owed money to the Squealers. They were ready for payback.
+W=TRAMP
+C2A=DOWN
+
+T=He gave them quite a beating!
+W=TRAMP
+C2A=COCKY
+
+T=Did he?...
+W=GRAFF
+C1A=MEH
+
+T=Offering help and risking his butt for free... That doesn't sound like him.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Maybe you don't know him that well.
+W=TRAMP
+C2A=NORMAL
+
+T=Well, I know one thing for sure.
+W=GRAFF
+C1A=TURN
+
+T=In the end, he always either gets fooled or screws everything up.
+W=GRAFF
+
+T=My boy, the result never really matters. Only the intent.
+W=TRAMP
+
+T=If you say so...
+W=GRAFF
+C1A=OPPOSITE
+
+
+#----------------------
+
+ID=GPC03_WELCOME_TRAMP2
+T=Hello, my boy!
+W=TRAMP
+C1=GRAFF
+C1A=MEH
+C2=TRAMP
+C2A=NORMAL
+
+T=I'm afraid I don't have much to offer but... Do you need anything?
+W=TRAMP
+
+T=Hmm... I'll let you know.
+W=GRAFF
+C1A=THINK
+
+T=Very well. I'm not going anywhere.
+W=TRAMP
+
+T=I can't, anyway.
+W=TRAMP
+C2A=DOWN
+
+T=...
+W=GRAFF
+C1A=SAD
+
+T=(Must be hard...)
+W=GRAFF
+MOOD=THINK
+
+#----------------------
+
+ID=GPC03_TRAMP_PILL1
+T=(Cough, cough)
+W=GRAFF
+C1=GRAFF
+C1A=CHOKE
+CONTEXT=Day 2 - Graff is suffering from pollution and come back home, the Tramp sees him
+
+T=Are you okay, my boy?
+W=TRAMP
+C2=TRAMP
+C2A=WONDER
+
+T=Yeah... I'm... (Cough, cough)
+W=GRAFF
+C1A=SAD
+
+T=I'm fine...
+W=GRAFF
+C1A=SAD
+
+T=No, you're not!
+W=TRAMP
+C2A=ANGRY
+
+T=Oh no... You didn't take your pill, did you?...
+W=TRAMP
+C2A=WONDER
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=Please tell me you have one...!
+W=GRAFF
+C1A=SAD
+
+T=Terribly sorry... I used my last one today...
+W=TRAMP
+C2A=DOWN
+
+T=Quick! You need to go indoors!
+W=TRAMP
+C2A=NORMAL
+
+T=I know... (Cough) I was going to...
+W=GRAFF
+C1A=CHOKE
+
+T=I wish I could do more than give you advice...
+W=TRAMP
+C2A=DOWN
+
+T=Your father will be back soon... I'm sure of it.
+W=TRAMP
+C2A=NORMAL
+
+T=No way...! I can't rely on him... (Cough, cough)
+W=GRAFF
+C1A=ANGRY
+TEN=GPC03_TRAMP_PILLWELCOME
+
+#----------------------
+
+ID=GPC03_TRAMP_PILLWELCOME
+T=Be safe...
+W=TRAMP
+C1=GRAFF
+C1A=MEH
+C2=TRAMP
+C2A=NORMAL
+
+#----------------------
+
+ID=GPC03_WELCOME_TRAMP3
+T=Hello, my boy!
+W=TRAMP
+C1=GRAFF
+C1A=MEH
+C2=TRAMP
+C2A=NORMAL
+CONTEXT=Day 3 - Graff talks to the tramp
+
+T=I'm glad to see you're okay!
+W=TRAMP
+
+T=You seem to be doing well too.
+W=GRAFF
+C1A=FRIENDLY
+
+T=You can thank your dad for that.
+W=TRAMP
+C2A=COCKY
+
+T=He brought me the rare medicine I needed.
+W=TRAMP
+
+T=Really?...
+W=GRAFF
+C1A=THINK
+TEN=GPC03_WELCOME_TRAMP4
+
+
+#----------------------
+
+ID=GPC03_WELCOME_TRAMP4
+T=My boy, I'm afraid this is the last time we'll meet.
+W=TRAMP
+C1=GRAFF
+C1A=MEH
+C2=TRAMP
+C2A=NORMAL
+
+T=Please... Promise.
+W=TRAMP
+
+T=Always stay close to him.
+W=TRAMP
+
+T=...
+W=GRAFF
+
+T=Goodbye...
+W=GRAFF
+C1A=TORN
+
+#----------------------
+#= Stove
+#----------------------
+
+ID=GPC03_STOVE_NOTRAMP1
+T=It's burning...
+W=GRAFF
+A=MEH
+CONTEXT=Using the tramp stove
+
+T=No one's around. Weird.
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+
+ID=GPC03_STOVE_OTHERS
+T=Erm... I don't wanna burn that!
+W=GRAFF
+A=STUPID
+
+
+#----------------------
+
+ID=GPC03_STOVE_NOTRAMP_STATUETTE
+T=The statuette has melted. Good!
+W=GRAFF
+A=READY
+
+T=It's still hot. I'll use that old piece of cloth to wrap it.
+W=GRAFF
+A=THINK
+TEN=GPC03_STOVE_GETPLASTIC
+
+#----------------------
+
+ID=GPC03_STOVE_STATUETTE_AFTER
+T=It's all sticky! Better use it fast before it gets hard again.
+W=GRAFF
+A=READY
+TEN=GPC03_STOVE_GETPLASTIC_CHECK
+
+#----------------------
+
+ID=GPC03_STOVE_TRAMP1
+T=Fire...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=TRAMP
+C2A=NORMAL
+
+T=...
+W=TRAMP
+
+T=Does fire evoke something to you?
+W=TRAMP
+
+T=N... No. I'm just...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Surprised. We hardly need to make a real fire nowadays.
+W=GRAFF
+
+T=Things change.
+W=TRAMP
+
+T=In my time, everyone could light up a fire. Sometimes for necessity, often for fun.
+W=TRAMP
+C2A=WONDER
+
+T=Then our society told us what to think.
+W=TRAMP
+
+T="Don't make a fire, it's dangerous."
+W=TRAMP
+C2A=NORMAL
+
+T="Don't drive an Aircar yourself, it's dangerous."
+W=TRAMP
+
+T="Don't go mountain climbing, it's dangerous."
+W=TRAMP
+
+T=Every potential threat got banned.
+W=TRAMP
+C2A=NORMAL
+
+T=What's wrong with that? It's obviously for safety reasons.
+W=GRAFF
+C1A=THINK
+
+T=Safety...
+W=TRAMP
+
+T=No one is safe in the current world.
+W=TRAMP
+C2A=ANGRY
+
+T=Not here, for sure. But Drumers are safe.
+W=GRAFF
+C1A=DISDAIN
+
+T=Are they? I wonder...
+W=TRAMP
+C2A=WONDER
+
+T=...
+W=GRAFF
+C1A=MEH
+
+
+#----------------------
+
+ID=GPC03_STOVE_TRAMP2
+T=Hmm... Do I need to burn anything?
+W=GRAFF
+A=THINK
+
+
+
+#----------------------
+
+ID=GPC03_STOVE_TRAMP_STATUETTE
+T=May I...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=TRAMP
+C2A=NORMAL
+
+T=What are you doing, my boy? Burning that holy symbol?...
+W=TRAMP
+C2A=WONDER
+
+T=Ah... I forgot. To me it's just a plastic figure.
+W=GRAFF
+C1A=OPPOSITE
+
+T=I'll take my chances.
+W=GRAFF
+
+T=If it's important for you... Go ahead.
+W=TRAMP
+C2A=NORMAL
+TEN=GPC03_STOVE_TRAMP_STATUETTE_EVT
+
+#----------------------
+
+ID=GPC03_STOVE_TRAMP_AFTER1
+T=...I didn't intend to use that stove anymore, anyway.
+W=TRAMP
+C1=GRAFF
+C1A=MEH
+C2=TRAMP
+C2A=DOWN
+
+T=Oh no! Truly sorry, I didn't realize I had sullied it...
+W=GRAFF
+C1A=GASP
+
+T=Let me clean it!
+W=GRAFF
+
+T=Don't waste your time for an old fool.
+W=TRAMP
+C2A=NORMAL
+
+T=No way. My old man always says, it's never too late to do the right thing!
+W=GRAFF
+C1A=READY
+
+T=My mistake. I'll fix it.
+W=GRAFF
+TEN=GPC03_STOVE_TRAMP1B
+
+#----------------------
+
+ID=GPC03_STOVE_TRAMP_AFTER2
+T=There! Like new.
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=TRAMP
+C2A=NORMAL
+
+T=Thank you. Now, go!
+W=TRAMP
+
+T=Goodbye!
+W=GRAFF
+
+
+#----------------------
+#= Trasher hunt
+#----------------------
+
+ID=GPC03_TRASHER1
+T=I don't have time to play! Maybe later.
+W=GRAFF
+A=OPPOSITE
+CONTEXT=Room interactions
+
+#----------------------
+#= Sticker display
+#----------------------
+
+ID=GPC03_STICKERDISPLAY1
+T=Hey, that's my favorite chip music band!
+W=GRAFF
+A=FRIENDLY
+
+T=They're giving away some stickers to promote their next tour!
+W=GRAFF
+
+T=Nice, I'll take one!
+W=GRAFF
+A=HAPPY
+TEN=GPC03_STICKER_TAKE
+
+#----------------------
+
+ID=GPC03_STICKERDISPLAY2
+T=They'll come here in a few days!
+W=GRAFF
+A=HAPPY
+
+T=I'll save up some money and...
+W=GRAFF
+
+T=...
+W=GRAFF
+A=MEH
+
+T=What am I saying. Even if I did, Brok would rather spend it all on living expenses.
+W=GRAFF
+A=OPPOSITE
+
+T=Darn limited account...
+W=GRAFF
+
+#----------------------
+
+ID=GPC03_TRAMP_HIT1
+T=Oops!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=TRAMP
+C2A=NORMAL
+CONTEXT=Hitting the tramp
+
+T=I'm... okay. Don't worry.
+W=TRAMP
+
+T=Sorry...
+W=GRAFF
+C1A=SAD
+
+#----------------------
+
+ID=GPC03_TRAMP_HIT2
+T=Are you okay?... I'm so clumsy...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=TRAMP
+C2A=NORMAL
+
+T=I've been a soldier, boy. I can handle this.
+W=TRAMP
+
+
+#----------------------
+
+ID=GPC03_TRAMP_HIT3
+T=Take this, you old... thing!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=TRAMP
+C2A=DOWN
+
+T=What would your dad think?...
+W=TRAMP
+
+T=Like I care!
+W=GRAFF
+
+#----------------------
+
+ID=GPC03_TRAMP_DEAD
+T=Ha Ha! Too easy!
+W=GRAFF
+A=READY
+
+T=...
+W=GRAFF
+A=MEH
+
+T=Oh... N... No!...
+W=GRAFF
+A=TORN
+
+T=I've... turned evil... Argh...
+W=GRAFF
+TEN=GPC03_TRAMP_DEAD_GAMEOVER1
+
+T=Can't... breathe...
+W=GRAFF
+A=CHOKE
+
+T=Help... (Cough)
+W=GRAFF
+TEN=GPC03_TRAMP_DEAD_GAMEOVER2
+
+
+#----------------------
+#= Statuette story 210
+#----------------------
+
+ID=GPC03_STOVE_STATUETTE_NOT
+T=I'd rather not burn this one down.
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+#= Tramp coop
+#----------------------
+ID=COOP_GPC03_TRAMP1
+T=Pain is communicative.
+T=It hurts seeing someone suffer.
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 18/08/2019
+###############################################

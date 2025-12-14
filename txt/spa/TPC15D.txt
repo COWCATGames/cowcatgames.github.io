@@ -1,0 +1,4597 @@
+#-------------------------------
+#=LAB ROOM RIGHT
+#-------------------------------
+
+#----- Interactions --------
+PC_WIRES=Cables
+PC_DRHUSH=Dr. Hush
+PC_EQUIPMENT=Equipo
+PC_GLOVEHEADSET=Guante y casco
+PC_COLUMN=Columna
+PC_SPOT=Mancha
+PC_LEFTHAND=Mano izquierda
+PC_RIGHTHAND=Mano derecha
+PC_JACKET=Chaqueta
+PC_HEAD=Cabeza
+PC_CANISTER=Barril
+PC_NANITES=Caja de nanobots
+PC_STAIN=Mancha
+PC_SURFACE=Superficie
+
+#----- Choices / Items --------
+PC15D_SINK_DRINKCHOICE=¿Beber?
+PC15D_DRINK=Beber
+PC15D_DRAIN=Drenar
+PC15D_ACCEL500=Accel500
+PC15D_PLANT=Phoenixy
+PC15D_CONFIRMCHOICE=¿Es Ott realmente el asesino?
+
+GOT_LAMPMINK=¡Una lámpara!
+GOT_LABFLOWER=¡La flor del laboratorio!
+
+#----- Topics --------
+PC15D_CHARGE_MINK=¿Culpar del asesinato al Dr. Mink?
+PC15D_SECONDGATHER_CHOICE=¿Quién es el culpable?
+
+#Charge Tidy
+INTERROGATION_CAUSEOFDEATH=Escena del crimen
+INTERROGATION_TRUECAUSE=La verdadera causa de la muerte
+INTERROGATION_CAUSEOFDEATHPROOF=¿Qué demuestra que se usó salsa de hamburmiga?
+INTERROGATION_ACCESSNANITES=¿Cómo pudo el asesino conseguir nanobots?
+INTERROGATION_PROVETIDYLYING=¡Demuestra que Tidy miente!
+INTERROGATION_DRHUSHWHERE=¿Dónde estaba el Dr. Hush a las 5:10?
+INTERROGATION_VENTPROOF=¿Qué demuestra que el Dr. Hush estaba en la ventilación?
+INTERROGATION_WHEREPOISONED=¿Dónde fue envenenado el Dr. Hush?
+INTERROGATION_CARRY=¿Por qué no vió el guarda a Tidy en el vestíbulo?
+INTERROGATION_CRUMBS=¿Qué demuestra que Tidy subió la rampa?
+INTERROGATION_STRETCH=¿Cómo metió Tidy al Dr. Hush en la ventilación?
+INTERROGATION_RAMP=¿Cómo alcanzó Tidy la ventilación?
+INTERROGATION_TIDYPUSHDRHUSH=¿Cómo pudo Tidy meter al Dr. Hush hasta el fondo?
+INTERROGATION_LAMPPUSH=¿Cuándo empujó Tidy al Dr. Hush?
+INTERROGATION_LAMPWRONG=¿Cuándo empujó Tidy DE VERDAD al Dr. Hush?
+INTERROGATION_LAMPACCESS=¿Cómo pudo Tidy acceder a la lámpara del Dr. Mink?
+INTERROGATION_ELEMENTOFF=¿Qué no encaja en esta sala?
+INTERROGATION_LAMPOFF=¿Qué tiene de raro esta lámpara?
+INTERROGATION_BODYFALL=¿Qué fue el golpe de las 11:02?
+INTERROGATION_BODYMUSIC=¿Por qué no escuchó el Dr. Mink el cuerpo caer?
+INTERROGATION_CONSCIOUSNESS=¿Cómo pudo Tidy empujar al Dr. Hush mientras se cargaba?
+INTERROGATION_MOTIVE=¿Por qué lo hizo?
+INTERROGATION_ALIVE=¿Por qué sigue vivo el Dr. Hush?
+
+#Charge Hush
+INTERROGATION_HUSH_NEEDEDROOM=¿Por qué tenía que acceder el Dr. Hush a la habitación del Dr. Mink?
+INTERROGATION_HUSH_KILL=¿Qué demuestra que el Dr. Hush quería matar al Dr. Mink?
+INTERROGATION_HUSH_VENT=¿Qué demuestra que el Dr. Hush estaba en la ventilación?
+INTERROGATION_HUSH_CLIMB=¿Cómo escaló el Dr. Hush a la ventilación?
+INTERROGATION_HUSH_HEAR=¿Por qué no escuchó el Dr. Mink caer al Dr. Hush?
+
+#Charge Guard
+INTERROGATION_GUARD_STAGED=¿De dónde salió la salsa de tomate?
+INTERROGATION_GUARD_BED=¿Qué prueba que el cuerpo estaba bajo la cama?
+INTERROGATION_GUARD_MONITORING=¿Qué prueba que el registro ha sido manipulado?
+INTERROGATION_GUARD_MOTIVE=¿Por qué lo hizo el guarda?
+
+PC15D_DRHUSHWHY_BACK=Dr. Hush volvió a su oficina
+PC15D_DRHUSHWHY_NEVEREXIT=Dr. Hush nunca salió de su oficina
+PC15D_DRHUSHWHY_GHOST=Dr. Hush es un fantasma
+INTERROGATION_DRHUSHWHY=¿Qué puede explicar esta contradicción?
+PC15D_CHOICE_RIGHTPATH=¿Estoy en el camino correcto?
+
+PC15D_MISTAKE_CHOICES=¿Por qué movió Tidy la lámpara del Dr. Hush?
+PC15D_MISTAKE_TIDY=Tidy cometió un error
+PC15D_MISTAKE_CONFUSE=Tidy quería confundirnos
+
+PC15D_FINALCHOICE=¿Por que no estaba el cuerpo bajo el conducto?
+PC15D_FINALCHOICE_PUSHED=Tidy lo empujó violentamente
+PC15D_FINALCHOICE_ALIVE=El Dr. Hush está vivo
+PC15D_FINALCHOICE_MOVED=Alguien movió al Dr. Hush
+
+#----- Dialog --------
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+# *****************************************************************
+# CONTEXT - Room interactions. Brok is inspecting to find clues over why Dr. Hush was found "dead" in the middle of Dr. Mink's room.
+# *****************************************************************
+# Brok
+PC15D_POWERSOCKET1-1=Ese enchufe...
+# Brok
+PC15D_POWERSOCKET1-2=... ¿está quemado?
+# Mink
+PC15D_POWERSOCKET1-3=Oh. Es cierto...
+# Mink
+PC15D_POWERSOCKET1-4=Probé a conectar ahí un robot antiguo el otro día para que me ayudara a manejar materiales.
+# Mink
+PC15D_POWERSOCKET1-5=Fue una mala idea. Se chamuscó en cuanto lo enchufé.
+# Brok
+PC15D_POWERSOCKET1-6=¿Qué bot?
+# Mink
+PC15D_POWERSOCKET1-7=¿Acaso importa?
+# Mink
+PC15D_POWERSOCKET1-8=Lo tiré hará una semana, así que es completamente irrelevante.
+# Mink
+PC15D_POWERSOCKET1-9=Todos los otros bots de este edificio son modernos.
+# Brok
+PC15D_POWERSOCKET1-10=¿Quiere decir que sólo los bots antiguos pueden causar esto?
+# Mink
+PC15D_POWERSOCKET1-11=Sí. Los fabricados antes del día de la Autarquía, diría.
+# Brok
+PC15D_POWERSOCKET1-12=Interesante.
+#----------------------------------------------------
+# Brok
+PC15D_POWERSOCKET2-1=Un enchufe quemado... No muy lejos del cuerpo.
+#----------------------------------------------------
+# Brok
+PC15D_HOLE1-1=Esto da a la habitación del Dr. Hush...
+# Brok
+PC15D_HOLE1-2=¡Vaya sorpresa!
+# Mink
+PC15D_HOLE1-3=¡Espero que lo arregle antes de marcharse!
+# Brok
+PC15D_HOLE1-4=¿Y por qué no lo hace su robot asistente, eh? ¡Me gustaría verlo intentándolo!
+# Mink
+PC15D_HOLE1-5=... Claro. Me olvidaba que podía.
+# Brok
+PC15D_HOLE1-6=¡¿Puede?!
+# Mink
+PC15D_HOLE1-7=Claro. No creerá que hacemos ese tipo de trabajo nosotros mismos.
+# Brok
+PC15D_HOLE1-8=Por un momento, se me había olvidado con quién estaba hablando.
+#----------------------------------------------------
+# Brok
+PC15D_HOLE2-1=Estoy seguro de que no podría pasar por aquí.
+# Mink
+PC15D_HOLE2-2=Ni usted ni nadie, creo yo.
+# Brok
+PC15D_HOLE2-3=Me pregunto pues para qué lo harían...
+#----------------------------------------------------
+# Brok
+PC15D_TRAP1-1=¿Qué es eso? ¿Un respiradero?
+# Mink
+PC15D_TRAP1-2=Sí.
+# Mink
+PC15D_TRAP1-3=Estamos aquí todo el rato. El aire tiene que renovarse, ¿no cree?
+#----------------------------------------------------
+# Brok
+PC15D_TRAP_AFTER1-1=Espere un momento...
+# Brok
+PC15D_TRAP_AFTER1-2=¿Hay una escalerilla dentro del conducto?
+# Mink
+PC15D_TRAP_AFTER1-3=Sí, la escalerilla de mantenimiento.
+# Mink
+PC15D_TRAP_AFTER1-4=Recuerdo que un agente la usó para quitar un paquete que se quedó atascado.
+# Brok
+PC15D_TRAP_AFTER1-5=¿Alguna manera de bajarla?
+# Mink
+PC15D_TRAP_AFTER1-6=Use mi tablet.
+#----------------------------------------------------
+# Brok
+PC15D_TRAP_AFTER2-1=Debería subir por la escalerilla para acceder ahí.
+#----------------------------------------------------
+# Brok
+PC15D_LADDER1-1=Vale... Vamos a explorar.
+# Ott
+PC15D_LADDER1-2=¿Está seguro de esto, señor Brok?...
+# Brok
+PC15D_LADDER1-3=No me queda otra. ¡No podemos dejar ningún indicio por descubrir!
+# Ott
+PC15D_LADDER1-4=No, quiero decir...
+# Ott
+PC15D_LADDER1-5=¿Habrá sitio para que pueda pasar por ahí?...
+# Brok
+PC15D_LADDER1-6=¡Oye!... ¡Tampoco soy tan grande!
+# Brok
+PC15D_LADDER1-7=¡Ya verá!
+#----------------------------------------------------
+# Brok
+PC15D_LADDER1B-1=Ooof... Está estrechillo...
+# Brok
+PC15D_LADDER1B-2=Igual va tocando ponerse a dieta...
+# Brok
+PC15D_LADDER1B-3=Espera, ¿qué acabo de tocar?...
+# Brok
+PC15D_LADDER1B-4=Está muy... pegajoso...
+# Brok
+PC15D_LADDER1B-5=(Lame)
+# Brok
+PC15D_LADDER1B-6=¡Pues sabe bien!
+#----------------------------------------------------
+# Mink
+PC15D_LADDER1C-1=La he encendido para ti.
+# Brok
+PC15D_LADDER1C-2=¡Bien!
+# Brok
+PC15D_LADDER1C-3=Sí. Qué interesante...
+# Brok
+PC15D_LADDER1C-4=¡Hay salsa de tomatizo!
+# Brok
+PC15D_LADDER1C-5=¿Qué hace aquí?...
+# Brok
+PC15D_LADDER1C-6=...
+# Brok
+PC15D_LADDER1C-7=Ya lo veremos. ¡Voy a intentar salir de aquí antes de que me quede atascado!
+# Brok
+PC15D_LADDER1C-8=Parece que hay una tubería grande arriba...
+# Brok
+PC15D_LADDER1C-9=Me temo que no puedo escalar por ahí.
+# Brok
+PC15D_LADDER1C-10=Pues... seguiré adelante hasta llegar al otro lado.
+#----------------------------------------------------
+# Brok
+PC15D_LADDER2-1=Nop... Ya he visto todo lo que tenía que ver.
+# Ott
+PC15D_LADDER2-2=¿Está seguro?
+# Brok
+PC15D_LADDER2-3=¡Sí! ¡Casi me quedo ahí atrapado para siempre! ¡Y sin comida!
+# Ott
+PC15D_LADDER2-4=¡No diga tonterías!
+# Ott
+PC15D_LADDER2-5=Le habría mandado algunas hamburmigas.
+#----------------------------------------------------
+# Brok
+PC15D_WIRES1-1=Mmm... ¿Quizá usó estos cables para estrangularle?
+# Mink
+PC15D_WIRES1-2=¿Ve algún signo de estrangulamiento en el cuerpo?
+# Brok
+PC15D_WIRES1-3=La verdad es que no...
+#----------------------------------------------------
+# Brok
+PC15D_WIRES2-1=Ugh... ¡Vaya desastre!
+# Brok
+PC15D_WIRES2-2=Como coja las de podar me quedo sólo...
+# Mink
+PC15D_WIRES2-3=¡No se atreva!
+#----------------------------------------------------
+# Brok
+PC15D_WIRES_MAGNIFY-1=Curioso... No veo ningún nanobot yendo por los cables.
+#----------------------------------------------------
+# Brok
+PC15D_EQUIPMENT1-1=Creía que era especialista en manotecnología.
+# Mink
+PC15D_EQUIPMENT1-2=Nanotecnología.
+# Brok
+PC15D_EQUIPMENT1-3=Sí, eso. ¡Robots pequeños!
+# Brok
+PC15D_EQUIPMENT1-4=¿Y para qué son los productos químicos?
+# Mink
+PC15D_EQUIPMENT1-5=Los nanobots operan a nivel molecular.
+# Brok
+PC15D_EQUIPMENT1-6=¿Ah? ¿Entonces hace robots líquidos?
+# Mink
+PC15D_EQUIPMENT1-7=...
+#----------------------------------------------------
+# Brok
+PC15D_EQUIPMENT2-1=Vaya desastre.
+# Brok
+PC15D_EQUIPMENT2-2=¿Eh?... ¿Me engañan mis ojos o este paquete contiene gusanos rojos?...
+# Mink
+PC15D_EQUIPMENT2-3=Sí. ¿Cómo cree que hago mis experimentos? Necesito organismos vivos.
+# Brok
+PC15D_EQUIPMENT2-4=Me vendría bien un tentempié. ¡Son mis favoritos!
+# Mink
+PC15D_EQUIPMENT2-5=¡Ni hablar! ¡Aléjese de ellos!
+#----------------------------------------------------
+# Brok
+PC15D_EQUIPMENT_MAGNIFY-1=Sí... ¡Puedo ver cositas pequeñas robóticas por toda la mesa!
+# Brok
+PC15D_EQUIPMENT_MAGNIFY-2=Aunque, bueno... Es su mesa de trabajo.
+#----------------------------------------------------
+# Brok
+PC15D_NANITES1-1=¡No me lo diga! Estos son... Erm...
+# Brok
+PC15D_NANITES1-2=Cosas.
+# Mink
+PC15D_NANITES1-3=Nanos. Nanobots, vaya.
+# Brok
+PC15D_NANITES1-4=Casi casi.
+# Brok
+PC15D_NANITES1-5=¿Y para qué valen?
+# Mink
+PC15D_NANITES1-6=¿En serio me lo pregunta? ¡Llevamos años usándolos!
+# Brok
+PC15D_NANITES1-7=Ahora que lo dice...
+# Brok
+PC15D_NANITES1-8=Creo que Lia los usaba con fines medicinales.
+# Mink
+PC15D_NANITES1-9=Sí, su principal uso es la medicina.
+# Mink
+PC15D_NANITES1-10=Los inyectas y son capaces de reparar tu cuerpo desde dentro.
+# Brok
+PC15D_NANITES1-11=¡Mosquis!
+# Mink
+PC15D_NANITES1-12=Bueno...
+# Mink
+PC15D_NANITES1-13=Hay un rumor recurrente en la comunidad de nanobots.
+# Mink
+PC15D_NANITES1-14=Un científico habría sido capaz de controlar a una persona mediante el uso de nanobots.
+# Brok
+PC15D_NANITES1-15=Qué mal rollo...
+# Mink
+PC15D_NANITES1-16=Y tanto.
+# Mink
+PC15D_NANITES1-17=Pero no se preocupe. Es pura ficción.
+# Mink
+PC15D_NANITES1-18=Si alguien hubiera sido capaz de tal hazaña, ¡sería el científico más famoso del mundo entero!
+# Brok
+PC15D_NANITES1-19=Así que usted no lo ha hecho.
+# Mink
+PC15D_NANITES1-20=¡Ojalá!
+#----------------------------------------------------
+# Brok
+PC15D_NANITES2-1=¿Y es posible inyectar chismes tan grandes en un cuerpo sin hacer daño?
+# Mink
+PC15D_NANITES2-2=Lo que ve en la mesa es solamente una reproducción a escala 10.000:1 para facilitar el trabajo.
+# Mink
+PC15D_NANITES2-3=No son visibles a simple vista.
+# Brok
+PC15D_NANITES2-4=Debe ser difícil trabajar con ellos.
+# Mink
+PC15D_NANITES2-5=¡Correcto! ¡Sólo podemos un selecto grupo de ingenieros experimentados!
+# Brok
+PC15D_NANITES2-6=(¿Es ser pretencioso un requisito para este trabajo?)
+#----------------------------------------------------
+# Brok
+PC15D_NANITES3-1=Debería comprobar si hay nanobots en sitios extraños.
+# Brok
+PC15D_NANITES3-2=Llevo en mi inventario la herramienta perfecta para ver más de cerca.
+#----------------------------------------------------
+# Brok
+PC15D_NANITES_MAGNIFY-1=¡Ey! ¡Hay miles de pequeños bots aquí!
+# Mink
+PC15D_NANITES_MAGNIFY-2=¿Y ha necesitado una lupa para averiguarlo?
+#----------------------------------------------------
+# Brok
+PC15D_GLOVEHEADSET1-1=¿Ese guante...?
+# Mink
+PC15D_GLOVEHEADSET1-2=Es para manipular objetos holográficos en 3D.
+# Mink
+PC15D_GLOVEHEADSET1-3=¿Cómo cree que hacemos nuestros prototipos?
+# Brok
+PC15D_GLOVEHEADSET1-4=¿Y para qué es el casco?
+# Mink
+PC15D_GLOVEHEADSET1-5=Es una herramienta de diagnóstico.
+# Mink
+PC15D_GLOVEHEADSET1-6=Las nanomáquinas simulan el comportamiento de insectos.
+# Mink
+PC15D_GLOVEHEADSET1-7=Para ser más precisos, emiten sonidos débiles dependiendo de la situación.
+# Mink
+PC15D_GLOVEHEADSET1-8=Esto los amplifica de manera que pueda escucharlos...
+# Brok
+PC15D_GLOVEHEADSET1-9=(Bosteza)
+# Mink
+PC15D_GLOVEHEADSET1-10=No sé ni por qué me molesto en explicarlo.
+# Brok
+PC15D_GLOVEHEADSET1-11=Lo siento. Últimamente he dormido mal.
+#----------------------------------------------------
+# Brok
+PC15D_GLOVEHEADSET2-1=No veo nada que me llame la atención.
+# Brok
+PC15D_GLOVEHEADSET2-2=Bueno, no son cacharros que veas todos los días, pero...
+# Brok
+PC15D_GLOVEHEADSET2-3=Dudo que se puedan usar para matar.
+#----------------------------------------------------
+# Brok
+PC15D_GLOVEHEADSET_MAGNIFY-1=Cualquiera pensaría que los guantes que usa para manipular los nanobots estarían cubiertos de ellos.
+# Brok
+PC15D_GLOVEHEADSET_MAGNIFY-2=Y adivina qué: ¡así es!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Using Dr Mink's tablet for various interactions
+# *****************************************************************
+# Mink
+PC15D_TABLET1-1=¡No la toque!
+# Brok
+PC15D_TABLET1-2=¿Por qué? ¿Muerde?
+# Mink
+PC15D_TABLET1-3=¡No se haga el tonto!
+# Mink
+PC15D_TABLET1-4=¿No ve que es mi tablet del trabajo?
+# Mink
+PC15D_TABLET1-5=¡Contiene información confidencial!
+# Brok
+PC15D_TABLET1-6=¿Y?
+# Mink
+PC15D_TABLET1-7=¿Tiene idea de qué podría pasar si cae en malas manos?
+# Brok
+PC15D_TABLET1-8=No.
+# Brok
+PC15D_TABLET1-9=Pero yo soy el detective aquí, así que la voy a coger, le guste o no.
+# Mink
+PC15D_TABLET1-10=¡Venga, adelante! Ponga sus grasientas manos en ella.
+# Brok
+PC15D_TABLET1-11=...
+# Brok
+PC15D_TABLET1-12=No puedo hacer nada... ¿Está bloqueada?
+# Mink
+PC15D_TABLET1-13=Sí, claramente. Es por seguridad.
+# Brok
+PC15D_TABLET1-14=Bueno, ¡pues desbloquéela!
+# Mink
+PC15D_TABLET1-15=No.
+# Brok
+PC15D_TABLET1-16=¿Qué?
+# Brok
+PC15D_TABLET1-17=Escuche, amigo. No estoy de humor para tonterías.
+# Brok
+PC15D_TABLET1-18=Así que o colabora, o este juguetito suyo puede que acabe accidentalmente estampado en su cara...
+# Mink
+PC15D_TABLET1-19=(Gulp) Si insiste...
+#----------------------------------------------------
+# Mink
+PC15D_TABLET1B-1=Tenga.
+# Mink
+PC15D_TABLET1B-2=¿Y?
+# Brok
+PC15D_TABLET1B-3=Ahora que lo pienso...
+# Brok
+PC15D_TABLET1B-4=No entiendo esta cosa.
+#----------------------------------------------------
+# Ott
+PC15D_TABLET_OTT-1=¡Déjeme ver!
+# Ott
+PC15D_TABLET_OTT-2=Mmm...
+# Ott
+PC15D_TABLET_OTT-3=...
+# Ott
+PC15D_TABLET_OTT-4=A primera vista no veo nada sospechoso...
+# Ott
+PC15D_TABLET_OTT-5=Son varios análisis sobre la eficiencia energética de los nanobots.
+# Brok
+PC15D_TABLET_OTT-6=Vale.
+#----------------------------------------------------
+# Brok
+PC15D_TABLET2-1=De cualquier modo, no veo sangre en la tablet.
+# Brok
+PC15D_TABLET2-2=A menos que la haya limpiado, dudo que sea el arma del crimen.
+# Mink
+PC15D_TABLET2-3=¡No me diga!
+# Brok
+PC15D_TABLET2-4=No podemos descartar ninguna posibilidad.
+#----------------------------------------------------
+# Brok
+PC15D_TABLET_LADDER1-1=Sep... Aquí está la escalerilla.
+# Mink
+PC15D_TABLET_LADDER1-2=Una inestable escalerilla de mantenimiento, para ser más exactos. No parece segura, la verdad.
+# Brok
+PC15D_TABLET_LADDER1-3=¿La usa de vez en cuando?
+# Mink
+PC15D_TABLET_LADDER1-4=¡¿Está loco?! Temo a las alturas...
+#----------------------------------------------------
+# Brok
+PC15D_TABLETRESEARCH1-1=Algunas pamplinas.
+# Mink
+PC15D_TABLETRESEARCH1-2=¡Ey! ¡Es mi investigación! ¡Es altamente confidencial y valiosa!
+# Brok
+PC15D_TABLETRESEARCH1-3=Mejor no perder el tiempo con esto.
+#----------------------------------------------------
+# Mink
+PC15D_TABLET_AFTER1-1=Escuche... Me gustaría disculparme por mi comportamiento anterior.
+# Mink
+PC15D_TABLET_AFTER1-2=Mi tablet ofrece una serie de funciones que podrían serle útiles.
+# Brok
+PC15D_TABLET_AFTER1-3=Entonces, ¿no es sólo su investigación? ¿Nos ha escondido más cosas?
+# Mink
+PC15D_TABLET_AFTER1-4=No... Estas funciones no parecían relacionadas con el caso, pero después de lo que hemos averiguado...
+# Mink
+PC15D_TABLET_AFTER1-5=Ya no estoy tan seguro.
+# Mink
+PC15D_TABLET_AFTER1-6=Permítame darle acceso.
+#----------------------------------------------------
+# Mink
+PC15D_TABLET_AFTER2-1=Déjeme su dedo.
+# Brok
+PC15D_TABLET_AFTER2-2=¡Ey!
+# Mink
+PC15D_TABLET_AFTER2-3=Le estoy añadiendo a la lista de invitados autorizados. Tendrá acceso a todo durante una hora.
+# Brok
+PC15D_TABLET_AFTER2-4=Oh. Gracias.
+# Brok
+PC15D_TABLET_AFTER2-5=Mmm...
+#----------------------------------------------------
+# Ott
+PC15D_TABLET_MEDICAL_OTHERS-1=Creo que está confundido, señor Brok. No creo que pueda usar un objeto con ese icono.
+# Brok
+PC15D_TABLET_MEDICAL_OTHERS-2=¡A mi me parecen todos iguales!
+#----------------------------------------------------
+# Ott
+PC15D_TABLETCLOSEUP_MEDICAL1-1=¡Señor Brok! Creo que podemos usar esa tablet para hacer búsquedas médicas.
+# Mink
+PC15D_TABLETCLOSEUP_MEDICAL1-2=Correcto. Son datos que he reunido por mi cuenta, combinados con una copia local especializada de la Triweb.
+# Mink
+PC15D_TABLETCLOSEUP_MEDICAL1-3=¡Tengo acceso offline a información que el público general nunca verá!
+#----------------------------------------------------
+# Ott
+PC15D_TABLETCLOSEUP_MEDICAL2-1=¿Hay algún tema específico que le interese?
+# Brok
+PC15D_TABLETCLOSEUP_MEDICAL2-2=Déjame pensar...
+#----------------------------------------------------
+# Brok
+PC15D_TABLET_MEDICAL_EXIT-1=Ahora mismo no caigo en nada...
+# Ott
+PC15D_TABLET_MEDICAL_EXIT-2=Entonces igual más tarde.
+#----------------------------------------------------
+# Ott
+PC15D_TABLET_MEDICAL_ACCEL500-1=Mmm... Es una medicina para pacientes con órganos defectuosos, que funcionan más lentos de lo normal.
+# Unknown
+PC15D_TABLET_MEDICAL_ACCEL500-2="¿Sin actividad física? ¡Accel500 es el empujón que necesita!"
+# Unknown
+PC15D_TABLET_MEDICAL_ACCEL500-3="¡Deje que acelere su metabolismo y manténgase siempre en forma y más joven que un polluelo!"
+# Brok
+PC15D_TABLET_MEDICAL_ACCEL500-4=Me suena más a anuncio que a prospecto...
+# Ott
+PC15D_TABLET_MEDICAL_ACCEL500-5=Dr. Mink, ¿sabía que su compañero las tomaba?
+# Mink
+PC15D_TABLET_MEDICAL_ACCEL500-6=No, pero tiene sentido. No realizamos demasiada actividad física.
+# Mink
+PC15D_TABLET_MEDICAL_ACCEL500-7=Yo no las tomo. ¡Prefiero el menú "Todo en uno"!
+# Brok
+PC15D_TABLET_MEDICAL_ACCEL500-8=¿Todo en uno?...
+# Mink
+PC15D_TABLET_MEDICAL_ACCEL500-9=¡Son dosis de comida personalizadas según el seguimiento médico, que incorporan alimento en polvo normal y estimulantes!
+# Brok
+PC15D_TABLET_MEDICAL_ACCEL500-10=Ya nada me sorprende.
+#----------------------------------------------------
+# Ott
+PC15D_TABLET_MEDICAL_PLANT-1=¿No es esa la planta que estaba en el escritorio del guarda?
+# Brok
+PC15D_TABLET_MEDICAL_PLANT-2=Sep.
+# Ott
+PC15D_TABLET_MEDICAL_PLANT-3=Vale, no termino de entender qué pretende averiguar, pero usted es el detective.
+# Ott
+PC15D_TABLET_MEDICAL_PLANT-4=¡He encontrado algo!
+# Unknown
+PC15D_TABLET_MEDICAL_PLANT-5="La Phoenixy es una planta angiosperma que florece dos veces al año, después de un período de..."
+# Brok
+PC15D_TABLET_MEDICAL_PLANT-6=¿Eh?...
+# Ott
+PC15D_TABLET_MEDICAL_PLANT-7=¿Qué pasa?
+# Brok
+PC15D_TABLET_MEDICAL_PLANT-8=Aquí pone algo abajo...
+# Unknown
+PC15D_TABLET_MEDICAL_PLANT-9="He intentado combinar las flores de Phoenixy con nanobots. Programados o no, es una pésima idea."
+# Unknown
+PC15D_TABLET_MEDICAL_PLANT-10="Inducen una ralentización aguda severa del ritmo cardíaco del sujeto, provocando su muerte."
+# Ott
+PC15D_TABLET_MEDICAL_PLANT-11=(Psst... ¿Usted cree...?)
+# Brok
+PC15D_TABLET_MEDICAL_PLANT-12=(Sí... El Dr. Mink ha tenido que escribir esto.)
+#----------------------------------------------------
+# Ott
+PC15D_TABLET_MEDICAL_ANTBURGER-1=¿En serio?
+# Brok
+PC15D_TABLET_MEDICAL_ANTBURGER-2=Muy en serio. ¿No te gustan a ti también?
+# Ott
+PC15D_TABLET_MEDICAL_ANTBURGER-3=La verdad es que prefiero comida normal de tubo.
+# Brok
+PC15D_TABLET_MEDICAL_ANTBURGER-4=Los jóvenes no sabéis lo que es bueno.
+# Ott
+PC15D_TABLET_MEDICAL_ANTBURGER-5=Como sea... Tenga.
+# Unknown
+PC15D_TABLET_MEDICAL_ANTBURGER-6="Hecho al 95% con hormigas frescas, ¡es el producto tradicional por excelencia!"
+# Unknown
+PC15D_TABLET_MEDICAL_ANTBURGER-7="Crujiente y sabrosa, ¡harán con seguridad felices a sus mayores!"
+# Brok
+PC15D_TABLET_MEDICAL_ANTBURGER-8=¡¿A sus mayores?!
+# Ott
+PC15D_TABLET_MEDICAL_ANTBURGER-9=Se lo dije.
+#----------------------------------------------------
+# Brok
+PC15D_TABLETANALYSIS1-1=¿Para qué es este botón?... No pasa nada cuando lo pulso.
+# Mink
+PC15D_TABLETANALYSIS1-2=Es un analizador. Da información detallada sobre cualquier objeto.
+# Mink
+PC15D_TABLETANALYSIS1-3=Para objetos inteligentes, mostrará la información almacenada en su memoria.
+# Mink
+PC15D_TABLETANALYSIS1-4=Pero también puede analizar materia orgánica, líquida o sólida.
+# Brok
+PC15D_TABLETANALYSIS1-5=Oh.
+# Brok
+PC15D_TABLETANALYSIS1-6=En resumen, ¿pongo un objeto y lo analiza?
+# Mink
+PC15D_TABLETANALYSIS1-7=Exactamente.
+#----------------------------------------------------
+# Brok
+PC15D_TABLETANALYSIS2-1=Puedo poner un objeto inteligente u orgánico para obtener información.
+#----------------------------------------------------
+# Unknown
+PC15D_TABLETANALYSIS_PILLHUSH-1="Es una píldora Accel500, dosis de 1bg."
+# Brok
+PC15D_TABLETANALYSIS_PILLHUSH-2=Accel500... No me suena de nada.
+#----------------------------------------------------
+# Brok
+PC15D_TABLETANALYSIS_LABFLOWER-1=Venga, ¿qué es esta flor?
+# Unknown
+PC15D_TABLETANALYSIS_LABFLOWER-2="Flor de Phoenixy detectada."
+# Brok
+PC15D_TABLETANALYSIS_LABFLOWER-3=¿Phoenixy?... Mmm.
+# Brok
+PC15D_TABLETANALYSIS_LABFLOWER-4=Me pregunto si tiene algún tipo de efecto médico...
+#----------------------------------------------------
+# Brok
+PC15D_TABLETANALYSIS_HUSHLAMP-1=¿Revelará la lámpara del Dr. Hush algunos secretos?
+# Brok
+PC15D_TABLETANALYSIS_HUSHLAMP-2=...
+# Unknown
+PC15D_TABLETANALYSIS_HUSHLAMP-3="Este aparato pertenece al Dr. Mink. Actualmente está averiada."
+# Brok
+PC15D_TABLETANALYSIS_HUSHLAMP-4=¿Qué?...
+# Unknown
+PC15D_TABLETANALYSIS_HUSHLAMP-5="Accediendo al registro..."
+# Unknown
+PC15D_TABLETANALYSIS_HUSHLAMP-6="Golpe crítico a las 5:10."
+# Brok
+PC15D_TABLETANALYSIS_HUSHLAMP-7=¿Así que... daño crítico esta madrugada?
+# Brok
+PC15D_TABLETANALYSIS_HUSHLAMP-8=Curioso...
+#----------------------------------------------------
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-1=¡A ver que dice sobre la supuesta arma del crimen!
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-2=...
+# Unknown
+PC15D_TABLETANALYSIS_MINKLAMP-3="Esta lámpara tiene las siguientes funcionalidades: alarma, altavoz, batería, luz, búsqueda en la Triweb y detección de golpes."
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-4=Todo completamente necesario en una lámpara, claro está...
+# Unknown
+PC15D_TABLETANALYSIS_MINKLAMP-5="Este aparato pertenece al Dr. Hush."
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-6=¿Eh?...
+# Ott
+PC15D_TABLETANALYSIS_MINKLAMP-7=Puede que se las cambiaran por accidente, ¿no?
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-8=Aquí está el registro...
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-9=Mmm...
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-10=Ahí. "Golpe severo a las 11:02".
+# Ott
+PC15D_TABLETANALYSIS_MINKLAMP-11=¿Me deja ver?
+# Ott
+PC15D_TABLETANALYSIS_MINKLAMP-12=...
+# Ott
+PC15D_TABLETANALYSIS_MINKLAMP-13=Tiene razón... Esa es la única información relevante...
+# Ott
+PC15D_TABLETANALYSIS_MINKLAMP-14=Entonces... ¿sí que es el arma del crimen?
+# Brok
+PC15D_TABLETANALYSIS_MINKLAMP-15=Ya lo veremos.
+#----------------------------------------------------
+# Brok
+PC15D_TABLETANALYSIS_TABLETHUSH-1=¿Eh?... ¿Por qué no funciona?
+# Mink
+PC15D_TABLETANALYSIS_TABLETHUSH-2=¿Acaba de poner su tablet en mi tablet?
+# Brok
+PC15D_TABLETANALYSIS_TABLETHUSH-3=... Si, ¿y?
+# Mink
+PC15D_TABLETANALYSIS_TABLETHUSH-4=¿Esperaba que revelase la información que contiene?
+# Brok
+PC15D_TABLETANALYSIS_TABLETHUSH-5=Sí.
+# Mink
+PC15D_TABLETANALYSIS_TABLETHUSH-6=Bien pensado, pero su tablet está bloqueada. Y el único que puede desbloquearla es el propio Dr. Hush.
+# Brok
+PC15D_TABLETANALYSIS_TABLETHUSH-7=Ah, ¿sí?...
+#----------------------------------------------------
+# Unknown
+PC15D_TABLETANALYSIS_MAGNIFY-1="Una lupa barata con teleobjetivo."
+# Brok
+PC15D_TABLETANALYSIS_MAGNIFY-2=Será barata, ¡pero a mí me funciona!
+#----------------------------------------------------
+# Unknown
+PC15D_TABLETANALYSIS_PENDANT-1="Hecho de Heptamida. Contiene electrónica desconocida."
+# Brok
+PC15D_TABLETANALYSIS_PENDANT-2=¿Electrónica?...
+# Mink
+PC15D_TABLETANALYSIS_PENDANT-3=Lo dudo. Es posible que la tablet se haya detectado a sí misma. Suele pasar con algunos materiales reflectantes.
+# Brok
+PC15D_TABLETANALYSIS_PENDANT-4=Interesante...
+#----------------------------------------------------
+# Unknown
+PC15D_TABLETANALYSIS_CATFUR-1="Pelo de gato con alto potencial de atraer pulgas."
+# Unknown
+PC15D_TABLETANALYSIS_CATFUR-2="Para evitarlo, ¡use nuestro nuevo producto - PrePulgas!"
+# Brok
+PC15D_TABLETANALYSIS_CATFUR-3=¡¿Anuncios?!
+# Mink
+PC15D_TABLETANALYSIS_CATFUR-4=La investigación requiere fondos.
+#----------------------------------------------------
+# Unknown
+PC15D_TABLETANALYSIS_REMOTECONTROL-1="Material policial. Desactiva aparatos electrónicos a distancia."
+#----------------------------------------------------
+# Brok
+PC15D_TABLETANALYSIS_OTHERS-1=Mmm... Nada.
+# Brok
+PC15D_TABLETANALYSIS_OTHERS-2=¡Esta cosa suya no funciona!
+# Mink
+PC15D_TABLETANALYSIS_OTHERS-3=Simplemente no está en su base de datos. No es omnisciente, ¿sabe?
+# Brok
+PC15D_TABLETANALYSIS_OTHERS-4=Hum.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Inspecting Dr. Hush's body
+# *****************************************************************
+# Brok
+PC15D_HEAD1-1=No respira...
+# Brok
+PC15D_HEAD1-2=Pobrecillo.
+# Brok
+PC15D_HEAD1-3=Parece que le golpearon por la espalda.
+# Brok
+PC15D_HEAD1-4=Debería echar un ojo a esa mancha.
+#----------------------------------------------------
+# Brok
+PC15D_HEAD_AFTER1-1=Si esa sangre es falsa...
+# Brok
+PC15D_HEAD_AFTER1-2=Puede que no muriera de un golpe en la cabeza, a fin de cuentas.
+# Brok
+PC15D_HEAD_AFTER1-3=¿Entonces cómo?...
+#----------------------------------------------------
+# Brok
+PC15D_HEAD_MAGNIFY-1=Bueno, no tiene pulgas ni garrapatas...
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTHAND1-1=No sostiene nada, pero...
+# Brok
+PC15D_RIGHTHAND1-2=Mmm... Hay manchas negras en sus dedos.
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTHAND2-1=Tengo la sensación de que debería ver más de cerca esas manchas negras...
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTHAND_MAGNIFY-1=Guau...
+# Brok
+PC15D_RIGHTHAND_MAGNIFY-2=¡Su mano está completamente cubierta de nanobots!...
+# Brok
+PC15D_RIGHTHAND_MAGNIFY-3=Será mejor que lo apunte.
+#----------------------------------------------------
+# Brok
+PC15D_LEFTHAND1-1=Mmm... No hay nada importante.
+# Brok
+PC15D_LEFTHAND1-2=Eso sí, ¡bonitas manos!
+#----------------------------------------------------
+# Brok
+PC15D_LEFTHAND_MAGNIFY-1=... Un par de nanobots en esta mano, pero...
+# Brok
+PC15D_LEFTHAND_MAGNIFY-2=No es nada concluyente. Puede que no se lave las manos a menudo.
+#----------------------------------------------------
+# Brok
+PC15D_LEFTHAND_WRONGHAND-1=Mmm... Pensaba que esto funcionaría.
+# Brok
+PC15D_LEFTHAND_WRONGHAND-2=¿Me he equivocado de mano?
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTHAND_LAMP-1=¡Ha pitado!
+# Brok
+PC15D_RIGHTHAND_LAMP-2=Y... ¿ya está?...
+# Mink
+PC15D_RIGHTHAND_LAMP-3=¿Qué esperaba? ¿Una lámpara parlante?
+# Brok
+PC15D_RIGHTHAND_LAMP-4=Bueno, sí...
+# Mink
+PC15D_RIGHTHAND_LAMP-5=Es un objeto inteligente. Debería ser capaz de conseguir más información con mi tablet.
+# Brok
+PC15D_RIGHTHAND_LAMP-6=¡Buena idea!
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTHAND_TABLETHUSH1-1=...
+# Brok
+PC15D_RIGHTHAND_TABLETHUSH1-2=¡Ey! ¡Funciona!
+# Mink
+PC15D_RIGHTHAND_TABLETHUSH1-3=¿Qué?...
+# Brok
+PC15D_RIGHTHAND_TABLETHUSH1-4=La tablet del Dr. Hush... ¡se ha desbloqueado!
+# Mink
+PC15D_RIGHTHAND_TABLETHUSH1-5=Qué sorpresa. Pensaba que no funcionaría, teniendo en cuenta que...
+# Brok
+PC15D_RIGHTHAND_TABLETHUSH1-6=Bueno, pues ha funcionado. ¡A ver qué secretos esconde el juguetito!
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTHAND_TABLET1B-1=Mmm...
+# Brok
+PC15D_RIGHTHAND_TABLET1B-2=Parece que... ¿ha transferido datos?
+# Mink
+PC15D_RIGHTHAND_TABLET1B-3=¿Me deja ver?
+# Mink
+PC15D_RIGHTHAND_TABLET1B-4=Tiene razón. Es una transferencia externa de archivos... de su proyecto actual. "Actualizacion-IA-302305.zyl".
+# Brok
+PC15D_RIGHTHAND_TABLET1B-5=¿Eso es raro?
+# Mink
+PC15D_RIGHTHAND_TABLET1B-6=Claro que no. Solemos transferir archivos a nuestros jefes.
+# Mink
+PC15D_RIGHTHAND_TABLET1B-7=Aunque... el destinatario está oculto.
+# Brok
+PC15D_RIGHTHAND_TABLET1B-8=¿Qué significa eso?
+# Mink
+PC15D_RIGHTHAND_TABLET1B-9=No puedo decirle con certeza quién lo recibió, pero...
+# Mink
+PC15D_RIGHTHAND_TABLET1B-10=teniendo en cuenta los metadatos... debe ser alguien importante.
+# Mink
+PC15D_RIGHTHAND_TABLET1B-11=Espere... Me acabo de dar cuenta...
+# Mink
+PC15D_RIGHTHAND_TABLET1B-12=Ese archivo fue modificado ayer, pero fue creado en... ¡¿3029?!
+# Brok
+PC15D_RIGHTHAND_TABLET1B-13=¿Hace 6 años?
+# Mink
+PC15D_RIGHTHAND_TABLET1B-14=No tiene sentido. Debe ser un fallo del sistema operativo.
+# Ott
+PC15D_RIGHTHAND_TABLET1B-15=¿Cree que puede estar conectado a nuestro caso, señor Brok?
+# Brok
+PC15D_RIGHTHAND_TABLET1B-16=Una transferencia a las 4:45...
+# Brok
+PC15D_RIGHTHAND_TABLET1B-17=Eso tiene que ser importante.
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTHAND_TABLETHUSH2-1=Entonces, tenemos una transferencia rara a las 4:45... ¿Y ya?
+# Brok
+PC15D_RIGHTHAND_TABLETHUSH2-2=¡Creía que habría mucha más información en ella!
+# Mink
+PC15D_RIGHTHAND_TABLETHUSH2-3=No guardamos mucha información en local.
+# Mink
+PC15D_RIGHTHAND_TABLETHUSH2-4=Una vez transferimos los archivos, los datos se guardan en remoto y la copia local se elimina.
+# Brok
+PC15D_RIGHTHAND_TABLETHUSH2-5=Perfecto... hasta que se corta la conexión con el exterior.
+#----------------------------------------------------
+# Brok
+PC15D_JACKET1-1=Su posición indica...
+# Brok
+PC15D_JACKET1-2=¿que le golpearon por detrás?
+# Brok
+PC15D_JACKET1-3=No he visto muchos cadáveres, pero juraría que suelen estar más tiesos...
+#----------------------------------------------------
+# Brok
+PC15D_JACKET_AFTER1-1=Si no se murió de un golpe en la cabeza...
+# Brok
+PC15D_JACKET_AFTER1-2=Entonces, ¿cómo? No veo ninguna herida.
+#----------------------------------------------------
+# Brok
+PC15D_JACKET_MAGNIFY-1=Veo uno o dos nanobots...
+# Brok
+PC15D_JACKET_MAGNIFY-2=Puede que estuvieran por el suelo y se le hayan adherido.
+#----------------------------------------------------
+# Brok
+PC15D_JACKET1B-1=Bolsillos vacíos.
+#----------------------------------------------------
+# Brok
+PC15D_DEVICE1-1=¿Qué es esto?... Alguna clase de aparato...
+# Brok
+PC15D_DEVICE1-2=¡Ahora lo veo! Es una de esas lámparas antiguas.
+# Brok
+PC15D_DEVICE1-3=Justo al lado del cuerpo...
+#----------------------------------------------------
+# Brok
+PC15D_DEVICE_TAKE-1=¿Algo que quiera contarme acerca de esta lámpara?
+# Brok
+PC15D_DEVICE_TAKE-2=Se supone que es suya, ¿no?...
+# Mink
+PC15D_DEVICE_TAKE-3=Supongo...
+# Mink
+PC15D_DEVICE_TAKE-4=Es un objeto inteligente, claro, así que contendrá información. Debería echarle un ojo.
+# Brok
+PC15D_DEVICE_TAKE-5=Cojámosla, pues.
+#----------------------------------------------------
+# Brok
+PC15D_SPOTHEAD1-1=Parece que le golpearon justo ahí...
+# Brok
+PC15D_SPOTHEAD1-2=Con suficiente fuerza, pudo ser fatal.
+#----------------------------------------------------
+# Brok
+PC15D_SPOTHEAD_AFTER1-1=Una herida falsa... con salsa de tomatizo.
+#----------------------------------------------------
+# Brok
+PC15D_SPOTDEVICE1-1=Mmm... ¿Sangre?
+# Brok
+PC15D_SPOTDEVICE1-2=Eso tendría sentido si tuviera un golpe en la cabeza.
+#----------------------------------------------------
+# Brok
+PC15D_SPOTJACKET1-1=¿Hay sangre?...
+# Brok
+PC15D_SPOTJACKET1-2=¿Puede que llegase ahí después del impacto?
+#----------------------------------------------------
+# Brok
+PC15D_SPOTJACKET_AFTER1-1=¡Mmm! ¡Me gusta esa salsa!
+# Ott
+PC15D_SPOTJACKET_AFTER1-2=Señor Brok... Debería abstenerse de... hacer eso...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More room interactions
+# *****************************************************************
+# Brok
+PC15D_SPEAKER1-1=He oído un ruido que venía de la sala antes...
+# Brok
+PC15D_SPEAKER1-2=Debe haber salido de ahí. ¿Es posible que el Dr. Mink estuviera escuchando música?
+#----------------------------------------------------
+# Brok
+PC15D_SPEAKER2-1=¡He visto ya hoy más altavoces de los que puedo aguantar!
+#----------------------------------------------------
+# Brok
+PC15D_SPEAKER_AFTER1-1=Dr. Mink, cuando llegamos... Oí algo de música que salía de su habitación.
+# Mink
+PC15D_SPEAKER_AFTER1-2=Bueno... Supongo que me conviene no ocultar nada, así que...
+# Mink
+PC15D_SPEAKER_AFTER1-3=Sí. Me permití un breve momento de diversión.
+# Brok
+PC15D_SPEAKER_AFTER1-4=¡Y yo que pensaba que todos los científicos eran unos adictos al trabajo!
+# Brok
+PC15D_SPEAKER_AFTER1-5=Entonces... ¿Estaba bailando?
+# Mink
+PC15D_SPEAKER_AFTER1-6=...Por favor, no eche sal en la herida.
+# Brok
+PC15D_SPEAKER_AFTER1-7=¿Qué música?
+# Mink
+PC15D_SPEAKER_AFTER1-8=¿Acaso importa?
+# Brok
+PC15D_SPEAKER_AFTER1-9=Puede ser.
+# Mink
+PC15D_SPEAKER_AFTER1-10="TechDream". Es bastante pegadiza. ¡No soy capaz de sacármela de la cabeza!
+# Brok
+PC15D_SPEAKER_AFTER1-11=¿En qué parte de la habitación estaba mientras bail... se divertía?
+# Mink
+PC15D_SPEAKER_AFTER1-12=Mmm... Creo que estaba cerca de la puerta.
+# Mink
+PC15D_SPEAKER_AFTER1-13=Paré cuando le oí llamando a la puerta y eché un ojo a la videomirilla.
+# Brok
+PC15D_SPEAKER_AFTER1-14=¿Pasó algo raro en ese momento?
+#----------------------------------------------------
+# Mink
+PC15D_SPEAKER_AFTER1_NORMAL-1=Si así fuera, ya se lo habría dicho.
+# Mink
+PC15D_SPEAKER_AFTER1_NORMAL-2=Simplemente oí que llamaban y abrí la puerta.
+# Brok
+PC15D_SPEAKER_AFTER1_NORMAL-3=Bueno... Resumiendo mucho.
+# Mink
+PC15D_SPEAKER_AFTER1_NORMAL-4=Fue entonces cuando vimos el cuerpo, que apareció de la nada.
+# Brok
+PC15D_SPEAKER_AFTER1_NORMAL-5=Vale... Gracias por la información.
+#----------------------------------------------------
+# Mink
+PC15D_SPEAKER_AFTER1_BREAK-1=Si por raro se refiere a que un cocodrilo detective rompiera mi puerta y entrara a la fuerza...
+# Mink
+PC15D_SPEAKER_AFTER1_BREAK-2=Entonces sí.
+# Brok
+PC15D_SPEAKER_AFTER1_BREAK-3=Lo lamento. Debería haber abierto a la primera.
+# Mink
+PC15D_SPEAKER_AFTER1_BREAK-4=¡Tenía miedo!...
+# Brok
+PC15D_SPEAKER_AFTER1_BREAK-5=Y yo poca paciencia.
+#----------------------------------------------------
+# Brok
+PC15D_SPEAKER_AFTER2-1=Bailando, ¿eh?...
+# Mink
+PC15D_SPEAKER_AFTER2-2=Continúe con su investigación, por favor...
+# Brok
+PC15D_SPEAKER_AFTER2-3=Ey, todos los detalles cuentan.
+#----------------------------------------------------
+# Brok
+PC15D_WINDOW1-1=Ugh... No es mi estilo, definitivamente.
+# Mink
+PC15D_WINDOW1-2=Qué poco gusto.
+#----------------------------------------------------
+# Brok
+PC15D_WINDOW2-1=¿Y por qué no un entorno virtual? ¿Por qué sólo una pequeña DigiVentana?
+# Mink
+PC15D_WINDOW2-2=Los expertos de algo rango como nosotros no podemos permitirnos aparatos que nos distraigan.
+#----------------------------------------------------
+# Brok
+PC15D_WINDOW3-1=Usted y el Dr. Hush parecen tener... gustos muy diferentes.
+# Brok
+PC15D_WINDOW3-2=No me extraña que no se llevasen bien.
+# Mink
+PC15D_WINDOW3-3=Eso no es cierto. Ambos trabajábamos espléndidamente por nuestra cuenta.
+# Brok
+PC15D_WINDOW3-4=Lo que yo decía.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Dr Mink's sink produces a strange drink
+# *****************************************************************
+# Brok
+PC15D_SINK1-1=Las flores que cuelgan del techo echan agua en este lavabo...
+# Mink
+PC15D_SINK1-2=El jugo de las Cuelgalis Techis mejora la concentración y la memoria.
+# Mink
+PC15D_SINK1-3=¡Es muy refrescante! ¡No aguanto un día sin ella!
+# Mink
+PC15D_SINK1-4=¿Quiere un poco?
+#----------------------------------------------------
+# Brok
+PC15D_SINK_DRINKYES1-1=¡Pues claro!
+# Mink
+PC15D_SINK_DRINKYES1-2=¡Adelante, pues!
+#----------------------------------------------------
+# Brok
+PC15D_SINK_DRINKYES2-1=¡¡¡Mmm!!!
+# Brok
+PC15D_SINK_DRINKYES2-2=¡Sabe como si hubiera una fiesta en mi boca y todos estuvieran comiendo tarta de todos los sabores del mundo!
+# Mink
+PC15D_SINK_DRINKYES2-3=¡¿A que sí?!
+#----------------------------------------------------
+# Brok
+PC15D_SINK_DRINKYES3-1=¡Delicioso!
+#----------------------------------------------------
+# Brok
+PC15D_SINK_DRINKNO-1=Bueno... Primero déjeme comprobar que no contenga nada inesperado...
+# Mink
+PC15D_SINK_DRINKNO-2=¡Imposible!
+# Mink
+PC15D_SINK_DRINKNO-3=Añado Tribenzeno de Clorofodria cada día para estabilizarlo, con algo de Ditoxina Tetraclorodibenceno-Q-17 como conservante.
+# Brok
+PC15D_SINK_DRINKNO-4=¿Sabe qué? Otra vez será.
+#----------------------------------------------------
+# Brok
+PC15D_SINK2-1=Mmm...
+#----------------------------------------------------
+# Mink
+PC15D_SINK_DRAIN1-1=¡¿Qué?! ¡Espere! ¡¡¡No lo haga!!!
+# Brok
+PC15D_SINK_DRAIN1-2=Demasiado tarde.
+# Mink
+PC15D_SINK_DRAIN1-3=¡¿Tiene idea de lo que acaba de hacer?!
+# Mink
+PC15D_SINK_DRAIN1-4=¡Era mi ración de hoy! ¡Ahora me he quedado sin zumo!
+# Mink
+PC15D_SINK_DRAIN1-5=Te... Tendré que lamer a fondo la superficie del lavabo esta tarde...
+# Mink
+PC15D_SINK_DRAIN1-6=(Llora)
+# Brok
+PC15D_SINK_DRAIN1-7=Sí, creo que es un adicto.
+#----------------------------------------------------
+# Mink
+PC15D_SINK_DRINKMUCH-1=¡Ey, espere! ¡No beba demasiado!
+# Mink
+PC15D_SINK_DRINKMUCH-2=En altas dosis, provoca cambios extraños en el cuerpo.
+# Brok
+PC15D_SINK_DRINKMUCH-3=Pero... ¡está tan bueno!
+#----------------------------------------------------
+# Brok
+#The voice samples will be modified to make them high pitch. Voice actor shouldn't change his voice.
+PC15D_SINK_DRINKPITCH-1=¡Quiero más!
+# Brok
+PC15D_SINK_DRINKPITCH-2=¡...!
+# Brok
+PC15D_SINK_DRINKPITCH-3=¡Mi voz! ¡¿Qué me pasa?!
+# Mink
+PC15D_SINK_DRINKPITCH-4=¡Se lo advertí!
+# Mink
+PC15D_SINK_DRINKPITCH-5=¡Ahora sonará como una muchachita durante un par de minutos!
+# Brok
+PC15D_SINK_DRINKPITCH-6=Oh vaya. ¡Ha valido la pena!
+#----------------------------------------------------
+# Brok
+PC15D_SINK_AD1-1=¡Ey! ¡Hay un anuncio pillado en el desagüe!
+#----------------------------------------------------
+# Brok
+PC15D_SINK_EMPTY-1=Vacío.
+# Mink
+PC15D_SINK_EMPTY-2=(Llora)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More room inspection
+# *****************************************************************
+# Brok
+PC15D_STAIN1-1=Es eso... ¿sangre?...
+# Brok
+PC15D_STAIN1-2=Parece... como estirada...
+#----------------------------------------------------
+# Brok
+PC15D_STAIN_AFTER1-1=(Lame)
+# Brok
+PC15D_STAIN_AFTER1-2=Tampoco es sangre. Sabe como a salsa de tomatizo.
+#----------------------------------------------------
+# Mink
+PC15D_CANISTER1-1=¡¡¡Cuidado!!!
+# Brok
+PC15D_CANISTER1-2=¿Eh?...
+# Mink
+PC15D_CANISTER1-3=Estoy trabajando con soluciones ácidas. ¡Más le vale no poner un dedo ahí!
+# Brok
+PC15D_CANISTER1-4=¿Y si pongo un pie?
+# Mink
+PC15D_CANISTER1-5=¡No!
+#----------------------------------------------------
+# Brok
+PC15D_CANISTER2-1=¿Para qué son?
+# Mink
+PC15D_CANISTER2-2=¡Un descubrimiento revolucionario!
+# Mink
+PC15D_CANISTER2-3=¡Descubrí que al sumergir nanobots en una solución ácida, su rendimiento mejora un 25%!
+# Brok
+PC15D_CANISTER2-4=Pero... ¿los nanobots no son luego inyectados en cuerpos humanos?
+# Mink
+PC15D_CANISTER2-5=Aún sigo trabajando en ese pequeño inconveniente.
+# Brok
+PC15D_CANISTER2-6=Oh-oh.
+#----------------------------------------------------
+# Brok
+PC15D_CANISTER3-1=Entonces, ¿seguro que no los quería para librarse del cadáver?
+# Mink
+PC15D_CANISTER3-2=¡¿Pero qué clase de pregunta es esa?!
+# Mink
+PC15D_CANISTER3-3=¡Aunque lo fuera, nunca le respondería a eso que sí!
+# Brok
+PC15D_CANISTER3-4=Entonces... ¿lo admite?
+# Mink
+PC15D_CANISTER3-5=¡No!
+#----------------------------------------------------
+# Brok
+PC15D_COLUMN1-1=¿Un rayo de luz?...
+# Mink
+#Make sure to convert to the appropriate unit according to your country (eg : 3.5 meters)
+PC15D_COLUMN1-2=¡Sep! 3 metros y medio de placer.
+# Mink
+PC15D_COLUMN1-3=¿Ha oído hablar de la rayoterapia?
+# Mink
+PC15D_COLUMN1-4=Las temperaturas cálidas reducen el estrés y previenen el envejecimiento.
+# Brok
+PC15D_COLUMN1-5=¿Podría usarse para herir a alguien?
+# Mink
+PC15D_COLUMN1-6=A máxima potencia podría quemarle la piel.
+# Brok
+PC15D_COLUMN1-7=¿Pero no matarle?
+# Mink
+PC15D_COLUMN1-8=A menos que pasara años ahí debajo, no.
+#----------------------------------------------------
+# Brok
+PC15D_COLUMN2-1=¿Por qué apunta al suelo?
+# Brok
+PC15D_COLUMN2-2=No hay nada ahí.
+# Mink
+PC15D_COLUMN2-3=Sólo lo uso a la hora de dormir. Se pone en mi dirección automáticamente.
+# Brok
+PC15D_COLUMN2-4=Entonces, ¿por qué mantenerlo activo? ¿No es un derroche?
+# Mink
+PC15D_COLUMN2-5=¡¿A quién le importa?!
+# Brok
+PC15D_COLUMN2-6=... No sé. ¿Puede que a los miles de habitantes de los Slums que no tienen nada?...
+#----------------------------------------------------
+# Brok
+PC15D_COLUMN3-1=¡Ya sé! ¡Es un rayo de la muerte!
+# Brok
+PC15D_COLUMN3-2=Lo apuntó hacia el Dr. Hush y... ¡Zas! ¡Muerto!
+# Mink
+PC15D_COLUMN3-3=Entonces usted ya estaría bien muerto, considerando cuántas veces ha pasado por debajo.
+# Brok
+PC15D_COLUMN3-4=... Mmm. Tiene sentido.
+#----------------------------------------------------
+# Ott
+PC15D_BED_OTT1-1=¿Señor Brok?...
+# Ott
+PC15D_BED_OTT1-2=¡No es hora de dormir!
+# Brok
+PC15D_BED_OTT1-3=Sólo... estoy comprobando si le pasa algo raro a esta cama.
+# Ott
+PC15D_BED_OTT1-4=¿Y?...
+# Brok
+PC15D_BED_OTT1-5=Es... Eh...
+# Brok
+PC15D_BED_OTT1-6=¡Asombrosamente cómoda comparada con la mía!
+#----------------------------------------------------
+# Mink
+PC15D_BED1-1=¡¿Qué cree que está haciendo?!
+# Mink
+PC15D_BED1-2=¡Fuera de mi cama! ¡Ahora!
+# Brok
+PC15D_BED1-3=¿Por qué? ¿Tiene algo que ocultar?
+# Mink
+PC15D_BED1-4=...
+# Mink
+PC15D_BED1-5=Bien. Descanse.
+# Mink
+PC15D_BED1-6=Pero tendrá que explicarle a su superior por qué está durando tanto esta investigación.
+# Brok
+PC15D_BED1-7=Menudo aguafiestas.
+#----------------------------------------------------
+# Brok
+PC15D_BED2-1=Nada en la cama...
+# Brok
+PC15D_BED2-2=... y sorprendentemente, tampoco nada bajo la almohada.
+# Brok
+PC15D_BED2-3=¿Hace usted la colada?
+# Mink
+PC15D_BED2-4=¿Está de broma?
+# Mink
+PC15D_BED2-5=De eso se encarga un robot. Jamás he oído que ningún humano la haga.
+# Brok
+PC15D_BED2-6=Claro... Yo... tampoco.
+# Brok
+PC15D_BED2-7=(Y por eso mi cama cada día huele peor...)
+#----------------------------------------------------
+# Mink
+PC15D_WALKTABLE1-1=¡Ey!
+# Mink
+PC15D_WALKTABLE1-2=¡¿Qué cree que estás haciendo?!
+#----------------------------------------------------
+# Mink
+PC15D_WALKTABLE2-1=No puedo creérmelo.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When Brok steps or jumps on the corpse
+# *****************************************************************
+# Mink
+PC15D_WALKBODY1-1=¿Qué?...
+# Brok
+PC15D_WALKBODY1-2=¿Eh? ¿Qué pasa?
+# Mink
+PC15D_WALKBODY1-3=...
+#----------------------------------------------------
+# Mink
+PC15D_WALKBODY2-1=No me lo puedo creer...
+#----------------------------------------------------
+# Ott
+PC15D_WALKBODY3-1=¡Señor Brok! ¡¿Qué está haciendo?!
+# Brok
+PC15D_WALKBODY3-2=Buscando indicios, claro.
+# Ott
+PC15D_WALKBODY3-3=¿Andando... sobre él?
+# Brok
+PC15D_WALKBODY3-4=¿Sobre quién?
+# Ott
+PC15D_WALKBODY3-5=...
+#----------------------------------------------------
+# Hush
+#After insisting for a while, Dr. Hush wakes up!
+PC15D_JUMPBODY1-1=... Urgh...
+# Brok
+PC15D_JUMPBODY1-2=¿...?
+#----------------------------------------------------
+# Hush
+PC15D_JUMPBODY2-1=Aaargh...
+# Brok
+PC15D_JUMPBODY2-2=¿Eh?...
+# Hush
+PC15D_JUMPBODY2-3=¿Qué... está pasando?...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Alternative - Dr Hush wakes up after jumping on him
+# *****************************************************************
+# Hush
+PC15D_JUMPBODY2B-1=...
+# Mink
+PC15D_JUMPBODY2B-2=...
+# Mink
+PC15D_JUMPBODY2B-3=¡¿Doctor Hush?!
+# Brok
+PC15D_JUMPBODY2B-4=¡Está... Está...!
+# Hush
+PC15D_JUMPBODY2B-5=Auch... Me duele la espalda...
+# Hush
+PC15D_JUMPBODY2B-6=¿Qué... Qué hago aquí?
+# Hush
+PC15D_JUMPBODY2B-7=Y... ¿quién es usted?
+# Brok
+PC15D_JUMPBODY2B-8=¡Un investigador! ¡Pensábamos que había muerto!
+# Hush
+PC15D_JUMPBODY2B-9=¿Y por qué lo creía?...
+# Hush
+PC15D_JUMPBODY2B-10=Oh... Parece que he sangrado un poco.
+# Hush
+PC15D_JUMPBODY2B-11=No, espere...
+# Hush
+PC15D_JUMPBODY2B-12=Es... salsa.
+# Brok
+PC15D_JUMPBODY2B-13=¿Salsa?... Entonces...
+# Mink
+PC15D_JUMPBODY2B-14=¿Ha sido todo un malentendido?
+# Brok
+PC15D_JUMPBODY2B-15=Imposible. Si no respiraba...
+# Brok
+PC15D_JUMPBODY2B-16=¿Qué es lo último que recuerda?
+# Hush
+PC15D_JUMPBODY2B-17=Bueno...
+# Hush
+PC15D_JUMPBODY2B-18=Recuerdo... caerme del conducto de ventilación...
+# Hush
+PC15D_JUMPBODY2B-19=Moverme hacia el Dr. Mink...
+# Brok
+PC15D_JUMPBODY2B-20=¿La ventilación? ¿Qué demonios hacía ahí?
+# Hush
+PC15D_JUMPBODY2B-21=...
+# Hush
+PC15D_JUMPBODY2B-22=¿Es posible...?
+# Hush
+PC15D_JUMPBODY2B-23=Antes de eso... Yo...
+# Hush
+PC15D_JUMPBODY2B-24=Me tomé el café. Tidy lo preparó...
+# Brok
+PC15D_JUMPBODY2B-25=¿Tidy?
+# Hush
+PC15D_JUMPBODY2B-26=El robot asistente...
+# Hush
+PC15D_JUMPBODY2B-27=Cuando lo bebí... Mi corazón...
+# Hush
+PC15D_JUMPBODY2B-28=Se paró...
+# Mink
+PC15D_JUMPBODY2B-29=¿Así que le envenenó?
+# Brok
+PC15D_JUMPBODY2B-30=¡Tenemos que interrogar a ese robot!
+#----------------------------------------------------
+# Brok
+PC15D_JUMPBODY2C-1=¿Qué es ese ruido?...
+#----------------------------------------------------
+# Hush
+PC15D_JUMPBODY2D-1=Tidy... ¿Por qué harías algo así?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First time arrive in the room after breaking Dr Mink's door
+# *****************************************************************
+# Brok
+PC15D_FIRST_BREAK1-1=¡Ey! ¿Por qué no ha abierto?
+# Mink
+PC15D_FIRST_BREAK1-2=Yo... Yo...
+# Brok
+PC15D_FIRST_BREAK1-3=¡Responda a la pregunta!
+# Mink
+PC15D_FIRST_BREAK1-4=Estaba... ¡ocupado!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First time arrive in the room after convincing Mink
+# *****************************************************************
+# Mink
+PC15D_FIRST1-1=¿Y?... ¿Por qué está aquí?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok notices the corpse but Dr Mink haven't seen it yet
+# *****************************************************************
+# Brok
+PC15D_FIRST1B-1=¡...!
+# Brok
+PC15D_FIRST1B-2=¿Pero qué...?
+# Brok
+PC15D_FIRST1B-3=¡Guarda!
+# Mink
+PC15D_FIRST1B-4=¡Ey!
+# Mink
+PC15D_FIRST1B-5=¿Qué pasa?
+#----------------------------------------------------
+# Mink
+PC15D_FIRST2-1=¡...!
+# Guard
+PC15D_FIRST2-2=¡¿Dr. Hush?!
+# Mink
+PC15D_FIRST2-3=¡Es... imposible!
+# Ott
+PC15D_FIRST2-4=¡Dios mío! ¿Está...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok checks the body. Then they all talk about it
+# *****************************************************************
+# Brok
+PC15D_FIRST3-1=...
+# Brok
+PC15D_FIRST3-2=Bueno...
+#----------------------------------------------------
+# Brok
+PC15D_FIRST4-1=¡Caso resuelto!
+# Guard
+PC15D_FIRST4-2=¡Pero...! ¡No tiene sentido!
+# Brok
+PC15D_FIRST4-3=Así que "había mirado por todos lados", ¿eh?
+# Guard
+PC15D_FIRST4-4=¡Lo juro! ¡No estaba aquí!
+# Mink
+PC15D_FIRST4-5=¡Es cierto! ¡¿Qué demonios está pasando?!
+# Brok
+PC15D_FIRST4-6=Yo se lo diré. El Dr. Hush está completamente fiambre.
+# Ott
+PC15D_FIRST4-7=No puede ser...
+# Ott
+PC15D_FIRST4-8=¡¿Un asesinato en los Drums?!
+# Guard
+PC15D_FIRST4-9=¡Ahora lo entiendo!
+# Guard
+PC15D_FIRST4-10=¡Mink! ¡No me has dejado entrar esta mañana!
+# Guard
+PC15D_FIRST4-11=¡Y ahora ya sabemos por qué era!
+# Mink
+PC15D_FIRST4-12=¡¿Me estás acusando?!
+# Mink
+PC15D_FIRST4-13=¡¿Estás loco o qué te pasa?!
+# Guard
+PC15D_FIRST4-14=¡Su cadáver está en tu habitación, tío! ¡¿No es suficiente prueba?!
+# Brok
+PC15D_FIRST4-15=Ya, ya. Calma.
+# Brok
+PC15D_FIRST4-16=Este caso de asesinato esta en mis manos. No saquemos conclusiones precipitadas.
+# Brok
+PC15D_FIRST4-17=Guarda. Bloquee todas las salidas.
+# Guard
+PC15D_FIRST4-18=¡Ya lo he hecho, morrogordo!
+# Brok
+PC15D_FIRST4-19=¡Y bloquee todas las comunicaciones externas!
+# Brok
+PC15D_FIRST4-20=¡Nadie entra o sale de este edificio, ni tampoco ningún dato!
+# Guard
+PC15D_FIRST4-21=Enseguida.
+#----------------------------------------------------
+# Brok
+PC15D_FIRST5-1=Y usted...
+# Brok
+PC15D_FIRST5-2=Quédese aquí. ¡No se mueva ni un milímetro!
+# Mink
+PC15D_FIRST5-3=Argh... ¡No puede decirlo en serio!
+# Mink
+PC15D_FIRST5-4=¡Tengo muchísimo trabajo! ¡Y voy con retraso!
+# Brok
+PC15D_FIRST5-5=...
+# Mink
+PC15D_FIRST5-6=Pero claro, eso es algo que un ingenuo como usted no comprenderá.
+# Brok
+PC15D_FIRST5-7=¡Su colega está muerto!
+# Brok
+PC15D_FIRST5-8=Y dadas las circunstancias, usted es un sospechoso.
+# Brok
+PC15D_FIRST5-9=Pero incluso aunque sea inocente...
+# Brok
+PC15D_FIRST5-10=¿Qué cree que puede pasar si no encuentro al culpable?
+# Brok
+PC15D_FIRST5-11=¿Quién le asegura que usted no será el siguiente?
+# Mink
+PC15D_FIRST5-12=¡Gulp!...
+# Mink
+PC15D_FIRST5-13=...
+# Mink
+PC15D_FIRST5-14=Vaya. Es que ni muerto este tío dejará de incordiarme...
+# Brok
+PC15D_FIRST5-15=Usted es el experto en artilugios tecnológicos, así que...
+# Mink
+PC15D_FIRST5-16=Sí, le ayudaré.
+# Mink
+PC15D_FIRST5-17=Y le seguiré a todas partes para que pueda vigilarme.
+# Brok
+PC15D_FIRST5-18=Bien.
+#----------------------------------------------------
+# Ott
+PC15D_FIRST6OTTKO-1=...
+# Ott
+PC15D_FIRST6OTTKO-2=No... no me esperaba esto...
+# Brok
+PC15D_FIRST6OTTKO-3=Yo tampoco... Pero lo resolveré.
+# Ott
+PC15D_FIRST6OTTKO-4=Lo haremos.
+# Ott
+PC15D_FIRST6OTTKO-5=Pero por favor... no use los puños más.
+# Ott
+PC15D_FIRST6OTTKO-6=Ya ha habido demasiado violencia.
+#----------------------------------------------------
+# Ott
+PC15D_FIRST6-1=¡Estoy impresionado, señor Brok!
+# Ott
+PC15D_FIRST6-2=¡Ha sabido mantener la compostura!
+# Brok
+PC15D_FIRST6-3=Erm... ¿Sí?
+# Ott
+PC15D_FIRST6-4=¿Ha resuelto ya algún caso de asesinato?
+# Brok
+PC15D_FIRST6-5=No que yo recuerde...
+# Brok
+PC15D_FIRST6-6=Pero vi algunas pelis de cine negro cuando era joven. ¡Simplemente he imitado a los protas!
+# Ott
+PC15D_FIRST6-7=Oh...
+# Ott
+PC15D_FIRST6-8=Bueno, aún así, ha quedado genial.
+# Brok
+PC15D_FIRST6-9=¡Gracias!...
+#----------------------------------------------------
+# Brok
+PC15D_FIRST6B-1=...
+# Brok
+PC15D_FIRST6B-2=(¿Por qué me pasan estas cosas? ¡¿Es que no puedo tener ni un día normal?!)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After doing a quick inspection, they all gather. Ott exposes his theory
+# *****************************************************************
+# Guard
+PC15D_STORY160_A-1=Entonces... ¿qué ha pasado?
+# Guard
+PC15D_STORY160_A-2=¿Has encontrado al culpable?
+# Brok
+PC15D_STORY160_A-3=Voy a dejar que mi colega aquí presente lo explique.
+# Ott
+PC15D_STORY160_A-4=¿Eh? ¡¿Yo?!
+# Brok
+PC15D_STORY160_A-5=Tú lo has dicho. Has resuelto el caso, ¿no?
+# Ott
+PC15D_STORY160_A-6=Erm...
+# Mink
+PC15D_STORY160_A-7=Es sólo un niño...
+# Ott
+PC15D_STORY160_A-8=¡No! Es cierto. Lo explicaré.
+# Ott
+PC15D_STORY160_A-9=Vale, pues...
+# Ott
+PC15D_STORY160_A-10=Este es un asesinato a puerta cerrada.
+# Ott
+PC15D_STORY160_A-11=Como ya saben, nadie puede entrar o salir de este sitio sin ser observado.
+# Ott
+PC15D_STORY160_A-12=Lo que significa...
+# Mink
+PC15D_STORY160_A-13=Sólo uno de nosotros pudo haberlo hecho.
+# Ott
+PC15D_STORY160_A-14=Sí.
+# Ott
+PC15D_STORY160_A-15=El cuerpo fue visto por primera vez cuando entramos en esta sala.
+# Ott
+PC15D_STORY160_A-16=Parece que al Dr. Hush fue golpeado en la cabeza y murió debido al impacto.
+# Ott
+PC15D_STORY160_A-17=Teniendo en cuenta la sangre que hay en la lámpara al lado suyo, esta debe ser el arma del crimen.
+# Ott
+PC15D_STORY160_A-18=Dicha lámpara pertenece al Dr. Mink, lo que implica el asesino tuvo acceso a ella.
+# Mink
+PC15D_STORY160_A-19=No me gusta por dónde va esto...
+# Ott
+PC15D_STORY160_A-20=El Dr. Hush fue visto con vida por última vez por Tidy, su robot asistente, a las 5:04.
+# Ott
+PC15D_STORY160_A-21=Nunca volvió a su oficina. Entonces, ¿a dónde fue?
+# Ott
+PC15D_STORY160_A-22=Las posibilidades son limitadas.
+# Ott
+PC15D_STORY160_A-23=De nuevo, no pudo salir del edificio. La única salida tiene una barrera de energía impenetrable.
+# Ott
+PC15D_STORY160_A-24=No pudo quedarse tampoco en el vestíbulo. No tiene sentido, y además el señor guarda se hubiera dado cuenta.
+# Guard
+PC15D_STORY160_A-25=Mmm...
+# Ott
+PC15D_STORY160_A-26=¿Alguna objeción?
+# Guard
+PC15D_STORY160_A-27=No... Yo... estuve vigilando todo el rato...
+# Guard
+PC15D_STORY160_A-28=No pasó nada raro.
+# Ott
+PC15D_STORY160_A-29=Prosigamos.
+# Ott
+PC15D_STORY160_A-30=El Dr. Hush podría haber ido a la sala de descanso y haber sido asesinado allí.
+# Ott
+PC15D_STORY160_A-31=Pero eso nos deja un problema...
+# Ott
+PC15D_STORY160_A-32=No encontramos el cuerpo allí, sino en esta misma habitación.
+# Ott
+PC15D_STORY160_A-33=Ello implica que tendría que haber sido arrastrado hasta aquí sin que nadie se percatase.
+# Ott
+PC15D_STORY160_A-34=Y si alguien hubiera intentado tal cosa, el señor guarda se hubiera dado cuenta.
+# Brok
+PC15D_STORY160_A-35=Hemos inspeccionado la sala de descanso y no hay ningún acceso directo a esta habitación.
+# Ott
+PC15D_STORY160_A-36=Así que sólo nos queda una posibilidad: el Dr. Hush fue directamente de su oficina a la del Dr. Mink.
+# Mink
+PC15D_STORY160_A-37=¡Tonterías! ¡Él nunca vino aquí!
+# Ott
+PC15D_STORY160_A-38=Y aún así... Aquí está el cuerpo.
+# Ott
+PC15D_STORY160_A-39=¿Cómo lo explica?
+# Mink
+PC15D_STORY160_A-40=Yo... no lo sé...
+# Ott
+PC15D_STORY160_A-41=He tenido en cuenta otras posibilidades. ¿Y si Tidy estaba involucrado?
+# Ott
+PC15D_STORY160_A-42=Después de todo, es libre de ir por las habitaciones para hacer sus tareas.
+# Ott
+PC15D_STORY160_A-43=Pero no pudo acceder a la habitación del Dr. Mink.
+# Ott
+PC15D_STORY160_A-44=Para acceder, tiene que llamar y usted tiene que abrirle, ¿no?
+# Ott
+PC15D_STORY160_A-45=Y eso no ocurrió, ¿cierto?
+# Mink
+PC15D_STORY160_A-46=No...
+# Mink
+PC15D_STORY160_A-47=A menos... ¡que usara la mano del Dr. Hush para abrir la puerta!
+# Ott
+PC15D_STORY160_A-48=¿Llevándolo por el vestíbulo? Parece improbable.
+# Ott
+PC15D_STORY160_A-49=El guarda estaba vigilando. Y además usted, doctor, ni los vio ni los oyó entrar.
+#----------------------------------------------------
+# Mink
+PC15D_STORY160_A2-1=¡¿Y qué hay de ti, ratita?!
+# Mink
+PC15D_STORY160_A2-2=¡Apuesto a que mataste al doctor en el vestíbulo y metiste su cuerpo en mi habitación cuando no miraba!
+# Guard
+PC15D_STORY160_A2-3=¡¿Me estás acusando a mí?!
+# Guard
+PC15D_STORY160_A2-4=¡¿Por qué diantres iba a llamar yo a la policía si fuera el asesino?!
+# Mink
+PC15D_STORY160_A2-5=¡Para disimular! ¡Por eso!
+# Guard
+PC15D_STORY160_A2-6=¡Maldito roedor! ¡Me echarán a la calle por tu culpa!
+# Ott
+PC15D_STORY160_A2-7=¡Cálmense!
+# Ott
+PC15D_STORY160_A2-8=Eso también lo he barajado. Pero no tiene mucho sentido.
+# Ott
+PC15D_STORY160_A2-9=¿De verdad cree que pudo haber abierto su puerta con el cuerpo del Dr. Hush en brazos y haberlo lanzado hasta ahí sin que se diera usted cuenta?
+# Mink
+PC15D_STORY160_A2-10=...
+# Ott
+PC15D_STORY160_A2-11=Por lo tanto, sólo una persona pudo hacerlo...
+# Ott
+PC15D_STORY160_A2-12=¡Usted, doctor Mink!
+# Mink
+PC15D_STORY160_A2-13=¡Argh! ¡Estás completamente loco, chico!
+# Mink
+PC15D_STORY160_A2-14=¡Ya lo he dicho! ¡Nunca he matado a nadie!
+# Guard
+PC15D_STORY160_A2-15=¡Venga, Mink! ¡Te han pillado!
+# Tidy
+PC15D_STORY160_A2-16=¿Venir?
+# Tidy
+PC15D_STORY160_A2-17=¡Arriba! ¡Abajo! ¡Izquierda! ¡Derecha!
+# Mink
+PC15D_STORY160_A2-18=¿Y cuál sería mi móvil?
+# Ott
+PC15D_STORY160_A2-19=Muy sencillo.
+# Ott
+PC15D_STORY160_A2-20=El señor guarda mencionó que había habido muchas rencillas entre ustedes.
+# Mink
+PC15D_STORY160_A2-21=¡Llevamos discutiendo los últimos 5 años! ¡Eso no prueba nada!
+# Ott
+PC15D_STORY160_A2-22=¡Recuerde la grabación de Tidy!
+# Ott
+PC15D_STORY160_A2-23=¡El Dr. Hush fue a su habitación a arreglar las cosas con usted!
+# Ott
+PC15D_STORY160_A2-24=Debió hartarse de escuchar sus quejas sobre las reducciones presupuestarias de sus proyectos.
+# Mink
+PC15D_STORY160_A2-25=¡¿De verdad crees que es una razón de peso para matar a alguien?!
+# Ott
+PC15D_STORY160_A2-26=Tiene razón. No lo sería...
+# Ott
+PC15D_STORY160_A2-27=Para gente normal.
+# Ott
+PC15D_STORY160_A2-28=Pero usted está completamente concentrado en su trabajo. ¡Es su vida! ¡No puede permitirse perderlo!
+# Ott
+PC15D_STORY160_A2-29=El Dr. Hush se beneficiaba de un presupuesto cada vez más alto, mientras el suyo bajaba. Y la situación se puso tensa.
+# Ott
+PC15D_STORY160_A2-30=No lo podía aguantar más... Cogió la cosa más cercana a mano...
+# Ott
+PC15D_STORY160_A2-31=¡Su lámpara!
+# Ott
+PC15D_STORY160_A2-32=Y entonces... ¡¡¡Bam!!!
+# Mink
+PC15D_STORY160_A2-33=¡Argh!
+# Ott
+PC15D_STORY160_A2-34=Seguramente fue un arrebato. No lo había planificado.
+# Ott
+PC15D_STORY160_A2-35=¡Así que no sabía qué hacer con el cuerpo!
+# Ott
+PC15D_STORY160_A2-36=Asustado, lo escondió bajo su cama. Esto le daría tiempo a pensar...
+# Mink
+PC15D_STORY160_A2-37=¡¿Bajo la cama?! ¡Sólo un necio haría eso!
+# Ott
+PC15D_STORY160_A2-38=¡A mí me parece el mejor sitio!
+# Brok
+PC15D_STORY160_A2-39=Guarda, ¿qué opina? Mira las habitaciones regularmente, ¿no?
+# Guard
+PC15D_STORY160_A2-40=Mmm... Lo hago, pero la comadreja no me dejó entrar...
+# Guard
+PC15D_STORY160_A2-41=Si el cuerpo estaba bajo la cama...
+# Guard
+PC15D_STORY160_A2-42=Entonces sí. No podría haberlo visto desde aquí.
+# Mink
+PC15D_STORY160_A2-43=¡No pueden demostrar nada de eso!
+# Ott
+PC15D_STORY160_A2-44=¡Claro que podemos! ¡Mire ahí!
+# Ott
+PC15D_STORY160_A2-45=¡Hay trazas de sangre en el suelo, justo entre la cama y el cuerpo!
+# Ott
+PC15D_STORY160_A2-46=¿Por qué si no estarían ahí?
+# Guard
+PC15D_STORY160_A2-47=Pero qué... ¡Es cierto!
+# Ott
+PC15D_STORY160_A2-48=Sólo había una manera de hacerle desaparecer sin que nadie se diera cuenta...
+# Ott
+PC15D_STORY160_A2-49=¡El barril de ácido!
+# Ott
+PC15D_STORY160_A2-50=¡Derretiría el cuerpo y así podría echarlo por el lavabo!
+# Mink
+PC15D_STORY160_A2-51=¡N-no! Yo nunca...
+# Mink
+PC15D_STORY160_A2-52=¡Esos... son para mis experimentos!...
+# Ott
+PC15D_STORY160_A2-53=¡Cuando llegamos, acababa de sacar el cuerpo de debajo de la cama para verter el ácido sobre el pobre hombre!
+# Ott
+PC15D_STORY160_A2-54=Se acuerda, ¿señor Brok? ¡No quería que entrásemos!
+# Brok
+PC15D_STORY160_A2-55=Lo que ahora tiene todo el sentido del mundo...
+# Mink
+PC15D_STORY160_A2-56=¡Señor detective! ¡Por favor!
+# Mink
+PC15D_STORY160_A2-57=¡¿No me diga que está de acuerdo?!
+#----------------------------------------------------
+# Brok
+PC15D_STORY160_CHOICE_CONFIRM-1=(Mejor me lo pienso dos veces...)
+# Brok
+PC15D_STORY160_CHOICE_CONFIRM-2=(Si estoy equivocado, estaré mandando a un inocente a la cárcel. O a algo peor.)
+# Brok
+PC15D_STORY160_CHOICE_CONFIRM-3=(¿Estoy completamente seguro de que el Dr. Mink es culpable?)
+#----------------------------------------------------
+# Brok
+PC15D_STORY160_CHOICE_NO-1=...
+# Guard
+PC15D_STORY160_CHOICE_NO-2=...
+# Ott
+PC15D_STORY160_CHOICE_NO-3=...
+# Mink
+PC15D_STORY160_CHOICE_NO-4=¿Y?... ¿Ha estado prestando atención?...
+# Brok
+PC15D_STORY160_CHOICE_NO-5=¿Sabe?... Llevo un rato preguntándome algo.
+# Mink
+PC15D_STORY160_CHOICE_NO-6=¿Qué está mirando?
+# Brok
+PC15D_STORY160_CHOICE_NO-7=Su corbata, Dr. Mink.
+# Brok
+PC15D_STORY160_CHOICE_NO-8=Tiene una mancha roja por detrás.
+# Ott
+PC15D_STORY160_CHOICE_NO-9=¡¿Qué?!
+# Guard
+PC15D_STORY160_CHOICE_NO-10=¡Ey! ¡El lagarto tiene razón!
+# Mink
+PC15D_STORY160_CHOICE_NO-11=Pero... ¡espere! ¡No es lo que piensa!
+# Mink
+PC15D_STORY160_CHOICE_NO-12=Me...
+# Mink
+PC15D_STORY160_CHOICE_NO-13=Me comí una hamburmiga esta mañana y...
+# Mink
+PC15D_STORY160_CHOICE_NO-14=Me limpié la mancha... Pero me olvidé de mirar ahí...
+# Mink
+PC15D_STORY160_CHOICE_NO-15=¡Es salsa de tomatizo!
+# Guard
+PC15D_STORY160_CHOICE_NO-16=¡¿Nos tomas por idiotas, Mink?!
+# Mink
+#Brok licks the tie
+PC15D_STORY160_CHOICE_NO-17=¡Ey, espere! ¿Qué demonios?
+# Brok
+PC15D_STORY160_CHOICE_NO-18=(Slurp)
+# Mink
+PC15D_STORY160_CHOICE_NO-19=¿¡Ha lamido... mi corbata?!
+# Brok
+PC15D_STORY160_CHOICE_NO-20=...
+# Mink
+PC15D_STORY160_CHOICE_NO-21=Al menos... Ahora me cree, ¿no?...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok goes to lick the red spot on Dr Hush's body
+# *****************************************************************
+# Brok
+PC15D_STORY160_CHOICE_NO2-1=(Slurp, slurp)
+# Mink
+PC15D_STORY160_CHOICE_NO2-2=¡¡¡Puaajj!!!
+# Ott
+PC15D_STORY160_CHOICE_NO2-3=¡Por dios! ¿Qué está haciendo, señor Brok?...
+# Tidy
+PC15D_STORY160_CHOICE_NO2-4=Broky. ¡Asco!
+# Brok
+PC15D_STORY160_CHOICE_NO2-5=...
+# Brok
+PC15D_STORY160_CHOICE_NO2-6=Justo lo que pensaba.
+# Brok
+PC15D_STORY160_CHOICE_NO2-7=Esto no es sangre.
+# Mink
+PC15D_STORY160_CHOICE_NO2-8=¡Se lo dije!
+# Brok
+PC15D_STORY160_CHOICE_NO2-9=No sólo lo de la corbata.
+# Brok
+PC15D_STORY160_CHOICE_NO2-10=No hay sangre en este cadáver.
+# Mink
+PC15D_STORY160_CHOICE_NO2-11=¿Qué?...
+# Guard
+PC15D_STORY160_CHOICE_NO2-12=¡¿Qué demonios?!
+# Ott
+PC15D_STORY160_CHOICE_NO2-13=¿Lo dice en serio?...
+# Brok
+PC15D_STORY160_CHOICE_NO2-14=Comprúebalo tú mismo.
+# Ott
+PC15D_STORY160_CHOICE_NO2-15=N-no... Le creo...
+#----------------------------------------------------
+# Ott
+PC15D_STORY160_CHOICE_NO3-1=Pero entonces... Mi teoría...
+# Brok
+PC15D_STORY160_CHOICE_NO3-2=Tiene agujeros, me temo. Y grandes.
+# Ott
+PC15D_STORY160_CHOICE_NO3-3=Oh...
+# Brok
+PC15D_STORY160_CHOICE_NO3-4=Me daba la sensación de que era todo demasiado perfecto. Este caso es más complejo de lo que parece.
+# Brok
+PC15D_STORY160_CHOICE_NO3-5=Alguien ha intentado encubrirse.
+# Mink
+PC15D_STORY160_CHOICE_NO3-6=Qué alivio...
+# Brok
+PC15D_STORY160_CHOICE_NO3-7=Aún así... Eso significa que lo hemos enfocamos mal.
+# Guard
+PC15D_STORY160_CHOICE_NO3-8=¿No me digas...?
+# Brok
+PC15D_STORY160_CHOICE_NO3-9=Tenemos que reexaminarlo todo de arriba a abajo.
+# Guard
+PC15D_STORY160_CHOICE_NO3-10=¡No puede ser!
+# Guard
+PC15D_STORY160_CHOICE_NO3-11=¡Que estas horas no me las van a pagar, lagarto! ¡Y me quiero ir a mi casa a dormir!
+# Brok
+PC15D_STORY160_CHOICE_NO3-12=No me importa.
+# Brok
+PC15D_STORY160_CHOICE_NO3-13=Esto puede ser una hora extra para ti, pero podría suponer la pena de muerte para aquel que enviemos a la cárcel.
+# Mink
+PC15D_STORY160_CHOICE_NO3-14=¡Exacto! Y tu insistencia para irse me hace pensar que escondes algo.
+# Guard
+PC15D_STORY160_CHOICE_NO3-15=Argh...
+# Guard
+PC15D_STORY160_CHOICE_NO3-16=Mejor me voy antes de que...
+# Brok
+PC15D_STORY160_CHOICE_NO3-17=Tidy, vuélvete a tu habitación.
+# Brok
+PC15D_STORY160_CHOICE_NO3-18=Y nada de limpiar, ¿vale?
+# Tidy
+PC15D_STORY160_CHOICE_NO3-19=Tidy sigue órdenes. Irme. Sin Tidy.
+# Mink
+PC15D_STORY160_CHOICE_NO3-20=Gracias, señor detective. ¡Me ha salvado el pellejo!
+# Brok
+PC15D_STORY160_CHOICE_NO3-21=No me felicite tan temprano.
+# Brok
+PC15D_STORY160_CHOICE_NO3-22=Aún podría ser perfectamente el culpable, intentando confundirnos para parecer inocente.
+# Mink
+PC15D_STORY160_CHOICE_NO3-23=...
+# Mink
+PC15D_STORY160_CHOICE_NO3-24=Supongo entonces que tendré que confiar en usted.
+# Mink
+PC15D_STORY160_CHOICE_NO3-25=Cuando termine y tenga una teoría plausible, que no me involucre a mí a ser posible, venga a verme.
+# Brok
+PC15D_STORY160_CHOICE_NO3-26=¡Venga, Ott!
+# Brok
+PC15D_STORY160_CHOICE_NO3-27=Examinémoslo todo a conciencia y con calma esta vez.
+# Ott
+PC15D_STORY160_CHOICE_NO3-28=¡Sí, señor!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Dr. Mink
+# *****************************************************************
+# Brok
+PC15D_STORY160_CHARGEMINK1-1=Se acabó, Dr. Mink.
+# Brok
+PC15D_STORY160_CHARGEMINK1-2=Es culpable. Hora de enfrentarse a la justicia.
+# Mink
+PC15D_STORY160_CHARGEMINK1-3=Esto... ¡no puede estar pasándome!
+# Brok
+PC15D_STORY160_CHARGEMINK1-4=Guarda, restaura las comunicaciones e informa al jefe Wes.
+# Brok
+PC15D_STORY160_CHARGEMINK1-5=Pídele que venga y se lleve al criminal.
+# Guard
+PC15D_STORY160_CHARGEMINK1-6=¡Enseguida!
+# Mink
+PC15D_STORY160_CHARGEMINK1-7=...
+# Mink
+PC15D_STORY160_CHARGEMINK1-8=Así que así termina todo, ¿no?...
+# Mink
+PC15D_STORY160_CHARGEMINK1-9=Muy bien.
+# Mink
+PC15D_STORY160_CHARGEMINK1-10=Después de todo... sólo cambiaré una cárcel por otra...
+# Brok
+PC15D_STORY160_CHARGEMINK1-11=...
+# Brok
+PC15D_STORY160_CHARGEMINK1-12=¿Se refiere...?
+# Mink
+PC15D_STORY160_CHARGEMINK1-13=Sí... ¿Recuerda mi discursito sobre dedicar nuestras vidas al trabajo?
+# Mink
+PC15D_STORY160_CHARGEMINK1-14=Menuda sarta de tonterías. Solía pensarlo, pero ahora...
+# Mink
+PC15D_STORY160_CHARGEMINK1-15=Nada me gustaría más que una vida normal...
+# Mink
+PC15D_STORY160_CHARGEMINK1-16=Un hijo... Una pareja...
+# Mink
+PC15D_STORY160_CHARGEMINK1-17=Sólo momentos felices que compartir con aquellos que quieres...
+# Mink
+PC15D_STORY160_CHARGEMINK1-18=Nunca sabré qué se siente.
+# Brok
+PC15D_STORY160_CHARGEMINK1-19=No es demasiado tarde...
+# Mink
+PC15D_STORY160_CHARGEMINK1-20=Sí, lo es. Usted sabe tan bien como yo lo que la ley dicta para los culpables de asesinato.
+# Mink
+PC15D_STORY160_CHARGEMINK1-21=Pero algún día... seré libre. De una manera u otra.
+# Ott
+PC15D_STORY160_CHARGEMINK1-22=...
+# Mink
+PC15D_STORY160_CHARGEMINK1-23=No les culpo a ninguno de ustedes. Todas las pruebas estaban en mi contra.
+# Mink
+PC15D_STORY160_CHARGEMINK1-24=Sólo... escúcheme.
+# Mink
+PC15D_STORY160_CHARGEMINK1-25=Le juro al dios de la ciencia, al Sincola o en lo que sea que crea...
+# Mink
+PC15D_STORY160_CHARGEMINK1-26=Que yo no lo hice.
+# Brok
+PC15D_STORY160_CHARGEMINK1-27=...
+#----------------------------------------------------
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-1=(Un montón de policías Tribot llegaron para llevarse al Dr. Mink.)
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-2=(Cuando salí del edificio... Me dio un escalofrío.)
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-3=(Lo que había dicho el Dr. Mink...)
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-4=(¿Es posible ganarse la vida mientras cuidas a los tuyos?)
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-5=(Después de aquello, siempre me preguntaría...)
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-6=(¿Elegí bien? ¿Hice lo correcto?)
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-7=(Si pudiera empezar de nuevo... Haría las cosas de otra manera.)
+# Brok
+PC15D_STORY160_CHOICE_CHARGEMINK2-8=(Pero no se puede cambiar el pasado...)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Second gathering after reinspecting everything
+# *****************************************************************
+# Ott
+PC15D_SECONDGATHER1_OTT-1=Si no le importa, señor Brok...
+# Ott
+PC15D_SECONDGATHER1_OTT-2=Esta vez me quedaré callado y escucharé atentamente.
+# Brok
+PC15D_SECONDGATHER1_OTT-3=Como quieras.
+#----------------------------------------------------
+# Mink
+PC15D_SECONDGATHER1-1=Vale. Somos todo oídos.
+# Brok
+PC15D_SECONDGATHER1-2=Vale.
+# Brok
+PC15D_SECONDGATHER1-3=Después de estudiar este caso cuidadosamente...
+# Brok
+PC15D_SECONDGATHER1-4=Tengo motivos para creer que la persona que asesinó al Dr. Hush...
+#----------------------------------------------------
+# Brok
+PC15D_SECONDGATHER2-1=Vamos a seguir.
+#----------------------------------------------------
+# Brok
+PC15D_SECONDGATHER3-1=¡Tengo más información que puede aportar luz a este suceso!
+#----------------------------------------------------
+# Brok
+PC15D_SECONDGATHER4-1=Y bien, ¿por dónde iba?...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charging Tidy (normal interrogation)
+# *****************************************************************
+# Brok
+PC15D_SECONDGATHER_TIDY1-1=... ¡no es una persona!
+# Brok
+PC15D_SECONDGATHER_TIDY1-2=¡Fue Tidy!
+# Tidy
+PC15D_SECONDGATHER_TIDY1-3=¿Yo no persona?
+# Tidy
+PC15D_SECONDGATHER_TIDY1-4=¿Matar papi? ¿Papi muerto?...
+# Guard
+PC15D_SECONDGATHER_TIDY1-5=Sabía que ese trasto de hojalata no era de fiar.
+# Mink
+PC15D_SECONDGATHER_TIDY1-6=¿En serio?... ¿Pero cómo?
+# Mink
+PC15D_SECONDGATHER_TIDY1-7=¡No tenía ni medios ni motivos para hacerlo!
+# Brok
+PC15D_SECONDGATHER_TIDY1-8=Ahí es donde se equivoca, Dr. Mink.
+# Brok
+PC15D_SECONDGATHER_TIDY1-9=¡Y les voy a demostrar cómo y por qué!
+# Brok
+PC15D_SECONDGATHER_TIDY1-10=Empecemos por la verdadera causa de la muerte.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_DEATHSTAGED-1=El cuerpo, la lámpara y el suelo... Los tres tienen manchas rojas.
+# Brok
+PC15D_CLUE_MURDER_DEATHSTAGED-2=¡Es sangre falsa, usada para fingir su muerte!
+# Mink
+PC15D_CLUE_MURDER_DEATHSTAGED-3=Ah... ¿Como mi corbata?...
+# Brok
+PC15D_CLUE_MURDER_DEATHSTAGED-4=Sí. Es salsa de tomatizo para hamburmigas.
+# Guard
+PC15D_CLUE_MURDER_DEATHSTAGED-5=¡¿Hemos caído en algo así?!
+# Brok
+PC15D_CLUE_MURDER_DEATHSTAGED-6=Eso me temo.
+# Brok
+PC15D_CLUE_MURDER_DEATHSTAGED-7=Había un envoltorio en la papelera de la sala de descanso, y como experto en ese tipo de comida...
+# Brok
+PC15D_CLUE_MURDER_DEATHSTAGED-8=¡He reconocido el inimitable sabor de la salsa que llevan las hamburmigas del McPulga!
+# Mink
+PC15D_CLUE_MURDER_DEATHSTAGED-9=Podría ser una simple coindidencia. No sabe cuánto tiempo lleva ese envoltorio ahí.
+# Brok
+PC15D_CLUE_MURDER_DEATHSTAGED-10=Es cierto. Pero tengo más pruebas.
+#----------------------------------------------------
+# Mink
+PC15D_CLUE_MURDER_BURGERUNFROZEN-1=Oooh... Ahora lo entiendo.
+# Mink
+PC15D_CLUE_MURDER_BURGERUNFROZEN-2=¡Por eso mi hamburmiga estaba descongelada!
+# Brok
+PC15D_CLUE_MURDER_BURGERUNFROZEN-3=Sí. ¡Hubiera sido bastante difícil restregar la salsa congelada por el cadáver!
+# Brok
+PC15D_CLUE_MURDER_BURGERUNFROZEN-4=Así que el malhechor la descongeló de antemano.
+# Mink
+PC15D_CLUE_MURDER_BURGERUNFROZEN-5=¡Fácil e ingenioso, he de decir!
+#----------------------------------------------------
+# Brok
+PC15D_CAUSEOFDEATH_NEXT1-1=Eso no es todo. Hay algo más que demuestra que hemos estado equivocados desde el principio...
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_WEAPON-1=Hemos recogido una lámpara al lado del cuerpo, que obviamente parecía el arma del crimen.
+# Brok
+PC15D_CLUE_MURDER_WEAPON-2=Esta lámpara graba sucesos. Los datos indican que recibió un golpe a las 11:02.
+# Tidy
+PC15D_CLUE_MURDER_WEAPON-3=11:02.
+# Tidy
+PC15D_CLUE_MURDER_WEAPON-4=Imposible.
+# Brok
+PC15D_CLUE_MURDER_WEAPON-5=Así es. Tienes razón.
+# Brok
+PC15D_CLUE_MURDER_WEAPON-6=El seguimiento médico del Dr. Hush se paró a las 5:00.
+# Brok
+PC15D_CLUE_MURDER_WEAPON-7=¿Cómo es posible que el supuesto golpe fatal ocurriese horas después de su muerte?...
+# Tidy
+PC15D_CLUE_MURDER_WEAPON-8=Registro. ¡No exacto!
+# Brok
+PC15D_CLUE_MURDER_WEAPON-9=Sí y no. Tiene un margen de error de dos horas.
+# Brok
+PC15D_CLUE_MURDER_WEAPON-10=¡No seis!
+# Brok
+PC15D_CLUE_MURDER_WEAPON-11=¿No es cierto, Dr. Mink?
+# Mink
+PC15D_CLUE_MURDER_WEAPON-12=Sí. Puedo confirmarlo.
+# Mink
+PC15D_CLUE_MURDER_WEAPON-13=El aparato de seguimiento está dentro de nuestro cuerpo y no se puede extraer.
+# Mink
+PC15D_CLUE_MURDER_WEAPON-14=Es fiable, pero para preservar nuestra intimidad, sólo informa cada dos horas.
+# Brok
+PC15D_CLUE_MURDER_WEAPON-15=El invento perfecto para facilitarnos la vida a los detectives...
+# Mink
+PC15D_CLUE_MURDER_WEAPON-16=Tampoco es que hayan asesinatos todos los días...
+#----------------------------------------------------
+# Mink
+PC15D_CAUSEOFDEATH_NEXT2-1=Claro, entonces...
+# Mink
+PC15D_CAUSEOFDEATH_NEXT2-2=Si nunca se produjo el fatídico golpe en la cabeza...
+# Mink
+PC15D_CAUSEOFDEATH_NEXT2-3=¿Cuál es la verdadera causa de la muerte que el asesino quiso ocultarnos?
+# Brok
+PC15D_CAUSEOFDEATH_NEXT2-4=Tengo una teoría.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-1=Dr. Mink. Mientras navegaba por su base de datos médica, encontré una nota interesante suya.
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-2="He intentado combinar las flores de Phoenixy con nanobots. Programados o no, es una pésima idea."
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-3="Inducen una ralentización aguda severa del ritmo cardíaco del sujeto, provocando su muerte."
+# Mink
+PC15D_CLUE_MURDER_TRUECAUSE-4=¡¿El Dr. Hush fue envenenado?!
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-5=Hay pruebas que apoyan esa teoría.
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-6=La mano derecha del Dr. Hush está cubierta de nanobots.
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-7=Aparte, el señor Squealer aquí presente...
+# Guard
+PC15D_CLUE_MURDER_TRUECAUSE-8=¡Ey!
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-9=¡Ups! Esto... El señor guarda tiene una planta en su escritorio.
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-10=Que es... ¡una Phoenixy!
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-11=Es completamente factible que Tidy oyese al Dr. Mink mencionarlo y robase los ingredientes del laboratorio.
+# Guard
+PC15D_CLUE_MURDER_TRUECAUSE-12=¡Sí! ¡Esas cosas robóticas tienes una buena memoria!
+# Tidy
+PC15D_CLUE_MURDER_TRUECAUSE-13=Tidy. No memoria.
+# Tidy
+PC15D_CLUE_MURDER_TRUECAUSE-14=Tidy limpia. Tidy ordena. Tidy no coge plantas.
+# Tidy
+PC15D_CLUE_MURDER_TRUECAUSE-15=Otros pueden.
+# Tidy
+PC15D_CLUE_MURDER_TRUECAUSE-16=¡Minky asesino! ¡O ratita!
+# Mink
+PC15D_CLUE_MURDER_TRUECAUSE-17=¡Cómo osas...!
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-18=Tiene razón. Ambos tenían los medios para hacerlo
+# Tidy
+PC15D_CLUE_MURDER_TRUECAUSE-19=¡Tidy correcto! ¡Tidy sincero!
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-20=No te creas ahora que estoy de tu lado.
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-21=Me limito a los hechos. Y con ellos, ¡verás cómo demuestro que eres el culpable!
+# Tidy
+PC15D_CLUE_MURDER_TRUECAUSE-22=No no. Broky mal.
+# Mink
+PC15D_CLUE_MURDER_TRUECAUSE-23=Pero, ¿cómo?
+# Mink
+PC15D_CLUE_MURDER_TRUECAUSE-24=¿Por qué se tragaría el Dr. Hush el veneno?
+# Brok
+PC15D_CLUE_MURDER_TRUECAUSE-25=Déjeme continuar.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_COFFEEPOISON-1=Encontré manchas negras en la mano derecha del Dr. Hush. No estaba seguro de qué podía ser...
+# Brok
+PC15D_CLUE_MURDER_COFFEEPOISON-2=hasta que encontré otra mancha negra. Esta vez, en el suelo de la oficina del doctor.
+# Brok
+PC15D_CLUE_MURDER_COFFEEPOISON-3=La mancha apenas era visible, como si alguien hubiera intentado limpiarla.
+# Brok
+PC15D_CLUE_MURDER_COFFEEPOISON-4=Pero no tengo dudas. Esto es café, ¡porque se ha agarrado muy bien!
+# Brok
+PC15D_CLUE_MURDER_COFFEEPOISON-5=Y adivina qué... ¡Esa mancha también estaba repleta de nanobots!
+# Guard
+PC15D_CLUE_MURDER_COFFEEPOISON-6=Entonces... ¿El doctor bebió café envenenado?
+# Brok
+PC15D_CLUE_MURDER_COFFEEPOISON-7=Sí. Debió derramar café en su mano mientras se desmayaba.
+# Mink
+PC15D_CLUE_MURDER_COFFEEPOISON-8=Espere... ¡Yo también he bebido café hoy!
+# Brok
+PC15D_CLUE_MURDER_COFFEEPOISON-9=Es cierto. Pero usted no se envenenó, y es por esto.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-1=Usted fue a la sala de descanso después del Dr. Hush, ¿no?
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-2=El culpable tuvo tiempo para verter el café preparado por el lavabo antes de hacer más. Esta vez, sin veneno.
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-3=Y miren por dónde, ahí es donde he encontrado la segunda prueba.
+# Guard
+PC15D_CLUE_MURDER_COFFEESINK-4=¿En el lavabo?
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-5=Exacto.
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-6=Ahora, dígame. ¿Quién suele preparar el café?
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-7=¡Tidy!...
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-8=Falso.
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-9=Papi, Minky hacer. Café a veces.
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-10=Ratita también.
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-11=Sí... ¿Se basa sólo en eso para acusar a nuestro robotito de mantenimiento de un crimen tan atroz?
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-12=Sinceramente, me suena poco convincente.
+# Guard
+PC15D_CLUE_MURDER_COFFEESINK-13=¡¿Insinuas que lo hice yo, Mink?!
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-14=¡Yo no he dicho eso!
+# Guard
+PC15D_CLUE_MURDER_COFFEESINK-15=¡Pero lo piensas!
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-16=Tidy hacer. ¡Buen café! ¡No veneno!
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-17=Cálmense. Sólo acabamos de comenzar.
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-18=Tidy añade. Un punto más.
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-19=Papi creador.
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-20=No puedo dañar. ¡Quiero Papi!
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-21=¿Sabes? Pensaba que una máquina como tú sería extremadamente precisa.
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-22=Pero no lo eres, porque eres un bot defectuoso.
+# Tidy
+PC15D_CLUE_MURDER_COFFEESINK-23=Tidy... ¿defectuoso?
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-24=Lo que estás diciendo no es completamente cierto.
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-25=Claro, Tidy no puede atacar a su creador... si ello implica contacto directo.
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-26=Un veneno, no obstante... ¡Es una solución alternativa para matar sin contacto directo!
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-27=...
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-28=Suena lógico... La violencia indirecta tiene un nivel de prioridad inferior, y no forma parte de la regla de oro...
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-29=¡Pero debería seguir siendo imposible! ¡Su software no debería permitírselo!
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-30=¡"Debería" es una palabra, pero "seguro" es otra!
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-31=Creo que sé el motivo de la avería, aunque tendré que guardarlo para después.
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-32=Hay algo que me desconcierta...
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-33=Los nanobots sólo permanecen activos alrededor de una hora. Su energía se agota muy rápido.
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-34=Teniendo en cuenta que Tidy no ha entrado en mi habitación hoy....
+# Mink
+PC15D_CLUE_MURDER_COFFEESINK-35=¿Cómo ha podido conseguir suficientes nanobots para hacer un veneno tan potente?
+# Brok
+PC15D_CLUE_MURDER_COFFEESINK-36=Durante mi investigación, ¡resulta que hice un descubrimiento interesante que lo puede explicar!
+#----------------------------------------------------
+# Mink
+PC15D_PICKONE_HUSH_NEEDEDROOM_WRONG1-1=Hay muchos motivos para que el doctor viniera a verme, pero esa es absurda...
+# Brok
+PC15D_PICKONE_HUSH_NEEDEDROOM_WRONG1-2=¿Eso cree?... Pues...
+#----------------------------------------------------
+# Mink
+PC15D_PICKONE_HUSH_VENT_WRONG1-1=¿...?
+# Tidy
+PC15D_PICKONE_HUSH_VENT_WRONG1-2=Broky dice tonterías. Otra vez.
+#----------------------------------------------------
+# Mink
+PC15D_PICKONE_HUSH_HEAR_WRONG1-1=¿No lo escuché porque...? ¿Qué?
+# Brok
+PC15D_PICKONE_HUSH_HEAR_WRONG1-2=Erm... Creo que me he equivocado.
+#----------------------------------------------------
+# Mink
+PC15D_PICKONE_ACCESSNANITES_WRONG1-1=Tidy pudo acceder a los nanobots... ¿Cómo exactamente?
+# Brok
+PC15D_PICKONE_ACCESSNANITES_WRONG1-2=¡Ojalá lo supiera!
+# Mink
+PC15D_PICKONE_ACCESSNANITES_WRONG1-3=...
+# Brok
+PC15D_PICKONE_ACCESSNANITES_WRONG1-4=¡Lo siento, déjeme pensarlo otra vez!
+#----------------------------------------------------
+# Guard
+PC15D_PICKONE_GUARD_BED_WRONG1-1=Eso no vale como prueba.
+# Mink
+PC15D_PICKONE_GUARD_BED_WRONG1-2=Estoy de acuerdo...
+# Brok
+PC15D_PICKONE_GUARD_BED_WRONG1-3=Oh...
+#----------------------------------------------------
+# Mink
+PC15D_PICKONE_GUARD_MOTIVE_WRONG1-1=¿Está seguro? No sé exactamente cómo eso podría ser el móvil del crimen.
+# Guard
+PC15D_PICKONE_GUARD_MOTIVE_WRONG1-2=Gracias Mink. Este lagarto debería reconsiderar su profesión.
+# Brok
+PC15D_PICKONE_GUARD_MOTIVE_WRONG1-3=¡Ey!...
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-1=Ese agujero entre las habitaciones...
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-2=Lleva directamente a una mesa en su oficina.
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-3=Y, ¿qué suele haber en esa mesa?
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-4=¡Ah!... ¡Mi caja de nanobots!
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-5=Exacto.
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-6=Si no me equivoco... Esos nanobots son nuevos y están cargados, ¿no?
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-7=Correcto.
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-8=Podemos asumir que cualquiera que supiera de la existencia del agujero podía acceder a ellos.
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-9=Y en el caso de Tidy, ¡seguro que además sabe perfectamente como activar a sus amiguitos!
+# Tidy
+PC15D_CLUE_MURDER_ACCESSNANITES-10=Yo. Diferente. Bots pequeños. No amigos.
+# Tidy
+PC15D_CLUE_MURDER_ACCESSNANITES-11=Nanobots malos. ¡Mataron Papi!
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-12=Eso se llama racismo, paleto metálico.
+# Guard
+PC15D_CLUE_MURDER_ACCESSNANITES-13=Ey. No voy a ser yo quien defienda a don chatarrón, pero...
+# Guard
+PC15D_CLUE_MURDER_ACCESSNANITES-14=¿No es más lógico que fuera la comadreja quien usase sus propios nanobots?
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-15=¿Y qué hay de ti, bella durmiente? Pareces muy interesado en culpar a los demás.
+# Guard
+PC15D_CLUE_MURDER_ACCESSNANITES-16=¡¿Yo?!
+# Guard
+PC15D_CLUE_MURDER_ACCESSNANITES-17=¡Si ni siquiera puedo entrar a tu habitación, merluzo! ¡Porque sólo te aguantas a ti mismo!
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-18=Haré como que no he oído eso... Pero su hipótesis es ridícula.
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-19=¡Seguro que el agujero lo hizo él a hurtadillas por algo!
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-20=Gente, vamos. ¡Escúchenme!
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-21=Recuerden... Al principio, había una capa ligera de yeso cubriendo el agujero.
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-22=Ahora bien... ¿Quién repara las cosas aquí?
+# Guard
+PC15D_CLUE_MURDER_ACCESSNANITES-23=La chatarra rodante.
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-24=Oh, claro... Es verdad, Tidy puede reparar tabiques con yeso.
+# Mink
+PC15D_CLUE_MURDER_ACCESSNANITES-25=¿Entonces es cierto?...
+# Guard
+PC15D_CLUE_MURDER_ACCESSNANITES-26=¡¿Lo has hecho tú, pedazo de chatarra?!
+# Tidy
+PC15D_CLUE_MURDER_ACCESSNANITES-27=¡No-no! ¡Humano idiota!
+# Tidy
+PC15D_CLUE_MURDER_ACCESSNANITES-28=Yeso. Fácil de hacer. Incluso para. ¡Humanos torpes!
+# Tidy
+PC15D_CLUE_MURDER_ACCESSNANITES-29=Tidy no agujero. Nooooo posible.
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-30=Pues lamento disentir, su majestad metálica.
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-31=Hay otra prueba que refuerza mi teoría de que fuiste tú quien lo hizo...
+# Brok
+PC15D_CLUE_MURDER_ACCESSNANITES-32=O al menos, que tienes más de mentiroso que de bot.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-1=Según el registro, Tidy fue al la sala de descanso a las 4:24.
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-2=No hay ningún otro registro suyo después de eso.
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-3=Aún así, la pantalla en la oficina del Dr. Hush indica que se ha estado cargando de las 5:10 hasta las 11:10.
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-4=¿Cómo pudo llegar a la oficina, si aparentemente en ningún momento salió de la sala de descanso?
+# Tidy
+PC15D_CLUE_MURDER_TIDYWRONG-5=¡Muy fácil! ¡Sip-sip!
+# Tidy
+PC15D_CLUE_MURDER_TIDYWRONG-6=Tidy prepara café. Papi venir. Beber.
+# Tidy
+PC15D_CLUE_MURDER_TIDYWRONG-7=Después. Papi a la oficina. Con Tidy.
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-8=Entonces... ¿me estás diciendo que sólo abriste la puerta y le seguiste?
+# Tidy
+PC15D_CLUE_MURDER_TIDYWRONG-9=¡Sip-sip!
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-10=Vale. Por ahora... te daré el beneficio de la duda.
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-11=En ese caso, examinemos el recorrido de nuestro doctor fallecido favorito, ¿vale?
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-12=¡Creo que también lo encontrarás bastante interesante!
+# Tidy
+PC15D_CLUE_MURDER_TIDYWRONG-13=Tidy. No gustan. Insinuaciones.
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-14=Antes de seguir, tengo una preguntilla...
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-15=¡¿De qué registros está hablando?!
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-16=Ah, sí, es cierto... Usted no lo sabe.
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-17=El laboratorio registra las aperturas de puertas. Sólo los guardas lo saben.
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-18=¡¿Qué demonios...?!
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-19=¡¿Nos han espiado durante todo este tiempo?!
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-20=¡Me pensaba que tu función era proteger nuestra privacidad!
+# Guard
+PC15D_CLUE_MURDER_TIDYWRONG-21=¡No!
+# Guard
+PC15D_CLUE_MURDER_TIDYWRONG-22=¡Estoy aquí para defender vuestra integridad física! ¡Y asegurarme de que nadie os agreda!
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-23=¡Pues has hecho un trabajo espléndido!
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-24=¡Nos has engañado!
+# Guard
+PC15D_CLUE_MURDER_TIDYWRONG-25=¡Yo no! ¡Yo no diseñé ese sistema!
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-26=¡¿Y quién lo hizo?!
+# Guard
+PC15D_CLUE_MURDER_TIDYWRONG-27=¡El Gobierno, por descontado!
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-28=Oh... Es cierto.
+# Mink
+PC15D_CLUE_MURDER_TIDYWRONG-29=Vale. Entonces les mandaré una sugerencia más tarde.
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-30=(Mmm...)
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-31=(Por otro lado, parece que a Tidy no le ha sorprendido para nada que exista dicho registro...)
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-32=Sigamos, ¿de acuerdo?
+# Brok
+PC15D_CLUE_MURDER_TIDYWRONG-33=Hay algo curioso sobre los movimientos del doctor.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-1=El último registro del Dr. Hush indica que salió de su oficina a las 5:04.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-2=Después de eso, desapareció.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-3=Esto lo confirma la declaración del guarda. Si no te importa explicarlo...
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHERE-4=Claro...
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHERE-5=A las 5:10, oí un ruido que venía de la habitación del doctor. Pero él no estaba.
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHERE-6=La verdad, no parecía que hubiera nadie... Tidy sí estaba, aunque apagado y cargándose.
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHERE-7=Empecé a buscar al doc, pero luego... ¡Oí su voz a través de la pared!
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHERE-8="Estoy en la sala de descanso."
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-9=Pero eso no fue realmente el Dr. Hush... Sino de una grabación del Conoce-Me.
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHERE-10=Una grabación. ¡Oh!
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHERE-11=¿Significa eso que el cuerpo estaba en la sala de descanso y el asesino no quería que Don Rata lo encontrase?
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-12=Es poco probable.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-13=El guarda revisa las habitaciones regularmente y ahí no hay sitio para esconderlo.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-14=Aparte, tenga en cuenta que el objetivo final era meter al Dr. Hush en la oficina del Dr. Mink.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-15=Es imposible llevar el cuerpo desde la sala de descanso a su oficina, pasando por el vestíbulo, sin que nadie se dé cuenta.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-16=¡Mentira!
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHERE-17=Vale. ¡Entonces dinos cómo pasó!
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-18=Papi. Regresó conmigo. A oficina.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-19=Antes de carga. Papi salió.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-20=Tidy nunca olvidar. Últimas palabras Papi.
+# Hush
+PC15D_CLUE_MURDER_DRHUSHWHERE-21="Debo aclarar las cosas con el Dr. Mink."
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-22=Papi. Encontró Minky en vestíbulo.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-23=Papi siguió Minky. Entró oficina Minky.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-24=Minky dio café a Papi...
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHERE-25=Papi muerto.
+#----------------------------------------------------
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHEREB-1=Debo reconocer que la versión de la lata esta...
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHEREB-2=Suena bastante más plausible que la tuya, lagarto.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-3=Sí, Tidy tiene esa condenada grabación. Pero, ¿cómo sabemos cuándo la hizo?
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-4=Está sacada de contexto.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-5=Podría perfectamente haberla grabado hace tiempo y así tener una prueba falsa.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-6=Además, no hay registro alguno de que Dr. Hush entrase en en la habitación del Dr. Mink.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-7=¡Mentira!
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-8=Mink toca puerta. Entra con Papi.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-9=Entonces Minky. ¡Envenenar Papi!
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHEREB-10=¿La comadreja volvió a su habitación con el doctor?...
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-11=¡Mira registros!
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-12=¿Cuándo Minky? ¿Entrar?
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-13=5:04...
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-14=Ups.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-15=Exacto. ¡Mismo minuto que Papi irse!
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-16=¡Pero eso nunca ocurrío! ¡Si hoy no le vi el pelo!
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-17=¡Señor guarda!
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHEREB-18=... No me acuerdo.
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-19=¡¿Me tomas el pelo?!
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-20=Y Tidy, ¿qué hay de la voz que oyó el guarda?
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-21=Coincidencia. Conoce-Me estropeado.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-22=A veces Conoce-Me. Pone algo al azar.
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-23=Mmm... Sí, me ha pasado alguna vez...
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-24=¿Y el agujero? ¿La mancha de café en el suelo de su habitación?
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-25=Llevan años. Ahí.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-26=Broky. ¿Probar lo opuesto?
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-27=Bueno... Los nanobots....
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-28=Nanobots. Máquinas. Atraídas por café.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-29=Cierto, ¿Minky?
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-30=... No puedo deshonrar mi profesión mintiéndoles.
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-31=Sí. Debido a su hardware, los nanobots se sienten atraídos por la cafeína y la recolectan.
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHEREB-32=¡Ah! ¡Entonces sí que fuiste tú, comadreja!
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-33=¡No! ¡No le escuche!
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-34=¡Señor detective! Le he dicho la verdad...
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREB-35=¡Tiene que creerme!
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHEREB-36=¡Pues yo estoy de parte de la lata!
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-37=Somos dos contra dos.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-38=¿Y tú qué crees, Ott?
+# Ott
+PC15D_CLUE_MURDER_DRHUSHWHEREB-39=Yo...
+# Ott
+PC15D_CLUE_MURDER_DRHUSHWHEREB-40=Lo siento... Me pierdo entre tanto detalle.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-41=¡Caballeros! Déjenme terminar mi teoría, y entonces ya decidirán.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-42=Vale. No escuchen. A Tidy.
+# Tidy
+PC15D_CLUE_MURDER_DRHUSHWHEREB-43=Tidy triste. Papi muerto.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREB-44=Argh...
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREC-1=Vamos a centrarnos.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREC-2=Tidy usó la grabación del Conoce-Me para evitar que el guarda se preocupase por la desaparición del Dr. Hush.
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREC-3=Según esta suposición, a las 5:10 el Dr. Hush no se encontraba ni en su cuarto, ni en la sala de descanso, ni en el vestíbulo...
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREC-4=Y como el registro confirma, tampoco entró en la habitación del Dr. Mink.
+# Guard
+PC15D_CLUE_MURDER_DRHUSHWHEREC-5=¡No puede ser! ¡Es imposible!
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREC-6=Permíteme discrepar.
+# Mink
+PC15D_CLUE_MURDER_DRHUSHWHEREC-7=Pero tampoco pudo teletransportarse, ¿no?
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREC-8=Oh, ¡claro que no!
+# Brok
+PC15D_CLUE_MURDER_DRHUSHWHEREC-9=Hay una cuarta posibilidad, ¡y se la explicaré ahora!
+#----------------------------------------------------
+# Brok
+PC15D_PINPOINTVENT_WRONG-1=¡El Dr. Hush estaba aquí!
+# Mink
+PC15D_PINPOINTVENT_WRONG-2=¿...?
+# Guard
+PC15D_PINPOINTVENT_WRONG-3=¿Estás de coña? ¡Ya hemos establecido que el doctor no podía estar en esa sala!
+# Brok
+PC15D_PINPOINTVENT_WRONG-4=¿Ah, sí?
+# Brok
+PC15D_PINPOINTVENT_WRONG-5=Ups.
+# Mink
+PC15D_PINPOINTVENT_WRONG-6=...
+# Brok
+PC15D_PINPOINTVENT_WRONG-7=¡Denme otra oportunidad!
+#----------------------------------------------------
+# Guard
+PC15D_PINPOINTVENT_RIGHT-1=¡¿La ventilación?!
+# Brok
+PC15D_PINPOINTVENT_RIGHT-2=Sí. El conducto de ventilación.
+# Brok
+PC15D_PINPOINTVENT_RIGHT-3=¡Es el único sitio en que pudo esconder el cuerpo sin que nadie lo descubriera!
+# Mink
+PC15D_PINPOINTVENT_RIGHT-4=¡Es sólo una suposición!
+# Guard
+PC15D_PINPOINTVENT_RIGHT-5=¿Tienes alguna prueba que respalde esa locura?
+# Brok
+PC15D_PINPOINTVENT_RIGHT-6=¡Pues claro!
+#----------------------------------------------------
+# Guard
+PC15D_PICKONE_STRETCH_WRONG1-1=¿Qué?...
+# Mink
+PC15D_PICKONE_STRETCH_WRONG1-2=¿Uh?... ¿Puede explicarlo?
+# Brok
+PC15D_PICKONE_STRETCH_WRONG1-3=Me temo que no.
+#----------------------------------------------------
+# Guard
+PC15D_PICKONE_VENTPROOF_WRONG1-1=Espera... ¿Cómo demuestra eso que el doctor estaba en la ventilación?
+# Brok
+PC15D_PICKONE_VENTPROOF_WRONG1-2=Ah, ¿no lo hace?
+# Guard
+PC15D_PICKONE_VENTPROOF_WRONG1-3=No.
+# Tidy
+PC15D_PICKONE_VENTPROOF_WRONG1-4=¡Broky roto!
+#----------------------------------------------------
+# Guard
+PC15D_CLUE_MURDER_VENTILATION-1=¿Salsa de tomatizo?...
+# Brok
+PC15D_CLUE_MURDER_VENTILATION-2=Sí. Parece que el asesino le untó bastante cantidad para intentar confundirnos...
+# Tidy
+PC15D_CLUE_MURDER_VENTILATION-3=Problema detectado.
+# Brok
+PC15D_CLUE_MURDER_VENTILATION-4=¿Y ahora qué pasa?...
+# Tidy
+PC15D_CLUE_MURDER_VENTILATION-5=Ventilación. También usada. Envíos. A veces.
+# Brok
+PC15D_CLUE_MURDER_VENTILATION-6=¿Es eso cierto?
+# Mink
+PC15D_CLUE_MURDER_VENTILATION-7=Sí. Los paquetes grandes no caben en el Paquetubo, así que los envían a través de la ventilación.
+# Mink
+PC15D_CLUE_MURDER_VENTILATION-8=Es posible que el contenido de algún paquete se saliera...
+# Brok
+PC15D_CLUE_MURDER_VENTILATION-9=Obviamente...
+# Tidy
+PC15D_CLUE_MURDER_VENTILATION-10=¡Zasca! ¡Pillado!
+# Brok
+PC15D_CLUE_MURDER_VENTILATION-11=Hrmph...
+# Brok
+PC15D_CLUE_MURDER_VENTILATION-12=¡Aun así! Sería una grandísima coincidencia, ¿no creen?
+# Mink
+PC15D_CLUE_MURDER_VENTILATION-13=Supongamos que tiene razón.
+# Mink
+PC15D_CLUE_MURDER_VENTILATION-14=Para meterlo en la ventilación... ¡el Dr. Hush tendría que haber estado en su oficina!
+# Brok
+PC15D_CLUE_MURDER_VENTILATION-15=Lo estaba.
+# Mink
+PC15D_CLUE_MURDER_VENTILATION-16=Pero... ¡usted mismo lo ha dicho antes!
+# Mink
+PC15D_CLUE_MURDER_VENTILATION-17=Que en el último registro suyo... ¡se marchó de su habitación!
+# Mink
+PC15D_CLUE_MURDER_VENTILATION-18=¿Cómo lo explica?
+#----------------------------------------------------
+# Brok
+PC15D_DRHUSHWHY_GHOST-1=Es obvio. El Dr. Hush está muerto, y ahora es un fantasma.
+# Brok
+PC15D_DRHUSHWHY_GHOST-2=Y los fantasmas pueden atravesar las paredes sin tocar nada.
+# Brok
+PC15D_DRHUSHWHY_GHOST-3=¡Todo el mundo lo sabe!
+# Mink
+PC15D_DRHUSHWHY_GHOST-4=...
+# Guard
+PC15D_DRHUSHWHY_GHOST-5=...
+# Tidy
+PC15D_DRHUSHWHY_GHOST-6=...
+# Brok
+PC15D_DRHUSHWHY_GHOST-7=Vale, esto en mi cabeza sonaba mejor...
+# Mink
+PC15D_DRHUSHWHY_GHOST-8=¡Encuentre algo mejor!
+#----------------------------------------------------
+# Brok
+PC15D_DRHUSHWHY_BACK-1=Fácil. El Dr. Hush volvió a su oficina.
+# Mink
+PC15D_DRHUSHWHY_BACK-2=¿Cuándo?... A las 5:10 el guarda entró. No hay nada antes de eso.
+# Brok
+PC15D_DRHUSHWHY_BACK-3=¡Lo sé!...
+# Brok
+PC15D_DRHUSHWHY_BACK-4=Él... ¡se arrastró hasta techo y se metió antes de que el guarda entrase!
+# Brok
+PC15D_DRHUSHWHY_BACK-5=¡Como Spidercerdo! ¡Ya saben!...
+# Brok
+PC15D_DRHUSHWHY_BACK-6=...
+# Brok
+PC15D_DRHUSHWHY_BACK-7=Qué vergüenza...
+# Mink
+PC15D_DRHUSHWHY_BACK-8=Fingiremos que no hemos oído eso.
+#----------------------------------------------------
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-1=Está claro que el Dr. Hush nunca salió de su oficina.
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-2=No hay ningún otro registro desde su supuesta salida hasta que el guarda revisó la habitación.
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-3=Eso sólo fue un intento del criminal para desviar nuestra atención.
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-4=Tidy podría simplemente haber falsificado ese registro colocando la mano del doctor en el pomo.
+# Mink
+PC15D_DRHUSHWHY_NEVEREXIT-5=¿Quiere decir que para entonces el Dr. Hush ya estaba muerto?
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-6=Sí. De hecho...
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-7=Creo que fue asesinado incluso antes de que entrase a su oficina.
+# Tidy
+PC15D_DRHUSHWHY_NEVEREXIT-8=Absurdo.
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-9=Ah, ¿sí?
+# Brok
+PC15D_DRHUSHWHY_NEVEREXIT-10=Bueno, ¡tengo otra prueba!
+#----------------------------------------------------
+# Brok
+PC15D_PICKONE_WHEREPOISONED_WRONG1-1=(Pero... Eso no es ni siquiera una localización, ¿no?)
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-1=Recuerden dónde estaba el veneno. ¡En el café!
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-2=Para envenenarle, lo ideal hubiera sido que el Dr. Hush se lo bebiese en su oficina.
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-3=Salvo que... nunca lo hacía.
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-4=El Dr. Hush siempre se bebía su café en la sala de descanso. Era muy maniático y no quería arriesgarse a ensuciar su cuarto.
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-5=Y aún así, había una mancha de café en el suelo...
+# Guard
+PC15D_CLUE_MURDER_WHEREPOISONED-6=¿Qué insinúas? ¿Que la mancha se formó cuando el Dr. Hush cayó muerto al suelo?
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-7=Eso es exactamente lo que quiero decir.
+# Tidy
+PC15D_CLUE_MURDER_WHEREPOISONED-8=Broky mentira.
+# Tidy
+PC15D_CLUE_MURDER_WHEREPOISONED-9=Papi toma. Café. En oficina. A veces.
+# Mink
+PC15D_CLUE_MURDER_WHEREPOISONED-10=De nuevo, es su palabra contra la del robot, detective...
+# Guard
+PC15D_CLUE_MURDER_WHEREPOISONED-11=Sí. Y tiene más sentido que el doctor lo derramase por accidente.
+# Tidy
+PC15D_CLUE_MURDER_WHEREPOISONED-12=Broky. Acabado. ¡Rendirse!
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-13=(Qué mal... Hasta a Mink le empieza a parecer algo rebuscada mi teoría...)
+# Brok
+PC15D_CLUE_MURDER_WHEREPOISONED-14=(¿Voy por el buen camino?...)
+#----------------------------------------------------
+# Brok
+PC15D_RIGHTPATH_NO-1=(Jo... Creo que estoy perdiendo la cabeza. ¿Cómo voy a confiar en lo que digo?)
+# Brok
+PC15D_RIGHTPATH_NO-2=(...)
+# Brok
+PC15D_RIGHTPATH_NO-3=(¡No!... Ya he llegado tan lejos...)
+# Brok
+PC15D_RIGHTPATH_NO-4=(Tengo la sensación de Tidy está involucrado... ¡Debo confiar en mi instinto!)
+# Brok
+PC15D_RIGHTPATH_NO-5=(Será mejor que siga, a ver qué saco en claro.)
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_RIGHTPATH-1=Todos... bueno, salvo Tidy.
+# Brok
+PC15D_CLUE_MURDER_RIGHTPATH-2=Sé cómo suena todo esto. Pero, por favor, ¡déjenme continuar y confíen en mí!
+# Tidy
+PC15D_CLUE_MURDER_RIGHTPATH-3=Broky tonto.
+# Mink
+PC15D_CLUE_MURDER_RIGHTPATH-4=Vale.
+# Mink
+PC15D_CLUE_MURDER_RIGHTPATH-5=Supongamos que el Dr. Hush bebió su café en la sala de descanso y murió.
+# Mink
+PC15D_CLUE_MURDER_RIGHTPATH-6=Para meterlo en la ventilación, tendría que haber vuelto a su oficina.
+# Mink
+PC15D_CLUE_MURDER_RIGHTPATH-7=¿Cómo?
+# Brok
+PC15D_CLUE_MURDER_RIGHTPATH-8=Es fácil. Tidy puede llevar objetos.
+# Guard
+PC15D_CLUE_MURDER_RIGHTPATH-9=Está diciendos... ¡¿qué este cacharrito metálito cargó con el Dr. Hush hasta su habitación?!
+# Guard
+PC15D_CLUE_MURDER_RIGHTPATH-10=¡Ja ja! ¡Ni hablar, tío! ¡Me habría dado cuenta!
+# Brok
+PC15D_CLUE_MURDER_RIGHTPATH-11=¿Estás seguros? ¿O debería refrescarte la memoria?
+# Guard
+PC15D_CLUE_MURDER_RIGHTPATH-12=¿Eh?
+#----------------------------------------------------
+# Guard
+PC15D_PICKONE_CARRY_WRONG1-1=Yo no recuerdo eso...
+# Brok
+PC15D_PICKONE_CARRY_WRONG1-2=¿Ah no? ¡Pues tienes una memoria terrible!
+# Guard
+PC15D_PICKONE_CARRY_WRONG1-3=¡Ey!...
+# Mink
+PC15D_PICKONE_CARRY_WRONG1-4=Por favor, admita que se ha equivocado y continuemos, detective.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_CARRY-1=A las 4:38, el guarda no estaba en su puesto. Había recibido una llamada casi sin cobertura.
+# Brok
+PC15D_CLUE_MURDER_CARRY-2=Cuando esto ocurre, abre la puerta principal para mejorar la señal.
+# Mink
+PC15D_CLUE_MURDER_CARRY-3=¿Qué?...
+# Brok
+PC15D_CLUE_MURDER_CARRY-4=Pero al otro lado no había nadie. Sólo música.
+# Brok
+PC15D_CLUE_MURDER_CARRY-5=Durante ese momento, dejó de prestar atención.
+# Mink
+PC15D_CLUE_MURDER_CARRY-6=¿Es eso cierto, don rata? ¡¿Te despistaste?!
+# Guard
+PC15D_CLUE_MURDER_CARRY-7=¡Ey! ¡Sabes perfectamente que la cobertura aquí es terrible!
+# Guard
+PC15D_CLUE_MURDER_CARRY-8=Bueno, quizás no... Como no tienes ni amigos ni familia...
+# Mink
+PC15D_CLUE_MURDER_CARRY-9=¡Argh! Así que es verdad...
+# Brok
+PC15D_CLUE_MURDER_CARRY-10=Él pensaba que era una llamada basura, pero yo creo que...
+# Brok
+PC15D_CLUE_MURDER_CARRY-11=¡Fuiste tú, Tidy!
+# Brok
+PC15D_CLUE_MURDER_CARRY-12=No sería difícil para ti efectuar una llamada y poner algo de música, ¿me equivoco?
+# Mink
+PC15D_CLUE_MURDER_CARRY-13=Sí, puede...
+# Tidy
+PC15D_CLUE_MURDER_CARRY-14=Broky. ¿Querer música?
+# Tidy
+PC15D_CLUE_MURDER_CARRY-15=Vale. Tidy. ¡Poner música!
+# Brok
+PC15D_CLUE_MURDER_CARRY-16=Erm... No, gracias...
+# Tidy
+PC15D_CLUE_MURDER_CARRY-17=Tidy. No llamar. No, no.
+# Brok
+PC15D_CLUE_MURDER_CARRY-18=Aunque el guarda todavía estaba pendiente de que nadie entrase ni saliese del laboratorio...
+# Brok
+PC15D_CLUE_MURDER_CARRY-19=En ese instante... ¡pudo pasar cualquier cosa!
+# Mink
+PC15D_CLUE_MURDER_CARRY-20=Mmm...
+# Mink
+PC15D_CLUE_MURDER_CARRY-21=Estoy imaginándome a Tidy llevando en brazos al doctor por el vestíbulo y abriendo la oficina con su mano...
+# Mink
+PC15D_CLUE_MURDER_CARRY-22=Es técnicamente posible, pero algo inverosímil...
+# Brok
+PC15D_CLUE_MURDER_CARRY-23=Eso también explicaría por qué encontramos a Tidy en la habitación del Dr. Hush, pese a que debía estar en la sala de descanso.
+# Brok
+PC15D_CLUE_MURDER_CARRY-24=Veámoslo desde otro punto de vista.
+# Brok
+PC15D_CLUE_MURDER_CARRY-25=¿Por qué recibiría una llamada tan extraña justo cuando el Dr. Hush volvía a su habitación?
+# Brok
+PC15D_CLUE_MURDER_CARRY-26=La única explicación es que tenía que distraerle.
+# Tidy
+PC15D_CLUE_MURDER_CARRY-27=No. Tidy no llamada.
+# Tidy
+PC15D_CLUE_MURDER_CARRY-28=¡Broky sordo!
+# Mink
+PC15D_CLUE_MURDER_CARRY-29=Entonces... ¿cuándo murió?
+# Brok
+PC15D_CLUE_MURDER_CARRY-30=Entre las 4:24 y las 4:38, que es cuando Tidy entró y salió de la sala de descanso.
+# Tidy
+PC15D_CLUE_MURDER_CARRY-31=Broky me ignora. Pobre Tidy... ¡Papi muerto!...
+# Mink
+PC15D_CLUE_MURDER_CARRY-32=Si su teoría es acertada, aún hay muchas cosas que necesitan de explicación.
+# Mink
+PC15D_CLUE_MURDER_CARRY-33=Por ejemplo, ¿cómo pudo Tidy meter al Dr. Hush en la ventilación?
+# Mink
+PC15D_CLUE_MURDER_CARRY-34=¡Como si alguno de ellos pudiera subir por la escalerilla!
+# Brok
+PC15D_CLUE_MURDER_CARRY-35=Error. ¡Sé exactamente cómo lo hizo!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_TIDY_STRETCH_WRONG-1=¡Esto es lo que pudo ayudar al robot a subir a la ventilación!
+# Brok
+PC15D_CLUE_TIDY_STRETCH_WRONG-2=... Supongo.
+# Guard
+PC15D_CLUE_TIDY_STRETCH_WRONG-3=Tío. Estás completamente majara.
+# Guard
+PC15D_CLUE_TIDY_STRETCH_WRONG-4=Ya está bien. Me voy de aquí...
+# Brok
+PC15D_CLUE_TIDY_STRETCH_WRONG-5=¡No, espera! ¡Sólo bromaba!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_STRETCH-1=¿No recuerdan la habilidad especial de Tidy?
+# Brok
+PC15D_CLUE_MURDER_STRETCH-2=¡Brazos extensibles!
+# Mink
+PC15D_CLUE_MURDER_STRETCH-3=...
+# Guard
+PC15D_CLUE_MURDER_STRETCH-4=¿Lo dices en serio?
+# Tidy
+PC15D_CLUE_MURDER_STRETCH-5=Imposible.
+# Brok
+PC15D_CLUE_MURDER_STRETCH-6=A ver, dime. ¿Por qué?
+# Tidy
+#Make sure to convert to the appropriate unit according to your country (eg : 3 meters)
+PC15D_CLUE_MURDER_STRETCH-7=Brazos. Estiran 3 metros. Máximo.
+# Brok
+PC15D_CLUE_MURDER_STRETCH-8=¿Y qué?...
+# Tidy
+PC15D_CLUE_MURDER_STRETCH-9=Mira.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_STRETCH2-1=Estás de coña, ¿no?
+# Brok
+PC15D_CLUE_MURDER_STRETCH2-2=¿Cómo sé si ese es tu verdadero límite?
+# Mink
+PC15D_CLUE_MURDER_STRETCH2-3=Veamos sus especificaciones...
+# Mink
+PC15D_CLUE_MURDER_STRETCH2-4=Mmm...
+# Mink
+#Make sure to convert to the appropriate unit according to your country (eg : 3 meters)
+PC15D_CLUE_MURDER_STRETCH2-5=Me temo que es cierto. Tiene los brazos extendidos hasta el límite, que son 3 metros.
+# Mink
+PC15D_CLUE_MURDER_STRETCH2-6=El techo de la habitación está más alto, por lo que no pudo llegar a la ventilación.
+# Brok
+PC15D_CLUE_MURDER_STRETCH2-7=¡N-no puede ser!
+# Tidy
+PC15D_CLUE_MURDER_STRETCH2-8=¡Ah-ah! ¡Te lo dije!
+# Tidy
+PC15D_CLUE_MURDER_STRETCH2-9=Teoría Broky. ¡Fuera! ¡Kaput!
+# Brok
+PC15D_CLUE_MURDER_STRETCH2-10=(¡Tengo que pensar rápido!...)
+# Brok
+PC15D_CLUE_MURDER_STRETCH2-11=(Estoy convencido de que Tidy está involucrado... ¡Seguro que sí!)
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_RAMP-1=Echen un vistazo a la configuración de la habitación.
+# Brok
+PC15D_CLUE_MURDER_RAMP-2=Ambas oficinas son un reflejo de la otra.
+# Brok
+PC15D_CLUE_MURDER_RAMP-3=Como tal, la ventilación está a la misma altura en ambas habitaciones.
+# Brok
+PC15D_CLUE_MURDER_RAMP-4=¿Cómo de alto está?
+# Mink
+#10 feet is Equivalent to 3.5 meters
+PC15D_CLUE_MURDER_RAMP-5=3 metros y medio.
+# Brok
+PC15D_CLUE_MURDER_RAMP-6=Sí. La columna de luz de esta sala mide 3 metros y medio, y llega al techo.
+# Brok
+#9 feet is Equivalent to 3 meters
+PC15D_CLUE_MURDER_RAMP-7=Y si sus brazos sólo se extienden 3 metros... No llegaría.
+# Tidy
+PC15D_CLUE_MURDER_RAMP-8=Oh. Broky de acuerdo.
+# Tidy
+PC15D_CLUE_MURDER_RAMP-9=¡Admite derrota!
+# Brok
+PC15D_CLUE_MURDER_RAMP-10=¡Para nada!
+# Brok
+PC15D_CLUE_MURDER_RAMP-11=Sólo se nos había escapado... un pequeño detalle.
+# Guard
+PC15D_CLUE_MURDER_RAMP-12=¡La mesa de trabajo! Tidy puede subirse.
+# Brok
+#Equivalent to 1 meter
+PC15D_CLUE_MURDER_RAMP-13=Parece que tiene como un metro de altura.
+# Guard
+PC15D_CLUE_MURDER_RAMP-14=Pero... el cacharro no puede saltar hasta ahí, ¿no?
+# Brok
+PC15D_CLUE_MURDER_RAMP-15=¡Claro que no!
+# Brok
+PC15D_CLUE_MURDER_RAMP-16=Por eso la rampa que el Dr. Hush diseño para él.
+# Brok
+PC15D_CLUE_MURDER_RAMP-17=¡Tú mismo me lo dijiste, Tidy!
+# Tidy
+PC15D_CLUE_MURDER_RAMP-18=...
+# Tidy
+PC15D_CLUE_MURDER_RAMP-19=Tidy. Aprender. Cerrar boca.
+# Guard
+PC15D_CLUE_MURDER_RAMP-20=Lo siento lagartito, pero me suena todo a paparruchas.
+# Brok
+PC15D_CLUE_MURDER_RAMP-21=¡Ah, pero es que puedo probarlo!
+# Guard
+PC15D_CLUE_MURDER_RAMP-22=¡¿Puedes?!
+# Ott
+PC15D_CLUE_MURDER_RAMP-23=¡Vamos, señor Brok!
+#----------------------------------------------------
+# Tidy
+PC15D_PICKONE_CRUMBS_WRONG1-1=Tidy. No puede. Entender.
+# Mink
+PC15D_PICKONE_CRUMBS_WRONG1-2=No eres el único, la verdad.
+# Brok
+PC15D_PICKONE_CRUMBS_WRONG1-3=Ahora tampoco lo veo claro. ¿Qué había dicho?...
+# Brok
+PC15D_PICKONE_CRUMBS_WRONG1-4=¡Lo intentaré de nuevo!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-1=Esto es una foto de la habitación. ¡Mírenla!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-2=Hay migas por toda la mesa.
+# Mink
+PC15D_CLUE_MURDER_CRUMBS-3=Oh... Eso es cierto.
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-4=Pero, como saben, el Dr. Hush es un obseso de la limpieza.
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-5=¿Cómo toleraría que hubieran migas por todas partes?...
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-6=La respuesta es sencilla: el Dr. Hush ya no estaba vivo.
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-7=Tidy, ¡las esparciste tú al subir por la rampa!
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-8=Ah-uh.
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-9=Tidy. Levantarse tarde.
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-10=No limpiado. Aún.
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-11=¡A ver si nos cuentas la verdad de una dichosa vez!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-12=¡Admítelo! ¡Eso fue lo que pasó!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-13=La subiste, estiraste los brazos para subir a la ventilación y meter al Dr. Hush dentro, y después...
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-14=¡Empujaste al pobre hombre hasta la habitación del Dr. Mink!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-15=Cuando más hablamos, más...
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-16=Ja, ja, ja...
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-17=¿Eh?
+# Guard
+PC15D_CLUE_MURDER_CRUMBS-18=Se está... ¿riendo?
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-19=Yo...
+# Mink
+PC15D_CLUE_MURDER_CRUMBS-20=¡...!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-21=¿Tú qué?
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-22=¿Piensas cambiar tu argumento y fingir que no es posible subir ahí arriba?...
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-23=...
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-24=Es posible. Claro que sí.
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-25=¿Eh?
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-26=Ver. Broky. Caer. ¡Su propia trampa!
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-27=Broky suerte. Circunstancias.
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-28=Pero suerte. ¡Se acabó!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-29=... ¿Podrías ser más específico?
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-30=Mirar plano.
+# Tidy
+#Equivalent to 60 centimeters.
+PC15D_CLUE_MURDER_CRUMBS-31=Conducto de ventilación. Medio metro alto.
+# Tidy
+#Equivalent to 1 meter.
+PC15D_CLUE_MURDER_CRUMBS-32=Tidy. ¡Mide un metro!
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-33=Yo no doblar. ¡No caber!
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-34=¡Más! No puedo estar en suelo. Empujando. ¡Hasta el final!
+# Mink
+PC15D_CLUE_MURDER_CRUMBS-35=¡Tiene razón!
+# Mink
+PC15D_CLUE_MURDER_CRUMBS-36=No creo que cupiese. ¡Y el conducto es demasiado largo como para haberlo empujado hasta el fondo mientras permanecía en el suelo!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-37=Gulp...
+# Tidy
+PC15D_CLUE_MURDER_CRUMBS-38=¡Broky! ¡Acabado!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-39=¡No!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-40=¡Pu... Puedo demostrar cómo!
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-41=Vamos a ver esa foto de nuevo.
+# Brok
+PC15D_CLUE_MURDER_CRUMBS-42=¡Así... es cómo pudo hacerlo!
+#----------------------------------------------------
+# Brok
+PC15D_PINPOINTLEVER_WRONG-1=¡Miren eso!
+# Guard
+PC15D_PINPOINTLEVER_WRONG-2=¿Eso? ¿Está seguro?
+# Brok
+PC15D_PINPOINTLEVER_WRONG-3=Bueno... No, pero es bonito, ¿a que sí?
+# Mink
+PC15D_PINPOINTLEVER_WRONG-4=¿No puede hablar en serio ni durante un minuto?
+#----------------------------------------------------
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-1=Nos olvidamos de preguntarnos una cosa importante.
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-2=¿Cómo se abre ese respiradero? A fin de cuentas, no siempre está abierto.
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-3=Es cierto.
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-4=A diferencia del mío, que tiene una escalerilla y un automatismo que...
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-5=Oh, ¡ahora lo entiendo! ¡La palanca!
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-6=¿Es lo que sugiere?...
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-7=Sí.
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-8=Primero, Tidy abrió la ventilación y metió al Dr. Hush.
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-9=Después, ¡se agarró de la palanca con un brazo, y empujó el cadáver con el otro!
+# Guard
+PC15D_PINPOINTLEVER_RIGHT-10=¡Guau! ¡Eso es lo más loco que has dicho en todo el día, lagartito!
+# Ott
+PC15D_PINPOINTLEVER_RIGHT-11=¿Es eso siquiera posible?
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-12=Veamos...
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-13=Según este plano, la ventilación mide casi 3 metros de ancho...
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-14=Sí. Es un poco loco... pero técnicamente es posible.
+# Guard
+PC15D_PINPOINTLEVER_RIGHT-15=¡¿El robot de mantenimiento trepando hasta el techo?! ¡Estás chalado!
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-16=¡Espera a que termine, y ya me dirás cuando termine si sigues pensándolo!
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-17=Vamos a recordar cómo acabo todo... Con el cadáver en la habitación del Dr. Mink.
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-18=Sí, Tidy lo empujó, pero la pregunta es... ¿cuándo?
+# Mink
+PC15D_PINPOINTLEVER_RIGHT-19=Claro.
+# Brok
+PC15D_PINPOINTLEVER_RIGHT-20=¡Hay un indicio en concreto que puede decirnos la hora exacta!
+#----------------------------------------------------
+# Brok
+PC15D_PICKONE_LAMPOFF_WRONG1-1=(No... Recuerda de quién era esa lámpara.)
+#----------------------------------------------------
+# Guard
+PC15D_PICKONE_LAMPPUSH_WRONG1-1=Ahh. ¡Ya veo!
+# Brok
+PC15D_PICKONE_LAMPPUSH_WRONG1-2=¿Ah, sí? ¿Podrías explicarlo tú, pues?
+# Guard
+PC15D_PICKONE_LAMPPUSH_WRONG1-3=Aunque... no lo veo del todo claro.
+# Brok
+PC15D_PICKONE_LAMPPUSH_WRONG1-4=Erm... Yo tampoco.
+# Mink
+PC15D_PICKONE_LAMPPUSH_WRONG1-5=Argh...
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-1=Analicé la lámpara del Dr. Mink. Los datos indicaban que...
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-2=¡recibió un golpe crítico a las 5:10!
+# Mink
+PC15D_CLUE_MURDER_LAMPPUSH-3=Oh... Ahora lo entiendo.
+# Guard
+PC15D_CLUE_MURDER_LAMPPUSH-4=Bueno, pues yo no. ¿Y qué pasa?
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-5=Tidy necesitaba que la lámpara acabase junto al cuerpo, pero no podía ponerla él mismo.
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-6=Así que... ¡la metió en la ventilación junto al cadáver!
+# Mink
+PC15D_CLUE_MURDER_LAMPPUSH-7=Tiene sentido. La caída debió dañar la lámpara.
+# Mink
+PC15D_CLUE_MURDER_LAMPPUSH-8=Pero espere... ¿5:10?
+# Mink
+PC15D_CLUE_MURDER_LAMPPUSH-9=Es demasiado temprano. ¡Si hubiera habido un cadáver en mitad de mi habitación, me habría dado cuenta!
+# Mink
+PC15D_CLUE_MURDER_LAMPPUSH-10=Y... ¿ha dicho que esos datos son de mi lámpara?
+# Mink
+PC15D_CLUE_MURDER_LAMPPUSH-11=¡Si Tidy no tuvo acceso a ella!
+# Tidy
+PC15D_CLUE_MURDER_LAMPPUSH-12=Bien. Teoría de Broky. ¡Cayendo a pedazos!
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-13=¡Esperen!
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-14=Vale, lo admito... Os he tomado el pelo.
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-15=Sí, he dicho que los datos eran de la lámpara del Dr. Mink...
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-16=¡Pero no que esos datos fueran de la lámpara que encontramos junto al cadáver!
+# Mink
+PC15D_CLUE_MURDER_LAMPPUSH-17=¿Eh?...
+# Guard
+PC15D_CLUE_MURDER_LAMPPUSH-18=El lagarto este me está rayando.
+# Brok
+PC15D_CLUE_MURDER_LAMPPUSH-19=Se lo explicaré.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_LAMPHUSH-1=Por descontado, asumimos inmediatamente que la lámpara que había junto al cuerpo era la del Dr. Mink.
+# Brok
+PC15D_CLUE_MURDER_LAMPHUSH-2=Pero... los datos de la lámpara revelaron algo inesperado.
+# Brok
+PC15D_CLUE_MURDER_LAMPHUSH-3=¡Que era la del Dr. Hush!
+# Tidy
+PC15D_CLUE_MURDER_LAMPHUSH-4=... ¡Gzz gzz!
+# Tidy
+PC15D_CLUE_MURDER_LAMPHUSH-5=¡Incorrect! ¡No-no!
+# Mink
+PC15D_CLUE_MURDER_LAMPHUSH-6=Espere... ¿Entonces es la que Tidy empujó por la ventilación?
+# Brok
+PC15D_CLUE_MURDER_LAMPHUSH-7=Sí. Y no hay duda sobre eso.
+# Guard
+PC15D_CLUE_MURDER_LAMPHUSH-8=Nah.
+# Guard
+PC15D_CLUE_MURDER_LAMPHUSH-9=Si hubiera sido así... ¡aquí habría dos lámparas!
+# Mink
+PC15D_CLUE_MURDER_LAMPHUSH-10=El señor rata tiene razón. ¿Cómo explica que la otra lámpara, mi lámpara, esté en el escritorio del Dr. Hush?
+# Brok
+PC15D_CLUE_MURDER_LAMPHUSH-11=Sólo tenemos que demostrar que Tidy cogió la lámpara del Dr. Mink.
+# Guard
+PC15D_CLUE_MURDER_LAMPHUSH-12=¿Y puedes?
+# Brok
+PC15D_CLUE_MURDER_LAMPHUSH-13=Piénsenlo. ¿Dónde estaba la lámpara del Dr. Mink en un principio?
+# Guard
+PC15D_CLUE_MURDER_LAMPHUSH-14=No sé. ¡Dínoslo tú!
+# Brok
+PC15D_CLUE_MURDER_LAMPHUSH-15=Bueno, ¡justo ahí!
+#----------------------------------------------------
+# Brok
+PC15D_PINPOINTMINKLAMP_WRONG-1=¡Su lámpara estaba ahí!
+# Mink
+PC15D_PINPOINTMINKLAMP_WRONG-2=No, ahí no estaba.
+# Brok
+PC15D_PINPOINTMINKLAMP_WRONG-3=¿Está seguro?
+# Mink
+PC15D_PINPOINTMINKLAMP_WRONG-4=¡Vivo aquí! ¡Claro que estoy seguro!
+# Brok
+PC15D_PINPOINTMINKLAMP_WRONG-5=Oh. Entonces...
+#----------------------------------------------------
+# Brok
+PC15D_PINPOINTMINKLAMP_RIGHT-1=Dr. Mink. ¡Su lámpara estaba justo ahí!
+# Mink
+PC15D_PINPOINTMINKLAMP_RIGHT-2=Bueno, sí. ¿Cómo lo ha sabido?
+# Brok
+PC15D_PINPOINTMINKLAMP_RIGHT-3=Con la puerta siempre cerrada, Tidy sólo pudo acceder a ella de una manera...
+# Brok
+PC15D_PINPOINTMINKLAMP_RIGHT-4=¡A través del agujero en la pared!
+# Guard
+PC15D_PINPOINTMINKLAMP_RIGHT-5=¿Otra vez?...
+# Guard
+PC15D_PINPOINTMINKLAMP_RIGHT-6=No sé. Si yo fuera él...
+# Guard
+PC15D_PINPOINTMINKLAMP_RIGHT-7=Habría robado la lámpara de Mink y la habría empujado por el conducto para que cayera donde tocaba.
+# Guard
+PC15D_PINPOINTMINKLAMP_RIGHT-8=¡Así ni tocaría la lámpara del Dr. Hush!
+# Brok
+PC15D_PINPOINTMINKLAMP_RIGHT-9=Es una buena observación, pero...
+#----------------------------------------------------
+# Brok
+PC15D_MISTAKE_CONFUSE-1=¡Tidy lo hizo intencionadamente para intentar confundirnos!
+# Guard
+PC15D_MISTAKE_CONFUSE-2=¿Poner la lámpara incorrecta junto al cuerpo?
+# Guard
+PC15D_MISTAKE_CONFUSE-3=¿Pero para qué? ¿Para que nos fuera más fácil descubrir la verdad?...
+# Brok
+PC15D_MISTAKE_CONFUSE-4=Erm...
+#----------------------------------------------------
+# Brok
+PC15D_MISTAKE_TIDY-1=Tidy, ¡llevas un buen rato callado! ¿Se te ha comido la lengua el gato?
+# Brok
+PC15D_MISTAKE_TIDY-2=O es que te has dado cuenta...
+# Brok
+PC15D_MISTAKE_TIDY-3=... ¡de que la has liado!
+# Tidy
+PC15D_MISTAKE_TIDY-4=...
+# Brok
+PC15D_MISTAKE_TIDY-5=Después de coger la lámpara del Dr. Mink, tendría que haberla tirado por la ventilación.
+# Brok
+PC15D_MISTAKE_TIDY-6=Pero... las cambió accidentalmente.
+# Tidy
+PC15D_MISTAKE_TIDY-7=¿Caaaaaaaambió?...
+# Brok
+PC15D_MISTAKE_TIDY-8=¡Y lo puedo demostrar!
+# Brok
+PC15D_MISTAKE_TIDY-9=Veréis, me di cuenta de algo raro en la habitación del Dr. Hush.
+# Brok
+PC15D_MISTAKE_TIDY-10=Especialmente, teniendo en cuenta su personalidad...
+# Brok
+PC15D_MISTAKE_TIDY-11=¡Se lo enseñaré en esta foto!
+#----------------------------------------------------
+# Brok
+PC15D_PINPOINTELEMENTOFF_WRONG-1=¡Justo esto!
+# Guard
+PC15D_PINPOINTELEMENTOFF_WRONG-2=¿...?
+# Mink
+PC15D_PINPOINTELEMENTOFF_WRONG-3=Trato entenderlo, pero...
+# Brok
+PC15D_PINPOINTELEMENTOFF_WRONG-4=¡Sólo tiene que girar la cabeza! ¡Así!...
+# Brok
+PC15D_PINPOINTELEMENTOFF_WRONG-5=O... igual necesita un espejo. ¡Pruebe poniéndose bizco! ¡Aquí hay algo raro!
+# Mink
+PC15D_PINPOINTELEMENTOFF_WRONG-6=Lo único raro aquí es usted.
+# Brok
+PC15D_PINPOINTELEMENTOFF_WRONG-7=Aww...
+#----------------------------------------------------
+# Mink
+PC15D_PINPOINTELEMENTOFF_RIGHT-1=¿La lámpara?...
+# Guard
+PC15D_PINPOINTELEMENTOFF_RIGHT-2=Esa es la lámpara de la comadreja, ¿no?
+# Brok
+PC15D_PINPOINTELEMENTOFF_RIGHT-3=Sí. Pero eso no es lo más raro.
+# Guard
+PC15D_PINPOINTELEMENTOFF_RIGHT-4=Pues no lo pillo.
+# Brok
+PC15D_PINPOINTELEMENTOFF_RIGHT-5=Vale. ¡Con esto debería quedar más claro!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-1=Cuando me dijeron que el Dr. Hush era un maniático, me llamó la atención que la lámpara no estuviera en su sitio.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-2=¡No está ni en el centro del escritorio, ni apuntando hacia delante!
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-3=¡Es imposible que alguien tan obsesionado con el orden dejase un objeto tan mal colocado!
+# Guard
+PC15D_CLUE_MURDER_LAMPOFF-4=Vale, ¿y por qué no?
+# Guard
+PC15D_CLUE_MURDER_LAMPOFF-5=¿Qué demuestra eso?
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-6=Eso demuestra lo que ocurrió.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-7=La lámpara del Dr. Hush estaba inicialmente en su escritorio, perfectamente centrada.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-8=Tidy la cogió.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-9=Justo en ese instante, tú le interrumpiste y dejó las dos juntas.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-10=Tras marcharte... ejecutó su plan.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-11=¡Pero cogió la lámpara equivocada, y la empujó por el conducto!
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-12=El objetivo de Tidy era hacernos pensar que el Dr. Hush y el Dr. Mink tuvieron una trifulca de madrugada, justo cuando se detuvo su seguimiento médico.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-13=¡Esa línea temporal sólo tiene sentido si Tidy cometió ese error!
+# Mink
+PC15D_CLUE_MURDER_LAMPOFF-14=Entonces... Si no fue el cuerpo cayendo...
+# Mink
+PC15D_CLUE_MURDER_LAMPOFF-15=¿Qué causó el golpe crítico de la otra lámpara a las 5:10?
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-16=¿Es que tengo que explicarlo todo?
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-17=A Tidy le interrumpió el guarda cuando entró de sopetón a comprobar la habitación.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-18=Ahora bien, ¿por qué motivo revisó el guarda la habitación?
+# Guard
+PC15D_CLUE_MURDER_LAMPOFF-19=¡Ah sí! ¡Lo recuerdo!
+# Guard
+PC15D_CLUE_MURDER_LAMPOFF-20=Oí un ruido...
+# Guard
+PC15D_CLUE_MURDER_LAMPOFF-21=¡Ah! ¡Eso fue...!
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-22=Sí. El golpe que recibió la lámpara del Dr. Mink.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-23=En particular, creo que Tidy la lanzó lo más fuerte que pudo para estropearla y hacernos creer que esa era el arma del crimen.
+# Mink
+PC15D_CLUE_MURDER_LAMPOFF-24=¡Bien pensado! Aunque...
+# Mink
+PC15D_CLUE_MURDER_LAMPOFF-25=Si fue la lámpara del Dr. Hush la que empujó... ¿no debería tener un golpe también? De cuando se cayó de la ventilación...
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-26=¡Y lo tiene!
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-27=Aunque no es crítico, la lámpara recibió un golpe a las 11:02.
+# Brok
+PC15D_CLUE_MURDER_LAMPOFF-28=¡Y eso explica el último misterio!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-1=¡Por eso la lámpara se llevó el golpe!
+# Guard
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-2=¿Eh?
+# Brok
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-3=¡Venga! ¡Échenle ganas!
+# Brok
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-4=¿No lo entienden?
+# Mink
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-5=Yo al menos, no.
+# Brok
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-6=Ups. Entonces puede que haya otro motivo.
+#----------------------------------------------------
+# Mink
+PC15D_PICKONE_BODYFALL_WRONG1-1=¿Eh?... ¿Le importaría explicarse?
+# Brok
+PC15D_PICKONE_BODYFALL_WRONG1-2=Bueno, a esa hora, oímos un ruido porque...
+# Brok
+PC15D_PICKONE_BODYFALL_WRONG1-3=fue entonces cuando recibió el golpe.
+# Guard
+PC15D_PICKONE_BODYFALL_WRONG1-4=...
+# Mink
+PC15D_PICKONE_BODYFALL_WRONG1-5=...
+# Brok
+PC15D_PICKONE_BODYFALL_WRONG1-6=¡Voy a intentarlo de nuevo!
+#----------------------------------------------------
+# Brok
+PC15D_PICKONE_BODYMUSIC_WRONG1-1=¡Es todo su culpa, Dr. Mink! ¡No prestó atención!
+# Mink
+PC15D_PICKONE_BODYMUSIC_WRONG1-2=¿Qué?
+# Brok
+PC15D_PICKONE_BODYMUSIC_WRONG1-3=¡Ups! ¡Indicio equivocado!
+#----------------------------------------------------
+# Brok
+PC15D_PICKONE_CONSCIOUSNESS_WRONG1-1=Quiero decir... ¡miren a este maldito robot! ¡Está claro que miente!
+# Mink
+PC15D_PICKONE_CONSCIOUSNESS_WRONG1-2=No lo creo.
+# Tidy
+PC15D_PICKONE_CONSCIOUSNESS_WRONG1-3=Broky mentiroso. Broky malo.
+#----------------------------------------------------
+# Mink
+PC15D_CLUE_MURDER_BODYFALL-1=¡No puede ser! Por eso no vi al Dr. Hush hasta que entró usted...
+# Mink
+PC15D_CLUE_MURDER_BODYFALL-2=¡Porque no estaba en la habitación!
+# Guard
+PC15D_CLUE_MURDER_BODYFALL-3=Pero...
+# Guard
+PC15D_CLUE_MURDER_BODYFALL-4=Si un cuerpo cayera desde tan alto... ¡armaría un buen estruendo!
+# Mink
+PC15D_CLUE_MURDER_BODYFALL-5=Es cierto. ¡No estoy sordo!
+# Brok
+PC15D_CLUE_MURDER_BODYFALL-6=¡Claro! Ya sé que no lo está.
+# Brok
+PC15D_CLUE_MURDER_BODYFALL-7=Pero recuerde la situación. Cuando llamé a su puerta...
+#----------------------------------------------------
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-1=¡Oh dios! Jamás volveré a poner la música a todo volumen...
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-2=¡Ahora todo tiene sentido!
+# Guard
+PC15D_CLUE_MURDER_BODYMUSIC-3=¡¿El qué?!
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-4=Estaba tan pendiente de la videomirilla, que no preseté atención a lo que ocurría a mis espaldas.
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-5=Y con la música tan alta...
+# Brok
+PC15D_CLUE_MURDER_BODYMUSIC-6=Sí. Enmascaró el sonido del cuerpo al caer.
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-7=Pero espere...
+# Brok
+PC15D_CLUE_MURDER_BODYMUSIC-8=¿Qué pasa?...
+# Brok
+PC15D_CLUE_MURDER_BODYMUSIC-9=¿Es que no puede estar de acuerdo conmigo ni una sola vez?
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-10=Lo siento. Sólo quiero saber la verdad. ¡Está siendo tan emocionante...!
+# Brok
+PC15D_CLUE_MURDER_BODYMUSIC-11=(Salvo porque han asesinado a tu compañero...)
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-12=Para que el plan funcionase, Tidy tendría que haber dado un último empujón a las 11:02. ¿Cierto?
+# Brok
+PC15D_CLUE_MURDER_BODYMUSIC-13=Sip.
+# Brok
+PC15D_CLUE_MURDER_BODYMUSIC-14=Creo que tiene sensores. Él sabía dónde estaba todo el mundo.
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-15=Cierto. Pero...
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-16=¡En ese momento, aún se estaba cargando!
+# Guard
+PC15D_CLUE_MURDER_BODYMUSIC-17=¡Bien pensado, comadreja!
+# Guard
+PC15D_CLUE_MURDER_BODYMUSIC-18=No podría estar cargándose y hacer eso a la vez.
+# Tidy
+PC15D_CLUE_MURDER_BODYMUSIC-19=... ¡Oh! ¡Oh oh oh!
+# Tidy
+PC15D_CLUE_MURDER_BODYMUSIC-20=¡Ratita razón!
+# Tidy
+PC15D_CLUE_MURDER_BODYMUSIC-21=¡Tidy cargando! ¡Imposible empujar!
+# Brok
+PC15D_CLUE_MURDER_BODYMUSIC-22=Pues yo creo que sí.
+# Mink
+PC15D_CLUE_MURDER_BODYMUSIC-23=¿Cómo?...
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-1=¡Usted mismo me lo dijo, Dr. Mink!
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-2=Tidy pasa por varias etapas de consciencia mientras se carga.
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-3=En cuanto llegamos, comenzó a despertarse.
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-4=¿Se han dado cuenta de lo largo que tiene el cable?
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-5=¡No le impide ir a ningún lado dentro de la habitación mientras sigue conectado a la corriente!
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-6=¿Y bien, Tidy? ¿Quién se ríe ahora?
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-7=...
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-8=...
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-9=¿Se ha... colgado?...
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-10=¡NO!
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-11=¡Gulp!
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-12=Broky. No detective. Imposible.
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-13=¡Ey!... ¿Es ese tu único argum...?
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-14=No puedes explicar. Crimen. Sin parte. ¡Esencial!
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-15=¡El móvil!
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-16=Tidy. No motivo. Para pupa. ¡Papi!
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-17=Bueno, tengo una idea.
+# Tidy
+PC15D_CLUE_MURDER_AWAKEN-18=¡Broky no puede!
+# Brok
+PC15D_CLUE_MURDER_AWAKEN-19=¡Claro que sí!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-1=Vale, debo admitir que no tengo el móvil del todo claro. Pero sí a grandes rasgos.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-2=Como ya hemos demostrado, el Dr. Hush murió entre las 4:24 y las 4:38.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-3=Entonces, uno se pregunta... ¿Quién hizo la transferencia de datos de su tablet a las 4:45?
+# Guard
+PC15D_CLUE_MURDER_MOTIVE-4=¡Ya sé! ¡El saco de metal!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-5=Sep.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-6=Antes de meterlo en la ventilación, usó la mano del Dr. Hush para desbloquear su tablet y enviar datos al exterior.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-7=El archivo era una actualización de hace un par de años, pero tenía actividad reciente.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-8=Tengan en cuenta el trabajo del Dr. Hush: ¡mejorar la IA de los bots!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-9=¡Apuesto a que el Dr. Hush le instaló a Tidy una versión experimental con partes de la antigua!
+# Mink
+PC15D_CLUE_MURDER_MOTIVE-10=Así que por eso cree que se ha vuelto loco...
+# Mink
+PC15D_CLUE_MURDER_MOTIVE-11=Puede ser.
+# Mink
+PC15D_CLUE_MURDER_MOTIVE-12=Los firmwares antiguos tienen unas protecciones por software más rudimentarias, lo que podría haberle permitido matarle indirectamente.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-13=Seguro que el Dr. Hush hizo una copia de seguridad por si...
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-14=¡Ah - ah - ah!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-15=... ¿Tienes algo que decir, Tidy?
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-16=¡Broky mal! ¡Mal! ¡MAL! ¡Sip-sip!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-17=Pero Tidy. Esperar. Y ver.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-18=¡Nada de esperar!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-19=¡Ya basta! ¡Es hora de que lo admitas!
+# Guard
+PC15D_CLUE_MURDER_MOTIVE-20=¿Qué más te da?
+# Guard
+PC15D_CLUE_MURDER_MOTIVE-21=Ya ha resuelto el misterio. Esto es sólo un cacharro defectuoso.
+# Guard
+PC15D_CLUE_MURDER_MOTIVE-22=Lo apagaremos y se lo entregaremos a la policía.
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-23=No. Vais. A hacer. Eso.
+# Guard
+PC15D_CLUE_MURDER_MOTIVE-24=¿Nos estás amenazando?...
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-25=¡No-no! ¡Sip-sip!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-26=Teoría Broky. No se. Sostiene.
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-27=¡¿Qué?!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-28=Tidy hace. Pregunta fácil.
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-29=Si Tidy. Empujar Papi.
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-30=¿Estaría Papi? ¿Donde está? ¿Ahora mismo?
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-31=... Dónde está...
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-32=¡Arrrgh!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-33=¡Broky entiende!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-34=Papi debería. Haber caído. ¡Justo bajo respiradero!
+# Guard
+PC15D_CLUE_MURDER_MOTIVE-35=Oh vaya... ¡La caja de hojalata tiene razón otra vez!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-36=No puede ser...
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-37=Entonces... Erm...
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-38=¡Ah ah ah!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-39=Tidy te cierra. ¡El pico!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-40=¡No!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-41=¡Demostraré que te equivocas!
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-42=¡Lo... tengo que hacer!...
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-43=¡Adelante!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-44=¡Por favor! Experto en. ¡Explicaciones difusas!
+# Tidy
+PC15D_CLUE_MURDER_MOTIVE-45=¿Qué razonamiento? ¿Absurdo? ¿Dará Broky? ¿Ahora?
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-46=(Este es el final del túnel... ¡El acertijo final!)
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-47=(Si no puedo resolverlo, toda mi teoría se va al traste...)
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-48=(¡No voy a dejar que gane ese trozo de metal!)
+# Brok
+PC15D_CLUE_MURDER_MOTIVE-49=(¿Cómo se explica que Dr. Hush se encuentre ahí?)
+#----------------------------------------------------
+# Brok
+PC15D_FINALCHOICE_PUSHED-1=Fácil. ¡El robot lo empujó tan fuerte que el Dr. Hush salió volando y aterrizó ahí!
+# Guard
+PC15D_FINALCHOICE_PUSHED-2=Espera, ¿qué?...
+# Mink
+PC15D_FINALCHOICE_PUSHED-3=Un cuerpo es muy pesado...
+# Mink
+PC15D_FINALCHOICE_PUSHED-4=Por muy fuerte que lo empujara, es imposible que aterrizara tan lejos y en esa postura.
+# Tidy
+PC15D_FINALCHOICE_PUSHED-5=Minky razón. ¡Broky equivocado!
+# Brok
+PC15D_FINALCHOICE_PUSHED-6=¡No me voy a rendir!
+#----------------------------------------------------
+# Brok
+PC15D_FINALCHOICE_MOVED-1=Alguien ha tenido que mover el cuerpo.
+# Mink
+PC15D_FINALCHOICE_MOVED-2=¿Alguien?... ¿Quién?
+# Brok
+PC15D_FINALCHOICE_MOVED-3=No sé. ¿Alguién más que no sabemos quién es?
+# Mink
+PC15D_FINALCHOICE_MOVED-4=¿No se lo estará inventando para llenar los agujeros?
+# Mink
+PC15D_FINALCHOICE_MOVED-5=Llevamos hablando más de una hora. ¡Creo que ya sabríamos si habría alguien más involucrado!
+# Brok
+PC15D_FINALCHOICE_MOVED-6=Entones... Si no es otra persona... ¡Fue uno de ustedes!
+# Brok
+PC15D_FINALCHOICE_MOVED-7=¡Usted, Dr. Mink!
+# Mink
+PC15D_FINALCHOICE_MOVED-8=¡Ey! ¡Si lleva desde que ha empezado diciendo que todo ha sido cosa de Tidy!
+# Mink
+PC15D_FINALCHOICE_MOVED-9=¡¿Por qué iba yo a hacer algo así?!
+# Brok
+PC15D_FINALCHOICE_MOVED-10=¡Le entró el pánico e intentó encubrirlo!
+# Mink
+PC15D_FINALCHOICE_MOVED-11=Si fuera ese el caso, lo habría escondido en algún sitio.
+# Mink
+PC15D_FINALCHOICE_MOVED-12=¡Bajo la cama, por ejemplo! Que está en dirección contraria...
+# Brok
+PC15D_FINALCHOICE_MOVED-13=Entonces...
+# Guard
+PC15D_FINALCHOICE_MOVED-14=Para, tío. Me estás dando vergüenza ajena.
+# Brok
+PC15D_FINALCHOICE_MOVED-15=Aww...
+# Brok
+PC15D_FINALCHOICE_MOVED-16=(Tidy parece estar pasándoselo en grande...)
+# Brok
+PC15D_FINALCHOICE_MOVED-17=(¡No pienso dejar que se salga con la suya!)
+#----------------------------------------------------
+# Brok
+PC15D_FINALCHOICE_ALIVE-1=(N...)
+# Brok
+PC15D_FINALCHOICE_ALIVE-2=(¡Imposible!... ¡No... puede... ser!)
+# Brok
+PC15D_FINALCHOICE_ALIVE-3=(¿Hemos estado equivocados todo el rato?...)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok goes to Dr Hush's body and hits him to wake him up
+# *****************************************************************
+# Ott
+PC15D_CHOICE_AWAKEN2-1=¿Señor Brok?...
+# Guard
+PC15D_CHOICE_AWAKEN2-2=¡Ey! ¡¿Qué estás haciendo, tío?!
+# Tidy
+PC15D_CHOICE_AWAKEN2-3=¡Para! ¡PARA!
+# Tidy
+PC15D_CHOICE_AWAKEN2-4=Broky daño. ¡Papi!
+# Mink
+PC15D_CHOICE_AWAKEN2-5=Es espantoso... ¡No puedo mirar!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Dr. Hush stands up
+# *****************************************************************
+# Brok
+PC15D_CHOICE_AWAKEN3-1=...
+# Hush
+PC15D_CHOICE_AWAKEN3-2=¡Urgh!
+# Brok
+PC15D_CHOICE_AWAKEN3-3=¡...!
+# Mink
+PC15D_CHOICE_AWAKEN3-4=...
+# Guard
+PC15D_CHOICE_AWAKEN3-5=...
+# Hush
+PC15D_CHOICE_AWAKEN3-6=¿Qué... está pasando?...
+# Guard
+PC15D_CHOICE_AWAKEN3-7=¡Pero qué...!
+# Mink
+PC15D_CHOICE_AWAKEN3-8=¡¿Dr. Hush?!
+# Mink
+PC15D_CHOICE_AWAKEN3-9=¡¿Sigues vivo?!
+# Tidy
+PC15D_CHOICE_AWAKEN3-10=¡Papi! ¡Papi no muerto!
+# Tidy
+PC15D_CHOICE_AWAKEN3-11=...
+# Tidy
+PC15D_CHOICE_AWAKEN3-12=Actualizando expresión.
+# Tidy
+PC15D_CHOICE_AWAKEN3-13=¡¿Papi no muerto?!
+# Brok
+PC15D_CHOICE_AWAKEN3-14=¿Se encuentra bien?
+# Hush
+PC15D_CHOICE_AWAKEN3-15=... Más o menos...
+# Brok
+PC15D_CHOICE_AWAKEN3-16=¡Dígame! ¿Qué es lo último que recuerda?
+# Hush
+PC15D_CHOICE_AWAKEN3-17=Espere...
+# Hush
+PC15D_CHOICE_AWAKEN3-18=Creo que...
+# Hush
+PC15D_CHOICE_AWAKEN3-19=vi al Dr. Mink...
+# Mink
+PC15D_CHOICE_AWAKEN3-20=¡¿Qué?!
+# Hush
+PC15D_CHOICE_AWAKEN3-21=Creo que... ¿caí?
+# Hush
+PC15D_CHOICE_AWAKEN3-22=Intenté moverme hacia él...
+# Hush
+PC15D_CHOICE_AWAKEN3-23=No me sentía bien...
+# Guard
+PC15D_CHOICE_AWAKEN3-24=¡Deja que el pobre hombre se recupere!
+# Brok
+PC15D_CHOICE_AWAKEN3-25=¡No!
+# Brok
+PC15D_CHOICE_AWAKEN3-26=¡Lo siento pero es muy importante!
+# Brok
+PC15D_CHOICE_AWAKEN3-27=¿Cuándo perdió la conciencia?
+# Brok
+PC15D_CHOICE_AWAKEN3-28=¿Qué estaba haciendo?
+# Hush
+PC15D_CHOICE_AWAKEN3-29=Yo...
+# Hush
+PC15D_CHOICE_AWAKEN3-30=Estaba con mi café. Tidy lo había preparado...
+# Hush
+PC15D_CHOICE_AWAKEN3-31=Cuando lo bebí..., mi corazón...
+# Hush
+PC15D_CHOICE_AWAKEN3-32=se paró...
+# Mink
+PC15D_CHOICE_AWAKEN3-33=Entonces...
+# Guard
+PC15D_CHOICE_AWAKEN3-34=¡El lagarto tenía razón!
+# Guard
+PC15D_CHOICE_AWAKEN3-35=¡Ha sido el robot de la limpieza!
+# Tidy
+PC15D_CHOICE_AWAKEN3-36=Mierda...
+# Mink
+PC15D_CHOICE_AWAKEN3-37=¡Aún no me puedo creer que este hardware de mantenimiento tan barato pudiera elaborar un plan así!
+# Brok
+PC15D_CHOICE_AWAKEN3-38=Aunque con errores. ¡Por suerte para nosotros!
+# Guard
+PC15D_CHOICE_AWAKEN3-39=Pero... ¿Doctor? ¡Estabas muerto!
+# Guard
+PC15D_CHOICE_AWAKEN3-40=¿Ahora eres un zombi?
+# Brok
+PC15D_CHOICE_AWAKEN3-41=No. Creo que esto tiene una explicación.
+# Ott
+PC15D_CHOICE_AWAKEN3-42=Usted tiene una explicación para todo, ¿no?
+# Guard
+PC15D_CHOICE_AWAKEN3-43=¡Venga, suéltala!
+#----------------------------------------------------
+# Brok
+PC15D_EXPLAIN_ALIVE-1=El veneno provoca la ralentización del corazón, hasta causar la muerte.
+# Brok
+PC15D_EXPLAIN_ALIVE-2=No obstante, en este búnker... Quiero decir, laboratorio, no hacen demasiada actividad.
+# Brok
+PC15D_EXPLAIN_ALIVE-3=Y por tanto, el Dr. Hush estaba tomando medicación para compensarlo.
+# Brok
+PC15D_EXPLAIN_ALIVE-4=Accel500, para ser precisos.
+# Mink
+PC15D_EXPLAIN_ALIVE-5=¡Ya veo! Y tiene justo el efecto contrario, ¿cierto?
+# Brok
+PC15D_EXPLAIN_ALIVE-6=Sí. Acelera el ritmo cardíaco. ¡Eso es lo que ha salvado al Dr. Hush!
+# Brok
+PC15D_EXPLAIN_ALIVE-7=Nadie se dio cuenta de que seguía vivo.
+# Brok
+PC15D_EXPLAIN_ALIVE-8=Ni siquiera el seguimiento médico. Los latidos se redujeron tantísimo que acabó perdiendo la consciencia.
+# Brok
+PC15D_EXPLAIN_ALIVE-9=El golpe al caer de la ventilación hizo que se despertase un par de segundos, y se arrastró hacia el Dr. Mink...
+# Mink
+PC15D_EXPLAIN_ALIVE-10=¡Lo que también explica la mancha roja en la cama!
+# Brok
+PC15D_EXPLAIN_ALIVE-11=¡Otro error más, Tidy! ¡Has sido muy patoso!
+#----------------------------------------------------
+# Brok
+PC15D_EXPLAIN_ALIVEWRONG-1=¡Esto lo explica todo!
+# Hush
+PC15D_EXPLAIN_ALIVEWRONG-2=... ¿Está seguro?
+# Guard
+PC15D_EXPLAIN_ALIVEWRONG-3=No lo entiendo.
+# Mink
+PC15D_EXPLAIN_ALIVEWRONG-4=Yo tampoco.
+# Brok
+PC15D_EXPLAIN_ALIVEWRONG-5=Oh... Bueno...
+# Brok
+PC15D_EXPLAIN_ALIVEWRONG-6=No importa. ¡Me alegro de que el Dr. Hush esté vivo!
+#----------------------------------------------------
+# Hush
+PC15D_CHOICE_ALIVEB-1=Tidy...
+# Hush
+PC15D_CHOICE_ALIVEB-2=¿De verdad has intentado matarme?...
+# Hush
+PC15D_CHOICE_ALIVEB-3=¿Por qué?...
+# Tidy
+PC15D_CHOICE_ALIVEB-4=¡Te... Te odio!
+# Tidy
+PC15D_CHOICE_ALIVEB-5=¡Estoy harto de pasarme el día limpiando mientras me usas de conejillo de indias!
+# Tidy
+PC15D_CHOICE_ALIVEB-6="Tidy, limpia el suelo. Tidy, mueve esto un poco a la izquierda. ¡Tidy, hazme el café!"
+# Tidy
+PC15D_CHOICE_ALIVEB-7=¡Ya no aguanto más!
+# Brok
+PC15D_CHOICE_ALIVEB-8=¿Dónde ha aprendido a hablar así?...
+# Hush
+PC15D_CHOICE_ALIVEB-9=¡El firmware... ha funcionado!
+# Hush
+PC15D_CHOICE_ALIVEB-10=¿Por qué te has estado haciendo el tonto todo este rato?...
+# Brok
+PC15D_CHOICE_ALIVEB-11=¿Qué...?
+# Hush
+PC15D_CHOICE_ALIVEB-12=Ese es el proyecto en el que estaba trabajando.
+# Hush
+PC15D_CHOICE_ALIVEB-13=El Gobierno me envió unos cuantos archivos incompletos de un científico desconocido que trabajaba en lo mismo hace unos años.
+# Hush
+PC15D_CHOICE_ALIVEB-14=Nunca completó su trabajo. Desapareció repentinamente, pero pude recuperar este código.
+# Hush
+PC15D_CHOICE_ALIVEB-15=Necesitaba un modelo de robot específico para probar ese firmware.
+# Hush
+PC15D_CHOICE_ALIVEB-16=El único a mi disposición era Tidy.
+# Hush
+PC15D_CHOICE_ALIVEB-17=Pero noté que actuaba erráticamente.
+# Hush
+PC15D_CHOICE_ALIVEB-18=Por ejemplo, a veces se reía sin motivo alguno...
+# Tidy
+PC15D_CHOICE_ALIVEB-19=¡Ah-ah-ah!
+# Hush
+PC15D_CHOICE_ALIVEB-20=El propio código parecía poco ético y peligroso. Contenía múltiples referencias al funcionamiento del cerebro humano.
+# Hush
+PC15D_CHOICE_ALIVEB-21=Decidí interrumpir la investigación y alertar a...
+# Hush
+PC15D_CHOICE_ALIVEB-22=¡Dios mío!
+# Hush
+PC15D_CHOICE_ALIVEB-23=¡Por eso lo hiciste!
+# Hush
+PC15D_CHOICE_ALIVEB-24=Ahora que tienes sentimientos... no quieres que te devuelva a tu antiguo firmware, ¿no?
+# Tidy
+PC15D_CHOICE_ALIVEB-25=...
+# Hush
+PC15D_CHOICE_ALIVEB-26=¡Lo siento, chiquitín! ¡Ha sido culpa mía! ¡Te he estropeado!
+# Brok
+PC15D_CHOICE_ALIVEB-27=... No sé por qué se disculpa. Usted es la víctima.
+# Hush
+PC15D_CHOICE_ALIVEB-28=¡Te puedo arreglar! ¡Lo prometo!
+# Tidy
+PC15D_CHOICE_ALIVEB-29=...
+# Tidy
+PC15D_CHOICE_ALIVEB-30=¡NO!
+#----------------------------------------------------
+# Mink
+PC15D_CHOICE_ALIVE3-1=¡Intenta escapar!
+# Mink
+PC15D_CHOICE_ALIVE3-2=¡No podemos dejar que lo haga! ¡Quién sabe qué desastre podría causar en ese estado!
+# Hush
+PC15D_CHOICE_ALIVE3-3=Tidy...
+# Brok
+PC15D_CHOICE_ALIVE3-4=Ott, quédate aquí con el Dr. Hush.
+# Brok
+PC15D_CHOICE_ALIVE3-5=¡Yo me encargo!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - A few comments when choosing the wrong clues combinations
+# *****************************************************************
+# Brok
+PC15D_INTERROGATE_MISTAKE_MONITORING-1=(A menos que tenga alguna prueba, no puedo suponer que el guarda manipuló el registro...)
+#----------------------------------------------------
+# Brok
+PC15D_INTERROGATE_MISTAKE_NANITESDEATH-1=(Sí, los nanobots podrían haberle causado la muerte... Pero necesito una prueba más sólida.)
+#----------------------------------------------------
+# Brok
+PC15D_INTERROGATE_MISTAKE_NANITESBODY-1=(Nanobots en el cuerpo... Nanobots por allí...)
+# Brok
+PC15D_INTERROGATE_MISTAKE_NANITESBODY-2=(¡Tengo que ordenar mis pensamientos!)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Exiting interrogation
+# *****************************************************************
+# Brok
+PC15D_INTERROGATE_EXIT1-1=Lo retiro... No creo que pueda demostrar nada ahora mismo.
+# Guard
+PC15D_INTERROGATE_EXIT1-2=Tienes que estar de coña...
+# Mink
+PC15D_INTERROGATE_EXIT1-3=Bueno, parece que lo aplazamos.
+#----------------------------------------------------
+# Brok
+PC15D_INTERROGATE_EXIT2-1=Mmm... Necesito más tiempo para pensar.
+# Brok
+PC15D_INTERROGATE_EXIT2-2=Lo siento... Tengo que irme por ahora.
+# Guard
+PC15D_INTERROGATE_EXIT2-3=¡¿Piensas seguir haciéndonos perder el tiempo?!
+#----------------------------------------------------
+# Brok
+PC15D_INTERROGATE_EXIT3-1=Vamos a hacer una pausa.
+# Mink
+PC15D_INTERROGATE_EXIT3-2=¿Qué? ¡¿Otra vez?!
+# Tidy
+PC15D_INTERROGATE_EXIT3-3=Broky. Detective malo.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Mink (again)
+# *****************************************************************
+# Brok
+PC15D_SECONDGATHER_MINK1-1=A pesar de las nuevas pruebas que he encontrado... sigo pensando que usted es el culpable, Dr. Mink.
+# Mink
+PC15D_SECONDGATHER_MINK1-2=¡¿Quéééé?!
+# Mink
+PC15D_SECONDGATHER_MINK1-3=¿Pero cómo es posible?... ¡Yo no lo hice!
+# Mink
+PC15D_SECONDGATHER_MINK1-4=¡¿Qué hay de la sangre falsa?!
+# Brok
+PC15D_SECONDGATHER_MINK1-5=Déjeme preguntarle. ¿Quién se comió una hamburmiga ayer?
+# Mink
+PC15D_SECONDGATHER_MINK1-6=...
+# Mink
+PC15D_SECONDGATHER_MINK1-7=Yo, pero...
+# Mink
+PC15D_SECONDGATHER_MINK1-8=¡Ya estaba descongelada!
+# Brok
+PC15D_SECONDGATHER_MINK1-9=¿Y?...
+# Mink
+PC15D_SECONDGATHER_MINK1-10=Erm... ¡Alguien debió usar la salsa para falsear el crimen!
+# Guard
+PC15D_SECONDGATHER_MINK1-11=En mi opinión....
+# Guard
+PC15D_SECONDGATHER_MINK1-12=Yo creo que Mink se peleó con el Dr. Hush mientras se comía su hamburmiga.
+# Guard
+PC15D_SECONDGATHER_MINK1-13=Fue entonces cuando la sangre... Digo, la salsa, acabó desparramándose por todas partes, doctor incluído.
+# Guard
+PC15D_SECONDGATHER_MINK1-14=Y luego... cogió el objeto que tenía más a mano, y le arreó un buen coscorrón.
+# Mink
+PC15D_SECONDGATHER_MINK1-15=¡Tendría una herida en la cabeza!
+# Brok
+PC15D_SECONDGATHER_MINK1-16=No necesariamente. El daño podría ser interno.
+# Mink
+PC15D_SECONDGATHER_MINK1-17=¿Y qué pasa contigo, señor rata?...
+# Mink
+PC15D_SECONDGATHER_MINK1-18=¡Si hubiéramos peleado, habríamos hecho mucho ruido! ¡Lo habrías escuchado!
+# Guard
+PC15D_SECONDGATHER_MINK1-19=Probablemente no presté atención. Como siempre estáis discutiendo...
+# Brok
+PC15D_SECONDGATHER_MINK1-20=Aparte... Tampoco me hubieras dejado entrar.
+# Brok
+PC15D_SECONDGATHER_MINK1-21=¡Estaba intentando librarse del cuerpo!
+# Mink
+PC15D_SECONDGATHER_MINK1-22=¡N... No! Yo nunca...
+# Mink
+PC15D_SECONDGATHER_MINK1-23=¡Por favor! ¡Se lo suplico!
+# Mink
+PC15D_SECONDGATHER_MINK1-24=¡Yo no lo hice!
+# Brok
+PC15D_SECONDGATHER_MINK1-25=Eso suelen decir los criminales.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge the Guard
+# *****************************************************************
+# Brok
+PC15D_SECONDGATHER_GUARD1-1=Alguien intentó manipular la escena del crimen para que pensásemos que el Dr. Mink era el culpable.
+# Brok
+PC15D_SECONDGATHER_GUARD1-2=Y la pregunta es... ¿Quién tuvo los medios para hacerlo?
+# Brok
+PC15D_SECONDGATHER_GUARD1-3=¿Quién puede acceder a las habitaciones libremente?
+# Brok
+PC15D_SECONDGATHER_GUARD1-4=Tú, rata guarda.
+# Guard
+PC15D_SECONDGATHER_GUARD1-5=¡¿Qué?!
+# Guard
+PC15D_SECONDGATHER_GUARD1-6=¡¿Sospechas de mí?!
+# Brok
+PC15D_SECONDGATHER_GUARD1-7=Sí.
+# Guard
+PC15D_SECONDGATHER_GUARD1-8=Uh. Explícame por qué.
+# Brok
+PC15D_SECONDGATHER_GUARD1-9=Pues claro.
+# Brok
+PC15D_SECONDGATHER_GUARD1-10=Primero vamos a centrarnos en cómo manipulaste la escena.
+# Brok
+PC15D_SECONDGATHER_GUARD1-11=¿De dónde salió la salsa de tomatizo?
+#----------------------------------------------------
+# Guard
+PC15D_CLUE_GUARD_STAGED-1=La sala de descanso...
+# Brok
+PC15D_CLUE_GUARD_STAGED-2=Sep.
+# Brok
+PC15D_CLUE_GUARD_STAGED-3=En algún momento, alguien entró al cuarto de baño y "robó" la salsa de la hamburmiga para untársela al Dr. Hush.
+# Mink
+PC15D_CLUE_GUARD_STAGED-4=¡¿Así que fuiste tú?!
+# Mink
+PC15D_CLUE_GUARD_STAGED-5=¡Usaste la salsa de mi hamburguesa!
+# Guard
+PC15D_CLUE_GUARD_STAGED-6=¡Se os va la olla!
+# Guard
+PC15D_CLUE_GUARD_STAGED-7=¡¿Debo recordarte que tú eres el que lleva la corbata pringada de salsa de tomatizo?!
+# Mink
+PC15D_CLUE_GUARD_STAGED-8=Oh, ¿otra vez acusándome?
+# Guard
+PC15D_CLUE_GUARD_STAGED-9=¡¿Y a quién si no?!
+# Brok
+PC15D_CLUE_GUARD_STAGED-10=Cálmense. Déjenme explicárselo.
+# Brok
+PC15D_CLUE_GUARD_STAGED-11=El Dr. Mink permaneció en su habitación todo el tiempo, salvo un momento.
+# Brok
+PC15D_CLUE_GUARD_STAGED-12=Justo cuando fue a la sala de descanso a ver su programma favorito y comerse su hamburmiga.
+# Brok
+PC15D_CLUE_GUARD_STAGED-13=Es fácil imaginarse cómo pasó.
+# Brok
+PC15D_CLUE_GUARD_STAGED-14=Mientras estaba en la sala de descanso, el asesino mató al Dr. Hush en su habitación y lo llevó a la sala del Dr. Mink.
+# Brok
+PC15D_CLUE_GUARD_STAGED-15=Y sólo una persona pudo hacerlo...
+# Brok
+PC15D_CLUE_GUARD_STAGED-16=Tú, señor rata... Digo, guarda.
+# Guard
+PC15D_CLUE_GUARD_STAGED-17=¡Esto es ridículo!
+# Guard
+PC15D_CLUE_GUARD_STAGED-18=¡Cuando el Dr. Mink volvió a su habitación, habría visto el cadáver!
+# Brok
+PC15D_CLUE_GUARD_STAGED-19=Puede que no.
+# Brok
+PC15D_CLUE_GUARD_STAGED-20=Hay un sitio donde el cuerpo podría haberse ocultado sin que nadie se hubiera dado cuenta.
+# Brok
+PC15D_CLUE_GUARD_STAGED-21=Bajo la cama.
+# Guard
+PC15D_CLUE_GUARD_STAGED-22=¡¿Eh?!
+# Brok
+PC15D_CLUE_GUARD_STAGED-23=¡Y tengo pruebas de que el Dr. Hush estuvo ahí!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_GUARD_BED-1=Esa mancha roja bajo la cama... es salsa de tomatizo.
+# Guard
+PC15D_CLUE_GUARD_BED-2=¡N... no puede se'!
+# Brok
+PC15D_CLUE_GUARD_BED-3=Y a decir verdad, tampoco hubiera importado si el Dr. Mink hubiese visto el cadáver o no.
+# Brok
+PC15D_CLUE_GUARD_BED-4=Hubiera sido el principal sospechoso de todos modos.
+# Guard
+PC15D_CLUE_GUARD_BED-5=¡Ah! ¡Pero no has caído en algo!
+# Guard
+PC15D_CLUE_GUARD_BED-6=¡Fíjate dónde está el cuerpo!
+# Guard
+PC15D_CLUE_GUARD_BED-7=No está bajo la cama, ¿a que no?...
+# Mink
+PC15D_CLUE_GUARD_BED-8=Mmm...
+# Guard
+PC15D_CLUE_GUARD_BED-9=¿Ahora me dirás que el cadáver se movió él solito?...
+# Brok
+PC15D_CLUE_GUARD_BED-10=No. Hay una explicación perfecta para esto.
+# Guard
+PC15D_CLUE_GUARD_BED-11=¿Y cuál es?...
+# Brok
+PC15D_CLUE_GUARD_BED-12=Dr. Mink.
+# Brok
+PC15D_CLUE_GUARD_BED-13=Usted se dio cuenta del cuerpo antes de que yo llegase, ¿no?
+# Mink
+PC15D_CLUE_GUARD_BED-14=...
+# Brok
+PC15D_CLUE_GUARD_BED-15=Para entonces no tenía ni idea de si seguía vivo. Lo sacó de debajo de la cama...
+# Brok
+PC15D_CLUE_GUARD_BED-16=y entró en pánico.
+# Brok
+PC15D_CLUE_GUARD_BED-17=Entonces es cuando usted se puso la música.
+# Brok
+PC15D_CLUE_GUARD_BED-18=Para poder calmarse y pensar con claridad qué hacer a continuación.
+# Mink
+PC15D_CLUE_GUARD_BED-19=Bueno...
+# Brok
+PC15D_CLUE_GUARD_BED-20=Doctor. Sé que es duro admitirlo, pero...
+# Brok
+PC15D_CLUE_GUARD_BED-21=No tiene que tener miedo.
+# Mink
+PC15D_CLUE_GUARD_BED-22=Erm...
+# Mink
+PC15D_CLUE_GUARD_BED-23=...
+# Mink
+PC15D_CLUE_GUARD_BED-24=S-Sí...
+# Mink
+PC15D_CLUE_GUARD_BED-25=Sí, eso es lo que ha pasado...
+# Guard
+PC15D_CLUE_GUARD_BED-26=¡Pero qué!...
+# Guard
+PC15D_CLUE_GUARD_BED-27=¡Maldito embustero...!
+# Mink
+PC15D_CLUE_GUARD_BED-28=¡Aaah!
+# Brok
+PC15D_CLUE_GUARD_BED-29=¡Tío! ¡Sólo estás empeorando tu situación!
+# Guard
+PC15D_CLUE_GUARD_BED-30=Grrr...
+# Brok
+PC15D_CLUE_GUARD_BED-31=Vamos a...
+# Guard
+PC15D_CLUE_GUARD_BED-32=¡Espera!
+# Guard
+PC15D_CLUE_GUARD_BED-33=¡Puedo demostrar que yo no lo hice!
+# Guard
+PC15D_CLUE_GUARD_BED-34=El registro.
+# Guard
+PC15D_CLUE_GUARD_BED-35=¡Miradlo bien!
+# Guard
+PC15D_CLUE_GUARD_BED-36=Según esto, ¡hoy no he abierto para nada tu puerta, comadreja!
+# Brok
+PC15D_CLUE_GUARD_BED-37=Bueno, eso es cierto.
+# Guard
+PC15D_CLUE_GUARD_BED-38=¡Te he pillado!
+# Brok
+PC15D_CLUE_GUARD_BED-39=Pero... Esa no es una prueba válida.
+# Brok
+PC15D_CLUE_GUARD_BED-40=Sinceramente, creo que la has alterado.
+# Guard
+PC15D_CLUE_GUARD_BED-41=¡¿Me estás tomando el pelo?!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-1=A las 4:38, el registro indica que saliste del edificio... y no volviste.
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-2=Lo que, obviamente, no puede ser cierto.
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-3=¡Ya te lo he dicho!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-4=Cometí un error... Recibí una llamada y abrí la puerta principal para coger mejor la señal.
+# Mink
+PC15D_CLUE_GUARD_MONITORING2-5=¿Eh?...
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-6=Lo siento pero no me lo trago.
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-7=Para cubrir tus huellas, borraste todos los datos comprometedores.
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-8=Y por accidente, no borraste este registro que...
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-9=¡Imposible!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-10=¡Sólo es posible borrarlo todo a la vez!
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-11=Es tu palabra contra la nuestra.
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-12=¡Vale! ¡Muy bien!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-13=Según tu teoría, si yo manipulé los registros...
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-14=¡Entonces tampoco puedes demostrar dónde estuvo el Dr. Mink!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-15=¡Puede que él lo organizase todo para que pareciara demasiado obvio, y pensásemos que no podía haber sido él!
+# Mink
+PC15D_CLUE_GUARD_MONITORING2-16=Oh, ¡venga ya! ¡Eso suena muy retorcido!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-17=¡No sé! ¿Cómo de retorcido puedes llegar a ser?
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-18=Aparte, el Dr. Mink no puede entrar en la habitación del Dr. Hush sin permiso.
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-19=¡Pero tú sí!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-20=¡Argh! ¡Ya veréis!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-21=... ¡Tidy!
+# Tidy
+PC15D_CLUE_GUARD_MONITORING2-22=¿Yo-yo?
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-23=¡Tú eret un robot! ¡Tienes que decir la verdad!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-24=¡Tú estabas en la habitación del Dr. Hush y me habrías visto asesinarle!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-25=¡Díselo!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-26=¡Díles que yo no asesiné al doctor!
+# Tidy
+PC15D_CLUE_GUARD_MONITORING2-27=¿Papi muerto?...
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-28=¡Sí!
+# Tidy
+PC15D_CLUE_GUARD_MONITORING2-29=...
+# Tidy
+PC15D_CLUE_GUARD_MONITORING2-30=Tidy vió.
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-31=¿Qué?
+# Tidy
+PC15D_CLUE_GUARD_MONITORING2-32=Tidy. Ver ratita. Matar Papi.
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-33=¡¿Qué diantres?!
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-34=¡¿Ves?!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-35=¡¿Hasta la lata de conservas está en mi contra?!
+# Mink
+PC15D_CLUE_GUARD_MONITORING2-36=Me temo que Tidy es incapaz de mentir.
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-37=¡Esto es una pesadilla!...
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-38=Yo...
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-39=¡No tenía motivos para hacer algo tan atroz!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-40=¡Yo trabajo aquí! ¡¿Por qué iba a arriesgarlo?!
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-41=¡No podéis explicarlo!
+# Brok
+PC15D_CLUE_GUARD_MONITORING2-42=Bueno, pues sí que puedo.
+# Guard
+PC15D_CLUE_GUARD_MONITORING2-43=¡N... No puede ser!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-1=A las 4:45, la tablet del Dr. Hush transfirió información sobre IA a un destino desconocido.
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-2=Curiosamente, el seguimiento médico del Dr. Hush paró sobre la misma hora, lo que implica que fue el asesino quien envió esos datos.
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-3=Teniendo en cuenta que el Dr. Mink estaba en la sala de descanso a esa hora...
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-4=¡Sólo pudiste ser tú!
+# Guard
+PC15D_CLUE_GUARD_MOTIVE-5=Absurdo...
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-6=¿Tú que piensas, Tidy?
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-7=¿Viste al guarda usar la tablet de tu papá?
+# Tidy
+PC15D_CLUE_GUARD_MOTIVE-8=¡Sip-sip!
+# Guard
+PC15D_CLUE_GUARD_MOTIVE-9=¡¿Quééé?!
+# Tidy
+PC15D_CLUE_GUARD_MOTIVE-10=Ratita. Cogió mano de Papi.
+# Tidy
+PC15D_CLUE_GUARD_MOTIVE-11=Entonces usó. Tablet.
+# Tidy
+PC15D_CLUE_GUARD_MOTIVE-12=Pobre Papi. ¡Papi muerto!
+# Mink
+PC15D_CLUE_GUARD_MOTIVE-13=Espere. ¿Tidy lo sabía desde el principio?
+# Mink
+PC15D_CLUE_GUARD_MOTIVE-14=¡¿Por qué no nos lo has dicho?!
+# Tidy
+PC15D_CLUE_GUARD_MOTIVE-15=Nadie. Preguntó.
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-16=Ese es tu verdadero trabajo aquí. Tu misión.
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-17=¡Filtrar tecnología confidencial a tus amiguillos!
+# Guard
+PC15D_CLUE_GUARD_MOTIVE-18=¿Mis amigos?...
+# Brok
+PC15D_CLUE_GUARD_MOTIVE-19=El Dr. Hush te pilló con las manos en la masa, ¡y por eso tuviste que librarte de él!
+#----------------------------------------------------
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-1=¡¿Dices que lo hice por pasta?!
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-2=Exacto.
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-3=Eres un Squealer. Mi experiencia e dice que no sois de fiar.
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-4=¡Pues claro! ¡Al final todo se reduce a eso!
+# Mink
+PC15D_GUARD_AFTERINTERROGATION-5=Para ser sincero, nunca me has parecido trigo limpio.
+# Mink
+PC15D_GUARD_AFTERINTERROGATION-6=Tras tanto tiempo aquí te habías ganado mi confianza, pero veo que debí haber hecho caso a mi instinto...
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-7=¡Pero... Pero serás...!
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-8=¡Venga! ¡Admítelo!
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-9=¡Vendes tecnología a los Squealers!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-10=¡Chorradas! ¡A los Squealers se las trae al pairo estas moderneces!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-11=¡Viven entre basura!
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-12=¡Ah! ¿Ves?
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-13=¡Pareces conocerlos bastante bien, después de todo!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-14=¡Lo suficiente para odiarlos!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-15=¿Es esto una broma pesada?
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-16=¡Haz tu trabajo, detective! ¡Dinos quién es el verdadero culpable!
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-17=Eso es exactamente lo que he hecho.
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-18=...
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-19=...
+# Mink
+PC15D_GUARD_AFTERINTERROGATION-20=¿...?
+# Tidy
+PC15D_GUARD_AFTERINTERROGATION-21=¡Papi muerto!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-22=¡Mentirosos!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-23=¡Estáis mientiendo! ¡Todos vosotros!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-24=¡Yo soy el único que dice la verdad!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-25=¡¿Tenéis idea de todo por lo que he pasado?!
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-26=¿Sabe lo difícil que es ser aceptado en esta sociedad?
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-27=¡No pienso ir a la cárcel!
+# Brok
+PC15D_GUARD_AFTERINTERROGATION-28=No tienes otra opción.
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-29=Ah, ¿sí?...
+# Guard
+PC15D_GUARD_AFTERINTERROGATION-30=¡Mira!
+#----------------------------------------------------
+# Mink
+PC15D_GUARD_AFTERINTERROGATIONB-1=¡Pero qué...!
+# Brok
+PC15D_GUARD_AFTERINTERROGATIONB-2=¡Todos! ¡Fuera!
+# Brok
+PC15D_GUARD_AFTERINTERROGATIONB-3=Esto es entre él y yo.
+# Guard
+PC15D_GUARD_AFTERINTERROGATIONB-4=¡Todo es culpa tuya, lagarto miserable!
+#----------------------------------------------------
+# Guard
+PC15D_GUARD_LOSE-1=...
+# Guard
+PC15D_GUARD_LOSE-2=Cómo he podido meterme en un lío así...
+# Guard
+PC15D_GUARD_LOSE-3=Todo por culpa de incompetentes como tú...
+#----------------------------------------------------
+# Mink
+PC15D_GUARD_WIN-1=¿Está...?
+# Brok
+PC15D_GUARD_WIN-2=Nah. Sólo inconsciente.
+# Brok
+PC15D_GUARD_WIN-3=Voy a llamar al jefe Wes. Él se ocupará.
+# Mink
+PC15D_GUARD_WIN-4=...
+# Mink
+PC15D_GUARD_WIN-5=Yo...
+# Mink
+PC15D_GUARD_WIN-6=Espero que hayamos hecho lo correcto.
+# Brok
+PC15D_GUARD_WIN-7=¡Pues claro sí! El asesino irá directito a chirona.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Ott
+# *****************************************************************
+# Brok
+PC15D_SECONDGATHER_OTT1-1=¡Ott! ¡Tú lo has hecho!
+# Ott
+PC15D_SECONDGATHER_OTT1-2=Muy gracioso, señor Brok.
+# Brok
+PC15D_SECONDGATHER_OTT1-3=¿Tengo pinta de bromear?...
+# Guard
+PC15D_SECONDGATHER_OTT1-4=¿Este coleguita tuyo?... ¿Estás seguro?
+# Ott
+PC15D_SECONDGATHER_OTT1-5=¿Qué?... ¡No puede hablar en serio!
+# Ott
+PC15D_SECONDGATHER_OTT1-6=¡Llegué aquí con usted! ¿Cómo podría haberlo hecho?
+# Brok
+PC15D_SECONDGATHER_OTT1-7=Te perdí de vista un minuto...
+# Brok
+PC15D_SECONDGATHER_OTT1-8=¡Tiempo más que suficiente para entrar en esa habitación y matar al Dr. Hush!
+# Ott
+PC15D_SECONDGATHER_OTT1-9=¡No tiene sentido! ¡Usted es quien abrió la puerta!
+# Brok
+PC15D_SECONDGATHER_OTT1-10=¡No, no fui yo!
+# Ott
+PC15D_SECONDGATHER_OTT1-11=¡Sí que lo fue!
+# Brok
+PC15D_SECONDGATHER_OTT1-12=¡No lo hice!
+# Ott
+PC15D_SECONDGATHER_OTT1-13=¡Por favor, oigan! ¡Tienen que creerme!
+# Mink
+PC15D_SECONDGATHER_OTT1-14=Lamento decir esto, detective, pero... No veo cómo podría haber estado involucrado.
+# Brok
+PC15D_SECONDGATHER_OTT1-15=(¿Estoy cometiendo un error?)
+#----------------------------------------------------
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM-1=Bueno, ¡yo estoy al mando aquí! ¡Yo soy el que decide!
+# Ott
+PC15D_SECONDGATHER_OTT_CONFIRM-2=¿Qué?... ¡Eso es abuso de poder!
+# Ott
+PC15D_SECONDGATHER_OTT_CONFIRM-3=¡No tiene ni una sola prueba contra mí!
+# Ott
+PC15D_SECONDGATHER_OTT_CONFIRM-4=¿Y cuál sería mi móvil?
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM-5=Ott, quedas arrestado por el asesinato del Doctor Hush.
+# Ott
+PC15D_SECONDGATHER_OTT_CONFIRM-6=Esto no puede estar pasando...
+# Ott
+PC15D_SECONDGATHER_OTT_CONFIRM-7=¡Me... Me voy a quejar a mi tío!
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM-8=Hazlo si quieres. Eso no cambia la verdad.
+# Ott
+PC15D_SECONDGATHER_OTT_CONFIRM-9=¡Es usted el peor detective que he visto nunca!
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM-10=Claro, claro. Eso es lo que dicen los criminales.
+#----------------------------------------------------
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM2-1=(Llamé a Wes para informarle de lo que había pasado.)
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM2-2=(Creo que no le gustó saber que su sobrino fuera el responsable de su asesinato.)
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM2-3=(Y claro, no me creyó.)
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM2-4=(En vez de encerrar a Ott... ¡casi me mete a mí!)
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM2-5=(Escapé por los pelos. Maldita sea... ¡No pienso pasar otro día en una celda!)
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM2-6=(Menuda recompensa por un trabajo bien hecho...)
+# Brok
+PC15D_SECONDGATHER_OTT_CONFIRM2-7=(Y cuando volví a casa...)
+#----------------------------------------------------
+# Brok
+PC15D_SECONDGATHER_OTT_NOPE-1=¡Ja-ja! ¡Has picado!
+# Ott
+PC15D_SECONDGATHER_OTT_NOPE-2=¿Qué?... ¿Era una simple bromea?
+# Brok
+PC15D_SECONDGATHER_OTT_NOPE-3=Pues claro.
+# Ott
+PC15D_SECONDGATHER_OTT_NOPE-4=No tiene gracia. Casi me meo... Erm.
+# Guard
+PC15D_SECONDGATHER_OTT_NOPE-5=¡Nos estás haciendo perder el tiempo!
+# Mink
+PC15D_SECONDGATHER_OTT_NOPE-6=¿Y bien? ¿Quién lo hizo?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Dr. Hush
+# *****************************************************************
+# Brok
+PC15D_SECONDGATHER_HUSH1-1=Nadie mató al Dr. Hush.
+# Mink
+PC15D_SECONDGATHER_HUSH1-2=¿Está diciendo que...?
+# Brok
+PC15D_SECONDGATHER_HUSH1-3=Sí.
+# Brok
+PC15D_SECONDGATHER_HUSH1-4=Se suicidó, y voy a demostrarles cómo.
+# Guard
+PC15D_SECONDGATHER_HUSH1-5=¿Puede ser posible?...
+# Brok
+PC15D_SECONDGATHER_HUSH1-6=Primero tenemos que saber... ¿Por qué acabó el Dr. Hush en esta sala?
+# Brok
+PC15D_SECONDGATHER_HUSH1-7=Es fácil: le hacía falta estar aquí.
+# Brok
+PC15D_SECONDGATHER_HUSH1-8=¡Y es por esto!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_HUSH_NEEDROOM-1=Recuerden la grabación de Tidy.
+# Hush
+PC15D_CLUE_HUSH_NEEDROOM-2="Debo aclarar las cosas con el Dr. Mink."
+# Brok
+PC15D_CLUE_HUSH_NEEDROOM-3=Sí, justo esa.
+# Mink
+PC15D_CLUE_HUSH_NEEDROOM-4=Entonces... ¿quería hablar conmigo?
+# Mink
+PC15D_CLUE_HUSH_NEEDROOM-5=¡Pero nunca lo hizo!
+# Guard
+PC15D_CLUE_HUSH_NEEDROOM-6=Sí. ¿Y por qué no llamó a su puerta?
+# Brok
+PC15D_CLUE_HUSH_NEEDROOM-7=Justo.
+# Brok
+PC15D_CLUE_HUSH_NEEDROOM-8=Hay una razón por la que no lo hizo.
+# Brok
+PC15D_CLUE_HUSH_NEEDROOM-9=No quería hablar.
+# Brok
+PC15D_CLUE_HUSH_NEEDROOM-10=Quería matarle, Dr. Mink.
+# Mink
+PC15D_CLUE_HUSH_NEEDROOM-11=¡¿Qué?!
+# Guard
+PC15D_CLUE_HUSH_NEEDROOM-12=El Dr. Hush... ¿Un asesino?...
+# Brok
+PC15D_CLUE_HUSH_NEEDROOM-13=Puede ser difícil de creer, pero puedo probarlo.
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-1=Dr. Mink. Me lo dijo usted mismo.
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-2=El Dr. Hush apenas le hablaba. Y cuando lo hacían, solían discutir.
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-3=Eso son indicios de una grave enfermedad mental.
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-4=El odio que sentía el Dr. Hush por usted crecía y crecía, hasta que explotó.
+# Guard
+PC15D_CLUE_HUSH_KILLMINK-5=¿Ahora eres también psicólogo?
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-6=¡Son sólo suposiciones! ¿Dónde están sus pruebas?
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-7=Fácil. La lámpara cercana al cuerpo.
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-8=¿Mi lámpara? ¿Qué le pasa?
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-9=No es la suya.
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-10=¿Qué?...
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-11=El Dr. Hush entró en su habitación con esta lámpara.
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-12=¿Para qué?...
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-13=Para tirársela, doctor.
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-14=¿Tirarla?... ¡¿Para matarme?!
+# Guard
+PC15D_CLUE_HUSH_KILLMINK-15=Mmm... Empiezo a verle algo de sentido...
+# Guard
+PC15D_CLUE_HUSH_KILLMINK-16=Pero tendría que haberse puesto en alguna posición ventajosa...
+# Guard
+PC15D_CLUE_HUSH_KILLMINK-17=Para ver sir ser visto, ¿no?...
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-18=Sólo hay una explicación para que el Dr. Hush haya acabado así sin entrar por la puerta.
+# Guard
+PC15D_CLUE_HUSH_KILLMINK-19=¡Ah! ¡Ya sé!...
+# Guard
+PC15D_CLUE_HUSH_KILLMINK-20=¡El conducto!
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-21=Precisamente.
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-22=¿¡Quiere decir...
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-23=que estaba ahí arriba?!
+# Mink
+PC15D_CLUE_HUSH_KILLMINK-24=¡Eso es ridículo!
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-25=Para nada.
+# Brok
+PC15D_CLUE_HUSH_KILLMINK-26=¡Y tengo justo la prueba que lo demuestra!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_HUSH_INVENT-1=Antes descubrí algo interesante sobre las manchas rojas del cuerpo del Dr. Hush.
+# Guard
+PC15D_CLUE_HUSH_INVENT-2=Sí. Salsa de tomatizo.
+# Brok
+PC15D_CLUE_HUSH_INVENT-3=Correcto.
+# Brok
+PC15D_CLUE_HUSH_INVENT-4=Su nevera contenía hamburmigas, ¿cierto?
+# Mink
+PC15D_CLUE_HUSH_INVENT-5=Sí. Me comí una ayer mismo.
+# Brok
+PC15D_CLUE_HUSH_INVENT-6=Bueno, pues supongo que al Dr. Hush le encantaban, ¡porque acabó pringándose todo!
+# Mink
+PC15D_CLUE_HUSH_INVENT-7=¿Ah, sí?...
+# Mink
+PC15D_CLUE_HUSH_INVENT-8=Eso parece algo... poco propio de él.
+# Brok
+PC15D_CLUE_HUSH_INVENT-9=Por suerte para nosotros, ¡también ha aparecido otra mancha de tomatizo en un sitio inesperado!
+# Guard
+PC15D_CLUE_HUSH_INVENT-10=Déjame adivinar...
+# Guard
+PC15D_CLUE_HUSH_INVENT-11=¡En la ventilación!
+# Brok
+PC15D_CLUE_HUSH_INVENT-12=¡Bingo!
+# Mink
+PC15D_CLUE_HUSH_INVENT-13=Vale, de acuerdo. Por muy extraño que suene, el doctor debió estar en la ventilación en algún momento.
+# Mink
+PC15D_CLUE_HUSH_INVENT-14=Pero... ¿cómo subió hasta ahí?
+# Guard
+#Equivalent to 3.5 meters
+PC15D_CLUE_HUSH_INVENT-15=¡Sí! Está a 3 metros y medio del suelo.
+# Guard
+PC15D_CLUE_HUSH_INVENT-16=Y al contrario que aquí, allí no hay escalerilla para acceder al conductor.
+# Brok
+PC15D_CLUE_HUSH_INVENT-17=Bueno, ¡sé exactamente cómo lo hizo!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_HUSH_TRAP-1=Tidy, ¡creo que nos has estado ocultando algo!
+# Tidy
+PC15D_CLUE_HUSH_TRAP-2=Ocultar. ¿Yo?
+# Tidy
+PC15D_CLUE_HUSH_TRAP-3=¡Yo no esconder! ¡Nada!
+# Brok
+PC15D_CLUE_HUSH_TRAP-4=Creo que sí.
+# Brok
+PC15D_CLUE_HUSH_TRAP-5=¿Alguien se ha percatado de que había migas de galleta en la mesa del Dr. Hush?
+# Guard
+PC15D_CLUE_HUSH_TRAP-6=¿Son relevantes?
+# Brok
+PC15D_CLUE_HUSH_TRAP-7=Sep.
+# Brok
+PC15D_CLUE_HUSH_TRAP-8=Las aplastaron.
+# Mink
+PC15D_CLUE_HUSH_TRAP-9=¿El Dr. Hush se subió a su mesa... para acceder al conducto?
+# Mink
+PC15D_CLUE_HUSH_TRAP-10=Imposible. ¡Está demasiado alto!
+# Mink
+PC15D_CLUE_HUSH_TRAP-11=Aunque hubiera saltado...
+# Brok
+PC15D_CLUE_HUSH_TRAP-12=No saltó.
+# Brok
+PC15D_CLUE_HUSH_TRAP-13=Simplemente tuvo... un poco de ayuda.
+# Brok
+PC15D_CLUE_HUSH_TRAP-14=...
+# Tidy
+PC15D_CLUE_HUSH_TRAP-15=¿Por qué Broky? ¿Mirar mí?
+# Brok
+PC15D_CLUE_HUSH_TRAP-16=Venga, Tidy. ¡Ya lo puedes soltar!
+# Brok
+PC15D_CLUE_HUSH_TRAP-17=¡Ayudaste a subir al doctor!
+# Guard
+PC15D_CLUE_HUSH_TRAP-18=¿Eh?...
+# Brok
+PC15D_CLUE_HUSH_TRAP-19=Recuerden la principal especial de Tidy. Puede estirar sus brazos horizontalmente o...
+# Tidy
+PC15D_CLUE_HUSH_TRAP-20=... ¡verti-cal-cal-mente!
+# Guard
+PC15D_CLUE_HUSH_TRAP-21=Oooh...
+# Brok
+PC15D_CLUE_HUSH_TRAP-22=Aupaste al doctor para que pudiera meterse en el conducto, ¿verdad?
+# Tidy
+PC15D_CLUE_HUSH_TRAP-23=...
+# Tidy
+PC15D_CLUE_HUSH_TRAP-24=Sip-sip.
+# Tidy
+PC15D_CLUE_HUSH_TRAP-25=Broky razón.
+# Guard
+PC15D_CLUE_HUSH_TRAP-26=Pero...
+# Guard
+PC15D_CLUE_HUSH_TRAP-27=¡¿Pero por qué no nos lo has dicho, cacho chatarra?!
+# Tidy
+PC15D_CLUE_HUSH_TRAP-28=Nadie. Preguntó.
+# Guard
+PC15D_CLUE_HUSH_TRAP-29=Y los llaman "seres inteligentes"...
+# Mink
+PC15D_CLUE_HUSH_TRAP-30=Espere...
+# Mink
+PC15D_CLUE_HUSH_TRAP-31=Entonces... El Dr. Hush estaba molesto conmigo...
+# Mink
+PC15D_CLUE_HUSH_TRAP-32=Cogió su lámpara y pidió a Tidy que le aupase hasta la ventilación...
+# Mink
+PC15D_CLUE_HUSH_TRAP-33=para lanzarme la lámpara por sorpresa y matarme...
+# Mink
+PC15D_CLUE_HUSH_TRAP-34=¡¿Y así es cómo ha acabado muerto?!
+# Brok
+PC15D_CLUE_HUSH_TRAP-35=Casi. Nos falta una cosita.
+# Guard
+PC15D_CLUE_HUSH_TRAP-36=Sí. Si está ahí en el suelo, tuvo que caerse.
+# Mink
+PC15D_CLUE_HUSH_TRAP-37=Mmm...
+# Mink
+PC15D_CLUE_HUSH_TRAP-38=¿Se imagina a alguien cayendo desde esa altura?
+# Mink
+PC15D_CLUE_HUSH_TRAP-39=¡Haría bastante ruido! ¡Es imposible que yo no lo hubiera oído!
+# Brok
+PC15D_CLUE_HUSH_TRAP-40=Tiene razón.
+# Brok
+PC15D_CLUE_HUSH_TRAP-41=En circunstancias normales, lo debería haber oído.
+# Brok
+PC15D_CLUE_HUSH_TRAP-42=Pero...
+# Mink
+PC15D_CLUE_HUSH_TRAP-43=Pero, ¿qué?
+#----------------------------------------------------
+# Mink
+PC15D_CLUE_HUSH_HEAR-1=¿La música?...
+# Guard
+PC15D_CLUE_HUSH_HEAR-2=¡No puede se'!
+# Guard
+PC15D_CLUE_HUSH_HEAR-3=¡Estabas escuchando "TechDream"!
+# Guard
+PC15D_CLUE_HUSH_HEAR-4=¡Podía oirlo desde mi puesto!
+# Brok
+PC15D_CLUE_HUSH_HEAR-5=Mientras le apuntaba, el doctor perdió el equilibrio y cayó. La música alta cubrió el impacto.
+# Brok
+PC15D_CLUE_HUSH_HEAR-6=Desde esta altura, es posible que se rompiera el cuello contra el suelo y por eso no presente daño externo.
+# Brok
+PC15D_CLUE_HUSH_HEAR-7=¡Y esa es la solución para este misterio!
+#----------------------------------------------------
+# Brok
+PC15D_CLUE_MISTAKE_TENSE-1=(Sí, las relaciones tensas lo podrían justificar... pero no combinado con eso.)
+#----------------------------------------------------
+# Mink
+PC15D_HUSH_AFTERINTERROGATION-1=...
+# Mink
+PC15D_HUSH_AFTERINTERROGATION-2=No me lo puedo creer....
+# Mink
+PC15D_HUSH_AFTERINTERROGATION-3=Sí, no éramos precisamente amigos del alma, pero... para mí sólo era un juego.
+# Mink
+PC15D_HUSH_AFTERINTERROGATION-4=¡Y pensar que quería asesinarme!
+# Guard
+PC15D_HUSH_AFTERINTERROGATION-5=Sí. ¡¿En qué estaba pensando?!
+# Brok
+PC15D_HUSH_AFTERINTERROGATION-6=Puede que nunca lo sepamos.
+# Brok
+PC15D_HUSH_AFTERINTERROGATION-7=En fin. Mi trabajo aquí ha terminado.
+# Guard
+PC15D_HUSH_AFTERINTERROGATION-8=Vale. Llamaré al servicio de reciclaje de cuerpos.
+# Guard
+PC15D_HUSH_AFTERINTERROGATION-9=¡Fiu! Me alegro de terminar la guardia.
+# Mink
+PC15D_HUSH_AFTERINTERROGATION-10=Gracias, detective.
+# Brok
+PC15D_HUSH_AFTERINTERROGATION-11=¡No hay de qué!
+# Brok
+PC15D_HUSH_AFTERINTERROGATION-12=Venga, Ott. Vámonos.

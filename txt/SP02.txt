@@ -1,0 +1,396 @@
+﻿#-------------------------------
+#=Special cutscenes
+#-------------------------------
+
+#---------------------------------------------------------------------------------------
+# Day 2 end nightmare Bots
+#---------------------------------------------------------------------------------------
+
+ID=SP02_DAY2ENDNIGHTMARE1
+T=Update in progress...
+NB=1
+D=120
+BVOICE=TRIBOT
+
+T=...
+D=60
+
+T=Firmware installed.
+D=90
+
+T=Target defined.
+D=90
+TEN=SP02_DAY2ENDNIGHTMARE2
+
+#---------------------------------------------------------------------------------------
+# If we messed up chapter 4 investigation
+#---------------------------------------------------------------------------------------
+
+ID=SP02_DAY2ALTERNATIVE
+T=(Phone ring)
+
+T=Yes?
+W=WES
+A=NORMAL
+
+T=(Indecipherable speech)
+
+T=You did? You localized the third member?!
+W=WES
+A=WONDER
+
+T=(Indecipherable speech)
+
+T=Great news. Your improved AI is a blessing.	
+W=WES
+A=HAPPY
+
+T=You filled your part of the bargain and so did I. You're free now.
+W=WES
+
+T=Good luck, Tidy.
+W=WES
+
+T=[...]
+
+T=...
+W=WES
+A=NORMAL
+
+T=Tribots.
+W=WES
+
+T=Yes, chief?
+W=TRIBOT
+C2=TRIBOT
+C2A=NORMAL
+
+T=We've got a criminal bot on the loose.
+W=WES
+
+T=Eliminate it.
+W=WES
+
+T=Very well.
+W=TRIBOT
+TEN=SP02_DAY2ALTERNATIVE_NEXT
+
+
+#---------------------------------------------------------------------------------------
+# Cameo Demetrios
+#---------------------------------------------------------------------------------------
+
+ID=SP02_CAMEO1
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=EXTS
+C2A=SURPRISED
+
+T=Oh! Hello!
+W=EXTS
+C2A=THINK
+
+T=Are you a friend of Bjorn?
+W=EXTS
+
+T=Huh?
+W=BROK
+
+T=Oh! Awesome!!! A real life plushie!
+W=EXTC
+C4=EXTC
+C4A=SURPRISED
+
+T=Can I rip off his head, Mommy?
+W=EXTC
+C4A=NORMAL
+
+T=Pleaaase?
+W=EXTC
+
+T=What?!
+W=BROK
+
+T=Come on, honey! He's not a plushie!
+W=EXTS
+C2A=LAUGHING
+
+T=He's human!
+W=EXTS
+
+T=...I... think?...
+W=EXTS
+C2A=THINK
+
+T=Hey! Of course I'm human!
+W=BROK
+C1A=ANGRY
+
+T=What ARE you?!
+W=BROK
+
+T=Maybe we should ask your daddy!
+W=EXTS
+
+T=Eww! Next time you call him that, I'll make you eat your own soup!
+W=EXTC
+C4A=MEH
+
+T=What's wrong with my soup?
+W=EXTS
+
+T=(Looks like I'm not the only one with parenting trouble...)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+
+T=Oh no...
+W=EXTC
+
+T=Look who's arrived. The brainless idiot.
+W=EXTC
+
+T=Hi Bjorn!
+W=EXTS
+C4=EXTB
+C4A=SMILE
+C3=EXTS
+C3A=LAUGHING
+C2=EXTC
+C2A=MEH
+
+T=Hey, Sandra! How are...
+W=EXTB
+
+T=...What the heck?!
+W=EXTB
+C4A=MEH
+C3A=THINK
+C2A=NORMAL
+
+T=What is this costumed weirdo doing in my apartment?
+W=EXTB
+
+T=I...
+W=BROK
+C1A=TIRED
+
+T=Wait!!!
+W=EXTB
+C4A=SURPRISED
+
+T=Something...
+W=EXTB
+
+T=Something amazing is happening...
+W=EXTB
+C4A=SURPRISED
+
+T=...I have a voice!
+W=EXTB
+
+T=...
+W=EXTS
+C3A=SURPRISED
+C2A=SURPRISED
+C1A=WONDER
+
+T=...
+W=EXTC
+SILENCE=1
+
+T=No way!
+W=EXTB
+C4A=MEH
+C3A=THINK
+C2A=NORMAL
+
+T=Look at the mess you've made to my apartment!
+W=EXTB
+
+T=You even crapped there!
+W=EXTB
+
+T=N... no!
+W=BROK
+C1A=CONFUSED
+
+T=It was like this when I arrived from my time machine!
+W=BROK
+
+T=There was this ray of light and...
+W=BROK
+SKIPEND=1
+
+T=Yeah, right!
+W=EXTB
+C4A=SMILE
+
+T=And I have a machine to make money and clone myself!
+W=EXTB
+
+T=By the way! Where's Bjoline?
+W=EXTS
+
+T=Hi mommy! (burp)
+W=EXTJ
+C2=EXTJ
+C2A=NORMAL
+
+T=AaaaaAAAaaargh!
+W=BROK
+C1A=SURPRISED
+TEN=SP02_CAMEO1_NEXT
+
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_CAMEO2
+T=Shayyy!
+W=BROK
+A=YELL
+
+T=Get me outta here!
+W=BROK
+A=YELL
+
+T=Bro'! This is all your fault!
+BVOICE=SHAY
+BNAME=SHAY
+
+T=What did I do?!
+W=BROK
+A=TIRED
+
+T=You've destroyed my machine!
+BVOICE=SHAY
+BNAME=SHAY
+
+T=The one I've spent half of my life fixing!
+BVOICE=SHAY
+BNAME=SHAY
+
+T=Now you're lost in time... forever!
+BVOICE=SHAY
+BNAME=SHAY
+
+T=Oops.
+W=BROK
+C1A=STUPID
+
+T=Can I try again?...
+W=BROK
+C1A=HAPPY
+
+T=Yeah. After the credits.
+BVOICE=SHAY
+BNAME=SHAY
+
+T=Cool!
+W=BROK
+TEN=SP02_ENDING
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_ARRIVE
+T=Err...
+W=BROK
+A=SURPRISED
+TEN=SP02_ARRIVE_LOOKAROUND
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_ARRIVE2
+T=What is this place?
+W=BROK
+A=THINK
+
+T=Eww... It reeks!
+W=BROK
+A=WORRIED
+TEN=CLICKERS_BACK
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_DOORCANNOT1
+T=No handle?
+W=BROK
+A=WONDER
+
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_DOORRIGHT1
+T=What kind of demented person puts a coffin in their bedroom?
+W=BROK
+A=CONFUSED
+TEN=SP02_DOORRIGHTNEXT
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_DOORCANNOT2
+T=Can't open it! Where's the handle?
+W=BROK
+A=OPPOSITE
+
+
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_TV1
+T=A flat version of our livies?
+W=BROK
+A=WONDER
+
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_CAT1
+T=...
+W=BROK
+A=SURPRISED
+
+T=Graff! Is that you?!
+W=BROK
+A=WORRIED
+
+T=(Meow)
+SOUND=cat
+SILENCE=1
+
+T=Don't worry, son! I'll get you back to normal!
+W=BROK
+A=READY
+
+T=(Purr)
+SOUND=catpurr
+SILENCE=1
+
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_RAT1
+T=A Squealer?...
+W=BROK
+A=MEH
+
+T=That one already got a beating!
+W=BROK
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_RAT2
+T=Those guys are everywhere!
+W=BROK
+A=ANGRY
+
+
+#---------------------------------------------------------------------------------------
+
+ID=SP02_COOKIE1
+T=No thanks. I only collect ads!
+W=BROK
+A=ALRIGHT
+

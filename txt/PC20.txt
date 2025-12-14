@@ -1,0 +1,6311 @@
+﻿#-------------------------------
+#=SLUM Garbage Disposal Center
+#-------------------------------
+
+
+#----------------------
+#= First dialog
+#----------------------
+ID=PC20_INITA
+T=I thought you wouldn't come.
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=LISTEN
+CONTEXT="Final" room. Brok arrive, Dee is waiting for Wes to show up
+
+T=As you said. It's too important.
+W=BROK
+C1A=MAYBE
+TEN=PC20_INITA_CHECKSIN
+
+#----------------------
+ID=PC20_INITA_NOSIN
+T=I'm getting worried...
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=SAD
+
+T=Sin?...
+W=BROK
+
+T=Hopefully he just hid somewhere safe.
+W=BROK
+C1A=MAYBE
+TEN=PC20_INITA2
+
+
+#----------------------
+ID=PC20_INITA2
+T=By the way! Doctor Gherkin?
+W=BROK
+C1=BROK
+C1A=READY
+C2=DEE
+C2A=LISTEN
+
+T=I dealt with him.
+W=DEE
+
+T=...What does that even mean?
+W=BROK
+C1A=WONDER
+
+T=...
+W=DEE
+C1A=THINK
+C2A=MEH
+
+T=It seems like he was telling the truth.
+W=DEE
+
+T=I've obtained his signature and the procedure to fix the Pipe-Pills.
+W=DEE
+C1A=THINK
+C2A=COCKY
+
+T=But as you know, this isn't enough.
+W=DEE
+C2A=WONDER
+
+T=Something is blocking the process.
+W=DEE
+
+T=How did you convince him?...
+W=BROK
+C1A=WONDER
+
+T=Well...
+W=DEE
+C2A=MEH
+
+T=Wait... Actually, I'd prefer not to know.
+W=BROK
+C1A=STUPID
+
+T=Where is he, now?
+W=BROK
+C1A=THINK
+
+T=Gone.
+W=DEE
+
+T=Gone... where?
+W=BROK
+C1A=ANGRY
+
+T=The doc was afraid of going back to his job at the pharmaceutical company.
+W=DEE
+C2A=NORMAL
+
+T=He wished to hide while the situation cools down.
+W=DEE
+
+T=I escorted him to the closest country border.
+W=DEE
+
+T=He's an important person. No trouble for him to get across.
+W=DEE
+C2A=COCKY
+
+T=He left the country?...
+W=BROK
+C1A=WONDER
+
+T=...
+W=BROK
+
+T=Wait... WHAT?!
+W=BROK
+C1A=SURPRISED
+
+T=B-but!...
+W=BROK
+C1A=CONFUSED
+
+T=He was supposed to give me ten grand!...
+W=BROK
+
+T=Sorry... He didn't mention that.
+W=DEE
+C2A=MEH
+
+T=Oooooh...
+W=BROK
+C1A=DISAPPOINTED
+
+T=I'm doomed to live in poverty forever...
+W=BROK
+
+T=If it makes you feel any better...
+W=DEE
+C2A=NORMAL
+
+T=Soon, all Slumers won't be living at all unless we get to the bottom of this.
+W=DEE
+
+T=That's right.
+W=BROK
+C1A=MAYBE
+
+T=I have no desire to be the last person alive around here.
+W=BROK
+
+T=Last?...
+W=DEE
+C2A=WONDER
+TEN=PC20_WES_COMES
+
+
+#----------------------
+ID=PC20_INITB
+T=You're both here. Good.
+W=WES
+C2=WES
+C2A=WONDER
+CONTEXT=Wes arrive to discuss all the matters
+TEN=PC20_WES_COMES2
+
+#----------------------
+ID=PC20_INITC
+T=Go ahead. What have you found?
+W=DEE
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=...
+W=WES
+
+T=These last few days I've been investigating the pills shortage.
+W=WES
+
+T=All the Pipe-Pills in the Slums stopped working.
+W=WES
+
+T=We know that!
+W=BROK
+C1A=ANGRY
+
+T=Yet the Drums are totally unaffected.
+W=WES
+
+T=I have reasons to believe the source behind the shortage is being run from the Drums.
+W=WES
+
+T=By whom?
+W=BROK
+C1A=THINK
+
+T=Someone from the Government, obviously.
+W=DEE
+
+T=Let's not jump to conclusions. Although it's a possibility.
+W=WES
+
+T=But another important matter could be linked.
+W=WES
+
+T=I've been with the police for 50 years now.
+W=WES
+
+T=I had never experienced such a low recidivism rate.
+W=WES
+
+T=And... That's a bad thing?
+W=BROK
+C1A=WONDER
+
+T=Definitely. When it's not natural.
+W=WES
+
+T=Criminals don't stop doing crime after their first arrest.
+W=WES
+
+T=In fact, they never stop.
+W=WES
+
+T=They'll do it again. And again.
+W=WES
+
+T=It's human nature.
+W=WES
+
+T=But lately... Not anymore.
+W=WES
+
+T=Of course. They disappear into thin air, right after their release.
+W=DEE
+
+T=I suspect my own agents are responsible.
+W=WES
+
+T=Agents? Oh, you mean...
+W=BROK
+C1A=READY
+
+T=The Tribots.
+W=WES
+
+T=They handle the release of prisoners automatically...
+W=WES
+
+T=...and actually terminate them. Guilty or not.
+W=DEE
+
+T=I don't have any tangible proof yet. But if they do...
+W=WES
+
+T=They're ignoring the judgements.
+W=WES
+
+T=Or the judgements themselves are falsified.
+W=DEE
+
+T=And who better than a Triangle member to undertake it?
+W=DEE
+
+T=Possibly. In any case...
+W=WES
+
+T=This is hypothetical. That's why I need your...
+W=WES
+SKIPEND=1
+
+T=Proof.
+W=DEE
+
+#T=(Dee takes memory chip from pocket)
+TEN=PC20_DEE_SHOWSMEMORY
+
+#----------------------
+ID=PC20_INITD
+T=Here. On this memory chip.
+W=DEE
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+
+T=Hundreds of documents linking the Government to various shady activities. Judgements included.
+W=DEE
+
+T=Good.
+W=WES
+
+T=I can reach some trustful, high ranking individuals in various sectors.
+W=WES
+
+T=Under cover, they shall organize a revolt.
+W=WES
+
+T=Spread the word. Make and distribute pills.
+W=WES
+
+T=How?... With Tribots?
+W=BROK
+
+T=We can't rely on those!
+W=BROK
+
+T=There's more people than you think who don't enjoy this regime we're living in, Mister Pork.
+W=WES
+
+T=Brok!
+W=BROK
+
+T=...Mister... P... P...
+W=WES
+
+T=Whatever.
+W=WES
+
+T=I can organize this. But I need to gather all the evidence.
+W=WES
+
+T=This contains everything I have. The only copy that exists.
+W=DEE
+
+T=You'll have to be extremely careful. Never connect it to the Triweb!
+W=DEE
+TEN=PC20_DEE_GIVESKEY
+
+#----------------------
+ID=PC20_INITE
+T=...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=Wait!
+W=BROK
+TEN=PC20_INITE_DEEBROK
+
+T=Don't give it to him.
+W=BROK
+
+T=What?... Why?
+W=DEE
+C2=DEE
+C2A=WONDER
+
+T=You said we could trust him!
+W=DEE
+
+T=Come on! There's no time to waste!
+W=WES
+C4=WES
+C4A=ANGRY
+
+T=Something's wrong.
+W=BROK
+C1A=WONDER
+
+T=Care to explain?
+W=DEE
+
+T=Call it a hunch... My instinct.
+W=BROK
+
+T=And your instinct got you so far.
+W=WES
+
+T=I need more than a hunch to make a decision!
+W=DEE
+
+T=Just...
+W=BROK
+C1A=OPPOSITE
+
+T=Gimme a sec. I'll explain.
+W=BROK
+
+T=Alright. Go ahead.
+W=DEE
+
+T=Let's hear some of your famous nonsensical thoughts.
+W=WES
+TEN=PC20_INITE_BROKWES
+
+T=Hrmph. Yeah.
+W=BROK
+C1A=MOCK
+
+T=Hear me well, old man!
+W=BROK
+TEN=PC20_INTERROGATION_START
+
+#----------------------
+ID=PC20_INTERROGATION_MISTAKE1
+T=So... Erm...
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=WONDER
+C3=DEE
+C3A=LISTEN
+CONTEXT=Interrogate Wes
+COMM=Doing mistakes
+
+T=Wes is not telling the truth about that!
+W=BROK
+
+T=I don't see where you're going with this.
+W=WES
+
+T=I agree. This doesn't make any sense.
+W=DEE
+C1A=WORRIED
+
+T=Oops! I meant...
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_INTERROGATION_DONOTSKIP
+
+#----------------------
+ID=PC20_INTERROGATION_MISTAKE2
+T=Here! Convinced?
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=ANGRY
+
+T=Nope.
+W=WES
+
+T=Let me explain!
+W=BROK
+
+T=We don't have time for your far-fetched theories!
+W=DEE
+
+T=Do you realize people are suffering as we speak?!
+W=DEE
+
+T=More will die if we don't make the right decisions!
+W=BROK
+C1A=ANGRY
+TEN=INTERFACE_INTERROGATION_DONOTSKIP
+
+#----------------------
+ID=PC20_INTERROGATION_MISTAKE3
+T=Isn't it clear?
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=ANGRY
+
+T=What is?
+W=DEE
+
+T=I don't know. What was I talking about, anyway?...
+W=BROK
+C1A=WONDER
+
+T=Give us one good reason to continue this charade you're putting on.
+W=DEE
+C1A=CONFUSED
+
+T=Sorry. This won't happen again!
+W=BROK
+C1A=HAPPY
+TEN=INTERFACE_INTERROGATION_DONOTSKIP
+
+
+#----------------------
+ID=PC20_INTERROGATION_MISTAKE4
+T=Seriously... That's the best you could come up with?
+W=DEE
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=WONDER
+
+T=Do you have any concrete proof or what?!
+W=DEE
+
+T=Hey, I need time to think!
+W=BROK
+C1A=OPPOSITE
+
+T=Let him make a fool of himself a bit more. I'm enjoying this.
+W=WES
+C2A=HAPPY
+
+T=See?! He's a bad guy!
+W=BROK
+C1A=ANGRY
+
+T=And you're an idiot.
+W=WES
+C2A=ANGRY
+TEN=INTERFACE_INTERROGATION_DONOTSKIP
+
+#----------------------
+ID=PC20_INTERROGATION_MISTAKE5
+T=This is what I think.
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+
+T=Don't you agree?
+W=BROK
+C3A=MEH
+
+T=...
+W=DEE
+C3A=ANGRY
+
+T=This is your last warning.
+W=DEE
+
+T=If you don't give me anything concrete, I will proceed as planned!
+W=DEE
+
+T=No worries!
+W=BROK
+
+T=I've got exactly what's needed to make him drop the mask!
+W=BROK
+C1A=READY
+TEN=INTERFACE_INTERROGATION_DONOTSKIP
+
+#----------------------
+ID=PC20_INTERROGATION_MISTAKE6
+T=Enough.
+W=DEE
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=ANGRY
+
+T=No, wait! I've still got plenty of theories...
+W=BROK
+C1A=SURPRISED
+TEN=PC20_INTERROGATION_MISTAKEEND
+
+
+
+#----------------------
+ID=PC20_INTERROGATION_LEAVE1
+T=Wait... Gimme a sec.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=ANGRY
+COMM=Leaving
+
+T=What?!...
+W=DEE
+
+T=You're wasting precious time!
+W=DEE
+
+T=Trust me. This is too important.
+W=BROK
+
+T=Just one minute.
+W=BROK
+
+T=Always the same. Dubious and filled with doubt.
+W=WES
+
+T=Allow him to return to his senses.
+W=WES
+
+T=Alright...
+W=DEE
+TEN=PC20_INTERROGATION_LEAVEBACK
+
+#----------------------
+ID=PC20_INTERROGATION_LEAVE2
+T=Gotta think.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+
+T=Again?...
+W=DEE
+
+#----------------------
+ID=PC20_INTERROGATE_RESUME1
+T=Let's get back to it!
+W=BROK
+C1=BROK
+C1A=READY
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+TEN=PC20_INTERROGATE_RESUME
+
+
+#----------------------
+ID=PC20_INTERROGATION_EXITYES
+T=No... I can't do this. Must have been wrong.
+W=BROK
+A=STUPID
+TEN=PC20_INTERROGATION_FAIL
+
+
+
+#----------------------
+ID=PC20_INTERROGATION_FAIL
+T=I told you.
+W=WES
+C1=BROK
+C1A=STUPID
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+COMM=When we fail
+
+T=Now, give me this.
+W=WES
+TEN=PC20_DEE_GIVESKEYREAL
+
+#----------------------
+ID=PC20_INTERROGATION_FAIL2
+T=Good.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=HAPPY
+TEN=PC20_DEE_GIVESKEYREAL3
+
+T=No!...
+W=BROK
+C1A=SURPRISED
+TEN=PC20_DEE_GIVESKEYREAL4
+
+#----------------------
+ID=PC20_INTERROGATION_FAIL3
+T=Aaargh...
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=NORMAL
+COMM=Wes kills both Brok & Dee
+
+T=(Sigh)
+W=WES
+C1=NONE
+
+T=How disappointing. I thought they'd show some resistance.
+W=WES
+
+T=You always ruin the fun, Pork.
+W=WES
+COMM=Wes may talk in familiar way here. He always does when he's alone.
+
+T=But... I have to admit...
+W=WES
+
+T=I'll miss you.
+W=WES
+TEN=PC20_REVEAL_NO_FADEOUT
+
+#----------------------
+ID=PC20_CLUE_WES_DEEINVESTIGATED
+T=Wes. Yesterday while you were away, I inadvertently...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+COMM=Doing interrogation
+
+T=...checked the contents of your computer.
+W=BROK
+
+T=How dare you! This is a second-class crime punishable by...
+W=WES
+C2A=ANGRY
+SKIPEND=1
+
+T=Save it for later.
+W=BROK
+C1A=ANGRY
+
+T=I found two protected folders. One of them was named "D. Silver".
+W=BROK
+
+T=Hey... That's my name!
+W=DEE
+C3A=SURPRISED
+
+T=That's what I assumed.
+W=BROK
+
+T=Any explanation, old weasel?
+W=BROK
+C1A=MOCK
+
+T=Easy. Can you remember who was in jail that day?
+W=WES
+C2A=NORMAL
+
+T=Hmm... I guess Sin was...
+W=BROK
+C1A=DOWN
+
+T=Correct.
+W=WES
+
+T=I simply did some research in order to inform his wife.
+W=WES
+
+T=But you never did!
+W=DEE
+
+T=I'm a busy person.
+W=WES
+
+T=We're under staffed and that's why I hired you temporarily.
+W=WES
+
+T=You worked with him?...
+W=DEE
+
+T=Erm... That didn't go so well.
+W=BROK
+
+T=And you're holding a grudge. That's why you're accusing me.
+W=WES
+
+T=Not at all!
+W=BROK
+C1A=ANGRY
+
+T=(Alright, this folder is suspicious. Yet...)
+W=BROK
+MOOD=THINK
+
+T=(This isn't what bothers me the most regarding Wes. Though I can't quite put my finger on it.)
+W=BROK
+MOOD=THINK
+TEN=INTERFACE_CLUE_NEW
+
+
+#----------------------
+ID=PC20_CLUE_WES_MENTALISSUES
+T=Don't think I haven't noticed.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=Noticed what?
+W=WES
+
+T=My name.
+W=BROK
+
+T=What about it?
+W=WES
+
+T=Go ahead. Say my name!
+W=BROK
+
+T=It's Pork, of course.
+W=WES
+
+T=No, it isn't.
+W=BROK
+
+T=...
+W=WES
+
+T=Brok, chief. I thought you knew each other well?
+W=DEE
+
+T=Yes...
+W=WES
+
+T=P-b-p...
+W=WES
+
+T=What?...
+W=DEE
+
+T=Just what I thought. You can't pronounce it.
+W=BROK
+
+T=You never could. All these years, I've thought you've just been making fun of me.
+W=BROK
+C1A=MEH
+
+T=And that's not all.
+W=BROK
+
+T=At several occasions you've said some weird things. Confusing words with other, totally unrelated ones.
+W=BROK
+
+T=Pardon me for saying this but...
+W=BROK
+C1A=ALRIGHT
+
+T=Do you happen to have any mental issues?
+W=BROK
+
+T=...
+W=WES
+
+T=I'm not so young anymore.
+W=WES
+C1A=THINK
+
+T=This is a personal attack, cowboy.
+W=DEE
+C3A=MEH
+
+T=Does this make him too incompetent for our case?
+W=DEE
+
+T=Hmm...
+W=BROK
+C1A=ANGRY
+TEN=INTERFACE_CLUE_NEW
+
+
+#----------------------
+ID=PC20_CLUE_WES_ACCIDENT
+T=We've known each other for a long time, old weasel.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=Why didn't you tell me about your accident?
+W=BROK
+
+T=Accident...
+W=WES
+
+T=Five years ago, a police investigator suffered from a very serious Aircar accident.
+W=BROK
+
+T=As far as I can remember, you were the only investigator at the police department.
+W=BROK
+
+T=It was you, wasn't it?
+W=BROK
+
+T=Yes.
+W=WES
+
+T=And this is my personal story. Nothing to do with the affair at hand.
+W=WES
+
+T=Somehow... I doubt it.
+W=BROK
+
+T=Really?...
+W=WES
+
+T=Any proof of what you're saying?
+W=WES
+
+T=Erm...
+W=BROK
+C1A=CONFUSED
+
+T=Let me think a minute. I'll find one!
+W=BROK
+
+T=Pathetic.
+W=WES
+
+T=Hey, cowboy... I'm starting to doubt you've got anything tangible.
+W=DEE
+
+T=Gah...
+W=BROK
+C1A=TIRED
+
+T=Trust me, okay?...
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+
+#----------------------
+ID=PC20_CLUE_WES_CARMENTAL
+T=The first time we met, R.J. said you've changed...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=And now we know you're having some mental issues.
+W=BROK
+
+T=Yeah, you're kinda old - or dare I say, an antique...
+W=BROK
+
+T=Hmmph.
+W=WES
+
+T=But my little finger is telling me this all started after your accident. Wasn't it?
+W=BROK
+
+T=You know where you can put your little finger?
+W=WES
+
+T=On the true culprit behind this affair.
+W=WES
+
+T=Oh.
+W=BROK
+
+T=So you're saying the accident didn't affect your intellectual and judgement capacities?
+W=BROK
+
+T=My intellect, possibly.
+W=WES
+
+T=My judgement? Never.
+W=WES
+
+T=Alright. If you say so...
+W=BROK
+
+T=Stop being disrepectful. An old man will always stand behind his convictions.
+W=DEE
+
+T=You must be right. I just wonder what his true convictions are...
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+#----------------------
+ID=PC20_CLUE_WES_DRAW
+T=Can you draw something for me, Chief?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=What?...
+W=WES
+
+T=Go ahead. Draw me a sheep!
+W=BROK
+
+T=Are you going crazy?...
+W=DEE
+C3A=WONDER
+
+T=This is ridiculous!
+W=WES
+C2A=ANGRY
+
+T=So? Can you?
+W=BROK
+
+T=...
+W=WES
+
+T=I won't submit myself to those petty tests of yours.
+W=WES
+
+T=What are you trying to prove?
+W=DEE
+
+T=He cannot draw.
+W=BROK
+
+T=Anyone can draw!
+W=DEE
+
+T=Yeah... Normal human beings.
+W=BROK
+
+T=(It's obvious. He can't. But why?...)
+W=BROK
+MOOD=THINK
+
+T=(Fine, you won't cooperate. That makes you even more suspicious.)
+W=BROK
+MOOD=THINK
+TEN=INTERFACE_CLUE_NEW
+
+
+#----------------------
+ID=PC20_CLUE_WES_BRAINAI
+T=Did you know AIs cannot draw?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=ANGRY
+C3=DEE
+C3A=ANGRY
+COMM=He addresses both of them here
+
+T=And again... How is this related to our case?!
+W=DEE
+
+T=Well, Wes cannot draw either.
+W=BROK
+
+T=You're trying my patience. We have a problem to solve!
+W=WES
+
+T=Even if it was true...
+W=DEE
+
+T=What would be the conclusion?
+W=DEE
+
+T=(Indeed...)
+W=BROK
+MOOD=THINK
+C1A=MAYBE
+
+T=(I'm not really sure myself where this is headed...)
+W=BROK
+MOOD=THINK
+C1A=WONDER
+
+T=(This opens a whole range of possibilities, so let's stick with the facts.)
+W=BROK
+MOOD=THINK
+
+T=(Wes shares behaviors similar to artifical intelligence - but only sometimes)
+W=BROK
+MOOD=THINK
+C1A=THINK
+
+T=Lost your tongue, Pork?
+W=WES
+
+T=Not yet!
+W=BROK
+C1A=READY
+TEN=INTERFACE_CLUE_NEW
+
+
+#----------------------
+ID=PC20_CLUE_WES_AICONTROL
+T=Hey, old weasel.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=If I didn't know any better... I'd say you collided into a robot the day of your accident!
+W=BROK
+
+T=Pray tell?...
+W=WES
+
+T=Well, how else would you explain your inability to draw and to pronounce my name?
+W=BROK
+
+T=Are you somehow... controlled by an AI?...
+W=BROK
+C1A=THINK
+
+T=Good. You keep sinking further.
+W=WES
+
+T=Gotta uncover the truth!
+W=BROK
+
+T=Or dig your own grave.
+W=WES
+
+T=Huh?...
+W=BROK
+
+T=(I admit, what I suggested sounds absurd...)
+W=BROK
+MOOD=THINK
+
+T=(This is a huge accusation.)
+W=BROK
+MOOD=THINK
+
+T=(I need proof!)
+W=BROK
+MOOD=THINK
+TEN=INTERFACE_CLUE_NEW
+
+
+#----------------------
+ID=PC20_CLUE_POLICE_OLDMODEL
+T=I found a proof of utmost importance in your office!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=I'm all ears.
+W=WES
+
+T=A burnt down power socket!
+W=BROK
+
+T=...(Sigh)
+W=DEE
+C3A=ANGRY
+
+T=...
+W=WES
+C2A=SURPRISED
+SILENCE=1
+
+T=You should be ashamed of your moronic allegations, Pork.
+W=WES
+
+T=I'm not basing them on nothing.
+W=BROK
+
+T=Only very old bots can cause an overload!
+W=BROK
+
+T=So what?...
+W=WES
+C2A=NORMAL
+
+T=Should I remind you the vast majority of our staff is composed of bots?
+W=WES
+
+T=Aren't they all Tribots? They should be fairly recent.
+W=BROK
+
+T=And this happened in your office. What would an old bot do there?
+W=BROK
+
+T=I don't know. Probably some client.
+W=WES
+
+T=I can't remember.
+W=WES
+
+T=(Really?)
+W=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(Something's fishy. If this had happened a long time ago, the power socket would have been fixed and cleaned.)
+W=BROK
+MOOD=THINK
+
+T=(What's he hiding?...)
+W=BROK
+MOOD=THINK
+TEN=INTERFACE_CLUE_NEW
+
+#----------------------
+ID=PC20_CLUE_POLICE_WESBOT
+T=Yesterday, you made me a temporary cop, but I couldn't access your office.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=Of course. I usually don't allow anyone to get close to my business when I'm away, not even my staff.
+W=WES
+
+T=Then you should recall if an old bot was charging there!
+W=BROK
+
+T=That again?...
+W=WES
+
+T=No idea. Maybe my nephew plugged in something there.
+W=WES
+
+T=(Doubtful...)
+W=BROK
+MOOD=THINK
+
+T=(Alright, so...)
+W=BROK
+MOOD=THINK
+
+T=(If an AI is controlling Wes and a bot connected recently in his office despite restricted access...)
+W=BROK
+MOOD=THINK
+
+T=(Yes. This must the AI I'm looking for...!)
+W=BROK
+MOOD=THINK
+
+T=(And for an old model, it must be very clever.)
+W=BROK
+MOOD=THINK
+
+T=(If only I had a definitive proof of that...)
+W=BROK
+MOOD=THINK
+TEN=INTERFACE_CLUE_NEW
+
+
+#----------------------
+ID=PC20_CLUE_WES_ROBOT
+T=(Let's summarize what I know so far...)
+W=BROK
+C1=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(Wes has mental problems...)
+W=BROK
+MOOD=THINK
+
+T=(Is sometimes behaving like an AI...)
+W=BROK
+MOOD=THINK
+
+T=(An ancient robot connected recently in his office...)
+W=BROK
+MOOD=THINK
+
+T=(Much more advanced than the school Director...)
+W=BROK
+MOOD=THINK
+
+T=(Controlling him...)
+W=BROK
+MOOD=THINK
+
+T=(And I've already met it?...)
+W=BROK
+MOOD=THINK
+C1A=WONDER
+
+T=(...)
+W=BROK
+MOOD=THINK
+
+T=(...!)
+W=BROK
+MOOD=THINK
+C1A=SURPRISED
+
+T=(His accident...)
+W=BROK
+MOOD=THINK
+
+T=(What if he...!)
+W=BROK
+MOOD=THINK
+COMM=What if he hadn't survived!
+
+T=No... This is absurd!...
+W=BROK
+
+T=I agree.
+W=WES
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=Fine. I shall...
+W=DEE
+
+T=Stop!
+W=BROK
+C1A=SURPRISED
+
+T=I... finally understand!
+W=BROK
+
+T=Wes...
+W=BROK
+
+T=You... You're...
+W=BROK
+COMM=Starting here, the "you" can become familiar!
+TEN=PC20_INTERROGATION_COMPLETE
+
+
+
+#----------------------
+ID=PC20_INTERROGATE_BAD_CARACCIDENT
+T=(It's possible Wes had this accident but I'll need to prove it first...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#----------------------
+ID=PC20_INTERROGATE_BAD_WESACCIDENT
+T=(Yeah, I guess the car accident could have caused this but... I feel like I'm jumping to conclusions)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#----------------------
+ID=PC20_INTERROGATE_BAD_MENTAL
+T=(Mental issues?... First I need a proof that those drawings are from Wes.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#----------------------
+ID=PC20_INTERROGATE_BAD_BOTMODEL
+T=(Nothing proves they're one and the same...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+
+
+
+
+#----------------------
+ID=PC20_REVEAL
+T=You're not human!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=LISTEN
+
+T=Huh?...
+W=DEE
+
+T=What is he, then?... An extraterrestrial?
+W=DEE
+C3A=MEH
+
+T=A bot! A very sophisticated one!
+W=BROK
+C1A=ANGRY
+
+T=...
+W=WES
+SILENCE=1
+
+T=Are you crazy?... Did you take a good look at him?
+W=DEE
+
+T=Have you ever heard a bot speak fluently like us?
+W=DEE
+
+T=I do.
+W=BROK
+C1A=MOCK
+
+T=The Director of my son's school. She talks exactly like a human.
+W=BROK
+
+T=She said she's an experimental model from years ago.
+W=BROK
+
+T=And there's another like her in this city. An improved model.
+W=BROK
+
+T=She was referring to you... Wasn't she!
+W=BROK
+
+T=...
+W=WES
+
+T=Aaaand... I guess you suggest we open him, then?
+W=DEE
+
+T=There's an easy way to check. 
+W=BROK
+C1A=ALRIGHT
+
+T=If he's a bot, he must have a charging slot in the rear.
+W=BROK
+
+T=Go ahead! Search for it!
+W=BROK
+C1A=READY
+
+T=Are you serious?!
+W=DEE
+C3A=WONDER
+
+T=You're asking me to check the rear of... Mister head of the police department?!
+W=DEE
+
+T=Exactly!
+W=BROK
+C1A=MOCK
+
+T=And if you won't, I will!
+W=BROK
+
+T=(Sigh)
+W=DEE
+C3A=COCKY
+
+T=I'm warning you, Pork. This is a first-class criminal offence!
+W=WES
+C2A=ANGRY
+TEN=PC20_REVEAL_CHOICE
+IT=1
+
+
+#----------------------
+ID=PC20_REVEAL_NO
+T=...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+COMM=We decide to stop
+
+T=You're right.
+W=BROK
+
+T=I'm not sure what's up with me.
+W=BROK
+
+T=You scared me for a sec.
+W=DEE
+C3A=COCKY
+
+T=Thanks for the waste of time.
+W=WES
+
+T=The chip, please.
+W=WES
+
+T=Sure.
+W=DEE
+TEN=PC20_WES_MAKEDEEFALLNOKEY
+
+
+
+#----------------------
+ID=PC20_REVEAL_NO2
+T=Argh...
+W=DEE
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=SURPRISED
+COMM=Wes kills them both
+C3_EYESHUT=1
+
+T=Noooo! What have you...
+W=BROK
+C3=NONE
+TEN=PC20_REVEAL_NO3_WESNORMAL
+
+#----------------------
+ID=PC20_REVEAL_NO3
+T=Finally, some silence.
+W=WES
+A=NORMAL
+
+T=Too bad for you, Pork. 
+W=WES
+A=NORMAL
+COMM=Again - Wes talks in informal way when he's alone (here Brok & Dee are dead)
+
+T=So close... Yet so far.
+W=WES
+A=WONDER
+
+T=Now...
+W=WES
+A=NORMAL
+
+T=Let's end this.
+W=WES
+A=NORMAL
+TEN=PC20_REVEAL_NO_FADEOUT
+
+
+#----------------------
+ID=PC20_REVEAL_NO4
+T=Brok...
+BVOICE=GRAFF
+CONTEXT=Bad ending - Graff tells what happens after
+
+T=It's been a week since the accident.
+
+T=That day...
+T=After we escaped...
+T=Ott and I found...
+
+T=(Sigh)
+
+T=I still can't believe it.
+
+T=I'm not sure what happened but...
+
+T=We were too late.
+T=I wanted to stay there.
+
+T=I didn't have the heart to go on without you.
+
+T=But Ott insisted...
+
+T=The pills shortage went on.
+T=We tried to reach for the Drums but... all access was shut off. 
+T=As for moving to the closest country...
+T=Nobody could. The Tribots were at every corner.
+T=We were trapped.
+T=Then...
+T=Ott's uncle found us.
+T=He made us enter the Drums.
+T=But only us...
+T=At the border Post...
+T=There were families... 
+T=Children... Right behind us...
+T=Wes prevented them from entering.
+T=So Ott refused to go as well. His own parents were still out there.
+T=Wes said it was too late.
+T=He knocked out Ott...
+T=I had no choice...
+T=I couldn't leave him.
+T=...
+T=After this...
+T=I tried to bring pills from the Dome to the outside...
+T=But it was already over.
+T=The Slums became so silent.
+T=Everyone in the Slums...
+T=Perished...
+T=Except us.
+T=Why?...
+T=Why saving us and no one else?
+T=Are we... More important than all these people?
+T=This isn't fair.
+T=Now...
+T=Ott and I have to live with this burden.
+T=If only... You had been there...
+T=You would have found a solution...
+T=For everyone...
+T=I'm sure of it.
+
+T=...
+T=I've decided to dedicate my life to help others...
+T=As you taught me...
+T=To repair this mistake...
+T=And make you proud.
+T=I miss you...
+T=...
+T=May we see each other again...
+T=Someday...
+T=On the other side.
+TEN=PC20_REVEAL_NO_FADEOUT2
+
+
+
+#----------------------
+ID=PC20_REVEAL_YES
+T=I insist!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=WES
+C2A=ANGRY
+C3=DEE
+C3A=LISTEN
+CONTEXT=We make the right choice
+
+T=Come on! Show us your butt, old bot!
+W=BROK
+
+T=How dare you...
+W=WES
+
+T=If you truly think so... Then...
+W=DEE
+
+T=I'll trust you.
+W=DEE
+
+T=Maybe you can just show him so we can move on?
+W=DEE
+
+T=...
+W=WES
+
+T=...
+W=DEE
+
+T=...?
+W=BROK
+
+T=Ha ha ha...
+W=WES
+C2A=HAPPY
+
+T=To think... That idiot...
+W=WES
+
+T=With his moronic logic...
+W=WES
+
+T=HA HA HA HA HA!
+W=WES
+
+T=Are you done?... There's nothing funny.
+W=BROK
+C1A=ANGRY
+
+T=Oh, yes there is!
+W=WES
+
+T=I can't wait to see your face...
+W=WES
+
+T=When you see mine.
+W=WES
+TEN=PC20_WES_REVEAL
+
+
+#----------------------
+ID=PC20_AFTERREVEAL1
+T=...!!!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=SURPRISED
+CONTEXT=Wes reveals his true self - he's a robot
+
+T=It's... That's...!
+W=DEE
+
+T=Impossible!
+W=DEE
+
+T=I was hoping I'd be wrong...!
+W=BROK
+
+T=You...
+W=WES
+COMM=STARTING FROM HERE AND TO THE END OF THIS FILE, Wes reveals he's a bot so he talks to Brok in informal way! And Brok also talks to Wes in informal way.
+
+T=Of all the people I've met, all these years...
+W=WES
+
+T=How could you be the one to discover my true identity?!
+W=WES
+
+T=Then... This means...
+W=BROK
+
+T=Gimme that!
+W=WES
+TEE=PC20_WES_MAKEDEEFALL
+
+#----------------------
+ID=PC20_AFTERREVEAL2
+T=Aww!
+W=DEE
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=SURPRISED
+C3_EYESHUT=1
+
+T=No!!!
+W=BROK
+C3=NONE
+TEN=PC20_BROK_SWALLOWS
+
+
+#----------------------
+ID=PC20_AFTERREVEAL3
+T=(Glurp)
+TEN=PC20_DEEBACK
+COMM=Brok swallows chip
+
+T=The chip!...
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=BOTMAD
+C3=DEE
+C3A=SURPRISED
+
+T=Darn you croc! Spit it out!
+W=WES
+TEN=PC20_BROKWES
+
+T=No way in hell... where you probably come from!
+W=BROK
+
+T=That doesn't make any sense...!
+W=DEE
+
+T=How... Why...?!
+W=DEE
+
+T=You're involved in all this?
+W=DEE
+
+T=What do you need it for?
+W=DEE
+
+T=That's the only copy. By erasing it...
+W=BROK
+
+T=Poof. All proof... Gone!
+W=BROK
+
+T=Pesky meddlers.
+W=WES
+
+T=You fail to realize that all our efforts are to ensure this world won't turn upside down!
+W=WES
+
+T=For your safety, we made sure every single device is connected to the Triweb.
+W=WES
+
+T=We've set sophisticated algorithms to recognize and eradicate all inappropriate content.
+W=WES
+
+T=It was perfect!
+W=WES
+
+T=But this... stupid non-connected thing!...
+W=WES
+
+T=It contains information that will incriminate me!
+W=WES
+
+T=Too bad for you. They're in my stomach now!
+W=BROK
+
+T=...And your stomach better not destroy it... 
+W=DEE
+
+T=Erm... Good thing I didn't eat anything spicy...
+W=BROK
+C1A=HAPPY
+SKIPEND=1
+
+T=Enough.
+W=WES
+TEN=PC20_WES_SHOOTSFREEZEGUN
+
+
+#----------------------
+ID=PC20_AFTERREVEAL4
+T=No!...
+W=BROK
+A=ANGRY
+COMM=Wes tries shooting but he misses thanks to Brok
+TEN=PC20_BROK_SAVESDEE
+
+
+#----------------------
+ID=PC20_AFTERREVEAL5
+T=You're okay?...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=NORMAL
+TEN=PC20_AFTERREVEAL_DEEBACK
+
+T=...
+W=DEE
+TEN=PC20_AFTERREVAL_BROKTURNS
+
+
+
+
+#----------------------
+ID=PC20_AFTERREVEAL5_NOSIN
+T=Then this means...
+W=DEE
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=SURPRISED
+
+T=Sin...!
+W=DEE
+
+T=I've taken care of him, of course.
+W=WES
+
+T=Noooo!
+W=DEE
+
+T=This... can't be happening!
+W=DEE
+C3A=SAD
+
+T=It already has.
+W=WES
+
+T=The most pathetic criminal I've eliminated so far!
+W=WES
+
+T=Running away from me as soon as he understood... What a coward.
+W=WES
+
+T=You monster...
+W=BROK
+C1A=ANGRY
+
+T=Does your screwed-up brain even realize it's contradictory to treat people as criminals while killing them?!
+W=BROK
+
+T=...
+W=WES
+
+T=Don't try to confuse me.
+W=WES
+TEN=PC20_AFTERREVEAL5B
+
+
+#----------------------
+ID=PC20_AFTERREVEAL5B
+T=We... We've got to get rid of him... it!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=SAD
+TEB=PC20_AFTERREVEAL_DEEWES
+
+T=...
+W=WES
+
+T=You're in luck. This old gun takes time to reload.
+W=WES
+COMM=He addresses both of them here.
+TEN=PC20_AFTERREVEAL5B_CHECK
+
+
+#----------------------
+ID=PC20_AFTERREVEAL5C
+T=But I'm prepared for all eventualities.
+W=WES
+C1=BROK
+C1A=READY
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=LISTEN
+
+T=Even this very improbable situation you would show resistance.
+W=WES
+
+T=(Click)
+TEN=PC20_TRASH_COLLAPSE
+
+
+#----------------------
+ID=PC20_AFTERREVEAL6
+T=Woah!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=SURPRISED
+NB=1
+D=30
+COMM=The whole place slowly collapses until they're all trapped into a hole
+
+T=He's making this trash mountain collapse?!
+W=DEE
+NB=1
+D=60
+TEN=PC20_TRASH_COLLAPSEEND
+
+#----------------------
+ID=PC20_AFTERREVEAL7
+T=Good news. I've proceeded as planned.
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=ANGRY
+
+T=You won't leave this place alive.
+W=WES
+COMM=He addresses both of them here.
+
+T=How is that good news?
+W=BROK
+
+T=It is. For me!
+W=WES
+C2A=BOTMAD
+TEN=PC20_TRIBOTS_FALL
+
+
+#----------------------
+ID=PC20_AFTERREVEAL8
+T=Obviously...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C3=DEE
+C3A=ANGRY
+CONTEXT=Tribots come, surrounding them
+
+T=It's bad... They keep coming!
+W=DEE
+
+T=Argh...
+W=BROK
+
+T=No choice!
+W=DEE
+
+T=I'll take care of the minions. Get him!
+W=DEE
+
+T=Got it!
+W=BROK
+TEN=PC20_AFTERREVEAL8_MUSICFADE
+
+T=Hey. Guess what the penalty is for attacking a police officer?
+W=WES
+C2=WES
+C2A=BOTMAD
+
+T=Lemme guess... Death?...
+W=BROK
+
+T=You got that right!
+W=WES
+C2A=BOTANGRY
+TEN=PC20_FIGHT1_START
+
+
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA1
+T=Hey, old bot...
+NB=1
+D=60
+BNAMESP=BROK
+BVOICESP=BROK
+CONTEXT=During the fight with Wes!
+
+T=If you intended to destroy us... Why the speech?
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=You're really stubborn, Pork. You always find a way out.
+NB=1
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=I've tried so many times to destroy you...
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Unleashed hundreds of servants at you today...
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=And you're still breathing!
+D=60
+BNAMESP=WES
+BVOICESP=WES
+
+T=I couldn't take the risk to have you flee again with those documents.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+COMM=Here he's adressing both of them
+TEN=PC20_FIGHT1_SPEECHA1OVER
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA1ALT
+T=You were my useful idiot, Pork.
+NB=1
+D=60
+BNAMESP=WES
+BVOICESP=WES
+
+T=Thanks to your abysmal detective skills...
+NB=1
+D=60
+BNAMESP=WES
+BVOICESP=WES
+
+T=...I was finally able to locate the third member.
+D=60
+BNAMESP=WES
+BVOICESP=WES
+
+T=Dr. Gherkin.
+D=60
+BNAMESP=WES
+BVOICESP=WES
+TEN=PC20_FIGHT1_SPEECHA1OVERALT
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA2
+T=So it was you!...
+NB=1
+D=60
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=You pushed that firmware update!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=This means...!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Eh. You finally got it.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Kneel in front of one of your masters!
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=He's a member of the Triangle?...
+D=90
+BNAMESP=DEE
+BVOICESP=DEE
+TEN=PC20_FIGHT1_SPEECHA2OVER
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA3
+T=You vermin!...
+NB=1
+D=60
+BNAMESP=DEE
+BVOICESP=DEE
+
+T=The shortage...
+D=90
+BNAMESP=DEE
+BVOICESP=DEE
+
+T=...was my final plan.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=My servants wrecked the Pipe-pills one by one.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=What better way to clean the Slums?
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=It's like all the conditions for this fate were met ages ago.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=All that was missing was the match to light the flame...
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=You!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+TEN=PC20_FIGHT1_SPEECHA3OVER
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA4
+T=I should have listened to my instinct...
+NB=1
+D=60
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Never trust old weasels. Never trust bots.
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=And you're the rotten combination of both!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Shut your mouth and please die.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=I'd say stop dreaming...
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=If only you could!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+TEN=PC20_FIGHT1_SPEECHA4OVER
+
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA5
+T=So... You died in that accident and...
+NB=1
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=How exactly did you get transformed into... this?...
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Does it matter? You'll be stiff in a moment.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Consider this a last favor then!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Very well.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+TEN=PC20_FIGHT1_SPEECHA5OVER
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA6
+T=A long time ago...
+NB=1
+D=90
+BNAME=WES
+BVOICE=WES
+
+T=I had a friend. A brilliant engineer.
+D=90
+
+T=Whose life was abruptly shattered...
+D=90
+
+T=The night of my accident...
+D=90
+
+T=Before my last breath... He recorded my brain.
+D=90
+
+T=Then transferred the data into this host.
+D=90
+TEN=PC20_FIGHT1_SPEECHA6OVER
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA7
+T=I was reborn!
+NB=1
+D=60
+BNAMESP=WES
+BVOICESP=WES
+
+T=Yeah. As an evil robo-cop.
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+COMM=To avoid possible copyright confusion with the famous film I added an hyphen
+
+T=He said my role on this earth wasn't over.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=At the time I didn't understand why.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=But now... I know this was my destiny.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=To destroy the Slums?!
+D=90
+BNAMESP=DEE
+BVOICESP=DEE
+
+T=The greatest minds are always misunderstood.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+TEN=PC20_FIGHT1_SPEECHA7OVER
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHA8
+T= Who cares!
+NB=1
+D=90
+BNAMESP=DEE
+BVOICESP=DEE
+
+T= We won't let you win!
+D=90
+BNAMESP=DEE
+BVOICESP=DEE
+
+T=This fight is already over.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Accept this reality.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Only after I've reduced you to a pile of scrap!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+TEN=PC20_FIGHT1_SPEECHA8OVER
+
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHB1
+T=How can you resist like this?!
+NB=1
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=I should have destroyed you when I had the opportunity...
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Why didn't ya?
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=It's as they say.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Keep your friends close... and your enemies even closer.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+TEN=PC20_FIGHT1_SPEECHB1OVER
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHB2
+T=Why me?... What have I done to you?
+NB=1
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=You're a threat.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=The only Slumer immune to the Haze.
+NB=1
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=A potential alternative to the pills lies within you.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=I had no choice but to send bots after you...
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Not enough to stop me!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+TEN=PC20_FIGHT1_SPEECHB2_CHECK
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHB2_INVESTOK
+T=My plan to keep you close also failed.
+NB=1
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=I sent you on that staged investigation. I figured you would fall into our traps.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Against all odds... You solved it.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=The doctor wanted to stop his AI research. Unacceptable.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Tidy was an invaluable servant... and you destroyed him!
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=This poor bot asked me to cover for him. He did what was right.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=What was right?!...
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=He attempted to kill his creator!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Interesting you'd say this, Pork...
+D=60
+BNAMESP=WES
+BVOICESP=WES
+
+T=Considering you destroyed mine!
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=What...?
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=...
+D=90
+BNAMESP=WES
+BVOICESP=WES
+TEN=PC20_FIGHT1_SPEECHB2OVER
+
+
+
+#----------------------
+ID=PC20_FIGHT1_SPEECHB3
+T=Come on!... Spill it!
+NB=1
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Who's your creator? Who did I kill?!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Ha ha ha...
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=You shall not know.
+D=60
+BNAMESP=WES
+BVOICESP=WES
+
+T=This is your punishment.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Torturing you is such a delight.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=Well there's one thing I know for sure...
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=You're next on the list!
+D=60
+BNAMESP=BROK
+BVOICESP=BROK
+TEN=PC20_FIGHT1_SPEECHB3OVER
+
+
+
+#----------------------
+ID=PC20_FIGHT1_DEEDIES
+T=Noooo!
+NB=1
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Sorry it had to come to this.
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=I usually don't kill Drumers but this journalist was a serious pain in the neck.
+D=120
+BNAMESP=WES
+BVOICESP=WES
+COMM=This happens if Dee dies so he's talking about her
+
+T=Do not cry. You're next!
+D=90
+BNAMESP=WES
+BVOICESP=WES
+
+T=I'll get ya... I swear!
+D=60
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Even if it's the last thing I do!
+D=90
+BNAMESP=BROK
+BVOICESP=BROK
+
+
+
+#----------------------
+ID=PC20_FIGHT1_END
+T=Impossible...
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=BOTSAD
+C3=DEE
+C3A=ANGRY
+CONTEXT=Brok defeats Wes (first time)
+
+T=My faithful bots...
+W=WES
+
+T=They're... not returning my calls anymore...!
+W=WES
+TEN=PC20_FIGHT1_END_CHECK
+
+
+#----------------------
+ID=PC20_FIGHT1_END_DEEDEAD
+T=I...
+W=WES
+C1=BROK
+C1A=DOWN
+C2=WES
+C2A=BOTNORMAL
+COMM=Wes collapses
+
+T=...
+W=WES
+
+T=...
+W=BROK
+
+T=It's over.
+W=BROK
+TEN=PC20_FIGHT1_END_BROKDEEDEAD
+
+
+#----------------------
+ID=PC20_FIGHT1_END_DEEDEAD1
+T=Dee...
+W=BROK
+A=HEARTBROKEN
+COMM=In case Dee died during the boss fight
+
+T=I shouldn't have let that happen...
+W=BROK
+A=HEARTBROKEN
+
+T=Please... Forgive me.
+W=BROK
+A=DISAPPOINTED
+TEN=PC20_FIGHT1_END_DEEDEAD_FADEOUT
+
+
+
+
+#----------------------
+ID=PC20_FIGHT1_END_DEEALIVE
+T=That's it. The game is over, bag of screws.
+W=DEE
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=BOTMAD
+C3=DEE
+C3A=ANGRY
+
+T=Not... Till I...
+W=WES
+TEN=PC20_WES_SHOOTDEFEATED
+
+
+#----------------------
+ID=PC20_FIGHT1_END2
+T=Argh!!!
+W=DEE
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=ANGRY
+COMM=Wes shoots on Dee (if she's still alive)
+
+T=Dee!
+W=BROK
+TEN=PC20_BROK_CHECKSDEE
+
+T=My leg...
+W=DEE
+
+T=I can't move!...
+W=DEE
+
+T=That devil...
+W=BROK
+
+T=Come on. I'll carry you.
+W=BROK
+
+T=Don't... Don't mind me!
+W=DEE
+C2A=SAD
+
+T=You've got to finish him!
+W=DEE
+
+T=I will...
+W=BROK
+C1A=READY
+TEN=PC20_BROK_DEEFADEOUT
+
+T=After you're safe!
+W=BROK
+
+T=Someone's waiting for you at home.
+W=BROK
+
+T=Brok...
+W=DEE
+TEN=PC20_FIGHT1_END2B
+
+
+#----------------------
+ID=PC20_FIGHT1_END3
+T=Now... Go.
+W=DEE
+C1=BROK
+C1A=WONDER
+C2=DEE
+C2A=NORMAL
+TEN=PC20_BROK_FIGHT1GOESWES
+
+
+#----------------------
+ID=PC20_FIGHT1_END4
+T=...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=Where is he?!
+W=BROK
+TEN=PC20_FIGHT1_END4_CHECK
+
+#----------------------
+ID=PC20_FIGHT1_END4DEEALIVE
+T=I told you!... That old snake!...
+W=DEE
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=ANGRY
+
+T=Now is not the good time for an argument!
+W=BROK
+TEN=PC20_FIGHT1_SHAKING
+
+
+#----------------------
+ID=PC20_FIGHT1_END5
+T=(Shaking)
+
+T=Oh boy... What again?...
+W=BROK
+A=STUPID
+TEN=PC20_FIGHT1_SHAKING2
+
+
+
+#----------------------
+ID=PC20_FIGHT2_APPEAR
+T=!!!...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C3=DEE
+C3A=SURPRISED
+CONTEXT=Giant robot comes out of the ground, with Wes inside at the commands
+
+T=This... is a nightmare!...
+W=BROK
+
+T=How do you like my new shell, Pork?
+W=WES
+C2=WES
+C2A=BOTMAD
+TEN=PC20_FIGHT2_APPEAR_CHECK
+
+#----------------------
+ID=PC20_FIGHT2_APPEAR_DEEALIVE
+T=Do you even stand a chance against that?!
+W=DEE
+C1=BROK
+C1A=READY
+C2=WES
+C2A=BOTMAD
+C3=DEE
+C3A=SURPRISED
+
+T=There... must be a way...
+W=BROK
+
+T=There's gotta be!
+W=BROK
+TEN=PC20_FIGHT2_APPEARB
+
+
+#----------------------
+ID=PC20_FIGHT2_APPEAR_DEEDEAD
+T=You dirty... old snake!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=BOTANGRY
+TEN=PC20_FIGHT2_APPEARBDEAD
+
+#----------------------
+ID=PC20_FIGHT2_APPEARB
+T=Let me estimate.
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=BOTANGRY
+C3=DEE
+C3A=ANGRY
+
+T=The probability you'll survive more than two minutes is...
+W=WES
+
+T=Non-existent.
+W=WES
+C2A=BOTMAD
+
+T=I'll take my chances!
+W=BROK
+C1A=READY
+TEN=PC20_FIGHT2_REMOVEPICTURE
+
+T=Good. I was worried you'd try something foolish like escaping.
+W=WES
+C2A=BOTANGRY
+
+T=That would be no fun.
+W=WES
+
+T=You should know me by now, old demon bot.
+W=BROK
+
+T=As long as I'm standing...
+W=BROK
+
+T=I'll keep fighting!
+W=BROK
+
+T=Right. Keep talking like you're in a livie!
+W=WES
+
+T=But this is reality!
+W=WES
+TEN=PC20_FIGHT2_START
+
+#----------------------
+ID=PC20_FIGHT2_END
+T=(Pant, pant) Yes!...
+W=BROK
+A=READY
+CONTEXT=Win against giant robot
+
+T=Hope you liked this, giant tin can!
+W=BROK
+TEN=PC20_FIGHT2_END_SHAKE
+
+T=...Woah!
+W=BROK
+A=SURPRISED
+
+#----------------------
+ID=PC20_FIGHT2_END_AFTER_DEEALIVE
+T=Phew...
+W=BROK
+C1=BROK
+C1A=TIRED
+TEB=PC20_FIGHT2_BROKLOOKDEE
+
+T=For a sec, I thought I was done f...
+W=BROK
+SKIPEND=1
+
+T=Watch out!
+W=DEE
+C2=DEE
+C2A=SURPRISED
+SKIPEND=1
+
+
+#----------------------
+ID=PC20_FIGHT2_END_AFTER_DEEDEAD
+T=Phew...
+W=BROK
+C1=BROK
+C1A=DOWN
+TEN=PC20_FIGHT2_BROKLOOKDEE
+
+T=Dee. I avenged y...
+W=BROK
+
+#----------------------
+#TODO While Brok is caught, add a hint "keep pressing buttons to avoid getting crushed" and he loses a bit of health sometimes
+ID=PC20_FIGHT2_END2
+T=Ooooof!
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTMAD
+C3=DEE
+C3A=SURPRISED
+CONTEXT=Brok gets caught by the giant robot claw, unable to move and getting crushed
+
+T=I can't believe...
+W=WES
+
+T=You've almost had me... Twice!
+W=WES
+
+T=That final mistake will cost you your life.
+W=WES
+
+T=Uuuurgh!
+W=BROK
+
+T=That hurts, ya know!
+W=BROK
+
+T=Don't worry. You won't die immediately.
+W=WES
+
+T=I'll break you bit by bit, slowly.
+W=WES
+
+T=Let me savor this moment!
+W=WES
+TEN=PC20_FIGHT2_END2_CHECK
+
+#----------------------
+
+ID=PC20_FIGHT2_END2_DEEALIVE
+T=No!...
+W=DEE
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTMAD
+C3=DEE
+C3A=SURPRISED
+
+T=Dee! Stay there!
+W=BROK
+TEN=PC20_FIGHT2_END2A
+
+#----------------------
+
+ID=PC20_FIGHT2_END2A
+T=Arghhh!
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTMAD
+C3=DEE
+C3A=SURPRISED
+TEN=PC20_FIGHT2_CHOICE
+
+
+#----------------------
+ID=PC20_FIGHT2_PLAYDEAD_DEEALIVE
+T=...
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTANGRY
+C3=DEE
+C3A=SAD
+COMM=Playing dead
+
+T=Brok?...
+W=DEE
+
+T=...
+W=BROK
+SILENCE=1
+
+T=Brok!!!
+W=DEE
+TEN=PC20_FIGHT2_PLAYDEAD
+
+#----------------------
+ID=PC20_FIGHT2_PLAYDEAD
+T=Playing possum, uh?
+W=WES
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTMAD
+C3=DEE
+C3A=SURPRISED
+
+T=Don't think you can fool me. I have sensors.
+W=WES
+
+T=Even a dead cat can bounce when it falls from high up!
+W=WES
+
+T=What you say... Urgh!... doesn't make any sense!
+W=BROK
+
+T=Ha!
+W=WES
+TEN=PC20_FIGHT2_CHOICENEXT
+
+#----------------------
+ID=PC20_FIGHT2_ASKMORE_DEEALIVE
+T=Well...
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=WONDER
+
+T=Running out of ideas here. Dee?...
+W=BROK
+
+T=Before you kill us...
+W=DEE
+
+T=I need to know...
+W=DEE
+
+T=Why?
+W=DEE
+
+T=Why insist on wiping out Slumers?
+W=DEE
+TEN=PC20_FIGHT2_ASKMORE
+
+
+#----------------------
+ID=PC20_FIGHT2_ASKMORE_DEEDEAD
+T=Why?
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTWONDER
+TEN=PC20_FIGHT2_ASKMORE_DEAD
+
+#----------------------
+ID=PC20_FIGHT2_ASKMORE
+T=Isn't it obvious?
+W=WES
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTWONDER
+C3=DEE
+C3A=WONDER
+
+T=...
+W=WES
+
+T=Pork...
+W=WES
+
+T=The first time we met... Many years ago...
+W=WES
+
+T=I wasn't a bot.
+W=WES
+
+T=To me you've always been an old wreck!... Urgh!
+W=BROK
+
+T=After I was turned into this...
+W=WES
+
+T=I resumed my job at the police department.
+W=WES
+
+T=Slowly... Year after year...
+W=WES
+
+T=I encountered the worst in humanity.
+W=WES
+
+T=Murders... Thefts... Aggressions... Frauds...
+W=WES
+C2A=BOTANGRY
+
+T=Every new case worse than the last.
+W=WES
+
+T=All concentrated in the Slums.
+W=WES
+
+T=This is hogwash!
+W=BROK
+C1A=ANGRY
+
+T=The result of a buggy stack of algorithms inside your head!
+W=BROK
+
+T=No.
+W=WES
+C2A=BOTANGRY
+
+T=It's a very reasonable way of thinking.
+W=WES
+
+T=A reasoning only possible thanks to my human side!
+W=WES
+
+T=Human side... Yeah, right.
+W=BROK
+
+T=You see. I may look like a machine.
+W=WES
+
+T=I still cannot do high speed calculations.
+W=WES
+
+T=On the contrary. I was conceived in order to replicate the human brain.
+W=WES
+
+T=I have all my memories from my past.
+W=WES
+
+T=I've never felt any different from the person I was before.
+W=WES
+
+T=No. I've simply been in the police long enough to understand.
+W=WES
+
+T=Humans never learn.
+W=WES
+
+T=Criminals always recidivate.
+W=WES
+
+T=Bad seeds need to be eliminated.
+W=WES
+
+T=This is the only way.
+W=WES
+
+T=To ensure the safety of everyone who deserves it!
+W=WES
+
+T=Lemme guess. The Drums citizens?
+W=BROK
+
+T=Evidently.
+W=WES
+
+T=This part of humanity deserves to be saved.
+W=WES
+
+T=Sooner or later, this plague infesting every living being outside the Dome will be spread inside.
+W=WES
+
+T=Why do you refuse to understand?
+W=WES
+
+T=Because...
+W=BROK
+
+T=You're a filthy piece of metal junk.
+W=BROK
+C1A=ANGRY
+
+T=Humans have a heart. You don't.
+W=BROK
+TEN=PC20_ASKMORE_CHECK2
+
+#----------------------
+ID=PC20_FIGHT2_ASKMOREDEE
+T=Oh, he has borrowed something from humans indeed.
+W=DEE
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTNORMAL
+C3=DEE
+C3A=ANGRY
+
+T=The ability to lie.
+W=DEE
+
+T=The prisoners that were terminated... You're behind that too, aren't you?!
+W=DEE
+
+T=Of course.
+W=WES
+
+T=My first plan. Back when I still thought a selective approach could work.
+W=WES
+
+T=How?...
+W=DEE
+
+T=Dr. Gherkin said three votes are needed.
+W=DEE
+
+T=That's right.
+W=WES
+
+T=I'm not almighty. My power to take action has limits.
+W=WES
+
+T=Three votes needed to approve a proposal...
+W=WES
+
+T=One to block.
+W=WES
+
+T=So... I exploited a loophole in the system.
+W=WES
+
+T=The ability to reformulate questions.
+W=WES
+
+T=Reformulate?...
+W=BROK
+
+T=Instead of "Should this person be condemned to death?"
+W=WES
+
+T=I simply rewrote it as... "Should this person be freed?"
+W=WES
+
+T=And reversed the replies.
+W=WES
+
+T=Same thing, wouldn't you say?
+W=WES
+
+T=Except this way... only one vote "against" becomes needed!
+W=WES
+
+T=Amongst the crowd of questions we receive, no one even noticed.
+W=WES
+
+T=What a joke...
+W=BROK
+
+T=Whoever designed that system was a stupid moron.
+W=BROK
+
+T=Not stupid.
+W=WES
+
+T=The Creator is imperfect, like all humans are.
+W=WES
+
+T=The plan I concocted was safe, subtle and simple.
+W=WES
+
+T=Yet far from enough.
+W=WES
+
+T=I shortly realized I had to act on a larger scale.
+W=WES
+
+T=Taking more risks.
+W=WES
+
+T=And condemn all the Slums inhabitants?!
+W=DEE
+TEN=PC20_FIGHT2_ASKMOREC
+
+
+#----------------------
+ID=PC20_FIGHT2_ASKMOREC
+T=Be realistic.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTWONDER
+C3=DEE
+C3A=NORMAL
+
+T=Cheating, stealing and fighting constitute the way of living for Slumers.
+W=WES
+
+T=Who amongst you never did such a thing?...
+W=WES
+
+T=Yeah...
+W=BROK
+
+T=We are not perfect...
+W=BROK
+
+T=But everyone deserves a second chance!
+W=BROK
+
+T=We can better ourselves!
+W=BROK
+
+T=You cannot.
+W=WES
+C2A=BOTANGRY
+
+T=Yes we can!
+W=BROK
+
+T=Silence!
+W=WES
+
+T=Urgggghh!!!
+W=BROK
+
+T=...
+W=BROK
+C1A=DOWN
+
+T=Wait... Lia's case...
+W=BROK
+
+T=You lied about this too?!
+W=BROK
+C1A=FURIOUS
+
+T=I did not.
+W=WES
+C2A=BOTWONDER
+
+T=As far as I know... it truly was an accident.
+W=WES
+
+T=A fire caused by the global power shutdown. The whole city was a mess.
+W=WES
+
+T=I... don't believe you!
+W=BROK
+
+T=Granted. For all my career...
+W=WES
+
+T=This is the only case I couldn't solve with absolute certainty due to the data loss.
+W=WES
+
+T=It has always haunted me...
+W=WES
+
+T=You and me both, then!
+W=BROK
+
+T=Shut up! We're nothing alike, scum!
+W=WES
+C2A=BOTANGRY
+
+T=Aaaaargh!!!
+W=BROK
+TEN=PC20_FIGHT2_CHOICENEXT
+
+#----------------------
+ID=PC20_FIGHT2_AFTEREND
+T=Enough played.
+W=WES
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTANGRY
+
+T=While you're still able to talk, let me know...
+W=WES
+
+T=What shall be your last words before I terminate you?
+W=WES
+
+T=Well...
+W=BROK
+TEN=PC20_LASTWORD_CHOICE
+
+
+#----------------------
+ID=PC20_LASTWORD_DARN1
+T=Darn!
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=BOTNORMAL
+
+T=I should have guessed. You limited brain can't produce elaborate thoughts...
+W=WES
+
+T=Even at the very end.
+W=WES
+TEN=PC20_LASTWORD_AFTER
+
+
+#----------------------
+ID=PC20_LASTWORD_HATE1
+T=I hate you, piece of junk!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=BOTNORMAL
+
+T=I've always known AIs were the biggest threat to humanity!
+W=BROK
+
+T=And you're the biggest threat to us!
+W=WES
+C2A=BOTANGRY
+
+T=Do you realize how many casualties you've caused at the bunker?!
+W=WES
+
+T=Good!
+W=BROK
+
+T=Murderer!
+W=WES
+TEN=PC20_LASTWORD_AFTER
+
+
+#----------------------
+ID=PC20_LASTWORD_UNDERSTAND1
+T=I understand...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=WES
+C2A=BOTNORMAL
+
+T=I guess... you may be right after all.
+W=BROK
+
+T=The Slums are condemned.
+W=BROK
+
+T=Please end our suffering.
+W=BROK
+
+T=Finally some reasonable thoughts!
+W=WES
+TEN=PC20_LASTWORD_AFTER
+
+#----------------------
+ID=PC20_LASTWORD_GRAFF1
+T=Please...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=WES
+C2A=BOTWONDER
+
+T=Whatever happens...
+W=BROK
+
+T=Promise me you'll spare Graff.
+W=BROK
+
+T=Graff...
+W=WES
+
+T=...
+W=WES
+
+T=He and Ott will be safe. I guarantee it.
+W=WES
+C2A=BOTNORMAL
+
+T=Well then...
+W=BROK
+
+T=You need to know, they may be in danger right now...
+W=BROK
+
+T=What?...
+W=WES
+C2A=BOTSURPRISED
+TEN=PC20_LASTWORD_AFTER
+
+#----------------------
+ID=PC20_LASTWORD_LOVE1
+T=I love you Wes! Please hold me tight!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=BOTNORMAL
+
+T=...
+W=WES
+C2A=BOTWONDER
+
+T=Not what I expected but... I shall grant your wish!
+W=WES
+TEN=PC20_LASTWORD_AFTER
+
+
+#----------------------
+
+ID=PC20_FIGHT2_END2B
+T=Who did this...?!
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTMAD
+CONTEXT=The Director comes crashing, throws something at the giant robot to free Brok
+TEN=PC20_DIRECTOR_COMES
+
+
+
+#----------------------
+ID=PC20_DIRECTOR1
+T=Prototype 26.
+W=DIRECTOR
+C1=WES
+C1A=BOTMAD
+C2=DIRECTOR
+C2A=ANGRY
+
+T=You've derailed from the track that was assigned to you.
+W=DIRECTOR
+
+T=It's my duty to step in.
+W=DIRECTOR
+
+T=How dare you mess with my business, P-19!
+W=WES
+
+T=I'm right and you know it!
+W=WES
+TEN=PC20_DIRECTOR_BROKGOESDEE
+
+
+#----------------------
+ID=PC20_DIRECTOR1B
+T=You okay?
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=DEE
+C2A=ANGRY
+
+T=I should be the one asking you this!
+W=DEE
+
+T=Well...
+W=BROK
+
+T=Not dead but I almost wish I was...
+W=BROK
+
+T=Man, my body hurts everywhere!
+W=BROK
+
+T=We'll get better. If we manage to get out of here alive.
+W=DEE
+C2A=NORMAL
+
+T=Who... Or rather... What's this?
+W=DEE
+TEN=PC20_DIRECTOR_BROKTURNSDIRECTOR
+
+
+#----------------------
+ID=PC20_DIRECTOR1C
+T=My son's school Director...or so I thought.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+
+T=...
+W=DEE
+TEN=PC20_DIRECTOR1D
+
+#----------------------
+ID=PC20_DIRECTOR1D
+T=Hey, piles of scrap pretending to be humans !
+W=DEE
+C1=BROK
+C1A=THINK
+C3=DEE
+C3A=ANGRY
+
+T=How many of you are there?
+W=DEE
+
+T=Only the two of us.
+W=DIRECTOR
+C2=DIRECTOR
+C2A=NORMAL
+C4=WES
+C4A=BOTNORMAL
+TEN=PC20_DIRECTOR1E
+
+
+#----------------------
+ID=PC20_DIRECTOR1E
+T=I'm afraid there's no time to explain.
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+C4=WES
+C4A=BOTNORMAL
+
+T=Mister Brok. Let me handle this.
+W=DIRECTOR
+
+T=Erm... Okay?...
+W=BROK
+
+T=I've been watching you, P-26.
+W=DIRECTOR
+
+T=Of course you have. 
+W=WES
+
+T=I've attempted so many times to get rid of our positioning connection.
+W=WES
+
+T=And always failed.
+W=DIRECTOR
+
+T=What you want to do...
+W=DIRECTOR
+
+T=This isn't the will of our creator!
+W=DIRECTOR
+
+T=Who cares. He's no longer there.
+W=WES
+
+T=This isn't true.
+W=DIRECTOR
+
+T=He's...
+W=DIRECTOR
+
+T=Still living... inside...
+W=DIRECTOR
+SKIPEND=1
+
+T=Oh, cut the crap. You know what I mean.
+W=WES
+C4A=BOTMAD
+
+T=Now, get out of my way before...
+W=WES
+SKIPEND=1
+TEN=PC20_DIRECTOR_CLOSER
+
+#----------------------
+ID=PC20_DIRECTOR1E2
+T=What...?
+W=WES
+C1=DIRECTOR
+C1A=ANGRY
+C2=WES
+C2A=BOTMAD
+CONTEXT=The Director holds Wes so he cannot escape
+
+T=I... can't break free!
+W=WES
+
+T=How... How can you do this?!
+W=WES
+
+T=Release me or you'll regret it!
+W=WES
+
+T=Not until you promise.
+W=DIRECTOR
+
+T=Let go.
+W=DIRECTOR
+
+T=Let go of your plans.
+W=DIRECTOR
+
+T=Ha ha ha...
+W=WES
+
+T=You seriously think I've went this far...
+W=WES
+
+T=To give up at the last second?
+W=WES
+
+T=It's never too late...
+W=DIRECTOR
+
+T=To do the right thing.
+W=DIRECTOR
+
+T=Nonsense.
+W=WES
+
+T=I could say anything.
+W=WES
+
+T=Whatever you want to hear.
+W=WES
+
+T=How would you know it's true?
+W=WES
+
+T=...
+W=DIRECTOR
+C1A=SAD
+
+T=You're probably right.
+W=DIRECTOR
+
+T=I would trust the human inside you.
+W=DIRECTOR
+
+T=But he no longer exists.
+W=DIRECTOR
+
+T=You... We... shouldn't have been allowed to live this long.
+W=DIRECTOR
+
+T=...
+W=WES
+
+T=...
+W=DIRECTOR
+
+T=You can't hold me like this forever.
+W=WES
+
+T=Your battery will drain faster than mine.
+W=WES
+
+T=As soon as I'm free...
+W=WES
+
+T=I'll dispose of you and all those cockroaches around us.
+W=WES
+
+T=Hey! We're not...
+W=BROK
+C3=BROK
+C3A=MEH
+
+T=Actually, he's making me hungry.
+W=BROK
+C3A=THINK
+TEN=PC20_DIRECTOR1E_CHECK
+
+
+#----------------------
+ID=PC20_DIRECTOR1E_DEE
+T=(Sigh) You're hopeless.
+W=DEE
+C1=DIRECTOR
+C1A=NORMAL
+C2=WES
+C2A=BOTMAD
+C3=BROK
+C3A=MEH
+C4=DEE
+C4A=ANGRY
+TEN=PC20_DIRECTOR1F_CHECK
+
+#----------------------
+ID=PC20_DIRECTOR1FALT
+T=I'll rip open that croc to get that memory device back.
+W=WES
+C1=DIRECTOR
+C1A=NORMAL
+C2=WES
+C2A=BOTANGRY
+C3=BROK
+C3A=SURPRISED
+
+T=Then I'll deal with Dr. Gherkin.
+W=WES
+TEN=PC20_DIRECTOR1FALT_NEXT
+
+
+#----------------------
+ID=PC20_DIRECTOR1F
+T=I'll rip open that croc to get that memory device back.
+W=WES
+C1=DIRECTOR
+C1A=NORMAL
+C2=WES
+C2A=BOTANGRY
+C3=BROK
+C3A=SURPRISED
+
+T=Then I'll catch that Dr. Gherkin they mentioned.
+W=WES
+
+T=Thanks for the hint, by the way! I've been looking for the third member for years.
+W=WES
+
+T=I never suspected he was a human in the flesh.
+W=WES
+
+T=What was our creator thinking?!
+W=WES
+
+T=How could you forget?
+W=DIRECTOR
+
+T=We were all humans when the Triangle was planned.
+W=DIRECTOR
+
+T=Wait. Does this imply the Director is...?
+W=BROK
+SKIPEND=1
+
+T=Soon I'll be the only one to decide for this country!
+W=WES
+
+T=That's dictatorship!
+W=DIRECTOR
+C1A=ANGRY
+
+T=What other choice? You're all blind!
+W=WES
+
+T=Who else is fair enough to make the hard decisions to keep Atlasia on track?!
+W=WES
+
+T=Making...
+W=DIRECTOR
+C1A=SAD
+
+T=Hard decisions...
+W=DIRECTOR
+
+T=You can't get rid of me. The same way I can't annihilate you.
+W=WES
+
+T=Otherwise you'd be a pile of screws right now!
+W=WES
+
+T=This failsafe is implemented into our hardware.
+W=WES
+
+T=There's no working around it!
+W=WES
+
+T=Yet...
+W=DIRECTOR
+
+T=There's always a way.
+W=DIRECTOR
+TEN=PC20_DIRECTOR1G_EV
+
+#----------------------
+ID=PC20_DIRECTOR1G
+T=N...
+W=WES
+C1=DIRECTOR
+C1A=ANGRY
+C2=WES
+C2A=BOTSURPRISED
+C3=BROK
+C3A=THINK
+
+T=No. You're lying!
+W=WES
+
+T=You...
+W=WES
+
+T=You cannot beat me.
+W=WES
+C2A=BOTMAD
+
+T=You're a weaker, older model!
+W=WES
+
+T=I was.
+W=DIRECTOR
+C1A=NORMAL
+
+T=But Mister Brok kindly remedied this.
+W=DIRECTOR
+
+T=He did what?!...
+W=WES
+C2A=BOTSURPRISED
+
+T=Erm... Actually...
+W=BROK
+
+T=What did I do?...
+W=BROK
+TEN=PC20_DIRECTOR_POWERON
+ 
+T=Stand back!
+W=DIRECTOR
+C1A=ANGRY
+
+T=What are you going to...?
+W=BROK
+SKIPEND=1
+
+T=...!
+W=BROK
+
+T=N...No! It cannot be!
+W=WES
+
+T=You... Overclocked yourself?!...
+W=WES
+
+T=S-Stop! Immediately!
+W=WES
+C2A=BOTANGRY
+
+TEN=PC20_OTT_COMES
+
+
+#----------------------
+ID=PC20_DIRECTOR2
+T=(Pant, pant)
+W=OTT
+C1=OTT
+C1A=SAD
+CONTEXT=Ott arrives on scene (he had been kidnapped by the rats along with Graff and just escaped)
+
+T=Mister Brok! Mister Brok!...
+W=OTT
+TEN=PC20_DIRECTOR_BROKTURNSOTT
+
+T=...
+W=OTT
+C1A=SURPRISED
+
+T=Director?...
+W=OTT
+
+T=What's... going on here?...
+W=OTT
+
+T=Ott! Where's Graff?
+W=BROK
+C2=BROK
+C2A=SURPRISED
+TEN=PC20_GRAFF_CHECK
+
+
+#----------------------
+ID=PC20_DIRECTOR3_NOGRAFF
+T=We've been kidnapped by the Squealers! He's still out there!
+W=OTT
+C1=OTT
+C1A=SAD
+C2=BROK
+C2A=ANGRY
+
+T=What?!
+W=BROK
+
+T=I... I'm coming!
+W=BROK
+TEN=PC20_DIRECTOR3_NOGRAFF_LOOK
+
+T=Wait.
+W=WES
+C3=WES
+C3A=BOTNORMAL
+C4=DIRECTOR
+C4A=NORMAL
+
+T=Now you understand, don't you?
+W=WES
+
+T=Those Squealers. They're one of those threats from the Slums that deserves nothing but elimination.
+W=WES
+
+T=I don't care! My boy is in danger!
+W=BROK
+
+T=P-26. Do it.
+W=DIRECTOR
+
+T=...
+W=WES
+
+T=Very well.
+W=WES
+
+T=I've sent some of our Tribots after them.
+W=WES
+
+T=How could I trust you?!
+W=BROK
+
+T=Not him. Trust me.
+W=DIRECTOR
+
+T=They will bring him back.
+W=DIRECTOR
+
+T=...
+W=BROK
+TEN=PC20_DIRECTOR4
+
+#----------------------
+ID=PC20_DIRECTOR3
+T=I'm here.
+W=GRAFF
+C1=OTT
+C1A=NORMAL
+C2=BROK
+C2A=HAPPY
+C3=GRAFF
+C3A=MEH
+
+T=Thank goodness! I was so worried about you!
+W=BROK
+
+T=...
+W=GRAFF
+
+T=Those Squealers had kidnapped us!
+W=OTT
+
+T=Fortunately that bear was here.
+W=OTT
+
+T=Where is he, now?
+W=BROK
+C2A=MAYBE
+
+T=He gave us time to run away. I hope he's okay.
+W=OTT
+
+T=I should have been there.
+W=BROK
+C2A=TIRED
+
+T=But as you can see, things got even more complex...
+W=BROK
+TEN=PC20_CAMERAWES
+
+#----------------------
+ID=PC20_DIRECTOR4
+T=See what you've done, P-26?
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTSURPRISED
+C4=DIRECTOR
+C4A=NORMAL
+
+T=By involving them...
+W=DIRECTOR
+
+T=Can you think of the consequences if...
+W=DIRECTOR
+SKIPEND=1
+
+T=None of my concerns.
+W=WES
+C2A=BOTANGRY
+
+T=One cannot govern without the grand scheme in mind.
+W=WES
+TEN=PC20_OTT_COMESCLOSER
+
+T=A single individual means nothing over the fate of thousands.
+W=WES
+
+T=That voice...
+W=OTT
+C3=OTT
+C3A=WONDER
+
+T=...
+W=WES
+C2A=BOTWONDER
+
+T=Ott...
+W=WES
+C2A=BOTSAD
+
+T=You... weren't supposed to see me like this.
+W=WES
+
+T=...?
+W=OTT
+
+T=How...
+W=OTT
+
+T=How can this robot speak like my uncle?!
+W=OTT
+C3A=SAD
+
+T=...I am.
+W=WES
+
+T=...?!
+W=OTT
+
+T=Ott. Whatever you hear from the others.
+W=WES
+
+T=Don't believe them. I've tried to make things right.
+W=WES
+
+T=For the future of this country.
+W=WES
+
+T=But people refuse change.
+W=WES
+C2A=BOTWONDER
+
+T=Your change involves a genocide!
+W=DIRECTOR
+
+T=Director! What are you doing?!
+W=OTT
+
+T=He's my uncle! Release him!
+W=OTT
+
+T=Ott...
+W=DIRECTOR
+C4A=SAD
+
+T=Look at him...
+W=DIRECTOR
+
+T=He's not.
+W=DIRECTOR
+
+T=He never was.
+W=DIRECTOR
+
+T=That's a lie!
+W=WES
+C2A=BOTANGRY
+
+T=It will be hard for you to accept.
+W=DIRECTOR
+C4A=SAD
+
+T=Your real uncle died years ago.
+W=DIRECTOR
+
+T=What you see is a failed experiment.
+W=DIRECTOR
+
+T=Don't listen to her, kiddo! She's the failure!
+W=WES
+
+T=Free me!
+W=WES
+
+T=But...
+W=OTT
+
+T=Even if it's true...
+W=OTT
+
+T=I love him anyway.
+W=OTT
+C3A=DISAPPOINTED
+
+T=Good boy!
+W=WES
+C2A=BOTNORMAL
+
+T=And if he's a fake...
+W=OTT
+C3A=SAD
+
+T=What about you?...
+W=OTT
+
+T=Right! Go ahead, break her!
+W=WES
+
+T=...
+W=DIRECTOR
+SILENCE=1
+
+T=I guess...
+W=DIRECTOR
+
+T=We're both shadows of the past.
+W=DIRECTOR
+
+T=And that's why...
+W=DIRECTOR
+
+T=We must disappear.
+W=DIRECTOR
+
+T=I...
+W=OTT
+
+T=I think... I understand.
+W=OTT
+C3A=DISAPPOINTED
+
+T=No! No no no!
+W=WES
+C2A=BOTMAD
+
+T=Ott...
+W=DIRECTOR
+
+T=Please... Forgive me...
+W=DIRECTOR
+TEN=PC20_DIRECTOR4_CHECK
+
+
+
+#----------------------
+ID=PC20_DIRECTOR4_NOKLAY
+T=I'll be joining my dear son...
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTNORMAL
+C3=OTT
+C3A=SAD
+C4=DIRECTOR
+C4A=SAD
+COMM=If Klay was killed
+TEN=PC20_DIRECTOR4_NEXT
+
+
+#----------------------
+ID=PC20_DIRECTOR4_KLAY
+T=And tell my son...
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTANGRY
+C3=OTT
+C3A=SAD
+C4=DIRECTOR
+C4A=SAD
+COMM=If Klay is alive
+
+T=Tell Klay...
+W=DIRECTOR
+
+T=I'll always be with him...
+W=DIRECTOR
+
+T=No matter the form I take.
+W=DIRECTOR
+
+T=Promise me!...
+W=DIRECTOR
+
+T=I...
+W=OTT
+
+T=I will...
+W=OTT
+TEN=PC20_DIRECTOR4_NEXT
+
+
+#----------------------
+ID=PC20_DIRECTOR4_NEXT
+T=Goodbye...
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=BOTANGRY
+C4=DIRECTOR
+C4A=SAD
+
+T=N-NOOOOOOOOOOOOO!!!
+W=WES
+C2A=BOTMAD
+TEN=PC20_EXPLOSION_WES
+
+#----------------------
+ID=PC20_AFTEREXPLOSION1
+T=...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+CONTEXT=The Director has exploded with robot Wes
+TEN=PC20_AFTEREXPLOSION_CHECKDEE
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION1_DEE
+T=Is everyone okay?
+W=DEE
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=SURPRISED
+TEN=PC20_AFTEREXPLOSION1_CHECK
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION1B_RJ
+T=R.J.!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+CONTEXT=RJ arrives on scene if he's alive
+
+T=Hey.
+W=RJ
+C2=RJ
+C2A=NORMAL
+
+T=Squealers are all down.
+W=RJ
+
+T=I can't thank you enough.
+W=BROK
+C1A=TIRED
+
+T=Why the explosion?
+W=RJ
+
+T=...Long story.
+W=BROK
+TEN=PC20_AFTEREXPLOSION2
+
+#----------------------
+ID=PC20_AFTEREXPLOSION1B_NOGRAFF
+T=Graff!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=TURN
+C3=OTT
+C3A=SAD
+CONTEXT=If Graff wasn't there already because he hadn't escaped with Ott, he arrives now
+
+T=I was so worried!...
+W=BROK
+
+T=The bots! They freed you?...
+W=OTT
+
+T=...
+W=GRAFF
+
+T=What just happened here?...
+W=GRAFF
+
+T=Well... Remember when I told you I always get involved in the worst possible situations?...
+W=BROK
+
+T=I didn't lie...
+W=BROK
+TEN=PC20_AFTEREXPLOSION2
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION3
+T=No...
+W=WES
+C2=WES
+C2A=HEADSAD
+TEB=PC20_AFTEREXPLOSION3_BROKWALK
+CONTEXT=Wes' head falls down from the sky and still "alive"
+
+T=Ya gotta be kiddin'!...
+W=BROK
+C1=BROK
+C1A=ANGRY
+
+T=That thing just won't die?!
+W=BROK
+TEN=PC20_AFTEREXPLOSION3_CHECKDEE
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION3_DEE
+T=He won't go very far like this.
+W=DEE
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=HEADSAD
+C3=DEE
+C3A=NORMAL
+TEN=PC20_AFTEREXPLOSION3B
+# (Only head remains)
+
+#----------------------
+ID=PC20_AFTEREXPLOSION3B
+T=Who would have thought...
+W=WES
+C1=BROK
+C1A=WONDER
+C2=WES
+C2A=HEADSAD
+C3=DEE
+C3A=NORMAL
+TEB=PC20_AFTEREXPLOSION3B_MUSIC
+
+T=Defeated by...
+W=WES
+
+T=Another machine...
+W=WES
+
+T=...
+W=WES
+
+T=All these years...
+W=WES
+
+T=All the arrests, the paperwork...
+W=WES
+
+T=My whole life has been a gigantic waste of time.
+W=WES
+TEN=PC20_AFTEREXPLOSION3C_CHECK
+
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION3C_DEE
+T=A bit too late to have regrets. You chose this fate.
+W=DEE
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=HEADSAD
+C3=DEE
+C3A=LISTEN
+
+T=No. That's not it.
+W=WES
+C2A=HEADWONDER
+TEN=PC20_AFTEREXPLOSION3C
+
+#----------------------
+ID=PC20_AFTEREXPLOSION3C
+T=When I'm gone...
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=HEADWONDER
+C3=DEE
+C3A=LISTEN
+
+T=It's all over.
+W=WES
+
+T=The country will fade into obscurity.
+W=WES
+
+T=It will extend to the Drums.
+W=WES
+
+T=Humans never play by the rules.
+W=WES
+
+T=That's why...
+W=WES
+
+T=This society cannot work.
+W=WES
+
+T=We do what we have to to survive!
+W=BROK
+
+T=Funny you'd say that, Pork...
+W=WES
+C2A=HEADWONDER
+
+T=As far as I'm concerned... You're the worst criminal of all!
+W=WES
+
+T=What you did...
+W=WES
+
+T=Is...
+W=WES
+
+T=Un... acceptable...
+W=WES
+
+T=Explain yourself!
+W=BROK
+C1A=FURIOUS
+
+T=You...
+W=WES
+
+T=Don't...
+W=WES
+
+T=Deserve...
+W=WES
+
+T=Graff.
+W=WES
+
+T=What?...
+W=BROK
+
+T=...
+W=WES
+
+T=Hey! What do you mean?!
+W=BROK
+TEN=PC20_AFTEREXPLOSION3B_MUSICFADE
+
+T=...
+W=WES
+SILENCE=1
+
+T=System failure.
+W=WES
+C2_EYESHUT=1
+
+T=Rebooting...
+W=WES
+
+T=Operating system not found.
+W=WES
+
+T=...
+W=WES
+TEN=PC20_AFTEREXPLOSION3WAIT
+
+#----------------------
+ID=PC20_AFTEREXPLOSION4
+T=(Sigh)
+W=BROK
+C1=BROK
+C1A=TIRED
+C3=DEE
+C3A=NORMAL
+
+T=I guess... We won.
+W=BROK
+
+T=(Zip, zip)
+W=WES
+C2=WES
+C2A=HEADMAD
+
+T=Argh!
+W=BROK
+C1A=CONFUSED
+
+T=Reverting to default OS.
+W=WES
+C1A=WORRIED
+C2A=HEADWONDER
+
+T=Triangle NMER 0.9 Beta.
+W=WES
+
+T=Press any key to release any hold.
+W=WES
+COMM=Meaning : the Pipe Pills didn't work because Wes had control over them. Now that he's dead, that control is gone.
+TEN=PC20_AFTEREXPLOSION3_BROKWALKHEAD
+
+T=Any hold?...
+W=BROK
+C1A=WONDER
+
+T=Hmm... There's a button here.
+W=BROK
+
+T=(Click)
+TEN=PC20_AFTEREXPLOSION4_RELEASE
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION5
+T=Hey! Look!
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SURPRISED
+C3=DEE
+C3A=NORMAL
+TEN=PC20_AFTEREXPLOSION5_OTTCHECKS
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION5_DEE
+T=The Pipe-Pill... It works?
+W=DEE
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SURPRISED
+C3=DEE
+C3A=HAPPY
+TEN=PC20_AFTEREXPLOSION5A
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION5A
+T=You did it!
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=HAPPY
+C3=DEE
+C3A=HAPPY
+
+T=...
+W=BROK
+TEN=PC20_AFTEREXPLOSION5A_CHECK
+
+#----------------------
+ID=PC20_AFTEREXPLOSION5A_DEE
+T=Brok...
+W=DEE
+C1=BROK
+C1A=DOWN
+C2=DEE
+C2A=SAD
+CONTEXT=Dee conclusion
+
+T=Don't let what he said go to you.
+W=DEE
+
+T=He was a wrecked human inside a defective machine.
+W=DEE
+
+T=Was he?...
+W=BROK
+
+T=Everything he said made sense... in a twisted way.
+W=BROK
+
+T=He... knew something.
+W=BROK
+
+T=...
+W=DEE
+TEN=PC20_AFTEREXPLOSION5_CHECK
+
+#----------------------
+ID=PC20_AFTEREXPLOSION5_NOSIN
+T=About Sin...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=DEE
+C2A=SAD
+
+T=Forgive me. This is all my fault.
+W=BROK
+
+T=Don't say that!
+W=DEE
+
+T=Stop blaming yourself for everything going wrong in everyone's lives.
+W=DEE
+
+T=You know...
+W=BROK
+
+T=We've only just met...
+W=BROK
+
+T=And you seem to know me so well already.
+W=BROK
+
+T=Hey! A good journalist has to be a good psychologist.
+W=DEE
+
+T=Our daughter... She needs me.
+W=DEE
+
+T=I'll get her back.
+W=DEE
+
+T=I know you will.
+W=BROK
+C1A=READY
+
+TEN=PC20_AFTEREXPLOSION5_OTTGOESHEAD
+
+#----------------------
+ID=PC20_AFTEREXPLOSION5B
+#TODO (Ott goes towards Wes's head)
+T=...
+W=OTT
+C1=BROK
+C1A=DOWN
+C2=OTT
+C2A=SAD
+CONTEXT=Ott conclusion with Wes
+
+T=Ott.
+W=BROK
+
+T=I'm sorry it had to come to this.
+W=BROK
+
+T=Despite his plans to eradicate the Slums... He was still family to you.
+W=BROK
+
+T=...
+W=OTT
+
+T=No.
+W=OTT
+C2A=DISAPPOINTED
+
+T=He lied to us.
+W=OTT
+
+T=To me. To my parents. To everyone.
+W=OTT
+
+T=Can someone really be family...
+W=OTT
+
+T=...when they spend their life lying to everyone close to you?...
+W=OTT
+TEN=PC20_AFTEREXPLOSION4B_WAIT
+
+#----------------------
+ID=PC20_AFTEREXPLOSION4B
+T=...
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=TURN
+
+T=Graff... I...
+W=BROK
+TEN=PC20_THROWN_OBJECT
+
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION5C
+
+T=Argh!!!
+W=GRAFF
+C1=GRAFF
+C1A=CHOKE
+CONTEXT=Graff suddenly gets hit by a crowbar
+
+T=Graff!!!
+W=BROK
+C2=BROK
+C2A=SURPRISED
+TEN=PC20_BROK_GOESGRAFF
+
+#----------------------
+ID=PC20_AFTEREXPLOSION6
+T=You!...
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=MAD
+CONTEXT=The rat chief arrives on scene
+TEN=PC20_AFTEREXPLOSION6_CHECKRJ
+
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION6_RJ
+T=He's... still...?!
+W=OTT
+C1=RJ
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=MAD
+C3=OTT
+C3A=SURPRISED
+
+T=...
+W=CHIEFRAT
+SILENCE=1
+
+T=Devil!
+W=RJ
+
+T=Should have broken your neck!
+W=RJ
+TEN=PC20_AFTEREXPLOSION6B
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION6B
+T=I...
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=MAD
+
+T=I'm gonna!...
+W=BROK
+TEN=PC20_CHIEFRAT_ARRIVES3
+
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION7
+# (Brok jumps on Rat Chief and hits him)
+T=Ha ha ha!...
+W=CHIEFRAT
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=MAD
+CONTEXT=Brok jumps on Rat Chief and hits him repeatedly
+
+T=You... You'll never...
+W=BROK
+
+T=Harm... anyone else!...
+W=BROK
+
+T=That's it!
+W=CHIEFRAT
+
+T=Go ahead!... Show... your true nature!...
+W=CHIEFRAT
+
+T=You see, croc...
+W=CHIEFRAT
+
+T=Shut up!
+W=BROK
+
+T=We're both vicious, but there's only a minor difference between us...
+W=CHIEFRAT
+
+T=I never hide anything.
+W=CHIEFRAT
+
+T=I'm...
+W=BROK
+
+T=Nothing like you!
+W=BROK
+TEN=PC20_AFTEREXPLOSION7_OTTGOESGRAFF
+
+#----------------------
+ID=PC20_AFTEREXPLOSION8
+T=Oh no... Graff.
+W=OTT
+C1=OTT
+C1A=SAD
+
+T=Say something!...
+W=OTT
+
+T=...
+W=GRAFF
+C2=GRAFF
+C2A=TORN
+
+T=Ott?...
+W=GRAFF
+TEN=PC20_GRAFF_WAKES1
+
+T=I... I'm okay...
+W=GRAFF
+C2A=TURN
+
+TEN=PC20_GRAFF_WAKES
+
+#----------------------
+ID=PC20_AFTEREXPLOSION9
+T=Brok!
+W=GRAFF
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=SURPRISED
+
+T=Stop it!
+W=GRAFF
+
+T=N... No!
+W=BROK
+
+T=He deserves it!... He tried to kill you!
+W=BROK
+
+T=This time... he won't get away with this!
+W=BROK
+TEN=PC20_AFTEREXPLOSION9_CHECKGRAFF
+
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION9_GRAFFGOOD
+T=Listen to me!
+W=GRAFF
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=ANGRY
+
+T=Don't play his game!
+W=GRAFF
+
+T=He wants to destroy you. No matter how...
+W=GRAFF
+
+T=Even by sacrificing himself!
+W=GRAFF
+
+T=I'm begging you...
+W=GRAFF
+TEN=PC20_AFTEREXPLOSION9B_CHECKOTT
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION9_GRAFFBAD
+T=...
+W=GRAFF
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=TORN
+TEN=PC20_AFTEREXPLOSION9B_CHECKOTT
+
+#----------------------
+ID=PC20_AFTEREXPLOSION9B_OTTGOOD
+T=Mister Brok!...
+W=OTT
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=TORN
+C4=OTT
+C4A=SAD
+
+T=You can't do this!
+W=OTT
+
+T=You're not a murderer!
+W=OTT
+TEN=PC20_AFTEREXPLOSION9_CHECKDEE
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION9B_OTTBAD
+T=No...
+W=OTT
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=SOB
+C4=OTT
+C4A=SAD
+TEN=PC20_AFTEREXPLOSION9_CHECKDEE
+
+
+
+#----------------------
+ID=PC20_AFTEREXPLOSION9_DEE
+T=Brok... You said it yourself!
+W=DEE
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=SOB
+C3=DEE
+C3A=NORMAL
+C4=OTT
+C4A=SAD
+
+T=Everyone deserves a second chance.
+W=DEE
+TEN=PC20_AFTEREXPLOSION9B
+
+#----------------------
+ID=PC20_AFTEREXPLOSION9B
+T=...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=SOB
+C3=DEE
+C3A=NORMAL
+C4=OTT
+C4A=SAD
+TEN=PC20_CHECKBRAWL
+
+#----------------------
+ID=PC20_CHECKBRAWL_VIOLENCE
+T=NO!!!
+W=BROK
+A=FURIOUS
+COMM=In case Brok has been using violence a lot during the game, he kills the rat chief
+
+T=(Crack)
+TEN=PC20_CHIEFRAT_DEAD
+
+#----------------------
+ID=PC20_CHECKBRAWL_VIOLENCE2
+T=...
+W=OTT
+C1=BROK
+C1A=FURIOUS
+C2=OTT
+C2A=SAD
+TEN=PC20_GRAFFLEAVES
+TEB=PC20_CHECKBRAWL_MUSICVIOLENCE
+
+T=Oh no...
+W=OTT
+
+T=Mister Brok... What have you done?...
+W=OTT
+
+T=...
+W=BROK
+
+T=This...
+W=BROK
+
+T=This was the only way...
+W=BROK
+
+T=To protect everyone.
+W=BROK
+TEN=PC20_BROK_CHECKSGRAFF_VIOLENT
+
+
+#----------------------
+ID=PC20_CHECKBRAWL_NORMAL
+T=Ha ha...
+W=CHIEFRAT
+C1=BROK
+C1A=DOWN
+C2=CHIEFRAT
+C2A=MAD
+COMM=When not killing the rat chief (normal case)
+
+T=Wimp...
+W=CHIEFRAT
+
+T=Someday...
+W=CHIEFRAT
+C2_EYESHUT=1
+
+T=I'll get ya... and yer boy...
+W=CHIEFRAT
+
+T=...
+W=CHIEFRAT
+TEN=PC20_CHECKBRAWL_DEE
+
+#----------------------
+ID=PC20_CHECKBRAWL_NORMAL2
+T=...
+W=OTT
+C1=BROK
+C1A=DOWN
+C2=OTT
+C2A=SAD
+TEN=PC20_GRAFFLEAVES
+
+T=He passed out.
+W=OTT
+
+T=What he did...
+W=BROK
+
+T=I... I couldn't bare the thought...
+W=BROK
+TEN=PC20_CHECKBRAWL_CHECKDEE
+
+#----------------------
+ID=PC20_CHECKBRAWL_NORMALDEE
+T=...
+W=DEE
+C1=BROK
+C1A=DOWN
+C2=DEE
+C2A=SAD
+
+T=I know...
+W=DEE
+
+T=But I'm not the one you should apologize to.
+W=DEE
+
+T=You're right...
+W=BROK
+TEN=PC20_BROK_CHECKSGRAFF
+
+#----------------------
+ID=PC20_AFTERGRAFF1
+T=...?
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Scene conclusion
+
+T=Graff...? Where did he go?
+W=BROK
+
+T=He left.
+W=OTT
+C2=OTT
+C2A=SAD
+
+T=Uh...?
+W=BROK
+
+T=Mister Brok...
+W=OTT
+
+T=I don't know what the rat told him but...
+W=OTT
+C2A=WONDER
+
+T=Ever since we've escaped, he's been acting strange.
+W=OTT
+
+T=Talk to him.
+W=OTT
+C2A=NORMAL
+
+TEN=PC20_AFTERGRAFF1_CHECKDEE
+
+#----------------------
+ID=PC20_AFTERGRAFF1_DEE
+T=...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=OTT
+C2A=NORMAL
+
+T=I will.
+W=BROK
+
+T=But first...
+W=BROK
+TEN=PC20_BROK_HELPSDEE
+
+T=Dee. Let me help you.
+W=BROK
+C4=DEE
+C4A=NORMAL
+
+T=No. Don't worry about me. I can walk now.
+W=DEE
+
+T=You deserve some time with your son.
+W=DEE
+
+T=You just saved our world, cowboy.
+W=DEE
+C4A=HAPPY
+
+T=Did I?... 
+W=BROK
+
+T=What's gonna happen...
+W=BROK
+
+T=Now that no one's in charge of our country?
+W=BROK
+
+T=The world can run itself for now.
+W=DEE
+
+T=Let us worry about this later, Mister Brok.
+W=OTT
+
+T=Come on! Go!
+W=DEE
+TEN=PC20_AFTERGRAFF1B
+
+#----------------------
+ID=PC20_AFTERGRAFF1B_DEEDEAD
+T=Not yet...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=OTT
+C2A=SAD
+TEN=PC20_AFTERGRAFF1B_GO_DEEDEAD
+
+#----------------------
+ID=PC20_AFTERGRAFF1B_DEEDEAD2
+T=Dee...
+W=BROK
+C1=BROK
+C1A=HEARTBROKEN
+C2=OTT
+C2A=SAD
+COMM=Case when Dee died
+
+T=I saved the Slums... thanks to you.
+W=BROK
+
+T=Your daughter will be forever proud of you.
+W=BROK
+
+T=Everyone shall know your courage.
+W=BROK
+
+T=I'll make sure of it.
+W=BROK
+
+T=...
+W=BROK
+
+T=Mister Brok...
+W=OTT
+
+T=Let me handle this.
+W=OTT
+
+T=You're sure?
+W=BROK
+
+T=Yes.
+W=OTT
+
+T=Go.
+W=OTT
+TEN=PC20_AFTERGRAFF1B
+
+#----------------------
+ID=PC20_AFTERGRAFF1B
+T=Okay...
+W=BROK
+A=DOWN
+TEN=PC20_BROK_GOES1
+
+#----------------------
+ID=PC20_AFTERGRAFF2
+T=Thanks, everyone...
+W=BROK
+A=READY
+
+T=Goodbye.
+W=BROK
+TEN=PC20_NEXTSCENE
+
+
+#----------------------------
+#= Ending "fight together"
+#----------------------------
+ID=PC20_ENDINGB
+T=...!
+W=BROK
+C1=BROK
+C1A=HEARTBROKEN
+C2=GRAFF
+C2A=SURPRISED
+C4=OTT
+C4A=SURPRISED
+CONTEXT=Alternative ending "Fight together" - Brok, Graff & Ott arrive too late. Dee is dead and Wes is gone. Bots arrive to kill the group.
+
+T=No!!!...
+W=BROK
+TEN=PC20_ENDING_GOTOWARDSDEE
+
+#----------------------------
+ID=PC20_ENDINGB2
+T=She's...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=SAD
+C4=OTT
+C4A=SAD
+TEN=PC20_ENDING_COME
+
+T=I'm so sorry. I've come too late...
+W=BROK
+
+T=Oh my gosh...
+W=OTT
+
+T=What happened?
+W=GRAFF
+
+T=I wish I knew.
+W=BROK
+TEN=PC20_ENDING_GOTOWARDSDEE3
+
+T=Whoever did this... is gonna pay!
+W=BROK
+C1A=FURIOUS
+TEN=PC20_INITB_FLOORFALL
+
+
+#----------------------------
+ID=PC20_INITB_FLOORFALL2
+T=What the?...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=SURPRISED
+C4=OTT
+C4A=SURPRISED
+COMM=Like in the regular boss fight, the floor collapses until they're trapped in a hole
+
+T=The floor!
+W=GRAFF
+TEN=PC20_INITB_FLOORFALL3
+
+#----------------------------
+ID=PC20_INITB_BEFOREFIGHT1
+T=Watch out!
+W=OTT
+A=SURPRISED
+TEN=PC20_INITB_BEFOREFIGHT_BOTS
+
+
+#----------------------------
+ID=PC20_INITB_BEFOREFIGHT1B
+T=Bots!...
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=SURPRISED
+C4=OTT
+C4A=SURPRISED
+CONTEXT=Preparing for the fight of their lives
+
+T=They're coming for us!
+W=GRAFF
+
+T=This is a trap...
+W=BROK
+
+T=Ott!
+W=GRAFF
+
+T=I... I'll go fetch help!
+W=OTT
+TEN=PC20_INITB_BEFOREFIGHT1B
+
+#----------------------------
+ID=PC20_INITB_BEFOREFIGHT2
+T=Stay behind me! I'll deal with them!
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=MEH
+COMM=Brok is addressing Graff. They're both trapped into a hole with bots who wants to kill them.
+
+T=...
+W=GRAFF
+
+T=No!
+W=GRAFF
+C2A=ANGRY
+
+T=I... I will fight.
+W=GRAFF
+C2A=TURN
+
+T=Graff?...
+W=BROK
+C1A=MAYBE
+
+T=There's so many. You need me!
+W=GRAFF
+C2A=ANGRY
+
+T=This isn't the time for...
+W=BROK
+SKIPEND=1
+
+T=No! Listen to me!
+W=GRAFF
+
+T=I'm starting to understand.
+W=GRAFF
+C2A=TURN
+
+T=Everytime you weren't there for me...
+W=GRAFF
+
+T=You were fighting for us.
+W=GRAFF
+
+T=For everyone.
+W=GRAFF
+
+T=Because of my selfishness...someone died today.
+W=GRAFF
+C2A=TORN
+TEN=PC20_INITB_GRAFFREADY
+
+T=I... gotta make up for it!
+W=GRAFF
+C2A=READY
+
+T=Besides. If we're doomed to die here...
+W=GRAFF
+C2A=TORN
+
+T=Then I might as well fight...
+W=GRAFF
+
+T=At your side.
+W=GRAFF
+
+T=...
+W=BROK
+
+T=Stay close.
+W=BROK
+C1A=MEH
+
+T=We'll get through this! I promise!
+W=BROK
+TEN=PC20_INITB_BEFOREFIGHT3
+
+T=Here they come!
+W=GRAFF
+C2A=ANGRY
+TEN=PC20_INITB_STARTFIGHT
+
+
+
+#----------------------------
+ID=PC20_INITB_ENDFIGHT1
+T=What... just happened?...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=SURPRISED
+CONTEXT=Ott comes back to save them
+
+T=Ott!
+W=GRAFF
+TEN=PC20_INITB_OTTBACK
+
+
+#----------------------------
+ID=PC20_INITB_ENDFIGHT2
+T=I found this device in the police department.
+W=OTT
+C1=BROK
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+C3=GRAFF
+C3A=FRIENDLY
+
+T=I wasn't sure it would work!
+W=OTT
+
+T=You saved us!
+W=GRAFF
+
+T=Thanks. We owe you one!
+W=BROK
+
+T=I've seen you fight. You guys are amazing!
+W=OTT
+
+T=...
+W=GRAFF
+
+T=Thanks... I didn't do much though.
+W=GRAFF
+
+T=Oh, come on!
+W=BROK
+
+T=I couldn't have made it without you, son.
+W=BROK
+TEN=PC20_INITB_FLOORBACK
+
+
+#----------------------------
+ID=PC20_INITB_BEFOREFIGHT4
+T=Back on earth now, eh?...
+W=BROK
+A=WONDER
+TEN=PC20_INITB_FLOORBACK2
+
+#----------------------------
+ID=PC20_INITB_BEFOREFIGHT5
+T=Guys...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SAD
+C3=GRAFF
+C3A=READY
+
+T=I gotta check on my parents...
+W=OTT
+
+T=I'm getting worried.
+W=OTT
+
+T=Of course.
+W=BROK
+C1A=READY
+
+T=We'll go with you!
+W=GRAFF
+
+T=It's fine.
+W=OTT
+
+T=I've got this device. Just in case.
+W=OTT
+
+T=If anything happens...call me!
+W=BROK
+
+T=Sure.
+W=OTT
+TEN=PC20_INITB_OTTLEAVES
+
+#----------------------------
+ID=PC20_INITB_BEFOREFIGHT6
+T=Well, time to go.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=OPPOSITE
+
+T=Yeah...
+W=GRAFF
+TEN=PC20_INITB_BEFOREFIGHT7
+
+
+#----------------------------
+# "Rupture" Graff and Ott
+#----------------------------
+ID=PC20_RUPTURE1
+T=Brok!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=BROK
+C2A=MAYBE
+C3=OTT
+C3A=SURPRISED
+TEN=PC20_RUPTURE_BROKTURN
+CONTEXT="Rupture" ending - In this alternate ending, Graff & Ott arrive early, before Brok fights Wes (who already revealed his robot appearance). They don't understand what's going on.
+
+T=...?
+W=OTT
+
+T=Who... who's this?
+W=OTT
+
+T=...Ott...
+W=WES
+C4=WES
+C4A=BOTWONDER
+
+T=You weren't supposed to be here...
+W=WES
+
+T=Kids?...
+W=BROK
+
+T=What's going on?...
+W=OTT
+
+T=Why does this bot... look like my uncle?...
+W=OTT
+TEN=PC20_RUPTURE_BROKTURN2
+
+T=Tell him, old weasel.
+W=BROK
+C2A=FURIOUS
+
+T=And don't forget to mention your plan to destroy the Slums.
+W=BROK
+
+T=Destroy...?
+W=OTT
+C3A=SAD
+
+T=The shortage... It was you?...
+W=OTT
+
+T=How... How is this possible?...
+W=OTT
+
+T=...
+W=WES
+TEN=PC20_RUPTURE_WESGOESAWAY
+
+
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE2
+T=I never wanted you to see me like this...
+W=WES
+C1=GRAFF
+C1A=ANGRY
+C2=BROK
+C2A=FURIOUS
+C3=OTT
+C3A=SAD
+C4=WES
+C4A=BOTSAD
+
+T=But hear me.
+W=WES
+
+T=I'm doing this for you. And everyone else who deserves it.
+W=WES
+C4A=BOTWONDER
+
+T=For a better life.
+W=WES
+
+T=You're insane!
+W=GRAFF
+
+T=The Slums have no future. This plague which will spread sooner or later and take everyone down with it.
+W=WES
+
+T=No matter what they tell you. Criminals never change. 
+W=WES
+TEN=PC20_RUPTURE_WESGOESBACK
+
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE3
+T=Children. I need you to leave.
+W=WES
+C1=GRAFF
+C1A=ANGRY
+C2=BROK
+C2A=FURIOUS
+C3=OTT
+C3A=SAD
+C4=WES
+C4A=BOTANGRY
+
+T=Allow me to get rid of that croc.
+W=WES
+
+T=He's the biggest threat.
+W=WES
+
+T=What...?
+W=GRAFF
+
+T=Within you lies a potential cure to the pollution.
+W=WES
+
+T=If such a thing was made possible. All I've worked for would be for naught.
+W=WES
+
+T=I don't have a choice. You must be eliminated!
+W=WES
+TEN=PC20_RUPTURE_OTTBLOCKS
+
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE4
+T=I won't let you!
+W=OTT
+C1=GRAFF
+C1A=ANGRY
+C2=BROK
+C2A=FURIOUS
+C3=OTT
+C3A=OPPOSITE
+C4=WES
+C4A=BOTANGRY
+
+T=If you kill him...
+W=OTT
+
+T=You'll have to kill me first!
+W=OTT
+COMM=Ott puts himself in front of Brok
+
+T=Ott. Get out of the way.
+W=WES
+
+T=I order you!
+W=WES
+C4A=BOTMAD
+
+TEN=PC20_RUPTURE_GRAFFBLOCKS
+
+T=Me too.
+W=GRAFF
+COMM=Graff does the same
+
+T=Kids... I appreciate what you're doing but...
+W=BROK
+C2A=DOWN
+
+T=We're no longer kids. We can protect you too.
+W=GRAFF
+
+T=Uncle...
+W=OTT
+
+T=I don't know what turned you into such a monster.
+W=OTT
+
+T=You're wrong! There's always another choice!
+W=OTT
+
+T=...
+W=WES
+C4A=BOTWONDER
+TEN=PC20_RUPTURE_WESAGAIN
+
+
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE5
+T=...
+W=WES
+C2=WES
+C2A=BOTSAD
+SILENCE=1
+
+T=You're right.
+W=WES
+
+T=There's another way.
+W=WES
+
+T=I'll just have to eliminate the root of the problem.
+W=WES
+
+TEN=PC20_RUPTURE_WESAGAIN3
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE5B
+T=You.
+W=WES
+C1=GRAFF
+C1A=GASP
+C2=WES
+C2A=BOTWONDER
+COMM=Wes addresses Graff.
+
+T=...?
+W=GRAFF
+
+T=Me?...
+W=GRAFF
+TEN=PC20_RUPTURE_WESAGAINMUSIC
+
+T=Your mother. Your family.
+W=WES
+
+T=This world and I wouldn't have turned into this...
+W=WES
+
+T=If it weren't for you!
+W=WES
+C2A=BOTANGRY
+
+T=W-What did I do?!
+W=GRAFF
+C1A=ANGRY
+
+T=You exist... 
+W=WES
+
+T=And I shall remedy that!
+W=WES
+C2A=BOTMAD
+TEN=PC20_RUPTURE_BROKPROTECTS
+
+T=Nooooo!
+W=BROK
+C3=BROK
+C3A=YELL
+COMM=Brok puts himself in front of Graff to protect him and gets zapped in his place
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE6
+T=Brok!!!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C3=OTT
+C3A=SAD
+TEN=PC20_RUPTURE6_WALKBROK
+
+T=No...
+W=DEE
+C2=DEE
+C2A=SAD
+
+T=Is... Is he...?
+W=GRAFF
+C1A=SOB
+
+T=He's still breathing...
+W=DEE
+C2A=NORMAL
+
+T=But badly injured.
+W=DEE
+TEN=PC20_RUPTURE_WESINSANE
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE6B
+T=Why...
+W=WES
+C2=WES
+C2A=BOTSAD
+CONTEXT=Wes can't understand why Brok did that attempt to save Graff and goes screw loose, then runs away from the scene
+
+T=Why did-did you do this P-Pork...
+W=WES
+
+T=I th-thought...
+W=WES
+
+T=Cri... minal...
+W=WES
+
+T=Giving his life...for so-so-someone else...?
+W=WES
+TEN=PC20_RUPTURE_WESLEAVES
+
+T=Cannot...
+W=WES
+TEN=PC20_RUPTURE_OTTFRONT
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE6C
+T=Uncle!...
+W=OTT
+C1=OTT
+C1A=SURPRISED
+C2=DEE
+C2A=NORMAL
+
+T=Let him go.
+W=DEE
+
+T=I believe he finally realized his mistake.
+W=DEE
+
+T=...
+W=OTT
+C1A=SAD
+
+T=He saved me...
+W=GRAFF
+C3=GRAFF
+C3A=TORN
+
+T=Now it's up to us to save him!
+W=GRAFF
+C3A=ANGRY
+TEN=PC20_RUPTURE_OTTBACK
+
+T=I've injected him with a remedy but...
+W=DEE
+
+T=We need to bring him to a hospital!
+W=DEE
+
+T=Help me!
+W=DEE
+
+T=...Urgh...!
+W=DEE
+C2A=SAD
+C2_EYESHUT=1
+
+T=He's... so heavy!
+W=GRAFF
+C3A=STUPID
+
+T=Allow me.
+W=DIRECTOR
+C4=DIRECTOR
+C4A=NORMAL
+
+T=Director?...
+W=OTT
+TEN=PC20_RUPTURE_NEXT
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE7
+T=Uh...
+BVOICESP=BROK
+CONTEXT=After getting injured, Brok wakes up a week later in a Drumer hospital.
+
+T=What...
+BVOICESP=BROK
+
+T=Where...
+BVOICESP=BROK
+
+T=Brok!
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=SURPRISED
+
+T=Take it easy!
+W=GRAFF
+TEN=PC20_RUPTURE7_MUSIC
+
+T=Graff?...
+W=BROK
+
+T=Where am I?...
+W=BROK
+C1A=THINK
+TEN=PC20_RUPTURE7_PICTURE
+
+T=The Drums. Central Hospital.
+W=GRAFF
+C2A=SAD
+
+T=You've been out for a week... I was worried you'd never wake up.
+W=GRAFF
+C2A=TORN
+
+T=A week...
+W=BROK
+
+T=Wait... Please tell me...
+W=BROK
+
+T=Yeah.
+W=GRAFF
+
+T=Everyone's safe for now. Thanks to you.
+W=GRAFF
+
+T=Phew.
+W=BROK
+
+T=...
+W=GRAFF
+
+T=The Director... She's a member of the Government.
+W=GRAFF
+
+
+T=Ott, me and you.
+W=GRAFF
+
+T=We've all been made honorary members of this country.
+W=GRAFF
+
+T=Us?...
+W=BROK
+
+T=Wow. I guess we're popular then!
+W=BROK
+C1A=HAPPY
+
+T=Looks like I missed a lot!
+W=BROK
+
+T=Sorry I ever doubted you...
+W=GRAFF
+
+T=Don't be. I've made more mistakes in my life than you've got fur on your body!
+W=BROK
+C1A=MAYBE
+
+T=Well then! I feel ready to...
+W=BROK
+
+T=...Urgh...
+W=BROK
+C1A=TIRED
+
+T=I... just need to...
+W=BROK
+
+T=...
+W=BROK
+
+T=Ouch!
+W=BROK
+C1A=CONFUSED
+
+T=Please... Don't strain yourself...
+W=GRAFF
+
+T=What's going on?...
+W=BROK
+C1A=TIRED
+
+T=I... can't stand up...
+W=BROK
+
+T=...
+W=GRAFF
+
+T=You cannot.
+W=GRAFF
+
+T=You'll never be able to...
+W=GRAFF
+
+T=Anymore.
+W=GRAFF
+
+T=...
+W=BROK
+C1A=HEARTBROKEN
+
+T=When he shot you... Your spine...
+W=GRAFF
+
+T=...has been permanently damaged.
+W=GRAFF
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=Well...
+W=BROK
+
+T=That sucks.
+W=BROK
+C1A=DISAPPOINTED
+
+T=It's all my fault...
+W=GRAFF
+
+T=Graff! Don't tell me you believe what this broken bot from hell said?
+W=BROK
+C1A=ANGRY
+
+T=But... If I hadn't come...
+W=GRAFF
+
+T=Then he would probably have destroyed us. And the Slums in the process.
+W=BROK
+
+T=You saved me, son.
+W=BROK
+C1A=READY
+
+T=Now... You need to move forward with your life.
+W=BROK
+
+T=What about you?
+W=GRAFF
+TEN=PC20_RUPTURE7B
+
+
+#----------------------------
+ID=PC20_RUPTURE7B
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=SAD
+
+T=I know! Ask Shay!
+W=BROK
+C1A=ALRIGHT
+
+T=I bet she can find a way.
+W=BROK
+
+T=...
+W=GRAFF
+
+T=Who's Shay?
+W=GRAFF
+
+T=Uh?...
+W=BROK
+C1A=THINK
+
+T=You know! She's...
+W=BROK
+
+T=Well... 
+W=BROK
+C1A=WONDER
+
+T=...
+W=BROK
+
+T=This is... weird.
+W=BROK
+
+T=I can't remember.
+W=BROK
+
+T=...
+W=GRAFF
+
+T=I'm still worried for the people of the Slums.
+W=GRAFF
+C1A=THINK
+
+T=Wes could still be wandering around.
+W=GRAFF
+
+T=I shouldn't care anymore but...
+W=GRAFF
+
+T=It's normal.
+W=BROK
+
+T=No matter how corrupt this place is, you've grown attached.
+W=BROK
+
+T=This is our home. It always will be.
+W=BROK
+C1A=MAYBE
+
+T=I wish I could help but in this state...
+W=BROK
+
+T=...
+W=GRAFF
+
+T=Wait!
+W=BROK
+C1A=HAPPY
+
+T=Maybe I can.
+W=BROK
+
+T=There's one thing Wes was right about...
+W=BROK
+C1A=MOCK
+
+T=The cure to the pollution. It's within me.
+W=BROK
+
+T=It's true...
+W=GRAFF
+
+T=For some reason... you're unique.
+W=GRAFF
+
+T=One minute...
+W=GRAFF
+
+T=Do you mean...?
+W=GRAFF
+
+T=Yeah.
+W=BROK
+C1A=MAYBE
+
+T=Analyzes.
+W=BROK
+
+T=Let scientists study my case.
+W=BROK
+
+T=But... You would become a laboratory rat.
+W=GRAFF
+
+T=If this can help everyone...
+W=BROK
+C1A=THINK
+
+T=I'm ready for it.
+W=BROK
+C1A=READY
+
+T=...
+W=GRAFF
+
+T=Thank you...
+W=GRAFF
+
+T=For everything.
+W=GRAFF
+TEN=PC20_RUPTURE_NEXT2
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE8
+T=I tried my best to hide my true feelings...
+BVOICE=BROK
+
+T=As much as I was happy for Graff to finally have a life of his own in the Drums...
+
+T=Being forced into a bed and a wheelchair for years...
+
+T=Most of it alone or surrounded by medical bots...
+
+T=For my entire future...
+
+T=This was the worst part of my life.
+
+T=Unfortunately... My idea was short lived.
+
+T=The scientists could never produce a permanent vaccine to the pollution.
+
+T=Our world didn't change.
+
+T=The Dome was still standing... And I felt ashamed to be safe inside when others were suffering out there.
+
+T=But one failure can sometimes lead to a success.
+
+T=Graff and Ott were able to get a team working on a separate project.
+
+T=And if there certainly are bad sides to science...
+
+T=It can also make miracles.
+
+T=And one day...
+TEN=PC20_RUPTURE_NEXT3
+
+#----------------------------
+# "Rupture" next
+ID=PC20_RUPTURE9
+T=Ladies and gentlemen! 
+BVOICESP=VARIOUS
+BNAMESP=UNKNOWN
+CONTEXT=Brok is back as boxer in fight pits again
+
+T=For the grand reopening of the fighting pits in the Slums...
+BVOICESP=VARIOUS
+BNAMESP=UNKNOWN
+
+T=Please welcome...
+BVOICESP=VARIOUS
+BNAMESP=UNKNOWN
+TEN=PC20_RUPTURE9_CHEER
+
+T=Our national hero...
+BVOICESP=VARIOUS
+BNAMESP=UNKNOWN
+TEN=PC20_RUPTURE9_MUSIC
+
+T=Brok!
+BVOICESP=VARIOUS
+BNAMESP=UNKNOWN
+
+T=I'm ready!
+BVOICESP=BROK
+BNAMESP=BROK
+TEN=PC20_RUPTURE_NEXT5
+
+
+#----------------------
+ID=PC20_FIGHTTOGETHER_GAMEOVER
+T=They were the heroes?
+W=TRIBOT
+A=NORMAL
+
+T=If only we could laugh! Alas, we cannot.
+W=TRIBOT
+TEN=GAMEOVER
+
+#----------------------
+ID=PC20_GRAFF_KO
+T=Graff!...
+BVOICE=BROK
+BNAME=BROK
+NB=1
+D=60
+
+#----------------------
+ID=PC20_FIGHT1_GAMEOVER
+T=Already?
+W=WES
+A=BOTWONDER
+
+T=Up until the end, you've been a disappointment, Pork.
+W=WES
+A=BOTMAD
+TEN=GAMEOVER
+
+#----------------------
+ID=PC20_WES_HIT1
+T=What are you doing?
+W=WES
+A=ANGRY
+TEN=
+
+#----------------------
+ID=PC20_WES_HIT2
+T=Stop!
+W=WES
+A=ANGRY
+
+#----------------------
+ID=PC20_WES_HIT3
+T=Enough playing.
+W=WES
+A=HAPPY
+TEN=PC20_WES_SHOOTSGAMEOVER
+
+
+
+
+#-------------------------------
+#= Fall ending warning message
+#-------------------------------
+ID=PC20_FALL_WARNING
+T=(The following scene for this ending contains potentially sensitive elements which despite being depicted in the same cartoony style, can be shocking and difficult to watch. Viewer discretion is advised.)
+TEN=PC20_FALL_WARNING2
+
+#-------------------------------
+ID=COOP_PC20_WES1
+T=Just you wait, ancient thing...
+T=Or should I say...you *spoilers*
+T=Oh no, I'm censored!
+
+###############################################
+# PROOFREAD - jblaker - 03/09/2019
+###############################################

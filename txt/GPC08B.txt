@@ -1,0 +1,1311 @@
+﻿#-------------------------------
+#=GRAFF - INSIDE SHAY GARAGE
+#-------------------------------
+
+#----------------------
+#= To virtual arena
+#----------------------
+
+ID=GPC08B_TO_PC08C1
+T=Graff?
+W=SHAY
+C1=GRAFF
+C1A=MEH
+C2=SHAY
+C2A=SURPRISED
+CONTEXT=Graff checks Shay's garage
+
+T=Did I allow you to wander around all my garage?
+W=SHAY
+C2A=ANGRY
+
+T=Well... No but you're gonna do it?
+W=GRAFF
+A=DISDAIN
+
+T=I'm sorry. This part is private.
+W=SHAY
+
+T=Okay...
+W=GRAFF
+C1A=TURN
+
+#----------------------
+
+ID=GPC08B_TO_PC08C2
+T=I'm not allowed to go there. Shame.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+#= Box
+#----------------------
+ID=GPC08B_BOX1
+T=I guess... Something dangerous is in there?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+
+T=What are you talking about? There's no danger inside my garage!
+W=SHAY
+C2=SHAY
+C2A=WONDER
+
+T=Not so sure about that. And why the symbol, then?
+W=GRAFF
+C1A=FRIENDLY
+
+T=Oh! That's the anti-intruder detection system.
+W=SHAY
+C2A=SURPRISED
+
+T=It's outside! Not inside.
+W=SHAY
+C2A=HAPPY
+
+T=Obviously. That makes a huge difference.
+W=GRAFF
+C1A=DISDAIN
+TEN=GPC08B_BOX_CHECK
+
+#----------------------
+ID=GPC08B_BOX2
+T=The anti-intruder detection system.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+TEN=GPC08B_BOX_CHECK
+
+#----------------------
+ID=GPC08B_BOX_ASK
+T=Wait. How does this work?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=If a visitor presses the door button with the wrong intent, it unleashes a counter-reply to make sure they can't enter.
+W=SHAY
+
+T=That's perfect! Can I borrow it?
+W=GRAFF
+C1A=HAPPY
+
+T=Well... It's very valuable. I've spent a lot of time...
+W=SHAY
+C2A=WONDER
+SKIPEND=1
+
+T=Oh, please! My whole future depends on it!
+W=GRAFF
+C1A=GASP
+
+T=Alright! Brok asked me to deactivate it anyway, so...
+W=SHAY
+C1A=FRIENDLY
+C2A=HAPPY
+
+T=Go ahead. But leave the saw!
+W=SHAY
+
+T=That saw was the counter-reply? I'll have to replace it with something softer...
+W=GRAFF
+C1A=THINK
+TEN=GPC08B_DETECTOR_GET
+
+#----------------------
+ID=GPC08B_BOX_ASK2
+T=By the way. Several people are going to use my machine.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+# Original - By the way... Several persons will try my machine.
+
+T=I should only target one person. I can't take the risk to hurt anyone from the examination board!
+W=GRAFF
+C1A=MEH
+
+T=Easy. Put that person's fingerprint on it!
+W=SHAY
+
+T=...
+W=GRAFF
+C1A=THINK
+
+T=That won't be so simple...
+W=GRAFF
+C1A=OPPOSITE
+
+#----------------------
+ID=GPC08B_BOX_DONE
+T=The device is gone now.
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Mask
+#----------------------
+ID=GPC08B_MASK1
+T=This could come straight from a retro livie!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+
+#----------------------
+#= Drawer
+#----------------------
+ID=GPC08B_DRAWER1
+T=Oh! It's full of small parts! Let's see...
+W=GRAFF
+A=THINK
+
+T=...
+W=GRAFF
+A=MEH
+
+T=No, it doesn't seem anything will help me right now.
+W=GRAFF
+
+T=But I'll definitely come back to it for my future projects!
+W=GRAFF
+A=READY
+
+#----------------------
+#= CUP
+#----------------------
+ID=GPC08B_CUP1
+T=Gross.
+W=GRAFF
+A=YUCK
+
+T=She could go hand-in-hand with my old man!
+W=GRAFF
+
+#----------------------
+#= Tubes
+#----------------------
+ID=GPC08B_TUBES1
+T=Some food reconstitutes.
+W=GRAFF
+A=MEH
+
+T="Baked Diamond Fish Eggs With Sauce", "Tarantula Chops with Balsamic Reduction..."
+W=GRAFF
+A=THINK
+COMM=Some invented recipes, you can change to whatever you like
+
+T=Sounds tasty but there's a serious lack of cheese!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+
+T=You eat cheese?
+W=SHAY
+C2=SHAY
+C2A=SURPRISED
+
+T=Yeah! The best ingredient in the world. Don't you?
+W=GRAFF
+C1A=HAPPY
+
+T=What do you take me for? A mouse?...
+W=SHAY
+C2A=ANGRY
+
+T=Right. I couldn't imagine a mouse inventor!
+W=GRAFF
+C1A=FRIENDLY
+
+
+#----------------------
+#= Incubator
+#----------------------
+ID=GPC08B_INCUBATOR1
+T=How lucky! A food incubator!
+W=GRAFF
+A=HAPPY
+
+T=Brok hates instant meals. He never buys any.
+W=GRAFF
+A=OPPOSITE
+
+T=I'm sick of eating the same old vegetables and fruits every day.
+W=GRAFF
+
+#----------------------
+#= Mess
+#----------------------
+ID=GPC08B_MESS1
+T=Nothing catches my eye. I really don't have time to rummage through this...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+#= Trash
+#----------------------
+ID=GPC08B_TRASH1
+T=Of course! Everything here is dirty and messy except... the trash can.
+W=GRAFF
+A=DISDAIN
+
+
+#----------------------
+#= Vehicle
+#----------------------
+ID=GPC08B_VEHICLE1
+T=Woah! That vehicle is awesome!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=SHAY
+C2A=NORMAL
+
+T=You mean the vacuum cleaner?
+W=SHAY
+
+T=...I take it back.
+W=GRAFF
+C1A=OPPOSITE
+
+
+#----------------------
+#= Wrench
+#----------------------
+ID=GPC08B_WRENCH1
+T=A monkey wrench. I could use one!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+
+T=Me too.
+W=SHAY
+C2=SHAY
+C2A=ANGRY
+
+T=Oops...
+W=GRAFF
+C1A=TURN
+
+#----------------------
+#= Computer
+#----------------------
+ID=GPC08B_COMPUTER1
+T=I bet there's a top-of-the-line quantanium computer in this one-inch box!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+
+T=I live in a waste dump, you know. This model is from a few years ago.
+W=SHAY
+C2=SHAY
+C2A=NORMAL
+
+T=Still better than my two decades-old one. It's leaking water from so many cracks it's a miracle it's still working.
+W=GRAFF
+
+T=What a coincidence! Last year I offered Brok an old computer I salvaged from the lake!
+W=SHAY
+C2A=HAPPY
+
+T=Ah... That explains it.
+W=GRAFF
+C1A=STUPID
+
+
+#----------------------
+#= Tools
+#----------------------
+ID=GPC08B_TOOLS1
+T=Can I have this screwdriver?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=What's the magical word?
+W=SHAY
+C2A=WONDER
+
+T=I don't know. My parents didn't live long enough to teach me.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Don't say things like that. Although that's a valid point.
+W=SHAY
+C2A=MEH
+
+T=Okay, you can have it.
+W=SHAY
+C2A=HAPPY
+TEN=GPC08B_SCREWDRIVER_GET
+
+#----------------------
+ID=GPC08B_TOOLS1B
+T=Awesome!
+W=GRAFF
+C1=GRAFF
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Your enthusiasm for a simple screwdriver is wonderful. I wish I had a childhood...
+W=SHAY
+C2A=WONDER
+
+T=What do you mean?
+W=GRAFF
+C1A=THINK
+
+T=A normal childhood, anyway.
+W=SHAY
+C2A=NORMAL
+
+T=I'm afraid time goes only one way.
+W=GRAFF
+C1A=MEH
+
+T=Hmm... Who knows?...
+W=SHAY
+C2A=WONDER
+
+#----------------------
+ID=GPC08B_TOOLS2
+T=The screwdriver should be enough. I shouldn't take everything!
+W=GRAFF
+A=FRIENDLY
+
+#----------------------
+#= Chair
+#----------------------
+ID=GPC08B_CHAIR1
+T=Air-propelled stools.
+W=GRAFF
+A=THINK
+
+T=A classic but you don't see them often in these dumps!
+W=GRAFF
+A=FRIENDLY
+
+T=I wonder what the purpose of those schematic plans are though.
+W=GRAFF
+A=THINK
+
+#-------------------------------------------------------------------------------
+#====================================CUTSCENES==================================
+#-------------------------------------------------------------------------------
+
+
+#----------------------
+#= First contact
+#----------------------
+
+ID=GPC08B_SHAY_FIRST1
+T=Erm...
+W=GRAFF
+A=MEH
+CONTEXT=Talking to Shay in day 1
+COMM=First time Graff talking to Shay in the game
+
+T=Hello? Miss Shay?
+W=GRAFF
+
+T=...
+W=GRAFF
+
+T=Maybe I should get closer?...
+W=GRAFF
+A=THINK
+TEN=GPC08B_SHAY_FIRST_COME
+
+#----------------------
+#TODO Electricity animation or something that makes boom!
+ID=GPC08B_SHAY_FIRST2
+T=Woah!!! What was that?!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+COMM=Electricity animation or explosion!
+
+T=Crap! That bloody junk is busted again!
+W=SHAY
+C2=SHAY
+C2A=ANGRY
+
+T=Hey! Watch your tongue!
+W=GRAFF
+C1A=ANGRY
+
+T=Huh?
+W=SHAY
+C2A=WONDER
+
+T=Oh no... The voices are back. I shouldn't have quit my treatment...
+W=SHAY
+C2A=MEH
+
+T=Hey! I'm right here!
+W=GRAFF
+C1A=ANGRY
+
+T=...
+W=SHAY
+C2A=WONDER
+
+T=Aaah! You're right.
+W=SHAY
+C2A=HAPPY
+
+T=I prefer that.
+W=SHAY
+
+T=...
+W=GRAFF
+C1A=MEH
+
+T=Now, where was I?
+W=SHAY
+C2A=WONDER
+
+T=Wait! Won't you help me?
+W=GRAFF
+C1A=SAD
+
+T=Oh, you need help? Why didn't you tell me?
+W=SHAY
+C2A=WONDER
+
+T=I... Never mind.
+W=GRAFF
+C1A=OPPOSITE
+
+T=You're Brok's stepson, right? Graff?
+W=SHAY
+C2A=NORMAL
+
+T=It's been a long time!
+W=SHAY
+C2A=HAPPY
+
+T=Yeah! I'm surprised you remember me.
+W=GRAFF
+C1A=FRIENDLY
+
+T=Been busy with studies... And that's why I'm here.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Who needs studies? Practice is the best way to learn!
+W=SHAY
+
+T=And get injured... Apparently.
+W=GRAFF
+
+T=Anyway, can I ask you something?
+W=GRAFF
+C1A=THINK
+
+T=Well... My mind reader isn't quite ready yet, so... I guess it's fine if we resort to talking.
+W=SHAY
+C2A=NORMAL
+
+T=A mind reader? For real?!...
+W=GRAFF
+C1A=GASP
+
+T=Just a prototype. I had to stop working on it.
+W=SHAY
+C2A=NORMAL
+
+T=I couldn't bear hearing my own thoughts!
+W=SHAY
+C2A=SURPRISED
+
+T=Like echo on a phone! You know?
+W=SHAY
+C2A=MEH
+
+T=Erm... Anyway.
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+#= Talk
+#----------------------
+
+ID=GPC08B_SHAY_WELCOME1
+T=Me again...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=SHAY
+C2A=NORMAL
+
+T=Are you sure? Maybe you've been cloned since the last time we talked.
+W=SHAY
+C2A=WONDER
+
+T=I... think not?...
+W=GRAFF
+C1A=THINK
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_WELCOME2
+T=I've got a question.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=SHAY
+C2A=NORMAL
+
+T=Ah. I feel for you, nagging questioning is the worst feeling.
+W=SHAY
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+
+ID=GPC08B_SHAY_WELCOME3
+T=Hmm...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+#= Leave
+#----------------------
+
+ID=GPC08B_SHAY_EXITFIRST1
+T=I better go...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=SHAY
+C2A=NORMAL
+
+T=Wait!
+W=SHAY
+C2A=MEH
+
+T=If you see Brok on the way back, give him that.
+W=SHAY
+C2A=NORMAL
+TEN=GPC08B_SHAY_EARBUDS_TAKE
+
+#----------------------
+
+ID=GPC08B_SHAY_EXITFIRST1B
+T=Ear buds?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=I've reversed a pair of hearing aids to block all outside sounds.
+W=SHAY
+
+T=You can do that?! Amazing!
+W=GRAFF
+C1A=GASP
+
+T=My sensors have detected Brok is sleep deprived.
+W=SHAY
+C2A=WONDER
+
+T=I forgot to give it to him earlier.
+W=SHAY
+C2A=NORMAL
+
+T=Huh? He was there?
+W=GRAFF
+C1A=THINK
+
+T=Yeah! This morning.
+W=SHAY
+C2A=HAPPY
+
+T=Hmm... I'm sorry to ask but...
+W=GRAFF
+C1A=MEH
+
+T=He's out all day and night but never tells me anything.
+W=GRAFF
+C1A=OPPOSITE
+
+T=What business does he have with you, exactly?
+W=GRAFF
+C1A=THINK
+
+T=Well, let's say...
+W=SHAY
+C2A=WONDER
+
+T=He's doing errands for me... Among other things.
+W=SHAY
+C2A=NORMAL
+
+T=Other things?
+W=GRAFF
+
+T=I'm sorry. He made me promise not to tell you anything.
+W=SHAY
+C2A=WONDER
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=Obviously. He doesn't trust me.
+W=GRAFF
+C1A=OPPOSITE
+
+T=He's got his reasons.
+W=SHAY
+C2A=MEH
+
+T=Yeah, right. Excuses, always more excuses.
+W=GRAFF
+
+T=Listen. I'll discuss it with him next time, okay?
+W=SHAY
+C2A=WONDER
+
+T=That'd be great. Thanks.
+W=GRAFF
+C1A=FRIENDLY
+
+T=You're welcome.
+W=SHAY
+C2A=HAPPY
+
+T=Okay, back to work!
+W=SHAY
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+
+ID=GPC08B_SHAY_EXIT1
+T=Later!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=SHAY
+C2A=NORMAL
+
+T=Time is relative, you know. You should be more precise.
+W=SHAY
+
+T=Erm... Right.
+W=GRAFF
+C1A=DISDAIN
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+
+ID=GPC08B_SHAY_EXIT2
+T=Bye!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=SHAY
+C2A=NORMAL
+
+T=Don't pull any strange strings on your way out, okay?
+W=SHAY
+COMM=Just Shay saying weird things. No real sense to this.
+
+T=Huh?
+W=GRAFF
+C1A=THINK
+
+T=Just some generic advice. You never know.
+W=SHAY
+C2A=HAPPY
+
+T=O...kay...
+W=GRAFF
+C1A=DISDAIN
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+
+ID=GPC08B_SHAY_EXIT3
+T=Bye!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=SHAY
+C2A=NORMAL
+
+#----------------------
+#= Detect behavior
+#----------------------
+
+ID=GPC08B_SHAY_DETECTOR1
+T=By any chance... I need some kind of device to detect wrong intents.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Maybe... A fingerprint reader? I know it's very specific but...
+W=GRAFF
+
+T=Wrong intents...
+W=SHAY
+C2A=WONDER
+
+T=Weird. I've got a feeling I built a device like this but I can't put my finger on it...
+W=SHAY
+
+T=Look around, maybe?
+W=SHAY
+C2A=MEH
+
+T=Will do.
+W=GRAFF
+C1A=FRIENDLY
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_OPERATOR1
+T=I've set up a force field. What could prevent someone from accessing what's placed inside it?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=A short circuit!
+W=SHAY
+
+T=Wouldn't that be dangerous?
+W=GRAFF
+
+T=Not really. The force field would diffuse the shock all around, so it's safe.
+W=SHAY
+C2A=WONDER
+
+T=Unless you have a congenital heart malformation, in which case you'd die sooner or later anyway.
+W=SHAY
+C2A=MEH
+
+T=Erm... Very reassuring.
+W=GRAFF
+C1A=MEH
+
+T=Just keep your eyes open for any sparks. The Slums are filled with broken devices.
+W=SHAY
+
+T=Right.
+W=GRAFF
+C1A=READY
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_OPERATOR2
+T=Look for sparks! They indicate a short circuit.
+W=SHAY
+C1=GRAFF
+C1A=MEH
+C2=SHAY
+C2A=NORMAL
+
+T=Got it!
+W=GRAFF
+C1A=READY
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_FINGERPRINT1
+T=How can I get someone's fingerprint?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Why don't you ask your detective room-mate?
+W=SHAY
+C2A=WONDER
+
+T=If only I knew where he was... Besides he never answers my calls.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Try some powder on some sticky paper and apply it on that person's hand.
+W=SHAY
+C2A=NORMAL
+
+T=It's worth a try...
+W=GRAFF
+C1A=MEH
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+#= Screw up machines
+#----------------------
+
+ID=GPC08B_SHAY_SCREWMACHINES_ANTS1
+T=Someone built a machine with ants to power it.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=SHAY
+C2A=NORMAL
+
+T=Any way I could... Erm, "boost" it?
+W=GRAFF
+C1A=MEH
+
+T=I'm afraid I'm not a botanist.
+W=SHAY
+
+T=They're insects, actually.
+W=GRAFF
+C1A=DISDAIN
+
+T=Even worse.
+W=SHAY
+C2A=MEH
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_SCREWMACHINES_ANTS2
+T=(Shay sounds inept when it comes to ants... I'll manage.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+
+ID=GPC08B_SHAY_SCREWMACHINES_SMELL1
+T=Have you ever experimented smell conversion?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Sure did!
+W=SHAY
+C2A=HAPPY
+
+T=I bought this place specifically for the large amount of chemical substances dropped in the lake.
+W=SHAY
+C2A=NORMAL
+
+T=You bought this place... For the polluted lake?...
+W=GRAFF
+C1A=YUCK
+
+T=Yeah! Isn't it obvious?
+W=SHAY
+C2A=MEH
+
+T=No...
+W=GRAFF
+C1A=THINK
+
+T=I live near the stinkiest lake in the world! It's an unlimited resource!
+W=SHAY
+C2A=HAPPY
+
+T=I see... Or rather, I smell it...
+W=GRAFF
+C1A=YUCK
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+
+
+#----------------------
+#= Repair
+#----------------------
+
+ID=GPC08B_SHAY_REPAIR1
+T=Do you have melted plastic?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=I'm afraid not. This is low quality material.
+W=SHAY
+C1A=MEH
+
+T=Anything else I could use to fix a broken glass?
+W=GRAFF
+C1A=THINK
+
+T=Tantanium X12 should do the trick!
+W=SHAY
+C2A=HAPPY
+C1A=MEH
+
+T=You have some?
+W=GRAFF
+C1A=THINK
+
+T=No.
+W=SHAY
+C2A=NORMAL
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+#= Think
+#----------------------
+
+ID=GPC08B_SHAY_THINK1
+T=(Brok and I visited her once for getting help with my homework. That's how we met.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(Usually I prefer doing everything myself but this was too important... Just like now.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+T=(To be honest, I wish she was one of my teachers!)
+W=GRAFF
+A=FRIENDLY
+MOOD=THINK
+TEN=GPC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+#= Inventory
+#----------------------
+
+ID=GPC08B_SHAY_INV_DEFAULT1
+T=I need your help with this!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=SHAY
+C2A=NORMAL
+
+T=...Are you sure?
+W=SHAY
+C2A=MEH
+
+T=Oops... Wrong one!
+W=GRAFF
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_INV_DEFAULT2
+T=Please, I need this fixed!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=SHAY
+C2A=NORMAL
+
+T=Wait. That's not broken.
+W=SHAY
+C2A=MEH
+
+T=Oh... You're right.
+W=GRAFF
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_INV_MONEY
+T=I see. Sorry, I can't really lend you money right now.
+W=SHAY
+C1=GRAFF
+C1A=MEH
+C2=SHAY
+C2A=NORMAL
+
+T=No... Never mind.
+W=GRAFF
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=GPC08B_SHAY_INV_EARBUDS
+T=That's really cool!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=SHAY
+C2A=NORMAL
+
+T=Yeah! I like the color too.
+W=SHAY
+
+T=Erm...
+W=GRAFF
+C1A=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+
+
+#----------------------
+#= To virtual arena
+#----------------------
+ID=GPC08B_BOLT1
+T=Oh! This bot's yours?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+COMM=Talking about the robot Brok saved (if he did)
+
+T=Yup. Brok found it for me.
+W=SHAY
+
+T=He did?...
+W=GRAFF
+C1A=GASP
+
+T=He insisted I take care of this one because it was about to get dismantled.
+W=SHAY
+
+T=Who thought he could have feelings for robots...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Believe me. Your old man is packed with feelings.
+W=SHAY
+C2A=HAPPY
+
+T=Good or bad ones?
+W=GRAFF
+C1A=THINK
+
+T=Depends if you're on his side!
+W=SHAY
+
+T=...
+W=GRAFF
+C1A=TURN
+
+#----------------------
+ID=GPC08B_BOLT2
+T=Does it work?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Not sure yet. I'll check after the backup completes.
+W=SHAY
+
+T=(I'd love to have a robot for myself)
+W=GRAFF
+C1A=HAPPY
+MOOD=THINK
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 25/08/2019
+###############################################
+
+
+#----------------------
+#= Walk on desk
+#----------------------
+ID=GPC08B_WALKDESK1
+T=Hey! Who raised you that way?
+W=SHAY
+C2=SHAY
+C2A=ANGRY
+CONTEXT=Walk on desk
+NB=1
+D=90
+
+T=Wait. Don't reply. I know the answer.
+W=SHAY
+C2A=MEH
+
+#----------------------
+#= Trying to hit Shay
+#----------------------
+ID=GPC08B_HITSHAY1
+T=Graff, I know you're upset but I'm no stress reliever.
+W=SHAY
+C2=SHAY
+C2A=MEH
+CONTEXT=Try to hit Shay
+NB=1
+D=90
+
+#----------------------
+ID=GPC08B_HITSHAY2
+T=That tickles!
+W=SHAY
+C2=SHAY
+C2A=HAPPY
+NB=1
+D=90
+
+
+
+#----------------------
+#= Shay - Stink with Graff
+#----------------------
+ID=GPC08B_SHAY_STINK1
+T=Ugh...
+W=SHAY
+C1=GRAFF
+C1A=THINK
+C2=SHAY
+C2A=ANGRY
+CONTEXT=After taking a bath in the lake
+
+T=Don't tell me. You took a swim in the swamp?
+W=SHAY
+
+T=Erm...
+W=GRAFF
+C1A=GASP
+
+T=Here!
+W=SHAY
+C2A=HAPPY
+TEN=PC08B_SHAY_STINKCANCEL
+
+T=Sorry.
+W=GRAFF
+
+T=No worries! Brok does it, too.
+W=SHAY
+
+T=...
+W=GRAFF
+
+#----------------------
+#= Bolt Hit
+#----------------------
+ID=GPC08B_BOLT_HIT1
+T=Stop that! You might interrupt the backup process.
+W=SHAY
+C1=GRAFF
+C1A=ANGRY
+C2=SHAY
+C2A=ANGRY
+NB=1
+D=240
+CONTEXT=Hitting Bolt
+
+#----------------------
+ID=GPC08B_BOLT_HIT2
+T=Are you listening...?
+W=SHAY
+C1=GRAFF
+C1A=HAPPY
+C2=SHAY
+C2A=ANGRY
+NB=1
+D=180
+
+
+
+
+#----------------------
+ID=GPC08B_BOLT_DEAD1
+T=Argh! See what you've done!
+W=SHAY
+C1=GRAFF
+C1A=GASP
+C2=SHAY
+C2A=ANGRY
+
+T=Now I gotta restart from scratch!
+W=SHAY
+TEN=PC08B_BOLT_DEAD_CHECK
+
+
+#----------------------
+ID=GPC08B_BOLT_DEAD2
+T=I'm sorr...
+W=GRAFF
+C1=GRAFF
+C1A=STUPID
+C2=SHAY
+C2A=ANGRY
+TEN=PC08B_BOLT_DEAD_RUNAWAY
+
+T=GET OUT!
+W=SHAY
+COMMENT=Shay is FURIOUS
+C1A=SURPRISED
+C2_EYESHUT=1
+
+
+#----------------------
+ID=GPC08B_BOLT_DEADBIS
+T=Nice! It worked!
+W=SHAY
+C1=SHAY
+C1A=HAPPY
+TEN=GAMEOVER
+
+
+#----------------------
+ID=GPC08B_BOLT_DEAD_BACK
+T=Lucky for you! That was an easy fix.
+W=SHAY
+C1=SHAY
+C1A=HAPPY
+C2=GRAFF
+C2A=SAD
+TEN=CLICKERS_BACK
+
+
+#----------------------
+ID=COOP_GPC08B_SHAY1
+T=Craaaaaaaazy
+T=And I mean it.
+
+#----------------------
+ID=COOP_GPC08B_BOLT1
+T=He's so cuuute!
+T=Useless, but cute.

@@ -1,0 +1,580 @@
+#-------------------------------
+#=GRAFF --- SHAY INSIDE
+#-------------------------------
+
+#----- Interactions --------
+
+
+#----- Choices / Items --------
+
+GOT_EARBUDS=耳塞？
+GOT_DETECTOR=探测器！
+GOT_SCREWDRIVER=螺丝刀！
+
+#----- Topics --------
+
+TOPIC_DETECTOR=探测器
+TOPIC_OPERATOR=操作器
+TOPIC_FINGERPRINT=指纹
+TOPIC_ANTS=蚂蚁
+TOPIC_SMELLCONVERT=转化气味
+
+#----- Dialog --------
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+
+# *****************************************************************
+# CONTEXT - Graff checks Shay's garage
+# *****************************************************************
+# Shay
+GPC08B_TO_PC08C1-1=格拉夫？
+# Shay
+GPC08B_TO_PC08C1-2=我有允许过你自由出入我的车库吗？
+# Graff
+GPC08B_TO_PC08C1-3=没……不过你应该不介意的吧？
+# Shay
+GPC08B_TO_PC08C1-4=不好意思，这里是私人领地。
+# Graff
+GPC08B_TO_PC08C1-5=那好吧……
+#----------------------------------------------------
+# Graff
+GPC08B_TO_PC08C2-1=不让我进去……真是纳闷。
+#----------------------------------------------------
+# Graff
+GPC08B_BOX1-1=我猜……里头可能有什么危险的东西？
+# Shay
+GPC08B_BOX1-2=说什么胡话呢？我的车库里怎么可能会有危险物品！
+# Graff
+GPC08B_BOX1-3=那就说不定了，另外这个符号是怎么回事？
+# Shay
+GPC08B_BOX1-4=哦！那个是反入侵者探测系统。
+# Shay
+GPC08B_BOX1-5=而且是在外面！不是在里面。
+# Graff
+GPC08B_BOX1-6=这差别可就大了。
+#----------------------------------------------------
+# Graff
+GPC08B_BOX2-1=反入侵者探测系统……
+#----------------------------------------------------
+# Graff
+GPC08B_BOX_ASK-1=等等，这玩意是如何运作的？
+# Shay
+GPC08B_BOX_ASK-2=要是有心怀鬼胎的访客按下此门的按钮，系统就会采取反制措施，确保对方无法进入。
+# Graff
+GPC08B_BOX_ASK-3=太好了！可以借我用用吗？
+# Shay
+GPC08B_BOX_ASK-4=呃……这东西很珍贵的。我花了很长时间……
+# Graff
+GPC08B_BOX_ASK-5=求求你了！我的前途全靠它了！
+# Shay
+GPC08B_BOX_ASK-6=好吧！反正布罗格也要求过我拆卸掉它……
+# Shay
+GPC08B_BOX_ASK-7=拿去吧，不过不要动那个圆锯！
+# Graff
+GPC08B_BOX_ASK-8=反制措施指的就是电锯？看来我得换个没那么危险的工具……
+#----------------------------------------------------
+# Graff
+GPC08B_BOX_ASK2-1=对了……会有别的人试用我的机器。
+# Graff
+GPC08B_BOX_ASK2-2=我得选择单独一个人为目标，绝不能伤害到任何评审员！
+# Shay
+GPC08B_BOX_ASK2-3=那还不简单，将目标的指纹放在上面就行了！
+# Graff
+GPC08B_BOX_ASK2-4=……
+# Graff
+GPC08B_BOX_ASK2-5=那一点都不简单好吗……
+#----------------------------------------------------
+# Graff
+GPC08B_BOX_DONE-1=设备已经不在了。
+#----------------------------------------------------
+# Graff
+GPC08B_MASK1-1=乍看之下还以为是什么老电影里头的玩意！
+#----------------------------------------------------
+# Graff
+GPC08B_DRAWER1-1=咦！好多小巧的零件！让我来看看……
+# Graff
+GPC08B_DRAWER1-2=……
+# Graff
+GPC08B_DRAWER1-3=这些东西对我来说暂时没用。
+# Graff
+GPC08B_DRAWER1-4=不过日后的项目有用的上的话我一定会回来搜刮！
+#----------------------------------------------------
+# Graff
+GPC08B_CUP1-1=恶心。
+# Graff
+GPC08B_CUP1-2=她跟我老爹有得一拼！
+#----------------------------------------------------
+# Graff
+GPC08B_TUBES1-1=这都是些加工食品……
+# Graff
+#Some invented recipes, you can change to whatever you like
+GPC08B_TUBES1-2=“酱料烘焙钻石鱼蛋”、“香醋黑寡妇肉排”……
+# Graff
+GPC08B_TUBES1-3=好像很美味的样子，可惜少了乳酪！
+# Shay
+GPC08B_TUBES1-4=你喜欢吃乳酪？
+# Graff
+GPC08B_TUBES1-5=对呀！那是天下最美味的食材。你觉得呢？
+# Shay
+GPC08B_TUBES1-6=你把我当什么了？鼠人吗？
+# Graff
+GPC08B_TUBES1-7=也是，鼠人怎么可能成为发明家！
+#----------------------------------------------------
+# Graff
+GPC08B_INCUBATOR1-1=真走运！竟然是个食品恒温箱！
+# Graff
+GPC08B_INCUBATOR1-2=布罗格很讨厌吃快餐，他从不买快餐。
+# Graff
+GPC08B_INCUBATOR1-3=而我则厌倦了每天吃同样的蔬果……
+#----------------------------------------------------
+# Graff
+GPC08B_MESS1-1=没看到什么好东西，我目前没空去仔细翻找了……
+#----------------------------------------------------
+# Graff
+GPC08B_TRASH1-1=不出所料！这里的一切都脏兮兮的，除了……垃圾桶本身以外。
+#----------------------------------------------------
+# Graff
+GPC08B_VEHICLE1-1=哇！好炫酷的车子！
+# Shay
+GPC08B_VEHICLE1-2=你是指那台吸尘器？
+# Graff
+GPC08B_VEHICLE1-3=……当我什么都没说。
+#----------------------------------------------------
+# Graff
+GPC08B_WRENCH1-1=竟然是个活动扳手。我正好用得上！
+# Shay
+GPC08B_WRENCH1-2=我也要用呢。
+# Graff
+GPC08B_WRENCH1-3=唉……
+#----------------------------------------------------
+# Graff
+GPC08B_COMPUTER1-1=我肯定这个小盒子里头装有高科技量子电脑！
+# Shay
+GPC08B_COMPUTER1-2=聪明，我住的这里可是垃圾场，这个型号已经是好几年前的了。
+# Graff
+GPC08B_COMPUTER1-3=至少比我那个二十多年头的古董电脑好。到处都是缺口还漏液，能运作都算是奇迹了。
+# Shay
+GPC08B_COMPUTER1-4=巧了！去年我从湖里打捞出了一个老电脑送给了布罗格！
+# Graff
+GPC08B_COMPUTER1-5=啊……原来如此。
+#----------------------------------------------------
+# Graff
+GPC08B_TOOLS1-1=这个螺丝刀可以送我吗？
+# Shay
+GPC08B_TOOLS1-2=求人的时候该说什么？
+# Graff
+GPC08B_TOOLS1-3=我不知道。我父母死的早，没教过我。
+# Shay
+GPC08B_TOOLS1-4=不要这样说嘛，不过你说得有道理。
+# Shay
+GPC08B_TOOLS1-5=好吧，送你了。
+#----------------------------------------------------
+# Graff
+GPC08B_TOOLS1B-1=好耶！
+# Shay
+GPC08B_TOOLS1B-2=小小一个螺丝刀就能让你如此高兴，真羡慕你的童年……
+# Graff
+GPC08B_TOOLS1B-3=你说什么？
+# Shay
+GPC08B_TOOLS1B-4=我是说你有一段正常的童年生活。
+# Graff
+GPC08B_TOOLS1B-5=可惜时间是无法逆转的。
+# Shay
+GPC08B_TOOLS1B-6=唔……谁说得准呢……？
+#----------------------------------------------------
+# Graff
+GPC08B_TOOLS2-1=一个螺丝刀就足够了，我不能太过贪心！
+#----------------------------------------------------
+# Graff
+GPC08B_CHAIR1-1=空气动力凳子。
+# Graff
+GPC08B_CHAIR1-2=好经典的东西，不过很少在垃圾场出现！
+# Graff
+GPC08B_CHAIR1-3=不过我很好奇那些图纸究竟是做什么用的。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Shay in day 1
+# *****************************************************************
+# Graff
+#First time Graff talking to Shay in the game
+GPC08B_SHAY_FIRST1-1=呃……
+# Graff
+GPC08B_SHAY_FIRST1-2=你好！莎莎小姐？
+# Graff
+GPC08B_SHAY_FIRST1-3=……
+# Graff
+GPC08B_SHAY_FIRST1-4=难道是离得太远没听见……？
+#----------------------------------------------------
+# Graff
+#Electricity animation or explosion!
+GPC08B_SHAY_FIRST2-1=哇！！什么动静？！
+# Shay
+GPC08B_SHAY_FIRST2-2=我擦！破烂玩意又出毛病了！
+# Graff
+GPC08B_SHAY_FIRST2-3=喂！说话文明点！
+# Shay
+GPC08B_SHAY_FIRST2-4=啥？
+# Shay
+GPC08B_SHAY_FIRST2-5=糟了……那些幻音又回来了，早知道不该停止疗程……
+# Graff
+GPC08B_SHAY_FIRST2-6=喂！我就在这呢！
+# Shay
+GPC08B_SHAY_FIRST2-7=……
+# Shay
+GPC08B_SHAY_FIRST2-8=啊！原来是你。
+# Shay
+GPC08B_SHAY_FIRST2-9=那就好。
+# Graff
+GPC08B_SHAY_FIRST2-10=……
+# Shay
+GPC08B_SHAY_FIRST2-11=对了，刚才我在忙什么来着？
+# Graff
+GPC08B_SHAY_FIRST2-12=等等！你不打算帮我吗？
+# Shay
+GPC08B_SHAY_FIRST2-13=哦，你需要帮忙吗？怎么不早说？
+# Graff
+GPC08B_SHAY_FIRST2-14=我……算了。
+# Shay
+GPC08B_SHAY_FIRST2-15=你是布罗格的继子对吧？叫格拉夫是吗？
+# Shay
+GPC08B_SHAY_FIRST2-16=好久不见！
+# Graff
+GPC08B_SHAY_FIRST2-17=是呀！我很惊讶你还认得我。
+# Graff
+GPC08B_SHAY_FIRST2-18=最近一直在忙学业……而且我这里来找你也是因为这原因。
+# Shay
+GPC08B_SHAY_FIRST2-19=上学有什么用？实践出真知！
+# Graff
+GPC08B_SHAY_FIRST2-20=而且还会受伤出血呢……
+# Graff
+GPC08B_SHAY_FIRST2-21=我可以问你件事吗？
+# Shay
+GPC08B_SHAY_FIRST2-22=那个……我的读心仪还没调试完毕，不过……随便聊几句还是可以的。
+# Graff
+GPC08B_SHAY_FIRST2-23=读心仪？你是说真的？！
+# Shay
+GPC08B_SHAY_FIRST2-24=只是个原型机，项目暂时搁置了。
+# Shay
+GPC08B_SHAY_FIRST2-25=因为我不想听见自己的思绪！
+# Shay
+GPC08B_SHAY_FIRST2-26=就像打电话时听见自己回音的样子！你明白我的意思吗？
+# Graff
+GPC08B_SHAY_FIRST2-27=呃……嗯。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_WELCOME1-1=我又来了……
+# Shay
+GPC08B_SHAY_WELCOME1-2=你确定你是你吗？搞不准你就只是你自己的复制人而已。
+# Graff
+GPC08B_SHAY_WELCOME1-3=我……应该不是吧……？
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_WELCOME2-1=我有个问题想问你……
+# Shay
+GPC08B_SHAY_WELCOME2-2=啊，我理解你的感受。把问题憋在心里是天底下最难受的感觉。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_WELCOME3-1=嗯……
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_EXITFIRST1-1=我先走了……
+# Shay
+GPC08B_SHAY_EXITFIRST1-2=等等！
+# Shay
+GPC08B_SHAY_EXITFIRST1-3=你回头要是见到布罗格，就把这个交给他。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_EXITFIRST1B-1=耳塞？
+# Shay
+GPC08B_SHAY_EXITFIRST1B-2=我把一副助听器改装成了能够屏蔽一切外来声音的耳塞。
+# Graff
+GPC08B_SHAY_EXITFIRST1B-3=这都能做到？！你太厉害了！
+# Shay
+GPC08B_SHAY_EXITFIRST1B-4=我的感应器探测到布罗格最近严重失眠。
+# Shay
+GPC08B_SHAY_EXITFIRST1B-5=我刚才忘了交给他。
+# Graff
+GPC08B_SHAY_EXITFIRST1B-6=啥？他刚才来过？
+# Shay
+GPC08B_SHAY_EXITFIRST1B-7=对呀！今早来过。
+# Graff
+GPC08B_SHAY_EXITFIRST1B-8=唔……不好意思想问一下……
+# Graff
+GPC08B_SHAY_EXITFIRST1B-9=他每天早出晚归却从未告诉过我任何细节。
+# Graff
+GPC08B_SHAY_EXITFIRST1B-10=他跟你究竟是在忙什么？
+# Shay
+GPC08B_SHAY_EXITFIRST1B-11=那个，这样说吧……
+# Shay
+GPC08B_SHAY_EXITFIRST1B-12=他是在替我跑腿之类的……以及其他的一些事情。
+# Graff
+GPC08B_SHAY_EXITFIRST1B-13=其他的一些事情？
+# Shay
+GPC08B_SHAY_EXITFIRST1B-14=很抱歉，我答应过他不能告诉你的。
+# Graff
+GPC08B_SHAY_EXITFIRST1B-15=……
+# Graff
+GPC08B_SHAY_EXITFIRST1B-16=果然，他根本不信任我。
+# Shay
+GPC08B_SHAY_EXITFIRST1B-17=他这么做是有原因的……
+# Graff
+GPC08B_SHAY_EXITFIRST1B-18=是是是。借口，全都是借口。
+# Shay
+GPC08B_SHAY_EXITFIRST1B-19=孩子……下次我会跟他好好谈谈这件事的。
+# Graff
+GPC08B_SHAY_EXITFIRST1B-20=好，谢谢你。
+# Shay
+GPC08B_SHAY_EXITFIRST1B-21=不客气。
+# Shay
+GPC08B_SHAY_EXITFIRST1B-22=好了，继续工作了！
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_EXIT1-1=回见！
+# Shay
+GPC08B_SHAY_EXIT1-2=时间是相对的，你该说仔细一点。
+# Graff
+GPC08B_SHAY_EXIT1-3=呃……好吧。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_EXIT2-1=再见！
+# Shay
+#Just Shay saying weird things. No real sense to this.
+GPC08B_SHAY_EXIT2-2=小心驶得万年船哦？
+# Graff
+GPC08B_SHAY_EXIT2-3=啥？
+# Shay
+GPC08B_SHAY_EXIT2-4=只是随便提醒你下，谨慎是好事。
+# Graff
+GPC08B_SHAY_EXIT2-5=好……好吧……
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_EXIT3-1=再见！
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_DETECTOR1-1=对了……我恰好需要某种能够探测到恶意的设备。
+# Graff
+GPC08B_SHAY_DETECTOR1-2=比如说……指纹仪？我知道这个请求有点怪异……
+# Shay
+GPC08B_SHAY_DETECTOR1-3=恶意……
+# Shay
+GPC08B_SHAY_DETECTOR1-4=奇怪了……我感觉自己有制作过类似的设备，可就是想不起来……
+# Shay
+GPC08B_SHAY_DETECTOR1-5=要不你随便翻翻看吧。
+# Graff
+GPC08B_SHAY_DETECTOR1-6=好的。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_OPERATOR1-1=我设置了一个力场，想知道怎样才能阻止别人进入力场呢？
+# Shay
+GPC08B_SHAY_OPERATOR1-2=靠短路！
+# Graff
+GPC08B_SHAY_OPERATOR1-3=那岂不很危险吗？
+# Shay
+GPC08B_SHAY_OPERATOR1-4=并不会。力场能够扩散电流到周围，所以其实是很安全的。
+# Shay
+GPC08B_SHAY_OPERATOR1-5=除非你是有心脏病，但那样的话反正你也活不久了。
+# Graff
+GPC08B_SHAY_OPERATOR1-6=呃……很有趣的见解。
+# Shay
+GPC08B_SHAY_OPERATOR1-7=总之你要打起精神留意电火花，贫民区充斥着各种破损的电子设备。
+# Graff
+GPC08B_SHAY_OPERATOR1-8=好的。
+#----------------------------------------------------
+# Shay
+GPC08B_SHAY_OPERATOR2-1=注意电火花！见到它们就意味着出现短路。
+# Graff
+GPC08B_SHAY_OPERATOR2-2=明白！
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_FINGERPRINT1-1=有什么办法可以取得他人的指纹呢？
+# Shay
+GPC08B_SHAY_FINGERPRINT1-2=你为什么不去求教你的侦探继父？
+# Graff
+GPC08B_SHAY_FINGERPRINT1-3=能找到他再说吧……他连我的电话都不接。
+# Shay
+GPC08B_SHAY_FINGERPRINT1-4=将粉末洒在黏性纸上然后贴在目标人物的手指上。
+# Graff
+GPC08B_SHAY_FINGERPRINT1-5=不错的方法……
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_SCREWMACHINES_ANTS1-1=有人制造了一部由蚂蚁发电的机器。
+# Graff
+GPC08B_SHAY_SCREWMACHINES_ANTS1-2=有什么方法可以……“强化”它吗？
+# Shay
+GPC08B_SHAY_SCREWMACHINES_ANTS1-3=我可不是植物学家。
+# Graff
+GPC08B_SHAY_SCREWMACHINES_ANTS1-4=那个，蚂蚁是昆虫。
+# Shay
+GPC08B_SHAY_SCREWMACHINES_ANTS1-5=那就更加不是我的专长了。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_SCREWMACHINES_ANTS2-1=（莎莎似乎对蚂蚁一无所知……看来我只能靠自己了。）
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_SCREWMACHINES_SMELL1-1=你有进行过转化气味的实验吗？
+# Shay
+GPC08B_SHAY_SCREWMACHINES_SMELL1-2=当然有啊！
+# Shay
+GPC08B_SHAY_SCREWMACHINES_SMELL1-3=我之所以置业于此就是因为湖里有大量的化学物质。
+# Graff
+GPC08B_SHAY_SCREWMACHINES_SMELL1-4=你搬来这里……就是为了这个污染严重的湖泊……？
+# Shay
+GPC08B_SHAY_SCREWMACHINES_SMELL1-5=对呀！不是很明显吗？
+# Graff
+GPC08B_SHAY_SCREWMACHINES_SMELL1-6=我真不知道……
+# Shay
+GPC08B_SHAY_SCREWMACHINES_SMELL1-7=我就住在世上最恶臭的湖泊旁！那可是无穷无尽的资源呀！
+# Graff
+GPC08B_SHAY_SCREWMACHINES_SMELL1-8=原来如此……
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_REPAIR1-1=你这里有熔化的塑料吗？
+# Shay
+GPC08B_SHAY_REPAIR1-2=恐怕没有，那是劣质材料。
+# Graff
+GPC08B_SHAY_REPAIR1-3=那有什么可以用来修复破损玻璃的材料吗？
+# Shay
+GPC08B_SHAY_REPAIR1-4=碳钽合金X12就行了！
+# Graff
+GPC08B_SHAY_REPAIR1-5=那你这里有吗？
+# Shay
+GPC08B_SHAY_REPAIR1-6=没有。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_THINK1-1=（我和布罗格曾经有次去找她帮忙完成我的作业，那是我们的第一次见面。）
+# Graff
+GPC08B_SHAY_THINK1-2=（我一般什么事都是自己动手的，但这次的事太过重要了。）
+# Graff
+GPC08B_SHAY_THINK1-3=（说真的，如果她是我的老师就好了！）
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_INV_DEFAULT1-1=这个东西需要你帮忙一下！
+# Shay
+GPC08B_SHAY_INV_DEFAULT1-2=……你确定吗？
+# Graff
+GPC08B_SHAY_INV_DEFAULT1-3=啊……拿错了！
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_INV_DEFAULT2-1=拜托帮我修好这个吧！
+# Shay
+GPC08B_SHAY_INV_DEFAULT2-2=等一下，这玩意根本没损坏。
+# Graff
+GPC08B_SHAY_INV_DEFAULT2-3=咦……你说得对。
+#----------------------------------------------------
+# Shay
+GPC08B_SHAY_INV_MONEY-1=我明白了。但很抱歉，我当前没有多余的钱可以借给你。
+# Graff
+GPC08B_SHAY_INV_MONEY-2=没、没关系。
+#----------------------------------------------------
+# Graff
+GPC08B_SHAY_INV_EARBUDS-1=好炫酷！
+# Shay
+GPC08B_SHAY_INV_EARBUDS-2=是呀！我也很喜欢这个色调。
+# Graff
+GPC08B_SHAY_INV_EARBUDS-3=嗯……
+#----------------------------------------------------
+# Graff
+#Talking about the robot Brok saved （if he did）
+GPC08B_BOLT1-1=咦，这是你的机器人？
+# Shay
+GPC08B_BOLT1-2=对，是布罗格找回来的。
+# Graff
+GPC08B_BOLT1-3=是吗……？
+# Shay
+GPC08B_BOLT1-4=他要我帮他收留这个机器人，因为它将被报废。
+# Graff
+GPC08B_BOLT1-5=没料到他竟然会对机器人产生怜悯之心……
+# Shay
+GPC08B_BOLT1-6=不是我说，其实你老爹是个性情中人。
+# Graff
+GPC08B_BOLT1-7=是指好的还是坏的？
+# Shay
+GPC08B_BOLT1-8=那就看他把你当朋友还是敌人了！
+# Graff
+GPC08B_BOLT1-9=……
+#----------------------------------------------------
+# Graff
+GPC08B_BOLT2-1=有效吗？
+# Shay
+GPC08B_BOLT2-2=还不确定，等备份完毕后我再检查看看。
+# Graff
+GPC08B_BOLT2-3=（我也想有个自己的机器人）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Walk on desk
+# *****************************************************************
+# Shay
+GPC08B_WALKDESK1-1=喂！是谁这样教你的？
+# Shay
+GPC08B_WALKDESK1-2=算了，别回答我，我已经知道答案了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to hit Shay
+# *****************************************************************
+# Shay
+GPC08B_HITSHAY1-1=格拉夫，我知道你很生气，但我可不是出气筒呀。
+#----------------------------------------------------
+# Shay
+GPC08B_HITSHAY2-1=你在给我挠痒吗！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After taking a bath in the lake
+# *****************************************************************
+# Shay
+GPC08B_SHAY_STINK1-1=啊……
+# Shay
+GPC08B_SHAY_STINK1-2=不要告诉我，你刚在湖里游过泳？
+# Graff
+GPC08B_SHAY_STINK1-3=嗯……
+# Shay
+GPC08B_SHAY_STINK1-4=这个湖里？！
+# Graff
+GPC08B_SHAY_STINK1-5=抱歉。
+# Shay
+GPC08B_SHAY_STINK1-6=没事！布罗格也这么干了。
+# Graff
+GPC08B_SHAY_STINK1-7=……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting Bolt
+# *****************************************************************
+# Shay
+GPC08B_BOLT_HIT1-1=别这样！你这么做可能会中断备份过程。
+#----------------------------------------------------
+# Shay
+GPC08B_BOLT_HIT2-1=你到底有没有听我说话……？
+#----------------------------------------------------
+# Shay
+GPC08B_BOLT_DEAD1-1=啊！看你干了什么！
+# Shay
+GPC08B_BOLT_DEAD1-2=现在我必须从头开始备份了！
+#----------------------------------------------------
+# Graff
+GPC08B_BOLT_DEAD2-1=抱歉……
+# Shay
+GPC08B_BOLT_DEAD2-2=出去！
+#----------------------------------------------------
+# Shay
+GPC08B_BOLT_DEADBIS-1=很好！有效！
+#----------------------------------------------------
+# Shay
+GPC08B_BOLT_DEAD_BACK-1=你真幸运！刚刚那维修很简单！
+#----------------------------------------------------
+
+
+
+
+COOP_GPC08B_SHAY1-1=疯了
+
+COOP_GPC08B_SHAY1-2=我是认真的。
+
+COOP_GPC08B_BOLT1-1=它太可爱了！
+
+COOP_GPC08B_BOLT1-2=没用，但很可爱。

@@ -1,0 +1,1241 @@
+#-------------------------------
+#=Sewers inside action
+#-------------------------------
+
+#----------------------
+#= Mine tutorial
+#----------------------
+ID=PC05B_MINE_LOOK
+T=Whoa... Isn't that...
+W=BROK
+A=CONFUSED
+CONTEXT=Brok enters room and sees mines
+
+T=A self-regenerating mine?!
+W=BROK
+A=SURPRISED
+
+T=I better watch my step...
+W=BROK
+A=SURPRISED
+TEN=PC05B_MINE_TUTORIAL
+
+#----------------------
+ID=PC05B_WIRES1
+T=A bunch of very thin wires... Must be components of those mines.
+W=BROK
+A=THINK
+
+T=After all, they're electronic devices.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC05B_WIRES_MINEBROKEN
+T=Nah... It's obvious that mine lacks more than just a few wires to work.
+W=BROK
+A=THINK
+
+T=I should ask an expert!
+W=BROK
+A=READY
+
+
+#----------------------
+#= Wall inscription
+#----------------------
+ID=PC05B_INSCRIPTION1
+T=Mmph... I could swear I've seen this already...
+W=BROK
+A=THINK
+CONTEXT=Welcome to the rats place.
+
+T=But where...?
+W=BROK
+A=WONDER
+
+T=In any case, this doesn't bode well.
+W=BROK
+A=ANGRY
+
+
+#----------------------
+#= Trouble
+#----------------------
+ID=PC05B_TROUBLE1
+T=Uh-oh... Trouble ahead.
+W=BROK
+A=ANGRY
+TEN=PC05B_TROUBLE2
+
+#----------------------
+#= Rats chief
+#----------------------
+ID=PC05B_CHIEFRAT_FIRST
+T=A croc in the sewers. How cliche.
+W=CHIEFRAT
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=MEH
+CONTEXT=Rats prevent Brok from going further
+
+T=Erm... Hello! I am....
+W=BROK
+C1A=HAPPY
+
+T=Dun care who you are.
+W=CHIEFRAT
+C2A=MEH
+
+T=Mmph. Squealers. Always straight to the point, huh?
+W=BROK
+C1A=ANGRY
+C2A=NORMAL
+
+T=Though... You looks familiar...
+W=CHIEFRAT
+
+T=Well as far as I'm concerned, you all look the same to me.
+W=BROK
+TEN=PC05B_CHIEFRAT_CHECKFIGHT
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_TALKFIGHT
+T=Boss! He's da guy who defeated us this mornin'!
+W=KINS
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=MEH
+C4=KINS
+C4A=SURPRISED
+
+T=What...? Yous lost against this vermin?
+W=CHIEFRAT
+C2A=ANGRY
+
+T=No worries boss! We wasn't prepared.
+W=KINS
+C4A=READY
+
+T=This time we'll get the job done!
+W=KINS
+C4A=ANGRY
+TEN=PC05B_CHIEFRAT_FIRST1B
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_FIRST1B
+T=I'm looking for somethin'. And you're in the way.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+C4=KINS
+C4A=ANGRY
+
+T=Dis our territory, croc. 
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Wrong. The sewers are public.
+W=BROK
+C1A=MOCK
+
+T=Tell that to your precious Government. They exiled us, left us to die.
+W=CHIEFRAT
+
+T=Look, I don't want any trouble...
+W=BROK
+C1A=WONDER
+
+T=Too late. No one gets to see us and live to see tomorrow.
+W=CHIEFRAT
+
+T=Guys...
+W=CHIEFRAT
+
+T=Wait!
+W=BROK
+C1A=YELL
+C4A=ANGRY
+TEN=PC05B_CHIEFRAT_FIRSTCHOICE
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_CHITCHAT1
+T=What are you doing in the Drums...?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+C4=KINS
+C4A=NORMAL
+
+T=Wrong.
+W=CHIEFRAT
+C2A=MEH
+
+T=This ain't the Drums. This is our home.
+W=CHIEFRAT
+
+T=But...
+W=BROK
+
+T=I'm getting tired of him.
+W=CHIEFRAT
+
+T=Lemme explain boss!
+W=KINS
+C4A=READY
+
+T=Yeah, the sewers cover one side of the Drums to the south of the Slums.
+W=KINS
+C4A=WONDER
+
+T=But the Drums are still off limits for us. 
+W=KINS
+C4A=NORMAL
+
+T=We ain't "registered citizens."
+W=KINS
+C4A=ANGRY
+
+T=So the moment we step foot outside, those machines from hell come chasing us.
+W=KINS
+C4A=ANGRY
+
+T=Your fault. You're paying for your treason.
+W=BROK
+C4A=NORMAL
+
+T=I've heard enough.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Guys, get rid of that pest.
+W=CHIEFRAT
+
+T=Not yet! There's something I need to tell you...
+W=BROK
+C4A=ANGRY
+TEN=PC05B_CHIEFRAT_FIRSTCHOICE
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_CHITCHAT2
+T=You threatened an innocent man on the street!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=NORMAL
+C4=KINS
+C4A=NORMAL
+
+T=That old military tramp?
+W=CHIEFRAT
+C2A=MEH
+
+T=Far from innocent. He was amongst the soldiers against us during our Coup.
+W=CHIEFRAT
+
+T=He probably killed some of us back then.
+W=CHIEFRAT
+
+T=We gave him a second chance. Gave this dying fool the products he needed.
+W=CHIEFRAT
+
+T=He didn't pay us back.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Whaddya think happens if we let a client make a fool of us?
+W=CHIEFRAT
+
+T=But...
+W=BROK
+
+T=Boss, he's stalling for time.
+W=KINS
+C4A=ANGRY
+
+T=Man. Yer right, Kins.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=We dun' owe ya any explanation.
+W=CHIEFRAT
+
+T=Dat's your last warning, croc!
+W=CHIEFRAT
+TEN=PC05B_CHIEFRAT_FIRSTCHOICE
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_CHITCHAT3
+T=I was wondering...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+C4=KINS
+C4A=NORMAL
+
+T=Are you deaf?
+W=CHIEFRAT
+C2A=ANGRY
+
+T=No one bothers our boss!
+W=KINS
+C4A=ANGRY
+
+T=Yer gonna get it...!
+W=KINS
+TEN=PC05B_CHIEFRAT_FIGHT
+
+
+#----------------------
+# Chiefrat - EXIT
+#----------------------
+ID=PC05B_CHIEFRAT_BYE1
+T=I'm on my way.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+C4=KINS
+C4A=ANGRY
+
+T=We'll keep an eye on you, croc.
+W=CHIEFRAT
+TEN=PC05B_CHIEFRAT_EXIT2
+
+#----------------------
+ID=PC05B_CHIEFRAT_BYE2
+T=I'll come back later.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+C4=KINS
+C4A=ANGRY
+
+T=Whatta fool.
+W=KINS
+TEN=PC05B_CHIEFRAT_EXIT2
+
+#----------------------
+# Chiefrat - Threaten
+#----------------------
+ID=PC05B_CHIEFRAT_THREAT
+T=I know your kind.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=You Squealers are nothing but scum.
+W=BROK
+
+T=You've been banned for a reason.
+W=BROK
+
+T=Get out of my way.
+W=BROK
+C1A=FURIOUS
+
+T=Ohhhh! Baby croc is having a temper tantrum? I'm soooo scared!
+W=CHIEFRAT
+C2A=MEH
+
+T=I hate to break the news to ya croc, but...
+W=CHIEFRAT
+
+T=Yer clearly outnumbered.
+W=CHIEFRAT
+C2A=HAPPY
+TEN=PC05B_CHIEFRAT_THREATCHOICE
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_THREAT_ATTACK
+T=I don't make deals with scum!
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=SURPRISED
+
+T=I'm gonna get through and you can't stop me!
+W=BROK
+C1A=READY
+
+T=Absurd! Yer done for!
+W=CHIEFRAT
+C2A=ANGRY
+TEN=PC05B_CHIEFRAT_FIGHT
+
+#----------------------
+ID=PC05B_RAT_MORE1
+T=Guys! Get him! NOW!!!
+W=CHIEFRAT
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=ANGRY
+TEN=PC05B_START_WAVE2
+
+#----------------------
+ID=PC05B_RAT_BOSSCOMES1
+T=You got all my boys... So be it.
+W=CHIEFRAT
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=MEH
+
+T=But you'll never get past me!
+W=CHIEFRAT
+C2A=ANGRY
+TEN=PC05B_CHIEFRAT_BOSSCOMES2
+
+#----------------------
+ID=PC05B_CHIEFRAT_THREAT_TALK1
+T=Don't underestimate me.
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=You might take me down...
+W=BROK
+
+T=But not before I get rid of some of you first.
+W=BROK
+
+T=Think about it.
+W=BROK
+
+T=Do you want to take the risk and lose some lives foolishly?
+W=BROK
+
+T=The croc gots a point, boss...
+W=KINS
+C4=KINS
+C4A=NORMAL
+
+T=Shut up!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Did you forget our motto?
+W=CHIEFRAT
+C4A=SURPRISED
+
+T="Fight to the end... To reclaim our due..."
+W=KINS
+C4A=ANGRY
+
+T=I know but...
+W=KINS
+C4A=SURPRISED
+
+T=Look, croc. We won't let you pass.
+W=CHIEFRAT
+C4A=NORMAL
+
+T=But I'll let you live for today. Go back to where you came from.
+W=CHIEFRAT
+
+T=If you dare talk about us to anyone, we'll get you. Your friends. Your family. Everyone you've ever loved.
+W=CHIEFRAT
+
+T=No matter what. No matter where. No matter when.
+W=CHIEFRAT
+
+T=Mmph. I'll be going...
+W=BROK
+C1A=ANGRY
+
+T=(Although this means I'll need to find another way through.)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=PC05B_CHIEFRAT_ENDDIALOG
+
+#----------------------
+# Chiefrat - Trading
+#----------------------
+ID=PC05B_CHIEFRAT_TRADE
+T=I've got something to exchange.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Really now! Whaddya have?
+W=CHIEFRAT
+C2A=MEH
+TEN=PC05B_CHIEFRAT_SHOWINVENTORY
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_DEFAULT1
+T=Maybe this...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Get lost.
+W=CHIEFRAT
+C2A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_DEFAULT2
+T=Would you like that?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Are ya kiddin'?!
+W=CHIEFRAT
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_BILLA
+T=Can you pay my bill, please?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=What for?! You'll be dead in a minute.
+W=CHIEFRAT
+C2A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_STICK
+T=Whaaat?! Threatening us?!
+W=CHIEFRAT
+C1=BROK
+C1A=CONFUSED
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=No, no! Sorry...
+W=BROK
+C1A=HAPPY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_APARTMENTKEY
+T=I know! Take my apartment!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=You could do your business there!
+W=BROK
+
+T=No way. With all the drones around, we can't stay that close to the surface.
+W=CHIEFRAT
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_HOOVER
+T=How about a hoover? This place reeks!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=WHADIDYA JUST SAY?!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Well... It's a sewer, after all...
+W=BROK
+C1A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_MINEBROKEN
+T=(Bad idea... It's theirs and they know how to manipulate them.)
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=CHIEFRAT
+C2A=NORMAL
+MOOD=THINK
+
+T=(Let's find another way to make a good use of it...)
+W=BROK
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_PENDANT
+T=Maybe...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Forget it. Worthless!
+W=CHIEFRAT
+C2A=MEH
+
+T=Absolutely not! It has sentimental value.
+W=BROK
+C1A=CONFUSED
+
+T=Dun' care.
+W=CHIEFRAT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_POLLUTIONPILL
+T=How about...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=They're free. Even for us.
+W=CHIEFRAT
+C2A=MEH
+
+T=Oh, that's right...
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_TRAMPPRESCR
+T=Listen... I've got an incurable disease and...
+W=BROK
+C1=BROK
+C1A=HEARTBROKEN
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Good. Then we'll finish ya.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=N-not yet! Still got some energy for a while!
+W=BROK
+C1A=READY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_MONEY
+T=Take all my moolah!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Can't buy us.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Really...? I would have thought...
+W=BROK
+C1A=THINK
+
+T=I said no. We got standards.
+W=CHIEFRAT
+
+T=(Outlaws with morals... Just my luck.)
+W=BROK
+MOOD=THINK
+C1A=DISAPPOINTED
+TEN=PC05B_CHIEFRAT_FIRSTCHOICE
+
+#----------------------
+ID=PC05B_CHIEFRAT_INV_EXIT
+T=I was mistaken. Got nothing for ya. But...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=CHIEFRAT
+C2A=NORMAL
+TEN=PC05B_CHIEFRAT_FIRSTCHOICE
+IT=1
+
+
+
+#----------------------
+# Chiefrat - Escape
+#----------------------
+ID=PC05B_CHIEFRAT_ESCAPE
+T=Bye, bye!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=CHIEFRAT
+C2A=SURPRISED
+SKIPEND=1
+COMM=Try to escape
+
+T=Get him!
+W=CHIEFRAT
+C2A=ANGRY
+
+#----------------------
+ID=PC05B_CHIEFRAT_ESCAPEHURT
+T=Urgh...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=CHIEFRAT
+C2A=HAPPY
+C4=KINS
+C4A=HAPPY
+
+T=(Laughs)
+BVOICESP=VARIOUS
+
+T=What a fool you are, croc. We set these mines for a reason!
+W=CHIEFRAT
+
+TEN=PC05B_CHIEFRAT_TRYESCAPE4
+
+#----------------------
+ID=PC05B_CHIEFRAT_ESCAPEAFTER
+T=...Erm...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=CHIEFRAT
+C2A=ANGRY
+TEN=PC05B_CHIEFRAT_FIRSTCHOICE
+IT=1
+
+
+
+#----------------------
+ID=PC05B_CHIEFRAT_ESCAPEDEAD
+T=(Laughs)
+BVOICESP=VARIOUS
+NB=1
+D=60
+
+
+
+#-------------------------------
+# Chiefrat - Trying to advance
+#-------------------------------
+ID=PC05B_CHIEFRAT_ADVANCE1
+T=Where d'ya think yer goin'?
+W=CHIEFRAT
+C2=CHIEFRAT
+C2A=ANGRY
+COMM=Trying to get past them
+TEN=PC05B_CHIEFRAT_BACKUP
+
+#-------------------------------
+ID=PC05B_CHIEFRAT_ADVANCE2
+T=Stop!
+W=CHIEFRAT
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=One more step and you're dead meat.
+W=CHIEFRAT
+TEN=PC05B_CHIEFRAT_BACKUP
+
+
+
+#---------------------------
+# Chiefrat - Talking again
+#---------------------------
+ID=PC05B_CHIEFRAT_TALK1
+T=Can we talk?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Go ahead... while you still have a tongue.
+W=CHIEFRAT
+C2A=MEH
+TEN=PC05B_CHIEFRAT_FIRSTCHOICE
+IT=1
+
+
+#----------------------
+# Chiefrat - More rats
+#----------------------
+ID=PC05B_CHIEFRAT_MORERATS
+T=More? Where are they coming from?!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+
+#---------------------------
+# Chiefrat - Beating them
+#---------------------------
+ID=PC05B_CHIEFRAT_BEAT1
+T=Whoa...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+CONTEXT=Brok threw the mine at them from a distance to get rid of them and finds them all unconscious on the floor
+
+T=Phew... They're just unconscious.
+W=BROK
+C1A=TIRED
+
+T=...No way... How could you...
+W=CHIEFRAT
+C1A=THINK
+C2=CHIEFRAT
+C2A=SAD
+
+T=Sorry. You didn't leave me a choice.
+W=BROK
+C1A=OPPOSITE
+
+T=...Go ahead... Finish us...
+W=CHIEFRAT
+
+T=That was never my intention. I'm nothing like you.
+W=BROK
+C1A=MAYBE
+
+T=That voice. I knew a croc...
+W=CHIEFRAT
+C2A=SURPRISED
+
+T=But... That's... Impossible...
+W=CHIEFRAT
+C1A=THINK
+
+T=It's...
+W=CHIEFRAT
+
+T=It's you...!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=I remember ya! After all these years...
+W=CHIEFRAT
+
+T=Huh?
+W=BROK
+
+T=Our banishment. You're responsible for this!
+W=CHIEFRAT
+
+T=What do you mean?
+W=BROK
+C1A=THINK
+
+T=YOU'RE GONNA PAY FOR IT!!!
+W=CHIEFRAT
+TEN=PC05B_CHIEFRAT_WAKES
+
+T=Whoa!
+W=BROK
+C1A=CONFUSED
+
+T=(Bonk)
+
+T=...
+W=CHIEFRAT
+SILENCE=1
+C1A=SURPRISED
+C2A=SURPRISED
+
+T=I had to knock him out.
+W=BROK
+C2=NONE
+C1A=THINK
+
+T=What was that all about?
+W=BROK
+C1A=WONDER
+TEN=PC05B_CHIEFRAT_ENDDIALOG
+CLUE=CLUE_CHIEFRAT_RESPONSIBLE
+
+
+
+#-------------------------------
+ID=PC05B_CHIEFRAT_DEFEND1
+T=Yer wastin' yer time.
+W=CHIEFRAT
+C2=CHIEFRAT
+C2A=MEH
+NB=1
+D=60
+
+#-------------------------------
+ID=PC05B_CHIEFRAT_ATTACK1
+T=Ya dare attack us?!
+W=CHIEFRAT
+C2=CHIEFRAT
+C2A=ANGRY
+CONTEXT=Various with rats
+TEN=PC05B_CHIEFRAT_FIGHT
+
+
+
+#-------------------------------
+ID=PC05B_CHIEFRAT_GAMEOVER1
+T=Ya got what ya deserved, filthy polluter.
+W=CHIEFRAT
+C2=CHIEFRAT
+C2A=ANGRY
+C1=KINS
+C1A=NORMAL
+C4=DART
+C4A=NORMAL
+
+T=Guys, take his belongings and throw his body into the acid.
+W=CHIEFRAT
+C2A=MEH
+
+T=Sure, boss!
+W=KINS
+C1A=HAPPY
+
+T=Can we play with him first?
+W=KINS
+C3A=COCKY
+
+T=Of course.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=Thanks, boss! Yer the best!
+W=KINS
+C3A=NORMAL
+TEN=PC05B_CHIEFRAT_GAMEOVERLAUNCH
+
+
+
+#----------------------
+# Rat
+#----------------------
+ID=PC05B_RAT1
+T=He's passed out...
+W=BROK
+C1=BROK
+C1A=THINK
+
+#----------------------
+# Mine broken
+#----------------------
+ID=PC05B_MINEBROKEN
+T=This mine stays visible, even from afar...? Would this mean...
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Broken mine
+
+T=Yup. It's broken.
+W=BROK
+C1A=ALRIGHT
+TEN=PC05B_MINEBROKEN_CHOICE
+
+#----------------------
+ID=PC05B_MINEBROKEN_TOOFAR
+T=I should get closer...
+W=BROK
+A=THINK
+
+
+#----------------------
+ID=PC05B_MINEBROKEN_TAKE_NEXT
+T=Better avoid big shocks while carrying this though...
+W=BROK
+C1=BROK
+C1A=WORRIED
+
+
+#----------------------
+# Back after fight
+#----------------------
+ID=PC05B_BACK
+T=They're all gone...?
+W=BROK
+C1=BROK
+C1A=WONDER
+CONTEXT=Coming back
+
+T=Gotta be careful. I bet we'll meet again...
+W=BROK
+C1A=OPPOSITE
+TEN=ACTIVATE_CLICKERS
+
+#--------------------------
+#= Item falling from pipe
+#--------------------------
+
+ID=PC05B_ITEMFALL1
+T=...
+W=KINS
+A=WONDER
+CONTEXT=Brok isn't here. A rat checks the items that fall through the pipe (items people are getting rid of).
+
+T=Rubbish.
+W=NORMAL
+TEN=PC05B_ITEMFALL_NEXT
+
+#--------------------------
+
+ID=PC05B_ITEMFALL2
+T=What's dat?
+W=KINS
+A=SURPRISED
+TEN=PC05B_ITEMFALL_NEXT
+
+#--------------------------
+
+ID=PC05B_ITEMFALL3
+T=Another piece of crap.
+W=KINS
+A=ANGRY
+TEN=PC05B_ITEMFALL_NEXT
+
+#--------------------------
+
+ID=PC05B_ITEMFALL_MINE
+T=Hey! It's making a funny noise...
+W=KINS
+A=WONDER
+NB=1
+D=1
+TEN=PC05B_ITEMFALL_MINEEXPLODE
+
+
+
+#--------------------------
+#= Get back items from basket
+#--------------------------
+
+ID=PC05B_GETBACKITEMS
+T=Before going any further, maybe I should get back my items...
+W=BROK
+A=MAYBE
+CONTEXT=Brok gets back items from the basket
+
+#--------------------------
+#= Basket
+#--------------------------
+
+ID=PC05B_BASKET1
+T=So, all the items citizens throw away end up here...?
+W=BROK
+A=MOCK
+
+T=The Squealers must be trafficking these.
+W=BROK
+A=MEH
+TEN=PC05B_BASKET_CHECKFULL
+
+#--------------------------
+
+ID=PC05B_BASKET_FULL1
+T=Anyway, I'll take back my own stuff first.
+W=BROK
+A=READY
+TEN=PC05B_BASKET_CHECKMINE
+
+#--------------------------
+
+ID=PC05B_BASKET_FULLMINE
+T=I'm glad the explosions didn't damage them!
+W=BROK
+A=HAPPY
+TEN=PC05B_BASKET_PICKBACK
+
+#--------------------------
+
+ID=PC05B_BASKET_EMPTY1
+T=Let's see...
+W=BROK
+A=THINK
+
+T=Old ripped clothes... Broken dish...
+W=BROK
+A=MAYBE
+
+T=A... chair? How did that even fit in the tube...?
+W=BROK
+A=STUPID
+
+T=Hey, here's a worm!
+W=BROK
+A=MOCK
+
+T=Delicious!
+W=BROK
+A=HAPPY
+
+#--------------------------
+
+ID=PC05B_BASKET_EMPTY2
+T=Anything else of interest?...
+W=BROK
+A=WONDER
+
+T=I doubt it but it's worth checking again.
+W=BROK
+A=ALRIGHT
+
+T=...
+W=BROK
+A=THINK
+
+T=...Yes! Here's an ad!
+W=BROK
+A=READY
+TEN=PC05B_BASKET_ADVERT_TAKE
+
+
+#--------------------------
+
+ID=PC05B_BASKET_EMPTY3
+T=Can't see anything new. I'll check back later.
+W=BROK
+A=ANGRY
+
+#--------------------------
+
+ID=PC05B_BASKET_PICKBACK1
+T=Wait. Some of my stuff is in that basket over there!
+W=BROK
+A=SURPRISED
+TEN=PC05B_BASKET_GOBACK
+
+#--------------------------
+
+ID=PC05B_BASKET_OTHERS
+T=Erm... I'm interested in picking stuff up, not throwing them away.
+W=BROK
+A=HAPPY
+
+
+#--------------------------
+
+ID=PC05B_ADVERT_FLOOR
+T=Going here was mighty dangerous but at least it was worth the reward!
+W=BROK
+A=ALRIGHT
+TEN=PC05B_FLOOR_ADVERT_TAKE
+
+
+
+#----------------------
+# Mines deactivated
+#----------------------
+ID=PC05B_REMOTECONTROL_MINES1
+T=...
+W=BROK
+A=THINK
+CONTEXT=Using remote control
+
+T=Hey, I believe this deactivated the mines!
+W=BROK
+A=HAPPY
+
+T=This might not last for long though...
+W=BROK
+A=WONDER
+
+
+#----------------------
+# During fights
+#----------------------
+ID=PC05B_CHIEFRAT_GUARDS1
+T=Get lost.
+BNAME=CHIEFRAT
+BVOICE=CHIEFRAT
+NB=1
+D=60
+
+#----------------------
+ID=PC05B_CHIEFRAT_FIGHTSTART1
+T=Get him!
+BNAME=CHIEFRAT
+BVOICE=CHIEFRAT
+NB=1
+D=60
+
+
+#----------------------
+#= End fight
+#----------------------
+ID=PC05B_CHAPTER6END
+T=Goin' somewhere, croc?
+W=RAT
+C1=BROK
+C1A=ANGRY
+C2=RAT
+C2A=COCKY
+
+T=Get out of my way.
+W=BROK
+C1=BROK
+C1A=FURIOUS
+TEN=PC05B_ENDCHAPTER6_FIGHT
+
+
+#----------------------------------------------------
+ID=COOP_PC05B_CHIEFRAT1
+T=Those guys would take any occasion to kill us.
+T=And yet...sometimes I feel pity for them...
+
+
+###############################################
+# PROOFREAD - illuminati1556, eighthdayregret - 26/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# EXPRESSIONS - eighthdayregret - 01/09/2019
+###############################################

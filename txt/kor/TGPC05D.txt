@@ -1,0 +1,1339 @@
+#-------------------------------
+#= GRAFF --- SEWERS BELOW
+#-------------------------------
+
+#----- Interactions --------
+# A little kichen hook that Graff can use to cut his rope
+PC_HOOK=갈고리
+PC_CUPBOARD=찬장
+PC_BAG=가방
+PC_TABLE=책상
+# A sewers access we can see in the background that is sealed with bars
+PC_TUNNEL=터널
+PC_STUFF=물건들
+PC_ROPE=밧줄
+PC_SKIP=다음 방으로 넘어가기
+PC_SKIPLADDER=사다리로 넘어가기
+
+#----- Choices / Items --------
+TUTORIAL_ROPEHOOK_MSG_MOUSE=<button=INPUT_ACTION_SWITCH_MODE> 혹은 <spr=CONTROL_mouseleft> 반복해서 눌러 자르세요
+TUTORIAL_ROPEHOOK_MSG_GAMEPAD=<button=INPUT_ACTION_SWITCH_MODE> 반복해서 눌러 자르세요
+
+#----- Topics --------
+
+PC05D_ROPEHOOKEND_CHOICE=의자에 여전히 있을까요?
+PC05D_ROPEHOOKEND_YES=그렇다, 묶인 척한다
+PC05D_ROPEHOOKEND_NO=아니다, 당장 일어나자
+GOT_PIPEWEAPON=파이프 덩어리다!
+
+PC05D_CHOICEBOMB=누구를 살릴까요?
+PC05D_CHOICEBOMB_GROUP=병원 환자들
+PC05D_FIGHT=싸운다
+PC05D_SURRENDER=항복한다
+PC05D_SURPRISEATTACK_CHOICE=기습을 시도할까요?
+
+
+#----- Dialog --------
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+
+# *****************************************************************
+# CONTEXT - Graff has been kidnapped by the rats. He's waking up...
+# *****************************************************************
+# Graff                                 
+GPC05D_FIRST-1=...
+# Graff                                 
+GPC05D_FIRST-2=으윽... 머리야...
+# Graff                                 
+GPC05D_FIRST-3=이럴 수가... 나 묶여 있잖아...!
+# Graff                                 
+GPC05D_FIRST-4=이런 건... 싫어...
+# Graff                                 
+GPC05D_FIRST-5=...
+# Graff                                 
+GPC05D_FIRST-6=밧줄이 조금 헐거운데. 조금만 힘쓰면 움직일 수 있겠다!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff meets rat chief
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NORMAL-1=안녕, 공주님! 드디어 일어났나 봅니다?
+# Graff                                 
+GPC05D_CHIEFRAT_NORMAL-2=...
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff moved and was spotted by the chief
+GPC05D_CHIEFRAT_SPOTTED-1=나랑 장난하냐, 꼬맹아!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SPOTTED-2=네가 진짜로 우리로부터 도망칠 수 있다고 생각해?
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff had picked the pipe chunk
+GPC05D_CHIEFRAT_SURRENDERWEAPON-1=그리고 숨기고 있는 그 무기 내려놔.
+# Graff                                 
+GPC05D_CHIEFRAT_SURRENDERWEAPON-2=엄... 알겠어요...
+#----------------------------------------------------
+# Graff                                 
+#Surrender
+GPC05D_CHIEFRAT_SURRENDER-1=부디... 살살 해 주세요...
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SURRENDER-2=으으, 겁쟁이 자식.
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff moved from his original position
+GPC05D_CHIEFRAT_MOVED-1=어이! 이 주변을 여행한 소감은 어때?
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_CHIEFRAT_MOVED2-1=여행은 관두는 게 좋을 거야. 안 그러면 내가 네 밧줄을 단단히 묶을 테니... 그러면 꽤 아플걸.
+# Graff                                 
+GPC05D_CHIEFRAT_MOVED2-2=왜 그렇게 신경 써 주나요?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_MOVED2-3=넌 우리 손님이니까!
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff is spotted while cutting his rope
+GPC05D_CHIEFRAT_CUTROPE-1=아, 귀여워라! 거기 있는 갈고리로 밧줄을 끊을 수 있다고 생각했나 봐?
+#----------------------------------------------------
+# Chiefrat                                 
+#If he took the pipe chunk
+GPC05D_CHIEFRAT_DROPWEAPON-1=아! 등 뒤에 무기까지 숨기고 있었어?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_DROPWEAPON-2=나쁜 야옹이 같으니!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_CHIEFRAT_MOVED3-1=원래 자리로 되돌려주지.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - If Graff hits the rat chief with the pipe chunk by surprise
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_SURPRISEATTACK1-1=으으윽!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SURPRISEATTACK2-1=해냈다!
+# Kins                                 
+GPC05D_SURPRISEATTACK2-2=...?
+# Kins                                 
+GPC05D_SURPRISEATTACK2-3=방금 뭐였습니까 대장?
+# Graff                                 
+GPC05D_SURPRISEATTACK2-4=젠장! 저 녀석들 오고 있잖아!
+#----------------------------------------------------
+# Kins                                 
+GPC05D_SURPRISEATTACK3-1=네가 한 짓이냐, 야옹아?!
+# Kins                                 
+GPC05D_SURPRISEATTACK3-2=넌 이제 죽었어!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First dialog with the rat chief
+# *****************************************************************
+# Graff                                 
+GPC05D_FIRSTDIALOG-1=당신이 여기 대장인가 보네.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-2=아, 그 똘똘이 아냐!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-3=이름이 그래프라고 했나? 난 네가 친구처럼 똑똑하다고 생각했는데.
+# Graff                                 
+GPC05D_FIRSTDIALOG-4=오트?!
+# Graff                                 
+GPC05D_FIRSTDIALOG-5=함부러 오트를 건드리지 않는 게 좋을걸!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-6=야! 다 괜찮아. 네가 협력만 해 준다면 말이야.
+# Graff                                 
+GPC05D_FIRSTDIALOG-7=우리한테서 뭘 원하는데?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-8=아, 좀 더 분발해봐! 너처럼 현명한 녀석은 뭘 원하는지 알아낼 수 있을 텐데!
+# Graff                                 
+GPC05D_FIRSTDIALOG-9=...
+# Graff                                 
+GPC05D_FIRSTDIALOG-10=돈 때문에 우릴 납치한 거지.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-11=그것도 이유 중 하나지만 사실...
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-12=그렇게 단순한 문제는 아니란다.
+# Graff                                 
+GPC05D_FIRSTDIALOG-13=그렇다면 무엇을...
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-14=그쯤 하지. 질문을 할 사람은 네가 아니라 나니까!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-15=좀 편안해?
+# Graff                                 
+GPC05D_FIRSTDIALOG-16=응...?
+# Graff                                 
+GPC05D_FIRSTDIALOG-17=어떨 거라 생각해요?
+# Graff                                 
+GPC05D_FIRSTDIALOG-18=내 의지랑 상관없이 이딴 질식할 것처럼 냄새나는 하수구에 끌려왔는데 편안하냐고요!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-19=그건 미안하다. 어떻게든 이 장소를 살 만한 장소로 만들려고 노력 중인데 말이야.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-20=배고파? 목말라?
+# Graff                                 
+GPC05D_FIRSTDIALOG-21=우스꽝스러운 짓 좀 그만해요!
+# Graff                                 
+GPC05D_FIRSTDIALOG-22=정확히 뭘 원하는지 말해주거나 날 풀어줘요!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-23=아무래도 첫 단추를 잘못 끼운가 본데.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-24=우린 나쁜 사람이 아냐. 문명인이라고.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-25=앞으로 3일 동안 잘 돌봐 줄게.
+# Graff                                 
+GPC05D_FIRSTDIALOG-26=3일...?
+# Graff                                 
+GPC05D_FIRSTDIALOG-27=그렇구나! 그 해커!
+# Graff                                 
+GPC05D_FIRSTDIALOG-28=그 자식이랑 일하고 있었군요! 그 자식이 날 가두라고 요청한 거고!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-29=그럼. 그 자식은 우리한테 빚을 졌고 넌 말하자면 협상 카드야.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-30=걱정 마렴. 거래만 마치면 너흴 풀어 줄 테니까!
+# Graff                                 
+GPC05D_FIRSTDIALOG-31=그럴 수는 없어요! 난 여기 있어서 안 된 다고요!
+# Graff                                 
+GPC05D_FIRSTDIALOG-32=마침 내 아저씨가 탐정이거든요! 아저씨라면 날 탈출시킬 수 있을 테니 어디 두고 보라고요!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-33=탐정이라...?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-34=망상이 심하군.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-35=정말로 그 아저씨란 사람이 우리 경비를  뚫고 여기까지 올 거라 생각해?
+# Graff                                 
+GPC05D_FIRSTDIALOG-36=물론이죠! 아저씨는 엄청 쌔거든요! 당신이 싸워봤자 이기지도 못할 걸요!
+# Graff                                 
+GPC05D_FIRSTDIALOG-37=이미 그랬겠지만!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-38=그 말이 사실이라면...
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-39=네가... 그 망할 악어 자식의...!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_FIRSTDIALOG2-1=저기요! 어디로 가는 거에요...?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG2-2=휴식하러. 생각할 시간이 필요하거든.
+# Graff                                 
+GPC05D_FIRSTDIALOG2-3=하지만...!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Second dialog with the rat chief
+# *****************************************************************
+# Graff                                 
+GPC05D_SECONDDIALOG1-1=그래서! 벌써 제가 그리웠나 봐요?
+# Graff                                 
+GPC05D_SECONDDIALOG1-2=마침 잘 됐네요! 아직 우리 할 이야기가 남아있죠!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-3=오오오오! 이젠 용감한 척 하는 거니?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-4=그런 자세를 취해봤자 아무도 안 속는다. 넌 그저 겁먹은 꼬마 고양이에 불과해.
+# Graff                                 
+GPC05D_SECONDDIALOG1-5=아, 아냐!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-6=아-하.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-7=킨즈?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-8=킨즈!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG1_PRECHOICE-1=(...)
+# Graff                                 
+GPC05D_SECONDDIALOG1_PRECHOICE-2=(다른 사람을 찾으러 갔어...)
+#----------------------------------------------------
+# Kins                                 
+GPC05D_SECONDDIALOG1B-1=아! 엄... 왔습니다!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1B-2=해치워.
+# Kins                                 
+GPC05D_SECONDDIALOG1B-3=네, 대장!
+#----------------------------------------------------
+# Ott                                 
+GPC05D_SECONDDIALOG2-1=(아니! 지금 무슨 짓을...)
+# Ott                                 
+GPC05D_SECONDDIALOG2-2=(으으으읍읍읍)
+# Graff                                 
+GPC05D_SECONDDIALOG2-3=오트... 목소리잖아!
+# Graff                                 
+GPC05D_SECONDDIALOG2-4=무슨 짓을 하는 거야!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-5=진정해. 우리도 해칠 마음은 없어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-6=적어도 지금은 말이야.
+# Graff                                 
+GPC05D_SECONDDIALOG2-7=대체 뭘 원하는 건데요? 돈이에요?
+# Graff                                 
+GPC05D_SECONDDIALOG2-8=갖고 싶은 게 있다면 다 가져가요!
+# Graff                                 
+GPC05D_SECONDDIALOG2-9=전부 다요. 신경 안 쓰니까!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-10=물론 네 돈은 우리 거지!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-11=하지만 내가 누군가를...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-12=찾고 있어서 말이야.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-13=우리 간단한 게임 하나 해볼까.
+# Graff                                 
+GPC05D_SECONDDIALOG2-14=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-15=두 장소에 폭탄을 놓으라고 부하들에게 명령을 내렸지.
+# Graff                                 
+GPC05D_SECONDDIALOG2-16=폭탄?!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-17=첫 번째 폭탄은 다른 방에 있는 네 친구 의자 아래에 있지.
+# Graff                                 
+GPC05D_SECONDDIALOG2-18=...!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-19=좀 더 큰 폭탄은 55X 구역에 있는 병원에 두었다.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-20=너도 알잖아... 온갖 술주정뱅이들과 잉여 인간들의 남은 돈을 쪽쪽 빨아먹는 그곳 말이야.
+# Graff                                 
+GPC05D_SECONDDIALOG2-21=병원이라뇨?!
+# Graff                                 
+GPC05D_SECONDDIALOG2-22=거짓말!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-23=아, 너한테 거짓말할 이유가 있겠니!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-24=우리가 폭발물을 다루는 걸 좀 배웠거든. 만약 그 폭탄이 터지면 적어도 열 명은 저세상 행 티켓 끊어놨겠지!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-25=자, 여기서 재밌는 것 해볼까!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-26=선택은 너한테 달려있다.
+# Graff                                 
+GPC05D_SECONDDIALOG2-27=선택...?
+# Graff                                 
+GPC05D_SECONDDIALOG2-28=제가 왜 사람들을 터뜨릴 거라 생각해요?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-29=아니 아니 아니!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-30=말하지 않아도 돼!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-31=넌 그저 선택만 하면 되는 거야...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-32=...누구를 구할 것인지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-33=하지만 중요한 사실.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-34=네가 선택하지 않은 사람들에겐 그들의 삶이 있겠지... 그렇다는 것은...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-35=삶이 곧장 아작 난다는 거야.
+# Graff                                 
+GPC05D_SECONDDIALOG2-36=당신은... 괴물이야!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-37=걱정 안 해도 된단다! 우린 엄청 신경 썼거든.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-38=네가 병원에 있는 패배자들을 구하기로 마음 먹으면, 폭발은 한 방에서만 일어나겠지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-39=네 친구가 있는 방 말이야.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-40=알았지? 적어도 넌 안전해!
+# Graff                                 
+GPC05D_SECONDDIALOG2-41=난... 절대 못해...!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-42=오오, 하지만 해야 할 걸!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-43=네가 고르지 않는다면...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-44=내가 직접 둘 다 폭발시킬 테니까.
+# Graff                                 
+GPC05D_SECONDDIALOG2-45=아... 안 돼...!
+# Graff                                 
+GPC05D_SECONDDIALOG2-46=시... 싫어요...!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-47=난 확실히 말했어. 규칙은 규칙이야.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-48=그리고 내 손이 슬슬 근질근질 거리는 구나.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-49=서두르지 않으면 내가 실수로 버튼을 누를지도 몰라!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-50=그래서! 내가 터뜨리기 전에 딱 10초 주마.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-51=선택하지 않으면 내가 둘 다 터뜨리겠지!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-52=자, 선택해!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-53=누구를 살릴 거지?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-54=네 친구? 아니면 만난 적도 없는 패배자들 10명 이상?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-55=째깍, 째깍!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP-1=(오트... 날 용서해줘...)
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP-2=55X 구역에 있는 사람들을... 살리겠어.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP-3=흥미롭군. 질보단 양인가.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP-4=그렇다면 이 버튼을 눌러야겠군.
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP-5=하지 마...!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-1=다른 해결책이 있을 거야...!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-2=그런 거 없다!
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-3=왜 이런 짓을 벌이는 거에요...?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-4=왜냐면 벌일 수 있으니까.
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-5=...
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-6=대답하지 않겠다 라?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-7=아, 그래. 그게 네 선택이란 거군.
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-8=아냐! 기다려!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT-1=병원에 있는 사람들에겐 미안하지만...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT-2=오트는 내 최고의 친구야... 오트를 잃을 수는 없어...
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT-3=그래서 한 명의 목숨이 열 명의 목숨보다 소중하다 라?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT-4=그 이기적인 모습! 마음에 들었어!
+#----------------------------------------------------
+# Graff                                 
+#Explosion sound
+GPC05D_CHIEFRAT_SAVEGROUP2-1=...!!!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-2=오오우! 불쌍한 녀석!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-3=어떻게 네 친구를 그런 꼴로 만들 수 있는 거야?
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-4=...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-5=당신은...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-6=살인자야...!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-7=설마 날 말 하는 거니? 야옹아 그건 네 선택이었어!
+#----------------------------------------------------
+# Graff                                 
+#Explosion sound
+GPC05D_CHIEFRAT_SAVEOTT2-1=...!!!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-2=아, 그래. 까먹고 있었네.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-3=병원이 상당히 근처에 있다는 사실을 안 말해줬지 뭐야.
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT2-4=당신...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT2-5=저 사람들을 죽인 거에요...?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-6=내가 아니라.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-7=네가 죽인 거야.
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT2-8=...
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-9=하지만 나쁘게 여기지 마렴!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-10=살 날이 얼마 안 남은 쓰레기들이었으니까.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-11=그 자식들도 우릴 죽여줘서 감사하다고 너한테 절할걸!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION2-1=안 돼애애애애애!!!!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION2-2=저런! 넌 모두를 죽여버렸네.
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION2-3=이럴 수는... 없어...!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION2-4=짠! 그게 되네!
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION2-5=오트...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG3-1=나...
+# Graff                                 
+GPC05D_SECONDDIALOG3-2=난...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3-3=날 죽이게? 아니면 도망치려고?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3-4=아, 좀!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_NEXTROOM-1=이 방에 들어와야 할 거야... 물론 광경이 그렇게 좋진 않겠지만.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_HOSPITAL-1=넌 약해빠졌어. 육체적으로나 정신적으로나.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_HOSPITAL-2=어서 말해봐! 친구한테 네가 내린 선택을 말해보는 게 어때?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_HOSPITAL-3=분명히 자신을 구하기 위해 열 명이 넘는 사람의 목숨을 날려버린 이야기를 듣고 싶어하겠지.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG3B-1=...
+# Graff                                 
+GPC05D_SECONDDIALOG3B-2=...으윽...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-3=하 하 하 하 하!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-4=그렇게 똑똑하진 않나 보구나, 꼬마야!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-5=우리 악명이 생각보다 심한가 본데.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-6=사실은 말이다. 우린 살인자가 아니야.
+# Graff                                 
+GPC05D_SECONDDIALOG3B-7=네...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-8=우린 필요할 때만 사람들을 죽여.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-9=말했잖아. 이건 그냥 게임이라고!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-10=다들 안전해. 폭탄 같은 것은 없었다고.
+# Graff                                 
+GPC05D_SECONDDIALOG3B-11=하지만...
+# Graff                                 
+GPC05D_SECONDDIALOG3B-12=아까 그 소리는요...? 진동은...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-13=그냥 쓰레기 더미에서 찾은 구형 스피커야. 생각보다 강렬하지!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-14=킨즈. 재갈을 풀어.
+# Kins                                 
+GPC05D_SECONDDIALOG3B-15=네, 대장.
+#----------------------------------------------------
+# Ott                                 
+GPC05D_SECONDDIALOG3C-1=(...)
+# Ott                                 
+GPC05D_SECONDDIALOG3C-2=(그래프...?! 무슨 일이 벌어지고 있는 거야...?)
+# Ott                                 
+GPC05D_SECONDDIALOG3C-3=(음음읍읍읍읍음읍!)
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-4=이야, 상당히 재밌었어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-5=...
+# Graff                                 
+GPC05D_SECONDDIALOG3C-6=농담... 이었다고요.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-7=그럼.
+# Graff                                 
+GPC05D_SECONDDIALOG3C-8=아뇨, 제 말은...
+# Graff                                 
+GPC05D_SECONDDIALOG3C-9=당신들이 살인자가 아니라고 한 거요...
+# Graff                                 
+GPC05D_SECONDDIALOG3C-10=그런데도 당신들은 슬럼에 사는 모든 사람들을 죽음으로 몰고 있잖아요!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-11=대체 무슨 말을 지껄이는 거야...?
+# Graff                                 
+GPC05D_SECONDDIALOG3C-12=배급약 파이프요!
+# Graff                                 
+GPC05D_SECONDDIALOG3C-13=당신이 다 망가뜨렸잖아!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-14=확실히 짚고 넘어가자.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-15=우리 스퀼러들은 살기 위해서 뭐든지 하지. 이게 우리가 사는 방식이야.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-16=우린 그저 파이프 안에 남은 것들을 가져간 것 뿐이야.
+# Graff                                 
+GPC05D_SECONDDIALOG3C-17=그렇다면... 당신들은...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-18=우리가 일을 벌이진 않았다.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-19=내 부하들이 한밤중에 로봇들이 파이프 갖고 장난치는 것을 보긴 했지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-20=글쎄? 나도 왜 그런지는 몰라.
+# Graff                                 
+GPC05D_SECONDDIALOG3C-21=로봇들이요...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-22=약 고갈 사태는 외부에서로부터 조작됐어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-23=우리를 이런 비참한 삶으로 몰아넣은 부자들에게 물어봐야 할 걸!
+# Graff                                 
+GPC05D_SECONDDIALOG3C-24=어떻게 당신 말을 믿죠...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-25=믿던가 말던가.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-26=신경 안 써.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG4-1=잠깐!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG5-1=아직도 모르겠어요.
+# Graff                                 
+GPC05D_SECONDDIALOG5-2=이 게임의 요점은 뭔데요?
+# Graff                                 
+GPC05D_SECONDDIALOG5-3=저한테서 대체 뭘 바라는 건데요?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG5-4=복수...
+# Graff                                 
+GPC05D_SECONDDIALOG5-5=저한테요...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG5-6=하 하! 아냐.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG5-7=우리가 이런 상황에 놓이게 된 주범 중 하나지...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-1=네 아빠다!
+# Graff                                 
+GPC05D_SECONDDIALOG6-2=제... 아빠가요?
+# Graff                                 
+GPC05D_SECONDDIALOG6-3=렘이란 사람이요? 거의 아는 게 없는데...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-4=멍청하게 굴지 마. 탐정 놀이나 하는 그 악랄한 자식 말하는 거야.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-5=모든 게 다 그 녀석 때문이야!
+# Graff                                 
+GPC05D_SECONDDIALOG6-6=응...?
+# Graff                                 
+GPC05D_SECONDDIALOG6-7=아저씨가 뭘 했는데요?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-8=모르나 보군.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-9=확실히, 넌 아무것도 몰라.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-10=그 자식, 널 갖고 놀았군.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-11=마치 나한테 했던 것처럼...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-12=그것도 더 교묘하게 말이야.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG6_GOOD-1=당신은 틀렸어요! 아저씨는...
+# Graff                                 
+GPC05D_SECONDDIALOG6_GOOD-2=좋은 사람이에요! 쓰레기는 당신이겠죠!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6_GOOD-3=하 하 하! 웃기긴.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG6_BAD-1=브록 아저씨가...
+# Graff                                 
+GPC05D_SECONDDIALOG6_BAD-2=그래서 사실이에요...?
+# Graff                                 
+GPC05D_SECONDDIALOG6_BAD-3=어서... 말해봐요.
+#----------------------------------------------------
+# Chiefrat                                 
+#Changes according to player actions
+GPC05D_SECONDDIALOG6B-1=그 자식은 나와 내 부하들을 계속 공격했어.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6B_MINE-1=우리한테 지뢰를 던졌어!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6B_MINE-2=폭발했는데도 살아남은 게 용하다니까!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C-1=우리한테만 그런 게 아냐.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C-2=우린 지켜보고 있었어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C-3=길가에 있는 로봇은 그 자식에게 있어 샌드백에 불과하다고.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_POLICE-1=심지어 경찰도 때려눕혔지!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_BOLT-1=연민이라곤 일도 없었어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_BOLT-2=작고 슬픔에 빠진 로봇이 하나 있었는데 그 자식의 주먹을 버티지도 못하더군.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_STUBOT-1=아, 그 학생봇이라고 알고 있으려나?
+# Graff                                 
+GPC05D_SECONDDIALOG6C_STUBOT-2=학생봇이요...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_STUBOT-3=그럼. 펑 하고 박살 났지.
+# Graff                                 
+GPC05D_SECONDDIALOG6C_STUBOT-4=...!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D-1=뭐, 저 로봇들은 일회용이지만, 뭐라고 하는지 알겠지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D-2=로봇들을 해치는 녀석이 사람을 해치지 않는다는 보장이 있겠냐고.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_RJ-1=그 경찰 곰 녀석 엄청 얻어맞던데, 살아 있으려나 모르겠다.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_TRAMP-1=더 심한 거 알려줄까?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_TRAMP-2=어제 그 자식이 한 노숙자를 때려 죽인 것을 내 부하들이 목격했지.
+# Graff                                 
+GPC05D_SECONDDIALOG6D_TRAMP-3=아저씨가... 죽였다고요...?
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-1=그리고 네 절친도 사실 너에게 비밀 하나를 갖고 있어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-2=그 녀석도 그랬지.
+# Graff                                 
+GPC05D_SECONDDIALOG6D_OTT-3=뭐라고요...?!
+# Graff                                 
+GPC05D_SECONDDIALOG6D_OTT-4=아저씨가... 오트를 공격했다고요?!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-5=그럼.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-6=완전 기절 시키더라고. 네 친구가 많은 것을 말해주던데 한번 너도 물어보는 게 어때!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-7=그러고는 그 악어 자식... 다 널 위해서 라고 변명하더라!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6E-1=세상에 어떻게 이렇게 뒤틀린 사람이 다 있어?
+# Graff                                 
+GPC05D_SECONDDIALOG6E-2=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rat chief gets all nostalgic and explains his reasons
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-1=어쨌든...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-2=그 악어 자식에 대해선 여기까지 하기로 할까.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-3=우리 이야기를 들려줘야겠지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-4=우리 스퀼러들은 이 땅에 수천 년 전에 도달했어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-5=부활절 이후, 어떠한 기술의 도움 없이 재건을 돕기 위해 불렸지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-6=수세기 동안 우린 가장 근본적인 임무를 부여 받았다.
+# Graff                                 
+GPC05D_SECONDDIALOG6F-7=그렇겠죠. 연구에 따르면...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-8=그래, 그래. 우리들은 이 땅의 다른 사람들만큼 똑똑하지 않았어. 상황은 점점 더 나빠지고 있었고.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-9=자연 또한 우리를 거부하던가. 우리는 다른 종과 교배를 할 수 없고 우리 종족끼리만 자손을 낳을 수 있었으니.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-10=뭐 아무튼.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-11=우리의 유일한 실수는 아무 일도 예상하지 못한 것이지. 우리는 이 사회의 노예가 되고 말았어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-12=점차 시스템은 그 망할 로봇들을 온 곳에 풀어놓기 시작했어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-13=우리의 직업을 빼았고, 우리의 위치를 대체했어. 우리 보고 굶어죽으라 한 거나 다름없다고.
+# Graff                                 
+GPC05D_SECONDDIALOG6F-14=다른 사람들이 들을 수 있게 의견을 냈어야죠!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-15=하! 순진하긴.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-16=청각 장애인 앞에서 소리를 지르면 무슨 소용이 있지?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-17=당연히 시위도 하고 그랬어. 하지만 높으신 분들이 우릴 신경 쓸 거라 생각해?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-18=결국 그 날이 왔다...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-1=딱 10년 전, 시스템이 붕괴하기 시작했어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-2=그 때가 기회였지.
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-3=그 이야기는 잘 알고 있어요.
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-4=쿠데타를 시도했지만 패배하고 이 땅에서 추방당했죠.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-5=그래. 하지만...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-6=언론에서 일부 사실을 은폐하더군.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-7=난 수석 사령관이었어. 거의 이길 뻔했다고.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-8=그 녀석만 아니었어도...
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-9=잠깐만요. 혹시...
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-10=브록 아저씨가 거기 있었나요?
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-11=그리고... 아저씨가 당신을 쓰러트렸나요?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-12=...
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-13=말도 안 돼요!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F3-1=이것 봐.
+#----------------------------------------------------
+# Graff                                 
+#On the picture we see Brok defeating the rat chief during Autarcism Day
+GPC05D_SECONDDIALOG7-1=그... 그럴 리가요.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG7_NOTSEEN-1=이 사진... 합성이네요.
+# Graff                                 
+GPC05D_SECONDDIALOG7_NOTSEEN-2=합성이겠죠!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-1=이 사진을... 박물관에서 본 적이 있어요.
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-2=하지만...
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-3=확실하진 않았는데...
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-4=당신이... 조작한 거겠죠...!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-1=난 그 날 있었던 일 분 일 초를 다 기억하고 있어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-2=그 자식은 거기에 있었어.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-3=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-4=우리가 추방당하고 나서...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-5=동족들은 죽어가기 시작했어.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-6=어둠 속에서 살면서 우리는 누가 살아야 하고 누가 죽어야 하는지에 대한 선택을 해야 했지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-7=우리 공주님, 굶어 죽는 고통을 알고 있을까?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-8=힘이 없는 녀석들을 잡아먹어서 힘이 있는 녀석들을 살리는 그런 것 말이야.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-9=우웩...!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-10=그러고선 네가 끔찍한 삶을 살았다고 생각해...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-11=웃기지 마!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-12=하긴. 우리에게 공통점이 있긴 하네.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-13=똑같은 사람을 원망하는 공통점 말이야.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-14=아직... 당신을 못 믿겠어요.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-15=잘 봐.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-16=...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-17=그 은행 명세서는...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-18=이 돈이 어디서 나오는 거라고 생각하나?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-19=분명... 제 엄마가 남긴 돈이겠죠.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-20=그 악어 자식이 그 사실도 숨겼나?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-21=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-22=당연히 그렇겠지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-23=그래서! 네가 16살이 되면 그 돈을 받기로 되어있는 것 맞지?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-24=그렇죠. 시험 칠 때 그렇게 쓰인 문제를 본 기억이 있어요.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-25=자. 그럼...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-26=네 생일이 지나자마자 불행스럽게 "사고"를 당했다 치자.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-27=네 돈은 어떻게 될까?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-28=그건...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-29=살아있는 가장 가까운 사람에게 전달되겠죠...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-30=...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-31=당신 말은...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-32=마아아아침내! 눈치가 왜 이렇게 늦어.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-33=아냐! 그럴 리가...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-34=아저씨는 그런 짓을 절대 저지를 사람이 아니에요.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-35=아, 순진하긴!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-36=언제까지 아이처럼 굴 거니?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-37=넌 드러머여야했어!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-38=진심으로 그 자식을 안다고 말할 수 있냐?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-39=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-40=나라면 그 자식이 어떤 자식인지 알아내는데 오래 걸리지 않을 텐데.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-41=여태 널 데리고 다니면서 계속 기다려왔던 거야.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-42=널 최소한 살아있게만 해 놓고선.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-43=앞으로 3일.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-44=딱 3일만 더 기다리고 나선...
+# Chiefrat                                 
+#The sound you do when you mean someone's gonna get murdered
+GPC05D_SECONDDIALOG7B-45=깨꼬닥!
+# Graff                                 
+GPC05D_SECONDDIALOG7B-46=아... 아냐!
+# Graff                                 
+GPC05D_SECONDDIALOG7B-47=아... 아저씨는 날 구했어!
+# Graff                                 
+GPC05D_SECONDDIALOG7B-48=몇 번 씩이나!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-49=물론 그렇겠지! 하지만 왜 그런지 알겠지.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-50=그 자식의 모순된 행동을 보면 이해가 갈 거야.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-51=내 말 알아들었어?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-52=넌 꼭두각시 인형인 거야.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7C-1=사진은 갖고 있도록 해. 난 더 이상 꼴도 보기 싫으니까.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG8-1=방금 한 말이 사실일까...?
+# Graff                                 
+GPC05D_SECONDDIALOG8-2=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Ott escapes
+# *****************************************************************
+# Unknown                                 
+GPC05D_SECONDDIALOG8B-1=(이상한 소리)
+# Graff                                 
+GPC05D_SECONDDIALOG8B-2=응...?
+#----------------------------------------------------
+# Kins                                 
+GPC05D_SECONDDIALOG9-1=대장!
+# Kins                                 
+GPC05D_SECONDDIALOG9-2=못 생긴 꼬마요. 도망쳤습니다!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG9-3=뭐라고?!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG9-4=당장 쫓아가!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG10-1=오트?!
+# Graff                                 
+GPC05D_SECONDDIALOG10-2=오트가 해냈나...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG11-1=너 이 자식!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG11-2=그 못생긴 꼬마가 뭔 일을 꾸미는지 당장 말해! 2초 준다!
+# Graff                                 
+GPC05D_SECONDDIALOG11-3=그걸 제가 어떻게 알아요? 난 몰라...
+#----------------------------------------------------
+# Graff                                 
+#Rat chief hits Graff. He doesn't want to play anymore
+GPC05D_SECONDDIALOG12-1=으아악!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-2=장난도 여기까지!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-3=당장 실토하지 않으면 내가 악명 값을 하게 될지도 모른다!
+# Graff                                 
+GPC05D_SECONDDIALOG12-4=엄...
+# Graff                                 
+GPC05D_SECONDDIALOG12-5=오트를 제가 잘 아는데 날 여기 혼자 두진 않을 거에요.
+# Graff                                 
+GPC05D_SECONDDIALOG12-6=분명 도움을 요청하러 갔겠죠.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-7=누구를?!
+# Graff                                 
+GPC05D_SECONDDIALOG12-8=무슨 일이 벌어지면 브록 아저씨를 찾아가라고... 말했어요.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-9=그래...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-10=하 하 하!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-11=얘들아, 계획 변경이다.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-12=그 버릇 없는 자식이 망할 악어 자식과 함께 돌아오길 기다리자고.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-13=환영 인사를 거창하게 할 준비를 해야 할 거야!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG13-1=...
+# Graff                                 
+GPC05D_SECONDDIALOG13-2=잘한다. 나 때문에 모두를 난장판으로 끌어버렸어.
+# Graff                                 
+GPC05D_SECONDDIALOG13-3=꼬리 없는 자든 뭐든 신에 대해서 잘 아는 것은 없지만...
+# Graff                                 
+GPC05D_SECONDDIALOG13-4=제발...
+# Graff                                 
+GPC05D_SECONDDIALOG13-5=일이 잘 풀렸으면 좋겠어요...
+# Graff                                 
+GPC05D_SECONDDIALOG13-6=우리 모두 다 무사하길...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Conversation between rat chief and his minions
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-1=뭐야...?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-2=야 이 돌대가리야! 입구를 지키는 사람이 왜 아무도 없냐?
+# Kins                                 
+GPC05D_CHIEFRAT_COMES-3=어... 죄송합니다 대장. 몰랐습니다.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-4=다트!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-5=당장 입구로 가.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-6=아무도 출입 못하게!
+# Dart                                 
+GPC05D_CHIEFRAT_COMES-7=알갰습니다!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Various interactions
+# *****************************************************************
+# Graff                                 
+GPC05D_FAR1-1=너무 멀리 있어서 아무것도 못하겠어.
+#----------------------------------------------------
+# Graff                                 
+#Graff sees Ott through the tiny hole
+GPC05D_WALLHOLE1-1=설마...! 혹시...
+# Graff                                 
+GPC05D_WALLHOLE1-2=(쉿! 오트! 혹시 너야?)
+# Graff                                 
+GPC05D_WALLHOLE1-3=(야! 내 말 들려...?)
+# Graff                                 
+GPC05D_WALLHOLE1-4=대답을 하지 않아. 그렇다고 소리를 지르기엔 위험해.
+# Graff                                 
+GPC05D_WALLHOLE1-5=오트가 괜찮아야 할 텐데...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WALLHOLE2-1=오트가 저기에 있어!
+# Graff                                 
+GPC05D_WALLHOLE2-2=우리 둘 다 여기서 빠져나올 방법을 찾는 게 좋겠어!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CUPBOARD1-1=여기에 음식을 잔뜩 보관해놨군.
+# Graff                                 
+GPC05D_CUPBOARD1-2=이 서랍장을 열 수는 없어.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CUPBOARD_FREE-1=어디 보자.
+# Graff                                 
+GPC05D_CUPBOARD_FREE-2=으윽... 저 서랍장은 속옷으로 가득 차있잖아...!
+# Graff                                 
+GPC05D_CUPBOARD_FREE-3=그리고 이건... 양말이네.
+# Graff                                 
+GPC05D_CUPBOARD_FREE-4=갈수록 가관이네. 무슨 부엌에 포크나 나이프가 없냐?
+# Graff                                 
+GPC05D_CUPBOARD_FREE-5=아, 나 바보인가. 분명 스퀼러들은 손가락으로 집어먹겠지.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_BAG_FAR1-1=가방이다. 여기선 안에 뭐가 있는지 잘 안 보여.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_BAG_CLOSE1-1=식량이 들어있네. 시리얼에 곤충... 그리고 뭐라 불러야 할지 모르는 것들...
+# Graff                                 
+GPC05D_BAG_CLOSE1-2=적어도 굶을 일은 없겠어.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTHERS-1=지금은 장날 칠 때가 아냐!
+#----------------------------------------------------
+# Graff                                 
+#The hook can be used to slowly cut the rope
+GPC05D_HOOK_FAR1-1=주방 갈고리? 이게 도움이 될까?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_CLOSE1-1=이걸로 날 묶은 로프를 끊을 수 있을까?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_DONE-1=이미 밧줄은 풀었어!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_LONG-1=으윽... 이래서 언제 풀래...!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_OVER-1=드디어 풀렸다...!
+# Graff                                 
+GPC05D_HOOK_OVER-2=흠... 이대로 묶인 척 할까?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_PIPE1-1=파이프 덩어리가 돌출되어 있네.
+# Graff                                 
+GPC05D_PIPE1-2=이렇게 손이 묶인 상태로는 아무것도 할 수 없어.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_PIPE_CANTAKE-1=좋았어!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_PIPE_TAKECHAIR-1=의자 뒤에 손을 계속 둬야겠다.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_TABLE1-1=보아하니 스퀼러들은 여기... 바닥에서 앉아 식사하나 봐.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_DOORLEFT1-1=...
+# Graff                                 
+GPC05D_DOORLEFT1-2=여기서는 안 보이지만...
+# Graff                                 
+GPC05D_DOORLEFT1-3=분명 아이들과 여성의 목소리를 들은 것 같은데...?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_DOORLEFT2-1=말도 안 돼.
+# Graff                                 
+GPC05D_DOORLEFT2-2=저기에 어린아이와 여성들로 가득해! 전부 스퀼러들이야...
+# Graff                                 
+GPC05D_DOORLEFT2-3=정말 끔찍하게 살고 있어.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_TUNNEL1-1=여기선 못 지나가.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW_NOONE-1=사다리다. 저거라면 나갈 수 있겠어!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW1-1=경비원이다.
+# Graff                                 
+GPC05D_WINDOW1-2=다행히 앞을 바라보고 있는 듯 해.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW_THROW1-1=흠...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW_THROW1B-1=좋았어!
+# Graff                                 
+GPC05D_WINDOW_THROW1B-2=응...?
+#----------------------------------------------------
+# Kins                                 
+GPC05D_WINDOW_THROW1C-1=다트! 너 괜찮아?
+# Kins                                 
+GPC05D_WINDOW_THROW1C-2=야! 일어나!
+#----------------------------------------------------
+# Graff                                 
+#Strike like in bowling
+GPC05D_WINDOW_THROW2-1=바로 이거지!
+#----------------------------------------------------
+# Chiefrat                                 
+#Graff not in his room when Chief comes
+GPC05D_CHIEFRAT_SEARCHGRAFF-1=망할 뱀 같은 자식이!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SEARCHGRAFF-2=그 자식 어딨어?!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SPEAKER1-1=이런 장소에서 저런 걸 볼 줄은 몰랐어.
+#----------------------------------------------------
+# Graff                                 
+#Ironic
+GPC05D_CANNOT1-1=이렇게 의자에 묶인 채로 올라갈 수 있겠냐고!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTTNOTHERE1-1=오트를 두고 떠날 수는 없어.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When trying to escape with Ott
+# *****************************************************************
+# Graff                                 
+GPC05D_OTTHERE1-1=오트! 사다리로!
+# Ott                                 
+GPC05D_OTTHERE1-2=맙소사. 사다리가 길잖아...
+# Graff                                 
+GPC05D_OTTHERE1-3=곧장 따라갈게!
+# Ott                                 
+GPC05D_OTTHERE1-4=알았어...
+#----------------------------------------------------
+# Kins                                 
+GPC05D_OTTHERE2-1=대장! 애들 말입니다! 도망치고 있어요!
+# Graff                                 
+GPC05D_OTTHERE2-2=아, 망할...
+# Graff                                 
+GPC05D_OTTHERE2-3=오트! 이거 받아!
+# Ott                                 
+GPC05D_OTTHERE2-4=뭔데...?
+# Graff                                 
+GPC05D_OTTHERE2-5=이 레이더가 있으면 브록 아저씨를 찾을 수 있을 거야! 아저씨 보고 여기 오라고 해!
+# Ott                                 
+GPC05D_OTTHERE2-6=하지만...
+# Graff                                 
+GPC05D_OTTHERE2-7=가! 어서!
+# Graff                                 
+#Graff gets captured
+GPC05D_OTTHERE2-8=으악!
+# Chiefrat                                 
+GPC05D_OTTHERE2-9=얘들아, 계획 변경이다! 망할 악어께서 오신단다!
+# Chiefrat                                 
+GPC05D_OTTHERE2-10=잘 했다 꼬맹아!
+# Kins                                 
+GPC05D_OTTHERE2-11=감사합니다 대장!
+# Chiefrat                                 
+GPC05D_OTTHERE2-12=널 말하는 게 아니다, 이 멍청아!
+# Graff                                 
+GPC05D_OTTHERE2-13=아저씨라면 너희들을 다 때려눕히겠지! 두고 보자고!
+# Chiefrat                                 
+GPC05D_OTTHERE2-14=아, 참을 수가 없어.
+# Chiefrat                                 
+GPC05D_OTTHERE2-15=복수할 날을 몇 년이나 기다려 왔던가...
+# Chiefrat                                 
+GPC05D_OTTHERE2-16=마침내 기회가 왔구나!
+# Graff                                 
+GPC05D_OTTHERE2-17=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Trying to use the ladder without picking stuff first
+# *****************************************************************
+# Graff                                 
+GPC05D_NOSTUFF1-1=안 돼! 잊고 있었어...
+# Graff                                 
+GPC05D_NOSTUFF1-2=브록 아저씨에게 연락하려면 내 폰부터 찾아야 해! 내 물건이 이 주변에 있겠지...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Finding Ott in the next room for the first time
+# *****************************************************************
+# Ott                                 
+GPC05D_OTT_FIRST1-1=그래프!
+# Graff                                 
+GPC05D_OTT_FIRST1-2=보니까 정말 다행이다!
+# Graff                                 
+GPC05D_OTT_FIRST1-3=나 때문에 휘말렸지... 미안해.
+# Ott                                 
+GPC05D_OTT_FIRST1-4=사과는 나중에! 우선 여기서 벗어나야지!
+# Ott                                 
+GPC05D_OTT_FIRST1-5=그리고 서둘러. 난 여기 별로 보기 안 좋아...
+#----------------------------------------------------
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_UNTIE-1=그나저나, 어떻게...
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_UNTIE-2=설명은 나중에 할게. 우선 네 밧줄부터 풀고 보자!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_FAR1-1=어떻게 해야 좀 자유로워질까?
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_FAR1-2=흠...
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_FAR1-3=좋은 생각이 떠올랐어! 내 뒤에 와봐!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE1-1=손을 움직일 수는 있겠어?
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE1-2=조금은...
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE1-3=그럼 한 번 서로를 풀어보자!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-1=훨씬 낫네.
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-2=내 말이...
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-3=혹시 스퀼러들이... 널 고문했어?
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-4=나를 저 밑바닥도 안 보이는 곳에 밀어 넣겠다고 협박하는 것을 말하는 거라면...
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-5=응.
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-6=미안해.
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-7=네 잘못은 아니잖아.
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-8=일단 도망치는 게 좋겠다! 내가 앞장설게.
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-9=부디 조심해.
+#----------------------------------------------------
+# Ott                                 
+#If Graff accidentally falls into the hole
+GPC05D_OTT_GRAFFJUMPS-1=그래프!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_FREE-1=이제 뭘 해야 하지...?
+# Ott                                 
+GPC05D_OTT_FREE-2=...
+# Ott                                 
+GPC05D_OTT_FREE-3=아마 저 사다리로 간다던가...
+# Graff                                 
+GPC05D_OTT_FREE-4=그래, 시도해보자.
+#----------------------------------------------------
+# Ott                                 
+#If Graff won the fight against rats
+GPC05D_OTT_AFTERFIGHT-1=그래프...!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Searching through stuff
+# *****************************************************************
+# Graff                                 
+GPC05D_STUFF1-1=완전 엉망진창인 걸.
+# Graff                                 
+GPC05D_STUFF1-2=아니! 잠깐만. 저건 내 물건이잖아!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_STUFF_FREE-1=손만 자유로웠어도...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_STUFF_ALREADY-1=뭔가 더 없나?
+# Graff                                 
+GPC05D_STUFF_ALREADY-2=이야! 광고잖아!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - WHen Graff gets spotted
+# *****************************************************************
+# Kins                                 
+GPC05D_RAT1_SPOTTED1-1=어이! 이 자식!
+# Graff                                 
+GPC05D_RAT1_SPOTTED1-2=이런...!
+#----------------------------------------------------
+# Dart                                 
+GPC05D_RAT2_SPOTTED1-1=꼬맹이가! 여기 있다!
+# Graff                                 
+GPC05D_RAT2_SPOTTED1-2=망할!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SPOTTED_READY-1=가까이 오지 마! 안 그러면...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff wins
+# *****************************************************************
+# Graff                                 
+GPC05D_ALLDEAD-1=(헉, 헉)
+# Graff                                 
+GPC05D_ALLDEAD-2=내가... 다 해치운 거야...?!
+#----------------------------------------------------
+# Ott                                 
+GPC05D_ALLDEAD_OTT-1=그래프! 이걸 어떻게...?
+# Graff                                 
+GPC05D_ALLDEAD_OTT-2=내가... 할 수 있는 모든 기술을 보여줬지...
+# Graff                                 
+GPC05D_ALLDEAD_OTT-3=어서 가! 곧장 따라갈게.
+# Ott                                 
+GPC05D_ALLDEAD_OTT-4=알았어...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_ALLDEAD_OTT2-1=...
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT2-2=잠깐...
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT2-3=너한테... 말해야 할 게 있다.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-1=닥쳐. 방금 얻어맞은 것으론 충분하지 않았나 봐?
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-2=하 하. 결국 너도 네 아빠를 닮아 가는구나.
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-3=그 사람은 내 아빠가 아냐...!
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-4=너도 참 폭력적이구나.
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-5=네 아빠랑 완전 똑같은 짓을 저질렀다는 사실을... 알고는 있냐?
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-6=그쪽 엉덩이를 걷어차는 거?
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-7=한번 잘 보라지.
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-8=응?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-1=...
+# Ott                                 
+GPC05D_ALLDEAD_OTT4-2=그래프...?
+# Ott                                 
+GPC05D_ALLDEAD_OTT4-3=괜찮아? 무슨 일 있어?
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-4=아니... 걱정 마.
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-5=가는 중이야.
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT4-6=절대 잊지 않겠다...
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT4-7=그리고 너도 잊...
+# Unknown                                 
+#Graff hits chief
+GPC05D_ALLDEAD_OTT4-8=(퍽)
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-9=쓸데없는 소리는 거기까지.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff loses
+# *****************************************************************
+# Chiefrat                                 
+PC05D_RATFIGHT_GAMEOVER1-1=내가 나설 일이 없어야 했는데 말이야, 꼬맹아.
+# Chiefrat                                 
+PC05D_RATFIGHT_GAMEOVER1-2=다음은 네 차례다, 악어 자식아!
+#----------------------------------------------------
+# Kins                                 
+PC05D_RATFIGHT_GAMEOVER2-1=이런! 꼬맹이를 죽여버렸잖아...
+#----------------------------------------------------

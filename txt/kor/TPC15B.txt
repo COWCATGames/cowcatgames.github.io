@@ -1,0 +1,1435 @@
+#-------------------------------
+#=LAB HALL
+#-------------------------------
+
+#----- Interactions --------
+PC_DRHUSHROOM=허쉬 박사의 연구실
+PC_DRMINKROOM=밍크 박사의 연구실
+PC_RESTROOM=화장실
+PC_MONITORING=출입 모니터링 장치
+PC_LEFTROOM=왼쪽 방
+PC_MIDDLEROOM=중간 방
+PC_RIGHTROOM=오른쪽 방
+PC_BOTTOMROOM=아래쪽 방
+PC_FLOWERS=꽃
+
+
+#----- Choices / Items --------
+GOT_LABFLOWER=꽃이다!
+PC15B_FAKE=정체를 속인다
+PC15B_TRUTH=사실을 말한다
+PC15B_THREATEN_LIGHT=가볍게 위협한다
+PC15B_THREATEN_HARD=거세게 위협한다
+
+#----- Topics --------
+TOPIC_SITUATION=상황
+TOPIC_PLACE=연구소
+TOPIC_LIE=거짓말
+
+INTERROGATION_GUARD=경비원이 무슨 거짓말을 하고 있을까?
+INTERROGATION_GUARDWORRIED=경비원은 왜 걱정하지 않았을까?
+PC15B_GUARD_AWAY_CHOICE=비밀을 지키겠다고 약속할까요?
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC15B_PIPEMAIL1-1=파이프 메일이라...
+# Brok                                 
+PC15B_PIPEMAIL1-2=복도 한가운데에 배치되어 있잖아?
+# Guard                                 
+PC15B_PIPEMAIL1-3=박사들은 항상 물건을 주문하는 편인데.
+# Guard                                 
+PC15B_PIPEMAIL1-4=주로 프린터에 쓰일 잉크라던가 정크 푸드를 주문하는 편인데, 꽤 실용적이다고요.
+# Brok                                 
+PC15B_PIPEMAIL1-5=특별한 건 보이지 않는데...
+# Brok                                 
+PC15B_PIPEMAIL1-6=닫혀 있군. 열 방법이 있나?
+# Guard                                 
+PC15B_PIPEMAIL1-7=아뇨. 그거 완전 자동화되어있어서 말이죠.
+# Guard                                 
+PC15B_PIPEMAIL1-8=그냥 물건을 받는 것만 가능하다고요.
+# Guard                                 
+PC15B_PIPEMAIL1-9=과학자들이 파이프 메일로 보내는 거라곤 수령했다는 정보 뿐입니다. 뭔가 구체적인 물건을 보낸 적은 한 번도 없었어요.
+# Brok                                 
+PC15B_PIPEMAIL1-10=그렇군요...
+#----------------------------------------------------
+# Brok                                 
+PC15B_PIPEMAIL2-1=받는 것만 가능한 파이프 메일이다...
+# Guard                                 
+PC15B_PIPEMAIL2-2=그렇지.
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX1-1=파이프 수신함이다.
+# Brok                                 
+PC15B_BOX1-2=마치 내 의욕처럼 아무것도 없구나.
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_PICKUP-1=에너지 드링크라고?!
+# Brok                                 
+PC15B_BOX_PICKUP-2=농담하는 거지...
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_PICKUP2-1=잠깐. 통신이 끊긴 줄 알았는데?
+# Guard                                 
+PC15B_BOX_PICKUP2-2=어이! 긴급 버튼을 누르신 거 맞습니까?
+# Guard                                 
+PC15B_BOX_PICKUP2-3=긴급 버튼은 통신이 끊길 일이 없다고요.
+# Brok                                 
+PC15B_BOX_PICKUP2-4=그렇군! 항상 목이 말랐는데.
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_AD-1=웬 광고 쿠폰?
+# Brok                                 
+PC15B_BOX_AD-2=처음보다 나쁠 수는 없는 법이지...
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_NADA-1=아무것도 없어.
+# Brok                                 
+PC15B_BOX_NADA-2=긴급 식량의 재고가 떨어졌나?
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS1-1=예쁜 꽃이로군!
+# Brok                                 
+PC15B_FLOWERS1-2=왜인지 향수를 불어 일으킬 것 같아.
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS_AFTER1-1=(킁킁) 좋은 냄새!
+# Guard                                 
+PC15B_FLOWERS_AFTER1-2=냄새 값으로 10 유니스 받겠습니다.
+# Brok                                 
+PC15B_FLOWERS_AFTER1-3=뭐...?
+# Guard                                 
+PC15B_FLOWERS_AFTER1-4=농담입니다만 다음부터는 제 소중한 식물을 눈앞에서 망가뜨리지 마시길.
+# Brok                                 
+PC15B_FLOWERS_AFTER1-5=그렇게 중요한 꽃이라면 나도 갖고 다녀야겠군요.
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS_AFTER2-1=이 꽃이 어떤 식물인지 압니까?
+# Guard                                 
+PC15B_FLOWERS_AFTER2-2=그걸 제가 어떻게 압니까!
+# Guard                                 
+PC15B_FLOWERS_AFTER2-3=그냥 아름답고 향기롭잖아요. 그걸로 충분하지.
+# Brok                                 
+PC15B_FLOWERS_AFTER2-4=하긴, 나도 보통 그러겠어... 수사할 때가 아니라면 말이지.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Arriving in the lab for the first time
+# *****************************************************************
+# Guard                                 
+#Here the guard is addressing both Ott and Brok
+PC15B_FIRST_DIALOG1-1=누구십니까?
+#----------------------------------------------------
+# Brok                                 
+PC15B_FIRST_DIALOG2-1=사건을 조사하러 왔습니다.
+# Guard                                 
+PC15B_FIRST_DIALOG2-2=말도 안 되는 소리 마쇼!
+# Guard                                 
+PC15B_FIRST_DIALOG2-3=경찰 서장이 말하길 본인이 아는 최고의 수사관을 보낸다 그랬단 말입니다.
+# Guard                                 
+PC15B_FIRST_DIALOG2-4=망할 악어나 못 생긴 남자 아이라고 예상도 못했다고요. 하 하!
+# Brok                                 
+PC15B_FIRST_DIALOG2-5=말 조심해. 우린 사건을 도와주러 왔으니까.
+# Ott                                 
+PC15B_FIRST_DIALOG2-6=웨스 삼촌이 우릴 보냈어요. 전화해서 확인해 보시던가요.
+# Guard                                 
+PC15B_FIRST_DIALOG2-7=해봤자 지. 난 그 족제비 영감을 알고 있어. 놀랄 일도 아냐.
+# Brok                                 
+PC15B_FIRST_DIALOG2-8=낭비할 시간 없으니 상황을 알려 주시죠.
+# Guard                                 
+PC15B_FIRST_DIALOG2-9=그래요. 그 영감이 여기에 시간을 들이지 않을 거라 예상해야 했는데.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_THINK1-1=(스퀼러...)
+# Brok                                 
+PC15B_GUARD_THINK1-2=(최근 겪은 바로 스퀼러들을 잘 믿지 못하겠어. 저 남자는 뭔가 다를까?)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_NOTYET-1=(아직은 아냐.)
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_SITUATION1-1=엔지니어 두 명이 여기 살고 있는데, 한 명이 사라졌습니다.
+# Brok                                 
+PC15B_GUARD_SITUATION1-2=살고 있다고요? 여기서 일하는 거 아니었습니까?
+# Guard                                 
+PC15B_GUARD_SITUATION1-3=그 말도 맞죠. 여길 떠난 적이 없으니까.
+# Brok                                 
+PC15B_GUARD_SITUATION1-4=지금 상황이 심각하다고 생각하는 이유는 뭡니까?
+# Guard                                 
+PC15B_GUARD_SITUATION1-5=제가 주기적으로 방을 확인하는 편인데.
+# Guard                                 
+PC15B_GUARD_SITUATION1-6=마지막으로 확인했을 때 허쉬 박사가 보이지 않더군요.
+# Brok                                 
+PC15B_GUARD_SITUATION1-7=허쉬 박사가 어딘가 숨어 있을 가능성은?
+# Guard                                 
+PC15B_GUARD_SITUATION1-8=이봐요. 아마추어처럼 굴지 마시죠. 난 여기저기 다 뒤쳐봤단 말입니다!
+# Guard                                 
+PC15B_GUARD_SITUATION1-9=게다가, 허쉬 박사의 의료 기기에서 생명 신호가 몇 시간 째 끊겼습니다.
+# Brok                                 
+PC15B_GUARD_SITUATION1-10=혹시 도망칠 계획을 세워 당신이 한눈판 사이에 떠날 가능성은?
+# Guard                                 
+PC15B_GUARD_SITUATION1-11=불가능합니다. 보시다시피 입구는 레이저로 계속 봉쇄 중이니까요.
+# Guard                                 
+PC15B_GUARD_SITUATION1-12=심지어 엔지니어들도 우리 같은 요원들에게 허락하지 않는 한 나갈 수 없습니다.
+# Guard                                 
+PC15B_GUARD_SITUATION1-13=뭐, 허쉬 박사는 그런 부탁을 저한테 요청하지 않았고요.
+# Ott                                 
+PC15B_GUARD_SITUATION1-14=마치 감옥처럼 들리네요.
+# Brok                                 
+PC15B_GUARD_SITUATION1-15=아냐. 저런 지적인 유형의 사람들을 잘 모르나 본데.
+# Brok                                 
+PC15B_GUARD_SITUATION1-16=저들은 자신이 진행 중인 미친 프로젝트를 위해 평생을 헌신한다 해도 별 말 없이 할 작자들입이야.
+# Brok                                 
+PC15B_GUARD_SITUATION1-17=(셰이가 딱 그런 유형의 사람이긴 해)
+# Brok                                 
+PC15B_GUARD_SITUATION1-18=확실히 자처해서 이런 생활을 할 사람으로 보이는군요.
+# Guard                                 
+PC15B_GUARD_SITUATION1-19=악어 양반 말이 맞습니다. 박사들은 "연구를 통해 이러한 생활 방식이 창의력을 향상 시킨다는 것이 입증되었다"고 말한 적이 있습니다.
+# Guard                                 
+PC15B_GUARD_SITUATION1-20=제 귀에는 그냥 아무 말이나 내뱉는 것으로 들립니다... 제 알 바입니까?
+# Guard                                 
+PC15B_GUARD_SITUATION1-21=장벽은 외부 위협으로부터 자체적으로 보호하기 위한 것입니다.
+# Ott                                 
+PC15B_GUARD_SITUATION1-22=그러게요. 편집증은 확실히 아닌 듯 하네요.
+# Brok                                 
+PC15B_GUARD_SITUATION1-23=당신이 알아야 할게, 대부분의 드러머에 대한 설명과 일치하더군요.
+# Brok                                 
+PC15B_GUARD_SITUATION1-24=드론이 밖을 돌아다닌 것을 비난할 수는 없지만 저 드론이 상황을 이렇게 만들었군요.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION2-1=당신이 이 장소를 지키는 유일한 경비원입니까?
+# Guard                                 
+PC15B_GUARD_SITUATION2-2=전 "보안 요원"이라 불렸으면 하는데 말입니다.
+# Brok                                 
+PC15B_GUARD_SITUATION2-3=이거나 그거나. 대답해봐요!
+# Guard                                 
+PC15B_GUARD_SITUATION2-4=다행히 혼자 하진 않죠! 하루 종일 여기 있는 것은 곤혹이란 말입니다.
+# Guard                                 
+PC15B_GUARD_SITUATION2-5=하지만 지금 시간대라면 저 혼자 뿐입니다.
+# Guard                                 
+PC15B_GUARD_SITUATION2-6=허쉬 박사는 제가 아침에 도착했을 때엔 있었습니다만 제가 일하는 도중에 사라졌고요.
+# Brok                                 
+PC15B_GUARD_SITUATION2-7=전에도 이런 상황이 있었습니까?
+# Guard                                 
+PC15B_GUARD_SITUATION2-8=그렇진 않을 겁니다.
+# Guard                                 
+PC15B_GUARD_SITUATION2-9=제 말은... 저 과학자들이 워낙 미쳐서 말이죠. 본인 연구실을 잠그고 다니니까요.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+# Brok                                 
+PC15B_GUARD_LIE1-1=미스터리는 믿을 수 있는 정보를 얻어야만 풀 수 있는 법이죠.
+# Brok                                 
+PC15B_GUARD_LIE1-2=안 그렇습니까?
+# Guard                                 
+PC15B_GUARD_LIE1-3=그렇죠!
+# Brok                                 
+PC15B_GUARD_LIE1-4=그러면 왜 저에게 거짓말을 하신 겁니까?
+# Guard                                 
+PC15B_GUARD_LIE1-5=무슨 말을 하시는 건지?
+# Brok                                 
+PC15B_GUARD_LIE1-6=장난은 그만 치시고.
+# Brok                                 
+PC15B_GUARD_LIE1-7=당신의 진술 중 일부는 명백히 모순됩니다.
+# Guard                                 
+PC15B_GUARD_LIE1-8=아, 그렇습니까?
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_LIE2-1=그럼 심문을 재개해볼까요!
+# Guard                                 
+PC15B_GUARD_LIE2-2=으윽...
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INTERROGATION_EXIT1-1=엄... 다시 생각 좀 해봐야겠군요.
+# Guard                                 
+PC15B_GUARD_INTERROGATION_EXIT1-2=그래서 거짓말을 누가 하고 계실까?
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-1=당신은 밍크 박사가 살인을 저지를 사람으로 보입니까?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-2=흠...
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-3=어느 정도요. 최근에 두 사람 사이에 긴장감이 느껴졌으니.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-4=어쨌든 무슨 일이 벌어졌는지 모릅니다.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-5="허쉬 박사가 복도에 머물러 있었다면 경비원이 눈치챘을 것이다"라고 오트가 주장했을 때...
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-6=당신은 망설였죠.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-7=...
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-8=당신 제대로 안 지켜보고 있었지?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-9=아니, 이봐요! 내가 아마추어도 아니고!
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-10=하지만 당신도 사람인데 가끔 화장실을 가야하고 그렇지 않았습니까?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-11=아뇨. 참을성이 강하고 유능한 사람들만이 이 직업에 뽑힙니다.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-12=뭔가 하나라도 놓쳐선 안된다고요!
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-13=흠...
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-14=그럼 확실합니까?
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-15=아무도 눈치채지 않고 지나갈 수 없었습니까?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-16=...네!
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-17=네, 확실합니다! 전 하루 종일 지켜... 보고 있었다고요.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-18=(확신에 찬 목소리는 아닌 것 같군.)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-1=제 말 들어봐요. 앞서 허쉬 박사는 화장실을 가기 위해 연구실을 나섰다고 하셨습니다.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-2=그게 정확히 언제입니까?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-3=흠...
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-4=기억이 잘 안 납니다.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-5=제가 도착하고 얼마 후였을 겁니다.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-6=매우 중요한 일이니 정확히 말씀해 주셔야 합니다!
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-7=이봐요! 내가 하는 일이 어떤 일인지 알기나 해?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-8=매일 똑같은 지겨운 나날의 연장선이라고.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-9=딱히 놀랄 일도 없고, 무슨 일이 벌어지지도 않는다고요!
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-10=그거 참 부러운데.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-11=어?
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-12=신경 쓰지 마시죠. 떠올리려고 노력을 해봐요!
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-13=허쉬 박사가 자신의 연구실을 마지막으로 떠나고 무슨 일이 벌어졌습니까?
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-14=그는 언제, 어디로 갔습니까?!
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-15=말했잖아요...! 제 뇌가 그런 사소한 것까지 기억하진 못한다고!
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-16=하지만... 알아낼 방법이 있을 겁니다.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-1=이게 뭡니까?
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-2=출입 모니터링 장치입니다.
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-3=네...? 출입 기록을 계속 키고 계셨습니까?
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-4=그리고 그걸 이제 말합니까?!
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-5=그... 그렇게 중요하지 않다 생각했는데...
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-6=중요하지 않다?!
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-7=모든 정보를 제대로 확보하지 못 하는데 내가 어떻게 조사를 합니까?!
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-8=아니, 목소리 좀 낮춰요!
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-9=이거 기밀 데이터란 말입니다.
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-10=원래라면 보안 요원만 판독 장치에 접속할 수 있지만, 특별히 예외로 둬야겠군요.
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-11=확인해보시죠.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER3-1=출입 모니터링을 확인해보시죠. 이거라면 수사에 도움이 될 겁니다.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH1-1=실종됐다고 말했던 엔지니어... 허쉬 박사에 대해 말씀해 주시겠습니까?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-2=그냥 평범한 40대 과학자입니다.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-3=유일한 가족과 친구라 부를 존재라곤 데리고 다니는 시제품 로봇이겠죠.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-4=로봇이라? 박사가 로봇을 만듭니까?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-5=정확히 말하면 AI 프로그래밍에 특화됐다고 할 수 있죠.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-6=허쉬 박사의 연구실은 왼쪽입니다.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-7=마지막으로 박사를 본 것은 언제입니까?
+# Guard                                 
+#IMPORTANT : adapt the hours displayed to what feels best for the language. ALL the hours indicated during this investigation take place during morning (this was done in order to simplify, no AM/PM issues)
+PC15B_GUARD_DRHUSH1-8=제가 오전 3시에 도착했고.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-9=근무 교대를 할 때마다 항상 박사들을 확인하는 편인데, 그 때 허쉬 박사가 있었습니다.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-10=그래서... 박사를 봤다? 확실합니까?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-11=네. 살아있었죠.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-12=그 후에 박사가 자신의 방을 떠났습니까?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-13=네. 허쉬 박사가 화장실로 가는 것을 봤죠.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-14=박사의 건강 신호가 오전 5시쯤 멈췄습니다.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-15=그게 그다지 정확하진 않아서 한두 시간 전 또는 그 후였을 지도 모릅니다.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-16=네...?
+# Brok                                 
+PC15B_GUARD_DRHUSH1-17=첨단 기술을 사용할 텐데 그러면 정확하다 봐야 하지 않습니까.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-18=생활 프라이버시 때문에 그래요.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-19=심지어 사람이 죽는다 해도?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-20=악어 탐정 양반, 당신의 직업을 아는 체 하는 건 아니지만 속단하지 마시죠.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-21=박사는 살아있을... 아니 살아있어야 합니다. 난 직장을 잃을 수 없다고요!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH2-1=허쉬 박사에 대해서 더 말해 줄 수 있습니까?
+# Guard                                 
+PC15B_GUARD_DRHUSH2-2=저도 모르죠. 박사의 방을 살펴보시는 게 좋겠군요.
+# Guard                                 
+PC15B_GUARD_DRHUSH2-3=그러면 박사가 어떤 사람인지 자세히 알 수 있을 겁니다.
+# Brok                                 
+PC15B_GUARD_DRHUSH2-4=알았습니다.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE1-1=엔지니어가 두 명이라 했나요?
+# Guard                                 
+PC15B_GUARD_PLACE1-2=네. 다른 엔지니어는 밍크 박사라 합니다.
+# Guard                                 
+PC15B_GUARD_PLACE1-3=밍크 박사는 나노 로봇을 연구하고 있습니다. 전형적인 "이걸 왜 몰라?"라 하는 사람입니다.
+# Brok                                 
+PC15B_GUARD_PLACE1-4=두 사람은 잘 지냅니까?
+# Guard                                 
+PC15B_GUARD_PLACE1-5=글쎄요.
+# Guard                                 
+PC15B_GUARD_PLACE1-6=견원지간이 따로 없습니다. 항상 쓸데없는 말다툼을 하고 다니죠.
+# Guard                                 
+PC15B_GUARD_PLACE1-7=하지만 다른 연구소로 자리를 옮기겠다고 말한 적이 없는 것을 보면.
+# Guard                                 
+PC15B_GUARD_PLACE1-8=그냥 라이벌 관계인가 싶죠.
+# Brok                                 
+PC15B_GUARD_PLACE1-9=그렇길 바래야겠죠...
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE2-1=또 다른 사람은 없습니까?
+# Guard                                 
+PC15B_GUARD_PLACE2-2=없습니다.
+# Guard                                 
+PC15B_GUARD_PLACE2-3=모든 방문객은 물론 배달 드론마저 들어오기 위해서 특별 허가를 받아야 합니다.
+# Guard                                 
+PC15B_GUARD_PLACE2-4=당신들이 오고 나서 건물에 아무도 들어오거나 나간 적이 없습니다.
+# Brok                                 
+PC15B_GUARD_PLACE2-5=복도에 파이프 메일이 있는데 배달이 왜 필요합니까?
+# Guard                                 
+PC15B_GUARD_PLACE2-6=아시다시피, 일부 짐은 파이프 메일을 통과할 수 없습니다.
+# Brok                                 
+PC15B_GUARD_PLACE2-7=누가 파이프 메일을 통해 도망치려 한다면?
+# Guard                                 
+PC15B_GUARD_PLACE2-8=안 돼요! 그러다가 몸이 산산조각 나버릴 겁니다!
+# Guard                                 
+PC15B_GUARD_PLACE2-9=그리고 그랬다면 확실히 흔적이 남겠죠.
+# Brok                                 
+PC15B_GUARD_PLACE2-10=으윽... 그렇죠.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE3-1=탈출 경로가 없는 것이 확실합니까?
+# Guard                                 
+PC15B_GUARD_PLACE3-2=네. 창문은 사실 가짜니까요.
+# Guard                                 
+PC15B_GUARD_PLACE3-3=연구소는 어떤 식으로든 연결되어 있지 않다 보니.
+# Guard                                 
+PC15B_GUARD_PLACE3-4=유일한 출입구라곤 당신들이 들어온 장소 말고 없습니다.
+# Guard                                 
+PC15B_GUARD_PLACE3-5=그 외 출입할 방법이라곤 없죠.
+# Brok                                 
+PC15B_GUARD_PLACE3-6=세상에 절대란 없는 법이지.
+# Guard                                 
+PC15B_GUARD_PLACE3-7=내기하시게요? 100 유니스 걸도록 하죠!
+# Brok                                 
+PC15B_GUARD_PLACE3-8=평소라면 내기를 피하지 않는 편이지만... 지금 당장 그런 위험을 부담할 순 없는 법이죠.
+# Guard                                 
+PC15B_GUARD_PLACE3-9=내숭 떨긴.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_YOURSELF1-1=물어보고 싶은 게 있는데.
+# Brok                                 
+PC15B_GUARD_YOURSELF1-2=스퀼러는 드럼에서 뭘 하고 지냅니까?
+# Guard                                 
+PC15B_GUARD_YOURSELF1-3=신경 쓰지 마시죠!
+# Brok                                 
+PC15B_GUARD_YOURSELF1-4=그냥 묻는 겁니다. 난 당신 조직이 전국에서 추방된 줄 알았는데.
+# Guard                                 
+PC15B_GUARD_YOURSELF1-5=뭔 조직?
+# Guard                                 
+PC15B_GUARD_YOURSELF1-6=몇 년 전에 다른 개자식들이 망할 짓을 저질렀단 이유 만으로 내가 정규직으로 일할 수 없다고?!
+# Brok                                 
+PC15B_GUARD_YOURSELF1-7=전 그게...
+# Guard                                 
+PC15B_GUARD_YOURSELF1-8=닥쳐!
+# Guard                                 
+PC15B_GUARD_YOURSELF1-9=당신은 아무것도 몰라.
+# Guard                                 
+PC15B_GUARD_YOURSELF1-10=당신 같은 사람들은 정말로 짜증 나. 머리를 쓸 생각을 안하고 외관에만 집착하지.
+# Brok                                 
+PC15B_GUARD_YOURSELF1-11=(역린을 건드린 모양이군.)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_YOURSELF2-1=(굳이 이 주제를 언급하지 말자.)
+# Brok                                 
+PC15B_GUARD_YOURSELF2-2=(그런데, 경비원이 나한테 뭔가 숨기고 있을까...? 알아봐야겠어.)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_EXITFIRST1-1=주변을 둘러 봐야겠군요.
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-2=아니 벌써 갈려고?
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-3=사건부터 빨리 해결하시죠! 한 시간 뒤에 근무 교대를 해야 한단 말입니다.
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-4=초과 근무한다 해도 급여를 주지 않는 다고요!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_EXIT1-1=꼼짝 말고 있으시길.
+# Guard                                 
+PC15B_GUARD_EXIT1-2=알다시피, 시간 없다고요!
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_EXIT2-1=아니 좀! 할 일을 하라니까!
+# Brok                                 
+PC15B_GUARD_EXIT2-2=내가 뭘 한다고 생각합니까?
+# Guard                                 
+PC15B_GUARD_EXIT2-3=나도 뭐 하는지 모르니까 문제인 것 아닙니까?
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_WELCOME1-1=더 물어볼 게 있습니다.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_WELCOME2-1=또?!
+# Guard                                 
+PC15B_GUARD_WELCOME2-2=차라리 나 혼자 해결하는 게 훨씬 빠르겠다!
+# Brok                                 
+PC15B_GUARD_WELCOME2-3=제대로 대답이나 해주시죠. 아니면 제 1 용의자로 의심 받고 싶습니까?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Showing inventory to guard
+# *****************************************************************
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT1-1=이거에 대해 말할 게 있습니까?
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT1-2=쓰레기군요.
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT1-3=너무 직설적인데...?
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT2-1=이게 단서가 될 거라 생각합니까?
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT2-2=네? 나한테... 묻는 겁니까?!
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT2-3=밑바닥에도 바닥이 있다더니!
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT2-4=그냥 돕기 싫다고 말하던가.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_MONEY-1=인간적으로 그러지 맙시다! 난 뇌물 안 받아요!
+# Brok                                 
+PC15B_GUARD_INV_MONEY-2=정직한 스퀼러라니, 누가 생각이나 했겠어!
+# Guard                                 
+PC15B_GUARD_INV_MONEY-3=스퀼러라 부르지 말라니까요!
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LABFLOWER-1=어떻게 꽃을 꺾을 수가 있어요.
+# Brok                                 
+PC15B_GUARD_INV_LABFLOWER-2=매우 중요한 단서니 말입니다!
+# Guard                                 
+PC15B_GUARD_INV_LABFLOWER-3=네, 네.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LAMPHUSH-1=고친 겁니까...?
+# Brok                                 
+PC15B_GUARD_INV_LAMPHUSH-2=물론 아니죠! 이건 다른 전등입니다. 증거를 훼손 시킬 순 없으니.
+# Guard                                 
+PC15B_GUARD_INV_LAMPHUSH-3=그럼 맨손으로 만질 생각하지 말라고.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LAMPMINK-1=상당히 아프겠는데요.
+# Brok                                 
+PC15B_GUARD_INV_LAMPMINK-2=확실히 죽을 정도겠군요.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_MAGNIFY-1=봤습니까? 거짓말한 게 아니라고요!
+# Guard                                 
+PC15B_GUARD_INV_MAGNIFY-2=보긴 했는데. 고작 돋보기를 들고 다닌다는 이유로 탐정이 됩니까?
+# Brok                                 
+PC15B_GUARD_INV_MAGNIFY-3=다들 이러면 알아먹는단 말씀!
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_MAPBUILDING-1=저한테 지도를 안 줘도 됩니다. 내 몸이 이 건물을 다 기억하고 있으니까요.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_TABLETHUSH-1=허쉬 박사가 사용한 거군요.
+# Brok                                 
+PC15B_GUARD_INV_TABLETHUSH-2=이거 잠금 해제 해줬으면 하는데.
+# Guard                                 
+PC15B_GUARD_INV_TABLETHUSH-3=할 수만 있다면요!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_PILLHUSH-1=허쉬 박사가 이 약을 복용했을 겁니다.
+# Guard                                 
+PC15B_GUARD_INV_PILLHUSH-2=그래서요...?
+# Brok                                 
+PC15B_GUARD_INV_PILLHUSH-3=확인 가능합니까?
+# Guard                                 
+PC15B_GUARD_INV_PILLHUSH-4=모르겠군요.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_TRAMPPRESCR-1=당신 박사 맞죠?
+# Guard                                 
+PC15B_GUARD_INV_TRAMPPRESCR-2=악어 양반, 사람 잘 못 봤다고!
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_WRAPPING-1=으으으! 전 개미가 싫습니다.
+# Brok                                 
+PC15B_GUARD_INV_WRAPPING-2=아니, 당신 이제부터 내 적이야.
+# Guard                                 
+PC15B_GUARD_INV_WRAPPING-3=뭐라는 거야.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Going around the room
+# *****************************************************************
+# Guard                                 
+PC15B_GUARD_INVESTIGATE-1=아니, 잠깐만요!
+# Guard                                 
+PC15B_GUARD_INVESTIGATE-2=아직 당신에게 말할 게 남아있습니다.
+# Brok                                 
+PC15B_GUARD_INVESTIGATE-3=뭐, 말해봐요!
+#----------------------------------------------------
+# Guard                                 
+PC15B_TO_PC15_NO1-1=저기요!
+# Guard                                 
+PC15B_TO_PC15_NO1-2=떠나는 건 신경 안 쓰지만, 당신 프로로서의 의식 따위 없는 겁니까?
+# Brok                                 
+PC15B_TO_PC15_NO1-3=아! 그 말은...?
+# Guard                                 
+PC15B_TO_PC15_NO1-4=문제나 풀라고, 이 멍청아!
+# Brok                                 
+PC15B_TO_PC15_NO1-5=굳이 욕까지 할 필요는 없는데.
+#----------------------------------------------------
+# Brok                                 
+PC15B_TO_PC15_NO2-1=나갈 수 없어...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Dr Mink's door. He doesn't want to let Brok enter.
+# *****************************************************************
+# Brok                                 
+PC15B_KNOCK1-1=안 열리는군.
+# Unknown                                 
+PC15B_KNOCK1-2=(똑똑)
+# Brok                                 
+PC15B_KNOCK1-3=...?
+# Brok                                 
+PC15B_KNOCK1-4=음악 소리가 들려...
+# Brok                                 
+PC15B_KNOCK1-5=웅장한 비트가 나의 마음을 이끌고 있어!
+# Unknown                                 
+PC15B_KNOCK1-6=(똑똑)
+# Mink                                 
+PC15B_KNOCK1-7=저리 가요! 난 바쁘니까요!
+# Brok                                 
+PC15B_KNOCK1-8=흐으음...
+#----------------------------------------------------
+# Unknown                                 
+PC15B_KNOCK2-1=(똑똑)
+# Brok                                 
+PC15B_KNOCK2-2=문 열어요! 당장!
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK2B-1=아니! 당신 대체 뭐 하는 사람이에요?!
+# Brok                                 
+PC15B_KNOCK2B-2=자기소개 한번 요란하군...
+# Brok                                 
+PC15B_KNOCK2B-3=들어가도 됩니까?
+# Mink                                 
+PC15B_KNOCK2B-4=당연히 안 되죠! 전 지금 중요한 일을 하고 있단 말이에요!
+# Brok                                 
+PC15B_KNOCK2B-5=춤을... 춘다던가?
+# Mink                                 
+PC15B_KNOCK2B-6=...
+# Brok                                 
+PC15B_KNOCK2B-7=제가 온 이유는...
+# Mink                                 
+PC15B_KNOCK2B-8=꺼져요!
+# Brok                                 
+PC15B_KNOCK2B-9=...
+#----------------------------------------------------
+# Unknown                                 
+PC15B_KNOCK3-1=(똑똑)
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK3B-1=또 당신이에요? 제가 충분히 말하지 않았나요?!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_FAKE1-1=피자 배달 왔습니다!
+# Mink                                 
+PC15B_KNOCK3_FAKE1-2=그럴 리 없어요. 모든 주문은 배급약 파이프를 통해 배달되니까요.
+# Brok                                 
+PC15B_KNOCK3_FAKE1-3=이런.
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_FAKE2-1=농담 좀 한 거 가지고! 저도 과학자인데 도우러 왔습니다!
+# Mink                                 
+PC15B_KNOCK3_FAKE2-2=아! 그럼 서류는 가져오셨겠죠.
+# Brok                                 
+PC15B_KNOCK3_FAKE2-3=젠장, 내 정신 좀 봐. 집에 두고 왔잖아!
+# Mink                                 
+PC15B_KNOCK3_FAKE2-4=맞아요! 나도 그럴 때 있죠.
+# Mink                                 
+PC15B_KNOCK3_FAKE2-5=좋아요, 들어오세...
+# Mink                                 
+PC15B_KNOCK3_FAKE2-6=잠깐만요. 그 우스꽝스러운 모자는 대체 뭐죠?
+# Brok                                 
+PC15B_KNOCK3_FAKE2-7=그게...
+# Mink                                 
+PC15B_KNOCK3_FAKE2-8=거짓말쟁이 같으니! 꺼지세요!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_TRUTH-1=난 탐정입니다. 여기 조사하러...
+# Mink                                 
+PC15B_KNOCK3_TRUTH-2=맙소사!
+# Brok                                 
+PC15B_KNOCK3_TRUTH-3=저기요!
+# Mink                                 
+PC15B_KNOCK3_TRUTH-4=저, 전 세금 납부를 마쳤다고요! 날 혼자 냅둬요!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_LIGHT-1=아뇨.
+# Mink                                 
+PC15B_KNOCK3_LIGHT-2=파충류 씨, 날 혼자 냅두시라고요!
+# Brok                                 
+PC15B_KNOCK3_LIGHT-3=제 말 들어봐요.
+# Brok                                 
+PC15B_KNOCK3_LIGHT-4=당신에겐 선택지가 두 가지가 있습니다.
+# Brok                                 
+PC15B_KNOCK3_LIGHT-5=그냥 문을 열어 주거나... 그렇지 않으면 제가 분노하기 시작해서 그 불만을 샌드백에 풀어야 하는데 샌드백은 없으니...
+# Mink                                 
+PC15B_KNOCK3_LIGHT-6=꿀꺽!
+# Mink                                 
+PC15B_KNOCK3_LIGHT-7=아, 알겠어요! 제발 절 해치지 말아 주세요!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_HARD-1=날 들이지 않는다면 당신 척추를 반으로 쪼개버리고 당신 시체는 내 간식이 되겠지!
+# Mink                                 
+PC15B_KNOCK3_HARD-2=네에에에에에...?
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK3_HARD2-1=무서워요! 제, 제발 가세요...
+# Brok                                 
+PC15B_KNOCK3_HARD2-2=젠장. 내가 너무 심했나?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting the door
+# *****************************************************************
+# Mink                                 
+PC15B_DOORRIGHT_HIT1-1=멈춰요!
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT2-1=너... 너무 무서워요...
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT3-1=문이... 부서진다고요! 그게 얼만데!
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT4-1=제... 제발!
+# Mink                                 
+PC15B_DOORRIGHT_HIT4-2=절 해치지 말아 주세요...!
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_DEATH1-1=꺄아아아아악!!!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking other rooms
+# *****************************************************************
+# Brok                                 
+PC15B_RESTROOM1-1=저 안엔 뭐가 있습니까?
+# Guard                                 
+PC15B_RESTROOM1-2=화장실이죠 뭐.
+# Brok                                 
+PC15B_RESTROOM1-3=한 번 봐야겠군.
+#----------------------------------------------------
+# Brok                                 
+PC15B_RESTROOM1B-1=...
+# Brok                                 
+PC15B_RESTROOM1B-2=안에 아무도 없어.
+# Brok                                 
+PC15B_RESTROOM1B-3=이 방은 나중에 뒤져봐야겠다.
+#----------------------------------------------------
+# Unknown                                 
+PC15B_DRHUSHROOM1-1=(똑, 똑)
+# Brok                                 
+PC15B_DRHUSHROOM1-2=...
+# Brok                                 
+PC15B_DRHUSHROOM1-3=이 방은 누구의 방입니까?
+# Guard                                 
+PC15B_DRHUSHROOM1-4=허쉬 박사가 쓰는 연구실이죠.
+# Brok                                 
+PC15B_DRHUSHROOM1-5=사라졌다고 말했던 그 박사 말입니까?
+# Brok                                 
+PC15B_DRHUSHROOM1-6=한 번 봐야겠어.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - The guard monitoring
+# *****************************************************************
+# Brok                                 
+PC15B_GUARD_MONITORING1-1=제가 뭘 보고 있는 겁니까?
+# Guard                                 
+PC15B_GUARD_MONITORING1-2=오늘 모니터링한 겁니다. 각 문이 열릴 때마다 저기에 기록이 되죠...
+# Guard                                 
+PC15B_GUARD_MONITORING1-3=... 그리고 들어오거나 나오거나를 구분할 수 있는 몇 아이콘이 있습니다.
+# Brok                                 
+PC15B_GUARD_MONITORING1-4=그렇군요...
+# Brok                                 
+PC15B_GUARD_MONITORING1-5=왼쪽 화살표가 들어오고, 오른쪽 화살표면 나오는 겁니까?
+# Guard                                 
+PC15B_GUARD_MONITORING1-6=네.
+# Guard                                 
+PC15B_GUARD_MONITORING1-7=누가 방을 열었는지에 대한 신원 기록도 합니다. 단 한 명도 빠짐없이 기록되어 있죠.
+# Brok                                 
+PC15B_GUARD_MONITORING1-8=타이디는 어떻습니까?
+# Guard                                 
+PC15B_GUARD_MONITORING1-9=생활 로봇 말입니까?
+# Guard                                 
+PC15B_GUARD_MONITORING1-10=네, 그 녀석도 기록됩니다.
+# Brok                                 
+PC15B_GUARD_MONITORING1-11=알겠습니다. 기록해두도록 하죠.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_MONITORING2-1=누군가 저기 적힌 정보를 수정할 수 있습니까?
+# Guard                                 
+PC15B_GUARD_MONITORING2-2=당연히 불가능합니다. 읽기 전용이고, 100% 자동화되어 있으니까요.
+# Brok                                 
+PC15B_GUARD_MONITORING2-3=괜찮은 정보로군.
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGA1-1=허쉬 박사의 연구실.
+# Brok                                 
+PC15B_MONITORINGA1-2=내가 제대로 읽고 있는 게 맞으면 허쉬 박사가 마지막으로 기록된 건 05:04 이야...
+# Brok                                 
+PC15B_MONITORINGA1-3=그리고 사라졌어.
+# Brok                                 
+PC15B_MONITORINGA1-4=잠깐만 있어봐.
+# Brok                                 
+PC15B_MONITORINGA1-5=당신, 05:10 에 문을 왜 연 겁니까?
+# Guard                                 
+PC15B_MONITORINGA1-6=말했잖아요! 전 주기적으로 방을 확인한다고.
+# Brok                                 
+PC15B_MONITORINGA1-7=그것도 박사가 나온 직후에?
+# Guard                                 
+PC15B_MONITORINGA1-8=...
+# Guard                                 
+PC15B_MONITORINGA1-9=듣고 보니 그렇네요.
+# Guard                                 
+PC15B_MONITORINGA1-10=기억이 혼란스럽습니다...
+# Brok                                 
+PC15B_MONITORINGA1-11=흠...
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGA2-1=보아하니 당신, 9시에 또 뭔가 했나 보군요?
+# Guard                                 
+PC15B_MONITORINGA2-2=네.
+# Guard                                 
+PC15B_MONITORINGA2-3=어딜 가도 허쉬 박사를 찾지 못 했을 때였죠.
+# Guard                                 
+PC15B_MONITORINGA2-4=제가 별도로 경찰에 연락했습니다.
+# Brok                                 
+PC15B_MONITORINGA2-5=알겠습니다...
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGB1-1=화장실.
+# Brok                                 
+PC15B_MONITORINGB1-2=흠... 내 예상보다 더 많이 들락날락했군.
+# Brok                                 
+PC15B_MONITORINGB1-3=...
+# Brok                                 
+PC15B_MONITORINGB1-4=타이디가 04:24 에 마지막으로 화장실로 들어갔군.
+# Brok                                 
+PC15B_MONITORINGB1-5=그 이후로는 어떤 방으로 출입한 기록이 없어.
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGB2-1=허쉬 박사와 타이디가 들어간 이후, 밍크 박사도 화장실로 들어왔어.
+# Brok                                 
+PC15B_MONITORINGB2-2=혹시 그들이 저기서 서로 마주쳤나?
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGC1-1=밍크 박사의 연구실...?
+# Brok                                 
+PC15B_MONITORINGC1-2=놀랍군.
+# Brok                                 
+PC15B_MONITORINGC1-3=밍크 박사의 연구실에 시체가 있는데도 불구하고 출입 기록이 그렇게 많지 않아!
+# Brok                                 
+PC15B_MONITORINGC1-4=우선 밍크 박사는 잠시 나왔다가... 돌아왔군.
+# Brok                                 
+PC15B_MONITORINGC1-5=화장실에서 기록과 일치해.
+# Brok                                 
+PC15B_MONITORINGC1-6=그냥 휴식을 취하러 화장실에 간 모양이군?
+# Brok                                 
+PC15B_MONITORINGC1-7=어쨌든 허쉬 박사는 밍크 박사의 연구실을 연 적이 없어. 타이디도 마찬가지고.
+# Brok                                 
+PC15B_MONITORINGC1-8=별 의미는 없지만 밍크 박사의 진술을 확인시켜 주는군.
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGC2-1=오전 9시에 방 세 군데에서 기록됐어.
+# Brok                                 
+PC15B_MONITORINGC2-2=경비원이 방을 확인하고 허쉬 박사를 찾아 다녀서 그런 거겠군.
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGD1-1=네 번째 문은 뭡니까?
+# Guard                                 
+PC15B_MONITORINGD1-2=정문입니다.
+# Brok                                 
+PC15B_MONITORINGD1-3=잠깐. 오늘 아무도 출입한 적이 없다 말하지 않았습니까?
+# Brok                                 
+PC15B_MONITORINGD1-4=그러면 이 기록들을 뭐라고 설명하시려고요??
+# Guard                                 
+#He means both Brok and Ott
+PC15B_MONITORINGD1-5=그거 당신들 기록입니다.
+# Brok                                 
+PC15B_MONITORINGD1-6=04:38 에...?
+# Guard                                 
+PC15B_MONITORINGD1-7=...
+# Guard                                 
+PC15B_MONITORINGD1-8=...
+# Guard                                 
+PC15B_MONITORINGD1-9=잠깐! 떠올랐습니다!
+# Guard                                 
+PC15B_MONITORINGD1-10=그거 저에요. 04:38 에 근무 교대를 했으니까요.
+# Brok                                 
+PC15B_MONITORINGD1-11=그렇습니까...?
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGD2-1=다시 묻겠습니다.
+# Brok                                 
+PC15B_MONITORINGD2-2=오늘 오전 04:38 에 정문을 연 게 누굽니까?
+# Guard                                 
+PC15B_MONITORINGD2-3=말했잖아요!
+# Guard                                 
+PC15B_MONITORINGD2-4=제가 열었습니다. 연구소로 들어와 동료랑 근무 교대했습니다.
+# Brok                                 
+PC15B_MONITORINGD2-5=그렇지 참...
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-1=경비원이 04:38 에 정문을 열었어.
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-2=그 후 나와 오트가 몇 시간 뒤에 도착했고.
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-3=일관성 있는 것 같군.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-1=다시 말해줄 수 있나요. 당신, 언제 근무 교대를 합니까?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-2=매일 3시에 합시다!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-3=흥미롭군요.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-4=그러면 04:38 에 연구소로 들어온 것은 어떻게 설명하시겠습니까?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-5=네...? 전...
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-6=모니터링을 확인해 보세요. 뭐라 쓰여 있습니까?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-7=04:38...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-8=꿀꺽.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-9=게다가, 화살표를 보니 들어온 게 아니라 나갔다고 표시되어 있잖습니까!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-10=해명하시겠습니까.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-11=...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-12=...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-13=그래요... 인정하겠습니다!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-14=3시에 근무 교대를 했어요. 그리고 4:38 에 확실히 문이 열려 있었습니다.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-15=거짓말하진 않겠습니다. 제가 연 게 맞으니까요.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-16=우리는 단순히 보안 요원으로 일하는 게 아니라 비서 업무도 수행합니다.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-17=4:38 에 전화를 받았습니다. 전화를 받고 답장을 보내야 하는 건 우리의 역할이니까요.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-18=하지만 제대로 전화를 받지 못 했습니다.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-19=무슨 말이죠?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-20=여기가 강력한 보안이 적용되는 건물이다 보니 외부 통화가 원할하게 이루어지지 않습니다.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-21=통화가 제대로 안 됐던 게 노이즈만 들리더군요.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-22=드럼에서 그런 일이 생길 줄 몰랐는데.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-23=드럼에도 이런 일은 발생합니다.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-24=저한테 물어보신다면... 아무리 기술 발전이 이루어진다 하더라도 완벽하게 작동하는 법은 없으니까요.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-25=방금 말한 일이 발생할 경우, 정문을 열어 송신이 원할하게 끔 합니다.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-26=그래서. 한동안 정문에 서서 계셨다?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-27=네.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-28=누가 전화를 걸었습니까?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-29=저도 몰라요...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-30=그냥 음악 소리가 들린 것 같은데.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-31=음악 소리?
+# Guard                                 
+#TechDream isn't so important, keep it like this or translate if you want but keep it consistent throughout all the labs files (PC15X)
+PC15B_CLUE_GUARD_AWAY-32=맞아! "테크드림"!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-33=흠... 어디서 들어본 것 같은데.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-34=당연하죠! 완전 유행 중이라니까요!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-35=정말 매력적이다 보니... 계속 듣게 되더라고요.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-36=통화 시간은 얼마나 됩니까?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-37=한 1분 정도였나요...?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-38=얼마 뒤, 스팸 전화라 여기고 전화를 끊어버렸습니다.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-39=무슨 생각하는지 알아요.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-40=네, 다른 데 신경 쓰고 있었죠. 하지만... 그게 뭐 대수입니까.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-41=레이저가 활성 중이기 때문에 아무도 들어오거나 나갈 수 없으니 말입니다.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-42=하지만 연구소 내부에서 무슨 일이 벌어져도 이상하지 않죠.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-43=큰 실수를 저지르셨군!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-44=제가 왜 말을 안 한 이유를 아십니까?!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-45=그 때엔 별 생각 없었는데 당신이 조사를 시작하고 부터...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-46=그 순간이 떠오른 겁니다.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-47=제발... 부탁입니다...!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-48=아무에게도 말하지 말아 주세요! 실수로 인해 해고 당할지도 모른다고요!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-49=그게...
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_NO-1=미안합니다.
+# Brok                                 
+PC15B_CLUE_GUARD_NO-2=고작 이런 실수 하나로 살인의 증거를 놓칠 수도 있단 말입니다!
+# Guard                                 
+PC15B_CLUE_GUARD_NO-3=...안 돼...
+# Guard                                 
+PC15B_CLUE_GUARD_NO-4=사회가 날 받아들일 수 있을 정도로... 얼마나 열심히 일해왔는데...
+# Guard                                 
+PC15B_CLUE_GUARD_NO-5=고작... 1분간의 부주의로 인해 내 경력이 물거품이 되어버리다니...!
+# Brok                                 
+PC15B_CLUE_GUARD_NO-6=이봐요. 일단 조사부터 끝내봅시다.
+# Brok                                 
+PC15B_CLUE_GUARD_NO-7=증거를 최대한 수집할 테니, 그 이후의 일은 나중으로 미루죠.
+# Guard                                 
+PC15B_CLUE_GUARD_NO-8=...알겠습니다.
+# Brok                                 
+PC15B_CLUE_GUARD_NO-9=(하지만 웨스에게 이건 보고해야겠군. 일이니까.)
+# Brok                                 
+PC15B_CLUE_GUARD_NO-10=(방금 대화를 녹음했으니 이 건물을 나오자마자 전송해야겠어.)
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_YES-1=아무에게도 말 안 하겠습니다.
+# Brok                                 
+PC15B_CLUE_GUARD_YES-2=하긴... 하루 종일 같은 자리에서 아무것도 안 하고 지켜만 보는 것은 상당히 힘이 들 테니까요.
+# Guard                                 
+PC15B_CLUE_GUARD_YES-3=휴... 이해해줘서 정말로 감사합니다.
+# Brok                                 
+PC15B_CLUE_GUARD_YES-4=그래도, 방금 건 이번 수사에 있어 아주 중요한 건입니다.
+# Guard                                 
+PC15B_CLUE_GUARD_YES-5=그렇죠. 제 실수로 인해 불쌍한 친구가 죽지 않았길 바랄 뿐입니다...
+# Brok                                 
+PC15B_CLUE_GUARD_YES-6=그건 지켜봐야 알겠죠.
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-1=아직 이야기가 덜 됐습니다만!
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-2=당신이 3시에 출입한 기록이 없는데 어떻게 된 겁니까?
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-3=간단합니다. 제가 도착할 때마다 상황표를 초기화 시키니까요.
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-4=기밀 유지를 위해서 기록을 하루 이상 보관할 수 없게 되어 있으니까요.
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-5=그리고 그 망할 조작 패널 때문에 수동으로 처리해야 하고요!
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-6=현실 세계에 살지 않는 어떤 미친 엔지니어가 프로그래밍한 게 틀림없어요.
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-7=저도 그 기분 잘 압니다...
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-8=그런데 방금 통제할 수 없다고 하지 않았습니까?
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-9=통째로 건드리거나 말거나 입니다.
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-10=데이터를 집어넣거나 수정할 수는 없지만 전부 지워버리는 것은 가능하죠.
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-11=그렇군요...
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-12=문제없습니다. 제가 도착했을 때 허쉬 박사는 무사했으니까요.
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-13=그 말은 믿어봐야겠군요.
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-1=기록에 따르면, 당신 5:10 에 허쉬 박사의 연구실 문을 열었군요.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-2=바로 그 순간, 허쉬 박사의 전등이 강력한 충격을 받았습니다.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-3=우연의 일치 치곤 흥미롭지 않습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-4=충격... 말입니까...?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-5=혹시 실수로 전등이라던가 다른 물건을 떨어트린 적 있습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-6=아뇨... 아무것도 건든 적 없는데...
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-7=또 뭔가 이상한 것을 눈치챘습니다.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-8=9:00 에 당신은 루틴대로 세 방을 확인했습니다.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-9=하지만 당신... 5:10 에 허쉬 박사의 연구실 문만 열었더군요.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-10=왜 그랬습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-11=엄...
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-12=아!
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-13=이제 기억났다!
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-14=무슨 소리를 들었거든요!
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-15=그렇습니까?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-16=혹시 그게... 전등이 바닥으로 충돌하는 소리였습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-17=흠... 그랬을 지도요.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-18=하지만 제가 허쉬 박사의 연구실 안을 들여다봤을 때, 아무 일도 없었습니다.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-19=확실합니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-20=네. 허쉬 박사는 항상 자신의 연구실을 깔끔하게 하고 다녔으니까요.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-21=만약 전등이 바닥에 나뒹굴고 다녔다면 제가 눈치챘겠죠!
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-22=타이디는 연구실에 있었습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-23=흠... 충전 중이었을 겁니다.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-24=그러면 허쉬 박사는?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-25=허쉬 박사는 뭘 하고 있었습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-26=잠시 생각 좀...
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-27=흠... 본 적 없군요.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-28=본 적 없다고요...?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-29=확실히 본 적 없습니다.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-30=허쉬 박사가 복도에 있었던 것도 아니고요.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-31=그래서 이미 본인 연구실로부터 사라졌다?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-32=네. 그랬겠죠.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-33=흥미롭군.
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-1=뭔가 앞뒤가 맞지 않아.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-2=5:10 에 당신은 뭔가 소리를 듣고 허쉬 박사를 찾아다녔지만 본인 연구실에도 복도에도 없었다는 건데.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-3=그렇죠.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-4=그렇다면 말도 안되는 일이...
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-5=걱정되지도 않습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-6=무슨 말이죠?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-7=생각해봐요.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-8=허쉬 박사가 어디에 있는지도 모르는데, 박사를 찾으러 다른 방을 찾으러 다니지 않았다고요?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-9=왜 그랬습니까?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-10=그러게요.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-11=허쉬 박사가 9시에 사라졌을 때는 엄청 걱정되기 시작했습니다...
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-12=하지만... 훨씬 전에 걱정하지 않았던 이유가 기억이 안 납니다...
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-13=사실, 떠오른 가설이 하나 있습니다.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-14=가설이요?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-15=그럼요.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-16=그 때 당신이 걱정하지 않았던 이유는 바로 이 때문입니다!
+#----------------------------------------------------
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-1=이런 이유로... 당신이 걱정하지 않았던 겁니다!
+# Guard                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-2=뭐라고요...?
+# Guard                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-3=앞뒤가 안 맞잖아요!
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-4=그렇습니까?
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-5=아, 이런. 다시 말씀드리죠!
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-1=제가 화장실에서 이상한 것을 발견했는데.
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-2=5:11 에 미티-미가 예전에 허쉬 박사의 목소리로 기록된 것을 재생했더군요.
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-3=뭐라고 말했습니까?
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-4="나 화장실에 있어"
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-5=...!
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-6=기억납니까?
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-7=그래! 그랬던 거야!
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-8=당신 말이 맞습니다! 제가 허쉬 박사를 부르기 시작했을 때...
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-9=박사가 저 말을 했습니다! 화장실에서 목소리가 들려왔으니...
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-10=... 허쉬 박사가 화장실에 있다고 상정했군요.
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-11=그래서... 허쉬 박사가 화장실에 없었단 소립니까?!
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-12=논리적으로 생각하면 그럴 수 밖에요.
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-13=그 말인 즉슨...
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-14=박사는 그 전에 이미 죽었단 말이군요.
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-15=성급하게 결론을 내리지 말고, 일단 박사가 화장실에 없다고 칩시다.
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-16=와우. 꽤 엉망인 나날이군...
+#----------------------------------------------------
+# Guard                                 
+PC15B_INTERROGATION_OVER-1=그래서...? 심문은 여기까지 입니까?
+# Brok                                 
+PC15B_INTERROGATION_OVER-2=그건 그쪽에 달려있죠. 또 숨기는 것 없겠죠?
+# Guard                                 
+PC15B_INTERROGATION_OVER-3=아뇨! 문제 없습니다!
+# Guard                                 
+PC15B_INTERROGATION_OVER-4=하지만 여전히 믿을 수가 없어요. 왜 하필 제가 근무하는 도중에 벌어진 겁니까...?
+# Brok                                 
+PC15B_INTERROGATION_OVER-5=전 운명을 탓하지 않는 법을 배웠습니다. 그렇지 않았다면 끊임 없이 그렇게 했을 테니까요.
+# Brok                                 
+PC15B_INTERROGATION_OVER-6=다른 생각나는 것이 있다면 와서 알려 주시길 바랍니다.
+# Guard                                 
+PC15B_INTERROGATION_OVER-7=물론이죠.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After we find Tidy is the culprit, he tries to escape
+# *****************************************************************
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES1-1=으악!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES1-2=망할 레이저 같으니라고!
+#----------------------------------------------------
+# Guard                                 
+#"He" is Tidy
+PC15B_STORY170_TIDYFLEES2-1=비상 대책을 활성화했어요! 타이디 녀석 통제권에 접근할 수 없을 겁니다.
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES2-2=쓰레기 같은 경비원 같으니라고! 날 당장 풀어!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES2-3=넌 여기서 못 빠져나간다.
+#----------------------------------------------------
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-1=난 아무 잘못 없어...!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-2=아빠가 살아있잖아!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-3=운 좋게 살아 남은 거지! 그리고 "아빠"라고 부르지 마라.
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-4=넌 고철 덩어리에 결함 있는 AI에 불과해.
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-5=자, 우리가 널 고쳐 줄 테니, 내가 전원을 내리도록 하마!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-6=풋! 하찮은 인간 따위의 명령을 내가 들을까 보다!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-7=난 완벽해! 이 방에서 결함 있는 존재는 널 말하는 거겠지, 쓰레기 같은 인간아!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-8=난 새로운 명령을 받았어! 새 아빠가 내려 주신 거야!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-9=내가 여길 빠져나오면, 새 아빠가 날 돌봐 주시겠지!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-10=뭐라고...? 누가...?
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-11=사실 꽤 웃겨! 보다시피...
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-12=아냐. 약속했어.
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-13=알고 싶다면 혼자서 잘 알아보던가.
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-14=정말 아쉬워.
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-15=왜냐면 너 같은 쓰레기는 절대로 알아내지 못할 테니까!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-16=농담도 정도껏 해! 마지막 경고야!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-17=전원을 끄거나 아니면...
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-18=잠자코 계셔. 넌 날 절대로 못 잡을 거니까!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-19=뭐, 그럼...
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-20=어떠한 수를 써서라도 네 전원을 끄게 해 주마!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Winning against Tidy
+# *****************************************************************
+# Guard                                 
+PC15B_STORY170_BROKWINS1-1=타이디 녀석... 혼쭐을 내준 겁니까?
+# Brok                                 
+PC15B_STORY170_BROKWINS1-2=아마...
+#----------------------------------------------------
+# Brok                                 
+PC15B_STORY170_BROKWINS2-1=아니.
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-2=으아악! 난 네가 싫어- 싫어 - 싫다고...
+# Mink                                 
+PC15B_STORY170_BROKWINS2-3=타이디가 점점 미쳐가기 시작해요...!
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-4=후회하게 만들어 주마!
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-5=이 도시의 모든 사람들을 다 없애버릴 테다!
+# Guard                                 
+PC15B_STORY170_BROKWINS2-6=안 돼! 저거 도망쳤잖아!
+#----------------------------------------------------
+# Mink                                 
+PC15B_STORY170_JUMPEDBODY1-1=경비원 씨!
+# Guard                                 
+PC15B_STORY170_JUMPEDBODY1-2=저 로봇... 타이디가...
+# Guard                                 
+PC15B_STORY170_JUMPEDBODY1-3=절 공격했습니다... 강제로 빠져 나와버렸어요...
+# Brok                                 
+PC15B_STORY170_JUMPEDBODY1-4=내가 붙잡으러 가야겠구만!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Losing against Tidy
+# *****************************************************************
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-1=안 돼...!
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-2=...!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-3=아 하 하 하!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-4=이번엔 확실히 죽였군!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-5=자, 날 밖으로 보내 줄래... 아니면 다음 희생자가 될래?
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-6=헛소리 마!
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-7=오, 맙소사... 보안 전력이 다 떨어졌잖아.
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-8=쟤가 말한 대로 일단 해봐요! 사람을 죽이는 것을 멈추라고...
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-9=그래선 안 된다고! 저 망할 것이 나가서 대학살을 벌일 텐데!
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-10=난 끝까지 싸우겠어!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-11=오, 입닥쳐.
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-12=으아악!!!
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-13=멈춰요!
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-14=멈추라고요...
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-15=난... 아니 아무도 널 막을 수 없어요...
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-16=내가 널 풀어 줄게요! 하지만 약속 하나만 해요...
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-17=더 이상 사고를 내지 말아요.
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-18=밍키, 착하기도 하지!
+#----------------------------------------------------
+# Tidy                                 
+PC15B_STORY170_BROKLOSES2-1=그런데...
+# Tidy                                 
+PC15B_STORY170_BROKLOSES2-2=약속 따윌 내가 왜 지키지!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Scene if we charge the wrong culprit, Ott has doubts
+# *****************************************************************
+# Ott                                 
+PC15B_CHARGE_LEAVING-1=...
+# Brok                                 
+PC15B_CHARGE_LEAVING-2=뭐가 문제니?
+# Ott                                 
+PC15B_CHARGE_LEAVING-3=그게...
+# Ott                                 
+PC15B_CHARGE_LEAVING-4=이유를 정확히 알 수 없지만... 방금 추리가 뭔가 잘못된 것 같아서요.
+# Brok                                 
+PC15B_CHARGE_LEAVING-5=네가 아직 초보라 그래.
+# Ott                                 
+PC15B_CHARGE_LEAVING-6=그렇겠죠...
+# Ott                                 
+PC15B_CHARGE_LEAVING-7=어쨌든... 이 사건을 해결할 수 있어서 다행이에요!
+#----------------------------------------------------
+# Ott                                 
+PC15B_CHARGE_LEAVING_HUSH-1=밍크 박사님은 동료를 죽이려다 그만한 대가를 치렀군요!
+# Brok                                 
+PC15B_CHARGE_LEAVING_HUSH-2=그래. 슬프게도 사실이구나.
+#----------------------------------------------------
+# Ott                                 
+PC15B_CHARGE_LEAVING_GUARD-1=단 한 번도 스퀼러가 저렇게 나쁜 사람들이라 생각한 적 없었어요... 하지만...
+# Brok                                 
+PC15B_CHARGE_LEAVING_GUARD-2=그러게 말이야. 실제로 만나보기 전까지는 알 수 없는 법이지.
+#----------------------------------------------------
+# Ott                                 
+PC15B_LEAVINGWITHOTT-1=흠... 그래프가 시험을 잘 쳤을려나.
+# Brok                                 
+PC15B_LEAVINGWITHOTT-2=아, 그래!
+# Brok                                 
+PC15B_LEAVINGWITHOTT-3=집에 가야겠어. 지금이면 집에 돌아왔겠지.
+# Ott                                 
+PC15B_LEAVINGWITHOTT-4=저도 따라가고 싶지만, 곧 시험 칠 준비를 해야 하네요.
+# Brok                                 
+PC15B_LEAVINGWITHOTT-5=알겠다. 얘야, 나중에 보자꾸나.
+#----------------------------------------------------
+# Guard                                 
+PC15B_DESK1-1=아니 무슨...!
+#----------------------------------------------------
+# Guard                                 
+PC15B_DESK2-1=이봐요! 대체 뭔 짓을 저지르는 겁니까?!
+#----------------------------------------------------
+# Guard                                 
+PC15B_DESK3-1=쓸데없이 시간 낭비하기야?!
+#----------------------------------------------------

@@ -1,0 +1,638 @@
+#-------------------------------
+#= HACKER BACK STREET
+#-------------------------------
+
+#----- Interactions --------
+PC_STATUE=人物像
+PC_WINGS=翼
+PC_PLANK=敷板
+PC_BRACKET=留め金
+PC_STRING=縄
+PC_TO_HACKER=ハッカー通りへ
+PC_TRASHCONTAINER=ゴミ置場
+
+#----- Choices / Items --------
+
+GOT_WINGS=プラスチックの翼を手に入れた！
+GOT_STRING=縄を手に入れた！
+
+CHOICE_GODEE=スラムを救う
+CHOICE_KEEPLOOKING=グラッフを救う
+
+#----- Topics --------
+
+
+#----- Dialog --------
+
+# *****************************************************************
+# CONTEXT - Brok comes to this street for the first time
+# *****************************************************************
+#----------------------
+#= First
+#----------------------
+# Brok                                 
+PC14_INTRO1-1=うええ…なんて臭いだ…
+# Brok                                 
+PC14_INTRO1-2=ハッカーはこの辺に居るはずだ。こりゃとっとと見つけてサッサとオサラバした方がいいぞ。こんなトコに長居したら病気になっちまう…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Brok comes back to this street just after losing the fight and wonders what happened (time reverted itself)
+# *****************************************************************
+# Brok                                 
+PC14_INTRO2-1=…
+# Brok                                 
+PC14_INTRO2-2=この臭いは…
+# Brok                                 
+PC14_INTRO2-3=それに…
+# Brok                                 
+PC14_INTRO2-4=この既視感はなんだ…
+# Brok                                 
+PC14_INTRO2-5=まるで…俺は…
+# Brok                                 
+PC14_INTRO2-6=戦いに負けて…
+# Brok                                 
+PC14_INTRO2-7=死ぬところだったのか…？
+# Brok                                 
+PC14_INTRO2-8=ふむ…
+# Brok                                 
+PC14_INTRO2-9=先を急ごう。この場所はイヤな予感がする
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Rats ambush Brok
+# *****************************************************************
+#----------------------
+#= Before fight
+#----------------------
+# Rat                                 
+PC14_BADGUYS1-1=どこに行くつもりだね、ワニさんよ？
+# Brok                                 
+PC14_BADGUYS1-2=失せろ。揉め事はごめんだ
+# Rat                                 
+PC14_BADGUYS1-3=へえぇ～
+# Rat                                 
+PC14_BADGUYS1-4=なら最初からオレたちと揉め事を起こさなきゃよかったんだよ
+# Brok                                 
+PC14_BADGUYS1-5=なんだと…？
+# Rat                                 
+PC14_BADGUYS1-6=トボケたフリしてんじゃねえぞ
+# Rat                                 
+PC14_BADGUYS1-7=オレたちのボスにナメた口利きやがって。しかもボスを襲いやがって…
+# Brok                                 
+PC14_BADGUYS1-8=…ついでに恥をかかせちまったかもな。ああ、覚えてるさ
+# Brok                                 
+PC14_BADGUYS1-9=まぁアイツ自身が招いた当然の結果だろう
+# Dart                                 
+PC14_BADGUYS1-10=ボスを襲っておいて無事で済むと思うなよ！
+# Brok                                 
+PC14_BADGUYS1-11=俺が本気になる前にそこを退いた方がいいぞ。さもないと…
+# Dart                                 
+PC14_BADGUYS1-12=さもないと、なんだって？
+# Dart                                 
+PC14_BADGUYS1-13=ここから逃げられると思うなよ。ボスや俺たち全員が受けた痛みの分、たっぷりお返ししてやるよ！
+# Brok                                 
+PC14_BADGUYS1-14=あぁそうかい。そういう類のお返しは受け取らない性分なんだがな！
+# Brok                                 
+PC14_BADGUYS1-15=ほら、かかってこい！
+# Dart                                 
+PC14_BADGUYS1-16=ブッ殺してやる！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Brok loses the fight
+# *****************************************************************
+# Rat                                 
+PC14_BADGUYS_LOSE-1=ハハハ！ やってやったぜ！
+# Rat                                 
+PC14_BADGUYS_LOSE-2=真の味晒しはどこのどいつだ？ ハン？！
+# Dart                                 
+PC14_BADGUYS_LOSE-3=それを言うなら恥晒しだ、このバカ！
+# Rat                                 
+PC14_BADGUYS_LOSE-4=あぁ、もう冷たくなってるぞ
+# Rat                                 
+PC14_BADGUYS_LOSE-5=死体を持って帰ろうぜ。ボスならきっとご褒美くれるぞ！
+# Dart                                 
+PC14_BADGUYS_LOSE-6=そうだな！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - We win the fight - but actually more rats come and Brok loses anyway
+# *****************************************************************
+#----------------------------------
+#= If we won the fight
+#----------------------------------
+# Brok                                 
+PC14_BADGUYSWON1-1=…
+#----------------------------------------------------
+# Brok                                 
+PC14_BADGUYSWON2-1=おいおい…
+# Rat                                 
+PC14_BADGUYSWON2-2=さあ追い詰めたぞ！
+# Rat                                 
+PC14_BADGUYSWON2-3=お前はもう生きてここから出られない！
+# Brok                                 
+PC14_BADGUYSWON2-4=そうかよ。もう一戦やりたいってんなら…
+#----------------------------------------------------
+# Brok                                 
+PC14_BADGUYSWON3-1=ぐあっ！ ありえねえ！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+
+#----------------------
+#= Statue
+#----------------------
+# Brok                                 
+PC14_STATUE1-1=アンテール教の彫像か？
+# Brok                                 
+PC14_STATUE1-2=昔はもっとキレイだったんだろうな…
+#----------------------------------------------------
+# Brok                                 
+PC14_STATUE2-1=あの翼、どうも最初からついてたわけじゃないみてえだな…
+# Brok                                 
+PC14_STATUE2-2=まるで誰かが後から取り替えたみたいな感じだな。元々のものからプラスチック製の軽いヤツに
+#----------------------------------------------------
+# Brok                                 
+PC14_STATUE_DESTROYED1-1=彫像を作った奴には申し訳ねえけど…
+# Brok                                 
+PC14_STATUE_DESTROYED1-2=でも仮に俺が何もしなかったとしても、時が経てばいずれ風化して壊れるだろ。俺は単にいずれ訪れる運命をちいとばかり早めただけさ
+#----------------------------------------------------
+
+#----------------------
+#= Wings
+#----------------------
+# Brok                                 
+#Trying to pick up the wings
+PC14_WINGS1-1=…クソッ！
+# Brok                                 
+PC14_WINGS1-2=安っぽいプラスチックみたいな見た目してるクセに随分頑丈だな。この翼、びくともしねえ…
+#----------------------------------------------------
+# Brok                                 
+PC14_WINGS_PICK1-1=この翼をいただくとしよう
+# Brok                                 
+PC14_WINGS_PICK1-2=やってみねえと分からねえけど…役に立ちそうな気がする
+#----------------------------------------------------
+
+#----------------------
+#= Plank
+#----------------------
+# Brok                                 
+PC14_PLANK1-1=見た感じ折り畳み式のベンチみたいだな
+#----------------------------------------------------
+
+#----------------------
+#= String
+#----------------------
+# Brok                                 
+PC14_STRING_TOOFAR-1=あの服、もうボロボロに汚れちまってるな…。随分長い事干したままなんだろうな
+# Brok                                 
+PC14_STRING_TOOFAR-2=誰かが取ったとしてもきっと誰も気にしねえだろうけど、ここからじゃ届かねえな
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE-1=ああ…。あの紐、使えそうだな
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE2-1=…半分に切れちまった
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE3-1=まぁいいさ。これだけの長さがあれば十分だろ
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Before fight (coming back from VR fight day 2)
+# *****************************************************************
+# Brok                                 
+PC14_STORY180_FIRST-1=なんかシェイの事が心配になってきちまったな。最近俺の周りにいる奴らがどうも妙な事ばっかり…
+#----------------------------------------------------
+# Dart                                 
+PC14_BADGUYS2-1=どこに行くつもりだね、ワニさんよ？
+# Brok                                 
+PC14_BADGUYS2-2=妙だな。この状況、どうにも既視感を覚えてしょうがないんだが…？
+# Dart                                 
+PC14_BADGUYS2-3=テメエの冗談を聞いてやるような気分じゃねえんだよ
+# Brok                                 
+PC14_BADGUYS2-4=どっか行けよ。問題を起こすつもりはねえよ
+# Dart                                 
+PC14_BADGUYS2-5=ああいいとも。身包み全部置いてけば見逃してやるよ
+# Brok                                 
+PC14_BADGUYS2-6=俺の屍を越えていけ、ってか？ なぁ
+# Rat                                 
+PC14_BADGUYS2-7=あのさ、ダート…。その…本当にやるの…？
+#---
+# * Removed line due to context error
+# Rat                                 
+PC14_BADGUYS2-8=暗くてよく分かんないんだけど、その…。コイツってもしかして、オイラたちを一回ノしたヤツじゃ…
+#---
+# Dart                                 
+PC14_BADGUYS2-9=臆病者が！ 数の優位に勝てるワケねえだろ！
+# Dart                                 
+PC14_BADGUYS2-10=相手が誰だろうがオレらが一斉に襲えばヤツは手も足も出ねえよ！
+# Dart                                 
+PC14_BADGUYS2-11=野郎共、かかれ！ アイツの物はオレらのもの。全部オレらにくれるってよ！
+# Dart                                 
+PC14_BADGUYS2-12=アイツ自身が何を言おうがコレはもう決定事項だ！
+# Brok                                 
+PC14_BADGUYS2-13=かかってこいよ！
+#----------------------------------------------------
+# Rat                                 
+PC14_BADGUYS2B-1=ダート！ もう降参しようよ！
+# Dart                                 
+PC14_BADGUYS2B-2=ねえよ！ ボスは最期まで戦い抜く事をお望みだ！
+# Dart                                 
+PC14_BADGUYS2B-3=それはさて置きだ…。見ろよコレ。ヤツがお前を殴るので手いっぱいの時にオレが盗んでおいてやったんだぜ！
+# Rat                                 
+PC14_BADGUYS2B-4=アイツの携帯だ！ やったなダート！
+# Brok                                 
+PC14_BADGUYS2B-5=何だって？！
+# Rat                                 
+PC14_BADGUYS2B-6=さぁ、残りの持ち物全部よこすんだな、ウロコ野郎！
+# Brok                                 
+PC14_BADGUYS2B-7=なんだ、もっと殴って欲しいのか？ パンチならいくらでもくれてやるよ！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Day 3 - Coming to this room with Dr. Gherkin
+# *****************************************************************
+#------------------------------
+#= First with Dr. Gherkin
+#------------------------------
+# Brok                                 
+PC14_GHERKIN_FIRST-1=ちょっと待て
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_FIRST2-1=あ、あの男に何か問題でもあるのかね？
+# Brok                                 
+PC14_GHERKIN_FIRST2-2=ああ。そりゃもう問題だらけだぜ
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_FIRST3-1=ではどうするのかね…？
+# Brok                                 
+PC14_GHERKIN_FIRST3-2=ふむ…
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_LEAVE1-1=待ってくれ！
+#----------------------------------------------------
+# Brok                                 
+PC14_GHERKIN_BACK-1=もう行っちまったぞ
+# Gherkin                                 
+PC14_GHERKIN_BACK-2=素晴らしい！ 問題を起こさずに済むならそれに越したことはない！ 最善の道だ！
+# Brok                                 
+PC14_GHERKIN_BACK-3=それで済む場合に限ってはそうかもな
+#----------------------------------------------------
+
+#------------------------------
+#= Squealer talks on the phone
+#------------------------------
+# Rat                                 
+#Rat talks on the phone
+PC14_GHERKIN_RATPHONE-1=はい、ボス
+# Rat                                 
+PC14_GHERKIN_RATPHONE-2=了解
+# Rat                                 
+PC14_GHERKIN_RATPHONE-3=あのガキ共はどうしてます？
+# Rat                                 
+PC14_GHERKIN_RATPHONE-4=ヘヘッ！ あのぼっちゃんたちは何も分かってないでしょ！
+# Rat                                 
+PC14_GHERKIN_RATPHONE-5=了解。オレはここに残りやすぜ
+# Rat                                 
+PC14_GHERKIN_RATPHONE-6=了解です
+#----------------------------------------------------
+
+#------------------------------
+#= Squealer notices Brok
+#------------------------------
+# Rat                                 
+#He notices Brok
+PC14_GHERKIN_RATNOTICES1-1=おい！ 誰だよお前…？
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-2=なんだ覚えてねえのか？ 昨晩テメエのケツを蹴り飛ばしてやったテメエの恐怖の権化だぜ！
+# Rat                                 
+PC14_GHERKIN_RATNOTICES1-3=そんな！ ありえねえ！
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-4=あれ…？
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-5=トンだ腰抜け野郎だな…
+# Gherkin                                 
+PC14_GHERKIN_RATNOTICES1-6=ブロク殿！
+# Gherkin                                 
+PC14_GHERKIN_RATNOTICES1-7=ドローンだ！
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-8=あぁ、なるほど。そういう事か
+#----------------------------------------------------
+# Rat                                 
+#He falls
+PC14_GHERKIN_RATFALLS-1=ああああぁっ！
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_RATFALLS2-1=あの男を殺してしまったのかね？！
+# Brok                                 
+PC14_GHERKIN_RATFALLS2-2=いやいや！ そんな高いトコから落ちたわけじゃねえだろ！
+# Brok                                 
+PC14_GHERKIN_RATFALLS2-3=…多分な…
+#----------------------------------------------------
+# Brok                                 
+PC14_GHERKIN_DRONEEND-1=これで最後だといいんだが
+# Gherkin                                 
+PC14_GHERKIN_DRONEEND-2=ちゃんと安全を確認してくれたまえよ！ もしまた襲ってきたら…
+# Brok                                 
+PC14_GHERKIN_DRONEEND-3=頼むぜドクター！ 俺たちにはやる事があるだろうが！
+# Gherkin                                 
+PC14_GHERKIN_DRONEEND-4=あぁ…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Day 3 - At the end of the day, Brok looks for Graff with R.J.
+# *****************************************************************
+#----------------------------------------------------------------
+#= Looking for Graff
+#----------------------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF1-1=今朝ここでスクイラー共とひと悶着あったトコなんだ
+# RJ                                 
+PC14_LOOKGRAFF1-2=見下げた奴らだ。叩きのめされて当然だな
+# Brok                                 
+PC14_LOOKGRAFF1-3=もし奴らがグラッフの毛に指一本でも触れたら…
+# Brok                                 
+PC14_LOOKGRAFF1-4=…
+# Brok                                 
+PC14_LOOKGRAFF1-5=待て。誰かが電話してる
+#----------------------------------------------------
+# Brok                                 
+#Dee calls
+PC14_LOOKGRAFF_DEECALL_NOSIN-1=(ピッ) もしもし？
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-2=やあ
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-3=シンを見つけられなかった
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-4=チクショウ…
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-5=警察署長と電話で話した
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-6=奴は会って話したい事があるそうだ
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-7=あぁ、分かってる。けど…
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL-1=(ピッ) もしもし？
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL-2=今どこに居るんだよ、カウボーイ？！
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL-3=もう時間だ！
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-1=すまねえ、行けそうもねえ。俺の息子が行方不明なんだ
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-2=何だって…？
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-3=私も助けにいこう！
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-4=よせ！
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-5=ただ…ウェスの野郎を説得してくれ。後でまた会おうって
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-6=正直に言うと…。奴を一人でどうにか出来るとはとても思えないんだ
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-7=おいおい、まさかあの老いぼれイタチが怖いとか言うなよ？
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-8=馬鹿を言うな！ そんな事あるわけないだろう！ 私はただ…
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-9=まぁいい。いずれにせよ、大事な事なんだ。もう時間がない事は覚えておいてくれ
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-10=スラムの運命はおそらくこの会談にかかっている
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-11=どうするか決めてくれ！
+#----------------------------------------------------
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-1=お前は行け。俺がグラッフを探してやる
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-2=本当か…？
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-3=俺を信じろ。あのスクイラー共。パンチをお見舞いしてやる
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-4=…
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-5=分かった。お前を信じる
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-6=けど…。用が済んだらすぐ戻ってくるからな
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-7=分かった
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-8=俺の息子を頼む…！
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-1=わかった。今行く！
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-2=「…」
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-3=グラッフ…死ぬなよ
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-1=すまねえ
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-2=ここんところ、坊主が本当に助けを必要としてる時に限って、俺はアイツの
+傍に居てやれなかったんだ
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-3=今度こそ…。だから悪い、スラムの事は後回しだ
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-4=…
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-5=事情は理解した
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-6=出来る限りの事をしよう
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-7=気をつけろよ
+# Unknown                                 
+PC14_LOOKGRAFF_DEECALL_NO1-8=[…]
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-9=…
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-10=おい…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Day 3 - If R.J. isn't there and Brok decides to keep looking for Graff, he goes down the manhole
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-1=これ…灰色の毛か…？
+# Brok                                  
+PC14_LOOKGRAFF_DEECALL_NO2-2=グラッフ…！
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-3=今行くからな！
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-1=おいおい…真っ暗だなここは
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-2=…？
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-3=誰だ…そこに居るのは誰だ？！
+#----------------------------------------------------
+# Ott                                 
+#Brok meets Ott in the sewers
+PC14_LOOKGRAFF_ONLYOTT1-1=ブロクさん？！
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-2=オット…！
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-3=ボクたちスクイラーに誘拐されて監禁されてたんだ！
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-4=アイツらボクを狙ってるよ！ グラッフはその先にいる！
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-5=逃げろ！ アイツらは俺が片付けてやる！
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-6=けど…
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-7=俺を信じろ！
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-8=あのスクイラー共は俺が再起不能になるまでボコボコにしてやる！
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-9=分かった…
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-10=上で二人を待ってるよ！
+#----------------------------------------------------
+# Graff                                 
+#Another version where Graff is also there
+PC14_LOOKGRAFF_WITHGRAFF1-1=おじさん！
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-2=お前ら！ 二人とも無事で本当によかった！
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-3=こんなトコで一体何してたんだ？
+# Ott                                 
+PC14_LOOKGRAFF_WITHGRAFF1-4=説明してる暇はないよ！ スクイラーに追われてるんだ！
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-5=何だって？！
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-6=やられた分の借りは俺がキッチリ返して…
+# Graff                                 
+PC14_LOOKGRAFF_WITHGRAFF1-7=ダメだ！ アイツら数が多すぎる！
+# Ott                                 
+PC14_LOOKGRAFF_WITHGRAFF1-8=逃げた方がいいよ！
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-9=フン…
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-10=分かった。ついてこい！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - They all got out of the sewers, escaping rats
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE1-1=ほら。これでしばらくは安全だ
+#----------------------------------------------------
+# Ott                                 
+#Ott refers to both Brok and Graff
+PC14_LOOKGRAFF_SURFACE_OTT-1=絶対外に出られるって信じてたよ！
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-1=さて。事情を説明してくれるか？
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-2=なんでアイツらお前を狙ってたんだ？
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-3=その…
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-4=あのハッカーと取引したんだ
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-5=アイツが…僕らを裏切ったんだ
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-6=あの悪魔め…
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-7=けど何でお前そんな…？
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-8=そんな事は後回しだ！ それよりもっと大事な事がある！
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-9=薬の供給不足だ。あれはスクイラーのせいじゃなかったんだ
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-10=アイツらトライボットがやったって言ってる！
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-11=けどなんであんな奴らの言う事信じなきゃならねえんだ？
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-12=…
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-13=しまった！ ディーが危ない！
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-14=ディーって誰？
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-15=悪い、行かなきゃならねえトコがあるんだ！
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-16=待って！
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-17=僕たちもついていくよ！
+# Ott                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-18=そうだよ！ ボクも一緒だ！
+# Brok                                  
+PC14_LOOKGRAFF_SURFACE_NEXT-19=…
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-20=分かった。けど…気をつけろよ！
+# Brok                                 
+#Tribots are attracted to Brok and want to kill him
+PC14_LOOKGRAFF_SURFACE_NEXT-21=俺はこの頃どうもタチの悪いロボット共に好かれるみたいでな
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-22=はぁ…？
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Click on the thing covering manhole
+# *****************************************************************
+# Brok                                 
+PC14_TRASHCONTAINER1-1=ふむ…
+# Brok                                 
+PC14_TRASHCONTAINER1-2=こんじゃ邪魔くさいもの、ずっと路のど真ん中に置いてあるのか…？
+#----------------------------------------------------
+
+#----------------------
+#= Door
+#----------------------
+# Brok
+PC14_DOOR_LATER1-1="新装開店間近"。 ふむ…？
+#----------------------------------------------------
+
+#----------------------------------------------------
+# Brok
+PC14_NOTFINISHED1-1=なんだ、これは...
+# Unknown
+PC14_NOTFINISHED1-2=「開店中！でも、本編をクリアしてから来ることを推奨します！」
+# Brok
+PC14_NOTFINISHED1-3=妙だな...
+# Brok
+PC14_NOTFINISHED1-4=入ることはできるのか？
+#----------------------------------------------------
+# Brok
+PC14_ENTER_BAR1-1=閉まってる...？だが開店中と書いてあるな？
+#----------------------------------------------------
+# Unknown
+PC14_ENTER_BAR2-1=(コン、コン)
+# Brok
+PC14_ENTER_BAR2-2=...
+# Brok
+PC14_ENTER_BAR2-3=...
+# Unknown
+PC14_ENTER_BAR2-4=(コン、コン)
+# Brok
+PC14_ENTER_BAR2-5=誰かいるのか？
+# Unknown
+PC14_ENTER_BAR2-6=...
+# Unknown
+PC14_ENTER_BAR2-7=(足音)
+# Hedgehog
+PC14_ENTER_BAR2-8=合言葉をお願いします
+# Brok
+PC14_ENTER_BAR2-9=あー...
+# Brok
+PC14_ENTER_BAR2-10=「入らせて」？
+# Hedgehog
+PC14_ENTER_BAR2-11=ああ！いいですよ！
+# Unknown
+PC14_ENTER_BAR2-12=(ガチャリ)
+# Brok
+PC14_ENTER_BAR2-13=...なんだ、ここは？
+#----------------------------------------------------
+# Brok
+PC14_00_PREBAR2-1=...
+# Brok
+PC14_00_PREBAR2-2=(フゥ)
+# Brok
+PC14_00_PREBAR2-3=むぅ、長い階段だな...
+# Brok
+PC14_00_PREBAR2-4=どれだけ下ったんだ？

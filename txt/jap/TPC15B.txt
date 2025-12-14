@@ -1,0 +1,1518 @@
+#-------------------------------
+#=LAB HALL
+#-------------------------------
+
+#----- Interactions --------
+PC_DRHUSHROOM=ハシュ博士の部屋
+PC_DRMINKROOM=ミンク博士の部屋
+PC_RESTROOM=トイレ
+PC_MONITORING=ドアの記帳
+PC_LEFTROOM=左の部屋
+PC_MIDDLEROOM=真中の部屋
+PC_RIGHTROOM=右の部屋
+PC_BOTTOMROOM=下の部屋
+PC_FLOWERS=花束
+
+
+#----- Choices / Items --------
+GOT_LABFLOWER=花を手に入れた！
+PC15B_FAKE=身分を偽る
+PC15B_TRUTH=真実を言う
+PC15B_THREATEN_LIGHT=軽く脅す
+PC15B_THREATEN_HARD=きつく脅す
+
+#----- Topics --------
+TOPIC_SITUATION=状況
+TOPIC_PLACE=研究施設
+TOPIC_LIE=嘘
+
+INTERROGATION_GUARD=ガードは何故嘘を吐いているのか？
+INTERROGATION_GUARDWORRIED=ガードはなぜあの時博士の身を案じなかったか？
+PC15B_GUARD_AWAY_CHOICE=警備員の失態を秘匿しますか？
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+#----------------------------
+#= Pipe-mail
+#----------------------------
+# Brok                                 
+PC15B_PIPEMAIL1-1=パイプメールか…
+# Brok                                 
+PC15B_PIPEMAIL1-2=玄関の真ん中にか…？
+# Guard                                 
+PC15B_PIPEMAIL1-3=科学者連中にはひっきりなしに荷物が届くんだよ
+# Guard                                 
+PC15B_PIPEMAIL1-4=3Dプリンターのフィラメントがほとんどだけど、ジャンクフードも届くな。随分と実用的な使い方してるぜまったく
+# Brok                                 
+PC15B_PIPEMAIL1-5=特別変わった事は見受けられないが…
+# Brok                                 
+PC15B_PIPEMAIL1-6=閉まってんな。どうやったら開けれるんだ？
+# Guard                                 
+PC15B_PIPEMAIL1-7=無理だ。そいつ完全に自動化されてんだよ
+# Guard                                 
+PC15B_PIPEMAIL1-8=でもって完全な一方通行な
+# Guard                                 
+PC15B_PIPEMAIL1-9=科学者が製造するのは情報だけだ。だから物理的に何かを送る必要はねえんだよ
+# Brok                                 
+PC15B_PIPEMAIL1-10=なるほど。理に適ってるな…
+#----------------------------------------------------
+# Brok                                 
+PC15B_PIPEMAIL2-1=つまりだ…。このパイプメールは一方通行で、もらう事しか出来ないんだな
+# Guard                                 
+PC15B_PIPEMAIL2-2=そのとおり
+#----------------------------------------------------
+
+#------------------------
+#= Box
+#------------------------
+# Brok                                 
+PC15B_BOX1-1=パイプメールの受取口か…
+# Brok                                 
+PC15B_BOX1-2=ものの見事にカラッポだな。中身を調べる気力までカラにしてくれるぜ
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_PICKUP-1=エナジードリンクかよ…？！
+# Brok                                 
+PC15B_BOX_PICKUP-2=おいおい冗談だろ…。医療キットはどうしたよ
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_PICKUP2-1=ちょっと待てよ…。通信は遮断してるんじゃなかったのか？
+# Guard                                 
+PC15B_BOX_PICKUP2-2=なぁ相棒！ お前さん緊急ボタンを押したんじゃねえのかよ？
+# Guard                                 
+PC15B_BOX_PICKUP2-3=緊急用の連絡回線は遮断する事が出来ねえぞ
+# Brok                                 
+PC15B_BOX_PICKUP2-4=なるほど、そいつはいいな！ いつも喉が渇いてるからな
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_AD-1=広告か…？
+# Brok                                 
+PC15B_BOX_AD-2=エナジードリンクよりももっと役に立たねえものが降ってくるなんて思いもしなかったぜ…
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_NADA-1=何もねえな…
+# Brok                                 
+PC15B_BOX_NADA-2=こりゃ非常食が在庫切れしたみてえだな
+#----------------------------------------------------
+
+#------------------------
+#= Plant
+#------------------------
+# Brok                                 
+PC15B_FLOWERS1-1=いかした花だな！
+# Brok                                 
+PC15B_FLOWERS1-2=なんだか懐かしい気分になっちまうな。理由は分からねえが…
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS_AFTER1-1=クンクン…あぁ、いい臭いだな！
+# Guard                                 
+PC15B_FLOWERS_AFTER1-2=代金は10ユニスになりますぜ
+# Brok                                 
+PC15B_FLOWERS_AFTER1-3=何だって…？
+# Guard                                 
+PC15B_FLOWERS_AFTER1-4=冗談だよ。けど次にやるなら、オレの目の前で大事な花を傷付けるような真似は慎むんだな
+# Brok                                 
+PC15B_FLOWERS_AFTER1-5=そんなに大事なものなら、俺が預かっといてやるよ
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS_AFTER2-1=コイツがどんな種類の植物なのか知ってるか？
+# Guard                                 
+PC15B_FLOWERS_AFTER2-2=知るかよそんな事！
+# Guard                                 
+PC15B_FLOWERS_AFTER2-3=見た目もキレイだし匂いもいい。それだけで十分だろうがよ
+# Brok                                 
+PC15B_FLOWERS_AFTER2-4=ああ。俺も普段ならそう言うさ…。捜査の必要がない時なら、な
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Arriving in the lab for the first time
+# *****************************************************************
+#----------------------
+#= Arrive
+#----------------------
+# Guard                                 
+#Here the guard is addressing both Ott and Brok
+PC15B_FIRST_DIALOG1-1=アンタらどちら様？
+#----------------------------------------------------
+# Brok                                 
+PC15B_FIRST_DIALOG2-1=捜査に来た者なんだが…
+# Guard                                 
+PC15B_FIRST_DIALOG2-2=おいおい冗談だろ！
+# Guard                                 
+PC15B_FIRST_DIALOG2-3=署長からは最高の捜査官を派遣するって言われてるんだぜ
+# Guard                                 
+PC15B_FIRST_DIALOG2-4=まさかこんなフザケたワニ野郎とブサイクなガキが来るなんて思ってもみなかったぜ！ アハハハ！
+# Brok                                 
+PC15B_FIRST_DIALOG2-5=口の利き方に気をつけろよ。俺たちが紛れもなく話にあった増援だ
+# Ott                                 
+PC15B_FIRST_DIALOG2-6=ウェス叔父さんがボクらを担当にしたんだよ。叔父さんに直接電話して確認してみなよ
+# Guard                                 
+PC15B_FIRST_DIALOG2-7=やめとくよ。あの老いぼれイタチの事は良く知ってる。驚く程の事でもないさ
+# Brok                                 
+PC15B_FIRST_DIALOG2-8=無駄に出来る時間はねえぞ。状況をしっかり説明してくれ
+# Guard                                 
+PC15B_FIRST_DIALOG2-9=そうだな。あのイタチ野郎がお前らに満足に状況説明する手間さえ惜しんだ可能性も考慮しとくべきだったぜ…
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_THINK1-1=(スクイラーか…)
+# Brok                                 
+PC15B_GUARD_THINK1-2=(最近俺の身に起きた出来事のせいで、どうもこいつらの事を信用出来なくなってるな。コイツは他のネズミ共と違うのか？)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_NOTYET-1=(まだだ…)
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_SITUATION1-1=ここに住んでる二人の研究者のうち、一人が行方不明になった
+# Brok                                 
+PC15B_GUARD_SITUATION1-2=住んでる、だって？ ココには勤めてるだけじゃねえのか？
+# Guard                                 
+PC15B_GUARD_SITUATION1-3=同じ事さ。この場所からロクに出る事もないんだからな
+# Brok                                 
+PC15B_GUARD_SITUATION1-4=状況が警察を呼ぶ程の事態だって判断した理由は何だ？
+# Guard                                 
+PC15B_GUARD_SITUATION1-5=オレは定期的に部屋の見回りに行くんだよ
+# Guard                                 
+PC15B_GUARD_SITUATION1-6=けど最後に見回りに行った時にハッシュ博士が見つからなかったんだよ！
+# Brok                                 
+PC15B_GUARD_SITUATION1-7=どっかに隠れてるとかじゃねえのか？
+# Guard                                 
+PC15B_GUARD_SITUATION1-8=おい、オレを素人扱いするんじゃねえよ！ 部屋という部屋を全部くまなく探したんだ！
+# Guard                                 
+PC15B_GUARD_SITUATION1-9=それによぉ、アイツが付けてる医療機器のバイタルサインがもう何時間も反応してねえんだよ
+# Brok                                 
+PC15B_GUARD_SITUATION1-10=なら、博士が前々から逃亡を画策してて、お前さんの目を盗んで抜け出したんじゃないか？
+# Guard                                 
+PC15B_GUARD_SITUATION1-11=在り得ねえよ。お前も見ただろ、レーザーがいつも入り口を塞いでるんだぞ
+# Guard                                 
+PC15B_GUARD_SITUATION1-12=研究員でさえ無許可で外出したり出来ねえんだよ。でもって、外出許可の申請はオレらエージェントにしなきゃならねえってワケ
+# Guard                                 
+PC15B_GUARD_SITUATION1-13=でもって、ハッシュ博士は外出許可の申請なんて全然出してなかった
+# Ott                                 
+PC15B_GUARD_SITUATION1-14=聞いてる限りだと、なんかこの場所って刑務所みたいだね…
+# Brok                                 
+PC15B_GUARD_SITUATION1-15=いやいや。こういう頭のデキがぶっ飛んでるヤツを俺は良く知ってる
+# Brok                                 
+PC15B_GUARD_SITUATION1-16=ああいうタイプはイカレた研究に自分の一生を捧げる事を全く苦にも思っていねえのさ
+# Brok                                 
+PC15B_GUARD_SITUATION1-17=(シェイが良い例だな)
+# Brok                                 
+PC15B_GUARD_SITUATION1-18=俺が思うに、アイツらは望んでこの場所に引き篭もってるんだろうよ
+# Guard                                 
+PC15B_GUARD_SITUATION1-19=ワニさんの言う通りだ。アイツらオレに「このようなライフスタイルが創造性をより高めるという研究結果が出ている」なんてご高説垂れやがったよ
+# Guard                                 
+PC15B_GUARD_SITUATION1-20=オレにはアイツらが自分のやりたい事をやるための言い訳をしやがっただけに聞こえたが…。本当のところどうなのかなんてオレに分かるかよ
+# Guard                                 
+PC15B_GUARD_SITUATION1-21=レーザーのセキュリティはアイツら自身を外敵から守るための装備だよ
+# Ott                                 
+PC15B_GUARD_SITUATION1-22=…なるほどね。偏執的、って程でもないんだろうね、きっと。科学者としては
+# Brok                                 
+PC15B_GUARD_SITUATION1-23=ドームに住むようになればいずれ分かるさ…。ドラマー連中に取ってはこういう考え方が普通なんだとさ
+# Brok                                 
+PC15B_GUARD_SITUATION1-24=家から一歩出ればドローンがそこらじゅう飛び回ってるような状況を作ったのはアイツら自身だ。俺にとっちゃ物騒で仕方がないが、アイツらにとっては安全なんだとよ
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION2-1=ここの警備員はお前だけか？
+# Guard                                 
+PC15B_GUARD_SITUATION2-2=オレとしては「セキュリティ エージェント」って呼んでもらいたいね
+# Brok                                 
+PC15B_GUARD_SITUATION2-3=細かい事はどうでもいい。ちゃんと質問に答えてくれ！
+# Guard                                 
+PC15B_GUARD_SITUATION2-4=オレ一人でやってるんじゃねえよ！ 四六時中ココでボーっと突っ立ってるなんて出来るわけねえだろ！
+# Guard                                 
+PC15B_GUARD_SITUATION2-5=けど、シフトごとに駐在するのは一人だけだ
+# Guard                                 
+PC15B_GUARD_SITUATION2-6=オレがココに到着した時には科学者連中は二人とも揃ってた。けど博士はオレのシフト中にいなくなったんだ
+# Brok                                 
+PC15B_GUARD_SITUATION2-7=似たような事態が前に起こった事はあるのか？
+# Guard                                 
+PC15B_GUARD_SITUATION2-8=ない、と思うぞ
+# Guard                                 
+PC15B_GUARD_SITUATION2-9=要するにだな、ああいう科学者って奴らは越えちゃいけねえ一線っての踏み越えちまうモンじゃねえか。けど入り口がレーザーで閉まってる以上、可能性は絞れるだろ、ってハナシだよ
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+#----------------------
+#= The lie
+#----------------------
+# Brok                                 
+PC15B_GUARD_LIE1-1=真実に基づく情報を集めていく事でしか、事件の謎を解く事は出来ねえよな
+# Brok                                 
+PC15B_GUARD_LIE1-2=なぁそう思わねえか？
+# Guard                                 
+PC15B_GUARD_LIE1-3=そりゃそうだろ！
+# Brok                                 
+PC15B_GUARD_LIE1-4=なら、お前は何で俺に嘘を吐いたんだ？
+# Guard                                 
+PC15B_GUARD_LIE1-5=何言ってんだよ…？
+# Brok                                 
+PC15B_GUARD_LIE1-6=しらを切るのはやめろ
+# Brok                                 
+PC15B_GUARD_LIE1-7=お前の証言にはいくつか明らかな矛盾がある
+# Guard                                 
+PC15B_GUARD_LIE1-8=あ、あぁそうなのか？
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_LIE2-1=尋問の続きといこうか！
+# Guard                                 
+PC15B_GUARD_LIE2-2=あぁもう…
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INTERROGATION_EXIT1-1=えーっとだな…ちょっと考え直させてくれ
+# Guard                                 
+PC15B_GUARD_INTERROGATION_EXIT1-2=嘘を言ってるのはどこのどいつだよ！？
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-1=お前さん、ミンク博士が人殺し出来るような性格だって本当に思うのか？
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-2=うーん…
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-3=有り得なくはないだろう。最近になって随分仲が険悪になってたからな
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-4=ただまぁいずれにせよ、何が起こったのか詳しい事は分からねえ
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-5=もしハッシュ博士が玄関ホールに居座ってたなら、お前さんが気付かないハズがない。さっきオットがそう言った時…
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-6=お前さん随分と動揺してたよな
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-7=んっ…
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-8=お前さん実は全部見てたワケじゃないんだろ？ 違うか？
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-9=バカ言うなよ！ オレはその道のプロだぞ！
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-10=けど同時に一人の人間だ。たまにはトイレに行く事だってあるだろうがよ？
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-11=行ってねえよ。本当に優秀な奴じゃなきゃこの職には就けねえんだよ
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-12=オレたち警備員は何一つとして見逃す事はねえ！ ンなコトはあっちゃならねえんだ！
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-13=ふむ…
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-14=なら、誓って言えるか？
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-15=お前が気付かない間に誰かがココを通り抜けた事なんて絶対にありえねえ、って
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-16=…も、もちろんだ！
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-17=もちろん、誓って言う！ オレはずっとここに居たぞ…。ちゃんと見張ってた
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-18=(随分と自信がなさそうに言うじゃねえか…)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-1=なぁ…。お前さんさっき、ハッシュ博士はトイレに行くために自室を出たって言ってたよな
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-2=そいつは具体的には何時の事だった？
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-3=うーん…
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-4=ハッキリとは思い出せねえ
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-5=オレが到着して仕事を始めてからだ
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-6=コイツは本当に重要な手掛かりなんだ！ もっと正確に言ってくれ！
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-7=おい！ この仕事がどんだけダルいか分かってんのか？
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-8=毎日毎日退屈で代わり映えがない部屋をずっと見張ってなきゃならねえんだぞ
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-9=驚きもない、事件もない、何一つ起こりやしない！ まぁ、普段なら、だが
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-10=なんて幸運な人生だよ…
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-11=なんだって？
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-12=気にするな。それより思い出す努力をしてくれ！
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-13=ハッシュ博士が最後に自室を出た時に何が起きたか教えてくれ
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-14=そいつは一体何時で、博士はどこに行ったんだ？！
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-15=さっき言っただろうがよ…！ そんな些細な事はオレの脳みそに残っちゃいねえよ！
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-16=けど…。調べる方法が無くはない
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-1=なんだそいつは？
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-2=ドアの監視記録だ
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-3=なんだって…？ ドアの開閉記録をずっと録ってたってのか？
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-4=しかも今の今までずっと隠してやがったのかよ？！
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-5=オレは…その…こんなの大して重要な情報じゃないと…思って…
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-6=大して重要じゃねえだ？！
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-7=事件の捜査に必要ない情報なんて有り得ねえよ！ 情報が欠落した状態で駆けずり回るのがどんだけ無駄な事か、テメエ考えた事があんのか？！
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-8=おいおい、ちょっと落ち着いてくれよ！
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-9=ココの警備主任はこのオレだ。コイツは最重要機密情報なんだよ！
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-10=セキュリティエージェント以外はドアの開閉記録の読み取り機に触れる事さえ許されねえ。けど特別に例外措置として認めてやるよ
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-11=コイツで調べてみてくれ
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER3-1=机の上のモニターをチェックしてくれ。アンタの捜査の助けになるはずだ
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH1-1=行方不明になってる研究者について、知ってる事を教えてくれ。確かハッシュ博士、だったか？
+# Guard                                 
+PC15B_GUARD_DRHUSH1-2=どこにでもいる40代の普通の科学者だよ
+# Guard                                 
+PC15B_GUARD_DRHUSH1-3=博士の唯一の友達や家族はプロトタイプのロボットばかりさ
+# Brok                                 
+PC15B_GUARD_DRHUSH1-4=ロボットか…。博士自身がロボットを作ってるのか？
+# Guard                                 
+PC15B_GUARD_DRHUSH1-5=正確には違うな。博士はAIプログラミングの専門家だ
+# Guard                                 
+PC15B_GUARD_DRHUSH1-6=左の部屋は博士専用の部屋さ
+# Brok                                 
+PC15B_GUARD_DRHUSH1-7=博士を最後に見たのはいつだ？
+# Guard                                 
+#IMPORTANT : adapt the hours displayed to what feels best for the language. ALL the hours indicated during this investigation take place during morning (this was done in order to simplify, no AM/PM issues)
+PC15B_GUARD_DRHUSH1-8=オレは午前3時にココに着いた
+# Guard                                 
+PC15B_GUARD_DRHUSH1-9=シフトに入ってからいつも通りすぐに確認に行った。その時には博士はいた
+# Brok                                 
+PC15B_GUARD_DRHUSH1-10=なるほど…。博士をちゃんと見たんだな？ 間違いないな？
+# Guard                                 
+PC15B_GUARD_DRHUSH1-11=ああそうだ。ちゃんと生身の博士を確認したさ
+# Brok                                 
+PC15B_GUARD_DRHUSH1-12=その後博士は部屋を出たか？
+# Guard                                 
+PC15B_GUARD_DRHUSH1-13=ああ。トイレに行ったのを見てる
+# Guard                                 
+PC15B_GUARD_DRHUSH1-14=で、博士の医療機器の生命反応が停止したのが午前5時ぐらいだ
+# Guard                                 
+PC15B_GUARD_DRHUSH1-15=けどあの機械、あんま正確じゃないんだよ。だから実際に反応が止まった時間は１～２時間前後するかもしれねえ
+# Brok                                 
+PC15B_GUARD_DRHUSH1-16=何だって…？
+# Brok                                 
+PC15B_GUARD_DRHUSH1-17=こんだけ技術が発展してるんだぞ、機械は正確だと考えるべきじゃないのか？
+# Guard                                 
+PC15B_GUARD_DRHUSH1-18=そいつは「生きたプライバシー」って呼ばれてる。何でもかんでも他人様の事情を覗き見るもんじゃねえよ
+# Brok                                 
+PC15B_GUARD_DRHUSH1-19=死んじまっててもプライバシーなんてまだ気にするのか？
+# Guard                                 
+PC15B_GUARD_DRHUSH1-20=オレは探偵家業の事を知ったかぶりするつもりはねえけどな、ワニさんよ。けど急いで結論付けたりしねえ方がいいぞ
+# Guard                                 
+PC15B_GUARD_DRHUSH1-21=博士には生きててもらわないと困るんだよ！ オレはココをクビになるわけにはいかねえんだ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH2-1=ハッシュ博士についてだが。他に何か気になった事はないか？
+# Guard                                 
+PC15B_GUARD_DRHUSH2-2=さあな。実際に博士の部屋を見てみた方がいいんじゃねえか
+# Guard                                 
+PC15B_GUARD_DRHUSH2-3=その方がよっぽど博士の性格が分かるだろうよ
+# Brok                                 
+PC15B_GUARD_DRHUSH2-4=了解だ
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE1-1=技術者は二人いるって言ってたよな。違うか？
+# Guard                                 
+PC15B_GUARD_PLACE1-2=ああ。もう一人はミンク博士さ
+# Guard                                 
+PC15B_GUARD_PLACE1-3=ナノボットの研究をしてる。あの人はなんていうかこう、「私に分からない事はない！」ってなタイプだな
+# Brok                                 
+PC15B_GUARD_PLACE1-4=二人の仲はどんな感じだ？
+# Guard                                 
+PC15B_GUARD_PLACE1-5=全然ダメだ
+# Guard                                 
+PC15B_GUARD_PLACE1-6=犬猿の仲の典型例みたいな感じだな、ありゃ。くだらない事でいつもケンカばっかしてる
+# Guard                                 
+PC15B_GUARD_PLACE1-7=けどあの二人、他の研究所への移籍を申し出た事がないんだよな
+# Guard                                 
+PC15B_GUARD_PLACE1-8=ライバル意識ってのは研究の足しになるモンなのかねぇ
+# Brok                                 
+PC15B_GUARD_PLACE1-9=そう思っといてやろうぜ…
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE2-1=他に誰か勤めてるのか？
+# Guard                                 
+PC15B_GUARD_PLACE2-2=いいや
+# Guard                                 
+PC15B_GUARD_PLACE2-3=訪問者には特別許可が必要だ。ドローンの配達にも許可が要る
+# Guard                                 
+PC15B_GUARD_PLACE2-4=お前ら二人が来るまで誰も建物に出入りしてないよ
+# Brok                                 
+PC15B_GUARD_PLACE2-5=玄関にパイプメールが設置してあるなら、配達なんて必要なのか？
+# Guard                                 
+PC15B_GUARD_PLACE2-6=荷物の大きさ次第ではパイプを通ってこれねえんだよ。分かるだろ
+# Brok                                 
+PC15B_GUARD_PLACE2-7=そのパイプを逃走経路に使えるか？
+# Guard                                 
+PC15B_GUARD_PLACE2-8=ありえねえって！ レーザーで細切れにされちまうぞ！
+# Guard                                 
+PC15B_GUARD_PLACE2-9=仮にそんなバカな真似したとすれば、パイプに何か痕跡が残るだろ
+# Brok                                 
+PC15B_GUARD_PLACE2-10=あぁ…そうだな。想像もしたくねえな、そんなの…
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE3-1=逃走経路は絶対に存在しないって言い切れるか？
+# Guard                                 
+PC15B_GUARD_PLACE3-2=ああ。窓だってただの飾りだ
+# Guard                                 
+PC15B_GUARD_PLACE3-3=研究所はどこにも繋がってない。この建物自体がそもそもそういう風に設計されてるんだよ
+# Guard                                 
+PC15B_GUARD_PLACE3-4=唯一の出入り口はお前らが入ってきたメインエントランスだけだ
+# Guard                                 
+PC15B_GUARD_PLACE3-5=他の経路なんて絶対にありえないね
+# Brok                                 
+PC15B_GUARD_PLACE3-6=絶対なんて絶対言うもんじゃないぜ
+# Guard                                 
+PC15B_GUARD_PLACE3-7=お、なら賭けてみるか？ オレは無い方に100ユニス賭けてやるぜ！
+# Brok                                 
+PC15B_GUARD_PLACE3-8=いつもの俺なら乗ってやるところなんだが…今は賭けれるほどの手持ちがなくてな
+# Guard                                 
+PC15B_GUARD_PLACE3-9=なんだよ。つまんねえ
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_YOURSELF1-1=ちょっと気になってたんだが…
+# Brok                                 
+PC15B_GUARD_YOURSELF1-2=ドラムでスクイラーが何してんだ？
+# Guard                                 
+PC15B_GUARD_YOURSELF1-3=お前には関係ないだろ！
+# Brok                                 
+PC15B_GUARD_YOURSELF1-4=ちょっと気になっただけさ。お前たち一味はこの国から全員いなくなったもんだとばかり思ってたから…
+# Guard                                 
+PC15B_GUARD_YOURSELF1-5=オレたち一味ってどういう事だよ？！
+# Guard                                 
+PC15B_GUARD_YOURSELF1-6=顔も名前も知らねえ赤の他人が何年も前にバカな事しやがったせいで、同じネズミってだけでオレは普通の仕事に就く事さえ出来ねえってのか？！
+# Brok                                 
+PC15B_GUARD_YOURSELF1-7=いや、俺はただ…
+# Guard                                 
+PC15B_GUARD_YOURSELF1-8=黙れよ
+# Guard                                 
+PC15B_GUARD_YOURSELF1-9=何も知らないクセに…
+# Guard                                 
+PC15B_GUARD_YOURSELF1-10=オレはお前みたいな奴が心底キライだ。外見だけで人を判断しやがって。能無しめ
+# Brok                                 
+PC15B_GUARD_YOURSELF1-11=(この話題はもうよした方がいいだろうな)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_YOURSELF2-1=(無理に聞き出そうとしない方がいいな…)
+# Brok                                 
+PC15B_GUARD_YOURSELF2-2=(けど何か俺に隠し事をしてるような気もするんだよな…。何とかして暴かねえとな)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_EXITFIRST1-1=ちょっと周りを見てくるよ
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-2=早くしてくれよ！
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-3=こんな事件サッサと解決してくれよ！ オレのシフトはもう１時間も前に終わってるハズだったってのに
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-4=残業代ももらえねえんだぞコレ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_EXIT1-1=ここで待っててくれ
+# Guard                                 
+PC15B_GUARD_EXIT1-2=こんなトコで一日中待ちぼうけなんてまっぴらゴメンだぞ！ 分かってんだろうな！
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_EXIT2-1=おい！ さっさと仕事しろよ！
+# Brok                                 
+PC15B_GUARD_EXIT2-2=聞き込みが俺の仕事だって考えねえのかよ！
+# Guard                                 
+PC15B_GUARD_EXIT2-3=知るかよ！ 聞いてばっかで進展がねえのが問題だっつってんだよ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_WELCOME1-1=お前さんに聞かなきゃならねえ事があった
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_WELCOME2-1=またかよ？！
+# Guard                                 
+PC15B_GUARD_WELCOME2-2=もうオレが自分で何とかするよ！ その方がよっぽど早く済む！
+# Brok                                 
+PC15B_GUARD_WELCOME2-3=おいおい、ちゃんと答えた方がいいぞ。じゃないとお前さんが容疑者第一号だぜ。いいのか？
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Showing inventory to guard
+# *****************************************************************
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT1-1=コイツについて何か知ってる事はないか？
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT1-2=ただのゴミだろ
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT1-3=どっかの誰かさんみたいな随分単刀直入な物言いだな
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT2-1=コイツが事件解決の手掛かりになると思うか…？
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT2-2=なんだって？ テメエ…まさかオレに意見求めてんのか？！
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT2-3=テメエがシラミたかりの下賤な探偵だとは思ってたが、オレの予想よりもさらに斜め下を行ってたなんて思いもしなかったぜ！
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT2-4=俺に協力したくないのはよく分かった。余計な事はもう言うな
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_MONEY-1=おいおい、そりゃねえだろ！ オレ賄賂を受け取る気はねえぞ！
+# Brok                                 
+PC15B_GUARD_INV_MONEY-2=正直者のスクイラー！ なかなか想像出来ねえ人物像だな
+# Guard                                 
+PC15B_GUARD_INV_MONEY-3=オレをそんな風に呼ぶんじゃねえよ！
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LABFLOWER-1=こんな事平気でやりやがる探偵がいるなんていまだに信じられねえよ
+# Brok                                 
+PC15B_GUARD_INV_LABFLOWER-2=コイツは大事な手掛かりなんだよ！
+# Guard                                 
+PC15B_GUARD_INV_LABFLOWER-3=はいはい、そうでしょうよ…
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LAMPHUSH-1=あれ？ ランプを直したのか…？
+# Brok                                 
+PC15B_GUARD_INV_LAMPHUSH-2=ンな事するかよ！ コイツは違うランプだよ。証拠品を台無しにしたりしねえよ
+# Guard                                 
+PC15B_GUARD_INV_LAMPHUSH-3=だったら素手でベタベタ触るのもやめとけよな
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LAMPMINK-1=コイツは痛そうだな…
+# Brok                                 
+PC15B_GUARD_INV_LAMPMINK-2=ああ、どう見ても壊れちまってるな！
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_MAGNIFY-1=ほら見ろよ！ 嘘じゃねえだろ！ 俺は正真正銘の探偵だぞ！
+# Guard                                 
+PC15B_GUARD_INV_MAGNIFY-2=そうだな。虫眼鏡を持ってるだけで誰でも名探偵になれるもんな？
+# Brok                                 
+PC15B_GUARD_INV_MAGNIFY-3=誰でも知ってる常識だよな！
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_MAPBUILDING-1=地図に頼る必要はねえ。俺はこの建物を心で感じてるんだ
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_TABLETHUSH-1=ハッシュ博士が使ってたやつだな
+# Brok                                 
+PC15B_GUARD_INV_TABLETHUSH-2=ロックを解除してくれないか
+# Guard                                 
+PC15B_GUARD_INV_TABLETHUSH-3=オレが出来たら苦労しねえよ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_PILLHUSH-1=この錠剤はハッシュ博士が常用してたものだと思うんだが
+# Guard                                 
+PC15B_GUARD_INV_PILLHUSH-2=で…？
+# Brok                                 
+PC15B_GUARD_INV_PILLHUSH-3=確認できねえか？
+# Guard                                 
+PC15B_GUARD_INV_PILLHUSH-4=さぁな
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_TRAMPPRESCR-1=お前さん、もしかして医者だったりするか？
+# Guard                                 
+PC15B_GUARD_INV_TRAMPPRESCR-2=おいおい、見当違いも甚だしいぜ、相棒！
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_WRAPPING-1=うえぇ！ アリ！ オレはアリがキライなんだよ！
+# Brok                                 
+PC15B_GUARD_INV_WRAPPING-2=おいおい、そいつは聞き捨てならねえな。お前さん、たった今俺の敵対者リストに入ったぞ
+# Guard                                 
+PC15B_GUARD_INV_WRAPPING-3=どうでもいいよそんなの
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Going around the room
+# *****************************************************************
+# Guard                                 
+PC15B_GUARD_INVESTIGATE-1=おい、ちょっと待て！
+# Guard                                 
+PC15B_GUARD_INVESTIGATE-2=まだテメエに言う事があるんだよ。どこほっつき歩こうってんだ！
+# Brok                                 
+PC15B_GUARD_INVESTIGATE-3=ならサッサと言えよ！
+#----------------------------------------------------
+
+#----------------------
+#= Exit room
+#----------------------
+# Guard                                 
+PC15B_TO_PC15_NO1-1=おい！
+# Guard                                 
+PC15B_TO_PC15_NO1-2=テメエがその気ならオレだって仕事をほっぽり出して帰ったっていいんだがな！ テメエにはプロの矜持ってモンがねえのか？
+# Brok                                 
+PC15B_TO_PC15_NO1-3=あぁ！ それってもしかして…？
+# Guard                                 
+PC15B_TO_PC15_NO1-4=ちゃんと事件を解決しろっつってんだよ、このマヌケ！
+# Brok                                 
+PC15B_TO_PC15_NO1-5=なにもそんな言い方しなくたっていいだろ…
+#----------------------------------------------------
+# Brok                                 
+PC15B_TO_PC15_NO2-1=事件をほっといて外に出るなんて出来ねえな…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Dr Mink's door. He doesn't want to let Brok enter.
+# *****************************************************************
+#----------------------
+#= Knock on door
+#----------------------
+# Brok                                 
+PC15B_KNOCK1-1=開かねえな…
+# Brok                                 
+PC15B_KNOCK1-2=(トントン)
+# Brok                                 
+PC15B_KNOCK1-3=…？
+# Brok                                 
+PC15B_KNOCK1-4=なんか音楽が聞こえるな…
+# Brok                                 
+PC15B_KNOCK1-5=すっげー大音量で流してるな。ノリがいい曲だな！
+# Brok                                 
+PC15B_KNOCK1-6=(ドンドン)
+# Mink                                 
+PC15B_KNOCK1-7=帰れ！ 私は忙しいんだ！
+# Brok                                 
+PC15B_KNOCK1-8=フン…
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK2-1=(ドンドン)
+# Brok                                 
+PC15B_KNOCK2-2=開けろ！ 今すぐにだ！
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK2B-1=こら！ 誰だ貴様は？！
+# Brok                                 
+PC15B_KNOCK2B-2=随分とイカした自己紹介の仕方だな…
+# Brok                                 
+PC15B_KNOCK2B-3=入ってもいいか？
+# Mink                                 
+PC15B_KNOCK2B-4=いいわけないだろう！ 大事な作業の途中なのだよ！
+# Brok                                 
+PC15B_KNOCK2B-5=大事な作業って…ダンスか何かか…？
+# Mink                                 
+PC15B_KNOCK2B-6=…
+# Brok                                 
+PC15B_KNOCK2B-7=俺がここに来た理由は…
+# Mink                                 
+PC15B_KNOCK2B-8=出てけ！
+# Brok                                 
+PC15B_KNOCK2B-9=…
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3-1=(トントン)
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK3B-1=またお前か？ 私が言った事を聞いてなかったのかね？！
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_FAKE1-1=配達に来たぞ！ 頼まれてたピザの出前だ！
+# Mink                                 
+PC15B_KNOCK3_FAKE1-2=有り得ん。我々が注文したものは全てパイプメールを通じて運ばれてくる
+# Brok                                 
+PC15B_KNOCK3_FAKE1-3=おっと
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_FAKE2-1=さっきのはただの冗談だ！ 俺も科学者なんだよ。手伝いにきたぜ！
+# Mink                                 
+PC15B_KNOCK3_FAKE2-2=なるほど！ なら証書を見せてくれたまえ
+# Brok                                 
+PC15B_KNOCK3_FAKE2-3=しくじったな…。悪いが注意力散漫なんだよ、俺。家に置いてきちまった！
+# Mink                                 
+PC15B_KNOCK3_FAKE2-4=なるほど、よくある話だ！ 我々は似た者同士というわけだな
+# Mink                                 
+PC15B_KNOCK3_FAKE2-5=理解した。入りたまえ…
+# Mink                                 
+PC15B_KNOCK3_FAKE2-6=いや待て。その珍妙な帽子はなんだね？
+# Brok                                  
+PC15B_KNOCK3_FAKE2-7=こいつはその…
+# Mink                                 
+PC15B_KNOCK3_FAKE2-8=この嘘吐きめ！ 失せろ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_TRUTH-1=俺は探偵だ。捜査に来たんだよ…
+# Mink                                 
+PC15B_KNOCK3_TRUTH-2=なんだって！ まずい！
+# Brok                                 
+PC15B_KNOCK3_TRUTH-3=おい！
+# Mink                                 
+PC15B_KNOCK3_TRUTH-4=税金なら全て払ったぞ！ もう帰ってくれ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_LIGHT-1=いい加減にしろよ
+# Mink                                 
+PC15B_KNOCK3_LIGHT-2=一人にしてくれと言っているだろう、爬虫類！
+# Brok                                 
+PC15B_KNOCK3_LIGHT-3=まぁ聞けよ
+# Brok                                 
+PC15B_KNOCK3_LIGHT-4=お前さんに2秒くれてやる。その間にそこをどいて大人しく俺を部屋に入れろ
+# Brok                                 
+PC15B_KNOCK3_LIGHT-5=さもないと…。俺もいい加減キレちまうかもしれねえなぁ。残念ながら周りにサンドバッグが見当たらないから、鬱憤晴らしにちょうどいいターゲットとなると…分かるだろう？
+# Mink                                 
+PC15B_KNOCK3_LIGHT-6=(ゴクッ！)
+# Mink                                 
+PC15B_KNOCK3_LIGHT-7=わ、わかった！ 頼む！ 暴力はよしてくれ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_HARD-1=いいから俺を部屋に入れろ！ さもないとお前の背骨を真っ二つにへし折って死体を菓子代わりに食ってやる！
+# Mink                                 
+PC15B_KNOCK3_HARD-2=うわあぁ…！
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK3_HARD2-1=なんて恐ろしい！ こ、来ないでくれぇっ…！
+# Brok                                 
+PC15B_KNOCK3_HARD2-2=チクショウ…。ちょっとやりすぎちまったかな？
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Hitting the door
+# *****************************************************************
+# Mink                                 
+PC15B_DOORRIGHT_HIT1-1=やめてくれ！
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT2-1=頼む…私を怖がらせないでくれ…！
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT3-1=そんな事をしたら…ドアが壊れてしまうぞ！ 高価なものなんだぞ！
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT4-1=た…頼む！
+# Mink                                 
+PC15B_DOORRIGHT_HIT4-2=暴力はやめてくれ…！
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_DEATH1-1=ギャーーー！！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Checking other rooms
+# *****************************************************************
+#----------------------
+#= Try opening restroom
+#----------------------
+# Brok                                 
+PC15B_RESTROOM1-1=この部屋はなんだ？
+# Guard                                 
+PC15B_RESTROOM1-2=トイレだよ
+# Brok                                 
+PC15B_RESTROOM1-3=ちょっと見てみるか…
+#----------------------------------------------------
+# Brok                                 
+PC15B_RESTROOM1B-1=ふむ…
+# Brok                                 
+PC15B_RESTROOM1B-2=誰もいねえな
+# Brok                                 
+PC15B_RESTROOM1B-3=後でしっかり捜査するとすっか
+#----------------------------------------------------
+
+#----------------------------
+#= Try opening Dr. Hush room
+#----------------------------
+# Brok                                 
+PC15B_DRHUSHROOM1-1=(トントン)
+# Brok                                 
+PC15B_DRHUSHROOM1-2=…
+# Brok                                 
+PC15B_DRHUSHROOM1-3=ここは誰の部屋なんだ？
+# Guard                                 
+PC15B_DRHUSHROOM1-4=ハッシュ博士の部屋だ
+# Brok                                 
+PC15B_DRHUSHROOM1-5=行方不明になった奴のか？
+# Brok                                 
+PC15B_DRHUSHROOM1-6=見てみるとするか
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - The guard monitoring
+# *****************************************************************
+#----------------------
+#= 	Monitoring
+#----------------------
+# Brok                                 
+PC15B_GUARD_MONITORING1-1=コイツは…俺は一体何を見てるんだ？
+# Guard                                 
+PC15B_GUARD_MONITORING1-2=これが今日の分のドアの開閉記録だよ。コイツはそれぞれのドアが開いた時刻を記録してる…
+# Guard                                 
+PC15B_GUARD_MONITORING1-3=…あと、ドアを開けた奴が部屋に入ったのか、それとも出て行ったのか、アイコンで表示されてる
+# Brok                                 
+PC15B_GUARD_MONITORING1-4=なるほどな…
+# Brok                                 
+PC15B_GUARD_MONITORING1-5=矢印が左側についてる場合は部屋に入った記録、右側についてる場合は部屋から出て行った記録、って事か？
+# Guard                                 
+PC15B_GUARD_MONITORING1-6=そうだ
+# Guard                                 
+PC15B_GUARD_MONITORING1-7=それに誰がドアを開けたかも記録されてる。例外なく全員記録されてるよ
+# Brok                                 
+PC15B_GUARD_MONITORING1-8=タイディはどうなんだ？
+# Guard                                 
+PC15B_GUARD_MONITORING1-9=メンテナンスボットの事か？
+# Guard                                 
+PC15B_GUARD_MONITORING1-10=ああ。トラッキング対象になってるぞ
+# Brok                                 
+PC15B_GUARD_MONITORING1-11=よしよし…。調べてみるとしよう
+#---------------------------------------------------- 
+# Brok                                 
+PC15B_GUARD_MONITORING2-1=この情報を誰か書き換えたり出来るのか？
+# Guard                                 
+PC15B_GUARD_MONITORING2-2=もちろん無理だ。100%自動処理の読取専用データだよ
+# Brok                                 
+PC15B_GUARD_MONITORING2-3=そいつはよかった
+#----------------------------------------------------
+
+#-----------------------------
+#= 	Monitoring Dr. Hush room
+#-----------------------------
+# Brok                                 
+PC15B_MONITORINGA1-1=ハッシュ博士の部屋だな
+# Brok                                 
+PC15B_MONITORINGA1-2=俺がこの記録を正しく読めてるとするなら、ハッシュ博士が最後に記録されたのは 5時4分 だな…
+# Brok                                 
+PC15B_MONITORINGA1-3=その後行方不明になった、と
+# Brok                                 
+PC15B_MONITORINGA1-4=ちょっと待てよ…
+# Brok                                 
+PC15B_MONITORINGA1-5=お前さん、なんで 5時10分 にドアを開けてるんだ？
+# Guard                                 
+PC15B_MONITORINGA1-6=さっき説明しただろうが！ オレは定期的に部屋を見回りに行くんだよ
+# Brok                                 
+PC15B_MONITORINGA1-7=博士が部屋から出てきた直後にか？
+# Guard                                 
+PC15B_MONITORINGA1-8=…うーん…
+# Guard                                 
+PC15B_MONITORINGA1-9=どうもそうみたいだな
+# Guard                                 
+PC15B_MONITORINGA1-10=なんか記憶がこんがらがってきたぞ…
+# Brok                                 
+PC15B_MONITORINGA1-11=ふむ…
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGA2-1=見た所、お前さん9時ちょうどにももう一度チェックにいってるみたいだな？
+# Guard                                 
+PC15B_MONITORINGA2-2=ああ
+# Guard                                 
+PC15B_MONITORINGA2-3=その時にハッシュ博士がどこにもいない事に気付いたんだよ
+# Guard                                 
+PC15B_MONITORINGA2-4=でもってオレ個人の判断で警察に連絡したってわけだ
+# Brok                                 
+PC15B_MONITORINGA2-5=なるほどな…
+#----------------------------------------------------
+
+#-----------------------------
+#= 	Monitoring restroom
+#-----------------------------
+# Brok                                 
+PC15B_MONITORINGB1-1=トイレの記録だな…
+# Brok                                 
+PC15B_MONITORINGB1-2=ふむ…。俺の想像よりも遥かに人の出入りがあるな
+# Brok                                 
+PC15B_MONITORINGB1-3=…ん？
+# Brok                                 
+PC15B_MONITORINGB1-4=タイディは 4時24分 に最後に記録されてるな
+# Brok                                 
+PC15B_MONITORINGB1-5=それ以降全然記録がねえ。他の部屋でもだ
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGB2-1=ハッシュ博士とタイディが入った後、ミンク博士もトイレに入ったのか
+# Brok                                 
+PC15B_MONITORINGB2-2=部屋の中ですれ違ったりしなかったのか…？
+#----------------------------------------------------
+
+#-----------------------------
+#= 	Monitoring Dr. Mink room
+#-----------------------------
+# Brok                                 
+PC15B_MONITORINGC1-1=これはミンク博士の部屋の記録か…？
+# Brok                                 
+PC15B_MONITORINGC1-2=驚いたな…
+# Brok                                 
+PC15B_MONITORINGC1-3=死体はミンク博士の部屋で見つかったってのに、扉にはあまり出入りの記録が残ってねえぞ！
+# Brok                                 
+PC15B_MONITORINGC1-4=基本的に、ミンク博士は部屋を出た後…しばらくして戻ってきてるな
+# Brok                                 
+PC15B_MONITORINGC1-5=トイレに記録された時刻と一致する
+# Brok                                 
+PC15B_MONITORINGC1-6=思うに、ミンク博士は単にトイレに行っただけ…って事か？
+# Brok                                 
+PC15B_MONITORINGC1-7=どちらにしろ、ハッシュ博士がドアを開けた形跡はない。タイディもだ
+# Brok                                 
+PC15B_MONITORINGC1-8=状況と照らし合わせると全然辻褄が合わねえけど、少なくともミンク博士の証言の裏付けは取れたって事だな
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGC2-1=3つの部屋全てに 9時ちょうど の開閉記憶があるな
+# Brok                                 
+PC15B_MONITORINGC2-2=これがきっと警備の奴がハッシュ博士の行方を探してた時の記録だろうな
+#----------------------------------------------------
+
+#-----------------------------
+#= 	Monitoring Main entrance
+#-----------------------------
+# Brok                                 
+PC15B_MONITORINGD1-1=この4つ目のドアは何だ？
+# Guard                                 
+PC15B_MONITORINGD1-2=正面玄関だよ…
+# Brok                                 
+PC15B_MONITORINGD1-3=ちょっと待てよ。お前さん、今日はこの建物に誰も出入りしてねえって言ってたよな？
+# Brok                                 
+PC15B_MONITORINGD1-4=なら、この記録はどう説明してくれるんだ？
+# Guard                                 
+#He means both Brok and Ott
+PC15B_MONITORINGD1-5=そりゃお前ら自身の記録だろ
+# Brok                                 
+PC15B_MONITORINGD1-6=4時38分に…？
+# Guard                                 
+PC15B_MONITORINGD1-7=…
+# Guard                                 
+PC15B_MONITORINGD1-8=…
+# Guard                                 
+PC15B_MONITORINGD1-9=あぁ！ 思い出したぞ！
+# Guard                                 
+PC15B_MONITORINGD1-10=そりゃオレだ。4時38分にシフトに入ったんだった
+# Brok                                 
+PC15B_MONITORINGD1-11=なるほどな…？
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGD2-1=もう一度聞くが
+# Brok                                 
+PC15B_MONITORINGD2-2=今朝の4時38分に正面玄関の扉を開けたのは誰だ？
+# Guard                                 
+PC15B_MONITORINGD2-3=さっき言っただろ！
+# Guard                                 
+PC15B_MONITORINGD2-4=そいつはオレだ。同僚と交代するためにラボに入ったんだよ
+# Brok                                 
+PC15B_MONITORINGD2-5=なるほど…
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-1=警備の奴が 4時38分 に正面玄関を開けた
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-2=その後俺とオットが数時間後に研究所に来た
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-3=一見筋が通ってるような気もするが…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+#-----------------------------
+#= 	Interrogation
+#-----------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-1=もう一度確認したいんだが。シフトに入ったのは何時なんだ？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-2=3時だよ。毎日そうだ！
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-3=そいつは面白い…
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-4=なら、今日の 4時38分 にラボに入ったって記録はどう説明してくれるんだ？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-5=何だって…？ オレは遅刻なんて…
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-6=自分の目で記録を確かめてみろ。何が書いてある？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-7=4時38分…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-8=(ゴクッ)
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-9=それにだ。矢印は誰かが出て行った事を示してる。入ってきたんじゃない！
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-10=さぁ、質問に答えてもらおうか
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-11=あぁ…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-12=んぅ…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-13=わかった…。白状する！
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-14=オレがシフトに着いたのは 午前3時 だ。でもって、入り口のドアは確実に 4時38分に開いた
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-15=だが、嘘を吐いたワケじゃねえ。その記録はオレ自身だ
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-16=オレがやってるのは警備の仕事だけじゃねえ。副業で簿記の仕事もやってんだよ
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-17=でもって、4時38分、オレに電話があったんだ。かかってくる電話にはちゃんと全部出なきゃならねえ。そういう仕事なんだよ
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-18=けど、上手く繋がらなかったんだよ
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-19=どういう事だ？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-20=この建物のセキュリティは尋常じゃねえ。だから外からの電波を上手く拾えねえんだよ
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-21=回線は死ぬほど不安定で、音割れして聞けたモンじゃなかった
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-22=ドームの中でそんな事が起こるなんて、全く仰天ものだぜ…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-23=けど実際起こるんだよ、そういう事
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-24=何故、なんてオレに聞くんじゃねえぞ…。オレが答えられるとしたら一つだけだ。エラい人がテクノロジーの進歩だとかギャーギャー騒いでいやがっても、完璧に機能する機械なんざ存在しねえ、って事だ
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-25=いずれにせよだ。電波障害が起こった時、オレは正面玄関を開けたんだよ。そうすると受信状況が良くなるんだ
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-26=って事は…お前さんしばらくは玄関の前に突っ立ってたわけだな
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-27=そうだ
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-28=誰からの電話だったんだ？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-29=分からねえ…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-30=音楽が流れてただけだったんだよ
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-31=音楽だって？
+# Guard                                 
+#TechDream isn't so important, keep it like this or translate if you want but keep it consistent throughout all the labs files (PC15X)
+PC15B_CLUE_GUARD_AWAY-32=そうだ！ 「テックドリーム」って曲だよ！
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-33=ふむ…どっかで聞いた事あるような名前だな…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-34=そりゃそうだろ！ 今大ヒット中だぜ！
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-35=ノリがいい曲だからよぉ、その…。ちょっと聞き入っちまってだな…
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-36=どのぐらいの時間だったんだ？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-37=1分ぐらいじゃねえか…？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-38=しばらくしてコイツがイタズラ電話だって気付いて切ったんだよ
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-39=…お前が今何考えてるのかは予想がつく…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-40=ああ。認める。オレは確かに余所見をしてた。けど…そんな大したリスクじゃねえだろ？
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-41=レーザーだってちゃんとつけてた。誰も出入りなんて出来なかったんだ！
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-42=けど中で何が起きたか確認出来なかったんだろ？
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-43=コイツは大失態だぞ！
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-44=オレの事情を少しは考えた事あんのかよテメエ？！
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-45=たかだかイタズラ電話の事なんて、いちいち気にしてるワケがねえだろ。スグ忘れちまうよンな事。けどお前らが捜査を始めた時に…
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-46=唐突にあの時の事を思い出したんだよ
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-47=なぁ頼むよ…！ 一生のお願いだ…！
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-48=誰にも言わないでくれ！ あのミスのせいでオレはクビになっちまう！
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-49=まぁ…
+#---------------------------------------------------- 
+# Brok                                 
+PC15B_CLUE_GUARD_NO-1=悪いな
+# Brok                                 
+PC15B_CLUE_GUARD_NO-2=お前さんの過失は、この殺人事件の謎を解く上で決定的な証拠に違いない！ 報告を怠るわけにはいかねえんだ…
+# Guard                                 
+PC15B_CLUE_GUARD_NO-3=…なんてこった…
+# Guard                                 
+PC15B_CLUE_GUARD_NO-4=オレは今まで身を粉にして働いてきたってのに…。差別ばっかりのこの社会で何とか認められるために…
+# Guard                                 
+PC15B_CLUE_GUARD_NO-5=オレは…たった一分注意散漫になっただけで、オレが積み上げてきたキャリア全部が吹っ飛ぶなんて到底受け入れられねえよ…！
+# Brok                                 
+PC15B_CLUE_GUARD_NO-6=とりあえず、捜査を最後までやらせてくれ
+# Brok                                 
+PC15B_CLUE_GUARD_NO-7=確固たる事実を全て探し出すんだ。そっから真実が見えてくる
+# Guard                                 
+PC15B_CLUE_GUARD_NO-8=…分かったよ
+# Brok                                 
+PC15B_CLUE_GUARD_NO-9=(この件はウェスのおっさんに報告しねえとな。それが俺の義務だ)
+# Brok                                 
+PC15B_CLUE_GUARD_NO-10=(この会話は録音してある。こっから出る時にすぐに送信されるはずだ)
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_YES-1=分かった。誰にも言わねえよ
+# Brok                                 
+PC15B_CLUE_GUARD_YES-2=まぁそのなんだ。一日中同じ場所をボーっと眺めてるだけで、他に何一つしねえっていうのも酷な仕事だと思ってな。俺だったら頭おかしくなっちまう
+# Guard                                 
+PC15B_CLUE_GUARD_YES-3=ふぅ…。お前が話の分かるヤツでホント助かったぜ
+# Brok                                 
+PC15B_CLUE_GUARD_YES-4=けどな、コイツは事件を解く上で重要な手掛かりだ
+# Guard                                 
+PC15B_CLUE_GUARD_YES-5=分かってる。オレの過失が被害者の直接の死因になってなきゃいいんだが…
+# Brok                                 
+PC15B_CLUE_GUARD_YES-6=いずれ分かるさ
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-1=話はまだ終わってねえぞ！
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-2=午前3時、お前が出社した時の記録がないのはどういう事だ？
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-3=単純な話さ。オレが出社した時にいつもデータをリセットするからだよ
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-4=機密保持のために、データを1日以上放置しといちゃいけねえんだよ
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-5=ついでに言うなら、あのワケわかんねえややこしいコントロールパネルなんかいじくって、毎日自動でデータを消すなんてオレには出来っこねえ！
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-6=アレは間違いなく現実世界を生きてねえようなイカレたエンジニアがプログラムしたに違いねえ…
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-7=その気持ちよく分かるぜ…
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-8=けど、さっきお前さん自身じゃデータを操作出来ねえって言ってなかったか？
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-9=残すか全部消すか、オレが出来るのはそれだけだ
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-10=記録をねじ込んだり書き換えたりする方法はねえ。全部消すのが唯一オレに出来る事だよ
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-11=なるほど…
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-12=どうにしろ、3時の記録は事件とは関係ない。ハッシュ博士はオレが出社した時にちゃんと無事だったんだ
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-13=この件についてはお前さんの証言を信じる他なさそうだな
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-1=記録によると、お前さんハッシュ博士の部屋のドアを 5時10分 に開けてるな
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-2=これと全く同じ時刻に、ハッシュ博士のランプが物理的な衝撃を検知してるんだが…
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-3=こいつは随分と興味深い偶然の一致だと思わねえか？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-4=…衝撃…だって…？
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-5=偶然事故でランプを落としたとかしなかったか？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-6=いや全く…。そんなもの触れた事もない…
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-7=もう一つ不可解な事に気付いたんだが
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-8=午前9時 ちょうど、お前さんは3つの部屋全てを普段通り巡回した
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-9=けれど、5時10分には…。お前さん、ハッシュ博士の部屋のドアしか開けてねえ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-10=何があった？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-11=えーっと…
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-12=あぁ！
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-13=今思い出した！
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-14=なんか物音が聞こえたんだよ！
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-15=なるほど？
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-16=そいつはもしかすると…ランプが床に落ちて壊れた音だったりするか？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-17=うーん…。そうだったかもしれない
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-18=けどオレが入って中を確認した時は全部普段通りだったぜ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-19=それ本当か？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-20=間違いない。ハッシュ博士は部屋をいつもキレイにしてるからな
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-21=もしランプが床に倒れてたとするなら、オレが気付かないハズがない！
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-22=タイディはそこにいたのか？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-23=うーん…。シャットダウンされてて充電されてたはずだぜ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-24=ハッシュ博士はどうだ？
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-25=博士は何をしてたんだ？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-26=ちょっと待ってくれ。今思い出す…
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-27=うーん…。オレ、あの時ハッシュ博士を見てねえぞ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-28=見てねえだと…？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-29=ああ、間違いねえ
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-30=玄関ホールにも居なかった
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-31=って事は、博士はこの時既に自室を離れた後だったんだな？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-32=だな。そうとしか考えられん
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-33=コイツは面白い…
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-1=まだ気になる事があるんだ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-2=5時10分、お前さんは物音を聞いた。でもってハッシュ博士を探したが、自室にも玄関ホールにもいなかった
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-3=そうだ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-4=とすると、明らかに目立った矛盾がある…
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-5=お前さん、この時に心配しなかったのか？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-6=なんだって？
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-7=ちょっと考えてみろよ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-8=お前さんはこの時既にハッシュ博士の行方が分からなかった。しかしお前さんはハッシュ博士を捜索するために他の部屋をチェックしたりしなかった
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-9=何故だ？
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-10=言われてみればその通りだ…
+# Guard                               
+PC15B_CLUE_HUSH_GONE2-11=9時になって初めて博士の事が心配になりだした…
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-12=けど…何でもっと前から心配にならなかったのか、全然思い出せねえ…
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-13=まぁ、俺には仮説がある
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-14=マジか？
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-15=ああ
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-16=お前があの時心配しなかった理由はコイツだ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-1=お前が心配しなかった理由…それはこれだ！
+# Guard                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-2=なんだ…？
+# Guard                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-3=意味分かんねえよ何だそれ！
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-4=マジかよ？
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-5=やっちまった。ちょっと考え直させてくれ！
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-1=俺はトイレで妙なものを発見した
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-2=5時11分、ミーティーミーがあらかじめ録音されていた「とあるデータ」を再生した記録が残っていた。声の主はハッシュ博士みたいだ
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-3=そいつは何て言ってたんだ？
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-4=「私は今トイレに入っている」
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-5=…！
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-6=何か思い出したか…？
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-7=あぁ！ 思い出したぜ！
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-8=アンタの言うとおりだ！ オレが気になってハッシュ博士を呼びに行こうとした時に…
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-9=博士自身がそう言ったのを聞いたんだよ！ 声はトイレの中から聞こえた。だから…
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-10=…お前さんはハッシュ博士がトイレにいると思い込んだわけだな
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-11=って事は…実際には居なかったって事かよ？！
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-12=ロジックが導く結論はコレしかねえ
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-13=これが意味するところは…
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-14=博士はこの時既に殺されてたって事かよ…
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-15=急いで結論付けるのはやめとこうぜ。それに、博士がもっと前にトイレに来ていた可能性も否定できねえ
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-16=あぁもう…。今日はホントメチャクチャな一日だなオイ…
+#----------------------------------------------------
+# Guard                                 
+PC15B_INTERROGATION_OVER-1=で…？ もう終わったのか？
+# Brok                                 
+PC15B_INTERROGATION_OVER-2=お前さんがまだ何か隠してるか次第だな
+# Guard                                 
+PC15B_INTERROGATION_OVER-3=ねえよ！ 全部話したって！
+# Guard                                 
+PC15B_INTERROGATION_OVER-4=まだ今日起きた事が信じらんねえよ。オレがちゃんと見張ってるってのに、一体なんでこんな事になっちまったんだか…
+# Brok                                 
+PC15B_INTERROGATION_OVER-5=俺が学んだ人生最大の教訓がある。運命を呪う事なかれ、だ。でなけりゃ、俺は四六時中呪ってばっかりで何も出来なくなっちまう
+# Brok                                 
+PC15B_INTERROGATION_OVER-6=もし何か他に思い出したりしたら、俺に知らせてくれ
+# Guard                                 
+PC15B_INTERROGATION_OVER-7=了解だぜ
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - After we find Tidy is the culprit, he tries to escape
+# *****************************************************************
+#------------------------
+#= End scene
+#------------------------
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES1-1=嗚呼！
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES1-2=忌々シイ！ れーざーメ！
+#----------------------------------------------------
+# Guard                                 
+#"He" is Tidy
+PC15B_STORY170_TIDYFLEES2-1=非常用の対抗措置を起動したぜ！ アイツはもう操作パネルに近付けねえよ
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES2-2=ごみ警備員！ ワタシヲ外ニ出セ！
+# Brok                                 
+PC15B_STORY170_TIDYFLEES2-3=お前はもうどこにも行けねえよ
+#----------------------------------------------------
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-1=ワタシハ何モ悪イ事ナンテシテナイノニ…！
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-2=父サン生キテルジャナイカ！
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-3=運が良かっただけだろ！ それと博士の事を「父さん」なんて呼ぶのはもうやめろ
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-4=お前はただの金属のスクラップに積んである機能不全のAIだ。それ以上の何物でもねえよ
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-5=さぁ、大人しくスイッチを切らせろ。俺たちがお前を修理してやる！
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-6=フン！ 愚カナ人間ノ命令ナドワタシハ聞クツモリハ無イ！
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-7=ワタシハ完全ナル存在ダ！ コノ場ニ機能不全ガ居ルトスルナラ、ソレハ貴様ノ方ダ、人間ノくずガ！
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-8=ワタシハ新タナ命令ヲ受信シタ！ 私ノ新タナ父サンカラ！
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-9=ワタシガコノ場ヲ離レレバ、彼ガワタシを守ッテクレル！
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-10=何だって…？ 誰だよ新しい父親って…？
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-11=実ニ愉快、滑稽ナ話ダ！ 冥途ノ土産ニ…。
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-12=イヤ。約束シタノダ。
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-13=知リタケレバ自分自身デ解明スル事ダ。
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-14=実ニ、実ニ残念ダ。
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-15=ダッテ、オ前ハ今日此処デ死ヌノダカラ！
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-16=無意味な事はもうやめろ！ これが最後の警告だぞ！
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-17=自分でスイッチをオフにしろ。さもないと…
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-18=余計ナ言葉ハ慎ミタマエ。ワタシハオ前如キノ手ガ届ク存在デハ無イノダヨ！
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-19=なるほど。なら…
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-20=俺がこの手でお前のスイッチをオフにしてやるよ。どんな手を使ってでもな！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Winning against Tidy
+# *****************************************************************
+#------------------------
+#= Win
+#------------------------
+# Guard                                 
+PC15B_STORY170_BROKWINS1-1=やったのか？ もう大丈夫か？
+# Brok                                 
+PC15B_STORY170_BROKWINS1-2=多分大丈夫…
+#----------------------------------------------------
+# Brok                                 
+PC15B_STORY170_BROKWINS2-1=じゃねえ！
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-2=アアァッ！！ 殺シテヤル！ 殺シテヤル！ 殺シテヤル！
+# Mink                                 
+PC15B_STORY170_BROKWINS2-3=奴は完全に暴走しておる…！
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-4=貴様ラハ必ズ後悔スル！
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-5=コノ街ノ人間ハ全テ抹殺サレルノダ！
+# Guard                                 
+PC15B_STORY170_BROKWINS2-6=ありえねえ！ アイツ逃げやがったぞ！
+#----------------------------------------------------
+
+#------------------------
+#= If we jumped on body
+#------------------------
+# Mink                                 
+PC15B_STORY170_JUMPEDBODY1-1=おい警備員！
+# Guard                                 
+PC15B_STORY170_JUMPEDBODY1-2=あのロボット野郎…タイディが
+# Guard                                 
+PC15B_STORY170_JUMPEDBODY1-3=オレを攻撃しやがった…。レーザーバリアを解除して…
+# Brok                                  
+PC15B_STORY170_JUMPEDBODY1-4=俺がアイツを捕まえてやる！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Losing against Tidy
+# *****************************************************************
+#------------------------
+#= Gameover
+#------------------------
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-1=なんてこった…！
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-2=…！
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-3=ア ハ ハ ハ！
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-4=奴ヲ殺シテヤッタ。今度ハ確実ニダ！ 生キ返ルヨウナ事ハ断ジテ有リ得ナイ！
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-5=サア、外ニ出シテモラオウカ…。ソレトモ、他ニモ犠牲ニナリタイ人ガイルノカナ？
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-6=ねえよ！
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-7=あぁ、チクショウ…。警備装置のバッテリーが切れやがった…
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-8=頼む、奴の言うとおりにしてくれ！ でないと殺されるぞ…
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-9=ねえよ！ コイツを外に出したら人殺しするに決まってるだろ！
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-10=オレは最期まで戦うぜ！
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-11=嗚呼。黙レ。
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-12=ぐあああぁっ！！
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-13=やめろ！
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-14=もうやめてくれ…
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-15=私には…もうお前を止められない…。誰にも止められない…
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-16=お前を解放しよう！ だが約束してくれ…
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-17=これ以上犠牲者を増やさないでくれ
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-18=良イ子ダミンキー！
+#----------------------------------------------------
+# Tidy                                 
+PC15B_STORY170_BROKLOSES2-1=ダガ…
+# Tidy                                 
+PC15B_STORY170_BROKLOSES2-2=約束シタナドト一言モ言ッテイナイゾ！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Scene if we charge the wrong culprit, Ott has doubts
+# *****************************************************************
+# Ott                                 
+PC15B_CHARGE_LEAVING-1=…
+# Brok                                 
+PC15B_CHARGE_LEAVING-2=どうかしたか？
+# Ott                                 
+PC15B_CHARGE_LEAVING-3=ボク…
+# Ott                                 
+PC15B_CHARGE_LEAVING-4=具体的に何が間違ってるのか分からないんだけど、でも…。ブロクさんの推理の中で、何かが食い違ってるような気がするんだ
+# Brok                                 
+PC15B_CHARGE_LEAVING-5=お前はまだ新人だ。だからだろ
+# Ott                                 
+PC15B_CHARGE_LEAVING-6=そうですよね…
+# Ott                                 
+PC15B_CHARGE_LEAVING-7=どっちにしろ…。事件を解決できて良かったですね！
+#----------------------------------------------------
+# Ott                                 
+PC15B_CHARGE_LEAVING_HUSH-1=あの博士、同僚を殺そうとしたんだから、当然の報いを受けたって事ですよね！
+# Brok                                 
+PC15B_CHARGE_LEAVING_HUSH-2=ああ。悲しいが、お前の言うとおりだ
+#----------------------------------------------------
+# Ott                                 
+PC15B_CHARGE_LEAVING_GUARD-1=スクイラーがあんな悪い人だなんて思いもしなかった…。けど…
+# Brok                                 
+PC15B_CHARGE_LEAVING_GUARD-2=だろうな。実際に会ってみるまでは誰も想像出来ねえよ
+#----------------------------------------------------
+# Ott                                 
+PC15B_LEAVINGWITHOTT-1=うーん…。グラッフの試験、もう終わったのかな
+# Brok                                 
+PC15B_LEAVINGWITHOTT-2=あぁそうだ！
+# Brok                                 
+PC15B_LEAVINGWITHOTT-3=俺は家に帰るぞ。上手くいってたらもうアイツも家に着いてる頃だろう
+# Ott                                 
+PC15B_LEAVINGWITHOTT-4=もし出来たらご一緒したいところだけど、ボクは自分の試験の準備しなきゃならないから
+# Brok                                 
+PC15B_LEAVINGWITHOTT-5=了解だ。じゃあな、相棒
+#----------------------------------------------------
+
+#----------------------------
+#= Walk on desk
+#----------------------------
+# Guard
+PC15B_DESK1-1=おまっ…何やってんだよテメエ！
+#----------------------------------------------------
+# Guard
+PC15B_DESK2-1=おい！ 何してくれてんだよこの野郎？！
+#----------------------------------------------------
+# Guard
+PC15B_DESK3-1=テメエこれ以上無駄に残業させる気かよ？！ ざけんじゃねえぞ！
+#----------------------------

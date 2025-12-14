@@ -1,0 +1,986 @@
+#-------------------------------
+#= GRAFF --- BROK APARTMENT
+#-------------------------------
+
+#----- Interactions --------
+
+
+#----- Choices / Items --------
+GOT_FLOUR=小麦粉を手に入れた！
+
+#----- Topics --------
+GPC01_CHOOSE_GIFT=プレゼントを選ぶ
+GPC01_GRAFFVR_CHOICE=VRで訓練しますか？
+
+#----- Dialog --------
+
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+
+#----------------------
+#= Brok Bed
+#----------------------
+# Graff                                 
+GPC01_BED1-1=僕にはちゃんとしたベッドがあるだけでも運が良かったと思うべきかな…
+#----------------------------------------------------
+
+#----------------------
+#= Plant
+#----------------------
+# Graff                                 
+GPC01_PLANT1-1=ここのものは何もかも腐ってきてる。僕自身がこの植物と同じ事にならなきゃいいんだけど…
+#----------------------------------------------------
+
+#----------------------
+#= Picture
+#----------------------
+# Graff                                 
+GPC01_PICTURE1-1=…
+#----------------------------------------------------
+
+#----------------------
+#= Dish
+#----------------------
+# Graff                                 
+GPC01_DISH1-1=僕の当番じゃないね！
+#----------------------------------------------------
+# Graff
+GPC01_DISH_ANGRY1-1=あの人まだ食器そのまま放置してるの？！
+#----------------------------------------------------
+# Graff
+GPC01_DISH_HAPPY1-1=あぁ、あの人やっと食器洗ったんだ！
+#----------------------------------------------------
+
+#----------------------
+#= Graff bed
+#----------------------
+# Graff                                 
+GPC01_GRAFFBED1-1=家は家だけど、酷い家だよまったく…
+# Graff                                 
+GPC01_GRAFFBED1-2=壁の角度だっておかしいし
+# Graff                                 
+GPC01_GRAFFBED1-3=ベッドがちゃんと部屋に入るように、あの人がベッドを切ってくれたんだ
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_GRAFFBED-1=全然眠れなかった…
+#----------------------------------------------------
+# Graff
+GPC01_BED_ASK-1=うーん…。ちょっと昼寝でもしようかな？
+#----------------------------------------------------
+# Graff
+GPC01_BED_HEALTH_BACK1-1=(はぁ…) 寝る時間があればよかったんだけど…。 もうこれ以上モタモタしてられない
+#----------------------------------------------------
+
+#----------------------
+#= Chest
+#----------------------
+# Graff                                 
+GPC01_CHEST1-1=ダメだ…
+# Graff                                 
+GPC01_CHEST1-2=過去に置き去りにしてきたもの全てが…この箱の中に入ってる
+# Graff                                 
+GPC01_CHEST1-3=この場所を出るその日まで、箱を開けないって自分自身に誓ったんだ
+#----------------------------------------------------
+# Graff                                 
+GPC01_CHEST2-1=今はまだその時じゃない…
+#----------------------------------------------------
+
+#----------------------
+#= Clothes
+#----------------------
+# Graff                                 
+GPC01_CLOTHES1-1=あの人のはいつもメチャクチャだな…。けどあの人に洗濯とか無理でしょ
+# Graff                                 
+GPC01_CLOTHES1-2=あの人いつも朝から晩まで働いてるし、寝る時と食べる時にしか帰ってこないから
+# Graff                                 
+GPC01_CLOTHES1-3=あぁ、あと料理もするな！ 何故か知らないけど料理好きなんだよな、あの人
+#----------------------------------------------------
+
+#----------------------
+#= Bedroom door
+#----------------------
+# Graff                                 
+GPC01_BEDROOMDOOR_STORY180-1=…
+# Graff                                 
+GPC01_BEDROOMDOOR_STORY180-2=…僕には無理だ
+#----------------------------------------------------
+
+#----------------------
+#= Mess
+#----------------------
+# Graff                                 
+GPC01_MESS1-1=服とかベッドシーツとかそんなのだけだ
+# Graff                                 
+GPC01_MESS1-2=審査員がもうすぐ到着しちゃう…。こんなメチャクチャな状態を引っ掻き回してる暇なんてないぞ！
+#----------------------------------------------------
+# Graff                                 
+GPC01_MESS_AFTER-1=…だめだ、役に立ちそうなものは見当たらないや
+#----------------------------------------------------
+
+#----------------------
+#= Drawer
+#----------------------
+# Graff                                 
+GPC01_DRAWER1-1=さて、何があるかな…
+# Graff                                 
+GPC01_DRAWER1-2=えーっと…。これ、小麦粉か？ なんでこんな場所にあるんだ？
+# Graff                                 
+GPC01_DRAWER1-3=前に何か開発する時に使ったんだっけな…
+#----------------------------------------------------
+# Graff                                 
+GPC01_DRAWER2-1=んー…。服と…ペンと紙…
+# Graff                                 
+GPC01_DRAWER2-2=今役に立つものは何もなさそうだ
+#----------------------------------------------------
+# Graff                                 
+GPC01_DRAWER3-1=服と…ペンと紙…
+#----------------------------------------------------
+# Graff                                 
+GPC01_DRAWER_NEED-1=あぁなるほど！
+# Graff                                 
+GPC01_DRAWER_NEED-2=あの人から何年か前にもらった紙とペンを使おう
+# Graff                                 
+GPC01_DRAWER_NEED-3=あの人は手書きの練習に使うだろうって言ってたな
+# Graff                                 
+GPC01_DRAWER_NEED-4=あの時はこのご時世に手書きなんてバカらしいって思ってたけど
+# Graff                                 
+GPC01_DRAWER_NEED-5=今なら分かる…
+# Graff                                 
+GPC01_DRAWER_NEED-6=まだ手書き出来るかどうか、試してみるとするか！
+#----------------------------------------------------
+
+#----------------------
+#= Fridge
+#----------------------
+# Graff                                 
+GPC01_DOORFRIDGE1-1=ストレスで胃がおかしくなってる…。食事は後にしよう
+#----------------------------------------------------
+
+#----------------------
+#= Fruit cup
+#----------------------
+# Graff                                 
+GPC01_FRUITCUP1-1=僕コレホントにキライなんだけど…持っていこう。念のため
+#----------------------------------------------------
+# Graff                                 
+GPC01_FRUITCUP2-1=もう一つ持っていこう…
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP_NONE-1=なんだよ…。あの人全部持ってっちゃったのかよ！
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP_GONE-1=…
+#----------------------------------------------------
+
+#----------------------
+#= Instrument
+#----------------------
+# Graff                                 
+GPC01_INSTRUMENT1-1=音楽とはきちんと向き合った事がないな。芸術よりも科学のが性に合ってる
+# Graff                                 
+GPC01_INSTRUMENT1-2=けどAIのチップチューンは好きだな！
+#----------------------------------------------------
+
+#----------------------
+#= Punching bag
+#----------------------
+# Graff                                 
+GPC01_PUNCHINGBAG1-1=あの人は知らないはずだけど…
+# Graff                                 
+GPC01_PUNCHINGBAG1-2=時々このサンドバッグを殴るのが好きなんだ！
+# Graff                                 
+GPC01_PUNCHINGBAG1-3=僕らが住んでるのは危ない場所だ…。万が一に備えておかないと
+#----------------------------------------------------
+# Graff                                 
+GPC01_PUNCHINGBAG_TRY1-1=ふぅ…。ケッコー疲れるなこれ
+#----------------------------------------------------
+# Graff                                 
+GPC01_PUNCHINGBAG_DEATH1-1=トレーニングの成果が出たみたいだね！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff can play VR arena with his computer
+# *****************************************************************
+#----------------------
+#= Computer
+#----------------------
+# Graff                                 
+GPC01_COMPUTER1-1=僕専用の、完全に時代遅れのコンピューターだ
+# Graff                                 
+GPC01_COMPUTER1-2=こんな大きなもの他に誰も使ってない。けど僕にはこれしかないから、愛着も湧いてくる…
+# Graff                                 
+GPC01_COMPUTER1-3=多分今やるべき事じゃないだろうけど…VRアリーナのエミュレーターで遊べる！
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER2-1=ちょっと練習でもしようかな…？
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_LOSE1-1=ふぅ…。あれが現実じゃなくてよかったよ！ 伝説の英雄みたいに命を九つ持ってるわけじゃない。僕の人生は一回こっきりだ
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_LOSE2-1=もっとしっかり練習するべきだな…
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_WIN1-1=やったね！
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_WIN2-1=上手くなってきたかな！
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_STORY180-1=いや、ダメだな…。あの人にメッセージを送るならもっと原始的な方法じゃないと…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 1 end - Graff is angry in his bedroom after their argument (normal - Brok came too late to the science fair)
+# *****************************************************************
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-1=(はぁ…)
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-2=信じられない…　
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-3=あの人のせいで…試験に落ちた
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-4=これじゃ卒業出来ない…
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-5=このままじゃもう一生…僕は薄汚いスラム暮らしだ…。これじゃまるで…
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-6=…
+#----------------------------------------------------
+
+#----------------------
+#= End of day 1 dialog
+#----------------------
+#---------------------------------------------------------------------------------------
+# Graff checks messenger
+#---------------------------------------------------------------------------------------
+# Graff                                 
+GPC01_STORY110_GRAFFCHECKSMESSENGER-1=…
+# Graff                                 
+GPC01_STORY110_GRAFFCHECKSMESSENGER-2=一旦頭をスッキリさせなきゃ
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_PC-1=オットはオンラインしてるかな？ チーム戦でもやりたいな！
+# Graff                                 
+GPC01_STORY110_PC-2=…
+# Graff                                 
+GPC01_STORY110_PC-3=いないな。ダメだ
+#----------------------------------------------------
+
+#---------------------------------------------------------------------------------------
+# Graff checks messenger - We broke Ott's machine
+#---------------------------------------------------------------------------------------
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-1=…あぁ、僕はなんてバカなんだ
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-2=オットがいるわけないじゃないか…。あいつの作品を壊したのはこの僕だぞ。怒ってるに決まってる…
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-3=…唯一の友達も失くしちゃったな…
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-4=(はぁ…)
+#----------------------------------------------------
+
+#---------------------------------------------------------------------------------------
+# Graff checks messenger - We didn't break Ott's machine
+#---------------------------------------------------------------------------------------
+# Graff                                 
+GPC01_STORY110_OTTNORMAL1-1=明日の職場体験の準備でもしてるのかな
+# Graff                                 
+GPC01_STORY110_OTTNORMAL1-2=タイミング悪いな…。こういう時にこそ友達には傍に居てほしいのに
+#----------------------------------------------------
+
+#---------------------------------------------------------------------------------------
+# Graff after messenger - Normal
+#---------------------------------------------------------------------------------------
+# Graff                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1-1=んー…
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1-2=「親のせいで全部台無し」、と…
+#----------------------------------------------------
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1B-1=タイトル - 「親なんて大嫌いだ！」
+# Graff                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1B-2=…こういう事を考えてるのは僕一人じゃなさそうだ
+#----------------------------------------------------
+
+#---------------------------------------------------------------------------------------
+# Graff after messenger - Broken
+#---------------------------------------------------------------------------------------
+# Graff                                 
+GPC01_STORY110_AFTERMESSENGERBROKEN1-1=んー…
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERBROKEN1-2=「世界の全てを恨んでる」、なんてね…
+#----------------------------------------------------
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERBROKEN1B-1=タイトル - 「緊張による感情的爆発の対処法」
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_AFTER1B-1=面白いな…
+# Graff                                 
+GPC01_STORY110_AFTER1B-2=ここの連中なら僕の話に興味を持つかも…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Same scene but Graff busted all inventions during the science fair
+# *****************************************************************
+#---------------------------------------------------------------------------------------
+# Graff is angry at himself in his bedroom (for busting machines)
+#---------------------------------------------------------------------------------------
+
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-1=…
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-2=なんて事をしてしまったんだ…
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-3=たった数分の間に…今まで何年もかけて努力してきた事を…
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-4=全部台無しにしてしまった…
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-5=あの人がここに居なくてよかった…こんなみっともない大失敗、あの人に見せられるわけがない…
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-6=…
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-7=いや、ダメだ！ このまま黙ってられるか！
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-8=僕は…何かしなくちゃ…
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-9=けど…今更状況をひっくり返すなんて、もう手遅れかな…？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - End of day 2 - Graff couldn't take a pill and suffers heavily from the effects of the pollution. He comes back home but...
+# *****************************************************************
+# Graff                                 
+GPC01_STORY165_GRAFF-1=…
+# Graff                                 
+GPC01_STORY165_GRAFF-2=(ゴホ、ゴホ) あの人…まだ帰ってないのかよ…！
+# Graff                                 
+GPC01_STORY165_GRAFF-3=(ゴホ、ゴホ、ゴホ) ##頼むよ…。どこかに薬を隠しておいたって(ゴホッ)##言ってくれよ…！
+#----------------------------------------------------
+# Graff                                 
+#Too late. Graff collapses
+GPC01_STORY165_GRAFFB-1=…(ゴホッ、ゴホッ)
+# Graff                                 
+GPC01_STORY165_GRAFFB-2=息が…
+# Graff                                 
+GPC01_STORY165_GRAFFB-3=出来ない…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Brok came back home and gave a pill to Graff. But Graff isn't happy because he almost died and Brok wasn't there
+# *****************************************************************
+# Graff                                 
+PC01_DAY2ENDE1-1=…
+# Graff                                 
+PC01_DAY2ENDE1-2=僕、一体どうしちゃったんだよ…？
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-1=あの人、ちゃんと僕の命を助けてくれたじゃないか
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-2=感謝するべきだって頭では分かってるのに
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-3=けど…なんで…
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-4=なんでこんなに腹が立つんだよ…？
+#----------------------------------------------------
+# Graff                                 
+#If Graff was able to get a pill by himself (so he didn't collapse)
+PC01_DAY2ENDE_PILL-1=今日は酷い事の連続だったけど…自分の力で何とか出来てよかった
+# Graff                                 
+PC01_DAY2ENDE_PILL-2=分かってる。あの人を責めるより、もっと建設的な事に目を向けるべきだ
+#----------------------------------------------------
+# Graff                                 
+#If Graff killed Klay during the trial
+PC01_DAY2ENDE_KLAY-1=僕は…人殺しだ…
+# Graff                                 
+PC01_DAY2ENDE_KLAY-2=あの人に正直に白状するなんて出来っこない…
+# Graff                                 
+PC01_DAY2ENDE_KLAY-3=僕が怒ってる人物はただ一人…。自分自身だ
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE_NEXT-1=(はぁ…)
+# Graff                                 
+PC01_DAY2ENDE_NEXT-2=僕の運命、もっとマシな方に転べばよかったのに…
+# Graff                                 
+PC01_DAY2ENDE_NEXT-3=もしもあの時…事故なんて起きなければ…
+# Graff                                 
+PC01_DAY2ENDE_NEXT-4=それに…本当の父さんが行方不明になんてならなければ…
+# Graff                                 
+PC01_DAY2ENDE_NEXT-5=二人とも…
+# Graff                                 
+PC01_DAY2ENDE_NEXT-6=僕の本当の両親は僕を見捨てたんだ…
+# Graff                                 
+PC01_DAY2ENDE_NEXT-7=僕は…
+# Graff                                 
+PC01_DAY2ENDE_NEXT-8=アイツらが許せない…！
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE-1=(はぁ…)
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE-2=調べなきゃ…
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE1-1=ふむ…
+# Unknown
+PC01_DAY2ENDE_ALTERNATIVE1-2="誰もかれもにムカつくし、自分自身が大嫌い"
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE2-1=うわ…！ 検索結果がこんなにいっぱい！
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE2-2=多分みんな同じ事考えてるんだ。あまり心配しなくてもいいのかな
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE3-1=メッセージだ…
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE1B-1=…
+# Graff                                 
+PC01_DAY2ENDE1B-2=僕だって少しは強くなれたつもりだったのに
+# Graff                                 
+PC01_DAY2ENDE1B-3=よし！ しっかりするんだグラッフ！
+# Graff                                 
+PC01_DAY2ENDE1B-4=あの人の言う通りだ。僕はまだ生きてる。それで十分じゃないか
+# Graff                                 
+PC01_DAY2ENDE1B-5=メッセージが来てる…
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE2-1=あぁ…今日の試験の結果か
+#----------------------------------------------------
+# Graff                                 
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_PERFECT-1={amount} 点だ！ やったぞ！
+# Graff                                 
+PC01_DAY2ENDE2_PERFECT-2=今日初めてマシな出来事が起きたよ！
+#----------------------------------------------------
+# Graff                                 
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_GOOD-1={amount} 点だ。悪くないね！
+#----------------------------------------------------
+# Graff                                 
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_BAD-1=なんてこった…{amount} 点だ…
+# Graff                                 
+PC01_DAY2ENDE2_BAD-2=今日はもう本当に最悪な事しか起きないじゃないか…
+#----------------------------------------------------
+# Graff                                 
+#Another message
+PC01_DAY2ENDE2_NEXT-1=あれ？ またメッセージ？
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE3-1=…
+# Graff                                 
+PC01_DAY2ENDE3-2=今日色々な事が起きすぎて、すっかり忘れてたよ…！
+# Graff                                 
+#Referring to the deal with the Director - re-instating him or his science fair mark
+PC01_DAY2ENDE3-3=あの人…。ちゃんと約束を守ってくれたんだ！
+# Graff                                 
+PC01_DAY2ENDE3-4=…
+# Graff                                 
+PC01_DAY2ENDE3-5=お腹すいたな…
+# Graff                                 
+PC01_DAY2ENDE3-6=僕…謝った方がいいよな…。どうしよう…
+# Graff                                 
+PC01_DAY2ENDE3-7=けど今の僕にはこのまま出ていって面と向かってあの人と話せるような度胸はない…
+# Graff                                 
+PC01_DAY2ENDE3-8=携帯にメールを送るのもナシだ。どうせあの人は気付きもしない
+# Graff                                 
+PC01_DAY2ENDE3-9=考えろ…
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-1=…
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-2=ボーナス点…？
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-3=あの人…
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE4-1=よし、と…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - After Brok put some food under his door
+# *****************************************************************
+# Graff                                 
+PC01_DAY2ENDH1-1=(もぐもぐ)
+# Graff                                 
+PC01_DAY2ENDH1-2=残り物にしては随分マトモな味だったな
+# Graff                                 
+PC01_DAY2ENDH1-3=…
+# Graff                                 
+PC01_DAY2ENDH1-4=まだ眠くはないな
+# Graff                                 
+PC01_DAY2ENDH1-5=オットはログインしてるかな？
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDH1B-1=…
+# Graff                                 
+PC01_DAY2ENDH1B-2=だめだ
+# Graff                                 
+PC01_DAY2ENDH1B-3=あぁそうだ、今思い出した。インターンのせいでオットは今夜試験を受けるんだった
+# Graff                                 
+PC01_DAY2ENDH1B-4=あれ、何だこれ…？
+# Graff                                 
+PC01_DAY2ENDH1B-5=僕が昨日書いた投稿に誰かが返信をくれたんだ！
+# Nmerchat                                 
+PC01_DAY2ENDH1B-6=「キミの気持ちはよく分かる。本当の親ならそんな事は絶対にしない」
+# Graff                                 
+PC01_DAY2ENDH1B-7=なるほど…
+# Graff                                 
+PC01_DAY2ENDH1B-8=…んっ？
+# Nmerchat                                 
+PC01_DAY2ENDH1B-9=「やあ。今話せるかい」
+# Graff                                 
+#He's using a messenger type software
+PC01_DAY2ENDH1B-10=テキストチャットをしたいって？ 掲示板の人物から？ 妙だな…
+# Graff                                 
+PC01_DAY2ENDH1B-11=返信してみよう
+# Graffchat                                 
+PC01_DAY2ENDH1B-12=「構わないよ」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-13=「キミの養父はキミに嘘を吐いている」
+# Graff                                 
+PC01_DAY2ENDH1B-14=なんだって？！
+# Graffchat                                 
+PC01_DAY2ENDH1B-15=「嘘を吐いてるって、何を？」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-16=「昨日と今日の午後、奴はドラムにいた」
+# Graffchat                                 
+PC01_DAY2ENDH1B-17=「ドラムだって…？ ありえない！」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-18=「本当の事だ」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-19=「奴は数分前に自室を発った」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-20=「奴は既に表通りに出ている」
+# Graffchat                                 
+PC01_DAY2ENDH1B-21=「お前は誰だ？ 何故そんな事を知っている？」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-22=「電話をネットに接続するんだ」
+# Graffchat                                 
+PC01_DAY2ENDH1B-23=「なんだって？ 断る！」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-24=「いいから信じなさい」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-25=「キミが失うものなど何もない」
+# Graff                                 
+PC01_DAY2ENDH1B-26=…
+# Graff                                 
+PC01_DAY2ENDH1B-27=わかったよ
+# Graff                                 
+PC01_DAY2ENDH1B-28=こんなヤツの言う事を聞くのはイヤだけど…。コイツ、何か知ってるみたいだ
+# Graff                                 
+PC01_DAY2ENDH1B-29=あの人の情報を吸い出すまでならコイツこ協力してやってもいい
+# Graff                                 
+PC01_DAY2ENDH1B-30=後で後悔しなきゃいいんだけど…
+# Nmerchat                                 
+PC01_DAY2ENDH1B-31=「トラッキングアプリを送信中だ」
+# Graffchat                                 
+PC01_DAY2ENDH1B-32=「あの人を追跡してるの？！」
+# Graffchat                                 
+PC01_DAY2ENDH1B-33=「あんた、ハッカーなのか？」
+# Nmerchat                                 
+PC01_DAY2ENDH1B-34=「外に出て奴を追いかけたまえ」
+# Graff                                 
+PC01_DAY2ENDH1B-35=…
+# Graff                                 
+PC01_DAY2ENDH1B-36=あの野郎。ログアウトしやがった
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-1=…
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-2=あぁクソ
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-3=そうだった、今思い出した。インターンのせいでオットは今夜試験を受けるんだった
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-4=あれ、なんだこれ…？
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-5=誰かが僕の検索に気付いてコメントくれたのか？
+# Nmerchat
+PC01_DAY2ENDH1B_ALTERNATIVE-6="心配するな。キミは何も悪くない"
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-7=これって…
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-8=…？
+#----------------------------------------------------
+# Graff                                 
+#Graff exited his bedroom
+PC01_DAY2ENDF4-1=そんなバカな！ アイツが言うとおりじゃないか！
+# Graff                                 
+PC01_DAY2ENDF4-2=なんだか胡散臭い臭いがプンプンするな…
+# Graff                                 
+PC01_DAY2ENDF4-3=…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Graff comes back right after Brok. He has seen him fighting rats in the alley and misinterpreted it (thinking he stole from the rats when it's the opposite)
+# *****************************************************************
+# Brok                                 
+PC01_DAY2ENDJ1-1=なんだ…？
+# Brok                                 
+PC01_DAY2ENDJ1-2=こんな時間に一体どこ行ってたんだよ…？！
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDJ1_NOPE-1=…
+# Graff
+PC01_DAY2ENDJ1_NOPE-2=ほっといてくれよ
+# Brok
+PC01_DAY2ENDJ1_NOPE-3=(はぁ…)
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDJ2-1=そう言うアンタはどうなんだよ！
+# Brok                                 
+PC01_DAY2ENDJ2-2=…
+# Brok                                 
+PC01_DAY2ENDJ2-3=もしかして、俺を尾行してたのか？
+# Graff                                 
+PC01_DAY2ENDJ2-4=そうだよ
+# Graff                                 
+PC01_DAY2ENDJ2-5=何か問題でもあるの？
+# Brok                                 
+PC01_DAY2ENDJ2-6=まぁその…
+# Graff                                 
+PC01_DAY2ENDJ2-7=あのさ！ 僕もうなんでもかんでも秘密にされるの我慢ならないんだけど！
+# Graff                                 
+PC01_DAY2ENDJ2-8=今まで何してたのさ？
+# Brok                                 
+PC01_DAY2ENDJ2-9=捜査だよ…
+# Graff                                 
+PC01_DAY2ENDJ2-10=どこで？！
+# Graff                                 
+PC01_DAY2ENDJ2-11=昨日一体どこ行ってたのさ？！
+# Graff                                 
+PC01_DAY2ENDJ2-12=それに今日の昼間も、僕が死にかけてる時にどこをほっつき歩いてたんだよ？！
+# Brok                                 
+PC01_DAY2ENDJ2-13=えっと…その…
+# Graff                                 
+PC01_DAY2ENDJ2-14=あぁ、アンタが言いたくないなら僕が代わりに言ってやるよ！ アンタドラムにいたんだろ！
+# Brok                                 
+PC01_DAY2ENDJ2-15=あぁ…。まぁ、そうだが
+# Brok                                 
+PC01_DAY2ENDJ2-16=お前どうしてそんな事…？
+# Graff                                 
+PC01_DAY2ENDJ2-17=どうでもいいだろそんなの
+# Graff                                 
+PC01_DAY2ENDJ2-18=いつ僕に言うつもりだったのさ？
+# Brok                                 
+PC01_DAY2ENDJ2-19=その…忘れてただけだよ
+# Graff                                 
+PC01_DAY2ENDJ2-20=忘れた？！
+# Graff                                 
+PC01_DAY2ENDJ2-21=何を隠そうとしてるんだよ？！
+# Brok                                 
+PC01_DAY2ENDJ2-22=俺は…その…
+# Brok                                 
+PC01_DAY2ENDJ2-23=ちょっと警察と仕事する事になったんだよ。一時的なもんだが
+# Brok                                 
+PC01_DAY2ENDJ2-24=まぁ実際には…もう過去のハナシだが。クビになったんだよ
+# Graff                                 
+PC01_DAY2ENDJ2-25=警察…？
+# Brok                                 
+PC01_DAY2ENDJ2-26=話せば長くなる…
+# Graff                                 
+PC01_DAY2ENDJ2-27=そりゃそうだろうよ
+# Brok                                 
+PC01_DAY2ENDJ2-28=今度全部教えてやるよ…
+# Brok                                 
+PC01_DAY2ENDJ2-29=けど、頼む…。今度にしてくれや…。ふわぁ～、今日はもうクタクタだ
+# Graff                                 
+PC01_DAY2ENDJ2-30=なら少なくともこれだけは答えろよ！
+# Graff                                 
+PC01_DAY2ENDJ2-31=さっきスクイラーの連中と何の取引してたんだよ？！
+# Brok                                 
+PC01_DAY2ENDJ2-32=あんなのただのゴロツキ連中さ
+# Brok                                 
+PC01_DAY2ENDJ2-33=アイツらが俺の持ち物を狙ってきたから…俺は自分自身を守っただけだ
+# Graff                                 
+PC01_DAY2ENDJ2-34=ああそうかよ…？
+# Graff                                 
+PC01_DAY2ENDJ2-35=あれはただの護身術なんかじゃない。プロの格闘家みたいにアイツらをノしてたじゃないか！
+# Graff                                 
+PC01_DAY2ENDJ2-36=あんな戦い方、どこで覚えたんだよ？
+#----------------------------------------------------
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-1=覚えてねえのか…？
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-2=俺は探偵家業一筋だったワケじゃねえんだ
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-3=お前の母さんと出会った頃まで遡る…。あの頃の俺は闘技場でボクサーやってたんだよ
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-4=…ボクサー…
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-5=あぁ、思い出した…
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-6=多分…随分前から知ってたんだろうけど…でも…
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-7=闘技場は違法になって閉鎖されたはずでしょ？
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-8=ああ、そうだ
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-9=なら…毎夜毎夜一体何をしてるのさ？
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-10=VR戦だ
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-11=アンタ…VRファイターだったのかよ？！
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-12=まぁな…
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-13=なんで今までずっとずっと…
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-14=僕に教えてくれなかったんだよ？！
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-15=俺が…言わないようにしようって、決めたから…かな
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-16=事故があったあの日以来…何もかも変わっちまった
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-17=違法な暴力沙汰で金を稼ぐなんて…
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-18=こんな野蛮な生き方は、お前の母さんが望んだ事じゃない
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-19=俺はお前の手本になれるような、立派な父親ってヤツになりたかったんだ
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-20=だから探偵家業を始めたんだよ。穢れた過去から足を洗って、再スタートを切るために
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-21=だが、俺はスグに辛い現実ってヤツにぶち当たる羽目になった。探偵家業じゃ俺たち二人が食っていく額には全然届かねえんだよ
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-22=だから…またすぐ古巣に戻る羽目になっちまったんだ
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-23=悪かったよ…。俺はお前が期待してるような父親にはなれなかった
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-24=ちょっと、冗談でしょ？！ 格闘家なんてスゴいじゃないか！
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-25=僕は別に格闘技のファンってワケじゃないけど、でも…
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-26=次の試合、見に行くよ！
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-27=って事は…。俺の事、怒ってねえのか…？
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-28=怒ってたよ
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-29=僕はただ、真実が知りたかっただけだ。今ならいろんな事が腑に落ちるよ！
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-30=僕はなんてバカなんだ。こんな馬鹿でかいガタイしてるってのに、なんで正真正銘のプロの格闘家だって思い至らなかったんだ
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-31=おい、お前まで俺の事太ってるとか言うのかよ！
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-32=ただの冗談だよ！
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-33=まぁ、実際腹は出てるけど、体脂肪率はともかく、アンタより強い人なんて見た事ないよ
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-34=あぁ、そりゃそうだ。一番デカいスクイラーだって俺には勝てっこないさ！
+# Graff                                 
+#"To worry anymore that something happens to you"
+PC01_DAY2ENDJ2_TRUTH1-35=そりゃいいや。これでもうアンタの心配しなくても…あ…えっと…
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-36=なんだ、俺の事心配してくれてたのか？
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-37=その…
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-38=今までずっと…僕はアンタに頼り切りだったから
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-39=けど明日から絶対自分を変えてみせるよ
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-40=なぁよぉ…。ドラマーになった後でもよ…
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-41=俺は一緒に行けねえけど、いつでも俺の事を頼ったっていいんだぜ
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-42=ありがとう…
+#----------------------------------------------------
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-1=経験で学んだ。分かるだろ…
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-2=ストリートファイトの経験は一度や二度じゃねえんだ
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-3=実際問題…お前も鍛えておいた方がいいぞ。万が一に備えて
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-4=もうやってるよ。スラムに来た時にアンタが言った事じゃないか。僕はもっと強くなるべきだって
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-5=僕はアンタの言う事に従った。これでも護身術の授業以外にも普段から自分でトレーニングしてるんだよ
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-6=すごいじゃねえか！
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-7=そいやお前、最近筋肉がついてきたな。一人前の男になってきたじゃねえか！
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-8=本当に…？
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-9=暴力なんて振るわずに済むならその方がいいけど…
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-1=分かった…。アンタを信じるよ
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-2=もう隠し事はナシだよ。いい？
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-3=他にも隠し事があるなら今ここで全部言ってよね
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-4=誓って言う。もう隠し事はしねえ
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-5=人生なんて短いモンだ…。もうお前と口喧嘩ばかりするのは俺はゴメンだ
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-6=そうだね
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-7=なぁ…。お前の誕生日、もうすぐだろ
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-8=覚えててくれたんだ…
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-9=お前のために何か特別なものを用意する、ってのはどうだ？
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-10=すごいや！ 楽しみにしてるよ
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-11=でも…。結局約束を守れそうになくなったとしても…
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-12=それはそれで構わないよ。事情は察するから
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-13=…
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-14=実のところよぉ。プレゼント渡すの、誕生日まで待ってらんねえんだ
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-15=ほら
+#----------------------------------------------------
+# Graff                                 
+#Giving a bad present
+GPC01_DAY2ENDJ2_GIVEBAD-1=えっと…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-2=ありがとう…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEBAD-3=…期待外れだったか
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-4=いや、べつに！ そんなんじゃないけど、ただ…ちょっと…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-5=予想外だっただけだよ
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEBAD-6=すまねえ。またやらかしちまった
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-7=いいって！ 気にしないで！
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-8=大事にするから
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-1=これって…！
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-2=プレッドだ
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-3=昔ちょうどこんなの持ってたんだ…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-4=覚えててくれたの！
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-5=ああ
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-6=当時の記憶はもう大分失くしちまったが…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-7=けどコイツを見た時に唐突に思い出してな…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-8=…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-9=ありがとう…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-10=気にすんなよ。タダで手に入れたモンだからよ！
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-11=それでもだよ…
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-1=これって…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-2=母さんの、ペンダント…？
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-3=ああ
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-4=お前が持ってた方がいいと思ってな
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-5=そうすりゃ…あいつはずっとお前と一緒にいられる…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-6=僕…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-7=やっぱり受け取れないよ
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-8=なんでだよ…？
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-9=そりゃだって…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-10=辛いから…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-11=はぁ…悪かった…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-12=俺がもうしばらく預かっててやる
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-13=けどいつか…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-14=お前が自分に自信を持てた時に…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-15=お前にちゃんと返すからな
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-16=わかったよ…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-17=けど、気持ちには感謝するよ
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-1=薬…？
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-2=そうだ。もう二度と今日みたいな事が起きないようにな
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-3=わかった…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-4=…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-5=悪い…。そいつは…期待外れだったか…？
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-6=確かに予想外ではあったけど、でも…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-7=大丈夫だよ！ 実用的なプレゼントじゃないか
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-8=ありがとう！
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-1=ここの鍵…？
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-2=僕が自分の持ってるって知ってるでしょ…？
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-3=あぁ…、そういう意味じゃなくてな…
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-4=そいつは約束の証みたいなもんだ。何があっても俺の家はお前の家だ。お前がドラマーになってもそれは変わらねえ
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-5=…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-6=僕は…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-7=ありがとう…。助かるよ…
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-8=けど、自分の鍵がないと困るでしょ。持っててよ
+#----------------------------------------------------
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVENEXT-1=よし…
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-1=あぁそういえば！
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-2=僕もわたすものがあるんだ
+# Brok                                 
+GPC01_DAY2ENDJ2_EARBUDS-3=…？
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-4=イヤホンだよ。シェイさんがあんたのために、って。
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-5=これで夜ぐっすり寝れるはずだよ…
+# Brok                                 
+GPC01_DAY2ENDJ2_EARBUDS-6=あぁ！
+# Brok                                 
+GPC01_DAY2ENDJ2_EARBUDS-7=ありがとな、グラッフ
+#----------------------------------------------------
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVENEXT2-1=何があっても、お前の誕生日には傍に居るからな
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVENEXT2-2=ありがと…
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDJ3-1=さっきの事だけど…
+# Brok                                 
+PC01_DAY2ENDJ3-2=分かってる。もう何も言うな
+# Graff                                 
+PC01_DAY2ENDJ3-3=…
+# Graff                                 
+PC01_DAY2ENDJ3-4=おやすみなさい
+# Brok                                 
+PC01_DAY2ENDJ3-5=おやすみな、坊主
+#----------------------------------------------------
+# Graff
+GPC01_HIT_BEDROOMDOOR1-1=あぁなんて事…。これじゃあの人とまるきり同じじゃないか！

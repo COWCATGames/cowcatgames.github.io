@@ -1,0 +1,742 @@
+﻿#-----------------------------------------
+#=CHAPTER 4 TEXT POTENTIALLY USED EVERYWHERE
+#-----------------------------------------
+
+
+#----------------------------------------------------
+#= BROK CALLS
+#----------------------------------------------------
+ID=CH4_CALL_GRAFF_NOREPLY
+T=...
+W=BROK
+A=THINK
+CONTEXT=Various phone calls (or attempts)
+
+T=He must be busy with his trial... Hope he's okay.
+W=BROK
+A=MAYBE
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH4_CALL_SHAY
+T=I'll call her back later.
+W=BROK
+A=OPPOSITE
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH4_CALL_WES
+T=Not yet.
+W=BROK
+A=OPPOSITE
+
+#----------------------------------------------------
+ID=CH4_CALL_IMPOSSIBLE
+T=Outside communications have been blocked by the guard...
+W=BROK
+A=TIRED
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+#= GRAFF CALLS KLAY
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_KLAY_AFTERBUNKER1
+T=(Cough, cough)
+W=GRAFF
+A=CHOKE
+
+T=Desperate times call for desperate measures... (Cough)
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+A=TORN
+TEN=CH4_GRAFF_CALL_KLAY_CHECK
+IT=1
+#Check if we left him in the bunker!
+
+
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_KLAY_AFTERBUNKER_LEFT
+T=Oh no. What an idiot.
+W=GRAFF
+A=STUPID
+
+T=I left him in there...
+W=GRAFF
+COMM=He's talking about Klay. We can leave him in the bunker.
+
+T=Never thought I would regret it...
+W=GRAFF
+A=SAD
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_KLAY_AFTERBUNKER_OKAY
+T=What?... Graff?
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+
+T=(Cough, cough)
+W=GRAFF
+C1A=CHOKE
+
+T=Hey, get a pill. You're ill.
+W=KLAY
+C2A=NORMAL
+
+T=Whose fault is that?!
+W=GRAFF
+C1A=ANGRY
+
+T=Klay... I can't get one...
+W=GRAFF
+C1A=SAD
+
+T=There's a sh...(cough, cough)
+W=GRAFF
+C1A=SAD
+COMM=Shortage
+
+T=A what?
+W=KLAY
+C2A=BAD
+
+T=A shor...(cough, cough)
+W=GRAFF
+C1A=SAD
+
+T=Shortage?...
+W=KLAY
+C2A=GOOD
+
+T=Not my business.
+W=KLAY
+C2A=ANGRY
+
+T=No, wait! Please!
+W=GRAFF
+C1A=GASP
+
+T=Don't hang up! (cough)
+W=GRAFF
+C1A=GASP
+
+T=...
+W=KLAY
+C2A=GOOD
+
+T=I'm begging you. Tell me you've got one at home!
+W=GRAFF
+C1A=TORN
+
+T=...
+W=KLAY
+
+T=Sorry. I don't.
+W=KLAY
+
+T=This... can't be happening...
+W=GRAFF
+C1A=STUPID
+
+T=If I don't get one... right now... (cough, cough)
+W=GRAFF
+C1A=SAD
+
+T=But...
+W=KLAY
+
+T=Erm...
+W=KLAY
+
+T=Anything else I can do?
+W=KLAY
+TEN=CH4_GRAFF_CALL_KLAY_AFTERBUNKER_CHOICE
+
+
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_KLAY_AFTERBUNKER_ASKMONEY1
+T=I know it's a lot to ask but... (cough)
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=KLAY
+C2A=GOOD
+
+T=Can you transfer 1,000 Unis to me?
+W=GRAFF
+
+T=W...what?
+W=KLAY
+C2A=ANGRY
+
+T=Are you kidding?!
+W=KLAY
+
+T=(Cough) It's the only way I can get a pill...
+W=GRAFF
+C1A=SAD
+
+T=I'll give them back to you... Promise!
+W=GRAFF
+C1A=SAD
+
+T=Yeah, right.
+W=KLAY
+C2A=NORMAL
+
+T=It's... a matter of life and death!
+W=GRAFF
+C1A=SAD
+
+T=(Cough, cough, cough...)
+W=GRAFF
+C1A=CHOKE
+
+T=...
+W=KLAY
+C1A=SOB
+C2A=GOOD
+
+T=Klay!
+W=GRAFF
+C1A=SAD
+
+T=I...
+W=KLAY
+
+T=I'll send you 500.
+W=KLAY
+
+T=It's all I've got right now.
+W=KLAY
+
+T=Yes, please! (cough, cough)
+W=GRAFF
+C1A=GASP
+
+T=...
+W=KLAY
+TEN=CH4_GRAFF_CALL_KLAY_AFTERBUNKER_GIVEMONEY
+
+T=There.
+W=KLAY
+
+T=...
+W=KLAY
+
+T=Get better.
+W=KLAY
+
+T=Thank you, Klay! Thank you!
+W=GRAFF
+C1A=HAPPY
+
+T=[...]
+C2=NONE
+
+T=But I still need more...
+W=GRAFF
+C1A=SAD
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_KLAY_AFTERBUNKER_NADA
+T=I'd rather die... (Cough)
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=SURPRISED
+
+T=Than asking something (Cough) from you!
+W=GRAFF
+C1A=ANGRY
+
+T=...
+W=KLAY
+
+T=[...]
+C2=NONE
+
+T=...Klay?
+W=GRAFF
+C1A=GASP
+
+T=He hung up...
+W=GRAFF
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_KLAY_AFTERBUNKER2
+T=(Cough, cough) Can't...
+W=GRAFF
+A=CHOKE
+
+
+
+#----------------------------------------------------
+#= GRAFF IN BUNKER
+#----------------------------------------------------
+ID=CH4_GRAFF_BUNKER1
+T=...
+W=GRAFF
+A=MEH
+
+T=What's this place, exactly?
+W=GRAFF
+A=THINK
+
+T=I don't have a signal...
+W=GRAFF
+A=THINK
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH4_GRAFF_BUNKER2
+T=This is pointless. I can't reach anyone from here.
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+#= GAMEOVER
+#----------------------------------------------------
+ID=CH4_GRAFFILL_GAMEOVER1
+T=(Cough, cough, cough)
+W=GRAFF
+A=CHOKE
+
+T=Don't... (Cough)
+W=GRAFF
+A=SOB
+
+T=Wanna die... (Cough, cough)
+W=GRAFF
+A=SOB
+
+T=Like this...
+W=GRAFF
+A=SOB
+TEN=CH4_GRAFFILL_LOSE
+
+
+
+
+
+
+
+
+
+#----------------------------------------------------
+#= GRAFF CALLS BROK
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_BROK_AFTERBUNKER
+T=...
+W=GRAFF
+A=SAD
+
+T=(Cough, cough) Come on...
+W=GRAFF
+A=SAD
+
+T=It's no use...
+W=GRAFF
+A=TORN
+
+T=He's gonna hear me tonight, I swear!...
+W=GRAFF
+A=ANGRY
+
+T=(Cough, cough, cough)
+W=GRAFF
+A=CHOKE
+
+T=If I make it out alive...
+W=GRAFF
+A=SOB
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+#= GRAFF CALLS OTT
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_OTT_AFTERBUNKER
+T=...
+W=GRAFF
+A=SAD
+
+T=Ott... Where are you?...
+W=GRAFF
+A=SAD
+
+T=He's supposed to be busy with his training course at the police...
+W=GRAFF
+A=SAD
+
+T=I hope nothing happened to him... (cough, cough)
+W=GRAFF
+A=TORN
+
+T=I should probably worry about myself right now...
+W=GRAFF
+A=GASP
+TEN=INTERFACE_CALL_END
+
+
+
+#----------------------------------------------------
+#= GRAFF CALLS SHAY
+#----------------------------------------------------
+ID=CH4_GRAFF_CALL_SHAY_AFTERBUNKER
+T=...
+W=GRAFF
+A=SAD
+
+T=Yes?
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=Miss Shay! I need your help urgently!
+W=GRAFF
+A=GASP
+
+T=What's the matter?
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=(Cough, Cough) I need a Toxout pill!
+W=GRAFF
+A=GASP
+
+T=What?
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=A Daily pill!
+W=GRAFF
+A=GASP
+
+T=There's a shortage all around the Slums...
+W=GRAFF
+C1A=TORN
+
+T=Please tell me you've got one!
+W=GRAFF
+C1A=GASP
+
+T=Sorry. I don't understand your request.
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+COMM=It's actually not Shay talking but a phone call robot with her voice
+
+T=Please rephrase.
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=What the?... (cough, cough)
+W=GRAFF
+C1A=GASP
+
+T=Are you a bot or something?
+W=GRAFF
+
+T=Yes.
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=My creator is much too busy right now.
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=Call back later!
+BNAMESP=UNKNOWN
+BVOICESP=SHAY
+
+T=Oh, great...
+W=GRAFF
+C1A=STUPID
+
+T=Did everyone have to get busy at the exact same time?... (cough)
+W=GRAFF
+C1A=STUPID
+TEN=INTERFACE_CALL_END
+
+#-------------------------
+#= Exit to map
+#-------------------------
+ID=CHAPTER4_EXIT_KLAYDEAD1
+T=I roamed around the city...
+BVOICE=GRAFF
+CONTEXT=After Graff killed Klay accidentally
+
+T=Lost in my thoughts...
+
+T=I was going to die and...
+T=It was fine.
+T=I deserved it.
+T=Until...
+T=An instinct deep inside me...
+T=The instinct of survival... took over.
+
+T=I tried...
+T=Desperately...
+T=To find a pill...
+
+T=There was none.
+T=The rat was gone.
+T=I tried to reach Brok...
+T=But once again... He wasn't there for me.
+T=Even in this situation...
+T=I was mad at him...
+T=As a last resort I came back home...
+T=And that's when...
+TEN=GPC19D_RAT_KLAYLEAVE2
+
+#-------------------------
+ID=CHAPTER4_EXIT_KLAYDEAD2
+T=...!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=DIRECTOR
+C2A=NORMAL
+CONTEXT=After Graff killed Klay, the Director meets Graff in front of his apartment
+
+T=...
+W=DIRECTOR
+SILENCE=1
+
+T=Graff...
+W=DIRECTOR
+TEN=PC02_EXIT_KLAYDEAD_MUSIC
+
+T=I know...
+W=DIRECTOR
+C2A=SAD
+
+T=...
+W=GRAFF
+C1A=GASP
+
+T=I... (cough, cough)
+W=GRAFF
+C1A=SAD
+
+T=I didn't want...
+W=GRAFF
+C1A=TORN
+
+T=Something inside me...
+W=GRAFF
+
+T=Made me do it... (cough)
+W=GRAFF
+
+T=...
+W=DIRECTOR
+
+T=I'm so sorry.
+W=GRAFF
+C1A=SAD
+
+T=Why... didn't you stop me?...
+W=GRAFF
+C1A=SAD
+
+T=There should have been safety protocols! (cough, cough)
+W=GRAFF
+C1A=ANGRY
+
+T=The Creator...
+W=DIRECTOR
+C2A=NORMAL
+
+T=The one who set up this whole system years ago...
+W=DIRECTOR
+
+T=The Consciousness Center... The opportunity to become a Drumer...
+W=DIRECTOR
+
+T=That person designed everything.
+W=DIRECTOR
+
+T=Set up all the rules.
+W=DIRECTOR
+
+T=Then... He's a fool.
+W=GRAFF
+C1A=SOB
+
+T=Just like I am... (cough, cough)
+W=GRAFF
+C1A=SOB
+
+T=We all are. In various ways.
+W=DIRECTOR
+C2A=SAD
+
+T=Is this... (cough)
+W=GRAFF
+C1A=TORN
+
+T=The first accident...?
+W=GRAFF
+
+T=This wasn't the usual trial.
+W=DIRECTOR
+
+T=Huh...?
+W=GRAFF
+C1A=GASP
+
+T=The Creator thought you didn't deserve to be a Drumer if you failed these tests.
+W=DIRECTOR
+C2A=NORMAL
+
+T=They were designed for you.
+W=DIRECTOR
+
+T=For me?!
+W=GRAFF
+
+T=Why?!
+W=GRAFF
+TEN=PC02_PILL_GIVE
+
+T=Take this.
+W=DIRECTOR
+
+T=A pill... (cough)
+W=GRAFF
+C1A=SAD
+
+T=Nobody should know.
+W=DIRECTOR
+
+T=This was an accident...
+W=DIRECTOR
+C2A=SAD
+
+T=No! It was my fault!
+W=GRAFF
+C1A=ANGRY
+
+T=You shouldn't forgive me!
+W=GRAFF
+
+T=It's...
+W=GRAFF
+C1A=SOB
+
+T=It's your son!... (cough, cough)
+W=GRAFF
+C1A=SOB
+
+T=...
+W=DIRECTOR
+
+T=I'm ready to pay the price...
+W=GRAFF
+C1A=TORN
+
+T=Do it!
+W=GRAFF
+C1A=ANGRY
+
+T=Attack me! Crush me!
+W=GRAFF
+
+T=Or... Leave me here to die... (cough)
+W=GRAFF
+C1A=TORN
+
+T=Graff...
+W=DIRECTOR
+
+T=I shouldn't be living...
+W=GRAFF
+C1A=SOB
+
+T=After this...
+W=GRAFF
+
+T=Please... I beg you...
+W=DIRECTOR
+
+T=Take this pill.
+W=DIRECTOR
+C2A=NORMAL
+
+T=Why?...
+W=GRAFF
+
+T=Why are you helping me?...
+W=GRAFF
+
+T=I owe it to the Creator.
+W=DIRECTOR
+
+T=In a way... We're both his sons.
+W=DIRECTOR
+
+T=Both...? (cough) But I'm not...
+W=GRAFF
+C1A=SAD
+
+T=I see. Your Creator... It's a god-like religious entity?
+W=GRAFF
+
+T=...
+W=DIRECTOR
+C2A=SAD
+
+T=Fine...
+W=GRAFF
+
+T=Just promise...
+W=DIRECTOR
+
+T=Do not tell anyone.
+W=DIRECTOR
+
+T=Not your friend...
+W=DIRECTOR
+
+T=Not even your tutor.
+W=DIRECTOR
+
+T=And...
+W=DIRECTOR
+
+T=Stop blaming yourself.
+W=DIRECTOR
+
+T=If not for you...
+W=DIRECTOR
+
+T=Do it for me.
+W=DIRECTOR
+
+T=...
+W=GRAFF
+C1A=TORN
+
+T=Okay...
+W=GRAFF
+
+T=Tomorrow is a new day.
+W=DIRECTOR
+TEN=CH4_STORY160_COMPLETE_GRAFF
+
+
+###############################################
+# PROOFREAD - jblaker - 16/08/2019
+###############################################

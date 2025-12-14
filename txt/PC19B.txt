@@ -1,0 +1,3321 @@
+﻿#-------------------------------
+#=BUNKER MAIN ROOM
+#-------------------------------
+
+
+
+#----------------------
+#= Dr. Gherkin
+#----------------------
+ID=PC19B_GHERKIN1
+T=He's out cold...
+W=BROK
+A=TIRED
+CONTEXT=Dee has tied up Dr. Gherkin to interrogate him. In this room a button can be pushed to do a shock to whoever is tied up so she uses that to interrogate him.
+
+T=That girl is crazy!
+W=BROK
+A=OPPOSITE
+
+T=Hey!!!
+W=DEE
+C2=DEE
+C2A=ANGRY
+
+T=Erm... Did I really say that out loud?...
+W=BROK
+C1A=HAPPY
+
+#----------------------
+#= Dr. Gherkin
+#----------------------
+ID=PC19B_BUTTON1
+T=...
+W=BROK
+A=MOCK
+COMM=Brok presses the button
+
+T=Still out cold.
+W=BROK
+A=WONDER
+
+T=Careful. He's no use to us stiff.
+W=DEE
+C2=DEE
+C2A=NORMAL
+
+#----------------------
+ID=PC19B_BUTTON2
+T=...
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC19B_BUTTON3
+T=Stop! You're gonna kill him!
+W=DEE
+C1=BROK
+C1A=HAPPY
+C2=DEE
+C2A=ANGRY
+
+T=But... I like pressing that button!
+W=BROK
+C1A=HAPPY
+
+T=And I'm the crazy one?!
+W=DEE
+C2A=MEH
+
+#----------------------
+ID=PC19B_GHERKIN_DEAD1
+T=...Oh no.
+W=DEE
+C1=BROK
+C1A=CONFUSED
+C2=DEE
+C2A=SURPRISED
+COMM=Brok kills Dr. Gherkin
+TEN=PC19B_GHERKIN_DEAD_BROKLOOK
+
+T=Oops.
+W=BROK
+C1A=HAPPY
+
+T=I warned you! Now we'll never know the truth!
+W=DEE
+C2A=ANGRY
+
+T=That's... a shame, I guess?
+W=BROK
+
+T=You just killed a man! The one you were supposed to protect!
+W=DEE
+TEN=PC19B_GHERKIN_DEAD_BROKRUN
+
+T=Oh... No no no!
+W=BROK
+C1A=SURPRISED
+
+T=He owes me tons of moolah!
+W=BROK
+
+T=Wake up! WAKE UP!
+W=BROK
+TEN=GAMEOVER
+
+#----------------------
+#= Door Bots
+#----------------------
+ID=PC19B_DOORBOTS1
+T=Err...
+W=BROK
+A=WONDER
+COMM=Trying to open the door of the room which is filled with Tribots
+
+T=Tempting, but for once, I'm mighty afraid of the consequences if I did that.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC19B_DOORBOTS2
+T=Must... resist... opening...
+W=BROK
+A=CONFUSED
+
+#----------------------
+ID=PC19B_DOORBOTS3
+T=...!
+W=DEE
+C1=BROK
+C1A=READY
+C2=DEE
+C2A=SURPRISED
+
+T=What have you done!
+W=DEE
+C2A=NORMAL
+
+T=Err... Oops?
+W=BROK
+C1A=HAPPY
+
+T=Your fault. You deal with them.
+W=DEE
+
+T=Easy-peasy! Just watch!
+W=BROK
+C1A=MOCK
+TEN=PC19B_DOORBOTS_FIGHT
+
+
+#----------------------
+ID=PC19B_DOORBOTS_WIN
+T=(Pant, pant) What did I... tell ya!...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=DEE
+C2A=NORMAL
+COMM=Winning a fight against them
+
+T=...
+W=DEE
+
+T=Impressive. You truly are one heck of a guy.
+W=DEE
+C2A=HAPPY
+
+T=Ha ha! No machine shall defeat me!
+W=BROK
+C1A=COCKY
+
+#----------------------
+ID=PC19B_DOORBOTS_AFTER
+T=Hey!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=ANGRY
+
+T=Aren't you forgetting something?
+W=DEE
+C2A=MEH
+
+T=I gotta check this room.
+W=BROK
+
+T=Good idea. But not like this.
+W=DEE
+
+T=Hide. Let me disable the bots first.
+W=DEE
+C2A=HAPPY
+TEN=PC19B_DOORBOTS_CHOICE
+IT=1
+
+#----------------------
+ID=PC19B_DOORBOTS_DISABLE
+T=Got it. I'll disable them one by one.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=DEE
+C2A=NORMAL
+TEN=PC19B_CHOICE_LETBROK2
+
+#----------------------
+ID=PC19B_DOORBOTS_FIGHTANYWAY
+T=You really expect me to hide?!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=DEE
+C2A=NORMAL
+
+T=Nah! I'll handle them.
+W=BROK
+C1A=COCKY
+
+T=Are you craz...
+W=DEE
+C2A=SURPRISED
+SKIPEND=1
+
+T=You know what? Do as you want.
+W=DEE
+C2A=MEH
+
+T=But don't count on me to help!
+W=DEE
+C2A=NORMAL
+
+T=Me? Needing help?
+W=BROK
+
+T=Sit and watch!
+W=BROK
+C1A=READY
+TEN=PC19_DOORBOTS_OPENBEFOREFIGHT
+
+#----------------------
+ID=PC19B_DOORBOTS_DEEDISABLE
+T=Go ahead.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DEE
+C2A=HAPPY
+TEN=PC19B_CHOICE_LETDEE2
+
+#----------------------
+ID=PC19B_DOORBOTS_DEE
+T=There. It's safe.
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=COCKY
+
+T=Thanks. I owe you one!
+W=BROK
+C1A=HAPPY
+
+T=Find a way out. That's all that matters.
+W=DEE
+C2A=MEH
+
+
+#----------------------
+ID=PC19B_DOORBOTS_BROK
+T=There ya go!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=DEE
+C2A=NORMAL
+
+T=Huh.
+W=DEE
+C2A=MEH
+
+
+
+#----------------------
+#= Screen
+#----------------------
+ID=PC19B_SCREEN1
+T=Doesn't seem very practical to watch the latest Skyball match.
+W=BROK
+A=WONDER
+CONTEXT=Room interactions
+
+#----------------------
+#= Rooms
+#----------------------
+ID=PC19B_GRAFFROOMS1
+T=The way is blocked.
+W=BROK
+A=OPPOSITE
+TEN=PC19B_GRAFFROOMS_BACK
+
+#----------------------
+ID=PC19B_KLAYROOMS1
+T=Can't go there...
+W=BROK
+A=TIRED
+TEN=PC19B_KLAYROOMS_BACK
+
+#----------------------
+#= Tribots
+#----------------------
+ID=PC19B_TRIBOTS1
+T=I don't get it. Why are these things so keen to have my skin?
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC19B_TRIBOTS1_ALTERNATIVE
+T=I hate those.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+#= Door A & B
+#----------------------
+ID=PC19B_DOOR1
+T=Sure, I could leave.
+W=BROK
+A=MEH
+
+T=If not for the hundreds of killer machines waiting for me outside.
+W=BROK
+A=WORRIED
+
+#----------------------
+ID=PC19B_DOOR2
+T=Wait!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=SURPRISED
+
+T=I thought you didn't want to go out?
+W=DEE
+C2A=LISTEN
+
+T=Do we really stand a chance against all those bots?
+W=DEE
+TEN=PC19B_DOOR_CHOICE
+
+#----------------------
+ID=PC19B_DOOR_NO
+T=Right... this is suicide.
+W=BROK
+A=STUPID
+
+#----------------------
+ID=PC19B_DOOR_GO
+T=We're running out of options!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+
+T=Very well.
+W=DEE
+
+T=But I'm not giving up yet!
+W=DEE
+C2A)MEH
+TEN=PC19B_DOOR_YES2
+
+
+#----------------------
+ID=PC19B_DOOR_YES3
+T=Dee attempted to find a solution with the help of Dr. Gherkin... 
+BVOICE=BROK
+CONTEXT=Alternative to go out of the room - we decide to fight all the bots outside
+
+T=To no avail.
+T=During this search, the doc mentioned weird theories.
+T=Like... "Eggs are the scientific symbol for loops."
+T=I was getting bored so I wrote it all down.
+CLUE=CLUE_GHERKIN_EGG
+
+T=In the end, we decided to leave the doctor inside...
+T=...while we prepared ourselves...
+T=...for the fight of our lives.
+
+T=You're ready?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+
+T=To save my husband? Couldn't be more ready.
+W=DEE
+C2A=READY
+
+T=Okay.
+W=BROK
+C1A=READY
+
+T=Three...
+W=BROK
+
+T=Two...
+W=BROK
+
+T=One...
+W=BROK
+TEN=PC19B_TO_PC19D
+
+#----------------------
+#= Furniture
+#----------------------
+ID=PC19B_FURNITURE_BEFORE1
+T=Hmm!... If my eyes aren't deceiving... There's some food inside!
+W=BROK
+A=HAPPY
+CONTEXT=Room interactions
+
+T=But I can't reach it.
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC19B_FURNITURE_MOVE
+T=I'll move this.
+W=BROK
+A=READY
+TEN=PC19B_FURNITURE_MOVE1
+
+#----------------------
+ID=PC19B_FURNITURE_MOVE2
+T=Ah-ha!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC19B_FURNITURE_AFTER1
+T=Awww... It's locked.
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC19B_FURNITURE_EMPTY
+T=Empty.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC19B_FURNITURE_BREAK
+T=Woops! It... accidentally broke!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=DEE
+C2A=WONDER
+
+T=An accident, huh...
+W=DEE
+C2A=MEH
+
+T=Well... Better take this food before it expires!
+W=BROK
+TEN=PC19B_FURNITURE_TAKEFOOD
+
+#----------------------
+#= Control panel
+#----------------------
+ID=PC19B_CONTROLPANEL_BEFORE1
+T=Looks like some wires...? There might be something behind that piece of furniture.
+W=BROK
+A=THINK
+TEN=PC19B_FURNITURE_CREATE
+
+#----------------------
+ID=PC19B_CONTROLPANEL_OTHERS
+T=Hey, wait!
+W=DEE
+C1=BROK
+C1A=READY
+C2=DEE
+C2A=NORMAL
+
+T=Do you know what you're doing?
+W=DEE
+
+T=Not really.
+W=BROK
+C1A=WONDER
+
+T=(Sigh)
+W=DEE
+C2A=SAD
+
+#----------------------
+ID=PC19B_CONTROLPANEL1
+T=Hmm...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Doc. I need your help.
+W=BROK
+C2=DEE
+C2A=NORMAL
+C4=GHERKIN
+C4A=WORRIED
+
+T=Any idea what's over here?
+W=BROK
+
+T=...
+W=GHERKIN
+C4A=ANGRY
+
+T=I can't see very well from here. What does it look like?
+W=GHERKIN
+
+T=A bunch of... egg shaped thingies.
+W=BROK
+C1A=WONDER
+
+T=This must be a control panel for the bunker equipment.
+W=GHERKIN
+C4A=NORMAL
+
+T=What kind of equipment?
+W=BROK
+
+T=The light... The fridge... The shield...
+W=GHERKIN
+C4A=EMBARRASSED
+
+T=Shield?...
+W=DEE
+C2A=WONDER
+
+T=Of course! This is a bunker.
+W=GHERKIN
+C4A=HAPPY
+
+T=It's meant to protect from external threats.
+W=GHERKIN
+
+T=We HAVE an external threat!
+W=DEE
+C2A=NORMAL
+
+T=Oh?...
+W=GHERKIN
+C4A=NORMAL
+
+T=Oh!
+W=GHERKIN
+C4A=WORRIED
+
+T=Let's use this to get rid of them!
+W=BROK
+C1A=READY
+
+T=I-I'm afraid that's not possible.
+W=GHERKIN
+
+T=As it is, the shield will only prevent the bots from coming in.
+W=GHERKIN
+C4A=ANGRY
+
+T=Not good enough. We need a way to immobilize or damage them.
+W=DEE
+C2A=ANGRY
+
+T=This will require some more thought.
+W=BROK
+C1A=WONDER
+
+#-----------------------------------
+ID=PC19B_CONTROLPANEL2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Wait! What are you doing?
+W=DEE
+C2=DEE
+C2A=SURPRISED
+
+T=Gonna cut some wires to try...
+W=BROK
+C1A=HAPPY
+
+T=Woah! No way!
+W=DEE
+C2A=ANGRY
+
+T=I forbid you to touch that!
+W=DEE
+
+T=Hey, you're not my mom. We gotta try somethin'.
+W=BROK
+C1A=ANGRY
+
+T=Go on. Try and I'll make you eat my bludgeon.
+W=DEE
+
+T=You're no fun.
+W=BROK
+C1A=OPPOSITE
+
+#-----------------------------------
+ID=PC19B_CONTROLPANEL_AFTER
+T=I'll let the doctor handle this.
+W=BROK
+C1=BROK
+C1A=THINK
+
+#----------------------
+ID=PC19B_GHERKIN_BEFORECONTROLPANEL
+T=You're okay?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+
+T=I'd be much better if you would release me.
+W=GHERKIN
+
+T=We'll untie you before leaving. Promise.
+W=BROK
+C1A=MAYBE
+
+#----------------------
+ID=PC19B_GHERKIN_CONTROLPANEL1
+T=Hey, Doc. Think you can use that control panel?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GHERKIN
+C2A=NORMAL
+
+T=I can't be sure...
+W=GHERKIN
+
+T=I would need to go over there to check!
+W=GHERKIN
+C2A=ANGRY
+
+T=Is that a trick to release you?
+W=DEE
+C3=DEE
+C3A=ANGRY
+
+T=...Please!
+W=GHERKIN
+C2A=WORRIED
+
+T=Come on. Let's untie him, Dee. He could be useful.
+W=BROK
+C1A=MOCK
+
+T=...
+W=DEE
+C3A=WONDER
+
+T=Alright. But no escaping!
+W=DEE
+C3A=MEH
+
+T=With all those bots waiting for us? I'm not crazy!
+W=GHERKIN
+TEN=PC19B_GHERKIN_MOVESTOPANEL1
+
+
+#----------------------
+ID=PC19B_GHERKIN_CONTROLPANEL2
+T=So?...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=Have you ever wondered why these panels have this particular shape?
+W=GHERKIN
+
+T=No but I'm afraid you're gonna tell me.
+W=BROK
+C1A=MEH
+
+T=The egg is the scientific symbol for loops.
+W=GHERKIN
+C2A=HAPPY
+
+T=The energy flows in and out of those receptacles, creating a loop.
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=Okay... And how does this help?
+W=BROK
+C1A=WONDER
+CLUE=CLUE_GHERKIN_EGG
+
+T=I've made some changes.
+W=GHERKIN
+
+T=Already?...
+W=BROK
+C1A=SURPRISED
+
+T=I've reverted the polarities of the non-zero component in order to transform the charge.
+W=GHERKIN
+C2A=HAPPY
+COMM=This is random scientific blah blah, don't search any meaning and translate how you want
+
+T=Which means?...
+W=BROK
+C1A=THINK
+
+T=The shield should now generate energy surrounding the portal.
+W=GHERKIN
+C2A=ANGRY
+
+T=I'll try it. Can you check if it's having any effect?
+W=GHERKIN
+TEN=PC19B_GHERKIN_CHECKFRAME1
+
+T=Sure.
+W=BROK
+C1A=ALRIGHT
+
+
+#----------------------
+ID=PC19B_GHERKIN_FRAMECHECK1
+T=One... Two... Three.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+TEN=PC19B_GHERKIN_CHECKFRAME3
+
+#----------------------
+ID=PC19B_GHERKIN_FRAMECHECK2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=I've seen... A blue light surrounding the portal...
+W=BROK
+
+T=That's all?
+W=GHERKIN
+
+T=What about the bots?
+W=GHERKIN
+
+T=Nothin'.
+W=BROK
+C1A=MAYBE
+
+T=Darn...
+W=GHERKIN
+C2A=WORRIED
+
+T=I'm afraid this won't work.
+W=GHERKIN
+C2A=ANGRY
+
+T=Hey, it's a good start!
+W=BROK
+C1A=ALRIGHT
+TEN=PC19B_ENTRANCE_BACK
+
+#----------------------
+ID=PC19B_GHERKIN_CONTROLPANEL3
+T=It's over. We'll be stuck here forever...
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+C2_EYESHUT=1
+
+T=No way! I'll fight my way through if I need to!
+W=BROK
+C1A=ANGRY
+
+T=What's wrong with your idea?
+W=BROK
+C1A=READY
+
+T=I was convinced I could generate a small power field...
+W=GHERKIN
+C2A=NORMAL
+
+T=Enough to hit the power container next to the portal.
+W=GHERKIN
+
+T=That pyramid shaped thing?
+W=BROK
+C1A=WONDER
+
+T=Yes. It would create a closed circuit, which would then generate a big shock wave.
+W=GHERKIN
+C2A=ANGRY
+
+T=Man! That is a crazy good idea! Let's do this!
+W=BROK
+C1A=READY
+
+T=I've tried! You've seen it.
+W=GHERKIN
+C2A=ANGRY
+
+T=The field is too short to reach the power container.
+W=GHERKIN
+
+T=Surely there's a way to improve it.
+W=BROK
+C1A=THINK
+
+T=With the right material, yes.
+W=GHERKIN
+C2A=NORMAL
+
+T=But here?
+W=GHERKIN
+
+T=What do you need, exactly?
+W=BROK
+
+T=I don't know...
+W=GHERKIN
+C2A=WORRIED
+
+T=Maybe... A power generator?...
+W=GHERKIN
+
+T=I'll get you that!
+W=BROK
+C1A=READY
+
+T=Don't get your hopes up...
+W=GHERKIN
+C2A=NORMAL
+
+#----------------------
+ID=PC19B_GHERKIN_FRAMECHECKB1
+T=One... Two... Three.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+TEN=PC19B_GHERKIN_CHECKFRAMEB3
+
+#----------------------
+ID=PC19B_GHERKIN_FRAMECHECKB2
+T=Holy moly! It worked!!!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GHERKIN
+C2A=NORMAL
+
+T=For real?!
+W=GHERKIN
+C2A=WORRIED
+
+T=Yeah! All bots... Wiped out!
+W=BROK
+C1A=COCKY
+
+T=Finally. Not a second to spare!
+W=DEE
+C4=DEE
+C4A=HAPPY
+TEN=PC19B_GHERKIN_CHECKFRAMEB4
+
+T=Come on, Brok!
+W=DEE
+C4A=READY
+TEN=PC19B_GHERKIN_CHECKFRAMEB5
+
+
+#----------------------
+ID=PC19B_GHERKIN_FRAMECHECKB3
+T=Hey, don't forget me!
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+C3=DEE
+C3A=NORMAL
+
+T=Dee! Don't tell me...
+W=BROK
+C1A=SURPRISED
+
+T=I'm stuck inside!
+W=GHERKIN
+
+T=Don't worry. It's a bunker. There are plenty of supplies.
+W=DEE
+C3A=MEH
+
+T=B-but!...
+W=GHERKIN
+
+T=Another crazy idea of yours?
+W=BROK
+C1A=ANGRY
+
+T=I'm not finished with him.
+W=DEE
+C3A=NORMAL
+
+T=We'll come back for you right after.
+W=DEE
+C3A=MEH
+COMM=Here she addresses the doc
+
+T=Ohh... This nightmare will never end.
+W=GHERKIN
+C2_EYESHUT=1
+
+T=(Sigh)
+W=BROK
+C1A=TIRED
+C2=NONE
+
+T=Okay... At least he's safe there.
+W=BROK
+
+T=Let's go.
+W=BROK
+C1A=MAYBE
+TEN=PC19B_TO_PC19D
+
+
+#---------------------------------------------------------------
+ID=PC19B_GHERKIN_BATTERY
+T=Hey, Doc. Would this doodah help?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=...
+W=GHERKIN
+C2A=WORRIED
+
+T=Where did you find this?!
+W=GHERKIN
+
+T=The switch that, erm... Shocked you.
+W=BROK
+C1A=HAPPY
+
+T=I believe that's what powered it.
+W=BROK
+
+T=It's... perfect!
+W=GHERKIN
+C2A=HAPPY
+
+T=Really?... Cool!
+W=BROK
+C1A=HAPPY
+
+T=So this will work?
+W=BROK
+C1A=READY
+
+T=Very unlikely.
+W=GHERKIN
+C2A=ANGRY
+
+T=But you said?...
+W=BROK
+C1A=THINK
+SKIPEND=1
+
+T=We'll try. I'll connect the wires. 
+W=GHERKIN
+C2A=NORMAL
+
+T=This will take a while.
+W=GHERKIN
+
+T=Okay. I'll leave you to it.
+W=BROK
+C1A=MOCK
+TEN=PC19B_GHERKIN_AFTERGIVEN
+
+#---------------------------------------------------------------
+ID=PC19B_GHERKIN_AFTERGIVEN1
+T=You okay?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=SAD
+CONTEXT=Brok tries to comfort Dee after the news her husband Sin is in danger
+
+T=...
+W=DEE
+TEN=PC19B_GHERKIN_AFTERGIVEN_MUSIC
+
+T=When I didn't see him at his apartment, I just figured he left.
+W=DEE
+
+T=I could never imagine...
+W=DEE
+
+T=Relax. We'll save him.
+W=BROK
+C1A=READY
+
+T=How can you say that?! 
+W=DEE
+
+T=It may already be too late...!
+W=DEE
+C2_EYESHUT=1
+
+T=We will.
+W=BROK
+
+T=...
+W=BROK
+C1A=MEH
+
+T=I had never met someone like you before.
+W=BROK
+
+T=You're certainly right.
+W=DEE
+C2A=NORMAL
+
+T=I'm not the kind of person who would stay home all day to make and raise children.
+W=DEE
+
+T=I don't care if we're the last of our kind, society needs us.
+W=DEE
+
+T=Society won't decide for me.
+W=DEE
+
+T=But you still have a daughter.
+W=BROK
+C1A=THINK
+
+T=Yes...
+W=DEE
+
+T=...
+W=DEE
+C2_EYESHUT=1
+
+T=I miss her... I miss Sin...
+W=DEE
+C2_EYESHUT=1
+
+T=What about you?
+W=DEE
+
+T=I had a wife... for a brief moment. She passed away.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Oh... Sorry.
+W=DEE
+
+T=And a son... who isn't really my son.
+W=BROK
+C1A=DOWN
+
+T=He doesn't like me.
+W=BROK
+
+T=That's a lie.
+W=DEE
+C2A=HAPPY
+
+T=What?
+W=BROK
+C1A=THINK
+
+T=He loves you. I'm certain of it.
+W=DEE
+
+T=How would you know? You've never met him.
+W=BROK
+C1A=MAYBE
+
+T=I know you.
+W=DEE
+
+T=Yeah, we've only just met but...
+W=DEE
+C2A=LISTEN
+
+T=I feel... That I can trust you.
+W=DEE
+C2A=HAPPY
+
+T=Erm... An hour ago you were ready to slay me.
+W=BROK
+C1A=HAPPY
+
+T=Just fooling with you! You don't get girl humor, do you?
+W=DEE
+C2A=COCKY
+
+T=A joke... Right! Ah ah.
+W=BROK
+
+T=...
+W=DEE
+C2A=HAPPY
+
+T=...
+W=BROK
+
+T=Erm... Something on my face?...
+W=BROK
+C1A=WONDER
+
+T=You know... If the situation was different...
+W=DEE
+TEN=PC19B_GHERKIN_AFTERGIVEN_MUSICFADE
+
+T=Mister Brok!
+W=GHERKIN
+C4=GHERKIN
+C4A=WORRIED
+
+T=It's done. Can you check the entrance view?
+W=GHERKIN
+C4A=ANGRY
+
+T=Alright.
+W=BROK
+C1A=MOCK
+TEN=PC19B_GHERKIN_CHECKFRAMEB1
+
+
+
+#----------------------
+#= Frame
+#----------------------
+ID=PC19B_FRAME1
+T=Isn't this... a view of the bunker entrance?
+W=BROK
+A=THINK
+TEN=PC19B_FRAME
+CONTEXT=Checking frame on the wall
+
+#------------------------------------------------
+ID=PC19B_ENTRANCE_PICTURE1
+T=Oh oh...
+W=BROK
+A=SURPRISED
+
+T=I've been in an awful lot of messed up situations in the past but this is...
+W=BROK
+A=WORRIED
+
+T=The cherry on the cake!
+W=BROK
+
+T=And we're the cherry.
+W=DEE
+C2=DEE
+C2A=NORMAL
+TEN=PC19B_ENTRANCE_BACKFADE
+
+#------------------------------------------------
+ID=PC19B_ENTRANCE_PICTURE2
+T=How are we ever gonna pass through this?...
+W=BROK
+A=WORRIED
+TEN=PC19B_ENTRANCE_BACK
+
+#----------------------
+#= Dr. Gherkin
+#----------------------
+ID=PC19B_BUTTON_GHERKIN1
+T=Stop!
+W=GHERKIN
+C1=BROK
+C1A=MOCK
+C2=GHERKIN
+C2A=WORRIED
+CONTEXT=Pressing the button
+
+T=Why are you doing this?
+W=GHERKIN
+
+T=For fun?
+W=BROK
+C1A=HAPPY
+
+T=Please!... That hurts!
+W=GHERKIN
+
+T=Okay, okay. I'll try to contain my fingers.
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=PC19B_BUTTON_GHERKIN2
+T=Please...! Don't!
+W=GHERKIN
+C1=BROK
+C1A=MEH
+C2=GHERKIN
+C2A=WORRIED
+
+T=Just joking!
+W=BROK
+C1A=HAPPY
+
+#----------------------
+ID=PC19B_BUTTON_WITHOUT1
+T=Why build a bunker with this kind of torture device?
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC19B_BUTTON_WITHOUT2
+T=...
+W=BROK
+A=THINK
+
+T=That thing generates a power shock. I wonder where this power comes from?...
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC19B_BUTTON_NODESTROY1
+T=Hey! Stop!
+W=DEE
+C1=BROK
+C1A=MEH
+C2=DEE
+C2A=ANGRY
+NB=1
+D=60
+COMM=Dee is talking to Brok here (informal)
+
+T=I know you don't approve but I need to get this working.
+W=DEE
+D=90
+
+#----------------------
+ID=PC19B_BUTTON_DESTROY1
+T=You destroyed this? With your bare hands?!
+W=DEE
+C1=BROK
+C1A=HAPPY
+C2=DEE
+C2A=SURPRISED
+
+T=Gotta investigate, ma'am!
+W=BROK
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+ID=PC19B_BUTTON_REMOTECONTROL
+T=What for? Disabling it?...
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC19B_BUTTON_OTHERS
+T=No time to waste. I need to take drastic measures!
+W=BROK
+A=ANGRY
+
+#----------------------
+#= Battery
+#----------------------
+ID=PC19B_BATTERY1
+T=What's this doodad?...
+W=BROK
+A=THINK
+
+T=Seems interesting. I should take it!
+W=BROK
+A=MOCK
+TEN=PC19B_BATTERY_GET
+
+#----------------------
+#= Init
+#----------------------
+ID=PC19B_INIT1
+T=There you are...
+W=BROK
+C1=BROK
+C1A=MEH
+CONTEXT=Coming in this room for the first time, Brok sees Dee who already tied up Dr Gherkin
+COMM=Here he addresses both of them
+
+T=Huh...? What the heck are you doin'?!
+W=BROK
+C1A=SURPRISED
+COMM=And here, only Dee
+TEN=PC19B_BROK_MOVEFORWARD
+
+T=Interrogating.
+W=DEE
+C2=DEE
+C2A=NORMAL
+
+T=She... She hooked me there!
+W=GHERKIN
+C4=GHERKIN
+C4A=WORRIED
+
+T=Are you nuts?!
+W=BROK
+C2A=ANGRY
+
+T=You think it's the right time for this?!
+W=BROK
+
+T=This guy is hiding something!
+W=DEE
+C2A=ANGRY
+
+T=What about you?!
+W=BROK
+
+T=I thought I had come clean.
+W=DEE
+C2A=LISTEN
+
+T=No, you didn't! I wasn't finished when all those bots landed on us.
+W=BROK
+
+T=Fine. 
+W=DEE
+C2A=MEH
+TEN=PC19B_DEE_LOOKBROK
+
+T=I'll tell you everything. As long as you don't get in my way to interrogate him.
+W=DEE
+C2A=NORMAL
+
+T=Can't promise that.
+W=BROK
+C1A=THINK
+
+T=Then we'll have to settle this once and for all.
+W=DEE
+C2A=ANGRY
+
+T=A fight?!
+W=BROK
+C1A=ANGRY
+
+T=No thanks. I've had enough brawling for the day.
+W=BROK
+C1A=OPPOSITE
+
+T=Should I remind you we're surrounded by bots who want us dead?
+W=BROK
+
+T=Let's save our strength for them.
+W=BROK
+C1A=MEH
+
+T=(Sigh)
+W=DEE
+C2A=SAD
+
+T=I guess you're right.
+W=DEE
+
+T=And talking about that...
+W=BROK
+C1A=WONDER
+TEE=PC19B_BROK_LOOKBOTS
+
+T=Man. Those things are everywhere... and relentless!
+W=BROK
+C1A=TIRED
+TEN=PC19B_BROKDEE_LOOKGHERKIN
+
+T=I-I'm scared... Can someone untie me?...
+W=GHERKIN
+
+T=Not yet.
+W=DEE
+C2A=ANGRY
+
+T=B-but...!
+W=GHERKIN
+
+T=Are you suspecting the doctor to be the cause of the robots havoc?
+W=BROK
+C1A=MAYBE
+
+T=...
+W=DEE
+
+T=It's a possibility. He's involved in a lot of things.
+W=DEE
+
+T=That can't be right.
+W=BROK
+C1A=MAYBE
+
+T=I've got nothing to do with this! I swear!
+W=GHERKIN
+
+T=If he unleashed them, why risk his own life by getting through the Slums?
+W=BROK
+C1A=READY
+
+T=What would he gain from this?
+W=BROK
+
+T=...
+W=DEE
+TEN=PC19B_DEE_GOESRIGHT
+C2A=WONDER
+
+T=I don't have all the info yet. But I have the means to find out!
+W=DEE
+C2A=MEH
+TEN=PC19B_BROK_GOESRIGHT
+
+
+#----------------------
+ID=PC19B_INIT1B
+T=Well... I'm not sure...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+TEN=PC19B_BROK_LOOKBOTS
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=Something's off.
+W=BROK
+
+T=What do you mean?
+W=DEE
+C2A=WONDER
+TEN=PC19B_CHOICE_OFF
+IT=1
+
+#----------------------
+ID=PC19B_GHERKINPROB1
+T=Dr. Gherkin is lying to us.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+
+T=Finally, you're listening!
+W=DEE
+C2A=MEH
+
+T=Let's finish this. I know exactly how to make him spill the beans.
+W=DEE
+C2A=ANGRY
+SKIPEND=1
+
+T=Wait!...
+W=BROK
+C1A=ANGRY
+C2A=SURPRISED
+
+T=There's... Something else.
+W=BROK
+C1A=THINK
+TEN=PC19B_CHOICE_OFF
+IT=1
+
+#----------------------
+ID=PC19B_PILLS1
+T=That pills shortage is abnormal.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+
+T=Figured that one out all by yourself, Sherlock?
+W=DEE
+
+T=I thought you were gonna say something clever. 
+W=DEE
+C2A=MEH
+
+T=That was too much to expect from someone like you.
+W=DEE
+
+T=Someone like me?!
+W=BROK
+
+T=Yeah. A scaly stack of fat built over a fine stature.
+W=DEE
+C2A=COCKY
+
+T=Fine...?
+W=BROK
+C1A=WONDER
+
+T=You've been living alone for a long time, am I right?
+W=DEE
+
+T=Yeah... Well... Not exactly.
+W=BROK
+
+T=Sorry. You've been through a lot too. It'd be hard not to notice.
+W=DEE
+C2A=HAPPY
+
+T=And that's what makes you... what you are.
+W=DEE
+C2A=COCKY
+
+T=Actually, you just reminded me that girls always love talking in cryptic ways.
+W=BROK
+C1A=HAPPY
+
+T=Hmm.
+W=DEE
+C2A=LISTEN
+
+T=So! Was there something else you noticed, Genius?
+W=DEE
+C2A=WONDER
+TEN=PC19B_CHOICE_OFF
+IT=1
+
+#----------------------
+ID=PC19B_TARGET1
+T=I'd like to test somethin'.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+CONTEXT=Brok wants to test the behavior of robots
+
+T=Can you open the door to these bots?
+W=BROK
+C1A=MOCK
+
+T=Probably. Why?
+W=DEE
+C2A=WONDER
+
+T=I'll stay hidden. Release one.
+W=BROK
+TEN=PC19B_BROK_HIDES
+
+T=Are you mad?!
+W=DEE
+C2A=SURPRISED
+TEN=PC19B_DEE_LOOK2
+
+T=You realize they may all come at us when I open this door?...
+W=DEE
+C2A=NORMAL
+
+T=Trust me.
+W=BROK
+C1A=READY
+
+T=Very well...
+W=DEE
+C2A=MEH
+
+T=I'll try. Just one.
+W=DEE
+C2A=NORMAL
+TEN=PC19B_DEE_WALKDOOR
+
+
+#----------------------
+ID=PC19B_TARGET2
+T=...
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+C3=TRIBOT
+C3A=NORMAL
+TEN=PC19B_DEE_LOOKTRIBOT
+
+T=Hello. How may I serve you?
+W=TRIBOT
+
+T=That one seems nice.
+W=DEE
+C2A=HAPPY
+
+T=Hmm.
+W=BROK
+
+T=Bring it closer to Doctor Gherkin.
+W=BROK
+C1A=MOCK
+
+T=D-Don't!...
+W=GHERKIN
+C4=GHERKIN
+C4A=WORRIED
+
+T=Go ahead, bot. To that man in front of you.
+W=DEE
+C2A=COCKY
+TEN=PC19B_TRIBOT_GOESTOGHERKIN
+
+T=Oh no!...
+W=GHERKIN
+
+
+#----------------------
+ID=PC19B_TARGET3
+T=Hello.
+W=TRIBOT
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+C3=TRIBOT
+C3A=NORMAL
+C4=GHERKIN
+C4A=WORRIED
+
+T=Huh?...
+W=GHERKIN
+C4A=ANGRY
+
+T=I'm not sure what you were expecting.
+W=DEE
+C2A=MEH
+
+T=Now, what happens if...
+W=BROK
+C1A=READY
+TEN=PC19B_BROK_GOESTRIBOT
+
+
+#----------------------
+ID=PC19B_TARGET4
+T=Target acquired!
+BNAME=TRIBOT
+BVOICE=TRIBOT
+TEN=PC19B_TARGET4_HITGHERKIN
+
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=SURPRISED
+C3=GHERKIN
+C3A=WORRIED
+
+T=It's gone crazy!
+W=DEE
+
+T=I'll handle this.
+W=BROK
+C1A=COCKY
+TEN=PC19B_TARGET_FIGHT_CHECK
+
+
+#----------------------
+ID=PC19B_TARGET5_ALTERNATIVE
+T=You were right, doc!
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=DEE
+C2A=NORMAL
+C4=GHERKIN
+C4A=WORRIED
+
+T=They're after you!
+W=BROK
+
+T=Now do you believe me?
+W=GHERKIN
+TEN=PC19B_TARGET5_ALTERNATIVENEXT
+
+
+#----------------------
+ID=PC19B_TARGET5
+T=Just as I thought.
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=DEE
+C2A=NORMAL
+C4=GHERKIN
+C4A=WORRIED
+
+T=They're not after the scientist...
+W=BROK
+C1A=MAYBE
+
+T=They're after me!
+W=BROK
+C1A=STUPID
+CLUE=CLUE_BROK_BOTS
+
+T=Good heavens!
+W=GHERKIN
+
+T=Wait a minute.
+W=DEE
+TEN=PC19B_DEE_COMESG
+
+T=We're in this disastrous situation... Because of you?!
+W=DEE
+C2A=ANGRY
+
+T=For crying out loud, what have you done?!
+W=DEE
+
+T=No idea! Honest.
+W=BROK
+C1A=OPPOSITE
+
+T=Though... I guess I destroyed a lot of their friends recently. But that was self defense!
+W=BROK
+C1A=TIRED
+
+T=Those things don't have a mind of their own.
+W=DEE
+
+T=Someone must want you dead!
+W=DEE
+C2A=WONDER
+
+T=And... That wouldn't be such a bad option to get away from here...
+W=DEE
+C2A=MEH
+
+T=Argh! Stop that.
+W=BROK
+C1A=OPPOSITE
+
+T=I'll figure out what's happening. But I need both of you to start pouring it out!
+W=BROK
+C1A=MOCK
+TEN=PC19B_BROK_GOESDOCTOR
+
+T=First... Doctor.
+W=BROK
+
+T=STAY AWAY!!! You're the one attracting them!
+W=GHERKIN
+
+T=Come on! Be reasonable!
+W=BROK
+C1A=MAYBE
+
+T=I'm safer without you around!
+W=GHERKIN
+
+T=Hmm. Guess I'll leave you alone with that girl, then.
+W=BROK
+C1A=MEH
+TEN=PC19B_BROK_LEAVEDOCTOR
+
+T=Hmph.
+W=DEE
+C2A=NORMAL
+
+T=...
+W=GHERKIN
+
+T=D-Don't!...
+W=GHERKIN
+TEN=PC19B_BROK_LOOKDOCTOR
+
+T=Oh boy. I'm screwed either way.
+W=GHERKIN
+C4_EYESHUT=1
+
+T=Doc. If the bots aren't attacking you...
+W=BROK
+C1A=THINK
+
+T=Why did you call me?
+W=BROK
+C1A=WONDER
+
+T=I... I had no idea!
+W=GHERKIN
+C4A=ANGRY
+
+T=But now it's all making sense.
+W=GHERKIN
+
+T=This morning... I was alone at the factory.
+W=GHERKIN
+C4A=NORMAL
+
+T=Alone?
+W=BROK
+
+T=Yes. The production process is automated. And no human operators.
+W=GHERKIN
+
+T=Actually... The pill shortage is the only reason I went to the factory today.
+W=GHERKIN
+C1A=THINK
+
+T=I was starting to understand what was wrong, when suddenly...
+W=GHERKIN
+C4A=EMBARRASSED
+
+T=A massive number of bots rushed out of the factory, hitting me in the process!
+W=GHERKIN
+C4A=WORRIED
+
+T=I concluded they went crazy!
+W=GHERKIN
+CLUE=CLUE_GHERKIN_BOTS
+
+T=Got frightened... Ran outside to the entry box and...
+W=GHERKIN
+
+T=You know the rest.
+W=GHERKIN
+
+T=And... You never thought leaving all the work to a bunch of metallic boxes would be a bad idea?...
+W=BROK
+C1A=ANGRY
+
+T=No! The production has been working well for years!
+W=GHERKIN
+
+T=This is all very strange.
+W=GHERKIN
+C4A=ANGRY
+
+T=These bots were programmed for one specific task at the factory. They shouldn't attack people!
+W=GHERKIN
+
+T=No offense Doc but... I don't trust all those programs.
+W=BROK
+
+T=By the way. How come you have access to this bunker?
+W=BROK
+C1A=MOCK
+
+T=After all, you're a stranger to the Slums.
+W=BROK
+
+T=...
+W=GHERKIN
+C4A=WORRIED
+
+T=W-well... You see...
+W=GHERKIN
+TEE=PC19B_DEE_BUTTON
+
+#----------------------
+ID=PC19B_TARGET6
+T=Yyyyaaaouch!
+W=GHERKIN
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=ANGRY
+C4=GHERKIN
+C4A=WORRIED
+COMM=Dee presses the button
+
+T=He's fainted...
+W=BROK
+C4=NONE
+TEN=PC19B_BROK_TURNSDEE
+
+T=What's your problem?!
+W=BROK
+C1A=ANGRY
+
+T=He wasn't going to tell you the truth.
+W=DEE
+C2A=MEH
+
+T=But you will?!
+W=BROK
+
+T=This time... Yes.
+W=DEE
+C2A=COCKY
+
+T=Fine. I'm all ears.
+W=BROK
+
+T=As a member of the Government, he has the "keys to the city".
+W=DEE
+C2A=NORMAL
+
+T=I guessed. I was merely trying to get him to admit it.
+W=BROK
+C1A=THINK
+
+T=Anyway. I need a break.
+W=BROK
+C1A=MAYBE
+
+T=Let me check this room.
+W=BROK
+
+T=Don't waste your time.
+W=DEE
+TEN=PC19B_TARGET6_END
+
+#----------------------
+ID=PC19B_DEE_NOTYET
+T=Not yet...
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC19B_DEE1
+T=You're done?
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=COCKY
+CONTEXT=After checking the room, Dee tells her story
+
+T=We're stuck here...
+W=BROK
+C1A=TIRED
+
+T=I told you. But we'll have to escape somehow.
+W=DEE
+C2A=NORMAL
+
+T=One thing at a time.
+W=BROK
+C1A=MOCK
+
+T=Tell me about yourself. From the start, please!
+W=BROK
+
+T=...
+W=DEE
+
+T=As you know, I'm a journalist.
+W=DEE
+C1A=THINK
+
+T=When I started this career, it was more than a job to me.
+W=DEE
+C2A=HAPPY
+
+T=This was a way to uncover the truth and make a difference in this apathetic world we live in.
+W=DEE
+
+T=And that's why I got sick of writing articles like "How to prepare the best wormcake" or "This year's best livies".
+W=DEE
+C2A=MEH
+
+T=So... I've spent months working on another investigation undercover.
+W=DEE
+C2A=COCKY
+
+T=Don't you have a family to take care of?
+W=BROK
+
+T=Yes. But a journalist always finds time for important matters!
+W=DEE
+C2A=NORMAL
+
+T=Right. I forgot you Drumers barely work four hours a day.
+W=BROK
+C1A=MEH
+
+T=What a stereotype.
+W=DEE
+
+T=Ever since I was a kid, I've noticed things... Changing.
+W=DEE
+C2A=WONDER
+
+T=Drumers became less critical. They lived in their own bubble.
+W=DEE
+
+T=Is that really new?...
+W=BROK
+C1A=MEH
+
+T=To this extent, yes.
+W=DEE
+C2A=NORMAL
+
+T=I investigated the evolution of every activity of our society.
+W=DEE
+
+T=And I made some important discoveries.
+W=DEE
+
+T=I was about to make them public through my media when the trouble begun.
+W=DEE
+
+T=You know, there's one thing even more important to me than my career.
+W=DEE
+
+T=Yourself?
+W=BROK
+
+T=No! My family.
+W=DEE
+C2A=ANGRY
+
+T=My colleagues found some videos of Sin... cheating on me with another girl.
+W=DEE
+C1A=THINK
+C2A=LISTEN
+
+T=This set off something inside me.
+W=DEE
+
+T=He betrayed me. He betrayed our daughter.
+W=DEE
+C2A=SAD
+
+T=My colleagues acted nice and understanding in front of me...
+W=DEE
+
+T=But behind my back, they laughed.
+W=DEE
+
+T=I couldn't bear it. I got mad.
+W=DEE
+C2A=ANGRY
+
+T=I quit my job.
+W=DEE
+
+T=Thus... I lost access to the best way to spread information.
+W=DEE
+C2A=NORMAL
+
+T=I can see where this is leading...
+W=BROK
+
+T=Sin and I argued. He said it was all lies.
+W=DEE
+
+T=I didn't listen. Didn't believe him. Why would I?
+W=DEE
+C2A=WONDER
+
+T=There was tangible proof. That video seemed so real!
+W=DEE
+
+T=But he insisted. And if he wouldn't admit to it and apologize...
+W=DEE
+C2A=NORMAL
+
+T=...you threatened to start an expel procedure.
+W=BROK
+
+T=Yes...
+W=DEE
+C2A=SAD
+
+T=But... He ended up leaving by himself.
+W=DEE
+
+T=Despite this, I had no intention to give up on my investigation. So I reached other media.
+W=DEE
+C2A=NORMAL
+
+T=They refused my story. Each and every one of them.
+W=DEE
+
+T=This didn't make sense. Why would other news corporations turn down exclusive, breaking information?
+W=DEE
+
+T=Without proof this is only a suspicion. But logic meant...
+W=DEE
+
+T=They're all facades.
+W=DEE
+
+T=You said it earlier.
+W=BROK
+
+T=All information in the Drums is controlled by a single entity. Right?
+W=BROK
+C1A=ANGRY
+
+T=Yes.
+W=DEE
+
+T=This theory got even more weight when I found out that all my findings... vanished.
+W=DEE
+
+T=The local data stored in my DNA. All my backups.
+W=DEE
+
+T=Even the original sources and everything linked to them.
+W=DEE
+
+T=All gone.
+W=DEE
+C2A=ANGRY
+
+T=It was as if I had imagined it all.
+W=DEE
+TEN=PC19B_DEE1B
+
+
+
+#----------------------
+ID=PC19B_DEE1B
+T=My friends started to think I was losing it.
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=ANGRY
+
+T=They were even ready to send me to a mental hospital.
+W=DEE
+
+T=Yeah, well...
+W=BROK
+C1A=HAPPY
+
+T=Shut up. It's not a laughing matter.
+W=DEE
+
+T=My friends took my daughter from me!
+W=DEE
+C1A=THINK
+
+T=They didn't believe me!
+W=DEE
+C2A=SAD
+
+T=I had lost everything.
+W=DEE
+
+T=My job. My family. My friends. And my mind...
+W=DEE
+C2_EYESHUT=1
+
+T=But the tides of misfortune finally turned.
+W=DEE
+C2A=NORMAL
+
+T=I always carry a memory chip hidden in my clothes.
+W=DEE
+
+T=During one of my investigations, it broke and stopped connecting.
+W=DEE
+
+T=This made me think. What if all my backups were simply erased when I accessed the Triweb?
+W=DEE
+C2A=WONDER
+
+T=But I still couldn't check the data on that chip without risking it to be flagged as unsupported and erased.
+W=DEE
+
+T=So... I came to the Slums and brought the chip to that person called The Gloom.
+W=DEE
+C2A=COCKY
+
+T=Ha. What would we do without that darn mouse!
+W=BROK
+C1A=ALRIGHT
+
+T=This was my last hope. My last chance to prove I wasn't just crazy.
+W=DEE
+C2A=NORMAL
+
+T=And I was right.
+W=DEE
+
+T=The data is there. Only part of my findings but enough to validate all my theories.
+W=DEE
+
+T=Now I realize how much of a fool I've been...
+W=DEE
+
+T=All this was a distraction.
+W=DEE
+
+T=The videos were fake. Very elaborate ones and undetectable to the human eye.
+W=DEE
+
+T=They destroyed my life for one single reason...
+W=DEE
+
+T=To prevent me from revealing the truth!
+W=DEE
+C2A=ANGRY
+
+T=But who? What truth...?
+W=BROK
+C1A=READY
+CLUE=CLUE_DEE_LIFE
+
+T=Hmmm...
+BNAME=GHERKIN
+BVOICE=GHERKIN
+TEN=PC19B_GHERKIN_WAKES
+
+T=Our friend is waking up.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+
+T=Good timing.
+W=DEE
+C2A=COCKY
+
+T=...
+W=GHERKIN
+C4=GHERKIN
+C4A=ANGRY
+TEN=PC19B_GHERKIN_WAKEUP
+
+T=I feel bad...
+W=GHERKIN
+C4A=WORRIED
+
+T=Please release me.
+W=GHERKIN
+
+T=Not until you confess!
+W=DEE
+C2A=ANGRY
+
+T=Admit it! You're a member of the Government.
+W=DEE
+
+T=I... I have no idea what you're talking about!
+W=GHERKIN
+
+T=Fine.
+W=DEE
+C2A=MEH
+
+T=Maybe another press of that button shall "shake" your memory.
+W=DEE
+C2A=ANGRY
+
+T=N-No!...
+W=GHERKIN
+
+T=Stop that!
+W=BROK
+C1A=ANGRY
+
+T=I'll take it from here.
+W=BROK
+
+T=No, you won't!
+W=DEE
+
+T=Trust me! You won't gain anything with constant threats.
+W=BROK
+C1A=MOCK
+
+T=Pft...
+W=DEE
+C2A=MEH
+
+T=Fine. Have it your way, cowboy. 
+W=DEE
+
+T=Let me gather the pieces of that puzzle!
+W=BROK
+C1A=READY
+TEN=PC19B_DEE_TURNSGHERKIN
+
+
+#----------------------
+ID=PC19B_DEE2
+T=Doc. I can tell that something's bothering you, and this isn't a comfortable situation but...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=I need you to trust me.
+W=BROK
+C1A=READY
+
+T=Erm... O-okay...
+W=GHERKIN
+
+T=First, let's talk about this morning.
+W=BROK
+TEN=PC19B_INTERROGATION_START
+
+
+#---------------------------------------------------------------
+ID=PC19B_GHERKIN_RESUME
+T=Let's resume.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=NORMAL
+CONTEXT=Interrogation
+
+#---------------------------------------------------------------
+ID=PC19B_GHERKIN_EXIT1
+T=I need some time to digest it all.
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=DEE
+C2A=NORMAL
+
+T=There is no time to waste!
+W=DEE
+C2A=ANGRY
+
+T=Just one minute. Okay?
+W=BROK
+C1A=TIRED
+
+T=...Fine.
+W=DEE
+C2A=MEH
+
+
+#---------------------------------------------------------------
+ID=PC19B_INTERROGATE_BAD_SCARED
+T=(Nah. The doctor is too scared to go alone and mess up all the Pipe-Pills without getting noticed.)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+#---------------------------------------------------------------
+ID=PC19B_INTERROGATE_BAD_CONTROL
+T=(I guess the Government has control over a lot of things but... That comes with the job.)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+#---------------------------------------------------------------
+ID=PC19B_INTERROGATE_BAD_KNOW
+T=(Yup, seems logical that the doctor would know... Then what?)
+W=BROK
+A=MEH
+MOOD=THINK
+
+#---------------------------------------------------------------
+ID=PC19B_INTERROGATE_OUTJAIL
+T=(Even the chief of police couldn't keep me in jail. I'm no criminal!)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+
+
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_TRIBOT_FIRMWARE_ALT
+T=You've said the Tribots changed behavior this morning.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=NORMAL
+
+T=And we've proven they're exclusively targeting you!
+W=BROK
+C1A=ANGRY
+TEN=PC19B_CLUE_TRIBOT_FIRMWARE_ALT_NEXT
+
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_TRIBOT_FIRMWARE
+T=You've said the Tribots changed behavior this morning.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=NORMAL
+
+T=And that same morning, I got attacked by Tribots in my own home!
+W=BROK
+C1A=ANGRY
+
+T=Did you notice anything before they left the factory?
+W=BROK
+C1A=WONDER
+
+T=Before...
+W=GHERKIN
+C2A=ANGRY
+
+T=Now that you mention it.
+W=GHERKIN
+C2A=NORMAL
+
+T=They received a firmware update.
+W=GHERKIN
+
+T=An update...
+W=BROK
+
+T=Who manages those?
+W=BROK
+C1A=MOCK
+
+T=There are dedicated labs of engineers working on all the AI improvements.
+W=GHERKIN
+
+T=Yeah. I believe I met two of these guys yesterday.
+W=BROK
+C1A=HAPPY
+
+T=But do they send the updates themselves?
+W=BROK
+C1A=THINK
+
+T=No. The decision to send a firmware update to production lies in the hands of the Government.
+W=GHERKIN
+C2A=ANGRY
+
+T=Is that so?...
+W=BROK
+C1A=THINK
+TEN=INTERFACE_CLUE_NEW
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_GHERKIN_SIGNATURE
+T=Doctor. What did you do exactly with the Pipe-Pills?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=NORMAL
+
+T=I tried fixing them.
+W=GHERKIN
+
+T=You tried...
+W=BROK
+C1A=ANGRY
+
+T=But failed?
+W=BROK
+
+T=Erm...
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=He's right. I've checked myself.
+W=DEE
+C4A=WONDER
+
+T=After your visit, the Pipe-Pills still weren't working.
+W=DEE
+
+T=True. Actually...
+W=GHERKIN
+C4A=ANGRY
+
+T=I'm not entirely sure why.
+W=GHERKIN
+
+T=Pray tell?
+W=BROK
+C1A=READY
+
+T=Back at the factory, I noticed the pills stopped being sent to the Slums due to missing signatures.
+W=GHERKIN
+
+T=Signature?...
+W=BROK
+C1A=WONDER
+
+T=Each Pipe-Pill has to validate its authenticity in order to work.
+W=GHERKIN
+
+T=Why?
+W=BROK
+
+T=Otherwise, anyone could re-route the pipes to get unauthorized medicine!
+W=GHERKIN
+C2A=WORRIED
+
+T=Somehow... All the signatures in the Slums vanished.
+W=GHERKIN
+
+T=Probably due to external damage.
+W=GHERKIN
+C2A=NORMAL
+
+T=So I attempted to input the signature back into each one.
+W=GHERKIN
+
+T=Stupid. Why not apply the change to all Pipe-Pills at once?
+W=DEE
+C4A=MEH
+
+T=No! It's set in the hardware. Direct contact is required.
+W=GHERKIN
+C2A=ANGRY
+
+T=Okay, then... We should split the work. That'd be faster!
+W=BROK
+C1A=READY
+
+T=Impossible.
+W=GHERKIN
+
+T=Argh. Simple ideas are always impossible for you tech guys.
+W=BROK
+C1A=STUPID
+
+T=Why, then?
+W=BROK
+C1A=TIRED
+
+T=Don't tell me you're the only person in this country who can do it!
+W=BROK
+
+T=Precisely.
+W=GHERKIN
+C4A=HAPPY
+
+T=What?!
+W=BROK
+C1A=SURPRISED
+
+T=The signature is kept secret. That's the whole point.
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=You've gotta be kiddin' me! What if something happens to you?
+W=BROK
+C1A=ANGRY
+
+T=Why do you think I hired you?
+W=GHERKIN
+C4A=NORMAL
+
+T=Argh...
+W=BROK
+C1A=STUPID
+
+T=Wait...
+W=BROK
+C1A=THINK
+
+T=If that's true. Then...
+W=BROK
+
+T=It gives some credit to something we suspected.
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2
+T=You're quite an important person, Doctor Gherkin. Aren't you?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+C4=DEE
+C4A=NORMAL
+
+T=O-Of course. I direct the factory...
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=No. Much more important than that.
+W=BROK
+C1A=ANGRY
+
+T=How exactly did you learn the Pipe-Pills signature?
+W=BROK
+
+T=...
+W=GHERKIN
+C2A=WORRIED
+
+T=I-It's... confidential...
+W=GHERKIN
+
+T=I've had enough. Let me press that button.
+W=DEE
+C4A=NORMAL
+
+T=Okay. Do it.
+W=BROK
+C1A=MOCK
+
+T=No no no no! Please!
+W=GHERKIN
+C2A=WORRIED
+
+T=...Oh... You win...
+W=GHERKIN
+C2_EYESHUT=1
+
+T=Yes, I'm a member of the Government.
+W=GHERKIN
+C2_EYESHUT=1
+
+T=The signature is kept secret between our members.
+W=GHERKIN
+C2A=NORMAL
+
+T=Finally!
+W=DEE
+C4A=MEH
+
+T=Now, tell us everything!
+W=DEE
+C4A=COCKY
+
+T=I don't know where to start!
+W=GHERKIN
+C2A=WORRIED
+
+T=Start with the number. How many are you?
+W=BROK
+C1A=MOCK
+
+T=The answer is obvious.
+W=DEE
+C2A=NORMAL
+
+T=Hmm...
+W=BROK
+
+T=Now that you mention it. I believe I've always known, thanks to this.
+W=BROK
+TEN=PC19B_TRIANGLE_ONE
+
+#----------------------
+ID=PC19B_PICKONE_TRIANGLE_WRONG1
+T=(No...)
+W=BROK
+A=ANGRY
+MOOD=THINK
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_GHERKIN_TRIANGLE
+T=The Triangle...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=NORMAL
+
+T=There are three members.
+W=BROK
+C1A=MOCK
+
+T=Yes.
+W=GHERKIN
+
+T=But... I do not know the others.
+W=GHERKIN
+C2A=ANGRY
+
+T=Liar!
+W=DEE
+C2A=WORRIED
+C4A=ANGRY
+
+T=I swear! This... was part of the original deal!
+W=GHERKIN
+
+T=We're supposed to make the decisions separately.
+W=GHERKIN
+
+T=This was the only way to ensure we wouldn't be influenced one way or another.
+W=GHERKIN
+C2A=ANGRY
+
+T=Uh... Typical well-meaning behavior from the elite who don't know crap about how the world runs.
+W=DEE
+
+T=That, I have to agree with.
+W=BROK
+C1A=ALRIGHT
+
+T=T-there's no perfect governing system! It's a complex thing.
+W=GHERKIN
+C2A=NORMAL
+
+T=Let's focus on the matter at hand.
+W=BROK
+C1A=READY
+TEN=PC19B_TRIANGLE_AFTER
+
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT
+T=Earlier, you said the Government controls the updates for the Tribots.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+C4=DEE
+C4A=NORMAL
+
+T=And you're part of it!
+W=BROK
+
+T=It's obvious! Someone from the Government made the Tribots come after you!
+W=BROK
+C1A=ANGRY
+TEN=PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT_NEXT
+
+ 
+#---------------------------------------------------------------
+ID=PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE
+T=Earlier, you said the Government controls the updates for the Tribots...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+C4=DEE
+C4A=NORMAL
+
+T=And you're part of it!
+W=BROK
+
+T=It's you! You decided to make the Tribots come after me!
+W=BROK
+C1A=ANGRY
+
+T=N-No! I didn't!
+W=GHERKIN
+
+T=You better give me some convincing arguments, doc.
+W=BROK
+
+T=I-I don't know!...
+W=GHERKIN
+
+T=This... shouldn't be possible!
+W=GHERKIN
+
+T=You see... Each decision we take follows the same process.
+W=GHERKIN
+C2A=ANGRY
+
+T=When a new question arises, it comes with neutral elements to help us make our decision.
+W=GHERKIN
+
+T=Neutral, right...
+W=DEE
+C4A=WONDER
+
+T=We are three members. However, approval from all three is required for a decision to pass.
+W=GHERKIN
+CLUE=CLUE_TRIANGLE_APPROVE
+
+T=On the other hand, one member's disapproval is enough to block a process.
+W=GHERKIN
+CLUE=CLUE_TRIANGLE_DISAPPROVE
+
+T=I'm an engineer. I can read the code.
+W=GHERKIN
+
+T=I would never have agreed to this!
+W=GHERKIN
+C2A=WORRIED
+
+T=And if I had known you were responsible for the bots going crazy...
+W=GHERKIN
+SKIPEND=1
+
+T=Hey, I'm the victim here!
+W=BROK
+C1A=OPPOSITE
+
+T=Why would I voluntarily put my life in danger?
+W=GHERKIN
+
+T=He has a point.
+W=DEE
+
+T=Even if the bots don't attack him, he's still taking a risk of getting hit or run over accidentally in that chaos.
+W=DEE
+C1A=THINK
+C4A=NORMAL
+
+T=In that case...
+W=BROK
+
+T=One of the other two Triangle members decided to destroy you. Maybe even both.
+W=DEE
+
+T=That's just... great. My future keeps getting brighter.
+W=BROK
+C1A=STUPID
+
+T=At least you know the threat. We'll find a way to end this.
+W=DEE
+C4A=READY
+
+T=As long as I'm still in one piece afterwards.
+W=BROK
+
+T=No problem with that. The Tribots aren't equipped with giant scissors.
+W=DEE
+C4A=MEH
+
+T=Not funny.
+W=BROK
+C1A=ANGRY
+
+T=(Only one good aspect about this... Tribots won't harm Graff.)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+TEN=INTERFACE_CLUE_NEW
+ 
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_TRIANGLE_DEELIFE
+T=Enough! I must find out what this guy knows about my situation!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+C4=DEE
+C4A=ANGRY
+
+T=I was getting to it!
+W=BROK
+C1A=ALRIGHT
+
+T=This, erm... lady here suspects her investigations lead her to become a black sheep for news publishing.
+W=BROK
+C1A=MAYBE
+
+T=Incidentally, she also believes all the medias are controlled by the Government.
+W=BROK
+
+T=Is she right?
+W=BROK
+C1A=MOCK
+
+T=Well... Yes. To an extent.
+W=GHERKIN
+C2A=HAPPY
+
+T=We only make decisions for important ma...
+W=GHERKIN
+SKIPEND=1
+
+T=What have you done?! You dirty...
+W=DEE
+C2A=WORRIED
+C4A=ANGRY
+SKIPEND=1
+
+T=Wait!... I... did nothing wrong!
+W=GHERKIN
+
+T=Nothing wrong?!
+W=DEE
+
+T=You ruined my life!!!
+W=DEE
+
+T=Aaargh!
+W=GHERKIN
+C4_EYESHUT=1
+
+T=Calm down!
+W=BROK
+C1A=FURIOUS
+
+T=I... never made any decision about yourself!
+W=GHERKIN
+
+T=I'd remember you! And I'd never have accepted meeting you!
+W=GHERKIN
+
+T=I agree. I too would have stayed far away.
+W=BROK
+C1A=MEH
+SKIPEND=1
+
+T=Shut up!
+W=DEE
+
+T=Then who?!
+W=DEE
+
+T=It could be someone else. From the Triangle...
+W=GHERKIN
+
+T=Pft. How convenient.
+W=DEE
+C4A=NORMAL
+
+T=Mister I-Make-Big-Decisions is actually not responsible for anything!
+W=DEE
+
+T=P-Please...
+W=GHERKIN
+
+T=I've always wanted to help. To do my best!
+W=GHERKIN
+
+T=I believe you.
+W=BROK
+C1A=THINK
+
+T=Ha! I'll prove you wrong.
+W=DEE
+
+T=Let's continue. That's not much info but we're onto something.
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+ 
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT
+T=Dee. If you hadn't noticed...
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=NORMAL
+
+T=Both of you have been targetted by a member of the Triangle.
+W=BROK
+TEN=PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT_NEXT
+
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_DEE_CRIMINALSDISAPPEAR
+T=Dee. If you hadn't noticed...
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=NORMAL
+
+T=Both of us have been targetted by a member of the Triangle.
+W=BROK
+
+T=If we want to solve this, we'd better cooperate.
+W=BROK
+C1A=MOCK
+
+T=...
+W=DEE
+C4A=WONDER
+
+T=Maybe it's time to shed some light on your investigation.
+W=BROK
+
+T=What exactly was it about?
+W=BROK
+C1A=READY
+
+T=This could help us understand what's happening.
+W=BROK
+
+T=Fair enough.
+W=DEE
+C4A=MEH
+
+T=For years, I've witnessed many dysfunctional aspects of our society.
+W=DEE
+C4A=NORMAL
+
+T=And now that I've learned how exactly we're being governed... I'm not surprised.
+W=DEE
+C4A=LISTEN
+
+T=Anyway, the most worrying matter concerns the fate of prisoners in the Slums.
+W=DEE
+
+T=Over the last few months, every single prisoner accused has been sentenced to death.
+W=DEE
+C4A=SAD
+
+T=All of them?
+W=BROK
+C1A=THINK
+
+T=I double-checked my sources.
+W=DEE
+C4A=WONDER
+
+T=No accused prisoner ever gave any sign of life after being put to jail.
+W=DEE
+
+T=Doesn't matter if it's high security prison or just custody. The result is the same.
+W=DEE
+C4A=NORMAL
+
+T=They just... disappear from the surface of Earth.
+W=DEE
+
+T=Moreover, this was accompanied by a dramatic increase of the number of bodies incinerated or recycled during the same timespan.
+W=DEE
+
+T=So it's not very difficult to understand what happened to them.
+W=DEE
+C4A=SAD
+
+T=T-That... can't be...!
+W=GHERKIN
+C2A=WORRIED
+
+T=Care to say anything, Doc?...
+W=BROK
+
+T=...
+W=GHERKIN
+TEN=INTERFACE_CLUE_NEW
+ 
+
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_GHERKIN_PRISONERSKILLED
+T=Once again, Doc...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+C4=DEE
+C4A=NORMAL
+
+T=I know what you're going to say. So I'll cut it short.
+W=GHERKIN
+C2A=ANGRY
+
+T=Yes, the Triangle has a judiciary power over prisoners' outcome.
+W=GHERKIN
+
+T=After each investigation, we're being sent all the required information to take the final decision...
+W=GHERKIN
+SKIPEND=1
+
+T=Of life and death.
+W=BROK
+C1A=ANGRY
+
+T=Yes. But...
+W=GHERKIN
+
+T=What she says cannot be true...!
+W=GHERKIN
+C2A=WORRIED
+
+T=I've got proof!
+W=DEE
+C4A=ANGRY
+
+T=Explain yourself!
+W=BROK
+
+T=I've pretty much always voted no.
+W=GHERKIN
+
+T=And one disapproval should be enough to prevent a death penalty! I've said it earlier!
+W=GHERKIN
+
+T=But how can you be so sure?
+W=DEE
+
+T=Have you ever left your desk to check the consequences of your decisions?!
+W=DEE
+
+T=N... Not exactly...
+W=GHERKIN
+TEN=PC19B_INTERROGATION_STOPMUSIC
+
+T=Wait a minute!...
+W=BROK
+C1A=SURPRISED
+
+T=All prisoners... are sentenced to death?...
+W=BROK
+TEN=PC19B_INTERROGATION_AMBUSHMUSIC
+
+T=Yes. They're being put to death two days after being incarcerated.
+W=DEE
+C4A=NORMAL
+
+T=Two days...!
+W=BROK
+
+T=If this is true... This means...!
+W=BROK
+
+T=What? What's going on?...
+W=DEE
+C4A=WONDER
+
+T=Spit it!
+W=DEE
+C4A=ANGRY
+TEN=INTERFACE_CLUE_NEW
+
+
+
+#---------------------------------------------------------------
+ID=PC19B_CLUE_SIN_DANGER
+T=Dee. Remember that your husband hired me for an investigation?...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+C4=DEE
+C4A=ANGRY
+TEB=PC19B_INTERROGATION_STOPMUSIC
+TEN=PC19B_CLUE_SIN_DANGER_CHECK
+
+T=This... didn't turn out well.
+W=BROK
+C1A=STUPID
+
+T=Which means...?
+W=DEE
+C4A=LISTEN
+
+T=He's in jail. At the police department.
+W=BROK
+C1A=TIRED
+TEB=PC19B_INTERROGATION_HOSTAGECRISIS
+
+T=N-No!...
+W=DEE
+C4A=SURPRISED
+
+T=How long?!
+W=DEE
+
+T=A couple of days ago...
+W=BROK
+
+T=I gotta leave!
+W=DEE
+C4A=ANGRY
+
+T=NOW!!!
+W=DEE
+
+T=You can't!
+W=BROK
+C1A=ANGRY
+
+T=The bots are after you! Not me!
+W=DEE
+
+T=They're hundreds surrounding us! You've attacked some of them!
+W=BROK
+
+T=They'll crush you regardless!
+W=BROK
+
+T=I have to take my chance!
+W=DEE
+
+T=And what will you do when you get there?
+W=BROK
+
+T=The guards will never let you reach him, let alone escape!
+W=BROK
+
+T=Besides...
+W=BROK
+C1A=MAYBE
+
+T=I'm also responsible for this.
+W=BROK
+
+T=I could have got him out.
+W=BROK
+C1A=DOWN
+
+T=I know the place! I'll help you!
+W=BROK
+C1A=READY
+
+T=...
+W=DEE
+C4A=SAD
+
+T=I hope I won't regret this.
+W=DEE
+TEN=PC19B_INTERROGATION_COMPLETE
+
+#---------------------------------------------------------------
+ID=PC19B_INTERROGATION_OVER
+T=First, we need a way out of here!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+C4=DEE
+C4A=ANGRY
+
+T=I'm on it!
+W=BROK
+C1A=READY
+
+T=What about me?...
+W=GHERKIN
+
+T=Use your brain! Anything that can help!
+W=BROK
+
+T=Oooh... I thought you'd get me out.
+W=GHERKIN
+C2_EYESHUT=1
+TEN=PC19B_DEE_WANDER
+
+#----------------------
+ID=PC19B_DEE_AFTER
+T=Found anything?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=SAD
+
+T=Not much, I'm afraid...
+W=DEE
+
+T=Don't worry. I'm on it!
+W=BROK
+C1A=READY
+
+T=...Thanks.
+W=DEE
+C2_EYESHUT=1
+
+T=(She's clearly troubled. Better handle it myself)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+
+
+
+#----------------------
+ID=PC19B_GHERKIN_INV_DEFAULT
+T=Take this.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=What for?... Keep it.
+W=GHERKIN
+
+
+
+###############################################
+# PROOFREAD - jblaker - 03/09/2019
+###############################################

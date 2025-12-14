@@ -1,0 +1,2594 @@
+﻿#-------------------------------
+#=SIN'S APARTMENT
+#-------------------------------
+
+
+#----------------------
+#= Glasses pile
+#----------------------
+ID=PC07B_GLASSESPILE1
+T=Quite the stack... Looks like the guy loves to drink.
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Room interactions
+
+#----------------------
+#= Bed jumping
+#----------------------
+ID=PC07B_BEDJUMP1
+T=You're a professional... Right...?
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=WORRIED
+CONTEXT=Jumping on bed
+NB=1
+D=120
+
+T=Sure!
+W=BROK
+NB=1
+D=60
+
+T=Right...
+W=SIN
+NB=1
+D=60
+
+#----------------------
+#= Glasses
+#----------------------
+ID=PC07B_GLASSES1
+T=Two glasses, eh?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+CONTEXT=Room interactions
+
+T=So what?
+W=SIN
+
+T=Dunno... I had a feeling you lived alone.
+W=BROK
+
+T=I do.
+W=SIN
+
+#----------------------
+ID=PC07B_GLASSES2
+T=Two empty glasses...
+W=BROK
+A=MAYBE
+
+
+#----------------------
+ID=PC07B_GLASSES_PILLLATER
+T=Not until I know what that pill is.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC07B_GLASSES_GIVENOTYET
+T=(Hmm... I won't give it to him yet)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#----------------------
+ID=PC07B_GLASSES_PILLBEFORELIQUID
+T=Good idea but... the glass is empty.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC07B_SIN_GIVEDRINK
+T=Here.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SIN
+C2A=WORRIED
+
+T=(Glurp)
+W=SIN
+
+T=Thanks...
+W=SIN
+TEN=PC07B_SIN
+
+
+#----------------------
+ID=PC07B_GLASSESPILE_PILL
+T=Not here.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC07B_GLASSES_POUR
+T=Hey, you want a drink?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SIN
+C2A=WORRIED
+
+T=Erm... Sure.
+W=SIN
+TEN=PC07B_GLASSES_USEHOTJUICE
+
+#----------------------
+#= Tablet
+#----------------------
+ID=PC07B_TABLET1
+T=A tablet... Looks like he used it to perform some searches on the Triweb.
+W=BROK
+A=THINK
+
+T="Find lost item..." "Pawn shop..." "Medication deep sleep..." "Cheap detective...?"
+W=BROK
+
+T=Mrphh... I guess I should be glad to be well ranked for that search term...
+W=BROK
+A=ANGRY
+
+
+#----------------------
+#= Trash
+#----------------------
+ID=PC07B_TRASH1
+T=Without searching through it, I can see an empty bottle of Hot Juice.
+W=BROK
+A=MAYBE
+
+T=Perfect to get drunk as a skunk.
+W=BROK
+C1A=MEH
+CLUE=CLUE_SIN_ALCOHOL
+
+#----------------------
+ID=PC07B_TRASH2
+T=Sin is looking at me... I'm not going to rummage through his trash.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+#TODO Maybe add something
+ID=PC07B_TRASH_AFTER1
+T=Empty...
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Mirror
+#----------------------
+ID=PC07B_MIRROR1
+T=This mirror has seen better days.
+W=BROK
+A=MAYBE
+
+T=Just like myself.
+W=BROK
+A=DOWN
+
+#----------------------
+#= Picture
+#----------------------
+ID=PC07B_PICTURE1
+T=Something's stuck beside the mirror!
+W=BROK
+A=MOCK
+TEN=PC07B_PICTURE_DISPLAY
+
+#----------------------
+ID=PC07B_PICTURE1B
+T=A picture of Sin with a woman and a little girl... I wonder who they are.
+W=BROK
+A=WONDER
+TEN=PC07B_PICTURE_DISPLAY_BACK
+CLUE=CLUE_SIN_PICTURE
+
+#----------------------
+#= Cup
+#----------------------
+ID=PC07B_CUP1
+T=That cup doesn't seem important. However...
+W=BROK
+A=THINK
+
+T=There are two pills beside it. I'll take one.
+W=BROK
+A=MAYBE
+TEN=PC07B_PILL_TAKE
+
+#----------------------
+ID=PC07B_CUP2
+T=Taking both pills would seem suspicious.
+W=BROK
+A=THINK
+
+#----------------------
+#= Washing machine
+#----------------------
+ID=PC07B_WASHINGMACHINE1
+T=How lucky! An all-in-one washing machine.
+W=BROK
+A=HAPPY
+
+T=Wash yourself, your clothes, or both at the same time!
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC07B_WASHINGMACHINE_AFTER1
+T=At least one thing that's still there. I guess it's too big to move...
+W=BROK
+A=HAPPY
+
+
+
+#----------------------
+#= Bed
+#----------------------
+ID=PC07B_BED1
+T=What's this button for?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SIN
+C2A=WORRIED
+
+T=Don't! It's my...
+W=SIN
+C2A=SURPRISED
+TEB=PC07B_BEDBUTTON
+SKIPEND=1
+
+#----------------------
+ID=PC07B_BED1B
+T=...bed.
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=DOWN
+
+T=Oh.
+W=BROK
+C1A=STUPID
+
+
+#----------------------
+#= Bed fallen
+#----------------------
+ID=PC07B_BEDFALLEN1
+T=Quite handy when you're running out of space! I should get me one of these.
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+#= Wardfridge
+#----------------------
+ID=PC07B_WARDFRIDGE1
+T=What's in there?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=NORMAL
+
+T=Just food and clothes. What do you expect?
+W=SIN
+
+T=Do you mind if I open it?
+W=BROK
+C1A=MEH
+
+T=I didn't call you to check my fridge!
+W=SIN
+
+T=Just a look-see!
+W=BROK
+TEN=PC07B_WARDFRIDGE1_CHECK
+
+#----------------------
+ID=PC07B_WARDFRIDGE1B
+T=Who knows, maybe you left the gun in there?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=NORMAL
+TEN=PC07B_WARDFRIDGE_OPEN
+
+#----------------------
+ID=PC07B_WARDFRIDGE1C
+T=Guess not. Nothing in particular.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+
+T=You know, I'm starting to question your detective skills...
+W=SIN
+
+T=Act before thinking! That's what Grandpa always said.
+W=BROK
+C1A=HAPPY
+
+T=It usually works!
+W=BROK
+C1A=COCKY
+
+T=Not when we're short on time! Oh gosh, if someone finds the gun before me...
+W=SIN
+C2A=WORRIED
+
+T=Got it! I'll speed up the pace.
+W=BROK
+C1A=READY
+
+#----------------------
+#= Wardfridge clothes
+#----------------------
+ID=PC07B_CLOTHES1
+T=Wardfridges are such a nice invention!
+W=BROK
+C1=BROK
+C1A=HAPPY
+
+T=Cold air is pushed to the top, so the hot air stays at the bottom to keep the clothes warm.
+W=BROK
+C1A=MOCK
+
+
+#----------------------
+#= Wardfridge food
+#----------------------
+ID=PC07B_FOOD1
+T=Hmm...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=ANGRY
+
+T=Don't tell me you're gonna steal something from my fridge?
+W=SIN
+
+T=Not stealing! Just consider this an advance payment.
+W=BROK
+C1A=ALRIGHT
+
+T=Besides, I can't do my job properly on an empty stomach.
+W=BROK
+
+T=You gotta be kidding me...
+W=SIN
+TEN=PC07B_TAKE_FOOD
+
+#----------------------
+ID=PC07B_FOOD2
+T=I'd better not abuse his hospitality... especially with the glance he's throwing at me.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=ANGRY
+
+
+#----------------------
+#= Wardfridge after
+#----------------------
+ID=PC07B_WARDFRIGE_EMPTY
+T=Empty.
+W=BROK
+A=DOWN
+
+#----------------------
+#= Crack in wall
+#----------------------
+ID=PC07B_WALLCRACK1
+T=Whoa... I can see the other side of the hallway from there!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SIN
+C2A=NORMAL
+
+T=Yeah. This whole building is falling apart. But this was the only apartment I could afford.
+W=SIN
+
+T=When did you move in?
+W=BROK
+C1A=THINK
+
+T=About two weeks ago...
+W=SIN
+
+T=Ah, that explains the barren place. Why did you...
+W=BROK
+
+T=None of your business!
+W=SIN
+C1A=CONFUSED
+C2A=ANGRY
+
+T=No need to get upset! I'm just concerned whether you'll have the dough to pay me.
+W=BROK
+C1A=OPPOSITE
+
+T=I will. In due time.
+W=SIN
+C2A=NORMAL
+
+T=(Two to one I'll never get paid for this...)
+W=BROK
+MOOD=THINK
+
+#----------------------
+ID=PC07B_WALLCRACK2
+T=A huge crack in the wall... and here I thought my apartment was in a disastrous state!
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC07B_WALLCRACK_AFTER1
+T=Why did I bother going through the door...
+W=BROK
+A=THINK
+
+
+#----------------------
+#= Jacket
+#----------------------
+ID=PC07B_JACKET1
+T=Let's see...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+
+T=Hey! Don't touch my jacket!
+W=SIN
+C2A=ANGRY
+
+T=Don't worry, I'm just rummaging through your pocket to see...
+W=BROK
+
+T=Ah-ah! I've found... a flyer!
+W=BROK
+C1A=MOCK
+
+T=One of those activists in the street must have put it there. Keep it. I don't care.
+W=SIN
+C2A=NORMAL
+TEN=PC07B_JACKET_ADVERT_TAKE
+#protesters
+
+#----------------------
+ID=PC07B_JACKET2
+T=Nothing else in the jacket.
+W=BROK
+A=THINK
+
+
+#----------------------
+#= Device near bed
+#----------------------
+ID=PC07B_DEVICEBED1
+T=What's that? Looks like some kind of...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+TEN=PC07B_DEVICEFALL
+SKIPEND=1
+
+#----------------------
+ID=PC07B_DEVICEBED1B
+T=...whoops.
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SIN
+C2A=ANGRY
+
+T=I don't believe it! You've broken it!
+W=SIN
+
+T=Erm... really sorry. What's that, exactly?
+W=BROK
+C1A=HAPPY
+
+T=A... remote control. For my, erm... tablet.
+W=SIN
+C2A=WORRIED
+
+T=Oh. In that case, no worries!
+W=BROK
+
+T=My friend is an electronic genius, she'll fix it in no time!
+W=BROK
+C1A=MOCK
+COMM=The friend he refers to is Shay.
+TEN=PC07B_DEVICE_TAKE
+
+
+#----------------------
+ID=PC07B_DEVICEBED1C
+T=That's mine! I didn't allow you to take it!
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=ANGRY
+
+T=Trust me! I'll fix it. I owe it to you.
+W=BROK
+
+T=(Sigh) Alright, alright!
+W=SIN
+C2A=DOWN
+TEN=PC07B_DEVICEBED1C_CHECK
+
+#----------------------
+ID=PC07B_DEVICEBED1D
+T=But hurry up and find that gun! You're wasting time here!
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=ANGRY
+
+#---------------------------------------------------------
+#= SIN : Exit before knowing we have to pass the border
+#---------------------------------------------------------
+ID=PC07B_SIN_EXITEARLY1
+T=Erm... you didn't ask much.
+W=SIN
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=WORRIED
+CONTEXT=Exit before knowing we have to pass the border
+
+T=You sure you have enough info?
+W=SIN
+
+T=Hmm... maybe not.
+W=BROK
+C1A=HAPPY
+TEN=PC07B_TO_PC07_NOPE
+
+
+#----------------------
+#= SIN : First dialog
+#----------------------
+ID=PC07B_SIN_NOTALLOWED1
+T=Hey! What are you doing?
+W=SIN
+C1=BROK
+C1A=CONFUSED
+C2=SIN
+C2A=ANGRY
+CONTEXT=Talking to Sin - but trying to inspect his apartment
+
+T=Don't touch my stuff!
+W=SIN
+TEN=PC07B_SIN_BACKINFRONT
+
+T=Sorry.
+W=BROK
+C1A=HAPPY
+
+#----------------------
+ID=PC07B_SIN_NOTALLOWED2
+T=Are you listening?
+W=SIN
+C1=BROK
+C1A=SURPRISED
+C2=SIN
+C2A=ANGRY
+
+T=Nope.
+W=BROK
+C1A=MEH
+
+T=What?!
+W=SIN
+
+T=Just kiddin'! Just kiddin'!
+W=BROK
+C1A=HAPPY
+TEN=PC07B_SIN_BACKINFRONT
+
+#----------------------
+ID=PC07B_SIN_NOTALLOWEDBATHROOM1
+T=Where are you going?
+W=SIN
+C1=BROK
+C1A=CONFUSED
+C2=SIN
+C2A=ANGRY
+
+T=Just checking...
+W=BROK
+C1A=THINK
+
+T=Can you focus on my problem, please?
+W=SIN
+TEN=PC07B_SIN_BACKINFRONT
+
+#----------------------
+#= SIN : First dialog
+#----------------------
+ID=PC07B_SIN_FIRST
+T=At last! Here you are!
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=WORRIED
+CONTEXT=Talking to Sin
+
+T=Truly sorry. I had some... difficulties on the way.
+W=BROK
+C1A=HAPPY
+
+T=So, what's the fuss?
+W=BROK
+C1A=THINK
+
+T=I'm in deep trouble... I've lost my crippling gun.
+W=SIN
+
+T=That's all? Why is it so important?
+W=BROK
+C1A=WONDER
+
+T=I'm gonna lose my job! That's why!
+W=SIN
+
+T=I'm... kinda new on the force. If I tell the chief I messed up, he'll fire me!
+W=SIN
+C2A=DOWN
+
+T=I just can't afford it!
+W=SIN
+
+T=So you're hiring me to find that gun? Okay...
+W=BROK
+C1A=MAYBE
+CLUE=CLUE_SIN_WORRIEDGUN
+
+T=How much can you offer?
+W=BROK
+C1A=ALRIGHT
+
+T=500 unis...
+W=SIN
+
+T=1000.
+W=BROK
+C1A=MOCK
+
+T=I can't! 500 is all I can afford!
+W=SIN
+C2A=SURPRISED
+
+T=Please! I'm begging you! 
+W=SIN
+C2A=WORRIED
+
+T=(Sigh) Alright...500 it is. 
+W=BROK
+C1A=STUPID
+
+T=(Wish I was better at negotiating...)
+W=BROK
+MOOD=THINK
+
+T=Tell me more.
+W=BROK
+C1A=THINK
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+#----------------------
+#= SIN : The Gun
+#----------------------
+ID=PC07B_SIN_GUN1
+T=Any idea where you lost it?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=NORMAL
+
+T=Last night, I was on duty in Drumer Street.
+W=SIN
+
+T=I'm absolutely certain I lost it during my watch in Alley number 12. I had it before.
+W=SIN
+
+T=Then why don't you search for it yourself?
+W=BROK
+C1A=THINK
+
+T=I can't go outside! If someone notices me without the gun, I'm done for!
+W=SIN
+C2A=WORRIED
+
+T=Aren't you exaggerating a bit?
+W=BROK
+
+T=Are you from the police department?
+W=SIN
+C2A=NORMAL
+
+T=Of course not. I can't stand them. Erm...
+W=BROK
+C1A=OPPOSITE
+
+T=Then you don't know! Trust me!
+W=SIN
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC07B_SIN_GUN2
+T=What happened exactly? How did you lose it?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+
+T=If only I knew! I just remember exiting the alley and noticing it missing.
+W=SIN
+
+T=Where did you store it?
+W=BROK
+
+T=In my pocket, where else?
+W=SIN
+
+T=Anything else missing?
+W=BROK
+
+T=Actually, yes. My handkerchief.
+W=SIN
+
+T=A blue one. My wife hand-stitched it for me.
+W=SIN
+
+T=It was in my pocket, alongside the gun... Both are gone.
+W=SIN
+C2A=DOWN
+
+T=Okay, this might prove useful.
+W=BROK
+C1A=READY
+CLUE=CLUE_SIN_HANDKERCHIEF
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+#----------------------
+#= SIN : Drumer street
+#----------------------
+ID=PC07B_SIN_DRUMERSSTREET1
+T=Drumer Street, you say?
+W=BROK
+C1=BROK
+C1A=WORRIED
+C2=SIN
+C2A=NORMAL
+
+T=There's a border post to enter the area. I can't pass it.
+W=BROK
+C1A=MAYBE
+TEN=PC07B_SIN_LOCATION_BORDERPOST
+IT=1
+
+#----------------------
+ID=PC07B_SIN_DRUMERSSTREET1B
+T=You're a detective! I thought you had credentials to examine the Drums?
+W=SIN
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=NORMAL
+
+T=Nope. All my clients are Slumers, I usually don't go near the Dome.
+W=BROK
+C1A=THINK
+
+T=Oh, great...
+W=SIN
+C2A=DOWN
+
+T=You're a cop. Can't you give me somethin'?
+W=BROK
+C1A=THINK
+
+T=Call your colleagues, maybe?
+W=BROK
+
+T=I said it... I'm new. I have no one I can trust.
+W=SIN
+
+T=In that case...
+W=BROK
+C1A=ANGRY
+
+T=Give me your uniform and your badge. I'll impersonate you.
+W=BROK
+
+T=Impossible! We don't use badges anymore.
+W=SIN
+C2A=SURPRISED
+
+T=There's a body scan at the entrance of the Dome. It can't be faked.
+W=SIN
+C2A=NORMAL
+
+T=Darn... You're right. Then... Erm...
+W=BROK
+
+T=I know! I have a friend who can do wonders with technology.
+W=BROK
+C1A=READY
+COMM=He is talking about Shay.
+
+T=She will find a way to get through.
+W=BROK
+TEN=PC07B_SIN_LOCATION_SHAY
+IT=1
+
+#----------------------
+ID=PC07B_SIN_DRUMERSSTREET1C
+T=Wonderful!
+W=SIN
+C1=BROK
+C1A=READY
+C2=SIN
+C2A=NORMAL
+
+T=Now, go ahead! What are you waiting for?!
+W=SIN
+
+T=Hey! I'm gonna take some risks for you! You could be a bit more gracious.
+W=BROK
+C1A=ANGRY
+
+T=Please Mr. Detective, hurry up!
+W=SIN
+C2A=WORRIED
+
+T=Better. But I won't move until I've got enough information.
+W=BROK
+
+T=What now?
+W=SIN
+C2A=NORMAL
+
+T=I'd like to inspect your apartment.
+W=BROK
+C1A=MEH
+
+T=Experience tells me things are often hidden right before our eyes.
+W=BROK
+
+T=But... I told you! I lost it on Drumer Street!
+W=SIN
+C2A=ANGRY
+
+T=I insist! Let me do my job.
+W=BROK
+C1A=ANGRY
+
+T=(Rule number 3 in my book : Never blindly trust your client)
+W=BROK
+MOOD=THINK
+
+T=Gah! Go ahead but hurry!
+W=SIN
+TEN=PC07B_TUTORIAL_CLICKERS
+
+
+
+#----------------------
+ID=PC07B_SIN_DRUMERSSTREET2
+T=Why were you patrolling in this street?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+
+T=I received orders... and I follow them.
+W=SIN
+
+T=Were you alone? Aren't Tribots and cameras enough for that job?
+W=BROK
+
+T=The chief insists on keeping some humans in the crucial areas.
+W=SIN
+
+T=Crucial, eh...?
+W=BROK
+C1A=OPPOSITE
+
+T=I see what you mean... but that's how it is. Drumers get priority.
+W=SIN
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+#----------------------
+#= SIN : Sin himself
+#----------------------
+ID=PC07B_SIN_HIMSELF1
+T=How come you're living in the Slums? I could have sworn cops were Drumers.
+W=BROK
+C1=BROK
+C1A=MEH
+C2=SIN
+C2A=NORMAL
+
+T=You're wrong. I don't earn that much.
+W=SIN
+
+T=But are Slumers allowed on the police force? I thought...
+W=BROK
+C1A=WONDER
+
+T=Please stop the useless questions and do your job! There's no time to waste!
+W=SIN
+C1A=CONFUSED
+C2A=WORRIED
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+
+#----------------------
+#= SIN : Think
+#----------------------
+ID=PC07B_SIN_THINK1
+T=(So I'm doing "lost and found" today?)
+W=BROK
+C1=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(I shouldn't complain. I've had worse jobs. Although I can't shake the feeling that something's not right...)
+W=BROK
+MOOD=THINK
+
+T=(Well! I'm used to it, anyway. Things ALWAYS go wrong.)
+W=BROK
+MOOD=THINK
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+
+#----------------------
+#= SIN : Welcome
+#----------------------
+ID=PC07B_SIN_WELCOME1
+T=So, tell me...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC07B_SIN_WELCOME2
+T=Can I ask you somethin'?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=NORMAL
+
+T=Again?! When are you going to start investigating?
+W=SIN
+C2A=ANGRY
+
+T=First things first.
+W=BROK
+C1A=ANGRY
+TEN=PC07B_SIN_CHOICES
+IT=1
+
+#----------------------
+#= SIN : Exit
+#----------------------
+ID=PC07B_SIN_EXIT1
+T=Thanks for the info.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+
+T=Hurry up!
+W=SIN
+C2A=WORRIED
+
+
+#----------------------
+ID=PC07B_SIN_EXIT2
+T=Wait here.
+W=BROK
+C1=BROK
+C1A=READY
+C2=SIN
+C2A=NORMAL
+
+T=What else can I do?
+W=SIN
+
+#----------------------
+#= SIN : Inventory
+#----------------------
+ID=PC07B_SIN_INV_DEFAULT1
+T=Look at this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=NORMAL
+
+T=What about it?
+W=SIN
+
+T=No idea. I'm asking for your opinion. What do you think?
+W=BROK
+C1A=WONDER
+
+T=What kind of investigation is this? I don't have time to waste!
+W=SIN
+C1A=CONFUSED
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC07B_SIN_INV_DEFAULT2
+T=I believe this might hel...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=NORMAL
+SKIPEND=1
+
+T=No!
+W=SIN
+C1A=SURPRISED
+C2A=ANGRY
+
+T=No need to get angry.
+W=BROK
+C1A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC07B_SIN_INV_PILL
+T=(Maaaaaybe not... I stole it from him.)
+W=BROK
+A=HAPPY
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#------------------------------------
+ID=PC07B_SIN_INV_REMOTECONTROLDAMAGED
+T=Don't worry! I'll fix it!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=ANGRY
+
+T=I hope so...
+W=SIN
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC07B_SIN_INV_HANDKERCHIEF
+T=Hey! That's...
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=SURPRISED
+
+T=Yours, right?
+W=BROK
+
+T=Yeah! Finally some progress!
+W=SIN
+C2A=NORMAL
+
+T=Give it back!
+W=SIN
+
+T=What? No way! That's a clue!
+W=BROK
+C1A=ANGRY
+
+T=(Sigh)
+W=SIN
+C2A=DOWN
+
+T=Okay... You can keep it for now...
+W=SIN
+
+T=But don't you dare blow your nose in it!
+W=SIN
+C2A=ANGRY
+
+T=Who, me...? Never!
+W=BROK
+C1A=HAPPY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC07B_SIN_INV_CATFUR
+T=Urgh...
+W=SIN
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=SURPRISED
+
+T=Watch out! You're scattering fur everywhere!
+W=SIN
+
+T=Did you take a good look at me?
+W=BROK
+C1A=ANGRY
+
+T=Uh... Where does it come from?
+W=SIN
+C2A=NORMAL
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC07B_SIN_INV_MONEY
+T=Erm... What's that for?
+W=SIN
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=NORMAL
+
+T=Oops! I thought I owed you somethin'!
+W=BROK
+C1A=STUPID
+
+T=Yeah... To investigate!
+W=SIN
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC07B_SIN_INV_MAGNIFY
+T=See? I'm a detective!
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=SIN
+C2A=NORMAL
+
+T=(Sigh)
+W=SIN
+C2A=DOWN
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC07B_SIN_INV_POLLUTIONPILL
+T=Take this.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=NORMAL
+
+T=A Toxout pill?! I don't need it!
+W=SIN
+
+T=You never know what might happen tomorrow!
+W=BROK
+
+T=No, thanks.
+W=SIN
+
+T=Don't say I didn't warn you!
+W=BROK
+C1A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC07B_SIN_INV_TRAMPPRESCR
+T=Please tell me you know where I can find a doctor!
+W=BROK
+C1=BROK
+C1A=WORRIED
+C2=SIN
+C2A=NORMAL
+
+T=No idea. With the Medi-Tribots I never needed it.
+W=SIN
+
+T=You got one? I thought you were a Slumer?
+W=BROK
+C1A=CONFUSED
+
+T=Well...
+W=SIN
+
+T=I got it from the garbage dump...
+W=SIN
+C2A=DOWN
+
+T=Hmm.
+W=BROK
+C1A=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC07B_SIN_INV_GUN
+T=(Not yet...)
+W=BROK
+A=THINK
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#------------------------------------
+#= SIN : Give the gun
+#------------------------------------
+ID=PC07B_SIN_INTERROGATEGUN_NOTYET
+T=Please tell me you found it!
+W=SIN
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=WORRIED
+
+T=(I did... But...)
+W=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(I have a nagging feeling I shouldn't give it to him yet. Pretty sure I missed something.)
+W=BROK
+MOOD=THINK
+
+T=Not yet but I'm getting close.
+W=BROK
+C1A=MAYBE
+
+T=(Better search his apartment thoroughly.)
+W=BROK
+MOOD=THINK
+
+
+#------------------------------------
+ID=PC07B_SIN_INTERROGATEGUN
+T=I found it.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=WORRIED
+
+T=The gun? You've got it?!
+W=SIN
+C2A=SURPRISED
+
+T=Awesome! You're a life saver!
+W=SIN
+
+T=Wait. I'm not giving it to you...yet.
+W=BROK
+C1A=OPPOSITE
+
+T=What? Why?!
+W=SIN
+C2A=ANGRY
+
+T=My investigation brought up some questions that need clarification.
+W=BROK
+C1A=ANGRY
+
+T=I'd like you to explain a few things.
+W=BROK
+
+T=Err... Sure... Go ahead.
+W=SIN
+C2A=DOWN
+TEN=PC07B_INTERROGATION_START
+
+#------------------------------------
+ID=PC07B_SIN_INTERROGATEGUN2
+T=Let's resume our..."conversation."
+W=BROK
+C1=BROK
+C1A=MEH
+C2=SIN
+C2A=NORMAL
+TEN=PC07B_INTERROGATION_START
+
+
+#------------------------------------
+#= SIN : Interrogation
+#------------------------------------
+ID=PC07B_CLUE_SIN_GUNNOTHIM
+T=That gun ain't yours.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=WORRIED
+CONTEXT=Interrogating Sin
+
+T=Huh...? Of course it is!
+W=SIN
+C2A=SURPRISED
+
+T=I got it when I was recruited onto the police force!
+W=SIN
+
+T=Then explain those initials... R.J.
+W=BROK
+C1A=MEH
+
+T=Well... Yeah. Another agent got it before me...
+W=SIN
+C2A=WORRIED
+
+T=Who?
+W=BROK
+C1A=MAYBE
+
+T=Is that important?
+W=SIN
+
+T=Must be the agent who went into retirement before me. Can't remember his name.
+W=SIN
+C1A=THINK
+
+T=That's not all. The identifier code has been scratched beyond readable. How do you explain that?
+W=BROK
+
+T=I guess...
+W=SIN
+
+T=It's not brand new, you know. He must have worn it out during his missions.
+W=SIN
+C2A=NORMAL
+
+T=Mmph.
+W=BROK
+C1A=MEH
+TEN=INTERFACE_CLUE_NEW
+
+#------------------------------------
+ID=PC07B_CLUE_SIN_CAMERAOFF
+T=See this?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=NORMAL
+
+T=Yes. My remote control. So what?!
+W=SIN
+C2A=ANGRY
+
+T=I forgot. What is it for?
+W=BROK
+C1A=WONDER
+
+T=It's for... changing my bed position.
+W=SIN
+
+T=Oh! Is that so?
+W=BROK
+C1A=ANGRY
+
+T=Didn't you say this was for your tablet?
+W=BROK
+
+T=Erm... Well... Yeah, it can do both...
+W=SIN
+C2A=WORRIED
+
+T=Hmm. Anyway, my friend told me something...quite interesting.
+W=BROK
+C1A=MEH
+
+T=See, she thinks that's a police device to remotely disable cameras.
+W=BROK
+
+T=(Sigh)
+W=SIN
+C2A=DOWN
+
+T=OK. I admit, that's true.
+W=SIN
+C1A=ANGRY
+
+T=Then I just confirmed you're a liar.
+W=BROK
+
+T=Are you stupid?!
+W=SIN
+C2A=ANGRY
+
+T=That's police equipment. Civilians aren't supposed to know about it!
+W=SIN
+
+T=Mmph. Have you ever used it?
+W=BROK
+C1A=OPPOSITE
+
+T=Not recently...
+W=SIN
+C2A=NORMAL
+
+T=Alright. Then, tell me.
+W=BROK
+C1A=THINK
+
+T=Weren't you patrolling near the pharmacy, last night?
+W=BROK
+
+T=Yes, I told you!
+W=SIN
+C2A=ANGRY
+
+T=Then what?! Get to the point, already!
+W=SIN
+
+T=An incident occurred there.
+W=BROK
+
+T=The pharmacy camera had been deactivated. I suspect this little thingy could be responsible.
+W=BROK
+
+T=I...No idea! Why would I do such a thing?
+W=SIN
+
+T=You tell me.
+W=BROK
+C1A=ALRIGHT
+
+T=You're testing my patience!
+W=SIN
+
+T=I said I didn't use that darn remote control! Got it?!
+W=SIN
+C1A=ANGRY
+
+T=Did someone steal it from you?
+W=BROK
+
+T=Aside from you?! No!
+W=SIN
+
+T=OK...
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+#------------------------------------
+ID=PC07B_CLUE_SIN_SLEEP
+T=Here's a pill! What is it for?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=NORMAL
+
+T=The heck would I know!
+W=SIN
+C2A=ANGRY
+
+T=Really? You don't?
+W=BROK
+
+T=Even though it's yours?
+W=BROK
+C1A=MEH
+
+T=What?! You just stole it from me?!
+W=SIN
+
+T=Actually I stole it an hour ago...
+W=BROK
+C1A=ALRIGHT
+
+T=I can't believe it... 
+W=SIN
+C2A=DOWN
+
+T=Well, you better. This is "Starix-500".
+W=BROK
+C1A=MEH
+
+T=An anti-depressant with an interesting side effect!
+W=BROK
+
+T=With a strong enough dose anyone can fall into a comatose state.
+W=BROK
+C1A=MAYBE
+
+T=Where are you going with this?
+W=SIN
+C2A=ANGRY
+
+T=I almost think you're accusing me of drugging someone! 
+W=SIN
+#Are you implying I drugged someone?!
+
+T=Not just someone. A cop.
+W=BROK
+C1A=MOCK
+
+T=You're insane!
+W=SIN
+
+T=Sure, maybe I am. But here's my theory...
+W=BROK
+C1A=MEH
+
+T=The merchant girl on your street described a guy deeply asleep earlier this morning...in his underwear!
+W=BROK
+
+T=She had a tough time waking him up and he couldn't remember what happened.
+W=BROK
+
+T=But he knew one thing for sure... He's a policeman.
+W=BROK
+C1A=READY
+
+T=So you think this policeman came to see me?
+W=SIN
+
+T=Impossible! I haven't had any visits in days!
+W=SIN
+
+T=What about the two glasses on that table?
+W=BROK
+
+T=...since when can we not drink with multiple glasses?
+W=SIN
+
+T=I'm going through a tough situation and you're making it worse!
+W=SIN
+
+T=Why did I hire you... Now I understand why you were so cheap...
+W=SIN
+C2A=DOWN
+
+T=What? My prices are too low?
+W=BROK
+C1A=WONDER
+
+T=...forget it.
+W=SIN
+TEN=INTERFACE_CLUE_NEW
+
+
+
+#------------------------------------
+ID=PC07B_CLUE_SIN_PHARMACY
+T=Do you know anything about what happened at the pharmacy?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=NORMAL
+
+T=Only what you told me. That someone deactivated the camera to steal something...
+W=SIN
+
+T=I didn't mention any robbery.
+W=BROK
+C1A=ANGRY
+
+T=Well... That's only logical. What else could it have been?
+W=SIN
+
+T=True. Except nothing seems to be missing.
+W=BROK
+C1A=THINK
+
+T=However... Someone attempted to force open a drawer in the back.
+W=BROK
+
+T=Do you know what's stored in there?
+W=BROK
+
+T=No and I couldn't give a darn!
+W=SIN
+C2A=ANGRY
+
+T=So you weren't involved in any way with the pharmacy incident?
+W=BROK
+C1A=ANGRY
+
+T=Enough with your questions! Mind your own business!
+W=SIN
+
+T=You're the one who asked me to investigate.
+W=BROK
+
+T=Not on me personally!
+W=SIN
+
+T=This is irrelevant!
+W=SIN
+
+T=(I can't trust him...)
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+TEN=INTERFACE_CLUE_NEW
+
+
+#------------------------------------
+ID=PC07B_CLUE_SIN_STEAL
+T=Let's assume I'm right and that gun ain't yours.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=NORMAL
+
+T=Wouldn't it make sense that it belongs to the cop you put to sleep?
+W=BROK
+
+T=Those are big accusations! Stop with the mindless assumptions!
+W=SIN
+C2A=ANGRY
+
+T=I'm fed up with all that crap! Gimme my gun back!
+W=SIN
+
+T=I'll take it by force if I need to!
+W=SIN
+
+T=First, I won't let you.
+W=BROK
+C2A=ANGRY
+
+T=Second... Your insistence confirms my suspicions.
+W=BROK
+
+T=Argh... You're just trouble...
+W=SIN
+
+T=Darn it! What do you want from me?!
+W=SIN
+
+T=The truth!
+W=BROK
+C1A=READY
+TEN=INTERFACE_CLUE_NEW
+
+
+#------------------------------------
+ID=PC07B_CLUE_SIN_THIEF
+T=So... The pharmacy incident. The drugged policeman. The gun's true owner.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=NORMAL
+
+T=All the evidence points towards the same direction... 
+W=BROK
+
+T=You're no policeman, Sin. You're a thief!
+W=BROK
+C1A=MOCK
+
+T=No! That's wrong!
+W=SIN
+C2A=SURPRISED
+
+T=You...don't have any tangible proof!
+W=SIN
+C2A=WORRIED
+
+T=Maybe I don't... but the police would.
+W=BROK
+C1A=MEH
+
+T=Look, I have an idea.
+W=BROK
+
+T=If you're telling the truth, it shouldn't be a problem if I ask the cops about your identity?
+W=BROK
+
+T=Wait! Don't do this!
+W=SIN
+
+T=You just...don't understand...
+W=SIN
+C1A=THINK
+C2A=DOWN
+
+T=I'm...
+W=SIN
+
+T=...
+W=SIN
+
+T=You don't leave me any choice.
+W=SIN
+C2A=ANGRY
+COMM=Sin attacks Brok
+TEN=PC07B_SIN_ATTACKS_REAL
+
+#------------------------------------
+ID=PC07B_SIN_RESUME_FIGHT
+T=You're no policeman, Sin. You're a thief!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=SURPRISED
+
+T=...
+W=SIN
+
+T=You don't leave me any choice.
+W=SIN
+C2A=ANGRY
+COMM=Sin attacks Brok
+TEN=PC07B_SIN_ATTACKS_REAL
+
+
+#------------------------------------
+ID=PC07B_SIN_DRINKED
+T=Argh...
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=DOWN
+C2_EYESHUT=1
+
+T=My head... I feel weak...
+W=SIN
+
+T=Sorry.
+W=BROK
+
+T=That drink...
+W=SIN
+C2_EYESHUT=0
+
+T=I see. You knew I might become dangerous.
+W=SIN
+
+T=You win. I can't fight like this.
+W=SIN
+TEN=PC07B_SIN_DRINKEDNEXT
+
+
+#------------------------------------
+ID=PC07B_CLUE_BLACKOUT
+T=(Both can cause blackout but...)
+W=BROK
+A=MAYBE
+MOOD=THINK
+CONTEXT=Brok reactions to clues during interrogation
+
+T=(I can't see how this helps.)
+W=BROK
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_CLUE_STRESSED
+T=(Sure, Sin must have used those pills because he's stressed out. So...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_CLUE_ALCOHOL
+T=(It wouldn't be surprising that Sin would drink to relieve his stress...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(Nothing contradictory here.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_CLUE_PHARMACYSTEAL
+T=(Yes, those two events must be related... I just need a way to find out what happened.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_CLUE_LINKWEAK
+T=(Hmm... Was Sin involved? The link here is too weak to deduce anything...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_CLUE_PILLPHARMACY
+T=(Yeah, I'm sure he got his pills from this pharmacy...like any regular client.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_CLUE_STREET
+T=(Did the same people do both? I can't conclude anything...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_SIN_WIN1
+T=Stop! Please!
+W=SIN
+C1=BROK
+C1A=FURIOUS
+C2=SIN
+C2A=SURPRISED
+CONTEXT=Brok wins fight against Sin
+
+T=I'm sorry... You win.
+W=SIN
+C1A=ANGRY
+C2A=DOWN
+
+T=...
+W=SIN
+TEN=PC07B_SIN_MUSIC
+
+T=You were right... You read me like an open book...
+W=SIN
+
+T=I'm a thief. A low-grade criminal...
+W=SIN
+
+T=But...
+W=SIN
+
+T=I did it for my daughter...
+W=SIN
+
+T=Your daughter?
+W=BROK
+C1A=WONDER
+
+T=Yes. I just...want to see her again...
+W=SIN
+
+T=I made a huge mistake... or at least, I think I did...
+W=SIN
+C1A=THINK
+
+T=A week ago, my wife found videos of me with another woman.
+W=SIN
+
+T=The truth is... I can't remember it.
+W=SIN
+
+T=Think you've been framed?
+W=BROK
+
+T=...
+W=SIN
+
+T=Dunno. Maybe...
+W=SIN
+
+T=Any enemies?
+W=BROK
+C1A=MAYBE
+
+T=Not that I'm aware of.
+W=SIN
+
+T=The videos seemed real. I concluded I must have been drunk one night and... Well...
+W=SIN
+
+T=In any case, she was furious.
+W=SIN
+C1A=THINK
+
+T=She made me leave home. She warned that I should never come close to her or our daughter anymore.
+W=SIN
+
+T=I tried to reason with her, but to no avail.
+W=SIN
+
+T=Not seeing my wife anymore is hard enough, but my daughter too?
+W=SIN
+
+T=Women can sure get hopping mad. But that's a temporary setback...
+W=BROK
+C1A=MEH
+
+T=Not this time.
+W=SIN
+
+T=She's a journalist, you know...
+W=SIN
+
+T=Knowing the truth is of the uttermost importance for her, and I definitely lost her trust...
+W=SIN
+C1A=THINK
+
+T=I attempted to talk to my daughter at the Consciousness Center. That made her totally mad.
+W=SIN
+
+T=She threatened to start an expel procedure.
+W=SIN
+
+T=Expel?
+W=BROK
+
+T=I would lose my qualification and access to the Drums.
+W=SIN
+
+T=So you're a Drumer?
+W=BROK
+C1A=MEH
+
+T=Yes. Well... Not much longer, I guess.
+W=SIN
+
+T=I had no choice. I left by myself to come to this awful dump...
+W=SIN
+
+T=Well, no offense.
+W=SIN
+
+T=None taken. But why the stealing?
+W=BROK
+C1A=THINK
+
+T=I thought about this situation thoroughly.
+W=SIN
+
+T=I just... can't live without my sweet little girl. I can't.
+W=SIN
+
+T=So... I had to go back and reverse what happened.
+W=SIN
+
+T=I'm afraid the past can't be changed.
+W=BROK
+C1A=DOWN
+
+T=You're wrong. There is a way...
+W=SIN
+C1A=THINK
+
+T=I could get her back... if her mother would forget this incident.
+W=SIN
+C2A=DOWN
+
+T=Can anyone really forget such an important event?
+W=BROK
+
+T=Yes. With "Oblivion."
+W=SIN
+
+T=Oblivion...
+W=BROK
+C1A=WONDER
+
+T=This medicine was invented for critical situations.
+W=SIN
+
+T=Victims of a trauma. Kids losing their parents tragically...
+W=SIN
+
+T=It has the ability to suppress select memories, days after they occurred.
+W=SIN
+
+T=Of course, the Government kept it secret. Having this rolled out to the public would have dramatic effects...
+W=SIN
+C1A=THINK
+C2A=WORRIED
+
+T=I spent entire days searching for a solution... and I finally did.
+W=SIN
+
+T=A hacker lived in the apartment next to mine...
+W=SIN
+
+T=After some convincing he shared some leaked reports.
+W=SIN
+
+T=Oblivion was mentioned, as well as locations where it's stored.
+W=SIN
+
+T=I had a policeman friend...R.J. He regularly patrolled around one such location... 
+W=SIN
+
+T=...that pharmacy.
+W=BROK
+
+T=So you drugged him to disguise yourself and steal the medicine.
+W=BROK
+C1A=ANGRY
+
+T=Exactly. I desperately needed it...
+W=SIN
+C2A=DOWN
+
+T=What a way to treat your friends...
+W=BROK
+C1A=OPPOSITE
+
+T=...true. But...
+W=SIN
+
+T=If you had a kid... You'd know...
+W=SIN
+C1A=THINK
+
+T=You'd do anything for them.
+W=SIN
+
+T=I deactivated the camera and tried to force open the drawer. But then...
+W=SIN
+
+T=I ran out of luck. A bot detected me and called the cops.
+W=SIN
+C2A=WORRIED
+
+T=I didn't have a choice. If I ended up in jail, my hopes of getting back my daughter would be lost forever.
+W=SIN
+
+T=So I escaped through the back alley...
+W=SIN
+
+T=What about the gun?
+W=BROK
+
+T=In the rush, I took it out from my pocket and threw it in the sewers to get rid of it.
+W=SIN
+
+T=But... What a fool. I forgot to clean off my fingerprints...
+W=SIN
+C2A=ANGRY
+
+T=If the cops got their hands on it... I'd be done for.
+W=SIN
+
+T=So that's what happened...
+W=BROK
+C1A=MAYBE
+C2A=DOWN
+
+T=You hired me because you needed the gun back but couldn't take the risk to search for it yourself.
+W=BROK
+
+T=Yes...
+W=SIN
+
+T=Now, go ahead.
+W=SIN
+
+T=Call the cops. I'm ready...
+W=SIN
+C1A=THINK
+C2_EYESHUT=1
+TEN=PC07B_TRUSTSIN_CHOICE
+IT=1
+
+#------------------------------------
+ID=PC07B_SIN_DENOUNCE1
+T=Sorry. You made your own choice.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=DOWN
+
+T=I know...
+W=SIN
+
+T=There's no excuse to break the law.
+W=BROK
+
+T=(...am I doing the right thing, though?)
+W=BROK
+MOOD=THINK
+
+T=(I could have done the same...)
+W=BROK
+MOOD=THINK
+
+T=(One thing's for sure... I won't get paid... again.)
+W=BROK
+MOOD=THINK
+
+T=(Sigh)
+W=BROK
+MOOD=THINK
+TEN=PC07B_SIN_WIN_POLICE
+
+#------------------------------------
+ID=PC07B_SIN_FORGIVE1
+T=No.
+W=BROK
+C1A=ANGRY
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=DOWN
+COMM=IMPORTANT - At this moment you can make Brok talk to Sin in an informal way. (Maybe not the opposite yet though, but both should talk to each other in informal ways in jail in PC08B)
+
+T=What?
+W=SIN
+C2A=SURPRISED
+
+T=I won't. The only thing I wanted was to know the truth.
+W=BROK
+
+T=Look... We're on the same side. I've got a kid too...
+W=BROK
+C1A=MAYBE
+
+T=Sort of.
+W=BROK
+
+T=But... I deserve it...
+W=SIN
+
+T=I attacked you!
+W=SIN
+
+T=How could you forgive me? How could anyone?
+W=SIN
+
+T=Don't worry about me. You've suffered more than enough, man.
+W=BROK
+C1A=MOCK
+
+T=I won't tell anyone. And I'll help you get rid of that stinkin' gun.
+W=BROK
+C1A=ALRIGHT
+
+T=Really? But...
+W=SIN
+C2A=DOWN
+
+T=I... I lied about something else...
+W=SIN
+C1A=THINK
+
+T=I don't even have enough money to pay you... I figured I'd just find a solution...
+W=SIN
+C2A=WORRIED
+
+T=Oh, well... I had a feeling you'd say that...
+W=BROK
+C1A=STUPID
+
+T=No worries. We'll figure something out later.
+W=BROK
+C1A=READY
+
+T=I... This is...
+W=SIN
+
+T=Thank you...
+W=SIN
+C2A=NORMAL
+
+T=Don't mention it!
+W=BROK
+C1A=HAPPY
+
+T=Here's the g...
+W=BROK
+SKIPEND=1
+C1A=MOCK
+TEN=PC07B_SIN_WIN_POLICE
+
+#------------------------------------
+ID=PC07B_SIN_WIN2
+T=Don't move! Hands over your head!
+W=WES
+C1=WES
+C1A=ANGRY
+C2=BROK
+C2A=SURPRISED
+C4=SIN
+C4A=SURPRISED
+CONTEXT=Wes and police robots come crashing to arrest them
+
+T=Gulp!
+W=SIN
+TEN=PC07B_SIN_ARRESTED
+
+T=You too. You're both under arrest.
+W=WES
+
+T=What?! But...
+W=BROK
+C2A=CONFUSED
+
+T=Don't bother trying to use the gun. We've deactivated it.
+W=WES
+TEN=PC07B_BROK_ARRESTED
+
+T=How did you find us?
+W=SIN
+C2A=DISAPPOINTED
+C4A=DOWN
+
+T=Your detective friend here was behaving suspiciously. It was automatically recorded by the system.
+W=WES
+
+T=He lead us to you.
+W=WES
+
+T=We took the time to record your confessions behind the wall. That'll save us time!
+W=WES
+
+T=Sorry...
+W=BROK
+C2A=STUPID
+
+T=You're darn right to be sorry!
+W=WES
+
+T=This time I got you, Pork! Helping criminals is a federal infraction!
+W=WES
+C2A=SURPRISED
+
+T=The name's Brok, you disrespectful weasel!
+W=BROK
+C2A=ANGRY
+TEN=PC07B_TRUSTSIN_CHECK
+IT=1
+
+#------------------------------------
+ID=PC07B_TRUSTSIN_DENOUNCED
+T=And if you were eavesdropping, you should know I was going to denounce him!
+W=BROK
+C1=WES
+C1A=ANGRY
+C2=BROK
+C2A=ANGRY
+C4=SIN
+C4A=DOWN
+
+T=I know you. That's enough for me.
+W=WES
+
+T=Hey! What does that even mean?!
+W=BROK
+TEN=PC07B_SIN_WIN2B
+IT=1
+
+#------------------------------------
+ID=PC07B_SIN_WIN2B
+T=Whatever. 
+W=WES
+C1=WES
+C1A=ANGRY
+C2=BROK
+C2A=SURPRISED
+C4=SIN
+C4A=SURPRISED
+
+T=Come on, move! Both of you!
+W=WES
+
+T=(Sigh)
+W=SIN
+C4A=DOWN
+TEN=PC07B_SIN_WIN_FADEOUT
+
+
+#------------------------------------
+ID=PC07B_SIN_HIT1
+T=Argh!
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=SURPRISED
+CONTEXT=Player hits Sin
+TEN=PC07B_SIN_STANCE
+
+T=Are you crazy?! Is that how you do an investigation?!
+W=SIN
+C1A=SURPRISED
+C2A=ANGRY
+
+T=Erm... Oops! My bad!
+W=BROK
+TEN=PC07B_SIN_NORMAL
+
+#------------------------------------
+ID=PC07B_SIN_HIT2
+T=Ouch!!!
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=SURPRISED
+TEN=PC07B_SIN_STANCE
+
+T=Oh...! Err... I didn't mean for that to happen...
+W=BROK
+C1A=STUPID
+C2A=ANGRY
+
+T=...
+W=SIN
+TEN=PC07B_SIN_NORMAL
+
+#------------------------------------
+ID=PC07B_SIN_HIT3
+T=Argh! That's enough!
+W=SIN
+C1=BROK
+C1A=SURPRISED
+C2=SIN
+C2A=ANGRY
+TEB=PC07B_SIN_STANCE
+TEN=PC07B_SIN_ATTACKS
+
+
+#------------------------------------
+ID=PC07B_SIN_FIGHT1
+T=Won't you stay down?!
+BNAME=SIN
+BVOICE=SIN
+NB=1
+D=60
+CONTEXT=During fight
+
+#------------------------------------
+ID=PC07B_SIN_FIGHT2
+T=How many glasses do I have to throw?
+BNAME=SIN
+BVOICE=SIN
+NB=1
+D=90
+
+#------------------------------------
+ID=PC07B_SIN_GAMEOVER1
+T=Oh man... I... didn't...
+W=SIN
+A=DOWN
+CONTEXT=Player kills Sin and the opposite
+
+T=I'm sorry it had to come to this...
+W=SIN
+A=DOWN
+
+T=Why did you have to be such a muckraker?
+W=SIN
+TEN=PC07B_SIN_HIT_GAMEOVER
+
+
+#------------------------------------
+ID=PC07B_SIN_KILLED1
+T=What have I done... I've killed my client...!
+W=BROK
+A=HEARTBROKEN
+
+T=What's happening to me...?
+W=BROK
+A=DOWN
+
+T=I can't go on like this...
+W=BROK
+A=DISAPPOINTED
+TEN=PC07B_SIN_DEAD_GAMEOVER
+
+#------------------------------------
+#= SIN : Exit interrogation
+#------------------------------------
+ID=PC07B_INTERROGATION_EXIT_NOTENOUGH
+T=Stay here.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SIN
+C2A=NORMAL
+CONTEXT=Pause interrogation
+
+T=Huh...?
+W=SIN
+
+
+#------------------------------------
+#= SIN : Missing clues
+#------------------------------------
+ID=PC07B_MISSINGCLUE_SIN
+T=(I must have missed a clue in Sin's apartment... Better check around!)
+W=BROK
+A=WONDER
+MOOD=THINK
+CONTEXT=Missing clues hints
+
+#------------------------------------
+ID=PC07B_MISSINGCLUE_PILL
+T=(Hmm... That medicine analyzer at the pharmacy...)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_MISSINGCLUE_DRUMERSTREET
+T=(I should inspect the pharmacy more closely. Got a feeling I missed something there...)
+W=BROK
+A=READY
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_MISSINGCLUE_SECTOR56X
+T=(Got a feeling I haven't inspected Sector 56X enough...)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#------------------------------------
+ID=PC07B_MISSINGCLUE_SHAY
+T=(Shay might help me...)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#----------------------
+#= Looted
+#----------------------
+ID=PC07B_LOOTED1
+T=Oh my...! The whole place has been looted!
+W=BROK
+A=SURPRISED
+CONTEXT=Coming back in day 2
+
+T=Poor Sin...
+W=BROK
+A=DISAPPOINTED
+TEN=CLICKERS_BACK
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 01/08/2019
+###############################################
+
+
+#----------------------
+#= Walk on table
+#----------------------
+ID=PC07B_WALKTABLE1
+T=Erm... Detective?
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=SURPRISED
+CONTEXT=Walk on table
+
+T=What's wrong?
+W=BROK
+
+T=...
+W=SIN
+
+
+#----------------------
+#= Hit the wall
+#----------------------
+ID=PC07B_HITWALL1
+T=Stop it! You'll make it worse!
+W=SIN
+C2=SIN
+C2A=ANGRY
+NB=1
+D=60
+CONTEXT=Hit the wall
+
+#----------------------
+ID=PC07B_HITWALL2
+T=Are you listening?! Stop!
+W=SIN
+C2=SIN
+C2A=ANGRY
+NB=1
+D=60
+
+#----------------------
+ID=PC07B_HITWALL3
+T=Argh!!!
+W=SIN
+C2=SIN
+C2A=SURPRISED
+TEN=PC07B_WALL_DEATH_SHAKE
+
+T=No big deal...
+W=BROK
+C1=BROK
+C1A=HAPPY
+
+T=Woops!
+W=BROK
+C1A=SURPRISED
+TEE=PC07B_WALL_DEATH_SHAKE2
+
+#----------------------
+#= Hit the glasses
+#----------------------
+ID=PC07B_HITGLASSES1
+T=Hey, stop!
+W=SIN
+C2=SIN
+C2A=ANGRY
+NB=1
+D=90
+CONTEXT=Hit the glasses
+
+#----------------------
+ID=PC07B_HITGLASSES2
+T=I didn't call you to break my stuff!
+W=SIN
+C2=SIN
+C2A=ANGRY
+NB=1
+D=90
+
+#----------------------
+ID=PC07B_HITGLASSES3
+T=What is this magic? The more I break, the more there is!
+W=BROK
+A=HAPPY
+NB=1
+D=90
+
+#----------------------------------------------------
+ID=COOP_PC07B_SIN1
+T=I have ambiguous feelings about this guy...

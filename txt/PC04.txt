@@ -1,0 +1,1692 @@
+#-------------------------------
+#=SLUM OUTSIDE BROK SECTOR
+#-------------------------------
+
+#----------------------
+#= Arrive in room
+#----------------------
+ID=PC04_WELCOME1
+T=I remember this place.
+W=BROK
+A=THINK
+CONTEXT=Coming here for the first time
+
+T=Hasn't changed much since we were forced to leave.
+W=BROK
+A=DOWN
+TEN=CLICKERS_BACK
+
+#----------------------
+#= Fitness club
+#----------------------
+ID=PC04_FITNESSCLUB1
+T=Drumers work in offices, their rears on floating chairs. Others stay in bed all day...
+W=BROK
+A=MAYBE
+CONTEXT=Room interactions
+
+T=So they go in there regularly to keep a fit body.
+W=BROK
+A=MAYBE
+
+T=I don't need it! And... I couldn't afford it.
+W=BROK
+A=HAPPY
+
+#----------------------
+#= Fitness club reader
+#----------------------
+ID=PC04_FINGERPRINTREADER1
+T=Can't enter without the proper fingers!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+#= Store window
+#----------------------
+ID=PC04_STOREWINDOW1
+T=Tons of drugs on display. With insane prices...
+W=BROK
+A=THINK
+
+
+#----------------------
+#= Broken camera
+#----------------------
+ID=PC04_CAMERA1
+T=Just one of many surveillance cameras!
+W=BROK
+A=THINK
+
+T=Looks like it's disabled.
+W=BROK
+A=MEH
+
+#----------------------
+#= Fountain
+#----------------------
+ID=PC04_FOUNTAIN1
+T=A memorial fountain... "Autarchism day - 3026 A.R."
+W=BROK
+A=THINK
+
+T=Almost ten years ago. We used to be ruled by a giant democracy involving most countries of the world.
+W=BROK
+A=MAYBE
+
+T=But a deep economic crisis led to conflicts. Atlasia became independant and self-governed.
+W=BROK
+A=MAYBE
+CLUE=CLUE_DRUMERSTREET_STATUE
+
+
+#----------------------
+ID=PC04_FOUNTAIN2
+T=I'm not surprised to see this fountain here. Drumers profited from this situation... unlike us.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+ID=PC04_FOUNTAIN_PREDNORMAL
+T=There, it's wet. Just a few seconds...
+W=BROK
+A=THINK
+TEN=PC04_FOUNTAIN_PREDINFLATED_SOON
+
+#----------------------
+ID=PC04_FOUNTAIN_PREDINFLATED
+T=No use! It's already wet!
+W=BROK
+A=MEH
+
+#----------------------
+#= Pipe mail
+#----------------------
+ID=PC04_PIPEMAIL1
+T=A public Pipe-Mail.
+W=BROK
+A=THINK
+
+T=Similar to Pipe-Pills, but I can use it to send some physical goods directly to someone.
+W=BROK
+A=THINK
+
+T=It doubles-up as a secure identity check and transfer...
+W=BROK
+A=THINK
+
+T=Hello! Do you need my services?
+W=PIPEMAIL
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Maybe!
+W=BROK
+A=HAPPY
+TEN=PC04_PIPEMAIL_CHECKBILL
+IT=1
+
+#----------------------
+ID=PC04_PIPEMAIL1_DUEBILL
+T=You currently have overdue bills. Please send payment before... today.
+W=PIPEMAIL
+C1=BROK
+C1A=ANGRY
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Mmrph. Thanks for reminding me, tin can.
+W=BROK
+
+T=You're welcome!
+W=PIPEMAIL
+TEN=PC04_PIPEMAIL_CHOICE_INFO
+IT=1
+
+
+
+#----------------------
+ID=PC04_PIPEMAIL2
+T=Please remind me... What services do you offer?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Mail delivery. Unis transfer and bills payment. Goods dumping.
+W=PIPEMAIL
+
+T=What are you interested in?
+W=PIPEMAIL
+TEN=PC04_PIPEMAIL_CHOICE_INFO
+IT=1
+
+
+#----------------------
+ID=PC04_PIPEMAIL_GHERKIN
+T=This one doesn't deliver pills.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+
+T=Well, still gonna use it.
+W=BROK
+TEN=PC04_PIPEMAIL_CHOICE_INFO
+IT=1
+
+#----------------------
+ID=PC04_PIPEMAIL_TRAMPPRESCR
+T=Nope... This machine doesn't deliver pills.
+W=BROK
+A=MEH
+
+T=I'll have to enter the pharmacy for that!
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC04_PIPEMAIL_ASK_MAIL
+T=I'd like to send mail. How does that work?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=This apparatus is designed to take any form of material, physical or semi-physical goods such as digital or encrypted transmissions from permitted citizens of the district 6-Y.
+W=PIPEMAIL
+
+T=This sending method has been patented by Tri-Corp under the ID G06F13/00, following the regulations described in article 46B of the constitution related to the usage of electro-mechanical devices and private communications.
+W=PIPEMAIL
+
+T=What gibberish.
+W=BROK
+C1A=ANGRY
+
+T=Switching to I.D.I.O.T. mode...
+W=PIPEMAIL
+
+T=Put your mail inside me. Quick and simple!
+W=PIPEMAIL
+
+T=I prefer that.
+W=BROK
+C1A=ALRIGHT
+TEN=PC04_PIPEMAIL_CHOICE_INFO
+IT=1
+
+
+#----------------------
+#= Pipemail - Send items
+#----------------------
+ID=PC04_PIPEMAIL_SEND1
+T=I want to send this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Scanning in progress...
+W=PIPEMAIL
+
+T=Object accepted. Identify the recipient.
+W=PIPEMAIL
+
+T=Erm... If I say "nobody," does that count?
+W=BROK
+A=WONDER
+
+T=No recipient identified. Please take back your item.
+W=PIPEMAIL
+
+
+#----------------------
+ID=PC04_PIPEMAIL_SEND2
+
+T=Scanning in progress...
+W=PIPEMAIL
+C1=BROK
+C1A=THINK
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Object accepted. Please identify the recipient.
+W=PIPEMAIL
+
+T=Let me think a minute...
+W=BROK
+A=WONDER
+
+
+#----------------------
+#= Pipemail - Pay bills
+#----------------------
+ID=PC04_PIPEMAIL_TRANSFER_NOTBILL
+T=I'd like to pay this bill!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Scanning in progress...
+W=PIPEMAIL
+
+T=Warning. No signature found. This isn't an accepted form of bill.
+W=PIPEMAIL
+C1A=ANGRY
+
+T=Please take back your item.
+W=PIPEMAIL
+
+#----------------------
+ID=PC04_PIPEMAIL_TRANSFER_BILL
+T=Take money from my account to pay this bill.
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Scanning in progress...
+W=PIPEMAIL
+
+T=Bill detected. The due amount is {amount} Unis.
+W=PIPEMAIL
+COMM=Amount can vary, do not say the last sentence
+TEN=PC04_PIPEMAIL_TRANSFER_CHECK
+
+#----------------------
+ID=PC04_PIPEMAIL_TRANSFER_BILLNOTENOUGH
+T=Insufficient credits in your account.
+W=PIPEMAIL
+C1=BROK
+C1A=ANGRY
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=This failed attempt has been reported to the appropriate creditor.
+W=PIPEMAIL
+
+T=Hey!!! Ya didn't need to do that!
+W=BROK
+C1A=SURPRISED
+
+T=I'll get the dough. Just gimme some time.
+W=BROK
+C1A=ANGRY
+
+T=Please retrieve your bill.
+W=PIPEMAIL
+
+
+#----------------------
+ID=PC04_PIPEMAIL_TRANSFER_BILLA
+T=Sufficient credits. Payment complete.
+W=PIPEMAIL
+C1=BROK
+C1A=THINK
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Yeah...!
+W=BROK
+C1A=HAPPY
+
+T=So... What did I win...?
+W=BROK
+
+T=Thank you, and goodbye.
+W=PIPEMAIL
+
+T=Suddenly I feel empty.
+W=BROK
+C1A=DOWN
+
+
+#----------------------
+ID=PC04_PIPEMAIL_TRANSFER_BILLB
+T=Sufficient credits. Payment complete.
+W=PIPEMAIL
+C1=BROK
+C1A=THINK
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Hopefully this is the last one...
+W=BROK
+
+T=Maybe I'm stupid for paying. What's the worst that could happen...?
+W=BROK
+
+
+#----------------------
+ID=PC04_PIPEMAIL_ASK_TRANSFER
+T=How do I pay my bills?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=This apparatus allows secure Unis transfer by checking the identity of the sender.
+W=PIPEMAIL
+
+T=Just insert the original bill inside the apparatus to begin the transfer process.
+W=PIPEMAIL
+C1A=THINK
+
+T=Beforehand, please make sure to have sufficient Unis in your account.
+W=PIPEMAIL
+TEN=PC04_PIPEMAIL_CHOICE_INFO
+IT=1
+
+
+
+#----------------------
+#= Pipemail - Get rid
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY1
+T=Get rid of that thing.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Scanning in progress...
+W=PIPEMAIL
+
+T=Dumping process started.
+W=PIPEMAIL
+TEN=PC04_PIPEMAIL_DESTROYPROCESS
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROYB1
+T=...Not sure this was such a good idea.
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY2
+T=I don't need this. Throw it away!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Scanning in progress...
+W=PIPEMAIL
+
+T=Dumping process started.
+W=PIPEMAIL
+TEN=PC04_PIPEMAIL_DESTROYPROCESS
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROYB2
+T=Erm... What did I accomplish by doing that?
+W=BROK
+A=THINK
+
+T=Oops.
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_MINE
+T=I hope it worked...
+W=BROK
+A=MEH
+
+T=Only one way to find out!
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC04_PIPEMAIL_ASK_DESTROY
+T=So you can discard items?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Yes. Insert your goods, then ask me to throw it away.
+W=PIPEMAIL
+
+T=Warning. The act of dumping goods is permanent.
+W=PIPEMAIL
+
+T=According to regulation 456D of the constitution, agreeing to this service disables your right to sue us, the service, the apparatus, the Government or any and all third parties involved in its conception.
+W=PIPEMAIL
+
+T=No complaint or damage caused to the apparatus shall be deemed acceptable.
+W=PIPEMAIL
+
+T=Enough. I get your point.
+W=BROK
+C1A=OPPOSITE
+
+T=So... I should start by inserting an item.
+W=BROK
+C1A=MAYBE
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_MAGNIFY
+T=Nah... All good detectives need a magnifying glass!
+W=BROK
+A=HAPPY
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_PRED
+T=It's too cute to get rid of it!
+W=BROK
+A=READY
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_CATFUR
+T=I can't... It's all sticky! It's all over me!
+W=BROK
+A=CONFUSED
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_STICK
+T=It belonged to Grandpa... I can't.
+W=BROK
+A=DISAPPOINTED
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_PENDANT
+T=Lia's pendant... I can't do that.
+W=BROK
+A=DISAPPOINTED
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_APARTMENTKEY
+T=No way! I couldn't get back home!
+W=BROK
+A=SURPRISED
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_ATTEMPTED
+T=Better take this back.
+W=BROK
+A=THINK
+
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_PREDINFLATED
+T=Too late... It's already too big to fit in the pipe!
+W=BROK
+A=SURPRISED
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_NOMORE
+T=It's time to be responsible and stop throwing my belongings away.
+W=BROK
+A=STUPID
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+#----------------------
+ID=PC04_PIPEMAIL_ITEMDESTROY_MINEBROKEN
+T=Good idea but that mine won't activate... Any way I could fix it?
+W=BROK
+A=WONDER
+TEN=PC04_PIPEMAIL_GETITEMBACK_AFTERATTEMPT
+
+
+#----------------------
+ID=PC04_PIPEMAIL_PUTBIG
+T=Wow... It fits!
+W=BROK
+A=SURPRISED
+
+T=Guess I'll need to be more clever if I wanna mess it up!
+W=BROK
+A=HAPPY
+TEN=PC04_PIPEMAIL_CHOICE_ITEM
+
+#----------------------
+#= Pipemail - Leaving
+#----------------------
+
+ID=PC04_PIPEMAIL_FORGOTITEM
+T=Oops! I think I left somethin' in the Pipe-Mail.
+W=BROK
+A=SURPRISED
+
+T=Better take it back before someone steals it.
+W=BROK
+A=OPPOSITE
+TEN=PC04_TO_MAP_BACK
+
+
+
+
+
+#----------------------
+#= Vending machine
+#----------------------
+ID=PC04_VENDINGMACHINE1
+T=Should I buy some snacks?
+W=BROK
+A=MAYBE
+TEN=PC04_VENDINGMACHINE_SHOW
+
+#----------------------
+ID=PC04_VENDINGMACHINE_AD
+T=Wait... What did I just buy?
+W=BROK
+A=WONDER
+
+T=Oh! It's some advertisement!
+W=BROK
+A=HAPPY
+TEN=PC04_VENDINGMACHINE_GETAD
+
+
+#----------------------
+ID=PC04_VENDINGMACHINE_AD2
+T=...Can I get my money back?
+W=BROK
+A=DOWN
+TEN=ACTIVATE_CLICKERS
+
+
+#----------------------
+#= Fence
+#----------------------
+ID=PC04_FENCE1
+T=Looks like the alley Sin mentioned!
+W=BROK
+A=THINK
+
+T=But it's blocked by a power barrier.
+W=BROK
+A=OPPOSITE
+
+T="Access forbidden by the Triangle."
+W=BROK
+A=THINK
+
+T=The Triangle...?
+W=BROK
+A=WONDER
+
+T=Our Government. Puny human.
+W=TRIBOTCOP
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Oh, yeah...
+W=BROK
+A=HAPPY
+CLUE=CLUE_SECTOR56X_TRIANGLE
+
+
+#----------------------
+ID=PC04_FENCE2
+T=...
+W=BROK
+A=CONFUSED
+SOUND=electricity
+TEN=PC04_FENCE2B
+
+#----------------------
+ID=PC04_FENCE2B
+T=The individual should not touch the barrier.
+W=TRIBOTCOP
+C1=BROK
+C1A=ANGRY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=I need to go through there!
+W=BROK
+
+T=Impossible. This passage is off limits. Citizen, stand back.
+W=TRIBOTCOP
+
+T=Great...
+W=BROK
+C1A=OPPOSITE
+
+#----------------------
+ID=PC04_FENCE3
+T=I can't get through. And I don't see any other way to access the alley.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC04_FENCE_AWAY
+T=No good... I can't open it!
+W=BROK
+A=ANGRY
+
+T=What controls this barrier?
+W=BROK
+A=OPPOSITE
+
+
+#----------------------
+#= Barrier device
+#----------------------
+ID=PC04_BARRIERDEVICE1
+T=Ten to one this thing controls the barrier!
+W=BROK
+A=MOCK
+
+T=No button. Just some kind of key-lock...
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC04_BARRIERDEVICE_OFF
+T=The barrier is off.
+W=BROK
+A=HAPPY
+COMM=After we've switched it off.
+
+#----------------------
+ID=PC04_BARRIERDEVICE_APARTMENTKEY
+T=Hmm...
+W=BROK
+A=THINK
+
+T=Darn... My house key doesn't fit. Who would have thought?
+W=BROK
+A=THINK
+
+#----------------------
+#= Tribot cop
+#----------------------
+ID=PC04_TRIBOTCOP_WELCOME1
+T=Citizen, stand back. Access restricted.
+W=TRIBOTCOP
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOTCOP
+C2A=NORMAL
+CONTEXT=Talking to the Tribot cop blocking access to the alley
+
+T=Why? What happened?
+W=BROK
+C1A=THINK
+
+T=This information is confidential. The individual needs to make a new query or disperse.
+W=TRIBOTCOP
+
+T=Alright... Then...
+W=BROK
+C1A=WONDER
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+#----------------------
+ID=PC04_TRIBOTCOP_WELCOME2
+T=Citizen, stand back. Access restricted.
+W=TRIBOTCOP
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Your vocabulary seems limited.
+W=BROK
+C1A=MEH
+
+T=Incorrect. Our data brain connects directly to the Triangle Share Source, which contains petabytes of words in every language.
+W=TRIBOTCOP
+
+T=We just adapt to our interlocutor for easier understanding.
+W=TRIBOTCOP
+
+T=Err.. Hey!
+W=BROK
+C1A=CONFUSED
+
+T=The individual needs to make a query or disperse.
+W=TRIBOTCOP
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_WELCOME3
+T=Citizen, stand back. Access restricted.
+W=TRIBOTCOP
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_THINK1
+T=I don't really like Tribot cops. They're creepy.
+W=BROK
+A=ANGRY
+
+T=You never know what they're going to decide with all those wires and thingamabobs inside.
+W=BROK
+A=ANGRY
+
+T=Citizens need to keep their insane thoughts to themselves.
+W=TRIBOTCOP
+C2=TRIBOTCOP
+C2A=NORMAL
+C1A=CONFUSED
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_GUARD1
+T=What happened here?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=This information is confidential. Please make another qu...
+W=TRIBOTCOP
+SKIPEND=1
+
+T=Oh, come on! I'm a detective! You can tell me.
+W=BROK
+C1A=HAPPY
+
+T=Scanning in progress... Please wait...
+W=TRIBOTCOP
+
+T=Database check in progress...
+W=TRIBOTCOP
+
+T=Record not found.
+W=TRIBOTCOP
+
+T=Low level user privileges. Access denied.
+W=TRIBOTCOP
+
+T=Someday I'll need to get myself a real P.I. license.
+W=BROK
+C1A=DOWN
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_GUARD2
+T=I guess something happened in the pharmacy?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=We cannot confirm or deny such information based on rumors, even when they're true. Please make another query or be gone.
+W=TRIBOTCOP
+
+T=Hmm. So you're guarding it until the police examine the situation. 
+W=BROK
+C1A=ANGRY
+
+T=Forget the pharmacy. Why can't I access the alley?
+W=BROK
+
+T=Regulations stipulate that surrounding areas should be closed to the public, regardless of involvement.
+W=TRIBOTCOP
+
+T=Just my luck.
+W=BROK
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+#----------------------
+ID=PC04_TRIBOTCOP_GUARD3
+T=Oh, come on! Let me take a look-see in the alley!
+W=BROK
+C1=BROK
+C1A=READY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=This will be our little secret as best buddies. Nobody will know!
+W=BROK
+
+T=Our database does not contain a group named "Best Buddies." Did the individual mean "Best Recipes"?
+W=TRIBOTCOP
+
+T=Erm... Nope, but I don't mind getting free recipes!
+W=BROK
+C1A=HAPPY
+
+T=Request denied.
+W=TRIBOTCOP
+C1A=ANGRY
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_HIMSELF1
+T=So! Tell me, rubber buddy! How ya doin'?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Moderately well. Our priority assignment is to guard the Pipe-Mail, but our battery level is running low.
+W=TRIBOTCOP
+
+T=The Pipe-Mail? You mean the tube thingy over there to send mail?
+W=BROK
+C1A=MOCK
+
+T=Correct. Irresponsible citizens have been misusing it lately, so it needs constant guarding.
+W=TRIBOTCOP
+
+T=I would have thought whatever happened at the pharmacy would be higher priority than some metal junk.
+W=BROK
+C1A=MEH
+
+T=This is expensive technology. Wrecking it will no longer be tolerated.
+W=TRIBOTCOP
+
+T=Scanning in progress...
+W=TRIBOTCOP
+
+T=Hey! Whatcha doin'?
+W=BROK
+C1A=FURIOUS
+
+T=Analysis completed. Probability of causing wreckage is 8%, which is under the tolerance threshold.
+W=TRIBOTCOP
+
+T=Who do you take me for? I wouldn't wreck your Pipe-Thingies without a reason!
+W=BROK
+C1A=ANGRY
+
+T=Good. In extreme situations, the death penalty may apply.
+W=TRIBOTCOP
+
+T=Are you serious?
+W=BROK
+C1A=CONFUSED
+
+T=We Tribots do not have the ability to lie. Most of the time.  
+W=TRIBOTCOP
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_HIMSELF2
+T=How long will it take for you to charge up?
+W=BROK
+C1=BROK
+C1A=MEH
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=We are extremely powerful and thus we require a lot of power.
+W=TRIBOTCOP
+
+T=Unfortunate events led to my battery being depleted and damaged.
+W=TRIBOTCOP
+
+T=A full recharge will take eighteen years, five days, three hours, nine minutes and forty-three seconds.
+W=TRIBOTCOP
+
+T=Eighteen years?! Yeah, you're damaged all right...
+W=BROK
+C1A=SURPRISED
+
+T=But you can't watch over the Pipe-Mail while recharging, right?
+W=BROK
+C1A=MOCK
+
+T=Incorrect. A notification will be sent to my operating system in case an individual attempts to mess with it.
+W=TRIBOTCOP
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_DEVICE1
+T=I'm curious about this barrier. How is it generated?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=We put a barrier device on the closest wall. This automatically extends the barrier to the optimal position and size.
+W=TRIBOTCOP
+COMM=Should be the name you put in "PC_BARRIERDEVICE"
+T=Pretty cool!
+W=BROK
+C1A=HAPPY
+
+T=I'm sorry to contradict this individual. It's not cool, it's hot.
+W=TRIBOTCOP
+
+T=The barrier is a low-profile apparatus using light as the primary source of energy.
+W=TRIBOTCOP
+
+T=I see... So it's not connected to the power network.
+W=BROK
+C1A=WONDER
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+#----------------------
+ID=PC04_TRIBOTCOP_DEVICE2
+T=Why is there a keylock? Shouldn't it be secured digitally?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Statistics indicate that physical access has a much higher violability.
+W=TRIBOTCOP
+
+T=Despite this, our silly human-pretending chief prefers physical access.
+W=TRIBOTCOP
+COMM="human pretending" is for real but players won't notice it at this point... See the end of game PC20 reveal with Wes.
+
+T=You mean... The chief of police?
+W=BROK
+
+T=They say it's easier to carry real keys instead of a numeric code.
+W=TRIBOTCOP
+
+T=I agree.
+W=BROK
+C1A=ALRIGHT
+
+T=Surprise factor is zero. Humans don't make any sense.
+W=TRIBOTCOP
+C1A=ANGRY
+TEN=PC04_TRIBOTCOP_CHOICES
+IT=1
+
+#----------------------
+ID=PC04_TRIBOTCOP_EXIT1
+T=Good day.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRIBOTCOP
+C2A=NORMAL
+T=The day is always good! Please be gone.
+W=TRIBOTCOP
+
+
+#----------------------
+ID=PC04_TRIBOTCOP_EXIT2
+T=Bye bye, tin can.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=This surname is not appropriate. Please call us "can."
+W=TRIBOTCOP
+
+
+#----------------------
+#=    INVENTORY
+#----------------------
+
+ID=PC04_TRIBOTCOP_INV_DEFAULT1
+T=This item does not seem legitimate. We need to confiscate it.
+W=TRIBOTCOP
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Hey! No way!
+W=BROK
+C1A=FURIOUS
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=PC04_TRIBOTCOP_INV_DEFAULT2
+T=Erm... Look at this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=We have not been programmed to react to redneck doohickeys.
+W=TRIBOTCOP
+C1A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=PC04_TRIBOTCOP_INV_STICK
+T=Threatening an agent is a first degree offense. Please confirm your act of violence.
+W=TRIBOTCOP
+C1=BROK
+C1A=ANGRY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=I'm not! Just joking!
+W=BROK
+C1A=CONFUSED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=PC04_TRIBOTCOP_INV_PREDNORMAL
+T=It's cute, isn't it?
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=We're cute. This isn't.
+W=TRIBOTCOP
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=PC04_TRIBOTCOP_INV_TRAMPPRESCR
+T=By any chance... How can I get medicine for this prescription?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=In the pharmacy.
+W=TRIBOTCOP
+
+T=The one you're blocking, huh...?
+W=BROK
+
+T=Exactly.
+W=TRIBOTCOP
+
+T=Hmmph...
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+#    FIGHT
+#----------------------
+ID=PC04_TRIBOTCOP_HIT1
+T=ALERT! VIOLENCE ON OFFICER!
+W=TRIBOTCOP
+C1=BROK
+C1A=FURIOUS
+C2=TRIBOTCOP
+C2A=NORMAL
+TEN=PC04_ROBOT_HITNEXT
+
+#----------------------
+ID=PC04_TRIBOTKEY1
+T=The Tribot cop has left some kind of key...?
+W=BROK
+A=WONDER
+
+T=Oh! I know!
+W=BROK
+A=HAPPY
+TEN=PC04_TRIBOTKEY_NEXT
+
+
+#----------------------
+#    Enter pharmacy
+#----------------------
+ID=PC04_PHARMACY_TRIBOTCOP1
+T=Access is forbidden. Please stand back.
+W=TRIBOTCOP
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=But... I need to buy some pills!
+W=BROK
+C1A=SURPRISED
+
+T=Another pharmacy is requested. Does the individual need me to locate the closest one?
+W=TRIBOTCOP
+
+T=No, thank you...
+W=BROK
+
+#----------------------
+ID=PC04_PHARMACY_TRIBOTCOP2
+T=Please stand back!
+W=TRIBOTCOP
+C1=BROK
+C1A=ANGRY
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Mrrph. No point trying to enter the pharmacy while the tin-can is guarding it.
+W=BROK
+
+#----------------------
+ID=PC04_PHARMACY_AWAY
+T=I'm not interested in the pharmacy right now!
+W=BROK
+A=OPPOSITE
+
+T=There's no window or anything to access the back alley from there...
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC04_PHARMACY_ENTER
+T=Should I enter? Seems like there's an ongoing police investigation...
+W=BROK
+A=THINK
+
+T=Oh, well. I'll just take a look-see!
+W=BROK
+A=ALRIGHT
+TEN=PC04_PHARMACY
+
+#----------------------
+#= Pipemail broken
+#----------------------
+ID=PC04_TRIBOTCOP_PIPEMAILBROKEN1
+T=Emergency! Degradation attempt!
+W=TRIBOTCOP
+C1=TRIBOTCOP
+C1A=NORMAL
+CONTEXT=Brok tricks the Tribot cop
+TEN=PC04_FOUNTAIN_PREDINFLATED_PIPE3
+
+#----------------------
+ID=PC04_TRIBOTCOP_PIPEMAILBROKEN2
+T=Emergency! Emergency!
+W=TRIBOTCOP
+C1=TRIBOTCOP
+C1A=NORMAL
+TEN=PC04_FOUNTAIN_PREDINFLATED_PIPE3
+
+
+
+#----------------------------------
+#= Pipemail checked by Tribot cop
+#----------------------------------
+ID=PC04_PIPEMAIL_TRIBOTCOP1
+T=Analysis in progress...
+NB=1
+D=180
+BNAME=TRIBOTCOP
+BVOICE=TRIBOT
+
+#----------------------------------
+ID=PC04_PIPEMAIL_TRIBOTCOP1B
+T=Analysis completed. Foreign object in the Pipe-Mail system.
+TEN=PC04_PIPEMAIL_TRIBOTCOP1B_REMOVE
+BNAME=TRIBOTCOP
+BVOICE=TRIBOT
+
+T=Problem solved.
+TEN=PC04_FOUNTAIN_PREDINFLATED_PIPE7
+
+
+#----------------------
+#= Power socket
+#----------------------
+ID=PC04_POWERSOCKET1
+T=A power socket. Looks like the Tribot is recharging here.
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+#----------------------
+ID=PC04_POWERSOCKET_AFTER1
+T=I will resist the temptation to put my fingers in it.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC04_POWERSOCKET_STICK
+T=The stick is too large to fit, and I don't think hitting it will have any effect.
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC04_POWERSOCKET_BACK
+T=Alert! Dangerous individual detected!
+W=TRIBOTCOP
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=Erm... Dangerous? Me...? I was just...
+W=BROK
+C1A=HAPPY
+SKIPEND=1
+
+T=This individual needs to stop or they will be arrested.
+W=TRIBOTCOP
+C1A=CONFUSED
+
+T=Okey-dokey!
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=PC04_POWERSOCKET_APARTMENTKEY
+T=There! Let's see what happens...
+W=BROK
+A=READY
+TEN=PC04_FOUNTAIN_PREDINFLATED_PIPE6_FORCE
+
+
+#----------------------
+ID=PC04_POWERSOCKET_APARTMENTKEY_DONE
+T=Already done!
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC04_POWERSOCKET_OTHERS
+T=Darn... This is too large to tamper with it.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC04_POWERSOCKET_RUNNINGOUT
+T=Warning. No energy coming from the socket. 
+W=TRIBOTCOP
+A=NORMAL
+
+T=Power is running low. Activating power saving mode...
+W=TRIBOTCOP
+
+T=...
+W=TRIBOTCOP
+
+T=Activation failed...
+W=TRIBOTCOP
+
+T=Need to find... energy source...
+W=TRIBOTCOP
+TEN=PC04_POWER_RUNNINGOUT2
+
+#----------------------
+ID=PC04_POWERSOCKET_RUNNINGOUTB
+T=And he's out.
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+#= Locked pharmacy door
+#----------------------
+ID=PC04_TO_PC04C_LOCKED1
+T=Closed?!
+W=BROK
+A=SURPRISED
+CONTEXT=Day 3 - we can't enter the pharmacy anymore without entering a code
+
+T=Just my luck... What's going on?
+W=BROK
+A=STUPID
+
+T=Hmm... Looks like there's a lock on the side...
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC04_CODEINPUT1
+T=That's new!
+W=BROK
+A=THINK
+TEN=PC04_CODEINPUT_CLOSEUP
+
+#----------------------
+ID=PC04_CODEINPUT_CLOSEUP1
+T="Please input your citizen certificate."
+W=BROK
+A=THINK
+
+T=Do I even have one...?
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC04_CODEINPUT_NO1
+T=Nope...
+W=BROK
+A=STUPID
+
+#----------------------
+ID=PC04_CODEINPUT_NO2
+T=Wrong code...
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC04_CODEINPUT_NO3
+T=I made a mistake...
+W=BROK
+A=DISAPPOINTED
+
+#----------------------
+ID=PC04_CODEINPUT_OKAY
+T=Unlocked!
+W=BROK
+A=ALRIGHT
+
+
+
+#----------------------
+ID=PC04_CODEINPUT_DONE
+T=I'm done with this.
+W=BROK
+A=MOCK
+
+#----------------------
+ID=PC04_CODEINPUT_TOOMANY1
+T=Three tries remaining until lockout.
+BVOICESP=VARIOUS
+
+T=What?!
+W=BROK
+A=SURPRISED
+
+T=Maybe I should stop going through trial and error before it's too late...
+W=BROK
+A=WORRIED
+
+#----------------------
+ID=PC04_CODEINPUT_TOOMANY2
+T=Lockout. You're not a Dome citizen.
+BVOICESP=VARIOUS
+
+T=Oh gosh...
+W=BROK
+A=WORRIED
+#TODO Bring robots fight!
+
+
+#----------------------
+ID=PC04_CODEINPUT_TOOLATE
+T=Too late... It's locked up.
+W=BROK
+A=DISAPPOINTED
+
+
+#----------------------
+#= Material
+#----------------------
+ID=PC04_MATERIAL1
+T=Something's stuck on the grid.
+W=BROK
+A=MAYBE
+CONTEXT=Shay's material from this room
+
+T=Wait... Is the radar reacting to...
+W=BROK
+A=WONDER
+
+T=This...?!
+W=BROK
+A=THINK
+TEN=PC04_MATERIAL_GET
+
+#----------------------
+ID=PC04_MATERIAL1B
+T=I wasn't expecting to look for a cake... literally! I guess Shay's just hungry...
+W=BROK
+A=COCKY
+
+T=It still looks good. Drumers are such big wasters.
+W=BROK
+A=ALRIGHT
+
+T=...
+W=BROK
+A=MAYBE
+
+T=Must... resist... can't... eat...!
+W=BROK
+A=READY
+
+
+#----------------------
+#= Residential door
+#----------------------
+ID=PC04_ACCESS1
+T=A bridge to the residential area...
+W=BROK
+A=ALRIGHT
+CONTEXT=More room interactions
+
+T=Got no business there... and I might not be allowed anyway.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC04_ACCESS2
+T=I used to go through there everyday... This feels like another life now.
+W=BROK
+A=DOWN
+
+#----------------------
+#= Garbage collector
+#----------------------
+ID=PC04_GARBAGE1
+T=Just your high tech Drumer garbage collector.
+W=BROK
+A=ALRIGHT
+
+T=Why bother? With all the cleaning bots around...
+W=BROK
+A=WONDER
+
+T=Guess it's only for them.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC04_GARBAGE2
+T=Tempting... But I got into a little mishap with one of these earlier.
+W=BROK
+A=MAYBE
+
+T=Let's just say getting sucked into it isn't a pleasant experience!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+#TODO Implement!
+ID=PC04_GARBAGE_MAGNIFY
+T=Over that dark mountain of rubbish... ?
+W=BROK
+A=WONDER
+
+T=Yup... An ad!
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC04_GARBAGE_OTHERS
+T=If I wanna toss anything, there's the Pipe-Mail over there.
+W=BROK
+A=MOCK
+
+
+#----------------------
+#= With Gherkin
+#----------------------
+ID=PC04_GHERKIN_INIT1
+T=What are we doing here...?
+W=GHERKIN
+C1=BROK
+C1A=WONDER
+C2=GHERKIN
+C2A=WORRIED
+CONTEXT=Going to this room with Dr. Gherkin
+
+T=Well... You're following me?
+W=BROK
+
+T=Shouldn't we fix the Pipe-Pills?
+W=GHERKIN
+C2A=NORMAL
+
+T=Oh... That's right.
+W=BROK
+C1A=MAYBE
+
+#----------------------
+ID=PC04_TO_PC04B_GHERKIN
+T=...
+W=GHERKIN
+C1=BROK
+C1A=WONDER
+C2=GHERKIN
+C2A=WORRIED
+
+T=What's wrong?
+W=BROK
+
+T=I... refuse to go over there...
+W=GHERKIN
+
+T=It's just a dark alley. We're still in the Drums!
+W=BROK
+C1A=ALRIGHT
+
+T=But... it's scary!
+W=GHERKIN
+
+T=Okay... You win.
+W=BROK
+C1A=TIRED
+
+#----------------------
+ID=PC04_GHERKIN_ACCESS
+T=Can you access this area, doc?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=GHERKIN
+C2A=NORMAL
+
+T=Of course! But...
+W=GHERKIN
+C1A=HAPPY
+
+T=Yeah, I know. Not the right time.
+W=BROK
+
+T=I'm just curious...
+W=BROK
+
+T=Save this for later! The fate of the Slums may depend on us!
+W=GHERKIN
+C1A=ANGRY
+
+###############################################
+# PROOFREAD - illuminati1556 - 21/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 05/09/2019
+# EXPRESSIONS - CarpeAdam - 06/09/2019
+###############################################
+
+#-------------------------------
+#= Hit the vending machines
+#-------------------------------
+ID=PC04_VENDING_DRONES
+T=Damaging public belongings is strictly forbidden
+BVOICE=VARIOUS
+CONTEXT=Hit various stuff
+TEN=PC04_VENDINGMACHINE_HITDIALOG2
+
+
+#-------------------------------
+ID=PC04_VENDING_DESTROYED
+T=Jackpot!
+W=BROK
+A=ALRIGHT
+TEN=PC04_VENDING_DESTROYED_GET
+
+#----------------------
+ID=PC04_HIT_PIPEMAIL
+T=Emergency! Degradation attempt from silly human!
+W=TRIBOTCOP
+A=NORMAL
+
+T=Calling drones!
+W=TRIBOTCOP
+A=NORMAL
+TEN=PC04_VENDINGMACHINE_HITDIALOG
+
+
+#----------------------
+ID=PC04_GAMEOVER_TRIBOTCOP
+T=Silly human eliminated.
+W=TRIBOTCOP
+A=NORMAL
+
+T=Now, some autocongratulation.
+W=TRIBOTCOP
+
+T=Good job. We are great.
+W=TRIBOTCOP
+TEN=PC04_ROBOT_FIGHT_GAMEOVER_DO
+
+
+
+
+#----------------------
+ID=PC04_HOLOGRAM1
+T="Be nice to each other"
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC04_AD_TRASH
+T=Darn! I can't reach it with my fingers!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC04_AD_TRASHGOT
+T=There ya go!
+W=BROK
+A=ALRIGHT
+TEN=PC04_TRASH_ADGET

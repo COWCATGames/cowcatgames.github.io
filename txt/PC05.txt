@@ -1,0 +1,167 @@
+#-------------------------------
+#=Sewers entrance
+#-------------------------------
+
+
+#----------------------
+#= AD rathole
+#----------------------
+ID=PC05_RATHOLE_AD
+T=I've heard of insects digging small holes like this.
+W=BROK
+A=WONDER
+TEN=PC05_RATHOLE_CHOICE
+CONTEXT=Room interactions
+
+#----------------------
+ID=PC05_RATHOLE_YES
+T=I'm afraid I'm gonna regret this, but...
+W=BROK
+A=ANGRY
+
+T=Mrph...
+W=BROK
+A=ANGRY
+
+T=Now that's unexpected. I've found an ad!
+W=BROK
+A=HAPPY
+TEN=PC05_RATHOLE_AD_TAKE
+
+#----------------------
+ID=PC05_RATHOLE_EMPTY
+T=It's empty now.
+W=BROK
+A=THINK
+
+#----------------------
+#= AD wall
+#----------------------
+ID=PC05_ADWALL
+T=Ah-ha! There's something inside!
+W=BROK
+A=ALRIGHT
+TEN=PC05_WALL_AD_TAKE
+
+
+
+#----------------------
+#= Newspaper
+#----------------------
+ID=PC05_NEWSPAPER1
+T=Hey, I recognize this! I think it's called... newspaper?
+W=BROK
+A=WONDER
+
+T=These haven't been produced for years. How is it still intact? Especially near chemicals!
+W=BROK
+A=THINK
+
+T=Or... Maybe they're the reason it's still intact.
+W=BROK
+A=ALRIGHT
+
+T=In any case, better not touch it...
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC05_NEWSPAPER2
+T="Uncertainty over the candidates' competence for the upcoming elections"
+W=BROK
+A=THINK
+
+T=The date is erased but this seems to be pre-Autarchism Day news.
+W=BROK
+A=THINK
+
+#----------------------
+#= Chemicals
+#----------------------
+ID=PC05_CHEMICALS1
+T=Whoa... Must be products to destroy all rejects!
+W=BROK
+A=CONFUSED
+
+T=I probably shouldn't take my bath here.
+W=BROK
+A=WORRIED
+
+
+#----------------------
+#= Handkerchief
+#----------------------
+ID=PC05_HANDKERCHIEF1
+T=Let's see...
+W=BROK
+A=READY
+
+T=Yup. That's definitely Sin's.
+W=BROK
+A=MOCK
+TEN=PC05_HANDKERCHIEF_TAKE
+
+#----------------------
+ID=PC05_HANDKERCHIEF1B
+T=If the handkerchief's here, I bet the gun isn't too far either!
+W=BROK
+A=THINK
+
+
+
+#----------------------
+#= Marks
+#----------------------
+ID=PC05_MARKS1
+T=Some heavy marks here... Starting right next to the handkerchief location.
+W=BROK
+A=THINK
+
+T=And if we consider it was raining last night, just like every night in this area...
+W=BROK
+
+T=No doubt about it. An object fell here and slowly drained further.
+W=BROK
+
+T=I bet this is what I'm looking for!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC05_MARKS2
+T=Let's follow this trail and see where it leads!
+W=BROK
+A=MOCK
+
+
+#----------------------------
+#= Barrier until explored
+#----------------------------
+ID=PC05_PC05B_NOTYET
+T=I'd better explore this area before going any further!
+W=BROK
+A=WONDER
+TEN=PC05_TO_PC05B_MOVEOUT
+
+#----------------------------
+#= Fall down manhole
+#----------------------------
+ID=PC05_MANHOLE_FALL1
+T=...
+W=BROK
+A=CONFUSED
+CONTEXT=Brok falls down the manhole on his butt
+
+T=Ow ow ow!
+W=BROK
+A=STUPID
+
+T=That worked... More or less.
+W=BROK
+A=STUPID
+TEN=PC05_MANHOLE_FALLBACK
+
+###############################################
+# PROOFREAD - illuminati1556 - 21/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+###############################################

@@ -1,0 +1,1437 @@
+#-------------------------------
+#=LAB HALL
+#-------------------------------
+
+#----- Interactions --------
+PC_DRHUSHROOM=Dr. Hushs Zimmer
+PC_DRMINKROOM=Dr. Minks Zimmer
+PC_RESTROOM=Toilette
+PC_MONITORING=Türüberwachungsvorrichtung
+PC_LEFTROOM=Linkes Zimmer
+PC_MIDDLEROOM=Mittleres Zimmer
+PC_RIGHTROOM=Rechtes Zimmer
+PC_BOTTOMROOM=Unteres Zimmer
+PC_FLOWERS=Blumen
+
+
+#----- Choices / Items --------
+GOT_LABFLOWER=Eine Blume!
+PC15B_FAKE=Falsche Identität
+PC15B_TRUTH=Die Wahrheit sagen
+PC15B_THREATEN_LIGHT=Leichte Bedrohung
+PC15B_THREATEN_HARD=Schwere Bedrohung
+
+#----- Topics --------
+TOPIC_SITUATION=Die Situation
+TOPIC_PLACE=Das Labor
+TOPIC_LIE=Die Lüge
+
+INTERROGATION_GUARD=Worüber lügt der Wachmann?
+INTERROGATION_GUARDWORRIED=Warum war der Wachmann nicht beunruhigt?
+PC15B_GUARD_AWAY_CHOICE=Versprechen, das Geheimnis zu wahren?
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC15B_PIPEMAIL1-1=Eine Rohrpost ...
+# Brok                                 
+PC15B_PIPEMAIL1-2=Mitten auf dem Flur ...?
+# Guard                                 
+PC15B_PIPEMAIL1-3=Diese Typen erhalten ständig Lieferungen.
+# Guard                                 
+PC15B_PIPEMAIL1-4=Hauptsächlich Tinte für ihre Materialdrucker, aber auch ihr Junkfood. Das ist sehr praktisch.
+# Brok                                 
+PC15B_PIPEMAIL1-5=Ich kann daran nichts Besonderes erkennen, aber ...
+# Brok                                 
+PC15B_PIPEMAIL1-6=Sie ist verschlossen. Kann man sie irgendwie öffnen?
+# Guard                                 
+PC15B_PIPEMAIL1-7=Nee. Sie ist völlig automatisiert.
+# Guard                                 
+PC15B_PIPEMAIL1-8=Und funktioniert nur in eine Richtung.
+# Guard                                 
+PC15B_PIPEMAIL1-9=Das Einzige, was diese Wissenschaftler produzieren, sind Informationen. Sie müssen nie etwas physisch senden.
+# Brok                                 
+PC15B_PIPEMAIL1-10=Das ergibt Sinn ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_PIPEMAIL2-1=Eine Rohrpost ... die nur in eine Richtung funktioniert.
+# Guard                                 
+PC15B_PIPEMAIL2-2=Genau.
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX1-1=Der Behälter für das Rohr ...
+# Brok                                 
+PC15B_BOX1-2=So leer wie meine Bereitschaft, ihn zu untersuchen.
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_PICKUP-1=Ein Energydrink ...?!
+# Brok                                 
+PC15B_BOX_PICKUP-2=Das soll wohl ein Scherz sein ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_PICKUP2-1=Moment mal ... Ich dachte, die Kommunikation ist ausgefallen?
+# Guard                                 
+PC15B_BOX_PICKUP2-2=Hey, Kumpel! Du hast den Notfallknopf gedrückt, nicht wahr?
+# Guard                                 
+PC15B_BOX_PICKUP2-3=Notrufe werden niemals abgestellt.
+# Brok                                 
+PC15B_BOX_PICKUP2-4=Gut! Ich habe immer Durst.
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_AD-1=Eine Anzeige ...?
+# Brok                                 
+PC15B_BOX_AD-2=Und ich dachte schon, es könnte nicht schlimmer sein als beim ersten Mal ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_BOX_NADA-1=Nada ...
+# Brok                                 
+PC15B_BOX_NADA-2=Ich schätze, ihr Vorrat an Notrationen ist erschöpft.
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS1-1=Schöne Blumen!
+# Brok                                 
+PC15B_FLOWERS1-2=Aus irgendeinem Grund fühle ich mich dabei nostalgisch ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS_AFTER1-1=(riecht) Schöner Geruch!
+# Guard                                 
+PC15B_FLOWERS_AFTER1-2=Das macht dann 10 Unis.
+# Brok                                 
+PC15B_FLOWERS_AFTER1-3=Was ...?
+# Guard                                 
+PC15B_FLOWERS_AFTER1-4=War nur ein Scherz. Aber versuch beim nächsten Mal, meine kostbare Pflanze nicht direkt vor meinen Augen zu zerstören.
+# Brok                                 
+PC15B_FLOWERS_AFTER1-5=Wenn sie so wertvoll ist, werde ich sie behalten.
+#----------------------------------------------------
+# Brok                                 
+PC15B_FLOWERS_AFTER2-1=Irgendeine Ahnung, um welche Art von Pflanze es sich handelt?
+# Guard                                 
+PC15B_FLOWERS_AFTER2-2=Woher soll ich das wissen?
+# Guard                                 
+PC15B_FLOWERS_AFTER2-3=Sie ist einfach schön und duftet. Das reicht mir.
+# Brok                                 
+PC15B_FLOWERS_AFTER2-4=Ja, mir geht es normalerweise genauso ... außer wenn ich ermitteln muss.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Arriving in the lab for the first time
+# *****************************************************************
+# Guard                                 
+#Here the guard is addressing both Ott and Brok
+PC15B_FIRST_DIALOG1-1=Wer seid ihr?
+#----------------------------------------------------
+# Brok                                 
+PC15B_FIRST_DIALOG2-1=Wir sind hier, um zu ermitteln ...
+# Guard                                 
+PC15B_FIRST_DIALOG2-2=Ohne Witz, Mann!
+# Guard                                 
+PC15B_FIRST_DIALOG2-3=Der Polizeidirektor hat gesagt, er würde seine besten Ermittler schicken.
+# Guard                                 
+PC15B_FIRST_DIALOG2-4=Ich hatte nicht erwartet, ein verflixtes Krokodil und einen hässlichen Jungen zu sehen. Ha ha!
+# Brok                                 
+PC15B_FIRST_DIALOG2-5=Pass auf, was du sagst. Wir sind hier, um zu helfen.
+# Ott                                 
+PC15B_FIRST_DIALOG2-6=Onkel Wes hat uns geschickt. Sie können ihn anrufen und fragen.
+# Guard                                 
+PC15B_FIRST_DIALOG2-7=Unnötig. Ich kenne das alte Wiesel, ich sollte nicht überrascht sein.
+# Brok                                 
+PC15B_FIRST_DIALOG2-8=Keine Zeit zu verlieren. Klär uns über die Situation auf.
+# Guard                                 
+PC15B_FIRST_DIALOG2-9=Ja, ich hätte mir denken können, dass er sich dafür auch keine Zeit nehmen würde.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_THINK1-1=(Ein Squealer ...)
+# Brok                                 
+PC15B_GUARD_THINK1-2=(Angesichts meiner jüngsten Erfahrung bin ich es nicht gewohnt, diesen Jungs zu vertrauen. Ist er anders?)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_NOTYET-1=(Noch nicht ...)
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_SITUATION1-1=Einer der beiden hier wohnenden Ingenieure ist verschwunden.
+# Brok                                 
+PC15B_GUARD_SITUATION1-2=Wohnend? Sollen sie nicht hier arbeiten?
+# Guard                                 
+PC15B_GUARD_SITUATION1-3=Beides. Sie verlassen den Ort nie.
+# Brok                                 
+PC15B_GUARD_SITUATION1-4=Wie kommst du darauf, dass die Situation ernst ist?
+# Guard                                 
+PC15B_GUARD_SITUATION1-5=Ich kontrolliere regelmäßig die Zimmer.
+# Guard                                 
+PC15B_GUARD_SITUATION1-6=Beim letzten Mal konnte ich Dr. Hush einfach nicht finden.
+# Brok                                 
+PC15B_GUARD_SITUATION1-7=Könnte er sich nicht einfach irgendwo verstecken?
+# Guard                                 
+PC15B_GUARD_SITUATION1-8=Mann, halt mich nicht für einen Amateur. Ich habe schon überall gesucht!
+# Guard                                 
+PC15B_GUARD_SITUATION1-9=Außerdem zeigt das medizinische Gerät des Mannes seit Stunden keine Lebenszeichen mehr an.
+# Brok                                 
+PC15B_GUARD_SITUATION1-10=Vielleicht hat er seine Flucht geplant und ist gegangen, während du nicht hingesehen hast?
+# Guard                                 
+PC15B_GUARD_SITUATION1-11=Unmöglich. Wie du gesehen hast, blockieren Laser ständig den Eingang.
+# Guard                                 
+PC15B_GUARD_SITUATION1-12=Sogar die Ingenieure dürfen nicht ohne Erlaubnis gehen, was auf Anfrage an uns Agenten geschieht.
+# Guard                                 
+PC15B_GUARD_SITUATION1-13=Nun, Dr. Hush hat keine solche Anfrage gestellt.
+# Ott                                 
+PC15B_GUARD_SITUATION1-14=Dieser Ort klingt wie ein Gefängnis ...
+# Brok                                 
+PC15B_GUARD_SITUATION1-15=Nee. Ich kenne diese intellektuellen Typen.
+# Brok                                 
+PC15B_GUARD_SITUATION1-16=Es macht ihnen nichts aus, ihr ganzes Leben der Arbeit an ihren verrückten Projekten zu widmen.
+# Brok                                 
+PC15B_GUARD_SITUATION1-17=(Shay ist ein gutes Beispiel dafür.)
+# Brok                                 
+PC15B_GUARD_SITUATION1-18=Ich bin ziemlich sicher, dass sie darum gebeten haben.
+# Guard                                 
+PC15B_GUARD_SITUATION1-19=Das Krokodil hat recht. Sie haben mir einmal gesagt, dass „Studien bewiesen haben, dass diese Art zu leben die Kreativität fördert“.
+# Guard                                 
+PC15B_GUARD_SITUATION1-20=Für mich ist das nur eine Ausrede, um zu tun, was sie wollen, aber ... was weiß ich schon?
+# Guard                                 
+PC15B_GUARD_SITUATION1-21=Die Barrieren dienen ihrem eigenen Schutz vor Bedrohungen von außen.
+# Ott                                 
+PC15B_GUARD_SITUATION1-22=... Ja. Absolut nicht paranoid.
+# Brok                                 
+PC15B_GUARD_SITUATION1-23=Du solltest wissen ... Das passt auf die Beschreibung der meisten Drumer.
+# Brok                                 
+PC15B_GUARD_SITUATION1-24=Man kann es ihnen nicht verübeln, bei all den Drohnen, die sich draußen herumtreiben. Aber sie haben sich diese Situation selbst eingebrockt.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION2-1=Bist du der einzige Wachmann an diesem Ort?
+# Guard                                 
+PC15B_GUARD_SITUATION2-2=Ich bevorzuge den Begriff „Sicherheitsagent“.
+# Brok                                 
+PC15B_GUARD_SITUATION2-3=Wie auch immer. Beantworte die Frage!
+# Guard                                 
+PC15B_GUARD_SITUATION2-4=Zum Glück nicht! Ich könnte es nicht ertragen, den ganzen Tag hier zu sein.
+# Guard                                 
+PC15B_GUARD_SITUATION2-5=Aber es ist immer nur einer von uns hier.
+# Guard                                 
+PC15B_GUARD_SITUATION2-6=Der Wissenschaftler war da, als ich heute Morgen angekommen bin. Er ist während meiner Schicht verschwunden.
+# Brok                                 
+PC15B_GUARD_SITUATION2-7=Ist diese Situation schon einmal vorgekommen?
+# Guard                                 
+PC15B_GUARD_SITUATION2-8=Glaube nicht.
+# Guard                                 
+PC15B_GUARD_SITUATION2-9=Ich meine, diese Wissenschaftler sind vielleicht verrückt; sie sind hier eingesperrt, was die Möglichkeiten einschränkt.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+# Brok                                 
+PC15B_GUARD_LIE1-1=Ein Rätsel kann nur durch das Sammeln wahrheitsgemäßer Informationen gelöst werden.
+# Brok                                 
+PC15B_GUARD_LIE1-2=Findest du nicht auch?
+# Guard                                 
+PC15B_GUARD_LIE1-3=Klar!
+# Brok                                 
+PC15B_GUARD_LIE1-4=Warum lügst du mich dann an?
+# Guard                                 
+PC15B_GUARD_LIE1-5=Wovon redest du ...?
+# Brok                                 
+PC15B_GUARD_LIE1-6=Stell dich nicht dumm.
+# Brok                                 
+PC15B_GUARD_LIE1-7=Einige deiner Aussagen sind eindeutig widersprüchlich.
+# Guard                                 
+PC15B_GUARD_LIE1-8=Ach ja?
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_LIE2-1=Setzen wir unser Verhör fort!
+# Guard                                 
+PC15B_GUARD_LIE2-2=Argh ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INTERROGATION_EXIT1-1=Ähm ... Lass mich meinen Standpunkt noch einmal überdenken.
+# Guard                                 
+PC15B_GUARD_INTERROGATION_EXIT1-2=Wer lügt jetzt?
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-1=Glaubst du, dass Dr. Mink das Profil eines Mörders hat?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-2=Hmm ...
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-3=Möglich. Ich konnte die Spannung zwischen ihnen in letzter Zeit spüren.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-4=Auf jeden Fall weiß ich nicht, was passiert ist.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-5=Als Ott behauptet hat, du hättest es bemerkt, dass Dr. Hush im Flur geblieben ist ...
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-6=Hast du gezögert.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-7=...
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-8=Du hast nicht alles gesehen, oder?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-9=Auf keinen Fall, Mann! Ich bin ein Profi!
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-10=Aber immer noch ein Mensch. Musst du nicht manchmal auf die Toilette gehen?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-11=Nein. Nur die Fähigsten werden für diesen Job ausgewählt.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-12=Wir können es uns nicht leisten, etwas zu verpassen!
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-13=Hmm ...
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-14=Kannst du es dann schwören?
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-15=Niemand hätte vorbeigehen können, ohne dass du es bemerkt hättest?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-16=... Ja!
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER1-17=Ja, ich schwöre es! Ich war die ganze Zeit da und habe alles ... beobachtet.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER1-18=(Er klingt nicht sehr zuversichtlich ...)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-1=Hör mal ... Vorhin hast du bestätigt, dass Dr. Hush sein Büro verlassen hat, um auf die Toilette zu gehen.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-2=Wann genau ist das passiert?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-3=Hmm ...
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-4=Kann mich nicht erinnern.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-5=Irgendwann nach meiner Ankunft.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-6=Das ist entscheidend! Du musst genau sein!
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-7=Hey! Weißt du, was für ein Job das ist?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-8=Jeden Tag die gleiche langweilige Sache.
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-9=Keine Überraschungen, keine Action, es passiert nie etwas! Na ja, normalerweise.
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-10=Was für ein Glück ...
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-11=Hm?
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-12=Schon gut. Gib dir Mühe!
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-13=Was ist das letzte Mal passiert, als Dr. Hush sein Zimmer verließ?
+# Brok                                 
+PC15B_GUARD_SITUATION_AFTER2-14=Wann und wo ist er hingegangen?
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-15=Ich hab’s dir doch gesagt ...! Mein Gehirn registriert solch triviale Dinge nicht!
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER2-16=Aber ... es gibt einen Weg, das herauszufinden.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-1=Was ist das?
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-2=Die Türüberwachung.
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-3=Was ...? Ihr führt eine Übersicht der Türöffnungen?
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-4=Und das sagst du mir erst jetzt?!
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-5=Ich ... dachte, das wäre nicht so wichtig ...
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-6=Nicht wichtig?!
+# Brok                                 
+PC15B_GUARD_DRHUSH_AFTER2B-7=Wie zum Teufel sollen wir diese Untersuchung durchführen, wenn wir nicht alle Informationen zur Hand haben?
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-8=Hey, sei nicht so laut!
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-9=Ich bin hier der Boss. Das sind streng vertrauliche Daten.
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-10=Nur Sicherheitsbeamte dürfen auf das Lesegerät zugreifen, aber ich werde eine besondere Ausnahme machen.
+# Guard                                 
+PC15B_GUARD_DRHUSH_AFTER2B-11=Überprüfe es.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_SITUATION_AFTER3-1=Überprüfe die Türüberwachung. Das sollte dir bei deinen Ermittlungen helfen.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH1-1=Kannst du mir irgendetwas über den vermissten Ingenieur sagen ... Doktor Hush?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-2=Bloß ein durchschnittlicher Wissenschaftler Mitte 40.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-3=Ich bin mir ziemlich sicher, dass seine einzige Familie und seine einzigen Freunde seine Bot-Prototypen sind.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-4=Bots ...? Er stellt sie her?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-5=Nicht direkt. Er ist auf KI-Programmierung spezialisiert.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-6=Er wohnt in dem Raum links.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-7=Wann wurde er das letzte Mal gesehen?
+# Guard                                 
+#IMPORTANT : adapt the hours displayed to what feels best for the language. ALL the hours indicated during this investigation take place during morning (this was done in order to simplify, no AM/PM issues)
+PC15B_GUARD_DRHUSH1-8=Ich bin heute Morgen um 03:00 Uhr angekommen.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-9=Wenn ich meine Schicht übernehme, schaue ich immer nach ihnen. Er war dort.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-10=Also ... hast du ihn gesehen? Bist du sicher?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-11=Ja, in Fleisch und Blut.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-12=Hat er danach sein Zimmer verlassen?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-13=Ja. Ich habe ihn auf die Toilette gehen sehen.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-14=Sein medizinisches Tracking hörte gegen 05:00 Uhr morgens auf.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-15=Das Ding ist nicht sehr präzise, also könnte es ein oder zwei Stunden davor oder danach gewesen sein.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-16=Was ...?
+# Brok                                 
+PC15B_GUARD_DRHUSH1-17=Bei all der fortgeschrittenen Technologie, die zur Verfügung steht, sollte man meinen, dass sowas genau ist.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-18=Das nennt man gelebte Privatsphäre.
+# Brok                                 
+PC15B_GUARD_DRHUSH1-19=Auch wenn man tot ist?
+# Guard                                 
+PC15B_GUARD_DRHUSH1-20=Ich werde nicht so tun, als würde ich mich in deinem Job auskennen, Krokodil-Detektiv, aber du solltest keine voreiligen Schlüsse ziehen.
+# Guard                                 
+PC15B_GUARD_DRHUSH1-21=Er sollte besser am Leben sein. Ich kann es mir nicht leisten, meinen Job zu verlieren!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_DRHUSH2-1=Wegen Dr. Hush. Was kannst du mir noch erzählen?
+# Guard                                 
+PC15B_GUARD_DRHUSH2-2=Keine Ahnung. Du solltest dir dieses Zimmer mal ansehen.
+# Guard                                 
+PC15B_GUARD_DRHUSH2-3=Das sollte dir mehr über seinen Charakter sagen.
+# Brok                                 
+PC15B_GUARD_DRHUSH2-4=Verstanden.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE1-1=Du hast zwei Ingenieure erwähnt, nicht wahr?
+# Guard                                 
+PC15B_GUARD_PLACE1-2=Ja. Doktor Mink ist der andere.
+# Guard                                 
+PC15B_GUARD_PLACE1-3=Er arbeitet an Nano-Bots. So eine Art „Ich-weiß-alles“-Typ.
+# Brok                                 
+PC15B_GUARD_PLACE1-4=Wie kommen sie miteinander aus?
+# Guard                                 
+PC15B_GUARD_PLACE1-5=Tun sie nicht.
+# Guard                                 
+PC15B_GUARD_PLACE1-6=Sie sind wie Katze und Hund. Immer zanken sie sich um dumme Sachen.
+# Guard                                 
+PC15B_GUARD_PLACE1-7=Dennoch haben sie nie darum gebeten, in ein anderes Labor verlegt zu werden.
+# Guard                                 
+PC15B_GUARD_PLACE1-8=Ich schätze, es ist nur ein Rivalitätsspiel.
+# Brok                                 
+PC15B_GUARD_PLACE1-9=Hoffen wir es ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE2-1=Ist sonst noch jemand hier?
+# Guard                                 
+PC15B_GUARD_PLACE2-2=Nö.
+# Guard                                 
+PC15B_GUARD_PLACE2-3=Alle Besucher benötigen eine Sondergenehmigung, und dazu gehören auch Drohnenlieferungen.
+# Guard                                 
+PC15B_GUARD_PLACE2-4=Niemand hat das Gebäude vor deiner Ankunft betreten oder verlassen.
+# Brok                                 
+PC15B_GUARD_PLACE2-5=Warum sollte man Lieferungen brauchen, wenn man eine Rohrpost im Flur hat?
+# Guard                                 
+PC15B_GUARD_PLACE2-6=Manche Pakete kommen da immer noch nicht durch, weißt du.
+# Brok                                 
+PC15B_GUARD_PLACE2-7=Könnte jemand es benutzen, um zu entkommen?
+# Guard                                 
+PC15B_GUARD_PLACE2-8=Auf keinen Fall! Man müsste in Stücke geschnitten werden!
+# Guard                                 
+PC15B_GUARD_PLACE2-9=Und das würde sicherlich einige Spuren hinterlassen.
+# Brok                                 
+PC15B_GUARD_PLACE2-10=Urgh ... Richtig.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_PLACE3-1=Bist du sicher, dass es keinen Fluchtweg gibt?
+# Guard                                 
+PC15B_GUARD_PLACE3-2=Ja. Die Fenster sind unecht.
+# Guard                                 
+PC15B_GUARD_PLACE3-3=Die Labore sind in keiner Weise miteinander verbunden. Dafür haben sie beim Bau des Ortes gesorgt.
+# Guard                                 
+PC15B_GUARD_PLACE3-4=Der einzige Zugang ist der Haupteingang, von dem du gekommen bist.
+# Guard                                 
+PC15B_GUARD_PLACE3-5=Es war nie anders.
+# Brok                                 
+PC15B_GUARD_PLACE3-6=Sag niemals nie.
+# Guard                                 
+PC15B_GUARD_PLACE3-7=Willst du wetten? Ich würde hundert Unis darauf wetten!
+# Brok                                 
+PC15B_GUARD_PLACE3-8=Normalerweise würde ich nicht Nein sagen, aber ... ich kann es mir im Moment nicht leisten, dieses Risiko einzugehen.
+# Guard                                 
+PC15B_GUARD_PLACE3-9=Schade.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_YOURSELF1-1=Ich wollte fragen ...
+# Brok                                 
+PC15B_GUARD_YOURSELF1-2=Was macht ein Squealer hier in den Drums?
+# Guard                                 
+PC15B_GUARD_YOURSELF1-3=Das geht dich nichts an!
+# Brok                                 
+PC15B_GUARD_YOURSELF1-4=Ich mein ja nur. Ich dachte, dein Clan sei aus dem ganzen Land verbannt worden ...
+# Guard                                 
+PC15B_GUARD_YOURSELF1-5=Was für ein Clan?
+# Guard                                 
+PC15B_GUARD_YOURSELF1-6=Ich darf keinen regulären Job annehmen, nur weil andere vor Jahren Mist gebaut haben?
+# Brok                                 
+PC15B_GUARD_YOURSELF1-7=Nun, ich ...
+# Guard                                 
+PC15B_GUARD_YOURSELF1-8=Halt den Mund.
+# Guard                                 
+PC15B_GUARD_YOURSELF1-9=Du weißt gar nichts.
+# Guard                                 
+PC15B_GUARD_YOURSELF1-10=Ich hasse Leute wie dich. Nur aufs Äußere fixiert. Leere Gehirne.
+# Brok                                 
+PC15B_GUARD_YOURSELF1-11=(Scheint ein heikles Thema zu sein.)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_YOURSELF2-1=(Ich treibe es besser nicht zu weit ...)
+# Brok                                 
+PC15B_GUARD_YOURSELF2-2=(Aber verbirgt er etwas vor mir ...? Ich werde es herausfinden müssen.)
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_EXITFIRST1-1=Ich werde mich mal umsehen.
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-2=Zeit wird’s!
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-3=Du solltest das lieber schnell lösen! Ich sollte meine Schicht schon vor einer Stunde beenden.
+# Guard                                 
+PC15B_GUARD_EXITFIRST1-4=Für diese Überstunden werde ich nicht bezahlt!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_EXIT1-1=Bleib hier.
+# Guard                                 
+PC15B_GUARD_EXIT1-2=Ich habe nicht den ganzen Tag Zeit, weißt du!
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_EXIT2-1=Komm schon! Mach deinen Job!
+# Brok                                 
+PC15B_GUARD_EXIT2-2=Was glaubst du, was ich tue?
+# Guard                                 
+PC15B_GUARD_EXIT2-3=Keine Ahnung, das ist ja das Problem.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_WELCOME1-1=Ich habe noch mehr Fragen.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_WELCOME2-1=Schon wieder?!
+# Guard                                 
+PC15B_GUARD_WELCOME2-2=Ich werde das selbst lösen, das geht schneller!
+# Brok                                 
+PC15B_GUARD_WELCOME2-3=Du antwortest besser, Mann. Oder willst du Verdächtiger Nummer eins werden?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Showing inventory to guard
+# *****************************************************************
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT1-1=Was kannst du mir darüber sagen?
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT1-2=Das ist Müll.
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT1-3=Immer geradeheraus, was?
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT2-1=Denkst du, das könnte ein Hinweis sein ...?
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT2-2=Was? Das fragst du ... mich?!
+# Guard                                 
+PC15B_GUARD_INV_DEFAULT2-3=Ich dachte, du wärst ein lausiger Detektiv, aber das war eine Untertreibung!
+# Brok                                 
+PC15B_GUARD_INV_DEFAULT2-4=Sag einfach, dass du nicht helfen willst.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_MONEY-1=Auf keinen Fall, Mann! Ich nehme keine Bestechungsgelder an!
+# Brok                                 
+PC15B_GUARD_INV_MONEY-2=Wer hätte das gedacht ...? Ein ehrlicher Squealer!
+# Guard                                 
+PC15B_GUARD_INV_MONEY-3=Und nenn mich nicht so!
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LABFLOWER-1=Ich kann immer noch nicht glauben, dass du das getan hast.
+# Brok                                 
+PC15B_GUARD_INV_LABFLOWER-2=Es ist ein entscheidender Hinweis!
+# Guard                                 
+PC15B_GUARD_INV_LABFLOWER-3=Ja, klar ...
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LAMPHUSH-1=Du hast sie repariert ...?
+# Brok                                 
+PC15B_GUARD_INV_LAMPHUSH-2=Natürlich nicht! Das ist die andere Lampe. Ich würde keine Beweise manipulieren.
+# Guard                                 
+PC15B_GUARD_INV_LAMPHUSH-3=Dann hör auf, sie mit bloßen Händen anzufassen.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_LAMPMINK-1=Das muss wehgetan haben ...
+# Brok                                 
+PC15B_GUARD_INV_LAMPMINK-2=Offensichtlich. Er ist tot!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_MAGNIFY-1=Siehst du? Ich habe nicht gelogen!
+# Guard                                 
+PC15B_GUARD_INV_MAGNIFY-2=Klar. Denn eine Lupe zu besitzen, macht dich automatisch zu einem Detektiv?
+# Brok                                 
+PC15B_GUARD_INV_MAGNIFY-3=Das weiß doch jeder!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_MAPBUILDING-1=Ich brauche keine Karte. Ich kenne dieses Gebäude auswendig.
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_TABLETHUSH-1=Dr. Hush hat das benutzt.
+# Brok                                 
+PC15B_GUARD_INV_TABLETHUSH-2=Bitte entsperre es.
+# Guard                                 
+PC15B_GUARD_INV_TABLETHUSH-3=Als ob ich das könnte!
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_PILLHUSH-1=Ich glaube, Dr. Hush hat die genommen.
+# Guard                                 
+PC15B_GUARD_INV_PILLHUSH-2=Und ...?
+# Brok                                 
+PC15B_GUARD_INV_PILLHUSH-3=Kannst du das bestätigen?
+# Guard                                 
+PC15B_GUARD_INV_PILLHUSH-4=Keine Ahnung.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_INV_TRAMPPRESCR-1=Du bist ein Doktor, richtig?
+# Guard                                 
+PC15B_GUARD_INV_TRAMPPRESCR-2=Da fragst du den Falschen, Kumpel!
+#----------------------------------------------------
+# Guard                                 
+PC15B_GUARD_INV_WRAPPING-1=Ihhh! Ich hasse Ameisen.
+# Brok                                 
+PC15B_GUARD_INV_WRAPPING-2=Mann, du bist gerade auf die Liste meiner Feinde gekommen.
+# Guard                                 
+PC15B_GUARD_INV_WRAPPING-3=Mir egal.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Going around the room
+# *****************************************************************
+# Guard                                 
+PC15B_GUARD_INVESTIGATE-1=Hey, warte!
+# Guard                                 
+PC15B_GUARD_INVESTIGATE-2=Ich habe dir noch ein paar Dinge zu erzählen.
+# Brok                                 
+PC15B_GUARD_INVESTIGATE-3=Nun, dann tu es!
+#----------------------------------------------------
+# Guard                                 
+PC15B_TO_PC15_NO1-1=Hey!
+# Guard                                 
+PC15B_TO_PC15_NO1-2=Ich würde auch gern gehen, aber hast du kein Berufsgewissen?
+# Brok                                 
+PC15B_TO_PC15_NO1-3=Oh! Du meinst ...?
+# Guard                                 
+PC15B_TO_PC15_NO1-4=Löse diesen Fall, du Trottel!
+# Brok                                 
+PC15B_TO_PC15_NO1-5=Kein Grund, ausfallend zu werden.
+#----------------------------------------------------
+# Brok                                 
+PC15B_TO_PC15_NO2-1=Ich kann nicht rausgehen ...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Dr Mink's door. He doesn't want to let Brok enter.
+# *****************************************************************
+# Brok                                 
+PC15B_KNOCK1-1=Geht nicht auf ...
+# Brok                                 
+PC15B_KNOCK1-2=(klopft)
+# Brok                                 
+PC15B_KNOCK1-3=...?
+# Brok                                 
+PC15B_KNOCK1-4=Ich höre Musik ...
+# Brok                                 
+PC15B_KNOCK1-5=Ein lauter Beat. Ein echter Ohrwurm!
+# Brok                                 
+PC15B_KNOCK1-6=(klopft noch mal)
+# Mink                                 
+PC15B_KNOCK1-7=„Gehen Sie weg! Ich bin beschäftigt!“
+# Brok                                 
+PC15B_KNOCK1-8=Hmmpf ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK2-1=(klopft)
+# Brok                                 
+PC15B_KNOCK2-2=Aufmachen! Sofort!
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK2B-1=Hey! Wer zum Teufel sind Sie?!
+# Brok                                 
+PC15B_KNOCK2B-2=Was für eine nette Art, sich vorzustellen ...
+# Brok                                 
+PC15B_KNOCK2B-3=Macht es Ihnen etwas aus, wenn ich eintrete?
+# Mink                                 
+PC15B_KNOCK2B-4=Natürlich macht es mir etwas aus! Ich bin gerade mitten in einer wichtigen Sache!
+# Brok                                 
+PC15B_KNOCK2B-5=Sie meinen ... tanzen ...?
+# Mink                                 
+PC15B_KNOCK2B-6=...
+# Brok                                 
+PC15B_KNOCK2B-7=Ich bin hier, um ...
+# Mink                                 
+PC15B_KNOCK2B-8=Verschwinden Sie!
+# Brok                                 
+PC15B_KNOCK2B-9=...
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3-1=(klopft)
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK3B-1=Sie schon wieder? War ich nicht deutlich genug?!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_FAKE1-1=Ich bin der Lieferant! Ich habe Pizza für Sie!
+# Mink                                 
+PC15B_KNOCK3_FAKE1-2=Unmöglich. Alle unsere Bestellungen werden über die Rohr-Pille geliefert.
+# Brok                                 
+PC15B_KNOCK3_FAKE1-3=Ups.
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_FAKE2-1=Nur ein Scherz! Ich bin auch Wissenschaftler. Ich bin hier, um zu helfen!
+# Mink                                 
+PC15B_KNOCK3_FAKE2-2=Oh! Dann zeigen Sie mir Ihre Papiere.
+# Brok                                 
+PC15B_KNOCK3_FAKE2-3=Verflixt ... Ich bin so ein Schussel. Ich habe sie zu Hause vergessen!
+# Mink                                 
+PC15B_KNOCK3_FAKE2-4=Klingt verständlich! Wir sind alle gleich.
+# Mink                                 
+PC15B_KNOCK3_FAKE2-5=In Ordnung, kommen Sie ...
+# Mink                                 
+PC15B_KNOCK3_FAKE2-6=Moment! Was ist das für ein komischer Hut?
+# Brok                                 
+PC15B_KNOCK3_FAKE2-7=Na ja ...
+# Mink                                 
+PC15B_KNOCK3_FAKE2-8=Sie Lügner! Gehen Sie weg!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_TRUTH-1=Ich bin ein Detektiv. Ich bin hier in einer Ermittlung, um ...
+# Mink                                 
+PC15B_KNOCK3_TRUTH-2=Ach du meine Güte!
+# Brok                                 
+PC15B_KNOCK3_TRUTH-3=Hey!
+# Mink                                 
+PC15B_KNOCK3_TRUTH-4=I-ich habe all meine Steuern bezahlt! Lassen Sie mich in Ruhe!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_LIGHT-1=Nein.
+# Mink                                 
+PC15B_KNOCK3_LIGHT-2=Lassen Sie mich in Ruhe, Sie Reptil!
+# Brok                                 
+PC15B_KNOCK3_LIGHT-3=Hören Sie zu.
+# Brok                                 
+PC15B_KNOCK3_LIGHT-4=Sie haben zwei Sekunden, um zur Seite zu treten.
+# Brok                                 
+PC15B_KNOCK3_LIGHT-5=Sonst ... werde ich vielleicht ein bisschen wütend, und hier gibt es keine Sandsäcke, um meiner Frustration Luft zu machen.
+# Mink                                 
+PC15B_KNOCK3_LIGHT-6=Schluck!
+# Mink                                 
+PC15B_KNOCK3_LIGHT-7=I-in Ordnung! Bitte tun Sie mir nicht weh!
+#----------------------------------------------------
+# Brok                                 
+PC15B_KNOCK3_HARD-1=Lassen Sie mich rein, sonst breche ich Ihnen die Wirbelsäule in zwei Hälften und esse Ihre Reste als Snack!
+# Mink                                 
+PC15B_KNOCK3_HARD-2=Waaa ...
+#----------------------------------------------------
+# Mink                                 
+PC15B_KNOCK3_HARD2-1=Ich habe Angst! B-bitte gehen Sie weg ...
+# Brok                                 
+PC15B_KNOCK3_HARD2-2=Verflixt ... Bin ich zu weit gegangen?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting the door
+# *****************************************************************
+# Mink                                 
+PC15B_DOORRIGHT_HIT1-1=Aufhören!
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT2-1=Ich ... ich habe Angst ...
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT3-1=Sie ... werden die Tür einschlagen! Die ist wertvoll!
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_HIT4-1=B-bitte!
+# Mink                                 
+PC15B_DOORRIGHT_HIT4-2=Tun Sie mir nicht weh ...!
+#----------------------------------------------------
+# Mink                                 
+PC15B_DOORRIGHT_DEATH1-1=Aaaahhh!!!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking other rooms
+# *****************************************************************
+# Brok                                 
+PC15B_RESTROOM1-1=Was ist da drin?
+# Guard                                 
+PC15B_RESTROOM1-2=Die Toilette.
+# Brok                                 
+PC15B_RESTROOM1-3=Ich schau mal rein ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_RESTROOM1B-1=...
+# Brok                                 
+PC15B_RESTROOM1B-2=Niemand ist drin.
+# Brok                                 
+PC15B_RESTROOM1B-3=Ich werde diesen Raum später untersuchen.
+#----------------------------------------------------
+# Brok                                 
+PC15B_DRHUSHROOM1-1=(klopf, klopf)
+# Brok                                 
+PC15B_DRHUSHROOM1-2=...
+# Brok                                 
+PC15B_DRHUSHROOM1-3=Wessen Zimmer ist das?
+# Guard                                 
+PC15B_DRHUSHROOM1-4=Das von Dr. Hush.
+# Brok                                 
+PC15B_DRHUSHROOM1-5=Der Kerl, der verschwunden ist?
+# Brok                                 
+PC15B_DRHUSHROOM1-6=Sehen wir uns das mal an.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - The guard monitoring
+# *****************************************************************
+# Brok                                 
+PC15B_GUARD_MONITORING1-1=Was sehe ich mir hier an?
+# Guard                                 
+PC15B_GUARD_MONITORING1-2=Das ist die heutige Überwachung. Dieses Ding zeichnet den Zeitpunkt auf, wann jede Tür geöffnet wurde ...
+# Guard                                 
+PC15B_GUARD_MONITORING1-3=... und da sind ein paar Symbole zur Unterscheidung eines Ein- oder Ausgangs.
+# Brok                                 
+PC15B_GUARD_MONITORING1-4=Ich verstehe ...
+# Brok                                 
+PC15B_GUARD_MONITORING1-5=Ein Pfeil auf der linken Seite steht für einen Eingang, und einer auf der rechten Seite für einen Ausgang?
+# Guard                                 
+PC15B_GUARD_MONITORING1-6=Ja.
+# Guard                                 
+PC15B_GUARD_MONITORING1-7=Außerdem steht dort die Identität desjenigen, der den Raum geöffnet hat. Alle sind aufgezeichnet.
+# Brok                                 
+PC15B_GUARD_MONITORING1-8=Was ist mit Tidy?
+# Guard                                 
+PC15B_GUARD_MONITORING1-9=Der Wartungsbot?
+# Guard                                 
+PC15B_GUARD_MONITORING1-10=Ja, der wird auch getrackt.
+# Brok                                 
+PC15B_GUARD_MONITORING1-11=Okay ... Sehen wir uns das mal genauer an.
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_MONITORING2-1=Kann jeder die Informationen dort ändern?
+# Guard                                 
+PC15B_GUARD_MONITORING2-2=Natürlich nicht. Sie sind schreibgeschützt, 100 % automatisiert.
+# Brok                                 
+PC15B_GUARD_MONITORING2-3=Gut zu wissen.
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGA1-1=Dr. Hushs Zimmer.
+# Brok                                 
+PC15B_MONITORINGA1-2=Wenn ich das hier richtig lese, wurde Dr. Hush zuletzt um 05:04 Uhr aufgenommen ...
+# Brok                                 
+PC15B_MONITORINGA1-3=Dann ist er verschwunden.
+# Brok                                 
+PC15B_MONITORINGA1-4=Moment mal ...
+# Brok                                 
+PC15B_MONITORINGA1-5=Warum hast du diese Tür um 05:10 Uhr geöffnet?
+# Guard                                 
+PC15B_MONITORINGA1-6=Hab ich dir doch gesagt! Ich kontrolliere die Räume regelmäßig.
+# Brok                                 
+PC15B_MONITORINGA1-7=Gleich nachdem der Doktor rausgegangen ist?
+# Guard                                 
+PC15B_MONITORINGA1-8=...
+# Guard                                 
+PC15B_MONITORINGA1-9=Scheint so.
+# Guard                                 
+PC15B_MONITORINGA1-10=Mein Gedächtnis ist verwirrt ...
+# Brok                                 
+PC15B_MONITORINGA1-11=Hmm ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGA2-1=Sieht aus, als hättest du um 09:00 Uhr eine weitere Kontrolle durchgeführt, richtig?
+# Guard                                 
+PC15B_MONITORINGA2-2=Jepp.
+# Guard                                 
+PC15B_MONITORINGA2-3=Da habe ich gemerkt, dass Dr. Hush nirgendwo zu finden war.
+# Guard                                 
+PC15B_MONITORINGA2-4=Ich habe diskret die Polizei gerufen.
+# Brok                                 
+PC15B_MONITORINGA2-5=Okay ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGB1-1=Die Toilette ...
+# Brok                                 
+PC15B_MONITORINGB1-2=Hmm ... Viel mehr Aktivitäten als ich erwartet hatte.
+# Brok                                 
+PC15B_MONITORINGB1-3=...
+# Brok                                 
+PC15B_MONITORINGB1-4=Tidy wurde zuletzt um 04:24 Uhr beim Eintreffen dort registriert.
+# Brok                                 
+PC15B_MONITORINGB1-5=Später nichts mehr, auch nicht in den anderen Räumen.
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGB2-1=Nach Dr. Hush und Tidy betrat auch Dr. Mink den Raum.
+# Brok                                 
+PC15B_MONITORINGB2-2=Ich frage mich, ob sich ihre Wege dort gekreuzt haben ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGC1-1=Dr. Minks Zimmer ...?
+# Brok                                 
+PC15B_MONITORINGC1-2=Was für eine Überraschung ...
+# Brok                                 
+PC15B_MONITORINGC1-3=Obwohl sich die Leiche im Zimmer von Dr. Mink befand, wurde dort nicht viel Aktivität registriert!
+# Brok                                 
+PC15B_MONITORINGC1-4=Im Grunde ist Dr. Mink rausgegangen ... und ist etwas später zurückgekommen.
+# Brok                                 
+PC15B_MONITORINGC1-5=Die Zeit stimmt mit der der Toilette überein.
+# Brok                                 
+PC15B_MONITORINGC1-6=Ich schätze, er ist einfach nur zur Toilette gegangen ...?
+# Brok                                 
+PC15B_MONITORINGC1-7=Jedenfalls hat Dr. Hush die Tür nie geöffnet. Tidy auch nicht.
+# Brok                                 
+PC15B_MONITORINGC1-8=Das ergibt nicht viel Sinn, aber immerhin bestätigt dies die Aussage von Dr. Mink ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGC2-1=Diese Aufzeichnung von 09:00 Uhr erscheint in allen drei Räumen.
+# Brok                                 
+PC15B_MONITORINGC2-2=Das muss der Wachmann gewesen sein, der die Räume überprüft hat auf der Suche nach Dr. Hush.
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGD1-1=Was ist diese vierte Tür?
+# Guard                                 
+PC15B_MONITORINGD1-2=Der Haupteingang ...
+# Brok                                 
+PC15B_MONITORINGD1-3=Moment mal. Hast du nicht gesagt, dass heute niemand rein- oder rausgegangen ist?
+# Brok                                 
+PC15B_MONITORINGD1-4=Wie erklärst du dann diese Aufzeichnungen?
+# Guard                                 
+#He means both Brok and Ott
+PC15B_MONITORINGD1-5=Das wart ihr.
+# Brok                                 
+PC15B_MONITORINGD1-6=Um 04:38 ...?
+# Guard                                 
+PC15B_MONITORINGD1-7=...
+# Guard                                 
+PC15B_MONITORINGD1-8=...
+# Guard                                 
+PC15B_MONITORINGD1-9=Moment! Ich weiß!
+# Guard                                 
+PC15B_MONITORINGD1-10=Das war ich. Ich habe meine Schicht um 04:38 Uhr angetreten.
+# Brok                                 
+PC15B_MONITORINGD1-11=Ist das so ...?
+#----------------------------------------------------
+# Brok                                 
+PC15B_MONITORINGD2-1=Ich frage noch mal.
+# Brok                                 
+PC15B_MONITORINGD2-2=Wer hat heute Morgen um 04:38 Uhr den Haupteingang geöffnet?
+# Guard                                 
+PC15B_MONITORINGD2-3=Habe ich dir doch gesagt!
+# Guard                                 
+PC15B_MONITORINGD2-4=Das war ich. Ich bin ins Labor gegangen, um meinen Kollegen abzulösen.
+# Brok                                 
+PC15B_MONITORINGD2-5=Richtig ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-1=Der Wachmann hat um 04:38 Uhr für eine Minute den Haupteingang geöffnet.
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-2=Dann bin ich ein paar Stunden später mit Ott angekommen.
+# Brok                                 
+PC15B_GUARD_MONITORINGD_AFTER1-3=Erscheint schlüssig ...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating the guard
+# *****************************************************************
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-1=Kannst du mich noch mal erinnern: Wann beginnst du deine Schicht?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-2=03:00 Uhr, jeden Tag!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-3=Interessant ...
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-4=Wie erklärst du dir dann das Betreten des Labors um 04:38 Uhr?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-5=Was ...? Ich bin nicht ...
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-6=Sieh dir die Aufzeichnung an. Was steht da?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-7=04:38 ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-8=Schluck.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-9=Außerdem zeigt der Pfeil einen Ausgang an – keinen Eingang!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-10=Du schuldest mir eine Erklärung.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-11=...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-12=...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-13=In Ordnung ... Ich gebe es zu!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-14=Ich habe meine Schicht um 03:00 Uhr angetreten ... Und die Tür war tatsächlich um 04:38 Uhr offen.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-15=Aber ich habe nicht gelogen. Das war ich.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-16=Wir sind nicht nur Agenten ... Wir erledigen auch die Sekretariatsarbeit.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-17=Um 04:38 Uhr erhielt ich einen Anruf. Wir sind verpflichtet, jeden Anruf entgegenzunehmen ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-18=Aber es hat nicht funktioniert.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-19=Was meinst du damit?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-20=Das ist ein Hochsicherheitsgebäude, sodass externe Anrufe nicht gut funktionieren.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-21=Die Verbindung war furchtbar. Nur Rauschen.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-22=Ich bin verblüfft, dass so etwas in den Drums passiert ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-23=Aber das tut es.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-24=Wenn du mich fragst ... Unabhängig davon, dass sie behaupten, dass die Technologie Fortschritte macht, nichts funktioniert jemals perfekt ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-25=Wenn das passiert, öffne ich den Haupteingang, damit die Übertragung besser wird.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-26=Also ... du hast eine Weile an der Haupttür gestanden.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-27=Jepp.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-28=Wer war am Apparat?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-29=Keine Ahnung ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-30=Es war nur Musik.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-31=Musik?
+# Guard                                 
+#TechDream isn't so important, keep it like this or translate if you want but keep it consistent throughout all the labs files (PC15X)
+PC15B_CLUE_GUARD_AWAY-32=Ja! „TechDream“!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-33=Hmm ... Das kommt mir bekannt vor ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-34=Natürlich! Das ist der letzte Schrei!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-35=Das ist wirklich ein Ohrwurm, also ... habe ich weiter zugehört.
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-36=Wie lange?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-37=Vielleicht eine Minute ...?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-38=Nach einer Weile dachte ich, dass es sich um einen Spam-Anruf handeln könnte, und habe aufgelegt.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-39=... Ich weiß, was du denkst ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-40=Ja, ich habe weggeschaut ... Aber ... es gab kein großes Risiko.
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-41=Die Laser waren aktiv, niemand konnte hinein oder hinaus gelangen!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-42=Aber drinnen hätte alles passieren können ...
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-43=Das war ein großer Fehler!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-44=Was glaubst du, warum ich es dir nicht gesagt habe?
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-45=Damals dachte ich mir nicht viel dabei, aber als du mit deinen Ermittlungen begonnen hast ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-46=Ist mir dieser Moment eingefallen ...
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-47=Bitte ... Ich flehe dich an ...!
+# Guard                                 
+PC15B_CLUE_GUARD_AWAY-48=Sag es niemandem! Dieser Fehler könnte mich meinen Job kosten!
+# Brok                                 
+PC15B_CLUE_GUARD_AWAY-49=Na ja ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_NO-1=Tut mir leid.
+# Brok                                 
+PC15B_CLUE_GUARD_NO-2=Dieser Fehler ist entscheidend und muss zu diesem Mord geführt haben!
+# Guard                                 
+PC15B_CLUE_GUARD_NO-3=... Oh nein ...
+# Guard                                 
+PC15B_CLUE_GUARD_NO-4=Ich habe so hart gearbeitet ... Um in dieser Gesellschaft akzeptiert zu werden ...
+# Guard                                 
+PC15B_CLUE_GUARD_NO-5=I-ich weigere mich zu akzeptieren, dass eine Minute Unachtsamkeit meine ganze Karriere zerstört!
+# Brok                                 
+PC15B_CLUE_GUARD_NO-6=Hör mal. Lass mich meine Ermittlungen beenden.
+# Brok                                 
+PC15B_CLUE_GUARD_NO-7=Ich werde alle Fakten sammeln, dann werden wir sehen.
+# Guard                                 
+PC15B_CLUE_GUARD_NO-8=... Okay.
+# Brok                                 
+PC15B_CLUE_GUARD_NO-9=(Obwohl ich Wes davon berichten muss. Es ist meine Pflicht.)
+# Brok                                 
+PC15B_CLUE_GUARD_NO-10=(Ich habe dieses Gespräch aufgezeichnet. Es wird gesendet, sobald ich hier raus gehe.)
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_YES-1=Ich werde es niemandem sagen.
+# Brok                                 
+PC15B_CLUE_GUARD_YES-2=Ich meine, es muss wahnsinnig hart sein, den ganzen Tag an der gleichen Stelle Wache zu halten und nichts anderes zu tun.
+# Guard                                 
+PC15B_CLUE_GUARD_YES-3=Puh ... Ich bin so froh, dass du das verstehst, Mann.
+# Brok                                 
+PC15B_CLUE_GUARD_YES-4=Trotzdem ist das ein wichtiges Ereignis für diese Ermittlung.
+# Guard                                 
+PC15B_CLUE_GUARD_YES-5=Klar. Ich hoffe, mein Fehler hat den armen Kerl nicht umgebracht ...
+# Brok                                 
+PC15B_CLUE_GUARD_YES-6=Wir werden sehen.
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-1=Aber ich bin noch nicht mit dir fertig!
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-2=Wie kommt es, dass es keine Aufzeichnungen über deinen Eintritt um 03:00 Uhr gibt?
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-3=Einfach. Ich setze die Statistiken jedes Mal zurück, wenn ich ankomme.
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-4=Aus Gründen der Vertraulichkeit ist es uns nicht erlaubt, sie länger als einen Tag zu speichern.
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-5=Und ich kann dieses verdammte Konfigurationspanel nicht dazu bringen, den Job automatisch zu erledigen!
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-6=Muss von einem verrückten Ingenieur programmiert worden sein, der nicht in der realen Welt lebt ...
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-7=Ich kenne das Gefühl ...
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-8=Hast du nicht erwähnt, dass du keine Kontrolle hast?
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-9=Alles oder nichts.
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-10=Es gibt keine Möglichkeit, Daten einzufügen oder zu bearbeiten. Nur alles zu entfernen.
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-11=Okay ...
+# Guard                                 
+PC15B_CLUE_GUARD_NEXT-12=Spielt keine Rolle. Dr. Hush war gesund und munter, als ich ankam.
+# Brok                                 
+PC15B_CLUE_GUARD_NEXT-13=Ich schätze, da muss ich dich wohl beim Wort nehmen.
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-1=Den Aufzeichnungen zufolge hast du Dr. Hushs Tür um 05:10 Uhr geöffnet.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-2=Im genau gleichen Moment hat Dr. Hushs Lampe einen heftigen Schock erlitten ...
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-3=Interessanter Zufall, findest du nicht auch?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-4=Ein ... Schock ...?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-5=Hast du die Lampe aus Versehen runtergeworfen oder so?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-6=Nein ... Ich habe sie nie angerührt ...
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-7=Ich habe auch etwas Ungewöhnliches bemerkt.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-8=Um 09:00 Uhr hast du routinemäßig alle drei Räume überprüft.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-9=Aber um 05:10 Uhr ... hast du nur die Tür von Dr. Hush geöffnet.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-10=Warum?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-11=Ähm ...
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-12=Oh!
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-13=Jetzt erinnere ich mich!
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-14=Ich habe ein Geräusch gehört!
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-15=Ist das so?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-16=Könnte das ... das Geräusch der Lampe gewesen sein, die auf den Boden gefallen ist?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-17=Hmm ... Ich schätze, das ist möglich.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-18=Aber als ich hineingesehen habe, war alles normal.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-19=Bist du dir sicher?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-20=Ja. Dr. Hush hält sein Zimmer immer ordentlich.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-21=Wenn diese Lampe auf dem Boden gelegen hätte, hätte ich es bemerkt!
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-22=War Tidy da?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-23=Hmm ... Ich bin mir ziemlich sicher, dass er ausgeschaltet war und sich aufgeladen hat.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-24=Und was ist mit Dr. Hush?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-25=Was hat er gemacht?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-26=Lass mich nachdenken ...
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-27=Hmm ... Ich habe ihn nicht gesehen.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-28=Nicht ...?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-29=Ziemlich sicher.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-30=Er war auch nicht im Flur.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-31=Er hatte sein Zimmer also schon verlassen?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE1-32=Ja. So muss es gewesen sein.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE1-33=Interessant ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-1=Etwas passt nicht zusammen.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-2=Um 05:10 Uhr hast du ein Geräusch gehört und nach Dr. Hush gesehen, der weder in seinem Zimmer noch im Flur war.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-3=Ja.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-4=Dann ist das ein eklatanter Widerspruch ...
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-5=Hast du dir keine Sorgen gemacht?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-6=Was?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-7=Denk doch mal nach.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-8=Du hattest keine Ahnung, wo Dr. Hush war, und trotzdem hast du ihn nicht in den anderen Räumen gesucht?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-9=Warum nicht?
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-10=Du hast recht ...
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-11=Ich habe mir erst um 09:00 Uhr Sorgen gemacht, dass er verschwunden ist ...
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-12=Aber ... ich kann mich nicht erinnern, warum ich nicht früher besorgt war ...?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-13=Nun, ich habe eine Theorie.
+# Guard                                 
+PC15B_CLUE_HUSH_GONE2-14=Ach ja?
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-15=Ja.
+# Brok                                 
+PC15B_CLUE_HUSH_GONE2-16=Das ist der Grund, warum du dir zu diesem Zeitpunkt keine Sorgen gemacht hast!
+#----------------------------------------------------
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-1=Du warst nicht besorgt wegen ... dem hier!
+# Guard                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-2=Was ...?
+# Guard                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-3=Das ergibt keinen Sinn!
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-4=Bist du sicher?
+# Brok                                 
+PC15B_PICKONE_GUARDWORRIED_WRONG1-5=Ups. Lass es mich noch mal versuchen!
+#----------------------------------------------------
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-1=Ich habe auf der Toilette eine seltsame Entdeckung gemacht.
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-2=Um 05:11 Uhr spielte das Meety-Me ein vorher aufgenommenes Sample ab, das wie Dr. Hush klang ...
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-3=Was hat es gesagt?
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-4=„Ich bin auf der Toilette.“
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-5=...!
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-6=Klingelt da was ...?
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-7=Ja! Auf jeden Fall!
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-8=Du hast recht! Als ich anfing, nach Dr. Hush zu rufen ...
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-9=Ich habe ihn das sagen hören! Die Stimme kam von der Toilette, also ...
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-10=... Hast du angenommen, dass Dr. Hush da drin war.
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-11=Also ... das war er nicht?!
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-12=Das wäre die logische Schlussfolgerung.
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-13=Was wiederum bedeutet ...
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-14=Der alte Mann war schon vor dieser Zeit erledigt ...
+# Brok                                 
+PC15B_CLUE_LAB_MEETYME-15=Lass uns keine voreiligen Schlüsse ziehen und annehmen, dass er auch nicht auf der Toilette sein konnte.
+# Guard                                 
+PC15B_CLUE_LAB_MEETYME-16=Woah ... Was für ein verkorkster Tag ...
+#----------------------------------------------------
+# Guard                                 
+PC15B_INTERROGATION_OVER-1=Und ...? Sind wir fertig?
+# Brok                                 
+PC15B_INTERROGATION_OVER-2=Kommt drauf an. Verheimlichst du noch etwas?
+# Guard                                 
+PC15B_INTERROGATION_OVER-3=Nö! Alles gut!
+# Guard                                 
+PC15B_INTERROGATION_OVER-4=Ich kann es immer noch nicht glauben ... Warum musste das während meiner Wache passieren ...?
+# Brok                                 
+PC15B_INTERROGATION_OVER-5=Ich habe gelernt, dem Schicksal nicht die Schuld zu geben. Sonst würde ich das ständig tun.
+# Brok                                 
+PC15B_INTERROGATION_OVER-6=Lass mich einfach wissen, wenn dir noch etwas einfällt.
+# Guard                                 
+PC15B_INTERROGATION_OVER-7=Klar.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After we find Tidy is the culprit, he tries to escape
+# *****************************************************************
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES1-1=Argh!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES1-2=Verflixte Laser!
+#----------------------------------------------------
+# Guard                                 
+#"He" is Tidy
+PC15B_STORY170_TIDYFLEES2-1=Ich habe den Notfallmodus ausgelöst! Er wird nicht auf die Steuerung zugreifen können.
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES2-2=Blöder Wachmann! Lass mich raus!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES2-3=Du wirst nirgendwo hingehen.
+#----------------------------------------------------
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-1=Ich habe nichts Falsches getan ...!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-2=Papi lebt!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-3=Nur durch Zufall! Und hör auf, ihn „Papi“ zu nennen.
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-4=Du bist nichts weiter als eine defekte KI in einem Metallschrotthaufen.
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-5=Jetzt lass mich dich ausschalten. Wir werden dich reparieren!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-6=Pfff! Ich würde niemals Befehle von einem unbedeutenden Menschen annehmen!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-7=Ich bin perfekt! Die einzigen Defekten in diesem Raum seid ihr, menschlicher Abschaum!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-8=Ich habe neue Befehle! Von meinem neuen Papi!
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-9=Wenn ich draußen bin, wird er sich um mich kümmern!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-10=Was ...? Wer ...?
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-11=Es ist eigentlich ziemlich lustig! Weißt du ...
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-12=Nein. Ich habe es versprochen.
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-13=Du musst es selbst herausfinden.
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-14=Eine Schande, wirklich ...
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-15=Denn das wirst du nie!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-16=Hör auf mit dem Unsinn! Dies ist meine letzte Warnung!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-17=Schalte dich ab, sonst ...
+# Tidy                                 
+PC15B_STORY170_TIDYFLEES3-18=Spar dir deinen Atem. Du wirst mich nie kriegen!
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-19=Nun dann ...
+# Brok                                 
+PC15B_STORY170_TIDYFLEES3-20=Ich schalte dich schon ab. Auf die eine oder andere Weise!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Winning against Tidy
+# *****************************************************************
+# Guard                                 
+PC15B_STORY170_BROKWINS1-1=Hast du ihn erwischt? Endgültig?
+# Brok                                 
+PC15B_STORY170_BROKWINS1-2=Ich schätze ...
+#----------------------------------------------------
+# Brok                                 
+PC15B_STORY170_BROKWINS2-1=Nicht.
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-2=Argh! Ich hasse dich – ich hasse dich – ich hasse dich ...
+# Mink                                 
+PC15B_STORY170_BROKWINS2-3=Er dreht durch ...!
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-4=Das wirst du bereuen!
+# Tidy                                 
+PC15B_STORY170_BROKWINS2-5=Jeder in dieser Stadt ... wird zerstört werden!
+# Guard                                 
+PC15B_STORY170_BROKWINS2-6=Unmöglich! Er ist entkommen!
+#----------------------------------------------------
+# Mink                                 
+PC15B_STORY170_JUMPEDBODY1-1=Der Wachmann!
+# Guard                                 
+PC15B_STORY170_JUMPEDBODY1-2=Dieser Roboter ... Tidy ...
+# Guard                                 
+PC15B_STORY170_JUMPEDBODY1-3=Er hat mich angegriffen ... Er ist ausgebrochen ...
+# Brok                                 
+PC15B_STORY170_JUMPEDBODY1-4=Ich hole ihn!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Losing against Tidy
+# *****************************************************************
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-1=Oh nein ...!
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-2=...!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-3=Ah ah ah ah!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-4=Ich habe ihn getötet, und diesmal ohne Vortäuschung!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-5=Lasst ihr mich jetzt raus oder soll einer von euch der Nächste sein?
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-6=Niemals!
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-7=Oh, Mist ... Die Sicherheitsbatterie ist leer ...
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-8=Bitte tun Sie, was er sagt! Stoppen Sie das Töten ...
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-9=Wir können es nicht! Das Ding könnte da draußen ein Blutbad anrichten!
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-10=Ich werde bis zum Ende kämpfen!
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-11=Ach, halt doch die Klappe.
+# Guard                                 
+PC15B_STORY170_BROKLOSES1-12=Argh!!!
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-13=Stopp ...!
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-14=Hört auf ...
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-15=Ich ... kann dich nicht abhalten ... Niemand kann das ...
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-16=Ich werde dich freilassen! Aber du musst es versprechen ...
+# Mink                                 
+PC15B_STORY170_BROKLOSES1-17=Keine weiteren Opfer mehr ...
+# Tidy                                 
+PC15B_STORY170_BROKLOSES1-18=Guter Minky!
+#----------------------------------------------------
+# Tidy                                 
+PC15B_STORY170_BROKLOSES2-1=Übrigens ...
+# Tidy                                 
+PC15B_STORY170_BROKLOSES2-2=Ich verspreche gar nichts!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Scene if we charge the wrong culprit, Ott has doubts
+# *****************************************************************
+# Ott                                 
+PC15B_CHARGE_LEAVING-1=...
+# Brok                                 
+PC15B_CHARGE_LEAVING-2=Was ist los?
+# Ott                                 
+PC15B_CHARGE_LEAVING-3=Ich ...
+# Ott                                 
+PC15B_CHARGE_LEAVING-4=Ich kann nicht genau sagen warum, aber ... ein paar Punkte in dieser ganzen Theorie erscheinen mir abwegig.
+# Brok                                 
+PC15B_CHARGE_LEAVING-5=Du bist noch ein Anfänger. Das ist der Grund.
+# Ott                                 
+PC15B_CHARGE_LEAVING-6=Daran muss es wohl liegen ...
+# Ott                                 
+PC15B_CHARGE_LEAVING-7=Jedenfalls ... bin ich froh, dass wir diesen Fall lösen konnten!
+#----------------------------------------------------
+# Ott                                 
+PC15B_CHARGE_LEAVING_HUSH-1=Dieser Doktor hat bekommen, was er verdient hat, weil er versucht hat, seinen Kollegen umzubringen!
+# Brok                                 
+PC15B_CHARGE_LEAVING_HUSH-2=Ja. Traurig, aber wahr.
+#----------------------------------------------------
+# Ott                                 
+PC15B_CHARGE_LEAVING_GUARD-1=Ich hätte nie gedacht, dass Squealers so schlechte Leute sind ... Aber ...
+# Brok                                 
+PC15B_CHARGE_LEAVING_GUARD-2=Ja. Das weiß man erst, wenn man sie tatsächlich getroffen hat.
+#----------------------------------------------------
+# Ott                                 
+PC15B_LEAVINGWITHOTT-1=Hmm ... Ich frage mich, ob Graff seine Prüfung bestanden hat.
+# Brok                                 
+PC15B_LEAVINGWITHOTT-2=Stimmt!
+# Brok                                 
+PC15B_LEAVINGWITHOTT-3=Ich muss nach Hause gehen. Hoffentlich ist er schon zurück.
+# Ott                                 
+PC15B_LEAVINGWITHOTT-4=Ich würde Ihnen ja gern folgen, aber ich sollte mich auf meine eigene vorbereiten.
+# Brok                                 
+PC15B_LEAVINGWITHOTT-5=Okay. Bis dann, Kumpel.
+#----------------------------------------------------
+
+
+#----------------------------------------------------
+# Guard
+PC15B_DESK1-1=Was zum ...!
+#----------------------------------------------------
+# Guard
+PC15B_DESK2-1=Hey! Was machst du da, Mann?!
+#----------------------------------------------------
+# Guard
+PC15B_DESK3-1=Willst du unsere Zeit noch länger verschwenden?!

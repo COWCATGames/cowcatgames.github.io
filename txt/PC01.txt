@@ -1,0 +1,7161 @@
+#-------------------------------
+#=BROK HOME
+#-------------------------------
+
+
+#----------------------
+#= Bed
+#----------------------
+ID=PC01_INTRO0
+T=Noooooooooooo!
+D=180
+BVOICE=BROK
+CONTEXT=Brok is waking up from his nightmare (intro scene).
+
+#----------------------
+ID=PC01_INTRO1
+T=...Huh?...
+W=BROK
+A=CONFUSED
+
+T=...Oh...
+W=BROK
+A=STUPID
+TEN=PC01_INTRO_SHOWGRAFF
+
+
+#----------------------
+ID=PC01_INTRO1B
+T=Morning.
+W=GRAFF
+C1=BROK
+C1A=STUPID
+C2=GRAFF
+C2A=COCKY
+
+T=Another nightmare, huh?
+W=GRAFF
+C2=GRAFF
+C2A=MEH
+
+T=...Erm... I guess...
+W=BROK
+A=TIRED
+
+T=Somebody called you earlier.
+W=GRAFF
+C2=GRAFF
+
+T=Who?
+W=BROK
+A=WONDER
+
+T=How would I know? Check your phone.
+W=GRAFF
+C2=GRAFF
+C2A=TURN
+
+T=Right...
+W=BROK
+A=MAYBE
+TEN=PC01_INTRO_SHOW_PHONECALL
+
+#----------------------
+ID=PC01_INTRO2
+T=Whoa! Six phone calls? From the same guy?!
+W=BROK
+A=SURPRISED
+
+T=I'd better call them back!
+W=BROK
+A=STUPID
+TEN=PC01_INTRO_MENU_PHONECALL2
+
+T=...
+W=BROK
+A=THINK
+
+T=Ah! Finally! I thought you'd never reply!
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=WORRIED
+TEB=PC01_INTRO_MENU_PHONECALL_END
+
+T=Yeah, sorry... I had, err... personal issues!
+W=BROK
+C1A=HAPPY
+
+T=So, tell me. Your name is Sin? You need my services?
+W=BROK
+C1A=MAYBE
+
+T=Of course I do! You're my last hope!
+W=SIN
+C1A=SURPRISED
+C2A=WORRIED
+
+T=Please come to my apartment! I've sent you the address.
+W=SIN
+
+T=Wait... Aren't you gonna tell...
+W=BROK
+C1A=WONDER
+
+T=There's no time! And the line could be tapped!
+W=SIN
+C1A=ANGRY
+
+T=Oh... 'Kay...
+W=BROK
+
+T=Hurry!
+W=SIN
+TEN=PC01_INTRO_MENU_PHONECALL_END2
+
+T=...
+W=BROK
+C1A=DOWN
+C2=NONE
+SOUND=phone_end
+
+T=(Sigh) Why do I only get weird clients...
+W=BROK
+
+T=I'd better get ready.
+W=BROK
+C1A=OPPOSITE
+TEN=PC01_INTRO_FADEOUT
+
+
+
+#----------------------
+#= Punching bag
+#----------------------
+ID=PC01_PUNCHINGBAG1
+T=My good ol' sparring partner! It's had rough days but it's still kickin'!
+W=BROK
+A=HAPPY
+CONTEXT=Room interactions
+
+T=Whenever I feel like hittin' something, it's there for me!
+W=BROK
+A=ALRIGHT
+
+T=I can gain some experience by throwing a few punches! Just have to get myself into fighting position.
+W=BROK
+A=MOCK
+
+#----------------------
+ID=PC01_PUNCHINGBAG_DEATH1
+T=...Whoops.
+W=BROK
+A=SURPRISED
+TEN=PC01_PUNCHINGBAG_DEATH_CHECKGRAFF
+
+#----------------------
+ID=PC01_PUNCHINGBAG_DEATH1B
+T=You're such a lout.
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=TURN
+
+
+#----------------------
+ID=PC01_PUNCHINGBAG_BACK1
+T=Maybe I should put it back up.
+W=BROK
+A=THINK
+TEN=PC01_PUNCHINGBAG_CHOICE
+
+#----------------------
+#= Magnifying glass
+#----------------------
+ID=PC01_MAGNIFY1
+T=What would a detective be without a magnifying glass? 
+W=BROK
+A=ALRIGHT
+
+T=Not exactly high tech, but that's how I like it.
+W=BROK
+A=HAPPY
+
+T=I should take it.
+W=BROK
+A=THINK
+TEN=PC01_MAGNIFY_TAKE
+
+#----------------------
+#= Plant
+#----------------------
+ID=PC01_PLANT1
+T=I bought it to bring some oxygen to the room. But it looks like it's dying...
+W=BROK
+A=DOWN
+
+T=Putting a plant in an underground apartment wasn't such a good idea. 
+W=BROK
+A=TIRED
+
+#----------------------
+#= Fridge
+#----------------------
+ID=PC01_FRIDGE_FIRST
+T=Hmm... Not much left.
+W=BROK
+A=DOWN
+TEN=PC01_FRIDGE_INSTRUCTIONS
+
+#----------------------
+ID=PC01_DOORFRIDGE_STICK
+T=My hand should be enough!
+W=BROK
+A=COCKY
+
+#----------------------
+#= Fridge drink
+#----------------------
+ID=PC01_FRIDGE_DRINK
+T=Ah... I remember! Someone paid me with this energy drink.
+W=BROK
+A=SURPRISED
+
+T=I'll take it! Might get thirsty on the way.
+W=BROK
+A=HAPPY
+TEN=PC01_FRIDGE_DRINK_TAKE
+
+
+#----------------------
+#= Fridge cheese
+#----------------------
+ID=PC01_FRIDGE_CHEESE1
+T=Urgh... Goat cheese.
+W=BROK
+A=OPPOSITE
+
+T=I buy these for Graff. I refuse to eat something produced by another person's body. Gross!
+W=BROK
+A=OPPOSITE
+
+
+#----------------------
+#= Advert
+#----------------------
+ID=PC01_FRIDGE_ADVERT1
+T=What's that?... Some kind of paper?
+W=BROK
+A=WONDER
+
+T=Yup! That's an ad. Must have come with food we bought.
+W=BROK
+A=HAPPY
+TEN=PC01_FRIDGE_ADVERT_TAKE
+
+#----------------------
+#= Bed Advert
+#----------------------
+ID=PC01_BED_ADVERT1
+T=Hey! This probably came up with the "Chili Con Insect" I ate in bed last night!
+W=BROK
+A=HAPPY
+TEN=PC01_BED_ADVERT_TAKE
+
+#----------------------
+#= Picture
+#----------------------
+ID=PC01_PICTURE1
+T=Lia...
+W=BROK
+A=DOWN
+
+T=I still can't make any sense of these nightmares... It didn't happen that way. I wasn't there.
+W=BROK
+A=DOWN
+
+#----------------------
+ID=PC01_PICTURE_CLOSEUP1
+T=The only picture I have left.
+W=BROK
+A=DOWN
+
+T=We were happy together... Even if it was short-lived.
+W=BROK
+A=DOWN
+
+
+#----------------------
+#= Fruits cup
+#----------------------
+ID=PC01_FRUITCUP1
+T=Pampalos fruits.
+W=BROK
+A=MAYBE
+
+T=These cost a fortune and are full of chemicals, but I like to eat real food!
+W=BROK
+A=MEH
+TEN=PC01_FRUITCUP_TAKE
+
+#----------------------
+ID=PC01_FRUITCUP1B
+T=I'll leave the other one for Graff.
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=You know I don't like those.
+W=GRAFF
+C2=GRAFF
+C2A=YUCK
+
+T=But ya gotta eat solid stuff! Can't grow up with sodas.
+W=BROK
+C1A=READY
+
+T=I mean... Can't I?
+W=GRAFF
+C2A=TURN
+C1A=STUPID
+
+#----------------------
+ID=PC01_FRUITCUP2
+T=I already took a Pampalos fruit. Should be enough.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC01_FRUITCUP_NOTHING
+T=Nothing left.
+W=BROK
+A=THINK
+
+
+
+#----------------------
+#= Graff bedroom
+#----------------------
+ID=PC01_GRAFFBED1
+T=It almost fills the room.
+W=BROK
+A=THINK
+
+#----------------------
+#= Bedroom door
+#----------------------
+ID=PC01_BEDROOMDOOR_GRAFF1
+T=Hey! Where do you think you're going?
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=ANGRY
+
+T=Erm... Your room?
+W=BROK
+C1A=HAPPY
+
+T=Yes. My room.
+W=GRAFF
+C2A=MEH
+
+T=Alright, alright! But I gotta clean it sometimes.
+W=BROK
+C1A=ANGRY
+
+T=No, we have an Auto-Clean Tribot for that.
+W=GRAFF
+
+T=...True.
+W=BROK
+C1A=DOWN
+
+#----------------------
+ID=PC01_BEDROOMDOOR_GRAFF2
+T=Paws off!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=ANGRY
+
+T=Sorry!
+W=BROK
+C1A=HAPPY
+
+#----------------------
+ID=PC01_BEDROOMDOOR_ALONE
+T=I'll leave him alone...
+W=BROK
+A=HEARTBROKEN
+
+
+#----------------------
+#= Bedroom door
+#----------------------
+ID=PC01_CALL_GRAFF_THERE1
+T=Huh...? Why are you calling me...?
+W=GRAFF
+C1=BROK
+C1A=WONDER
+C2=GRAFF
+C2A=MEH
+CONTEXT=Trying to call on the phone in this room
+
+T=Oh... Sorry! My finger slipped!
+W=BROK
+C1A=HAPPY
+
+T=Seriously...
+W=GRAFF
+C2A=TURN
+
+T=Hey, yer lucky to have tiny paws! It's not easy for me.
+W=BROK
+C1A=MOCK
+TEN=INTERFACE_CALL_END
+
+#----------------------
+ID=PC01_CALL_GRAFF_THERE2
+T=Better not. He's already in a bad mood.
+W=BROK
+C1=BROK
+C1A=MAYBE
+
+
+#----------------------
+#= On table
+#----------------------
+ID=PC01_GRAFF_TABLE
+T=What the...? What are you doing?!
+W=GRAFF
+C1=BROK
+C1A=READY
+C2=GRAFF
+C2A=SURPRISED
+D=60
+NB=1
+CONTEXT=Jumping on the table
+
+T=Just... training!
+W=BROK
+D=60
+
+T=...
+W=GRAFF
+C2A=GASP
+D=60
+
+#----------------------
+#= Talking to Graff
+#----------------------
+ID=PC01_GRAFF_WELCOME1
+T=Hey. How're ya doin'?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+CONTEXT=Player talks to Graff on first day
+
+T=Don't you have some errand? Don't mind me.
+W=GRAFF
+C2A=OPPOSITE
+
+T=But... I just wanna have a lil' chat before I go.
+W=BROK
+C1A=MAYBE
+
+T=Alright. What is it?
+W=GRAFF
+C2A=TURN
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_WELCOME2
+T=Hey!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+
+T=What now?
+W=GRAFF
+C2A=OPPOSITE
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC01_GRAFF1
+T=How are ya lately?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+
+T=I'm okay.
+W=GRAFF
+
+T=You're sure...? You don't seem very...
+W=BROK
+C1A=WONDER
+
+T=I said I'M OKAY! Got it?!
+W=GRAFF
+C1A=CONFUSED
+C2A=ANGRY
+
+T=Alright...
+W=BROK
+C1A=DOWN
+
+T=(He's stressed out...)
+W=BROK
+MOOD=THINK
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+#----------------------
+ID=PC01_GRAFF2
+T=Look... I know I haven't been there a lot lately, what with all my work...
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+C2=GRAFF
+C2A=MEH
+
+T=No problem. It's your life.
+W=GRAFF
+C2A=OPPOSITE
+
+T=But you're a part of it... Even if we have no blood ties...
+W=BROK
+C1A=DOWN
+
+T=I'm in the middle of a game. Did you really interrupt me for that claptrap?
+W=GRAFF
+C2A=TURN
+
+T=(Sigh) Kids...
+W=BROK
+C1A=TIRED
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC01_GRAFF_THINK1
+T=(This is Graff. I've been taking care of him since his mother died five years ago.)
+W=BROK
+C1=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(Hard to believe it's been that long. I've been so busy trying to make ends meet, I've barely seen him grow up...)
+W=BROK
+C1A=TIRED
+MOOD=THINK
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_SCHOOL1
+T=How come you're not at school?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=You mean the Consciousness Center.
+W=GRAFF
+C2A=DISDAIN
+
+T=Whatever. It used to be called "school" in my day.
+W=BROK
+C1A=MEH
+
+T=I'm taking at 10. My Eco-Manager teacher broke his ankle.
+W=GRAFF
+C2A=COCKY
+COMM=Not important. Consider this teacher is male.
+
+T=He doesn't have a Medi-Tribot! Can you believe it?!
+W=GRAFF
+C2A=TURN
+
+T=We don't either.
+W=BROK
+C1A=ALRIGHT
+
+T=Yeah, but that's only because you're poor as a church mouse. School teachers are Drumers.
+W=GRAFF
+C2A=HAPPY
+
+T=Yeah. A bunch of arrogant people who can't move a finger without a doohickey to help'em.
+W=BROK
+C1A=OPPOSITE
+
+T=Yet you married one.
+W=GRAFF
+C2A=TURN
+
+T=Right... Your mom was different.
+W=BROK
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_SCHOOL2
+T=About school... I mean, the "Consc'..."
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=The fair is today!
+W=GRAFF
+C2A=READY
+
+T=What fair?
+W=BROK
+C1A=WONDER
+
+T=The science fair! Don't tell me you already forgot?!
+W=GRAFF
+C2A=TURN
+
+T=Oh. Err...
+W=BROK
+
+T=It's in the regulations! The presence of a parent or tutor is required for the vote.
+W=GRAFF
+C1A=MAYBE
+C2A=MEH
+
+T=You must be there at 5 o'clock!
+W=GRAFF
+C2A=ANGRY
+
+T=Okay, okay! I'll come! I promise!
+W=BROK
+C1A=READY
+
+T=You better.
+W=GRAFF
+C2A=TURN
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_FAIR1
+T=Did you prepare somethin' for that fair?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=MEH
+
+T=Sure! The "Graff Recycler 110".
+W=GRAFF
+C2A=HAPPY
+
+T=I've been working on it for months!
+W=GRAFF
+
+T=Ahhh... So that's why you were so noisy in your room lately?
+W=BROK
+C1A=MOCK
+
+T=Don't blame me! If the walls were better insulated, you wouldn't have to complain.
+W=GRAFF
+C2A=DISDAIN
+
+T=Not complaining... Just curious.
+W=BROK
+
+T=And yeah... I wish we could afford a better apartment.
+W=BROK
+C1A=DOWN
+
+T=But for now, we'll have to make do.
+W=BROK
+
+T=Hopefully not for long. When I get my diploma...
+W=GRAFF
+C2A=READY
+
+T=Yeah. You'll have a new home... under the Dome.
+W=BROK
+
+T=Can't wait!
+W=GRAFF
+
+T=...
+W=BROK
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC01_GRAFF_FAIR2
+T=Don't forget! 5 o'clock.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=Erm... What happens at 5 o'clock...?
+W=BROK
+C1A=WONDER
+
+T=The fair!!!
+W=GRAFF
+C2A=ANGRY
+
+T=Just kiddin'! Don't worry!
+W=BROK
+C1A=HAPPY
+
+T=(Sigh)
+W=GRAFF
+C2A=TURN
+TEN=PC01_GRAFF_CHOICES
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_INV_DEFAULT1
+T=Do you want this? It's pretty cool!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GRAFF
+C2A=MEH
+CONTEXT=Showing inventory to Graff
+
+T=Don't you have a client waiting for you?
+W=GRAFF
+C2A=TURN
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_INV_DEFAULT2
+T=Hey, take a look at...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+SKIPEND=1
+
+T=Later.
+W=GRAFF
+C1A=DOWN
+C2A=OPPOSITE
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_INV_MONEY1
+T=Hey, you want some pocket money?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=Oh, sure!
+W=GRAFF
+C2A=HAPPY
+
+T=You know my account is limited.
+W=GRAFF
+
+T=I prefer you give it to me directly instead of asking an AI for some.
+W=GRAFF
+C2A=FRIENDLY
+TEN=PC01_GRAFF_INV_MONEY_CHOICE
+IT=1
+
+
+#----------------------
+ID=PC01_GRAFF_INV_MONEY_GIVE1
+T=Here. 30 Unis.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=Awesome. Thanks!
+W=GRAFF
+C2A=HAPPY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_INV_MONEY_NO
+T=Okay. I'll think about it.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GRAFF
+C2A=MEH
+
+T=What...? I thought you'd give it to me now.
+W=GRAFF
+C2A=SURPRISED
+
+T=I will. Later.
+W=BROK
+
+T=Hmmph.
+W=GRAFF
+C2A=TURN
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC01_GRAFF_INV_MONEY2
+T=Thanks again.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=HAPPY
+
+T=What will you buy with it?
+W=BROK
+
+T=I'm not sure. Food, probably.
+W=GRAFF
+C2A=THINK
+
+T=Did you check our fridge?
+W=GRAFF
+C2A=DISDAIN
+
+T=Yeah...
+W=BROK
+C1A=DOWN
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_INV_PENDANT
+T=This was your mother's.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GRAFF
+C2A=MEH
+
+T=So...?
+W=GRAFF
+C2A=THINK
+
+T=Why are you showing me this now?
+W=GRAFF
+
+T=Well...
+W=BROK
+C1A=MAYBE
+
+T=Someday it'll be yours.
+W=BROK
+
+T=Great.
+W=GRAFF
+C2A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC01_GRAFF_EXIT1
+T=Take care!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+CONTEXT=Stop talking to Graff
+
+T=Yeah...
+W=GRAFF
+C2A=OPPOSITE
+
+
+#----------------------
+ID=PC01_GRAFF_EXIT2
+T=Gotta go.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+
+T=OK.
+W=GRAFF
+
+
+#----------------------
+ID=PC01_GRAFF_LEAVEFIRST
+T=...I ought to say a word or two to Graff before leaving.
+W=BROK
+A=THINK
+
+
+#----------------------
+#= Graff HIT!
+#----------------------
+ID=PC01_GRAFF_HIT1
+T=Awww!!!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=GASP
+CONTEXT=Hitting Graff
+
+T=What got into you?
+W=GRAFF
+C2A=ANGRY
+
+T=Erm... Sorry...
+W=BROK
+C1A=DOWN
+
+#----------------------
+ID=PC01_GRAFF_HIT2
+T=ARGH!!!
+W=GRAFF
+C1=BROK
+C1A=ANGRY
+C2=GRAFF
+C2A=ANGRY
+
+T=ARE YOU CRAZY?! That's not funny!
+W=GRAFF
+
+T=Maybe you should quit playing those games! They're making you violent!
+W=BROK
+C1A=ANGRY
+
+T=What...?! You're the violent one!
+W=GRAFF
+
+
+#----------------------
+ID=PC01_GRAFF_HIT3
+T=...
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=TURN
+TEN=PC01_GRAFF_HITLAST
+
+#----------------------
+ID=PC01_GRAFF_HITLEAVES1
+T=I HATE YOU!!!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=ANGRY
+TEN=PC01_GRAFF_HITLEAVES
+
+
+
+
+#----------------------
+ID=PC01_GRAFF_HITLEAVES2
+T=...
+W=BROK
+A=MAYBE
+
+T=He'll get over this...
+W=BROK
+A=MAYBE
+
+T=I hope.
+W=BROK
+A=STUPID
+
+
+#----------------------
+ID=PC01_GRAFF_HITBEDROOMDOOR1
+T=Hey...!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+NB=1
+D=60
+CONTEXT=Hitting door
+
+#----------------------
+ID=PC01_GRAFF_HITBEDROOMDOOR2
+T=Stop it! You'll break my door!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+NB=1
+D=60
+
+
+#----------------------
+ID=PC01_GRAFF_HITBEDROOMDOOR3
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+NB=1
+D=60
+
+
+#----------------------
+ID=PC01_GRAFF_HITBEDROOMDOOR4
+T=Oops...!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=GRAFF
+C2A=STUPID
+
+T=That's it. You're mental.
+W=GRAFF
+C2A=TORN
+TEN=PC01_HITBEDROOMDOOR
+
+#----------------------
+ID=PC01_HITBEDROOMDOOR
+T=It didn't break. Just unhinged.
+W=BROK
+A=HAPPY
+
+T=I'll put it back.
+W=BROK
+A=ALRIGHT
+TEN=PC01_HITBEDROOMDOOR_FADEOUT
+
+#----------------------
+#= Stick
+#----------------------
+ID=PC01_STICK1
+T=My stick!
+W=BROK
+A=HAPPY
+CONTEXT=More room interactions
+
+T=This belonged to grandpa. He barely used it to walk but he taught me to fight with it!
+W=BROK
+A=MOCK
+
+TEN=PC01_STICK_TAKE
+
+
+
+#----------------------
+#= Dish
+#----------------------
+ID=PC01_DISH1
+T=It's your turn.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=COCKY
+
+T=What, already? Didn't I do it yesterday?
+W=BROK
+C1A=SURPRISED
+
+T=No. Last week.
+W=GRAFF
+
+T=Man... Time flies.
+W=BROK
+C1A=STUPID
+
+
+#----------------------
+ID=PC01_DISH2
+T=I don't have time to do the dishes right now.
+W=BROK
+A=ANGRY
+TEN=PC01_DISH_GRAFFTHERE
+
+#----------------------
+ID=PC01_DISH3
+T=As usual...
+W=GRAFF
+C1=BROK
+C1A=ANGRY
+C2=GRAFF
+C2A=TURN
+
+
+#----------------------
+ID=PC01_DISH_POSSIBLE
+T=Hmm...
+W=BROK
+A=THINK
+TEN=PC01_DISH_ASK
+
+#----------------------
+ID=PC01_DISH_DOING
+T=(Cleaning...)
+NB=1
+D=240
+TEXTONLY=1
+
+#----------------------
+ID=PC01_DISH_DONE
+T=Done!
+W=BROK
+A=HAPPY
+
+#----------------------
+#= Clothes
+#----------------------
+ID=PC01_CLOTHES1
+T=I know, it's a mess...
+W=BROK
+A=DISAPPOINTED
+
+T=But I'm used to it now! Gotta make the best out of each tiny bit of space available!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC01_CLOTHES2
+T=No need to change clothes right now! I've wearing my favorites!
+W=BROK
+A=HAPPY
+
+
+#----------------------
+#= Clothes ad
+#----------------------
+ID=PC01_CLOTHES_ADVERT1
+T=Oh, there's an ad under my clothes!
+W=BROK
+A=HAPPY
+
+T=That could be useful!
+W=BROK
+A=HAPPY
+TEN=PC01_CLOTHES_ADVERT_TAKE
+
+
+#----------------------
+#= Music instrument
+#----------------------
+ID=PC01_INSTRUMENT1
+T=A katshu. I used to play this instrument when I was young.
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC01_INSTRUMENT2
+T=I'm afraid I forgot how to play the katshu. These days I barely have time for any kind of leisure...
+W=BROK
+A=DOWN
+
+#----------------------
+#= Chest
+#----------------------
+ID=PC01_CHEST1
+T=Lia passed this on to Graff.
+W=BROK
+A=THINK
+
+T=I promised myself I would never open it.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Drawer
+#----------------------
+ID=PC01_DRAWER1
+T=Nah. That's private stuff.
+W=BROK
+A=THINK
+
+
+#----------------------
+#= Brok's Bed
+#----------------------
+ID=PC01_BED1
+T=My bed.
+W=BROK
+A=THINK
+
+T=Well... Rather a mattress, I guess.
+W=BROK
+A=MAYBE
+
+T=Good enough for me! I don't have much time to sleep anyway.
+W=BROK
+A=HAPPY
+TEN=PC01_BED_CHECKHEALTH
+
+#----------------------
+
+ID=PC01_BED_HEALTH
+T=Maybe I should take a quick shut-eye...
+W=BROK
+A=TIRED
+TEN=PC01_BED_CHOICE
+
+#----------------------
+ID=PC01_BED_HEALTH_BACK1
+T=Aaah! Much better.
+W=BROK
+A=COCKY
+
+#----------------------
+ID=PC01_BED_HEALTH_BACK2
+T=Look at the time! Better get going.
+W=BROK
+A=SURPRISED
+
+
+#----------------------
+#= Mess
+#----------------------
+ID=PC01_MESS1
+T=Whoa... Too much stuff. I have more urgent business to attend to.
+W=BROK
+A=SURPRISED
+
+#----------------------
+#= Computer
+#----------------------
+ID=PC01_COMPUTER1
+T=Shay gave us this. Graff is constantly using it.
+W=BROK
+A=MAYBE
+
+T=Pretty sure this old thing eats half of our monthly energy bill but I don't have the heart to deprive him.
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Bed
+#----------------------
+ID=PC01_GRAFF_BED
+T=What are you? Three years old?
+W=GRAFF
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=COCKY
+D=60
+NB=1
+CONTEXT=Jumping on the bed
+
+T=I'm... just testing the resistance of my bed!
+W=BROK
+C1A=HAPPY
+D=60
+
+T=Yeah, right...
+W=GRAFF
+C2A=DISDAIN
+D=60
+
+#I wonder how long it's been there...
+
+
+#---------------------------
+#= Graff not there anymore
+#---------------------------
+ID=PC01_GRAFF_AWAY1
+T=...Looks like Graff went to school.
+W=BROK
+A=THINK
+CONTEXT=Coming back to the room
+
+#---------------------------
+#= Graff still there
+#---------------------------
+ID=PC01_GRAFF_BACK1
+T=Back already?
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=COCKY
+
+T=Yeah, I... forgot somethin'.
+W=BROK
+C1A=HAPPY
+
+T=Typical.
+W=GRAFF
+C2A=TURN
+
+
+#---------------------------
+#= Hoover
+#---------------------------
+ID=PC01_HOOVER1
+T=Hey! What's going on with the Auto-Clean Tribot...?
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=TURN
+TEN=PC01_HOOVER_CHECK
+CONTEXT=The hoover blocks the door
+
+#---------------------------
+ID=PC01_HOOVER1_GRAFF
+T=Dunno. Been stuck like that since morning.
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=TURN
+TEN=PC01_HOOVER1B
+
+#---------------------------
+ID=PC01_HOOVER1B
+T=Maybe I should...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=TURN
+TEN=PC01_HOOVER_TOUCH
+
+#---------------------------
+ID=PC01_HOOVER1C
+T=Argh!!!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=SURPRISED
+
+T=That thing electrocuted me!
+W=BROK
+C1A=CONFUSED
+TEN=PC01_HOOVER_CHECK2
+
+#---------------------------
+ID=PC01_HOOVER1C_GRAFF
+T=Oh, well. Looks like we're both stuck at home today.
+W=GRAFF
+C1=BROK
+C1A=CONFUSED
+C2=GRAFF
+C2A=STUPID
+
+T=Impossible! I need to get rid of it!
+W=BROK
+C1A=ANGRY
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------
+ID=PC01_HOOVER2
+T=Gotta get rid of it without touching it with my hands...
+W=BROK
+A=OPPOSITE
+
+#---------------------------
+ID=PC01_HOOVER_ACTION
+T=Yes! Good idea! But...
+W=BROK
+A=THINK
+
+T=When I wanna destroy something, I should put myself in action mode first... Then hit it!
+W=BROK
+A=COCKY
+
+#---------------------------
+ID=PC01_HOOVER_OTHERS
+T=Not sure I can get rid of it with that...
+W=BROK
+A=THINK
+
+T=It's too short. I might touch that dangerous machine.
+W=BROK
+A=WONDER
+
+
+#---------------------------
+ID=PC01_HOOVER_DOOR1
+T=Can't... That cleaning bot prevents me from reaching the handle!
+W=BROK
+A=ANGRY
+
+#---------------------------
+ID=PC01_HOOVER_DESTROY1
+T=Sorry, lil' bot...
+W=BROK
+C1=BROK
+C1A=DOWN
+TEN=PC01_HOOVER_CHECKGRAFF1
+
+
+#---------------------------
+ID=PC01_HOOVER_DESTROY1B
+T=Great. Who's gonna do the cleaning now?
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=TURN
+
+T=Don't worry. I'll have Shay fix it.
+W=BROK
+C1A=ALRIGHT
+TEN=PC01_HOOVER_TAKE
+
+#---------------------------
+ID=PC01_HOOVER_DESTROY2
+T=Hmm... The tank is full...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=It collected a lot of fur. Must be what caused the issue.
+W=BROK
+TEN=PC01_HOOVER_CHECKGRAFF2
+
+#---------------------------
+ID=PC01_HOOVER_DESTROY2B
+T=Not my fault! Don't look at me like that!
+W=GRAFF
+C1A=THINK
+C1=BROK
+C2=GRAFF
+C2A=GASP
+
+T=Oh no... Shouldn't have touched it - now I'm covered in cat fur...
+W=BROK
+C1A=CONFUSED
+TEN=PC01_CATFUR_TAKE
+
+
+#---------------------------
+ID=PC01_HOOVER_DIEBY
+T=What...?
+W=GRAFF
+A=SURPRISED
+TEN=GAMEOVER
+
+
+#---------------------------------------------------------------------------------------
+#= Day one ending cutscene
+#= Brok arrived just on time
+#---------------------------------------------------------------------------------------
+ID=PC01_STORY110_ONTIME1
+T=That was close...
+W=GRAFF
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=MEH
+
+T=We made it! That's the important part.
+W=BROK
+C1A=ALRIGHT
+
+T=You don't realize...
+W=GRAFF
+C1A=WONDER
+C2A=TURN
+TEN=PC01_STORY110_ONTIME_GRAFFTURN
+
+T=One more minute and all those years of work would have been annihilated!
+W=GRAFF
+
+T=What's your excuse this time?
+W=GRAFF
+C1A=DOWN
+TEN=PC01_STORY110_EXCUSECHOICE
+CONTEXT=Day one ending cutscene : If Brok arrives on time, there's no (real) problem.
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_STORY110_ONTIME2
+T=Don't you dare do that to me again!
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=OPPOSITE
+TEN=PC01_STORY100_GRAFFENTERS
+
+T=I'm sorry...
+W=BROK
+TEN=PC01_STORY110_ONTIME_NEXT
+
+#---------------------------------------------------------------------------------------
+ID=PC01_STORY110_ONTIME3
+T=(Sigh)
+W=BROK
+C1=BROK
+C1A=TIRED
+
+T=He's right.
+W=BROK
+TEN=PC10_STORY110_ONTIME_AFTER
+
+#---------------------------------------------------------------------------------------
+#= Day one ending cutscene
+#= Graff got 0 because Brok didn't come
+#---------------------------------------------------------------------------------------
+ID=PC01_STORY110_NORMAL1
+T=Graff!
+W=BROK
+C1=BROK
+C1A=YELL
+CONTEXT=Day one ending cutscene : Graff got "0" because Brok didn't arrive on time for the science fair
+
+T=Please... Talk to me!
+W=BROK
+C1A=READY
+
+T=...
+W=GRAFF
+C2=GRAFF
+C2A=TURN
+
+T=I got a message from the school but...
+W=BROK
+C1A=WONDER
+
+T=I... I need to hear it. From you.
+W=BROK
+C1A=DOWN
+
+T=...
+W=GRAFF
+C2A=SAD
+
+T=Simple.
+W=GRAFF
+
+T=They've decided to advance the year's trials this week, and made the science fair a part of it.
+W=GRAFF
+
+T=You weren't there, so I got a zero.
+W=GRAFF
+TEN=PC01_MUSICTENSE_START
+
+T=Zero. Nil. Nada. Zip!
+W=GRAFF
+C2A=ANGRY
+
+T=Oh...
+W=BROK
+C1A=DISAPPOINTED
+
+T=Look. I'm...
+W=BROK
+
+T=Sorry?
+W=GRAFF
+
+T=That's all you have to say? You're sorry?!
+W=GRAFF
+C1A=HEARTBROKEN
+
+T=I told you! You needed to come!
+W=GRAFF
+
+T=You broke your promise! Again!
+W=GRAFF
+C2A=TURN
+
+T=Well, I did come...
+W=BROK
+C1A=MAYBE
+
+T=An hour late!!!
+W=GRAFF
+C2A=ANGRY
+
+T=I know...
+W=BROK
+C1A=DISAPPOINTED
+
+T=What's your excuse this time?
+W=GRAFF
+
+T=Erm...
+W=BROK
+TEN=PC01_STORY110_EXCUSECHOICE
+
+
+#---------------------------------------------------------------------------------------
+# Truth
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_TRUTH1
+T=My investigation took an unexpected turn.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=GRAFF
+C2A=MEH
+
+T=I ended up in jail. I had to escape to...
+W=BROK
+C1A=MAYBE
+SKIPEND=1
+
+T=Jail?!
+W=GRAFF
+C2A=SURPRISED
+
+T=Are you a criminal? Is that what you're hiding from me?!
+W=GRAFF
+C2A=TURN
+
+T=No, of course not...!
+W=BROK
+C1A=READY
+
+T=I can explain...
+W=BROK
+C1A=TIRED
+SKIPEND=1
+
+T=Stop. I don't wanna hear anymore.
+W=GRAFF
+TEN=PC01_STORY110_AFTERCHOICEEV
+
+
+#---------------------------------------------------------------------------------------
+# Lie
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_LIE1
+T=Had a problem with my phone. The time was off.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=GRAFF
+C2A=MEH
+
+T=It was an hour late, so... I arrived too late.
+W=BROK
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=...
+W=GRAFF
+
+T=Next time you lie to me, at least find something more believable.
+W=GRAFF
+C2A=TURN
+
+T=It's true! I swear!
+W=BROK
+C1A=READY
+
+T=Ok. Show me your phone.
+W=GRAFF
+C2A=OPPOSITE
+
+T=Erm...
+W=BROK
+C1A=WONDER
+
+T=But... I fixed it...
+W=BROK
+
+T=Right...
+W=GRAFF
+TEN=PC01_STORY110_AFTERCHOICEEV
+
+#---------------------------------------------------------------------------------------
+# No reply
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_NOREPLY1
+T=I... can't tell you.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=GRAFF
+C2A=MEH
+
+T=Of course not! Typical.
+W=GRAFF
+C2A=TURN
+
+T=Believe me, I've tried but...
+W=BROK
+TEN=PC01_STORY110_AFTERCHOICEEV
+
+
+#---------------------------------------------------------------------------------------
+# After the choice
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_AFTERCHOICE
+T=Do you even realize...?
+W=GRAFF
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=MEH
+
+T=I killed myself working on this project. Made sure everything worked well.
+W=GRAFF
+
+T=All this work... The hours I poured into it...
+W=GRAFF
+C2A=TURN
+
+T=All for nothing!
+W=GRAFF
+C2A=ANGRY
+
+T=Because of you!
+W=GRAFF
+C1A=WORRIED
+
+T=...
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC01_STORY100_GRAFFENTERS
+
+T=I hate you!
+W=GRAFF
+
+T=Graff...
+W=BROK
+C2=NONE
+
+T=(Sigh)
+W=BROK
+
+T=Great job, Brok...
+W=BROK
+
+T=This time you really blew it.
+W=BROK
+TEN=PC01_STORY110_GRAFFANGRYCHECK
+
+#---------------------------------------------------------------------------------------
+# Graff totally broke all machines
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_BROKEN1
+T=Graff!
+W=BROK
+C1=BROK
+C1A=YELL
+
+T=Hold on!
+W=BROK
+C1A=ANGRY
+
+T=...
+W=GRAFF
+C2=GRAFF
+C2A=TURN
+
+T=I got a message from the school! What does this mean...?
+W=BROK
+
+T=Excluded? What the heck happened?!
+W=BROK
+C1A=MAYBE
+
+T=Simple.
+W=GRAFF
+C2A=DISDAIN
+TEN=PC01_MUSICTENSE_START
+
+T=I busted the whole thing! Smashed into everything! Klay, the inventions...
+W=GRAFF
+C2A=READY
+
+T=That's one event they'll remember for years to come! That will teach them!
+W=GRAFF
+C2A=ANGRY
+
+T=Are you crazy?! What got into you?!
+W=BROK
+C1A=ANGRY
+
+T=I didn't raise you like this!
+W=BROK
+
+T=Raise?! Are you kidding me?
+W=GRAFF
+
+T=You're never home!
+W=GRAFF
+
+T=Wait a minute... Are you putting the blame on me?!
+W=BROK
+C1A=ANGRY
+
+T=Shouldn't I?
+W=GRAFF
+
+T=After all, you didn't keep your promise! Again!
+W=GRAFF
+
+T=Is that so?! You couldn't wait, so you caused havoc?!
+W=BROK
+C1A=FURIOUS
+
+T=No, but...
+W=GRAFF
+C2A=TURN
+
+T=Then explain!
+W=BROK
+
+T=Why...?
+W=BROK
+C1A=MAYBE
+
+T=I don't know! I just...
+W=GRAFF
+
+T=I'm just... furious...
+W=GRAFF
+C2A=TORN
+
+T=With me?
+W=BROK
+C1A=DOWN
+
+T=Yes... No...
+W=GRAFF
+
+T=Argh! Cut me some slack, will ya?
+W=GRAFF
+C2A=ANGRY
+
+T=...
+W=BROK
+C1A=DISAPPOINTED
+
+T=You know... I'm here, if you wanna talk about...
+W=BROK
+
+T=No! Are you even listening?!
+W=GRAFF
+TEN=PC01_STORY100_GRAFFENTERS
+
+T=Leave me alone!
+W=GRAFF
+C2A=SAD
+
+T=...
+W=BROK
+
+T=What a day...
+W=BROK
+TEN=PC01_STORY110_GRAFFANGRYCHECK
+
+#---------------------------------------------------------------------------------------
+# After Graff got 0 because he didn't come
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_BROKREDEEM1
+T=I need to find a way to redeem myself.
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Somehow...
+W=BROK
+
+T=Tomorrow. The school. No matter how or what.
+W=BROK
+C1A=READY
+
+T=I gotta convince them to put the blame on me and give him the mark his work deserves.
+W=BROK
+TEN=PC01_STORY100_COOKING1EV
+
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY100_COOKING1
+T=But...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=I gotta do something right now... or I'll never be able to sleep.
+W=BROK
+C1A=READY
+
+T=It's getting late.
+W=BROK
+C1A=WONDER
+
+T=...
+W=BROK
+
+T=I wish you were here, Grandpa. You always knew what to do for me.
+W=BROK
+C1A=MAYBE
+
+T=...
+W=BROK
+
+T=I know!
+W=BROK
+C1A=HAPPY
+
+T=Grandpa always said: "Eating is the best stress reliever!"
+W=BROK
+
+T=I'll prepare dinner for him! The best food he's ever had!
+W=BROK
+C1A=MOCK
+
+T=Nobody can resist my cooking!
+W=BROK
+
+T=Now... Let's see what I can gather!
+W=BROK
+C1A=READY
+TEN=PC01_STORY110_REDEEMFADEOUT1
+
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_COOKING2
+T=I forgot. I still haven't gone shopping.
+W=BROK
+C1=BROK
+C1A=MAYBE
+W=BROK
+
+T=This is all I could find. Guess I'll have to make do.
+W=BROK
+TEN=PC01_STORY110_CHOOSEINVENTORY
+
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_COOKINGTIME
+T=Cooking time!
+W=BROK
+C1=BROK
+C1A=HAPPY
+TEN=PC01_STORY110_BACKTOGRAFF
+
+
+
+#---------------------------------------------------------------------------------------
+# Graff is angry in his bedroom 2 - Normal
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_GRAFFNORMAL2
+T=Aaand... submit.
+W=GRAFF
+C1=GRAFF
+C1A=HAPPY
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=Hmm. Maybe... I'm being a little too harsh.
+W=GRAFF
+TEN=PC01_STORY110_EXPLANATIONCHECK
+
+#---------------------------------------------------------------------------------------
+# Brok told the truth
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_GRAFFNORMAL3_TRUTH
+T=When he told me he was stuck in jail... Was he for real?
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=Hmm... Probably. No reason to lie about something like that.
+W=GRAFF
+
+T=But why...?
+W=GRAFF
+C1A=SAD
+
+T=I don't like this.
+W=GRAFF
+
+T=Maybe I should have let him explain...
+W=GRAFF
+C1A=TURN
+SKIPEND=1
+TEN=PC01_STORY110_BROKCOMESEV
+
+
+#---------------------------------------------------------------------------------------
+# Brok told a lie
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_GRAFFNORMAL3_LIE
+T=Then again... He screwed up again. He's totally unreliable.
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+
+T=And worse... He blatantly lied to me!
+W=GRAFF
+
+T=How can I trust him...?
+W=GRAFF
+
+T=I... probably shouldn't. But...
+W=GRAFF
+C1A=TURN
+
+T=(Sigh) I don't know... Can there be a good reason for lying...?
+W=GRAFF
+
+T=I wish Ott was online. He's the only one I can talk with about everything...
+W=GRAFF
+C1A=SAD
+TEN=PC01_STORY110_BROKCOMESEV
+
+#---------------------------------------------------------------------------------------
+# Brok didn't say anything
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_GRAFFNORMAL3_NOREPLY
+T=I don't know what to expect from him anymore...
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+
+T=Actually, I never did. After all these years, I still can't figure him out.
+W=GRAFF
+
+T=He could very well be the town's hero or the worst criminal ever... Neither would be a surprise.
+W=GRAFF
+
+T=If only he wasn't so secretive...
+W=GRAFF
+C1A=SAD
+TEN=PC01_STORY110_BROKCOMESEV
+
+
+#---------------------------------------------------------------------------------------
+# Graff is angry in his bedroom 2 - Broken machines
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_GRAFFBROKEN2
+T=I've written a lot... Hopefully it doesn't discourage someone from reading.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=Now all I have to do is...
+W=GRAFF
+
+T=Huh...?
+W=GRAFF
+C1A=SURPRISED
+
+T=It won't send...
+W=GRAFF
+C1A=GASP
+
+T=That stupid connection again... Argh!!!
+W=GRAFF
+C1A=ANGRY
+
+T=(Sigh)
+W=GRAFF
+C1A=SAD
+
+T=...
+W=GRAFF
+
+T=Why am I acting like this...?
+W=GRAFF
+TEN=PC01_STORY110_BROKCOMESEV
+
+
+
+#---------------------------------------------------------------------------------------
+# Brok tries to make Graff come
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_BROKCOMES
+T=(Knocking)
+SOUND=punch_hit1
+TEN=PC01_STORY110_BROKCOMESTURN
+
+T=Huh?
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+
+T=(Muffled sound)
+SOUND=throw
+
+T=Of course... That's him.
+W=GRAFF
+C1A=GASP
+
+T=What part of "leave me alone" does he not understand?
+W=GRAFF
+C1A=ANGRY
+
+T=(Graff...)
+C1A=MEH
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=(Can you... come here, please?)
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=(I won't talk about it. Promise.)
+BNAMESP=BROK
+BVOICESP=BROK
+TEN=PC01_STORY110_GRAFFSTANDUP
+
+T=...
+W=GRAFF
+C1A=TURN
+SILENCE=1
+
+T=Okay.
+W=GRAFF
+TEN=PC01_STORY110_GRAFFCOMES
+
+
+
+
+#---------------------------------------------------------------------------------------
+# Understand why Graff busted everything
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_BROKUNDERSTAND1
+T=Something's wrong.
+W=BROK
+C1=BROK
+C1A=DOWN
+
+T=Graff is such a humble, hard working boy.
+W=BROK
+
+T=I did notice he's changed recently... Did I just downplay it?
+W=BROK
+C1A=DISAPPOINTED
+
+T=Something made him go nuts...
+W=BROK
+
+T=Tomorrow... I'll need to talk to the school director.
+W=BROK
+C1A=WONDER
+
+T=Whether or not I can figure it out, I can't just let him destroy his future.
+W=BROK
+C1A=READY
+TEN=PC01_STORY110_REDEEMFADEOUT1
+
+
+#---------------------------------------------------------------------------------------
+# After coming back in living room (normal)
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_GRAFFCOMESNORMAL1
+T=Look. I'm sorry for...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=SAD
+SKIPEND=1
+
+T=Nah. Don't say anything.
+W=BROK
+C1A=MAYBE
+
+T=It's all my fault.
+W=BROK
+
+T=But still. I shouldn't have said that.
+W=GRAFF
+
+T=No worries.
+W=BROK
+C1A=HAPPY
+TEN=PC01_STORY110_DINNER1
+
+
+
+#---------------------------------------------------------------------------------------
+# After coming back in living room (if we busted machines)
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_GRAFFCOMESBROKEN1
+T=...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=...
+W=GRAFF
+C2A=SAD
+
+T=Stop.
+W=BROK
+C1A=READY
+
+T=What?
+W=GRAFF
+C2A=MEH
+
+T=You're overthinking things.
+W=BROK
+
+T=(Sigh)
+W=GRAFF
+C2A=TURN
+
+T=How am I supposed to...
+W=GRAFF
+
+T=Focus on this.
+W=BROK
+TEN=PC01_STORY110_DINNER1
+
+#---------------------------------------------------------------------------------------
+# After coming back in living room (next)
+#---------------------------------------------------------------------------------------
+ID=PC01_STORY110_DINNER1
+T=I've prepared dinner!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=TURN
+
+T=Well... To be honest...
+W=GRAFF
+
+T=I... don't feel like eating right now.
+W=GRAFF
+
+T=I just can't help thinking about... everything.
+W=GRAFF
+
+T=Come on! No one can think properly on an empty stomach.
+W=BROK
+C1A=READY
+
+T=Please!
+W=BROK
+
+T=...Okay.
+W=GRAFF
+C2A=SAD
+TEN=PC01_STORY110_COOKINGCHECK
+
+
+#---------------------------------------------------------------------------------------
+# Cooking bad
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_COOKINGBAD
+T=Here - for you.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=What's this...?
+W=GRAFF
+C2A=GASP
+
+T=I dunno. I improvised!
+W=BROK
+C1A=HAPPY
+
+T=But it looks good!
+W=BROK
+
+T=...
+W=GRAFF
+C2A=SAD
+
+T=("It looks funny" would be more appropriate...)
+W=GRAFF
+
+T=Come on! Don't be so picky!
+W=BROK
+C1A=READY
+
+T=Discovering new tastes makes life more fun!
+W=BROK
+
+T=...Okay.
+W=GRAFF
+C2A=TURN
+
+T=(Slurp)
+W=GRAFF
+
+T=So! What do you think?
+W=BROK
+C2A=SURPRISED
+
+T=...
+W=GRAFF
+C2A=CHOKE
+
+T=It's... pretty good...
+W=GRAFF
+C2A=YUCK
+
+T=...
+W=GRAFF
+C2A=GASP
+
+T=Oh...
+W=BROK
+C1A=DOWN
+
+T=Let me taste...
+W=BROK
+C1A=WONDER
+
+T=...
+W=BROK
+
+T=Urgh!
+W=BROK
+C1A=CONFUSED
+
+T=That's... It's...
+W=BROK
+
+T=...Looks like I blew it again. I'm worthless.
+W=BROK
+C1A=DISAPPOINTED
+
+T=No, no, no! It's fine! Look!
+W=GRAFF
+C2A=HAPPY
+
+T=I'll eat all of it!
+W=GRAFF
+C2A=COCKY
+
+T=You don't have to...
+W=BROK
+
+T=(...)
+W=GRAFF
+C1A=THINK
+
+T=...There! I'm stuffed!
+W=GRAFF
+C2A=HAPPY
+
+T=Ha ha...
+W=BROK
+C1A=HAPPY
+
+T=Thanks, Graff...
+W=BROK
+
+T=I thought I'd cheer you up but it's the other way 'round!
+W=BROK
+
+T=You never stop surprising me, kiddo.
+W=BROK
+
+T=Your mother would be proud.
+W=BROK
+TEN=PC01_STORY110_COOKINGAFTER1
+
+
+#---------------------------------------------------------------------------------------
+# Cooking medium
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_COOKINGMEDIUM
+T=Here, let me serve you.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GRAFF
+C2A=MEH
+
+T=...
+W=GRAFF
+
+T=Looks good!
+W=GRAFF
+C2A=HAPPY
+
+T=You think so? I hope it is.
+W=BROK
+C1A=WONDER
+
+T=Hmm...
+W=GRAFF
+C2A=THINK
+
+T=Yup! Not bad!
+W=GRAFF
+C2A=HAPPY
+
+T=I'm glad. We're running out of ingredients so... It wasn't easy to prepare something.
+W=BROK
+C1A=MAYBE
+
+T=It's fine.
+W=GRAFF
+
+T=...
+W=GRAFF
+C2A=SAD
+
+T=It's been a long time...
+W=GRAFF
+
+T=I mean... Since we've last eaten together.
+W=GRAFF
+
+T=Usually I'd either prepare a meal for myself or you'd leave me a plate to heat.
+W=GRAFF
+
+T=It's not the same...
+W=GRAFF
+
+T=You're right...
+W=BROK
+
+T=We should do this more often.
+W=BROK
+C1A=HAPPY
+
+T=Yeah...
+W=GRAFF
+TEN=PC01_STORY110_COOKINGAFTER1
+
+
+
+#---------------------------------------------------------------------------------------
+# Cooking good
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_COOKINGGOOD
+T=Here!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GRAFF
+C2A=MEH
+
+T=Hmmm...!
+W=GRAFF
+C2A=HAPPY
+
+T=This smells so good!
+W=GRAFF
+C2A=HAPPY
+
+T=Quick! I'm starving!
+W=GRAFF
+C2A=READY
+
+T=Hey! I thought you said...
+W=BROK
+C1A=WONDER
+
+T=Doesn't matter. Gimme some!
+W=GRAFF
+C2A=HAPPY
+
+T=...
+W=GRAFF
+C2A=GASP
+
+T=No way!
+W=GRAFF
+
+T=What? Is it bad?
+W=BROK
+C1A=MAYBE
+
+T=Oh, great... I knew I shouldn't have put some...
+W=BROK
+C1A=DISAPPOINTED
+
+T=It's delicious!
+W=GRAFF
+C2A=HAPPY
+
+T=Is it...?
+W=BROK
+C1A=SURPRISED
+
+T=...
+W=BROK
+C1A=WONDER
+
+T=Say, you're right!
+W=BROK
+C1A=HAPPY
+
+T=What's your secret?
+W=GRAFF
+C2A=COCKY
+
+T=No idea! I had very few ingredients left... Ya know, no time to go shopping...
+W=BROK
+C1A=ALRIGHT
+
+T=You're a magician, then!
+W=GRAFF
+
+T=Aww... Thanks! I'm glad you like it!
+W=BROK
+
+T=Actually... It's funny!
+W=BROK
+C1A=HAPPY
+
+T=I thought I'd cheer you up but it's the other way 'round!
+W=BROK
+C1A=READY
+
+T=You never stop surprising me, son.
+W=BROK
+
+T=...
+W=GRAFF
+C2A=MEH
+
+T=You know, this meal...
+W=GRAFF
+C1A=THINK
+
+T=It kinda reminds me of...
+W=GRAFF
+C2A=SAD
+
+T=Your mother?
+W=BROK
+C1A=MAYBE
+
+T=...
+W=GRAFF
+
+T=She never had any time for cooking.
+W=BROK
+
+T=But when she did...
+W=BROK
+
+T=It was wonderful.
+W=BROK
+C1A=HAPPY
+
+T=Just like you!
+W=GRAFF
+C2A=HAPPY
+
+T=I mean... You're the same... With cooking. No free time.
+W=GRAFF
+C2A=GASP
+
+T=Yeah...
+W=BROK
+C1A=MAYBE
+
+T=...
+W=GRAFF
+C2A=SAD
+TEN=PC01_STORY110_COOKINGAFTER1
+
+
+#---------------------------------------------------------------------------------------
+# After cooking
+#---------------------------------------------------------------------------------------
+
+ID=PC01_STORY110_COOKINGAFTER1
+T=...
+W=GRAFF
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=MEH
+
+T=...
+W=BROK
+
+T=About what happened...
+W=GRAFF
+C2A=SAD
+
+T=Wait.
+W=BROK
+C1A=THINK
+
+T=Not here.
+W=BROK
+TEN=PC01_STORY110_REMOVEPICTURE
+
+T=This time... It's my turn to surprise you.
+W=BROK
+C1A=MOCK
+
+T=Follow me!
+W=BROK
+TEE=PC01_STORY110_BROKLEAVES
+
+T=Uh?
+W=GRAFF
+
+T=Where are you going?
+W=GRAFF
+TEN=PC01_STORY110_GOOUT
+
+
+#---------------------------------------------------------------------------------------
+# Begin day 2
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2BEGIN1
+T=...
+W=BROK
+A=CONFUSED
+CONTEXT=Beginning of day 2 - Brok wakes after making another nightmare
+
+T=Another dream...
+W=BROK
+A=TIRED
+
+T=...
+W=BROK
+A=THINK
+
+T=Graff isn't around.
+W=BROK
+A=THINK
+
+T=I'd better get up fast. Can't see from here but I bet the sun has been up for ages.
+W=BROK
+A=WONDER
+TEN=PC01_INTRO2_CHECK
+
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2BEGIN_WES
+T=...!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=Pork!
+W=WES
+
+T=Hey! Who gave you the right to barge in like this?!
+W=BROK
+
+T=The law!
+W=WES
+
+T=Oh... I forgot.
+W=BROK
+C1A=DOWN
+
+T=Back to jail, huh?
+W=BROK
+C1A=DOWN
+
+T=This isn't a choice. It's a cherry.
+W=WES
+C2A=WONDER
+COMM=Wes uses the wrong word here. His brain has been "damaged"
+
+T=Huh...?
+W=BROK
+C1A=THINK
+
+T=A... cherry?
+W=BROK
+
+T=A cherry. Cherry.
+W=WES
+
+T=Yes. It's a request.
+W=WES
+C2A=NORMAL
+
+T=...
+W=WES
+C1A=WONDER
+SILENCE=1
+
+T=Are you okay...?
+W=BROK
+
+T=Whatever.
+W=WES
+C1A=THINK
+
+T=We've got a situation.
+W=WES
+
+T=Help us and I'll wipe the slate clean.
+W=WES
+
+T=Me?... Helping the police?
+W=BROK
+
+T=We're very understaffed right now.
+W=WES
+
+T=As per regulation 14-3032. In case of under-staffing, the highest ranking officer can requisition any citizen for help.
+W=WES
+
+T=...
+W=BROK
+
+T=Why me?
+W=BROK
+C1A=MAYBE
+
+T=I've seen your actions.
+W=WES
+
+T=Despite some aggressive tendencies, you've solved Sin's case remarkably well.
+W=WES
+C2A=WONDER
+
+T=You didn't blindly trust your client and uncovered the truth via uncommon methods.
+W=WES
+
+T=I've met so many detectives over the years.
+W=WES
+C1A=THINK
+
+T=You... are one of a kind.
+W=WES
+
+T=We've known each other for a long time. Currently, you're the most qualified person I can trust.
+W=WES
+C2A=NORMAL
+
+T=Erm... Thanks... I guess?
+W=BROK
+C1A=WONDER
+
+T=Okay. I don't have much choice, do I?
+W=BROK
+
+T=Not unless you want a special place on my wanted criminals list.
+W=WES
+CLUE=CLUE_WES_INCORRECTWORDS
+
+T=Come to my office in two hours.
+W=WES
+TEN=PC01_INTRO2_WESARRIVE3
+
+T=Wait! Won't you explain?
+W=BROK
+
+T=Later.
+W=WES
+TEN=PC01_INTRO2_WESARRIVE4
+
+T=(Sigh)
+W=BROK
+TEN=PC01_DAY2BEGIN_START
+
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2BEGIN_WES2
+T=Hmm... A message?
+W=BROK
+A=THINK
+TEN=PC01_DAY2BEGIN_WESOPENSHAYMSG
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2BEGIN_WES3
+T=Better go to her garage first.
+W=BROK
+A=THINK
+TEN=PC01_DAY2BEGIN_HIDEMENU
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2BEGINB1
+T=...?
+W=BROK
+A=THINK
+SILENCE=1
+
+T=Hello?
+W=BROK
+A=THINK
+COMM=Brok is on the phone with Wes.
+
+T=Detective, we've got a situation.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+TEB=PC01_INTRO_MENU_PHONECALL_END
+
+T=I need you at my office.
+W=WES
+
+T=What? Right now?
+W=BROK
+C1A=WONDER
+
+T=Immediately!
+W=WES
+
+T=I was afraid you were gonna say that.
+W=BROK
+C1A=DOWN
+
+T=I will expl............ t........... b..........
+W=WES
+COMM=The phone line becomes bad at this point
+
+T=Sorry, what?
+W=BROK
+C1A=WONDER
+
+T=I said........ i......... f........ g........
+W=WES
+
+T=I can't hear ya, poor connection. You got a metallic voice.
+W=BROK
+C1A=OPPOSITE
+COMM="metallic voice" here is a pun considering the end game reveal...
+
+T=...f.......k.......
+W=WES
+C2A=ANGRY
+
+T=Anyway! I'm coming, stay right where you are!
+W=BROK
+C1A=MAYBE
+TEN=INTERFACE_CALL_END
+
+T=[...]
+SOUND=phone_end
+C2=NONE
+TEN=PC01_CALLEND_HIDEMENU
+
+T=...
+W=BROK
+
+T=Darn... I forgot! I promised Graff I'd fix the situation with his diploma!
+W=BROK
+C1A=SURPRISED
+
+T=But if I don't make it to the police station in time, Wes might put me back in a cell. Or worse!
+W=BROK
+C1A=MAYBE
+
+T=What should I do...?
+W=BROK
+C1A=WONDER
+TEN=PC01_DAY2BEGIN_CHOICE
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------
+# Begin day 2
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2BEGIN_CHOICEGRAFF1
+T=Yeah...
+W=BROK
+A=THINK
+
+T=I'll always find a way out but I can't afford to disappoint Graff again.
+W=BROK
+A=READY
+
+T=Let's go!
+W=BROK
+A=READY
+TEN=PC01_DAY2BEGIN_START
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2BEGIN_CHOICEWES1
+T=I can't afford getting in trouble with the law again...
+W=BROK
+A=WONDER
+
+T=After all, the Director ain't going anywhere. I can go to school later.
+W=BROK
+A=THINK
+
+T=Okay then, it's decided!
+W=BROK
+A=MOCK
+TEN=PC01_DAY2BEGIN_START
+
+
+
+
+#---------------------------------------------------------------------------------------
+# End day 2 - Graff in bad shape
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END1
+T=Oh no!... Graff!
+W=BROK
+A=SURPRISED
+TEN=PC01_STORY175_BROKINIT2
+CONTEXT=End of day 2 - Brok comes back home and sees Graff collapsed on the floor
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END2
+T=...
+W=BROK
+A=SURPRISED
+
+T=He's breathing. Thank goodness.
+W=BROK
+A=THINK
+TEN=PC01_STORY175_BROKINIT4
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_COLLAPSED1
+T=...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+C2_EYESHUT=1
+SILENCE=1
+
+T=...?
+W=GRAFF
+C2_EYESHUT=0
+SILENCE=1
+
+T=Graff...!
+W=BROK
+
+T=You're okay?
+W=BROK
+TEN=PC01_GRAFF_CROUCH
+
+T=What...?
+W=GRAFF
+C2A=SURPRISED
+
+T=I'm...alive...?
+W=GRAFF
+
+T=Seems so.
+W=BROK
+
+T=But...
+W=GRAFF
+
+T=I don't feel the effects...
+W=GRAFF
+C2A=MEH
+
+T=You gave me a pill?
+W=GRAFF
+
+T=No... I just...
+W=BROK
+TEN=PC01_BROK_STAND
+
+T=Found you unconscious here.
+W=BROK
+
+T=Here...?
+W=GRAFF
+
+T=I collapsed in the street...
+W=GRAFF
+TEN=PC01_DAY2END_STAND
+
+T=Someone... must have brought me here...
+W=GRAFF
+C2A=THINK
+
+T=Hey, take it easy.
+W=BROK
+
+T=Maybe you just have fuzzy memories.
+W=BROK
+
+T=...
+W=GRAFF
+TEN=PC01_DAY2END_COLLAPSED1B
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_TOOKPILL1
+T=Graff!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=TORN
+CONTEXT=Alternative : Brok comes back and Graff is standing, alive because he managed to buy a pill
+
+T=Thank goodness, you're okay!
+W=BROK
+
+T=...
+W=GRAFF
+
+T=I am...
+W=GRAFF
+TEN=PC01_DAY2END_TOOKPILL_FACEBROK
+
+T=But not thanks to you.
+W=GRAFF
+C2A=ANGRY
+
+T=I'm sorry... I got your messages...
+W=BROK
+TEN=PC01_DAY2END_CHECKKLAY
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_NOTALK
+T=Too late...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+TEN=PC01_GRAFF_PILL
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_TALK
+T=Did you just realize...?
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+T=If I hadn't found a solution by myself...
+W=GRAFF
+
+T=I'd be dead right now!
+W=GRAFF
+C2A=TORN
+
+T=I know... But...
+W=BROK
+TEN=PC01_GRAFF_PILL
+
+
+#---------------------------------------------------------------------------------------
+
+
+ID=PC01_DAY2END3
+T=...
+W=BROK
+A=THINK
+
+T=Looks like he didn't take his Toxout pill...
+W=BROK
+A=MAYBE
+COMM=It's actually an ANTI pollution pill but they call it this way
+
+T=And he's unconscious...
+W=BROK
+A=MAYBE
+
+T=What should I do...?!
+W=BROK
+A=WONDER
+TEN=PC01_DAY2END_CHOICES
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_PILL1
+T=Here...
+W=BROK
+A=MAYBE
+
+T=...
+W=BROK
+A=TIRED
+
+T=I'm sorry. I wasn't here for you again...
+W=BROK
+A=TIRED
+
+T=(Sigh)
+W=BROK
+A=DISAPPOINTED
+TEN=PC01_DAY2END_BROKBACKS
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_CALL
+T=Yeah, I'd better call...
+W=BROK
+A=THINK
+
+T=Argh...! I forgot...
+W=BROK
+A=CONFUSED
+
+T=We're not in the Drums. No doctor's gonna travel up here... And I can't make Graff cross the boundary!
+W=BROK
+A=DOWN
+
+T=I need to find another way... And fast!
+W=BROK
+A=SURPRISED
+
+T=Think, Brok... Just think...!
+W=BROK
+A=STUPID
+TEN=PC01_DAY2END_BOTARRIVES
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_SLAP
+T=...
+W=BROK
+A=ANGRY
+
+T=Come on, my boy... Wake up!
+W=BROK
+A=ANGRY
+
+T=I... I need you to try...
+W=BROK
+A=DISAPPOINTED
+
+T=Please... Do it for me...!
+W=BROK
+A=READY
+TEN=PC01_DAY2END_ENDSLAP
+
+T=...
+W=BROK
+A=DISAPPOINTED
+
+T=It's not working...
+W=BROK
+A=HEARTBROKEN
+TEN=PC01_DAY2END_BOTARRIVES
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_BOTARRIVES1
+T=(Sliding sound)
+CONTEXT=End of day 2 - A bot puts a pill underneath the door
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_BOTARRIVES2
+T=...?
+W=BROK
+A=WONDER
+TEN=PC01_DAY2END_BROKDOOR
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_BOTARRIVES3
+T=What...?
+W=BROK
+A=ANGRY
+TEN=PC01_DAY2END_BROKKNEELS
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_BOTARRIVES4
+T=A Toxout pill?
+W=BROK
+A=SURPRISED
+TEN=PC01_DAY2END_BROKOPENDOOR
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_BROKBACKS1
+T=...
+W=BROK
+A=MAYBE
+CONTEXT=End of day 2 - Graff is unconscious
+
+T=I shouldn't have done that mission for Wes...
+W=BROK
+A=DOWN
+
+T=You told me... But I wouldn't listen...!
+W=BROK
+A=DISAPPOINTED
+
+T=I'm so stupid.
+W=BROK
+A=DISAPPOINTED
+
+T=What if... You...
+W=BROK
+A=HEARTBROKEN
+
+T=I'll never forgive myself...
+W=BROK
+A=TIRED
+
+T=(Cough)
+BVOICESP=GRAFF
+TEN=PC01_DAY2END_BROKBACKS3
+
+T=...?
+W=BROK
+A=THINK
+TEN=PC01_DAY2END_BROKTOWARDSGRAFF
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_BROKBACKS2
+T=Graff!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=...Dad...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=You're safe...! I'm here now.
+W=BROK
+A=HAPPY
+
+T=...
+W=GRAFF
+C2=GRAFF
+C2A=GASP
+SILENCE=1
+
+T=It's you.
+W=GRAFF
+C2A=MEH
+TEN=PC01_DAY2END_GRAFFWAKES1
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_GRAFFWAKESB
+T=I was so worried...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=MEH
+SKIPEND=1
+TEB=PC01_DAY2END_GRAFFWAKES_FADEMUSIC
+
+T=Don't... touch me!
+W=GRAFF
+C2A=GASP
+TEN=PC01_DAY2END_GRAFFWAKES2
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDB1
+T=...
+W=BROK
+A=SURPRISED
+
+T=Graff...?
+W=BROK
+A=TIRED
+TEN=PC01_DAY2END_GRAFFSMASHES
+
+#(Smashes door)
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDB2
+T=(Sigh)
+W=BROK
+A=DISAPPOINTED
+CONTEXT=End of day 2 - Brok feels helpless after what happened
+TEN=PC01_DAY2ENDB2_FADEOUT
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDB3
+T=(At this moment, I felt so helpless.)
+BVOICE=BROK
+MOOD=THINK
+
+T=(So much happened today.)
+MOOD=THINK
+TEN=PC01_DAY2END_CHECKCHOICES1
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_RJATTACK
+T=(I knocked that big bear out for no other reason but my own personal interest...)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2END_CHECKCHOICES2
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_RJTRICK
+T=(I feel ashamed for tricking that big bear who got fired because of this.)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2END_CHECKCHOICES2
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_HACKERATTACK
+T=(I smashed that hacker to get that chip.)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2END_HACKERMISSION
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_HACKERMONEY
+T=(I got tricked by that hacker into spending a crazy amount of money to get that chip.)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2END_HACKERMISSION
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_HACKERMISSION
+T=(I broke the law by breaking into Wes' office...)
+BVOICE=BROK
+MOOD=THINK
+
+T=(I investigated a crazy murder case and...)
+MOOD=THINK
+TEN=PC01_DAY2END_CHECKCHOICES3
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_MURDERWRONG
+T=(I'm starting to question whether I found the true culprit...)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2ENDB4
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_MURDEROTT
+T=(I almost sent Graff's friend to jail...)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2ENDB4
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_MURDERALIVE
+T=(The victim turned out to be alive... after I accidentally stepped on him...)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2ENDB4
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_MURDERTIDY
+T=(I chased that crazy bot, creating havoc...)
+BVOICE=BROK
+MOOD=THINK
+TEN=PC01_DAY2ENDB4
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2END_MURDERGUARD
+T=(I had to fight that guard after I went off the rails...)
+BVOICE=BROK
+MOOD=THINK
+COMM=Figuratively speaking - player can choose to go crazy and attack everyone
+TEN=PC01_DAY2ENDB4
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDB4
+T=(Graff almost died...)
+BVOICE=BROK
+MOOD=THINK
+
+T=(Am I doomed to fail everything I attempt?...)
+MOOD=THINK
+
+T=(...)
+MOOD=THINK
+
+T=(To take my mind off it, I decided to prepare dinner.)
+MOOD=THINK
+
+T=(Well, with the little that was left anyway.)
+MOOD=THINK
+TEN=PC01_DAY2ENDB2_FADEIN
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDC1
+T=There.
+W=BROK
+A=THINK
+
+T=It's not much but... That's the best I can do.
+W=BROK
+A=MAYBE
+TEN=PC01_DAY2ENDBC1_MOVETOWARDSBEDROOM
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDC2
+T=Graff! Dinner's ready.
+W=BROK
+A=THINK
+
+T=...
+W=BROK
+A=THINK
+
+T=Graff...?
+W=BROK
+A=MAYBE
+
+T=(It's been a while. I can't hear him...)
+W=BROK
+A=WONDER
+MOOD=THINK
+TEN=PC01_DAY2ENDC2_KNOCK
+
+T=(Knocks, knocks)
+
+T=Graff! Answer me!
+W=BROK
+A=YELL
+
+T=...
+W=BROK
+A=WORRIED
+TEN=PC01_DAY2ENDBC2_OPENBEDROOM
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDC3
+T=Hey! What the heck?!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=ANGRY
+
+T=You can't just barge in like this!
+W=GRAFF
+
+T=You wouldn't answer. I was getting worried!
+W=BROK
+C1A=HEARTBROKEN
+
+T=...
+W=GRAFF
+C2A=TURN
+
+T=Come. I've prepared...
+W=BROK
+C1A=MAYBE
+SKIPEND=1
+
+T=Not hungry.
+W=GRAFF
+
+T=Then...
+W=BROK
+
+T=Tell me what happened.
+W=BROK
+
+T=What happened...?
+W=GRAFF
+TEN=PC01_DAY2END_CHECKKLAY2
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDC3_NORMAL
+T=I'll tell you what!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=ANGRY
+
+T=Some stupid kid took my pill!
+W=GRAFF
+TEN=PC01_DAY2ENDC3_CHECKNEXT
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDC3_KLAY
+T=...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=I... forgot my pill...
+W=GRAFF
+
+T=How come? You never forget...
+W=BROK
+
+T=Well, I'm not perfect!
+W=GRAFF
+C2A=ANGRY
+TEN=PC01_DAY2ENDC3_CHECKNEXT
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDC3_NEXT
+T=All Pipe-Pills were offline! I had no way to get one!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=ANGRY
+
+T=The Pipe-Pills...?
+W=BROK
+C1A=THINK
+
+T=I sent you hundreds of messages. Called you. But no!
+W=GRAFF
+
+T=You didn't reply!
+W=GRAFF
+
+T=You left me alone, dying!
+W=GRAFF
+C2A=TORN
+
+T=I understand... I'm truly...
+W=BROK
+C1A=DISAPPOINTED
+SKIPEND=1
+
+T=Sorry?
+W=GRAFF
+C2A=TURN
+
+T=You're sorry?!
+W=GRAFF
+C2A=ANGRY
+
+T=Of course!
+W=BROK
+C1A=TIRED
+
+T=How many times have I heard this already? "I'm sorry!"
+W=GRAFF
+
+T=Well, that's not good enough!
+W=GRAFF
+
+T=I'm sick of it!
+W=GRAFF
+C1A=DISAPPOINTED
+
+T=You can't just pretend you're sorry and be done with it!
+W=GRAFF
+
+T=Where were you? Why couldn't you just answer my calls?!
+W=GRAFF
+
+T=Long story...
+W=BROK
+
+T=Obviously!
+W=GRAFF
+
+T=Yet again, you didn't answer me! You never do!
+W=GRAFF
+
+T=For a while I thought the problem was me.
+W=GRAFF
+
+T=But now I know!
+W=GRAFF
+C1A=SURPRISED
+
+T=It's you!
+W=GRAFF
+
+T=You're never there when I need you!
+W=GRAFF
+
+T=You never tell me anything!
+W=GRAFF
+
+T=...
+W=BROK
+C1A=DOWN
+SILENCE=1
+
+T=Alright, I'll explain. But...
+W=BROK
+
+T=Please come. You gotta eat...
+W=BROK
+SKIPEND=1
+
+T=Perfect!
+W=GRAFF
+TEN=PC01_DAY2ENDC3_GRAFFCOMESKITCHEN
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDD1_ALTERNATIVE
+T=...
+W=GRAFF
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=TURN
+
+T=Alright. In a while.
+W=GRAFF
+
+T=Thanks.
+W=BROK
+TEN=DAY2ENDD5_BROKMOVEBACK
+
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDD1
+T=I'll eat... what, exactly?
+W=GRAFF
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=TURN
+
+T=Oh... Leftovers! What a surprise!
+W=GRAFF
+
+T=You didn't go shopping. Again!
+W=GRAFF
+TEN=PC01_DAY2ENDD1_BROKCOMESKITCHEN
+
+T=I'm s... I mean, I was busy...
+W=BROK
+
+T=Busy! Of course!
+W=GRAFF
+TEN=PC01_DAY2ENDD1_GRAFFFACEBROK
+
+T=You think I wasn't?
+W=GRAFF
+C2A=ANGRY
+
+T=Do you have any idea what I went through today?!
+W=GRAFF
+
+T=I guess...
+W=BROK
+C1A=DOWN
+
+T=Why should I eat your food...?
+W=GRAFF
+
+T=I hardly know you!
+W=GRAFF
+
+T=To me you're just a stranger pretending to offer me shelter, when in truth...
+W=GRAFF
+
+T=That stranger took everything from me.
+W=GRAFF
+
+T=What...?
+W=BROK
+C1A=SURPRISED
+
+T=You destroy everything you touch!
+W=GRAFF
+C2A=TURN
+
+T=You're a failure! Worthless!
+W=GRAFF
+
+T=Now, wait a minute!
+W=BROK
+C1A=FURIOUS
+
+T=You think it's easy to live in this world?!
+W=BROK
+
+T=I'm doing my best so we can survive!
+W=BROK
+
+T=I was destined to become Drumer!
+W=GRAFF
+C2A=ANGRY
+
+T=I'm in this situation, living among trash, working hard to get out of this misery...
+W=GRAFF
+
+T=Because of you!
+W=GRAFF
+
+T=I know...
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC01_DAY2ENDD1_TOUCHGRAFF
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDD2
+T=Listen...
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+C2=GRAFF
+C2A=MEH
+SKIPEND=1
+
+T=Arghhh!
+W=GRAFF
+C2A=SURPRISED
+TEN=PC01_DAY2ENDD2_GRAFFAWAY
+
+T=Nooooo...! Stop!
+W=GRAFF
+C1A=SURPRISED
+C2_EYESHUT=1
+
+T=What...?
+W=BROK
+
+T=Don't... touch me!
+W=GRAFF
+C2A=GASP
+
+T=Arghh...
+W=GRAFF
+C2A=CHOKE
+TEN=PC01_DAY2ENDD2_KNEEL
+
+T=I... I can't.... breathe...
+W=GRAFF
+
+T=No one...
+W=GRAFF
+
+T=Should touch me...
+W=GRAFF
+
+T=What's with you...?
+W=BROK
+
+T=Why do you always react like this when I try to be friendly?
+W=BROK
+
+T=You know I wouldn't hurt ya!
+W=BROK
+C1A=MAYBE
+TEN=PC01_DAY2ENDD2_STAND
+
+T=No...
+W=GRAFF
+C2A=SOB
+
+T=You...
+W=GRAFF
+
+T=You lie...
+W=GRAFF
+
+T=Stay away...
+W=GRAFF
+TEN=PC01_DAY2ENDD2_BROKCLOSER
+C2_EYESHUT=0
+
+T=But...
+W=BROK
+C1A=DISAPPOINTED
+
+T=I just...
+W=GRAFF
+C2A=TURN
+TEN=PC01_DAY2ENDD2_GRAFFRUNS
+
+T=Stay away from me!!!
+W=GRAFF
+C2A=ANGRY
+TEN=PC01_DAY2ENDD2_END
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDD4
+T=...!
+W=BROK
+A=SURPRISED
+
+T=...(Sigh)
+W=BROK
+A=HEARTBROKEN
+
+T=There ya go.
+W=BROK
+A=DISAPPOINTED
+
+T=I'm the king of making situations worse.
+W=BROK
+A=DISAPPOINTED
+
+T=He's right...
+W=BROK
+A=DOWN
+
+T=It's been five years now.
+W=BROK
+A=DOWN
+
+T=Maybe it's time to stop pretending I'm handling things correctly.
+W=BROK
+A=TIRED
+
+T=Only a few days left. Time to give up...?
+W=BROK
+A=TIRED
+
+T=And accept that I failed. He'll never want me in his life...
+W=BROK
+A=DISAPPOINTED
+
+T=...
+W=BROK
+A=DISAPPOINTED
+TEN=PC01_DAY2ENDD4_APPROACHDOOR
+#Brok moves towards door
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDD5
+T=Hey...
+W=BROK
+A=TIRED
+
+T=You can be mad at me, kiddo... And you have every reason to.
+W=BROK
+A=TIRED
+
+T=Doesn't matter.
+W=BROK
+A=MAYBE
+
+T=The only important thing to me is that you're okay.
+W=BROK
+A=MAYBE
+
+T=And... I want you to know...
+W=BROK
+A=MAYBE
+
+T=You're the only reason I keep moving forward in this awful existence.
+W=BROK
+A=DOWN
+TEN=DAY2ENDD5_BROKMOVEBACK
+
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDF1
+T=...?
+W=BROK
+A=THINK
+TEN=PC01_DAY2END_BROKGOPAPER
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDF2
+T=A paper...
+W=BROK
+A=WONDER
+TEN=PC01_DAY2END_BROKGOPAPER2
+
+
+
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDF2_FORGIVE
+T="Forgive me"
+W=BROK
+A=THINK
+
+T=You're already forgiven, kiddo.
+W=BROK
+A=TIRED
+
+T=I don't know where we'll go from here but...
+W=BROK
+A=TIRED
+
+T=I'll do my best.
+W=BROK
+A=READY
+
+T=And... I bet you're hungry, so...
+W=BROK
+A=READY
+TEN=PC01_DAY2ENDF1_BROKGOSANDWICH
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDF2_HUNGRY
+T="I'm hungry..."
+W=BROK
+A=THINK
+
+T=Sure...
+W=BROK
+A=MAYBE
+
+T=By the way...
+W=BROK
+A=MAYBE
+
+T=I'm glad you remembered that gift from years ago.
+W=BROK
+A=HAPPY
+TEN=PC01_DAY2ENDF1_BROKGOSANDWICH
+
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDF2_FORGET
+T="Let's forget this..."
+W=BROK
+A=THINK
+
+T=Well... Wish I could but...
+W=BROK
+A=MAYBE
+
+T=You're right about a lot of matters and I can't just pretend I didn't hear them.
+W=BROK
+A=DISAPPOINTED
+
+T=I want to better myself. I can't really promise but...
+W=BROK
+A=TIRED
+
+T=I'll try.
+W=BROK
+A=READY
+
+T=And... I bet you're hungry, so...
+W=BROK
+A=READY
+TEN=PC01_DAY2ENDF1_BROKGOSANDWICH
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDF2B
+T=Here...
+W=BROK
+A=READY
+TEN=PC01_DAY2ENDF1_BROKGOSANDWICH5
+
+T=Tomorrow will be a better day.
+W=BROK
+A=MAYBE
+
+T=I have faith in you. No matter what obstacles you'll be facing in the future...
+W=BROK
+A=MAYBE
+
+T=You'll overcome them.
+W=BROK
+A=READY
+TEN=PC01_DAY2ENDF1_BROKGOSANDWICH6
+
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY2ENDF2C
+T=...
+W=GRAFF
+A=MEH
+
+T=Thanks...
+W=GRAFF
+A=MEH
+TEN=PC01_DAY2ENDF2_FADEOUT
+
+
+
+
+
+#---------------------------------------------------------------------------------------
+# Shay calls
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2ENDF3_SHAY
+T=Oh...! Erm...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SHAY
+C2A=NORMAL
+CONTEXT=Day 2 end - Shay calls Brok on the phone
+
+T=I'm late, right...?
+W=BROK
+C1A=HAPPY
+
+T=...
+W=SHAY
+C2A=WONDER
+
+T=But I'm exhausted. It's been an insane day!
+W=BROK
+C1A=TIRED
+
+T=...
+W=SHAY
+
+T=Yeah, like every day I guess...
+W=BROK
+TEN=PC01_DAY2ENDF3_BROKOUT
+
+T=Okay, okay. I'm on my way!
+W=BROK
+C1A=READY
+
+T=See? I don't even have to say a word anymore!
+W=SHAY
+C2A=HAPPY
+TEN=PC01_DAY2ENDF3_NEXT
+
+
+
+#---------------------------------------------------------------------------------------
+# Come back in between
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2END_ENTERBEDROOM
+T=...!
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+CONTEXT=End of day 2 - Coming back before fight
+
+T=What are you doing here?!
+W=GRAFF
+
+T=I'm...
+W=BROK
+
+T=Looking for stuff...
+W=BROK
+
+T=Never mind.
+W=BROK
+
+T=Wait...
+W=GRAFF
+
+T=It's okay. You can stay.
+W=GRAFF
+C2A=TURN
+
+T=Thanks.
+W=BROK
+C1A=HAPPY
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2END_ENTERBEDROOM1
+T=You okay?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+TEN=PC01_DAY2END_ENTERBEDROOM_CHECK
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2END_ENTERBEDROOM_BAD
+T=...
+W=GRAFF
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=TURN
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2END_ENTERBEDROOM_GOOD
+T=Yeah.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2END_ENTERBEDROOM_EXCELLENT
+T=Yeah! Better.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=FRIENDLY
+
+T=Glad to hear!
+W=BROK
+C1A=HAPPY
+
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY2END_GRAFFKO
+T=...!
+W=BROK
+A=WORRIED
+
+T=What have I done...
+W=BROK
+A=HEARTBROKEN
+
+T=I can't go on like this.
+W=BROK
+TEN=GAMEOVER
+
+
+#---------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------
+ID=PC01_DAY3BEGIN1
+T=Phew... Another nightmare.
+W=BROK
+A=TIRED
+CONTEXT=Day 3 start - Brok wakes up again, this time robots break in his apartment to kill him
+
+T=At least that one didn't involve me...
+W=BROK
+A=TIRED
+
+T=It was totally absurd! It's not like bots would...
+W=BROK
+A=HAPPY
+SKIPEND=1
+TEN=PC01_DAY3BEGIN_BOTSDOOR
+
+
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN2_ALTERNATIVE
+T=Sir.
+W=TRIBOT
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOT
+C2A=NORMAL
+
+T=Chief officer Wes will not need your services until further notice.
+W=TRIBOT
+
+T=That is all.
+W=TRIBOT
+TEN=PC01_DAY3BEGIN2_ALTERNATIVENEXT
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN2_ALTERNATIVE2
+T=Huh?...
+W=BROK
+A=WONDER
+TEN=PC01_DAY3BEGIN2_ALTERNATIVE2NEXT
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN2_ALTERNATIVE3
+T=What happened? I heard noise.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=A bot with a message.
+W=BROK
+
+T=No job for me today, apparently!
+W=BROK
+C1A=ALRIGHT
+
+T=Oh.
+W=GRAFF
+TEN=PC01_DAY3BEGIN2_ALTERNATIVE3_NEXT
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN2
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOT
+C2A=NORMAL
+
+T=Hey! What are you doing here...?
+W=BROK
+C1A=FURIOUS
+
+T=What do you want?!
+W=BROK
+TEN=PC01_DAY3BEGIN_GETSUP
+
+T=...
+W=TRIBOT
+TEN=PC01_DAY3BEGIN_GRAFFCOMES
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN3
+T=What the heck's happening?!
+W=GRAFF
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=SURPRISED
+
+T=Graff! Stay back!
+W=BROK
+TEN=PC01_DAY3BEGIN_RELEASECAMERA
+
+T=I'll handle it!
+W=BROK
+C1A=READY
+
+T=What...?
+W=GRAFF
+C2A=GASP
+TEN=PC01_DAY3BEGIN_STARTFIGHT
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN_OVER
+T=Nooooooooo!!!
+W=GRAFF
+C2=GRAFF
+C2A=GASP
+TEN=PC01_DAY3BEGIN_GAMEOVER2
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN4
+T=Yeah! You got 'em good!
+W=GRAFF
+C1=BROK
+C1A=READY
+C2=GRAFF
+C2A=HAPPY
+
+T=Those bots...
+W=BROK
+C1A=OPPOSITE
+
+T=They broke in here to attack us!
+W=BROK
+C1A=ANGRY
+C2A=MEH
+
+T=Why?
+W=GRAFF
+
+T=Wish I knew...
+W=BROK
+C1A=WONDER
+
+T=Looks like ordinary Tribots. They shouldn't behave like this...
+W=GRAFF
+
+T=I bet someone's got a grudge against you!
+W=GRAFF
+C2A=TURN
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=...
+W=GRAFF
+
+T=About yesterday...
+W=GRAFF
+
+T=You must find the culprit.
+W=GRAFF
+
+T=The culprit...?
+W=BROK
+C1A=THINK
+
+T=What's happening with the Pipe-Pills.
+W=GRAFF
+
+T=Squealers must be behind it. They're selling pills at outrageous prices!
+W=GRAFF
+C2A=ANGRY
+
+T=And considering what happened just now...
+W=GRAFF
+C2A=MEH
+
+T=Who knows if the events aren't somehow linked.
+W=GRAFF
+
+T=You're a detective. Time to investigate!
+W=GRAFF
+
+T=Besides, I've seen what you're capable of!
+W=GRAFF
+C2A=READY
+
+T=You can beat the crap out of those Squealers!
+W=GRAFF
+
+T=I see. You're overestimating me, but...
+W=BROK
+C1A=TIRED
+
+T=You realize I won't get paid for this?
+W=BROK
+C1A=MAYBE
+
+T=Sometimes... We have to act for the greater good.
+W=GRAFF
+C2A=MEH
+
+T=Besides. With the Haze... Slumers like us won't go very far without the Toxout pills.
+W=GRAFF
+
+T=I can skip meals for a day or two, if this means getting to the bottom of this!
+W=GRAFF
+C2A=TURN
+
+T=Very well. I will investigate it!
+W=BROK
+C1A=READY
+
+T=What about you?
+W=BROK
+C1A=MOCK
+
+T=I've got my last trial this morning.
+W=GRAFF
+
+T=Last? Already?!
+W=BROK
+C1A=SURPRISED
+
+T=Maybe you shouldn't...
+W=BROK
+C1A=THINK
+SKIPEND=1
+
+T=No! No way I can skip it! This is crucial!
+W=GRAFF
+C2A=MEH
+
+T=Will you be okay...?
+W=BROK
+
+T=I mean... Someone may be after us.
+W=BROK
+C1A=DOWN
+
+T=Don't worry.
+W=GRAFF
+
+T=I'm certainly not as strong but...
+W=GRAFF
+
+T=I can defend myself.
+W=GRAFF
+C2A=READY
+
+T=It's not like we're living in a safe place. I'm used to it!
+W=GRAFF
+C2A=HAPPY
+
+T=Alright...
+W=BROK
+C1A=MAYBE
+
+T=Just... Be careful, okay...?
+W=BROK
+
+T=By the way... Here.
+W=BROK
+C1A=THINK
+
+T=A Toxout pill...? But how...?
+W=GRAFF
+C2A=GASP
+
+T=Shay gave me one.
+W=BROK
+
+T=Thanks! Hopefully that situation is resolved by tomorrow...
+W=GRAFF
+C2A=MEH
+
+T=...Oh my! I'm late!
+W=GRAFF
+C2A=SURPRISED
+TEN=PC01_DAY3BEGIN4_GRAFFGOES
+
+#---------------------------------------------------------------------------------------
+
+ID=PC01_DAY3BEGIN5
+T=And there he goes.
+W=BROK
+A=TIRED
+
+T=...
+W=BROK
+
+T=I've got a bad feeling about today.
+W=BROK
+C1A=MAYBE
+
+#TODO Offer this food option at end of day 1 dinner
+T=Oh well. Better make some meal-plaster or whatever horrible food is left.
+W=BROK
+C1A=MEH
+COMM=Let's consider a "meal-plaster" is solid food that can last for years.
+
+T=I'm sick of leaving for investigations on an empty stomach!
+W=BROK
+TEN=PC01_DAY3BEGIN5_SWITCH
+
+
+#------------------------------------------
+#= After switching from Graff to Brok day 3
+#------------------------------------------
+ID=PC01_DAY3STARTS
+T=Graff asked me to investigate the pills shortage.
+W=BROK
+A=THINK
+
+T=No time to lose. Let's go!
+W=BROK
+A=READY
+
+#------------------------------------------
+#= Brok comes back after rescueing Sin
+#------------------------------------------
+ID=PC01_STORY290_INIT1
+T=...
+W=BROK
+A=THINK
+TEN=PC01_STORY290_BEDDOORCOME
+CONTEXT=Day 3 end - Brok comes back after rescuing Sin
+
+#------------------------------------------
+ID=PC01_STORY290_KNOCK1
+T=(Knocks, knocks)
+
+T=Graff...?
+W=BROK
+A=THINK
+TEN=PC01_STORY290_BEDDOORENTER
+
+
+#------------------------------------------
+ID=PC01_STORY290_KNOCK2
+T=...
+W=BROK
+A=THINK
+
+T=He didn't come back...?
+W=BROK
+
+T=That's not normal...
+W=BROK
+
+T=Maybe I should call...
+W=BROK
+TEN=PC01_STORY290_CHOICE
+
+
+
+#------------------------------------------
+ID=PC01_STORY290_CALLGRAFF
+T=(...)
+W=BROK
+A=THINK
+
+T=Come on, my boy... Reply...!
+W=BROK
+
+T="Hey, I'm not available. Call back later or reach my old man for anything urgent."
+BVOICE=GRAFF
+
+T=...
+W=BROK
+
+T=When will I learn...
+W=BROK
+A=STUPID
+
+T=I was so engrossed with this whole affair that I totally forgot to check on him... Again.
+W=BROK
+
+T=If something happened...
+W=BROK
+
+T=No. Let's stop seeing the glass as half empty.
+W=BROK
+A=READY
+
+T=He's... Probably just celebrating with friends.
+W=BROK
+A=THINK
+TEN=PC01_STORY290_CHOICE
+
+
+
+#------------------------------------------
+ID=PC01_STORY290_CALLOTT
+T=I know! His school friend must know. Hmm...
+W=BROK
+A=READY
+
+T=There it is. Ott.
+W=BROK
+
+T=...
+W=BROK
+A=THINK
+
+T=...
+W=BROK
+
+T=No reply...
+W=BROK
+
+T=(Sigh) There, my stress levels just went up a notch...
+W=BROK
+A=DOWN
+TEN=PC01_STORY290_CHOICE
+
+
+#------------------------------------------
+ID=PC01_STORY290_CALLDIRECTOR
+T=Okay then. The school Director!
+W=BROK
+A=READY
+
+T=...
+W=BROK
+A=THINK
+
+T="Hello. This is a recording."
+BVOICESP=DIRECTOR
+
+T="I'm busy making preparations for the candidates who validated their diploma. Please be patient."
+BVOICESP=DIRECTOR
+
+T=(Click)
+
+T=Busy...? She's a machine! She should be able to multitask!
+W=BROK
+A=OPPOSITE
+TEN=PC01_STORY290_CHOICE
+
+#------------------------------------------
+ID=PC01_STORY290_LEAVE
+T=(Sigh) Will this day never end...?
+W=BROK
+A=DOWN
+
+T=I've left them a message but I'd better look around the city.
+W=BROK
+A=THINK
+
+#TODO If RJ not alive, what do we do? Hacker?
+T=Someone must know somethin'...
+W=BROK
+TEN=CLICKERS_BACK
+
+
+
+
+
+#------------------------------------------
+#= Brok comes back (after final boss)
+#------------------------------------------
+ID=PC01_STORY300_INIT1
+T=You're here.
+W=BROK
+C1=BROK
+C1A=THINK
+TEN=PC01_STORY300_BROKCOMES
+CONTEXT=Day 3 end - Brok comes back (after final boss) Can lead to Canonical, Fall and Slumer endings so there are dialog variations here!
+
+T=I was so scared to lose y...
+W=BROK
+A=TIRED
+SKIPEND=1
+
+T=Stop this charade.
+W=GRAFF
+C2=GRAFF
+C2A=TURN
+
+T=I know everything.
+W=GRAFF
+
+T=Uh...?
+W=BROK
+TEN=PC01_STORY300_GRAFFMOVE
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1B_VIOLENCE
+T=You...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=SAD
+
+T=You killed that man...
+W=GRAFF
+
+T=I... didn't have a choice...
+W=BROK
+C1A=DOWN
+
+T=He harmed you! Was ready to kill you!
+W=BROK
+
+T=You're wrong! He told me...
+W=GRAFF
+
+T=Who cares what that beast said!
+W=BROK
+C1A=YELL
+
+T=Wake up!
+W=BROK
+C2A=GASP
+
+T=This is our life here! Making hard decisions is part of it!
+W=BROK
+C1A=FURIOUS
+
+T=You never would've been safe with him around!
+W=BROK
+
+T=Safe...? With you...?
+W=GRAFF
+C2A=TURN
+TEN=PC01_STORY300_INIT1B
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1B
+T=I've seen it...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=TORN
+
+T=The violence...
+W=GRAFF
+
+T=That rage... in your eyes...
+W=GRAFF
+
+T=...
+W=GRAFF
+
+T=What's it gonna be?
+W=GRAFF
+C2A=TURN
+
+T=Drowned...? Choked to death?
+W=GRAFF
+
+T=What are you talking about?
+W=BROK
+
+T=The reason you got with my mother. The reason she died.
+W=GRAFF
+C2A=SAD
+
+T=The only reason you've been pretending to take care of me...
+W=GRAFF
+
+T=So far.
+W=GRAFF
+C2A=TORN
+TEN=PC01_STORY300_INIT1B_CHECK
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1B2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=TURN
+
+T=I don't understand. Honest.
+W=BROK
+
+T=Obviously...
+W=GRAFF
+
+T=Listen. This has been a hard day for everyone.
+W=BROK
+C1A=OPPOSITE
+
+T=Tell me from the start...
+W=BROK
+C1A=THINK
+
+T=Starting with your diploma.
+W=BROK
+
+T=Ott passed. Not me.
+W=GRAFF
+
+T=You... didn't...?
+W=BROK
+
+T=Oh no...
+W=BROK
+C1A=DOWN
+
+T=Does it even matter at this point...?
+W=GRAFF
+C2A=TORN
+
+T=What happened...?
+W=BROK
+
+T=As always... The same thing.
+W=GRAFF
+C2A=OPPOSITE
+TEN=PC01_STORY300_GRAFFBACK
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1C
+T=You.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=OPPOSITE
+TEB=PC01_STORY300_MUSICTENSE
+
+T=You're a Drumer.
+W=GRAFF
+C2A=ANGRY
+
+T=What...?
+W=BROK
+C1A=SURPRISED
+
+T=Because of this lie, they inflicted a forty point penalty.
+W=GRAFF
+
+T=That's a mistake!
+W=BROK
+
+T=I told you, I was only a temporary cop...
+W=BROK
+
+T=I'll tell your Director! She will...
+W=BROK
+SKIPEND=1
+
+T=Good luck with that!
+W=GRAFF
+C2A=TURN
+
+T=She just exploded, didn't she?!
+W=GRAFF
+COMM=Literally. The Director saves everyone in the last fight with Wes by overclocking and exploding with him
+
+T=Why, by the way? I'd like to know.
+W=GRAFF
+
+T=...
+W=BROK
+C1A=THINK
+
+T=She... saved us all...
+W=BROK
+
+T=I'll find another way!
+W=BROK
+C1A=READY
+
+T=You know what's worse...?
+W=GRAFF
+
+T=You're starting to rub off on me...
+W=GRAFF
+C1A=OPPOSITE
+TEN=PC01_STORY300_GRAFFBACK2
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1D
+T=I couldn't admit defeat, so I... tried to cheat.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=You what?!
+W=BROK
+C1A=SURPRISED
+
+T=That hacker...
+W=GRAFF
+C2A=OPPOSITE
+
+T=He said he could change the results.
+W=GRAFF
+
+T=I accepted a deal.
+W=GRAFF
+
+T=How...? What deal?
+W=BROK
+
+T=...
+W=GRAFF
+C2A=TORN
+
+T=At least... Did it work?
+W=BROK
+C1A=STUPID
+
+T=I guess not...
+W=GRAFF
+
+T=He sent Squealers after us. We got kidnapped...
+W=GRAFF
+C2A=SAD
+
+T=I...
+W=GRAFF
+
+T=I thought we were going to die... in those filthy sewers...
+W=GRAFF
+
+T=You weren't there...!
+W=GRAFF
+
+T=I know... I'm... sorry...
+W=BROK
+C1A=DOWN
+
+T=I looked for you... But...
+W=BROK
+
+T=Things got complex on my side as well... to say the least.
+W=BROK
+TEN=PC01_STORY300_BROKMOVE
+
+T=But I don't care what it takes! You deserve to be a Drumer!
+W=BROK
+C1A=READY
+
+T=I'll walk through fire for you...
+W=BROK
+
+T=I'll do...anything ! You gotta believe me...!
+W=BROK
+
+T=...
+W=GRAFF
+C2A=TURN
+
+T=Yeah... How far would you go, huh...
+W=GRAFF
+
+T=To get what you want...
+W=GRAFF
+
+T=That rat... It was him, wasn't it?...
+W=BROK
+
+T=Can't you see? He's turned you against me!
+W=BROK
+
+T=He has a grudge!
+W=BROK
+TEN=PC01_STORY300_GRAFFBACK3
+
+T=For what reason?!
+W=GRAFF
+C2A=ANGRY
+
+T=Say it!
+W=GRAFF
+TEN=PC01_STORY300_BROKBACKOFF
+
+T=...
+W=BROK
+C1A=THINK
+
+T=I... I'm not sure.
+W=BROK
+
+T=A lie! Another lie!
+W=GRAFF
+C2A=ANGRY
+TEN=PC01_STORY300_BROKTURNS
+
+T=I swear!
+W=BROK
+C1A=TIRED
+
+T=Ever since the accident... I've lost some memories.
+W=BROK
+
+T=And I know it's the same for you!
+W=BROK
+
+T=Why won't you understand?!
+W=BROK
+C1A=FURIOUS
+TEN=PC01_STORY300_GRAFFSHOWSPIC
+
+T=Because... I've got proof!
+W=GRAFF
+TEN=PC01_STORY300_AUTARCHISMPIC
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1E
+T=A picture...?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=This happened at Autarchism Day.
+W=GRAFF
+
+T=You were there.
+W=GRAFF
+
+T=You're responsible for the banishment of their clan.
+W=GRAFF
+
+T=I... could not...
+W=BROK
+C1A=DOWN
+TEN=PC05D_STORY300_REMOVEPIC
+
+T=It's a fake! Obviously...!
+W=BROK
+C1A=READY
+TEN=PC01_STORY300_INIT1E_CHECK
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1E2
+T=Really?
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=OPPOSITE
+
+T=Prove it.
+W=GRAFF
+
+T=Well...
+W=BROK
+
+T=Look!
+W=BROK
+C1A=READY
+
+T=I couldn't have this hat!
+W=BROK
+
+T=You offered it to me when we moved into this apartment. Remember?
+W=BROK
+
+T=So, I got this hat four years after this picture supposedly took place.
+W=BROK
+
+T=It's a fake!
+W=BROK
+CLUE=CLUE_BROK_PICTURE
+
+T=...
+W=GRAFF
+C2A=TURN
+
+T=I don't believe it.
+W=GRAFF
+
+T=Those Squealers. They have no access to technology like this.
+W=GRAFF
+
+T=They couldn't fake it!
+W=GRAFF
+
+T=Yet they did.
+W=BROK
+TEN=PC01_STORY300_INIT1E3
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1E3
+T=...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=Ott said something earlier...
+W=GRAFF
+
+T="Can someone really be family..."
+W=GRAFF
+
+T="...when they spend their life lying to the people close to them?..."
+W=GRAFF
+
+T=You said you had no more secrets...
+W=GRAFF
+
+T=But you lied to me. Again.
+W=GRAFF
+C2A=SAD
+
+T=How many times has it been already?
+W=GRAFF
+
+T=I don't get it...
+W=BROK
+TEN=PC01_STORY300_INIT1E3_WALK
+
+T=Take a look.
+W=GRAFF
+
+T=...
+W=BROK
+
+T=That bank account...
+W=BROK
+C1A=WONDER
+
+T=That's my mother's name!
+W=GRAFF
+C2A=ANGRY
+
+T=Explain!
+W=GRAFF
+
+T=Why didn't you ever tell me?!
+W=GRAFF
+
+T=It's my inheritance!
+W=GRAFF
+
+T=No...
+W=BROK
+C1A=MAYBE
+
+T=She did open that account years ago.
+W=BROK
+
+T=But this money... It's not hers.
+W=BROK
+
+T=You mean it's yours?!
+W=GRAFF
+C2A=SURPRISED
+
+T=...Yes.
+W=BROK
+TEN=PC01_STORY300_INIT1E3_WAIT
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1E3B
+T=N... No way...!
+W=GRAFF
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=SURPRISED
+
+T=He was right...
+W=GRAFF
+C2A=GASP
+
+T=Wait! Listen to me!
+W=BROK
+C1A=THINK
+C2A=TURN
+
+T=Maybe you won't believe me but...
+W=BROK
+
+T=Here in the Slums, there's no way to open a savings account.
+W=BROK
+
+T=When I was put in charge of you... I knew you'd want to become a Drumer someday.
+W=BROK
+C1A=MAYBE
+
+T=But your mother... She was the spender type.
+W=BROK
+
+T=There was nothing left.
+W=BROK
+C1A=DISAPPOINTED
+
+T=I couldn't bear the thought of you starting a life under the Dome with zero credit, so...
+W=BROK
+
+T=I saved up money on this account.
+W=BROK
+
+T=For you.
+W=BROK
+
+T=...
+W=GRAFF
+
+T=You're right. I don't believe it.
+W=GRAFF
+
+T=It's the truth!
+W=BROK
+C1A=DOWN
+
+T=50 Unis. Each day, by automatic wire transfer.
+W=BROK
+
+T=It's been almost six years. Do the math.
+W=BROK
+C1A=READY
+
+T=...
+W=GRAFF
+TEN=PC01_STORY300_INIT1F_CHECK
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1B2_VIOLENT
+T=Huh?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+TEN=PC01_STORY300_INIT1B2_VIOLENTB
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1B2_VIOLENT2
+T=This.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+TEN=PC01_STORY300_AUTARCHISMPIC
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1F_VIOLENCE
+T=Just another lie...
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=MEH
+
+T=But it doesn't matter.
+W=GRAFF
+
+T=Because of all the trouble you've caused me lately...
+W=GRAFF
+
+T=I couldn't pass.
+W=GRAFF
+
+T=...
+W=BROK
+
+T=So I attempted to cheat.
+W=GRAFF
+
+T=That hacker made me an offer. But he ended up turning us in to those Squealers.
+W=GRAFF
+C2A=OPPOSITE
+
+T=Wait... What are you saying?
+W=BROK
+C1A=SURPRISED
+TEN=PC01_STORY300_INITG4B
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1F
+T=I...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=I wanted to make this a surprise. For the day you'd move to the Drums.
+W=BROK
+TEN=PC01_STORY300_GRAFFBACK5
+
+T=Newsflash!
+W=GRAFF
+C2A=ANGRY
+
+T=This will NEVER happen...!
+W=GRAFF
+
+T=...
+W=BROK
+
+T=Wait... Wait...
+W=GRAFF
+C2A=THINK
+
+T=You're telling me...
+W=GRAFF
+
+T=We've been living this horrible existence...
+W=GRAFF
+
+T=Despite having access to all this money?!
+W=GRAFF
+C2A=GASP
+
+T=All these times I've been starved... Miserable...!
+W=GRAFF
+C2A=ANGRY
+
+T=For nothing?!
+W=GRAFF
+
+T=...
+W=BROK
+C1A=DISAPPOINTED
+
+T=Not for nothin'...
+W=BROK
+C1A=TIRED
+
+T=50 Unis alone ain't much, but accumulated over six years...
+W=BROK
+
+T=It would give you a better life... Outside of this junk area.
+W=BROK
+TEN=PC01_STORY300_GRAFFBACKOFF
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1G
+T=...
+W=GRAFF
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=MEH
+
+T=A better life...
+W=GRAFF
+
+T=You know how you could achieve this...?!
+W=GRAFF
+
+T=By getting out of it.
+W=GRAFF
+
+T=Please... Don't...
+W=BROK
+C1A=HEARTBROKEN
+
+T=I...
+W=BROK
+
+T=I'm really sorry...
+W=BROK
+
+T=Sorry won't cut it!
+W=GRAFF
+C2A=TURN
+
+T=That Squealer was right.
+W=GRAFF
+
+T=You only bring problems... to all the people around you.
+W=GRAFF
+
+T=Listen...
+W=BROK
+
+T=Get out of here!
+W=GRAFF
+C2A=ANGRY
+TEN=PC01_STORY300_INIT1G2
+
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1G2
+T=I'm almost an adult...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=ANGRY
+
+T=I don't need you anymore!
+W=GRAFF
+
+T=You're being unfair!
+W=BROK
+C1A=ANGRY
+
+T=Can't you see? I did all of this for you.
+W=BROK
+
+T=I just saved our world! And that's how you repay me?
+W=BROK
+TEN=PC01_STORY300_GRAFFTURNS
+
+T=Saved?!
+W=GRAFF
+
+T=From my point of view, you just destroyed that robot.
+W=GRAFF
+C1A=TIRED
+
+T=No, countless bots!
+W=GRAFF
+
+T=You've destroyed our rulers.
+W=GRAFF
+
+T=My teacher...
+W=GRAFF
+
+T=Ott's uncle...
+W=GRAFF
+TEN=PC01_STORY300_INITG2_CHECK
+
+
+#------------------------------------------
+ID=PC01_STORY300_INITG2_VIOLENCE
+T=You murdered someone. Right in front of me!
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=ANGRY
+TEN=PC01_STORY300_INITG3
+
+#------------------------------------------
+ID=PC01_STORY300_INITG2_NORMAL
+T=And if we hadn't been here, you would have beaten that Squealer to death...!
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=ANGRY
+TEN=PC01_STORY300_INITG3
+
+
+#------------------------------------------
+ID=PC01_STORY300_INITG3
+T=And who knows how many others?
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=ANGRY
+
+T=Destroy. That's the only thing you do.
+W=GRAFF
+
+T=You destroy everything around you!
+W=GRAFF
+TEN=PC01_STORY300_INITG4_CHECK
+
+#------------------------------------------
+ID=PC01_STORY300_INITG4_VIOLENCE
+T=Stop this!
+W=BROK
+C1=BROK
+C1A=YELL
+C2=GRAFF
+C2A=ANGRY
+
+T=If she was here... What would your mother think...?
+W=BROK
+C1A=ANGRY
+TEN=PC01_STORY300_INIT1H
+
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_INITG4
+T=Everything's your fault...
+W=GRAFF
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=TURN
+TEN=PC01_STORY300_BROKADVANCES
+
+T=Hey...
+W=BROK
+C1A=DOWN
+TEB=PC01_STORY300_MUSICAMBUSH
+
+T=Arghhh!!!
+W=GRAFF
+C2A=GASP
+
+T=Don't touch me!!!
+W=GRAFF
+
+T=Stay away...!
+W=GRAFF
+
+T=I... I can defend myself...!
+W=GRAFF
+C2A=SOB
+
+T=Are you... afraid of me?
+W=BROK
+C1A=SURPRISED
+
+T=You know I'd never hurt ya.
+W=BROK
+
+T=I...
+W=GRAFF
+C2A=SAD
+
+T=I don't know what to think!
+W=GRAFF
+
+T=All I know is...
+W=GRAFF
+
+T=I don't want you around anymore.
+W=GRAFF
+C1A=DISAPPOINTED
+
+T=I'm sick of your lies!
+W=GRAFF
+C2A=TURN
+TEN=PC01_STORY300_BROKADVANCES4
+
+T=You've been using me. All you care about is the money!
+W=GRAFF
+TEN=PC01_STORY300_BROKADVANCES5
+
+T=Well, guess what...
+W=GRAFF
+TEN=PC01_STORY300_INITG4B
+
+#------------------------------------------
+ID=PC01_STORY300_INITG4B
+T=The money is gone!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=ANGRY
+
+T=What?!
+W=BROK
+
+T=I paid the hacker with it. 100,000 Unis.
+W=GRAFF
+C2A=DISDAIN
+
+T=And now... I guess they've evaporated.
+W=GRAFF
+
+T=Vanished.
+W=GRAFF
+
+T=Are you insane...?!
+W=BROK
+C1A=YELL
+
+T=What have you done?!
+W=BROK
+C1A=OPPOSITE
+
+T=For years, I killed myself to save this money, through blood, sweat, and tears!
+W=BROK
+
+T=Work?!
+W=GRAFF
+C2A=ANGRY
+
+T=Is that a new word for "stealing?" Like you did with those Squealers yesterday?!
+W=GRAFF
+TEN=PC01_STORY300_BROKADVANCES7
+
+T=How could you do this...
+W=BROK
+
+T=I had no choice! I had to try and fix the mess you've caused!
+W=GRAFF
+C2A=ANGRY
+
+T=The mess I have caused?!
+W=BROK
+C1A=FURIOUS
+TEN=PC01_STORY300_BROKADVANCES8
+
+T=You think everything's easy for me?!
+W=BROK
+
+T=I never asked for any of this!
+W=BROK
+
+T=I had never raised a child!
+W=BROK
+
+T=And I shouldn't!
+W=BROK
+
+T=No kidding!
+W=GRAFF
+TEN=PC01_STORY300_INITG4B_CHECK
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1H
+T=...
+W=GRAFF
+C1=BROK
+C1A=OPPOSITE
+C2=GRAFF
+C2A=TORN
+TEN=PC01_STORY300_GRAFFTURNS2
+
+T=My mother...
+W=GRAFF
+
+T=I barely remember her.
+W=GRAFF
+
+T=And yet... I hate her!
+W=GRAFF
+C2A=ANGRY
+
+T=All she ever did was make me and die!
+W=GRAFF
+TEN=PC01_STORY300_BROKTURNS2
+
+T=How dare you?!
+W=BROK
+C1A=FURIOUS
+
+T=I forbid you to talk about your mother like this!
+W=BROK
+
+T=Who cares!
+W=GRAFF
+C2A=TURN
+
+T=She's dead!
+W=GRAFF
+
+T=Stop! Now you've gone too far...!
+W=BROK
+
+T=What are you gonna do...? Kill me...?
+W=GRAFF
+C2A=ANGRY
+
+T=Like you killed her...?
+W=GRAFF
+TEN=PC01_STORY300_GOTABLE
+
+T=I'd never...
+W=BROK
+C1A=DOWN
+TEN=PC01_STORY300_GRAFFPLACES
+
+T=Oh, I don't blame you for this! She deserved it anyway!
+W=GRAFF
+
+T=She was trash, a bag of decaying worms...
+W=GRAFF
+
+T=Like you!
+W=GRAFF
+TEN=PC01_STORY300_BROKLOOKS
+
+T=ENOUGH!!!
+W=BROK
+C1A=YELL
+TEN=PC01_STORY300_INIT1H_CHECK
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1H_VIOLENT
+T=I...
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=GRAFF
+C2A=GASP
+CONTEXT=FALL ENDING - Brok has been so violent throughout the game that he accidentally... kills Graff.
+
+T=DID NOT...
+W=BROK
+
+T=KILL...
+W=BROK
+
+T=HER...!
+W=BROK
+
+T=Stop...!
+W=GRAFF
+C2A=CHOKE
+
+T=That...hurts!
+W=GRAFF
+
+T=...
+W=GRAFF
+C2A=SOB
+
+T=I...
+W=GRAFF
+
+T=Remember...
+W=GRAFF
+
+T=That... feeling...
+W=GRAFF
+C2A=TORN
+
+T=...
+W=GRAFF
+TEN=PC01_STORY300_HITGRAFF2
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1H_VIOLENT2
+T=(Pant, pant)
+W=BROK
+A=ANGRY
+
+T=...
+W=BROK
+
+T=...
+W=BROK
+A=TIRED
+
+T=No...
+W=BROK
+
+T=I'm sorry... I don't know...
+W=BROK
+
+T=What possessed me...
+W=BROK
+
+T=...
+W=BROK
+A=WONDER
+
+T=Graff...?
+W=BROK
+A=WORRIED
+
+T=Graff!
+W=BROK
+TEN=PC01_STORY300_HITGRAFFMUSIC
+
+T=...!!!
+W=BROK
+A=SURPRISED
+SILENCE=1
+
+T=N...
+W=BROK
+A=HEARTBROKEN
+
+T=Noooooo!!!
+W=BROK
+A=YELL
+
+T=Graff! Come back to me!
+W=BROK
+A=HEARTBROKEN
+TEN=PC01_STORY300_HITGRAFF3
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1H_VIOLENT3
+T=This... can't be...!
+W=BROK
+A=WORRIED
+
+T=What have I done...
+W=BROK
+
+T=...
+W=BROK
+A=DISAPPOINTED
+
+T=You...
+W=BROK
+
+T=You tried to warn me...
+W=BROK
+
+T=But I wouldn't listen...
+W=BROK
+C1_EYESHUT=1
+
+T=...
+W=BROK
+
+T=...
+W=BROK
+TEN=PC01_STORY300_VIOLENTFADE
+
+T=NOOOOOOOOOOOOOO OOOOOOOO!!!
+W=BROK
+A=YELL
+TEN=PC01_STORY300_VIOLENTENDING
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1H_VIOLENT4
+T=I...
+BVOICE=BROK
+T=Destroy...
+T=Everything...
+TEN=PC01_STORY300_VIOLENTENDING2
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1H2
+T=(SMASH!)
+#TODO Floor lamp falls on Graff)
+CONTEXT=Brok is angry and hits the table. Floor lamp falls on Graff (Canonical ending)
+TEN=PC01_STORY300_INIT1H3
+
+#------------------------------------------
+ID=PC01_STORY300_INIT1H3
+T=...!
+W=BROK
+A=WORRIED
+A=SURPRISED
+TEN=PC01_STORY300_RESCUEGRAFF
+
+T=No!!!
+W=BROK
+A=WORRIED
+TEN=PC01_STORY300_RESCUEGRAFF_REPOSITION
+
+T=Graff!
+W=BROK
+
+T=You... You're okay...?
+W=BROK
+TEN=PC01_STORY300_GRAFFWAKES
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT2
+T=...
+W=GRAFF
+C1=BROK
+C1A=WORRIED
+C2=GRAFF
+C2A=TURN
+TEN=PC01_STORY300_GRAFFLEAVES
+
+T=Leave me alone...
+W=GRAFF
+
+T=...
+W=BROK
+C1A=DISAPPOINTED
+
+T=You heard me...
+W=GRAFF
+TEN=PC01_STORY300_GRAFFTURNS
+
+T=GO. AWAY!!!
+W=GRAFF
+C1A=CONFUSED
+C2A=ANGRY
+TEN=PC01_STORY300_GRAFFBEDROOM
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_INIT3
+T=Son...
+W=BROK
+C1=BROK
+C1A=HEARTBROKEN
+C2=GRAFF
+C2A=TURN
+TEN=PC01_STORY300_GRAFFBACK7
+
+T=NO!!!
+W=GRAFF
+C2A=ANGRY
+
+T=I'll never be your son!
+W=GRAFF
+
+T=You're not my father! You'll never be!!!
+W=GRAFF
+TEN=PC01_STORY300_GRAFFBEDROOMIN
+
+T=...
+W=BROK
+C1A=DOWN
+C2=NONE
+TEN=PC01_STORY300_BROKBEDROOM
+
+
+
+
+
+
+#------------------------------------------
+ID=PC01_STORY300_GRAFF1
+T=(Cries)
+W=GRAFF
+A=SOB
+CONTEXT=Graff feels really bad after this final argument with Brok
+
+T=It's over...
+W=GRAFF
+
+T=I'm stuck... in this dump... Forever...
+W=GRAFF
+
+T=I...
+W=GRAFF
+
+T=I don't deserve this...
+W=GRAFF
+TEN=PC01_STORY300_GRAFF1BWAIT
+
+#------------------------------------------
+ID=PC01_STORY300_GRAFF1B
+T=No...
+W=GRAFF
+A=TORN
+
+T=Maybe I do...
+W=GRAFF
+
+T=...
+W=GRAFF
+
+T=My back hurts...
+W=GRAFF
+
+T=Must be my punishment...
+W=GRAFF
+
+T=For saying all these things.
+W=GRAFF
+TEN=PC01_STORY300_GRAFF1CWAIT
+
+#------------------------------------------
+ID=PC01_STORY300_GRAFF1C
+T=He saved us...
+W=GRAFF
+A=SAD
+
+T=Saved me...
+W=GRAFF
+
+T=And once again...
+W=GRAFF
+
+T=All I did was...
+W=GRAFF
+
+T=...
+W=GRAFF
+
+T=You're wrong...
+W=GRAFF
+A=TORN
+
+T=I don't deserve... a good future...
+W=GRAFF
+
+T=It's my fault...
+W=GRAFF
+
+T=(Sigh)
+W=GRAFF
+TEN=PC01_STORY300_MUSICFADE
+
+T=...?
+W=GRAFF
+A=SURPRISED
+C1_EYESHUT=0
+TEN=PC01_STORY300_SHOWPC
+
+T=A notification?
+W=GRAFF
+
+T="HI. HOW ARE YOU?"
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T=...
+W=GRAFF
+A=OPPOSITE
+
+T=It's that guy...
+W=GRAFF
+TEN=PC01_SHOWGRAFF
+
+T="Bad."
+C1A=TORN
+BNAMESP=GRAFFCHAT
+SILENCE=1
+SOUND=keyboardtyping
+
+T="Please don't talk to me..."
+BNAMESP=GRAFFCHAT
+TEN=PC01_SHOWNMER
+SILENCE=1
+SOUND=keyboardtyping
+
+T="YOUR OLD MAN IS MAKING THINGS ROUGH FOR YOU. AM I RIGHT?"
+BNAMESP=NMERCHAT
+TEN=PC01_SHOWGRAFF
+TEXTONLY=1
+
+T="How did you know?"
+BNAMESP=GRAFFCHAT
+TEN=PC01_SHOWNMER
+SILENCE=1
+SOUND=keyboardtyping
+
+T="OBVIOUS"
+BNAMESP=NMERCHAT
+TEN=PC01_SHOWGRAFF
+TEXTONLY=1
+
+T="I'm incorrigible."
+BNAMESP=GRAFFCHAT
+SILENCE=1
+SOUND=keyboardtyping
+
+T="I just blamed him for everything that goes wrong in my life."
+BNAMESP=GRAFFCHAT
+SILENCE=1
+SOUND=keyboardtyping
+
+T="There's something wrong with me."
+BNAMESP=GRAFFCHAT
+TEN=PC01_SHOWNMER
+SILENCE=1
+SOUND=keyboardtyping
+
+T="NO"
+BNAMESP=NMERCHAT
+TEB=PC01_STORY300_MUSICAMBUSH
+TEXTONLY=1
+
+T="YOU'RE VERY CAPABLE"
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T="YOU JUST NEED TO PROVE IT TO YOURSELF"
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T="WHAT'S WRONG IS THE INFLUENCE HE HAS ON YOU"
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T="WE DON'T KNOW EACH OTHER WELL BUT I FEEL YOU CAN'T TRULY BE YOURSELF BY LIVING WITH HIM"
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T="TRUST ME"
+BNAMESP=NMERCHAT
+TEN=PC01_SHOWGRAFF
+TEXTONLY=1
+
+T="So what are you suggesting?"
+BNAMESP=GRAFFCHAT
+TEN=PC01_SHOWNMER
+SILENCE=1
+SOUND=keyboardtyping
+
+T="YOU KNOW WHAT YOU HAVE TO DO"
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T="IT'S UP TO YOU"
+BNAMESP=NMERCHAT
+TEN=PC01_SHOWGRAFF
+TEXTONLY=1
+
+T="What do you mean...?"
+BNAMESP=GRAFFCHAT
+SILENCE=1
+SOUND=keyboardtyping
+
+T=...
+W=GRAFF
+A=SAD
+TEN=PC01_STORY300_CHECKINVOICE
+
+
+#------------------------------------------
+ID=PC01_STORY300_INVOICEPAID
+T=I'm sorry but... I need to ask.
+W=GRAFF
+A=MEH
+
+T="You're not a stranger, are you?"
+BNAMESP=GRAFFCHAT
+TEN=PC01_SHOWNMER
+TEXTONLY=1
+
+T="RIGHT"
+BNAMESP=NMERCHAT
+TEN=PC01_SHOWGRAFF
+TEXTONLY=1
+
+T="Who are you exactly...?"
+BNAMESP=GRAFFCHAT
+SILENCE=1
+SOUND=keyboardtyping
+
+T=...
+W=GRAFF
+TEN=PC01_SHOWNMER
+
+T="SOMEONE YOU KNEW..."
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T="A LONG TIME AGO"
+BNAMESP=NMERCHAT
+TEN=PC01_SHOWGRAFF
+TEXTONLY=1
+
+T=What...?
+W=GRAFF
+A=SURPRISED
+
+T="Please... Tell me your name!"
+BNAMESP=GRAFFCHAT
+TEN=PC01_SHOWNMER
+SILENCE=1
+SOUND=keyboardtyping
+
+T="I NEED A BREAK"
+BNAMESP=NMERCHAT
+TEXTONLY=1
+
+T="YOU KNOW WHAT YOU HAVE TO DO"
+BNAMESP=NMERCHAT
+TEN=PC01_SHOWNOTHERE
+TEXTONLY=1
+
+T=NMER_3 has logged off.
+
+T=No!!!
+W=GRAFF
+TEN=PC01_STORY300_GRAFF5WAIT
+
+
+#------------------------------------------
+ID=PC01_STORY300_INVOICENOTPAID
+T="Hello...?"
+W=GRAFF
+A=MEH
+BNAMESP=GRAFFCHAT
+TEN=PC01_SHOWNOTHERE
+
+T=Offline.
+TEXTONLY=1
+
+T=No...! Stupid connection...
+W=GRAFF
+A=GASP
+
+T=I've been cut off the Triweb entirely.
+W=GRAFF
+
+T=Maybe I should have paid that invoice...
+W=GRAFF
+A=TURN
+TEN=PC01_STORY300_GRAFF5WAIT
+
+#------------------------------------------
+ID=PC01_STORY300_GRAFF6
+T=...
+W=GRAFF
+A=TORN
+
+T=What I have to do...
+W=GRAFF
+
+T=(Sigh)
+W=GRAFF
+
+T=I...
+W=GRAFF
+A=SAD
+
+T=I think I understand...
+W=GRAFF
+TEN=PC01_STORY300_END
+
+
+#------------------------------------------
+ID=PC01_STORY310_BROKBACK1
+T=...?
+W=BROK
+A=THINK
+CONTEXT=Brok comes back after their argument and notices a letter from Graff on the table
+
+T=A... letter?...
+W=BROK
+TEN=PC01_STORY310_PICKLETTER
+
+#------------------------------------------
+ID=PC01_STORY310_BROKBACK1B
+T="Hi Brok."
+BVOICE=GRAFF
+TEB=PC01_STORY310_MUSICLETTER
+
+T="Forgive me. Blaming you for everything that went wrong in my life."
+
+T="This wasn't fair."
+
+T="I know... You didn't take me for the money."
+
+T="Yet..."
+
+T="The truth is..."
+
+T="I can't go on like this."
+
+T="I guess this will come as a shock to you. But..."
+
+T="Let's face it. Things never really worked between us."
+
+T="I'll be sixteen in a few days. An adult."
+
+T="I can take care of myself."
+
+T="There's no reason for me to rely on you anymore. I've been a burden for too long."
+
+T="I've decided to live my own life."
+
+T="Soon I will pay you back all that money."
+
+T="I'm determined."
+
+T="I'm leaving, and I won't be coming back."
+
+T="Please don't follow me."
+
+T="Don't call me."
+
+T="Just go on with your life."
+
+T="You have the right to make a fresh start for yourself as well."
+
+T="Thank you for the few moments of joy we've shared."
+
+T="I will never forget you."
+
+T="Graff"
+TEN=PC01_STORY310_PICKLETTER3
+
+#------------------------------------------
+ID=PC01_STORY310_BROKBACK1C
+T=...
+W=BROK
+A=HEARTBROKEN
+
+T=He's...
+W=BROK
+
+T=He's gone...
+W=BROK
+
+T=I...
+W=BROK
+
+T=I definitely...
+W=BROK
+
+T=Lost him...
+W=BROK
+TEN=PC01_STORY310_PICKLETTER4
+
+#------------------------------------------
+ID=PC01_STORY310_BROKBACK1D
+T=What...
+W=BROK
+A=DISAPPOINTED
+
+T=What am I supposed to do now...?
+W=BROK
+TEN=PC01_STORY310_MOVE
+
+
+
+#------------------------------------------
+ID=PC01_STORY310_BROKBACK2
+T=You say I should make a fresh start...
+W=BROK
+C1=BROK
+C1A=DOWN
+
+T=How could I ever do that...?
+W=BROK
+C1A=DISAPPOINTED
+
+T=Grandpa...
+W=BROK
+
+T=Lia, and now you...
+W=BROK
+
+T=If only... I had another chance.
+W=BROK
+
+T=I'd do things differently.
+W=BROK
+
+T=But it's too late now...
+W=BROK
+TEN=PC01_BROKENVELOPE1EV
+
+#------------------------------------------
+ID=PC01_BROKENVELOPE1
+T=(Envelope falls)
+SILENCE=1
+
+T=This envelope...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Oh... Yeah. Shay...
+W=BROK
+C1=BROK
+C1A=THINK
+TEN=PC01_STORY310_SHAYLETTERCROUCH
+
+T=...
+W=BROK
+C1A=THINK
+TEN=PC01_STORY310_SHAYLETTER2
+SILENCE=1
+
+T=(Opens letter)
+
+T="I've hidden something from you. Be a detective!"
+BVOICESP=SHAY
+
+T=...?
+W=BROK
+
+T=That's all...?
+W=BROK
+C1A=WONDER
+
+T=Yeah... Nothing else...
+W=BROK
+
+T=What does she mean...?
+W=BROK
+
+T=And... How could she know...?
+W=BROK
+C1A=MAYBE
+
+T=Shay...
+W=BROK
+
+T=You've always been very good at giving me food for thought, huh...?
+W=BROK
+
+#TODO Make screen fade out to black to give more tension
+T=...
+W=BROK
+
+T=(Sigh)
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC01_STORY310_STAND
+
+T=Got nothing better to do right now anyway...
+W=BROK
+
+T=You win, girl.
+W=BROK
+
+T=I will solve your riddle.
+W=BROK
+C1A=READY
+TEN=PC01_INTERROGATION_START
+
+
+#------------------------------------------
+ID=PC01_INTERROGATE_TILLENDOFTIME1
+T=(I tried my best but I couldn't focus.)
+BVOICE=BROK
+MOOD=THINK
+
+T=(Graff was devastated.)
+MOOD=THINK
+
+T=(He blamed himself for Ott's death and was suffering from it.)
+MOOD=THINK
+
+T=(I knew that feeling all too well.)
+MOOD=THINK
+
+T=(If only there was a way to go back... To prevent this accident from happening...)
+MOOD=THINK
+
+T=(Then I realized it.)
+MOOD=THINK
+
+T=(Shay...)
+MOOD=THINK
+
+T=(She knew.)
+MOOD=THINK
+
+T=(This is it. What she had prepared for.)
+MOOD=THINK
+
+T=(This new invention...)
+MOOD=THINK
+
+T=(What if?...)
+MOOD=THINK
+TEN=PC01_TILLENDTIME_AFTERINTERROGATION_GRAFF
+
+
+#------------------------------------------
+ID=PC01_INTERROGATE_EXIT1
+T=I need more time...
+W=BROK
+A=THINK
+TEN=PC01_INTERROGATE_EXITFORCE
+
+#------------------------------------------
+ID=PC01_CLUE_SHAY_SECRET
+T=Ever since Shay announced she was closing the garage for the day, I had a feeling she was hiding something from me.
+W=BROK
+A=MAYBE
+CONTEXT=Brok interrogates "himself", thinking about what Shay wrote and making connections of the past events
+
+T=We've known each other for years. This has never happened before.
+W=BROK
+
+T=So it must be very important. What's the only thing she wouldn't let me take a look at?
+W=BROK
+C1A=THINK
+
+T=That new invention.
+W=BROK
+C1A=MOCK
+
+T=What could it be...?
+W=BROK
+C1A=WONDER
+TEN=INTERFACE_CLUE_NEW
+
+#------------------------------------------
+ID=PC01_CLUE_SHAY_TIME
+T=It's pretty obvious. All the items she's asked me to retrieve are parts for this new invention.
+W=BROK
+A=THINK
+
+T=But I'm left wondering. What could she need this ultra-precise timer for?
+W=BROK
+
+T=Maybe this chit chat about space-time theories wasn't so random after all...
+W=BROK
+C1A=WONDER
+TEN=INTERFACE_CLUE_NEW
+
+
+
+#------------------------------------------
+ID=PC01_CLUE_SHAY_SAVED
+T=Yesterday, when crossing the dark alley... I had an awful feeling.
+W=BROK
+A=MAYBE
+
+T=It seemed like I just woke up after... dying.
+W=BROK
+
+T=I've had many fights in my life. Several times I've been on the brink of death.
+W=BROK
+
+T=And yet... I've never felt this before.
+W=BROK
+C1A=OPPOSITE
+
+T=What was that...?
+W=BROK
+
+T=It's curious but... Shay doesn't think anything could happen to me. I've noticed it many times.
+W=BROK
+C1A=ANGRY
+
+T=Of course this could simply mean she has great trust in me, and I thought as much.
+W=BROK
+
+T=But now that I put these facts together... there must be another meaning behind this.
+W=BROK
+C1A=THINK
+
+T=Did Shay save me... through some unusual means...?
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+#------------------------------------------
+ID=PC01_CLUE_SHAY_FUTURE
+T=This letter...
+W=BROK
+A=THINK
+C1A=THINK
+
+T=She knew.
+W=BROK
+C1A=MAYBE
+
+T=It's obvious. She knew I would have one of the worst days of my life...
+W=BROK
+
+T=Spiraling into this bottomless pit I'm currently in...
+W=BROK
+
+T=But how...?
+W=BROK
+
+T=Yeah, I'm often depressed but... never that much.
+W=BROK
+C1A=DISAPPOINTED
+
+T=And if she did save me in that alley, the other day...
+W=BROK
+
+T=How could she anticipate it, either?
+W=BROK
+C1A=TIRED
+
+T=This sounds crazy but...
+W=BROK
+
+T=Can she somehow... predict the future...?
+W=BROK
+C1A=MAYBE
+TEN=INTERFACE_CLUE_NEW
+
+
+#------------------------------------------
+ID=PC01_CLUE_CHIEFRAT_WHAT
+T=That picture is intriguing, to say the least.
+W=BROK
+A=MAYBE
+
+T=Graff is right. It can't be fake.
+W=BROK
+C1A=ANGRY
+
+T=Those Squealers do not possess the appropriate technology.
+W=BROK
+
+T=It's also pretty clear their leader's hatred against me was genuine. He expressed it as soon as he recalled me.
+W=BROK
+
+T=That darn Squealer was ready to take revenge.
+W=BROK
+C1A=FURIOUS
+
+T=Otherwise he wouldn't have gone as far as kidnapping Graff and trying to kill him.
+W=BROK
+
+T=But I hadn't met him until two days ago...
+W=BROK
+C1A=WONDER
+
+T=And though my memory is a mess, I didn't even get that hat until four years later.
+W=BROK
+
+T=So what's the explanation...?
+W=BROK
+
+T=Either I've got a doppelgänger... Or this really happened.
+W=BROK
+C1A=WORRIED
+TEN=INTERFACE_CLUE_NEW
+
+
+#------------------------------------------
+ID=PC01_CLUE_SPECIAL_CHANGES
+T=For sure, there are weird things happening.
+W=BROK
+A=DOWN
+
+T=I'm all about doppelgänger theories but the probability of that happening is very slim.
+W=BROK
+C1A=OPPOSITE
+
+T=And it's clearly me in that picture.
+W=BROK
+
+T=Which means... I was there four years ago...?
+W=BROK
+C1A=THINK
+
+T=And that feeling in the dark alley...
+W=BROK
+
+T=It felt like... A memory...
+W=BROK
+C1A=MAYBE
+
+T=As for Shay predicting the future, I don't think such a thing is possible.
+W=BROK
+C1A=OPPOSITE
+
+T=Shay is a scientist and she often says this - when there's too much coincidence, it's no longer a coincidence.
+W=BROK
+
+T=So that leaves only one possibility.
+W=BROK
+
+T=Could the events currently happening have already happened... even if I'm not aware of it...?
+W=BROK
+C1A=TIRED
+
+T=Maybe... They've been changed...?
+W=BROK
+
+T=I'm... becoming afraid of what I'm about to find out...
+W=BROK
+C1A=DOWN
+TEN=INTERFACE_CLUE_NEW
+
+
+#------------------------------------------
+ID=PC01_CLUE_GARAGE_LOOP
+T=Although I don't have a lot of clues about what Shay has been working on...
+W=BROK
+A=TIRED
+
+T=I clearly remember its shadow. An egg shape is quite unusual.
+W=BROK
+C1A=MAYBE
+
+T=What Dr. Gherkin said earlier stuck with me.
+W=BROK
+
+T=Eggs are used to symbolize loops.
+W=BROK
+C1A=THINK
+
+T=I know Shay. She never does anything without a purpose.
+W=BROK
+C1A=MOCK
+
+T=If she chose that specific form, it must be crucial.
+W=BROK
+
+T=So... This new machine can... loop?...
+W=BROK
+
+T=If only I knew what this means...
+W=BROK
+C1A=TIRED
+
+T=(Sigh) Shay... Why do you have to be so secretive...?
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+#------------------------------------------
+ID=PC01_CLUE_GARAGE_CHANGEEVENTS
+T=Alright, so...
+W=BROK
+A=WONDER
+
+T=Memories and proof of things that didn't happen.
+W=BROK
+
+T=You and your obsession with space-time theories.
+W=BROK
+
+T=And I seem to be the only one experiencing this...
+W=BROK
+C1A=MAYBE
+
+T=Again, I don't believe in coincidences, so...
+W=BROK
+
+T=Shay. It's your invention, isn't it?
+W=BROK
+C1A=READY
+
+T=This is totally a crazy thought but...
+W=BROK
+
+T=Can it... alter events...?
+W=BROK
+C1A=WONDER
+TEN=INTERFACE_CLUE_NEW
+
+#------------------------------------------
+ID=PC01_CLUE_SHAY_BUILT
+T=Shay would have used that machine to save me.
+W=BROK
+A=WONDER
+
+T=I had that encounter with the Squealer leader.
+W=BROK
+C1A=TIRED
+
+T=Their defeat never happened... Which is why I can't remember it...?
+W=BROK
+
+T=Wait... That doesn't make any sense...!
+W=BROK
+C1A=CONFUSED
+
+T=How could an invention change an event that already definitely happened...?
+W=BROK
+
+#T=And even if it did... How could I be there physically in that picture...?
+#W=BROK
+
+T=Unless...
+W=BROK
+C1A=WONDER
+
+T=...
+W=BROK
+
+T=Time...
+W=BROK
+
+T=Loop...
+W=BROK
+
+T=N...
+W=BROK
+C1A=CONFUSED
+
+T=No way...!
+W=BROK
+
+T=She's... building a...?!
+W=BROK
+C1A=SURPRISED
+TEN=PC01_INTERROGATION_COMPLETE
+
+
+#------------------------------------------
+ID=PC01_TILLENDTIME_AFTERINTERROGATION_GRAFF
+T=I...
+W=BROK
+A=WORRIED
+C1A=WORRIED
+
+T=Am I losing it...?
+W=BROK
+
+T=But if this is true... Then...!
+W=BROK
+
+T=...
+W=BROK
+SILENCE=1
+TEN=PC01_TILLENDTIME_AFTERINTERROGATION1B
+
+#------------------------------------------
+ID=PC01_TILLENDTIME_AFTERINTERROGATION2
+T=Graff!
+W=BROK
+A=YELL
+
+T=We need to go! Now!
+W=BROK
+TEN=PC01_TILLENDTIME_AFTERINTERROGATION2B
+
+
+
+
+
+#------------------------------------------
+ID=PC01_STORY310_AFTERINTERROGATION
+T=I...
+W=BROK
+A=THINK
+C1A=WORRIED
+
+T=Am I losing it?
+W=BROK
+
+T=Wes, a robot determined to destroy our world...
+W=BROK
+C1A=STUPID
+
+T=That was already totally nuts but this...
+W=BROK
+
+T=...
+W=BROK
+
+T=Nah. I must be wrong.
+W=BROK
+C1A=DISAPPOINTED
+
+T=It's been a long day. My brain is a mess.
+W=BROK
+C1A=TIRED
+
+T=I've simply made way too many assumptions.
+W=BROK
+
+T=For all I know, she's probably building a giant coffee machine that can wash itself!
+W=BROK
+C1A=HAPPY
+
+T=Or even a brainwashing robot that cuts hair!
+W=BROK
+C1A=MOCK
+TEN=PC01_STORY310_MUSIC
+
+T=...
+W=BROK
+C1A=WONDER
+
+T=...!
+W=BROK
+C1A=SURPRISED
+
+T=That's right! What a fool I am.
+W=BROK
+C1A=STUPID
+
+T=There's another possible and much more logical explanation.
+W=BROK
+
+T=Could that machine... suppress memories...?
+W=BROK
+C1A=MAYBE
+
+T=Did I... already use it?
+W=BROK
+
+T=That would certainly explain a lot.
+W=BROK
+C1A=DOWN
+
+T=I'm... getting confused...
+W=BROK
+C1A=STUPID
+TEN=PC01_STORY310_FADEIN
+
+T=Argh...
+W=BROK
+TEN=PC01_STORY310_CROUCH
+
+T=My head...
+W=BROK
+
+T=It's... more than I can handle...
+W=BROK
+
+T=Stop...
+W=BROK
+
+T=I...
+W=BROK
+C1A=TIRED
+TEN=PC01_STORY310_STANDAG
+
+T=I have to go out and see for myself.
+W=BROK
+C1A=MAYBE
+TEN=PC01_STORY310_WRITE
+
+T=But... Before that...
+W=BROK
+
+T=Just in case you come back.
+W=BROK
+TEN=PC01_STORY310_WRITE3
+
+#------------------------------------------
+ID=PC01_STORY310_AFTERINTERROGATION1B
+T=(Writes)
+T="Graff... You were right..."
+BVOICESP=BROK
+T="I've been keeping more from you..."
+BVOICESP=BROK
+T="But this is the final one."
+BVOICESP=BROK
+T="Hopefully... Even in his condition..."
+BVOICESP=BROK
+T="He'll be able to take care of you..."
+BVOICESP=BROK
+T="Better than I ever did."
+BVOICESP=BROK
+TEN=PC01_STORY310_GETOUT
+
+
+
+#------------------------------------------
+ID=PC01_STORY310_AFTERINTERROGATION2
+T=Shay...
+BVOICE=BROK
+
+T=Are you... offering me a chance?
+
+T=Or...
+
+T=Did you...
+
+T=...take parts of my life away from me?
+
+T=Maybe both...?
+
+T=I'm dizzy and anxious but...
+
+T=I need to know.
+TEN=PC01_STORY310_END
+
+
+
+#--------------------------------
+ID=PC01_STORY330_CANNOT1
+T=...
+W=BROK
+A=DOWN
+CONTEXT="Cannot" ending : Brok couldn't enter the time machine and comes back
+
+T=I... better get rid of this.
+W=BROK
+A=DISAPPOINTED
+TEN=PC01_STORY330_RIPLETTER
+
+T=(Rips letter)
+
+T=(Sigh)
+W=BROK
+
+T=Did I make the right decision...?
+W=BROK
+
+T=What future do I have?
+W=BROK
+
+T=I can't remember the last time I felt this way but...
+W=BROK
+
+T=I'm... scared...
+W=BROK
+A=HEARTBROKEN
+
+T=Maybe... There's still time to go back and...
+W=BROK
+SKIPEND=1
+TEN=PC01_STORY320_CANNOT_GRAFFENTERS
+
+#--------------------------------
+ID=PC01_STORY330_CANNOT2
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=MEH
+
+T=...
+W=GRAFF
+C1A=HEARTBROKEN
+
+T=You... You're here...
+W=GRAFF
+C2A=SAD
+
+T=I... just came to...
+W=GRAFF
+TEN=PC01_STORY320_CANNOT_GRAFFENTERS2B
+
+#--------------------------------
+ID=PC01_STORY330_CANNOT3
+T=Never mind.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=TURN
+TEN=PC01_STORY330_MUSIC
+
+T=Wait!
+W=BROK
+A=READY
+
+T=Don't leave! I'm begging you!
+W=BROK
+C1A=HEARTBROKEN
+
+T=...
+W=GRAFF
+C2A=TORN
+TEN=PC01_STORY320_CANNOT_GRAFFENTERS4
+
+T=...Okay.
+W=GRAFF
+
+T=What... are you going to do?
+W=BROK
+C1A=MAYBE
+
+T=I... have no idea...
+W=GRAFF
+
+T=Neither do I...
+W=BROK
+A=DISAPPOINTED
+
+T=...
+W=GRAFF
+
+T=What I've written... still stands.
+W=GRAFF
+TEN=PC01_STORY320_CANNOT_GRAFFENTERS5
+
+T=But... Let's take a break.
+W=GRAFF
+C2A=SAD
+
+T=I agree.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Graff...
+W=BROK
+C1A=MAYBE
+
+T=If you could go back and change everything...
+W=BROK
+
+T=What would you do?
+W=BROK
+
+T=...
+W=GRAFF
+
+T=I've come to realize...
+W=GRAFF
+
+T=There's no good or bad choices.
+W=GRAFF
+
+T=Only consequences.
+W=GRAFF
+C2A=TORN
+
+T=There's no way to go back so regrets are useless.
+W=GRAFF
+
+T=Well...
+W=BROK
+C1A=THINK
+
+T=You're wrong.
+W=BROK
+C1A=READY
+TEN=PC01_STORY320_CANNOT_GRAFFENTERS6
+
+T=Huh?
+W=GRAFF
+C2A=GASP
+
+T=I'd like to show you somethin'.
+W=BROK
+
+T=Follow me.
+W=BROK
+TEE=PC01_STORY320_CANNOT_GRAFFENTERS7
+
+
+
+#--------------------------------
+#= Get material
+#--------------------------------
+ID=PC01_MATERIAL1
+T=No way! Graff has kept this little box for years.
+W=BROK
+A=SURPRISED
+CONTEXT=Get Shay's material from this room
+
+T=I had no idea this was Firsten dust!
+W=BROK
+A=HAPPY
+
+T=Hopefully he doesn't mind me borrowing it...
+W=BROK
+TEN=PC01_MATERIAL_GET
+
+#--------------------------------
+ID=PC01_MATERIAL_GRAFF
+T=Yeah. Help yourself with that old stuff.
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+
+T=Thanks. I owe you one!
+W=BROK
+C1A=HAPPY
+
+#--------------------------------
+#= Ending "till the end of time"
+#--------------------------------
+ID=PC01_TILLENDTIME1
+T=(Sigh)
+W=BROK
+A=DISAPPOINTED
+CONTEXT="End of time" ending : Brok & Graff came back home after Ott got killed by rats
+
+T=Graff is taking a rest.
+W=BROK
+
+T=He keeps repeating he's a murderer...
+W=BROK
+A=DOWN
+
+T=But I know.
+W=BROK
+
+T=It was those darn Squealers.
+W=BROK
+A=ANGRY
+
+T=So much has happened lately.
+W=BROK
+A=TIRED
+
+T=So many things I don't know...
+W=BROK
+
+T=What's the point... of all this...
+W=BROK
+
+T=I wish I could do something...
+W=BROK
+
+T=...
+W=BROK
+A=WONDER
+
+T=In my pocket...
+W=BROK
+
+T=...?
+W=BROK
+TEN=PC01_BROKENVELOPE1EV
+
+
+
+#----------------------------------------------------
+ID=COOP_PC01_GRAFF1
+T=He's playing an action videogame.
+T=Graff...I almost forget you're a typical cat teen sometimes.
+T=Okay, I should be able to replicate his look!
+T=I can enter the options to change my appearance.
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 19/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# EXPRESSIONS - breakXedge - 07/09/2019
+###############################################

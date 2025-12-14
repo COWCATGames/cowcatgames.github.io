@@ -1,0 +1,3168 @@
+#-------------------------------
+#=Shay garage
+#-------------------------------
+
+#----- Interactions --------
+PC_LEVER=Palanca
+PC_MASK=Máscara
+PC_TUBES=Tubos
+PC_INCUBATOR=Incubadora
+PC_TRASH=Basura
+PC_VEHICLE=Vehículo
+PC_WRENCH=Llave inglesa
+PC_TOOLS=Herramientas
+PC_ARENA=Arena
+PC_BLANKET=Manta
+PC_DOOR=Puerta
+PC_TIMELINE=Cronograma
+PC_EGG=Huevo
+
+#----- Choices / Items --------
+PC08B_SHAY_REMEMBER_CHOICE=¿Te has olvidado de la Arena Virtual?
+PC08B_SHAY_REMEMBER_YES=Escucha a Shay
+PC08B_SHAY_REMEMBER_NO=No hace falta, ¡me acuerdo!
+PC08B_SHAY_INV_HOOVER_CHOICE=¿Vender el robot de limpieza para repuestos?
+PC08B_SHAY_BOLT_CHOICE=¿Estás de acuerdo?
+PC08B_LISTEN_THEORY=Escuchar la teoría
+PC08B_REST=Descansar
+PC08B_GETHINT=¿Pedir una pista?
+
+GOT_RADAR=Un aparato raro
+GOT_LEVER=¡Una palanca!
+GOT_RUBBERCUTTER=¡Una cortadora de goma!
+GOT_REMOTECONTROL=¡Un mando a distancia que funciona!
+
+PC08B_LEVER_CHOICE=¿Activar la palanca?
+
+PC08B_DAY2_END_CHOICE=¿Comenzar la pelea?
+
+PC08B_MACHINE=Máquina
+PC08B_CONSEQUENCES=Consecuencias
+
+#PC08B_STORY320_CHOICE=Enter the machine?
+PC08B_STORY320_LEAVE=¿Irse?
+
+#----- Hints to find the ads --------
+PC08B_ADHINT_PREFIX=En esta sala, revisa atentamente esta ubicación: <col=BOLD>{item}</col>
+PC08B_ADHINT_PC02_FLOORCRACK=¡Salta, salta, salta!
+PC08B_ADHINT_PC04_VENDING=La máquina del fondo
+PC08B_ADHINT_PC04_TRASH=Usa un objeto
+PC08B_ADHINT_PC04B_TARGET=Tira algo
+PC08B_ADHINT_PC04B_PIPE=Salta y busca en la parte de atrás
+PC08B_ADHINT_PC04C_PRODUCTS=Tómalo todo
+PC08B_ADHINT_PC04C_BUBBLE=Utiliza un objeto para derribarla
+PC08B_ADHINT_PC05_WALL=Golpea el lugar con la X
+PC08B_ADHINT_PC05B_FLOOR=Cerca de la entrada
+PC08B_ADHINT_PC05C_PIPE=Usa la serpiente de nuevo
+PC08B_ADHINT_PC05C_MACHINEB=Párate en el borde del pozo sin fondo
+PC08B_ADHINT_PC06_WALL=Cerca del puesto
+PC08B_ADHINT_PC07_MAILBOX=Golpéalo
+PC08B_ADHINT_PC08B_CHAIR=En el suelo, escondido a veces
+PC08B_ADHINT_PC08B_DESKB=Junto a Shay
+PC08B_ADHINT_PC09_WINDOWOFF=Abre y cierra las persianas varias veces
+PC08B_ADHINT_PC09B_FRONT=Con el asiento flotante en modo debug, pulsa los botones azules
+PC08B_ADHINT_PC09B_DEBUG=Lee varias páginas más
+PC08B_ADHINT_PC12_AVENDING=Golpea el tablón izquierdo
+PC08B_ADHINT_PC12_FLOOR=Cerca de la entrada
+PC08B_ADHINT_PC14_RTOP=Salta sobre la maceta
+PC08B_ADHINT_PC14B_RPIPEPILL=Salta en el Farmatubo
+PC08B_ADHINT_PC14C_PLANKS=Destruye los tablones de madera
+PC08B_ADHINT_PC15_ELEVATOR=Salta por la cinta transportadora del medio
+PC08B_ADHINT_PC15_JUMP=Cruza la carretera evitando los coches (están cronometrados)
+PC08B_ADHINT_PC15B_BOX=Usa el botón de emergencia en la sala de descanso
+PC08B_ADHINT_PC15B_SHELF=Salta sobre el escritorio del guarda y luego sobre la estantería
+PC08B_ADHINT_PC15C_PAINTNG=Espera hasta que aparezca
+PC08B_ADHINT_PC15E_CLOTHES=Saca toda la ropa
+PC08B_ADHINT_PC16_TREASURE=Gana
+PC08B_ADHINT_PC16_CONTROLS=Arriba a la izquierda
+PC08B_ADHINT_PC17_ROOF=Salta sobre la mesa y luego ve a través de las dos exposiciones
+PC08B_ADHINT_PC18_SENTRYBOX=Visible desde la ventana, entra en la garita
+PC08B_ADHINT_PC18_CONTAINER=Salta por encima de la tubería del extremo derecho para acceder a ella
+PC08B_ADHINT_PC19_RBUTTON=Pulse el botón derecho cerca de la salida
+PC08B_ADHINT_PC19_RTOP=Salta sobre la balanza o la caja primero
+PC08B_ADHINT_PC19B_RBEHIND=Mueve los muebles primero
+
+#----- Topics --------
+TOPIC_BORDER=Paso Fronterizo
+TOPIC_ARENA=Arena
+TOPIC_SELFMODIFIER=Chip automodificador
+TOPIC_HACKER="The Gloom"
+TOPIC_HELPSHAY=Ayudar a Shay
+
+PC_HACKER_ADDRESS=El callejón de "The Gloom"
+
+#----- Dialog --------
+
+###############################################
+# PROOFREAD - illuminati1556 - 17/06/2019
+###############################################
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC08B_BOX1-1=El sistema antiintrusión de Shay debe estar ahí dentro...
+#----------------------------------------------------
+# Brok
+PC08B_LEVER1-1=¡Déjame adivinar!
+# Brok
+PC08B_LEVER1-2=Mmm... ¡Tiene que ser para cerrar la puerta del taller!
+#----------------------------------------------------
+# Brok
+PC08B_LEVER2-1=¿Le falta algo? ¡Ja,ja!
+#----------------------------------------------------
+# Brok
+PC08B_LEVER_PRESS1-1=¿...?
+# Brok
+PC08B_LEVER_PRESS1-2=No parece que haga nad...
+# Brok
+PC08B_LEVER_PRESS1-3=¡...!
+# Shay
+PC08B_LEVER_PRESS1-4=¿Qué ha sido ese ruido?
+# Brok
+PC08B_LEVER_PRESS1-5=¡Na-nada! Simplemente he pisado algo de chatarra.
+# Brok
+PC08B_LEVER_PRESS1-6=¿Sabes? ¡A tu taller le vendría bien algo de orden!
+# Shay
+PC08B_LEVER_PRESS1-7=¡Si nunca pierdo nada!
+# Shay
+PC08B_LEVER_PRESS1-8=¡Mira por dónde pisas, amigo!
+# Brok
+PC08B_LEVER_PRESS1-9=(Me guardaré esa palanca antes de que se dé cuenta.)
+#----------------------------------------------------
+# Brok
+PC08B_MASK1-1=¿Un trofeo a la mejor caza-robots?
+# Shay
+PC08B_MASK1-2=¡No, tonto!
+# Shay
+PC08B_MASK1-3=Es solo una máscara que uso para protegerme del calor cuando estoy soldando.
+#----------------------------------------------------
+# Brok
+PC08B_DRAWER1-1=Lleno de cacharros inútiles.
+# Shay
+PC08B_DRAWER1-2=A cada uno, lo suyo.
+#----------------------------------------------------
+# Brok
+PC08B_CUP1-1=¡Puaj! ¿Pero cuánto tiempo lleva esto aquí? ¡Hasta ha crecido una planta!
+# Shay
+PC08B_CUP1-2=¡Oh! ¡Así que es ahí donde dejé la taza de EnergyUp!
+# Brok
+PC08B_CUP1-3=Sin comentarios.
+#----------------------------------------------------
+# Brok
+PC08B_TUBES1-1=Shay es definitivamente la mayor fan de sustitutos de comida que hay por aquí.
+# Shay
+PC08B_TUBES1-2=¿A qué te refieres con sustitutos? Contienen todo lo que hace falta para vivir saludablemente.
+# Brok
+PC08B_TUBES1-3=¿Quién lo dice?
+# Shay
+PC08B_TUBES1-4=LA CIENCIA.
+# Brok
+PC08B_TUBES1-5=La ciencia no me mantiene. Necesito comida real.
+#----------------------------------------------------
+# Brok
+PC08B_INCUBATOR1-1=¡Ah! ¡He oído hablar de estos!
+# Brok
+PC08B_INCUBATOR1-2=¡Metes dentro el tubo con el sustituto de comida, y la reconstituye para que parezca real!
+# Shay
+PC08B_INCUBATOR1-3=No es "sustituto". ES comida de verdad. ¡Dale una oportunidad!
+# Brok
+PC08B_INCUBATOR1-4=Ni hablar.
+#----------------------------------------------------
+# Brok
+PC08B_MESS1-1=¡Al menos tengo algo en común con Shay!
+#----------------------------------------------------
+# Brok
+PC08B_TRASH1-1=¡Está prácticamente vacía!
+# Shay
+PC08B_TRASH1-2=No me gusta tirar nada.
+# Shay
+PC08B_TRASH1-3=Cualquier pieza podría ser útil algún día. ¡Solo necesitas una mente abierta!
+# Brok
+PC08B_TRASH1-4=... y una cuenta bancaria en rojo.
+#----------------------------------------------------
+# Brok
+PC08B_VEHICLE1-1=¿Eso es una motocicleta?
+# Shay
+PC08B_VEHICLE1-2=Solía serlo. ¡La he convertido en una aspiradora! ¡Mucho más útil!
+# Brok
+PC08B_VEHICLE1-3=Para ti, quizás...
+#----------------------------------------------------
+# Brok
+PC08B_DRAWINGS1-1=¿Qué es eso?...
+# Brok
+PC08B_DRAWINGS1-2=¿Tienes niños escondidos por aquí?
+# Shay
+PC08B_DRAWINGS1-3=¡Nunca, amigo! Odio a los pequeños.
+# Shay
+PC08B_DRAWINGS1-4=Esos son intentos de dibujo de una inteligencia artificial en la que trabajé.
+# Shay
+PC08B_DRAWINGS1-5=Pensé que podría obtener dinero si ganaba algún concurso de arte.
+# Brok
+PC08B_DRAWINGS1-6=No son nada buenos.
+# Shay
+PC08B_DRAWINGS1-7=¡Y que lo digas! Los robots son capaces de muchas cosas, pero claramente la expresión artística no es una de ellas.
+# Shay
+PC08B_DRAWINGS1-8=Al menos... no una que el cerebro humano pueda entender.
+# Brok
+PC08B_DRAWINGS1-9=¿No puedes reproducir el lado creativo con algoritmicosas de esas?
+# Shay
+PC08B_DRAWINGS1-10=Bueno... he leído un montón de estudios.
+# Shay
+PC08B_DRAWINGS1-11=Teóricamente somos capaces de replicar todo el cerebro humano...
+# Shay
+PC08B_DRAWINGS1-12=¡Excepto por la creatividad!
+# Shay
+PC08B_DRAWINGS1-13=Las IA pueden simular algunos patrones, pero, ¿diseñar algo desde cero por ellos mismos y que parezca bonito?
+# Shay
+PC08B_DRAWINGS1-14=¡Esa es la única cosa en la que hasta tú tendrías ventaja!
+# Brok
+PC08B_DRAWINGS1-15=¡Hey, ningún bot ha igualado tampoco mi habilidad a la hora de pelear!
+#----------------------------------------------------
+# Brok
+PC08B_DRAWINGS2-1=Dibujos malos de bots inútiles.
+#----------------------------------------------------
+# Brok
+PC08B_WRENCH1-1=¡Todo inventor que se precie necesita su llave inglesa!
+# Brok
+PC08B_WRENCH1-2=¿Me la das?
+# Shay
+PC08B_WRENCH1-3=No.
+#----------------------------------------------------
+# Brok
+PC08B_COMPUTER1-1=¡Debería aprender a no jugar con la computadora de Shay!
+# Shay
+PC08B_COMPUTER1-2=Especialmente cuando estoy aquí.
+#----------------------------------------------------
+# Brok
+PC08B_TOOLS1-1=Una caja de herramientas. Puede que ese destornillador me sea útil.
+# Shay
+PC08B_TOOLS1-2=No lo necesitas.
+# Shay
+PC08B_TOOLS1-3=Recuerda, ¡la punta de la llave de tu apartamento también sirve como destornillador!
+# Shay
+PC08B_TOOLS1-4=¡Y se adapta automáticamente a todos los tamaños!
+# Brok
+PC08B_TOOLS1-5=¡Ah sí! ¡Es verdad, la mejoraste tú!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming here for the first time right after Brok almost got killed by Shay's trap
+# *****************************************************************
+# Brok
+PC08B_SHAY_FIRST-1=¡Shay!
+# Brok
+PC08B_SHAY_FIRST-2=...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_FIRSTB-1=¡HEY! ¡¡¡SHAY!!!
+# Shay
+PC08B_SHAY_FIRSTB-2=¡Oh! ¡Hola, Brok!
+# Shay
+PC08B_SHAY_FIRSTB-3=¿Cómo va eso?
+# Brok
+PC08B_SHAY_FIRSTB-4=¡¿Qué demonios es esa abominación metálica de la puerta?!
+# Shay
+PC08B_SHAY_FIRSTB-5=¿Abominación?
+# Shay
+PC08B_SHAY_FIRSTB-6=¿Dices la sierra circular? Bastante linda, ¿verdad?
+# Brok
+PC08B_SHAY_FIRSTB-7=¡¿Linda?! ¡Esa cosa casi ME MATA!
+# Shay
+PC08B_SHAY_FIRSTB-8=Bueno, ya sabes que los Slums no son seguros para mujeres solitarias...
+# Shay
+PC08B_SHAY_FIRSTB-9=Así que construí el aparato de detección de crímenes definitivo.
+# Shay
+PC08B_SHAY_FIRSTB-10=El modo en el que pulsas el botón da mucha información. Presión arterial, ADN, nivel de estrés...
+# Shay
+PC08B_SHAY_FIRSTB-11=¿Tienes malas intenciones? ¡El sistema lo detecta y saca la sierra!
+# Shay
+PC08B_SHAY_FIRSTB-12=Ahora, cuéntame. ¿Últimamente andas enojado o estresado?
+# Brok
+PC08B_SHAY_FIRSTB-13=¡¿Estás loca?!
+# Shay
+PC08B_SHAY_FIRSTB-14=¡Pues claro!
+# Brok
+PC08B_SHAY_FIRSTB-15=...
+# Shay
+PC08B_SHAY_FIRSTB-16=...
+# Shay
+PC08B_SHAY_FIRSTB-17=¡Bueno, bueno! Lo cambiaré al modo no letal.
+# Shay
+PC08B_SHAY_FIRSTB-18=Pero va a perder eficacia...
+# Brok
+PC08B_SHAY_FIRSTB-19=¡Desactívalo... AHORA!
+# Shay
+PC08B_SHAY_FIRSTB-20=(Suspira) Está bien...
+# Shay
+PC08B_SHAY_FIRSTB-21=¡Pero solo durante el día! Tengo cosas valiosas aquí.
+# Shay
+PC08B_SHAY_FIRSTB-22=Así que... ¿por qué estás aquí?
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_THINK1-1=(¡Mi mejor amiga! Nos conocemos desde preescolar.)
+# Brok
+PC08B_SHAY_THINK1-2=(¡Un poco complicada, pero confiaría en ella hasta mi vida!)
+# Brok
+PC08B_SHAY_THINK1-3=(Bueno... quizás un poco menos desde el incidente de la sierra...)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Shay
+# *****************************************************************
+# Brok
+#Day 1
+PC08B_SHAY_BORDER1-1=Necesito tu ayuda para cruzar el Paso Fronterizo.
+# Shay
+PC08B_SHAY_BORDER1-2=Sabía que este día llegaría.
+# Shay
+PC08B_SHAY_BORDER1-3=Verás, ¡tengo preparada la respuesta perfecta para eso!
+# Brok
+PC08B_SHAY_BORDER1-4=¿De verdad?
+# Shay
+PC08B_SHAY_BORDER1-5=A ver, ¿dónde la he dejado?
+# Shay
+PC08B_SHAY_BORDER1-6=Un momento... La estoy buscando...
+# Shay
+PC08B_SHAY_BORDER1-7=¡Aquí está!
+# Shay
+PC08B_SHAY_BORDER1-8="Solo dos cosas pueden cruzar la Frontera: ciudadanos autorizados registrados en la computadora central, y mercancía controlada."
+# Shay
+PC08B_SHAY_BORDER1-9="Cualquier paquete que contenga seres vivos será automáticamente destruido."
+# Shay
+PC08B_SHAY_BORDER1-10="Por lo tanto, la mejor solución sería matarte."
+# Brok
+PC08B_SHAY_BORDER1-11=¡No es una opción!
+# Shay
+PC08B_SHAY_BORDER1-12=¡Lo sé!
+# Shay
+PC08B_SHAY_BORDER1-13=Bueno, técnicamente podría funcionar, pero si no quieres intentarlo...
+# Brok
+PC08B_SHAY_BORDER1-14=...
+# Shay
+PC08B_SHAY_BORDER1-15=Está bien. La otra manera no es mucho más fácil.
+# Shay
+PC08B_SHAY_BORDER1-16="Cómo volverse un ciudadano autorizado."
+# Shay
+PC08B_SHAY_BORDER1-17="El Paso Fronterizo escanea al usuario en la entrada para obtener una huella corporal."
+# Shay
+PC08B_SHAY_BORDER1-18="Esta información es comparada con los datos almacenados en el servidor del Paso Fronterizo."
+# Shay
+PC08B_SHAY_BORDER1-19="Cada Paso Fronterizo tiene una copia de los datos, que se replican desde y hacia un servidor central."
+# Shay
+PC08B_SHAY_BORDER1-20="Por lo tanto, tienes que acceder a uno de estos servidores, añadir tu huella corporal, y..."
+# Shay
+PC08B_SHAY_BORDER1-21="¡Ahí lo tienes! Podrás pasar como cualquier ciudadano del Domo."
+# Brok
+PC08B_SHAY_BORDER1-22=¡No suena tan difícil!
+# Shay
+PC08B_SHAY_BORDER1-23=Oh, se me ha olvidado mencionar el sistema de seguridad mortal que protege el servidor.
+# Shay
+PC08B_SHAY_BORDER1-24=¡Seguro que puedes lidiar con él!
+# Brok
+PC08B_SHAY_BORDER1-25=Bueno... agradezco mucho tu voto de confianza...
+# Brok
+PC08B_SHAY_BORDER1-26=Empiezo a cuestionarme si vale la pena tanto esfuerzo por un encargo.
+# Shay
+PC08B_SHAY_BORDER1-27=Mmh. Prometí que me no me metería en tu trabajo de detective, pero...
+# Shay
+PC08B_SHAY_BORDER1-28=Estás viendo el vaso medio vacío. ¡Míralo medio lleno!
+# Brok
+PC08B_SHAY_BORDER1-29=¿Cómo dices?
+# Shay
+PC08B_SHAY_BORDER1-30=Si te conviertes en un ciudadano autorizado, ¡podrás conseguir nuevos clientes en los Drums!
+# Shay
+PC08B_SHAY_BORDER1-31=¡Y hacerte rico!
+# Brok
+PC08B_SHAY_BORDER1-32=Eso es soñar demasiado. Además, dudo que esos ricachones quieran contratar a un detective simplón y apestoso como yo.
+# Brok
+PC08B_SHAY_BORDER1-33=Aunque... vale la pena intentarlo.
+# Shay
+PC08B_SHAY_BORDER1-34=¡Ese es el espíritu, amigo!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER2-1=Acceder al servidor, añadir mi huella corporal...
+# Brok
+PC08B_SHAY_BORDER2-2=Tu plan suena genial y todo eso, pero... ¿Cómo lo llevo a cabo?
+# Shay
+PC08B_SHAY_BORDER2-3=¡Ahora verás!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER2B-1=¡Vaya! ¿Qué está pasando?
+# Shay
+PC08B_SHAY_BORDER2B-2=He obtenido tu huella corporal con mi escáner, y...
+# Shay
+PC08B_SHAY_BORDER2B-3=...¡perfecto!
+# Brok
+PC08B_SHAY_BORDER2B-4=¿Qué? ¿Qué es perfecto?
+# Shay
+PC08B_SHAY_BORDER2B-5=He inyectado la información necesaria en tu ADN.
+# Brok
+PC08B_SHAY_BORDER2B-6=¡¿Eh?! ¡¿Eso no es peligroso?!
+# Shay
+PC08B_SHAY_BORDER2B-7=¡Para nada!
+# Shay
+PC08B_SHAY_BORDER2B-8=Almacenar información en tu ADN es lo más seguro del mundo. ¡Es imposible perderla!
+# Brok
+PC08B_SHAY_BORDER2B-9=No me refería a eso.
+# Shay
+PC08B_SHAY_BORDER2B-10=Muy poca gente domina el transporte experimental en ADN. ¡Y tú estás de suerte, porque yo soy una de ellas!
+# Brok
+PC08B_SHAY_BORDER2B-11=Sí, soy muy afortunado...
+# Brok
+PC08B_SHAY_BORDER2B-12=¿Qué información me has inyectado?
+# Shay
+PC08B_SHAY_BORDER2B-13=Tu huella corporal.
+# Brok
+PC08B_SHAY_BORDER2B-14=¿Has inyecto mi huella corporal... en mi cuerpo?
+# Shay
+PC08B_SHAY_BORDER2B-15=¡Sí!
+# Brok
+PC08B_SHAY_BORDER2B-16=...
+# Shay
+PC08B_SHAY_BORDER2B-17=...
+# Shay
+PC08B_SHAY_BORDER2B-18=Entiendo lo que quieres decir, pero...
+# Shay
+PC08B_SHAY_BORDER2B-19=¡Es más complejo de lo que parece! He tenido que incluir una clave elíptica, redundancia para los datos...
+# Brok
+PC08B_SHAY_BORDER2B-20=Olvídalo. ¿Qué hago ahora?
+# Shay
+PC08B_SHAY_BORDER2B-21=Paso Fronterizo 001.
+# Shay
+PC08B_SHAY_BORDER2B-22=Hay un edificio alto con un tejado con forma de pirámide. ¡Es inconfundible!
+# Brok
+PC08B_SHAY_BORDER2B-23=Sí, creo que me acuerdo de esa pirámide rara.
+# Shay
+PC08B_SHAY_BORDER2B-24=Encuentra una manera de entrar en el edificio y luego conéctate al servidor.
+# Shay
+PC08B_SHAY_BORDER2B-25=Y por conectar, me refiero a tocarlo. Esos servidores no tienen conexión de red, así que hay que tocarlos.
+# Shay
+PC08B_SHAY_BORDER2B-26=Lo he programado para que hackee el sistema operativo automáticamente e instale tu huella en la base de datos.
+# Brok
+PC08B_SHAY_BORDER2B-27=Edificio con pirámide. Insertar cosa en cacharro. ¡Lo tengo!
+# Brok
+PC08B_SHAY_BORDER2B-28=¿Funcionará?
+# Shay
+PC08B_SHAY_BORDER2B-29=Probablemente.
+# Brok
+PC08B_SHAY_BORDER2B-30=¿Y si no lo hace?
+# Shay
+PC08B_SHAY_BORDER2B-31=Entonces supongo que irán por ti varios drones de seguridad y guardias Tribot.
+# Brok
+PC08B_SHAY_BORDER2B-32=Genial...
+# Shay
+PC08B_SHAY_BORDER2B-33=¡Confía en mí! ¡Creo que podría funcionar!
+# Brok
+PC08B_SHAY_BORDER2B-34=Erm... Puede que sea el mayor imbécil del universo, pero...
+# Brok
+PC08B_SHAY_BORDER2B-35=De acuerdo, confío en ti.
+# Shay
+PC08B_SHAY_BORDER2B-36=¡Genial!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER3-1=No voy a fingir que sé de computadoras, pero, ¿no podrías...
+# Brok
+PC08B_SHAY_BORDER3-2=... hackear el servidor a través de la red? ¿De forma remota?
+# Shay
+PC08B_SHAY_BORDER3-3=Esto te sonará raro, pero hay cosas que ni siquiera una cíber-nerd experimentada como yo puede hacer.
+# Shay
+PC08B_SHAY_BORDER3-4=El servidor principal no está conectado a la Triweb.
+# Brok
+PC08B_SHAY_BORDER3-5=Vaya decepción.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER4-1=Edificio con pirámide. Insertar cosa en cacharro. ¡Lo tengo!
+# Shay
+PC08B_SHAY_BORDER4-2=¡Buen chico!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1-1=Dime, ¿no necesitas un asistente?
+# Shay
+PC08B_SHAY_BOLT1-2=No.
+# Brok
+PC08B_SHAY_BOLT1-3=Esa... no era la respuesta que esperaba...
+# Brok
+PC08B_SHAY_BOLT1-4=Mira, necesito un favor. Un pequeño robot bueno que he conocido está a punto de ser actualizado y formateado.
+# Brok
+PC08B_SHAY_BOLT1-5=No permitirás que un alma inocente sea eliminada así, ¿verdad?
+# Shay
+PC08B_SHAY_BOLT1-6=¿Desde cuándo eres un amigo de los robots?
+# Brok
+PC08B_SHAY_BOLT1-7=¡Soy amistoso con todas las criaturas que no intentan hacerme daño!
+# Shay
+PC08B_SHAY_BOLT1-8=Está bien. ¿Qué tipo de robot es?
+# Brok
+PC08B_SHAY_BOLT1-9=No es un Tribot, eso seguro. Parece un modelo antiguo. Unos brazos oxidados y una cabeza cuadrada.
+# Brok
+PC08B_SHAY_BOLT1-10=Ha trabajado en el centro de clasificación del Paso Fronterizo durante años.
+# Shay
+PC08B_SHAY_BOLT1-11=Mmh. Tal vez...
+# Brok
+PC08B_SHAY_BOLT1-12=¡Sabía que aceptarías! ¡Gracias!
+# Shay
+PC08B_SHAY_BOLT1-13=¡Hey! ¡Déjame terminar!
+# Shay
+PC08B_SHAY_BOLT1-14=Debe ser un bot de antes de la guerra. Modificarlos está estrictamente prohibido por ley.
+# Brok
+PC08B_SHAY_BOLT1-15=¿Desde cuándo te preocupa eso?
+# Shay
+PC08B_SHAY_BOLT1-16=¡Exacto! Es excitante. Podría intentar quitarle el aparato de seguimiento.
+# Shay
+PC08B_SHAY_BOLT1-17=Aun así...
+# Brok
+PC08B_SHAY_BOLT1-18=Me temía que dijeras eso... Quieres algo a cambio, ¿no?
+# Shay
+PC08B_SHAY_BOLT1-19=Sep. Hasta que se vuelva útil, tendrás que pagar su consumo energético, además del tiempo que pase arreglándolo.
+# Shay
+PC08B_SHAY_BOLT1-20=Serán unos... 200 Unis. Los restaré de los ingresos de la pelea de esta noche.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1B-1=Así que... ¿200 Unis y te quedas a Bolt?
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1YES-1=Hecho. Voy a decirle que venga aquí. ¡Gracias!
+# Shay
+PC08B_SHAY_BOLT1YES-2=¡Tengo muchas ganas de revisarlo! ¡Siempre me había preguntado cómo funcionaban esas antigüedades!
+# Brok
+PC08B_SHAY_BOLT1YES-3=Solo prométeme que no vas a borrar sus recuerdos.
+# Shay
+PC08B_SHAY_BOLT1YES-4=Oh, ¡me aseguraré de hacerle muchas copias de seguridad!
+# Brok
+PC08B_SHAY_BOLT1YES-5=Eso es... Erm... Bueno.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1NO-1=Es mucho.... Déjame pensarlo.
+# Shay
+PC08B_SHAY_BOLT1NO-2=De acuerdo.
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_BOLT2-1=¿Dónde está mi nuevo asistente?
+# Brok
+PC08B_SHAY_BOLT2-2=¡Un momento! Voy a traerlo.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_WELCOME1-1=¿Tienes un minuto?
+# Shay
+PC08B_SHAY_WELCOME1-2=No, ¡pero adelante!
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_WELCOME2-1=¿Qué hay de nuevo?
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_FIRSTEXIT-1=Ya me voy.
+# Shay
+PC08B_SHAY_FIRSTEXIT-2=¡Espera!
+# Shay
+PC08B_SHAY_FIRSTEXIT-3=¿No vas a entrenar un poco antes de lo de esta noche?
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA1-1=¿Qué es lo de esta noche?
+# Shay
+PC08B_SHAY_ARENA1-2=La pelea, claro.
+# Brok
+PC08B_SHAY_ARENA1-3=¡Ah, sí! Pero...
+# Shay
+PC08B_SHAY_ARENA1-4=¿Ya te has olvidado? ¡Lo hacemos cada noche!
+# Brok
+PC08B_SHAY_ARENA1-5=Bueno...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_REMEMBER_YES-1=Lo siento mucho... Últimamente tengo bastante mala memoria.
+# Brok
+PC08B_SHAY_REMEMBER_YES-2=Algún día me olvidaré hasta de mi nombre.
+# Shay
+PC08B_SHAY_REMEMBER_YES-3=Ya veo. Tu cerebro es como la soda de cola: ¡está lleno de burbujas!
+# Brok
+PC08B_SHAY_REMEMBER_YES-4=Sí...
+# Shay
+PC08B_SHAY_REMEMBER_YES-5=¡Anímate! Ya estoy acostumbrada. Sabía a lo que me atenía cuando decidí hacer cosas contigo.
+# Shay
+PC08B_SHAY_REMEMBER_YES-6=Déjame explicártelo todo desde el principio.
+# Shay
+PC08B_SHAY_REMEMBER_YES-7=Tengo un terminal de la Arena Virtual, conectado a un sitio no regulado de la Triweb.
+# Shay
+PC08B_SHAY_REMEMBER_YES-8=Tú peleas, yo gestiono el resto.
+# Shay
+PC08B_SHAY_REMEMBER_YES-9=Los espectadores apuestan por tu rendimiento. ¡Cuanto mejor pelees, más dinero gano!
+# Shay
+PC08B_SHAY_REMEMBER_YES-10=... Más dinero GANAMOS. Tú te llevas una parte de las ganancias.
+# Brok
+PC08B_SHAY_REMEMBER_YES-11=¿De qué porcentaje estamos hablando?
+# Shay
+PC08B_SHAY_REMEMBER_YES-12=40.
+# Brok
+PC08B_SHAY_REMEMBER_YES-13=¿Qué? ¡¿Acepté eso?!
+# Shay
+PC08B_SHAY_REMEMBER_YES-14=¡Vas a tener que creer en mi palabra!
+# Brok
+PC08B_SHAY_REMEMBER_YES-15=Me siento como estafado.
+# Shay
+PC08B_SHAY_REMEMBER_YES-16=¡Oye! ¡Yo también me arriesgo! Estos eventos no son del todo legales, ¿sabes?
+# Shay
+PC08B_SHAY_REMEMBER_YES-17=Aparte... Sin mi equipo no conseguirías nada de nada.
+# Brok
+PC08B_SHAY_REMEMBER_YES-18=Sí, sí...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_REMEMBER_NO-1=¡Pues claro que lo recuerdo! Soy un maestro de las peleas, ¡incluso las virtuales!
+# Shay
+PC08B_SHAY_REMEMBER_NO-2=Bueno, "maestro", ¡más te vale entrenar un poco si no quieres acabar humillado!
+# Brok
+PC08B_SHAY_REMEMBER_NO-3=¡Nunca!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA2-1=Vamos a lo importante. ¿Cómo peleo?
+# Shay
+PC08B_SHAY_ARENA2-2=La cabina detecta tus signos vitales y los resume en una barra de vida que todos pueden ver.
+# Brok
+PC08B_SHAY_ARENA2-3=¡¿Todos?! Eso es bastante... indiscreto.
+# Shay
+PC08B_SHAY_ARENA2-4=¡Deberías haber leído el párrafo sobre la privacidad antes de firmarlo!
+# Shay
+PC08B_SHAY_ARENA2-5=El programa incluye oponentes virtuales de IA. Bots, si lo prefieres.
+# Shay
+PC08B_SHAY_ARENA2-6=No te costará deshacerte de ellos. Su apariencia y movimientos se basan en gente y objetos que has visto en la vida real.
+# Shay
+PC08B_SHAY_ARENA2-7=¡Sin embargo, solo en las peleas nocturnas estará el objetivo final!
+# Shay
+PC08B_SHAY_ARENA2-8=Tras avanzar por el nivel, te encontrarás a tu verdadero oponente: el "jefe". Una persona real.
+# Shay
+PC08B_SHAY_ARENA2-9=Y eso es para lo que viene el público: ¡para una batalla épica y decisiva!
+# Brok
+PC08B_SHAY_ARENA2-10=Suena peligroso...
+# Shay
+PC08B_SHAY_ARENA2-11=¡Sin riesgo no hay recompensa!
+# Shay
+PC08B_SHAY_ARENA2-12=Cada vez que te golpeen, tu barra se reducirá.
+# Shay
+PC08B_SHAY_ARENA2-13=¡Y no solo eso, sino que los láseres de la cabina hacen que sientas el impacto de verdad!
+# Shay
+PC08B_SHAY_ARENA2-14=Increíble, ¿verdad?
+# Brok
+PC08B_SHAY_ARENA2-15=Yo no diría eso...
+# Shay
+PC08B_SHAY_ARENA2-16=No te pasará nada, a menos que tu barra se agote por completo.
+# Brok
+PC08B_SHAY_ARENA2-17=¡¿Qué?! ¿No me digas...
+# Shay
+PC08B_SHAY_ARENA2-18=... que puedes morir? Técnicamente, sí.
+# Brok
+PC08B_SHAY_ARENA2-19=¡Gulp!
+# Shay
+PC08B_SHAY_ARENA2-20=Pero eso no ocurrirá, ¡tranquilo!
+# Shay
+PC08B_SHAY_ARENA2-21=No puedes recibir golpes mortales durante el entrenamiento, solo en las peleas nocturnas. La emoción del peligro aumenta drásticamente las apuestas.
+# Shay
+PC08B_SHAY_ARENA2-22=Y si vas a quedarte sin vida, puedes huir.
+# Shay
+PC08B_SHAY_ARENA2-23=Te lo recordaré, no te preocupes.
+# Shay
+PC08B_SHAY_ARENA2-24=No querría perderte.
+# Brok
+PC08B_SHAY_ARENA2-25=Me dejas más tranquilo. ¡Gracias!
+# Shay
+PC08B_SHAY_ARENA2-26=Quiero decir, sería difícil encontrar a otra persona tan loca como tú para reemplazarte.
+# Brok
+PC08B_SHAY_ARENA2-27=Retiro lo dicho.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA3-1=¿Y qué hay del entrenamiento?
+# Shay
+PC08B_SHAY_ARENA3-2=Te enfrentarás a trampas aleatorias.
+# Shay
+PC08B_SHAY_ARENA3-3=A cambio, recibirás algo de dinero y experiencia.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA4-1=Lo de las peleas virtuales... ¿Puedes repetírmelo?
+# Shay
+PC08B_SHAY_ARENA4-2=Básicamente, entra en la cabina que hay en la otra habitación.
+# Shay
+PC08B_SHAY_ARENA4-3=Ábrete paso a través de trampas y enemigos, ¡y ganarás!
+# Shay
+PC08B_SHAY_ARENA4-4=¡Y no te olvides entrenar habitualmente! ¡Has estado engordando un poco!
+# Brok
+PC08B_SHAY_ARENA4-5=¡Hey!...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HERSELF1-1=¿Por qué estabas aquí a oscuras?
+# Shay
+PC08B_SHAY_HERSELF1-2=Estoy realizando unas pruebas de aislamiento.
+# Brok
+PC08B_SHAY_HERSELF1-3=¿Aislamiento?
+# Shay
+PC08B_SHAY_HERSELF1-4=Sep.
+# Shay
+PC08B_SHAY_HERSELF1-5=En nuestro mundo, hay muchos ambientes irritantes. Los sonidos fuertes suelen ser lo peor.
+# Brok
+PC08B_SHAY_HERSELF1-6=¡Y que lo digas! Hay noches que mis vecinos no me dejan pegar un ojo...
+# Shay
+PC08B_SHAY_HERSELF1-7=¿Ves este aparato? Es una ayuda auditiva.
+# Shay
+PC08B_SHAY_HERSELF1-8=He logrado invertir su operación, así que en lugar de amplificar los sonidos...
+# Brok
+PC08B_SHAY_HERSELF1-9=... ¿los bloquea?
+# Shay
+PC08B_SHAY_HERSELF1-10=¡Me alegra que me entiendas al menos una vez!
+# Brok
+PC08B_SHAY_HERSELF1-11=¡Oye! ¡Siempre estoy listo para aprender más sobre tus cuestionables inventos!
+# Brok
+PC08B_SHAY_HERSELF1-12=Pero, ¿por qué tenías la puerta cerrada?
+# Shay
+PC08B_SHAY_HERSELF1-13=¿Y si se mete cualquiera mientras los llevo puestos? No me quiero arriesgar.
+# Brok
+PC08B_SHAY_HERSELF1-14=Bueno, yo me he metido y no te has dado ni cuenta.
+# Shay
+PC08B_SHAY_HERSELF1-15=¡Pero tú no eres cualquiera! ¡Tú eres el terror de las peleas, el único e inigualable, Brok!
+# Brok
+PC08B_SHAY_HERSELF1-16=¡No exageres!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HERSELF2-1=¿Cómo has estado últimamente?
+# Shay
+PC08B_SHAY_HERSELF2-2=Muy ocupada.
+# Brok
+PC08B_SHAY_HERSELF2-3=Por eso lo decía.
+# Brok
+PC08B_SHAY_HERSELF2-4=Desde que volvimos a encontrarnos hace un par de años, apenas hablamos únicamente de trabajo.
+# Brok
+PC08B_SHAY_HERSELF2-5=Solíamos ser muy unidos. ¿Qué nos ha pasado?
+# Shay
+PC08B_SHAY_HERSELF2-6=El mundo ha cambiado. Hemos cambiado.
+# Shay
+PC08B_SHAY_HERSELF2-7=El tiempo es dinero, y no me puedo permitir perder el tiempo... como ahora.
+# Brok
+PC08B_SHAY_HERSELF2-8=Tienes razón, pero... es una pena...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT1-1=¡Tengo que irme!
+# Shay
+PC08B_SHAY_EXIT1-2=¡Claro! ¡No te olvides de entrenar seguido!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT2-1=Te dejo para que... hagas lo que sea que estés haciendo.
+# Shay
+PC08B_SHAY_EXIT2-2=¡Nos vemos!
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_NOTHING1-1=No me importa hablar un momento, pero mi tiempo es valioso. Por favor, no lo malgastes.
+# Brok
+PC08B_SHAY_EXIT_NOTHING1-2=Lo siento...
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_NOTHING2-1=Tengo que arreglar esto cuanto antes. No me interrumpas para nada.
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_GOODLUCK-1=¡Buena suerte, amigo!
+# Brok
+PC08B_SHAY_EXIT_GOODLUCK-2=Sí, ya... Voy a necesitarla.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-1=¡Nos vemos!
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-2=Espera...
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-3=¿Has tomado el cortador de goma?
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-4=Ha desaparecido.
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-5=¿Qué...?
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-6=Lo siento, pero no tengo ni idea de qué me hablas.
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-7=¿Estás seguro? Nadie más ha venido al taller hoy.
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-8=Bueno, excepto Graff. Pero él no es de los que va tocándolo todo... NO COMO TÚ.
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-9=Eso no te lo puedo negar, aunque últimamente él hace cosas muy raras.
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-10=Mmm...
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-11=No creo que sea cosa nuestra, pero te avisaré si averiguo algo.
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-12=Está bien.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER2-1=¡Adiós!
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER3-1=¿Y? ¿Alguna idea de dónde está mi cortador de goma?
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER3-2=No sé...
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER3-3=¡Bueno, tú sigue buscando! Es caro.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Shay - Showing inventory
+# *****************************************************************
+# Brok
+PC08B_SHAY_INV_MONEY-1=Erm...
+# Shay
+PC08B_SHAY_INV_MONEY-2=Sí, por favor.
+# Brok
+PC08B_SHAY_INV_MONEY-3=¡Espera, no! ¡Necesito el dinero!
+# Shay
+PC08B_SHAY_INV_MONEY-4=¡Entonces no me lo pongas en la cara!
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_CATFUR-1=¡Ah, ya veo! Es tiempo del "des-peluchamiento" de Graff, ¿no?
+# Brok
+PC08B_SHAY_INV_CATFUR-2=¡¿Cómo lo supiste?!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_MAGNIFY-1=¡Esto es alta tecnología!
+# Shay
+PC08B_SHAY_INV_MAGNIFY-2=Del siglo pasado.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_MINELOADED-1=Hey, mira es...
+# Brok
+PC08B_SHAY_INV_MINELOADED-2=¡Ups! Casi se me cae.
+# Shay
+PC08B_SHAY_INV_MINELOADED-3=¡No vueles mi taller por los aires! ¡Acabo de limpiarlo!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-1=¿Puedes reparar este mando a distancia para tablets?
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-2=¿Un... mando a distancia para tablets?
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-3=Déjame ver...
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-4=...
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-5=¿De dónde lo has sacado?
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-6=De mi cliente. Es un policía y... lo dejó caer accidentalmente.
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-7=Eso lo explica todo.
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-8=¡Señor, eso no es un "mando a distancia para tablets"!
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-9=¡Esto es equipo policial! Y si no me equivoco...
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-10=se usa para desactivar remotamente aparatos electrónicos.
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-11=Cámaras o minas, por ejemplo.
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-12=¿En serio? ¿Para qué querría la policía desactivar cámaras?
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-13=Para entrar en propiedades privadas con seguridad, supongo. O... asuntos turbios.
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-14=Bueno, no importa. ¡Dime si puedes arreglarlo!
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-15=¡Ya está hecho!
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-16=¡¿Qué?! ¡¿Tan pronto?!
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-17=Solo eran daños superficiales. Ya funciona bien.
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-18=Oh...
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-19=¡Gracias de todos modos!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED2-1=¿Puedo apagar o dañar Tribots con esto?
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED2-2=Esto manda pequeños impulsos y necesita recargarse, así que... probablemente no.
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED2-3=¡Pero prueba con aparatos más pequeños!
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR1-1=¿Tengo cara de farmacéutica?
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR1-2=¡Pensaba que podías hacer de todo!
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR1-3=CASI todo... Excepto entregar prescripciones.
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR1-4=Aun así. ¿Tienes algún consejo?
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR1-5=Ve a una farmacia...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-1=¡Necesito tu ayuda!
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-2=¿Cómo puedo renovar esta receta?
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR2-3=¿Yendo a ver a un médico?
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-4=No te lo preguntaría si fuera tan fácil...
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-5=Es para un amigo de los Slums que apenas se puede mover...
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-6=La máquina me dijo que tenía que actualizar la receta.
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR2-7=Lo siento. Los protocolos de seguridad médica son muy específicos, y no son lo mío.
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-8=Ya... Tendré que preguntarle a otra persona, pues.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-1=Creo que esta mina está rota. ¿Podrías...?
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-2=Claro. Obviaré el "¿por qué vas paseándote por ahí con una mina?", y te preguntaré...
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-3=¿Quieres que la arregle, sí?
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-4=Em, ¡sí!
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-5=Hazlo tú mismo.
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-6=¡Hey! Qué poco cortés.
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-7=No, a ver. Esa mina no está rota. ¡Solo le falta el explosivo!
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-8=Rellénala con pólvora Trax y estará lista.
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-9=¿Dónde voy a encontrarla? ¿Tienes algo?
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-10=Claro, puedo...
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-11=Oh, no... Se me acabó la semana pasada y se me olvidó pedir más.
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-12=Lo siento. ¡Mala suerte!
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-13=Genial.
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-14=Por curiosidad, ¿qué aspecto tiene esa pólvora?
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-15=Es azul grisácea. Huele como a pámpalos podridos.
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-16=Mmm... Me suena haber visto polvo así por algún lado...
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_MINEBROKEN2-1=Necesitas pólvora Trax para... erm... "arreglarla".
+# Shay
+PC08B_SHAY_INV_MINEBROKEN2-2=Azul y huele a pámpalos podridos.
+# Brok
+PC08B_SHAY_INV_MINEBROKEN2-3=¡Lo tengo!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER1-1=Mi robot aspiradora se ha vuelto loco... ¡Me ha electrocutado!
+# Shay
+PC08B_SHAY_INV_HOOVER1-2=Ya veo...
+# Brok
+PC08B_SHAY_INV_HOOVER1-3=¿Puedes arreglarlo?
+# Shay
+PC08B_SHAY_INV_HOOVER1-4=Sí, pero creo que sería mejor si lo dejas así.
+# Brok
+PC08B_SHAY_INV_HOOVER1-5=¿Qué? ¿Por qué?
+# Shay
+PC08B_SHAY_INV_HOOVER1-6=Bueno, tú mismo lo has dicho.
+# Shay
+PC08B_SHAY_INV_HOOVER1-7=Ese robot es peligroso. Te ha electrocutado.
+# Shay
+PC08B_SHAY_INV_HOOVER1-8=Aunque lo arreglara, ¿quién te dice que no volvería a hacerlo?
+# Shay
+PC08B_SHAY_INV_HOOVER1-9=¿Te sentirías seguro estando en la misma habitación que un asesino?
+# Brok
+PC08B_SHAY_INV_HOOVER1-10=¿Eh?...
+# Brok
+PC08B_SHAY_INV_HOOVER1-11=Estamos hablando de una simple aspiradora...
+# Shay
+PC08B_SHAY_INV_HOOVER1-12=¿Y qué?
+# Shay
+PC08B_SHAY_INV_HOOVER1-13=Tengo una idea mejor.
+# Shay
+PC08B_SHAY_INV_HOOVER1-14=A juzgar por su aspecto, este modelo debe tener como mínimo 30 años, ¿cierto?
+# Brok
+PC08B_SHAY_INV_HOOVER1-15=Sí... Lo saqué del vertedero que hay junto a mi apartamento.
+# Brok
+PC08B_SHAY_INV_HOOVER1-16=¡Pero funcionaba bien! Al menos hasta ahora.
+# Shay
+PC08B_SHAY_INV_HOOVER1-17=Uno de los componentes contiene U-Stom.
+# Shay
+PC08B_SHAY_INV_HOOVER1-18=Ese mineral se ha agotado de la superficie del planeta.
+# Shay
+PC08B_SHAY_INV_HOOVER1-19=Ya no se usa, ¡pero seguro que le encontraré una utilidad!
+# Shay
+PC08B_SHAY_INV_HOOVER1-20=Así que esta es mi oferta.
+# Shay
+PC08B_SHAY_INV_HOOVER1-21=Te lo compro tal y como está por 200 Unis.
+# Shay
+PC08B_SHAY_INV_HOOVER1-22=¡Con ese dinero te puedes comprar uno nuevo!
+# Shay
+PC08B_SHAY_INV_HOOVER1-23=¿Qué me dices?
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER1_YES-1=Conociéndote, estoy seguro de que vale diez veces más, pero... está bien.
+# Brok
+PC08B_SHAY_INV_HOOVER1_YES-2=Todo tuyo.
+# Shay
+PC08B_SHAY_INV_HOOVER1_YES-3=¡Genial! Ahí tienes tus 200 Unis.
+# Brok
+PC08B_SHAY_INV_HOOVER1_YES-4=(Me pregunto qué le voy a decir a Graff... A él le gustaba.)
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER1_NO-1=Lo siento, le he tomado cariño.
+# Brok
+PC08B_SHAY_INV_HOOVER1_NO-2=Es una de las primeras cosas que conseguí cuando me mudé al apartamento con Graff...
+# Shay
+PC08B_SHAY_INV_HOOVER1_NO-3=De acuerdo. Lo entiendo. Pero no deberías ser tan nostálgico.
+# Shay
+PC08B_SHAY_INV_HOOVER1_NO-4=El pasado es el pasado. ¡Hay que mirar al futuro!
+# Shay
+PC08B_SHAY_INV_HOOVER1_NO-5=Aunque... a veces el futuro está en el pasado.
+# Brok
+PC08B_SHAY_INV_HOOVER1_NO-6=¿...?
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER2-1=Sobre el robot aspiradora...
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_APARTMENTKEY-1=¿Qué?
+# Brok
+PC08B_SHAY_INV_APARTMENTKEY-2=¡Gracias otra vez por la conveniente llave-destornillador!
+# Shay
+PC08B_SHAY_INV_APARTMENTKEY-3=¡Oh! Pensaba que...
+# Shay
+PC08B_SHAY_INV_APARTMENTKEY-4=Nada.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_PENDANT-1=...
+# Shay
+PC08B_SHAY_INV_PENDANT-2=...
+# Shay
+PC08B_SHAY_INV_PENDANT-3=No te has olvidado...
+# Brok
+PC08B_SHAY_INV_PENDANT-4=Nunca lo haré.
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_GUN-1=Oh, has conseguido un juguetito nuevo.
+# Brok
+PC08B_SHAY_INV_GUN-2=¡No es mía!
+# Shay
+PC08B_SHAY_INV_GUN-3=No pasa nada. Todos tenemos secretos.
+# Brok
+PC08B_SHAY_INV_GUN-4=Pfft...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-1=Erm... Este...
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-2=¡Eh! ¡Mi cortador de goma!
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-3=¡Sabía que lo tenías tú!
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-4=¿Cortador... de goma?
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-5=Bueno, claro. ¿Qué otra cosa podría ser?
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-6=Así que... ¿no es una palanca? Estaba en ese hueco en la pared...
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-7=¡Pues claro! Siempre lo pongo ahí para no perderlo.
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-8=Ah...
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-9=¡Solo corta goma! No hay peligro para ningún otro material.
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-10=Así que... ¡devuélvemelo!
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-11=¡Espera! ¡Me vendrá bien para una cosa!
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-12=¿Qué? ¡Pero si ni siquiera sabías para qué era!
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-13=¡Ahora ya lo sé!
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-14=¡Por favor! ¡Vamos, por favor!
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-15=Argh...
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-16=¡Bueno, bueno! Me las arreglaré. Quédatelo por ahora...
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-17=¡Genial!
+# Unknown
+PC08B_SHAY_INV_LEVER_AFTER-18=(Besa la mejilla)
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-19=Erm...
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-20=¡Eres la mejor!
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-21=Ni-ni lo menciones...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER2-1=(¡Esto puede ser muy útil cuando pelee contra robots de goma!)
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_DEFAULT1-1=¿Necesitas esto?
+# Shay
+PC08B_SHAY_INV_DEFAULT1-2=Mmm... Nop.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_DEFAULT2-1=¿Y esto?
+# Shay
+PC08B_SHAY_INV_DEFAULT2-2=Sé que te pido que recojas mucha basura, ¡pero no te pedí nada de eso!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Shay
+# *****************************************************************
+# Shay
+PC08B_SHAY_ARENABEFORE-1=¿Te gustaría algo de entrenamiento antes de esta noche?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Bolt, which we saved from the Border Post
+# *****************************************************************
+# Brok
+#For now he's disabled
+PC08B_BOLT1-1=¡Hola!
+# Brok
+PC08B_BOLT1-2=¡Me alegra ver que has encontrado el camino hasta aquí!
+# Bolt
+PC08B_BOLT1-3=...
+# Brok
+PC08B_BOLT1-4=¿Estás bien?
+# Shay
+PC08B_BOLT1-5=No te molestes. Lo he desactivado para hacer una copia de seguridad en frío.
+# Brok
+PC08B_BOLT1-6=¿Qué? Pero...
+# Shay
+PC08B_BOLT1-7=Tardará un día, más o menos.
+# Brok
+PC08B_BOLT1-8=Pobrecito...
+# Shay
+PC08B_BOLT1-9=¡Qué sentimental! ¡Ahora ya sé por qué te gusta machacar robots por las noches!
+# Brok
+PC08B_BOLT1-10=Qui sintimintil, ñiñiñi.
+#----------------------------------------------------
+# Brok
+#If your language does not distinguish it and him, just say it was deactivated
+PC08B_BOLT2-1=Es inútil. Shay lo ha desactivado... Bueno, eso creo.
+#----------------------------------------------------
+# Bolt
+PC08B_BOLTON1-1=¡Amo Brok!
+# Bolt
+PC08B_BOLTON1-2=¡Me ha - salvado! ¡Es - mi héroe!
+# Brok
+PC08B_BOLTON1-3=¡Oh, vamos! ¡No ha sido nada!
+# Shay
+PC08B_BOLTON1-4=Y que lo digas. ¡Yo soy la que le he dado un trabajo nuevo! ¡Debería darme las gracias a mí!
+# Brok
+PC08B_BOLTON1-5=No le hagas caso. Es demasiado quisquillosa.
+# Shay
+PC08B_BOLTON1-6=Urgh...
+# Bolt
+PC08B_BOLTON1-7=¡Los quiero - a ambos!
+# Bolt
+PC08B_BOLTON1-8=¡Quiero a - todo el mundo! ¡El mundo - es maravilloso!
+# Brok
+PC08B_BOLTON1-9=Cielos... Vaya cambio de personalidad...
+# Bolt
+PC08B_BOLTON1-10=¡Estoy - súper-muy-feliz - de tener - un trabajo nuevo!
+# Bolt
+PC08B_BOLTON1-11=¡Ahora mismo - mi objetivo - es ayudarlos!
+# Brok
+PC08B_BOLTON1-12=¿Recogiendo anuncios?
+# Bolt
+PC08B_BOLTON1-13=¡Sí!
+# Bolt
+PC08B_BOLTON1-14=¡Solo le costará - 20 Unis - por petición!
+# Brok
+PC08B_BOLTON1-15=¡Shay!...
+# Shay
+PC08B_BOLTON1-16=¡Hey! ¡De alguna manera tengo que pagar su mantenimiento!
+# Bolt
+PC08B_BOLTON1-17=Permaneceré - en el taller - pero tengo - sensores potentes.
+# Bolt
+#His boss is Shay.
+PC08B_BOLTON1-18=Según - mi jefa - su memoria - es limitada - así que - le daré información - de un anuncio - cada vez.
+# Brok
+PC08B_BOLTON1-19=Erm... Gracias, supongo...
+#----------------------------------------------------
+# Bolt
+PC08B_BOLTON2-1=¿Qué anuncio - necesita ayuda - para localizar?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting Bolt
+# *****************************************************************
+# Shay
+PC08B_BOLT_HIT1-1=¡Hey, alto! Podrías interrumpir la copia de seguridad.
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_HIT2-1=¿Me estás escuchando?...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After taking a bath in the lake
+# *****************************************************************
+# Shay
+PC08B_SHAY_STINK1-1=Ugh...
+# Shay
+PC08B_SHAY_STINK1-2=No me lo digas. ¿Te has dado un baño en el pantano?
+# Brok
+PC08B_SHAY_STINK1-3=Bueno, no te lo diré.
+# Shay
+PC08B_SHAY_STINK1-4=Qué asco...
+# Shay
+PC08B_SHAY_STINK1-5=¡Ten!
+# Brok
+PC08B_SHAY_STINK1-6=¡Argh! ¿Qué ha sido eso?
+# Shay
+PC08B_SHAY_STINK1-7=Un cancelador de olores.
+# Brok
+PC08B_SHAY_STINK1-8=¡Genial!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Leaving
+# *****************************************************************
+# Brok
+PC08B_LEAVING1-1=No me puedo ir todavía. ¡Tengo que pedirle a Shay más información sobre el Paso Fronterizo!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Leaving
+# *****************************************************************
+# Brok
+PC08B_LEAVING2-1=Aún no me puedo ir...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - End of day 1, before the night fight
+# *****************************************************************
+# Brok
+PC08B_STORY120_1-1=Ya... (jadea)
+# Brok
+PC08B_STORY120_1-2=Ya estoy aquí... (jadea)
+# Brok
+PC08B_STORY120_1-3=Listo...
+# Shay
+PC08B_STORY120_1-4=¡Tranquilo, amigo!
+# Shay
+PC08B_STORY120_1-5=La pelea empieza en diez minutos.
+# Brok
+PC08B_STORY120_1-6=¿Eh? Pero si me has dicho...
+# Shay
+PC08B_STORY120_1-7=¡He usado mi capacidad para saltar en el tiempo!
+# Brok
+PC08B_STORY120_1-8=¿Saltar... en el tiempo?...
+# Shay
+PC08B_STORY120_1-9=Llegabas tarde, así que salté una hora hacia atrás para que llegaras a tiempo.
+# Brok
+PC08B_STORY120_1-10=Pero... ¡Eso es imposible!
+# Shay
+PC08B_STORY120_1-11=¿Lo es?
+# Shay
+PC08B_STORY120_1-12=Podemos imaginárnoslo, ¿verdad? ¿No implica ese mero hecho que es posible?
+# Brok
+PC08B_STORY120_1-13=Ahora sí me estás confundiendo...
+# Shay
+PC08B_STORY120_1-14=¡Bueno, bueno!
+# Shay
+PC08B_STORY120_1-15=Tienes razón. No lo he hecho.
+# Shay
+PC08B_STORY120_1-16=Después de todo este tiempo, ¿no crees que ya te conozco bien?
+# Shay
+PC08B_STORY120_1-17=La única manera de que llegues a tiempo es no darte nunca la hora correcta.
+# Brok
+PC08B_STORY120_1-18=Argh... ¡He vuelto a caer!
+# Shay
+PC08B_STORY120_1-19=¡Y lo mejor es que parece que siempre te olvidas!
+# Shay
+PC08B_STORY120_1-20=Aun así... Saltar en el tiempo... ¿No sería genial?
+# Shay
+PC08B_STORY120_1-21=Hay muchas teorías interesantes...
+# Brok
+PC08B_STORY120_1-22=Oh-oh... Aquí viene el sermón científico.
+# Shay
+PC08B_STORY120_1-23=Bueno, faltan diez minutos y no tienes nada mejor que hacer, ¿no?
+# Brok
+PC08B_STORY120_1-24=Ha sido un día muy largo... Me vendría bien un descanso.
+# Shay
+PC08B_STORY120_1-25=Oh. Está bien.
+# Shay
+PC08B_STORY120_1-26=Si prefieres invertir este tiempo en no hacer nada en lugar de cultivar tu persona... Tú sabrás.
+#----------------------------------------------------
+# Brok
+PC08B_STORY120_REST-1=Sí, tomaré una pequeña siesta.
+# Brok
+PC08B_STORY120_REST-2=Me quieres con energías y ganas de patear traseros, ¿verdad?
+# Shay
+PC08B_STORY120_REST-3=Cierto.
+# Shay
+PC08B_STORY120_REST-4=¡Y espero que lo hagas, amigo! ¡Los dos tenemos deudas que pagar!
+#----------------------------------------------------
+# Brok
+PC08B_STORY120_DOREST1-1=(...)
+# Brok
+PC08B_STORY120_DOREST1-2=(No puedo quitarme de la cabeza lo que ha pasado con Graff.)
+# Brok
+PC08B_STORY120_DOREST1-3=(¿Estoy haciendo lo correcto?...)
+# Brok
+PC08B_STORY120_DOREST1-4=(¿Es todo culpa mía?...)
+# Brok
+PC08B_STORY120_DOREST1-5=(A veces... pienso...)
+# Brok
+PC08B_STORY120_DOREST1-6=(que no debería haberme hecho cargo de él.)
+# Brok
+PC08B_STORY120_DOREST1-7=(Ella no debió confiar en mí.)
+# Brok
+PC08B_STORY120_DOREST1-8=(Si apenas puedo cuidar de mí mismo...)
+# Brok
+PC08B_STORY120_DOREST1-9=(Solo soy un pobre imbécil, que no da nada más que problemas.)
+# Brok
+PC08B_STORY120_DOREST1-10=(Solo... Nadie...)
+# Brok
+PC08B_STORY120_DOREST1-11=(Zzz...)
+#----------------------------------------------------
+# Brok
+PC08B_STORY120_THEORY-1=La verdad, has despertado mi curiosidad. ¡Ilumíname, pues!
+# Shay
+PC08B_STORY120_THEORY-2=¡Genial!
+# Shay
+PC08B_STORY120_THEORY-3=Antes de nada, te haré una sencilla pregunta...
+# Shay
+PC08B_STORY120_THEORY-4=¿Qué es el tiempo?
+# Brok
+PC08B_STORY120_THEORY-5=Bueno...
+# Brok
+PC08B_STORY120_THEORY-6=Es...
+# Brok
+PC08B_STORY120_THEORY-7=¿algún tipo de medida?
+# Brok
+PC08B_STORY120_THEORY-8=Así como yo peso 140 kilos, y tú pesas... Erm...
+# Brok
+PC08B_STORY120_THEORY-9=¿Cuánto pesas tú?
+# Shay
+PC08B_STORY120_THEORY-10=¡Oye! Sabes tan poco de mujeres como de ciencia, ¿eh?
+# Shay
+PC08B_STORY120_THEORY-11=¡Da igual! Sé a lo que te refieres. El tiempo es constante, ¿cierto?
+# Shay
+PC08B_STORY120_THEORY-12=Imaginemos que arreglar esta tablet me lleva un minuto.
+# Shay
+PC08B_STORY120_THEORY-13=Tú, mientras, estás en la cima de esa montaña de basura, mirando hacia mi taller.
+# Shay
+PC08B_STORY120_THEORY-14=Cuando la termine de arreglar, ¿cuánto tiempo habrá pasado para ti?
+# Brok
+PC08B_STORY120_THEORY-15=Bueno... ¿Un minuto?
+# Shay
+PC08B_STORY120_THEORY-16=¡Error!
+# Brok
+PC08B_STORY120_THEORY-17=¿Qué?
+# Shay
+PC08B_STORY120_THEORY-18=El tiempo es relativo. Varía según el observador.
+# Shay
+PC08B_STORY120_THEORY-19=En mi ejemplo, para ti habría pasado casi un minuto.
+# Shay
+PC08B_STORY120_THEORY-20=Casi, pero no exactamente.
+# Shay
+PC08B_STORY120_THEORY-21=Habría una diferencia minúscula. Quizás menos de un nanosegundo.
+# Shay
+PC08B_STORY120_THEORY-22=Esto se acentúa cuanto mayor es la altitud, ya que no estamos sujetos a la misma gravedad. Como tú en la montaña.
+# Shay
+PC08B_STORY120_THEORY-23=Piensa en los satélites.
+# Shay
+PC08B_STORY120_THEORY-24=Los efectos de la gravedad, unidos a la elevada velocidad con la que orbitan, hacen que percibamos que sus relojes se adelantan unos 50 microsegundos al día.
+# Brok
+PC08B_STORY120_THEORY-25=Así que... Básicamente, ¿me estás diciendo que podría envejecer más rápido que tú?
+# Shay
+PC08B_STORY120_THEORY-26=¡Exactamente!
+# Shay
+PC08B_STORY120_THEORY-27=Puede que a lo largo de nuestras vidas la diferencia sea inferior a un segundo. Pero existe.
+# Shay
+PC08B_STORY120_THEORY-28=Se llama dilatación del tiempo.
+# Brok
+PC08B_STORY120_THEORY-29=¿Y eso es importante?
+# Shay
+PC08B_STORY120_THEORY-30=Sí, porque implica una cosa que es clave...
+# Shay
+PC08B_STORY120_THEORY-31=El tiempo no se puede desasociar del espacio.
+# Shay
+PC08B_STORY120_THEORY-32=Como sabrás, cada objeto tiene tres coordenadas: altura, ancho y profundidad. Son sus dimensiones.
+# Shay
+PC08B_STORY120_THEORY-33=Bueno, el tiempo es lo mismo. Se le llama "la cuarta dimensión".
+# Shay
+PC08B_STORY120_THEORY-34=Es un concepto tan abstracto que difícilmente podemos concebirlo.
+# Shay
+PC08B_STORY120_THEORY-35=Si podemos mover un objeto en el espacio, ¿podríamos también moverlo en el tiempo?
+# Shay
+PC08B_STORY120_THEORY-36=¿Pero cómo lo haríamos?
+# Brok
+PC08B_STORY120_THEORY-37=No tengo ni la más remota idea.
+# Shay
+PC08B_STORY120_THEORY-38=Moviéndolo en el espacio, a una velocidad cercana a la de la luz.
+# Brok
+PC08B_STORY120_THEORY-39=¿La velocidad de la luz?
+# Shay
+PC08B_STORY120_THEORY-40=¡Hey! ¿Has ido a la escuela? ¡Todo el mundo lo sabe!
+# Brok
+PC08B_STORY120_THEORY-41=Ahora que lo dices...
+# Brok
+PC08B_STORY120_THEORY-42=Mi abuelo y yo... solíamos ver las estrellas de noche.
+# Brok
+PC08B_STORY120_THEORY-43=Me dijo que las observábamos tal y como eran hace millones de años.
+# Shay
+PC08B_STORY120_THEORY-44=Sí. Eso es porque la luz no es instantánea. La luz de las estrellas tarda mucho en llegar.
+# Shay
+PC08B_STORY120_THEORY-45=Ahora mismo, lo que estás viendo es una versión más joven de mí.
+# Brok
+PC08B_STORY120_THEORY-46=¿Eh? ¿Así que eres más vieja?
+# Shay
+PC08B_STORY120_THEORY-47=¡Eso varía según la perspectiva!
+# Shay
+PC08B_STORY120_THEORY-48=Hay un retraso. Tan pequeño que nuestros cerebros no se percatan.
+# Brok
+PC08B_STORY120_THEORY-49=Pero eso no implica que viajemos en el tiempo. Simplemente... vemos.
+# Shay
+PC08B_STORY120_THEORY-50=Cierto. Porque estamos quietos.
+# Shay
+PC08B_STORY120_THEORY-51=¿Pero qué pasaría si nos moviéramos?
+# Shay
+PC08B_STORY120_THEORY-52=Supongamos que tienes un gemelo.
+# Brok
+PC08B_STORY120_THEORY-53=¿Lo tengo?
+# Shay
+PC08B_STORY120_THEORY-54=¡Pues claro que no, bobo! ¡Un Brok ya es demasiado para este mundo!
+# Brok
+PC08B_STORY120_THEORY-55=¡Oye!
+# Shay
+PC08B_STORY120_THEORY-56=Pero supongamos que lo tienes.
+# Shay
+PC08B_STORY120_THEORY-57=Mientras estás en la Tierra, tu gemelo está viajando en una nave a una velocidad extrema.
+# Shay
+PC08B_STORY120_THEORY-58=Los años pasan...
+# Shay
+PC08B_STORY120_THEORY-59=¡Y un día, vuelve!
+# Shay
+PC08B_STORY120_THEORY-60=Y para tu sorpresa... ¡es mucho más joven que tú!
+# Brok
+PC08B_STORY120_THEORY-61=¡Oye! ¡No es justo!
+# Shay
+PC08B_STORY120_THEORY-62=Pero es cierto. Tu gemelo ha envejecido más lentamente que tú.
+# Shay
+PC08B_STORY120_THEORY-63=El tiempo se ralentiza o acelera dependiendo de lo rápido que te muevas respecto a una referencia.
+# Shay
+PC08B_STORY120_THEORY-64=Así que, en cierto modo, podríamos decir que tu gemelo ha viajado al futuro.
+# Brok
+PC08B_STORY120_THEORY-65=Suena lógico, aunque... no me gustaría ir adelante en el tiempo. Sería terrible.
+# Brok
+PC08B_STORY120_THEORY-66=Todos mis conocidos serían ancianos o estarían muertos...
+# Brok
+PC08B_STORY120_THEORY-67=¿No podríamos volver en el tiempo? ¿Es eso posible?
+# Shay
+PC08B_STORY120_THEORY-68=Recuerda lo que he dicho. Para ir al futuro, tendríamos que alcanzar una velocidad cercana a la de la luz.
+# Shay
+PC08B_STORY120_THEORY-69=Pero, ¿qué pasaría si pudiéramos alcanzar exactamente la velocidad de la luz?
+# Brok
+PC08B_STORY120_THEORY-70=Bueno...
+# Brok
+PC08B_STORY120_THEORY-71=Supongo que nos desintegraríamos. Nuestro cuerpo no podría soportarlo.
+# Brok
+PC08B_STORY120_THEORY-72=Tampoco nuestro cerebro. Nos volveríamos locos.
+# Shay
+PC08B_STORY120_THEORY-73=Posiblemente. Pero has caído en un error de novato.
+# Shay
+PC08B_STORY120_THEORY-74=¡No es necesario moverse en una sola dirección para aumentar la velocidad!
+# Shay
+PC08B_STORY120_THEORY-75=Una nave podría balancearse adelante y atrás, incrementando lenta y gradualmente su velocidad, de manera que la mente y el cuerpo no lo percibieran.
+# Brok
+PC08B_STORY120_THEORY-76=Quieres decir... ¿como nuestro ejemplo anterior?
+# Shay
+PC08B_STORY120_THEORY-77=¡Sep!
+# Shay
+PC08B_STORY120_THEORY-78=El espacio en la nave se comprimiría, así como su contenido.
+# Shay
+PC08B_STORY120_THEORY-79=Y de repente...
+# Shay
+PC08B_STORY120_THEORY-80=¡BAM!
+# Shay
+PC08B_STORY120_THEORY-81=Alcanzas la velocidad de la luz... y entras en un agujero de gusano.
+# Shay
+PC08B_STORY120_THEORY-82=Desde ahí, tienes acceso a toda la historia del universo.
+# Shay
+PC08B_STORY120_THEORY-83=Puedes aterrizar donde quieras. O mejor dicho, ¡cuando quieras!
+# Shay
+PC08B_STORY120_THEORY-84=Emocionante, ¿verdad?
+# Shay
+PC08B_STORY120_THEORY-85=¿Te lo imaginas?
+# Brok
+PC08B_STORY120_THEORY-86=Ahora mismo no me imagino nada. Me duele la cabeza...
+# Shay
+PC08B_STORY120_THEORY-87=...
+# Shay
+PC08B_STORY120_THEORY-88=Oh, oh...
+# Shay
+PC08B_STORY120_THEORY-89=Puede que tengamos que volver en el tiempo...
+# Brok
+PC08B_STORY120_THEORY-90=¿Por qué lo dices?
+# Shay
+PC08B_STORY120_THEORY-91=¡Porque ya es la hora!
+# Shay
+PC08B_STORY120_THEORY-92=¡Rápido! ¡A la cabina!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Alternatives outcomes of the fight
+# *****************************************************************
+# Shay
+PC08B_WIN1-1=Bueno, ¡adiós!
+# Brok
+PC08B_WIN1-2=Oye...
+# Brok
+PC08B_WIN1-3=Lo dices como si fuera lo más normal del mundo.
+# Shay
+PC08B_WIN1-4=¿Y no lo es?
+# Brok
+PC08B_WIN1-5=¡Me arriesgo la vida por un puñado de dinero!
+# Shay
+PC08B_WIN1-6=Nah. ¡No puedes morir!
+# Brok
+PC08B_WIN1-7=¿Qué?
+# Brok
+PC08B_WIN1-8=¿Por qué siempre pareces estar segura de que no acabaré muerto... o algo peor?
+# Brok
+PC08B_WIN1-9=Como esta mañana, cuando me mandaste a hackear un Paso Fronterizo lleno de robots asesinos y láseres.
+# Brok
+PC08B_WIN1-10=O cuando pusiste esa sierra gigante que esquivé de milagro.
+# Brok
+PC08B_WIN1-11=¡Tuve suerte de salir con vida!
+# Shay
+#She's about to say "I know the future"
+PC08B_WIN1-12=¡Vaya pregunta más tonta! Eso es porque conozco el...
+# Shay
+PC08B_WIN1-13=...
+# Shay
+PC08B_WIN1-14=Digo... Porque te conozco.
+# Shay
+PC08B_WIN1-15=Confío en ti.
+# Brok
+PC08B_WIN1-16=Mmm...
+# Brok
+PC08B_WIN1-17=De acuerdo... Gracias, Shay.
+# Brok
+PC08B_WIN1-18=Eres una gran amiga.
+# Shay
+PC08B_WIN1-19=¡No hay de qué, Brok!
+#----------------------------------------------------
+# Shay
+PC08B_AFTERLEAVING-1=...
+#----------------------------------------------------
+# Shay
+#Gave up
+PC08B_GAVEUP1-1=Nunca te perdonaré esto.
+# Brok
+PC08B_GAVEUP1-2=Seguro que lo harás. Necesitas el dinero de las siguientes peleas, ¿no?
+# Shay
+PC08B_GAVEUP1-3=Sí. De una más.
+# Brok
+PC08B_GAVEUP1-4=¿Uh? ¿Solo una?
+# Shay
+PC08B_GAVEUP1-5=Quién sabe.
+#----------------------------------------------------
+# Shay
+#Lost fight
+PC08B_LOST1-1=Necesitaba el dinero. Qué fastidio...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 start
+# *****************************************************************
+# Shay
+PC08B_DAY2_BEGIN1-1=¡Hey, Brok! ¿Qué hay de nuevo?
+# Brok
+PC08B_DAY2_BEGIN1-2=Bueno...
+# Shay
+PC08B_DAY2_BEGIN1-3=Lo siento, estoy muy ocupada.
+# Shay
+PC08B_DAY2_BEGIN1-4=¿Puedes volver más tarde?
+# Brok
+PC08B_DAY2_BEGIN1-5=¿Qué? Pero...
+# Shay
+PC08B_DAY2_BEGIN1-6=¡Oh! ¡Quizás puedas ayudarme!
+# Shay
+PC08B_DAY2_BEGIN1-7=Verás, estoy buscando algunos materiales.
+# Shay
+PC08B_DAY2_BEGIN1-8=Pero mi proveedor habitual está de vacaciones, así que...
+# Shay
+PC08B_DAY2_BEGIN1-9=¡Pero qué idiota! Justo en este momento...
+# Brok
+PC08B_DAY2_BEGIN1-10=Bueno, yo...
+# Shay
+PC08B_DAY2_BEGIN1-11=Como decía. Podrás encontrarlos si buscas bien. Iría yo misma, pero...
+# Shay
+PC08B_DAY2_BEGIN1-12=ya sabes, estoy trabajando en un proyecto de máxima importancia.
+# Shay
+PC08B_DAY2_BEGIN1-13=Bueno, "ya sabes"... Era solo una frase hecha.
+# Shay
+PC08B_DAY2_BEGIN1-14=Saberlo claro que no lo sabes. Al menos, no todavía...
+# Brok
+PC08B_DAY2_BEGIN1-15=¡¡¡Basta!!!
+# Shay
+PC08B_DAY2_BEGIN1-16=¡...!
+# Brok
+PC08B_DAY2_BEGIN1-17=...
+# Brok
+PC08B_DAY2_BEGIN1-18=¿Puedo decir algo?
+# Shay
+PC08B_DAY2_BEGIN1-19=Oh...
+# Shay
+PC08B_DAY2_BEGIN1-20=Hum, claro.
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_ALTERNATE-1=¿Es que ya lo has olvidado? ¡Me has pedido que viniera!
+# Shay
+PC08B_DAY2_ALTERNATE-2=¡Ah, sí! Esperaba que vinieras antes.
+# Shay
+PC08B_DAY2_ALTERNATE-3=¿Y? ¿Cuándo me lo pedirás?
+# Brok
+PC08B_DAY2_ALTERNATE-4=¿Pedirte qué?
+# Shay
+PC08B_DAY2_ALTERNATE-5=El chip.
+# Brok
+PC08B_DAY2_ALTERNATE-6=¿Qué chip?
+# Shay
+PC08B_DAY2_ALTERNATE-7=¡...!
+# Shay
+PC08B_DAY2_ALTERNATE-8=Oh, no.
+# Shay
+PC08B_DAY2_ALTERNATE-9=Ya lo entiendo. Se han alterado los eventos.
+# Brok
+PC08B_DAY2_ALTERNATE-10=¡¿Huh?!
+# Shay
+PC08B_DAY2_ALTERNATE-11=¡Escucha!
+# Shay
+PC08B_DAY2_ALTERNATE-12=Necesito que vayas a ver a un hacker llamado "The Gloom".
+#----------------------------------------------------
+# Shay
+PC08B_DAY2_ALTERNATE2-1=Le... debo 100 Unis y solo acepta pagos en persona.
+# Shay
+PC08B_DAY2_ALTERNATE2-2=Te he transferido el dinero. ¿Podrías hacerme ese favor?
+# Brok
+PC08B_DAY2_ALTERNATE2-3=Erm... ¿Bueno?
+# Shay
+PC08B_DAY2_ALTERNATE2-4=¡Gracias!
+# Brok
+PC08B_DAY2_ALTERNATE2-5=Cada vez que hablamos, siento que me he saltado un episodio.
+# Shay
+PC08B_DAY2_ALTERNATE2-6=¡No te preocupes, te pondrás al día!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_SELFMODIFIER1-1=Necesito un chip automodificador. ¿Te suena de algo?
+# Shay
+PC08B_SHAY_SELFMODIFIER1-2=¿...?
+# Shay
+PC08B_SHAY_SELFMODIFIER1-3=¡No puede ser! Tú...
+# Shay
+PC08B_SHAY_SELFMODIFIER1-4=¡Nunca lo hubiera dicho!
+# Brok
+PC08B_SHAY_SELFMODIFIER1-5=¿Eh?
+# Shay
+PC08B_SHAY_SELFMODIFIER1-6=¿Cuál es tu secreto?
+# Shay
+PC08B_SHAY_SELFMODIFIER1-7=Ah, ¡ya sé! Te han programado usando datos extraídos de la Triweb, ¿verdad?
+# Shay
+PC08B_SHAY_SELFMODIFIER1-8=Aunque no tienes muy buena cara. Ten, toma este cargador.
+# Brok
+PC08B_SHAY_SELFMODIFIER1-9=¡Hey! ¡No soy ninguna máquina!
+# Shay
+PC08B_SHAY_SELFMODIFIER1-10=¿Estás seguro? ¿Eres de carne y hueso?
+# Shay
+PC08B_SHAY_SELFMODIFIER1-11=Awww... Qué decepción.
+# Shay
+PC08B_SHAY_SELFMODIFIER1-12=Hubiera sido genial tenerte de mayordomo...
+# Brok
+PC08B_SHAY_SELFMODIFIER1-13=...
+# Brok
+PC08B_SHAY_SELFMODIFIER1-14=¿Y?
+# Shay
+PC08B_SHAY_SELFMODIFIER1-15=Y... ¿qué?
+# Brok
+PC08B_SHAY_SELFMODIFIER1-16=¡Mi chip automodificador!
+# Shay
+PC08B_SHAY_SELFMODIFIER1-17=Ah, eso.
+# Shay
+PC08B_SHAY_SELFMODIFIER1-18=Es un dispositivo muy especializado. No puedo fabricarte uno, pero...
+# Shay
+PC08B_SHAY_SELFMODIFIER1-19=conozco un sujeto.
+# Shay
+PC08B_SHAY_SELFMODIFIER1-20="The Gloom". Podría ayudarte.
+# Brok
+PC08B_SHAY_SELFMODIFIER1-21=¿The Gloom?
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_SELFMODIFIER2-1=Así que... ¿no puedes hacerme tú el chip?
+# Shay
+PC08B_SHAY_SELFMODIFIER2-2=¿Acaso escuchas cuando te hablo?
+# Shay
+PC08B_SHAY_SELFMODIFIER2-3=Yo no puedo, pero sé de alguien que podría. Ve a verlo.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HELP1-1=¿Necesitas ayuda con algo?
+# Shay
+PC08B_SHAY_HELP1-2=¡La verdad es que sí! Tengo que terminar un proyecto importante para mañana.
+# Shay
+PC08B_SHAY_HELP1-3=Y todavía me falta mucho. El tiempo vuela tan rápido...
+# Brok
+PC08B_SHAY_HELP1-4=Tranquila.
+# Brok
+PC08B_SHAY_HELP1-5=Ni que tu vida dependiera de ello.
+# Shay
+PC08B_SHAY_HELP1-6=No solo la mía. La tuya también... y quizás la del universo entero.
+# Brok
+PC08B_SHAY_HELP1-7=¿Eh?
+# Shay
+PC08B_SHAY_HELP1-8=¡Era una broma! En fin...
+# Shay
+PC08B_SHAY_HELP1-9=Me faltan algunas piezas y algunos materiales, algunos de ellos cruciales.
+# Shay
+PC08B_SHAY_HELP1-10=Los podría pedir por el Tubo de Envío Express, pero...
+# Brok
+PC08B_SHAY_HELP1-11=Estás tan pobre como yo.
+# Shay
+PC08B_SHAY_HELP1-12=Casi tanto.
+# Shay
+PC08B_SHAY_HELP1-13=Además, ¡estamos rodeados de vertederos llenos de tesoros escondidos!
+# Brok
+PC08B_SHAY_HELP1-14=Así que, ¿qué necesitas?
+# Shay
+PC08B_SHAY_HELP1-15=Ten.
+# Shay
+PC08B_SHAY_HELP1-16=He transferido la lista a... esa antigüedad tuya que llamas móvil.
+# Brok
+PC08B_SHAY_HELP1-17=Bien...
+# Brok
+PC08B_SHAY_HELP1-18=Ahora mismo estoy demasiado ocupado, pero quién sabe.
+# Brok
+PC08B_SHAY_HELP1-19=Quizás encuentre alguno por el camino.
+# Brok
+PC08B_SHAY_HELP1-20=¡Espero que pagues bien!
+# Shay
+PC08B_SHAY_HELP1-21=¿Qué? ¡¿Esperas que te pague?!
+# Brok
+PC08B_SHAY_HELP1-22=¡Pues claro que lo espero!
+# Shay
+PC08B_SHAY_HELP1-23=¡Estoy haciendo esto por ti, grandulón! ¡Deberías darme las gracias!
+# Brok
+PC08B_SHAY_HELP1-24=¿...?
+# Shay
+PC08B_SHAY_HELP1-25=Oh... Erm...
+# Shay
+PC08B_SHAY_HELP1-26=Está bien. Te pagaré conforme lo que vayas trayendo.
+# Shay
+PC08B_SHAY_HELP1-27=Por cierto... ¡Ten esto!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HELP1B-1=¿Es un... mando a distancia hiper-ultra-tecnológico?
+# Shay
+PC08B_SHAY_HELP1B-2=Nop. ¡Solo un radar tecnológico!
+# Shay
+PC08B_SHAY_HELP1B-3=Lo he programado para que localice las piezas que necesito. Llévatelo y abre bien las orejas.
+# Shay
+PC08B_SHAY_HELP1B-4=¡Cuanto más ruido haga, más cerca estará!
+# Brok
+PC08B_SHAY_HELP1B-5=¡Genial!
+# Shay
+PC08B_SHAY_HELP1B-6=Pero ten en cuenta que necesito las piezas antes del anochecer.
+# Shay
+PC08B_SHAY_HELP1B-7=Y ahora, ¡largo! ¡Mi tiempo es oro!
+# Brok
+PC08B_SHAY_HELP1B-8=¡Hey!...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HELP1C-1=(Tiene razón. Me espera un día largo...)
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_HELP1D-1=¡Eh, espera! Antes de que se me olvide...
+# Shay
+PC08B_SHAY_HELP1D-2=Reiniciaré a Bolt.
+# Shay
+PC08B_SHAY_HELP1D-3=Un momento...
+# Brok
+PC08B_SHAY_HELP1D-4=¿Está bien?
+# Bolt
+PC08B_SHAY_HELP1D-5=¡Afirmativo!
+# Brok
+PC08B_SHAY_HELP1D-6=¡Vaya!
+# Bolt
+PC08B_SHAY_HELP1D-7=¡Estaré - encantado de - ayudarle, Amo!
+# Brok
+PC08B_SHAY_HELP1D-8=¡Me alegra verte más animado!
+# Brok
+PC08B_SHAY_HELP1D-9=Así que, ¿me ayudarás a encontrar esos materiales?
+# Bolt
+PC08B_SHAY_HELP1D-10=No. ¡Le ayudaré a - encontrar anuncios!
+# Brok
+PC08B_SHAY_HELP1D-11=¡¿Eh?!
+# Bolt
+PC08B_SHAY_HELP1D-12=¡Solo - pregúnteme!
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_HELP2-1=¡Tráeme las piezas tan pronto puedas! Te pagaré al instante.
+# Shay
+PC08B_SHAY_HELP2-2=Dañadas o no, no importa. Me las arreglaré.
+# Brok
+PC08B_SHAY_HELP2-3=¿Necesitas absolutamente todas?
+# Shay
+PC08B_SHAY_HELP2-4=Bueno... si faltan una o dos, no pasa nada. Las pediré nuevas.
+# Shay
+PC08B_SHAY_HELP2-5=Aun así, ¡cuantas más encuentres, mejor!
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HACKER1-1=Y bien, ¿quién es el sujeto que me conseguirá el chip?
+# Shay
+PC08B_SHAY_HACKER1-2=¿"The Gloom"?
+# Shay
+PC08B_SHAY_HACKER1-3=Se dedica a hacer trabajos sucios.
+# Shay
+PC08B_SHAY_HACKER1-4=Es experto en hackear cosas y en electrónica ilegal.
+# Shay
+PC08B_SHAY_HACKER1-5=He... usado sus servicios un par de veces.
+# Brok
+PC08B_SHAY_HACKER1-6=¡Y yo que pensaba que eras intachable!
+# Shay
+PC08B_SHAY_HACKER1-7=¡Y lo soy! La mayor parte del tiempo.
+# Brok
+PC08B_SHAY_HACKER1-8=Sí... Ja, ja.
+# Brok
+PC08B_SHAY_HACKER1-9=No te culpo. A veces tienes que hacer lo que hay que hacer.
+# Brok
+PC08B_SHAY_HACKER1-10=¿Cómo lo puedo encontrar?
+# Shay
+PC08B_SHAY_HACKER1-11=Ni idea.
+# Shay
+PC08B_SHAY_HACKER1-12=A los hackers no les gusta eso de ser encontrados.
+# Shay
+PC08B_SHAY_HACKER1-13=No por las autoridades, desde luego.
+# Brok
+PC08B_SHAY_HACKER1-14=Aww...
+# Shay
+PC08B_SHAY_HACKER1-15=...
+# Brok
+PC08B_SHAY_HACKER1-16=...
+# Shay
+PC08B_SHAY_HACKER1-17=Oh, por dios...
+# Shay
+PC08B_SHAY_HACKER1-18=Te dije que no tenía tiempo para esto...
+# Brok
+PC08B_SHAY_HACKER1-19=...
+# Shay
+PC08B_SHAY_HACKER1-20=... pero no puedo decir que no cuando me pones esa cara.
+# Shay
+PC08B_SHAY_HACKER1-21=Lo encontraré. Como ya hemos hablado otras veces, podré rastrear su firma por la Triweb.
+# Brok
+PC08B_SHAY_HACKER1-22=¡Genial! ¡Me has salvado la vida!
+# Shay
+PC08B_SHAY_HACKER1-23=¡Eso no es verdad!
+# Shay
+PC08B_SHAY_HACKER1-24=Además, en cuanto a salvar vidas... seguro que me devolverás el favor pronto.
+# Brok
+PC08B_SHAY_HACKER1-25=¡Espero que no! ¡Eso significaría que estarías en peligro!
+# Shay
+PC08B_SHAY_HACKER1-26=Mmm...
+# Shay
+PC08B_SHAY_HACKER1-27=...
+# Shay
+PC08B_SHAY_HACKER1-28=Pues mira...
+# Shay
+PC08B_SHAY_HACKER1-29=Ha sido más fácil de lo que esperaba.
+# Shay
+PC08B_SHAY_HACKER1-30=Aquí tienes su dirección.
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HACKER1B-1=¡Gracias! ¡Eres la mejor!
+# Shay
+PC08B_SHAY_HACKER1B-2=Tengo mis dudas de que sea cierto, ¡pero gracias igualmente!
+# Shay
+PC08B_SHAY_HACKER1B-3=Solo... ten cuidado, ¿de acuerdo? Siempre se esconde en los peores lugares.
+# Brok
+PC08B_SHAY_HACKER1B-4=¿Olvidas con quién estás hablando?
+# Shay
+PC08B_SHAY_HACKER1B-5=Eso es lo que me preocupa...
+# Shay
+PC08B_SHAY_HACKER1B-6=Créeme. Es una mala idea.
+# Brok
+PC08B_SHAY_HACKER1B-7=Estoy acostumbrado a meterme en problemas. Estaré bien.
+# Shay
+PC08B_SHAY_HACKER1B-8=Pero puede que esta vez no...
+# Brok
+PC08B_SHAY_HACKER1B-9=Oh, ¡vamos!
+# Shay
+PC08B_SHAY_HACKER1B-10=Lo digo en serio. Te necesito vivo en el futuro inmediato, y en el...
+# Shay
+PC08B_SHAY_HACKER1B-11=El presente.
+# Brok
+PC08B_SHAY_HACKER1B-12=...
+# Brok
+PC08B_SHAY_HACKER1B-13=¿Estás bien?
+# Brok
+PC08B_SHAY_HACKER1B-14=Estás diciendo un montón de cosas raras. Más que de costumbre.
+# Shay
+PC08B_SHAY_HACKER1B-15=Estoy algo cansada. Y aún me queda mucho para terminar.
+# Brok
+PC08B_SHAY_HACKER1B-16=Si te ocurre algo, sabes que me lo puedes contar...
+# Shay
+PC08B_SHAY_HACKER1B-17=Por favor, no insistas. Ya te he dado la información que querías, ¿no?
+# Brok
+PC08B_SHAY_HACKER1B-18=De acuerdo...
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HACKER2-1="The Gloom"... Bien.
+# Shay
+PC08B_SHAY_HACKER2-2=Ten cuidado.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end
+# *****************************************************************
+# Shay
+PC08B_DAY2_END1-1=¡Hey, Brok!
+# Shay
+PC08B_DAY2_END1-2=Vaya día, ¿eh?
+# Brok
+PC08B_DAY2_END1-3=No tienes ni idea...
+# Brok
+PC08B_DAY2_END1-4=Graff casi se muere por mi culpa...
+# Shay
+PC08B_DAY2_END1-5=¡¿Que qué?!
+# Brok
+PC08B_DAY2_END1-6=Hay una escasez de píldoras Notox ahora mismo.
+# Brok
+PC08B_DAY2_END1-7=Ya se había desmayado cuando llegué a casa...
+# Brok
+PC08B_DAY2_END1-8=Ha estado cerca, pero... ya está bien.
+# Shay
+PC08B_DAY2_END1-9=¡Imbécil! ¡Eso no me lo habías dicho!
+# Shay
+PC08B_DAY2_END1-10=¡¿Por qué no?!
+# Brok
+PC08B_DAY2_END1-11=¡No he tenido tiempo!
+# Shay
+PC08B_DAY2_END1-12=¡No hablo de ahora! ¡Si en el pasado me lo hubieras contado, podría haber ayudado!
+# Shay
+PC08B_DAY2_END1-13=Menos mal que de esto sí me has avisado esta mañana. Si no...
+# Brok
+PC08B_DAY2_END1-14=Espera, no entiendo lo que quieres decir...
+# Brok
+PC08B_DAY2_END1-15=¿Qué has hecho exactamente?
+# Shay
+PC08B_DAY2_END1-16=¡Toma esto!
+# Brok
+PC08B_DAY2_END1-17=...
+# Brok
+PC08B_DAY2_END1-18=¿Una píldora Notox?
+# Shay
+PC08B_DAY2_END1-19=Dásela a él. Para mañana.
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END1B-1=¿No la vas a necesitar?
+# Shay
+PC08B_DAY2_END1B-2=Tengo más por aquí. ¡Ya estoy acostumbrada a saltármela de vez en cuando!
+# Brok
+PC08B_DAY2_END1B-3=Gracias...
+# Shay
+PC08B_DAY2_END1B-4=¡La vida se trata de anticipar lo desconocido!
+# Brok
+PC08B_DAY2_END1B-5=(Ahora me arrepiento de no haberme guardado ninguna durante todos estos años...)
+# Shay
+PC08B_DAY2_END1B-6=Hablando de eso... Más vale que te prepares.
+# Shay
+PC08B_DAY2_END1B-7=Mañana será un día más agitado.
+# Brok
+PC08B_DAY2_END1B-8=¿Y cómo sabes eso?
+# Shay
+PC08B_DAY2_END1B-9=Porque te conozco. ¡Y eso es todo!
+#----------------------------------------------------
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-1=¡Vaya! Parece que no has traído aún todos los materiales que te pedí.
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-2=Si quieres buscarlos por la ciudad, es ahora o nunca.
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-3=Pero... ¿no se supone que tengo que pelear?...
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-4=Se ha retrasado. Un contrincante nuevo llegó a último minuto...
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-5=Como sea...
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-6=¡Necesito esos materiales antes de la pelea! ¡Ese es el límite!
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-7=¿Y qué pasa si no?
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-8=Los pediré nuevos con entrega exprés, aunque me saldrán carísimos.
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-9=Si no me los puedo permitir...
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-10=intentaré arreglármelas, pero...
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-11=Pareces nerviosa. ¿Estás bien?
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-12=¡Solo... consígueme esos materiales! Si puedes.
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-13=Si no, no pasa nada.
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-14=¡Tampoco es que todo el universo y el espacio-tiempo dependan de ello!
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-15=Claro...
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVE1-1=¡Hey, tengo algunos cacharros de los que me pediste!
+# Shay
+PC08B_MATERIALSTOGIVE1-2=¿A qué te refieres con "algunos"?
+# Shay
+PC08B_MATERIALSTOGIVE1-3=¡Los necesito todos!
+# Brok
+PC08B_MATERIALSTOGIVE1-4=¡Lo hago lo mejor que puedo!
+# Brok
+PC08B_MATERIALSTOGIVE1-5=¡Ha sido un día de locos!
+# Shay
+PC08B_MATERIALSTOGIVE1-6=Como sea. Déjame ver.
+# Shay
+PC08B_MATERIALSTOGIVE1-7=...
+# Shay
+PC08B_MATERIALSTOGIVE1-8=Sí... Me las puedo arreglar por ahora.
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVE2-1=Ten algunas piezas más.
+# Shay
+PC08B_MATERIALSTOGIVE2-2=Erm... ¿Qué es esto?
+# Brok
+PC08B_MATERIALSTOGIVE2-3=¿Algo que habías pedido?
+# Shay
+PC08B_MATERIALSTOGIVE2-4=¿Lo hice?
+# Shay
+PC08B_MATERIALSTOGIVE2-5=Oh, vaya. Me lo comeré luego.
+# Brok
+PC08B_MATERIALSTOGIVE2-6=Uh...
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVE3-1=Ten.
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVEALL-1=¡Y aquí está! ¡Ten esto!
+# Shay
+PC08B_MATERIALSTOGIVEALL-2=¿Has encontrado todos los materiales?
+# Shay
+PC08B_MATERIALSTOGIVEALL-3=Genial.
+# Brok
+PC08B_MATERIALSTOGIVEALL-4=¿Eso es todo? ¿"Genial"?
+# Shay
+PC08B_MATERIALSTOGIVEALL-5=¡Un trabajo increíble!
+# Shay
+PC08B_MATERIALSTOGIVEALL-6=¡Literalmente acabas de salvar el mundo! ¡No, el universo!
+# Brok
+PC08B_MATERIALSTOGIVEALL-7=Tampoco exageres.
+# Shay
+PC08B_MATERIALSTOGIVEALL-8=Es que no exagero. Quién sabe qué hubiera ocurrido si no los hubieras encontrado.
+# Brok
+PC08B_MATERIALSTOGIVEALL-9=...
+#----------------------------------------------------
+# Shay
+PC08B_MATERIALS_GIVENMONEY-1=Aquí tienes tu pago.
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALS_GIVENMONEY1-1=¡No está mal!
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALS_GIVENMONEY2-1=Esto se merece una hamburmiga o dos...
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALS_GIVENMONEY3-1=Gracias...
+#----------------------------------------------------
+# Shay
+PC08B_MATERIALS_AFTERFIGHT-1=¿Y qué? ¿Listo para la pelea?
+#----------------------------------------------------
+# Shay
+PC08B_DAY2_END_WELCOME1-1=¿Has encontrado algo?
+# Brok
+PC08B_DAY2_END_WELCOME1-2=Me temo que no. ¿Podemos empezar la pelea?
+# Shay
+PC08B_DAY2_END_WELCOME1-3=Debería haberme imaginado que preferirías pelear a buscar objetos.
+# Shay
+PC08B_DAY2_END_WELCOME1-4=Es tu decisión.
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END_STAY-1=Seguiré buscando.
+# Shay
+PC08B_DAY2_END_STAY-2=¡Date prisa!
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END_STARTFIGHTWITHOUT-1=¿Te irá bien sin estos materiales?
+# Shay
+PC08B_DAY2_END_STARTFIGHTWITHOUT-2=Eso espero. Pero tú has tomado tu decisión.
+# Brok
+PC08B_DAY2_END_STARTFIGHTWITHOUT-3=Bueno...
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END_STARTFIGHT-1=Perfecto. ¡A pelear!
+# Shay
+PC08B_DAY2_END_STARTFIGHT-2=¡Me encanta tu entusiasmo!
+# Shay
+PC08B_DAY2_END_STARTFIGHT-3=¡Eso sí, ten cuidado! Hay un nuevo contrincante que nadie sabe de dónde ha salido, y es muy fuerte.
+# Brok
+PC08B_DAY2_END_STARTFIGHT-4=¡No hay problema! No espero morir hoy.
+# Shay
+PC08B_DAY2_END_STARTFIGHT-5=Bueno, ¡te recomendaré abandonar si las cosas van mal!
+# Brok
+PC08B_DAY2_END_STARTFIGHT-6=¿Yo? ¿Abandonar?
+# Brok
+PC08B_DAY2_END_STARTFIGHT-7=¡Jamás!
+# Shay
+PC08B_DAY2_END_STARTFIGHT-8=¡Qué tonto! Ojalá tuvieras un buen seguro de vida.
+# Shay
+PC08B_DAY2_END_STARTFIGHT-9=¡Da lo mejor de ti!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 after the fight
+# *****************************************************************
+# Shay
+PC08B_DAY2_AFTERFIGHT1-1=Así que, como te decía...
+# Shay
+PC08B_DAY2_AFTERFIGHT1-2=No voy a estar disponible mañana.
+# Brok
+PC08B_DAY2_AFTERFIGHT1-3=¿Te vas de aquí?
+# Shay
+PC08B_DAY2_AFTERFIGHT1-4=Es que... necesito tiempo para mí misma.
+# Brok
+PC08B_DAY2_AFTERFIGHT1-5=¿Para trabajar en tu nuevo invento?
+# Shay
+PC08B_DAY2_AFTERFIGHT1-6=Sí...
+# Shay
+PC08B_DAY2_AFTERFIGHT1-7=¡Ah! ¡Antes de que se me olvide!
+# Shay
+PC08B_DAY2_AFTERFIGHT1-8=Ten.
+# Brok
+PC08B_DAY2_AFTERFIGHT1-9=¿Un sobre?...
+# Brok
+PC08B_DAY2_AFTERFIGHT1-10=...
+# Brok
+PC08B_DAY2_AFTERFIGHT1-11=¡¿"Ábreme si estás desesperado"?!
+# Brok
+PC08B_DAY2_AFTERFIGHT1-12=Hay algo que no me estás contando...
+# Shay
+PC08B_DAY2_AFTERFIGHT1-13=¡No te preocupes! Es...
+# Shay
+PC08B_DAY2_AFTERFIGHT1-14=solo por si acaso.
+# Brok
+PC08B_DAY2_AFTERFIGHT1-15=¿Eh?
+# Shay
+PC08B_DAY2_AFTERFIGHT1-16=Te voy a salvar el pellejo una vez más... ¿o era al revés?
+# Shay
+PC08B_DAY2_AFTERFIGHT1-17=Oh... ¡Ya no lo sé!
+# Brok
+PC08B_DAY2_AFTERFIGHT1-18=¿Te importaría ser un poco más enigmática?
+# Shay
+PC08B_DAY2_AFTERFIGHT1-19=Ya lo entenderás.
+# Brok
+PC08B_DAY2_AFTERFIGHT1-20=Oh, bueno. ¡Hace tiempo que ya no trato de entenderte!
+# Brok
+PC08B_DAY2_AFTERFIGHT1-21=(Bosteza) Bueno, tengo ganas de volver a la cama.
+# Brok
+PC08B_DAY2_AFTERFIGHT1-22=¡Nos vemos!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok doesn't know it but this is the last time they talk to each other - and Shay knows it so it's one-sided goodbye.
+# *****************************************************************
+# Shay
+PC08B_DAY2_AFTERFIGHT2-1=Brok...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-2=Adiós...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-3=Te...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-4=Te voy a echar de menos...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-5=...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-6=No...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-7=No... debo...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-8=Tengo que concentrarme...
+# Shay
+PC08B_DAY2_AFTERFIGHT2-9=Es hora de acabar con esto de una vez por todas.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Brok comes in the garage after final boss and last argument with Graff as he's desperate to know what Shay meant with the envelope she gave him
+# *****************************************************************
+# Brok
+PC08B_STORY320_NOBOLT-1=¿Shay?
+# Brok
+PC08B_STORY320_NOBOLT-2=¡Shay!
+# Brok
+PC08B_STORY320_NOBOLT-3=¿Hay alguien aquí?
+# Brok
+PC08B_STORY320_NOBOLT-4=...
+#----------------------------------------------------
+# Bolt
+#If Bolt was saved, he's there
+PC08B_STORY320_BOLT-1=¡Amo Brok! ¡Lo estaba - esperando!
+# Brok
+PC08B_STORY320_BOLT-2=¿Eh?
+# Bolt
+PC08B_STORY320_BOLT-3=Ha llegado - justo a tiempo.
+# Bolt
+PC08B_STORY320_BOLT-4=Todo - está listo.
+# Brok
+PC08B_STORY320_BOLT-5=¡Genial! Pero...
+# Brok
+PC08B_STORY320_BOLT-6=¿Qué es lo que está listo?
+# Bolt
+PC08B_STORY320_BOLT-7=Eche un vistazo.
+#----------------------------------------------------
+# Graff
+#Alternative ending (Till end of time) with Graff being there
+PC08B_STORY320_GRAFF-1=¡No estabas bromeando! ¡Había algo de verdad!
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT1-1=Me alegro de verte, Bolt. ¡Por fin un robot que no intenta matarme, para variar!
+# Bolt
+PC08B_STORY320_BOLT1-2=¡Me alegro - de verle - Amo Brok!
+# Brok
+PC08B_STORY320_BOLT1-3=No me llames Amo. No me perteneces.
+# Bolt
+PC08B_STORY320_BOLT1-4=Lo entiendo - Amo Brok.
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT2-1=¡Necesito respuestas!
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-1=¿Para qué es ese invento?
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-2=Lo siento - no lo puedo explicar.
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-3=La señorita - Shay dijo.
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-4=Que si entraba - aquí, lo sabría.
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-5=Típico de Shay...
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-6=Está bien...
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-7=No tengo mucho que perder ahora mismo, así que...
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-8=Enciéndelo.
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-9=No puedo.
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-10=¿Por qué no?
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-11=La señorita Shay - dijo que - se las arreglaría - usted mismo.
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-12=Argh...
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-13=Por cierto, ¿dónde está ella?
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-14=La señorita Shay - dijo...
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-15=Oh, da igual.
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-1=¿Estás seguro de que no me puedes contar nada sobre la máquina?
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-2=Es algo - necesario.
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-3=La señorita Shay - lo necesita. Usted la necesita.
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-4=Sus destinos - están entrelazados.
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-5=¿Qué demonios significan esas tonterías?
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-6=Yo solo soy - un montón de tornillos.
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-7=No soy capaz - de interpretar esas palabras.
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-8=Oh, yo creo que sí. Pero no quieres explicármelo.
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-9=...
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-10=Y ahora es cuando pondrías cara de sorprendido si pudieras.
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_MACHINE3-1=¡Vamos! ¡Ayúdame!
+# Bolt
+PC08B_STORY320_BOLT_MACHINE3-2=Lo siento. No fui diseñado - para esto.
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES1-1=¿Qué ocurrirá si pongo esto en marcha?
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-2=Amo Brok.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-3=Está al borde - de un nuevo comienzo.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-4=Nunca lo - olvidaré.
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES1-5=No ayudas para nada...
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-6=No tenga - ningún miedo.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-7=La naturaleza - odia el vacío.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-8=No importa - qué ocurra. Todos los problemas - se solucionan.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-9=De una manera - o de otra.
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES1-10=...Sigues sin ayudar.
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES2-1=¡Por favor, dime que estoy haciendo lo correcto!
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-2=Seguramente - lo haga.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-3=Si no - lo hace. ¿Quién sabe?
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-4=El mundo - podría desaparecer - en el vacío.
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES2-5=¿Lo dices en serio?
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-6=Es posible. Todo - es posible.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-7=Quizás - todo esto - es un sueño.
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-8=Nada - es real.
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES2-9=Ya entiendo. Te estás burlando de mí.
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLTEXIT-1=Lo averiguaré yo mismo.
+#----------------------------------------------------
+# Brok
+#Finds the egg which is a time machine
+PC08B_STORY320_REMOVEBLANKET-1=¡No puede ser!
+# Brok
+PC08B_STORY320_REMOVEBLANKET-2=¿Ha sido capaz de crear una máquina como esta... con basura de aquí y de allá?...
+#----------------------------------------------------
+# Bolt
+PC08B_STORY320_REMOVEBLANKET2-1=Esa es la carcasa. El artefacto - está dentro.
+#----------------------------------------------------
+# Graff
+PC08B_STORY320_REMOVEBLANKET2_GRAFF-1=Es... increíble...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Trying to start the machine
+# *****************************************************************
+# Brok
+PC08B_EGGDOOR1-1=No tiene palancas ni nada...
+#----------------------------------------------------
+# Unknown
+PC08B_EGGDOOR1B-1=(Toc, toc)
+# Brok
+PC08B_EGGDOOR1B-2=¿Shay? ¿Estás ahí?
+#----------------------------------------------------
+# Brok
+PC08B_EGGDOOR1C-1=Supongo que incluso si estuviera ahí, no podría oírme.
+#----------------------------------------------------
+# Bolt
+PC08B_EGGDOOR1D-1=Ella no está dentro - Amo Brok.
+# Brok
+PC08B_EGGDOOR1D-2=¡Solo me aseguraba!
+#----------------------------------------------------
+# Brok
+PC08B_EGGDOOR2-1=Se abrirá cuando la encienda.
+#----------------------------------------------------
+# Bolt
+PC08B_EGGHIT1-1=¡Amo Brok!
+#----------------------------------------------------
+# Bolt
+PC08B_EGGHIT2-1=No le - recomiendo - dañarla.
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE1-1=Una cronología...
+# Brok
+PC08B_EGGTIMELINE1-2=...
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-1=(Genial. Graff está mirando a otro lado.)
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-2=(La he puesto en 3030. Hace cinco años.)
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-3=(Si esto puede volver en el tiempo de verdad...)
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-4=(esta es una oportunidad que no puedo dejar pasar.)
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-5=(Y salvar... no solo a Ott, sino...)
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-6=(a todos.)
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-1=(¡No lo voy a pensar dos veces!)
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-2=(Lo ajusté en modo "cinco años atrás"...)
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-3=(Una semana antes del incendio.)
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-4=(Así... o bien seré capaz de cambiar lo que pasó...)
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-5=(o perderé todos los recuerdos de los últimos cinco años.)
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-6=(Me sirve cualquier opción...)
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE2-1=La he puesto a la fecha correcta.
+# Brok
+PC08B_EGGTIMELINE2-2=Espero.
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT1-1=Es obvio. Seguramente tenga que poner algo aquí.
+# Brok
+PC08B_EGGSLOT1-2=Pero... ¿qué?
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT2-1=Si salgo vivo de esta... le diré a Shay que incluya instrucciones.
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT_PENDANT-1=No hay dudas.
+# Brok
+PC08B_EGGSLOT_PENDANT-2=Está brillando, más que nunca...
+# Brok
+PC08B_EGGSLOT_PENDANT-3=Hecho de Heptamida...
+# Brok
+PC08B_EGGSLOT_PENDANT-4=La máquina más poderosa...
+# Brok
+PC08B_EGGSLOT_PENDANT-5=debe necesitar la fuente de energía más poderosa.
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT_PENDANTB-1=¡Vaya!
+# Brok
+PC08B_EGGSLOT_PENDANTB-2=¡Funciona!
+# Brok
+PC08B_EGGSLOT_PENDANTB-3=Mi colgante... ha dejado de brillar.
+# Brok
+PC08B_EGGSLOT_PENDANTB-4=¿Acaso la máquina ha absorbido su energía?
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_INVENTORY_PENDANT-1=Está... ¡¿brillando?!
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_OPENDOOR1-1=Así que... 
+# Brok
+PC08B_STORY320_OPENDOOR1-2=¿Cómo...?
+# Various
+PC08B_STORY320_OPENDOOR1-3="Atrás".
+# Brok
+PC08B_STORY320_OPENDOOR1-4=El huevo... ¿ha hablado?
+#----------------------------------------------------
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-1=Aún no puedo creer que sea real...
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-2=La máquina lo es, ¿pero qué hace exactamente?
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-3=...
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-4=Supongo que pronto lo sabremos.
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-5=No creía que esto podría pasar de verdad...
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-6=¿Vas a... hacer esto de verdad?
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-7=¿Por mí?
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-8=Lo haré.
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-9=Pero...
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-10=¿Y si...?
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-11=¿Y si no funciona?
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-12=Bueno, ¡supongo que tendrás lista la cena!
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-13=¡No es gracioso!
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-14=No te preocupes.
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-15=Shay no lo permitiría.
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-16=Confío en ella.
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-17=¿Hasta el punto de confiar tu vida en ella?
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-18=¡Pues claro! ¡Prácticamente lo hago cada noche!
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-19=...
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-20=Brok...
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-21=Lo sé.
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-22=No tienes que decir nada.
+#----------------------------------------------------
+# Various
+PC08B_STORY320_OPENDOOR2-1="Todo está listo".
+# Various
+PC08B_STORY320_OPENDOOR2-2="Entra".
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Final player decision - Brok hesitates to enter the machine
+# *****************************************************************
+# Brok
+PC08B_STORY320_OPENDOOR2B-1=...
+# Brok
+PC08B_STORY320_OPENDOOR2B-2=Bueno...
+# Brok
+PC08B_STORY320_OPENDOOR2B-3=Ya está...
+# Brok
+PC08B_STORY320_OPENDOOR2B-4=Cuando entre aquí...
+# Brok
+PC08B_STORY320_OPENDOOR2B-5=ya no habrá vuelta atrás...
+# Brok
+PC08B_STORY320_OPENDOOR2B-6=Mi destino va a cambiar.
+# Brok
+PC08B_STORY320_OPENDOOR2B-7=Para siempre...
+# Brok
+PC08B_STORY320_OPENDOOR2B-8=...
+#----------------------------------------------------
+# Brok
+#If Graff is there
+PC08B_STORY320_OPENDOOR_GRAFF1-1=...
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF1-2=Bueno...
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF1-3=Supongo que... esto te parecerá como una ausencia corta para ti...
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF1-4=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Till end of time ending - Graff decides to enter the machine himself
+# *****************************************************************
+# Brok
+PC08B_TILLENDTIME_END1-1=¡¡¡Graff!!!
+# Brok
+PC08B_TILLENDTIME_END1-2=¡¿Qué demonios estás haciendo?!
+# Brok
+PC08B_TILLENDTIME_END1-3=¡Sal ahora! ¡Inmediatamente!
+# Graff
+PC08B_TILLENDTIME_END1-4=...
+# Graff
+PC08B_TILLENDTIME_END1-5=No...
+# Graff
+PC08B_TILLENDTIME_END1-6=Yo cometí el error. Yo debo enmendarlo.
+# Graff
+PC08B_TILLENDTIME_END1-7=Tú no deberías ser el único que haga sacrificios.
+# Brok
+PC08B_TILLENDTIME_END1-8=¡Pero... irá al año 3030!
+# Graff
+PC08B_TILLENDTIME_END1-9=¿Qué...?
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END2-1=No... ¡Ya no puedo cambiarlo!
+# Graff
+PC08B_TILLENDTIME_END2-2=Está bien...
+# Graff
+PC08B_TILLENDTIME_END2-3=Así podré ver a mamá...
+# Graff
+PC08B_TILLENDTIME_END2-4=Y tal vez... pueda cambiarlo todo.
+# Various
+PC08B_TILLENDTIME_END2-5=Comenzando en 10 segundos.
+# Brok
+PC08B_TILLENDTIME_END2-6=Graff...
+# Brok
+PC08B_TILLENDTIME_END2-7=En ese caso... nunca nos conoceremos...
+# Brok
+PC08B_TILLENDTIME_END2-8=Ni tampoco podremos pasar cinco años juntos...
+# Brok
+PC08B_TILLENDTIME_END2-9=Porque habrás reescrito la historia o algo así...
+# Brok
+PC08B_TILLENDTIME_END2-10=Quiero que sepas...
+# Brok
+PC08B_TILLENDTIME_END2-11=que te amo, pequeño.
+# Graff
+PC08B_TILLENDTIME_END2-12=Yo también te amo.
+# Graff
+PC08B_TILLENDTIME_END2-13=Y... siempre te recordaré...
+# Various
+PC08B_TILLENDTIME_END2-14=3...
+# Various
+PC08B_TILLENDTIME_END2-15=2...
+# Various
+PC08B_TILLENDTIME_END2-16=1...
+# Graff
+PC08B_TILLENDTIME_END2-17=Siempre...
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END3-1=Se ha ido...
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END3B-1=¿...?
+# Brok
+PC08B_TILLENDTIME_END3B-2=Eso es...
+# Brok
+PC08B_TILLENDTIME_END3B-3=el regalo que le di...
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END3C-1=...
+# Brok
+PC08B_TILLENDTIME_END3C-2=Adiós, muchacho...
+# Brok
+PC08B_TILLENDTIME_END3C-3=Espero que crees una vida mejor para ti.
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END4-1=A partir de ese día...,
+# Brok
+PC08B_TILLENDTIME_END4-2=esperé...
+# Brok
+PC08B_TILLENDTIME_END4-3=y esperé...
+# Brok
+PC08B_TILLENDTIME_END4-4=Aferrándome a la esperanza de que Graff estuviera bien...
+# Brok
+PC08B_TILLENDTIME_END4-5=Donde quiera que estuviera...
+# Brok
+PC08B_TILLENDTIME_END4-6=Pero...
+# Brok
+PC08B_TILLENDTIME_END4-7=nunca volvió.
+# Brok
+PC08B_TILLENDTIME_END4-8=Quizás algo salió mal.
+# Brok
+PC08B_TILLENDTIME_END4-9=O quizás creó una línea temporal diferente.
+# Brok
+PC08B_TILLENDTIME_END4-10=Lo que implicaría... que ya no existe en esta.
+# Brok
+PC08B_TILLENDTIME_END4-11=No puedo explicar por qué...
+# Brok
+PC08B_TILLENDTIME_END4-12=No importa cuánto lo intente...
+# Brok
+PC08B_TILLENDTIME_END4-13=No puedo comprender cómo esta máquina llegó a existir.
+# Brok
+PC08B_TILLENDTIME_END4-14=Solo sé que existió.
+# Brok
+PC08B_TILLENDTIME_END4-15=Nadie parece recordar a Graff...
+# Brok
+PC08B_TILLENDTIME_END4-16=Y yo siento que perdí todos los recuerdos sobre otra persona cercana.
+# Brok
+PC08B_TILLENDTIME_END4-17=A veces...
+# Brok
+PC08B_TILLENDTIME_END4-18=me pregunto si no fue todo mi imaginación...
+# Brok
+PC08B_TILLENDTIME_END4-19=Pero mi corazón sabe la verdad.
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END4C-1=Continué con mi vida.
+# Brok
+PC08B_TILLENDTIME_END4C-2=Tenía que hacerlo.
+# Brok
+PC08B_TILLENDTIME_END4C-3=Dee, el Doctor Gherkin y Wes.
+# Brok
+PC08B_TILLENDTIME_END4C-4=Todos desaparecieron.
+# Brok
+PC08B_TILLENDTIME_END4C-5=Me temo que sucumbieron a un terrible destino... y yo no estuve ahí.
+# Brok
+PC08B_TILLENDTIME_END4C-6=Además, nunca conseguí las respuestas que buscaba en mi investigación.
+# Brok
+PC08B_TILLENDTIME_END4C-7=La escasez de píldoras se extendió.
+# Brok
+PC08B_TILLENDTIME_END4C-8=En un periodo corto de tiempo...
+# Brok
+PC08B_TILLENDTIME_END4C-9=todo el mundo intentó entrar en el Domo, o mudarse a otras tierras...
+# Brok
+PC08B_TILLENDTIME_END4C-10=Pero todos fracasaron.
+# Brok
+PC08B_TILLENDTIME_END4C-11=No había esperanza.
+# Brok
+PC08B_TILLENDTIME_END4C-12=Al final, me volví una de las pocas personas que vivían en los Slums.
+# Brok
+PC08B_TILLENDTIME_END4C-13=Aunque las posibilidades de que volviera fueran mínimas...
+# Brok
+PC08B_TILLENDTIME_END4C-14=intenté hacer de este sitio abandonado, uno mejor para él... y para todos.
+# Brok
+PC08B_TILLENDTIME_END4C-15=Y lo conseguí...
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END4E-1=Había llegado al crepúsculo de mi vida.
+# Brok
+PC08B_TILLENDTIME_END4E-2=Nunca tuve hijos. Y aun así, me sentía realizado.
+# Brok
+PC08B_TILLENDTIME_END4E-3=Porque ayudé a reconstruir la ciudad lo mejor que pude.
+# Brok
+PC08B_TILLENDTIME_END4E-4=Había llegado la hora de mi descanso eterno.
+# Brok
+PC08B_TILLENDTIME_END4E-5=Y justo entonces...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff finally comes back and sees Brok very old on a rocking chair
+# *****************************************************************
+# Unknown
+PC08B_TILLENDTIME_END5-1=3085 D.R.
+#----------------------------------------------------
+# Graff
+PC08B_TILLENDTIME_END6-1=¡...!
+# Graff
+PC08B_TILLENDTIME_END6-2=¿Brok?...
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END7-1=¿Eres real?
+# Brok
+PC08B_TILLENDTIME_END7-2=O... ¿he muerto?
+# Graff
+PC08B_TILLENDTIME_END7-3=Lo soy...
+# Graff
+PC08B_TILLENDTIME_END7-4=Estoy aquí.
+# Graff
+PC08B_TILLENDTIME_END7-5=Eres...
+# Graff
+PC08B_TILLENDTIME_END7-6=Eres tan...
+# Brok
+PC08B_TILLENDTIME_END7-7=¿Viejo?...
+# Brok
+PC08B_TILLENDTIME_END7-8=Sí...
+# Brok
+PC08B_TILLENDTIME_END7-9=Llegas tarde, hijo...
+# Brok
+PC08B_TILLENDTIME_END7-10=He estado esperando... Esperando desde hace mucho...
+# Graff
+PC08B_TILLENDTIME_END7-11=Lo intenté...
+# Graff
+PC08B_TILLENDTIME_END7-12=Pero la máquina...
+# Graff
+PC08B_TILLENDTIME_END7-13=fallaba...
+# Brok
+PC08B_TILLENDTIME_END7-14=Lo sabía...
+# Brok
+PC08B_TILLENDTIME_END7-15=Sabía que nuestro pasado juntos no era fruto de mi imaginación.
+# Graff
+PC08B_TILLENDTIME_END7-16=... ¿Qué es este lugar?
+# Brok
+PC08B_TILLENDTIME_END7-17=Tu nuevo hogar.
+# Graff
+PC08B_TILLENDTIME_END7-18=¿Los Slums?
+# Brok
+PC08B_TILLENDTIME_END7-19=Ya no los llamamos así.
+# Brok
+PC08B_TILLENDTIME_END7-20=Ya son seguros.
+# Brok
+PC08B_TILLENDTIME_END7-21=Lo construí para ti y para todos.
+# Graff
+PC08B_TILLENDTIME_END7-22=...
+# Brok
+PC08B_TILLENDTIME_END7-23=Cuéntamelo todo.
+# Graff
+PC08B_TILLENDTIME_END7-24=Bueno... 
+# Graff
+PC08B_TILLENDTIME_END7-25=Conocí a mamá...
+# Graff
+PC08B_TILLENDTIME_END7-26=Pero... no la pude salvar...
+# Graff
+PC08B_TILLENDTIME_END7-27=No pude salvar a nadie...
+# Brok
+PC08B_TILLENDTIME_END7-28=Está bien...
+# Brok
+#Brok gives his pendant
+PC08B_TILLENDTIME_END7-29=Ten...
+#----------------------------------------------------
+# Graff
+PC08B_TILLENDTIME_END8-1=Este colgante...
+# Brok
+PC08B_TILLENDTIME_END8-2=Te dije que te lo daría algún día...
+# Brok
+PC08B_TILLENDTIME_END8-3=Ya es tuyo.
+# Graff
+PC08B_TILLENDTIME_END8-4=... ¡Ya sé!
+# Graff
+PC08B_TILLENDTIME_END8-5=Con esto...
+# Graff
+PC08B_TILLENDTIME_END8-6=¡Puedo usarlo para restaurar la energía de la máquina y volver!...
+# Graff
+PC08B_TILLENDTIME_END8-7=¡Ven conmigo!
+# Brok
+PC08B_TILLENDTIME_END8-8=No.
+# Brok
+PC08B_TILLENDTIME_END8-9=Olvida la máquina.
+# Brok
+PC08B_TILLENDTIME_END8-10=Yo ya he vivido mi vida.
+# Brok
+PC08B_TILLENDTIME_END8-11=Ahora es hora de que tú vivas la tuya.
+# Graff
+PC08B_TILLENDTIME_END8-12=...
+# Brok
+PC08B_TILLENDTIME_END8-13=¡Mírame!
+# Brok
+PC08B_TILLENDTIME_END8-14=Antes tan valiente, y ahora...
+# Graff
+PC08B_TILLENDTIME_END8-15=No es justo...
+# Brok
+PC08B_TILLENDTIME_END8-16=La vida no es justa. Pensaba que ya te habrías dado cuenta.
+# Brok
+PC08B_TILLENDTIME_END8-17=Lo único que podemos hacer es esforzarnos para mejorarla.
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END9-1=¡Ja, ja, ja!
+# Graff
+PC08B_TILLENDTIME_END9-2=¿De qué te ríes?
+# Brok
+PC08B_TILLENDTIME_END9-3=Durante todo este tiempo... mantuve la esperanza de que volvieras...
+# Brok
+PC08B_TILLENDTIME_END9-4=Y ya estaba empezando a aceptar que nunca pasaría...
+# Brok
+PC08B_TILLENDTIME_END9-5=¡Y aquí estás!
+# Brok
+PC08B_TILLENDTIME_END9-6=Me alegra verte de nuevo...
+# Brok
+PC08B_TILLENDTIME_END9-7=Una última vez.
+# Graff
+PC08B_TILLENDTIME_END9-8=¡No digas eso!
+# Graff
+PC08B_TILLENDTIME_END9-9=Aún te queda tiempo.
+# Brok
+PC08B_TILLENDTIME_END9-10=Ojalá...
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END10-1=Por favor, no te vayas...
+# Graff
+PC08B_TILLENDTIME_END10-2=No lo haré.
+# Graff
+PC08B_TILLENDTIME_END10-3=Me quedaré aquí.
+# Graff
+PC08B_TILLENDTIME_END10-4=Hasta el final...
+# Graff
+PC08B_TILLENDTIME_END10-5=contigo.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Final player decision - Brok enters the machine = Canonical Ending
+# *****************************************************************
+# Brok
+PC08B_STORY320_ENTER-1=Tengo que hacer esto...
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_ENTER2-1=Oh, cielos, menos mal que no tengo claustrofobia.
+# Brok
+PC08B_STORY320_ENTER2-2=Shay, confío en ti...
+# Brok
+PC08B_STORY320_ENTER2-3=Vámonos.
+# Various
+PC08B_STORY320_ENTER2-4=Comenzando en 3...
+# Various
+PC08B_STORY320_ENTER2-5=2...
+# Various
+PC08B_STORY320_ENTER2-6=1...
+#----------------------------------------------------
+# Bolt
+PC08B_STORY320_ENTER3-1=¡Adiós - Amo Brok!
+# Bolt
+PC08B_STORY320_ENTER3-2=Cuando - vuelva.
+# Bolt
+PC08B_STORY320_ENTER3-3=Por favor.
+# Bolt
+PC08B_STORY320_ENTER3-4=Recuérdeme.
+#----------------------------------------------------
+# Shay
+PC08B_STORY320_SHAYENDTEXT-1=Buena suerte, Brok...
+# Shay
+PC08B_STORY320_SHAYENDTEXT-2=Sálvame...
+# Shay
+PC08B_STORY320_SHAYENDTEXT-3=Sálvanos a todos...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Final player decision - Brok refuses to enter
+# *****************************************************************
+# Brok
+PC08B_STORY320_CANNOT1-1=...
+# Brok
+PC08B_STORY320_CANNOT1-2=Esto es...
+# Brok
+PC08B_STORY320_CANNOT1-3=Yo...
+# Brok
+PC08B_STORY320_CANNOT1-4=¡No puedo...!
+#----------------------------------------------------
+# Bolt
+PC08B_STORY320_CANNOT1B-1=¿Amo Brok?...
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_CANNOT2-1=Shay...
+# Brok
+PC08B_STORY320_CANNOT2-2=Lo siento.
+# Brok
+PC08B_STORY320_CANNOT2-3=No importa lo desesperado que esté...
+# Brok
+PC08B_STORY320_CANNOT2-4=Tengo que enfrentarme a la realidad.
+# Brok
+PC08B_STORY320_CANNOT2-5=Lo hecho, hecho está.
+# Brok
+PC08B_STORY320_CANNOT2-6=No puedo hacer nada.
+# Brok
+PC08B_STORY320_CANNOT2-7=No debo volver atrás.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - "Cannot" ending - Brok comes back with Graff, only to find out the machine is gone
+# *****************************************************************
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-1=Así que, ¿qué querías enseñarme?
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-2=¡...!
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-3=¿La... máquina?
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-4=¿Dónde se fue?
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-5=¿Qué máquina?
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-6=¡Una máquina del tiempo!
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-7=O quizás, una máquina para borrar recuerdos...
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-8=Claro...
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-9=¡Tiene que estar por algún lado!
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-10=...
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-11=Creo que lo has soñado.
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-12=¡Imposible!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When Brok calls Shay in the same room
+# *****************************************************************
+# Brok
+PC08B_CALL_SHAY-1=¡Hola!
+# Shay
+PC08B_CALL_SHAY-2=¡Tierra llamando a Brok! ¡Tenemos un problema!
+# Brok
+PC08B_CALL_SHAY-3=¿A qué te refieres?
+# Shay
+PC08B_CALL_SHAY-4=Ni siquiera a mí se me ocurriría llamar por teléfono a alguien que está en la misma habitación.
+# Brok
+PC08B_CALL_SHAY-5=¡Pensé que no te darías cuenta!
+# Shay
+PC08B_CALL_SHAY-6=Bueno, notaría ese olor tuyo desde kilómetros de distancia.
+# Shay
+PC08B_CALL_SHAY-7=¡Eso sí, no es un mal olor!
+# Brok
+PC08B_CALL_SHAY-8=¿Eh...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Finding material in her garage
+# *****************************************************************
+# Brok
+PC08B_MATERIAL1-1=¡Hey! Ahí hay algo de lo que estabas buscando. ¡Justo ahí!
+# Shay
+PC08B_MATERIAL1-2=¿Estás seguro?
+# Brok
+PC08B_MATERIAL1-3=Eso es lo que dice tu cacharro.
+#----------------------------------------------------
+# Brok
+PC08B_MATERIAL1B-1=¿No te parece que esto es un mando de cristal?
+# Shay
+PC08B_MATERIAL1B-2=¡Qué idiota! Se me olvidó comprobar si tenía uno en el taller.
+# Brok
+PC08B_MATERIAL1B-3=Bueno, aun así me vas a pagar por esto, ¿no?
+# Shay
+PC08B_MATERIAL1B-4=...
+# Brok
+PC08B_MATERIAL1B-5=(¡Cómo odio cuando no me responde!)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Premature ending - when in day 3 we solve the puzzle too early and enter her garage, it shouldn't happen
+# *****************************************************************
+# Brok
+PC08B_PREMATURE_ENDING-1=¡Hey!
+# Brok
+PC08B_PREMATURE_ENDING-2=¿Qué es ese huevo?
+# Shay
+PC08B_PREMATURE_ENDING-3=¡...!
+# Shay
+PC08B_PREMATURE_ENDING-4=¡Brok...!
+# Shay
+PC08B_PREMATURE_ENDING-5=No...
+# Shay
+PC08B_PREMATURE_ENDING-6=¡No deberías estar aquí todavía!
+# Shay
+PC08B_PREMATURE_ENDING-7=¡¿Cómo has conseguido...?!
+# Brok
+PC08B_PREMATURE_ENDING-8=Bueno...
+# Brok
+PC08B_PREMATURE_ENDING-9=Simplemente he probado combinaciones al azar en la puerta, y...
+# Shay
+PC08B_PREMATURE_ENDING-10=Aww, eso me pasa por no usar una simple cerradura.
+#----------------------------------------------------
+# Brok
+PC08B_PREMATURE_ENDING2-1=...
+# Brok
+PC08B_PREMATURE_ENDING2-2=¿Un terremoto...?
+# Shay
+PC08B_PREMATURE_ENDING2-3=¡Tienes que irte! ¡AHORA!
+# Brok
+PC08B_PREMATURE_ENDING2-4=¿Eh...?
+# Shay
+PC08B_PREMATURE_ENDING2-5=Oh, no...
+# Shay
+PC08B_PREMATURE_ENDING2-6=¡Demasiado tarde!
+#----------------------------------------------------
+# Brok
+#Back to Canonical Ending - after Brok enters the machine he ends up in a strange landscape - as if he's dreaming
+PC08B_CANONICAL_SUBENDING1-1=Uh...
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1B-1=¿Qué es este lugar?
+# Brok
+PC08B_CANONICAL_SUBENDING1B-2=Esto no es el interior de la máquina, ¿verdad...?
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1C-1=¿Pero qué...?
+# Brok
+#A shadowy doppleganger of Brok appears before his eyes
+PC08B_CANONICAL_SUBENDING1C-2="No prestes atención a mi apariencia."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-3=¿Quién eres?
+# Brok
+PC08B_CANONICAL_SUBENDING1C-4="Un vestigio de tu último paso por aquí."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-5=¿Último... paso...?
+# Brok
+PC08B_CANONICAL_SUBENDING1C-6="Este es el lugar donde todos los recuerdos se comparten."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-7=¿Mis recuerdos?
+# Brok
+PC08B_CANONICAL_SUBENDING1C-8="No solo los tuyos."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-9="El universo entero."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-10=Espera...
+# Brok
+PC08B_CANONICAL_SUBENDING1C-11=¿Ya he estado aquí?...
+# Brok
+PC08B_CANONICAL_SUBENDING1C-12="Pensaba que ya te habrías dado cuenta."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-13="Todo ha pasado ya."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-14="Todo volverá a pasar."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-15=¿Eso significa...
+# Brok
+PC08B_CANONICAL_SUBENDING1C-16=que no tengo libre albedrío?...
+# Brok
+PC08B_CANONICAL_SUBENDING1C-17=Y que... ¿realmente hice que desterraran a los Squealers? Pero...
+# Brok
+PC08B_CANONICAL_SUBENDING1C-18=yo no quiero eso.
+# Brok
+PC08B_CANONICAL_SUBENDING1C-19=Si vuelvo...
+# Brok
+PC08B_CANONICAL_SUBENDING1C-20=¿puedo cambiar cualquier cosa?
+# Brok
+PC08B_CANONICAL_SUBENDING1C-21="Puedes."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-22="Pero hazte la pregunta correcta."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-23="¿Quieres?"
+# Brok
+PC08B_CANONICAL_SUBENDING1C-24=...
+# Brok
+PC08B_CANONICAL_SUBENDING1C-25=Sí.
+# Brok
+PC08B_CANONICAL_SUBENDING1C-26=Quiero cambiar el destino.
+# Brok
+PC08B_CANONICAL_SUBENDING1C-27=No por mí. Sino por todos mis seres queridos.
+# Brok
+PC08B_CANONICAL_SUBENDING1C-28="Entonces ve."
+# Brok
+PC08B_CANONICAL_SUBENDING1C-29="Entra en el vacío."
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1D-1="No temas."
+# Brok
+PC08B_CANONICAL_SUBENDING1D-2="Será un arduo camino."
+# Brok
+PC08B_CANONICAL_SUBENDING1D-3="Pero al final"
+# Brok
+PC08B_CANONICAL_SUBENDING1D-4="todo estará bien."
+# Brok
+PC08B_CANONICAL_SUBENDING1D-5=¿Cómo puedo confiar en ti?
+# Brok
+PC08B_CANONICAL_SUBENDING1D-6="Confía en ti mismo."
+# Brok
+PC08B_CANONICAL_SUBENDING1D-7="Todo depende de ti."
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1E-1=Gracias, pasado yo, o quienquiera que seas.
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1F-1=Bien...
+# Brok
+PC08B_CANONICAL_SUBENDING1F-2=Ya es hora.
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BROKENDTEXT-1=En ese momento...
+# Brok
+PC08B_STORY320_BROKENDTEXT-2=sentí que mi consciencia se desvanecía.
+# Brok
+PC08B_STORY320_BROKENDTEXT-3=Me deslizaba hacia lo desconocido.
+# Brok
+PC08B_STORY320_BROKENDTEXT-4=Hacia el vacío.
+# Brok
+PC08B_STORY320_BROKENDTEXT-5=Mi última investigación había concluido.
+# Brok
+PC08B_STORY320_BROKENDTEXT-6=Durante los últimos tres días...
+# Brok
+PC08B_STORY320_BROKENDTEXT-7=había defendido a los Slums de una letal amenaza.
+# Brok
+PC08B_STORY320_BROKENDTEXT-8=Pero...
+# Brok
+PC08B_STORY320_BROKENDTEXT-9=no pude escapar de mi propio destino.
+# Brok
+PC08B_STORY320_BROKENDTEXT-10=Muchos pensamientos pasaron por mi mente.
+# Brok
+PC08B_STORY320_BROKENDTEXT-11=Intenté concentrarme en uno solo.
+# Brok
+PC08B_STORY320_BROKENDTEXT-12=No me importaba que mi propia existencia se borrara del tiempo y espacio.
+# Brok
+PC08B_STORY320_BROKENDTEXT-13=No me importaba que olvidara todos mis recuerdos.
+# Brok
+PC08B_STORY320_BROKENDTEXT-14=Solo una cosa importaba...
+# Brok
+PC08B_STORY320_BROKENDTEXT-15=Tú.
+# Brok
+PC08B_STORY320_BROKENDTEXT-16=Todos estos años...
+# Brok
+PC08B_STORY320_BROKENDTEXT-17=estuviste ahí.
+# Brok
+PC08B_STORY320_BROKENDTEXT-18=No habría tenido la fuerza de continuar sin ti.
+# Brok
+PC08B_STORY320_BROKENDTEXT-19=Es por eso...
+# Brok
+PC08B_STORY320_BROKENDTEXT-20=que pienso enmendar mis errores.
+# Brok
+PC08B_STORY320_BROKENDTEXT-21=Lo arreglaré todo por ti.
+# Brok
+PC08B_STORY320_BROKENDTEXT-22=No me rendiré, por muy difícil que sea.
+# Brok
+PC08B_STORY320_BROKENDTEXT-23=Mientras siga vivo...
+# Brok
+PC08B_STORY320_BROKENDTEXT-24=buscaré la manera.
+# Brok
+PC08B_STORY320_BROKENDTEXT-25=Reescribiré la historia por ti.
+# Brok
+PC08B_STORY320_BROKENDTEXT-26=Porque...
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BROKENDTEXT2-1=...te amo, Graff.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Walk on desk
+# *****************************************************************
+# Shay
+PC08B_WALKDESK1-1=Entrenando en mi escritorio otra vez, ¿eh?
+# Shay
+PC08B_WALKDESK1-2=¡Vamos! ¡Ve a la otra habitación y entrena para la pelea de esta noche!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to hit Shay
+# *****************************************************************
+# Shay
+PC08B_HITSHAY1-1=Me decepcionas, Brok. Tus intentos son infructuosos.
+#----------------------------------------------------
+# Shay
+PC08B_HITSHAY2-1=Mi hardware y yo misma estamos protegidos. Mientras siga aquí, nada puede herirme.
+# Shay
+PC08B_HITSHAY2-2=Aunque me duele en el corazón. ¿Qué he hecho yo para merecer esto?
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_DEAD1-1=¡Argh! ¡Mira lo que has hecho!
+# Shay
+PC08B_BOLT_DEAD1-2=¡Ahora tendré que empezar de cero!
+#----------------------------------------------------
+# Brok
+PC08B_BOLT_DEAD2-1=Erm...
+# Shay
+PC08B_BOLT_DEAD2-2=¡VETE!
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_DEADBIS-1=¡Genial! ¡Ha funcionado!
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_DEAD_BACK-1=¡Tienes suerte! Ese fue un arreglo fácil.
+#----------------------------------------------------
+# Bolt
+PC08B_BOLT_HITEND1-1=¡Amo Brok!...
+#----------------------------------------------------
+# Bolt
+PC08B_BOLT_HITEND2-1=¡Por favor no!...
+#----------------------------------------------------
+# Unknown
+COOP_PC08B_SHAY1-1=Shay, la misteriosa Shay...
+# Unknown
+COOP_PC08B_SHAY1-2=Ojalá pudiera leerte la mente.
+#----------------------------------------------------
+# Unknown
+COOP_PC08B_BOLT1-1=¡Vaya, qué robot más antiguo!
+# Unknown
+COOP_PC08B_BOLT1-2=Hecho a medida, además. Nunca había visto este modelo antes.
+#----------------------------------------------------
+# Unknown
+COOP_PC08B_END1-1=Nuestro viaje termina aquí.
+# Unknown
+COOP_PC08B_END1-2=Espero haberte sido útil.
+# Unknown
+COOP_PC08B_END1-3=Siempre seré parte de ti... ¡sin importar la dimensión en la que vivamos!

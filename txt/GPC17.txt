@@ -1,0 +1,1277 @@
+﻿#-------------------------------
+#=MUSEUM
+#-------------------------------
+
+#----------------------
+#= Arrive
+#----------------------
+ID=PC17_ARRIVE1
+T=Not many visitors around...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+CONTEXT=Graff & Ott arrive at the museum for their last trial
+
+T=Obviously.
+W=OTT
+C2A=WONDER
+
+T=What do you mean?
+W=GRAFF
+C1A=THINK
+
+
+T=It's an open day. Drumers don't like getting near Slumers very much.
+W=OTT
+
+T=On the other hand, Slumers are more concerned about daily survival than culture.
+W=OTT
+C2A=NORMAL
+
+T=You got a point...
+W=GRAFF
+
+#----------------------
+#= Expo Skull man
+#----------------------
+ID=PC17_EXPOSKULL1
+T=That's a weird skull...
+W=GRAFF
+A=TURN
+CONTEXT=Exploring the room
+
+T=Ears on the side instead of on top? No pointed canine teeth?
+W=GRAFF
+A=TURN
+
+T=What kind of species is that?
+W=GRAFF
+A=THINK
+
+T="This skull is dated -1,000,000 B.R. This stands for "Before Rebirth." 
+W=GRAFF
+A=MEH
+
+T="It was found at the bottom of the ocean floor, which explains its exceptional preservation state for its age."
+W=GRAFF
+A=MEH
+
+T="It belongs to an extinct species we've called Tamed Earthian. We've determined that this one was bipedal unlike most ancient animals.
+W=GRAFF
+A=MEH
+
+T="The representations below seem to have been handmade by this species."
+W=GRAFF
+A=MEH
+
+T="If confirmed, Tamed Earthian would be one of our first ancestors featuring creative skills and a surprising intelligence, though much less developed than our own."
+W=GRAFF
+A=MEH
+TEN=PC17_EXPO_ACCESS
+
+#----------------------
+ID=PC17_EXPOSKULL2
+T=-1,000,000 B.R. 
+W=GRAFF
+A=MEH
+
+T=Those creatures looked scary... Some wild beasts, for sure.
+W=GRAFF
+A=OPPOSITE
+TEN=PC17_EXPO_ACCESS
+
+#--------------------------
+#= Phone
+#--------------------------
+ID=PC17_PHONE1
+T=What a strange device...
+W=GRAFF
+A=THINK
+
+T=Kinda looks like my phone but even mine doesn't look that ancient.
+W=GRAFF
+A=THINK
+
+T=What's it doing on the floor? That must be an exposition piece!
+W=GRAFF
+A=TURN
+TEN=PC17_PHONE_PICK
+
+#----------------------
+#= Expo 1 phone stand
+#----------------------
+ID=PC17_PHONESTAND1
+T="A primitive mirror, blackened by the passage of time."
+W=GRAFF
+A=MEH
+
+T="Its compact form factor made it easy for Tamed Earthians to carry around everywhere."
+W=GRAFF
+A=THINK
+
+T="More specifically, the presence of countless bacteria indicates that they stored it inside their rectum."
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_PHONESTAND_PUT
+T=It fits! And... displays something?...
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_PHONESTAND_AFTER
+T=This displays a weird symbol.
+W=GRAFF
+A=MEH
+TEN=PC17_PHONESTAND_ACCESS
+
+#----------------------
+ID=PC17_PHONESTAND2
+T=I believe something is supposed to stand here.
+W=GRAFF
+A=THINK
+
+#--------------------------
+#= Expo 8 Pollution pill
+#--------------------------
+ID=PC17_SIGN_TEXT1
+T="This medal commemorates the invention of the Toxout pill (also known as Daily Pill and Anti-pollution Pill) in 385 After Rebirth."
+W=GRAFF
+A=MEH
+
+T="It counters the effects of the permanent Haze in Atlasia. However, the protective effect only lasts for one day."
+W=GRAFF
+A=MEH
+
+T="History has forgotten the name of our benefactor, yet this breakthrough discovery allowed the expansion of the modern world outside the boundaries of the Dome."
+W=GRAFF
+A=MEH
+
+T=Whoever wrote this knows nothing... Living outside the Dome is far from a nice thing.
+W=GRAFF
+A=OPPOSITE
+
+#--------------------------
+ID=PC17_SCREW1
+T=Isn't this screw a bit... off?
+W=GRAFF
+A=THINK
+TEN=PC17_TRIANGLESCREW_ACCESS
+
+#--------------------------
+ID=PC17_SIGN_SCREW_SCREWDRIVER
+T=...Wait, what?...
+W=GRAFF
+A=STUPID
+
+T=My screwdriver won't do... The tip is different.
+W=GRAFF
+A=STUPID
+
+T=Obviously... That's some ancient panel here.
+W=GRAFF
+A=STUPID
+
+T=There must be another way...
+W=GRAFF
+A=THINK
+
+
+#--------------------------
+ID=PC17_SIGN_SCREW_OTHERS
+T=It won't fit... That screw is triangular shaped.
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_SCREW_TRIANGLEPRINT
+T=...
+W=GRAFF
+A=MEH
+
+T=Yes! The tip of that pyramid fits the screw!
+W=GRAFF
+A=HAPPY
+
+T=And...
+W=GRAFF
+A=HAPPY
+
+T=There ya go!
+W=GRAFF
+A=FRIENDLY
+TEN=PC17_SCREW_OK
+
+#--------------------------
+ID=PC17_SIGN_DATE1
+T=385 A.R... We've been using it for such a long time?...
+W=GRAFF
+A=THINK
+TEN=PC17_SIGN_ACCESS
+
+#--------------------------
+ID=PC17_SIGN_PILL1
+T=Looks like some ancient model of our Toxout pill.
+W=GRAFF
+A=MEH
+TEN=PC17_SIGNPILL_ACCESS
+
+#--------------------------
+#= Expo 2 Untail
+#--------------------------
+ID=PC17_EXPOUNTAIL1
+T="Statues, feathered tails and stones dated -200,000 B.R."
+W=GRAFF
+A=MEH
+
+T="These distinct features make them, without any shadow of a doubt, the first traces of The Untail worshipping."
+W=GRAFF
+A=MEH
+TEN=PC17_EXPOUNTAIL_ACCESS
+
+#--------------------------
+ID=PC17_EXPOUNTAIL2
+T=Hmm... Three stands, two statues.
+W=GRAFF
+A=THINK
+COMM=Stands as in "slots for making the statues stand"
+TEN=PC17_EXPOUNTAIL_ACCESS
+
+#--------------------------
+ID=PC17_STATUETTE_PUT
+T=The statuette fits in the slot!
+W=GRAFF
+C1=GRAFF
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=Good job, Graff! I think you unlocked something!
+W=OTT
+C2A=HAPPY
+
+T=Hmm... A symbol? That's all?
+W=GRAFF
+C1A=THINK
+
+T=Must be important.
+W=OTT
+C2A=WONDER
+TEN=PC17_EXPOUNTAIL_ACCESS
+
+#--------------------------
+#= Piano
+#--------------------------
+ID=PC17_PIANO1
+T=Weird. The keys are all aligned on this keyboard. What's it for?
+W=GRAFF
+A=THINK
+COMM=We talk about piano keys here - not door keys!
+
+T=I should take a closer look.
+W=GRAFF
+A=THINK
+TEN=PC17_PIANO_CLOSEUP
+
+#--------------------------
+ID=PC17_PIANO_FOUND1
+T=What was that?...
+W=OTT
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=I've solved the final riddle!
+W=GRAFF
+C1A=HAPPY
+
+T=Congrats, Graff! I knew you could do it!
+W=OTT
+C2A=HAPPY
+
+T=Back to the Consc', shall we?
+W=OTT
+TEN=PC17_FIREWORKS_DESTROY
+
+T=Okay... Let's go.
+W=GRAFF
+C1A=DISDAIN
+TEN=CH5_MUSEUM_OVER_FADEOUT
+
+
+#--------------------------
+ID=PC17_PIANO_KEYMISSING1
+T=I can't press here... The key is missing!
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_PIANO_TEXT1
+T="Starting from the 9th century, technology got progressive evolutions. Entertainment became an important part of society, as evidenced by all the cultural objects retrieved."
+W=GRAFF
+A=THINK
+
+T="Here is an ancient musical instrument we've carefully restored according to the materials found in direct proximity of its remains."
+W=GRAFF
+A=THINK
+TEN=PC17_PIANO_TEXT_ACCESS
+
+#--------------------------
+ID=PC17_PIANO_KEYFIXED1
+T=There you go! A crystal-clear key!
+W=GRAFF
+A=FRIENDLY
+
+#--------------------------
+#= Expo 6 Dome
+#--------------------------
+ID=PC17_EXPODOME1
+T=Oh, I don't need any explanation for this one!
+W=GRAFF
+A=COCKY
+
+T=That's Rebirth Day. The great turning point after the catastrophe which ended up polluting the whole planet!
+W=GRAFF
+A=COCKY
+
+T=If it wasn't for the Dome, humanity could've gone extinct.
+W=GRAFF
+A=COCKY
+TEN=PC17_EXPODOME_ACCESS
+
+#--------------------------
+ID=PC17_EXPODOME2
+T="A couple of heroes used all-new technology to prevent the living world from being wiped out."
+W=GRAFF
+A=THINK
+
+T="In particular, they built a Dome prototype in order to house survivors and, hopefully, prosper again in safety."
+W=GRAFF
+A=THINK
+
+T="This event closed off contact between all continents and civilizations on Earth, which are still limited to this day."
+W=GRAFF
+A=THINK
+TEN=PC17_EXPODOME_CHECK
+
+#--------------------------
+ID=PC17_EXPODOME2B
+T=That's odd. This is an exposition on the construction of the Dome but I don't see one.
+W=GRAFF
+A=THINK
+TEN=PC17_EXPODOME_ACCESS
+
+#--------------------------
+ID=PC17_EXPODOME_PUTDOME
+T=This should be good enough to replace the missing Dome.
+W=GRAFF
+A=MEH
+
+T=...Hey! Something appeared on it!
+W=GRAFF
+A=SURPRISED
+TEN=PC17_EXPODOME_APPEARS
+
+#--------------------------
+ID=PC17_EXPODOME_FULLCIRCLEPRINT
+T=Good idea but... A sphere would never stand here.
+W=GRAFF
+A=MEH
+
+
+#--------------------------
+#= Expo 7 Stone growth
+#--------------------------
+ID=PC17_STONEGROWTH1
+T="Population is estimated to have grown from 50,000 on Rebirth Day to 1 million by 172 A.R."
+W=GRAFF
+A=MEH
+
+T="Yet a Dome's housing capacity is supposed to be 200,000 max."
+W=GRAFF
+A=MEH
+
+T="Therefore, restrictions on the number of births had to be put into place."
+W=GRAFF
+A=MEH
+TEN=PC17_STONE_ACCESS
+
+#--------------------------
+ID=PC17_STONEGROWTH2
+T=Restrictions which we still suffer to this day...
+W=GRAFF
+A=THINK
+TEN=PC17_STONE_ACCESS
+
+
+
+#--------------------------
+#= Parchment space
+#--------------------------
+ID=PC17_PARCHMENTSPACE1
+T=The color of the panel is different here. Was something there before?
+W=GRAFF
+A=THINK
+TEN=PC17_SPACE_ACCESS
+
+#--------------------------
+ID=PC17_PARCHMENTSPACE_PLACE
+T=Just as I thought. It fits perfectly!
+W=GRAFF
+A=FRIENDLY
+TEN=PC17_PARCHMENTSPACE_ACCESS
+
+#--------------------------
+ID=PC17_PARCHMENTSPACE_OK
+T=Just a symbol...?
+W=GRAFF
+A=THINK
+TEN=PC17_PARCHMENTSPACE_ACCESS
+
+
+#--------------------------
+#= Parchment
+#--------------------------
+ID=PC17_PARCHMENT1
+T=Some old paper.
+W=GRAFF
+A=MEH
+TEN=PC17_PARCHMENT_PICK
+
+#--------------------------
+ID=PC17_PARCHMENT1B
+T=With nothing on it except for one weird symbol. What's the point?...
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_PARCHMENT_TOOFAR
+T=Is that a paper? I can't reach it from here.
+W=GRAFF
+A=THINK
+
+#--------------------------
+#= Printer
+#--------------------------
+ID=PC17_PRINTER1
+T="An antique game dated 1600 A.R., entirely mechanical. Play it and win a special prize!"
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_PRINTERWON1
+T=Did I win?... I think I heard something fall.
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_PRINTERWON2
+T=Something fell in that drawer.
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_PRINTERWON_ALREADY
+T=...?
+W=GRAFF
+A=MEH
+
+T=Nothing?...
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_PRINTER_TAKEBEFORE
+T=Hmm... That thing won't turn on. What's wrong?
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_DRAWER1
+T=Looks like a drawer but I can't see any way to open it...
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_DRAWER_PICK1
+T=Cool! Here's my reward!
+W=GRAFF
+A=FRIENDLY
+TEN=PC17_DRAWER_GET
+
+#--------------------------
+ID=PC17_DRAWER_PICK2
+T=Another reward for me!
+W=GRAFF
+A=FRIENDLY
+TEN=PC17_DRAWER_GET
+
+#--------------------------
+ID=PC17_DRAWER_PICK3
+T=I didn't have this one yet!
+W=GRAFF
+A=SURPRISED
+TEN=PC17_DRAWER_GET
+
+#--------------------------
+ID=PC17_DRAWER_PICK4
+T=Do I have the whole collection, now?
+W=GRAFF
+A=HAPPY
+TEN=PC17_DRAWER_GET
+
+#--------------------------
+#= Exposition revolt
+#--------------------------
+ID=PC17_EXPOREVOLT1
+T=Some history about the revolt...
+W=GRAFF
+A=MEH
+TEN=PC17_EXPOREVOLT_READCHOICE
+
+#--------------------------
+ID=PC17_EXPOREVOLT_READ
+T="Five centuries after the Rebirth Day, tensions increased between the descendants of nomads living outside the Dome and the domists living inside."
+W=GRAFF
+A=MEH
+
+T="Even though their ancestors made their own decision to live outside, the nomads began to claim the same possessions and rights as domists, resulting in free trade circulation between the two sides."
+W=GRAFF
+A=MEH
+
+T="A revolt turned into a war which claimed hundreds of thousands of victims."
+W=GRAFF
+A=MEH
+
+T="It is during this conflict that domists named the outside people 'Slumers', while they respectively started calling people living under the Dome 'Drumers.'"
+W=GRAFF
+A=MEH
+
+T="The overwhelming violence of those revolts still resonates to this day. No further rebellion involving all united Slumers ever happened again."
+W=GRAFF
+A=MEH
+TEN=PC17_EXPO2_ACCESS
+
+#-----------------------------
+#= Exposition technological
+#-----------------------------
+ID=PC17_EXPOTECHNOLOGICAL1
+T=A hologram with a timeline mentioning the major inventions of our civilization.
+W=GRAFF
+A=THINK
+
+T="Usage of potentially polluting power sources was forbidden until the 25th century. This hampered the capacity of scientists to improve our everyday life dramatically."
+W=GRAFF
+A=MEH
+
+T="We're all living in a golden era with visible technological improvements over less than one generation!"
+W=GRAFF
+A=MEH
+
+T=Oh, sure... For Drumers. Conditions for us Slumers don't really advance at the same rate.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SAD
+
+T=You took the words right out of my mouth.
+W=GRAFF
+C1A=TURN
+
+#--------------------------
+ID=PC17_EXPOTECHNOLOGICAL2
+T=Pipe-Mail, Propulsed Bicycles, Temperature Regulating Clothes, E-Physical Libraries...
+W=GRAFF
+A=MEH
+
+T=I don't have access to any of the listed inventions.
+W=GRAFF
+A=DISDAIN
+
+
+#--------------------------
+#= Stele ratio birth
+#--------------------------
+ID=PC17_STELE1
+T="The current sex ratio at birth for females is 31%. Archeological research suggests this hasn't always been the case but it is the unequivocal result of our evolution."
+W=GRAFF
+A=THINK
+
+T=Who knows... Maybe nature did it itself to prevent disproportionate population growth.
+W=GRAFF
+A=TURN
+
+T="In the past centuries, males and females fought for their rights. In our society, females are deemed too valuable to do trivial jobs and it's their duty to carry and take care of children."
+W=GRAFF
+A=THINK
+
+T=Again, they forget to mention these rules don't apply in the Slums... but the low female birth ratio does.
+W=OTT
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=OPPOSITE
+
+T=Yeah. It's not like there are many women roaming around the Slums.
+W=GRAFF
+A=MEH
+
+T=And the few I've ever met are way too busy making a living to worry about offspring.
+W=GRAFF
+A=TURN
+TEN=PC17_STELE_ACCESS
+
+#--------------------------
+ID=PC17_STELE2
+T=If we don't get to be Drumers, we can pretty much forget getting married someday.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=OTT
+C2A=NORMAL
+
+T=Well, in my case...
+W=OTT
+C2A=NORMAL
+
+T=It's not like... anyone... Would pick me anyway.
+W=OTT
+C2A=SAD
+
+T=Why do you say that?
+W=GRAFF
+C1A=THINK
+
+T=You know why. I'm an ugly mixed breed.
+W=OTT
+C2A=SAD
+
+T=No, you're not!
+W=GRAFF
+C1A=ANGRY
+
+T=I mean... Yes, you're a mixed breed and I understand it's difficult but you're a really nice person.
+W=GRAFF
+C1A=TURN
+
+T=And the best friend I could ever hope for!
+W=GRAFF
+C1A=FRIENDLY
+
+T=I'm certain you'll find someone.
+W=GRAFF
+C1A=HAPPY
+
+T=You think so?...
+W=OTT
+C2A=SURPRISED
+
+T=...
+W=OTT
+C2A=SURPRISED
+
+T=What about you?
+W=OTT
+C2A=NORMAL
+
+T=Me?...
+W=GRAFF
+C1A=TURN
+
+T=Yeah. When you get to be a Drumer...
+W=OTT
+
+T=Will you try having a family?
+W=OTT
+
+T=I... didn't really think about it...
+W=GRAFF
+C1A=OPPOSITE
+
+T=My parentage is so broken that I can't even consider passing this failure onto any children.
+W=GRAFF
+C1A=MEH
+
+T=Besides...
+W=GRAFF
+
+T=Besides what?
+W=OTT
+C2A=SAD
+
+T=Nothing...
+W=GRAFF
+C1A=TURN
+TEN=PC17_STELE_ACCESS
+
+
+#--------------------------
+ID=PC17_STELE_HOLE1
+T=Hey, look! There's some keyhole here!
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=You're right! I think something's written inside...
+W=OTT
+C2A=HAPPY
+3
+T="CC. Under STU seat."
+W=OTT
+C2A=WONDER
+COMM=This means : Consciousness Center, under Stubot seat. We're meant to look for the key under Stubot's seat inside the school.
+
+T=Strange. You think this may be a clue?
+W=GRAFF
+C1A=THINK
+
+T=Might be...
+W=OTT
+
+#--------------------------
+ID=PC17_STELE_HOLE2
+T=A keyhole with the words "CC. Under STU seat."
+W=GRAFF
+A=MEH
+
+T=Hmm...
+W=GRAFF
+A=THINK
+
+
+#--------------------------
+ID=PC17_STELE_HOLE_KEY
+T=Two-to-one this fits into the keyhole...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+TEN=PC17_STELE_HOLE_KEY_ACTION
+
+T=Yup! Now what am I supposed to do?
+W=GRAFF
+C1A=MEH
+
+T=Hmm... I believe those ancient keys are meant to be turned one side or another.
+W=OTT
+C2A=WONDER
+TEN=PC17_STELE_HOLE_KEY_ACTION
+
+T=I'll try...
+W=GRAFF
+C1A=MEH
+TEE=PC17_STELE_HOLE_PANEL
+
+T=Look! A panel moved right below the lock!
+W=OTT
+C2A=SURPRISED
+
+T=Does this help us?...
+W=GRAFF
+C1A=THINK
+
+T=I guess it's supposed to...
+W=OTT
+C2A=NORMAL
+TEN=PC17_STELEHOLE_ACCESS
+
+#--------------------------
+ID=PC17_STELE_HOLE_DONE
+T=No point messing with that anymore.
+W=GRAFF
+A=MEH
+TEN=PC17_STELEHOLE_ACCESS
+
+
+#--------------------------
+#= Robots
+#--------------------------
+ID=PC17_TRIBOT_BEFORE1
+T=What's this Tribot doing here?
+W=OTT
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=I wonder...
+W=GRAFF
+C1A=THINK
+
+T=Maybe to handle security?
+W=GRAFF
+C1A=MEH
+
+#--------------------------
+ID=PC17_TRIBOT1
+T=Those Tribots are scaring me... I better look away.
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_TRIBOT_GUARD1
+T=No reaction...
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_TRIBOT_OOPS
+T=Uh oh!
+W=GRAFF
+A=GASP
+TEN=PC17_TRIBOT_KILLGRAFF2
+
+
+#--------------------------
+ID=PC17_TRIBOT_GRAFFATTACKED1
+T=Oh no! Graff, look out!!!
+W=OTT
+C1=GRAFF
+C1A=SURPRISED
+C2=OTT
+C2A=SURPRISED
+NB=1
+D=90
+COMM=If Graff makes a mistake with the piano, there is a fight with bots
+
+T=What?!...
+W=GRAFF
+D=60
+TEN=PC17_PIANO_STARTFIGHT
+
+
+#--------------------------
+ID=PC17_TRIBOT_GRAFFATTACKED2
+T=Pheew... I'm glad you made it!
+W=OTT
+C1=GRAFF
+C1A=CHOKE
+C2=OTT
+C2A=NORMAL
+
+T=I'm sorry I couldn't help... I'm totally worthless in those situations.
+W=OTT
+C2A=SAD
+
+T=Don't worry about it. But... I guess this was a warning.
+W=GRAFF
+C1A=HAPPY
+
+T=Yeah. I think we've made a mistake.
+W=OTT
+C2A=WONDER
+
+T=Gotta be more careful!
+W=OTT
+C2A=NORMAL
+TEN=PC17_TRIBOT_ENDFIGHT
+
+
+#--------------------------
+ID=PC17_TRIBOT_GRAFFATTACKEDAGAIN
+T=Crap! I did a blunder again!...
+W=GRAFF
+A=STUPID
+
+T=...
+W=GRAFF
+A=STUPID
+TEN=PC17_PIANO_ENEMYCOMES2A
+
+T=At least it seems they ran out of robots to attack this t...
+W=GRAFF
+A=THINK
+SKIPEND=1
+TEN=PC17_PIANO_ENEMYCOMES2
+
+
+#--------------------------
+ID=PC17_TRIBOT_GRAFFATTACKEDAGAIN2
+T=Oh boy...
+W=GRAFF
+A=TURN
+TEN=PC17_PIANO_ENEMYCOMES2
+
+
+
+#--------------------------
+#= Lasers
+#--------------------------
+ID=PC17_LASERS_JUMP1
+T=Graff! Are you okay?...
+W=OTT
+C1=GRAFF
+C1A=CHOKE
+C2=OTT
+C2A=SURPRISED
+
+T=No way...
+W=GRAFF
+C1A=TORN
+
+
+#--------------------------
+ID=PC17_LASERS_JUMP2
+T=I need to think this over...
+W=GRAFF
+A=THINK
+
+#--------------------------
+#= Sign button
+#--------------------------
+ID=PC17_SIGNBUTTON1
+T=A sign... or a button?
+W=GRAFF
+A=THINK
+
+T=In any case, I can't reach it.
+W=GRAFF
+A=DISDAIN
+
+#--------------------------
+ID=PC17_SIGNBUTTON2
+T=I'm pretty sure this button deactivates the lasers, so... I don't need it anymore.
+W=GRAFF
+A=MEH
+
+
+#--------------------------
+#= Lasers control
+#--------------------------
+ID=PC17_LASERSCONTROL1
+T=I bet this controls the lasers...
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_LASERSCONTROL2
+T=It's pointless now.
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_LASERSCONTROLHIT1
+T=Graff... Are you sure this is the right way?...
+W=OTT
+C2=OTT
+C2A=WONDER
+NB=1
+D=120
+
+#--------------------------
+ID=PC17_LASERSCONTROLHIT2
+T=See?... It worked!
+W=GRAFF
+C1=GRAFF
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=Yes but...
+W=OTT
+C2A=WONDER
+
+T=No buts. Let's continue.
+W=GRAFF
+C1A=TURN
+
+#--------------------------
+ID=PC17_LASERSCONTROL_SCREWDRIVER
+T=There doesn't seem to be any screw.
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_LASERSCONTROL_OTHERS
+T=I can't quite move it.
+W=GRAFF
+A=MEH
+
+T=Maybe I need to opt for a more brutal way.
+W=GRAFF
+A=THINK
+
+#--------------------------
+#= Autarchism day
+#--------------------------
+ID=PC17_EXPOAUTARCHISM1
+T="3026 A.R. Tredecium 5th : The Autarchism day."
+W=GRAFF
+A=MEH
+TEN=PC17_EXPOAUTARCHISM_READCHOICE
+
+#--------------------------
+ID=PC17_EXPOAUTARCHISM_READ
+T="Over the history, several political models have succeeded one another."
+W=GRAFF
+A=MEH
+
+T="The longest running, a direct democracy involving several countries, was phased out after years of skepticism and a deep economic crisis."
+W=GRAFF
+
+T="Resistance came from political grounds, who didn't want to believe there could be a better model."
+W=GRAFF
+
+T="However, the vast majority of the Atlasia citizens refused those debates."
+W=GRAFF
+
+T="They believed politics to take a growing part of their free time and judged themselves unable and unwilling to decide."
+W=GRAFF
+
+T="A census survey was conducted, which clearly showed that political talks are harmful for humans' health."
+W=GRAFF
+
+T="It was then decided that politics would be banned altogether."
+W=GRAFF
+
+T="A self-proclaimed Government now makes the decisions for everyone."
+W=GRAFF
+
+T="This way, no citizen has to worry about bigger state decisions in their day-to-day life."
+W=GRAFF
+
+T="In addition to this, Atlasia became independent, cutting all remaining ties with nearby countries."
+W=GRAFF
+
+T="Atlasia citizens can focus on their own priorities. This freedom is what gave it the name Autarchism."
+W=GRAFF
+
+
+#--------------------------
+#= Break wall part
+#--------------------------
+ID=PC17_BREAKWALL1
+T=An X on this wall...
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_BREAKWALL_HIT
+T=Woah!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SURPRISED
+
+T=I didn't expect you to hit the wall!
+W=OTT
+A=SURPRISED
+
+T=Erm... Well, it worked.
+W=GRAFF
+A=TURN
+TEN=PC17_BREAKWALL_ACCESS
+
+#--------------------------
+ID=PC17_MARK_OTHERS
+T=...
+W=GRAFF
+A=MEH
+
+T=I'm trying to dig a hole but... I'd need something better.
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_BREAKWALL_AFTER
+T=Haven't I seen this symbol somewhere else?...
+W=GRAFF
+A=THINK
+TEN=PC17_BREAKWALL_ACCESS
+
+
+#--------------------------
+#= Expo recent
+#--------------------------
+ID=PC17_EXPORECENTA1
+T="Another major event happened during Autarchism Day, which was occulted by many news reportings."
+W=GRAFF
+A=MEH
+
+T="The newly formed government almost ended prematurely when a group from the Slums, called 'Squealers,' attempted a coup."
+W=GRAFF
+A=MEH
+
+T="They claimed power in order to protest against the promise that robots would take a major role in the future, leaving many out of jobs."
+W=GRAFF
+A=MEH
+
+T="This attempt failed however, and the new government quickly banned Squealers out of the country with the help of the militaries to avoid any further attempts."
+W=GRAFF
+A=MEH
+
+T=That was quite a harsh decision but in retrospect... I can't really blame them. Those Squealers are quite the scum of our w...
+W=GRAFF
+A=MEH
+SKIPEND=1
+TEN=PC17_EXPORECENT_MUSICFADE
+
+T=Wait... That picture...
+W=GRAFF
+A=THINK
+TEN=PC17_EXPORECENT_PICTURE
+
+#--------------------------
+ID=PC17_EXPORECENTA1B
+T=...
+W=GRAFF
+A=THINK
+
+T=Must be my imagination.
+W=GRAFF
+A=MEH
+TEN=PC17_EXPORECENT_PICTURE_BACK
+
+#--------------------------
+ID=PC17_CRACK1
+T=I wonder what caused this crack...
+W=GRAFF
+A=THINK
+
+#--------------------------
+ID=PC17_CRACK_OTHERS
+T=Better not make it worse...
+W=GRAFF
+A=MEH
+
+#--------------------------
+ID=PC17_EXPORECENTB1
+T="3030 A.R. Lorgust 9th : The Blackout."
+W=GRAFF
+A=THINK
+
+T="Unprecedented in modern history, a power failure occurred that day for a few minutes."
+W=GRAFF
+
+T="This caused a huge number of problems all over the country."
+W=GRAFF
+
+T="The Dome got cut off, which could have had dramatic effects if not for the military Tribots repelling Slumers from trying to enter the Drums."
+W=GRAFF
+
+T="In addition, the Triweb went down. All citizens suffered from unpredictable situations ranging from getting stuck inside elevators to falling Aircars."
+W=GRAFF
+
+T="A few of those accidents led to Drum citizen casualties, who shall always be remembered."
+W=GRAFF
+
+T=A few accidents...
+W=GRAFF
+A=THINK
+
+T=Mom's name is listed below...
+W=GRAFF
+A=SAD
+TEN=PC17_EXPO3_ACCESS
+
+#--------------------------
+ID=PC17_EXPORECENTB2
+T=I'd rather not read this again.
+W=GRAFF
+A=MEH
+TEN=PC17_EXPO3_ACCESS
+
+
+
+#--------------------------
+#= Talk to OTT
+#--------------------------
+ID=PC17_OTT_KLAY1
+T=Have you noticed Klay isn't here?...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=WONDER
+CONTEXT=Talk to Ott
+
+T=Yeah... I hope we're doing the right thing.
+W=OTT
+C2A=NORMAL
+
+TEN=CH5_OTT_CHOICES
+IT=1
+
+#--------------------------
+ID=PC17_OTT_KLAYKILLED1
+T=I was almost wondering where Klay is... I still can't realize...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Do you know anything, Graff?
+W=OTT
+C2A=WONDER
+
+T=...Not really...
+W=GRAFF
+C1A=TURN
+
+T=Hmm?...
+W=OTT
+C2A=WONDER
+
+T=Graff... Is there something you're not telling me?...
+W=OTT
+C2A=SAD
+
+T=Sorry... It's just...
+W=GRAFF
+C1A=TORN
+
+T=We gotta focus.
+W=GRAFF
+C1A=TURN
+
+T=(Sigh) You must be right...
+W=OTT
+C2A=DISAPPOINTED
+TEN=CH5_OTT_CHOICES
+IT=1
+
+#--------------------------
+ID=PC17_OTT_WELCOME1
+T=Hey.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+TEN=CH5_OTT_CHOICES
+IT=1
+
+--------------------------
+ID=PC17_MIRROR1
+T=Hmm...
+W=GRAFF
+A=THINK
+
+--------------------------
+ID=PC17_STAND_EMPTY1
+T=Empty.
+W=GRAFF
+A=THINK
+
+T=Below is written...
+W=GRAFF
+A=THINK
+TEN=PC17_PHONESTAND1
+
+--------------------------
+ID=COOP_PC17_TRIBOT1
+T=Do. Not. Touch.

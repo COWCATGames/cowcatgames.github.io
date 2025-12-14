@@ -1,0 +1,906 @@
+﻿#-------------------------------
+#=SHAY GARAGE
+#-------------------------------
+
+#----------------------
+#= Camera
+#----------------------
+ID=PC08C_CAMERA1
+T=I wish I wasn't being spied on... Even here.
+W=BROK
+A=ANGRY
+CONTEXT=Room interactions
+
+T=It's for your own safety. What if something happens to you while you're in there?
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Don't you get life readings and all kinds of figures?
+W=BROK
+A=WONDER
+
+T=Yeah but I can't take my eyes off of you.
+
+T=Very funny.
+W=BROK
+A=ANGRY
+
+
+#----------------------
+#= Egg
+#----------------------
+ID=PC08C_EGG1
+T=Hey! What's that?
+W=BROK
+A=WONDER
+
+T=Some kind of giant egg?
+W=BROK
+
+T=Tut tut tut! No touching!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=But I just...
+W=BROK
+A=HAPPY
+
+T=Nope!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Can you at least tell me what's in there?
+W=BROK
+A=WONDER
+
+T=It's...a secret!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Oooh... A new invention?
+W=BROK
+A=READY
+
+T=Yeah! I promise, this will change your life!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Let me guess! That's a...
+W=BROK
+
+T=Money making machine!
+W=BROK
+A=MOCK
+
+T=Not even close.
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Then a... Erm...
+W=BROK
+A=THINK
+
+T=Take your time!
+BNAME=SHAY
+BVOICE=SHAY
+TEN=PC08C_EGG_HINTS
+
+
+
+#----------------------
+ID=PC08C_EGG2
+T=I'm always excited to discover Shay's newest inventions!
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+#= Poster
+#----------------------
+ID=PC08C_POSTER1
+T=I know that guy! Sharpteeth the Thief!
+W=BROK
+A=READY
+COMM=That name isn't important.
+
+T=He was a popular fighter who retired a few years ago. One of my idols!
+W=BROK
+
+T=Hmmm... Shay might have a soft spot for him?
+W=BROK
+A=THINK
+
+
+
+#----------------------
+#= Bed
+#----------------------
+ID=PC08C_BED_GOODHEALTH1
+T=I can recover my health after a fight here!
+W=BROK
+A=ALRIGHT
+
+T=You seem well enough. No time for slacking off!
+COMM=This bed talks in informal ways to Brok
+
+T=Yeah. I forgot that bed could talk.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC08C_BED_GOODHEALTH2
+T=I don't feel tired right now, and I've got a lot on my plate!
+W=BROK
+A=HAPPY
+
+T=You're right! Go to work, you lazy butt!
+BVOICE=VARIOUS
+
+#----------------------
+ID=PC08C_BED_ASK1
+T=It's 5 Unis for a rest.
+BVOICE=VARIOUS
+
+T=I should have guessed... It's Shay's creation after all.
+W=BROK
+A=ANGRY
+TEN=PC08C_BED_CHOICE
+
+
+#----------------------
+ID=PC08C_BED_ASK2
+T=5 Unis, please!
+BVOICE=VARIOUS
+TEN=PC08C_BED_CHOICE
+
+
+#----------------------
+ID=PC08C_BED_ASK3
+T=5 Unis! Come on, bring the moolah!
+BVOICE=VARIOUS
+TEN=PC08C_BED_CHOICE
+
+
+#----------------------
+ID=PC08C_BED_NO1
+T=No money for you.
+W=BROK
+A=ANGRY
+
+T=Hope you enjoy the pain then.
+BVOICE=VARIOUS
+
+
+#----------------------
+ID=PC08C_BED_BADHEALTH1
+T=I'm exhausted... I'll take a little nap.
+W=BROK
+A=TIRED
+TEN=PC08C_BED_ASK
+
+
+#----------------------
+ID=PC08C_BED_BADHEALTHB1
+T=...Oh, man! Look at the time! I'd better get moving!
+W=BROK
+A=STUPID
+TEN=PC08C_BED_DO4
+
+T=See ya!
+BVOICE=VARIOUS
+
+
+#----------------------
+ID=PC08C_BED_BADHEALTH2
+T=You're in bad shape! Rest on me!
+BVOICE=VARIOUS
+
+T=Erm...
+W=BROK
+A=TIRED
+TEN=PC08C_BED_ASK
+
+#----------------------
+ID=PC08C_BED_BADHEALTHB2
+T=Come on! Wake up!
+BVOICE=VARIOUS
+
+T=(Yawn) Just one more minute...
+W=BROK
+A=STUPID
+
+T=Nope! Rise and shine, sleeping beauty!
+BVOICE=VARIOUS
+
+T=Alright, alright...
+W=BROK
+A=TIRED
+TEN=PC08C_BED_DO4
+
+
+#----------------------
+#= Cabin
+#----------------------
+ID=PC08C_CABIN_TRAINING_CHOICE1
+T=Hmm... Should I do a little training?
+W=BROK
+A=THINK
+TEN=PC08C_CABIN_TRAINING_CHOICE
+
+
+#----------------------
+ID=PC08C_CABIN_NOPE
+T=Not the right time...
+W=BROK
+A=OPPOSITE
+
+
+#-----------------------------------------
+#= Lose during training
+#-----------------------------------------
+ID=PC08C_LOSTTRAINING1
+T=Ooof...
+W=BROK
+A=STUPID
+CONTEXT=Losing after training in VR
+
+#-----------------------------------------
+ID=PC08C_LOSTTRAINING1B
+T=Good thing this wasn't the night fight... Or I'd be a goner.
+W=BROK
+A=TIRED
+
+T=Gotta be more careful!
+W=BROK
+TEN=PC08C_CABIN_EXIT
+
+#-----------------------------------------
+ID=PC08C_LOSTTRAINING2
+T=Awww...
+W=BROK
+A=DISAPPOINTED
+
+#-----------------------------------------
+ID=PC08C_LOSTTRAINING2B
+T=I wish the pain was virtual too!
+W=BROK
+A=TIRED
+TEN=PC08C_CABIN_EXIT
+
+#------------------------------------------------------------------------------------
+
+#----------------------
+#= Story 120
+#----------------------
+ID=PC08C_REST1
+T=Sleep time is over!
+BNAME=SHAY
+BVOICE=SHAY
+CONTEXT=Bed
+
+T=Hop, hop!
+
+T=Aww...I barely closed my eyes...
+W=BROK
+A=STUPID
+
+T=No complaining! Just fighting!
+
+T=Mrrph...
+W=BROK
+A=ANGRY
+TEN=PC08C_WAKE_GO_CABIN
+
+
+#-----------------------------------------
+#= After virtual arena (day 1)
+#-----------------------------------------
+#-----------------------------------------
+ID=PC08C_NOFIGHT
+T=Well... Looks like I lost.
+W=BROK
+A=MAYBE
+CONTEXT=Losing the day 1 night fight
+
+T=Of course you did! What were you thinking?!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=This is a virtual space. Maybe that wasn't even a woman!
+
+T=Is it possible?
+W=BROK
+A=WONDER
+
+T=Well...
+
+T=Technically anything's possible. But for a while now there have been security measures to ensure fighters don't conceal their identity.
+
+T=Even for a lawless area, this caused too many problems.
+
+T=So the answer is no.
+W=BROK
+C1A=ALRIGHT
+
+T=Don't change the subject, mister! You lost some precious money there.
+
+T=I'd rather lose some bucks than my ethics.
+W=BROK
+C1A=MEH
+
+T=Let's forget this.
+TEN=PC08C_LEAVEROOM
+
+
+#-----------------------------------------
+ID=PC08C_GIVEUP1
+T=(Sigh)
+BNAME=SHAY
+BVOICE=SHAY
+TEN=PC08C_LEAVEROOM
+
+
+#-----------------------------------------
+ID=PC08C_WON1
+T=Done!
+W=BROK
+A=HAPPY
+CONTEXT=Winning the day 1 night fight
+
+T=No one can withstand my fists of steel!
+W=BROK
+A=COCKY
+
+T=Congrats, Bro'!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=That should cover some of your debt!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Why do you always have to ruin the fun?
+W=BROK
+A=TIRED
+TEN=PC08C_LEAVEROOM
+
+
+#-----------------------------------------
+ID=PC08C_DAY2_WONPUNCH1
+T=Great job, Bro'!
+BNAME=SHAY
+BVOICE=SHAY
+CONTEXT=Win day 2 after punching R.J. but Brok kinda regrets it
+
+T=I did what I had to...
+W=BROK
+A=MAYBE
+
+T=You knew that bear?
+
+T=Don't worry, I can confirm he's still alive.
+
+T=Yeah but...
+W=BROK
+
+T=Sorry Bro'. No time for getting lost in your thoughts.
+TEN=PC08C_DAY2_AFTER
+IT=1
+
+#-----------------------------------------
+ID=PC08C_DAY2_WONTALK1
+T=Great job, Bro'!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=...
+W=BROK
+A=DISAPPOINTED
+
+T=Shay...
+W=BROK
+
+T=Am I a bad person?
+W=BROK
+A=DOWN
+
+T=I keep ruining other people's lives.
+W=BROK
+
+T=I promise everyone I'll fix things but...
+W=BROK
+
+T=Everytime I try... I fail.
+W=BROK
+A=MAYBE
+
+T=Don't you worry.
+
+T=Soon you'll have a chance to change everything.
+
+T=I will?
+W=BROK
+A=THINK
+TEN=PC08C_DAY2_AFTER
+IT=1
+
+#-----------------------------------------
+ID=PC08C_DAY2_LOST1
+T=Sorry I lost...
+W=BROK
+A=STUPID
+CONTEXT=Losing the day 2 night fight
+
+T=I just... couldn't focus.
+W=BROK
+
+T=Normally I would scold you, but I haven't got the time for it.
+BNAME=SHAY
+BVOICE=SHAY
+
+TEN=PC08C_DAY2_AFTER
+IT=1
+
+#-----------------------------------------
+ID=PC08C_DAY2_GIVEUP1
+T=What was that about?! You almost won!
+BNAME=SHAY
+BVOICE=SHAY
+CONTEXT=Giving up the day 2 night fight
+
+T=This was the only way... I didn't want to...
+W=BROK
+A=MAYBE
+
+T=No! There's always another way!
+
+T=You just made him even angrier! And me too!
+
+T=...
+W=BROK
+A=DOWN
+
+T=Sorry...
+W=BROK
+
+T=...
+
+T=It's okay. Soon it won't matter anymore.
+TEN=PC08C_DAY2_AFTER
+IT=1
+
+#-----------------------------------------
+ID=PC08C_DAY2_AFTER
+T=I hope you enjoyed your last VR night fight.
+BNAME=SHAY
+BVOICE=SHAY
+
+T=The last?
+W=BROK
+A=THINK
+
+T=Yeah. I'll be unreachable tomorrow, and after that...
+
+T=I've got no idea what will happen.
+
+T=You're scaring me...
+W=BROK
+A=WONDER
+TEN=PC08C_LEAVEROOM
+
+
+#----------------------
+#= Drawer
+#----------------------
+ID=PC08C_DRAWER1
+T=That's a weird drawer...
+W=BROK
+A=THINK
+CONTEXT=Interact with mysterious locked drawer
+
+T=And it's locked.
+W=BROK
+TEN=PC08C_DRAWER_BACK
+
+#----------------------
+ID=PC08C_DRAWER2
+T=I wonder if...
+W=BROK
+A=WONDER
+
+T=Hey! No touching!
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Private stuff?
+W=BROK
+
+T=Why do you think it's locked?
+
+T=Now I'm even more curious.
+W=BROK
+A=MEH
+TEN=PC08C_DRAWER_BACK
+
+#----------------------
+ID=PC08C_DRAWER3
+T=Apparently it's protected by a passcode.
+W=BROK
+A=MEH
+TEN=PC08C_DRAWER_BACK
+
+
+#----------------------
+ID=PC08C_DRAWER_WRONG1
+T=Wrong code?
+W=BROK
+A=WONDER
+
+
+#----------------------
+ID=PC08C_DRAWER_WRONG2
+T=Nope...
+W=BROK
+A=MAYBE
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 02/08/2019
+###############################################
+
+
+#----------------------
+#= Camera
+#----------------------
+ID=PC08C_AIRGLIDER1
+T=Looks old...
+W=BROK
+A=WONDER
+CONTEXT=Easter egg interaction
+
+T=It is. Some kind of ancient air glider I got out of the lake.
+BNAME=SHAY
+BVOICE=SHAY
+
+T=An air glider...? Can you really picture anyone standing on that?
+W=BROK
+
+T=I do! The shape is aerodynamic.
+
+T=Who knows! Someday we may all travel with that!
+
+T=Yeah... When bears fly!
+W=BROK
+A=COCKY
+
+
+#----------------------
+#= Bed
+#----------------------
+ID=PC08C_BED_HIT1
+T=How dare you! After everything I've done for you!
+CONTEXT=Hit the bed
+BVOICE=VARIOUS
+NB=1
+D=120
+
+#----------------------
+ID=PC08C_BED_HIT2
+T=Next time you lay on me, my pillow shall suffocate you to death!
+BVOICE=VARIOUS
+NB=1
+D=120
+
+
+#----------------------
+ID=PC08C_BED_WALK1
+T=This ain't the proper way to use me, ya know.
+BVOICE=VARIOUS
+NB=1
+D=60
+CONTEXT=Walk on bed
+
+#----------------------
+#= Cabin
+#----------------------
+ID=PC08C_CABIN_HIT1
+T=Truly solid.
+W=BROK
+A=READY
+NB=1
+D=60
+CONTEXT=Hit the cabin
+
+T=Otherwise I would have already smashed it to smithereens when I'm fighting in there.
+W=BROK
+A=HAPPY
+NB=1
+D=120
+
+
+#----------------------
+#= Egg
+#----------------------
+ID=PC08C_EGG_HIT1
+T=Whatever this is... I can't break it!
+W=BROK
+A=OPPOSITE
+NB=1
+D=60
+
+T=And my hands hurt...
+W=BROK
+A=STUPID
+D=60
+
+
+
+
+
+#----------------------
+#= Drawer
+#----------------------
+ID=PC08C_DRAWER_UNLOCK
+T=It works?!
+W=BROK
+A=SURPRISED
+
+T=Huh. A small diary?
+W=BROK
+A=THINK
+TEN=PC08C_DRAWER_CHOICE
+
+
+#----------------------
+ID=PC08C_DRAWER_DIARY1
+T=How did this all begin? I have no idea.
+TEXTONLY=1
+
+T=He came to me when I needed it the most. If not for him, I wouldn't be here now.
+TEXTONLY=1
+
+T=And now I need to ensure everything repeats again.
+TEXTONLY=1
+
+TEN=PC08C_TURNPAGE1
+
+#----------------------
+ID=PC08C_DRAWER_DIARY2
+T=I try my best to hide it but...
+TEXTONLY=1
+
+T=I'm afraid. What happens if I fail?
+TEXTONLY=1
+TEN=PC08C_TURNPAGE2
+
+#----------------------
+ID=PC08C_DRAWER_DIARY3
+T=He will think that I invented this machine.
+TEXTONLY=1
+
+T=No. I merely copied it.
+TEXTONLY=1
+
+T=Who did, then? Me from another timeline?
+TEXTONLY=1
+
+T=I might never find out.
+TEXTONLY=1
+TEN=PC08C_TURNPAGE3
+
+#----------------------
+ID=PC08C_DRAWER_DIARY4
+T=Today... It happened. Just like he told me.
+TEXTONLY=1
+
+T=It was... horrible...
+TEXTONLY=1
+
+T=Could I have prevented it?
+TEXTONLY=1
+
+T=Technically I did. I used the machine. A tiny jump back in time. Not much power needed.
+TEXTONLY=1
+
+T=It worked. But... 
+TEXTONLY=1
+
+T=This vision... will haunt me forever...
+TEXTONLY=1
+TEN=PC08C_TURNPAGE4
+
+#----------------------
+ID=PC08C_DRAWER_DIARY5
+T=The only thing that matters is the present. The current timeline... Right?...
+TEXTONLY=1
+
+T=I have to keep moving forward.
+TEXTONLY=1
+TEN=PC08C_TURNPAGE5
+
+#----------------------
+ID=PC08C_DRAWER_DIARY6
+T=I've been focused on this goal for so long. Practically all my life.
+TEXTONLY=1
+
+T=What a life... I barely had time for... living. (way to go girl, best writer ever)
+TEXTONLY=1
+TEN=PC08C_TURNPAGE6
+
+#----------------------
+ID=PC08C_DRAWER_DIARY7
+T=Sometimes I wonder if all this is worth it.
+TEXTONLY=1
+
+T=If I'm worth all that pain... That I'm going to cause him...
+TEXTONLY=1
+
+T=If he knew...
+TEXTONLY=1
+
+T=He would never forgive me.
+TEXTONLY=1
+TEN=PC08C_TURNPAGE7
+
+#----------------------
+ID=PC08C_DRAWER_DIARY8
+T=I know all the story thus far.
+TEXTONLY=1
+
+T=Everything he told me. How ironic!
+TEXTONLY=1
+
+T=After tomorrow? A blank.
+TEXTONLY=1
+
+T=I'll be like everyone. Scared of the future.
+TEXTONLY=1
+TEN=PC08C_TURNPAGE8
+
+#----------------------
+ID=PC08C_DRAWER_DIARY9
+T=He doesn't suspect a thing. No matter how many times I put him on the right track. What an idiot!
+TEXTONLY=1
+
+T=Such a lovable idiot...
+TEXTONLY=1
+
+T=I could never tell him. Not because I might cease to exist.
+TEXTONLY=1
+
+T=I... just can't. I don't have his courage.
+TEXTONLY=1
+
+T=I'm weak. And that's why I don't care that I'll never get to be with him. I don't deserve it.
+TEXTONLY=1
+TEN=PC08C_TURNPAGE9
+
+#----------------------
+ID=PC08C_DRAWER_DIARY10
+T=I only care about his well being and...
+TEXTONLY=1
+
+T=...
+TEXTONLY=1
+
+T=Who am I kidding...
+TEXTONLY=1
+
+T=I'm egotistical.
+TEXTONLY=1
+TEN=PC08C_TURNPAGE10
+
+#----------------------
+ID=PC08C_DRAWER_DIARY11
+T=If only... Someday...
+TEXTONLY=1
+
+T=You'll take me in your arms.
+TEXTONLY=1
+
+T=The world can end.
+TEXTONLY=1
+
+T=Nothing else matters to me.
+TEXTONLY=1
+TEN=PC08C_SHAYARRIVE
+
+
+#----------------------
+ID=PC08C_DRAWER_ENDING1
+T=Bro'...
+W=SHAY
+C1=BROK
+C1A=HEARTBROKEN
+C2=SHAY
+C2A=SURPRISED
+
+T=How did you?...
+W=SHAY
+
+T=...
+W=BROK
+
+T=I understand now.
+W=BROK
+
+T=It doesn't matter!
+W=SHAY
+
+T=You need to leave!
+W=SHAY
+
+T=Why?
+W=BROK
+C1A=MAYBE
+
+T=It wasn't supposed to happen that way!
+W=SHAY
+
+T=You shouldn't have read this!
+W=SHAY
+
+T=I... I'm not supposed to see you!
+W=SHAY
+
+T=Relax. Everything's fine.
+W=BROK
+
+T=No, it's not!
+W=SHAY
+C2A=ANGRY
+TEN=PC08C_GARAGEDISAPPEARS
+
+T=Years of preparation and you ruin everything at the last min...
+W=SHAY
+SKIPEND=1
+
+T=Oh no!... It's happening!
+W=SHAY
+C2A=SURPRISED
+T=Get out of here! Now!
+W=SHAY
+
+T=No.
+W=BROK
+
+T=But...!
+W=SHAY
+C2A=SAD
+
+T=I won't.
+W=BROK
+
+T=I'm sick of running away.
+W=BROK
+
+T=I don't wanna be alone. Never again.
+W=BROK
+C1A=HEARTBROKEN
+
+T=No matter what happens.
+W=BROK
+
+T=I'll stay here...
+W=BROK
+
+T=With you.
+W=BROK
+TEN=PC08C_BROKHUG1
+
+
+
+#----------------------
+ID=PC08C_DRAWER_ENDING2
+T=Brok...
+BNAME=SHAY
+BVOICE=SHAY
+TEN=PC08C_BROKHUG3
+
+#----------------------
+ID=PC08C_DRAWER_ENDING3
+T=Thank you.
+BNAME=SHAY
+BVOICE=SHAY
+TEN=PC08C_BROKHUG7
+

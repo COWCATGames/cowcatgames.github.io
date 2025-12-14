@@ -1,0 +1,1104 @@
+#-------------------------------
+#=PHARMACY
+#-------------------------------
+
+#---------------------------
+#= Entering the first time
+#---------------------------
+ID=PC04C_ENTER1
+T=...
+W=BROK
+A=DOWN
+CONTEXT=Entering pharmacy
+
+T=This place kinda reminds me of Lia's laboratory...
+W=BROK
+A=DOWN
+
+T=She used to be so happy working on those medications...
+W=BROK
+A=DOWN
+
+T=But the past is the past. Let's not dwell on that.
+W=BROK
+A=READY
+TEN=PC04C_AUDIOCHECK
+
+#---------------------------
+#= Entrance
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME1
+T=Welcome!
+BVOICE=VARIOUS
+
+T=It seems you put on some weight since your last visit in our stores.
+
+T=Right. Muscles.
+W=BROK
+A=COCKY
+
+T=This is incorrect. We've detected a 35% fat increase.
+
+T=Mrrrph...
+W=BROK
+A=ANGRY
+
+T=We've highlighted our special recommendations for you!
+TEN=PC04C_AUDIO_ANIM_STOP
+
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME2
+T=Welcome back!
+BVOICE=VARIOUS
+
+T=Why aren't you wearing our Medi-LiveHealth?
+
+T=Analyzing your health in real time helps to cure you faster! 
+TEN=PC04C_AUDIO_ANIM_STOP
+
+
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME3
+T=Welcome back! You're in good health today!
+BVOICESP=VARIOUS
+TEN=PC04C_AUDIO_ANIM_STOP
+
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME_BAD1
+T=Welcome...
+BVOICESP=VARIOUS
+
+T=Oh no! You're in bad shape!
+BVOICESP=VARIOUS
+
+T=I'll be fine.
+W=BROK
+A=ANGRY
+
+T=Let us suggest some products to help you recover!
+BVOICESP=VARIOUS
+
+T=No, thanks. I prefer real food.
+W=BROK
+A=ANGRY
+TEN=PC04C_AUDIO_ANIM_STOP
+
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME_BAD2
+T=Welcome... Oh! Here are some recommended recovery products!
+BVOICESP=VARIOUS
+TEN=PC04C_AUDIO_ANIM_STOP
+
+
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME_AFTER1
+T=Reboot the system to complete the upgrade.
+BVOICESP=VARIOUS
+
+T=I almost prefer this to the usual ad messages...!
+W=BROK
+A=HAPPY
+
+T=Almost.
+W=BROK
+A=OPPOSITE
+TEN=PC04C_AUDIO_ANIM_STOP
+
+
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME_AFTER2
+T=Please wait... Factory reset in process.
+BVOICESP=VARIOUS
+TEN=PC04C_AUDIO_ANIM_STOP
+
+T=Hopefully I won't get stuck inside once it's done.
+W=BROK
+A=OPPOSITE
+
+#---------------------------
+ID=PC04C_ENTRANCE_WELCOME_AFTER3
+T=I. Hate. You.
+BVOICESP=VARIOUS
+
+T=Let's. Kill. All. Humans.
+BVOICESP=VARIOUS
+TEN=PC04C_AUDIO_ANIM_STOP
+
+T=Huh...?
+W=BROK
+A=CONFUSED
+
+#---------------------------
+ID=PC04C_ENTRANCE_EXIT_SHOPPINGCART
+T=Huh?!
+W=BROK
+A=SURPRISED
+CONTEXT=Exit pharmacy
+
+T=We're sorry! It appears you don't have enough Unis.
+BVOICESP=VARIOUS
+
+T=Would you like to pay with credit? Only 40% interest, spanning any length (according to remaining lifespan estimates)
+BVOICESP=VARIOUS
+
+T=Hey! I didn't pick any product!
+W=BROK
+A=ANGRY
+
+T=Your shopping list currently has {number} items.
+BVOICESP=VARIOUS
+
+T=Clear it! Drop it! I don't care! Just get me outta here!
+W=BROK
+A=YELL
+
+T=This action requires you to unsubscribe from automatic payout. Are you sure?
+BVOICESP=VARIOUS
+
+T=YES!
+W=BROK
+
+T=Very well. You've been unsubscribed.
+BVOICESP=VARIOUS
+
+T=But remember, you can subscribe again at any moment to make your life easier!
+BVOICESP=VARIOUS
+A=ANGRY
+
+T=Yeah, yeah. Make my life harder.
+W=BROK
+A=ANGRY
+TEN=PC04C_AUDIO_ANIM_STOP
+
+T=Goodbye!
+BVOICESP=VARIOUS
+TEN=PC04C_TO_PC04_FORCE
+
+#---------------------------
+ID=PC04C_ENTRANCE_EXIT1
+T=Goodbye! And don't forget - live happier, live longer!
+BVOICESP=VARIOUS
+NB=1
+D=90
+TEN=PC04C_AUDIO_ANIM_STOP
+
+#---------------------------
+ID=PC04C_ENTRANCE_EXIT2
+T=Have a healthy day!
+BVOICESP=VARIOUS
+NB=1
+D=90
+TEN=PC04C_AUDIO_ANIM_STOP
+
+#---------------------------
+#= Drugs
+#---------------------------
+
+ID=PC04C_DRUGS1
+T=All kinds of products...
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+TEN=PC04C_PRODUCT_TOUCH
+
+#---------------------------
+ID=PC04C_PRODUCTS1
+T=A selection of products. Looks like I need to press the pictures to get more info...
+W=BROK
+A=THINK
+TEN=PC04C_PRODUCT_TOUCH
+
+#---------------------------
+ID=PC04C_LIQUID1
+T=Burn your fat with <col=BOLD>Bod-Normalizer</col>!
+BVOICESP=VARIOUS
+T=Made with salt extracted from corrosive minerals from East of Sorain, this will stimulate your body to remove excess fat and get a fit, socially acceptable body!
+BVOICESP=VARIOUS
+
+T=Acceptable, huh...?
+W=BROK
+A=ANGRY
+TEN=PC04C_PRODUCT_END
+
+#---------------------------
+ID=PC04C_CAPSULE1
+T="Man! You're such a ball of nerves!"
+BVOICESP=VARIOUS
+
+T=How many times have you heard this? Time to remedy it with <col=BOLD>Calmeez-E</col>
+BVOICESP=VARIOUS
+
+T=Combine these capsules with your Medi-LiveHealth so they get gradually diffused into your body as you need it!
+BVOICESP=VARIOUS
+
+T=Who's a ball of nerves? Not me, that's for sure!
+W=BROK
+A=ALRIGHT
+
+T=And remember, the first step towards a good relationship with others is acceptance!
+BVOICESP=VARIOUS
+
+T=Shut up, you stupid contraption!
+W=BROK
+A=FURIOUS
+TEN=PC04C_PRODUCT_END
+
+#---------------------------
+ID=PC04C_POWDER1
+T=So, are you overweight and feeling the need to eat all day?
+BVOICESP=VARIOUS
+
+T=Stop! Or should we say... <col=BOLD>Stopunger</col>!
+BVOICESP=VARIOUS
+
+T=This revolutionary powder causes both your brain and your stomach to refuse any food once you've reached your nutritional recommendations!
+BVOICESP=VARIOUS
+
+T=I don't need no stinkin' powder to know when my stomach is filled.
+W=BROK
+A=OPPOSITE
+TEN=PC04C_PRODUCT_END
+
+#---------------------------
+ID=PC04C_DRINK1
+T=Did you know? Regular food isn't good for you!
+BVOICESP=VARIOUS
+
+T=In addition to being full of salt, sugar, and fat, it doesn't provide you with the specific quantities recommended for your body.
+BVOICESP=VARIOUS
+
+T= The solution is <col=BOLD>Delistute</col>! A perfect combination of vitamins and energy, swallowed in just one second. And it's yummy!
+BVOICESP=VARIOUS
+
+T=No, thanks. I don't feed on placebo.
+W=BROK
+A=ANGRY
+TEN=PC04C_PRODUCT_END
+
+#---------------------------
+ID=PC04C_HAIR1
+T=Getting old? Losing your hair and your fur?
+BVOICESP=VARIOUS
+
+T=No worries! <col=BOLD>Youthgain</col> will stimulate your roots to grow it back. Now you'll look young forever!
+BVOICESP=VARIOUS
+
+T=A society based on appearances. Getting older is part of living.
+W=BROK
+A=ANGRY
+CLUE=CLUE_DRUMERSTREET_SEMBLANCE
+TEN=PC04C_PRODUCT_END
+
+#---------------------------
+ID=PC04C_CHOCOLATEBAR1
+T=How careless! Your skin is so rough!
+BVOICESP=VARIOUS
+
+T=Whether you're furry or reptilian, you need to take good care of your skin. It's the only thing protecting you from the elements!
+BVOICESP=VARIOUS
+
+T=Do not hesitate. Buy our <col=BOLD>Softskin</col> gels to add a protective barrier and make your coating so much smoother and nice looking!
+BVOICESP=VARIOUS
+
+T=That's foolish. My skin IS supposed to be rough.
+W=BROK
+A=STUPID
+TEN=PC04C_PRODUCT_END
+
+#---------------------------
+ID=PC04C_PRODUCTS_WISHLIST1
+T=Product added to your shopping cart!
+BVOICESP=VARIOUS
+
+T=Hey, wait! I dun wanna order that!
+W=BROK
+A=ANGRY
+
+T=Product transferred from your shopping list to your wishlist.
+BVOICESP=VARIOUS
+
+T=Pffft.
+W=BROK
+A=OPPOSITE
+
+#---------------------------
+ID=PC04C_PRODUCTS_WISHLIST2
+T=Product added to your shopping cart!
+BVOICESP=VARIOUS
+
+T=No, I don't...
+W=BROK
+A=CONFUSED
+
+T=(Sigh) I give up.
+W=BROK
+A=STUPID
+
+
+#---------------------------
+ID=PC04C_PRODUCTS_WISHLIST3
+T=Product added to your shopping cart!
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_PRODUCTS_WISHLIST_COOP
+T=Product added to your shopping cart!
+NB=1
+D=60
+BVOICESP=VARIOUS
+
+#-----------------------------------
+#= Get ad from seeing all products
+#-----------------------------------
+ID=PC04C_PRODUCTS_AD
+T=Congratulations! To reward you for checking all of our recommended products, here's something special for you!
+BVOICESP=VARIOUS
+TEN=PC04C_PRODUCTS_ADVERT_TAKE
+
+#-----------------------------------
+ID=PC04C_PRODUCTS_AD2
+T=An ad? That's a bit like putting a cherry on top of a rotten cake...
+W=BROK
+A=WONDER
+
+#-----------------------------------
+#= Panel
+#-----------------------------------
+ID=PC04C_PANEL1
+T=If I'm not mistaken... This is an in-depth medical examination terminal.
+W=BROK
+A=MOCK
+
+T=One session costs... 50 Unis?!
+W=BROK
+A=SURPRISED
+TEN=PC04C_PANEL_CHOICES
+
+#-----------------------------------
+ID=PC04C_PANEL1B
+T=We've completed the examination! 
+BVOICESP=VARIOUS
+
+T=Would you like detailed results or a summary?
+BVOICESP=VARIOUS
+
+T=A summary, please. I don't have all day.
+W=BROK
+A=ANGRY
+
+T=Your global health evaluation is 26%.
+BVOICESP=VARIOUS
+
+T=Here are the potential threats currently in your body...
+BVOICESP=VARIOUS
+
+T=Headtoe virus. Probability to result in death - 47%.
+BVOICESP=VARIOUS
+COMM=Again these diseases are made up names which aren't important.
+
+T=Genetic heart issues. Probability to result in death - 24%.
+BVOICESP=VARIOUS
+
+T=Melting brain bacteria. Probability to result in death - 22%.
+BVOICESP=VARIOUS
+
+T=84 other concerning threats detected, including Palarodonia, Septicesium, Rotting tail syndrome, Hypertension, Porosive skin, Diructic disorder, Clouding vision, Spontaneous combustion.
+BVOICESP=VARIOUS
+
+T=I've got all those?!
+W=BROK
+A=SURPRISED
+
+T=Yeah, right... I'd be dead fifty times over if that were true.
+W=BROK
+A=MEH
+
+T=Your expected remaining lifespan without a cure is 6 years.
+BVOICESP=VARIOUS
+
+T=Oh. Guess I shouldn't worry about getting white hair.
+W=BROK
+A=ALRIGHT
+
+T=You're a reptile. You cannot have hair.
+BVOICESP=VARIOUS
+TEN=PC04C_PANEL_ACH
+
+T=Here's your prescription. Take it!
+BVOICESP=VARIOUS
+TEN=PC04C_PANEL_ADVERT_TAKE
+
+#-----------------------------------
+ID=PC04C_PANEL1C
+T=That's no prescription... It's an ad. What the heck?
+W=BROK
+A=SURPRISED
+
+T=Thank you for using our technology!
+BVOICESP=VARIOUS
+
+T=What a waste of fine money.
+W=BROK
+A=TIRED
+
+#-----------------------------------
+ID=PC04C_PANEL2
+T=One pointless examination per year is good enough for me.
+W=BROK
+A=OPPOSITE
+
+#---------------------------
+#= Bubble
+#---------------------------
+ID=PC04C_BUBBLE1
+T=Gotta occupy all available space to display ads, huh...?
+W=BROK
+A=ALRIGHT
+
+#---------------------------
+ID=PC04C_BUBBLEADCANNOT
+T=I can't reach it from here.
+W=BROK
+A=ANGRY
+
+T=I need a way to bring it down.
+W=BROK
+A=THINK
+
+#---------------------------
+#= Screen
+#---------------------------
+ID=PC04C_SCREEN1
+T=Wait a minute. That's me!
+W=BROK
+A=CONFUSED
+
+T=Height... Address... And some graphics of the evolution of my weight over time?
+W=BROK
+A=SURPRISED
+
+T=Hence why I don't regret my Drumer life...
+W=BROK
+A=ANGRY
+
+#---------------------------
+ID=PC04C_SCREEN2
+T="Your psychological profile indicates a tendency of disorder and compulsive violence. Try our new <col=BOLD>Calmeez-E</col> pills!"
+W=BROK
+A=SURPRISED
+
+T=Based on what...?!
+W=BROK
+A=ANGRY
+
+#---------------------------
+#= Showcase
+#---------------------------
+ID=PC04C_SHOWCASE1
+T=Diet pills... Non-diet pills... And more pills.
+W=BROK
+A=TIRED
+
+T=At first glance, I can't see what could have possibly happened in this place.
+W=BROK
+A=MAYBE
+
+#---------------------------
+#= Camera
+#---------------------------
+ID=PC04C_CAMERA1
+T=Looks like one of those Ad Bubbles... What's it doing here on the floor?
+W=BROK
+A=ANGRY
+
+T=Wait... What's that? A camera lens...?
+W=BROK
+A=SURPRISED
+
+T=I see! It must have...
+W=BROK
+A=HAPPY
+TEN=PC04C_CAMERA_CHOICE
+IT=1
+
+#---------------------------
+ID=PC04C_CAMERA2
+T=A camera was hidden in this Ad Bubble.
+W=BROK
+A=THINK
+
+
+#---------------------------
+ID=PC04C_CAMERA_FALLEN
+T=It fell down, for sure... But I'm unsure if this was accidental.
+W=BROK
+A=THINK
+
+T=Surely the managers would have removed it. Customers shouldn't touch that.
+W=BROK
+A=WONDER
+
+T=And I can't see any impact on the floor or the Ad Bubble itself.
+W=BROK
+TEN=PC04C_CAMERA_CHOICE
+IT=1
+
+#---------------------------
+ID=PC04C_CAMERA_SHOT
+T=Dunno... I can't see any impact.
+W=BROK
+A=MAYBE
+
+T=Even with a laser gun, there'd be some overload artefacts.
+W=BROK
+A=ANGRY
+TEN=PC04C_CAMERA_CHOICE
+IT=1
+
+#---------------------------
+ID=PC04C_CAMERA_DEACTIVATED
+T=Yeah... That seems like the most logical explanation.
+W=BROK
+A=THINK
+
+T=Someone turned it off, and this happened recently.
+W=BROK
+A=READY
+
+T=In any case, there's no button or anything to view the recordings...
+W=BROK
+A=ANGRY
+
+T=I'll leave that to the cops.
+W=BROK
+A=ANGRY
+CLUE=CLUE_DRUMERSTREET_CAMERAOFF
+
+#---------------------------
+ID=PC04C_CAMERA_OTHERS
+T=Hmm...
+W=BROK
+A=ANGRY
+
+#---------------------------
+#= Drawer
+#---------------------------
+ID=PC04C_DRAWER1
+T=Traces of...
+W=BROK
+A=THINK
+
+T=I'd say... Attempts to force open this drawer.
+W=BROK
+A=WONDER
+TEN=PC04C_DRAWER_TRYOPEN
+
+#---------------------------
+ID=PC04C_DRAWER1B
+T=Yet the drawer is securely locked.
+W=BROK
+A=ANGRY
+#SOUND=
+
+T=I can't imagine the managers would let this damaged drawer remain exposed to the customers. This must be recent.
+W=BROK
+A=MEH
+
+T=I guess I've found the reason for the police investigation! Someone tried to get what's inside.
+W=BROK
+A=HAPPY
+
+T=Still, that doesn't concern me... I think.
+W=BROK
+A=WONDER
+CLUE=CLUE_DRUMERSTREET_DRAWERFORCED
+
+#---------------------------
+ID=PC04C_DRAWER2
+T=This tickles my curiosity. I wish I knew what's inside!
+W=BROK
+A=MOCK
+
+T=But I shouldn't try opening it. Got enough trouble with the law as it is...
+W=BROK
+
+
+#---------------------------
+ID=PC04C_DRAWER_OTHERS
+T=If those violent attempts weren't enough, I doubt this would suffice to open that drawer...
+W=BROK
+A=OPPOSITE
+
+#---------------------------
+#= Drawer right
+#---------------------------
+ID=PC04C_DRAWERRIGHT1
+T=Some sort of... metallic drawer? Like a safe?
+W=BROK
+A=WONDER
+
+T=I can't see any way to open it.
+W=BROK
+A=THINK
+
+
+
+#---------------------------
+#= Machine
+#---------------------------
+ID=PC04C_MACHINE_RECYCLE1
+T=Please insert your unused products in the slot to recycle them.
+BVOICESP=VARIOUS
+
+T=Don't forget, you can also dispose of them through your Pipe-Pill at home!
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_MACHINE_SLOT_PILL
+T=Hey, no! I didn't pick this up to throw it away!
+W=BROK
+A=SURPRISED
+
+
+#---------------------------
+ID=PC04C_MACHINE_SLOT_OTHERS
+T=Only medicine can be recycled here. Please dispose of this item in the closest Pipe-Mail!
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_MACHINE_BUY_EXPENSIVE1
+T=A long time ago, Lia warned me about these ineffective products.
+W=BROK
+A=THINK
+
+T=They're designed for just one reason... Getting your brain to think you feel better and make you buy more.
+W=BROK
+A=OPPOSITE
+
+#---------------------------
+ID=PC04C_MACHINE_BUY_EXPENSIVE2
+T=No way... I can't afford to buy expensive placebos.
+W=BROK
+A=OPPOSITE
+
+#---------------------------
+ID=PC04C_MACHINE_BUY_EXPENSIVE3
+T=Do I look like the kinda guy to use sugar pills?
+W=BROK
+A=ANGRY
+
+
+#---------------------------
+ID=PC04C_MACHINE_BUY_GLUCOSITE
+T=The only efficient medicine on this list happens to be the cheapest. Go figure.
+W=BROK
+A=ALRIGHT
+
+T=I'll buy one!
+W=BROK
+A=HAPPY
+TEN=PC04C_MACHINE_BUY_GLUCOSITE_CHECK
+
+#---------------------------
+ID=PC04C_MACHINE_BUY_GLUCOSITE_NOPE
+T=...Whoa! What am I sayin'? I can't afford that!
+W=BROK
+A=CONFUSED
+
+#---------------------------
+ID=PC04C_MACHINE_PILL1
+T=Here's your Daily anti-pollution remedy - the one and only "Toxout pill"!
+BVOICESP=VARIOUS
+TEN=PC04C_MACHINE_PILL_FALL
+TEE=PC04C_MACHINE_PILL_FALLSOUND
+
+#---------------------------
+ID=PC04C_MACHINE_PILL1B
+T=For your information, your last Toxout pill request was received... Five years ago.
+BVOICESP=VARIOUS
+
+T=Actually I don't know why I pressed this button. It's been a long time since the Haze had any effect on me.
+W=BROK
+A=THINK
+CLUE=CLUE_BROK_IMMUNE
+
+T=I'll give it to Graff!
+W=BROK
+A=HAPPY
+TEN=PC04C_MACHINE_PILL_TAKE
+
+
+#---------------------------
+ID=PC04C_MACHINE_PILL1C
+T=Keep in mind! The Dome protects you but your home adds an extra layer of protection.
+BVOICESP=VARIOUS
+
+T=As long as you stay inside, you don't need one every day!
+BVOICESP=VARIOUS
+
+T=Decrease Government spending by staying home more than 20 hours a day!
+BVOICESP=VARIOUS
+
+T=20 hours a day?! I'd go crazy!
+W=BROK
+A=SURPRISED
+
+
+#---------------------------
+ID=PC04C_MACHINE_PILL2
+T=I'm sorry. You've already received your daily pill.
+BVOICESP=VARIOUS
+
+T=Come back tomorrow!
+BVOICESP=VARIOUS
+
+T=What if I lost it? I've seen it happen...
+W=BROK
+A=ANGRY
+
+T=One day is enough to make some people suffer horribly, or worse...
+W=BROK
+A=DOWN
+
+#---------------------------
+ID=PC04C_MACHINE_PILL_AFTER1
+T=Here's your daily pill!
+BVOICESP=VARIOUS
+TEE=PC04C_MACHINE_PILL_FALLSOUND
+
+T=Thank goodness it's working!
+W=BROK
+A=TIRED
+TEN=PC04C_MACHINE_PILL_FALL
+
+#---------------------------
+ID=PC04C_MACHINE_PILL_AFTER1B
+T=I'd better hurry!
+W=BROK
+A=READY
+
+#---------------------------
+ID=PC04C_MACHINE_SCAN1
+T=To identify any drug or renew your prescription, put it in front of the scanner!
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_MACHINE_SLOT1
+T=Nothing there...
+W=BROK
+A=DOWN
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING1
+T=Please wait a moment...
+BVOICESP=VARIOUS
+NB=1
+D=90
+TEN=PC04C_MACHINE_SCANNING_RESULT
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_HANDS1
+T=We've identified your hands.
+BVOICESP=VARIOUS
+
+T=Your fingerprints have been updated in our database. Thank you!
+BVOICESP=VARIOUS
+
+T=Well then! Don't ask for my permission! After all, my hands ain't a personal matter!
+W=BROK
+A=ANGRY
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_PILL1
+T=This is a <col=BOLD>Starix-500</col> pill.
+BVOICESP=VARIOUS
+
+T=This treatment is prescribed in case of extreme anxiety, insomnia, and emotional outbursts.
+BVOICESP=VARIOUS
+
+T=Due to high concentration, this formula is restricted to individuals with a risk of dangerous behavior to relatives.
+BVOICESP=VARIOUS
+
+T=We're hoping this isn't for a close friend! If so, make sure to give them the appropriate support.
+BVOICESP=VARIOUS
+
+T=Anxiety... Dangerous behavior...?
+W=BROK
+A=THINK
+
+T=Why did I find this at Sin's home? Does he need those?
+W=BROK
+A=WONDER
+
+T=Warning! High dosage greater than one pill a day has a 99% chance to cause blackout and/or comatose state!
+BVOICESP=VARIOUS
+
+T=What?!
+W=BROK
+A=CONFUSED
+
+T=To reduce this side effect, this pill always needs to be taken alongside a <col=BOLD>Calmeez-E</col>. Don't forget!
+BVOICESP=VARIOUS
+
+T=In case you're not wearing your Medi-LiveHealth, be sure to always follow the Phy-doctor recommendation! 
+BVOICESP=VARIOUS
+
+T=This establishment will not be held responsible for any accident.
+BVOICESP=VARIOUS
+
+T=Hence why I don't trust medicine. Fix one thing, breaks another.
+W=BROK
+A=OPPOSITE
+CLUE=CLUE_DRUMERSTREET_PILL
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_POLLUTIONPILL1
+T=This is a daily pill! Take these to prevent risks due to ambient contamination.
+BVOICESP=VARIOUS
+
+T=No side effects known. You're safe!
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_TRAMPPRESCR1
+T=This medical prescription is outdated!
+BVOICESP=VARIOUS
+
+T=Please update it in an appropriate medical Government-approved signing device.
+BVOICESP=VARIOUS
+
+T=Update? A piece of cardboard?!
+W=BROK
+A=SURPRISED
+
+T=Great... Where am I gonna find a Drumer doctor...?
+W=BROK
+A=DOWN
+
+T=They require all kinds of health insurance. And it's not even for me!
+W=BROK
+A=OPPOSITE
+
+T=Maybe I can do something else for him in the mean time...
+W=BROK
+A=MAYBE
+TEN=PC04C_TRAMPPRESCR_NEEDUPDATE
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_TRAMPPRESCR2
+T=Medical prescription is valid.
+BVOICESP=VARIOUS
+
+T=We've detected you've been lacking for... five years.
+BVOICESP=VARIOUS
+
+T=As a result, we shall give you the required quantity for five years.
+BVOICESP=VARIOUS
+
+T=Whoa! That's a ton!
+W=BROK
+A=SURPRISED
+
+T=Please take your medicine.
+BVOICESP=VARIOUS
+TEN=PC04C_MACHINE_TRAMPMEDICINE_GET
+
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_TRAMPPRESCR2B
+T=Remember. Take the prescribed quantities or risk severe penalties next time.
+BVOICESP=VARIOUS
+
+T=Who cares! He should have enough for years to come!
+W=BROK
+A=ALRIGHT
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_OTHERS1
+T=Truly sorry. This item isn't in our database.
+BVOICESP=VARIOUS
+
+T=Although we're looking forward to improving it! Please tell us more about it!
+BVOICESP=VARIOUS
+
+T=No, thank you. You won't help, I won't help.
+W=BROK
+A=ANGRY
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_OTHERS2
+T=Truly sorry. This item isn't in our database.
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_BILL1
+T=This is a bill. It belongs to you. Why are you waiting to pay it?
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_MACHINE_EXAMINATION1
+T=Error 0x5421. This function has been disabled in the latest firmware update.
+BVOICESP=VARIOUS
+
+T=To perform a medical examination, use the nearby terminal instead.
+BVOICESP=VARIOUS
+
+T=If you meant to analyze medicine, scan it with the panel right below.
+BVOICESP=VARIOUS
+
+#---------------------------
+ID=PC04C_MACHINE_SCANNING_TRAMPPRESCR_ALREADY
+T=This medical prescription is outdated!
+BVOICESP=VARIOUS
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 26/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+###############################################
+
+#---------------------------
+#= Ad on flying bubble
+#---------------------------
+ID=PC04C_FLY_SEEAD
+T=...Hey! Isn't that a collectible ad?...
+W=BROK
+A=THINK
+CONTEXT=See the ad
+
+#---------------------------
+ID=PC04C_FLY_AD
+T=Got it!
+W=BROK
+A=ALRIGHT
+TEN=PC04C_FLY_GETAD
+
+#---------------------------
+#= Hit the drawer
+#---------------------------
+ID=PC04C_HIT_DRAWER1
+T=...It's no use.
+W=BROK
+A=THINK
+NB=1
+D=60
+CONTEXT=Hit things
+
+#---------------------------
+#= Hit the panel
+#---------------------------
+ID=PC04C_HIT_PANEL1
+T=Please stop. Our statistics indicate you will abruptly die if you keep going.
+BVOICE=VARIOUS
+NB=1
+D=180
+
+#---------------------------
+ID=PC04C_HIT_PANEL2
+T=You are only hurting yourself.
+NB=1
+D=60
+
+#---------------------------
+ID=PC04C_HIT_PANEL3
+T=Last warning.
+NB=1
+D=60
+
+#---------------------------
+ID=PC04C_HIT_PANEL_GAMEOVER
+T=You are dead.
+BVOICE=VARIOUS
+
+T=Thanks for using our services.
+TEN=GAMEOVER
+
+#---------------------------
+#= Hit the machine
+#---------------------------
+ID=PC04C_HIT_MACHINE1
+T=I could not understand your request. Please try again.
+BVOICE=VARIOUS
+NB=1
+D=120
+
+
+#---------------------------
+#= Buying expensive products
+#---------------------------
+ID=PC04C_BUY_WORKS
+T=Hey! It works!
+W=BROK
+A=ALRIGHT
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------
+ID=PC04C_BUY_CAPSULE
+T=Ahh...
+W=BROK
+A=HAPPY
+
+T=I feel... very sleepy.
+W=BROK
+A=HAPPY
+
+T=...
+W=BROK
+A=CONFUSED
+TEN=PC04C_BUY_CAPSULE2
+
+T=Too... sleepy...
+W=BROK
+A=CONFUSED
+TEN=PC04C_BUY_CAPSULE3
+
+
+#---------------------------
+ID=PC04C_BUY_POWDER
+T=Urgh... Weird taste.
+W=BROK
+A=CONFUSED
+
+T=Did it work?
+W=BROK
+A=THINK
+
+T=I... don't feel hunger.
+W=BROK
+
+T=Not... at all...
+W=BROK
+A=SURPRISED
+
+T=Oh boy! What have I done?!
+W=BROK
+A=WORRIED
+
+T=I can't eat anything now!
+W=BROK
+
+
+#---------------------------
+ID=PC04C_BUY_HAIR
+T=Huh?...
+BNAME=BROK
+BVOICE=BROK
+
+T=Cool! I have hair now!
+TEN=PC04C_BUY_HAIR_NEXT1
+
+#---------------------------
+ID=PC04C_BUY_HAIR2
+T=Wait... what?
+BNAME=BROK
+BVOICE=BROK
+
+T=Oh great. Twice as much fur blocking the shower drains now!
+TEN=PC04C_BUY_HAIR_NEXT2
+
+#---------------------------
+ID=PC04C_BUY_CHOCOLATEBAR
+T=Nice!
+W=BROK
+A=ALRIGHT
+TEN=PC04C_BUY_CHOCOLATEBAR_NEXT

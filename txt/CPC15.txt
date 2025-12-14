@@ -1,0 +1,2050 @@
+#-------------------------------
+#=LAB COMMON FILE
+#-------------------------------
+
+#----------------------
+#=	Looking for nanites
+#----------------------
+ID=CPC15_MAGNIFY_NANITE1
+T=Hmm... Upon further inspection, it's not very clean!
+W=BROK
+A=MAYBE
+
+T=Can't see any of those tiny bots from Dr. Mink though.
+W=BROK
+A=MEH
+
+#----------------------
+ID=CPC15_MAGNIFY_NANITE2
+T=No nanite there.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=CPC15_MAGNIFY_NANITE3
+T=Oh! I've found...
+W=BROK
+A=SURPRISED
+
+T=Nothing at all.
+W=BROK
+A=HAPPY
+
+#----------------------
+#=	Talk to Ott	
+#----------------------
+
+ID=CPC15_OTT_BEFOREBODY
+T=Let's look around.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=OTT
+C2A=ALRIGHT
+
+T=Sure.
+W=OTT
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_FIRST
+T=You're okay?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=OTT
+C2A=SURPRISED
+
+T=Well... I didn't expect to investigate a murder on my first day.
+W=OTT
+C2A=WONDER
+
+T=It's both neat and... kinda scary.
+W=OTT
+
+T=Knowing there's a killer around us...
+W=OTT
+
+T=You don't mind me staying close?
+W=OTT
+
+T=Of course.
+W=BROK
+C1A=READY
+
+T=Thanks...
+W=OTT
+C2A=HAPPY
+TEN=CHARACTER_STOPMUSIC
+
+
+#----------------------
+ID=CPC15_OTT_BODY1
+T=What do you suggest?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=Maybe examining the body?
+W=OTT
+
+T=Yeah. Good idea!
+W=BROK
+C1A=MOCK
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_HUSHOFFICE1
+T=Dr. Hush has an office, doesn't he?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=True. We should give it a look-see.
+W=BROK
+C1A=ALRIGHT
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_RESTROOM1
+T=Well... What should we do now?...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=WONDER
+
+T=Mister Brok! I've noticed a restroom in the hall. We still haven't checked it!
+W=OTT
+C2A=NORMAL 
+
+T=Oh, yeah.
+W=BROK
+C1A=TIRED
+C2A=HAPPY
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_MEETTIDY1
+T=We inspected everything, didn't we?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=WONDER 
+
+T=I'm not sure. What about that bot in Dr. Hush's room?
+W=OTT
+
+T=Right. Let's check if that thing works!
+W=BROK
+C1A=MOCK
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_TALKTIDY1
+T=Tidy seems to have some important information.
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=We should interrogate him.
+W=OTT
+
+T=I agree!
+W=BROK
+C1A=READY
+C2A=ALRIGHT 
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_TALKMINK1
+T=I better interrogate Dr. Mink.
+W=BROK
+C1=BROK
+C1A=READY
+C2=OTT
+C2A=NORMAL
+
+T=Why are you telling me? Go ahead.
+W=OTT
+C2A=OPPOSITE 
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_TALKALMOST1
+T=So? Ready to announce who's the murderer?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL 
+
+T=Almost. Still a few things I need to check...
+W=BROK
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_FIRSTSTAGE
+T=What do you think so far?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=WONDER 
+
+T=I've solved this!
+W=OTT
+C2A=HAPPY 
+
+T=Really?!
+W=BROK
+C1A=SURPRISED
+
+T=You haven't?
+W=OTT
+C2A=WONDER
+
+T=Well... I'd like to hear your conclusion first.
+W=BROK
+C1A=HAPPY
+TEN=CPC15_OTT_STOPMUSIC
+
+T=Okay. Let's gather everyone in Dr. Mink's room!
+W=OTT
+C2A=ALRIGHT 
+TEN=CPC15_FIRSTSTAGE
+
+
+#----------------------
+ID=CPC15_OTT_SECOND1
+T=I thought I had it! But...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=WONDER 
+
+T=You totally destroyed my theory in an instant.
+W=OTT
+C2A=DISAPPOINTED
+
+T=Don't feel bad.
+W=BROK
+C1A=ALRIGHT
+
+T=If it hadn't been for that fake blood, I'd probably have thought the same too.
+W=BROK
+C1A=MEH
+C2A=WONDER 
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_OTT_SECOND2
+T=What would you do in my place?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=NORMAL 
+
+T=Turn everything inside out!
+W=OTT
+C2A=ALRIGHT 
+
+T=We need as many clues as we can!
+W=OTT
+C2A=NORMAL 
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+#= Hit Ott
+#----------------------
+ID=CPC15_OTT_HIT1
+T=...Aww!
+W=OTT
+C1=BROK
+C1A=FURIOUS
+C2=OTT
+C2A=SURPRISED 
+
+T=Hmm... Sorry.
+W=BROK
+C1A=TIRED
+
+T=What was that for?!
+W=OTT
+C2A=OPPOSITE 
+
+T=I didn't wanna do that! I swear!
+W=BROK
+C1A=DISAPPOINTED
+
+#----------------------
+ID=CPC15_OTT_HIT2
+T=...Ouch!
+W=OTT
+C1=BROK
+C1A=FURIOUS
+C2=OTT
+C2A=OPPOSITE 
+
+T=Don't stay in the middle like that!
+W=BROK
+C1A=ANGRY
+
+#----------------------
+ID=CPC15_OTT_HIT3
+T=Hey!!! Stop it!
+W=OTT
+C1=BROK
+C1A=FURIOUS
+C2=OTT
+C2A=ANGRY 
+
+T=Sorry but you're bothering me! Move!
+W=BROK
+
+T=What?!...
+W=OTT
+
+T=You're insane!
+W=OTT
+
+#----------------------
+ID=CPC15_OTT_HIT4
+T=Mister Guard! Mister Guard! Help!
+W=OTT
+C1=BROK
+C1A=FURIOUS
+C2=OTT
+C2A=SURPRISED 
+
+T=He's gone crazy!
+W=OTT
+C2A=ANGRY 
+TEN=CPC15_GUARDFIGHTCOMES
+
+
+#----------------------
+#= Hit Tidy
+#----------------------
+ID=CPC15_TIDY_HIT1
+T=...
+W=TIDY
+C1=BROK
+C1A=READY
+C2=TIDY
+C2A=NORMAL
+C3=OTT
+C3A=SURPRISED
+
+T=Tidy. Does not. Feel.
+W=TIDY
+
+T=Hmm!
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=CPC15_TIDY_HIT2
+T=...
+W=TIDY
+C1=BROK
+C1A=READY
+C2=TIDY
+C2A=NORMAL
+C3=OTT
+C3A=SAD
+
+T=Warning.
+W=TIDY
+C2A=ANALYZE
+
+T=Broky. Not on. Close relations. List.
+W=TIDY
+
+#----------------------
+ID=CPC15_TIDY_HIT3
+T=Broky dead!
+W=TIDY
+C1=OTT
+C1A=SURPRISED
+C2=TIDY
+C2A=HAPPY
+
+T=Mister Brok!
+W=OTT
+TEN=GAMEOVER
+
+#----------------------
+#= Hit Mink
+#----------------------
+ID=CPC15_MINK_HIT1
+T=...Aaarrgh!
+W=MINK
+C1=BROK
+C1A=FURIOUS 
+C2=MINK
+C2A=SURPRISED
+
+T=Are you crazy?!
+W=MINK
+
+T=Hmm... Sorry.
+W=BROK
+C1A=TIRED
+
+#----------------------
+ID=CPC15_MINK_HIT2
+T=Oh! Oops!
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=MINK
+C2A=SURPRISED 
+
+T=Aaaawwaah...
+W=MINK
+
+T=Sorry! My bad!
+W=BROK
+
+T=I'll sue you for this!
+W=MINK
+C2A=ANGRY 
+
+T=Wouldn't be the first time.
+W=BROK
+C1A=MOCK
+
+T=...!
+W=MINK
+
+
+
+#----------------------
+ID=CPC15_MINK_HIT3
+T=Aww aww aww!!!
+W=MINK
+C1=BROK
+C1A=TIRED
+C2=MINK
+C2A=SURPRISED 
+C2_EYESHUT=1
+
+T=My eyes! I'm blind!
+W=MINK
+C2_EYESHUT=1
+
+T=No, you're not.
+W=BROK
+C1A=MOCK
+
+T=I... I'm gonna!...
+W=MINK
+C2A=ANGRY
+
+T=Gonna what?...
+W=BROK
+
+T=...
+W=MINK
+C2_EYESHUT=0
+
+#----------------------
+ID=CPC15_MINK_HIT4
+T=Guard! Quick!
+W=MINK
+C1=BROK
+C1A=FURIOUS
+C2=MINK
+C2A=SURPRISED 
+
+T=That detective is after me!!!
+W=MINK
+TEN=CPC15_GUARDFIGHTCOMES
+
+
+#----------------------
+ID=CPC15_GUARDJAIL1
+T=Enough! Ya're good for jail, buddy!
+W=GUARD
+C1=BROK
+C1A=SURPRISED 
+C2=GUARD
+C2A=ANGRY 
+C4=OTT
+C4A=SURPRISED 
+TEN=CPC15_GUARDJAIL_DISABLEFIGHTMODE
+
+T=Mister Brok... What's happening to you?...
+W=OTT
+
+T=I...
+W=BROK
+
+T=...didn't want to...
+W=BROK
+
+T=Someone's controlling me...
+W=BROK
+C1A=CONFUSED
+
+T=I'd rather send you to the closest mental hospital.
+W=GUARD
+TEN=CPC15_JAIL_GAMEOVER
+
+#----------------------
+ID=CPC15_GUARDFIGHT1
+T=I won't tolerate this kind of trouble during my watch!
+W=GUARD
+C1=BROK
+C1A=FURIOUS
+C2=GUARD
+C2A=ANGRY 
+TEN=CPC15_GUARD_STARTFIGHT
+
+#----------------------
+ID=CPC15_GUARDFIGHT_LOSE1
+T=Oh my...
+W=OTT
+C1=OTT
+C1A=SURPRISED 
+C2=GUARD
+C2A=ANGRY 
+VLOW=1
+
+T=Thank you, Mister Guard.
+W=OTT
+C1A=NORMAL 
+
+T=Now we know what happened to Dr. Hush!
+W=MINK
+C3=MINK
+C3A=MEH
+
+T=That detective totally went off the rails!
+W=MINK
+C3A=ANGRY 
+
+T=Indeed.
+W=GUARD
+C2A=WONDER
+VLOW=1
+
+T=Wait here. I'll call the cops.
+W=GUARD
+TEN=GAMEOVER
+
+#----------------------
+ID=CPC15_GUARDFIGHT_WIN1
+T=...!
+W=MINK
+C1=BROK
+C1A=FURIOUS 
+C2=MINK
+C2A=SURPRISED 
+
+T=N... No!
+W=MINK
+
+T=What... are you going to do?!
+W=MINK
+
+T=Dunno. That depends on you, buddy.
+W=BROK
+C1A=ANGRY 
+
+T=...
+W=MINK
+TEN=CPC15_MINKESCAPES
+
+T=Aaaaahhhhh!!!
+W=MINK
+
+T=...
+W=BROK
+C2=NONE
+
+T=...
+W=BROK
+
+T=Well...
+W=BROK
+
+T=Aside from that bot, no one's left in the facility.
+W=BROK
+C1A=MAYBE
+
+T=Case solved, I guess?...
+W=BROK
+C1A=WONDER 
+TEN=CPC15_GUARDFIGHT_LEAVE
+
+#----------------------
+#= Hit Guard
+#----------------------
+ID=CPC15_GUARD_HIT1
+T=Hey!!!
+W=GUARD
+C1=BROK
+C1A=SURPRISED 
+C2=GUARD
+C2A=ANGRY 
+
+T=The situation isn't already bad enough for you?!
+W=GUARD
+
+T=Erm...
+W=BROK
+
+
+#----------------------
+ID=CPC15_GUARD_HIT2
+T=What the...?!
+W=GUARD
+C1=BROK
+C1A=MEH
+C2=GUARD
+C2A=WONDER
+
+T=I knew it! You darn racist !
+W=GUARD
+C2A=ANGRY 
+
+T=No!... My hand slipped!
+W=BROK
+C1A=MAYBE
+
+T=Got my eyes on you, pal.
+W=GUARD
+
+
+#----------------------
+ID=CPC15_GUARD_HIT3
+T=Aww!!!
+W=GUARD
+C1=BROK
+C1A=READY
+C2=GUARD
+C2A=SURPRISED 
+TEN=CPC15_GUARD_CHECKHIT
+
+
+#----------------------
+ID=CPC15_GUARD_HIT3B
+T=That's it! You're a goner!
+W=GUARD
+C1=BROK
+C1A=ANGRY 
+C2=GUARD
+C2A=ANGRY 
+TEN=CPC15_GUARD_STARTFIGHT
+
+
+#----------------------
+#= Mink talk
+#----------------------
+ID=CPC15_MINK_FIRST
+T=Dr. Mink, I have a few questions to ask you.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T=I was afraid you were going to say that.
+W=MINK
+
+T=But first. Please swear to tell the truth.
+W=BROK
+C1A=ANGRY
+
+T=Of course. I always do. Liars always end up contradicting themselves and revealing the truth.
+W=MINK
+C2A=MOCK
+
+T=I do not want to waste time. Neither mine nor yours.
+W=MINK
+
+T=Very well.
+W=BROK
+C1A=MEH
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+#----------------------
+#= Mink talk - Dr. Hush
+#----------------------
+ID=CPC15_MINK_DRHUSH1
+T=What can you tell me about Dr. Hush?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=He's my... Well, he was my colleague.
+W=MINK
+C2A=MOCK
+
+T=He was dealing with macro-robotic, while I'm dealing with nano.
+W=MINK
+
+T=We've been selected to work in the same building as we're complementary.
+W=MINK
+
+T=How was your relationship lately?
+W=BROK
+
+T=I see where you're going.
+W=MINK
+C2A=MEH
+
+T=Yes, it was a bit tense.
+W=MINK
+
+T=Why?
+W=BROK
+C1A=MEH
+
+T=The Government started shifting the funding to scientific projects.
+W=MINK
+
+T=In particular, they reduced the budget for nanotechnology projects in favor of AI research.
+W=MINK
+CLUE=CLUE_MINK_BUDGET
+
+T=So this directly impacted your experiments.
+W=BROK
+C1A=WONDER
+
+T=Listen. That's true, we've always had some disagreements.
+W=MINK
+C2A=MEH
+
+T=But even with the budget alterations, I didn't hold a grudge against him!
+W=MINK
+C1A=THINK
+
+T=Actually... He's the one who changed.
+W=MINK
+
+T=He barely talked to me anymore. And when he did, the situation got... tense.
+W=MINK
+C2A=MEH 
+
+T=Lately I could swear he was even trying to avoid me!
+W=MINK
+
+T=I just figured he was too busy but now...
+W=MINK
+
+T=I could never imagine he would end up like this.
+W=MINK
+C2A=SURPRISED 
+TEN=CPC15_MINK_CHOICES
+IT=1
+CLUE=CLUE_HUSH_TENSE
+
+#----------------------
+ID=CPC15_MINK_DRHUSH2
+T=Any idea what could have happened?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH 
+
+T=Honestly? Not the slightest.
+W=MINK
+
+T=I was here all day. He wasn't! I'm sure of it!
+W=MINK
+
+T=Well, the corpse is in the middle of your room.
+W=BROK
+C1A=MEH
+
+T=You should have seen him enter at some point!
+W=BROK
+C1A=ANGRY
+
+T=No! I swear!
+W=MINK
+C2A=SURPRISED 
+
+T=It's like... He magically appeared behind me when you entered the room!
+W=MINK
+
+T=Magic, huh...
+W=BROK
+C1A=MEH
+
+T=I know how this sounds but you've got to believe me!
+W=MINK
+
+T=Right now, I don't believe in anything other than facts.
+W=BROK
+C1A=OPPOSITE
+TEN=CPC15_MINK_CHOICES
+IT=1
+CLUE=CLUE_HUSH_MAGIC
+
+#----------------------
+ID=CPC15_MINK_DRHUSH3
+T=About Dr. Hush...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH 
+
+T=Again?
+W=MINK
+C2A=MOCK
+
+T=It's tough summing up someone's life and personality in a few lines, you know!
+W=MINK
+C1A=ANGRY
+
+T=You'll find out more about him by looking around his office.
+W=MINK
+
+T=(A nice way to say "I'm sick of your questions, do your job")
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_DRHUSH4
+T=I know it will sound harsh but...
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=MINK
+C2A=MEH
+
+T=Do you believe Dr. Hush commited suicide?
+W=BROK
+C1A=MAYBE
+
+T=I can't deny that he had been acting strange recently, so...
+W=MINK
+C2A=MOCK 
+
+T=I guess it's not outside the realm of possibility.
+W=MINK
+
+T=I just find it weird he would do this in my office.
+W=MINK
+C2A=SURPRISED 
+
+T=(Unless he really hated you...)
+W=BROK
+C1A=MEH 
+MOOD=THINK
+CLUE=CLUE_HUSH_SUICIDE
+TEN=CPC15_MINK_CHOICES 
+IT=1
+
+#----------------------
+#= Mink talk - himself
+#----------------------
+ID=CPC15_MINK_HIMSELF1
+T=How long have you been working here?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL 
+
+T=Since I majored in research, about 5 years ago.
+W=MINK
+
+T=We've both been selected to join this high rank facility. The kind of opportunity that you can't turn down!
+W=MINK
+
+T=So you've known each other for a long time?
+W=BROK
+C1A=WONDER
+
+T=Yes. Although we've never really been close.
+W=MINK
+C2A=MOCK
+
+T=Does this mean you don't like each other?
+W=BROK
+C1A=MEH
+
+T=No. That's irrelevant.
+W=MINK
+
+T=We just do our jobs and are entirely dedicated to it.
+W=MINK
+
+T=We dedicate our lives so that humanity can progress.
+W=MINK
+
+T=No friends? No family or children either?
+W=BROK
+C1A=THINK
+
+T=Pfft! Loving a single person? Raising a handful of individuals?!
+W=MINK
+C2A=MOCK
+
+T=We cannot afford to live such a petty life!
+W=MINK
+C1A=WONDER
+
+T=We will be immortalized for our work forever. It will impact the lives of thousands, possibly even millions!
+W=MINK
+
+
+T=But... But...!
+W=BROK
+C1A=READY
+
+T=No but! I made this choice years ago, and I never regretted it for a second!
+W=MINK
+
+T=(What a sad way to live...)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+#----------------------
+ID=CPC15_MINK_HIMSELF2
+T=So. What kind of scientist are you?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=NORMAL
+
+T=I specialize in nanotechnology and biology. Anything that can help humanity to live longer!
+W=MINK
+
+T=We've been studying them for decades! However, a groundbreaking discovery was made in...
+W=MINK
+C1A=MAYBE
+SKIPEND=1
+
+T=Sorry Doc. I'd prefer to stick to the matter at hand.
+W=BROK
+C1A=OPPOSITE
+
+T=Hmmph.
+W=MINK
+C2A=MEH 
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_HIMSELF3
+T=Sorry for earlier. Tell me more about your work.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL 
+
+T=Currently I strive to improve the nanites efficiency.
+W=MINK
+
+T=Could these be used to kill someone?
+W=BROK
+
+T=Doubtful but technically possible. With bad programming, they could destroy the host.
+W=MINK
+C2A=MEH
+
+T=But we've been working on this technology for a while now. This never happens. 
+W=MINK
+
+T=Although...
+W=MINK
+C2A=MOCK 
+
+T=...
+W=MINK
+
+T=Go ahead?
+W=BROK
+
+T=Destructive effects can happen if the nanites were mixed with specific organic elements.
+W=MINK
+
+T=Such as?... Corrosive acid?
+W=BROK
+C1A=MEH
+
+T=That would definitely leave some traces!
+W=MINK
+C2A=HAPPY
+
+T=Could it be possible to destroy a body without external damage?
+W=BROK
+C1A=THINK
+
+T=I think I encountered some plants with this ailment. I would have to check my logs.
+W=MINK
+C2A=MEH
+
+T=Well, let's just assume it happened. How would we know?
+W=BROK
+C1A=MOCK
+
+T=The nanites are trained for survival. Once the host is near death, they leave.
+W=MINK
+
+T=But they couldn't last long on the outside.
+W=MINK
+
+T=You'd find inactive nanites less than three feet away from the body.
+W=MINK
+COMM=About 1 meter
+
+T=(I'd better check the surroundings for any nanites in unexpected places.)
+W=BROK
+MOOD=THINK
+C1A=MAYBE
+
+T=(Can't see them with my own eyes but I'm sure I have the right tool for the job!)
+W=BROK
+MOOD=THINK
+C1A=THINK 
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_HIMSELF4
+T=(I have bothered him enough)
+W=BROK
+C1=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(Got a feeling those nanites played a part in Dr. Hush's demise. I'll need some proof...)
+W=BROK
+MOOD=THINK
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+#----------------------
+#= Mink talk - Tidy
+#----------------------
+ID=CPC15_MINK_TIDY1
+T=What's your relationship with Tidy?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL 
+
+T=He's the maintenance bot. He just comes and goes, doing housework.
+W=MINK
+
+T=Did he come today?
+W=BROK
+
+T=No. Until your arrival, no one entered my office this morning.
+W=MINK
+C2A=MEH
+
+T=Are you certain?
+W=BROK
+C1A=WONDER
+
+T=Hmm... Actually...
+W=MINK
+C2A=MOCK 
+
+T=The guard did check if everything was okay, like he always does. But he didn't enter.
+W=MINK
+
+T=I've noticed the doors close automatically. How does Tidy open them?
+W=BROK
+C1A=THINK
+
+T=Just like us. He pushes the buttons.
+W=MINK
+C2A=NORMAL 
+
+T=Free to roam around, then?
+W=BROK
+C1A=MOCK
+
+T=Yes. Well...
+W=MINK
+C2A=HAPPY
+
+T=Except my room.
+W=MINK
+C1A=THINK
+
+T=I deny him access. He must knock at the door first. Then I allow him entry.
+W=MINK
+C2A=NORMAL 
+
+T=How come?
+W=BROK
+C1A=WONDER 
+
+T=You know... I don't want a bot bursting into my room in the middle of the night. That would be creepy.
+W=MINK
+C2A=MOCK 
+
+T=(Says the creepy scientist)
+W=BROK
+C1A=MEH
+MOOD=THINK
+
+TEN=CPC15_MINK_CHOICES
+IT=1
+CLUE=CLUE_TIDY_DRMINKROOM
+
+#----------------------
+ID=CPC15_MINK_TIDY2
+T=You said Tidy was lying. Is a bot truly capable of lies?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=MINK
+C2A=NORMAL 
+
+T=Usually, no.
+W=MINK
+C1A=THINK
+
+T=But I never programmed it. Keep in mind, Dr. Hush was doing AI experiments.
+W=MINK
+C2A=NORMAL 
+
+T=This could also be the result of a bug in the core.
+W=MINK
+
+T=Tidy could believe what he says is the truth, based on false information.
+W=MINK
+
+T=But you heard the recording. It was Dr. Hush's voice, wasn't it?
+W=BROK
+C1A=WONDER 
+ 
+T=...
+W=MINK
+C2A=MOCK
+
+T=I don't know... Yes, it sounded exactly like him but...
+W=MINK
+
+T=There must be some explanation...!
+W=MINK
+
+T=(Yeah. I just wish you'd give me one.)
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+#----------------------
+ID=CPC15_MINK_TIDY3
+T=Do you think Tidy could have played a role in the murder?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=MEH 
+
+T=I don't see how.
+W=MINK
+
+T=He cannot access my office.
+W=MINK
+
+T=Besides, Dr. Hush is his maker. He could never...
+W=MINK
+SKIPEND=1
+
+T=Hurt his creator directly, yeah.
+W=BROK
+C1A=WONDER 
+
+T=(Let's keep some distance with that reasoning.)
+W=BROK
+MOOD=THINK
+
+T=(My trust with technology is limited. A true detective never turns down any lead!)
+W=BROK
+C1A=READY 
+MOOD=THINK
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+#----------------------
+#= Mink talk - The investigation
+#----------------------
+ID=CPC15_MINK_INVESTIGATION1
+T=When can we expect the result of your investigation?
+W=MINK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL 
+
+T=Well...
+W=BROK
+TEN=CPC15_MINK_CHECKINVESTIGATION
+
+#----------------------
+ID=CPC15_MINK_INVESTIGATION2
+T=Are you done investigating?
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK 
+TEN=CPC15_MINK_CHECKINVESTIGATION
+
+
+#----------------------
+ID=CPC15_MINK_INVESTIGATION_NOTYET
+T=No. I didn't finish interrogating everyone.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=You sure did interrogate me!
+W=MINK
+C2A=ANGRY
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_INVESTIGATION_MANY
+T=(Can't shake the feeling that I may have missed some clues. I probably shouldn't make an announcement yet.)
+W=BROK
+A=THINK
+MOOD=THINK
+TEN=CPC15_INVESTIGATION_CHOICE
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INVESTIGATION_SEVERAL
+T=(I'm certain I've missed one or two clues.)
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL 
+MOOD=THINK
+
+T=(Maybe I still have enough evidence for my theory?)
+W=BROK
+C1A=WONDER 
+TEN=CPC15_INVESTIGATION_CHOICE
+IT=1
+MOOD=THINK
+
+
+#----------------------
+ID=CPC15_INVESTIGATION_NO
+T=Be patient. This isn't an ordinary case.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=MEH 
+
+T=Too bad. All this stress is killing me!
+W=MINK
+C2A=ANGRY 
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_INVESTIGATION_ANYWAY
+T=(Buuut... I'm getting hungry, so...)
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL 
+MOOD=THINK
+
+T=Okay. I guess it's worth a shot.
+W=BROK
+C1A=ALRIGHT
+
+T=Are you sure? You don't seem that confident.
+W=MINK
+C2A=MOCK 
+
+T=I am. Mostly.
+W=BROK
+C1A=HAPPY
+
+T=Very well... I'll gather everyone.
+W=MINK
+C2A=NORMAL 
+TEN=CPC15_INVESTIGATION_GATHER
+
+
+
+#----------------------
+ID=CPC15_MINK_INVESTIGATION_YES1
+T=Yes. I'm ready to expose the truth.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=NORMAL 
+
+T=Impressive!
+W=MINK
+C2A=HAPPY
+
+T=Let's begin, then.
+W=MINK
+TEN=CPC15_INVESTIGATION_GATHER
+
+#----------------------
+ID=CPC15_MINK_INVESTIGATION_YES2
+T=I'm ready. Gather everyone!
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=NORMAL 
+
+T=All right.
+W=MINK
+TEN=CPC15_INVESTIGATION_GATHER
+
+#----------------------
+#= Mink welcome
+#----------------------
+ID=CPC15_MINK_WELCOME1
+T=Dr. Mink?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL 
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+#----------------------
+ID=CPC15_MINK_WELCOME2
+T=I need to understand something.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=MINK
+C2A=MEH 
+
+T=You're not the only one.
+W=MINK
+C2A=MOCK 
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+#----------------------
+ID=CPC15_MINK_WELCOME3
+T=So, detective? How long is this going to take?
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK 
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+#----------------------
+#= Mink exit
+#----------------------
+ID=CPC15_MINK_EXIT1
+T=I'll look around for clues.
+W=BROK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=MEH 
+
+T=You better find out the culprit, because I wasn't involved in this!
+W=MINK
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=CPC15_MINK_EXIT2
+T=Just a moment. We'll continue this discussion later.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=MINK
+C2A=NORMAL 
+
+T=I'm not the only one here! Interrogate the others!
+W=MINK
+C2A=ANGRY 
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+#= Mink - Inventory
+#----------------------
+ID=CPC15_MINK_INV_DEFAULT1
+T=Does this seem important to you?
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK 
+C2A=NORMAL 
+
+T=What kind of question is this?
+W=MINK
+C2A=MEH 
+
+T=Just reply. Yes or no?
+W=BROK
+C1A=MOCK 
+
+T=No!
+W=MINK
+C2A=ANGRY 
+
+T=Okay.
+W=BROK
+C1A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_DEFAULT2
+T=I was wondering if...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL 
+SKIPEND=1
+
+T=That's amazing! How are you storing all these things?
+W=MINK
+C1A=SURPRISED
+
+T=I'd love to study this mystery!
+W=MINK
+
+T=Couldn't you focus on the one at hand, first?
+W=BROK
+C1A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_TRAMPPRESCR_BEFORE
+T=You're a doctor, right?
+W=BROK
+C1=BROK
+C1A=WONDER 
+C2=MINK
+C2A=NORMAL
+
+T=Depends.
+W=MINK
+C2A=HAPPY
+
+T=I need that medical prescription cancelled... Or something like that.
+W=BROK
+C1A=MAYBE 
+
+T=You mean updated.
+W=MINK
+
+T=Yeah! That.
+W=BROK
+
+T=Well, I'm not that kind of doctor.
+W=MINK
+C2A=MEH
+
+T=Darn...
+W=BROK
+C1A=STUPID
+
+T=But you're in luck. I've got just the thing!
+W=MINK
+C2A=MOCK 
+
+T=You do? Great!
+W=BROK
+C1A=HAPPY 
+
+T=Give me this.
+W=MINK
+C2A=HAPPY
+TEN=CPC15_MINK_UPDATED
+
+T=There you go.
+W=MINK
+
+T=Already?
+W=BROK
+C1A=MEH
+
+T=Thank you! You're a life saver.
+W=BROK
+C1A=ALRIGHT 
+
+T=And I mean... Literally.
+W=BROK
+COMM=Brok is referring to the tramp who urgently needs this medicine
+
+T=Take this into consideration when solving this case.
+W=MINK
+
+T=That wouldn't be very neutral...
+W=BROK
+
+T=But I'm grateful. Thanks.
+W=BROK
+C1A=HAPPY 
+
+T=Sure.
+W=MINK
+C2A=MEH 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_TRAMPPRESCR_AFTER
+T=This again? I've already updated it.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK
+
+T=Oh... That's right.
+W=BROK
+C1A=MOCK 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_MONEY
+T=(He doesn't need it!)
+W=BROK
+A=MEH
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_LABFLOWER
+T=Hmm... I've seen this somewhere already.
+W=MINK
+C1=BROK
+C1A=THINK 
+C2=MINK
+C2A=MOCK 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_CATFUR
+T=Nice wig!
+W=MINK
+C1=BROK
+C1A=THINK 
+C2=MINK
+C2A=NORMAL 
+
+T=That's not...
+W=BROK
+C1A=SURPRISED
+
+T=Hmm. 1000 Unis and it's yours!
+W=BROK
+C1A=MOCK 
+
+T=I'll pass.
+W=MINK
+C2A=MEH 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_INV_LAMPMINK
+T=My poor lamp...
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED 
+
+T=Well, good news! You can take Dr. Hush's. He doesn't need his anymore!
+W=BROK
+C1A=HAPPY 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_LAMPHUSH
+T=That's Dr. Hush's?
+W=MINK
+C1=BROK
+C1A=THINK 
+C2=MINK
+C2A=NORMAL 
+
+T=Maybe you should analyze it with my tablet.
+W=MINK
+
+T=Why not!
+W=BROK
+C1A=ALRIGHT 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_INV_MAGNIFY
+T=See? I'm a real detective!
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=MINK
+C2A=MEH 
+
+T=I was expecting some badge.
+W=MINK
+
+T=This is way cooler!
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_MAPBUILDING
+T=What's that thing in the middle?
+W=BROK
+C1=BROK
+C1A=WONDER 
+C2=MINK
+C2A=NORMAL 
+
+T=Across the room? The vent duct.
+W=MINK
+
+T=Interesting...
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_PILLHUSH
+T=Dr. Hush's medication?
+W=MINK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL 
+
+T=Which drug exactly?
+W=BROK
+
+T=No idea. Ask my tablet!
+W=MINK
+C2A=MEH 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=CPC15_MINK_INV_TABLETHUSH
+T=That's not mine!
+W=MINK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=MOCK 
+
+T=I know that! Just unlock it!
+W=BROK
+C1A=READY 
+
+T=Only Dr. Hush can.
+W=MINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_INV_WRAPPING
+T=Mc Fleas's Antburger. I love these too!
+W=BROK
+C1=BROK
+C1A=HAPPY 
+C2=MINK
+C2A=NORMAL 
+
+T=So you're a gourmet! Who would have thought?
+W=MINK
+C2A=HAPPY 
+
+T=Indeed!
+W=BROK
+C1A=ALRIGHT 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_INV_SCREW
+T=...!
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+
+T=This is...!
+W=MINK
+
+T=A screw?
+W=BROK
+
+T=Not just any screw!
+W=MINK
+C2A=MEH
+
+T=Bolt shaped screws are highly sought after by collectors!
+W=MINK
+C2A=NORMAL
+
+T=And it's finally mine!
+W=MINK
+C2A=HAPPY
+
+T=Hey, wait!
+W=BROK
+C1A=ANGRY
+
+T=I can't. This is a precious memory.
+W=BROK
+C1A=DOWN
+
+T=Very well. 10,000 Unis!
+W=MINK
+C2A=NORMAL
+
+T=Huh?! But...
+W=BROK
+C1A=WONDER
+
+T=Shut up and take my money!
+W=MINK
+C2A=ANGRY
+TEN=CPC15_MINK_INV_SCREW_CHOICE
+
+
+#----------------------
+ID=CPC15_MINK_INV_SCREW_NO
+T=Sorry. I've grown fond of it.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=MINK
+C2A=NORMAL
+
+T=Aww...
+W=MINK
+C2A=SAD
+TEN=CPC15_MINK_INV_HOOVER_NO1
+IT=1
+
+
+#----------------------
+ID=CPC15_MINK_INV_SCREW_YES
+T=Deal!
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=NORMAL
+
+T=Awesome!
+W=MINK
+C2A=HAPPY
+C2_EYESHUT=1
+TEN=CPC15_MINK_INV_SCREW_YES1
+
+
+#----------------------
+ID=CPC15_MINK_INV_HOOVER
+T=Hmm...!
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=HAPPY
+
+T=Why the smile?
+W=BROK
+C1A=WONDER
+
+T=I could use this cleaning bot!
+W=MINK
+C2A=NORMAL
+
+T=Really? This old thing?!
+W=BROK
+
+T=What about Tidy?
+W=BROK
+
+T=Exactly. With this, I would never need him in my room ever again!
+W=MINK
+
+T=I want it!
+W=MINK
+C2A=ANGRY
+
+T=Okay but... it's broken.
+W=BROK
+C1A=MAYBE
+
+T=Oh, come on! I can repair this thing!
+W=MINK
+C2A=HAPPY
+
+T=I'll buy it for... Hmm...
+W=MINK
+C2A=MOCK
+
+T=A thousand Unis.
+W=MINK
+C2A=NORMAL
+
+T=That much?!
+W=BROK
+C1A=SURPRISED
+TEN=CPC15_MINK_INV_HOOVER_CHOICE
+
+#----------------------
+ID=CPC15_MINK_INV_HOOVER_YES
+T=Deal!
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=NORMAL
+
+T=Yes!
+W=MINK
+C2A=HAPPY
+C2_EYESHUT=1
+
+T=Not such a bad day, after all!
+W=MINK
+C2A=HAPPY
+TEN=CPC15_MINK_INV_HOOVER_YES1
+
+
+#----------------------
+ID=CPC15_MINK_INV_HOOVER_NO
+T=Sorry. I've grown fond of it.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=MINK
+C2A=NORMAL
+
+T=Aww...
+W=MINK
+C2A=SAD
+TEN=CPC15_MINK_INV_HOOVER_NO1
+IT=1
+
+#----------------------
+#= Mink talk - Think
+#----------------------
+ID=CPC15_MINK_THINK1
+T=(He doesn't really look trustworthy.)
+W=BROK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=NORMAL 
+MOOD=THINK
+
+T=(I'd better try and squeeze the facts out of him. See if there are contradictions in his statements.)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+TEN=CPC15_MINK_CHOICES
+IT=1
+
+
+
+#----------------------
+#= When Ott isn't here
+#----------------------
+ID=CPC15_MINK_FIRSTSTAGE
+T=So, detective? How long is this going to take?
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK 
+
+T=Right. It's time.
+W=BROK
+C1A=READY
+
+T=We should all gather in your room.
+W=BROK
+
+T=Very well. I'll bring the others.
+W=MINK
+C2A=NORMAL 
+TEN=CPC15_FIRSTSTAGE
+
+
+
+
+
+#--------------------------------------------------------------------------------------------------
+#									MISSING CLUES
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_MONITORING
+T=(I wonder. Is there any monitoring of the activity in this lab?)
+W=BROK
+A=WONDER 
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_RESTROOM
+T=(Missed somethin' in the restroom?)
+W=BROK
+A=THINK 
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_CEILING
+T=(I keep looking at what's on the ground. What if a clue was up there instead?)
+W=BROK
+A=WONDER 
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_HUSHROOM
+T=(I didn't check Dr. Hush's room thoroughly enough.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_MINKROOM
+T=(Did I miss something in Dr. Mink's room?)
+W=BROK
+A=WONDER 
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_BODY
+T=(I should take a better look at Dr. Hush's body...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_TABLET
+T=(Hmm... Maybe I should "play" a little more with Dr. Mink's tablet.)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_INTERROGATE
+T=(Pretty sure I didn't finish interrogating everyone.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#--------------------------------------------------------------------------------------------------
+ID=CPC15_MISSINGCLUE_NANITES
+T=(Dr. Mink is a nanites specialist. Maybe I should check for nanites in unusual places?)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#----------------------
+ID=CPC15_JUMPBED1
+T=What?...
+W=OTT
+C1=OTT
+C1A=SURPRISED 
+VLOW=1
+NB=1
+D=60
+
+#----------------------
+ID=CPC15_JUMPBED2
+T=Are you crazy?
+W=MINK
+C1=MINK
+C1A=ANGRY 
+NB=1
+D=90
+
+
+#----------------------
+ID=CPC15_INVESTIGATION_TIME1
+T=Hmm... Ott seems to have an idea.
+W=BROK
+A=THINK
+
+T=Let's see what he's got.
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+ID=CPC15_INVESTIGATION_TIME
+T=I feel I've got all the hints I need.
+W=BROK
+A=THINK
+
+T=Time to gather everyone. Let's talk to Dr. Mink.
+W=BROK
+
+
+
+###############################################
+# PROOFREAD		TristanStoneVA   08/09/2019
+# EXPRESSIONS - Pete - 16/08/2019
+###############################################

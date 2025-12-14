@@ -1,0 +1,2378 @@
+﻿#-------------------------------
+#=HACKER OUTSIDE
+#-------------------------------
+
+
+#----------------------
+#= Talking to RJ
+#----------------------
+ID=PC14B_RJ_FIRST1
+T=R.J.?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+CONTEXT=Day 2 - R.J. is guarding the entrance to the Hacker's place. He's angry at Brok because he either tricked him or knocked him out to escape jail
+
+T=You!
+W=RJ
+C2A=ANGRY
+C1A=SURPRISED
+
+T=Because of you...
+W=RJ
+C2A=ANGRY
+
+T=All your fault!
+W=RJ
+
+T=You mean... 
+W=BROK
+C1A=THINK
+
+T=Ah... I get it. Wes did mention firing you earlier.
+W=BROK
+C1A=WONDER
+
+T=Yeah!
+W=RJ
+
+T=Then...
+W=BROK
+C1A=THINK
+
+T=How come you've still got your police attire?
+W=BROK
+
+T=Da boss Wes wanted me to keep'em.
+W=RJ
+C2A=OPPOSITE
+
+T=Is that so...
+W=BROK
+CLUE=CLUE_RJ_COPCLOTHES
+
+T=Who are you working for, then?
+W=BROK
+C1A=ANGRY
+
+T=Not your business.
+W=RJ
+
+T=Oh, come on! It's obvious you're guarding this entrance.
+W=BROK
+C1A=ALRIGHT
+
+T=Get lost.
+W=RJ
+C2A=ANGRY
+
+T=(He won't tell but...)
+W=BROK
+C1A=MEH
+MOOD=THINK
+
+T=(Two-to-one the man I'm looking for is inside!)
+W=BROK
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+#= Convince
+#----------------------
+ID=PC14B_RJ_CONVINCE1
+T=Listen.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=RJ
+C2A=OPPOSITE
+
+T=I'm truly sorry you lost your job. I never meant for this to happen.
+W=BROK
+
+T=Hooey baloney.
+W=RJ
+
+T=Just needed to get out of that cell, by any means possible.
+W=BROK
+C1A=DOWN
+
+T=Ya see, I have a son...
+W=BROK
+SKIPEND=1
+
+T=Dun care.
+W=RJ
+
+T=I made a promise to him. I just couldn't break it.
+W=BROK
+C1A=THINK
+
+T=Liar.
+W=RJ
+
+T=(No use. Gotta try something else.)
+W=BROK
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_CONVINCE2
+T=Relax. You shouldn't worry.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=OPPOSITE
+
+T=After all... You've found a new job, haven't you?
+W=BROK
+
+T=Many people can have a use for a big guy like yourself!
+W=BROK
+C1A=ALRIGHT
+
+T=A use?...
+W=RJ
+
+T=Use me?!
+W=RJ
+C2A=ANGRY
+
+T=Erm... I didn't mean it like that...
+W=BROK
+C1A=WONDER
+
+T=Sorry.
+W=BROK
+C1A=HAPPY
+
+T=We're... still friends, right?...
+W=BROK
+
+T=Friends?! Pft!
+W=RJ
+
+T=(Argh! It's raining splutter!)
+W=BROK
+C1A=CONFUSED
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_CONVINCE3
+T=Tell me. What can I do for you?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+
+T=Get out of my sight.
+W=RJ
+
+T=Well...
+W=BROK
+C1A=MAYBE
+
+T=Can't do but let's see. 
+W=BROK
+
+T=Surely I can offer you something to even the score?
+W=BROK
+C1A=THINK
+
+T=GET. OUT!
+W=RJ
+C2A=ANGRY
+
+T=...I'll take that as a yes.
+W=BROK
+C1A=ALRIGHT
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+#= Think
+#----------------------
+ID=PC14B_RJ_THINK1
+T=(Good job, Brok...)
+W=BROK
+C1=BROK
+C1A=DOWN
+MOOD=THINK
+
+T=(You've ruined yet another existence.)
+W=BROK
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+
+#----------------------
+#= Welcome
+#----------------------
+ID=PC14B_RJ_WELCOME1
+T=Nice job, soldier! You didn't move an inch!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=RJ
+C2A=OPPOSITE
+
+T=...?
+W=RJ
+
+T=(I guess he never was in the military)
+W=BROK
+C1A=MEH
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_WELCOME2
+T=May I enter?
+W=BROK
+C1=BROK
+C1A=READY
+C2=RJ
+C2A=OPPOSITE
+
+T=No!
+W=RJ
+C2A=ANGRY
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_WELCOME3
+T=Okay, so I can't enter.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+
+T=At least let me take a peek!
+W=BROK
+C1A=MOCK
+
+T=I don't have one.
+W=RJ
+
+T=...(Sigh.)
+W=BROK
+C1A=TIRED
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+#= About entering
+#----------------------
+ID=PC14B_RJ_ENTER1
+T=Let's say... I'm not me.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+
+T=You... not you?
+W=RJ
+C2A=SURPRISED
+
+T=Yes. I'm someone else.
+W=BROK
+C1A=MEH
+
+T=Oh!
+W=RJ
+
+T=Can I enter, then?
+W=BROK
+
+T=No!
+W=RJ
+C2A=OPPOSITE
+
+T=You're a croc.
+W=RJ
+
+T=No croc allowed.
+W=RJ
+
+T=But I said I'm not me!
+W=BROK
+C1A=READY
+
+T=...
+W=RJ
+C2A=WONDER
+
+T=Stop confusing me.
+W=RJ
+C2A=OPPOSITE
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_ENTER2
+T=So... No croc allowed, huh?
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=RJ
+C2A=OPPOSITE
+
+T=What if I say... I'm actually a cat?
+W=BROK
+C1A=WONDER
+
+T=Argh!
+W=RJ
+C2A=SURPRISED
+
+T=Stay away! Or I'll get sick!
+W=RJ
+
+T=True. You're allergic to cat fur.
+W=BROK
+
+T=(Hmm...)
+W=BROK
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_ENTER3
+T=(Judging from his replies, I think he lets some people pass.)
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+MOOD=THINK
+
+T=(But there are so many possibilities...)
+W=BROK
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_ENTER_ELEPHANT
+T=I'm an elephant!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=RJ
+C2A=NORMAL
+
+T=Oh? Okay.
+W=RJ
+C2A=WONDER
+
+T=Come.
+W=RJ
+C2A=NORMAL
+C1A=THINK
+
+T=(...!)
+W=BROK
+MOOD=THINK
+
+T=Wait!
+W=RJ
+C2A=SURPRISED
+
+T=Ya're a croc! Not an elephant!
+W=RJ
+C2A=ANGRY
+
+T=Liar!!!
+W=RJ
+
+T=Erm... But...
+W=BROK
+C1A=HAPPY
+SKIPEND=1
+
+T=OUT!!!
+W=RJ
+
+T=(Aww... It almost worked!)
+W=BROK
+C1A=DOWN
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+#= Distract
+#----------------------
+ID=PC14B_RJ_DISTRACT1
+T=Look! Over there!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=RJ
+C2A=NORMAL
+
+T=A flying pink elephant!
+W=BROK
+
+T=Oh?
+W=RJ
+C2A=WONDER
+
+T=Can enter.
+W=RJ
+C2A=NORMAL
+COMM=RJ only allows elephants to enter but Brok doesn't know yet
+
+T=Uh?
+W=BROK
+C1A=WONDER
+
+T=Hey? Where is that elephant?
+W=RJ
+
+T=He... must have flown away.
+W=BROK
+
+T=Oh.
+W=RJ
+
+T=(What was that?)
+W=BROK
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC14B_RJ_DISTRACT2
+T=I can hear someone shouting your name!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=NORMAL
+
+T=What? Where?
+W=RJ
+C2A=SURPRISED
+
+T=It came from inside!
+W=BROK
+C1A=MOCK
+
+T=Da boss?...
+W=RJ
+C2A=WONDER
+
+T=Don't hear anything.
+W=RJ
+C2A=NORMAL
+
+T=You sure? Better check.
+W=BROK
+C1A=THINK
+
+T=Nah. I have good ears.
+W=RJ
+
+T=Stop tricking me!
+W=RJ
+C2A=OPPOSITE
+
+T=(Not so dumb after all...)
+W=BROK
+C1A=MEH
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_DISTRACT3
+T=(He won't be fooled so easily.)
+W=BROK
+C1=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(Time to think...)
+W=BROK
+C1=BROK
+C1A=MAYBE
+MOOD=THINK
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+
+#----------------------
+#= Provoke
+#----------------------
+ID=PC14B_RJ_PROVOKE1
+T=Yeah, well you got what you deserved! You fat... meanie!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=RJ
+C2A=NORMAL
+TEN=PC14B_RJ_RELATIONSHIP
+
+T=What...?!
+W=RJ
+C2A=SURPRISED
+
+T=Oh, did I say meanie? I meant... menial!
+W=BROK
+
+T=...
+W=RJ
+C2A=OPPOSITE
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_PROVOKE2
+T=You're so ugly! I bet your mother suffocated when she gave birth to you!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=RJ
+C2A=OPPOSITE
+TEN=PC14B_RJ_RELATIONSHIP
+
+T=.....
+W=RJ
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_PROVOKE3
+T=Guarding is the perfect job for you! With so much fat, no one could move you out of the way!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=RJ
+C2A=OPPOSITE
+TEN=PC14B_RJ_RELATIONSHIP
+
+T=.......
+W=RJ
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_PROVOKE4
+T=I'll buy you a toothbrush! With such terrible breath you obviously can't afford one.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=RJ
+C2A=OPPOSITE
+TEN=PC14B_RJ_RELATIONSHIP
+
+T=...........
+W=RJ
+TEN=PC14B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC14B_RJ_PROVOKE5
+T=So, two Bananas walk into a bar and...
+W=BROK
+C1=BROK
+C1A=MEH
+C2=RJ
+C2A=OPPOSITE
+SKIPEND=1
+
+T=Shut up!!!
+W=RJ
+C1A=CONFUSED
+C2A=ANGRY
+
+T=But it's a good joke!
+W=BROK
+C1A=ALRIGHT
+
+T=ENOUGH!!!
+W=RJ
+TEN=PC14B_RJ_FIGHT
+
+#----------------------
+#= Hit RJ
+#----------------------
+ID=PC14B_RJ_HIT1
+T=...
+W=RJ
+C1=BROK
+C1A=ANGRY
+C2=RJ
+C2A=NORMAL
+COMM=When we hit R.J., he doesn't seem to react
+
+T=Erm...
+W=BROK
+C1A=THINK
+
+T=(No reaction?...)
+W=BROK
+MOOD=THINK
+
+#----------------------
+ID=PC14B_RJ_HIT2
+T=.......
+W=RJ
+C1=BROK
+C1A=SURPRISED
+C2=RJ
+C2A=NORMAL
+
+T=Oops!...
+W=BROK
+C1A=CONFUSED
+
+#----------------------
+ID=PC14B_RJ_HIT3
+T=................
+W=RJ
+C1=BROK
+C1A=READY
+C2=RJ
+C2A=NORMAL
+
+T=...
+W=BROK
+
+T=(Is he a statue or what?)
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC14B_RJ_HIT4
+T=........................
+W=RJ
+C1=BROK
+C1A=ALRIGHT
+C2=RJ
+C2A=OPPOSITE
+
+T=You're like a punching bag! So much fun!
+W=BROK
+
+
+#----------------------
+ID=PC14B_RJ_HIT5
+T=YA'RE GONNA GET IT!!!
+W=RJ
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=ANGRY
+TEN=PC14B_RJ_FIGHT
+
+
+#----------------------
+#= Exit
+#----------------------
+ID=PC14B_RJ_EXIT1
+T=I give up.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=RJ
+C2A=NORMAL
+
+T=Good!
+W=RJ
+C2A=COCKY
+
+
+#----------------------
+ID=PC14B_RJ_EXIT2
+T=I'll come back!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=RJ
+C2A=NORMAL
+
+T=Ya better not!
+W=RJ
+C2A=OPPOSITE
+
+
+#----------------------
+#= Inventory
+#----------------------
+ID=PC14B_RJ_INV_DEFAULT1
+T=Here's for you!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=RJ
+C2A=NORMAL
+
+T=What dis?
+W=RJ
+C2A=WONDER
+
+T=Doesn't matter! Take it!
+W=BROK
+
+T=No.
+W=RJ
+C2A=NORMAL
+
+T=Hmph... You could at least thank me!
+W=BROK
+C1A=TIRED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC14B_RJ_INV_DEFAULT2
+T=Would this help you hibernate?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+
+T=Nah. Dun hibernate.
+W=RJ
+
+T=Too bad. That would help. (me)
+W=BROK
+C1A=OPPOSITE
+
+#----------------------
+#= Gameover
+#----------------------
+ID=PC14B_RJ_GAMEOVER1
+T=Blasted croc!
+W=RJ
+C1=RJ
+C1A=ANGRY
+
+T=Broke your neck! Ya fool!
+W=RJ
+
+T=...
+W=RJ
+C1A=SURPRISED
+
+T=Oh... N-no...
+W=RJ
+
+T=I... am... a killer?...
+W=RJ
+
+T=...
+W=RJ
+C1A=OPPOSITE
+
+T=You...
+W=RJ
+
+T=You ruined my life! Even more!
+W=RJ
+C1A=ANGRY
+
+T=AAAARGH!!! I HATE YOU!!!
+W=RJ
+TEN=GAMEOVER
+
+
+#----------------------
+#= RJ lost
+#----------------------
+ID=PC14B_RJ_BEATEN1
+T=He's okay. Just stunned.
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=I hate doing this but... You've forced me, buddy.
+W=BROK
+
+T=Glad I made it out alive, though. He packs quite the punch!
+W=BROK
+C1A=WORRIED
+
+
+#----------------------
+#= RJ prevents from going inside
+#----------------------
+ID=PC14B_RJ_PREVENTS1
+T=...
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+
+T=May I...?
+W=BROK
+C1A=WONDER
+
+T=Nuh-uh.
+W=RJ
+
+#----------------------
+ID=PC14B_RJ_PREVENTS2
+T=Let me through!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=RJ
+C2A=NORMAL
+
+T=No.
+W=RJ
+
+T=But... It's a matter of life and death!
+W=BROK
+
+T=Then die.
+W=RJ
+C2A=OPPOSITE
+
+
+
+#-----------------------------
+#= RJ using inventory on him
+#-----------------------------
+ID=PC14B_RJ_WINGS1
+T=Even he wouldn't be fooled by those wings alone.
+W=BROK
+A=ANGRY
+
+#-----------------------------
+ID=PC14B_RJ_PIPECHUNK1
+T=Hmm. The pipe alone wouldn't be enough. Any way to improve this?
+W=BROK
+A=THINK
+
+#-----------------------------
+ID=PC14B_RJ_STRING1
+T=Somehow I doubt I could tie him up with that string.
+W=BROK
+A=ALRIGHT
+
+#-----------------------------
+ID=PC14B_RJ_IDEA1
+T=Sounds like an idea! But I'm not quite ready yet.
+W=BROK
+A=ALRIGHT
+
+T=Let's try combining more stuff first!
+W=BROK
+A=READY
+
+#----------------------
+#= Using disguise
+#----------------------
+ID=PC14B_RJ_DISGUISE1
+T=...
+W=BROK
+C1=BROK
+C1A=DISGUISE
+C2=RJ
+C2A=NORMAL
+COMM=Brok disguised himself as an elephant to fool R.J.
+
+T=...?
+W=RJ
+C2A=WONDER
+
+T=Who are you? What you want?
+W=RJ
+C2A=NORMAL
+COMM=RJ doesn't recognize Brok under his disguise so he should talk in a formal way
+
+T=(Cough, cough)
+W=BROK
+
+T=May... I... enter...?
+W=BROK
+
+T=You're an elephant?
+W=RJ
+C2A=SURPRISED
+
+T=Yup.
+W=BROK
+
+T=I mean... (Cough) Yes, obviously.
+W=BROK
+
+T=Hmm.
+W=RJ
+C2A=WONDER
+TEN=PC14B_RJ_MOVESAWAY
+
+T=Alright. Enter.
+W=RJ
+C2A=NORMAL
+
+T=Good!
+W=BROK
+TEN=PC14B_TO_PC14C_ENTER
+
+#----------------------
+#= Pipe
+#----------------------
+ID=PC14B_PIPE1
+T=An old rubber-made pipe.
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+T=Past rulers made heavy use of these in the Slums as a cheaper alternative.
+W=BROK
+
+T=Before they realized they crumbled into pieces after a few years.
+W=BROK
+A=DOWN
+
+#----------------------
+ID=PC14B_PIPE2
+T=It's just rubbish. An interesting piece of rubbish, though!
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC14B_PIPE_CUT1
+T=I got the best part. One chunk should be enough!
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC14B_PIPE_CUTTING1
+T=Hmm...
+W=BROK
+A=WONDER
+TEN=PC14B_PIPE_FADEOUT
+
+#----------------------
+ID=PC14B_PIPE_CUTTING2
+T=This part is still intact. Let's try cutting here...
+W=BROK
+A=THINK
+
+T=Then the other side...
+W=BROK
+A=THINK
+TEN=PC14B_PIPE_FADEIN
+SOUND=envelope_rip
+
+#----------------------
+ID=PC14B_PIPE_CUTTING3
+T=Perfect!
+W=BROK
+A=ALRIGHT
+TEN=PC14B_PIPECHUNK_GET
+
+
+#-------------------------------------------------------------------------------------
+#= Day 2 end of day
+#-------------------------------------------------------------------------------------
+ID=PC14B_DOOR_STORY190
+T=Hmm... Looks like my hacker friend went away.
+W=BROK
+A=THINK
+CONTEXT=Day 2 end of day - RJ isn't here
+
+T=Or locked himself in.
+W=BROK
+A=WONDER
+
+#-------------------------------------------------------------------------------------
+#= Coming with Dr. Gherkin
+#-------------------------------------------------------------------------------------
+ID=PC14B_GHERKIN_FIRST
+T=R.J.!
+W=BROK
+A=SURPRISED
+C1=BROK
+C1A=THINK
+CONTEXT=Day 3 - Come to this room with Dr. Gherkin and meet R.J. again in front of the Hacker's entrance
+
+T=You know this policeman?
+W=GHERKIN
+C2=GHERKIN
+C2A=NORMAL
+
+T=Yeah. With him around, that place is safe.
+W=BROK
+C1A=READY
+
+T=A-alright. I'll be over there fixing the Pipe-Pill then.
+W=GHERKIN
+TEN=PC14B_GHERKIN_GOESPIPEPILL
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_FIRSTBAD
+T=...
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+COMM=If R.J. has bad relationship with Brok
+
+T=I assume you got your job back, then?
+W=BROK
+
+T=Yeah.
+W=RJ
+
+T=But no thanks to you!
+W=RJ
+
+T=Sorry. I intended to convince him today but you beat me to it.
+W=BROK
+C1A=WONDER
+TEE=PC14B_GHERKIN_MESSAGEDEE
+TEN=PC14B_GHERKIN_FIRSTNEXT
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_FIRSTGOOD
+T=Hey, pal. (Cough)
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=HAPPY
+COMM=If R.J. has good relationship with Brok
+
+T=Got your job back?
+W=BROK
+C1A=HAPPY
+
+T=Yeah. Hacker reconsidered.
+W=RJ
+
+
+T=I'm glad. I intended to convince him, but you beat me to it!
+W=BROK
+TEE=PC14B_GHERKIN_MESSAGEDEE
+TEN=PC14B_GHERKIN_FIRSTNEXT
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_FIRSTNEXT
+T=...?
+W=BROK
+A=WONDER
+COMM=Brok receives a text message on his phone
+
+T=Another message...
+W=BROK
+TEN=PC14B_GHERKIN_SHOWMESSAGE
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_FIRST3
+T=Enough. I need to clear that up.
+W=BROK
+A=ANGRY
+
+T=Who's sending me these?
+W=BROK
+TEN=PC14B_GHERKIN_SHOWMESSAGEEND
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ1
+T=(Cough, cough)
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=SAD
+CONTEXT=Talk to R.J. who didn't take his pill and is very sick
+
+T=You don't look well.
+W=BROK
+
+T=No pill.
+W=RJ
+
+T=Should have guessed.
+W=BROK
+C1A=MAYBE
+
+T=Hold on a bit. The doctor here is fixing the Pipe-Pills. You should be able to get one soon.
+W=BROK
+TEN=PC14B_GHERKIN_RJCHECK2
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJBAD1
+T=Dun want your help.
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+
+T=Come on! Don't be stupid!
+W=BROK
+C1A=ANGRY
+
+T=(Cough, cough)
+W=RJ
+
+T=In the meantime, I'd like to have a word to your boss.
+W=BROK
+C1A=MOCK
+
+T=No. Get outta here.
+W=RJ
+
+T=So that's how it's gonna be?
+W=BROK
+C1A=OPPOSITE
+
+T=Very well. If it's a fight you want...
+W=BROK
+C1A=FURIOUS
+
+T=(Cough, cough, cough)
+W=RJ
+
+T=Seriously, man. You can barely stand on your feet.
+W=BROK
+C1A=ANGRY
+
+T=You'd never win.
+W=BROK
+
+T=...
+W=RJ
+C2A=SAD
+
+T=Okay. Dun care.
+W=RJ
+TEN=PC14B_RJ_MOVESAWAY
+
+T=Enter.
+W=RJ
+
+T=Good decision.
+W=BROK
+C1A=MEH
+TEN=PC14B_TO_PC14C_ENTER
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJGOOD1
+T=Good. (Cough, cough)
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+
+T=(Cough, cough)
+W=RJ
+
+T=(I should watch over him. He's really not okay...)
+W=BROK
+C1A=DOWN
+MOOD=THINK
+
+T=In the meantime, I'd like to have a word to your boss.
+W=BROK
+C1A=THINK
+
+T=May I enter?
+W=BROK
+C1A=MAYBE
+
+T=Yeah. You're a client now. (Cough)
+W=RJ
+
+T=Nice, thanks.
+W=BROK
+C1A=HAPPY
+TEN=PC14B_TO_PC14C_ENTER
+
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ2
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+CONTEXT=After exiting the hacker's place, R.J. is on the ground, unconscious
+
+T=...
+W=RJ
+C2=RJ
+C2A=SAD
+C2_EYESHUT=1
+
+T=He's barely breathing...
+W=BROK
+C1A=MAYBE
+C2=NONE
+
+T=The pollution must be affecting him!
+W=BROK
+
+T=The situation is getting critical!
+W=BROK
+C1A=TIRED
+TEN=PC14B_GHERKIN_BROKLOOKPIPE
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ2B
+T=Hey, Doctor! Come...
+W=BROK
+A=DOWN
+TEE=PC14_GHERKIN_SHOWCAMERA
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ2C
+T=What?!
+W=BROK
+A=SURPRISED
+
+T=Where the heck is he?!
+W=BROK
+TEN=PC14B_GHERKIN_BACKCAMERA
+
+T=Oh, great... I had a feeling this mission wouldn't go well.
+W=BROK
+A=STUPID
+
+T=With R.J. at death's door and the scientist out there alone, I have two emergencies on my plate...
+W=BROK
+A=OPPOSITE
+
+T=What should I do?!
+W=BROK
+A=WORRIED
+TEN=CLICKERS_BACK
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ_COLLAPSED
+T=...
+W=BROK
+A=THINK
+
+T=No good...
+W=BROK
+
+T=He won't be getting any better without help!
+W=BROK
+A=TIRED
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_CANTMOVE
+T=(Better not move until Dr. Gherkin is done)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+
+
+#----------------------------------------------------------------
+#TODO Jumping on RJ's while he's collapsed...
+ID=PC14B_RJ_JUMPON
+T=Come on, man!
+W=BROK
+A=SURPRISED
+CONTEXT=Jumping on RJ while he's collapsed...
+
+T=Wake up!
+W=BROK
+A=WORRIED
+
+T=...
+W=BROK
+A=HEARTBROKEN
+
+T=This isn't helping.
+W=BROK
+# original - That's not efficient. - doesn't sound casual
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ_BADSHAPE
+T=He doesn't look good. What should I do?...
+W=BROK
+A=DISAPPOINTED
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ_DEAD
+T=...
+W=BROK
+A=HEARTBROKEN
+COMM=Too late
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ_GIVEPILL
+T=Here! Swallow this!
+W=BROK
+C1=BROK
+C1A=MOCK
+CONTEXT=Giving him a pill
+
+T=...
+W=BROK
+C1A=THINK
+
+T=Let's hope this works.
+W=BROK
+
+T=(Sigh) I'm getting sick.
+W=BROK
+C1A=DOWN
+
+T=Sick of all this suffering...
+W=BROK
+
+T=The more I fight for our future... The worse it becomes.
+W=BROK
+
+T=What's the meaning of life in this place?
+W=BROK
+C1A=HEARTBROKEN
+
+T=...Friends...
+BVOICESP=RJ
+TEN=PC14B_GHERKIN_RJ_CROUCH
+
+T=...!
+W=BROK
+C1A=SURPRISED
+
+T=...Life is... To make friends.
+W=RJ
+C2=RJ
+C2A=NORMAL
+TEN=PC14B_GHERKIN_RJ_WAKES
+
+T=I was starting to think you had hibernated, big bear!
+W=BROK
+C1A=HAPPY
+
+T=You saved me!
+W=RJ
+C2A=HAPPY
+TEN=PC14B_GHERKIN_RJHUG
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJ_GIVEPILL2
+T=Woah!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=RJ
+C2A=HAPPY
+
+T=My friend!
+W=RJ
+
+T=I owe you one!
+W=RJ
+
+T=Ah, no problem. You'd have done the same for me!
+W=BROK
+A=HAPPY
+TEN=PC14B_GHERKIN_RJ_CHECK
+
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJSAVEDALONE1
+T=Actually... You can help.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=HAPPY
+
+T=The scientist who accompanied me has vanished. I was supposed to protect him but...
+W=BROK
+
+T=No worries.
+W=RJ
+
+T=You know where he is?
+W=BROK
+A=WONDER
+
+T=Yeah. Right there.
+W=RJ
+C2A=COCKY
+TEN=PC14B_GHERKIN_ARRIVESAFTERRJ
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJSAVEDALONE2
+T=Where the heck have you been?!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=GHERKIN
+C2A=WORRIED
+COMM=Dr Gherkin suddenly comes back
+
+T=S-sorry! You were gone for a while.
+W=GHERKIN
+
+T=I heard noise and... panicked...
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=(Sigh)
+W=BROK
+C1A=STUPID
+
+T=Don't do that ever again.
+W=BROK
+C1A=ANGRY
+TEN=PC14B_GHERKIN_RJSAVED_AFTEREV
+
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJSAVEDGHERKIN1
+T=I'm glad your friend is safe.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=Shall we continue our tour?
+W=BROK
+C1A=ALRIGHT
+TEN=PC14B_GHERKIN_RJSAVED_AFTEREV
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJSAVED_AFTER
+T=While I was away, I was contacted by a journalist.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+COMM=At this point we don't know who the journalist is yet
+
+T=They're willing to spread the word over the media about what's happening here.
+W=GHERKIN
+
+T=I believe we have a more important mission.
+W=BROK
+C1A=ANGRY
+
+T=D-don't we need all the help we can get?
+W=GHERKIN
+C2A=WORRIED
+
+T=They're waiting for us in Sector 56X. That's on our way.
+W=GHERKIN
+C2A=NORMAL
+
+T=As you wish.
+W=BROK
+C1A=TIRED
+
+T=I come.
+W=RJ
+C4=RJ
+C4A=NORMAL
+
+T=Don't...
+W=BROK
+C1A=ANGRY
+
+T=You've got a job. Hold on to it.
+W=BROK
+
+T=That hacker may be despicable, he's still a valuable person who needs protection. 
+W=BROK
+C1A=MAYBE
+
+T=Okay my friend.
+W=RJ
+
+T=If need me... Come.
+W=RJ
+
+T=I stay here.
+W=RJ
+C4A=HAPPY
+
+T=Thanks...
+W=BROK
+C1A=HAPPY
+
+T=Let's go, Doctor!
+W=BROK
+TEN=PC14B_TO_STORY250
+
+
+#----------------------------------------------------------------
+ID=PC14B_GHERKIN_RJAFTERSAVED
+T=I stay here. Go!
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+
+
+
+#-------------------------------------------------------------------------------------
+#= Pipe pill
+#-------------------------------------------------------------------------------------
+ID=PC14B_PIPEPILL_DAY2
+T=Seems broken.
+W=BROK
+A=THINK
+CONTEXT=Pipe pill interactions
+
+#-------------------------------------------------------------------------------------
+ID=PC14B_PIPEPILL_DAY3
+T=As expected. Not a single pill in sight.
+W=BROK
+A=OPPOSITE
+
+
+
+#-------------------------------------------------------------------------------------
+ID=PC14B_PIPEPILL_STILLNOT
+T=Why isn't this working?!
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=GHERKIN
+C2A=WORRIED
+
+#-------------------------------------------------------------------------------------
+ID=PC14B_PIPEPILL_GHERKINGONE
+T=Please please please please...
+W=BROK
+A=HEARTBROKEN
+COMM=When R.J. is unconscious he desperately need a pill
+
+T=...
+W=BROK
+A=HEARTBROKEN
+
+T=Argh! It's not working!
+W=BROK
+A=DISAPPOINTED
+
+
+#-------------------------------------------------------------------------------------
+#TODO implement hitting the pipe pill
+ID=PC14B_PIPEPILL_HIT
+T=Come on, junk! Drop a pill!
+W=BROK
+A=FURIOUS
+
+#---------------------------------------------
+ID=PC14B_HACKER_GHERKIN_NOPE
+T=No... That guy won't help.
+W=BROK
+A=ANGRY
+
+#---------------------------------------------
+ID=PC14B_GHERKIN_BACK1
+T=Quick! Check on your friend!
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+TEN=PC14B_GHERKIN_ACTIVATE
+CONTEXT=Coming back with Gherkin when RJ is unconscious, it might be too late (according to relationship)
+
+
+#---------------------------------------------
+ID=PC14B_GHERKIN_GIVEPILL
+T=Here's a pill!
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+TEN=PC14B_GHERKIN_RJ_GIVEPILL
+
+#---------------------------------------------
+ID=PC14B_GHERKIN_TOOLATE
+T=No... He's not breathing!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GHERKIN
+C2A=WORRIED
+
+T=Come on, big bear... This is hardly the time to hibernate!
+W=BROK
+
+T=...
+W=BROK
+C1A=HEARTBROKEN
+
+T=No good...
+W=BROK
+
+T=You're a doctor! Do something!!!
+W=BROK
+C1A=ANGRY
+
+T=Not that kind of doctor!
+W=GHERKIN
+C2A=WORRIED
+TEN=PC14B_GHERKIN_GOESCHECKPUSLE
+
+T=But... Let me see.
+W=GHERKIN
+C2A=ANGRY
+
+T=...
+W=GHERKIN
+
+T=No pulse...
+W=GHERKIN
+TEN=PC14B_GHERKIN_SAD
+
+T=I'm afraid... It's too late.
+W=GHERKIN
+C2_EYESHUT=1
+
+T=No!...
+W=BROK
+C1A=TIRED
+
+T=Did... Did I waste too much time...?
+W=BROK
+
+T=I refuse...!
+W=BROK
+C1A=ANGRY
+TEN=PC14B_GHERKIN_TOOLATE_HIT
+
+T=(Hitting) Wake up!
+W=BROK
+
+T=(Hitting) WAKE UP!
+W=BROK
+
+T=Stop this!
+W=GHERKIN
+C2A=WORRIED
+TEN=PC14B_GHERKIN_TOOLATE_HITSTOP
+
+T=...
+W=BROK
+C1A=TIRED
+
+T=I don't... Didn't know him well but...
+W=BROK
+
+T=I... can't stand...
+W=BROK
+C1A=HEARTBROKEN
+
+T=Losing anyone...
+W=BROK
+
+T=Of course... Nobody does.
+W=GHERKIN
+C2A=NORMAL
+
+T=...
+W=BROK
+
+T=We're... all going to die.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Eventually, yes.
+W=GHERKIN
+
+T=I mean...
+W=BROK
+
+T=Everyone in the Slums. If not the pollution... The Tribots... The Squealers...
+W=BROK
+
+T=All against us... What chance do we have?
+W=BROK
+C1A=MAYBE
+
+T=What's the point?...
+W=BROK
+
+T=No!
+C2A=ANGRY
+W=GHERKIN
+
+T=...
+W=BROK
+
+T=Y-you're right. We will probably fail.
+W=GHERKIN
+
+T=Way to cheer up someone...
+W=BROK
+
+T=B-but I'm here for this! We can't give up yet!
+W=GHERKIN
+
+T=At least... We must try.
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=...
+W=BROK
+
+T=You're right. Obviously.
+W=BROK
+C1A=DISAPPOINTED
+C2A=NORMAL
+
+T=But I'm getting tired of fighting for nothing.
+W=BROK
+
+T=I didn't choose you randomly, Mister Crocodile detective. You're one of a kind.
+W=GHERKIN
+
+T=I'm putting my trust in you!
+W=GHERKIN
+
+T=...
+W=BROK
+C1A=DOWN
+
+T=Listen. 
+W=GHERKIN
+
+T=While you were away, I was contacted by a journalist.
+W=GHERKIN
+COMM=This part is very similar to PC14B_GHERKIN_RJSAVED_AFTER
+
+T=They're willing to spread the word over the media about what's happening here.
+W=GHERKIN
+
+T=They're waiting for us in Sector 56X. That's on our way.
+W=GHERKIN
+
+T=Right... Whatever.
+W=BROK
+
+T=Oh... And...
+W=GHERKIN
+
+T=I'd call the Body Recycling service but... In our situation...
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=Yeah. Bringing more bots is a bad idea.
+W=BROK
+
+T=Sorry. We have to leave.
+W=GHERKIN
+C2A=NORMAL
+
+T=...
+W=BROK
+TEN=PC14B_BROKSTAND
+
+T=Goodbye, R.J...
+W=BROK
+C1A=DISAPPOINTED
+
+T=Wherever you are now...
+W=BROK
+
+T=Tell Lia... I'll be staying a little longer.
+W=BROK
+TEN=PC14B_TO_STORY250
+
+
+
+#---------------------------------------------
+ID=PC14B_GHERKIN_GOAWAYRJ
+T=Where are you going? I thought you'd help that bear.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=Oops!
+W=BROK
+C1A=CONFUSED
+TEN=PC14B_TO_EV_MAP_GOBACK
+
+#---------------------------------------------
+ID=PC14B_GHERKIN_RJDEAD_ENTER
+T=I don't wanna enter. That guy couldn't care less.
+W=BROK
+A=THINK
+COMM=He's referring to the hacker.
+
+#----------------------------------------------------------------
+#= Looking for Graff
+#----------------------------------------------------------------
+ID=PC14B_LOOKGRAFF_RJ1
+T=Hey, R.J.!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=NORMAL
+CONTEXT=Day 3 - Looking for Graff at the end of the day
+
+T=How are you?
+W=BROK
+
+T=Great! Thanks again.
+W=RJ
+C2A=HAPPY
+
+T=But you...
+W=RJ
+C2A=NORMAL
+
+T=Look worried.
+W=RJ
+
+T=Yeah... I'm looking for my boy.
+W=BROK
+C1A=THINK
+
+T=Boy?...
+W=RJ
+C2A=WONDER
+
+T=Grey cat. Sixteen. Blue eyes. And...
+W=BROK
+C2A=NORMAL
+
+T=A kinda depressed look.
+W=BROK
+C1A=MAYBE
+
+T=Oh! Seen him!
+W=RJ
+C2A=HAPPY
+
+T=Uh? You sure?
+W=BROK
+C1A=THINK
+
+T=Yeah. This afternoon.
+W=RJ
+C2A=NORMAL
+
+T=With a friend. Like pig and otter.
+W=RJ
+C2A=WONDER
+
+T=Must be Ott. What were they doing here?
+W=BROK
+C1A=WONDER
+C2A=NORMAL
+
+T=Asking questions. Pipe-Pill.
+W=RJ
+
+T=Told them Squealers plundered. Went to backstreet.
+W=RJ
+
+T=The backstreet?!...
+W=BROK
+C1A=SURPRISED
+
+T=Told them not.
+W=RJ
+C2A=WONDER
+
+T=Kids never listen.
+W=RJ
+C2A=OPPOSITE
+
+T=Graff... What did you get into?
+W=BROK
+C1A=STUPID
+C2A=NORMAL
+
+T=Gotta go.
+W=BROK
+C1A=READY
+TEE=PC14B_LOOKGRAFF_MOVE
+
+#----------------------------------------------------------------
+ID=PC14B_LOOKGRAFF_RJ1B
+T=Wait!
+W=RJ
+C1=BROK
+C1A=SURPRISED
+C2=RJ
+C2A=SURPRISED
+TEN=PC14B_LOOKGRAFF_TURNS
+
+T=I come with you.
+W=RJ
+C1A=THINK
+C2A=NORMAL
+
+T=Thanks but... I can handle this.
+W=BROK
+C1A=MOCK
+
+T=My fault. Should have insisted!
+W=RJ
+C2A=COCKY
+
+T=Squealers good fighters. Need my help.
+W=RJ
+
+T=What about your boss?
+W=BROK
+C1A=THINK
+
+T=Who cares. Won't notice.
+W=RJ
+C2A=WONDER
+
+T=Right. Thanks, pal.
+W=BROK
+C1A=READY
+
+T=So! You ready?
+W=RJ
+C2A=NORMAL
+
+T=Maybe tons of Squealers to fight.
+W=RJ
+
+T=Once we are surrounded... Cannot go back.
+W=RJ
+TEN=PC14B_READY_CHOICE
+IT=1
+
+#----------------------------------------------------------------
+ID=PC14B_LOOKGRAFF_NOTYET1
+T=You're right. We can't jump into the lion's den without proper preparation.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=RJ
+C2A=NORMAL
+
+T=Thought so.
+W=RJ
+
+T=I wait here.
+W=RJ
+
+T=Won't be long!
+W=BROK
+C1A=READY
+
+
+#----------------------------------------------------------------
+ID=PC14B_LOOKGRAFF_YES1
+T=No time to waste! He may be in danger!
+W=BROK
+C1=BROK
+C1A=READY
+C2=RJ
+C2A=NORMAL
+
+T=Okay. Come on!
+W=RJ
+C2A=COCKY
+TEN=PC14B_LOOKGRAFF_BOTHLEAVE
+
+#----------------------------------------------------------------
+ID=PC14B_LOOKGRAFF_RJ2
+T=So?... Ready?
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=WONDER
+TEN=PC14B_READY_CHOICE
+IT=1
+
+
+
+#----------------------------------------------------------------
+#= Material
+#----------------------------------------------------------------
+ID=PC14B_MATERIAL1
+T=Eh. For some reason I knew there'd be cables underneath those pipes!
+W=BROK
+A=MEH
+TEN=PC14B_MATERIAL_GET
+CONTEXT=Get Shay's material from this room
+
+
+
+#-------------------------------
+#= Alternative with Director
+#-------------------------------
+ID=PC14B_DIRECTOR_ALTERNATIVE
+T=...
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Mister Brok.
+W=DIRECTOR
+TEN=PC14B_DIRECTOR_APPROACH
+
+T=Hey! You're...
+W=BROK
+C1A=MOCK
+
+T=The director of the Center. We met at the fair yesterday.
+W=DIRECTOR
+
+T=I shouldn't ask you this...
+W=DIRECTOR
+C1A=THINK
+C2A=SAD
+
+T=...?
+W=BROK
+
+T=You must be here to meet the Gloom.
+W=DIRECTOR
+C2A=NORMAL
+
+T=I... need something from him.
+W=DIRECTOR
+
+T=More precisely, a self-modifier chip.
+W=DIRECTOR
+
+T=He refuses to give it to me... to a robot.
+W=DIRECTOR
+
+T=Self... modifier?
+W=BROK
+C1A=WONDER
+TEN=PC14B_DIRECTOR_CHOICES
+IT=1
+
+
+
+#-------------------------------
+ID=PC14B_DIRECTOR_ASK
+T=Robots and humans... We're not so different.
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Humans only use a very small portion of their brain.
+W=DIRECTOR
+
+T=Not only this. Most humans genes are actually composed of junk DNA. Traces of evolution left behind.
+W=DIRECTOR
+
+T=I don't get it...?
+W=BROK
+C1A=WONDER
+
+T=Well... All robots are created with a far broader range of capacities than what they're used for.
+W=DIRECTOR
+
+T=Despite being a custom model, I was built with the same base.
+W=DIRECTOR
+
+T=I can only perform the tasks I was designed for, with performance safe for my hardware.
+W=DIRECTOR
+
+T=You mean...
+W=BROK
+C1A=THINK
+SKIPEND=1
+
+T=I want to improve my capacities.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Is this allowed? Surely there's a reason why robots are limited after conception?
+W=BROK
+
+T=You're right.
+W=DIRECTOR
+C2A=SAD
+
+T=This is why I need you to be secretive about this.
+W=DIRECTOR
+
+T=I... I want to make this a surprise for my son.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Hmm...
+W=BROK
+TEN=PC14B_DIRECTOR_CHOICES2
+IT=1
+
+
+
+#-------------------------------
+ID=PC14B_DIRECTOR_ACCEPT
+T=Alright. What do I get in exchange?
+W=BROK
+C1=BROK
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+
+T=We evaluate the relationship between parents and students.
+W=DIRECTOR
+
+T=That means... this would help Graff?
+W=BROK
+C1A=READY
+
+T=Indeed.
+W=DIRECTOR
+
+T=If you're successful, he will get bonus points.
+W=DIRECTOR
+
+T=(I won't pretend to understand how she's going to use this "present for her son" but...)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(If finding this helps Graff... I couldn't care less.)
+W=BROK
+MOOD=THINK
+TEN=PC14B_DIRECTOR_ADDOBJECTIVE
+
+T=Alright. You got this!
+W=BROK
+C1A=HAPPY
+
+T=From the bottom of my heart... Thank you.
+W=DIRECTOR
+C2A=HAPPY
+
+T=(Heart?)
+W=BROK
+C1A=MEH
+MOOD=THINK
+
+T=Please keep me informed.
+W=DIRECTOR
+TEN=PC14B_DIRECTOR_GOESAWAY
+
+
+#-------------------------------
+ID=PC14B_DIRECTOR_REFUSE
+T=Sorry. I'm too busy right now.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Oh...
+W=DIRECTOR
+C2A=SAD
+
+T=I understand. I will find another way.
+W=DIRECTOR
+TEN=PC14B_DIRECTOR_GOESAWAY
+
+
+#----------------------------
+ID=PC14B_DIRECTOR_HERSELF1
+T=Wait!...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Sorry for my... most likely embarassing curiosity but...
+W=BROK
+C1A=HAPPY
+
+T=You're a... female robot?
+W=BROK
+C1A=THINK
+
+T=Yes.
+W=DIRECTOR
+C2A=NORMAL
+
+T=I... I had never seen a robot talking and behaving exactly like a human before.
+W=BROK
+C1A=WONDER
+
+T=You're... different.
+W=BROK
+C1A=MAYBE
+
+T=I'm a special model.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Are there others like yourself?
+W=BROK
+C1A=THINK
+
+T=Well...
+W=DIRECTOR
+
+T=Just one. Much more sophisticated than I am.
+W=DIRECTOR
+
+T=Actually, you've already met it.
+W=DIRECTOR
+C2A=NORMAL
+
+T=Did I?...
+W=BROK
+C1A=WONDER
+CLUE=CLUE_DIRECTOR_ANOTHER
+
+T=Goodbye.
+W=DIRECTOR
+TEN=PC14B_DIRECTOR_GOESAWAY1
+
+
+#----------------------------
+ID=PC14B_DIRECTOR_AFTER
+T=...
+W=BROK
+A=THINK
+
+
+#---------------------------------------------
+ID=PC14B_HACKER_GHERKIN_USELESS
+T=He's useless.
+W=BROK
+A=OPPOSITE
+
+
+#---------------------------------------------
+ID=PC14B_HACKER_DEAD
+T=He's dead.
+W=BROK
+A=OPPOSITE
+
+
+
+#---------------------------------------------
+ID=PC14B_RJ_HITAFTER
+T=That tickles!
+W=RJ
+A=COCKY
+C1_EYESHUT=1
+NB=1
+D=120
+
+#---------------------------------------------
+ID=PC14B_RJ_INV_MONEY
+T=...
+W=RJ
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=OPPOSITE
+
+T=Here. For you.
+W=BROK
+
+T=...
+W=RJ
+
+T=Come on! Take it!
+W=BROK
+C1A=ALRIGHT
+
+T=Read my lips.
+W=RJ
+
+T=NO!
+W=RJ
+C1A=SURPRISED
+C2A=ANGRY
+
+#---------------------------------------------
+ID=PC14B_RJ_CATFUR1
+T=A--choo!
+W=RJ
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=SURPRISED
+C2_EYESHUT=1
+
+T=Argh!
+W=RJ
+C2A=OPPOSITE
+C2_EYESHUT=0
+
+T=Stay away! Or I'll get sick!
+W=RJ
+
+#---------------------------------------------
+ID=PC14B_RJ_CATFUR2
+T=A--choo!
+W=RJ
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=SURPRISED
+C2_EYESHUT=1
+
+T=Again?! Stop it!
+W=RJ
+C1A=SURPRISED
+C2_EYESHUT=0
+
+T=(That won't work...)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+
+#----------------------
+#= Talking to RJ
+#----------------------
+ID=COOP_PC14B_RJ1
+T=If you get close, he'll either give you a big hug or crush you to death.
+T=No inbetween.
+
+###############################################
+# PROOFREAD - jblaker - 09/08/2019
+# PROOFREAD & UPDATED - Chris Barnes - 17/09/2019
+###############################################

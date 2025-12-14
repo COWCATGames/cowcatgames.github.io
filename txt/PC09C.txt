@@ -1,0 +1,3078 @@
+﻿#-------------------------------
+#=POLICE OFFICE
+#-------------------------------
+
+#-----------------------------------------------
+#= If we attacked the guard => we're waking up
+#-----------------------------------------------
+ID=PC09C_INTRO_WAKEUP1
+T=...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+TEN=PC09C_INTRO_WAKE
+CONTEXT=Waking up in Wes' office after our failed attempt to escape (Brok is frozen)
+
+T=Urgh...
+W=BROK
+
+T=Man... I feel like an Aircar ran me over...
+W=BROK
+C1A=STUPID
+
+T=About time.
+W=WES
+C2=WES
+C2A=NORMAL
+
+T=Oh... Yeah. I failed to escape.
+W=BROK
+C1A=DISAPPOINTED
+
+T=You attacked several police officers.
+W=WES
+C2A=ANGRY
+
+T=Erm...
+W=BROK
+C1A=TIRED
+
+T=Yeah... Sorry about that. 
+W=BROK
+
+T=But it's your fault! I shouldn't be here!
+W=BROK
+C1A=ANGRY
+
+T=I didn't do anything! Well, I mean... Before attacking...
+W=BROK
+TEN=PC09C_INTRO2
+SKIPEND=1
+
+#-----------------------------------------------
+#= If we escaped without attack
+#-----------------------------------------------
+ID=PC09C_INTRO_PUZZLE1
+T=...
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=NORMAL
+COMM=Alternative
+SILENCE=1
+
+T=...
+W=WES
+TEN=PC09C_INTRO_UNFREEZE
+
+T=Unfrozen mode.
+W=WES
+
+T=...n't shoot...
+W=BROK
+COMM=Don't shoot
+TEN=PC09C_INTRO_PUZZLE1B
+
+
+#-----------------------------------------------
+ID=PC09C_INTRO_PUZZLE2
+T=...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=NORMAL
+SILENCE=1
+
+T=Uh... Did something happen...? I could swear you moved...
+W=BROK
+C1A=HAPPY
+
+T=Oh. A freezing gun.
+W=BROK
+C1A=WONDER
+
+T=So...
+W=BROK
+
+T=Am I in trouble...?
+W=BROK
+
+T=...
+W=WES
+C2A=WONDER
+SILENCE=1
+
+T=I did not expect you to escape. I have clearly underestimated you.
+W=WES
+C1A=THINK
+
+T=That said. You messed up your cell system, neutralized one of our agents, and violated the law.
+W=WES
+C2A=ANGRY
+
+T=Well... Sorry about that.
+W=BROK
+C1A=ALRIGHT
+
+T=But it's your fault! I shouldn't be here! I just...
+W=BROK
+C1A=ANGRY
+TEN=PC09C_INTRO2
+SKIPEND=1
+
+#-----------------------------------------------
+#= Continue
+#-----------------------------------------------
+ID=PC09C_INTRO2
+T=Shut up.
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=ANGRY
+
+T=Mmrph...
+W=BROK
+C1A=ANGRY
+
+T=...
+W=WES
+C2A=NORMAL
+
+T=I require your assistance.
+W=WES
+C2A=WONDER
+
+T=What...?
+W=BROK
+C1A=WONDER
+TEN=PC09C_MUSICPOLICE
+
+T=Here's the situation.
+W=WES
+C2A=NORMAL
+
+T=Listen carefully. This is confidential.
+W=WES
+
+T=Due to recent events, I had to fire Agent Ray.
+W=WES
+C1A=THINK
+
+T=Huh...? Why?
+W=BROK
+
+T=He screwed up too many times.
+W=WES
+TEN=PC09C_INTRO_MIDCHECK
+
+
+#-----------------------------------------------
+#= Middle attack
+#-----------------------------------------------
+ID=PC09C_INTRO_MIDATTACK1
+T=Any other time he would have easily won that fight against you.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=To be honest, I have no idea how you managed to beat him.
+W=WES
+
+T=I'll take that as a compliment...
+W=BROK
+C1A=ALRIGHT
+TEN=PC09C_INTRO3
+
+#-----------------------------------------------
+#= Middle puzzle
+#-----------------------------------------------
+ID=PC09C_INTRO_MIDPUZZLE1
+T=Today he fell for your tricks.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=I cannot allow my agents to have their weaknesses so easily exploited.
+W=WES
+C2A=WONDER
+
+T=Well it wasn't THAT easy...
+W=BROK
+C1A=MEH
+TEN=PC09C_INTRO3
+
+#-----------------------------------------------
+#= Next
+#-----------------------------------------------
+ID=PC09C_INTRO3
+T=In addition to this, several of our AI agents are out of service.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=Finally. And this is hard for me to admit but...
+W=WES
+C2A=WONDER
+
+T=We are similar, you and I. Old school in a technological world.
+W=WES
+
+T=I've told you. I have no confidence in algorithms solving the cases.
+W=WES
+
+T=The only human agent remaining is myself.
+W=WES
+C2A=NORMAL
+
+T=Soon I won't have a choice but to rely entirely on those gadgets.
+W=WES
+
+T=I won't let this happen.
+W=WES
+C2A=ANGRY
+
+T=I've become skeptical about their behavior. I need to keep an eye on those bots.
+W=WES
+
+T=So I can't keep running this department all by myself.
+W=WES
+C2A=NORMAL
+
+T=I need your help.
+W=WES
+
+T=That's... unexpected...
+W=BROK
+C1A=WONDER
+
+T=Certainly glad I'm not the only one who think those thingamabobs are creepy, though.
+W=BROK
+C1A=ALRIGHT
+
+T=Give me some time to think.
+W=BROK
+C1A=READY
+
+T=This isn't a choice. It's a cherry.
+W=WES
+C2A=WONDER
+COMM=Wes uses the wrong word here. His brain has been "damaged"
+
+T=Huh...?
+W=BROK
+C1A=THINK
+
+T=A... cherry?
+W=BROK
+
+T=A cherry. Cherry.
+W=WES
+
+T=Yes. It's a request.
+W=WES
+C2A=NORMAL
+
+T=...
+W=WES
+C1A=WONDER
+SILENCE=1
+
+T=Are you okay...?
+W=BROK
+
+T=It's been a long day.
+W=WES
+
+T=Anyway.
+W=WES
+C1A=THINK
+
+T=As per regulation 14-3032. In case of under-staffing, the highest ranking officer can requisition any citizen for help.
+W=WES
+
+T=...
+W=BROK
+
+T=Why me?
+W=BROK
+C1A=MAYBE
+
+T=I've seen your actions today.
+W=WES
+
+T=Despite some aggressive tendencies, you've solved Sin's case remarkably well.
+W=WES
+C2A=WONDER
+
+T=You didn't blindly trust your client and uncovered the truth via uncommon methods.
+W=WES
+
+T=I've met so many detectives over the years.
+W=WES
+C1A=THINK
+
+T=You... are one of a kind.
+W=WES
+
+T=We've known each other for a long time. Currently, you're the most qualified person I can trust.
+W=WES
+C2A=NORMAL
+
+T=Erm... Thanks... I guess?
+W=BROK
+C1A=WONDER
+
+T=Okay. So... If I accept...
+W=BROK
+
+T=It's not your decision.
+W=WES
+
+T=Whatever. What kind of... compensation can I expect?
+W=BROK
+C1A=ANGRY
+
+T=None.
+W=WES
+
+T=None? Working for free?! But...
+W=BROK
+
+T=Only temporarily.
+W=WES
+
+T=You'll manage.
+W=WES
+C2A=WONDER
+
+T=Easy for you to say. You're not drowning in debt.
+W=BROK
+C1A=OPPOSITE
+
+T=This is effective as of now.
+W=WES
+C2A=NORMAL
+
+T=Immediately?! Wait...
+W=BROK
+C1A=ANGRY
+
+T=What time is it?
+W=BROK
+
+T=5 PM.
+W=WES
+
+T=5 P...
+W=BROK
+SKIPEND=1
+
+T=Oh no! Graff's fair!
+W=BROK
+C1A=SURPRISED
+
+T=I need to leave!
+W=BROK
+C2A=SURPRISED
+
+T=This isn't accept...
+W=WES
+
+T=I'm begging you! 
+W=BROK
+C1A=TIRED
+
+T=Graff... He's gonna kill me!
+W=BROK
+
+T=I'm no good for you dead, ain't I?
+W=BROK
+
+T=This seems like a slight exaggeration.
+W=WES
+C2A=WONDER
+
+T=Look. Dun care what I gotta do to get outta here.
+W=BROK
+C1A=ANGRY
+
+T=If you prevent me... I'll force my way through!
+W=BROK
+
+T=...
+W=WES
+C2A=NORMAL
+
+T=Hmm...
+W=WES
+
+T=Alright. You're free to go.
+W=WES
+C2A=WONDER
+TEN=PC09C_INTRO_BROK_LEAVE
+
+T=See ya!
+W=BROK
+C1A=HAPPY
+CLUE=CLUE_WES_INCORRECTWORDS
+
+T=...
+W=WES
+C1=NONE
+
+#T=...
+#W=WES
+#C2A=NORMAL
+
+#T=He's grown attached to him...
+#W=WES
+
+#T=Which means the opposite may also be true.
+#W=WES
+
+#T=This might be more complex than we thought.
+#W=WES
+
+#T=If only we hadn't waited that long...
+#W=WES
+
+#T=...
+#W=WES
+
+T=I need to rest. Time to recharge the batteries and prepare for tomorrow.
+W=WES
+COMM="recharge the batteries" can have two meanings, one figurative (sleeping) and another literal. Here the player assumes this is the figurative meaning but Wes actually means the literal sense... (he IS recharging his battery)
+TEN=PC09C_INTRO_END
+
+
+
+
+
+#-----------------------------------
+#= Ott first dialog
+#-----------------------------------
+ID=PC09C_OTT_FIRST1
+T=Erm... Hello?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SURPRISED
+CONTEXT=Day 2 - Ott is in the office (he's in training course) He needs to pee, which is convenient because we need to get him out of here.
+
+T=Oh! Mister Brok!
+W=OTT
+C2A=HAPPY
+
+T=What are you doing here?
+W=OTT
+C2A=NORMAL
+
+T=Do we... know each other...?
+W=BROK
+C1A=WONDER
+
+T=You bet. I'm Graff's friend!
+W=OTT
+C2A=HAPPY
+
+T=Oh... Yes! You're... Erm...
+W=BROK
+C1A=HAPPY
+
+T=Ott. 
+W=OTT
+C2A=NORMAL
+
+T=Sorry. My memory is faulty.
+W=BROK
+
+T=That's one common point you share with Graff. Forgetting things is his specialty!
+W=OTT
+
+T=Does he...?
+W=BROK
+C1A=THINK
+
+T=Yeah! One day he even forgot our teacher's name.
+W=OTT
+C2A=HAPPY
+COMM=Consider the teacher is male - not important
+
+T=You're his d... Erm... Tutor, right?
+W=OTT
+C2A=WONDER
+
+T=Hmm... yeah.
+W=BROK
+TEN=PC09C_OTT_FIGHTCHECK
+
+
+#-----------------------------------
+ID=PC09C_OTT_FIRST_ONTIME
+T=Erm... Hello?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SURPRISED
+CONTEXT=Day 2 - Ott is in the office (he's in training course) He needs to pee, which is convenient because we need to get him out of here.
+
+T=Oh! Mister Brok!
+W=OTT
+C2A=HAPPY
+
+T=What are you doing here?
+W=OTT
+C2A=NORMAL
+
+T=You're... Graff's friend, right?
+W=BROK
+C1A=WONDER
+
+T=I think you were at the fair?
+W=BROK
+
+T=Ott. Yeah!
+W=OTT
+TEN=PC09C_OTT_FIGHTCHECK
+
+
+
+#-----------------------------------
+ID=PC09C_OTT_FOUGHT1
+T=What was all the racket in the hall?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=Oh... Erm...
+W=BROK
+C1A=HAPPY
+
+T=The entrance bot suddenly went berserk. Like a fuse blown.
+W=BROK
+
+T=Poor guy. First he has malfunctioning sight, and now...
+W=OTT
+C2A=DISAPPOINTED
+
+T=Yeah... That... kinda sucks, huh...?
+W=BROK
+TEN=PC09C_OTT_FOUGHT1B
+
+
+#-----------------------------------
+ID=PC09C_OTT_FOUGHT1B
+T=Any idea where the chief of police might be?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=NORMAL
+
+T=Uncle Wes? He's out right now.
+W=OTT
+C2A=WONDER
+
+T=(Uncle?)
+W=BROK
+MOOD=THINK
+
+T=I've heard him referring to an issue with Toxout pills.
+W=OTT
+
+T=This will probably take a while.
+W=OTT
+
+T=Alright...
+W=BROK
+C1A=THINK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+#= About Ott
+#-----------------------------------
+ID=PC09C_OTT_HIMSELF1
+T=I'm sorry to ask but...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=OTT
+C2A=NORMAL
+
+T=Are you...
+W=BROK
+
+T=A hybrid?
+W=OTT
+C2A=WONDER
+
+T=Yeah.
+W=OTT
+C1A=THINK
+C2A=DISAPPOINTED
+
+T=Every child inherits a race from either the father or the mother...
+W=OTT
+
+T=Except me. I inherited genes from both of my parents.
+W=OTT
+
+T=I've heard this happens once in every thousand births. Maybe even less.
+W=OTT
+C2A=WONDER
+
+T=Might be a mistake of nature. Might be the pollution. All I know is...
+W=OTT
+
+T=...You're special.
+W=BROK
+C1A=ALRIGHT
+
+T=You bet. 
+W=OTT
+C2A=OPPOSITE
+CLUE=CLUE_OTT_HYBRID
+
+T=No matter how kind people try to be...
+W=OTT
+C1A=THINK
+
+T=They always look at me... differently.
+W=OTT
+
+T=This used to make me mad. But I got used to it.
+W=OTT
+C2A=WONDER
+
+T=Yeah. I know the feeling.
+W=BROK
+
+T=What do you mean...?
+W=OTT
+
+T=Long story.
+W=BROK
+C1A=HAPPY
+
+T=Hmm...
+W=OTT
+C2A=HAPPY
+
+T=If you don't mind... I've got a question too. 
+W=OTT
+
+T=What are you, exactly? Croc or gator?
+W=OTT
+C2A=NORMAL
+
+T=Wish I knew!
+W=BROK
+C1A=MEH
+
+T=You don't?!
+W=OTT
+C2A=SURPRISED
+
+T=Yeah...
+W=BROK
+C1A=TIRED
+
+T=Trying to solve mysteries and yet unable to find the truth about myself...
+W=BROK
+
+T=Poor excuse for a detective, huh?
+W=BROK
+
+T=Don't say that! 
+W=OTT
+C2A=HAPPY
+
+T=You're just too busy helping others!
+W=OTT
+
+T=Someday you'll find out. I'm sure of it!
+W=OTT
+C2A=ALRIGHT
+
+T=Thanks.
+W=BROK
+C1A=HAPPY
+
+T=(...I was supposed to be comforting him... But he ended up comforting me!)
+W=BROK
+MOOD=THINK
+
+T=(Boy! I almost wish he was my son...)
+W=BROK
+MOOD=THINK
+
+T=(Argh. What's wrong with me...!)
+W=BROK
+C1A=CONFUSED
+MOOD=THINK
+
+T=(I... I shouldn't think that...! Graff is a good boy too...)
+W=BROK
+MOOD=THINK
+
+T=(He's just... More difficult to...)
+W=BROK
+C1A=TIRED
+MOOD=THINK
+SKIPEND=1
+
+T=You okay?
+W=OTT
+C2A=SAD
+
+T=...Yeah.
+W=BROK
+
+T=I have another question.
+W=BROK
+C1A=READY
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_HIMSELF2
+T=Shouldn't you be at school?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=The Consc'? Nah, I'm on internship today.
+W=OTT
+
+T=Ugh...
+W=OTT
+C2A=PEE
+TEN=PC09C_OTT_CHECKPEE
+
+#-----------------------------------
+ID=PC09C_OTT_HIMSELF2B
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=PEE
+
+T=Maybe you should... Ya know...
+W=BROK
+
+T=Let it go...?
+W=BROK
+C1A=HAPPY
+
+T=You... noticed...?
+W=OTT
+C2A=SAD
+
+T=... can't. I said...
+W=OTT
+C2A=PEE
+
+T=I won't touch anythin'. Cross my heart and hope to die!
+W=BROK
+
+T=...
+W=OTT
+C2A=DISAPPOINTED
+
+T=No... I... I always keep my promises.
+W=OTT
+
+T=I can hold. No big deal!
+W=OTT
+C2A=HAPPY
+
+T=(I pity him)
+W=BROK
+C1A=THINK
+MOOD=THINK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+
+#-----------------------------------
+ID=PC09C_OTT_WANNAPEE
+T=...?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=PEE
+
+T=Anything wrong? You look like...
+W=BROK
+
+T=N-Nothing. I'm fine.
+W=OTT
+C2A=HAPPY
+
+T=Uncle Wes said I should stay here until he comes back.
+W=OTT
+
+T=It's my first day.
+W=OTT
+C2A=DISAPPOINTED
+
+T=I... have to make a good impression!
+W=OTT
+
+T=...
+W=OTT
+C2A=PEE
+SILENCE=1
+
+T=(I've seen that face before...)
+W=BROK
+MOOD=THINK
+
+T=(He needs to pee.)
+W=BROK
+C1A=MEH
+MOOD=THINK
+TEN=PC09C_OTT_CHECKPEELEAVE
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_WANNAPEELEAVE
+T=...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=PEE
+
+#-----------------------------------
+#= About computer
+#-----------------------------------
+ID=PC09C_OTT_COMPUTER1
+T=Say! May I borrow your computer?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=WONDER
+
+T=I'd like to connect to the police main server.
+W=BROK
+
+T=Sorry. Uncle Wes did not give me access.
+W=OTT
+C2A=DISAPPOINTED
+
+T=Besides, I doubt he would trust you with this.
+W=OTT
+
+T=I've heard you're... Erm...
+W=OTT
+C2A=HAPPY
+
+T=Clumsy.
+W=OTT
+
+T=What a reputation your uncle is giving me! 
+W=BROK
+C1A=ANGRY
+
+T=Actually, I heard this from Graff.
+W=OTT
+C2A=NORMAL
+
+T=Ah...
+W=BROK
+C1A=HAPPY
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+#= About Wes
+#-----------------------------------
+ID=PC09C_OTT_WES1
+T=So. Wes is your uncle?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=NORMAL
+
+T=Yeah! It's so cool of him to accept me for this internship!
+W=OTT
+C2A=HAPPY
+
+T=Do you know him well?
+W=BROK
+C1A=THINK
+
+T=It's funny you'd ask this. To be perfectly honest...
+W=OTT
+C2A=WONDER
+
+T=Not that much.
+W=OTT
+C2A=DISAPPOINTED
+
+T=He's always super busy. I guess this comes with the job.
+W=OTT
+
+T=He comes to family reunions but... He always ends up leaving for an emergency before even touching his plate.
+W=OTT
+C2A=SAD
+
+T=By the way, what business do you have with him?
+W=OTT
+C2A=ALRIGHT
+
+T=Your uncle... kinda forced me to join the police.
+W=BROK
+C1A=MAYBE
+
+T=Temporarily.
+W=BROK
+C2A=SURPRISED
+
+T=Seriously?!
+W=OTT
+ 
+T=Well, it's not such a surprise. You're an expert!
+W=OTT
+C2A=ALRIGHT
+
+T=Graff told me about you!
+W=OTT
+C2A=HAPPY
+
+T=Is that so...?
+W=BROK
+C1A=WONDER
+
+T=Yeah. Actually, he'd love to know what you're doing during the day. But he's certain it's awesome.
+W=OTT
+C2A=NORMAL
+ 
+T=He thinks detectives are super cool. And so do I!
+W=OTT
+C2A=HAPPY
+
+T=(Is he talking about the same Graff...?)
+W=BROK
+MOOD=THINK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_WES2
+T=Listen.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=OTT
+C2A=NORMAL
+
+T=I need to use your uncle's computer.
+W=BROK
+
+T=What...? Why?
+W=OTT
+C2A=SAD
+
+T=It's a bit of a long story but...
+W=BROK
+
+T=This will help Graff.
+W=BROK
+
+T=You know... About what happened yesterday.
+W=BROK
+C1A=THINK
+TEN=PC09C_WES_YESTERDAYCHECK
+
+#-----------------------------------
+ID=PC09C_WES2_CRAZY
+T=You mean... Graff going crazy...?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=DISAPPOINTED
+
+T=That was a surprise. I've never seen him like this.
+W=OTT
+
+T=Any idea what triggered it?
+W=OTT
+C2A=OPPOSITE
+
+T=No but... I'm trying to fix the situation.
+W=BROK
+C1A=TIRED
+TEN=PC09C_WES2B
+
+#-----------------------------------
+ID=PC09C_WES2_LATE
+T=You mean... Graff losing the contest because you arrived late...?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=Yeah.
+W=BROK
+C1A=TIRED
+
+T=You shouldn't feel so bad about it. I'm sure you did your best.
+W=OTT
+C2A=NORMAL
+
+T=Besides, Graff can still take his exam! He's very clever.
+W=OTT
+C1A=ALRIGHT
+
+T=Still. I gotta fix my mistake.
+W=BROK
+C1A=DOWN
+
+T=And for this... I need to access that computer.
+W=BROK
+TEN=PC09C_WES2B
+
+#-----------------------------------
+ID=PC09C_WES2B
+T=I don't really see the connection but...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SAD
+
+T=If you say this will help...
+W=OTT
+
+T=Definitely.
+W=BROK
+
+T=Although I promised my uncle I wouldn't move from here, to look over his office.
+W=OTT
+C2A=DISAPPOINTED
+
+T=And that's only my first day! I know Graff's future is at stake but...
+W=OTT
+
+T=Mine too. I can't take that risk.
+W=OTT
+C2A=OPPOSITE
+
+T=I'm sorry!
+W=OTT
+C2A=DISAPPOINTED
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=Okay. I'll find another way.
+W=BROK
+
+T=Sure!
+W=OTT
+C2A=NORMAL
+
+T=(But do I really have a choice?)
+W=BROK
+MOOD=THINK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_WES3
+T=(He said he wouldn't help, and to be honest... It may be for the best.)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+T=(I know Wes. If by chance he suspects Ott willingly helped me mess with his equipment against his orders.)
+W=BROK
+MOOD=THINK
+
+T=(He won't hesitate to use that lie detector on Ott to find the truth!)
+W=BROK
+MOOD=THINK
+
+T=(Maybe I could do it without his direct help...?)
+W=BROK
+MOOD=THINK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+
+#-----------------------------------
+#= About Toxout pills
+#-----------------------------------
+ID=PC09C_OTT_PILLS1
+T=What about the Toxout pills?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=I'm not sure but... Apparently there's a shortage going on.
+W=OTT
+C2A=SAD
+
+T=A shortage...?
+W=BROK
+C1A=WONDER
+
+T=I took mine this morning so I'm good! At least for today.
+W=OTT
+C2A=NORMAL
+
+T=Don't worry, I messaged Graff this morning. He has one too.
+W=OTT
+
+T=Good to know.
+W=BROK
+C1A=THINK
+
+T=What about you?
+W=OTT
+C2A=SAD
+
+T=Well...
+W=BROK
+C1A=MAYBE
+
+T=I'm just sorta... immune to it.
+W=BROK
+
+T=What...? Immune... to the pollution?
+W=OTT
+C2A=SURPRISED
+
+T=Seriously?!
+W=OTT
+
+T=Yeah.
+W=BROK
+
+T=No idea how. One day I just realized the Haze didn't affect me so I stopped taking 'em.
+W=BROK
+C1A=WONDER
+
+T=I had never heard of anything like that.
+W=OTT
+C2A=WONDER
+
+T=Even Drumers aren't totally safe with the Dome.
+W=OTT
+CLUE=CLUE_BROK_IMMUNE
+
+T=Don't tell anyone, okay?
+W=BROK
+C1A=MAYBE
+
+T=The last thing I'd want is to be transformed into a laboratory croc.
+W=BROK
+
+T=My lips are sealed!
+W=OTT
+C2A=HAPPY
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_PILLS2
+T=(Wes is probably investigating this case...)
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+MOOD=THINK
+
+T=(Well, I've got my own share of trouble. Better not worry about that for now.)
+W=BROK
+MOOD=THINK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+#= About drinks
+#-----------------------------------
+ID=PC09C_OTT_DRINK1
+T=Seems like you're stuck here, huh? I'll get you a drink!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=I'm not particularly thirsty.
+W=OTT
+C2A=WONDER
+
+T=Nonsense! No need to be polite!
+W=BROK
+C2A=SURPRISED
+
+T=I'd never let a youngster die of thirst.
+W=BROK
+C1A=MOCK
+
+T=O-okay...
+W=OTT
+C2A=SAD
+TEN=PC09C_OTT_DRINKCHECK
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_DRINK2
+T=I got ya something!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=OTT
+C2A=SAD
+TEN=PC09C_OTT_DRINKCHOICE
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_FLOWINGWATER
+T=There ya go! Some water.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SAD
+
+T=Thanks...
+W=OTT
+
+T=The water keeps flowing...
+W=OTT
+
+T=Yeah! Cool, huh?
+W=BROK
+
+T=Urgh...
+W=OTT
+C2A=PEE
+TEN=PC09C_OTT_CHECKLEAVE
+
+#-----------------------------------
+ID=PC09C_OTT_SEWAGESLUDGE
+T=Here!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=OTT
+C2A=SAD
+
+T=That smells... funny.
+W=OTT
+C2A=WONDER
+
+T=Oh, erm... Yeah. I guess it's not the best.
+W=BROK
+C1A=HAPPY
+
+T=That's okay! I'm used to it. I live in the Slums, remember?
+W=OTT
+C2A=HAPPY
+
+T=I just... didn't expect that.
+W=OTT
+C2A=WONDER
+
+T=...
+W=BROK
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+
+#-----------------------------------
+ID=PC09C_OTT_SOLIDJUICE
+T=I got ya this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SAD
+
+T=Great! I love solid juice!
+W=OTT
+C2A=HAPPY
+
+T=It's hard to find it in the Slums.
+W=OTT
+
+T=Glad to hear it!
+W=BROK
+
+T=But... I'm not very thirsty right now.
+W=OTT
+C2A=WONDER
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_DRINKALREADY1
+T=(Glurp)
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SURPRISED
+
+T=Huh...? I thought you had brought that drink for me.
+W=OTT
+
+T=I did! But now I got somethin' better!
+W=BROK
+TEN=PC09C_OTT_DRINKCHOICE
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_DRINKALREADY2
+T=(Throws away)
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SURPRISED
+TEN=PC09C_OTT_DRINKALREADY2B
+
+
+#-----------------------------------
+ID=PC09C_OTT_DRINKNO
+T=Oops! I lost it along the way!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=OTT
+C2A=SURPRISED
+
+T=O...kay...
+W=OTT
+C2A=WONDER
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+
+
+#-----------------------------------
+#= Click on drinks
+#-----------------------------------
+ID=PC09C_DRINK1
+T=So? Have a taste!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=OTT
+C2A=SAD
+
+T=I'm good. Maybe later.
+W=OTT
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+ID=PC09C_DRINK2
+T=Come on! Don't tell me you don't like this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SAD
+
+T=...
+W=OTT
+TEN=CHARACTER_STOPMUSIC
+
+#-----------------------------------
+#= Welcome
+#-----------------------------------
+ID=PC09C_OTT_WELCOME1
+T=Sorry to bother you. Can we talk?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=OTT
+C2A=NORMAL
+
+T=Sure! It's not as if I'm doing anything special.
+W=OTT
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+ID=PC09C_OTT_WELCOME2
+T=Hey!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=HAPPY
+
+T=What's up, Mister Detective?
+W=OTT
+TEN=PC09C_OTT_CHOICES
+IT=1
+
+#-----------------------------------
+
+ID=PC09C_OTT_OUT
+T=Hey, Ott! I was wondering...
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=Oh yeah... I forgot.
+W=BROK
+C1A=TIRED
+
+#-----------------------------------
+#= Exit first
+#-----------------------------------
+ID=PC09C_OTT_EXITFIRST1
+T=See ya!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SAD
+
+T=...
+W=OTT
+C2A=PEE
+
+T=Okay...
+W=OTT
+TEN=PC09C_OTT_CHECKPEE
+
+
+#-----------------------------------
+#= Exit
+#-----------------------------------
+ID=PC09C_OTT_EXIT1
+T=I'll be around.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=OTT
+C2A=NORMAL
+
+T=Sure!
+W=OTT
+
+T=...Urgh...
+W=OTT
+C2A=PEE
+TEN=CHARACTER_STOPMUSIC
+
+#-----------------------------------
+ID=PC09C_OTT_EXIT2
+T=Gotta go to the bathroom!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=OTT
+C2A=SAD
+
+T=...I see...
+W=OTT
+VLOW=1
+TEN=CHARACTER_STOPMUSIC
+
+#-----------------------------------
+#= "Kill" Ott
+#-----------------------------------
+ID=PC09C_OTT_KOED
+T=Oh my.
+W=BROK
+A=SURPRISED
+COMM=If we hit Ott
+
+T=He's out cold... and relieved himself.
+W=BROK
+A=THINK
+
+T=Sometimes I hate myself...
+W=BROK
+C1A=STUPID
+TEN=PC09C_MUSIC_WESOFFICE
+
+
+#-----------------------------------
+ID=PC09C_DRINK_GONE
+T=I... guess he won't drink it.
+W=BROK
+A=HAPPY
+C1A=WONDER
+COMM=Ott is KO
+
+#-----------------------------------
+#= Drawer
+#-----------------------------------
+ID=PC09C_DRAWER1
+T=Let's take a peek at what's in there!
+W=BROK
+A=MOCK
+CONTEXT=Room interactions
+
+T=...?
+W=BROK
+A=WONDER
+
+T=What? Nothing?
+W=BROK
+
+T=There's only dust.
+W=BROK
+A=MAYBE
+
+T=In this digital age, that shouldn't be much of a surprise but I'm still disappointed.
+W=BROK
+
+T=At least this simplifies my search.
+W=BROK
+
+#-----------------------------------
+ID=PC09C_DRAWER2
+T=Nada!
+W=BROK
+A=ALRIGHT
+
+
+#-----------------------------------
+#= Trophies
+#-----------------------------------
+ID=PC09C_TROPHIES1
+T=A bunch of decorations, prizes...
+W=BROK
+A=THINK
+
+T=On that trophy is written - "Promoted Head of office - Congratulations Wes! Year 3030"
+W=BROK
+
+T=3030... The year we moved into the Slums.
+W=BROK
+A=WONDER
+CLUE=CLUE_POLICE_TROPHY
+
+#-----------------------------------
+ID=PC09C_TROPHIES_HACKPHONE
+T=All these trophies and not a single statue of him?!
+W=BROK
+A=THINK
+
+T=So disappointing.
+W=BROK
+A=DISAPPOINTED
+
+#-----------------------------------
+#= Socket
+#-----------------------------------
+ID=PC09C_SOCKET1
+T=What happened...? There are some stains all over that socket, even on the wall.
+W=BROK
+A=THINK
+
+T=Looks like it burnt. A power overload?
+W=BROK
+
+T=(Smells)
+W=BROK
+
+T=It's recent.
+W=BROK
+
+T=Did someone put his finger in it by any chance...?
+W=BROK
+A=HAPPY
+
+T=Nah. No one would be stupid enough to do that!
+W=BROK
+A=ALRIGHT
+CLUE=CLUE_POLICE_BURNTSOCKET
+TEN=PC09C_SOCKET_CHECKPRINTER
+
+
+#-----------------------------------
+ID=PC09C_SOCKET2
+T=That socket is all burnt down. Hopefully it still works.
+W=BROK
+A=THINK
+TEN=PC09C_SOCKET_CHECKPRINTER
+
+#-----------------------------------
+ID=PC09C_SOCKET_PRINTER
+T=Hmm... Seems to be the only socket around. Hopefully it still works.
+W=BROK
+A=WONDER
+TEN=PC09C_PRINTER_HOOK
+
+#-----------------------------------
+#= Box
+#-----------------------------------
+ID=PC09C_BOX1
+T=Documents...? They still use paper?
+W=BROK
+A=THINK
+
+T=...
+W=BROK
+
+T=A bunch of legal stuff...
+W=BROK
+
+T=Staff contracts...
+W=BROK
+
+T=Whoa. They're all dated from years ago!
+W=BROK
+A=SURPRISED
+
+T=I guess Wes doesn't tidy up very often.
+W=BROK
+A=MEH
+
+T=...
+W=BROK
+A=THINK
+
+T=Huh? Some... drawings?
+W=BROK
+A=THINK
+
+T=They're weird... and crossed. I can't even make out what they're supposed to be.
+W=BROK
+A=WONDER
+
+T=It's like someone tried to draw a suspect but couldn't, no matter what.
+W=BROK
+
+T=That must be all...
+W=BROK
+A=THINK
+SKIPEND=1
+
+T=...Oh?
+W=BROK
+A=THINK
+
+T=Something's stuck beneath all this paper.
+W=BROK
+A=THINK
+
+T=Got it!
+W=BROK
+A=HAPPY
+TEN=PC09C_GOT_IDENTIKIT
+
+
+#-----------------------------------
+#= Identikit
+#-----------------------------------
+ID=PC09C_IDENTIKIT1
+T=...?
+W=BROK
+A=THINK
+
+T=There's a note attached to it...
+W=BROK
+
+T="Hey boss! I've noticed you've stopped sketching for suspects search recently."
+W=BROK
+
+T="Why? It's such a shame, you're the best artist among us!"
+W=BROK
+
+T="Regardless, here's something I came up with. It's all based on pictures of ourselves!"
+W=BROK
+
+T="I figured this could help you until you get your skills back!"
+W=BROK
+
+T=Hmm. Looks fun!
+W=BROK
+A=HAPPY
+TEN=PC09C_IDENTIKIT_CLUES
+
+#-----------------------------------
+ID=PC09C_IDENTIKIT_ON
+T=It's still got some energy left. Nice!
+W=BROK
+A=HAPPY
+
+#-----------------------------------
+ID=PC09C_IDENTIKIT_PICTURE
+T="Work in progress"
+W=BROK
+A=THINK
+
+#-----------------------------------
+ID=PC09C_IDENTIKIT_HACKPHONE
+T=Good idea!
+W=BROK
+A=HAPPY
+
+T=...?
+W=BROK
+A=THINK
+
+T="Illegal pattern detected (Text over the face.) Remove unnatural artifacts before taking a picture."
+W=BROK
+
+T=Darn. There's a "Work in progress" stamp over it.
+W=BROK
+A=ANGRY
+
+T=High technology? Right...
+W=BROK
+A=OPPOSITE
+
+#-----------------------------------
+ID=PC09C_PRINTKO1
+T=Nothin'...
+W=BROK
+A=MAYBE
+
+#-----------------------------------
+ID=PC09C_PRINTKO2
+T=...
+W=BROK
+A=THINK
+
+T=I'm pretty sure this button is for printing but nothing's happening.
+W=BROK
+A=WONDER
+
+T=Aww... I wanna save it! That's the best picture I could make!
+W=BROK
+A=TIRED
+
+#-----------------------------------
+ID=PC09C_PRINTKO3
+T=Nope.
+W=BROK
+A=WONDER
+
+T=Is there a printer somewhere?
+W=BROK
+
+#-----------------------------------
+ID=PC09C_PRINTOK1
+T=I heard somethin'!
+W=BROK
+A=WONDER
+TEN=PC09C_PRINTING_STOP
+
+#-----------------------------------
+#= Mess
+#-----------------------------------
+ID=PC09C_MESS1
+T=Glad to see even someone as stiff as Wes can make such a mess!
+W=BROK
+A=ALRIGHT
+
+T=Could there be something interesting in there?
+W=BROK
+A=WONDER
+TEN=PC09C_MESS_CROUCH
+
+T=...
+W=BROK
+A=THINK
+SOUND=clothes
+T=Various electronic equipments...
+W=BROK
+
+T=Got no idea what most of these are, I'm not a technical junkie.
+W=BROK
+
+T=Ha! Here's something I recognize!
+W=BROK
+A=MOCK
+
+T=A printer! Hadn't seen one in years, back at school... when it was still called school.
+W=BROK
+A=HAPPY
+
+T=I feel old.
+W=BROK
+A=DOWN
+TEN=PC09C_MESS_STAND
+
+T=Anyway, I got it out.
+W=BROK
+A=THINK
+TEN=PC09C_PRINTER_CREATE
+
+#-----------------------------------
+ID=PC09C_MESS_OTT
+T=Erm...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=ALRIGHT
+
+T=Oh! I... guess I'm not supposed to rummage through this...?
+W=BROK
+A=HAPPY
+
+T=Right.
+W=OTT
+
+T=Sorry! Bad detective habits, ya know?
+W=BROK
+
+T=No problem.
+W=OTT
+C2A=HAPPY
+
+#-----------------------------------
+#= Printer
+#-----------------------------------
+ID=PC09C_PRINTER1
+T=Could be valuable! Must be a museum piece now.
+W=BROK
+A=HAPPY
+
+#-----------------------------------
+
+ID=PC09C_PRINTER2
+T=It's off. No juice. Obviously.
+W=BROK
+A=THINK
+
+T=Wires from various equipment are all tangled up.
+W=BROK
+
+T=Ngggh...
+W=BROK
+A=READY
+
+T=Here's the wire. Now I need to hook it up.
+W=BROK
+
+
+
+#-----------------------------------
+
+ID=PC09C_PRINTER3
+T=Yeah...! Ready to give birth to paper babies!
+W=BROK
+A=MEH
+
+#-----------------------------------
+
+ID=PC09C_PRINTER_GETPIC_WRONG
+T=Something's been printed!
+W=BROK
+A=HAPPY
+
+T=It's a weird face.
+W=BROK
+A=SURPRISED
+
+T=Can't see any use for this... except a paper plane, maybe?
+W=BROK
+A=WONDER
+#TODO throw a paper plane for fun
+
+
+#-----------------------------------
+
+ID=PC09C_PRINTER_GETPIC_EMPTY
+T=A blank paper. Does that thing even work?!
+W=BROK
+A=THINK
+
+#-----------------------------------
+
+ID=PC09C_PRINTER_GETPIC_CORRECT
+T=Hey! It's totally a picture of Wes!
+W=BROK
+A=HAPPY
+TEN=PC09C_PRINTER_GET
+
+#-----------------------------------
+
+ID=PC09C_PRINTER_GETPIC_RJ
+T=Hey! That's R.J.!
+W=BROK
+A=HAPPY
+TEN=PC09C_PRINTER_GETRJPIC
+
+#-----------------------------------
+
+ID=PC09C_PRINTER_GETPIC_ALREADY
+T=Already got that one.
+W=BROK
+A=THINK
+
+#-----------------------------------
+#= Chair
+#-----------------------------------
+ID=PC09C_CHAIRB1
+T=Hmm... Isn't there something under this chair?
+W=BROK
+A=THINK
+
+#-----------------------------------
+ID=PC09C_CHAIRB2
+T=The chair's stuck. Can't access what might be beneath it.
+W=BROK
+A=OPPOSITE
+
+#-----------------------------------
+ID=PC09C_CHAIR_BENEATH1
+T=Hey... That chair seems to be covering something on the floor.
+W=BROK
+A=WONDER
+TEN=PC09C_CHAIR_BENEATH_PUSH
+
+#-----------------------------------
+ID=PC09C_CHAIR_BENEATH2
+T=...
+W=BROK
+A=THINK
+
+T=What the...? I can't push the chair out of the way!
+W=BROK
+A=SURPRISED
+
+T=A wheel must be stuck.
+W=BROK
+A=THINK
+
+T=Crawling is out of the question. I wouldn't get a good enough view...
+W=BROK
+A=THINK
+
+T=...and my back hurts.
+W=BROK
+A=STUPID
+
+#-----------------------------------
+ID=PC09C_CHAIR_OTT
+T=Mister Brok?
+W=OTT
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=WONDER
+D=60
+NB=1
+
+T=What are you doing with this chair...?
+W=OTT
+D=60
+
+T=Trying to get it loose!
+W=BROK
+D=60
+
+T=O-kay...
+W=OTT
+D=60
+
+
+#-----------------------------------
+ID=PC09C_CHAIRB_INV_STICK1
+T=That's not enough.
+W=BROK
+A=MAYBE
+
+#-----------------------------------
+ID=PC09C_CHAIRB_INV_STICK2
+T=Still stuck.
+W=BROK
+A=OPPOSITE
+
+#-----------------------------------
+ID=PC09C_SPEAKER1
+T=Looks like a socket for some kind of device.
+W=BROK
+A=THINK
+
+T=At the center of the room...? Hmm.
+W=BROK
+
+#-----------------------------------
+ID=PC09C_SPEAKER2
+T=It's written... "Tri-home."
+W=BROK
+A=THINK
+
+T=Must be linked to that assistant thingy, somehow...?
+W=BROK
+A=WONDER
+
+#-----------------------------------
+ID=PC09C_SPEAKER_SET
+T=There ya go! Fits perfectly!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+
+T=Well, more or less.
+W=BROK
+C1A=THINK
+TEN=PC09C_SPEAKER_SET2_CHECK
+
+#-----------------------------------
+ID=PC09C_SPEAKER_SET2
+T=...?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SAD
+
+T=(Ott is making a weird face at me...)
+W=BROK
+MOOD=THINK
+
+T=(But I think he's too busy restraining himself to feel concerned.)
+W=BROK
+MOOD=THINK
+TEN=PC09C_OTT_CHECKLEAVE
+
+
+#-----------------------------------
+ID=PC09C_SPEAKEROK
+T=It's perfect!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+
+#-----------------------------------
+#= Tri-home
+#-----------------------------------
+
+ID=PC09C_ASSISTANT1
+T=What's that box thingy?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=NORMAL
+
+T=You don't know?
+W=OTT
+
+T=A Tri-home. It's a virtual assistant.
+W=OTT
+
+T=You can ask anything! Uncle Wes lent it to me while he's busy.
+W=OTT
+C2A=HAPPY
+
+T=Sounds cool. Can I try it?
+W=BROK
+C1A=READY
+
+T=Sure.
+W=OTT
+TEN=PC09C_ASSISTANT_USE
+
+#-----------------------------------
+
+ID=PC09C_ASSISTANT1B
+T="Hello! You're a new user."
+BVOICE=VARIOUS
+
+T="What's your name?"
+
+T=Who cares...?
+W=BROK
+A=ANGRY
+
+T="Now registered as Whocares."
+
+T=Whoops...!
+W=BROK
+A=CONFUSED
+
+T="Welcome!"
+
+T="As a free-customer-level guest, your permissions are restricted to changing the room environment."
+
+T="Currently installed environments : Space, Waterfall, Mountain."
+
+T="Which environment would you like?"
+TEN=PC09C_ASSISTANT_CHOICE
+
+#-----------------------------------
+ID=PC09C_ASSISTANT1C
+T=Whoa! How luxurious!
+W=BROK
+C1=BROK
+C1A=HAPPY
+
+T="Would you like to install new environments?"
+BVOICE=VARIOUS
+
+T="Special offer! Get new environments for 500 Unis each. Limited to the first 10,000 customers! Get it before it's gone!"
+C1A=ANGRY
+
+T="You may also get the Season Pass for just 1,500 Unis! This is the best way to ensure you'll get the new environments as soon as they're released..."
+SKIPEND=1
+
+T=No thank you. And stop your blabbering, peddler box.
+W=BROK
+TEN=PC09C_OTT_CHECKLEAVE
+
+#-----------------------------------
+ID=PC09C_ASSISTANT2
+T="Hello, Whocares!"
+BVOICE=VARIOUS
+
+T="Choose your environment!"
+TEN=PC09C_ASSISTANT_CHOICE
+
+#-----------------------------------
+ID=PC09C_ASSISTANT2B
+T="A malfunction has been detected!"
+BVOICE=VARIOUS
+
+T="Error 1262X - No sound output. This may lead to a degraded experience."
+
+T="Please check your installation."
+TEN=PC09C_ASSISTANT_CHECKLEAVE
+
+
+#-----------------------------------
+#= Moving towards Wes desk
+#-----------------------------------
+ID=PC09C_OTT_MOVEDESK1
+T=Where are you going?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SAD
+COMM=Attempting to go towards Wes desk fails
+
+T=Just checking...
+W=BROK
+C1A=HAPPY
+
+T=Please don't. I promised my uncle I'd stay here to watch over his belongings.
+W=OTT
+
+T=Okay...
+W=BROK
+C1A=MAYBE
+TEN=PC09C_OTT_MOVEDESKBACK
+
+#-----------------------------------
+ID=PC09C_OTT_MOVEDESK2
+T=Did you listen...?
+W=OTT
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=OPPOSITE
+
+T=Please. Uncle Wes would get mad!
+W=OTT
+TEN=PC09C_OTT_MOVEDESKBACK
+
+
+#-----------------------------------
+ID=PC09C_OTT_MOVEDESK3
+T=Mister Brok...!
+W=OTT
+C1=BROK
+C1A=CONFUSED
+C2=OTT
+C2A=ANGRY
+
+T=Okay, okay...
+W=BROK
+C1A=ANGRY
+TEN=PC09C_OTT_MOVEDESKBACK
+
+
+#-----------------------------------
+#= Door lock
+#-----------------------------------
+ID=PC09C_OTT_DOORLOCK1
+T=Huh...?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SURPRISED
+COMM=Trying to lock the office door
+VLOW=1
+
+T=Did you just lock us in?
+W=OTT
+
+T=Yeah?
+W=BROK
+C1A=HAPPY
+
+T=Why?
+W=OTT
+C2A=SAD
+
+T=Err... Just afraid your uncle might suddenly come in. He's frightening!
+W=BROK
+
+T=Not really...
+W=OTT
+C2A=WONDER
+
+T=Oh... Well...
+W=BROK
+TEN=PC09C_DOORLOCK_AGAIN
+
+#-----------------------------------
+ID=PC09C_OTT_DOORLOCK2
+T=Again?
+W=OTT
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SAD
+
+T=Sorry. Forgot you were there.
+W=BROK
+
+T=Huh...?
+W=OTT
+C2A=SURPRISED
+TEN=PC09C_DOORLOCK_AGAIN
+
+#-----------------------------------
+ID=PC09C_OTT_AFTERDOORLOCK1
+T=(Bump)
+NB=1
+D=90
+CONTEXT=We locked the door while Ott was out and now he can't come inside
+
+T=(Mister Brok! The door is locked!)
+BNAME=OTT
+BVOICE=OTT
+D=120
+
+#-----------------------------------
+ID=PC09C_OTT_AFTERDOORLOCK2
+T=(Can you open it, please?)
+BNAME=OTT
+BVOICE=OTT
+NB=1
+D=120
+
+#-----------------------------------
+ID=PC09C_OTT_AFTERDOORLOCK3
+T=(What's going on?!)
+BNAME=OTT
+BVOICE=OTT
+NB=1
+D=120
+
+#-----------------------------------
+ID=PC09C_OTT_AFTERDOORLOCK4
+T=(I... I'm gonna find Uncle Wes!)
+BNAME=OTT
+BVOICE=OTT
+NB=1
+D=120
+
+#-----------------------------------
+#= Ott leaves for pressing need
+#-----------------------------------
+ID=PC09C_OTT_LEAVES
+T=...
+W=OTT
+C2=OTT
+C2A=PEE
+CONTEXT=We "convinced" Ott to go pee
+
+T=I can't...!
+W=OTT
+TEN=PC09C_OTT_LEAVES2
+
+
+#-----------------------------------
+ID=PC09C_OTT_LEAVES3
+T=Good! Now I better act fast.
+W=BROK
+A=READY
+TEN=PC09C_MUSIC_WESOFFICE
+
+#-----------------------------------
+ID=PC09C_CANNOTLEAVE
+T=Not yet!
+W=BROK
+A=MAYBE
+
+
+#-----------------------------------
+#= Computer
+#-----------------------------------
+ID=PC09C_COMPUTER1
+T=Okay. Time for my favorite activity that I despise the most!
+W=BROK
+A=ALRIGHT
+CONTEXT=Using the computer to search through it
+
+T=Using a computer. (Shivers)
+W=BROK
+A=WORRIED
+TEN=PC09C_COMPUTER_CLOSEUP
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_WES1
+T=Yeah... That's Wes's computer, all right.
+W=BROK
+A=MEH
+
+#-----------------------------------
+ID=PC09C_COMPUTER_WES_HACKPHONE
+T=Good idea!
+W=BROK
+A=ALRIGHT
+
+T=...
+W=BROK
+A=THINK
+TEN=PC09C_COMPUTER_WES_HACKPHONE_CHECK
+
+#-----------------------------------
+ID=PC09C_COMPUTER_WES_HACKPHONE_DONE
+T=There. But it's not enough.
+W=BROK
+A=ANGRY
+
+T=Where am I gonna find a front view of the old man...?
+W=BROK
+A=ANGRY
+
+#-----------------------------------
+ID=PC09C_COMPUTER_WES_HACKPHONE3D
+T=I'm done with that!
+W=BROK
+A=MEH
+
+
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_TITLE1
+T="Identification"
+W=BROK
+A=THINK
+
+#-----------------------------------
+ID=PC09C_COMPUTER_CIRCLE1
+T=I guess that's the area I should look at to.
+W=BROK
+A=THINK
+TEN=PC09C_COMPUTER_REJECT
+
+#-----------------------------------
+ID=PC09C_COMPUTER_CIRCLE1B
+T=...
+W=BROK
+A=THINK
+
+T=Obviously. I'm not allowed.
+W=BROK
+A=ANGRY
+
+#-----------------------------------
+ID=PC09C_COMPUTER_CIRCLE_HACKERPHONE
+T=There! I've taken a picture of that circle.
+W=BROK
+A=ALRIGHT
+
+T=...
+W=BROK
+A=WONDER
+
+T=I feel like I missed a step here...
+W=BROK
+
+#-----------------------------------
+ID=PC09C_COMPUTER_CIRCLE_PHOTOWES
+T=...?
+W=BROK
+A=THINK
+
+T=I'm holding that picture of Wes but nothing happens.
+W=BROK
+A=WONDER
+
+T=Did I forget something...?
+W=BROK
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_CIRCLE_HACKPHONE3D
+T=...
+W=BROK
+A=THINK
+SILENCE=1
+
+T=Yes! It worked!
+W=BROK
+A=ALRIGHT
+TEN=PC09C_COMPUTER_CIRCLE_ACCESS
+
+#-----------------------------------
+ID=PC09C_COMPUTER_DELETEENTRY
+T=Hmm... Not much on this computer.
+W=BROK
+A=THINK
+
+T=I'm curious. What's in the trash bin?
+W=BROK
+A=WONDER
+TEN=PC09C_SCREEN_DISPLAYTRASH
+
+#-----------------------------------
+ID=PC09C_COMPUTER_DELETEENTRY2
+T=Two folders here.
+W=BROK
+A=THINK
+
+T="D.Silver" and "R.Filsh"
+W=BROK
+TEN=PC09C_SCREEN_DISPLAYERROR
+
+#-----------------------------------
+ID=PC09C_COMPUTER_DELETEENTRY3
+T=Darn... They're corrupted. I can't access the documents.
+W=BROK
+A=ANGRY
+
+T=Filsh. Why does this have a familiar ring to it...?
+W=BROK
+A=WONDER
+TEN=PC09C_COMPUTER_GIVECLUES
+
+T=Let's try this other icon.
+W=BROK
+A=THINK
+TEN=PC09C_SCREEN_DISPLAYFILES
+
+#-----------------------------------
+ID=PC09C_COMPUTER_DELETEENTRY4
+T=Lots of names here. Maybe some list of criminals?
+W=BROK
+A=THINK
+TEN=PC09C_COMPUTER_CHECKMISSION
+
+#-----------------------------------
+ID=PC09C_COMPUTER_NOMISSION
+T="The Gloom". Yup, probably.
+W=BROK
+A=THINK
+
+T=That's it? Nothing else on this machine?
+W=BROK
+A=ANGRY
+TEN=PC09C_SCREEN_END
+
+T=I expected too much...
+W=BROK
+A=MAYBE
+TEN=PC09C_COMPUTER_CHECKAFTER
+IT=1
+
+#-----------------------------------
+ID=PC09C_COMPUTER_MISSION
+T=Yup! Found it! "The Gloom."
+W=BROK
+A=HAPPY
+COMM=Fulfill the hacker's mission
+
+T=How do I select it...?
+W=BROK
+A=THINK
+
+T=Ah, yes. Graff showed me once. Erm...
+W=BROK
+A=MAYBE
+TEN=PC09C_SCREEN_DISPLAYHIGHLIGHT
+
+T=There.
+W=BROK
+A=THINK
+
+T=And...
+W=BROK
+A=THINK
+TEN=PC09C_SCREEN_END
+
+T=Delete.
+W=BROK
+A=ALRIGHT
+
+T=...
+W=BROK
+A=THINK
+
+T=Is this enough? I wonder.
+W=BROK
+A=THINK
+SKIPEND=1
+
+T=(Ring)
+SOUND=phone_dial
+TEN=PC09C_MUSICFADE
+
+T=The hacker phone...? It's ringing!
+W=BROK
+A=SURPRISED
+
+T=[...]
+W=BROK
+A=THINK
+SOUND=phone_end
+
+T=Hello?
+W=BROK
+
+T=Anyone around?
+W=HACKER
+C2=HACKER
+C2A=LISTEN
+
+T=Nope but... 
+W=BROK
+SKIPEND=1
+
+T=This is a secure line. Good job!
+W=HACKER
+C2A=HAPPY
+
+T=Wait, how do you know?
+W=BROK
+
+T=What d'ya think? I set up a watch-notification in case of any changes on my file.
+W=HACKER
+
+T=Whatever. Will you respect your end of the contract?
+W=BROK
+A=MAYBE
+
+T=Yeah. The chip is yours.
+W=HACKER
+C2A=NORMAL
+
+T=Though I don't feel safe with you carrying it all around.
+W=HACKER
+
+T=Tell me who and I'll send it via a secure way.
+W=HACKER
+
+T=The Slums school Director.
+W=BROK
+A=THINK
+
+T=Got it.
+W=HACKER
+
+T=Oh and... This phone is gonna self destruct. Like, right now.
+W=HACKER
+SKIPEND=1
+C2A=HAPPY
+TEN=PC09C_MISSION_DESTRUCT
+
+#-----------------------------------
+ID=PC09C_COMPUTER_WASBLACKMAILED
+T=Of course. My lips are sealed.
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=HAPPY
+
+T=Oh and... This phone is gonna self destruct. Like, right now.
+W=HACKER
+SKIPEND=1
+TEN=PC09C_MISSION_DESTRUCT
+
+
+#-----------------------------------
+ID=PC09C_MISSION_DESTRUCT2
+T=Whoa! 
+W=BROK
+A=CONFUSED
+
+T=So much for recycling... What a waste.
+W=BROK
+A=DOWN
+TEN=PC09C_COMPUTER_CHECKAFTER
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTEROTTKO
+T=...
+W=BROK
+A=THINK
+
+T=Where's Ott?
+W=BROK
+A=WONDER
+
+T=Darn. Sounds like trouble ahead...
+W=BROK
+A=STUPID
+TEN=PC09C_COMPUTER_AFTER
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER1
+T=Better get outta here before...
+W=BROK
+A=THINK
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER2
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=SURPRISED
+C4=OTT
+C4A=SAD
+CONTEXT=After searching through Wes' computer, both Wes and Ott come crashing inside
+
+T=What are you doing here?
+W=WES
+C2A=ANGRY
+
+T=Well... You said you needed me, right?
+W=BROK
+C1A=HAPPY
+TEN=PC09C_COMPUTER_AFTER_CHECK2
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_LOCKED
+T=Uncle Wes! He locked himself in!
+W=OTT
+C1=BROK
+C1A=HAPPY
+C2=WES
+C2A=WONDER
+C4=OTT
+C4A=ANGRY
+
+T=The door was stuck...
+W=BROK
+
+T=Ott. I gave you a clear order.
+W=WES
+
+T=Do. Not. Leave. The room!
+W=WES
+C1A=THINK
+C2A=ANGRY
+C4A=SURPRISED
+
+T=Under any circumstance!
+W=WES
+
+T=But...!
+W=OTT
+
+T=Enough.
+W=WES
+
+T=...
+W=OTT
+C4A=OPPOSITE
+TEN=PC09C_COMPUTER_AFTER_EXPLAIN
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_NOTLOCKED
+T=Don't worry, Uncle Wes.
+W=OTT
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+C4=OTT
+C4A=NORMAL
+
+T=I watched the place, just like you asked!
+W=OTT
+C4A=HAPPY
+
+T=Hmm. And that explains why you were outside.
+W=WES
+
+T=Sorry. I had to go to the toilet.
+W=OTT
+C4A=SAD
+
+T=But only for a minute! I just came back.
+W=OTT
+C4A=NORMAL
+
+T=Besides, ya know... Mister Brok is a good person.
+W=OTT
+
+T=Is he, now...?
+W=WES
+
+T=Enough with the suspicions, Wes! I came here to help!
+W=BROK
+C1A=ANGRY
+
+T=Whatever.
+W=WES
+C2A=NORMAL
+TEN=PC09C_COMPUTER_AFTER_EXPLAIN
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_OTTWASKOED
+T=My nephew left the office in a hurry.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=The boy didn't give me a chance to interrogate him.
+W=WES
+
+T=What can you tell me about this?
+W=WES
+C2A=WONDER
+
+T=Me...?
+W=BROK
+C1A=HAPPY
+
+T=Dunno. Who's your nephew?
+W=BROK
+
+T=Hmph.
+W=WES
+C2A=ANGRY
+TEN=PC09C_COMPUTER_AFTER_EXPLAINCHECK
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_EXPLAIN
+T=There are more urgent matters right now.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=OTT
+C4A=SAD
+
+T=We have a situation.
+W=WES
+
+T=An important scientist has disappeared over Engineer Lab 21.
+W=WES
+
+T=Unfortunately I have other business to attend to so I'm sending you.
+W=WES
+C2A=WONDER
+TEN=PC09C_COMPUTER_AFTER_EXPLAIN_CHECKOTT
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_EXPLAIN_NOOTT
+T=An Aircar is ready to take you there.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+
+T=You mean... now?
+W=BROK
+C1A=SURPRISED
+
+T=Now!
+W=WES
+C2A=ANGRY
+
+T=Or maybe you'd rather get back to your cell?
+W=WES
+
+T=Hey, no need to get mad.
+W=BROK
+C1A=ANGRY
+
+T=I just thought you'd share some info.
+W=BROK
+
+T=You'll get all the details you need on the spot.
+W=WES
+C2A=NORMAL
+
+T=Okay, okay. I'm going.
+W=BROK
+
+T=You'll be accompanied by my nephew. I can't trust you to work alone.
+W=WES
+C2A=WONDER
+
+T=Err...!
+W=BROK
+C1A=SURPRISED
+
+T=B-but you said...
+W=BROK
+SKIPEND=1
+
+T=It's part of his training course.
+W=WES
+
+T=Whatever happens, he has to go.
+W=WES
+C2A=NORMAL
+
+T=Okay...
+W=BROK
+C1A=DOWN
+
+T=And don't screw up! 
+W=WES
+C2A=ANGRY
+TEN=PC09C_COMPUTER_AFTER_END
+
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_EXPLAIN_OTT
+T=Along with my nephew.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=OTT
+C4A=SAD
+
+T=What?
+W=OTT
+C4A=SURPRISED
+
+T=I'm... going on a case? In the Drums?!
+W=OTT
+
+T=Yes. I gave you special permission to access the Dome today.
+W=WES
+C2A=WONDER
+
+T=I need someone trustworthy to watch over that detective.
+W=WES
+
+T=I'm right here, ya know.
+W=BROK
+C1A=ANGRY
+
+T=An Aircar is ready take you there.
+W=WES
+C2A=NORMAL
+TEN=PC09C_COMPUTER_AFTER_EXPLAIN_CHECKSITUATION
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_EXPLAIN_OTTFORCED
+T=Okay...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+C4=OTT
+C4A=DISAPPOINTED
+
+T=I... guess we should go.
+W=OTT
+
+T=...
+W=BROK
+
+T=(Ott seems depressed...)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+
+T=Don't waste my time. Hurry up!
+W=WES
+TEN=PC09C_COMPUTER_AFTER_END
+
+
+#-----------------------------------
+ID=PC09C_COMPUTER_AFTER_EXPLAIN_OTTHAPPY
+T=Awesome!
+W=OTT
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=OTT
+C4A=HAPPY
+
+T=I can't wait to learn from you, Mister Brok!
+W=OTT
+
+T=Don't get your hopes up, nephew.
+W=WES
+
+T=All I ask is that he doesn't screw up like he always does.
+W=WES
+C2A=WONDER
+
+T=I'll prove you can trust me, old weasel.
+W=BROK
+C1A=COCKY
+
+T=Come on, Ott. Let's go.
+W=BROK
+C1A=HAPPY
+TEN=PC09C_COMPUTER_AFTER_END
+
+#-----------------------------------
+ID=PC09C_FOOTSTEPS
+T=(Footsteps)
+TEN=PC09C_FOOTSTEPS_NEXT
+
+
+#-----------------------------------
+ID=PC09C_OTT_OPENS_OOPS
+T=...!
+W=OTT
+C1=OTT
+C1A=SURPRISED
+C2=BROK
+C2A=CONFUSED
+
+T=What are you doing?!
+W=OTT
+C1A=ANGRY
+
+T=Erm...
+W=BROK
+C2A=HAPPY
+
+T=I trusted you, Mister Brok!
+W=OTT
+TEN=PC09C_OTT_OPENS_LOOKOTHERWAY
+
+T=Uncle Wes!
+W=OTT
+C1A=SURPRISED
+
+T=This time you're done for, Pork!
+W=WES
+C3=WES
+C3A=ANGRY
+
+T=Oops!
+W=BROK
+TEN=PC09C_OTTJAIL_GAMEOVER
+
+
+#-----------------------------------
+ID=PC09C_OTT_OPENS_OK
+T=...
+W=OTT
+C1=OTT
+C1A=NORMAL
+C2=BROK
+C2A=THINK
+SILENCE=1
+
+T=Everything okay?
+W=BROK
+
+T=Yeah.
+W=OTT
+
+T=Uncle Wes arrived. He's checking stuff in the jail.
+W=OTT
+
+T=I'll go help him.
+W=OTT
+
+T=Alright.
+W=BROK
+C2A=ALRIGHT
+TEN=PC09C_OTT_OPENS_OKNEXT
+
+
+#-----------------------------------
+ID=PC09C_OTT_OPENS_OK2
+T=(So close. I can't give up yet.)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+T=(No time to waste!)
+W=BROK
+A=READY
+MOOD=THINK
+
+###############################################
+# PROOFREAD - jblaker - 26/06/2019
+###############################################
+
+#-----------------------------------
+ID=PC09C_MONITOR_HIT1
+T=Argh! I'm getting sick of this!
+W=BROK
+A=FURIOUS
+NB=1
+D=120
+
+#-----------------------------------
+ID=PC09C_MONITOR_OK1
+T=Identity confirmed.
+BVOICE=COMMANDS
+TEN=PC09C_MONITOR_KO_NEXT
+
+#-----------------------------------
+ID=PC09C_MONITOR_OK2
+T=...!
+W=BROK
+A=SURPRISED
+
+T=Once again, nothing beats a good beating!
+W=BROK
+A=ALRIGHT
+TEN=PC09C_MONITOR_KO_NEXT2

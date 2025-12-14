@@ -1,0 +1,6098 @@
+﻿#-------------------------------
+#=SHAY GARAGE
+#-------------------------------
+
+#----------------------
+#= Box
+#----------------------
+ID=PC08B_BOX1
+T=Shay's anti-intrusion system must be in there...
+W=BROK
+A=WONDER
+CONTEXT=Room interactions
+
+#----------------------
+#= Lever
+#----------------------
+ID=PC08B_LEVER1
+T=Let me guess!
+W=BROK
+A=THINK
+
+T=Hmm... Must be for closing the garage door?
+W=BROK
+A=MOCK
+TEN=PC08B_LEVER_CHOICE
+
+#----------------------
+ID=PC08B_LEVER2
+T=Is it missing something? Ha ha!
+W=BROK
+A=HAPPY
+
+
+#----------------------
+#= Lever
+#----------------------
+ID=PC08B_LEVER_PRESS1
+T=...?
+W=BROK
+A=WONDER
+
+T=Nothing seems to be happeni...
+W=BROK
+A=WONDER
+TEE=PC08B_LEVER_FALL1
+SKIPEND=1
+
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=What's that noise?
+W=SHAY
+C2=SHAY
+C2A=WONDER
+
+T=N-nothing! I just walked into some metal scrap.
+W=BROK
+C1A=HAPPY
+
+T=You know, your garage could use some tidying!
+W=BROK
+
+T=I never lose anything!
+W=SHAY
+C2A=HAPPY
+
+T=Watch your step, Bro'!
+W=SHAY
+C2A=NORMAL
+
+T=(Better take that lever before she notices.)
+W=BROK
+MOOD=THINK
+TEN=PC08B_LEVER_GET
+
+
+
+
+#----------------------
+#= Mask
+#----------------------
+ID=PC08B_MASK1
+T=A robot-hunter trophy?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=No, silly!
+W=SHAY
+C2A=HAPPY
+
+T=It's just a mask I use to protect myself from the heat when I'm welding.
+W=SHAY
+C2A=NORMAL
+
+
+#----------------------
+#= Drawer
+#----------------------
+ID=PC08B_DRAWER1
+T=Full of useless doodads.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=SHAY
+C2A=MEH
+
+T=To each his own.
+W=SHAY
+
+#----------------------
+#= Cup
+#----------------------
+ID=PC08B_CUP1
+T=Eww! How long has this been here? Some kind of plant grew in it!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+
+T=Oh! So that's where I left my cup of EnergyUp!
+W=SHAY
+C2=SHAY
+C2A=HAPPY
+
+T=No comment.
+W=BROK
+C1A=STUPID
+
+#----------------------
+#= Tubes
+#----------------------
+ID=PC08B_TUBES1
+T=Shay's definitely the biggest fan of meal replacements in tubes around here.
+W=BROK
+C1=BROK
+C1A=MEH
+
+T=What do you mean, replacement? They contain everything you need to live healthy.
+W=SHAY
+C2=SHAY
+C2A=NORMAL
+
+T=Says who?
+W=BROK
+
+T=SCIENCE.
+W=SHAY
+C2A=HAPPY
+
+T=Science doesn't sustain me. I need real food.
+W=BROK
+C1A=READY
+
+#----------------------
+#= Incubator
+#----------------------
+ID=PC08B_INCUBATOR1
+T=Ah! I've heard about those!
+W=BROK
+C1=BROK
+C1A=MOCK
+
+T=Put some meal replacement tube in there and it reconstitutes something that looks like real food!
+W=BROK
+C1A=MEH
+
+T=It's not "looks like." This IS real food. Give it a try!
+W=SHAY
+C2=SHAY
+C2A=HAPPY
+
+T=Not a chance.
+W=BROK
+C1A=OPPOSITE
+
+#----------------------
+#= Mess
+#----------------------
+ID=PC08B_MESS1
+T=At least I've got something in common with Shay!
+W=BROK
+C1=BROK
+C1A=MEH
+
+#----------------------
+#= Trash
+#----------------------
+ID=PC08B_TRASH1
+T=Not much in here!
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=I don't like throwing things away.
+W=SHAY
+C2=SHAY
+C2A=MEH
+
+T=These little bits and pieces could be useful someday. You just need an open mind!
+W=SHAY
+C2A=NORMAL
+
+T=...and a bank account in the red.
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+#= Vehicle
+#----------------------
+ID=PC08B_VEHICLE1
+T=Is that a bike?
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=It used to be. I converted it into a vacuum cleaner. Much more useful!
+W=SHAY
+C2=SHAY
+C2A=HAPPY
+
+T=For you, maybe...
+W=BROK
+
+#--------------------------------------------
+#= Drawings on chair
+#--------------------------------------------
+ID=PC08B_DRAWINGS1
+T=What's that...?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Are you hiding children in here?
+W=BROK
+
+T=Bro'. Never! I hate brats.
+W=SHAY
+C2A=ANGRY
+
+T=These are drawing attempts from artificial intelligences I've worked on.
+W=SHAY
+C2A=NORMAL
+
+T=I thought I could make some money by winning this art competition.
+W=SHAY
+
+T=They're not very good.
+W=BROK
+
+T=That's an understatement! Robots are capable of many things but artistic talents are very much out of their league. 
+W=SHAY
+
+T=At least... For the way the human brain interprets it.
+W=SHAY
+C2A=MEH
+
+T=You can't reproduce the human creative side with algorithingies...?
+W=BROK
+
+T=Well... I've read a lot of studies.
+W=SHAY
+C2A=WONDER
+
+T=Theoretically we could reproduce the entire human brain...
+W=SHAY
+
+T=Except for creativity!
+W=SHAY
+
+T=AIs can mimic some patterns but designing something from scratch by themselves AND looking good? 
+W=SHAY
+C2A=NORMAL
+
+T=That's the only thing even you will always have an advantage over!
+W=SHAY
+
+T=Hey, no bot has ever matched me when it comes to fighting!
+W=BROK
+C1A=READY
+CLUE=CLUE_LAB_AIINEPT
+
+#--------------------------------------------
+ID=PC08B_DRAWINGS2
+T=Bad drawings from useless bots.
+W=BROK
+A=MEH
+
+
+#----------------------
+#= Wrench
+#----------------------
+ID=PC08B_WRENCH1
+T=All inventors need their own monkey wrench!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=SHAY
+C2A=NORMAL
+
+T=May I have it?
+W=BROK
+C1A=READY
+
+T=No.
+W=SHAY
+C1A=ANGRY
+
+#----------------------
+#= Computer
+#----------------------
+ID=PC08B_COMPUTER1
+T=I should know better than to mess with Shay's computer!
+W=BROK
+C1=BROK
+C1A=MEH
+
+T=Especially when I'm right here.
+W=SHAY
+C2=SHAY
+C2A=ANGRY
+
+#----------------------
+#= Tools
+#----------------------
+ID=PC08B_TOOLS1
+T=A toolbox. Maybe that screwdriver could be useful?
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=You don't need mine. 
+W=SHAY
+C2=SHAY
+C2A=NORMAL
+
+T=Remember, the tip of your apartment key double serves as screwdriver!
+W=SHAY
+
+T=And it automatically adapts to all sizes.
+W=SHAY
+
+T=Oh, yeah! That's right, you did that for me!
+W=BROK
+C1A=WONDER
+
+#----------------------
+#= Shay - First dialog
+#----------------------
+ID=PC08B_SHAY_FIRST
+T=Shay!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+CONTEXT=Coming here for the first time right after Brok almost got killed by Shay's trap
+
+T=...
+W=BROK
+TEN=PC08B_SHAY_FIRST_COME
+
+#----------------------
+ID=PC08B_SHAY_FIRSTB
+T=HEY! SHAY!!!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=Oh! Hi, Bro'!
+W=SHAY
+C2=SHAY
+C2A=SURPRISED
+
+T=How you doin'?
+W=SHAY
+C2A=HAPPY
+
+T=What the heck is that abomination of a machine near the door?!
+W=BROK
+
+T=Abomination?
+W=SHAY
+C2A=WONDER
+
+T=You mean the circular saw? Pretty neat, huh?
+W=SHAY
+C2A=HAPPY
+
+T=Neat?! That thing almost KILLED me!
+W=BROK
+
+T=Well you know the Slums aren't very safe for lone women.
+W=SHAY
+C2A=NORMAL
+
+T=So I built this ultimate crime detection device.
+W=SHAY
+C1A=ANGRY
+
+T=The way you press the first button gives out a lot of information. Blood pressure, DNA, stress level...
+W=SHAY
+
+T=Got nasty intentions? The system detects it and triggers the saw!
+W=SHAY
+C2A=HAPPY
+
+T=Now, tell me. Are you feeling angry or stressed, lately?
+W=SHAY
+
+T=Are you insane?!
+W=BROK
+
+T=Well, yeah!
+W=SHAY
+
+T=...
+W=BROK
+
+T=...
+W=SHAY
+
+T=All right, all right! I'll render it non-lethal then.
+W=SHAY
+C2A=NORMAL
+
+T=But it will lose efficiency...
+W=SHAY
+C2A=MEH
+
+T=Deactivate it! NOW.
+W=BROK
+
+T=(Sigh) Okay...
+W=SHAY
+
+T=But only during the day! I've got valuable stuff in here.
+W=SHAY
+C2A=NORMAL
+
+T=So, why are you here?
+W=SHAY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+
+
+#----------------------
+#= Shay - Think
+#----------------------
+ID=PC08B_SHAY_THINK1
+T=(My best friend! We've known each other since kindergarten.)
+W=BROK
+C1=BROK
+C1A=HAPPY
+MOOD=THINK
+
+T=(A little rough around the edges but I'd trust her with my life!)
+W=BROK
+MOOD=THINK
+
+T=(Well... Maybe a bit less since that saw incident.)
+W=BROK
+MOOD=THINK
+C1A=WONDER
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+
+#----------------------
+#= Shay - Border Post
+#----------------------
+ID=PC08B_SHAY_BORDER1
+T=I need your help to get across the Border Post.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_SHAY_BORDERTALK
+CONTEXT=Talking to Shay
+COMM=Day 1
+
+T=I knew this day would come.
+W=SHAY
+
+T=See, I've prepared the perfect response to this!
+W=SHAY
+
+T=For real?
+W=BROK
+C1A=WONDER
+
+T=Now, where did I put it?
+W=SHAY
+C2A=WONDER
+
+T=Just a sec... Gotta search...
+W=SHAY
+
+T=There we go!
+W=SHAY
+C2A=HAPPY
+C1A=THINK
+
+T="Only two types of things can cross the Border - authorized citizens registered in the mainframe and controlled merchandise."
+W=SHAY
+C2A=NORMAL
+
+T="Any living thing stored in packages will be automatically destroyed." 
+W=SHAY
+
+T="Therefore, the best solution consists of killing you."
+W=SHAY
+
+T=Not an option!
+W=BROK
+C1A=ANGRY
+
+T=I know!
+W=SHAY
+
+T=Well, technically this would work but if you're not willing to try...
+W=SHAY
+C2A=MEH
+
+T=...
+W=BROK
+
+T=OK. The only other way isn't much easier.
+W=SHAY
+C2A=NORMAL
+C1A=THINK
+
+T="How to become an authorized citizen."
+W=SHAY
+
+T="The Border Post scans the user at the entrance in order to get a body print." 
+W=SHAY
+
+T="This information is then compared to data contained within the local Border Post server."
+W=SHAY
+
+T="Each Border Post owns a copy of the data, which is replicated from and to a central mainframe."
+W=SHAY
+
+T="Thus, you need to access one of these servers, add your body print and..."
+W=SHAY
+
+T="Ta-da! You're allowed to cross like a regular Dome citizen."
+W=SHAY
+C2A=HAPPY
+
+T=Doesn't sound too hard!
+W=BROK
+C1A=THINK
+
+T=Oh, I forgot to mention the deadly security equipment guarding the server.
+W=SHAY
+C1A=WONDER
+
+T=Nothing you can't handle, though!
+W=SHAY
+C2A=HAPPY
+
+T=Well... Thanks for the vote of confidence...
+W=BROK
+C1A=TIRED
+
+T=I'm starting to wonder if that job is really worth the trouble.
+W=BROK
+
+T=Mmh. I promised not to interfere with your PI job, but...
+W=SHAY
+C2A=NORMAL
+
+T=You're seeing the glass half empty. Think of it as half full instead!
+W=SHAY
+C1A=THINK
+
+T=Pray tell?
+W=BROK
+
+T=If you become an allowed citizen, you can start prospecting new clients in the Drums!
+W=SHAY
+
+T=And get rich!
+W=SHAY
+C2A=HAPPY
+
+T=That's a big "IF." Those rich folks will never be interested in a stinky low-grade detective like me.
+W=BROK
+C1A=MAYBE
+C2A=NORMAL
+
+T=But... I guess it's worth a shot.
+W=BROK
+
+T=That's the spirit, Bro'!
+W=SHAY
+C2A=HAPPY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_BORDER2
+T=Access the server, add my body print to the server...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=That's all fine and dandy but... How do I do that conclusively?
+W=BROK
+
+T=Coming up!
+W=SHAY
+TEN=PC08B_SHAY_BORDER2EVENT
+
+
+#----------------------
+ID=PC08B_SHAY_BORDER2B
+T=Whoa! What's happening?
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=SHAY
+C2A=NORMAL
+
+T=I got your body print with my own scanner and...
+W=SHAY
+
+T=...it's perfect!
+W=SHAY
+C2A=HAPPY
+C1A=CONFUSED
+
+T=What? What's perfect?
+W=BROK
+C1A=THINK
+
+T=I injected the necessary information into your DNA.
+W=SHAY
+C2A=NORMAL
+
+T=Huh?! Isn't that dangerous?!
+W=BROK
+C1A=SURPRISED
+
+T=Not at all!
+W=SHAY
+
+T=Carrying info into your DNA is the most reliable way. No chance you'll lose it!
+W=SHAY
+
+T=That's not what I meant.
+W=BROK
+C1A=ANGRY
+
+T=Few people master the experimental DNA transportation. You're lucky - I'm one of them!
+W=SHAY
+
+T=I'm always the lucky one...
+W=BROK
+C1A=ANGRY
+
+T=What info did you inject?
+W=BROK
+C1A=MAYBE
+
+T=Your body print.
+W=SHAY
+
+T=You injected my body print...into my body?
+W=BROK
+C1A=ANGRY
+
+T=Yeah!
+W=SHAY
+
+T=...
+W=BROK
+
+T=...
+W=SHAY
+
+T=I kinda see what you're going for here, but...
+W=SHAY
+C2A=WONDER
+
+T=It's more complex than you think! I had to include an encryption key, a data mining program...
+W=SHAY
+C2A=NORMAL
+
+T=Forget it. What do I do now?
+W=BROK
+C1A=WONDER
+
+T=Border Post 001. 
+W=SHAY
+
+T=There's a tall building with a roof that's shaped like a pyramid. You can't miss it!
+W=SHAY
+
+T=Yeah, I think I remember that weird pyramid.
+W=BROK
+
+T=Find a way to enter the building, then connect to the server.
+W=SHAY
+
+T=By connect, I mean touching it. Those servers are offline so direct contact is required.
+W=SHAY
+
+T=I've programmed it to automatically hack the operating system and install your body print into the database.
+W=SHAY
+
+T=Pyramid-shaped building. Insert thingy into doodad. Got it!
+W=BROK
+C1A=MOCK
+
+T=Will it work?
+W=BROK
+C1A=THINK
+
+T=Probably.
+W=SHAY
+
+T=What if it doesn't?
+W=BROK
+C1A=SURPRISED
+
+T=Then I'm guessing you'll be chased by numerous security drones and Tribot guards.
+W=SHAY
+
+T=Great...
+W=BROK
+C1A=STUPID
+
+T=Trust me! I think it might work!
+W=SHAY
+
+T=Erm... I'm probably the most foolish person in the universe but...
+W=BROK
+C1A=WONDER
+
+T=All right, I trust you.
+W=BROK
+C1A=ALRIGHT
+
+T=Cool!
+W=SHAY
+C2A=HAPPY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_BORDER3
+T=I won't pretend to know anything about computers but can't you...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Like... Hack the server on the network? Remotely?
+W=BROK
+C1A=WONDER
+
+T=I know this sounds crazy but there are things even a skilled cyber-meddler like myself cannot do.
+W=SHAY
+
+T=The main server is not connected to the Triweb.
+W=SHAY
+
+T=Color me disappointed.
+W=BROK
+C1A=MAYBE
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_BORDER4
+T=Pyramid-shaped building. Insert thingy into doodad. Got it!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=Good boy!
+W=SHAY
+C2A=HAPPY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+#= Shay - Bolt
+#----------------------
+ID=PC08B_SHAY_BOLT1
+T=Say, don't you need an assistant?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=No.
+W=SHAY
+
+T=This... wasn't the answer I was expecting...
+W=BROK
+C1A=MAYBE
+
+T=Look, I need a favor. A cool little robot I've met is about to get transformed and wiped out.
+W=BROK
+C1A=WONDER
+
+T=You wouldn't want a poor innocent soul being erased like this, would ya?
+W=BROK
+C1A=READY
+
+T=Since when are you a friend to robots?
+W=SHAY
+C2A=WONDER
+
+T=I'm friendly towards every creature who doesn't try to harm me!
+W=BROK
+
+T=Okay. What kind of robot is it?
+W=SHAY
+C2A=NORMAL
+
+T=Not a Tribot, for sure. Looks like an old model. Two rusty arms plus a square head.
+W=BROK
+C1A=THINK
+
+T=He's worked at the Border Post sorting center for years.
+W=BROK
+
+T=Mmh. Maybe...
+W=SHAY
+C2A=WONDER
+
+T=I knew you'd accept! Thank you!
+W=BROK
+C1A=HAPPY
+
+T=Hey! Let me finish!
+W=SHAY
+C2A=ANGRY
+
+T=It must be one of those pre-war bots. Tweaking them is strictly forbidden by law.
+W=SHAY
+C2A=NORMAL
+
+T=Since when do you care about that?
+W=BROK
+C1A=MEH
+
+T=Exactly! It's exciting. Maybe I can give it a try and remove his tracking device.
+W=SHAY
+C2A=HAPPY
+
+T=However...
+W=SHAY
+C2A=WONDER
+
+T=I was afraid you'd say that. You want a counterpart, don't ya?
+W=BROK
+C1A=THINK
+
+T=Yup. Until it becomes useful, I'll need to pay for its energy source and the time I'll spend fixing it.
+W=SHAY
+C2A=NORMAL
+
+T=Let's say... 200 unis. I'll deduct them from tonight's fight earnings.
+W=SHAY
+TEN=PC08B_SHAY_BOLT_CHOICE
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_BOLT1B
+T=So... 200 Unis to accept Bolt?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_SHAY_BOLT_CHOICE
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_BOLT1YES
+T=Deal. I'm gonna tell him to come here. Thanks!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_SHAY_BOLT_AGREE
+
+T=Can't wait to get my hands on it! I've always wondered how those antiquities work!
+W=SHAY
+C2A=HAPPY
+
+T=Just promise me not to erase his memories.
+W=BROK
+C1A=MOCK
+
+T=Oh, I'll be sure to make plenty of backups!
+W=SHAY
+C2A=NORMAL
+
+T=That's... Erm... Okay.
+W=BROK
+C1A=THINK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_BOLT1NO
+T=That's a lot... Let me think about it.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Okay.
+W=SHAY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_BOLT2
+T=Where's my new assistant?
+W=SHAY
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=WONDER
+
+T=Just a moment! I'll go fetch him.
+W=BROK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+#= Shay - Welcome
+#----------------------
+ID=PC08B_SHAY_WELCOME1
+T=Got a minute?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+
+T=Nope but go ahead!
+W=SHAY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_WELCOME2
+T=What's up?
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+#= Shay - Exit
+#----------------------
+ID=PC08B_SHAY_FIRSTEXIT
+T=I'm on my way.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=SHAY
+C2A=NORMAL
+
+T=Wait!
+W=SHAY
+C1A=CONFUSED
+
+T=Aren't you going to do a little training before tonight's...?
+W=SHAY
+TEN=PC08B_SHAY_ARENA1
+
+
+#----------------------
+#= Shay - Arena
+#----------------------
+ID=PC08B_SHAY_ARENA1
+T=Tonight's what?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=The fight, of course.
+W=SHAY
+
+T=Oh, yeah! But...
+W=BROK
+C1A=HAPPY
+
+T=You forgot again? We do that every night!
+W=SHAY
+C2A=ANGRY
+
+T=Well...
+W=BROK
+TEN=PC08B_SHAY_REMEMBER_CHOICE
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_REMEMBER_YES
+T=Really sorry... Memories keep slipping from my mind these days.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=Someday I might even forget my name.
+W=BROK
+
+T=I see. Your brain is like Goga Gola's Soda Fizz. Full of bubbles!
+W=SHAY
+
+T=Yeah...
+W=BROK
+C1A=DOWN
+
+T=Cheer up! I'm used to it, that's part of the package of doing business with you.
+W=SHAY
+C2A=HAPPY
+C1A=THINK
+
+T=Let me explain everything from the start.
+W=SHAY
+C2A=NORMAL
+
+T=I own Virtual Arena equipment running on a non-regulated site of the Triweb.
+W=SHAY
+
+T=You do the fighting, I do the managing.
+W=SHAY
+
+T=Spectators bet on your performance. The better you fight, the more money I'll make!
+W=SHAY
+C2A=HAPPY
+
+T=...the money WE'LL make. I'll give you a share of the pie.
+W=SHAY
+C2A=NORMAL
+
+T=What percentage are we talking about?
+W=BROK
+
+T=40.
+W=SHAY
+
+T=What? I agreed to this?!
+W=BROK
+C1A=SURPRISED
+
+T=You'll have to take my word for it!
+W=SHAY
+
+T=I feel like I'm being conned.
+W=BROK
+C1A=STUPID
+
+T=Hey, I'm taking risks too! These events aren't fully legal, you know...
+W=SHAY
+
+T=Besides... Without my equipment you wouldn't get anything at all.
+W=SHAY
+
+T=Yeah, yeah...
+W=BROK
+C1A=DOWN
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC08B_SHAY_REMEMBER_NO
+T=Of course I remember! I'm a master when it comes to fighting, even when they're virtual!
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=SHAY
+C2A=NORMAL
+
+T=Well, "Master," you ought to do some training unless you want to get humiliated!
+W=SHAY
+
+T=Never!
+W=BROK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC08B_SHAY_ARENA2
+T=Get to the important part. How do I fight?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=The cabin detects your vital readings and summarizes them into a single life bar which everyone can see.
+W=SHAY
+
+T=Everyone?! That's kinda... indiscreet.
+W=BROK
+
+T=You should've read the paragraph about private life before signing!
+W=SHAY
+
+T=The program includes AI virtual opponents. Bots, if you prefer.
+W=SHAY
+
+T=They're easy to get rid of. Their appearance and moves are based off of people and things you've seen in real life.
+W=SHAY
+
+T=However, the real objective comes only with the night fight!
+W=SHAY
+
+T=After progressing through the level, you'll encounter your true opponent - the "Master." A real person.
+W=SHAY
+
+T=That's what the public is here for - an epic and decisive battle!
+W=SHAY
+
+T=Sounds dangerous...
+W=BROK
+C1A=MAYBE
+
+T=No pain, no gain!
+W=SHAY
+C2A=HAPPY
+
+T=Each time you get hit, your life bar gets depleted.
+W=SHAY
+C2A=NORMAL
+
+T=Not only that but lasers in the cabin make you feel the impact as if you really took a blow!
+W=SHAY
+
+T=Amazing, huh?
+W=SHAY
+
+T=I wouldn't say that...
+W=BROK
+C1A=TIRED
+
+T=You're fine as long as your lifebar doesn't get emptied.
+W=SHAY
+
+T=What?! Don't tell me...
+W=BROK
+C1A=SURPRISED
+
+T=You can die? Technically, yes.
+W=SHAY
+
+T=Gulp!
+W=BROK
+
+T=But this can't happen. Relax!
+W=SHAY
+
+T=Fatal blows can't happen during training - only in night fights. The thrill of death drastically increases the bets.
+W=SHAY
+
+T=And when you're about to run out of health, you can escape.
+W=SHAY
+
+T=I'll send you a reminder. No worries!
+W=SHAY
+
+T=I wouldn't risk losing you.
+W=SHAY
+
+T=That's pretty reassuring. Thanks!
+W=BROK
+C1A=HAPPY
+
+T=I mean, it'd be a lot of trouble to find someone crazy enough to replace you.
+W=SHAY
+C2A=WONDER
+
+T=I take that back.
+W=BROK
+C1A=OPPOSITE
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_ARENA3
+T=What about training?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=Expect to face randomized traps.
+W=SHAY
+
+T=Training brings some money and experience.
+W=SHAY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_ARENA4
+T=That virtual fight stuff... Can you explain it again?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=Basically... Enter the cabin in the next room.
+W=SHAY
+
+T=Fight your way through all the traps and enemies. You win!
+W=SHAY
+
+T=And don't forget to train regularly! You're getting fat-bellied.
+W=SHAY
+
+T=Hey...!
+W=BROK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#---------------------------------------------
+#= Shay - Herself
+#---------------------------------------------
+ID=PC08B_SHAY_HERSELF1
+T=What were you doing here in the dark?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=I'm performing some isolation tests.
+W=SHAY
+
+T=Isolation?
+W=BROK
+
+T=Yup.
+W=SHAY
+
+T=In our world, there are irritating environments. Loud sounds are usually the worst offenders.
+W=SHAY
+
+T=Don't need to tell me! My neighbors can be pretty loud at night...
+W=BROK
+C1A=STUPID
+
+T=See this device? It's a hearing aid.
+W=SHAY
+C1A=THINK
+
+T=I've succeeded in reversing its function, so instead of amplifying sounds...
+W=SHAY
+
+T=It's blocking them?
+W=BROK
+C1A=WONDER
+
+T=Glad to see you following for once!
+W=SHAY
+C2A=HAPPY
+
+T=Hey, I'm always up to finding out about more questionable inventions from you!
+W=BROK
+C1A=ALRIGHT
+
+T=But why was the garage closed?
+W=BROK
+C1A=THINK
+
+T=What if someone sneaks inside while I'm wearing these? I wouldn't want to take the risk.
+W=SHAY
+C2A=NORMAL
+
+T=Well, I passed through and you didn't notice.
+W=BROK
+
+T=You're not just anyone! You're the terror of the fight, the one and only Bro'!
+W=SHAY
+C2A=HAPPY
+
+T=Don't overdo it!
+W=BROK
+C1A=MEH
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#---------------------------------------------
+ID=PC08B_SHAY_HERSELF2
+T=How ya doin' these days?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Busy.
+W=SHAY
+
+T=That's the thing.
+W=BROK
+C1A=DOWN
+
+T=Ever since we found ourselves back a few years ago, we barely get time to talk aside from our job.
+W=BROK
+
+T=We used to be so close back then. What happened?
+W=BROK
+C1A=MAYBE
+
+T=The world has changed. We've changed.
+W=SHAY
+
+T=Time is money, so we can't spend too much time idling like... right now.
+W=SHAY
+
+T=You're right. But that's a shame...
+W=BROK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+
+#----------------
+#= Shay - Exit
+#----------------
+ID=PC08B_SHAY_EXIT1
+T=Gotta go!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Okay! Don't forget to train regularly!
+W=SHAY
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC08B_SHAY_EXIT2
+T=I'll leave you to... whatever you're doing.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=SHAY
+C2A=NORMAL
+
+T=See ya!
+W=SHAY
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC08B_SHAY_EXIT_NOTHING1
+T=I don't mind a little chat, but my time is precious. Please don't waste it.
+W=SHAY
+C1=BROK
+C1A=DOWN
+C2=SHAY
+C2A=NORMAL
+
+T=Sorry...
+W=BROK
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC08B_SHAY_EXIT_NOTHING2
+T=I better get this fixed fast... Don't interrupt me for no reason.
+W=SHAY
+C1=BROK
+C1A=DOWN
+C2=SHAY
+C2A=NORMAL
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC08B_SHAY_EXIT_GOODLUCK
+T=Good luck, Bro' !
+W=SHAY
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=HAPPY
+
+T=Yeah... Gonna need a lotta it.
+W=BROK
+TEN=CHARACTER_STOPMUSIC
+
+
+#----------------
+
+ID=PC08B_SHAY_EXIT_RUBBERCUTTER1
+T=See ya!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Wait...
+W=SHAY
+C1A=SURPRISED
+
+T=Did you take my rubber cutter?
+W=SHAY
+C1A=THINK
+
+T=It disappeared.
+W=SHAY
+
+T=Wha...?
+W=BROK
+C1A=WONDER
+
+T=Sorry, but I have no idea what that might be.
+W=BROK
+
+T=You sure? No one else came to the garage today.
+W=SHAY
+
+T=Well, except Graff. But he's not one to touch everything... UNLIKE you.
+W=SHAY
+C2A=ANGRY
+
+T=Can't deny that, although he is acting strange these days.
+W=BROK
+C1A=THINK
+
+T=Hmm...
+W=BROK
+
+T=Don't think either of us did but I'll let you know.
+W=BROK
+
+T=Okay.
+W=SHAY
+C2A=NORMAL
+TEN=CHARACTER_STOPMUSIC
+
+#----------------
+ID=PC08B_SHAY_EXIT_RUBBERCUTTER2
+T=Bye!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+#----------------
+ID=PC08B_SHAY_EXIT_RUBBERCUTTER3
+T=So? Any idea where my rubber cutter is?
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Don't think so...
+W=BROK
+C1A=WONDER
+
+T=Well, keep looking! It's valuable.
+W=SHAY
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+#= Shay - Inventory
+#----------------------
+
+#----------------------
+ID=PC08B_SHAY_INV_MONEY
+T=Erm...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+CONTEXT=Talking to Shay - Showing inventory
+
+T=Yes, please.
+W=SHAY
+
+T=Wait, no! I need that money!
+W=BROK
+C1A=CONFUSED
+
+T=Then don't put it right in front of my beak, Bro'!
+W=SHAY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC08B_SHAY_INV_CATFUR
+T=I see! That's Graff's seasonal hair loss, huh?
+W=SHAY
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+
+T=How did you know?!
+W=BROK
+C1A=SURPRISED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_MAGNIFY
+T=Here's high technology!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=From the last century.
+W=SHAY
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_MINELOADED
+T=Hey, look at...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+
+T=Whoa! Almost dropped it.
+W=BROK
+C1A=SURPRISED
+
+T=Don't you dare blow up my garage! I just cleaned it.
+W=SHAY
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_REMOTECONTROLDAMAGED
+T=Can you repair this tablet remote control?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=SURPRISED
+
+T=A... tablet remote control...?
+W=SHAY
+C1A=THINK
+C2A=WONDER
+
+T=Let me see?
+W=SHAY
+
+T=...
+W=SHAY
+
+T=Where'd you get that?
+W=SHAY
+
+T=My client. He's a policeman and...it was dropped accidentally.
+W=BROK
+C1A=WONDER
+
+T=That explains it.
+W=SHAY
+C2A=NORMAL
+
+T=That ain't no "tablet remote control," mister!
+W=SHAY
+
+T=This is police equipment. And if I'm not mistaken...
+W=SHAY
+
+T=It's used to remotely deactivate any kind of electronic devices.
+W=SHAY
+
+T=Cameras or mines for instance.
+W=SHAY
+
+T=Really? Why would the police disable cameras?
+W=BROK
+C1A=THINK
+
+T=To enter a private property safely, I guess? Or...shady things.
+W=SHAY
+
+T=Well, doesn't matter. Please tell me you can fix it!
+W=BROK
+C1A=ALRIGHT
+CLUE=CLUE_SIN_REMOTECONTROL
+
+T=Already done!
+W=SHAY
+C2A=HAPPY
+
+T=What...? Already?
+W=BROK
+C1A=SURPRISED
+
+T=It's only cosmetic damage. It's working fine.
+W=SHAY
+C2A=NORMAL
+
+T=Oh...
+W=BROK
+C1A=HAPPY
+
+T=Thanks anyway!
+W=BROK
+TEN=PC08B_SHAY_GIVEREMOTECONTROL
+
+#---------------------------------------------------
+ID=PC08B_SHAY_INV_REMOTECONTROLDAMAGED2
+T=Can I turn off or damage Tribots with that?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=This sends small impulsions and needs to recharge itself so... I wouldn't bet on it.
+W=SHAY
+
+T=Give it a try on smaller things though!
+W=SHAY
+TEN=PC08B_SHAY_GIVEREMOTECONTROL2
+IT=1
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_TRAMPPRESCR1
+T=Do I look like a pharmacist...?
+W=SHAY
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=I thought you could do anything!
+W=BROK
+
+T=Almost anything. Except delivering prescriptions.
+W=SHAY
+
+T=Still. Got any advice?
+W=BROK
+C1A=MOCK
+
+T=Go to a pharmacy...
+W=SHAY
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_TRAMPPRESCR2
+T=I need your help!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=How can I renew this prescription?
+W=BROK
+
+T=By going to see a doctor?
+W=SHAY
+
+T=I wouldn't ask you if it were that easy...
+W=BROK
+C1A=ANGRY
+
+T=This is for a Slumer friend who can barely move.
+W=BROK
+
+T=The machine told me I needed to update the prescription.
+W=BROK
+
+T=Sorry. Medical security protocols are very specific, it's not my thing.
+W=SHAY
+
+T=Right... Guess I'll ask someone else, then.
+W=BROK
+C1A=DISAPPOINTED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_MINEBROKEN1
+T=This mine seems broken. Do you think...
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=All right, let's skip the "why are you travelling with a mine" part and ask...
+W=SHAY
+
+T=You want me to fix it, right?
+W=SHAY
+
+T=Erm, yeah!
+W=BROK
+C1A=HAPPY
+
+T=Do it yourself.
+W=SHAY
+
+T=Hey! That's not very nice.
+W=BROK
+C1A=ANGRY
+
+T=No, I mean it. That mine ain't broken. It just needs a refill!
+W=SHAY
+C2A=HAPPY
+
+T=Put some Trax powder inside it and you're good to go.
+W=SHAY
+C1A=THINK
+C2A=NORMAL
+
+T=Where am I gonna find that? Don't you have some?
+W=BROK
+
+T=Sure, I can...
+W=SHAY
+
+T=Or not... I forgot, I ran out last week and forgot to order some.
+W=SHAY
+
+T=Sorry. You're screwed!
+W=SHAY
+C2A=HAPPY
+
+T=Great.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Just in case. What does that powder look like?
+W=BROK
+C1A=THINK
+
+T=A greyish blue. Smells a bit like rotten Pampalos.
+W=SHAY
+C2A=NORMAL
+
+T=Hmm... I might have seen powder like that somewhere...
+W=BROK
+C1A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_MINEBROKEN2
+T=You need Trax powder to... erm, "fix" it.
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Blue and smells like rotten Pampalos.
+W=SHAY
+
+T=Got it!
+W=BROK
+C1A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_HOOVER1
+T=My cleaning bot is all messed up... It shocked me!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SHAY
+C2A=NORMAL
+
+T=I see.
+W=SHAY
+
+T=Can you fix it?
+W=BROK
+C1A=THINK
+
+T=Yes. But you're better off leaving it in pieces.
+W=SHAY
+
+T=What...? Why?
+W=BROK
+
+T=Listen. You said it yourself.
+W=SHAY
+
+T=That bot is dangerous. It electrocuted you.
+W=SHAY
+
+T=Even if I fix it, what proves it won't hurt you again?
+W=SHAY
+
+T=Would you feel confident staying in the same room as a murderer?
+W=SHAY
+
+T=Huh...? 
+W=BROK
+C1A=WONDER
+
+T=We're talking about a machine here.
+W=BROK
+
+T=So what?
+W=SHAY
+
+T=I have a better idea.
+W=SHAY
+C1A=THINK
+
+T=Judging from the aspect, this model is at least 30 years old. Right?
+W=SHAY
+C2A=WONDER
+
+T=Yeah... I got it from the dump close to my apartment.
+W=BROK
+C1A=HAPPY
+
+T=But it worked fine! At least, until now.
+W=BROK
+
+T=One of the components contains U-Stom.
+W=SHAY
+C2A=NORMAL
+
+T=That ore has run out on the surface of the planet.
+W=SHAY
+C1A=THINK
+
+T=It's not used anymore, but I can sure have some use for it!
+W=SHAY
+C2A=HAPPY
+
+T=So here's my offer.
+W=SHAY
+C2A=NORMAL
+
+T=I buy it back from you for 200 Unis.
+W=SHAY
+
+T=With that money, you can buy a new one!
+W=SHAY
+
+T=Then it's a deal?
+W=SHAY
+TEN=PC08B_SHAY_INV_HOOVER_CHOICE
+IT=1
+
+
+#----------------------
+ID=PC08B_SHAY_INV_HOOVER1_YES
+T=Knowing you, I'm pretty sure it's worth ten times more but... Okay.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=Take it.
+W=BROK
+C1A=ALRIGHT
+
+T=Good! I've credited your 200 Unis.
+W=SHAY
+C2A=HAPPY
+
+T=(I just wonder what I'll say to Graff... He liked it.)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=PC08B_SHAY_INV_HOOVER_YES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_HOOVER1_NO
+T=Sorry. I've grown fond of it.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=SHAY
+C2A=NORMAL
+
+T=It's one of the first things I got when I moved into my apartment with Graff...
+W=BROK
+C1A=DISAPPOINTED
+
+T=OK. I get it. But you shouldn't get too nostalgic.
+W=SHAY
+
+T=The past is the past. Look towards the future!
+W=SHAY
+C2A=HAPPY
+
+T=Although... Sometimes the future is in the past.
+W=SHAY
+C2A=WONDER
+
+T=...?
+W=BROK
+C1A=CONFUSED
+TEN=PC08B_SHAY_INV_HOOVER_NO
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_HOOVER2
+T=About the cleaning bot...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_SHAY_INV_HOOVER_CHOICE
+IT=1
+
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_APARTMENTKEY
+T=What?
+W=SHAY
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=WONDER
+
+T=Thanks again for the convenient screwdriver-key!
+W=BROK
+
+T=Oh! I thought...
+W=SHAY
+C2A=NORMAL
+
+T=Nothing.
+W=SHAY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_PENDANT
+T=...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=SHAY
+C2A=NORMAL
+
+T=...
+W=SHAY
+
+T=You haven't forgotten...
+W=SHAY
+
+T=I never will.
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_GUN
+T=Oh, you got yourself a new toy.
+W=SHAY
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+
+T=That's not mine!
+W=BROK
+C1A=SURPRISED
+
+T=It's okay. Everyone has their secrets.
+W=SHAY
+
+T=Pfft...
+W=BROK
+C1A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_LEVER_AFTER
+T=Erm... I...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Oh! My rubber cutter!
+W=SHAY
+C2A=HAPPY
+
+T=I figured you might have taken it!
+W=SHAY
+C2A=ANGRY
+
+T=Rubber... cutter...?
+W=BROK
+C1A=WONDER
+
+T=Well, yeah. What else could it be?
+W=SHAY
+
+T=So... not a lever? It was inside that slot on the wall...
+W=BROK
+
+T=Of course! I always put it there so I don't lose it.
+W=SHAY
+C2A=NORMAL
+
+T=Oh...
+W=BROK
+C1A=HAPPY
+
+T=It cuts only through rubber! No risk to damage other materials.
+W=SHAY
+
+T=So... give it back!
+W=SHAY
+C2A=ANGRY
+
+T=Wait! I might have a use for it!
+W=BROK
+C1A=MOCK
+
+T=What? But you didn't even know what this was!
+W=SHAY
+
+T=Now I do!
+W=BROK
+
+T=Please! Pretty please!
+W=BROK
+C1A=HAPPY
+
+T=Argh...
+W=SHAY
+
+T=Okay, okay! I'll manage. Keep it for now...
+W=SHAY
+C2A=MEH
+
+T=Awesome!
+W=BROK
+
+T=(Kisses cheek)
+
+T=Erm...
+W=SHAY
+C2A=SURPRISED
+
+T=You're the best!
+W=BROK
+
+T=D-Don't mention it...
+W=SHAY
+TEN=PC08B_RUBBERCUTTER_GET
+
+#---------------------------------------------
+ID=PC08B_SHAY_INV_LEVER_AFTER2
+T=(This might come in handy when fighting rubber bots!)
+W=BROK
+A=THINK
+MOOD=THINK
+TEN=PC08B_LEVER_BACK
+IT=1
+
+
+#----------------------
+
+ID=PC08B_SHAY_INV_DEFAULT1
+T=Do you need this?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=Hmm... Nope.
+W=SHAY
+C1A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_INV_DEFAULT2
+T=How about this?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=I know I ask you to gather a lot of junk, but I didn't ask for that!
+W=SHAY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#---------------------------------------------
+#= Shay - Enter arena without talking first
+#---------------------------------------------
+ID=PC08B_SHAY_ARENABEFORE
+T=Are you up for a little training before tonight?
+W=SHAY
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_SHAY_ARENA1
+CONTEXT=Talking to Shay
+
+#----------------------
+#= Bolt
+#----------------------
+ID=PC08B_BOLT1
+T=Heya!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=OFF
+CONTEXT=Talking to Bolt, which we saved from the Border Post
+COMM=For now he's disabled
+
+T=Glad to see you found your way to this dump!
+W=BROK
+
+T=...
+W=BOLT
+
+T=You okay?
+W=BROK
+C1A=WONDER
+
+T=Don't bother. I've disabled it to perform a cold backup.
+W=SHAY
+C3=SHAY
+C3A=NORMAL
+
+T=What? But...
+W=BROK
+C1A=SURPRISED
+
+T=It should take about a day.
+W=SHAY
+
+T=Poor guy...
+W=BROK
+C1A=DOWN
+
+T=You're so sentimental! Now I know why you love smashing robots into pieces every night!
+W=SHAY
+
+T=Hardy har har.
+W=BROK
+C1A=ANGRY
+
+#----------------------
+ID=PC08B_BOLT2
+T=No use, Shay disabled it... him... Oh, I don't know anymore.
+W=BROK
+A=TIRED
+TEN=CHARACTER_STOPMUSIC
+COMM=If your language does not distinguish it and him, just say it was deactivated
+
+#----------------------
+#= Bolt back active
+#----------------------
+ID=PC08B_BOLTON1
+T=Master Brok!
+W=BOLT
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=WORRIED
+
+T=You've - saved me! You're - my hero!
+W=BOLT
+C2A=HAPPY
+
+T=Aww, shucks! That was nothin'!
+W=BROK
+
+T=You don't say. I'm the one who agreed to give him a new job. I'm the one to thank!
+W=SHAY
+C3=SHAY
+C3A=ANGRY
+
+T=Don't listen to her. She just loves being prickly.
+W=BROK
+C1A=READY
+
+T=Urgh...
+W=SHAY
+
+T=I love - you both!
+W=BOLT
+
+T=I love - everyone! The world - is beautiful!
+W=BOLT
+
+T=Wow... What a change of personality...
+W=BROK
+C1A=SURPRISED
+
+T=I'm just - super-duper-crazy happy - to have - a new job!
+W=BOLT
+
+T=Right now - my mission - is to help you!
+W=BOLT
+C3=NONE
+
+T=Collecting ads?
+W=BROK
+C1A=THINK
+
+T=Yes!
+W=BOLT
+
+T=It will only - cost you - 20 Unis - per request!
+W=BOLT
+
+T=Shay...!
+W=BROK
+C1A=SURPRISED
+
+T=Hey! Gotta justify the expenses to keep it running!
+W=SHAY
+C4=SHAY
+C4A=ANGRY
+
+T=I will stay - in the garage - but I've got - powerful sensors.
+W=BOLT
+C2A=WONDER
+
+T=According - to my boss - your memory - is limited so - I'll give you - info on - one ad - at a time!
+W=BOLT
+COMM=His boss is Shay.
+
+T=Erm... Thanks, I guess...
+W=BROK
+C1A=WONDER
+TEN=PC08B_BOLTON2
+
+#----------------------
+ID=PC08B_BOLTON2
+T=Which ad - do you need - help to locate?
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=WONDER
+TEN=PC08B_BOLTON_CHOOSEAD
+
+
+#----------------------
+#= Bolt Hit
+#----------------------
+ID=PC08B_BOLT_HIT1
+T=Stop that! You might interrupt the backup process.
+W=SHAY
+C1=BROK
+C1A=ANGRY
+C2=SHAY
+C2A=ANGRY
+CONTEXT=Hitting Bolt
+NB=1
+D=240
+
+#----------------------
+ID=PC08B_BOLT_HIT2
+T=Are you listening...?
+W=SHAY
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=ANGRY
+NB=1
+D=180
+
+#----------------------
+#= Shay - Stink
+#----------------------
+ID=PC08B_SHAY_STINK1
+T=Ugh...
+W=SHAY
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=ANGRY
+CONTEXT=After taking a bath in the lake
+
+T=Don't tell me. You took a swim in the swamp?
+W=SHAY
+
+T=Okay then. I won't tell ya.
+W=BROK
+
+T=Gross...
+W=SHAY
+TEN=PC08B_SHAY_STINKCANCEL
+
+T=Here!
+W=SHAY
+
+T=Argh! What was that?
+W=BROK
+C1A=WORRIED
+
+T=A stench canceller.
+W=SHAY
+
+T=Nice!
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+#= Before leaving
+#----------------------
+ID=PC08B_LEAVING1
+T=Can't leave yet... Gotta ask Shay for more info about the Border Post!
+W=BROK
+A=WONDER
+TEN=PC08B_TO_PC08_AWAY
+CONTEXT=Leaving
+
+#----------------------
+ID=PC08B_LEAVING2
+T=Can't leave yet...
+W=BROK
+A=WONDER
+TEN=PC08B_TO_PC08_AWAY
+CONTEXT=Leaving
+
+
+#----------------------
+#= End of day 1
+#----------------------
+ID=PC08B_STORY120_1
+T=I... (pant, pant...)
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SHAY
+C2A=NORMAL
+CONTEXT=End of day 1, before the night fight
+
+T=I'm here...(pant)
+W=BROK
+
+T=Ready...
+W=BROK
+C1A=READY
+
+T=Chill, Bro'!
+W=SHAY
+
+T=The fight starts in ten minutes.
+W=SHAY
+
+T=Huh? But you said...
+W=BROK
+C1A=SURPRISED
+
+T=I used my bending time capacity!
+W=SHAY
+
+T=Bending... time...?
+W=BROK
+C1A=THINK
+
+T=You were late so I jumped back an hour to get you earlier.
+W=SHAY
+
+T=But... that's impossible!
+W=BROK
+C1A=CONFUSED
+
+T=Is it?
+W=SHAY
+C2A=WONDER
+
+T=We can imagine it, right? Doesn't that simple fact make it possible?
+W=SHAY
+C1A=WONDER
+C2A=NORMAL
+
+T=Now you're confusing me...
+W=BROK
+
+T=Okay, okay!
+W=SHAY
+
+T=You're right. I didn't.
+W=SHAY
+
+T=After all this time, don't you think I've learned a thing or two about you?
+W=SHAY
+
+T=The only way to get you here on time is to never give you the right timing.
+W=SHAY
+
+T=Argh... I fell for it again!
+W=BROK
+C1A=STUPID
+
+T=Good thing you always seem to forget!
+W=SHAY
+C2A=HAPPY
+
+T=Still...bending time. Wouldn't it be convenient?
+W=SHAY
+C1A=THINK
+C2A=WONDER
+
+T=There are many interesting theories...
+W=SHAY
+
+T=Uh-oh... Here comes Miss Science again.
+W=BROK
+
+T=Well, you've got ten minutes to kill now, don't you?
+W=SHAY
+C2A=NORMAL
+
+T=Been a long day...I could really use a rest.
+W=BROK
+C1A=MAYBE
+
+T=Oh. Very well.
+W=SHAY
+
+T=If you prefer spending this time doing nothing over enlightening your spirit, that's your choice.
+W=SHAY
+TEN=PC08B_STORY120_CHOICE
+IT=1
+
+#----------------------
+ID=PC08B_STORY120_REST
+T=Yeah... I'll get some shut-eye.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=SHAY
+C2A=NORMAL
+
+T=You want me in good shape to kick ass, don't you?
+W=BROK
+C1A=COCKY
+
+T=True.
+W=SHAY
+CLUE=CLUE_SHAY_TIMETHEORY
+
+T=And you better deliver, buster! We both got some debts to pay!
+W=SHAY
+TEN=PC08B_STORY120_DOREST
+
+#----------------------
+ID=PC08B_STORY120_DOREST1
+T=(...)
+BVOICE=BROK
+
+T=(I couldn't stop thinking about what happened with Graff.)
+MOOD=THINK
+
+T=(Am I doing the right thing...?)
+MOOD=THINK
+
+T=(Is everything my fault...?)
+MOOD=THINK
+
+T=(Sometimes... I feel like...)
+MOOD=THINK
+
+T=(I shouldn't be the one responsible for him.)
+MOOD=THINK
+
+T=(She shouldn't have trusted me.)
+MOOD=THINK
+
+T=(I can barely take care of myself.)
+MOOD=THINK
+
+T=(I'm just a poor imbecile with nothing to give but trouble.)
+MOOD=THINK
+
+T=(Just... No one...)
+MOOD=THINK
+
+T=(...zzz...)
+MOOD=THINK
+TEN=PC08B_STORY120_DOREST2
+
+
+
+
+#----------------------
+ID=PC08B_STORY120_THEORY
+T=Actually... You made me curious. Enlighten me!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=HAPPY
+
+T=Good!
+W=SHAY
+
+T=First of all, let me ask you this simple question.
+W=SHAY
+C1A=THINK
+C2A=NORMAL
+
+T=What is time?
+W=SHAY
+
+T=Well... 
+W=BROK
+
+T=It's...
+W=BROK
+
+T=Some kind of measurement?
+W=BROK
+
+T=Like, I weigh 220 lbs and you weigh... Erm...
+W=BROK
+C1A=MAYBE
+
+T=How much do you weigh?
+W=BROK
+C1A=MOCK
+
+T=Bro'! You're as clueless about women as you are science, aren't you?
+W=SHAY
+C1A=HAPPY
+C2A=ANGRY
+
+T=Anyway! I see what you mean. Time is a constant, right?
+W=SHAY
+C2A=NORMAL
+
+T=For instance, fixing this tablet takes me one minute.
+W=SHAY
+C1A=THINK
+
+T=Meanwhile, you're up on the trash mountain, looking down at my garage.
+W=SHAY
+
+T=When I'm done fixing it, how much time has passed for you?
+W=SHAY
+
+T=Well... One minute?
+W=BROK
+C1A=WONDER
+
+T=Wrong!
+W=SHAY
+
+T=What?
+W=BROK
+C1A=SURPRISED
+
+T=Time is relative. It can vary for different observers.
+W=SHAY
+# depending on your speed through space
+
+T=In my example, it will almost be one minute spent for you.
+W=SHAY
+C1A=THINK
+
+T=Almost, but not exactly.
+W=SHAY
+
+T=There will be a very slight difference. Maybe just less than a nanosecond.
+W=SHAY
+
+#This is slight enough for our mind to not notice but it's there! It exists.
+T=It's especially true when you're higher, thus not subject to the same gravity - like you on the mountain.
+W=SHAY
+
+T=Think about satellites.
+W=SHAY
+
+T=The effects of gravity, as well as the satellites' increased speed above the Earth relative to observers on the ground, make their clock gain about 50 microseconds a day.
+W=SHAY
+
+T=So basically, you're saying that I could get older faster than you?
+W=BROK
+C1A=WONDER
+
+T=Exactly!
+W=SHAY
+
+T=Maybe less than a second faster in an entire lifespan but the difference exists.
+W=SHAY
+
+T=It's called time dilation.
+W=SHAY
+
+T=Does it matter?
+W=BROK
+C1A=ALRIGHT
+
+T=Yes. Because it means one important thing...
+W=SHAY
+
+T=Time cannot be dissociated from space.
+W=SHAY
+C1A=THINK
+
+T=You know how every object has three coordinates - height, width and depth. These are dimensions.
+W=SHAY
+
+T=Well, time is the same. It's called the fourth dimension.
+W=SHAY
+
+T=It's hard for us to imagine. Time is an illusion of our mind.
+W=SHAY
+
+T=If we can move an object into space... Why couldn't we move it into time as well?
+W=SHAY
+
+T=But how would we do that?
+W=SHAY
+
+T=Not the slightest idea.
+W=BROK
+C1A=MAYBE
+
+T=By moving into space, close to the speed of light.
+W=SHAY
+
+T=The speed of light?
+W=BROK
+
+T=Hey, have you been to school? Everyone knows that!
+W=SHAY
+
+T=Now that you mention it...
+W=BROK
+C1A=MOCK
+
+T=Grandpa and I... We often watched the stars at night.
+W=BROK
+
+T=He told me that we observe them as they were millions of years ago.
+W=BROK
+C1A=READY
+
+T=Yes. That's because light isn't instant. A star's light takes a lot of time to reach us. 
+W=SHAY
+
+T=Right now, how you're seeing me is only the reflection from my older self.
+W=SHAY
+
+T=Oh? So you're actually younger?
+W=BROK
+C1A=WONDER
+
+T=That varies according to your perspective!
+W=SHAY
+
+T=There's a delay. It's so tiny our brains can't notice.
+W=SHAY
+
+T=But that doesn't make anyone travel in time. It's just... looking.
+W=BROK
+
+T=Right. We're standing still.
+W=SHAY
+
+T=What happens if we move?
+W=SHAY
+C2A=WONDER
+
+T=Say, you have a twin.
+W=SHAY
+C2A=NORMAL
+
+T=I do?
+W=BROK
+C1A=SURPRISED
+
+T=Of course not, silly! One Bro' is already too much for this world!
+W=SHAY
+C2A=HAPPY
+
+T=Hey!
+W=BROK
+C1A=ANGRY
+
+T=But let's assume you've got one.
+W=SHAY
+C2A=NORMAL
+
+T=While you're staying on Earth, your twin is traveling inside a spaceship at a very high speed.
+W=SHAY
+C1A=THINK
+
+T=Years pass...
+W=SHAY
+
+T=One day, he comes back!
+W=SHAY
+
+T=And to your surprise... He's much younger than you!
+W=SHAY
+
+T=Hey! That's not fair!
+W=BROK
+C1A=ANGRY
+
+T=But true. The twin has aged much slower than you.
+W=SHAY
+
+T=Time slows down or speeds up depending on how fast you move relative to another reference.
+W=SHAY
+
+T=So, in a way... We can say that the twin travelled to the future.
+W=SHAY
+
+T=That's fine but... I wouldn't want to go forward in time. It'd be awful.
+W=BROK
+
+T=All the people I know would be old or dead...
+W=BROK
+C1A=MAYBE
+
+T=Can't we go back instead? Is that possible?
+W=BROK
+C1A=WONDER
+
+T=Notice what I said. To go into the future, we'd need to reach a speed close to the speed of light.
+W=SHAY
+
+T=Now, what would happen if we could exactly reach the speed of light?
+W=SHAY
+
+T=Well...
+W=BROK
+
+T=I guess we would disintegrate. Our body couldn't take it.
+W=BROK
+C1A=ALRIGHT
+
+T=Neither would our mind. We'd go crazy.
+W=BROK
+
+T=Possibly. But you're making a common thinking mistake.
+W=SHAY
+
+T=You wouldn't need to move straight forward to gain speed!
+W=SHAY
+C1A=THINK
+
+T=A vessel could be moving back and forth, increasing progressively and ever so slightly that the movement itself wouldn't be perceived by the mind and body.
+W=SHAY
+
+T=You mean...like our reflection previously?
+W=BROK
+
+T=Yup!
+W=SHAY
+
+T=Space in the vessel would shrink, including all objects inside.
+W=SHAY
+
+T=And suddenly... 
+W=SHAY
+
+T=BAM!
+W=SHAY
+C1A=CONFUSED
+C2A=HAPPY
+
+T=You reach the speed of light...and enter a wormhole.
+W=SHAY
+C2A=NORMAL
+
+T=From there, you get access to the whole world history.
+W=SHAY
+C1A=THINK
+
+T=You can land anywhere you want. Or should I say, any time!
+W=SHAY
+C2A=WONDER
+
+T=Exciting, huh?
+W=SHAY
+C2A=HAPPY
+
+T=Can you just picture it?
+W=SHAY
+C2A=NORMAL
+
+T=Right now...the only thing in my mind is a headache.
+W=BROK
+C1A=STUPID
+CLUE=CLUE_SHAY_TIMETHEORY
+
+T=...
+W=SHAY
+
+T=Uh oh...
+W=SHAY
+
+T=We may need to go back in time, all right...
+W=SHAY
+C1A=THINK
+
+T=Why are you saying that?
+W=BROK
+
+T=Because it's time!
+W=SHAY
+
+T=Quick! In the cabin!
+W=SHAY
+C1A=READY
+TEE=PC08B_STORY120_GOARENA
+
+
+#----------------------
+#= Won
+#----------------------
+ID=PC08B_WIN1
+T=Well, bye!
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=HAPPY
+CONTEXT=Alternatives outcomes of the fight
+
+T=Hey...
+W=BROK
+C1A=ANGRY
+
+T=You're making it sound like it's an everyday job.
+W=BROK
+
+T=Isn't it?
+W=SHAY
+C2A=NORMAL
+
+T=I'm risking my life for some credits!
+W=BROK
+
+T=Nah. You can't die!
+W=SHAY
+C2A=HAPPY
+
+T=What?
+W=BROK
+C1A=THINK
+
+T=Why are you always so confident I'll never get killed... or worse...?
+W=BROK
+
+T=Like this morning, when you sent me to hack a border post full of deadly bots and lasers?
+W=BROK
+C1A=ANGRY
+
+T=Or when you set up that giant saw that I barely escaped from?
+W=BROK
+
+T=I was lucky to make it out alive!
+W=BROK
+
+T=What a silly question! That's because I know the...
+W=SHAY
+C2A=HAPPY
+COMM=She's about to say "I know the future"
+SKIPEND=1
+
+T=...
+W=SHAY
+C2A=WONDER
+C1A=WONDER
+
+T=I mean... I know you.
+W=SHAY
+C2A=NORMAL
+
+T=I believe in you.
+W=SHAY
+
+T=Hmm...
+W=BROK
+CLUE=CLUE_SHAY_NODIE
+
+T=Okay... Thanks Shay.
+W=BROK
+C1A=THINK
+
+T=You're a great friend.
+W=BROK
+C1A=HAPPY
+
+T=No problem, Bro'!
+W=SHAY
+C2A=HAPPY
+TEN=PC08B_TO_STORY140
+
+#----------------------
+ID=PC08B_AFTERLEAVING
+T=...
+W=SHAY
+C2=SHAY
+C2A=SAD
+SILENCE=1
+TEN=PC08B_TO_STORY140B
+
+
+
+
+#----------------------
+#= Chose to give up
+#----------------------
+ID=PC08B_GAVEUP1
+T=I'll never forgive you for this.
+W=SHAY
+C1=BROK
+C1A=TIRED
+C2=SHAY
+C2A=ANGRY
+COMM=Gave up
+
+T=I'm sure you will. Ya need the money I can get from the next fights, yeah...?
+W=BROK
+A=READY
+
+T=Yes... One more.
+W=SHAY
+
+T=Huh? Just one...?
+W=BROK
+A=WONDER
+
+T=Who knows.
+W=SHAY
+TEN=PC08B_WIN1
+IT=1
+
+
+#----------------------
+#= Lost
+#----------------------
+ID=PC08B_LOST1
+T=I really needed this money. Too bad...
+W=SHAY
+C1=BROK
+C1A=TIRED
+C2=SHAY
+C2A=ANGRY
+TEN=PC08B_WIN1
+IT=1
+COMM=Lost fight
+
+
+#----------------------
+#= Day 2 begin
+#----------------------
+ID=PC08B_DAY2_BEGIN1
+T=Hey, Bro'! What's up?
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+CONTEXT=Day 2 start
+
+T=Well...
+W=BROK
+C1A=TIRED
+
+T=Sorry, I'm super busy here.
+W=SHAY
+
+T=Can you come back later?
+W=SHAY
+
+T=What? But...
+W=BROK
+C1A=SURPRISED
+
+T=Oh! But maybe you can help!
+W=SHAY
+C2A=HAPPY
+
+T=You see, I'm looking for some materials.
+W=SHAY
+C1A=THINK
+C2A=NORMAL
+
+T=But my usual provider is on vacation, so...
+W=SHAY
+
+T=What an idiot. At a time like this...
+W=SHAY
+C2A=ANGRY
+
+T=Well, I...
+W=BROK
+
+T=Anyway. You should find everything around here. I could do it myself but...
+W=SHAY
+C1A=WONDER
+C2A=NORMAL
+
+T=You know, I'm working on a project of utmost importance.
+W=SHAY
+
+T=Well, you know, you know... That's an expression.
+W=SHAY
+
+T=Of course you don't know. At least, not yet...
+W=SHAY
+C1A=ANGRY
+C2A=WONDER
+
+T=Stop!!!
+W=BROK
+
+T=...!
+W=SHAY
+C2A=SURPRISED
+
+T=...
+W=BROK
+
+T=Can I just get a word in?
+W=BROK
+
+T=Oh...
+W=SHAY
+C2A=NORMAL
+
+T=Erm, sure.
+W=SHAY
+TEN=PC08B_SHAY_CHECK
+IT=1
+
+#----------------------
+ID=PC08B_DAY2_ALTERNATE
+T=Did you forget? You're the one who asked me to come!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=SHAY
+C2A=NORMAL
+
+T=Ah yes! I expected you to come earlier.
+W=SHAY
+C2A=HAPPY
+
+T=So! When will you ask?
+W=SHAY
+
+T=Ask what?
+W=BROK
+C1A=WONDER
+
+T=The chip.
+W=SHAY
+C2A=MEH
+
+T=What chip?
+W=BROK
+
+T=...!
+W=SHAY
+C2A=SURPRISED
+
+T=Oh no.
+W=SHAY
+
+T=I get it now. Events got altered.
+W=SHAY
+
+T=Huh?!
+W=BROK
+
+T=Listen!
+W=SHAY
+C2A=WONDER
+
+T=I need you to go see this hacker named "The Gloom".
+W=SHAY
+TEN=PC08B_DAY2_GIVEHACKER
+
+#----------------------
+ID=PC08B_DAY2_ALTERNATE2
+T=I... owe him 100 Unis and he only accepts close range payments.
+W=SHAY
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=WONDER
+
+T=I've transferred you the money. Can you do this for me?
+W=SHAY
+C2A=NORMAL
+
+T=Erm... Okay?
+W=BROK
+C1A=THINK
+TEN=PC08B_DAY2_GIVEHACKER2
+
+T=Thanks!
+W=SHAY
+C2A=HAPPY
+
+T=Talking to you always feels like I missed an episode.
+W=BROK
+C1A=ALRIGHT
+
+T=No worries! You'll catch up!
+W=SHAY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC08B_SHAY_SELFMODIFIER1
+T=I need a self-modifier chip. Any dice?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=SURPRISED
+
+T=...?
+W=SHAY
+
+T=No way! You...
+W=SHAY
+C2A=WONDER
+
+T=I could never tell!
+W=SHAY
+C1A=WONDER
+C2A=SURPRISED
+
+T=Huh?
+W=BROK
+
+T=What's your secret?
+W=SHAY
+
+T=Oh, I know! You've been made up of data gathered from the Triweb, huh?
+W=SHAY
+
+T=You don't look so good, though. Here, have this charging cable.
+W=SHAY
+C2A=NORMAL
+
+T=Hey! I'm no machine!
+W=BROK
+C1A=ANGRY
+
+T=You're sure? You're the real deal...?
+W=SHAY
+
+T=Awww... What a disappointment.
+W=SHAY
+
+T=I could have you at my disposal, at all times.
+W=SHAY
+
+T=...
+W=BROK
+SILENCE=1
+
+T=So?
+W=BROK
+
+T=So... what?
+W=SHAY
+C2A=WONDER
+
+T=My self-modifier chip!
+W=BROK
+
+T=Oh, that.
+W=SHAY
+C2A=HAPPY
+
+T=It's a very specific kind of device. I couldn't make one but...
+W=SHAY
+C1A=THINK
+
+T=I know a guy.
+W=SHAY
+
+T="The Gloom." He might help.
+W=SHAY
+
+T=Gloom?
+W=BROK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+ 
+#----------------------
+ID=PC08B_SHAY_SELFMODIFIER2
+T=So... Can you make me that chip?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=Have you been listening?
+W=SHAY
+C1A=WONDER
+
+T=I can't but I know someone. Go see him.
+W=SHAY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+ 
+#----------------------
+ID=PC08B_SHAY_HELP1
+T=Need help with somethin'?
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=SHAY
+C2A=NORMAL
+
+T=Actually, yes! Gotta finish this super important project for tomorrow.
+W=SHAY
+C1A=THINK
+C2A=HAPPY
+
+T=And it's nowhere near complete. Time flew by waaay too fast.
+W=SHAY
+C2A=NORMAL
+
+T=Relax.
+W=BROK
+C1A=ALRIGHT
+
+T=It's not as if your life depends on it.
+W=BROK
+
+T=Not just mine. Yours too...and maybe even the whole universe.
+W=SHAY
+
+T=Huh?
+W=BROK
+C1A=CONFUSED
+
+T=...just joking! Anyway...
+W=SHAY
+C2A=HAPPY
+
+T=I'm lacking some pieces and materials. Some of them are crucial.
+W=SHAY
+C1A=THINK
+C2A=NORMAL
+
+T=I could order them new through the Express Delivery Tube but...
+W=SHAY
+
+T=But you're as broke as me.
+W=BROK
+C1A=MEH
+
+T=Almost.
+W=SHAY
+C2A=WONDER
+
+T=Besides, we're surrounded by junkyards full of hidden treasures!
+W=SHAY
+C2A=NORMAL
+
+T=So, what do you need?
+W=BROK
+C1A=THINK
+
+T=Here.
+W=SHAY
+SOUND=bleep
+#TODO Menu display info! "To find the list of pieces retrieved and missing, check the "Pieces" tab in your inventory!"
+
+T=I've transferred the list to... that antique device of yours you call a mobile.
+W=SHAY
+
+T=Okay.
+W=BROK
+CLUE=CLUE_GARAGE_ITEMCLOCK
+
+T=Can't promise to look into this right now but who knows.
+W=BROK
+
+T=Might stumble upon some of these along the way.
+W=BROK
+C1A=ALRIGHT
+
+T=Hope you pay good money!
+W=BROK
+
+T=What? You wanna get paid?!
+W=SHAY
+C2A=SURPRISED
+
+T=Of course I do!
+W=BROK
+C1A=ANGRY
+
+T=I'm doing this all for you, buster! You oughta be more grateful!
+W=SHAY
+C2A=ANGRY
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=Oh... Erm...
+W=SHAY
+C2A=WONDER
+
+T=Okay. I'll pay you on a case-by-case basis.
+W=SHAY
+C2A=NORMAL
+
+T=By the way... Take this!
+W=SHAY
+TEN=PC08B_SHAY_DETECTOR_TAKE
+
+#----------------------
+ID=PC08B_SHAY_HELP1B
+T=Is that a... super-duper high-tech remote controller?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Nope. Just a high-tech radar!
+W=SHAY
+
+T=I've programmed it to locate the pieces I need. Just hold it and open your ears.
+W=SHAY
+
+T=The noisier it gets, the closer you are!
+W=SHAY
+
+T=Awesome!
+W=BROK
+
+T=Keep in mind - I need the pieces before this evening.
+W=SHAY
+
+T=Now, scoot! My time is precious!
+W=SHAY
+C2A=ANGRY
+
+T=Hey...!
+W=BROK
+C1A=OPPOSITE
+TEN=PC08B_SHAY_HELPCHECK
+
+
+#----------------------
+ID=PC08B_SHAY_HELP1C
+T=(She's right, though. Busy day ahead...)
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+MOOD=THINK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+ID=PC08B_SHAY_HELP1D
+T=Oh, wait! Before I forget...
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Let me reset Bolt.
+W=SHAY
+SOUND=bleep
+
+T=Just a sec...
+W=SHAY
+
+T=Is he okay?
+W=BROK
+C1A=WONDER
+TEN=PC08B_SHAY_BOLTACTIVATE
+
+T=Positively!
+W=BOLT
+C3=BOLT
+C3A=HAPPY
+
+T=Whoa!
+W=BROK
+C1A=SURPRISED
+
+T=I'd be - delighted to - help you, Master!
+W=BOLT
+
+T=Nice to see you doing well!
+W=BROK
+C1A=HAPPY
+
+T=So, will you help me collect those materials?
+W=BROK
+
+T=No. I'll help - collect ads!
+W=BOLT
+C2A=WONDER
+
+T=Huh?!
+W=BROK
+C1A=WONDER
+
+T=Just - ask me!
+W=BOLT
+C2A=HAPPY
+
+#----------------------
+ID=PC08B_SHAY_HELP2
+T=Bring me the pieces as soon as you can! I'll pay immediately.
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Damaged or not, doesn't matter. I'll manage.
+W=SHAY
+
+T=Do you absolutely need all of them?
+W=BROK
+
+T=Well... If one or two are missing, I'll order them new.
+W=SHAY
+C2A=WONDER
+
+T=Still. The more you find, the better!
+W=SHAY
+C2A=HAPPY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC08B_SHAY_HACKER1
+T=So who's this guy who can help with the chip?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T="The Gloom"?
+W=SHAY
+
+T=He's into many illegal activities.
+W=SHAY
+
+T=Hacking and unauthorized electronics are his domain.
+W=SHAY
+
+T=I...had to resort to using him a few times.
+W=SHAY
+
+T=And here I thought you were irreproachable!
+W=BROK
+C1A=ALRIGHT
+
+T=I am! Most of the time.
+W=SHAY
+
+T=Yeah... Ha ha.
+W=BROK
+
+T=Not blaming you. Sometimes you gotta do what you gotta do.
+W=BROK
+C1A=MAYBE
+
+T=How can I locate him?
+W=BROK
+
+T=No idea.
+W=SHAY
+C2A=WONDER
+
+T=Hackers don't particularly want to be found.
+W=SHAY
+C2A=NORMAL
+
+T=Not by the authorities, anyway.
+W=SHAY
+
+T=Aww...
+W=BROK
+C1A=DISAPPOINTED
+
+T=...
+W=SHAY
+
+T=...
+W=BROK
+
+T=Oh, gosh.
+W=SHAY
+
+T=I told you I didn't have the time...
+W=SHAY
+
+T=...
+W=BROK
+C1A=HEARTBROKEN
+
+T=...but I just can't refuse you when you make that face.
+W=SHAY
+
+T=I'll locate him for you. Through my previous contacts, I can trace his signature on the Triweb.
+W=SHAY
+C1A=THINK
+
+T=Awesome! You're a life saver!
+W=BROK
+C1A=READY
+
+T=Ain't that the truth!
+W=SHAY
+C2A=HAPPY
+
+T=When it comes to life saving... Pretty sure you'll return the favor soon.
+W=SHAY
+C2A=NORMAL
+
+T=Hope not! That means you'd be in danger!
+W=BROK
+
+T=Hmm...
+W=SHAY
+C2A=WONDER
+
+T=...
+W=SHAY
+
+T=Actually...
+W=SHAY
+
+T=It was easier than I thought.
+W=SHAY
+C2A=NORMAL
+
+T=Here's his current location.
+W=SHAY
+TEN=PC08B_HACKER_LOCATION
+
+
+#----------------------
+ID=PC08B_SHAY_HACKER1B
+T=Thanks! You're the best!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Somehow I doubt this statement is true, but I'll take it anyway!
+W=SHAY
+
+T=Just... be careful, okay? He's always hiding in the worst possible places.
+W=SHAY
+
+T=Did you forget who you're talking to?
+W=BROK
+C1A=COCKY
+
+T=That's what I'm afraid of...
+W=SHAY
+
+T=Believe me. This is a bad idea.
+W=SHAY
+
+T=I've been through a lot of situations. I'll be fine.
+W=BROK
+C1A=MOCK
+
+T=Maybe not this time...
+W=SHAY
+
+T=Ah, come on!
+W=BROK
+
+T=I'm serious. I still need you alive in the immediate future and in the...
+W=SHAY
+C1A=THINK
+
+T=The present.
+W=SHAY
+
+T=...
+W=BROK
+
+T=Are you okay?
+W=BROK
+C1A=WONDER
+
+T=You're saying a lot of weird things. Even more than usual.
+W=BROK
+
+T=Must be tired. Still got a lot to finish up.
+W=SHAY
+C2A=WONDER
+
+T=If there's anything... You know you can tell...
+W=BROK
+
+T=Please don't insist. I gave you the info you needed, didn't I?
+W=SHAY
+C2A=NORMAL
+
+T=Fine...
+W=BROK
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC08B_SHAY_HACKER2
+T="The Gloom"... Okay.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=Be careful.
+W=SHAY
+TEN=PC08B_SHAY_CHOICES
+IT=1
+
+#----------------------
+#= Day 2 end
+#----------------------
+ID=PC08B_DAY2_END1
+T=Hey, Bro'!
+W=SHAY
+C1=BROK
+C1A=TIRED
+C2=SHAY
+C2A=NORMAL
+CONTEXT=Day 2 end
+
+T=Rough day, huh?
+W=SHAY
+
+T=You don't say...
+W=BROK
+
+T=Graff almost died because of me.
+W=BROK
+
+T=Say what?!
+W=SHAY
+C2A=SURPRISED
+
+T=There's a Toxout pill shortage going on.
+W=BROK
+C1A=MAYBE
+
+T=He passed out when I came home.
+W=BROK
+
+T=That was close but... He's fine now.
+W=BROK
+
+T=Stupid! You never told me about that!
+W=SHAY
+C2A=ANGRY
+
+T=Why didn't you?!
+W=SHAY
+
+T=I didn't have time!
+W=BROK
+
+T=Not talking about now! If you had told me in the past, I could have helped!
+W=SHAY
+
+T=Good thing you told me about this morning though. If I hadn't...
+W=SHAY
+
+T=Wait... I'm totally not following you...
+W=BROK
+C1A=WONDER
+
+T=What did you do, exactly?
+W=BROK
+
+T=Take this!
+W=SHAY
+C1A=THINK
+
+T=...
+W=BROK
+
+T=A Toxout pill?
+W=BROK
+
+T=Give it to him. For tomorrow.
+W=SHAY
+C2A=NORMAL
+TEN=PC08B_DAY2_END1_GIVEPILL
+
+#----------------------
+ID=PC08B_DAY2_END1B
+T=Won't you need it?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=NORMAL
+
+T=I saved up some. I'm used to skipping one from time to time!
+W=SHAY
+
+T=Thanks...
+W=BROK
+C1A=MAYBE
+
+T=Life is all about anticipating the unknown!
+W=SHAY
+C2A=HAPPY
+
+T=(Now she's making me feel bad for not saving any all these years...)
+W=BROK
+MOOD=THINK
+
+T=Talking about that... You better prepare yourself.
+W=SHAY
+C2A=NORMAL
+C1A=THINK
+
+T=Tomorrow will be even more eventful.
+W=SHAY
+
+T=How could you possibly know that?
+W=BROK
+
+T=I know you. That's all!
+W=SHAY
+TEN=PC08B_DAY2_MATERIALS_CHECK
+
+#----------------------
+ID=PC08B_DAY2_MATERIALS_NOTEVERYTHING
+T=So! Looks like you didn't bring me all the materials I need yet.
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=If you intend to scout the city, this is your last chance.
+W=SHAY
+
+T=But... Ain't I supposed to be fighting...?
+W=BROK
+
+T=It's been postponed. A new challenger coming at the last minute...
+W=SHAY
+
+T=Anyway...
+W=SHAY
+
+T=I need those materials before the fight, final deadline!
+W=SHAY
+
+T=What happens if I don't?
+W=BROK
+C1A=MAYBE
+
+T=I'll order mint ones with fast delivery but those are super expensive.
+W=SHAY
+
+T=If I can't afford them...
+W=SHAY
+
+T=I'll have to make do but...
+W=SHAY
+C2A=WONDER
+ 
+T=You look oddly nervous. You okay?
+W=BROK
+C1A=WONDER
+
+T=Just... get those materials! If you can.
+W=SHAY
+C2A=NORMAL
+
+T=If not, that's fine.
+W=SHAY
+
+T=After all, it's not like the whole universe and space-time are relying on it!
+W=SHAY
+
+T=Ooookay...
+W=BROK
+TEN=PC08B_DAY2_END_ACTIVATE
+
+
+#----------------------
+ID=PC08B_MATERIALSTOGIVE1
+T=Hey, I got some of the thingies you requested!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=What do you mean, "some"?
+W=SHAY
+C2A=ANGRY
+
+T=I need all of them!
+W=SHAY
+
+T=I'm doing the best I can!
+W=BROK
+C1A=ANGRY
+
+T=It's been a crazy day!
+W=BROK
+
+T=Whatever. Let me see.
+W=SHAY
+C2A=NORMAL
+
+T=...
+W=SHAY
+C1A=THINK
+
+T=Yeah... I can work with these.
+W=SHAY
+TEN=PC08B_MATERIALS_GIVEMONEY
+IT=1
+
+
+#----------------------
+ID=PC08B_MATERIALSTOGIVE2
+T=Here's some more.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SHAY
+C2A=NORMAL
+
+T=Erm... What's this?
+W=SHAY
+
+T=Something you asked for?
+W=BROK
+C1A=WONDER
+
+T=I did?
+W=SHAY
+C2A=WONDER
+
+T=Oh well. I'll eat it later.
+W=SHAY
+C2A=MEH
+
+T=Uh...
+W=BROK
+TEN=PC08B_MATERIALS_GIVENMONEY
+IT=1
+
+#----------------------
+ID=PC08B_MATERIALSTOGIVE3
+T=Here.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_MATERIALS_GIVENMONEY
+IT=1
+
+#----------------------
+ID=PC08B_MATERIALSTOGIVEALL
+T=There ya go! Take this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=You found all the materials?
+W=SHAY
+
+T=Good.
+W=SHAY
+
+T=That's all? "Good?"
+W=BROK
+C1A=ANGRY
+
+T=Amazing job!
+W=SHAY
+C2A=HAPPY
+
+T=You just literally saved the world! No, the universe!
+W=SHAY
+
+T=Don't overdo it.
+W=BROK
+
+T=Oh but I'm not. Who knows what would have happened if you hadn't found them.
+W=SHAY
+C2A=NORMAL
+
+T=...
+W=BROK
+C1A=THINK
+TEN=PC08B_MATERIALS_GIVENMONEY
+IT=1
+
+
+#----------------------
+ID=PC08B_MATERIALS_GIVENMONEY
+T=Here's your remuneration.
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_MATERIALS_GIVEMONEY
+IT=1
+
+#----------------------
+ID=PC08B_MATERIALS_GIVENMONEY1
+T=Not bad!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_MATERIALS_GIVENMONEY_AFTER
+
+#----------------------
+ID=PC08B_MATERIALS_GIVENMONEY2
+T=That oughta buy an Antburger or two...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_MATERIALS_GIVENMONEY_AFTER
+
+#----------------------
+ID=PC08B_MATERIALS_GIVENMONEY3
+T=Thanks... 
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_MATERIALS_GIVENMONEY_AFTER
+
+#----------------------
+ID=PC08B_MATERIALS_AFTERFIGHT
+T=So! Ready for the fight?
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+TEN=PC08B_DAY2_END_CHOICEOK
+
+#----------------------
+ID=PC08B_DAY2_END_WELCOME1
+T=Found anything?
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=Afraid not. Can we start the fight?
+W=BROK
+C1A=READY
+
+T=I should have guessed you'd enjoy brawling more than a treasure hunt.
+W=SHAY
+
+T=Your decision.
+W=SHAY
+C2A=MEH
+TEN=PC08B_DAY2_END_CHOICE
+
+
+#----------------------
+ID=PC08B_DAY2_END_STAY
+T=I'll continue searching.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SHAY
+C2A=NORMAL
+
+T=Be fast!
+W=SHAY
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC08B_DAY2_END_STARTFIGHTWITHOUT
+T=Will you be okay without those materials?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=WONDER
+
+T=I hope so. But you made your decision.
+W=SHAY
+
+T=Okay...
+W=BROK
+TEN=PC08B_DAY2_END_STARTFIGHTWITHOUT2
+IT=1
+
+#----------------------
+ID=PC08B_DAY2_END_STARTFIGHT
+T=Alright. Time to fight!
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=SHAY
+C2A=HAPPY
+
+T=I love your enthusiasm!
+W=SHAY
+
+T=Be careful, though! That new challenger comes from nowhere and looks very strong.
+W=SHAY
+C2A=NORMAL
+
+T=No worries! I don't intend to die today.
+W=BROK
+
+T=Well, I'll remind you to quit if things go wrong!
+W=SHAY
+
+T=Me? Quitting?
+W=BROK
+C1A=MOCK
+
+T=Never!
+W=BROK
+
+T=Silly you! If only you had good life insurance.
+W=SHAY
+C2A=HAPPY
+
+T=Give it your best!
+W=SHAY
+TEN=PC08B_DAY2_GOFIGHT
+
+
+
+
+#----------------------
+#= Day 2 after the fight
+#----------------------
+ID=PC08B_DAY2_AFTERFIGHT1
+T=So! As I said...
+W=SHAY
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+CONTEXT=Day 2 after the fight
+
+T=I won't be available tomorrow.
+W=SHAY
+
+T=Are you leaving?
+W=BROK
+
+T=I just... need time for myself.
+W=SHAY
+
+T=Focusing on your new invention?
+W=BROK
+
+T=Yeah...
+W=SHAY
+
+T=Oh! Before I forget!
+W=SHAY
+C2A=SURPRISED
+
+T=Here.
+W=SHAY
+C2A=NORMAL
+TEN=PC08B_DAY2_AFTERFIGHT_ENVELOPE
+
+T=An envelope...?
+W=BROK
+C1A=WONDER
+
+T=...
+W=BROK
+
+T="Open me when desperate"?!
+W=BROK
+TEN=PC08B_DAY2_AFTERFIGHT_ENVELOPEBACK
+
+T=There's something you're not telling me...
+W=BROK
+C1A=ANGRY
+
+T=Don't worry! It's...
+W=SHAY
+
+T=Just in case.
+W=SHAY
+
+T=Huh?
+W=BROK
+C1A=THINK
+
+T=I'll be saving your bacon once again... or is it the other way around?
+W=SHAY
+C2A=WONDER
+
+T=Oh... I don't know anymore!
+W=SHAY
+C2A=ANGRY
+
+T=Could you BE more cryptic?
+W=BROK
+
+#T=All I know is... Our fates are intertwined.
+#W=SHAY
+#C2A=NORMAL
+
+T=You'll figure it out.
+W=SHAY
+C2A=NORMAL
+
+T=Oh, well. I stopped trying to understand you a long time ago!
+W=BROK
+C1A=HAPPY
+
+T=(Yawn) Well, my back can't wait to find my bed.
+W=BROK
+C1A=TIRED
+
+T=See ya!
+W=BROK
+C1A=HAPPY
+TEN=PC08B_DAY2_BROKLEAVES
+
+#----------------------
+ID=PC08B_DAY2_AFTERFIGHT2
+T=Bro'...
+W=SHAY
+C2=SHAY
+C2A=SAD
+CONTEXT=Brok doesn't know it but this is the last time they talk to each other - and Shay knows it so it's one-sided goodbye.
+
+T=Goodbye...
+W=SHAY
+
+T=I...
+W=SHAY
+
+T=I'll miss you...
+W=SHAY
+
+T=...
+W=SHAY
+C2_EYESHUT=1
+
+T=No...
+W=SHAY
+
+T=I... can't...
+W=SHAY
+
+T=Gotta focus...
+W=SHAY
+
+T=Time to finish this for good.
+W=SHAY
+TEN=PC08B_DAY2_BROKLEAVES2
+
+
+
+
+
+
+
+
+#--------------------------------
+#= Ending canonical - arrive
+#--------------------------------
+ID=PC08B_STORY320_NOBOLT
+T=Shay?
+W=BROK
+A=THINK
+CONTEXT=Day 3 - Brok comes in the garage after final boss and last argument with Graff as he's desperate to know what Shay meant with the envelope she gave him
+
+T=Shay!
+W=BROK
+A=YELL
+
+T=Is anyone there?
+W=BROK
+A=WONDER
+
+T=...
+W=BROK
+A=DOWN
+TEN=PC08B_STORY320_CHECKGRAFF
+
+#--------------------------------
+ID=PC08B_STORY320_BOLT
+T=Master Brok! I was - expecting you!
+W=BOLT
+C1=BROK
+C1A=SURPRISED
+C2=BOLT
+C2A=HAPPY
+TEN=PC08B_STORY320_TURNBOLT
+COMM=If Bolt was saved, he's there
+
+T=Huh?
+W=BROK
+
+T=You are - right on time.
+W=BOLT
+
+T=Everything - is ready.
+W=BOLT
+
+T=Great! But...
+W=BROK
+C1A=HAPPY
+
+T=What is ready... exactly?
+W=BROK
+C1A=THINK
+
+T=Take a look.
+W=BOLT
+C2A=WONDER
+TEN=PC08B_STORY320_CHECKGRAFF
+
+#--------------------------------
+ID=PC08B_STORY320_GRAFF
+T=You weren't kidding! There truly is something!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=MEH
+COMM=Alternative ending (Till end of time) with Graff being there
+
+
+#--------------------------------
+ID=PC08B_STORY320_BOLT1
+T=I'm glad to see you, Bolt. A robot who doesn't try to murder me for a change!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=BOLT
+C2A=WONDER
+
+T=Glad to - see you too - Master Brok!
+W=BOLT
+C2A=HAPPY
+
+T=Don't call me Master. You don't belong to anyone.
+W=BROK
+C1A=MOCK
+
+T=I understand - Master Brok.
+W=BOLT
+TEN=PC08B_STORY320_BOLTCHOICES
+IT=1
+
+#--------------------------------
+ID=PC08B_STORY320_BOLT2
+T=I need some answers!
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=BOLT
+C2A=WONDER
+TEN=PC08B_STORY320_BOLTCHOICES
+IT=1
+
+
+#--------------------------------
+#= Topic : machine
+#--------------------------------
+ID=PC08B_STORY320_BOLT_MACHINE1
+T=What's that invention for?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=BOLT
+C2A=WONDER
+
+T=Sorry - I cannot explain.
+W=BOLT
+
+T=Mistress Shay - said.
+W=BOLT
+
+T=If you entered here - you would know.
+W=BOLT
+
+T=Typical Shay...
+W=BROK
+C1A=MAYBE
+
+T=Okay...
+W=BROK
+
+T=I don't have much to lose at this point, so...
+W=BROK
+C1A=WONDER
+
+T=Start it up.
+W=BROK
+
+T=I cannot.
+W=BOLT
+
+T=Why?
+W=BROK
+C1A=ANGRY
+
+T=Mistress Shay - said you would - figure it out - yourself.
+W=BOLT
+C2A=HAPPY
+
+T=Argh...
+W=BROK
+C1A=DOWN
+
+T=Where is she, by the way?
+W=BROK
+C1A=THINK
+
+T=Mistress Shay - said...
+W=BOLT
+C2A=WORRIED
+
+T=Oh, don't bother.
+W=BROK
+C1A=MAYBE
+TEN=PC08B_STORY320_BOLTCHOICES
+
+
+#--------------------------------
+ID=PC08B_STORY320_BOLT_MACHINE2
+T=Ya sure ya can't tell me anything about the machine?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=WONDER
+
+T=It is - a necessary means.
+W=BOLT
+
+T=Mistress Shay - needs you. You need her.
+W=BOLT
+
+T=Your fates - are intertwined.
+W=BOLT
+
+T=What does that gibberish even mean...?
+W=BROK
+C1A=WONDER
+
+T=I am - a mere - pile of screws.
+W=BOLT
+
+T=I cannot - interpret these words.
+W=BOLT
+C2A=HAPPY
+
+T=Oh, I think you do. You just don't wanna tell me.
+W=BROK
+C1A=MAYBE
+
+T=...
+W=BOLT
+C2A=WONDER
+
+T=And that's when you would use a surprised expression if you could.
+W=BROK
+C1A=MOCK
+TEN=PC08B_STORY320_BOLTCHOICES
+IT=1
+
+#--------------------------------
+ID=PC08B_STORY320_BOLT_MACHINE3
+T=Come on! Help me!
+W=BROK
+C1=BROK
+C1A=READY
+C2=BOLT
+C2A=WONDER
+
+T=Sorry. I wasn't - designed - for this.
+W=BOLT
+C2A=WORRIED
+TEN=PC08B_STORY320_BOLTCHOICES
+IT=1
+
+
+#--------------------------------
+#= Topic : consequences
+#--------------------------------
+ID=PC08B_STORY320_BOLT_CONSEQUENCES1
+T=What will happen when I start this up?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=WONDER
+
+T=Master Brok.
+W=BOLT
+C2A=HAPPY
+
+T=You're at - the verge - of a new beginning.
+W=BOLT
+
+T=I will - never - forget you.
+W=BOLT
+
+T=You're not very reassuring...
+W=BROK
+C1A=DOWN
+
+T=Do not - be scared.
+W=BOLT
+C2A=WONDER
+
+T=Nature - hates void.
+W=BOLT
+
+T=No matter - what happens. All problems - get solved.
+W=BOLT
+
+T=One way - or another.
+W=BOLT
+
+T=...Still not reassured.
+W=BROK
+C1A=TIRED
+TEN=PC08B_STORY320_BOLTCHOICES
+IT=1
+
+#--------------------------------
+ID=PC08B_STORY320_BOLT_CONSEQUENCES2
+T=Please tell me I'm doing the right thing!
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=BOLT
+C2A=WONDER
+
+T=You - probably are.
+W=BOLT
+C2A=HAPPY
+
+T=If you don't - do this. Who knows.
+W=BOLT
+C2A=WONDER
+
+T=The world - might disappear - into the void.
+W=BOLT
+
+T=Are ya serious?
+W=BROK
+C1A=SURPRISED
+
+T=It's possible. Anything - is possible.
+W=BOLT
+
+T=Maybe - all this - is a dream.
+W=BOLT
+
+T=Nothing - is real.
+W=BOLT
+C2A=HAPPY
+
+T=Got it. You're pulling my leg.
+W=BROK
+C1A=HAPPY
+TEN=PC08B_STORY320_BOLTCHOICES
+IT=1
+
+
+#--------------------------------
+ID=PC08B_STORY320_BOLTEXIT
+T=I'll figure this out.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=BOLT
+C2A=WONDER
+TEN=CHARACTER_STOPMUSIC
+
+
+#--------------------------------
+#= Blanket
+#--------------------------------
+ID=PC08B_STORY320_REMOVEBLANKET
+T=No way!
+W=BROK
+A=SURPRISED
+COMM=Finds the egg which is a time machine
+
+T=Could she really build a machine like this... with some junk collected here and there...?
+W=BROK
+A=WONDER
+TEN=PC08B_EGGBLANKET_CHECK
+
+
+#--------------------------------
+ID=PC08B_STORY320_REMOVEBLANKET2
+T=That's the shell. The junk - is inside.
+W=BOLT
+C1=BROK
+C1A=WONDER
+C2=BOLT
+C2A=WONDER
+
+
+#--------------------------------
+ID=PC08B_STORY320_REMOVEBLANKET2_GRAFF
+T=It's... amazing...
+W=GRAFF
+C1=BROK
+C1A=WONDER
+C2=GRAFF
+C2A=GASP
+
+
+
+#--------------------------------
+#= Egg Door
+#--------------------------------
+ID=PC08B_EGGDOOR1
+T=There's no handle or anything...
+W=BROK
+A=WONDER
+TEN=PC08B_EGGDOOR_KNOCK
+CONTEXT=Trying to start the machine
+
+#--------------------------------
+ID=PC08B_EGGDOOR1B
+T=(Knocks, knocks)
+
+T=Shay? You in there?
+W=BROK
+A=WONDER
+TEN=PC08B_EGGDOOR_CHECK
+
+#--------------------------------
+ID=PC08B_EGGDOOR1C
+T=Guess even if she were, she probably wouldn't hear anyway.
+W=BROK
+A=MAYBE
+
+#--------------------------------
+ID=PC08B_EGGDOOR1D
+T=She's not inside - Master Brok.
+W=BOLT
+C1=BROK
+C1A=MAYBE
+C2=BOLT
+C2A=WORRIED
+
+T=Just checking!
+W=BROK
+A=HAPPY
+
+#--------------------------------
+ID=PC08B_EGGDOOR2
+T=Must open when it's started.
+W=BROK
+A=THINK
+
+
+#--------------------------------
+#= Egg hit
+#--------------------------------
+ID=PC08B_EGGHIT1
+T=Master Brok!
+W=BOLT
+C2=BOLT
+C2A=WORRIED
+
+#--------------------------------
+ID=PC08B_EGGHIT2
+T=I do not. Recommend. Damaging it.
+W=BOLT
+C2=BOLT
+C2A=WONDER
+
+
+#--------------------------------
+#= Timeline
+#--------------------------------
+ID=PC08B_EGGTIMELINE1
+T=A chronology...
+W=BROK
+A=THINK
+
+T=...
+W=BROK
+TEN=PC08B_EGGTIMELINE1_CHECK
+
+#--------------------------------
+ID=PC08B_EGGTIMELINE1_GRAFF
+T=(Good. Graff is looking away.)
+W=BROK
+A=THINK
+MOOD=THINK
+TEN=PC08B_EGGTIMELINE1_USE
+
+T=(I've set it to 3030. Five years ago.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(If this thing can really go back in time...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(This is an opportunity I cannot miss.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(To save... not just Ott, but...)
+W=BROK
+A=THINK
+MOOD=THINK
+TEN=PC08B_EGGTIMELINE1_CHECK3
+
+T=(Everyone.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#--------------------------------
+ID=PC08B_EGGTIMELINE1_NORMAL
+T=(I won't think twice about this!)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+T=(I'll set it to five years ago...)
+W=BROK
+MOOD=THINK
+
+T=(...a week before the fire.)
+W=BROK
+MOOD=THINK
+
+T=(This way... Either I'll be able to change the events...)
+W=BROK
+MOOD=THINK
+
+T=(Or I'll lose all memories of the past five years.)
+W=BROK
+A=DOWN
+MOOD=THINK
+
+T=(It's fine either way...)
+W=BROK
+A=DISAPPOINTED
+MOOD=THINK
+
+
+#--------------------------------
+ID=PC08B_EGGTIMELINE2
+T=I've set it to the right date...
+W=BROK
+A=THINK
+
+T=I hope.
+W=BROK
+A=TIRED
+
+
+#--------------------------------
+#= Slot
+#--------------------------------
+ID=PC08B_EGGSLOT1
+T=It's obvious. I'm supposed to place something here.
+W=BROK
+A=THINK
+
+T=But...what?
+W=BROK
+A=WONDER
+
+#--------------------------------
+ID=PC08B_EGGSLOT2
+T=If I come back alive from this...I'll tell Shay to include instructions.
+W=BROK
+A=ANGRY
+
+
+#--------------------------------
+ID=PC08B_EGGSLOT_PENDANT
+T=No doubt about it.
+W=BROK
+A=THINK
+
+T=It's glowing, brighter than ever...
+W=BROK
+
+T=Made of heptamide...
+W=BROK
+
+T=The most powerful machine...
+W=BROK
+
+T=Must need the most powerful energy source.
+W=BROK
+A=MOCK
+TEN=PC08B_EGGSLOT_PENDANT_USE
+
+
+#--------------------------------
+ID=PC08B_EGGSLOT_PENDANTB
+T=Whoa!
+W=BROK
+A=SURPRISED
+
+T=It's working!
+W=BROK
+
+T=My pendant. It's not glowing anymore.
+W=BROK
+A=MAYBE
+
+T=Did the machine absorb its energy?
+W=BROK
+
+
+#--------------------------------
+#--------------------------------
+ID=PC08B_STORY320_INVENTORY_PENDANT
+T=It's... glowing?!
+W=BROK
+A=WONDER
+TEN=INTERFACE_DESCRIBEITEM_END
+
+#--------------------------------
+ID=PC08B_STORY320_OPENDOOR1
+T=So...
+W=BROK
+A=WONDER
+
+T=How do I...
+W=BROK
+
+T="Stand back"
+BVOICESP=VARIOUS
+
+T=The egg... talked?
+W=BROK
+A=SURPRISED
+TEN=PC08B_STORY320_STANDBACK
+
+
+#--------------------------------
+ID=PC08B_STORY320_OPENDOOR_GRAFF
+T=I still can't believe it's real...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=GASP
+
+T=The machine is, but what does it really do?
+W=BROK
+
+T=...
+W=GRAFF
+
+T=I guess we'll know soon enough.
+W=BROK
+
+T=I didn't think this would actually happen...
+W=GRAFF
+C2A=TURN
+
+T=Are you... really going to do this?
+W=GRAFF
+C2A=SAD
+
+T=For me?
+W=GRAFF
+
+T=I will.
+W=BROK
+C1A=READY
+
+T=But...
+W=GRAFF
+
+T=What if...
+W=GRAFF
+
+T=What if it doesn't work?
+W=GRAFF
+
+T=Well I guess your dinner will be cooked!
+W=BROK
+C1A=MEH
+
+T=That's not funny!
+W=GRAFF
+C2A=ANGRY
+
+T=No worries.
+W=BROK
+C1A=HAPPY
+
+T=Shay wouldn't allow it.
+W=BROK
+
+T=I trust her.
+W=BROK
+
+T=Would you... trust her with your life?
+W=GRAFF
+C2A=TURN
+
+T=Of course! I pretty much do that every night, actually!
+W=BROK
+C1A=ALRIGHT
+
+T=...
+W=GRAFF
+
+T=Brok...
+W=GRAFF
+C2A=SAD
+
+T=I know.
+W=BROK
+C1A=TIRED
+
+T=You don't have to say anything.
+W=BROK
+TEN=PC08B_STORY320_STANDBACK
+
+
+#--------------------------------
+ID=PC08B_STORY320_OPENDOOR2
+T="Everything's ready"
+BVOICESP=VARIOUS
+
+T="Come"
+BVOICESP=VARIOUS
+TEN=PC08B_STORY320_OPENDOOR2WAIT
+
+#--------------------------------
+#TODO Fade out to increase tension
+ID=PC08B_STORY320_OPENDOOR2B
+T=...
+W=BROK
+A=THINK
+CONTEXT=Final player decision - Brok hesitates to enter the machine
+
+T=Well...
+W=BROK
+A=MAYBE
+
+T=This is it...
+W=BROK
+
+T=After I enter this...
+W=BROK
+
+T=There's no turning back...
+W=BROK
+
+T=My fate will be changed.
+W=BROK
+
+T=Forever...
+W=BROK
+
+T=...
+W=BROK
+
+
+#--------------------------------
+ID=PC08B_STORY320_OPENDOOR_GRAFF1
+T=...
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=SAD
+COMM=If Graff is there
+
+T=Well...
+W=BROK
+
+T=I suppose... this will seem like a short absence for you...
+W=BROK
+
+T=...
+W=GRAFF
+TEN=PC08B_STORY320_OPENDOOR_GRAFF2
+
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END1
+T=Graff!!!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+CONTEXT=Till end of time ending - Graff decides to enter the machine himself
+
+T=What the heck are you doing?!
+W=BROK
+TEN=PC08B_TILLENDTIME_BROKDOOR
+
+T=Get out! Immediately!
+W=BROK
+
+T=...
+BNAME=GRAFF
+BVOICE=GRAFF
+SILENCE=1
+
+T=No...
+BNAME=GRAFF
+BVOICE=GRAFF
+
+T=This is my mistake to fix.
+BNAME=GRAFF
+BVOICE=GRAFF
+
+T=You shouldn't be the only one making sacrifices.
+BNAME=GRAFF
+BVOICE=GRAFF
+
+T=But... I've set it to 3030!
+W=BROK
+C1A=WORRIED
+
+T=What...?
+BNAME=GRAFF
+BVOICE=GRAFF
+TEN=PC08B_TILLENDTIME_END1B
+
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END2
+T=No... I can't change it anymore!
+W=BROK
+A=WORRIED
+
+T=It's okay...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=That way... I'll see Mom...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=And maybe... I can change everything.
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Starting in 10 seconds.
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=Graff...
+W=BROK
+C1A=HEARTBROKEN
+
+T=In case... we never meet...
+W=BROK
+
+T=Or we never get to spend those five years together...
+W=BROK
+
+T=Because you've rewritten history or somethin'...
+W=BROK
+
+T=I want you to know...
+W=BROK
+
+T=I love you, kiddo.
+W=BROK
+
+T=I love you, too...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=And... I'll always remember...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=3...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=2...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=1...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=Always...
+BNAME=GRAFF
+BVOICE=GRAFF
+TEN=PC08B_STORY320_ENTEREGG4
+
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END3
+T=He's gone...
+W=BROK
+A=HEARTBROKEN
+TEN=PC08B_TILLENDTIME_END3_CHECK
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END3B
+T=...?
+W=BROK
+A=DOWN
+TEN=PC08B_TILLENDTIME_END3_CHECKITEM
+
+T=That's...
+W=BROK
+
+T=The present I gave him...
+W=BROK
+TEN=PC08B_TILLENDTIME_END3C
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END3C
+T=...
+W=BROK
+A=DOWN
+
+T=Goodbye kiddo...
+W=BROK
+
+T=May you create a better life for yourself.
+W=BROK
+TEN=PC08B_TILLENDTIME_END3D
+
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END4
+T=From that day...
+BVOICE=BROK
+
+T=I waited...
+T=And waited... 
+T=Clinging to the hope that Graff was okay...
+T=Wherever or whenever he was.
+T=But...
+T=He never came back.
+T=Maybe something went wrong.
+T=Or maybe he created a new timeline.
+T=Which would mean... He ceased to exist in this one.
+T=I can't explain why but...
+T=No matter how hard I tried...
+T=I cannot grasp how this machine came to be.
+T=I only know it existed.
+T=No one else seems to remember Graff...
+T=And I can feel another person close to me got erased from my memory.
+T=Sometimes...
+T=I wonder if I imagined it all...
+T=But my heart knows the truth.
+TEN=PC08B_TILLENDTIME_END4B
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END4C
+T=I resumed my life.
+BVOICE=BROK
+
+T=I had to.
+T=Dee, Dr. Gherkin, and Wes.
+T=They all disappeared into thin air.
+T=I'm afraid they suffered a terrible fate... and I wasn't there.
+T=Thus I never got the answers I sought on my investigation.
+T=The pills shortage extended.
+T=In a short amount of time...
+T=Everyone attempted to enter the Dome or leave to other lands...
+T=But all failed.
+T=It was hopeless.
+T=Eventually I became one of the very few remaining persons living in the Slums.
+T=Even if the odds for him to return were slim...
+T=I attempted to make this deserted place a better one for him... and everyone.
+T=And I succeeded...
+TEN=PC08B_TILLENDTIME_END4D
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END4E
+T=I had reached the dusk of my life.
+BVOICE=BROK
+T=I never had any children. Yet I felt accomplished.
+T=Because I helped rebuild this city the best I could.
+T=It was time for me to rest indefinitely.
+T=And that's when...
+TEN=PC08B_TILLENDTIME_END4F
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END5
+T=3085 A.R.
+CONTEXT=Graff finally comes back and sees Brok very old on a rocking chair
+TEN=PC08B_TILLENDTIME_END5B
+
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END6
+T=...!
+W=GRAFF
+A=GASP
+
+T=Brok...?
+W=GRAFF
+TEN=PC08B_TILLENDTIME_END6EV
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END7
+T=Is this real?
+W=BROK
+C1=GRAFF
+C1A=SAD
+C2=BROK
+C2A=OLD
+
+T=Or...am I dead?
+W=BROK
+
+T=I am...
+W=GRAFF
+C1A=TURN
+
+T=I'm really here.
+W=GRAFF
+C1A=SAD
+
+T=You...
+W=GRAFF
+
+T=You're so...
+W=GRAFF
+
+T=Old...?
+W=BROK
+
+T=Yeah...
+W=BROK
+
+T=You're late, son...
+W=BROK
+
+T=I've been waiting... waiting for so long...
+W=BROK
+
+T=I tried...
+W=GRAFF
+C1A=TORN
+
+T=But the machine...
+W=GRAFF
+
+T=It was failing...
+W=GRAFF
+
+T=I knew it...
+W=BROK
+
+T=I knew our past together wasn't just a figment of my imagination.
+W=BROK
+
+T=...What's this place?
+W=GRAFF
+C1A=SAD
+
+T=Your new home.
+W=BROK
+
+T=The Slums?
+W=GRAFF
+
+T=We no longer call it that.
+W=BROK
+
+T=It's safe now.
+W=BROK
+
+T=I built it for you and everyone.
+W=BROK
+
+T=...
+W=GRAFF
+C1A=TORN
+
+T=Tell me everything.
+W=BROK
+
+T=Well...
+W=GRAFF
+
+T=I've met Mom...
+W=GRAFF
+
+T=But... I couldn't save her...
+W=GRAFF
+
+T=I couldn't save anyone...
+W=GRAFF
+
+T=That's okay...
+W=BROK
+
+T=Here...
+W=BROK
+COMM=Brok gives his pendant
+TEN=PC08B_TILLENDTIME_END7B
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END8
+T=This pendant...
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=BROK
+C2A=OLD
+
+T=I said I would give it to you someday...
+W=BROK
+
+T=It's yours now.
+W=BROK
+
+T=...I know!
+W=GRAFF
+C1A=SURPRISED
+
+T=With this...
+W=GRAFF
+
+T=I can use it to restore the machine's energy and go back...!
+W=GRAFF
+
+T=Come with me!
+W=GRAFF
+C1A=HAPPY
+
+T=Don't.
+W=BROK
+
+T=Forget the machine.
+W=BROK
+
+T=I've lived my life.
+W=BROK
+
+T=Now, It's time for you to live yours.
+W=BROK
+
+T=...
+W=GRAFF
+C1A=SAD
+
+T=Look at me!
+W=BROK
+
+T=Once so valiant. And now...
+W=BROK
+
+T=That's not fair...
+W=GRAFF
+
+T=Life's unfair. I thought you'd know this by now.
+W=BROK
+
+T=We can only work our best to make it better.
+W=BROK
+TEN=PC08B_TILLENDTIME_END8B
+
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END9
+T=Ha ha!
+W=BROK
+C1=GRAFF
+C1A=SAD
+C2=BROK
+C2A=OLD
+
+T=What's funny?
+W=GRAFF
+
+T=All this time... I've always kept hope that you'd come back...
+W=BROK
+
+T=I was just starting to accept this would never happen...
+W=BROK
+
+T=And there you are!
+W=BROK
+
+T=I'm glad I was able to see you again...
+W=BROK
+
+T=One last time.
+W=BROK
+
+T=Don't say this!
+W=GRAFF
+C1A=SURPRISED
+
+T=You've still got time.
+W=GRAFF
+C1A=SAD
+
+T=I wish...
+W=BROK
+TEN=PC08B_TILLENDTIME_END9B
+
+#--------------------------------
+ID=PC08B_TILLENDTIME_END10
+T=Please don't leave...
+W=BROK
+C1=GRAFF
+C1A=TORN
+C2=BROK
+C2A=OLD
+
+T=I won't.
+W=GRAFF
+
+T=I'm here now.
+W=GRAFF
+
+T=Until the end...
+W=GRAFF
+
+T=With you.
+W=GRAFF
+TEN=PC08B_TILLENDTIME_END10B
+
+
+#--------------------------------
+ID=PC08B_STORY320_ENTER
+T=I have to do this.
+W=BROK
+A=READY
+CONTEXT=Final player decision - Brok enters the machine = Canonical Ending
+TEN=PC08B_STORY320_ENTEREGG
+
+
+
+#--------------------------------
+ID=PC08B_STORY320_ENTER2
+T=Oh boy, good thing I'm not claustrophobic.
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Shay, I'm trusting you on this...
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Let's go.
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Starting in 3...
+BVOICESP=VARIOUS
+
+T=2...
+BVOICESP=VARIOUS
+
+T=1...
+BVOICESP=VARIOUS
+TEN=PC08B_STORY320_ENTEREGG3
+
+
+#--------------------------------
+ID=PC08B_STORY320_ENTER3
+T=Goodbye - Master Brok!
+W=BOLT
+C2=BOLT
+C2A=HAPPY
+
+T=When you - come back.
+W=BOLT
+C2A=WORRIED
+
+T=Please.
+W=BOLT
+
+T=Remember me.
+W=BOLT
+TEN=PC08B_STORY320_ENTEREGG4
+
+
+#--------------------------------
+ID=PC08B_STORY320_SHAYENDTEXT
+T=Good luck, Bro'... 
+BNAME=SHAY
+BVOICE=SHAY
+
+T=Save me...
+T=Save us all.
+TEN=PC08B_STORY320_ENTEREGG8
+
+
+#--------------------------------
+ID=PC08B_STORY320_CANNOT1
+T=...
+W=BROK
+A=DOWN
+CONTEXT=Final player decision - Brok refuses to enter
+
+T=This is...
+W=BROK
+A=HEARTBROKEN
+
+T=I...
+W=BROK
+
+T=I can't...!
+W=BROK
+A=TIRED
+TEN=PC08B_STORY320_RUNAWAYB
+
+#--------------------------------
+ID=PC08B_STORY320_CANNOT1B
+T=Master Brok...?
+W=BOLT
+C2=BOLT
+C2A=WONDER
+TEN=PC08B_STORY320_RUNAWAYC
+
+
+#--------------------------------
+ID=PC08B_STORY320_CANNOT2
+T=Shay...
+BVOICE=BROK
+
+T=I'm sorry.
+T=No matter how desperate I am.
+T=I have to face reality.
+T=What's done... is done.
+T=There's no forgetting.
+T=No stepping back.
+TEN=PC08B_STORY320_TOPC01
+
+
+
+
+#--------------------------------
+#= "CANNOT" ending
+#--------------------------------
+
+ID=PC08B_STORY330_CANNOT_WITHGRAFF1
+T=So? What did you want to show me?
+W=GRAFF
+C1=BROK
+C1A=WONDER
+C2=GRAFF
+C2A=MEH
+CONTEXT="Cannot" ending - Brok comes back with Graff, only to find out the machine is gone
+
+T=...!
+W=BROK
+C1A=SURPRISED
+TEN=PC08B_STORY330_INIT2
+
+T=The... machine?
+W=BROK
+
+T=Where has it gone?
+W=BROK
+TEN=PC08B_STORY330_INIT3
+
+T=What machine?
+W=GRAFF
+
+T=A time travel machine!
+W=BROK
+
+T=Or maybe, a memory eraser machine...
+W=BROK
+C1A=WONDER
+
+T=O...kay...
+W=GRAFF
+C2A=DISDAIN
+
+T=It's gotta be somewhere!
+W=BROK
+C1A=WORRIED
+TEN=PC08B_STORY330_INIT4
+
+T=...
+W=BROK
+C1A=THINK
+
+T=I think you've dreamt it.
+W=GRAFF
+
+T=Impossible!
+W=BROK
+C1A=ANGRY
+TEN=PC08B_STORY330_INIT5
+
+
+
+#----------------------------------------------------
+ID=PC08B_CALL_SHAY
+T=Hi!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+CONTEXT=When Brok calls Shay in the same room
+
+T=Earth to Brok! We've got a problem!
+W=SHAY
+
+T=Whaddya mean?
+W=BROK
+C1A=THINK
+
+T=Even I would know better than calling someone who's in the same room.
+W=SHAY
+
+T=I thought you wouldn't notice!
+W=BROK
+C1A=HAPPY
+
+T=Well, I'd notice your smell from miles away.
+W=SHAY
+
+T=Not a bad smell though!
+W=SHAY
+C2A=HAPPY
+
+T=Huh...?
+W=BROK
+C1A=WONDER
+TEN=INTERFACE_CALL_END
+
+
+
+
+#----------------------------------------------------
+#Get this material
+ID=PC08B_MATERIAL1
+T=Hey! There's something you've been looking for. Right there!
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SHAY
+C2A=WONDER
+CONTEXT=Finding material in her garage
+
+T=You're sure?
+W=SHAY
+
+T=That's what your thingy says, anyway.
+W=BROK
+C1A=THINK
+TEN=PC08B_MATERIAL_GET
+
+#----------------------------------------------------
+ID=PC08B_MATERIAL1B
+T=Does this look like a Crystal controller to you?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHAY
+C2A=NORMAL
+
+T=How silly! I forgot to check if I got one in the garage.
+W=SHAY
+C2A=HAPPY
+
+T=Well, I'm still gonna be paid for it, right...?
+W=BROK
+C1A=HAPPY
+
+T=...
+W=SHAY
+C2A=WONDER
+
+T=(I hate it when I don't get a reply!)
+W=BROK
+C1A=TIRED
+MOOD=THINK
+
+
+#----------------------------------------------------
+ID=PC08B_PREMATURE_ENDING
+T=Hey!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=SURPRISED
+CONTEXT=Premature ending - when in day 3 we solve the puzzle too early and enter her garage, it shouldn't happen
+
+T=What's this egg?
+W=BROK
+C1A=WONDER
+TEN=PC08B_PREMATURE_SHAYLOOK
+
+T=...!
+W=SHAY
+
+T=Bro'...!
+W=SHAY
+
+T=You...
+W=SHAY
+
+T=You're not supposed to be here yet!
+W=SHAY
+C2A=ANGRY
+
+T=How did you...?!
+W=SHAY
+
+T=Well...
+W=BROK
+C1A=MAYBE
+
+T=Just tried different combinations on the door and...
+W=BROK
+C1A=ALRIGHT
+SKIPEND=1
+
+T=Aww, that will teach me to use a simple lock.
+W=SHAY
+TEN=PC08B_PREMATURE_EARTHQUAKE
+
+
+#----------------------------------------------------
+ID=PC08B_PREMATURE_ENDING2
+T=...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SHAY
+C2A=SURPRISED
+
+T=An earthquake...?
+W=BROK
+C1A=THINK
+
+T=You need to leave! NOW!
+W=SHAY
+C2A=SURPRISED
+
+T=Huh...?
+W=BROK
+TEN=PC08B_PREMATURE_EARTHQUAKE2
+
+T=Oh no...
+W=SHAY
+
+T=Too late!
+W=SHAY
+TEN=PC08B_PREMATURE_ENDING_GAMEOVER
+
+
+
+#----------------------------------------------------
+# CANONICAL LAST SCENE
+#----------------------------------------------------
+ID=PC08B_CANONICAL_SUBENDING1
+T=Huh...
+W=BROK
+A=STUPID
+TEN=PC08B_STORY320_ENTEREGG11
+COMM=Back to Canonical Ending - after Brok enters the machine he ends up in a strange landscape - as if he's dreaming
+
+
+#----------------------------------------------------
+ID=PC08B_CANONICAL_SUBENDING1B
+T=What's this place?
+W=BROK
+A=CONFUSED
+
+T=This can't be the inside of the machine... Can it...?
+W=BROK
+A=THINK
+TEN=PC08B_STORY320_COOPEND
+
+#----------------------------------------------------
+ID=PC08B_CANONICAL_SUBENDING1C
+T=What the...?
+W=BROK
+A=WORRIED
+
+T="Do not pay attention to my appearance"
+BVOICE=BROK
+COMM=A shadowy doppleganger of Brok appears before his eyes
+
+T=Who are you?
+W=BROK
+C1A=THINK
+
+T="A remnant from your last passage here"
+
+T=Last... passage...?
+W=BROK
+C1A=WONDER
+
+T="This is the place where all memories are shared"
+
+T=My memories?
+W=BROK
+A=THINK
+
+T="Not just yours"
+
+T="This whole universe"
+
+T=Wait...
+W=BROK
+A=MAYBE
+
+T=Have I been here already...?
+W=BROK
+
+T="I thought you would have realized by now"
+
+T="Everything has already happened"
+
+T="Everything will happen again"
+
+T=Does this mean...
+W=BROK
+A=DOWN
+
+T=I have no free will...?
+W=BROK
+
+T=Like... I'm responsible for banning the Squealers? But...
+W=BROK
+A=TIRED
+
+T=I do not want that.
+W=BROK
+A=READY
+
+T=If I go back...
+W=BROK
+
+T=Can I change anything?
+W=BROK
+
+T="You can"
+
+T="Ask yourself the real question"
+
+T="Do you want to?"
+
+T=...
+W=BROK
+A=MAYBE
+
+T=Yes.
+W=BROK
+A=READY
+TEN=PC08B_CANONICAL_SUBENDING_MUSIC
+
+T=I wanna change destiny.
+W=BROK
+
+T=Not for me. For the ones close to me.
+W=BROK
+A=MAYBE
+
+T="Then go"
+
+T="Enter the void"
+TEN=PC08B_CANONICAL_APPEARVOID
+
+
+#----------------------------------------------------
+ID=PC08B_CANONICAL_SUBENDING1D
+T="Don't be afraid"
+BVOICE=BROK
+
+T="This is a long journey"
+T="But at the end of it"
+T="Everything will be fine"
+
+T=How can I trust you?
+W=BROK
+A=MAYBE
+
+T="Trust yourself"
+
+T="It all depends on you"
+TEN=PC08B_CANONICAL_DISAPPEARFAKE
+
+#----------------------------------------------------
+ID=PC08B_CANONICAL_SUBENDING1E
+T=Thanks, past me or whatever you are.
+W=BROK
+A=ALRIGHT
+TEN=PC08B_CANONICAL_PROGRESS
+
+
+#----------------------------------------------------
+ID=PC08B_CANONICAL_SUBENDING1F
+T=Alright...
+W=BROK
+A=THINK
+
+T=It's time.
+W=BROK
+A=READY
+TEN=PC08B_CANONICAL_PROGRESS3
+
+
+
+#--------------------------------
+ID=PC08B_STORY320_BROKENDTEXT
+T=At that instant...
+BVOICE=BROK
+
+T=My consciousness seemed to fade away.
+T=I was slowly slipping into the unknown.
+T=Into the void.
+T=My last investigation was completed.
+T=Over the last three days...
+T=I had unchained the Slums from a perilous threat.
+T=But...
+T=I failed to extricate from my own fate.
+T=So many thoughts came to mind.
+T=I tried my best to hold on to a single one.
+T=I couldn't care less if my whole existence would get erased from time and space.
+T=I couldn't care less if I would lose all my memories.
+T=Only one thing mattered...
+T=You.
+T=All these years...
+T=You were there.
+T=I wouldn't have had the strength to go on without you.
+T=This is why...
+T=I'm gonna fix my mistakes.
+T=I'll make things right for you.
+TEN=PC08B_STORY320_STOPPARTICLES
+T=I won't give up. No matter what.
+T=As long as I live.
+T=I'll find a way.
+T=I will rewrite history for you.
+T=Because...
+TEN=PC08B_STORY320_BROKENDTEXTWAIT
+
+#--------------------------------
+ID=PC08B_STORY320_BROKENDTEXT2
+T=I love you, Graff.
+BVOICE=BROK
+TEN=PC08B_STORY320_CANONICENDING
+
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 01/08/2019
+###############################################
+
+#----------------------
+#= Walk on desk
+#----------------------
+ID=PC08B_WALKDESK1
+T=Training on my desk again, eh?
+W=SHAY
+C2=SHAY
+C2A=WONDER
+CONTEXT=Walk on desk
+NB=1
+D=90
+
+T=Come on! Go to the other room and train for tonight's fight!
+W=SHAY
+C2A=MEH
+D=90
+
+#----------------------
+#= Trying to hit Shay
+#----------------------
+ID=PC08B_HITSHAY1
+T=You disappoint me, Bro'. Your attempts are fruitless.
+W=SHAY
+C2=SHAY
+C2A=HAPPY
+CONTEXT=Try to hit Shay
+NB=1
+D=90
+
+#----------------------
+ID=PC08B_HITSHAY2
+T=My hardware and myself are protected. As long as I'm standing here, nothing can reach me.
+W=SHAY
+C2=SHAY
+C2A=NORMAL
+NB=1
+D=90
+
+T=It hurts on a morale level, though. What did I do to deserve this?
+W=SHAY
+C2A=WONDER
+D=90
+
+
+#----------------------
+ID=PC08B_BOLT_DEAD1
+T=Argh! See what you've done!
+W=SHAY
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=ANGRY
+
+T=Now I gotta restart from scratch!
+W=SHAY
+TEN=PC08B_BOLT_DEAD_CHECK
+
+
+#----------------------
+ID=PC08B_BOLT_DEAD2
+T=Erm...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=ANGRY
+TEN=PC08B_BOLT_DEAD_RUNAWAY
+
+T=GET OUT!
+W=SHAY
+COMMENT=Shay is FURIOUS
+C1A=SURPRISED
+C2_EYESHUT=1
+
+
+#----------------------
+ID=PC08B_BOLT_DEADBIS
+T=Nice! It worked!
+W=SHAY
+C1=SHAY
+C1A=HAPPY
+TEN=GAMEOVER
+
+
+#----------------------
+ID=PC08B_BOLT_DEAD_BACK
+T=Lucky for you! That was an easy fix.
+W=SHAY
+C1=SHAY
+C1A=HAPPY
+C2=BROK
+C2A=TIRED
+TEN=CLICKERS_BACK
+
+#----------------------
+ID=PC08B_BOLT_HITEND1
+T=Master Brok!...
+W=BOLT
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=WORRIED
+NB=1
+D=90
+
+#----------------------
+ID=PC08B_BOLT_HITEND2
+T=Please don't!...
+W=BOLT
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=WORRIED
+D=90
+
+
+
+
+#----------------------------------------------------
+ID=COOP_PC08B_SHAY1
+T=Shay, mysterious Shay...
+T=If only I could read your mind right now.
+
+#----------------------------------------------------
+ID=COOP_PC08B_BOLT1
+T=Woah, truly an antique bot!
+T=Custom made too. Never seen this model before.
+
+#----------------------------------------------------
+ID=COOP_PC08B_END1
+T=Our journey ends here.
+TEN=PC08B_STORY320_COOPENDBLINK
+T=I hope I was useful.
+T=I'll always be a part of you...whatever the dimension we live in!
+TEN=PC08B_STORY320_COOPENDGO

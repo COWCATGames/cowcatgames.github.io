@@ -1,0 +1,580 @@
+#-------------------------------
+#= HACKER BACK STREET
+#-------------------------------
+
+#----- Interactions --------
+PC_STATUE=雕像
+PC_WINGS=翅膀
+PC_PLANK=木板
+PC_BRACKET=支架
+PC_STRING=細繩
+PC_TO_HACKER=前往駭客街
+PC_TRASHCONTAINER=垃圾桶
+
+#----- Choices / Items --------
+
+GOT_WINGS=塑膠翅膀！
+GOT_STRING=細繩！
+
+CHOICE_GODEE=拯救貧民區
+CHOICE_KEEPLOOKING=拯救格拉夫
+
+#----- Topics --------
+
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Brok comes to this street for the first time
+# *****************************************************************
+# Brok
+PC14_INTRO1-1=呃……味道好臭。
+# Brok
+PC14_INTRO1-2=那個駭客應該就住這附近，我得在被熏死之前盡快找到他。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok comes back to this street just after losing the fight and wonders what happened (time reverted itself)
+# *****************************************************************
+# Brok
+PC14_INTRO2-1=……
+# Brok
+PC14_INTRO2-2=這味道……
+# Brok
+PC14_INTRO2-3=還有……
+# Brok
+PC14_INTRO2-4=這種熟悉的感覺……
+# Brok
+PC14_INTRO2-5=好像……
+# Brok
+PC14_INTRO2-6=被打敗後……
+# Brok
+PC14_INTRO2-7=任由自生自滅……？
+# Brok
+PC14_INTRO2-8=嗯……
+# Brok
+PC14_INTRO2-9=得盡快離開這裏，這個地方散發著不祥的氛圍。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rats ambush Brok
+# *****************************************************************
+# Rat
+PC14_BADGUYS1-1=鱷魚頭，急著趕路嗎？
+# Brok
+PC14_BADGUYS1-2=讓開，我不想惹麻煩。
+# Rat
+PC14_BADGUYS1-3=哈哈。
+# Rat
+PC14_BADGUYS1-4=那你當初就不該惹我們。
+# Brok
+PC14_BADGUYS1-5=啥？
+# Rat
+PC14_BADGUYS1-6=別跟我們裝傻。
+# Rat
+PC14_BADGUYS1-7=你對老大不敬，你襲擊了老大……
+# Brok
+PC14_BADGUYS1-8=……還羞辱了他。嗯，我都記得。
+# Brok
+PC14_BADGUYS1-9=那是他自找的。
+# Dart
+PC14_BADGUYS1-10=對老大動手的人都得死！
+# Brok
+PC14_BADGUYS1-11=讓開，別逼我……
+# Dart
+PC14_BADGUYS1-12=逼你甚麼？
+# Dart
+PC14_BADGUYS1-13=你休想逃出我們的掌心，乖乖挨揍吧。
+# Brok
+PC14_BADGUYS1-14=噢，是嗎？我可不認同。
+# Brok
+PC14_BADGUYS1-15=有本事就來呀！
+# Dart
+PC14_BADGUYS1-16=你死定了！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok loses the fight
+# *****************************************************************
+# Rat
+PC14_BADGUYS_LOSE-1=哈哈！搞定！
+# Rat
+PC14_BADGUYS_LOSE-2=現在輪到你被修服了吧？！
+# Dart
+PC14_BADGUYS_LOSE-3=是羞辱，笨蛋！
+# Rat
+PC14_BADGUYS_LOSE-4=啊對，反正他已經死了。
+# Rat
+PC14_BADGUYS_LOSE-5=將屍體擡去見老大，肯定有賞！
+# Dart
+PC14_BADGUYS_LOSE-6=耶！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - We win the fight - but actually more rats come and Brok loses anyway
+# *****************************************************************
+# Brok
+PC14_BADGUYSWON1-1=...
+#----------------------------------------------------
+# Brok
+PC14_BADGUYSWON2-1=可惡……
+# Rat
+PC14_BADGUYSWON2-2=我們把他包圍了！
+# Rat
+PC14_BADGUYSWON2-3=你休想活著離開！
+# Brok
+PC14_BADGUYSWON2-4=倒是想看誰……
+#----------------------------------------------------
+# Brok
+PC14_BADGUYSWON3-1=啊！不可能！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC14_STATUE1-1=那個是無尾教的雕像？
+# Brok
+PC14_STATUE1-2=很殘破的樣子……
+#----------------------------------------------------
+# Brok
+PC14_STATUE2-1=這翅膀看起來不像是雕像本身的……
+# Brok
+PC14_STATUE2-2=感覺像是有人用廉價的塑膠取代了原有的翅膀。
+#----------------------------------------------------
+# Brok
+PC14_STATUE_DESTROYED1-1=造雕像的人啊，跟你說聲抱歉了……
+# Brok
+PC14_STATUE_DESTROYED1-2=不過就算我沒動手，這雕像遲早也會被歲月所摧殘。
+#----------------------------------------------------
+# Brok
+#Trying to pick up the wings
+PC14_WINGS1-1=……呀！
+# Brok
+PC14_WINGS1-2=雖然看起來只是廉價的塑膠，但是卻很扎實……
+#----------------------------------------------------
+# Brok
+PC14_WINGS_PICK1-1=這翅膀我就笑納了。
+# Brok
+PC14_WINGS_PICK1-2=天知道是否有派上用場的時候。
+#----------------------------------------------------
+# Brok
+PC14_PLANK1-1=這應該是可折疊的長凳。
+#----------------------------------------------------
+# Brok
+PC14_STRING_TOOFAR-1=那些衣服皺巴巴髒兮兮的……恐怕掛了很長的時間。
+# Brok
+PC14_STRING_TOOFAR-2=應該已經是無主之物了，問題是我勾不到它們。
+#----------------------------------------------------
+# Brok
+PC14_STRING_TAKE-1=對了……那根細繩可以派上用場。
+#----------------------------------------------------
+# Brok
+PC14_STRING_TAKE2-1=……斷了。
+#----------------------------------------------------
+# Brok
+PC14_STRING_TAKE3-1=算了，應該夠用了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Before fight (coming back from VR fight day 2)
+# *****************************************************************
+# Brok
+PC14_STORY180_FIRST-1=我有點擔心雪伊，最近身邊的人都變得怪怪的……
+#----------------------------------------------------
+# Dart
+PC14_BADGUYS2-1=鱷魚頭，趕著去哪？
+# Brok
+PC14_BADGUYS2-2=奇怪……這畫面似曾相識……？
+# Dart
+PC14_BADGUYS2-3=我們可沒空陪你開玩笑。
+# Brok
+PC14_BADGUYS2-4=讓開，我不想招惹麻煩。
+# Dart
+PC14_BADGUYS2-5=行，把錢財留下來你就可以通過。
+# Brok
+PC14_BADGUYS2-6=要錢沒有，要命一條。
+# Rat
+PC14_BADGUYS2-7=呃……阿達，真要動手？
+# Rat
+PC14_BADGUYS2-8=別忘了……他之前打敗過我們的。
+# Dart
+PC14_BADGUYS2-9=懦夫！我們人多勢眾！
+# Dart
+PC14_BADGUYS2-10=只要我們齊心協力，他根本抵擋不住！
+# Dart
+PC14_BADGUYS2-11=來吧，兄弟們！這次勢必要鱷魚頭賠罪我們。
+# Dart
+PC14_BADGUYS2-12=別怕他反抗！
+# Brok
+PC14_BADGUYS2-13=有本事就來呀！
+#----------------------------------------------------
+# Rat
+PC14_BADGUYS2B-1=阿達，我們認輸吧！
+# Dart
+PC14_BADGUYS2B-2=別想！老大絕不答應！
+# Dart
+PC14_BADGUYS2B-3=再說……你看我趁他忙著招架時摸到了什麽！
+# Rat
+PC14_BADGUYS2B-4=他的手機！厲害了！
+# Brok
+PC14_BADGUYS2B-5=甚麼？！
+# Rat
+PC14_BADGUYS2B-6=快把其他的財物交出來，鱷魚！
+# Brok
+PC14_BADGUYS2B-7=想要就來跟你爺爺討！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Coming to this room with Dr. Gherkin
+# *****************************************************************
+# Brok
+PC14_GHERKIN_FIRST-1=等一下。
+#----------------------------------------------------
+# Gherkin
+PC14_GHERKIN_FIRST2-1=這…這傢伙會引來麻煩嗎？
+# Brok
+PC14_GHERKIN_FIRST2-2=明顯是。
+#----------------------------------------------------
+# Gherkin
+PC14_GHERKIN_FIRST3-1=那我們該怎麽辦？
+# Brok
+PC14_GHERKIN_FIRST3-2=唔……
+#----------------------------------------------------
+# Gherkin
+PC14_GHERKIN_LEAVE1-1=等等我！
+#----------------------------------------------------
+# Brok
+PC14_GHERKIN_BACK-1=他不見了。
+# Gherkin
+PC14_GHERKIN_BACK-2=好樣的！平安沒事才是上策！
+# Brok
+PC14_GHERKIN_BACK-3=這招只能偶爾生效。
+#----------------------------------------------------
+# Rat
+#Rat talks on the phone
+PC14_GHERKIN_RATPHONE-1=好的，老大。
+# Rat
+PC14_GHERKIN_RATPHONE-2=嗯哼。
+# Rat
+PC14_GHERKIN_RATPHONE-3=那些臭小鬼處理得怎麽樣了？
+# Rat
+PC14_GHERKIN_RATPHONE-4=哈哈，那些小屁孩毫無知覺！
+# Rat
+PC14_GHERKIN_RATPHONE-5=好的，我會留下來觀察。
+# Rat
+PC14_GHERKIN_RATPHONE-6=好。
+#----------------------------------------------------
+# Rat
+#He notices Brok
+PC14_GHERKIN_RATNOTICES1-1=喂！你是什麽人？
+# Brok
+PC14_GHERKIN_RATNOTICES1-2=我就是昨晚狠揍你一頓的惡魔！
+# Rat
+PC14_GHERKIN_RATNOTICES1-3=不可能！
+# Brok
+PC14_GHERKIN_RATNOTICES1-4=啊？
+# Brok
+PC14_GHERKIN_RATNOTICES1-5=真是個廢物……
+# Gherkin
+PC14_GHERKIN_RATNOTICES1-6=布羅格先生！
+# Gherkin
+PC14_GHERKIN_RATNOTICES1-7=是無人機！
+# Brok
+PC14_GHERKIN_RATNOTICES1-8=啊……我現在懂了。
+#----------------------------------------------------
+# Rat
+#He falls
+PC14_GHERKIN_RATFALLS-1=啊啊啊！
+#----------------------------------------------------
+# Gherkin
+PC14_GHERKIN_RATFALLS2-1=你把他殺了？！
+# Brok
+PC14_GHERKIN_RATFALLS2-2=沒有！這高度摔不死的！
+# Brok
+PC14_GHERKIN_RATFALLS2-3=希望如此……
+#----------------------------------------------------
+# Brok
+PC14_GHERKIN_DRONEEND-1=希望這是最後一個了。
+# Gherkin
+PC14_GHERKIN_DRONEEND-2=你…你得確認一下！否則……
+# Brok
+PC14_GHERKIN_DRONEEND-3=別囉嗦了，博士！還有別的事要忙呢！
+# Gherkin
+PC14_GHERKIN_DRONEEND-4=好……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - At the end of the day, Brok looks for Graff with R.J.
+# *****************************************************************
+# Brok
+PC14_LOOKGRAFF1-1=……我之前就跟這條街的鼠人交過手。
+# RJ
+PC14_LOOKGRAFF1-2=那些敗類，活該被揍。
+# Brok
+PC14_LOOKGRAFF1-3=他們要是敢碰格拉夫一根汗毛……
+# Brok
+PC14_LOOKGRAFF1-4=……
+# Brok
+PC14_LOOKGRAFF1-5=等一下，有電話……
+#----------------------------------------------------
+# Brok
+#Dee calls
+PC14_LOOKGRAFF_DEECALL_NOSIN-1=（接聽）喂？
+# Dee
+PC14_LOOKGRAFF_DEECALL_NOSIN-2=嗨……
+# Dee
+PC14_LOOKGRAFF_DEECALL_NOSIN-3=我找不到阿信。
+# Brok
+PC14_LOOKGRAFF_DEECALL_NOSIN-4=糟糕……
+# Dee
+PC14_LOOKGRAFF_DEECALL_NOSIN-5=警察局長打電話來了。
+# Dee
+PC14_LOOKGRAFF_DEECALL_NOSIN-6=他要見我們。
+# Brok
+PC14_LOOKGRAFF_DEECALL_NOSIN-7=對，我知道。可是……
+#----------------------------------------------------
+# Brok
+PC14_LOOKGRAFF_DEECALL-1=（接聽）喂？
+# Dee
+PC14_LOOKGRAFF_DEECALL-2=牛仔，你人在哪呢？！
+# Dee
+PC14_LOOKGRAFF_DEECALL-3=是時候了！
+#----------------------------------------------------
+# Brok
+PC14_LOOKGRAFF_DEECALLAFTER-1=我去不了了，我兒子失蹤了。
+# Dee
+PC14_LOOKGRAFF_DEECALLAFTER-2=什麽？
+# Dee
+PC14_LOOKGRAFF_DEECALLAFTER-3=我過來幫你！
+# Brok
+PC14_LOOKGRAFF_DEECALLAFTER-4=別！
+# Brok
+PC14_LOOKGRAFF_DEECALLAFTER-5=你……你得去說服韋斯之後過來。
+# Dee
+PC14_LOOKGRAFF_DEECALLAFTER-6=講真……我不想獨自跟那傢伙見面。
+# Brok
+PC14_LOOKGRAFF_DEECALLAFTER-7=別告訴我你怕那個老頭？
+# Dee
+PC14_LOOKGRAFF_DEECALLAFTER-8=當然不是！就只是……
+# Dee
+PC14_LOOKGRAFF_DEECALLAFTER-9=此事關重大，我們的時間不多了。
+# Dee
+PC14_LOOKGRAFF_DEECALLAFTER-10=這次的會面可是關乎到貧民區的未來。
+# Dee
+PC14_LOOKGRAFF_DEECALLAFTER-11=你自己做決定吧！
+#----------------------------------------------------
+# RJ
+PC14_LOOKGRAFF1_RJ-1=你去吧！我去找格拉夫。
+# Brok
+PC14_LOOKGRAFF1_RJ-2=你確定？
+# RJ
+PC14_LOOKGRAFF1_RJ-3=相信我，那些鼠人……會付出代價的。
+# Brok
+PC14_LOOKGRAFF1_RJ-4=……
+# Brok
+PC14_LOOKGRAFF1_RJ-5=好，我相信你。
+# Brok
+PC14_LOOKGRAFF1_RJ-6=不過……我會盡快趕回來的。
+# RJ
+PC14_LOOKGRAFF1_RJ-7=嗯。
+# Brok
+PC14_LOOKGRAFF1_RJ-8=把我孩子救出來！
+#----------------------------------------------------
+# Brok
+PC14_LOOKGRAFF_DEECALL_YES1-1=好，我馬上出發！
+# Brok
+PC14_LOOKGRAFF_DEECALL_YES1-2=[……]
+# Brok
+PC14_LOOKGRAFF_DEECALL_YES1-3=格拉夫……撐住。
+#----------------------------------------------------
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO1-1=抱歉……
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO1-2=過去每次我孩子需要我時我都不在。
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO1-3=但這次……我得優先幫我的孩子。
+# Dee
+PC14_LOOKGRAFF_DEECALL_NO1-4=……
+# Dee
+PC14_LOOKGRAFF_DEECALL_NO1-5=了解。
+# Dee
+PC14_LOOKGRAFF_DEECALL_NO1-6=我會盡全力的。
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO1-7=保重。
+# Unknown
+PC14_LOOKGRAFF_DEECALL_NO1-8=[……]
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO1-9=……
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO1-10=喂……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - If R.J. isn't there and Brok decides to keep looking for Graff, he goes down the manhole
+# *****************************************************************
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO2-1=一團灰色毛髮？
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO2-2=一定是格拉夫的！
+# Brok
+PC14_LOOKGRAFF_DEECALL_NO2-3=我得爬下去！
+#----------------------------------------------------
+# Brok
+PC14_LOOKGRAFF_DOWN1-1=天呀……什麽都看不見。
+# Brok
+PC14_LOOKGRAFF_DOWN1-2=……？
+# Brok
+PC14_LOOKGRAFF_DOWN1-3=誰……是誰？！
+#----------------------------------------------------
+# Ott
+#Brok meets Ott in the sewers
+PC14_LOOKGRAFF_ONLYOTT1-1=布羅格先生？！
+# Brok
+PC14_LOOKGRAFF_ONLYOTT1-2=奧特！
+# Ott
+PC14_LOOKGRAFF_ONLYOTT1-3=我們被鼠人囚禁了！
+# Ott
+PC14_LOOKGRAFF_ONLYOTT1-4=他們在追殺我！格拉夫就在那下面！
+# Brok
+PC14_LOOKGRAFF_ONLYOTT1-5=快走！我來對付他們！
+# Ott
+PC14_LOOKGRAFF_ONLYOTT1-6=可是……
+# Brok
+PC14_LOOKGRAFF_ONLYOTT1-7=相信我！
+# Brok
+PC14_LOOKGRAFF_ONLYOTT1-8=那些鼠人真是欠揍極了！
+# Ott
+PC14_LOOKGRAFF_ONLYOTT1-9=好……
+# Ott
+PC14_LOOKGRAFF_ONLYOTT1-10=我在上面等你們！
+#----------------------------------------------------
+# Graff
+#Another version where Graff is also there
+PC14_LOOKGRAFF_WITHGRAFF1-1=布羅格！
+# Brok
+PC14_LOOKGRAFF_WITHGRAFF1-2=天呀！你們沒事我就放心了！
+# Brok
+PC14_LOOKGRAFF_WITHGRAFF1-3=你們怎麽跑這下面來了？
+# Ott
+PC14_LOOKGRAFF_WITHGRAFF1-4=沒空解釋！鼠人在追殺我們！
+# Brok
+PC14_LOOKGRAFF_WITHGRAFF1-5=什麽？！
+# Brok
+PC14_LOOKGRAFF_WITHGRAFF1-6=這次一定要他們付出代價……
+# Graff
+PC14_LOOKGRAFF_WITHGRAFF1-7=別！他們人數太多了！
+# Ott
+PC14_LOOKGRAFF_WITHGRAFF1-8=走為上策！
+# Brok
+PC14_LOOKGRAFF_WITHGRAFF1-9=唔……
+# Brok
+PC14_LOOKGRAFF_WITHGRAFF1-10=好，跟緊我！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - They all got out of the sewers, escaping rats
+# *****************************************************************
+# Brok
+PC14_LOOKGRAFF_SURFACE1-1=到了，我們暫時算是安全了。
+#----------------------------------------------------
+# Ott
+#Ott refers to both Brok and Graff
+PC14_LOOKGRAFF_SURFACE_OTT-1=就知道你們能夠安全逃脫！
+#----------------------------------------------------
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-1=那麽……現在可以解釋了嗎？
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-2=你們怎麽會被鼠人追殺？
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-3=那個……
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-4=我跟那位駭客達成了協議。
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-5=沒想到他卻出賣我們。
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-6=可惡……
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-7=那你為什麽……
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-8=打下再說！現在有更要緊的事！
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-9=藥丸短缺的事……並非鼠人幹的。
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-10=鼠人說幕後黑手是三角機器人！
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-11=他們的話你也信？
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-12=……
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-13=糟了！阿蒂出事了！
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-14=阿蒂是誰？
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-15=我得先走！
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-16=等等！
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-17=我們跟你一塊去！
+# Ott
+PC14_LOOKGRAFF_SURFACE_NEXT-18=沒錯，現在就出發！
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-19=……
+# Brok
+PC14_LOOKGRAFF_SURFACE_NEXT-20=好吧……但你們要保護好自己！
+# Brok
+#Tribots are attracted to Brok and want to kill him
+PC14_LOOKGRAFF_SURFACE_NEXT-21=看來我是塊磁鐵……總會引來這些鐵罐頭。
+# Graff
+PC14_LOOKGRAFF_SURFACE_NEXT-22=啊？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Click on the thing covering manhole
+# *****************************************************************
+# Brok
+PC14_TRASHCONTAINER1-1=唔……
+# Brok
+PC14_TRASHCONTAINER1-2=這東西本來就在這裏了嗎？
+#----------------------------------------------------
+# Brok
+PC14_DOOR_LATER1-1=“即將盛大開幕”。嗯……？
+#----------------------------------------------------
+
+#----------------------------------------------------
+# Brok
+PC14_NOTFINISHED1-1=什麼……
+# Unknown
+PC14_NOTFINISHED1-2=「我們營業了！但請先完成主線冒險！」
+# Brok
+PC14_NOTFINISHED1-3=好奇怪……
+# Brok
+PC14_NOTFINISHED1-4=我要硬闖嗎？
+#----------------------------------------------------
+# Brok
+PC14_ENTER_BAR1-1=關門了……？可是上面寫著「營業中」啊！
+#----------------------------------------------------
+# Unknown
+PC14_ENTER_BAR2-1=（敲門）
+# Brok
+PC14_ENTER_BAR2-2=……
+# Brok
+PC14_ENTER_BAR2-3=……
+# Unknown
+PC14_ENTER_BAR2-4=（敲門）
+# Brok
+PC14_ENTER_BAR2-5=有人在嗎？
+# Unknown
+PC14_ENTER_BAR2-6=……
+# Unknown
+PC14_ENTER_BAR2-7=（腳步聲）
+# Hedgehog
+PC14_ENTER_BAR2-8=密碼？
+# Brok
+PC14_ENTER_BAR2-9=呃……
+# Brok
+PC14_ENTER_BAR2-10=「讓我進去？」
+# Hedgehog
+PC14_ENTER_BAR2-11=哼！夠可以了。
+# Unknown
+PC14_ENTER_BAR2-12=（門解鎖聲）
+# Brok
+PC14_ENTER_BAR2-13=……那是什麼啊？
+#----------------------------------------------------
+# Brok
+PC14_00_PREBAR2-1=……
+# Brok
+PC14_00_PREBAR2-2=（喘氣）
+# Brok
+PC14_00_PREBAR2-3=唉……樓梯也太多了……
+# Brok
+PC14_00_PREBAR2-4=這地方到底有多深？
+

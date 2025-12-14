@@ -1,0 +1,1753 @@
+#-------------------------------
+#=POLICE JAIL
+#-------------------------------
+
+#----- Interactions --------
+PC_DISTRIBUTOR=食品配發機
+PC_SHOWER=乾洗器
+PC_TOILETS=馬桶
+PC_FUR=毛髮
+PC_SEAT=座位
+#Hole in the laser barrier
+PC_DEFECT=缺口
+PC_TOUCHPANEL=觸控面板
+PC_EMERGENCYBUTTON=緊急按鈕
+PC_LOOKRIGHT=往右看
+PC_BOOK=書本
+PC_DOWNLOAD=下載
+PC_PREVIOUSPAGE=上一頁
+PC_NEXTPAGE=下一頁
+PC_CHEST=箱子
+
+#----- Choices / Items --------
+
+TUTORIAL_MOVE=移動
+TUTORIAL_HIGHERLOWER=往上/往下
+TUTORIAL_CANCEL=取消
+
+GOT_CATFUR=貓毛！
+GOT_INVENTORY=我的物品！
+
+
+#----- Topics --------
+PC09B_BOOK_UPDATECHOICE=立即更新？
+PC09B_SIN_CHOICE_PANEL=哪個按鍵？
+PC09B_SEARCH_RJ=搜身RJ？
+
+TOPIC_RJ=RJ
+TOPIC_PANEL=按下按鈕
+TOPIC_CALL=打給格拉夫
+TOPIC_SUBTERFUGE=撒謊
+TOPIC_PLAYSICK=裝病
+TOPIC_GIVE=賄賂
+TOPIC_INSULT=嘲諷
+TOPIC_REPAIR=修理洗手檯
+TOPIC_LASERS=雷射
+TOPIC_CONVINCE=說服
+
+CHOICE_CHEER=打氣
+CHOICE_FORGETIT=算了
+CHOICE_BUTTON1=按鈕1
+CHOICE_BUTTON2=按鈕2
+CHOICE_BUTTON3=按鈕3
+CHOICE_BUTTON4=按鈕4
+
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Brok has been arrested, first time coming to the room
+# *****************************************************************
+# RJ
+PC09B_INTRO1-1=進去，一號牢房。
+#----------------------------------------------------
+# RJ
+PC09B_INTRO2-1=洗個澡。
+# Brok
+#NB : For this very first dialog only, Brok may talk in a formal way to R.J.
+PC09B_INTRO2-2=啥……？要在你面前洗？
+# RJ
+PC09B_INTRO2-3=乾洗而已，不用脫衣服。
+# Brok
+PC09B_INTRO2-4=哦……
+#----------------------------------------------------
+# Various
+PC09B_INTRO3-1=（消毒流程開始……）
+# Various
+PC09B_INTRO3-2=（流程完畢。）
+# Brok
+PC09B_INTRO3-3=速度真快！
+#----------------------------------------------------
+# Brok
+PC09B_INTRO4-1=……
+# Brok
+PC09B_INTRO4-2=唔……我怎麽淪落到這個地步？
+# Brok
+PC09B_INTRO4-3=唉……
+# Brok
+PC09B_INTRO4-4=格拉夫肯定會很失望……
+# Brok
+PC09B_INTRO4-5=！！
+# Brok
+PC09B_INTRO4-6=糟了！展覽會！
+# Brok
+PC09B_INTRO4-7=我要是遲到了他肯定會殺了我的！
+# Brok
+PC09B_INTRO4-8=下午4點……應該還來得及。
+# Brok
+PC09B_INTRO4-9=無論如何都必須趕到！
+# Brok
+PC09B_INTRO4-10=得想辦法離開這個鬼地方！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC09B_BED1-1=現在可沒空休息！
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT1-1=這是什麽？看起來像……
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT1B-1=嗯，很堅固，但我發現了。
+# Brok
+PC09B_DEFECT1B-2=雷射屏障上有個缺口！
+# Brok
+PC09B_DEFECT1B-3=我也不是頭一次見識這東西了。
+# Brok
+PC09B_DEFECT1B-4=幸好這種高科技技術尚未成熟，否則這次就插翅難飛了。
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT2-1=有點牢固，但我應該可以把手伸出去！
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_SINK1-1=哈哈，碰到洗手檯了！
+# Brok
+PC09B_DEFECT_SINK1-2=讓我想想。
+#----------------------------------------------------
+# Sin
+PC09B_DEFECT_TOUCHSINK1-1=（歎氣）你現在是在鬧幾點的？
+# Brok
+PC09B_DEFECT_TOUCHSINK1-2=你看！我可以從這一邊打開它！
+# Sin
+PC09B_DEFECT_TOUCHSINK1-3=打開甚麼？
+# Brok
+PC09B_DEFECT_TOUCHSINK1-4=暗門！就在洗手檯後側！
+# Brok
+PC09B_DEFECT_TOUCHSINK1-5=這可是我們逃出去的機會！
+# Sin
+PC09B_DEFECT_TOUCHSINK1-6=嗯哼……
+# Brok
+PC09B_DEFECT_TOUCHSINK1-7=（摸索中……）
+# Brok
+PC09B_DEFECT_TOUCHSINK1-8=我……我似乎轉開了些什麽……
+# Brok
+PC09B_DEFECT_TOUCHSINK1-9=啊哈！
+# Brok
+PC09B_DEFECT_TOUCHSINK1-10=水漏出來了，太好了！
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_SINK2-1=再試一次。
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_ALREADY-1=沒必要繼續摸索，已經很完美了！
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_RJ-1=RJ把帽子遺留在洗手檯上了。
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_DONE-1=這個缺口暫時沒有用處了。
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_CATFUR_NOSINK1-1=嘿！阿信！
+# Brok
+PC09B_DEFECT_CATFUR_NOSINK1-2=這團貓毛你可以收起來嗎？
+# Sin
+PC09B_DEFECT_CATFUR_NOSINK1-3=為啥？
+# Brok
+PC09B_DEFECT_CATFUR_NOSINK1-4=你拿著就是了，待會我再跟你解釋。
+# Sin
+PC09B_DEFECT_CATFUR_NOSINK1-5=我……選擇拒絕。我現在……一點也不想動。
+# Brok
+PC09B_DEFECT_CATFUR_NOSINK1-6=好吧……我再想別的辦法。
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_CATFUR_NOSINK2-1=把貓毛丟在地上似乎不會有什麽效果……
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_CATFUR_SINK-1=我把貓毛放到洗手檯上了。
+#----------------------------------------------------
+# Brok
+PC09B_DEFECT_CATFUR_HAT-1=搞定。
+# Brok
+PC09B_DEFECT_CATFUR_HAT-2=把貓毛藏在帽子裏！我真是聰明！
+#----------------------------------------------------
+# Brok
+PC09B_FUR1-1=這……毛髮？哪來的？
+# Brok
+PC09B_FUR1-2=哦！我知道了！
+# Brok
+PC09B_FUR1-3=這是洗澡時撿到的！當時毛髮就卡在排水孔中。
+# Brok
+PC09B_FUR1-4=說不定日後能派上用場！
+#----------------------------------------------------
+# Brok
+PC09B_DISTRIBUTOR_GETFOOD-1=噁心……
+#----------------------------------------------------
+# Brok
+PC09B_DISTRIBUTOR_MAX-1=這輩子都不想再吃腐爛的水果了。
+#----------------------------------------------------
+# Brok
+PC09B_SHOWER1-1=乾洗……很討厭這種洗澡方式。
+# Brok
+PC09B_SHOWER1-2=還是真正的淋浴比較爽！
+#----------------------------------------------------
+# Brok
+PC09B_SHOWER2-1=嗯……
+# Brok
+PC09B_SHOWER2-2=沒發現任何能移除的零件，也沒什麽能派上用場的東西。
+#----------------------------------------------------
+# Brok
+PC09B_TOILETS1-1=不行！怎麽可以在陌生人面前上廁所呢！
+# Sin
+PC09B_TOILETS1-2=算了吧。我可沒興趣偷窺你……
+# Brok
+PC09B_TOILETS1-3=我說的不是你！
+#----------------------------------------------------
+# Brok
+PC09B_SINK1-1=行，成功了。
+#----------------------------------------------------
+# Brok
+PC09B_SINK2-1=沒有可以插入的槽位。
+# Brok
+PC09B_SINK2-2=也沒有按鈕什麽的。
+# Brok
+PC09B_SINK2-3=看來洗手檯沒辦法幫我越獄！
+#----------------------------------------------------
+# Brok
+PC09B_SCREEN1-1=我……看不懂這些是什麽意思。
+#----------------------------------------------------
+# Brok
+PC09B_SCREEN2-1=我不懂這些奇怪的符號是什麽意思，他們總不會以為囚犯都有數學學位吧？
+# Brok
+PC09B_SCREEN2-2=格拉夫或者雪伊或許能看明白，可惜我智商不夠。
+# Brok
+PC09B_SCREEN2-3=算了，總會有其他越獄辦法的！
+#----------------------------------------------------
+# Brok
+PC09B_SCREEN_VISITOR1-1=這個計時器……？是給訪客看的？
+# Brok
+PC09B_SCREEN_VISITOR1-2=幸好它卡住不動了，現在的監獄品質已經變爛了！
+#----------------------------------------------------
+# Brok
+PC09B_SCREEN_BOOK1-1=咦，這是“閱讀模式”！
+#----------------------------------------------------
+# Brok
+PC09B_TOUCHPANEL1-1=我賭五元這肯定能打開牢房門！
+# Brok
+PC09B_TOUCHPANEL1-2=可惜面板跟我咫尺天涯！唉……
+#----------------------------------------------------
+# Brok
+PC09B_TOUCHPANEL_FREE1-1=這是幹嘛用的？關閉牢房門嗎……？
+#----------------------------------------------------
+# Brok
+PC09B_TOUCHPANEL_SEAT_YES1-1=我自由了！
+#----------------------------------------------------
+# Brok
+PC09B_TOUCHPANEL_SEAT_NO1-1=不好……！
+#----------------------------------------------------
+# Brok
+PC09B_TOUCHPANEL_SEAT_NO2-1=該死的監視器……！
+#----------------------------------------------------
+# Brok
+PC09B_BREAKCAMERA1-1=搞定一個監視器！
+#----------------------------------------------------
+# Brok
+PC09B_BREAKCAMERA2-1=後會無期！
+#----------------------------------------------------
+# Brok
+PC09B_TOUCHPANEL_SIN-1=我不能！
+#----------------------------------------------------
+# Brok
+PC09B_SEAT1-1=那是訪客的座位。
+# Brok
+PC09B_SEAT1-2=它能夠根據使用者的身材自動調整高度。
+#----------------------------------------------------
+# Brok
+PC09B_CAMERABREAK-1=毫無用處。
+# Brok
+PC09B_CAMERABREAK-2=這椅子沒有那麽強大的衝擊力……不足以破壞掉監視器。
+#----------------------------------------------------
+# Brok
+PC09B_C1FLOAT1-1=我的救命恩人呀！小塑膠盤，我的自由全靠你了！
+#----------------------------------------------------
+# Brok
+PC09B_C1FLOAT2-1=現在沒空坐下來休息！
+#----------------------------------------------------
+# Various
+PC09B_SEAT_NOTDEBUG-1=沒有發現訪客。
+#----------------------------------------------------
+# Brok
+PC09B_SEAT_NOTDEBUG1-1=唔……
+#----------------------------------------------------
+# Brok
+PC09B_SEAT_NOTDEBUG2-1=沒用，根本沒有人會來探望我……
+#----------------------------------------------------
+# Brok
+PC09B_EMERGENCYBUTTON1-1=從這裏碰不到按鈕……
+# Brok
+PC09B_EMERGENCYBUTTON1-2=不過我很好奇這按鈕究竟是幹嘛用的！
+#----------------------------------------------------
+# Brok
+PC09B_EMERGENCYBUTTON_FREE1-1=糟糕！
+#----------------------------------------------------
+# Brok
+PC09B_EMERGENCYBUTTON_FREE1B-1=沒事沒事，應該沒人聽見……
+#----------------------------------------------------
+# Brok
+PC09B_EMERGENCYBUTTON_RJ1-1=啊哦！快躲起來……
+# RJ
+PC09B_EMERGENCYBUTTON_RJ1-2=什麽鬼？！
+# RJ
+PC09B_EMERGENCYBUTTON_RJ1-3=警報器怎麽響起來了？
+# Brok
+PC09B_EMERGENCYBUTTON_RJ1-4=別瞪我呀！我在這啥都做不了！
+# RJ
+PC09B_EMERGENCYBUTTON_RJ1-5=哼……
+#----------------------------------------------------
+# Brok
+PC09B_EMERGENCYBUTTON_RJ2-1=壞了！
+# RJ
+PC09B_EMERGENCYBUTTON_RJ2-2=又來？！
+#----------------------------------------------------
+# Brok
+PC09B_CAMERASEAT_RJ1-1=嗯……
+# RJ
+PC09B_CAMERASEAT_RJ1-2=喂！
+# RJ
+PC09B_CAMERASEAT_RJ1-3=那是什麽聲音？！
+# Brok
+PC09B_CAMERASEAT_RJ1-4=不知道！反正不關我們的事！
+# RJ
+PC09B_CAMERASEAT_RJ1-5=哼。我會盯緊你們的！
+# Brok
+PC09B_CAMERASEAT_RJ1-6=（有什麽東西觸發了警報，是監視器嗎……？）
+#----------------------------------------------------
+# Brok
+PC09B_CAMERASEAT_RJ2-1=……
+# RJ
+PC09B_CAMERASEAT_RJ2-2=這又是什麽聲音？！
+# Brok
+PC09B_CAMERASEAT_RJ2-3=不知道，也許是微波爐的聲音？
+# RJ
+PC09B_CAMERASEAT_RJ2-4=……哦對！我在煮咖啡。
+# Brok
+PC09B_CAMERASEAT_RJ2-5=（可惡的監視器……）
+#----------------------------------------------------
+# Brok
+PC09B_CAMERASEAT_RJ3-1=……
+# RJ
+PC09B_CAMERASEAT_RJ3-2=啊！到底有完沒完？！
+# Brok
+PC09B_CAMERASEAT_RJ3-3=我甚麼都沒動喔！
+# RJ
+PC09B_CAMERASEAT_RJ3-4=……
+# Brok
+PC09B_CAMERASEAT_RJ3-5=（這樣不行，只要警衛在附近，我的一舉一動他都能聽見……）
+#----------------------------------------------------
+# Brok
+PC09B_BOXES1-1=我的財物都被鎖在左上方的那堆箱子裏……
+# Brok
+PC09B_BOXES1-2=旁邊那個箱子也是，不然可裝不下我那麽多東西。
+#----------------------------------------------------
+# Brok
+PC09B_BOXES_FREE1-1=得想辦法取回來！
+#----------------------------------------------------
+# Brok
+PC09B_BOXES_FREEAFTER-1=哇……他們把槍支和其他什麽的都扣押了。
+#----------------------------------------------------
+# Brok
+PC09B_BOXES_FREE2-1=要是當著阿信的面把他的財物偷走，他肯定會不高興……
+#----------------------------------------------------
+# Brok
+PC09B_EXIT1-1=似乎是唯一的出口。
+#----------------------------------------------------
+# Brok
+PC09B_EXITNOTYET-1=不過得先把我的物品取回來！
+#----------------------------------------------------
+# Brok
+PC09B_EXITNOTYET2-1=得去跟阿信談談。
+#----------------------------------------------------
+# Various
+PC09B_BOOK_DEBUG1-1=文件損壞。
+# Brok
+PC09B_BOOK_DEBUG1-2=什麽……？
+#----------------------------------------------------
+# Various
+PC09B_BOOK_DEBUG2-1=文件損壞。
+#----------------------------------------------------
+# Brok
+PC09B_BOOK_AD-1=哇，好酷的電子廣告！
+#----------------------------------------------------
+# Various
+PC09B_BOOK_DOWNLOAD-1=書籍下載服務已終止。
+# Various
+PC09B_BOOK_DOWNLOAD-2=囚犯已無法從書店添購書籍。
+# Various
+PC09B_BOOK_DOWNLOAD-3=不過目前已添購的書籍依然可供閱覽，直到……
+# Various
+PC09B_BOOK_DOWNLOAD-4=……閱覽服務終止。
+# Various
+PC09B_BOOK_DOWNLOAD-5=我們由衷地感謝接受過我們服務的忠實用戶！
+#----------------------------------------------------
+# Various
+PC09B_BOOK_NOTUPDATED1-1=設備韌體版本過舊。
+# Various
+PC09B_BOOK_NOTUPDATED1-2=請更新後閱讀未完部分。
+# Various
+PC09B_BOOK_NOTUPDATED1-3=是否立刻更新？
+#----------------------------------------------------
+# Brok
+PC09B_BOOK_UPDATE_YES-1=是是是！快點！
+# Various
+PC09B_BOOK_UPDATE_YES-2=更新中……
+#----------------------------------------------------
+# Brok
+PC09B_BOOK_UPDATE_LATER-1=沒時間耗下去了！
+# Various
+PC09B_BOOK_UPDATE_LATER-2=沒問題，如您所願。更新動作已延遲。
+# Various
+PC09B_BOOK_UPDATE_LATER-3=30秒後將自動更新。
+# Brok
+PC09B_BOOK_UPDATE_LATER-4=啊！
+# Various
+PC09B_BOOK_UPDATE_LATER-5=等待同時，請享受這首歌曲。
+# Brok
+PC09B_BOOK_UPDATE_LATER-6=不錯，這監獄服務非常周到。
+# Various
+PC09B_BOOK_UPDATE_LATER-7=……
+# Brok
+PC09B_BOOK_UPDATE_LATER-8=唉……正在分秒必爭的我……此時此刻卻在聽音樂。
+# Various
+PC09B_BOOK_UPDATE_LATER-9=……
+# Various
+PC09B_BOOK_UPDATE_LATER-10=恢復更新。
+#----------------------------------------------------
+# Unknown
+PC09B_BOOK_READ1-1=第1頁——友善提醒，為減輕我們的工作以及提高您的提前出獄機會，建議您保持良好的品行。
+#----------------------------------------------------
+# Unknown
+PC09B_BOOK_READ2-1=尤其是以下的重點：1——隨時保持冷靜；2——想自盡的話請避免使用雷射屏障，因為屍塊有可能會卡在屏障上而徒勞增添後續的清理工作；3——請不要在廁所以外的區域大小便。
+#----------------------------------------------------
+# Various
+PC09B_BOOK_UPDATEFAILED-1=更新失敗。錯誤代碼0X85441253——未知錯誤。
+# Various
+PC09B_BOOK_UPDATEFAILED-2=即將重啓系統還原出廠設定……
+#----------------------------------------------------
+# Brok
+PC09B_BOOK_UPDATEFAILED_BROK-1=你是在耍我嗎……
+#----------------------------------------------------
+# Various
+PC09B_FLOOR_DEBUG1-1=已啓調式模式。
+# Brok
+PC09B_FLOOR_DEBUG1-2=這聲音……什麽情況……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Sin who is in the next cell, totally in low spirits
+# *****************************************************************
+# Brok
+PC09B_SIN_WELCOME1-1=喂，阿信！
+# Brok
+PC09B_SIN_WELCOME1-2=你還好嗎？
+# Sin
+PC09B_SIN_WELCOME1-3=……
+# Brok
+PC09B_SIN_WELCOME1-4=唉，我知道……這裏的生活不容易。
+# Brok
+PC09B_SIN_WELCOME1-5=不過……我相信一切都會好起來的。
+# Brok
+PC09B_SIN_WELCOME1-6=我們一定能逃出去的！你等著瞧吧！
+# Sin
+PC09B_SIN_WELCOME1-7=……我很累，別煩我。
+# Brok
+PC09B_SIN_WELCOME1-8=唉……
+#----------------------------------------------------
+# Brok
+PC09B_SIN_WELCOME2-1=聊聊好嗎？
+#----------------------------------------------------
+# Brok
+PC09B_SIN_WELCOME3-1=我需要你的幫助。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF_FORGIVE1-1=兄弟……之前的事我很抱歉……
+# Sin
+PC09B_SIN_HIMSELF_FORGIVE1-2=之前……？
+# Sin
+PC09B_SIN_HIMSELF_FORGIVE1-3=你道什麽歉？那都是我咎由自取的。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF_DENOUNCE1-1=那個……
+# Sin
+PC09B_SIN_HIMSELF_DENOUNCE1-2=別說了。
+# Sin
+PC09B_SIN_HIMSELF_DENOUNCE1-3=我知道你想說什麽……
+#----------------------------------------------------
+# Sin
+PC09B_SIN_HIMSELF1B-1=是我連累了你……還試圖襲擊你……
+# Sin
+PC09B_SIN_HIMSELF1B-2=我試圖搶劫藥店的昂貴藥丸，結果失手了……
+# Sin
+PC09B_SIN_HIMSELF1B-3=我欺騙了我的老朋友RJ而且試圖對自己的妻子下藥……
+# Brok
+PC09B_SIN_HIMSELF1B-4=可是你這麽做都是為了他們。
+# Sin
+PC09B_SIN_HIMSELF1B-5=不是。
+# Sin
+PC09B_SIN_HIMSELF1B-6=我是為了我自己，我太自私了。
+# Sin
+PC09B_SIN_HIMSELF1B-7=而現在該是我付出代價的時候了。
+# Sin
+PC09B_SIN_HIMSELF1B-8=三角議會該判我死刑才對。
+# Brok
+PC09B_SIN_HIMSELF1B-9=三角議會……？
+# Sin
+PC09B_SIN_HIMSELF1B-10=嗯，就是負責裁決囚犯命運的政府機構。
+# Brok
+PC09B_SIN_HIMSELF1B-11=韋斯說過那是由人工智慧來決定的。
+# Sin
+PC09B_SIN_HIMSELF1B-12=不……人工智慧來是負責調查案件，而最終審判是由三角議會來裁決的。
+# Sin
+PC09B_SIN_HIMSELF1B-13=有那麽多的物證存在……我是注定完蛋了。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF_FORGIVE2-1=我不信，我覺得你是個好人。
+# Sin
+PC09B_SIN_HIMSELF_FORGIVE2-2=你錯了……
+# Sin
+PC09B_SIN_HIMSELF_FORGIVE2-3=你不會明白的……你我是兩個世界的人。
+# Brok
+PC09B_SIN_HIMSELF_FORGIVE2-4=對……也許我更差勁呢。
+# Sin
+PC09B_SIN_HIMSELF_FORGIVE2-5=啊？
+# Brok
+PC09B_SIN_HIMSELF_FORGIVE2-6=沒什麽。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF_DENOUNCE2-1=……
+# Brok
+PC09B_SIN_HIMSELF_DENOUNCE2-2=（嗯……他或許說得對……）
+# Brok
+PC09B_SIN_HIMSELF_DENOUNCE2-3=（這都是他的錯……）
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF2-1=是否真的該繼續……
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-1=聽著，大道理我不懂……
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-2=但是我的個人經歷教會了我一件事……那就是只記住美好的回憶。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-3=沒錯，生活的確憂多過喜。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-4=但你可以選擇消沈……也可以選擇振作！
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-5=為美好的日子奮鬥。不僅僅是為你自己，也為你身邊的人。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-6=你至少該有一次改過自新的機會。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-7=總之……別做什麽傻事。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-8=你還有個女兒在等著你呢。
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-9=……
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-10=我希望你能答應我。
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-11=甚麼？
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-12=答應我你不會做傻事。
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-13=我……
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-14=唉……懂了。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-15=大聲點！大聲說出來！
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-16=啊啊！！你能不能別煩我？！
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-17=你捫心自問！
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-18=你真想在這個地方結束一生嗎！
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-19=對！
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-20=……
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-21=不……
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-22=你…你說得有理。
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-23=我想再見我女兒……哪怕就一次……
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-24=那麽！你該怎麽做？
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-25=我要……振作。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-26=大聲點！
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-27=我要振作！
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-28=非常好！
+# Sin
+PC09B_SIN_HIMSELF2_CHEER1-29=不過……我還要點時間。
+# Brok
+PC09B_SIN_HIMSELF2_CHEER1-30=沒問題。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF2_DONTINSIST-1=還是算了，說不定會弄巧成拙。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HIMSELF3-1=還是別打擾他。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ1-1=RJ是誰？
+# Sin
+PC09B_SIN_RJ1-2=就是那邊那位守衛。
+# Brok
+PC09B_SIN_RJ1-3=哦……
+# Sin
+PC09B_SIN_RJ1-4=他雖然有點少根筋，但他是我的朋友，然而我卻利用了他。
+# Brok
+PC09B_SIN_RJ1-5=那麽他……沒記恨你嗎？
+# Sin
+PC09B_SIN_RJ1-6=你覺得呢？是他把我狠狠地甩進牢房裏的。
+# Sin
+PC09B_SIN_RJ1-7=他說我害他差點被警隊開除。
+# Brok
+PC09B_SIN_RJ1-8=好吧……
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ2-1=嗯……那他現在很恨你。
+# Brok
+PC09B_SIN_RJ2-2=但我的越獄計劃用得上他，你可以幫忙嗎？
+# Sin
+PC09B_SIN_RJ2-3=我不明白你的意思……
+# Brok
+PC09B_SIN_RJ2-4=到時候幫我叫他過來就行。
+# Sin
+PC09B_SIN_RJ2-5=好吧……隨便你。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ3-1=（他答應在必要時會呼叫RJ，那就足夠了。）
+#----------------------------------------------------
+# Brok
+PC09B_SIN_THINK_FORGIVE-1=（是他把我害成這樣子的……而且還不付酬勞，我可能還會因此缺席格拉夫的展覽會！）
+# Brok
+PC09B_SIN_THINK_FORGIVE-2=（但不知為何……我就是恨不起來。）
+#----------------------------------------------------
+# Brok
+PC09B_SIN_THINK_DENOUNCE-1=（他是個懦夫……）
+# Brok
+PC09B_SIN_THINK_DENOUNCE-2=（不過那是他自己的事，也許他能幫助我逃出去……？）
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL1-1=你之前說過很慚愧連累了我。
+# Sin
+PC09B_SIN_PANEL1-2=是的……
+# Brok
+PC09B_SIN_PANEL1-3=那麽……你能幫我個忙嗎？
+# Brok
+PC09B_SIN_PANEL1-4=你可以按下面板上的某個按鈕嗎？
+# Sin
+PC09B_SIN_PANEL1-5=為啥？
+# Brok
+PC09B_SIN_PANEL1-6=只是有點好奇。
+# Sin
+PC09B_SIN_PANEL1-7=隨你吧……要按哪個按鈕？
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL2-1=你可以再按一個按鈕嗎？
+# Sin
+PC09B_SIN_PANEL2-2=反正我閒得很。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL3-1=你能……
+# Sin
+PC09B_SIN_PANEL3-2=嗯。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL_BUTTON1-1=第一個按鈕。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL_BUTTON2-1=第二個按鈕？
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL_BUTTON3-1=第三個按鈕？
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL_BUTTON4-1=第四個按鈕！
+# Sin
+PC09B_SIN_PANEL_BUTTON4-2=呼叫RJ？我不想……好吧好吧。
+# Sin
+PC09B_SIN_PANEL_BUTTON4-3=那我該跟他說什麽？
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL_BUTTON4NOPE-1=第四個按鈕！
+# Sin
+PC09B_SIN_PANEL_BUTTON4NOPE-2=呼叫RJ？
+# Sin
+PC09B_SIN_PANEL_BUTTON4NOPE-3=抱歉，我不想這樣做。
+#----------------------------------------------------
+# Sin
+PC09B_SWITCH_ALREADY-1=已經是這個模式了。
+# Brok
+PC09B_SWITCH_ALREADY-2=哦……對哦。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_PANEL_EXIT-1=我也不太確定了。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ_CONVINCE1-1=你們曾經是好友，那你可以說服他放我出去嗎？
+# Sin
+PC09B_SIN_RJ_CONVINCE1-2=不可能！他現在都對我恨之入骨了！
+# Brok
+PC09B_SIN_RJ_CONVINCE1-3=試試無妨嘛！
+# Sin
+PC09B_SIN_RJ_CONVINCE1-4=唉……好吧……
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ_CONVINCE2-1=（我不能再提出這種要求了……否則只會弄巧成拙。）
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ_SICK1-1=假裝生病！然後趁機偷襲他！
+# Sin
+PC09B_SIN_RJ_SICK1-2=怎麽可能……看我現在這個狀態……
+# Brok
+PC09B_SIN_RJ_SICK1-3=要的就是這個狀態！這樣更有說服力！
+# Sin
+PC09B_SIN_RJ_SICK1-4=唉……抱歉……我做不到。
+# Brok
+PC09B_SIN_RJ_SICK1-5=那算了，我再想別的辦法。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ_SICK2-1=（他拒絕了……）
+#----------------------------------------------------
+# Brok
+PC09B_SIN_C2_RJ_EXIT-1=不清楚……
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ_SINK1-1=跟他說你的洗手檯壞了。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ_SINK2-1=洗手檯。
+#----------------------------------------------------
+# Sin
+PC09B_SIN_RJ_SINK_NO1-1=真的壞了嗎？
+# Brok
+PC09B_SIN_RJ_SINK_NO1-2=假的，只是吸引他的注意力。
+#----------------------------------------------------
+# Sin
+PC09B_SIN_RJ_SINK_BROKEN1-1=啊……所以剛才你在洗手檯那裏動過手腳。
+# Brok
+PC09B_SIN_RJ_SINK_BROKEN1-2=對的！
+#----------------------------------------------------
+# Sin
+PC09B_SIN_RJ_SINK_AGAIN1-1=還來？好吧……
+#----------------------------------------------------
+# Sin
+PC09B_SIN_RJ_SINK_ACTIVATE1-1=既然如此……那我先去打開水龍頭。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJBUSY-1=嘿，趁他不注意……
+# RJ
+PC09B_SIN_RJBUSY-2=不准聊天。
+# Brok
+PC09B_SIN_RJBUSY-3=哼……
+#----------------------------------------------------
+# RJ
+#R.J. is angry at Sin.
+PC09B_C2_RJ1-1=開什麽玩笑！
+# RJ
+PC09B_C2_RJ1-2=我說得不夠清楚嗎？我不想再跟你說話！
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ2-1=啥？！
+#----------------------------------------------------
+# Sin
+PC09B_C2_RJ_CONVINCE-1=我明白……我是做了很多過分的事……
+# Sin
+PC09B_C2_RJ_CONVINCE-2=你埋怨我也是理所應當。
+# Sin
+PC09B_C2_RJ_CONVINCE-3=但是旁邊牢房裏的這位偵探……他不該被關在這裏。
+# Sin
+PC09B_C2_RJ_CONVINCE-4=我才是真正的罪犯，所有的罪名我都認了。
+# Sin
+PC09B_C2_RJ_CONVINCE-5=看在相識一場的友情上……求求你……
+# Sin
+PC09B_C2_RJ_CONVINCE-6=放他出去吧！
+# RJ
+PC09B_C2_RJ_CONVINCE-7=……
+# RJ
+PC09B_C2_RJ_CONVINCE-8=仔細看我的嘴型。
+# RJ
+PC09B_C2_RJ_CONVINCE-9=別想！
+# Sin
+PC09B_C2_RJ_CONVINCE-10=……
+# Sin
+PC09B_C2_RJ_CONVINCE-11=抱歉……我努力過了。
+# Brok
+PC09B_C2_RJ_CONVINCE-12=沒事沒事，我們另想辦法！
+#----------------------------------------------------
+# Sin
+PC09B_C2_RJ_SINK-1=我的洗手檯壞了！你可以來檢查下嗎？
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SINKNOTBROKEN-1=不要，根本沒壞。
+# Sin
+PC09B_C2_RJ_SINKNOTBROKEN-2=你確定嗎？我發誓……
+# RJ
+PC09B_C2_RJ_SINKNOTBROKEN-3=我的視力好得很！那洗手檯好好的根本沒問題！
+# RJ
+PC09B_C2_RJ_SINKNOTBROKEN-4=你去給自己換一雙新的眼睛吧！
+# Sin
+PC09B_C2_RJ_SINKNOTBROKEN-5=……
+# Brok
+PC09B_C2_RJ_SINKNOTBROKEN-6=得弄得更顯眼些才行……
+# Sin
+PC09B_C2_RJ_SINKNOTBROKEN-7=下次再說吧。我困了……
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SINKBROKEN1-1=你休想再用這個借口詐我！
+# Sin
+PC09B_C2_RJ_SINKBROKEN1-2=是真的！你自己看！
+# RJ
+PC09B_C2_RJ_SINKBROKEN1-3=……呃哦。
+# RJ
+PC09B_C2_RJ_SINKBROKEN1-4=要是被老大看見……那就麻煩大了！
+# RJ
+PC09B_C2_RJ_SINKBROKEN1-5=好吧！我進去修一下。
+# RJ
+PC09B_C2_RJ_SINKBROKEN1-6=你們都給我待在原地別動。
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SINKBROKEN2-1=這不可能！是不是你動過手腳？！
+# Sin
+PC09B_C2_RJ_SINKBROKEN2-2=沒有！我啥都沒動過。
+# RJ
+PC09B_C2_RJ_SINKBROKEN2-3=哼……
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SNEEZE1-1=阿嚏！
+# RJ
+PC09B_C2_RJ_SNEEZE1-2=咦？！哪來的貓？
+# Sin
+PC09B_C2_RJ_SNEEZE1-3=貓？
+# RJ
+PC09B_C2_RJ_SNEEZE1-4=別裝蒜！
+# Sin
+PC09B_C2_RJ_SNEEZE1-5=我是袋鼠不是貓啊！你又不是不知道。
+# RJ
+PC09B_C2_RJ_SNEEZE1-6=奇怪……
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SNEEZE2-1=阿嚏！
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SINKREPAIR1-1=搞定！修好了。
+# Sin
+PC09B_C2_RJ_SINKREPAIR1-2=噢……很棒。
+# RJ
+PC09B_C2_RJ_SINKREPAIR1-3=沒事別再煩我！
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SNEEZEFULL-1=耶！洗手檯修……
+# RJ
+PC09B_C2_RJ_SNEEZEFULL-2=阿嚏！
+# RJ
+PC09B_C2_RJ_SNEEZEFULL-3=怎麽……阿嚏！
+# Sin
+PC09B_C2_RJ_SNEEZEFULL-4=啥？
+# RJ
+PC09B_C2_RJ_SNEEZEFULL-5=我……阿嚏！頭……好……暈……
+# RJ
+PC09B_C2_RJ_SNEEZEFULL-6=阿…阿嚏！
+#----------------------------------------------------
+# Sin
+PC09B_C2_RJ_SNEEZEFULL2-1=怎麽……？
+# Brok
+PC09B_C2_RJ_SNEEZEFULL2-2=抓緊時間！走！
+# Sin
+PC09B_C2_RJ_SNEEZEFULL2-3=可是……
+# RJ
+PC09B_C2_RJ_SNEEZEFULL2-4=不准走……！警報！
+#----------------------------------------------------
+# RJ
+PC09B_C2_RJ_SNEEZEFULL3-1=呃……
+# Sin
+PC09B_C2_RJ_SNEEZEFULL3-2=屏障……恢復了。
+# Brok
+PC09B_C2_RJ_SNEEZEFULL3-3=這下可好，白忙一場。
+# Sin
+PC09B_C2_RJ_SNEEZEFULL3-4=唉……現在麻煩更大了。
+# Brok
+PC09B_C2_RJ_SNEEZEFULL3-5=（至少看守人昏迷了。算是好事吧？）
+#----------------------------------------------------
+# Brok
+PC09B_SIN_RJ_EXIT-1=算了。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_EXIT1-1=你待在這裏。
+# Sin
+PC09B_SIN_EXIT1-2=說得好像我有其他選擇一般……
+#----------------------------------------------------
+# Brok
+PC09B_SIN_EXIT2-1=等一下。需要用到你時我會叫你的。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_EXIT3-1=振作點。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_INV_DEFAULT-1=嗯……沒用。
+#----------------------------------------------------
+# Brok
+PC09B_SIN_INV_CATFUR-1=咦，你看！這是貓毛！
+# Brok
+PC09B_SIN_INV_CATFUR-2=這東西可以救我們出去！
+# Sin
+PC09B_SIN_INV_CATFUR-3=切，這傢伙腦子出問題了。
+# Brok
+PC09B_SIN_INV_CATFUR-4=哼，你等著看吧！
+#----------------------------------------------------
+# Brok
+#This happens when we have escaped and try to free Sin
+PC09B_SIN_HASESCAPED1-1=等一等！
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HASESCAPED_OPEN1-1=出來吧！門打開了！
+# Sin
+PC09B_SIN_HASESCAPED_OPEN1-2=不了……
+# Brok
+PC09B_SIN_HASESCAPED_OPEN1-3=甚麼？
+# Sin
+PC09B_SIN_HASESCAPED_OPEN1-4=我必須留下來。
+# Sin
+PC09B_SIN_HASESCAPED_OPEN1-5=為自己的過失贖罪……
+# Brok
+PC09B_SIN_HASESCAPED_OPEN1-6=可……可是……！
+# Sin
+PC09B_SIN_HASESCAPED_OPEN1-7=你沒有犯什麽罪。
+# Sin
+PC09B_SIN_HASESCAPED_OPEN1-8=但我就不同……越獄的話我就成了逃犯。
+# Brok
+PC09B_SIN_HASESCAPED_OPEN1-9=……
+# Sin
+PC09B_SIN_HASESCAPED_OPEN1-10=你還待在這裏幹嘛？快走啊！
+# Brok
+PC09B_SIN_HASESCAPED_OPEN1-11=好……但是我會回來探望你的。
+# Sin
+PC09B_SIN_HASESCAPED_OPEN1-12=好，注意安全。
+# Brok
+PC09B_SIN_HASESCAPED_OPEN1-13=一定！
+#----------------------------------------------------
+# Brok
+PC09B_SIN_HASESCAPED_OPEN2-1=他選擇留下來……
+#----------------------------------------------------
+# Sin
+PC09B_SIN_HASESCAPED_HIT-1=喂！打我也沒用！我不會改變主意的！
+# Brok
+PC09B_SIN_HASESCAPED_HIT-2=呃……抱歉。
+#----------------------------------------------------
+# Brok
+#Search in the meaning of "search through his body for anything interesting"
+PC09B_SIN_RJDOWN-1=你可以搜下RJ的身嗎？
+# Sin
+PC09B_SIN_RJDOWN-2=幹嘛？
+# Brok
+PC09B_SIN_RJDOWN-3=他身上可能帶有鑰匙或者槍械什麽的！
+# Sin
+PC09B_SIN_RJDOWN-4=我不想碰他……我已經很對不起他了。
+# Brok
+PC09B_SIN_RJDOWN-5=抱歉……是我欠考慮了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting furtinure to trick R.J.
+# *****************************************************************
+# RJ
+PC09B_HIT_COME1-1=喂！你在幹嘛？
+# RJ
+PC09B_HIT_COME1-2=快住手！
+#----------------------------------------------------
+# RJ
+PC09B_HIT_COME2-1=你聾了？！住手！別逼我揍你！
+#----------------------------------------------------
+# RJ
+#The spelling mistake is on purpose.
+PC09B_HIT_COME3-1=最後一次警告！別砸壞渣具！
+# Brok
+PC09B_HIT_COME3-2=是家具，你個白癡！
+#----------------------------------------------------
+# RJ
+PC09B_HIT_COME4-1=最後一次警告！
+# Brok
+PC09B_HIT_COME4-2=你之前已經“最後一次”過了！老糊塗了？
+#----------------------------------------------------
+# RJ
+PC09B_HIT_COME5-1=可惡！你這次死定了！
+#----------------------------------------------------
+# RJ
+PC09B_HIT_COME5B-1=監視器已關閉，來吧！
+#----------------------------------------------------
+# RJ
+PC09B_RJ_GAMEOVER1-1=該死的鱷魚人！
+# RJ
+PC09B_RJ_GAMEOVER1-2=咬斷你的脖子！你這個白癡！
+# RJ
+PC09B_RJ_GAMEOVER1-3=……
+# RJ
+PC09B_RJ_GAMEOVER1-4=哦……不……
+#----------------------------------------------------
+# RJ
+PC09B_ALARM_ROBOTS-1=你想打架是嗎？我已經叫了幫手！
+#----------------------------------------------------
+# Sin
+#Winning that fight
+PC09B_ALARM_ROBOTSEND-1=你在做什麽？！
+# Sin
+PC09B_ALARM_ROBOTSEND-2=所有人都聽見警報了！你不可能逃脫的！
+# Brok
+PC09B_ALARM_ROBOTSEND-3=管他呢！反正無論如何我都必須出去！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to hit R.J. from inside the cell
+# *****************************************************************
+# RJ
+PC09B_HURT_GUARD1-1=哈哈！笨蛋！你根本碰不到我。
+#----------------------------------------------------
+# RJ
+PC09B_HURT_GUARD2-1=你之前居然還說我腦子不好？！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talk to R.J.
+# *****************************************************************
+# RJ
+PC09B_RJ1-1=怎麽啦？
+#----------------------------------------------------
+# RJ
+PC09B_RJ2-1=啥？
+#----------------------------------------------------
+# Brok
+PC09B_RJ_CALL1-1=我得打個電話！
+# RJ
+PC09B_RJ_CALL1-2=想都別想。
+# Brok
+PC09B_RJ_CALL1-3=真的！我有急事！
+# RJ
+PC09B_RJ_CALL1-4=老大說要把你關一晚上。
+# RJ
+PC09B_RJ_CALL1-5=天亮了才放你離開。
+# Brok
+PC09B_RJ_CALL1-6=你聽我說！我等不了那麽久！我必須通知……
+# RJ
+PC09B_RJ_CALL1-7=不准。
+# Brok
+PC09B_RJ_CALL1-8=哼！
+#----------------------------------------------------
+# Brok
+PC09B_RJ_CALL2-1=那至少讓我發個簡訊吧？我兒子肯定擔心死了！
+# RJ
+PC09B_RJ_CALL2-2=不准。
+# Brok
+PC09B_RJ_CALL2-3=算我求你了！拜托拜托！
+# RJ
+PC09B_RJ_CALL2-4=不准。
+# Brok
+PC09B_RJ_CALL2-5=你不用告訴你老大的！就當是你我之間的小秘密！
+# RJ
+PC09B_RJ_CALL2-6=不准。
+# Brok
+PC09B_RJ_CALL2-7=究竟要我求你多少遍？
+# RJ
+PC09B_RJ_CALL2-8=究竟要我拒絕多少遍？！
+# Brok
+PC09B_RJ_CALL2-9=浪費我的時間……
+#----------------------------------------------------
+# Brok
+PC09B_RJ_CALL3-1=以我的智慧也說服不了他……
+# Brok
+PC09B_RJ_CALL3-2=恐怕得另想他法了。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_SICK1-1=我……渾身不舒服……
+# RJ
+PC09B_RJ_SICK1-2=關我屁事？
+# Brok
+PC09B_RJ_SICK1-3=別，等一下……我不行了……痛死我了！！
+# Brok
+PC09B_RJ_SICK1-4=……
+# Brok
+PC09B_RJ_SICK1-5=……
+# Brok
+PC09B_RJ_SICK1-6=或許流著眼淚會比較有說服力？
+#----------------------------------------------------
+# Brok
+PC09B_RJ_SICK2-1=啊……我感覺……嘔——
+# RJ
+PC09B_RJ_SICK2-2=又來？！
+# RJ
+PC09B_RJ_SICK2-3=很多人都試過這一招，我可不會再上當的。
+# Brok
+PC09B_RJ_SICK2-4=（倒在地上）
+# RJ
+PC09B_RJ_SICK2-5=別裝了！
+# Brok
+PC09B_RJ_SICK2-6=……
+# RJ
+PC09B_RJ_SICK2-7=我還能聽見你的呼吸聲呢！
+# Brok
+PC09B_RJ_SICK2-8=才沒有！
+# Brok
+PC09B_RJ_SICK2-9=……
+#----------------------------------------------------
+# Brok
+PC09B_RJ_SICK2B-1=有機會必須去上上表演課了。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_SICK3-1=不行……這樣只是丟人現眼。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_GIVE1-1=有些東西要送你！
+# RJ
+PC09B_RJ_GIVE1-2=喲？是什麽？我最愛收禮物了！
+# Brok
+PC09B_RJ_GIVE1-3=你過來我給你看！
+# RJ
+PC09B_RJ_GIVE1-4=好耶！
+# RJ
+PC09B_RJ_GIVE1-5=……
+# RJ
+PC09B_RJ_GIVE1-6=別想！老大說過沒必要的話不可以打開牢門！
+# Brok
+PC09B_RJ_GIVE1-7=可是打開牢門才能收禮物，你說有沒有必要？
+# RJ
+PC09B_RJ_GIVE1-8=對哦……？呃，不對！
+# RJ
+PC09B_RJ_GIVE1-9=閉嘴！差點就把我給騙了！
+# Brok
+PC09B_RJ_GIVE1-10=可惡！差點就成功了！
+#----------------------------------------------------
+# Brok
+PC09B_RJ_GIVE2-1=嘖……他上不了當。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_THINK1-1=（表面上看起來是傻大熊……但也不是那麽好騙的。）
+#----------------------------------------------------
+# Brok
+PC09B_RJ_EXIT1-1=我……我忘了為什麽要喊你……
+# RJ
+PC09B_RJ_EXIT1-2=別再浪費我時間！
+# Brok
+PC09B_RJ_EXIT1-3=非常抱歉！
+#----------------------------------------------------
+# Brok
+PC09B_RJ_INV_DEFAULT-1=還是算了……
+#----------------------------------------------------
+# Brok
+PC09B_RJ_INV_CATFUR-1=好吧，不耍你了。
+# Brok
+PC09B_RJ_INV_CATFUR-2=你過來我就送你這團超級柔軟的貓毛！
+# RJ
+PC09B_RJ_INV_CATFUR-3=啊！離我遠一點！！
+# Brok
+PC09B_RJ_INV_CATFUR-4=……本來就離你很遠了。
+# RJ
+PC09B_RJ_INV_CATFUR-5=阿嚏！再遠一點！
+# Brok
+PC09B_RJ_INV_CATFUR-6=……唔。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_INSULT1-1=喂，傻大熊！你是白癡！
+# RJ
+PC09B_RJ_INSULT1-2=你罵我母親？！
+# Brok
+PC09B_RJ_INSULT1-3=啥？我沒說你母……
+# RJ
+PC09B_RJ_INSULT1-4=你給我過來！我要教訓你！
+# Brok
+PC09B_RJ_INSULT1-5=……你不開門我怎麽過去，笨蛋。
+# RJ
+PC09B_RJ_INSULT1-6=哦……對哦！那就……
+# RJ
+PC09B_RJ_INSULT1-7=算了。
+# Brok
+PC09B_RJ_INSULT1-8=啥？！喂！你過來開門啊！
+# Brok
+PC09B_RJ_INSULT1-9=這……跟我的設想有很大出入。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_INSULT2-1=你的屁股可以塞下你兩個腦袋！
+# RJ
+PC09B_RJ_INSULT2-2=知道。
+# Brok
+PC09B_RJ_INSULT2-3=呃……
+# Brok
+PC09B_RJ_INSULT2-4=你肯定是誕生在高速公路上，因為你的存在就是一場意外！
+# RJ
+PC09B_RJ_INSULT2-5=的確。
+# Brok
+PC09B_RJ_INSULT2-6=啥……？
+# Brok
+PC09B_RJ_INSULT2-7=再度失敗了。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_INSULT3-1=（罵人這種事我不擅長，已經耗盡了我有限的髒話詞彙……）
+#----------------------------------------------------
+# Brok
+PC09B_RJ_REPAIR1-1=我的洗手檯出問題了！
+#----------------------------------------------------
+# Brok
+PC09B_RJ_REPAIR2-1=我的洗手檯呀！你死得好慘呀！
+#----------------------------------------------------
+# RJ
+PC09B_RJ_REPAIRNOSINK1-1=真是的，哪個洗手檯？
+# Brok
+PC09B_RJ_REPAIRNOSINK1-2=咦，稍等下……我按錯按鍵……
+# Brok
+PC09B_RJ_REPAIRNOSINK1-3=等一下啊喂……
+# RJ
+PC09B_RJ_REPAIRNOSINK1-4=哼。
+#----------------------------------------------------
+# RJ
+PC09B_RJ_SINKNOTDAMAGED1-1=沒什麽問題啊。
+# Brok
+PC09B_RJ_SINKNOTDAMAGED1-2=有啊，你看！水都流出來了！
+# Brok
+PC09B_RJ_SINKNOTDAMAGED1-3=你近點看！
+# RJ
+PC09B_RJ_SINKNOTDAMAGED1-4=不急，明天再修。
+# Brok
+PC09B_RJ_SINKNOTDAMAGED1-5=等等……！
+# Brok
+PC09B_RJ_SINKNOTDAMAGED1-6=看來他是那種眼見為憑的人……
+#----------------------------------------------------
+# RJ
+PC09B_RJ_SINKDAMAGED1-1=那是當然，因為我看見是你把它砸壞的！
+# Brok
+PC09B_RJ_SINKDAMAGED1-2=你誤會了！我是在嘗試修好它！
+# RJ
+PC09B_RJ_SINKDAMAGED1-3=沒關係，反正最後也沒壞。
+# Brok
+PC09B_RJ_SINKDAMAGED1-4=可是真的壞了……！
+# Brok
+PC09B_RJ_SINKDAMAGED1-5=可惡……這麽用力也砸不壞！
+# Brok
+PC09B_RJ_SINKDAMAGED1-6=得採取其它他方法了。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_LASERS1-1=我打你十之八九完全不懂牢房的安防措施！
+# RJ
+PC09B_RJ_LASERS1-2=我當然懂！
+# RJ
+PC09B_RJ_LASERS1-3=那道雷射屏障是高科技產物。
+# RJ
+PC09B_RJ_LASERS1-4=什麽東西都穿不透！包括牙刷在內！
+# Brok
+PC09B_RJ_LASERS1-5=那麽這監視器是幹嘛用的？是你用來偷窺我們的嗎？
+# RJ
+PC09B_RJ_LASERS1-6=切！才不需要！
+# RJ
+PC09B_RJ_LASERS1-7=看見我的耳朵沒？要是你敢打什麽壞主意……
+# RJ
+PC09B_RJ_LASERS1-8=我離得再遠都聽見。
+# Brok
+PC09B_RJ_LASERS1-9=那監視器是幹嘛用的？
+# RJ
+PC09B_RJ_LASERS1-10=用來掃描你們的身體的。
+# RJ
+PC09B_RJ_LASERS1-11=監視器要是探測到你們試圖離開牢房的話……
+# RJ
+PC09B_RJ_LASERS1-12=噹噹噹！警報就會響起。
+# Brok
+PC09B_RJ_LASERS1-13=那好吧……那如果……
+# Brok
+PC09B_RJ_LASERS1-14=監視器的連接中斷了呢？
+# RJ
+PC09B_RJ_LASERS1-15=切！那不是還有屏障在嗎，笨蛋！
+# RJ
+PC09B_RJ_LASERS1-16=要關閉屏障就必須使用觸控面板，那是你絕對碰不到的東西！
+# Brok
+PC09B_RJ_LASERS1-17=這觸控面板……是有指紋識別功能嗎？
+# RJ
+PC09B_RJ_LASERS1-18=沒，就只是普通的按鍵，誰都可以按。
+# RJ
+PC09B_RJ_LASERS1-19=除了你！因為面板在牢房外面！哈哈哈！
+# Brok
+PC09B_RJ_LASERS1-20=也對……我現在是碰不到它。
+# Brok
+PC09B_RJ_LASERS1-21=但總會有辦法的。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_LASERS2-1=先釐清一下頭緒……
+# Brok
+PC09B_RJ_LASERS2-2=這個屏障能夠防止任何東西出入，哪怕是紙張那麽薄的物品。
+# Brok
+PC09B_RJ_LASERS2-3=那個監視器一旦探測到我有任何可疑的行為就會響起警報。
+# Brok
+PC09B_RJ_LASERS2-4=而打開牢房的觸控面板的按鍵是任何人都能按的。
+# RJ
+PC09B_RJ_LASERS2-5=正確！
+# RJ
+PC09B_RJ_LASERS2-6=……
+# RJ
+PC09B_RJ_LASERS2-7=等一下，我警告你可別打任何主意！
+# Brok
+PC09B_RJ_LASERS2-8=誰？你是說我嗎？
+# RJ
+PC09B_RJ_LASERS2-9=我會盯緊你的！
+# Brok
+PC09B_RJ_LASERS2-10=那我保證會靜悄悄地行動！呃……我是說一動也不動。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_SIN1-1=你該原諒阿信。
+# Brok
+PC09B_RJ_SIN1-2=他那麽做是有苦衷的……
+# RJ
+PC09B_RJ_SIN1-3=不關我事。
+# RJ
+PC09B_RJ_SIN1-4=我把他當朋友，他卻利用我犯罪！
+# RJ
+PC09B_RJ_SIN1-5=這種人就該被抓起來關一輩子。
+# Brok
+PC09B_RJ_SIN1-6=你不懂！
+# Brok
+PC09B_RJ_SIN1-7=換做是你家孩子，你不也會同樣這麽做嗎？
+# Sin
+PC09B_RJ_SIN1-8=別說了……
+# RJ
+PC09B_RJ_SIN1-9=你們都給我閉嘴！
+# Brok
+PC09B_RJ_SIN1-10=抱歉……
+#----------------------------------------------------
+# Brok
+PC09B_RJ_SIN2-1=（阿信不想要我繼續說，我該尊重他的意願。）
+#----------------------------------------------------
+# Brok
+PC09B_RJ_SUBTERFUGE1-1=（嗯……我能想到好幾種方法。）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - A hidden chest in the last cell
+# *****************************************************************
+# Brok
+PC09B_CHESTLOOK1-1=裏面存放的東西一定很重要。
+# Brok
+PC09B_CHESTLOOK1-2=所以才會被嚴密保護。
+#----------------------------------------------------
+# Brok
+PC09B_CHESTLOOK2-1=搞定！
+#----------------------------------------------------
+# Brok
+PC09B_CHEST1-1=會是什麽呢……？
+#----------------------------------------------------
+# Brok
+PC09B_CHEST1B-1=一定是屬於某位囚犯的財物……
+# Brok
+PC09B_CHEST1B-2=交由我來保管會比較安全！
+#----------------------------------------------------
+# Brok
+PC09B_CHEST2-1=咦，還有很多其他的物品。
+# Brok
+PC09B_CHEST2-2=都是些沒必要的危險道具。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Rescue Sin with Dee but he is nowhere to be found
+# *****************************************************************
+# Dee
+PC09B_RESCUE1-1=阿信！
+#----------------------------------------------------
+# Dee
+PC09B_RESCUE1B-1=阿信！
+# Dee
+PC09B_RESCUE1B-2=跑哪去了？！
+# Brok
+PC09B_RESCUE1B-3=……
+# Brok
+PC09B_RESCUE1B-4=難道是……我們來遲了……？
+# Dee
+PC09B_RESCUE1B-5=不……不要！！
+#----------------------------------------------------
+# Mink
+#If we charged Mink in chapter 4
+PC09B_RESCUE_MINK1-1=喂！發生什麽事了？
+# Brok
+PC09B_RESCUE_MINK1-2=敏克博士。
+# Brok
+PC09B_RESCUE_MINK1-3=阿信在這裏嗎？
+# Mink
+PC09B_RESCUE_MINK1-4=你是說那個袋鼠人？
+# Mink
+PC09B_RESCUE_MINK1-5=他早前離開了。
+# Mink
+PC09B_RESCUE_MINK1-6=誰能告訴我發生什麽事了？
+# Brok
+PC09B_RESCUE_MINK1-7=你現在的處境很危險。
+# Mink
+PC09B_RESCUE_MINK1-8=啊……？
+# Brok
+PC09B_RESCUE_MINK1-9=我馬上帶你出去。
+# Mink
+PC09B_RESCUE_MINK1-10=嘿！把我抓進來的是你，現在放我走的也是你！
+#----------------------------------------------------
+# Guard
+#If we charged Guard in chapter 4
+PC09B_RESCUE_GUARD1-1=怎麽回事，老兄？！
+# Brok
+PC09B_RESCUE_GUARD1-2=哦……是你啊。
+# Brok
+PC09B_RESCUE_GUARD1-3=沒時間解釋了……
+# Brok
+PC09B_RESCUE_GUARD1-4=阿信在這裏嗎？
+# Guard
+PC09B_RESCUE_GUARD1-5=那個整天垂頭喪氣的袋鼠人？
+# Guard
+PC09B_RESCUE_GUARD1-6=他早前離開了。
+# Brok
+PC09B_RESCUE_GUARD1-7=糟了……
+# Brok
+PC09B_RESCUE_GUARD1-8=你不能待在這裏。
+# Guard
+PC09B_RESCUE_GUARD1-9=啥……？
+# Brok
+PC09B_RESCUE_GUARD1-10=我馬上放你出去。
+# Guard
+PC09B_RESCUE_GUARD1-11=終於等到一個好消息！
+#----------------------------------------------------
+# Dee
+PC09B_RESCUE1B2-1=……
+# Dee
+PC09B_RESCUE1B2-2=怎麽會這樣……
+# Dee
+PC09B_RESCUE1B2-3=我甚至都沒機會……
+# Dee
+PC09B_RESCUE1B2-4=告訴他……
+#----------------------------------------------------
+# Brok
+PC09B_RESCUE_ALARMSTOP-1=警報聲……停下來了……？
+#----------------------------------------------------
+# Brok
+PC09B_RESCUE1C_NOSIN-1=唉……
+# Brok
+PC09B_RESCUE1C_NOSIN-2=早知道當初該救他出去的……
+#----------------------------------------------------
+# Brok
+#Sin can or cannot be alive according to choices - here he is
+PC09B_RESCUE1C-1=唉……
+# Brok
+PC09B_RESCUE1C-2=或許……還有機會……
+# Unknown
+PC09B_RESCUE1C-3=（……）
+# Brok
+PC09B_RESCUE1C-4=……是誰打來的？
+# Brok
+PC09B_RESCUE1C-5=（按鍵聲）
+# Sin
+PC09B_RESCUE1C-6=嘿，兄弟。不好意思突然打擾你……只是我也不知道該找誰……
+# Brok
+PC09B_RESCUE1C-7=！
+# Dee
+PC09B_RESCUE1C-8=阿信！！
+# Dee
+PC09B_RESCUE1C-9=我……我還以為你已經……！
+# Sin
+PC09B_RESCUE1C-10=阿蒂？是你嗎？！
+# Dee
+PC09B_RESCUE1C-11=我現在相信你了！對不起！
+# Sin
+PC09B_RESCUE1C-12=都是我的錯……
+# Sin
+PC09B_RESCUE1C-13=等一下，妳在什麽地方……？看起來很像……
+# Brok
+PC09B_RESCUE1C-14=你是怎麽逃出去的？
+# Sin
+PC09B_RESCUE1C-15=是局長……
+# Sin
+PC09B_RESCUE1C-16=他說我可以出獄了。
+# Sin
+PC09B_RESCUE1C-17=阿蒂……我……
+# Dee
+PC09B_RESCUE1C-18=你什麽都別說！
+# Dee
+PC09B_RESCUE1C-19=我們的寶貝女兒在家等你呢！
+# Dee
+PC09B_RESCUE1C-20=我的……朋友在照顧她，你快去接她吧！
+# Sin
+PC09B_RESCUE1C-21=可是……妳確定……
+# Dee
+PC09B_RESCUE1C-22=你在哪？我去找你。
+# Sin
+PC09B_RESCUE1C-23=咳咳……我就躲在我以前的公寓裏……
+# Dee
+PC09B_RESCUE1C-24=你還好吧？
+# Sin
+PC09B_RESCUE1C-25=今天沒辦法取得藥丸……咳咳……
+# Sin
+PC09B_RESCUE1C-26=而且……碰上了些麻煩……
+# Brok
+PC09B_RESCUE1C-27=機器人……？
+# Sin
+PC09B_RESCUE1C-28=是的，雖然成功逃脫……但真的好險……！
+# Dee
+PC09B_RESCUE1C-29=天呀……
+# Brok
+PC09B_RESCUE1C-30=原來我不是唯一被他們追殺的人？
+# Sin
+PC09B_RESCUE1C-31=究竟是怎麽回事……？
+# Dee
+PC09B_RESCUE1C-32=我一邊趕路一邊跟你說。
+# Dee
+PC09B_RESCUE1C-33=你待在原地等我！
+# Sin
+PC09B_RESCUE1C-34=好的……
+# Sin
+PC09B_RESCUE1C-35=愛妳。
+# Unknown
+PC09B_RESCUE1C-36=[……]
+# Dee
+PC09B_RESCUE1C-37=走吧！
+#----------------------------------------------------
+# Brok
+PC09B_RESCUE1D-1=等一下！你是不是忘了什麽……？
+# Brok
+PC09B_RESCUE1D-2=我們答應過格金博士會回去找他的。
+# Dee
+PC09B_RESCUE1D-3=那是當然，但在回去前我先確保我老公的安全。
+#----------------------------------------------------
+# Wes
+PC09B_RESCUE1E-1=……
+# Wes
+PC09B_RESCUE1E-2=你怎麽會出現在這？
+# Wes
+PC09B_RESCUE1E-3=而且你身邊這位絕世佳人的同伴又是誰？
+# Dee
+PC09B_RESCUE1E-4=我猜你就是警察局長？
+#----------------------------------------------------
+# Dee
+PC09B_RESCUE1E_NOSIN-1=阿信在哪裏？！
+# Wes
+PC09B_RESCUE1E_NOSIN-2=我之前已經放他走了。
+# Wes
+PC09B_RESCUE1E_NOSIN-3=而你們的出現更進一步確定了我的猜測……
+# Brok
+PC09B_RESCUE1E_NOSIN-4=什麽猜測？
+# Wes
+PC09B_RESCUE1E_NOSIN-5=機器人，它們的職責本該是看管囚犯。
+# Wes
+PC09B_RESCUE1E_NOSIN-6=可是……它們最近的行為非常怪異。
+# Wes
+PC09B_RESCUE1E_NOSIN-7=我已無法信任它們。
+# Wes
+PC09B_RESCUE1E_NOSIN-8=所以我暫時放走了阿信，等解決了這件事再說。
+# Dee
+PC09B_RESCUE1E_NOSIN-9=那他現在在哪裏？！
+# Wes
+PC09B_RESCUE1E_NOSIN-10=或許是在貧民區吧。我把他送回他的公寓去了。
+# Dee
+PC09B_RESCUE1E_NOSIN-11=我先告辭了。
+# Brok
+PC09B_RESCUE1E_NOSIN-12=等一下！那個……
+# Dee
+PC09B_RESCUE1E_NOSIN-13=回頭見。
+# Brok
+PC09B_RESCUE1E_NOSIN-14=……
+# Brok
+PC09B_RESCUE1E_NOSIN-15=藥丸短缺又是怎麽回事？
+# Wes
+PC09B_RESCUE1E_NOSIN-16=或許這一切都有隱藏的關聯。
+# Brok
+PC09B_RESCUE1E_NOSIN-17=嗯……阿蒂之前提到說掌握了罪犯被殺害的證據……
+# Brok
+PC09B_RESCUE1E_NOSIN-18=不過我依然看不出這之間的關聯。
+#----------------------------------------------------
+# Brok
+PC09B_RESCUE1E_SIN-1=嗯……
+# Brok
+PC09B_RESCUE1E_SIN-2=我們是來救阿信出去的。她是位記者，阿信是她的……
+# Wes
+PC09B_RESCUE1E_SIN-3=原來如此。
+# Wes
+PC09B_RESCUE1E_SIN-4=難怪周圍都是被砸壞的機器人。
+# Brok
+PC09B_RESCUE1E_SIN-5=抱歉……
+# Wes
+PC09B_RESCUE1E_SIN-6=嗯……反正機器人容易更換。
+# Brok
+PC09B_RESCUE1E_SIN-7=我們也是迫於無奈，阿信的處境很危險！
+# Wes
+PC09B_RESCUE1E_SIN-8=嗯哼……
+# Wes
+PC09B_RESCUE1E_SIN-9=看來不只是我感到不對勁，是吧？
+# Brok
+PC09B_RESCUE1E_SIN-10=你……你也發現了……？
+# Wes
+PC09B_RESCUE1E_SIN-11=最近真的是一波未停一波又起呀！
+# Wes
+PC09B_RESCUE1E_SIN-12=放心吧！這件事由我來處理。
+# Wes
+PC09B_RESCUE1E_SIN-13=我們的國家多年來經歷過那麽多風風雨雨，還不是度過來了。
+# Dee
+PC09B_RESCUE1E_SIN-14=可是這次可不一樣！
+# Dee
+PC09B_RESCUE1E_SIN-15=我們的司法系統出現了嚴重的問題。
+# Dee
+PC09B_RESCUE1E_SIN-16=囚犯們正在受到有組織的屠殺！
+# Wes
+PC09B_RESCUE1E_SIN-17=唔。憑什麽要我相信妳？
+# Dee
+PC09B_RESCUE1E_SIN-18=我……我是位記者。
+# Dee
+PC09B_RESCUE1E_SIN-19=我有證據！過去的幾個月我一直在搜集情報！
+#----------------------------------------------------
+# Wes
+PC09B_RESCUE1E_AFTER-1=證據……
+# Wes
+PC09B_RESCUE1E_AFTER-2=我們應該要共享情報，不過這裏不是說話的地方。
+#----------------------------------------------------
+# Wes
+PC09B_RESCUE1E_BOTSDESTROYED-1=很快就會有更多的機器人過來增援，我可指揮不動它們。
+#----------------------------------------------------
+# Wes
+PC09B_RESCUE1E_AFTER2-1=我們一個小時後在垃圾處理中心會合。
+# Brok
+PC09B_RESCUE1E_AFTER2-2=你確定嗎……？那裏人煙稀少……
+# Wes
+PC09B_RESCUE1E_AFTER2-3=所以才更合適。
+# Wes
+PC09B_RESCUE1E_AFTER2-4=那地方地形平坦寬廣，無須擔心隔牆有耳。
+#----------------------------------------------------
+# Dee
+PC09B_RESCUE1E_AFTERSIN-1=好，到時候見。
+#----------------------------------------------------
+# Dee
+PC09B_RESCUE1F-1=……
+# Dee
+PC09B_RESCUE1F-2=對了……布羅格……
+# Dee
+PC09B_RESCUE1F-3=謝謝你，我欠你一個人情。
+#----------------------------------------------------
+# Mink
+PC09B_RESCUEEND_MINK1-1=喂！那我呢……？
+# Mink
+PC09B_RESCUEEND_MINK1-2=我可以離開了吧？
+#----------------------------------------------------
+# Guard
+PC09B_RESCUEEND_GUARD1-1=雖然聽不懂你們說的話，不過……
+# Guard
+PC09B_RESCUEEND_GUARD1-2=我很想盡快離開這個鬼地方。
+#----------------------------------------------------
+# Brok
+PC09B_RESCUEEND_NEXT-1=對了！為什麽只放走阿信而不放他？
+# Wes
+PC09B_RESCUEEND_NEXT-2=我向來都是把麻煩分開一個一個來解決的。
+# Wes
+PC09B_RESCUEEND_NEXT-3=無論如何，是你把他送進來的。
+# Wes
+PC09B_RESCUEEND_NEXT-4=所以由你來做決定吧。
+# Brok
+PC09B_RESCUEEND_NEXT-5=好，那就放他走吧。
+#----------------------------------------------------
+# Mink
+PC09B_RESCUEEND_MINK2-1=鬆一口氣……
+# Mink
+PC09B_RESCUEEND_MINK2-2=但我想澄清下……
+# Mink
+PC09B_RESCUEEND_MINK2-3=我從沒殺過人，真正的凶手還逍遙法外。
+# Brok
+PC09B_RESCUEEND_MINK2-4=……
+#----------------------------------------------------
+# Guard
+PC09B_RESCUEEND_GUARD2-1=太好了。
+# Guard
+PC09B_RESCUEEND_GUARD2-2=我還是不相信你居然會認為是我幹的……
+# Guard
+PC09B_RESCUEEND_GUARD2-3=你這個人到底哪裡有問題？！
+# Brok
+PC09B_RESCUEEND_GUARD2-4=那個……
+# Guard
+PC09B_RESCUEEND_GUARD2-5=總之拜拜了，沒用的偵探。
+#----------------------------------------------------
+# Brok
+PC09B_RESCUE1G-1=……
+# Wes
+PC09B_RESCUE1G-2=……
+# Brok
+PC09B_RESCUE1G-3=那麽……再見。
+#----------------------------------------------------
+# Wes
+PC09B_RESCUE1H-1=破羅格？
+#----------------------------------------------------
+# Brok
+PC09B_RESCUE1I-1=你總是喊錯我名字真的很討厭，你就不能喊對一次嗎？
+# Wes
+PC09B_RESCUE1I-2=喊……喊錯了嗎……？
+# Brok
+PC09B_RESCUE1I-3=……？
+# Wes
+PC09B_RESCUE1I-4=隨便。
+# Wes
+PC09B_RESCUE1I-5=雖然我們之間有不少過節，不過此時此刻……
+# Wes
+PC09B_RESCUE1I-6=我們必須抛開成見攜手合作，這個國家正面臨十分嚴重的威脅。
+# Brok
+PC09B_RESCUE1I-7=好，那就合作吧，老頭！
+# Brok
+PC09B_RESCUE1I-8=回頭見。
+# Wes
+PC09B_RESCUE1I-9=那就拜託你了。
+#----------------------------------------------------
+# Brok
+PC09B_RJ_KO1-1=我碰不到他……
+#----------------------------------------------------
+# Brok
+PC09B_RJ_KO_SEARCH1-1=我找到了什麽東西！
+#----------------------------------------------------
+# Sin
+PC09B_RJ_KO_SEARCH_SIN-1=我簡直不敢相信……
+#----------------------------------------------------
+# Brok
+PC09B_RJ_KO_SEARCH2-1=最好再看看，我老是錯過廣告！
+# Brok
+PC09B_RJ_KO_SEARCH2-2=找到了！
+#----------------------------------------------------
+# Brok
+PC09B_RJ_KO_SEARCH3-1=什麽都沒有了。
+#----------------------------------------------------
+# Brok
+PC09B_DAY2_SIN-1=嘿！
+# Sin
+PC09B_DAY2_SIN-2=哈？
+#----------------------------------------------------
+# Brok
+PC09B_DAY2_SINB-1=你還是堅持嗎？
+# Sin
+PC09B_DAY2_SINB-2=嗯……
+# Brok
+PC09B_DAY2_SINB-3=好的。
+# Brok
+PC09B_DAY2_SINB-4=我之後再來！
+# Sin
+PC09B_DAY2_SINB-5=好的。
+# Sin
+PC09B_DAY2_SINB-6=謝謝你……
+#----------------------------------------------------
+# Brok
+PC09B_C3TOUCHPANEL1-1=該死……它壞掉了。
+# Brok
+PC09B_C3TOUCHPANEL1-2=最好再找個方法。
+#----------------------------------------------------
+# Brok
+PC09B_CAMERA1-1=真是個煩人的監視器。
+#----------------------------------------------------
+# Brok
+PC09B_CAMERA2-1=嗯……
+#----------------------------------------------------
+
+
+
+COOP_PC09B_SIN1-1=應得還是不應得？這是個問題...

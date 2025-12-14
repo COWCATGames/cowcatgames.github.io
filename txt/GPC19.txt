@@ -1,0 +1,655 @@
+﻿#-------------------------------
+#=BUNKER INSIDE (GRAFF LEVEL)
+#-------------------------------
+
+
+#----------------------
+#= Wake
+#----------------------
+ID=GPC19_WAKE1
+T=...
+W=GRAFF
+A=MEH
+C1_EYESHUT=1
+CONTEXT=Day 2 - Graff is waking up in a strange room.
+
+T=Uh...
+W=GRAFF
+A=MEH
+C1_EYESHUT=1
+TEN=PC19_WAKE_CROUCH
+
+#----------------------
+ID=GPC19_WAKE2
+T=Ah... Can't believe... They actually drugged us...!
+W=GRAFF
+A=STUPID
+
+T=...
+W=GRAFF
+A=MEH
+TEN=PC19_WAKE_LOOKAROUND
+
+#----------------------
+ID=GPC19_WAKE3
+T=This must be a test room. Am I trapped here?...
+W=GRAFF
+A=THINK
+
+T=I should take a look around.
+W=GRAFF
+A=THINK
+TEN=CLICKERS_BACK
+
+
+#----------------------
+#= Give up button
+#----------------------
+ID=GPC19_NOWAYOUT
+T=Must be the way out.
+W=GRAFF
+A=OPPOSITE
+CONTEXT=Exploring the room
+
+T=Unless I solve these puzzles or give up, I can't exit.
+W=GRAFF
+A=OPPOSITE
+
+T=I wonder where Klay is?
+W=GRAFF
+A=THINK
+
+
+#----------------------
+#= Give up button
+#----------------------
+ID=GPC19_GIVEUPBUTTON1
+T=Hmm... Judging from that symbol...
+W=GRAFF
+A=THINK
+
+T=And considering it's close to what appears to be an exit...
+W=GRAFF
+A=THINK
+
+T=This button must be for quitting.
+W=GRAFF
+A=OPPOSITE
+TEN=PC19_GIVEUP_CHOICES
+
+#----------------------
+ID=GPC19_GIVEUP_CONFIRM
+T=Better think twice! I won't have a second chance to pass this test.
+W=GRAFF
+A=READY
+TEN=PC19_GIVEUP_CHOICES_CONFIRM
+
+#----------------------
+ID=GPC19_GIVEUPBUTTON2
+T=I'm starting to feel claustrophobic. Should I give up?
+W=GRAFF
+A=OPPOSITE
+TEN=PC19_GIVEUP_CHOICES
+
+#----------------------
+ID=GPC19_GIVEUP_NO
+T=No! I can do it!
+W=GRAFF
+A=READY
+
+#----------------------
+ID=GPC19_GIVEUPBUTTON_DONE
+T=Too late for remorse.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_DOOR_LOCKED
+T=Locked.
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Entrance
+#----------------------
+ID=GPC19_ACCESS1
+T=I can't go through.
+W=GRAFF
+A=TURN
+
+T=Maybe it will unlock when I complete all the tasks.
+W=GRAFF
+A=THINK
+
+
+#----------------------
+#= Getting a triangle token
+#----------------------
+ID=GPC19_TOKEN1
+T=A rusty golden token.
+W=GRAFF
+A=THINK
+TEN=PC19_TRIANGLE_PICK
+
+#----------------------
+ID=GPC19_TOKEN1B
+T=Some kind of reward?
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC19_TOKEN2
+T=Another triangle token.
+W=GRAFF
+A=MEH
+TEN=PC19_TRIANGLE_PICK
+
+#----------------------
+ID=GPC19_TOKEN2B
+T=Looks precious. It might help to get out of here.
+W=GRAFF
+A=THINK
+
+
+#----------------------
+ID=GPC19_TOKEN3
+T=I guess this is the last one?
+W=GRAFF
+A=THINK
+TEN=PC19_TRIANGLE_PICK
+
+#----------------------
+#= Indication
+#----------------------
+ID=GPC19_SYMBOLS1
+T=...?
+W=GRAFF
+A=TURN
+
+
+#----------------------
+#= Balance
+#----------------------
+ID=GPC19_BALANCE1
+T=It's obvious. I'm supposed to place some weights here.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_BALANCE2
+T=The number 17 is written at the base.
+W=GRAFF
+A=TURN
+
+T=Hmm...
+W=GRAFF
+A=THINK
+
+
+#----------------------
+#= Weights
+#----------------------
+ID=GPC19_WEIGHT1
+T=What's a weight doing here?
+W=GRAFF
+A=THINK
+COMM=Picking up a weight
+
+T=It's not so heavy. I should take it.
+W=GRAFF
+A=MEH
+TEN=PC19_WEIGHT_GET
+
+#----------------------
+ID=GPC19_WEIGHT2
+T=A weight.
+W=GRAFF
+A=TURN
+TEN=PC19_WEIGHT_GET
+
+#----------------------
+ID=GPC19_WEIGHT3
+T=Another one...
+W=GRAFF
+A=TURN
+TEN=PC19_WEIGHT_GET
+
+#----------------------
+ID=GPC19_WEIGHT4
+T=How many of these are there?...
+W=GRAFF
+A=TURN
+TEN=PC19_WEIGHT_GET
+
+#----------------------
+ID=GPC19_WEIGHT5
+T=Got it!
+W=GRAFF
+A=MEH
+TEN=PC19_WEIGHT_GET
+
+
+#----------------------
+ID=GPC19_WEIGHTD_TOOHIGH
+T=A weight... Up there?...
+W=GRAFF
+A=TURN
+
+T=How do I access it?
+W=GRAFF
+A=THINK
+
+#----------------------
+#= Weight high
+#----------------------
+ID=GPC19_WEIGHTJ1
+T=It's a bit high!...
+W=GRAFF
+A=TURN
+
+T=Ngghhh...
+W=GRAFF
+A=TURN
+
+T=Darn! It's just a bit too high!
+W=GRAFF
+A=STUPID
+
+#----------------------
+ID=GPC19_WEIGHTJ2
+T=...
+W=GRAFF
+A=MEH
+
+T=Argh!... That's a slanted wall, I can't really jump either.
+W=GRAFF
+A=TURN
+
+T=No chance... If only I was a bit taller!
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_WEIGHTH_WEIGHT
+T=Good idea, I'll try to climb on this.
+W=GRAFF
+A=HAPPY
+
+T=...
+W=GRAFF
+A=MEH
+TEN=PC19_WEIGHTJ_GET
+
+#----------------------
+ID=GPC19_WEIGHTH_WEIGHTB
+T=Yes!
+W=GRAFF
+A=HAPPY
+
+
+#----------------------
+ID=GPC19_TRAP1
+T=What's this?...
+W=GRAFF
+A=THINK
+TEN=PC19_TRAP_UNCOVER
+
+#----------------------
+ID=GPC19_TRAP2
+T=A keylock?
+W=GRAFF
+A=THINK
+TEN=PC19_TRAP_UNCOVER2
+
+#----------------------
+ID=GPC19_TRAP_KEY
+T=No way! My key works?
+W=GRAFF
+A=SURPRISED
+TEN=PC19_WEIGHTJ_GET
+
+#----------------------
+ID=GPC19_TRAP_KEYNEXT1
+T=I guess those trials are custom made...
+W=GRAFF
+A=THINK
+
+#----------------------
+#= Weight in ground
+#----------------------
+ID=GPC19_WEIGHTC1
+T=A crack in the floor?...
+W=GRAFF
+A=THINK
+TEN=GPC19_WEIGHTC_ACCESS
+
+#----------------------
+ID=GPC19_WEIGHTC_OTHERS1
+T=(Hits)
+
+T=I'm barely making a scratch... Digging with this isn't really practical.
+W=GRAFF
+A=TURN
+
+T=They must want me to do something else.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_WEIGHTC_OTHERS2
+T=(Hits)
+
+T=Nothing doing. I need something... heavier!
+W=GRAFF
+A=TURN
+
+T=Hmm... What if...?
+W=GRAFF
+A=THINK
+
+
+
+#----------------------
+ID=GPC19_WEIGHTC_FLOORBREAK
+T=Ha! Looks like I needed to use my own weight!
+W=GRAFF
+A=HAPPY
+
+T=And here's what was below.
+W=GRAFF
+A=HAPPY
+TEN=PC19_WEIGHTC_GET
+
+#----------------------
+#= Crate
+#----------------------
+ID=GPC19_CRATE1
+T=Hmm... I can't see any way to open it.
+W=GRAFF
+A=THINK
+
+
+#----------------------
+ID=GPC19_CRATE_OTHERS
+T=Nah. There's an "easier" way!
+W=GRAFF
+A=TURN
+
+#----------------------
+#= Wall
+#----------------------
+ID=GPC19_WALLA1
+T=Isn't there something... embedded in that wall?
+W=GRAFF
+A=THINK
+TEN=PC19_WALLA1_TRYHANDS
+
+#----------------------
+ID=GPC19_WALLA1B
+T=Argh... I can't get it out!
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_WALLA2
+T=This could be important. I need to find a way!
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_WALLA_OTHERS
+T=Nope... I tried but removing it with that would take ages.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_WALLA_DEATH1
+T=Argh, my hands!
+W=GRAFF
+A=CHOKE
+
+T=Hey. The weight fell!
+W=GRAFF
+A=TURN
+
+T=Who would have thought this would actually work?...
+W=GRAFF
+A=DISDAIN
+TEN=PC19_WEIGHTA_GET
+
+#----------------------
+ID=GPC19_WALLA_DEATH1B
+T=If using your brain doesn't work, use your fists.
+W=GRAFF
+A=TURN
+
+T=Thanks, Brok.
+W=GRAFF
+A=FRIENDLY
+
+#----------------------
+#= Tic tac toe
+#----------------------
+ID=GPC19_TICTACLOSE1
+T=Darn... Is there any way to win this?...
+W=GRAFF
+A=THINK
+NB=1
+D=90
+
+#----------------------
+ID=GPC19_TICTACLOSE2
+T=Playing fair won't work.
+W=GRAFF
+A=MEH
+NB=1
+D=90
+
+T=Maybe it's time to think outside the box.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_TICTACWINCHEAT1
+T=And the morale is... Sometimes cheating is the only way!
+W=GRAFF
+A=TURN
+
+
+
+#----------------------
+ID=GPC19_TICTACWALL1
+T=Weird. A bunch of impacts on this wall.
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC19_TICTACWALL_OTHERS
+T=Hmm... there's some idea but how exactly should I use it?
+W=GRAFF
+A=TURN
+
+
+#----------------------
+#= Hologram
+#----------------------
+ID=GPC19_HOLOGRAM1
+T=A static hologram. Is this significant?
+W=GRAFF
+A=THINK
+TEN=PC19_HOLOGRAM_ACCESS
+
+#----------------------
+ID=GPC19_HOLOGRAM_TRIANGLEBUNKER
+T=No doubt. The exact same shape! Just smaller.
+W=GRAFF
+A=TURN
+
+T=What could this mean?...
+W=GRAFF
+A=THINK
+
+#----------------------
+#= Plate
+#----------------------
+ID=GPC19_PLATE_EMPTY1
+T=Let's put something here.
+W=GRAFF
+A=MEH
+
+#----------------------
+ID=GPC19_PLATE_FILLED1
+T=Nothing's happening...
+W=GRAFF
+A=THINK
+TEN=PC19_PLATE_CHOICE
+
+#----------------------
+ID=GPC19_PLATE_FILLED2
+T=Wrong weights?...
+W=GRAFF
+A=THINK
+TEN=PC19_PLATE_CHOICE
+
+#----------------------
+ID=GPC19_PLATE_BALANCED1
+T=Darn. I thought this would work.
+W=GRAFF
+A=TURN
+
+T=I must have missed something.
+W=GRAFF
+A=THINK
+TEN=PC19_PLATE_CHOICE
+
+#----------------------
+ID=GPC19_PLATE_WIN
+T=Yes!
+W=GRAFF
+A=HAPPY
+
+
+#----------------------
+#= Pipe game
+#----------------------
+ID=GPC19_BUTTONPUSH_NOTHING
+T=...No response.
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC19_PIPEGAME_WON
+T=I won?
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_STUCK
+T=...?
+W=GRAFF
+A=MEH
+TEN=GPC19_STUCK_AUDIOD
+
+#----------------------
+ID=GPC19_BALLSTUCK1
+T=No way. The ball is stuck!
+W=GRAFF
+A=STUPID
+
+T=Is this part of my test? Or am I just as unlucky as my old man?
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_BALLSTUCK2
+T=The ball is stuck in the pipe, right behind that glass...
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC19_BALLSTUCK_OTHERS
+T=How do I use it exactly?...
+W=GRAFF
+A=THINK
+
+T=This is getting on my nerves!
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+ID=GPC19_BALLUNSTUCK
+T=Hey, it worked!
+W=GRAFF
+A=HAPPY
+NB=1
+D=60
+
+#----------------------
+#= Triangles
+#----------------------
+ID=GPC19_TRIANGLE_OCCUPIED
+T=I'm afraid that slot is already occupied.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_TRIANGLE_OTHERS
+T=Err... I don't think that will fit.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_TRIANGLE_GET
+T=It fits but... I don't know...
+W=GRAFF
+A=TURN
+TEN=PC19_TRIANGLE_CHOICE
+
+#----------------------
+ID=GPC19_TRIANGLE_WRONG1
+T=I was hoping something would happen.
+W=GRAFF
+A=TURN
+
+T=What did I do wrong?
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC19_TRIANGLE_WRONG2
+T=I must have made a mistake.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC19_TRIANGLE_WRONG3
+T=Nope...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+ID=GPC19_TRIANGLE_WIN1
+T=Finally!
+W=GRAFF
+A=READY
+TEN=PC19_TRIANGLE_WIN_AFTER
+
+#----------------------
+ID=GPC19_TRIANGLE_OVER
+T=No point touching this anymore.
+W=GRAFF
+A=TURN
+TEN=CLICKERS_BACK
+
+
+#----------------------
+ID=GPC19_ADBUTTON
+T=Hmm...
+W=GRAFF
+A=THINK
+TEN=PC19_ADBUTTON_CHOICE
+
+###############################################
+# PROOFREAD - frasermacgaming - 01/09/2019
+# EXPRESSIONS - Oggy - 17/09/2019
+###############################################

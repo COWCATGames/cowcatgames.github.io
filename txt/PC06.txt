@@ -1,0 +1,1457 @@
+﻿#-------------------------------
+#=SECTOR 56X STREET
+#-------------------------------
+
+
+#----------------------
+#= First dialog
+#----------------------
+ID=PC06_FIRST1
+T=According to the message, my client lives in Center Basic 568... That block is near this street.
+W=BROK
+A=THINK
+CONTEXT=Coming here for the first time
+
+T=Let's go check it out!
+W=BROK
+A=READY
+TEN=PC06_AUDIOCHECK
+
+#----------------------
+#= Pipemail
+#----------------------
+ID=PC06_PIPEMAIL_STORY190
+T=This one's been vandalized...
+W=BROK
+A=DOWN
+CONTEXT=Checking the Pipemail
+
+#----------------------
+ID=PC06_PIPEMAIL1
+T=This gizmo can be used for paying invoices and getting a daily pill. Let's give it a whirl!
+W=BROK
+A=MOCK
+TEN=PC06_PIPEMAIL_USE
+
+#----------------------
+ID=PC06_PIPEMAIL1B
+T=Nothing is happening. Is it broken?
+W=BROK
+A=THINK
+
+T=It is.
+W=FLOWER
+C2=FLOWER
+C2A=SAD
+
+T=It's been like this since yesterday but no one has repaired it yet.
+W=FLOWER
+
+T=Just my luck...
+W=BROK
+C1A=TIRED
+
+T=You don't say! I set up my stall here for a reason... but no one comes around anymore.
+W=FLOWER
+
+T=Are there any others around here?
+W=BROK
+C1A=THINK
+
+T=Probably, though I've heard the same thing has happened at other places in the Slums.
+W=FLOWER
+
+T=Really? I haven't heard about this.
+W=BROK
+C1A=WONDER
+
+T=Oh, you know.
+W=FLOWER
+C2A=NORMAL
+
+T=The media is all controlled by the Government.
+W=FLOWER
+
+T=You think so?
+W=BROK
+CLUE=CLUE_SECTOR56X_GOVERNMENT
+
+T=Of course!
+W=FLOWER
+
+T=In any case... It's kinda worrying. We need these.
+W=FLOWER
+C2A=SAD
+
+T=Yeah...
+W=BROK
+C1A=DOWN
+
+T=Eh, I have too many other things going on to worry about.
+W=BROK
+C1A=MAYBE
+
+T=Everyone's saying the same thing.
+W=FLOWER
+
+T=We need to stay positive, and have faith in a brighter future!
+W=FLOWER
+C2A=HAPPY
+CLUE=CLUE_SLUMS_MAILBOXES
+
+
+#----------------------
+ID=PC06_PIPEMAIL2
+T=This machine is out of order...
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC06_PIPEMAIL_BILL
+T=No use. I tried to put the bill in the machine but it's turned off. Gotta find another...
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC06_PIPEMAIL_TRAMPPRESCR
+T=Not a chance...
+W=BROK
+A=DOWN
+
+T=Pipe-Pills can only distribute Toxout pills, and this one's broken!
+W=BROK
+A=TIRED
+
+
+#----------------------
+ID=PC06_PIPEMAIL_PILL
+T=It's... supposed to be the other way around.
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC06_PIPEMAIL_OTHERS
+T=That contraption can only deliver items... Not the other way around.
+W=BROK
+A=HAPPY
+
+
+#----------------------
+#= Going to other building
+#----------------------
+ID=PC06_OTHERBUILDING_BEFORE
+T=Pretty sure the client said Block 568. I shouldn't waste time going in here.
+W=BROK
+A=OPPOSITE
+CONTEXT=Room interactions
+
+#----------------------
+ID=PC06_OTHERBUILDING1
+T=I got no business there.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC06_OTHERBUILDING2
+T=I can't just go and enter buildings at random!
+W=BROK
+A=STUPID
+
+#----------------------
+#= Stall
+#----------------------
+ID=PC06_STALL1
+T=All kinds of stuff related to the Untail...
+W=BROK
+A=THINK
+
+T=I'm not a believer.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Metal shutters
+#----------------------
+ID=PC06_METALSHUTTERS1
+T=Hmm... Security is a bit tighter here than it is at my place.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC06_METALSHUTTERS2
+T=Gotta find a way to enter.
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Left panel
+#----------------------
+ID=PC06_LEFTPANEL_OPEN
+T=It's already open!
+W=BROK
+A=HAPPY
+
+#----------------------
+#= Right panel
+#----------------------
+ID=PC06_RIGHTPANEL1
+T=The infophone... It's displaying a list of the residents.
+W=BROK
+A=MAYBE
+
+T=Sin's name... Yup, he's home.
+W=BROK
+A=MOCK
+
+T=Maybe I should give him a ring?
+W=BROK
+A=THINK
+TEN=PC06_RIGHTPANEL_USE
+
+#----------------------
+ID=PC06_RIGHTPANEL1B
+T=Argh!!! That button is busted!
+W=BROK
+A=CONFUSED
+
+#----------------------
+ID=PC06_RIGHTPANEL2
+T=I'm glad we don't have this spying contraption in our block.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Flower girl
+#----------------------
+ID=PC06_FLOWERS_WELCOME1
+T=Hello!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=FLOWER
+C2A=NORMAL
+CONTEXT=Talking to the Flower religious merchant
+
+T=Hello, sir. Would you like anything?
+W=FLOWER
+C2A=HAPPY
+
+T=Just chatting, for now.
+W=BROK
+C1A=THINK
+
+T=How's business?
+W=BROK
+
+T=Could be better... But I'm not complaining.
+W=FLOWER
+C2A=NORMAL
+
+T=As long as I earn enough to make a living, it's fine.
+W=FLOWER
+
+T=I like this job, even if you see all kinds of weird stuff going on.
+W=FLOWER
+
+T=Whaddya mean?
+W=BROK
+C1A=MAYBE
+
+T=Like, this morning, I got up early to prepare the stand.
+W=FLOWER
+
+T=There was this big man sleeping, like, right around the corner... in his underwear!
+W=FLOWER
+C1A=THINK
+C2A=SURPRISED
+
+T=I was worried he would scare off the customers, so I tried to wake him up.
+W=FLOWER
+
+T=And boy, was it hard! I thought I wouldn't ever get him to stand up!
+W=FLOWER
+
+T=That poor man... He said he couldn't remember drinking, but has no memory from the night before.
+W=FLOWER
+C2A=SAD
+
+T=He probably took some drugs...
+W=FLOWER
+
+T=A homeless guy?
+W=BROK
+C1A=WONDER
+
+T=Nope! He told me he's a policeman.
+W=FLOWER
+C2A=NORMAL
+
+T=Goes to show that even Drumers aren't so happy with their lives after all.
+W=FLOWER
+
+T=For a policeman to go that low... That's really bad.
+W=FLOWER
+C2A=SAD
+
+T=It doesn't matter how much they flash their shiny badge around town, they've got their share of troubles, too.
+W=FLOWER
+
+T=Yes, all about maintaining that image.
+W=BROK
+C1A=MEH
+CLUE=CLUE_SECTOR56X_SLEEPING
+
+#----------------------
+ID=PC06_FLOWERS_WELCOME2
+T=So! You came here for a reason, right?
+W=FLOWER
+C1=BROK
+C1A=THINK
+C2=FLOWER
+C2A=HAPPY
+
+T=I've got lovely statues of our protector, and they're currently on sale!
+W=FLOWER
+
+T=No thanks, I don't believe in that nonsense.
+W=BROK
+C1A=OPPOSITE
+
+T=That's a pretty outrageous thing to say!
+W=FLOWER
+C2A=SURPRISED
+
+T=But you're in luck. I'm used to hearing worse.
+W=FLOWER
+C2A=HAPPY
+
+T=Whatever.
+W=BROK
+C1A=MAYBE
+
+T=Go ahead believing in magical stuff you can't see, and I'll just keep believing in things based in reality.
+W=BROK
+
+T=Like... My strength. To survive every day.
+W=BROK
+C1A=COCKY
+
+T=That's where you're wrong!
+W=FLOWER
+C1A=THINK
+
+T=The true purpose of the Untail lies exactly there. Helping us stay strong!
+W=FLOWER
+C2A=HAPPY
+
+T=Yeah... and I guess your store helps you a lot with that.
+W=BROK
+C1A=MEH
+
+T=Still... It's never too late.
+W=FLOWER
+C2A=NORMAL
+
+T=Come back if you change your mind!
+W=FLOWER
+C2A=HAPPY
+
+T=Yeah, yeah.
+W=BROK
+
+
+#----------------------
+ID=PC06_FLOWERS_WELCOME3
+T=Back already! I'm glad I was able to convince you!
+W=FLOWER
+C1=BROK
+C1A=HAPPY
+C2=FLOWER
+C2A=HAPPY
+
+T=Afraid not.
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=PC06_FLOWERS_WELCOME4
+T=Feel free to take a look!
+W=FLOWER
+C1=BROK
+C1A=HAPPY
+C2=FLOWER
+C2A=HAPPY
+
+#-----------------------------
+#= Bottom panel
+#-----------------------------
+ID=PC06_BOTTOMPANEL1
+T=Whatever's inside must control the power around here.
+W=BROK
+A=WONDER
+CONTEXT=More interactions
+
+T=Messing with power cables brings up bad memories... I'll pass.
+W=BROK
+A=STUPID
+
+#-----------------------------
+#= Neon
+#-----------------------------
+ID=PC06_NEON1
+T=That bridge used to be a dazzling piece of art, welcoming citizens every day.
+W=BROK
+A=MAYBE
+
+T=Now a shadow of the past...
+W=BROK
+A=MAYBE
+
+#-----------------------------
+ID=PC06_THENEON1
+T=I don't need it.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Rubble
+#----------------------
+ID=PC06_RUBBLE1
+T=It's blocking the way... A building must have collapsed recently.
+W=BROK
+A=MAYBE
+
+T=All sectors are falling apart, piece by piece...
+W=BROK
+A=DISAPPOINTED
+
+#-----------------------------
+#= Coming back with Gherkin
+#-----------------------------
+ID=PC06_GHERKIN_FIRST1
+T=I'll fix this one.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=HAPPY
+CONTEXT=Day 3 - Dr. Gherkin accompanies us to fix the Pipe pills
+TEN=PC06_GHERKIN_FIRSTB
+
+#-----------------------------
+ID=PC06_GHERKIN_FIRST2
+T=The city is so quiet...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GHERKIN
+C2A=NORMAL
+NB=1
+D=60
+
+T=I'm getting worried.
+W=BROK
+A=DOWN
+D=30
+
+T=No. I-I believe most Slumers are staying inside.
+W=GHERKIN
+D=90
+
+T=That's the guideline when the Haze is strong and the pollution levels peak.
+W=GHERKIN
+D=90
+
+T=Hope you're right...
+W=BROK
+A=MAYBE
+D=60
+
+#-----------------------------
+ID=PC06_GHERKIN_FIRST3
+T=So, who's this journalist?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GHERKIN
+C2A=EMBARRASSED
+COMM=At this point, Brok doesn't know the journalist is a she
+
+T=I'm not sure. They were disguising their voice.
+W=GHERKIN
+
+T=...Ain't that suspicious?
+W=BROK
+C1A=MAYBE
+
+T=...
+W=GHERKIN
+
+T=Now that you mention it...
+W=GHERKIN
+C2A=WORRIED
+
+T=Oh, great...
+W=BROK
+C1A=STUPID
+
+T=Hope we're not walking into a trap.
+W=BROK
+C1A=TIRED
+
+T=Who would be mad enough to make a profit off of such a terrible situation?
+W=GHERKIN
+C2A=ANGRY
+
+T=You wouldn't believe how far some people would go around here.
+W=BROK
+C1A=OPPOSITE
+CLUE=CLUE_GHERKIN_DEECALL
+
+#-----------------------------
+ID=PC06_GHERKIN_TOOFAR
+T=Better not go too far...
+W=BROK
+A=ANGRY
+
+#-----------------------------
+ID=PC06_GHERKIN_TIMEROUT1
+T=I'm done!
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+TEN=PC06_GHERKIN_BROKCOMES
+
+#-----------------------------
+ID=PC06_GHERKIN_TIMEROUT2
+T=Fast enough!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GHERKIN
+C2A=HAPPY
+
+T=Does it work?
+W=BROK
+C1A=MOCK
+
+T=For paying your bills, yes.
+W=GHERKIN
+C2A=NORMAL
+
+T=Who cares! What about the pills?
+W=BROK
+
+T=Well... We'll have to wait until the route is reactivated.
+W=GHERKIN
+
+T=How long until then?
+W=BROK
+C1A=THINK
+
+T=A few minutes... maybe a day.
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=A day?!
+W=BROK
+C1A=SURPRISED
+
+T=That's a very rough estimate. We don't do this that often.
+W=GHERKIN
+C2A=NORMAL
+
+T=Then let's hope it's just a matter of minutes.
+W=BROK
+C1A=MAYBE
+CLUE=CLUE_PILL_NOTWORK
+
+T=Your journalist isn't here yet.
+W=BROK
+
+T=Well... Let's look around?
+W=GHERKIN
+C2A=EMBARRASSED
+TEN=PC06_GHERKIN_ADD_DEETRIGGER
+
+
+#-----------------------------
+ID=PC06_GHERKIN_DEE
+T=...
+W=DEE
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=NORMAL
+C3=GHERKIN
+C3A=WORRIED
+CONTEXT=Day 3 - Meeting with Dee
+
+T=...you?
+W=BROK
+C1A=ANGRY
+
+T=I... wasn't expecting...
+W=GHERKIN
+
+T=Dr. Gherkin, I explicitly told you we should meet privately.
+W=DEE
+
+T=This is just my bodyguard, don't worry about them.
+W=GHERKIN
+C3A=NORMAL
+
+T=What's your name?
+W=GHERKIN
+
+T=...
+W=DEE
+
+T=Dee.
+W=DEE
+
+T=Let's keep this short. We're both busy people.
+W=DEE
+C2A=MEH
+
+T=I need some crucial information.
+W=DEE
+C2A=NORMAL
+
+T=V-very well, then. Ask away.
+W=GHERKIN
+C3A=EMBARRASSED
+TEE=PC06_GHERKIN_BOTSCOME1
+
+T=Uh-oh...
+W=BROK
+C1A=SURPRISED
+
+T=Sorry to interrupt but... Some "friends" are following us.
+W=BROK
+C1A=CONFUSED
+TEN=PC06_GHERKIN_TURNBOTS
+
+T=Oh gosh! Not again...
+W=GHERKIN
+C3A=WORRIED
+TEN=CH5_GHERKIN_COVER
+
+T=What's going on? Why are they attacking us?
+W=DEE
+C1A=ANGRY
+C2A=SURPRISED
+
+T=Beats me!
+W=BROK
+
+T=Stay back, I'll deal with them.
+W=BROK
+C1A=FURIOUS
+
+T=Ha! Don't think I'll simply stand by and watch.
+W=DEE
+C2A=COCKY
+TEN=PC06_GHERKIN_BOTSFIGHT_CHECK
+
+
+
+
+#-----------------------------
+ID=PC06_GHERKIN_FIGHTOVER1
+T=Looks like we're good.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=COCKY
+C3=GHERKIN
+C3A=WORRIED
+
+T=For now, anyway.
+W=BROK
+C1A=MAYBE
+
+T=Doctor Gherkin. Please follow me.
+W=DEE
+C2A=NORMAL
+TEN=PC06_GHERKIN_FIGHTOVER1EV
+
+T=A-alright.
+W=GHERKIN
+
+T=Wait!
+W=BROK
+C1A=YELL
+
+T=...?
+W=GHERKIN
+C3A=EMBARRASSED
+TEN=PC06_BROK_FACEDEE
+
+T=I don't trust her.
+W=BROK
+C1A=OPPOSITE
+
+T=No "thanks for the help," huh?
+W=DEE
+C2A=MEH
+
+T=I didn't ask for your help!
+W=BROK
+C1A=ANGRY
+
+T=Oh!
+W=DEE
+C2A=COCKY
+
+T=Mister cowboy thinks he's so strong!
+W=DEE
+
+T=This ain't no cowboy hat, miss. I'm a detective.
+W=BROK
+
+T=I see. Bodyguard, detective, and cowboy. You can do everything, huh?
+W=DEE
+C2A=MEH
+
+T=Argh...
+W=BROK
+C1A=STUPID
+
+T=It's none of your concern. I'm only here to interview the Doc.
+W=DEE
+C2A=NORMAL
+
+T=Somehow, I doubt that.
+W=BROK
+C1A=ANGRY
+
+T=What?!
+W=DEE
+C2A=WONDER
+
+T=While I was fighting, I started to put two and two together.
+W=BROK
+
+T=You're hiding something.
+W=BROK
+C1A=MOCK
+
+T=You were brainstorming in the middle of a fight?
+W=DEE
+
+T=This is ridiculous!
+W=DEE
+C2A=MEH
+
+T=Are you certain about this, Mister Detective?
+W=GHERKIN
+C3A=WORRIED
+
+T=Trust me on this.
+W=BROK
+C1A=ANGRY
+
+T=I don't have time to argue. Let's keep this moving.
+W=DEE
+C2A=ANGRY
+
+T=No.
+W=BROK
+
+T=My mission is to protect the Doc so he fixes the Pipe Pills. NOT to wander around for an interview!
+W=BROK
+C1A=FURIOUS
+
+T=We're not going anywhere until you've explained your true motive.
+W=BROK
+C1A=OPPOSITE
+
+T=(Sigh) Aren't you persistent...
+W=DEE
+C2A=COCKY
+
+T=Fine, you win. Ask away!
+W=DEE
+C1A=THINK
+C2A=MEH
+
+T=Doc. Leave us alone for a minute.
+W=BROK
+
+T=But...! Mister Detective...
+W=GHERKIN
+C3A=WORRIED
+C2A=LISTEN
+
+T=No worries. Put yourself in the corner.
+W=BROK
+C1A=MEH
+
+T=Scream if you spot one of those darn machines.
+W=BROK
+
+T=Aww... O-okay... 
+W=GHERKIN
+TEN=PC06_GHERKIN_MOVESAWAY
+
+T=D-Don't take too long...!
+W=GHERKIN
+
+T=Let's get started.
+W=BROK
+C1A=READY
+TEN=PC06_DEE_INTERROGATE
+
+
+
+#-----------------------------
+ID=PC06_INTERROGATION_EXIT1
+T=Wait.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=LISTEN
+
+T=Wait for what?
+W=DEE
+C2A=WONDER
+
+T=Just... wait.
+W=BROK
+TEN=PC06_FORCEACTIVATE_CLICKERS
+
+
+#-----------------------------
+ID=PC06_INTERROGATION_RESUME
+T=So...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+COMM=Resume interrogation
+TEN=PC06_DEE_INTERROGATE_RESUME
+
+#-----------------------------
+ID=PC06_INTERROGATION_LIMIT
+T=Hey!
+W=DEE
+C1=BROK
+C1A=CONFUSED
+C2=DEE
+C2A=ANGRY
+COMM=Go away after exiting interrogation
+TEN=PC06_DEE_INTERROGATELIMIT2
+
+T=Sorry...!
+W=BROK
+C1A=HAPPY
+
+#-----------------------------
+ID=PC06_CLUE_DEE_GHERKINWARN
+T=Earlier you mentioned this was none of my concern.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+CONTEXT=Interrogation
+
+T=But your actions say otherwise.
+W=BROK
+C1A=THINK
+
+T=My actions...?
+W=DEE
+C2A=WONDER
+
+T=The messages you sent me. "Don't trust that guy."
+W=BROK
+C1A=OPPOSITE
+
+T=Wondering about the sender, I asked a few questions to a... particular individual named The Gloom.
+W=BROK
+
+T=He confirmed a journalist woman sent them.
+W=BROK
+C1A=MEH
+
+T=No way. That guy promised to keep it confidential!
+W=DEE
+C2A=ANGRY
+
+T=I know how to squeeze the facts out of crooks like him.
+W=BROK
+C1A=ALRIGHT
+
+T=Now, considering you're the journalist who contacted Dr. Gherkin while concealing your identity...
+W=BROK
+C1A=MAYBE
+
+T=It's not hard to believe there's only one person behind all this.
+W=BROK
+
+T=You.
+W=BROK
+C1A=MOCK
+
+T=Good thinking. A bit far-fetched but...
+W=DEE
+C2A=COCKY
+
+T=You certainly hit the spot.
+W=DEE
+
+T=Yes, I have reasons to believe the doctor is not coming clean.
+W=DEE
+C2A=LISTEN
+
+T=Right now, I'm not sure who has the most secrets.
+W=BROK
+C1A=ANGRY
+
+T=But why bother warning me?
+W=BROK
+
+T=I'm... Not sure.
+W=DEE
+C2A=WONDER
+
+T=Trusting an investigator seemed right. To be honest, I'm already starting to regret it.
+W=DEE
+C2A=MEH
+
+T=There's no trust without truth. That's the whole point of this interrogation.
+W=BROK
+
+T=Now, I have some clues regarding your true identity.
+W=BROK
+C1A=MOCK
+TEN=PC06_INTERROGATION_IDENTITY
+#CLUE_DEE_GHERKINWARN
+
+#-----------------------------
+ID=PC06_CLUE_DEE_WORRIEDSIN
+T=Sin. The name rings a bell, huh?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DEE
+C2A=SURPRISED
+
+T=...
+W=DEE
+C2A=SAD
+
+T=Of course it does.
+W=BROK
+C1A=ALRIGHT
+
+T=He actually hired me for an investigation two days ago.
+W=BROK
+C1A=MEH
+
+T=I found a picture of him with a woman and a little girl in his apartment.
+W=BROK
+
+T=That night, when I met you in the Virtual Arena and accidentally revealed your appearance...
+W=BROK
+
+T=And I still hate you for that.
+W=DEE
+C2A=NORMAL
+
+T=Took me a while to make the connection but I finally realized...
+W=BROK
+C1A=MAYBE
+
+T=You were in that picture.
+W=BROK
+C1A=THINK
+
+T=The hacker also mentioned you did research on Sin.
+W=BROK
+
+T=Obviously. You've been separated for a while and you wanted to know his whereabouts.
+W=BROK
+
+T=All this makes sense.
+W=BROK
+
+T=Sin was a Drumer, so you'd have to be as well.
+W=BROK
+
+T=Journalism is a job only Drumers can do.
+W=BROK
+
+T=Aaaand... I guess it's a coincidence you've asked us to meet right next to where he's been living?
+W=BROK
+C1A=MOCK
+
+T=But I don't believe in coincidences!
+W=BROK
+C1A=READY
+
+T=...
+W=DEE
+
+T=Impressive.
+W=DEE
+C2A=MEH
+
+T=I'd say you're the best detective ever, if not for the luck that you've had in all these situations.
+W=DEE
+
+T=Not luck. Quite the opposite. Always implicated in the worst events.
+W=BROK
+C1A=TIRED
+
+T=In any case, you're right.
+W=DEE
+C1A=THINK
+C2A=LISTEN
+
+T=Sin Silver is my husband. The love of my life.
+W=DEE
+C2A=SAD
+CLUE=CLUE_DEE_DEELASTNAME
+
+T=Weird way to describe someone you ditched.
+W=BROK
+C1A=THINK
+
+T=It's a long and personal story.
+W=DEE
+C2A=NORMAL
+
+T=Okay. Let's not deviate from the matter at hand.
+W=BROK
+C1A=ANGRY
+
+T=Although this brings a whole new question.
+W=BROK
+
+T=What exactly are you looking for?
+W=BROK
+C1A=MOCK
+TEN=PC06_INTERROGATION_WANT
+#CLUE_DEE_WORRIEDSIN
+
+
+
+
+#-----------------------------
+ID=PC06_CLUE_DEE_GHERKINTHREAT
+T=It's obvious you hold a grudge against Dr. Gherkin.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=LISTEN
+
+T=First, you warn me about him with your messages.
+W=BROK
+
+T=Then you're worried about what may happen to your husband.
+W=BROK
+C1A=MAYBE
+
+T=I have a hard time imagining it, but...
+W=BROK
+
+T=Is Dr. Gherkin a threat?
+W=BROK
+C1A=WONDER
+
+T=...
+W=DEE
+C2A=NORMAL
+
+T=I'm still gathering evidence... but in an indirect way, yes.
+W=DEE
+
+T=He doesn't know my identity yet and I intend to use that as an opportunity.
+W=DEE
+
+T=He's just a scientist working in a factory. What could he possibly do?
+W=BROK
+C1A=THINK
+
+T=That's where you're wrong! He's much more than that!
+W=DEE
+C2A=ANGRY
+
+T=So... The scientist job is a front?
+W=BROK
+C1A=WONDER
+
+T=More or less.
+W=DEE
+
+T=I think I'm starting to understand.
+W=BROK
+C1A=THINK
+TEN=PC06_INTERROGATION_WHYGHERKIN
+#CLUE_DEE_GHERKINTHREAT
+
+
+
+#-----------------------------
+ID=PC06_CLUE_DEE_GHERKINGOVERNMENT
+T=No way!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=NORMAL
+
+T=You asked the hacker for searches on the Government...
+W=BROK
+
+T=And he accidentally slipped that he's "part of" something.
+W=BROK
+C1A=WONDER
+
+T=So you finally DO understand.
+W=DEE
+C2A=HAPPY
+
+T=That guy... as slim as an Asparagusite...
+W=BROK
+
+T=Is a member of the Government?
+W=BROK
+C1A=CONFUSED
+
+T=Yes. And I have proof of it.
+W=DEE
+
+T=Ah, now I get it. Ever since meeting him, I thought he looked familiar!
+W=BROK
+C1A=READY
+
+T=Impossible. Citizens don't know the members of the Government.
+W=DEE
+C2A=NORMAL
+
+T=Well, true.
+W=BROK
+C1A=WONDER
+
+T=Wait, but that doesn't make any sense!
+W=BROK
+C1A=STUPID
+
+T=Why would he risk his life around here, all alone?
+W=BROK
+C1A=ANGRY
+
+T=I have a theory on this.
+W=DEE
+
+T=Besides. The Government's purpose is to serve the citizens, isn't it?
+W=BROK
+
+T=Don't be silly. You know things aren't that simple.
+W=DEE
+C2A=MEH
+
+T=Hmm...
+W=BROK
+C1A=THINK
+
+T=I bet this is the reason why you're directly concerned.
+W=BROK
+TEN=PC06_INTERROGATION_GOVERNMENT
+#PC06_CLUE_DEE_GHERKINTHREAT
+
+
+#-----------------------------
+ID=PC06_PICKONE_GOVERNMENT_WRONG1
+T=That's why! You only bring trouble around here!
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=DEE
+C2A=NORMAL
+
+T=Hey!
+W=DEE
+C2A=ANGRY
+
+T=Erm... Sorry. I meant...
+W=BROK
+C1A=MAYBE
+
+#-----------------------------
+ID=PC06_CLUE_SECTOR56X_GOVERNMENT
+T=You're working for the media...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+
+T=And the Government controls the media.
+W=BROK
+
+T=I can see where this is going.
+W=BROK
+
+T=In a nutshell, yes.
+W=DEE
+C2A=COCKY
+
+T=That guy is responsible for my situation and Sin's.
+W=DEE
+C2A=ANGRY
+TEN=PC06_INTERROGATION_COMPLETE
+
+#-----------------------------
+ID=PC06_DEE_AFTERINTERROGATION1
+T=Your situation? You still didn't tell...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=DEE
+C2A=NORMAL
+
+T=Listen.
+W=DEE
+
+T=Time is running out. I need you to trust me.
+W=DEE
+C1A=ANGRY
+
+T=What's your plan?
+W=BROK
+
+T=Luring him into a place where he can't escape.
+W=DEE
+C2A=WONDER
+
+T=What...?
+W=BROK
+C1A=SURPRISED
+TEN=PC06_BOTSEVERYWHERE1
+
+T=That sounds pretty...
+W=BROK
+C1A=THINK
+TEN=PC06_BOTMUSIC
+
+T=Aaaargh!
+W=GHERKIN
+C1A=CONFUSED
+C2A=SURPRISED
+C3=GHERKIN
+C3A=WORRIED
+TEN=PC06_DEE_LOOKTOWARDSBOTS
+
+
+
+#-----------------------------
+ID=PC06_DEE_AFTERINTERROGATION2
+T=What the heck? They can jump now?!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=DEE
+C2A=SURPRISED
+C3=GHERKIN
+C3A=WORRIED
+CONTEXT=Big number of robots come at them
+
+T=What's going on here?
+W=DEE
+
+T=There's so many of them!
+W=BROK
+C1A=WORRIED
+TEN=PC06_DEE_RELEASECAMERA
+
+T=W-We're done for!
+W=GHERKIN
+
+T=Come on! We gotta get out of here!
+W=DEE
+C2A=NORMAL
+
+T=And go where?!
+W=BROK
+C1A=THINK
+
+T=Anywhere is better than here.
+W=DEE
+
+T=T-there's a bunker...a few blocks from here...
+W=GHERKIN
+
+T=I-I have access to it...
+W=GHERKIN
+
+T=Good!
+W=DEE
+
+T=Stay close to us, doc!
+W=BROK
+C1A=READY
+
+T=Let's go!
+W=BROK
+TEN=PC06_ENDINTERROGATE_FADEOUT
+
+#-----------------------------
+ID=PC06_ENDINTERROGATE3
+T=(Going to the bunker...)
+BVOICE=BROK
+MOOD=THINK
+
+T=(This was a perfect opportunity for her plan.)
+MOOD=THINK
+
+T=(I should have protested against it. But in the situation we were in...)
+MOOD=THINK
+
+T=(This was our only option.)
+MOOD=THINK
+TEN=CH5_STORY250_COMPLETE_BROK
+
+
+
+###############################################
+# PROOFREAD - jblaker - 20/06/2019
+# EXPRESSIONS - Chris Barnes - 27/07/2019
+###############################################
+#-----------------------------
+#= Hitting the flower girl
+#-----------------------------
+ID=PC06_FLOWERS_HIT1
+T=Good heavens! You've scared me!
+W=FLOWER
+C2=FLOWER
+C2A=SURPRISED
+
+#-----------------------------
+ID=PC06_FLOWERS_HIT2
+T=I'll give you a discount!... Please don't hurt me!
+W=FLOWER
+C2=FLOWER
+C2A=SURPRISED
+
+#-----------------------------
+ID=PC06_FLOWERS_HIT3
+T=Aaahhaaah!...
+W=FLOWER
+C2=FLOWER
+C2A=SURPRISED
+C2_EYESHUT=1
+
+#-----------------------------
+ID=PC06_FLOWERS_BACKAFTERHIT
+T=Sir!...
+W=FLOWER
+C1=BROK
+C1A=THINK
+C2=FLOWER
+C2A=SURPRISED
+
+T=Erm... Sorry about earlier.
+W=BROK
+C1A=HAPPY
+
+T=Danante! I forgive you. This is the will of the almighty!
+W=FLOWER
+C2A=HAPPY
+TEN=CLICKERS_BACK
+
+#-----------------------------
+ID=PC06_FLOWERS_WALKONSTAND1
+T=Sir! Please get off my stall!
+W=FLOWER
+C2=FLOWER
+C2A=SAD
+NB=1
+D=60
+
+#-----------------------------
+ID=PC06_FLOWERS_WALKONSTAND2
+T=If you break anything, I'll have you pay for it!
+W=FLOWER
+C2=FLOWER
+C2A=HAPPY
+NB=1
+D=60
+
+#-----------------------------
+ID=PC06_FLOWERS_WALKONSTAND3
+T=The almighty shall punish you for this!
+W=FLOWER
+C2=FLOWER
+C2A=SAD
+NB=1
+D=60
+
+#----------------------
+ID=PC06_STALL_STEAL1
+T=Nah... Even free, I wouldn't want those.
+W=BROK
+A=THINK
+
+
+#-----------------------------
+ID=PC06_PIPEPILL_HIT1
+T=Oh no... Not you too!
+W=FLOWER
+C1=BROK
+C1A=READY
+C2=FLOWER
+C2A=SURPRISED
+
+T=Whadd'ya mean?
+W=BROK
+C1A=THINK
+
+T=The Squealers. They've broken it.
+W=FLOWER
+C2A=SAD
+
+T=Did you see them?
+W=BROK
+
+T=It's obvious. Who else could do this?
+W=FLOWER
+C2A=SURPRISED
+
+#-----------------------------
+ID=PC06_TYPE_DEATH
+T=There you go!
+W=BROK
+A=ALRIGHT
+
+
+
+#----------------------
+ID=PC06_TRAILER1
+T=We need to stay positive!
+W=FLOWER
+C1=BROK
+C1A=MAYBE
+C2=FLOWER
+C2A=HAPPY
+
+
+
+#----------------------------------------------------
+ID=COOP_PC06_FLOWERS1
+T=One of those Untail street merchants.
+T=For better or worse, she sees everything going on around here.
+

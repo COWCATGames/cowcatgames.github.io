@@ -1,0 +1,611 @@
+#-------------------------------
+#= GRAFF --- MUSEUM
+#-------------------------------
+
+#----- Interactions --------
+PC_EXPOSITION=Exposición
+PC_EXPOSITIONLEFT=Exposición (izquierda)
+PC_EXPOSITIONRIGHT=Exposición (derecha)
+PC_STAND=Puesto
+PC_SIGN=Letrero
+PC_PIANO=Piano grande
+PC_ROUNDSTONE=Piedra redonda
+PC_TRIANGLESTONE=Piedra triangular
+PC_STELE=Monolito
+PC_PARCHMENT=Pergamino
+PC_DATE=Fecha
+PC_PILL=Pastilla
+PC_SCREW=Tornillo
+PC_TEXT=Texto
+PC_SMALLOBJECT=Objeto pequeño
+#Of a piano keyboard
+PC_KEY=Llave
+PC_SPACE=Espacio
+PC_APPARATUS=Aparato
+PC_MARK=Marca
+PC_CRACK=Grieta
+PC_MIRROR=Espejo
+
+#----- Choices / Items --------
+GOT_PHONEMUSEUM=¡Una pieza del museo!
+GOT_RECTANGLEPRINT=¡Una losa rectangular!
+GOT_HALFCIRCLEPRINT=¡Una media esfera!
+GOT_FULLCIRCLEPRINT=¡Una esfera!
+GOT_TRIANGLEPRINT=¡Un prisma triangular!
+
+GOT_PARCHMENT=¡Un pergamino!
+
+#----- Topics --------
+PC17_READ_CHOICE=¿Leer?
+PC17_SKIP_MUSEUM=¿Saltar los puzzles del museo?
+
+#----- Dialog --------
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+# *****************************************************************
+# CONTEXT - Graff & Ott arrive at the museum for their last trial
+# *****************************************************************
+# Graff
+PC17_ARRIVE1-1=No hay muchos visitantes...
+# Ott
+PC17_ARRIVE1-2=Obviamente.
+# Graff
+PC17_ARRIVE1-3=¿A qué te refieres?
+# Ott
+PC17_ARRIVE1-4=Es un día de puertas abiertas. A los Drumers no les gusta juntarse con los de los Slums.
+# Ott
+PC17_ARRIVE1-5=Y por otro lado, a los Slumers les apremia más la supervivencia que la cultura.
+# Graff
+PC17_ARRIVE1-6=Tienes razón...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Exploring the room
+# *****************************************************************
+# Graff
+PC17_EXPOSKULL1-1=Qué cráneo tan raro...
+# Graff
+PC17_EXPOSKULL1-2=¿Orejas a los costados en vez de arriba? ¿Sin dientes caninos afilados?
+# Graff
+PC17_EXPOSKULL1-3=Pero qué bichos más raros...
+# Graff
+PC17_EXPOSKULL1-4="Este cráneo data del año 1 000 000 A.R. Esto significa Antes del Renacimiento."
+# Graff
+PC17_EXPOSKULL1-5="Se encontró en el fondo del océano, lo que explica el estado de preservación tan excepcional para su edad."
+# Graff
+PC17_EXPOSKULL1-6="Pertenece a una especie extinta a la que llamamos Terrenario Dócil. Se ha determinado que éste, a diferencia de la mayoría de animales primitivos, era bípedo."
+# Graff
+PC17_EXPOSKULL1-7="Los objetos abajo expuestos parecen haber sido fabricados a mano por dicha especie."
+# Graff
+PC17_EXPOSKULL1-8="Según estudios, el Terrenario Dócil podría un ancestro nuestro. El primero en presentar habilidades cognitivas y creativas avanzadas, aunque rudimentarias en comparación."
+#----------------------------------------------------
+# Graff
+PC17_EXPOSKULL2-1=1 000 000 A.R.
+# Graff
+PC17_EXPOSKULL2-2=Esas criaturas parecen aterradoras... Unas bestia, de hecho.
+#----------------------------------------------------
+# Graff
+PC17_PHONE1-1=Que aparato tan extraño...
+# Graff
+PC17_PHONE1-2=Es algo parecido a mi móvil, pero todavía más arcaico si cabe.
+# Graff
+PC17_PHONE1-3=¿Por qué rayos está en el suelo? ¡Si es una pieza de la exposición!
+#----------------------------------------------------
+# Graff
+PC17_PHONESTAND1-1="Un espejo primitivo, ennegrecido por el paso del tiempo."
+# Graff
+PC17_PHONESTAND1-2="Su forma compacta hizo que fuera de fácil transporte para los Terrenarios Dóciles."
+# Graff
+PC17_PHONESTAND1-3="Más específicamente, la presencia de incontables bacterias indica que los alojaban en sus rectos."
+#----------------------------------------------------
+# Graff
+PC17_PHONESTAND_PUT-1=¡Cabe! Y... ¿muestra algo?...
+#----------------------------------------------------
+# Graff
+PC17_PHONESTAND_AFTER-1=Muestra un símbolo extraño.
+#----------------------------------------------------
+# Graff
+PC17_PHONESTAND2-1=Me parece que aquí debería ir algo.
+#----------------------------------------------------
+# Graff
+PC17_SIGN_TEXT1-1="Esta medalla conmemora la invención de la pastilla Notox (también conocida como Pastilla Diaria o Antipolución) en el año 385 Después del Renacimiento."
+# Graff
+PC17_SIGN_TEXT1-2="Contrarresta los efectos de la Niebla permanente en Atlasia. Sin embargo, el efecto de protección solo dura un día."
+# Graff
+PC17_SIGN_TEXT1-3="La historia ha olvidado el nombre de nuestro benefactor. Aún así, este gran descubrimiento permitió la expansión del mundo moderno fuera de los límites del Domo."
+# Graff
+PC17_SIGN_TEXT1-4=Pedazo de ignorante el que haya escrito esto... Ni que vivir fuera del Domo fuera algo bueno.
+#----------------------------------------------------
+# Graff
+PC17_SCREW1-1=¿Este tornillo no está un poco... suelto?
+#----------------------------------------------------
+# Graff
+PC17_SIGN_SCREW_SCREWDRIVER-1=... Espera, ¿qué?...
+# Graff
+PC17_SIGN_SCREW_SCREWDRIVER-2=Mi destornillador no vale... La punta es diferente.
+# Graff
+PC17_SIGN_SCREW_SCREWDRIVER-3=Pues claro... Es un panel muy antiguo.
+# Graff
+PC17_SIGN_SCREW_SCREWDRIVER-4=Debe haber otra manera...
+#----------------------------------------------------
+# Graff
+PC17_SIGN_SCREW_OTHERS-1=No encaja... El tornillo tiene forma triangular.
+#----------------------------------------------------
+# Graff
+PC17_SCREW_TRIANGLEPRINT-1=...
+# Graff
+PC17_SCREW_TRIANGLEPRINT-2=¡Sí! ¡La punta de la pirámide encaja en el tornillo!
+# Graff
+PC17_SCREW_TRIANGLEPRINT-3=Y...
+# Graff
+PC17_SCREW_TRIANGLEPRINT-4=¡Eso es!
+#----------------------------------------------------
+# Graff
+PC17_SIGN_DATE1-1=385 D.R... ¿Llevamos tanto tiempo usándolas?...
+#----------------------------------------------------
+# Graff
+PC17_SIGN_PILL1-1=Parece una versión antigua de la pastilla Notox.
+#----------------------------------------------------
+# Graff
+PC17_EXPOUNTAIL1-1="Estatuas, colas emplumadas y piedras que datan del año 200 000 A.R."
+# Graff
+PC17_EXPOUNTAIL1-2="Estas características distintivas los hacen, sin lugar a dudas, los primeros indicios de culto al Sincola."
+#----------------------------------------------------
+# Graff
+#Stands as in "slots for making the statues stand"
+PC17_EXPOUNTAIL2-1=Mmm... Tres huecos, dos estatuas.
+#----------------------------------------------------
+# Graff
+PC17_STATUETTE_PUT-1=¡La estatuilla encaja en el hueco!
+# Ott
+PC17_STATUETTE_PUT-2=¡Bien hecho, Graff! ¡Creo que has desbloqueado algo!
+# Graff
+PC17_STATUETTE_PUT-3=Mmm... ¿Un símbolo? ¿Eso es todo?
+# Ott
+PC17_STATUETTE_PUT-4=Debe ser importante.
+#----------------------------------------------------
+# Graff
+#We talk about piano keys here - not door keys!
+PC17_PIANO1-1=Qué raro. Este piano tiene todas las teclas alineadas. ¿Por qué será?
+# Graff
+PC17_PIANO1-2=Debería echarle un ojo.
+#----------------------------------------------------
+# Ott
+PC17_PIANO_FOUND1-1=¿Qué ha sido eso?...
+# Graff
+PC17_PIANO_FOUND1-2=¡He resuelto el último acertijo!
+# Ott
+PC17_PIANO_FOUND1-3=¡Bien hecho, Graff! ¡Sabía que lo lograrías!
+# Ott
+PC17_PIANO_FOUND1-4=De vuelta al Centro, ¿cierto?
+# Graff
+PC17_PIANO_FOUND1-5=Vale... Vámonos.
+#----------------------------------------------------
+# Graff
+PC17_PIANO_KEYMISSING1-1=No puedo pulsar esta tecla... ¡No está!
+#----------------------------------------------------
+# Graff
+PC17_PIANO_TEXT1-1="A partir del siglo IX, la tecnología evolucionó progresivamente. El entretenimiento se volvió una parte clave de la sociedad, tal y como demuestran los objetos culturales recuperados."
+# Graff
+PC17_PIANO_TEXT1-2="Este es un antiguo instrumento musical que hemos restaurado rigurosamente en base a los materiales encontrados en sus inmediaciones."
+#----------------------------------------------------
+# Graff
+PC17_PIANO_KEYFIXED1-1=¡Perfecto! ¡Todo en su lugar!
+#----------------------------------------------------
+# Graff
+PC17_EXPODOME1-1=¡Oh, no necesito que nadie me explique esto!
+# Graff
+PC17_EXPODOME1-2=Ese es el Día del Renacimiento. ¡El gran punto de inflexión tras la catástrofe que terminó contaminando el planeta entero!
+# Graff
+PC17_EXPODOME1-3=Si no fuera por el Domo, la humanidad se hubiera extinguido.
+#----------------------------------------------------
+# Graff
+PC17_EXPODOME2-1="Un par de héroes emplearon tecnología puntera con el fin de evitar el exterminio de la biosfera."
+# Graff
+PC17_EXPODOME2-2="En concreto, construyeron un prototipo del Domo para cobijar a los supervivientes, con la esperanza de brindarles un futuro próspero y seguro."
+# Graff
+PC17_EXPODOME2-3="A raíz de este hecho, se produjo un corte total en las relaciones entre las diferentes naciones y continentes de la Tierra, que siguen mermadas a día de hoy."
+#----------------------------------------------------
+# Graff
+PC17_EXPODOME2B-1=Qué extraño. Es una exposición sobre la construcción del Domo, pero no hay ninguno.
+#----------------------------------------------------
+# Graff
+PC17_EXPODOME_PUTDOME-1=Esto debería valer para reemplazar el antiguo Domo.
+# Graff
+PC17_EXPODOME_PUTDOME-2=... ¡Ey! ¡Ha aparecido algo!
+#----------------------------------------------------
+# Graff
+PC17_EXPODOME_FULLCIRCLEPRINT-1=Buena idea pero... una esfera saldría rodando...
+#----------------------------------------------------
+# Graff
+PC17_STONEGROWTH1-1="Se estima que la población creció de 50.000 habitantes el Día del Renacimiento, a un millón en el año 172 D.R."
+# Graff
+PC17_STONEGROWTH1-2="No obstante, el Domo fue diseñado para alojar tan sólo a 200.000 personas."
+# Graff
+PC17_STONEGROWTH1-3="Por ende, se tuvieron que establecer restricciones en el número de nacimientos."
+#----------------------------------------------------
+# Graff
+PC17_STONEGROWTH2-1=Restricciones que aún sufrimos hoy en día...
+#----------------------------------------------------
+# Graff
+PC17_PARCHMENTSPACE1-1=El color de este panel es diferente... ¿Había algo aquí antes?
+#----------------------------------------------------
+# Graff
+PC17_PARCHMENTSPACE_PLACE-1=Justo lo que pensaba. ¡Encaja perfectamente!
+#----------------------------------------------------
+# Graff
+PC17_PARCHMENTSPACE_OK-1=¿Solo un símbolo?
+#----------------------------------------------------
+# Graff
+PC17_PARCHMENT1-1=Un papel viejo...
+#----------------------------------------------------
+# Graff
+PC17_PARCHMENT1B-1=Y lo único que tiene escrito es un extraño símbolo. ¿Para qué será?...
+#----------------------------------------------------
+# Graff
+PC17_PARCHMENT_TOOFAR-1=¿Eso es un papel?... No alcanzo a cogerlo desde aquí.
+#----------------------------------------------------
+# Graff
+PC17_PRINTER1-1="Un juego antiguo que data del año 1600 D.R., puramente mecánico. ¡Juega y podrás ganar un premio especial!"
+#----------------------------------------------------
+# Graff
+PC17_PRINTERWON1-1=¿He ganado?... Me parece que ha caído algo.
+#----------------------------------------------------
+# Graff
+PC17_PRINTERWON2-1=Algo ha caído en ese cajón.
+#----------------------------------------------------
+# Graff
+PC17_PRINTERWON_ALREADY-1=¿...?
+# Graff
+PC17_PRINTERWON_ALREADY-2=¿Nada?...
+#----------------------------------------------------
+# Graff
+PC17_PRINTER_TAKEBEFORE-1=Mmm... Esta cosa no se enciende. ¿Qué pasa?
+#----------------------------------------------------
+# Graff
+PC17_DRAWER1-1=Parece que es un cajón, pero no veo manera de abrirlo...
+#----------------------------------------------------
+# Graff
+PC17_DRAWER_PICK1-1=¡Genial! ¡Aquí está mi regalo!
+#----------------------------------------------------
+# Graff
+PC17_DRAWER_PICK2-1=¡Otro premio para mí!
+#----------------------------------------------------
+# Graff
+PC17_DRAWER_PICK3-1=¡Este no lo tenía!
+#----------------------------------------------------
+# Graff
+PC17_DRAWER_PICK4-1=Y con este termino la colección.
+#----------------------------------------------------
+# Graff
+PC17_EXPOREVOLT1-1=Algo de historia sobre la revuelta...
+#----------------------------------------------------
+# Graff
+PC17_EXPOREVOLT_READ-1="Cinco siglos después del Día del Renacimiento, se produjo una escalada de tensiones entre los descendientes de los nómadas que vivían fuera del Domo, y los domistas que vivían dentro."
+# Graff
+PC17_EXPOREVOLT_READ-2="Pese a que sus ancestros habían decidido libremente vivir fuera, los nómadas empezaron a exigir sin fundamento las mismas propiedades y derechos que los domistas, con una libre circulación entre ambos lados."
+# Graff
+PC17_EXPOREVOLT_READ-3="Lo que comenzó como una revuelta, evolucionó en una guerra que se cobró miles de víctimas."
+# Graff
+PC17_EXPOREVOLT_READ-4="Fue durante este conflicto que los domistas bautizaron a los habitantes del exterior como 'Slumers', mientras que estos apodaron 'Drumers' a la gente que vivía bajo el Domo."
+# Graff
+PC17_EXPOREVOLT_READ-5="Hoy en día la sociedad sigue consternada por la extraordinaria violencia de aquel suceso. Desde entonces, no ha ocurrido ninguna otra rebelión que involucrara a todos los Slumers."
+#----------------------------------------------------
+# Graff
+PC17_EXPOTECHNOLOGICAL1-1=Un holograma con una cronología de los inventos más importantes de nuestra civilización.
+# Graff
+PC17_EXPOTECHNOLOGICAL1-2="El uso de fuentes de poder potencialmente contaminantes estuvo prohibido hasta el siglo XXV. Esto obstaculizó la capacidad de los científicos para mejorar nuestra vida diaria."
+# Graff
+PC17_EXPOTECHNOLOGICAL1-3="¡Estamos siendo testigos de una época dorada, con grandes avances tecnológicos en menos de una generación!"
+# Ott
+PC17_EXPOTECHNOLOGICAL1-4=Ya, claro... Será para los Drumers. Para nosotros las cosas van mucho más despacio.
+# Graff
+PC17_EXPOTECHNOLOGICAL1-5=Me has quitado las palabras de la boca.
+#----------------------------------------------------
+# Graff
+PC17_EXPOTECHNOLOGICAL2-1=Paquetubo, bicicletas propulsadas, ropa termoregulable, bibliotecas e-físicas...
+# Graff
+PC17_EXPOTECHNOLOGICAL2-2=No tengo acceso a ninguno de los inventos listados.
+#----------------------------------------------------
+# Graff
+PC17_STELE1-1="La probabilidad de que un recién nacido sea mujer es de un 31%. La arqueología sugiere que esto no siempre fue así, pero es el resultado inequívoco de nuestra evolución."
+# Graff
+PC17_STELE1-2=Quién sabe... Tal vez la naturaleza lo hizo para prevenir el crecimiento descontrolado de la población.
+# Graff
+PC17_STELE1-3="Durante varios siglos, los hombres y las mujeres pelearon por sus derechos. En la actualidad, las mujeres son consideradas demasiado valiosas para realizar trabajos frívolos, y se encargan exclusivamente de criar a su prole."
+# Ott
+PC17_STELE1-4=De nuevo, se han olvidado mencionar que nada de esto se aplica a los Slums... Bueno, salvo la baja proporción de mujeres.
+# Graff
+PC17_STELE1-5=Sí... La verdad es que no hay demasiadas mujeres por los Slums.
+# Graff
+PC17_STELE1-6=Y las pocas que he conocido están demasiado atareadas ganándose el pan como para tener hijos.
+#----------------------------------------------------
+# Graff
+PC17_STELE2-1=A menos que consigamos ser Drumers, podemos ir olvidándonos de casarnos jamás.
+# Ott
+PC17_STELE2-2=Bueno, en mi caso...
+# Ott
+PC17_STELE2-3=La verdad... Dudo mucho... que nadie me quisiera...
+# Graff
+PC17_STELE2-4=¿Por qué dices eso?
+# Ott
+PC17_STELE2-5=Ya sabes por qué. Soy un espantoso híbrido.
+# Graff
+PC17_STELE2-6=¡No, de eso nada!
+# Graff
+PC17_STELE2-7=O sea... Sí, vale, eres un híbrido y ambos sabemos que no será fácil, pero eres una bellísima persona.
+# Graff
+PC17_STELE2-8=¡Y además eres el mejor amigo del mundo mundial!
+# Graff
+PC17_STELE2-9=Seguro que encuentras tu media naranja.
+# Ott
+PC17_STELE2-10=¿Tú crees?...
+# Ott
+PC17_STELE2-11=...
+# Ott
+PC17_STELE2-12=¿Y qué hay de ti?
+# Graff
+PC17_STELE2-13=¿Yo?...
+# Ott
+PC17_STELE2-14=Sí. Cuando te hagas Drumer...
+# Ott
+PC17_STELE2-15=¿Intentarás formar una familia?
+# Graff
+PC17_STELE2-16=La verdad... no había pensado en eso...
+# Graff
+PC17_STELE2-17=Mi familia está tan desestructurada, que me da miedo que algún hijo mío acabe sufriéndolo también.
+# Graff
+PC17_STELE2-18=Además...
+# Ott
+PC17_STELE2-19=¿Además, qué?
+# Graff
+PC17_STELE2-20=Nada...
+#----------------------------------------------------
+# Graff
+PC17_STELE_HOLE1-1=Ey, ¡mira! ¡Hay una cerradura ahí!
+# Ott
+PC17_STELE_HOLE1-2=¡Tienes razón! Creo que hay algo escrito dentro...
+# Ott
+#This means : Consciousness Center, under Stubot seat. We're meant to look for the key under Stubot's seat inside the school.
+PC17_STELE_HOLE1-3="CC, bajo asiento STU".
+# Graff
+PC17_STELE_HOLE1-4=Sospechoso. ¿Crees que es una pista?
+# Ott
+PC17_STELE_HOLE1-5=Puede ser...
+#----------------------------------------------------
+# Graff
+PC17_STELE_HOLE2-1=Una cerradura con las palabras "CC, bajo asiento STU".
+# Graff
+PC17_STELE_HOLE2-2=Mmm...
+#----------------------------------------------------
+# Graff
+PC17_STELE_HOLE_KEY-1=Me la juego a que encaja en la cerradura...
+# Graff
+PC17_STELE_HOLE_KEY-2=¡Sip! ¿Y ahora qué debería hacer?
+# Ott
+PC17_STELE_HOLE_KEY-3=Mmm... Creo recordar que con estas viejas cerraduras hacía falta además girar la llave.
+# Graff
+PC17_STELE_HOLE_KEY-4=Probemos a ver...
+# Ott
+PC17_STELE_HOLE_KEY-5=¡Fíjate! ¡Se ha movido un panel justo debajo!
+# Graff
+PC17_STELE_HOLE_KEY-6=¿Y esto nos ayuda?...
+# Ott
+PC17_STELE_HOLE_KEY-7=Supongo que debería...
+#----------------------------------------------------
+# Graff
+PC17_STELE_HOLE_DONE-1=Ya he terminado con eso.
+#----------------------------------------------------
+# Ott
+PC17_TRIBOT_BEFORE1-1=¿Qué hace este Tribot aquí?
+# Graff
+PC17_TRIBOT_BEFORE1-2=Me pregunto...
+# Graff
+PC17_TRIBOT_BEFORE1-3=¿Quizás hace de segurata?
+#----------------------------------------------------
+# Graff
+PC17_TRIBOT1-1=Estos Tribots me dan mal rollo... Voy a dejar de mirarlos.
+#----------------------------------------------------
+# Graff
+PC17_TRIBOT_GUARD1-1=Sin respuesta...
+#----------------------------------------------------
+# Graff
+PC17_TRIBOT_OOPS-1=¡Uh oh!
+#----------------------------------------------------
+# Ott
+#If Graff makes a mistake with the piano, there is a fight with bots
+PC17_TRIBOT_GRAFFATTACKED1-1=¡Oh no! ¡¡¡Graff, cuidado!!!
+# Graff
+PC17_TRIBOT_GRAFFATTACKED1-2=¡¿Qué?!...
+#----------------------------------------------------
+# Ott
+PC17_TRIBOT_GRAFFATTACKED2-1=Fiuu... ¡Bien hecho!
+# Ott
+PC17_TRIBOT_GRAFFATTACKED2-2=Siento no haberte ayudado... Me bloqueo en situaciones así.
+# Graff
+PC17_TRIBOT_GRAFFATTACKED2-3=No te preocupes. Pero... me parece que ha sido una advertencia.
+# Ott
+PC17_TRIBOT_GRAFFATTACKED2-4=Sí. Creo que hemos cometido un error.
+# Ott
+PC17_TRIBOT_GRAFFATTACKED2-5=¡Deberíamos tener más cuidado!
+#----------------------------------------------------
+# Graff
+PC17_TRIBOT_GRAFFATTACKEDAGAIN-1=¡Diablos! ¡La he vuelto a liar!...
+# Graff
+PC17_TRIBOT_GRAFFATTACKEDAGAIN-2=...
+# Graff
+PC17_TRIBOT_GRAFFATTACKEDAGAIN-3=Al menos parece que ya no quedan más robots asesin...
+#----------------------------------------------------
+# Graff
+PC17_TRIBOT_GRAFFATTACKEDAGAIN2-1=Oh tío...
+#----------------------------------------------------
+# Ott
+PC17_LASERS_JUMP1-1=¡Graff! ¿Estás bien?...
+# Graff
+PC17_LASERS_JUMP1-2=Ni hablar...
+#----------------------------------------------------
+# Graff
+PC17_LASERS_JUMP2-1=Espero que se haya acabado...
+#----------------------------------------------------
+# Graff
+PC17_SIGNBUTTON1-1=¿Un letrero... o un botón?
+# Graff
+PC17_SIGNBUTTON1-2=En cualquier caso, no llego.
+#----------------------------------------------------
+# Graff
+PC17_SIGNBUTTON2-1=Estoy bastante seguro de que este botón desactiva los lásers, así que... ya no me hace falta.
+#----------------------------------------------------
+# Graff
+PC17_LASERSCONTROL1-1=Apuesto que esto controla los láseres...
+#----------------------------------------------------
+# Graff
+PC17_LASERSCONTROL2-1=Ya no tiene sentido.
+#----------------------------------------------------
+# Ott
+PC17_LASERSCONTROLHIT1-1=Graff... ¿Tú estás seguro de que esta es la manera correcta?...
+#----------------------------------------------------
+# Graff
+PC17_LASERSCONTROLHIT2-1=¿Ves?... ¡Ha funcionado!
+# Ott
+PC17_LASERSCONTROLHIT2-2=Sí, pero...
+# Graff
+PC17_LASERSCONTROLHIT2-3=Ni peros ni peras. Sigamos.
+#----------------------------------------------------
+# Graff
+PC17_LASERSCONTROL_SCREWDRIVER-1=No parece que tenga ningún tornillo.
+#----------------------------------------------------
+# Graff
+PC17_LASERSCONTROL_OTHERS-1=No puedo moverlo...
+# Graff
+PC17_LASERSCONTROL_OTHERS-2=Quizás deba usar otros métodos más... agresivos.
+#----------------------------------------------------
+# Graff
+PC17_EXPOAUTARCHISM1-1="5 de Tredecio del 3026 D.R.: el Día de la Autarquía."
+#----------------------------------------------------
+# Graff
+PC17_EXPOAUTARCHISM_READ-1="A lo largo de la historia, se ha experimentado con diversos sistemas políticos."
+# Graff
+PC17_EXPOAUTARCHISM_READ-2="El más longevo, una democracia directa que abarcaba varias naciones, fue sustituido tras años de escepticismo y una profunda crisis económica."
+# Graff
+PC17_EXPOAUTARCHISM_READ-3="Los ciudadanos del ámbito político se oponían al cambio, ya que negaban que pudiera haber un sistema mejor."
+# Graff
+PC17_EXPOAUTARCHISM_READ-4="Sin embargo, la vasta mayoría de los ciudadanos de Atlasia ignoraron sus argumentos."
+# Graff
+PC17_EXPOAUTARCHISM_READ-5="Creían que la política ocupaba una parte cada vez mayor de su tiempo libre, y se consideraban incapaces de tomar decisiones informadas."
+# Graff
+PC17_EXPOAUTARCHISM_READ-6="Se llevó a cabo un estudio que llegó a la conclusión de que los debates políticos eran perjudiciales para la salud."
+# Graff
+PC17_EXPOAUTARCHISM_READ-7="Por lo tanto, se decidió prohibir completamente la política."
+# Graff
+PC17_EXPOAUTARCHISM_READ-8="En la actualidad nos regenta un Gobierno autoproclamado."
+# Graff
+PC17_EXPOAUTARCHISM_READ-9="Así, los ciudadanos de a pie no deben preocuparse en su día a día de las decisiones cruciales para el país."
+# Graff
+PC17_EXPOAUTARCHISM_READ-10="Además, Atlasia se independizó, y cortó todos los lazos con los países de su entorno."
+# Graff
+PC17_EXPOAUTARCHISM_READ-11="Ahora los ciudadanos de Atlasia pueden disfrutar de una vida más apacible. Esta nueva libertad es por lo que se le denominó Autarquía."
+#----------------------------------------------------
+# Graff
+PC17_BREAKWALL1-1=Hay una X en esta pared...
+#----------------------------------------------------
+# Ott
+PC17_BREAKWALL_HIT-1=¡Guau!
+# Ott
+PC17_BREAKWALL_HIT-2=¡No me esperaba que golpeases la pared!
+# Graff
+PC17_BREAKWALL_HIT-3=Ehh... Bueno, ha funcionado.
+#----------------------------------------------------
+# Graff
+PC17_MARK_OTHERS-1=...
+# Graff
+PC17_MARK_OTHERS-2=Por mucho que intente hacer un agujero... con esto no voy a poder.
+#----------------------------------------------------
+# Graff
+PC17_BREAKWALL_AFTER-1=¿No he visto este símbolo en algún otro lugar?...
+#----------------------------------------------------
+# Graff
+PC17_EXPORECENTA1-1="Durante el Día de la Autarquía ocurrió otro suceso importante que pocos medios hicieron público."
+# Graff
+PC17_EXPORECENTA1-2="El recién formado gobierno estuvo al borde del colapso, debido a que un grupo de los Slums denominado 'Squealers', intentaron dar un golpe de estado."
+# Graff
+PC17_EXPORECENTA1-3="Reclamaban el control para impedir un futuro en que la sociedad dependiera fundamentalmente de robots, quitando puestos de trabajo a los ciudadanos."
+# Graff
+PC17_EXPORECENTA1-4="Sin embargo, no tuvieron éxito, y el nuevo gobierno los desterró rápidamente fuera del país con la ayuda del ejército, a fin de evitar posibles intentos futuros."
+# Graff
+PC17_EXPORECENTA1-5=Fue una medida bastante dura, aunque en retrospectiva... creo que hicieron lo correcto. Esos Squealers escoria de la peor cala...
+# Graff
+PC17_EXPORECENTA1-6=Espera... Esa foto...
+#----------------------------------------------------
+# Graff
+PC17_EXPORECENTA1B-1=...
+# Graff
+PC17_EXPORECENTA1B-2=Debe de ser mi imaginación.
+#----------------------------------------------------
+# Graff
+PC17_CRACK1-1=Me pregunto qué causó esta grieta...
+#----------------------------------------------------
+# Graff
+PC17_CRACK_OTHERS-1=Mejor dejarla así...
+#----------------------------------------------------
+# Graff
+PC17_EXPORECENTB1-1="9 de Lorgosto de 3030 D.R.: el Apagón."
+# Graff
+PC17_EXPORECENTB1-2="Ese fatídico día se produjo un fallo total de la red eléctrica que duró varios minutos, algo inédito en la historia contemporánea."
+# Graff
+PC17_EXPORECENTB1-3="Esto derivó en un gran número de incidencias a lo largo de todo el país."
+# Graff
+PC17_EXPORECENTB1-4="El Domo se vio afectado, lo que podría haber tenido graves consecuencias de no ser por la presencia de Tribots militares que impidieron el paso a los Slumers."
+# Graff
+PC17_EXPORECENTB1-5="Además, la Triweb se cayó, lo que provocó que gran parte de la población sufriera desafortunados percances, yendo desde quedarse atrapados en ascensores hasta la caída de Aerocoches."
+# Graff
+PC17_EXPORECENTB1-6="Varios accidentes se cobraron la vida de ciudadanos del Domo, que siempre serán recordados."
+# Graff
+PC17_EXPORECENTB1-7=Varios accidentes...
+# Graff
+PC17_EXPORECENTB1-8=El nombre de mamá está en la lista...
+#----------------------------------------------------
+# Graff
+PC17_EXPORECENTB2-1=Prefiero no volver a leerlo.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talk to Ott
+# *****************************************************************
+# Graff
+PC17_OTT_KLAY1-1=¿Te has fijado que Klay no anda por aquí?...
+# Ott
+PC17_OTT_KLAY1-2=Sí... Espero que estemos haciendo lo correcto.
+#----------------------------------------------------
+# Ott
+PC17_OTT_KLAYKILLED1-1=Por un momento me he preguntado dónde podría estar Klay... Sigo sin hacerme a la idea...
+# Graff
+PC17_OTT_KLAYKILLED1-2=...
+# Ott
+PC17_OTT_KLAYKILLED1-3=¿Tú sabes algo, Graff?
+# Graff
+PC17_OTT_KLAYKILLED1-4=... No, la verdad...
+# Ott
+PC17_OTT_KLAYKILLED1-5=¿Mmm?...
+# Ott
+PC17_OTT_KLAYKILLED1-6=Graff... ¿Me estás ocultado algo?...
+# Graff
+PC17_OTT_KLAYKILLED1-7=Perdón... Es que...
+# Graff
+PC17_OTT_KLAYKILLED1-8=Tenemos que centrarnos.
+# Ott
+PC17_OTT_KLAYKILLED1-9=(Suspira) Tienes razón...
+#----------------------------------------------------
+# Graff
+PC17_OTT_WELCOME1-1=Ey.
+#----------------------------------------------------
+# Graff
+PC17_MIRROR1-1=Mmm...
+#----------------------------------------------------
+# Graff
+PC17_STAND_EMPTY1-1=Vacío.
+# Graff
+PC17_STAND_EMPTY1-2=Abajo pone...
+#----------------------------------------------------
+# Unknown
+COOP_PC17_TRIBOT1-1=No. Lo. Toques.

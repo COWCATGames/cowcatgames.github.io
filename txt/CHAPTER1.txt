@@ -1,0 +1,204 @@
+#-----------------------------------------
+#=CHAPTER 1 TEXT POTENTIALLY USED EVERYWHERE
+#-----------------------------------------
+
+#----------------------------------------------------
+#= CALL SIN
+#----------------------------------------------------
+ID=CH1_CALL_SIN1
+T=Yeah? Why aren't you here yet?
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=WORRIED
+
+T=I'm comin'! Don't worry!
+W=BROK
+C1A=HAPPY
+
+T=But, err... Where do you live?
+W=BROK
+C1A=WONDER
+
+T=Are you kidding me?! I told you! I sent a message with the address!
+W=SIN
+C2A=ANGRY
+
+
+T=Oh... Right! Sorry...
+W=BROK
+C1A=MAYBE
+TEN=INTERFACE_CALL_END
+
+T=Better hurry. I don't get many clients... and I really need that dough.
+W=BROK
+C1A=MAYBE
+C2=NONE
+
+#----------------------------------------------------
+ID=CH1_CALL_SIN2
+T=No need. I got his address. Let's go!
+W=BROK
+A=READY
+
+#----------------------------------------------------
+ID=CH1_CALL_SIN3
+T=No... I don't need him to investigate.
+W=BROK
+A=MAYBE
+
+T=I'll just report to him after I find that darn gun.
+W=BROK
+A=MEH
+
+#----------------------------------------------------
+ID=CH1_CALL_SINROOM
+T=Erm...
+W=BROK
+A=MEH
+
+#----------------------------------------------------
+ID=CH1_CALL_SIN_PANEL
+T=I'm getting sick of waiting! Where are you?!
+W=SIN
+C1=BROK
+C1A=SURPRISED
+C2=SIN
+C2A=ANGRY
+
+T=Right in front of your building, actually...
+W=BROK
+C1A=HAPPY
+
+T=I... just have a small problem. The metal gate is closed. How do I get in?
+W=BROK
+C1A=WONDER
+
+T=Enter the code on the panel! I sent it to you in a message!
+W=SIN
+
+T=[...]
+C2=NONE
+
+T=Yeah but...
+W=BROK
+
+T=Too late. He hung up.
+W=BROK
+C1A=DOWN
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH1_CALL_SHAY1
+T=...
+W=BROK
+A=THINK
+
+T=She's not replying. What's she doin'?
+W=BROK
+A=ANGRY
+
+T=I better check it out.
+W=BROK
+A=MAYBE
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH1_CALL_SHAY2
+T=Hi! I was wondering if...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Sorry, can't talk right now.
+W=SHAY
+C1A=DOWN
+C2A=WONDER
+
+T=If it's super important, come to the garage!
+W=SHAY
+C2A=HAPPY
+TEN=INTERFACE_CALL_END
+
+T=Yeah but...
+W=BROK
+A=WONDER
+C2=NONE
+
+T=Ugh! She hung up.
+W=BROK
+A=ANGRY
+
+
+#----------------------------------------------------
+ID=CH1_CALL_SHAY_PYRAMID
+T=Hey!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=I'm in front of the mainframe and...
+W=BROK
+
+T=Erm... What am I supposed to do, exactly...?
+W=BROK
+C1A=WONDER
+
+T=Touch the panel.
+W=SHAY
+C2A=HAPPY
+
+T=Yeah but... What next?
+W=BROK
+
+T=I have no idea. It was supposed to work.
+W=SHAY
+C2A=WONDER
+
+T=Oh, great...
+W=BROK
+C1A=DOWN
+
+T=There's a screen, a bunch of debris, and a touch panel shaped like a triangle.
+W=BROK
+C1A=THINK
+
+T=A triangle? Really?
+W=SHAY
+C2A=WONDER
+
+T=They love triangles. That must be important.
+W=SHAY
+C2A=MEH
+
+T=Erm... Okay...
+W=BROK
+C1A=TIRED
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+#= CALL GRAFF
+#----------------------------------------------------
+ID=CH1_CALL_GRAFF_BEFOREFAIR
+T=I'll call him right before the Science Fair.
+W=BROK
+A=MAYBE
+
+T=But first, I have work to do!
+W=BROK
+A=READY
+
+
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 19/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# EXPRESSIONS - breakXedge - 16/08/2019
+# EXPRESSIONS2 - Oggy Cather - 17/09/2019
+###############################################

@@ -1,0 +1,3868 @@
+﻿#-------------------------------
+#=POLICE JAIL
+#-------------------------------
+
+
+#----------------------
+#= Intro
+#----------------------
+ID=PC09B_INTRO1
+T=Go ahead. First cell.
+W=RJ
+C1=BROK
+C1A=DOWN
+C2=RJ
+C2A=NORMAL
+TEN=PC09B_INTRO1B
+CONTEXT=Brok has been arrested, first time coming to the room
+
+#----------------------
+ID=PC09B_INTRO2
+T=Take a shower.
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+
+T=What...? In front of you?
+W=BROK
+C1A=CONFUSED
+COMM=NB : For this very first dialog only, Brok may talk in a formal way to R.J.
+
+T=This is a dry wash. No need to take off your clothes.
+W=RJ
+
+T=Oh...
+W=BROK
+C1A=DOWN
+TEN=PC09B_INTRO2B
+
+
+#----------------------
+ID=PC09B_INTRO3
+T=(Germs elimination in progress...)
+D=180
+BVOICE=VARIOUS
+
+T=(Process over.)
+D=90
+
+T=That was fast!
+W=BROK
+C1A=THINK
+TEN=PC09B_INTRO3B
+
+#----------------------
+ID=PC09B_INTRO4
+T=...
+W=BROK
+A=DOWN
+
+T=Oooh... How did I get into such a mess?
+W=BROK
+A=DOWN
+
+T=(Sigh)
+W=BROK
+A=DOWN
+
+T=Graff would be ashamed of me...
+W=BROK
+A=DOWN
+TEN=PC09B_INTRO_NEXT
+
+T=!!!
+W=BROK
+A=SURPRISED
+
+T=The fair! I forgot!
+W=BROK
+
+T=He's gonna kill me if I'm not there on time!
+W=BROK
+A=CONFUSED
+
+T=4 PM. I can still make it.
+W=BROK
+A=THINK
+
+T=Gotta be there, no matter what!
+W=BROK
+A=READY
+
+T=Let's find a way out of this rat hole!
+W=BROK
+TEN=PC09B_TUTORIAL_SWITCH
+
+
+
+#----------------------
+#= Bed
+#----------------------
+ID=PC09B_BED1
+T=No time to relax! 
+W=BROK
+A=ANGRY
+CONTEXT=Room interactions
+
+#----------------------
+#= Laser barrier hole
+#----------------------
+ID=PC09B_DEFECT1
+T=What's wrong here? Seems like...
+W=BROK
+A=WONDER
+TEN=PC09B_DEFECT_TOUCH
+
+#----------------------
+ID=PC09B_DEFECT1B
+T=Yup. A bit resistant but no doubt.
+W=BROK
+A=THINK
+
+T=This is a hole in the laser barrier!
+W=BROK
+A=MOCK
+
+T=Not the first time I've seen that.
+W=BROK
+
+T=I'm glad this technology is far from perfect. Makes my life easier.
+W=BROK
+TEN=PC09B_DEFECT_CHECKSINK
+
+#----------------------
+ID=PC09B_DEFECT2
+T=It's firm but I can pass my hand through here!
+W=BROK
+A=MOCK
+
+#----------------------
+ID=PC09B_DEFECT_SINK1
+T=Hey! I can access that sink!
+W=BROK
+A=THINK
+
+T=Let's see.
+W=BROK
+A=THINK
+TEN=PC09B_DEFECT_TOUCHSINK
+
+#----------------------
+ID=PC09B_DEFECT_TOUCHSINK1
+T=(Sigh) What are you fiddling with?
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILWORRIED
+
+T=Look! I was able to open it from this side!
+W=BROK
+A=HAPPY
+
+T=Open what?
+W=SIN
+
+T=A trap door! At the back of the sink!
+W=BROK
+C1A=MOCK
+C2A=JAILNORMAL
+
+T=This is our exit ticket!
+W=BROK
+
+T=Uh-huh...
+W=SIN
+TEN=PC09B_DEFECT_CROUCH
+
+T=(Fiddling...)
+W=BROK
+C1A=THINK
+
+T=I... think I'm unscrewing somethin'...
+W=BROK
+TEN=PC09B_DEFECT_DOOPENSINK2
+
+T=Ah-ha!
+W=BROK
+C1A=HAPPY
+
+T=Now it's leaking water. Perfect!
+W=BROK
+
+
+#----------------------
+ID=PC09B_DEFECT_SINK2
+T=Let's try it again.
+W=BROK
+A=WONDER
+TEN=PC09B_DEFECT_DOOPENSINK2
+
+#----------------------
+ID=PC09B_DEFECT_ALREADY
+T=No need to touch anymore. It's perfect!
+W=BROK
+A=HAPPY
+
+
+#----------------------
+ID=PC09B_DEFECT_RJ
+T=R.J. dropped his hat on top of the sink.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC09B_DEFECT_DONE
+T=I'm done with that... for now at least.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC09B_DEFECT_CATFUR_NOSINK1
+T=Hey, Sin!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=JAILNORMAL
+
+T=Can you take this cat fur?
+W=BROK
+C1A=MOCK
+
+T=Why?
+W=SIN
+
+T=Just do it! I'll explain later.
+W=BROK
+
+T=I... prefer not to. I don't feel like moving... anywhere.
+W=SIN
+C2A=JAILDOWN
+
+T=Okay... I'll find something else.
+W=BROK
+C1A=THINK
+
+#----------------------
+ID=PC09B_DEFECT_CATFUR_NOSINK2
+T=Throwing cat fur to the ground wouldn't be very efficient.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC09B_DEFECT_CATFUR_SINK
+T=I put some cat fur on the top of the sink.
+W=BROK
+A=THINK
+
+
+#----------------------
+ID=PC09B_DEFECT_CATFUR_HAT
+T=Here ya go.
+W=BROK
+A=HAPPY
+
+T=Cat fur in the hat! What a magician!
+W=BROK
+TEN=PC09B_C2_RJ_TIMER0
+
+
+#----------------------
+#= Fur
+#----------------------
+ID=PC09B_FUR1
+T=Some... fur? Now where did this come from?
+W=BROK
+A=THINK
+
+T=Oh! I know!
+W=BROK
+A=HAPPY
+
+T=I had it on my clothes when I showered! It got stuck in the drain.
+W=BROK
+A=HAPPY
+
+T=Who knows? Might be useful!
+W=BROK
+A=READY
+TEN=PC09B_CATFUR_TAKE
+
+#----------------------
+#= Distributor
+#----------------------
+ID=PC09B_DISTRIBUTOR_GETFOOD
+T=Yurgh...
+W=BROK
+A=CONFUSED
+TEN=PC09B_DISTRIBUTOR_TAKEFOOD
+
+#----------------------
+ID=PC09B_DISTRIBUTOR_MAX
+T=Got enough rotten fruits for a lifetime.
+W=BROK
+A=ANGRY
+
+
+
+#----------------------
+#= Shower
+#----------------------
+ID=PC09B_SHOWER1
+T=A dry shower. I don't like those very much.
+W=BROK
+A=OPPOSITE
+
+T=Nothing beats the relaxing contact of water!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC09B_SHOWER2
+T=Hmm...
+W=BROK
+A=THINK
+
+T=Can't see any removable part, nor anything that might help.
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Toilets
+#----------------------
+ID=PC09B_TOILETS1
+T=Nope! I can't do this in front of strangers!
+W=BROK
+C1=BROK
+C1A=ANGRY
+
+T=Go ahead. I couldn't care less at the moment.
+W=SIN
+C2=SIN
+C2A=JAILNORMAL
+
+T=I wasn't referring to you!
+W=BROK
+C1A=CONFUSED
+
+#----------------------
+#= Sink
+#----------------------
+ID=PC09B_SINK1
+T=Yup. It works.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC09B_SINK2
+T=No space to insert anything.
+W=BROK
+A=THINK
+
+T=Nothing to touch or pick up.
+W=BROK
+A=MAYBE
+
+T=My sink might not be a crucial part of my escape plan after all!
+W=BROK
+
+#----------------------
+#= Sink
+#----------------------
+ID=PC09B_SCREEN1
+T=I'm... unsure what all this is supposed to mean.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC09B_SCREEN2
+T=Some weird signs I'm unable to decipher. Do they expect prisoners to have a Math degree?
+W=BROK
+A=WONDER
+
+T=Graff or Shay would probably understand but I don't have their IQ.
+W=BROK
+A=DOWN
+
+T=Oh well. I'll find some way to escape, anyway!
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC09B_SCREEN_VISITOR1
+T=A timer...? For visitors?
+W=BROK
+A=WONDER
+
+T=Fortunately it's stuck. Jails aren't what they used to be!
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+ID=PC09B_SCREEN_BOOK1
+T=Hey, looks like it's on "Book reading" mode!
+W=BROK
+A=MOCK
+TEN=PC09B_SCREEN_CLOSEUP
+
+
+#----------------------
+#= Touch panel
+#----------------------
+ID=PC09B_TOUCHPANEL1
+T=Five against one this opens my cage!
+W=BROK
+A=HAPPY
+
+T=Why is it on the wrong side? (Sigh)
+W=BROK
+A=DOWN
+
+#----------------------
+ID=PC09B_TOUCHPANEL_FREE1
+T=What for? Closing the cell...?
+W=BROK
+A=ANGRY
+
+#------------------------------
+ID=PC09B_TOUCHPANEL_SEAT_YES1
+T=I'm free!
+W=BROK
+A=HAPPY
+TEN=PC09B_SEAT_DISABLE
+
+#------------------------------
+ID=PC09B_TOUCHPANEL_SEAT_NO1
+T=No...!
+W=BROK
+A=SURPRISED
+
+#------------------------------
+ID=PC09B_TOUCHPANEL_SEAT_NO2
+T=Darn you, camera...!
+W=BROK
+A=ANGRY
+
+#------------------------------
+ID=PC09B_BREAKCAMERA1
+T=And one camera down!
+W=BROK
+A=HAPPY
+
+#------------------------------
+ID=PC09B_BREAKCAMERA2
+T=Bye-bye!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC09B_TOUCHPANEL_SIN
+T=I can't!
+W=BROK
+A=ANGRY
+
+--------------
+#= Seat
+#----------------------
+ID=PC09B_SEAT1
+T=That's a visitor seat.
+W=BROK
+A=THINK
+
+T=It automatically adjusts its height according to the person's size.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC09B_CAMERABREAK
+T=It's useless.
+W=BROK
+A=ANGRY
+
+T=I can't break that camera like this. The seat doesn't have enough force for that.
+W=BROK
+A=OPPOSITE
+
+
+#----------------------
+ID=PC09B_C1FLOAT1
+T=The hero of the day! I owe you my freedom, little plastic disk!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC09B_C1FLOAT2
+T=No time to sit!
+W=BROK
+A=OPPOSITE
+
+
+#----------------------
+ID=PC09B_SEAT_NOTDEBUG
+T=No visitors detected.
+BVOICE=VARIOUS
+D=90
+
+#----------------------
+ID=PC09B_SEAT_NOTDEBUG1
+T=Hmm...
+W=BROK
+A=THINK
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+ID=PC09B_SEAT_NOTDEBUG2
+T=It's useless. I don't have any visitors...
+W=BROK
+A=ANGRY
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+#= Emergency button
+#----------------------
+ID=PC09B_EMERGENCYBUTTON1
+T=I can't reach it from here...
+W=BROK
+A=TIRED
+
+T=I wonder what would happen if someone pressed it, though!
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC09B_EMERGENCYBUTTON_FREE1
+T=Oops!
+W=BROK
+A=CONFUSED
+TEN=PC09B_EMERGENCYBUTTON_PRESS2
+
+#----------------------
+ID=PC09B_EMERGENCYBUTTON_FREE1B
+T=It's OK! I'm sure no one heard it...
+W=BROK
+A=STUPID
+
+#----------------------
+ID=PC09B_EMERGENCYBUTTON_RJ1
+T=Uh-oh! Better hide...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+TEB=PC09B_SEAT_HIDE
+
+T=What da heck?!
+W=RJ
+C1A=HAPPY
+C2=RJ
+C2A=SURPRISED
+TEB=PC09B_EMERGENCYBUTTON_RJCOMES
+
+T=Why is dat alarm on?
+W=RJ
+
+T=Hey, don't look at me! Can't do anythin' from here!
+W=BROK
+
+T=Mrrph...
+W=RJ
+C2A=ANGRY
+TEN=PC09B_EMERGENCYBUTTON_RJPUSH
+
+#----------------------
+ID=PC09B_EMERGENCYBUTTON_RJ2
+T=Oops...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+TEB=PC09B_SEAT_HIDE
+TEN=PC09B_EMERGENCYBUTTON_RJCOMES
+
+T=Again?!
+W=RJ
+C2=RJ
+C2A=SURPRISED
+TEN=PC09B_EMERGENCYBUTTON_RJPUSH
+
+
+#----------------------
+ID=PC09B_CAMERASEAT_RJ1
+T=Erm...
+W=BROK
+C1=BROK
+C1A=HAPPY
+TEB=PC09B_SEAT_HIDEAWAY
+TEN=PC09B_EMERGENCYBUTTON_RJCOMES
+
+T=Hey!
+C1A=SURPRISED
+C2=RJ
+C2A=ANGRY
+W=RJ
+
+T=What was dat noise?!
+W=RJ
+
+T=No idea! What could we do from here?
+W=BROK
+
+T=Mrrph. I'm keeping an ear on ya both!
+W=RJ
+TEN=PC09B_RJ_GOAWAY
+
+T=(Something triggered that sound. The camera...?)
+W=BROK
+C1A=WONDER
+C2=NONE
+MOOD=THINK
+#TEN=PC09B_SEAT_RESTORE
+
+
+#----------------------
+ID=PC09B_CAMERASEAT_RJ2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+TEB=PC09B_SEAT_HIDEAWAY
+TEN=PC09B_EMERGENCYBUTTON_RJCOMES
+
+T=What the heck was dat sound again?!
+W=RJ
+C2=RJ
+C2A=SURPRISED
+
+T=Dunno. A microwave oven?
+W=BROK
+
+T=Oh yeah! My coffee.
+W=RJ
+C2A=NORMAL
+TEN=PC09B_RJ_GOAWAY
+
+T=(What an annoying camera...)
+W=BROK
+C2=NONE
+MOOD=THINK
+TEN=PC09B_SEAT_RESTORE
+
+
+#----------------------
+ID=PC09B_CAMERASEAT_RJ3
+T=...
+W=BROK
+C1=BROK
+C1A=HAPPY
+
+TEB=PC09B_SEAT_HIDEAWAY
+TEN=PC09B_EMERGENCYBUTTON_RJCOMES
+
+T=Argh! Will this stop?!
+W=RJ
+C2=RJ
+C2A=ANGRY
+
+T=I didn't move!
+W=BROK
+
+T=...
+W=RJ
+TEN=PC09B_RJ_GOAWAY
+
+T=(It's pointless. As long as the guard is around, he'll "hear" my attempts to open this cage...)
+W=BROK
+C1A=WONDER
+C2=NONE
+MOOD=THINK
+TEN=PC09B_SEAT_RESTORE
+
+
+#----------------------
+#= Boxes
+#----------------------
+ID=PC09B_BOXES1
+T=They stored my stuff in the top-left box... 
+W=BROK
+A=THINK
+
+T=And the next one. It wouldn't fit.
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC09B_BOXES_FREE1
+T=I'll get back my things!
+W=BROK
+A=MOCK
+TEN=PC09B_BOXES_FREE1B
+
+#----------------------
+ID=PC09B_BOXES_FREEAFTER
+T=Darn. They kept the gun and other things.
+W=BROK
+A=MEH
+TEN=CLICKERS_BACK
+
+#----------------------
+ID=PC09B_BOXES_FREE2
+T=Sin would probably not appreciate it if I stole his belongings right in front of him...
+W=BROK
+A=MEH
+
+#----------------------
+#= Exit
+#----------------------
+ID=PC09B_EXIT1
+T=The only exit... Apparently.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC09B_EXITNOTYET
+T=Not without getting my stuff!
+W=BROK
+A=OPPOSITE
+TEN=PC09B_EXITNOTYET_BACK
+
+#----------------------
+ID=PC09B_EXITNOTYET2
+T=I should talk to Sin.
+W=BROK
+A=WONDER
+TEN=PC09B_EXITNOTYET_BACK
+
+#----------------------
+#= Book
+#----------------------
+ID=PC09B_BOOK_DEBUG1
+T=Corrupted file.
+BVOICE=VARIOUS
+
+T=What...?
+W=BROK
+A=WONDER
+TEN=PC09B_BOOK_DIAGRAM
+
+#----------------------
+ID=PC09B_BOOK_DEBUG2
+T=Corrupted file.
+BVOICE=VARIOUS
+TEN=PC09B_BOOK_DIAGRAM
+
+#----------------------
+ID=PC09B_BOOK_AD
+T=Hey, a digital ad! Cool!
+W=BROK
+A=HAPPY
+TEN=PC09B_BOOK_AD_GET
+
+#----------------------
+ID=PC09B_BOOK_DOWNLOAD
+T=The book download service has been discontinued.
+BVOICE=VARIOUS
+
+T=This closure means that prisoners can no longer make purchases in the book shop.
+T=However, it is still possible to access most of your purchased books for a limited time until...
+T=...Access has been definitively shut down.
+T=We sincerely thank our loyal customers for supporting the shop!
+TEN=PC09B_SCREEN_BACKFIRSTMENU
+
+
+#----------------------
+ID=PC09B_BOOK_NOTUPDATED1
+T=Device has outdated firmware.
+BVOICE=VARIOUS
+T=Please update to read the rest of the story.
+T=Do you wish to perform the update now?
+TEN=PC09B_BOOK_UPDATECHOICE
+
+#----------------------
+ID=PC09B_BOOK_UPDATE_YES
+T=Go ahead! But you better be quick!
+W=BROK
+A=ANGRY
+
+T=Update in progress...
+TEE=PC09B_BOOK_UPDATESTART
+SKIPEND=1
+BVOICE=VARIOUS
+
+#----------------------
+ID=PC09B_BOOK_UPDATE_LATER
+T=I don't have time to waste!
+W=BROK
+A=ANGRY
+
+T=Of course. That's your decision. The update is postponed.
+BVOICE=VARIOUS
+T=It will be performed automatically in 30 seconds.
+
+T=Gah!
+W=BROK
+A=SURPRISED
+TEN=PC09B_BOOK_UPDATEMUSIC
+
+T=In the meantime, please enjoy this music.
+
+T=Oh yeah. Best jail ever.
+W=BROK
+A=ANGRY
+
+T=...
+D=180
+TEXTONLY=1
+
+T=(Sigh) Each minute counts and here I am. Listening to elevator music in a cage.
+W=BROK
+A=ANGRY
+
+T=...
+D=180
+TEN=PC09B_BOOK_STOPMUSIC
+TEXTONLY=1
+
+T=Update will now be performed.
+TEN=PC09B_BOOK_UPDATE_YES
+
+#----------------------
+ID=PC09B_BOOK_READ1
+T=Page 1 - Advice for good behavior in jail. In order to simplify our jobs and increase your chances of release, you're invited to adopt good societal manners.
+TEXTONLY=1
+
+#----------------------
+ID=PC09B_BOOK_READ2
+T= In particular : 1- Stay calm 2- Do not throw yourself on the lasers to commit suicide. There's a risk some body parts may be stuck on them which makes cleaning more difficult for our teams. 3- Do not leak water or corporal substances outside of the reserved area called the toilet.
+TEXTONLY=1
+
+
+#----------------------
+ID=PC09B_BOOK_UPDATEFAILED
+T=The update failed. Error 0X85441253 - Unknown error.
+BVOICE=VARIOUS
+T=Restarting now with default firmware...
+TEN=PC09B_BOOK_UPDATEFAIL2
+
+#----------------------
+ID=PC09B_BOOK_UPDATEFAILED_BROK
+T=Ya gotta be kiddin' me...
+W=BROK
+A=ANGRY
+TEN=PC09B_BOOK_UPDATEFAIL2B
+
+#----------------------
+#= Debug mode activated
+#----------------------
+ID=PC09B_FLOOR_DEBUG1
+T=Debug mode activated.
+BVOICE=VARIOUS
+
+T=That voice... Did something happen...?
+W=BROK
+A=WONDER
+TEN=PC09B_FLOOR_DEBUGACTIVATE
+
+
+#----------------------
+#= Sin
+#----------------------
+ID=PC09B_SIN_WELCOME1
+T=Hey, Sin!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SIN
+C2A=JAILDOWN
+CONTEXT=Talking to Sin who is in the next cell, totally in low spirits
+
+T=You okay, man?
+W=BROK
+C1A=WONDER
+
+T=...
+W=SIN
+
+T=Yeah, I know. It's tough.
+W=BROK
+C1A=DOWN
+
+T=But... I'm sure everything's gonna be fine.
+W=BROK
+C1A=READY
+
+T=I'm gonna get us outta here! You'll see!
+W=BROK
+
+T=...I'm tired. Don't mind me.
+W=SIN
+CLUE=CLUE_SIN_PRISONER
+
+T=(Sigh)
+W=BROK
+C1A=TIRED
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_WELCOME2
+T=Can we talk?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_WELCOME3
+T=I need your help.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_HIMSELF_FORGIVE1
+T=Listen, pal. I'm sorry for what happened...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=JAILDOWN
+
+T=Why...?
+W=SIN
+
+T=Why are you sorry? I'm the only one responsible.
+W=SIN
+TEN=PC09B_SIN_HIMSELF1B
+IT=1
+
+
+#----------------------
+ID=PC09B_SIN_HIMSELF_DENOUNCE1
+T=Hey...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=JAILDOWN
+
+T=Stop.
+W=SIN
+
+T=I know what you're going to say.
+W=SIN
+TEN=PC09B_SIN_HIMSELF1B
+IT=1
+
+
+
+#----------------------
+ID=PC09B_SIN_HIMSELF1B
+T=I got you involved in this mess... Attacked you...
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=I robbed a pharmacy for precious medicine and miserably failed...
+W=SIN
+
+T=I deceived my old pal R.J. and intended to drug my wife...
+W=SIN
+
+T=But you did it for a noble cause.
+W=BROK
+C1A=READY
+
+T=No.
+W=SIN
+
+T=It was all for me. I'm selfish.
+W=SIN
+C1A=THINK
+
+T=And now I'll pay the price.
+W=SIN
+
+T=The Triangle should give me the death penalty.
+W=SIN
+
+T=The Triangle...?
+W=BROK
+C1A=WONDER
+
+T=Yeah. The members of the Government get to decide the fate of prisoners.
+W=SIN
+
+T=Wes told me it was an AI.
+W=BROK
+
+T=No. The AI does the investigation. The final judgment is in the hands of the Triangle.
+W=SIN
+
+T=And with all the evidence they've got... It's over for me.
+W=SIN
+CLUE=CLUE_TRIANGLE_JUDGEMENT
+TEN=PC09B_SIN_HIMSELF_CHECK
+IT=1
+
+
+#----------------------
+ID=PC09B_SIN_HIMSELF_FORGIVE2
+T=I refuse to believe it. You're a good person.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=SIN
+C2A=JAILDOWN
+
+T=Wrong...
+W=SIN
+
+T=You can't understand... You're nothing like me.
+W=SIN
+
+T=Yeah... I'm probably worse.
+W=BROK
+C1A=DOWN
+
+T=Huh?
+W=SIN
+C2A=JAILWORRIED
+
+T=Forget it.
+W=BROK
+C1A=TIRED
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC09B_SIN_HIMSELF_DENOUNCE2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=(Well... I guess he's right...)
+W=BROK
+MOOD=THINK
+
+T=(He caused all this.)
+W=BROK
+MOOD=THINK
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+
+
+
+#----------------------
+ID=PC09B_SIN_HIMSELF2
+T=I'm not sure I should insist...
+W=BROK
+A=DOWN
+TEN=PC09B_SIN_CHOICE_CHEER
+
+#----------------------
+ID=PC09B_SIN_HIMSELF2_CHEER1
+T=Look, I'm not a psychologist or anything but...
+W=BROK
+C1=BROK
+C1A=READY
+C2=SIN
+C2A=JAILDOWN
+
+T=What experience has taught me... is to hold onto your best memories and dreams.
+W=BROK
+
+T=Life out here is more often crappy than not.
+W=BROK
+
+T=You can decide to drown. Or you can fight!
+W=BROK
+
+T=To make it better. Not only for you but for everyone important around you.
+W=BROK
+
+T=You deserve a second chance.
+W=BROK
+
+T=Just... Don't do anything you might regret.
+W=BROK
+C1A=MAYBE
+
+T=You've got a daughter waiting for you.
+W=BROK
+
+T=...
+W=SIN
+
+T=I want you to promise me.
+W=BROK
+C1A=READY
+
+T=What?
+W=SIN
+
+T=Promise me you won't do anything stupid.
+W=BROK
+
+T=I...
+W=SIN
+
+T=(Sigh) Yeah.
+W=SIN
+C2A=JAILWORRIED
+
+T=Say it! Scream it!
+W=BROK
+
+T=Argh!!! Won't you leave me alone?!
+W=SIN
+C2A=JAILANGRY
+
+T=Be honest with yourself!
+W=BROK
+
+T=You think your life should end here? Like this?!
+W=BROK
+C1A=ANGRY
+
+T=Yes!
+W=SIN
+
+T=...
+W=SIN
+
+T=No...
+W=SIN
+C2A=JAILDOWN
+
+T=You... You're right.
+W=SIN
+
+T=I wanna see her again... If there's any chance...
+W=SIN
+
+T=So! What will you do?
+W=BROK
+
+T=I... I'll fight.
+W=SIN
+C2A=JAILNORMAL
+
+T=Louder!
+W=BROK
+
+T=I'm gonna fight!
+W=SIN
+C2A=JAILANGRY
+
+T=There!
+W=BROK
+C1A=READY
+
+T=But... I need some time.
+W=SIN
+C2A=JAILNORMAL
+
+T=Of course.
+W=BROK
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_HIMSELF2_DONTINSIST
+T=Better not. I might make things worse.
+W=BROK
+C1=BROK
+C1A=ANGRY
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_HIMSELF3
+T=I should leave him with his thoughts.
+W=BROK
+A=MAYBE
+MOOD=THINK
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ1
+T=Who's R.J.?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=Over there. The guard.
+W=SIN
+
+T=Oh...
+W=BROK
+C1A=STUPID
+
+T=He may be a bit simple minded but he was my friend. And I deceived him.
+W=SIN
+
+T=Any chance he might... not hold a grudge against you?
+W=BROK
+C1A=HAPPY
+
+T=What do you think? He threw me in the cell like a bag of potatoes.
+W=SIN
+
+T=He said the inspector was on the verge of firing him for being tricked like this.
+W=SIN
+
+T=Great...
+W=BROK
+C1A=DOWN
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ2
+T=OK, so he hates you now.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=JAILDOWN
+
+T=But I'll need him for my escape plan. Can you make an effort?
+W=BROK
+C1A=MOCK
+
+T=Not sure what you mean...
+W=SIN
+
+T=Just call him whenever I'll ask you.
+W=BROK
+
+T=Okay... Whatever.
+W=SIN
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ3
+T=(He said he'd make the effort to call R.J. if necessary. Good enough for now.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_THINK_FORGIVE
+T=(He got me into this. He's not gonna pay me and I might miss Graff's fair because of him!)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+
+T=(And yet, for some reason... I can't get myself to hate him.)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_THINK_DENOUNCE
+T=(He's miserable.)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+
+T=(Well, that's his problem. Maybe he can still help me get out of here though...?)
+W=BROK
+A=THINK
+MOOD=THINK
+
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_PANEL1
+T=You said you felt guilty for involving me in this.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=I am...
+W=SIN
+
+T=Then... May I ask a favor?
+W=BROK
+C1A=MAYBE
+
+T=Can you press a button on your panel?
+W=BROK
+
+T=Why?
+W=SIN
+
+T=Just curious.
+W=BROK
+C1A=MEH
+
+T=Whatever. Tell me which one.
+W=SIN
+TEN=PC09B_SIN_CHOICE_PANEL
+IT=1
+
+#----------------------
+ID=PC09B_SIN_PANEL2
+T=Can you press another?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=Ain't got nothing better to do.
+W=SIN
+TEN=PC09B_SIN_CHOICE_PANEL
+IT=1
+
+#----------------------
+ID=PC09B_SIN_PANEL3
+T=Can you...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SIN
+C2A=JAILDOWN
+SKIPEND=1
+
+T=Yeah.
+W=SIN
+TEN=PC09B_SIN_CHOICE_PANEL
+IT=1
+
+#----------------------
+ID=PC09B_SIN_PANEL_BUTTON1
+T=The first button.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_SWITCH1
+
+#----------------------
+ID=PC09B_SIN_PANEL_BUTTON2
+T=Second one?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_SWITCH2
+
+#----------------------
+ID=PC09B_SIN_PANEL_BUTTON3
+T=Maybe the third one?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_SWITCH3
+
+#----------------------
+ID=PC09B_SIN_PANEL_BUTTON4
+T=The fourth one!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=JAILDOWN
+
+T=Call R.J...? I wish I didn't have to but... Okay.
+W=SIN
+C2A=JAILWORRIED
+
+T=What am I gonna tell him?
+W=SIN
+TEN=PC09B_SIN_SWITCH4_CHOICE
+IT=1
+
+#----------------------
+ID=PC09B_SIN_PANEL_BUTTON4NOPE
+T=The fourth one!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=JAILDOWN
+
+T=To call R.J...?
+W=SIN
+
+T=Sorry, I don't feel like doing this...
+W=SIN
+C1A=TIRED
+TEN=PC09B_SIN_CHOICE_PANEL
+IT=1
+
+#----------------------
+ID=PC09B_SWITCH_ALREADY
+T=It's the current mode.
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=Oh... That's true.
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC09B_SIN_CHOICE_PANEL
+IT=1
+
+#----------------------
+ID=PC09B_SIN_PANEL_EXIT
+T=I'm not sure anymore.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ_CONVINCE1
+T=You've been friends. Any chance you can convince him to release me?
+W=BROK
+C1=BROK
+C1A=READY
+C2=SIN
+C2A=JAILDOWN
+
+T=Impossible! He doesn't trust me anymore!
+W=SIN
+
+T=Just try it anyway!
+W=BROK
+
+T=(Sigh) Okay...
+W=SIN
+TEN=PC09B_SIN_SWITCH4_CONVINCERJ
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ_CONVINCE2
+T=(I can't ask him this again... It would make things worse.)
+W=BROK
+A=MAYBE
+MOOD=THINK
+TEN=PC09B_SIN_SWITCH4_CHOICE
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ_SICK1
+T=Try and play sick! Then, attack him!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=SIN
+C2A=JAILDOWN
+
+T=No way. Not in my current state...
+W=SIN
+
+T=That's the point! This should make it more credible!
+W=BROK
+
+T=(Sigh) Sorry... I can't.
+W=SIN
+
+T=Don't worry. I'll find somethin' else.
+W=BROK
+C1A=DOWN
+TEN=PC09B_SIN_SWITCH4_CHOICE
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ_SICK2
+T=(He refused to do it...)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+TEN=PC09B_SIN_SWITCH4_CHOICE
+IT=1
+
+#----------------------
+ID=PC09B_SIN_C2_RJ_EXIT
+T=No idea...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ_SINK1
+T=Tell him there's a problem with your sink.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_RJ_SINKCHECK
+IT=1
+
+#----------------------
+ID=PC09B_SIN_RJ_SINK2
+T=The sink.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_RJ_SINKCHECK
+IT=1
+
+
+#----------------------
+ID=PC09B_SIN_RJ_SINK_NO1
+T=Is there?
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=No, just keep him busy.
+W=BROK
+TEN=PC09B_SIN_RJ_SINKCHECK2
+
+#----------------------
+ID=PC09B_SIN_RJ_SINK_BROKEN1
+T=Ah. That's why you messed with it.
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=Yup!
+W=BROK
+C1A=ALRIGHT
+TEN=PC09B_SIN_RJ_SINKCHECK2
+
+
+#----------------------
+ID=PC09B_SIN_RJ_SINK_AGAIN1
+T=Again? Okay...
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+TEN=PC09B_SIN_RJ_SINKCHECK2
+
+#----------------------
+ID=PC09B_SIN_RJ_SINK_ACTIVATE1
+T=In that case... I'll turn on the sink first.
+W=SIN
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILWORRIED
+TEN=PC09B_SIN_SWITCH4_SINK
+
+
+#----------------------
+ID=PC09B_SIN_RJBUSY
+T=Hey, while he's busy doing this...
+W=BROK
+C1=BROK
+C1A=READY
+C2=SIN
+C2A=JAILDOWN
+SKIPEND=1
+
+T=No talking to prisoners.
+W=RJ
+C4=RJ
+C4A=NORMAL
+
+T=Darn...
+W=BROK
+C1A=ANGRY
+
+
+#----------------------
+ID=PC09B_C2_RJ1
+T=Ya kiddin' me!
+W=RJ
+C1=SIN
+C1A=JAILWORRIED
+C2=RJ
+C2A=ANGRY
+COMM=R.J. is angry at Sin.
+
+T=I'm not clear? I dun wanna talk to you, ever!
+W=RJ
+TEN=PC09B_C2_RJ_NEXTTOPIC
+IT=1
+
+#----------------------
+ID=PC09B_C2_RJ2
+T=What?!
+W=RJ
+C1=SIN
+C1A=JAILSURPRISED
+C2=RJ
+C2A=ANGRY
+TEN=PC09B_C2_RJ_NEXTTOPIC
+IT=1
+
+
+#----------------------
+ID=PC09B_C2_RJ_CONVINCE
+T=I know. I've done terrible things these days.
+W=SIN
+C1=SIN
+C1A=JAILDOWN
+C2=RJ
+C2A=ANGRY
+
+T=Blame me as much as you want.
+W=SIN
+
+T=But this detective in the other cell... He shouldn't be kept prisoner.
+W=SIN
+
+T=I'm the only criminal here. I'll plead guilty to all the charges.
+W=SIN
+
+T=If there's any bit of friendship left between us. Please...
+W=SIN
+
+T=Let him out!
+W=SIN
+
+T=...
+W=RJ
+
+T=Read my lips.
+W=RJ
+
+T=NO!
+W=RJ
+TEN=PC09B_RJ_GOAWAY
+
+T=...
+W=SIN
+C2=NONE
+
+T=Sorry... I tried.
+W=SIN
+C2=BROK
+C2A=THINK
+
+T=That's okay. We'll find another way!
+W=BROK
+TEN=PC09B_C2_OVER
+
+
+#----------------------
+ID=PC09B_C2_RJ_SINK
+T=My sink is broken! Can you check?
+W=SIN
+C1=SIN
+C1A=JAILWORRIED
+C2=RJ
+C2A=NORMAL
+TEN=PC09B_C2_RJ_SINKCHECK
+
+#----------------------
+ID=PC09B_C2_RJ_SINKNOTBROKEN
+T=Nope. It's not.
+W=RJ
+C1=SIN
+C1A=JAILDOWN
+C2=RJ
+C2A=OPPOSITE
+
+T=Are you sure? I could swear...
+W=SIN
+
+T=Got perfect vision! Dat sink is fine!
+W=RJ
+
+T=Buy yourself new eyes!
+W=RJ
+TEN=PC09B_RJ_GOAWAY
+
+T=...
+W=SIN
+C2=NONE
+
+T=We'll need something more obvious.
+W=BROK
+C3=BROK
+C3A=WONDER
+
+T=Later. I'm tired...
+W=SIN
+TEN=PC09B_C2_OVER
+
+#----------------------
+ID=PC09B_C2_RJ_SINKBROKEN1
+T=Ya won't get me wid dat stupid excuse!
+W=RJ
+C1=SIN
+C1A=JAILWORRIED
+C2=RJ
+C2A=COCKY
+
+T=It's true! Look!
+W=SIN
+
+T=...Uh-oh.
+W=RJ
+C2A=SURPRISED
+
+T=If da boss sees this... Trouble!
+W=RJ
+
+T=Okay. I enter and fix dat.
+W=RJ
+
+T=No move!
+W=RJ
+TEN=PC09B_C2_RJ_ENTERPANEL
+
+#----------------------
+ID=PC09B_C2_RJ_SINKBROKEN2
+T=Can't be! Whaddya do?!
+W=RJ
+C1=SIN
+C1A=JAILWORRIED
+C2=RJ
+C2A=ANGRY
+
+T=Nothing! I didn't move!
+W=SIN
+
+T=Mrph...
+W=RJ
+TEN=PC09B_C2_RJ_ENTERPANEL
+
+
+#----------------------
+ID=PC09B_C2_RJ_SNEEZE1
+T=A--choo!
+W=RJ
+C2=RJ
+C2A=SURPRISED
+
+T=Huh?! Where's da cat?
+W=RJ
+C2A=ANGRY
+
+T=A cat?
+W=SIN
+C1=SIN
+C1A=JAILNORMAL
+
+T=Don't play dumb with me!
+W=RJ
+
+T=I'm a roo, not a cat. You should know that!
+W=SIN
+
+T=Weird...
+W=RJ
+
+#----------------------
+ID=PC09B_C2_RJ_SNEEZE2
+T=A--choo!
+W=RJ
+C2=RJ
+C2A=SURPRISED
+
+#----------------------
+ID=PC09B_C2_RJ_SINKREPAIR1
+T=Yah! Fixed.
+W=RJ
+C1=SIN
+C1A=JAILWORRIED
+C2=RJ
+C2A=COCKY
+
+T=Oh... Cool. I guess.
+W=SIN
+
+T=Dun bother me again!
+W=RJ
+TEN=PC09B_C2_RJ_EXITPANEL
+
+#----------------------
+ID=PC09B_C2_RJ_SNEEZEFULL
+T=Yeah! Dat sink is...
+W=RJ
+C2=RJ
+C2A=ANGRY
+TEN=PC09B_RJ_SNEEZE
+SKIPEND=1
+
+T=AAAaaAAa--choo!
+W=RJ
+C2A=SURPRISED
+C2_EYESHUT=1
+
+T=What the... A----c.... CHOO!
+W=RJ
+
+T=Huh?
+W=SIN
+C1=SIN
+C1A=JAILWORRIED
+
+T=My... achoo!... head... spinnin'...
+W=RJ
+C2_EYESHUT=0
+
+T=Arghhhh... ACHOO!!!
+W=RJ
+C2_EYESHUT=1
+TEN=PC09B_C2_RJ_FALL
+
+
+#----------------------
+ID=PC09B_C2_RJ_SNEEZEFULL2
+T=What...?
+W=SIN
+C1=BROK
+C1A=READY
+C3=SIN
+C3A=JAILWORRIED
+
+T=No time to explain! Get out!
+W=BROK
+
+T=But...
+W=SIN
+
+T=No...! ALERT...!
+W=RJ
+C2=RJ
+C2A=ANGRY
+C2_EYESHUT=1
+TEN=PC09B_C2_RJ_LASERSBACK
+
+
+#----------------------
+ID=PC09B_C2_RJ_SNEEZEFULL3
+T=Urgh...
+W=RJ
+C1=BROK
+C1A=SURPRISED
+C2=RJ
+C2A=SAD
+C3=SIN
+C3A=JAILSURPRISED
+C2_EYESHUT=1
+
+T=The barrier... is back.
+W=SIN
+C3A=JAILWORRIED
+C2=NONE
+
+T=Oh, great. All this for nada.
+W=BROK
+C1A=STUPID
+
+T=(Sigh) Now I'm in even more trouble.
+W=SIN
+C3A=JAILDOWN
+
+T=(At least the guard is out. Does this change anything?)
+W=BROK
+C1A=THINK
+C3=NONE
+MOOD=THINK
+TEN=PC09B_SAVEGAME
+
+#----------------------
+ID=PC09B_SIN_RJ_EXIT
+T=Forget it.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=SIN
+C2A=JAILWORRIED
+TEN=PC09B_SIN_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_SIN_EXIT1
+T=Stay here.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILDOWN
+
+T=As if I had a choice...
+W=SIN
+
+
+#----------------------
+ID=PC09B_SIN_EXIT2
+T=Wait. I'll let you know when I need you.
+W=BROK
+C1=BROK
+C1A=READY
+C2=SIN
+C2A=JAILWORRIED
+
+#----------------------
+ID=PC09B_SIN_EXIT3
+T=Chin up.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=JAILDOWN
+
+
+#----------------------
+ID=PC09B_SIN_INV_DEFAULT
+T=Erm... Nope.
+W=BROK
+A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC09B_SIN_INV_CATFUR
+T=Hey, look! Cat fur!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=JAILWORRIED
+
+T=This will get us outta here!
+W=BROK
+
+T=Great. He's gone insane.
+W=SIN
+
+T=You'll see!
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC09B_SIN_HASESCAPED1
+T=Wait a sec!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=JAILWORRIED
+COMM=This happens when we have escaped and try to free Sin
+
+#----------------------
+ID=PC09B_SIN_HASESCAPED_OPEN1
+T=Go ahead! It's open!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=JAILDOWN
+
+T=No...
+W=SIN
+
+T=Huh?
+W=BROK
+C1A=THINK
+
+T=It's a mistake. I've got to stay.
+W=SIN
+
+T=I need to atone for my sins...
+W=SIN
+
+T=But... But...!
+W=BROK
+C1A=SURPRISED
+
+T=You're not responsible for anything.
+W=SIN
+
+T=But me... I'd become a fugitive.
+W=SIN
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=What are you waiting for? Go!
+W=SIN
+
+T=Okay but... I'll come back to visit you.
+W=BROK
+C1A=MOCK
+
+T=Right. Just be careful.
+W=SIN
+
+T=Always!
+W=BROK
+C1A=COCKY
+
+
+#----------------------
+ID=PC09B_SIN_HASESCAPED_OPEN2
+T=He wants to stay...
+W=BROK
+A=DOWN
+
+#----------------------
+ID=PC09B_SIN_HASESCAPED_HIT
+T=Hey!!! Hitting me won't change my mind!
+W=SIN
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=JAILANGRY
+
+T=Erm... Sorry.
+W=BROK
+#TODO Faire en sorte que Sin se protege ensuite, pas de degats supplementaires
+
+#----------------------
+ID=PC09B_SIN_RJDOWN
+T=Can you search R.J.?
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=SIN
+C2A=JAILWORRIED
+COMM=Search in the meaning of "search through his body for anything interesting"
+
+T=Why?
+W=SIN
+
+T=Maybe he's got a key, a weapon or... somethin'!
+W=BROK
+
+T=I prefer not to touch him. My situation just became even more embarrassing.
+W=SIN
+
+T=Sorry... This one's on me.
+W=BROK
+TEN=PC09B_SIN_CHOICES
+
+#----------------------
+#= Guard
+#----------------------
+ID=PC09B_HIT_COME1
+T=Hey! Whatcha doin'?
+W=RJ
+C2=RJ
+C2A=ANGRY
+NB=1
+D=90
+CONTEXT=Hitting furtinure to trick R.J.
+
+T=Stop it!
+W=RJ
+NB=1
+D=90
+TEN=PC09B_RJ_RESETTIMER
+
+#----------------------
+ID=PC09B_HIT_COME2
+T=Ya deaf?! Stop! Or I'll get ya!
+W=RJ
+C2=RJ
+C2A=ANGRY
+NB=1
+D=120
+TEN=PC09B_RJ_RESETTIMER
+
+#----------------------
+ID=PC09B_HIT_COME3
+T=Last warning! I won't let ya destroy the farniture!
+W=RJ
+C2=RJ
+C2A=ANGRY
+NB=1
+D=120
+COMM=The spelling mistake is on purpose.
+
+T=It's "furniture," you idiot!
+W=BROK
+C1=BROK
+C1A=MOCK
+NB=1
+D=90
+TEN=PC09B_RJ_RESETTIMER
+
+#----------------------
+ID=PC09B_HIT_COME4
+T=This is my last warning!
+W=RJ
+C2=RJ
+C2A=ANGRY
+NB=1
+D=90
+
+T=You just said that! Got short term memory loss?
+W=BROK
+C1=BROK
+C1A=MOCK
+NB=1
+D=90
+TEN=PC09B_RJ_RESETTIMER
+
+#----------------------
+ID=PC09B_HIT_COME5
+T=Enough!!! You're in for some punishment!
+W=RJ
+C2=RJ
+C2A=ANGRY
+TEN=PC09B_RJ_OPENDOORATTACK
+
+
+#----------------------
+ID=PC09B_HIT_COME5B
+T=Camera off. I'm all yours!
+W=RJ
+C2=RJ
+C2A=ANGRY
+TEN=PC09B_RJ_OPENDOOR3C
+
+
+#----------------------
+ID=PC09B_RJ_GAMEOVER1
+T=Blasted croc!
+W=RJ
+C1=RJ
+C1A=ANGRY
+
+T=Broke your neck! Ya fool!
+W=RJ
+
+T=...
+W=RJ
+C1A=SURPRISED
+
+T=Oh... N-no...
+W=RJ
+TEN=GAMEOVER
+
+#----------------------
+ID=PC09B_ALARM_ROBOTS
+T=Oh, you wanna play, fool? Help is coming!
+W=RJ
+C2=RJ
+C2A=COCKY
+NB=1
+D=120
+TEN=PC09B_ALARM_ROBOTS2
+
+#----------------------
+ID=PC09B_ALARM_ROBOTSEND
+T=What are you doing?!
+W=SIN
+C1=BROK
+C1A=FURIOUS
+C2=SIN
+C2A=JAILSURPRISED
+COMM=Winning that fight
+
+T=Everyone must have been alerted! You'll never be able to escape!
+W=SIN
+
+T=Dun' care! I need to get outta here, no matter how!
+W=BROK
+TEN=PC09B_SAVEGAME
+
+
+
+
+
+#---------------------------------------
+#= Hurt by hitting in front of guard
+#---------------------------------------
+ID=PC09B_HURT_GUARD1
+T=Ha-ha! What a fool! You can't reach me.
+W=RJ
+C2=RJ
+C2A=COCKY
+NB=1
+D=120
+CONTEXT=Try to hit R.J. from inside the cell
+
+#----------------------
+ID=PC09B_HURT_GUARD2
+T=And you call me dumb?!
+W=RJ
+C2=RJ
+C2A=WONDER
+NB=1
+D=120
+
+
+#----------------------
+#= RJ
+#----------------------
+ID=PC09B_RJ1
+T=Whaddya want?
+W=RJ
+C1=BROK
+C1A=HAPPY
+C2=RJ
+C2A=NORMAL
+TEN=PC09B_RJ_CHOICES
+IT=1
+CONTEXT=Talk to R.J.
+
+#----------------------
+ID=PC09B_RJ2
+T=What?
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+TEN=PC09B_RJ_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC09B_RJ_CALL1
+T=I need to call somebody!
+W=BROK
+C1=BROK
+C1A=READY
+C2=RJ
+C2A=NORMAL
+
+T=No. Ya don't.
+W=RJ
+
+T=Yes I do! It's urgent!
+W=BROK
+
+T=Da boss said to keep ya for the night.
+W=RJ
+
+T=Ya'll be free tomorrow.
+W=RJ
+
+T=Are you listening? I can't wait that long! I need to inform my...
+W=BROK
+C1A=ANGRY
+TEN=PC09B_RJ_LEAVE
+
+T=No.
+W=RJ
+
+T=Hrrmph.
+W=BROK
+C2=NONE
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_CALL2
+T=Can I at least send a message? My son must be worried sick!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=RJ
+C2A=NORMAL
+
+T=No.
+W=RJ
+
+T=Please! I'm begging you!
+W=BROK
+C1A=HEARTBROKEN
+
+T=No.
+W=RJ
+
+T=You don't have to tell your boss! It'll be our little secret!
+W=BROK
+C1A=ALRIGHT
+
+T=No.
+W=RJ
+
+T=How many times do I have to ask?
+W=BROK
+C1A=ANGRY
+
+T=How many times I say "no"?!
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=It's pointless.
+W=BROK
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_CALL3
+T=I'm afraid I'm not clever enough to convince him.
+W=BROK
+A=DOWN
+
+T=Better find a way out!
+W=BROK
+A=THINK
+TEN=PC09B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_RJ_SICK1
+T=I... feel sick...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=RJ
+C2A=OPPOSITE
+
+T=Who cares?
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=No, wait... I'm dying... AaaaAaaaArgh!!!
+W=BROK
+C2=NONE
+
+T=...
+W=BROK
+C1A=WONDER
+
+T=...
+W=BROK
+C1A=DOWN
+
+T=Maybe I'd be more convincing if I was blinking?
+W=BROK
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_SICK2
+T=Arggggh... I feel (Burp)
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=RJ
+C2A=OPPOSITE
+
+T=Again?!
+W=RJ
+
+T=Many tried this before. I'm no fool anymore.
+W=RJ
+
+T=(Falls flat)
+W=BROK
+C1A=DOWN
+TEB=PC09B_RJ_SICK_FALL
+C1_EYESHUT=1
+
+T=Nope!
+W=RJ
+
+T=...
+W=BROK
+C1_EYESHUT=1
+
+T=Can still hear your breathing.
+W=RJ
+
+T=I'm not!
+W=BROK
+
+T=...
+W=BROK
+C1A=WONDER
+C2=NONE
+C1_EYESHUT=0
+TEN=PC09B_RJ_SICK_BACK
+
+
+#----------------------
+ID=PC09B_RJ_SICK2B
+T=I need to get myself some acting lessons.
+W=BROK
+A=THINK
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_SICK3
+T=Nope. I'm just making a fool of myself.
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+TEN=PC09B_RJ_SUBTERFUGE_CHOICE
+IT=1
+
+
+#----------------------
+ID=PC09B_RJ_GIVE1
+T=Got something for ya!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=RJ
+C2A=HAPPY
+
+T=Oh, yeah? What? I love gifts!
+W=RJ
+
+T=Come here and I'll give it to ya!
+W=BROK
+
+T=Okay!
+W=RJ
+TEN=PC09B_RJ_GIVE_COME
+
+T=...
+W=RJ
+
+T=No! Da boss said never open da cell unless necessary!
+W=RJ
+C2A=OPPOSITE
+
+T=But it's necessary you open it to get your gift!
+W=BROK
+C1A=ALRIGHT
+
+T=Yeah...? Err... no!
+W=RJ
+
+T=Stop it! Yer confusing my brain!
+W=RJ
+C1A=DISAPPOINTED
+TEN=PC09B_RJ_LEAVE
+
+T=Darn! It almost worked!
+W=BROK
+C1A=OPPOSITE
+C2=NONE
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_GIVE2
+T=Nah. He won't be fooled.
+W=BROK
+C1=BROK
+C1A=STUPID
+TEN=PC09B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_RJ_THINK1
+T=(Seems like the big and dumb type. But appearances can be deceptive.)
+W=BROK
+C1=BROK
+C1A=THINK
+MOOD=THINK
+TEN=PC09B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_RJ_EXIT1
+T=I... forgot why I called you...
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=RJ
+C2A=OPPOSITE
+
+T=Stop wasting my time!
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=Sorry!
+W=BROK
+C1A=HAPPY
+C2=NONE
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_INV_DEFAULT
+T=Better not...
+W=BROK
+C1=BROK
+C1A=MAYBE
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC09B_RJ_INV_CATFUR
+T=Alright, no cheating.
+W=BROK
+C1=BROK
+C1A=READY
+C2=RJ
+C2A=NORMAL
+
+T=Come here and I'll give you this super soft cat fur!
+W=BROK
+
+T=Argh! Get that away from me!!!
+W=RJ
+C2A=SURPRISED
+
+T=...It already is away from you.
+W=BROK
+C1A=WONDER
+
+T=(Sneeze) Not enough!
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=Hmm.
+W=BROK
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_INSULT1
+T=Hey, ya dumb face! You stink!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=RJ
+C2A=ANGRY
+TEN=PC09B_RJ_RELATIONSHIP
+
+T=Whaddya say about my mom?!
+W=RJ
+
+T=Huh? I didn't mention your...
+W=BROK
+C1A=WONDER
+SKIPEND=1
+
+T=Just come and fight! I'll teach ya!
+W=RJ
+
+T=...I can't, you dumb.
+W=BROK
+C1A=OPPOSITE
+SKIPEND=1
+
+T=Oh... yeah! Then...
+W=RJ
+C2A=WONDER
+
+T=Too bad.
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=What?! Hey! Come back, you moron!
+W=BROK
+C1A=ANGRY
+C2=NONE
+
+T=That... didn't work how I expected it to.
+W=BROK
+C1A=STUPID
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_INSULT2
+T=Your butt is twice the size of your head!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=RJ
+C2A=NORMAL
+TEN=PC09B_RJ_RELATIONSHIP
+
+T=I know.
+W=RJ
+
+T=Err...
+W=BROK
+C1A=WONDER
+
+T=You must have been conceived on a highway because that's where most accidents happen!
+W=BROK
+C1A=MOCK
+
+T=True.
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=What...?
+W=BROK
+C1A=SURPRISED
+C2=NONE
+
+T=Another failed attempt.
+W=BROK
+C1A=DOWN
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_INSULT3
+T=(I'm not used to insulting people. I've already wasted my vulgar vocabulary...)
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+MOOD=THINK
+TEN=PC09B_RJ_CHOICES
+IT=1
+
+#----------------------
+ID=PC09B_RJ_REPAIR1
+T=There's something wrong with my sink!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=RJ
+C2A=NORMAL
+TEN=PC09B_RJ_SINK_CHECKBUTTON
+IT=1
+
+#----------------------
+ID=PC09B_RJ_REPAIR2
+T=I still need help with the sink! It's terrible!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=RJ
+C2A=NORMAL
+TEN=PC09B_RJ_SINK_CHECKBUTTON
+IT=1
+
+#----------------------
+ID=PC09B_RJ_REPAIRNOSINK1
+T=Really?! Where's dat sink?
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=OPPOSITE
+
+T=Oh, erm... I forgot to push the correct button...
+W=BROK
+C1A=HAPPY
+TEE=PC09B_RJ_LEAVE
+SKIPEND=1
+
+T=Wait! I just...
+W=BROK
+C2=NONE
+SKIPEND=1
+
+T=Pfft.
+BNAME=RJ
+BVOICE=RJ
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_SINKNOTDAMAGED1
+T=Can't see anything wrong.
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+
+T=Yes, there is! It's leaking!
+W=BROK
+C1A=READY
+
+T=Come closer!
+W=BROK
+
+T=Not urgent. Dat can wait 'til tomorrow.
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=Wait...!
+W=BROK
+C2=NONE
+
+T=He's the "I only believe what I see" kinda guy...
+W=BROK
+A=TIRED
+TEN=PC09B_RJ_OVER
+
+
+#----------------------
+ID=PC09B_RJ_SINKDAMAGED1
+T=Obviously. I saw ya hit it, ya moron!
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=ANGRY
+
+T=Well of course! I was trying to fix it!
+W=BROK
+C1A=MEH
+
+T=Doesn't matter. It ain't broken.
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=I swear it is...!
+W=BROK
+C1A=MOCK
+C2=NONE
+
+T=Darn. Hitting that sink didn't seem to damage it at all!
+W=BROK
+C1A=ANGRY
+
+T=Better find another solution.
+W=BROK
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_LASERS1
+T=Ten to one you have no idea how the security works for this cell!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=RJ
+C2A=COCKY
+
+T=Sure, I do!
+W=RJ
+
+T=That energy barrier is so-lid.
+W=RJ
+
+T=Can't get anythin' through! Not even a toothpick!
+W=RJ
+
+T=What's the camera for? Are you watching us?
+W=BROK
+C1A=WONDER
+
+T=Nah! Ain't got time for dat!
+W=RJ
+
+T=See those ears of mine? If ya do anything suspect...
+W=RJ
+
+T=No matter where I am. I'll hear it!
+W=RJ
+
+T=Then what's it for?
+W=BROK
+
+T=We got ya body scanned.
+W=RJ
+
+T=If da camera detects you tryin' to get out, or anythin' weird.
+W=RJ
+
+T=Poof! The alarm.
+W=RJ
+
+T=Alright, then. Let's say...
+W=BROK
+C1A=WONDER
+
+T=What would happen if the camera was cut off... somehow?
+W=BROK
+C1A=MEH
+
+T=Duh! The barrier is still there, ya dummy!
+W=RJ
+
+T=Ya'd need to touch the panel to open it, and ya can't!
+W=RJ
+
+T=The touch panel. It detects fingerprints?
+W=BROK
+C1A=MAYBE
+
+T=Nah. Just a switch. Anythin' can push it.
+W=RJ
+
+T=Except ya! It's on the other side! Ha ha!
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=Yeah. It's out of reach.
+W=BROK
+C1A=MEH
+C2=NONE
+
+T=For now.
+W=BROK
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_LASERS2
+T=So, let me get that straight.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=RJ
+C2A=NORMAL
+
+T=The barrier prevents things from getting out. Even paper-thin objects.
+W=BROK
+C1A=MOCK
+
+T=The camera emits an alarm if I get out or a suspicious behavior is detected.
+W=BROK
+
+T=And anything can touch the panel to open the cell.
+W=BROK
+
+T=Yeah!
+W=RJ
+C2A=HAPPY
+
+T=...
+W=RJ
+C1A=HAPPY
+
+T=Wait. Don't ya dare try anythin'!
+W=RJ
+C2A=OPPOSITE
+
+T=Who? Me...?
+W=BROK
+
+T=Got my ear on ya!
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=Then I shall get as silent as a croc. I mean, grave!
+W=BROK
+C2=NONE
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_SIN1
+T=You need to forgive Sin.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=RJ
+C2A=NORMAL
+
+T=He did all this for a good reason.
+W=BROK
+
+T=Dun' care.
+W=RJ
+
+T=Thought he's my friend. No. He's a criminal!
+W=RJ
+
+T=Criminals get arrested. It's what we do.
+W=RJ
+
+T=You don't understand!
+W=BROK
+C1A=READY
+
+T=Think with your heart! Wouldn't you have done the same if you had a child?
+W=BROK
+
+T=Please stop...
+W=SIN
+C3=SIN
+C3A=JAILDOWN
+
+T=Shut up, ya both!
+W=RJ
+TEN=PC09B_RJ_LEAVE
+
+T=Sorry...
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC09B_RJ_OVER
+
+#----------------------
+ID=PC09B_RJ_SIN2
+T=(Sin doesn't want me to insist. I should respect his decision.)
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=RJ
+C2A=NORMAL
+MOOD=THINK
+TEN=PC09B_RJ_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC09B_RJ_SUBTERFUGE1
+T=(Hmm... I can think of several options.)
+W=BROK
+A=THINK
+MOOD=THINK
+TEN=PC09B_RJ_SUBTERFUGE_CHOICE
+IT=1
+
+#----------------------
+#= Chest
+#----------------------
+ID=PC09B_CHESTLOOK1
+T=Whatever's in there must be valuable.
+W=BROK
+A=THINK
+CONTEXT=A hidden chest in the last cell
+
+T=Hence why it's protected.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC09B_CHESTLOOK2
+T=Done!
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC09B_CHEST1
+T=What's in there...?
+W=BROK
+A=THINK
+TEN=PC09B_CHEST_GET
+
+#----------------------
+ID=PC09B_CHEST1B
+T=Must have been a fraudster's belongings.
+W=BROK
+A=WONDER
+
+T=These will be safer with me!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC09B_CHEST2
+T=Yeah, there's more.
+W=BROK
+A=MEH
+
+T=But only things I wouldn't dare to touch with my bare hands.
+W=BROK
+A=CONFUSED
+
+
+
+
+#----------------------
+#= Rescue Sin
+#----------------------
+ID=PC09B_RESCUE1
+T=Sin!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=SURPRISED
+TEN=PC09B_STORY280_INIT2
+CONTEXT=Day 3 - Rescue Sin with Dee but he is nowhere to be found
+
+#----------------------
+ID=PC09B_RESCUE1B
+T=Sin!!!
+W=DEE
+C1=BROK
+C1A=TIRED
+C2=DEE
+C2A=SURPRISED
+
+T=Where is he?!
+W=DEE
+C2A=LISTEN
+
+T=...
+W=BROK
+
+T=Are we... Too late...?
+W=BROK
+
+T=N... No!...
+W=DEE
+C2A=SAD
+TEN=PC09B_RESCUE_RELEASE
+
+
+
+#----------------------
+ID=PC09B_RESCUE_MINK1
+T=Hey! What's going on?
+W=MINK
+C1=BROK
+C1A=MAYBE
+C2=MINK
+C2A=ANGRY
+COMM=If we charged Mink in chapter 4
+
+T=Doctor Mink.
+W=BROK
+
+T=Was Sin here?
+W=BROK
+
+T=The roo?
+W=MINK
+C2A=MEH
+
+T=Yeah. He left earlier.
+W=MINK
+
+T=I repeat. What's going on?
+W=MINK
+
+T=You're in danger here.
+W=BROK
+C1A=ANGRY
+
+T=What...?
+W=MINK
+
+T=I'll release you.
+W=BROK
+C1A=THINK
+
+T=Nice of you, after putting me here!
+W=MINK
+C2A=ANGRY
+TEN=PC09B_RESCUE_BROKOPENCELL
+
+
+#----------------------
+ID=PC09B_RESCUE_GUARD1
+T=What the heck is going on, man?!
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=ANGRY
+COMM=If we charged Guard in chapter 4
+
+T=Oh. It's you.
+W=BROK
+C1A=WONDER
+
+T=No time to explain but...
+W=BROK
+
+T=Was Sin here?
+W=BROK
+
+T=That depressive roo? Man, is he a crybaby.
+W=GUARD
+C2A=MEH
+
+T=Yeah, he left a bit earlier.
+W=GUARD
+
+T=Darn...
+W=BROK
+C1A=DOWN
+
+T=You can't stay here.
+W=BROK
+
+T=What...?
+W=GUARD
+
+T=I'll release you.
+W=BROK
+C1A=THINK
+
+T=Finally some good news!
+W=GUARD
+C2A=HAPPY
+TEN=PC09B_RESCUE_BROKOPENCELL
+
+
+#----------------------
+ID=PC09B_RESCUE1B2
+T=...
+W=DEE
+C1=BROK
+C1A=MAYBE
+C2=DEE
+C2A=SAD
+
+T=This can't be happening...
+W=DEE
+TEN=PC09B_BROK_COMESDEE
+
+T=I couldn't even...
+W=DEE
+
+T=Tell him...
+W=DEE
+TEN=PC09B_RESCUE_CHECKALARM
+
+#----------------------
+ID=PC09B_RESCUE_ALARMSTOP
+T=The alarm. It stopped...?
+W=BROK
+C1=BROK
+C1A=WONDER
+TEN=PC09B_RESCUE1C_CHECKSIN
+
+
+#----------------------
+ID=PC09B_RESCUE1C_NOSIN
+T=(Sigh)
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+C2=DEE
+C2A=SAD
+
+T=I should have got him out of here when I could...
+W=BROK
+TEN=PC09B_RESCUE_DEELEAVES2
+
+
+#----------------------
+ID=PC09B_RESCUE1C
+T=(Sigh)
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+COMM=Sin can or cannot be alive according to choices - here he is
+
+T=Maybe... There's still...
+W=BROK
+C1A=DOWN
+
+T=(...)
+SOUND=phone_dial
+
+T=A call?
+W=BROK
+C1A=THINK
+
+T=(Click)
+W=BROK
+TEN=PC09B_RESCUEMUSIC
+
+T=Hey, man. Sorry to call you but... I couldn't think of anyone else.
+W=SIN
+C2=SIN
+C2A=JAILWORRIED
+
+T=...!
+W=BROK
+C1A=SURPRISED
+TEN=PC09B_DEE_TURNS
+
+T=Sin!!!
+W=DEE
+C3=DEE
+C3A=SURPRISED
+
+T=I... I thought you were...!
+W=DEE
+
+T=Dee? Is that you?!
+W=SIN
+C2A=JAILNORMAL
+
+T=I believe you now! I'm so sorry!
+W=DEE
+C3A=SAD
+
+T=I am too...
+W=SIN
+C2A=JAILWORRIED
+
+T=Wait, where are you? This looks like...
+W=SIN
+
+T=How did you get outta jail?
+W=BROK
+C1A=THINK
+
+T=The chief of police.
+W=SIN
+
+T=He said I was free to go.
+W=SIN
+
+T=Dee... I...
+W=SIN
+
+T=Don't say anything!
+W=DEE
+C3A=HAPPY
+
+T=Our daughter is waiting for you at home.
+W=DEE
+
+T=My... friends are taking care of her. Please get her back.
+W=DEE
+
+T=But... Are you sure...
+W=SIN
+
+T=Where are you? I'll help you come back safely.
+W=DEE
+C3A=READY
+
+T=(Cough, cough) I'm hiding in my apartment. What's left of it...
+W=SIN
+
+T=You're okay?
+W=DEE
+C3A=WONDER
+
+T=I couldn't get a pill today. (Cough)
+W=SIN
+
+T=And... I got some other trouble myself.
+W=SIN
+C3A=LISTEN
+
+T=Bots...?
+W=BROK
+
+T=Yeah. I managed to outrun them but... This was close!
+W=SIN
+
+T=Oh my...
+W=DEE
+C3A=SURPRISED
+
+T=So I'm not the only one they're targeting?
+W=BROK
+C1A=WONDER
+
+T=What's going on...?
+W=SIN
+
+T=I'll explain on the road.
+W=DEE
+C3A=ANGRY
+
+T=Stay where you are, dear!
+W=DEE
+
+T=Alright...
+W=SIN
+
+T=Love you.
+W=SIN
+
+T=[...]
+C2=NONE
+SOUND=phone_end
+
+T=Gotta go!
+W=DEE
+C3A=NORMAL
+TEE=PC09B_RESCUE_DEELEAVES
+
+
+#----------------------
+ID=PC09B_RESCUE1D
+T=Wait! Aren't you forgetting someone...?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+
+T=We promised Dr. Gherkin we would come back.
+W=BROK
+
+T=Will do. As soon as my man is safe back home.
+W=DEE
+TEN=PC09B_RESCUE_DEELEAVES2
+
+
+#----------------------
+ID=PC09B_RESCUE1E
+T=...
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=SURPRISED
+SILENCE=1
+
+T=Can you explain your presence here?
+W=WES
+
+T=And who is your charming friend?
+W=WES
+C1A=THINK
+
+T=Let me guess. The chief of police?
+W=DEE
+C3A=NORMAL
+TEN=PC09B_RESCUE1E_CHECKSIN
+
+#----------------------
+ID=PC09B_RESCUE1E_NOSIN
+T=Where's Sin?!
+W=DEE
+C1=BROK
+C1A=READY
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+
+T=I've released him earlier.
+W=WES
+
+T=And your presence here may confirm my suspicions.
+W=WES
+
+T=What suspicions?
+W=BROK
+C1A=THINK
+
+T=The bots. They're supposed to take care of prisoners.
+W=WES
+
+T=However... They've displayed strange behaviors lately.
+W=WES
+C2A=WONDER
+
+T=I can't trust them anymore.
+W=WES
+
+T=I took it upon myself to lead Sin out of here until the situation is resolved.
+W=WES
+C2A=NORMAL
+
+T=Where is he now?!
+W=DEE
+
+T=Probably still in the Slums. I left him at his apartment.
+W=WES
+
+T=I gotta go.
+W=DEE
+TEN=PC09B_DEELEAVESAGAIN_NOSIN
+
+T=Wait! What about...
+W=BROK
+C1A=MAYBE
+
+T=Call you later.
+W=DEE
+
+T=...
+W=BROK
+C1A=THINK
+C3=NONE
+SILENCE=1
+
+T=And the pills shortage?
+W=BROK
+
+T=It's probable everything is linked.
+W=WES
+
+T=Hmm... Dee said she has proof of criminals getting murdered.
+W=BROK
+C1A=WONDER
+
+T=But I can't see any obvious connection.
+W=BROK
+TEN=PC09B_RESCUE1E_AFTERNODEE
+
+
+#----------------------
+ID=PC09B_RESCUE1E_SIN
+T=Erm...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+
+T=We've come to free Sin. She's a journalist and Sin is...
+W=BROK
+SKIPEND=1
+
+T=I see.
+W=WES
+C1A=THINK
+
+T=That explains all the wrecked bots everywhere.
+W=WES
+
+T=Sorry...
+W=BROK
+C1A=DOWN
+
+T=Hmph. They're replaceable.
+W=WES
+
+T=We didn't have a choice. He was in danger!
+W=BROK
+C1A=READY
+
+T=Hmm...
+W=WES
+
+T=Thus I'm not the only one suspecting something fishy. Am I right?
+W=WES
+C2A=WONDER
+
+T=You... You knew...?
+W=BROK
+C1A=MAYBE
+
+T=Complications seem to accumulate these days.
+W=WES
+
+T=No need to worry. I will handle this.
+W=WES
+C2A=NORMAL
+
+T=This country has seen many stressful periods over the years.
+W=WES
+
+T=No! This is different!
+W=DEE
+
+T=Our judicial system has gone very wrong.
+W=DEE
+
+T=Criminals are systematically murdered!
+W=DEE
+
+T=Hmph. And why should I believe you?
+W=WES
+
+T=I'm... a journalist.
+W=DEE
+
+T=I have proof...! I've spent the last few months gathering information!
+W=DEE
+TEN=PC09B_RESCUE1E_AFTER
+
+#----------------------
+ID=PC09B_RESCUE1E_AFTER
+T=Proof...
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+C3=DEE
+C3A=NORMAL
+
+T=We should share our information. But not here.
+W=WES
+TEN=PC09B_RESCUE1E_CHECKBOTS
+
+
+#----------------------
+ID=PC09B_RESCUE1E_BOTSDESTROYED
+T=More bots are on their way to replace the ones you've destroyed and I have no control over them.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+TEN=PC09B_RESCUE1E_AFTER2CHECK
+
+#----------------------
+ID=PC09B_RESCUE1E_AFTER2
+T=Let's meet at the ancient Garbage Disposal Center. In one hour.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=NORMAL
+
+T=Ya sure...? No one ever goes there...
+W=BROK
+
+T=All the more reason.
+W=WES
+
+T=It's an open area. We wouldn't be spied on without knowing it.
+W=WES
+TEN=PC09B_RESCUE1E_AFTERCHECK
+
+
+#----------------------
+ID=PC09B_RESCUE1E_AFTERSIN
+T=Fine. Let's meet there.
+W=DEE
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=HAPPY
+C3=DEE
+C3A=MEH
+TEN=PC09B_DEELEAVESAGAIN1
+
+
+#----------------------
+ID=PC09B_RESCUE1F
+T=...
+W=DEE
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C3=DEE
+C3A=SAD
+
+T=And... Brok...
+W=DEE
+
+T=Thank you. I owe you one.
+W=DEE
+TEN=PC09B_DEELEAVESAGAIN2
+IT=1
+
+#----------------------
+ID=PC09B_RESCUEEND_MINK1
+T=Hey! What about me...?
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+C4=WES
+C4A=NORMAL
+
+T=Am I free to go?
+W=MINK
+TEN=PC09B_RESCUEEND_NEXT
+IT=1
+
+#----------------------
+ID=PC09B_RESCUEEND_GUARD1
+T=Got no idea what you guys are talking about but...
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER
+C4=WES
+C4A=NORMAL
+
+T=I wanna leave this stinking place.
+W=GUARD
+TEN=PC09B_RESCUEEND_NEXT
+IT=1
+
+
+#----------------------
+ID=PC09B_RESCUEEND_NEXT
+T=Yeah! Why release Sin and not him?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=WES
+C2A=NORMAL
+
+T=I always treat problems one at a time.
+W=WES
+
+T=Regardless. You're the reason he's been incarcerated.
+W=WES
+C1A=THINK
+
+T=Your decision.
+W=WES
+
+T=Yeah. Let him go.
+W=BROK
+C1A=READY
+TEN=PC09B_RESCUEEND2
+IT=1
+
+#----------------------
+ID=PC09B_RESCUEEND_MINK2
+T=Phew...
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK
+C4=WES
+C4A=WONDER
+
+T=And... Just to confirm...
+W=MINK
+
+T=I never killed anyone. The murderer is still around.
+W=MINK
+
+T=...
+W=BROK
+C1A=TIRED
+TEN=PC09B_RESCUEEND_LEAVE
+
+
+
+#----------------------
+ID=PC09B_RESCUEEND_GUARD2
+T=Good.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH
+C4=WES
+C4A=NORMAL
+
+T=Still can't believe you thought it was me...
+W=GUARD
+
+T=What's wrong with you?!
+W=GUARD
+C2A=ANGRY
+
+T=Well...
+W=BROK
+C1A=TIRED
+
+T=Farewell, useless detective.
+W=GUARD
+TEN=PC09B_RESCUEEND_LEAVE
+
+#----------------------
+ID=PC09B_RESCUE1G
+T=...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=WES
+C2A=NORMAL
+
+T=...
+W=WES
+
+T=Well... See ya.
+W=BROK
+C1A=THINK
+TEN=PC09B_BROKLEAVES1
+
+#----------------------
+ID=PC09B_RESCUE1H
+T=Pork?
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+TEN=PC09B_BROKTURNS
+
+#----------------------
+ID=PC09B_RESCUE1I
+T=That's insulting, ya know. I wish you'd stop calling me that.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=WONDER
+
+T=It's... not your name...?
+W=WES
+
+T=...?
+W=BROK
+C1A=WONDER
+CLUE=CLUE_WES_BROKNAME
+
+T=Whatever.
+W=WES
+C2A=NORMAL
+
+T=We've had our differences in the past. But today...
+W=WES
+C1A=THINK
+
+T=We need to cooperate. There's a much bigger threat going on in this country.
+W=WES
+C1A=THINK
+
+T=Yeah. No problem, old man.
+W=BROK
+
+T=Later.
+W=BROK
+C1A=MAYBE
+
+T=I'm counting on you.
+W=WES
+TEN=PC09B_BROKLEAVES2
+
+
+#----------------------
+#= Search RJ
+#----------------------
+ID=PC09B_RJ_KO1
+T=I can't reach him...
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC09B_RJ_KO_SEARCH1
+T=I've found somethin'!
+W=BROK
+A=HAPPY
+TEN=PC09B_RJ_KO_SEARCH_NEXT
+
+#----------------------
+ID=PC09B_RJ_KO_SEARCH_SIN
+T=I can't believe it...
+W=SIN 
+A=JAILDOWN
+TEN=PC09B_RJ_KO_SEARCH_NOPE
+
+
+
+
+#----------------------
+ID=PC09B_RJ_KO_SEARCH2
+T=Better look again. I always miss the ads!
+W=BROK
+A=THINK
+
+T=There ya go!
+W=BROK
+A=HAPPY
+TEN=PC09B_RJ_KO_SEARCH_GETAD
+
+#----------------------
+ID=PC09B_RJ_KO_SEARCH3
+T=Nothin' left.
+W=BROK
+A=OPPOSITE
+TEN=PC09B_RJ_KO_SEARCH_NOPE
+
+
+
+#------------------------------------
+#= Go see Sin in jail in chapter 3/4
+#------------------------------------
+ID=PC09B_DAY2_SIN
+T=Hey!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SIN
+C2A=JAILWORRIED
+
+T=Huh?
+W=SIN
+C2A=JAILSURPRISED
+TEN=PC09B_DAY2_SINAPPROACH
+
+
+#------------------------------------
+ID=PC09B_DAY2_SINB
+T=Are you holding up?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SIN
+C2A=JAILWORRIED
+
+T=Yeah...
+W=SIN
+C2A=JAILWORRIED
+
+T=Alright.
+W=BROK
+
+T=I'll come back later!
+W=BROK
+C1A=READY
+
+T=Okay.
+W=SIN
+
+T=Thank you...
+W=SIN
+TEN=PC09B_DAY2_SIN_LEAVE
+
+
+
+#----------------------
+ID=PC09B_C3TOUCHPANEL1
+T=Darn... it's busted.
+W=BROK
+A=MAYBE
+
+T=Better find another way.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Camera
+#----------------------
+ID=PC09B_CAMERA1
+T=What an annoying camera.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC09B_CAMERA2
+T=Hmm...
+W=BROK
+A=THINK
+
+#------------------------------------
+ID=COOP_PC09B_SIN1
+T=Deserved or not deserved? That is the question...
+
+###############################################
+# PROOFREAD - jblaker - 14/06/2019
+# EXPRESSIONS   ZedOjisan 23/09/2019
+###############################################

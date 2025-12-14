@@ -1,0 +1,245 @@
+﻿#------------------------------------
+#=LIA APARTMENT NIGHTMARE (ENTRANCE)
+#------------------------------------
+
+
+
+#----------------------
+#= Beginning
+#----------------------
+ID=PC11_BEGIN1
+T=...
+W=BROK
+A=STUPID
+CONTEXT=First scene of the game. Brok wakes up on the floor, in the middle of a room and the whole screen is black.
+
+T=Huh?
+W=BROK
+A=SURPRISED
+
+T=A fire? Where am I?
+W=BROK
+TEN=PC11_APARTMENT_APPEAR
+
+#----------------------
+ID=PC11_BEGIN2
+T=Trouble!
+W=BROK
+A=SURPRISED
+CONTEXT=He realizes he's in an apartment in fire
+
+T=I'd better get out of here, fast!
+W=BROK
+A=FURIOUS
+TEN=PC11_APARTMENT_BEGIN
+
+#----------------------
+#= Flowers
+#----------------------
+ID=PC11_FLOWERS1
+T=A flower bouquet...
+W=BROK
+A=THINK
+COMM=Room interactions
+
+T=I wonder who they're for.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Blanket
+#----------------------
+ID=PC11_BLANKET1
+T=A decorative blanket, maybe? Looks sturdy.
+W=BROK
+A=THINK
+
+T=I should take it.
+W=BROK
+A=READY
+TEN=PC11_BLANKET_TAKE
+
+
+#----------------------
+#= Front door
+#----------------------
+ID=PC11_DOORFRONT1
+T=The front door!
+W=BROK
+A=READY
+TEN=PC11_DOORFRONT_TRY
+
+#----------------------
+ID=PC11_DOORFRONT2
+T=Nope. Front doors are usually impregnable.
+W=BROK
+A=FURIOUS
+
+T=There must be another way to escape!
+W=BROK
+A=FURIOUS
+
+
+#----------------------
+#= Window
+#----------------------
+ID=PC11_WINDOW1
+T=I wish it was a real one... but it's just a DigiWindow.
+W=BROK
+A=MAYBE
+
+T=And it's broken!
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Button
+#----------------------
+ID=PC11_BUTTON1
+T=Must be one of those trendy voice services.
+W=BROK
+A=THINK
+
+T=Just press the button and ask whatever you want.
+W=BROK
+TEN=PC11_BUTTON_TRY
+
+#----------------------
+ID=PC11_BUTTON1_YES1
+T=Whoa! What's going on with the electricity?
+W=BROK
+A=CONFUSED
+
+
+#----------------------
+ID=PC11_BUTTON2
+T=It's dead. There must be a short circuit somewhere.
+W=BROK
+A=OPPOSITE
+TEN=PC11_BUTTON_ASK
+
+#----------------------
+ID=PC11_BUTTON1_NO1
+T=Better find another way...
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC11_BUTTON1_YES2
+T=Argh!!! Why did I do that?!
+W=BROK
+A=CONFUSED
+
+
+#----------------------
+#= Toy
+#----------------------
+ID=PC11_TOY1
+T=A toy?
+W=BROK
+A=WONDER
+
+T=This looks familiar somehow...
+W=BROK
+A=THINK
+
+#----------------------
+#= Picture frame
+#----------------------
+ID=PC11_FRAME1
+T=This is...
+W=BROK
+A=THINK
+TEN=PC11_FRAME_CLOSEUP
+
+#----------------------
+ID=PC11_FRAME1B
+T=Weird. What's this supposed to depict?
+W=BROK
+A=WONDER
+TEN=PC11_FRAME_ACCESSIBILITY
+
+#----------------------
+#= Right door
+#----------------------
+ID=PC11_DOORRIGHT_FAR1
+T=I bet this leads to the lounge, but it's closed and surrounded by fire.
+W=BROK
+A=THINK
+
+T=On the other hand, the door is bent. Maybe the fire will eventually destroy it?
+W=BROK
+A=THINK
+
+T=But I can't wait that long!
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC11_DOORRIGHT_FAR2
+T=That door is out of reach.
+W=BROK
+A=DOWN
+
+#----------------------
+ID=PC11_DOORRIGHT_AFTER1
+T=Impossible... It's jammed!
+W=BROK
+A=DOWN
+
+T=I need to get it open, no matter what!
+W=BROK
+A=FURIOUS
+
+#----------------------
+ID=PC11_DOORRIGHT_CLOSE1
+T=Oh no! It's jammed! I can't stay here!!!
+W=BROK
+A=CONFUSED
+COMM=Player tries to go anyway, Brok is in the middle of the fire!
+TEN=PC11_DOORRIGHT_RUNAWAY
+
+#----------------------
+ID=PC11_DOORRIGHT_CLOSE1B
+T=Phew, that was close... My poor feet are killing me!
+W=BROK
+A=DOWN
+
+T=What a fool!
+W=BROK
+A=DOWN
+
+
+#----------------------
+ID=PC11_DOORRIGHT_CLOSE2
+T=My feet are burning!!!
+W=BROK
+A=CONFUSED
+TEN=PC11_DOORRIGHT_RUNAWAY
+
+#----------------------
+#= Fire
+#----------------------
+ID=PC11_FIRE1
+T=No idea how this happened but I'd better stay away from that fire!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC11_FIRE_USEBLANKET
+T=There! It's working but maybe not for long.
+W=BROK
+A=MOCK
+
+T=I need to get past that door!
+W=BROK
+A=FURIOUS
+TEN=PC11_INTERFACE_HELP_FIGHTMODE
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 02/08/2019
+###############################################

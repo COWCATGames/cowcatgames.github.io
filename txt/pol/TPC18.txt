@@ -1,0 +1,396 @@
+#-------------------------------
+#= FACTORY
+#-------------------------------
+
+#----- Interactions --------
+PC_BOT=Bot serwisowy
+PC_CONTAINER=Kontener
+PC_SENTRYBOX=Bot strażniczy
+PC_FACTORY=Fabryka
+PC_IMPULSION=Wyślij impuls!
+PC_ESCAPE=Ucieknij
+
+#----- Choices / Items --------
+
+
+#----- Topics --------
+PC18_FIXBOT_CHOICE=Zabrać bota serwisowego?
+
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Brok comes to pick up Dr. Gherkin who asked for his help
+# *****************************************************************
+# Brok                                 
+PC18_ARRIVE1-1=To musi być ta fabryka.
+# Brok                                 
+PC18_ARRIVE1-2=Tylko gdzie jest ten facet...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - The hologram displays news, which changes according to player actions
+# *****************************************************************
+# Brok                                 
+PC18_HOLOGRAM1-1=Holo-fakty dnia...
+#----------------------------------------------------
+# Unknown                                 
+PC18_HOLOGRAM_DEADALL-1="Dwóch naukowców i ich strażnik znalezieni martwi w Laboratorium Inżynieryjnym 21".
+#----------------------------------------------------
+# Unknown                                 
+PC18_HOLOGRAM_DEADEXCEPTMINK-1="Naukowiec i jego strażnik znalezieni martwi w Laboratorium Inżynieryjnym 21".
+#----------------------------------------------------
+# Unknown                                 
+PC18_HOLOGRAM_DEADEXCEPTGUARD-1="Dwaj naukowcy znalezieni martwi w Laboratorium Inżynieryjnym 21".
+#----------------------------------------------------
+# Brok                                 
+PC18_HOLOGRAM_DEADNEXT-1=O kurde...! Ci goście... Oni są...
+# Brok                                 
+PC18_HOLOGRAM_DEADNEXT-2=Co się stało? Oskarżyłem wczoraj niewłaściwą osobę...?
+#----------------------------------------------------
+# Gherkin                                 
+PC18_HOLOGRAM_DEADNEXT_GHERKIN-1=To straszne...! Kto zrobiłby coś takiego naukowcom...?
+# Gherkin                                 
+PC18_HOLOGRAM_DEADNEXT_GHERKIN-2=M-mam nadzieję, że to nie był fanatyk Bezogonów...
+#----------------------------------------------------
+# Unknown                                 
+PC18_HOLOGRAM_DEADNEXT2-1="Przestępca pozostaje niezidentyfikowany".
+# Unknown                                 
+PC18_HOLOGRAM_DEADNEXT2-2="Bądź dziś ostrożny! Zostań w domu i zamknij drzwi!"
+# Unknown                                 
+PC18_HOLOGRAM_DEADNEXT2-3="Zaraz po tych dramatycznych wydarzeniach autolot, prawdopodobnie skradziony przez mordercę, siał spustoszenie na autostradzie".
+#----------------------------------------------------
+# Unknown                                 
+PC18_HOLOGRAM_CHASE1-1="Dramatyczny pościg na autostradzie".
+# Unknown                                 
+PC18_HOLOGRAM_CHASE1-2="Wczoraj ktoś ukradł autolot, by ścigać bota, siejąc zniszczenie na autostradzie".
+# Brok                                 
+PC18_HOLOGRAM_CHASE1-3=Ciekawe, kto byłby na tyle głupi, żeby to zrobić...!
+#----------------------------------------------------
+# Gherkin                                 
+PC18_HOLOGRAM_CHASE1_GHERKIN-1=J-jasne! Młodzież jest teraz szalona!
+#----------------------------------------------------
+# Unknown                                 
+PC18_HOLOGRAM_CHASE1B-1="Ostatnie powiązane zdarzenia nawiązują do zajścia na Wyżynach w 3029".
+# Unknown                                 
+PC18_HOLOGRAM_CHASE1B-2="Dochodzeniowiec z policji cudem uniknął śmierci w wypadku autolotu, gdy ścigał przestępcę".
+# Brok                                 
+PC18_HOLOGRAM_CHASE1B-3=Hmm... Nie pamiętałem tego.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC18_FIXBOT1-1=Bot serwisowy!
+# Brok                                 
+PC18_FIXBOT1-2=Przylgnął do tego kontenera. Zapewne używają go do naprawienia membrany.
+# Brok                                 
+PC18_FIXBOT1-3=Coś czuję, że nie robi swojej roboty...
+#----------------------------------------------------
+# Brok                                 
+PC18_FIXBOT2-1=Wydaje się, że utknął w rogu!
+#----------------------------------------------------
+# Brok                                 
+PC18_FIXBOT_SHOULDUSEREMOTE-1=Użyjmy zdalnego pilota.
+#----------------------------------------------------
+# Brok                                 
+PC18_FIXBOT_HURT1-1=Argh...
+# Brok                                 
+PC18_FIXBOT_HURT1-2=Nie mam dziś szczęścia z botami...
+#----------------------------------------------------
+# Brok                                 
+PC18_FIXBOT_REMOTE-1=Hmm... Ciekawe, czy...
+#----------------------------------------------------
+# Brok                                 
+PC18_FIXBOT_REMOTE2-1=Nieźle!
+#----------------------------------------------------
+# Brok                                 
+PC18_FIXBOT_OTHERS-1=Nie chcę go uszkodzić!
+#----------------------------------------------------
+# Brok                                 
+PC18_HOLE1-1=Dziura w membranie...
+# Brok                                 
+PC18_HOLE1-2=A już myślałem, że po tej stronie świat jest idealny. Uznaj mnie za rozczarowanego.
+#----------------------------------------------------
+# Brok                                 
+PC18_HOLE_FINISHED-1=No! Jak nowe.
+#----------------------------------------------------
+# Brok                                 
+PC18_CONTAINER1-1=Samodzielny system wzrostu roślin.
+# Brok                                 
+PC18_CONTAINER1-2=Ta głośna pompa nawadnia korzenie roślin.
+#----------------------------------------------------
+# Brok                                 
+PC18_CONTAINER2-1=Sztuczne środowisko wymaga sztucznego życia, tak mi się wydaje.
+# Brok                                 
+PC18_CONTAINER2-2=Powinno być zapieczętowane, więc dlaczego słyszę pompę...?
+#----------------------------------------------------
+# Brok                                 
+PC18_PIPE1-1=Wydaje mi się, że ta rura dostarcza wodę, pożywienie i wszystko, czego wymaga funcjonariusz w środku.
+# Brok                                 
+PC18_PIPE1-2=A jeśli jest tam toaleta... To działa i w drugą stronę.
+#----------------------------------------------------
+# Brok                                 
+PC18_FACTORY1-1=A więc to tutaj produkuje się Toxout...
+# Brok                                 
+PC18_FACTORY1-2=Gdzie są rury do jego transportu? Może pod ziemią?
+#----------------------------------------------------
+# Brok                                 
+PC18_SENTRYBOX1-1=Wydaje się hermetyczne.
+# Brok                                 
+PC18_SENTRYBOX1-2=Tylko jedno wejście... Przynajmniej dla ludzi.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok knocks on the sentry box door
+# *****************************************************************
+# Brok                                 
+PC18_DOOR_KNOCK1-1=Hej...? Jest tam ktoś...?
+#----------------------------------------------------
+# Brok                                 
+PC18_DOOR_KNOCK2-1=Doktorze Gherkin...?
+#----------------------------------------------------
+# Brok                                 
+PC18_DOOR_KNOCKAFTER1-1=Pozwól chociaż wejść!
+# Gherkin                                 
+PC18_DOOR_KNOCKAFTER1-2=Żeby te potwory się wślizgnęły?!
+# Gherkin                                 
+PC18_DOOR_KNOCKAFTER1-3=Nigdy!
+#----------------------------------------------------
+# Brok                                 
+PC18_DOOR_KNOCKAFTER2-1=Zamknięte...
+#----------------------------------------------------
+# Brok                                 
+PC18_DOOR_HIT1-1=Mówi Brok! Nie słyszysz mnie...?
+# Brok                                 
+PC18_DOOR_HIT1-2=Wiem, że tam jesteś!
+#----------------------------------------------------
+# Gherkin                                 
+PC18_DOOR_HIT2-1=Co robisz...?
+# Gherkin                                 
+PC18_DOOR_HIT2-2=Przestań!
+# Brok                                 
+PC18_DOOR_HIT2-3=Dopiero, jak cię stąd wyciągnę!
+#----------------------------------------------------
+# Gherkin                                 
+PC18_DOOR_HIT3-1=Pomocy! Ktokolwiek!
+# Gherkin                                 
+PC18_DOOR_HIT3-2=B-boję się...!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - If we break the door
+# *****************************************************************
+# Brok                                 
+PC18_DOOR_AFTERDEATH-1=...
+# Gherkin                                 
+PC18_DOOR_AFTERDEATH-2=Aaaaaaaaaachhhh!!!
+#----------------------------------------------------
+# Brok                                 
+PC18_DOOR_AFTERDEATH2-1=No nie! Uciekł!
+# Brok                                 
+PC18_DOOR_AFTERDEATH2-2=Może posunąłem się za daleko...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Gherkin
+# *****************************************************************
+# Brok                                 
+PC18_WINDOW_BEFORE1-1=Uch...?
+# Brok                                 
+PC18_WINDOW_BEFORE1-2=Doktorze Gherkin! Widzę cię!
+# Brok                                 
+PC18_WINDOW_BEFORE1-3=Możesz przestać chować się w kącie!
+#----------------------------------------------------
+# Gherkin                                 
+PC18_GHERKIN_TALK1-1=Och...! Pan Brok...
+# Gherkin                                 
+PC18_GHERKIN_TALK1-2=Przepraszam, myślałem...
+# Gherkin                                 
+PC18_GHERKIN_TALK1-3=Ojej...!
+# Brok                                 
+PC18_GHERKIN_TALK1-4=Co się dzieje...?
+# Gherkin                                 
+PC18_GHERKIN_TALK1-5=Triboty! Nadchodzą!
+# Brok                                 
+PC18_GHERKIN_TALK1-6=Co...?
+# Gherkin                                 
+PC18_GHERKIN_TALK1-7=Słyszę je!
+# Brok                                 
+PC18_GHERKIN_TALK1-8=No świetnie... Kolejny naukowiec z paranoją.
+# Brok                                 
+PC18_GHERKIN_TALK1-9=No dalej! Musimy iść!
+# Gherkin                                 
+PC18_GHERKIN_TALK1-10=Nie...!
+#----------------------------------------------------
+# Brok                                 
+PC18_WINDOW_RUNAWAY-1=Zwiał...
+#----------------------------------------------------
+# Brok                                 
+PC18_WINDOW_EMPTY-1=Pusto...
+#----------------------------------------------------
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1-1=Hej, doktorku! To znowu ja!
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1-2=P-Pan detektyw...?
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1-3=Co się stało? Co tam robisz?
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1-4=Ja... spanikowałem...
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1-5=Nie było cię... Wydawało mi się, że słyszałem jakieś boty...
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1-6=... Więc uciekłeś do jedynego miejsca, które uważałeś za bezpieczne.
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1-7=Skąd wiedziałeś?!
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1-8=Przeczucie...
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1-9=Cóż, wychodź. Nie mamy wiele...
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1-10=...
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1-11=O nie.
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1-12=Co jest?
+#----------------------------------------------------
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1B-1=Ech... Twoi "przyjaciele" są tutaj.
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1B-2=Aaaaach!
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1B-3=Na szczęście są zbyt głupi, żeby nas zauważyć.
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1B-4=O kurde... Ten koszmar się nigdy nie skończy...
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1B-5=Co teraz?!
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1B-6=Hmm...
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1B-7=Blokują drogę na lewo.
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1B-8=Co ze ścieżką na prawo?
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1B-9=O-ona jest bezpieczna?
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN1B-10=O ile mi wiadomo.
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1B-11=W-wydaje mi się, że ona prowadzi do Posterunku Granicznego, ale to dłuższa droga...
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1B-12=T-ty wybieraj...
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN1B-13=Tylko... mnie tu nie zostawiaj!
+#----------------------------------------------------
+# Gherkin                                 
+PC18_GHERKIN_TALKAGAIN2-1=Zrób coś...!
+# Brok                                 
+PC18_GHERKIN_TALKAGAIN2-2=Pracuję nad tym!
+#----------------------------------------------------
+# Brok                                 
+PC18_WINDOW_GHERKIN1-1=No dalej! Nie bądź tchórz!
+# Brok                                 
+PC18_WINDOW_GHERKIN1-2=To ty prosiłeś, żebym przyszedł, pamiętasz?
+# Gherkin                                 
+PC18_WINDOW_GHERKIN1-3=Nie wyjdę, póki będzie niebezpiecznie...!
+# Brok                                 
+PC18_WINDOW_GHERKIN1-4=Jest bezpiecznie!
+# Gherkin                                 
+PC18_WINDOW_GHERKIN1-5=N-nie wierzę ci...!
+# Gherkin                                 
+PC18_WINDOW_GHERKIN1-6=A jeśli nagle rzuci się na mnie bot? Albo jak spadnie z nieba...?
+# Brok                                 
+PC18_WINDOW_GHERKIN1-7=Auu...
+#----------------------------------------------------
+# Brok                                 
+PC18_WINDOW_GHERKIN2-1=Zapewniam cię. W okolicy nie ma Tribotów.
+# Gherkin                                 
+PC18_WINDOW_GHERKIN2-2=Oszalałeś?! Nie słyszysz ich kroków?
+# Gherkin                                 
+PC18_WINDOW_GHERKIN2-3=Pozbądź się ich!
+#----------------------------------------------------
+# Brok                                 
+PC18_WINDOW_MOST1-1=Nie ma ich!
+# Gherkin                                 
+PC18_WINDOW_MOST1-2=Jesteś pewien...? Nadal ledwo słyszę ich kroki...
+# Brok                                 
+PC18_WINDOW_MOST1-3=Gościu, masz calkiem dobry słuch jak na starucha...!
+# Brok                                 
+PC18_WINDOW_MOST1-4=Em... Bez urazy.
+# Brok                                 
+PC18_WINDOW_MOST1-5=Cóż... Do roboty.
+#----------------------------------------------------
+# Brok                                 
+PC18_WINDOW_ALL1-1=Zająłem się tymi okropnymi stworami. Już jest bezpiecznie.
+# Gherkin                                 
+PC18_WINDOW_ALL1-2=...
+# Gherkin                                 
+PC18_WINDOW_ALL1-3=Masz rację!
+# Brok                                 
+PC18_WINDOW_ALL1-4=W końcu...
+#----------------------------------------------------
+# Gherkin                                 
+PC18_WINDOW_ALL2-1=Na co czekasz?!
+# Gherkin                                 
+PC18_WINDOW_ALL2-2=Chodźmy! Na granicę!
+# Brok                                 
+PC18_WINDOW_ALL2-3=Okej... Za mną.
+#----------------------------------------------------
+# Brok                                 
+PC18_WINDOW_BACK1-1=Hej! Doktorku!
+# Brok                                 
+PC18_WINDOW_BACK1-2=Domyśliłem się, że tu wrócisz.
+# Gherkin                                 
+PC18_WINDOW_BACK1-3=... Dorwałeś ich?
+# Brok                                 
+PC18_WINDOW_BACK1-4=Tak. Całkowicie rozwaliłem je na kawałeczki.
+# Brok                                 
+PC18_WINDOW_BACK1-5=Słuchaj... Przepraszam za wcześniej...
+# Gherkin                                 
+PC18_WINDOW_BACK1-6=Och... Tak jest, jak się zatrudnia nieokrzesanych rozbójników.
+# Gherkin                                 
+PC18_WINDOW_BACK1-7=J... Jestem gotowy.
+# Gherkin                                 
+PC18_WINDOW_BACK1-8=Najpierw chodźmy na granicę.
+# Brok                                 
+PC18_WINDOW_BACK1-9=Dobra.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Bots notice Brok
+# *****************************************************************
+# Brok                                 
+PC18_BOTS_SEEBROK-1=Och...
+# Brok                                 
+PC18_BOTS_SEEBROK-2=Może doktor jednak nie ma paranoi!
+# Tribot                                 
+PC18_BOTS_SEEBROK-3=Cel namierzony!
+#----------------------------------------------------
+# Brok                                 
+PC18_ARRIVEAGAIN1-1=Zobacz, kto wrócił!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - AFter winning the fight
+# *****************************************************************
+# Brok                                 
+PC18_BOTSAGAIN_ENDFIGHT1-1=Doktorze! Droga wolna!
+# Gherkin                                 
+PC18_BOTSAGAIN_ENDFIGHT1-2=Och... Okej!
+# Brok                                 
+PC18_BOTSAGAIN_ENDFIGHT1-3=Musimy się śpieszyć!
+#----------------------------------------------------
+# Brok                                 
+PC18_BOTSAGAIN_ENDFIGHT_PILL-1=No nie! Ten bot miał Toxout!
+#----------------------------------------------------
+# Brok                                 
+PC18_BOTSAGAIN_ENDFIGHT_PILL2-1=Teraz musimy się stąd zabierać ...
+#----------------------------------------------------
+# Brok                                 
+PC18_EXITRIGHT1-1=Dalej, doktorze Gherkin! Możemy tędy uciec!
+# Gherkin                                 
+PC18_EXITRIGHT1-2=A-a-ale... Triboty nadal...
+# Brok                                 
+PC18_EXITRIGHT1-3=Nie ma na to czasu!
+# Brok                                 
+PC18_EXITRIGHT1-4=Jeśli będziesz czekał, one podejdą bliżej!
+# Gherkin                                 
+PC18_EXITRIGHT1-5=Jasny gwint...
+#----------------------------------------------------

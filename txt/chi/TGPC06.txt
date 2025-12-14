@@ -1,0 +1,631 @@
+#-------------------------------
+#=GRAFF --- SECTOR 56X STREET
+#-------------------------------
+
+#----- Interactions --------
+# Used on some logo icons to get information on what they mean
+PC_INFO=信息
+
+#----- Choices / Items --------
+GPC06_STATUETTE_BUYCHOICE=购买雕像？
+
+#----- Topics --------
+GPC06_WIRE_CHOICE=断开电线？
+GOT_DEATHBUTTON=按钮！
+GOT_NEON=霓虹灯管！
+
+#----- Dialog --------
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Graff
+GPC06_NEON1-1=霓虹广告牌？真是老古董了……居然还能运作！
+#----------------------------------------------------
+# Graff
+GPC06_NEON2-1=从这里够不到它。
+#----------------------------------------------------
+# Graff
+GPC06_NEON_TAKEN-1=哇！这灯亮的真不像是古董！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff talks to the flower merchant
+# *****************************************************************
+# Graff
+GPC06_FLOWERS_WELCOME1-1=你好……
+# Flower
+GPC06_FLOWERS_WELCOME1-2=哦！你好，先生！
+# Graff
+GPC06_FLOWERS_WELCOME1-3=先生……？
+# Flower
+GPC06_FLOWERS_WELCOME1-4=你已经成年了，对吧？
+# Graff
+GPC06_FLOWERS_WELCOME1-5=呃……是的。
+# Graff
+GPC06_FLOWERS_WELCOME1-6=那个，你是……
+# Flower
+GPC06_FLOWERS_WELCOME1-7=我是出售各种产品的商人。有什么看得上眼的吗？
+# Graff
+GPC06_FLOWERS_WELCOME1-8=……我只是随便瞧瞧。
+# Flower
+#No need to translate these （as long as you're using latin characters）, it's supposed to be a foreign language.
+GPC06_FLOWERS_WELCOME1-9=Talai Lugdei.
+# Graff
+GPC06_FLOWERS_WELCOME1-10=啥……？
+# Flower
+GPC06_FLOWERS_WELCOME1-11=意思是“你来对地方了”。
+# Flower
+GPC06_FLOWERS_WELCOME1-12=你是迷路了吗？
+# Graff
+GPC06_FLOWERS_WELCOME1-13=不是！我只是……
+# Graff
+GPC06_FLOWERS_WELCOME1-14=……算了。
+# Flower
+GPC06_FLOWERS_WELCOME1-15=Danante！请随意浏览。
+#----------------------------------------------------
+# Graff
+GPC06_FLOWERS_WELCOME2-1=你还在呢。
+# Flower
+GPC06_FLOWERS_WELCOME2-2=那是当然！
+# Flower
+GPC06_FLOWERS_WELCOME2-3=我最近在搞特价优惠。所有商品一律半价！
+# Graff
+GPC06_FLOWERS_WELCOME2-4=没兴趣，谢谢。
+#----------------------------------------------------
+# Graff
+GPC06_STATUETTE1-1=这难道是……
+# Flower
+GPC06_STATUETTE1-2=是的。这就是无尾神。
+# Flower
+GPC06_STATUETTE1-3=想要买个神像吗？
+# Graff
+GPC06_STATUETTE1-4=不……我不信这玩意的。
+# Flower
+GPC06_STATUETTE1-5=切。老实说，从你的眼神我看得出来……
+# Flower
+GPC06_STATUETTE1-6=你很感兴趣。
+# Flower
+GPC06_STATUETTE1-7=来吧，这个给你。
+# Graff
+GPC06_STATUETTE1-8=什么？不用！
+# Graff
+GPC06_STATUETTE1-9=我不能收！
+# Flower
+GPC06_STATUETTE1-10=没钱是吗？
+# Flower
+GPC06_STATUETTE1-11=瞧，这个雕像是有瑕疵的。
+# Flower
+GPC06_STATUETTE1-12=反正也卖不出去。
+# Graff
+GPC06_STATUETTE1-13=……好吧。谢谢你。
+# Flower
+GPC06_STATUETTE1-14=Danante！
+#----------------------------------------------------
+# Graff
+GPC06_STATUETTE1B-1=（……希望没被其他人看见。要不然肯定会以为我信奉无尾教了……）
+#----------------------------------------------------
+# Graff
+GPC06_STATUETTE2-1=我已经有一个了。
+# Flower
+GPC06_STATUETTE2-2=太好了！我们都信奉唯一的真神。
+# Graff
+GPC06_STATUETTE2-3=哼。
+#----------------------------------------------------
+# Graff
+GPC06_STATUETTE_ALREADY-1=一个已经足够了……
+#----------------------------------------------------
+# Graff
+GPC06_BOOK1-1=那本书难道是……
+# Flower
+GPC06_BOOK1-2=无尾经。里头记载着各种教诲、传说等等……
+# Graff
+GPC06_BOOK1-3=都只是些古人编写的神话故事而已。
+# Flower
+GPC06_BOOK1-4=那么……你相信什么呢？
+# Graff
+GPC06_BOOK1-5=科学。
+# Flower
+GPC06_BOOK1-6=那是当然！所有人都相信科学。
+# Flower
+GPC06_BOOK1-7=那么，你来这里究竟所为何事呢？
+# Flower
+GPC06_BOOK1-8=看得出你对我们的信仰并不感兴趣。
+# Graff
+GPC06_BOOK1-9=我……
+# Graff
+GPC06_BOOK1-10=明白了。我马上离开。
+# Flower
+GPC06_BOOK1-11=请等一下！
+# Flower
+GPC06_BOOK1-12=你很清楚科学对大家的影响。
+# Graff
+GPC06_BOOK1-13=……
+# Flower
+GPC06_BOOK1-14=我们现在的生活已经离不开科学了……
+# Flower
+GPC06_BOOK1-15=但这不意味着科学是我们唯一能够相信的事物。
+# Graff
+GPC06_BOOK1-16=这不能怪科学，只是别有用心者滥用了科学知识。
+# Flower
+GPC06_BOOK1-17=那么有什么办法可以防止这种事情再次发生呢？
+# Graff
+GPC06_BOOK1-18=……
+# Graff
+GPC06_BOOK1-19=……互相了解。
+# Flower
+GPC06_BOOK1-20=没错。所以，你需要怀有开明的思想。
+# Flower
+GPC06_BOOK1-21=因此你来到了这里……
+# Flower
+GPC06_BOOK1-22=甚至你可能是不知不觉中来到这里的。
+# Graff
+GPC06_BOOK1-23=对的，是这样子的……
+# Flower
+GPC06_BOOK1-24=Danante！请随意浏览。
+#----------------------------------------------------
+# Graff
+GPC06_BOOK2-1=（一群弱者为了给自己的困苦生活寻找个自我安慰的理由而编排出来的胡说八道。）
+#----------------------------------------------------
+# Graff
+GPC06_PLUSH1-1=（咦……这玩意好可爱！）
+# Flower
+GPC06_PLUSH1-2=原来如此！看来你是喜欢毛绒玩具？
+# Graff
+GPC06_PLUSH1-3=切！你以为我是小女生吗？！
+# Flower
+GPC06_PLUSH1-4=别害羞嘛，喜欢的话就买一个吧！
+# Graff
+GPC06_PLUSH1-5=不必了。
+# Graff
+GPC06_PLUSH1-6=（……但真的好可爱啊。）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Graff
+GPC06_OTHERBUILDING1-1=我真不该进入这些建筑的……
+#----------------------------------------------------
+# Graff
+GPC06_PIPEMAIL1-1=没用的，我今天已经服用过排毒丸了！
+#----------------------------------------------------
+# Graff
+GPC06_PIPEMAIL_BEFOREFIX1-1=见鬼……这东西不能用！我该怎么缴付账单呢？
+#----------------------------------------------------
+# Graff
+GPC06_PIPEMAIL_AFTERBUNKER1-1=拜托，求求你……咳咳……
+# Graff
+GPC06_PIPEMAIL_AFTERBUNKER1-2=……
+# Graff
+GPC06_PIPEMAIL_AFTERBUNKER1-3=糟糕……那个也同样损坏了。
+# Graff
+GPC06_PIPEMAIL_AFTERBUNKER1-4=咳……
+# Graff
+GPC06_PIPEMAIL_AFTERBUNKER1-5=或许我该……该……
+# Graff
+GPC06_PIPEMAIL_AFTERBUNKER1-6=咳……回家去……咳咳……
+#----------------------------------------------------
+# Pipemail
+GPC06_PIPEMAIL_AFTER-1=系统成功启动。
+# Ott
+GPC06_PIPEMAIL_AFTER-2=这个竟然能运作？！
+# Graff
+GPC06_PIPEMAIL_AFTER-3=快给我一粒排毒丸！
+# Pipemail
+GPC06_PIPEMAIL_AFTER-4=……
+# Pipemail
+GPC06_PIPEMAIL_AFTER-5=您有尚未缴清的账单。
+# Graff
+GPC06_PIPEMAIL_AFTER-6=就知道没这种好事……
+# Ott
+GPC06_PIPEMAIL_AFTER-7=真是一场空欢喜……
+#----------------------------------------------------
+# Graff
+#Pay the bill
+GPC06_PIPEMAIL_BILLC1-1=还是不敢相信这事需要我来做，不过……
+# Graff
+GPC06_PIPEMAIL_BILLC1-2=不缴付三角网费的话就要被断网了。
+#----------------------------------------------------
+# Pipemail
+GPC06_PIPEMAIL_BILLCSCAN-1=扫描中……
+# Pipemail
+#Amount is 150
+GPC06_PIPEMAIL_BILLCSCAN-2=探测到未缴清的账单。欠款数额是{amount}乌尼币。
+#----------------------------------------------------
+# Pipemail
+GPC06_PIPEMAIL_NOTENOUGH-1=账户余额不足。
+# Pipemail
+GPC06_PIPEMAIL_NOTENOUGH-2=此次缴付失败报告已上传给相关债权人。
+# Graff
+GPC06_PIPEMAIL_NOTENOUGH-3=最讨厌这种玩意……
+# Ott
+GPC06_PIPEMAIL_NOTENOUGH-4=可不是嘛。
+#----------------------------------------------------
+# Pipemail
+GPC06_PIPEMAIL_TRANSFER-1=余额充足，缴付成功。
+# Graff
+GPC06_PIPEMAIL_TRANSFER-2=终于有个好消息……
+# Pipemail
+GPC06_PIPEMAIL_TRANSFER-3=感谢惠顾，欢迎下次再来。
+# Ott
+GPC06_PIPEMAIL_TRANSFER-4=至少人家还挺礼貌的嘛。
+#----------------------------------------------------
+# Pipemail
+GPC06_PIPEMAIL_INVOICEHACKER-1=扫描中……
+# Pipemail
+GPC06_PIPEMAIL_INVOICEHACKER-2=请求拒绝，收款单无效。
+# Graff
+GPC06_PIPEMAIL_INVOICEHACKER-3=咦……奇怪。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Graff
+GPC06_RUBBLE1-1=这肯定是很久以前坍塌的……
+# Graff
+GPC06_RUBBLE1-2=至少我不必浪费时间继续前进了。
+#----------------------------------------------------
+# Graff
+GPC06_METALSHUTTERS1-1=进去这个垃圾堆……？
+# Graff
+GPC06_METALSHUTTERS1-2=算了吧，家里已经有一个了。
+#----------------------------------------------------
+# Graff
+GPC06_LEFTPANEL1-1=需要输入密码……算了，反正也没打算进去。
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL1-1=哇……那个信息电话是怎么回事？
+# Graff
+GPC06_RIGHTPANEL1-2=肯定是里头的电路短路了！
+# Graff
+GPC06_RIGHTPANEL1-3=好危险呀……不过一般人的确也不会傻到去触碰它。
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL2-1=做的好！我一直都好奇被电击的滋味是怎么样的！
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL_DISABLED1-1=已经关闭了，不过还是小心点。
+# Graff
+GPC06_RIGHTPANEL_DISABLED1-2=接下来，该如何取下那按钮？没有可以借力的地方……
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL_REMOVED1-1=哈……现在没办法继续监视了吧？
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL_SCREWDRIVER-1=看看能否把按钮拔出来……
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL_HURT1-1=大意了……痛死我了！
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL_OK-1=……
+# Graff
+GPC06_RIGHTPANEL_OK-2=……成功了！啊，全都掉出来了。
+# Graff
+GPC06_RIGHTPANEL_OK-3=没事……至少我拿到了这枚“死亡按钮”。
+#----------------------------------------------------
+# Graff
+GPC06_RIGHTPANEL_GET2-1=按钮上还有个NUB插口呢。太好了！
+#----------------------------------------------------
+# Graff
+GPC06_BOTTOMPANEL1-1=似乎是某种古老的接线板……
+# Graff
+GPC06_BOTTOMPANEL1-2=哇，竟然还是使用螺丝安装的！看来真的是古董呀……
+#----------------------------------------------------
+# Graff
+GPC06_BOTTOMPANEL2-1=锁得很紧。
+#----------------------------------------------------
+# Graff
+GPC06_BOTTOMPANEL_KEYGRAFF-1=不行！尖端形状不一样。
+#----------------------------------------------------
+# Graff
+GPC06_BOTTOMPANEL_SCREWDRIVER-1=小菜一碟！
+# Graff
+GPC06_BOTTOMPANEL_SCREWDRIVER-2=接下来看看……
+#----------------------------------------------------
+# Graff
+GPC06_BOTTOMPANEL_NOMESSUP-1=我可以尝试打开它……但干嘛要浪费时间？
+#----------------------------------------------------
+# Graff
+#It's a bag of wires
+GPC06_BOTTOMPANEL_FIRST-1=什么鬼？！这是谁设计的破玩意……？
+#----------------------------------------------------
+# Graff
+GPC06_WIREPANELTOP1-1=这些电线都是安装到墙壁内的，我无法切断它们。
+#----------------------------------------------------
+# Graff
+GPC06_WIREPANEL1-1=那些电线就在那道玻璃墙壁后面……
+# Graff
+GPC06_WIREPANEL1-2=唔……卡住了！肯定是太久没有人……打开过……
+# Graff
+GPC06_WIREPANEL1-3=不管用……我没有足够的力气打开它。
+# Graff
+GPC06_WIREPANEL1-4=唔……或许我并不需要真的打开它！
+#----------------------------------------------------
+# Graff
+GPC06_WIREPANEL2-1=真是乱七八糟的……
+# Graff
+GPC06_WIREPANEL2-2=我无法从这里切断那些电线……也许其实并不需要切断它们。
+#----------------------------------------------------
+# Unknown
+GPC06_WIREPANEL_OTHERS1-1=（砰砰声）
+# Graff
+GPC06_WIREPANEL_OTHERS1-2=啊！我无法砸开它！
+#----------------------------------------------------
+# Graff
+GPC06_WIREPANEL_OTHERS2-1=毫无意义……这个玻璃壳简直就是个坚不可摧的乌龟壳。
+#----------------------------------------------------
+# Graff
+GPC06_THUMBWHEEL1-1=这根电线似乎可以拔断。要这样做吗？
+#----------------------------------------------------
+# Graff
+GPC06_THUMBWHEEL2-1=应该是这根吗？
+#----------------------------------------------------
+# Graff
+#Not gasoline but some kind of poisonous gas
+GPC06_BATTERY1-1=似乎是个蓄电池……只不过里头充斥着气体，似乎是很古老的型号。
+#----------------------------------------------------
+# Graff
+#He's referring to the digicode near the door which Brok uses to type the code and open the gate
+GPC06_ICON1-1=跟附近那个数码面板很相似。
+#----------------------------------------------------
+# Graff
+#It's meant to be "battery"
+GPC06_ICON2-1=“……电池”
+# Graff
+GPC06_ICON2-2=前面的字已经看不清了……
+#----------------------------------------------------
+# Graff
+GPC06_ICON3-1=这个好像是信息电话？
+#----------------------------------------------------
+# Graff
+GPC06_ICON4-1=“电源”
+#----------------------------------------------------
+# Graff
+GPC06_THUMBWHEEL_ALREADY-1=卡住了……！我无法把它拧回去……
+#----------------------------------------------------
+# Graff
+GPC06_GASSPREAD1-1=咳咳……
+# Graff
+GPC06_GASSPREAD1-2=糟糕……咳……这个蓄电池泄漏了有毒气体……
+# Graff
+GPC06_GASSPREAD1-3=我竟然拔错了电线……真是糊涂！
+#----------------------------------------------------
+# Graff
+GPC06_CODECHANGE1-1=哎哟……！
+#----------------------------------------------------
+# Graff
+GPC06_CODECHANGE2-1=糟糕！现在谁都无法进去了！
+# Graff
+GPC06_CODECHANGE2-2=而且……我没办法把拨盘装回去……啊！
+# Graff
+GPC06_CODECHANGE2-3=……
+#----------------------------------------------------
+# Graff
+GPC06_INFOPHONE_REACT1-1=好吧……
+#----------------------------------------------------
+# Graff
+GPC06_INFOPHONE_REACT2-1=成功了吗？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Arriving on screen
+# *****************************************************************
+# Graff
+GPC06_FIRST1-1=……？
+# Graff
+GPC06_FIRST1-2=好吧，我怎么跑到这里来了……？
+# Graff
+GPC06_FIRST1-3=唉……我又心不在焉了。我不该跑得这么远的……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Drones goes from bridge in front of Graff towards merchant
+# *****************************************************************
+# Graff
+GPC06_DRONES1-1=什么……
+#----------------------------------------------------
+# Flower
+GPC06_DRONES2-1=啥？！
+# Various
+GPC06_DRONES2-2=无证经营是违法的。
+# Flower
+GPC06_DRONES2-3=不好！是警察！
+# Flower
+GPC06_DRONES2-4=我投降！我投降……
+# Flower
+GPC06_DRONES2-5=请别伤害我！
+# Various
+GPC06_DRONES2-6=快从实招来。
+# Flower
+GPC06_DRONES2-7=是的……
+# Flower
+GPC06_DRONES2-8=我是……在兜售物品谋求生计！
+# Various
+GPC06_DRONES2-9=快从实招来。
+# Flower
+GPC06_DRONES2-10=那个……我真不知道这要申请证件的！
+# Various
+GPC06_DRONES2-11=快从实招来。
+# Flower
+GPC06_DRONES2-12=……？
+# Flower
+GPC06_DRONES2-13=我全都招了呀！
+# Flower
+GPC06_DRONES2-14=天哪，我的天……
+# Various
+GPC06_DRONES2-15=快从实招来。
+# Graff
+GPC06_DRONES2-16=这不对劲呀……
+# Graff
+GPC06_DRONES2-17=这机器人不会是出毛病了吧？！好像随时会开枪的样子！
+# Graff
+GPC06_DRONES2-18=我该怎么办……？
+#----------------------------------------------------
+# Flower
+GPC06_DRONES_FLEE-1=……
+# Various
+GPC06_DRONES_FLEE-2=延迟结束。
+# Flower
+GPC06_DRONES_FLEE-3=哦不！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Winning against the drone
+# *****************************************************************
+# Graff
+GPC06_DRONES_WIN1-1=……
+# Flower
+GPC06_DRONES_WIN1-2=Danante！你救了我的命！
+# Flower
+GPC06_DRONES_WIN1-3=你太厉害了！
+# Graff
+GPC06_DRONES_WIN1-4=我……还行吧。
+# Flower
+GPC06_DRONES_WIN1-5=没错，你真的很棒！是命运把你引来了这里！
+# Graff
+GPC06_DRONES_WIN1-6=好吧……
+# Graff
+GPC06_DRONES_WIN1-7=那个……后会有期。
+# Flower
+GPC06_DRONES_WIN1-8=等一下，先别走！
+# Flower
+GPC06_DRONES_WIN1-9=至少让我报答你！
+# Graff
+GPC06_DRONES_WIN1-10=不用了。
+# Flower
+GPC06_DRONES_WIN1-11=瞎说，你明显在寻找什么东西。
+# Flower
+GPC06_DRONES_WIN1-12=这样吧，你随意浏览我的摊子。
+# Flower
+GPC06_DRONES_WIN1-13=看中了什么尽管拿去！
+# Graff
+GPC06_DRONES_WIN1-14=嗯……好的。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff decided to leave and merchant got killed off-screen
+# *****************************************************************
+# Graff
+GPC06_MERCHANTGONE1-1=……
+# Graff
+GPC06_MERCHANTGONE1-2=没发现那个商人的踪影……
+# Graff
+GPC06_MERCHANTGONE1-3=她要么是成功逃脱，要么就是……
+# Graff
+GPC06_MERCHANTGONE1-4=……
+# Graff
+GPC06_MERCHANTGONE1-5=无论如何，她在短期内是不可能回来这里了。
+#----------------------------------------------------
+# Flower
+GPC06_DRONE_GAMEOVER-1=我的主啊……你为何要这样对待我们……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Graff
+GPC06_GONE_STATUETTE1-1=都是些塑料的宗教神像……
+# Graff
+GPC06_GONE_STATUETTE1-2=取走那个破损的塑像应该是不会被发现的吧。
+#----------------------------------------------------
+# Graff
+GPC06_GONE_STATUETTE1B-1=反正没有人看管着摊子，迟早也会被人顺手牵羊的。
+#----------------------------------------------------
+# Graff
+GPC06_GONE_STATUETTE2-1=一个就足够了。
+#----------------------------------------------------
+# Graff
+GPC06_GONE_BOOK1-1=我喜欢看书……只不过并非这一类书籍。
+# Graff
+GPC06_GONE_BOOK1-2=这些书籍完全违背我的一切信念。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Thugs come at Graff - unfinished scene
+# *****************************************************************
+# Graff
+GPC06_THUGS1-1=哦不……一群歹徒朝这边来了……
+# Graff
+GPC06_THUGS1-2=我得赶紧藏起来……！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Graff and Ott visit the street
+# *****************************************************************
+# Graff
+GPC06_OTT_ARRIVE-1=今天在街上没碰见任何人……
+# Ott
+GPC06_OTT_ARRIVE-2=是的……所有人都待在家中。
+# Ott
+GPC06_OTT_ARRIVE-3=其实……我很庆幸此时此刻能跟你在一块。
+# Graff
+GPC06_OTT_ARRIVE-4=怎么讲？
+# Ott
+GPC06_OTT_ARRIVE-5=因为……
+# Ott
+GPC06_OTT_ARRIVE-6=你很强大……
+# Ott
+GPC06_OTT_ARRIVE-7=我没能力保护自己，还记得我在自卫术测验时的表现吗？
+# Graff
+GPC06_OTT_ARRIVE-8=你这不都一路熬过来了嘛！
+# Ott
+GPC06_OTT_ARRIVE-9=那是因为我跑得快……
+# Graff
+GPC06_OTT_ARRIVE-10=按布罗格的话说……“意志决定一切”！
+# Ott
+GPC06_OTT_ARRIVE-11=你说得倒轻巧！
+# Ott
+GPC06_OTT_ARRIVE-12=你们俩都长得比我高大威猛。
+# Graff
+GPC06_OTT_ARRIVE-13=高大威猛？你确定是在说我吗……？
+# Graff
+GPC06_OTT_ARRIVE-14=看来我在学校上体育课时的努力并没有白费！
+# Graff
+GPC06_OTT_ARRIVE-15=要是哪个鼠人敢出现在我面前，保证要他好看！
+# Ott
+GPC06_OTT_ARRIVE-16=好！
+#----------------------------------------------------
+# Graff
+GPC06_STATUETTE_OTT-1=要来一个吗？
+# Ott
+GPC06_STATUETTE_OTT-2=不了，谢谢。我家里已经有好多个了。
+# Graff
+GPC06_STATUETTE_OTT-3=真的吗……？我没想到你……
+# Ott
+GPC06_STATUETTE_OTT-4=是我父母。
+# Ott
+GPC06_STATUETTE_OTT-5=我本身并不是很信这玩意。
+# Graff
+GPC06_STATUETTE_OTT-6=深有同感……我总是忙碌到没空去想这些信仰的问题。
+#----------------------------------------------------
+# Graff
+GPC06_STALL_PILL1-1=没有药丸……咳咳……
+# Graff
+GPC06_STALL_PILL1-2=也没有商人……
+#----------------------------------------------------
+# Flower
+PC06_FLOWERS_WALKONSTAND1-1=先生！请离开我的摊位！
+#----------------------------------------------------
+# Flower
+PC06_FLOWERS_WALKONSTAND2-1=如果您弄坏了任何东西，您得赔钱！
+#----------------------------------------------------
+# Flower
+PC06_FLOWERS_WALKONSTAND3-1=上天会惩罚你的！
+#----------------------------------------------------
+# Flower
+PC06_FLOWERS_HIT1-1=天呐！您吓到我了！
+#----------------------------------------------------
+# Flower
+PC06_FLOWERS_HIT2-1=我会给你折扣……请不要伤害我！
+#----------------------------------------------------
+# Flower
+PC06_FLOWERS_HIT3-1=啊啊啊……！
+#----------------------------------------------------
+
+
+
+
+COOP_GPC06_FLOWERS1-1=一位不賣花的花商。
+

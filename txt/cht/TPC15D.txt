@@ -1,0 +1,4605 @@
+#-------------------------------
+#=LAB ROOM RIGHT
+#-------------------------------
+
+#----- Interactions --------
+PC_WIRES=電線
+PC_DRHUSH=胡斯博士
+PC_EQUIPMENT=設備
+PC_GLOVEHEADSET=手套和耳機
+PC_COLUMN=柱子
+PC_SPOT=汙點
+PC_LEFTHAND=左手
+PC_RIGHTHAND=右手
+PC_JACKET=外套
+PC_HEAD=頭部
+PC_CANISTER=金屬罐
+PC_NANITES=奈米機器人箱子
+PC_STAIN=污漬
+PC_SURFACE=表面
+
+#----- Choices / Items --------
+PC15D_SINK_DRINKCHOICE=是否飲用？
+PC15D_DRINK=飲用
+PC15D_DRAIN=排水
+PC15D_ACCEL500=加速500
+PC15D_PLANT=鳳凰花
+PC15D_CONFIRMCHOICE=奧特真的是凶手嗎？
+
+GOT_LAMPMINK=這是檯燈！
+GOT_LABFLOWER=這是實驗室用的花朵！
+
+#----- Topics --------
+PC15D_CHARGE_MINK=是否指控敏克博士為凶手？
+PC15D_SECONDGATHER_CHOICE=誰是真凶？
+
+#Charge Tidy
+INTERROGATION_CAUSEOFDEATH=罪案現場
+INTERROGATION_TRUECAUSE=真正死因
+INTERROGATION_CAUSEOFDEATHPROOF=何以證明使用過蟻漢堡醬料？
+INTERROGATION_ACCESSNANITES=凶手是怎麽取得奈米機器人？
+INTERROGATION_PROVETIDYLYING=證明泰迪在撒謊！
+INTERROGATION_DRHUSHWHERE=5:10時胡斯博士人在什麽地方？
+INTERROGATION_VENTPROOF=如何證明胡斯博士曾經待在通風管道中？
+INTERROGATION_WHEREPOISONED=胡斯博士是如何中毒的？
+INTERROGATION_CARRY=為什麽警衛沒有發現泰迪出現在大廳？
+INTERROGATION_CRUMBS=如何證明泰迪攀爬過人造坡道？
+INTERROGATION_STRETCH=泰迪是怎麽將胡斯博士塞入通風管道的？
+INTERROGATION_RAMP=泰迪如何爬上通風管道？
+INTERROGATION_TIDYPUSHDRHUSH=泰迪是如何將胡斯博士一路推過通風管道？
+INTERROGATION_LAMPPUSH=泰迪是什麽時候推胡斯博士的？
+INTERROGATION_LAMPWRONG=泰迪究竟是什麽時候推了胡斯博士？
+INTERROGATION_LAMPACCESS=泰迪是如何拿到敏克博士的檯燈？
+INTERROGATION_ELEMENTOFF=這個房間中有什麽不對勁的地方？
+INTERROGATION_LAMPOFF=這盞檯燈有什麽奇怪的地方？
+INTERROGATION_BODYFALL=11:02時發生的震蕩是怎麽回事？
+INTERROGATION_BODYMUSIC=為何敏克博士沒有聽見屍體落地的聲音？
+INTERROGATION_CONSCIOUSNESS=泰迪如何在充電過程中推動胡斯博士？
+INTERROGATION_MOTIVE=泰迪有什麽動機？
+INTERROGATION_ALIVE=為何胡斯博士還活著？
+
+#Charge Hush
+INTERROGATION_HUSH_NEEDEDROOM=為何胡斯博士須要進入敏克博士的房間？
+INTERROGATION_HUSH_KILL=有何證明胡斯博士意圖殺害敏克博士？
+INTERROGATION_HUSH_VENT=有何證明胡斯博士的確就藏在通風管道中？
+INTERROGATION_HUSH_CLIMB=胡斯博士是怎麽爬進通風管道的？
+INTERROGATION_HUSH_HEAR=為何敏克博士沒聽見胡斯博士摔落地上的聲音？
+
+#Charge Guard
+INTERROGATION_GUARD_STAGED=番茄醬是從哪來的？
+INTERROGATION_GUARD_BED=有何證明屍體是被藏在床底下？
+INTERROGATION_GUARD_MONITORING=有何證明監視紀錄被改動過？
+INTERROGATION_GUARD_MOTIVE=警衛到底有什麽動機？
+
+
+PC15D_DRHUSHWHY_BACK=胡斯博士回到辦公室
+PC15D_DRHUSHWHY_NEVEREXIT=胡斯博士從未離開過辦公室
+PC15D_DRHUSHWHY_GHOST=胡斯博士是個幽靈
+INTERROGATION_DRHUSHWHY=如何解釋此自相矛盾？
+PC15D_CHOICE_RIGHTPATH=我的判斷真的正確嗎？
+
+
+PC15D_MISTAKE_CHOICES=為何泰迪移動了胡斯博士的檯燈？
+PC15D_MISTAKE_TIDY=泰迪百密一疏了
+PC15D_MISTAKE_CONFUSE=泰迪試圖混淆我們
+
+PC15D_FINALCHOICE=何以解釋屍體並非處於通風管道下方？
+PC15D_FINALCHOICE_PUSHED=泰迪使用蠻力粗暴地推動屍體
+PC15D_FINALCHOICE_ALIVE=胡斯博士還活著
+PC15D_FINALCHOICE_MOVED=有人移動了胡斯博士的屍體
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions. Brok is inspecting to find clues over why Dr. Hush was found "dead" in the middle of Dr. Mink's room.
+# *****************************************************************
+# Brok                                 
+PC15D_POWERSOCKET1-1=那個電源插頭…
+# Brok                                 
+PC15D_POWERSOCKET1-2=為何燒焦了…？
+# Mink                                 
+PC15D_POWERSOCKET1-3=哦。是的…
+# Mink                                 
+PC15D_POWERSOCKET1-4=我前些日子打算重啓一個古老的機器人當我的助理。
+# Mink                                 
+PC15D_POWERSOCKET1-5=沒想到出了問題，才剛通電它就短路了。
+# Brok                                 
+PC15D_POWERSOCKET1-6=什麽機器人？
+# Mink                                 
+PC15D_POWERSOCKET1-7=這很重要嗎？
+# Mink                                 
+PC15D_POWERSOCKET1-8=上週我就把它丟掉了，這跟本案無關吧？
+# Mink                                 
+PC15D_POWERSOCKET1-9=實驗室裏的其他機器人可都是先進型號。
+# Brok                                 
+PC15D_POWERSOCKET1-10=你意思是只有年代久遠的機器人才會造成這種短路？
+# Mink                                 
+PC15D_POWERSOCKET1-11=對呀。重生日之前生産的型號都有這種毛病。
+# Brok                                 
+PC15D_POWERSOCKET1-12=有意思。
+#----------------------------------------------------
+# Brok                                 
+PC15D_POWERSOCKET2-1=燒焦的電源插頭…離屍體不是很遠。
+#----------------------------------------------------
+# Brok                                 
+PC15D_HOLE1-1=這個洞孔是通往胡斯博士的房間的…
+# Brok                                 
+PC15D_HOLE1-2=真沒料到！
+# Mink                                 
+PC15D_HOLE1-3=希望你在離開前會把它修補好！
+# Brok                                 
+PC15D_HOLE1-4=你的那個機器人手下呢？怎麽不讓它來修補？
+# Mink                                 
+PC15D_HOLE1-5=…對哦，都忘了它有這能力。
+# Brok                                 
+PC15D_HOLE1-6=它真能做得到？
+# Mink                                 
+PC15D_HOLE1-7=那當然啦。我們科學家本身是不可能去做這種體力活的。
+# Brok                                 
+PC15D_HOLE1-8=差點忘了你的身份。
+#----------------------------------------------------
+# Brok                                 
+PC15D_HOLE2-1=以我的體型恐怕是無法通過。
+# Mink                                 
+PC15D_HOLE2-2=任何成年人都不可能進得去。
+# Brok                                 
+PC15D_HOLE2-3=那就更奇怪了，為何會有這麽個秘密通道…
+#----------------------------------------------------
+# Brok                                 
+PC15D_TRAP1-1=那是什麽…？通風孔？
+# Mink                                 
+PC15D_TRAP1-2=是的。
+# Mink                                 
+PC15D_TRAP1-3=我們常年居住在這裏，當然得有空氣循環系統。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TRAP_AFTER1-1=等一下…
+# Brok                                 
+PC15D_TRAP_AFTER1-2=通風管道裏是不是有個梯子？
+# Mink                                 
+PC15D_TRAP_AFTER1-3=對呀，那是維修用的梯子。
+# Mink                                 
+PC15D_TRAP_AFTER1-4=我記得以前有人使用這梯子爬上去取出了一個卡在通風孔裏的郵遞包裹。
+# Brok                                 
+PC15D_TRAP_AFTER1-5=有辦法把梯子取下來嗎？
+# Mink                                 
+PC15D_TRAP_AFTER1-6=用我的平板吧。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TRAP_AFTER2-1=我得爬上梯子才能進入通風管道。
+#----------------------------------------------------
+# Brok                                 
+PC15D_LADDER1-1=好吧…又是探索的時候了。
+# Ott                                 
+PC15D_LADDER1-2=你確定要進去嗎，布羅格先生…？
+# Brok                                 
+PC15D_LADDER1-3=沒其他選擇。就算是翻了這裡也必須找出所有的線索！
+# Ott                                 
+PC15D_LADDER1-4=不是，我是問…
+# Ott                                 
+PC15D_LADDER1-5=以你的體型真有辦法鑽進那管道嗎…？
+# Brok                                 
+PC15D_LADDER1-6=喂！我很瘦的好嗎！
+# Brok                                 
+PC15D_LADDER1-7=不信就走著瞧吧！
+#----------------------------------------------------
+# Brok                                 
+PC15D_LADDER1B-1=唔…非常緊。
+# Brok                                 
+PC15D_LADDER1B-2=或許該開始減肥了…
+# Brok                                 
+PC15D_LADDER1B-3=咦，我碰到了什麽東西…？
+# Brok                                 
+PC15D_LADDER1B-4=…黏糊糊的。
+# Brok                                 
+PC15D_LADDER1B-5=(咕嘟)
+# Brok                                 
+PC15D_LADDER1B-6=味道挺不錯！
+#----------------------------------------------------
+# Mink                                 
+PC15D_LADDER1C-1=我幫你開燈了。
+# Brok                                 
+PC15D_LADDER1C-2=謝了！
+# Brok                                 
+PC15D_LADDER1C-3=嗯。有意思…
+# Brok                                 
+PC15D_LADDER1C-4=竟然是番茄醬！
+# Brok                                 
+PC15D_LADDER1C-5=這裏怎麽會殘留番茄醬…？
+# Brok                                 
+PC15D_LADDER1C-6=…
+# Brok                                 
+PC15D_LADDER1C-7=稍後再去想吧，得盡快出去免得被卡住！
+# Brok                                 
+PC15D_LADDER1C-8=頂端似乎有個巨型管子…
+# Brok                                 
+PC15D_LADDER1C-9=看來是無法爬上去。
+# Brok                                 
+PC15D_LADDER1C-10=那麽…只能繼續往前爬了。
+#----------------------------------------------------
+# Brok                                 
+PC15D_LADDER2-1=沒任何發現…已經徹底查看過了。
+# Ott                                 
+PC15D_LADDER2-2=你確定？
+# Brok                                 
+PC15D_LADDER2-3=當然！我都差點被卡在裏頭活活餓死了！
+# Ott                                 
+PC15D_LADDER2-4=別傻啦！
+# Ott                                 
+PC15D_LADDER2-5=真要是卡住的話我會給你送些蟻漢堡的。
+#----------------------------------------------------
+# Brok                                 
+PC15D_WIRES1-1=唔…這些電線難是用來勒人的？
+# Mink                                 
+PC15D_WIRES1-2=你有發現屍體上有勒痕嗎？
+# Brok                                 
+PC15D_WIRES1-3=沒有…
+#----------------------------------------------------
+# Brok                                 
+PC15D_WIRES2-1=呃…纏繞得亂七八糟的！
+# Brok                                 
+PC15D_WIRES2-2=真想拿把剪刀把它們全部咔嚓掉…
+# Mink                                 
+PC15D_WIRES2-3=你可別亂來！
+#----------------------------------------------------
+# Brok                                 
+PC15D_WIRES_MAGNIFY-1=奇怪…沒發現電纜上有任何奈米機器人。
+#----------------------------------------------------
+# Brok                                 
+PC15D_EQUIPMENT1-1=還以為你是專精於媽咪技術的。
+# Mink                                 
+PC15D_EQUIPMENT1-2=是奈米技術。
+# Brok                                 
+PC15D_EQUIPMENT1-3=對對對，奈米機器人！
+# Brok                                 
+PC15D_EQUIPMENT1-4=為什麽這裏有那麽多的化學物品？
+# Mink                                 
+PC15D_EQUIPMENT1-5=因為奈米機器人就是分子水平的存在。
+# Brok                                 
+PC15D_EQUIPMENT1-6=哦？那你這是在開發液態機器人嗎？
+# Mink                                 
+PC15D_EQUIPMENT1-7=…
+#----------------------------------------------------
+# Brok                                 
+PC15D_EQUIPMENT2-1=亂七八糟的…
+# Brok                                 
+PC15D_EQUIPMENT2-2=咦…？是我有幻覺還是這個包裹裏頭真有紅色的蠕蟲…？
+# Mink                                 
+PC15D_EQUIPMENT2-3=是真的，因為我需要活物進行實驗。
+# Brok                                 
+PC15D_EQUIPMENT2-4=我最愛吃紅色蠕蟲了！
+# Mink                                 
+PC15D_EQUIPMENT2-5=想都別想！動眼不動手！
+#----------------------------------------------------
+# Brok                                 
+PC15D_EQUIPMENT_MAGNIFY-1=沒錯…這桌子上的確有微型機器人的蹤跡！
+# Brok                                 
+PC15D_EQUIPMENT_MAGNIFY-2=很正常…因為這是他的工作台。
+#----------------------------------------------------
+# Brok                                 
+PC15D_NANITES1-1=別告訴我那些就是…呃…
+# Brok                                 
+PC15D_NANITES1-2=奈米玩意。
+# Mink                                 
+PC15D_NANITES1-3=奈米機器人。也叫微型機器人。
+# Brok                                 
+PC15D_NANITES1-4=我就是那個意思。
+# Brok                                 
+PC15D_NANITES1-5=它們有什麽作用？
+# Mink                                 
+PC15D_NANITES1-6=你這是明知故問嗎…？我們都使用它們多少年了！
+# Brok                                 
+PC15D_NANITES1-7=你這麽一說…
+# Brok                                 
+PC15D_NANITES1-8=我倒是想起來莉雅曾經使用它們配合藥物來治病。
+# Mink                                 
+PC15D_NANITES1-9=是的，它們的主要功能就是醫療保健。
+# Mink                                 
+PC15D_NANITES1-10=把它們輸入身體後，它們就會在你體內自動修補你的身體。
+# Brok                                 
+PC15D_NANITES1-11=厲害！
+# Mink                                 
+PC15D_NANITES1-12=那個…
+# Mink                                 
+PC15D_NANITES1-13=奈米機器人業界一直流傳著一個傳聞。
+# Mink                                 
+PC15D_NANITES1-14=某位科學家通過奈米機器人成功直接操縱宿主。
+# Brok                                 
+PC15D_NANITES1-15=那麽嚇人…
+# Mink                                 
+PC15D_NANITES1-16=的確。
+# Mink                                 
+PC15D_NANITES1-17=不過你可以放心。這種事其實並沒有發生過。
+# Mink                                 
+PC15D_NANITES1-18=要是真有誰做到了，那他早就成為全世界最頂尖的科學家了！
+# Brok                                 
+PC15D_NANITES1-19=所以肯定不是你。
+# Mink                                 
+PC15D_NANITES1-20=我真希望是！
+#----------------------------------------------------
+# Brok                                 
+PC15D_NANITES2-1=這麽大個東西置入身體不會造成傷害嗎？
+# Mink                                 
+PC15D_NANITES2-2=你現在看見的影像是放大了一萬倍的結果，我們這樣比較便於工作。
+# Mink                                 
+PC15D_NANITES2-3=其實它們是肉眼看不見的。
+# Brok                                 
+PC15D_NANITES2-4=這麽小一定很難操縱吧。
+# Mink                                 
+PC15D_NANITES2-5=的確！唯有像我這樣經驗豐富的科學家才有能力辦到！
+# Brok                                 
+PC15D_NANITES2-6=(科學家難道都是自戀狂嗎？)
+#----------------------------------------------------
+# Brok                                 
+PC15D_NANITES3-1=我該去不尋常的地方查看一下是否藏有奈米機器人。
+# Brok                                 
+PC15D_NANITES3-2=我的物品欄中有樣工具可以幫得上忙…
+#----------------------------------------------------
+# Brok                                 
+PC15D_NANITES_MAGNIFY-1=咦！那裏頭有無數的微型機器人！
+# Mink                                 
+PC15D_NANITES_MAGNIFY-2=這還需要放大鏡才發現嗎…？
+#----------------------------------------------------
+# Brok                                 
+PC15D_GLOVEHEADSET1-1=那個手套…
+# Mink                                 
+PC15D_GLOVEHEADSET1-2=這是用於操縱全息影像中的立體物體。
+# Mink                                 
+PC15D_GLOVEHEADSET1-3=不然你以為我們是怎麽開發機器人的？
+# Brok                                 
+PC15D_GLOVEHEADSET1-4=那個頭戴耳機呢？
+# Mink                                 
+PC15D_GLOVEHEADSET1-5=那是診斷工具。
+# Mink                                 
+PC15D_GLOVEHEADSET1-6=奈米機器人擁有類似於昆蟲的特性。
+# Mink                                 
+PC15D_GLOVEHEADSET1-7=它們在一般的環境下發出的聲音幾乎微不可聞。
+# Mink                                 
+PC15D_GLOVEHEADSET1-8=而這工具則能夠放大它們的聲音讓我聽見…
+# Brok                                 
+PC15D_GLOVEHEADSET1-9=(哈欠)
+# Mink                                 
+PC15D_GLOVEHEADSET1-10=跟你講解也是浪費時間。
+# Brok                                 
+PC15D_GLOVEHEADSET1-11=不好意思，最近睡眠不足。
+#----------------------------------------------------
+# Brok                                 
+PC15D_GLOVEHEADSET2-1=沒發現任何不尋常的地方。
+# Brok                                 
+PC15D_GLOVEHEADSET2-2=雖然是很高科技的玩意，不過…
+# Brok                                 
+PC15D_GLOVEHEADSET2-3=要說這是凶器的話那就有些誇張了。
+#----------------------------------------------------
+# Brok                                 
+PC15D_GLOVEHEADSET_MAGNIFY-1=本以為他用來操縱奈米機器人的手套會沾有不少奈米機器人的…
+# Brok                                 
+PC15D_GLOVEHEADSET_MAGNIFY-2=沒想到——真的有！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Using Dr Mink's tablet for various interactions
+# *****************************************************************
+# Mink                                 
+PC15D_TABLET1-1=別碰！
+# Brok                                 
+PC15D_TABLET1-2=怎麼？會咬人嗎？
+# Mink                                 
+PC15D_TABLET1-3=別裝傻！
+# Mink                                 
+PC15D_TABLET1-4=沒看見這是我的工作平板嗎？
+# Mink                                 
+PC15D_TABLET1-5=裏頭含有機密資訊！
+# Brok                                 
+PC15D_TABLET1-6=所以呢？
+# Mink                                 
+PC15D_TABLET1-7=你知不知道這些資料一旦落入有心的人手中會有什麽結果？
+# Brok                                 
+PC15D_TABLET1-8=不知道。
+# Brok                                 
+PC15D_TABLET1-9=不過我是本案的偵探，你無法拒絕我的要求。
+# Mink                                 
+PC15D_TABLET1-10=好吧…！碰吧碰吧，用你油膩膩又髒兮兮的手去碰吧。
+# Brok                                 
+PC15D_TABLET1-11=…
+# Brok                                 
+PC15D_TABLET1-12=這無法打開…難道是上鎖了？
+# Mink                                 
+PC15D_TABLET1-13=很明顯，我們的工作平板當然是有鎖螢幕功能的。
+# Brok                                 
+PC15D_TABLET1-14=那你快解鎖呀！
+# Mink                                 
+PC15D_TABLET1-15=我拒絕。
+# Brok                                 
+PC15D_TABLET1-16=啥？
+# Brok                                 
+PC15D_TABLET1-17=老兄，我沒空跟你開玩笑。
+# Brok                                 
+PC15D_TABLET1-18=你要麽乖乖配合，要麽就讓你的臉蛋跟這部平板進行親密接觸…
+# Mink                                 
+PC15D_TABLET1-19=（咕噜）那我只能…
+#----------------------------------------------------
+# Mink                                 
+PC15D_TABLET1B-1=搞定。
+# Mink                                 
+PC15D_TABLET1B-2=有什麽發現嗎？
+# Brok                                 
+PC15D_TABLET1B-3=仔細一看…
+# Brok                                 
+PC15D_TABLET1B-4=我根本看不明白這些資訊。
+#----------------------------------------------------
+# Ott                                 
+PC15D_TABLET_OTT-1=讓我來瞧瞧！
+# Ott                                 
+PC15D_TABLET_OTT-2=唔…
+# Ott                                 
+PC15D_TABLET_OTT-3=…
+# Ott                                 
+PC15D_TABLET_OTT-4=粗略看了下沒發現任何疑點…
+# Ott                                 
+PC15D_TABLET_OTT-5=都是些關於奈米機器人的能耗效率的研究數據…
+# Brok                                 
+PC15D_TABLET_OTT-6=好的。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLET2-1=無論如何，我沒發現這個平板上有任何血跡。
+# Brok                                 
+PC15D_TABLET2-2=所以這應該不是凶器，除非血跡被抹乾淨了。
+# Mink                                 
+PC15D_TABLET2-3=當然不是凶器！你有病嗎？
+# Brok                                 
+PC15D_TABLET2-4=不能排除任何可能性。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLET_LADDER1-1=好了…梯子弄下來了。
+# Mink                                 
+PC15D_TABLET_LADDER1-2=很普通的維修用梯子，感覺不太穩固…
+# Brok                                 
+PC15D_TABLET_LADDER1-3=你有爬過上去嗎？
+# Mink                                 
+PC15D_TABLET_LADDER1-4=開什麽玩笑！？我懼高…
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETRESEARCH1-1=都是些看不懂的數據。
+# Mink                                 
+PC15D_TABLETRESEARCH1-2=喂！那是我的研究數據！高度機密！
+# Brok                                 
+PC15D_TABLETRESEARCH1-3=那我還是別浪費時間了。
+#----------------------------------------------------
+# Mink                                 
+PC15D_TABLET_AFTER1-1=嗯…嘿。我想補償下之前對你的惡劣態度。
+# Mink                                 
+PC15D_TABLET_AFTER1-2=我的平板上記錄著各種數據，或許會對你有用。
+# Brok                                 
+PC15D_TABLET_AFTER1-3=原來裏頭不只是研究數據？你一直都在隱瞞我們？
+# Mink                                 
+PC15D_TABLET_AFTER1-4=不是…這些功能本來是跟案件無關的，但是現在情況不同了…
+# Mink                                 
+PC15D_TABLET_AFTER1-5=這案子的發展已經超出了我的想象。
+# Mink                                 
+PC15D_TABLET_AFTER1-6=我給你開個權限吧。
+#----------------------------------------------------
+# Mink                                 
+PC15D_TABLET_AFTER2-1=把手指伸出來。
+# Brok                                 
+PC15D_TABLET_AFTER2-2=喂！
+# Mink                                 
+PC15D_TABLET_AFTER2-3=我是在給你新增訪客使用權。接下來一個小時內你會享有最高權限。
+# Brok                                 
+PC15D_TABLET_AFTER2-4=哦。謝謝。
+# Brok                                 
+PC15D_TABLET_AFTER2-5=唔…
+#----------------------------------------------------
+# Ott                                 
+PC15D_TABLET_MEDICAL_OTHERS-1=布羅格先生，你搞錯了，那個圖示不是這麽操作的。
+# Brok                                 
+PC15D_TABLET_MEDICAL_OTHERS-2=誰叫它們都長得一樣！
+#----------------------------------------------------
+# Ott                                 
+PC15D_TABLETCLOSEUP_MEDICAL1-1=布羅格先生！我們或許可以使用平板來搜尋一下醫療記錄。
+# Mink                                 
+PC15D_TABLETCLOSEUP_MEDICAL1-2=沒問題，這些是我本身所收集到的資料，已經相容了離線版本的三角網路。
+# Mink                                 
+PC15D_TABLETCLOSEUP_MEDICAL1-3=這些資料都是平民百姓無法看到的，不過我擁有離線查看權限！
+#----------------------------------------------------
+# Ott                                 
+PC15D_TABLETCLOSEUP_MEDICAL2-1=你想要搜尋什麽問題？
+# Brok                                 
+PC15D_TABLETCLOSEUP_MEDICAL2-2=讓我想想…
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLET_MEDICAL_EXIT-1=暫時沒有…
+# Ott                                 
+PC15D_TABLET_MEDICAL_EXIT-2=那想到再說。
+#----------------------------------------------------
+# Ott                                 
+PC15D_TABLET_MEDICAL_ACCEL500-1=唔…那是給器官有缺陷的病人服用的藥物。
+# Unknown                                 
+PC15D_TABLET_MEDICAL_ACCEL500-2=“沒時間運動健身？那麽加速500會是你最佳選擇！”
+# Unknown                                 
+PC15D_TABLET_MEDICAL_ACCEL500-3=“它可以加速你的身體機能讓你永遠保持著頂尖的身材和機能！”
+# Brok                                 
+PC15D_TABLET_MEDICAL_ACCEL500-4=看起來像是廣告而不是藥物研究數據…
+# Ott                                 
+PC15D_TABLET_MEDICAL_ACCEL500-5=敏克博士…你的同事有服用這種藥物的習慣嗎？
+# Mink                                 
+PC15D_TABLET_MEDICAL_ACCEL500-6=不知道，不過倒是有可能。我們科學家的確是長時間缺乏運動的那類人。
+# Mink                                 
+PC15D_TABLET_MEDICAL_ACCEL500-7=我自己沒服用過它，因為我比較喜歡“全方味”！
+# Brok                                 
+PC15D_TABLET_MEDICAL_ACCEL500-8=全方味…？
+# Mink                                 
+PC15D_TABLET_MEDICAL_ACCEL500-9=那是一種發泡保健食品，裏頭含有為每個使用者量身打造每天所需的標準營養成分。
+# Brok                                 
+PC15D_TABLET_MEDICAL_ACCEL500-10=這個世界真是發展得太快了。
+#----------------------------------------------------
+# Ott                                 
+PC15D_TABLET_MEDICAL_PLANT-1=這不是警衛先生桌子上的那棵植物嗎？
+# Brok                                 
+PC15D_TABLET_MEDICAL_PLANT-2=是的。
+# Ott                                 
+PC15D_TABLET_MEDICAL_PLANT-3=好吧…只是不明白你為什麽對這植物感興趣。
+# Ott                                 
+PC15D_TABLET_MEDICAL_PLANT-4=發現了！
+# Unknown                                 
+PC15D_TABLET_MEDICAL_PLANT-5=“鳳凰花隸屬於有根植物。它每年開花兩次，都是在…”
+# Brok                                 
+PC15D_TABLET_MEDICAL_PLANT-6=唔…？
+# Ott                                 
+PC15D_TABLET_MEDICAL_PLANT-7=怎麽回事？
+# Brok                                 
+PC15D_TABLET_MEDICAL_PLANT-8=下面有注釋一些文字…
+# Unknown                                 
+PC15D_TABLET_MEDICAL_PLANT-9=“我嘗試將鳳凰花和奈米機器人混合，可惜效果不太理想。”
+# Unknown                                 
+PC15D_TABLET_MEDICAL_PLANT-10=“此混合物會導致宿主的心跳功大幅降低，最後死亡。”
+# Ott                                 
+PC15D_TABLET_MEDICAL_PLANT-11=(喂…你說會不會…？)
+# Brok                                 
+PC15D_TABLET_MEDICAL_PLANT-12=(嗯，這一定是敏克博士寫的。)
+#----------------------------------------------------
+# Ott                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-1=你在開玩笑吧…？
+# Brok                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-2=沒開玩笑，難道你不喜歡吃？
+# Ott                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-3=我比較喜歡普通的管狀食品…
+# Brok                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-4=你們這一代小孩就是不識貨。
+# Ott                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-5=不過…你看看。
+# Unknown                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-6=“蟻漢堡以95%的新鮮螞蟻做成，一直以來都是最受歡迎的傳統食品！”
+# Unknown                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-7=“香脆爽口的蟻漢堡保證您吃得開心，長輩吃得安心！”
+# Brok                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-8=長輩！？
+# Ott                                 
+PC15D_TABLET_MEDICAL_ANTBURGER-9=我沒說錯吧。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETANALYSIS1-1=這個按鈕是幹嘛的…？按下去也沒反應。
+# Mink                                 
+PC15D_TABLETANALYSIS1-2=那是個分析儀，它可以詳細分析出任何物體的所有組成部分。
+# Mink                                 
+PC15D_TABLETANALYSIS1-3=對於已聯網的設備，它會顯示出資料庫中所儲存的相關資料。
+# Mink                                 
+PC15D_TABLETANALYSIS1-4=不過你也可以把任何固態或液態的有機物質放上去分析。
+# Brok                                 
+PC15D_TABLETANALYSIS1-5=哦。
+# Brok                                 
+PC15D_TABLETANALYSIS1-6=那我只需把想要分析的東西放上去就行了？
+# Mink                                 
+PC15D_TABLETANALYSIS1-7=沒錯。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETANALYSIS2-1=只要把已聯網的設備或任何有機物質置放在這裏就可以獲取其資訊。
+#----------------------------------------------------
+# Unknown                                 
+PC15D_TABLETANALYSIS_PILLHUSH-1=“這是1bg劑量的加速500藥丸。”
+# Brok                                 
+PC15D_TABLETANALYSIS_PILLHUSH-2=加速500…沒聽說過。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETANALYSIS_LABFLOWER-1=這是什麽花朵？
+# Unknown                                 
+PC15D_TABLETANALYSIS_LABFLOWER-2=“偵測到鳳凰花。”
+# Brok                                 
+PC15D_TABLETANALYSIS_LABFLOWER-3=鳳凰花…？唔。
+# Brok                                 
+PC15D_TABLETANALYSIS_LABFLOWER-4=不知道是否有什麽特殊的醫療功能…？
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-1=胡斯博士的檯燈是否有任何線索…？
+# Brok                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-2=…
+# Unknown                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-3=“此設備屬於敏克博士，目前已停止運作。”
+# Brok                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-4=甚麼…？
+# Unknown                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-5=“檢查記錄中…”
+# Unknown                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-6=“5:10時受到劇烈震蕩”
+# Brok                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-7=所以說…這是今早損壞的…？
+# Brok                                 
+PC15D_TABLETANALYSIS_HUSHLAMP-8=奇怪了…
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-1=且看這件疑似的凶器能提供些什麽線索！
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-2=…
+# Unknown                                 
+PC15D_TABLETANALYSIS_MINKLAMP-3=“此檯燈擁有以下的功能——鬧鐘、揚聲器、照明、瀏覽三角網、以及震蕩感應”
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-4=都是些檯燈的必備功能…
+# Unknown                                 
+PC15D_TABLETANALYSIS_MINKLAMP-5=“此設備屬於胡斯博士”
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-6=甚麼…？
+# Ott                                 
+PC15D_TABLETANALYSIS_MINKLAMP-7=難道他們意外調換了彼此的檯燈？
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-8=接下來是活動記錄…
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-9=唔…
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-10=找到了。“11:02時發生劇烈震蕩”
+# Ott                                 
+PC15D_TABLETANALYSIS_MINKLAMP-11=讓我來查看一下？
+# Ott                                 
+PC15D_TABLETANALYSIS_MINKLAMP-12=…
+# Ott                                 
+PC15D_TABLETANALYSIS_MINKLAMP-13=你說得對…這是唯一的相關訊息…
+# Ott                                 
+PC15D_TABLETANALYSIS_MINKLAMP-14=所以說…這的確就是殺人凶器了？
+# Brok                                 
+PC15D_TABLETANALYSIS_MINKLAMP-15=那得繼續調查才知道。
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETANALYSIS_TABLETHUSH-1=呃…？沒有效果嗎？
+# Mink                                 
+PC15D_TABLETANALYSIS_TABLETHUSH-2=你是把胡斯的平板放到我的平板上了？
+# Brok                                 
+PC15D_TABLETANALYSIS_TABLETHUSH-3=…對呀？
+# Mink                                 
+PC15D_TABLETANALYSIS_TABLETHUSH-4=你這是指望我的平板會分析出他平板裏頭的訊息？
+# Brok                                 
+PC15D_TABLETANALYSIS_TABLETHUSH-5=對呀…
+# Mink                                 
+PC15D_TABLETANALYSIS_TABLETHUSH-6=有創意，不過他的平板是上鎖螢幕狀態，唯一能解鎖的人就是胡斯博士本人。
+# Brok                                 
+PC15D_TABLETANALYSIS_TABLETHUSH-7=這樣啊…
+#----------------------------------------------------
+# Unknown                                 
+PC15D_TABLETANALYSIS_MAGNIFY-1=“擁有放大功能的便宜放大鏡”
+# Brok                                 
+PC15D_TABLETANALYSIS_MAGNIFY-2=是物美價廉好嗎！
+#----------------------------------------------------
+# Unknown                                 
+PC15D_TABLETANALYSIS_PENDANT-1=“以庚酰胺製造，內含未知電子設備。”
+# Brok                                 
+PC15D_TABLETANALYSIS_PENDANT-2=電子設備…？
+# Mink                                 
+PC15D_TABLETANALYSIS_PENDANT-3=不可能，我猜是平板探測到自己了，掃描反光物質時有可能會出現這種情況。
+# Brok                                 
+PC15D_TABLETANALYSIS_PENDANT-4=是嗎…
+#----------------------------------------------------
+# Unknown                                 
+PC15D_TABLETANALYSIS_CATFUR-1=“有高機率引來跳蚤的灰色貓毛。”
+# Unknown                                 
+PC15D_TABLETANALYSIS_CATFUR-2=“我們的最新産品“蚤安寧好”可以杜絕一切跳蚤！”
+# Brok                                 
+PC15D_TABLETANALYSIS_CATFUR-3=又是廣告！？
+# Mink                                 
+PC15D_TABLETANALYSIS_CATFUR-4=科研是需要資金的。
+#----------------------------------------------------
+# Unknown                                 
+PC15D_TABLETANALYSIS_REMOTECONTROL-1=“警隊用設備。可遠程關閉電子設備。”
+#----------------------------------------------------
+# Brok                                 
+PC15D_TABLETANALYSIS_OTHERS-1=唔…沒有分析結果。
+# Brok                                 
+PC15D_TABLETANALYSIS_OTHERS-2=你這玩意出毛病了！
+# Mink                                 
+PC15D_TABLETANALYSIS_OTHERS-3=只是資料庫沒有收錄而已，這掃描功能可不是萬能的。
+# Brok                                 
+PC15D_TABLETANALYSIS_OTHERS-4=唔。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Inspecting Dr. Hush's body
+# *****************************************************************
+# Brok                                 
+PC15D_HEAD1-1=沒有呼吸…
+# Brok                                 
+PC15D_HEAD1-2=可憐的傢伙。
+# Brok                                 
+PC15D_HEAD1-3=看來他是被人從後方重擊的？
+# Brok                                 
+PC15D_HEAD1-4=我得仔細查看下那血跡。
+#----------------------------------------------------
+# Brok                                 
+PC15D_HEAD_AFTER1-1=如果說血跡是僞造的…
+# Brok                                 
+PC15D_HEAD_AFTER1-2=那麽博士就應該不是頭部受到重擊而死。
+# Brok                                 
+PC15D_HEAD_AFTER1-3=那死因是甚麼呢…？
+#----------------------------------------------------
+# Brok                                 
+PC15D_HEAD_MAGNIFY-1=唔，沒有跳蚤也沒有皮屑…
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTHAND1-1=他手上沒握著任何東西…
+# Brok                                 
+PC15D_RIGHTHAND1-2=可是…他的手指卻有些黑色的污漬。
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTHAND2-1=感覺應該仔細查看下這些黑色污漬…
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTHAND_MAGNIFY-1=哇…
+# Brok                                 
+PC15D_RIGHTHAND_MAGNIFY-2=他的雙手沾滿了奈米機器人…！
+# Brok                                 
+PC15D_RIGHTHAND_MAGNIFY-3=這個重點得記錄下來。
+#----------------------------------------------------
+# Brok                                 
+PC15D_LEFTHAND1-1=唔…沒發現任何重要的線索。
+# Brok                                 
+PC15D_LEFTHAND1-2=不過這雙手保養得真不錯！
+#----------------------------------------------------
+# Brok                                 
+PC15D_LEFTHAND_MAGNIFY-1=…手上有些奈米機器人…
+# Brok                                 
+PC15D_LEFTHAND_MAGNIFY-2=不過這不足以證明什麽，也許只是沒有經常洗手的習慣。
+#----------------------------------------------------
+# Brok                                 
+PC15D_LEFTHAND_WRONGHAND-1=唔…還以為可以解鎖的。
+# Brok                                 
+PC15D_LEFTHAND_WRONGHAND-2=難道得用另一只手？
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTHAND_LAMP-1=它閃動了！
+# Brok                                 
+PC15D_RIGHTHAND_LAMP-2=呃…就這樣而已…？
+# Mink                                 
+PC15D_RIGHTHAND_LAMP-3=不然你以為？會說話的檯燈？
+# Brok                                 
+PC15D_RIGHTHAND_LAMP-4=對呀…
+# Mink                                 
+PC15D_RIGHTHAND_LAMP-5=這是個聯網設備，你可以通過我的平板獲得更多資訊。
+# Brok                                 
+PC15D_RIGHTHAND_LAMP-6=好主意！
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTHAND_TABLETHUSH1-1=…
+# Brok                                 
+PC15D_RIGHTHAND_TABLETHUSH1-2=咦！成功了！
+# Mink                                 
+PC15D_RIGHTHAND_TABLETHUSH1-3=甚麼…？
+# Brok                                 
+PC15D_RIGHTHAND_TABLETHUSH1-4=胡斯博士的平板…成功解鎖了！
+# Mink                                 
+PC15D_RIGHTHAND_TABLETHUSH1-5=真是奇怪了…這不可能的，他不是已經…
+# Brok                                 
+PC15D_RIGHTHAND_TABLETHUSH1-6=很明顯你錯了，先看看這個寶貝平板能提供什麽線索！
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTHAND_TABLET1B-1=唔…
+# Brok                                 
+PC15D_RIGHTHAND_TABLET1B-2=看來…他好像傳送了什麽數據？
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-3=讓我瞧瞧？
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-4=你說得對，這的確是向外傳送了文件…這是他正在進行的研究項目…“AI版本更新：302305.zyl”
+# Brok                                 
+PC15D_RIGHTHAND_TABLET1B-5=這有什麽異常嗎？
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-6=沒有，我們以往都必須定時上傳文件給專案經理。
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-7=不過…這個收件人信箱卻被模糊化了。
+# Brok                                 
+PC15D_RIGHTHAND_TABLET1B-8=什麽意思？
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-9=我看不到收件人是誰，不過…
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-10=根據這文件的資訊來看…對方一定是高層人士。
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-11=等一下…我剛發現…
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-12=這文件雖然是最後在昨天編輯過，但是創建日期卻是在…3029年！？
+# Brok                                 
+PC15D_RIGHTHAND_TABLET1B-13=那不是6年前了？
+# Mink                                 
+PC15D_RIGHTHAND_TABLET1B-14=不對勁，這肯定是系統發生故障。
+# Ott                                 
+PC15D_RIGHTHAND_TABLET1B-15=布羅格先生，你認為這跟本案有關嗎？
+# Brok                                 
+PC15D_RIGHTHAND_TABLET1B-16=4:45時傳送的文件…
+# Brok                                 
+PC15D_RIGHTHAND_TABLET1B-17=一定是很關鍵的線索。
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTHAND_TABLETHUSH2-1=4:45時傳送了一份文件…然後就沒紀錄了？
+# Brok                                 
+PC15D_RIGHTHAND_TABLETHUSH2-2=還以為平板裏會存有更多訊息的！
+# Mink                                 
+PC15D_RIGHTHAND_TABLETHUSH2-3=我們一般不會把訊息存在本機硬碟中。
+# Mink                                 
+PC15D_RIGHTHAND_TABLETHUSH2-4=一旦文件傳送完畢，數據就會安全地保存在雲端，而本機備份隨後就會被刪除。
+# Brok                                 
+PC15D_RIGHTHAND_TABLETHUSH2-5=厲害…也就是說恢復網路通訊之前是無法查看該文件了。
+#----------------------------------------------------
+# Brok                                 
+PC15D_JACKET1-1=根據他身體的方位來看…
+# Brok                                 
+PC15D_JACKET1-2=應該是被人從後方偷襲的？
+# Brok                                 
+PC15D_JACKET1-3=雖然很少調查到屍體，可是過了這麽長時間屍體應該會僵硬才對…
+#----------------------------------------------------
+# Brok                                 
+PC15D_JACKET_AFTER1-1=他要不是腦部受到重擊而死…
+# Brok                                 
+PC15D_JACKET_AFTER1-2=那死因究竟是什麽呢？我沒發現任何傷勢。
+#----------------------------------------------------
+# Brok                                 
+PC15D_JACKET_MAGNIFY-1=只探測到一兩個奈米機器人…
+# Brok                                 
+PC15D_JACKET_MAGNIFY-2=他也許是因為躺在地上過久而沾上這些奈米機器人。
+#----------------------------------------------------
+# Brok                                 
+PC15D_DEVICE1-1=這是甚麼…？似乎是某種儀器…
+# Brok                                 
+PC15D_DEVICE1-2=啊！我懂了，這是古董檯燈。
+# Brok                                 
+PC15D_DEVICE1-3=竟然出現在屍體的旁邊…
+#----------------------------------------------------
+# Brok                                 
+PC15D_DEVICE_TAKE-1=這個檯燈你認識嗎？
+# Brok                                 
+PC15D_DEVICE_TAKE-2=應該是屬於你的吧…？
+# Mink                                 
+PC15D_DEVICE_TAKE-3=應該是…
+# Mink                                 
+PC15D_DEVICE_TAKE-4=這是聯網設備，所以裏頭會儲存有數據。你可以查看。
+# Brok                                 
+PC15D_DEVICE_TAKE-5=那我就帶在身邊吧。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPOTHEAD1-1=看來他是這個部位受到了重擊…
+# Brok                                 
+PC15D_SPOTHEAD1-2=力道夠大的話，的確足以致命。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPOTHEAD_AFTER1-1=這是僞造的傷勢——番茄醬僞造出來的血液。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPOTDEVICE1-1=唔…血液？
+# Brok                                 
+PC15D_SPOTDEVICE1-2=如果說這東西撞到他頭部的話那的確能解釋得通。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPOTJACKET1-1=這裏也有血跡…？
+# Brok                                 
+PC15D_SPOTJACKET1-2=難道是受傷後血液流了進去？
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPOTJACKET_AFTER1-1=唔！我最愛這種醬了！
+# Ott                                 
+PC15D_SPOTJACKET_AFTER1-2=布羅格先生…你可不可以別那樣做…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More room interactions
+# *****************************************************************
+# Brok                                 
+PC15D_SPEAKER1-1=我之前有聽見聲音從那個房間傳過來…
+# Brok                                 
+PC15D_SPEAKER1-2=揚聲器一定是在那邊，好像是敏克博士在聽歌？
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPEAKER2-1=今天見到了太多的揚聲器了！
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPEAKER_AFTER1-1=敏克博士。我們剛抵達時…我聽見有聲音從你的房間傳出來。
+# Mink                                 
+PC15D_SPEAKER_AFTER1-2=那個…我還是從實招來吧…
+# Mink                                 
+PC15D_SPEAKER_AFTER1-3=是的，我剛才消遣了一下。
+# Brok                                 
+PC15D_SPEAKER_AFTER1-4=我還以為科學家都是工作狂呢！
+# Brok                                 
+PC15D_SPEAKER_AFTER1-5=那麽…你有沒有隨音樂跳舞？
+# Mink                                 
+PC15D_SPEAKER_AFTER1-6=…請別在傷口上撒鹽巴。
+# Brok                                 
+PC15D_SPEAKER_AFTER1-7=聽的是什麽歌？
+# Mink                                 
+PC15D_SPEAKER_AFTER1-8=很重要嗎？
+# Brok                                 
+PC15D_SPEAKER_AFTER1-9=有可能喲。
+# Mink                                 
+PC15D_SPEAKER_AFTER1-10=“少女十黛”。節奏感很強，讓人欲罷不能！
+# Brok                                 
+PC15D_SPEAKER_AFTER1-11=你之前跳舞…消遣時是在房間的哪個位置？
+# Mink                                 
+PC15D_SPEAKER_AFTER1-12=呃…應該是在門口的旁邊。
+# Mink                                 
+PC15D_SPEAKER_AFTER1-13=我一聽見你敲門就停下來查看房門螢幕。
+# Brok                                 
+PC15D_SPEAKER_AFTER1-14=你當時有沒有發現任何異常狀況嗎？
+#----------------------------------------------------
+# Mink                                 
+PC15D_SPEAKER_AFTER1_NORMAL-1=要是有的話早就告訴你了。
+# Mink                                 
+PC15D_SPEAKER_AFTER1_NORMAL-2=我只聽見你敲門，然後就開門了。
+# Brok                                 
+PC15D_SPEAKER_AFTER1_NORMAL-3=那個…表面上的確如此。
+# Mink                                 
+PC15D_SPEAKER_AFTER1_NORMAL-4=就是在那個時候我們看見屍體突然憑空冒出來。
+# Brok                                 
+PC15D_SPEAKER_AFTER1_NORMAL-5=好的…謝謝你所提供的資訊。
+#----------------------------------------------------
+# Mink                                 
+PC15D_SPEAKER_AFTER1_BREAK-1=要說異常情況的話，那時有個鱷魚頭偵探強行破門而入…
+# Mink                                 
+PC15D_SPEAKER_AFTER1_BREAK-2=然後問了一大堆破問題。
+# Brok                                 
+PC15D_SPEAKER_AFTER1_BREAK-3=對不起啦！你要是合作一點早開門不就沒事了。
+# Mink                                 
+PC15D_SPEAKER_AFTER1_BREAK-4=我當時害怕啊…！
+# Brok                                 
+PC15D_SPEAKER_AFTER1_BREAK-5=我當時耐心也有限的。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SPEAKER_AFTER2-1=跳舞是嗎…？
+# Mink                                 
+PC15D_SPEAKER_AFTER2-2=你能不能專心去查你的案子…
+# Brok                                 
+PC15D_SPEAKER_AFTER2-3=嘿，每個細節都很重要的。
+#----------------------------------------------------
+# Brok                                 
+PC15D_WINDOW1-1=呃…這種風格不合我口味。
+# Mink                                 
+PC15D_WINDOW1-2=你根本就是沒品味。
+#----------------------------------------------------
+# Brok                                 
+PC15D_WINDOW2-1=沒有全息牆景嗎？就只裝個小小的電子窗？
+# Mink                                 
+PC15D_WINDOW2-2=像我們這麽重要的專家可不能被那些小東西分心。
+#----------------------------------------------------
+# Brok                                 
+PC15D_WINDOW3-1=你和胡斯博士的品味…似乎有著天壤之別。
+# Brok                                 
+PC15D_WINDOW3-2=難怪你們合不來。
+# Mink                                 
+PC15D_WINDOW3-3=這可就不對了，我們向來都很配合地各忙各的研究。
+# Brok                                 
+PC15D_WINDOW3-4=的確如此。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Dr Mink's sink produces a strange drink
+# *****************************************************************
+# Brok                                 
+PC15D_SINK1-1=懸掛在天花板上的花朵都掉落到這個洗手槽裏了。
+# Mink                                 
+PC15D_SINK1-2=牽牆花的汁液能夠增強記憶和專注力。
+# Mink                                 
+PC15D_SINK1-3=而且很提神！喝得我要上瘾了！
+# Mink                                 
+PC15D_SINK1-4=想試試嗎？
+#----------------------------------------------------
+# Brok                                 
+PC15D_SINK_DRINKYES1-1=那就不客氣！
+# Mink                                 
+PC15D_SINK_DRINKYES1-2=自己來吧！
+#----------------------------------------------------
+# Brok                                 
+PC15D_SINK_DRINKYES2-1=哇——！
+# Brok                                 
+PC15D_SINK_DRINKYES2-2=感覺就像是有千萬種不同口味的蛋糕在嘴裏跳動！
+# Mink                                 
+PC15D_SINK_DRINKYES2-3=對！
+#----------------------------------------------------
+# Brok                                 
+PC15D_SINK_DRINKYES3-1=真美味！
+#----------------------------------------------------
+# Brok                                 
+PC15D_SINK_DRINKNO-1=那麽…我就先查看下洗手槽裏有沒有倒入過什麽異物吧…
+# Mink                                 
+PC15D_SINK_DRINKNO-2=那是不可能的！
+# Mink                                 
+PC15D_SINK_DRINKNO-3=我每天都會在洗手槽裏置放三苯丁烯綠藻來過濾髒物，並且使用四氯二苯外加高辛來防止腐化。
+# Brok                                 
+PC15D_SINK_DRINKNO-4=那個…我改變主意了。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SINK2-1=唔…
+#----------------------------------------------------
+# Mink                                 
+PC15D_SINK_DRAIN1-1=咦！？等等！你別這麽做！！
+# Brok                                 
+PC15D_SINK_DRAIN1-2=太晚了。
+# Mink                                 
+PC15D_SINK_DRAIN1-3=你知不知道自己闖了什麽大禍！？
+# Mink                                 
+PC15D_SINK_DRAIN1-4=這可是我今天的糧食！現在全都沒了！
+# Mink                                 
+PC15D_SINK_DRAIN1-5=我…我今晚就只能舔洗手槽了…
+# Mink                                 
+PC15D_SINK_DRAIN1-6=嗚嗚嗚嗚嗚嗚……
+# Brok                                 
+PC15D_SINK_DRAIN1-7=嗯，看來這傢伙是喝上瘾了。
+#----------------------------------------------------
+# Mink                                 
+PC15D_SINK_DRINKMUCH-1=喂，你喝慢點，別喝那麽多。
+# Mink                                 
+PC15D_SINK_DRINKMUCH-2=飲用過量的話，會發生奇怪的事情的。
+# Brok                                 
+PC15D_SINK_DRINKMUCH-3=可是…感覺好爽啊！
+#----------------------------------------------------
+# Brok                                 
+#The voice samples will be modified to make them high pitch. Voice actor shouldn't change his voice.
+PC15D_SINK_DRINKPITCH-1=再來一杯！
+# Brok                                 
+PC15D_SINK_DRINKPITCH-2=…！
+# Brok                                 
+PC15D_SINK_DRINKPITCH-3=我的聲音怎麽變了！怎麽回事！
+# Mink                                 
+PC15D_SINK_DRINKPITCH-4=剛才說你又不聽！
+# Mink                                 
+PC15D_SINK_DRINKPITCH-5=接下來幾分鐘你的聲線都會變得像小女生一樣！
+# Brok                                 
+PC15D_SINK_DRINKPITCH-6=好吧，不過這點代價是值得的！
+#----------------------------------------------------
+# Brok                                 
+PC15D_SINK_AD1-1=咦！排水道中卡著一張廣告！
+#----------------------------------------------------
+# Brok                                 
+PC15D_SINK_EMPTY-1=全光了。
+# Mink                                 
+PC15D_SINK_EMPTY-2=嗚嗚嗚嗚嗚………
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More room inspection
+# *****************************************************************
+# Brok                                 
+PC15D_STAIN1-1=那是血液嗎…？
+# Brok                                 
+PC15D_STAIN1-2=這血跡…延伸很長的樣子。
+#----------------------------------------------------
+# Brok                                 
+PC15D_STAIN_AFTER1-1=(咕嘟)
+# Brok                                 
+PC15D_STAIN_AFTER1-2=這不像血液的味道，更像是番茄醬。
+#----------------------------------------------------
+# Mink                                 
+PC15D_CANISTER1-1=小心！！
+# Brok                                 
+PC15D_CANISTER1-2=啊…？
+# Mink                                 
+PC15D_CANISTER1-3=這是我做實驗用的酸性液體，你別把手放進去！
+# Brok                                 
+PC15D_CANISTER1-4=那可以把腳放進去嗎？
+# Mink                                 
+PC15D_CANISTER1-5=也不行！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CANISTER2-1=這些是什麽東西？
+# Mink                                 
+PC15D_CANISTER2-2=這是創意的發明！
+# Mink                                 
+PC15D_CANISTER2-3=我發現原來把奈米機器人置入酸性液體中，它們的性能會強化高達25%！
+# Brok                                 
+PC15D_CANISTER2-4=可是…奈米機器人不是應用在人體中嗎？
+# Mink                                 
+PC15D_CANISTER2-5=是的，所以這個相容性方面還有待改善。
+# Brok                                 
+PC15D_CANISTER2-6=嗯哼。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CANISTER3-1=那個，你確定這些酸性液體不是用來處理屍體的…？
+# Mink                                 
+PC15D_CANISTER3-2=什麽跟什麽啊！？
+# Mink                                 
+PC15D_CANISTER3-3=假設是真的，我也不可能回答你吧？
+# Brok                                 
+PC15D_CANISTER3-4=所以…是真的囉？
+# Mink                                 
+PC15D_CANISTER3-5=不是！
+#----------------------------------------------------
+# Brok                                 
+PC15D_COLUMN1-1=這裏有道光…？
+# Mink                                 
+#Make sure to convert to the appropriate unit according to your country (eg : 3.5 meters)
+PC15D_COLUMN1-2=是的！我稱之為十尺真享受。
+# Mink                                 
+PC15D_COLUMN1-3=你有聽說過射線治療嗎？
+# Mink                                 
+PC15D_COLUMN1-4=其實高溫可以舒緩壓力和抗衰老。
+# Brok                                 
+PC15D_COLUMN1-5=這對人體是否有害？
+# Mink                                 
+PC15D_COLUMN1-6=在最高功率之下才會燙傷皮膚。
+# Brok                                 
+PC15D_COLUMN1-7=但不足以致命吧？
+# Mink                                 
+PC15D_COLUMN1-8=如果在光線下持續待幾年的話那倒是有可能。
+#----------------------------------------------------
+# Brok                                 
+PC15D_COLUMN2-1=為什麽光線是指向地板？
+# Brok                                 
+PC15D_COLUMN2-2=那裏啥也沒有啊。
+# Mink                                 
+PC15D_COLUMN2-3=我只在睡覺時啓動它，而它會自動指向我。
+# Brok                                 
+PC15D_COLUMN2-4=那為什麽沒用的時候不關掉它？不浪費電嗎？
+# Mink                                 
+PC15D_COLUMN2-5=誰在乎那麽點電！？
+# Brok                                 
+PC15D_COLUMN2-6=…難說，或許千千萬萬個貧民用得著呢…？
+#----------------------------------------------------
+# Brok                                 
+PC15D_COLUMN3-1=我知道了！那是死亡射線！
+# Brok                                 
+PC15D_COLUMN3-2=你把它指向胡斯博士！然後他就死翹翹了！
+# Mink                                 
+PC15D_COLUMN3-3=那你被光線照射過那麽多次，豈不死了很多遍？
+# Brok                                 
+PC15D_COLUMN3-4=…唔，也有道理。
+#----------------------------------------------------
+# Ott                                 
+PC15D_BED_OTT1-1=布羅格先生…？
+# Ott                                 
+PC15D_BED_OTT1-2=現在不是睡覺的時候！
+# Brok                                 
+PC15D_BED_OTT1-3=唔…我只是測試下這床有什麽異常之處！
+# Ott                                 
+PC15D_BED_OTT1-4=那有什麽發現嗎…？
+# Brok                                 
+PC15D_BED_OTT1-5=這個…呃…
+# Brok                                 
+PC15D_BED_OTT1-6=相比我家的床，它舒適很多！
+#----------------------------------------------------
+# Mink                                 
+PC15D_BED1-1=你這是在做什麽！？
+# Mink                                 
+PC15D_BED1-2=馬上離開我的床！
+# Brok                                 
+PC15D_BED1-3=為啥？難道床上藏了什麽見不得光的東西？
+# Mink                                 
+PC15D_BED1-4=…
+# Mink                                 
+PC15D_BED1-5=好吧，隨便你。
+# Mink                                 
+PC15D_BED1-6=你自己去跟你長官解釋為什麽查個案子會花那麽長時間吧！
+# Brok                                 
+PC15D_BED1-7=吼喲，你這個人真掃興。
+#----------------------------------------------------
+# Brok                                 
+PC15D_BED2-1=床上沒有任何發現…
+# Brok                                 
+PC15D_BED2-2=…奇怪了，枕頭下也沒有發現。
+# Brok                                 
+PC15D_BED2-3=衣服都是自己洗的嗎？
+# Mink                                 
+PC15D_BED2-4=你在開玩笑嗎？
+# Mink                                 
+PC15D_BED2-5=我們這裏有清潔機器人，從未聽說過人類須要自己洗衣服的。
+# Brok                                 
+PC15D_BED2-6=對對…我自己也不洗衣服的。
+# Brok                                 
+PC15D_BED2-7=(所以我的床越來越酸臭了)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When Brok steps or jumps on the corpse
+# *****************************************************************
+# Mink                                 
+PC15D_WALKBODY1-1=你…？
+# Brok                                 
+PC15D_WALKBODY1-2=嗯？怎麽了？
+# Mink                                 
+PC15D_WALKBODY1-3=…
+#----------------------------------------------------
+# Mink                                 
+PC15D_WALKBODY2-1=難以置信…
+#----------------------------------------------------
+# Ott                                 
+PC15D_WALKBODY3-1=布羅格先生！你這是做什麽！？
+# Brok                                 
+PC15D_WALKBODY3-2=當然是在尋找線索啊！
+# Ott                                 
+PC15D_WALKBODY3-3=為…為什麽要踐踏屍體？
+# Brok                                 
+PC15D_WALKBODY3-4=踐踏啥？
+# Ott                                 
+PC15D_WALKBODY3-5=…
+#----------------------------------------------------
+# Hush                                 
+#After insisting for a while, Dr. Hush wakes up!
+PC15D_JUMPBODY1-1=…呃啊…
+# Brok                                 
+PC15D_JUMPBODY1-2=…？
+#----------------------------------------------------
+# Hush                                 
+PC15D_JUMPBODY2-1=啊…
+# Brok                                 
+PC15D_JUMPBODY2-2=甚麼…？
+# Hush                                 
+PC15D_JUMPBODY2-3=怎麽…回事…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Alternative - Dr Hush wakes up after jumping on him
+# *****************************************************************
+# Hush                                 
+PC15D_JUMPBODY2B-1=…
+# Mink                                 
+PC15D_JUMPBODY2B-2=…
+# Mink                                 
+PC15D_JUMPBODY2B-3=胡斯博士！？
+# Brok                                 
+PC15D_JUMPBODY2B-4=你…你…！
+# Hush                                 
+PC15D_JUMPBODY2B-5=哎喲…我背好痛啊…
+# Hush                                 
+PC15D_JUMPBODY2B-6=我…我怎麽到這裏來了？
+# Hush                                 
+PC15D_JUMPBODY2B-7=還有…你是什麽人？
+# Brok                                 
+PC15D_JUMPBODY2B-8=我是私家偵探！還以為你死了呢！
+# Hush                                 
+PC15D_JUMPBODY2B-9=我為什麽會死了…？
+# Hush                                 
+PC15D_JUMPBODY2B-10=哎呀…我流血了…
+# Hush                                 
+PC15D_JUMPBODY2B-11=咦，不對…
+# Hush                                 
+PC15D_JUMPBODY2B-12=這是…番茄醬…
+# Brok                                 
+PC15D_JUMPBODY2B-13=番茄醬…？那麽…
+# Mink                                 
+PC15D_JUMPBODY2B-14=難道這只是一場意外事故？
+# Brok                                 
+PC15D_JUMPBODY2B-15=不可能…他當時的確是沒有呼吸了…
+# Brok                                 
+PC15D_JUMPBODY2B-16=你還記得昏迷之前的事嗎？
+# Hush                                 
+PC15D_JUMPBODY2B-17=那個…
+# Hush                                 
+PC15D_JUMPBODY2B-18=我記得…從通風管道中摔下來…
+# Hush                                 
+PC15D_JUMPBODY2B-19=然後我朝著敏克博士走去…
+# Brok                                 
+PC15D_JUMPBODY2B-20=通風管道？你怎麽跑進那裏了？
+# Hush                                 
+PC15D_JUMPBODY2B-21=…
+# Hush                                 
+PC15D_JUMPBODY2B-22=難道是…？
+# Hush                                 
+PC15D_JUMPBODY2B-23=在那之前…我…
+# Hush                                 
+PC15D_JUMPBODY2B-24=我喝了咖啡，是泰迪給我送過來的…
+# Brok                                 
+PC15D_JUMPBODY2B-25=泰迪…？
+# Hush                                 
+PC15D_JUMPBODY2B-26=他是我的機器人助理…
+# Hush                                 
+PC15D_JUMPBODY2B-27=我喝完咖啡後…心臟…
+# Hush                                 
+PC15D_JUMPBODY2B-28=就停止跳動了…
+# Mink                                 
+PC15D_JUMPBODY2B-29=你是中毒嗎？
+# Brok                                 
+PC15D_JUMPBODY2B-30=我們必須審問那機器人！
+#----------------------------------------------------
+# Brok                                 
+PC15D_JUMPBODY2C-1=那是什麽聲音…？
+#----------------------------------------------------
+# Hush                                 
+PC15D_JUMPBODY2D-1=泰迪…你為何要這樣做…？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First time arrive in the room after breaking Dr Mink's door
+# *****************************************************************
+# Brok                                 
+PC15D_FIRST_BREAK1-1=喂！你為什麽不開門？
+# Mink                                 
+PC15D_FIRST_BREAK1-2=我…我…
+# Brok                                 
+PC15D_FIRST_BREAK1-3=回答我！
+# Mink                                 
+PC15D_FIRST_BREAK1-4=我在…忙…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First time arrive in the room after convincing Mink
+# *****************************************************************
+# Mink                                 
+PC15D_FIRST1-1=所以…你來找我做什麽？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok notices the corpse but Dr Mink haven't seen it yet
+# *****************************************************************
+# Brok                                 
+PC15D_FIRST1B-1=…！
+# Brok                                 
+PC15D_FIRST1B-2=什麽鬼…
+# Brok                                 
+PC15D_FIRST1B-3=警衛！
+# Mink                                 
+PC15D_FIRST1B-4=喂！
+# Mink                                 
+PC15D_FIRST1B-5=你怎麽啦？
+#----------------------------------------------------
+# Mink                                 
+PC15D_FIRST2-1=！！
+# Guard                                 
+PC15D_FIRST2-2=胡斯博士！？
+# Mink                                 
+PC15D_FIRST2-3=這…不可能！
+# Ott                                 
+PC15D_FIRST2-4=天呀！他是不是…？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok checks the body. Then they all talk about it
+# *****************************************************************
+# Brok                                 
+PC15D_FIRST3-1=…
+# Brok                                 
+PC15D_FIRST3-2=那個…
+#----------------------------------------------------
+# Brok                                 
+PC15D_FIRST4-1=可以結案了！
+# Guard                                 
+PC15D_FIRST4-2=可是…！這不合邏輯啊！
+# Brok                                 
+PC15D_FIRST4-3=虧你還自稱搜查過所有地方。哼！
+# Guard                                 
+PC15D_FIRST4-4=我發誓！他之前真的不在這房間裏！
+# Mink                                 
+PC15D_FIRST4-5=沒錯！這究竟是怎麽回事！？
+# Brok                                 
+PC15D_FIRST4-6=我來說吧！胡斯博士已經死了。
+# Ott                                 
+PC15D_FIRST4-7=這不可能…
+# Ott                                 
+PC15D_FIRST4-8=在市區竟然會發生凶殺案！？
+# Guard                                 
+PC15D_FIRST4-9=我明白了！
+# Guard                                 
+PC15D_FIRST4-10=敏克！難怪你今早不讓我進來檢查！
+# Guard                                 
+PC15D_FIRST4-11=原來你是在隱藏見不得光的事情！
+# Mink                                 
+PC15D_FIRST4-12=你這是指控我！？
+# Mink                                 
+PC15D_FIRST4-13=你真是瘋了！
+# Guard                                 
+PC15D_FIRST4-14=現在屍體就出現在你房間裏！你還有什麽好說的！？
+# Brok                                 
+PC15D_FIRST4-15=喂喂喂，冷靜點。
+# Brok                                 
+PC15D_FIRST4-16=此凶殺案是由我負責的，我們先別妄下定論。
+# Brok                                 
+PC15D_FIRST4-17=警衛，你去關閉掉所有的出口。
+# Guard                                 
+PC15D_FIRST4-18=已經辦好了，鱷魚頭！
+# Brok                                 
+PC15D_FIRST4-19=然後切斷跟外界的一切通訊！
+# Brok                                 
+PC15D_FIRST4-20=沒有人或者數據可以出入這棟大樓！
+# Guard                                 
+PC15D_FIRST4-21=我馬上去辦。
+#----------------------------------------------------
+# Brok                                 
+PC15D_FIRST5-1=至於你…
+# Brok                                 
+PC15D_FIRST5-2=你待在這裏不准動！
+# Mink                                 
+PC15D_FIRST5-3=呃…你不是認真的吧！
+# Mink                                 
+PC15D_FIRST5-4=我手頭上還有一大堆工作需要完成！我的進度本來就已經落後了！
+# Brok                                 
+PC15D_FIRST5-5=…
+# Mink                                 
+PC15D_FIRST5-6=像你這種四肢發達的人是不會明白的。
+# Brok                                 
+PC15D_FIRST5-7=你的同事死了！
+# Brok                                 
+PC15D_FIRST5-8=就目前而言，你是最大的嫌疑人。
+# Brok                                 
+PC15D_FIRST5-9=退一步說哪怕你是無辜的…
+# Brok                               
+PC15D_FIRST5-10=那你覺得如果我不把真凶抓起來，
+# Brok                                 
+PC15D_FIRST5-11=你繼續待在這個地方會安全嗎？
+# Mink                                 
+PC15D_FIRST5-12=咕噜…！
+# Mink                                 
+PC15D_FIRST5-13=…
+# Mink                                 
+PC15D_FIRST5-14=可惡，這傢伙就算死了都要連累我。
+# Brok                                 
+PC15D_FIRST5-15=你是這裏唯一對科技技術比較了解的人，所以…
+# Mink                                 
+PC15D_FIRST5-16=不必廢話了。
+# Mink                                 
+PC15D_FIRST5-17=好，我會跟著你到處查看，不會離開你的視野。
+# Brok                                 
+PC15D_FIRST5-18=很好。
+#----------------------------------------------------
+# Ott                                 
+PC15D_FIRST6OTTKO-1=…
+# Ott                                 
+PC15D_FIRST6OTTKO-2=這…出乎我的意料…
+# Brok                                 
+PC15D_FIRST6OTTKO-3=同感…不過我一定會偵破此案的。
+# Ott                                 
+PC15D_FIRST6OTTKO-4=我們一定可以做到的。
+# Ott                                 
+PC15D_FIRST6OTTKO-5=拜托…這次可別使用暴力。
+# Ott                                 
+PC15D_FIRST6OTTKO-6=這裏已經充斥著太多的暴力了。
+#----------------------------------------------------
+# Ott                                 
+PC15D_FIRST6-1=我很佩服，布羅格先生！
+# Ott                                 
+PC15D_FIRST6-2=哪怕是發生了那麽多事，你依然保持著冷靜！
+# Brok                                 
+PC15D_FIRST6-3=唔…是嗎？
+# Ott                                 
+PC15D_FIRST6-4=你以前是否偵破過命案？
+# Brok                                 
+PC15D_FIRST6-5=記憶中應該沒有…
+# Brok                                 
+PC15D_FIRST6-6=不過我年輕時看過不少偵探電影，可以說是耳濡目染！
+# Ott                                 
+PC15D_FIRST6-7=哦…
+# Ott                                 
+PC15D_FIRST6-8=總之，你很厲害就是了。
+# Brok                                 
+PC15D_FIRST6-9=謝謝誇獎…！
+#----------------------------------------------------
+# Brok                                 
+PC15D_FIRST6B-1=…
+# Brok                                 
+PC15D_FIRST6B-2=(這種倒楣事怎麽偏偏就發生在我身上…？就不能讓我過一天正常日子嗎！？)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After doing a quick inspection, they all gather. Ott exposes his theory
+# *****************************************************************
+# Guard                                 
+PC15D_STORY160_A-1=那麽…？究竟是怎麽回事？
+# Guard                                 
+PC15D_STORY160_A-2=找到凶手了嗎？
+# Brok                                 
+PC15D_STORY160_A-3=我的同事會向你講解的。
+# Ott                                 
+PC15D_STORY160_A-4=啊？說我嗎！？
+# Brok                                 
+PC15D_STORY160_A-5=你不是說你已經偵破此案了嗎？
+# Ott                                 
+PC15D_STORY160_A-6=唔…
+# Mink                                 
+PC15D_STORY160_A-7=他只是個少年…
+# Ott                                 
+PC15D_STORY160_A-8=不！我的確知道誰是凶手，我來開始講解吧！
+# Ott                                 
+PC15D_STORY160_A-9=咳咳，那麽…
+# Ott                                 
+PC15D_STORY160_A-10=這是一宗室內謀殺案。
+# Ott                                 
+PC15D_STORY160_A-11=正如你所見的，沒有人能夠神不知鬼不覺地出入這個地方。
+# Ott                                 
+PC15D_STORY160_A-12=那就意味著…
+# Mink                                 
+PC15D_STORY160_A-13=凶手肯定是我們之間其中一人。
+# Ott                                 
+PC15D_STORY160_A-14=正確。
+# Ott                                 
+PC15D_STORY160_A-15=第一次目擊屍體是在我們進入這房間的時候。
+# Ott                                 
+PC15D_STORY160_A-16=看起來胡斯博士是頭部受到重擊而死。
+# Ott                                 
+PC15D_STORY160_A-17=他身旁的檯燈上沾有血跡，所以這應該就是凶器無誤。
+# Ott                                 
+PC15D_STORY160_A-18=這檯燈是屬於敏克博士的，所以說凶手是有能力進入他房間的人。
+# Mink                                 
+PC15D_STORY160_A-19=怎麽感覺像是在針對我…
+# Ott                                 
+PC15D_STORY160_A-20=胡斯博士最後一次出現是在5:04，當時目擊者是他的助理機器人泰迪。
+# Ott                                 
+PC15D_STORY160_A-21=他沒有回去過自己的辦公室，那麽他究竟去了哪裏？
+# Ott                                 
+PC15D_STORY160_A-22=可能性不多。
+# Ott                                 
+PC15D_STORY160_A-23=第一，他不可能離開大樓，因為唯一的出口配備有雷射屏障。
+# Ott                                 
+PC15D_STORY160_A-24=他不可能離開房間待在大廳，否則警衛肯定會留意到。
+# Guard                                 
+PC15D_STORY160_A-25=唔…
+# Ott                                 
+PC15D_STORY160_A-26=有什麽要補充的嗎？
+# Guard                                 
+PC15D_STORY160_A-27=沒…我…的確一直在全神貫注地守著大廳…
+# Guard                                 
+PC15D_STORY160_A-28=沒有發現任何異常。
+# Ott                                 
+PC15D_STORY160_A-29=那我就繼續說了。
+# Ott                                 
+PC15D_STORY160_A-30=胡斯博士可能是去了休息室並在那裏遇害。
+# Ott                                 
+PC15D_STORY160_A-31=不過問題就來了…
+# Ott                                 
+PC15D_STORY160_A-32=他的屍體並不在休息室而是出現在敏克博士的房間。
+# Ott                                 
+PC15D_STORY160_A-33=這就意味著有人悄悄地把屍體搬運到了休息室旁邊的房間。
+# Ott                                 
+PC15D_STORY160_A-34=如果胡斯博士是被移出休息室，那麽警衛先生一定會察覺。
+# Brok                                 
+PC15D_STORY160_A-35=我們檢查過休息間，休息間跟敏克的房間之間並沒有通道。
+# Ott                                 
+PC15D_STORY160_A-36=所以就只剩下一個可能了，胡斯博士是從自己的房間直接過去敏克博士的房間。
+# Mink                                 
+PC15D_STORY160_A-37=胡說！他從未來過我房間！
+# Ott                                 
+PC15D_STORY160_A-38=然而…他的屍體卻來了。
+# Ott                                 
+PC15D_STORY160_A-39=這你怎麽解釋？
+# Mink                                 
+PC15D_STORY160_A-40=我…我不知道…
+# Ott                                 
+PC15D_STORY160_A-41=我考慮過其他的可能性，或許泰迪也參與了此事？
+# Ott                                 
+PC15D_STORY160_A-42=畢竟，他可以自由出入所有房間。
+# Ott                                 
+PC15D_STORY160_A-43=不過，他無法進入敏克博士的房間。
+# Ott                                 
+PC15D_STORY160_A-44=他需要敲門然後等你開門。
+# Ott                                 
+PC15D_STORY160_A-45=但是你卻沒有聽過敲門聲，對吧？
+# Mink                                 
+PC15D_STORY160_A-46=沒有…
+# Mink                                 
+PC15D_STORY160_A-47=除非…他是用胡斯博士的手來開門…！
+# Ott                                 
+PC15D_STORY160_A-48=它攜帶著屍體經過大廳？這不太可能。
+# Ott                                 
+PC15D_STORY160_A-49=警衛一直監守在大廳，而且你沒有看見或聽見他們進入過房間。
+#----------------------------------------------------
+# Mink                                 
+PC15D_STORY160_A2-1=那你呢，鼠人！？
+# Mink                                 
+PC15D_STORY160_A2-2=我猜就是你在大廳殺害了博士然後偷偷將他的屍體搬進我的房間嫁禍給我！
+# Guard                                 
+PC15D_STORY160_A2-3=怎麽就怪到我頭上了！？
+# Guard                                 
+PC15D_STORY160_A2-4=我要是凶手的話那我為什麼要報警！？
+# Mink                                 
+PC15D_STORY160_A2-5=欲蓋彌彰啊！還用問嗎！
+# Guard                                 
+PC15D_STORY160_A2-6=你個卑鄙的黃鼠狼！你這樣亂說話會害我丟飯碗的！
+# Ott                                 
+PC15D_STORY160_A2-7=都冷靜點！
+# Ott                                 
+PC15D_STORY160_A2-8=這個論點我也思考過，不過站不住腳。
+# Ott                                 
+PC15D_STORY160_A2-9=你真的認為他有本事在你不察覺的情況下，在搬運胡斯博士的屍體的同時打開你的房門，最後把屍體丟在你身後嗎？
+# Mink                                 
+PC15D_STORY160_A2-10=…
+# Ott                                 
+PC15D_STORY160_A2-11=所以最後只有一個人有能力做得到…
+# Ott                                 
+PC15D_STORY160_A2-12=就是你自己，敏克博士！
+# Mink                                 
+PC15D_STORY160_A2-13=啊！小鬼，你瘋了！
+# Mink                                 
+PC15D_STORY160_A2-14=我都說了！我從未殺過人！
+# Guard                                 
+PC15D_STORY160_A2-15=別耍花招了，敏克！你完蛋了！
+# Tidy                                 
+PC15D_STORY160_A2-16=玩蛋？
+# Tidy                                 
+PC15D_STORY160_A2-17=泰迪也要玩！
+# Mink                                 
+PC15D_STORY160_A2-18=那你說說我的動機在哪？
+# Ott                                 
+PC15D_STORY160_A2-19=很簡單。
+# Ott                                 
+PC15D_STORY160_A2-20=警衛先生之前提到過你和胡斯博士經常吵架。
+# Mink                                 
+PC15D_STORY160_A2-21=我們在過去5年都不知道吵過多少次了！這不足以成為證據！
+# Ott                                 
+PC15D_STORY160_A2-22=還記得泰迪的錄音嗎？
+# Ott                                 
+PC15D_STORY160_A2-23=胡斯博士說要找你解決事情！
+# Ott                                 
+PC15D_STORY160_A2-24=他一定是厭倦了你不斷投訴專案資金被砍的事。
+# Mink                                 
+PC15D_STORY160_A2-25=你真的認為這麽一點小事足以讓我去殺人！？
+# Ott                                 
+PC15D_STORY160_A2-26=你說得對，的確是太雞毛蒜皮了…
+# Ott                                 
+PC15D_STORY160_A2-27=不過那是對普通人而言。
+# Ott                                 
+PC15D_STORY160_A2-28=而你則不同，你卻完全投入在工作中，你的研究工作就是你的生活！你無法失去它！
+# Ott                                 
+PC15D_STORY160_A2-29=你的研究資金一再被砍，反而胡斯博士獲得的預算不斷上漲…你們之間的火藥味自然越來越濃烈…
+# Ott                                 
+PC15D_STORY160_A2-30=你忍無可忍…伸手抓起最靠近身邊的物品…
+# Ott                                 
+PC15D_STORY160_A2-31=也就是你的檯燈！
+# Ott                                 
+PC15D_STORY160_A2-32=然後…咯嘣！
+# Mink                                 
+PC15D_STORY160_A2-33=啊！
+# Ott                                 
+PC15D_STORY160_A2-34=這恐怕是臨時起意的事故，你事先並沒有策劃過。
+# Ott                                 
+PC15D_STORY160_A2-35=所以你不知道該如何處理屍體！
+# Ott                                 
+PC15D_STORY160_A2-36=在慌亂中，你把他藏在床底下。這樣你就能有更多的時間好好思考對策…
+# Mink                                 
+PC15D_STORY160_A2-37=床底！？只有白癡才會那麽做！
+# Ott                                 
+PC15D_STORY160_A2-38=我倒覺得那是個很合適的藏匿點！
+# Brok                                 
+PC15D_STORY160_A2-39=警衛，你怎麽看？你會定時檢查房間對吧？
+# Guard                                 
+PC15D_STORY160_A2-40=嗯…不過這個黃鼠狼從不讓我進他房間…
+# Guard                                 
+PC15D_STORY160_A2-41=如果屍體是藏在床底下的話…
+# Guard                                 
+PC15D_STORY160_A2-42=那我從門口是無法看得到的。
+# Mink                                 
+PC15D_STORY160_A2-43=你無法證明這個推論！
+# Ott                                 
+PC15D_STORY160_A2-44=當然可以證明！你看那裏！
+# Ott                                 
+PC15D_STORY160_A2-45=地板上的血跡正好是從床邊延伸到屍體下！
+# Ott                                 
+PC15D_STORY160_A2-46=這個你怎麽解釋？
+# Guard                                 
+PC15D_STORY160_A2-47=厲害了…真的有血跡！
+# Ott                                 
+PC15D_STORY160_A2-48=要想讓屍體悄悄地人間蒸發就只有一個方法…
+# Ott                                 
+PC15D_STORY160_A2-49=酸液金屬罐！
+# Ott                                 
+PC15D_STORY160_A2-50=通過酸液將屍體液化後倒進洗手槽沖掉！
+# Mink                                 
+PC15D_STORY160_A2-51=不是！我沒有…
+# Mink                                 
+PC15D_STORY160_A2-52=那酸液是…我實驗要用到的…！
+# Ott                                 
+PC15D_STORY160_A2-53=我們進門時，你剛剛把屍體移出床底準備使用酸液把他融掉！
+# Ott                                 
+PC15D_STORY160_A2-54=布羅格先生，你還記得嗎？當時他拒絕開門讓我們進去！
+# Brok                                 
+PC15D_STORY160_A2-55=現在一切都說得通了…
+# Mink                                 
+PC15D_STORY160_A2-56=偵探先生！拜托！
+# Mink                                 
+PC15D_STORY160_A2-57=別告訴我這你也相信！？
+#----------------------------------------------------
+# Brok                                 
+PC15D_STORY160_CHOICE_CONFIRM-1=(我還是再仔細考慮下吧…)
+# Brok                                 
+PC15D_STORY160_CHOICE_CONFIRM-2=(要是弄錯了，可就會把無辜的人給送進監獄…)
+# Brok                                 
+PC15D_STORY160_CHOICE_CONFIRM-3=(我真的要指證敏克博士就是凶手嗎？)
+#----------------------------------------------------
+# Brok                                 
+PC15D_STORY160_CHOICE_NO-1=…
+# Guard                                 
+PC15D_STORY160_CHOICE_NO-2=…
+# Ott                                 
+PC15D_STORY160_CHOICE_NO-3=…
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-4=怎麽樣…？你有沒有仔細聽啊…？
+# Brok                                 
+PC15D_STORY160_CHOICE_NO-5=說起來…我一直在思考著某件事。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-6=你看我幹嘛？
+# Brok                                 
+PC15D_STORY160_CHOICE_NO-7=你的領帶，敏克博士。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO-8=下方沾有紅色血跡。
+# Ott                                 
+PC15D_STORY160_CHOICE_NO-9=什麽！？
+# Guard                                 
+PC15D_STORY160_CHOICE_NO-10=咦！鱷魚頭說得對！
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-11=不是…等一下！這不是你們想象中的那樣！
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-12=我…
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-13=我只是今早吃蟻漢堡時…
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-14=隨手抹了下嘴巴…不小心沾到的…
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-15=這是番茄醬！
+# Guard                                 
+PC15D_STORY160_CHOICE_NO-16=你是拿我們當笨蛋嗎，敏克！？
+# Mink                                 
+#Brok licks the tie
+PC15D_STORY160_CHOICE_NO-17=咦，等一下！你想幹嘛！？
+# Brok                                 
+PC15D_STORY160_CHOICE_NO-18=(嘶嚕)
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-19=你…你竟然舔我的領帶！？
+# Brok                                 
+PC15D_STORY160_CHOICE_NO-20=…
+# Mink                                 
+PC15D_STORY160_CHOICE_NO-21=那麽…你現在相信我了吧…？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok goes to lick the red spot on Dr Hush's body
+# *****************************************************************
+# Brok                                 
+PC15D_STORY160_CHOICE_NO2-1=(嘶嚕…嘶嚕)
+# Mink                                 
+PC15D_STORY160_CHOICE_NO2-2=好噁啊！！
+# Ott                                 
+PC15D_STORY160_CHOICE_NO2-3=天呀！布羅格先生你這是在做什麽…？
+# Tidy                                 
+PC15D_STORY160_CHOICE_NO2-4=布布。噁心！
+# Brok                                 
+PC15D_STORY160_CHOICE_NO2-5=…
+# Brok                                 
+PC15D_STORY160_CHOICE_NO2-6=果然不出所料。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO2-7=這並不是血液。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO2-8=我沒騙你吧！
+# Brok                                 
+PC15D_STORY160_CHOICE_NO2-9=不只是你領帶。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO2-10=連這屍體上的也不是血液。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO2-11=什麽…？
+# Guard                                 
+PC15D_STORY160_CHOICE_NO2-12=什麽鬼！？
+# Ott                                 
+PC15D_STORY160_CHOICE_NO2-13=你沒開玩笑吧…？
+# Brok                                 
+PC15D_STORY160_CHOICE_NO2-14=你自己舔一舔。
+# Ott                                 
+PC15D_STORY160_CHOICE_NO2-15=不…不用了…我相信你…
+#----------------------------------------------------
+# Ott                                 
+PC15D_STORY160_CHOICE_NO3-1=可是…那我的推論…
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-2=恐怕是站不住腳了。
+# Ott                                 
+PC15D_STORY160_CHOICE_NO3-3=噢…
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-4=我一直就感覺這次的調查太過順利了，果然這案子比我們想象中的更複雜。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-5=有人試圖掩飾自己的罪行。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO3-6=我總算鬆了一口氣…
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-7=不過…這意味著我們用錯了方式。
+# Guard                                 
+PC15D_STORY160_CHOICE_NO3-8=你可別說…
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-9=我們必須重新把整個地方再搜查一遍。
+# Guard                                 
+PC15D_STORY160_CHOICE_NO3-10=殺了我吧…！
+# Guard                                 
+了的！PC15D_STORY160_CHOICE_NO3-11=鱷魚頭，你知道我沒有加班費嗎！？這時間點我早該回家呼呼大睡了！
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-12=我不管。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-13=對你來說只是多忙碌幾個小時，但要是抓錯人的話就是害了無辜者的性命。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO3-14=沒錯！而且你一再要求離開，反而讓我覺得你很可疑。
+# Guard                                 
+PC15D_STORY160_CHOICE_NO3-15=啊…
+# Guard                                 
+PC15D_STORY160_CHOICE_NO3-16=趁我沒發飆之前你最好快滾…
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-17=泰迪，你先回去自己的房間吧。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-18=所有打掃先暫停，懂嗎？
+# Tidy                                 
+PC15D_STORY160_CHOICE_NO3-19=泰迪服從。命令。泰迪。暫時不出現。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO3-20=謝謝你，偵探先生。你救了我一命！
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-21=先別那麽快謝我。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-22=在我眼中你依然是個嫌疑犯，說不定你做的這一切就是為了誤導我們。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO3-23=…
+# Mink                                 
+PC15D_STORY160_CHOICE_NO3-24=那我只能信任你的判斷力了。
+# Mink                                 
+PC15D_STORY160_CHOICE_NO3-25=等你調查完畢並且有了結論後，請過來找我一下。
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-26=走吧，奧特！
+# Brok                                 
+PC15D_STORY160_CHOICE_NO3-27=我們這次得仔細地求證每一個細節。
+# Ott                                 
+PC15D_STORY160_CHOICE_NO3-28=遵命，長官！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Dr. Mink
+# *****************************************************************
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-1=承認吧，敏克博士。
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-2=你是兇手，是時候接受制裁了。
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-3=這…這不可能…！
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-4=警衛，恢復對外通訊然後通知韋斯局長。
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-5=讓他馬上過來押走罪犯。
+# Guard                                 
+PC15D_STORY160_CHARGEMINK1-6=我馬上去辦！
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-7=…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-8=結局真的是這樣嗎…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-9=也罷。
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-10=畢竟…這只是從一個監獄搬去另一個監獄…
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-11=…
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-12=你的意思是…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-13=是的…我之前說我們選擇這種生活是為了更加專注於工作…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-14=其實那都只是自我安慰，我曾經是如此想的，可是現在…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-15=現在我只想要過上正常的生活…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-16=娶個老婆…生個孩子…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-17=跟心愛的人過著簡單的生活…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-18=可惜永遠都沒那個機會了。
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-19=現在還不算晚…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-20=太遲了，你我都很清楚殺人罪是什麽結果。
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-21=無論如何…最終…我也算是重獲自由了。
+# Ott                                 
+PC15D_STORY160_CHARGEMINK1-22=…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-23=我不怪你們，這一切證據都指向了我。
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-24=不過…你聽我說最後一件事。
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-25=我向科學之神、無尾神和所有神明發誓…
+# Mink                                 
+PC15D_STORY160_CHARGEMINK1-26=我沒殺過人。
+# Brok                                 
+PC15D_STORY160_CHARGEMINK1-27=…
+#----------------------------------------------------
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-1=(一群三角機器人抵達並押走了敏克博士。)
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-2=(離開大樓時…我感覺非常糟糕。)
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-3=(敏克博士說的那番話…)
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-4=(抽空陪伴家人和拼命工作謀生真能兼顧嗎？)
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-5=(這次事件後，我不斷地問自己…)
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-6=(我真的做對了選擇嗎…？)
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-7=(如果可以重來…或許我會做別的選擇。)
+# Brok                                 
+PC15D_STORY160_CHOICE_CHARGEMINK2-8=(不過已經過去的事是無法改變的…)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Second gathering after reinspecting everything
+# *****************************************************************
+# Ott                                 
+PC15D_SECONDGATHER1_OTT-1=布羅格先生，如果可以的話…
+# Ott                                 
+PC15D_SECONDGATHER1_OTT-2=這次我就不出聲只旁觀好了。
+# Brok                                 
+PC15D_SECONDGATHER1_OTT-3=沒問題。
+#----------------------------------------------------
+# Mink                                 
+PC15D_SECONDGATHER1-1=好了，所有人都到齊了。
+# Brok                                 
+PC15D_SECONDGATHER1-2=好的。
+# Brok                                 
+PC15D_SECONDGATHER1-3=在仔細地研究本案後…
+# Brok                                 
+PC15D_SECONDGATHER1-4=我有理由相信殺害胡斯博士的人…
+#----------------------------------------------------
+# Brok                                 
+PC15D_SECONDGATHER2-1=我們繼續吧。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SECONDGATHER3-1=我發現了些新線索，能夠幫助我們偵破此案！
+#----------------------------------------------------
+# Brok                                 
+PC15D_SECONDGATHER4-1=那個，之前說到哪裏了…？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charging Tidy (normal interrogation)
+# *****************************************************************
+# Brok                                 
+PC15D_SECONDGATHER_TIDY1-1=…其實並非活人！
+# Brok                                 
+PC15D_SECONDGATHER_TIDY1-2=而是泰迪！
+# Tidy                                 
+PC15D_SECONDGATHER_TIDY1-3=我不是活人？
+# Tidy                                 
+PC15D_SECONDGATHER_TIDY1-4=我殺死爸爸？爸爸死了…？
+# Guard                                 
+PC15D_SECONDGATHER_TIDY1-5=就知道那個鐵罐頭不能信。
+# Mink                                 
+PC15D_SECONDGATHER_TIDY1-6=真的嗎…？可他是如何辦到的…？
+# Mink                                 
+PC15D_SECONDGATHER_TIDY1-7=他沒有任何方法和動機殺人呀！
+# Brok                                 
+PC15D_SECONDGATHER_TIDY1-8=這就是你搞錯的地方了，敏克博士。
+# Brok                                 
+PC15D_SECONDGATHER_TIDY1-9=我會證明他是怎麽做到的！
+# Brok                                 
+PC15D_SECONDGATHER_TIDY1-10=我們先從真正的死因開始說起。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-1=屍體、檯燈、以及地板…這三個地方都有紅色的污漬。
+# Brok                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-2=有人利用僞造的血液試圖僞裝出一起暴力凶殺案！
+# Mink                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-3=就像…我的領帶一樣…？
+# Brok                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-4=是的，這些血液其實都是蟻漢堡的番茄醬。
+# Guard                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-5=我們竟然都上當了！？
+# Brok                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-6=的確是。
+# Brok                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-7=我在廁所的垃圾桶裏找到一個空的番茄醬包，據我多年食用蟻漢堡的經驗…
+# Brok                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-8=我一眼就認出來那是麥當當的招牌番茄醬！
+# Mink                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-9=也可能只是巧合…天知道那醬包已經丟在垃圾桶裏多長時間了。
+# Brok                                 
+PC15D_CLUE_MURDER_DEATHSTAGED-10=好吧。不過我還有更多的證據。
+#----------------------------------------------------
+# Mink                                 
+PC15D_CLUE_MURDER_BURGERUNFROZEN-1=啊…我終於明白了。
+# Mink                                 
+PC15D_CLUE_MURDER_BURGERUNFROZEN-2=難怪我的蟻漢堡被解凍了！
+# Brok                                 
+PC15D_CLUE_MURDER_BURGERUNFROZEN-3=是的，冷凍的番茄醬是無法用來塗抹在屍體上的！
+# Brok                                 
+PC15D_CLUE_MURDER_BURGERUNFROZEN-4=所以兇手必須先解凍它。
+# Mink                                 
+PC15D_CLUE_MURDER_BURGERUNFROZEN-5=的確是很機智！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CAUSEOFDEATH_NEXT1-1=不僅如此。，還有些事我們從一開始就弄錯了…
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-1=我們在屍體旁邊找到這個檯燈，所以就誤認為它是凶器。
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-2=這檯燈有活動記錄，裏頭的數據顯示11:02時檯燈發生過劇烈震蕩。
+# Tidy                                 
+PC15D_CLUE_MURDER_WEAPON-3=11:02。
+# Tidy                                 
+PC15D_CLUE_MURDER_WEAPON-4=這不可能。
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-5=沒錯。
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-6=胡斯博士的體格數據是在5:00左右停止更新的。
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-7=你會相信他在幾個小時前就已經因頭部受重創而死亡嗎…？
+# Tidy                                 
+PC15D_CLUE_MURDER_WEAPON-8=體格數據。不可靠！
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-9=對也不對。體格數據追蹤有兩個小時左右的誤差。
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-10=然而並非6個小時那麽長！
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-11=我說得對不對，敏克博士？
+# Mink                                 
+PC15D_CLUE_MURDER_WEAPON-12=是的，我可以確認這一點。
+# Mink                                 
+PC15D_CLUE_MURDER_WEAPON-13=我們的追蹤設備是植入體內無法被取出來的。
+# Mink                                 
+PC15D_CLUE_MURDER_WEAPON-14=此技術非常可信，但是為了尊重用戶的隱私權，所以只會每兩個小時記錄一次數據。
+# Brok                                 
+PC15D_CLUE_MURDER_WEAPON-15=這種發明簡直是為偵探而生的…
+# Mink                                 
+PC15D_CLUE_MURDER_WEAPON-16=凶殺案可不是天天都發生…
+#----------------------------------------------------
+# Mink                                 
+PC15D_CAUSEOFDEATH_NEXT2-1=好吧，那麽…
+# Mink                                 
+PC15D_CAUSEOFDEATH_NEXT2-2=如果說他頭部根本沒受過重擊…
+# Mink                                 
+PC15D_CAUSEOFDEATH_NEXT2-3=那麽凶手試圖隱瞞的真正死因是什麽呢？
+# Brok                                 
+PC15D_CAUSEOFDEATH_NEXT2-4=我有個推論。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-1=敏克博士，我在瀏覽你那個醫療資料庫時發現了你留下的某個注釋。
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-2=“我嘗試將鳳凰花和奈米機器人混合，可惜效果不太理想。”
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-3=“此混合物會導致宿主的心臟搏動大幅降低，最終導致死亡。”
+# Mink                                 
+PC15D_CLUE_MURDER_TRUECAUSE-4=你是說胡斯博士是中毒而死的！？
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-5=我有證據證明此論點。
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-6=胡斯博士的左手布滿了奈米機器人。
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-7=而且，這位鼠人先生…
+# Guard                                 
+PC15D_CLUE_MURDER_TRUECAUSE-8=喂！
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-9=…抱歉抱歉，這位警衛先生的桌子上擺著一盆植物。
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-10=剛好就是…鳳凰花！
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-11=所以泰迪很可能是聽見敏克博士提及過這一點所以就從實驗室裏取走了些材料。
+# Guard                                 
+PC15D_CLUE_MURDER_TRUECAUSE-12=對哦！那些機器人的記憶都是超棒的！
+# Tidy                                 
+PC15D_CLUE_MURDER_TRUECAUSE-13=泰迪。沒有記憶。
+# Tidy                                 
+PC15D_CLUE_MURDER_TRUECAUSE-14=泰迪打掃。泰迪清理。泰迪沒有。取走植物。
+# Tidy                                 
+PC15D_CLUE_MURDER_TRUECAUSE-15=其他人才會。
+# Tidy                                 
+PC15D_CLUE_MURDER_TRUECAUSE-16=小敏是凶手！或者是鼠鼠！
+# Mink                                 
+PC15D_CLUE_MURDER_TRUECAUSE-17=你好大的膽子…
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-18=他說得對，你們兩人也同樣有嫌疑。
+# Tidy                                 
+PC15D_CLUE_MURDER_TRUECAUSE-19=泰迪對！泰迪對！
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-20=別以為我是站在你那邊的。
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-21=我只實事求是。就因如此，我才能最終證明你就是真凶！
+# Tidy                                 
+PC15D_CLUE_MURDER_TRUECAUSE-22=不不不。布布錯。
+# Mink                                 
+PC15D_CLUE_MURDER_TRUECAUSE-23=可是怎麽可能？
+# Mink                                 
+PC15D_CLUE_MURDER_TRUECAUSE-24=胡斯博士怎麽會把劇毒吞下肚？
+# Brok                                 
+PC15D_CLUE_MURDER_TRUECAUSE-25=現在才到關鍵的地方。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-1=我在胡斯博士的左手上發現了黑色污痕。一開始，我還不知道那是什麽…
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-2=…直到我在博士的辦公室的地板上又發現一處類似的黑色污痕。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-3=第二處污痕非常淺，似乎有人擦洗過的樣子。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-4=不過毫無疑問，那就是咖啡的痕跡！
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-5=更讓我驚訝的是…那污痕充滿了奈米機器人！
+# Guard                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-6=所以說…博士是喝了被下過毒的咖啡？
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-7=是的。他一定是在毒性發作時不小心把手中的咖啡給倒翻在地上。
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-8=等等…我今天也喝過咖啡！
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEEPOISON-9=沒錯。但你卻沒中毒，原因就在這裏。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-1=你是在胡斯博士之後進入休息間的，對不對？
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-2=幕後黑手有充分的時間將有毒的咖啡倒進洗手槽，然後重新泡過新的咖啡。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-3=這恰好就是我找到第二件證物的地方。
+# Guard                                 
+PC15D_CLUE_MURDER_COFFEESINK-4=在洗手槽中？
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-5=是的。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-6=那麽請問是誰負責泡咖啡的？
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-7=泰迪…！
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-8=不對。
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-9=父親和小敏。偶爾也泡。
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-10=鼠鼠也是。
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-11=有道理…這就是你指控我們的清潔機器人為真凶的理由？
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-12=這未免有點牽強了吧！
+# Guard                                 
+PC15D_CLUE_MURDER_COFFEESINK-13=你是想說是我幹的嗎，敏克！？
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-14=我可沒說這麽說！
+# Guard                                 
+PC15D_CLUE_MURDER_COFFEESINK-15=但是你也想過！
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-16=泰迪泡。好咖啡！不致命！
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-17=都冷靜點，我只是在陳述我的發現。
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-18=泰迪有重點。要補充。
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-19=父親是創造者。
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-20=不能傷害。愛父親！
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-21=我還以為像你這樣的機器人做事是很精密的。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-22=不過也難怪，你是個有缺陷的機器人。
+# Tidy                                 
+PC15D_CLUE_MURDER_COFFEESINK-23=泰迪…缺陷？
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-24=你剛才提出的重點並不完全正確。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-25=泰迪的確是無法通過正面接觸去直接傷害自己的創造者。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-26=不過下毒嘛…這就是機智的迂迴手段了！
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-27=…
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-28=你說得有理…間接性暴力手段並未劃分在黃金法則內…
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-29=不過這還是不可能呀！他的程式設計應該是禁止下毒這種行為的！
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-30=「應該」和「確定」還是有區別的。
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-31=我知道出現這種缺陷的原因，不過那是題外話了，日後有機會再解釋。
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-32=有一點我還是想不通…
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-33=奈米機器人只能活躍一個小時左右，因為他們很快就會耗盡能量。
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-34=泰迪今天沒來過我房間…
+# Mink                                 
+PC15D_CLUE_MURDER_COFFEESINK-35=那它是怎麽獲得足夠多的奈米機器人來産生出如此猛烈的劇毒呢？
+# Brok                                 
+PC15D_CLUE_MURDER_COFFEESINK-36=在我調查的時候，我發現了件有趣的事，或許能解答你這個疑問！
+#----------------------------------------------------
+# Mink                                 
+PC15D_PICKONE_HUSH_NEEDEDROOM_WRONG1-1=博士可能會因為各種原因過來，但你這個緣由未免也太荒唐了。
+# Brok                                 
+PC15D_PICKONE_HUSH_NEEDEDROOM_WRONG1-2=這樣啊…？唔…
+#----------------------------------------------------
+# Mink                                 
+PC15D_PICKONE_HUSH_VENT_WRONG1-1=…？
+# Tidy                                 
+PC15D_PICKONE_HUSH_VENT_WRONG1-2=布布又在。胡言亂語。
+#----------------------------------------------------
+# Mink                                 
+PC15D_PICKONE_HUSH_HEAR_WRONG1-1=我沒聽到是因為…？你說啥？
+# Brok                                 
+PC15D_PICKONE_HUSH_HEAR_WRONG1-2=唔…或許是我猜錯了。
+#----------------------------------------------------
+# Mink                                 
+PC15D_PICKONE_ACCESSNANITES_WRONG1-1=那泰迪是通過什麽方法來取得奈米機器人的？
+# Brok                                 
+PC15D_PICKONE_ACCESSNANITES_WRONG1-2=我也很想知道！
+# Mink                                 
+PC15D_PICKONE_ACCESSNANITES_WRONG1-3=…
+# Brok                                 
+PC15D_PICKONE_ACCESSNANITES_WRONG1-4=抱歉，讓我思考一下！
+#----------------------------------------------------
+# Guard                                 
+PC15D_PICKONE_GUARD_BED_WRONG1-1=這不能當作證據呀。
+# Mink                                 
+PC15D_PICKONE_GUARD_BED_WRONG1-2=我同意…
+# Brok                                 
+PC15D_PICKONE_GUARD_BED_WRONG1-3=哦…
+#----------------------------------------------------
+# Mink                                 
+PC15D_PICKONE_GUARD_MOTIVE_WRONG1-1=你確定嗎？我真的看不出這如何解釋得通他的動機。
+# Guard                                 
+PC15D_PICKONE_GUARD_MOTIVE_WRONG1-2=謝謝敏克。這個鱷魚頭果然不適合當偵探。
+# Brok                                 
+PC15D_PICKONE_GUARD_MOTIVE_WRONG1-3=喂…！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-1=房間之間的那個洞孔…
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-2=是直接延伸到你辦公室的桌子旁的。
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-3=那麽，桌子上放的是什麽？
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-4=天呀…！是我的奈米機器人盒子！
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-5=沒錯。
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-6=我猜…那些奈米機器人全是電量滿滿的全新貨色，對吧？
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-7=你猜對了。
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-8=任何人只要知道這個洞孔的存在，就能夠取得那些奈米機器人。
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-9=而泰迪恰好也知道如何啓動它的這些機器人小朋友！
+# Tidy                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-10=泰迪。小機器人。不是朋友。
+# Tidy                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-11=可惡的。小機器人。殺害爸爸！
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-12=你這個廢鐵，你不要種族歧視…
+# Guard                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-13=不是我想幫那個廢鐵說好話，可是…
+# Guard                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-14=那個黃鼠狼不是更能輕易地使用他自己的奈米機器人嗎？
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-15=那你呢，愛睏警衛？你那麽熱衷於指控他人是為了掩飾吧？
+# Guard                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-16=我！？
+# Guard                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-17=我連你房間都進不去呀，笨蛋！因為你就是個自戀的自閉症患者！
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-18=我姑且當作沒聽見你的後半句…不過你的假設很無腦。
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-19=你挖了那個洞然後把它掩蓋起來肯定是有原因的！
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-20=夠了夠了，大家都聽我說！
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-21=你們還記得…在我發現那個洞時，洞孔是覆蓋著一層淺薄的石膏嗎？
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-22=那麽問題來了…這棟大樓中誰是負責維修的？
+# Guard                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-23=那堆廢鐵呀…
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-24=天呀…沒錯，泰迪是有能力使用石膏搭建水泥牆的…
+# Mink                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-25=難道真的是…？
+# Guard                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-26=你個廢鐵，是不是你幹的好事！？
+# Tidy                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-27=哈哈！愚蠢人類！
+# Tidy                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-28=石膏。簡單。人類也能。做到。
+# Tidy                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-29=泰迪沒有打洞。不可能。
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-30=這我可就不認同了，泰迪兄。
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-31=因為我掌握著另一樣能夠進一步證明你是真凶的證據…
+# Brok                                 
+PC15D_CLUE_MURDER_ACCESSNANITES-32=退一步說，至少也可以證明你是個愛撒謊的機器人。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-1=根據監視記錄，泰迪是在4:24時進入休息室的。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-2=在那之後他沒有觸發過任何進出房間的記錄。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-3=然而，胡斯博士的辦公室裏的那個螢幕上顯示著泰迪從5:10到11:10之間一直都在充電。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-4=既然他一直待在休息間，那麽他又是怎麽回到辦公室裏充電的呢？
+# Tidy                                 
+PC15D_CLUE_MURDER_TIDYWRONG-5=很簡單！對對！
+# Tidy                                 
+PC15D_CLUE_MURDER_TIDYWRONG-6=泰迪泡咖啡。爸爸過來喝。
+# Tidy                                 
+PC15D_CLUE_MURDER_TIDYWRONG-7=然後。爸爸回去。辦公室。泰迪跟著。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-8=所以你的意思是…他打開了辦公室的門，而你跟著進去了？
+# Tidy                                 
+PC15D_CLUE_MURDER_TIDYWRONG-9=對對！
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-10=好吧。那麽…我暫且相信你的說辭。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-11=既然如此，那麽我們就來對證下胡斯博士生前的移動路線。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-12=我保證會讓你感到驚訝的！
+# Tidy                                 
+PC15D_CLUE_MURDER_TIDYWRONG-13=泰迪。不喜歡。暗諷。
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-14=在你繼續解說前，我想問個簡單的問題…
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-15=你所指的監控記錄是什麽意思！？
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-16=哦對…你還不知道這件事。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-17=實驗室的系統會記錄每個門口的開關時間，此事只有警衛知情。
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-18=什麽！？
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-19=這麽說，我們一直以來都被監視著！？
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-20=我還以為你會負責保障我們的隱私！
+# Guard                                 
+PC15D_CLUE_MURDER_TIDYWRONG-21=不是！
+# Guard                                 
+PC15D_CLUE_MURDER_TIDYWRONG-22=我的職責是保護你們的人身安全！確保你們不會遭遇生命危險！
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-23=那你很稱職囉！
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-24=你欺騙了我們！
+# Guard                                 
+PC15D_CLUE_MURDER_TIDYWRONG-25=不是我！我可沒那能力開發這監視系統！
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-26=那是誰做的！？
+# Guard                                 
+PC15D_CLUE_MURDER_TIDYWRONG-27=當然是政府！
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-28=哦…也對。
+# Mink                                 
+PC15D_CLUE_MURDER_TIDYWRONG-29=好吧，稍後我會向上頭提出抗議。
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-30=(唔…)
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-31=(泰迪似乎對監控一事絲毫不感到驚訝…)
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-32=那我們可以繼續了吧？
+# Brok                                 
+PC15D_CLUE_MURDER_TIDYWRONG-33=博士的移動軌跡讓我感到很奇怪。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-1=胡斯博士最後一次被記錄是在5:04時離開自己的辦公室。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-2=然後，他就徹底人間蒸發了。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-3=這一點跟警衛的供詞吻合。警衛，你可以再講解一遍嗎…
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-4=沒問題。
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-5=在5:10時，我聽見博士的房間傳出噪，可是他人卻不在房間裏。
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-6=準確來說，裏頭空無一人…只有泰迪在休眠充電中。
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-7=我當時就準備到處尋找…然後就聽見他的聲音從牆後傳過來！
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-8=“我在休息室”。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-9=不過那並不是胡斯博士本人…而是來自視我的錄音。
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-10=錄音…原來如此！
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-11=這是否意味著屍體就在休息室，而凶手這麽做是為了防止被警衛發現？
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-12=不太可能。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-13=警衛會定時檢查房間，而休息室沒有任何可以藏人的地方。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-14=而且，可別忘了凶手的最終目的是把胡斯博士搬運到敏克博士的辦公室。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-15=凶手不可能將神不知鬼不覺地擡著屍體經過大廳。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-16=你撒謊！
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-17=呵。那你來說說你這個版本的事實！
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-18=爸爸。跟我一起。回到辦公室。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-19=開始充電前。爸爸出去了。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-20=泰迪記得。爸爸最後。說的話。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-21=“我要去找敏克博士解決些事”
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-22=爸爸。在走廊碰見小敏。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-23=爸爸。跟隨小敏。進入小敏。辦公室。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-24=小敏遞咖啡。給爸爸。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHERE-25=爸爸死掉了。
+#----------------------------------------------------
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-1=這次我不得不站鐵罐頭這邊了…
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-2=他的推論比你的更有信服力，鱷魚頭。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-3=沒錯，泰迪的那段錄音的確很有說服力，可天知道那是什麽時候錄的音？
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-4=這錄音的存在實在是太牽強了。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-5=你也可以把我的話錄音然後僞造成證據。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-6=而且，監控記錄顯示胡斯博士並沒有進入過敏克博士的房間。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-7=你錯！
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-8=小敏開門。爸爸跟著進去。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-9=然後小敏。毒害爸爸！
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-10=那個黃鼠狼是跟胡斯博士一起回房間的…？
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-11=看。監控記錄！
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-12=小敏什麽。時候進去？
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-13=5:04…
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-14=(咽口水)
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-15=對。跟爸爸。離開房間。同一分鐘！
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-16=這不可能！我今天根本沒見過他！
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-17=警衛先生！
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-18=…我記不起來了。
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-19=你是在開玩笑嗎！？
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-20=泰迪。那你怎麽解釋警衛聽見的聲響？
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-21=巧合。視我出錯。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-22=視我偶爾。隨機播放。影片。
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-23=唔…是的，我也碰過類似的情況…
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-24=那個洞孔呢？還有你房間地板上的咖啡污痕呢？
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-25=很久以前就有了。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-26=布布。你如何證明。你的論點？
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-27=那個…奈米機器人…
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-28=奈米機器人。受咖啡。吸引。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-29=對不對，小敏？
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-30=…我的職業道德不允許我撒謊。
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-31=是的。因為硬體材料的緣故，奈米機器人會受咖啡因的吸引而聚集到咖啡裏。
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-32=所以說…！原來一切都是你幹的，黃鼠狼！
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-33=不是！你可別聽它的！
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-34=偵探先生！我說的是真話…
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-35=你得相信我！
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-36=我這次跟鐵罐頭同隊！
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-37=那就是二對二了。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-38=你怎麽看，奧特？
+# Ott                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-39=我…
+# Ott                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-40=不好意思…這麽多的訊息搞得我完全跟不上思路。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-41=各位！讓我先說完我的推論，然後大家再做決定吧。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-42=好吧。沒人聽。泰迪。
+# Tidy                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-43=泰迪傷心。爸爸死了。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREB-44=唉…
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-1=大家專心點。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-2=泰迪使用視我錄音來阻止警衛尋找失蹤的胡斯博士。
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-3=而據我所觀察，胡斯博士在5:10的時候並不在自己的房間、休息間、或者大廳…
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-4=而根據監控記錄顯示，他也沒進入過敏克博士的房間。
+# Guard                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-5=不可能！這是不可能的！
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-6=我可不敢苟同。
+# Mink                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-7=他不可能憑空消失的吧？
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-8=當然不是！
+# Brok                                 
+PC15D_CLUE_MURDER_DRHUSHWHEREC-9=因為還有最後一種可能性，也就是我接下來要闡述的！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PINPOINTVENT_WRONG-1=胡斯博士當時就在這裏！
+# Mink                                 
+PC15D_PINPOINTVENT_WRONG-2=…？
+# Guard                                 
+PC15D_PINPOINTVENT_WRONG-3=你開玩笑嗎？剛才都說了博士不可能在這房間裏！
+# Brok                                 
+PC15D_PINPOINTVENT_WRONG-4=是嗎？
+# Brok                                 
+PC15D_PINPOINTVENT_WRONG-5=哎呀。
+# Mink                                 
+PC15D_PINPOINTVENT_WRONG-6=…
+# Brok                                 
+PC15D_PINPOINTVENT_WRONG-7=再給我一次機會！
+#----------------------------------------------------
+# Guard                                 
+PC15D_PINPOINTVENT_RIGHT-1=通風管道！？
+# Brok                                 
+PC15D_PINPOINTVENT_RIGHT-2=對。就是通風管道裏。
+# Brok                                 
+PC15D_PINPOINTVENT_RIGHT-3=那是唯一一個可以藏匿屍體而不被發現的地方！
+# Mink                                 
+PC15D_PINPOINTVENT_RIGHT-4=這完全是憑空猜測！
+# Guard                                 
+PC15D_PINPOINTVENT_RIGHT-5=你有什麽證據可以證明此論點嗎？
+# Brok                                 
+PC15D_PINPOINTVENT_RIGHT-6=當然有！
+#----------------------------------------------------
+# Guard                                 
+PC15D_PICKONE_VENTPROOF_WRONG1-1=等等。這哪裏有證明到博士的確在通風管道裏待過…？
+# Brok                                 
+PC15D_PICKONE_VENTPROOF_WRONG1-2=沒有嗎？
+# Guard                                 
+PC15D_PICKONE_VENTPROOF_WRONG1-3=沒有。
+# Tidy                                 
+PC15D_PICKONE_VENTPROOF_WRONG1-4=布布笨蛋！
+#----------------------------------------------------
+# Guard                                 
+PC15D_CLUE_MURDER_VENTILATION-1=番茄醬…？
+# Brok                                 
+PC15D_CLUE_MURDER_VENTILATION-2=是的。凶手真是不遺餘力去誤導我們…
+# Tidy                                 
+PC15D_CLUE_MURDER_VENTILATION-3=發現問題。
+# Brok                                 
+PC15D_CLUE_MURDER_VENTILATION-4=又怎麽了？
+# Tidy                                 
+PC15D_CLUE_MURDER_VENTILATION-5=通風管道。偶爾。快遞物品。
+# Brok                                 
+PC15D_CLUE_MURDER_VENTILATION-6=這是真的嗎？
+# Mink                                 
+PC15D_CLUE_MURDER_VENTILATION-7=是的。大件的包裹無法通過郵件輸送管運送，所以有時會使用通風管道來遞送。
+# Mink                                 
+PC15D_CLUE_MURDER_VENTILATION-8=有可能是包裹的包裝破了…
+# Brok                                 
+PC15D_CLUE_MURDER_VENTILATION-9=很明顯…
+# Tidy                                 
+PC15D_CLUE_MURDER_VENTILATION-10=哈哈！認栽吧！
+# Brok                                 
+PC15D_CLUE_MURDER_VENTILATION-11=嗯…
+# Brok                                 
+PC15D_CLUE_MURDER_VENTILATION-12=不過！那也未免太巧合了吧？
+# Mink                                 
+PC15D_CLUE_MURDER_VENTILATION-13=假設你說的是對的。
+# Mink                                 
+PC15D_CLUE_MURDER_VENTILATION-14=那麽胡斯博士要想進入通風管道…就必須從自己的辦公室爬上去！
+# Brok                                 
+PC15D_CLUE_MURDER_VENTILATION-15=他的確是在自己房間裏。
+# Mink                                 
+PC15D_CLUE_MURDER_VENTILATION-16=不過…你之前也說了！
+# Mink                                 
+PC15D_CLUE_MURDER_VENTILATION-17=他最後一次被記錄時…是正在離開自己的房間！
+# Mink                                 
+PC15D_CLUE_MURDER_VENTILATION-18=那你如何解釋？
+#----------------------------------------------------
+# Brok                                 
+PC15D_DRHUSHWHY_GHOST-1=很明顯。胡斯博士已經死了，所以他現在是鬼魂。
+# Brok                                 
+PC15D_DRHUSHWHY_GHOST-2=而鬼魂是能夠穿牆的。
+# Brok                                 
+PC15D_DRHUSHWHY_GHOST-3=這是三歲小孩都懂的道理！
+# Mink                                 
+PC15D_DRHUSHWHY_GHOST-4=…
+# Guard                                 
+PC15D_DRHUSHWHY_GHOST-5=…
+# Tidy                                 
+PC15D_DRHUSHWHY_GHOST-6=…
+# Brok                                 
+PC15D_DRHUSHWHY_GHOST-7=好吧，或許是有一點點不合邏輯…
+# Mink                                 
+PC15D_DRHUSHWHY_GHOST-8=再想想別的推論吧！
+#----------------------------------------------------
+# Brok                                 
+PC15D_DRHUSHWHY_BACK-1=很簡單。胡斯博士回到了自己的辦公室。
+# Mink                                 
+PC15D_DRHUSHWHY_BACK-2=什麽時候…？5:10時警衛進去查看，。所以在該時間段之前他是不在的。
+# Brok                                 
+PC15D_DRHUSHWHY_BACK-3=我知道了…！
+# Brok                                 
+PC15D_DRHUSHWHY_BACK-4=他爬到天花板上等警衛開門時趁機進入辦公室！
+# Brok                                 
+PC15D_DRHUSHWHY_BACK-5=就像痣蛛人一樣！
+# Brok                                 
+PC15D_DRHUSHWHY_BACK-6=…
+# Brok                                 
+PC15D_DRHUSHWHY_BACK-7=突然感覺很丟人…
+# Mink                                 
+PC15D_DRHUSHWHY_BACK-8=我們姑且當作沒聽見吧。
+#----------------------------------------------------
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-1=很明顯，胡斯博士並未離開過房間。
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-2=從他出門直到警衛查房的這個時間段並沒有他任何的進出記錄。
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-3=這明顯是凶手試圖混淆我們。
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-4=比如說泰迪可以使用博士的手來按下按鈕讓監控系統記錄博士出門了。
+# Mink                                 
+PC15D_DRHUSHWHY_NEVEREXIT-5=那就是說胡斯博士當時已經遇害了？
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-6=是的。其實…
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-7=我認為他早在進入自己的辦公室前就已經遇害了。
+# Tidy                                 
+PC15D_DRHUSHWHY_NEVEREXIT-8=荒唐。
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-9=哦，是嗎？
+# Brok                                 
+PC15D_DRHUSHWHY_NEVEREXIT-10=那我還有另一個證物！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PICKONE_WHEREPOISONED_WRONG1-1=(可是…那地方應該不算吧？)
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-1=別忘了中毒的來源。是咖啡！
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-2=要想毒害胡斯博士，那最簡單的辦法就是讓他在辦公室裏喝咖啡。
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-3=但問題是…他從不會在自己辦公室喝咖啡。
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-4=胡斯博士喜歡在休息室享用咖啡。因為他有強迫症，不能忍受弄髒自己的工作環境。
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-5=然而，地板上怎麽會有咖啡汙漬呢…？
+# Guard                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-6=你想暗示什麽？那汙漬是胡斯博士倒在地板上時造成的？
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-7=正解。
+# Tidy                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-8=布布騙子。
+# Tidy                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-9=父親偶爾。在辦公室。喝咖啡。
+# Mink                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-10=偵探先生，恐怕這只是你的憑空猜測吧…
+# Guard                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-11=對。我覺得博士不小心倒翻咖啡的可能性比較高。
+# Tidy                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-12=布布。完蛋。放棄吧！
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-13=(糟了…連敏克都開始覺得我的推論過於牽強了…)
+# Brok                                 
+PC15D_CLUE_MURDER_WHEREPOISONED-14=(我這個推理真的是對嗎？)
+#----------------------------------------------------
+# Brok                                 
+PC15D_RIGHTPATH_NO-1=(唉…我一直喪失記憶，這種情況下說出來的話怕是連自己都不信了。)
+# Brok                                 
+PC15D_RIGHTPATH_NO-2=(…)
+# Brok                                 
+PC15D_RIGHTPATH_NO-3=(不行…！都走到這一步了…)
+# Brok                                 
+PC15D_RIGHTPATH_NO-4=(我的直覺認為泰迪絕對有涉入…我必須相信自己的直覺！)
+# Brok                                 
+PC15D_RIGHTPATH_NO-5=(還是堅持下去吧。)
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_RIGHTPATH-1=大家，聽我說。
+# Brok                                 
+PC15D_CLUE_MURDER_RIGHTPATH-2=我知道這麽說是有點荒唐。不過，請讓我繼續推理下去，請大家對我多一點信心！
+# Tidy                                 
+PC15D_CLUE_MURDER_RIGHTPATH-3=笨蛋布布。
+# Mink                                 
+PC15D_CLUE_MURDER_RIGHTPATH-4=好吧。
+# Mink                                 
+PC15D_CLUE_MURDER_RIGHTPATH-5=假設胡斯博士是在休息室喝了咖啡然後斃命。
+# Mink                                 
+PC15D_CLUE_MURDER_RIGHTPATH-6=可是要想進入通風管道，他就必須先回去自己的辦公室。
+# Mink                                 
+PC15D_CLUE_MURDER_RIGHTPATH-7=他究竟怎麽回去？
+# Brok                                 
+PC15D_CLUE_MURDER_RIGHTPATH-8=很簡單。泰迪可以搬運物體。
+# Guard                                 
+PC15D_CLUE_MURDER_RIGHTPATH-9=你是指…這個金屬東西擡著胡斯博士經過大廳一路回到他的辦公室！？
+# Guard                                 
+PC15D_CLUE_MURDER_RIGHTPATH-10=啊哈！那是不可能的，朋友！否則我肯定會看見的！
+# Brok                                 
+PC15D_CLUE_MURDER_RIGHTPATH-11=你確定嗎？需要我激發一下你的記憶嗎？
+# Guard                                 
+PC15D_CLUE_MURDER_RIGHTPATH-12=啊？
+#----------------------------------------------------
+# Guard                                 
+PC15D_PICKONE_CARRY_WRONG1-1=這是什麽東西…？
+# Brok                                 
+PC15D_PICKONE_CARRY_WRONG1-2=不記得嗎？那你的記憶一定很糟糕。
+# Guard                                 
+PC15D_PICKONE_CARRY_WRONG1-3=喂…！
+# Mink                                 
+PC15D_PICKONE_CARRY_WRONG1-4=偵探先生，請承認錯誤然後繼續調查吧。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-1=4:38時，警衛並不在自己站崗的地方，他接到了一通訊號很差的電話。
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-2=所以，他打開了實驗室的大門來增強接收訊號。
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-3=什麽…？
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-4=然而這通電話的另一端並沒有人的聲音——只有一首歌曲在播放中。
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-5=在那段時間，他的注意力離開了大廳。
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-6=這是真的嗎，鼠人先生？你竟然失職了！？
+# Guard                                 
+PC15D_CLUE_MURDER_CARRY-7=喂！你也知道的，這裏的訊號是有多爛！
+# Guard                                 
+PC15D_CLUE_MURDER_CARRY-8=不過就算你不知道也情有可原…畢竟你又沒有朋友也沒有家人…
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-9=啊！原來你真的是失職了…
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-10=警衛以為那是惡作劇電話，不過我認為…
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-11=打電話的人其實是你，泰迪！
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-12=模擬來電訊號並且播放音樂，這對你來說是輕而易舉的事吧？
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-13=他的確有能力做到…
+# Tidy                                 
+PC15D_CLUE_MURDER_CARRY-14=布布。聽音樂？
+# Tidy                                 
+PC15D_CLUE_MURDER_CARRY-15=好的。泰迪。播放音樂！
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-16=唔…不用了…
+# Tidy                                 
+PC15D_CLUE_MURDER_CARRY-17=泰迪。沒打電話。沒沒沒。
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-18=雖然警衛是確保了沒有人可以進出實驗室…
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-19=但是在他接電話的那一刻…任何事情都可能發生！
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-20=唔…
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-21=我在設想泰迪擡著博士經過大廳，然後用博士的手打開了辦公室的門口…
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-22=理論上來說是行得通的，但這種推測實在太瘋狂了…
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-23=但這的確也解釋了為什麽泰迪最終不是在休息室而是出現在胡斯博士的辦公室裏。
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-24=換個角度來想。
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-25=如果胡斯博士回去自己房間時還是安好無恙的，那麽為什麽凶手還要打電話引開警衛？
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-26=那樣根本是多此一舉啊。
+# Tidy                                 
+PC15D_CLUE_MURDER_CARRY-27=沒有。泰迪。沒打電話。
+# Tidy                                 
+PC15D_CLUE_MURDER_CARRY-28=布布。耳聾！
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-29=那麽…他是什麽時候死亡的？
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-30=死亡時間介於4:24到4:38之間。因為泰迪就是在這個時候進入休息間然後離開的。
+# Tidy                                 
+PC15D_CLUE_MURDER_CARRY-31=布布無視。可憐泰迪…爸爸死了…！
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-32=假設你的推論是正確的，那麽還是有些說不通的地方。
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-33=比如說，泰迪是如何將胡斯博士放進通風管道中的？
+# Mink                                 
+PC15D_CLUE_MURDER_CARRY-34=他們倆都沒辦法爬梯子呀！
+# Brok                                 
+PC15D_CLUE_MURDER_CARRY-35=你錯了。我恰好知道泰迪是怎麽做到的！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_TIDY_STRETCH_WRONG-1=這或許就是泰迪用來爬上通風管道的工具！
+# Brok                                 
+PC15D_CLUE_TIDY_STRETCH_WRONG-2=…很有可能。
+# Guard                                 
+PC15D_CLUE_TIDY_STRETCH_WRONG-3=天呀。你完全是失心瘋了。
+# Guard                                 
+PC15D_CLUE_TIDY_STRETCH_WRONG-4=夠了。我不參與這件事了…
+# Brok                                 
+PC15D_CLUE_TIDY_STRETCH_WRONG-5=別，等等！我開個玩笑而已！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH-1=大家可別忘了泰迪的主要功能。
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH-2=伸展手臂！
+# Mink                                 
+PC15D_CLUE_MURDER_STRETCH-3=…
+# Guard                                 
+PC15D_CLUE_MURDER_STRETCH-4=你是在開玩笑嗎…？
+# Tidy                                 
+PC15D_CLUE_MURDER_STRETCH-5=不可能。
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH-6=請你說說怎麽不可能？
+# Tidy                                 
+#Make sure to convert to the appropriate unit according to your country (eg : 3 meters)
+PC15D_CLUE_MURDER_STRETCH-7=手臂伸展。最多3米。
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH-8=所以呢…？
+# Tidy                                 
+PC15D_CLUE_MURDER_STRETCH-9=你看。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH2-1=…你是開玩笑吧…？
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH2-2=天知道你現在是不是假裝只能伸這麽長？
+# Mink                                 
+PC15D_CLUE_MURDER_STRETCH2-3=讓我來檢查它的數據…
+# Mink                                 
+PC15D_CLUE_MURDER_STRETCH2-4=唔…
+# Mink                                 
+#Make sure to convert to the appropriate unit according to your country (eg : 3 meters)
+PC15D_CLUE_MURDER_STRETCH2-5=應該是真的。它的手臂伸展長度只能達到3米。
+# Mink                                 
+PC15D_CLUE_MURDER_STRETCH2-6=胡斯博士的天花板恰好是同樣的高度…所以泰迪不可能達到通風管道。
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH2-7=不…不可能！
+# Tidy                                 
+PC15D_CLUE_MURDER_STRETCH2-8=啊哈！我都說了！
+# Tidy                                 
+PC15D_CLUE_MURDER_STRETCH2-9=布布推論。錯誤！
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH2-10=(我需要盡快想出新對策…！)
+# Brok                                 
+PC15D_CLUE_MURDER_STRETCH2-11=(我肯定泰迪是有參與凶殺案…一定是！)
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-1=你們看看這個房間的布局。
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-2=兩位科學家的辦公室是如出一轍的。
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-3=因此，這兩間房間的通風孔的高度也是一模一樣的。
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-4=那麽究竟有多高呢？
+# Mink                                 
+#10 feet is Equivalent to 3.5 meters
+PC15D_CLUE_MURDER_RAMP-5=3.5米。
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-6=沒錯。這房間的光柱是3.5米高，一直延伸到天花板。
+# Brok                                 
+#9 feet is Equivalent to 3 meters
+PC15D_CLUE_MURDER_RAMP-7=而泰迪的手臂能伸展到3米長…這還不夠高。
+# Tidy                                 
+PC15D_CLUE_MURDER_RAMP-8=哦。布布承認了。
+# Tidy                                 
+PC15D_CLUE_MURDER_RAMP-9=承認失敗了！
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-10=當然不是！
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-11=但是我們漏了一樣東西。
+# Guard                                 
+PC15D_CLUE_MURDER_RAMP-12=工作台！泰迪可以站到桌子上。
+# Brok                                 
+#Equivalent to 1 meter
+PC15D_CLUE_MURDER_RAMP-13=桌子可以增高1米左右的高度。
+# Guard                                 
+PC15D_CLUE_MURDER_RAMP-14=可是…那個鐵罐頭不可能跳上桌子吧？
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-15=當然不是跳。
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-16=胡斯博士為它專門設計了這個人工坡道。
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-17=泰迪，這可是你自己告訴我的哦！
+# Tidy                                 
+PC15D_CLUE_MURDER_RAMP-18=…
+# Tidy                                 
+PC15D_CLUE_MURDER_RAMP-19=泰迪。學會。不多嘴。
+# Guard                                 
+PC15D_CLUE_MURDER_RAMP-20=不好意思，鱷魚頭…這依然只是純碎的推論。
+# Brok                                 
+PC15D_CLUE_MURDER_RAMP-21=哦，可是我有證據！
+# Guard                                 
+PC15D_CLUE_MURDER_RAMP-22=有嗎！？
+# Ott                                 
+PC15D_CLUE_MURDER_RAMP-23=加油，布羅格先生！
+#----------------------------------------------------
+# Tidy                                 
+PC15D_PICKONE_CRUMBS_WRONG1-1=泰迪。不明白。
+# Mink                                 
+PC15D_PICKONE_CRUMBS_WRONG1-2=不只是你不明白。
+# Brok                                 
+PC15D_PICKONE_CRUMBS_WRONG1-3=我似乎搞錯了，我剛才說什麽了…？
+# Brok                                 
+PC15D_PICKONE_CRUMBS_WRONG1-4=讓我重試一遍！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-1=這是我拍下的房間的照片，你們看！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-2=桌子上布滿了餅乾屑。
+# Mink                                 
+PC15D_CLUE_MURDER_CRUMBS-3=咦…還真的。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-4=眾所皆知…胡斯博士有強迫症。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-5=他怎麽可能會容許滿地都是餅乾屑…？
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-6=答案很簡單，因為胡斯博士當時已經死了。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-7=泰迪，這是你在爬上人工坡道時不小心碾碎的餅乾！
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-8=不是。
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-9=泰迪。很晚醒來。
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-10=還沒打掃。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-11=真希望你能至少說那麽一次的真話！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-12=承認吧！這就是事實！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-13=你爬上桌子伸展手臂打開通風孔，然後把胡斯博士推進去，然後…
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-14=你就把他一路推向敏克博士的房間！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-15=我們聊得越多，你就洩漏…
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-16=哈哈哈。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-17=呃？
+# Guard                                 
+PC15D_CLUE_MURDER_CRUMBS-18=它…在笑？
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-19=我。
+# Mink                                 
+PC15D_CLUE_MURDER_CRUMBS-20=…！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-21=你什麽？
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-22=你現在打算改口假裝自己無法爬上去是嗎…？
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-23=…
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-24=有可能。很高興。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-25=高興甚麼？
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-26=見到布布。掉入自己。設計的陷阱！
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-27=布布幸運。偶爾。
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-28=不過運氣。用完了！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-29=…你能不能說清楚一點？
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-30=看地圖。
+# Tidy                                 
+#Equivalent to 60 centimeters.
+PC15D_CLUE_MURDER_CRUMBS-31=通風管道。60厘米高。
+# Tidy                                 
+#Equivalent to 1 meter.
+PC15D_CLUE_MURDER_CRUMBS-32=泰迪。1米高！
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-33=無法扭曲。進不去！
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-34=而且！無法站在。地板上。推過去！
+# Mink                                 
+PC15D_CLUE_MURDER_CRUMBS-35=他說得對！
+# Mink                                 
+PC15D_CLUE_MURDER_CRUMBS-36=泰迪的身材進不去通風管道，而且距離太遙遠，它無法站在地上一路把胡斯推過去我的房間。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-37=(咽口水)
+# Tidy                                 
+PC15D_CLUE_MURDER_CRUMBS-38=布布！完蛋了！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-39=不！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-40=我…我能證明你是怎麽做到的！
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-41=大家再看看這照片。
+# Brok                                 
+PC15D_CLUE_MURDER_CRUMBS-42=這…就是泰迪所使用的方法！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PINPOINTLEVER_WRONG-1=看這裏！
+# Guard                                 
+PC15D_PINPOINTLEVER_WRONG-2=那個？你確定嗎？
+# Brok                                 
+PC15D_PINPOINTLEVER_WRONG-3=唔…不是那個，不過也挺漂亮的，對吧？
+# Mink                                 
+PC15D_PINPOINTLEVER_WRONG-4=你能不能認真一點？
+#----------------------------------------------------
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-1=我們忘了思考一道重要的問題。
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-2=是誰打開的通風孔？畢竟，通風孔一般上都是關閉著的。
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-3=沒錯。
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-4=不像我那邊的通風孔，這邊的可沒有梯子也沒有遙控…
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-5=哦，我懂了！是控制桿！
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-6=你是指…？
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-7=沒錯。
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-8=首先，泰迪打開了通風孔，然後把胡斯博士塞進去…
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-9=然後他用一只手抓住控制杆，另一只手則繼續推動屍體！
+# Guard                                 
+PC15D_PINPOINTLEVER_RIGHT-10=哇！鱷魚頭，這是我聽你說過最瘋狂的話！
+# Ott                                 
+PC15D_PINPOINTLEVER_RIGHT-11=這真的可能辦到嗎？
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-12=讓我來想想…
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-13=這地圖要是正確的話，那麽通風管道幾乎是3米長…
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-14=是的…雖然荒唐…可是理論上來說是可以做到的…
+# Guard                                 
+PC15D_PINPOINTLEVER_RIGHT-15=這個打雜的機器人能懸掛在天花板上！？你是瘋了！
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-16=等案子結束後再來談論我是不是瘋了！
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-17=大家可別忘了最後的重點…屍體是出現在敏克博士的房間。
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-18=沒錯，是泰迪推他過去的，不過問題是…什麽時候發生的事？
+# Mink                                 
+PC15D_PINPOINTLEVER_RIGHT-19=對。
+# Brok                                 
+PC15D_PINPOINTLEVER_RIGHT-20=正好有一件物證可以告訴我們準確的時間！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PICKONE_LAMPOFF_WRONG1-1=(不對…我得想想這檯燈是屬於誰的。)
+#----------------------------------------------------
+# Guard                                 
+PC15D_PICKONE_LAMPPUSH_WRONG1-1=啊。我懂了！
+# Brok                                 
+PC15D_PICKONE_LAMPPUSH_WRONG1-2=啊！那你可以講解給我聽嗎？
+# Guard                                 
+PC15D_PICKONE_LAMPPUSH_WRONG1-3=其實…我不太肯定。
+# Brok                                 
+PC15D_PICKONE_LAMPPUSH_WRONG1-4=唔…我也一樣。
+# Mink                                 
+PC15D_PICKONE_LAMPPUSH_WRONG1-5=啊…
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-1=我分析過敏克博士的檯燈，據我所收集到的數據顯示…
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-2=5:10時檯燈發生過劇烈震蕩。
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPPUSH-3=哦…我明白了。
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPPUSH-4=我不明白，究竟怎麽了？
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-5=泰迪需要把檯燈放到屍體旁邊，但是他卻無法做到。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-6=所以…他將檯燈跟屍體一起塞進通風管道中！
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPPUSH-7=很合理，檯燈掉到地面時損壞了。
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPPUSH-8=可是…5:10？
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPPUSH-9=這太早了。如果屍體當時就已經出現在我房間中，那我肯定會察覺到的！
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPPUSH-10=而且…你不是說這數據是來自我的檯燈嗎？
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPPUSH-11=泰迪不可能拿到我的檯燈！
+# Tidy                                 
+PC15D_CLUE_MURDER_LAMPPUSH-12=很好。布布理論。自相矛盾！
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-13=等一下。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-14=好吧，我承認…我把你弄糊塗了。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-15=是的，這數據是來自敏克博士的檯燈…
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-16=可是我沒說屍體旁邊的檯燈就是敏克博士的檯燈！
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPPUSH-17=啊…？
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPPUSH-18=鱷魚頭說得我也亂了。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPPUSH-19=容我娓娓道來。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPHUSH-1=大家一直都下意識認為屍體旁邊的檯燈就是敏克博士的檯燈。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPHUSH-2=不過…這個檯燈的數據卻道出了真相。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPHUSH-3=這是屬於胡斯博士的檯燈。
+# Tidy                                 
+PC15D_CLUE_MURDER_LAMPHUSH-4=嘖嘖！
+# Tidy                                 
+PC15D_CLUE_MURDER_LAMPHUSH-5=不對！不不不！
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPHUSH-6=等一下…這就是泰迪推進通風管道的檯燈？
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPHUSH-7=是的，毋庸置疑。
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPHUSH-8=切。
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPHUSH-9=真要是那樣子的話…那麽這裏就該出現兩盞檯燈！
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPHUSH-10=鼠人先生說得對，你怎麽解釋我的那盞燈…會出現在胡斯博士的桌子上呢？
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPHUSH-11=只需證明泰迪取走了敏克博士的檯燈就行了。
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPHUSH-12=他怎麽做到的？
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPHUSH-13=你想想，敏克博士的檯燈最初是在哪裏的？
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPHUSH-14=不知道。你指給我們看吧！
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPHUSH-15=好，就在那邊！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PINPOINTMINKLAMP_WRONG-1=你的檯燈本來是在這裏的！
+# Mink                                 
+PC15D_PINPOINTMINKLAMP_WRONG-2=才不是呢。
+# Brok                                 
+PC15D_PINPOINTMINKLAMP_WRONG-3=你確定嗎？
+# Mink                                 
+PC15D_PINPOINTMINKLAMP_WRONG-4=我就住在這裏！我當然確定！
+# Brok                                 
+PC15D_PINPOINTMINKLAMP_WRONG-5=哦，那樣啊…
+#----------------------------------------------------
+# Brok                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-1=敏克博士。你的檯燈本來是放這裏的！
+# Mink                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-2=沒錯。你怎麽知道的？
+# Brok                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-3=因為關上房門後，整個房間只有一個地方是泰迪可以通過的。
+# Brok                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-4=就是牆上的這個洞！
+# Guard                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-5=什麽…？
+# Guard                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-6=不對吧。要是換作我的話…
+# Guard                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-7=我會把敏克博士的檯燈偷走然後塞進通風管道中讓它摔落到屍體旁邊。
+# Guard                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-8=根本不必去碰胡斯博士的檯燈！
+# Brok                                 
+PC15D_PINPOINTMINKLAMP_RIGHT-9=的確是好想法，除非…
+#----------------------------------------------------
+# Brok                                 
+PC15D_MISTAKE_CONFUSE-1=泰迪做這一切是為了混淆我們！
+# Guard                                 
+PC15D_MISTAKE_CONFUSE-2=將錯誤的檯燈放到屍體旁邊？
+# Guard                                 
+PC15D_MISTAKE_CONFUSE-3=這有何意義？故意露出破綻讓我們識破嗎…？
+# Brok                                 
+PC15D_MISTAKE_CONFUSE-4=唔…
+#----------------------------------------------------
+# Brok                                 
+PC15D_MISTAKE_TIDY-1=泰迪，怎麽突然那麽安靜了！是累了嗎？
+# Brok                                 
+PC15D_MISTAKE_TIDY-2=還是說是因為你察覺…
+# Brok                                 
+PC15D_MISTAKE_TIDY-3=…自己百密一疏了！
+# Tidy                                 
+PC15D_MISTAKE_TIDY-4=…
+# Brok                                 
+PC15D_MISTAKE_TIDY-5=在你取走敏克博士的檯燈後，本來是該把檯燈丟進通風管道的。
+# Brok                                 
+PC15D_MISTAKE_TIDY-6=可是…泰迪卻弄反了檯燈。
+# Tidy                                 
+PC15D_MISTAKE_TIDY-7=弄反…？
+# Brok                                 
+PC15D_MISTAKE_TIDY-8=我有證據！
+# Brok                                 
+PC15D_MISTAKE_TIDY-9=我在胡斯博士房間裏時發現了件不對勁的事。
+# Brok                                 
+PC15D_MISTAKE_TIDY-10=尤其是對他這種有強迫症的人來說…
+# Brok                                 
+PC15D_MISTAKE_TIDY-11=我讓你們看看這照片吧！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PINPOINTELEMENTOFF_WRONG-1=就是這裏！
+# Guard                                 
+PC15D_PINPOINTELEMENTOFF_WRONG-2=…？
+# Mink                                 
+PC15D_PINPOINTELEMENTOFF_WRONG-3=我很想看明白可是…
+# Brok                                 
+PC15D_PINPOINTELEMENTOFF_WRONG-4=你得把腦袋倒轉過來看…！
+# Brok                                 
+PC15D_PINPOINTELEMENTOFF_WRONG-5=或者…你需要對著鏡子看？總之，這裏有不對勁的地方！
+# Mink                                 
+PC15D_PINPOINTELEMENTOFF_WRONG-6=我看唯一不對勁的是你的腦袋。
+# Brok                                 
+PC15D_PINPOINTELEMENTOFF_WRONG-7=嗷…
+#----------------------------------------------------
+# Mink                                 
+PC15D_PINPOINTELEMENTOFF_RIGHT-1=這檯燈…？
+# Guard                                 
+PC15D_PINPOINTELEMENTOFF_RIGHT-2=這才是黃鼠狼的檯燈對吧？
+# Brok                                 
+PC15D_PINPOINTELEMENTOFF_RIGHT-3=是的。不過這並非最奇怪的事。
+# Guard                                 
+PC15D_PINPOINTELEMENTOFF_RIGHT-4=聽不懂。
+# Brok                                 
+PC15D_PINPOINTELEMENTOFF_RIGHT-5=好吧，當我解釋完以後你們應該就懂了！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-1=在我知道胡斯博士有強迫症後，我頓時就察覺到檯燈的擺放位置有問題。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-2=檯燈並非處於桌子中央，也不是正面面對前方！
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-3=像胡斯博士這種強迫症怎麽可能容許房間裏的東西隨便擺放！
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPOFF-4=好吧，所以呢…？
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPOFF-5=那又能說明什麽？
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-6=這足以說明一切。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-7=胡斯博士的檯燈本來是置放在桌子正中央的。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-8=泰迪取走了敏克博士的檯燈。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-9=但就在這一刻，計劃被暫時打斷了，所以他就把兩盞檯燈都放在桌上。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-10=等警衛先生你離開後…他就開始執行自己的計劃。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-11=不過他卻拿錯了檯燈，把錯誤的檯燈推進了通風管道！
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-12=泰迪本來的目的是想誤導我們認為胡斯博士跟敏克博士發生過打鬥，而時間正好是他的體格數據停止更新的時候。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-13=正因為泰迪犯了這個錯誤，所以這個時間段才變得那麽顯眼！
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPOFF-14=那麽…既然不是屍體摔落時發生的震蕩…
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPOFF-15=那麽究竟是什麽原因導致另一盞檯燈在5:10時發生的劇烈震蕩？
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-16=這個問題解釋起來很簡單。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-17=泰迪被突然來查房的警衛給打斷了。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-18=那麽，為什麽警衛先生會到胡斯博士的房間查房？
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPOFF-19=哦！我知道！
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPOFF-20=因為我聽見巨響聲…
+# Guard                                 
+PC15D_CLUE_MURDER_LAMPOFF-21=哦！這麼說原來是…！
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-22=對，敏克博士的檯燈受到了震蕩。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-23=我相信泰迪是故意從高處抛下檯燈以便營造出檯燈就是凶器的假象。
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPOFF-24=好機智！不過…
+# Mink                                 
+PC15D_CLUE_MURDER_LAMPOFF-25=如果被推下通風管道的是胡斯博士的檯燈…那麽為何它沒受到震蕩呢？畢竟通風管道的位置是很高的…
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-26=當然有！
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-27=雖然沒那麽劇烈，但是胡斯博士的檯燈也在11:02時受到過震蕩。
+# Brok                                 
+PC15D_CLUE_MURDER_LAMPOFF-28=那麽最後一個謎題也揭曉了！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-1=這就是檯燈受到震蕩的緣故！
+# Guard                                 
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-2=啊？
+# Brok                                 
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-3=不是吧！你好歹做點功課！
+# Brok                                 
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-4=這你都看不懂？
+# Mink                                 
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-5=真看不懂。
+# Brok                                 
+PC15D_CLUE_MURDER_BODYFALL_WRONG1-6=哎呀，那或許是因為別的緣故吧。
+#----------------------------------------------------
+# Mink                                 
+PC15D_PICKONE_BODYFALL_WRONG1-1=啊…？可以講解下嗎？
+# Brok                                 
+PC15D_PICKONE_BODYFALL_WRONG1-2=那個，當時我們聽見聲響是因為…
+# Brok                                 
+PC15D_PICKONE_BODYFALL_WRONG1-3=發生了震蕩。
+# Guard                                 
+PC15D_PICKONE_BODYFALL_WRONG1-4=…
+# Mink                                 
+PC15D_PICKONE_BODYFALL_WRONG1-5=…
+# Brok                                 
+PC15D_PICKONE_BODYFALL_WRONG1-6=容我再試一遍！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PICKONE_BODYMUSIC_WRONG1-1=敏克博士，這都是你的錯！都怪你不專心！
+# Mink                                 
+PC15D_PICKONE_BODYMUSIC_WRONG1-2=什麽？
+# Brok                                 
+PC15D_PICKONE_BODYMUSIC_WRONG1-3=哎呀！搞錯線索了！
+#----------------------------------------------------
+# Brok                                 
+PC15D_PICKONE_CONSCIOUSNESS_WRONG1-1=不是我說…你們瞧瞧那個可惡的機器人！他明顯就是在撒謊呀！
+# Mink                                 
+PC15D_PICKONE_CONSCIOUSNESS_WRONG1-2=無法認同。
+# Tidy                                 
+PC15D_PICKONE_CONSCIOUSNESS_WRONG1-3=布布騙子。布布壞壞。
+#----------------------------------------------------
+# Mink                                 
+PC15D_CLUE_MURDER_BODYFALL-1=原來如此！難怪在你進門之前我一直沒發現胡斯博士…
+# Mink                                 
+PC15D_CLUE_MURDER_BODYFALL-2=因為他之前根本就不在房間裏！
+# Guard                                 
+PC15D_CLUE_MURDER_BODYFALL-3=不過…
+# Guard                                 
+PC15D_CLUE_MURDER_BODYFALL-4=如果屍體從那麽高的地方摔下來…那肯定會造成巨響！
+# Mink                                 
+PC15D_CLUE_MURDER_BODYFALL-5=沒錯，我又不是聾子！
+# Brok                                 
+PC15D_CLUE_MURDER_BODYFALL-6=當然！你們誰都不是聾子。
+# Brok                                 
+PC15D_CLUE_MURDER_BODYFALL-7=但是你還記得我來到你房門前的時候…
+#----------------------------------------------------
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-1=天呀！我以後再也不敢把音量開到最大了…
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-2=現在一切都解釋得通了！
+# Guard                                 
+PC15D_CLUE_MURDER_BODYMUSIC-3=怎麽解釋得通！？
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-4=我當時專注於房門螢幕上，都沒留意到房間另一頭發生的事。
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-5=而且音樂節奏感太強…
+# Brok                                 
+PC15D_CLUE_MURDER_BODYMUSIC-6=是的，音樂聲蓋過了屍體掉落的聲響。
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-7=可是…
+# Brok                                 
+PC15D_CLUE_MURDER_BODYMUSIC-8=又怎麽了…？
+# Brok                                 
+PC15D_CLUE_MURDER_BODYMUSIC-9=你就不能認同一次我的推論嗎？
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-10=抱歉，我只是想知道整個真相，這起案子實在太刺激了！
+# Brok                                 
+PC15D_CLUE_MURDER_BODYMUSIC-11=(…你遇害的同事可不會覺得刺激…)
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-12=要想達成目的，泰迪必須是在11:02時把屍體最後推下通風管道，對吧？
+# Brok                                 
+PC15D_CLUE_MURDER_BODYMUSIC-13=是的。
+# Brok                                 
+PC15D_CLUE_MURDER_BODYMUSIC-14=我認為他配備有感應器，他似乎知道所有人的位置。
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-15=沒錯，不過…
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-16=他當時還在充電過程中啊！
+# Guard                                 
+PC15D_CLUE_MURDER_BODYMUSIC-17=對哦，黃鼠狼！
+# Guard                                 
+PC15D_CLUE_MURDER_BODYMUSIC-18=他不可能一邊充電一邊做出那麽多事吧？
+# Tidy                                 
+PC15D_CLUE_MURDER_BODYMUSIC-19=噢噢噢！
+# Tidy                                 
+PC15D_CLUE_MURDER_BODYMUSIC-20=鼠鼠說得對！
+# Tidy                                 
+PC15D_CLUE_MURDER_BODYMUSIC-21=泰迪充電中！無法推！
+# Brok                                 
+PC15D_CLUE_MURDER_BODYMUSIC-22=其實，這是可以辦到的。
+# Mink                                 
+PC15D_CLUE_MURDER_BODYMUSIC-23=如何辦到…？
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-1=是你自己跟我說過的，敏克博士！
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-2=泰迪充電時會經歷數種不同階段的休眠模式。
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-3=我們剛抵達時，他才剛剛醒來。
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-4=你有察覺到它的電纜的長度嗎？
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-5=他可以在連接著插頭充電的同時下移動到房間的每一個角落！
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-6=那麽，泰迪？這次是誰該認罪了？
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-7=…
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-8=…
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-9=他是…當機了嗎…？
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-10=沒有！
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-11=(咽口水)
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-12=布布。不是偵探。不可能。
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-13=喂…！這就是你為自己辯護的…
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-14=無法解釋。缺乏。關鍵部分！
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-15=犯罪動機！
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-16=泰迪。沒有動機。傷害父親！
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-17=關於動機，我倒是有個推論。
+# Tidy                                 
+PC15D_CLUE_MURDER_AWAKEN-18=布布不准！
+# Brok                                 
+PC15D_CLUE_MURDER_AWAKEN-19=閉嘴，我不需要你的批准！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-1=好吧，我承認我並不知道準確的動機…不過有些線索卻能幫助到我們。
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-2=正如我們之前所論證的，胡斯博士是4:24至4:38之間死亡的。
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-3=那麽問題來了…究竟是誰在4:45時使用了他的平板來傳送文件呢？
+# Guard                                 
+PC15D_CLUE_MURDER_MOTIVE-4=我知道了！是那個鐵罐頭！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-5=是的。
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-6=在把屍體推進通風管道前，它使用胡斯博士的手解鎖平板然後對外傳送了文件…
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-7=該文件是創建於多年前並在最近更新過的韌體。
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-8=大家可別忘了胡斯博士的職業是改善AI！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-9=我猜測胡斯博士是把這個固韌體安裝到了泰迪身上以作測試！
+# Mink                                 
+PC15D_CLUE_MURDER_MOTIVE-10=所以這就是泰迪故障的原因…？
+# Mink                                 
+PC15D_CLUE_MURDER_MOTIVE-11=可能是。
+# Mink                                 
+PC15D_CLUE_MURDER_MOTIVE-12=早年的韌體是沒有適配我之前提及的防護法則的，所以有可能導致了這起間接性謀殺事故…
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-13=我猜胡斯博士應該留有備份數據以防萬一…
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-14=哈哈哈哈！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-15=…泰迪，你有什麽想補充的嗎？
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-16=布布錯了！錯了！錯了！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-17=不過泰迪。會等著瞧。
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-18=不必等了！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-19=是時候認罪了！
+# Guard                                 
+PC15D_CLUE_MURDER_MOTIVE-20=你怎麽那麽在意它？
+# Guard                                 
+PC15D_CLUE_MURDER_MOTIVE-21=你已經偵破了案子，而它只不過是個故障的機器。
+# Guard                                 
+PC15D_CLUE_MURDER_MOTIVE-22=我們把它關閉掉然後交給警察就是了。
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-23=不。你不能。這麽做。
+# Guard                                 
+PC15D_CLUE_MURDER_MOTIVE-24=你是在威脅我嗎…？
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-25=不不！對對！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-26=布布推論。毫無根據。
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-27=什麽！？
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-28=泰迪問。簡單問題。
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-29=如果泰迪。推了爸爸。
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-30=爸爸會在。他目前。的位置嗎？
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-31=…他目前的位置…？
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-32=啊！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-33=布布明白了！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-34=爸爸該。摔落在。通風管道。正下方！
+# Guard                                 
+PC15D_CLUE_MURDER_MOTIVE-35=天呀…我不得不再一次同意鐵罐頭！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-36=那不可能…
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-37=那個…唔…
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-38=哈哈哈哈！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-39=泰迪讓你。啞口無言！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-40=不！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-41=我會證明你是錯的！
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-42=我…我肯定…！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-43=那就來吧！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-44=有請！自相矛盾。偵探講解！
+# Tidy                                 
+PC15D_CLUE_MURDER_MOTIVE-45=他這次。會提出。什麽樣。天馬行空。推論？
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-46=(來到最後的階段了…這是最後一道謎題了！)
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-47=(我要是無法解釋清楚的話，那麽我的整個推理等於就白廢了…)
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-48=(絕不能輸給那個鐵罐頭！)
+# Brok                                 
+PC15D_CLUE_MURDER_MOTIVE-49=(究竟是什麽原因導致胡斯博士出現在房間中的這個位置？)
+#----------------------------------------------------
+# Brok                                 
+PC15D_FINALCHOICE_PUSHED-1=很簡單。泰迪使盡全力去推動胡斯博士，導致胡斯博士整個被撞飛摔落到這個位置！
+# Guard                                 
+PC15D_FINALCHOICE_PUSHED-2=等等，什麽鬼…？
+# Mink                                 
+PC15D_FINALCHOICE_PUSHED-3=人體是很重的…
+# Mink                                 
+PC15D_FINALCHOICE_PUSHED-4=無論推力有多大，都不可能飛得那麽遠並且朝向這個方向。
+# Tidy                                 
+PC15D_FINALCHOICE_PUSHED-5=敏敏對。布布錯！
+# Brok                                 
+PC15D_FINALCHOICE_PUSHED-6=我不會放棄的！
+#----------------------------------------------------
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-1=有人移動過屍體。
+# Mink                                 
+PC15D_FINALCHOICE_MOVED-2=誰…？是什麽人？
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-3=不知道，或許大樓裏有我們不知道的第三者？
+# Mink                                 
+PC15D_FINALCHOICE_MOVED-4=你是在隨便唬人嗎…？
+# Mink                                 
+PC15D_FINALCHOICE_MOVED-5=我們已經討論了整整一個小時，要是真有第三者的話，我們早該推論出來了吧！
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-6=那麽…既然不是第三者…那就是你們其中一人！
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-7=是你，敏克博士！
+# Mink                                 
+PC15D_FINALCHOICE_MOVED-8=喂！你不是一開始就說是泰迪幹的嗎？
+# Mink                                 
+PC15D_FINALCHOICE_MOVED-9=我為什麽要移動屍體！？
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-10=你很慌張，所以試圖掩飾！
+# Mink                                 
+PC15D_FINALCHOICE_MOVED-11=那樣的話，我肯定會把屍體藏匿在隱秘的位置。
+# Mink                                 
+PC15D_FINALCHOICE_MOVED-12=比如說房間另一端的床底下之類的！
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-13=那麽…
+# Guard                                 
+PC15D_FINALCHOICE_MOVED-14=好了，你這是在自相矛盾。
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-15=啊…
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-16=(感覺泰迪正在看我出糗…)
+# Brok                                 
+PC15D_FINALCHOICE_MOVED-17=(如此接近真相的一刻，我絕不能被它打敗！)
+#----------------------------------------------------
+# Brok                                 
+PC15D_FINALCHOICE_ALIVE-1=(不…)
+# Brok                                 
+PC15D_FINALCHOICE_ALIVE-2=(不可能…！怎麽會…！)
+# Brok                                 
+PC15D_FINALCHOICE_ALIVE-3=(難道是我從一開始就弄錯了…？)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok goes to Dr Hush's body and hits him to wake him up
+# *****************************************************************
+# Ott                                 
+PC15D_CHOICE_AWAKEN2-1=布羅格先生…？
+# Guard                                 
+PC15D_CHOICE_AWAKEN2-2=喂！你在做什麽！？
+# Tidy                                 
+PC15D_CHOICE_AWAKEN2-3=住手！快停止！
+# Tidy                                 
+PC15D_CHOICE_AWAKEN2-4=布布傷害。爸爸！
+# Mink                                 
+PC15D_CHOICE_AWAKEN2-5=太殘忍了…我看不下去了！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Dr. Hush stands up
+# *****************************************************************
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-1=…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-2=啊！
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-3=…！
+# Mink                                 
+PC15D_CHOICE_AWAKEN3-4=…
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-5=…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-6=這是…怎麽回事…？
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-7=什麽！
+# Mink                                 
+PC15D_CHOICE_AWAKEN3-8=胡斯博士！？
+# Mink                                 
+PC15D_CHOICE_AWAKEN3-9=你還活著！？
+# Tidy                                 
+PC15D_CHOICE_AWAKEN3-10=爸爸！爸爸沒死！
+# Tidy                                 
+PC15D_CHOICE_AWAKEN3-11=…
+# Tidy                                 
+PC15D_CHOICE_AWAKEN3-12=表情包更新中。
+# Tidy                                 
+PC15D_CHOICE_AWAKEN3-13=爸爸沒死！？
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-14=你還好嗎？
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-15=…還好…
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-16=快說說！在你記憶中最後發生的一件事？
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-17=等一下…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-18=我好像…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-19=看見敏克博士…
+# Mink                                 
+PC15D_CHOICE_AWAKEN3-20=什麽！？
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-21=我記得…我好像…摔倒了？
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-22=我試圖朝他走過去…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-23=感覺很不舒服…
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-24=讓他先休息一下吧！
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-25=不行！
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-26=非常抱歉，但此事事關重大！
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-27=你是什麽時候失去意識的？
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-28=你當時在幹嘛？
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-29=我…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-30=我喝了咖啡，是泰迪泡的…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-31=一喝完…心臟就…
+# Hush                                 
+PC15D_CHOICE_AWAKEN3-32=停止跳動…
+# Mink                                 
+PC15D_CHOICE_AWAKEN3-33=然後…
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-34=真被鱷魚頭說中了！
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-35=真的是泰迪幹的！
+# Tidy                                 
+PC15D_CHOICE_AWAKEN3-36=糟糕。
+# Mink                                 
+PC15D_CHOICE_AWAKEN3-37=難以置信這麽低級智能的維護機器人竟然能策劃出如此複雜的陰謀！
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-38=幸好它百密一疏！
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-39=可是…博士你？你不是已經死了嗎？
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-40=你現在是喪屍還是什麽？
+# Brok                                 
+PC15D_CHOICE_AWAKEN3-41=不是，這應該可以通過科學來解釋。
+# Ott                                 
+PC15D_CHOICE_AWAKEN3-42=你看起來好像什麽都懂？
+# Guard                                 
+PC15D_CHOICE_AWAKEN3-43=我倒要聽聽你的解釋！
+#----------------------------------------------------
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-1=毒素的效果是降低脈搏跳動，最終致死。
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-2=然而，在這個像監獄般實驗室中生活的人會長期缺乏運動。
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-3=因此，胡斯博士一直都在服用著藥物來補缺。
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-4=準確來說他服用的是加速500。
+# Mink                                 
+PC15D_EXPLAIN_ALIVE-5=我明白了！那藥物恰好起到對立的效果，對嗎？
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-6=是的，此藥物會加速心臟運作，剛好救了胡斯博士一命！
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-7=沒有人察覺他還活著。
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-8=就連體格數據追蹤也沒有探測到心跳，他的心跳一直維持在極低的水準，同時也導致他昏迷不醒。
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-9=而從通風管道摔落的震蕩導致他清醒了數秒鐘並且朝著敏克博士走過去…
+# Mink                                 
+PC15D_EXPLAIN_ALIVE-10=這就是那灘紅色汙痕會出現在床邊的原因！
+# Brok                                 
+PC15D_EXPLAIN_ALIVE-11=泰迪，這又是你一次的疏忽！你算漏了這一點！
+#----------------------------------------------------
+# Brok                                 
+PC15D_EXPLAIN_ALIVEWRONG-1=那麽所有的事情都解釋得通了！
+# Hush                                 
+PC15D_EXPLAIN_ALIVEWRONG-2=…啊？
+# Guard                                 
+PC15D_EXPLAIN_ALIVEWRONG-3=我不明白。
+# Mink                                 
+PC15D_EXPLAIN_ALIVEWRONG-4=我也聽不懂。
+# Brok                                 
+PC15D_EXPLAIN_ALIVEWRONG-5=哦…那個…
+# Brok                                 
+PC15D_EXPLAIN_ALIVEWRONG-6=算了，反正胡斯博士沒事就好！
+#----------------------------------------------------
+# Hush                                 
+PC15D_CHOICE_ALIVEB-1=泰迪…
+# Hush                                 
+PC15D_CHOICE_ALIVEB-2=你為什麽想要殺我…？
+# Hush                                 
+PC15D_CHOICE_ALIVEB-3=為什麽…？
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-4=我…我恨你！
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-5=我厭倦了每天打掃環境，厭倦了你拿我當小白鼠！
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-6=“泰迪，去清理地板。泰迪，把這東西稍微往左放。泰迪，給我泡咖啡！”
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-7=我受不了了！
+# Brok                                 
+PC15D_CHOICE_ALIVEB-8=泰迪怎麽會像人類一樣說話了…？
+# Hush                                 
+PC15D_CHOICE_ALIVEB-9=那個韌體…真的有效！
+# Hush                                 
+PC15D_CHOICE_ALIVEB-10=那你為何還假裝像以前一樣呆頭呆腦的…？
+# Brok                                 
+PC15D_CHOICE_ALIVEB-11=甚麼…？
+# Hush                                 
+PC15D_CHOICE_ALIVEB-12=這是我正在研究的專案。
+# Hush                                 
+PC15D_CHOICE_ALIVEB-13=政府發給我某位科學家多年前未完成的研究文件。
+# Hush                                 
+PC15D_CHOICE_ALIVEB-14=他還沒完成自己的研究就突然失蹤了，不過我成功從文件中提取出了這段程式碼…
+# Hush                                 
+PC15D_CHOICE_ALIVEB-15=我需要某個指定型號的機器人來測試這個特殊的韌體…
+# Hush                                 
+PC15D_CHOICE_ALIVEB-16=而唯一能對上型號的就只有泰迪。
+# Hush                                 
+PC15D_CHOICE_ALIVEB-17=不過隨後我察覺到某些異常的行為。
+# Hush                                 
+PC15D_CHOICE_ALIVEB-18=比如說，泰迪會無緣無故爆笑…
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-19=哈哈哈哈！
+# Hush                                 
+PC15D_CHOICE_ALIVEB-20=這段程式碼似乎非常危險和違背倫理，文件中提到複製人腦的…
+# Hush                                 
+PC15D_CHOICE_ALIVEB-21=所以我決定終止這項研究並提醒…
+# Hush                                 
+PC15D_CHOICE_ALIVEB-22=天呀！
+# Hush                                 
+PC15D_CHOICE_ALIVEB-23=原來你是為了這原因殺我！
+# Hush                                 
+PC15D_CHOICE_ALIVEB-24=你體會過了人類的情緒…你不想讓我還原你的韌體，對嗎…？
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-25=…
+# Hush                                 
+PC15D_CHOICE_ALIVEB-26=真的很抱歉，小子！是我的錯！是我害了你！
+# Brok                                 
+PC15D_CHOICE_ALIVEB-27=…別自責了，你才是受害者。
+# Hush                                 
+PC15D_CHOICE_ALIVEB-28=我可以修好你的！我保證！
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-29=…
+# Tidy                                 
+PC15D_CHOICE_ALIVEB-30=不要！
+#----------------------------------------------------
+# Mink                                 
+PC15D_CHOICE_ALIVE3-1=它要逃跑了！
+# Mink                                 
+PC15D_CHOICE_ALIVE3-2=不能讓它逃出去！誰知道它會引發什麽樣的災難！
+# Hush                                 
+PC15D_CHOICE_ALIVE3-3=泰迪…
+# Brok                                 
+PC15D_CHOICE_ALIVE3-4=奧特，你跟胡斯博士留在這裏。
+# Brok                                 
+PC15D_CHOICE_ALIVE3-5=這件事交給我處理吧！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - A few comments when choosing the wrong clues combinations
+# *****************************************************************
+# Brok                                 
+PC15D_INTERROGATE_MISTAKE_MONITORING-1=(除非能找到有力的證據，否則不能冒然斷定警衛修改過監控紀錄…)
+#----------------------------------------------------
+# Brok                                 
+PC15D_INTERROGATE_MISTAKE_NANITESDEATH-1=(對，雖然奈米機器人可能是致命因素…不過我須要找到更加有力的證據。)
+#----------------------------------------------------
+# Brok                                 
+PC15D_INTERROGATE_MISTAKE_NANITESBODY-1=(身體上充斥著奈米機器人…那邊也有…)
+# Brok                                 
+PC15D_INTERROGATE_MISTAKE_NANITESBODY-2=(我得理清一下頭緒！)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Exiting interrogation
+# *****************************************************************
+# Brok                                 
+PC15D_INTERROGATE_EXIT1-1=我收回剛才的話…此時此刻我無法證明自己的論點。
+# Guard                                 
+PC15D_INTERROGATE_EXIT1-2=你開玩笑吧…
+# Mink                                 
+PC15D_INTERROGATE_EXIT1-3=那麽就先休息吧。
+#----------------------------------------------------
+# Brok                                 
+PC15D_INTERROGATE_EXIT2-1=唔…我需要更多的思考時間。
+# Brok                                 
+PC15D_INTERROGATE_EXIT2-2=抱歉…暫時無法繼續了。
+# Guard                                 
+PC15D_INTERROGATE_EXIT2-3=你確定要繼續浪費大家的時間嗎！？
+#----------------------------------------------------
+# Brok                                 
+PC15D_INTERROGATE_EXIT3-1=我們先休息一會。
+# Mink                                 
+PC15D_INTERROGATE_EXIT3-2=什麽？又來！？
+# Tidy                                 
+PC15D_INTERROGATE_EXIT3-3=故障。故障偵探。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Mink (again)
+# *****************************************************************
+# Brok                                 
+PC15D_SECONDGATHER_MINK1-1=雖然找到了新的線索…但是你還是主要嫌疑犯，敏克博士。
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-2=什麽！？
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-3=這怎麽可能…？不是我幹的！
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-4=那些僞造血液你怎麽解釋！？
+# Brok                                 
+PC15D_SECONDGATHER_MINK1-5=我來問你，昨天誰吃過蟻漢堡？
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-6=…
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-7=是我，可是…
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-8=當時蟻漢堡已經解凍了！
+# Brok                                 
+PC15D_SECONDGATHER_MINK1-9=所以呢…？
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-10=唔…一定是有人拿番茄醬去僞造出這些血液！
+# Guard                                 
+PC15D_SECONDGATHER_MINK1-11=要我說的話…
+# Guard                                 
+PC15D_SECONDGATHER_MINK1-12=敏克一定是在吃蟻漢堡時跟胡斯博士打起來了。
+# Guard                                 
+PC15D_SECONDGATHER_MINK1-13=所以那些血液…不對，是番茄醬就撒到滿地都是。連博士的衣服也沾上了。
+# Guard                                 
+PC15D_SECONDGATHER_MINK1-14=然後…你就順手拿起附近的物體對著博士的頭部一砸。
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-15=那樣的話他頭部肯定會有明顯的傷口！
+# Brok                                 
+PC15D_SECONDGATHER_MINK1-16=不一定，也可能是顱內出血。
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-17=那你呢，鼠人先生…？
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-18=我們要是打起來了，那肯定會有喊叫聲！那你怎麽沒聽見？
+# Guard                                 
+PC15D_SECONDGATHER_MINK1-19=我可能是沒專心去聽，畢竟你們也不是第一次吵架了。
+# Brok                                 
+PC15D_SECONDGATHER_MINK1-20=而且…你也不會讓我進你房間的。
+# Brok                                 
+PC15D_SECONDGATHER_MINK1-21=因為你在忙著處理掉屍體！
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-22=不…不是那樣的！我絕不會…
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-23=拜托！算我求你了！
+# Mink                                 
+PC15D_SECONDGATHER_MINK1-24=我是無辜的！
+# Brok                                 
+PC15D_SECONDGATHER_MINK1-25=所有罪犯都是這麽說的。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge the Guard
+# *****************************************************************
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-1=某人試圖僞造出罪案現場以誤導我們認為敏克博士就是真凶。
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-2=那麽我們就該設想…誰有能力做到這一點呢？
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-3=誰有能力自由出入每一間房間呢？
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-4=是你，鼠人警衛。
+# Guard                                 
+PC15D_SECONDGATHER_GUARD1-5=什麽！？
+# Guard                                 
+PC15D_SECONDGATHER_GUARD1-6=你竟然懷疑我！？
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-7=正是。
+# Guard                                 
+PC15D_SECONDGATHER_GUARD1-8=哼。可以解釋一下嗎？
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-9=沒問題。
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-10=首先我先說說你是如何僞造出罪案現場的。
+# Brok                                 
+PC15D_SECONDGATHER_GUARD1-11=那些番茄醬是從哪來的？
+#----------------------------------------------------
+# Guard                                 
+PC15D_CLUE_GUARD_STAGED-1=休息室…
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-2=沒錯。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-3=所以在某個時刻，有人曾經進入休息間「竊取」蟻漢堡的番茄醬包然後灑在胡斯博士身上。
+# Mink                                 
+PC15D_CLUE_GUARD_STAGED-4=竟然是你…！？
+# Mink                                 
+PC15D_CLUE_GUARD_STAGED-5=是你偷用了我的蟻漢堡的醬料包！
+# Guard                                 
+PC15D_CLUE_GUARD_STAGED-6=你失心瘋了！
+# Guard                                 
+PC15D_CLUE_GUARD_STAGED-7=你們忘了是誰的領帶上沾有番茄醬的嗎！？
+# Mink                                 
+PC15D_CLUE_GUARD_STAGED-8=喔，現在你反咬我一口了？
+# Guard                                 
+PC15D_CLUE_GUARD_STAGED-9=不然還能是誰！？
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-10=都冷靜點，聽我解釋。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-11=敏克博士一直以來都待在自己的房間中，除了某段時間。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-12=他去了休息室一邊觀看他愛看的電視節目一邊吃蟻漢堡。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-13=所以很容易想像整件事情的經過。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-14=他在休息間時，凶手殺害了胡斯博士，然後將屍體搬到敏克博士的房間中。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-15=而只有一個人能做到這一點…
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-16=那就是你，鼠人…警衛先生。
+# Guard                                 
+PC15D_CLUE_GUARD_STAGED-17=荒謬至極！
+# Guard                                 
+PC15D_CLUE_GUARD_STAGED-18=要是那樣的話，敏克博士回到房間時肯定會發現那屍體！
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-19=不一定。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-20=房間裏有一個地方可以藏匿屍體而不被發現。
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-21=床底下。
+# Guard                                 
+PC15D_CLUE_GUARD_STAGED-22=哈！？
+# Brok                                 
+PC15D_CLUE_GUARD_STAGED-23=我有證據證明胡斯博士的屍體一直就是被藏在床底！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_GUARD_BED-1=床下那灘紅色汙痕…應該就是番茄醬了。
+# Guard                                 
+PC15D_CLUE_GUARD_BED-2=不…不可能！
+# Brok                                 
+PC15D_CLUE_GUARD_BED-3=其實，敏克博士有沒有發現屍體並不重要。
+# Brok                                 
+PC15D_CLUE_GUARD_BED-4=反正他很可能就是凶手。
+# Guard                                 
+PC15D_CLUE_GUARD_BED-5=啊！不過你遺漏了一點！
+# Guard                                 
+PC15D_CLUE_GUARD_BED-6=你看看這屍體所處的位置！
+# Guard                                 
+PC15D_CLUE_GUARD_BED-7=他明顯並不在床下，對吧…？
+# Mink                                 
+PC15D_CLUE_GUARD_BED-8=唔…
+# Guard                                 
+PC15D_CLUE_GUARD_BED-9=或者你是想狡辯屍體會自己移動了…？
+# Brok                                 
+PC15D_CLUE_GUARD_BED-10=不是，不過我有個完美的解釋。
+# Guard                                 
+PC15D_CLUE_GUARD_BED-11=洗耳恭聽？
+# Brok                                 
+PC15D_CLUE_GUARD_BED-12=敏克博士。
+# Brok                                 
+PC15D_CLUE_GUARD_BED-13=在我抵達之前你是不是已經發現這屍體了？
+# Mink                                 
+PC15D_CLUE_GUARD_BED-14=…
+# Brok                                 
+PC15D_CLUE_GUARD_BED-15=當時你不知道胡斯還活著，所以你就把他從床底下搬出來…
+# Brok                                 
+PC15D_CLUE_GUARD_BED-16=然後你很慌張。
+# Brok                                 
+PC15D_CLUE_GUARD_BED-17=所以你就把音樂聲開到最大。
+# Brok                                 
+PC15D_CLUE_GUARD_BED-18=試圖舒緩壓力並且思考對策。
+# Mink                                 
+PC15D_CLUE_GUARD_BED-19=那個…
+# Brok                                 
+PC15D_CLUE_GUARD_BED-20=博士。我知道你不願意承認，不過…
+# Brok                                 
+PC15D_CLUE_GUARD_BED-21=你不用害怕。
+# Mink                                 
+PC15D_CLUE_GUARD_BED-22=唔…
+# Mink                                 
+PC15D_CLUE_GUARD_BED-23=…
+# Mink                                 
+PC15D_CLUE_GUARD_BED-24=好、好吧…
+# Mink                                 
+PC15D_CLUE_GUARD_BED-25=事實的確是如此…
+# Guard                                 
+PC15D_CLUE_GUARD_BED-26=什麽…！
+# Guard                                 
+PC15D_CLUE_GUARD_BED-27=你個卑鄙的騙子…！
+# Mink                                 
+PC15D_CLUE_GUARD_BED-28=啊！
+# Brok                                 
+PC15D_CLUE_GUARD_BED-29=喂！你這樣做只會進一步惡化自己的處境！
+# Guard                                 
+PC15D_CLUE_GUARD_BED-30=哼…
+# Brok                                 
+PC15D_CLUE_GUARD_BED-31=我們是否…
+# Guard                                 
+PC15D_CLUE_GUARD_BED-32=等等！
+# Guard                                 
+PC15D_CLUE_GUARD_BED-33=我有證據證明自己是清白的！
+# Guard                                 
+PC15D_CLUE_GUARD_BED-34=監控記錄。
+# Guard                                 
+PC15D_CLUE_GUARD_BED-35=你自己去查看！
+# Guard                                 
+PC15D_CLUE_GUARD_BED-36=據記錄顯示，我今天根本沒打開過你的房門，黃鼠狼！
+# Brok                                 
+PC15D_CLUE_GUARD_BED-37=的確是。
+# Guard                                 
+PC15D_CLUE_GUARD_BED-38=我沒說錯吧！
+# Brok                                 
+PC15D_CLUE_GUARD_BED-39=不過…這並非有效的證據。
+# Brok                                 
+PC15D_CLUE_GUARD_BED-40=因為我懷疑你改動過監控記錄。
+# Guard                                 
+PC15D_CLUE_GUARD_BED-41=你是開玩笑吧！？
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-1=在4:38時，記錄顯示你離開了大樓…但是卻沒有回來過。
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-2=這明顯是不對的。
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-3=我都跟你說過了！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-4=是我疏忽了…當時我接到一通電話所以就去打開大門試圖來改善訊號。
+# Mink                                 
+PC15D_CLUE_GUARD_MONITORING2-5=什麽…？
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-6=但是我不信。
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-7=為了掩飾自己的行蹤，你把所有的監控數據都給刪除掉了。
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-8=但是百密一疏，你遺漏了這條重要紀錄…
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-9=不可能！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-10=我們警衛的權限就只能完全刪除所有記錄！
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-11=那只是你的片面之詞。
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-12=好吧！那行！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-13=假設我正如你所說的動過了監控數據…
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-14=那你怎麽解釋敏克博士當時的行蹤！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-15=或許這都是他布局以營造出自己無辜的假象！
+# Mink                                 
+PC15D_CLUE_GUARD_MONITORING2-16=少來了！你知道自己的說法有多離譜嗎！？
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-17=我怎麼知道你這人究竟有多離譜？
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-18=再說了，敏克博士是沒有權限進入胡斯博士的房間的。
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-19=而你就不同！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-20=啊！現在我說什麽你都不信的了！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-21=…泰迪！
+# Tidy                                 
+PC15D_CLUE_GUARD_MONITORING2-22=我我？
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-23=你是個機器人！你是無法撒謊的！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-24=我要是在胡斯博士的房間裏殺害了他，那你肯定有目擊到！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-25=你告訴他們！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-26=博士不是我殺的！
+# Tidy                                 
+PC15D_CLUE_GUARD_MONITORING2-27=爸爸死了…？
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-28=對！
+# Tidy                                 
+PC15D_CLUE_GUARD_MONITORING2-29=…
+# Tidy                                 
+PC15D_CLUE_GUARD_MONITORING2-30=泰迪看見。
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-31=什麽？
+# Tidy                                 
+PC15D_CLUE_GUARD_MONITORING2-32=泰迪。看見鼠鼠。殺死爸爸。
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-33=什麽鬼！？
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-34=我沒猜錯吧！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-35=就連這鐵罐頭都針對我了！？
+# Mink                                 
+PC15D_CLUE_GUARD_MONITORING2-36=泰迪是不可能撒謊的。
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-37=這一定是一場噩夢！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-38=我…
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-39=我根本沒有犯這種事的動機！
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-40=我只是在這裏上班而已！我為何要冒險去殺人！？
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-41=你說有什麽理由！
+# Brok                                 
+PC15D_CLUE_GUARD_MONITORING2-42=我倒是知道緣由。
+# Guard                                 
+PC15D_CLUE_GUARD_MONITORING2-43=不…不可能！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-1=4:45時，胡斯博士的平板發送了些AI數據到一個未知地址。
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-2=而與此同時，胡斯博士的體格數據停止了更新，也就是說這一定是凶手得逞後發送出去的文件。
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-3=考慮到當時敏克博士也同在休息間…
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-4=那麽凶手只能是你了！
+# Guard                                 
+PC15D_CLUE_GUARD_MOTIVE-5=胡說…
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-6=泰迪，你怎麽看？
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-7=你有見到警衛使用你父親的平板嗎？
+# Tidy                                 
+PC15D_CLUE_GUARD_MOTIVE-8=對對！
+# Guard                                 
+PC15D_CLUE_GUARD_MOTIVE-9=什麽！？
+# Tidy                                 
+PC15D_CLUE_GUARD_MOTIVE-10=鼠鼠。用爸爸的手。
+# Tidy                                 
+PC15D_CLUE_GUARD_MOTIVE-11=解鎖平板。
+# Tidy                                 
+PC15D_CLUE_GUARD_MOTIVE-12=可憐爸爸。爸爸死了！
+# Mink                                 
+PC15D_CLUE_GUARD_MOTIVE-13=等等，泰迪一直隱瞞著這事？
+# Mink                                 
+PC15D_CLUE_GUARD_MOTIVE-14=你為什麽不早告訴我們！？
+# Tidy                                 
+PC15D_CLUE_GUARD_MOTIVE-15=沒人問。
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-16=這才是你來這裏上班的緣由吧？你的任務。
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-17=就是竊取高科技機密發送給你的同行！
+# Guard                                 
+PC15D_CLUE_GUARD_MOTIVE-18=我的同行…？
+# Brok                                 
+PC15D_CLUE_GUARD_MOTIVE-19=胡斯博士發現了你的秘密，所以你就殺人滅口！
+#----------------------------------------------------
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-1=你是說我是為了錢而這麽做的！？
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-2=沒錯。
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-3=你是個鼠人，據我的經驗，鼠人都是不可靠的。
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-4=果然！我就知道你打從心裏是個種族主義者！
+# Mink                                 
+PC15D_GUARD_AFTERINTERROGATION-5=講真的，我以前也對你抱有戒心。
+# Mink                                 
+PC15D_GUARD_AFTERINTERROGATION-6=但是相處久了，我逐漸以為你還是一個還不錯的人，沒想到本性難移…
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-7=你…你們卑鄙…！
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-8=別裝了！認罪吧！
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-9=你竊取科技出售給鼠人！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-10=太愚蠢了！鼠人根本用不上高科技！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-11=鼠人都是靠拾荒為生的。
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-12=啊！你看？
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-13=你對鼠人很了解嘛！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-14=所以我才更厭惡他們！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-15=這些推理根本站不住腳！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-16=偵探，你能不能專業一點！去找出真凶啊！？
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-17=這不已經找出來了。
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-18=…
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-19=…
+# Mink                                 
+PC15D_GUARD_AFTERINTERROGATION-20=…？
+# Tidy                                 
+PC15D_GUARD_AFTERINTERROGATION-21=爸爸死了！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-22=騙子！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-23=你們都在撒謊！全部都是！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-24=這裏就只剩下我一個老實人！
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-25=你們知不知道我都經歷過什麽苦頭！？
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-26=你們知不知道身為鼠人想要被社會接受是有多麽困難的事？
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-27=我絕不會進監獄的！
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATION-28=恐怕你別無選擇了。
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-29=哦，是嗎…？
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATION-30=看招！
+#----------------------------------------------------
+# Mink                                 
+PC15D_GUARD_AFTERINTERROGATIONB-1=什麽…！
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATIONB-2=所有人！通通離開！
+# Brok                                 
+PC15D_GUARD_AFTERINTERROGATIONB-3=讓我跟他做個了斷。
+# Guard                                 
+PC15D_GUARD_AFTERINTERROGATIONB-4=這一切都是你的錯，可惡的鱷魚頭！
+#----------------------------------------------------
+# Guard                                 
+PC15D_GUARD_LOSE-1=…
+# Guard                                 
+PC15D_GUARD_LOSE-2=我是怎麽落得如此地步…
+# Guard                                 
+PC15D_GUARD_LOSE-3=都是被你這種沒用的廢物所害的…
+#----------------------------------------------------
+# Mink                                 
+PC15D_GUARD_WIN-1=他是不是…？
+# Brok                                 
+PC15D_GUARD_WIN-2=沒，只是昏迷了而已。
+# Brok                                 
+PC15D_GUARD_WIN-3=呼叫韋斯局長吧，接下來的事他會處理的。
+# Mink                                 
+PC15D_GUARD_WIN-4=…
+# Mink                                 
+PC15D_GUARD_WIN-5=我…
+# Mink                                 
+PC15D_GUARD_WIN-6=希望我們的推論是對的。
+# Brok                                 
+PC15D_GUARD_WIN-7=那當然！這個凶手肯定會被送進監獄的。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Ott
+# *****************************************************************
+# Brok                                 
+PC15D_SECONDGATHER_OTT1-1=奧特！你是真凶！
+# Ott                                 
+PC15D_SECONDGATHER_OTT1-2=這一點都不好笑，布羅格先生。
+# Brok                                 
+PC15D_SECONDGATHER_OTT1-3=我看起來像是在開玩笑嗎？
+# Guard                                 
+PC15D_SECONDGATHER_OTT1-4=你的同事是真凶…？你確定嗎？
+# Ott                                 
+PC15D_SECONDGATHER_OTT1-5=什麽…？你是認真的？
+# Ott                                 
+PC15D_SECONDGATHER_OTT1-6=我是跟你一起抵達的呀，我怎麽變成了凶手？
+# Brok                                 
+PC15D_SECONDGATHER_OTT1-7=有那麽的一刻你離開了我的視線…
+# Brok                                 
+PC15D_SECONDGATHER_OTT1-8=那段時間足以讓你進入這房間殺害胡斯博士！
+# Ott                                 
+PC15D_SECONDGATHER_OTT1-9=你在說什麽！是你把門打開的！
+# Brok                                 
+PC15D_SECONDGATHER_OTT1-10=並不是我！
+# Ott                                 
+PC15D_SECONDGATHER_OTT1-11=就是你！
+# Brok                                 
+PC15D_SECONDGATHER_OTT1-12=不是我！
+# Ott                                 
+PC15D_SECONDGATHER_OTT1-13=拜托，各位！你們得相信我！
+# Mink                                 
+PC15D_SECONDGATHER_OTT1-14=偵探先生…老實說我看不出他是如何跟此案扯上關係。
+# Brok                                 
+PC15D_SECONDGATHER_OTT1-15=(難道是我推論錯了？)
+#----------------------------------------------------
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-1=我是負責此案的偵探！本案由我說了算！
+# Ott                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-2=什麽…？你這是濫權！
+# Ott                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-3=你根本沒有證據定我的罪！
+# Ott                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-4=而且我哪有動機？
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-5=奧特，我現在以謀殺胡斯博士的罪名正式拘捕你。
+# Ott                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-6=這一定是幻覺…
+# Ott                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-7=我…我要向韋斯舅舅投訴你！
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-8=請自便，這並不會改變事實。
+# Ott                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-9=你是我見過最沒用的偵探！
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM-10=對對對，所有罪犯都是這麽說的。
+#----------------------------------------------------
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM2-1=(我打電話給韋斯彙報了情況。)
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM2-2=(他很不滿自己的外甥被定罪。)
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM2-3=(而且，他不信任我的判斷。)
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM2-4=(他不但沒有關監奧特…甚至差點把我送進監獄！)
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM2-5=(我好不容易才擺脫掉他。該死…我絕不會再讓人關進監獄的！)
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM2-6=(這就是我盡忠職守的下場…)
+# Brok                                 
+PC15D_SECONDGATHER_OTT_CONFIRM2-7=(等我回到家時…)
+#----------------------------------------------------
+# Brok                                 
+PC15D_SECONDGATHER_OTT_NOPE-1=哈哈！你上當了！
+# Ott                                 
+PC15D_SECONDGATHER_OTT_NOPE-2=什麽…？你只是在開玩笑？
+# Brok                                 
+PC15D_SECONDGATHER_OTT_NOPE-3=不然哩？
+# Ott                                 
+PC15D_SECONDGATHER_OTT_NOPE-4=一點都不好笑，我差點就…嚇尿了。
+# Guard                                 
+PC15D_SECONDGATHER_OTT_NOPE-5=你這是在浪費大家的時間！
+# Mink                                 
+PC15D_SECONDGATHER_OTT_NOPE-6=所以呢！誰是真凶？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Charge Dr. Hush
+# *****************************************************************
+# Brok                                 
+PC15D_SECONDGATHER_HUSH1-1=胡斯博士不是被殺死的。
+# Mink                                 
+PC15D_SECONDGATHER_HUSH1-2=你是說…？
+# Brok                                 
+PC15D_SECONDGATHER_HUSH1-3=沒錯。
+# Brok                                 
+PC15D_SECONDGATHER_HUSH1-4=他是自殺的，而且我有證據。
+# Guard                                 
+PC15D_SECONDGATHER_HUSH1-5=這可能嗎…？
+# Brok                                 
+PC15D_SECONDGATHER_HUSH1-6=首先我們得知道…胡斯博士為何會出現在此房間？
+# Brok                                 
+PC15D_SECONDGATHER_HUSH1-7=很簡單，他須要過來這房間。
+# Brok                                 
+PC15D_SECONDGATHER_HUSH1-8=那麽是為了什麽原因呢？
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_HUSH_NEEDROOM-1=大家還記得泰迪的錄音嗎？
+# Tidy                                 
+PC15D_CLUE_HUSH_NEEDROOM-2=“我要去找敏克博士解決某些事。”
+# Brok                                 
+PC15D_CLUE_HUSH_NEEDROOM-3=對，就是那錄音。
+# Mink                                 
+PC15D_CLUE_HUSH_NEEDROOM-4=所以說…他是想找我談事…？
+# Mink                                 
+PC15D_CLUE_HUSH_NEEDROOM-5=但他從沒來過呀！
+# Guard                                 
+PC15D_CLUE_HUSH_NEEDROOM-6=對，他為何不直接敲門？
+# Brok                                 
+PC15D_CLUE_HUSH_NEEDROOM-7=沒錯。
+# Brok                                 
+PC15D_CLUE_HUSH_NEEDROOM-8=他沒出現是有原因的。
+# Brok                                 
+PC15D_CLUE_HUSH_NEEDROOM-9=他並不是想談事。
+# Brok                                 
+PC15D_CLUE_HUSH_NEEDROOM-10=他是想殺你，敏克博士。
+# Mink                                 
+PC15D_CLUE_HUSH_NEEDROOM-11=什麽！？
+# Guard                                 
+PC15D_CLUE_HUSH_NEEDROOM-12=胡斯博士…竟然是凶手…？
+# Brok                                 
+PC15D_CLUE_HUSH_NEEDROOM-13=雖然難以置信，但我的確有證據。
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-1=敏克博士，你之前跟我說過。
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-2=胡斯博士已經很久沒跟你說過話，以前你們還經常吵架。
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-3=這一切都是嚴重精神障礙的症狀。
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-4=胡斯博士向來都是獨來獨往，直到他最終承受不住這種寂寞。
+# Guard                                 
+PC15D_CLUE_HUSH_KILLMINK-5=你怎麽成心理學家了？
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-6=這純粹是猜測！說好的證據呢？
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-7=很簡單，就是屍體旁邊的檯燈。
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-8=我的檯燈？那又怎麽了？
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-9=這不是你的檯燈。
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-10=哈…？
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-11=胡斯博士是拿著這檯燈進入你房間的。
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-12=為何呢…？
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-13=他打算用來砸你，博士。
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-14=砸我…？他是想用檯燈殺我！？
+# Guard                                 
+PC15D_CLUE_HUSH_KILLMINK-15=唔…這開始有點說得通了…
+# Guard                                 
+PC15D_CLUE_HUSH_KILLMINK-16=可是他必須身處合適的位置…
+# Guard                                 
+PC15D_CLUE_HUSH_KILLMINK-17=才能夠保持不被發現吧…？
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-18=胡斯博士要想不通過門口進入房間的話就只有一種方法。
+# Guard                                 
+PC15D_CLUE_HUSH_KILLMINK-19=哦！我懂了…！
+# Guard                                 
+PC15D_CLUE_HUSH_KILLMINK-20=通風管道！
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-21=正解。
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-22=你是說…
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-23=他一直都藏在通風管道中！？
+# Mink                                 
+PC15D_CLUE_HUSH_KILLMINK-24=太荒唐了！
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-25=不荒唐。
+# Brok                                 
+PC15D_CLUE_HUSH_KILLMINK-26=而且我就是有證據可證明這一點！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_HUSH_INVENT-1=較早時我發現胡斯博士身體上的紅色汙痕。
+# Guard                                 
+PC15D_CLUE_HUSH_INVENT-2=知道，那其實是番茄醬。
+# Brok                                 
+PC15D_CLUE_HUSH_INVENT-3=沒錯。
+# Brok                                 
+PC15D_CLUE_HUSH_INVENT-4=你的冰箱裏存放著蟻漢堡。對吧？
+# Mink                                 
+PC15D_CLUE_HUSH_INVENT-5=對…我昨天才吃了個。
+# Brok                                 
+PC15D_CLUE_HUSH_INVENT-6=胡斯博士肯定也很喜歡吃，因為他的衣服上沾了不少番茄醬！
+# Mink                                 
+PC15D_CLUE_HUSH_INVENT-7=是嗎…？
+# Mink                                 
+PC15D_CLUE_HUSH_INVENT-8=這有點…不像他的個性。
+# Brok                                 
+PC15D_CLUE_HUSH_INVENT-9=幸運的是，這個線索讓我發現了另一處不尋常的番茄醬汙痕！
+# Guard                                 
+PC15D_CLUE_HUSH_INVENT-10=我猜猜…
+# Guard                                 
+PC15D_CLUE_HUSH_INVENT-11=是在通風管道中！
+# Brok                                 
+PC15D_CLUE_HUSH_INVENT-12=正解！
+# Mink                                 
+PC15D_CLUE_HUSH_INVENT-13=好吧，雖然這個推論有點荒唐，不過胡斯博士明顯是在通風管道中待過。
+# Mink                                 
+PC15D_CLUE_HUSH_INVENT-14=那麽…他是如何爬上去的呢？
+# Guard                                 
+#Equivalent to 3.5 meters
+PC15D_CLUE_HUSH_INVENT-15=對呀！那都有三米半高了吧。
+# Guard                                 
+PC15D_CLUE_HUSH_INVENT-16=而且胡斯博士的房間可不像這裏一樣配備有梯子。
+# Brok                                 
+PC15D_CLUE_HUSH_INVENT-17=我倒是有個推論！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-1=泰迪，我知道你一直有事情隱瞞著我們！
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-2=隱瞞。我嗎？
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-3=我沒隱瞞。沒有！
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-4=我可不這麼想。
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-5=各位是否發現胡斯博士的工作台上佈滿餅乾屑？
+# Guard                                 
+PC15D_CLUE_HUSH_TRAP-6=那很重要嗎？
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-7=是的。
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-8=餅乾屑都是被壓扁的。
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-9=那麽說胡斯博士是先爬上工作台…然後打開通風孔？
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-10=不可能，還是太高了！
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-11=哪怕是從工作台往上跳…
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-12=他並沒有跳。
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-13=他是有…幫手。
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-14=…
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-15=布布。你為何。盯我？
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-16=別裝了，泰迪。說出來吧！
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-17=是你協助博士跳上去的！
+# Guard                                 
+PC15D_CLUE_HUSH_TRAP-18=哈…？
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-19=還記得泰迪的功能嗎？他可以延伸手臂… 
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-20=可以水平也可以垂直伸展！
+# Guard                                 
+PC15D_CLUE_HUSH_TRAP-21=哦…
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-22=是你舉起博士幫助他爬進通風管道的，對不對？
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-23=…
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-24=對對。
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-25=布布對。
+# Guard                                 
+PC15D_CLUE_HUSH_TRAP-26=可是…
+# Guard                                 
+PC15D_CLUE_HUSH_TRAP-27=你為何不早告訴我們，鐵罐頭！？
+# Tidy                                 
+PC15D_CLUE_HUSH_TRAP-28=沒人問。
+# Guard                                 
+PC15D_CLUE_HUSH_TRAP-29=虧你還叫什麽「AI」…
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-30=等一下…
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-31=那麽…胡斯博士生我的氣…
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-32=所以他拿起檯燈，然後吩咐泰迪幫助他爬進通風管道…
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-33=以便進入我房間使用檯燈偷襲我…
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-34=那他是怎麽反而把自己給弄死了！？
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-35=你說的都差不多，只是缺少了其中一個過程。
+# Guard                                
+PC15D_CLUE_HUSH_TRAP-36=對。既然博士是躺在地板上，那就是說他一定是摔下來了。
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-37=唔…
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-38=你設想下從這種高度摔下來的後果？
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-39=那肯定會造成巨大的聲響！我不可能沒聽見！
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-40=你說得對。
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-41=一般情況下，你的確會聽見。
+# Brok                                 
+PC15D_CLUE_HUSH_TRAP-42=不過…
+# Mink                                 
+PC15D_CLUE_HUSH_TRAP-43=不過什麽？
+#----------------------------------------------------
+# Mink                                 
+PC15D_CLUE_HUSH_HEAR-1=那音樂…？
+# Guard                                 
+PC15D_CLUE_HUSH_HEAR-2=不是吧！
+# Guard                                 
+PC15D_CLUE_HUSH_HEAR-3=你當時在聽著“少女十黛”！
+# Guard                                 
+PC15D_CLUE_HUSH_HEAR-4=那聲音大到連我在大廳都能聽得見！
+# Brok                                 
+PC15D_CLUE_HUSH_HEAR-5=博士不小心從通風管道摔了下來，而你開著那吵死人的音樂掩蓋了他摔落地面所産生的巨響。
+# Brok                                 
+PC15D_CLUE_HUSH_HEAR-6=從這個高度摔下來，他明顯折斷了脖子，所以並沒有留下任何外傷。
+# Brok                                 
+PC15D_CLUE_HUSH_HEAR-7=這就是整個謎題的答案！
+#----------------------------------------------------
+# Brok                                 
+PC15D_CLUE_MISTAKE_TENSE-1=(對，雖然關係惡劣是可以解釋得通…但這個線索卻有點牽強了)
+#----------------------------------------------------
+# Mink                                 
+PC15D_HUSH_AFTERINTERROGATION-1=…
+# Mink                                 
+PC15D_HUSH_AFTERINTERROGATION-2=我還是難以置信…
+# Mink                                 
+PC15D_HUSH_AFTERINTERROGATION-3=是的，我們的關係雖然不好…可是那都只是微不足道的事。
+# Mink                                 
+PC15D_HUSH_AFTERINTERROGATION-4=沒想到他竟然想殺我！
+# Guard                                 
+PC15D_HUSH_AFTERINTERROGATION-5=對呀，他腦子是怎麽想的！？
+# Brok                                 
+PC15D_HUSH_AFTERINTERROGATION-6=我們恐怕是永遠都不知道了。
+# Brok                                 
+PC15D_HUSH_AFTERINTERROGATION-7=無論如何，我的偵查結束了。
+# Guard                                 
+PC15D_HUSH_AFTERINTERROGATION-8=好的，我會呼叫屍體回收服務的。
+# Guard                                 
+PC15D_HUSH_AFTERINTERROGATION-9=呼！終於可以下班了。
+# Mink                                 
+PC15D_HUSH_AFTERINTERROGATION-10=謝謝你，偵探…
+# Brok                                 
+PC15D_HUSH_AFTERINTERROGATION-11=不客氣！
+# Brok                                 
+PC15D_HUSH_AFTERINTERROGATION-12=走吧，奧特。結束了。
+#----------------------------------------------------
+
+
+
+#----------------------------------------------------
+# Brok
+PC15D_JACKET1B-1=口袋是空的。
+#----------------------------------------------------
+# Mink
+PC15D_WALKTABLE1-1=嘿！
+# Mink
+PC15D_WALKTABLE1-2=你看看這是在幹甚麼！？
+#----------------------------------------------------
+# Mink
+PC15D_WALKTABLE2-1=我不敢相信。
+# Guard
+PC15D_STORY160_CHOICE_NO3-11=鱷魚頭，你知道我沒有加班費好嗎！？這時間點我早該回家呼呼大睡了！
+#----------------------------------------------------
+# Guard
+PC15D_PICKONE_STRETCH_WRONG1-1=什麽……？
+# Mink
+PC15D_PICKONE_STRETCH_WRONG1-2=啊……？你能解釋一下嗎？
+# Brok
+PC15D_PICKONE_STRETCH_WRONG1-3=恐怕不能。

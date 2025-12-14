@@ -1,0 +1,1135 @@
+﻿#-------------------------------
+#=GRAFF - HACKER INSIDE
+#-------------------------------
+#---------------------------------------
+#= Hacker first meet
+#---------------------------------------
+ID=GPC14C_HACKER_FIRST1
+T=What?... Who's that?!
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=SURPRISED
+C3=RJ
+C3A=NORMAL
+CONTEXT=Day 3 - Graff & Ott meet the hacker
+
+T=Kids. To hide here.
+W=RJ
+
+T=Are you insane?!
+W=HACKER
+
+T=Yesterday the croc, now this?!
+W=HACKER
+
+T=Don't make me reconsider hiring you back!
+W=HACKER
+C2A=NORMAL
+TEN=GPC14C_GRAFFAPPROACH
+
+T=Aww... But...
+W=RJ
+C3A=SAD
+TEN=GPC14C_HACKER_FIRST2
+
+
+#---------------------------------------
+ID=GPC14C_HACKER_FIRST_NORJ
+T=What the?...
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=SURPRISED
+COMM=Entering if RJ wasn't there
+
+T=Kids?!
+W=HACKER
+C2A=NORMAL
+
+T=Erm...
+W=GRAFF
+C1A=TURN
+
+T=Tsk. Go play outside.
+W=HACKER
+
+T=I really need to find me some other goon.
+W=HACKER
+TEN=GPC14C_HACKER_FIRST2EV
+
+
+#---------------------------------------
+ID=GPC14C_HACKER_FIRST2
+T=Actually, we came to see you.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=LISTEN
+C3=OTT
+C3A=NORMAL
+
+T=You're a hacker, right?
+W=GRAFF
+C1A=THINK
+
+T=I prefer the term "Skilled programmer bypassing securities."
+W=HACKER
+C2A=NORMAL
+
+T=Wait... How do you know?
+W=HACKER
+C2A=LISTEN
+
+T=Doesn't matter. I need your help.
+W=GRAFF
+C1A=MEH
+
+T=Ha! And you brought your pocket money, huh?
+W=HACKER
+C2A=HAPPY
+
+T=I seriously doubt this will suffice, kiddos!
+W=HACKER
+C2A=NORMAL
+
+T=Go away. You're wasting my precious time.
+W=HACKER
+
+T=No.
+W=GRAFF
+C1A=READY
+
+T=No...?
+W=HACKER
+C2A=LISTEN
+
+T=Listen. We're clients. Right in front of you.
+W=GRAFF
+
+T=What kind of businessman would ignore an easy sale?
+W=GRAFF
+
+T=...
+W=HACKER
+C2A=WORRIED
+
+T=Okay, okay!
+W=HACKER
+C2A=NORMAL
+
+T=Go ahead and tell me all about your lost cuddly toy.
+W=HACKER
+
+T=Argh...
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+#---------------------------------------
+#= The mission
+#---------------------------------------
+ID=GPC14C_HACKER_MISSION1
+T=I need you to hack into the Consciousness Center's dataframe.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=HACKER
+C2A=LISTEN
+C3=OTT
+C3A=NORMAL
+
+T=I see...
+W=HACKER
+
+T=You posted some naughty pics and they've caught you, huh?
+W=HACKER
+C2A=HAPPY
+
+T=No! I just...
+W=GRAFF
+C1A=ANGRY
+
+T=Need to pass my exam.
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC14C_HACKER_MISSION_CHECK
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_BADRESULTS
+T=I had some bad results and...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=HACKER
+C2A=LISTEN
+C3=OTT
+C3A=NORMAL
+SKIPEND=1
+
+T=...you wanna cheat.
+W=HACKER
+C2A=NORMAL
+
+T=No moral lesson, please.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Kids. So predictable.
+W=HACKER
+TEN=GPC14C_HACKER_MISSIONNEXT
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_FORBIDDEN
+T=I had great results! I should have passed if not for...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=HACKER
+C2A=LISTEN
+C3=OTT
+C3A=NORMAL
+
+T=For what?
+W=HACKER
+C2A=LISTEN
+
+T=I thought you wouldn't ask questions.
+W=GRAFF
+
+T=You expect me to do a clean job, don't you?
+W=HACKER
+C2A=NORMAL
+
+T=My old man is a Drumer, which is forbidden.
+W=GRAFF
+C1A=MEH
+
+T=Hmm...
+W=HACKER
+C2A=LISTEN
+TEN=GPC14C_HACKER_MISSIONNEXT
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_MISSIONNEXT
+T=Well, just make sure I pass.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=LISTEN
+C3=OTT
+C3A=NORMAL
+
+T=Hmph...
+W=HACKER
+C2A=NORMAL
+
+T=There are quite a few firewalls and other securities there but...
+W=HACKER
+
+T=That's feasible.
+W=HACKER
+
+T=For 100,000 Unis.
+W=HACKER
+C2A=HAPPY
+
+T=What...?
+W=GRAFF
+C1A=GASP
+
+T=One hundred... Thousand?!
+W=GRAFF
+C1A=SURPRISED
+
+T=I warned you. That's the price for a quality job.
+W=HACKER
+C2A=NORMAL
+
+T=He's a crook.
+W=OTT
+C3A=ALRIGHT
+
+T=Hey, I'm doing a risky job!
+W=HACKER
+
+T=Come on, Graff. Let's find another way.
+W=OTT
+
+T=What other way?!
+W=GRAFF
+C1A=GASP
+
+T=We've explored the possibilities! There's no other solution!
+W=GRAFF
+
+T=But how are you going to get to that kind of money before tonight?
+W=OTT
+C3A=OPPOSITE
+
+T=Let me think.
+W=GRAFF
+C1A=THINK
+
+T=Don't take all day!
+W=HACKER
+
+T=I hate flies buzzing around me while I'm working.
+W=HACKER
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_MISSION2
+T=Will you get me those 100,000 Unis, boy?
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Yeah. But...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Don't even try to negotiate. I've already decided on my price! This amount just about covers the risks.
+W=HACKER
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+# original - I'm already making you a price!
+
+
+
+#---------------------------------------
+#= The croc
+#---------------------------------------
+ID=GPC14C_HACKER_BROK1
+T=Tell me more about the croc from yesterday.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=LISTEN
+C3=OTT
+C3A=NORMAL
+
+T=There are six sacred words in our data world, boy.
+W=HACKER
+C2A=NORMAL
+
+T=Con-Fi-Den-Ti-Ali-Ty.
+W=HACKER
+
+T=That's just one w...
+W=GRAFF
+C1A=OPPOSITE
+SKIPEND=1
+
+T=This is a deal between my client and me. No one else.
+W=HACKER
+
+T=You don't understand! He's my... My...
+W=GRAFF
+C1A=ANGRY
+TEN=GPC14C_HACKER_BROK_CHECK1
+
+#---------------------------------------
+ID=GPC14C_HACKER_BROK1B
+T=Tutor.
+W=OTT
+C1=GRAFF
+C1A=ANGRY
+C2=HACKER
+C2A=LISTEN
+C3=OTT
+C3A=ALRIGHT
+
+T=Yeah.
+W=GRAFF
+C1A=OPPOSITE
+
+T=He can be the pope for all I care. You won't get anything from me.
+W=HACKER
+C2A=NORMAL
+C3A=OPPOSITE
+
+T=Pfft. Stupid Squealer...
+W=GRAFF
+
+T=What did you just say?!
+W=HACKER
+C2A=SURPRISED
+
+T=I'm not one of those dirty rats! I'm a mouse!
+W=HACKER
+C2A=NORMAL
+C1A=GASP
+
+T=You should know that by your age!
+W=HACKER
+
+T=Okay, okay! Sorry!... Geez.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Kids nowadays. What a disrespectful bunch.
+W=HACKER
+
+T=So?...
+W=GRAFF
+C1A=ANGRY
+
+T=You'll keep bothering me with this, uh?...
+W=HACKER
+
+T=Don't stay around him. That guy is shady.
+W=HACKER
+
+T=Says the even shadier hacker...
+W=OTT
+TEN=GPC14C_HACKER_BROK_CHECK
+
+
+#---------------------------------------
+ID=GPC14C_HACKER_BROK_MISSION
+T=He claimed to be a policeman. This doesn't make any sense considering his record.
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=What do you mean?...
+W=GRAFF
+C1A=THINK
+
+T=I've already said too much.
+W=HACKER
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_BROK_KO
+T=Wait. You're related?
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=SURPRISED
+C3=OTT
+C3A=NORMAL
+
+T=Yes.
+W=GRAFF
+
+T=Oh no! Please don't hurt me!
+W=HACKER
+C2A=WORRIED
+
+T=Uh?...
+W=OTT
+C3A=WONDER
+
+T=I'm not here for that!
+W=GRAFF
+C1A=OPPOSITE
+
+T=I just... wanna know!
+W=GRAFF
+C1A=THINK
+
+T=That guy is mad!
+W=HACKER
+C2A=SURPRISED
+TEN=GPC14C_HACKER_BROK_THREATEN
+
+#---------------------------------------
+ID=GPC14C_HACKER_BROK_THREATEN
+T=He threatened me! Almost broke my neck!
+W=HACKER
+C1=GRAFF
+C1A=GASP
+C2=HACKER
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+
+T=I thought I'd be a goner!
+W=HACKER
+
+T=Oh gosh. If he learns...
+W=HACKER
+C2A=WORRIED
+
+T=Please don't tell him I said that!...
+W=HACKER
+
+T=I won't! I promise.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Threatened... What's your old man up to?...
+W=OTT
+C2=NONE
+C3=OTT
+C3A=WONDER
+
+T=Wish I knew...
+W=GRAFF
+C1A=TURN
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_BROK_MONEY
+T=He claims to be poor but then he's able to find 10,000 Unis to pay me.
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Uh?!
+W=GRAFF
+C1A=GASP
+C3A=SURPRISED
+
+T=How did he get all that money?!
+W=OTT
+
+T=Ask him.
+W=HACKER
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_BROK2
+T=Tell me more.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=1,000 Unis. Or my mouth is shut.
+W=HACKER
+
+T=What?... Forget it.
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+#---------------------------------------
+#= Inventory
+#---------------------------------------
+ID=GPC14C_HACKER_INV_DEFAULT1
+T=Would this do?
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=In exchange for a 100,000 Unis job? Are you crazy?!
+W=HACKER
+
+T=No need to shout! I'll find something else.
+W=GRAFF
+C1A=OPPOSITE
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_INV_DEFAULT2
+T=It's hard for me to part with this but... Here.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=What's this crap?
+W=HACKER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_INV_MONEY
+T=Here's your money.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Little boy. Go back to school.
+W=HACKER
+
+T=You visibly can't count.
+W=HACKER
+
+T=You know... He's right.
+W=OTT
+C3A=WONDER
+
+T=Ott... You're not helping there.
+W=GRAFF
+C1A=OPPOSITE
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#---------------------------------------
+ID=GPC14C_HACKER_INV_INVOICEHACKER
+T=This is what you're looking for, isn't it?
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=My own invoice?!
+W=HACKER
+C2A=SURPRISED
+
+T=I knew kid's IQs were lowering, but I didn't know it was that much.
+W=HACKER
+C2A=WORRIED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#---------------------------------------
+ID=GPC14C_HACKER_INV_SELFIE
+T=A picture?!
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=WONDER
+
+T=Give me a break.
+W=HACKER
+
+T=I just meant to ask. Is he the man who requested your help?
+W=GRAFF
+
+T=Maybe. Maybe not.
+W=HACKER
+
+T=Let it go. He won't tell us anything.
+W=OTT
+C3A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#---------------------------------------
+ID=GPC14C_HACKER_INV_BANKSTATEMENT_NOPE
+T=(I shouldn't show this...)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+T=(Unless I have a good reason.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#---------------------------------------
+ID=GPC14C_HACKER_INV_BANKSTATEMENTOK
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=I have the money.
+W=GRAFF
+
+T=What?...
+W=OTT
+C3A=WONDER
+
+T=Take a look at this.
+W=GRAFF
+C1A=MEH
+C3A=NORMAL
+
+T=...
+W=HACKER
+C2A=LISTEN
+
+T=This account was opened by my mother. There's more than 100,000 Unis on it.
+W=GRAFF
+
+T=She's dead now, so this means...
+W=GRAFF
+C1A=OPPOSITE
+
+T=I'll have access to this money in a few days when I turn sixteen.
+W=GRAFF
+C1A=MEH
+
+T=How come?
+W=OTT
+C3A=WONDER
+
+T=I just found out about this myself.
+W=GRAFF
+
+T=Interesting...
+W=HACKER
+C2A=NORMAL
+
+T=I guarantee you. You will get the money in a few days.
+W=GRAFF
+
+T=Don't!
+W=OTT
+C3A=SURPRISED
+
+T=This must be money your mom saved for you!
+W=OTT
+
+T=You... You can't!
+W=OTT
+C3A=SAD
+
+T=Then... What's the purpose of it?
+W=GRAFF
+C1A=ANGRY
+
+T=Wouldn't she want me to use it to ensure a better future for myself?
+W=GRAFF
+
+T=I...
+W=OTT
+C3A=DISAPPOINTED
+
+T=I don't know but...
+W=OTT
+
+T=It's decided.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Give me your hand, boy.
+W=HACKER
+
+T=Hmm...
+W=HACKER
+C2A=LISTEN
+
+T=So, you are...
+W=HACKER
+
+T=Graff Filsh. Aged 15, birthday in three days.
+W=HACKER
+C2A=NORMAL
+
+T=Looks like you're telling the truth.
+W=HACKER
+
+T=Alright. Deal.
+W=HACKER
+
+T=Come back in three days and we shall sort this out.
+W=HACKER
+
+T=No! You don't understand.
+W=GRAFF
+C1A=GASP
+
+T=The data will be transmitted tonight!
+W=GRAFF
+
+T=You need to hack the server now!
+W=GRAFF
+C1A=ANGRY
+
+T=And do credit for you?!
+W=HACKER
+C2A=SURPRISED
+
+T=Nah-uh. No way.
+W=HACKER
+C2A=NORMAL
+
+T=This is a matter of life and death!
+W=GRAFF
+
+T=Exactly. For me as well.
+W=HACKER
+
+T=Listen.
+W=GRAFF
+C1A=READY
+
+T=Do you really want to pass on the opportunity to win 100,000 Unis?
+W=GRAFF
+C1A=OPPOSITE
+
+T=...
+W=HACKER
+C2A=LISTEN
+
+T=Alright.
+W=HACKER
+C2A=NORMAL
+
+T=With your prints, I should be able to plan a wire transfer right now.
+W=HACKER
+
+T=I'll re-route it to a few of my cryptocurrencies for... safety reasons.
+W=HACKER
+
+T=But I warn you. This won't be cancellable.
+W=HACKER
+
+T=Do it!
+W=GRAFF
+C1A=READY
+
+T=Graff...
+W=OTT
+C3A=SAD
+
+T=...
+W=HACKER
+
+T=...
+W=HACKER
+
+T=And...
+W=HACKER
+
+T=Done.
+W=HACKER
+
+T=Just one thing. Keep in mind.
+W=HACKER
+
+T=I'll be watching over you, boy!
+W=HACKER
+
+T=If you dare double-cross me...
+W=HACKER
+
+T=I have the means to ruin your life!
+W=HACKER
+
+T=Oh, don't worry. It already is.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Now, give me some space. I need to focus!
+W=HACKER
+
+T=Come on, Ott.
+W=GRAFF
+
+T=...
+W=OTT
+C3A=DISAPPOINTED
+TEN=GPC14C_GRAFFBACKS
+
+
+#---------------------------------------
+#= After given bank statement
+#---------------------------------------
+ID=GPC14C_AFTER1
+T=I can't believe it...
+W=OTT
+C1=GRAFF
+C1A=OPPOSITE
+C2=OTT
+C2A=DISAPPOINTED
+CONTEXT=After given bank statement to hacker
+
+T=What's wrong with you?! 100,000 Unis?!
+W=OTT
+C2A=ANGRY
+
+T=Even in the Slums, you could have lived like a lord for years with that kind of money!
+W=OTT
+C2A=ALRIGHT
+
+T=Sorry, Ott...
+W=GRAFF
+C1A=TURN
+
+T=I... I can't stay here...
+W=GRAFF
+
+T=...
+W=OTT
+C2A=DISAPPOINTED
+
+T=Okay. It's your decision, after all.
+W=OTT
+
+T=I'm not saying it's bad. Just...
+W=OTT
+
+T=Maybe you should have thought a little more about it before rushing straight ahead.
+W=OTT
+C2A=WONDER
+
+T=Well... It's done.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Eh, boys. What did I say?
+W=HACKER
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=OPPOSITE
+
+T=Leave the heck out of my place!
+W=HACKER
+
+T=(Sigh) He better deliver...
+W=OTT
+TEN=GPC14C_GRAFFLEAVES
+
+
+
+#---------------------------------------
+#= Welcome
+#---------------------------------------
+ID=GPC14C_HACKER_WELCOME1
+T=So?...
+W=HACKER
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+CONTEXT=More talk with hacker
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+
+
+#---------------------------------------
+#= Think
+#---------------------------------------
+ID=GPC14C_HACKER_THINK1
+T=(Desperate times call for desperate measures...)
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+MOOD=THINK
+TEN=GPC14C_HACKER_CHOICES
+IT=1
+
+#---------------------------------------
+#= End
+#---------------------------------------
+ID=GPC14C_HACKER_EXIT1
+T=I'll be around.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Huh.
+W=HACKER
+
+
+#---------------------------------------
+#= After exit
+#---------------------------------------
+ID=GPC14C_HACKER_AFTEREXIT1
+#TODO Phone sounds or screen
+T=(...)
+W=HACKER
+A=NORMAL
+CONTEXT=AFter Graff & Ott have exited the room, the hacker calls the rats to make a deal with them
+
+T=Guys?...
+W=HACKER
+A=LISTEN
+
+T=About the dough I owe you...
+W=HACKER
+A=NORMAL
+
+T=Yeah, yeah.
+W=HACKER
+A=NORMAL
+
+T=Well I got something for you that should make up for it.
+W=HACKER
+A=HAPPY
+
+T=I just require your help with something first.
+W=HACKER
+A=NORMAL
+TEN=GPC14C_EXIT1
+
+
+#----------------------
+ID=GPC14C_HACKER_HIT1
+T=Argh!
+W=HACKER
+C1=GRAFF
+C1A=ANGRY
+C2=HACKER
+C2A=WORRIED
+C3=OTT
+C3A=SURPRISED
+
+T=Graff!...
+W=OTT
+C1A=TURN
+
+T=...Sorry.
+W=GRAFF
+
+
+#----------------------
+ID=GPC14C_HACKER_HIT2
+T=Stop! That hurts!
+W=HACKER
+C1=GRAFF
+C1A=ANGRY
+C2=HACKER
+C2A=WORRIED
+C3=OTT
+C3A=SURPRISED
+
+T=Oh no...!
+W=OTT
+
+#----------------------
+ID=GPC14C_HACKER_HIT3
+T=Enough! Look what you've done!
+W=OTT
+C1=GRAFF
+C1A=GASP
+C2=OTT
+C2A=ANGRY
+
+T=I was wrong. You don't deserve to be a Drumer.
+W=OTT
+TEN=GPC14C_HACKER_OTTLEAVES
+
+#----------------------
+ID=GPC14C_HACKER_HIT3B
+T=Ott! Wait!
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+C1_EYESHUT=1
+
+T=I'm... alone...
+W=GRAFF
+A=SOB
+TEN=GPC14C_HACKER_GAMEOVER
+CONTEXT=After Graff hits the hacker
+
+
+#----------------------
+ID=GPC14C_PIZZABOX1
+T=No, thanks... (Cough)
+W=GRAFF
+A=YUCK
+
+#----------------------
+ID=GPC14C_BOTTLE1
+T=Gross.
+W=GRAFF
+A=YUCK
+
+#----------------------
+ID=GPC14C_WINDOW1
+T=Closed...
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC14C_STUFF1
+T=What a mess.
+W=GRAFF
+A=THINK
+
+T=I don't see anything of interest.
+W=GRAFF
+
+
+
+#----------------------
+ID=GPC14C_HACKER_WALKONSTAND1
+T=What the?...
+W=HACKER
+A=SURPRISED
+
+
+#----------------------
+ID=GPC14C_HACKER_WALKONSTAND2
+T=Tsk. Go play outside.
+W=HACKER
+A=NORMAL
+
+#----------------------
+ID=GPC14C_HACKER_WALKONSTAND3
+T=(Sigh)
+W=HACKER
+A=NORMAL
+
+
+#----------------------
+#= Talking to hacker
+#----------------------
+ID=COOP_GPC14C_HACKER1
+T=Cute mouse, but looks are deceiving.
+
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 03/09/2019
+###############################################

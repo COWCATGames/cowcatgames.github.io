@@ -1,0 +1,1308 @@
+#-------------------------------
+#=POLICE INTERROGATION
+#-------------------------------
+
+#----- Interactions --------
+PC_BARRIER=屏障
+PC_TOJAIL=前往監獄
+PC_TOENTRANCE=前往入口
+
+#----- Choices / Items --------
+
+
+#----- Topics --------
+PC09D_QUESTION1=你叫什麽名字？
+PC09D_QUESTION2=你的工作是什麽？
+PC09D_QUESTION3=你為什麽當偵探？
+PC09D_QUESTION4=你跟阿信是什麽關係？
+PC09D_QUESTION5=你今天早上做過什麽事？
+PC09D_QUESTION6=你認為我們該如何處置阿信？
+PC09D_QUESTION8=你有殺過人嗎？
+PC09D_QUESTION9=是你殺死莉雅的嗎？
+PC09D_QUESTION10=你殺過什麽人？
+
+
+CHOICE_HOTDOG=熱狗
+CHOICE_PD=私家偵探
+CHOICE_HANDYMAN=臨時工
+CHOICE_DANCER=舞蹈家
+CHOICE_GRAFF=為了格拉夫
+CHOICE_LIA=為了莉雅
+CHOICE_MONEY=為了賺錢
+CHOICE_FRIEND=朋友
+CHOICE_CLIENT=客戶
+CHOICE_FOE=敵人
+CHOICE_INVESTIGATING=調查案子
+CHOICE_HACKING=入侵伺服器
+CHOICE_HUNGRY=我很餓！
+CHOICE_FREE=釋放
+CHOICE_PRISON=監禁
+CHOICE_KILL=處死
+CHOICE_NOONE=沒有
+CHOICE_ME=我自己
+CHOICE_NOIDEA=我不知道
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Both Sin and Brok have been arrested by Wes. He's going to interrogate Brok in this room
+# *****************************************************************
+# Brok
+PC09D_INTRO1-1=……我收集到了一些線索，我一直有所懷疑……
+# Brok
+PC09D_INTRO1-2=畢竟一位合格的私家偵探絕不能完全信任客戶的片面之言，我就是在那時候察覺阿信……
+# Wes
+PC09D_INTRO1-3=閉嘴！
+# Brok
+PC09D_INTRO1-4=呃……
+# Wes
+PC09D_INTRO1-5=你話有夠多的。
+# Wes
+PC09D_INTRO1-6=坐下。
+#----------------------------------------------------
+# Brok
+PC09D_INTRO2-1=等一下……
+# Brok
+PC09D_INTRO2-2=這是審問室？
+# Wes
+PC09D_INTRO2-3=夠聰明。
+# Brok
+PC09D_INTRO2-4=你不是該先審問阿信的嗎？
+# Wes
+PC09D_INTRO2-5=嗯哼，不急。
+# Wes
+PC09D_INTRO2-6=坐下！
+# Brok
+PC09D_INTRO2-7=嗯……好吧。
+#----------------------------------------------------
+# Brok
+PC09D_INTRO3-1=手銬勒得真緊！
+# Brok
+PC09D_INTRO3-2=其實手銬對我沒有必要……
+# Wes
+PC09D_INTRO3-3=少天真了，這是必要的流程……
+# Brok
+PC09D_INTRO3-4=對……走流程、官僚風……
+# Brok
+PC09D_INTRO3-5=多年不見，你還是一點都沒變啊……
+# Wes
+PC09D_INTRO3-6=這跟本案無關。
+# Brok
+PC09D_INTRO3-7=那麽……我究竟犯了什麽罪？
+# Wes
+PC09D_INTRO3-8=那就看接下來的審問結果了。
+# Tribotcop
+PC09D_INTRO3-9=……
+# Brok
+PC09D_INTRO3-10=……
+# Brok
+PC09D_INTRO3-11=我不習慣被這個機器人盯著，它在這裏做甚麼？
+# Wes
+PC09D_INTRO3-12=負責錄音審問過程和測試設備。
+# Wes
+PC09D_INTRO3-13=這都你不用管。
+# Tribotcop
+PC09D_INTRO3-14=錄音開始……
+#----------------------------------------------------
+# Brok
+PC09D_INTRO4-1=這個玩意是幹嘛的？
+# Wes
+PC09D_INTRO4-2=這是必要的流程。
+# Brok
+PC09D_INTRO4-3=別總是講什麽流程！我有權利知道這是什麽東西！
+# Wes
+PC09D_INTRO4-4=好吧。這是測謊儀。
+# Brok
+PC09D_INTRO4-5=甚麼？測謊儀這東西靠譜嗎……
+# Wes
+PC09D_INTRO4-6=這是經過工程部改良的最新版本。
+# Tribotcop
+PC09D_INTRO4-7=失誤率已降低至0.02%，適於可以接受範圍。
+# Tribotcop
+PC09D_INTRO4-8=因此，該設備已獲政府批准使用。
+# Wes
+PC09D_INTRO4-9=這是很珍貴的設備。
+# Tribotcop
+PC09D_INTRO4-10=校正調試中……請對象保持靜止不動。
+# Wes
+PC09D_INTRO4-11=給你個忠告，接下來不要撒謊。
+# Brok
+PC09D_INTRO4-12=不然怎樣？難道那玩意是能電我嗎？
+#----------------------------------------------------
+# Brok
+PC09D_INTRO4B-1=不是吧！
+# Brok
+PC09D_INTRO4B-2=這樣做合法嗎？
+# Tribotcop
+PC09D_INTRO4B-3=校正完畢。
+# Wes
+PC09D_INTRO4B-4=完全合法。
+# Wes
+PC09D_INTRO4B-5=需要的話我可以讓你閱覽政府公文，不過我知道你根本看不懂。
+# Brok
+PC09D_INTRO4B-6=哼……
+# Brok
+PC09D_INTRO4B-7=我也是上過學的……雖然只有幾年。
+# Wes
+PC09D_INTRO4B-8=可以開始了嗎？
+#----------------------------------------------------
+# Wes
+PC09D_INTRO5-1=你仔細聽好。
+# Wes
+PC09D_INTRO5-2=我會問你十個問題。
+# Wes
+PC09D_INTRO5-3=每個問題只有十秒鐘時間回答。
+# Tribotcop
+PC09D_INTRO5-4=所以建議你腦海裏第一個反應是什麽就回答什麽。
+# Wes
+PC09D_INTRO5-5=我們的目的只是為了破案。
+# Wes
+PC09D_INTRO5-6=如果測謊儀偵測到謊言……
+# Brok
+PC09D_INTRO5-7=我就會被電？
+# Wes
+PC09D_INTRO5-8=嗯哼。
+# Brok
+PC09D_INTRO5-9=幸好我沒有頭髮，否則就要炸毛了！
+# Tribotcop
+PC09D_INTRO5-10=開始倒計時……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Wes interrogates Brok. The player has various choices possible.
+# *****************************************************************
+# Wes
+PC09D_INTRO5B-1=好，第一個問題。
+# Wes
+PC09D_INTRO5B-2=你叫什麽名字？
+#----------------------------------------------------
+# Brok
+PC09D_Q1_BROK-1=警長先生，你這是明知故問。
+# Wes
+PC09D_Q1_BROK-2=我已經不是警長了，從現在開始，叫我韋斯局長。
+# Brok
+PC09D_Q1_BROK-3=哦，好吧。警……局長先生。
+# Tribotcop
+PC09D_Q1_BROK-4=這道問題的目的是取得測試結果的參考標準。
+# Wes
+PC09D_Q1_BROK-5=你還沒回答問題。
+# Brok
+PC09D_Q1_BROK-6=哦，對。我叫布羅格。
+# Wes
+PC09D_Q1_BROK-7=你確定嗎？
+# Brok
+PC09D_Q1_BROK-8=當然！
+# Wes
+PC09D_Q1_BROK-9=姓氏？
+# Brok
+PC09D_Q1_BROK-10=全名就是布羅格。
+# Tribotcop
+PC09D_Q1_BROK-11=該對象的註冊名為：就是布羅格。
+# Brok
+PC09D_Q1_BROK-12=不是，我是……唉，算了。
+#----------------------------------------------------
+# Brok
+PC09D_Q1_WES-1=你的名字……？你名字當然是韋斯呀！
+#----------------------------------------------------
+# Wes
+PC09D_Q1_WESB-1=我不是問你我的名字！
+# Wes
+PC09D_Q1_WESB-2=我知道這問題對你這鱷魚腦是很高難度，但你能不能認真點！
+# Brok
+PC09D_Q1_WESB-3=喂！我只是開個玩笑！沒必要這樣人身攻擊。
+#----------------------------------------------------
+# Brok
+PC09D_Q1_HOTDOG-1=熱狗。
+# Wes
+PC09D_Q1_HOTDOG-2=……
+# Tribotcop
+PC09D_Q1_HOTDOG-3=……
+# Brok
+PC09D_Q1_HOTDOG-4=……不是說撒謊會被電擊嗎？
+# Wes
+PC09D_Q1_HOTDOG-5=我也覺得很奇怪，有什麽可以解釋的嗎？
+# Tribotcop
+PC09D_Q1_HOTDOG-6=對象可能在心裏期待被稱作“熱狗”。
+# Brok
+PC09D_Q1_HOTDOG-7=我怎麽不知道……
+# Wes
+PC09D_Q1_HOTDOG-8=看來我們都不是那麽了解自己，繼續。
+# Brok
+PC09D_Q1_HOTDOG-9=呃……好吧……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When the player doesn't take a choice
+# *****************************************************************
+# Brok
+PC09D_TIMEOUT-1=唔……
+#----------------------------------------------------
+# Wes
+PC09D_TIMEOUT1-1=別浪費時間！
+#----------------------------------------------------
+# Wes
+PC09D_TIMEOUT2-1=又來？！
+# Brok
+PC09D_TIMEOUT2-2=喂，讓我多想一下！
+#----------------------------------------------------
+# Wes
+PC09D_TIMEOUT3-1=乾脆點！這問題是有多難？
+# Brok
+PC09D_TIMEOUT3-2=不要催我好嗎？我壓力已經很大了！
+#----------------------------------------------------
+# Brok
+PC09D_TIMEOUT4-1=啊……腦子快要爆炸了。
+# Wes
+PC09D_TIMEOUT4-2=反正你腦子也沒多少用處。
+#----------------------------------------------------
+# Wes
+PC09D_TIMEOUT5-1=你不是認真的吧？
+# Tribotcop
+PC09D_TIMEOUT5-2=對象試圖自殺的機率：54.6%。享受折磨的機率：40.4%。兩者都有的機率：5%。
+#----------------------------------------------------
+# Wes
+PC09D_TIMEOUT6-1=……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More interrogation
+# *****************************************************************
+# Wes
+PC09D_Q2-1=下一個問題。
+# Wes
+PC09D_Q2-2=你的職業是什麽？
+#----------------------------------------------------
+# Brok
+PC09D_Q2_PD-1=很明顯，私家偵探。
+# Wes
+PC09D_Q2_PD-2=嗯哼。
+# Wes
+PC09D_Q2_PD-3=我記得沒錯的話，你曾經當過拳擊手。
+# Brok
+PC09D_Q2_PD-4=我的拳擊手生涯早就結束了，地下競技場倒閉了。
+# Wes
+PC09D_Q2_PD-5=現在流行VR競技場。
+# Wes
+PC09D_Q2_PD-6=你可以去試試！應該能賺到不少錢。
+# Brok
+PC09D_Q2_PD-7=哦……嗯……
+# Brok
+PC09D_Q2_PD-8=我還是不參與，……犯法的事我可不幹。
+# Wes
+PC09D_Q2_PD-9=嗯哼。
+# Wes
+PC09D_Q2_PD-10=……
+# Brok
+PC09D_Q2_PD-11=……
+# Tribotcop
+PC09D_Q2_PD-12=對象心跳加速，流汗速度提升50%。
+# Tribotcop
+PC09D_Q2_PD-13=我們是否該多加一題？
+# Wes
+PC09D_Q2_PD-14=不必了。
+# Brok
+PC09D_Q2_PD-15=……
+#----------------------------------------------------
+# Brok
+PC09D_Q2_HANDYMAN-1=臨時工！
+# Brok
+PC09D_Q2_HANDYMAN-2=通水管、縫紉、煮飯我全都幹過！
+# Wes
+PC09D_Q2_HANDYMAN-3=……
+# Brok
+PC09D_Q2_HANDYMAN-4=看見沒？我沒撒謊！
+# Wes
+PC09D_Q2_HANDYMAN-5=一點也不意外，你是在發揮自己的專長。
+# Tribotcop
+PC09D_Q2_HANDYMAN-6=該結果不合邏輯。
+# Tribotcop
+PC09D_Q2_HANDYMAN-7=以上所有差事機器人都可以用更高效率完成。
+# Brok
+PC09D_Q2_HANDYMAN-8=我們貧民絕不會讓鐵罐頭搶走我們飯碗的！
+# Wes
+PC09D_Q2_HANDYMAN-9=而且你雇不起機器人。
+# Brok
+PC09D_Q2_HANDYMAN-10=……對。
+# Wes
+PC09D_Q2_HANDYMAN-11=你們的人口正持續減少，你們很快就沒有選擇的餘地……
+# Brok
+PC09D_Q2_HANDYMAN-12=做夢！
+# Brok
+PC09D_Q2_HANDYMAN-13=適者生存，這是定律。
+# Wes
+PC09D_Q2_HANDYMAN-14=嗯哼，的確是。
+#----------------------------------------------------
+# Brok
+PC09D_Q2_DANCER-1=這還用說？
+# Brok
+PC09D_Q2_DANCER-2=我是位舞者！偶爾還會開班授課……
+#----------------------------------------------------
+# Tribotcop
+PC09D_Q2_DANCERB-1=該結果不合邏輯。對象受身材限制並沒有成為優秀舞者的可能。
+# Brok
+PC09D_Q2_DANCERB-2=我只是說我是舞者……沒說我很優秀。
+# Wes
+PC09D_Q2_DANCERB-3=別浪費時間了，你這樣只會延長自己被羈押的時間。
+# Brok
+PC09D_Q2_DANCERB-4=我看你就是嫉妒！
+# Wes
+PC09D_Q2_DANCERB-5=……
+# Wes
+PC09D_Q2_DANCERB-6=你還沒回答問題。
+# Brok
+PC09D_Q2_DANCERB-7=行了行了，我是個私家偵探。滿意了沒？
+#----------------------------------------------------
+# Wes
+PC09D_Q3-1=下一道問題。
+# Wes
+PC09D_Q3-2=你為何選擇當偵探？
+# Brok
+PC09D_Q3-3=和臨時工。
+# Wes
+PC09D_Q3-4=回答問題。
+#----------------------------------------------------
+# Brok
+PC09D_Q3_GRAFF-1=是為了格拉夫。
+# Wes
+PC09D_Q3_GRAFF-2=……
+# Wes
+PC09D_Q3_GRAFF-3=格拉夫……
+# Wes
+PC09D_Q3_GRAFF-4=……
+# Brok
+PC09D_Q3_GRAFF-5=呃？
+# Wes
+PC09D_Q3_GRAFF-6=噢。
+# Wes
+PC09D_Q3_GRAFF-7=他是你兒子吧？
+# Brok
+PC09D_Q3_GRAFF-8=不是……他是莉雅的兒子。
+# Brok
+PC09D_Q3_GRAFF-9=她在遺囑裏委托我……
+# Brok
+PC09D_Q3_GRAFF-10=咦，你不記得了嗎？
+# Brok
+PC09D_Q3_GRAFF-11=五年前就是你負責這案子的……
+# Wes
+PC09D_Q3_GRAFF-12=我的記憶又不是資料庫。
+# Tribotcop
+PC09D_Q3_GRAFF-13=局長的意思是他年紀大了，記性不如以往。
+# Brok
+PC09D_Q3_GRAFF-14=我最近也似乎開始健忘了。
+# Brok
+PC09D_Q3_GRAFF-15=隨便啦……
+# Brok
+PC09D_Q3_GRAFF-16=為了格拉夫和我自己，我必須維持生計。
+# Brok
+PC09D_Q3_GRAFF-17=因為警察不願幫助貧民，所以我想可能有很多貧民需要偵探來幫忙……
+# Wes
+PC09D_Q3_GRAFF-18=嗯哼。
+# Brok
+PC09D_Q3_GRAFF-19=……
+#----------------------------------------------------
+# Brok
+PC09D_Q3_LIA-1=自從莉雅過世後……
+# Brok
+PC09D_Q3_LIA-2=我…我無法承受。
+# Brok
+PC09D_Q3_LIA-3=你懂的……
+# Wes
+PC09D_Q3_LIA-4=當然，那案子就是我負責的。
+# Brok
+PC09D_Q3_LIA-5=所以我想……要是成為私家偵探的話……或許我就能找出幕後黑手。
+# Brok
+PC09D_Q3_LIA-6=我要找出真相。
+# Wes
+PC09D_Q3_LIA-7=所以你是為了報仇。
+# Brok
+PC09D_Q3_LIA-8=……
+# Brok
+PC09D_Q3_LIA-9=現在我也不清楚了，那之後發生了很多事。
+# Wes
+PC09D_Q3_LIA-10=但是你還是沒發現任何線索。
+# Brok
+PC09D_Q3_LIA-11=嗯……我現在實在沒辦法把精力放在那上面。
+# Brok
+PC09D_Q3_LIA-12=不過我還抱有希望。
+# Tribotcop
+PC09D_Q3_LIA-13=希望是個虛無的東西，沒有任何實質數據作為依據。
+# Brok
+PC09D_Q3_LIA-14=所以你永遠就只是一堆長腳的廢鐵。
+# Tribotcop
+PC09D_Q3_LIA-15=我探測到對象對我散發出敵意。
+# Wes
+PC09D_Q3_LIA-16=下一個問題。
+#----------------------------------------------------
+# Brok
+PC09D_Q3_MONEY-1=你說呢？當然是為了錢呀！
+# Brok
+PC09D_Q3_MONEY-2=說了你也不信，你不知道多少人願意花錢請人清垃圾和修馬桶！
+#----------------------------------------------------
+# Wes
+PC09D_Q3_MONEYB-1=你是在炫耀嗎？那你失敗了。
+# Brok
+PC09D_Q3_MONEYB-2=我不是……！我…我不明白……
+# Wes
+PC09D_Q3_MONEYB-3=我信你，你的腦子肯定是被測謊儀電壞了。
+# Brok
+PC09D_Q3_MONEYB-4=對！
+# Brok
+PC09D_Q3_MONEYB-5=其實，我的工作根本入不敷出。
+# Brok
+PC09D_Q3_MONEYB-6=沒錯，工作是很多……但是客戶都是比我還窮的可憐人。
+# Brok
+PC09D_Q3_MONEYB-7=很多時候，我都不好意思要求報酬。
+# Wes
+PC09D_Q3_MONEYB-8=免費服務……？真是佛心慈善家。
+# Tribotcop
+PC09D_Q3_MONEYB-9=可惜我沒有流淚的功能。
+# Brok
+PC09D_Q3_MONEYB-10=閉嘴，你根本不知道生活……
+# Brok
+PC09D_Q3_MONEYB-11=真正的活著是什麽意思。
+# Wes
+PC09D_Q3_MONEYB-12=嗯哼。
+#----------------------------------------------------
+# Wes
+PC09D_Q4-1=下一題。
+# Wes
+PC09D_Q4-2=你跟阿信是什麽關係？
+#----------------------------------------------------
+# Brok
+PC09D_Q4_FRIEND_FALSE-1=他是個好人，算是朋友吧。
+#----------------------------------------------------
+# Brok
+PC09D_Q4_FRIENDB-1=行了行了，沒錯。我討厭他。
+# Brok
+PC09D_Q4_FRIENDB-2=他不僅浪費我時間而且還拒絕支付酬勞！
+# Wes
+PC09D_Q4_FRIENDB-3=很明顯。
+#----------------------------------------------------
+# Brok
+PC09D_Q4_FRIEND_TRUE-1=但話說回來……我很同情。
+# Brok
+PC09D_Q4_FRIEND_TRUE-2=他為了女兒願意鋌而走險，這有多少人能做得到？
+# Wes
+PC09D_Q4_FRIEND_TRUE-3=……
+# Wes
+PC09D_Q4_FRIEND_TRUE-4=你真的信了……
+# Brok
+PC09D_Q4_FRIEND_TRUE-5=啥？你甚麼意思？
+# Wes
+PC09D_Q4_FRIEND_TRUE-6=真有趣，虧你還自稱是私家偵探呢！
+# Wes
+PC09D_Q4_FRIEND_TRUE-7=你就沒有任何一刻懷疑過……他和你說的……
+# Wes
+PC09D_Q4_FRIEND_TRUE-8=可能是謊話？！
+# Brok
+PC09D_Q4_FRIEND_TRUE-9=……
+# Brok
+PC09D_Q4_FRIEND_TRUE-10=不可能，我了解他……
+# Wes
+PC09D_Q4_FRIEND_TRUE-11=……你跟他當天早上才認識。
+# Brok
+PC09D_Q4_FRIEND_TRUE-12=但是我見過他妻子和女兒的合照。
+# Wes
+PC09D_Q4_FRIEND_TRUE-13=那不足以證明什麽，可能是他從網路上列印別人的照片。
+# Brok
+PC09D_Q4_FRIEND_TRUE-14=我看人很準，不用靠什麽測謊儀。
+# Brok
+PC09D_Q4_FRIEND_TRUE-15=正如某些人我不用理由也可以信任，而有些人我則永遠都不會相信。
+# Brok
+PC09D_Q4_FRIEND_TRUE-16=你就是後者。
+# Wes
+PC09D_Q4_FRIEND_TRUE-17=……
+# Wes
+PC09D_Q4_FRIEND_TRUE-18=我們幹這行的，是可不能依賴直覺。我們只相信眼見為憑的證據。
+# Brok
+PC09D_Q4_FRIEND_TRUE-19=你還是一點都沒變……
+# Brok
+PC09D_Q4_FRIEND_TRUE-20=跟身邊這個在監視著我們的機器人沒兩樣……
+# Brok
+PC09D_Q4_FRIEND_TRUE-21=我寧願當個肉腳的偵探，也不想成為你這種冷血無情的警察！
+# Wes
+PC09D_Q4_FRIEND_TRUE-22=嗯哼。
+# Brok
+PC09D_Q4_FRIEND_TRUE-23=你能不能別整天嗯哼嗯哼的？很煩人知不知道？！
+# Wes
+PC09D_Q4_FRIEND_TRUE-24=嗯哼。
+#----------------------------------------------------
+# Brok
+PC09D_Q4_CLIENT-1=他……曾經是我的客戶。
+# Wes
+PC09D_Q4_CLIENT-2=嗯哼。
+# Brok
+PC09D_Q4_CLIENT-3=他搞丟了東西……
+# Wes
+PC09D_Q4_CLIENT-4=是丟了把槍吧，不必掩飾。
+# Tribotcop
+PC09D_Q4_CLIENT-5=對象跟嫌犯的對話已被全部錄音並呈列為第2563號證物。
+# Brok
+PC09D_Q4_CLIENT-6=你全都知道了！
+# Brok
+PC09D_Q4_CLIENT-7=那你還審我幹嘛？！
+# Wes
+PC09D_Q4_CLIENT-8=負責問問題的人是我，你專心點。
+# Wes
+PC09D_Q4_CLIENT-9=說說你們是怎麽認識的。
+# Brok
+PC09D_Q4_CLIENT-10=他打過很多次電話給我……
+# Brok
+PC09D_Q4_CLIENT-11=他應該是通過三角網搜到我的，我查看過他的搜索記錄。
+# Wes
+PC09D_Q4_CLIENT-12=嗯哼。
+#----------------------------------------------------
+# Brok
+PC09D_Q4_ENEMY_FALSE-1=你說呢？我恨死他了！
+#----------------------------------------------------
+# Brok
+PC09D_Q4_ENEMYB-1=可…可是……他襲擊我！差點要了我的命！
+# Wes
+PC09D_Q4_ENEMYB-2=這我知道，很精彩的打鬥。
+#----------------------------------------------------
+# Brok
+PC09D_Q4_ENEMY_AFTER-1=等一下……
+# Brok
+PC09D_Q4_ENEMY_AFTER-2=你當時就在場？！還袖手旁觀？！
+# Wes
+PC09D_Q4_ENEMY_AFTER-3=我的工作是查案，不是調解紛爭。
+# Brok
+PC09D_Q4_ENEMY_AFTER-4=所以就算出人命你也不管？！
+# Tribotcop
+PC09D_Q4_ENEMY_AFTER-5=嫌犯並沒有危害到一等公民的安全，沒必要干涉。
+# Tribotcop
+PC09D_Q4_ENEMY_AFTER-6=少一個囚犯意味著多留一個空位給別的囚犯。邏輯上是最佳解。
+# Brok
+PC09D_Q4_ENEMY_AFTER-7=這太荒唐了……
+# Wes
+PC09D_Q4_ENEMY_AFTER-8=無論如何，按照流程我們當時有權使用槍械擊斃擾亂秩序者。
+# Wes
+PC09D_Q4_ENEMY_AFTER-9=所以你該慶幸我們沒有插手！
+# Brok
+PC09D_Q4_ENEMY_AFTER-10=對對對……我總是那麽的幸運。
+#----------------------------------------------------
+# Brok
+PC09D_Q4_ENEMY_TRUE-1=你說呢？我討厭死他了！
+# Brok
+PC09D_Q4_ENEMY_TRUE-2=……
+# Brok
+PC09D_Q4_ENEMY_TRUE-3=（奇怪，還以為會被電擊的。）
+# Wes
+PC09D_Q4_ENEMY_TRUE-4=正常，畢竟他襲擊了你。
+#----------------------------------------------------
+# Wes
+PC09D_Q5-1=下一個。
+# Wes
+PC09D_Q5-2=你今早做過什麽事？
+#----------------------------------------------------
+# Brok
+PC09D_Q5_INVESTIGATING-1=調查案件。
+# Wes
+PC09D_Q5_INVESTIGATING-2=說仔細點。
+# Brok
+PC09D_Q5_INVESTIGATING-3=我先是去了阿信的家……然後去了下水道……
+# Brok
+PC09D_Q5_INVESTIGATING-4=對了，在我跨越邊境到後巷和藥店搜尋線索前……
+# Wes
+PC09D_Q5_INVESTIGATING-5=嗯哼，你跨越邊境是吧。
+# Wes
+PC09D_Q5_INVESTIGATING-6=……
+# Brok
+PC09D_Q5_INVESTIGATING-7=呃……那個……
+# Brok
+PC09D_Q5_INVESTIGATING-8=我曾經也是市民，所以……
+# Wes
+PC09D_Q5_INVESTIGATING-9=你還擁有通行證？
+# Wes
+PC09D_Q5_INVESTIGATING-10=太超過了，早就應該撤銷的。
+# Tribotcop
+PC09D_Q5_INVESTIGATING-11=需要連接中央資料庫查證一下嗎？
+# Wes
+PC09D_Q5_INVESTIGATING-12=快去處理。
+#----------------------------------------------------
+# Wes
+PC09D_Q5_INVESTIGATING2-1=你提到了下水道。
+# Brok
+PC09D_Q5_INVESTIGATING2-2=呃……對。我沿著那把槍的線索搜到了那裏。
+# Wes
+PC09D_Q5_INVESTIGATING2-3=說說鼠人吧。
+# Brok
+PC09D_Q5_INVESTIGATING2-4=他們的首領帶著幾個手下不讓我通過，所以……
+# Brok
+PC09D_Q5_INVESTIGATING2-5=咦，等等……你怎麽知道我碰上鼠人的？
+# Wes
+PC09D_Q5_INVESTIGATING2-6=猜的，他們最近製造了不少麻煩。
+# Wes
+PC09D_Q5_INVESTIGATING2-7=而你的供詞更加確認了我們的猜測。
+# Brok
+PC09D_Q5_INVESTIGATING2-8=對，你必須想辦法對付他們！
+# Brok
+PC09D_Q5_INVESTIGATING2-9=他們結聚幫派霸占地盤……
+# Wes
+PC09D_Q5_INVESTIGATING2-10=就快了。
+#----------------------------------------------------
+# Brok
+PC09D_Q5_REVOCATION-1=（咕噜）
+# Tribotcop
+PC09D_Q5_REVOCATION-2=……
+# Tribotcop
+PC09D_Q5_REVOCATION-3=發現記錄，申請撤銷中……
+# Tribotcop
+PC09D_Q5_REVOCATION-4=暫時沒有處理空檔，已列入待處理排程。
+# Tribotcop
+PC09D_Q5_REVOCATION-5=將盡快完成處理流程，預計時間……
+# Tribotcop
+PC09D_Q5_REVOCATION-6=58小時35分鐘。
+# Wes
+PC09D_Q5_REVOCATION-7=真是夠慢的。
+# Wes
+PC09D_Q5_REVOCATION-8=算了，反正已經安排上了。
+# Brok
+PC09D_Q5_REVOCATION-9=（那就好……至少還有段時間。）
+#----------------------------------------------------
+# Brok
+PC09D_Q5_HACKING-1=阿信提到他是在市民街遺失槍支的。
+# Brok
+PC09D_Q5_HACKING-2=我急需通過邊境哨站……
+# Brok
+PC09D_Q5_HACKING-3=因此入侵了金字塔大樓的伺服器來僞造身份。
+# Brok
+PC09D_Q5_HACKING-4=我跟你講，當時真的好險！那地方到處都是雷射防禦系統！
+# Brok
+PC09D_Q5_HACKING-5=幸虧有我朋友雪伊幫我，她可是入侵伺服器的行家！
+# Wes
+PC09D_Q5_HACKING-6=……
+# Tribotcop
+PC09D_Q5_HACKING-7=……
+# Brok
+PC09D_Q5_HACKING-8=呃……這下尴尬了。
+# Wes
+PC09D_Q5_HACKING-9=的確。
+# Wes
+PC09D_Q5_HACKING-10=你不僅主動承認了犯罪事實……
+# Wes
+PC09D_Q5_HACKING-11=而且還把同夥給供出來了。
+# Wes
+PC09D_Q5_HACKING-12=好樣的。
+# Brok
+PC09D_Q5_HACKING-13=謝謝誇獎！
+# Wes
+PC09D_Q5_HACKING-14=X-598號警員，馬上撤銷他的通行證。
+#----------------------------------------------------
+# Wes
+PC09D_Q5_HACKING2-1=至於你的朋友……我們會盡快開始調查她的。
+# Brok
+PC09D_Q5_HACKING2-2=這次糟了……她肯定會殺了我的！
+# Wes
+PC09D_Q5_HACKING2-3=前提是你沒有先死在我們手裏。
+#----------------------------------------------------
+# Brok
+PC09D_Q5_HUNGRY-1=餓死我了！能不能暫時休息？
+#----------------------------------------------------
+# Brok
+PC09D_Q5_HUNGRYB-1=可…可是我沒騙你……我真的好餓！
+# Wes
+PC09D_Q5_HUNGRYB-2=測謊儀同時也能探測到轉移話題的行為。
+# Brok
+PC09D_Q5_HUNGRYB-3=那你怎麽不早說？！
+# Tribotcop
+PC09D_Q5_HUNGRYB-4=演算法建議可跳過回答這道問題。
+# Wes
+PC09D_Q5_HUNGRYB-5=好的。
+# Brok
+PC09D_Q5_HUNGRYB-6=喂！那我要求的食物呢？
+# Wes
+PC09D_Q5_HUNGRYB-7=……
+#----------------------------------------------------
+# Wes
+PC09D_Q6-1=下一個問題。
+# Wes
+PC09D_Q6-2=你認為我們該如何處置阿信？
+#----------------------------------------------------
+# Brok
+PC09D_Q6_FREE-1=很明顯，馬上釋放他！
+# Brok
+PC09D_Q6_FREE-2=給他改過自新的機會，他是好人。
+#----------------------------------------------------
+# Wes
+PC09D_Q6_FREENOTOK-1=不，他不是。而且你之前也是這麽想的。
+# Brok
+PC09D_Q6_FREENOTOK-2=我之前的確是……
+#----------------------------------------------------
+# Wes
+PC09D_Q6_FREEOK-1=好人？
+# Wes
+PC09D_Q6_FREEOK-2=原來你相信改過自新。
+# Wes
+PC09D_Q6_FREEOK-3=你以為罪犯會自我改過並且不會再犯？
+# Brok
+PC09D_Q6_FREEOK-4=你說得好像阿信窮凶惡極的樣子！
+#----------------------------------------------------
+# Brok
+PC09D_Q6_FREEB-1=明明就只是搶劫未遂！
+# Wes
+PC09D_Q6_FREEB-2=還有對警察下毒。
+# Wes
+PC09D_Q6_FREEB-3=看來你覺得不是什麽大事。
+# Brok
+PC09D_Q6_FREEB-4=我不是這個意思……但並沒有人因此喪命。
+# Brok
+PC09D_Q6_FREEB-5=再說……他不會再犯的，我百分百肯定。
+# Wes
+PC09D_Q6_FREEB-6=嗯哼。
+# Wes
+PC09D_Q6_FREEB-7=X-598號探員，請發表你的意見。
+# Tribotcop
+PC09D_Q6_FREEB-8=初犯在10年內會有95%的機率再次犯罪。
+# Tribotcop
+PC09D_Q6_FREEB-9=該數據眾所皆知。
+# Tribotcop
+PC09D_Q6_FREEB-10=因此，我們認為對象是受到了腦部創傷而下此定論。
+# Brok
+PC09D_Q6_FREEB-11=噢！你是說我瘋了是嗎？
+# Brok
+PC09D_Q6_FREEB-12=就因為我相信人非完美？
+# Brok
+PC09D_Q6_FREEB-13=難道每位公民都必須相信你說的那些屁話才行？
+# Brok
+PC09D_Q6_FREEB-14=你說！你那些數據是從哪得來的？
+# Brok
+PC09D_Q6_FREEB-15=再說了，哪怕是真的，也有5%的機率啊！而且十年那是多長的時間啊！
+# Wes
+PC09D_Q6_FREEB-16=冷靜。
+# Wes
+PC09D_Q6_FREEB-17=現在不是在批判你。
+# Brok
+PC09D_Q6_FREEB-18=哦，對……
+# Wes
+PC09D_Q6_FREEB-19=繼續吧。
+#----------------------------------------------------
+# Brok
+PC09D_Q6_PRISON-1=監禁他。
+# Wes
+PC09D_Q6_PRISON-2=……嗯哼。
+# Tribotcop
+PC09D_Q6_PRISON-3=友善提醒……
+# Tribotcop
+PC09D_Q6_PRISON-4=測謊儀讀數上升至90%，差一點就會觸發電擊。
+# Wes
+PC09D_Q6_PRISON-5=看來連你也不相信這是合適的方案。
+# Brok
+PC09D_Q6_PRISON-6=為何？
+# Brok
+PC09D_Q6_PRISON-7=監獄中的生活會讓他有的是時間改過自新。
+# Wes
+PC09D_Q6_PRISON-8=我還以為你已經很清楚我們的系統了。
+# Wes
+PC09D_Q6_PRISON-9=監獄的存在只有一個目的，那就是在審判前暫時安頓囚犯。
+# Tribotcop
+PC09D_Q6_PRISON-10=而且，政府最近在嘗試提升審判效率。
+# Tribotcop
+PC09D_Q6_PRISON-11=一旦方案落實，那麽監獄就沒有繼續存在必要了。
+# Wes
+PC09D_Q6_PRISON-12=到時候只會有三種結果。
+# Wes
+PC09D_Q6_PRISON-13=被釋放、被驅逐、或者……
+# Brok
+PC09D_Q6_PRISON-14=被殺死。
+# Wes
+PC09D_Q6_PRISON-15=我們傾向於稱之為“處決”。
+# Brok
+PC09D_Q6_PRISON-16=等等，你是說將由機器人來決定我們的生死？
+# Brok
+PC09D_Q6_PRISON-17=你說機器人幫助調查案子那是一回事……
+# Brok
+PC09D_Q6_PRISON-18=可是法官不該是只能由人類擔任的嗎？
+# Tribotcop
+PC09D_Q6_PRISON-19=政府依然在討論這一點的可行性。
+# Tribotcop
+PC09D_Q6_PRISON-20=實際上不必要。機器人不會犯錯。機器人永遠保持中立。
+# Brok
+PC09D_Q6_PRISON-21=誰說的？
+# Tribotcop
+PC09D_Q6_PRISON-22=局長，這道問題已經收集到足夠的答案了。
+# Wes
+PC09D_Q6_PRISON-23=嗯哼，同意。
+# Brok
+PC09D_Q6_PRISON-24=這世界真的瘋了……
+#----------------------------------------------------
+# Brok
+PC09D_Q6_KILL-1=那麽……阿信試圖搶劫珍貴藥品、還對警官下毒……
+# Brok
+PC09D_Q6_KILL-2=他還攻擊我，要不是我身手好恐怕早就沒命了！
+# Brok
+PC09D_Q6_KILL-3=你們還等什麽？快除掉他啊！
+#----------------------------------------------------
+# Wes
+PC09D_Q6_KILLOK-1=……
+# Wes
+PC09D_Q6_KILLOK-2=你竟然同意我們處決他。
+# Wes
+PC09D_Q6_KILLOK-3=真是看不透你了。
+# Brok
+PC09D_Q6_KILLOK-4=我…我只是開個玩笑……
+# Wes
+PC09D_Q6_KILLOK-5=被審問還有心情開玩笑確實只有你一個。
+#----------------------------------------------------
+# Wes
+PC09D_Q6_KILLNOTOK-1=不……你肯定不是這麽想的。
+# Wes
+PC09D_Q6_KILLNOTOK-2=你要麽是蠢到有剩，要麽是腦子進水了。
+# Brok
+PC09D_Q6_KILLNOTOK-3=我…我以為這是你想要的答案呀……
+# Wes
+PC09D_Q6_KILLNOTOK-4=我們想要的是真相。
+# Tribotcop
+PC09D_Q6_KILLNOTOK-5=該結果會被記錄為對象的優點。
+# Brok
+PC09D_Q6_KILLNOTOK-6=什麽意思？
+# Tribotcop
+PC09D_Q6_KILLNOTOK-7=在猶豫不決時會通過實事求是來處理問題。
+# Brok
+PC09D_Q6_KILLNOTOK-8=其實……我只是在撒謊而已。
+# Brok
+PC09D_Q6_KILLNOTOK-9=你休想改變我的理念。
+# Wes
+PC09D_Q6_KILLNOTOK-10=嗯哼。
+# Wes
+PC09D_Q6_KILLNOTOK-11=還真堅定……
+#----------------------------------------------------
+# Wes
+PC09D_Q8-1=下一題。
+# Wes
+PC09D_Q8-2=你有殺過人嗎？
+# Brok
+PC09D_Q8-3=啥？！
+# Wes
+PC09D_Q8-4=回答問題。
+# Brok
+PC09D_Q8-5=……
+#----------------------------------------------------
+# Brok
+PC09D_Q8_YES-1=有。當然殺過人！
+#----------------------------------------------------
+# Brok
+PC09D_Q8_NO-1=沒！從沒有殺過人。
+#----------------------------------------------------
+# Wes
+PC09D_Q8B-1=……
+# Tribotcop
+PC09D_Q8B-2=……
+# Brok
+PC09D_Q8B-3=……
+# Brok
+PC09D_Q8B-4=什麽鬼……？！
+# Wes
+PC09D_Q8B-5=唔。
+# Brok
+PC09D_Q8B-6=這不可能！我絕不會……
+#----------------------------------------------------
+# Brok
+PC09D_Q8_KILLEDTRAMP-1=……
+# Brok
+PC09D_Q8_KILLEDTRAMP-2=出乎意料吧？
+# Brok
+PC09D_Q8_KILLEDTRAMP-3=今早我……殺死了街上的一位流浪漢。
+# Wes
+PC09D_Q8_KILLEDTRAMP-4=是嗎？
+# Brok
+PC09D_Q8_KILLEDTRAMP-5=他……要求我這麽做的，他患了絕症。
+# Wes
+PC09D_Q8_KILLEDTRAMP-6=好吧。
+# Brok
+PC09D_Q8_KILLEDTRAMP-7=“好吧？”你就這點反應？
+# Wes
+PC09D_Q8_KILLEDTRAMP-8=流浪漢並不算作重要人士，確實來說是完全相反。
+# Brok
+PC09D_Q8_KILLEDTRAMP-9=我就知道你會這麽說，但他是個好人。
+# Wes
+PC09D_Q8_KILLEDTRAMP-10=嗯。
+#----------------------------------------------------
+# Brok
+PC09D_Q8_KILLEDNOONE-1=我……殺人這種冷血的事我做不出來！
+# Brok
+PC09D_Q8_KILLEDNOONE-2=是你的機器有問題！真的！
+# Wes
+PC09D_Q8_KILLEDNOONE-3=嗯哼。
+# Brok
+PC09D_Q8_KILLEDNOONE-4=除非……連機器人也算的話。
+# Wes
+PC09D_Q8_KILLEDNOONE-5=你殺過機器人？
+# Brok
+PC09D_Q8_KILLEDNOONE-6=機器是殺不死的，本來就沒有生命。
+# Tribotcop
+PC09D_Q8_KILLEDNOONE-7=……
+# Wes
+PC09D_Q8_KILLEDNOONE-8=嗯哼。
+# Wes
+PC09D_Q8_KILLEDNOONE-9=我問詳細一點吧。
+#----------------------------------------------------
+# Wes
+PC09D_Q9-1=是你殺死莉雅的嗎？
+# Brok
+PC09D_Q9-2=甚麼？！
+# Wes
+PC09D_Q9-3=回答我的問題！
+#----------------------------------------------------
+# Brok
+PC09D_Q9_YES-1=是！是我殺了她！
+# Brok
+PC09D_Q9_YES-2=然後把她碎屍萬段大快朵頤！
+#----------------------------------------------------
+# Brok
+PC09D_Q9_YESB-1=這次電得我心服口服……
+# Wes
+PC09D_Q9_YESB-2=所以說……你沒殺她。
+#----------------------------------------------------
+# Brok
+PC09D_Q9_NO-1=沒有！當然沒有！
+# Wes
+PC09D_Q9_NO-2=說大聲點。
+# Brok
+PC09D_Q9_NO-3=我沒有殺死莉雅！
+# Brok
+PC09D_Q9_NO-4=……
+# Tribotcop
+PC09D_Q9_NO-5=……
+# Tribotcop
+PC09D_Q9_NO-6=該答案的正確機率為99.998%。
+# Brok
+PC09D_Q9_NO-7=看到了？連白癡機器人都認同！
+# Wes
+PC09D_Q9_NO-8=嗯哼。
+# Brok
+PC09D_Q9_NO-9=這跟阿信的案子有關係嗎？！
+# Wes
+PC09D_Q9_NO-10=你待會可以再去投訴，審問還沒結束。
+#----------------------------------------------------
+# Wes
+PC09D_Q10-1=最後一道問題。
+# Wes
+PC09D_Q10-2=你究竟殺了誰？
+#----------------------------------------------------
+# Brok
+PC09D_Q10_NOONE-1=誰也沒有。
+# Brok
+PC09D_Q10_NOONE-2=我從未殺過人。
+#----------------------------------------------------
+# Wes
+PC09D_Q10_NOONEB-1=我就不明白你怎麽這麽鑽牛角尖。
+# Brok
+PC09D_Q10_NOONEB-2=你是想嫁禍我還是怎樣？！
+# Brok
+PC09D_Q10_NOONEB-3=別跟我說我殺了人自己都不知道！
+# Tribotcop
+PC09D_Q10_NOONEB-4=理論上來說有很低的機率對象會忘記自己所做過的事。
+# Tribotcop
+PC09D_Q10_NOONEB-5=這一般會發生在精神分裂症患者身上……
+# Brok
+PC09D_Q10_NOONEB-6=閉嘴，你這坨廢鐵！我沒精神病！
+# Wes
+PC09D_Q10_NOONEB-7=嗯哼。
+# Brok
+PC09D_Q10_NOONEB-8=……
+#----------------------------------------------------
+# Brok
+PC09D_Q10_ME-1=我殺了我自己。
+#----------------------------------------------------
+# Tribotcop
+PC09D_Q10_MEB-1=對象開始胡言亂語。
+# Wes
+PC09D_Q10_MEB-2=我可以確定你還活著……
+# Wes
+PC09D_Q10_MEB-3=不過你看來的確是有厭世的徵兆。
+# Brok
+PC09D_Q10_MEB-4=你連幽默感都丟了嗎？
+# Tribotcop
+PC09D_Q10_MEB-5=對我們來說幽默是個很模糊的概念，而且似乎會降低工作效率。
+# Brok
+PC09D_Q10_MEB-6=對對對，明白了。你真沒意思。
+# Brok
+PC09D_Q10_MEB-7=那麽。審問結束了吧？
+# Wes
+PC09D_Q10_MEB-8=你這麽做是為了逃避問題……
+# Wes
+PC09D_Q10_MEB-9=好吧。
+#----------------------------------------------------
+# Brok
+PC09D_Q10_NOIDEA-1=我……不記得了。
+# Wes
+PC09D_Q10_NOIDEA-2=……
+# Tribotcop
+PC09D_Q10_NOIDEA-3=……
+# Brok
+PC09D_Q10_NOIDEA-4=看見沒？沒有電擊！
+# Brok
+PC09D_Q10_NOIDEA-5=一定是你的測謊儀壞了。
+# Wes
+PC09D_Q10_NOIDEA-6=嗯哼，有可能。
+# Tribotcop
+PC09D_Q10_NOIDEA-7=我們同意對象的觀點，審問結果具有矛盾的性質。
+# Wes
+PC09D_Q10_NOIDEA-8=那好吧。
+#----------------------------------------------------
+# Brok
+PC09D_Q10_BOLT-1=對……我之前碰見過某個機器人。
+# Brok
+PC09D_Q10_BOLT-2=他被解雇後就很擔心會被重置出廠設定而失去記憶……
+# Brok
+PC09D_Q10_BOLT-3=他連說話的聲音都充滿著哀愁……
+# Wes
+PC09D_Q10_BOLT-4=嗯哼，所以你……
+# Brok
+PC09D_Q10_BOLT-5=消滅了他，是的。
+# Wes
+PC09D_Q10_BOLT-6=……
+# Tribotcop
+PC09D_Q10_BOLT-7=……
+# Brok
+PC09D_Q10_BOLT-8=正如我所說……這不算犯法吧？
+# Brok
+PC09D_Q10_BOLT-9=畢竟他就只是個機器人。
+# Wes
+PC09D_Q10_BOLT-10=嗯哼。
+# Wes
+PC09D_Q10_BOLT-11=然而你卻用「他」這個字來稱呼機器人。
+# Brok
+PC09D_Q10_BOLT-12=我……呃……
+# Brok
+PC09D_Q10_BOLT-13=你確定嗎？
+# Wes
+PC09D_Q10_BOLT-14=言歸正傳，「你究竟殺了誰？」
+# Brok
+PC09D_Q10_BOLT-15=噢……
+# Brok
+PC09D_Q10_BOLT-16=那個，或許是……不過……
+# Brok
+PC09D_Q10_BOLT-17=他們不是真的人，所以……
+# Wes
+PC09D_Q10_BOLT-18=他們就不算是生命體？
+# Brok
+PC09D_Q10_BOLT-19=對……大概是這樣子。
+# Wes
+PC09D_Q10_BOLT-20=嗯哼。
+# Tribotcop
+PC09D_Q10_BOLT-21=……
+#----------------------------------------------------
+# Brok
+PC09D_Q10_TRAMP-1=我跟你說……
+# Brok
+PC09D_Q10_TRAMP-2=今早我一出門就看見一位老頭子。
+# Wes
+PC09D_Q10_TRAMP-3=嗯哼。
+# Wes
+PC09D_Q10_TRAMP-4=我想他應該是位貧民吧。
+# Brok
+PC09D_Q10_TRAMP-5=對。
+# Wes
+PC09D_Q10_TRAMP-6=那就不算大事了。
+# Brok
+PC09D_Q10_TRAMP-7=的確……警察根本不會保護我們，對吧？
+# Wes
+PC09D_Q10_TRAMP-8=是的。
+# Tribotcop
+PC09D_Q10_TRAMP-9=以一般情況而言，被稱為「貧民」的群體對警察局沒有任何獎酬貢獻。
+# Brok
+PC09D_Q10_TRAMP-10=那你們機器人幹嘛還整天巡邏我們的街道？
+# Wes
+PC09D_Q10_TRAMP-11=無論何時何地，罪犯必須隨時被追捕。
+# Brok
+PC09D_Q10_TRAMP-12=但並非所有貧民都是罪犯。
+# Wes
+PC09D_Q10_TRAMP-13=到此為止。
+#----------------------------------------------------
+# Wes
+PC09D_OVER-1=審問結束。
+# Tribotcop
+PC09D_OVER-2=停止計時……
+# Brok
+PC09D_OVER-3=慢著！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After the interrogation
+# *****************************************************************
+# Brok
+PC09D_OVER1B-1=等等！
+# Brok
+PC09D_OVER1B-2=最後的幾個問題什麽意思？！
+# Brok
+PC09D_OVER1B-3=根本就跟阿信的案件無關！
+# Wes
+PC09D_OVER1B-4=我們的工作方式沒有對你解釋的必要。
+# Brok
+PC09D_OVER1B-5=哦……我懂了。
+# Brok
+PC09D_OVER1B-6=你還在怪罪我害死了莉雅？
+# Wes
+PC09D_OVER1B-7=那案子早已結案了，那是場意外。
+# Brok
+PC09D_OVER1B-8=那你為什麽還要重提舊事？
+# Wes
+PC09D_OVER1B-9=當年我們沒有這種先進的儀器。
+# Wes
+PC09D_OVER1B-10=我只是想確認些細節。
+# Brok
+PC09D_OVER1B-11=那麽……你滿意了嗎？
+# Wes
+PC09D_OVER1B-12=嗯哼。
+# Brok
+PC09D_OVER1B-13=我認為……
+# Wes
+PC09D_OVER1B-14=無關緊要。
+# Wes
+PC09D_OVER1B-15=你可以在牢房中慢慢思考。
+# Brok
+PC09D_OVER1B-16=牢房？！甚麼意思……
+# Brok
+PC09D_OVER1B-17=不是說了阿信的案子跟我無關嗎？
+# Wes
+PC09D_OVER1B-18=或許吧，但你本身也是個麻煩人物。
+# Wes
+PC09D_OVER1B-19=而且，調查AI需要時間來驗證你的供詞。
+# Brok
+PC09D_OVER1B-20=調查……AI？
+# Brok
+PC09D_OVER1B-21=你是指這案子將會由人工智慧來調查和結案？！
+# Wes
+PC09D_OVER1B-22=嗯哼。不是所有，但也差不多了。
+# Brok
+PC09D_OVER1B-23=太荒唐了！
+# Brok
+PC09D_OVER1B-24=我……氣死人了……
+# Wes
+PC09D_OVER1B-25=放心吧，你並非此案的嫌疑犯。
+# Wes
+PC09D_OVER1B-26=這案子其實簡單得很，一目了然。
+# Brok
+PC09D_OVER1B-27=是嗎？說不定阿信是被栽贓嫁禍的呢？
+# Wes
+PC09D_OVER1B-28=不太可能。
+# Wes
+PC09D_OVER1B-29=這件事就讓我們的演算法去處理吧！我們會盡快釋放你的。
+# Brok
+PC09D_OVER1B-30=越快越好！
+# Wes
+PC09D_OVER1B-31=嗯。
+# Wes
+PC09D_OVER1B-32=X-598號探員，請開始分析。
+# Wes
+PC09D_OVER1B-33=並通知RJ警員過來一趟。
+# Tribotcop
+PC09D_OVER1B-34=收到，局長。
+#----------------------------------------------------
+# Wes
+PC09D_OVER2-1=……
+# Wes
+PC09D_OVER2-2=過來這邊。
+# Brok
+PC09D_OVER2-3=啊……？
+#----------------------------------------------------
+# Wes
+PC09D_OVER3-1=這裏是死角。
+# Brok
+PC09D_OVER3-2=……？
+# Wes
+PC09D_OVER3-3=聽好了，我本身也很討厭這一套。
+# Wes
+PC09D_OVER3-4=讓那些人工智慧、演算法啊什麽的來辦案……
+# Wes
+PC09D_OVER3-5=簡直是狗屁不通，機器人不該取代我們來做決定的。
+# Brok
+PC09D_OVER3-6=非常認同！
+# Wes
+PC09D_OVER3-7=但是法律就是法律。
+# Wes
+PC09D_OVER3-8=我是警察局長，我得服從命令。
+# Brok
+PC09D_OVER3-9=誰的命令？！
+#----------------------------------------------------
+# RJ
+PC09D_OVER4-1=局長，你找我是嗎？
+# Wes
+PC09D_OVER4-2=是的，押送這個人去牢房。
+# RJ
+PC09D_OVER4-3=好的。
+#----------------------------------------------------
+# RJ
+PC09D_OVER5-1=阿嚏！
+# RJ
+PC09D_OVER5-2=喂！你是貓人嗎？
+# Brok
+PC09D_OVER5-3=啥……？
+# Wes
+PC09D_OVER5-4=別瞎掰，瞎子都能看得出他是爬蟲動物。
+# RJ
+PC09D_OVER5-5=對，可是我很討厭貓！
+# RJ
+PC09D_OVER5-6=我對貓毛過敏。阿嚏！
+# Wes
+PC09D_OVER5-7=夠了！
+# Wes
+PC09D_OVER5-8=要是再搞砸什麽事你就等著被解雇吧！
+# RJ
+PC09D_OVER5-9=好…好的……
+# RJ
+PC09D_OVER5-10=局長，你變了。
+# RJ
+PC09D_OVER5-11=你不曾威脅過我的……
+#----------------------------------------------------
+# Brok
+PC09D_DEAD1-1=……
+# Tribotcop
+PC09D_DEAD1-2=我的感應器顯示對象的重要器官已停止運作。
+# Wes
+PC09D_DEAD1-3=……
+# Wes
+PC09D_DEAD1-4=沒用的東西。
+# Wes
+PC09D_DEAD1-5=就算死也要給我們製造麻煩。
+# Wes
+PC09D_DEAD1-6=這次事件不准張揚。
+# Wes
+PC09D_DEAD1-7=清除掉包括屍體在內的所有物證，沒有人會在乎某個貧民的消失。
+# Tribotcop
+PC09D_DEAD1-8=遵命，局長！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Dee and Brok come to rescue Sin
+# *****************************************************************
+# Tribotcop
+PC09D_SMASH1-1=人類，未經授權！
+#----------------------------------------------------
+# Dee
+PC09D_SMASH_FIGHTEND-1=那道屏障堅固化了！
+# Brok
+PC09D_SMASH_FIGHTEND-2=前兩天還沒有這道牆的……看來是提高戒備了。
+# Dee
+PC09D_SMASH_FIGHTEND-3=毀了它，猛男！
+#----------------------------------------------------
+# Brok
+PC09D_SMASH_FINALLY-1=路通了！
+# Dee
+PC09D_SMASH_FINALLY-2=走吧！
+#----------------------------------------------------
+# Tribotcop
+PC09D_SPOTTED_STORY280B-1=人類怎麽會出現在這裏？！
+#----------------------------------------------------
+# Brok
+PC09D_TO_JAIL1-1=快到了！
+#----------------------------------------------------
+# Brok
+PC09D_TO_JAIL_NOPE-1=絕對不回頭！
+#----------------------------------------------------
+# Brok
+PC09D_BARRIER1-1=那裏本來沒有屏障的！
+# Dee
+PC09D_BARRIER1-2=這不重要，動手吧！
+# Brok
+PC09D_BARRIER1-3=希望會成功……
+#----------------------------------------------------
+# Brok
+PC09D_BARRIER_AFTER-1=只能暫時性關閉！
+#----------------------------------------------------
+# Dee
+PC09D_TO_PC09_NOPE-1=喂！你去哪？！
+# Brok
+PC09D_TO_PC09_NOPE-2=唔……不好意思。
+#----------------------------------------------------
+# Brok
+PC09D_TO_JAIL_DEE1-1=馬上就到了……！
+# Dee
+PC09D_TO_JAIL_DEE1-2=我們動作快！
+#----------------------------------------------------

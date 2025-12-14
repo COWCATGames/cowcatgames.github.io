@@ -1,0 +1,569 @@
+﻿#-------------------------------
+#=SLUM TRASHER HUNT
+#-------------------------------
+
+
+#----------------------
+#= First
+#----------------------
+ID=PC16_FIRST1
+T=This place has changed quite a bit since the last time I was here!
+W=BROK
+A=WONDER
+TEN=PC16_FIRST2
+CONTEXT=Room interactions
+
+
+
+
+#----------------------
+#= Window
+#----------------------
+ID=PC16_WINDOW1
+T=What a marvelous view...
+W=BROK
+A=HAPPY
+
+T=Maybe I should be surprised the glass is still intact.
+W=BROK
+A=THINK
+
+T=Actually Slumers aren't quite the vandals Drumers think we are. We don't break the law without good reason.
+W=BROK
+
+T=And spending hours searching for stuff with bare hands in those dumps ain't one.
+W=BROK
+A=READY
+
+
+#----------------------
+ID=PC16_WINDOW_AFTER
+T=...
+W=BROK
+A=TIRED
+
+T=Maybe there are vandals after all...
+W=BROK
+
+
+#----------------------
+#= Furniture
+#----------------------
+ID=PC16_FURNITURE1
+T=A piece of art... I guess?
+W=BROK
+A=THINK
+
+T=Must be new. Someone's been decorating the place. Maybe to attract more fellows?
+W=BROK
+
+T=Considering the filth covering it, not sure this is appropriate...
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Statue
+#----------------------
+ID=PC16_STATUE1
+T=A hat-stand?
+W=BROK
+A=THINK
+
+T=No thanks. I never take off my hat!
+W=BROK
+A=READY
+
+
+#----------------------
+ID=PC16_STATUE_HIT1
+T=Hey! A coupon was... ejected from this statue...?
+W=BROK
+A=WONDER
+TEN=PC16_STATUE_GETAD
+
+#----------------------
+ID=PC16_STATUE_HIT2
+T=Cool! Some more stuff came out!
+W=BROK
+A=HAPPY
+
+T=Hmm...
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC16_STATUE_HIT3
+T=It's a real pinata!
+W=BROK
+A=SURPRISED
+
+T=The more I hit it, the more stuff comes out!
+W=BROK
+A=READY
+
+#----------------------
+ID=PC16_STATUE_HIT4
+T=...
+W=BROK
+A=THINK
+
+T=Now I feel ashamed...
+W=BROK
+A=CONFUSED
+
+T=Oh well. I needed all this!
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+ID=PC16_WINDOW_BREAK
+T=...why did I do this?
+W=BROK
+A=WONDER
+
+
+#----------------------
+ID=PC16_CONTROLS_BREAK
+T=Uh oh...
+W=BROK
+A=THINK
+
+T=I broke somethin'?
+W=BROK
+A=CONFUSED
+
+
+#----------------------
+ID=PC16_CONTROLS_WRONG
+T=Something's wrong with the controls...
+W=BROK
+A=THINK
+NB=1
+D=90
+
+T=Maaaybe I shouldn't have hit this panel...
+W=BROK
+A=MAYBE
+D=90
+
+#----------------------
+#= Lever
+#----------------------
+ID=PC16_LEVER1
+T=If I remember correctly, this releases the rubble back into the dumps.
+W=BROK
+A=THINK
+#TEN=
+
+#----------------------
+ID=PC16_LEVER2
+T=Of course that works better when there IS rubble.
+W=BROK
+A=THINK
+
+
+
+#----------------------
+#= Outlet
+#----------------------
+ID=PC16_OUTLET1
+T=Rubble falls here.
+W=BROK
+A=MEH
+
+T=It's empty right now.
+W=BROK
+A=ALRIGHT
+
+#----------------------
+#= Money
+#----------------------
+ID=PC16_CONTROLS_UNIS1
+T=Gotta pay a few Unis for each try.
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC16_CONTROLS_NOMONEY1
+T=Oops... I'm broke!
+W=BROK
+A=STUPID
+
+#----------------------
+ID=PC16_CONTROLS_PRICE1
+T=Wait... What?!
+W=BROK
+A=SURPRISED
+
+T=The price has doubled! This inflation is outrageous...
+W=BROK
+A=ANGRY
+
+#----------------------
+#= Distance
+#----------------------
+ID=PC16_CONTROLS_DISTANCE1
+T=I believe that's the distance to a target the system has located.
+W=BROK
+A=THINK
+
+T=Could be anything though - from a treasure chest to a rusty washing machine!
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Tries
+#----------------------
+ID=PC16_CONTROLS_TRY1
+T=I think this column indicates the attempts.
+W=BROK
+A=THINK
+
+T=The limit is six. After that, the system resets itself to another target.
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Ad
+#----------------------
+ID=PC16_CONTROLS_AD1
+T=Hey, that's not part of the scenery! It's stuck on the panel.
+W=BROK
+A=READY
+TEN=PC16_CONTROLS_GETAD
+
+
+
+#----------------------
+#= Controls
+#----------------------
+ID=PC16_CONTROLS1
+T=Let's see... How do I use this, again?
+W=BROK
+A=THINK
+TEN=PC16_CONTROLS_TUTORIAL
+
+
+#------------------------------------
+#= Result according to what we get
+#------------------------------------
+ID=PC16_RESULT_NOTHING
+T=Hmm...
+W=BROK
+A=THINK
+CONTEXT=Mini game treasure hunt - Result according to what we get
+TEN=PC16_RESULT_NOTHINGDIALOG
+
+#------------------------------------
+ID=PC16_RESULT_NOTHING1
+T=Just rubbish.
+W=BROK
+A=OPPOSITE
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=PC16_RESULT_NOTHING2
+T=Nothing useful...
+W=BROK
+A=OPPOSITE
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=PC16_RESULT_NOTHING3
+T=Rubble, rubble...
+W=BROK
+A=OPPOSITE
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=PC16_RESULT_NOTHING4
+T=Nope...
+W=BROK
+A=OPPOSITE
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=PC16_RESULT_NOTHING5
+T=Full of garbage...
+W=BROK
+A=OPPOSITE
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=PC16_RESULT_NOTHING6
+T=Next!
+W=BROK
+A=OPPOSITE
+TEN=PC16_RESULT_LEVER
+
+
+#------------------------------------
+ID=PC16_RESULT_SOMETHING1
+T=Hey, what's that?
+W=BROK
+A=THINK
+TEN=PC16_RESULT_SOMETHINGCHECK
+
+#------------------------------------
+ID=PC16_RESULT_SOMETHING2
+T=I've found somethin'!
+W=BROK
+A=HAPPY
+TEN=PC16_RESULT_SOMETHINGCHECK
+
+#------------------------------------
+ID=PC16_RESULT_SOMETHING3
+T=Yes!
+W=BROK
+A=HAPPY
+TEN=PC16_RESULT_SOMETHINGCHECK
+
+#------------------------------------
+ID=PC16_RESULT_SOMETHING4
+T=It caught something...
+W=BROK
+A=READY
+TEN=PC16_RESULT_SOMETHINGCHECK
+
+#------------------------------------
+ID=PC16_RESULT_SOMETHING5
+T=Oh!
+W=BROK
+A=SURPRISED
+TEN=PC16_RESULT_SOMETHINGCHECK
+
+#------------------------------------
+ID=PC16_RESULT_ENERGYDRINK
+T=Cool, an energy drink!
+W=BROK
+A=HAPPY
+TEN=PC16_RESULT_GETITEMFOOD_NOTREAL
+
+#------------------------------------
+ID=PC16_RESULT_PIZZANT
+T=A pizzant!...
+W=BROK
+A=HAPPY
+TEN=PC16_RESULT_GETITEMFOOD_NOTREAL
+
+
+
+#------------------------------------
+ID=PC16_RESULT_PAMPALOS
+T=A... Pampalos! And it's not even rotten!
+W=BROK
+A=HAPPY
+
+T=I'll just have to clean it a bit...
+W=BROK
+A=READY
+TEN=PC16_RESULT_GETITEMFOOD_NOTREAL
+
+#------------------------------------
+ID=PC16_RESULT_NOTREAL1
+T=This must not be the "real" treasure the system is tracking.
+W=BROK
+A=THINK
+
+T=Let's continue!
+W=BROK
+A=READY
+TEN=PC16_RESULT_LEVER
+
+
+#------------------------------------
+ID=PC16_RESULT_ADVERT
+T=A... coupon? That's the big treasure?!
+W=BROK
+A=THINK
+
+T=Oh well... This goes into the collection.
+W=BROK
+A=MEH
+TEN=PC16_RESULT_GETAD
+
+
+#------------------------------------
+ID=PC16_RESULT_XPUPGRADE
+T=Interesting... A fight training video! I should learn a thing or two!
+W=BROK
+A=READY
+TEN=PC16_RESULT_DOXPUPGRADE
+
+#------------------------------------
+ID=PC16_RESULT_XPUPGRADE2
+T=An expert training video!
+W=BROK
+A=READY
+TEN=PC16_RESULT_DOXPUPGRADE2
+
+#------------------------------------
+ID=PC16_RESULT_ENERGYSERUM
+T=Nice. A precious energy serum!
+W=BROK
+A=READY
+TEN=PC16_RESULT_GIVEENERGYSERUM
+
+#------------------------------------
+ID=PC16_RESULT_UNIS50
+T=A small coupon for 50 Unis. Nice!
+W=BROK
+A=HAPPY
+TEN=PC16_RESULT_GET50UNIS
+
+#------------------------------------
+ID=PC16_RESULT_UNIS200
+T=Great, a 200 Unis coupon!
+W=BROK
+A=HAPPY
+
+T=Gotta wonder who loses that much money in the dumps...
+W=BROK
+A=THINK
+TEN=PC16_RESULT_GET200UNIS
+
+
+#------------------------------------
+ID=PC16_RESULT_UNIS500
+T=Woah!... 500 Unis?!
+W=BROK
+A=SURPRISED
+TEN=PC16_RESULT_GET500UNIS
+
+#------------------------------------
+ID=PC16_RESULT_MATERIAL7
+T=Wait a minute... I've seen this somewhere...
+W=BROK
+A=THINK
+
+T=...
+W=BROK
+
+T=Oh, yeah! That's the high precision clock Shay was looking for!
+W=BROK
+A=HAPPY
+
+T=People throw away such weird things sometimes...
+W=BROK
+A=WONDER
+TEN=PC16_RESULT_GETMATERIAL
+
+
+
+#----------------------
+#= Tribots dialog
+#----------------------
+ID=PC16_WINDOW_TRIBOTS1
+T=...?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+CONTEXT=If we break the glass, Tribots come to make us pay (one way or another...)
+
+T=Citizen. You've vandalized. This place.
+W=TRIBOTCOP
+
+T=Pay 200 Unis. Now...
+W=TRIBOTCOP
+
+T=Or be destroyed, I guess?
+W=BROK
+C1A=READY
+
+T=...or be destroyed.
+W=TRIBOTCOP
+
+T=So predictable!
+W=BROK
+C1A=OPPOSITE
+TEN=PC16_WINDOW_TRIBOTS_CHOICE
+
+
+#----------------------
+ID=PC16_WINDOW_TRIBOTS_PAY
+T=Okay, okay! Here's the moolah.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=TRIBOTCOP
+C2A=NORMAL
+TEN=PC16_WINDOW_TRIBOTS_LEAVE
+
+
+#----------------------
+ID=PC16_WINDOW_TRIBOTS_PAY2
+T=Not even a thank you? Hmmph.
+W=BROK
+A=OPPOSITE
+TEN=CLICKERS_BACK
+
+
+#----------------------
+ID=PC16_WINDOW_TRIBOTS_BROKE
+T=Oops! Not enough moolah!
+W=BROK
+A=ALRIGHT
+TEN=PC16_WINDOW_TRIBOTS_FIGHT
+
+#----------------------
+ID=PC16_WINDOW_TRIBOTS_FIGHT1
+T=No credits for you!
+W=BROK
+C1=BROK
+C1A=READY
+C2=TRIBOTCOP
+C2A=NORMAL
+TEN=PC16_WINDOW_TRIBOTS_STARTFIGHT
+
+
+#----------------------
+ID=PC16_MATERIAL_MISSING1
+T=Weird...
+W=BROK
+A=THINK
+CONTEXT=Checking with radar
+
+T=There's a signal but I can't quite find the material in this room.
+W=BROK
+
+T=Could this mean...?
+W=BROK
+A=WONDER
+
+#----------------------
+#= Try radar on controls
+#----------------------
+ID=PC16_CONTROLS_RADAR
+T=Yeah, the material must be there! Let's play!
+W=BROK
+A=READY
+TEN=PC16_CONTROLS_RADAR_REMOVE
+
+#----------------------
+#= Banner
+#----------------------
+ID=PC16_BANNER1
+T="Welcome to Trasher Hunt!"
+
+
+#------------------------------------
+ID=PC16_BLOW_MINE1
+T=Oops!
+W=BROK
+A=CONFUSED
+
+
+#------------------------------------
+ID=PC16_BLOW_MINE2
+T=Oh no...
+W=BROK
+A=DOWN
+
+###############################################
+# PROOFREAD - jblaker - 29/06/2019
+# PROOFREAD AND UDPATED - Chris Barnes - 05/08/2019
+###############################################

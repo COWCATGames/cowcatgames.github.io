@@ -1,0 +1,1308 @@
+#-------------------------------
+#=POLICE INTERROGATION
+#-------------------------------
+
+#----- Interactions --------
+PC_BARRIER=Bariera
+PC_TOJAIL=Do więzienia
+PC_TOENTRANCE=Do wyjścia
+
+#----- Choices / Items --------
+
+
+#----- Topics --------
+PC09D_QUESTION1=Jak masz na imię?
+PC09D_QUESTION2=Czym się zajmujesz?
+PC09D_QUESTION3=Dlaczego zostałeś detektywem?
+PC09D_QUESTION4=Jaką masz relację z Sinem?
+PC09D_QUESTION5=Co robiłeś dziś rano?
+PC09D_QUESTION6=Jak myślisz, co powinniśmy zrobić z Sinem?
+PC09D_QUESTION8=Zabiłeś kiedyś kogoś?
+PC09D_QUESTION9=Czy zabiłeś Lię?
+PC09D_QUESTION10=Kogo zabiłeś?
+
+
+CHOICE_HOTDOG=Hot dog
+CHOICE_PD=Prywatny detektyw
+CHOICE_HANDYMAN=Złota rączka
+CHOICE_DANCER=Tancerz
+CHOICE_GRAFF=Dla Graffa
+CHOICE_LIA=Dla Lii
+CHOICE_MONEY=Dla pieniędzy
+CHOICE_FRIEND=Przyjaciel
+CHOICE_CLIENT=Klient
+CHOICE_FOE=Wróg
+CHOICE_INVESTIGATING=Prowadzenie śledztwa
+CHOICE_HACKING=Hakowanie serwera
+CHOICE_HUNGRY=Jestem głodny!
+CHOICE_FREE=Wolny
+CHOICE_PRISON=Więzienie
+CHOICE_KILL=Zabij
+CHOICE_NOONE=Nikogo
+CHOICE_ME=Mnie
+CHOICE_NOIDEA=Nie wiem
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Both Sin and Brok have been arrested by Wes. He's going to interrogate Brok in this room
+# *****************************************************************
+# Brok                                 
+PC09D_INTRO1-1=Znalazłem trochę poszlak. Oczywiście miałem podejrzenia, ale...
+# Brok                                 
+PC09D_INTRO1-2=Detektyw musi ufać swoim klientom choć minimalnie, wiesz? I wtedy zdałem sobie sprawę, że Sin...
+# Wes                                 
+PC09D_INTRO1-3=Zamknij się!
+# Brok                                 
+PC09D_INTRO1-4=Uch...
+# Wes                                 
+PC09D_INTRO1-5=Co za gaduła.
+# Wes                                 
+PC09D_INTRO1-6=Siadaj.
+#----------------------------------------------------
+# Brok                                 
+PC09D_INTRO2-1=Chwila...
+# Brok                                 
+PC09D_INTRO2-2=Pokój przesłuchań?
+# Wes                                 
+PC09D_INTRO2-3=Cóż za bystrość.
+# Brok                                 
+PC09D_INTRO2-4=Nie miałeś najpierw przesłuchać Sina?
+# Wes                                 
+PC09D_INTRO2-5=Tak. W odpowiednim czasie.
+# Wes                                 
+PC09D_INTRO2-6=Siadaj!
+# Brok                                 
+PC09D_INTRO2-7=Ech... Dobra.
+#----------------------------------------------------
+# Brok                                 
+PC09D_INTRO3-1=Te kajdanki są takie ciasne.
+# Brok                                 
+PC09D_INTRO3-2=Nie są tak naprawdę potrzebne...
+# Wes                                 
+PC09D_INTRO3-3=Nie bądź dzieckiem. Taka jest procedura.
+# Brok                                 
+PC09D_INTRO3-4=Tak... Procedury, srocedury...
+# Brok                                 
+PC09D_INTRO3-5=Nic się nie zmieniłeś, co? Przez te wszystkie lata...
+# Wes                                 
+PC09D_INTRO3-6=To nie ma związku ze sprawą.
+# Brok                                 
+PC09D_INTRO3-7=Więc... Jaka jest moja wina?
+# Wes                                 
+PC09D_INTRO3-8=Określimy to.
+# Tribotcop                                 
+PC09D_INTRO3-9=...
+# Brok                                 
+PC09D_INTRO3-10=...
+# Brok                                 
+PC09D_INTRO3-11=Nie czuję się komfortowo z tym, że ten robot na nas patrzy. Po co on tu w ogóle jest?
+# Wes                                 
+PC09D_INTRO3-12=By spełnić techniczne wymagania, takie jak nagrywanie i testowanie sprzętu.
+# Wes                                 
+PC09D_INTRO3-13=Proszę go ignorować.
+# Tribotcop                                 
+PC09D_INTRO3-14=Rozpoczynanie...
+#----------------------------------------------------
+# Brok                                 
+PC09D_INTRO4-1=Do czego służy ten przyrząd?
+# Wes                                 
+PC09D_INTRO4-2=Procedura.
+# Brok                                 
+PC09D_INTRO4-3=Dość z tymi bzdurami o procedurze! Mam prawo wiedzieć, co to jest!
+# Wes                                 
+PC09D_INTRO4-4=Dobrze. To wykrywacz kłamstw.
+# Brok                                 
+PC09D_INTRO4-5=Co? Myślałem, że nie są dość wiarygodne, żeby...
+# Wes                                 
+PC09D_INTRO4-6=Inżynierowie wprowadzili znaczące ulepszenia.
+# Tribotcop                                 
+PC09D_INTRO4-7=Fałszywe odpowiedzi pozytywne zostały zmniejszone do 0,02%, co zostało uznane za akceptowalny wskaźnik.
+# Tribotcop                                 
+PC09D_INTRO4-8=Dlatego sprzęt ten został ostatnio zatwierdzony przez nasz Rząd.
+# Wes                                 
+PC09D_INTRO4-9=Bardzo cenny nabytek.
+# Tribotcop                                 
+PC09D_INTRO4-10=Kalibracja trwa... Obiekt nie może się ruszać.
+# Wes                                 
+PC09D_INTRO4-11=Drobna rada. Lepiej nie kłamać.
+# Brok                                 
+PC09D_INTRO4-12=Bo co? Bo to mnie porazi?
+#----------------------------------------------------
+# Brok                                 
+PC09D_INTRO4B-1=Nie ma mowy!
+# Brok                                 
+PC09D_INTRO4B-2=To w ogóle legalne?
+# Tribotcop                                 
+PC09D_INTRO4B-3=Kalibracja zakończona.
+# Wes                                 
+PC09D_INTRO4B-4=Całkowicie legalne.
+# Wes                                 
+PC09D_INTRO4B-5=Pokazałbym przepisy, ale nie wiem, czy potrafisz czytać.
+# Brok                                 
+PC09D_INTRO4B-6=Mrrr...
+# Brok                                 
+PC09D_INTRO4B-7=Chodziłem do szkoły... kilka lat.
+# Wes                                 
+PC09D_INTRO4B-8=Zaczynamy?
+#----------------------------------------------------
+# Wes                                 
+PC09D_INTRO5-1=Słuchaj uważnie.
+# Wes                                 
+PC09D_INTRO5-2=Zadam ci 10 pytań.
+# Wes                                 
+PC09D_INTRO5-3=Na odpowiedź na każde z nich jest 10 sekund.
+# Tribotcop                                 
+PC09D_INTRO5-4=Poleca się podawać pierwszą odpowiedź, jaka przyjdzie do głowy.
+# Wes                                 
+PC09D_INTRO5-5=Naszym jedynym celem jest rozwiązanie tej sprawy.
+# Wes                                 
+PC09D_INTRO5-6=Jeśli to urządzenie wykryje kłamstwo...
+# Brok                                 
+PC09D_INTRO5-7=Niech zgadnę. Porażenie?
+# Wes                                 
+PC09D_INTRO5-8=A-ha.
+# Brok                                 
+PC09D_INTRO5-9=To dobrze, że nie mam włosów. Ale byłby bałagan!
+# Tribotcop                                 
+PC09D_INTRO5-10=Włączam timer...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Wes interrogates Brok. The player has various choices possible.
+# *****************************************************************
+# Wes                                 
+PC09D_INTRO5B-1=Dobra, pierwsze pytanie.
+# Wes                                 
+PC09D_INTRO5B-2=Jak masz na imię?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q1_BROK-1=Znasz moje imię, inspektorze.
+# Wes                                 
+PC09D_Q1_BROK-2=Nie jestem już inspektorem. Od teraz mów mi "komisarz Wes".
+# Brok                                 
+PC09D_Q1_BROK-3=Och. Dobrze, inspoktorze... E, komisarzu.
+# Tribotcop                                 
+PC09D_Q1_BROK-4=To pytanie ma zapewnić kontrolę krzyżową i dostosowanie wyników końcowych.
+# Wes                                 
+PC09D_Q1_BROK-5=Nadal nie usłyszałem twojego imienia.
+# Brok                                 
+PC09D_Q1_BROK-6=Och, e... Tak. Jestem Brok.
+# Wes                                 
+PC09D_Q1_BROK-7=Na pewno?
+# Brok                                 
+PC09D_Q1_BROK-8=Oczywiście!
+# Wes                                 
+PC09D_Q1_BROK-9=Nazwisko?
+# Brok                                 
+PC09D_Q1_BROK-10=Po prostu Brok.
+# Tribotcop                                 
+PC09D_Q1_BROK-11=Badany zarejestrowany teraz jako Po-Prostu-Brok.
+# Brok                                 
+PC09D_Q1_BROK-12=Nie, miałem na myśli... Pf, nieważne.
+#---------------------------------------------------
+# Brok                                 
+PC09D_Q1_WES-1=Twoje imię...? Wes, oczywiście.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q1_WESB-1=Nie pytałem o swoje imię!
+# Wes                                 
+PC09D_Q1_WESB-2=Wiem, to trudne dla gadziego mózgu, który ma zdolności poniżej przeciętnej, ale skup się!
+# Brok                                 
+PC09D_Q1_WESB-3=Hej! Żartowałem! Nie trzeba mnie obrażać.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q1_HOTDOG-1=Hot dog.
+# Wes                                 
+PC09D_Q1_HOTDOG-2=...
+# Tribotcop                                 
+PC09D_Q1_HOTDOG-3=...
+# Brok                                 
+PC09D_Q1_HOTDOG-4=... Spodziewałem się porażenia.
+# Wes                                 
+PC09D_Q1_HOTDOG-5=Nie jesteś jedyny. Jakieś wyjaśnienie?
+# Tribotcop                                 
+PC09D_Q1_HOTDOG-6=Badany może mieć sekretne pragnienie, by być nazywanym hot dogiem.
+# Brok                                 
+PC09D_Q1_HOTDOG-7=Nie miałem pojęcia...
+# Wes                                 
+PC09D_Q1_HOTDOG-8=To wiele o nas mówi. Byle tak dalej.
+# Brok                                 
+PC09D_Q1_HOTDOG-9=Em... Dobrze...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When the player doesn't take a choice
+# *****************************************************************
+# Brok                                 
+PC09D_TIMEOUT-1=Em...
+#----------------------------------------------------
+# Wes                                 
+PC09D_TIMEOUT1-1=Nie trać tyle czasu na odpowiedź!
+#----------------------------------------------------
+# Wes                                 
+PC09D_TIMEOUT2-1=Znowu?!
+# Brok                                 
+PC09D_TIMEOUT2-2=Hej, potrzebuję więcej czasu!
+#----------------------------------------------------
+# Wes                                 
+PC09D_TIMEOUT3-1=Bez przesady, to nie takie trudne!
+# Brok                                 
+PC09D_TIMEOUT3-2=Bez presji, co? Nie to że mam na głowie narzędzie tortur!
+#----------------------------------------------------
+# Brok                                 
+PC09D_TIMEOUT4-1=Ach... Mózg mi się roztapia.
+# Wes                                 
+PC09D_TIMEOUT4-2=Przynajmniej to, co z niego zostało.
+#----------------------------------------------------
+# Wes                                 
+PC09D_TIMEOUT5-1=To nie może być prawda.
+# Tribotcop                                 
+PC09D_TIMEOUT5-2=Badany ma 54,6% prawdopodobieństwo na popełnienie samobójstwa, 40,4% prawdopodobieństwo na czerpanie przyjemności z bólu i 5% na oba.
+#----------------------------------------------------
+# Wes                                 
+PC09D_TIMEOUT6-1=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More interrogation
+# *****************************************************************
+# Wes                                 
+PC09D_Q2-1=Następne pytanie.
+# Wes                                 
+PC09D_Q2-2=Czym się zajmujesz?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q2_PD-1=To oczywiste. Jestem prywatnym detektywem.
+# Wes                                 
+PC09D_Q2_PD-2=A-ha.
+# Wes                                 
+PC09D_Q2_PD-3=O ile dobrze pamiętam, byłeś bokserem.
+# Brok                                 
+PC09D_Q2_PD-4=Skończyłem karierę boksera. Zaraz po tym, jak zamknięto ringi.
+# Wes                                 
+PC09D_Q2_PD-5=Zostały zastąpione przez wirtualne areny.
+# Wes                                 
+PC09D_Q2_PD-6=Proszę spróbować! Można zarobić dużo kasy.
+# Brok                                 
+PC09D_Q2_PD-7=Och... Cóż, em...
+# Brok                                 
+PC09D_Q2_PD-8=Nie odważyłbym się wziąć w tym udziału... Są nielegalne.
+# Wes                                 
+PC09D_Q2_PD-9=A-ha.
+# Wes                                 
+PC09D_Q2_PD-10=...
+# Brok                                 
+PC09D_Q2_PD-11=...
+# Tribotcop                                 
+PC09D_Q2_PD-12=Badany wydaje się zdenerwowany. Potliwość wzrosła o 50%.
+# Tribotcop                                 
+PC09D_Q2_PD-13=Powinniśmy dodać do kolejki nowe pytanie?
+# Wes                                 
+PC09D_Q2_PD-14=To nie będzie konieczne.
+# Brok                                 
+PC09D_Q2_PD-15=...
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q2_HANDYMAN-1=Jestem złotą rączką!
+# Brok                                 
+PC09D_Q2_HANDYMAN-2=Hydraulika, szycie, czasem nawet gotowanie!
+# Wes                                 
+PC09D_Q2_HANDYMAN-3=...
+# Brok                                 
+PC09D_Q2_HANDYMAN-4=Widzisz? Mówię prawdę!
+# Wes                                 
+PC09D_Q2_HANDYMAN-5=Nic dziwnego. Wykorzystujesz swoje największe zdolności.
+# Tribotcop                                 
+PC09D_Q2_HANDYMAN-6=Ta odpowiedź nie ma sensu.
+# Tribotcop                                 
+PC09D_Q2_HANDYMAN-7=Wszystkie te zadania mogą wykonywać boty, z większą efektywnością niż ludzie.
+# Brok                                 
+PC09D_Q2_HANDYMAN-8=Mieszkańcy Slumsów nigdy nie przekazaliby swoich prac w ręce puszek!
+# Wes                                 
+PC09D_Q2_HANDYMAN-9=I nie stać was na boty.
+# Brok                                 
+PC09D_Q2_HANDYMAN-10=... Tak.
+# Wes                                 
+PC09D_Q2_HANDYMAN-11=Wasza populacja stale spada. Wkrótce nie będziecie mieli wyjścia...
+# Brok                                 
+PC09D_Q2_HANDYMAN-12=Nigdy!
+# Brok                                 
+PC09D_Q2_HANDYMAN-13=Najsilniejsi przetrwają. Tak było zawsze.
+# Wes                                 
+PC09D_Q2_HANDYMAN-14=A-ha. Cała prawda.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q2_DANCER-1=A jak myślisz?
+# Brok                                 
+PC09D_Q2_DANCER-2=Jestem tancerzem! Czasem daję lekcje...
+#----------------------------------------------------
+# Tribotcop                                 
+PC09D_Q2_DANCERB-1=Z powodu jego proporcji to fizycznie niemożliwe, by badany był dobrym tancerzem.
+# Brok                                 
+PC09D_Q2_DANCERB-2=Mówiłem, że tańczę... Nie, że jestem w tym dobry.
+# Wes                                 
+PC09D_Q2_DANCERB-3=Przestań tracić nasz czas. Im więcej będziesz kombinował, tym dłużej będziemy cię trzymać.
+# Brok                                 
+PC09D_Q2_DANCERB-4=Jesteś po prostu zazdrosny!
+# Wes                                 
+PC09D_Q2_DANCERB-5=...
+# Wes                                 
+PC09D_Q2_DANCERB-6=Nadal czekamy na odpowiedź.
+# Brok                                 
+PC09D_Q2_DANCERB-7=Dobra, dobra. Jestem prywatnym detektywem. Zadowolony?
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q3-1=Następne pytanie.
+# Wes                                 
+PC09D_Q3-2=Dlaczego zostałeś detektywem?
+# Brok                                 
+PC09D_Q3-3=I złotą rączką.
+# Wes                                 
+PC09D_Q3-4=Nieważne.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q3_GRAFF-1=Robię to dla Graffa.
+# Wes                                 
+PC09D_Q3_GRAFF-2=...
+# Wes                                 
+PC09D_Q3_GRAFF-3=Graff...
+# Wes                                 
+PC09D_Q3_GRAFF-4=...
+# Brok                                 
+PC09D_Q3_GRAFF-5=Uch?
+# Wes                                 
+PC09D_Q3_GRAFF-6=Och.
+# Wes                                 
+PC09D_Q3_GRAFF-7=Przypuszczam, że to twój syn.
+# Brok                                 
+PC09D_Q3_GRAFF-8=Nie... To syn Lii.
+# Brok                                 
+PC09D_Q3_GRAFF-9=Poprosiła mnie w testamencie, żebym...
+# Brok                                 
+PC09D_Q3_GRAFF-10=Hej. Myślałem, że pamiętasz?
+# Brok                                 
+PC09D_Q3_GRAFF-11=W końcu to ty prowadziłeś sprawę pięć lat temu...
+# Wes                                 
+PC09D_Q3_GRAFF-12=Moja pamięć nie jest w bazie.
+# Tribotcop                                 
+PC09D_Q3_GRAFF-13=Szef ma na myśli, że się starzeje i nie jest tak sprawny jak kiedyś.
+# Brok                                 
+PC09D_Q3_GRAFF-14=Chyba tak. Też ostatnio tracę pamięć.
+# Brok                                 
+PC09D_Q3_GRAFF-15=Nieważne...
+# Brok                                 
+PC09D_Q3_GRAFF-16=Musiałem zarabiać na życie, dla nas obu.
+# Brok                                 
+PC09D_Q3_GRAFF-17=Policja nam nie pomaga, więc pomyślałem, że wielu mieszkańcom Slumsów przyda się moja pomoc...
+# Wes                                 
+PC09D_Q3_GRAFF-18=A-ha.
+# Brok                                 
+PC09D_Q3_GRAFF-19=...
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q3_LIA-1=Po śmierci Lii...
+# Brok                                 
+PC09D_Q3_LIA-2=Nie mogłem dojść do siebie.
+# Brok                                 
+PC09D_Q3_LIA-3=Wiesz...
+# Wes                                 
+PC09D_Q3_LIA-4=Oczywiście. Prowadziłem tę sprawę.
+# Brok                                 
+PC09D_Q3_LIA-5=Pomyślałem... Jeśli zostanę detektywem, będę miał szansę znaleźć sprawcę.
+# Brok                                 
+PC09D_Q3_LIA-6=Ktoś... musi za to zapłacić.
+# Wes                                 
+PC09D_Q3_LIA-7=Więc to zemsta.
+# Brok                                 
+PC09D_Q3_LIA-8=...
+# Brok                                 
+PC09D_Q3_LIA-9=Nie jestem pewien. Dużo się stało od tamtej pory.
+# Wes                                 
+PC09D_Q3_LIA-10=Ale nigdy nie znalazłeś żadnej wskazówki.
+# Brok                                 
+PC09D_Q3_LIA-11=Nie... Nie mam czasu się teraz na tym skupiać.
+# Brok                                 
+PC09D_Q3_LIA-12=Ale nie tracę nadziei.
+# Tribotcop                                 
+PC09D_Q3_LIA-13=Nadzieja to trudny koncept do pojęcia. Nie polega na żadnych prawdziwych danych.
+# Brok                                 
+PC09D_Q3_LIA-14=Dlatego nigdy nie będziesz niczym więcej niż chodzącymi kawałkami metalu.
+# Tribotcop                                 
+PC09D_Q3_LIA-15=Wyczuwam wrogość od badanego.
+# Wes                                 
+PC09D_Q3_LIA-16=Kontynuujmy.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q3_MONEY-1=Co jeszcze? Dla pieniędzy, oczywiście!
+# Brok                                 
+PC09D_Q3_MONEY-2=Nie masz pojęcia, ile ludzie są gotowi wydać na to, by ktoś wyniósł śmieci lub naprawił im toaletę!
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q3_MONEYB-1=Próbujesz nam zaimponować? Nie wyszło.
+# Brok                                 
+PC09D_Q3_MONEYB-2=Nie jestem taki...! Nie rozumiem...
+# Wes                                 
+PC09D_Q3_MONEYB-3=Wierzę. Pewnie wykrywacz kłamstw usmażył ci znaczną część mózgu.
+# Brok                                 
+PC09D_Q3_MONEYB-4=Tak!
+# Brok                                 
+PC09D_Q3_MONEYB-5=Tak naprawdę ledwo łączę koniec z końcem.
+# Brok                                 
+PC09D_Q3_MONEYB-6=Jasne, dostaję zlecenia... Od ludzi jeszcze biedniejszych niż ja.
+# Brok                                 
+PC09D_Q3_MONEYB-7=Zazwyczaj ciężko mi prosić ich o wynagrodzenie.
+# Wes                                 
+PC09D_Q3_MONEYB-8=Praca za darmo? Jakie to altruistyczne.
+# Tribotcop                                 
+PC09D_Q3_MONEYB-9=Popłakałbym się, gdybym mógł.
+# Brok                                 
+PC09D_Q3_MONEYB-10=Cicho. Nie masz pojęcia, co to życie...
+# Brok                                 
+PC09D_Q3_MONEYB-11=Co to prawdziwe życie.
+# Wes                                 
+PC09D_Q3_MONEYB-12=A-ha.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q4-1=Następne pytanie.
+# Wes                                 
+PC09D_Q4-2=Jaką masz relację z Sinem?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_FRIEND_FALSE-1=To dobry facet. Nazwałbym go teraz przyjacielem.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_FRIENDB-1=Okej, okej. To prawda. Nienawidzę go.
+# Brok                                 
+PC09D_Q4_FRIENDB-2=Straciłem czas, a nigdy mi nie zapłacił!
+# Wes                                 
+PC09D_Q4_FRIENDB-3=To na pewno.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-1=Mimo tego, co się stało... żal mi go.
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-2=Był gotowy narazić swoje życie dla córki. Kto zrobiłby to samo?
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-3=...
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-4=Żal ci go...
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-5=Co? Co masz na myśli?
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-6=Imponujące. I nazywasz się detektywem!
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-7=Nie wyobrażasz sobie nawet przez chwilę... że to, co powiedział...
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-8=Może być kłamstwem?!
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-9=...
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-10=Niemożliwe. Znam go...
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-11=Poznałeś go tamtego ranka.
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-12=Poza tym zauważyłem zdjęcie jego żony i córki.
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-13=To mógł być każdy. Ktoś, kogo wydrukował z Triwebu.
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-14=Potrafię rozróżnić prawdę od kłamstwa bez tej przeklętej maszyny.
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-15=Tak jak potrafię ślepo zaufać niektórym... i nigdy nie zaufać innym.
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-16=Ty jesteś w tej drugiej katergorii.
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-17=...
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-18=W naszej pracy nie ufamy uczuciom. Ufamy namacalnym, twardym jak skała faktom.
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-19=Nic się nie zmieniłeś...
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-20=Nie różnisz się od tego robota polegającego na danych...
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-21=Wolę być kiepskim detektywem niż zimnym jak lód policjantem bez serca jak ty!
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-22=A-ha.
+# Brok                                 
+PC09D_Q4_FRIEND_TRUE-23=Przestaniesz z tym?! To strasznie stresujące!
+# Wes                                 
+PC09D_Q4_FRIEND_TRUE-24=A-ha.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_CLIENT-1=Był moim... klientem.
+# Wes                                 
+PC09D_Q4_CLIENT-2=A-ha.
+# Brok                                 
+PC09D_Q4_CLIENT-3=Szukał czegoś, co zgubił...
+# Wes                                 
+PC09D_Q4_CLIENT-4=Broń. Nie musisz tłumaczyć.
+# Tribotcop                                 
+PC09D_Q4_CLIENT-5=Rozmowa między badanym a podejrzanym została całkowicie nagrana jako dowód numer 2563.
+# Brok                                 
+PC09D_Q4_CLIENT-6=Więc wszystko wiecie!
+# Brok                                 
+PC09D_Q4_CLIENT-7=Jaki jest cel tego całego przesłuchania?!
+# Wes                                 
+PC09D_Q4_CLIENT-8=To ja tu zadaję pytania. Proszę się skupić.
+# Wes                                 
+PC09D_Q4_CLIENT-9=Jak się poznaliście?
+# Brok                                 
+PC09D_Q4_CLIENT-10=Wielokrotnie próbował się do mnie dodzwonić...
+# Brok                                 
+PC09D_Q4_CLIENT-11=Chyba znalazł mnie w Triwebie. Widziałem jego wyszukiwania.
+# Wes                                 
+PC09D_Q4_CLIENT-12=A-ha.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_ENEMY_FALSE-1=A jak myślisz? Nienawidzę go!
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_ENEMYB-1=B-Ale on... mnie zaatakował! Prawie mnie zabił!
+# Wes                                 
+PC09D_Q4_ENEMYB-2=Wiem. Niezła walka.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_ENEMY_AFTER-1=Chwila...
+# Brok                                 
+PC09D_Q4_ENEMY_AFTER-2=Jesteście tam? Przyglądacie się?!
+# Wes                                 
+PC09D_Q4_ENEMY_AFTER-3=Rozwiązujemy sprawy, a nie zapobiegamy małym kłótniom.
+# Brok                                 
+PC09D_Q4_ENEMY_AFTER-4=Więc nie mielibyście nic przeciwko, gdyby któryś z nas zginął?!
+# Tribotcop                                 
+PC09D_Q4_ENEMY_AFTER-5=Podejrzany był zagrożeniem dla obywatela pierwszej klasy. Nie mieliśmy powodów do interwencji.
+# Tribotcop                                 
+PC09D_Q4_ENEMY_AFTER-6=Jeden więzień mniej to miejsce dla innego. Czysta logika.
+# Brok                                 
+PC09D_Q4_ENEMY_AFTER-7=Nie wierzę...
+# Wes                                 
+PC09D_Q4_ENEMY_AFTER-8=W każdym razie, w takich okolicznościach protokół rekomenduje śmiertelne użycie broni.
+# Wes                                 
+PC09D_Q4_ENEMY_AFTER-9=Powinieneś być wdzięczny, że nie interweniowaliśmy!
+# Brok                                 
+PC09D_Q4_ENEMY_AFTER-10=O tak... Zawsze mam takie szczęście.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q4_ENEMY_TRUE-1=Jak myślisz? Nienawidzę go!
+# Brok                                 
+PC09D_Q4_ENEMY_TRUE-2=...
+# Brok                                 
+PC09D_Q4_ENEMY_TRUE-3=(Dziwne. Myślałem, że mnie porazi.)
+# Wes                                 
+PC09D_Q4_ENEMY_TRUE-4=Słusznie. W końcu cię zaatakował.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q5-1=Następne pytanie.
+# Wes                                 
+PC09D_Q5-2=Co robiłeś dziś rano?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q5_INVESTIGATING-1=Prowadziłem śledztwo.
+# Wes                                 
+PC09D_Q5_INVESTIGATING-2=Dokładniej.
+# Brok                                 
+PC09D_Q5_INVESTIGATING-3=Poszedłem do domu Sina... Potem do kanałów...
+# Brok                                 
+PC09D_Q5_INVESTIGATING-4=O, a wcześniej przekroczyłem granicę, żeby sprawdzić wskazówki w alejce i aptece...
+# Wes                                 
+PC09D_Q5_INVESTIGATING-5=A-ha. Przekroczył pan granicę.
+# Wes                                 
+PC09D_Q5_INVESTIGATING-6=...
+# Brok                                 
+PC09D_Q5_INVESTIGATING-7=Em... Wiesz...
+# Brok                                 
+PC09D_Q5_INVESTIGATING-8=Byłem Burżujem, więc...
+# Wes                                 
+PC09D_Q5_INVESTIGATING-9=Nadal masz dostęp?
+# Wes                                 
+PC09D_Q5_INVESTIGATING-10=To nie do przyjęcia. Powinien być dawno cofnięty.
+# Tribotcop                                 
+PC09D_Q5_INVESTIGATING-11=Czy należy sprawdzić to w głównej bazie danych?
+# Wes                                 
+PC09D_Q5_INVESTIGATING-12=Tak, poproszę.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q5_INVESTIGATING2-1=Wspominałeś o ściekach.
+# Brok                                 
+PC09D_Q5_INVESTIGATING2-2=Em... Tak. Tam doprowadził mnie trop broni.
+# Wes                                 
+PC09D_Q5_INVESTIGATING2-3=Opowiedz mi o Szczurasach.
+# Brok                                 
+PC09D_Q5_INVESTIGATING2-4=Ich lider i kilku jego ludzi nie chcieli mnie przepuścić, więc...
+# Brok                                 
+PC09D_Q5_INVESTIGATING2-5=Hej, ale... Skąd pan wie, że ich spotkałem?
+# Wes                                 
+PC09D_Q5_INVESTIGATING2-6=Tak przypuszczałem. Dużo sprawiają ostatnio kłopotów.
+# Wes                                 
+PC09D_Q5_INVESTIGATING2-7=Właśnie potwierdziłeś nasze przypuszczenia.
+# Brok                                 
+PC09D_Q5_INVESTIGATING2-8=Tak. Musicie coś z nimi zrobić!
+# Brok                                 
+PC09D_Q5_INVESTIGATING2-9=Zachowują się, jakby to był ich teren...
+# Wes                                 
+PC09D_Q5_INVESTIGATING2-10=W swoim czasie.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q5_REVOCATION-1=Gulp!
+# Tribotcop                                 
+PC09D_Q5_REVOCATION-2=...
+# Tribotcop                                 
+PC09D_Q5_REVOCATION-3=Dane znalezione. Prośba o cofnięcie...
+# Tribotcop                                 
+PC09D_Q5_REVOCATION-4=Brak dostępności. Kolejka zarezerwowana.
+# Tribotcop                                 
+PC09D_Q5_REVOCATION-5=Proces zostanie wykonany najszybciej, jak to możliwe. Za około...
+# Tribotcop                                 
+PC09D_Q5_REVOCATION-6=58 godzin i 35 minut.
+# Wes                                 
+PC09D_Q5_REVOCATION-7=Co za powolny proces.
+# Wes                                 
+PC09D_Q5_REVOCATION-8=Najważniejsze, że będzie zrobione.
+# Brok                                 
+PC09D_Q5_REVOCATION-9=(Dobrze. Zostanie mi trochę czasu.)
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q5_HACKING-1=Sin zgłosił, że zgubił broń na ilucy Burżujów.
+# Brok                                 
+PC09D_Q5_HACKING-2=Desperacko musiałem przekroczyć posterunek...
+# Brok                                 
+PC09D_Q5_HACKING-3=Więc wszedłem do piramidalnego budynku, włamałem się do serwera i dodałem swoje dane.
+# Brok                                 
+PC09D_Q5_HACKING-4=Kurczę, było ciężko! To miejsce roi się od laserów!
+# Brok                                 
+PC09D_Q5_HACKING-5=Pomogła mi moja przyjaciółka Shay. Jest ekspertką w hakowaniu serwerów!
+# Wes                                 
+PC09D_Q5_HACKING-6=...
+# Tribotcop                                 
+PC09D_Q5_HACKING-7=...
+# Brok                                 
+PC09D_Q5_HACKING-8=Em... To zawstydzające.
+# Wes                                 
+PC09D_Q5_HACKING-9=No coś takiego.
+# Wes                                 
+PC09D_Q5_HACKING-10=Nie tylko przyznałeś się do przestępstwa...
+# Wes                                 
+PC09D_Q5_HACKING-11=Ale też wplątałeś w to swoją przyjaciółkę.
+# Wes                                 
+PC09D_Q5_HACKING-12=Brawo.
+# Brok                                 
+PC09D_Q5_HACKING-13=Dziękuję!
+# Wes                                 
+PC09D_Q5_HACKING-14=Agencie X-598, proszę natychmiast usunąć jego tożsamość.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q5_HACKING2-1=A co do twojej przyjaciółki... Powinniśmy zacząć śledztwo jak najszybciej.
+# Brok                                 
+PC09D_Q5_HACKING2-2=Świetnie. Zabije mnie!
+# Wes                                 
+PC09D_Q5_HACKING2-3=Jeśli my nie zrobimy tego pierwsi.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q5_HUNGRY-1=Umieram z głodu! Możemy zrobić przerwę?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q5_HUNGRYB-1=B-Ale... ja nie kłamię! Naprawdę umieram z głodu!
+# Wes                                 
+PC09D_Q5_HUNGRYB-2=To urządzenie także wykrywa, gdy ktoś unika pytań.
+# Brok                                 
+PC09D_Q5_HUNGRYB-3=Nie mógłeś mi powiedzieć wcześniej?!
+# Tribotcop                                 
+PC09D_Q5_HUNGRYB-4=Algorytm sugeruje, by pominąć to pytanie.
+# Wes                                 
+PC09D_Q5_HUNGRYB-5=Dobrze.
+# Brok                                 
+PC09D_Q5_HUNGRYB-6=Hej! Co z moją przekąską...?
+# Wes                                 
+PC09D_Q5_HUNGRYB-7=...
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q6-1=Następne pytanie.
+# Wes                                 
+PC09D_Q6-2=Co powinniśmy zrobić z Sinem?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q6_FREE-1=To oczywiste. Natychmiast go uwolnić!
+# Brok                                 
+PC09D_Q6_FREE-2=Dać mu drugą szansę! Zasługuje na nią.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q6_FREENOTOK-1=Nie. I chyba się z nami zgadzasz.
+# Brok                                 
+PC09D_Q6_FREENOTOK-2=Ja... tak myślałem...
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q6_FREEOK-1=Zasługuje...?
+# Wes                                 
+PC09D_Q6_FREEOK-2=Więc wierzysz w odkupienie.
+# Wes                                 
+PC09D_Q6_FREEOK-3=Myślisz, że przestępca może się zrehabilitować i już nigdy nie zrobić nic złego.
+# Brok                                 
+PC09D_Q6_FREEOK-4=Mówisz o Sinie, jakby kogoś zamordował!
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q6_FREEB-1=To była tylko nieudana kradzież!
+# Wes                                 
+PC09D_Q6_FREEB-2=I otrucie policjanta.
+# Wes                                 
+PC09D_Q6_FREEB-3=To nic ważnego.
+# Brok                                 
+PC09D_Q6_FREEB-4=Tak bym nie powiedział... Ale nikomu nic się nie stało.
+# Brok                                 
+PC09D_Q6_FREEB-5=Poza tym... nie zrobi tego ponownie. Jestem tego w 100% pewien.
+# Wes                                 
+PC09D_Q6_FREEB-6=A-ha.
+# Wes                                 
+PC09D_Q6_FREEB-7=Agencie X-598. Proszę się do tego odnieść.
+# Tribotcop                                 
+PC09D_Q6_FREEB-8=Istnieje 95% prawdopodobieństwa, że przestępcy znów zrobią coś złego w ciągu 10 lat.
+# Tribotcop                                 
+PC09D_Q6_FREEB-9=To dobrze znane statystyki.
+# Tribotcop                                 
+PC09D_Q6_FREEB-10=Dlatego sugerujemy, iż badany musi mieć jakiś defekt mózgu, że temu zaprzecza.
+# Brok                                 
+PC09D_Q6_FREEB-11=Więc jestem szaleńcem, tak?
+# Brok                                 
+PC09D_Q6_FREEB-12=Bo wierzę, że nikt nie jest idealny?
+# Brok                                 
+PC09D_Q6_FREEB-13=Wszyscy obywatele muszą wierzyć w te bzdury, które opowiadacie?
+# Brok                                 
+PC09D_Q6_FREEB-14=Powiedzcie! Jakie jest źródło tych bezsensownych danych?
+# Brok                                 
+PC09D_Q6_FREEB-15=Nawet gdyby to była prawda, nadal jest 5% szans, że nie wpląta się w kłopoty! A 10 lat to szmat czasu!
+# Wes                                 
+PC09D_Q6_FREEB-16=Skup się i uspokój.
+# Wes                                 
+PC09D_Q6_FREEB-17=Nie jesteśmy tu, by cię osądzać.
+# Brok                                 
+PC09D_Q6_FREEB-18=Tak, jasne...
+# Wes                                 
+PC09D_Q6_FREEB-19=Kontynuujmy.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q6_PRISON-1=Wsadźcie go do więzienia.
+# Wes                                 
+PC09D_Q6_PRISON-2=... A-ha.
+# Tribotcop                                 
+PC09D_Q6_PRISON-3=Informacyjnie...
+# Tribotcop                                 
+PC09D_Q6_PRISON-4=Urządzenie było blisko porażenia w 90%, gdy badany odpowiedział.
+# Wes                                 
+PC09D_Q6_PRISON-5=Wyglada na to, że nawet ty nie uważasz tego za dobre rozwiązanie.
+# Brok                                 
+PC09D_Q6_PRISON-6=Dlaczego nie?
+# Brok                                 
+PC09D_Q6_PRISON-7=Niech no pomyślę. Po to są więzienia, prawda?
+# Wes                                 
+PC09D_Q6_PRISON-8=Myślałem, że do tej pory będziesz bardziej świadomy, jak działa system.
+# Wes                                 
+PC09D_Q6_PRISON-9=Więzienia są tylko po jedno. Dają nam czas przed podjęciem wyroku.
+# Tribotcop                                 
+PC09D_Q6_PRISON-10=Akurat Rząd chce skrócić czas potrzebny na wydanie wyroku.
+# Tribotcop                                 
+PC09D_Q6_PRISON-11=Gdy ten proces się skończy, więzienia zostaną uznane za niepotrzebne.
+# Wes                                 
+PC09D_Q6_PRISON-12=Są tylko trzy możliwe rezultaty.
+# Wes                                 
+PC09D_Q6_PRISON-13=Zostać uwolnionym, wygnanym lub...
+# Brok                                 
+PC09D_Q6_PRISON-14=Zabitym.
+# Wes                                 
+PC09D_Q6_PRISON-15=Wolimy termin "wyeliminowanym".
+# Brok                                 
+PC09D_Q6_PRISON-16=Chwila. Maszyny decydują, czy przeżyjemy, czy zginiemy...?
+# Brok                                 
+PC09D_Q6_PRISON-17=Jestem świadom, że są te ustrojstwa pomagające w śledztwie, ale...
+# Brok                                 
+PC09D_Q6_PRISON-18=Co się stało z "tylko człowiek może być sędzią"?
+# Tribotcop                                 
+PC09D_Q6_PRISON-19=Ten aspekt jest cały czas omawiany w Rządzie.
+# Tribotcop                                 
+PC09D_Q6_PRISON-20=Co nie ma sensu. Maszyny nie popełniają błędów. Są neutralne.
+# Brok                                 
+PC09D_Q6_PRISON-21=Kto tak mówi?
+# Tribotcop                                 
+PC09D_Q6_PRISON-22=Komisarzu, mamy dość informacji do tego pytania.
+# Wes                                 
+PC09D_Q6_PRISON-23=A-ha. Zgadzam się.
+# Brok                                 
+PC09D_Q6_PRISON-24=W jakim my świecie żyjemy...?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q6_KILL-1=Więc... Sin próbował ukraść wartościowy lek, otruł policjanta...
+# Brok                                 
+PC09D_Q6_KILL-2=Brutalnie mnie zatakował i gdybym nie umiał walczyć, pewnie już bym nie żył!
+# Brok                                 
+PC09D_Q6_KILL-3=No co czekacie? Zabijcie go!
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q6_KILLOK-1=...
+# Wes                                 
+PC09D_Q6_KILLOK-2=Naprawdę nie masz nic przeciwko, żebyśmy go zabili.
+# Wes                                 
+PC09D_Q6_KILLOK-3=Czyż nie jesteś pełen niespodzianek.
+# Brok                                 
+PC09D_Q6_KILLOK-4=Tylko... żartowałem...
+# Wes                                 
+PC09D_Q6_KILLOK-5=Nie masz pojęcia, jak wiele osób "żartuje" podczas przesłuchania.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q6_KILLNOTOK-1=Nie... Nie wierzysz w to.
+# Wes                                 
+PC09D_Q6_KILLNOTOK-2=To albo ekstremalna głupota, albo psychiczna słabość.
+# Brok                                 
+PC09D_Q6_KILLNOTOK-3=Myślałem... że to odpowiedź, której ode mnie oczekujecie...
+# Wes                                 
+PC09D_Q6_KILLNOTOK-4=Oczekujemy od ciebie tylko prawdy.
+# Tribotcop                                 
+PC09D_Q6_KILLNOTOK-5=Ta opinia będzie odnotowana jako pozytywna reakcja badanego.
+# Brok                                 
+PC09D_Q6_KILLNOTOK-6=To znaczy?!
+# Tribotcop                                 
+PC09D_Q6_KILLNOTOK-7=Próba rozwiązania wewnętrznych konfliktów, patrząc tylko na fakty.
+# Brok                                 
+PC09D_Q6_KILLNOTOK-8=Po prostu skłamałem... To wszystko.
+# Brok                                 
+PC09D_Q6_KILLNOTOK-9=Nie zmienicie tego, w co wierzę.
+# Wes                                 
+PC09D_Q6_KILLNOTOK-10=A-ha.
+# Wes                                 
+PC09D_Q6_KILLNOTOK-11=Skoro o tym mowa...
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q8-1=Następne pytanie.
+# Wes                                 
+PC09D_Q8-2=Czy kiedykolwiek kogoś zabiłeś?
+# Brok                                 
+PC09D_Q8-3=Co?!
+# Wes                                 
+PC09D_Q8-4=Odpowiedz.
+# Brok                                 
+PC09D_Q8-5=...
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q8_YES-1=Tak. Oczywiście, że kogoś zabiłem!
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q8_NO-1=Nie! Nigdy nikogo nie zabiłem.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q8B-1=...
+# Tribotcop                                 
+PC09D_Q8B-2=...
+# Brok                                 
+PC09D_Q8B-3=...
+# Brok                                 
+PC09D_Q8B-4=Co, do...?!
+# Wes                                 
+PC09D_Q8B-5=Hmm.
+# Brok                                 
+PC09D_Q8B-6=To niemożliwe! Nigdy...
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q8_KILLEDTRAMP-1=...
+# Brok                                 
+PC09D_Q8_KILLEDTRAMP-2=Wiem...
+# Brok                                 
+PC09D_Q8_KILLEDTRAMP-3=Dziś rano... zakończyłem życie włóczęgi na mojej ulicy.
+# Wes                                 
+PC09D_Q8_KILLEDTRAMP-4=Tak?
+# Brok                                 
+PC09D_Q8_KILLEDTRAMP-5=On... poprosił mnie o to. Nieuleczalna choroba.
+# Wes                                 
+PC09D_Q8_KILLEDTRAMP-6=Dobrze.
+# Brok                                 
+PC09D_Q8_KILLEDTRAMP-7="Dobrze"? To wszystko...?
+# Wes                                 
+PC09D_Q8_KILLEDTRAMP-8=Włóczędzy nie są uważani za cennych ludzi. Właściwie to wręcz przeciwnie.
+# Brok                                 
+PC09D_Q8_KILLEDTRAMP-9=Spodziewałem się takiej odpowiedzi. Ale on był wartościowym człowiekiem.
+# Wes                                 
+PC09D_Q8_KILLEDTRAMP-10=Jasne.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q8_KILLEDNOONE-1=Nie mógłbym... zabić kogoś z zimną krwią!
+# Brok                                 
+PC09D_Q8_KILLEDNOONE-2=Coś jest nie tak z tym ustrojstwem! Musicie mi uwierzyć!
+# Wes                                 
+PC09D_Q8_KILLEDNOONE-3=A-ha.
+# Brok                                 
+PC09D_Q8_KILLEDNOONE-4=Chyba że... bierzecie pod uwagę boty.
+# Wes                                 
+PC09D_Q8_KILLEDNOONE-5=Zabijałeś boty?
+# Brok                                 
+PC09D_Q8_KILLEDNOONE-6=Ich nie można zabić. To maszyny.
+# Tribotcop                                 
+PC09D_Q8_KILLEDNOONE-7=...
+# Wes                                 
+PC09D_Q8_KILLEDNOONE-8=A-ha.
+# Wes                                 
+PC09D_Q8_KILLEDNOONE-9=Bądźmy bardziej konkretni.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q9-1=Zabiłeś Lię?
+# Brok                                 
+PC09D_Q9-2=Co?!
+# Wes                                 
+PC09D_Q9-3=Proszę odpowiedzieć!
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q9_YES-1=Jasne! Zabiłem ją!
+# Brok                                 
+PC09D_Q9_YES-2=A potem pociąłem na tysiąc kawałeczków i zjadłem!
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q9_YESB-1=Nigdy się tak nie cieszyłem z tego, że zostałem porażony...
+# Wes                                 
+PC09D_Q9_YESB-2=Więc... nie zabiłeś jej.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q9_NO-1=Nie! Oczywiście, że nie!
+# Wes                                 
+PC09D_Q9_NO-2=Całym zdaniem.
+# Brok                                 
+PC09D_Q9_NO-3=Nie zabiłem Lii!
+# Brok                                 
+PC09D_Q9_NO-4=...
+# Tribotcop                                 
+PC09D_Q9_NO-5=...
+# Tribotcop                                 
+PC09D_Q9_NO-6=Dane potwierdzone z 99,998% prawdopodobieństwem.
+# Brok                                 
+PC09D_Q9_NO-7=Widzisz? Ta głupia maszyna się ze mną zgadza!
+# Wes                                 
+PC09D_Q9_NO-8=A-ha.
+# Brok                                 
+PC09D_Q9_NO-9=Co to ma wspólnego z Sinem?!
+# Wes                                 
+PC09D_Q9_NO-10=Potem będziesz mógł się poskarżyć. Przesłuchanie jeszcze się nie skończyło.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q10-1=Ostatnie pytanie.
+# Wes                                 
+PC09D_Q10-2=Kogo tak naprawdę zabiłeś?
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q10_NOONE-1=Nikogo.
+# Brok                                 
+PC09D_Q10_NOONE-2=Nigdy nikogo nie zabiłem.
+#----------------------------------------------------
+# Wes                                 
+PC09D_Q10_NOONEB-1=Nie rozumiem tego uporu.
+# Brok                                 
+PC09D_Q10_NOONEB-2=Nie chcecie mnie w coś wrobić?!
+# Brok                                 
+PC09D_Q10_NOONEB-3=Nie mówcie, że bym nie pamiętał zabicia kogoś!
+# Tribotcop                                 
+PC09D_Q10_NOONEB-4=Technicznie istnieje niskie prawdopopodobieństwo, że badany tego nie pamięta.
+# Tribotcop                                 
+PC09D_Q10_NOONEB-5=To zazwyczaj ma miejsce, gdy ktoś cierpi za zaburzenia psychotyczne typu schizofrenia...
+# Brok                                 
+PC09D_Q10_NOONEB-6=Zamknij się, kupo złomu! Nie jestem szalony!
+# Wes                                 
+PC09D_Q10_NOONEB-7=A-ha.
+# Brok                                 
+PC09D_Q10_NOONEB-8=...
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q10_ME-1=Zabiłem siebie.
+#----------------------------------------------------
+# Tribotcop                                 
+PC09D_Q10_MEB-1=Słowa badanego nie mają sensu.
+# Wes                                 
+PC09D_Q10_MEB-2=Mogę potwierdzić, że żyjesz...
+# Wes                                 
+PC09D_Q10_MEB-3=Ale chyba chcesz umrzeć przedwcześnie.
+# Brok                                 
+PC09D_Q10_MEB-4=Gdzie twoje poczucie humoru?
+# Tribotcop                                 
+PC09D_Q10_MEB-5=Humor to trudny dla nas koncept do pojęcia, ale wydaje się wysoce nieproduktywny...
+# Brok                                 
+PC09D_Q10_MEB-6=Tak, tak, rozumiem. Nie znasz się na zabawie.
+# Brok                                 
+PC09D_Q10_MEB-7=To jak, skończyliśmy?
+# Wes                                 
+PC09D_Q10_MEB-8=Zrobiłeś to, by uciec przed pytaniem...
+# Wes                                 
+PC09D_Q10_MEB-9=Bardzo dobrze.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q10_NOIDEA-1=Ja... nie pamiętam.
+# Wes                                 
+PC09D_Q10_NOIDEA-2=...
+# Tribotcop                                 
+PC09D_Q10_NOIDEA-3=...
+# Brok                                 
+PC09D_Q10_NOIDEA-4=Widzicie? Żadnego porażenia. Mówiłem!
+# Brok                                 
+PC09D_Q10_NOIDEA-5=Coś musi być nie tak z twoją maszyną.
+# Wes                                 
+PC09D_Q10_NOIDEA-6=A-ha. Możliwe.
+# Tribotcop                                 
+PC09D_Q10_NOIDEA-7=Zgadzamy się z badanym. Dane z tego przesłuchania mają sprzeczną naturę.
+# Wes                                 
+PC09D_Q10_NOIDEA-8=Bardzo dobrze.
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q10_BOLT-1=Tak... Poznałem ostatnio takiego robota.
+# Brok                                 
+PC09D_Q10_BOLT-2=Bał się, że po stracie pracy zostanie zresetowany i utraci pamięć...
+# Brok                                 
+PC09D_Q10_BOLT-3=W jego głosie było tyle cierpienia...
+# Wes                                 
+PC09D_Q10_BOLT-4=A-ha. Więc pan...
+# Brok                                 
+PC09D_Q10_BOLT-5=Zniszczyłem go. Tak.
+# Wes                                 
+PC09D_Q10_BOLT-6=...
+# Tribotcop                                 
+PC09D_Q10_BOLT-7=...
+# Brok                                 
+PC09D_Q10_BOLT-8=Jak mówiłem... To nieważne, prawda?
+# Brok                                 
+PC09D_Q10_BOLT-9=To znaczy, to był tylko robot.
+# Wes                                 
+PC09D_Q10_BOLT-10=A-ha.
+# Wes                                 
+PC09D_Q10_BOLT-11=Jednak teraz uważasz robota za "kogoś".
+# Brok                                 
+PC09D_Q10_BOLT-12=Ja... Em...
+# Brok                                 
+PC09D_Q10_BOLT-13=Na pewno?
+# Wes                                 
+PC09D_Q10_BOLT-14=Przypomij sobie pytanie. "Kogo zabiłeś".
+# Brok                                 
+PC09D_Q10_BOLT-15=Och...
+# Brok                                 
+PC09D_Q10_BOLT-16=Cóż, może... Ale...
+# Brok                                 
+PC09D_Q10_BOLT-17=One nie są ludźmi, więc...
+# Wes                                 
+PC09D_Q10_BOLT-18=Są gorsze?
+# Brok                                 
+PC09D_Q10_BOLT-19=Tak... Chyba.
+# Wes                                 
+PC09D_Q10_BOLT-20=A-ha.
+# Tribotcop                                 
+PC09D_Q10_BOLT-21=...
+#----------------------------------------------------
+# Brok                                 
+PC09D_Q10_TRAMP-1=Mówiłem...
+# Brok                                 
+PC09D_Q10_TRAMP-2=Dziś rano... Był na mojej ulucy starszy mężczyzna.
+# Wes                                 
+PC09D_Q10_TRAMP-3=A-ha.
+# Wes                                 
+PC09D_Q10_TRAMP-4=Pewnie mieszkaniec Slumsów.
+# Brok                                 
+PC09D_Q10_TRAMP-5=Tak.
+# Wes                                 
+PC09D_Q10_TRAMP-6=W takim razie nieważne.
+# Brok                                 
+PC09D_Q10_TRAMP-7=Oczywiście... Policja nie powinna nas chronić, prawda?
+# Wes                                 
+PC09D_Q10_TRAMP-8=Nie.
+# Tribotcop                                 
+PC09D_Q10_TRAMP-9=Mieszkańcy Slumsów nie płacą składek na policję.
+# Brok                                 
+PC09D_Q10_TRAMP-10=To dlaczego cały czas po naszych ulicach krążą drony i roboty?
+# Wes                                 
+PC09D_Q10_TRAMP-11=Musimy ścigać przestępców, gdziekolwiek są.
+# Brok                                 
+PC09D_Q10_TRAMP-12=Ale nie wszyscy...
+# Wes                                 
+PC09D_Q10_TRAMP-13=Dość.
+#----------------------------------------------------
+# Wes                                 
+PC09D_OVER-1=Koniec przesłuchania.
+# Tribotcop                                 
+PC09D_OVER-2=Zatrzymuję czas...
+# Brok                                 
+PC09D_OVER-3=Nie tak szybko!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After the interrogation
+# *****************************************************************
+# Brok                                 
+PC09D_OVER1B-1=Chwila!
+# Brok                                 
+PC09D_OVER1B-2=Co to były za ostatnie pytania?!
+# Brok                                 
+PC09D_OVER1B-3=Nie miały nic wspólnego ze sprawą Sina!
+# Wes                                 
+PC09D_OVER1B-4=Nie ujawniamy naszych metod pracy.
+# Brok                                 
+PC09D_OVER1B-5=Och... Wiem, do czego zmierzasz.
+# Brok                                 
+PC09D_OVER1B-6=Wciąż obwiniasz mnie za jej śmierć?
+# Wes                                 
+PC09D_OVER1B-7=Ta sprawa została zamknięta lata temu. To był wypadek.
+# Brok                                 
+PC09D_OVER1B-8=To dlaczego o tym wspominasz?
+# Wes                                 
+PC09D_OVER1B-9=Nie mieliśmy wtedy tego cudownego sprzętu.
+# Wes                                 
+PC09D_OVER1B-10=Musiałem potwierdzić pewne szczegóły.
+# Brok                                 
+PC09D_OVER1B-11=Zadowolony?
+# Wes                                 
+PC09D_OVER1B-12=A-ha.
+# Brok                                 
+PC09D_OVER1B-13=Uważam, że...
+# Wes                                 
+PC09D_OVER1B-14=Nieważne.
+# Wes                                 
+PC09D_OVER1B-15=Będziesz miał czas pomyśleć o tym w areszcie.
+# Brok                                 
+PC09D_OVER1B-16=W areszcie?! Ale...!
+# Brok                                 
+PC09D_OVER1B-17=Myślałem, że zrozumiałeś, iż nie mam nic wspólnego ze sprawą Sina?
+# Wes                                 
+PC09D_OVER1B-18=Może nie, ale na pewno masz swoje problemy.
+# Wes                                 
+PC09D_OVER1B-19=Tak czy inaczej, SI przydzielona do śledztwa potrzebuje czasu, by zbadać odpowiedzi.
+# Brok                                 
+PC09D_OVER1B-20=SI...?
+# Brok                                 
+PC09D_OVER1B-21=Sztuczna inteligencja sama będzie rozwiązywać sprawę?!
+# Wes                                 
+PC09D_OVER1B-22=A-ha. W większości.
+# Brok                                 
+PC09D_OVER1B-23=To oburzające...!
+# Brok                                 
+PC09D_OVER1B-24=Jestem... oburzony...
+# Wes                                 
+PC09D_OVER1B-25=Nie martwić się. Nie jesteś tu podejrzanym.
+# Wes                                 
+PC09D_OVER1B-26=Nie ma też za bardzo co rozwiązywać. Sprawa jest jasna.
+# Brok                                 
+PC09D_OVER1B-27=Czyżby? Sin mógł zostać wrobiony.
+# Wes                                 
+PC09D_OVER1B-28=Mało prawdopodobne.
+# Wes                                 
+PC09D_OVER1B-29=Niech algorytmy robią swoje. Wypuścimy cię najszybciej, jak to możliwe.
+# Brok                                 
+PC09D_OVER1B-30=Im szybciej, tym lepiej!
+# Wes                                 
+PC09D_OVER1B-31=Hmm.
+# Wes                                 
+PC09D_OVER1B-32=Agencie X-598, proszę rozpocząć analizę.
+# Wes                                 
+PC09D_OVER1B-33=I powiedzieć agentowi Rayowi, żeby wszedł.
+# Tribotcop                                 
+PC09D_OVER1B-34=Tak, komisarzu.
+#----------------------------------------------------
+# Wes                                 
+PC09D_OVER2-1=...
+# Wes                                 
+PC09D_OVER2-2=Przejdź na tę stronę.
+# Brok                                 
+PC09D_OVER2-3=Uch...?
+#----------------------------------------------------
+# Wes                                 
+PC09D_OVER3-1=To martwy punkt.
+# Brok                                 
+PC09D_OVER3-2=...?
+# Wes                                 
+PC09D_OVER3-3=Posłuchaj. Nienawidzę tego tak, jak ty.
+# Wes                                 
+PC09D_OVER3-4=Tych algorytmów, liczb i wszystkiego...
+# Wes                                 
+PC09D_OVER3-5=Stek bzdur. Żaden robot nie powinien podejmować za nas decyzji.
+# Brok                                 
+PC09D_OVER3-6=Co ty nie powiesz!
+# Wes                                 
+PC09D_OVER3-7=Ale prawo to prawo.
+# Wes                                 
+PC09D_OVER3-8=Jestem tu komisarzem. Muszę słuchać rozkazów.
+# Brok                                 
+PC09D_OVER3-9=Od kogo?!
+#----------------------------------------------------
+# RJ                                 
+PC09D_OVER4-1=Wołał mnie pan, szefie?
+# Wes                                 
+PC09D_OVER4-2=Tak. Proszę zabrać tego mężczyznę do celi.
+# RJ                                 
+PC09D_OVER4-3=Dobrze.
+#----------------------------------------------------
+# RJ                                 
+PC09D_OVER5-1=Apsik!
+# RJ                                 
+PC09D_OVER5-2=Hej...! Jesteś kotem?
+# Brok                                 
+PC09D_OVER5-3=Co?
+# Wes                                 
+PC09D_OVER5-4=Nie bądź głupi. Widać, że to Reptilianin.
+# RJ                                 
+PC09D_OVER5-5=Tak, ale nienawidzę kotów!
+# RJ                                 
+PC09D_OVER5-6=Mam alergię na kocią sierśc! Ohyda!
+# Wes                                 
+PC09D_OVER5-7=Dość!
+# Wes                                 
+PC09D_OVER5-8=Schrzań coś raz jeszcze i wylatujesz!
+# RJ                                 
+PC09D_OVER5-9=Dobra, dobra...!
+# RJ                                 
+PC09D_OVER5-10=Zmienił się pan... Szefie.
+# RJ                                 
+PC09D_OVER5-11=Nigdy wcześniej mi pan nie groził...
+#----------------------------------------------------
+# Brok                                 
+PC09D_DEAD1-1=...
+# Tribotcop                                 
+PC09D_DEAD1-2=Moje czujniki wskazują, że funcje życiowe badanego są wyłączone.
+# Wes                                 
+PC09D_DEAD1-3=...
+# Wes                                 
+PC09D_DEAD1-4=Co za cienias.
+# Wes                                 
+PC09D_DEAD1-5=Do końca sprawia kłopoty, co?
+# Wes                                 
+PC09D_DEAD1-6=Ten incydent nie powinien zostać upubliczniony.
+# Wes                                 
+PC09D_DEAD1-7=Usunąć wszystkie dowody, łącznie z ciałem. Nikt nie będzie szukał gościa ze Slumsów.
+# Tribotcop                                 
+PC09D_DEAD1-8=Tak, szefie!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Dee and Brok come to rescue Sin
+# *****************************************************************
+# Tribotcop                                 
+PC09D_SMASH1-1=Ludzie. Bez autoryzacji!
+#----------------------------------------------------
+# Dee                                 
+PC09D_SMASH_FIGHTEND-1=Ta bariera też jest zestalona!
+# Brok                                 
+PC09D_SMASH_FIGHTEND-2=Dwa dni temu jej tu nie było... Chyba podnieśli ochronę.
+# Dee                                 
+PC09D_SMASH_FIGHTEND-3=Rozwal ją, wielkoludzie!
+#----------------------------------------------------
+# Brok                                 
+PC09D_SMASH_FINALLY-1=Droga wolna!
+# Dee                                 
+PC09D_SMASH_FINALLY-2=Chodź!
+#----------------------------------------------------
+# Tribot                                 
+PC09D_SPOTTED_STORY280B-1=Co tu robi człowiek?!
+#----------------------------------------------------
+# Brok                                 
+PC09D_TO_JAIL1-1=Prawie jesteśmy!
+#----------------------------------------------------
+# Brok                                 
+PC09D_TO_JAIL_NOPE-1=Nie wracam tam!
+#----------------------------------------------------
+# Brok                                 
+PC09D_BARRIER1-1=Tej bariery tem nie było!
+# Dee                                 
+PC09D_BARRIER1-2=Nieważne. Działaj!
+# Brok                                 
+PC09D_BARRIER1-3=Jeśli to pomoże...
+#----------------------------------------------------
+# Brok                                 
+PC09D_BARRIER_AFTER-1=Deaktywacja nie trwa długo!
+#----------------------------------------------------
+# Dee                                 
+PC09D_TO_PC09_NOPE-1=Hej! Dokąd idziesz?!
+# Brok                                 
+PC09D_TO_PC09_NOPE-2=Em... Przepraszam.
+#----------------------------------------------------
+# Brok                                 
+PC09D_TO_JAIL_DEE1-1=Prawie jesteśmy!
+# Dee                                 
+PC09D_TO_JAIL_DEE1-2=Chodźmy!
+#----------------------------------------------------

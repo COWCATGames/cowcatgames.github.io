@@ -1,0 +1,544 @@
+#-------------------------------
+#=LAB RESTROOM
+#-------------------------------
+
+#----- Interactions --------
+PC_MEETYME=미티-미
+PC_WRAPPING=포장지
+PC_GRINDER=그라인더
+PC_MAP=지도
+PC_FIRSTAIDKIT=구급상자
+PC_FRIDGELEFT=냉장고 (왼쪽)
+PC_FRIDGERIGHT=냉장고 (오른쪽)
+PC_FOOD=음식
+PC_WARDROBE=옷장
+PC_COFFEEMACHINE=커피 머신
+PC_BAG=자루
+PC_SHOWER=샤워?
+#The combination of "Shower" and "Toilet"!
+PC_SHOWLET=샤워-화장실
+PC_ROUNDTHINGS=작고 둥근 것들
+PC_PILLS=알약
+
+#----- Choices / Items --------
+GOT_MAPBUILDING=건물 지도다!
+GOT_PILLHUSH=알약이다!
+
+#----- Topics --------
+
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC15E_MAP1-1=건물 지도잖아?
+# Brok                                 
+PC15E_MAP1-2=가져가야겠어.
+#----------------------------------------------------
+# Brok                                 
+PC15E_MAP2-1=이런 첨단 시설에서 아직 까지 종이 지도를 쓰다니 놀랍군.
+# Brok                                 
+PC15E_MAP2-2=그래도 정전 시에는 유용하겠어.
+#----------------------------------------------------
+# Brok                                 
+PC15E_MEETYME1-1=이거 기억나!
+# Brok                                 
+PC15E_MEETYME1-2=홀로그램 화면으로 라이브 방송을 보는 장치야.
+#----------------------------------------------------
+# Various                                 
+PC15E_MEETYME2-1=라이브 방송을 보려면 "미티"에게 방송 제목을 말하거나 생각해 주세요.
+# Brok                                 
+PC15E_MEETYME2-2=흐음...
+# Mink                                 
+PC15E_MEETYME2-3=이 상황에서 진지하게 뭐 볼까 고민할 때가 아닐 텐데?!
+# Various                                 
+PC15E_MEETYME2-4=당신의 선택에 동의하지 않는 사람이 감지되었습니다.
+# Various                                 
+PC15E_MEETYME2-5=그래도 정말 "웃기지도 않는 동화"를 시청하시겠습니까?
+# Brok                                 
+PC15E_MEETYME2-6=으음... 아니. 됐어.
+# Mink                                 
+PC15E_MEETYME2-7=생각으로 감지하는 기능은 아직 작동이 잘 안 되는 것 같아요.
+# Brok                                 
+PC15E_MEETYME2-8=예... 아마 그런 것 같군요...
+#----------------------------------------------------
+# Various                                 
+PC15E_MEETYME3-1=다른 명령도 존재합니다. 목록을 보려면 말하거나 생각해서 "도움말"을 불러 주세요.
+# Mink                                 
+PC15E_MEETYME3-2=이럴 때가 아니에요. 당신은 단서를 찾으러 온 게 아닌가요?
+# Brok                                 
+PC15E_MEETYME3-3=아, 찾고 있단 말입니다!
+#----------------------------------------------------
+# Various                                 
+PC15E_MEETYME_AFTER1-1=라이브 방송을 보시겠습니까?
+# Brok                                 
+PC15E_MEETYME_AFTER1-2=적어도 지금은 아니.
+# Various                                 
+PC15E_MEETYME_AFTER1-3=거짓말로 파악됩니다. 하지만 괜찮습니다.
+# Various                                 
+PC15E_MEETYME_AFTER1-4=다른 명령도 존재합니다. 목록을 보려면 말하거나 생각해서 "도움말"을 불러 주세요.
+# Brok                                 
+PC15E_MEETYME_AFTER1-5=음... "도움말".
+# Various                                 
+PC15E_MEETYME_AFTER1-6=...
+# Various                                 
+PC15E_MEETYME_AFTER1-7=오류 발생. 연결할 수 없습니다.
+# Various                                 
+PC15E_MEETYME_AFTER1-8=오프라인 모드로 전환합니다.
+# Various                                 
+PC15E_MEETYME_AFTER1-9=녹화된 기록이 하나 있습니다! 재생할까요?
+# Brok                                 
+PC15E_MEETYME_AFTER1-10=녹화된 기록이라...?
+# Brok                                 
+PC15E_MEETYME_AFTER1-11=얼른 켜 봐!
+# Hush                                 
+PC15E_MEETYME_AFTER1-12="나 지금 화장실에 있어."
+# Mink                                 
+PC15E_MEETYME_AFTER1-13=허쉬 박사의 목소리잖아요!
+# Mink                                 
+PC15E_MEETYME_AFTER1-14=딱 봐도 실수로 녹화된 것 같은데요. 가끔 그런 일이 있죠.
+# Brok                                 
+PC15E_MEETYME_AFTER1-15=실수라...
+#----------------------------------------------------
+# Brok                                 
+PC15E_MEETYME_AFTER2-1=마지막 녹화본을 재생해 봐!
+# Hush                                 
+PC15E_MEETYME_AFTER2-2="나 지금 화장실에 있어."
+# Brok                                 
+PC15E_MEETYME_AFTER2-3=흠...
+# Mink                                 
+PC15E_MEETYME_AFTER2-4=왜 들었던 걸 또 듣나요? 시간 아깝잖아요.
+# Brok                                 
+PC15E_MEETYME_AFTER2-5=뭐라 말은 못 하겠는데 뭔가 걸리는 게 있어서...
+#----------------------------------------------------
+# Brok                                 
+PC15E_TRAP1-1=쓰레기 분쇄기다!
+# Brok                                 
+PC15E_TRAP1-2=왜 칼날이 이리 바닥 근처에 있는 걸까 늘 의문이 드는 구만.
+#----------------------------------------------------
+# Brok                                 
+PC15E_TRAP2-1=만약에 하나 여기에 뭔가 들어갔다고 가정해보자...
+# Mink                                 
+PC15E_TRAP2-2=그랬다면, 뭔가 찾기에는 너무 늦었을 거에요.
+# Mink                                 
+PC15E_TRAP2-3=버려지는 쓰레기는 압축돼서 곧바로 슬럼의 쓰레기장으로 보내지니까요.
+# Brok                                 
+PC15E_TRAP2-4=필요악이로군. 이런 것들 덕분에 우리는 조금 더 먹고 살 만해지지...
+# Mink                                 
+PC15E_TRAP2-5=설마 당신 슬럼 출신은 아니겠죠?
+# Brok                                 
+PC15E_TRAP2-6=다... 당연히 아니지!
+#----------------------------------------------------
+# Brok                                 
+PC15E_WRAPPING1-1=이 종이는 완전히 파쇄 되지는 않았어...
+# Brok                                 
+PC15E_WRAPPING1-2=아! 알겠다 이거!
+# Brok                                 
+PC15E_WRAPPING1-3=맥 플리 대표 메뉴인 개미 버거의 포장지잖아!
+# Brok                                 
+PC15E_WRAPPING1-4="토마토즈 소스 추가!" 내 최애 메뉴야!
+#----------------------------------------------------
+# Brok                                 
+PC15E_FIRSTAIDKIT1-1=안에 뭐가 있을까...?
+# Brok                                 
+PC15E_FIRSTAIDKIT1-2=...!
+# Brok                                 
+PC15E_FIRSTAIDKIT1-3=버튼? 고작 이거 뿐이야?
+# Mink                                 
+PC15E_FIRSTAIDKIT1-4=당연하죠. 대체 뭘 기대했길래 그래요?
+# Mink                                 
+PC15E_FIRSTAIDKIT1-5=보통 건강 칩이 문제를 감지하고 필요한 게 있으면 즉각 무언가를 보내줘요.
+# Mink                                 
+PC15E_FIRSTAIDKIT1-6=이 버튼은 건강 칩이 대응할 수 없는 오로지 절박한 상황에나 쓰여요.
+# Mink                                 
+PC15E_FIRSTAIDKIT1-7=예를 들어 정전 이라던가, 아니면 뭐 운석이 떨어진 다거나, 아니면...
+# Mink                                 
+PC15E_FIRSTAIDKIT1-8=...
+# Brok                                 
+PC15E_FIRSTAIDKIT1-9=불이 났다 거나?
+# Mink                                 
+PC15E_FIRSTAIDKIT1-10=아 맞아요! 그럴 가능성은 거의 없지만요.
+# Mink                                 
+PC15E_FIRSTAIDKIT1-11=이 버튼을 누르면 가장 가까이 있는 파이프를 통해 그때 필요한 응급 처치 용품을 제공해 줄 거에요.
+# Brok                                 
+PC15E_FIRSTAIDKIT1-12=그런 상황이 벌어질 정도라면...
+# Brok                                 
+PC15E_FIRSTAIDKIT1-13=그 "응급 처치 용품"을 사용할 줄 알긴 하는 겁니까?
+# Mink                                 
+PC15E_FIRSTAIDKIT1-14=흐음...
+# Mink                                 
+PC15E_FIRSTAIDKIT1-15=글쎄요. 하지만 그게 중요한 건 아니잖아요?
+# Mink                                 
+PC15E_FIRSTAIDKIT1-16=어차피 그런 사태가 벌어질 가능성은 제로에 가까우니까요!
+# Brok                                 
+PC15E_FIRSTAIDKIT1-17=아무렴...
+#----------------------------------------------------
+# Brok                                 
+PC15E_FIRSTAIDKIT_BUTTON-1=...
+# Brok                                 
+PC15E_FIRSTAIDKIT_BUTTON-2=반응이 없는데?
+# Ott                                 
+PC15E_FIRSTAIDKIT_BUTTON-3=더 세게 눌러봐요!
+# Ott                                 
+PC15E_FIRSTAIDKIT_BUTTON-4=이건 비상 상황에 쓰는 거니까요!
+# Brok                                 
+PC15E_FIRSTAIDKIT_BUTTON-5=으음...
+#----------------------------------------------------
+# Brok                                 
+PC15E_FIRSTAIDKIT_HIT1-1=...
+# Brok                                 
+PC15E_FIRSTAIDKIT_HIT1-2=소리가 들리는데!
+# Mink                                 
+PC15E_FIRSTAIDKIT_HIT1-3=제대로 들은 거 맞나요? 제가 들은 건 당신 주먹 소리 뿐인걸요.
+# Brok                                 
+PC15E_FIRSTAIDKIT_HIT1-4=확인할 방법은 단 하나 뿐이지!
+# Brok                                 
+PC15E_FIRSTAIDKIT_HIT1-5=그래서 그 용품은 어디에 있을까...?
+#----------------------------------------------------
+# Brok                                 
+PC15E_FIRSTAIDKIT_HIT2-1=목말라!
+# Mink                                 
+PC15E_FIRSTAIDKIT_HIT2-2=당신도 알다시피 이건 자판기가 아니라고요.
+# Brok                                 
+PC15E_FIRSTAIDKIT_HIT2-3=그게 뭐 어때서? 내가 원하는 걸 주면 그만일텐데 말입니다.
+#----------------------------------------------------
+# Brok                                 
+PC15E_FIRSTAIDKIT_DEATH-1=으으음!
+#----------------------------------------------------
+# Brok                                 
+PC15E_FRIDGEPAMPALOS1-1=기념비적인 물건이군!
+#----------------------------------------------------
+# Mink                                 
+PC15E_FRIDGEPAMPALOS1B-1=저기요! 도둑질은 안됩니다!
+# Brok                                 
+PC15E_FRIDGEPAMPALOS1B-2=도둑질이라니! 단서 수집 중... 입니다!
+# Mink                                 
+PC15E_FRIDGEPAMPALOS1B-3=...
+#----------------------------------------------------
+# Brok                                 
+PC15E_FRIDGELEFTFOOD1-1=개미들이 상자 안에... 살아있네.
+# Mink                                 
+PC15E_FRIDGELEFTFOOD1-2=제가 제일 좋아하는 거에요! 매우 신선하고 바삭거리죠.
+# Brok                                 
+PC15E_FRIDGELEFTFOOD1-3=실험 용으로나 쓸 줄 알았는데 아니었나 봅니다?
+# Mink                                 
+PC15E_FRIDGELEFTFOOD1-4=실험에도 쓰입니다! 하지만 가끔 간식으로 이용하는 게 잘못된 건 아니잖아요?
+# Brok                                 
+PC15E_FRIDGELEFTFOOD1-5=당신, 마음에 들어!
+#----------------------------------------------------
+# Brok                                 
+PC15E_FRIDGE_AFTER1-1=음식이 들어 있군. 특별한 건 없는 것 같...
+# Mink                                 
+PC15E_FRIDGE_AFTER1-2=잠깐만요...
+# Brok                                 
+PC15E_FRIDGE_AFTER1-3=뭔 문제라도?
+# Mink                                 
+PC15E_FRIDGE_AFTER1-4=저기 개미 버거가 있어야 하는데요!
+# Mink                                 
+PC15E_FRIDGE_AFTER1-5=얼마 전에 개미 버거 다 먹었는데, 그럼 분명 자동으로 주문 됐어야 한단 말이에요.
+# Mink                                 
+PC15E_FRIDGE_AFTER1-6=아, 그렇죠... 생각해보니 외부 통신이 끊긴 상황이죠.
+# Brok                                 
+PC15E_FRIDGE_AFTER1-7=개미 버거를 먹었다고요?
+# Brok                                 
+PC15E_FRIDGE_AFTER1-8=좀 더 자세히 말해봅시다.
+# Mink                                 
+PC15E_FRIDGE_AFTER1-9=어째서 이런 걸 그리 궁금해하는 거에요?
+# Brok                                 
+PC15E_FRIDGE_AFTER1-10=중요할 수도 있으니까.
+# Mink                                 
+PC15E_FRIDGE_AFTER1-11=그게... 이건 일종의 루틴이라고 해야 할까요.
+# Mink                                 
+PC15E_FRIDGE_AFTER1-12=과학 방송을 볼 때면 늘 개미 버거를 먹는 편입니다.
+# Mink                                 
+PC15E_FRIDGE_AFTER1-13=근데 오늘 아침에는 좀 화가 나더라고요.
+# Mink                                 
+PC15E_FRIDGE_AFTER1-14=버거가 하나밖에 안 남았더군요. 게다가 이미 해동된 상태였고요.
+# Brok                                 
+PC15E_FRIDGE_AFTER1-15=흥미롭군요...
+# Brok                                 
+PC15E_FRIDGE_AFTER1-16=허쉬 박사가 먹고 싶어서 그랬을 거라 생각은 안 합니까?
+# Mink                                 
+PC15E_FRIDGE_AFTER1-17=그럴지도 모르지만, 허쉬 박사는 개미 버거를 싫어하는 걸요. 더구나 한 입도 안 먹은 상태였고요.
+# Mink                                 
+PC15E_FRIDGE_AFTER1-18=제 생각엔 한번 먹어보려고 했다가 결국 관둔 게 분명해요!
+# Brok                                 
+PC15E_FRIDGE_AFTER1-19=그렇군요.
+#----------------------------------------------------
+# Brok                                 
+PC15E_WARDROBE1-1=냉장고 근처에 있는 옷장이다.
+# Brok                                 
+PC15E_WARDROBE1-2=특별한 건 없지만... 이런! 옷들이 빽빽하게 가득 찼어!
+# Brok                                 
+PC15E_WARDROBE1-3=종이 한 장 끼울 틈조차 보이지 않아!
+#----------------------------------------------------
+# Brok                                 
+PC15E_WARDROBE_AFTER1-1=좀 더 자세히 살펴보자.
+# Brok                                 
+PC15E_WARDROBE_AFTER1-2=역시 이 방법 뿐인가.
+#----------------------------------------------------
+# Mink                                 
+PC15E_WARDROBE_AFTER1B-1=좀 더... 부드럽게 해주지 않을래요?
+# Brok                                 
+PC15E_WARDROBE_AFTER1B-2=알다시피 시간이 많지 않아서.
+#----------------------------------------------------
+# Brok                                 
+PC15E_WARDROBE_AFTER2-1=이제 좀 공간의 여유가 되는군!
+#----------------------------------------------------
+# Brok                                 
+PC15E_PILLS1-1=이거...
+# Brok                                 
+PC15E_PILLS1-2=약인가?
+#----------------------------------------------------
+# Brok                                 
+PC15E_PILLS1B-1=...그래. 확실히 약으로 보이는군.
+# Brok                                 
+PC15E_PILLS1B-2=누구 거지?
+# Mink                                 
+PC15E_PILLS1B-3=그렇게 절 바라보지 마요! 전 아무 것도 모른다고요!
+# Brok                                 
+PC15E_PILLS1B-4=허쉬 박사가 복용하고 있던 걸까요?
+# Mink                                 
+PC15E_PILLS1B-5=그 말고 여기 사는 사람이 없는데, 그럴 가능성이 꽤 크지요.
+# Mink                                 
+PC15E_PILLS1B-6=참고로 말하자면, 전 최근에 허쉬 박사랑 연락을 나눈 적이 거의 없다고요.
+# Mink                                 
+PC15E_PILLS1B-7=당신이 한번 그 알약 분석해 보는 게 어떨까요.
+# Brok                                 
+PC15E_PILLS1B-8=좋은 생각입니다.
+#----------------------------------------------------
+# Mink                                 
+PC15E_PILLS2-1=분명 허쉬 박사의 약일 거에요.
+#----------------------------------------------------
+# Brok                                 
+PC15E_COFFEEMACHINE1-1=화장실에 커피 머신이 다 있을 줄이야?
+# Brok                                 
+PC15E_COFFEEMACHINE1-2=내가 알기론 이 제품, 다른 음료수도 만들지 않았나 싶은데.
+# Mink                                 
+PC15E_COFFEEMACHINE1-3=아뇨. 커피만 만들어요.
+# Brok                                 
+PC15E_COFFEEMACHINE1-4=정말로요!?
+# Mink                                 
+PC15E_COFFEEMACHINE1-5=저희 혈관에는 커피만 흐르는 입장이라서요.
+# Mink                                 
+PC15E_COFFEEMACHINE1-6=다른 음료를 위해 자원을 할당하는 건 낭비에 불과하다 여기는 편이니까요.
+# Brok                                 
+PC15E_COFFEEMACHINE1-7=그거 말 되는군요.
+#----------------------------------------------------
+# Brok                                 
+PC15E_COFFEEMACHINE2-1=당신 방에 커피 머신을 두지 않게 된 계기가 어떻게 됩니까?
+# Mink                                 
+PC15E_COFFEEMACHINE2-2=그것도 나쁘진 않겠지만, 우린 항상 안에서 일을 해요.
+# Mink                                 
+PC15E_COFFEEMACHINE2-3=건강 칩 때문에 하루에 최소 걸음 할당량을 채워야 하다 보니,
+# Mink                                 
+PC15E_COFFEEMACHINE2-4=하루에 연구실과 화장실을 세 번 왕복하다 보면 알아서 할당량이 채워지더라고요.
+# Brok                                 
+PC15E_COFFEEMACHINE2-5=...뭐 내 생각엔, 거기에 일부 약물까지 곁들겠지만.
+#----------------------------------------------------
+# Brok                                 
+PC15E_COFFEEMACHINE_MAGNIFY-1=아니...
+# Brok                                 
+#A few nanites
+PC15E_COFFEEMACHINE_MAGNIFY-2=기계에 뭔가 좀 붙어있는 것 같은데...
+# Brok                                 
+PC15E_COFFEEMACHINE_MAGNIFY-3=여기서 뭔가 더 찾을 수 있을 것 같은데...
+#----------------------------------------------------
+# Brok                                 
+PC15E_SINK1-1=(킁킁)
+# Mink                                 
+PC15E_SINK1-2=대체 뭘 하는 거에요?
+# Brok                                 
+PC15E_SINK1-3=그냥 뭔가 놓친 것이 있나 확인 중입니다.
+# Brok                                 
+PC15E_SINK1-4=이건 커피 냄새 같은 걸.
+# Mink                                 
+PC15E_SINK1-5=아주 대단한 탐정 납셨네요...
+#----------------------------------------------------
+# Brok                                 
+PC15E_SINK2-1=손을 씻을 시간은 없어.
+# Ott                                 
+PC15E_SINK2-2=손을 댔다가는 증거가 훼손될 수도 있어요!
+# Brok                                 
+PC15E_SINK2-3=그래, 그것도 그렇지.
+#----------------------------------------------------
+# Brok                                 
+PC15E_SINK_MAGNIFY-1=이게 무슨...
+# Brok                                 
+PC15E_SINK_MAGNIFY-2=싱크대에 나나이트로 가득한 걸!
+# Brok                                 
+PC15E_SINK_MAGNIFY-3=더구나, 뭔가 꽃 같은 것도 있는데...?
+# Brok                                 
+PC15E_SINK_MAGNIFY-4=밍크 박사가 실험 샘플을 내다 버린 건가...
+# Mink                                 
+PC15E_SINK_MAGNIFY-5=뭐라고요...? 말도 안 되는 소리! 제 방에 싱크대가 따로 있는 걸요.
+# Brok                                 
+PC15E_SINK_MAGNIFY-6=그럼... 이런 게 대체 왜 여기 있는 겁니까?
+# Mink                                 
+PC15E_SINK_MAGNIFY-7=나도 몰라요!
+#----------------------------------------------------
+# Brok                                 
+PC15E_CUP1-1=물론, 여기에 커피가 들어있었겠지.
+# Ott                                 
+PC15E_CUP1-2=그래서요? 그게 무슨 뜻이에요?
+# Brok                                 
+PC15E_CUP1-3=누군가 커피를 마셨다는 거지.
+# Ott                                 
+PC15E_CUP1-4=아...
+# Ott                                 
+PC15E_CUP1-5=솔직히 전...
+# Ott                                 
+PC15E_CUP1-6=누군가 최근에 화장실에 있었으니, 아저씨가 직원한테 누가 커피를 마셨는지 물어볼 줄 알았어요.
+# Brok                                 
+PC15E_CUP1-7=그래, 좋은 생각이다.
+# Brok                                 
+PC15E_CUP1-8=밍크 씨? 당신이 여기서 커피를 마셨습니까?
+# Mink                                 
+PC15E_CUP1-9=밍크 박사라고 정정해 주셨으면 하는데, 마시긴 마셨습니다.
+# Brok                                 
+PC15E_CUP1-10=정확히 언제 마셨는지요?
+# Mink                                 
+PC15E_CUP1-11=대충 4시 40분쯤인가 그래요. 늘 "테크노정키"를 보다 보면 출출해지거든요.
+# Brok                                 
+PC15E_CUP1-12=그게 무슨 TV쇼라도 됩니까?
+# Mink                                 
+PC15E_CUP1-13=맞아요. 거의 30분 정도 진행되는 프로그램이라, 그걸 보고 나면 화장실에서 5시쯤에 나왔겠죠.
+#----------------------------------------------------
+# Brok                                 
+PC15E_CUP2-1=커피는 기계가 알아서 만듭니까?
+# Mink                                 
+PC15E_CUP2-2=오 맙소사, 그럴 리가요!
+# Mink                                 
+PC15E_CUP2-3=고고한 존재로서, 우리들은 더 섬세하고 자연스러운 공정을 거친 커피를 원한다 고요.
+# Brok                                 
+PC15E_CUP2-4=의외로 아주 섬세하군요...
+# Brok                                 
+PC15E_CUP2-5=그럼, 누가 커피를 탑니까?
+# Mink                                 
+PC15E_CUP2-6=허쉬 박사의 관리 로봇. 타이디가 탑니다.
+# Ott                                 
+PC15E_CUP2-7=그건... 사람이 만드는 게 아니잖습니까?
+# Mink                                 
+PC15E_CUP2-8=대체 누가 사람이 만든 거라고 말했나요?
+# Mink                                 
+PC15E_CUP2-9=아까도 그랬지만 우리들은 더 섬세하고 자연스러운 공정을 거친 커피를 원한다고 말했어요.
+# Mink                                 
+PC15E_CUP2-10=커피 머신 버튼 하나로 뽑는 커피가 그런 섬세하고 자연스러운 공정을 걸칠 리가 있겠어요!
+# Brok                                 
+PC15E_CUP2-11=아주 대단한 논리구만. 그래.
+#----------------------------------------------------
+# Brok                                 
+PC15E_CUP3-1=여기엔 커피 잔이 하나밖에 없는 게 좀 의외인데, 허쉬 박사는 커피를 안 마십니까?
+# Mink                                 
+PC15E_CUP3-2=그럴 리가요!
+# Mink                                 
+PC15E_CUP3-3=그게 사실은, 허쉬 박사는 늘 화장실에서 커피를 마시는 편이에요.
+# Mink                                 
+PC15E_CUP3-4=제가 알기로 허쉬 박사는... 소중한 연구 재료 위에 커피가 한 방울이라도 떨어질까 봐 불안해하더라고요!
+# Mink                                 
+PC15E_CUP3-5=하지만 허쉬 박사는 싱크대에 버리면 자동으로 가루로 분해되는 그러한 컵을 사용하더군요.
+# Mink                                 
+PC15E_CUP3-6=전 튼튼한 컵을 더 선호하는 편이에요. 위생이 부족하다고? 헛소리 말라죠. 커피 맛이 더 좋으면 그만이에요!
+# Brok                                 
+PC15E_CUP3-7=나도 그 점은 공감합니다!
+#----------------------------------------------------
+# Brok                                 
+PC15E_CUP_MAGNIFY-1=이 커피 잔에는 나나이트가 없나?
+# Brok                                 
+PC15E_CUP_MAGNIFY-2=놀랄 일은 아니야... 그래도 뭔가...
+#----------------------------------------------------
+# Brok                                 
+PC15E_DRAWER1-1=이 안에는...
+# Brok                                 
+PC15E_DRAWER1-2=...커피 분말이 잔뜩이군.
+# Mink                                 
+PC15E_DRAWER1-3=대체 뭘 기대한 거에요?
+# Brok                                 
+PC15E_DRAWER1-4=글쎄요. 그냥 칫솔이라던가?
+# Mink                                 
+PC15E_DRAWER1-5=칫솔...?
+# Mink                                 
+PC15E_DRAWER1-6=이를... 닦는 브러쉬 라고요...?
+# Mink                                 
+PC15E_DRAWER1-7=농담도 참 잘 하시는군요! 그럼 발을 닦는 것도 필요하겠군요, 안 그렇나요!
+# Ott                                 
+PC15E_DRAWER1-8=하도 화학 물질로 가득 찬 물을 쓰다 보니 필요성을 못 느낀 게 아닐까요...
+#----------------------------------------------------
+# Brok                                 
+PC15E_DRAWER2-1=커피 뿐이네. 그게 다야.
+#----------------------------------------------------
+# Brok                                 
+PC15E_SHOWLET1-1=이건... 으음...
+# Brok                                 
+PC15E_SHOWLET1-2=샤워실인가?
+# Mink                                 
+PC15E_SHOWLET1-3=뭐라고요? 아니, 이건 샤워-화장실이에요.
+# Brok                                 
+PC15E_SHOWLET1-4=그러니까... 여기는 샤워실이랑 화장실이 합쳐졌다는 소립니까...?
+# Mink                                 
+PC15E_SHOWLET1-5=오, 이제 알겠어요! 당신 좀 멀리서 온 사람인가 본데, 제 말이 맞지요?
+# Brok                                 
+PC15E_SHOWLET1-6=그렇...다고 할 수 있죠.
+# Brok                                 
+PC15E_SHOWLET1-7=최신 기술의 발전에 대해 잘 모르고 살다 보니...
+# Mink                                 
+PC15E_SHOWLET1-8=아무튼, 이건 시간과 공간을 절약할 수 있는 물건이에요.
+# Mink                                 
+PC15E_SHOWLET1-9=들어가서 자동으로 진행되는 걸 즐기면 되요!
+# Mink                                 
+PC15E_SHOWLET1-10=로봇 팔이 당신의 옷을 벗겨 준 다음, 그 상태에서 당신을 씻겨 줄 거에요.
+# Mink                                 
+PC15E_SHOWLET1-11=마무리로, 뽀송뽀송한 옷을 제공할 거에요.
+# Brok                                 
+PC15E_SHOWLET1-12=꽤... 편리해 보입니다.
+#----------------------------------------------------
+# Brok                                 
+PC15E_SHOWLET2-1=그럼... 소변 볼 때마다 샤워를 하는 겁니까?
+# Mink                                 
+PC15E_SHOWLET2-2=물론이죠!
+# Brok                                 
+PC15E_SHOWLET2-3=그거 낭비 아닌가요?
+# Brok                                 
+PC15E_SHOWLET2-4=우리가 그렇게 자주 씻고 옷을 갈아입을 필요는 없잖습니까.
+# Mink                                 
+PC15E_SHOWLET2-5=흐으음...
+# Mink                                 
+PC15E_SHOWLET2-6=흥미로운 관점인데...
+# Mink                                 
+PC15E_SHOWLET2-7=아 그래! 그럼 두 기능을 분리하면 어떨까요?
+# Mink                                 
+PC15E_SHOWLET2-8=한 쪽에는 변기! 한 쪽에는 샤워기를 두는 거에요!
+# Mink                                 
+PC15E_SHOWLET2-9=그렇게 하면 가격도 두 배로 올릴 수 있겠지요!
+# Brok                                 
+PC15E_SHOWLET2-10=아주 현대적인 발상이군.
+#----------------------------------------------------
+# Brok                                 
+PC15E_BAG1-1=이 옷들...
+# Brok                                 
+PC15E_BAG1-2=으윽! 고약한 냄새가!
+# Mink                                 
+PC15E_BAG1-3=그거 건들지 마세요!
+# Mink                                 
+PC15E_BAG1-4=관리 로봇들이 알아서 세탁해 줄 거니까요.
+#----------------------------------------------------
+# Mink                                 
+PC15E_TRAPGAMEOVER1-1=한심하긴.
+#----------------------------------------------------
+# Ott                                 
+PC15E_MEETYME_HIT1-1=어라?
+#----------------------------------------------------
+# Brok                                 
+PC15E_MEETYME_DEAD-1=이런!
+#----------------------------------------------------
+# Various                                 
+PC15E_MEETYME_AFTERDESTROY-1=안녕하세요!
+# Brok                                 
+PC15E_MEETYME_AFTERDESTROY-2=오호! 아직도 작동하잖아!
+#----------------------------------------------------

@@ -1,0 +1,106 @@
+﻿#-------------------------------
+#=MAIN MAP
+#-------------------------------
+
+#----------------------------
+ID=STORY140_AFTERPC10_BEATEN
+T=Okay, one situation solved.
+W=BROK
+A=MEH
+CONTEXT=Day 2 - After beating down the hacker
+
+T=Not necessarily the way I wished but... Desperate times call for desperate measures.
+W=BROK
+A=MAYBE
+
+T=Wes must be waiting. I'd better check.
+W=BROK
+
+T=(Sigh) This is gonna be one of those days, huh?...
+W=BROK
+C1A=TIRED
+
+#----------------------------
+ID=STORY140_AFTERPC10_MONEY
+T=Okay, one situation solved.
+W=BROK
+A=MEH
+CONTEXT=Day 2 - After giving money to the hacker
+
+T=I lost precious time on this... Wes will be mad!
+W=BROK
+C1A=WORRIED
+
+T=But it'll be worse if I don't show up...
+W=BROK
+C1A=DISAPPOINTED
+
+T=To the police department. Let's go!
+W=BROK
+C1A=READY
+
+#----------------------------
+ID=STORY220_START
+T=To access it I'll need to cross the border.
+W=BROK
+A=THINK
+CONTEXT=Accessing the factory
+
+T=Hopefully Wes didn't revoke my access...
+W=BROK
+A=HAPPY
+TEN=STORY220_WALKBORDER
+
+
+
+#----------------------------
+ID=STORY220_NOPE
+T=I need to hurry up to the factory!
+W=BROK
+A=READY
+
+
+#----------------------------
+ID=STORY250_NOPE
+T=(Later. The doc is getting worried.)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+
+
+#----------------------------
+ID=STORY290_START
+T=There's still time before my appointment with Wes.
+W=BROK
+A=WONDER
+CONTEXT=Day 3 morning
+
+T=With everything happening, Graff might not be the only one needing help.
+W=BROK
+A=MAYBE
+
+T=I better keep my eyes open. And keep training!
+W=BROK
+A=COCKY
+
+T=Got the feeling this will come in handy very soon...
+W=BROK
+A=MAYBE
+
+#----------------------------
+ID=EV_MAP_AD_DOME_CANNOT
+T=An ad coupon?... Darn, I can't access it!
+W=BROK
+A=ANGRY
+
+#----------------------------
+ID=EV_MAP_NUCLEAR1
+T=I should stay away from the nuclear waste area!
+W=BROK
+A=CONFUSED
+
+#----------------------------
+ID=EV_MAP_NUCLEAR2
+T=This area is... (Cough) toxic!
+W=BROK
+A=CONFUSED

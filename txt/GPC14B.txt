@@ -1,0 +1,494 @@
+﻿#-------------------------------
+#=GRAFF - HACKER FRONT
+#-------------------------------
+
+#---------------------------------------
+#= Arrive
+#---------------------------------------
+ID=GPC14B_ARRIVE1
+T=It's here.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+CONTEXT=Day 3 - Graff and Ott need the Hacker's help so Graff can pass
+TEN=GPC14B_CHECK_RJ
+
+
+#---------------------------------------
+ID=GPC14B_ARRIVE_NORJ
+T=That door?...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+
+T=...
+W=OTT
+C2A=NORMAL
+
+T=Aren't you scared?...
+W=GRAFF
+C1A=SAD
+
+T=Well...
+W=OTT
+
+T=Yeah... But...
+W=OTT
+C2A=SAD
+
+T=We need to do this.
+W=OTT
+C2A=ALRIGHT
+
+T=Ott...
+W=GRAFF
+
+T=Let's go.
+W=OTT
+
+
+#---------------------------------------
+ID=GPC14B_ARRIVE_RJ
+T=...There's a hefty guy in front of the entrance.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+
+T=Which confirms this is the right place.
+W=GRAFF
+
+T=Are you sure? He seems like a cop.
+W=OTT
+C2A=WONDER
+
+T=Only one way to find out...
+W=GRAFF
+C1A=READY
+
+#---------------------------------------
+#= Pipe-pill
+#---------------------------------------
+ID=GPC14B_PIPEPILL1
+T=Look! The Pipe-Pill!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SURPRISED
+COMM=It's broken
+
+T=Holy cow...
+W=GRAFF
+C1A=GASP
+
+T=What's going to happen to everyone in the Slums if this keeps going on?...
+W=OTT
+
+T=One problem at a time...
+W=GRAFF
+C1A=OPPOSITE
+
+#---------------------------------------
+#= Pipe
+#---------------------------------------
+ID=GPC14B_PIPE1
+T=Pipes...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+
+T=...
+W=GRAFF
+C1A=SAD
+
+T=No, Graff. Your future won't consist in gathering rubbish.
+W=OTT
+C2A=ALRIGHT
+
+T=I wish...
+W=GRAFF
+C1A=TURN
+
+#---------------------------------------
+#= RJ
+#---------------------------------------
+ID=GPC14B_RJ_FIRST
+T=Erm... Hello...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=RJ
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+CONTEXT=Talking to R.J. at the entrance
+
+T=Kids?!
+W=RJ
+C2A=SURPRISED
+
+T=Whatcha doin' here?
+W=RJ
+
+T=Da streets not safe!
+W=RJ
+
+T=Enter! Quick!
+W=RJ
+
+T=Erm...
+W=GRAFF
+
+T=(Psst... Better not upset him...)
+W=OTT
+C3A=OPPOSITE
+TEN=GPC14B_GRAFFOTTENTER
+
+
+#---------------------------------------
+ID=GPC14B_RJ_TALKBEFORE1
+T=Enter.
+W=RJ
+C1=GRAFF
+C1A=MEH
+C2=RJ
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+TEN=GPC14B_GRAFFOTTENTER
+
+
+#---------------------------------------
+ID=GPC14B_RJ_TALK1
+T=Where are your parents?
+W=RJ
+C1=GRAFF
+C1A=MEH
+C2=RJ
+C2A=WONDER
+C3=OTT
+C3A=NORMAL
+
+T=We've got something important to do ourselves...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Erm...
+W=GRAFF
+
+T=Do I... scare ya?
+W=RJ
+C2A=SURPRISED
+
+T=...Kinda.
+W=OTT
+C3A=DISAPPOINTED
+
+T=Sorry. Mommy made me like dis.
+W=RJ
+C2A=HAPPY
+
+T=Big arms. Useful for working here.
+W=RJ
+
+T=I bet...
+W=OTT
+C3A=NORMAL
+
+T=Stick around.
+W=RJ
+C2A=NORMAL
+
+T=If bad guy comes... I beat up.
+W=RJ
+
+T=Thank you, mister!
+W=OTT
+C3A=HAPPY
+
+T=Wait. What's going on exactly?
+W=OTT
+C3A=NORMAL
+
+T=Squealers. Causing havoc.
+W=RJ
+C2A=OPPOSITE
+
+T=Pipe-pills plundered.
+W=RJ
+
+T=I had a feeling they were responsible for this!
+W=OTT
+C3A=ANGRY
+
+T=Where are they?
+W=GRAFF
+C1A=READY
+
+T=(Cough, cough)
+W=RJ
+C2A=SAD
+
+T=Back street. Wanderin'.
+W=RJ
+C2A=NORMAL
+
+T=I see...
+W=GRAFF
+C1A=OPPOSITE
+
+#TODO Move away
+T=No choice. We gotta go take a look.
+W=GRAFF
+C1A=READY
+C2=OTT
+C2A=NORMAL
+C3=NONE
+
+T=Are you sure about this?...
+W=OTT
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=We'll just take a look-see. Just to confirm.
+W=GRAFF
+C1A=FRIENDLY
+
+T=After that, we call the cops.
+W=GRAFF
+C1A=COCKY
+
+T=Okay... Lead the way!
+W=OTT
+C3A=HAPPY
+
+
+#---------------------------------------
+ID=GPC14B_RJ_TALK2
+T=(Cough, cough)
+W=RJ
+C1=RJ
+C1A=SAD
+
+T=He keeps coughing... I don't think he's had a pill today.
+W=OTT
+C2=OTT
+C2A=WONDER
+C3=GRAFF
+C3A=MEH
+# original - I believe he didn't have a pill today.
+
+T=All the more reasons to end this. Let's go!
+W=GRAFF
+C3A=READY
+
+#---------------------------------------
+#= Go to back street
+#---------------------------------------
+
+ID=GPC14B_TO_PC14_1
+T=Erm... Graff?...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SURPRISED
+CONTEXT=Going to back street
+
+T=I don't feel confident enough to go there.
+W=OTT
+C2A=DISAPPOINTED
+# original - I don't feel very confident to go there.
+
+T=...You're right.
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC14B_TO_PC14_RESET
+
+#---------------------------------------
+#= After given bank statement
+#---------------------------------------
+ID=GPC14B_AFTER1
+T=What now?...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+CONTEXT=Going outside after giving bank statement to the hacker
+
+T=...
+W=GRAFF
+C1A=THINK
+
+T=I was thinking about the Toxout pills shortage.
+W=GRAFF
+
+T=Even if we get to live under the Dome...
+W=GRAFF
+C1A=MEH
+
+T=We can't just leave all the Slums people without any solution, can we?
+W=GRAFF
+
+T=I agree.
+W=OTT
+C2A=ALRIGHT
+
+T=I've already asked Brok to investigate but...
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC14B_AFTER1_CHECK
+
+
+#---------------------------------------
+ID=GPC14B_AFTER1_BROKMEH
+T=Is it such a good idea?...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=DISAPPOINTED
+
+T=I mean... He didn't seem very competent to me yesterday...
+W=OTT
+C2A=OPPOSITE
+
+T=Hmm...
+W=GRAFF
+C1A=THINK
+TEN=GPC14B_AFTER1_NEXT
+
+
+#---------------------------------------
+ID=GPC14B_AFTER1_BROKGOOD
+T=Good idea! He's a great detective.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=HAPPY
+
+T=Uncle Wes is also on the case. Still...
+W=OTT
+C2A=NORMAL
+TEN=GPC14B_AFTER1_NEXT
+
+
+#---------------------------------------
+ID=GPC14B_AFTER1_NEXT
+T=We should give it a go ourselves as well. It's too important.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+TEN=GPC14B_AFTER1_GRAFFLOOKOTT
+
+T=Okay, let's try.
+W=GRAFF
+C1A=READY
+TEN=GPC14B_CHECKRJ_ALLEY
+
+#---------------------------------------
+ID=GPC14B_AFTER_ALLEY
+T=I have a feeling those Squealers are involved...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=We should go check that alley.
+W=GRAFF
+C1A=MEH
+TEN=GPC14B_AFTER1B
+
+#---------------------------------------
+ID=GPC14B_AFTER1B
+T=This might be dangerous...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SAD
+
+T=Yeah...
+W=GRAFF
+C1A=TURN
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Listen... 
+W=GRAFF
+
+T=Don't ask how but...
+W=GRAFF
+
+T=I've got an app on my phone to track my old man.
+W=GRAFF
+
+T=You do?...
+W=OTT
+C2A=WONDER
+
+T=If anything happens to me...
+W=GRAFF
+
+T=Go fetch Brok. Okay?
+W=GRAFF
+C1A=MEH
+
+T=I hope I won't have to but...
+W=OTT
+C2A=DISAPPOINTED
+
+T=You've got my word.
+W=OTT
+
+
+#---------------------------------------
+ID=GPC14B_RJ_AWAY1
+T=Kids! Wait!
+W=RJ
+A=SURPRISED
+
+T=Where ya goin'?... (Cough, cough)
+W=RJ
+
+T=Aww... Boss say not move.
+W=RJ
+A=SAD
+TEN=GPC14B_TO_PC14_DO
+
+#---------------------------------------
+ID=GPC14B_GRAFF_HIT_RJ1
+T=That tickles!
+W=RJ
+A=COCKY
+C1_EYESHUT=1
+NB=1
+D=120
+
+
+#----------------------
+#= Talking to RJ
+#----------------------
+ID=COOP_GPC14B_RJ1
+T=Good thing this muscles mountain can't smell me!
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 03/09/2019
+###############################################

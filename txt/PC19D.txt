@@ -1,0 +1,643 @@
+﻿#-------------------------------
+#=BUNKER FRONT/OUTSIDE
+#-------------------------------
+
+#---------------------------------
+#= Pipe pill
+#---------------------------------
+ID=PC19D_PIPEPILL1
+T=I'll get to the bottom of this...
+W=BROK
+A=ANGRY
+CONTEXT=Room interactions
+
+#---------------------------------
+#= Portal
+#---------------------------------
+ID=PC19D_PORTAL1
+T=Is the doctor still inside?...
+W=BROK
+A=MAYBE
+
+T=Hopefully I won't regret trusting Dee...
+W=BROK
+A=ANGRY
+
+#---------------------------------
+#= Indicator
+#---------------------------------
+ID=PC19D_INDICATOR1
+T=A diode...
+W=BROK
+A=THINK
+
+T=Red for bad, green for good?...
+W=BROK
+A=WONDER
+
+#---------------------------------
+#= Brok, Dee & Dr. Gherkin arrive
+#---------------------------------
+ID=PC19D_BUNKER1
+T=(Pant, pant) It's here!...
+W=GHERKIN
+C1=BROK
+C1A=SURPRISED
+C2=GHERKIN
+C2A=WORRIED
+CONTEXT=Brok, Dee & Dr. Gherkin arrive at the bunker as they are being chased by a huge number of robots
+
+
+
+#---------------------------------
+ID=PC19D_BUNKER1B
+T=Quick! Open it!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GHERKIN
+C2A=WORRIED
+COMM=Brok is addressing Dr. Gherkin
+
+T=Sure!...
+W=GHERKIN
+
+T=Err...
+W=GHERKIN
+C2A=ANGRY
+TEN=PC19D_BROK_TURNS
+
+T=Err what?
+W=BROK
+C1A=ANGRY
+
+T=Let me think...
+W=GHERKIN
+C2A=HAPPY
+
+T=Now, where did I put this key?
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=A key?! Like... an actual key?...
+W=BROK
+C1A=WONDER
+
+T=This bunker was built a long time ago during...
+W=GHERKIN
+TEN=PC19D_DEE_TURNS
+SKIPEND=1
+
+T=Forget the history lesson!
+W=BROK
+C1A=FURIOUS
+
+T=They're coming! We don't have much time!
+W=DEE
+C3=DEE
+C3A=NORMAL
+
+T=Ah! There it is.
+W=GHERKIN
+C2A=HAPPY
+
+T=Gimme that!
+W=BROK
+C1A=ANGRY
+TEN=PC19D_BROK_TAKES
+
+
+#---------------------------------
+ID=PC19D_BUNKER1C
+T=...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+
+T=What's that?
+W=BROK
+C1A=WORRIED
+
+T=There seems to be another mechanism in there...
+W=BROK
+TEN=PC19D_PUZZLE_CLOSEUP_BACK
+
+T=Doc!...
+W=BROK
+C1A=ANGRY
+TEN=PC19D_BROK_TURNSGHERKIN
+
+
+#---------------------------------
+ID=PC19D_BUNKER1D
+T=You've gotta be kiddin' me!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=I... I have to repair this one! It's my job! 
+W=GHERKIN
+C2=GHERKIN
+C2A=EMBARRASSED
+
+T=But how do I open this portal?!
+W=BROK
+C1A=ANGRY
+
+T=I won't be of any help. It's my first time here!
+W=GHERKIN
+
+T=Oh, great...
+W=BROK
+C1A=STUPID
+TEN=PC19D_BUNKER1E
+
+#---------------------------------
+ID=PC19D_BUNKER1E
+T=They'll be onto us in a minute!
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+TEB=PC19D_BROK_TURNSDEE
+
+T=One of us has got to hold them back!
+W=BROK
+C1A=ANGRY
+
+T=While the other figures this out...
+W=BROK
+C1A=OPPOSITE
+TEN=PC19D_CHOICE_PORTAL
+
+
+#---------------------------------
+#= Dee fights
+#---------------------------------
+ID=PC19D_DEEFIGHTS1
+T=Dee. Think you're up to givin' me some time?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DEE
+C2A=NORMAL
+
+T=I can try. But...
+W=DEE
+C2A=WONDER
+
+T=Thanks.
+W=BROK
+C1A=READY
+
+T=I thought you'd be the fighting type.
+W=DEE
+
+T=No time to argue. Let's do this!
+W=BROK
+
+T=Here they come!
+W=DEE
+C2A=NORMAL
+TEN=PC19D_DEEFIGHT_START
+
+#---------------------------------
+#= Brok fights
+#---------------------------------
+ID=PC19D_BROKFIGHTS1
+T=Dee. Can you check this?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DEE
+C2A=LISTEN
+TEN=PC19D_DEE_GOESPUZZLE
+
+T=Sure. But...
+W=DEE
+C2A=WONDER
+
+T=I'll keep them away as long as I can.
+W=BROK
+C1A=READY
+
+T=Riddles aren't really my thing. We won't have a second chance!
+W=DEE
+C2A=LISTEN
+
+T=Just... do it, okay?...
+W=BROK
+
+T=Okay.
+W=DEE
+C2A=NORMAL
+
+T=Thanks.
+W=BROK
+
+T=You'll thank me if we get out of here alive.
+W=DEE
+
+T=Nah! They won't get pass me!
+W=BROK
+C1A=COCKY
+
+T=Bring'em on!
+W=BROK
+C1A=READY
+TEN=PC19D_BROKFIGHT_START
+
+#---------------------------------
+#= During timer
+#---------------------------------
+ID=PC19D_TIMER_DEEFIGHTS_FIRST1
+T=I don't get it... 
+NB=1
+D=60
+BNAMESP=DEE
+BVOICESP=DEE
+
+T=What's up with those bots?!
+NB=1
+D=90
+BNAMESP=DEE
+BVOICESP=DEE
+
+T=Wish I knew!
+NB=1
+D=30
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Let's survive. Then we'll figure this out!
+NB=1
+D=60
+BNAMESP=BROK
+BVOICESP=BROK
+
+#---------------------------------
+#= Before end of timer
+#---------------------------------
+ID=PC19D_TIMER_DEEFIGHTS_LASTSECONDS1
+T=Hurry! Huge wave of bots incoming!
+NB=1
+D=90
+BNAMESP=DEE
+BVOICESP=DEE
+
+#---------------------------------
+#= Too late!
+#---------------------------------
+ID=PC19D_TIMER_DEEFIGHTS_TOOLATE
+T=Nooo!
+BNAMESP=DEE
+BVOICESP=DEE
+
+#---------------------------------
+#= Another puzzle
+#---------------------------------
+ID=PC19D_PUZZLE_ANOTHER
+T=Another?!
+W=BROK
+A=SURPRISED
+
+
+#---------------------------------
+#= Brok succeeds opening portal
+#---------------------------------
+ID=PC19D_BROK_OPENS
+T=You did it!
+W=DEE
+C1=BROK
+C1A=HAPPY
+C2=DEE
+C2A=READY
+COMM=Brok succeeds opening portal
+TEN=PC19D_AFTER_OPENED2
+
+#---------------------------------
+#= Dee succeeds opening portal
+#---------------------------------
+ID=PC19D_DEE_OPENS
+T=Yes!
+W=DEE
+C1=BROK
+C1A=READY
+C2=DEE
+C2A=READY
+COMM=Dee succeeds opening portal
+
+T=Congrats! Just let me finish.
+W=BROK
+TEN=PC19D_BROK_FINISHESFIGHT
+
+#---------------------------------
+ID=PC19D_DEE_OPENSB
+T=There ya go!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=DEE
+C2A=NORMAL
+TEN=PC19D_AFTER_OPENED
+
+
+#---------------------------------
+ID=PC19D_AFTER_OPENED1
+T=Come on, Doc!
+W=BROK
+C1=BROK
+C1A=READY
+
+T=One second...
+W=GHERKIN
+C2=GHERKIN
+C2A=ANGRY
+
+T=Done!
+W=GHERKIN
+C2A=HAPPY
+TEN=PC19D_AFTER_MEETINFRONT
+
+
+#---------------------------------
+ID=PC19D_AFTER_OPENED2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+C3=GHERKIN
+C3A=WORRIED
+
+T=Which way?
+W=BROK
+C1A=WONDER
+
+T=Let's split.
+W=DEE
+C2A=MEH
+
+T=You take the left. I'll go with the doctor.
+W=DEE
+C2A=COCKY
+
+T=B-but... Mister Brok is...
+W=GHERKIN
+C3A=WORRIED
+SKIPEND=1
+
+T=Hurry! They're here!
+W=DEE
+C2A=NORMAL
+TEN=PC19D_AFTER_CLOSEWAVE
+
+
+
+#---------------------------------
+#= Give up
+#---------------------------------
+ID=PC19D_GIVEUP1
+T=I give up.
+C1=BROK
+W=BROK
+C1A=DOWN
+
+T=You can't! If you don't get this open, we're goners!
+W=DEE
+C2=DEE
+C2A=SURPRISED
+
+T=Hmm... That's right.
+W=BROK
+C1A=TIRED
+TEN=PC19D_GIVEUP_AFTER
+
+#---------------------------------
+ID=PC19D_GIVEUP2
+T=I can't give up now!
+W=BROK
+A=TIRED
+TEN=PC19D_GIVEUP_AFTER
+
+
+#-------------------------------
+#= After big fight
+#-------------------------------
+ID=PC19D_AFTER_BIGFIGHT1
+T=We made it?...
+W=DEE
+C1=BROK
+C1A=READY
+C2=DEE
+C2A=SURPRISED
+
+T=Seems so!
+W=BROK
+C1A=ALRIGHT
+
+T=Quite amazing fighting skills for a Drumer journalist!
+W=BROK
+C1A=MOCK
+
+T=Huh. Save the praise for later.
+W=DEE
+C2A=MEH
+TEN=PC19D_BEFORELEAVING1
+
+#-------------------------------
+#= Before going to police dpt
+#-------------------------------
+ID=PC19D_BEFORELEAVING1
+T=Let's go.
+W=DEE
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=READY
+CONTEXT=After exiting the bunker, they leave to rescue Sin
+
+T=Wait!
+W=BROK
+C1A=ANGRY
+C2A=NORMAL
+
+T=What's your plan?
+W=BROK
+
+T=Simple.
+W=DEE
+
+T=I go in, kick those bots asses and come back with my man.
+W=DEE
+C2A=ANGRY
+
+T=It's a police department. There are dozens of bots in there.
+W=BROK
+
+T=There must be a better way...
+W=BROK
+C1A=MAYBE
+
+T=Okay. Tell me.
+W=DEE
+C2A=MEH
+TEN=PC19D_LEAVING_CHOICE
+IT=1
+
+#-------------------------------
+ID=PC19D_LEAVE_CALL
+T=Wes is the chief of this police department. I can call him. 
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DEE
+C2A=NORMAL
+
+T=Are you serious?
+W=DEE
+C2A=NORMAL
+
+T=If by any chance he's involved into all this mess...
+W=DEE
+
+T=We'll fall right into a trap.
+W=DEE
+C2A=WONDER
+
+T=I've known him for years. He's certainly not an easy guy but...
+W=BROK
+C1A=THINK
+
+T=Desperate situations call for desperate measures.
+W=BROK
+C1A=ANGRY
+
+T=OK. I trust you.
+W=DEE
+C2A=LISTEN
+
+T=Do it.
+W=DEE
+
+T=...
+
+T=...
+
+T=Police department. The chief is currently busy. Please state your requ...
+BVOICESP=TRIBOT
+
+T=Darn... He's not available.
+W=BROK
+C1A=MAYBE
+
+T=Then no time to waste. Let's try my plan.
+W=DEE
+C2A=NORMAL
+
+T=No...
+W=BROK
+C1A=ANGRY
+TEN=PC19D_LEAVING_CHOICE2
+IT=1
+
+#-------------------------------
+ID=PC19D_LEAVE_INFILTRATE
+T=We should infiltrate the place.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+
+T=It'd be much less risky. Fewer tin cans to wreck.
+W=BROK
+
+T=Hmm...
+W=DEE
+
+T=Are you certain there's a way to enter the jail discretly?
+W=DEE
+
+T=Yes. The main entrance.
+W=BROK
+
+T=Is that a joke?...
+W=DEE
+
+T=Those bots are stupid. We can enter from the main entrance and distract them.
+W=BROK
+
+T=I'll go first. Follow me.
+W=BROK
+
+T=Alright. Just...
+W=DEE
+
+T=Be careful, okay?...
+W=DEE
+
+T=Hey, I can defend myself if anything goes wrong!
+W=BROK
+C1A=COCKY
+
+T=Right...
+W=DEE
+
+T=Off we go!
+W=DEE
+TEN=PC19D_TO_PC09
+
+#-------------------------------
+ID=PC19D_LEAVE_SMASH
+T=I'll go in and smash my way through those tin cans.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=LISTEN
+
+T=And... What's the difference with my plan, pray tell?
+W=DEE
+C2A=COCKY
+
+T=Well, I'll do most of the job. You'll stay behind me for support.
+W=BROK
+C1A=MEH
+
+T=Ohhh, I see.
+W=DEE
+
+T=Mister thinks I'm too weak to beat those AIs!
+W=DEE
+C2A=MEH
+
+T=No but I'm more experienced!
+W=BROK
+
+T=I eat bots chips for breakfast!
+W=BROK
+C1A=COCKY
+
+T=How courteous!
+W=DEE
+
+T=OK, tough guy. Show me what you've got!
+W=DEE
+C1A=MEH
+C2A=COCKY
+TEN=PC19D_TO_PC09
+
+#----------------------
+ID=PC19D_ENDCHAPTER6
+T=Target acquired!
+BNAME=TRIBOT
+BVOICE=TRIBOT
+TEN=PC19D_ENDCHAPTER6_FIGHT
+
+
+###############################################
+# PROOFREAD - jblaker - 26/08/2019
+###############################################

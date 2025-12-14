@@ -1,0 +1,2879 @@
+﻿#-------------------------------
+#=  BORDER POST
+#-------------------------------
+
+
+#----------------------
+#= Pipe pill
+#----------------------
+ID=PC12_PIPEPILL1
+T=A Toxout pill dispenser...
+W=BROK
+A=THINK
+TEN=PC12_PIPEPILL_TRY
+COMM=Room interactions
+
+#----------------------
+ID=PC12_PIPEPILL1B
+T=Darn... it's busted.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC12_PIPEPILL_BILL
+T=Can't even pay my bills... It's totally broken!
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC12_PIPEPILL2
+T=Everything in the Slums is decaying...
+W=BROK
+A=OPPOSITE
+
+
+#----------------------
+#= Platform
+#----------------------
+ID=PC12_PLATFORM
+T=How could I access it?
+W=BROK
+A=WONDER
+
+
+#----------------------
+#= Hand
+#----------------------
+ID=PC12_HAND1
+T="Please place your body over there."
+W=BROK
+A=THINK
+
+#----------------------
+#= Scanner
+#----------------------
+ID=PC12_SCANNER1
+T=I doubt it will work but I'll give it a try...
+W=BROK
+A=THINK
+COMM=Using the scanner
+
+T=If I remember correctly, I only need to stay still and...
+W=BROK
+A=WONDER
+TEN=PC12_SCAN_DO
+
+
+#----------------------
+ID=PC12_SCANNER_WRONG1
+T=Scan complete. Unknown user.
+BVOICE=VARIOUS
+D=90
+NB=1
+
+T=Forbidden access!
+D=60
+NB=1
+
+T=Please move away before the countdown.
+D=80
+NB=1
+
+T=Three...
+D=60
+
+T=Two...
+D=60
+
+T=One...
+D=60
+TEN=PC12_LASERS_CHECK
+
+#----------------------
+ID=PC12_SCANNER_OK1
+T=Scan complete.
+BVOICE=VARIOUS
+
+T=User allowed!
+TEN=PC12_SCANNER_OK
+
+#----------------------
+ID=PC12_SCANNER_CAMERADISABLED
+T=Error 0x5421.
+BVOICE=VARIOUS
+D=90
+NB=1
+TEN=PC12_SCAN_END
+
+#----------------------
+ID=PC12_SCANNER_OVER
+T=Procedure over. Thank you for understanding!
+BVOICE=VARIOUS
+TEN=PC12_SCANNER_OVER2
+
+#----------------------
+ID=PC12_SCANNER_OVER_REACT
+T=Phew!
+W=BROK
+A=TIRED
+
+T=As expected, I'm not allowed to cross into the Drums area.
+W=BROK
+C1A=MAYBE
+
+T=I'd better think this over...
+W=BROK
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+#= Cameras
+#----------------------
+ID=PC12_CAMERA1
+T=If these are what I think they are...
+W=BROK
+A=THINK
+
+T=I'd better behave!
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC12_CAMERA_OTHERS
+T=Throwing that to destroy it?
+W=BROK
+A=THINK
+
+T=That won't work. The camera doesn't control the authorization. It's just a defense mechanism...
+W=BROK
+A=THINK
+
+#----------------------
+#= Commands
+#----------------------
+ID=PC12_COMMANDS_WHAT
+T=What does this control?
+W=BROK
+A=MAYBE
+COMM=Control panel inside the building where Bolt used to work
+
+T=There aren't any labels...
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC12_COMMANDS_NONEED
+T=No need to touch anymore.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+ID=PC12_COMMANDS_VOICERESET
+T=Obstruction detected! Imminent destruction of the packages!
+BVOICE=VARIOUS
+TEN=PC12_BUTTON_RESETFORCE
+
+#----------------------
+ID=PC12_COMMANDS_LOT
+T=I could do this all day!
+W=BROK
+A=ALRIGHT
+
+T=Should I, though?
+W=BROK
+A=HAPPY
+
+
+#----------------------
+#= Antenna
+#----------------------
+ID=PC12_ANTENNA1
+T=I guess it's used for... communicating?
+W=BROK
+A=WONDER
+
+T=I suck at technology. In any case, I probably shouldn't try climbing it...
+W=BROK
+A=MAYBE
+
+T=Unless I wanna die prematurely.
+W=BROK
+A=MAYBE
+TEN=PC12_ANTENNA_AFTER
+
+#----------------------
+#= Pyramid door
+#----------------------
+ID=PC12_PYRAMIDDOOR_FAR
+T=I need to find a way to get closer!
+W=BROK
+A=THINK
+COMM=Pyramid door
+#----------------------
+ID=PC12_PYRAMIDDOOR1
+T=Closed, obviously...
+W=BROK
+A=THINK
+
+T=No way I got up there for nothin'!
+W=BROK
+A=ANGRY
+TEN=PC12_PYRAMIDDOOR_HIT
+
+#----------------------
+ID=PC12_PYRAMIDDOOR1B
+T=Argh! I'm getting sick of this!
+W=BROK
+A=FURIOUS
+
+T=What in the world am I doing up here?! Why did I even accept this mission? I'm so...
+W=BROK
+A=FURIOUS
+TEN=PC12_PYRAMIDDOOR_KICK
+
+#----------------------
+ID=PC12_PYRAMIDDOOR1C
+T=Stupid!
+W=BROK
+A=ANGRY
+
+T=...
+W=BROK
+A=SURPRISED
+
+T=Oh. I guess it just needed a good kick.
+W=BROK
+A=HAPPY
+TEN=PC12_TO_PC12B
+
+#----------------------
+ID=PC12_PYRAMIDDOOR_DONE
+T=I'm done with this!
+W=BROK
+A=MOCK
+
+#----------------------
+ID=PC12_PYRAMIDDOOR_NOTYET
+T=Wait... This must be a high security area!
+W=BROK
+A=THINK
+
+T=I shouldn't enter before knowing what I'm stepping into.
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Plank
+#----------------------
+ID=PC12_PLANK1
+T=Advertisement everywhere... Even in the oddest places.
+W=BROK
+A=THINK
+
+T=This one won't fit in my pocket.
+W=BROK
+A=WONDER
+TEN=PC12_PLANK_AUDIOD
+
+#----------------------
+ID=PC12_PLANK2
+T=One sturdy plank.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC12_PLANK_HIT
+T=No use... It's not moving an inch!
+W=BROK
+A=ANGRY
+NB=1
+D=90
+
+#----------------------
+#= Distributor
+#----------------------
+ID=PC12_DISTRIBUTOR1
+T=All kinds of food and drink are on sale...
+W=BROK
+A=THINK
+TEN=PC12_DISTRIBUTOR_TRY
+
+#----------------------
+ID=PC12_DISTRIBUTOR1B
+T=Too bad it's broken.
+W=BROK
+A=WONDER
+
+#----------------------
+#= Distributor broken
+#----------------------
+ID=PC12_DISTRIBUTORBROKEN_PICK1
+T=Whoa... What happened?
+W=BROK
+A=SURPRISED
+
+T=Well, it was broken anyway... But...
+W=BROK
+A=THINK
+
+T=Hey, look at that! A few products fell on the floor!
+W=BROK
+A=HAPPY
+TEN=PC12_DISTRIBUTORBROKEN_TAKE
+
+
+#----------------------
+ID=PC12_DISTRIBUTORBROKEN_PICK1B
+T=It'd be a shame to let good food go to waste!
+W=BROK
+A=HAPPY
+TEN=PC12_DISTRIBUTORBROKEN_PICKAD
+
+
+#----------------------
+ID=PC12_DISTRIBUTORBROKEN1
+T=Nothing left.
+W=BROK
+A=THINK
+
+
+#----------------------
+#= Shelf brace
+#----------------------
+ID=PC12_SHELFBRACE1
+T=This is screwed in to help keep the plank in place.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC12_SHELFBRACE_UNSCREW_LEFT
+T=For once, I'm glad I didn't forget to take my keys!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC12_SHELFBRACE_UNSCREW_RIGHT
+T=I'm thankful for whoever invented screwdriver-keys!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC12_SHELFBRACE_BREAK
+T=...
+W=BROK
+A=THINK
+SOUND=metal
+
+T=I'm trying to break it but...
+W=BROK
+
+T=It's firmly attached.
+W=BROK
+
+#----------------------
+ID=PC12_SHELFBRACE_SCREW
+T=Using a screw to...screw?
+W=BROK
+A=HAPPY
+
+T=Nope... Doesn't work.
+W=BROK
+A=DOWN
+
+#----------------------
+ID=PC12_SHELFBRACE_NOTHERE
+T=Good idea! But...
+W=BROK
+A=MAYBE
+
+T=Not here.
+W=BROK
+
+#----------------------
+#= Helpline
+#----------------------
+ID=PC12_HELPLINE1
+T=Please wait. An agent with pre-recorded messages will take your call.
+BVOICE=VARIOUS
+COMM=Using the help line
+
+T=Estimated waiting time...
+
+T=Two days.
+
+T=Two days?! I'm not gonna wait that long!
+W=BROK
+A=SURPRISED
+
+T=In case of emergency, please hit the keyboard panel violently.
+
+T=...
+W=BROK
+A=SURPRISED
+
+#----------------------
+ID=PC12_HELPLINE_HIT
+T=Violent behavior detected in sector 1.
+BVOICE=VARIOUS
+COMM=Hitting the help line
+NB=1
+D=90
+
+T=What? But...
+W=BROK
+A=SURPRISED
+D=60
+
+T=No emergency justifies violence. Immediate action requested.
+D=80
+
+T=Uh oh...
+W=BROK
+D=60
+TEN=PC12_LASERS_CHECK
+
+#----------------------
+ID=PC12_HELPLINE_HIT2
+T=Violent behavior detected in sector 1.
+BVOICE=VARIOUS
+COMM=Hitting the help line
+NB=1
+D=90
+TEN=PC12_LASERS_CHECK
+
+#----------------------
+#= Pyramid
+#----------------------
+ID=PC12_PYRAMIDBUILDING_FROMAFAR
+T=So this is the pyramid-shaped building Shay mentioned?
+W=BROK
+A=THINK
+TEN=PC12_PYRAMIDBUILDING_SHOWNORMALAFAR
+
+
+#----------------------
+ID=PC12_PYRAMIDBUILDING_BEFORE1
+T=I have no idea what's in there...
+W=BROK
+A=THINK
+TEN=PC12_PYRAMIDBUILDING_BEFORE1B
+
+#----------------------
+ID=PC12_PYRAMIDBUILDING_BEFORE1B
+T=And I won't find out. The entrance seems to be locked.
+W=BROK
+A=ANGRY
+TEN=PC12_PYRAMIDBUILDING_REVERTACTIVATE
+
+
+#----------------------
+
+ID=PC12_PYRAMIDBUILDING1
+T=There's a door at the top. But...
+W=BROK
+A=THINK
+
+T=How the heck am I gonna climb all the way up there?!
+W=BROK
+A=ANGRY
+TEN=PC12_PYRAMIDBUILDING_REVERTACTIVATE
+
+#----------------------
+#= Pyramid door closed
+#----------------------
+ID=PC12_PYRAMID_ALREADY1
+T=The entrance is locked...
+W=BROK
+A=WONDER
+
+T=But I don't need to enter it again, anyway!
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+#= Pyramid building exit
+#----------------------
+ID=PC12_APERTURE1
+T=Locked?
+W=BROK
+A=THINK
+COMM=Trying to open the bottom pyramid door
+
+T=Ngghh!!!
+W=BROK
+A=YELL
+
+T=No good. It's either firmly sealed, only opens from the inside, or is simply not a door.
+W=BROK
+A=TIRED
+
+T=I need another way in...
+W=BROK
+A=THINK
+
+
+#----------------------
+ID=PC12_APERTURE2
+T=(Knocks, knocks)
+
+T=Is someone there?
+W=BROK
+A=WONDER
+
+T=...
+W=BROK
+A=THINK
+
+T=Nope.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+#= Building entrance
+#----------------------
+ID=PC12_BUILDING1
+T=A maintenance area, maybe?
+W=BROK
+A=THINK
+TEN=PC12_BUILDING_TRY
+
+#----------------------
+ID=PC12_BUILDING_LOCKED
+T=Locked!
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC12_BUILDING2
+T=I can't get in.
+W=BROK
+A=ANGRY
+
+
+
+#----------------------
+#= Bolt
+#----------------------
+ID=PC12_BOLT_FIRST
+T=Hi?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+CONTEXT=Talking to Bolt, a depressive robot on the bench
+
+T=...
+W=BOLT
+
+T=...hello.
+W=BOLT
+
+T=You look kinda...depressed? Especially for a robot.
+W=BROK
+C1A=WONDER
+
+T=You - don't know - the half - of it.
+W=BOLT
+
+T=...
+W=BOLT
+C1A=THINK
+
+T=So? Are you gonna tell me?
+W=BROK
+
+T=Please - don't talk - to me. Dismay - can be - contagious...
+W=BOLT
+C2A=WORRIED
+
+T=Oh, come on! It can't be that bad! After all, you're alive!
+W=BROK
+C1A=ALRIGHT
+
+T=Err, I mean...
+W=BROK
+C1A=STUPID
+
+T=Do not - worry - about me.
+W=BOLT
+C2A=SAD
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+#- Welcome
+#----------------------
+ID=PC12_BOLT_WELCOME1
+T=Me again!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=SAD
+
+T=Why - are you - insisting? I'm - done for.
+W=BOLT
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC12_BOLT_WELCOME2
+T=How ya doin'?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=SAD
+
+T=Bad.
+W=BOLT
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+#- Exit
+#----------------------
+ID=PC12_BOLT_EXIT1
+T=Gotta go. But no worries, I'll be back soon!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=WORRIED
+
+T=Don't - bother.
+W=BOLT
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC12_BOLT_EXIT2
+T=I'll find something to help ya.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=Please don't. I - feel bad - for wasting - your time.
+W=BOLT
+TEN=CHARACTER_STOPMUSIC
+
+
+#----------------------
+#- Himself
+#----------------------
+ID=PC12_BOLT1
+T=Tell me. What's on your mind?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=Despair. Darkness. Death.
+W=BOLT
+
+T=Not that... I mean, what happened to you?
+W=BROK
+C1A=MAYBE
+
+T=How would - you benefit - from knowing - that?
+W=BOLT
+
+T=Dunno. Just curious!
+W=BROK
+C1A=THINK
+
+T=Is - that so...
+W=BOLT
+
+T=See that - building with - a huge antenna - in front of you? 
+W=BOLT
+TEN=PC12_BOLT_SHOWBUILDING
+
+
+#----------------------
+ID=PC12_BOLT1B
+T=This is - the sorting center - I've been - working there - for the past - 30 years.
+W=BOLT
+C1=NONE
+C2=BOLT
+C2A=SAD
+TEN=PC12_BOLT_SHOWBUILDING2
+
+
+#----------------------
+ID=PC12_BOLT1C
+T=I was - responsible for - the delivery of - big packages.
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=Lately - I haven't been - efficient enough.
+W=BOLT
+
+T=The management - noticed it. Today they've - fired me...
+W=BOLT
+C2A=WORRIED
+
+T=Man, that sucks... I'm so sorry.
+W=BROK
+C1A=MAYBE
+
+T=(Not even robots are immune to layoffs now?)
+W=BROK
+MOOD=THINK
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+ID=PC12_BOLT2
+T=So, what are you waiting for on this bench?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=Some scientists - are on their way - to pick me up.
+W=BOLT
+
+T=They're going - to recondition me...
+W=BOLT
+
+T=What does that mean?
+W=BROK
+C1A=THINK
+
+T=Taking out - some of my - circuitry...
+W=BOLT
+C2A=WORRIED
+
+T=Giving me - a new triangle head - like those new models...
+W=BOLT
+
+T=Then my firmware - will be updated...
+W=BOLT
+
+T=I will lose - all data - on my hardware memory.
+W=BOLT
+
+T=You... will be reset?
+W=BROK
+C
+T=Yes. Precisely.
+W=BOLT
+
+T=I've never felt - like this - before...
+W=BOLT
+
+T=I believe - I won't be - myself anymore...
+W=BOLT
+C2A=WONDER
+
+T=Isn't this - like... dying?
+W=BOLT
+
+T=I don't know but it sure sounds terrible...
+W=BROK
+C1A=DOWN
+C2A=OFF
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+ID=PC12_BOLT3
+T=There are - so many questions - on my mind...
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=What happens - if I die?
+W=BOLT
+C2A=WONDER
+
+T=What if - I commit suicide? Is there - a god - for robots?
+W=BOLT
+
+T=Man... I can't keep up with spiritual stuff for humans, never mind robots... 
+W=BROK
+C1A=WONDER
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+#- Job
+#----------------------
+ID=PC12_BOLT_JOB1
+T=Can you describe your job more precisely?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=WONDER
+
+T=My main objective - was to sort - packages between - various destinations - including the Slums - and the Drums.
+W=BOLT
+
+T=Packages were - automatically sorted - by size and shape - to fit the pipe - leading to their target.
+W=BOLT
+
+T=I just had - to push - the correct buttons - on my control panel.
+W=BOLT
+
+T=Square button for square packages... triangle button for triangle packages...
+W=BOLT
+
+T=Seems simple enough... Can't a machine take care of that?
+W=BROK
+C1A=ALRIGHT
+
+T=...
+W=BOLT
+C2A=SAD
+
+T=Err... I think I may have said something stupid again.
+W=BROK
+C1A=STUPID
+
+T=No - you're right. That's - the thing. They're going - to fully - automatize the process.
+W=BOLT
+C1A=THINK
+
+T=Although - part of the job - was also - to ensure - no dangerous materials - went past this point.
+W=BOLT
+
+T=This didn't - happen often - but in case - of any doubt - I had physical - access to the packages - to check them.
+W=BOLT
+
+T=It's - not fair... I never - screwed up.
+W=BOLT
+
+T=Always pushed - the right buttons.
+W=BOLT
+
+T=No accident. Never!
+W=BOLT
+
+T=Sure - I may be - getting slower - over time. Memory chips - wearing.
+W=BOLT
+
+T=Was that - enough reason - to get rid - of me?
+W=BOLT
+
+T=I... probably not.
+W=BROK
+C1A=WONDER
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+ID=PC12_BOLT_JOB2
+T=So who's doing the job now?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=No one.
+W=BOLT
+
+T=Really? How is the mail delivered now?
+W=BROK
+C1A=SURPRISED
+
+T=I guess - it's stuck...
+W=BOLT
+
+T=Actually - I don't care. I just - couldn't care - less.
+W=BOLT
+C2A=OFF
+
+T=...am I - being - selfish?
+W=BOLT
+C2A=WONDER
+
+T=(That bot is something... I've never seen any reacting like this)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+
+T=Maybe just a little. But that's OK! It happens to the best of us.
+W=BROK
+C1A=ALRIGHT
+
+T=...(Sigh)
+W=BOLT
+C2A=OFF
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC12_BOLT_JOB3
+T=Square button - for square packages... triangle button - for triangle packages...
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=Poor control panel... I'll never - see you - again...
+W=BOLT
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+#- Think
+#----------------------
+ID=PC12_BOLT_THINK1
+T=(Poor thing...)
+W=BROK
+C1=BROK
+C1A=DOWN
+MOOD=THINK
+
+T=(He may be just a machine but I can't help feeling bad for him.)
+W=BROK
+C1=BROK
+C1A=DOWN
+MOOD=THINK
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+#----------------------
+#- Help
+#----------------------
+ID=PC12_BOLT_HELP1
+T=If I - could cry - there'd be - a river - down my feet - right now...
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=...
+W=BROK
+
+T=I'll help ya.
+W=BROK
+C1A=MOCK
+
+T=You cannot.
+W=BOLT
+C2A=WORRIED
+
+T=Yes, I can!
+W=BROK
+
+T=All you need to do is find yourself a new job!
+W=BROK
+C1A=THINK
+
+T=Impossible. I was designed - for this - specific task.
+W=BOLT
+
+T=I don't believe that for a second.
+W=BROK
+C1A=ANGRY
+
+T=You got two arms, two legs. You can do anything!
+W=BROK
+
+T=...if you - say so.
+W=BOLT
+
+T=Then... What do - you suggest?
+W=BOLT
+TEN=PC12_BOLT_HELPCHOICES
+IT=1
+
+
+#----------------------
+ID=PC12_BOLT_HELP2
+T=I've got an idea!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=BOLT
+C2A=WORRIED
+TEN=PC12_BOLT_HELPCHOICES
+IT=1
+
+#----------------------
+#- Help exit
+#----------------------
+ID=PC12_BOLT_HELPEXIT1
+T=Erm... Just let me think a little more.
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=BOLT
+C2A=SAD
+
+T=I'm not - worth your time. Leave me - alone...
+W=BOLT
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+
+#----------------------
+#- Help : assistant
+#----------------------
+ID=PC12_BOLT_HELPBROK1
+T=You could work for me?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=WORRIED
+
+T=What do - you do - in life?
+W=BOLT
+
+T=Many things.
+W=BROK
+
+T=I'm a detective. People ask me for help in various ways.
+W=BROK
+
+T=By night, I fight to get some extra money.
+W=BROK
+
+T=Wow - this is... 
+W=BOLT
+
+T=I'm sorry...I'm - nothing like you.
+W=BOLT
+
+T=I'm neither - bright nor strong. I would - just be - a burden.
+W=BOLT
+
+T=Don't say that! I'm not either, really.
+W=BROK
+C1A=READY
+
+T=I just try my best. And I'm sure you're very capable.
+W=BROK
+
+T=What do you need to, erm... live?
+W=BROK
+C1A=THINK
+
+T=I use - one non-rechargeable - thermionic battery - per year.
+W=BOLT
+COMM="thermionic" is not an important term.
+
+T=Ah... This could be a problem...
+W=BROK
+C1A=THINK
+
+T=I'm not rich and those are very expensive...
+W=BROK
+
+T=I told you - this wasn't possible...
+W=BOLT
+C2A=SAD
+
+T=Okay, I'll find somethin' else.
+W=BROK
+C1A=READY
+TEN=PC12_BOLT_HELPCHOICES
+IT=1
+
+
+
+#----------------------
+#- Help : waste treatment
+#----------------------
+ID=PC12_BOLT_WASTETREATMENT1
+T=Why don't you work at the waste treatment center in the Slums?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=I - don't know. What - is it like?
+W=BOLT
+
+T=It's pretty similar. Using a lever to uncover interesting stuff and throw away the rest.
+W=BROK
+
+T=Darn...I forgot. It's on free mode but it's not free.
+W=BROK
+C1A=STUPID
+
+T=I have - no money...
+W=BOLT
+
+T=Hmm... Maybe I can come up with something better.
+W=BROK
+C1A=WONDER
+TEN=PC12_BOLT_HELPCHOICES
+IT=1
+
+#----------------------
+#- Help : Shay
+#----------------------
+ID=PC12_BOLT_HELPSHAY1
+T=I got the perfect job for you. An assistant to my best friend Shay!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=BOLT
+C2A=WONDER
+
+T=She's some kind of crazy inventor and is very skilled with technology.
+W=BROK
+C1A=MOCK
+
+T=You could help her by bringing her tools, performing searches, and...
+W=BROK
+
+T=All kinds of stuff mad inventors do, I guess?
+W=BROK
+C1A=HAPPY
+
+T=You just need to agree to being tweaked to get your tracking components removed. Among other things...
+W=BROK
+
+T=Will she - erase - my memory?
+W=BOLT
+C2A=WORRIED
+
+T=She promised not to. But remind her... You know. Just in case.
+W=BROK
+C1A=THINK
+
+T=I hope - I'll be - up to the task...
+W=BOLT
+
+T=But - it'll always be - better than - being wiped out.
+W=BOLT
+
+T=Thank you - so much - Mister! Mister...
+W=BOLT
+C2A=HAPPY
+
+T=I'm sorry. I do not - know your name.
+W=BOLT
+
+T=No apologies needed! The name's Brok.
+W=BROK
+C1A=ALRIGHT
+
+T=Just go to Shay's Garage, right near the Garbage Sea harbor.
+W=BROK
+C1A=HAPPY
+
+T=My navigation system - is a bit rusty - but I should - be able - to locate it.
+W=BOLT
+
+T=You've got - my eternal - gratitude - Master Brok.
+W=BOLT
+TEN=PC12_BOLT_HELP_GUARDSCOME
+
+#----------------------
+ID=PC12_BOLT_HELP_GUARDSCOME1
+T=Citizen. Do Not Talk To This Apparatus.
+W=TRIBOT
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOT
+C2A=NORMAL
+C3=BOLT
+C3A=WORRIED
+
+T=Move Away.
+W=TRIBOT
+
+T=Oh no - the guards!
+W=BOLT
+
+T=They're here - to take me!
+W=BOLT
+C1A=FURIOUS
+
+T=Not gonna happen!
+W=BROK
+
+T=Refusing To Obey Is A 5th Class Fault. You Shall Be Eliminated.
+W=TRIBOT
+
+T=Stay down while I get them!
+W=BROK
+TEN=PC12_BOLT_GUARDS_START
+
+#----------------------
+ID=PC12_BOLT_HELP_GUARDSCOME1B
+T=It's over.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=BOLT
+C2A=WORRIED
+
+T=...you've - destroyed them - but...
+W=BOLT
+
+T=Why? - They're robots - too. 
+W=BOLT
+
+T=They threatened both of us.
+W=BROK
+C1A=THINK
+
+T=But... - Am I - more important - than them? I can't...
+W=BOLT
+
+T=No time for existential questions! Get out of here fast before more come!
+W=BROK
+#to be concerned
+C1A=MAYBE
+
+T=You're - right.
+W=BOLT
+C2A=HAPPY
+TEN=PC12_BOLT_HELP_GUARDSCOME1B_UNLOCK
+
+
+#----------------------
+ID=PC12_BOLT_HELP_GUARDSCOME1C
+T=I've unlocked - the door - to the sorting - center.
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=HAPPY
+
+T=This is - my duty - as the last - one with access - to it.
+W=BOLT
+TEN=PC12_BOLT_HELP_GUARDSCOME1D
+IT=1
+
+#----------------------
+ID=PC12_BOLT_HELP_GUARDSCOME1D
+T=Goodbye - Master Brok!
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=HAPPY
+TEN=PC12_BOLT_HELP_GUARDSCOME1C_FADEOUT
+
+
+
+#----------------------
+ID=PC12_BOLT_GUARDS_GAMEOVER
+T=Stranger Eliminated. Now Please Come With Us.
+W=TRIBOT
+C2=TRIBOT
+C2A=NORMAL
+C3=BOLT
+C3A=WORRIED
+
+T=Oh no... It's all - my fault...
+W=BOLT
+TEN=PC12_BOLT_GUARDS_GAMEOVER_DO
+
+
+#----------------------
+#- Bolt : Building
+#----------------------
+ID=PC12_BOLT_BUILDING1
+T=You made me curious. May I take a look at where you work?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=No. I've - locked access.
+W=BOLT
+
+T=Can you open it? 
+W=BROK
+
+T=Alright...
+W=BOLT
+TEN=PC12_BOLT_UNLOCK_BUILDING
+
+#----------------------
+ID=PC12_BOLT_BUILDING1B
+T=Now - you can - enter.
+W=BOLT
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=WONDER
+
+T=Wonderful, thanks!
+W=BROK
+C1A=ALRIGHT
+
+T=See, you're useful!
+W=BROK
+
+T=No. This is - my last act - on this planet.
+W=BOLT
+C2A=SAD
+
+T=(Sigh)
+W=BROK
+C1A=DOWN
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC12_BOLT_BUILDING2
+T=Thanks again!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=HAPPY
+
+T=No problem - glad to help - one last time.
+W=BOLT
+TEN=PC12_BOLT_CHOICES
+IT=1
+
+
+
+#----------------------
+
+ID=PC12_BOLT_INV_DEFAULT1
+T=This will cheer you up!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=SAD
+
+T=No.
+W=BOLT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=PC12_BOLT_INV_DEFAULT2
+T=How about this? Can this help?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=WONDER
+
+T=My algorithm - has detected - you're showing me - random stuff - without logic.
+W=BOLT
+
+T=Please don't.
+W=BOLT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+
+ID=PC12_BOLT_INV_APARTMENTKEY
+T=Maybe I could fix you?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=WORRIED
+
+T=I'm - not broken...
+W=BOLT
+
+T=Or maybe - I am...
+W=BOLT
+
+T=Who knows...
+W=BOLT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+
+ID=PC12_BOLT_INV_CATFUR
+T=Here! Put this on yourself!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=WORRIED
+
+T=I'm afraid - there's not enough - to hide...
+W=BOLT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=PC12_BOLT_INV_HOOVER
+T=How about a friend?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=BOLT
+C2A=SAD
+
+T=I have - no friend...
+W=BOLT
+
+T=And - this one - is broken...
+W=BOLT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+
+ID=PC12_BOLT_INV_TRAMPPRESCR
+T=Are you a doctor?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=BOLT
+C2A=SAD
+
+T=I'm just - a postman...
+W=BOLT
+
+T=A - useless one...
+W=BOLT
+
+T=Aww...
+W=BROK
+C1A=DISAPPOINTED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+#- Hurt Bolt
+#----------------------
+ID=PC12_BOLT_HURT1
+T=Go ahead - I don't feel - pain...
+W=BOLT
+C1=NONE
+C2=BOLT
+C2A=OFF
+NB=1
+D=240
+
+#----------------------
+ID=PC12_BOLT_KILLED1
+T=I... feel..
+W=BOLT
+C1=BROK
+C1A=READY
+C2=BOLT
+C2A=OFF
+
+T=...
+W=BOLT
+TEN=PC12_BOLT_DEAD_OBJECTIVE
+
+T=...
+W=BROK
+C2=NONE
+
+T=Oh gosh... Did I really do that?
+W=BROK
+C1A=HEARTBROKEN
+
+T=At least... Nobody will come after you now...
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC12_BOLT_AFTERDEAD
+IT=1
+
+
+#----------------------
+ID=PC12_BOLT_TAKENAWAY1
+T=...
+W=BROK
+A=THINK
+
+T=Where's Bolt?
+W=BROK
+A=WONDER
+TEN=PC12_BOLT_TAKENAWAY1B
+
+#----------------------
+ID=PC12_BOLT_TAKENAWAY1C
+T=Oh no... Don't tell me...
+W=BROK
+A=SURPRISED
+
+T=I'm too late! They must have taken him away...
+W=BROK
+A=SURPRISED
+TEN=PC12_BOLT_AWAY_OBJECTIVE
+
+T=Sorry lil' guy...
+W=BROK
+A=DOWN
+TEN=PC12_BOLT_AFTERDEAD
+IT=1
+
+#----------------------
+ID=PC12_BOLT_AFTERDEAD
+T=...
+W=BROK
+A=DOWN
+
+T=Something... on the bench?
+W=BROK
+A=WONDER
+
+T=Looks like a... little screw shaped like a bolt...
+W=BROK
+TEN=PC12_BOLT_GETSCREW
+
+#----------------------
+ID=PC12_BOLT_AFTERUNLOCKED
+T=Hey! That was the sound of something unlocking... But where?
+W=BROK
+A=WONDER
+
+
+
+
+#----------------------
+#= Go onto the middle platform for the first time
+#----------------------
+ID=PC12_FLOOR2_DIALOG
+T=Getting high... I better watch my step!
+W=BROK
+A=READY
+CONTEXT=Go onto the middle platform for the first time
+TEN=PC12_FLOOR2_HELP2
+
+
+#----------------------
+#= Hand
+#----------------------
+ID=PC12_STORY220_ARRIVE
+T=...
+W=BROK
+A=THINK
+CONTEXT=Day 3 - Brok goes to the factory to meet Gherking and notices Slumer citizens trying to get through the border
+
+T="Let us through! (Cough, cough)"
+BVOICE=VARIOUS
+
+T="We have children! Don't let us die here!"
+
+T="Where are the pills?!"
+
+T="Come on! We deserve to know what's happening!"
+
+T="Everyone! (Cough)"
+
+T="Break that entrance!"
+
+T=The situation is worse than I thought...
+W=BROK
+A=DOWN
+
+T=I was so focused on my own problems... I didn't realize everyone in the Slums is suffering.
+W=BROK
+A=DISAPPOINTED
+TEN=PC12_STORY220_BOTSCOME
+
+#----------------------
+ID=PC12_STORY220_ARRIVE2
+T=Stop!
+W=TRIBOTCOP
+A=NORMAL
+COMM=Bots arrive
+TEN=PC12_STORY220_CROWDTURN
+
+T=Argh!... The cops!
+W=BROK
+C1=BROK
+C1A=ANGRY
+
+T="Please! You must understand!"
+
+T=Violating the law.
+W=TRIBOTCOP
+A=NORMAL
+
+T=Stay away or be destroyed.
+W=TRIBOTCOP
+A=NORMAL
+
+T="Mom... I'm scared!"
+
+T="Do something for us! Inform the Government!"
+
+T=Violating the law. Last warning.
+W=TRIBOTCOP
+A=NORMAL
+
+T="What should we do? (Cough)"
+
+T=3... 2...
+W=TRIBOTCOP
+A=NORMAL
+
+T="We... we can't fight them!"
+
+T=1...
+W=TRIBOTCOP
+A=NORMAL
+
+T="I can't die like this...!"
+TEN=PC12_STORY220_PEOPLEESCAPE
+
+T=Hey! Wait! Don't run away!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+TEN=PC12_STORY220_ARRIVE3
+
+#----------------------
+ID=PC12_STORY220_ARRIVE3
+T=Too late...
+W=BROK
+A=DOWN
+TEN=PC12_STORY220_PEOPLEESCAPE_FADEIN
+
+#----------------------
+ID=PC12_STORY220_ARRIVE4
+T=Target acquired.
+W=TRIBOTCOP
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOTCOP
+C2A=NORMAL
+COMM=Bots attack Brok
+
+T=Well I'm not going away!
+W=BROK
+A=FURIOUS
+
+T=If there's the slightest hope I can help all these people, I'll take it!
+W=BROK
+TEN=PC12_STORY220_STARTFIGHT
+#TODO Fight with some Tribots AND the laser trying to kill Brok at the same time. Make it possible for the laser to kill the other bots
+
+#----------------------
+ID=PC12_STORY220_AFTER
+T=Man... They were tough!
+W=BROK
+A=TIRED
+COMM=Win
+
+T=Hopefully I don't get into more trouble for wrecking all these police bots...
+W=BROK
+
+#--------------------------------------
+#= See bots after coming from factory
+#--------------------------------------
+ID=PC12_GHERKIN_ARRIVE1
+T=More bots.
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=GHERKIN
+C2A=WORRIED
+CONTEXT=After picking up Dr. Gherkin, we see bots guards
+
+T=Oh no!
+W=GHERKIN
+
+T=What do we do?!
+W=GHERKIN
+TEN=PC12_BOTS_ARRIVECHOICE
+
+#--------------------------------------
+ID=PC12_GHERKIN_FIGHT1
+T=You gotta examine that Pipe-Pill, right?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=No choice. I gotta eliminate them!
+W=BROK
+C1A=OPPOSITE
+TEN=PC12_GHERKIN_APPROACHFIGHT
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_APPROACHFIGHT2
+T=Hey, metal brains! I've got the perfect tool to unscrew you...
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=TRIBOTCOP
+C2A=NORMAL
+
+T=My fists!
+W=BROK
+C1A=COCKY
+
+T=Idiotic target acquired.
+W=TRIBOTCOP
+TEN=PC12_GHERKIN_STARTFIGHT
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_GOBACK
+T=Retreat!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GHERKIN
+C2A=WORRIED
+
+T=A-Alright... Let me...
+W=GHERKIN
+SKIPEND=1
+TEN=CH5_GHERKIN_COVER
+
+T=(Loud Beep)
+
+
+T=Oh no!
+W=GHERKIN
+TEN=PC12_GHERKIN_ROBOTSCOMEGOBACK
+
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_HIDE
+T=They haven't noticed us yet...
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=GHERKIN
+C2A=WORRIED
+
+T=Let's hide!
+W=BROK
+A=MOCK
+
+T=I-I'm behind you!
+W=GHERKIN
+TEN=PC12_GHERKIN_PLAYHIDE
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_SPOTTED1
+T=Target acquired.
+W=TRIBOTCOP
+C1=BROK
+C1A=THINK
+C2=TRIBOTCOP
+C2A=NORMAL
+C3=GHERKIN
+C3A=WORRIED
+TEN=PC12_GHERKIN_SPOTTED_ADDENEMIES
+
+T=Oh... Great.
+W=BROK
+C1A=STUPID
+TEN=CH5_GHERKIN_COVER
+
+T=Argh!
+W=GHERKIN
+TEN=PC12_GHERKIN_SPOTTEDFIGHT
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_JUMP
+T=I can't jump!
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=Shh! Stop screaming or...
+W=BROK
+C1A=ANGRY
+TEN=PC12_GHERKIN_ROBOTSCOME
+
+T=Target acquired.
+
+T=Too late!
+W=BROK
+C1A=SURPRISED
+TEN=PC12_GHERKIN_JUMPFIGHT
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_WINHIDE
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+TEN=PC12_UNHIDE
+
+T=They're gone.
+W=BROK
+C1A=MAYBE
+
+T=Phew! I thought my heart was going to explode!
+W=GHERKIN
+C2A=EMBARRASSED 
+
+T=Yeah... Well less talk and more action.
+W=BROK
+C1A=OPPOSITE
+
+T=Oh... Right.
+W=GHERKIN
+TEN=PC12_GHERKIN_APPROACHPIPEPILL
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_WINFIGHT
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=Hey, Doc. I could watch you duck and cover all day but we can't stay here that long.
+W=BROK
+C1A=MAYBE
+TEN=CH5_GHERKIN_STAND
+
+T=Oh...!
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=Good job. Now let me do my part.
+W=GHERKIN
+C2A=NORMAL
+TEN=PC12_GHERKIN_APPROACHPIPEPILL
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_LEAVENOTYET
+T=Where are you going? I'm not finished!
+W=GHERKIN
+C1=BROK
+C1A=CONFUSED
+C2=GHERKIN
+C2A=ANGRY
+
+T=Sorry.
+W=BROK
+C1A=HAPPY
+
+#--------------------------------------
+ID=PC12_GHERKIN_BEFORELEAVE
+T=Wait!
+W=GHERKIN
+C1=BROK
+C1A=CONFUSED
+C2=GHERKIN
+C2A=WORRIED
+TEN=PC12_GHERKIN_BEFORELEAVE2
+
+#--------------------------------------
+ID=PC12_GHERKIN_FINISHED
+T=I'm done.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=HAPPY
+
+T=Great news!
+W=BROK
+C1A=ALRIGHT
+
+T=Let's move on, then.
+W=BROK
+C1A=MOCK
+
+T=I'll be right behind you.
+W=GHERKIN
+C2A=NORMAL
+TEN=PC12_GHERKIN_FINISHEDFIX
+
+
+#--------------------------------------
+ID=PC12_MESSAGEDEE
+T=...
+W=BROK
+A=THINK
+
+T=A message...
+W=BROK
+A=THINK
+
+
+#--------------------------------------
+#TODO Implement
+ID=PC12_MESSAGEDEE_READ
+T=What...? Who sent this?
+W=BROK
+A=THINK
+
+#--------------------------------------
+ID=PC12_GHERKIN_CHITCHAT
+T=Oh my...! That Pipe-Pill is in a disastrous state...
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=Squealers, most likely...
+W=BROK
+
+T=I bet they learned about the shortages and tried to steal as much as possible.
+W=BROK
+
+T=Fortunately only external damage.
+W=GHERKIN
+C2A=NORMAL
+TEN=PC12_GHERKIN_CHITCHAT_WAIT
+
+
+#--------------------------------------
+ID=PC12_GHERKIN_CHITCHAT2
+T=So, Mister Brok. Why a detective?
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=I thought you read all my history?
+W=BROK
+
+T=Only what can be found in administrative, camera records, and other tracking methods.
+W=GHERKIN
+
+T=Huh.
+W=BROK
+C1A=MAYBE
+
+T=Just figured there'd be some business. There ain't that many investigators in the Slums.
+W=BROK
+
+T=Why the question?
+W=BROK
+
+T=I... just like to talk when I'm nervous...
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=Makes sense.
+W=BROK
+C1A=MEH
+
+T=Ask me questions, please... I don't like the silence.
+W=GHERKIN
+
+
+#--------------------------------------
+ID=PC12_DISTRIBUTORBROKEN_FIX
+T=Dr. Gherkin! Can you fix this vending machine?
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=NORMAL
+CONTEXT=ASking Gherkin to repair the distributor
+
+T=Hey! I'm not a mechanic!
+W=GHERKIN
+
+T=What do you need it for?
+W=GHERKIN
+
+T=Just hungry. I need strength to battle those bots.
+W=BROK
+C1A=COCKY
+
+T=So! Can you?
+W=BROK
+C1A=READY
+
+#TODO What if we didn't crush the machine? Is it possible?
+T=Maybe. Help me put it back on its feet.
+W=GHERKIN
+TEN=PC12_DISTRIBUTORBROKEN_FIXFADEOUT
+
+#--------------------------------------
+ID=PC12_DISTRIBUTORBROKEN_FIX2
+T=That should do it.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=HAPPY
+
+T=Nice!
+W=BROK
+C1A=ALRIGHT
+TEN=PC12_DISTRIBUTORBROKEN_FIXCHECK
+
+#--------------------------------------
+ID=PC12_DISTRIBUTORBROKEN_DIDNOTFIX
+T=I should have asked Dr. Gherkin to fix it...
+W=BROK
+A=WONDER
+
+
+#--------------------------------------
+#= After coming back (escaped or not) with Gherkin
+#--------------------------------------
+#TODO Put this dialog in fadeout black OR put it somewhere else
+ID=PC12_GHERKIN_BACK1
+T=(Pant, pant)
+W=GHERKIN
+C1=BROK
+C1A=STUPID
+C2=GHERKIN
+C2A=WORRIED
+CONTEXT=If coming back with Gherkin after escaping or fighting the bots
+
+T=Wait for me!
+W=GHERKIN
+
+
+#----------------------
+#= Material
+#----------------------
+ID=PC12_MATERIAL1
+T=Huh? Something under that little trap?
+W=BROK
+A=WONDER
+CONTEXT=Getting Shay's material from this room
+TEN=PC12_MATERIAL1B
+
+#----------------------
+ID=PC12_MATERIAL2
+T=Whaddya know! Little pearls!
+W=BROK
+A=ALRIGHT
+
+T=Probably valuable. Someone must have hidden them here...
+W=BROK
+A=THINK
+TEN=PC12_MATERIAL_GET
+
+
+#----------------------
+#= Ending "Drumer"
+#----------------------
+ID=PC12_DRUMER1
+T=Good. You're all here.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+CONTEXT="Drumer" ending - Graff passed. Students and the director are in front of the border post, ready to cross.
+
+T=Everything is set. You'll just have to cross when you're ready.
+W=DIRECTOR
+
+T=Your new home awaits you.
+W=DIRECTOR
+TEN=PC12_DRUMER_DIRECTORLEAVES
+
+
+#----------------------
+ID=PC12_DRUMER2
+T=Bye, you fools!
+W=KLAY
+C1=GRAFF
+C1A=OPPOSITE
+C2=KLAY
+C2A=HAPPY
+C3=OTT
+C3A=ALRIGHT
+
+T=Hopefully I won't have to be lumbered with you both in this new life!
+W=KLAY
+TEN=PC12_DRUMER_KLAYLEAVES
+
+#----------------------
+ID=PC12_DRUMER3
+T=Hmmph... Always the same.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=OTT
+C2A=NORMAL
+TEN=PC12_DRUMER3_OTT
+
+T=Looks like we'll travel lightweight.
+W=GRAFF
+C1A=MEH
+
+T=They can provide us with everything we need.
+W=OTT
+
+T=Nothing from our life in the Slums would be valuable there...
+W=OTT
+C2A=SAD
+
+T=I suppose you're right...
+W=GRAFF
+C1A=TURN
+
+T=Hey, where are your parents?
+W=GRAFF
+C1A=MEH
+
+T=We said farewell already...
+W=OTT
+C2A=DISAPPOINTED
+
+T=But...
+W=OTT
+
+T=I admit... I have second thoughts about all this now...
+W=OTT
+
+T=Leaving everything behind... This is hard...
+W=OTT
+
+T=We made this choice. Years ago.
+W=GRAFF
+C1A=OPPOSITE
+
+T=I know...
+W=OTT
+
+T=On the other side... I should be able to help them somehow.
+W=OTT
+C2A=SAD
+
+T=What about you?
+W=OTT
+
+T=Were you able to talk to Brok?
+W=OTT
+
+T=No...
+W=GRAFF
+C1A=TURN
+
+T=He wasn't there.
+W=GRAFF
+
+T=I sent him a message but...
+W=GRAFF
+C1A=OPPOSITE
+
+T=I see...
+W=OTT
+
+T=Always the busy one, huh.
+W=OTT
+C2A=WONDER
+
+T=Yeah...
+W=GRAFF
+C1A=SAD
+
+T=...
+W=OTT
+C2A=SAD
+
+T=I'll go but...
+W=OTT
+
+T=You should wait.
+W=OTT
+C2A=ALRIGHT
+
+T=He'll be here any minute.
+W=OTT
+
+T=How could you know?
+W=GRAFF
+C1A=OPPOSITE
+
+T=I don't.
+W=OTT
+
+T=Just a feeling... 
+W=OTT
+TEN=PC12_DRUMER_OTTLEAVES1
+
+T=...
+W=OTT
+C2A=OPPOSITE
+
+T=This is it. Onto a new life!
+W=OTT
+C2A=HAPPY
+
+T=See you on the other side!
+W=OTT
+
+T=Yeah...
+W=GRAFF
+C1A=SAD
+TEN=PC12_DRUMER_OTTLEAVES2
+C2=NONE
+
+T=Goodbye Ott.
+W=GRAFF
+
+T=...
+W=GRAFF
+C1A=TURN
+TEN=PC12_DRUMER_OTTLEAVES_FADEOUT
+
+
+#----------------------
+ID=PC12_DRUMER4
+T=...
+W=GRAFF
+A=OPPOSITE
+
+T=Three minutes left before the window closes.
+BVOICE=VARIOUS
+COMM="Window" not in the literal sense here but a time limit
+
+T=...
+W=GRAFF
+
+T=What a fool I am...
+W=GRAFF
+A=TURN
+
+T=I'm waiting for...
+W=GRAFF
+
+T=Nothing...
+W=GRAFF
+A=STUPID
+
+T=There's nothing tying me here anymore.
+W=GRAFF
+A=TORN
+TEN=PC12_DRUMER4_GRAFF
+
+
+#----------------------
+ID=PC12_DRUMER5
+T=Wait!
+BVOICE=BROK
+TEN=PC12_DRUMER5_BROK
+
+
+
+#----------------------
+ID=PC12_DRUMER6
+T=I'm... (Pant, pant)
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=SURPRISED
+
+T=I'm here...!
+W=BROK
+
+T=...
+W=GRAFF
+C1A=HAPPY
+
+T=I thought you'd never come...
+W=GRAFF
+C2A=MEH
+
+T=Well...
+W=BROK
+C1A=MAYBE
+
+T=I had to leave in the middle of a tough situation but...
+W=BROK
+
+T=I couldn't let you leave without telling you...
+W=BROK
+
+T=Congratulations, kiddo.
+W=BROK
+C1A=HAPPY
+
+T=I knew you could do it.
+W=BROK
+C1A=READY
+
+T=I'm proud of you.
+W=BROK
+
+T=Thanks...
+W=GRAFF
+C2A=SAD
+
+T=...
+W=GRAFF
+
+T=...
+W=BROK
+C1A=THINK
+
+T=Before I leave...
+W=GRAFF
+C2A=TURN
+
+T=Something keeps bothering me.
+W=GRAFF
+C2A=MEH
+
+T=I found this in our mail.
+W=GRAFF
+
+T=Oh! That's right!
+W=BROK
+C1A=SURPRISED
+
+T=What an idiot! How could I forget something so important...
+W=BROK
+C1A=WONDER
+
+T=This money...
+W=BROK
+C1A=THINK
+
+T=It's for you.
+W=BROK
+C1A=READY
+C2A=GASP
+
+T=Is this...
+W=GRAFF
+C2A=THINK
+
+T=Mom's inheritance?
+W=GRAFF
+
+T=No...
+W=BROK
+C1A=MAYBE
+
+T=Your mom was the spender type but...
+W=BROK
+
+T=She opened you an account. It was empty.
+W=BROK
+
+T=For the last five years...
+W=BROK
+C1A=READY
+
+T=I've saved money. 50 Unis per day.
+W=BROK
+
+T=I knew you'd need this. To make a new start.
+W=BROK
+
+T=You did this...
+W=GRAFF
+C2A=TURN
+
+T=For me...?
+W=GRAFF
+C2A=SAD
+
+T=Of course.
+W=BROK
+C1A=HAPPY
+
+T=All this money...
+W=GRAFF
+
+T=I...
+W=GRAFF
+
+T=I can't accept it.
+W=GRAFF
+C2A=SOB
+
+T=Trust me! You're gonna need it!
+W=BROK
+
+T=Everything is so outrageously expensive over there.
+W=BROK
+C1A=HAPPY
+
+T=And that's your name on there. Only you can have it.
+W=BROK
+
+T=What about you?
+W=GRAFF
+C2A=SAD
+
+T=How will you live now...?
+W=GRAFF
+
+T=You know me!
+W=BROK
+
+T=I'll manage. I always have!
+W=BROK
+C1A=COCKY
+
+T=Alright...
+W=GRAFF
+
+T=Then... I guess...
+W=GRAFF
+C1A=THINK
+
+T=I have to go...
+W=GRAFF
+C2A=TORN
+
+T=...
+W=GRAFF
+TEN=PC12_DRUMER6_GRAFF
+
+
+
+#----------------------
+ID=PC12_DRUMER6C
+T=Come with me!
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=READY
+
+T=You know I can't.
+W=BROK
+C1A=DOWN
+
+T=Yes you can!
+W=GRAFF
+
+T=...
+W=BROK
+C1A=THINK
+TEN=PC12_DRUMER6_BROK
+
+#----------------------
+ID=PC12_DRUMER6D
+T=Access denied.
+BVOICE=VARIOUS
+
+T=My access got revoked...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=GASP
+
+T=But... The Director said it was permanent...!
+W=GRAFF
+C2A=SAD
+
+T=Sorry...
+W=BROK
+C1A=DOWN
+
+T=I had to cheat to get it.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Well do it again!
+W=GRAFF
+C2A=ANGRY
+
+T=Nah.
+W=BROK
+TEN=PC12_DRUMER6_BROK4
+
+#----------------------
+ID=PC12_DRUMER6E
+T=You need to understand.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GRAFF
+C2A=SAD
+
+T=The Drums... I don't belong to that world.
+W=BROK
+
+T=I tried years ago with your mom but...
+W=BROK
+C1A=DISAPPOINTED
+
+T=Sometimes... You gotta be honest with yourself.
+W=BROK
+
+T=Besides! I've still got an unfinished job here. Remember?
+W=BROK
+C1A=READY
+
+T=Then...
+W=GRAFF
+
+T=I'll stay.
+W=GRAFF
+C2A=READY
+
+T=What? No!
+W=BROK
+C1A=ANGRY
+
+T=You'll need help!
+W=GRAFF
+
+T=The Slums needs us!
+W=GRAFF
+
+T=I forbid you.
+W=BROK
+
+T=But...
+W=GRAFF
+C2A=SAD
+
+T=You're not thinking straight!
+W=BROK
+
+T=Your friend's over there. Your future!
+W=BROK
+
+T=I won't let you throw away all your efforts at the spur of the moment!
+W=BROK
+C1A=OPPOSITE
+
+T=...
+W=GRAFF
+C2A=TORN
+
+T=...
+W=BROK
+C1A=THINK
+
+T=Come on. Don't make that face!
+W=BROK
+C1A=MOCK
+C2A=SOB
+
+T=It's not a farewell.
+W=BROK
+
+T=You can visit me anytime!
+W=BROK
+C1A=ALRIGHT
+
+T=You know it's not that simple...
+W=GRAFF
+
+T=What if... I can't make it on my own...?
+W=GRAFF
+
+T=I'm... I'm not strong... like you...
+W=GRAFF
+
+T=You're just being silly.
+W=BROK
+C1A=READY
+
+T=You're going to the Drums. There'll be all kinds of bots to support you.
+W=BROK
+
+T=If you've survived all this time in the Slums, you've got nothing to fear!
+W=BROK
+
+T=I... guess...
+W=GRAFF
+C2A=SAD
+
+T=And... You're strong. Much more than you think.
+W=BROK
+
+T=I... 
+W=GRAFF
+
+T=I'll miss you so much...
+W=GRAFF
+C2A=TORN
+TEN=PC12_DRUMER6_BROK6
+
+#----------------------
+ID=PC12_DRUMER6F
+T=One minute left.
+BVOICE=VARIOUS
+
+T=Listen...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=SAD
+
+T=When you cross...
+W=BROK
+
+T=I want to see you smile.
+W=BROK
+
+T=Do it for me.
+W=BROK
+C1A=MAYBE
+
+T=...
+W=GRAFF
+
+T=A-Alright...
+W=GRAFF
+TEN=PC12_DRUMER6_BROK7
+
+
+#----------------------
+ID=PC12_DRUMER6G
+T=I want you to know...
+W=GRAFF
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=SAD
+
+T=Wherever we are...
+W=GRAFF
+
+T=You'll always be my family.
+W=GRAFF
+
+T=And you'll always be mine.
+W=BROK
+C1A=HAPPY
+
+T=Now... Go.
+W=BROK
+C1A=READY
+
+T=...
+W=GRAFF
+C2A=HAPPY
+C2_EYESHUT=1
+TEN=PC12_DRUMER6_BROK8
+
+#----------------------
+ID=PC12_DRUMER7
+T=Goodbye, kiddo...
+W=BROK
+A=HEARTBROKEN
+
+T=I'll miss you too...
+W=BROK
+
+T=...
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC12_DRUMER7_BROK1
+
+
+
+#----------------------
+ID=PC12_DRUMER8
+T=?
+W=BROK
+A=THINK
+TEN=PC12_DRUMER8_BROK
+
+#----------------------
+ID=PC12_DRUMER9
+T=The Pipe-Pill... is working again...?
+W=BROK
+A=WONDER
+
+T=The Doc...
+W=BROK
+
+T=Did he fix it after all?
+W=BROK
+
+T=...
+W=BROK
+
+T=Oh well!
+W=BROK
+C1A=ALRIGHT
+
+T=I guess this means...
+W=BROK
+C1A=MAYBE
+
+T=Things ended well for everyone.
+W=BROK
+
+T=...
+W=BROK
+TEN=PC12_DRUMER9_BROK
+
+
+#----------------------
+ID=PC12_DRUMER10
+T=Wait...
+W=BROK
+A=WONDER
+
+T=Something's tickling me... In my pocket?
+W=BROK
+TEN=PC12_DRUMER10_ENVELOPE
+
+#----------------------
+ID=PC12_DRUMER11
+T=...
+W=BROK
+A=THINK
+
+T=This envelope...
+W=BROK
+
+T=What's going on?
+W=BROK
+C1A=SURPRISED
+TEN=PC12_DRUMER10_FADELETTER
+
+T=...
+W=BROK
+TEN=PC12_DRUMER10_REMOVELETTER
+
+T=?
+W=BROK
+C1A=THINK
+
+T=Weird...
+W=BROK
+
+T=I feel like... I forgot something...
+W=BROK
+C1A=STUPID
+
+T=...
+W=BROK
+
+T=No point torturing myself. It'll come back!
+W=BROK
+C1A=THINK
+
+T=I bet my brain is like a giant donut... with a big hole in the middle!
+W=BROK
+C1A=HAPPY
+
+T=Hmm...
+W=BROK
+
+T=Makes me hungry. Let's have some cricket donuts!
+W=BROK
+TEN=PC12_DRUMER11_LEAVE
+
+
+#----------------------
+ID=PC12_DRUMER12
+T=Somehow...
+BVOICE=BROK
+T=The situation in the Slums solved itself.
+T=Dee and Dr. Gherkin disappeared into thin air...
+T=Thus...
+T=I never got to the bottom of this investigation.
+T=Things went back to normal for everyone.
+T=Except...
+T=Without Graff...
+T=It's hard...
+T=To give a sense to my life.
+T=But I'll never give up.
+T=I'll always keep fighting...
+T=For him...
+T=For myself...
+T=And everyone.
+TEN=PC12_DRUMER12_ENDING
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 05/08/2019
+###############################################
+
+
+
+#--------------------------------
+#= Trying to hit the pipe-pill
+#--------------------------------
+ID=PC12_HITPIPEPILL1
+T=No pill...
+W=BROK
+A=OPPOSITE
+NB=1
+D=60
+TEN=HITDIALOGWAITREMOVE
+
+#--------------------------------
+ID=PC12_HITPIPEPILL2
+T=Nope... I'm just busting it even more.
+W=BROK
+A=OPPOSITE
+NB=1
+D=120
+TEN=HITDIALOGWAITREMOVE
+
+#--------------------------------
+#= Trying to hit the distributor
+#--------------------------------
+ID=PC12_HITDISTRIBUTOR1
+T=Hey, that old trick still works!
+W=BROK
+A=ALRIGHT
+TEN=PC12_HITDISTRIBUTOR_GETFOOD
+
+#--------------------------------
+ID=PC12_HITDISTRIBUTOR2
+T=(Pant) Nothing more... Better stop.
+W=BROK
+A=WONDER
+NB=1
+D=90
+
+
+
+#----------------------
+ID=PC12_PACKAGE1
+T=Looks sturdy.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC12_PACKAGE_CLIMB
+T=Hmm...!
+W=BROK
+A=WONDER
+TEN=PC12_PACKAGE_CLIMBDO
+
+

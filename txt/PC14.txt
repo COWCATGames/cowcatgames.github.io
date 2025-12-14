@@ -1,0 +1,1234 @@
+﻿#-------------------------------
+#=HACKER BACKSTREET
+#-------------------------------
+
+
+#----------------------
+#= First
+#----------------------
+ID=PC14_INTRO1
+T=Eww... The smell.
+W=BROK
+A=CONFUSED
+CONTEXT=Brok comes to this street for the first time
+
+T=The hacker should be around here. I'd better find him quickly, before I get sick.
+W=BROK
+A=OPPOSITE
+# update - changed intoxicated to sick. More casual.
+
+
+#----------------------
+ID=PC14_INTRO2
+T=...
+W=BROK
+A=THINK
+CONTEXT=Brok comes back to this street just after losing the fight and wonders what happened (time reverted itself)
+
+T=That smell...
+W=BROK
+
+T=And...
+W=BROK
+
+T=That familiar sensation of...
+W=BROK
+
+T=Like... I...
+W=BROK
+C1A=WONDER
+
+T=Lost a fight...
+W=BROK
+
+T=Left to die...?
+W=BROK
+
+T=Hmm...
+W=BROK
+C1A=THINK
+
+T=Better move on quick. Got a bad feeling about this place.
+W=BROK
+A=MAYBE
+CLUE=CLUE_ALLEY_DIED
+TEN=PC14_AFTER_TIMELOOP_GAMEPLAY
+
+#----------------------
+#= Before fight
+#----------------------
+ID=PC14_BADGUYS1
+T=Goin' somewhere, croc?
+W=RAT
+C1=BROK
+C1A=ANGRY
+C2=DART
+C2A=COCKY
+C4=RAT
+C4A=COCKY
+CONTEXT=Rats ambush Brok
+
+T=Go away. I don't want any trouble.
+W=BROK
+
+T=Haaaa...
+W=RAT
+
+T=Then ya shouldn't have caused us trouble in da first place.
+W=RAT
+
+T=What?...
+W=BROK
+C1A=THINK
+
+T=Don't play the fool wit' us.
+W=RAT
+C4A=ANGRY
+
+T=You no show respect to da boss. You attacked da boss...
+W=RAT
+
+T=...and humiliated him. Yeah, I remember.
+W=BROK
+SKIPEND=1
+
+T=He asked for it.
+W=BROK
+C1A=MEH
+
+T=No one attacks da boss and get away with it! 
+W=DART
+C2A=READY
+
+T=Get out of my way before I...
+W=BROK
+C1A=FURIOUS
+SKIPEND=1
+
+T=Before ya what?
+W=DART
+C2A=COCKY
+
+T=Ya can't escape us. Ya're gonna get da beating ya deserve.
+W=DART
+
+T=Oh, yeah? I beg to differ!
+W=BROK
+C1A=COCKY
+
+T=Come and get me!
+W=BROK
+C1A=READY
+
+T=Ya're dead meat!
+W=DART
+C2A=READY
+TEN=PC14_STARTFIGHT
+
+#----------------------
+ID=PC14_BADGUYS_LOSE
+T=Ha ha! Got ya!
+W=RAT
+C1=RAT
+C1A=COCKY
+C2=DART
+C2A=COCKY
+CONTEXT=Brok loses the fight
+
+T=Now who got humaliated, huh?!
+W=RAT
+
+T=It's humiliated, ya dumb!
+W=DART
+C2A=NORMAL
+
+T=Yeah, well he's all stiff and cold.
+W=RAT
+C1A=NORMAL
+
+T=Let's bring dat carcass to da boss. We'll get a reward!
+W=RAT
+C1A=LAUGH
+
+T=Yeah!
+W=DART
+C2A=COCKY
+TEN=PC14_BADGUYS_RESETTIME
+
+#----------------------------------
+#= If we won the fight
+#----------------------------------
+ID=PC14_BADGUYSWON1
+T=...
+W=BROK
+A=THINK
+CONTEXT=We win the fight - but actually more rats come and Brok loses anyway
+TEN=PC14_BADGUYSWON1B
+
+
+#----------------------------------
+ID=PC14_BADGUYSWON2
+T=Darn...
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=RAT
+C2A=COCKY
+C3=DART
+C3A=COCKY
+
+T=We got him cornered!
+W=RAT
+
+T=You're not gonna get outta here alive!
+W=RAT
+TEN=PC14_BADGUYSWON2_STANCE
+
+T=That's what we're gonna...
+W=BROK
+TEB=PC14_BADGUYSWON2B
+
+
+#----------------------------------
+ID=PC14_BADGUYSWON3
+T=Argh! No way!
+W=BROK
+C1=BROK
+C1A=YELL
+C2=RAT
+C2A=COCKY
+C3=DART
+C3A=COCKY
+TEN=PC14_BADGUYSWON3C
+#TODO gets a beating
+
+#----------------------
+#= Statue
+#----------------------
+ID=PC14_STATUE1
+T=Is that an Untail statue?
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+T=It has seen better days...
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC14_STATUE2
+T=The wings do not seem like part of the statue.
+W=BROK
+A=MAYBE
+
+T=Kinda like someone replaced the originals with cheap, lighter plastic ones.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC14_STATUE_DESTROYED1
+T=My apology to whoever built that statue...
+W=BROK
+A=MAYBE
+
+T=To be fair, I just finished the job. Time would have had the same effect, eventually.
+W=BROK
+A=MEH
+
+#----------------------
+#= Wings
+#----------------------
+ID=PC14_WINGS1
+T=...Urgh!
+W=BROK
+A=YELL
+COMM=Trying to pick up the wings
+
+T=Despite looking like cheap plastic, the wings do not come off at all.
+W=BROK
+A=TIRED
+
+
+#----------------------
+ID=PC14_WINGS_PICK1
+T=I'll take these wings.
+W=BROK
+A=THINK
+
+T=Who knows. They might come in handy.
+W=BROK
+A=MEH
+TEN=PC14_WINGS_GET
+
+
+#----------------------
+#= Plank
+#----------------------
+ID=PC14_PLANK1
+T=Looks like one of those retractible benches.
+W=BROK
+A=THINK
+
+
+#----------------------
+#= String
+#----------------------
+ID=PC14_STRING_TOOFAR
+T=Those clothes are ripped and dirty... Must have been hanging here for ages.
+W=BROK
+A=THINK
+
+T=I don't think they would mind if someone took it, but I'm too far anyway.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC14_STRING_TAKE
+T=Yeah... I could have a use for that string.
+W=BROK
+A=MAYBE
+TEN=PC14_STRING_FADEOUT
+
+#----------------------
+ID=PC14_STRING_TAKE2
+T=It ripped in half.
+W=BROK
+A=TIRED
+TEN=PC14_STRING_GET
+
+#----------------------
+ID=PC14_STRING_TAKE3
+T=Oh well. Should be enough.
+W=BROK
+A=HAPPY
+
+
+
+#------------------------------------------------
+#= Before fight (coming back from VR fight day 2)
+#------------------------------------------------
+ID=PC14_STORY180_FIRST
+T=Getting worried about Shay. Everyone around me is acting funny these...
+W=BROK
+C1=BROK
+C1A=THINK
+SKIPEND=1
+CONTEXT=Before fight (coming back from VR fight day 2)
+
+#------------------------------------------------
+ID=PC14_BADGUYS2
+T=Goin' somewhere, croc?
+W=DART
+C1=BROK
+C1A=ANGRY
+C2=DART
+C2A=COCKY
+C3=RAT
+C3A=COCKY
+
+T=Weird. Why do I have a feeling of "deja vu"...?
+W=BROK
+C1A=THINK
+
+T=We not in the mood for jokes.
+W=DART
+C2A=READY
+
+T=Go away. I don't want any trouble.
+W=BROK
+C1A=MEH
+
+T=Sure. Give us your stuff and you can pass.
+W=DART
+
+T=Over my dead body, buddy.
+W=BROK
+C1A=READY
+
+T=Erm... Ya sure about 'dis, Dart?
+W=RAT
+C3A=THINK
+
+T=I mean... He already beat us.
+W=RAT
+
+T=Coward! He's outnumbered!
+W=DART
+C2A=NORMAL
+C3A=NORMAL
+
+T=He can't do anything to us as long as we stick together!
+W=DART
+
+T=Come on, guys! Dat croc will give us what should be rightfully ours.
+W=DART
+C2A=READY
+C3A=COCKY
+
+T=Whether he wants to or not!
+W=DART
+
+T=Come and get me!
+W=BROK
+C1A=COCKY
+TEN=PC14_STARTFIGHT
+
+#------------------------------------------------
+ID=PC14_BADGUYS2B
+T=Dart! We better give up!
+W=RAT
+C1=BROK
+C1A=FURIOUS
+C2=RAT
+C2A=HURT
+C4=DART
+C4A=SURPRISED
+
+T=Nah way! Da boss wouldn't want us to!
+W=DART
+C4A=NORMAL
+TEN=PC14_STORY180_DARTUP
+
+T=Besides... Look what I got when he was too busy punching you!
+W=DART
+C4A=COCKY
+TEN=PC14_STORY180_MUSICAGAIN
+
+T=His phone! Good job!
+W=RAT
+C2A=SURPRISED
+
+T=What?!
+W=BROK
+C1A=SURPRISED
+
+T=Now give us the rest, scaly!
+W=RAT
+C2A=ANGRY
+TEN=PC14_STORY180_BROKPREPARE
+
+T=Want more? I'll give you more!
+W=BROK
+C1A=ANGRY
+TEN=PC14_STORY180_SWITCHGRAFF
+
+
+
+#------------------------------------------------------------------------------------------------------------
+#------------------------------
+#= First with Dr. Gherkin
+#------------------------------
+ID=PC14_GHERKIN_FIRST
+T=Wait.
+W=BROK
+A=THINK
+CONTEXT=Day 3 - Coming to this room with Dr. Gherkin
+TEN=PC14_GHERKIN_SHOWRAT
+
+
+#------------------------------
+ID=PC14_GHERKIN_FIRST2
+T=W-will this man cause trouble?
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=Of course he will.
+W=BROK
+TEN=PC14_GHERKIN_RELEASECAMERA
+
+
+#------------------------------
+ID=PC14_GHERKIN_FIRST3
+T=What should we do then?...
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=Hmm...
+W=BROK
+TEN=PC14_GHERKIN_START
+
+#--------------------------------------
+ID=PC14_GHERKIN_LEAVE1
+T=Wait for me!
+W=GHERKIN
+A=WORRIED
+TEE=PC14_GHERKIN_LEAVE3
+
+#--------------------------------------
+ID=PC14_GHERKIN_BACK
+T=He's gone.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=Good job! Avoiding trouble is always the way to go!
+W=GHERKIN
+C2A=HAPPY
+
+T=Only sometimes.
+W=BROK
+C1A=MAYBE
+TEE=PC14_GHERKIN_START
+
+#------------------------------
+#= Squealer talks on the phone
+#------------------------------
+ID=PC14_GHERKIN_RATPHONE
+T=Yes, boss.
+NB=1
+D=60
+BNAME=RAT
+BVOICE=RAT
+COMM=Rat talks on the phone
+
+T=Uh-uh.
+D=60
+
+T=How ya doin' with those little brats?
+D=120
+
+T=Ha-ha. Those spoiled kids are clueless!
+D=90
+
+T=Okay. I'll stay around.
+D=60
+
+T=Yeah.
+D=60
+TEN=PC14_GHERKIN_RATENDCALL
+
+#------------------------------
+#= Squealer notices Brok
+#------------------------------
+ID=PC14_GHERKIN_RATNOTICES1
+T=Hey! Who is you?...
+W=RAT
+C1=BROK
+C1A=THINK
+C2=RAT
+C2A=NORMAL
+TEN=PC14_BROK_TURNSRAT
+COMM=He notices Brok
+
+T=I am the terror who kicked your butt last night!
+W=BROK
+C1A=COCKY
+
+T=No way!
+W=RAT
+C2A=SURPRISED
+TEN=PC14_GHERKIN_RATRUNS
+
+
+T=Uh?...
+W=BROK
+C1A=THINK
+C2=NONE
+
+T=What a wimp...
+W=BROK
+C1A=ANGRY
+
+T=Mister Brok!
+W=GHERKIN
+C2=GHERKIN
+C2A=WORRIED
+
+T=Drones!
+W=GHERKIN
+TEE=PC14_GHERKIN_DRONESARRIVE
+
+T=Ah. Now I get it.
+W=BROK
+C1A=READY
+TEN=PC14_GHERKIN_DRONESFIGHT
+
+#------------------------------
+ID=PC14_GHERKIN_RATFALLS
+T=Aaaaaaah!
+BVOICE=RAT
+COMM=He falls
+TEN=PC14_GHERKIN_RATFALLSEND
+
+
+#------------------------------
+ID=PC14_GHERKIN_RATFALLS2
+T=Did you just kill this man?!
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=ANGRY
+
+T=Nah! The fall isn't that high!
+W=BROK
+C1A=HAPPY
+
+T=I hope...
+W=BROK
+C1A=THINK
+C1A=WONDER
+
+
+
+#--------------------------------------
+ID=PC14_GHERKIN_DRONEEND
+T=Hopefully that was the last one.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=Y-you need to be sure of things like that! What if...
+W=GHERKIN
+SKIPEND=1
+
+T=Come on, Doctor! We got work to do!
+W=BROK
+C1A=READY
+TEN=CH5_GHERKIN_STAND
+
+T=Oh...
+W=GHERKIN
+
+#----------------------------------------------------------------
+#= Looking for Graff
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF1
+T=I had trouble with Squealers in this street already.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+CONTEXT=Day 3 - At the end of the day, Brok looks for Graff with R.J.
+
+T=Scum. Deserve good beating.
+W=RJ
+C2A=OPPOSITE
+
+T=If they've touched one bristle of Graff's fur...
+W=BROK
+C1A=ANGRY
+SKIPEND=1
+
+T=...
+W=BROK
+SOUND=phone_dial
+
+T=Wait. Someone's calling.
+W=BROK
+C1A=WONDER
+C2A=WONDER
+TEN=PC14_LOOKGRAFF_DEECALL_CHOICE
+
+
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_DEECALL_NOSIN
+T=(Click) Hello?
+W=BROK
+C1=BROK
+C1A=WONDER
+COMM=Dee calls
+
+T=Hi.
+W=DEE
+C2=DEE
+C2A=SAD
+
+T=I couldn't find Sin.
+W=DEE
+
+T=Darn...
+W=BROK
+C1A=DOWN
+
+T=The chief of police called.
+W=DEE
+
+T=He wants us to meet.
+W=DEE
+
+T=Yeah, I know. But...
+W=BROK
+TEN=PC14_LOOKGRAFF_DEECALLAFTER
+
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_DEECALL
+T=(Click) Hello?
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=Where are you, cowboy?!
+W=DEE
+C2=DEE
+C2A=NORMAL
+
+T=It's time!
+W=DEE
+TEN=PC14_LOOKGRAFF_DEECALLAFTER
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_DEECALLAFTER
+T=I can't. My son is missing.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=DEE
+C2A=LISTEN
+
+T=What?...
+W=DEE
+
+T=I'll come to help!
+W=DEE
+C2A=NORMAL
+
+T=Don't!
+W=BROK
+C1A=THINK
+
+T=Just... convince Wes to come right after.
+W=BROK
+
+T=To be honest... I don't feel like dealing with this guy alone.
+W=DEE
+C2A=WONDER
+
+T=Don't tell me you're scared of the old man?
+W=BROK
+C1A=MEH
+
+T=Of course not! I just...
+W=DEE
+C2A=LISTEN
+
+T=Well... It's too important. We don't have much time left.
+W=DEE
+C2A=NORMAL
+
+T=The fate of the Slums might depend on this meeting.
+W=DEE
+
+T=Make your choice!
+W=DEE
+C2A=MEH
+TEN=PC14_LOOKGRAFF_DEECALL_CHOICE
+
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF1_RJ
+T=Go. I'll find Graff.
+W=RJ
+C1=BROK
+C1A=THINK
+C2=RJ
+C2A=NORMAL
+
+T=Ya sure?...
+W=BROK
+C1A=MAYBE
+
+T=Trust me. Those Squealers. Gonna get it.
+W=RJ
+C2A=OPPOSITE
+
+T=...
+W=BROK
+
+T=Alright. I trust you.
+W=BROK
+C1A=READY
+
+T=But... I'll be back as soon as I can.
+W=BROK
+
+T=Sure.
+W=RJ
+C2A=HAPPY
+
+T=Find my boy!...
+W=BROK
+TEN=PC14_LOOKGRAFF_EXIT1
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_DEECALL_YES1
+T=Okay. On my way!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DEE
+C2A=NORMAL
+
+T=[...]
+W=BROK
+C2=NONE
+
+T=Graff... Be brave.
+W=BROK
+C1A=MAYBE
+TEN=PC14_LOOKGRAFF_EXIT1
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_DEECALL_NO1
+T=I'm sorry.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=DEE
+C2A=LISTEN
+
+T=These days I haven't been there for my boy when he needed help.
+W=BROK
+
+T=This time... The Slums can wait.
+W=BROK
+
+T=...
+W=DEE
+C2A=WONDER
+
+T=I understand.
+W=DEE
+C2A=NORMAL
+
+T=I'll do my best.
+W=DEE
+C1A=THINK
+
+T=Take care.
+W=BROK
+C1A=MAYBE
+
+T=[...]
+C2=NONE
+
+T=...
+W=BROK
+
+T=Hey...
+W=BROK
+C1A=MOCK
+TEN=PC14_LOOKGRAFF_APPROACH
+
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_DEECALL_NO2
+T=A tuft of grey fur?...
+W=BROK
+A=THINK
+CONTEXT=Day 3 - If R.J. isn't there and Brok decides to keep looking for Graff, he goes down the manhole
+
+T=Graff...!
+W=BROK
+A=SURPRISED
+
+T=Gotta get down there!
+W=BROK
+A=READY
+TEN=PC14_LOOKGRAFF_DEECALL_GODOWN
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_DOWN1
+T=Man... It is dark in there.
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=Who... Who's there?!
+W=BROK
+C1A=WORRIED
+TEN=PC14_LOOKGRAFF_CHECK
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_ONLYOTT1
+T=Mister Brok?!
+W=OTT
+C1=BROK
+C1A=SURPRISED
+C2=OTT
+C2A=SURPRISED
+COMM=Brok meets Ott in the sewers
+
+T=Ott!...
+W=BROK
+
+T=We've been taken prisoners by the Squealers!
+W=OTT
+
+T=They're after me! Graff's down there!
+W=OTT
+
+T=Run! I'll take care of it!
+W=BROK
+C1A=ANGRY
+
+T=But...
+W=OTT
+C2A=DISAPPOINTED
+
+T=Trust me!
+W=BROK
+C1A=COCKY
+
+T=Those Squealers are in for the ultimate beating!
+W=BROK
+
+T=Okay...
+W=OTT
+C1A=ANGRY
+
+T=I'll wait for you both at the surface!
+W=OTT
+C2A=ALRIGHT
+TEN=PC14_LOOKGRAFF_ONLYOTT2
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_WITHGRAFF1
+T=Brok!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=GRAFF
+C2A=SURPRISED
+C4=OTT
+C4A=SURPRISED
+COMM=Another version where Graff is also there
+
+T=Boys! I'm so glad to see ya both!
+W=BROK
+C1A=HAPPY
+
+T=What are you doing down there?
+W=BROK
+C1A=MAYBE
+
+T=No time for that! The Squealers are after us!
+W=OTT
+
+T=What?!
+W=BROK
+C1A=ANGRY
+
+T=This time they're gonna pay...
+W=BROK
+SKIPEND=1
+
+T=No! They're too many!
+W=GRAFF
+C2A=GASP
+
+T=We should run!
+W=OTT
+
+T=Hmph...
+W=BROK
+C1A=OPPOSITE
+
+T=Okay. Follow me!
+W=BROK
+C1A=MAYBE
+TEN=PC14_LOOKGRAFF_SURFACEGO
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_SURFACE1
+T=There. We should be safe for a while.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+C3=OTT
+C3A=NORMAL
+CONTEXT=They all got out of the sewers, escaping rats
+TEN=PC14_LOOKGRAFF_SURFACE_CHECKOTT
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_SURFACE_OTT
+T=I knew you'd make it out!
+W=OTT
+C1=BROK
+C1A=THINK
+C2=GRAFF
+C2A=MEH
+C3=OTT
+C3A=HAPPY
+COMM=Ott refers to both Brok and Graff
+TEN=PC14_LOOKGRAFF_SURFACE_NEXT_CHECK
+
+
+#----------------------------------------------------------------
+
+ID=PC14_LOOKGRAFF_SURFACE_NEXT
+T=Now. Can you explain?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=GRAFF
+C2A=MEH
+C4=OTT
+C4A=SAD
+TEB=PC14_LOOKGRAFF_LOOKGRAFF
+
+T=Why were they after you?
+W=BROK
+
+T=Well...
+W=GRAFF
+C2A=THINK
+
+T=I made a deal with that hacker.
+W=GRAFF
+
+T=He... turned against us.
+W=GRAFF
+C2A=OPPOSITE
+
+T=That devil...
+W=BROK
+C1A=OPPOSITE
+
+T=Why did you?...
+W=BROK
+C1A=MAYBE
+SKIPEND=1
+
+T=Later! There's more important stuff!
+W=GRAFF
+C2A=ANGRY
+C1A=THINK
+
+T=The pills shortage. The Squealers didn't cause it.
+W=GRAFF
+C2A=OPPOSITE
+
+T=They said the Tribots did!
+W=GRAFF
+
+T=And why should we trust anything these guys say?
+W=BROK
+C1A=OPPOSITE
+TEN=PC14_LOOKGRAFF_DEEFINAL
+
+T=...
+W=BROK
+
+T=Darn! Dee's in trouble!
+W=BROK
+C1A=SURPRISED
+
+T=Who's Dee?
+W=GRAFF
+C2A=THINK
+TEN=PC14_LOOKGRAFF_GOAWAY
+
+T=I gotta go!
+W=BROK
+
+T=Wait!
+W=GRAFF
+C2A=MEH
+
+T=We're coming with you!
+W=GRAFF
+C1A=THINK
+
+T=Darn right, we are!
+W=OTT
+C4A=ALRIGHT
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=Okay but... Be careful!
+W=BROK
+C1A=ANGRY
+TEN=PC14_LOOKGRAFF_GOAWAY2
+
+T=I've got a little... Bots attraction problem.
+W=BROK
+C1A=MAYBE
+COMM=Tribots are attracted to Brok and want to kill him
+
+T=Uh?...
+W=GRAFF
+C2A=THINK
+TEN=PC14_LOOKGRAFF_GOAWAY3
+
+
+#----------------------------------
+#= Click on the thing covering manhole
+#----------------------------------
+ID=PC14_TRASHCONTAINER1
+T=Hmm...
+W=BROK
+A=THINK
+CONTEXT=Click on the thing covering manhole
+
+T=Has this always been here?...
+W=BROK
+
+#----------------------
+#= Door
+#----------------------
+ID=PC14_DOOR_LATER1
+T="Grand opening soon". Hmm?...
+W=BROK
+A=THINK
+TEN=PC14_BAR_DLCSHOW
+
+#------------------------------------------------
+#= Pre-bar but we didn't finish the game yet
+#------------------------------------------------
+
+ID=PC14_NOTFINISHED1
+T=What the...
+W=BROK
+A=WONDER
+
+T="We're open! But finish your main adventure first!"
+
+T=Weird...
+W=BROK
+
+T=Should I insist?
+W=BROK
+A=THINK
+TEN=PC14_BAR_ENTER_CHOICE
+
+#----------------------
+#= First time
+#----------------------
+
+ID=PC14_ENTER_BAR1
+T=Closed...? But it says "Open"!
+W=BROK
+C1=BROK
+C1A=TIRED
+TEN=PC14_BAR_ENTER_CHOICE
+
+#----------------------
+
+ID=PC14_ENTER_BAR2
+T=(Knocks, knocks)
+SOUND=door_knock
+SILENCE=1
+TEXTONLY=1
+TEB=PC14_BAR_KNOCK
+
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=...
+W=BROK
+
+T=(Knocks, knocks)
+SOUND=door_knock
+SILENCE=1
+TEXTONLY=1
+TEB=PC14_BAR_KNOCK
+
+T=Anyone there?
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=...
+TEXTONLY=1
+
+T=(Footsteps)
+SOUND=loudfootsteps
+SILENCE=1
+TEXTONLY=1
+
+T=Password?
+BNAMESP=UNKNOWN
+BVOICESP=HEDGEHOG
+
+T=Erm...
+W=BROK
+C1A=THINK
+
+T="Let me in?"
+W=BROK
+
+T=Meh! Good enough.
+BNAMESP=UNKNOWN
+BVOICESP=HEDGEHOG
+
+T=(Door unlocks)
+SOUND=drawer_unlock
+SILENCE=1
+TEXTONLY=1
+
+T=...What was that?
+W=BROK
+C1A=WONDER
+TEN=PC14_TO_PC21_FIRST
+
+#----------------------
+#= Stairs
+#----------------------
+ID=PC14_00_PREBAR2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=(Pants)
+W=BROK
+C1A=TIRED
+
+T=Aww...So many stairs...
+W=BROK
+
+T=How deep is this place?
+W=BROK
+SOUND=stairs
+TEN=PC14_TO_PC21_FIRST3
+
+###############################################
+# PROOFREAD - jblaker - 09/08/2019
+# PROOFREAD & UPDATED - Chris Barnes - 15/09/2019
+###############################################

@@ -1,0 +1,1650 @@
+#-------------------------------
+#=BUNKER MAIN ROOM
+#-------------------------------
+
+#----- Interactions --------
+# A screen on the floor
+PC_FOOTSCREEN=Pantalla del suelo
+PC_THISWAY=Por aquí
+# Kinda like a screen the player can use to see what's happening on the outside of the bunker
+PC_FRAME=Marco
+PC_TRIBOTS=Tribots
+PC_WALL=Pared
+PC_CONTROLPANEL=Panel de control
+PC_FURNITURE=Mueble
+PC_LITTLEBOX=Cajita
+
+#----- Choices / Items --------
+GOT_BATTERY=¡Una batería!
+
+#----- Topics --------
+PC19B_CHOICE_OFF=¿Qué hay de extraño?
+PC19B_CHOICE_TARGET=El comportamiento de los Tribots
+PC19B_CHOICE_PILLS=La escasez de píldoras
+PC19B_CHOICE_LETBROK=Desactivar los robots
+
+INTERROGATION_GHERKIN=¿Qué esconde el Dr. Gherkin?
+INTERROGATION_TRIANGLE=¿Cuántos miembros forman el Gobierno?
+
+PC19B_CHOICE_LETDEE=Dejar a Dee desactivar los Tribots
+PC19B_CHOICE_FIGHT=Destruir los Tribots
+PC19B_DOOR_CHOICE=¿Salir y pelear contra los bots?
+
+#----- Dialog --------
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+# *****************************************************************
+# CONTEXT - Dee has tied up Dr. Gherkin to interrogate him. In this room a button can be pushed to do a shock to whoever is tied up so she uses that to interrogate him.
+# *****************************************************************
+# Brok
+PC19B_GHERKIN1-1=Está fuera de combate...
+# Brok
+PC19B_GHERKIN1-2=¡Esa mujer está loca!
+# Dee
+PC19B_GHERKIN1-3=¡¡¡Hey!!!
+# Brok
+PC19B_GHERKIN1-4=Ups... ¿Lo dije en voz alta?
+#----------------------------------------------------
+# Brok
+#Brok presses the button
+PC19B_BUTTON1-1=...
+# Brok
+PC19B_BUTTON1-2=Sigue fuera de combate.
+# Dee
+PC19B_BUTTON1-3=Cuidado. No nos servirá de nada si se muere.
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON2-1=...
+#----------------------------------------------------
+# Dee
+PC19B_BUTTON3-1=¡Alto! ¡Lo vas a matar!
+# Brok
+PC19B_BUTTON3-2=Pero... ¡me gusta pulsar este botón!
+# Dee
+PC19B_BUTTON3-3=¡¿Y la loca soy yo?!
+#----------------------------------------------------
+# Dee
+#Brok kills Dr. Gherkin
+PC19B_GHERKIN_DEAD1-1=Oh, no.
+# Brok
+PC19B_GHERKIN_DEAD1-2=Ups.
+# Dee
+PC19B_GHERKIN_DEAD1-3=¡Te lo advertí! ¡Ahora nunca conoceremos la verdad!
+# Brok
+PC19B_GHERKIN_DEAD1-4=Es... una pena, ¿supongo?
+# Dee
+PC19B_GHERKIN_DEAD1-5=¡Acabas de matar a un hombre! ¡Al que tenías que proteger!
+# Brok
+PC19B_GHERKIN_DEAD1-6=Oh... ¡No no no!
+# Brok
+PC19B_GHERKIN_DEAD1-7=¡Me debe un montón de dinero!
+# Brok
+PC19B_GHERKIN_DEAD1-8=¡Despierta! ¡DESPIERTA!
+#----------------------------------------------------
+# Brok
+#Trying to open the door of the room which is filled with Tribots
+PC19B_DOORBOTS1-1=Uhh...
+# Brok
+PC19B_DOORBOTS1-2=Tentador, pero me da pánico lo que desencadenaría al hacer eso.
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS2-1=Debo... resistirme... a abrirla...
+#----------------------------------------------------
+# Dee
+PC19B_DOORBOTS3-1=¡...!
+# Dee
+PC19B_DOORBOTS3-2=¡Qué has hecho!
+# Brok
+PC19B_DOORBOTS3-3=Uhh... ¿Ups?
+# Dee
+PC19B_DOORBOTS3-4=Culpa tuya. Arréglatelas.
+# Brok
+PC19B_DOORBOTS3-5=¡Muy fácil! ¡Mira y aprende!
+#----------------------------------------------------
+# Brok
+#Winning a fight against them
+PC19B_DOORBOTS_WIN-1=(Jadea) ¿Qué... te dije?
+# Dee
+PC19B_DOORBOTS_WIN-2=...
+# Dee
+PC19B_DOORBOTS_WIN-3=Impresionante. De verdad eres un tipo increíble.
+# Brok
+PC19B_DOORBOTS_WIN-4=¡Ja, ja! ¡Ninguna máquina puede conmigo!
+#----------------------------------------------------
+# Dee
+PC19B_DOORBOTS_AFTER-1=¡Hey!
+# Dee
+PC19B_DOORBOTS_AFTER-2=¿No se te olvida algo?
+# Brok
+PC19B_DOORBOTS_AFTER-3=Debo revisar este cuarto.
+# Dee
+PC19B_DOORBOTS_AFTER-4=Buena idea, pero así no.
+# Dee
+PC19B_DOORBOTS_AFTER-5=Escóndete. Déjame desactivar a los bots primero.
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_DISABLE-1=Bien. Los desactivaré uno a uno.
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-1=¡¿En serio esperas que me esconda?!
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-2=¡Nah! Puedo con ellos.
+# Dee
+PC19B_DOORBOTS_FIGHTANYWAY-3=¿Estás loco...?
+# Dee
+PC19B_DOORBOTS_FIGHTANYWAY-4=¿Sabes? Haz lo que te dé la gana.
+# Dee
+PC19B_DOORBOTS_FIGHTANYWAY-5=¡Pero luego no esperes que te ayude!
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-6=¿Yo? ¿Ayuda?
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-7=¡Disfruta del espectáculo!
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_DEEDISABLE-1=Adelante.
+#----------------------------------------------------
+# Dee
+PC19B_DOORBOTS_DEE-1=Hecho. Ya puedes salir.
+# Brok
+PC19B_DOORBOTS_DEE-2=Gracias. ¡Te debo una!
+# Dee
+PC19B_DOORBOTS_DEE-3=Encuentra una salida. Eso es lo importante.
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_BROK-1=¡Ahí está!
+# Dee
+PC19B_DOORBOTS_BROK-2=Huh.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC19B_SCREEN1-1=No parece demasiado cómoda para ver el último partido de Skyball.
+#----------------------------------------------------
+# Brok
+PC19B_GRAFFROOMS1-1=El camino está bloqueado...
+#----------------------------------------------------
+# Brok
+PC19B_KLAYROOMS1-1=No puedo ir por ahí...
+#----------------------------------------------------
+# Brok
+PC19B_TRIBOTS1-1=No lo entiendo... ¿Por qué estas cosas quieren matarme?
+#----------------------------------------------------
+# Brok
+PC19B_TRIBOTS1_ALTERNATIVE-1=Cómo los odio...
+#----------------------------------------------------
+# Brok
+PC19B_DOOR1-1=Claro, podría marcharme...
+# Brok
+PC19B_DOOR1-2=si no hubiera un centenar de máquinas letales esperándome afuera.
+#----------------------------------------------------
+# Dee
+PC19B_DOOR2-1=¡Espera!
+# Dee
+PC19B_DOOR2-2=Pensaba que no querías salir.
+# Dee
+PC19B_DOOR2-3=¿Acaso tenemos alguna posibilidad contra todos esos bots?
+#----------------------------------------------------
+# Brok
+PC19B_DOOR_NO-1=Cierto... Sería un suicidio.
+#----------------------------------------------------
+# Brok
+PC19B_DOOR_GO-1=¡Se nos acaban las opciones!
+# Dee
+PC19B_DOOR_GO-2=Muy bien.
+# Dee
+PC19B_DOOR_GO-3=¡Pero no me rendiré aún!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Alternative to go out of the room - we decide to fight all the bots outside
+# *****************************************************************
+# Brok
+PC19B_DOOR_YES3-1=Dee trató de encontrar una solución con la ayuda del Doctor Gherkin...
+# Brok
+PC19B_DOOR_YES3-2=pero fue en vano.
+# Brok
+PC19B_DOOR_YES3-3=Durante su búsqueda, el doctor mencionó varias teorías estrafalarias.
+# Brok
+PC19B_DOOR_YES3-4=Como... "Los huevos son el símbolo científico de los bucles".
+# Brok
+PC19B_DOOR_YES3-5=Me aburría, así que me dediqué a anotarlas.
+# Brok
+PC19B_DOOR_YES3-6=Al final, decidimos dejar al doctor adentro...
+# Brok
+PC19B_DOOR_YES3-7=mientras nos preparábamos...
+# Brok
+PC19B_DOOR_YES3-8=para la pelea de nuestras vidas.
+# Brok
+PC19B_DOOR_YES3-9=¿Estás lista?
+# Dee
+PC19B_DOOR_YES3-10=¿Para salvar a mi marido? No podría estar más lista.
+# Brok
+PC19B_DOOR_YES3-11=Bien.
+# Brok
+PC19B_DOOR_YES3-12=Tres...
+# Brok
+PC19B_DOOR_YES3-13=Dos...
+# Brok
+PC19B_DOOR_YES3-14=Uno...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC19B_FURNITURE_BEFORE1-1=¡Ñam! Si no me engañan mis ojos... ¡ahí adentro hay comida!
+# Brok
+PC19B_FURNITURE_BEFORE1-2=Pero no puedo tomarla.
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_MOVE-1=¡Voy a apartarlo!
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_MOVE2-1=¡Ajá!
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_AFTER1-1=Ugh... Está cerrado.
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_EMPTY-1=Vacío.
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_BREAK-1=¡Ups! Ha habido un... accidente.
+# Dee
+PC19B_FURNITURE_BREAK-2=Un accidente, ¿eh?
+# Brok
+PC19B_FURNITURE_BREAK-3=Qué más da... ¡Tendré que llevármela, o se echará a perder!
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL_BEFORE1-1=¿Esos son cables?... Debe haber algo detrás de este mueble.
+#----------------------------------------------------
+# Dee
+PC19B_CONTROLPANEL_OTHERS-1=¡Hey, espera!
+# Dee
+PC19B_CONTROLPANEL_OTHERS-2=¿Sabes lo que estás haciendo?
+# Brok
+PC19B_CONTROLPANEL_OTHERS-3=No realmente.
+# Dee
+PC19B_CONTROLPANEL_OTHERS-4=(Suspira)
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL1-1=Mmm...
+# Brok
+PC19B_CONTROLPANEL1-2=Doc. Necesito su ayuda.
+# Brok
+PC19B_CONTROLPANEL1-3=¿Tiene idea de qué es esto?
+# Gherkin
+PC19B_CONTROLPANEL1-4=...
+# Gherkin
+PC19B_CONTROLPANEL1-5=No lo veo bien desde aquí. ¿Qué aspecto tiene?
+# Brok
+PC19B_CONTROLPANEL1-6=Son unas... cosas con forma de huevo.
+# Gherkin
+PC19B_CONTROLPANEL1-7=Eso debe ser el panel de control para los equipos del búnker.
+# Brok
+PC19B_CONTROLPANEL1-8=¿Qué clase de equipos?
+# Gherkin
+PC19B_CONTROLPANEL1-9=Las luces... El refrigerador... El escudo...
+# Dee
+PC19B_CONTROLPANEL1-10=¿El escudo?
+# Gherkin
+PC19B_CONTROLPANEL1-11=¡Claro! Esto es un búnker.
+# Gherkin
+PC19B_CONTROLPANEL1-12=Está hecho para protegerse de amenazas externas.
+# Dee
+PC19B_CONTROLPANEL1-13=¡HAY una amenaza externa!
+# Gherkin
+PC19B_CONTROLPANEL1-14=¿Oh?...
+# Gherkin
+PC19B_CONTROLPANEL1-15=¡Oh!
+# Brok
+PC19B_CONTROLPANEL1-16=¡Usémoslo para deshacernos de ellos!
+# Gherkin
+PC19B_CONTROLPANEL1-17=M-me temo que eso no es posible.
+# Gherkin
+PC19B_CONTROLPANEL1-18=Tal y como está, solo sería capaz de impedir la entrada a los bots.
+# Dee
+PC19B_CONTROLPANEL1-19=Eso no basta. Necesitamos una manera de inmovilizarlos o averiarlos.
+# Brok
+PC19B_CONTROLPANEL1-20=Habrá que pensar un poco más...
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL2-1=...
+# Dee
+PC19B_CONTROLPANEL2-2=¡Espera! ¿Qué estás haciendo?
+# Brok
+PC19B_CONTROLPANEL2-3=Cortaré algunos cables a ver si así...
+# Dee
+PC19B_CONTROLPANEL2-4=¡¿Cómo?! ¡Claro que no!
+# Dee
+PC19B_CONTROLPANEL2-5=¡Te prohíbo que lo toques!
+# Brok
+PC19B_CONTROLPANEL2-6=¡Hey, no eres mi madre! Habrá que probar algo...
+# Dee
+PC19B_CONTROLPANEL2-7=Bueno. Entonces hazlo y verás la paliza que recibes.
+# Brok
+PC19B_CONTROLPANEL2-8=Qué aguafiestas eres.
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL_AFTER-1=Dejaré que el doctor se encargue de esto.
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_BEFORECONTROLPANEL-1=¿Se encuentra bien?
+# Gherkin
+PC19B_GHERKIN_BEFORECONTROLPANEL-2=Estaría mucho mejor si no estuviera atado.
+# Brok
+PC19B_GHERKIN_BEFORECONTROLPANEL-3=Te liberaremos antes de irnos. Prometido.
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_CONTROLPANEL1-1=Hey, Doc. ¿Usted podría usar ese panel de control?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-2=No estoy seguro...
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-3=¡Tendría que ir allí para comprobarlo!
+# Dee
+PC19B_GHERKIN_CONTROLPANEL1-4=¿Es un truco para que te suelte?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-5=... ¡Por favor!
+# Brok
+PC19B_GHERKIN_CONTROLPANEL1-6=Vamos. Desatémoslo, Dee. Podría sernos de ayuda.
+# Dee
+PC19B_GHERKIN_CONTROLPANEL1-7=...
+# Dee
+PC19B_GHERKIN_CONTROLPANEL1-8=Está bien, ¡pero ni se te ocurra escapar!
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-9=¿Con todos esos bots esperándonos afuera? ¡Ni loco!
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-1=¿Y bien...?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-2=¿Se ha preguntado por qué estos paneles tienen esta forma en particular?
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-3=No, pero seguro que ahora me lo va a contar.
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-4=El huevo es el símbolo científico de los bucles.
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-5=La energía fluye en el interior y exterior de los contenedores, creando un bucle.
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-6=Bueno... ¿Y eso para qué nos sirve?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-7=He hecho algunos ajustes.
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-8=¿Tan rápido?...
+# Gherkin
+#This is random scientific blah blah, don't search any meaning and translate how you want
+PC19B_GHERKIN_CONTROLPANEL2-9=He invertido el spin de los monopolos para alterar la topología hiperbólica de los electrones.
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-10=¿Y eso significa que...?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-11=Si todo va bien, el escudo emitirá una onda de energía junto a la compuerta.
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-12=Voy a activarlo. ¿Podría comprobar si surte algún efecto?
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-13=Claro.
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK1-1=Uno... Dos... Tres.
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-1=...
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-2=He visto... una descarga azul rodeando la compuerta...
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-3=¿Eso es todo?
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-4=¿Qué hay de los bots?
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-5=Nada.
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-6=Rayos...
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-7=Me temo que esto no funcionará.
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-8=¡Hey, es un buen comienzo!
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-1=Estamos perdidos... Jamás podremos salir...
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-2=¡No diga eso! ¡Los derrotaré uno por uno si hace falta!
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-3=¿Qué estaba intentando hacer?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-4=Mi intención era generar un pequeño campo electromagnético...
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-5=que dañara el acumulador que hay junto a la compuerta.
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-6=¿Esa cosa con forma de pirámide?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-7=Correcto. Eso provocaría un cortocircuito, con su consiguiente onda expansiva.
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-8=¡Vaya! ¡Esa idea es estupenda! ¡Hagámoslo!
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-9=¡Ya lo he intentado, como ha podido ver!
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-10=El campo es demasiado débil como para alcanzar el acumulador.
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-11=Seguro que hay una manera de mejorarlo.
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-12=Con el material adecuado, sí...
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-13=¿Pero aquí?
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-14=¿Qué necesita, exactamente?
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-15=No lo sé...
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-16=Tal vez... ¿una fuente de energía?
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-17=¡Se la conseguiré!
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-18=No cantemos victoria...
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB1-1=Uno... Dos... Tres.
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_FRAMECHECKB2-1=¡Santo cielo! ¡¡¡Ha funcionado!!!
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB2-2=¡¿En serio?!
+# Brok
+PC19B_GHERKIN_FRAMECHECKB2-3=¡Sí! Todos los bots... ¡desintegrados!
+# Dee
+PC19B_GHERKIN_FRAMECHECKB2-4=Al fin. ¡No hay tiempo que perder!
+# Dee
+PC19B_GHERKIN_FRAMECHECKB2-5=¡Vamos, Brok!
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-1=¡Oigan, no se olviden de mí!
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-2=¡Dee! No me digas...
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-3=¡Sigo aquí adentro!
+# Dee
+PC19B_GHERKIN_FRAMECHECKB3-4=No te preocupes. Es un búnker. Está lleno de recursos.
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-5=¡P-pero...!
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-6=¿Otra loca idea de las tuyas?
+# Dee
+PC19B_GHERKIN_FRAMECHECKB3-7=Aún no he terminado con él.
+# Dee
+#Here she addresses the doc
+PC19B_GHERKIN_FRAMECHECKB3-8=Enseguida regresaremos por ti.
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-9=Ohh... Esta pesadilla nunca terminará...
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-10=(Suspira)
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-11=Bueno... Al menos ahí está a salvo.
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-12=¡Vamos!
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_BATTERY-1=Hey, Doc. ¿Este objeto sirve para algo?
+# Gherkin
+PC19B_GHERKIN_BATTERY-2=...
+# Gherkin
+PC19B_GHERKIN_BATTERY-3=¡¿De dónde lo ha sacado?!
+# Brok
+PC19B_GHERKIN_BATTERY-4=Del botón que lo, uhhh... electrocutó.
+# Brok
+PC19B_GHERKIN_BATTERY-5=Creo que esto lo alimentaba.
+# Gherkin
+PC19B_GHERKIN_BATTERY-6=Es... ¡perfecto!
+# Brok
+PC19B_GHERKIN_BATTERY-7=¿En serio?... ¡Genial!
+# Brok
+PC19B_GHERKIN_BATTERY-8=¿Ahora sí funcionará?
+# Gherkin
+PC19B_GHERKIN_BATTERY-9=Lo dudo mucho.
+# Brok
+PC19B_GHERKIN_BATTERY-10=¿Pero antes ha dicho...?
+# Gherkin
+PC19B_GHERKIN_BATTERY-11=Probemos. Conectaré los cables.
+# Gherkin
+PC19B_GHERKIN_BATTERY-12=Tardaré un rato.
+# Brok
+PC19B_GHERKIN_BATTERY-13=De acuerdo. Lo dejo trabajar.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok tries to comfort Dee after the news her husband Sin is in danger
+# *****************************************************************
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-1=¿Estás bien?
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-2=...
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-3=Cuando no lo vi en el apartamento, pensé que se había ido.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-4=Jamás hubiera imaginado que...
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-5=Tranquilízate. Lo salvaremos.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-6=¡¿Cómo puedes decir eso?!
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-7=¡Quizás ya sea demasiado tarde!...
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-8=Lo haremos.
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-9=...
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-10=Nunca antes había conocido a alguien como tú.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-11=Estoy segura de ello.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-12=No soy la clase de persona que se queda en casa todo el día criando niños.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-13=No me importa si somos los últimos de nuestra especie. La sociedad nos necesita.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-14=La sociedad no decidirá por mí.
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-15=Pero aun así tuviste una hija.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-16=Sí...
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-17=...
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-18=La extraño... y también a Sin...
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-19=¿Qué hay de ti?
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-20=Tuve una esposa... durante un breve pero feliz periodo. Falleció.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-21=Oh... Lo lamento...
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-22=Y un hijo... que en realidad no es hijo mío.
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-23=Me detesta.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-24=Mientes.
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-25=¿Qué?
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-26=Te adora. Estoy segura de eso.
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-27=¿Cómo lo sabes? No lo conoces.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-28=Pero a ti sí.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-29=Sí, sé que nos acabamos de conocer, pero...
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-30=siento... que puedo confiar en ti.
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-31=Erm... Hace menos de una hora querías liquidarme.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-32=¡Solo estaba bromeando! No captas el humor femenino, ¿cierto?
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-33=Bromeando... ¡Claro! Ja, ja.
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-34=...
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-35=...
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-36=Erm... ¿Tengo algo en la cara?
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-37=¿Sabes?... Si la situación fuera diferente...
+# Gherkin
+PC19B_GHERKIN_AFTERGIVEN1-38=¡Señor Brok!
+# Gherkin
+PC19B_GHERKIN_AFTERGIVEN1-39=He terminado. ¿Puede comprobar la entrada?
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-40=¡De acuerdo!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking frame on the wall
+# *****************************************************************
+# Brok
+PC19B_FRAME1-1=¿No es esto... una vista de la entrada del búnker?
+#----------------------------------------------------
+# Brok
+PC19B_ENTRANCE_PICTURE1-1=Oh, oh...
+# Brok
+PC19B_ENTRANCE_PICTURE1-2=He estado en situaciones difíciles en el pasado, pero esta...
+# Brok
+PC19B_ENTRANCE_PICTURE1-3=¡Es la más complicada de todas!
+# Dee
+PC19B_ENTRANCE_PICTURE1-4=Complicada la que nos va a tocar ahora...
+#----------------------------------------------------
+# Brok
+PC19B_ENTRANCE_PICTURE2-1=¿Cómo vamos a atravesar eso?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Pressing the button
+# *****************************************************************
+# Gherkin
+PC19B_BUTTON_GHERKIN1-1=¡Alto!
+# Gherkin
+PC19B_BUTTON_GHERKIN1-2=¿Por qué está haciendo eso?
+# Brok
+PC19B_BUTTON_GHERKIN1-3=¿Por diversión?
+# Gherkin
+PC19B_BUTTON_GHERKIN1-4=¡Por favor!... ¡Eso duele!
+# Brok
+PC19B_BUTTON_GHERKIN1-5=Bueno, bueno. Trataré de controlarme.
+#----------------------------------------------------
+# Gherkin
+PC19B_BUTTON_GHERKIN2-1=¡No, por favor!
+# Brok
+PC19B_BUTTON_GHERKIN2-2=¡Solo bromeo!
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_WITHOUT1-1=¿Por qué construirían un búnker con este instrumento de tortura?
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_WITHOUT2-1=...
+# Brok
+PC19B_BUTTON_WITHOUT2-2=Esa cosa genera una descarga. Me pregunto de dónde vendrá la energía...
+#----------------------------------------------------
+# Dee
+#Dee is talking to Brok here (informal)
+PC19B_BUTTON_NODESTROY1-1=¡Hey! ¡Basta!
+# Dee
+PC19B_BUTTON_NODESTROY1-2=Sé que no estás de acuerdo, pero no tengo elección.
+#----------------------------------------------------
+# Dee
+PC19B_BUTTON_DESTROY1-1=¿Lo has destruido? ¡¿Con tus propias manos?!
+# Brok
+PC19B_BUTTON_DESTROY1-2=¡Tenía que investigar, señorita!
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_REMOTECONTROL-1=¿Para qué? ¿Desactivarlo?...
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_OTHERS-1=No hay tiempo que perder... ¡Debo tomar medidas drásticas!
+#----------------------------------------------------
+# Brok
+PC19B_BATTERY1-1=¿Qué es esta cosa?
+# Brok
+PC19B_BATTERY1-2=Parece interesante. ¡Debería tomarla!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming in this room for the first time, Brok sees Dee who already tied up Dr Gherkin
+# *****************************************************************
+# Brok
+#Here he addresses both of them
+PC19B_INIT1-1=Ahí están...
+# Brok
+#And here, only Dee
+PC19B_INIT1-2=¿Eh? ¡¿Pero qué rayos estás haciendo?!
+# Dee
+PC19B_INIT1-3=Interrogándolo.
+# Gherkin
+PC19B_INIT1-4=Me... ¡Me ha encadenado!
+# Brok
+PC19B_INIT1-5=¡¿Estás loca?!
+# Brok
+PC19B_INIT1-6=¡¿Crees que es el momento adecuado para esto?!
+# Dee
+PC19B_INIT1-7=¡Este tipo oculta algo!
+# Brok
+PC19B_INIT1-8=¡¿Y tú qué?!
+# Dee
+PC19B_INIT1-9=Pensé que estaba todo claro.
+# Brok
+PC19B_INIT1-10=¡No, para nada! No había terminado cuando nos asaltaron esos bots...
+# Dee
+PC19B_INIT1-11=Bien.
+# Dee
+PC19B_INIT1-12=Te lo contaré todo. Siempre y cuando no interfieras en mi interrogatorio.
+# Brok
+PC19B_INIT1-13=No prometo nada.
+# Dee
+PC19B_INIT1-14=Después arreglaremos esto de una vez por todas.
+# Brok
+PC19B_INIT1-15=¡¿Más pelea?!
+# Brok
+PC19B_INIT1-16=No, gracias. Ya he tenido bastante acción por hoy.
+# Brok
+PC19B_INIT1-17=¿Tengo que recordarte que estamos rodeados por bots que nos quieren asesinar?
+# Brok
+PC19B_INIT1-18=Ahorremos nuestras fuerzas para ellos.
+# Dee
+PC19B_INIT1-19=(Suspira)
+# Dee
+PC19B_INIT1-20=Supongo que tienes razón.
+# Brok
+PC19B_INIT1-21=Y hablando de ellos...
+# Brok
+PC19B_INIT1-22=Vaya. Esas cosas están por todos lados... ¡Son implacables!
+# Gherkin
+PC19B_INIT1-23=T-tengo miedo... ¿Podría alguien soltarme?
+# Dee
+PC19B_INIT1-24=Todavía no.
+# Gherkin
+PC19B_INIT1-25=¡P-pero...!
+# Brok
+PC19B_INIT1-26=¿Sospechas que el doctor es el responsable de todo este desastre?
+# Dee
+PC19B_INIT1-27=...
+# Dee
+PC19B_INIT1-28=Es posible. Está involucrado en muchos asuntos.
+# Brok
+PC19B_INIT1-29=No puede ser cierto...
+# Gherkin
+PC19B_INIT1-30=¡No tengo nada que ver con esto! ¡Lo juro!
+# Brok
+PC19B_INIT1-31=Si él desató a los bots, ¿por qué arriesgaría su propia vida yendo a los Slums?
+# Brok
+PC19B_INIT1-32=¿Qué ganaría con todo esto?
+# Dee
+PC19B_INIT1-33=...
+# Dee
+PC19B_INIT1-34=Aún quedan cosas por aclarar. ¡Pero tengo los medios para ello!
+#----------------------------------------------------
+# Brok
+PC19B_INIT1B-1=Bueno... No estoy seguro...
+# Brok
+PC19B_INIT1B-2=Hum...
+# Brok
+PC19B_INIT1B-3=Algo no encaja.
+# Dee
+PC19B_INIT1B-4=¿A qué te refieres?
+#----------------------------------------------------
+# Brok
+PC19B_GHERKINPROB1-1=El Doctor Gherkin nos está mintiendo.
+# Dee
+PC19B_GHERKINPROB1-2=¡Al fin me escuchas!
+# Dee
+PC19B_GHERKINPROB1-3=Acabemos con esto. Sé exactamente cómo hacerlo confesar...
+# Brok
+PC19B_GHERKINPROB1-4=¡Espera!
+# Brok
+PC19B_GHERKINPROB1-5=Hay... algo más.
+#----------------------------------------------------
+# Brok
+PC19B_PILLS1-1=Esta escasez de píldoras no es normal.
+# Dee
+PC19B_PILLS1-2=¿Te acabas de dar cuenta de ello, Sherlock?
+# Dee
+PC19B_PILLS1-3=Pensé que dirías algo más perspicaz.
+# Dee
+PC19B_PILLS1-4=Pero creo que es mucho pedir para alguien como tú.
+# Brok
+PC19B_PILLS1-5=¡¿Alguien como yo?!
+# Dee
+PC19B_PILLS1-6=Sí. Solo eres un montón de escamas y grasa de buena estatura.
+# Brok
+PC19B_PILLS1-7=¿Buena...?
+# Dee
+PC19B_PILLS1-8=Llevas bastante tiempo viviendo solo, ¿verdad?
+# Brok
+PC19B_PILLS1-9=Sí... Bueno... No exactamente.
+# Dee
+PC19B_PILLS1-10=Lo siento. Sé que tu vida no habrá sido fácil. Eso se nota.
+# Dee
+PC19B_PILLS1-11=Y eso es lo que hace... que seas tú mismo.
+# Brok
+PC19B_PILLS1-12=La verdad, me acabas de recordar cuánto les gusta a las mujeres hablar de manera complicada.
+# Dee
+PC19B_PILLS1-13=Mmm.
+# Dee
+PC19B_PILLS1-14=Y bien, ¿hay algo más que hayas notado, genio?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok wants to test the behavior of robots
+# *****************************************************************
+# Brok
+PC19B_TARGET1-1=Quisiera probar algo.
+# Brok
+PC19B_TARGET1-2=¿Podrías abrirle la puerta a esos bots?
+# Dee
+PC19B_TARGET1-3=Podría. ¿Para qué?
+# Brok
+PC19B_TARGET1-4=Me esconderé. Suelta a uno.
+# Dee
+PC19B_TARGET1-5=¡¿Estás loco?!
+# Dee
+PC19B_TARGET1-6=¿Eres consciente de que podrían atacarnos en masa si abro esa puerta?
+# Brok
+PC19B_TARGET1-7=Confía en mí.
+# Dee
+PC19B_TARGET1-8=Muy bien....
+# Dee
+PC19B_TARGET1-9=Probemos. Solo uno.
+#----------------------------------------------------
+# Dee
+PC19B_TARGET2-1=...
+# Tribot
+PC19B_TARGET2-2=Hola. ¿En qué puedo servirle?
+# Dee
+PC19B_TARGET2-3=Este parece agradable.
+# Brok
+PC19B_TARGET2-4=Mmm...
+# Brok
+PC19B_TARGET2-5=Acércalo al Doctor Gherkin.
+# Gherkin
+PC19B_TARGET2-6=¡N-no!
+# Dee
+PC19B_TARGET2-7=Vamos, bot. Ve junto a ese hombre.
+# Gherkin
+PC19B_TARGET2-8=¡Oh, no!...
+#----------------------------------------------------
+# Tribot
+PC19B_TARGET3-1=Hola.
+# Gherkin
+PC19B_TARGET3-2=¿Eh?...
+# Dee
+PC19B_TARGET3-3=No sé qué esperabas que pasara.
+# Brok
+PC19B_TARGET3-4=Y ahora, ¿qué pasa si...?
+#----------------------------------------------------
+# Tribot
+PC19B_TARGET4-1=¡Objetivo localizado!
+# Brok
+PC19B_TARGET4-2=¡...!
+# Dee
+PC19B_TARGET4-3=¡Se ha vuelto loco!
+# Brok
+PC19B_TARGET4-4=Yo me ocupo de él.
+#----------------------------------------------------
+# Brok
+PC19B_TARGET5_ALTERNATIVE-1=¡Tenía razón, Doc!
+# Brok
+PC19B_TARGET5_ALTERNATIVE-2=¡Van tras usted!
+# Gherkin
+PC19B_TARGET5_ALTERNATIVE-3=¿Acaso no me creía?
+#----------------------------------------------------
+# Brok
+PC19B_TARGET5-1=Justo lo que pensaba.
+# Brok
+PC19B_TARGET5-2=No van tras el científico...
+# Brok
+PC19B_TARGET5-3=¡Vienen por mí!
+# Gherkin
+PC19B_TARGET5-4=¡Santo cielo!
+# Dee
+PC19B_TARGET5-5=Espera un minuto...
+# Dee
+PC19B_TARGET5-6=Estamos en esta situación tan riesgosa... ¡¿por tu culpa?!
+# Dee
+PC19B_TARGET5-7=Por todos los cielos, ¡¿qué demonios has hecho?!
+# Brok
+PC19B_TARGET5-8=¡No tengo idea! Lo juro.
+# Brok
+PC19B_TARGET5-9=Aunque... quizás están molestos porque últimamente he derrotado a muchos de sus amigos. ¡Pero fue en defensa propia!
+# Dee
+PC19B_TARGET5-10=Esas cosas no son tan listas.
+# Dee
+PC19B_TARGET5-11=¡Alguien te quiere ver muerto!
+# Dee
+PC19B_TARGET5-12=Y eso... no es una mala opción para poder salir de aquí...
+# Brok
+PC19B_TARGET5-13=¡Argh! Déjate de tonterías.
+# Brok
+PC19B_TARGET5-14=Descubriré qué está pasando. ¡Pero necesito que los dos empiecen a hablar!
+# Brok
+PC19B_TARGET5-15=Primero... Doctor.
+# Gherkin
+PC19B_TARGET5-16=¡¡¡ALÉJESE!!! ¡Usted es el único que los atrae!
+# Brok
+PC19B_TARGET5-17=¡Vamos! ¡Sea razonable!
+# Gherkin
+PC19B_TARGET5-18=¡Estoy mejor solo que con usted!
+# Brok
+PC19B_TARGET5-19=Mmm. Lo dejaré a solas con esta chica tan agradable, entonces.
+# Dee
+PC19B_TARGET5-20=Hum.
+# Gherkin
+PC19B_TARGET5-21=...
+# Gherkin
+PC19B_TARGET5-22=¡N-no...!
+# Gherkin
+PC19B_TARGET5-23=Oh, cielos... Salgo perdiendo de cualquier manera...
+# Brok
+PC19B_TARGET5-24=Doc. Si los bots no iban tras usted...
+# Brok
+PC19B_TARGET5-25=¿Por qué me llamó?
+# Gherkin
+PC19B_TARGET5-26=No... ¡No tenía ni idea!
+# Gherkin
+PC19B_TARGET5-27=Pero ahora todo cobra sentido.
+# Gherkin
+PC19B_TARGET5-28=Esta mañana... estaba solo en la fábrica.
+# Brok
+PC19B_TARGET5-29=¿Solo?
+# Gherkin
+PC19B_TARGET5-30=Sí. El proceso de producción está automatizado. No hay operarios humanos.
+# Gherkin
+PC19B_TARGET5-31=De hecho... la escasez de píldoras es la única razón por la que hoy fui a la fábrica.
+# Gherkin
+PC19B_TARGET5-32=Empezaba a entender qué fallaba, cuando de pronto...
+# Gherkin
+PC19B_TARGET5-33=¡Una manada de robots salió corriendo de la fábrica y todos me llevaron por delante!
+# Gherkin
+PC19B_TARGET5-34=¡Pensé que se habían vuelto locos! 
+# Gherkin
+PC19B_TARGET5-35=Me asusté... Corrí a la garita de la entrada y...
+# Gherkin
+PC19B_TARGET5-36=...ya conoce el resto.
+# Brok
+PC19B_TARGET5-37=¿Y no se les pasó por la cabeza... que dejarlo todo en manos de un puñado de chatarra era una pésima idea?
+# Gherkin
+PC19B_TARGET5-38=¡No! ¡La producción lleva años en marcha sin incidentes!
+# Gherkin
+PC19B_TARGET5-39=Todo esto es muy extraño.
+# Gherkin
+PC19B_TARGET5-40=Esos bots fueron programados para realizar tareas específicas en la fábrica. ¡No deberían atacar a la gente!
+# Brok
+PC19B_TARGET5-41=No se ofenda, Doc, pero... no confío para nada en esos programas.
+# Brok
+PC19B_TARGET5-42=Por cierto... ¿Cómo es posible que tenga acceso a este búnker?
+# Brok
+PC19B_TARGET5-43=Al fin y al cabo, no es más que un forastero en los Slums.
+# Gherkin
+PC19B_TARGET5-44=...
+# Gherkin
+PC19B_TARGET5-45=B-bueno... Verá usted...
+#----------------------------------------------------
+# Gherkin
+#Dee presses the button
+PC19B_TARGET6-1=¡Yyyyaaaouch!
+# Brok
+PC19B_TARGET6-2=¡Se ha desmayado!
+# Brok
+PC19B_TARGET6-3=¡¿Qué demonios te pasa?!
+# Dee
+PC19B_TARGET6-4=No te iba a contar toda la verdad.
+# Brok
+PC19B_TARGET6-5=¡¿Y acaso tú sí?!
+# Dee
+PC19B_TARGET6-6=Ahora... sí.
+# Brok
+PC19B_TARGET6-7=Bien. Soy todo oídos.
+# Dee
+PC19B_TARGET6-8=Como miembro del Gobierno, él tiene las "llaves de la ciudad".
+# Brok
+PC19B_TARGET6-9=Me lo imaginaba. Solo intentaba que lo admitiera.
+# Brok
+PC19B_TARGET6-10=Como sea... Necesito un respiro.
+# Brok
+PC19B_TARGET6-11=Déjame inspeccionar la habitación.
+# Dee
+PC19B_TARGET6-12=No desperdicies tu tiempo.
+#----------------------------------------------------
+# Brok
+PC19B_DEE_NOTYET-1=Aún no...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After checking the room, Dee tells her story
+# *****************************************************************
+# Dee
+PC19B_DEE1-1=¿Has terminado? 
+# Brok
+PC19B_DEE1-2=Estamos atrapados...
+# Dee
+PC19B_DEE1-3=Te lo dije. Pero tenemos que escapar, sea como sea...
+# Brok
+PC19B_DEE1-4=Cada cosa a su tiempo.
+# Brok
+PC19B_DEE1-5=Háblame de ti. ¡Desde el principio, por favor!
+# Dee
+PC19B_DEE1-6=...
+# Dee
+PC19B_DEE1-7=Como ya sabes, soy periodista.
+# Dee
+PC19B_DEE1-8=Cuando comencé esta carrera, era más que un trabajo para mí.
+# Dee
+PC19B_DEE1-9=Era una manera de descubrir la verdad, e intentar hacer una diferencia en el mundo imperturbable en que vivimos.
+# Dee
+PC19B_DEE1-10=Y por eso acabé hartándome de escribir artículos del estilo "Cómo preparar la mejor tarta de gusanos" o "Las diez mejores telenovelas".
+# Dee
+PC19B_DEE1-11=Así que... llevo meses trabajando en una investigación encubierta.
+# Brok
+PC19B_DEE1-12=¿Teniendo una familia que cuidar?
+# Dee
+PC19B_DEE1-13=Sí. ¡Pero una periodista siempre encuentra tiempo para asuntos importantes!
+# Brok
+PC19B_DEE1-14=Claro... Olvidaba que los Drumers apenas duermen cuatro horas al día.
+# Dee
+PC19B_DEE1-15=Eso es un estereotipo.
+# Dee
+PC19B_DEE1-16=Desde que era una niña, me di cuenta de que algunas cosas... cambiaban.
+# Dee
+PC19B_DEE1-17=Los Drumers se volvían más conformistas. Vivían en una burbuja.
+# Brok
+PC19B_DEE1-18=¿Y eso es una novedad?
+# Dee
+PC19B_DEE1-19=En este caso, sí.
+# Dee
+PC19B_DEE1-20=Analicé la evolución de cada actividad de nuestra sociedad...
+# Dee
+PC19B_DEE1-21=e hice algunos hallazgos importantes.
+# Dee
+PC19B_DEE1-22=Estaba a punto de publicarlos en mis canales cuando todo esto comenzó.
+# Dee
+PC19B_DEE1-23=¿Sabes? Hay una cosa más importante para mí que mi carrera...
+# Brok
+PC19B_DEE1-24=¿Tú misma?
+# Dee
+PC19B_DEE1-25=¡No! Mi familia.
+# Dee
+PC19B_DEE1-26=Mis colegas encontraron algunos videos de Sin... engañándome con otra mujer.
+# Dee
+PC19B_DEE1-27=Eso desató algo en mi interior.
+# Dee
+PC19B_DEE1-28=Me había traicionado. Había traicionado a nuestra hija.
+# Dee
+PC19B_DEE1-29=Mis colegas se hacían los amables y comprensivos delante de mí...
+# Dee
+PC19B_DEE1-30=Pero a mis espaldas, se burlaban.
+# Dee
+PC19B_DEE1-31=No lo soporté. No pude manejar la situación.
+# Dee
+PC19B_DEE1-32=Dejé mi trabajo.
+# Dee
+PC19B_DEE1-33=Y así... perdí el acceso a la mejor manera de difundir información.
+# Brok
+PC19B_DEE1-34=Ya veo hacia dónde va todo esto...
+# Dee
+PC19B_DEE1-35=Sin y yo discutimos. Dijo que todo era mentira.
+# Dee
+PC19B_DEE1-36=No lo escuché. No le creí. ¿Por qué iba a hacerlo?
+# Dee
+PC19B_DEE1-37=Tenía pruebas sólidas. ¡Esos videos parecían reales!
+# Dee
+PC19B_DEE1-38=Pero él insistió. Y como ni lo admitió ni se disculpó...
+# Brok
+PC19B_DEE1-39=...Lo amenazaste con iniciar un expediente de expulsión.
+# Dee
+PC19B_DEE1-40=Sí...
+# Dee
+PC19B_DEE1-41=Pero... terminó yéndose por su cuenta.
+# Dee
+PC19B_DEE1-42=Pese a todo esto, no tenía intención de abandonar mi investigación. Así que contacté con otros medios.
+# Dee
+PC19B_DEE1-43=Pero rechazaron mi historia. Todos y cada uno de ellos.
+# Dee
+PC19B_DEE1-44=No tenía ningún sentido. ¿Por qué una agencia de noticias rechazaría información exclusiva e impactante?
+# Dee
+PC19B_DEE1-45=Sin pruebas, solo puedo especular. Pero la lógica me dice...
+# Dee
+PC19B_DEE1-46=que es todo una fachada.
+# Brok
+PC19B_DEE1-47=Tú misma lo has dicho.
+# Brok
+PC19B_DEE1-48=Toda la información en los Drums la controla una sola entidad, ¿cierto?
+# Dee
+PC19B_DEE1-49=Sí.
+# Dee
+PC19B_DEE1-50=Esta teoría ganó más peso cuando descubrí que todos mis hallazgos se habían... esfumado.
+# Dee
+PC19B_DEE1-51=Los datos almacenados en mi ADN. Todas las copias de seguridad.
+# Dee
+PC19B_DEE1-52=¡Hasta las referencias y todo lo vinculado a ellas!
+# Dee
+PC19B_DEE1-53=No quedó nada.
+# Dee
+PC19B_DEE1-54=Es como si me lo hubiera imaginado todo.
+#----------------------------------------------------
+# Dee
+PC19B_DEE1B-1=Mis amigos empezaron a pensar que estaba desvariando.
+# Dee
+PC19B_DEE1B-2=Hasta pensaron en enviarme a un hospital psiquiátrico.
+# Brok
+PC19B_DEE1B-3=Sí, bueno...
+# Dee
+PC19B_DEE1B-4=Cállate. No es momento para bromas.
+# Dee
+PC19B_DEE1B-5=¡Mis amigos me arrebataron a mi hija!
+# Dee
+PC19B_DEE1B-6=¡No me creían!
+# Dee
+PC19B_DEE1B-7=Lo había perdido todo.
+# Dee
+PC19B_DEE1B-8=Mi trabajo. Mi familia. Mis amigos. Y mi cordura...
+# Dee
+PC19B_DEE1B-9=Pero al final, la fortuna decidió sonreírme.
+# Dee
+PC19B_DEE1B-10=Siempre llevo un chip de memoria oculto en la ropa.
+# Dee
+PC19B_DEE1B-11=Durante una de mis investigaciones, se estropeó y dejó de responder.
+# Dee
+PC19B_DEE1B-12=Eso me hizo pensar. ¿Y si solo habían borrado las copias conectadas a la Triweb?
+# Dee
+PC19B_DEE1B-13=Pero no podía revisar el contenido del chip sin arriesgarme a que también fuera detectado y eliminado.
+# Dee
+PC19B_DEE1B-14=Así que... vine a los Slums y se lo di a un tal "The Gloom".
+# Brok
+PC19B_DEE1B-15=¡Ja! ¡Qué haríamos sin ese condenado ratón!
+# Dee
+PC19B_DEE1B-16=Era mi última esperanza. Mi única oportunidad de demostrar que no estaba loca...
+# Dee
+PC19B_DEE1B-17=Y estaba en lo cierto.
+# Dee
+PC19B_DEE1B-18=Los datos siguen ahí. Solo una parte de mis descubrimientos, pero suficiente para validar todas mis teorías.
+# Dee
+PC19B_DEE1B-19=Pero cómo pude ser tan crédula...
+# Dee
+PC19B_DEE1B-20=Era todo una cortina de humo.
+# Dee
+PC19B_DEE1B-21=Los videos eran falsos. Muy elaborados e indetectables al ojo humano.
+# Dee
+PC19B_DEE1B-22=Destruyeron mi vida por una sencilla razón...
+# Dee
+PC19B_DEE1B-23=¡Para impedir que revelara la verdad!
+# Brok
+PC19B_DEE1B-24=¿Pero quiénes? ¿Qué verdad?...
+# Gherkin
+PC19B_DEE1B-25=Ahhh...
+# Brok
+PC19B_DEE1B-26=Nuestro amigo se está despertando.
+# Dee
+PC19B_DEE1B-27=Justo a tiempo.
+# Gherkin
+PC19B_DEE1B-28=Ugh...
+# Gherkin
+PC19B_DEE1B-29=Me siento mal...
+# Gherkin
+PC19B_DEE1B-30=Por favor, ¡libérenme!
+# Dee
+PC19B_DEE1B-31=¡No hasta que confieses! 
+# Dee
+PC19B_DEE1B-32=¡Admítelo! Eres un miembro del Gobierno.
+# Gherkin
+PC19B_DEE1B-33=No... ¡No tengo ni idea de qué me hablas!
+# Dee
+PC19B_DEE1B-34=Está bien.
+# Dee
+PC19B_DEE1B-35=Tal vez si pulso de nuevo ese botón se te "refresca" la memoria.
+# Gherkin
+PC19B_DEE1B-36=¡N-no!
+# Brok
+PC19B_DEE1B-37=¡Quieta!
+# Brok
+PC19B_DEE1B-38=Yo me encargo.
+# Dee
+PC19B_DEE1B-39=¡Claro que no!
+# Brok
+PC19B_DEE1B-40=¡Confía en mí! No soltará la lengua solo con amenazas.
+# Dee
+PC19B_DEE1B-41=Buf...
+# Dee
+PC19B_DEE1B-42=Bien. Que sea a tu manera, vaquero.
+# Brok
+PC19B_DEE1B-43=¡Déjame resolver este rompecabezas!
+#----------------------------------------------------
+# Brok
+PC19B_DEE2-1=Doc. Es obvio que hay algo que lo perturba, y que esta situación es algo incómoda, pero...
+# Brok
+PC19B_DEE2-2=Necesito que confíe en mí.
+# Gherkin
+PC19B_DEE2-3=Ehh... E-Está bien..
+# Brok
+PC19B_DEE2-4=Primero, hablemos sobre lo de esta mañana.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogation
+# *****************************************************************
+# Brok
+PC19B_GHERKIN_RESUME-1=Continuemos.
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_EXIT1-1=Necesito un momento para reflexionar.
+# Dee
+PC19B_GHERKIN_EXIT1-2=¡No podemos perder el tiempo!
+# Brok
+PC19B_GHERKIN_EXIT1-3=Solo será un minuto, ¿de acuerdo?
+# Dee
+PC19B_GHERKIN_EXIT1-4=... Está bien.
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_BAD_SCARED-1=(Nah. El doctor es demasiado asustadizo como para ir sin compañía a sabotear los Farmatubos.)
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_BAD_CONTROL-1=(Es cierto que el Gobierno controla muchas cosas, pero... ese es su trabajo.)
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_BAD_KNOW-1=(Sip, parece lógico que el doctor lo supiera... ¿y qué?)
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_OUTJAIL-1=(Ni el jefe de policía pudo mantenerme en la cárcel. ¡No soy un criminal!)
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE_ALT-1=Ha dicho que los Tribots cambiaron de comportamiento esta mañana.
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE_ALT-2=¡Y hemos demostrado que lo buscan exclusivamente a usted!
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-1=Ha dicho que esta mañana los Tribots actuaban diferente.
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-2=Y, mire qué casualidad, ¡justo esta mañana han venido a mi propia casa a asaltarme!
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-3=¿Notó algo raro antes de que esos bots abandonaran la fábrica?
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-4=Antes...
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-5=Ahora que lo menciona...
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-6=Recibieron una actualización de firmware.
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-7=Una actualización...
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-8=¿Quién se encarga de eso?
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-9=Hay laboratorios dedicados a ello, con ingenieros que trabajan en mejorar la IA.
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-10=Sí... Creo que conocí a dos de esos tipos ayer.
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-11=¿Pero pueden enviar las actualizaciones por su cuenta?
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-12=No. La decisión de enviar una actualización de firmware a producción recae en manos del Gobierno.
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-13=Si es así...
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-1=Doctor. ¿Qué hizo exactamente con los Farmatubos?
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-2=Traté de arreglarlos...
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-3=Trató...
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-4=...¿pero falló?
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-5=Ehh...
+# Dee
+PC19B_CLUE_GHERKIN_SIGNATURE-6=Tiene razón. Lo he comprobado yo misma.
+# Dee
+PC19B_CLUE_GHERKIN_SIGNATURE-7=Cuando terminaste, los Farmatubos seguían sin funcionar.
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-8=Cierto. La verdad....
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-9=...no sé con certeza por qué.
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-10=¿Y eso?
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-11=Cuando estaba en la fábrica, me di cuenta de que las píldoras no estaban siendo enviadas porque faltaban las firmas.
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-12=¿Firmas?
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-13=Cada Farmatubo tiene que probar su autenticidad para poder operar.
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-14=¿Por qué?
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-15=De lo contrario, ¡cualquiera podría alterar la red de tubos para obtener medicina de forma ilegal!
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-16=De alguna manera... todas las firmas en los Slums se desvanecieron.
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-17=Probablemente debido a algún daño externo.
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-18=Así que intenté reinstalar la firma en cada uno de ellos.
+# Dee
+PC19B_CLUE_GHERKIN_SIGNATURE-19=Absurdo. ¿Por qué no lo hiciste en todos los Farmatubos a la vez?
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-20=¡No! ¡No se puede hacer remotamente! ¡Se necesita acceso físico!
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-21=Ya veo. ¿Y si nos dividiéramos el trabajo? ¡Así iríamos más rápido!
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-22=Imposible.
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-23=Agh... Las ideas sencillas nunca les sirven a estos tecno-nerds.
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-24=¿A ver y por qué?
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-25=¡No me diga que usted es la única persona en todo el país que puede hacerlo!
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-26=Precisamente.
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-27=¡¿Cómo?!
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-28=La firma debe mantenerse en secreto para que cumpla su función.
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-29=¡Tiene que estar bromeando! ¿Y si le pasa algo a usted?
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-30=¿Por qué cree que lo contraté?
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-31=Argh...
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-32=Espere...
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-33=Si eso es cierto...
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-34=cada vez parece más creíble algo que estamos sospechando...
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-1=Es una persona bastante importante, Doctor Gherkin. ¿No es cierto?
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-2=C-claro. Dirijo la fábrica...
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-3=No. Mucho más importante que eso.
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-4=¿Cómo es posible que conozca la firma de los Farmatubos?
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-5=...
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-6=E-es... confidencial...
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-7=¡Basta ya! ¡Déjame pulsar el botón!
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-8=¡Claro, hazlo!
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-9=¡No... no no no! ¡Por favor!
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-10=Oh... usted gana...
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-11=Sí, soy un miembro del Gobierno.
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-12=Solo los miembros del Gobierno conocemos dicha firma.
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-13=¡Al fin!
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-14=Adelante, ¡suéltalo todo!
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-15=¡No sé por dónde empezar!
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-16=Empiece por el número. ¿Cuántos miembros son?
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-17=La respuesta es obvia.
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-18=Mmm...
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-19=Ahora que lo mencionas... Creo que siempre lo he sabido, gracias a esto.
+#----------------------------------------------------
+# Brok
+PC19B_PICKONE_TRIANGLE_WRONG1-1=(No...)
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-1=El Triángulo...
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-2=Hay tres miembros.
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-3=Sí...
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-4=Pero... no conozco a los demás.
+# Dee
+PC19B_CLUE_GHERKIN_TRIANGLE-5=¡Mentiroso!
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-6=¡Lo juro! Eso... ¡era parte del pacto original!
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-7=Se suponía que tomaríamos las decisiones por separado.
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-8=Era la única manera de asegurarse de que tuviéramos completa independencia.
+# Dee
+PC19B_CLUE_GHERKIN_TRIANGLE-9=Uh... El típico comportamiento de una élite desconectada que no tiene ni la más remota idea de cómo funciona el mundo.
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-10=Ahí debo darte la razón.
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-11=¡N-no hay ningún sistema de gobierno perfecto! Es un asunto complicado.
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-12=Centrémonos en lo que ahora importa.
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-1=Antes ha dicho que el Gobierno controla las actualizaciones de los Tribots.
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-2=¡Y usted forma parte de él!
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-3=¡Está claro! ¡Alguien del gobierno los programó para que fueran tras usted!
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-1=Antes ha dicho que el Gobierno controla las actualizaciones de los Tribots...
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-2=...y usted forma parte de él...
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-3=¡Fue usted! ¡Usted hizo que los Tribots vinieran por mí!
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-4=¡N-no! ¡Yo no fui!
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-5=Será mejor que me dé argumentos convincentes, Doc...
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-6=¡N-no sé!...
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-7=Esto... ¡no debería ser posible!
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-8=Verá... Cada decisión que tomamos sigue el mismo proceso.
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-9=Cuando surge una nueva cuestión, se nos proporcionan datos objetivos para ayudarnos a decidir.
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-10=Objetivos, claro...
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-11=Somos tres miembros, y para que una moción sea aprobada, debemos estar todos conformes.
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-12=Dicho de una manera, cualquiera de nosotros puede vetar todo el proceso.
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-13=Soy ingeniero y entiendo el código.
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-14=¡Jamás hubiera estado de acuerdo con esto!
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-15=Y si hubiera sabido que era usted el que provoca que los robots se vuelvan locos...
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-16=¡Oiga, que aquí la víctima soy yo!
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-17=¿Por qué arriesgaría mi vida voluntariamente?
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-18=Tiene razón.
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-19=Incluso si los bots no van tras él, sigue corriendo el riesgo de que lo golpeen o arrollen en medio del caos.
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-20=En ese caso...
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-21=Uno de los otros miembros de El Triángulo decidieron deshacerse de ti. O quizás ambos.
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-22=Eso es... maravilloso. Mi futuro brilla cada vez más.
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-23=Al menos ya sabes a qué te enfrentas. Daremos con una solución.
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-24=Solo espero seguir en una pieza cuando acabemos...
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-25=Eso no es problema. Los Tribots no están equipados con tijeras gigantes.
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-26=No es gracioso.
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-27=(El lado bueno de esto es que los Tribots no irán tras Graff.)
+#----------------------------------------------------
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-1=¡Ya estoy harta! ¡A ver qué sabe este sujeto sobre mi situación!
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-2=¡Un momento, ya voy!
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-3=Esta, ehh... dama, sospecha que sus investigaciones la convirtieron en la oveja negra del mundo del periodismo.
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-4=Casualmente, también cree que todos los medios son controlados por el Gobierno.
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-5=¿Tiene razón?
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-6=Bueno... sí, hasta cierto punto.
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-7=Solo influimos en asuntos import...
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-8=¡¿Qué hiciste?! ¡Pedazo de...!
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-9=¡Espera! Yo... ¡no hice nada malo!
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-10=¡¿Nada malo?!
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-11=¡¡¡Me arruinaste la vida!!!
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-12=¡Aaargh!
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-13=¡Cálmense!
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-14=Yo... ¡nunca tomé ninguna decisión que te involucrara!
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-15=¡Te recordaría! ¡Y nunca hubiera aceptado reunirme contigo!
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-16=Estoy de acuerdo. Yo también me hubiera alejado...
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-17=¡Cierra el pico! 
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-18=¡¿Entonces quién?!
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-19=Pudo haber sido otro miembro... de El Triángulo...
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-20=Pft. Qué casualidad.
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-21=¡El mandamás aquí presente resulta que nunca es el responsable de nada!
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-22=P-por favor...
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-23=Siempre he querido ayudar... ¡Dar lo mejor de mí!
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-24=Le creo.
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-25=¡Ja! Verás cómo te equivocas.
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-26=Sigamos. No es demasiada información, pero vamos por buen camino.
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT-1=Dee. Por si no te has dado cuenta...
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT-2=...ambos han sido el blanco de algún miembro de El Triángulo.
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-1=Dee. Por si no te has dado cuenta...
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-2=...ambos hemos sido perseguidos por un miembro de El Triángulo.
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-3=Si quieres que resolvamos esto, más nos vale cooperar.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-4=...
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-5=Tal vez es momento de sacar a la luz tu investigación.
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-6=¿De qué trataba exactamente?
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-7=Podría ayudarnos a comprender lo que está pasando.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-8=De acuerdo.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-9=Durante años, he presenciado qué tan disfuncional es nuestra sociedad.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-10=Y ahora que sé cómo funciona nuestro gobierno... entiendo el por qué.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-11=El asunto más grave y por mucho, es el que concierne a los prisioneros de los Slums.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-12=Durante los últimos meses, todos y cada uno de los prisioneros fueron sentenciados a muerte.
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-13=¿Todos ellos?
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-14=Contrasté mis fuentes una y otra vez.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-15=Ningún prisionero volvió a dar señales de vida tras ser encarcelado.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-16=No importa si estaba en una prisión de máxima seguridad o simplemente en custodia. El resultado era el mismo.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-17=Simplemente... desaparecieron de la faz de la Tierra.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-18=Por si fuera poco, a esto le acompañó un aumento exponencial de cuerpos incinerados o reciclados durante el mismo periodo de tiempo.
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-19=Así que no es difícil comprender qué es lo que les sucedió.
+# Gherkin
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-20=E-eso... ¡no puede ser...!
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-21=¿Algo que añadir, Doc?
+# Gherkin
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-22=...
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-1=Una vez más, Doc...
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-2=Sé lo que va a decir, así que déjeme interrumpirlo.
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-3=En efecto, El Triángulo tiene poder judicial sobre el destino de los prisioneros.
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-4=Después de cada investigación, se nos entrega toda la información necesaria para tomar la decisión final...
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-5=¿Entre la vida y la muerte?
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-6=Sí, pero...
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-7=¡Lo que dice ella no puede ser cierto!
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-8=¡Tengo pruebas!
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-9=¡Explíquese!
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-10=Casi siempre he votado que no.
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-11=¡Y un único voto negativo debería ser suficiente para evitar la pena capital! ¡Lo he explicado antes!
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-12=¿Pero cómo puedes estar tan seguro?
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-13=¡¿Te has levantado alguna vez de tu silla para comprobar las consecuencias de tus actos?!
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-14=N... No exactamente...
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-15=¡Un momento!
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-16=Todos los prisioneros... ¿son sentenciados a muerte?
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-17=Sí. En promedio, son ejecutados dos días después de su encarcelamiento.
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-18=¡Dos días!
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-19=Si eso es cierto... ¡eso significa...!
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-20=¿Eh? ¿Qué sucede?
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-21=¡Habla!
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_SIN_DANGER-1=Dee. ¿Recuerdas que tu esposo me contrató para una investigación?
+# Brok
+PC19B_CLUE_SIN_DANGER-2=Pues... no salió demasiado bien.
+# Dee
+PC19B_CLUE_SIN_DANGER-3=¿Y eso significa que...?
+# Brok
+PC19B_CLUE_SIN_DANGER-4=Está en la cárcel. En el Departamento de Policía.
+# Dee
+PC19B_CLUE_SIN_DANGER-5=¡N-no...!
+# Dee
+PC19B_CLUE_SIN_DANGER-6=¡¿Desde cuándo?!
+# Brok
+PC19B_CLUE_SIN_DANGER-7=Desde hace unos días...
+# Dee
+PC19B_CLUE_SIN_DANGER-8=¡Debo irme!
+# Dee
+PC19B_CLUE_SIN_DANGER-9=¡¡¡YA!!!
+# Brok
+PC19B_CLUE_SIN_DANGER-10=¡No puedes!
+# Dee
+PC19B_CLUE_SIN_DANGER-11=¡Los bots van tras de ti! ¡No tras de mí!
+# Brok
+PC19B_CLUE_SIN_DANGER-12=¡Hay cientos rodeándonos! ¡Y has atacado a algunos!
+# Brok
+PC19B_CLUE_SIN_DANGER-13=¡Te harán picadillo de todas formas!
+# Dee
+PC19B_CLUE_SIN_DANGER-14=¡No puedo quedarme de brazos cruzados!
+# Brok
+PC19B_CLUE_SIN_DANGER-15=¿Y qué harás cuando llegues allí?
+# Brok
+PC19B_CLUE_SIN_DANGER-16=¡Los guardias jamás te dejarán llegar hasta él, y mucho menos escapar!
+# Brok
+PC19B_CLUE_SIN_DANGER-17=Además...
+# Brok
+PC19B_CLUE_SIN_DANGER-18=...también tengo parte de culpa.
+# Brok
+PC19B_CLUE_SIN_DANGER-19=Podría haberlo liberado...
+# Brok
+PC19B_CLUE_SIN_DANGER-20=¡Conozco el lugar! ¡Te ayudaré!
+# Dee
+PC19B_CLUE_SIN_DANGER-21=...
+# Dee
+PC19B_CLUE_SIN_DANGER-22=Espero no arrepentirme de esto.
+#----------------------------------------------------
+# Dee
+PC19B_INTERROGATION_OVER-1=¡Primero necesitamos una forma de escapar!
+# Brok
+PC19B_INTERROGATION_OVER-2=¡Estoy en ello!
+# Gherkin
+PC19B_INTERROGATION_OVER-3=¿Y qué hay de mí?
+# Brok
+PC19B_INTERROGATION_OVER-4=¡Use su cerebro! ¡Cualquier ayuda es buena!
+# Gherkin
+PC19B_INTERROGATION_OVER-5=Oooh... Pensaba que me iba a soltar.
+#----------------------------------------------------
+# Brok
+PC19B_DEE_AFTER-1=¿Has encontrado algo?
+# Dee
+PC19B_DEE_AFTER-2=Nada útil, me temo...
+# Brok
+PC19B_DEE_AFTER-3=No te preocupes. ¡Estoy en ello!
+# Dee
+PC19B_DEE_AFTER-4=Gracias...
+# Brok
+PC19B_DEE_AFTER-5=(Se la ve afectada. Será mejor que yo me ocupe.)
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_INV_DEFAULT-1=Tome esto.
+# Gherkin
+PC19B_GHERKIN_INV_DEFAULT-2=¿Para qué? Quédeselo usted.

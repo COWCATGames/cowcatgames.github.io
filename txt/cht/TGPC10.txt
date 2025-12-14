@@ -1,0 +1,2965 @@
+#-------------------------------
+#=SCHOOL INSIDE
+#-------------------------------
+
+#----- Interactions --------
+
+#----- Graff's Trial text --------
+PC_TRIAL_WELCOME=測驗——重生紀元3035年
+PC_TRIAL_PAGES=每頁各含一道問題，請按按鈕翻頁！
+PC_TRIAL_SEND=完成答題後，請按這裏交卷！
+PC_TRIAL_SENT=交卷完畢！
+
+
+#----- Topics --------
+PC10_DESK_CHEATCHOICE=作弊？
+PC10_SCREEN_SENDCHOICE=發送已完成的答卷？
+
+# It is recommended to check the instructions for this part.
+
+PC10_Q1=某個三角機快遞員意外撞傷了一位公民，你應該如何處理？
+PC10_Q1_1=報警
+PC10_Q1_2=進行急救
+PC10_Q1_3=什麽也不做
+PC10_Q1_4=讓其解脫
+
+PC10_Q2=數字填空題：#5 - 12 - 7 - 16 - 9 - 20 - .. - ..
+
+PC10_Q3=如果薩姆的女兒是你女兒的母親，那麽你是薩姆的什麽人？
+PC10_Q3_1=姪子
+PC10_Q3_2=母親
+PC10_Q3_3=兄弟
+PC10_Q3_4=三角機私人助理
+PC10_Q3_5=兒子
+PC10_Q3_6=女婿
+PC10_Q3_7=薩姆本人
+
+PC10_Q4=請輸入正確的詞。
+PC10_Q4B=1. 比活著更好。#2. 比永無止境的磨難更糟糕。#3. 貧民擁有它。#4. 市民需要它。#5. 我們要是吃它，就會死去。
+
+
+#Rainbow colors, next should be purple. In French : RO - OR - JA - VE - BL - ..
+PC10_Q5=字母填空題：#紅 - 橙 - 黃 - 綠 - 藍 - 靛 - ..
+
+
+PC10_Q6=你最要好的朋友和你不認識的十位陌生人同時身處危險，你時間只夠拯救其中一方，你會選擇救誰？
+PC10_Q6_1=你的朋友
+PC10_Q6_2=十位陌生人
+PC10_Q6_3=誰都不救
+
+PC10_Q7=你在未成年時父母就過世了，你什麽時候才能繼承他們的遺産？
+PC10_Q7_1=14歲
+PC10_Q7_2=16歲
+PC10_Q7_3=15歲
+PC10_Q7_4=18歲
+PC10_Q7_5=22歲
+
+PC10_Q8=獨立重生日發生在什麽時候？
+PC10_Q8_1=重生紀元3026年
+PC10_Q8_2=重生紀元3035年
+PC10_Q8_3=重生紀元3030年
+
+PC10_Q9=天呀！你的毛髮開始脫落了！你該服用什麽藥物來治療？
+PC10_Q9_1=終飽食囊
+PC10_Q9_2=萌髮946
+PC10_Q9_3=黑熊馬力夯
+
+#Get either 0, +1 or -1
+PC10_Q10=請估算自己在此次測驗中的成績。（25分為滿分）
+
+PC10_Q99=謝謝。
+
+# Klay asks Graff what his machine is
+PC10_STORY100_CHOICEKLAY=告訴克萊？
+PC10_STORY100_TELL=告訴他
+PC10_STORY100_REFUSE=拒絕
+
+PC10_STORY100_FIGHT=扁他
+PC10_STORY100_LETITGO=算了
+
+PC10_STORY100_CHOICEINSIST=你打算怎麼辦？
+PC10_STORY100_PROTECT=公平競爭
+PC10_STORY100_BREAK=破壞對方的作品
+
+
+PC10_VRLEARNER_CHOICE=掌握一切關於……
+PC10_VRLEARNER_ANTS=螞蟻的資訊
+PC10_VRLEARNER_BOTS=機器人的資訊
+
+TOPIC_FIXING=維修
+TOPIC_PROTECTION=防護
+TOPIC_MESS=破壞
+
+GOT_FINGERPRINT=指紋！（應該是）
+GOT_FORCEFIELD=力場基座！
+
+PC10_DIRECTOR_EXCUSEHIM=幫格拉夫開恩
+PC10_DIRECTOR_BLAMEBROK=攬下過錯
+
+
+PC10_REVEAL_CHOICE=告發克萊？
+
+GOT_MUSEUMKEY=老式鑰匙！
+
+#----- Dialog --------
+
+
+#These replies are ONLY for alternate replies for some translations.
+PC10_Q5_1=灰
+PC10_Q5_2=棕
+PC10_Q5_3=白
+#The correct reply is this one （number 4）
+PC10_Q5_4=紫
+PC10_Q5_5=黑
+PC10_Q5_6=金
+
+PC10_Q4ALT=有什麽是比成為市民更好的事？
+PC10_Q4_1=財富
+PC10_Q4_2=在海裏遊泳
+#This is the correct reply （number 3）
+PC10_Q4_3=沒有
+PC10_Q4_4=權力
+PC10_Q4_5=知識
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Day 1 - Graff arrives at school （first time we control him）
+# *****************************************************************
+# Graff
+PC10_INTRO1-1=……
+# Graff
+PC10_INTRO1-2=哇！我要遲到了！
+#----------------------------------------------------
+# Graff
+PC10_INTRO2-1=……
+# Stubot
+PC10_INTRO2-2=請坐
+# Stubot
+PC10_INTRO2-3=校長會在3分30秒後抵達
+# Stubot
+PC10_INTRO2-4=你可以先在自己的桌子上寫作業
+#----------------------------------------------------
+# Graff
+PC10_INTRO3-1=……
+# Graff
+PC10_INTRO3-2=噓！
+# Graff
+PC10_INTRO3-3=奧特，我在這！
+# Ott
+PC10_INTRO3-4=……？
+# Graff
+PC10_INTRO3-5=怎麽回事？其他人呢？
+# Ott
+PC10_INTRO3-6=我也不清楚……
+# Ott
+PC10_INTRO3-7=學徒機器人說芬頓老師升遷到別的意識中心了。
+# Graff
+PC10_INTRO3-8=……
+#----------------------------------------------------
+# Ott
+PC10_INTRO3B-1=你不覺得奇怪嗎？
+# Graff
+PC10_INTRO3B-2=奇怪什麽？
+# Ott
+PC10_INTRO3B-3=就是……
+# Ott
+#Polyrectical is an invented term meant to sound complex, feel free to change to whatever you want
+PC10_INTRO3B-4=一開始是我們的體育課老師突然患上憂鬱症……
+# Ott
+#Same here
+PC10_INTRO3B-5=接著是地理課老師的健康出現問題，然後現在輪到數學老師被調往別的學校……
+# Ott
+PC10_INTRO3B-6=我們的所有人類教師都被替換成了機器人教師。
+# Graff
+PC10_INTRO3B-7=……
+# Graff
+PC10_INTRO3B-8=哈！
+# Graff
+PC10_INTRO3B-9=這根本就只是巧合而已，你看太多懸疑電影了！
+# Graff
+PC10_INTRO3B-10=他們使用機器人純粹是為了節省成本。
+# Graff
+PC10_INTRO3B-11=隨著時代的改變，機器人會降低成本，而我們人類則會降低效率。
+# Ott
+PC10_INTRO3B-12=你不會感到擔憂嗎？
+# Graff
+PC10_INTRO3B-13=雖然這是無奈的事實……
+# Graff
+PC10_INTRO3B-14=但我們該感激還能來這裏上學。
+# Graff
+PC10_INTRO3B-15=難不成你想要去那些貧民區的意識中心上學嗎？
+# Graff
+PC10_INTRO3B-16=這裏是我們成為真正市民，生活在穹頂之下的唯一途徑。
+# Ott
+PC10_INTRO3B-17=我懂，我也是花了很大功夫才成功進入這裏的。
+# Ott
+PC10_INTRO3B-18=但是……
+#----------------------------------------------------
+# Director
+PC10_INTRO4-1=進去吧，寶貝。去找個地方坐。
+# Klay
+PC10_INTRO4-2=喂！我已經說過了！
+# Klay
+PC10_INTRO4-3=在別人面前不要這樣叫我！
+#----------------------------------------------------
+# Director
+PC10_INTRO5-1=各位同學，今天我要宣布一件很重要的事情。
+# Director
+PC10_INTRO5-2=正如學徒機器人所言，芬頓老師已高升到別的學校，不會繼續在這裏任教了。
+# Director
+PC10_INTRO5-3=這件事連同之前的其他事情對我們學校的管理産生了一些重大變化。
+# Director
+PC10_INTRO5-4=因此你們的期末測驗將會被提前到本周進行，準確來說是馬上開始。
+# Graff
+PC10_INTRO5-5=什麽？！
+# Ott
+PC10_INTRO5-6=現在就測驗？可是……
+# Klay
+PC10_INTRO5-7=矮冬瓜，你是害怕不及格嗎？
+# Graff
+PC10_INTRO5-8=閉嘴，機器小孩！
+# Director
+PC10_INTRO5-9=大家請安靜！
+# Director
+PC10_INTRO5-10=測驗一共會進行三天。
+# Director
+PC10_INTRO5-11=另外，你們在科學展覽會的發明也會被評分並列入測驗的總成績。
+# Director
+PC10_INTRO5-12=因為只有你們四個選擇報考此測驗，所以你們將會被列為一組。
+#----------------------------------------------------
+# Director
+PC10_INTRO6-1=這位學徒機器人將會作為評估你們表現的標準。
+# Ott
+PC10_INTRO6-2=什麽意思？
+# Director
+PC10_INTRO6-3=如果你們能取得等於或高於學徒機器人的成績，就算及格。
+# Director
+PC10_INTRO6-4=不過要記住，這不是一場競賽。
+# Graff
+PC10_INTRO6-5=是是是……
+# Director
+PC10_INTRO6-6=測驗一共分為四個部分，各占25分，即總分100分。
+# Director
+PC10_INTRO6-7=第一部分就是你們現在將會進行的課堂練習。
+# Director
+PC10_INTRO6-8=有什麽問題嗎？
+# Director
+PC10_INTRO6-9=奧特？
+# Ott
+PC10_INTRO6-10=我有個大問題。
+# Ott
+PC10_INTRO6-11=從明天起，我得去警察局實習。
+# Director
+PC10_INTRO6-12=這個我知道，所以我們已經安排好了。
+# Director
+PC10_INTRO6-13=你將會在今晚提前進行明天的測驗。
+# Ott
+PC10_INTRO6-14=什麽？可是……
+# Director
+PC10_INTRO6-15=沒有可是，請記住！
+# Director
+PC10_INTRO6-16=像你們這樣的孩子要想被接納為市民就必須付出比別人多幾倍的努力。
+# Director
+PC10_INTRO6-17=你們必須要做好付出一切代價的準備。
+# Director
+PC10_INTRO6-18=不過你放心，不會有問題的！
+# Ott
+PC10_INTRO6-19=……
+# Director
+PC10_INTRO6-20=好了，測驗馬上開始。
+# Graff
+PC10_INTRO6-21=（說考就考，我感覺自己的壓力已經快爆表了……）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking the room
+# *****************************************************************
+# Graff
+#Looking at the door
+PC10_DESK_EXIT1-1=（這麽近……又是那麽的遠。）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - His written exam
+# *****************************************************************
+# Graff
+PC10_INSTRUCTIONS-1=“開始前請按此按鈕閱讀測驗規則。”
+# Graff
+PC10_INSTRUCTIONS-2=“完成答題後，請按右上方的按鈕交卷。”
+# Graff
+PC10_INSTRUCTIONS-3=“祝你考試順利！”
+#----------------------------------------------------
+# Unknown
+PC10_RULES-1=“本年度（重生紀元3035年）測驗規則”
+# Unknown
+PC10_RULES-2=“此測驗和所有相關的模擬考試都屬於你申請成為一級公民（市民）過程的一部分。”
+# Unknown
+PC10_RULES-3=“因此，此測驗嚴格要求僅今年成年（16歲）的貧民區孩子可參加，違者將被退學。”
+# Unknown
+PC10_RULES-4=“- 請尊重你的夥伴，禁止破壞他人財物。（否則將立刻退學）”
+# Unknown
+PC10_RULES-5=“- 多次曠課。（一等處罰: 扣40分）”
+# Unknown
+PC10_RULES-6=“- 禁止作弊。（二等處罰: 每次扣5分）”
+# Unknown
+PC10_RULES-7=“- 測試期間禁止使用手機。（三等處罰: 扣2分）”
+# Unknown
+PC10_RULES-8=“除此之外，任何類型的手段都被允許，校方鼓勵學生使用一切手段為自己爭取更美好的前途。”
+# Unknown
+PC10_RULES-9=“NMER科技版權所有”
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking the room
+# *****************************************************************
+# Graff
+PC10_DESK_OTT1-1=（我最要好的朋友。）
+# Graff
+PC10_DESK_OTT1-2=（應該說……是我唯一的朋友。）
+# Graff
+PC10_DESK_OTT1-3=（奧特並非班上最優秀的學生，不過他應該會知道答案吧……？）
+#----------------------------------------------------
+# Graff
+PC10_DESK_OTT2-1=（我最要好的朋友……）
+#----------------------------------------------------
+# Graff
+PC10_DESK_CHEATNO-1=（我怎麽可以有這種想法！）
+# Graff
+PC10_DESK_CHEATNO-2=（我這是怎麽了？！我不能失去自己唯一的朋友。）
+#----------------------------------------------------
+# Graff
+PC10_DESK_CHEATYES-1=（理論上作弊是不可能的，但他們遺漏了一件事！）
+# Graff
+PC10_DESK_CHEATYES-2=（我的防護屏障右側位置有瑕疵，我可以通過那個小洞偷窺。）
+# Unknown
+PC10_DESK_CHEATYES-3=從現在開始，每次想作弊時請點擊奧特。
+#----------------------------------------------------
+# Graff
+#Graff attempts to cheat
+PC10_DESK_OTT_DOCHEAT1-1=（就看一眼……！）
+# Graff
+PC10_DESK_OTT_DOCHEAT1-2=（……）
+# Graff
+PC10_DESK_OTT_DOCHEAT1-3=（看來奧特的第一道題答案是「什麽也不做」……）
+# Graff
+PC10_DESK_OTT_DOCHEAT1-4=（奇怪。）
+#----------------------------------------------------
+# Graff
+PC10_DESK_OTT_DOCHEAT2-1=（唔……）
+# Graff
+PC10_DESK_OTT_DOCHEAT2-2=（第二道題的第一個數字，他寫的是13……）
+# Graff
+PC10_DESK_OTT_DOCHEAT2-3=（可惡，第二個數字看不清楚。）
+#----------------------------------------------------
+# Graff
+PC10_DESK_OTT_DOCHEAT3-1=（唔……）
+# Graff
+PC10_DESK_OTT_DOCHEAT3-2=（第三道題是……「女婿」？）
+# Graff
+PC10_DESK_OTT_DOCHEAT3-3=（別忘了奧特並非班上最優秀的學生。）
+#----------------------------------------------------
+# Graff
+#Actually the word "nothing"!
+PC10_DESK_OTT_DOCHEAT4-1=（奧特的第四道題的答案是「沒有」……）
+#----------------------------------------------------
+# Graff
+PC10_DESK_OTT_DOCHEAT5-1=（第六道題他選擇救自己的朋友……）
+# Graff
+PC10_DESK_OTT_DOCHEAT5-2=（奧特……）
+#----------------------------------------------------
+# Ott
+PC10_DESK_OTT_DOCHEAT6-1=……
+# Graff
+PC10_DESK_OTT_DOCHEAT6-2=（吞口水！）
+# Graff
+PC10_DESK_OTT_DOCHEAT6-3=（我……好像被奧特發現了……）
+# Graff
+PC10_DESK_OTT_DOCHEAT6-4=（還是別做這種事吧……）
+#----------------------------------------------------
+# Graff
+PC10_DESK_OTT_DOCHEAT7-1=（不行……我不能這麽做了……）
+#----------------------------------------------------
+# Graff
+PC10_DESK_KLAY1-1=（校長的兒子……然而校長是個機器人。）
+# Graff
+PC10_DESK_KLAY1-2=（別問我這是怎麽回事！）
+# Graff
+PC10_DESK_KLAY1-3=（我只知道……我很討厭他。）
+#----------------------------------------------------
+# Graff
+PC10_DESK_GRAFF1-1=……
+# Director
+PC10_DESK_GRAFF1-2=格拉夫？你要去哪？
+# Director
+PC10_DESK_GRAFF1-3=你的考卷完成了嗎？
+# Graff
+PC10_DESK_GRAFF1-4=呃……還沒。
+# Graff
+PC10_DESK_GRAFF1-5=我坐到身體都快散了。
+# Director
+PC10_DESK_GRAFF1-6=快回去坐下，否則就扣你分。
+# Graff
+PC10_DESK_GRAFF1-7=唉……好吧……
+#----------------------------------------------------
+# Graff
+PC10_DESK_STUBOT1-1=（我們的成績將會按照……這位機器人的表現來衡量……？）
+# Graff
+PC10_DESK_STUBOT1-2=（要不是擔心會被退學，大家肯定會聯手除掉它。）
+#----------------------------------------------------
+# Graff
+PC10_DESK_VRLEARNER1-1=（這個東西我稱之為“洗腦設備”。）
+# Graff
+PC10_DESK_VRLEARNER1-2=（年紀小時這東西的確很有效……能夠讓我們快速背完整本書。）
+# Graff
+PC10_DESK_VRLEARNER1-3=（不過效果卻不持久，只能在腦海中記得幾個小時。）
+# Graff
+PC10_DESK_VRLEARNER1-4=（我沒怎麽使用過它，因為痛得要命……）
+#----------------------------------------------------
+# Graff
+PC10_DESK_VRLEARNER2-1=（不行！在測驗中使用是違規的。）
+#----------------------------------------------------
+# Graff
+PC10_DESK_DIRECTOR1-1=（我對校長不怎麽排斥，畢竟有很多機器人還要惡劣得多了，它……她只是盡她本份而已。）
+# Graff
+PC10_DESK_DIRECTOR1-2=（只是很奇怪她竟然是女性，很少見到女性機器人。）
+#----------------------------------------------------
+# Graff
+PC10_DESK_VIEW1-1=（這裏果然是貧民區最好的區域，很慶幸能夠在這讀書。）
+# Graff
+PC10_DESK_VIEW1-2=（很期待取得畢業證書然後重新……成為市民！）
+#----------------------------------------------------
+# Graff
+PC10_DESK_INVENTIONA1-1=（這一定是克萊的發明，好厲害！）
+#----------------------------------------------------
+# Graff
+PC10_DESK_INVENTIONB1-1=（這是參賽下午的科學展覽會的各種發明作品。）
+# Graff
+PC10_DESK_INVENTIONB1-2=（早知道這部分會評分的話……）
+# Graff
+PC10_DESK_INVENTIONB1-3=（我就不會做的這麽……破爛了。）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff submits his exam
+# *****************************************************************
+# Graff
+PC10_SENDTRIAL_NOTHING-1=（感覺好頭痛……）
+#----------------------------------------------------
+# Graff
+PC10_SENDTRIAL_TOOEASY-1=（太簡單了！）
+#----------------------------------------------------
+# Graff
+PC10_SENDTRIAL_WAIT-1=（看來其他人還沒答完。）
+#----------------------------------------------------
+# Graff
+PC10_SENDTRIAL_NORMAL-1=（應該會及格吧……）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First exam results
+# *****************************************************************
+# Director
+PC10_SENDTRIAL_RESULT-1=很好。
+# Director
+PC10_SENDTRIAL_RESULT-2=成績會在幾秒鐘後呈現。
+# Graff
+PC10_SENDTRIAL_RESULT-3=（天呀……我又感到壓力山大……）
+#----------------------------------------------------
+# Director
+PC10_SENDTRIAL_RESULT_NORMAL-1=沒有人成功獲得滿分，不過……
+#----------------------------------------------------
+# Director
+PC10_SENDTRIAL_RESULT_KLAY-1=克萊因為最快交卷所以獲得2分獎勵。
+# Klay
+PC10_SENDTRIAL_RESULT_KLAY-2=呵。
+#----------------------------------------------------
+# Director
+PC10_SENDTRIAL_RESULT_GRAFFBONUS-1=格拉夫，你也一樣，恭喜。
+#----------------------------------------------------
+# Director
+PC10_SENDTRIAL_RESULT_NOTHING-1=格拉夫……你是怎麽了？
+# Graff
+PC10_SENDTRIAL_RESULT_NOTHING-2=我……呃……
+# Klay
+PC10_SENDTRIAL_RESULT_NOTHING-3=哈哈！你遜斃了。
+#----------------------------------------------------
+# Ott
+PC10_SENDTRIAL_RESULT_TOOEASY-1=各位都表現得很好！
+#----------------------------------------------------
+# Director
+PC10_SENDTRIAL_RESULT_EARLY-1=不過，格拉夫……你因為交卷太快所以被扣10分。
+# Graff
+PC10_SENDTRIAL_RESULT_EARLY-2=什麽？！這不公平！
+#----------------------------------------------------
+# Director
+PC10_SENDTRIAL_RESULT_EARLY2-1=沒有人可以那麽快完成考試。
+# Graff
+PC10_SENDTRIAL_RESULT_EARLY2-2=可是……
+# Klay
+PC10_SENDTRIAL_RESULT_EARLY2-3=哈哈！喜歡作弊是吧？
+# Graff
+PC10_SENDTRIAL_RESULT_EARLY2-4=你給我閉嘴！
+#----------------------------------------------------
+# Director
+PC10_SENDTRIAL_RESULT_AFTER-1=參考答案將會在今天傍晚發送到你們的手機。
+# Director
+PC10_SENDTRIAL_RESULT_AFTER-2=今天的測驗到此為止。
+# Director
+PC10_SENDTRIAL_RESULT_AFTER-3=展覽會將在下午5點同樣在此舉辦。
+# Director
+PC10_SENDTRIAL_RESULT_AFTER-4=謝謝大家。
+#----------------------------------------------------
+# Ott
+PC10_SENDTRIAL_AFTER_FAIL-1=哈，這次的測驗還行……
+# Graff
+PC10_SENDTRIAL_AFTER_FAIL-2=你說得倒輕鬆……我完蛋了。
+# Ott
+PC10_SENDTRIAL_AFTER_FAIL-3=別灰心！你也沒差多少。
+# Ott
+PC10_SENDTRIAL_AFTER_FAIL-4=我知道你的實力，格拉夫，你可以辦到的！
+# Graff
+PC10_SENDTRIAL_AFTER_FAIL-5=……謝謝，奧特。
+# Graff
+PC10_SENDTRIAL_AFTER_FAIL-6=你也要振作！只要全力以赴，我們肯定能夠通過！
+# Ott
+PC10_SENDTRIAL_AFTER_FAIL-7=這才對嘛！
+#----------------------------------------------------
+# Ott
+PC10_SENDTRIAL_AFTER_DISASTER-1=對不起，格拉夫……
+# Graff
+PC10_SENDTRIAL_AFTER_DISASTER-2=別說了……
+# Graff
+PC10_SENDTRIAL_AFTER_DISASTER-3=這簡直是一場災難……不過我也是咎由自取。
+# Ott
+PC10_SENDTRIAL_AFTER_DISASTER-4=你不要放棄！只要還活著，一切都有可能！
+# Graff
+PC10_SENDTRIAL_AFTER_DISASTER-5=……
+# Graff
+PC10_SENDTRIAL_AFTER_DISASTER-6=對，希望如此……
+#----------------------------------------------------
+# Ott
+PC10_SENDTRIAL_AFTER_CHEAT-1=沒想到你竟然這麼做……
+# Graff
+PC10_SENDTRIAL_AFTER_CHEAT-2=你說什麽……？
+# Ott
+PC10_SENDTRIAL_AFTER_CHEAT-3=別裝傻了，我都看見了。
+# Ott
+PC10_SENDTRIAL_AFTER_CHEAT-4=你的實力比我好……你怎麽還做這種事……？
+# Graff
+PC10_SENDTRIAL_AFTER_CHEAT-5=我……
+# Graff
+PC10_SENDTRIAL_AFTER_CHEAT-6=對不起……我一時失心慌。
+# Ott
+PC10_SENDTRIAL_AFTER_CHEAT-7=……
+# Ott
+PC10_SENDTRIAL_AFTER_CHEAT-8=我理解你。
+# Ott
+PC10_SENDTRIAL_AFTER_CHEAT-9=畢竟我們的前途全靠這次測驗……我們的身心都承受巨大壓力。
+# Graff
+PC10_SENDTRIAL_AFTER_CHEAT-10=是的……
+#----------------------------------------------------
+# Ott
+PC10_SENDTRIAL_AFTER_BEST-1=好棒！
+# Graff
+PC10_SENDTRIAL_AFTER_BEST-2=謝謝，你也不賴。
+# Graff
+PC10_SENDTRIAL_AFTER_BEST-3=我還以為全部都答對了……可是依然無法超越克萊。
+# Ott
+PC10_SENDTRIAL_AFTER_BEST-4=誰管他！
+# Ott
+PC10_SENDTRIAL_AFTER_BEST-5=你會獲得畢業證書成為市民的。
+# Graff
+PC10_SENDTRIAL_AFTER_BEST-6=我們要一起通過！
+# Ott
+PC10_SENDTRIAL_AFTER_BEST-7=那是當然！
+#----------------------------------------------------
+# Graff
+PC10_SENDTRIAL_OVER-1=（……）
+# Graff
+PC10_SENDTRIAL_OVER-2=（很好奇布羅格會做何反應。）
+# Graff
+PC10_SENDTRIAL_OVER-3=（他現在肯定是忙著當偵探，真羨慕他。）
+# Graff
+PC10_SENDTRIAL_OVER-4=（……）
+# Graff
+PC10_SENDTRIAL_OVER-5=喂，奧特！你等等我！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to use phone
+# *****************************************************************
+# Graff
+PC10_GRAFF_CALL_NONETWORK-1=（不行……這裏無法連網，校方是不容許使用手機作弊的。）
+#----------------------------------------------------
+# Director
+PC10_GRAFF_CALL_FORBIDDEN-1=格拉夫！考試中嚴禁使用手機！
+# Graff
+PC10_GRAFF_CALL_FORBIDDEN-2=哎呀！
+# Director
+PC10_GRAFF_CALL_FORBIDDEN-3=扣兩分。
+# Graff
+PC10_GRAFF_CALL_FORBIDDEN-4=不過……這裏沒訊號……
+# Director
+PC10_GRAFF_CALL_FORBIDDEN-5=不準狡辯。
+# Klay
+PC10_GRAFF_CALL_FORBIDDEN-6=哈哈！遜咖。
+# Graff
+PC10_GRAFF_CALL_FORBIDDEN-7=呃……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Ott and Graff are preparing for the science fair
+# *****************************************************************
+# Graff
+PC10_STORY100_A-1=搞定。
+# Ott
+PC10_STORY100_A-2=我的也設置好了！
+#----------------------------------------------------
+# Ott
+PC10_STORY100_A2-1=話說，格拉夫……我有點好奇。
+# Ott
+PC10_STORY100_A2-2=你的這個發明物有什麽功能？
+# Graff
+PC10_STORY100_A2-3=哈哈！這個東西呀……
+# Graff
+PC10_STORY100_A2-4=……能夠解決我們的水源短缺問題！在一定程度上。
+# Ott
+PC10_STORY100_A2-5=哇！唔……難道說！
+# Ott
+PC10_STORY100_A2-6=這是個……
+# Ott
+PC10_STORY100_A2-7=濕氣回收器？
+# Graff
+PC10_STORY100_A2-8=差不多！
+# Ott
+PC10_STORY100_A2-9=那麽……
+# Ott
+PC10_STORY100_A2-10=它可以把雨水轉化成飲用水嗎？
+# Graff
+PC10_STORY100_A2-11=不對！但是你猜得很接近了！
+# Ott
+PC10_STORY100_A2-12=那麽！你現在可以告訴我了嗎？
+# Graff
+PC10_STORY100_A2-13=你先說！
+# Ott
+PC10_STORY100_A2-14=好吧。
+#----------------------------------------------------
+# Ott
+PC10_STORY100_B-1=這個也是用來解決日常生活上的麻煩！
+# Ott
+PC10_STORY100_B-2=只是……相對來說沒那麽重要。
+# Graff
+PC10_STORY100_B-3=那是襪子嗎？
+# Ott
+PC10_STORY100_B-4=是的。
+# Ott
+PC10_STORY100_B-5=這是襪子自動配對機！
+# Ott
+PC10_STORY100_B-6=把所有襪子丟進去，它就能夠按照顔色和尺寸自動把襪子配成一對！
+# Graff
+PC10_STORY100_B-7=這……真的實用嗎？
+# Ott
+PC10_STORY100_B-8=哈哈，我爸媽總是逼我幫他們洗衣服，累死人了！
+# Graff
+PC10_STORY100_B-9=等一下，這似乎不符合展覽會的主題吧？
+# Ott
+PC10_STORY100_B-10=主題？
+# Graff
+PC10_STORY100_B-11=對呀，「轉化」。
+# Ott
+PC10_STORY100_B-12=什麽？！展覽會竟然有主題？！
+# Graff
+PC10_STORY100_B-13=當然……
+# Ott
+PC10_STORY100_B-14=糟了……！那就代表我會被扣……至少一半的分數！
+# Ott
+PC10_STORY100_B-15=我該怎麽辦……
+#----------------------------------------------------
+# Klay
+PC10_STORY100_C-1=喂，醜小豬和小廢貓！你們旁邊這個是什麽垃圾東西啊？
+# Ott
+PC10_STORY100_C-2=……
+# Klay
+PC10_STORY100_C-3=……不是吧！別跟我說……這是你們的發明物？！
+# Graff
+PC10_STORY100_C-4=滾開，克萊！現在沒空跟你屁話！
+# Klay
+PC10_STORY100_C-5=喲！原來真的是你的發明物呀！
+# Klay
+PC10_STORY100_C-6=不過也不意外啦，垃圾孩子造出來的自然也是垃圾了！
+# Ott
+PC10_STORY100_C-7=你在說誰？！
+# Klay
+PC10_STORY100_C-8=不過……我還是很好奇。
+# Klay
+PC10_STORY100_C-9=正所謂知己知彼，百戰不殆對吧？
+# Klay
+PC10_STORY100_C-10=小貓咪，快告訴我吧！你這個垃圾是幹嘛的？
+# Graff
+PC10_STORY100_C-11=想得美。
+# Klay
+PC10_STORY100_C-12=哎喲，算了吧！反正我遲早都會知道的。
+# Graff
+PC10_STORY100_C-13=那就慢慢等吧。
+#----------------------------------------------------
+# Ott
+PC10_STORY100_D-1=啊！
+# Klay
+PC10_STORY100_D-2=快說，否則我扭斷他的脖子！
+# Graff
+PC10_STORY100_D-3=喂！你瘋了嗎？！
+# Graff
+PC10_STORY100_D-4=快住手！你會傷到他的！
+# Klay
+PC10_STORY100_D-5=我可以住手……
+# Klay
+PC10_STORY100_D-6=只要你告訴我這個垃圾玩意有什麽功能。
+#----------------------------------------------------
+# Graff
+PC10_STORY100_TELL-1=你贏了。
+# Graff
+PC10_STORY100_TELL-2=這個機器能夠將尿液轉化成飲用水。
+# Klay
+PC10_STORY100_TELL-3=……
+# Ott
+PC10_STORY100_TELL-4=噗！
+# Klay
+PC10_STORY100_TELL-5=你是認真的嗎？！
+# Klay
+PC10_STORY100_TELL-6=哈哈哈……！尿液……飲用水？！
+# Klay
+PC10_STORY100_TELL-7=太……太荒唐了！
+# Graff
+PC10_STORY100_TELL-8=這會成功的，你走著瞧吧。
+# Klay
+PC10_STORY100_TELL-9=等一下……你是打算……讓人試用這部機器？！
+# Klay
+PC10_STORY100_TELL-10=那可是尿呀！
+# Klay
+PC10_STORY100_TELL-11=哈哈哈！
+# Graff
+PC10_STORY100_TELL-12=腦子有洞。
+# Ott
+PC10_STORY100_TELL-13=對，他肯定是一輩子都沒喝過汙染的水。
+# Klay
+PC10_STORY100_TELL-14=好吧好吧……
+# Klay
+PC10_STORY100_TELL-15=我信了，讓我來試試吧。
+#----------------------------------------------------
+# Graff
+PC10_STORY100_TELL2-1=什麽？想都別想！
+# Klay
+PC10_STORY100_TELL2-2=喂，別這麼小氣！
+# Klay
+PC10_STORY100_TELL2-3=我就按下這個按鈕……哦喔！
+#----------------------------------------------------
+# Graff
+#"I won't tell anything"
+PC10_STORY100_DONOTTELL-1=別想。
+# Klay
+PC10_STORY100_DONOTTELL-2=哦？好吧。
+# Ott
+PC10_STORY100_DONOTTELL-3=哎喲！
+# Klay
+PC10_STORY100_DONOTTELL-4=既然如此，我唯有靠自己去發掘真相了！
+#----------------------------------------------------
+# Klay
+PC10_STORY100_DONOTTELLB-1=我來試試……
+#----------------------------------------------------
+# Graff
+PC10_STORY100_TELL3-1=看你幹了甚麼好事？！
+# Klay
+PC10_STORY100_TELL3-2=哎喲，好爛喔！
+# Klay
+PC10_STORY100_TELL3-3=竟然故障了耶！
+# Graff
+PC10_STORY100_TELL3-4=我…我要……
+# Ott
+PC10_STORY100_TELL3-5=格拉夫！快住手！
+#----------------------------------------------------
+# Graff
+PC10_STORY100_LETITGO-1=不，我不信你這套。
+# Klay
+PC10_STORY100_LETITGO-2=什麽……？
+# Graff
+PC10_STORY100_LETITGO-3=你根本沒種動手。
+# Graff
+PC10_STORY100_LETITGO-4=你要是敢傷害奧特，我們就去找你媽要求拿奧特的衣服進行DNA檢測，到時候你就會被立刻退學。
+# Klay
+PC10_STORY100_LETITGO-5=……
+# Klay
+PC10_STORY100_LETITGO-6=真是的，一點都不好玩。
+# Klay
+PC10_STORY100_LETITGO-7=我只是開個玩笑而已！
+# Klay
+PC10_STORY100_LETITGO-8=好吧。
+#----------------------------------------------------
+# Graff
+PC10_STORY100_FIGHT-1=夠了！
+# Klay
+PC10_STORY100_FIGHT-2=什麽……
+# Klay
+PC10_STORY100_FIGHT-3=啊！
+# Klay
+PC10_STORY100_FIGHT-4=你…你竟敢打我！
+# Graff
+PC10_STORY100_FIGHT-5=活該。
+# Klay
+PC10_STORY100_FIGHT-6=我要……
+# Ott
+PC10_STORY100_FIGHT-7=夠了！你們都給我住手！
+# Klay
+PC10_STORY100_FIGHT-8=哼。
+#----------------------------------------------------
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-1=我懶得繼續跟你瞎攪和，不過我倒是要提醒你……
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-2=別浪費心力去修它了。
+# Graff
+PC10_STORY100_AFTERKLAYPROVOKE-3=什麽？！
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-4=這個嘛，萬一同樣的意外會再次發生呢。
+# Graff
+PC10_STORY100_AFTERKLAYPROVOKE-5=你膽敢試試看！
+# Graff
+PC10_STORY100_AFTERKLAYPROVOKE-6=我…我就把你的發明物也砸了！
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-7=唔……
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-8=學徒機器人，啓動。
+# Stubot
+PC10_STORY100_AFTERKLAYPROVOKE-9=（啓動中）
+# Stubot
+PC10_STORY100_AFTERKLAYPROVOKE-10=先生你好。
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-11=請看守好我的發明物。
+# Stubot
+PC10_STORY100_AFTERKLAYPROVOKE-12=好的。
+# Graff
+PC10_STORY100_AFTERKLAYPROVOKE-13=喂！你不可以這樣使用學徒機器人！
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-14=為什麽？他是意識中心的財産，而意識中心是我家的財産。
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-15=對吧，學徒機器人？
+# Stubot
+PC10_STORY100_AFTERKLAYPROVOKE-16=是的。
+# Klay
+PC10_STORY100_AFTERKLAYPROVOKE-17=那我先走了！太陽當空照，我要補個覺！
+#----------------------------------------------------
+# Graff
+PC10_STORY100_AFTERFIGHT-1=哼……
+# Ott
+PC10_STORY100_AFTERFIGHT-2=算了算了……
+# Graff
+PC10_STORY100_AFTERFIGHT-3=你沒事吧？
+# Ott
+PC10_STORY100_AFTERFIGHT-4=嗯……
+# Ott
+PC10_STORY100_AFTERFIGHT-5=謝謝你為我出氣，可是……
+# Ott
+PC10_STORY100_AFTERFIGHT-6=你真不該……
+# Graff
+PC10_STORY100_AFTERFIGHT-7=放心好了。
+#----------------------------------------------------
+# Ott
+PC10_STORY100_AFTERFIGHTTELL-1=對了……你還沒告訴我這是什麽發明物！
+# Graff
+PC10_STORY100_AFTERFIGHTTELL-2=對哦。
+# Graff
+PC10_STORY100_AFTERFIGHTTELL-3=我這部機器可以將尿液轉化成飲用水。
+# Ott
+PC10_STORY100_AFTERFIGHTTELL-4=……
+# Ott
+PC10_STORY100_AFTERFIGHTTELL-5=不是吧……？
+# Graff
+PC10_STORY100_AFTERFIGHTTELL-6=想笑就笑出來吧。
+# Ott
+PC10_STORY100_AFTERFIGHTTELL-7=開什麽玩笑？
+# Ott
+PC10_STORY100_AFTERFIGHTTELL-8=這發明太厲害了！
+# Graff
+PC10_STORY100_AFTERFIGHTTELL-9=呃……目前還只是個原型概念機……
+# Ott
+PC10_STORY100_AFTERFIGHTTELL-10=而且還被克萊破壞了……
+#----------------------------------------------------
+# Ott
+PC10_STORY100_F-1=那傢伙究竟是怎麽回事？！
+# Ott
+PC10_STORY100_F-2=他可是校長的愛徒，而且成績向來都是最好的。
+# Ott
+PC10_STORY100_F-3=但他也沒必要做出這種手段呀！
+# Graff
+PC10_STORY100_F-4=不必多說，看看他做的發明……
+# Ott
+PC10_STORY100_F-5=……
+# Ott
+PC10_STORY100_F-6=哦。真是華麗！
+#----------------------------------------------------
+# Graff
+PC10_STORY100_F2-1=我們這次是碰上麻煩了。
+# Graff
+PC10_STORY100_F2-2=你的發明物離題了……而我的發明物損壞了……
+# Graff
+PC10_STORY100_F2-3=我開始質疑自己的選擇是否正確……
+# Graff
+PC10_STORY100_F2-4=這下我們根本不可能勝出。
+# Ott
+PC10_STORY100_F2-5=別聽那傢伙胡說，你的點子太棒了！
+# Ott
+PC10_STORY100_F2-6=我的情況想要補救也來不及了，但你的機器還是可以修好的！
+# Graff
+PC10_STORY100_F2-7=也許吧……但你也聽見他的威脅了。
+# Graff
+PC10_STORY100_F2-8=而且……要是讓你幫助我而導致你失敗我就過意不去了。
+# Ott
+PC10_STORY100_F2-9=放心好了！下一個測驗我自然會把分數追上來的！
+# Graff
+PC10_STORY100_F2-10=唔……
+# Graff
+PC10_STORY100_F2-11=其實還有個辦法。
+# Graff
+PC10_STORY100_F2-12=學徒機器人是我們的成績參照標準，記得吧？
+# Graff
+PC10_STORY100_F2-13=要是我們……假設說……
+# Graff
+PC10_STORY100_F2-14=「利用」他們的機器呢……？
+# Ott
+PC10_STORY100_F2-15=你是指……破壞機器？就像那個傢伙一樣？
+# Ott
+PC10_STORY100_F2-16=這樣做不太對吧……
+#----------------------------------------------------
+# Graff
+PC10_STORY100_F_YES-1=我保證不會碰他們一根寒毛，我發誓！
+# Graff
+PC10_STORY100_F_YES-2=我只需要遠處超頻他們到極限就行了。
+# Graff
+PC10_STORY100_F_YES-3=學徒機器人是個程式，只要我們不進行肢體接觸，他是不可能察覺的。
+# Graff
+PC10_STORY100_F_YES-4=如果三部機器同時損壞，那麽我們就會打成平手！而你到時候就會自動勝出。
+# Ott
+PC10_STORY100_F_YES-5=那個……
+# Graff
+PC10_STORY100_F_YES-6=相信我吧。反正我們都走投無路了對吧？
+# Ott
+PC10_STORY100_F_YES-7=我擔心的正是如此。
+# Ott
+PC10_STORY100_F_YES-8=好吧。這是你的主意，我不會阻止你。
+# Graff
+PC10_STORY100_F_YES-9=……
+# Graff
+PC10_STORY100_F_YES-10=（希望這樣做是對的……）
+#----------------------------------------------------
+# Graff
+PC10_STORY100_F_NO-1=你說得對……
+# Graff
+PC10_STORY100_F_NO-2=我們跟他不同。
+# Graff
+PC10_STORY100_F_NO-3=我還是乖乖修好我的機器走一步算一步吧。
+# Graff
+PC10_STORY100_F_NO-4=可是……我不能讓他再度搞破壞！
+# Ott
+PC10_STORY100_F_NO-5=你可以看守著它呀。
+# Graff
+PC10_STORY100_F_NO-6=不對，一定有更有效的方法……
+# Graff
+PC10_STORY100_F_NO-7=弄個防護罩什麽的。
+# Graff
+PC10_STORY100_F_NO-8=他要是敢觸碰就會受到電擊……
+# Ott
+PC10_STORY100_F_NO-9=嗯……
+# Ott
+PC10_STORY100_F_NO-10=我剛好有合適的東西。
+#----------------------------------------------------
+# Graff
+PC10_STORY100_F_NO2-1=這是什麽？
+# Ott
+PC10_STORY100_F_NO2-2=力場。
+# Ott
+PC10_STORY100_F_NO2-3=它能夠把一定區域籠罩起來，只要連接正確，應該能達到你想要的效果。
+# Ott
+PC10_STORY100_F_NO2-4=我的機器上就裝了幾個，所以身邊帶有備用的。
+# Graff
+PC10_STORY100_F_NO2-5=你確定嗎？
+# Ott
+PC10_STORY100_F_NO2-6=沒關係啦。拿去吧！
+#----------------------------------------------------
+# Ott
+PC10_STORY100_F_NO3-1=你需要在NUB插槽連接探測器和操作儀。
+# Graff
+PC10_STORY100_F_NO3-2=太厲害了！奧特，你真是個天才！
+# Ott
+PC10_STORY100_F_NO3-3=少來，天才是不會連主題都沒看清的……
+# Ott
+PC10_STORY100_F_NO3-4=有什麽需要盡管來找我！
+# Graff
+PC10_STORY100_F_NO3-5=好的！太感謝你了！
+# Graff
+PC10_STORY100_F_NO3-6=（其實……這個方案有點過於複雜……）
+# Graff
+PC10_STORY100_F_NO3-7=（不過這次的測驗太關鍵了。）
+# Graff
+PC10_STORY100_F_NO3-8=（無論如何，開始動手吧！）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking the inventions
+# *****************************************************************
+# Graff
+PC10_MACHINE_GRAFF_LEFT1-1=需要被轉化的“液體”將會從這裏進入機器。經過過濾後，某種化合物會將使液體轉化。
+# Graff
+PC10_MACHINE_GRAFF_LEFT1-2=殘渣會沉澱底部，並通過這個分離器清除掉。
+# Graff
+PC10_MACHINE_GRAFF_LEFT1-3=轉化過程會要數個小時，轉化出來的水會滴進這個玻璃杯中。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_LEFT_BROKEN1-1=那個部分似乎一切正常，我該專注於這個玻璃杯！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_LEFT_FIXED1-1=化學反應開始起作用了。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_LEFT_MELTPLASTIC-1=那個部分沒有損壞！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_RIGHT_BROKEN1-1=真是一塌糊塗，我得盡快修好它！
+# Graff
+PC10_MACHINE_GRAFF_RIGHT_BROKEN1-2=需要用到熔化的塑膠……可惜我手頭上沒有。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_TALKSHAY-1=這個應該可行，不過……
+# Graff
+PC10_MACHINE_GRAFF_TALKSHAY-2=以防萬一，我該先去找布羅格的發明家朋友問一下。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_RIGHT_FIXED1-1=希望能撐到測驗結束……
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_RIGHT_FIXING1-1=搞定，雖然不完美，但應該夠用了。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_RIGHT_STATUETTE-1=我得先熔化塑膠！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_TABLE_BEFOREFIX1-1=得把它修好……
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_TABLE_PROTECTION1-1=奧特給了我一樣東西，叫什麽來著？
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_TABLE_MESS1-1=我的發明物恢復正常了，接下來該去“檢查”一下其他人的機器！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_PLASTIC-1=我要維修的並非是這張桌子……
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_NOTTHERE-1=得先放置另一樣物品。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_MESSED-1=我的發明物現在已經夠一塌糊塗了！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STATUETTE-1=好主意……不過當前這種形態可不行，這塑膠太堅固了！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_MELTPLASTIC-1=不是這一側！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_DETECTOR1-1=它現在明顯處於“探測所有人”模式。
+# Graff
+PC10_MACHINE_GRAFF_DETECTOR1-2=不行，我不能讓任何評審員冒生命危險……
+# Graff
+PC10_MACHINE_GRAFF_DETECTOR1-3=雪伊說過探測器的表層能夠檢測指紋。唔……
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_DETECTOR2-1=它目前只會檢測克萊的指紋！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_STICKER1-1=沒效果……看來那張貼紙上並沒有任何指紋。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_OPERATOR1-1=準備好吃我的短路電擊吧！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_ADDFORCE-1=成功！
+# Graff
+PC10_MACHINE_GRAFF_ADDFORCE-2=力場覆蓋的範圍剛剛好能夠籠罩住我的機器。
+# Graff
+PC10_MACHINE_GRAFF_ADDFORCE-3=不過力場尚未啓動……
+#----------------------------------------------------
+# Graff
+PC10_FORCE1-1=力場上的NUB插槽可以讓我連接數個設備。
+#----------------------------------------------------
+# Graff
+PC10_FORCE2-1=等一切准備好後，我就可以啓動力場了。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_NOTCONNECTED1-1=奧特的力場有多個NUB插槽！不過我只需使用其中的兩個就夠了。
+# Graff
+PC10_FORCE_NOTCONNECTED1-2=可以探測到惡意的探測器，以及……會採取對應行動的操作儀。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_NOTCONNECTED2-1=力場的啓動前提是增加探測器……
+# Graff
+PC10_FORCE_NOTCONNECTED2-2=也就是可以驗證指紋的設備。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_GRAFF_ADD-1=這東西沒有任何NUB接口……而且可能也不管用。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_ADDSTICKER_NOTYET-1=好主意……不過力場本身是無法探測指紋的。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_ADDDETECTOR1-1=太好了，剛好能裝上去！
+# Graff
+PC10_FORCE_ADDDETECTOR1-2=力場必須將探測範圍擴散到整個區域，而不是集中在一個點上。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_ADDOPERATOR1-1=陷阱設置好了！
+#----------------------------------------------------
+# Graff
+PC10_FORCE_ADDSTICKER1-1=成功了！真是鬆了一口氣。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_MISSINGFIX1-1=接下來需要繼續維修我的發明物。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_MISSINGOPERATOR1-1=接下來我需要一個操作器來電擊……某個目標。
+# Graff
+PC10_FORCE_MISSINGOPERATOR1-2=有什麽物品符合這個要求呢？
+#----------------------------------------------------
+# Graff
+PC10_FORCE_MISSINGDETECTOR1-1=好了……不過在力場探測到入侵者之前，這個操作器是不會生效的。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_MISSINGSTICKER1-1=弄好了！
+# Graff
+PC10_FORCE_MISSINGSTICKER1-2=接下來只剩下最後一個麻煩……我必須將克萊設置為唯一目標。
+#----------------------------------------------------
+# Graff
+PC10_FORCE_READY-1=最後一步……就是啓動力場。
+# Graff
+PC10_FORCE_READY-2=完美，我特製的超級複雜防護系統在無形中生效了！
+#----------------------------------------------------
+# Ott
+PC10_FORCE_READY2-1=咦，成功了？
+# Graff
+PC10_FORCE_READY2-2=再過幾秒鐘就知道了……
+# Ott
+PC10_FORCE_READY2-3=糟糕……他回來了。
+# Klay
+PC10_FORCE_READY2-4=啊……
+# Klay
+PC10_FORCE_READY2-5=什麽……
+# Klay
+PC10_FORCE_READY2-6=唔……白癡。
+# Klay
+PC10_FORCE_READY2-7=學徒機器人，我把襪子忘在椅子上了，去幫我拿回來。
+# Stubot
+PC10_FORCE_READY2-8=好的先生
+# Klay
+PC10_FORCE_READY2-9=嘖嘖嘖，小貓咪，我說過的。
+# Klay
+PC10_FORCE_READY2-10=要懂得記取教訓才不會重蹈覆……
+# Various
+#Klay gets shocked
+PC10_FORCE_READY2-11=痴-痴-痴-轍-轍-轍-轍？！？
+# Various
+PC10_FORCE_READY2-12=（噗……）
+# Graff
+PC10_FORCE_READY2-13=漂亮！
+# Ott
+PC10_FORCE_READY2-14=我的天！
+# Ott
+PC10_FORCE_READY2-15=……
+# Ott
+PC10_FORCE_READY2-16=呼，他只是昏過去了，你下手可真重。
+# Graff
+PC10_FORCE_READY2-17=是他先惹我的。
+#----------------------------------------------------
+# Ott
+PC10_STORY100_ENDDIALOG-1=時間差不多了，評審團隨時會趕到。
+# Graff
+PC10_STORY100_ENDDIALOG-2=（好了……能做的我都已經做了。）
+# Graff
+PC10_STORY100_ENDDIALOG-3=（接下來只能聽天由命了……）
+# Graff
+PC10_STORY100_ENDDIALOG-4=（還有等我老爸趕過來。）
+# Ott
+PC10_STORY100_ENDDIALOG-5=你看！我爸媽就在那邊！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_OTT1-1=（自動配對襪子……非常實用的發明！可惜並不符合主題。）
+# Graff
+PC10_MACHINE_OTT1-2=（真的很同情他……）
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_BOX1-1=“將臭味轉化為能源驅動轉輪産生芳香”
+# Graff
+PC10_MACHINE_KLAY_BOX1-2=他之前還膽敢嘲諷我的發明！這不是五十步笑百步嘛。
+# Graff
+PC10_MACHINE_KLAY_BOX1-3=不過……不得不說，他這個發明其實還不錯。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_NOMESS1-1=最好別亂碰……學徒機器人監視著我呢。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_MESS1-1=我答應過奧特不去碰其他人的發明物的，雖說沒那個必要，不過……
+# Graff
+PC10_MACHINE_KLAY_MESS1-2=我還是將它超頻到極限吧！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_ROUND1-1=我越靠近，它就旋轉得越快……
+# Graff
+PC10_MACHINE_KLAY_ROUND1-2=好吧，我承認……今早沒來得及洗澡。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_ROUND2-1=這個玩意會吸取惡臭氣味，它旋轉得越快，就會吸取越多氣味。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_ROUND_LOWSTINK-1=它旋轉得越來越快了……
+# Graff
+PC10_MACHINE_KLAY_ROUND_LOWSTINK-2=（嗅嗅）
+# Graff
+PC10_MACHINE_KLAY_ROUND_LOWSTINK-3=噁……我明白了。不過我的衣服為何會這麽臭？
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_ROUND_OTHERS-1=不行……學徒機器人在監視著我！
+# Graff
+PC10_MACHINE_KLAY_ROUND_OTHERS-2=而且，我承諾過不會觸碰它的。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_CONTAINER1-1=（嗅嗅）
+# Graff
+PC10_MACHINE_KLAY_CONTAINER1-2=唔……不錯，氣味很香。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_ISBROKEN-1=雖然很慚愧……不過反正事情已經是這樣了。
+#----------------------------------------------------
+# Graff
+#Double sense with the word stink. Replace by whatever you feel like.
+PC10_MACHINE_KLAY_STINK1-1=這個主意好「臭」……不過不足以讓它旋轉更快。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_WRONG-1=哇！
+# Graff
+PC10_MACHINE_KLAY_WRONG-2=它竟然會對我的接近産生反應……
+# Graff
+PC10_MACHINE_KLAY_WRONG-3=我還是遠離它好一點！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_MAXED-1=哇！
+# Graff
+PC10_MACHINE_KLAY_MAXED-2=我還沒靠近，它就轉得如此……
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_KLAY_MAXED2-1=……
+# Graff
+PC10_MACHINE_KLAY_MAXED2-2=哎呀……竟然壞掉了。
+# Graff
+PC10_MACHINE_KLAY_MAXED2-3=沒有人發現……
+# Graff
+PC10_MACHINE_KLAY_MAXED2-4=太好了！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_BROKEN_TWO_OVER-1=搞定了。
+# Graff
+PC10_MACHINE_BROKEN_TWO_OVER-2=……
+# Ott
+PC10_MACHINE_BROKEN_TWO_OVER-3=你成功了嗎？
+# Graff
+PC10_MACHINE_BROKEN_TWO_OVER-4=對。
+# Ott
+PC10_MACHINE_BROKEN_TWO_OVER-5=我……還是不大同意這麽做。
+# Ott
+PC10_MACHINE_BROKEN_TWO_OVER-6=走一步算一步吧。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT1-1=咦！那邊有些螞蟻！
+# Graff
+PC10_MACHINE_STUBOT1-2=這個發明物應該是將它們的腳步轉化成能量。
+# Graff
+PC10_MACHINE_STUBOT1-3=有點諷刺，那麽多考生中唯一利用活體作為發明的竟然是個機器人！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_NORMAL1-1=雖然不算很有創意，但是對於機器人來說已經是很不錯的表現了！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAX1-1=唔……如何將這部機器過載到極限呢……？
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAX2-1=或許可以嘗試尋找螞蟻的相關資訊。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAXLIGHT-1=哦！我知道了！
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAXLIGHT-2=這品種叫「穴居蟻」，主要生活在陰暗的地方。
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAXLIGHT-3=因此，它們畏懼光照。一碰見光亮就會尋找地方躲藏……
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAXLIGHT-4=這就解釋牠們現在不停在跑。
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAXLIGHT-5=唔……如果使用高光度聚光燈照牠們呢……？
+# Graff
+PC10_MACHINE_STUBOT_PUSHMAXLIGHT-6=嗯……！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_BROKEN1-1=對不起了，小螞蟻們……
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_ENERGYBOX1-1=轉化的能量會被儲存在這裏。
+# Graff
+PC10_MACHINE_STUBOT_ENERGYBOX1-2=甚至能夠連接設備為其充電，厲害了！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_WHEEL_OTHERS-1=不，我承諾過不觸碰它的……而且遠程遙控是不可能的。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_WHEEL_NEON_NOMESS-1=不行……我可不想把螞蟻給弄瞎！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_WHEEL_NEON-1=好主意！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_STUBOT_WHEEL_NEON2-1=啊哦……
+# Graff
+PC10_MACHINE_STUBOT_WHEEL_NEON2-2=效果太強了……可憐的螞蟻們！
+# Graff
+PC10_MACHINE_STUBOT_WHEEL_NEON2-3=唔……我達成目的了，學徒機器人甚至毫無察覺！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to the "student bot"
+# *****************************************************************
+# Graff
+PC10_STUBOT1-1=嗨！
+# Stubot
+PC10_STUBOT1-2=你好
+# Graff
+PC10_STUBOT1-3=你好嗎？
+# Stubot
+PC10_STUBOT1-4=很好
+# Graff
+PC10_STUBOT1-5=他還真是話不多……
+#----------------------------------------------------
+# Graff
+PC10_STUBOT2-1=喂，你怎麽看這次的測驗？
+# Stubot
+PC10_STUBOT2-2=我會勝出。
+# Graff
+PC10_STUBOT2-3=你那麽肯定嗎？
+# Stubot
+PC10_STUBOT2-4=我設計如此。
+# Graff
+PC10_STUBOT2-5=嗯……
+#----------------------------------------------------
+# Graff
+PC10_STUBOT3-1=它真的能代表學生的普遍水準嗎？
+# Graff
+PC10_STUBOT3-2=幸虧不是所有的機器人都是這個樣子的，這完全就是個沒有靈魂的機器……
+#----------------------------------------------------
+# Graff
+PC10_KLAY1-1=跟他對話？算了吧……
+# Graff
+PC10_KLAY1-2=他簡直不可理喻。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More room interactions
+# *****************************************************************
+# Graff
+PC10_VRLEARNER1-1=唔……我真的有必要使用那個洗腦設備嗎……？
+#----------------------------------------------------
+# Graff
+PC10_VRLEARNER_BEFORECHOICE-1=我討厭這麽做，不過時間緊迫！
+# Graff
+PC10_VRLEARNER_BEFORECHOICE-2=我必須掌握所有相關資訊……
+#----------------------------------------------------
+# Graff
+PC10_VRLEARNER_BROK-1=呃……？好。
+# Graff
+PC10_VRLEARNER_BROK-2=天知道資料庫會搜到什麽結果。
+# Various
+PC10_VRLEARNER_BROK-3=正在查詢：布羅格（姓氏不詳）。
+# Various
+PC10_VRLEARNER_BROK-4=出生於重生紀元3000年，父母不詳，被收養。
+# Graff
+PC10_VRLEARNER_BROK-5=……被收養？
+# Graff
+PC10_VRLEARNER_BROK-6=我……還真不知道這個。
+# Graff
+PC10_VRLEARNER_BROK-7=他一直提及他的爺爺……但我以為他們是真的一家人。
+# Various
+PC10_VRLEARNER_BROK-8=當前職業：無。
+# Graff
+PC10_VRLEARNER_BROK-9=他肯定高興聽到這個……
+# Various
+PC10_VRLEARNER_BROK-10=當前婚姻狀態：喪偶。
+# Various
+PC10_VRLEARNER_BROK-11=請注意，此個人資料因重生紀元3030年全球大停電而消失。
+# Graff
+PC10_VRLEARNER_BROK-12=果然……
+#----------------------------------------------------
+# Graff
+PC10_VRLEARNER_BOTS1-1=嗯……總感覺這些資訊會派得上用場。
+# Various
+PC10_VRLEARNER_BOTS1-2=正在查詢機器人。
+# Graff
+PC10_VRLEARNER_BOTS1-3=……
+# Graff
+PC10_VRLEARNER_BOTS1-4=哇……機器人的有關知識竟然如此豐富！
+# Graff
+PC10_VRLEARNER_BOTS1-5=我必須……停下來……
+# Graff
+PC10_VRLEARNER_BOTS1-6=啊……！
+# Graff
+PC10_VRLEARNER_BOTS1-7=哎喲，每次都痛得要命。
+#----------------------------------------------------
+# Graff
+PC10_VRLEARNER_ALREADY-1=已經查詢過了，這個課題沒必要重複查詢。
+#----------------------------------------------------
+# Graff
+PC10_VRLEARNER_ANTS1-1=沒錯，我很好奇學徒機器人所使用的那些螞蟻。
+# Various
+PC10_VRLEARNER_ANTS1-2=正在查詢螞蟻。
+# Graff
+PC10_VRLEARNER_ANTS1-3=……
+# Graff
+PC10_VRLEARNER_ANTS1-4=哎喲……！
+# Graff
+PC10_VRLEARNER_ANTS1-5=……啊……
+# Graff
+PC10_VRLEARNER_ANTS1-6=呼！難過得要死了。
+# Graff
+PC10_VRLEARNER_ANTS1-7=下次碰見螞蟻的話，一定要好好利用這些資訊！
+# Graff
+PC10_VRLEARNER_ANTS1-8=……
+# Graff
+PC10_VRLEARNER_ANTS1-9=不知為何，突然很想吃蟻漢堡……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Ott
+# *****************************************************************
+# Graff
+PC10_OTT_WELCOME1-1=喂，奧特！
+#----------------------------------------------------
+# Ott
+PC10_OTT_WELCOME2-1=怎麽了？
+#----------------------------------------------------
+# Graff
+PC10_OTT_HIMSELF1-1=你的實習是明天開始對嗎？
+# Ott
+PC10_OTT_HIMSELF1-2=是呀！想到覺得興奮，我可以跟真正的警察共事！
+# Ott
+PC10_OTT_HIMSELF1-3=我舅舅就是警察局長。
+# Graff
+PC10_OTT_HIMSELF1-4=真羨慕你，換作是我的話肯定壓力山大……
+# Ott
+PC10_OTT_HIMSELF1-5=怎麽講？
+# Graff
+PC10_OTT_HIMSELF1-6=我這人很內向，一旦離開了自己的舒適圈，就會感到非常緊張……
+# Ott
+#Proto-copier is an invented name for "photocopier"
+PC10_OTT_HIMSELF1-7=不過……到時候我可能只會被派去幹些雜事之類的。
+# Ott
+PC10_OTT_HIMSELF1-8=不過我還是很期待啦！
+#----------------------------------------------------
+# Graff
+PC10_OTT_HIMSELF2-1=你還好吧？
+# Ott
+PC10_OTT_HIMSELF2-2=很好呀！
+# Graff
+PC10_OTT_HIMSELF2-3=我是指……
+# Ott
+PC10_OTT_HIMSELF2-4=我當然知道你說什麽，不過我真的沒事。
+# Ott
+PC10_OTT_HIMSELF2-5=就算這次失敗，我下次也會迎頭趕上的！
+# Graff
+PC10_OTT_HIMSELF2-6=你總是那麽自信……哪怕是在如此絕望的情況下。
+# Ott
+PC10_OTT_HIMSELF2-7=那是因為我經歷過更糟糕的……
+# Graff
+PC10_OTT_HIMSELF2-8=……
+# Ott
+PC10_OTT_HIMSELF2-9=抱歉，我忘了你也有過類似的遭遇。
+# Graff
+PC10_OTT_HIMSELF2-10=我比較關心當下的處境。
+#----------------------------------------------------
+# Graff
+PC10_OTT_FIXING1-1=你說我該怎麽修理這台發明物？
+# Ott
+PC10_OTT_FIXING1-2=那個……這是你自己的設計對吧？你應該比我熟悉得多了。
+# Graff
+PC10_OTT_FIXING1-3=有道理……
+# Graff
+PC10_OTT_FIXING1-4=我認為熔化的塑膠可以修好玻璃杯，你有嗎？
+# Ott
+PC10_OTT_FIXING1-5=沒，對不起！
+# Graff
+PC10_OTT_FIXING1-6=沒事，我再想別的辦法。
+#----------------------------------------------------
+# Graff
+PC10_OTT_PROTECTION1-1=再次感謝你送的力場，實際怎麽用？
+# Ott
+PC10_OTT_PROTECTION1-2=哈，還以為你是班上最聰明的呢！
+# Graff
+PC10_OTT_PROTECTION1-3=這個……
+# Ott
+PC10_OTT_PROTECTION1-4=開玩笑而已啦！
+# Ott
+PC10_OTT_PROTECTION1-5=連接基座上的NUB插槽，你需要插上兩個……
+# Graff
+PC10_OTT_PROTECTION1-6=一個探測器和一個操作儀。
+# Ott
+PC10_OTT_PROTECTION1-7=對！
+# Graff
+PC10_OTT_PROTECTION1-8=我需要一個可以感應到惡意的東西，你有什麽建議不？
+# Ott
+PC10_OTT_PROTECTION1-9=呃……指紋感應器呢？
+# Graff
+PC10_OTT_PROTECTION1-10=好的，至於操作儀嘛，任何可以發動電擊的東西就行了。
+# Ott
+PC10_OTT_PROTECTION1-11=真有這個必要嗎？
+# Graff
+PC10_OTT_PROTECTION1-12=那是當然，克萊可是個混蛋。
+#----------------------------------------------------
+# Graff
+PC10_OTT_MESS1-1=你確定我不能直接砸破他們的發明物嗎……？
+# Graff
+PC10_OTT_MESS1-2=那樣可簡單得多了！
+# Ott
+PC10_OTT_MESS1-3=你的脾性真的有點像你老爸……
+# Graff
+PC10_OTT_MESS1-4=他不是我親爸！你又不是不知道。
+# Ott
+PC10_OTT_MESS1-5=對哦……對不起。
+# Ott
+PC10_OTT_MESS1-6=不過話說回來……你可千萬別衝動。
+# Graff
+PC10_OTT_MESS1-7=好吧……我還是使用遠端破壞的方式吧。
+# Ott
+PC10_OTT_MESS1-8=只要不留下證據就沒問題！
+#----------------------------------------------------
+# Graff
+PC10_OTT_INV_DEFAULT1-1=這個你需要嗎？
+# Ott
+PC10_OTT_INV_DEFAULT1-2=不必，你比我更需要用到！
+#----------------------------------------------------
+# Graff
+PC10_OTT_INV_DEFAULT2-1=這個能幫上忙嗎？
+# Ott
+PC10_OTT_INV_DEFAULT2-2=我不清楚，要不試試看？
+#----------------------------------------------------
+# Ott
+PC10_OTT_INV_MONEY-1=不必，你已經還清欠我的錢了！
+#----------------------------------------------------
+# Ott
+PC10_OTT_INV_FORCEFIELD1-1=你還沒使用它嗎？
+#----------------------------------------------------
+# Graff
+PC10_OTT_EXIT1-1=我有事先走了。
+# Ott
+PC10_OTT_EXIT1-2=放心吧，我會待在這裏守著我們的發明物的。
+# Graff
+PC10_OTT_EXIT1-3=謝謝你！
+#----------------------------------------------------
+# Graff
+PC10_OTT_EXIT2-1=再見！
+#----------------------------------------------------
+# Graff
+PC10_OTT_THINK1-1=（人們總是因為他是混種而嘲笑他……）
+# Graff
+PC10_OTT_THINK1-2=（但我不在乎他的身份，他是我唯一能靠得住的人。）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Klay is laying in a bed outside
+# *****************************************************************
+# Graff
+PC10_KLAYBED1-1=（這個混蛋！他砸壞了我嘔心瀝的發明物來找樂子。）
+# Graff
+PC10_KLAYBED1-2=（我不想跟他對話……只想狠狠給他一拳。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED2-1=（跟他對話是沒用的，我得嘗試別的方法……）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED3-1=（哎喲……那耳塞是要給布羅格的，現在想拿回來太遲了……）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_OTHERS1-1=……
+# Klay
+PC10_KLAYBED_OTHERS1-2=你這是想幹嘛？！
+# Graff
+PC10_KLAYBED_OTHERS1-3=呃……
+# Klay
+PC10_KLAYBED_OTHERS1-4=滾開！我要休息。
+# Klay
+PC10_KLAYBED_OTHERS1-5=別在我身邊走來走去的！我的聽覺是很敏感的。
+# Graff
+PC10_KLAYBED_OTHERS1-6=好的……呃，不好意思……
+# Graff
+PC10_KLAYBED_OTHERS1-7=（啊……我為何要道歉……真是太遜了！）
+# Graff
+PC10_KLAYBED_OTHERS1-8=（無論如何，我得想個比較秘密的方式。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_OTHERS2-1=……
+# Klay
+PC10_KLAYBED_OTHERS2-2=嘿！！
+# Klay
+PC10_KLAYBED_OTHERS2-3=無論你想幹嘛，我勸你快停止吧！
+# Klay
+PC10_KLAYBED_OTHERS2-4=還有別到處趴趴走！大老遠我就聽見你的腳步聲了！
+# Graff
+PC10_KLAYBED_OTHERS2-5=呃……好的。
+# Graff
+PC10_KLAYBED_OTHERS2-6=（哼……又是失敗結果。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_NOTRY1-1=（唔……很期待到時候他的臉色！可惜這對我目前的情況毫無幫助。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_NOTRY2-1=（幹嘛呢？難道要攻擊他……？算了吧，我得智商壓制他才行。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_EARBUDS-1=呃……
+# Klay
+PC10_KLAYBED_EARBUDS-2=你怎麽還在？你到底想怎樣？
+# Graff
+PC10_KLAYBED_EARBUDS-3=我是……為稍早的事道歉。
+# Klay
+PC10_KLAYBED_EARBUDS-4=啊！你終於會說人話了！
+# Graff
+PC10_KLAYBED_EARBUDS-5=我想要跟你和好，還有……我給你帶來了一份禮物。
+# Graff
+PC10_KLAYBED_EARBUDS-6=這是一對耳塞，可以讓你免受噪音的打擾。
+# Klay
+PC10_KLAYBED_EARBUDS-7=哦……有意思。
+# Klay
+PC10_KLAYBED_EARBUDS-8=等一下。
+# Klay
+PC10_KLAYBED_EARBUDS-9=你該不會是別有用心吧？
+# Graff
+PC10_KLAYBED_EARBUDS-10=當然不是！你看，我先把它們戴上示範……
+# Graff
+PC10_KLAYBED_EARBUDS-11=看見沒？
+# Klay
+PC10_KLAYBED_EARBUDS-12=嗯……
+# Klay
+PC10_KLAYBED_EARBUDS-13=好吧，讓我來試試。
+# Graff
+PC10_KLAYBED_EARBUDS-14=你說什麽？
+# Klay
+PC10_KLAYBED_EARBUDS-15=我說……
+# Klay
+PC10_KLAYBED_EARBUDS-16=吼！你能不能先拿下那對該死的耳塞？
+# Graff
+PC10_KLAYBED_EARBUDS-17=呃？等一下，我根本聽不見你說的話！
+# Graff
+PC10_KLAYBED_EARBUDS-18=……瞧，很有效對吧？
+# Klay
+PC10_KLAYBED_EARBUDS-19=快給我！
+# Klay
+PC10_KLAYBED_EARBUDS-20=……
+# Klay
+PC10_KLAYBED_EARBUDS-21=哦……耶！終於安靜了！
+# Klay
+PC10_KLAYBED_EARBUDS-22=真是踏破鐵鞋無覓處。
+# Graff
+PC10_KLAYBED_EARBUDS-23=……
+# Klay
+PC10_KLAYBED_EARBUDS-24=你還待在這幹嘛？到一邊去！
+# Graff
+PC10_KLAYBED_EARBUDS-25=（希望這不是錯誤的決定……）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_STICKER_NOTYET-1=（好主意，不過粘住他的手指會驚醒他的！）
+# Graff
+PC10_KLAYBED_STICKER_NOTYET-2=（而且，貼紙上的指紋並不持久。）
+# Graff
+PC10_KLAYBED_STICKER_NOTYET-3=（廉價私家偵探會用什麽方法取得指紋呢……？）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_STICKER_OK-1=（輕輕地……）
+#----------------------------------------------------
+# Graff
+#Graff just applied the sticker on Klay's finger, trying not to wake him up
+PC10_KLAYBED_STICKER_OK2-1=……
+# Klay
+PC10_KLAYBED_STICKER_OK2-2=……
+# Klay
+PC10_KLAYBED_STICKER_OK2-3=呃……
+# Graff
+PC10_KLAYBED_STICKER_OK2-4=（……！）
+# Graff
+PC10_KLAYBED_STICKER_OK2-5=（呼，希望力道剛好能印出指紋。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_FLOUR-1=（好，只要……謹慎一點。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_FLOUR2-1=（……）
+# Graff
+PC10_KLAYBED_FLOUR2-2=（喏，我把麵粉塗抹到他的指頭上了，他毫無察覺。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_FLOUR_ALREADY-1=（已經執行過了。）
+#----------------------------------------------------
+# Graff
+PC10_KLAYBED_FLOUR_SPLASH-1=（好耶。）
+# Unknown
+PC10_KLAYBED_FLOUR_SPLASH-2=（潑灑麵粉）
+# Klay
+PC10_KLAYBED_FLOUR_SPLASH-3=啊！
+# Klay
+PC10_KLAYBED_FLOUR_SPLASH-4=什麽……我怎麽全身都是……
+# Klay
+PC10_KLAYBED_FLOUR_SPLASH-5=……噢。
+# Graff
+PC10_KLAYBED_FLOUR_SPLASH-6=啊？
+# Klay
+PC10_KLAYBED_FLOUR_SPLASH-7=全都消失了，多虧了我的衣物自動清潔機制！
+# Klay
+PC10_KLAYBED_FLOUR_SPLASH-8=看見沒？你的小聰明失敗了！
+# Graff
+PC10_KLAYBED_FLOUR_SPLASH-9=可惡……該死的高科技……
+#----------------------------------------------------
+# Graff
+PC10_TALK_TOOFAR-1=我得再靠近點才能對話。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting the machines
+# *****************************************************************
+# Stubot
+PC10_MACHINEKLAY_HIT1-1=馬上住手。
+#----------------------------------------------------
+# Ott
+PC10_MACHINEKLAY_HIT2-1=格拉夫！你這是做什麽？！
+#----------------------------------------------------
+# Stubot
+PC10_MACHINEKLAY_HIT3-1=你會被扣分。
+#----------------------------------------------------
+# Stubot
+PC10_MACHINEKLAY_DEAD-1=主人會……知道
+# Graff
+PC10_MACHINEKLAY_DEAD-2=愚蠢的鐵罐頭！
+# Ott
+PC10_MACHINEKLAY_DEAD-3=格拉夫！你怎麽變成這個樣子……
+#----------------------------------------------------
+# Stubot
+#Mine = My machine
+PC10_MACHINESTUBOT_HIT1-1=住手這是我的。
+#----------------------------------------------------
+# Ott
+PC10_MACHINESTUBOT_HIT2-1=格拉夫……？
+#----------------------------------------------------
+# Stubot
+PC10_MACHINESTUBOT_HIT3-1=你不能這樣做。
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_DONTCARE-1=我不在乎。
+# Graff
+PC10_MACHINE_DONTCARE-2=全都要砸爛！
+#----------------------------------------------------
+# Stubot
+PC10_MACHINESTUBOT_DEAD-1=螞蟻跑了。
+# Stubot
+PC10_MACHINESTUBOT_DEAD-2=不可原諒。
+# Ott
+PC10_MACHINESTUBOT_DEAD-3=你這是怎麽了？！他會向校長報告的！
+# Graff
+PC10_MACHINESTUBOT_DEAD-4=我不管。
+#----------------------------------------------------
+# Ott
+PC10_MACHINEOTT_HIT1-1=小心！你在砸壞我的機器！
+#----------------------------------------------------
+# Ott
+PC10_MACHINEOTT_HIT2-1=你究竟要做什麽？！
+#----------------------------------------------------
+# Ott
+PC10_MACHINEOTT_HIT3-1=求你……住手！
+#----------------------------------------------------
+# Ott
+PC10_MACHINEOTT_DEAD-1=完了……全都壞了……
+# Ott
+PC10_MACHINEOTT_DEAD-2=你為什麽要這麽做？
+#----------------------------------------------------
+# Ott
+PC10_MACHINEGRAFF_HIT1-1=什麽？
+#----------------------------------------------------
+# Ott
+PC10_MACHINEGRAFF_HIT2-1=救命呀……來人呀！格拉夫發瘋了！
+#----------------------------------------------------
+# Graff
+PC10_MACHINEGRAFF_DEAD-1=（唔……不知道為什麽要這樣做……）
+# Graff
+PC10_MACHINEGRAFF_DEAD-2=（不過砸東西的感覺真是爽！）
+#----------------------------------------------------
+# Ott
+PC10_OTT_MACHINEBROKEN-1=真不敢相信你做了這種事……
+# Ott
+PC10_OTT_MACHINEBROKEN-2=你別靠近我，我不想跟你說話。
+#----------------------------------------------------
+# Graff
+#When doing that, Graff goes crazy
+PC10_MACHINE_DEAD1-1=死翹翹了！
+#----------------------------------------------------
+# Graff
+PC10_MACHINE_DEAD2-1=看我把它砸了！現在誰怕誰呀？！
+#----------------------------------------------------
+# Graff
+PC10_MACHINEGRAFF_BROKEN1-1=唔……真奇怪，跟之前一樣還是壞的。
+#----------------------------------------------------
+# Graff
+PC10_MACHINEOTT_DEAD1-1=（哎喲……我把奧特的發明物也弄壞了。）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking the scores
+# *****************************************************************
+# Graff
+PC10_SCORES_START1-1=（目前大家的分數都相同……）
+# Graff
+PC10_SCORES_START1-2=（沒必要著急。）
+#----------------------------------------------------
+# Graff
+PC10_SCORES_BAD1-1=（天呀……有沒有辦法可以關掉它……？）
+#----------------------------------------------------
+# Graff
+PC10_SCORES_GOOD1-1=（不錯！我得再接再厲！）
+#----------------------------------------------------
+# Graff
+PC10_SCORES_BEST1-1=（太好了！看你能囂張多久，克萊！）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Door
+# *****************************************************************
+# Graff
+PC10_TO_DOOR_MACHINEBROKEN-1=回到外面？不行！
+# Graff
+PC10_TO_DOOR_MACHINEBROKEN-2=我要把這些機器通通砸壞，我贏不了，別人也別想贏！
+#----------------------------------------------------
+# Graff
+PC10_TO_OUTSIDE_NOPE-1=我暫時還不能離開。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More hitting
+# *****************************************************************
+# Graff
+PC10_ALLMACHINESBROKEN-1=（……）
+# Graff
+PC10_ALLMACHINESBROKEN-2=（搞定……全部都砸壞了。）
+# Graff
+PC10_ALLMACHINESBROKEN-3=（時間不早了，評審團肯定快要抵達了……）
+#----------------------------------------------------
+# Klay
+PC10_KLAYBED_HIT1-1=哇！！
+# Klay
+PC10_KLAYBED_HIT1-2=你敢把我吵醒！下次你再敢這樣我就揍你！
+#----------------------------------------------------
+# Klay
+PC10_KLAYBED_HIT2-1=嗷！
+# Klay
+PC10_KLAYBED_HIT2-2=最後一次警告你！
+#----------------------------------------------------
+# Ott
+PC10_STUBOT_REPORTOTT-1=克萊！
+# Ott
+PC10_STUBOT_REPORTOTT-2=救我！格拉夫打我！
+# Klay
+PC10_STUBOT_REPORTOTT-3=你做了什麽？！
+# Ott
+PC10_STUBOT_REPORTOTT-4=沒有！他完全發瘋了！
+# Klay
+PC10_STUBOT_REPORTOTT-5=格拉夫！
+# Klay
+PC10_STUBOT_REPORTOTT-6=你想玩玩嗎？奉陪到底。
+# Unknown
+PC10_STUBOT_REPORTOTT-7=（鈴聲）
+# Klay
+PC10_STUBOT_REPORTOTT-8=媽！格拉夫發瘋了！
+# Klay
+PC10_STUBOT_REPORTOTT-9=他打了奧特！
+# Graff
+PC10_STUBOT_REPORTOTT-10=什麽？
+# Ott
+PC10_STUBOT_REPORTOTT-11=這是真的！
+#----------------------------------------------------
+# Stubot
+PC10_STUBOT_REPORT-1=主人
+# Stubot
+PC10_STUBOT_REPORT-2=這個人對我們嬌嫩的金屬表面犯下了暴力行為。
+# Klay
+PC10_STUBOT_REPORT-3=格拉夫！
+# Klay
+PC10_STUBOT_REPORT-4=你想玩玩嗎？奉陪到底。
+# Unknown
+PC10_STUBOT_REPORT-5=（鈴聲）
+# Klay
+PC10_STUBOT_REPORT-6=媽！格拉夫發瘋了！
+# Klay
+PC10_STUBOT_REPORT-7=他打了學徒機器人！
+# Graff
+PC10_STUBOT_REPORT-8=什麽？
+# Klay
+PC10_STUBOT_REPORT-9=是真的，我有證據！
+# Klay
+PC10_STUBOT_REPORT-10=他的指紋全在機器人上面。
+#----------------------------------------------------
+# Klay
+PC10_KLAYBED_DEAD-1=你想玩玩嗎？奉陪到底。
+# Unknown
+PC10_KLAYBED_DEAD-2=（鈴聲）
+# Klay
+PC10_KLAYBED_DEAD-3=媽！格拉夫發瘋了！他攻擊我！
+# Graff
+PC10_KLAYBED_DEAD-4=什麽？
+# Klay
+PC10_KLAYBED_DEAD-5=是真的，我有證據！我都錄下來了。
+# Graff
+PC10_KLAYBED_DEAD-6=啊哦……
+# Klay
+PC10_KLAYBED_DEAD-7=你完蛋了，等著被退學吧！
+# Graff
+PC10_KLAYBED_DEAD-8=……
+# Graff
+PC10_KLAYBED_DEAD-9=你很清楚會有什麽後果吧……？
+# Klay
+PC10_KLAYBED_DEAD-10=當然，就會永遠少掉你這個麻煩精！
+# Klay
+PC10_KLAYBED_DEAD-11=後會無期！
+# Graff
+PC10_KLAYBED_DEAD-12=你錯了，白癡！
+# Klay
+PC10_KLAYBED_DEAD-13=等一下！你想做什麽？！
+# Klay
+PC10_KLAYBED_DEAD-14=別靠近那裏！
+# Graff
+PC10_KLAYBED_DEAD-15=我就算要死……
+# Graff
+PC10_KLAYBED_DEAD-16=也要拉你去墊背！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end Graff - Graff is affected by pollution and desperately tries to find a pill
+# *****************************************************************
+# Graff
+PC10_STUBOT_STORY165_1-1=學徒機器人！
+# Stubot
+PC10_STUBOT_STORY165_1-2=人類你好。
+# Graff
+PC10_STUBOT_STORY165_1-3=想問一下……咳咳……
+# Graff
+PC10_STUBOT_STORY165_1-4=你身上是否有藥丸……？
+# Stubot
+#This is a robot and it doesn't understand the word. Find something close to the word
+PC10_STUBOT_STORY165_1-5=要錢。
+# Graff
+PC10_STUBOT_STORY165_1-6=不，我是說藥丸！
+# Stubot
+PC10_STUBOT_STORY165_1-7=要錢。
+# Graff
+PC10_STUBOT_STORY165_1-8=可惡……你個沒用的廢物……咳咳……
+# Graff
+PC10_STUBOT_STORY165_1-9=你沒看見我需要幫助嗎？！咳……
+# Stubot
+PC10_STUBOT_STORY165_1-10=已轉帳200烏尼幣。
+# Graff
+PC10_STUBOT_STORY165_1-11=等下……什麽情況？
+# Graff
+PC10_STUBOT_STORY165_1-12=……
+# Graff
+PC10_STUBOT_STORY165_1-13=竟然是真的！他轉錢給我了！
+# Graff
+PC10_STUBOT_STORY165_1-14=太好了！雖然沒想到……但是謝了！
+# Stubot
+PC10_STUBOT_STORY165_1-15=再見。
+# Graff
+PC10_STUBOT_STORY165_1-16=嗯，不過溝通能力還是有待改善……咳咳……
+#----------------------------------------------------
+# Graff
+PC10_STUBOT_STORY165_2-1=再次感謝你！
+# Stubot
+PC10_STUBOT_STORY165_2-2=是學費。
+# Stubot
+PC10_STUBOT_STORY165_2-3=以後還我。
+# Graff
+PC10_STUBOT_STORY165_2-4=咳咳……好吧……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 begin
+# *****************************************************************
+# Graff
+#（if we broke Ott's machine）
+PC10_DAY3BEGIN1_OTTBROKEN-1=那個……
+# Graff
+PC10_DAY3BEGIN1_OTTBROKEN-2=我想跟你說，之前的事……
+# Ott
+PC10_DAY3BEGIN1_OTTBROKEN-3=你是說展覽會的事？
+# Ott
+PC10_DAY3BEGIN1_OTTBROKEN-4=當時你壓力很大，我理解。
+# Graff
+PC10_DAY3BEGIN1_OTTBROKEN-5=無論如何……我必須向你道歉，我不該破壞你的發明物的。
+# Ott
+PC10_DAY3BEGIN1_OTTBROKEN-6=我已經原諒你了。而且……現在我們有更重要的事情。
+#----------------------------------------------------
+# Ott
+#Normal
+PC10_DAY3BEGIN1-1=格拉夫！
+# Graff
+PC10_DAY3BEGIN1-2=……
+# Graff
+PC10_DAY3BEGIN1-3=嗨。
+# Ott
+PC10_DAY3BEGIN1-4=你很緊張嗎？
+# Graff
+PC10_DAY3BEGIN1-5=對呀……而且不只是因為測驗的事。
+# Ott
+PC10_DAY3BEGIN1-6=我明白你的意思……
+#----------------------------------------------------
+# Ott
+PC10_DAY3BEGIN1B-1=藥丸短缺的情況越來越嚴重……
+# Ott
+PC10_DAY3BEGIN1B-2=我很幸運有我舅舅提供的藥丸。
+# Graff
+PC10_DAY3BEGIN1B-3=（還是別讓他擔心我的情況好了……）
+# Graff
+PC10_DAY3BEGIN1B-4=我也是……布羅格給了我一粒。
+# Ott
+PC10_DAY3BEGIN1B-5=對了……
+#----------------------------------------------------
+# Ott
+#If Ott has a bad relationship with Brok
+PC10_DAY3_OTTBAD-1=有件關於你父親的事我得告訴你。
+# Graff
+PC10_DAY3_OTTBAD-2=他怎麽了？
+# Ott
+PC10_DAY3_OTTBAD-3=我昨天跟他合作辦案。
+# Ott
+PC10_DAY3_OTTBAD-4=因為韋斯舅舅強迫我們聯手調查某件命案。
+# Graff
+PC10_DAY3_OTTBAD-5=啊……？真的嗎？
+# Ott
+PC10_DAY3_OTTBAD-6=對呀……
+# Ott
+PC10_DAY3_OTTBAD-7=布羅格……他……
+# Ott
+PC10_DAY3_OTTBAD-8=他並非我想象中的那樣子。
+# Graff
+PC10_DAY3_OTTBAD-9=什麽意思？
+#----------------------------------------------------
+# Ott
+#If good relationship
+PC10_DAY3_OTTGOOD-1=我昨天跟你老爸合作辦案！
+# Ott
+PC10_DAY3_OTTGOOD-2=我們聯手調查了一起命案！太厲害了！
+# Graff
+PC10_DAY3_OTTGOOD-3=等一下。怎麽回事？
+# Ott
+PC10_DAY3_OTTGOOD-4=因為警隊最近人手嚴重不足……就字面意思的「人」手不足。
+# Ott
+PC10_DAY3_OTTGOOD-5=所以韋斯舅舅就派我們去了。
+# Graff
+PC10_DAY3_OTTGOOD-6=還順利嗎？
+#----------------------------------------------------
+# Ott
+#If Brok hit Ott
+PC10_DAY3_OTTKO-1=格拉夫……你爸他打了我。
+# Graff
+PC10_DAY3_OTTKO-2=什麽？！
+# Ott
+PC10_DAY3_OTTKO-3=而且不只是我。
+# Ott
+PC10_DAY3_OTTKO-4=他根本就是個暴力狂。
+# Graff
+PC10_DAY3_OTTKO-5=……
+# Ott
+PC10_DAY3_OTTKO-6=我知道……不該增加你的煩惱，可是……
+# Ott
+PC10_DAY3_OTTKO-7=有時候當局者迷旁觀者清呀……
+# Graff
+PC10_DAY3_OTTKO-8=沒關係。
+# Graff
+PC10_DAY3_OTTKO-9=今天我將會得到畢業證書，然後就可以搬去市區了……
+# Ott
+PC10_DAY3_OTTKO-10=你突然變得自信滿滿了。
+# Graff
+PC10_DAY3_OTTKO-11=難不成還能怎樣……？
+#----------------------------------------------------
+# Ott
+PC10_DAY3_OTTSOLVED-1=當時的情形實在太瘋狂了。
+# Ott
+PC10_DAY3_OTTSOLVED-2=布羅格偵探……呃，你父親處理得非常專業。
+# Ott
+PC10_DAY3_OTTSOLVED-3=案情的謎團簡直像意麵一樣錯綜複雜，但他還是成功從中發掘出了真相！
+# Ott
+PC10_DAY3_OTTSOLVED-4=罪犯最後試圖逃跑，而你父親沿著高速公路追上去將他逮捕！
+# Graff
+PC10_DAY3_OTTSOLVED-5=真的嗎……？
+# Ott
+PC10_DAY3_OTTSOLVED-6=對呀！你父親實在是太厲害了！
+# Ott
+PC10_DAY3_OTTSOLVED-7=韋斯舅舅很生氣，並解雇了他。
+# Ott
+PC10_DAY3_OTTSOLVED-8=但我認為……他追捕罪犯的行為是對的。
+# Graff
+PC10_DAY3_OTTSOLVED-9=看來你現在比我更熟悉布羅格了。
+# Ott
+PC10_DAY3_OTTSOLVED-10=難道說……你吃醋了？
+#----------------------------------------------------
+# Ott
+PC10_DAY3_OTTJUMPED-1=案件的受害者還活著。
+# Ott
+PC10_DAY3_OTTJUMPED-2=布羅格不小心踩到他身上……結果把他弄醒了。
+# Graff
+PC10_DAY3_OTTJUMPED-3=這樣也行？！
+# Ott
+PC10_DAY3_OTTJUMPED-4=是吧……不過效果很實用……
+# Graff
+PC10_DAY3_OTTJUMPED-5=奇怪了……
+#----------------------------------------------------
+# Ott
+PC10_DAY3_OTTNOTSOLVED-1=那個……我們偵破了案件……
+# Ott
+PC10_DAY3_OTTNOTSOLVED-2=不過我對調查結論有異議。
+# Ott
+PC10_DAY3_OTTNOTSOLVED-3=我很確定我們錯抓了無辜者……
+# Graff
+PC10_DAY3_OTTNOTSOLVED-4=……
+# Ott
+PC10_DAY3_OTTNOTSOLVED-5=哎呀，我不該拿這些事情麻煩你的。
+# Graff
+PC10_DAY3_OTTNOTSOLVED-6=沒事，我喜歡聽你分享故事。
+#----------------------------------------------------
+# Ott
+PC10_DAY3_OTTACCUSED-1=你的老爸……完全就是個瘋子……
+# Ott
+PC10_DAY3_OTTACCUSED-2=他竟然指控我是凶手！
+# Graff
+PC10_DAY3_OTTACCUSED-3=什麽？！
+# Ott
+PC10_DAY3_OTTACCUSED-4=而且沒有任何證據！
+# Ott
+PC10_DAY3_OTTACCUSED-5=要不是韋斯舅舅，我現在已經吃牢飯了！
+# Graff
+PC10_DAY3_OTTACCUSED-6=太荒謬了……
+# Ott
+PC10_DAY3_OTTACCUSED-7=不要怪我嘴臭……
+# Ott
+PC10_DAY3_OTTACCUSED-8=我覺得他一定是腦子有洞……
+#----------------------------------------------------
+# Ott
+PC10_DAY3_OTTMEH-1=……
+# Ott
+PC10_DAY3_OTTMEH-2=我……還是不談論這件事了。
+# Graff
+PC10_DAY3_OTTMEH-3=奧特……請告訴我。
+# Graff
+PC10_DAY3_OTTMEH-4=發生什麽事了？
+# Ott
+PC10_DAY3_OTTMEH-5=你父親……非常特別。
+# Ott
+PC10_DAY3_OTTMEH-6=有時候他會是全球最聰明的人。
+# Ott
+PC10_DAY3_OTTMEH-7=然而下一刻，他卻會毫無緣由地揍你的臉……
+# Graff
+PC10_DAY3_OTTMEH-8=……
+# Graff
+PC10_DAY3_OTTMEH-9=這描述非常符合他的性格……
+#----------------------------------------------------
+# Graff
+#If Graff killed Klay
+PC10_DAY3_BEGIN2_NOKLAY-1=……
+# Ott
+PC10_DAY3_BEGIN2_NOKLAY-2=克萊呢？
+# Ott
+PC10_DAY3_BEGIN2_NOKLAY-3=他一般都是比他母親早到的。
+# Graff
+PC10_DAY3_BEGIN2_NOKLAY-4=這個……
+# Director
+PC10_DAY3_BEGIN2_NOKLAY-5=各位同學們。
+# Director
+PC10_DAY3_BEGIN2_NOKLAY-6=昨天發生了一場意外事故。
+# Director
+PC10_DAY3_BEGIN2_NOKLAY-7=克萊永遠不會回來了。
+# Ott
+PC10_DAY3_BEGIN2_NOKLAY-8=什麽意思……？
+# Director
+PC10_DAY3_BEGIN2_NOKLAY-9=……
+# Ott
+PC10_DAY3_BEGIN2_NOKLAY-10=不…不會吧……
+# Director
+PC10_DAY3_BEGIN2_NOKLAY-11=各位請冷靜，請不要多做猜想。
+# Director
+PC10_DAY3_BEGIN2_NOKLAY-12=你們必須專注於接下來的測驗。
+#----------------------------------------------------
+# Graff
+PC10_DAY3_BEGIN2_KLAY-1=……
+# Ott
+PC10_DAY3_BEGIN2_KLAY-2=糟了，看看是誰朝我們來了。
+# Klay
+PC10_DAY3_BEGIN2_KLAY-3=喂！
+# Klay
+PC10_DAY3_BEGIN2_KLAY-4=各位還好嗎？
+# Graff
+PC10_DAY3_BEGIN2_KLAY-5=你……！
+# Klay
+PC10_DAY3_BEGIN2_KLAY-6=唉喲！
+# Klay
+PC10_DAY3_BEGIN2_KLAY-7=你發什麽神經……？
+# Graff
+PC10_DAY3_BEGIN2_KLAY-8=我昨天差點沒命！都是因為你！
+# Ott
+PC10_DAY3_BEGIN2_KLAY-9=什麽……？
+#----------------------------------------------------
+# Klay
+PC10_DAY3_BEGIN2_KLAYMONEY-1=我知道……
+# Klay
+PC10_DAY3_BEGIN2_KLAYMONEY-2=是我把錢借給你的！還記得嗎……？
+# Graff
+PC10_DAY3_BEGIN2_KLAYMONEY-3=我真謝謝你了！但你有體驗過那種痛苦嗎？！
+#----------------------------------------------------
+# Klay
+PC10_DAY3_BEGIN2_KLAYNOMONEY-1=太荒唐了！
+# Graff
+PC10_DAY3_BEGIN2_KLAYNOMONEY-2=你把我的藥丸給吃了！
+# Graff
+PC10_DAY3_BEGIN2_KLAYNOMONEY-3=你知道窒息數個小時是什麽滋味嗎？！
+# Klay
+PC10_DAY3_BEGIN2_KLAYNOMONEY-4=啊……呃……
+# Klay
+PC10_DAY3_BEGIN2_KLAYNOMONEY-5=好吧，我承認……
+# Graff
+PC10_DAY3_BEGIN2_KLAYNOMONEY-6=我要……！
+# Klay
+PC10_DAY3_BEGIN2_KLAYNOMONEY-7=等一下！求你別傷害我！
+# Klay
+PC10_DAY3_BEGIN2_KLAYNOMONEY-8=我對貧民區的情況一無所知！
+# Klay
+PC10_DAY3_BEGIN2_KLAYNOMONEY-9=我只是跟你開個玩笑而已！
+# Graff
+PC10_DAY3_BEGIN2_KLAYNOMONEY-10=開玩笑？！
+#----------------------------------------------------
+# Klay
+PC10_DAY3_BEGIN2_KLAYNEXT-1=我……真的很抱歉！我……
+# Klay
+PC10_DAY3_BEGIN2_KLAYNEXT-2=那完全是個意外！我沒想過要傷害你！
+# Klay
+PC10_DAY3_BEGIN2_KLAYNEXT-3=你真的要相信我！
+# Graff
+PC10_DAY3_BEGIN2_KLAYNEXT-4=哼……我發誓……
+# Klay
+PC10_DAY3_BEGIN2_KLAYNEXT-5=噓。我媽過來了！
+# Klay
+PC10_DAY3_BEGIN2_KLAYNEXT-6=求求各位……千萬不要告訴她！
+# Klay
+PC10_DAY3_BEGIN2_KLAYNEXT-7=我的前途會毀於一旦的！
+#----------------------------------------------------
+# Graff
+PC10_DAY3BEGIN_REVEAL-1=校長！
+# Ott
+PC10_DAY3BEGIN_REVEAL-2=格拉夫……！
+# Director
+PC10_DAY3BEGIN_REVEAL-3=嗯？
+# Graff
+PC10_DAY3BEGIN_REVEAL-4=有件重要的事得通知你。
+# Graff
+PC10_DAY3BEGIN_REVEAL-5=你這位寶貝兒子……
+# Graff
+PC10_DAY3BEGIN_REVEAL-6=在昨天的測驗中偷走了我的排毒丸……
+# Graff
+PC10_DAY3BEGIN_REVEAL-7=然後任由我自生自滅！
+# Klay
+PC10_DAY3BEGIN_REVEAL-8=沒有！
+# Klay
+PC10_DAY3BEGIN_REVEAL-9=媽，你別聽他的！他就只是嫉妒我的表現！
+# Klay
+PC10_DAY3BEGIN_REVEAL-10=你很清楚我是多麽努力學習的！我根本沒必要那樣做！
+# Director
+PC10_DAY3BEGIN_REVEAL-11=格拉夫，我問你一個問題。
+# Director
+PC10_DAY3BEGIN_REVEAL-12=這件事現在重要嗎？
+# Graff
+PC10_DAY3BEGIN_REVEAL-13=我……呃……
+# Director
+PC10_DAY3BEGIN_REVEAL-14=此事跟測驗無關。
+# Director
+PC10_DAY3BEGIN_REVEAL-15=因此，我無法受理這件事。
+# Graff
+PC10_DAY3BEGIN_REVEAL-16=可是……
+# Director
+PC10_DAY3BEGIN_REVEAL-17=抱歉。
+# Klay
+PC10_DAY3BEGIN_REVEAL-18=瞧？邪不勝正！
+# Graff
+PC10_DAY3BEGIN_REVEAL-19=卑鄙無恥的東西！
+#----------------------------------------------------
+# Graff
+PC10_DAY3BEGIN_LETITGO-1=……
+# Klay
+PC10_DAY3BEGIN_LETITGO-2=很好，乖乖閉上嘴巴就不會出事。
+# Klay
+PC10_DAY3BEGIN_LETITGO-3=免費送你這條人生經驗，以後記住了！
+# Graff
+PC10_DAY3BEGIN_LETITGO-4=氣死我了……
+# Graff
+PC10_DAY3BEGIN_LETITGO-5=昨天測驗時還以為這人並沒那麽壞……但現在……
+#----------------------------------------------------
+# Ott
+PC10_DAY3BEGINB-1=算了吧……
+# Ott
+PC10_DAY3BEGINB-2=我們還是專心應付接下來的事情。
+# Graff
+PC10_DAY3BEGINB-3=……
+# Graff
+PC10_DAY3BEGINB-4=你說得對，現在已經走到最後一步了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Last trial
+# *****************************************************************
+# Director
+PC10_DAY3BEGINC-1=各位。
+# Director
+PC10_DAY3BEGINC-2=眾所皆知，今天是測驗的最後一天。
+# Director
+PC10_DAY3BEGINC-3=首先請看各位的現在得分情況。
+#----------------------------------------------------
+# Director
+PC10_DAY3BEGIND-1=最終測驗馬上開始。
+# Director
+PC10_DAY3BEGIND-2=你們有一個小時的作答時間。
+# Director
+PC10_DAY3BEGIND-3=祝各位好運。
+#----------------------------------------------------
+# Ott
+PC10_DAY3BEGINE_NOKLAY-1=……
+#----------------------------------------------------
+# Ott
+PC10_DAY3BEGINE-1=……
+# Klay
+PC10_DAY3BEGINE-2=媽媽……？
+# Klay
+PC10_DAY3BEGINE-3=等等！我們該怎麽辦？
+#----------------------------------------------------
+# Graff
+PC10_DAY3BEGINE_WONDER-1=這次的測驗到底是怎樣進行的……
+# Graff
+PC10_DAY3BEGINE_WONDER-2=我們甚至都不知道考題是什麽……？
+# Ott
+PC10_DAY3BEGINE_WONDER-3=我覺得……
+# Ott
+PC10_DAY3BEGINE_WONDER-4=這就是測驗的一部分。
+# Ott
+PC10_DAY3BEGINE_WONDER-5=在生活中不可能總有人指點我們如何前進，最終還是得由我們自己來決定。
+# Graff
+PC10_DAY3BEGINE_WONDER-6=但如果我們搞砸了……那麽前途就會毀於一旦。
+# Ott
+PC10_DAY3BEGINE_WONDER-7=放心吧！我們肯定會想到辦法的。
+#----------------------------------------------------
+# Klay
+PC10_DAY3BEGINE_KLAYNEXT-1=我懂了！
+# Klay
+PC10_DAY3BEGINE_KLAYNEXT-2=我先走一步了，弱雞！祝你們在貧民區繼續生活愉快！
+# Graff
+PC10_DAY3BEGINE_KLAYNEXT-3=哼……
+#----------------------------------------------------
+# Graff
+PC10_DAY3BEGINE_NEXT-1=有什麽主意嗎？
+# Ott
+PC10_DAY3BEGINE_NEXT-2=嗯……
+# Ott
+PC10_DAY3BEGINE_NEXT-3=今早我收到一則廣告訊息，說是今天博物館免費開放日。
+# Graff
+PC10_DAY3BEGINE_NEXT-4=是那所歷史博物館……？
+# Graff
+PC10_DAY3BEGINE_NEXT-5=你這麽一說……我好像也收到過！
+# Ott
+PC10_DAY3BEGINE_NEXT-6=或許這並非巧合……
+# Ott
+PC10_DAY3BEGINE_NEXT-7=博物館在市區邊緣的獨立區域。
+# Ott
+PC10_DAY3BEGINE_NEXT-8=那是整個貧民區中除了意識中心和警察局之外唯一由市民管理的地方。
+# Graff
+PC10_DAY3BEGINE_NEXT-9=你怎麽這麽了解？
+# Ott
+PC10_DAY3BEGINE_NEXT-10=韋斯舅舅曾經帶我去過……
+# Ott
+PC10_DAY3BEGINE_NEXT-11=他說學習歷史是很重要，因為歷史能夠反饋出社會的自然進化，讓我們更易於接受變革。
+# Graff
+PC10_DAY3BEGINE_NEXT-12=接受變革……？
+# Ott
+PC10_DAY3BEGINE_NEXT-13=你也知道的……他是個老頭子。
+# Ott
+PC10_DAY3BEGINE_NEXT-14=總之，你怎麽看？
+# Graff
+PC10_DAY3BEGINE_NEXT-15=不錯的主意，應該會有點意思！
+# Ott
+PC10_DAY3BEGINE_NEXT-16=不過，也有可能我是錯的，說不定我們的考題會是劫富濟貧什麽的……
+# Graff
+PC10_DAY3BEGINE_NEXT-17=不排除這樣的可能性。
+# Ott
+PC10_DAY3BEGINE_NEXT-18=無論你做什麽樣的選擇……我都會跟著你的，格拉夫。
+# Ott
+PC10_DAY3BEGINE_NEXT-19=就算失敗，我們也要共同失敗！
+# Graff
+PC10_DAY3BEGINE_NEXT-20=謝謝你，奧特。很慶幸能夠交到你這樣的朋友。
+# Ott
+PC10_DAY3BEGINE_NEXT-21=彼此彼此！
+# Graff
+PC10_DAY3BEGINE_NEXT-22=出發吧！
+#----------------------------------------------------
+# Ott
+#Graff is guilty about killing Klay accidentally the day before
+PC10_DAY3BEGIN_ASKKLAY-1=等一下……
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-2=克萊出了什麽事……？
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-3=他真的……？
+# Graff
+PC10_DAY3BEGIN_ASKKLAY-4=……
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-5=真是難以置信……
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-6=克萊……雖然是很可惡……
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-7=可是罪不該死……
+# Graff
+PC10_DAY3BEGIN_ASKKLAY-8=我……同意……
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-9=現在我開始感到很後悔了。
+# Graff
+PC10_DAY3BEGIN_ASKKLAY-10=……
+# Graff
+PC10_DAY3BEGIN_ASKKLAY-11=雖然不容易……但是我們必須……
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-12=對，我們現在沒時間去為他哀悼。
+# Ott
+PC10_DAY3BEGIN_ASKKLAY-13=繼續前進吧。
+#----------------------------------------------------
+# Graff
+PC10_DAY3BEGIN_STUBOT-1=咦，是學徒機器人。
+# Ott
+PC10_DAY3BEGIN_STUBOT-2=奇怪。
+# Stubot
+PC10_DAY3BEGIN_STUBOT-3=學徒機器人，給你提示，幫助人類。
+# Graff
+PC10_DAY3BEGIN_STUBOT-4=哦……
+# Ott
+PC10_DAY3BEGIN_STUBOT-5=你知道這次測驗的內容嗎？
+# Stubot
+PC10_DAY3BEGIN_STUBOT-6=是也不是。
+# Stubot
+PC10_DAY3BEGIN_STUBOT-7=只能估算可能性。
+# Graff
+PC10_DAY3BEGIN_STUBOT-8=那可能性最大的是什麽？
+# Stubot
+PC10_DAY3BEGIN_STUBOT-9=競爭關係，無可奉告。
+# Graff
+PC10_DAY3BEGIN_STUBOT-10=果然……
+# Ott
+PC10_DAY3BEGIN_STUBOT-11=我們繼續趕路吧。
+#----------------------------------------------------
+# Graff
+PC10_STUBOTSEAT_BEFORE-1=……
+# Ott
+PC10_STUBOTSEAT_BEFORE-2=怎麽了，格拉夫？
+# Graff
+PC10_STUBOTSEAT_BEFORE-3=……我也不太確定。
+#----------------------------------------------------
+# Graff
+PC10_STUBOTSEAT1-1=學徒機器人，你不必在意我們……
+# Stubot
+PC10_STUBOTSEAT1-2=人類在做什麽。
+# Graff
+PC10_STUBOTSEAT1-3=……
+# Graff
+PC10_STUBOTSEAT1-4=啊哈！
+# Ott
+PC10_STUBOTSEAT1-5=找到了？
+# Graff
+PC10_STUBOTSEAT1-6=對！是這把鑰匙！
+#----------------------------------------------------
+# Ott
+PC10_STUBOTSEAT1B-1=我們快回去博物館吧！
+#----------------------------------------------------
+# Stubot
+PC10_STUBOTSEAT_AFTER-1=別煩我。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - The final results!
+# *****************************************************************
+# Graff
+PC10_DAY3RESULTS1-1=……
+# Ott
+PC10_DAY3RESULTS1-2=喂……格拉夫……
+# Ott
+PC10_DAY3RESULTS1-3=你緊張嗎？
+# Graff
+PC10_DAY3RESULTS1-4=……
+# Ott
+PC10_DAY3RESULTS1-5=其實，說來奇怪……現在的情況我曾經幻想過很多次。
+# Ott
+PC10_DAY3RESULTS1-6=還以為我會承受不住這龐大的壓力。
+# Graff
+PC10_DAY3RESULTS1-7=（……）
+# Ott
+PC10_DAY3RESULTS1-8=我們要是無法通過測驗的話，那就真的是“完蛋”了。
+# Ott
+PC10_DAY3RESULTS1-9=不可能有第二次機會了……
+# Graff
+PC10_DAY3RESULTS1-10=奧特……
+# Ott
+PC10_DAY3RESULTS1-11=嗯……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - The final results! （alternative if we hit Ott in chapter 5）
+# *****************************************************************
+# Graff
+PC10_DAY3RESULTS1_BADOTT-1=……
+# Ott
+PC10_DAY3RESULTS1_BADOTT-2=……
+# Graff
+PC10_DAY3RESULTS1_BADOTT-3=奧特……
+# Graff
+PC10_DAY3RESULTS1_BADOTT-4=對於之前的行為我深表抱歉。
+# Graff
+PC10_DAY3RESULTS1_BADOTT-5=這場測驗對我來說壓力很大。
+#----------------------------------------------------
+# Klay
+PC10_DAY3RESULTS1_KLAY-1=我可不像你們！我很有信心。
+# Klay
+PC10_DAY3RESULTS1_KLAY-2=你們要是連信心都沒有，那或許根本沒資格成為佼佼者脫穎而出！
+# Graff
+PC10_DAY3RESULTS1_KLAY-3=閉嘴……
+# Klay
+PC10_DAY3RESULTS1_KLAY-4=……
+#----------------------------------------------------
+# Klay
+PC10_DAY3RESULTS_KLAYBAD-1=哼。
+# Klay
+PC10_DAY3RESULTS_KLAYBAD-2=幸好到了那邊後就再也不用跟你們打交道了。
+# Graff
+PC10_DAY3RESULTS_KLAYBAD-3=……
+# Ott
+PC10_DAY3RESULTS_KLAYBAD-4=別理他，格拉夫，這不值得。
+# Graff
+PC10_DAY3RESULTS_KLAYBAD-5=對……
+#----------------------------------------------------
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-1=……
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-2=對不起。
+# Ott
+PC10_DAY3RESULTS_KLAYGOOD-3=什麽……？
+# Ott
+PC10_DAY3RESULTS_KLAYGOOD-4=克萊……竟然道歉了……？
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-5=……是的。
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-6=我知道……我一直以來對你們的態度很惡劣。
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-7=我只是……必須那麽做。
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-8=才能讓自己感到自信。
+# Ott
+PC10_DAY3RESULTS_KLAYGOOD-9=看來這個世界真的是要變天了……
+# Graff
+PC10_DAY3RESULTS_KLAYGOOD-10=別管他，他只是為了以防萬一失敗了可以留下個好印象。
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-11=不是，我是認真的……
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-12=（吞口水）媽媽過來了……
+# Klay
+PC10_DAY3RESULTS_KLAYGOOD-13=哦不哦不哦不……
+# Graff
+PC10_DAY3RESULTS_KLAYGOOD-14=現在誰才是壓力最大的？
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS2-1=各位。
+# Director
+PC10_DAY3RESULTS2-2=在公布成績之前，我想祝賀你們。
+# Director
+PC10_DAY3RESULTS2-3=你們能夠獲得這個機會是因為你們是本年度最勤奮的一批學生。
+# Director
+PC10_DAY3RESULTS2-4=請切記，無論是生活在市區之內還是之外……
+# Director
+PC10_DAY3RESULTS2-5=你們都是國家的未來，這個世界需要你們。
+# Director
+PC10_DAY3RESULTS2-6=然而……有很多東西是你們還不了解。
+# Director
+PC10_DAY3RESULTS2-7=你們每個人都是獨一無二的。
+# Director
+PC10_DAY3RESULTS2-8=你們每人之間都有著你們無法理解的關聯性。
+# Director
+PC10_DAY3RESULTS2-9=……
+# Director
+PC10_DAY3RESULTS2-10=不過我得糾正下自己剛才的話。
+# Director
+PC10_DAY3RESULTS2-11=雖然你們很勤勞、很聰明、很優秀……但這都不是你們被選中的主要原因。
+# Graff
+PC10_DAY3RESULTS2-12=（……？）
+# Director
+PC10_DAY3RESULTS2-13=在過去的這些年裏，我一直試圖讓你們進行了解和準備。
+# Director
+PC10_DAY3RESULTS2-14=直到這一刻，你們的命運馬上將會掌握在你們自己的手中。
+# Director
+PC10_DAY3RESULTS2-15=那麽……現在就是你們等待已久的時刻了。
+# Director
+PC10_DAY3RESULTS2-16=最終成績。
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS3-1=這是學徒機器人的分數。
+# Director
+PC10_DAY3RESULTS3-2=眾所皆知，這將會是測驗的分數門檻。任何獲得等於或高於此分數的人將會及格。
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS3_STUBOTDEAD-1=今天早些時候，學徒機器人似乎受到了致命損傷。
+# Director
+PC10_DAY3RESULTS3_STUBOTDEAD-2=我會進行一次系統檢驗，查明發生了什麽事。
+# Director
+PC10_DAY3RESULTS3_STUBOTDEAD-3=盡管如此，他還是完成了今天的測驗。
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS3_KLAY-1=克萊……我的孩子……這是你的分數。
+#----------------------------------------------------
+# Klay
+PC10_DAY3RESULTS4-1=太好了！
+# Director
+PC10_DAY3RESULTS4-2=我想指出一點，這次測驗沒有任何偏袒的行為。
+# Director
+PC10_DAY3RESULTS4-3=所有的評分原則都是完全中立的。
+# Director
+PC10_DAY3RESULTS4-4=下一位考生: 奧特。
+#----------------------------------------------------
+# Ott
+PC10_DAY3RESULTS5-1=呼……好險！
+# Graff
+PC10_DAY3RESULTS5-2=恭喜！我就知道你會成功的！
+# Director
+PC10_DAY3RESULTS5-3=接下來輪到……格拉夫。
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS_GRAFFLOSES-1=糟……糟了……！
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES-2=非常抱歉，你不及格。
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES-3=不過……這並不重要。
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS_GRAFFWINS-1=……！
+# Graff
+PC10_DAY3RESULTS_GRAFFWINS-2=我通過了！
+# Director
+PC10_DAY3RESULTS_GRAFFWINS-3=我還沒說完。
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS_GRAFFPENALTY-1=你被扣除了40分。
+# Director
+PC10_DAY3RESULTS_GRAFFPENALTY-2=所以……這才是你的最終得分。
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS_GRAFFSTILLWINS-1=呼……！
+# Graff
+PC10_DAY3RESULTS_GRAFFSTILLWINS-2=我……還是及格了……
+# Graff
+PC10_DAY3RESULTS_GRAFFSTILLWINS-3=可是我不明白……？
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS_GRAFFLOSES2-1=什麽……？！這是為什麽……？
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-1=系統進行了資訊驗證。
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-2=格拉夫，你的監護人是一名市民。
+# Graff
+PC10_DAY3RESULTS_GRAFFLOSES3-3=布羅格……？是市民……？
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-4=因此，你違背了當初被接納入學時所簽署的條例。
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-5=本意識中心僅限於貧民區孩子就讀。
+# Graff
+PC10_DAY3RESULTS_GRAFFLOSES3-6=可是……
+# Graff
+PC10_DAY3RESULTS_GRAFFLOSES3-7=哦！我知道是怎麽回事了！
+# Graff
+PC10_DAY3RESULTS_GRAFFLOSES3-8=他臨時被雇用為警察……只是暫時性的！
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-9=並不是，他已注冊為永久市民。
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-10=這是政府主機裏的資料，不可能出錯。
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-11=很抱歉，格拉夫，規則就是規則。
+# Graff
+PC10_DAY3RESULTS_GRAFFLOSES3-12=他……竟然對我撒謊……？
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-13=另外，本來你應該被自動退學的。
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-14=不過，我盡全力保住了你的檔案，只是將此違例事件列為一等處罰。
+# Director
+PC10_DAY3RESULTS_GRAFFLOSES3-15=我只能幫你到這裏了。
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-1=幸虧你的成績足夠優秀，依然能夠及格。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-2=那麽。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-3=恭喜你們每一位。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-4=因為某些原因，這次將不會有任何典禮。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-5=另外，我給各位開放了三十分鐘的時限讓你們搬到市區。
+# Klay
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-6=三十分鐘？！從現在開始嗎？
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-7=是的。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-8=這是你們成為正式市民的唯一機會。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-9=你們必須馬上做好準備。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-10=我會在001號邊防哨所等你們。
+# Graff
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-11=可是……我還沒滿十六歲！
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-12=不必擔心。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-13=我已經幫你註冊好了，你自己過來就好了。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-14=那就到此為止。
+# Director
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-15=祝你們前途一片光明。
+# Ott
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-16=只有……半個小時……
+# Ott
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-17=跟我父母告別和收拾行李……？
+# Ott
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-18=抱歉格拉夫，我得先走了。
+# Graff
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-19=可是……貧民區怎麽辦？
+# Ott
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-20=你也聽見校長說的話了，我們絕不能錯過這次機遇。
+# Ott
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-21=我們不會放棄貧民區的居民的。
+# Ott
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-22=再說了……你爸不是正在調查此案嗎？
+# Graff
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-23=對……
+# Ott
+PC10_DAY3RESULTS_GRAFFWINSANYWAY-24=去做準備吧。
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-1=很可惜……考慮到你的總分，這仍然不足以使你及格。
+# Director
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-2=我對此深表遺憾。
+# Graff
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-3=遺憾……？
+# Graff
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-4=你要是真的深表遺憾，那就做點什麽啊！
+# Director
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-5=我也很想這麽做。
+# Director
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-6=但我無能為力，制定規則的人並非是我。
+# Graff
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-7=那麽……是誰呢……？
+# Director
+PC10_DAY3RESULTS_GRAFFNOTENOUGH-8=……
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS7-1=等等……如果他真的是市民……
+# Graff
+PC10_DAY3RESULTS7-2=那我不就自動成為市民了？
+# Director
+PC10_DAY3RESULTS7-3=你應該很清楚。
+# Director
+PC10_DAY3RESULTS7-4=未成年人必須證明自己才能被接納為市民，一切都太遲了。
+# Graff
+PC10_DAY3RESULTS7-5=啊……
+# Graff
+PC10_DAY3RESULTS7-6=這……這不可能是真的……
+# Director
+PC10_DAY3RESULTS7-7=別怪我多管閒事……
+# Director
+PC10_DAY3RESULTS7-8=不過你不必太在意此事。
+# Director
+PC10_DAY3RESULTS7-9=你的前途仍然一片光明。
+# Graff
+PC10_DAY3RESULTS7-10=前途光明？！
+# Graff
+PC10_DAY3RESULTS7-11=我……這輩子都得生活在貧民區了……
+# Graff
+PC10_DAY3RESULTS7-12=這有什麽光明可言？！
+# Director
+PC10_DAY3RESULTS7-13=……
+# Director
+PC10_DAY3RESULTS7-14=最終成績目前就儲存在意識中心的資料庫。
+# Director
+PC10_DAY3RESULTS7-15=將會在今晚傳送到政府的主機。
+# Director
+PC10_DAY3RESULTS7-16=因為一系列原因，所以本次不會舉辦任何典禮。
+# Director
+PC10_DAY3RESULTS7-17=等你們被批准搬入市區時，我將會立即通知你們。
+# Director
+PC10_DAY3RESULTS7-18=那麽就到此為止了。
+# Director
+PC10_DAY3RESULTS7-19=願無尾神與你們同在。
+# Ott
+PC10_DAY3RESULTS7-20=……
+#----------------------------------------------------
+# Klay
+PC10_DAY3RESULTS8_KLAYBAD-1=……
+#----------------------------------------------------
+# Klay
+PC10_DAY3RESULTS8_KLAYGOOD-1=這……
+# Klay
+PC10_DAY3RESULTS8_KLAYGOOD-2=太過分了，你不該被……
+# Graff
+PC10_DAY3RESULTS8_KLAYGOOD-3=滾！
+# Klay
+PC10_DAY3RESULTS8_KLAYGOOD-4=我只是想說……
+# Klay
+PC10_DAY3RESULTS8_KLAYGOOD-5=父親都是靠不住的。
+# Klay
+PC10_DAY3RESULTS8_KLAYGOOD-6=我母親就是最好的例子，我很同情你……
+# Graff
+PC10_DAY3RESULTS8_KLAYGOOD-7=我不需要你的同情！能滾多遠就滾多遠！
+# Klay
+PC10_DAY3RESULTS8_KLAYGOOD-8=……
+# Klay
+PC10_DAY3RESULTS8_KLAYGOOD-9=保重。
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS9_BADOTT-1=奧特……求求你……
+# Graff
+PC10_DAY3RESULTS9_BADOTT-2=我是不是失去了一切……包括和你的友誼……？
+# Ott
+PC10_DAY3RESULTS9_BADOTT-3=不用擔心。
+# Ott
+PC10_DAY3RESULTS9_BADOTT-4=我明白的，我原諒你。
+# Graff
+PC10_DAY3RESULTS9_BADOTT-5=謝謝。
+#----------------------------------------------------
+# Ott
+PC10_DAY3RESULTS9-1=你聽見她剛才說的話嗎？
+# Graff
+PC10_DAY3RESULTS9-2=……
+# Graff
+PC10_DAY3RESULTS9-3=嗯，誰想到機器人竟然也有宗教信仰，從未聽她提及過……
+# Ott
+PC10_DAY3RESULTS9-4=不是，我是說……
+# Director
+PC10_DAY3RESULTS9-5=同學們，我要關門了。
+#----------------------------------------------------
+# Director
+PC10_DAY3RESULTS10-1=恭喜你，奧特。
+# Director
+PC10_DAY3RESULTS10-2=數據顯示你有很低的成功率。然而……你及格了。
+# Director
+PC10_DAY3RESULTS10-3=你舅舅肯定會引以為傲。
+# Ott
+PC10_DAY3RESULTS10-4=韋斯舅舅……？你怎麽……？
+# Director
+PC10_DAY3RESULTS10-5=至於你，格拉夫……這只是個小小的挫折。
+# Director
+PC10_DAY3RESULTS10-6=不要讓任何人定奪你的未來。
+# Director
+PC10_DAY3RESULTS10-7=振作起來，證明自己！
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS11-1=那麽……你我就在此分道揚镳了。
+# Graff
+PC10_DAY3RESULTS11-2=再見，奧特。
+#----------------------------------------------------
+# Ott
+PC10_DAY3RESULTS11B-1=什麽？不行！
+# Ott
+PC10_DAY3RESULTS11B-2=我不會就這樣跟你分開的！
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS11_GRAFFLOST-1=你也看見了，我就是個廢物，完完全全的廢物。
+# Graff
+PC10_DAY3RESULTS11_GRAFFLOST-2=就跟我老爸一樣。
+# Ott
+PC10_DAY3RESULTS11_GRAFFLOST-3=一定有別的辦法的……
+# Graff
+PC10_DAY3RESULTS11_GRAFFLOST-4=算了，沒必要折騰下去了。
+# Ott
+PC10_DAY3RESULTS11_GRAFFLOST-5=格拉夫……！
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS11_GRAFFWINS-1=沒辦法了，你很快就會到市區生活……
+# Graff
+PC10_DAY3RESULTS11_GRAFFWINS-2=我替你感到高興。
+# Graff
+PC10_DAY3RESULTS11_GRAFFWINS-3=不過你最好遠離我。
+# Ott
+PC10_DAY3RESULTS11_GRAFFWINS-4=什麽……？
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS11_NORMAL-1=我的厄運是會傳染的。
+#----------------------------------------------------
+# Graff
+PC10_DAY3RESULTS11_KLAY-1=有些事情……你不明白……
+# Graff
+PC10_DAY3RESULTS11_KLAY-2=奧特，我不是什麽好榜樣……
+# Ott
+PC10_DAY3RESULTS11_KLAY-3=別這樣說！
+#----------------------------------------------------
+# Ott
+PC10_DAY3RESULTS11_NEXT-1=等一下！
+# Ott
+PC10_DAY3RESULTS11_NEXT-2=這不公平！你本該通過的！
+# Graff
+PC10_DAY3RESULTS11_NEXT-3=生活本來就是不公平的。
+# Ott
+PC10_DAY3RESULTS11_NEXT-4=我認識的格拉夫不會輕易放棄！
+# Graff
+PC10_DAY3RESULTS11_NEXT-5=那你就是有眼無珠！沒看清我的真實本性！
+# Graff
+PC10_DAY3RESULTS11_NEXT-6=我只是個自私的騙子！畢竟這都是遺傳自我的父親！
+# Unknown
+PC10_DAY3RESULTS11_NEXT-7=（拍擊聲）
+# Graff
+PC10_DAY3RESULTS11_NEXT-8=呃？！
+# Graff
+PC10_DAY3RESULTS11_NEXT-9=你…你幹嘛打我？！
+# Ott
+PC10_DAY3RESULTS11_NEXT-10=你振作點！
+# Ott
+PC10_DAY3RESULTS11_NEXT-11=你沒察覺嗎？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 results "Drumer" ending - If Graff passes, Brok explains what happens next
+# *****************************************************************
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-1=接下來的記憶有點模糊不清……
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-2=我記得是跟阿蒂和博士一塊進入碉堡。
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-3=我們歷經千辛萬苦才找到辦法消滅掉那些圍攻我們的機器人。
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-4=在離開碉堡時……我收到了格拉夫發來的簡訊。
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-5=他成功了……
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-6=但是他急需我的幫助。
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-7=我再次面對兩難抉擇。
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-8=阿蒂也遇到麻煩需要我的幫助。
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-9=這一次……
+# Brok
+PC10_DAY3RESULTS_WINSANYWAY_BROK-10=我必須做出正確的決定。
+#----------------------------------------------------
+# Ott
+PC10_HITSTUBOT_OTT1-1=格拉夫……？
+#----------------------------------------------------
+# Ott
+PC10_HITSTUBOT_OTT2-1=你確定要這樣嗎……？
+#----------------------------------------------------
+# Ott
+PC10_HITSTUBOT_OTT3-1=……！
+# Graff
+PC10_HITSTUBOT_OTT3-2=好了！
+# Graff
+PC10_HITSTUBOT_OTT3-3=去他的學徒機器人，去他的比賽！
+# Ott
+PC10_HITSTUBOT_OTT3-4=我不確定……
+# Graff
+PC10_HITSTUBOT_OTT3-5=這值得一試。
+# Ott
+PC10_HITSTUBOT_OTT3-6=……
+#----------------------------------------------------
+# Graff
+PC10_DOOR_LOCKED-1=上鎖了。
+#----------------------------------------------------

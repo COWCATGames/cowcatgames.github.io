@@ -1,0 +1,922 @@
+#-------------------------------
+#=SLUM OUTSIDE BROK SECTOR
+#-------------------------------
+
+#----- Interactions --------
+PC_TOY=Juguete
+PC_STOVE=Estufa
+PC_ADVERTISEMENT=Anuncio
+
+#----- Choices / Items --------
+GOT_TRAMPPRESCR=¡Una prescripción médica!
+GOT_LUCKYCHARM=¡Un amuleto de la suerte!
+
+#----- Topics --------
+TOPIC_RATS=Ratas
+PC03_GLUCOSITE_CHOICE=¿Dar glucosita?
+
+#----- Dialog --------
+
+###############################################
+# PROOFREAD - illuminati1556 - 17/06/2019
+###############################################
+
+# *****************************************************************
+# CONTEXT - The Tramp's stove
+# *****************************************************************
+# Brok
+PC03_STOVE1-1=Qué calor.
+# Tramp
+PC03_STOVE1-2=El clima está bastante bien, pero ya sabes... Los viejos siempre tenemos frío.
+# Brok
+PC03_STOVE1-3=¡No diga eso! No es tan mayor.
+# Tramp
+PC03_STOVE1-4=Para vivir aquí... Sí, lo soy.
+#----------------------------------------------------
+# Brok
+PC03_STOVE2-1=Se está calentito.
+#----------------------------------------------------
+# Brok
+#The tramp is dead or gone
+PC03_STOVE_AFTERDEATH-1=¡Claro que no! No pienso robarla...
+# Brok
+PC03_STOVE_AFTERDEATH-2=Aunque ya no la necesite... Yo... no puedo...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok takes a toy
+# *****************************************************************
+# Brok
+PC03_TOY1-1=¡Ah! ¡Ya me acuerdo! ¡Graff tenía uno idéntico cuando nos conocimos!
+# Brok
+PC03_TOY1-2=Es un juguete inflable. Solo tienes que mojarlo un poco, y unos segundos después... ¡se hincha como un globo!
+# Brok
+PC03_TOY1-3=¡Quizás a Graff le guste!
+#----------------------------------------------------
+# Brok
+PC03_TOY2-1=Graff siempre llevaba el suyo encima. Me pregunto qué habrá sido de él.
+# Brok
+PC03_TOY2-2=Y... ¿cómo es que había olvidado completamente que existía?
+# Brok
+PC03_TOY2-3=Me da miedo que algún día me olvide hasta de mi nombre...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Before the first fight with rats
+# *****************************************************************
+# Kins
+PC03_TRAMP_RAT_DIALOG1-1=... No juegues con nosotros. Al jefe no le gustará.
+# Kins
+PC03_TRAMP_RAT_DIALOG1-2=¡Así que danos ya el dinero!
+# Tramp
+PC03_TRAMP_RAT_DIALOG1-3=Señor Squealer. ¿Me ha visto usted bien?
+# Tramp
+PC03_TRAMP_RAT_DIALOG1-4=¿Realmente cree que alguien como yo pueda tener tanto dinero?
+# Kins
+PC03_TRAMP_RAT_DIALOG1-5=¡No me interesa! Así son las normas. Hiciste un trato, ¡y tienes que pagar!
+# Kins
+PC03_TRAMP_RAT_DIALOG1-6=O si no...
+# Tramp
+PC03_TRAMP_RAT_DIALOG1-7=Oh, vaya. Supongo que va a doler.
+#----------------------------------------------------
+# Kins
+#Rats kill the Tramp if Brok goes away
+PC03_TRAMP_RAT_FLEE1-1=Dale duro, Dart.
+# Dart
+PC03_TRAMP_RAT_FLEE1-2=¡Date por muerto, viejo!
+# Tramp
+PC03_TRAMP_RAT_FLEE1-3=¡¡¡OUCH!!!
+# Tramp
+PC03_TRAMP_RAT_FLEE1-4=...
+# Kins
+PC03_TRAMP_RAT_FLEE1-5=Se acabó.
+# Kins
+PC03_TRAMP_RAT_FLEE1-6=Rápido. Vámonos antes de que los de reciclaje vengan a llevárselo.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok saves the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_RAT_DIALOG2-1=¡Hey! ¿Pero qué les pasa?
+# Brok
+PC03_TRAMP_RAT_DIALOG2-2=¡Dejen al anciano en paz!
+# Kins
+PC03_TRAMP_RAT_DIALOG2-3=No es asunto tuyo. ¡Lárgate de aquí ahora mismo!
+# Kins
+PC03_TRAMP_RAT_DIALOG2-4=Y en cuanto a ti...
+# Tramp
+PC03_TRAMP_RAT_DIALOG2-5=¡Ufff! ¿Pueden hacerlo rápido? Ya estoy harto de sufrir.
+# Kins
+PC03_TRAMP_RAT_DIALOG2-6=¡Oh, y vaya que vas a sufrir, amigo!
+# Brok
+PC03_TRAMP_RAT_DIALOG2-7=¡Ya basta! ¡Se van a arrepentir!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rats ambush Brok when coming back
+# *****************************************************************
+# Tramp
+PC03_FIGHT2_DIALOG1-1=¡Muchacho! ¡Ten cuidado!
+# Brok
+PC03_FIGHT2_DIALOG1-2=¿Qué...?
+#----------------------------------------------------
+# Brok
+PC03_FIGHT2_DIALOG2-1=¡Fuera de mi camino!
+# Kins
+PC03_FIGHT2_DIALOG2-2=¡Tú! ¡Tú eres el que se tiene que ir!
+# Brok
+PC03_FIGHT2_DIALOG2-3=¿No aprendieron la lección?
+# Kins
+PC03_FIGHT2_DIALOG2-4=No estamos aquí por ti. Ese sujeto nos debe dinero.
+# Brok
+PC03_FIGHT2_DIALOG2-5=¡No voy a dejar que lo toquen!
+# Kins
+PC03_FIGHT2_DIALOG2-6=Cuenta los dientes que tienes. Vas perder unos cuantos.
+# Brok
+PC03_FIGHT2_DIALOG2-7=¡Ya veremos!
+# Kins
+PC03_FIGHT2_DIALOG2-8=Muchachos...
+#----------------------------------------------------
+# Kins
+PC03_TRAMP_RAT_DIALOGEND2-1=Otra vez no...
+# Dart
+PC03_TRAMP_RAT_DIALOGEND2-2=¡¿Pero y este tipo?! ¡¿Por qué no podemos con él?!
+# Kins
+PC03_TRAMP_RAT_DIALOGEND2-3=¡No me importa! ¡No dejaré que me despelleje!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-1=¿Se encuentra bien?
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-2=Muchacho, eres increíble.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-3=¡Encajarías bien en el ejército!
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-4=¿Yo, un soldado? ¡Ja!
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-5=¿Cómo voy a seguir las órdenes de los demás si no puedo seguir ni las mías?
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-6=Sé que puedes.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-7=Quizás es una tontería, pero...
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-8=Parece que me conoce bastante bien.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-9=¿Está seguro de que no nos hemos visto nunca?
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-10=¡Quién sabe! Tal vez en otra vida.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After saving the Tramp the first time
+# *****************************************************************
+# Kins
+PC03_TRAMP_RAT_DIALOGEND-1=Auch...
+# Kins
+PC03_TRAMP_RAT_DIALOGEND-2=¡Pagarás por esto!
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-3=... Y se han ido. ¿Estás bien?
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-4=No se preocupe por mí.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-5=¿Qué fue todo esto?
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-6=No tendrías que haber interferido. ¡De todos modos no me queda mucha vida!
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-7=¡No diga eso! Y... no ha respondido a mi pregunta.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-8=Es una larga historia... Pero en resumen, les debo dinero.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-9=Verás, me han diagnosticado cardioextenuación, que es incurable.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-10=Algunos días el dolor es inaguantable. Supuse que esas ratas podrían conseguirme fármacos para soportarlo...
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-11=Solo quería disfrutar de la vida antes de que llegue a su fin.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-12=Lamento mucho oír eso...
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-13=Aun así... Mientras haya vida, hay esperanza. Ninguna enfermedad es incurable.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-14=Solo hace falta que alguien encuentre cómo. Viví con una farmacéutica lo suficiente como para saberlo.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-15=Teóricamente. Pero los Slumers no le importamos a nadie.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-16=De cualquier modo, no debería quedarse aquí fuera. ¡Venga a nuestro apartamento!
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-17=No hay mucho sitio, pero encontraremos la manera.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-18=¡Te lo agradezco enormemente! Pero no puedo aceptar.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-19=Ya te he causado bastantes molestias. Temo que vayan por ti...
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-20=¡Que vengan! ¡Les enseñaré lo que significa "respetar a los mayores"!
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-21=Erm... Lo siento, no quería decir...
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-22=No te preocupes. Pero por favor, no insistas. Esta es mi decisión.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-23=De acuerdo...
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-24=Pero encontraré la manera de ayudarlo. Se lo prometo.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-25=¡Tienes toda tu vida por delante!
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-26=No la malgastes en alguien como yo.
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-27=¡Pero yo quiero! ¡Y también es mi decisión!
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-28=¡Ja, ja!
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-29=Está bien.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-30=Esta es la última prescripción que tengo.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-31=Esto se remonta a mis tiempos como Drumer. Antes de que me expulsaran...
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-32=¡¿Expulsado?!
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-33=Ya sabes las normas. Solo los físicamente aptos se pueden quedar, a menos que tengan familia para pagar... y yo no la tengo.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-34=Esta medicina aliviaba mi enfermedad.
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-35=No creo que puedas conseguirla con este viejo trozo de cartón, pero... llévatelo.
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_RATDIALOGEND2-1=Ojalá tuviera algo más útil que ofrecerte.
+# Brok
+PC03_TRAMP_RATDIALOGEND2-2=¡Está bien! Me las arreglaré.
+# Tramp
+PC03_TRAMP_RATDIALOGEND2-3=Gracias, muchacho...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player talks to the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_WELCOME1-1=¡Hola!
+# Tramp
+PC03_TRAMP_WELCOME1-2=Hola, muchacho.
+# Tramp
+PC03_TRAMP_WELCOME1-3=No me molesta hablar contigo, pero no sé cómo podría serte de utilidad.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME2-1=¿Cómo está?
+# Tramp
+PC03_TRAMP_WELCOME2-2=Pero muchacho, esa es la última pregunta que deberías hacerle a un viejo moribundo como yo.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE2-1=¡Hey! ¿Cómo le va?
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE2-2=Genial. La medicina está empezando a funcionar. ¡Ya siento las piernas!
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE2-3=¡Me alegra oírlo!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIMSELF1-1=Esas placas... Usted estuvo en el ejército.
+# Tramp
+PC03_TRAMP_HIMSELF1-2=¡Buen ojo, muchacho!
+# Tramp
+PC03_TRAMP_HIMSELF1-3=Hace un par de años, fui parte de la resistencia contra la Autarquía.
+# Brok
+PC03_TRAMP_HIMSELF1-4=Entonces seguramente pueda enfrentarlos.
+# Tramp
+PC03_TRAMP_HIMSELF1-5=Puede que seas un detective, pero aún tienes mucho que aprender.
+# Tramp
+PC03_TRAMP_HIMSELF1-6=Mi cuerpo está en declive. Apenas puedo tenerme en pie.
+# Tramp
+PC03_TRAMP_HIMSELF1-7=No tiene sentido. Ya he aceptado que mi vida llega a su fin.
+# Brok
+PC03_TRAMP_HIMSELF1-8=¡No le permito que diga eso! ¡Encontraré alguna manera de ayudarlo!
+# Tramp
+PC03_TRAMP_HIMSELF1-9=Por favor, no me des falsas esperanzas.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIMSELF2-1=Dígame. ¿Cómo es que nunca lo he visto por aquí?
+# Tramp
+PC03_TRAMP_HIMSELF2-2=Suelo ir de calle en calle. No me puedo quedar mucho en un sitio.
+# Tramp
+PC03_TRAMP_HIMSELF2-3=Mendigar está prohibido y no puedo pagar una casa. Esta sociedad tiene muchas contradicciones.
+# Brok
+PC03_TRAMP_HIMSELF2-4=Ya veo...
+# Brok
+PC03_TRAMP_HIMSELF2-5=Entonces, ¿por qué no deja la ciudad? Podría tener una vida tranquila como granjero ahí fuera.
+# Tramp
+PC03_TRAMP_HIMSELF2-6=Sabes que no es tan sencillo. Las fronteras están cerradas salvo para los ciudadanos de clase alta.
+# Tramp
+PC03_TRAMP_HIMSELF2-7=Además, Atlasia es mi país. Nací aquí. Lo he defendido toda mi vida.
+# Tramp
+PC03_TRAMP_HIMSELF2-8=Aquí es donde mi vida debería terminar.
+# Brok
+PC03_TRAMP_HIMSELF2-9=Pero no así...
+# Tramp
+PC03_TRAMP_HIMSELF2-10=Esa decisión me corresponde a mí.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIMSELF3-1=Me preguntaba...
+# Tramp
+PC03_TRAMP_HIMSELF3-2=¿Por qué te preocupas tanto? Apenas nos conocemos.
+# Brok
+PC03_TRAMP_HIMSELF3-3=No sé... ¿Está seguro de eso? No me da esa sensación.
+# Brok
+PC03_TRAMP_HIMSELF3-4=Nadie debería renunciar a la vida. La vida es lo más valioso en el mundo.
+# Tramp
+PC03_TRAMP_HIMSELF3-5=El candor de la juventud.
+# Tramp
+PC03_TRAMP_HIMSELF3-6=Algún día... lo entenderás...
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_RATS1-1=Esos eran Squealers, ¿no?
+# Tramp
+PC03_TRAMP_RATS1-2=Así es.
+# Brok
+PC03_TRAMP_RATS1-3=¿No los exiliaron hace más de una década?
+# Tramp
+PC03_TRAMP_RATS1-4=Sí... Al menos, eso es lo que la mayoría de la gente cree.
+# Tramp
+PC03_TRAMP_RATS1-5=Aun así... Algunos de ellos se quedaron en las sombras, infiltrándose en nuestra sociedad.
+# Tramp
+PC03_TRAMP_RATS1-6=Mi enfermedad me hizo débil... Se aprovecharon de la situación.
+# Tramp
+PC03_TRAMP_RATS1-7=Pero no los culpo.
+# Brok
+PC03_TRAMP_RATS1-8=¡¿Cómo puede decir eso?! ¡Recién intentaron matarlo!
+# Tramp
+PC03_TRAMP_RATS1-9=Sí... Pero no pude saldar mi deuda.
+# Tramp
+PC03_TRAMP_RATS1-10=Sin embargo, no me arrepiento. Sus fármacos me dieron más tiempo.
+# Tramp
+PC03_TRAMP_RATS1-11=Pude hacer todo lo que quería.
+# Brok
+PC03_TRAMP_RATS1-12=Aun así, no deberían llegar a tales extremos. Amenazarlo de muerte... no tiene justificación.
+# Tramp
+PC03_TRAMP_RATS1-13=Ten cuidado, muchacho. Las cosas nunca son blancas o negras.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_RATS2-1=No lo entiendo...
+# Brok
+PC03_TRAMP_RATS2-2=¿Qué ganarían deshaciéndose de usted? Ya no les podría devolver el dinero.
+# Tramp
+PC03_TRAMP_RATS2-3=Sería un ejemplo.
+# Tramp
+PC03_TRAMP_RATS2-4=Valgo más muerto que vivo.
+# Brok
+PC03_TRAMP_RATS2-5=Bueno, ¡no voy a dejar que eso ocurra!
+# Tramp
+PC03_TRAMP_RATS2-6=Por favor, ten cuidado. Lo último que querría es que te mataran.
+# Brok
+PC03_TRAMP_RATS2-7=¡No se preocupe por mí! Sé cómo defenderme.
+# Tramp
+PC03_TRAMP_RATS2-8=Seguramente... Pero son numerosos. No puedes darle una paliza a todos.
+# Brok
+PC03_TRAMP_RATS2-9=¿Quiere apostar?
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_THINK1-1=(Me dijo que no me involucrara, o acabaría metiéndome en apuros...)
+# Brok
+PC03_TRAMP_THINK1-2=(Puede que tenga razón, pero no puedo evitarlo. ¡Tengo que ayudar a ese pobre hombre!)
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_EXIT1-1=Me tengo que ir, pero volveré pronto.
+# Tramp
+PC03_TRAMP_EXIT1-2=Ten cuidado, muchacho.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_EXIT2-1=Quédese aquí. Encontraré una cura para usted.
+# Tramp
+PC03_TRAMP_EXIT2-2=Se nota que estás ocupado. No malgastes tu tiempo conmigo.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-1=¡Para usted!
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-2=Pero muchacho... ¿Necesitas gafas?
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-3=¿Por qué me devuelves mi prescripción?
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-4=¡Ups!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-1=Esto... va a ser algo más complejo de lo que creía.
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-2=Oh.
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-3=¡Pero no se preocupe!
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-4=¡No me voy a rendir!
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-5=¿Hay algo que pueda hacer por usted hasta que consiga su medicina?
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-6=Mmm...
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-7=Algunos genéricos ayudan un poco...
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-8=¡Dígame! ¿Cuáles?
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-9=Glucosita. Pero es tan cara...
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-10=No te puedo pedir que...
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-11=Se la conseguiré.
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-12=No lo hagas. Solo retrasaría lo inevitable.
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-13=Sé que tú y tu hijo necesitan ese dinero.
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-14=¿Mi hijo?... ¿Cómo es que...?
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-15=Intuición.
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-16=¡Bueno, le conseguiré algo!
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-17=De acuerdo...
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-18=Pero prométeme... que no harás locuras.
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-19=Ten eso en mente.
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-20=¡Claro!
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE2-1=¿Has conseguido mi medicina?
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-1=Tome.
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-2=¿Glucosita?...
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-3=Pero muchacho...
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-4=Nah. No diga nada.
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-5=Solo tómela.
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-6=Está bien.
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-7=Gracias...
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-8=Seguiré buscando la manera de conseguir su medicina, pero antes debo encontrar algún doctor.
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-9=No malgastes tu vida en esto.
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-10=El tiempo es dinero y claramente andas escaso de ambos.
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-11=Me las arreglaré.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GLUCOSITE_NO1-1=Lo siento... Necesito más tiempo.
+# Tramp
+PC03_TRAMP_GLUCOSITE_NO1-2=Está bien.
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_NOMEDICINE-1=Ya me siento algo mejor...
+# Brok
+PC03_TRAMP_NOMEDICINE-2=¡Genial!
+# Tramp
+PC03_TRAMP_NOMEDICINE-3=...pero no durará mucho.
+# Brok
+PC03_TRAMP_NOMEDICINE-4=No hay problema. ¡Le conseguiré la medicina!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_DEFAULT1-1=¡Tenga! ¡Tome esto!
+# Tramp
+PC03_TRAMP_INV_DEFAULT1-2=Muchacho... Puede que sea un vagabundo, pero no estoy tan desesperado.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_DEFAULT2-1=¡Esto podría serle útil!
+# Tramp
+PC03_TRAMP_INV_DEFAULT2-2=Quédatelo. No sabría para qué usarlo.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_BILL1-1=Necesito ayuda para pagar mis facturas.
+# Tramp
+PC03_TRAMP_INV_BILL1-2=¿Y... me pides ayuda a mí?
+# Brok
+PC03_TRAMP_INV_BILL1-3=Ups... ¡Lo siento!
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_MINEBROKEN-1=Usábamos unas idénticas en el ejército.
+# Tramp
+PC03_TRAMP_INV_MINEBROKEN-2=¡No deberías llevarla encima!
+# Brok
+PC03_TRAMP_INV_MINEBROKEN-3=¡No se preocupe! ¡Está rota!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_MONEY-1=Tenga. Para usted.
+# Tramp
+PC03_TRAMP_INV_MONEY-2=Muchacho. Puedo ser un vagabundo, pero el dinero no es lo que necesito ahora.
+# Brok
+PC03_TRAMP_INV_MONEY-3=Lo siento... Solo quería ayudar.
+# Tramp
+PC03_TRAMP_INV_MONEY-4=Guárdatelo. A ti te vendrá mejor.
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_APARTMENTKEY-1=Lo entiendo. Pero de verdad no puedo. Tu casa es tu casa.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_PILL-1=¡Tenga! ¡Esto debería curarlo!
+# Tramp
+PC03_TRAMP_INV_PILL-2=¿Qué es?
+# Brok
+PC03_TRAMP_INV_PILL-3=Erm...
+# Tramp
+PC03_TRAMP_INV_PILL-4=Lo siento, muchacho. Los placebos no me sirven...
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_POLLUTIONPILL-1=Gracias, chico, pero ya tengo una.
+# Tramp
+PC03_TRAMP_INV_POLLUTIONPILL-2=Aún me tomo mis píldoras diarias. Pensé en dejarlas, pero la muerte por asfixia me aterra.
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_STICK-1=¡Solía ser un as en artes marciales!
+# Tramp
+PC03_TRAMP_INV_STICK-2=Ahora apenas puedo sostener una cuchara...
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_GUN-1=Adelante.
+# Brok
+PC03_TRAMP_INV_GUN-2=¡Espere, no! Solo quería enseñársela...
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_CATFUR-1=Tenga. ¡Esto lo mantendrá calentito!
+# Tramp
+PC03_TRAMP_INV_CATFUR-2=Este... Cómo decirlo...
+# Brok
+PC03_TRAMP_INV_CATFUR-3=Olvídelo.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player hits the Tramp
+# *****************************************************************
+# Tramp
+PC03_TRAMP_HIT1-1=... Ouch.
+# Brok
+PC03_TRAMP_HIT1-2=¡Oh, no! Lo siento, no quería...
+# Tramp
+PC03_TRAMP_HIT1-3=Está bien, muchacho. No te preocupes.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIT2-1=Lo siento... ¡Se me fue la mano!
+# Tramp
+PC03_TRAMP_HIT2-2=Estoy bien. Más o menos.
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_HIT3-1=Ya veo... Así que no fue un accidente.
+# Tramp
+PC03_TRAMP_HIT3-2=Muy bien. Estoy listo. Prefiero morir en tus manos que en las de ellos.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Tramp dead
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH-1=...
+# Brok
+PC03_TRAMP_DEATH-2=Está... muerto...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player didn't get the medecine so tramp is dead
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH_GLUCOSITE-1=No pude conseguir su medicina... pero...
+# Brok
+PC03_TRAMP_DEATH_GLUCOSITE-2=¡Seguro que había una solución!... ¡Debería haberme esforzado más!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player kills the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH_US-1=Oh, no... ¿Desde cuándo soy un asesino?
+# Brok
+PC03_TRAMP_DEATH_US-2=He acabado con su sufrimiento, pero... ¿Qué derecho tenía yo a hacerlo?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player fled
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH_THEM-1=Sabía lo que iba a pasar... Pero decidí huir...
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_DEATH_NEXT-1=Demasiado tarde para lamentarse...
+# Brok
+PC03_TRAMP_DEATH_NEXT-2=(Suspira)
+# Brok
+PC03_TRAMP_DEATH_NEXT-3=Llamaré al servicio de reciclaje de cuerpos... Que su muerte no haya sido completamente en vano.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 - Talk to the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_WELCOME_DAY2END-1=¿Sigue aguantando?
+# Tramp
+PC03_TRAMP_WELCOME_DAY2END-2=...Sí.
+# Brok
+PC03_TRAMP_WELCOME_DAY2END-3=(Intenta aparentar entereza, pero puedo verlo...)
+# Brok
+PC03_TRAMP_WELCOME_DAY2END-4=(No está para nada bien. Más vale conseguirle pronto su medicina...)
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME_DAY2-1=¡Hey! ¿Cómo se encuentra hoy?
+# Tramp
+PC03_TRAMP_WELCOME_DAY2-2=He pasado una noche horr...
+# Tramp
+PC03_TRAMP_WELCOME_DAY2-3=Bueno... Sigo vivo. Y gracias a ti.
+# Brok
+PC03_TRAMP_WELCOME_DAY2-4=¡Me alegra oírlo!
+# Brok
+PC03_TRAMP_WELCOME_DAY2-5=(Todavía debo encontrar un doctor. Por desgracia todos viven en los Drums, y no conozco a ninguno de confianza...)
+# Brok
+PC03_TRAMP_WELCOME_DAY2-6=(Ojalá conozca alguno hoy.)
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME_DAY3-1=¡Hey! ¿Cómo está hoy?
+# Tramp
+PC03_TRAMP_WELCOME_DAY3-2=(Respira pesadamente)
+# Tramp
+PC03_TRAMP_WELCOME_DAY3-3=Estoy... bien.
+# Brok
+PC03_TRAMP_WELCOME_DAY3-4=(Oh, no... Está en las últimas.)
+# Brok
+PC03_TRAMP_WELCOME_DAY3-5=(Espera... ¿Mi nuevo cliente no es un doctor?)
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_GHERKIN1-1=(Respira pesadamente)
+# Brok
+PC03_TRAMP_GHERKIN1-2=¡Doctor! ¿Puede hacer algo por él?
+# Gherkin
+PC03_TRAMP_GHERKIN1-3=¡Oh, no! ¡Pobre señor!
+# Gherkin
+PC03_TRAMP_GHERKIN1-4=¡¿Por qué no me habló de su estado?!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GHERKINNO-1=¡No importa!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GHERKINYES-1=¡Lo hice!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GHERKIN2-1=Esta es su prescripción.
+# Gherkin
+PC03_TRAMP_GHERKIN2-2=¡Oh!
+# Gherkin
+PC03_TRAMP_GHERKIN2-3=Señor, está de suerte. Tengo exactamente lo que necesita en mi maleta.
+# Brok
+PC03_TRAMP_GHERKIN2-4=¡Genial!
+# Tramp
+PC03_TRAMP_GHERKIN2-5=¿Quién... es usted?
+# Gherkin
+PC03_TRAMP_GHERKIN2-6=Esta fórmula experimental altamente concentrada debería durarle unos cuantos años.
+# Brok
+PC03_TRAMP_GHERKIN2-7=¡Por favor! ¡Tráguesela!
+# Tramp
+PC03_TRAMP_GHERKIN2-8=...
+# Gherkin
+PC03_TRAMP_GHERKIN2-9=Debería tener efecto inmediato.
+# Brok
+PC03_TRAMP_GHERKIN2-10=¡Muchas gracias, doctor!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Give his medicine!
+# *****************************************************************
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-1=¡Tengo algo para usted!
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-2=¡Tenga!
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-3=... ¿Esto es...?
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-4=Sep, ¡su medicina!
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-5=Pero muchacho...
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-6=Eso... es más de lo jamás hubiera imaginado...
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-7=¿Cómo voy a poder pagártelo?
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-8=No hace falta. ¡Me alegra ser de ayuda!
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-9=Voy a guardármelas, no sea que atraigan a curiosos indeseables.
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-10=¡Claro!
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-11=Y si vuelven a aparecer esas malditas ratas... ¡aquí estaré!
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-12=Estoy bastante seguro de que no se atreverán. ¡Ayer les diste una buena paliza!
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-13=Y con esto ya debería ser capaz de defenderme. Mi entrenamiento militar está ahí, esperando a que lo despierten.
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-14=¡Genial!
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-15=Bueno...
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-16=Mejórese.
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-17=Lo haré.
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-18=Esto no curará la enfermedad, pero... debería aliviarla.
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-19=Ojalá pudiera hacer más...
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-20=Me acabas de dar un futuro.
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-21=No hay mejor regalo que ese.
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-22=Sí...
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-23=Aun así, mi oferta sigue en pie. Si quiere alojarse en mi casa, aunque sea temporalmente...
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-24=Y yo vuelvo a rechazarla respetuosamente.
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-25=Pero...
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-26=Igual que tú... Es mi elección.
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-27=Está bien... Bueno, nuestra puerta está siempre abierta por si cambia de opinión.
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-28=Gracias, Brok.
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-29=...
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-30=(¿...?)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Brok comes back and the Tramp is gone, leaving a letter for him
+# *****************************************************************
+# Brok
+PC03_TRAMP_GONE1-1=¡¿Uh?!
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GONE2-1=¿Se ha ido?...
+# Brok
+PC03_TRAMP_GONE2-2=Espero que no le haya pasado nada...
+# Brok
+PC03_TRAMP_GONE2-3=Espera. ¿Qué es eso?
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GONE3-1=Una carta...
+# Brok
+PC03_TRAMP_GONE3-2=¿"Para Brok"?...
+# Tramp
+PC03_TRAMP_GONE3-3="Hola, muchacho."
+# Tramp
+PC03_TRAMP_GONE3-4="He decidido seguir tu consejo y me voy a mudar a un sitio más tranquilo."
+# Tramp
+PC03_TRAMP_GONE3-5="Aun así, me siento avergonzado porque... te mentí."
+# Tramp
+PC03_TRAMP_GONE3-6="Había una razón por la que vine aquí."
+# Tramp
+PC03_TRAMP_GONE3-7="Quería ver al hijo adoptivo de mi mejor amigo antes de dejar este mundo."
+# Tramp
+PC03_TRAMP_GONE3-8="Verás... Conocí a tu 'Abuelo'."
+# Tramp
+PC03_TRAMP_GONE3-9="Cuando murió, yo era quien tendría que haber cuidado de ti. Me lo pidió, pero lo rechacé..."
+# Tramp
+PC03_TRAMP_GONE3-10="Entonces aún era joven. No creí que fuera capaz de soportarlo... estando en el ejército y todo eso."
+# Tramp
+PC03_TRAMP_GONE3-11="Me he arrepentido de esa decisión cada día de mi vida. Te dejé completamente solo."
+# Tramp
+PC03_TRAMP_GONE3-12="A pesar de esto, me alegro de que te hayas convertido en una persona fuerte y con un gran corazón."
+# Tramp
+PC03_TRAMP_GONE3-13="Eres su viva imagen. Siempre queriendo ayudar a todos."
+# Tramp
+PC03_TRAMP_GONE3-14="Lo sé porque..."
+# Tramp
+PC03_TRAMP_GONE3-15="Bueno... Me prometí que nunca diría nada, pero..."
+# Tramp
+PC03_TRAMP_GONE3-16="Digamos que... tuve la suerte hace tiempo de poder ver lo impresionante que eres."
+# Tramp
+PC03_TRAMP_GONE3-17="Ten cuidado. La vida es complicada."
+# Tramp
+PC03_TRAMP_GONE3-18="No dejes que los demás abusen de tu amabilidad. No dejes que anulen tu buen juicio."
+# Tramp
+PC03_TRAMP_GONE3-19="Me diste una segunda oportunidad, y me convenciste para exprimir los últimos años de mi vida."
+# Tramp
+PC03_TRAMP_GONE3-20="Me quiero despedir con un regalo. Por favor, dale buen uso a esto durante tus peleas."
+# Tramp
+PC03_TRAMP_GONE3-21="No te preocupes. Nos veremos en otro momento... ¡Aunque quizás estaré algo cambiado!"
+# Tramp
+PC03_TRAMP_GONE3-22="Sigue tan fuerte como siempre."
+# Tramp
+PC03_TRAMP_GONE3-23="Tu tío, Ric."
+# Brok
+PC03_TRAMP_GONE3-24=Tío...
+# Brok
+PC03_TRAMP_GONE3-25=Ojalá me lo hubieras dicho... No pasamos demasiado tiempo juntos.
+# Brok
+PC03_TRAMP_GONE3-26=Hay un papel con mi dirección en él.
+# Brok
+PC03_TRAMP_GONE3-27=Y...
+# Brok
+PC03_TRAMP_GONE3-28=una especie de amuleto.
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GONE4-1=¡Parece bastante útil!
+# Brok
+PC03_TRAMP_GONE4-2=Gracias, tío. Lo llevaré conmigo siempre.
+# Brok
+PC03_TRAMP_GONE4-3=Nunca te olvidaré...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interaction with sticker
+# *****************************************************************
+# Brok
+PC03_STICKERDISPLAY1-1=Hey, ¿no es esta la banda favorita de Graff?
+# Brok
+PC03_STICKERDISPLAY1-2=¡Quizás podría comprarle una entrada!
+# Brok
+PC03_STICKERDISPLAY1-3=Si mis finanzas me lo permiten.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Drones visit Brok if bills unpaid
+# *****************************************************************
+# Brok
+PC03_STORY175_DRONES-1=...
+# Brok
+PC03_STORY175_DRONES-2=¿Drones?... Qué será ahora...
+# Tribot
+PC03_STORY175_DRONES-3=Ciudadano de los Slums.
+# Tribot
+PC03_STORY175_DRONES-4=Tiene facturas atrasadas.
+# Tribot
+PC03_STORY175_DRONES-5=Explíquese.
+# Brok
+PC03_STORY175_DRONES-6=¿Por qué crees que sea?
+# Brok
+PC03_STORY175_DRONES-7=¡No tengo dinero!
+# Tribot
+PC03_STORY175_DRONES-8=Tiene tres segundos para pagar.
+# Brok
+PC03_STORY175_DRONES-9=¡¿Tres segundos?!
+# Brok
+PC03_STORY175_DRONES-10=¿Y si no, qué...?
+# Tribot
+PC03_STORY175_DRONES-11=Plazo terminado.
+# Tribot
+PC03_STORY175_DRONES-12=Prepárese para la exterminación.
+# Brok
+PC03_STORY175_DRONES-13=Oh, vaya.
+# Brok
+PC03_STORY175_DRONES-14=Pagues o no, las facturas siempre duelen.
+#----------------------------------------------------
+# Brok
+PC03_STORY175_DRONES_WIN-1=...
+# Brok
+PC03_STORY175_DRONES_WIN-2=Debería replantearme lo de no pagar las facturas. ¡La próxima vez quizás bombardeen todo el distrito!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Brok comes back when Graff didn't take his Toxout pill
+# *****************************************************************
+# Tramp
+PC03_TRAMP_PILLWELCOME-1=¡Muchacho!
+# Tramp
+PC03_TRAMP_PILLWELCOME-2=¡Ve rápido a tu casa! ¡Tu hijo está en peligro!
+# Brok
+PC03_TRAMP_PILLWELCOME-3=¡¿Graff?!
+#----------------------------------------------------
+# Brok
+PC03_LEAVINGNOPE-1=¡No! ¡Graff me necesita!
+#----------------------------------------------------
+# Tribot
+PC03_STORY175_DRONES_LOSE-1=Sus deudas se transferirán a sus herederos legales.
+# Tribot
+PC03_STORY175_DRONES_LOSE-2=Gracias por su cooperación.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Gameover after fighting
+# *****************************************************************
+# Tramp
+PC03_TRAMP_RAT_LOSE1-1=¡Oh, no!...
+# Dart
+PC03_TRAMP_RAT_LOSE1-2=¡Qué fácil!
+# Dart
+PC03_TRAMP_RAT_LOSE1-3=Tu turno, viejo.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Gameover after fighting
+# *****************************************************************
+# Tramp
+PC03_TRAMP_RAT_LOSE2-1=¡Nooo!
+# Kins
+PC03_TRAMP_RAT_LOSE2-2=Esta vez, ¡nosotros reímos al último!
+# Rat
+PC03_TRAMP_RAT_LOSE2-3=¡Sí! ¡Ya tenemos para unos zapatos!
+# Dart
+PC03_TRAMP_RAT_LOSE2-4=Ups... El jefe dijo que se lo lleváramos vivo.
+# Kins
+PC03_TRAMP_RAT_LOSE2-5=¡Imbécil! ¡¿Por qué no nos avisaste?!
+# Dart
+PC03_TRAMP_RAT_LOSE2-6=Lo siento, chicos...
+#----------------------------------------------------
+# Brok
+PC03_STICKER_AD-1=Espera... ¡Este es diferente!
+#----------------------------------------------------
+# Brok
+PC03_LEAVINGNOPEALT-1=¡No puedo irme todavía!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok saves the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAILER1-1=¡Oye! ¡Deja al anciano en paz!
+# Kins
+PC03_TRAILER1-2=No es asunto tuyo. ¡Lárgate de aquí!
+# Brok
+PC03_TRAILER1-3=¡Basta! ¡Me las vas a pagar!
+#----------------------------------------------------
+# Brok
+PC03_TRAILER2-1=... Está... muerto...
+#----------------------------------------------------
+# Unknown
+COOP_PC03_TRAMP1-1=Ya veo... En esta dimensión contrajo una enfermedad.
+# Unknown
+COOP_PC03_TRAMP1-2=Qué demacrado esta. Vaya cambio.

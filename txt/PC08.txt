@@ -1,0 +1,415 @@
+﻿#-------------------------------
+#=SHAY OUTSIDE
+#-------------------------------
+
+
+#----------------------
+#= Garage
+#----------------------
+ID=PC08_GARAGE1
+T=The garage is closed? That's weird... Usually she leaves it open all day.
+W=BROK
+A=THINK
+TEN=PC08_GARAGE_KNOCK
+CONTEXT=Garage door
+
+#----------------------
+ID=PC08_GARAGE1B
+T=(Knock, knock) Shay? Are you there?
+W=BROK
+A=YELL
+
+T=...no reply.
+W=BROK
+A=WONDER
+
+T=I bet she's in there anyway. She never leaves the place!
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC08_DAY3_GARAGE1
+T=Closed... Shay warned me.
+W=BROK
+A=MAYBE
+CONTEXT=Day 3 - The garage is closed and there's a lock
+
+T=But this lock... That's new.
+W=BROK
+A=WONDER
+TEN=PC08_DAY3_CLOSEUP
+
+#----------------------
+ID=PC08_DAY3_CLOSEUP1
+T=A keyboard... Three slots...
+W=BROK
+A=THINK
+
+T="Noun + verb + noun" is written down.
+W=BROK
+A=THINK
+
+T=Looks like I need to enter three words...
+W=BROK
+A=WONDER
+TEN=PC08_DAY3_CHOICES1
+
+
+#----------------------
+ID=PC08_PICTURE_CLOCK
+T=Is this a clock?
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC08_PICTURE_RUBBER
+T=Hmm... If I'm not mistaken, this is one of those old erasers I used at school.
+W=BROK
+A=MOCK
+
+#----------------------
+ID=PC08_PICTURE_THINK
+T=I can't think of anything.
+W=BROK
+A=WONDER
+
+T=Hey, maybe it's just that... A brain!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC08_DAY3_NOTYET1
+T=Nah... Pretty sure I'm not supposed to enter her garage right now.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC08_DAY3_NOTYET2
+T=Nope! I don't have enough items to solve this.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC08_DAY3_WRONG1
+T=No good...
+W=BROK
+A=STUPID
+
+#----------------------
+ID=PC08_DAY3_WRONG2
+T=Nope!
+W=BROK
+A=ANGRY
+
+
+#----------------------
+ID=PC08_DAY3_WRONG3
+T=Wrong again...
+W=BROK
+A=ANGRY
+
+T=I should take a closer look at those symbols...
+W=BROK
+A=MAYBE
+
+
+#----------------------
+ID=PC08_DAY3_WRONG4
+T=Shay asked me to be a detective for a reason, so these words must be linked to her invention.
+W=BROK
+A=READY
+
+
+#----------------------
+ID=PC08_DAY3_CHOICES_EXIT
+T=I'm not sure...
+W=BROK
+A=WONDER
+
+
+
+#----------------------
+ID=PC08_DAY3_GARAGEWIN
+T=...
+W=BROK
+A=READY
+TEN=PC08_DAY3_ENTERGARAGE
+
+#----------------------
+#= Button
+#----------------------
+ID=PC08_BUTTONA1
+T=Weird, I don't remember this button...!
+W=BROK
+A=WONDER
+TEN=PC08_BUTTON1
+CONTEXT=Day 1 - Checking the buttons on the garage door
+
+#----------------------
+ID=PC08_BUTTONB1
+T=What's this for...?
+W=BROK
+A=WONDER
+TEN=PC08_BUTTON2
+
+#----------------------
+ID=PC08_BUTTONNO
+T=No way!
+W=BROK
+A=ANGRY
+
+
+
+#----------------------
+#= Slot
+#----------------------
+ID=PC08_SLOT1
+T=That's new...
+W=BROK
+A=WONDER
+CONTEXT=Inside the slot is a saw ready to kill the player. It unleashes!
+
+#----------------------
+ID=PC08_SLOT_ESCAPED1
+T=What the?!
+W=BROK
+A=SURPRISED
+
+
+#----------------------
+ID=PC08_SLOT_DISABLED
+T=Deactivated! Phew!
+W=BROK
+A=HAPPY
+
+
+
+#-----------------------------
+#= Exit while we shouldn't
+#-----------------------------
+ID=PC08_DAY3_NOEXIT1
+T=I won't go back now...
+W=BROK
+A=READY
+CONTEXT=Day 3 end - Prevent player from exiting
+TEN=PC08_DAY3_NOEXIT
+
+
+
+
+#-----------------------------
+#= Get material
+#-----------------------------
+ID=PC08_MATERIAL1
+T=Ha-ha!
+W=BROK
+A=ALRIGHT
+CONTEXT=Getting Shay's material from this room
+TEN=PC08_MATERIAL_GET
+
+
+#-----------------------------
+#= Ending "Cannot"
+#-----------------------------
+ID=PC08_STORY330_CANNOT_WITHGRAFF1
+T=...
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=SAD
+TEN=PC08_STORY330_CANNOT0
+CONTEXT=Day 3 Ending "Cannot" - Graff came with Brok to try the time machine but it's nowhere to be found.
+
+T=I don't understand...
+W=BROK
+
+T=And Shay?
+W=BROK
+C1A=MAYBE
+
+T=Where the heck could she be?
+W=BROK
+TEN=PC08_STORY330_CANNOT1
+
+T=Who is Shay?
+W=GRAFF
+TEN=PC08_STORY330_CANNOT2
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=Something...
+W=BROK
+C1A=SURPRISED
+
+T=Something's wrong...
+W=BROK
+TEE=PC08_STORY330_CANNOT3
+
+T=Graff?!
+W=BROK
+COMM=Graff and the garage are starting to fade away
+
+T=...
+W=GRAFF
+
+T=Graff!!! What's going on?!
+W=BROK
+TEN=PC08_STORY330_CANNOT4
+
+T=B...Brok...?
+W=GRAFF
+TEN=PC08_STORY330_CANNOT5
+
+T=The garage... It's disappearing!
+W=BROK
+
+T=Get outta here! Now!
+W=BROK
+
+T=...
+W=GRAFF
+TEN=PC08_STORY330_BROKRUN
+
+T=Noooo!
+W=BROK
+C1A=YELL
+
+T=Don't leave me!
+W=BROK
+C1A=HEARTBROKEN
+TEN=PC08_STORY330_CANNOT6
+
+T=Hold my hand!
+W=BROK
+
+T=...
+W=GRAFF
+TEN=PC08_STORY330_CANNOT8
+
+#TODO (Brok loses his detective hat)
+
+
+#--------------------------------
+ID=PC08_STORY320_CANNOT_WITHGRAFF2
+T=...
+W=BROK
+A=STUPIDNOHAT
+CONTEXT=Too late, we've entered an alternative reality in which Graff never existed
+
+T=Where am I...?
+W=BROK
+C1A=WONDERNOHAT
+TEN=PC08_STORY320_CANNOT_TURN
+
+T=This is weird...
+W=BROK
+C1A=MAYBENOHAT
+
+T=I... thought...
+W=BROK
+
+T=I had a kid...
+W=BROK
+
+T=A teenage boy...?
+W=BROK
+C1A=WONDERNOHAT
+
+T=Whoa...
+W=BROK
+
+T=I must have eaten way too many ant burritos!
+W=BROK
+C1A=HAPPYNOHAT
+
+T=Me, with a kid!
+W=BROK
+
+T=What a nightmare!
+W=BROK
+
+T=I've always been a loner and it's better this way. I can hardly stand myself!
+W=BROK
+
+T=Oh my! Would you look at the time!
+W=BROK
+C1A=SURPRISEDNOHAT
+
+T=Better run to the fighting pit!
+W=BROK
+TEN=PC08_STORY330_CANNOT12
+
+T=...
+W=BROK
+C1A=MAYBENOHAT
+
+
+#--------------------------------
+ID=PC08_STORY320_CANNOT_WITHGRAFF3
+T=Hmm... What was that boy's name...?
+BVOICE=BROK
+
+T=Ah yes...
+
+T=Graff.
+
+T=Nice name.
+
+T=Who knows.
+
+T=If I have a child someday...
+
+T=I'll name him Graff.
+
+T=Yeah! Sounds good.
+TEN=PC08_STORY320_ENDING_CANNOT
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 01/08/2019
+###############################################
+
+#----------------------
+ID=PC08_GARAGEDOOR_HIT1
+T=Open up!
+W=BROK
+C2=BROK
+C2A=READY
+NB=1
+D=60
+
+#----------------------
+ID=PC08_GARAGEDOOR_HIT2
+T=I know you're in there!
+W=BROK
+C2=BROK
+C2A=READY
+NB=1
+D=60
+
+
+
+#----------------------
+ID=PC08_CABIN1
+T=No way!
+W=BROK
+A=CONFUSED
+
+T=Shay must want me to keep training while she's gone...
+W=BROK
+A=HAPPY
+
+T=Better not disappoint her!
+W=BROK
+A=READY
+TEN=PC08C_CABIN_TRAINING_CHOICE
+
+
+#----------------------
+ID=PC08_CABIN_NO
+T=No time for this!
+W=BROK
+A=OPPOSITE

@@ -1,0 +1,582 @@
+#-------------------------------
+#= HACKER BACK STREET
+#-------------------------------
+
+#----- Interactions --------
+PC_STATUE=Posąg
+PC_WINGS=Skrzydła
+PC_PLANK=Deska
+PC_BRACKET=Klamra
+PC_STRING=Sznurek
+PC_TO_HACKER=Do ulicy hakera
+PC_TRASHCONTAINER=Pojemnik na śmierci
+
+#----- Choices / Items --------
+
+GOT_WINGS=Plastikowe skrzydła!
+GOT_STRING=Sznurek!
+
+CHOICE_GODEE=Uratuj Slumsy
+CHOICE_KEEPLOOKING=Uratuj Graffa
+
+#----- Topics --------
+
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Brok comes to this street for the first time
+# *****************************************************************
+# Brok                                 
+PC14_INTRO1-1=Blee... Co za zapach...
+# Brok                                 
+PC14_INTRO1-2=Haker powinien być w pobliżu. Muszę go szybko znaleźć, zanim się pochoruję...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok comes back to this street just after losing the fight and wonders what happened (time reverted itself)
+# *****************************************************************
+# Brok                                 
+PC14_INTRO2-1=...
+# Brok                                 
+PC14_INTRO2-2=Ten zapach...
+# Brok                                 
+PC14_INTRO2-3=I...
+# Brok                                 
+PC14_INTRO2-4=To znajome uczucie...
+# Brok                                 
+PC14_INTRO2-5=Jakbym... ja...
+# Brok                                 
+PC14_INTRO2-6=Przegrał walkę...
+# Brok                                 
+PC14_INTRO2-7=Został pozostawiony na śmierć...?
+# Brok                                 
+PC14_INTRO2-8=Hmm...
+# Brok                                 
+PC14_INTRO2-9=Lepiej się śpieszyć. Mam złe przeczucie.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rats ambush Brok
+# *****************************************************************
+# Rat                                 
+PC14_BADGUYS1-1=Gdzieś się wybierasz, krokodylku?
+# Brok                                 
+PC14_BADGUYS1-2=Odejdźcie. Nie chcę kłopotów.
+# Rat                                 
+PC14_BADGUYS1-3=Haaaa...
+# Rat                                 
+PC14_BADGUYS1-4=To nie powinieneś był nam pierwszy ich sprawiać.
+# Brok                                 
+PC14_BADGUYS1-5=Co...?
+# Rat                                 
+PC14_BADGUYS1-6=Masz nas za durniów?
+# Rat                                 
+PC14_BADGUYS1-7=Nie okazałeś szacunku szefowi. Zaatakowałeś szefa...
+# Brok                                 
+PC14_BADGUYS1-8=... Poniżyłem go. Tak, pamiętam.
+# Brok                                 
+PC14_BADGUYS1-9=Sam się prosił.
+# Dart                                 
+PC14_BADGUYS1-10=Kto zaatakuje szefa, nie uchodzi z życiem!
+# Brok                                 
+PC14_BADGUYS1-11=Uszedłem wcześniej, więc...
+# Dart                                 
+PC14_BADGUYS1-12=Uszedłeś, co?
+# Dart                                 
+PC14_BADGUYS1-13=Nie uciekniesz nam. Dostaniesz lanie, na które zasługujesz.
+# Brok                                 
+PC14_BADGUYS1-14=Och, tak? Wątpię!
+# Brok                                 
+PC14_BADGUYS1-15=Dawajcie!
+# Dart                                 
+PC14_BADGUYS1-16=Jesteś trupem!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok loses the fight
+# *****************************************************************
+# Rat                                 
+PC14_BADGUYS_LOSE-1=Haha! Mamy cię!
+# Rat                                 
+PC14_BADGUYS_LOSE-2=Kto jest teraz upokarzony, co?!
+# Dart                                 
+PC14_BADGUYS_LOSE-3=Upokorzony, idioto!
+# Rat                                 
+PC14_BADGUYS_LOSE-4=Tak, cóż, teraz jest sztywny i zimny.
+# Rat                                 
+PC14_BADGUYS_LOSE-5=Zanieśmy truchło szefowi. Dostaniemy nagrodę!
+# Dart                                 
+PC14_BADGUYS_LOSE-6=Ta!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - We win the fight - but actually more rats come and Brok loses anyway
+# *****************************************************************
+# Brok                                 
+PC14_BADGUYSWON1-1=...
+#----------------------------------------------------
+# Brok                                 
+PC14_BADGUYSWON2-1=Jasny gwint...
+# Rat                                 
+PC14_BADGUYSWON2-2=Mamy go w potrzasku!
+# Rat                                 
+PC14_BADGUYSWON2-3=Nie wyjdziesz z tego żywy!
+# Brok                                 
+PC14_BADGUYSWON2-4=Ja to właśnie chciałem...
+#----------------------------------------------------
+# Brok                                 
+PC14_BADGUYSWON3-1=Argh! No nie!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC14_STATUE1-1=Czy to jest posąg Bezogoniastych?
+# Brok                                 
+PC14_STATUE1-2=Pamięta lepsze dni...
+#----------------------------------------------------
+# Brok                                 
+PC14_STATUE2-1=Skrzydła nie są chyba częścią posągu...
+# Brok                                 
+PC14_STATUE2-2=Tak jakby ktoś wymienił pierwotne na tańsze i lżejsze plastikowe skrzydła.
+#----------------------------------------------------
+# Brok                                 
+PC14_STATUE_DESTROYED1-1=Z całego serca przepraszam kogokolwiek, kto stworzył ten posąg...
+# Brok                                 
+PC14_STATUE_DESTROYED1-2=Ale prawdę powiedziawszy, to ja tylko dokończyłem dzieła. Ostatecznie czas zrobiłby to samo.
+#----------------------------------------------------
+# Brok                                 
+#Trying to pick up the wings
+PC14_WINGS1-1=... Urgh!
+# Brok                                 
+PC14_WINGS1-2=Pomimo wyglądu taniego plastiku, skrzydeł nie da się odczepić...
+#----------------------------------------------------
+# Brok                                 
+PC14_WINGS_PICK1-1=Wezmę te skrzydła.
+# Brok                                 
+PC14_WINGS_PICK1-2=Kto wie... Mogą się jeszcze przydać.
+#----------------------------------------------------
+# Brok                                 
+PC14_PLANK1-1=Wygląda jak jedna z tych chowających się ławek.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TOOFAR-1=Te ubrania są porwane i brudne... Muszą tu wisieć długi czas.
+# Brok                                 
+PC14_STRING_TOOFAR-2=Wątpię, by mieli coś przeciwko, żeby ktoś je zabrał, ale jestem za daleko.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE-1=Tak... Mogę znaleźć zastosowanie dla tego sznurka.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE2-1=... Pękł na pół.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE3-1=No cóż, tyle powinno wystarczyć.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Before fight (coming back from VR fight day 2)
+# *****************************************************************
+# Brok                                 
+PC14_STORY180_FIRST-1=Martwię się o Shay. Każdy wokół mnie dziwnie się...
+#----------------------------------------------------
+# Dart                                 
+PC14_BADGUYS2-1=Gdzieś się wybierasz, krokodylku?
+# Brok                                 
+PC14_BADGUYS2-2=Dziwne... Dlaczego mam wrażenie, że to się już wydarzyło...?
+# Dart                                 
+PC14_BADGUYS2-3=Nie mamy nastroju na żarty.
+# Brok                                 
+PC14_BADGUYS2-4=Odejdź. Nie chcę kłopotów.
+# Dart                                 
+PC14_BADGUYS2-5=Jasne. Oddaj nam swoje rzeczy i możesz iść dalej.
+# Brok                                 
+PC14_BADGUYS2-6=Po moim trupie, stary.
+# Rat                                 
+PC14_BADGUYS2-7=Em...Jesteś pewien, Dart?
+# Rat                                 
+PC14_BADGUYS2-8=To znaczy... On już nas pobił...
+# Dart                                 
+PC14_BADGUYS2-9=Tchórz! Mamy przewagę liczebną!
+# Dart                                 
+PC14_BADGUYS2-10=Nic nam nie zrobi, jeśli będziemy trzymać się razem!
+# Dart                                 
+PC14_BADGUYS2-11=Dalej, chłopaki! Ten krokodyl odda nam to, co i tak powinno być nasze.
+# Dart                                 
+PC14_BADGUYS2-12=Niezależnie, czy chce, czy nie!
+# Brok                                 
+PC14_BADGUYS2-13=No dawajcie!
+#----------------------------------------------------
+# Rat                                 
+PC14_BADGUYS2B-1=Dart! Lepiej się poddajmy!
+# Dart                                 
+PC14_BADGUYS2B-2=Nie ma opcji! Szef by tego nie chciał!
+# Dart                                 
+PC14_BADGUYS2B-3=Poza tym... patrz, co zdobyłem, jak on był zajęty obijaniem wam mordy!
+# Rat                                 
+PC14_BADGUYS2B-4=Jego telefon! Świetna robota!
+# Brok                                 
+PC14_BADGUYS2B-5=Co?!
+# Rat                                 
+PC14_BADGUYS2B-6=Teraz dawaj resztę, gadzie!
+# Brok                                 
+PC14_BADGUYS2B-7=Chcesz więcej? Dostaniesz więcej!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Coming to this room with Dr. Gherkin
+# *****************************************************************
+# Brok                                 
+PC14_GHERKIN_FIRST-1=Czekaj.
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_FIRST2-1=Czy ten człowiek będzie sprawiał kłopoty?
+# Brok                                 
+PC14_GHERKIN_FIRST2-2=Jasne, że będzie.
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_FIRST3-1=W takim razie co zrobimy...?
+# Brok                                 
+PC14_GHERKIN_FIRST3-2=Hmm...
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_LEAVE1-1=Czekaj na mnie!
+#----------------------------------------------------
+# Brok                                 
+PC14_GHERKIN_BACK-1=Zniknął.
+# Gherkin                                 
+PC14_GHERKIN_BACK-2=Dobra robota! Unikanie kłopotów to zawsze dobry pomysł!
+# Brok                                 
+PC14_GHERKIN_BACK-3=Tylko czasami.
+#----------------------------------------------------
+# Rat                                 
+#Rat talks on the phone
+PC14_GHERKIN_RATPHONE-1=Tak, Szefie.
+# Rat                                 
+PC14_GHERKIN_RATPHONE-2=Uch-uch.
+# Rat                                 
+PC14_GHERKIN_RATPHONE-3=Jak sobie radzisz z bachorami?
+# Rat                                 
+PC14_GHERKIN_RATPHONE-4=Haha. Te rozpieszczone dzieciaki nie mają pojęcia!
+# Rat                                 
+PC14_GHERKIN_RATPHONE-5=Okej. Zostanę tutaj.
+# Rat                                 
+PC14_GHERKIN_RATPHONE-6=Tak.
+#----------------------------------------------------
+# Rat                                 
+#He notices Brok
+PC14_GHERKIN_RATNOTICES1-1=Hej! Ktoś ty...?
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-2=Jestem koszmarem, który skopał wasze tyłki wczorajszej nocy!
+# Rat                                 
+PC14_GHERKIN_RATNOTICES1-3=O nie!
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-4=Co...?
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-5=Co za mięczak...
+# Gherkin                                 
+PC14_GHERKIN_RATNOTICES1-6=Panie Brok!
+# Gherkin                                 
+PC14_GHERKIN_RATNOTICES1-7=Drony...!
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-8=Ach... Teraz łapię.
+#----------------------------------------------------
+# Rat                                 
+#He falls
+PC14_GHERKIN_RATFALLS-1=Aaaaaaah!
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_RATFALLS2-1=Czy ty właśnie zabiłeś tego mężczyznę?!
+# Brok                                 
+PC14_GHERKIN_RATFALLS2-2=Nie! Upadek nie był taki wysoki!
+# Brok                                 
+PC14_GHERKIN_RATFALLS2-3=Mam nadzieję...
+#----------------------------------------------------
+# Brok                                 
+PC14_GHERKIN_DRONEEND-1=Przy odrobinie szczęścia ten był ostatni.
+# Gherkin                                 
+PC14_GHERKIN_DRONEEND-2=M-musisz mieć pewność co do takich rzeczy! A co jeśli...
+# Brok                                 
+PC14_GHERKIN_DRONEEND-3=Dawaj, doktorze! Mamy obowiązki!
+# Gherkin                                 
+PC14_GHERKIN_DRONEEND-4=Och...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - At the end of the day, Brok looks for Graff with R.J.
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF1-1=... Już miałem problemy ze Szczurasami w tej uliczce.
+# RJ                                 
+PC14_LOOKGRAFF1-2=Ścierwa. Zasługują na lańsko.
+# Brok                                 
+PC14_LOOKGRAFF1-3=Jeśli Graffowi spadł choćby jeden włos z głowy...
+# Brok                                 
+PC14_LOOKGRAFF1-4=...
+# Brok                                 
+PC14_LOOKGRAFF1-5=Czekaj. Ktoś dzwoni...
+#----------------------------------------------------
+# Brok                                 
+#Dee calls
+PC14_LOOKGRAFF_DEECALL_NOSIN-1=(Kliknięcie) Halo?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-2=Cześć...
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-3=Nie mogę znaleźć Sina...
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-4=Psiakość...
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-5=Komisarz dzwonił.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-6=Chce się spotkać.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-7=Tak, wiem... Ale...
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL-1=(Kliknięcie) Halo?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL-2=Gdzie jesteś, kowboju?!
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL-3=Już czas!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-1=Nie mogę. Mój syn zaginął.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-2=Co...?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-3=Przyjadę pomóc!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-4=Nie!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-5=Tylko... przekonaj Wesa, żeby później przyszedł.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-6=Jeśli mam być szczera... Nie czuję się na siłach, żeby użerać się z nim sama.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-7=Nie mów, że się boisz starucha?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-8=Jasne, że nie...! Po prostu...
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-9=Cóż... To jest zbyt ważne. Nie mamy wiele czasu.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-10=Przyszłość Slumsów może zależeć od tego spotkania.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-11=Wybór jest twój!
+#----------------------------------------------------
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-1=Idź. Ja znajdę Graffa.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-2=Na pewno...?
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-3=Zaufaj mi. Te Szczurasy... dostaną za swoje.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-4=...
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-5=Dobra. Ufam ci.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-6=Ale... wrócę tak szybko, jak to możliwe.
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-7=Jasne.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-8=Znajdź mojego chłopca...!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-1=Okej. Idę!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-2=[...]
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-3=Graff... Bądź dzielny.
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-1=Przepraszam...
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-2=Ostatnio nie wspierałem Graffa, gdy mnie potrzebował.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-3=Tym razem... Slumsy mogą poczekać.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-4=...
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-5=Rozumiem.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-6=Zrobię wszystko, co w mojej mocy.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-7=Trzymaj się.
+# Unknown                                 
+PC14_LOOKGRAFF_DEECALL_NO1-8=[...]
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-9=...
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-10=Hej...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - If R.J. isn't there and Brok decides to keep looking for Graff, he goes down the manhole
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-1=Kępka szarego futra...?
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-2=Graff...!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-3=Muszę tam zejść!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-1=Kurde... Ciemno tu.
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-2=...?
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-3=Kto... Kto tam?!
+#----------------------------------------------------
+# Ott                                 
+#Brok meets Ott in the sewers
+PC14_LOOKGRAFF_ONLYOTT1-1=Panie Brok?!
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-2=Ott...!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-3=Zostaliśmy uwięzieni przez Szczurasy!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-4=Gonią mnie! Graff tam nadal jest!
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-5=Uciekaj! Ja się tym zajmę!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-6=Ale...
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-7=Zaufaj mi!
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-8=Te Szczurasy doświadczą ostatecznej rozwałki!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-9=Okej...
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-10=Poczekam na was obojgu na powierzchni!
+#----------------------------------------------------
+# Graff                                 
+#Another version where Graff is also there
+PC14_LOOKGRAFF_WITHGRAFF1-1=Brok!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-2=Chłopcy! Tak się cieszę, że was widzę!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-3=Co tu robicie?
+# Ott                                 
+PC14_LOOKGRAFF_WITHGRAFF1-4=Nie ma czasu! Szczurasy nas gonią!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-5=Co?!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-6=Tym razem za to zapłacą...
+# Graff                                 
+PC14_LOOKGRAFF_WITHGRAFF1-7=Nie! Jest ich za dużo!
+# Ott                                 
+PC14_LOOKGRAFF_WITHGRAFF1-8=Musimy uciekać!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-9=Hm...
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-10=Okej. Za mną!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - They all got out of the sewers, escaping rats
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE1-1=No. Powinniśmy być przez chwilę bezpieczni.
+#----------------------------------------------------
+# Ott                                 
+#Ott refers to both Brok and Graff
+PC14_LOOKGRAFF_SURFACE_OTT-1=Wiedziałem, że dacie radę!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-1=A teraz... możecie wyjaśnić?
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-2=Czego oni chcieli?
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-3=Cóż...
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-4=Dobiłem targu z hakerem.
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-5=On... zdradził nas.
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-6=Ten drań...
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-7=Dlaczego...?
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-8=Póżniej! Są ważniejsze rzeczy na głowie!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-9=Braki pigułek... to nie wina Szczurasów.
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-10=Mówią, że to Triboty!
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-11=I dlaczego mamy ufać czemukolwiek, co mówią?
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-12=...
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-13=A niech to! Dee jest w tarapatach!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-14=Kim jest Dee?
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-15=Muszę lecieć!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-16=Czekaj!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-17=Idziemy z tobą!
+# Ott                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-18=Jasne, że tak!
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-19=...
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-20=Dobra ale... wważajcie na siebie!
+# Brok                                 
+#Tribots are attracted to Brok and want to kill him
+PC14_LOOKGRAFF_SURFACE_NEXT-21=Mam mały problem... z przyciąganiem botów do siebie.
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-22=Co...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Click on the thing covering manhole
+# *****************************************************************
+# Brok                                 
+PC14_TRASHCONTAINER1-1=Hmm...
+# Brok                                 
+PC14_TRASHCONTAINER1-2=To zawsze tu stało...?
+#----------------------------------------------------
+
+
+#----------------------------------------------------
+# Brok
+PC14_DOOR_LATER1-1="Wkrótce wielkie otwarcie". Co...?
+
+
+#----------------------------------------------------
+# Brok
+PC14_NOTFINISHED1-1=Co do...
+# Nieznany
+PC14_NOTFINISHED1-2="Jesteśmy otwarci! Ale najpierw skończ swoją główną przygodę!"
+# Brok
+PC14_NOTFINISHED1-3=Dziwne...
+# Brok
+PC14_NOTFINISHED1-4=Czy powinienem nalegać?
+#----------------------------------------------------
+# Brok
+PC14_ENTER_BAR1-1=Zamknięte...? A tu pisze "Otwarte"!
+#----------------------------------------------------
+# Nieznany
+PC14_ENTER_BAR2-1=(Puka, puka)
+# Brok
+PC14_ENTER_BAR2-2=...
+# Brok
+PC14_ENTER_BAR2-3=...
+# Nieznany
+PC14_ENTER_BAR2-4=(Puka, puka)
+# Brok
+PC14_ENTER_BAR2-5=Ktoś tam?
+# Nieznany
+PC14_ENTER_BAR2-6=...
+# Nieznany
+PC14_ENTER_BAR2-7=(Kroki)
+# Jeż
+PC14_ENTER_BAR2-8=Hasło?
+# Brok
+PC14_ENTER_BAR2-9=Eee...
+# Brok
+PC14_ENTER_BAR2-10="Wpuścisz mnie?"
+# Jeż
+PC14_ENTER_BAR2-11=No dobra, pasuje.
+# Nieznany
+PC14_ENTER_BAR2-12=(Drzwi się odblokowują)
+# Brok
+PC14_ENTER_BAR2-13=...Co to było?
+#----------------------------------------------------
+# Brok
+PC14_00_PREBAR2-1=...
+# Brok
+PC14_00_PREBAR2-2=(Dyszy)
+# Brok
+PC14_00_PREBAR2-3=Au... Tyle schodów...
+# Brok
+PC14_00_PREBAR2-4=Jak głęboko jest to miejsce?

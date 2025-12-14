@@ -1,0 +1,628 @@
+#-------------------------------
+#= Sewers inside action
+#-------------------------------
+
+#----- Interactions --------
+PC_INSCRIPTION=マーキング
+PC_MINE=地雷
+PC_BASKET=カゴ
+PC_WIRES=ワイヤー
+
+#----- Choices / Items --------
+GOT_MINEBROKEN=壊れた地雷を手に入れた！
+
+#----- Topics --------
+PC05B_THREATEN=脅迫する
+PC05B_TRADE=取引する
+PC05B_ESCAPE=逃げる
+PC05B_ATTACK=攻撃する
+PC05B_TALK=話す
+PC05B_BLUFF=カマをかける
+PC05B_MINEBROKEN_CHOICE=壊れた地雷を拾いますか?
+
+#----- Dialog --------
+
+
+
+
+
+###############################################
+# PROOFREADED - illuminati1556 - 17/06/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Brok enters room and sees mines
+# *****************************************************************
+#----------------------
+#= Mine tutorial
+#----------------------
+# Brok                                 
+PC05B_MINE_LOOK-1=うお…アレもしかすると…
+# Brok                                 
+PC05B_MINE_LOOK-2=自己再生型地雷か？！
+# Brok                                 
+PC05B_MINE_LOOK-3=足元に気を付けた方がいいな…
+#----------------------------------------------------
+# Brok                                 
+PC05B_WIRES1-1=細いワイヤーの束だな…。地雷の部品に違いねえ
+# Brok                                 
+PC05B_WIRES1-2=まぁ結局のところ、コイツらも電化製品の一種である事は間違いねえだろうな
+#----------------------------------------------------
+# Brok                                 
+PC05B_WIRES_MINEBROKEN-1=いや…。ワイヤーを数本足したところで壊れた地雷が直ったりはしねえだろ
+# Brok                                 
+PC05B_WIRES_MINEBROKEN-2=こういうのは専門家の先生の相談するに限るぜ！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Welcome to the rats place.
+# *****************************************************************
+#----------------------
+#= Wall inscription
+#----------------------
+# Brok                                 
+PC05B_INSCRIPTION1-1=ふむ…。コレ、どっかで見た事ある気がするぞ…
+# Brok                                 
+PC05B_INSCRIPTION1-2=けど…どこでだ…？
+# Brok                                 
+PC05B_INSCRIPTION1-3=いずれにせよ、イヤな予感がするな
+#----------------------------------------------------
+
+#----------------------
+#= Trouble
+#----------------------
+# Brok                                 
+PC05B_TROUBLE1-1=おっと。コイツはヤバいな
+#----------------------------------------------------
+
+
+# *****************************************************************
+# CONTEXT - Rats prevent Brok from going further
+# *****************************************************************
+#----------------------
+#= Rats chief
+#----------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST-1=下水道にワニかよ。陳腐な冗談みてえだぜ
+# Brok                                 
+PC05B_CHIEFRAT_FIRST-2=えーっとだな…。よう！ 俺はその…
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST-3=テメエが何者かなんて興味がねえ
+# Brok                                 
+PC05B_CHIEFRAT_FIRST-4=フン。スクイラーは単刀直入がモットーってか？
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST-5=いやしかし…。どこかで会った気がするな…
+# Brok                                 
+PC05B_CHIEFRAT_FIRST-6=念のため言っとくが、俺にはオマエら全員同じに見えるぞ
+#----------------------------------------------------
+# Kins                                 
+PC05B_CHIEFRAT_TALKFIGHT-1=ボス！ 今朝オレたちをノしたのはコイツですぜ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_TALKFIGHT-2=なんだと？ こんなクズにやられたのか？
+# Kins                                 
+PC05B_CHIEFRAT_TALKFIGHT-3=心配無用ですぜボス！ あん時は準備出来てなかっただけでさ
+# Kins                                 
+PC05B_CHIEFRAT_TALKFIGHT-4=今回は仕事をキッチリやりますぜ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-1=俺は探し物をしてるだけだ。たまたまお前らがここにいただけだ
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-2=ここはオレらのシマだ、ワニ
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-3=いいや。下水道は公共施設だ
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-4=そんな言い訳はエラい政府の役人にでも言うんだな。奴らはオレらを追放した。見殺しにした。そんな奴らの言い分なんて聞くわけねえだろ
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-5=ほら、このとおりだ。俺はお前らと事を構えるつもりはねえよ…
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-6=もう遅い。ここでオレらを見た奴は何人たりとも明日の日の出を拝むことはねえ
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-7=野郎ども！
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-8=待てよ!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-1=ドラムで何をしてるんだ？
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-2=違う
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-3=ここはドラムじゃない。オレらの家だ
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-4=けどなぁ…
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-5=あぁ…。コイツと話すのはもうウンザリだ
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-6=オレが説明しますぜボス！
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-7=下水道の片方はドラムに通じてるけど、もう片方はスラムの南に出てるんだ
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-8=オレたちはドラムには入れない
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-9=オレたちは「登録市民」ってヤツじゃないからな
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-10=外に出たらすぐにあのクソッタレのマシーンに追い回される羽目になる
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-11=自業自得だろう。国家反逆罪の罰だ
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-12=もう十分だ
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-13=野郎ども！ この害虫を始末しろ！
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-14=待ってくれ！ まだ言わなきゃならねえ事がある…
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT2-1=お前ら無抵抗な老人を通りで脅迫してただろう！
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-2=あの元軍人の浮浪者の事か？
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-3=無実には程遠い。クーデターの時にオレたちとやり合った師団に居たんだぞ
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-4=恐らくヤツはオレたちの仲間を何人か殺してるはずだ
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-5=それでもオレらはヤツに二度目のチャンスをやった。あんな死にかけのクズに必要なものをくれてやったんだぞ
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-6=だがヤツは金を払わなかった
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-7=オレたちにバカな真似をしでかした客をそのまま野放しにしといたらどうなるか、テメエ考えた事あるのか？
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT2-8=けど…
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT2-9=ボス、ヤツは時間稼ぎしてるだけですぜ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-10=あぁ。その通りだなキンス
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-11=テメエに説明する義務なんてねえよ
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-12=これが最後通告だ、ワニ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT3-1=ちょっと聞きたい事があるんだが…
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT3-2=ちゃんと聞こえてんのか？
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT3-3=ボスの邪魔するヤツは許さないからな！
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT3-4=目にもの見せてやるよ…！
+#----------------------------------------------------
+
+#----------------------
+# Chiefrat - EXIT
+#----------------------
+# Brok                                 
+PC05B_CHIEFRAT_BYE1-1=じゃぁ俺はもう行くよ
+# Chiefrat                                 
+PC05B_CHIEFRAT_BYE1-2=テメエの事はいつも見張ってるからな、ワニ
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_BYE2-1=また後でな
+# Kins                                 
+PC05B_CHIEFRAT_BYE2-2=バーカ
+#----------------------------------------------------
+
+#----------------------
+# Chiefrat - Threaten
+#----------------------
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-1=お前らの事は知ってるぞ
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-2=お前らスクイラーは最低のクズ野郎だ
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-3=お前らが追放されたのには理由がある
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-4=俺の前から失せろ
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT-5=おぉ！ 赤ん坊のワニちゃんが怒って癇癪起こしてるの。 怖いでちゅねぇ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT-6=悲報を伝えるのは残念だがなぁ、ワニ…
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT-7=多勢に無勢って言葉知ってるか
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_ATTACK-1=クズと交渉するつもりはねえ！
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_ATTACK-2=俺はここを通る！お前らに邪魔なんてさせねえ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_ATTACK-3=能無しが！ テメエはココで終わりだ！
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_RAT_MORE1-1=野郎ども！ 殺っちまえ！ 今すぐにだ！
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_RAT_BOSSCOMES1-1=オレの仲間を全員やりやがったなテメエ…。やるじゃねぇか
+# Chiefrat                                 
+PC05B_RAT_BOSSCOMES1-2=だがこのオレを倒せるとは思うなよ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-1=俺を舐めるなよ…！
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-2=仮にお前らが俺を倒せるとしても…
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-3=お前らのうち何人かは確実に俺より先にくたばるぞ！
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-4=ちゃんと考えろよ
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-5=バカな選択をしてリスクを冒して命を落とすのは賢明な判断か？
+# Kins                                 
+PC05B_CHIEFRAT_THREAT_TALK1-6=あのワニ、割と的を射た事言ってますぜ、ボス…
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-7=だまれ!
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-8=オレらのモットーを忘れたのか？
+# Kins                                 
+PC05B_CHIEFRAT_THREAT_TALK1-9=「最期まで戦い抜く…再びこの手にオレたちの…」
+# Kins                                 
+PC05B_CHIEFRAT_THREAT_TALK1-10=分かってますって！けど…
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-11=ほら見ろワニ。オレらはココを通さねえ
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-12=ただ、今日のところは見逃してやる。もと居た場所に戻るんだな
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-13=もしもテメエがオレらの事を誰かに漏らす事があれば、テメエの命はないと思え。テメエの友人も、家族も、テメエが大切にしてる全てを皆殺しにしてやる
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-14=どんな事をしてでも。どこに逃げようとも。どれだけ時間がかかろうとも
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-15=フン。なら立ち去るとするぜ…
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-16=(って事はつまり、何か別の方法で通りすぎなきゃならねえわけだな)
+#----------------------------------------------------
+
+#----------------------
+# Chiefrat - Trading
+#----------------------
+# Brok                                 
+PC05B_CHIEFRAT_TRADE-1=俺には取引の用意があるんだが
+# Chiefrat                                 
+PC05B_CHIEFRAT_TRADE-2=本当か？ 見せてみろ
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_DEFAULT1-1=これとか…どうだ？
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_DEFAULT1-2=失せろ
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_DEFAULT2-1=これならどうだ?
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_DEFAULT2-2=おちょくってんのか？！
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_BILLA-1=この請求書、払ってくれるか？
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_BILLA-2=何考えてやがるんだ？！ １分でブッ殺してやる！
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_STICK-1=なんだ？！ やんのかテメエ？！
+# Brok                                 
+PC05B_CHIEFRAT_INV_STICK-2=いやいや！ すまねえ…
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_APARTMENTKEY-1=ほら！ 俺のアパートでどうだ！
+# Brok                                 
+PC05B_CHIEFRAT_INV_APARTMENTKEY-2=そこでやりたい事をやったらどうだ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_APARTMENTKEY-3=ありえねえ。ドローンがそこらじゅう飛び回ってるのに地表の近くに長居出来るかよ
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_HOOVER-1=この掃除ロボットはどうだ？ ここニオイがきついだろう！
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_HOOVER-2=テメエもう一回言ってみろ！
+# Brok                                 
+PC05B_CHIEFRAT_INV_HOOVER-3=まぁ…下水だし、しょうがねえよな…
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_MINEBROKEN-1=(いや、それはまずいだろう…。この地雷どうせ奴らのだろうし、当然どうやって操作するか知ってるはずだ)
+# Brok                                 
+PC05B_CHIEFRAT_INV_MINEBROKEN-2=(コイツを活かせるもっと別の方法を考えるんだ)
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_PENDANT-1=コイツは…
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_PENDANT-2=忘れろ。無価値だ！
+# Brok                                 
+PC05B_CHIEFRAT_INV_PENDANT-3=忘れるなんて出来ねえよ！ コイツには思い出としての価値があるんだよ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_PENDANT-4=そんなこと知るかよ
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-1=なら、これは…
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-2=それタダだろう。オレたちでさえタダでもらえる
+# Brok                                 
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-3=あぁ、そうだったな…
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-1=聞いてくれ…。俺は不治の病にかかってしまってな…
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-2=良い事だ。オレらがテメエを終わらせてやるよ
+# Brok                                 
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-3=お、おい！ 勝手に殺すなよ！ まだ生きる気力は残ってるぞ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_MONEY-1=俺の有り金全部持ってったらどうだ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_MONEY-2=オレらを買収できると思うなよ
+# Brok                                 
+PC05B_CHIEFRAT_INV_MONEY-3=マジかよ…？ 俺はてっきり…
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_MONEY-4=無理なものは無理だ。オレらにはオレらの流儀がある
+# Brok                                 
+PC05B_CHIEFRAT_INV_MONEY-5=(無法者のクセにモラルがあるのか…。こんなめんどくせえ相手に当たるなんて、ついてねえな…)
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_EXIT-1=思い違いだったみたいだ。お前らが欲しがりそうなものは何も持ってなさそうだ。けど…
+#----------------------------------------------------
+
+#----------------------
+# Chiefrat - Escape
+#----------------------
+# Brok                                 
+#Try to escape
+PC05B_CHIEFRAT_ESCAPE-1=じゃぁな！
+# Chiefrat                                 
+PC05B_CHIEFRAT_ESCAPE-2=逃がすな！ 捕まえろ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_ESCAPEHURT-1=うぐぅっ…！
+# Various                                 
+PC05B_CHIEFRAT_ESCAPEHURT-2=(ハハハハ)
+# Chiefrat                                 
+PC05B_CHIEFRAT_ESCAPEHURT-3=オマエのバカさ加減は見ていて飽きねえぜ、ワニ。オレらが何のために地雷を仕掛けてると思ってんだ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_ESCAPEAFTER-1=…うーんと…
+#----------------------------------------------------
+# Various
+PC05B_CHIEFRAT_ESCAPEDEAD-1=(アハハハ)
+#----------------------------------------------------
+
+#-------------------------------
+# Chiefrat - Trying to advance
+#-------------------------------
+# Chiefrat                                 
+#Trying to get past them
+PC05B_CHIEFRAT_ADVANCE1-1=どこに行くつもりだ
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_ADVANCE2-1=止まれ！
+# Chiefrat                                 
+PC05B_CHIEFRAT_ADVANCE2-2=あと一歩でも踏み出してみろ。死肉にしてやる
+#----------------------------------------------------
+
+#---------------------------
+# Chiefrat - Talking again
+#---------------------------
+# Brok                                 
+PC05B_CHIEFRAT_TALK1-1=少し話せるか？
+# Chiefrat                                 
+PC05B_CHIEFRAT_TALK1-2=さっさとしろ…。話す舌が残ってるうちはな…
+#----------------------------------------------------
+
+#----------------------
+# Chiefrat - More rats
+#----------------------
+# Brok                                 
+PC05B_CHIEFRAT_MORERATS-1=まだいるのかよ？！ 一体どっから湧いてきやがった！ キリがねえぞ！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Brok threw the mine at them from a distance to get rid of them and finds them all unconscious on the floor
+# *****************************************************************
+#---------------------------
+# Chiefrat - Beating them
+#---------------------------
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-1=うお…！
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-2=ふぅ…。よかった、意識を失ってるだけだな…
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-3=…うぅ…ありえねえ…。(ゲホゲホ)…どうしたら…こんな事が…
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-4=悪いな。お前らが俺の話を聞く耳を持ってりゃ他の選択肢もあったんが……
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-5=…さっさとやれ…。(ゲホゲホ)…オレらに、とどめを…
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-6=こんな事するつもりはなかったんだよ。俺はお前らとは違う
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-7=その声…。オレは…。オレはテメエを知っているぞ…
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-8=けれど…。そんな事…。ありえない…
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-9=テメエは…
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-10=テメエはあの時の…！
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-11=覚えているぞ！ 何年経っても忘れるものか…！
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-12=なんだって？
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-13=オレらが追放された時…。テメエには責任がある！
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-14=どういう意味だよそれ？
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-15=テメエの罪を償え！！！
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-16=うわ！
+# Unknown                                 
+PC05B_CHIEFRAT_BEAT1-17=(ドン)
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-18=…
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-19=くそ、気絶させる以外に手がなかったぜ…
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-20=それにしても、さっきの話は一体何だったんだ？
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_DEFEND1-1=そんな事しても時間の無駄だぜ
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Various with rats
+# *****************************************************************
+# Chiefrat                                 
+PC05B_CHIEFRAT_ATTACK1-1=オレたちを襲う気か！？
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_GAMEOVER1-1=テメエには相応しい結末だ、汚らわしい病原体が
+# Chiefrat                                 
+PC05B_CHIEFRAT_GAMEOVER1-2=野郎ども、コイツの身包み剥がして死体を酸に捨てろ
+# Kins                                 
+PC05B_CHIEFRAT_GAMEOVER1-3=了解ボス！
+# Rat                                 
+PC05B_CHIEFRAT_GAMEOVER1-4=その前に死体にイタズラしてもいいっすかね？
+# Chiefrat                                 
+PC05B_CHIEFRAT_GAMEOVER1-5=へッ！好きにしろ
+# Rat                                 
+PC05B_CHIEFRAT_GAMEOVER1-6=ありがとうですぜボス！ アンタ最高ですぜ！
+#----------------------------------------------------
+
+#----------------------
+# Rat
+#----------------------
+# Brok                                 
+PC05B_RAT1-1=意識を失ってるな…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Broken mine
+# *****************************************************************
+#----------------------
+# Mine broken
+#----------------------
+# Brok                                 
+PC05B_MINEBROKEN-1=遠くからでも見えてるな、この地雷…。って事はつまり…
+# Brok                                 
+PC05B_MINEBROKEN-2=やっぱり。壊れてるな
+#----------------------------------------------------
+# Brok                                 
+PC05B_MINEBROKEN_TOOFAR-1=もっと近づかないといけねえな…
+#----------------------------------------------------
+# Brok                                 
+PC05B_MINEBROKEN_TAKE_NEXT-1=コイツを持ち歩いてる間は大きな衝撃を与えねえ方がよさそうだな…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Coming back
+# *****************************************************************
+#----------------------
+# Back after fight
+#----------------------
+# Brok                                 
+PC05B_BACK-1=アイツらみんなどっか行っちまったのか…？
+# Brok                                 
+PC05B_BACK-2=気を付けねえとな。どうせまたどっかで会うだろうから…
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Brok isn't here. A rat checks the items that fall through the pipe (items people are getting rid of).
+# *****************************************************************
+#--------------------------
+#= Item falling from pipe
+#--------------------------
+# Rat                                 
+PC05B_ITEMFALL1-1=ん…？
+# Rat                                 
+PC05B_ITEMFALL1-2=ゴミだな
+#----------------------------------------------------
+# Rat                                 
+PC05B_ITEMFALL2-1=なんだこれ？
+#----------------------------------------------------
+# Rat                                 
+PC05B_ITEMFALL3-1=またゴミだな
+#----------------------------------------------------
+# Rat                                 
+PC05B_ITEMFALL_MINE-1=ちょっと待て！ コレなんかヘンな音出してるよ…
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok gets back items from the basket
+# *****************************************************************
+
+#--------------------------
+#= Get back items from basket
+#--------------------------
+# Brok                                 
+PC05B_GETBACKITEMS-1=どっか遠くに行く前に俺の道具を取り戻した方がいいだろうな…
+#----------------------------------------------------
+
+#--------------------------
+#= Basket
+#--------------------------
+# Brok                                 
+PC05B_BASKET1-1=ふむ…ドーム市民が捨てたものはココに流れ着いてくるのか…？
+# Brok                                 
+PC05B_BASKET1-2=スクイラー共はコイツを横流ししてるに違いないな
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_FULL1-1=いずれにせよ、先に俺の道具を取り戻さねえとな
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_FULLMINE-1=爆発で吹っ飛ばなかったのは運がよかったな！
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_EMPTY1-1=さてと、中身は…
+# Brok                                 
+PC05B_BASKET_EMPTY1-2=破れた古着…割れた皿…
+# Brok                                 
+PC05B_BASKET_EMPTY1-3=これは…椅子か？ どうやったらこんな物チューブに入るんだ…？
+# Brok                                 
+PC05B_BASKET_EMPTY1-4=お、虫がいるぞ！
+# Brok                                 
+PC05B_BASKET_EMPTY1-5=うめえ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_EMPTY2-1=他に使えそうなものは、と…
+# Brok                                 
+PC05B_BASKET_EMPTY2-2=何もねえとは思うけど、一応もう一回チェックすっか
+# Brok                                 
+PC05B_BASKET_EMPTY2-3=…
+# Brok                                 
+PC05B_BASKET_EMPTY2-4=…よし！ 広告クーポンを見つけたぜ！
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_EMPTY3-1=新しいものは何もなさそうだな…。また後で見に来るか
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_PICKBACK1-1=おい待てよ…。俺のものがカゴに入ってるじゃねえか！
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_OTHERS-1=あぁ…。捨てるより拾う方が俺の性に合ってるぜ…
+#----------------------------------------------------
+# Brok                                 
+PC05B_ADVERT_FLOOR-1=ここに来るのは正直ヤバかったが、来た甲斐があったな！
+#----------------------------------------------------
+
+# *****************************************************************
+# CONTEXT - Using remote control
+# *****************************************************************
+#----------------------
+# Mines deactivated
+#----------------------
+# Brok                                 
+PC05B_REMOTECONTROL_MINES1-1=さてと…
+# Brok                                 
+PC05B_REMOTECONTROL_MINES1-2=よし、これで地雷を無力化出来たはずだ！
+# Brok                                 
+PC05B_REMOTECONTROL_MINES1-3=けどそんなに長く持ちそうにはねえな…
+#----------------------------------------------------
+
+#----------------------
+# During fights
+#----------------------
+# Chiefrat
+PC05B_CHIEFRAT_GUARDS1-1=失せろ
+#----------------------------------------------------
+# Chiefrat
+PC05B_CHIEFRAT_FIGHTSTART1-1=やっちまえ！
+#----------------------------------------------------
+
+# - - -
+# AddedPart 2022.07.29
+# - - -
+#----------------------------------------------------
+# Rat
+PC05B_CHAPTER6END-1=どこに行くんだい、ワニさんよ？
+# Brok
+PC05B_CHAPTER6END-2=そこをどけ！
+
+
+
+COOP_PC05B_CHIEFRAT1-1=あいつらは僕たちを殺すための口実をつくるのが好きだ。
+
+COOP_PC05B_CHIEFRAT1-2=それでも... ときどき彼らに同情するよ...

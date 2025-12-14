@@ -1,0 +1,449 @@
+﻿#-----------------------------------
+#=LIA APARTMENT NIGHTMARE (BEDROOM)
+#-----------------------------------
+
+
+#----------------------
+#= Enter
+#----------------------
+ID=PC11C_ENTER1
+T=(Cough, cough)
+W=BROK
+A=STUPID
+CONTEXT=The last room is filled with smoke
+
+T=That smoke...(cough)... It's unbearable.
+W=BROK
+A=STUPID
+
+T=I need to find a way out of here, fast!
+W=BROK
+A=FURIOUS
+TEN=PC11C_JUMP_TUTORIAL
+
+
+#----------------------
+#= Guilty text inscription
+#----------------------
+ID=PC11C_INSCRIPTION1
+T=Huh...?
+W=BROK
+A=WONDER
+CONTEXT=When Brok advances, some text gets written on the wall then disappears
+
+T=I thought I saw some kind of weird inscription there...
+W=BROK
+
+T=Never mind. I must have dreamt it.
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Showcase
+#----------------------
+ID=PC11C_SHOWCASE1
+T=A diploma... Some rewards...
+W=BROK
+A=THINK
+CONTEXT=Room interactions
+
+T="Medical Discovery of the Year"?
+W=BROK
+
+T=Are these Lia's? Why can't I remember...?
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC11C_SHOWCASE2
+T=Maybe something in here could be useful.
+W=BROK
+A=THINK
+
+
+#----------------------
+#= Top reward
+#----------------------
+ID=PC11C_REWARDS1
+T=Those won't help me move the furniture.
+W=BROK
+A=ANGRY
+
+#----------------------
+#= Pill
+#----------------------
+ID=PC11C_PILL1
+T=Hmm, what if I removed that metal bar...
+W=BROK
+A=THINK
+TEE=PC11C_PILL_DO
+
+T=There ya go!
+W=BROK
+A=READY
+SOUND=metal
+TEN=PC11C_PILL_TAKE
+
+#----------------------
+#= Rocks
+#----------------------
+ID=PC11C_ROCK1
+T=Rocks? Where did these come from?
+W=BROK
+A=WONDER
+
+T=They're blocking the way...
+W=BROK
+A=ANGRY
+
+#----------------------
+#= Hole
+#----------------------
+ID=PC11C_HOLE1
+T=Whoa! What happened here?! I can't even see the bottom!
+W=BROK
+A=SURPRISED
+
+T=I'd better be careful...
+W=BROK
+A=WORRIED
+
+
+#----------------------
+#= Lia
+#----------------------
+ID=PC11C_LIA_FIRST1
+T=Lia!
+W=BROK
+A=SURPRISED
+TEN=PC11C_LIA_RUN2
+CONTEXT=Brok finds Lia half unconscious, stuck under a fallen piece of furniture
+
+#----------------------
+ID=PC11C_LIA_FIRST2
+T=Hang on! I'm right here!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=It's you...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=Don't talk! You'll wear yourself out.
+W=BROK
+C1A=DOWN
+
+T=I'll get you out of here!
+W=BROK
+C1A=READY
+
+T=...no need...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=Why are you saying that? 
+W=BROK
+C1A=DOWN
+
+T=You know why...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=I...
+W=BROK
+
+T=No, I don't. What happened?
+W=BROK
+
+T=...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=Lia?
+W=BROK
+C1A=THINK
+
+T=Lia!
+W=BROK
+C1A=SURPRISED
+TEN=PC11C_LIA_STAND
+
+T=She passed out... I need to help her, quick!
+W=BROK
+C1A=DOWN
+
+#----------------------
+ID=PC11C_LIA1
+T=Lia! Wake up!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=It's useless...
+W=BROK
+A=DOWN
+
+T=Her leg is stuck. I need to get her out of there!
+W=BROK
+A=READY
+
+
+#----------------------
+ID=PC11C_LIA_CLIMB1
+T=AaaaAaaaAaaargh!
+BNAMESP=LIA
+BVOICESP=LIA
+COMM=Player jumps on the furniture
+
+T=Oh no! I'm sorry.
+W=BROK
+A=STUPID
+TEN=PC11C_LIA_CLIMB_END
+
+
+#----------------------
+ID=PC11C_GOAWAY
+T=There's no point in going back!
+W=BROK
+A=SURPRISED
+
+#----------------------
+ID=PC11C_LIA_GOAWAY
+T=I can't go too far from Lia. She needs me!
+W=BROK
+A=SURPRISED
+
+
+#----------------------
+#= Fallen
+#----------------------
+ID=PC11C_FALLEN1
+T=Arrrrgh...
+W=BROK
+A=FURIOUS
+CONTEXT=Brok trying to move the fallen piece of furniture with bare hands
+
+T=Argh... No way...
+W=BROK
+A=STUPID
+TEN=PC11C_LIA_STOPTRY
+
+T=It's too heavy...I'll need a tool to help me move the furniture!
+W=BROK
+A=FURIOUS
+
+#----------------------
+ID=PC11C_FALLEN_METALBAR
+T=Argh...
+W=BROK
+A=FURIOUS
+CONTEXT=Brok trying to move the fallen piece of furniture with a metal bar. Still not enough to save Lia
+
+T=So... heavy... I have to...!
+W=BROK
+A=FURIOUS
+SOUND=footstep_metal2
+
+T=Arrrrrgh!!!
+W=BROK
+A=FURIOUS
+TEN=PC11C_LIA_STOPMUSIC
+
+T=No... I'm not strong enough...
+W=BROK
+A=DOWN
+TEN=PC11C_LIA_SAD
+
+T=...all your fault...
+BNAMESP=LIA
+BVOICESP=LIA
+COMM=This is a nightmare. Lia blames him (the voice will be transformed so it sounds weird)
+TEN=PC11C_LIA_LOOK
+
+T=What?
+W=BROK
+A=CONFUSED
+
+T=Murderer...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=Lia... What are you saying? I just found you...
+W=BROK
+A=DOWN
+
+T=You're gonna make it. I promise.
+W=BROK
+A=READY
+
+T=Liar...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=You killed me... You killed him...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=Stop it... You know I'd never do anything like that!
+W=BROK
+A=TIRED
+
+T=...worthless... dangerous...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=How can you lie to everyone?
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=Even yourself...
+BNAMESP=LIA
+BVOICESP=LIA
+TEN=PC11C_LIA_LOOKSTOP
+
+T=Stop it! Please!
+W=BROK
+A=HEARTBROKEN
+
+T=...shouldn't have trusted you...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=My son isn't safe with you...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=That's not true... I...
+W=BROK
+
+T=I'm taking good care of him.
+W=BROK
+
+T=Wait... Something's not right...
+W=BROK
+A=WONDER
+
+T=Where is...?
+W=BROK
+
+T=Criminal... Doomed... 
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=I...need to focus...
+W=BROK
+A=STUPID
+
+T=To get you out of here.
+W=BROK
+A=STUPID
+
+T=Hold on... I'll try it again...
+W=BROK
+A=FURIOUS
+TEN=PC11C_LIA_TRYAGAIN
+
+T=Argh! It's so heavy!
+W=BROK
+
+T=AaaaaAAAarrgh AAAAArrrrgh!!!
+W=BROK
+A=YELL
+
+T=(Panting)
+W=BROK
+A=TIRED
+
+T=No...I'm...
+W=BROK
+A=DOWN
+
+T=I'm sorry...
+W=BROK
+
+T=I love you, but I'm just not strong enough...
+W=BROK
+A=DISAPPOINTED
+
+T=...should've known...
+BNAMESP=LIA
+BVOICESP=LIA
+TEN=PC11C_SHAKE1
+
+T=...
+W=BROK
+A=SURPRISED
+
+T=What's going on?!
+W=BROK
+A=THINK
+TEN=PC11C_RUNAWAY
+
+T=I... I'll get some help! Don't move!
+W=BROK
+A=MAYBE
+
+T=...of course!
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=Running away, like always...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=I'm not! But...
+W=BROK
+A=HEARTBROKEN
+
+T=You'll be judged for your sins...
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=No... no!
+W=BROK
+A=SURPRISED
+TEN=PC11C_SHAKE2
+
+T=The ground! Is everything collapsing?!
+W=BROK
+TEN=PC11C_RUNAWAYNEXT
+
+T=I'll... stay here with you until the end!
+W=BROK
+A=HEARTBROKEN
+
+T=LIAR!
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=YOU LEFT ME ALONE!
+BNAMESP=LIA
+BVOICESP=LIA
+TEN=PC11C_RUNAWAYNEXT2
+
+T=No... I won't!
+W=BROK
+
+T=I'LL NEVER FORGET!
+BNAMESP=LIA
+BVOICESP=LIA
+
+T=I'LL NEVER FORGIVE YOU!
+BNAMESP=LIA
+BVOICESP=LIA
+TEN=PC11C_SHAKE3
+
+T=Noooooooooo!
+W=BROK
+A=YELL
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 02/08/2019
+###############################################

@@ -1,0 +1,2426 @@
+﻿#-------------------------------
+#= SIN APARTMENT HALLWAY
+#-------------------------------
+
+#----- Interactions --------
+PC_PLANK=Asse
+PC_REMOTECONTROL=Telecomando
+PC_JACKET=Giacca
+PC_TRASH=Spazzatura
+PC_GLASSES=Bicchieri
+PC_WALLCRACK=Crepa nel muro
+PC_WARDFRIDGE=Frigarmadio
+PC_MIRROR=Specchio
+PC_CUP=Tazza
+PC_WASHINGMACHINE=Lavatrice
+PC_FOOD=Cibo
+PC_CLOTHES=Abiti
+PC_GLASSESPILE=Pila di bicchieri
+
+#----- Choices / Items --------
+GOT_REMOTECONTROLDAMAGED=Un telecomando danneggiato! 
+GOT_PILL=Una pillola!
+
+#----- Topics --------
+TOPIC_GUN=Pistola
+TOPIC_DRUMERSSTREET=Drumer Street
+
+TOPIC_DENOUNCE=Denuncia
+TOPIC_FORGIVE=Perdona
+
+INTERROGATION_SIN=Cosa nasconde Sin?
+
+
+#----- Dialog --------
+
+
+
+###############################################
+# PROOFREADED - illuminati1556 - 17/06/2019
+###############################################
+
+
+
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC07B_GLASSESPILE1-1= Un bel mucchio... Sembra che a questo tizio piaccia bere.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Jumping on bed
+# *****************************************************************
+# Sin                                 
+PC07B_BEDJUMP1-1=Lei è un professionista... vero?
+# Brok                                 
+PC07B_BEDJUMP1-2=Certo!
+# Sin                                 
+PC07B_BEDJUMP1-3=D'accordo...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC07B_GLASSES1-1=Due bicchieri, eh?
+# Sin                                 
+PC07B_GLASSES1-2=E quindi? 
+# Brok                                 
+PC07B_GLASSES1-3=Non lo so... avevo la sensazione che vivesse da solo.
+# Sin                                 
+PC07B_GLASSES1-4=Infatti.
+#----------------------------------------------------
+# Brok                                 
+PC07B_GLASSES2-1=Due bicchieri vuoti...
+#----------------------------------------------------
+# Brok                                 
+PC07B_TABLET1-1=Un tablet... sembra che lo usasse per effettuare delle ricerche sul Triweb.
+# Brok                                 
+PC07B_TABLET1-2="Trovare oggetto perduto..." "Banco dei pegni..." "Farmaci per sonno profondo..." "Detective economico...?"
+# Brok                                 
+PC07B_TABLET1-3=Mmmph... suppongo che dovrei essere felice di essere ben posizionato per questo tipo di ricerca...
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRASH1-1=Anche senza frugare, riesco a vedere una bottiglia vuota di Hot Juice.
+# Brok                                 
+PC07B_TRASH1-2=Perfetto per ubriacarsi come una spugna.
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRASH2-1=Sin mi sta guardando... non ho intenzione di scavare nella sua spazzatura.
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRASH_AFTER1-1=Vuota...
+#----------------------------------------------------
+# Brok                                 
+PC07B_MIRROR1-1=Questo specchio ha visto giorni migliori.
+# Brok                                 
+PC07B_MIRROR1-2=Proprio come me.
+#----------------------------------------------------
+# Brok                                 
+PC07B_PICTURE1-1=C'è qualcosa incastrato a lato dello specchio!
+#----------------------------------------------------
+# Brok                                 
+PC07B_PICTURE1B-1=Una foto di Sin insieme a una donna e una bambina... mi domando chi siano.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CUP1-1=Quella tazza non sembra importante. In ogni caso...
+# Brok                                 
+PC07B_CUP1-2=Ci sono due pillole accanto. Ne prenderò una.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CUP2-1=Prendere entrambe le pillole sembrerebbe sospetto.
+#----------------------------------------------------
+# Brok                                 
+PC07B_WASHINGMACHINE1-1=Che fortuna! Una lavatrice multifunzione!
+# Brok                                 
+PC07B_WASHINGMACHINE1-2=Ti ci lavi tu, i tuoi abiti, o tutte e due le cose insieme!
+#----------------------------------------------------
+# Brok                                 
+PC07B_WASHINGMACHINE_AFTER1-1=Almeno una cosa è rimasta. Immagino che sia troppo grossa da spostare...
+#----------------------------------------------------
+# Brok                                 
+PC07B_BED1-1=A cosa serve questo pulsante?
+# Sin                                 
+PC07B_BED1-2=Non lo faccia! È il mio...
+#----------------------------------------------------
+# Sin                                 
+PC07B_BED1B-1=...letto.
+# Brok                                 
+PC07B_BED1B-2=Oh.
+#----------------------------------------------------
+# Brok                                 
+PC07B_BEDFALLEN1-1=Molto utile quando sei a corto di spazio! Dovrei davvero procurarmene uno.
+#----------------------------------------------------
+# Brok                                 
+PC07B_WARDFRIDGE1-1=Cosa c'è lì dentro?
+# Sin                                 
+PC07B_WARDFRIDGE1-2=Solo cibo e abiti. Cosa si aspettava?
+# Brok                                 
+PC07B_WARDFRIDGE1-3=Le spiace se lo apro?
+# Sin                                 
+PC07B_WARDFRIDGE1-4=Non l'ho chiamata per farle controllare il mio frigarmadio!
+# Brok                                 
+PC07B_WARDFRIDGE1-5=Solo un'occhiatina!
+#----------------------------------------------------
+# Brok                                 
+PC07B_WARDFRIDGE1B-1=Chissà, forse potrebbe aver lasciato la pistola lì dentro?
+#----------------------------------------------------
+# Brok                                 
+PC07B_WARDFRIDGE1C-1=Mi sa di no. Niente di particolare.
+# Sin                                 
+PC07B_WARDFRIDGE1C-2=Sa, comincio a pormi domande sulle sue capacità di detective...
+# Brok                                 
+PC07B_WARDFRIDGE1C-3=Agisci, prima di pensare! Ecco cosa diceva sempre mio nonno.
+# Brok                                 
+PC07B_WARDFRIDGE1C-4=Di solito funziona!
+# Sin                                 
+PC07B_WARDFRIDGE1C-5=Non quando si è a corto di tempo! Oh cielo, se qualcuno trovasse la pistola prima di me...
+# Brok                                 
+PC07B_WARDFRIDGE1C-6=Capito! Cercherò di affrettarmi.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLOTHES1-1=I frigarmadi sono davvero una grande invenzione!
+# Brok                                 
+PC07B_CLOTHES1-2=L'aria fredda viene spinta in alto, per cui il calore resta sul fondo per tenere gli abiti caldi.
+#----------------------------------------------------
+# Brok                                 
+PC07B_FOOD1-1=Mmm...
+# Sin                                 
+PC07B_FOOD1-2=Non mi dica che sta rubando qualcosa dal mio frigo!
+# Brok                                 
+PC07B_FOOD1-3=Non sto rubando! Lo consideri solo un pagamento anticipato.
+# Brok                                 
+PC07B_FOOD1-4=Inoltre, non riesco a svolgere bene il mio lavoro a stomaco vuoto.
+# Sin                                 
+PC07B_FOOD1-5=Mi sta prendendo in giro...
+#----------------------------------------------------
+# Brok                                 
+PC07B_FOOD2-1=Preferisco non abusare della sua ospitalità... specialmente perché mi sta lanciando delle strane occhiate.
+#----------------------------------------------------
+# Brok                                 
+PC07B_WALLCRACK1-1=Wow... Vedo l'altro lato del pianerottolo, da qui!
+# Sin                        
+PC07B_WALLCRACK1-2=Già. Quest'edificio sta cadendo a pezzi. Ma era l'unico appartamento che potevo permettermi.
+# Brok                                 
+PC07B_WALLCRACK1-3=Quand'è che si è trasferito?
+# Sin                                 
+PC07B_WALLCRACK1-4=Circa due settimane fa...
+# Brok                                 
+PC07B_WALLCRACK1-5=Ah, questo spiega come mai è tutto così vuoto. Perché...?
+# Sin                                 
+PC07B_WALLCRACK1-6=Non sono affari suoi!
+# Brok                                 
+PC07B_WALLCRACK1-7=Non c'è bisogno di agitarsi! Mi chiedevo solo se avesse il denaro per pagarmi.
+# Sin                                 
+PC07B_WALLCRACK1-8=Lo farò. A tempo debito.
+# Brok                                 
+PC07B_WALLCRACK1-9=(Due a uno che non verrò mai pagato...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_WALLCRACK2-1=Un'enorme crepa nel muro... e io che pensavo che il mio appartamento fosse in uno stato disastroso!
+#----------------------------------------------------
+# Brok                                 
+PC07B_WALLCRACK_AFTER1-1=Perché mi sono disturbato a passare per la porta...
+#----------------------------------------------------
+# Brok                                 
+PC07B_JACKET1-1=Vediamo un po'...
+# Sin                                 
+PC07B_JACKET1-2=Ehi! Non tocchi la mia giacca!
+# Brok                                 
+PC07B_JACKET1-3=Non si preoccupi, sto solo frugando nelle tasche per vedere se...
+# Brok                                 
+PC07B_JACKET1-4=A-ha! Ho trovato... un volantino!
+# Sin                                 
+PC07B_JACKET1-5=Deve avercelo messo uno di quegli attivisti in strada. Può tenerlo. Non mi importa.
+#----------------------------------------------------
+# Brok                                 
+PC07B_JACKET2-1=Non c'è altro nella giacca.
+#----------------------------------------------------
+# Brok                                 
+PC07B_DEVICEBED1-1=E quello cos'è? Sembra una specie di...
+#----------------------------------------------------
+# Brok                                 
+PC07B_DEVICEBED1B-1=...ops.
+# Sin                                 
+PC07B_DEVICEBED1B-2=Non posso crederci! Lo ha rotto!
+# Brok                                 
+PC07B_DEVICEBED1B-3=Ehm... mi spiace molto. Cos'è esattamente?
+# Sin                                 
+PC07B_DEVICEBED1B-4=Un... telecomando. Per il mio... ehm, tablet.
+# Brok                                 
+PC07B_DEVICEBED1B-5=Oh. In tal caso, non si preoccupi!
+# Brok                                 
+#The friend he refers to is Shay.
+PC07B_DEVICEBED1B-6=Ho un'amica che è un genio dell'elettronica, lo sistemerà in un secondo!
+#----------------------------------------------------
+# Sin                                 
+PC07B_DEVICEBED1C-1=È mio! Non ha il permesso di prenderlo!
+# Brok                                 
+PC07B_DEVICEBED1C-2=Si fidi! Lo riparerò io. Glielo devo.
+# Sin                                 
+PC07B_DEVICEBED1C-3=(sospira) Va bene, va bene!
+#----------------------------------------------------
+# Sin                                 
+PC07B_DEVICEBED1D-1=Ma si sbrighi e trovi quella pistola! Qui sta sprecando il suo tempo!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Exit before knowing we have to pass the border
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_EXITEARLY1-1=Ehm... non mi ha chiesto molte cose.
+# Sin                                 
+PC07B_SIN_EXITEARLY1-2=Sicuro di avere abbastanza informazioni?
+# Brok                                 
+PC07B_SIN_EXITEARLY1-3=Mmm... forse no.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Sin - but trying to inspect his apartment
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_NOTALLOWED1-1=Ehi! Che sta facendo?
+# Sin                                 
+PC07B_SIN_NOTALLOWED1-2=Non tocchi la mia roba!
+# Brok                                 
+PC07B_SIN_NOTALLOWED1-3=Spiacente.
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_NOTALLOWED2-1=Ma mi ascolta?
+# Brok                                 
+PC07B_SIN_NOTALLOWED2-2=No.
+# Sin                                 
+PC07B_SIN_NOTALLOWED2-3=Cosa?!
+# Brok                                 
+PC07B_SIN_NOTALLOWED2-4=Scherzavo, scherzavo!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_NOTALLOWEDBATHROOM1-1=Dove va?
+# Brok                                 
+PC07B_SIN_NOTALLOWEDBATHROOM1-2=Stavo solo controllando...
+# Sin                                 
+PC07B_SIN_NOTALLOWEDBATHROOM1-3=Può concentrarsi sui miei problemi, per favore?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Sin
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_FIRST-1=Finalmente! Eccola qui!
+# Brok                                 
+PC07B_SIN_FIRST-2=Mi spiace molto. Ho avuto... dei contrattempi lungo la strada.
+# Brok                                 
+PC07B_SIN_FIRST-3=Allora, cosa c'è di tanto urgente?
+# Sin                                 
+PC07B_SIN_FIRST-4=Sono in guai seri... ho perso la mia pistola paralizzante.
+# Brok                                 
+PC07B_SIN_FIRST-5=Tutto qui? Perché è così importante?
+# Sin                                 
+PC07B_SIN_FIRST-6=Perderò il lavoro! Ecco perché!
+# Sin                                 
+PC07B_SIN_FIRST-7=Sono... nuovo in polizia. Se dicessi al capo che l'ho persa, mi licenzierebbe!
+# Sin                                 
+PC07B_SIN_FIRST-8=Non posso permettermelo!
+# Brok                                 
+PC07B_SIN_FIRST-9=Quindi mi sta assumendo per trovare quella pistola? OK...
+# Brok                                 
+PC07B_SIN_FIRST-10=Quanto può offrirmi?
+# Sin                                 
+PC07B_SIN_FIRST-11=500 Uni...
+# Brok                                 
+PC07B_SIN_FIRST-12=1000.
+# Sin                                 
+PC07B_SIN_FIRST-13=Impossibile! 500 è tutto quello che posso permettermi!
+# Sin                                 
+PC07B_SIN_FIRST-14=La prego! La supplico!
+# Brok                                 
+PC07B_SIN_FIRST-15=(sospira) D'accordo... che 500 Uni siano.
+# Brok                                 
+PC07B_SIN_FIRST-16=(Vorrei essere più bravo a negoziare...)
+# Brok                                 
+PC07B_SIN_FIRST-17=Mi dica di più.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_GUN1-1=Qualche idea di dove possa averla persa?
+# Sin                                 
+PC07B_SIN_GUN1-2=Ieri notte, ero in servizio a Drumer Street.
+# Sin                                 
+PC07B_SIN_GUN1-3=Sono quasi certo di averla persa durante il turno nel vicolo al numero 12. Prima di allora ce l'avevo.
+# Brok                                 
+PC07B_SIN_GUN1-4=Allora perché non se la cerca da solo?
+# Sin                                 
+PC07B_SIN_GUN1-5=Non posso uscire! Se qualcuno mi vedesse senza pistola, sarei finito!
+# Brok                                 
+PC07B_SIN_GUN1-6=Non starà esagerando un po'?
+# Sin                                 
+PC07B_SIN_GUN1-7=Lei è del dipartimento di polizia?
+# Brok                                 
+PC07B_SIN_GUN1-8=Certo che no. Non li reggo quelli. Ehm...
+# Sin                                 
+PC07B_SIN_GUN1-9=Allora non capisce! Si fidi di me.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_GUN2-1=Cos'è successo esattamente? Come l'ha persa?
+# Sin                                 
+PC07B_SIN_GUN2-2=Se solo lo sapessi! Ricordo solo di essere uscito dal vicolo e di aver visto che non ce l'avevo più!
+# Brok                                 
+PC07B_SIN_GUN2-3=Dove la teneva?
+# Sin                                 
+PC07B_SIN_GUN2-4=In tasca, dove altrimenti?
+# Brok                                 
+PC07B_SIN_GUN2-5=C'è altro che non trova?
+# Sin                                 
+PC07B_SIN_GUN2-6=A dire il vero, sì. Il mio fazzoletto.
+# Sin                                 
+PC07B_SIN_GUN2-7=Un fazzoletto blu. Mia moglie lo aveva cucito a mano per me.
+# Sin                                 
+PC07B_SIN_GUN2-8=Ce l'avevo in tasca, accanto alla pistola... entrambe le cose sono scomparse.
+# Brok                                 
+PC07B_SIN_GUN2-9=OK, potrebbe essere utile.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1-1=Drumer Street, ha detto?
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1-2=C'è un posto di confine per accedere alla zona. Io non posso passare.
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-1=Lei è un detective! Credevo che avesse le credenziali per esaminare i Drums!
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-2=No. Tutti i miei clienti sono Slumer, e io difficilmente vado nei pressi della Cupola.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-3=Oh, grandioso...
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-4=Lei è un poliziotto. Non può darmi qualcosa?
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-5=O chiamare i suoi colleghi, per esempio?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-6=Ripeto... sono nuovo. Non ho nessuno di cui potermi fidare.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-7=In tal caso...
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-8=Mi dia la sua uniforme e il suo distintivo. Mi spaccerò per lei.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-9=Impossibile! Non usiamo più i distintivi.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-10=C'è uno scanner corporeo all'ingresso della Cupola. Non può essere ingannato.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-11=Dannazione... ha ragione. Allora... ehm...
+# Brok                                 
+#He is talking about Shay.
+PC07B_SIN_DRUMERSSTREET1B-12=Ci sono! Ho un'amica che fa magie con la tecnologia.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-13=Troverà un modo per farmi passare.
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-1=Grandioso!
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-2=Allora proceda! Che sta aspettando?!
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-3=Ehi! Sto per correre dei rischi per lei! Potrebbe anche essere un po'più gentile. 
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-4=La prego, signor detective, si sbrighi!
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-5=Ora sì che ci siamo. Ma non me ne andrò prima di aver raccolto abbastanza informazioni.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-6=Cosa c'è, ora?
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-7=Vorrei ispezionare il suo appartamento.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-8=L'esperienza mi dice che le cose solitamente si nascondono proprio davanti ai propri occhi.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-9=Ma... gliel'ho detto! L'ho persa su Drumer Street!
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-10=Insisto! Mi lasci fare il mio lavoro.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-11=(La mia regola numero 3 è: mai fidarsi ciecamente di un cliente.)
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-12=Bah! Faccia pure, ma si sbrighi!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET2-1=Perché stava pattugliando quella strada?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET2-2=Ricevo degli ordini... e li eseguo.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET2-3=Era solo? Non bastavano Tribot e telecamere?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET2-4=Il capo insiste nel tenere degli umani nelle aree cruciali.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET2-5=Cruciali, eh?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET2-6=Capisco cosa intende... ma è così che va. I Drumer hanno sempre la priorità.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_HIMSELF1-1=Come mai vive negli Slums? Avrei giurato che tutti i piedipiatti fossero Drumer.
+# Sin                                 
+PC07B_SIN_HIMSELF1-2=Si sbaglia. E non guadagno poi così tanto.
+# Brok                                 
+PC07B_SIN_HIMSELF1-3=Ma gli Slumer sono ammessi nelle forze di polizia? Credevo che...
+# Sin                                 
+PC07B_SIN_HIMSELF1-4=Per favore, la smetta con le domande inutili e si metta a fare il suo lavoro! Non c'è tempo da perdere!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_THINK1-1=(Quindi oggi lavoro a "chi cerca trova?")
+# Brok                                 
+PC07B_SIN_THINK1-2=(Non dovrei lamentarmi. Ho avuto lavori peggiori. Anche se non posso fare a meno di pensare che ci sia qualcosa che non quadra...)
+# Brok                                 
+PC07B_SIN_THINK1-3=(Beh! Comunque ci sono abituato. Le cose vanno SEMPRE a finire male.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_WELCOME1-1=Allora, mi dica...
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_WELCOME2-1=Posso chiederle una cosa?
+# Sin                                 
+PC07B_SIN_WELCOME2-2=Di nuovo? Quando comincerà a indagare?
+# Brok                                 
+PC07B_SIN_WELCOME2-3=Andiamo con ordine.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_EXIT1-1=Grazie per le informazioni.
+# Sin                                 
+PC07B_SIN_EXIT1-2=Si sbrighi!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_EXIT2-1=Aspetti qui.
+# Sin                                 
+PC07B_SIN_EXIT2-2=Cos'altro potrei fare?!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_DEFAULT1-1=Guardi quest'oggetto.
+# Sin                                 
+PC07B_SIN_INV_DEFAULT1-2=Che ha di speciale?
+# Brok                                 
+PC07B_SIN_INV_DEFAULT1-3=Non ne ho idea. Sto chiedendo la sua opinione. Cosa ne pensa?
+# Sin                                 
+PC07B_SIN_INV_DEFAULT1-4=Che razza di indagine è questa? Non ho tempo da perdere!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_DEFAULT2-1=Credo che questo potrebbe serv...
+# Sin                                 
+PC07B_SIN_INV_DEFAULT2-2=No!
+# Brok                                 
+PC07B_SIN_INV_DEFAULT2-3=Non c'è bisogno di arrabbiarsi.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_PILL-1=(Meeeglio di no... l'ho rubata a lui.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_REMOTECONTROLDAMAGED-1=Non temere! Lo riparerò.
+# Sin                                 
+PC07B_SIN_INV_REMOTECONTROLDAMAGED-2=Lo spero...
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-1=Ehi! Ma è...
+# Brok                                 
+PC07B_SIN_INV_HANDKERCHIEF-2=Il suo, vero?
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-3=Sì! Finalmente dei progressi!
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-4=Me lo ridia.
+# Brok                                 
+PC07B_SIN_INV_HANDKERCHIEF-5=Cosa? Non se ne parla! È un indizio!
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-6=(sospira)
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-7=OK... per ora può tenerlo...
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-8=Ma non osi usarlo per soffiarsi il naso!
+# Brok                                 
+PC07B_SIN_INV_HANDKERCHIEF-9=Chi, io?! Mai!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INV_CATFUR-1=Urgh...
+# Sin                                 
+PC07B_SIN_INV_CATFUR-2=Attento! Sta spargendo pelo dappertutto!
+# Brok                                 
+PC07B_SIN_INV_CATFUR-3=Mi ha guardato bene?
+# Sin                                 
+PC07B_SIN_INV_CATFUR-4=Uh... da dove viene?
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INV_MONEY-1=Ehm... per quale motivo?
+# Brok                                 
+PC07B_SIN_INV_MONEY-2=Ops! Credevo di doverle qualcosa!
+# Sin                                 
+PC07B_SIN_INV_MONEY-3=Infatti è così... deve risolvere l'indagine!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_MAGNIFY-1=Visto? Sono un detective!
+# Sin                                 
+PC07B_SIN_INV_MAGNIFY-2=(sospira)
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_POLLUTIONPILL-1=Prenda.
+# Sin                                 
+PC07B_SIN_INV_POLLUTIONPILL-2=Una pillola Anti-inquinamento? Non mi serve!
+# Brok                                 
+PC07B_SIN_INV_POLLUTIONPILL-3=Non si sa mai cosa potrebbe accadere domani!
+# Sin                                 
+PC07B_SIN_INV_POLLUTIONPILL-4=No, grazie
+# Brok                                 
+PC07B_SIN_INV_POLLUTIONPILL-5=Non dica che non l'avevo avvertita!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_TRAMPPRESCR-1=Per favore, mi dica dove posso trovare un medico!
+# Sin                                 
+PC07B_SIN_INV_TRAMPPRESCR-2=Non ne ho idea. Usando i Medi-Tribot non ne ho mai avuto bisogno.
+# Brok                                 
+PC07B_SIN_INV_TRAMPPRESCR-3=Ne ha uno? Credevo che fosse uno Slumer...
+# Sin                                 
+PC07B_SIN_INV_TRAMPPRESCR-4=Beh...
+# Sin                                 
+PC07B_SIN_INV_TRAMPPRESCR-5=L'ho trovato nella spazzatura...
+# Brok                                 
+PC07B_SIN_INV_TRAMPPRESCR-6=Mmm...
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_GUN-1=(Non ancora...)
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-1=Per favore, mi dica che l'ha trovata!
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-2=(È così... ma...)
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-3=(Ho come il presentimento che non dovrei ancora dargliela. Sono quasi certo che mi sia sfuggito qualcosa.)
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-4=Non ancora, ma mi sto avvicinando.
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-5=(Meglio frugare più accuratamente nel suo appartamento.) 
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-1=L'ho trovata.
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-2=La pistola? Ce l'ha?!
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-3=Magnifico! Mi ha salvato la vita!
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-4=Aspetti. Non intendo dargliela... per ora.
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-5=Cosa? Perché?!
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-6=La mia indagine ha portato a galla alcune domande che necessitano un chiarimento.
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-7=Vorrei che mi spiegasse alcune cose.
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-8=Ehm... d'accordo. Dica pure.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN2-1=Riprendiamo la nostra... "conversazione".
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating Sin
+# *****************************************************************
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-1=Quella pistola non è sua.
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-2=Uh? Certo che è mia!
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-3=L'ho avuta quando sono stato reclutato nelle forze di polizia!
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-4=Questo spiegherebbe quelle iniziali... R.J.
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-5=Beh... sì. Ce l'aveva un altro agente prima di me...
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-6=Chi?
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-7=È così importante?
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-8=Dev'essere l'agente che è andato in pensione prima di me. Non ricordo il suo nome.
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-9=Non è tutto. Il codice identificativo è stato cancellato ed è illeggibile. Come se lo spiega?
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-10=Suppongo che...
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-11=Non è nuova, insomma. Deve averla consumata durante le sue missioni.
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-12=Mmph.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-1=Lo vede questo?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-2=Sì. Il mio telecomando. E allora?
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-3=Non ricordo... a che serve?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-4=È per... cambiare la posizione del mio letto.
+# Brok                                
+PC07B_CLUE_SIN_CAMERAOFF-5=Oh! Ma davvero?!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-6=Non aveva detto che era per il suo tablet?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-7=Ehm... beh... sì. Fa entrambe le cose...
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-8=Mmm. Comunque, la mia amica mi ha raccontato una cosa... piuttosto interessante.
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-9=Vede, lei pensa che sia un dispositivo della polizia che serve a disabilitare le telecamere da remoto.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-10=(sospira)
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-11=OK. Lo ammetto, è vero.
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-12=Quindi ho appena avuto la conferma che lei è un bugiardo.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-13=Ma è stupido o cosa?!
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-14=È equipaggiamento della polizia. I civili non dovrebbero saperne nulla!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-15=Mmph. L'ha mai usato?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-16=Non di recente...
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-17=D'accordo. Allora, mi dica...
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-18=Non era di ronda nei pressi della farmacia, ieri notte?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-19=Sì, gliel'ho già detto!
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-20=Insomma cosa vuole?! Arrivi al sodo!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-21=C'è stato un incidente.
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-22=La telecamera della farmacia era stata disattivata. Sospetto che possa essere a causa di quell'aggeggino.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-23=Io... non ne ho idea! Perché dovrei fare una cosa del genere?
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-24=Me lo dica lei.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-25=La smetta di mettere alla prova la mia pazienza!
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-26=Ho detto che non ho usato quel dannato telecomando! Capito?!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-27=Quindi gliel'ha rubato qualcuno?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-28=A parte lei?! No!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-29=OK...
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-1=Questa pillola... a cosa serve?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-2=Cosa diavolo posso saperne!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-3=Davvero non lo sa?
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-4=Nonostante sia sua...?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-5=Cosa?! Me l'ha appena rubata?!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-6=Veramente l'ho rubata un'ora fa... 
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-7=Non posso crederci...
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-8=Beh, meglio per lei. Questa è una "Starix-500".
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-9=Un antidepressivo con un interessante effetto collaterale!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-10=Con una dose abbastanza forte si può cadere in uno stato comatoso.
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-11=Dove vuole andare a parare?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-12=Comincio a pensare che lei mi stia accusando di aver drogato qualcuno!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-13=Non una persona qualunque. Un poliziotto.
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-14=Lei è pazzo!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-15=Certo, forse lo sono. Ma ecco la mia teoria...
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-16=La mercante nella sua strada dice di aver visto un tale profondamente addormentato stamattina presto... e in mutande!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-17=Pare che abbia dovuto faticare per svegliarlo e che non ricordasse nulla di quanto fosse accaduto.
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-18=Ma una cosa la sapeva per certo... è un poliziotto.
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-19=Quindi lei crede che questo poliziotto fosse venuto a trovare me?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-20=Impossibile! Non ricevo visite da giorni!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-21=E che mi dice dei due bicchieri sul tavolo?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-22=...da quando non si può bere in più bicchieri?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-23=Sto vivendo un momento difficile e lei sta solo peggiorando la situazione!
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-24=Perché l'ho assunta... ora capisco perché era così economico...
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-25=Cosa? Sono troppo economico, quindi?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-26=...Lasciamo stare.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-1=Sa qualcosa di quello che è accaduto alla farmacia?
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-2=Solo quello che mi ha detto lei. Che qualcuno ha disattivato la telecamera per rubare qualcosa...
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-3=Non ho menzionato alcun furto.
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-4=Beh... è pura logica. Cos'altro sarebbe potuto essere?
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-5=Vero. Il fatto è che sembra non mancare nulla.
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-6=Comunque... qualcuno ha tentato di forzare un cassetto sul retro.
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-7=Sa per caso cosa tengono lì dentro?
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-8=No, e non me ne frega un accidente!
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-9=Quindi non è coinvolto in nessun modo nell'incidente della farmacia?
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-10=Basta con queste domande! Si faccia gli affari suoi!
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-11=È stato lei a chiedermi di indagare.
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-12=Ma non su di me!
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-13=Questo è irrilevante!
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-14=(Non posso fidarmi di lui...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-1=Supponiamo che io abbia ragione e che la pistola non sia sua.
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-2=Non avrebbe senso che appartenesse al poliziotto che ha narcotizzato?
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-3=Queste sono accuse pesanti! Basta con queste illazioni inutili!
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-4=Sono stufo di queste sciocchezze! Mi ridia la pistola!
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-5=Me la prenderò con la forza, se necessario!
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-6=Prima di tutto, non glielo lascerò fare.
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-7=Secondo... la sua insistenza non fa che confermare i miei sospetti.
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-8=Argh... non porta altro che guai.
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-9=Dannazione! Cosa vuole da me?!
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-10=La verità!
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-1=Allora... l'incidente della farmacia. Il poliziotto drogato. Il vero proprietario della pistola.
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-2=Tutte le prove puntano verso la stessa direzione...
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-3=Lei non è un poliziotto, Sin. È un ladro!
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-4=No! È sbagliato!
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-5=Lei... non ha alcuna prova tangibile!
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-6=Forse io no... ma la polizia le troverebbe.
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-7=Senta, ho un'idea.
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-8=Se sta dicendo la verità, non dovrebbe essere un problema se chiedessi conferma della sua identità ad altri poliziotti, no?
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-9=Aspetti! Non lo faccia!
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-10=Lei... non capisce...
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-11=Io sono...
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-12=...
+# Sin                                 
+#Sin attacks Brok
+PC07B_CLUE_SIN_THIEF-13=Non mi lascia altra scelta.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_RESUME_FIGHT-1=Lei non è un poliziotto, Sin. È un ladro!
+# Sin                                 
+PC07B_SIN_RESUME_FIGHT-2=...
+# Sin                                 
+#Sin attacks Brok
+PC07B_SIN_RESUME_FIGHT-3=Non mi lascia altra scelta.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok reactions to clues during interrogation
+# *****************************************************************
+# Brok                                 
+PC07B_CLUE_BLACKOUT-1=(Entrambi possono portare a uno svenimento, ma...)
+# Brok                                 
+PC07B_CLUE_BLACKOUT-2=(Non vedo come questo possa aiutare.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_STRESSED-1=(Certo, Sin deve aver usato quelle pillole perché è molto stressato. Perciò...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_ALCOHOL-1=(Non dovrebbe sorprendere più di tanto che Sin beva a causa dello stress...)
+# Brok                                 
+PC07B_CLUE_ALCOHOL-2=(Non c'è nulla di contraddittorio, qui.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_PHARMACYSTEAL-1=(Sì, quei due eventi devono essere collegati... devo solo trovare un modo per scoprire cos'è successo.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_LINKWEAK-1=(Mmm... era coinvolto Sin? Qui il collegamento sembra troppo debole per dedurre qualcosa...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_PILLPHARMACY-1=(Sì, sono sicuro che abbia preso le sue pillole dalla farmacia... come ogni normale cliente.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_STREET-1=(È stata la stessa persona a fare entrambe le cose? Non posso giungere a conclusioni...)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok wins fight against Sin
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_WIN1-1=Basta! Per favore!
+# Sin                                 
+PC07B_SIN_WIN1-2=Mi spiace... ha vinto lei.
+# Sin                                 
+PC07B_SIN_WIN1-3=...
+# Sin                                 
+PC07B_SIN_WIN1-4=Aveva ragione... mi ha letto come un libro aperto...
+# Sin                                 
+PC07B_SIN_WIN1-5=Sono un ladro. Un criminale di basso livello...
+# Sin                                 
+PC07B_SIN_WIN1-6=Ma...
+# Sin                                 
+PC07B_SIN_WIN1-7=L'ho fatto per mia figlia...
+# Brok                                 
+PC07B_SIN_WIN1-8=Sua figlia?
+# Sin                               
+PC07B_SIN_WIN1-9=Sì. Volevo... solo rivederla...
+# Sin                                 
+PC07B_SIN_WIN1-10=Ho commesso un grosso sbaglio... o almeno, così pensavo...
+# Sin                                 
+PC07B_SIN_WIN1-11=Una settimana fa, mia moglie ha trovato dei video di me con un'altra donna.
+# Sin                                 
+PC07B_SIN_WIN1-12=La verità è che... non riesco a ricordarlo.
+# Brok                                 
+PC07B_SIN_WIN1-13=Pensa di essere stato incastrato?
+# Sin                                 
+PC07B_SIN_WIN1-14=...
+# Sin                                 
+PC07B_SIN_WIN1-15=Non lo so. Forse...
+# Brok                                 
+PC07B_SIN_WIN1-16=Qualche nemico?
+# Sin                                 
+PC07B_SIN_WIN1-17=Non che io sappia.
+# Sin                                 
+PC07B_SIN_WIN1-18=I video sembravano reali. Ho solo pensato che una notte dovevo essere talmente ubriaco che... beh...
+# Sin                                 
+PC07B_SIN_WIN1-19=In ogni caso, era furiosa.
+# Sin                                 
+PC07B_SIN_WIN1-20=Mi ha costretto ad andarmene di casa. Mi ha intimato di non avvicinarmi mai più né a lei né a nostra figlia.
+# Sin                                 
+PC07B_SIN_WIN1-21=Ho provato a farla ragionare, ma non è servito a nulla.
+# Sin                                 
+PC07B_SIN_WIN1-22=Non vedere più mia moglie è già molto dura, ma anche mia figlia?
+# Brok                                 
+PC07B_SIN_WIN1-23=Le donne possono dare di matto, talvolta. Ma magari è un intoppo momentaneo....
+# Sin                                 
+PC07B_SIN_WIN1-24=Non stavolta.
+# Sin                                 
+PC07B_SIN_WIN1-25=Lei è una giornalista, sa...
+# Sin                                 
+PC07B_SIN_WIN1-26=Conoscere la verità è di primaria importanza per lei, e io ho definitivamente perso la sua fiducia...
+# Sin                                 
+PC07B_SIN_WIN1-27=Ho provato a parlare con mia figlia al Centro di Coscienza. Ma questo le ha fatto perdere del tutto la testa.
+# Sin                                 
+PC07B_SIN_WIN1-28=Mi ha minacciato di far partire le procedure di espulsione.
+# Brok                                 
+PC07B_SIN_WIN1-29=Espulsione?
+# Sin                                 
+PC07B_SIN_WIN1-30=Perderei la mia qualifica e il mio accesso ai Drums.
+# Brok                                 
+PC07B_SIN_WIN1-31=Quindi è un Drumer?
+# Sin                                 
+PC07B_SIN_WIN1-32=Sì. Beh... non per molto ancora, suppongo.
+# Sin                                 
+PC07B_SIN_WIN1-33=Non avevo scelta. Mi sono dovuto costringere a venire in questa fogna schifosa...
+# Sin                                 
+PC07B_SIN_WIN1-34=Beh, senza offesa.
+# Brok                                 
+PC07B_SIN_WIN1-35=Nessun problema. Ma perché il furto?
+# Sin                                 
+PC07B_SIN_WIN1-36=Ho riflettuto molto su questa situazione.
+# Sin                                 
+PC07B_SIN_WIN1-37=È che... non posso vivere senza la mia piccolina. Proprio non posso.
+# Sin                                 
+PC07B_SIN_WIN1-38=Quindi... dovevo tornare indietro e cambiare ciò che era accaduto.
+# Brok                                 
+PC07B_SIN_WIN1-39=Temo che il passato non si possa cambiare.
+# Sin                                 
+PC07B_SIN_WIN1-40=Si sbaglia. Un modo c'è...
+# Sin                                 
+PC07B_SIN_WIN1-41=Avrei potuto riaverla indietro... se sua madre si fosse dimenticata di questo incidente.
+# Brok                                 
+PC07B_SIN_WIN1-42=Si può davvero rimuovere un evento così importante?
+# Sin                                 
+PC07B_SIN_WIN1-43=Sì. Con "Oblivion".
+# Brok                                 
+PC07B_SIN_WIN1-44=Oblivion...
+# Sin                                 
+PC07B_SIN_WIN1-45=È una medicina inventata per situazioni critiche.
+# Sin                                 
+PC07B_SIN_WIN1-46=Per le vittime di un trauma. Per i bambini che perdono i genitori in maniera tragica...
+# Sin                                 
+PC07B_SIN_WIN1-47=Ha l'abilità di sopprimere la memoria selettiva, anche giorni dopo l'accadimento di un evento.
+# Sin                                 
+PC07B_SIN_WIN1-48=Ovviamente, il Governo lo tiene segreto. Farlo sapere al pubblico porterebbe effetti drammatici...
+# Sin                                 
+PC07B_SIN_WIN1-49=Ho passato giorni interi a cercare una soluzione... e finalmente l'ho trovata.
+# Sin                                 
+PC07B_SIN_WIN1-50=Nell'appartamento proprio accanto al mio viveva un hacker...
+# Sin                                 
+PC07B_SIN_WIN1-51=Sono riuscito a convincerlo a condividere con me dei rapporti top secret.
+# Sin                                 
+PC07B_SIN_WIN1-52=C'era menzionato Oblivion, insieme ai posti in cui trovarlo.
+# Sin                                 
+PC07B_SIN_WIN1-53=Avevo un amico poliziotto... R.J. Era spesso di pattuglia nei pressi di uno di questi posti...
+# Brok                                 
+PC07B_SIN_WIN1-54=...Quella farmacia.
+# Brok                                 
+PC07B_SIN_WIN1-55=Quindi lo ha drogato per travestirsi da lui e rubare la medicina.
+# Sin                                 
+PC07B_SIN_WIN1-56=Esattamente. Ne avevo un bisogno disperato...
+# Brok                                 
+PC07B_SIN_WIN1-57=Che bel modo di trattare gli amici...
+# Sin                                 
+PC07B_SIN_WIN1-58= ...Vero. Ma...
+# Sin                                 
+PC07B_SIN_WIN1-59=Se avesse un figlio... capirebbe...
+# Sin                                 
+PC07B_SIN_WIN1-60=Si è disposti a fare qualsiasi cosa per loro.
+# Sin                                 
+PC07B_SIN_WIN1-61=Ho disattivato la telecamera e ho provato a forzare il cassetto. Ma poi...
+# Sin                                 
+PC07B_SIN_WIN1-62=La mia fortuna è finita. Un bot mi ha individuato e ha chiamato la polizia.
+# Sin                                 
+PC07B_SIN_WIN1-63=Non avevo altra scelta. Se fossi finito in prigione, avrei perso ogni speranza di poter rivedere mia figlia.
+# Sin                                 
+PC07B_SIN_WIN1-64=Così sono scappato nel vicolo sul retro...
+# Brok                                 
+PC07B_SIN_WIN1-65=E la pistola?
+# Sin                                 
+PC07B_SIN_WIN1-66=Nella fretta, l'ho tirata fuori dalla tasca e l'ho gettata nelle fogne per sbarazzarmene.
+# Sin                                 
+PC07B_SIN_WIN1-67=Ma... è stata una stupidaggine. Ho dimenticato di pulire le mie impronte...
+# Sin                                 
+PC07B_SIN_WIN1-68=Se i poliziotti ci avessero messo le mani sopra... sarebbe stata la fine, per me.
+# Brok                                 
+PC07B_SIN_WIN1-69=Quindi questo è quanto...
+# Brok                                 
+PC07B_SIN_WIN1-70=Mi ha assunto perché aveva bisogno della pistola, ma non poteva correre il rischio di cercarsela da solo.
+# Sin                                 
+PC07B_SIN_WIN1-71=Sì...
+# Sin                                 
+PC07B_SIN_WIN1-72=Può procedere, comunque.
+# Sin                                 
+PC07B_SIN_WIN1-73=Chiami la polizia. Sono pronto.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_DENOUNCE1-1=Spiacente... ha fatto la sua scelta.
+# Sin                                 
+PC07B_SIN_DENOUNCE1-2=Lo so...
+# Brok                                 
+PC07B_SIN_DENOUNCE1-3=Infrangere la legge non ha scusanti.
+# Brok                                 
+PC07B_SIN_DENOUNCE1-4=(... starò facendo la cosa giusta?)
+# Brok                                 
+PC07B_SIN_DENOUNCE1-5=(Probabilmente avrei fatto lo stesso...)
+# Brok                                 
+PC07B_SIN_DENOUNCE1-6=(Una cosa è certa. Non verrò pagato... di nuovo.)
+# Brok                                 
+PC07B_SIN_DENOUNCE1-7=(sospira)
+#----------------------------------------------------
+# Brok                                 
+#IMPORTANT - At this moment you can make Brok talk to Sin in an informal way. (Maybe not the opposite yet though, but both should talk to each other in informal ways in jail in PC08B)
+PC07B_SIN_FORGIVE1-1=No.
+# Sin                                 
+PC07B_SIN_FORGIVE1-2=Cosa?
+# Brok                                 
+PC07B_SIN_FORGIVE1-3=Non lo farò. Volevo solo conoscere la verità.
+# Brok                                 
+PC07B_SIN_FORGIVE1-4=Ascolta... siamo dalla stessa parte. Anche io ho un figlio...
+# Brok                                 
+PC07B_SIN_FORGIVE1-5=Più o meno...
+# Sin                                 
+PC07B_SIN_FORGIVE1-6=Ma... me lo merito...
+# Sin                                 
+PC07B_SIN_FORGIVE1-7=L'ho aggredita!
+# Sin                                 
+PC07B_SIN_FORGIVE1-8=Come può perdonarmi? Lei e tutti gli altri?
+# Brok                                 
+PC07B_SIN_FORGIVE1-9=Non preoccuparti per me. Hai già sofferto abbastanza, amico.
+# Brok                                 
+PC07B_SIN_FORGIVE1-10=Non lo dirò a nessuno. E ti aiuterò a sbarazzarti di quella schifosa pistola.
+# Sin                                 
+PC07B_SIN_FORGIVE1-11=Davvero? Ma...
+# Sin                                 
+PC07B_SIN_FORGIVE1-12=Io... ecco, ho mentito anche su qualcos'altro...
+# Sin                                 
+PC07B_SIN_FORGIVE1-13=Non ho abbastanza denaro per pagarla... ho pensato che avrei trovato una soluzione...
+# Brok                                 
+PC07B_SIN_FORGIVE1-14=Oh, beh... non so perché, ma me lo aspettavo.
+# Brok                                 
+PC07B_SIN_FORGIVE1-15=Non preoccuparti. Ne verremo a capo più tardi.
+# Sin                                 
+PC07B_SIN_FORGIVE1-16=Io... questo è...
+# Sin                                 
+PC07B_SIN_FORGIVE1-17=Grazie...
+# Brok                                 
+PC07B_SIN_FORGIVE1-18=Non fa niente.
+# Brok                                 
+PC07B_SIN_FORGIVE1-19=Ecco la pis...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Wes and police robots come crashing to arrest them
+# *****************************************************************
+# Wes                                 
+PC07B_SIN_WIN2-1=Non muoverti! Mani sopra la testa!
+# Sin                                 
+PC07B_SIN_WIN2-2=Gulp!
+# Wes                                 
+PC07B_SIN_WIN2-3=Anche tu. Siete entrambi in arresto.
+# Brok                                 
+PC07B_SIN_WIN2-4=Cosa?! Ma...
+# Wes                                 
+PC07B_SIN_WIN2-5=Non disturbarti a cercare di usare la pistola. L'abbiamo disattivata.
+# Sin                                 
+PC07B_SIN_WIN2-6=Come ci avete trovato?
+# Wes                                 
+PC07B_SIN_WIN2-7=Il suo amico detective si stava comportando in maniera sospetta. È stato automaticamente registrato dal sistema.
+# Wes                                 
+PC07B_SIN_WIN2-8=E lui ci ha condotti fin qui.
+# Wes                                 
+PC07B_SIN_WIN2-9=Abbiamo atteso per registrare la sua confessione da dietro il muro. Ci farà risparmiare tempo!
+# Brok                                 
+PC07B_SIN_WIN2-10=Mi dispiace.
+# Wes                                 
+PC07B_SIN_WIN2-11=Fai dannatamente bene a dispiacerti!
+# Wes                                 
+PC07B_SIN_WIN2-12=Stavolta ti ho preso, Pork! Aiutare i criminali è un crimine federale!
+# Brok                                 
+PC07B_SIN_WIN2-13=Mi chiamo Brok, donnola irrispettosa!
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRUSTSIN_DENOUNCED-1=Se davvero stavate origliando, dovresti sapere che stavo per denunciarlo!
+# Wes                                 
+PC07B_TRUSTSIN_DENOUNCED-2=Ti conosco. Questo mi basta.
+# Brok                                 
+PC07B_TRUSTSIN_DENOUNCED-3=Ehi! Cosa diavolo vuol dire?!
+#----------------------------------------------------
+# Wes                                 
+PC07B_SIN_WIN2B-1=Non mi importa.
+# Wes                                 
+PC07B_SIN_WIN2B-2=Andiamo, muovetevi! Tutti e due!
+# Sin                                 
+PC07B_SIN_WIN2B-3=(sospira)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player hits Sin
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_HIT1-1=Argh!
+# Sin                                 
+PC07B_SIN_HIT1-2=È impazzito? È così che porta avanti un'indagine?
+# Brok                                 
+PC07B_SIN_HIT1-3=Ehm... ops! Mi spiace!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_HIT2-1=Ahi!!!
+# Brok                                 
+PC07B_SIN_HIT2-2=Oh...! Ehm... non intendevo farlo.
+# Sin                                 
+PC07B_SIN_HIT2-3=...
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_HIT3-1=Argh! Basta così!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - During fight
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_FIGHT1-1=Vuoi andare giù?!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_FIGHT2-1=Quanti bicchieri devo lanciare?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player kills Sin and the opposite
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_GAMEOVER1-1=Oh cavolo... non intendevo...
+# Sin                                 
+PC07B_SIN_GAMEOVER1-2=Mi spiace essere arrivato a questo...
+# Sin                                 
+PC07B_SIN_GAMEOVER1-3=Perché ti sei messo a scavare tanto nel torbido?
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_KILLED1-1=Cos'ho fatto... ho ucciso il mio cliente...!
+# Brok                                 
+PC07B_SIN_KILLED1-2=Cosa mi sta succedendo...?
+# Brok                                 
+PC07B_SIN_KILLED1-3=Non posso andare avanti così...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Pause interrogation
+# *****************************************************************
+# Brok                                 
+PC07B_INTERROGATION_EXIT_NOTENOUGH-1=Resti qui.
+# Sin                                 
+PC07B_INTERROGATION_EXIT_NOTENOUGH-2=Uh...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Missing clues hints
+# *****************************************************************
+# Brok                                 
+PC07B_MISSINGCLUE_SIN-1=(Devo essermi perso qualche indizio nell'appartamento di Sin... meglio controllare!)
+#----------------------------------------------------
+# Brok                                 
+PC07B_MISSINGCLUE_PILL-1=(Mmm... quell'analizzatore di medicine in farmacia...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_MISSINGCLUE_DRUMERSTREET-1=(Dovrei ispezionare la farmacia con più attenzione. Ho come la sensazione di essermi perso qualcosa...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_MISSINGCLUE_SECTOR56X-1=(Ho come la sensazione di non aver ispezionato abbastanza bene il Settore 56X...)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming back in day 2
+# *****************************************************************
+# Brok                                 
+PC07B_LOOTED1-1=Oh, diamine! La casa è stata completamente saccheggiata!
+# Brok                                 
+PC07B_LOOTED1-2=Povero Sin...
+#----------------------------------------------------
+
+
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Walk on table
+# *****************************************************************
+# Sin
+PC07B_WALKTABLE1-1=Ehm... detective?
+# Brok
+PC07B_WALKTABLE1-2=Qual è il problema?
+# Sin
+PC07B_WALKTABLE1-3=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hit the wall
+# *****************************************************************
+# Sin
+PC07B_HITWALL1-1=La smetta! Sta peggiorando le cose!
+#----------------------------------------------------
+# Sin
+PC07B_HITWALL2-1=Mi sta ascoltando?! Basta!
+#----------------------------------------------------
+# Sin
+PC07B_HITWALL3-1=Argh!!!
+# Brok
+PC07B_HITWALL3-2=Niente di grave...
+# Brok
+PC07B_HITWALL3-3=Oops!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hit the glasses
+# *****************************************************************
+# Sin
+PC07B_HITGLASSES1-1=Ehi, la smetta!
+#----------------------------------------------------
+# Sin
+PC07B_HITGLASSES2-1=Non l'ho chiamata per rompere le mie cose!
+#----------------------------------------------------
+# Brok
+PC07B_HITGLASSES3-1=Che razza di magia è questa? Più ne rompo, più ne compaiono!
+
+
+#-------------------------------
+#= SIN APARTMENT HALLWAY
+#-------------------------------
+
+#----- Interactions --------
+PC_PLANK=Asse
+PC_REMOTECONTROL=Telecomando
+PC_JACKET=Giacca
+PC_TRASH=Spazzatura
+PC_GLASSES=Bicchieri
+PC_WALLCRACK=Crepa nel muro
+PC_WARDFRIDGE=Frigarmadio
+PC_MIRROR=Specchio
+PC_CUP=Tazza
+PC_WASHINGMACHINE=Lavatrice
+PC_FOOD=Cibo
+PC_CLOTHES=Abiti
+PC_GLASSESPILE=Pila di bicchieri
+
+#----- Choices / Items --------
+GOT_REMOTECONTROLDAMAGED=Un telecomando danneggiato! 
+GOT_PILL=Una pillola!
+
+#----- Topics --------
+TOPIC_GUN=Pistola
+TOPIC_DRUMERSSTREET=Drumer Street
+
+TOPIC_DENOUNCE=Denuncia
+TOPIC_FORGIVE=Perdona
+
+INTERROGATION_SIN=Cosa nasconde Sin?
+
+
+#----- Dialog --------
+
+
+
+###############################################
+# PROOFREADED - illuminati1556 - 17/06/2019
+###############################################
+
+
+
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC07B_GLASSESPILE1-1= Un bel mucchio... Sembra che a questo tizio piaccia bere.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Jumping on bed
+# *****************************************************************
+# Sin                                 
+PC07B_BEDJUMP1-1=Lei è un professionista... vero?
+# Brok                                 
+PC07B_BEDJUMP1-2=Certo!
+# Sin                                 
+PC07B_BEDJUMP1-3=D'accordo...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC07B_GLASSES1-1=Due bicchieri, eh?
+# Sin                                 
+PC07B_GLASSES1-2=E quindi? 
+# Brok                                 
+PC07B_GLASSES1-3=Non lo so... avevo la sensazione che vivesse da solo.
+# Sin                                 
+PC07B_GLASSES1-4=Infatti.
+#----------------------------------------------------
+# Brok                                 
+PC07B_GLASSES2-1=Due bicchieri vuoti...
+#----------------------------------------------------
+# Brok                                 
+PC07B_TABLET1-1=Un tablet... sembra che lo usasse per effettuare delle ricerche sul Triweb.
+# Brok                                 
+PC07B_TABLET1-2="Trovare oggetto perduto..." "Banco dei pegni..." "Farmaci per sonno profondo..." "Detective economico...?"
+# Brok                                 
+PC07B_TABLET1-3=Mmmph... suppongo che dovrei essere felice di essere ben posizionato per que tipo di ricerca...
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRASH1-1=Anche senza frugare, riesco a vedere una bottiglia vuota di Hot Juice.
+# Brok                                 
+PC07B_TRASH1-2=Perfetto per ubriacarsi come una spugna.
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRASH2-1=Sin mi sta guardando... non ho intenzione di scavare nella sua spazzatura.
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRASH_AFTER1-1=Vuota...
+#----------------------------------------------------
+# Brok                                 
+PC07B_MIRROR1-1=Questo specchio ha visto giorni migliori.
+# Brok                                 
+PC07B_MIRROR1-2=Proprio come me.
+#----------------------------------------------------
+# Brok                                 
+PC07B_PICTURE1-1=C'è qualcosa incastrato a lato dello specchio!
+#----------------------------------------------------
+# Brok                                 
+PC07B_PICTURE1B-1=Una foto di Sin insieme a una donna e una bambina... mi domando chi siano.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CUP1-1=Quella tazza non sembra importante. In ogni caso...
+# Brok                                 
+PC07B_CUP1-2=Ci sono due pillole accanto. Ne prenderò una.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CUP2-1=Prendere entrambe le pillole sembrerebbe sospetto.
+#----------------------------------------------------
+# Brok                                 
+PC07B_WASHINGMACHINE1-1=Che fortuna! Una lavatrice multifunzione!
+# Brok                                 
+PC07B_WASHINGMACHINE1-2=Ti ci lavi tu, i tuoi abiti, o tutte e due le cose insieme!
+#----------------------------------------------------
+# Brok                                 
+PC07B_WASHINGMACHINE_AFTER1-1=Almeno una cosa è rimasta. Immagino che sia troppo grossa da spostare...
+#----------------------------------------------------
+# Brok                                 
+PC07B_BED1-1=A cosa serve questo pulsante?
+# Sin                                 
+PC07B_BED1-2=Non lo faccia! È il mio...
+#----------------------------------------------------
+# Sin                                 
+PC07B_BED1B-1=...letto.
+# Brok                                 
+PC07B_BED1B-2=Oh.
+#----------------------------------------------------
+# Brok                                 
+PC07B_BEDFALLEN1-1=Molto utile quando sei a corto di spazio! Dovrei davvero procurarmene uno.
+#----------------------------------------------------
+# Brok                                 
+PC07B_WARDFRIDGE1-1=Cosa c'è lì dentro?
+# Sin                                 
+PC07B_WARDFRIDGE1-2=Solo cibo e abiti. Cosa si aspettava?
+# Brok                                 
+PC07B_WARDFRIDGE1-3=Le spiace se lo apro?
+# Sin                                 
+PC07B_WARDFRIDGE1-4=Non l'ho chiamata per farle controllare il mio frigarmadio!
+# Brok                                 
+PC07B_WARDFRIDGE1-5=Solo un'occhiatina!
+#----------------------------------------------------
+# Brok                                 
+PC07B_WARDFRIDGE1B-1=Chissà, forse potrebbe aver lasciato la pistola lì dentro?
+#----------------------------------------------------
+# Brok                                 
+PC07B_WARDFRIDGE1C-1=Mi sa di no. Niente di particolare.
+# Sin                                 
+PC07B_WARDFRIDGE1C-2=Sa, comincio a pormi domande sulle sue capacità di detective...
+# Brok                                 
+PC07B_WARDFRIDGE1C-3=Agisci prima di pensare! Ecco cosa diceva sempre mio nonno.
+# Brok                                 
+PC07B_WARDFRIDGE1C-4=Di solito funziona!
+# Sin                                 
+PC07B_WARDFRIDGE1C-5=Non quando si è a corto di tempo! Oh cielo, se qualcuno trovasse la pistola prima di me...
+# Brok                                 
+PC07B_WARDFRIDGE1C-6=Capito! Cercherò di affrettarmi.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLOTHES1-1=I frigarmadi sono davvero una grande invenzione!
+# Brok                                 
+PC07B_CLOTHES1-2=L'aria fredda viene spinta in alto, per cui il calore resta sul fondo per tenere gli abiti caldi.
+#----------------------------------------------------
+# Brok                                 
+PC07B_FOOD1-1=Mmm...
+# Sin                                 
+PC07B_FOOD1-2=Non mi dica che sta rubando qualcosa dal mio frigo, vero?
+# Brok                                 
+PC07B_FOOD1-3=Non sto rubando! Lo consideri solo un pagamento anticipato.
+# Brok                                 
+PC07B_FOOD1-4=Inoltre, non riesco a svolgere bene il mio lavoro a stomaco vuoto.
+# Sin                                 
+PC07B_FOOD1-5=Spero che stia scherzando...
+#----------------------------------------------------
+# Brok                                 
+PC07B_FOOD2-1=Preferisco non abusare della sua ospitalità... specialmente perché mi sta lanciando delle strane occhiate.
+#----------------------------------------------------
+# Brok                                 
+PC07B_WALLCRACK1-1=Wow... Vedo l'altro lato del pianerottolo da qui!
+# Sin                        
+PC07B_WALLCRACK1-2=Già. Quest'edificio sta cadendo a pezzi. Ma era l'unico appartamento che potevo permettermi.
+# Brok                                 
+PC07B_WALLCRACK1-3=Quand'è che si è trasferito?
+# Sin                                 
+PC07B_WALLCRACK1-4=Circa due settimane fa...
+# Brok                                 
+PC07B_WALLCRACK1-5=Ah, questo spiega come mai è tutto così vuoto. Perché...?
+# Sin                                 
+PC07B_WALLCRACK1-6=Non sono affari suoi!
+# Brok                                 
+PC07B_WALLCRACK1-7=Non c'è bisogno di agitarsi! Mi chiedevo solo se avesse il denaro per pagarmi.
+# Sin                                 
+PC07B_WALLCRACK1-8=Lo farò. A tempo debito.
+# Brok                                 
+PC07B_WALLCRACK1-9=(Due a uno che non verrò mai pagato...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_WALLCRACK2-1=Un'enorme crepa nel muro... e io che pensavo che il mio appartamento fosse in uno stato disastroso!
+#----------------------------------------------------
+# Brok                                 
+PC07B_WALLCRACK_AFTER1-1=Perché mi sono disturbato a passare per la porta...
+#----------------------------------------------------
+# Brok                                 
+PC07B_JACKET1-1=Vediamo un po'...
+# Sin                                 
+PC07B_JACKET1-2=Ehi! Non tocchi la mia giacca!
+# Brok                                 
+PC07B_JACKET1-3=Non preoccuparsi, sto solo frugando nelle tasche per vedere se...
+# Brok                                 
+PC07B_JACKET1-4=A-ha! Ho trovato... un volantino!
+# Sin                                 
+PC07B_JACKET1-5=Deve avercelo messo uno di quegli attivisti in strada. Può tenerlo. Non mi importa.
+#----------------------------------------------------
+# Brok                                 
+PC07B_JACKET2-1=Non c'è altro nella giacca.
+#----------------------------------------------------
+# Brok                                 
+PC07B_DEVICEBED1-1=E quello cos'è? Sembra una specie di...
+#----------------------------------------------------
+# Brok                                 
+PC07B_DEVICEBED1B-1=...ops.
+# Sin                                 
+PC07B_DEVICEBED1B-2=Non posso crederci! Lo ha rotto!
+# Brok                                 
+PC07B_DEVICEBED1B-3=Ehm... mi spiace molto. Cos'è esattamente?
+# Sin                                 
+PC07B_DEVICEBED1B-4=Un... telecomando. Per il mio... ehm, tablet.
+# Brok                                 
+PC07B_DEVICEBED1B-5=Oh. In tal caso, non si preoccupi!
+# Brok                                 
+#The friend he refers to is Shay.
+PC07B_DEVICEBED1B-6=Ho un'amica che è un genio dell'elettronica, lo sistemerà in un secondo!
+#----------------------------------------------------
+# Sin                                 
+PC07B_DEVICEBED1C-1=È mio! Non ha il permesso di prenderlo!
+# Brok                                 
+PC07B_DEVICEBED1C-2=Si fidi! Lo riparerò io. Glielo devo.
+# Sin                                 
+PC07B_DEVICEBED1C-3=(sospira) Va bene, va bene!
+#----------------------------------------------------
+# Sin                                 
+PC07B_DEVICEBED1D-1=Ma si sbrighi e trovi quella pistola! Qui sta sprecando il suo tempo!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Exit before knowing we have to pass the border
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_EXITEARLY1-1=Ehm... non mi ha chiesto molte cose.
+# Sin                                 
+PC07B_SIN_EXITEARLY1-2=Sicuro di avere abbastanza informazioni?
+# Brok                                 
+PC07B_SIN_EXITEARLY1-3=Mmm... forse no.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Sin - but trying to inspect his apartment
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_NOTALLOWED1-1=Ehi! Che sta facendo?
+# Sin                                 
+PC07B_SIN_NOTALLOWED1-2=Non tocchi la mia roba!
+# Brok                                 
+PC07B_SIN_NOTALLOWED1-3=Spiacente.
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_NOTALLOWED2-1=Ma mi ascolta?
+# Brok                                 
+PC07B_SIN_NOTALLOWED2-2=No.
+# Sin                                 
+PC07B_SIN_NOTALLOWED2-3=Cosa?!
+# Brok                                 
+PC07B_SIN_NOTALLOWED2-4=Scherzavo, scherzavo!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_NOTALLOWEDBATHROOM1-1=Dove va?
+# Brok                                 
+PC07B_SIN_NOTALLOWEDBATHROOM1-2=Stavo solo controllando...
+# Sin                                 
+PC07B_SIN_NOTALLOWEDBATHROOM1-3=Può concentrarsi sui miei problemi, per favore?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Sin
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_FIRST-1=Finalmente! Eccola qui!
+# Brok                                 
+PC07B_SIN_FIRST-2=Mi spiace molto. Ho avuto... dei contrattempi lungo la strada.
+# Brok                                 
+PC07B_SIN_FIRST-3=Allora, cosa c'è di tanto urgente?
+# Sin                                 
+PC07B_SIN_FIRST-4=Sono in guai seri... ho perso la mia pistola paralizzante.
+# Brok                                 
+PC07B_SIN_FIRST-5=Tutto qui? Perché è così importante?
+# Sin                                 
+PC07B_SIN_FIRST-6=Perderò il lavoro! Ecco perché!
+# Sin                                 
+PC07B_SIN_FIRST-7=Sono... nuovo in polizia. Se dicessi al capo che l'ho persa, mi licenzierebbe!
+# Sin                                 
+PC07B_SIN_FIRST-8=Non posso permettermelo!
+# Brok                                 
+PC07B_SIN_FIRST-9=Quindi mi sta assumendo per trovare quella pistola? OK...
+# Brok                                 
+PC07B_SIN_FIRST-10=Quanto può offrirmi?
+# Sin                                 
+PC07B_SIN_FIRST-11=500 Uni...
+# Brok                                 
+PC07B_SIN_FIRST-12=1000.
+# Sin                                 
+PC07B_SIN_FIRST-13=Impossibile! 500 è tutto quello che posso permettermi!
+# Sin                                 
+PC07B_SIN_FIRST-14=La prego! La supplico!
+# Brok                                 
+PC07B_SIN_FIRST-15=(sospira) D'accordo... che 500 Uni siano.
+# Brok                                 
+PC07B_SIN_FIRST-16=(Vorrei essere più bravo a negoziare...)
+# Brok                                 
+PC07B_SIN_FIRST-17=Mi dica di più.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_GUN1-1=Qualche idea di dove possa averla persa?
+# Sin                                 
+PC07B_SIN_GUN1-2=Ieri notte, ero in servizio a Drumer Street.
+# Sin                                 
+PC07B_SIN_GUN1-3=Sono quasi certo di averla persa durante il turno nel vicolo al numero 12. Prima di allora ce l'avevo.
+# Brok                                 
+PC07B_SIN_GUN1-4=Allora perché non se la cerca da solo?
+# Sin                                 
+PC07B_SIN_GUN1-5=Non posso uscire! Se qualcuno mi vedesse senza pistola, sarei finito!
+# Brok                                 
+PC07B_SIN_GUN1-6=Non starà esagerando un po'?
+# Sin                                 
+PC07B_SIN_GUN1-7=Lei è del dipartimento di polizia?
+# Brok                                 
+PC07B_SIN_GUN1-8=Certo che no. Non li reggo quelli. Ehm...
+# Sin                                 
+PC07B_SIN_GUN1-9=Allora non capisce! Si fidi di me.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_GUN2-1=Cos'è successo esattamente? Come l'ha persa?
+# Sin                                 
+PC07B_SIN_GUN2-2=Se solo lo sapessi! Ricordo solo di essere uscito dal vicolo e di aver visto che non ce l'avevo più!
+# Brok                                 
+PC07B_SIN_GUN2-3=Dove la teneva?
+# Sin                                 
+PC07B_SIN_GUN2-4=In tasca, dove altrimenti?
+# Brok                                 
+PC07B_SIN_GUN2-5=C'è altro che non trova?
+# Sin                                 
+PC07B_SIN_GUN2-6=A dire il vero, sì. Il mio fazzoletto.
+# Sin                                 
+PC07B_SIN_GUN2-7=Un fazzoletto blu. Mia moglie lo aveva cucito a mano per me.
+# Sin                                 
+PC07B_SIN_GUN2-8=Ce l'avevo in tasca, accanto alla pistola... entrambe le cose sono scomparse.
+# Brok                                 
+PC07B_SIN_GUN2-9=OK, potrebbe essere utile.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1-1=Drumer Street, ha detto?
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1-2=C'è un posto di confine per accedere alla zona. Io non posso passare.
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-1=Lei è un detective! Credevo che avesse le credenziali per esaminare i Drums?
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-2=No. Tutti i miei clienti sono Slumer, e io difficilmente vado nei pressi della Cupola.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-3=Oh, grandioso...
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-4=Lei è un poliziotto. Non può darmi qualcosa?
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-5=O chiamare i suoi colleghi, per esempio?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-6=Ripeto... sono nuovo. Non ho nessuno di cui potermi fidare.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-7=In tal caso...
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-8=Mi dia la sua uniforme e il suo distintivo. Mi spaccerò per lei.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-9=Impossibile! Non usiamo più i distintivi.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1B-10=C'è uno scanner corporeo all'ingresso della Cupola. Non può essere ingannato.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-11=Dannazione... ha ragione. Allora... ehm...
+# Brok                                 
+#He is talking about Shay.
+PC07B_SIN_DRUMERSSTREET1B-12=Ci sono! Ho un'amica che fa magie con la tecnologia.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1B-13=Troverà un modo per farmi passare.
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-1=Grandioso!
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-2=Allora proceda! Che sta aspettando?!
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-3=Ehi! Sto per correre dei rischi per lei! Potrebbe anche essere un po'più gentile. 
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-4=La prego, signor detective, si sbrighi!
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-5=Ora sì che ci siamo. Ma non me ne andrò prima di aver raccolto abbastanza informazioni.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-6=Cosa c'è, ora?
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-7=Vorrei ispezionare il suo appartamento.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-8=L'esperienza mi dice che le cose solitamente si nascondono proprio davanti ai propri occhi.
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-9=Ma... gliel'ho detto! L'ho persa su Drumer Street!
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-10=Insisto! Mi lasci fare il mio lavoro.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET1C-11=(La mia regola numero 3 è: mai fidarsi ciecamente di un cliente.)
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET1C-12=Bah! Faccia pure, ma si sbrighi!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET2-1=Perché stava pattugliando quella strada?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET2-2=Ricevo degli ordini... e li eseguo.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET2-3=Era solo? Non bastavano Tribot e telecamere?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET2-4=Il capo insiste nel tenere degli umani in delle aree cruciali.
+# Brok                                 
+PC07B_SIN_DRUMERSSTREET2-5=Cruciali, eh?
+# Sin                                 
+PC07B_SIN_DRUMERSSTREET2-6=Capisco cosa intendi... ma è così che va. I Drumer hanno sempre la priorità.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_HIMSELF1-1=Come mai vive negli Slums? Avrei giurato che tutti i piedipiatti fossero Drumer.
+# Sin                                 
+PC07B_SIN_HIMSELF1-2=Si sbaglia. E non guadagno poi così tanto.
+# Brok                                 
+PC07B_SIN_HIMSELF1-3=Ma gli Slumer sono ammessi nelle forze di polizia? Credevo che...
+# Sin                                 
+PC07B_SIN_HIMSELF1-4=Per favore, la smetta con le domande inutili e si metta a fare il suo lavoro! Non c'è tempo da perdere!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_THINK1-1=(Quindi oggi lavoro a "chi cerca trova?")
+# Brok                                 
+PC07B_SIN_THINK1-2=(Non dovrei lamentarmi. Ho avuto lavori peggiori. Anche se non posso fare a meno di pensare che ci sia qualcosa che non quadra...)
+# Brok                                 
+PC07B_SIN_THINK1-3=(Beh! Comunque ci sono abituato. Le cose vanno SEMPRE a finire male.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_WELCOME1-1=Allora, mi dica...
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_WELCOME2-1=Posso chiederle una cosa?
+# Sin                                 
+PC07B_SIN_WELCOME2-2=Di nuovo? Quando comincerà a indagare?
+# Brok                                 
+PC07B_SIN_WELCOME2-3=Andiamo con ordine.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_EXIT1-1=Grazie per le informazioni.
+# Sin                                 
+PC07B_SIN_EXIT1-2=Si sbrighi!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_EXIT2-1=Aspetti qui.
+# Sin                                 
+PC07B_SIN_EXIT2-2=Cos'altro potrei fare?!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_DEFAULT1-1=Guardi quest'oggetto.
+# Sin                                 
+PC07B_SIN_INV_DEFAULT1-2=Che ha di speciale?
+# Brok                                 
+PC07B_SIN_INV_DEFAULT1-3=Non ne ho idea. Sto chiedendo la sua opinione. Cosa ne pensa?
+# Sin                                 
+PC07B_SIN_INV_DEFAULT1-4=Che razza di indagine è questa? Non ho tempo da perdere!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_DEFAULT2-1=Credo che questo potrebbe serv...
+# Sin                                 
+PC07B_SIN_INV_DEFAULT2-2=No!
+# Brok                                 
+PC07B_SIN_INV_DEFAULT2-3=Non c'è bisogno di arrabbiarsi.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_PILL-1=(Meeeglio di no... l'ho rubato a lui.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_REMOTECONTROLDAMAGED-1=Non temere! Lo riparerò.
+# Sin                                 
+PC07B_SIN_INV_REMOTECONTROLDAMAGED-2=Lo spero...
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-1=Ehi! Ma è...
+# Brok                                 
+PC07B_SIN_INV_HANDKERCHIEF-2=Il suo, vero?
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-3=Sì! Finalmente dei progressi!
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-4=Me lo ridia.
+# Brok                                 
+PC07B_SIN_INV_HANDKERCHIEF-5=Cosa? Non se ne parla! È un indizio!
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-6=(sospira)
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-7=OK... per ora può tenerlo...
+# Sin                                 
+PC07B_SIN_INV_HANDKERCHIEF-8=Ma non osi usarlo per soffiarsi il naso!
+# Brok                                 
+PC07B_SIN_INV_HANDKERCHIEF-9=Chi, io?! Mai!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INV_CATFUR-1=Urgh...
+# Sin                                 
+PC07B_SIN_INV_CATFUR-2=Attento! Sta spargendo pelo dappertutto!
+# Brok                                 
+PC07B_SIN_INV_CATFUR-3=Mi ha guardato bene?
+# Sin                                 
+PC07B_SIN_INV_CATFUR-4=Uh... da dove viene?
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INV_MONEY-1=Ehm... per quale motivo?
+# Brok                                 
+PC07B_SIN_INV_MONEY-2=Ops! Credevo di doverle qualcosa!
+# Sin                                 
+PC07B_SIN_INV_MONEY-3=Infatti è così... deve risolvere l'indagine!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_MAGNIFY-1=Visto? Sono un detective!
+# Sin                                 
+PC07B_SIN_INV_MAGNIFY-2=(sospira)
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_POLLUTIONPILL-1=Prenda.
+# Sin                                 
+PC07B_SIN_INV_POLLUTIONPILL-2=Una pillola Anti-inquinamento? Non mi serve!
+# Brok                                 
+PC07B_SIN_INV_POLLUTIONPILL-3=Non si sa mai cosa potrebbe accadere domani!
+# Sin                                 
+PC07B_SIN_INV_POLLUTIONPILL-4=No, grazie
+# Brok                                 
+PC07B_SIN_INV_POLLUTIONPILL-5=Non dica che non l'avevo avvertita!
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_TRAMPPRESCR-1=Per favore, mi dica dove posso trovare un medico!
+# Sin                                 
+PC07B_SIN_INV_TRAMPPRESCR-2=Non ne ho idea. Usando i Medi-Tribot non ne ho mai avuto bisogno.
+# Brok                                 
+PC07B_SIN_INV_TRAMPPRESCR-3=Ne ha uno? Credevo che fosse uno Slumer...
+# Sin                                 
+PC07B_SIN_INV_TRAMPPRESCR-4=Beh...
+# Sin                                 
+PC07B_SIN_INV_TRAMPPRESCR-5=L'ho trovato nella spazzatura...
+# Brok                                 
+PC07B_SIN_INV_TRAMPPRESCR-6=Mmm...
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INV_GUN-1=(Non ancora...)
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-1=Per favore, mi dica che l'ha trovata!
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-2=(È così... ma...)
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-3=(Ho come il presentimento che non dovrei ancora dargliela. Sono quasi certo che mi sia sfuggito qualcosa.)
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-4=Non ancora, ma mi sto avvicinando.
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN_NOTYET-5=(Meglio frugare meglio nel suo appartamento.) 
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-1=L'ho trovata.
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-2=La pistola? Ce l'ha?!
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-3=Magnifico! Mi ha salvato la vita!
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-4=Aspetti. Non intendo dargliela... per ora.
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-5=Cosa? Perché?!
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-6=La mia indagine ha portato a galla alcune domande che necessitano un chiarimento.
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN-7=Vorrei che mi spiegasse alcune cose.
+# Sin                                 
+PC07B_SIN_INTERROGATEGUN-8=Ehm... d'accordo. Dica pure.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_INTERROGATEGUN2-1=Riprendiamo la nostra... "conversazione".
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogating Sin
+# *****************************************************************
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-1=Quella pistola non è sua.
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-2=Uh? Certo che è mia!
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-3=L'ho avuta quando sono stato reclutato nelle forze di polizia!
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-4=Questo spiegherebbe quelle iniziali... R.J.
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-5=Beh... sì. Ce l'aveva un altro agente prima di me...
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-6=Chi?
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-7=È così importante?
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-8=Dev'essere l'agente che è andato in pensione prima di me. Non ricordo il suo nome.
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-9=Non è tutto. Il codice identificativo è stato cancellato ed è illeggibile. Come se lo spiega?
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-10=Suppongo che...
+# Sin                                 
+PC07B_CLUE_SIN_GUNNOTHIM-11=Non è nuova, insomma. Deve averla consumata durante le sue missioni.
+# Brok                                 
+PC07B_CLUE_SIN_GUNNOTHIM-12=Mmph.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-1=Lo vede questo?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-2=Sì. Il mio telecomando. E allora?
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-3=Non ricordo... a che serve?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-4=È per... cambiare la posizione del mio letto.
+# Brok                                
+PC07B_CLUE_SIN_CAMERAOFF-5=Oh! Ma davvero?!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-6=Non aveva detto che era per il suo tablet?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-7=Ehm... beh... sì. Fa entrambe le cose...
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-8=Mmm. Comunque, la mia amica mi ha raccontato una cosa... piuttosto interessante.
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-9=Vede, lei pensa che sia un dispositivo della polizia che serve a disabilitare le telecamere da remoto.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-10=(sospira)
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-11=OK. Lo ammetto, è vero.
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-12=Quindi ho appena avuto la conferma che lei è un bugiardo.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-13=Ma è stupido o cosa?!
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-14=È equipaggiamento della polizia. I civili non dovrebbero saperne nulla!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-15=Mmph. L'ha mai usato?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-16=Non di recente...
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-17=D'accordo. Allora, mi dica...
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-18=Non era di ronda nei pressi della farmacia, ieri notte?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-19=Sì, gliel'ho già detto!
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-20=Insomma cosa vuole?! Arrivi al sodo!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-21=C'è stato un incidente.
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-22=La telecamera della farmacia era stata disattivata. Sospetto che possa essere a causa di quell'aggeggino.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-23=Io... non ne ho idea! Perché dovrei fare una cosa del genere?
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-24=Me lo dica lei.
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-25=La smetta di mettere alla prova la mia pazienza!
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-26=Ho detto che non ho usato quel dannato telecomando! Capito?!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-27=Quindi gliel'ha rubato qualcuno?
+# Sin                                 
+PC07B_CLUE_SIN_CAMERAOFF-28=A parte lei?! No!
+# Brok                                 
+PC07B_CLUE_SIN_CAMERAOFF-29=OK...
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-1=Questa pillola... a cosa serve?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-2=Cosa diavolo posso saperne!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-3=Davvero non lo sa?
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-4=Nonostante sia sua...?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-5=Cosa?! Me l'ha appena rubata?!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-6=Veramente l'ho rubata un'ora fa... 
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-7=Non posso crederci...
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-8=Beh, meglio per lei. Questa è una "Starix-500".
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-9=Un antidepressivo con un interessante effetto collaterale!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-10=Con una dose abbastanza forte si può cadere in uno stato comatoso.
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-11=Dove vuole andare a parare?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-12=Comincio a pensare che lei mi stia accusando di aver drogato qualcuno!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-13=Non una persona qualunque. Un poliziotto.
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-14=Lei è pazzo!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-15=Certo, forse lo sono. Ma ecco la mia teoria...
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-16=La mercante nella sua strada dice di aver visto un tale profondamente adddormentato stamattina presto... e in mutande!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-17=Pare che abbia dovuto faticare per svegliarlo e che non ricordasse nulla di quanto fosse accaduto.
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-18=Ma una cosa la sapeva per certo... è un poliziotto.
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-19=Quindi lei crede che questo poliziotto fosse venuto a trovare me?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-20=Impossibile! Non ricevo visite da giorni!
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-21=E che mi dice dei due bicchieri sul tavolo?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-22=...da quando non si può bere in più bicchieri?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-23=Sto vivendo un momento difficile e lei sta solo peggiorando la situazione!
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-24=Perché l'ho assunta... ora capisco perché era così economico...
+# Brok                                 
+PC07B_CLUE_SIN_SLEEP-25=Cosa? Sono troppo economico, quindi?
+# Sin                                 
+PC07B_CLUE_SIN_SLEEP-26=...lasciamo stare.
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-1=Sa qualcosa di quello che è accaduto alla farmacia?
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-2=Solo quello che mi ha detto lei. Che qualcuno ha disattivato la telecamera per rubare qualcosa...
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-3=Non ho menzionato alcun furto.
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-4=Beh... è pura logica. Cos'altro sarebbe potuto essere?
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-5=Vero. Il fatto è che sembra non mancare nulla.
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-6=Comunque... qualcuno ha tentato di forzare un cassetto sul retro.
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-7=Sa per caso cosa tengono lì dentro?
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-8=No e non me ne frega un accidente!
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-9=Quindi non è coinvolto in nessun modo nell'incidente della farmacia?
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-10=Basta con queste domande! Si faccia gli affari suoi!
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-11=È stato lei a chiedermi di indagare.
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-12=Ma non su di me!
+# Sin                                 
+PC07B_CLUE_SIN_PHARMACY-13=Questo è irrilevante!
+# Brok                                 
+PC07B_CLUE_SIN_PHARMACY-14=(Non posso fidarmi di lui...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-1=Supponiamo che io abbia ragione e che la pistola non sia sua.
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-2=Non avrebbe senso che appartenesse al poliziotto che ha narcotizzato?
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-3=Queste sono accuse pesanti! Basta con queste illazioni inutili!
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-4=Sono stufo di queste sciocchezze! Mi ridia la pistola!
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-5=Me la prenderò con la forza se necessario!
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-6=Prima di tutto, non glielo lascerò fare.
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-7=Secondo... la sua insistenza non fa che confermare i miei sospetti.
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-8=Argh... non porta altro che guai.
+# Sin                                 
+PC07B_CLUE_SIN_STEAL-9=Dannazione! Cosa vuole da me?!
+# Brok                                 
+PC07B_CLUE_SIN_STEAL-10=La verità!
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-1=Allora... l'incidente della farmacia. Il poliziotto drogato. Il vero proprietario della pistola.
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-2=Tutte le prove puntano verso la stessa direzione...
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-3=Lei non è un poliziotto, Sin. È un ladro!
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-4=No! È sbagliato!
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-5=Lei... non ha alcuna prova tangibile!
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-6=Forse io no... ma la polizia le troverebbe.
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-7=Senta, ho un'idea.
+# Brok                                 
+PC07B_CLUE_SIN_THIEF-8=Se sta dicendo la verità, non dovrebbe essere un problema se chiedessi conferma della sua identità ad altri poliziotti, no?
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-9=Aspetti! Non lo faccia!
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-10=Lei... non capisce...
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-11=Io sono...
+# Sin                                 
+PC07B_CLUE_SIN_THIEF-12=...
+# Sin                                 
+#Sin attacks Brok
+PC07B_CLUE_SIN_THIEF-13=Non mi lascia altra scelta.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_RESUME_FIGHT-1=Lei non è un poliziotto, Sin. È un ladro!
+# Sin                                 
+PC07B_SIN_RESUME_FIGHT-2=...
+# Sin                                 
+#Sin attacks Brok
+PC07B_SIN_RESUME_FIGHT-3=Non mi lascia altra scelta.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok reactions to clues during interrogation
+# *****************************************************************
+# Brok                                 
+PC07B_CLUE_BLACKOUT-1=(Entrambi possono portare a uno svenimento, ma...)
+# Brok                                 
+PC07B_CLUE_BLACKOUT-2=(Non vedo come questo possa aiutare.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_STRESSED-1=(Certo, Sin deve aver usato quelle pillole perché è molto stressato. Perciò...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_ALCOHOL-1=(Non dovrebbe sorprendere più di tanto che Sin beva a causa dello stress...)
+# Brok                                 
+PC07B_CLUE_ALCOHOL-2=(Non c'è nulla di contraddittorio qui.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_PHARMACYSTEAL-1=(Sì, quei due eventi devono essere collegati... devo solo trovare un modo per scoprire cos'è successo.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_LINKWEAK-1=(Mmm... era coinvolto Sin? Qui il collegamento sembra troppo debole per dedurre qualcosa...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_PILLPHARMACY-1=(Sì, sono sicuro che abbia preso le sue pillole dalla farmacia... come ogni normale cliente.)
+#----------------------------------------------------
+# Brok                                 
+PC07B_CLUE_STREET-1=(È stata la stessa persona a fare entrambe le cose? Non posso giungere a conclusioni...)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok wins fight against Sin
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_WIN1-1=Basta! Per favore!
+# Sin                                 
+PC07B_SIN_WIN1-2=Mi spiace... ha vinto lei.
+# Sin                                 
+PC07B_SIN_WIN1-3=...
+# Sin                                 
+PC07B_SIN_WIN1-4=Aveva ragione... mi ha letto come un libro aperto...
+# Sin                                 
+PC07B_SIN_WIN1-5=Sono un ladro. Un criminale di basso livello...
+# Sin                                 
+PC07B_SIN_WIN1-6=Ma...
+# Sin                                 
+PC07B_SIN_WIN1-7=L'ho fatto per mia figlia...
+# Brok                                 
+PC07B_SIN_WIN1-8=Sua figlia?
+# Sin                               
+PC07B_SIN_WIN1-9=Sì. Volevo... solo rivederla...
+# Sin                                 
+PC07B_SIN_WIN1-10=Ho commesso un grosso sbaglio... o almeno, così pensavo...
+# Sin                                 
+PC07B_SIN_WIN1-11=Una settimana fa, mia moglie ha trovato dei video di me con un'altra donna.
+# Sin                                 
+PC07B_SIN_WIN1-12=La verità è che... non riesco a ricordarlo.
+# Brok                                 
+PC07B_SIN_WIN1-13=Pensa di essere stato incastrato?
+# Sin                                 
+PC07B_SIN_WIN1-14=...
+# Sin                                 
+PC07B_SIN_WIN1-15=Non lo so. Forse...
+# Brok                                 
+PC07B_SIN_WIN1-16=Qualche nemico?
+# Sin                                 
+PC07B_SIN_WIN1-17=Non di cui io sia a conoscenza.
+# Sin                                 
+PC07B_SIN_WIN1-18=I video sembravano reali. Ho solo pensato che una notte dovevo essere talmente ubriaco che... beh...
+# Sin                                 
+PC07B_SIN_WIN1-19=In ogni caso, era furiosa.
+# Sin                                 
+PC07B_SIN_WIN1-20=Mi ha costretto ad andarmene di casa. Mi ha minacciato di non avvicinarmi mai più né a lei, né a nostra figlia.
+# Sin                                 
+PC07B_SIN_WIN1-21=Ho provato a farla ragionare, ma non è servito a nulla.
+# Sin                                 
+PC07B_SIN_WIN1-22=Non vedere più mia moglie è già molto dura, ma anche mia figlia?
+# Brok                                 
+PC07B_SIN_WIN1-23=Le donne possono dare di matto, talvolta. Ma magari è un intoppo momentaneo....
+# Sin                                 
+PC07B_SIN_WIN1-24=Non stavolta.
+# Sin                                 
+PC07B_SIN_WIN1-25=Lei è una giornalista, sa...
+# Sin                                 
+PC07B_SIN_WIN1-26=Conoscere la verità è di primaria importanza, per lei, e io ho definitivamente perso la sua fiducia...
+# Sin                                 
+PC07B_SIN_WIN1-27=Ho provato a parlare con mia figlia al Centro di Coscienza. Ma questo le ha fatto del tutto perdere la testa.
+# Sin                                 
+PC07B_SIN_WIN1-28=Mi ha minacciato di far partire le procedure di espulsione.
+# Brok                                 
+PC07B_SIN_WIN1-29=Espulsione?
+# Sin                                 
+PC07B_SIN_WIN1-30=Perderei la mia qualifica e il mio accesso ai Drums.
+# Brok                                 
+PC07B_SIN_WIN1-31=Quindi è un Drumer?
+# Sin                                 
+PC07B_SIN_WIN1-32=Sì. Beh... non per molto ancora, suppongo.
+# Sin                                 
+PC07B_SIN_WIN1-33=Non avevo scelta. Mi sono dovuto costringere a venire in questa fogna schifosa...
+# Sin                                 
+PC07B_SIN_WIN1-34=Beh, senza offesa.
+# Brok                                 
+PC07B_SIN_WIN1-35=Nessun problema. Ma perché il furto?
+# Sin                                 
+PC07B_SIN_WIN1-36=Ho riflettuto molto su questa situazione.
+# Sin                                 
+PC07B_SIN_WIN1-37=È che... non posso vivere senza la mia piccolina. Proprio non posso.
+# Sin                                 
+PC07B_SIN_WIN1-38=Quindi... dovevo tornare indietro e cambiare ciò che era accaduto.
+# Brok                                 
+PC07B_SIN_WIN1-39=Temo che il passato non si possa cambiare.
+# Sin                                 
+PC07B_SIN_WIN1-40=Si sbaglia. Un modo c'è...
+# Sin                                 
+PC07B_SIN_WIN1-41=Avrei potuto riaverla indietro... se sua madre si fosse dimenticata di questo incidente.
+# Brok                                 
+PC07B_SIN_WIN1-42=Si può davvero rimuovere un evento così importante?
+# Sin                                 
+PC07B_SIN_WIN1-43=Sì. Con "Oblivion".
+# Brok                                 
+PC07B_SIN_WIN1-44=Oblivion...
+# Sin                                 
+PC07B_SIN_WIN1-45=È una medicina inventata per situazioni critiche.
+# Sin                                 
+PC07B_SIN_WIN1-46=Per le vittime di un trauma. Per i bambini che perdono i genitori in maniera tragica...
+# Sin                                 
+PC07B_SIN_WIN1-47=Ha l'abilità di sopprimere la memoria selettiva, anche giorni dopo l'accadimento di un evento.
+# Sin                                 
+PC07B_SIN_WIN1-48=Ovviamente, il Governo lo tiene segreto. Farlo sapere alla gente porterebbe effetti drammatici...
+# Sin                                 
+PC07B_SIN_WIN1-49=Ho passato giorni interi a cercare una soluzione... e finalmente l'ho trovata.
+# Sin                                 
+PC07B_SIN_WIN1-50=Nell'appartamento proprio accanto al mio viveva un hacker...
+# Sin                                 
+PC07B_SIN_WIN1-51=Sono riuscito a convincerlo a condividere con me dei rapporti top secret.
+# Sin                                 
+PC07B_SIN_WIN1-52=C'era menzionato Oblivion, insieme ai posti in cui trovarlo.
+# Sin                                 
+PC07B_SIN_WIN1-53=Avevo un amico poliziotto... R.J. Era spesso di pattuglia nei pressi di uno di questi posti...
+# Brok                                 
+PC07B_SIN_WIN1-54=...quella farmacia.
+# Brok                                 
+PC07B_SIN_WIN1-55=Quindi lo ha drogato per travestirsi da lui e rubare la medicina?
+# Sin                                 
+PC07B_SIN_WIN1-56=Esattamente. Ne avevo un bisogno disperato...
+# Brok                                 
+PC07B_SIN_WIN1-57=Che bel modo di trattare gli amici...
+# Sin                                 
+PC07B_SIN_WIN1-58= ...vero. Ma...
+# Sin                                 
+PC07B_SIN_WIN1-59=Se avesse un figlio... capirebbe...
+# Sin                                 
+PC07B_SIN_WIN1-60=Si è disposti a fare qualsiasi cosa per loro.
+# Sin                                 
+PC07B_SIN_WIN1-61=Ho disattivato la telecamera e ho provato a forzare il cassetto. Ma poi...
+# Sin                                 
+PC07B_SIN_WIN1-62=La mia fortuna è finita. Un bot mi ha individuato e ha chiamato la polizia.
+# Sin                                 
+PC07B_SIN_WIN1-63=Non avevo altra scelta. Se fossi finito in prigione, avrei perso ogni speranza di poter rivedere mia figlia.
+# Sin                                 
+PC07B_SIN_WIN1-64=Così sono scappato nel vicolo sul retro...
+# Brok                                 
+PC07B_SIN_WIN1-65=E la pistola?
+# Sin                                 
+PC07B_SIN_WIN1-66=Nella fretta, l'ho tirata fuori dalla tasca e l'ho gettata nelle fogne per sbarazzarmene.
+# Sin                                 
+PC07B_SIN_WIN1-67=Ma... è stata una stupidaggine. Ho dimenticato di pulire le mie impronte...
+# Sin                                 
+PC07B_SIN_WIN1-68=Se i poliziotti ci avessero messo le mani sopra... sarebbe stata la fine, per me.
+# Brok                                 
+PC07B_SIN_WIN1-69=Quindi questo è quanto...
+# Brok                                 
+PC07B_SIN_WIN1-70=Mi ha assunto perché aveva bisogno della pistola, ma non poteva correre il rischio di cercarsela da solo.
+# Sin                                 
+PC07B_SIN_WIN1-71=Sì...
+# Sin                                 
+PC07B_SIN_WIN1-72=Può procedere, comunque.
+# Sin                                 
+PC07B_SIN_WIN1-73=Chiami la polizia. Sono pronto.
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_DENOUNCE1-1=Spiacente... ha fatto la sua scelta.
+# Sin                                 
+PC07B_SIN_DENOUNCE1-2=Lo so...
+# Brok                                 
+PC07B_SIN_DENOUNCE1-3=Infrangere la legge non ha scusanti.
+# Brok                                 
+PC07B_SIN_DENOUNCE1-4=(...Starò facendo la cosa giusta?)
+# Brok                                 
+PC07B_SIN_DENOUNCE1-5=(Probabilmente avrei fatto lo stesso...)
+# Brok                                 
+PC07B_SIN_DENOUNCE1-6=(Una cosa è certa. Non verrò pagato... di nuovo.)
+# Brok                                 
+PC07B_SIN_DENOUNCE1-7=(sospira)
+#----------------------------------------------------
+# Brok                                 
+#IMPORTANT - At this moment you can make Brok talk to Sin in an informal way. (Maybe not the opposite yet though, but both should talk to each other in informal ways in jail in PC08B)
+PC07B_SIN_FORGIVE1-1=No.
+# Sin                                 
+PC07B_SIN_FORGIVE1-2=Cosa?
+# Brok                                 
+PC07B_SIN_FORGIVE1-3=Non lo farò. Volevo solo conoscere la verità.
+# Brok                                 
+PC07B_SIN_FORGIVE1-4=Ascolta... siamo dalla stessa parte. Anche io ho un figlio...
+# Brok                                 
+PC07B_SIN_FORGIVE1-5=Più o meno...
+# Sin                                 
+PC07B_SIN_FORGIVE1-6=Ma... me lo merito...
+# Sin                                 
+PC07B_SIN_FORGIVE1-7=L'ho aggredita!
+# Sin                                 
+PC07B_SIN_FORGIVE1-8=Come può perdonarmi? Lei e tutti gli altri?
+# Brok                                 
+PC07B_SIN_FORGIVE1-9=Non preoccuparti per me. Hai già sofferto abbastanza, amico.
+# Brok                                 
+PC07B_SIN_FORGIVE1-10=Non lo dirò a nessuno. E ti aiuterò a sbarazzarti di quella schifosa pistola.
+# Sin                                 
+PC07B_SIN_FORGIVE1-11=Davvero? Ma...
+# Sin                                 
+PC07B_SIN_FORGIVE1-12=Io... ecco, ho mentito anche su qualcos'altro...
+# Sin                                 
+PC07B_SIN_FORGIVE1-13=Non ho abbastanza denaro per pagarla... ho pensato che avrei trovato una soluzione...
+# Brok                                 
+PC07B_SIN_FORGIVE1-14=Oh, beh... non so perché, ma me lo aspettavo.
+# Brok                                 
+PC07B_SIN_FORGIVE1-15=Non preoccuparti. Ne verremo a capo più tardi.
+# Sin                                 
+PC07B_SIN_FORGIVE1-16=Io... questo è...
+# Sin                                 
+PC07B_SIN_FORGIVE1-17=Grazie...
+# Brok                                 
+PC07B_SIN_FORGIVE1-18=Non fa niente.
+# Brok                                 
+PC07B_SIN_FORGIVE1-19=Ecco la pis...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Wes and police robots come crashing to arrest them
+# *****************************************************************
+# Wes                                 
+PC07B_SIN_WIN2-1=Non muoverti! Mani sopra la testa!
+# Sin                                 
+PC07B_SIN_WIN2-2=Gulp!
+# Wes                                 
+PC07B_SIN_WIN2-3=Anche tu. Siete entrambi in arresto.
+# Brok                                 
+PC07B_SIN_WIN2-4=Cosa?! Ma...
+# Wes                                 
+PC07B_SIN_WIN2-5=Non disturbarti a cercare di usare la pistola. L'abbiamo disattivata.
+# Sin                                 
+PC07B_SIN_WIN2-6=Come ci avete trovato?
+# Wes                                 
+PC07B_SIN_WIN2-7=Il suo amico detective si stava comportando in maniera sospetta. È stato automaticamente registrato dal sistema.
+# Wes                                 
+PC07B_SIN_WIN2-8=E lui ci ha condotti fin qui.
+# Wes                                 
+PC07B_SIN_WIN2-9=Abbiamo atteso per registrare la sua confessione da dietro il muro. Ci farà risparmiare tempo!
+# Brok                                 
+PC07B_SIN_WIN2-10=Mi dispiace.
+# Wes                                 
+PC07B_SIN_WIN2-11=Fai dannatamente bene a dispiacerti!
+# Wes                                 
+PC07B_SIN_WIN2-12=Stavolta ti ho preso, Pork! Aiutare i criminali è un crimine federale!
+# Brok                                 
+PC07B_SIN_WIN2-13=Mi chiamo Brok, donnola irrispettosa!
+#----------------------------------------------------
+# Brok                                 
+PC07B_TRUSTSIN_DENOUNCED-1=Se davvero stavate origliando, dovresti sapere che stavo per denunciarlo!
+# Wes                                 
+PC07B_TRUSTSIN_DENOUNCED-2=Ti conosco. Questo mi basta.
+# Brok                                 
+PC07B_TRUSTSIN_DENOUNCED-3=Ehi! Cosa diavolo vuol dire?!
+#----------------------------------------------------
+# Wes                                 
+PC07B_SIN_WIN2B-1=Non mi importa.
+# Wes                                 
+PC07B_SIN_WIN2B-2=Andiamo, muovetevi! Tutti e due!
+# Sin                                 
+PC07B_SIN_WIN2B-3=(sospira)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player hits Sin
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_HIT1-1=Argh!
+# Sin                                 
+PC07B_SIN_HIT1-2=È impazzito? È così che porta avanti un'indagine?
+# Brok                                 
+PC07B_SIN_HIT1-3=Ehm... ops! Mi spiace!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_HIT2-1=Ahi!!!
+# Brok                                 
+PC07B_SIN_HIT2-2=Oh...! Ehm... non intendevo farlo.
+# Sin                                 
+PC07B_SIN_HIT2-3=...
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_HIT3-1=Argh! Basta così!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - During fight
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_FIGHT1-1=Vuoi andare giù?!
+#----------------------------------------------------
+# Sin                                 
+PC07B_SIN_FIGHT2-1=Quanti bicchieri devo lanciare?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player kills Sin and the opposite
+# *****************************************************************
+# Sin                                 
+PC07B_SIN_GAMEOVER1-1=Oh cavolo... non intendevo...
+# Sin                                 
+PC07B_SIN_GAMEOVER1-2=Mi spiace essere arrivato a questo...
+# Sin                                 
+PC07B_SIN_GAMEOVER1-3=Perché ti sei messo a scavare tanto nel torbido?
+#----------------------------------------------------
+# Brok                                 
+PC07B_SIN_KILLED1-1=Cos'ho fatto... ho ucciso il mio cliente...!
+# Brok                                 
+PC07B_SIN_KILLED1-2=Cosa mi sta succedendo...?
+# Brok                                 
+PC07B_SIN_KILLED1-3=Non posso andare avanti così...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Pause interrogation
+# *****************************************************************
+# Brok                                 
+PC07B_INTERROGATION_EXIT_NOTENOUGH-1=Resti qui.
+# Sin                                 
+PC07B_INTERROGATION_EXIT_NOTENOUGH-2=Uh...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Missing clues hints
+# *****************************************************************
+# Brok                                 
+PC07B_MISSINGCLUE_SIN-1=(Devo essermi perso qualche indizio nell'appartamento di Sin... meglio controllare!)
+#----------------------------------------------------
+# Brok                                 
+PC07B_MISSINGCLUE_PILL-1=(Mmm... quell'analizzatore di medicine in farmacia...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_MISSINGCLUE_DRUMERSTREET-1=(Dovrei ispezionare la farmacia con più attenzione. Ho come la sensazione di essermi perso qualcosa...)
+#----------------------------------------------------
+# Brok                                 
+PC07B_MISSINGCLUE_SECTOR56X-1=(Ho come la sensazione di non aver ispezionato abbastanza bene il Settore 56X...)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming back in day 2
+# *****************************************************************
+# Brok                                 
+PC07B_LOOTED1-1=Oh, diamine! La casa è stata completamente saccheggiata!
+# Brok                                 
+PC07B_LOOTED1-2=Povero Sin...
+#----------------------------------------------------
+
+
+PC07B_MISSINGCLUE_SHAY-1=(Shay potrebbe aiutarmi...)
+
+
+
+PC07B_CHOICE_HOTJUICE=Vuoi versare dell'Hot Juice?
+#----------------------------------------------------
+# Brok
+PC07B_GLASSES_PILLLATER-1=Non fin quando non saprò cosa fa quella pillola.
+#----------------------------------------------------
+# Brok
+PC07B_GLASSES_GIVENOTYET-1=(Mmm... non voglio ancora darglielo).
+#----------------------------------------------------
+# Brok
+PC07B_GLASSES_PILLBEFORELIQUID-1=Buona idea, ma... il bicchiere è vuoto.
+#----------------------------------------------------
+# Brok
+PC07B_SIN_GIVEDRINK-1=Tieni.
+# Sin
+PC07B_SIN_GIVEDRINK-2=*glub*
+# Sin
+PC07B_SIN_GIVEDRINK-3=Grazie...
+#----------------------------------------------------
+# Brok
+PC07B_GLASSESPILE_PILL-1=Non qui.
+#----------------------------------------------------
+# Brok
+PC07B_GLASSES_POUR-1=Ehi. vuoi da bere?
+# Sin
+PC07B_GLASSES_POUR-2=Ehm... certo.
+#----------------------------------------------------
+# Brok
+PC07B_WARDFRIGE_EMPTY-1=Vuoto
+#----------------------------------------------------
+# Sin
+PC07B_SIN_DRINKED-1=Argh...
+# Sin
+PC07B_SIN_DRINKED-2=La mia testa... mi sento male.
+# Brok
+PC07B_SIN_DRINKED-3=Scusa
+# Sin
+PC07B_SIN_DRINKED-4=Quel drink...
+# Sin
+PC07B_SIN_DRINKED-5=Capisco. Sapevi che potevo diventare pericoloso.
+# Sin
+PC07B_SIN_DRINKED-6=Hai vinto. Non posso combattere in questo modo.
+
+
+
+COOP_PC07B_SIN1-1=Ho sentimenti ambigui per questo tipo...
+

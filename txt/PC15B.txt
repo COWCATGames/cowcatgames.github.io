@@ -1,0 +1,3031 @@
+#-------------------------------
+#=LAB HALL
+#-------------------------------
+
+
+#----------------------------
+#= Pipe-mail
+#----------------------------
+ID=PC15B_PIPEMAIL1
+T=A Pipe-Mail...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH
+CONTEXT=Room interactions
+
+T=In the middle of the hall?
+W=BROK
+
+T=Those guys receive shipments all the time. 
+W=GUARD
+C2A=WONDER 
+
+T=Mostly ink for their material printers but also their junk food. It's very practical.
+W=GUARD
+C2A=HAPPY 
+
+T=Can't see anything special about it but... 
+W=BROK
+C1A=MAYBE
+
+T=It's shut. Any way to open it?
+W=BROK
+C1A=WONDER 
+
+T=Nah. It's totally automatized.
+W=GUARD
+C2A=WONDER 
+
+T=And only goes one way.
+W=GUARD
+C1A=THINK
+
+T=The only thing those scientists produce is information. They never need to send anything physically.
+W=GUARD
+C2A=HAPPY 
+
+T=Makes sense...
+W=BROK
+C1A=WONDER
+
+#----------------------------
+ID=PC15B_PIPEMAIL2
+T=A pipe-mail... which only goes one way.
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Exactly.
+W=GUARD
+C2=GUARD
+C2A=HAPPY 
+
+#------------------------
+#= Box
+#------------------------
+ID=PC15B_BOX1
+T=The recipient for the pipe.
+W=BROK
+A=THINK
+
+T=As empty as my willingness to examine it.
+W=BROK
+A=MEH
+
+#------------------------
+ID=PC15B_BOX_PICKUP
+T=An energy drink?!
+W=BROK
+A=ANGRY
+
+T=You gotta be kidding me...
+W=BROK
+TEN=PC15B_BOX_PICKUP_GET
+
+#------------------------
+ID=PC15B_BOX_PICKUP2
+T=Wait. I thought communication was out?
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=Hey buddy! You pressed the emergency button, didn't ya?
+W=GUARD
+C2=GUARD
+C2A=WONDER 
+
+T=Emergency calls are never cut off.
+W=GUARD
+
+T=Good! I'm always thirsty.
+W=BROK
+C1A=ALRIGHT
+
+#------------------------
+ID=PC15B_BOX_AD
+T=An ad?
+W=BROK
+A=WONDER
+
+T=And here I thought it couldn't be worse than the first time...
+W=BROK
+A=DOWN
+TEN=PC15B_BOX_AD_GET
+
+#------------------------
+ID=PC15B_BOX_NADA
+T=Nada.
+W=BROK
+A=MAYBE
+
+T=Guess their stock of emergency rations is out.
+W=BROK
+C=THINK 
+
+#------------------------
+#= Plant
+#------------------------
+ID=PC15B_FLOWERS1
+T=Nice flowers!
+W=BROK
+A=ALRIGHT
+
+T=These make me feel nostalgic for some reason.
+W=BROK
+C1A=TIRED
+
+#------------------------
+ID=PC15B_FLOWERS_AFTER1
+T=(Smells) Nice scent!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GUARD
+C2A=MEH
+
+T=That will be 10 Unis.
+W=GUARD
+
+T=What?...
+W=BROK
+C1A=SURPRISED
+
+T=Just kidding. But next time, avoid crippling my precious plant right in front of me.
+W=GUARD
+
+T=If it's that precious, I'm gonna keep it.
+W=BROK
+C1A=READY
+TEN=PC15B_FLOWERS_TAKE
+C2A=SURPRISED 
+
+
+#------------------------
+ID=PC15B_FLOWERS_AFTER2
+T=Any idea what type of plant this is?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER
+
+T=The heck if I know!
+W=GUARD
+
+T=It's just beautiful and perfumed. Good enough for me.
+W=GUARD
+C2A=HAPPY 
+
+T=Yeah, I'm usually the same...except when I need to investigate.
+W=BROK
+C1A=WONDER
+
+#----------------------
+#= Arrive
+#----------------------
+ID=PC15B_FIRST_DIALOG1
+T=Who are you?
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+CONTEXT=Arriving in the lab for the first time
+COMM=Here the guard is addressing both Ott and Brok
+TEN=PC15B_FIRST2
+
+#----------------------
+ID=PC15B_FIRST_DIALOG2
+T=We're here to investigate.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+SKIPEND=1
+
+T=No kiddin', man!
+W=GUARD
+C2A=HAPPY 
+
+T=The chief of police said he'd send his best investigators.
+W=GUARD
+
+T=I didn't expect to see a darn croc and an ugly boy. Ha ha!
+W=GUARD
+C2A=HAPPY 
+
+T=Watch your tongue. We're here to help.
+W=BROK
+C1A=ANGRY
+C2A=MEH
+
+T=Uncle Wes sent us. You can call him to check.
+W=OTT
+C3=OTT
+C3A=ALRIGHT 
+
+T=No point. I know the old weasel, I shouldn't be surprised.
+W=GUARD
+
+T=No time to waste. Fill us in on the situation.
+W=BROK
+C1A=READY
+
+T=Yeah, I should have guessed he wouldn't take time for that either.
+W=GUARD
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_THINK1
+T=(A Squealer.)
+W=BROK
+C1=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(Given my recent experience I'm not used to trusting those guys. Is he any different?)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_NOTYET
+T=(Not yet.)
+W=BROK
+A=MAYBE
+MOOD=THINK
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_SITUATION1
+T=One of the two engineers living here has disappeared.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=Living? Aren't they supposed to work here?
+W=BROK
+C1A=WONDER
+
+T=Same. They never leave the place.
+W=GUARD
+
+T=What makes you think the situation is serious?
+W=BROK
+C1A=THINK
+
+T=I do regular room checks.
+W=GUARD
+
+T=During my last one, I just couldn't find Dr. Hush.
+W=GUARD
+C2A=SURPRISED 
+
+T=Couldn't he just be hiding somewhere?
+W=BROK
+C1A=THINK 
+
+T=Man, don't take me for an amateur. I've looked all over the place!
+W=GUARD
+C2A=ANGRY 
+
+T=Besides, the guy's medical device has stopped indicating any vitals for hours.
+W=GUARD
+C2A=WONDER 
+CLUE=CLUE_GUARD_CHECK
+
+T=Maybe he arranged his escape and left while you didn't look? 
+W=BROK
+C1A=ALRIGHT
+
+T=Impossible. As you've seen, lasers block the entrance constantly.
+W=GUARD
+C2A=MEH 
+
+T=Even the engineers aren't allowed to leave without permission, which is by request to us agents.
+W=GUARD
+C1A=THINK
+
+T=Well, Dr. Hush didn't make any such request.
+W=GUARD
+
+T=That place sounds like prison.
+W=OTT
+C3=OTT
+C3A=SURPRISED 
+
+T=Nah. I know those intellectual types.
+W=BROK
+C1A=MEH
+
+T=They don't mind dedicating their whole life to working on their crazy projects.
+W=BROK
+
+T=(Shay is a good example of that)
+W=BROK
+C1A=HAPPY 
+MOOD=THINK
+
+T=I'm pretty sure they asked for it.
+W=BROK
+
+T=The croc is correct. They said to me once that, "studies have proven this way of living enhances creativity".
+W=GUARD
+C2A=WONDER 
+
+T=To me that's just an excuse to do whatever they want, but... the heck do I know?
+W=GUARD
+C2A=HAPPY 
+
+T=The barriers are for their own protection from outside threats.
+W=GUARD
+
+T=Yeah. Totally not paranoid.
+W=OTT
+C3A=ALRIGHT 
+
+T=You should know, that fits the description of most Drumers.
+W=BROK
+C1A=MOCK 
+
+T=Can't blame them with all those drones roaming outside. But they created this situation themselves.
+W=BROK
+C1A=ALRIGHT
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_SITUATION2
+T=Are you the only guard in this place?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=I prefer the term "security agent".
+W=GUARD
+
+T=Whatever. Answer the question!
+W=BROK
+C1A=ANGRY
+
+T=Fortunately not! I couldn't stand being here all day.
+W=GUARD
+C2A=ANGRY
+
+T=But there's only one of us at a time.
+W=GUARD
+C2A=MEH
+
+T=The scientist was there when I arrived this morning. He disappeared during my shift.
+W=GUARD
+
+T=Has this situation happened before?
+W=BROK
+C1A=WONDER
+
+T=Don't think so.
+W=GUARD
+C2A=WONDER 
+
+T=I mean, those scientists may be crazy over the edge, they're locked up in here so that limits the possibilities.
+W=GUARD
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+
+
+#----------------------
+#= The lie
+#----------------------
+ID=PC15B_GUARD_LIE1
+T=A mystery can only be solved by gathering truthful information.
+W=BROK
+C1=BROK
+C1A=MEH
+C2=GUARD
+C2A=MEH 
+CONTEXT=Interrogating the guard
+
+T=Don't you agree?
+W=BROK
+
+T=Sure!
+W=GUARD
+C2A=HAPPY
+
+T=Then why are you lying to me?
+W=BROK
+C1A=ANGRY
+
+T=What are you talking about?
+W=GUARD
+C2A=MEH 
+
+T=Don't play fool with me.
+W=BROK
+
+T=Some of your statements are clearly contradictory.
+W=BROK
+C1A=OPPOSITE 
+
+T=Oh yeah?
+W=GUARD
+C2A=WONDER 
+TEN=PC15B_INTERROGATION_START
+
+#----------------------
+ID=PC15B_GUARD_LIE2
+T=Let's resume our interrogation!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=GUARD
+C2A=ANGRY 
+
+T=Argh...
+W=GUARD
+TEN=PC15B_INTERROGATION_RESUME
+
+#----------------------
+ID=PC15B_GUARD_INTERROGATION_EXIT1
+T=Erm... Let me reconsider my point of view.
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=GUARD
+C2A=WONDER 
+
+T=Now who's lying?
+W=GUARD
+C2A=ANGRY 
+
+
+#----------------------
+ID=PC15B_GUARD_SITUATION_AFTER1
+T=Do you believe Dr. Mink has the profile of a murderer?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GUARD
+C2A=MEH
+
+T=Hmm...
+W=GUARD
+C2A=WONDER
+
+T=Possibly. I could feel the tension between them lately.
+W=GUARD
+C2A=MEH
+
+T=In any case, I don't know what happened.
+W=GUARD
+
+T=When Ott claimed you'd have noticed if Dr. Hush had stayed in the hall...
+W=BROK
+C1A=WONDER 
+
+T=You hesitated.
+W=BROK
+C1A=MOCK
+
+T=...
+W=GUARD
+C2A=SURPRISED
+
+T=You didn't watch the whole thing, did ya?
+W=BROK
+C1A=FURIOUS 
+
+T=No way, man! I'm a professional!
+W=GUARD
+C2A=ANGRY 
+
+T=But still a human. Don't you have to go to the bathroom sometimes?
+W=BROK
+C1A=THINK
+
+T=I don't. Only the most capable are selected for this job.
+W=GUARD
+
+T=We can't afford to miss anything! 
+W=GUARD
+
+T=Hmm...
+W=BROK
+C1A=THINK 
+
+T=Can you swear it, then?
+W=BROK
+C1A=WONDER
+
+T=No one could have went by without you noticing?
+W=BROK
+
+T=...Yeah!
+W=GUARD
+C2A=WONDER
+
+T=Yeah, I swear it! I was there the whole time... watching.
+W=GUARD
+C2A=MEH
+
+T=(He doesn't sound all that confident.)
+W=BROK
+C1A=ANGRY
+C2A=ANGRY
+MOOD=THINK
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_SITUATION_AFTER2
+T=Listen. Earlier you affirmed Dr. Hush exited his office for the restroom.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=When did this happen exactly?
+W=BROK
+
+T=Hmm...
+W=GUARD
+C2A=WONDER 
+
+T=Can't remember.
+W=GUARD
+
+T=Some time after I arrived.
+W=GUARD
+
+T=This is crucial! I need you to be precise!
+W=BROK
+C1A=READY
+
+T=Hey! Do you know what kind of job this is?
+W=GUARD
+C2A=ANGRY 
+
+T=The same boring thing every day.
+W=GUARD
+
+T=No surprise, no action, nothing ever happens! Well, usually.
+W=GUARD
+
+T=How lucky.
+W=BROK
+C1A=TIRED
+
+T=Uh?
+W=GUARD
+C2A=WONDER 
+
+T=Never mind. Make some effort!
+W=BROK
+C1A=READY
+
+T=What happened the last time Dr. Hush exited his room?
+W=BROK
+
+T=When and where did he go?!
+W=BROK
+C1A=ANGRY 
+
+T=Told ya!... My brain wouldn't register such trivial things!
+W=GUARD
+C2A=ANGRY 
+
+T=But... There's a way to find out.
+W=GUARD
+C2A=WONDER 
+TEN=PC15B_MONITORING_GIVEACCESS
+
+#----------------------
+ID=PC15B_GUARD_DRHUSH_AFTER2B
+T=What's this?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=GUARD
+C2A=MEH 
+
+T=The door monitoring.
+W=GUARD
+
+T=What?... You keep a registry of door openings?
+W=BROK
+C1A=SURPRISED
+
+T=And you're only telling me now?!
+W=BROK
+C1A=FURIOUS 
+
+T=I... thought this wouldn't be important...
+W=GUARD
+C2A=SURPRISED 
+
+T=Not important?!
+W=BROK
+C1A=ANGRY
+
+T=How the heck are we supposed to run this investigation without all the information at hand?!
+W=BROK
+
+T=Hey, lower your tone!
+W=GUARD
+C2A=ANGRY 
+
+T=I'm the boss here. This is highly confidential data.
+W=GUARD
+
+T=Only security agents are allowed to access the reading device, but I'll make a special exception.
+W=GUARD
+C2A=MEH 
+
+T=Check it.
+W=GUARD
+TEN=PC15B_GUARD_CHOICES
+IT=1
+CLUE=CLUE_GUARD_MONITORING
+
+
+#----------------------
+ID=PC15B_GUARD_SITUATION_AFTER3
+T=Check the door monitoring. This should help your investigation.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_DRHUSH1
+T=Anything you can tell me on that missing engineer... Doctor Hush?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=Just your average scientist in his 40's.
+W=GUARD
+
+T=Pretty sure his only family and friends are his bot prototypes.
+W=GUARD
+
+T=Bots? He's making them?
+W=BROK
+C1A=MAYBE
+
+T=Not exactly. He's specialized in AI programming.
+W=GUARD
+C2A=HAPPY 
+
+T=He occupies the room on the left.
+W=GUARD
+
+T=When was the last time he was seen?
+W=BROK
+C1A=WONDER 
+
+T=I arrived this morning at 3 AM.
+W=GUARD
+C2A=MEH 
+COMM=IMPORTANT : adapt the hours displayed to what feels best for the language. ALL the hours indicated during this investigation take place during morning (this was done in order to simplify, no AM/PM issues)
+T=When I take my shift, I always check on them. He was there.
+W=GUARD
+CLUE=CLUE_GUARD_SHIFT
+
+T=So... You saw him? Are you certain?
+W=BROK
+C1A=THINK
+
+T=Yeah. In the flesh.
+W=GUARD
+
+T=Did he exit his room after that?
+W=BROK
+
+T=Yeah. I saw him go to the restroom.
+W=GUARD
+
+T=His medical tracking stopped at around 5 AM.
+W=GUARD
+C2A=WONDER 
+
+T=That thing isn't very precise so it could have been one or two hours before or after.
+W=GUARD
+
+T=What?...
+W=BROK
+C1A=WONDER
+
+T=With all the advanced technology available, you'd think this would be accurate.
+W=BROK
+C1A=THINK 
+
+T=It's called living privacy.
+W=GUARD
+
+T=Even if you're dead?
+W=BROK
+C1A=MEH
+
+T=I won't pretend to know your job, croc detective, but you shouldn't jump to conclusions.
+W=GUARD
+C2A=MEH
+
+T=He better darn well be alive. I can't afford losing my job!
+W=GUARD
+C2A=SURPRISED 
+TEN=PC15B_GUARD_CHOICES
+IT=1
+CLUE=CLUE_HUSH_TRACKING
+
+#----------------------
+ID=PC15B_GUARD_DRHUSH2
+T=About Dr. Hush. What else can you tell me?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=Dunno. Ya'd better take a look at this room.
+W=GUARD
+
+T=That should tell you more about the character.
+W=GUARD
+
+T=Got it.
+W=BROK
+C1A=MAYBE
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_PLACE1
+T=You mentioned two engineers, didn't you?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=Yeah. Doctor Mink is the other one.
+W=GUARD
+C2A=MEH 
+
+T=He's working on nano bots. Kinda the "I know it all" type.
+W=GUARD
+
+T=How do they get along?
+W=BROK
+C1A=WONDER
+
+T=They don't. 
+W=GUARD
+
+T=They're like cats and dogs. Always bickering over stupid things.
+W=GUARD
+
+T=Yet they've never asked to be moved to another lab.
+W=GUARD
+C1A=THINK
+
+T=I guess it's just a game of rivalry.
+W=GUARD
+
+T=Let's hope so...
+W=BROK
+C1A=OPPOSITE
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_PLACE2
+T=Anyone else here?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=Nope.
+W=GUARD
+C2A=MEH
+
+T=All visitors are required special permissions, and that includes drone deliveries.
+W=GUARD
+
+T=No one entered or exited the building until your arrival.
+W=GUARD
+
+T=Why would you need deliveries if you've got a Pipe-mail in the hall?
+W=BROK
+C1A=WONDER 
+
+T=Some packages still can't pass through there, ya know.
+W=GUARD
+C2A=HAPPY 
+
+T=Could somebody use it to escape?
+W=BROK
+C1A=WONDER
+
+T=No way! You'd have to be cut into pieces!
+W=GUARD
+C2A=SURPRISED 
+
+T=And that would surely leave some traces around.
+W=GUARD
+
+T=Urgh... Right.
+W=BROK
+C1A=WORRIED
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_PLACE3
+T=Are you certain there's no escape route?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GUARD
+C2A=WONDER 
+
+T=Yeah. The windows are fake.
+W=GUARD
+C2A=MEH 
+
+T=The labs are not connected in any way. They made sure of this when building the place.
+W=GUARD
+
+T=The only access is the main entrance you came from.
+W=GUARD
+
+T=Never has been any other way.
+W=GUARD
+
+T=Never say never.
+W=BROK
+C1A=ANGRY
+
+T=Take a gamble? I'd bet a hundred Unis on this!
+W=GUARD
+C2A=HAPPY 
+
+T=I usually wouldn't say no, but... can't afford to take that risk right now.
+W=BROK
+C1A=TIRED
+
+T=Shame.
+W=GUARD
+C2A=MEH 
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+
+
+#----------------------
+ID=PC15B_GUARD_YOURSELF1
+T=I've been meaning to ask.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=GUARD
+C2A=HAPPY 
+
+T=What's a Squealer doing here in the Drums?
+W=BROK
+C1A=WONDER 
+
+T=None of your business!
+W=GUARD
+C2A=ANGRY 
+
+T=Just mentioning. I thought your clan had been banished from the whole country.
+W=BROK
+C1A=THINK
+
+T=What clan?
+W=GUARD
+
+T=I'm forbidden from regular jobs just because some others screwed up years ago?!
+W=GUARD
+
+T=Well I...
+W=BROK
+C1A=CONFUSED
+SKIPEND=1
+
+T=Shut up.
+W=GUARD
+
+T=You know nothing.
+W=GUARD
+
+T=I hate people like you. All focused on looks. Empty brains.
+W=GUARD
+
+T=(Seems like a touchy subject.)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+TEN=PC15B_GUARD_CHOICES
+IT=1
+CLUE=CLUE_GUARD_SQUEALER
+
+#----------------------
+ID=PC15B_GUARD_YOURSELF2
+T=(Better not insist.)
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GUARD
+C2A=HAPPY 
+MOOD=THINK
+
+T=(Is he hiding something from me, though?... I'll have to find out.)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_EXITFIRST1
+T=I'll take a look around.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH
+
+T=Not too soon!
+W=GUARD
+C2A=ANGRY 
+
+T=You better solve this fast! I was supposed to finish my shift one hour ago.
+W=GUARD
+
+T=I won't get paid for this overtime!
+W=GUARD
+
+#----------------------
+ID=PC15B_GUARD_EXIT1
+T=Stay put.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=GUARD
+C2A=ANGRY 
+
+T=I don't have all day, ya know!
+W=GUARD
+
+#----------------------
+ID=PC15B_GUARD_EXIT2
+T=Come on! Do your job!
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=ANGRY 
+
+T=Whaddya think I'm doin'?
+W=BROK
+C1A=ANGRY
+
+T=Dunno, and that's the problem.
+W=GUARD
+
+#----------------------
+ID=PC15B_GUARD_WELCOME1
+T=Got more questions.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_WELCOME2
+T=Again?!
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=ANGRY 
+
+T=Gonna solve this myself, that'll be faster!
+W=GUARD
+
+T=You better reply, man. Or care to become suspect number one?
+W=BROK
+C1A=MOCK
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INV_DEFAULT1
+T=What can you tell me about this?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH
+CONTEXT=Showing inventory to guard
+
+T=That's rubbish.
+W=GUARD
+
+T=Straight to the point, uh?
+W=BROK
+C1A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_INV_DEFAULT2
+T=Think this could be a clue?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=What? You're asking... me?!
+W=GUARD
+C2A=SURPRISED 
+
+T=I thought you were a lousy detective but that was still an understatement!
+W=GUARD
+C1A=ANGRY 
+
+T=Just say you don't wanna help.
+W=BROK
+C1A=OPPOSITE
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INV_MONEY
+T=No way, man! I don't take bribes!
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=Who would have thought? An honest Squealer!
+W=BROK
+C1A=MAYBE 
+
+T=And don't call me that!
+W=GUARD
+C2A=ANGRY 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_INV_LABFLOWER
+T=Still can't believe you did this.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=SURPRISED 
+
+T=It's a crucial clue!
+W=BROK
+C1A=ANGRY 
+
+T=Yeah, right.
+W=GUARD
+C2A=MEH 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_INV_LAMPHUSH
+T=You fixed it?...
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=Of course not! That's the other lamp. I wouldn't mess with evidence.
+W=BROK
+C1A=ALRIGHT 
+
+T=Then stop touching 'em with bare hands.
+W=GUARD
+C2A=ANGRY 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INV_LAMPMINK
+T=That must have hurt.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=Obviously. He's dead!
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INV_MAGNIFY
+T=See? I wasn't lying!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH
+
+T=Sure. Because owning a magnifying glass makes you a detective?
+W=GUARD
+
+T=Everyone knows that!
+W=BROK
+C1A=HAPPY 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INV_MAPBUILDING
+T=Dun' need a map. I know this building by heart.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_INV_TABLETHUSH
+T=Dr. Hush used it.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=Please unlock it.
+W=BROK
+C1A=ALRIGHT 
+
+T=Like I could!
+W=GUARD
+C2A=HAPPY 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INV_PILLHUSH
+T=I believe Dr. Hush was taking these.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=So?...
+W=GUARD
+C2A=MEH 
+
+T=Can you confirm?
+W=BROK
+C1A=MAYBE 
+
+T=No idea.
+W=GUARD
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INV_TRAMPPRESCR
+T=You're a doctor, right?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=You're asking the wrong guy, buddy!
+W=GUARD
+C2A=HAPPY 
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15B_GUARD_INV_WRAPPING
+T=Ewww! I hate ants.
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH
+
+T=Man, you just entered my enemies list.
+W=BROK
+C1A=ANGRY 
+
+T=Whatever.
+W=GUARD
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15B_GUARD_INVESTIGATE
+T=Hey, wait!
+W=GUARD
+C1=BROK
+C1A=SURPRISED
+C2=GUARD
+C2A=MEH 
+CONTEXT=Going around the room
+
+T=I still have a few things to tell you.
+W=GUARD
+C1A=ANGRY
+TEN=PC15B_GUARD_INVESTIGATE_MOVE
+
+T=Well, do it!
+W=BROK
+C1A=ANGRY 
+TEN=PC15B_GUARD_CHOICES
+IT=1
+
+
+#----------------------
+#= Exit room
+#----------------------
+ID=PC15B_TO_PC15_NO1
+T=Hey!
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=SURPRISED 
+
+T=I wouldn't mind leaving either but don't you have some professional conscience?
+W=GUARD
+C2A=ANGRY
+
+T=Oh! You mean...?
+W=BROK
+C1A=HAPPY
+SKIPEND=1
+
+T=Solve this case, you moron!
+W=GUARD
+TEN=PC15B_TO_PC15_BACK
+
+T=No need to resort to insults.
+W=BROK
+C1A=OPPOSITE
+TEN=CLICKERS_BACK
+
+#----------------------
+ID=PC15B_TO_PC15_NO2
+T=Can't get out...
+W=BROK
+A=MAYBE
+
+#----------------------
+#= Knock on door
+#----------------------
+ID=PC15B_KNOCK1
+T=It won't open.
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Dr Mink's door. He doesn't want to let Brok enter.
+TEN=PC15B_KNOCK1_MUSICFADE
+
+T=(Knocks)
+TEB=ACTION_PLAYER_KNOCKDOOR
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=I hear music...
+W=BROK
+
+T=A loud beat. Pretty catchy!
+W=BROK
+C1A=HAPPY
+
+T=(Knocks again)
+TEB=ACTION_PLAYER_KNOCKDOOR
+
+T=Go away! I'm busy!
+TEN=PC15B_KNOCK1_MUSICBACK
+BNAMESP=UNKNOWN
+BVOICESP=MINK
+
+T=Hmmph...
+W=BROK
+C1A=ANGRY
+
+#----------------------
+ID=PC15B_KNOCK2
+T=(Knocks)
+TEB=ACTION_PLAYER_KNOCKDOOR
+
+T=Open! Now!
+W=BROK
+C1=BROK
+C1A=ANGRY
+TEN=PC15B_KNOCK_OPEN
+IT=1
+
+#----------------------
+ID=PC15B_KNOCK2B
+T=Hey! Who the heck are you?!
+W=MINK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=ANGRY 
+
+T=Such a nice way to introduce yourself...
+W=BROK
+
+T=Mind if I enter?
+W=BROK
+C1A=MAYBE
+
+T=Of course I mind! I'm in the middle of something important!
+W=MINK
+
+T=Like... dancing?
+W=BROK
+C1A=HAPPY
+
+T=...
+W=MINK
+C2A=MEH 
+
+T=I'm here to...
+W=BROK
+C1A=MOCK
+SKIPEND=1
+
+T=Get out!
+W=MINK
+C2A=ANGRY 
+TEN=PC15B_KNOCK_CLOSE
+SKIPEND=1
+
+T=...
+W=BROK
+C1A=CONFUSED
+C2=NONE
+
+#----------------------
+ID=PC15B_KNOCK3
+T=(Knocks)
+TEB=ACTION_PLAYER_KNOCKDOOR
+TEN=PC15B_KNOCK_OPEN
+IT=1
+
+#----------------------
+ID=PC15B_KNOCK3B
+T=You again? I wasn't clear enough?!
+W=MINK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=ANGRY 
+TEN=PC15B_KNOCK_CHOICE
+
+
+#----------------------
+ID=PC15B_KNOCK3_FAKE1
+T=I'm the deliverer! Got pizza for you!
+W=BROK
+C1=BROK
+C1A=HAPPY 
+C2=MINK
+C2A=MOCK 
+
+T=Impossible. All our orders are delivered through the Pipe-Pill.
+W=MINK
+C1A=MEH 
+TEN=PC15B_KNOCK_CLOSE
+
+T=Oops.
+W=BROK
+C1A=CONFUSED
+C2=NONE
+
+#----------------------
+ID=PC15B_KNOCK3_FAKE2
+T=Just joking! I'm a scientist too. I'm here to help!
+W=BROK
+C1=BROK
+C1A=HAPPY 
+C2=MINK
+C2A=MEH 
+
+T=Oh! Then show me your papers.
+W=MINK
+C2A=NORMAL 
+
+T=Darn. I'm such a scatterbrain. I left them home!
+W=BROK
+C1A=MAYBE 
+
+T=Sounds about right! We're all the same.
+W=MINK
+C1A=MEH
+
+T=Alright, come...
+W=MINK
+
+T=Wait. What's this funny hat?
+W=MINK
+C2A=MOCK
+
+T=Well...
+W=BROK
+C1A=HAPPY
+C2=NONE
+TEB=PC15B_KNOCK_CLOSE
+
+T=You liar! Go away!
+BNAME=MINK
+BVOICE=MINK
+
+
+#----------------------
+ID=PC15B_KNOCK3_TRUTH
+T=I'm a detective. I'm here to investigate...
+W=BROK
+C1=BROK
+C1A=THINK 
+C2=MINK
+C2A=MEH
+SKIPEND=1
+
+T=Oh gosh!
+W=MINK
+C2A=SURPRISED 
+TEN=PC15B_KNOCK_CLOSE
+
+T=Hey!
+W=BROK
+C1A=READY 
+C2=NONE
+
+T=I-I've paid all my taxes! Leave me alone!
+BNAME=MINK
+BVOICE=MINK
+
+
+
+#----------------------
+ID=PC15B_KNOCK3_LIGHT
+T=No.
+W=BROK
+C1=BROK
+C1A=ANGRY 
+C2=MINK
+C2A=ANGRY 
+
+T=Leave me alone, reptile!
+W=MINK
+
+T=Listen.
+W=BROK
+C1A=MOCK
+
+T=You got two seconds to step aside.
+W=BROK
+C1A=READY 
+
+T=Or else... I might start getting a bit angry, and there ain't any punchin' bags around to vent my frustation.
+W=BROK
+C1A=COCKY
+
+T=Gulp!
+W=MINK
+C2A=SURPRISED 
+
+T=A-alright! Please don't hurt me!
+W=MINK
+TEN=PC15B_KNOCK_MOVE
+
+
+#----------------------
+ID=PC15B_KNOCK3_HARD
+T=Lemme in or I'll crack your spine in half and eat your remains for snack!
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=MINK
+C2A=SURPRISED 
+
+T=Whaaa...
+W=MINK
+SKIPEND=1
+TEN=PC15B_KNOCK_CLOSE
+
+#----------------------
+ID=PC15B_KNOCK3_HARD2
+T=I'm scared! P-please go away...
+BNAME=MINK
+BVOICE=MINK
+
+T=Darn. Did I go too far?
+W=BROK
+A=WONDER 
+
+#----------------------
+ID=PC15B_DOORRIGHT_HIT1
+T=Stop it!
+BNAME=MINK
+BVOICE=MINK
+NB=1
+D=60
+CONTEXT=Hitting the door
+
+#----------------------
+ID=PC15B_DOORRIGHT_HIT2
+T=I'm... I'm scared...
+BNAME=MINK
+BVOICE=MINK
+NB=1
+D=60
+
+#----------------------
+ID=PC15B_DOORRIGHT_HIT3
+T=You're... gonna break the door! It's valuable!
+BNAME=MINK
+BVOICE=MINK
+NB=1
+D=60
+
+#----------------------
+ID=PC15B_DOORRIGHT_HIT4
+T=P...Please!
+BNAME=MINK
+BVOICE=MINK
+NB=1
+D=60
+
+T=Don't hurt me!...
+BNAME=MINK
+BVOICE=MINK
+NB=1
+D=60
+
+
+#----------------------
+ID=PC15B_DOORRIGHT_DEATH1
+T=Aaaahhh!!!
+BNAME=MINK
+BVOICE=MINK
+NB=1
+D=60
+
+#----------------------
+#= Try opening restroom
+#----------------------
+ID=PC15B_RESTROOM1
+T=What's in there?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GUARD
+C2A=WONDER 
+CONTEXT=Checking other rooms
+
+T=The restroom.
+W=GUARD
+
+T=I'll have a peek.
+W=BROK
+C1A=THINK
+TEN=PC15B_DOORMIDDLE_TRYOPEN
+
+#----------------------
+ID=PC15B_RESTROOM1B
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=No one's there.
+W=BROK
+C1A=MAYBE
+
+T=I'll examine this room later.
+W=BROK
+C1A=ALRIGHT
+TEN=PC15B_DOORMIDDLE_CLOSE
+
+#----------------------------
+#= Try opening Dr. Hush room
+#----------------------------
+ID=PC15B_DRHUSHROOM1
+T=(Knock, knock)
+TEB=ACTION_PLAYER_KNOCKDOOR
+
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH
+
+T=Whose room is this?
+W=BROK
+
+T=Dr. Hush's.
+W=GUARD
+C2A=WONDER 
+
+T=The guy who disappeared?
+W=BROK
+C1A=WONDER
+
+T=Let's have a look.
+W=BROK
+C1A=ALRIGHT
+TEN=PC15B_DOORLEFT
+
+
+
+
+#----------------------
+#= 	Monitoring
+#----------------------
+ID=PC15B_GUARD_MONITORING1
+T=What am I looking at?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+CONTEXT=The guard monitoring
+
+T=This is today's monitoring. That thing records the time each door was opened...
+W=GUARD
+
+T=...and some icons to differentiate an entrance or an exit.
+W=GUARD
+C2A=MEH 
+
+T=I see...
+W=BROK
+C1A=WONDER
+
+T=An arrow on the left for an entrance, on the right for an exit?
+W=BROK
+
+T=Yeah.
+W=GUARD
+
+T=There's also the identity of who opened the room. Everyone's recorded.
+W=GUARD
+
+T=What about Tidy?
+W=BROK
+C1A=MOCK
+
+T=The maintenance bot?
+W=GUARD
+C2A=WONDER 
+
+T=Yeah, tracked as well.
+W=GUARD
+
+T=Okay. Let's study this.
+W=BROK
+C1A=THINK 
+
+#----------------------
+ID=PC15B_GUARD_MONITORING2
+T=Can anyone modify the information there?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+
+T=Of course not. It's read-only, 100% automatized.
+W=GUARD
+C2A=MEH
+
+T=Good to know.
+W=BROK
+C1A=ALRIGHT 
+
+
+#-----------------------------
+#= 	Monitoring Dr. Hush room
+#-----------------------------
+ID=PC15B_MONITORINGA1
+T=Dr. Hush's room.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=MEH 
+
+T=If I'm reading this correctly, Dr. Hush was last recorded at 05:04...
+W=BROK
+C1A=MAYBE
+
+T=Then disappeared.
+W=BROK
+
+T=Wait a sec.
+W=BROK
+C1A=WONDER
+
+T=Why did you open that door at 05:10?
+W=BROK
+
+T=Told ya! I check the rooms regularly.
+W=GUARD
+
+T=Right after the doctor went out?
+W=BROK
+C1A=MOCK
+
+T=...
+W=GUARD
+
+T=Seems so.
+W=GUARD
+
+T=My memory is confused...
+W=GUARD
+C2A=WONDER 
+
+T=Hmm...
+W=BROK
+C1A=THINK 
+CLUE=CLUE_GUARD_DRHUSHROOM
+
+#-----------------------------
+ID=PC15B_MONITORINGA2
+T=Looks like you performed another check at 09:00, right?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=GUARD
+C2A=MEH 
+
+T=Yup.
+W=GUARD
+
+T=That's when I realized Dr. Hush was nowhere to be found.
+W=GUARD
+
+T=I called the cops discretely.
+W=GUARD
+
+T=Okay...
+W=BROK
+
+
+#-----------------------------
+#= 	Monitoring restroom
+#-----------------------------
+ID=PC15B_MONITORINGB1
+T=The restroom.
+W=BROK
+A=THINK
+
+T=Hmm... A lot more activity than I expected.
+W=BROK
+
+T=...
+W=BROK
+
+T=Tidy was last recorded entering there at 04:24.
+W=BROK
+
+T=Nothing later, even in the other rooms.
+W=BROK
+C1A=WONDER
+CLUE=CLUE_TIDY_LASTROOM
+
+#-----------------------------
+ID=PC15B_MONITORINGB2
+T=After Dr. Hush and Tidy, Dr. Mink also entered the room.
+W=BROK
+A=MOCK
+
+T=I wonder if their path crossed there?
+W=BROK
+A=WONDER 
+#TODO Si le cadavre était resté dans restroom : Après 5:10, Personne n'est rentré pour faire sortir le cadavre, cela aurait été enregistré. sauf le garde mais bien plus tard. Si quelqu'un était rentré dans le restroom, il aurait aperçu le cadavre. 
+
+#-----------------------------
+#= 	Monitoring Dr. Mink room
+#-----------------------------
+ID=PC15B_MONITORINGC1
+T=Dr. Mink's room...?
+W=BROK
+A=THINK
+
+T=What a surprise.
+W=BROK
+
+T=Despite the corpse being in Dr. Mink's room, not much activity was recorded there!
+W=BROK
+A=MOCK
+
+T=Basically, Dr. Mink went out...then came back a little later.
+W=BROK
+A=THINK
+
+T=The time matches the restroom's.
+W=BROK
+
+T=I guess he simply went for a rest?
+W=BROK
+A=WONDER
+
+T=In any case, Dr. Hush never opened the door. Neither did Tidy.
+W=BROK
+
+T=That doesn't make much sense but at least it confirms Dr. Mink's statement.
+W=BROK
+A=THINK
+CLUE=CLUE_HUSH_MINKDOOR
+
+#-----------------------------
+ID=PC15B_MONITORINGC2
+T=That 9 AM record appears in all three rooms.
+W=BROK
+A=WONDER 
+
+T=It must correspond to the guard checking the rooms, looking for Dr. Hush.
+W=BROK
+A=THINK 
+
+#-----------------------------
+#= 	Monitoring Main entrance
+#-----------------------------
+ID=PC15B_MONITORINGD1
+T=What's this fourth door?
+W=BROK
+C1=BROK
+C1A=WONDER 
+C2=GUARD
+C2A=MEH 
+
+T=The main entrance.
+W=GUARD
+C2A=HAPPY
+
+T=Wait. Didn't you say no one came or exited the place today?
+W=BROK
+C2A=MEH
+
+T=Then how do you explain these records?
+W=BROK
+C1A=MOCK 
+
+T=That was you.
+W=GUARD
+COMM=He means both Brok and Ott
+
+T=At 04:38?...
+W=BROK
+
+T=...
+W=GUARD
+C2A=WONDER
+
+T=...
+W=GUARD
+
+T=Wait! I know!
+W=GUARD
+C2A=SURPRISED 
+
+T=That was me. I took my shift at 04:38.
+W=GUARD
+C2A=HAPPY
+
+T=Is that so?...
+W=BROK
+C1A=MAYBE 
+CLUE=CLUE_LAB_MAINENTRANCE
+
+#----------------------
+ID=PC15B_MONITORINGD2
+T=I'm asking again.
+W=BROK
+C1=BROK
+C1A=MOCK 
+C2=GUARD
+C2A=MEH
+
+T=Who opened the main entrance this morning at 04:38?
+W=BROK
+
+T=Told ya!
+W=GUARD
+C2A=HAPPY
+
+T=T'was me. I entered the lab to replace my colleague.
+W=GUARD
+C2A=MEH 
+
+T=Right...
+W=BROK
+
+#----------------------
+ID=PC15B_GUARD_MONITORINGD_AFTER1
+T=The guard opened the main entrance for a minute at 04:38.
+W=BROK
+A=WONDER
+
+T=Then I arrived with Ott a few hours later.
+W=BROK
+
+T=Seems coherent.
+W=BROK
+A=THINK 
+
+
+
+#-----------------------------
+#= 	Interrogation
+#-----------------------------
+ID=PC15B_CLUE_GUARD_AWAY
+T=Can you remind me. When do you take your shift?
+W=BROK
+C1=BROK
+C1A=WONDER 
+C2=GUARD
+C2A=MEH
+CONTEXT=Interrogating the guard
+
+T=3'o clock, everyday!
+W=GUARD
+C2A=HAPPY
+
+T=Interesting.
+W=BROK
+C1A=THINK 
+
+T=Then how do you explain entering the lab at 04:38?
+W=BROK
+C1A=MOCK 
+
+T=What?... I didn't...
+W=GUARD
+C2A=SURPRISED 
+
+T=Check the monitoring. What's written?
+W=BROK
+
+T=04:38...
+W=GUARD
+
+T=Gulp.
+W=GUARD
+
+T=Besides, the arrow indicates an exit. Not an entrance!
+W=BROK
+
+T=You owe me an explanation.
+W=BROK
+
+T=...
+W=GUARD
+
+T=...
+W=GUARD
+C2A=WONDER
+
+T=Alright... I admit!
+W=GUARD
+C2A=MEH 
+
+T=I did take my shift at 3. And the door was indeed open at 4:38.
+W=GUARD
+
+T=But I didn't lie. It was me.
+W=GUARD
+
+T=We're not only agents. We also do the secretarial work.
+W=GUARD
+
+T=By 4:38, I received a call. We're required to pick up and reply to every call we get.
+W=GUARD
+
+T=But it didn't work.
+W=GUARD
+
+T=What do you mean?
+W=BROK
+C1A=WONDER 
+
+T=T'is a high security building so external calls don't work well.
+W=GUARD
+
+T=The line was awful. All full of crackling.
+W=GUARD
+
+T=I'm stunned that kind of thing happens in the Drums.
+W=BROK
+C1A=MEH 
+
+T=But it does. 
+W=GUARD
+C2A=SURPRISED 
+
+T=If you ask me... No matter how they claim technology advances, nothing ever works perfectly.
+W=GUARD
+C2A=MEH 
+
+T=When that happens, I open the main entrance so the transmission gets better.
+W=GUARD
+
+T=So. You stood at the main door for a while.
+W=BROK
+C1A=WONDER 
+
+T=Yup.
+W=GUARD
+C2A=HAPPY 
+
+T=Who was on the line?
+W=BROK
+
+T=Dunno...
+W=GUARD
+C2A=WONDER
+
+T=T'was just music.
+W=GUARD
+
+T=Music?
+W=BROK
+C1A=THINK 
+
+T=Yeah! "TechDream"!
+W=GUARD
+C2A=HAPPY
+CLUE=CLUE_GUARD_MUSIC
+COMM=TechDream isn't so important, keep it like this or translate if you want but keep it consistent throughout all the labs files (PC15X)
+
+T=Hmm... This sounds familiar.
+W=BROK
+C1A=WONDER 
+
+T=Of course! It's all the rage!
+W=GUARD
+
+T=T'is really catchy, so... I kept listening.
+W=GUARD
+C2A=WONDER
+
+T=How long?
+W=BROK
+C1A=WONDER 
+
+T=Maybe a minute?...
+W=GUARD
+C2A=MEH 
+
+T=After a while, I figured this was a spam call and hung up.
+W=GUARD
+CLUE=CLUE_GUARD_AWAY
+
+T=I know what'ya think.
+W=GUARD
+
+T=Yeah, I looked away. But... It wasn't much risk.
+W=GUARD
+
+T=The lasers were active, no one could get past in or out!
+W=GUARD
+C2A=WONDER 
+
+T=But anything could happen inside.
+W=BROK
+
+T=This is a major blunder!
+W=BROK
+C1A=ANGRY 
+
+T=Why d'ya think I didn't tell ya?!
+W=GUARD
+C2A=ANGRY 
+
+T=Didn't think much of it at the time but when you started your investigation...
+W=GUARD
+C2A=MEH 
+
+T=I recalled that moment.
+W=GUARD
+
+T=Please... I'm begging ya...!
+W=GUARD
+C2A=SURPRISED 
+
+T=Don't tell anyone! That mistake could cost me my job!
+W=GUARD
+
+T=Well...
+W=BROK
+C1A=WONDER 
+TEN=PC15B_GUARD_AWAY_CHOICE
+IT=1
+
+#-----------------------------
+ID=PC15B_CLUE_GUARD_NO
+T=Sorry.
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+C2=GUARD
+C2A=MEH
+
+T=This blunder is a critical failure that must have lead to this murder!
+W=BROK
+C1A=STUPID 
+
+T=...Oh no...
+W=GUARD
+C2A=SURPRISED 
+
+T=I've worked so hard... To get accepted in this society...
+W=GUARD
+
+T=I... I refuse to accept one minute of inattention breaking my whole career!...
+W=GUARD
+C2A=ANGRY 
+
+T=Look. Let me finish my investigation.
+W=BROK
+C1A=READY 
+
+T=I'll gather all the facts, then we shall see.
+W=BROK
+
+T=...Okay.
+W=GUARD
+C2A=MEH 
+
+T=(Though I have to report this to Wes. It's my duty.)
+W=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(I've recorded that conversation. It'll get sent as soon as I get outta here.)
+W=BROK
+MOOD=THINK
+TEN=PC15B_CLUE_GUARD_NEXT
+
+#-----------------------------
+ID=PC15B_CLUE_GUARD_YES
+T=I won't tell anyone.
+W=BROK
+C1=BROK
+C1A=MAYBE 
+C2=GUARD
+C2A=HAPPY 
+
+T=I mean, must be insanely tough to keep watch all day at the same spot and doing nothin' else.
+W=BROK
+
+T=Phew... I'm so glad you understand, man.
+W=GUARD
+
+T=Still, that's an important event for this investigation.
+W=BROK
+C1A=MEH
+
+T=Sure. I hope my blunder didn't get the poor chap killed...
+W=GUARD
+C2A=WONDER 
+
+T=We shall see.
+W=BROK
+TEN=PC15B_CLUE_GUARD_NEXT
+
+#-----------------------------
+ID=PC15B_CLUE_GUARD_NEXT
+T=I'm not done with ya, though!
+W=BROK
+C1=BROK
+C1A=ANGRY 
+C2=GUARD
+C2A=SURPRISED 
+
+T=How come there's no record of your entrance at 3?
+W=BROK
+
+T=Simple. I reset the statistics each time I arrive.
+W=GUARD
+C2A=MEH
+
+T=For confidentiality, we're not allowed to store them for more than a day.
+W=GUARD
+
+T=And I can't get that freaking configuration panel to do the job automatically!
+W=GUARD
+C2A=ANGRY 
+
+T=Must have been programmed by some crazy engineer who's not living in the real world.
+W=GUARD
+
+T=I know the feeling...
+W=BROK
+C1A=MEH
+
+T=Didn't you mention you had no control?
+W=BROK
+C1A=THINK 
+
+T=It's all or nothing.
+W=GUARD
+
+T=There's no way to insert or edit data. Just remove everything.
+W=GUARD
+
+T=Okay...
+W=BROK
+
+T=Doesn't matter. Dr. Hush was safe and sound when I arrived.
+W=GUARD
+
+T=Guess I'll have to take your word for that one.
+W=BROK
+TEN=PC15B_CLUE_LAB_BLUNDER_CHECK
+
+#-----------------------------
+ID=PC15B_CLUE_HUSH_GONE1
+T=According to the records, you opened Dr. Hush's door at 5:10.
+W=BROK
+C1=BROK
+C1A=MOCK 
+C2=GUARD
+C2A=MEH 
+
+T=At the exact moment, Dr. Hush's lamp received a violent shock.
+W=BROK
+
+T=Interesting coincidence, don't ya think?
+W=BROK
+C1A=MAYBE 
+
+T=A... shock?...
+W=GUARD
+C2A=SURPRISED 
+
+T=Did you accidentally drop the lamp or something?
+W=BROK
+C1A=WONDER 
+
+T=No... Never touched it...
+W=GUARD
+
+T=I've also noticed something unusual.
+W=BROK
+
+T=At 9:00, you routinely checked all three rooms.
+W=BROK
+
+T=However, at 5:10... You only opened Dr. Hush's door.
+W=BROK
+
+T=Why?
+W=BROK
+C1A=WONDER 
+
+T=Erm...
+W=GUARD
+C2A=MEH 
+
+T=Oh!
+W=GUARD
+C2A=HAPPY 
+
+T=I remember now!
+W=GUARD
+
+T=I heard a noise!
+W=GUARD
+
+T=Is that so?
+W=BROK
+C1A=THINK 
+
+T=Might this be... the sound of the lamp crashing down on the floor?
+W=BROK
+
+T=Hmm... I guess that's possible.
+W=GUARD
+C2A=MEH 
+TEN=PC15B_GIVECLUES_DRHUSH
+
+T=But when I looked inside, everything was normal.
+W=GUARD
+
+T=Are you certain?
+W=BROK
+C1A=MOCK
+
+T=Yeah. Dr. Hush always keeps his room tidy.
+W=GUARD
+
+T=If that lamp was lying on the floor, I'd have noticed!
+W=GUARD
+C2A=ANGRY 
+
+T=Was Tidy there?
+W=BROK
+C1A=READY 
+
+T=Hmm... Pretty sure he was down, charging.
+W=GUARD
+C2A=MEH 
+
+T=What about Dr. Hush, then?
+W=BROK
+
+T=What was he doing?
+W=BROK
+
+T=Lemme think...
+W=GUARD
+C2A=WONDER 
+
+T=Hmm... I didn't see him.
+W=GUARD
+
+T=You didn't?...
+W=BROK
+C1A=WONDER 
+
+T=Pretty sure of it.
+W=GUARD
+
+T=He wasn't in the hall either.
+W=GUARD
+
+T=So he was already gone from his room? 
+W=BROK
+
+T=Yeah. Must have been.
+W=GUARD
+
+T=Interesting.
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+#-----------------------------
+ID=PC15B_CLUE_HUSH_GONE2
+T=Something doesn't add up.
+W=BROK
+C1=BROK
+C1A=THINK 
+C2=GUARD
+C2A=WONDER 
+
+T=At 5:10, you heard a noise and looked for Dr. Hush, who wasn't in his room nor the hall.
+W=BROK
+
+T=Yeah.
+W=GUARD
+C2A=MEH 
+
+T=Then, the glaring contradiction is...
+W=BROK
+C1A=MAYBE 
+
+T=Weren't you worried?
+W=BROK
+C1A=WONDER 
+
+T=What?
+W=GUARD
+C2A=SURPRISED 
+
+T=Think.
+W=BROK
+C1A=MOCK 
+
+T=You had no idea where Dr. Hush was, and yet you didn't look for him in the other rooms?
+W=BROK
+
+T=Why?
+W=BROK
+
+T=You're right.
+W=GUARD
+C2A=MEH 
+
+T=I only started to worry about him disappearing at 9...
+W=GUARD
+
+T=But... I can't remember the reason I wasn't alerted earlier...?
+W=GUARD
+C2A=WONDER 
+
+T=Well, I have my theory.
+W=BROK
+C1A=MOCK 
+
+T=You do?
+W=GUARD
+C2A=SURPRISED 
+
+T=Yeah.
+W=BROK
+
+T=This is the reason you weren't worried at that time!
+W=BROK
+C1A=ANGRY 
+TEN=PC15B_CLUE_GUARD_PICKWORRIED
+
+#-----------------------------
+ID=PC15B_PICKONE_GUARDWORRIED_WRONG1
+T=You weren't worried because of... this!
+W=BROK
+C1=BROK
+C1A=ANGRY 
+C2=GUARD
+C2A=SURPRISED 
+
+T=What?...
+W=GUARD
+
+T=That doesn't make any sense!
+W=GUARD
+
+T=You sure?
+W=BROK
+C1A=WONDER
+
+T=Oops. Lemme try again!
+W=BROK
+C1A=STUPID
+
+#-----------------------------
+ID=PC15B_CLUE_LAB_MEETYME
+T=I made a strange discovery in the restroom.
+W=BROK
+C1=BROK
+C1A=WONDER 
+C2=GUARD
+C2A=MEH
+
+T=At 5:11, the Meety-Me played a pre-recorded sample sounding like Dr. Hush...
+W=BROK
+
+T=What did it say?
+W=GUARD
+C2A=WONDER 
+
+T="I'm in the restroom"
+W=BROK
+C1A=MOCK
+
+T=...!
+W=GUARD
+C2A=SURPRISED 
+
+T=Ring any bells?
+W=BROK
+
+T=Yeah! Sure does!
+W=GUARD
+
+T=You're right! When I started calling for Dr. Hush...
+W=GUARD
+
+T=I heard him say that! The voice came from the restroom, so...
+W=GUARD
+
+T=...you assumed Dr. Hush was in there.
+W=BROK
+
+T=So... He wasn't?!
+W=GUARD
+C2A=WONDER
+
+T=This would be the logical conclusion.
+W=BROK
+C1A=MAYBE
+
+T=Which then means...
+W=BROK
+
+T=The old man was kaputt before that time.
+W=GUARD
+
+T=Let's not jump to conclusions and assume he couldn't be in the restroom either.
+W=BROK
+C1A=WONDER 
+
+T=Woah. That was quite a messed up day...
+W=GUARD
+TEN=PC15B_CLUE_LAB_MEETYME_CHECK
+
+
+
+#-----------------------------
+ID=PC15B_INTERROGATION_OVER
+T=So...? Are we done?
+W=GUARD
+C1=BROK
+C1A=MAYBE 
+C2=GUARD
+C2A=MEH 
+
+T=Depends. Hiding anything else?
+W=BROK
+
+T=Nope! All good!
+W=GUARD
+
+T=Still can't believe it. Why did this have to happen during my watch?...
+W=GUARD
+C2A=SURPRISED 
+
+T=I've learnt not to blame fate. Otherwise I'd do it constantly.
+W=BROK
+
+T=Just let me know if anything else comes to mind.
+W=BROK
+
+T=Sure thing.
+W=GUARD
+C2A=HAPPY
+TEN=PC15B_MUSICBACK
+
+
+
+
+
+#------------------------
+#= End scene
+#------------------------
+ID=PC15B_STORY170_TIDYFLEES1
+T=Argh!
+W=TIDY
+C1=BROK
+C1A=FURIOUS 
+C2=TIDY
+C2A=ANGRY 
+CONTEXT=After we find Tidy is the culprit, he tries to escape
+
+T=Darn lasers!
+W=TIDY
+TEN=PC15B_STORY170_TIDYMOVES1
+
+#------------------------
+ID=PC15B_STORY170_TIDYFLEES2
+T=I've set the emergency plan! He won't access da controls.
+W=GUARD
+C1=BROK
+C1A=FURIOUS 
+C2=GUARD
+C2A=ANGRY 
+C4=TIDY
+C4A=ANALYZE 
+COMM="He" is Tidy
+
+T=Rubbish guard! Let me out!
+W=TIDY
+C4A=ANGRY 
+
+T=You won't go nowhere.
+W=BROK
+C1A=ALRIGHT
+TEN=PC15B_STORY170_TIDYMOVES3
+
+#------------------------
+ID=PC15B_STORY170_TIDYFLEES3
+T=I've done nothing wrong!...
+W=TIDY
+C1=BROK
+C1A=ANGRY 
+C2=TIDY
+C2A=SAD 
+
+T=Daddy is alive!
+W=TIDY
+
+T=Only by chance! And stop calling him "Daddy".
+W=BROK
+C1A=FURIOUS
+
+T=You're nothing more than a defective AI in a metal scrap.
+W=BROK
+C1A=READY 
+
+T=Now, let me switch you off. We'll fix you!
+W=BROK
+
+T=Pfft! I'd never take orders from a petty human!
+W=TIDY
+C2A=ANGRY
+
+T=I'm perfect! The only defective one in this room is you, human scum!
+W=TIDY
+
+T=I've got new orders! From my new Daddy!
+W=TIDY
+
+T=When I'm out, he'll take care of me!
+W=TIDY
+C2A=HAPPY
+
+T=What?... Who?...
+W=BROK
+C1A=CONFUSED 
+
+T=It's quite funny actually! You see...
+W=TIDY
+C2A=NORMAL
+
+T=No. I promised.
+W=TIDY
+
+T=You'll have to figure it out by yourself.
+W=TIDY
+C2A=HAPPY
+
+T=A shame, really.
+W=TIDY
+
+T=Because you never will!
+W=TIDY
+C4A=ANGRY 
+
+T=Stop this nonsense! This is my last warning!
+W=BROK
+C1A=ANGRY 
+
+T=Switch off, or else...
+W=BROK
+SKIPEND=1
+
+T=Save your breath. You'll never get me!
+W=TIDY
+
+T=Well, then...
+W=BROK
+
+T=I'll make you switch off. One way or another!
+W=BROK
+TEN=PC15B_STORY170_TIDYSTARTFIGHT
+#TODO Give Tidy a specific AI : shooting his long arms towards the player (need to make his arms stuck into something? Throw items at it? Use the remote control to block him temporarily? Impossible to block his arms shooting), goes in circles to bump the player.
+
+
+#------------------------
+#= Win
+#------------------------
+ID=PC15B_STORY170_BROKWINS1
+T=Did ya get it? For good?
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER 
+TEN=PC15B_STORY170_MINKARRIVES
+CONTEXT=Winning against Tidy
+
+T=I guess...
+W=BROK
+C1A=MEH
+TEN=PC15B_STORY170_TIDYBACK
+SKIPEND=1
+
+#------------------------
+ID=PC15B_STORY170_BROKWINS2
+T=Not.
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=GUARD
+C2A=SURPRISED
+
+T=Argh! I hate you - I hate you - I hate you...
+W=TIDY
+C3=TIDY
+C3A=ANGRY 
+
+T=It's going berserk...!
+W=MINK
+C4=MINK
+C4A=SURPRISED
+
+T=You will regret this!
+W=TIDY
+TEN=PC15B_STORY170_TIDYPREPAREESCAPE
+
+T=Everyone in this city will be destroyed!
+W=TIDY
+TEN=PC15B_STORY170_TIDYESCAPES
+
+T=No way! It escaped!
+W=GUARD
+C2A=ANGRY 
+C3=NONE
+TEN=PC15B_STORY170_BROKRUNS
+
+
+
+
+#------------------------
+#= If we jumped on body
+#------------------------
+ID=PC15B_STORY170_JUMPEDBODY1
+T=The guard!
+W=MINK
+C1=BROK
+C1A=SURPRISED 
+C2=MINK
+C2A=SURPRISED 
+TEN=PC15B_STORY170_CHECKGUARD
+
+T=That robot... Tidy.
+W=GUARD
+C3=GUARD
+C3A=SURPRISED 
+C3_EYESHUT=1
+
+T=He attacked me... Forced his way out...
+W=GUARD
+TEN=PC15B_STORY170_CHECKGUARD2
+
+T=I'll get him!
+W=BROK
+C1A=READY 
+TEN=PC15B_STORY170_CHECKGUARD3
+
+
+#------------------------
+#= Gameover
+#------------------------
+ID=PC15B_STORY170_BROKLOSES1
+T=Oh no!...
+W=GUARD
+C1=GUARD
+C1A=SURPRISED 
+C2=TIDY
+C2A=NORMAL 
+CONTEXT=Losing against Tidy
+TEN=PC15B_STORY170_MINKARRIVES
+
+T=...!
+W=MINK
+C3=MINK
+C3A=SURPRISED 
+
+T=Ah ah ah ah!
+W=TIDY
+C2A=HAPPY 
+
+T=I killed him, and there's no faking this time!
+W=TIDY
+
+T=Now, will you let me out or... shall one of you be next?
+W=TIDY
+
+T=Never!
+W=GUARD
+C1A=ANGRY 
+TEN=PC15B_STORY170_LASERSOFF
+
+T=Oh, crap... The security battery ran out.
+W=GUARD
+C1A=SURPRISED 
+
+T=Please do what it says! Stop the killing...
+W=MINK
+
+T=We can't! That thing may cause a carnage outside!
+W=GUARD
+TEN=PC15B_STORY170_GUARDAPPROACH
+
+
+T=I'll fight to the end!
+W=GUARD
+C1A=ANGRY 
+
+T=Oh, shut up.
+W=TIDY
+C2A=ANGRY 
+TEN=PC15B_STORY170_TIDYARMSGUARD
+
+T=Argh!!!
+W=GUARD
+C1A=SURPRISED
+C1_EYESHUT=1
+
+T=Stop!
+W=MINK
+C1=NONE
+
+T=Stop this...
+W=MINK
+
+T=I... can't prevent you... Nobody can.
+W=MINK
+C3A=ANGRY
+
+T=I'll release you! But you've got to promise...
+W=MINK
+C4A=NORMAL 
+
+T=No more casualties.
+W=MINK
+
+T=Good Minky!
+W=TIDY
+C2A=NORMAL 
+TEN=PC15B_STORY170_BROKLOSES1B
+
+#------------------------
+ID=PC15B_STORY170_BROKLOSES2
+T=By the way...
+W=TIDY
+A=NORMAL
+
+T=No promises!
+W=TIDY
+A=ANGRY
+TEN=PC15B_STORY170_BROKLOSES3
+
+
+#----------------------
+ID=PC15B_CHARGE_LEAVING
+T=...
+W=OTT
+C1=BROK
+C1A=THINK 
+C2=OTT
+C2A=WONDER 
+TEN=PC15B_LEAVING_LOOKOTT
+CONTEXT=Scene if we charge the wrong culprit, Ott has doubts
+
+T=What's wrong?
+W=BROK
+C1A=WONDER
+
+T=I...
+W=OTT
+
+T=I can't pinpoint why, but...some elements in this whole theory seem off.
+W=OTT
+
+T=You're still a rookie. That's why.
+W=BROK
+C1A=ALRIGHT
+
+T=Must be...
+W=OTT
+TEN=PC15B_OTT_LOOKBROK
+
+T=In any case... I'm glad we were able to solve this case!
+W=OTT
+C2A=HAPPY 
+TEN=PC15B_CHARGE_LEAVING_CHECK
+IT=1
+
+#----------------------
+ID=PC15B_CHARGE_LEAVING_HUSH
+T=That doctor got what he deserved for trying to kill his colleague!
+W=OTT
+C1=BROK
+C1A=MAYBE 
+C2=OTT
+C2A=ALRIGHT 
+
+T=Yeah. Sad but true.
+W=BROK
+C1A=MAYBE 
+TEN=PC15B_LEAVINGWITHOTT
+IT=1
+
+#----------------------
+ID=PC15B_CHARGE_LEAVING_GUARD
+T=I never thought Squealers were such bad people... But...
+W=OTT
+C1=BROK
+C1A=WONDER 
+C2=OTT
+C2A=WONDER 
+
+T=Yeah. You don't know until you've actually met them.
+W=BROK
+TEN=PC15B_LEAVINGWITHOTT
+IT=1
+
+
+#----------------------
+ID=PC15B_LEAVINGWITHOTT
+T=Hmm... I wonder if Graff finished his trial.
+W=OTT
+C1=BROK
+C1A=WONDER 
+C2=OTT
+C2A=WONDER 
+
+T=That's right!
+W=BROK
+
+T=Gonna get home. Hopefully he's back by now.
+W=BROK
+C1A=READY 
+
+T=I'd love to follow you, but I should get prepared for mine.
+W=OTT
+C2A=NORMAL 
+
+T=Okay. See ya, buddy.
+W=BROK
+C1A=ALRIGHT
+TEN=PC15B_LEAVINGEND
+
+
+#----------------------------
+#= Walk on desk
+#----------------------------
+ID=PC15B_DESK1
+T=What the...!
+W=GUARD
+C2=GUARD
+C2A=SURPRISED
+NB=1
+D=60
+
+#----------------------------
+ID=PC15B_DESK2
+T=Hey! What'ya doin', man?!
+W=GUARD
+C2=GUARD
+C2A=ANGRY
+NB=1
+D=60
+
+#----------------------------
+ID=PC15B_DESK3
+T=Are ya goin' to waste our time longer?!
+W=GUARD
+C2=GUARD
+C2A=ANGRY
+NB=1
+D=60
+
+
+###############################################
+# PROOFREAD - stroszek - 26/06/2019
+# EXPRESSIONS Pete	-	14/09/2019
+###############################################

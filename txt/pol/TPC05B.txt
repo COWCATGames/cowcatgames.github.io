@@ -1,0 +1,545 @@
+#-------------------------------
+#= Sewers inside action
+#-------------------------------
+
+#----- Interactions --------
+PC_INSCRIPTION=Inskrypcja
+PC_MINE=Mina
+PC_BASKET=Kosz
+PC_WIRES=Przewody
+
+#----- Choices / Items --------
+GOT_MINEBROKEN=Zepsuta mina!
+
+#----- Topics --------
+PC05B_THREATEN=Gróź
+PC05B_TRADE=Targuj się
+PC05B_ESCAPE=Uciekaj
+PC05B_ATTACK=Atakuj
+PC05B_TALK=Rozmawiaj
+PC05B_BLUFF=Blefuj
+PC05B_MINEBROKEN_CHOICE=Wziąć zepsutą minę?
+
+#----- Dialog --------
+
+
+
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 17/06/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Brok enters room and sees mines
+# *****************************************************************
+# Brok                                 
+PC05B_MINE_LOOK-1=Łoł... Czy to...
+# Brok                                 
+PC05B_MINE_LOOK-2=Samoregenerująca się mina?!
+# Brok                                 
+PC05B_MINE_LOOK-3=Powinienem uważać, gdzie stąpam...
+#----------------------------------------------------
+# Brok                                 
+PC05B_WIRES1-1=Zwitek kilku cienkich kabelków... To muszą być komponenty tych min.
+# Brok                                 
+PC05B_WIRES1-2=W końcu są elektroniczne.
+#----------------------------------------------------
+# Brok                                 
+PC05B_WIRES_MINEBROKEN-1=Nie... To oczywiste, że minie brakuje nie tylko kabelków.
+# Brok                                 
+PC05B_WIRES_MINEBROKEN-2=Powinienem zapytać eksperta!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Welcome to the rats place.
+# *****************************************************************
+# Brok                                 
+PC05B_INSCRIPTION1-1=Mm... Dam sobie głowę uciąć, że już to widziałem...
+# Brok                                 
+PC05B_INSCRIPTION1-2=Ale gdzie...?
+# Brok                                 
+PC05B_INSCRIPTION1-3=W każdym razie to nie wróży dobrze.
+#----------------------------------------------------
+# Brok                                 
+PC05B_TROUBLE1-1=Oo... Kłopoty.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rats prevent Brok from going further
+# *****************************************************************
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST-1=Krokuś w ściekach. A to dopiero!
+# Brok                                 
+PC05B_CHIEFRAT_FIRST-2=Em... Cześć! Jestem....
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST-3=To nas nie obchodzi.
+# Brok                                 
+PC05B_CHIEFRAT_FIRST-4=Mm. Szczurasy. Zawsze od razu do sedna, co?
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST-5=Ale... wyglądasz znajomo...
+# Brok                                 
+PC05B_CHIEFRAT_FIRST-6=Jeśli o mnie chodzi, to wszyscy wyglądacie tak samo.
+#----------------------------------------------------
+# Kins                                 
+PC05B_CHIEFRAT_TALKFIGHT-1=Szefie! To jest ten koleś, który dowalił nam rano!
+# Chiefrat                                 
+PC05B_CHIEFRAT_TALKFIGHT-2=Co...? Przegraliście z tym śmieciem?
+# Kins                                 
+PC05B_CHIEFRAT_TALKFIGHT-3=Spoko, szefie! Nie byliśmy gotowi.
+# Kins                                 
+PC05B_CHIEFRAT_TALKFIGHT-4=Tym razem nam się uda!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-1=Szukam czegoś, a wy stoicie mi na drodze.
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-2=To nasz teren, krokodylku.
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-3=Źle. Ścieki są publiczne.
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-4=Powiedz to swojemu drogiemu Rządowi. Wygnali nas, zostawili nas na śmierć.
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-5=Słuchajcie, nie chcę kłopotów...
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-6=Za późno. Nikt, kto nas spotkał, nie dożył jutra.
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIRST1B-7=Chłopaki...
+# Brok                                 
+PC05B_CHIEFRAT_FIRST1B-8=Czekaj!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-1=Co robisz na Wyżynach...?
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-2=Źle.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-3=To nie Wyżyny. To nasz dom.
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-4=Ale...
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-5=Zaczynasz mnie męczyć.
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-6=Pozwól, że wytłumaczę, szefie!
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-7=Tak, ścieki są pod Wyżynami na południe od Slumsów.
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-8=Ale Wyżyny są poza naszym zasięgiem.
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-9=Nie jesteśmy "zarejestrowanymi obywatelami".
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT1-10=Więc gdy tylko postawimy tam stopę, te maszyny z piekła rodem zaczną nas gonić.
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-11=Wasza wina. Płacicie za zdradę.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-12=Dość już usłyszałem.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT1-13=Chłopaki, zajmijcie się szkodnikiem.
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT1-14=Jeszcze nie! Muszę ci coś powiedzieć...
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT2-1=Groziliście na ulicy niewinnemu człowiekowi!
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-2=Ten bezdomny wojak?
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-3=Nie jest taki niewinny. Był jednym z żołnierzy, którzy stali naprzeciwko nas podczas puczu.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-4=Prawdopodobnie zabił wtedy kilku z nas.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-5=Daliśmy mu drugą szansę. Daliśmy temu umierającemu głupcowi towar, którego potrzebował.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-6=Nie zapłacił.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-7=Jak sądzisz, co się stanie, jeśli klienci będą z nas robić głupców?
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT2-8=Ale...
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT2-9=Szefie, on gra na czas.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-10=Stary. Masz rację, Kins.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-11=Nie jesteśmy ci winni żadnych wyjaśnień.
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT2-12=To twoje ostatnie ostrzeżenie, jaszczurko!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_CHITCHAT3-1=Zastanawiałem się...
+# Chiefrat                                 
+PC05B_CHIEFRAT_CHITCHAT3-2=Ogłuchłeś?
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT3-3=Nikt nie zawraca głowy szefowi!
+# Kins                                 
+PC05B_CHIEFRAT_CHITCHAT3-4=Oberwiesz...!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_BYE1-1=Już wychodzę.
+# Chiefrat                                 
+PC05B_CHIEFRAT_BYE1-2=Będziemy cię obserwować, krokodylku.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_BYE2-1=Wrócę później.
+# Kins                                 
+PC05B_CHIEFRAT_BYE2-2=Co za głupiec.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-1=Znam takich jak wy.
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-2=Szczurasy to ścierwa.
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-3=Mieli dobry powód, by was wygnać.
+# Brok                                 
+PC05B_CHIEFRAT_THREAT-4=Zejdź mi z drogi.
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT-5=Oooooch! Krokodylek ma napad? Taaaak się boję!
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT-6=Wybacz, że psuję imprezę, ale...
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT-7=Mamy przewagę.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_ATTACK-1=Nie ubijam targu ze ścierwami!
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_ATTACK-2=Przejdę, a wy nie możecie nic z tym zrobić!
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_ATTACK-3=Absurd! Jesteś skończony!
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_RAT_MORE1-1=Chłopaki! Brać go! TERAZ!!!
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_RAT_BOSSCOMES1-1=Załatwiłeś wszystkich moich chłopców... Niech będzie.
+# Chiefrat                                 
+PC05B_RAT_BOSSCOMES1-2=Ale ze mną ci się nie uda!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-1=Nie doceniasz mnie.
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-2=Możecie mnie pokonać...
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-3=Ale kilkoro z was zabiorę ze sobą.
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-4=Pomyśl.
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-5=Chcesz zaryzykować i stracić w głupi sposób kilka dusz?
+# Kins                                 
+PC05B_CHIEFRAT_THREAT_TALK1-6=Krokodyl ma rację, szefie...
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-7=Zamknij się!
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-8=Zapomniałeś naszego motto?
+# Kins                                 
+PC05B_CHIEFRAT_THREAT_TALK1-9="Walcz do końca... Odzyskaj, co straciłeś...".
+# Kins                                 
+PC05B_CHIEFRAT_THREAT_TALK1-10=Wiem, ale...
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-11=Posłuchaj, krokodylku. Nie pozwolimy ci przejść.
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-12=Dziś pozwolimy ci żyć. Wracaj, skąd przypełzłeś.
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-13=Jeśli komukolwiek coś o nas piśniesz, dorwiemy cię. Twoich przyjaciół. Twoją rodzinę. Każdego, kogo kiedykolwiek kochałeś.
+# Chiefrat                                 
+PC05B_CHIEFRAT_THREAT_TALK1-14=Nieważne co. Nieważne komu. Nieważne gdzie.
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-15=Mm. Już idę...
+# Brok                                 
+PC05B_CHIEFRAT_THREAT_TALK1-16=(Ale to znaczy, że będę musiał znaleźć inną drogę.)
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_TRADE-1=Mam coś na wymianę.
+# Chiefrat                                 
+PC05B_CHIEFRAT_TRADE-2=Doprawdy! Co masz?
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_DEFAULT1-1=Może to...
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_DEFAULT1-2=Spadaj.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_DEFAULT2-1=Chciałbyś to?
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_DEFAULT2-2=Jaja sobie robisz?!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_BILLA-1=Możesz opłacić moje rachunki, proszę?
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_BILLA-2=A po co?! Za minutę będziesz martwy.
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_STICK-1=Cooo?! Grozisz nam?!
+# Brok                                 
+PC05B_CHIEFRAT_INV_STICK-2=Nie, nie! Sorry...
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_APARTMENTKEY-1=Wiem! Weź moje mieszkanie!
+# Brok                                 
+PC05B_CHIEFRAT_INV_APARTMENTKEY-2=Mógłbyś prowadzić tam interes!
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_APARTMENTKEY-3=Nie ma mowy. Nie możemy być tak blisko powierzchni z tymi dronami dookoła.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_HOOVER-1=Co powiesz na odkurzacz? To miejsce cuchnie!
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_HOOVER-2=Co żeś powiedział?!
+# Brok                                 
+PC05B_CHIEFRAT_INV_HOOVER-3=Cóż... W końcu to ściek...
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_MINEBROKEN-1=(Zły pomysł... Jest ich, a oni wiedzą jak ich używać.)
+# Brok                                 
+PC05B_CHIEFRAT_INV_MINEBROKEN-2=(Znajdę inny sposób na jej użycie...)
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_PENDANT-1=Może...
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_PENDANT-2=Zapomnij. Bezwartościowe!
+# Brok                                 
+PC05B_CHIEFRAT_INV_PENDANT-3=Absolutnie nie! To ma wartość sentymentalną.
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_PENDANT-4=Wali mnie to.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-1=A co powiesz na...
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-2=Są za darmo. Nawet dla nas.
+# Brok                                 
+PC05B_CHIEFRAT_INV_POLLUTIONPILL-3=Och, no tak...
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-1=Słuchaj... Mam nieuleczalną chorobę i...
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-2=Dobrze. Dobijemy cię.
+# Brok                                 
+PC05B_CHIEFRAT_INV_TRAMPPRESCR-3=J-jeszcze nie! Mam jeszcze energii na chwilkę!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_MONEY-1=Weź moją kasę!
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_MONEY-2=Nie kupisz nas.
+# Brok                                 
+PC05B_CHIEFRAT_INV_MONEY-3=Serio...? A myślałem, że...
+# Chiefrat                                 
+PC05B_CHIEFRAT_INV_MONEY-4=Powiedziałem nie. Mamy swoje standardy.
+# Brok                                 
+PC05B_CHIEFRAT_INV_MONEY-5=(Bandziory z zasadami... Co za niefart.)
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_INV_EXIT-1=Myliłem się. Nic dla was nie mam. Ale...
+#----------------------------------------------------
+# Brok                                 
+#Try to escape
+PC05B_CHIEFRAT_ESCAPE-1=Papa!
+# Chiefrat                                 
+PC05B_CHIEFRAT_ESCAPE-2=Brać go!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_ESCAPEHURT-1=Urgh...
+# Various                                 
+PC05B_CHIEFRAT_ESCAPEHURT-2=(Śmiech)
+# Chiefrat                                 
+PC05B_CHIEFRAT_ESCAPEHURT-3=Ale z ciebie głupiec, krokusiu. Celowo umieściliśmy te miny!
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_ESCAPEAFTER-1=...Em...
+#----------------------------------------------------
+# Various                                 
+PC05B_CHIEFRAT_ESCAPEDEAD-1=(Śmiech)
+#----------------------------------------------------
+# Chiefrat                                 
+#Trying to get past them
+PC05B_CHIEFRAT_ADVANCE1-1=A ty gdzie się wybierasz?
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_ADVANCE2-1=Stój!
+# Chiefrat                                 
+PC05B_CHIEFRAT_ADVANCE2-2=Jeszcze jeden krok i jesteś trup.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_TALK1-1=Możemy pogadać?
+# Chiefrat                                 
+PC05B_CHIEFRAT_TALK1-2=Śmiało... Póki jeszcze masz język.
+#----------------------------------------------------
+# Brok                                 
+PC05B_CHIEFRAT_MORERATS-1=Więcej? Skąd oni się biorą?!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok threw the mine at them from a distance to get rid of them and finds them all unconscious on the floor
+# *****************************************************************
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-1=Łoł...!
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-2=Fiu... Są tylko nieprzytomni.
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-3=... No nie... Jak mogłeś...
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-4=Sorry. Nie zostawiliście mi wyboru.
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-5=... Śmiało... Wykończ nas...
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-6=Nie taki miałem zamiar. Nie jestem jak wy.
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-7=Ten głos... Znałem krokodyla...
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-8=Ale... to... niemożliwe...
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-9=To...
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-10=To ty...!
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-11=Pamiętam cię! Po tylu latach...
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-12=Co?
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-13=Nasze wygnanie... Jesteś za nie odpowiedzialny!
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-14=Co masz na myśli?
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-15=ZAPŁACISZ ZA TO!!!
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-16=Łoł!
+# Unknown                                 
+PC05B_CHIEFRAT_BEAT1-17=(Bęc)
+# Chiefrat                                 
+PC05B_CHIEFRAT_BEAT1-18=...
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-19=Musiałem go obezwładnić...
+# Brok                                 
+PC05B_CHIEFRAT_BEAT1-20=O co mu chodziło?
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_DEFEND1-1=Marnujesz swój czas.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Various with rats
+# *****************************************************************
+# Chiefrat                                 
+PC05B_CHIEFRAT_ATTACK1-1=Śmiesz nas atakować?!
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_GAMEOVER1-1=Masz, na co zasłużyłeś, śmieciu.
+# Chiefrat                                 
+PC05B_CHIEFRAT_GAMEOVER1-2=Chłopaki, weźcie co jego, a ciało wrzućcie do kwasu.
+# Kins                                 
+PC05B_CHIEFRAT_GAMEOVER1-3=Jasne, szefie!
+# Kins                                 
+PC05B_CHIEFRAT_GAMEOVER1-4=Możemy najpierw się z nim zabawić?
+# Chiefrat                                 
+PC05B_CHIEFRAT_GAMEOVER1-5=Jasne.
+# Kins                                 
+PC05B_CHIEFRAT_GAMEOVER1-6=Dzięki, szefie! Jesteś najlepszy!
+#----------------------------------------------------
+# Brok                                 
+PC05B_RAT1-1=Zemdlał...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Broken mine
+# *****************************************************************
+# Brok                                 
+PC05B_MINEBROKEN-1=Ta mina jest widzialna, nawet z daleka...? Czy to znaczy...?
+# Brok                                 
+PC05B_MINEBROKEN-2=Tak. Jest zepsuta.
+#----------------------------------------------------
+# Brok                                 
+PC05B_MINEBROKEN_TOOFAR-1=Powinienem podejść...
+#----------------------------------------------------
+# Brok                                 
+PC05B_MINEBROKEN_TAKE_NEXT-1=Lepiej unikać uderzeń, gdy będę ją niósł...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming back
+# *****************************************************************
+# Brok                                 
+PC05B_BACK-1=Wszyscy zniknęli...?
+# Brok                                 
+PC05B_BACK-2=Muszę uważać. Jestem pewien, że się jeszcze spotkamy...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok isn't here. A rat checks the items that fall through the pipe (items people are getting rid of).
+# *****************************************************************
+# Kins                                 
+PC05B_ITEMFALL1-1=...
+# Normal                                 
+PC05B_ITEMFALL1-2=Śmieci.
+#----------------------------------------------------
+# Kins                                 
+PC05B_ITEMFALL2-1=Co to?
+#----------------------------------------------------
+# Kins                                 
+PC05B_ITEMFALL3-1=Kolejny złom.
+#----------------------------------------------------
+# Kins                                 
+PC05B_ITEMFALL_MINE-1=Hej! Wydaje śmieszne dźwięki...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok gets back items from the basket
+# *****************************************************************
+# Brok                                 
+PC05B_GETBACKITEMS-1=Zanim pójdę dalej, powinienem odzyskać moje rzeczy...
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET1-1=Więc wszystko, co wyrzucają obywatele, trafia tutaj...?
+# Brok                                 
+PC05B_BASKET1-2=Szczurasy muszą je przemycać.
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_FULL1-1=Dobra, najpierw wezmę swoje rzeczy.
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_FULLMINE-1=Na szczęście wybuch nic nie uszkodził!
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_EMPTY1-1=Zobaczmy...
+# Brok                                 
+PC05B_BASKET_EMPTY1-2=Stare, rozerwane ubrania... Potłuczone naczynie...
+# Brok                                 
+PC05B_BASKET_EMPTY1-3=Krzesło...? Jak ono się w ogóle zmieściło w rurę...?
+# Brok                                 
+PC05B_BASKET_EMPTY1-4=Hej, jest nawet robak!
+# Brok                                 
+PC05B_BASKET_EMPTY1-5=Pyszności!
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_EMPTY2-1=Jeszcze coś godnego uwagi...?
+# Brok                                 
+PC05B_BASKET_EMPTY2-2=Wątpię, ale warto sprawdzić.
+# Brok                                 
+PC05B_BASKET_EMPTY2-3=...
+# Brok                                 
+PC05B_BASKET_EMPTY2-4=... Tak! Jest reklama!
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_EMPTY3-1=Nie widzę nic nowego... Sprawdzę później.
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_PICKBACK1-1=Moment... Niektóre moje rzeczy są w tamtym koszu!
+#----------------------------------------------------
+# Brok                                 
+PC05B_BASKET_OTHERS-1=Em... Interesuje mnie podnoszenie rzeczy, a nie wyrzucanie ich.
+#----------------------------------------------------
+# Brok                                 
+PC05B_ADVERT_FLOOR-1=Przyjście tu było niesłychanie niebezpieczne, ale przynajmniej było warto!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Using remote control
+# *****************************************************************
+# Brok                                 
+PC05B_REMOTECONTROL_MINES1-1=...
+# Brok                                 
+PC05B_REMOTECONTROL_MINES1-2=Hej, to chyba wyłączyło miny!
+# Brok                                 
+PC05B_REMOTECONTROL_MINES1-3=To może nie trwać długo...
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_GUARDS1-1=Spadaj.
+#----------------------------------------------------
+# Chiefrat                                 
+PC05B_CHIEFRAT_FIGHTSTART1-1=Brać go!
+#----------------------------------------------------
+
+
+#----------------------------------------------------
+# Rat
+PC05B_CHAPTER6END-1=Idziesz gdzieś, krokodylku?
+# Brok
+PC05B_CHAPTER6END-2=Zejdź mi z drogi.
+
+
+
+COOP_PC05B_CHIEFRAT1-1=Ci goście chcieliby nas zabić przy każdej okazji.
+
+COOP_PC05B_CHIEFRAT1-2=Chociaż czasami mam dla nich litość...

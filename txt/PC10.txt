@@ -1,0 +1,1478 @@
+#-------------------------------
+#=SCHOOL INSIDE
+#-------------------------------
+
+#----------------------------
+#= End of day 1
+#----------------------------
+ID=PC10_BROK_ARRIVES
+T=(Pant, pant) I'm... here!...
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=OPPOSITE
+CONTEXT=End of day 1 - Brok arrives too late at Graff's science fair
+
+T=...
+W=GRAFF
+
+T=You're late.
+W=GRAFF
+
+T=... I know, but...
+W=BROK
+
+T=You see... I had a lot of trouble...
+W=BROK
+C1A=MAYBE
+
+T=So...
+W=BROK
+TEE=PC10_BROK_ARRIVES_GRAFFLEAVE
+C2=NONE
+
+T=Hey, wait!
+W=BROK
+C1A=SURPRISED
+
+T=Where are you going?
+W=BROK
+
+T=...
+W=BROK
+C1A=THINK
+
+T=6 PM...
+W=BROK
+
+T=6 new messages and 7 missed calls...
+W=BROK
+
+T=Oh no...
+W=BROK
+C1A=STUPID
+
+T=...
+W=BROK
+C1A=THINK
+
+T=Wait for me!...
+W=BROK
+C1A=SURPRISED
+TEE=PC10_BROK_ARRIVES_BROKLEAVE
+
+
+#----------------------------
+ID=PC10_BROK_ARRIVEONTIME
+T=(Pant, pant) I'm... here!...
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=SURPRISED
+CONTEXT=End of day 1 - Brok arrives on time
+
+T=Finally! I thought you'd never come!
+W=GRAFF
+C2A=GASP
+
+T=Quick! There's only a few minutes left!
+W=GRAFF
+TEN=PC10_BROK_ARRIVEONTIME2
+
+
+
+
+
+
+#----------------------------
+#= Begin day 2
+#----------------------------
+ID=PC10_TO_DOOR_DAY2
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Begin day 2 - Brok comes to see the Director and convince her to let Graff get the mark he deserves
+
+T=Erm... Where are all the students?
+W=BROK
+TEN=PC10_STORY140_DIRECTORTURNS
+
+T=In trial.
+W=DIRECTOR
+C2=DIRECTOR
+C2A=NORMAL
+TEN=PC10_STORY140_GODIRECTOR
+
+#----------------------------
+ID=PC10_TO_DOOR_DAY2B
+T=Trial? Where's the Director?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I am.
+W=DIRECTOR
+
+T=Wait... What?
+W=BROK
+C1A=SURPRISED
+
+T=Mister Brok, isn't it? Tutor of Graff?
+W=DIRECTOR
+
+T=Yeah...?
+W=BROK
+C1A=THINK
+
+T=We met a few years back, when you sought to have Graff join this program.
+W=DIRECTOR
+
+T=You pleaded his cause. I'm surprised you don't remember.
+W=DIRECTOR
+
+T=Sorry. My memory keeps failing these days.
+W=BROK
+C1A=MAYBE
+
+T=How lucky...
+W=DIRECTOR
+
+T=...?
+W=BROK
+C1A=THINK
+
+T=Anyway.
+W=DIRECTOR
+
+T=Graff is quite the exemplary student.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Which explains why we never had to meet during all these years.
+W=DIRECTOR
+
+T=Until now...
+W=DIRECTOR
+C2A=NORMAL
+
+T=Yeah, that's what I'd like to talk about.
+W=BROK
+C1A=TIRED
+
+T=Please. I can see you're stressed out.
+W=DIRECTOR
+
+T=Feel free to ask me any questions.
+W=DIRECTOR
+C2A=HAPPY
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_BROK_TOOFAR
+T=Can't talk from there.
+W=BROK
+A=THINK
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_LATE1
+T=So, the science fair contest became a final exam?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Correct. Last minute events forced us to move the exams period ahead of schedule.
+W=DIRECTOR
+TEN=PC10_DIRECTOR_FAIR_LATE1B
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_LATE1B
+T=He worked hard on this project.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I heard him at night, whispering, hammering, trying many ideas...
+W=BROK
+
+T=In the end, he got nada.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Just because I wasn't there on time.
+W=BROK
+
+T=This isn't fair. I'm the only one to blame!
+W=BROK
+
+T=Unfortunately, this is the rule. The responsibility between parents and children is shared.
+W=DIRECTOR
+C2A=ANGRY
+
+T=Statistics indicate badly raised parents will not instill enough good values to the next generation.
+W=DIRECTOR
+
+T=Being punctual for such events is an important criterion.
+W=DIRECTOR
+
+T=But your stats do not cover extreme urgency situations!
+W=BROK
+C1A=ANGRY
+
+T=Such as?...
+W=DIRECTOR
+
+T=Erm... Does "locked up in a cell" count?...
+W=BROK
+C1A=HAPPY
+
+T=A cell...?
+W=DIRECTOR
+C2A=NORMAL
+
+T=Long story. But the important part is...
+W=BROK
+C1A=THINK
+
+T=It wasn't my choice! Sometimes there are events out of anyone's control.
+W=BROK
+C1A=MAYBE
+
+T=I just can't live knowing I screwed up my boy's future.
+W=BROK
+C1A=HEARTBROKEN
+
+T=Please... forgive him and restore his lost points!
+W=BROK
+
+T=I'll do anything you want!
+W=BROK
+TEN=PC10_DIRECTOR_FAIR_NEXT
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_BROKEN1
+T=Seems like the fair didn't exactly go as planned, uh?...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Yes, it was certainly... eventful.
+W=DIRECTOR
+
+T=I'd like your version of the facts.
+W=BROK
+TEN=PC10_DIRECTOR_FAIR_CHECK2
+
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_CHEATED1
+T=Your son has cheated. He messed up the other inventions.
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=ANGRY
+
+T=Graff...? He'd never do that!
+W=BROK
+C1A=SURPRISED
+
+T=Do you have any proof?
+W=BROK
+C1A=THINK
+
+T=The state of the inventions speak for themselves. But that doesn't matter.
+W=DIRECTOR
+
+T=Rules stipulate a legal parent must be there during the science fair voting.
+W=DIRECTOR
+
+T=You weren't.
+W=DIRECTOR
+
+T=Listen...
+W=BROK
+TEN=PC10_DIRECTOR_FAIR_LATE1B
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_BROKEN1B
+T=I wasn't personally there when it happened, so I can only report what I've heard.
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Graff suddenly went mad for no apparent reason.
+W=DIRECTOR
+
+T=He wrecked all the inventions.
+W=DIRECTOR
+C2A=ANGRY
+
+T=No reason? That can't be true.
+W=BROK
+C1A=WONDER
+
+T=I've known Graff for a long time. He never does things without a reason.
+W=BROK
+C1A=THINK
+
+T=Actually, nobody does.
+W=BROK
+
+T=I agree. But here... the motive doesn't even matter.
+W=DIRECTOR
+
+T=What's done is done. You can't change the past.
+W=DIRECTOR
+
+T=Well, yes but...
+W=BROK
+
+T=I let Graff participate in today's trial until I could discuss the matter with you.
+W=DIRECTOR
+C2A=NORMAL
+
+T=However...
+W=DIRECTOR
+
+T=This kind of behavior is punished with a ban.
+W=DIRECTOR
+C2A=ANGRY
+
+T=A ban...! You can't do that!
+W=BROK
+C1A=SURPRISED
+
+T=The rules are the rules.
+W=DIRECTOR
+
+T=Ah, come on. You're the Director. 
+W=BROK
+C1A=READY
+
+T=Surely you can... bend those rules of yours. Just a bit?
+W=BROK
+
+T=Do you dare suggest...?
+W=DIRECTOR
+TEN=PC10_DIRECTOR_BLAMECHOICE
+
+
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_EXCUSEHIM1
+T=Listen.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=DIRECTOR
+C2A=NORMAL
+
+T=You said it yourself. Graff did tremendous efforts during all these years.
+W=BROK
+
+T=He's gone through so much. Since birth, this world has never been much tender with him.
+W=BROK
+C1A=DISAPPOINTED
+
+T=And yet, he's longing to make this convoluted world which rejected him better.
+W=BROK
+C1A=READY
+
+T=With the coming trials, our everyday and whatnot, he got nervous and...
+W=BROK
+
+T=Well, he snapped.
+W=BROK
+C1A=MAYBE
+
+T=Don't let him waste his future for one single mistake.
+W=BROK
+C1A=TIRED
+TEN=PC10_DIRECTOR_FAIR_NEXT
+
+
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_BLAMEME1
+T=Tell you what.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=You couldn't find the justification for his action. Well, I have a wild guess.
+W=BROK
+
+T=You've got the wrong culprit. I am. This is all my fault.
+W=BROK
+C1A=DISAPPOINTED
+
+T=He told me to arrive on time. I just should have been here... for him...
+W=BROK
+
+T=And in the grand scheme of things... He's no longer a Drumer because of me.
+W=BROK
+
+T=So, please... Give him a second chance. And put the blame on my shoulders. 
+W=BROK
+C1A=DOWN
+
+T=I'll do anything you want.
+W=BROK
+TEN=PC10_DIRECTOR_FAIR_NEXT
+
+
+
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR_NEXT
+T=...
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=This...
+W=DIRECTOR
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=This necklace of yours.
+W=DIRECTOR
+
+T=Get rid of it.
+W=DIRECTOR
+
+T=Uh?!
+W=BROK
+C1A=SURPRISED
+
+T=What do you mean?...
+W=BROK
+
+T=...
+W=DIRECTOR
+
+T=I guess it no longer matters now...
+W=DIRECTOR
+C1A=THINK
+C2A=SAD
+
+T=Just... Listen.
+W=DIRECTOR
+C2A=NORMAL
+
+T=There's something...
+W=DIRECTOR
+
+T=...something you can do for me.
+W=DIRECTOR
+
+T=Yeah! Anything! Tell me!
+W=BROK
+C1A=READY
+
+T=...
+W=DIRECTOR
+
+T=My son.
+W=DIRECTOR
+C2A=HAPPY
+
+T=The day he'll get his diploma. I'd like to give him a special present.
+W=DIRECTOR
+
+T=A present?...
+W=BROK
+C1A=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+
+#----------------------------
+ID=PC10_DIRECTOR_FAIR2
+T=(I probably shouldn't focus more on our bad actions.)
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+MOOD=THINK
+
+T=(Let's see about getting what "she" wants instead.)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_WELCOME1
+T=Erm... Err... Miss?...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Madam.
+W=DIRECTOR
+C2A=ANGRY
+
+T=Erm, yeah.
+W=BROK
+C1A=WONDER
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_WELCOME2
+T=Sorry to bother. I have a new question.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=DIRECTOR
+C2A=HAPPY
+
+T=I'm all ears.
+W=DIRECTOR
+
+T=(Ears... or microphones?)
+W=BROK
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_WELCOME3
+T=I'd like to ask...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=DIRECTOR
+C2A=HAPPY
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_GRAFF1
+T=So, where are Graff and the others?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=HAPPY
+
+T=The trial takes place in... another location.
+W=DIRECTOR
+
+T=Okay. Hopefully nothing dangerous?
+W=BROK
+C1A=WONDER
+
+T=We live in a dangerous world, Mister Brok. They need to be ready to face any eventuality.
+W=DIRECTOR
+
+T=That's... not very reassurring.
+W=BROK
+
+T=Don't worry. You'll be informed if anything happens.
+W=DIRECTOR
+
+T=...Urgh.
+W=BROK
+C1A=ANGRY
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_GRAFF2
+T=I'd like to hear your opinion about Graff.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=HAPPY
+
+T=He's generally a very good student, albeit reserved.
+W=DIRECTOR
+
+T=He just seems to lack trust in himself.
+W=DIRECTOR
+C2A=NORMAL
+
+T=I know...
+W=BROK
+C1A=TIRED
+
+T=When we get some free time together, I'll work this out with him.
+W=BROK
+
+T=Good.
+W=DIRECTOR
+C2A=HAPPY
+
+T=I was under the impression he didn't have much interaction with you.
+W=DIRECTOR
+C2A=NORMAL
+
+T=Well, ya know... I have a busy life.
+W=BROK
+C1A=THINK
+
+T=Let me remind you, Mister Brok. This is your job as a parent.
+W=DIRECTOR
+C2A=ANGRY
+
+T=Our establishment shouldn't be a substitute for parental education or forging personalities.
+W=DIRECTOR
+
+T=(As if I asked to be a parent...)
+W=BROK
+C1A=DOWN
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_HERSELF1
+T=Sorry for my... most likely embarassing curiosity but...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=DIRECTOR
+C2A=HAPPY
+
+T=You're a... female robot?
+W=BROK
+C1A=THINK
+
+T=Yes.
+W=DIRECTOR
+C2A=NORMAL
+
+T=I... I had never seen a robot talking and behaving exactly like a human before.
+W=BROK
+C1A=WONDER
+
+T=You're... different.
+W=BROK
+C1A=MAYBE
+
+T=I'm a special model...
+W=DIRECTOR
+C2A=HAPPY
+
+T=Are there others like yourself?
+W=BROK
+C1A=THINK
+
+T=Well...
+W=DIRECTOR
+
+T=Just one. Much more sophisticated than I am.
+W=DIRECTOR
+
+T=Actually, you've already met it.
+W=DIRECTOR
+C2A=NORMAL
+
+T=Did I?...
+W=BROK
+C1A=WONDER
+CLUE=CLUE_DIRECTOR_ANOTHER
+
+T=How can a robot like you exist?
+W=BROK
+
+T=I mean...
+W=BROK
+C1A=HAPPY
+
+T=Why is the Government not producing more bots like you, instead of stupid Tribots?
+W=BROK
+
+T=Very simple.
+W=DIRECTOR
+
+T=We weren't designed by the Government.
+W=DIRECTOR
+C1A=THINK
+C2A=HAPPY
+
+T=Our creator... left us after making us.
+W=DIRECTOR
+C2A=SAD
+
+T=The conception plans disappeared along with him.
+W=DIRECTOR
+
+T=How come no one has studied you, then?
+W=BROK
+
+T=...
+W=DIRECTOR
+
+T=Sorry. I cannot tell you more.
+W=DIRECTOR
+
+T=Okay...
+W=BROK
+
+T=That's a shame. You would think humanity would benefit from more advanced AIs.
+W=BROK
+
+T=(Or not... I can't help but feel uneasy. "She's" so creepy...)
+W=BROK
+C1A=MEH
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_HERSELF2
+T=Why were you designed as a female?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I mean... That's not a common thing for a bot, either.
+W=BROK
+C1A=WONDER
+
+T=You're aware of our civilization's Birth Ratio issue.
+W=DIRECTOR
+
+T=With so few females in the world, our creator probably wanted to offset this.
+W=DIRECTOR
+
+T=But you cannot give birth... Can you?
+W=BROK
+C1A=THINK
+
+T=...
+W=DIRECTOR
+
+T=Not anymore...
+W=DIRECTOR
+C2A=SAD
+
+T=(Anymore?...)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+
+T=I mean... No, of course not. A robot can never give birth to a human.
+W=DIRECTOR
+C2A=NORMAL
+
+T=Nature would never allow this.
+W=DIRECTOR
+
+T=Wait a minute...
+W=BROK
+C1A=WONDER
+
+T=I remember Graff saying he had occasional trouble with the Director's son.
+W=BROK
+
+T=But if you're the Director... Then...?
+W=BROK
+C1A=THINK
+
+T=Klay is... my adopted child.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Hmm... Makes sense.
+W=BROK
+
+T=(Totally not. How the heck can a robot raise a child?!)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_PRESENT1
+T=You mentioned... a present?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=HAPPY
+
+T=Yes.
+W=DIRECTOR
+
+T=I wish for a self-modifier chip.
+W=DIRECTOR
+
+T=Self... modifier?...
+W=BROK
+
+T=Robots and humans... We're not so different.
+W=DIRECTOR
+C2A=NORMAL
+
+T=Humans only use a very small portion of their brain.
+W=DIRECTOR
+
+T=Not only this. Most humans genes are actually composed of junk DNA. Traces of evolution left behind.
+W=DIRECTOR
+
+T=I don't get it...?
+W=BROK
+C1A=WONDER
+
+T=Well... All robots are created with a far broader range of capacities than what they're used for.
+W=DIRECTOR
+
+T=Despite being a custom model, I was built with the same base.
+W=DIRECTOR
+
+T=I can only perform the tasks I was designed for, with performance safe for my hardware.
+W=DIRECTOR
+
+T=You mean...
+W=BROK
+C1A=THINK
+
+T=I want to improve my capacities.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Is this allowed? Surely there's a reason why robots are limited after conception?
+W=BROK
+
+T=You're right.
+W=DIRECTOR
+C2A=NORMAL
+
+T=This is why... I need you to be secretive about this.
+W=DIRECTOR
+
+T=I... I want to make this a surprise for my son.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Hmm...
+W=BROK
+
+T=(I won't pretend to understand how she's going to use this "present for her son" but...)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(If finding this helps Graff... I couldn't care less.)
+W=BROK
+MOOD=THINK
+
+T=Alright. You got this!
+W=BROK
+C1A=HAPPY
+
+T=Good.
+W=DIRECTOR
+
+T=In the meantime, I'll consider yesterday's events having never have happened.
+W=DIRECTOR
+C1A=THINK
+
+T=If this can reassure you... This chip cannot bypass set permissions.
+W=DIRECTOR
+
+T=I'm not going to kill all humans on earth!
+W=DIRECTOR
+
+T=Oh... That's... nice.
+W=BROK
+C1A=HAPPY
+
+T=So? Any clue where I might find such a thing?
+W=BROK
+C1A=THINK
+
+T=Also... why me?...
+W=BROK
+
+T=As you can guess, this isn't some hardware piece you'll find at every corner store.
+W=DIRECTOR
+C2A=NORMAL
+
+T=You're a detective. I trust you.
+W=DIRECTOR
+
+T=Right.
+W=BROK
+C1A=MAYBE
+
+T=(Why does everyone see detectives as almighty beings?...)
+W=BROK
+C1A=READY
+MOOD=THINK
+TEN=PC10_SELFMODIFIER_OBJECTIVE
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_PRESENT2
+T=So, a self-modifier chip.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=HAPPY
+
+T=Ain't there many models? How will I know if I have the correct one?
+W=BROK
+
+T=Do not worry. I'm compatible with most Tribot peripherals... and chips.
+W=DIRECTOR
+
+T=If necessary, I can build the required adapters myself.
+W=DIRECTOR
+
+T=Good to know.
+W=BROK
+
+T=Wait. In that case...
+W=BROK
+C1A=STUPID
+
+T=Why you don't directly build the chip yourself?
+W=BROK
+C1A=WONDER
+
+T=Impossible. Humans designed us with a number of unbreakable failsafes.
+W=DIRECTOR
+C2A=NORMAL
+
+T=For example, no AI-capable bot can alter itself or another, nor create an item for this use.
+W=DIRECTOR
+
+T=As such, only a human can make them.
+W=DIRECTOR
+
+T=You must have heard about the "Bot Liberation" movement?
+W=DIRECTOR
+
+T=Those hippies fighting for robots' rights?
+W=BROK
+C1A=THINK
+
+T=Correct.
+W=DIRECTOR
+C2A=HAPPY
+
+T=Only a handful of Drumer humans participated in this, until they were disbanded years ago.
+W=DIRECTOR
+C2A=NORMAL
+
+T=They've designed chips offering us a variety of settings to tweak.
+W=DIRECTOR
+
+T=But not exhaustive. The creation of such chips still requires a human hand.
+W=DIRECTOR
+
+T=I understand... I think.
+W=BROK
+C1A=WONDER
+
+T=(A handful humans making these...? Looks like a chase for the Grail.)
+W=BROK
+MOOD=THINK
+
+T=(But I must succeed. For Graff.)
+W=BROK
+C1A=READY
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_PRESENT3
+T=Still no idea where I can find that chip?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Look for unofficial networks...
+W=DIRECTOR
+
+T=Hmm... Makes sense...
+W=BROK
+C1A=TIRED
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_THINK1
+T=(...)
+W=BROK
+C1=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(I had never seen a robot seem so... human?)
+W=BROK
+MOOD=THINK
+
+T=(Gives me the willies...)
+W=BROK
+C1A=WORRIED
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------
+ID=PC10_DIRECTOR_INV_DEFAULT1
+T=Take this!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I do not understand.
+W=DIRECTOR
+
+T=I... thought...
+W=BROK
+C1A=HAPPY
+
+T=Never mind.
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+#----------------------
+ID=PC10_DIRECTOR_INV_DEFAULT2
+T=Is this what you're looking for?
+W=BROK
+C1=BROK
+C1A=READY
+C2=DIRECTOR
+C2A=NORMAL
+
+T=No.
+W=DIRECTOR
+
+T=But... You want it, right?
+W=BROK
+C1A=WONDER
+
+T=No.
+W=DIRECTOR
+C2A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC10_DIRECTOR_INV_APARTMENTKEY
+T=How about...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I won't be living with you.
+W=DIRECTOR
+
+T=I didn't want to suggest that!...
+W=BROK
+C1A=SURPRISED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC10_DIRECTOR_INV_MONEY
+T=Here.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=DIRECTOR
+C2A=NORMAL
+
+T=You must be mistaken. I'm not asking for money.
+W=DIRECTOR
+
+T=Good! I don't have much.
+W=BROK
+C1A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC10_DIRECTOR_INV_CATFUR
+T=This is Graff's.
+W=BROK
+C1=BROK
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+
+T=And?...
+W=DIRECTOR
+
+T=Doesn't this convince you to take him back?
+W=BROK
+C1A=WONDER
+
+T=Not really.
+W=DIRECTOR
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC10_DIRECTOR_INV_PREDNORMAL
+T=Give this to your son!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=DIRECTOR
+C2A=NORMAL
+
+T=He doesn't like plushies.
+W=DIRECTOR
+C2A=ANGRY
+
+T=Darn. And here I thought I had a difficult boy!
+W=BROK
+C1A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC10_DIRECTOR_INV_REMOTECONTROL
+T=I order you!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Do everything as I say!
+W=BROK
+
+T=Uh?
+W=DIRECTOR
+
+T=Darn. Not working.
+W=BROK
+C1A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC10_DIRECTOR_INV_TRAMPPRESCR
+T=Are you a doctor? You can multitask, right?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I'm afraid not.
+W=DIRECTOR
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------------
+ID=PC10_DIRECTOR_EXIT_NOTYET
+T=(No!... There's more I need to ask.)
+W=BROK
+A=ANGRY
+MOOD=THINK
+TEN=PC10_DIRECTOR_CHOICES
+IT=1
+
+#----------------------------
+ID=PC10_DIRECTOR_EXIT1
+T=Thank you for your time.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=DIRECTOR
+C2A=HAPPY
+
+T=I'm at your service.
+W=DIRECTOR
+
+#----------------------------
+ID=PC10_DIRECTOR_EXIT2
+T=On my way. I'll get you what ya need!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=DIRECTOR
+C2A=HAPPY
+
+T=Alright.
+W=DIRECTOR
+
+
+
+#----------------------------
+ID=PC10_DIRECTOR_GOTCHIP
+T=Mister Detective.
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=HAPPY
+CONTEXT=If we get the chip from the hacker (by giving money or hitting him)
+
+T=Got what ya needed!
+W=BROK
+C1A=HAPPY
+
+T=Wonderful!
+W=DIRECTOR
+
+T=I've already performed the necessary steps for Graff's reinstatement.
+W=DIRECTOR
+C1A=THINK
+
+T=What?... You didn't wait for me to bring this back?
+W=BROK
+
+T=I had full trust in you.
+W=DIRECTOR
+
+T=You might be prone to constant doubts but you always complete your jobs.
+W=DIRECTOR
+
+T=No matter what or how.
+W=DIRECTOR
+
+T=Erm... Thanks...?
+W=BROK
+C1A=WONDER
+
+T=(Did she consult my past activity or something?)
+W=BROK
+MOOD=THINK
+
+T=Anyway... Glad this is solved.
+W=BROK
+C1A=HAPPY
+
+T=Hopefully Graff can get his diploma now.
+W=BROK
+
+T=May I remind you. He still needs to prove his worth through the trials.
+W=DIRECTOR
+C2A=ANGRY
+
+T=My boy won't disappoint. You'll see!
+W=BROK
+
+T=I'll cross my fingers for you.
+W=DIRECTOR
+C2A=NORMAL
+
+T=(Can she, now?...)
+W=BROK
+C1A=MEH
+MOOD=THINK
+
+T=Goodbye!
+W=BROK
+TEN=PC10_DIRECTOR_GOTCHIP2
+
+
+#----------------------------
+ID=PC10_DIRECTOR_GOTCHIP_ALTERNATIVE
+T=Mister Detective.
+W=DIRECTOR
+C1=BROK
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Well... I managed to find the chip you needed!
+W=BROK
+C1A=ALRIGHT
+
+T=Wonderful!
+W=DIRECTOR
+C2A=HAPPY
+
+T=Graff shall receive extra points.
+W=DIRECTOR
+TEN=PC10_DIRECTOR_GOTCHIP_ALTERNATIVENEXT
+
+
+#----------------------------
+ID=PC10_DIRECTOR_HIT1
+T=What are you doing?!
+W=DIRECTOR
+C1=BROK
+C1A=SURPRISED
+C2=DIRECTOR
+C2A=ANGRY
+CONTEXT=Hitting the Director
+
+T=Sorry!... That's... an accident!
+W=BROK
+C1A=HAPPY
+
+#----------------------------
+ID=PC10_DIRECTOR_HIT2
+T=No, no, no.
+W=DIRECTOR
+C1=BROK
+C1A=STUPID
+C2=DIRECTOR
+C2A=ANGRY
+
+T=Do this one more time and I'll have both of you banished from this country.
+W=DIRECTOR
+
+T=Me and Graff?... Can you really do that?
+W=BROK
+C1A=WONDER
+
+T=Yes.
+W=DIRECTOR
+
+#----------------------------
+ID=PC10_DIRECTOR_HIT3
+T=Last warning!
+W=DIRECTOR
+C1=BROK
+C1A=MOCK
+C2=DIRECTOR
+C2A=ANGRY
+
+T=Now I understand why Graff is such a troubled boy.
+W=DIRECTOR
+
+
+#----------------------------
+ID=PC10_DIRECTOR_HIT4
+T=Very well. You made your choice.
+W=DIRECTOR
+C1=BROK
+C1A=COCKY
+C2=DIRECTOR
+C2A=ANGRY
+
+T=A patrol is coming to escort you and your son to the closest frontier.
+W=DIRECTOR
+
+T=Oops!
+W=BROK
+C1A=CONFUSED
+TEN=PC10_DIRECTOR_GAMEOVER
+
+#----------------------------
+#= Day 3
+#----------------------------
+ID=PC10_BROK_STUBOT_ATTACKS1
+T=Uh... Hello?
+W=BROK
+A=WONDER
+TEN=PC10_STUBOT_CHECKATTACK
+CONTEXT=Day 3 - Player can visit the school but no one's there except Stubot - which, like all Tribots, became crazy and attack Brok
+
+
+#----------------------------
+ID=PC10_STUBOT_HELLO
+T=Hello
+W=STUBOT
+C1=BROK
+C1A=THINK
+C2=STUBOT
+C2A=NORMAL
+
+T=School is closed
+W=STUBOT
+
+T=Oh... Okay.
+W=BROK
+TEN=PC10_STUBOT_HELLO_NEXT
+
+#----------------------------
+ID=PC10_BROK_STUBOT_ATTACKS2
+T=...
+W=STUBOT
+C1=BROK
+C1A=ANGRY
+C2=STUBOT
+C2A=NORMAL
+
+T=Human
+W=STUBOT
+
+T=Prepare to die
+W=STUBOT
+TEN=PC10_STUBOT_ATTACKS2
+
+#----------------------------
+ID=PC10_BROK_STUBOT_ATTACKS3
+T=The heck?! That school bot... It's ready to attack me!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=STUBOT
+C2A=NORMAL
+TEN=PC10_BROK_STUBOT_CHOICE
+
+
+#----------------------------
+ID=PC10_BROK_STUBOT_FLEE1
+T=Phew... It's not following me.
+W=BROK
+A=TIRED
+COMM=Fleeing away
+
+T=What was that all about?...
+W=BROK
+A=THINK
+TEN=PC10_BROK_STUBOT_FLEE2
+
+#----------------------------
+ID=PC10_BROK_STUBOT_DEAD
+T=...
+W=BROK
+A=TIRED
+
+
+#----------------------------
+ID=COOP_PC10_DIRECTOR1
+T=From psychiatrist to school bot.
+T=What a carreer!
+
+###############################################
+# PROOFREAD - jblaker - 26/06/2019
+# EXPRESSIONS   ZedOjisan 14/08/2019
+##############################################

@@ -1,0 +1,1273 @@
+﻿#-----------------------------------------
+#=CHAPTER 5 TEXT POTENTIALLY USED EVERYWHERE
+#-----------------------------------------
+
+#----------------------------------------------------
+ID=CH5_OTT_OUTSIDEMUSEUM
+T=Should we go to the museum?...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+TEN=CH5_OTT_CHOICES
+IT=1
+CONTEXT=Day 3 - Graff talks to Ott during the Museum exam
+
+
+
+#--------------------------
+ID=CH5_OTT_IDEA1
+T=Any ideas?
+W=GRAFF
+C1=GRAFF
+C1A=DISDAIN
+C2=OTT
+C2A=NORMAL
+TEN=CH5_OTT_RELATIONSHIP
+
+T=You've noticed those weird blue symbols?
+W=OTT
+C2A=WONDER
+
+T=They're pretty much everywhere...
+W=OTT
+
+T=Yeah. Seems like an ancient language.
+W=GRAFF
+C1A=FRIENDLY
+
+T=Must be important somehow...
+W=OTT
+TEN=CH5_OTT_CHOICES
+IT=1
+
+#--------------------------
+ID=CH5_OTT_IDEA2
+T=I've gone blank.
+W=GRAFF
+C1=GRAFF
+C1A=STUPID
+C2=OTT
+C2A=SAD
+TEN=CH5_OTT_RELATIONSHIP
+
+T=What about that triangular stone thing?
+W=OTT
+C1A=THINK
+C2A=NORMAL
+
+T=It's some kind of game. You pick a symbol and then you must find it again... hidden in plain sight.
+W=OTT
+
+T=I tried but I suck at this...
+W=OTT
+
+T=There's an idea.
+W=GRAFF
+TEN=CH5_OTT_CHOICES
+IT=1
+
+#--------------------------
+ID=CH5_OTT_IDEA3
+T=I'm not sure we'll win this trial...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=SAD
+
+T=Don't despair!
+W=OTT
+C2A=HAPPY
+
+T=Let's just try thoroughly checking everything.
+W=OTT
+C2A=NORMAL
+
+T=It's also possible the puzzles extend outside of here...
+W=OTT
+C2A=WONDER
+
+T=Yeah... Knowing the Director, I wouldn't be surprised if she would try and trick us.
+W=GRAFF
+C1A=THINK
+TEN=CH5_OTT_CHOICES
+IT=1
+
+
+#--------------------------
+ID=CH5_OTT_QUIT1
+T=Let's stop here.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=OTT
+C2A=WONDER
+
+T=What?... Are you sure?
+W=OTT
+
+T=There's still time and this trial is crucial.
+W=OTT
+C2A=OPPOSITE
+TEN=CH5_OTT_QUITCHOICES
+IT=1
+
+#--------------------------
+ID=CH5_OTT_QUIT_NO
+T=You're right... I'll keep on searching.
+W=GRAFF
+C1=GRAFF
+C1A=DISDAIN
+C2=OTT
+C2A=HAPPY
+TEN=CH5_OTT_CHOICES
+IT=1
+
+#--------------------------
+ID=CH5_OTT_QUIT_YES
+T=Sorry. I'm getting a headache, so I won't be very useful anyway.
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=OPPOSITE
+
+T=Too bad...
+W=OTT
+
+T=But if you don't mind, I'll keep on searching myself.
+W=OTT
+
+T=Okay. I'll just rest a little until the time is out.
+W=GRAFF
+C1A=TURN
+TEN=CH5_OTT_GIVEUP
+
+#--------------------------
+ID=CH5_OTT_CHAT1
+T=So! You didn't tell me.
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=NORMAL
+TEN=CH5_OTT_RELATIONSHIP
+
+T=How did your trial go yesterday evening?
+W=GRAFF
+
+T=Well... It was okay.
+W=OTT
+
+T=Stubot isn't exactly the perfect partner but I managed.
+W=OTT
+
+T=At one point he received a firmware update.
+W=OTT
+C2A=SURPRISED
+
+T=In the middle of the trial! I lost a few precious minutes because of it.
+W=OTT
+
+T=That's not fair!
+W=GRAFF
+C1A=GASP
+
+T=Still better than what you experienced with Klay, apparently...
+W=OTT
+C2A=OPPOSITE
+
+T=Yeah...
+W=GRAFF
+C1A=SAD
+
+T=And those lasers... Urgh.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Lasers?
+W=OTT
+C2A=WONDER
+
+T=You didn't have these?
+W=GRAFF
+C1A=MEH
+
+T=Weren't you in the bunker? With the Tribots?
+W=GRAFF
+
+T=Bunker?... Tribots? No, I wasn't.
+W=OTT
+
+T=That's weird... We had different trials?
+W=GRAFF
+C1A=THINK
+
+T=Must be. Sounds like yours was pretty dangerous...
+W=OTT
+C2A=SAD
+
+T=You don't say...
+W=GRAFF
+TEN=CH5_OTT_CHOICES
+IT=1
+
+#--------------------------
+ID=CH5_OTT_THINK1
+T=(He's trusting me... I got to do my best.)
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+MOOD=THINK
+TEN=CH5_OTT_CHOICES
+IT=1
+
+#--------------------------
+ID=CH5_OTT_EXIT1
+T=We can do this!
+W=OTT
+C1=GRAFF
+C1A=HAPPY
+C2=OTT
+C2A=HAPPY
+
+T=Right!
+W=GRAFF
+
+#--------------------------
+ID=CH5_OTT_EXIT2
+T=I'll resume my search.
+W=GRAFF
+C1=GRAFF
+C1A=DISDAIN
+C2=OTT
+C2A=NORMAL
+
+
+#--------------------------
+ID=CH5_OTT_EXIT3
+T=Let's keep looking!
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=NORMAL
+
+
+#----------------------
+
+ID=CH5_OTT_INV_DEFAULT1
+T=Hmm...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=Do you think this could be used to solve a puzzle?
+W=OTT
+
+T=Gotta try.
+W=GRAFF
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+
+ID=CH5_OTT_INV_DEFAULT2
+T=Maybe I should get rid of this.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=OTT
+C2A=SURPRISED
+
+T=Don't!
+W=OTT
+
+T=Maybe it will come in handy later.
+W=OTT
+C2A=HAPPY
+
+T=Well, you're not the one carrying all this stuff.
+W=GRAFF
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+
+#----------------------------------------------------
+#= Running out of time for the last trial
+#----------------------------------------------------
+ID=CH5_TIMEROUT1
+T=Oh no! Look at the time!
+W=OTT
+C1=GRAFF
+C1A=GASP
+C2=OTT
+C2A=SURPRISED
+CONTEXT=Day 3 - Running out of time for the last trial
+
+T=Darn...
+W=GRAFF
+C1A=SAD
+C2A=SAD
+
+T=We did our best...
+W=GRAFF
+TEN=CH5_MUSEUM_OVER_FADEOUT
+
+
+#--------------------------
+ID=CH5_MUSEUM_OVER_FOUND1B
+T=(Will this be enough to get our diplomas?...)
+MOOD=THINK
+BVOICE=GRAFF
+
+T=(Obviously... I have that feeling in my guts again.)
+MOOD=THINK
+TEN=CH5_STORY250_COMPLETE_GRAFF
+
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_WELCOME1
+T=Can we talk?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+CONTEXT=Day 3 - Brok talks with Dr Gherkin
+
+T=O-of course.
+W=GHERKIN
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_WELCOME2
+T=Hey!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GHERKIN
+C2A=WORRIED
+
+T=W-what?... Where are they?
+W=GHERKIN
+
+T=Bots? No, just wanna chat.
+W=BROK
+C1A=WONDER
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_HIMSELF1
+T=Been wondering for a while...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=Have we met somewhere? I could swear I've seen you before.
+W=BROK
+C1A=WONDER
+
+T=That's... possible. I... Erm...
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=I worked with your wife.
+W=GHERKIN
+
+T=You did?...
+W=BROK
+C1A=THINK
+
+T=Of course. That was years ago, before I became part of...
+W=GHERKIN
+C2A=HAPPY
+
+T=Erm... I mean, there's only one pharmaceutical company in this country after all.
+W=GHERKIN
+C2A=WORRIED
+
+T=Huh-huh.
+W=BROK
+TEN=CH5_GHERKIN_HIMSELF_CHECK
+CLUE=CLUE_GHERKIN_PARTOF
+
+#--------------------------------------
+ID=CH5_GHERKIN_HIMSELF1B
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_HIMSELF2
+T=That's peculiar. You seem like a desk type of guy, not the one who would go on a mission.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GHERKIN
+C2A=NORMAL
+
+T=And that's why I need you!
+W=GHERKIN
+C2A=ANGRY
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_SITUATION1
+T=What exactly is happening?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=GHERKIN
+C2A=NORMAL
+
+T=The pills shortage?
+W=GHERKIN
+
+T=I don't know much. The bots run the factory and they started going crazy.
+W=GHERKIN
+C2A=ANGRY
+
+T=In the meantime, the Pipe-Pills all over the Slums got damaged so whatever's in stock wouldn't be transferred.
+W=GHERKIN
+
+T=Then it's not just one problem to take care of...
+W=BROK
+C1A=TIRED
+
+T=I'm afraid so.
+W=GHERKIN
+C2A=HAPPY
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_SITUATION2
+T=What does it take to fix those Pipes?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+COMM=He's talking about Pipe Pills
+
+T=It's... technically complex.
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=Only an expert like myself can fix them.
+W=GHERKIN
+
+T=Obviously...
+W=BROK
+C1A=MEH
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_SITUATION3
+T=Ya think I could help to...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=GHERKIN
+C2A=NORMAL
+
+T=I'd rather not. I might lose my concentration.
+W=GHERKIN
+C2A=ANGRY
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_LIA1
+T=Tell me more about Lia.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GHERKIN
+C2A=NORMAL
+
+T=Her abrupt passing was a shock. She was a very valuable asset.
+W=GHERKIN
+
+T=I hope her job didn't cause her demise.
+W=GHERKIN
+C2A=ANGRY
+
+T=What do you mean?
+W=BROK
+C1A=THINK
+
+T=I-I'm not supposed to say... My contract has a non-disclosure agreement which covers... 
+W=GHERKIN
+C2A=WORRIED
+
+T=Tell me! Now!
+W=BROK
+C1A=READY
+
+T=Oh... I... 
+W=GHERKIN
+
+T=I guess it's fine now... It's been almost six years after all.
+W=GHERKIN
+
+T=Not long before the accident, she made a discovery.
+W=GHERKIN
+C2A=NORMAL
+
+T=What discovery?...
+W=BROK
+
+T=I don't know. That's all she said in her message.
+W=GHERKIN
+
+T=It could have been anything. A breakthrough or a minor observation...
+W=GHERKIN
+
+T=Who knows. After all her job was to find stuff.
+W=GHERKIN
+
+T=Unfortunately, I think this secret died with her.
+W=GHERKIN
+
+T=Why is this the first time I've heard about that?
+W=BROK
+
+T=After the city power shutdown, all data was lost. Including this message.
+W=GHERKIN
+C2A=ANGRY
+
+T=I only remembered this after the investigation. It didn't seem so important.
+W=GHERKIN
+
+T=We'll talk more after we're done, doctor.
+W=BROK
+C1A=MAYBE
+
+T=B-but I don't know anymore...
+W=GHERKIN
+C2A=WORRIED
+
+T=I said we will.
+W=BROK
+C1A=ANGRY
+
+T=Alright...
+W=GHERKIN
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_LIA2
+T=(I have many questions but now is hardly a good time to give him the third degree)
+W=BROK
+A=MAYBE
+MOOD=THINK
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_THINK1
+T=(Is that guy hiding something from me?...)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+T=(Oh well. He's my only clue to save the Slums. And get paid!)
+W=BROK
+A=MEH
+MOOD=THINK
+TEN=CH5_GHERKIN_CHOICES
+IT=1
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_DEFAULT1
+T=Can you analyze this?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=I'm afraid I don't have the appropriate equipment.
+W=GHERKIN
+
+T=But from my perspective this is nothing out of the ordinary.
+W=GHERKIN
+
+T=You wouldn't say that if you knew where it's been.
+W=BROK
+C1A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_DEFAULT2
+T=Take this.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GHERKIN
+C2A=NORMAL
+
+T=What for?... Will this help us on the streets?
+W=GHERKIN
+
+T=Erm... I guess it's worth a try.
+W=BROK
+C1A=WONDER
+
+T=Keep it.
+W=GHERKIN
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_MONEY
+T=We still have our agreement, right?...
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GHERKIN
+C2A=NORMAL
+
+T=Sure. Ten thousand.
+W=GHERKIN
+
+T=(That's like... ten times more than I usually get a month)
+W=BROK
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_APARTMENTKEY
+T=We should hide at my home!
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=NORMAL
+
+T=Are you forgetting our mission? Who's going to save us if we don't?
+W=GHERKIN
+C2A=ANGRY
+
+T=Oh... right.
+W=BROK
+C1A=DISAPPOINTED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_MAGNIFY
+T=See? I'm a detective!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GHERKIN
+C2A=NORMAL
+
+T=I know. I've read all about your career online.
+W=GHERKIN
+C2A=HAPPY
+
+T=But a magnifying glass doesn't lie!
+W=BROK
+C1A=MOCK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_PENDANT
+T=Hmm... I believe your wife wore one like this.
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=NORMAL
+
+T=That's the one.
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_POLLUTIONPILL
+T=Where did you get this one?
+W=GHERKIN
+C1=BROK
+C1A=THINK
+C2=GHERKIN
+C2A=WORRIED
+
+T=In the Drums.
+W=BROK
+
+T=I should have guessed... They still have stock over there.
+W=GHERKIN
+C2A=NORMAL
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#--------------------------------------
+ID=CH5_GHERKIN_INV_TRAMPPRESCR
+T=You're a doctor, right?...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=GHERKIN
+C2A=NORMAL
+
+T=I need that medical prescription cancelled... Or something like that.
+W=BROK
+C1A=MAYBE 
+
+T=Renewed?
+W=GHERKIN
+
+T=Is this yours?
+W=GHERKIN
+
+T=No, a friend who desperately needs help.
+W=BROK
+
+T=Then bring me to them. Medicine is personal.
+W=GHERKIN
+
+T=Alright! Let's do this!
+W=BROK
+C1A=READY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_EXIT1
+T=I'll be around.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=GHERKIN
+C2A=WORRIED
+
+T=Stay close, please!...
+W=GHERKIN
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_EXIT2
+T=Enough chit-chat. Back to work!
+W=BROK
+C1=BROK
+C1A=READY
+C2=GHERKIN
+C2A=WORRIED
+
+T=You're enjoying this?
+W=GHERKIN
+C2A=ANGRY
+
+T=You must have suicidal tendencies. There are pills you can take to...
+W=GHERKIN
+SKIPEND=1
+
+T=No, thank you.
+W=BROK
+C1A=MEH
+
+#--------------------------------------
+ID=CH5_GHERKIN_EXIT3
+T=Don't move.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GHERKIN
+C2A=WORRIED
+
+T=I won't!
+W=GHERKIN
+C2A=HAPPY
+
+#----------------------------------------------------
+#= Phone calls
+#----------------------------------------------------
+ID=CH5_CALL_GRAFF_STORY210
+T=Hey!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+CONTEXT=Various phone calls or attempts
+
+T=Hi.
+W=GRAFF
+
+T=How's it going?
+W=BROK
+C1A=READY
+
+T=In the middle of my trial... I don't have much time left.
+W=GRAFF
+C2A=TURN
+
+T=Oh, sorry.
+W=BROK
+C1A=WONDER
+
+T=Lemme know if I can help!
+W=BROK
+C1A=HAPPY
+
+T=Sure.
+W=GRAFF
+C2A=FRIENDLY
+
+T=Thanks for calling... I appreciate it.
+W=GRAFF
+
+T=No problem, kiddo.
+W=BROK
+TEN=INTERFACE_CALL_END
+
+
+
+
+#----------------------------------------------------
+ID=CH5_CALL_WES_STORY210
+T=...
+W=BROK
+A=THINK
+
+T=Guess he's too busy with everything that's going on in this city.
+W=BROK
+A=OPPOSITE
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+ID=CH5_CALL_SHAY_STORY210
+T=...
+W=BROK
+A=THINK
+
+T=She warned me she wouldn't be available today.
+W=BROK
+TEN=INTERFACE_CALL_END
+
+
+
+
+
+#----------------------------------------------------
+#= Graff calls
+#----------------------------------------------------
+ID=CH5_GRAFF_CALL_BROK_STORY270
+T=Hey, kiddo!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=GRAFF
+C2A=MEH
+
+T=What's going on?
+W=BROK
+C1A=THINK
+
+T=Just...
+W=GRAFF
+
+T=...making sure you're reachable.
+W=GRAFF
+C2A=OPPOSITE
+
+T=Are you okay? You took your pill?
+W=BROK
+
+T=Yeah. No worries.
+W=GRAFF
+C2A=MEH
+
+T=Keep looking for clues.
+W=GRAFF
+
+T=Sure!
+W=BROK
+
+T=Take care.
+W=BROK
+
+T=You too.
+W=GRAFF
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+#Calling Ott while he's just next to us
+ID=CH5_GRAFF_CALL_OTT
+T=Hey, I'm right here!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SURPRISED
+
+T=Oh... Sorry, I forgot.
+W=GRAFF
+C1A=STUPID
+
+T=I understand. The stress of the final trial...
+W=OTT
+C2A=HAPPY
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH5_GRAFF_CALL_KLAY
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=No point. He won't re...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Hey.
+W=KLAY
+C1A=GASP
+C2=KLAY
+C2A=COCKY
+
+T=Klay?!
+W=GRAFF
+
+T=Who else?
+W=KLAY
+C2A=NORMAL
+
+T=Oh, don't tell me. You called the wrong number!
+W=KLAY
+C2A=BAD
+
+T=N... No.
+W=GRAFF
+
+T=Just... wanted to know where you are.
+W=GRAFF
+C1A=TURN
+
+T=Sorry. Won't tell.
+W=KLAY
+C2A=COCKY
+
+T=This is our final trial. It's too important!
+W=KLAY
+
+T=Okay. Never mind.
+W=GRAFF
+
+T=Good luck.
+W=GRAFF
+
+T=Yeah. May the best win.
+W=KLAY
+C2A=HAPPY
+TEN=INTERFACE_CALL_END
+
+
+
+
+#---------------------------------
+#= Dr. Gherkin calls Brok
+#---------------------------------
+ID=CH5_GHERKIN_CALLS1
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=A call... Someone I don't know...
+W=BROK
+TEN=PC02_GHERKIN_TAKEPHONE
+
+T=Hello?
+W=BROK
+C1A=WONDER
+C2=GHERKIN
+C2A=NORMAL
+TEN=PC02_GHERKIN_MUSIC
+
+T=I need your help! Urgently!
+W=GHERKIN
+C2A=WORRIED
+
+T=Hold on. Who are you?
+W=BROK
+
+T=Doctor Gherkin. From the pharmaceutical factory!
+W=GHERKIN
+
+T=The Tribots have gone mad!
+W=GHERKIN
+
+T=I swear, they're after me!
+W=GHERKIN
+
+T=A Drumer, huh...
+W=BROK
+A=MEH
+C1A=ALRIGHT
+
+T=What do you need me for?
+W=BROK
+C1A=MOCK
+
+T=Ohhh... Can't I just explain when you're here?...
+W=GHERKIN
+
+T=Sorry. I'm already on an investigation, so...
+W=BROK
+C1A=MEH
+
+T=Wait!
+W=GHERKIN
+C1A=CONFUSED
+
+T=I'm the only one who can fix the situation in the Slums.
+W=GHERKIN
+C2A=ANGRY
+
+T=The pills shortage?...
+W=BROK
+C1A=SURPRISED
+
+T=That one.
+W=GHERKIN
+
+T=I can fix the Pipe-Pills. But for this I need to remain alive!
+W=GHERKIN
+C2A=WORRIED
+CLUE=CLUE_GHERKIN_FIXES
+
+T=That's fantastic news!
+W=BROK
+
+T=...Well, not that you're in danger but...
+W=BROK
+C1A=WONDER
+
+T=It's my job. No other Drumer would agree to accompany me to this dump...
+W=GHERKIN
+
+T=Well, no offense.
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=Nope, it's a dump alright.
+W=BROK
+C1A=ALRIGHT
+
+T=I just think you're overreacting. Just a liiiitle bit.
+W=BROK
+
+T=I'm not afraid of the Slums' inhabitants...
+W=GHERKIN
+C1A=THINK
+C2A=ANGRY
+
+T=But those bots! They're...
+W=GHERKIN
+
+T=Oh gosh...
+W=GHERKIN
+C2A=WORRIED
+
+T=There's one in the corner looking at me... I can see its shadow!...
+W=GHERKIN
+
+T=Why me, though?
+W=BROK
+
+T=I took the time to study your history in the last ten minutes. 
+W=GHERKIN
+
+T=You've got a track record for street fights. You sure can defend yourself!
+W=GHERKIN
+C2A=HAPPY
+
+T=Erm... I'm flattered...
+W=BROK
+C1A=HAPPY
+
+T=Besides, you're the only one who replied to my calls...
+W=GHERKIN
+C2A=EMBARRASSED
+
+T=Oh.
+W=BROK
+C1A=DOWN
+
+T=Please! I'm begging you!
+W=GHERKIN
+C2A=WORRIED
+
+T=How much do you want?
+W=GHERKIN
+
+T=Two thousands Unis? Five?
+W=GHERKIN
+
+T=Five... thousand?!
+W=BROK
+C1A=SURPRISED
+
+T=What? Not enough?
+W=GHERKIN
+C2A=ANGRY
+
+T=Okay, okay! Make it ten then!
+W=GHERKIN
+C2A=NORMAL
+
+T=Ten...!!!
+W=BROK
+
+T=Deal!
+W=BROK
+C1A=READY
+
+T=Thank heavens!
+W=GHERKIN
+C2A=HAPPY
+
+T=Please hurry! I'll be waiting for you in front of the factory.
+W=GHERKIN
+C2A=WORRIED
+
+T=[...]
+C2=NONE
+
+T=Oh, man!
+W=BROK
+C1A=HAPPY
+
+T=Just escorting that guy from one place to another and get ten grand?
+W=BROK
+
+T=This is exactly what I needed. A lead and money!
+W=BROK
+C1A=MOCK
+
+T=Did the tide finally turn?
+W=BROK
+C1A=COCKY
+COMM=Talking about luck
+TEN=PC02_GHERKIN_LOCATION
+
+
+#--------------------------------------
+ID=CH5_GHERKIN_PIPEPILL1
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Day 3 - Checking Pipe Pill with Dr Gherkin
+
+T=Nothin'? Isn't it supposed to be fixed?
+W=BROK
+C1A=ANGRY
+
+T=I-I never said it would work right after.
+W=GHERKIN
+C2=GHERKIN
+C2A=EMBARRASSED
+
+T=Give it some time for the stocks to transfer.
+W=GHERKIN
+
+T=Hmm. That better work.
+W=BROK
+CLUE=CLUE_PILL_NOTWORK
+
+
+
+
+#----------------------
+ID=CH5_GHERKIN_HIT1
+T=Watch out!
+W=GHERKIN
+A=NORMAL
+NB=1
+D=120
+
+#----------------------
+ID=CH5_GHERKIN_HIT2
+T=I... I'm scared!
+W=GHERKIN
+A=NORMAL
+NB=1
+D=120
+
+#----------------------
+ID=CH5_GHERKIN_HIT3
+T=Help! I need protection... From you!
+W=GHERKIN
+A=NORMAL
+NB=1
+D=120
+
+#----------------------
+ID=CH5_GHERKIN_HIT4
+T=I'm starting to believe I was safer with the Tribots...
+W=GHERKIN
+A=NORMAL
+NB=1
+D=180
+
+
+
+#----------------------
+ID=CH5_GHERKIN_FOLLOWS1
+T=Mister Brok?...
+W=GHERKIN
+A=WORRIED
+NB=1
+D=60
+
+
+#----------------------
+ID=CH5_GHERKIN_FOLLOWS2
+T=What are we doing here...?
+W=GHERKIN
+A=WORRIED
+NB=1
+D=60
+
+###############################################
+# PROOFREAD - jblaker - 16/08/2019
+###############################################

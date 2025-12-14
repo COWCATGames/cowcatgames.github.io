@@ -1,0 +1,1955 @@
+#-------------------------------
+#=SLUM OUTSIDE BROK SECTOR
+#-------------------------------
+
+
+#----------------------
+#= Stove
+#----------------------
+ID=PC03_STOVE1
+T=That's warm.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+CONTEXT=The Tramp's stove
+
+T=The weather is rather nice but you know... Old people are always cold.
+W=TRAMP
+C2A=WONDER
+
+T=Don't say that! You're not old.
+W=BROK
+C1A=DOWN
+
+T=For living here... Yes I am.
+W=TRAMP
+C2A=DOWN
+
+#----------------------
+ID=PC03_STOVE2
+T=Nice and warm.
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC03_STOVE_AFTERDEATH
+T=No way! I'm not stealing this...
+W=BROK
+A=DOWN
+COMM=The tramp is dead or gone
+
+T=Even if he doesn't need it anymore... I... just can't...
+W=BROK
+A=HEARTBROKEN
+
+#----------------------
+#= Toy
+#----------------------
+ID=PC03_TOY1
+T=Oh! I remember this! Graff had a similar one when we first met!
+W=BROK
+A=HAPPY
+CONTEXT=Brok takes a toy
+
+T=It's an inflatable cuddly toy. You just have to wet it a little and a few seconds later it gets all round like a balloon!
+W=BROK
+A=THINK
+
+T=Maybe Graff will want one again!
+W=BROK
+A=READY
+TEN=PC03_TOY_TAKE
+
+#----------------------
+ID=PC03_TOY2
+T=Graff always carried his with him. I wonder what happened to it?
+W=BROK
+A=THINK
+
+T=And... How come I totally forgot it existed?
+W=BROK
+A=WONDER
+
+T=I'm afraid someday I might even forget my name...
+W=BROK
+A=DOWN
+
+
+#----------------------
+#= Before fight
+#----------------------
+ID=PC03_TRAMP_RAT_DIALOG1
+T=...don't play with us. Da boss won't like it.
+W=KINS
+C1=TRAMP
+C1A=DOWN
+C2=KINS
+C2A=ANGRY
+CONTEXT=Before the first fight with rats
+
+T=So hand over da moolah!
+W=KINS
+C2A=READY
+
+T=Mister Squealer. Did you take a good look?
+W=TRAMP
+C1A=DOWN
+
+T=Do you really expect someone like me to have that kind of money...?
+W=TRAMP
+C1A=WONDER
+
+T=Who cares! Dem's da rules. You make a deal, you pay!
+W=KINS
+C2A=HAPPY
+
+T=Or else...
+W=KINS
+C2A=ANGRY
+
+T=Oh, well. I guess this is gonna hurt then.
+W=TRAMP
+C1A=DOWN
+TEN=PC03_TRAMP_REVERTCAMERA
+
+#----------------------
+ID=PC03_TRAMP_RAT_FLEE1
+T=Go ahead, Dart.
+W=KINS
+C1=TRAMP
+C1A=DOWN
+C2=KINS
+C2A=ANGRY
+C3=DART
+C3A=NORMAL
+COMM=Rats kill the Tramp if Brok goes away
+
+T=Yer done for, old man!
+W=DART
+C3A=READY
+
+T=OUCH!!!
+W=TRAMP
+A=WONDER
+C1_EYESHUT=1
+SOUND=fall_crashinto1
+TEN=PC03_TRAMP_DISAPPEAR
+
+T=...
+W=TRAMP
+
+T=It's over.
+W=KINS
+C1=NONE
+C2A=NORMAL
+
+T=Quick. Gotta scout before da Body Recycling comes ta pick it up.
+W=KINS
+C2A=SURPRISED
+TEN=PC03_FLEE2
+
+
+#----------------------
+ID=PC03_TRAMP_RAT_DIALOG2
+T=Hey! What's your problem?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=KINS
+C2A=WONDER
+C4=TRAMP
+C4A=DOWN
+CONTEXT=Brok saves the Tramp
+
+T=Leave the old man alone!
+W=BROK
+
+T=None of yer business. Get the heck outta here!
+W=KINS
+C2A=ANGRY
+
+T=As fer you...
+W=KINS
+C2A=NORMAL
+
+T=Oooff! Can you end me quickly? Please, I'm done suffering.
+W=TRAMP
+C4A=WONDER
+
+T=Oh, I'll make ya suffer, buddy!
+W=KINS
+C2A=HAPPY
+
+T=Enough! You're gonna regret it!
+W=BROK
+C1A=FURIOUS
+TEN=PC03_TRAMP_RAT_DIALOG3
+
+
+
+#----------------------
+#= Before fight (2)
+#----------------------
+ID=PC03_FIGHT2_DIALOG1
+T=My boy! Watch out!
+W=TRAMP
+C1=BROK
+C1A=MAYBE
+C2=TRAMP
+C2A=ANGRY
+NB=1
+D=60
+CONTEXT=Rats ambush Brok when coming back
+
+T=Wha...
+W=BROK
+C1A=SURPRISED
+D=30
+TEE=PC03_RATFIGHT2_PREPARE2B
+
+#----------------------
+ID=PC03_FIGHT2_DIALOG2
+T=Outta my way!
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=KINS
+C2A=NORMAL
+C4=DART
+C4A=NORMAL
+
+T=You! Yer the one who's gotta scram!
+W=KINS
+C2A=ANGRY
+
+T=Didn't you learn your lesson...?
+W=BROK
+C1A=COCKY
+
+T=Didn't come here for ya. Dat guy owes us money.
+W=KINS
+C2A=NORMAL
+
+T=You won't lay a finger on him!
+W=BROK
+C1A=MOCK
+
+T=Count yer teeth, croc. Yer gonna lose a lot.
+W=KINS
+C2A=ANGRY
+
+T=Try me!
+W=BROK
+C1A=ANGRY
+
+T=Guys...
+W=KINS
+C2A=NORMAL
+#TODO Bring more enemies
+TEN=PC03_TRAMP_RAT_DIALOG3
+
+#----------------------
+ID=PC03_TRAMP_RAT_DIALOGEND2
+T=Not again...
+W=KINS
+C1=BROK
+C1A=FURIOUS
+C2=KINS
+C2A=ANGRY
+C4=DART
+C4A=WONDER
+
+T=What's up wit dat guy?! Why can't we crush him?!
+W=DART
+C4A=NORMAL
+
+T=Dun' care! I won't have him get my skin!
+W=KINS
+C2A=ANGRY
+TEN=PC03_RAT_DEAD2D
+
+
+#----------------------
+ID=PC03_TRAMP_RAT_DIALOGEND2B
+T=You okay?
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=TRAMP
+C2A=NORMAL
+
+T=My boy, you're amazing.
+W=TRAMP
+C2A=COCKY
+
+T=You would do well in the military!
+W=TRAMP
+C2A=NORMAL
+
+T=Me, a soldier? Ha!
+W=BROK
+C1A=WONDER
+
+T=I can't follow someone else's orders. I can barely follow my own!
+W=BROK
+C1A=ALRIGHT
+
+T=I know you can.
+W=TRAMP
+C2A=NORMAL
+
+T=Just a feeling but...
+W=BROK
+C1A=WONDER
+
+T=You seem to know a lot about me.
+W=BROK
+C1A=MOCK
+
+T=Ya sure we've never met?
+W=BROK
+C1A=WONDER
+
+T=Who knows! Maybe in another life.
+W=TRAMP
+C2A=COCKY
+
+#----------------------
+ID=PC03_TRAMP_RAT_DIALOGEND
+T=Aww...
+W=KINS
+C1=BROK
+C1A=FURIOUS
+C2=KINS
+C2A=ANGRY
+C4=TRAMP
+C4A=DOWN
+CONTEXT=After saving the Tramp the first time
+TEN=PC03_RATS_RUNAWAY
+
+T=You'll pay for this!
+W=KINS
+SOUND=run
+TEN=PC03_TRAMP_RAT_MUSICBACK
+
+T=They're gone. Are you OK?
+W=TRAMP
+C2=TRAMP
+C2A=NORMAL
+C4=NONE
+
+T=Don't worry about me.
+W=BROK
+C1A=READY
+
+T=What was that about?
+W=BROK
+C1A=OPPOSITE
+
+T=You really shouldn't have interfered. I don't have much longer to live, anyway!
+W=TRAMP
+C2A=DOWN
+
+T=Don't say that! And... you didn't answer my question.
+W=BROK
+C1A=MAYBE
+
+T=It's a long story... But in short, I owe money.
+W=TRAMP
+C2A=NORMAL
+
+T=You see, I've been diagnosed with Heartstraint, which is incurable.
+W=TRAMP
+C1A=THINK
+
+T=Some days the pain is hard to bear. I figured those rats could provide me with some drugs to suppress it...
+W=TRAMP
+C2A=WONDER
+
+T=I just wanted to enjoy life before it's too late.
+W=TRAMP
+C2A=DOWN
+
+T=I'm so sorry to hear that...
+W=BROK
+C1A=DOWN
+
+T=Although... when there's life, there's hope. No disease is ever incurable.
+W=BROK
+C1A=READY
+
+T=One just has to search thoroughly. I've lived with a chemist long enough to know that.
+W=BROK
+C1A=HAPPY
+
+T=Theoretically. But no one cares about us Slumers.
+W=TRAMP
+C2A=NORMAL
+
+T=In any case, you shouldn't be staying here in the cold. Come to our apartment!
+W=BROK
+C1A=MOCK
+
+T=There's not much space but we'll find a way.
+W=BROK
+C1A=HAPPY
+
+T=That's very nice of you! But I can't accept.
+W=TRAMP
+C2A=WONDER
+
+T=I've already caused you enough trouble as it is. I fear they'll come after you...
+W=TRAMP
+C2A=NORMAL
+
+T=Just let'em! I'll show them the meaning of "respect your elders."
+W=BROK
+C1A=COCKY
+
+T=Erm... Sorry, I didn't mean to imply...
+W=BROK
+C1A=HAPPY
+
+T=Don't worry about it. But please don't insist. This is my choice.
+W=TRAMP
+C2A=WONDER
+
+T=Alright...
+W=BROK
+C1A=MAYBE
+
+T=But I'll find a way to help you somehow. I promise.
+W=BROK
+C1A=READY
+
+T=You have your whole life ahead of you!
+W=TRAMP
+C2A=NORMAL
+
+T=Don't waste it on people like me.
+W=TRAMP
+C2A=DOWN
+
+T=I want to! And it's my decision as well.
+W=BROK
+C1A=ALRIGHT
+
+T=Ah ah!
+W=TRAMP
+C2A=NORMAL
+
+T=Alright.
+W=TRAMP
+
+T=Here's the last medical prescription I've got.
+W=TRAMP
+C1A=THINK
+C2A=NORMAL
+
+T=This dates back to my time as a Drumer. Before they expelled me...
+W=TRAMP
+
+T=Expelled?!
+W=BROK
+C1A=SURPRISED
+
+T=You know the rules. Only valid people are able to stay, unless you've got family to pay... and I don't.
+W=TRAMP
+C2A=DOWN
+
+T=This medicine helped stabilize my disease.
+W=TRAMP
+C2A=NORMAL
+
+T=I'm not sure you can still get anything with this old cardboard piece but... Take it.
+W=TRAMP
+IT=1
+TEN=PC03_TRAMPPRESCR_TAKE
+
+
+#----------------------
+ID=PC03_TRAMP_RATDIALOGEND2
+T=I wish I had something more useful to offer you.
+W=TRAMP
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=That's fine! I'll manage.
+W=BROK
+
+T=Thank you, my boy...
+W=TRAMP
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+#----------------------
+#= Tramp 
+#----------------------
+ID=PC03_TRAMP_WELCOME1
+T=Hi!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+CONTEXT=Player talks to the Tramp
+
+T=Hello, my boy.
+W=TRAMP
+
+T=I don't mind talking but I don't see how I could be of any use.
+W=TRAMP
+C2A=WONDER
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_WELCOME2
+T=How are you?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=My boy, that's exactly the question you shouldn't ask to an old dying fool like myself.
+W=TRAMP
+C2A=WONDER
+C1A=DOWN
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_WELCOME_MEDICINE2
+T=Hey! How ya doin'?
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=Great. The medicine is starting to work. I can feel my legs again!
+W=TRAMP
+C2A=COCKY
+
+T=Glad to hear!
+W=BROK
+C1A=HAPPY
+
+
+
+#----------------------
+ID=PC03_TRAMP_HIMSELF1
+T=Those dog tags... You were in the military.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TRAMP
+C2A=NORMAL
+
+T=Good eye, boy!
+W=TRAMP
+C2A=COCKY
+
+T=A few years ago, I was part of the resistance during the Autarchism fight.
+W=TRAMP
+C2A=WONDER
+
+T=Then surely you can face them.
+W=BROK
+C1A=COCKY
+
+T=You may be a detective, but you still got a lot to learn.
+W=TRAMP
+C2A=NORMAL
+
+T=My body is declining. I can barely stand on my feet.
+W=TRAMP
+C1A=THINK
+C2A=DOWN
+
+T=This is pointless. I've accepted the fact that my life is over.
+W=TRAMP
+C2A=NORMAL
+
+T=I can't let you say that! I'll find a way to help!
+W=BROK
+C1A=READY
+
+T=Please don't give me false hope.
+W=TRAMP
+C2A=NORMAL
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC03_TRAMP_HIMSELF2
+T=Tell me. How come I've never seen you around?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=TRAMP
+C2A=NORMAL
+
+T=I go from street to street. Can't stay very long in one place.
+W=TRAMP
+C2A=WONDER
+
+T=Begging is forbidden and I can't afford a home. Our current society is quite contradictory.
+W=TRAMP
+C2A=DOWN
+
+T=I see...
+W=BROK
+C1A=DOWN
+
+T=Why not try and leave the city? You could have a small, peaceful life as a farmer out there.
+W=BROK
+C1A=MAYBE
+
+T=You know it's not that simple. The borders are currently closed to everyone but high ranking citizens.
+W=TRAMP
+C2A=WONDER
+
+T=Besides, Atlasia is my country. I was born here. I've defended it my entire life.
+W=TRAMP
+C2A=NORMAL
+
+T=This is where my life should end.
+W=TRAMP
+C2A=NORMAL
+
+T=Not like this...
+W=BROK
+C1A=ANGRY
+
+T=This is my choice to make.
+W=TRAMP
+C2A=DOWN
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_HIMSELF3
+T=I was wondering...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=TRAMP
+C2A=NORMAL
+
+T=Why do you care so much? We barely know each other.
+W=TRAMP
+C2A=WONDER
+
+T=Dunno... Ya sure about that? I don't feel that way somehow.
+W=BROK
+C1A=THINK
+
+T=No one should give up on living. Life is the most precious thing in the world.
+W=BROK
+C1A=READY
+
+T=The candor of youth.
+W=TRAMP
+C2A=NORMAL
+
+T=Someday... you'll understand.
+W=TRAMP
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+
+
+#----------------------
+ID=PC03_TRAMP_RATS1
+T=Those were Squealers, weren't they?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TRAMP
+C2A=NORMAL
+
+T=Correct.
+W=TRAMP
+
+T=I thought they were exiled a decade ago?
+W=BROK
+C1A=WONDER
+
+T=Yes. At least, that's what most people believe.
+W=TRAMP
+C2A=NORMAL
+
+T=However... Some of them stayed hidden in the shadows, infiltrating our society.
+W=TRAMP
+C2A=WONDER
+
+T=My disease made me weak... They took advantage of the situation.
+W=TRAMP
+C2A=DOWN
+
+T=But I don't blame them.
+W=TRAMP
+C2A=NORMAL
+
+T=How can you say that?! They just tried to murder you!
+W=BROK
+C1A=SURPRISED
+
+T=Yes... But I couldn't pay them back.
+W=TRAMP
+
+T=I don't regret it though. The drugs gave me more time.
+W=TRAMP
+C1A=ANGRY
+C2A=NORMAL
+
+T=I did everything I wanted.
+W=TRAMP
+C2A=NORMAL
+
+T=Still, they shouldn't go as far as threatening to kill you. There's just... no excuse.
+W=BROK
+C1A=FURIOUS
+
+T=Be careful, boy. There's no such thing as black and white.
+W=TRAMP
+C2A=DOWN
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_RATS2
+T=I don't get it.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=TRAMP
+C2A=NORMAL
+
+T=What would they gain from getting rid of you? You'd never pay them back.
+W=BROK
+C1A=DOWN
+
+T=I'll be an example.
+W=TRAMP
+C2A=NORMAL
+
+T=I have more value dead than alive.
+W=TRAMP
+C2A=COCKY
+
+T=Well I won't let that happen!
+W=BROK
+C1A=FURIOUS
+
+T=Please be careful. The last thing I'd want is to get you killed.
+W=TRAMP
+C2A=WONDER
+
+T=Don't you worry about me! I can defend myself.
+W=BROK
+C1A=COCKY
+
+T=Probably... But their numbers are great. You can't beat them all.
+W=TRAMP
+
+T=Bet on it?
+W=BROK
+C1A=MOCK
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC03_TRAMP_THINK1
+T=(He said not to get involved, or I'd get into trouble...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(Maybe he's right but I can't help it. I need to help the poor chap!)
+W=BROK
+A=READY
+MOOD=THINK
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC03_TRAMP_EXIT1
+T=I've gotta go but I'll be back soon.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=Be careful, boy.
+W=TRAMP
+C2A=WONDER
+TEN=PC03_TRAMP_EXITMUSIC
+
+#----------------------
+ID=PC03_TRAMP_EXIT2
+T=Stay here. I'll find a cure for ya.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=TRAMP
+C2A=NORMAL
+
+T=I can tell you're busy. Don't waste your precious time on me.
+W=TRAMP
+C2A=DOWN
+TEN=PC03_TRAMP_EXITMUSIC
+
+#----------------------
+ID=PC03_TRAMP_INV_TRAMPPRESCR_BEFORE
+T=That's for you!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=My boy... Do you need some glasses?
+W=TRAMP
+C2A=WONDER
+
+T=Why are you giving me back my medical prescription?
+W=TRAMP
+C2A=NORMAL
+
+T=Oops!
+W=BROK
+C1A=CONFUSED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1
+T=It's... gonna be a little more complex than I thought.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=TRAMP
+C2A=NORMAL
+
+T=Oh.
+W=TRAMP
+
+T=But don't worry!
+W=BROK
+C1A=READY
+
+T=I'm not giving up!
+W=BROK
+
+T=Is there anything I can do for you until I get your medicine?
+W=BROK
+C1A=MOCK
+
+T=Hmm...
+W=TRAMP
+C2A=WONDER
+
+T=Some regular medicine helps a bit...
+W=TRAMP
+C2A=NORMAL
+
+T=Tell me! Which one?
+W=BROK
+C1A=READY
+
+T=Glucosite. But it's so expensive...
+W=TRAMP
+
+T=I can't ask you...
+W=TRAMP
+C2A=DOWN
+
+T=I'll get you that.
+W=BROK
+C1A=MOCK
+
+T=Don't. You'll only be delaying the inevitable.
+W=TRAMP
+C2A=NORMAL
+
+T=I know you and your son could use that money.
+W=TRAMP
+
+T=My son...? How do you...?
+W=BROK
+C1A=SURPRISED
+
+T=Just a guess.
+W=TRAMP
+
+T=Well, I'll get some anyway!
+W=BROK
+C1A=READY
+
+T=Alright...
+W=TRAMP
+
+T=But promise me... You won't be foolish.
+W=TRAMP
+
+T=Keep this in mind.
+W=TRAMP
+
+T=Sure!
+W=BROK
+C1A=ALRIGHT
+TEN=PC03_TRAMP_GLUCOSITE_CHOICE
+
+
+#----------------------
+ID=PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE2
+T=Did you get my medicine?
+W=TRAMP
+C1=BROK
+C1A=THINK
+C2=TRAMP
+C2A=NORMAL
+TEN=PC03_TRAMP_GLUCOSITE_CHOICE
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_GLUCOSITE_YES1
+T=Here.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=Glucosite...?
+W=TRAMP
+C2A=WONDER
+
+T=My boy...
+W=TRAMP
+
+T=Nah. Don't say anythin'.
+W=BROK
+C1A=DOWN
+
+T=Just take it.
+W=BROK
+C1A=READY
+
+T=Fine.
+W=TRAMP
+C2A=NORMAL
+
+T=Thank you.
+W=TRAMP
+
+T=I still intend to get your prescription medicine. Gotta find a doctor though.
+W=BROK
+C1A=THINK
+
+T=Don't waste your life on this.
+W=TRAMP
+C2A=WONDER
+
+T=Time is money and you're clearly lacking both.
+W=TRAMP
+C2A=DOWN
+
+T=I'll manage.
+W=BROK
+C1A=READY
+TEN=PC03_TRAMP_GLUCOSITE_DONE
+
+#----------------------
+ID=PC03_TRAMP_GLUCOSITE_NO1
+T=Sorry... I need more time.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=TRAMP
+C2A=NORMAL
+
+T=That's okay.
+W=TRAMP
+TEN=PC03_TRAMP_BACKTOCHOICES
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_NOMEDICINE
+T=I feel a little better now...
+W=TRAMP
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=WONDER
+
+T=Great!
+W=BROK
+C1A=READY
+
+T=...but it won't last forever.
+W=TRAMP
+C2A=DOWN
+
+T=No worries. I'll get you your prescription!
+W=BROK
+C1A=MOCK
+TEN=PC03_TRAMP_BACKTOCHOICES
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_DEFAULT1
+T=Here! Take this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=My boy... I may be homeless but I'm not that desperate.
+W=TRAMP
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC03_TRAMP_INV_DEFAULT2
+T=This should be useful to you! 
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=TRAMP
+C2A=NORMAL
+
+T=Keep it. I won't have any use for it.
+W=TRAMP
+C2A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC03_TRAMP_INV_BILL1
+T=I need help to pay my bills.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=And... you're asking me...?
+W=TRAMP
+C2A=WONDER
+
+T=Oops... Sorry!
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_MINEBROKEN
+T=We used some like these in the military.
+W=TRAMP
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=You shouldn't carry this!
+W=TRAMP
+C2A=WONDER
+
+T=Don't worry! It's broken!
+W=BROK
+C1A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC03_TRAMP_INV_MONEY
+T=Here. For you.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TRAMP
+C2A=NORMAL
+
+T=My boy. I may be a tramp, but money isn't what I need right now.
+W=TRAMP
+C2A=WONDER
+
+T=Sorry... Just wanted to help.
+W=BROK
+C1A=DOWN
+
+T=Save your money. It'll be more useful to you.
+W=TRAMP
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_APARTMENTKEY
+T=I get it. But I really can't accept. Your home is your home.
+W=TRAMP
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_PILL
+T=Here! This should cure you!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=What is it?
+W=TRAMP
+
+T=Erm...
+W=BROK
+C1A=WONDER
+
+T=Sorry, boy. A placebo won't do me any good...
+W=TRAMP
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_POLLUTIONPILL
+T=Thank you my boy, but I already have one.
+W=TRAMP
+C1=BROK
+C1A=THINK
+C2=TRAMP
+C2A=NORMAL
+
+T=I still take my daily pills. I figured I could stop but death by suffocation scares me.
+W=TRAMP
+C2A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_STICK
+T=I used to be a master in martial arts!
+W=TRAMP
+C1=BROK
+C1A=THINK
+C2=TRAMP
+C2A=COCKY
+
+T=Now I can barely hold a spoon without dropping it...
+W=TRAMP
+C2A=DOWN
+
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_GUN
+T=Go ahead.
+W=TRAMP
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=DOWN
+
+T=Wait, no! I just meant to show you...
+W=BROK
+C1A=SURPRISED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_INV_CATFUR
+T=Here. This will keep you warm!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+
+T=Erm... How do I say this...
+W=TRAMP
+C2A=WONDER
+
+T=Forget it.
+W=BROK
+C1A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+#= Tramp HIT
+#----------------------
+ID=PC03_TRAMP_HIT1
+T=...Ouch.
+W=TRAMP
+C1=BROK
+C1A=READY
+C2=TRAMP
+C2A=DOWN
+CONTEXT=Player hits the Tramp
+
+T=Oh, no! Sorry, I did not mean...
+W=BROK
+C1A=STUPID
+
+T=It's okay, my boy. Don't worry.
+W=TRAMP
+
+#----------------------
+ID=PC03_TRAMP_HIT2
+T=Sorry... My hand slipped!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=TRAMP
+C2A=DOWN
+
+T=I'm fine. More or less.
+W=TRAMP
+
+#----------------------
+ID=PC03_TRAMP_HIT3
+T=I see... So it wasn't an accident.
+W=TRAMP
+C1=BROK
+C1A=ANGRY
+C2=TRAMP
+C2A=DOWN
+
+T=Very well. I'm ready. I prefer to die by your hands than theirs.
+W=TRAMP
+C2A=NORMAL
+
+
+#----------------------
+ID=PC03_TRAMP_DEATH
+T=...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+CONTEXT=Tramp dead
+TEN=PC03_TRAMP_DEATH_MUSIC
+
+T=...He's... dead...
+W=BROK
+C1A=SURPRISED
+TEN=PC03_TRAMP_DEATH_CHECK
+
+#----------------------
+ID=PC03_TRAMP_DEATH_GLUCOSITE
+T=I couldn't get his medicine... But...
+W=BROK
+A=HEARTBROKEN
+CONTEXT=Player didn't get the medecine so tramp is dead
+
+T=There must have been a way! I... should have tried harder!
+W=BROK
+A=DOWN
+TEN=PC03_TRAMP_DEATH_NEXT
+
+
+#----------------------
+ID=PC03_TRAMP_DEATH_US
+T=Oh no... When did I become a murderer...?
+W=BROK
+A=HEARTBROKEN
+CONTEXT=Player kills the Tramp
+
+T=I ended his suffering but... Was it my choice to make...?
+W=BROK
+A=DOWN
+TEN=PC03_TRAMP_DEATH_NEXT
+
+
+#----------------------
+ID=PC03_TRAMP_DEATH_THEM
+T=I knew what would happen... But I chose to flee...
+W=BROK
+A=HEARTBROKEN
+CONTEXT=Player fled
+TEN=PC03_TRAMP_DEATH_NEXT
+
+
+#----------------------
+ID=PC03_TRAMP_DEATH_NEXT
+T=Too late to have regrets...
+W=BROK
+A=DOWN
+
+T=(Sigh)
+W=BROK
+C1A=DISAPPOINTED
+
+T=Better call the Body Recycling service... So his death won't be entirely in vain.
+W=BROK
+TEN=PC03_TRAMP_DEATH_FADEOUT
+
+
+
+#----------------------
+ID=PC03_TRAMP_WELCOME_DAY2END
+T=Are you holding up?
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=TRAMP
+C2A=NORMAL
+CONTEXT=Day 2 - Talk to the Tramp
+
+T=...Yes.
+W=TRAMP
+C2A=WONDER
+
+T=(He's trying to stay strong but I can see it...)
+W=BROK
+MOOD=THINK
+
+T=(He's not well at all. I'd better get that prescription fast...)
+W=BROK
+C1A=READY
+MOOD=THINK
+
+#----------------------
+ID=PC03_TRAMP_WELCOME_DAY2
+T=Hey! How are you today?
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=TRAMP
+C2A=DOWN
+
+T=I've spent a horr--...
+W=TRAMP
+
+T=Well... I'm still alive. Thanks to you.
+W=TRAMP
+C2A=WONDER
+
+T=Glad to hear!
+W=BROK
+C1A=HAPPY
+
+T=(I still need to find a doctor. But they all live in the Drums and I don't know any I could trust.)
+W=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(Hopefully I'll meet one today.)
+W=BROK
+MOOD=THINK
+TEN=PC03_TRAMP_CHOICES
+IT=1
+
+#----------------------
+ID=PC03_TRAMP_WELCOME_DAY3
+T=Hey! How are you today?
+W=BROK
+C1=BROK
+C1A=READY
+C2=TRAMP
+C2A=DOWN
+
+T=(Heavy breathing)
+W=TRAMP
+
+T=I'm... fine.
+W=TRAMP
+
+T=(Oh no... He's on his last legs.)
+W=BROK
+C1A=DISAPPOINTED
+MOOD=THINK
+
+T=(Wait... Isn't my new client a doctor?)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC03_TRAMP_GHERKIN1
+T=(Heavy breathing)
+W=TRAMP
+C1=BROK
+C1A=MAYBE
+C2=TRAMP
+C2A=DOWN
+C3=GHERKIN
+C3A=WORRIED
+
+T=Doctor! Can you do something for him?
+W=BROK
+TEN=PC03_TRAMP_GHERKIN_APPROACH
+
+T=Oh no! Poor sir!
+W=GHERKIN
+
+T=Why didn't you tell me about his condition?!
+W=GHERKIN
+C3A=ANGRY
+TEN=PC03_TRAMP_GHERKIN_CHECK
+
+
+#----------------------
+ID=PC03_TRAMP_GHERKINNO
+T=Doesn't matter!
+W=BROK
+C1=BROK
+C1A=READY
+C2=TRAMP
+C2A=DOWN
+C3=GHERKIN
+C3A=ANGRY
+TEN=PC03_TRAMP_GHERKIN2
+
+#----------------------
+ID=PC03_TRAMP_GHERKINYES
+T=I did!
+W=BROK
+C1=BROK
+C1A=READY
+C2=TRAMP
+C2A=DOWN
+C3=GHERKIN
+C3A=ANGRY
+TEN=PC03_TRAMP_GHERKIN2
+
+
+#----------------------
+ID=PC03_TRAMP_GHERKIN2
+T=Here's his prescription.
+W=BROK
+C1=BROK
+C1A=READY
+C2=TRAMP
+C2A=DOWN
+C3=GHERKIN
+C3A=NORMAL
+
+T=Oh!
+C3A=HAPPY
+W=GHERKIN
+
+T=Sir, you're in luck. I have exactly what you need in my suitcase.
+W=GHERKIN
+
+T=Great!
+W=BROK
+
+T=Who... are you?...
+W=TRAMP
+
+T=This experimental high concentration formula should last a few years.
+W=GHERKIN
+C3A=NORMAL
+
+T=Please! Swallow this!
+W=BROK
+
+T=...
+W=TRAMP
+SILENCE=1
+
+T=It should have immediate effects.
+W=GHERKIN
+
+T=Thank you so much, Doctor!
+W=BROK
+TEN=PC03_TRAMP_GHERKIN2_NEXT
+
+
+#----------------------
+ID=PC03_TRAMP_WELCOME_MEDICINE1
+T=I've got something for you!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=TRAMP
+C2A=NORMAL
+CONTEXT=Day 2 end - Give his medicine!
+
+T=Here!
+W=BROK
+C1A=READY
+
+T=...Is this...?
+W=TRAMP
+C2A=WONDER
+
+T=Yup. Your medicine!
+W=BROK
+C1A=HAPPY
+
+T=My boy...
+W=TRAMP
+C2A=WONDER
+
+T=That's... more than I could ever hope for...
+W=TRAMP
+
+T=How can I ever repay you...?
+W=TRAMP
+
+T=No need. I'm just glad to help!
+W=BROK
+C1A=READY
+
+T=Ah ah. Let me put all this away before we attract the wrong eyes.
+W=TRAMP
+C2A=NORMAL
+
+T=Sure!
+W=BROK
+C1A=HAPPY
+
+T=And if those darn rats show up... I'll be there!
+W=BROK
+C1A=MOCK
+
+T=I'm pretty sure they wouldn't dare. You gave them a run for their money yesterday!
+W=TRAMP
+C2A=COCKY
+
+T=And with this I should be able to defend myself. My military skills are there, just waiting to be awakened.
+W=TRAMP
+C2A=NORMAL
+
+T=Great!
+W=BROK
+C1A=HAPPY
+
+T=Well...
+W=BROK
+
+T=Get better.
+W=BROK
+
+T=I will.
+W=TRAMP
+C2A=NORMAL
+
+T=These won't cure my disease but... It should stabilize it.
+W=TRAMP
+
+T=Wish I could do more, though.
+W=BROK
+C1A=DOWN
+
+T=You just gave me a future.
+W=TRAMP
+C2A=NORMAL
+
+T=There's no better gift than this.
+W=TRAMP
+C2A=COCKY
+
+T=Yeah...
+W=BROK
+
+T=Still, my offer to host you stands. Just for a while if you want.
+W=BROK
+C1A=MOCK
+
+T=And I still have to respectfully decline.
+W=TRAMP
+C2A=NORMAL
+
+T=But...
+W=BROK
+C1A=DOWN
+
+T=Just like you... This is my choice.
+W=TRAMP
+C2A=WONDER
+
+T=Okay... Well, our door is open if you change your mind.
+W=BROK
+C1A=READY
+
+T=Thank you, Brok.
+W=TRAMP
+C2A=NORMAL
+
+T=...
+W=BROK
+C1A=HAPPY
+
+T=(...?)
+W=BROK
+C1A=WONDER
+C2=NONE
+TEN=PC03_TRAMP_WELCOME_MEDICINE_AFTER
+
+
+
+#----------------------
+#= Tramp gone
+#----------------------
+ID=PC03_TRAMP_GONE1
+T=Huh...?
+W=BROK
+A=WONDER
+TEN=PC03_TRAMPGONE2
+CONTEXT=Day 3 - Brok comes back and the Tramp is gone, leaving a letter for him
+
+#----------------------
+ID=PC03_TRAMP_GONE2
+T=He's gone...?
+W=BROK
+A=SURPRISED
+
+T=I hope nothing happened to...
+W=BROK
+A=DOWN
+
+T=Wait. What's that?
+W=BROK
+A=MOCK
+TEN=PC03_TRAMPGONE4
+
+#----------------------
+ID=PC03_TRAMP_GONE3
+T=A letter...
+W=BROK
+A=THINK
+
+T="To Brok"...?
+W=BROK
+A=THINK
+TEN=PC03_TRAMP_MUSICEND
+
+T="Hello, my boy."
+BVOICE=TRAMP
+
+T="I've taken your suggestion and decided to live in a more quiet place."
+
+T="Although I'm a bit ashamed because... I lied to you."
+
+T="There's a reason why I came here."
+
+T="I wanted to see my best friend's adoptive son before leaving this world."
+
+T="You see... I knew your 'Grandpa'."
+
+T="When he died, I should have taken care of you. He asked me but I refused..."
+
+T="Back then I was still young. I didn't think I could handle it... being in the military and all."
+
+T="I've regretted this decision every day. You were all alone."
+
+T="Despite this, I'm glad you turned into such a strong, good hearted person."
+
+T="You're exactly like him. Always wanting to help everyone."
+
+T="I know because..."
+
+T="Well... I promised I wouldn't say anything but..."
+
+T="Let's just say... I got a chance to find out how tremendous you were a long time ago."
+
+T="Be careful though. Life isn't so simple."
+
+T="Don't let others abuse your kindness. Don't let it cloud your judgement."
+
+T="You gave me a second chance and convinced me to use the last few years of my life in a better way."
+
+T="I want to leave you a parting gift. Please put this to good use during your battles."
+
+T="Don't worry. We'll see each other again... Although I may be a little different!"
+
+T="Keep being strong for everyone"
+
+T="Your uncle Ric"
+
+T=Uncle...
+W=BROK
+A=DOWN
+
+T=I wish you'd have told me... We didn't get to spend a lot of time together.
+W=BROK
+A=STUPID
+
+T=There's a paper with my address here.
+W=BROK
+A=THINK
+
+T=And...
+W=BROK
+A=THINK
+
+T=Some kind of lucky charm.
+W=BROK
+A=WONDER
+TEN=PC03_TRAMP_LUCKYCHARM_GET
+
+#----------------------
+ID=PC03_TRAMP_GONE4
+T=Sounds pretty useful!
+W=BROK
+A=MOCK
+
+T=Thanks, Uncle. I'll keep this with me at all times.
+W=BROK
+A=DOWN
+
+T=I'll never forget you...
+W=BROK
+A=HEARTBROKEN
+TEN=PC03_TRAMP_GONEEND
+
+#----------------------
+#= Sticker display
+#----------------------
+ID=PC03_STICKERDISPLAY1
+T=Hey, isn't this Graff's favorite band?
+W=BROK
+A=WONDER
+CONTEXT=Interaction with sticker
+
+T=Maybe I could buy him a ticket!
+W=BROK
+A=HAPPY
+
+T=If my finances allow it.
+W=BROK
+
+
+
+
+
+#------------------------------------
+#= Drones visit Brok if bills unpaid
+#------------------------------------
+ID=PC03_STORY175_DRONES
+T=...
+W=BROK
+A=THINK
+CONTEXT=Day 2 end - Drones visit Brok if bills unpaid
+
+T=Drones...? What's it this time...
+W=BROK
+
+
+T=Slum citizen
+BVOICESP=TRIBOT
+
+T=You have overdue bills
+BVOICESP=TRIBOT
+
+T=Explain yourself
+BVOICESP=TRIBOT
+
+T=What do you expect?
+W=BROK
+A=MOCK
+
+T=Dun' have the moolah!
+W=BROK
+A=ALRIGHT
+
+T=You've got three seconds to pay
+BVOICESP=TRIBOT
+
+T=Three seconds?!
+W=BROK
+A=WORRIED
+
+T=Or else what...
+W=BROK
+A=WONDER
+
+T=Delay expired
+BVOICESP=TRIBOT
+
+T=Prepare for life expiration
+BVOICESP=TRIBOT
+
+T=Oh well.
+W=BROK
+A=ALRIGHT
+
+T=Paid or not, bills always hurt.
+W=BROK
+A=MOCK
+TEN=PC03_STORY175_DRONES_FIGHT
+
+#------------------------------------
+ID=PC03_STORY175_DRONES_WIN
+T=...
+W=BROK
+A=SURPRISED
+
+T=Guess I should think twice about leaving bills unpaid. Next time they might bomb the whole district!
+W=BROK
+A=STUPID
+TEN=PC03_STORY175_DRONES_WIN2
+
+#----------------------
+
+ID=PC03_TRAMP_PILLWELCOME
+T=My boy!
+W=TRAMP
+C1=BROK
+C1A=SURPRISED
+C2=TRAMP
+C2A=ANGRY
+CONTEXT=Day 2 end - Brok comes back when Graff didn't take his Toxout pill
+
+T=Come back home, fast! Your son is in danger!
+W=TRAMP
+
+T=Graff ?!
+W=BROK
+C1A=WORRIED
+TEN=CLICKERS_BACK
+
+#----------------------
+
+ID=PC03_LEAVINGNOPE
+T=No! Graff needs me!
+W=BROK
+A=STUPID
+
+
+#----------------------
+
+ID=PC03_STORY175_DRONES_LOSE
+T=Your debts shall be passed on to your legal heir
+BVOICE=TRIBOT
+
+T=Thank you for your cooperation
+TEN=GAMEOVER
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 21/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# EXPRESSIONS - Oggy - 27/07/2019
+###############################################
+
+#----------------------
+ID=PC03_TRAMP_RAT_LOSE1
+T=Oh no!...
+W=TRAMP
+C1=DART
+C1A=COCKY
+C2=KINS
+C2A=HAPPY
+C4=TRAMP
+C4A=WONDER
+CONTEXT=Gameover after fighting
+
+T=Too easy!
+W=DART
+
+T=Your turn, old man.
+W=DART
+C1A=READY
+TEN=GAMEOVER
+
+
+#----------------------
+ID=PC03_TRAMP_RAT_LOSE2
+T=Noooo!
+W=TRAMP
+C1=DART
+C1A=READY
+C2=KINS
+C2A=HAPPY
+C3=RAT
+C3A=COCKY
+C4=TRAMP
+C4A=WONDER
+CONTEXT=Gameover after fighting
+
+T=Dis time, we got the last laugh!
+W=KINS
+
+T=Yeah! Dat's one totally dead croc!
+W=RAT
+C3A=LAUGH
+
+T=Oops... Da boss said to bring him alive.
+W=DART
+C1A=SURPRISED
+
+T=Ya dimwit! Why didn't you say so?!
+W=KINS
+C2A=SURPRISED
+
+T=Sorry guys...
+W=DART
+C1A=WONDER
+C2A=ANGRY
+C3A=THINK
+TEN=GAMEOVER
+
+
+#----------------------------------------------------
+ID=PC03_STICKER_AD
+T=Wait... That one is different!
+W=BROK
+A=THINK
+TEN=INTERFACE_GETAD
+
+#----------------------
+ID=PC03_LEAVINGNOPEALT
+T=I can't leave yet!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC03_TRAILER1
+T=Hey! Leave the old man alone!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=KINS
+C2A=WONDER
+C4=TRAMP
+C4A=DOWN
+CONTEXT=Brok saves the Tramp
+
+T=None of yer business. Get the heck outta here!
+W=KINS
+C1A=FURIOUS
+C2A=ANGRY
+
+T=Enough! You're gonna regret it!
+W=BROK
+C1A=FURIOUS
+TEN=PC03_TRAMP_RAT_DIALOG3
+
+#----------------------
+ID=PC03_TRAILER2
+T=...He's... dead...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+
+#----------------------------------------------------
+ID=COOP_PC03_TRAMP1
+T=I see...in this dimension he caught a disease.
+T=It makes him look so old. What a change.

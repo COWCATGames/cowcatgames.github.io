@@ -1,0 +1,2808 @@
+﻿#-------------------------------
+#=POLICE INTERROGATION
+#-------------------------------
+
+#----------------------
+#= Intro
+#----------------------
+ID=PC09D_INTRO1
+T=...so I gathered a few clues. I had suspicions of course but...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+CONTEXT=Both Sin and Brok have been arrested by Wes. He's going to interrogate Brok in this room
+
+T=A detective gotta trust his clients a bare minimum, ya know? And this is when I realized that Sin...
+W=BROK
+SKIPEND=1
+
+T=Shut up!
+W=WES
+C1A=SURPRISED
+C2A=ANGRY
+
+T=Uh...
+W=BROK
+C1A=DOWN
+
+T=What a chatterbox you are.
+W=WES
+C2A=NORMAL
+
+T=Sit.
+W=WES
+C2A=WONDER
+TEN=PC09D_INTRO1B
+
+#----------------------
+
+ID=PC09D_INTRO2
+T=Wait a minute...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=NORMAL
+
+T=The interrogation room?
+W=BROK
+
+T=How perspicacious.
+W=WES
+
+T=Aren't you supposed to interrogate Sin first?
+W=BROK
+C1A=WONDER
+
+T=Uh-uh. In due time.
+W=WES
+
+T=Sit!
+W=WES
+C2A=ANGRY
+
+T=Erm... Okay.
+W=BROK
+C1A=MAYBE
+TEN=PC09D_INTRO2B
+
+#----------------------
+#= Intro
+#----------------------
+ID=PC09D_INTRO3
+T=Man, those cuffs sure are tight!...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+
+T=They aren't really necessary, ya know...
+W=BROK
+
+T=Don't be a child. This is the procedure.
+W=WES
+
+T=Yeah... Procedures, schmedures... 
+W=BROK
+C1A=MEH
+
+T=Ya haven't changed a bit, huh? After all these years...
+W=BROK
+
+T=This is irrelevant to the case.
+W=WES
+
+T=So... What am I guilty of?
+W=BROK
+C1A=THINK
+
+T=We'll determine that.
+W=WES
+
+T=...
+W=TRIBOTCOP
+C4=TRIBOTCOP
+C4A=NORMAL
+SILENCE=1
+
+T=...
+W=BROK
+
+T=I don't feel comfortable with this robot watching us. Why is it here, anyway?
+W=BROK
+C1A=WONDER
+
+T=To perform technical requirements such as recording and testing the equipment.
+W=WES
+
+T=Just ignore it.
+W=WES
+C2A=WONDER
+
+T=Starting...
+W=TRIBOTCOP
+TEN=PC09D_INTRO3B
+
+#----------------------
+#= Intro
+#----------------------
+ID=PC09D_INTRO4
+T=What's this contraption for?...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=The procedure.
+W=WES
+
+T=Enough with your procedure drivel! I have the right to know what this is!
+W=BROK
+
+T=Fine. That's a lie detector.
+W=WES
+C2A=WONDER
+
+T=What?... I thought these weren't reliable enough to...
+W=BROK
+C1A=THINK
+
+T=The engineers have made remarkable improvements.
+W=WES
+C2A=NORMAL
+
+T=False positives are now reduced to 0.02%, which was deemed an acceptable rate.
+W=TRIBOTCOP
+
+T=As such, this equipment has been recently approved by our Government.
+W=TRIBOTCOP
+
+T=A very precious asset.
+W=WES
+
+T=Calibration in process... Subject needs to stay still.
+W=TRIBOTCOP
+
+T=A word of advice. You'd better not lie.
+W=WES
+
+T=Or what?... That thing's gonna electroshock me?
+W=BROK
+C1A=ALRIGHT
+TEN=PC09D_ELECTROCUTE
+
+#----------------------
+ID=PC09D_INTRO4B
+T=N-no way!...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Is this even legal?...
+W=BROK
+C1A=STUPID
+
+T=Calibration over.
+W=TRIBOTCOP
+
+T=Perfectly legal.
+W=WES
+
+T=I could show you the description of the law but I'm not even sure you can read.
+W=WES
+C2A=WONDER
+
+T=Mrrrph...
+W=BROK
+C1A=ANGRY
+
+T=I've been to school... for a few years.
+W=BROK
+
+T=Shall we start?
+W=WES
+TEN=PC09D_INTRO4BEV
+
+
+#----------------------
+ID=PC09D_INTRO5
+T=Listen carefully.
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I will ask you ten questions.
+W=WES
+
+T=For each one, you've got exactly ten seconds to reply.
+W=WES
+
+T=It is highly recommended to give the first answer that comes to mind.
+W=TRIBOTCOP
+
+T=Our only aim is solving this case.
+W=WES
+
+T=If the device detects a lie...
+W=WES
+
+T=Lemme guess. Electro-shock?
+W=BROK
+
+T=Uh-uh.
+W=WES
+
+T=Glad I don't have hair then. It would be such a mess!
+W=BROK
+C1A=OPPOSITE
+
+T=Starting timer...
+W=TRIBOTCOP
+TEB=PC09D_PROGRESSBAR_ON
+
+
+#----------------------
+ID=PC09D_INTRO5B
+T=Alright. First question.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+CONTEXT=Wes interrogates Brok. The player has various choices possible.
+
+T=What is your name?
+W=WES
+TEN=PC09D_Q1_CHOICE
+IT=1
+
+#----------------------
+ID=PC09D_Q1_BROK
+T=Ya know my name, inspector.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I'm not inspector anymore. From now on, call me "commissioner Wes".
+W=WES
+C2A=WONDER
+
+T=Oh. Okay, inspect... err, commissioner.
+W=BROK
+C1A=HAPPY
+
+T=This question is meant to provide cross checking for fine-tuning end results.
+W=TRIBOTCOP
+
+T=I still didn't hear your name.
+W=WES
+C2A=NORMAL
+
+T=Oh, erm... Yeah. It's Brok.
+W=BROK
+
+T=Are you sure?
+W=WES
+C2A=WONDER
+
+T=Of course!
+W=BROK
+C1A=ANGRY
+
+T=Last name?
+W=WES
+
+T=It's just Brok.
+W=BROK
+
+T=Subject now registered as Just Brok.
+W=TRIBOTCOP
+
+T=No, I meant...ugh. Forget it.
+W=BROK
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q1_WES
+T=Your name?... It's Wes, of course.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_ELECTROCUTE
+
+#----------------------
+ID=PC09D_Q1_WESB
+T=I didn't ask you my name!
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=ANGRY
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I know this is difficult for your below-average reptile brain but you need to focus!
+W=WES
+
+T=Hey! I was joking! No need for the insults.
+W=BROK
+C1A=HAPPY
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q1_HOTDOG
+T=Hotdog.
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...
+W=WES
+C2A=SURPRISED
+
+T=...
+W=TRIBOTCOP
+
+T=...I was expecting to get electroshocked here.
+W=BROK
+C1A=WONDER
+
+T=You're not the only one. Any explanation?
+W=WES
+
+T=The subject may actually have the secret desire to be called Hotdog.
+W=TRIBOTCOP
+
+T=I had no idea...
+W=BROK
+C1A=HAPPY
+
+T=This reveals a lot about ourselves. Keep doing it.
+W=WES
+C2A=WONDER
+
+T=Erm... Alright...
+W=BROK
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_TIMEOUT
+T=Erm...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_ELECTROCUTE
+CONTEXT=When the player doesn't take a choice
+SKIPEND=1
+
+#----------------------
+ID=PC09D_TIMEOUT1
+T=Don't take all your time to answer!
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=ANGRY
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_TIMEOUT2
+T=Again?!
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=ANGRY
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Hey, I need more time!
+W=BROK
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_TIMEOUT3
+T=Come on! It's not that difficult!
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=No pressure, uh? It's not like I had a torture device on my head!
+W=BROK
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_TIMEOUT4
+T=Argh... My brain is melting.
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=What's left of it, anyway.
+W=WES
+C2A=HAPPY
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_TIMEOUT5
+T=You can't be serious.
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=The subject has a 54.6% probability to want to commit suicide, 40.4% to enjoy pain, and 5% for both.
+W=TRIBOTCOP
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_TIMEOUT6
+T=...
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q2
+T=Next question.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+CONTEXT=More interrogation
+
+T=What's your job?
+W=WES
+C2A=WONDER
+TEN=PC09D_Q2_CHOICE
+IT=1
+
+#----------------------
+ID=PC09D_Q2_PD
+T=It's obvious. Private detective.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Uh-uh.
+W=WES
+
+T=If I remember correctly, you used to be a boxer. 
+W=WES
+C2A=WONDER
+
+T=I ended my boxing career. Right after the fighting pits were closed.
+W=BROK
+C1A=THINK
+
+T=They got replaced by virtual arenas.
+W=WES
+C2A=NORMAL
+
+T=Give it a try! You could make a lot of money.
+W=WES
+C2A=HAPPY
+
+T=Oh... Well, erm...
+W=BROK
+C1A=HAPPY
+
+T=I wouldn't dare to participate... They're illegal.
+W=BROK
+
+T=Uh-uh.
+W=WES
+C2A=WONDER
+
+T=...
+W=WES
+
+T=...
+W=BROK
+
+T=The subject seems nervous. Sweat has increased by 50%.
+W=TRIBOTCOP
+
+T=Should we add a new question to the queue?
+W=TRIBOTCOP
+
+T=That won't be necessary.
+W=WES
+C2A=NORMAL
+
+T=...
+W=BROK
+C1A=TIRED
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q2_HANDYMAN
+T=Handyman!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I do plumbing, sewing and sometimes even cooking!
+W=BROK
+
+T=...
+W=WES
+C2A=WONDER
+SILENCE=1
+
+T=See? I'm telling the truth!
+W=BROK
+C1A=MOCK
+
+T=No surprise there. You put your best competences into practice.
+W=WES
+C2A=NORMAL
+
+T=This declaration makes no sense.
+W=TRIBOTCOP
+
+T=All these tasks can be performed by bots with a lot more efficiency than humans.
+W=TRIBOTCOP
+
+T=We Slumers would never let our jobs in the hands of petty tin cans!
+W=BROK
+
+T=And you can't afford bots.
+W=WES
+
+T=...Yeah.
+W=BROK
+C1A=DOWN
+
+T=Your population is declining at a steady rate. Soon you won't have a choice...
+W=WES
+
+T=Never!
+W=BROK
+C1A=ANGRY
+
+T=The strongest survives. That's how it's always been.
+W=BROK
+
+T=Uh-uh. Very true.
+W=WES
+C2A=WONDER
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q2_DANCER
+T=What do you think?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I'm a dancer! Sometimes I give lessons...
+W=BROK
+C1A=ALRIGHT
+C2A=SURPRISED
+TEN=PC09D_ELECTROCUTE
+
+
+#----------------------
+ID=PC09D_Q2_DANCERB
+T=It is physically impossible for the subject to be a good dancer due to his proportions.
+W=TRIBOTCOP
+C1=BROK
+C1A=TIRED
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I said I dance... Not that I'm good at it.
+W=BROK
+C2A=NORMAL
+
+T=Stop wasting our time. The more you do, the longer you'll be held.
+W=WES
+
+T=You're just being jealous!
+W=BROK
+C1A=MOCK
+
+T=...
+W=WES
+
+T=We're still waiting for a reply.
+W=WES
+C2A=WONDER
+
+T=Alright, alright. I'm a private detective. Happy?
+W=BROK
+C1A=ANGRY
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q3
+T=Next question.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Why did you become a detective?
+W=WES
+C2A=WONDER
+
+T=And handyman.
+W=BROK
+
+T=Whatever.
+W=WES
+C2A=NORMAL
+TEN=PC09D_Q3_CHOICE
+IT=1
+
+#----------------------
+ID=PC09D_Q3_GRAFF
+T=I'm doin' it for Graff.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...
+W=WES
+C2A=SURPRISED
+
+T=Graff...
+W=WES
+C2A=WONDER
+
+T=...
+W=WES
+
+T=Uh?
+W=BROK
+C1A=WONDER
+
+T=Oh.
+W=WES
+C2A=NORMAL
+
+T=I assume this is your son.
+W=WES
+
+T=No... He's Lia's.
+W=BROK
+C1A=THINK
+
+T=In her testament, she asked me to...
+W=BROK
+C1A=DISAPPOINTED
+
+T=Hey. I thought you'd remember?
+W=BROK
+C1A=THINK
+
+T=After all, you were in charge of the case five years ago...
+W=BROK
+
+T=My memory isn't a database, you know.
+W=WES
+C2A=WONDER
+
+T=The chief means he's getting old and can't be as efficient as he used to.
+W=TRIBOTCOP
+
+T=I guess. Lately I've been losing my memory too.
+W=BROK
+C2A=NORMAL
+
+T=Whatever...
+W=BROK
+
+T=I needed to make a livin', for both of us.
+W=BROK
+
+T=The police ain't helping us so I figured a lot of Slumers could use my assistance...
+W=BROK
+C1A=MAYBE
+
+T=Uh-uh.
+W=WES
+
+T=...
+W=BROK
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q3_LIA
+T=After Lia's death...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I... I couldn't get over it.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Ya know...
+W=BROK
+
+T=Of course. I was in charge of this case.
+W=WES
+
+T=I figured... If I become a detective... I'll get a chance to find the culprit.
+W=BROK
+C1A=READY
+
+T=Someone... has to pay.
+W=BROK
+
+T=So this is revenge.
+W=WES
+C2A=WONDER
+
+T=...
+W=BROK
+C1A=MAYBE
+
+T=I'm not sure. Much has happened since then.
+W=BROK
+
+T=But you never found any clue.
+W=WES
+
+T=No... I hardly have time to focus on that now.
+W=BROK
+C1A=DOWN
+
+T=But I'm not giving up hope.
+W=BROK
+C1A=READY
+
+T=Hope is a hard concept to grasp. It doesn't rely on any factual data.
+W=TRIBOTCOP
+
+T=Hence why you'll never be more than metal scraps on feet.
+W=BROK
+C1A=OPPOSITE
+
+T=I can sense hostility coming from this subject.
+W=TRIBOTCOP
+
+T=Let's move on.
+W=WES
+C2A=NORMAL
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q3_MONEY
+T=What else? For the money, of course!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=You wouldn't believe how much people are ready to spend for putting out the trash or fixing their toilets!
+W=BROK
+C1A=COCKY
+TEN=PC09D_ELECTROCUTE
+
+#----------------------
+ID=PC09D_Q3_MONEYB
+T=Trying to impress us? What a failure.
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I'm not like that...! I-I can't understand...
+W=BROK
+C1A=SURPRISED
+
+T=I believe you. The lie detector must have fried a good portion of your brain.
+W=WES
+C2A=HAPPY
+
+T=Yeah!...
+W=BROK
+
+T=The truth is, I can barely make ends meet.
+W=BROK
+C1A=THINK
+C2A=NORMAL
+
+T=Sure, I get jobs... but from lads even poorer than myself.
+W=BROK
+
+T=Most of the time, I can't bear asking them for a retribution.
+W=BROK
+C1A=TIRED
+
+T=Working for free?... How charitable and altruistic.
+W=WES
+C2A=WONDER
+
+T=I'd cry if I could.
+W=TRIBOTCOP
+
+T=Shut up. Ya have no idea what living...
+W=BROK
+C1A=OPPOSITE
+
+T=Real living means.
+W=BROK
+
+T=Uh-uh.
+W=WES
+C2A=NORMAL
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q4
+T=Next question.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=What relationship do you have with Sin?
+W=WES
+C2A=WONDER
+TEN=PC09D_Q4_CHOICE
+IT=1
+
+
+#----------------------
+ID=PC09D_Q4_FRIEND_FALSE
+T=A good guy. I'd call him a friend now.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_ELECTROCUTE
+
+
+#----------------------
+ID=PC09D_Q4_FRIENDB
+T=Okay, okay. That's true. I hate him.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Not only did I waste my time but he'll never pay me!
+W=BROK
+
+T=That's for certain.
+W=WES
+C2A=NORMAL
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q4_FRIEND_TRUE
+T=Despite what happened... I feel bad for him.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=He was ready to put his life in danger for his girl. Who wouldn't do the same in his place?
+W=BROK
+
+T=...
+W=WES
+C2A=SURPRISED
+
+T=You fell for it...
+W=WES
+C2A=NORMAL
+
+T=Uh? What do you mean?
+W=BROK
+C1A=THINK
+
+T=Impressive. And you call yourself a detective!
+W=WES
+
+T=You haven't imagined for one second... That what he told you...
+W=WES
+
+T=Could be lies?!
+W=WES
+C2A=WONDER
+
+T=...
+W=BROK
+
+T=Impossible. I know the guy...
+W=BROK
+C1A=OPPOSITE
+
+T=...who you met that same morning.
+W=WES
+
+T=Besides, I spotted a picture of his wife and girl.
+W=BROK
+
+T=This could be anyone. Something he printed from the Triweb.
+W=WES
+
+T=I can tell lies from truth without a stinkin' machine.
+W=BROK
+C1A=ANGRY
+
+T=Just like I can blindly trust some people... and should never, ever trust some others.
+W=BROK
+
+T=You're in the second category.
+W=BROK
+
+T=...
+W=WES
+C2A=NORMAL
+
+T=In our job, we don't trust feelings. We trust tangible, hard as rock facts.
+W=WES
+
+T=Ya haven't changed one bit...
+W=BROK
+C1A=MEH
+
+T=No different than this robot watching us, compiling data...
+W=BROK
+
+T=I'd rather be a lousy detective than a cold-as-ice flatfoot with no heart like you!
+W=BROK
+
+T=Uh-uh.
+W=WES
+
+T=Can't you stop with your "uh-uhs"?! It's stressful beyond imagination!
+W=BROK
+C1A=ANGRY
+
+T=Uh-uh.
+W=WES
+TEN=PC09D_CHECKNEXT
+
+
+
+#----------------------
+ID=PC09D_Q4_CLIENT
+T=He's... was... my client.
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Uh-uh.
+W=WES
+
+T=He was looking for somethin' he lost...
+W=BROK
+
+T=The gun. No need to explain. 
+W=WES
+
+T=The conversation between the subject and the suspect has been fully recorded as evidence number 2563.
+W=TRIBOTCOP
+
+T=So you know everything!
+W=BROK
+C1A=ANGRY
+
+T=What's the point of this whole interrogation?!
+W=BROK
+
+T=I'm the one asking questions here. Focus.
+W=WES
+
+T=Tell us how you met.
+W=WES
+C2A=WONDER
+
+T=He tried to call me endlessly...
+W=BROK
+
+T=I believe he found me on the Triweb. I've seen his searches.
+W=BROK
+C1A=OPPOSITE
+
+T=Uh-uh.
+W=WES
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q4_ENEMY_FALSE
+T=What d'ya think? I hate him!
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_ELECTROCUTE
+
+#----------------------
+ID=PC09D_Q4_ENEMYB
+T=B-But... He... attacked me! Almost killed me!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I know. A good fight.
+W=WES
+C2A=HAPPY
+TEN=PC09D_Q4_ENEMY_AFTER
+IT=1
+
+
+#----------------------
+ID=PC09D_Q4_ENEMY_AFTER
+T=Wait a minute...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=HAPPY
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=You were there? Watching?!
+W=BROK
+
+T=We solve cases. We don't prevent little quarrels.
+W=WES
+C2A=WONDER
+
+T=So you didn't mind if one of us got killed?!
+W=BROK
+C1A=OPPOSITE
+
+T=The suspect was not threatening a first-class citizen. There was no reason to intervene.
+W=TRIBOTCOP
+
+T=One less prisoner means space for another. This is pure logic.
+W=TRIBOTCOP
+
+T=I can't believe this...
+W=BROK
+C1A=ANGRY
+
+T=In any case, the protocols recommend the lethal use of our guns in such circumstances.
+W=WES
+C2A=NORMAL
+
+T=You should be thanking us for not intervening!
+W=WES
+
+T=Oh yeah... I'm always so lucky.
+W=BROK
+C1A=TIRED
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q4_ENEMY_TRUE
+T=What d'ya think? I hate him!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...
+W=BROK
+
+T=(Weird. I thought I'd get electrocuted here.)
+W=BROK
+MOOD=THINK
+
+T=Rightfully so. He attacked you after all.
+W=WES
+TEN=PC09D_Q4_ENEMY_AFTER
+IT=1
+
+#----------------------
+ID=PC09D_Q5
+T=Next question.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=What have you been doing this morning?
+W=WES
+TEN=PC09D_Q5_CHOICE
+IT=1
+
+#----------------------
+ID=PC09D_Q5_INVESTIGATING
+T=My investigation.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Be more precise.
+W=WES
+C2A=WONDER
+
+T=I went to Sin's home... Then to the sewers...
+W=BROK
+C1A=MAYBE
+
+T=Oh, and before that I crossed the border to check the alley and the pharmacy for clues...
+W=BROK
+C1A=MEH
+
+T=Uh-uh. You crossed the border.
+W=WES
+C2A=WONDER
+
+T=...
+W=WES
+C1A=HAPPY
+
+T=Erm... Ya know...
+W=BROK
+
+T=I used to be a Drumer, so...
+W=BROK
+
+T=You still have access?
+W=WES
+
+T=This isn't acceptable. It should have been revoked long ago.
+W=WES
+C1A=DOWN
+C2A=ANGRY
+
+T=Should the main database be checked for this record?
+W=TRIBOTCOP
+
+T=Yes, please.
+W=WES
+C2A=NORMAL
+TEN=PC09D_Q5_REVOCATION
+
+
+#----------------------
+ID=PC09D_Q5_INVESTIGATING2
+T=You mentioned the sewers.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Erm... Yeah. The gun left tracks that lead me there. 
+W=BROK
+C1A=WONDER
+
+T=Tell me about the Squealers.
+W=WES
+C2A=NORMAL
+
+T=Their leader and a few of his minions wouldn't let me pass through, so...
+W=BROK
+
+T=Hey but... How do you know I met them?
+W=BROK
+C1A=ANGRY
+
+T=A wild guess. They've been causing a lot of trouble lately.
+W=WES
+
+T=You just confirmed our suspicions.
+W=WES
+
+T=Yeah. You need to do somethin' about 'em!
+W=BROK
+
+T=They're acting like it's their territory and everything...
+W=BROK
+C1A=OPPOSITE
+
+T=In due time.
+W=WES
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q5_REVOCATION
+T=Gulp!
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...
+W=TRIBOTCOP
+
+T=Record found. Revocation request...
+W=TRIBOTCOP
+
+T=There is no availability right now. A ticket has been reserved.
+W=TRIBOTCOP
+
+T=The process will be performed as soon as possible. Estimate... 
+W=TRIBOTCOP
+
+T=58 hours and 35 minutes from now.
+W=TRIBOTCOP
+
+T=What a slow process.
+W=WES
+
+T=Well, never mind. As long as it's done.
+W=WES
+C2A=WONDER
+
+T=(Good. That leaves me some time.)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+TEN=PC09D_REVOCATION_CHECK
+
+
+#----------------------
+ID=PC09D_Q5_HACKING
+T=Sin reported losing his gun in Drumer Street.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I desperately needed to cross the border post...
+W=BROK
+C1A=MEH
+
+T=So I entered that pyramid building and hacked the server to add my identity.
+W=BROK
+
+T=Man, that was tough! That place is literally a hive of lasers!
+W=BROK
+C1A=COCKY
+
+T=My friend Shay helped set this up. She's an expert at hacking servers, ya know!
+W=BROK
+C1A=MOCK
+
+T=...
+W=WES
+C2A=WONDER
+
+T=...
+W=TRIBOTCOP
+
+T=Erm... That's embarassing.
+W=BROK
+C1A=HAPPY
+
+T=You don't say.
+W=WES
+
+T=Not only did you reveal commiting a crime...
+W=WES
+
+T=But you've implicated your friend as well.
+W=WES
+
+T=Bravo.
+W=WES
+C2A=HAPPY
+
+T=Thank you!
+W=BROK
+
+T=Agent X-598, please revoke his identity immediately.
+W=WES
+C2A=ANGRY
+TEN=PC09D_Q5_REVOCATION
+
+#----------------------
+ID=PC09D_Q5_HACKING2
+T=As for your friend... We shall start an investigation on her as soon as possible.
+W=WES
+C1=BROK
+C1A=TIRED
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Oh, great. She's gonna kill me!
+W=BROK
+
+T=Only if we won't do it first.
+W=WES
+C2A=NORMAL
+TEN=PC09D_CHECKNEXT
+
+
+
+#----------------------
+ID=PC09D_Q5_HUNGRY
+T=I'm starving! Can't we take a break?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_ELECTROCUTE
+
+#----------------------
+ID=PC09D_Q5_HUNGRYB
+T=B-But... I'm not lying... I'm really hungry!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=ANGRY
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=It also detects attempts to avoid direct questions.
+W=WES
+
+T=Couldn't you tell me beforehand?!
+W=BROK
+C1A=ANGRY
+
+T=The algorithm suggests this question should be skipped.
+W=TRIBOTCOP
+
+T=Very well.
+W=WES
+C2A=NORMAL
+
+T=Hey!... What about my snack?...
+W=BROK
+
+T=...
+W=WES
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q6
+T=Next question.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=How do you think we should handle Sin?
+W=WES
+TEN=PC09D_Q6_CHOICE
+IT=1
+
+
+#----------------------
+ID=PC09D_Q6_FREE
+T=It's obvious. Free him immediately!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Give him a second chance! He deserves it.
+W=BROK
+TEN=PC09D_Q6_FREE_CHECKELECTROCUTE
+
+
+#----------------------
+ID=PC09D_Q6_FREENOTOK
+T=No, he doesn't. And you seem to agree with us.
+W=WES
+C1=BROK
+C1A=TIRED
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I... thought I did...
+W=BROK
+TEN=PC09D_Q6_FREEB
+IT=1
+
+#----------------------
+ID=PC09D_Q6_FREEOK
+T=Deserves...?
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=So you believe in redemption.
+W=WES
+C2A=WONDER
+
+T=You think a criminal can redeem himself and never repeat any wrong-doings again.
+W=WES
+
+T=Ya're talkin' about Sin as if he murdered someone!
+W=BROK
+C1A=ANGRY
+TEN=PC09D_Q6_FREEB
+IT=1
+
+#----------------------
+ID=PC09D_Q6_FREEB
+T=It was just a failed robbery!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=And poisoning a police officer.
+W=WES
+
+T=Nothing important, then.
+W=WES
+C2A=WONDER
+
+T=I wouldn't say not important... But nobody's dead.
+W=BROK
+
+T=Besides... he won't do it again. I'm 100% sure of it.
+W=BROK
+C1A=OPPOSITE
+
+T=Uh-uh.
+W=WES
+C2A=NORMAL
+
+T=Agent X-598. Please give your input on this.
+W=WES
+
+T=There's a 95% probability of criminals committing a new crime within 10 years.
+W=TRIBOTCOP
+
+T=This is a well known statistic.
+W=TRIBOTCOP
+
+T=Therefore, we suggest the subject must be having some kind of brain malfunction for contradicting this.
+W=TRIBOTCOP
+
+T=Oh! So I'm crazy, uh?...
+W=BROK
+C1A=ANGRY
+
+T=For what? Believing no one's perfect?
+W=BROK
+
+T=Do all citizens have to believe all the crap you say?
+W=BROK
+
+T=Tell me! What's the source of this blasted figure?
+W=BROK
+C1A=MEH
+
+T=Even if it were true, there's still a 5% chance to never get in any trouble! And ten years is a very long time!
+W=BROK
+
+T=Calm down and focus.
+W=WES
+
+T=We're not here to judge you.
+W=WES
+C2A=WONDER
+
+T=Yeah, right...
+W=BROK
+
+T=Let's move on.
+W=WES
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q6_PRISON
+T=Put him in prison.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...Uh-uh.
+W=WES
+
+T=For your information...
+W=TRIBOTCOP
+
+T=The device was up to 90%, close to shock-reacting when the subject replied.
+W=TRIBOTCOP
+
+T=Looks like even you don't really believe this is an appropriate solution.
+W=WES
+
+T=Well... Why not?
+W=BROK
+C1A=MAYBE
+
+T=Give him some time to think. That's what prisons are for, right?
+W=BROK
+
+T=I thought you'd be better aware of our system by now.
+W=WES
+
+T=Prisons are only there for one reason. Give us time before passing judgement.
+W=WES
+C1A=THINK
+
+T=Incidentally, the Government is currently aiming to reduce judgement calculation time.
+W=TRIBOTCOP
+
+T=When this process is finalized, prisons will be deemed unnecessary.
+W=TRIBOTCOP
+
+T=There are only three possible outcomes.
+W=WES
+
+T=Get freed, exiled, or...
+W=WES
+
+T=Assassinated.
+W=BROK
+C1A=ANGRY
+
+T=We prefer the term "eliminated".
+W=WES
+C2A=WONDER
+
+T=Wait a sec. A machine decides whether we live or die...?
+W=BROK
+C1A=WONDER
+
+T=I'm aware of the data thingamabobs to help with the investigation but...
+W=BROK
+
+T=What happened to "only a human can be judge?"
+W=BROK
+C1A=THINK
+
+T=This point is still being debated inside the Government.
+W=TRIBOTCOP
+
+T=Which doesn't make sense. Machines don't commit mistakes. They're neutral.
+W=TRIBOTCOP
+
+T=Says who?
+W=BROK
+C1A=ANGRY
+
+T=Commissioner, we've got enough elements for this question.
+W=TRIBOTCOP
+
+T=Uh-uh. I agree.
+W=WES
+C2A=NORMAL
+
+T=What a world we live in...
+W=BROK
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q6_KILL
+T=So... Sin tried to rob valuable medicine, he poisoned a police officer...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=He brutally attacked me and if I didn't have fighting abilities, I'd probably be dead now!
+W=BROK
+C1A=ANGRY
+
+T=What are you waiting for? Kill him! 
+W=BROK
+TEN=PC09D_Q6_KILL_CHECKELECTROCUTE
+
+
+#----------------------
+ID=PC09D_Q6_KILLOK
+T=...
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=You're actually OK with us terminating him.
+W=WES
+
+T=Aren't you full of surprises.
+W=WES
+C2A=WONDER
+
+T=I... was just joking...
+W=BROK
+C1A=HAPPY
+
+T=You have no idea how many people "joke" during interrogations.
+W=WES
+TEN=PC09D_CHECKNEXT
+IT=1
+
+#----------------------
+ID=PC09D_Q6_KILLNOTOK
+T=No. You don't believe this.
+W=WES
+C1=BROK
+C1A=TIRED
+C2=WES
+C2A=ANGRY
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=This is either extreme foolishness or a mental weakness.
+W=WES
+
+T=I... thought this was the answer you expected from me...
+W=BROK
+
+T=We don't expect anything but the truth from you.
+W=WES
+C2A=NORMAL
+
+T=This feedback will be noted as a positive aspect of the subject.
+W=TRIBOTCOP
+
+T=Pray tell?!
+W=BROK
+C1A=ANGRY
+
+T=Trying to solve inner conflicts by looking at facts only.
+W=TRIBOTCOP
+
+T=I just lied... That's all.
+W=BROK
+
+T=You won't change what I believe in.
+W=BROK
+
+T=Uh-uh.
+W=WES
+
+T=Talking about that...
+W=WES
+C2A=WONDER
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q8
+T=Next question.
+W=WES
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Have you ever murdered someone?
+W=WES
+C2A=WONDER
+
+T=Uh?!
+W=BROK
+C1A=SURPRISED
+
+T=Please reply.
+W=WES
+C2A=NORMAL
+
+T=...
+W=BROK
+TEN=PC09D_Q8_CHOICE
+
+#----------------------
+ID=PC09D_Q8_YES
+T=Yeah. Of course I've murdered someone!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_Q8B
+
+#----------------------
+ID=PC09D_Q8_NO
+T=No! I've never murdered anyone.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_ELECTROCUTE
+
+
+#----------------------
+ID=PC09D_Q8B
+T=...
+W=WES
+C1=BROK
+C1A=CONFUSED
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...
+W=TRIBOTCOP
+
+T=...
+W=BROK
+
+T=W-What the...?!
+W=BROK
+C1A=SURPRISED
+
+T=Hmm.
+W=WES
+C2A=WONDER
+
+T=That's impossible! I'd never...
+W=BROK
+TEN=PC09D_Q8_CHECKWHOKILL
+IT=1
+
+#----------------------
+ID=PC09D_Q8_KILLEDTRAMP
+T=...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I... I know.
+W=BROK
+
+T=This morning, I terminated a tramp on my street.
+W=BROK
+
+T=Did you?
+W=WES
+
+T=He... asked me to do it. Incurable disease.
+W=BROK
+C1A=DISAPPOINTED
+
+T=Alright.
+W=WES
+C2A=NORMAL
+
+T="Alright?" That's all?...
+W=BROK
+C1A=MEH
+
+T=Tramps aren't considered valuable people. Quite the opposite, actually.
+W=WES
+
+T=I bet you'd say that. But this was a good person.
+W=BROK
+
+T=Right.
+W=WES
+TEN=PC09D_CHECKNEXT
+IT=1
+
+#----------------------
+ID=PC09D_Q8_KILLEDNOONE
+T=I... couldn't kill someone in cold blood!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=There's something wrong with your contraption! Ya gotta believe me!
+W=BROK
+C1A=SURPRISED
+
+T=Uh-uh.
+W=WES
+C2A=NORMAL
+
+T=Unless... You're considering bots.
+W=BROK
+C1A=WONDER
+
+T=You've killed bots?
+W=WES
+C2A=SURPRISED
+
+T=They can't be killed. They're machines.
+W=BROK
+C1A=ALRIGHT
+
+T=...
+W=TRIBOTCOP
+
+T=Uh-uh.
+W=WES
+C1A=THINK
+C2A=WONDER
+
+T=Let's be more specific.
+W=WES
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q9
+T=Have you killed Lia?
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=What?!
+W=BROK
+C1A=ANGRY
+
+T=Answer the question!
+W=WES
+C2A=ANGRY
+TEN=PC09D_Q9_CHOICE
+
+
+#----------------------
+ID=PC09D_Q9_YES
+T=Sure! I killed her!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Then I cut her into a thousand pieces and swallowed 'em!
+W=BROK
+TEN=PC09D_ELECTROCUTE
+
+#----------------------
+ID=PC09D_Q9_YESB
+T=Never been so happy to get electroshocked...
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=So... you didn't.
+W=WES
+TEN=PC09D_Q9_NO
+
+
+#----------------------
+ID=PC09D_Q9_NO
+T=No! Of course not!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Say it aloud.
+W=WES
+
+T=I did not kill Lia!
+W=BROK
+C1A=OPPOSITE
+
+T=...
+W=BROK
+
+T=...
+W=TRIBOTCOP
+
+T=The data is confirmed with a 99.998% probability.
+W=TRIBOTCOP
+
+T=See? Your stupid machine agrees with me!
+W=BROK
+C1A=ANGRY
+
+T=Uh-uh.
+W=WES
+
+T=What does this have to do with Sin?!
+W=BROK
+
+T=You can complain later. This interrogation isn't over.
+W=WES
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q10
+T=Last question.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Who did you really kill?
+W=WES
+TEN=PC09D_Q10_CHOICE
+
+#----------------------
+ID=PC09D_Q10_NOONE
+T=No one.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=I've never killed anyone.
+W=BROK
+TEN=PC09D_ELECTROCUTE
+
+
+#----------------------
+ID=PC09D_Q10_NOONEB
+T=I don't quite understand your insistence.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Are ya tryin' to frame me for somethin'?!
+W=BROK
+C1A=ANGRY
+
+T=Don't tell me I wouldn't remember if I ever killed someone!
+W=BROK
+
+T=Technically there's a slim possibility the subject cannot remember doing it.
+W=TRIBOTCOP
+
+T=This usually happens when suffering from psychotic issues like schizophrenia...
+W=TRIBOTCOP
+
+T=Shut up, you heap of junk! I'm not mad!
+W=BROK
+C1A=FURIOUS
+
+T=Uh-uh.
+W=WES
+C2A=NORMAL
+
+T=...
+W=BROK
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_Q10_ME
+T=I've killed myself.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+TEN=PC09D_ELECTROCUTE
+
+#----------------------
+ID=PC09D_Q10_MEB
+T=The subject is not making any sense.
+W=TRIBOTCOP
+C1=BROK
+C1A=STUPID
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+
+#T=Although he clearly intends to kill himself with this reply, this hasn't happened yet.
+#W=TRIBOTCOP
+
+T=I can confirm you're not dead...
+W=WES
+C1A=ANGRY
+
+T=But it seems you do want to die prematurely.
+W=WES
+C2A=HAPPY
+
+T=Where's your sense of humor?
+W=BROK
+
+T=Humor is a concept hard to grasp for us but it seems highly counter-productive...
+W=TRIBOTCOP
+
+T=Yeah yeah, I get the picture. You're no fun.
+W=BROK
+
+T=So! Are we done?
+W=BROK
+
+T=You did this to escape the question...
+W=WES
+C2A=WONDER
+
+T=Very well.
+W=WES
+C2A=NORMAL
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q10_NOIDEA
+T=I... can't remember.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...
+W=WES
+
+T=...
+W=TRIBOTCOP
+
+T=See? No electroshock. I told you!
+W=BROK
+C1A=ALRIGHT
+
+T=Must be somethin' wrong with your machine.
+W=BROK
+
+T=Uh-uh. Possibly.
+W=WES
+
+T=We agree with the subject. The data of this interrogation is of contradictory nature.
+W=TRIBOTCOP
+
+T=Very well.
+W=WES
+C2A=WONDER
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q10_BOLT
+T=Yeah... There's this robot I met recently.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=After losing his job, he feared being reset and losing his memory...
+W=BROK
+C1A=DOWN
+
+T=There was so much suffering in his voice...
+W=BROK
+
+T=Uh-uh. So you...
+W=WES
+C2A=WONDER
+
+T=Destroyed him. Yeah.
+W=BROK
+C1A=DISAPPOINTED
+
+T=...
+W=WES
+C2A=WONDER
+
+T=...
+W=TRIBOTCOP
+
+T=As I said... It doesn't matter, right?
+W=BROK
+C1A=DOWN
+
+T=I mean, he was just a robot.
+W=BROK
+
+T=Uh-uh.
+W=WES
+C2A=NORMAL
+
+T=Yet you now consider a robot to be "someone".
+W=WES
+
+T=I... Erm...
+W=BROK
+
+T=Ya sure?
+W=BROK
+C1A=THINK
+
+T=Remember the question. "Who did you kill".
+W=WES
+
+T=Oh...
+W=BROK
+
+T=Well, maybe... But...
+W=BROK
+
+T=They're not humans. So...
+W=BROK
+
+T=They're inferior?
+W=WES
+C2A=WONDER
+
+T=Yeah... I guess.
+W=BROK
+C1A=WONDER
+
+T=Uh-uh.
+W=WES
+C2A=NORMAL
+
+T=...
+W=TRIBOTCOP
+TEN=PC09D_CHECKNEXT
+
+
+#----------------------
+ID=PC09D_Q10_TRAMP
+T=I told you...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=This morning... There was this old man in my street.
+W=BROK
+C1A=DOWN
+
+T=Uh-uh.
+W=WES
+
+T=I'm guessing he was a Slumer.
+W=WES
+
+T=Yeah.
+W=BROK
+
+T=It doesn't matter, then.
+W=WES
+
+T=Obviously... Police ain't supposed to protect us, right?
+W=BROK
+C1A=ANGRY
+
+T=We aren't.
+W=WES
+
+T=As a general rule, the population refered to as "Slumers" aren't paying contributions to the police department.
+W=TRIBOTCOP
+
+T=Then why are your robots and drones wandering through our streets constantly?
+W=BROK
+C1A=ANGRY
+
+T=Criminals need to be chased, wherever they are.
+W=WES
+
+T=But we're not all..
+W=BROK
+
+T=Enough.
+W=WES
+C2A=ANGRY
+TEN=PC09D_CHECKNEXT
+
+#----------------------
+ID=PC09D_OVER
+T=This interrogation is over.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=Stopping timer...
+W=TRIBOTCOP
+TEB=PC09D_PROGRESSBAR_OFF
+
+T=Not too soon!
+W=BROK
+C1A=TIRED
+TEN=PC09D_OVER_PLAYERMOVE
+
+#----------------------
+ID=PC09D_OVER1B
+T=Wait!
+W=BROK
+C1=BROK
+C1A=YELL
+C2=WES
+C2A=SURPRISED
+CONTEXT=After the interrogation
+
+T=What's up with those last questions?!
+W=BROK
+C1A=ANGRY
+C2A=WONDER
+
+T=They're totally irrelevant to Sin's case!
+W=BROK
+
+T=We do not disclose our work methods.
+W=WES
+C2A=NORMAL
+
+T=Ohhhh... I see what you're up to.
+W=BROK
+C1A=MEH
+
+T=You're still blaming me for her death?
+W=BROK
+
+T=That case has been closed years ago. It was an accident.
+W=WES
+
+T=Then why? Why are you bringing this up?
+W=BROK
+C1A=ANGRY
+
+T=We didn't have this powerful hardware at our disposal back then.
+W=WES
+
+T=I just needed to confirm some details.
+W=WES
+
+T=Well... Satisfied?
+W=BROK
+
+T=Uh-uh.
+W=WES
+CLUE=CLUE_WES_INVESTIGATOR
+
+T=What I believe is...
+W=BROK
+SKIPEND=1
+
+T=Not important.
+W=WES
+
+T=You'll have time to think about it in custody.
+W=WES
+
+T=Custody?! But...!
+W=BROK
+C1A=ANGRY
+
+T=I thought you understood I had nothing to do with Sin's incident?
+W=BROK
+C1A=ANGRY
+
+T=Maybe not, but you sure have your share of problems.
+W=WES
+
+T=Anyway, the investigation AI needs time to examine your answers.
+W=WES
+
+T=Investigation... AI?
+W=BROK
+
+T=You mean an artificial intelligence is gonna solve the case by itself?!
+W=BROK
+
+T=Uh-uh. Most of it.
+W=WES
+C2A=WONDER
+
+T=This is outrageous!...
+W=BROK
+C1A=SURPRISED
+
+T=I'm... outraged...
+W=BROK
+C1A=TIRED
+
+T=Do not worry. You're not a suspect for these events.
+W=WES
+C2A=NORMAL
+
+T=There's not much to solve anyway. This case is crystal clear.
+W=WES
+
+T=Is it?... Sin could have been framed.
+W=BROK
+C1A=MAYBE
+
+T=Very unlikely.
+W=WES
+
+T=Let our algorithms do their work. We will release you as soon as possible.
+W=WES
+
+T=The sooner the better!
+W=BROK
+C1A=ANGRY
+
+T=Hmm.
+W=WES
+
+T=Agent X-598, please start the analysis.
+W=WES
+C2A=WONDER
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=And tell Agent Ray to come in.
+W=WES
+
+T=Yes, commissioner.
+W=TRIBOTCOP
+TEN=PC09D_OVER_ROBOTMOVE
+
+
+#----------------------
+ID=PC09D_OVER2
+T=...
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=Come over on this side.
+W=WES
+
+T=Uh?...
+W=BROK
+C1A=WONDER
+TEN=PC09D_OVER_BOTHMOVE
+
+#----------------------
+ID=PC09D_OVER3
+T=That's a blind spot.
+W=WES
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=...?
+W=BROK
+
+T=Listen. I hate this as much as you do.
+W=WES
+
+T=Those AI reliability algorithms, figures and everything...
+W=WES
+
+T=A bunch of crap. No robot should be making decisions in our place.
+W=WES
+C2A=ANGRY
+TEN=PC09D_OVER_RJCOMES
+
+T=You don't say!
+W=BROK
+C1A=MEH
+
+T=But the law is the law.
+W=WES
+C2A=WONDER
+
+T=I'm the commissioner here. I need to follow orders.
+W=WES
+
+T=From who?!
+W=BROK
+
+#----------------------
+ID=PC09D_OVER4
+T=You asked me, chief?
+W=RJ
+C1=BROK
+C1A=THINK
+C3=WES
+C3A=NORMAL
+C4=RJ
+C4A=NORMAL
+TEB=PC09D_OVER_LOOKRJ
+
+T=Yes. Please take this man to a cell.
+W=WES
+
+T=Okay.
+W=RJ
+TEN=PC09D_OVER_RJGOES
+
+
+#----------------------
+ID=PC09D_OVER5
+T=At-cha!...
+W=RJ
+C1=BROK
+C1A=SURPRISED
+C3=WES
+C3A=WONDER
+C4=RJ
+C4A=SURPRISED
+C4_EYESHUT=1
+
+T=Hey!... You're a cat?...
+W=RJ
+C4_EYESHUT=0
+
+T=Uh?...
+W=BROK
+
+T=Don't be foolish. Surely even you can see he's a Reptilian.
+W=WES
+C1A=THINK
+C2A=WONDER
+
+T=Yeah but I hate cats!
+W=RJ
+C4A=OPPOSITE
+
+T=Allergic to cat fur. Yuck.
+W=RJ
+
+T=Enough!
+W=WES
+C2A=ANGRY
+C4A=SURPRISED
+
+T=Screw up one more time and you're fired!
+W=WES
+
+T=Okay, okay!...
+W=RJ
+
+T=You've changed... Chief.
+W=RJ
+C4A=SAD
+
+T=Never threatened me before...
+W=RJ
+C4A=WONDER
+TEN=PC09D_OVER_RJEND
+
+#----------------------
+ID=PC09D_DEAD1
+T=...
+BNAMESP=BROK
+VOICESP=BROK
+
+T=My sensors indicate that the subject's vital functions turned off.
+W=TRIBOTCOP
+C2=WES
+C2A=SURPRISED
+C4=TRIBOTCOP
+C4A=NORMAL
+
+T=...
+W=WES
+C2A=WONDER
+
+T=What a wimp.
+W=WES
+
+T=Giving us trouble up until the end, eh?
+W=WES
+
+T=This incident shall not be made public.
+W=WES
+C2A=NORMAL
+
+T=Erase all evidence including the body. Nobody will look for a Slumer.
+W=WES
+
+T=Yes, chief!
+W=TRIBOTCOP
+TEN=GAMEOVER
+
+
+#----------------------------------
+#= Rescue Sin
+#----------------------------------
+ID=PC09D_SMASH1
+T=Human. Not authorized!
+W=TRIBOTCOP
+C1=BROK
+C1A=FURIOUS
+C2=TRIBOTCOP
+C2A=NORMAL
+CONTEXT=Day 3 - Dee and Brok come to rescue Sin
+TEN=PC09D_SMASH_STARTFIGHT
+
+
+
+
+#----------------------------------
+ID=PC09D_SMASH_FIGHTEND
+T=That barrier solidified as well!
+W=DEE
+C1=BROK
+C1A=ANGRY
+C2=DEE
+C2A=NORMAL
+
+T=It wasn't there two days ago. I guess they upped the security.
+W=BROK
+
+T=Smash it, big guy!
+W=DEE
+C2A=READY
+TEN=PC09D_STORY280_NEWENEMYWAVE
+
+#----------------------------------
+ID=PC09D_SMASH_FINALLY
+T=The way is open!
+W=BROK
+C1=BROK
+C1A=COCKY
+C2=DEE
+C2A=READY
+
+T=Come on!
+W=DEE
+TEN=PC09D_SMASH_TOPC09B
+
+
+#----------------------------------
+ID=PC09D_SPOTTED_STORY280B
+T=What is. Human doing here?!
+W=TRIBOTCOP
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOTCOP
+C2A=NORMAL
+TEN=PC09D_SPOTTED_STORY280C
+
+
+#----------------------------------
+ID=PC09D_TO_JAIL1
+T=Almost there!...
+W=BROK
+A=TIRED
+
+
+#----------------------------------
+ID=PC09D_TO_JAIL_NOPE
+T=Not coming back there!
+W=BROK
+A=ANGRY
+TEN=PC09D_TO_JAIL_NOPE2
+
+#----------------------------------
+ID=PC09D_BARRIER1
+T=That barrier wasn't there!...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=WONDER
+
+T=Doesn't matter. Do your trick!
+W=DEE
+C2A=NORMAL
+
+T=If it works...
+W=BROK
+
+#----------------------------------
+ID=PC09D_BARRIER_AFTER
+T=The deactivation doesn't last long!
+W=BROK
+A=ANGRY
+
+
+#----------------------------------
+ID=PC09D_TO_PC09_NOPE
+T=Hey! Where are you going?!
+W=DEE
+C1=BROK
+C1A=SURPRISED
+C2=DEE
+C2A=ANGRY
+TEN=PC09D_TO_PC09_NOPE2
+
+T=Erm... Sorry.
+W=BROK
+C1A=HAPPY
+TEN=CLICKERS_BACK
+
+
+#----------------------------------
+ID=PC09D_TO_JAIL_DEE1
+T=Almost there!...
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=DEE
+C2A=NORMAL
+
+T=Let's move on!
+W=DEE
+
+
+###############################################
+# PROOFREAD - jblaker - 08/08/2019
+###############################################

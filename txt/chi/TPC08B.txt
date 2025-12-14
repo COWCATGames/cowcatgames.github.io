@@ -1,0 +1,3165 @@
+#-------------------------------
+#=Shay garage
+#-------------------------------
+
+#----- Interactions --------
+PC_LEVER=控制杆
+PC_MASK=面罩
+PC_TUBES=药剂
+PC_INCUBATOR=恒温箱
+PC_TRASH=垃圾
+PC_VEHICLE=车子
+PC_WRENCH=活动扳手
+PC_TOOLS=工具
+PC_ARENA=竞技场
+PC_BLANKET=毛毯
+PC_DOOR=门
+PC_TIMELINE=时间线
+PC_EGG=鸡蛋
+
+#----- Choices / Items --------
+PC08B_SHAY_REMEMBER_CHOICE=你是否忘记了什么是VR竞技场？
+PC08B_SHAY_REMEMBER_YES=听莎莎讲解
+PC08B_SHAY_REMEMBER_NO=没问题，我都记得！
+PC08B_SHAY_INV_HOOVER_CHOICE=出售清洁机器人零件？
+PC08B_SHAY_BOLT_CHOICE=同意？
+PC08B_LISTEN_THEORY=聆听其理论
+PC08B_REST=休息下
+PC08B_GETHINT=获得提示？
+
+GOT_RADAR=诡异的设备
+GOT_LEVER=控制杆！
+GOT_RUBBERCUTTER=橡胶裁刀！
+GOT_REMOTECONTROL=可使用的遥控器！
+
+PC08B_LEVER_CHOICE=启动控制杆？
+
+PC08B_DAY2_END_CHOICE=开始战斗？
+
+PC08B_MACHINE=机器
+PC08B_CONSEQUENCES=后果
+
+#PC08B_STORY320_CHOICE=进入机器？
+PC08B_STORY320_LEAVE=离开？
+
+#----- Hints to find the ads --------
+PC08B_ADHINT_PREFIX=在房间内，谨慎检查这个地方：<col=BOLD>{item}</col>
+PC08B_ADHINT_PC02_FLOORCRACK=跳啊，跳啊！
+PC08B_ADHINT_PC04_VENDING=背景里的机器
+PC08B_ADHINT_PC04_TRASH=使用一个物品
+PC08B_ADHINT_PC04B_TARGET=扔出什么东西
+PC08B_ADHINT_PC04B_PIPE=在后面跳跃和搜索
+PC08B_ADHINT_PC04C_PRODUCTS=获取任何东西
+PC08B_ADHINT_PC04C_BUBBLE=用物品把它拽下来
+PC08B_ADHINT_PC05_WALL=攻击 X 点
+PC08B_ADHINT_PC05B_FLOOR=靠近入口处
+PC08B_ADHINT_PC05C_PIPE=再次使用蛇
+PC08B_ADHINT_PC05C_MACHINEB=站在无底洞的边缘
+PC08B_ADHINT_PC06_WALL=靠近摊位
+PC08B_ADHINT_PC07_MAILBOX=攻击它
+PC08B_ADHINT_PC08B_CHAIR=在地板上，时隐时现
+PC08B_ADHINT_PC08B_DESKB=莎莎旁边
+PC08B_ADHINT_PC09_WINDOWOFF=多次开关百叶窗
+PC08B_ADHINT_PC09B_FRONT=在调试模式下的飘浮座椅，按下蓝色按钮
+PC08B_ADHINT_PC09B_DEBUG=多阅读几页
+PC08B_ADHINT_PC12_AVENDING=打左边的木板
+PC08B_ADHINT_PC12_FLOOR=靠近入口的门
+PC08B_ADHINT_PC14_RTOP=跳到花盆上
+PC08B_ADHINT_PC14B_RPIPEPILL=跳到药丸运管上
+PC08B_ADHINT_PC14C_PLANKS=摧毁木板
+PC08B_ADHINT_PC15_ELEVATOR=跳过中间的传送带
+PC08B_ADHINT_PC15_JUMP=过马路同时避让汽车（注意时机）
+PC08B_ADHINT_PC15B_BOX=按下休息室内的紧急按钮
+PC08B_ADHINT_PC15B_SHELF=跳上警卫台，然后跳到架子上
+PC08B_ADHINT_PC15C_PAINTNG=等待它出现
+PC08B_ADHINT_PC15E_CLOTHES=让衣服掉下来
+PC08B_ADHINT_PC16_TREASURE=胜利
+PC08B_ADHINT_PC16_CONTROLS=左上角
+PC08B_ADHINT_PC17_ROOF=跳上桌子，然后跳上两个展品
+PC08B_ADHINT_PC18_SENTRYBOX=从窗口处可以看到，然后进入哨兵箱子
+PC08B_ADHINT_PC18_CONTAINER=跳到最右边的管道上面，然后进入
+PC08B_ADHINT_PC19_RBUTTON=按下出口附近的右边的按钮
+PC08B_ADHINT_PC19_RTOP=先跳上天平或者板条箱
+PC08B_ADHINT_PC19B_RBEHIND=先移动家具
+
+#----- Topics --------
+TOPIC_BORDER=边防哨所
+TOPIC_ARENA=竞技场
+TOPIC_SELFMODIFIER=自主调节芯片
+TOPIC_HACKER=幽暗
+TOPIC_HELPSHAY=帮助莎莎
+
+PC_HACKER_ADDRESS=“幽暗”后巷
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - illuminati1556 - 17/06/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC08B_BOX1-1=莎莎的防入侵系统一定就在那里头……
+#----------------------------------------------------
+# Brok
+PC08B_LEVER1-1=让我猜猜！
+# Brok
+PC08B_LEVER1-2=嗯……这应该是用来关闭车库门的？
+#----------------------------------------------------
+# Brok
+PC08B_LEVER2-1=难道是缺少了什么？哈哈！
+#----------------------------------------------------
+# Brok
+PC08B_LEVER_PRESS1-1=……？
+# Brok
+PC08B_LEVER_PRESS1-2=似乎没有效果……
+# Brok
+PC08B_LEVER_PRESS1-3=……！
+# Shay
+PC08B_LEVER_PRESS1-4=那是什么声音？
+# Brok
+PC08B_LEVER_PRESS1-5=没、没事！是我不小心踩到些金属废料。
+# Brok
+PC08B_LEVER_PRESS1-6=不是我说，你的车库真需要清理下！
+# Shay
+PC08B_LEVER_PRESS1-7=可我从未丢失过任何东西！
+# Shay
+PC08B_LEVER_PRESS1-8=大哥，注意脚下！
+# Brok
+PC08B_LEVER_PRESS1-9=（趁她还没发现快取走控制杆。）
+#----------------------------------------------------
+# Brok
+PC08B_MASK1-1=这是狩猎机器人的战利品？
+# Shay
+PC08B_MASK1-2=不是啦，笨蛋！
+# Shay
+PC08B_MASK1-3=这是我烧焊时用来保护脸部的面罩。
+#----------------------------------------------------
+# Brok
+PC08B_DRAWER1-1=到处都是些没用的玩意。
+# Shay
+PC08B_DRAWER1-2=各花入各眼。
+#----------------------------------------------------
+# Brok
+PC08B_CUP1-1=呕！这东西都放多久了？里头都长出植物来了！
+# Shay
+PC08B_CUP1-2=噢！原来那瓶能量饮料是丢在这里了！
+# Brok
+PC08B_CUP1-3=无语。
+#----------------------------------------------------
+# Brok
+PC08B_TUBES1-1=看来莎莎是当之无愧的食物替代药丸的头号粉丝。
+# Shay
+PC08B_TUBES1-2=什么叫替代？这些药丸可是含有人类所需的一切营养的。
+# Brok
+PC08B_TUBES1-3=谁说的？
+# Shay
+PC08B_TUBES1-4=科学。
+# Brok
+PC08B_TUBES1-5=科学可喂不饱我。我需要真正的食物。
+#----------------------------------------------------
+# Brok
+PC08B_INCUBATOR1-1=啊！这玩意我听说过！
+# Brok
+PC08B_INCUBATOR1-2=把食物替代药丸放进去就可以生产出仿真食物！
+# Shay
+PC08B_INCUBATOR1-3=不是“仿真”，就是真正的食物。你自己尝尝吧！
+# Brok
+PC08B_INCUBATOR1-4=想得美。
+#----------------------------------------------------
+# Brok
+PC08B_MESS1-1=至少我跟莎莎有个共同点！
+#----------------------------------------------------
+# Brok
+PC08B_TRASH1-1=这里头没什么东西！
+# Shay
+PC08B_TRASH1-2=我不喜欢丢掉东西。
+# Shay
+PC08B_TRASH1-3=这些零零碎碎的杂物或许有一天会用得着。要有点开放思维！
+# Brok
+PC08B_TRASH1-4=……以及一点银行赤字。
+#----------------------------------------------------
+# Brok
+PC08B_VEHICLE1-1=这是电单车？
+# Shay
+PC08B_VEHICLE1-2=曾经是。现在被我改装成了吸尘器。更加实用！
+# Brok
+PC08B_VEHICLE1-3=对你而言吧……
+#----------------------------------------------------
+# Brok
+PC08B_DRAWINGS1-1=那是什么……？
+# Brok
+PC08B_DRAWINGS1-2=你这有藏着小孩子吗？
+# Shay
+PC08B_DRAWINGS1-3=切！我最讨厌熊孩子了。
+# Shay
+PC08B_DRAWINGS1-4=这些都是我正在开发的人工智能画出来的图案。
+# Shay
+PC08B_DRAWINGS1-5=我是打算拿去参加艺术大赛赢点钱回来的。
+# Brok
+PC08B_DRAWINGS1-6=不是很好看啊。
+# Shay
+PC08B_DRAWINGS1-7=你说的太客气了！机器人虽然在很多事情上很靠谱，但是艺术天赋这东西似乎跟它们沾不上边。
+# Shay
+PC08B_DRAWINGS1-8=至少……人类的脑袋无法理解它们。
+# Brok
+PC08B_DRAWINGS1-9=你就不能开发出拥有人类创造力的人工智能吗……？
+# Shay
+PC08B_DRAWINGS1-10=那个……我读过很多研究。
+# Shay
+PC08B_DRAWINGS1-11=理论上来说我们是可以完全复制出人类的大脑……
+# Shay
+PC08B_DRAWINGS1-12=但唯独不包括创造力！
+# Shay
+PC08B_DRAWINGS1-13=人工智能可以模仿部分创意，但是要想从无到有设计出美观的东西？
+# Shay
+PC08B_DRAWINGS1-14=只能说这是你唯一比机器人强的地方！
+# Brok
+PC08B_DRAWINGS1-15=喂，论战斗力没有机器人比得上我！
+#----------------------------------------------------
+# Brok
+PC08B_DRAWINGS2-1=没用的机器人的低劣画作。
+#----------------------------------------------------
+# Brok
+PC08B_WRENCH1-1=每一位发明家都有属于自己的活动扳手！
+# Brok
+PC08B_WRENCH1-2=这个可以送我吗？
+# Shay
+PC08B_WRENCH1-3=不行。
+#----------------------------------------------------
+# Brok
+PC08B_COMPUTER1-1=我不能乱碰莎莎的电脑！
+# Shay
+PC08B_COMPUTER1-2=尤其当着我的面。
+#----------------------------------------------------
+# Brok
+PC08B_TOOLS1-1=这是工具箱。或许我会用得上这个螺丝刀？
+# Shay
+PC08B_TOOLS1-2=别拿我的。
+# Shay
+PC08B_TOOLS1-3=别忘了，你的公寓钥匙的尖端可以用作螺丝刀的！
+# Shay
+PC08B_TOOLS1-4=而且还能自动适应各种尺寸。
+# Brok
+PC08B_TOOLS1-5=对哦！那是你给我私人定制的！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming here for the first time right after Brok almost got killed by Shay's trap
+# *****************************************************************
+# Brok
+PC08B_SHAY_FIRST-1=莎莎！
+# Brok
+PC08B_SHAY_FIRST-2=……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_FIRSTB-1=喂！莎莎！！
+# Shay
+PC08B_SHAY_FIRSTB-2=喔！是你呀，布罗哥！
+# Shay
+PC08B_SHAY_FIRSTB-3=有何贵干呀？
+# Brok
+PC08B_SHAY_FIRSTB-4=门口的那个怪物机器是怎么回事？！
+# Shay
+PC08B_SHAY_FIRSTB-5=怪物？
+# Shay
+PC08B_SHAY_FIRSTB-6=你是指那个圆锯吗？很炫酷吧？
+# Brok
+PC08B_SHAY_FIRSTB-7=炫酷？！我差点就没命了！
+# Shay
+PC08B_SHAY_FIRSTB-8=哎呀，贫民区对独居女性来说是非常危险的。
+# Shay
+PC08B_SHAY_FIRSTB-9=所以我就制造了这个终极检测犯罪设备。
+# Shay
+PC08B_SHAY_FIRSTB-10=你按第一个按键时，它就会检查出你的血压、DNA和压力水平等等……
+# Shay
+PC08B_SHAY_FIRSTB-11=如果你有歹念呢？系统就会检测到并启动圆锯！
+# Shay
+PC08B_SHAY_FIRSTB-12=你告诉我，你最近是不是压力很大心情很暴躁？
+# Brok
+PC08B_SHAY_FIRSTB-13=你是疯了吗？！
+# Shay
+PC08B_SHAY_FIRSTB-14=是呀！
+# Brok
+PC08B_SHAY_FIRSTB-15=……
+# Shay
+PC08B_SHAY_FIRSTB-16=……
+# Shay
+PC08B_SHAY_FIRSTB-17=行了行了！我把它调成非致命模式行了吧。
+# Shay
+PC08B_SHAY_FIRSTB-18=不过这样会降低它的效率……
+# Brok
+PC08B_SHAY_FIRSTB-19=关闭掉它！现在立刻马上。
+# Shay
+PC08B_SHAY_FIRSTB-20=唉……好呗……
+# Shay
+PC08B_SHAY_FIRSTB-21=但只是白天关上！我这里可是有很多贵重物品的。
+# Shay
+PC08B_SHAY_FIRSTB-22=对了，你还没说你来这里干嘛？
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_THINK1-1=（这是我最好的朋友！我们从上幼儿园开始就认识了。）
+# Brok
+PC08B_SHAY_THINK1-2=（虽然一直以来都有不少摩擦，但我们可是过命的交情！）
+# Brok
+PC08B_SHAY_THINK1-3=（唔……经历了刚才的圆锯事件后我想收回这话。）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Shay
+# *****************************************************************
+# Brok
+#Day 1
+PC08B_SHAY_BORDER1-1=我需要你帮忙通过边防哨所。
+# Shay
+PC08B_SHAY_BORDER1-2=就知道你终究会有这个打算。
+# Shay
+PC08B_SHAY_BORDER1-3=瞧，我都为这一天做好准备了！
+# Brok
+PC08B_SHAY_BORDER1-4=真的？
+# Shay
+PC08B_SHAY_BORDER1-5=唔，我把它放在哪了？
+# Shay
+PC08B_SHAY_BORDER1-6=等一下……我找找……
+# Shay
+PC08B_SHAY_BORDER1-7=找到了！
+# Shay
+PC08B_SHAY_BORDER1-8=“唯有两样东西可以通过边境——其一是在主机进行登记的授权公民，其二是管制商品。”
+# Shay
+PC08B_SHAY_BORDER1-9=“任何被储藏在包裹中的生物将会被自动毁灭。”
+# Shay
+PC08B_SHAY_BORDER1-10=“因此，最佳方案就是杀死你。”
+# Brok
+PC08B_SHAY_BORDER1-11=这不行！
+# Shay
+PC08B_SHAY_BORDER1-12=废话！
+# Shay
+PC08B_SHAY_BORDER1-13=理论上来说，这是可行的，不过你要是不愿意……
+# Brok
+PC08B_SHAY_BORDER1-14=……
+# Shay
+PC08B_SHAY_BORDER1-15=好啦，另一个办法就没那么简单了。
+# Shay
+PC08B_SHAY_BORDER1-16=“如何成为授权公民。”
+# Shay
+PC08B_SHAY_BORDER1-17=“边防哨所会扫描入口处的公民以获取其体纹。”
+# Shay
+PC08B_SHAY_BORDER1-18=“此信息随后会用于对比边防哨所本地服务器中储存的资料。”
+# Shay
+PC08B_SHAY_BORDER1-19=“每个边防哨所都拥有主机服务器的资料备份。”
+# Shay
+PC08B_SHAY_BORDER1-20=“所以，你必须连接其中一个服务器，然后添加你的体纹然后就……”
+# Shay
+PC08B_SHAY_BORDER1-21=“铛铛铛铛！你就可以像市民一样自由出入市区了。”
+# Brok
+PC08B_SHAY_BORDER1-22=听起来挺简单的！
+# Shay
+PC08B_SHAY_BORDER1-23=哦，我忘了提及负责看守服务器的安保设备。
+# Shay
+PC08B_SHAY_BORDER1-24=不过对你来说应该只是小菜一碟！
+# Brok
+PC08B_SHAY_BORDER1-25=哈哈……谢谢你对我的信心……
+# Brok
+PC08B_SHAY_BORDER1-26=我开始犹豫这份差事是否值得继续做下去。
+# Shay
+PC08B_SHAY_BORDER1-27=唔……我答应过不插手你的私家侦探工作，不过……
+# Shay
+PC08B_SHAY_BORDER1-28=你这也太悲观了，要用乐观态度来思考！
+# Brok
+PC08B_SHAY_BORDER1-29=说清楚点？
+# Shay
+PC08B_SHAY_BORDER1-30=你要是成为合法市民的话，那你就可以把生意开拓到市区去了！
+# Shay
+PC08B_SHAY_BORDER1-31=那就意味着发财了！
+# Brok
+PC08B_SHAY_BORDER1-32=这是想得太简单了。那些富人怎么可能会找我这种低等的侦探。
+# Brok
+PC08B_SHAY_BORDER1-33=不过……试试也无妨。
+# Shay
+PC08B_SHAY_BORDER1-34=这才像样嘛，布罗哥！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER2-1=连接服务器，然后添加体纹……
+# Brok
+PC08B_SHAY_BORDER2-2=说起来好像很简单……可是具体需要怎么实现呢？
+# Shay
+PC08B_SHAY_BORDER2-3=稍等一下！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER2B-1=哇！这是怎么回事？
+# Shay
+PC08B_SHAY_BORDER2B-2=我正在使用扫描仪获取你的体纹……
+# Shay
+PC08B_SHAY_BORDER2B-3=……完美！
+# Brok
+PC08B_SHAY_BORDER2B-4=啥？什么完美？
+# Shay
+PC08B_SHAY_BORDER2B-5=我把相关信息注入了你的基因。
+# Brok
+PC08B_SHAY_BORDER2B-6=啥？！那不是很危险？！
+# Shay
+PC08B_SHAY_BORDER2B-7=才不呢！
+# Shay
+PC08B_SHAY_BORDER2B-8=将信息注入基因才是万全之策。这样才不会丢失！
+# Brok
+PC08B_SHAY_BORDER2B-9=我不是说这个。
+# Shay
+PC08B_SHAY_BORDER2B-10=很少人掌握到这种实验性的基因转移技术。不过你走运了……我恰好就是其中一位！
+# Brok
+PC08B_SHAY_BORDER2B-11=我向来都是那么走运的……
+# Brok
+PC08B_SHAY_BORDER2B-12=那你刚才注入的是什么信息？
+# Shay
+PC08B_SHAY_BORDER2B-13=你的体纹。
+# Brok
+PC08B_SHAY_BORDER2B-14=你把我的体纹注入……我的身体？
+# Shay
+PC08B_SHAY_BORDER2B-15=对呀！
+# Brok
+PC08B_SHAY_BORDER2B-16=……
+# Shay
+PC08B_SHAY_BORDER2B-17=……
+# Shay
+PC08B_SHAY_BORDER2B-18=我知道你在想什么，不过……
+# Shay
+PC08B_SHAY_BORDER2B-19=这其中的技术比你想象中的复杂！我需要添加加密钥匙、信息采集程序……
+# Brok
+PC08B_SHAY_BORDER2B-20=算了，那我接下来怎么做？
+# Shay
+PC08B_SHAY_BORDER2B-21=001号边防哨所。
+# Shay
+PC08B_SHAY_BORDER2B-22=有一栋金字塔形状楼顶的高楼。你肯定不会认错的！
+# Brok
+PC08B_SHAY_BORDER2B-23=哦，我记得那个奇怪的金字塔楼顶。
+# Shay
+PC08B_SHAY_BORDER2B-24=你得想办法混进去，然后连接里头的服务器。
+# Shay
+PC08B_SHAY_BORDER2B-25=你必须触摸服务器才能建立连接，因为那里的服务器都是离线的，无法远程操控。
+# Shay
+PC08B_SHAY_BORDER2B-26=我已经设定好自动入侵服务器系统，然后将你的体纹输入数据库。
+# Brok
+PC08B_SHAY_BORDER2B-27=金字塔形状的大楼。将这玩意插进机器里。明白了！
+# Brok
+PC08B_SHAY_BORDER2B-28=真的会有效吗？
+# Shay
+PC08B_SHAY_BORDER2B-29=或许吧。
+# Brok
+PC08B_SHAY_BORDER2B-30=那如果不成功呢？
+# Shay
+PC08B_SHAY_BORDER2B-31=那你就会被无数的安保无人机和三角机器人追杀。
+# Brok
+PC08B_SHAY_BORDER2B-32=你可真行……
+# Shay
+PC08B_SHAY_BORDER2B-33=相信我吧！我感觉大概会成功的！
+# Brok
+PC08B_SHAY_BORDER2B-34=唔……也许我是世上最笨蛋的笨蛋……
+# Brok
+PC08B_SHAY_BORDER2B-35=不过，我相信你。
+# Shay
+PC08B_SHAY_BORDER2B-36=好样的！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER3-1=我就不假装懂什么电脑了，不过你就不能……
+# Brok
+PC08B_SHAY_BORDER3-2=远程入侵他们的网络吗？就是遥控什么的？
+# Shay
+PC08B_SHAY_BORDER3-3=虽然不想承认，但有些事情是连我这样经验丰富的电脑高手都没辙的。
+# Shay
+PC08B_SHAY_BORDER3-4=主服务器向来都是离线不联网的。
+# Brok
+PC08B_SHAY_BORDER3-5=真让人失望。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BORDER4-1=金字塔形状的大楼。将这玩意插进机器里。明白了！
+# Shay
+PC08B_SHAY_BORDER4-2=很好！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1-1=话说，你不需要个助手吗？
+# Shay
+PC08B_SHAY_BOLT1-2=不。
+# Brok
+PC08B_SHAY_BOLT1-3=这……不是我期待的答案……
+# Brok
+PC08B_SHAY_BOLT1-4=那个，我有个请求。我认识的某个机器人即将会被报废。
+# Brok
+PC08B_SHAY_BOLT1-5=你不会眼睁睁看着一个无辜的生命被如此抹杀掉吧？
+# Shay
+PC08B_SHAY_BOLT1-6=你什么时候都交上机器人朋友了？
+# Brok
+PC08B_SHAY_BOLT1-7=我的原则向来是谁对我好我就对谁好！
+# Shay
+PC08B_SHAY_BOLT1-8=好吧，是什么类型的机器人？
+# Brok
+PC08B_SHAY_BOLT1-9=我确定不是三角机器人。是更古老的模型。有着一双锈迹斑斑的手臂以及一个方方正正的脑袋。
+# Brok
+PC08B_SHAY_BOLT1-10=他在边防哨所的分拣中心工作很多年了。
+# Shay
+PC08B_SHAY_BOLT1-11=嗯……或许……
+# Brok
+PC08B_SHAY_BOLT1-12=我就知道你会答应的！谢谢你！
+# Shay
+PC08B_SHAY_BOLT1-13=喂！先听我说完！
+# Shay
+PC08B_SHAY_BOLT1-14=这一定是战前时代的机器人，改装这种机器人可是违法的。
+# Brok
+PC08B_SHAY_BOLT1-15=你什么时候担心过违法？
+# Shay
+PC08B_SHAY_BOLT1-16=对呀，想想都觉得刺激！或许我可以尝试移除他的追踪器。
+# Shay
+PC08B_SHAY_BOLT1-17=不过……
+# Brok
+PC08B_SHAY_BOLT1-18=我就担心你会这么说，要钱是吧？
+# Shay
+PC08B_SHAY_BOLT1-19=对。在机器人恢复运作之前，我得支付他的维护费用以及花时间修理他。
+# Shay
+PC08B_SHAY_BOLT1-20=所以……就200乌尼币吧，我会从今晚的格斗奖金中扣除的。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1B-1=那么……花200乌尼币收留博特？
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1YES-1=成交。我会通知他过来的，谢了！
+# Shay
+PC08B_SHAY_BOLT1YES-2=很期待他的到来！我一直很好奇这类古董是怎么操作的！
+# Brok
+PC08B_SHAY_BOLT1YES-3=你得答应我别删除他的记忆。
+# Shay
+PC08B_SHAY_BOLT1YES-4=放心吧，我会多留几个备份的！
+# Brok
+PC08B_SHAY_BOLT1YES-5=那……唔……好吧。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_BOLT1NO-1=这么贵呀……让我考虑下。
+# Shay
+PC08B_SHAY_BOLT1NO-2=好的。
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_BOLT2-1=我的新助手呢？
+# Brok
+PC08B_SHAY_BOLT2-2=稍待片刻！我去带他过来。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_WELCOME1-1=有空吗？
+# Shay
+PC08B_SHAY_WELCOME1-2=很忙，但你说吧！
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_WELCOME2-1=怎么了？
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_FIRSTEXIT-1=我走啦。
+# Shay
+PC08B_SHAY_FIRSTEXIT-2=等等！
+# Shay
+PC08B_SHAY_FIRSTEXIT-3=你不打算先训练下吗？今晚是……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA1-1=今晚是啥？
+# Shay
+PC08B_SHAY_ARENA1-2=格斗赛呀。
+# Brok
+PC08B_SHAY_ARENA1-3=对哦！可是……
+# Shay
+PC08B_SHAY_ARENA1-4=你又忘了？每晚都有赛事的呀！
+# Brok
+PC08B_SHAY_ARENA1-5=那个……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_REMEMBER_YES-1=真的很抱歉……最近的记忆越来越糟糕了。
+# Brok
+PC08B_SHAY_REMEMBER_YES-2=我怕有一天我会连名字都忘了。
+# Shay
+PC08B_SHAY_REMEMBER_YES-3=我懂了，你的脑袋就像汽水一样，充满了泡沫！
+# Brok
+PC08B_SHAY_REMEMBER_YES-4=对……
+# Shay
+PC08B_SHAY_REMEMBER_YES-5=开心点啦！我都习惯了提醒你，算是跟你做生意付出的小小代价吧。
+# Shay
+PC08B_SHAY_REMEMBER_YES-6=我就从头讲解一遍吧。
+# Shay
+PC08B_SHAY_REMEMBER_YES-7=我在暗网上有个VR竞技场设备。
+# Shay
+PC08B_SHAY_REMEMBER_YES-8=你负责战斗，我负责管理。
+# Shay
+PC08B_SHAY_REMEMBER_YES-9=观众会投注你的表现。你的战斗表现越好，我就能赚到越多钱！
+# Shay
+PC08B_SHAY_REMEMBER_YES-10=唔，我是指……咱们。咱们就能赚到更多钱。毕竟你也有分红的。
+# Brok
+PC08B_SHAY_REMEMBER_YES-11=我分多少？
+# Shay
+PC08B_SHAY_REMEMBER_YES-12=百分之四十。
+# Brok
+PC08B_SHAY_REMEMBER_YES-13=啥？我竟然会同意这数目？！
+# Shay
+PC08B_SHAY_REMEMBER_YES-14=你得信我呀！
+# Brok
+PC08B_SHAY_REMEMBER_YES-15=我感觉被你忽悠了。
+# Shay
+PC08B_SHAY_REMEMBER_YES-16=喂，我也要冒险的好吗！这种赛事可是违法的！
+# Shay
+PC08B_SHAY_REMEMBER_YES-17=再说了……没有我的设备的话你自己一个人也搞不成呀。
+# Brok
+PC08B_SHAY_REMEMBER_YES-18=好好好……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_REMEMBER_NO-1=我当然记得呀！论战斗，我可是大师级的呀，哪怕是虚拟的也没差！
+# Shay
+PC08B_SHAY_REMEMBER_NO-2=那么大师，你最好训练下自己，免得到时候手艺生疏！
+# Brok
+PC08B_SHAY_REMEMBER_NO-3=绝不会！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA2-1=说重点吧，我该如何战斗？
+# Shay
+PC08B_SHAY_ARENA2-2=这座舱会探测你的基本体征然后简化成所有观众都能看见的生命条。
+# Brok
+PC08B_SHAY_ARENA2-3=所有人？！这也……太不注重隐私了吧。
+# Shay
+PC08B_SHAY_ARENA2-4=那你在签合同前怎么不先查看隐私条例！
+# Shay
+PC08B_SHAY_ARENA2-5=这个程序包含有虚拟人工智能对手，也就是俗称的人机对战。
+# Shay
+PC08B_SHAY_ARENA2-6=这些电脑对手都比较容易对付，他们的外貌和招式都是模拟你现实生活中见过的人与物。
+# Shay
+PC08B_SHAY_ARENA2-7=不过，真正的麻烦在于之后的夜战！
+# Shay
+PC08B_SHAY_ARENA2-8=在通关后，你会面对真正的对手——“大师”，他跟你一样是个真人。
+# Shay
+PC08B_SHAY_ARENA2-9=而观众们其实就是冲着这场决斗而来的！
+# Brok
+PC08B_SHAY_ARENA2-10=好像很危险的样子……
+# Shay
+PC08B_SHAY_ARENA2-11=不入虎穴焉得虎子！
+# Shay
+PC08B_SHAY_ARENA2-12=每次你被击中，生命条就会减短。
+# Shay
+PC08B_SHAY_ARENA2-13=不仅如此，你座舱中的激光会为你模拟出挨揍的感觉！
+# Shay
+PC08B_SHAY_ARENA2-14=惊喜不？
+# Brok
+PC08B_SHAY_ARENA2-15=我有拒绝评价的权利。
+# Shay
+PC08B_SHAY_ARENA2-16=只要生命条不清空，那你就没什么好担心的。
+# Brok
+PC08B_SHAY_ARENA2-17=啥？！别跟我说……
+# Shay
+PC08B_SHAY_ARENA2-18=你会真的死亡？理论上来说，是会的。
+# Brok
+PC08B_SHAY_ARENA2-19=（咕噜）
+# Shay
+PC08B_SHAY_ARENA2-20=但实际上是不大可能发生的，放心吧！
+# Shay
+PC08B_SHAY_ARENA2-21=在训练时致命打击是关闭的——只有在夜战时才会启动，因为死亡的刺激会大大地增加赌注数额。
+# Shay
+PC08B_SHAY_ARENA2-22=另外如果你的生命条清空的话，那你可以逃跑。
+# Shay
+PC08B_SHAY_ARENA2-23=放心吧，我会发提示给你的。
+# Shay
+PC08B_SHAY_ARENA2-24=我可不愿失去你。
+# Brok
+PC08B_SHAY_ARENA2-25=那我就放心些了，谢谢你！
+# Shay
+PC08B_SHAY_ARENA2-26=毕竟，要想找个像你这样的疯大个可不容易呀。
+# Brok
+PC08B_SHAY_ARENA2-27=当我没说。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA3-1=那训练呢？
+# Shay
+PC08B_SHAY_ARENA3-2=你会面对各种随机生成的陷阱。
+# Shay
+PC08B_SHAY_ARENA3-3=训练会给你提供金钱和经验。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_ARENA4-1=那些虚拟战斗之类的东西……可以再解释一遍吗？
+# Shay
+PC08B_SHAY_ARENA4-2=很简单……首先你得进入旁边房间的座舱。
+# Shay
+PC08B_SHAY_ARENA4-3=然后打败所有的陷阱和敌人，然后就赢了！
+# Shay
+PC08B_SHAY_ARENA4-4=对了，别忘了勤加训练！你现在的身材都走形了。
+# Brok
+PC08B_SHAY_ARENA4-5=喂……！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HERSELF1-1=这么黑漆漆的环境你也能工作？
+# Shay
+PC08B_SHAY_HERSELF1-2=我这是在进行隔离测试。
+# Brok
+PC08B_SHAY_HERSELF1-3=隔离？
+# Shay
+PC08B_SHAY_HERSELF1-4=对。
+# Shay
+PC08B_SHAY_HERSELF1-5=在我们的世界中，周围环境会起到不少干扰，比如噪音。
+# Brok
+PC08B_SHAY_HERSELF1-6=这我可深有体会！我的邻居每晚就吵死人……
+# Shay
+PC08B_SHAY_HERSELF1-7=瞧见这个设备没？这是助听器。
+# Shay
+PC08B_SHAY_HERSELF1-8=我将它的功能成功逆向工程，现在它不再放大声音……
+# Brok
+PC08B_SHAY_HERSELF1-9=而是隔绝声音？
+# Shay
+PC08B_SHAY_HERSELF1-10=见到你突然变聪明了我很欣慰！
+# Brok
+PC08B_SHAY_HERSELF1-11=哈，我向来对你的反人类发明物非常感兴趣！
+# Brok
+PC08B_SHAY_HERSELF1-12=不过为啥要把车库关起来？
+# Shay
+PC08B_SHAY_HERSELF1-13=那不是怕有人趁我戴着这设备时潜进来偷东西嘛？我可不想冒险。
+# Brok
+PC08B_SHAY_HERSELF1-14=对哦，我刚才进来时你都没察觉。
+# Shay
+PC08B_SHAY_HERSELF1-15=你又不是一般人！你可是竞技场之王，我唯一的好兄弟嘛！
+# Brok
+PC08B_SHAY_HERSELF1-16=过奖过奖！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HERSELF2-1=你最近过得如何？
+# Shay
+PC08B_SHAY_HERSELF2-2=忙。
+# Brok
+PC08B_SHAY_HERSELF2-3=我就是想说这。
+# Brok
+PC08B_SHAY_HERSELF2-4=打从我们几年前重逢后，除了工作的事之外就没机会聊聊别的了。
+# Brok
+PC08B_SHAY_HERSELF2-5=我们曾经可是无所不谈的朋友啊，究竟出了什么问题？
+# Shay
+PC08B_SHAY_HERSELF2-6=世界变了，你我也变了。
+# Shay
+PC08B_SHAY_HERSELF2-7=时间就是金钱，我们可耗不起像现在这样的聊天。
+# Brok
+PC08B_SHAY_HERSELF2-8=你说得有道理，真是可惜了……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT1-1=我得先走了！
+# Shay
+PC08B_SHAY_EXIT1-2=好的！别忘了经常训练！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT2-1=那我就……不打扰你了。
+# Shay
+PC08B_SHAY_EXIT2-2=再见！
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_NOTHING1-1=我不反对聊天，但是我的时间实在有限。所以长话短说吧。
+# Brok
+PC08B_SHAY_EXIT_NOTHING1-2=抱歉……
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_NOTHING2-1=我得尽快修好这东西……没事的话别打扰我。
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_GOODLUCK-1=祝你好运，布罗哥！
+# Brok
+PC08B_SHAY_EXIT_GOODLUCK-2=好……我的确很需要运气。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-1=再会！
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-2=等一下……
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-3=你是不是拿了我的橡胶裁刀？
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-4=它突然不见了。
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-5=啥……？
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-6=不好意思，我都不知道那是什么东西。
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-7=真的？今天可没别的人来过车库。
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-8=唔，除了格拉夫之外。不过他可不会乱碰东西的……不像你。
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-9=不过仔细一想，他最近的行为确实有点奇怪。
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-10=唔……
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER1-11=应该不是我们拿的，不过我会替你留意的。
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER1-12=好。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER2-1=回头见！
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER3-1=怎么样？找到我的橡胶裁刀了吗？
+# Brok
+PC08B_SHAY_EXIT_RUBBERCUTTER3-2=没呢……
+# Shay
+PC08B_SHAY_EXIT_RUBBERCUTTER3-3=那就继续找吧！很珍贵的。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Shay - Showing inventory
+# *****************************************************************
+# Brok
+PC08B_SHAY_INV_MONEY-1=唔……
+# Shay
+PC08B_SHAY_INV_MONEY-2=那我不客气了。
+# Brok
+PC08B_SHAY_INV_MONEY-3=等一下！这钱我还要用呢！
+# Shay
+PC08B_SHAY_INV_MONEY-4=那就别拿在我面前晃来晃去呀，布罗哥！
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_CATFUR-1=我明白了！那是格拉夫的季节性掉毛，对不对？
+# Brok
+PC08B_SHAY_INV_CATFUR-2=你怎么知道的？！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_MAGNIFY-1=这是高科技玩意哟！
+# Shay
+PC08B_SHAY_INV_MAGNIFY-2=放在上个世纪就算是。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_MINELOADED-1=喂，你瞧……
+# Brok
+PC08B_SHAY_INV_MINELOADED-2=哇！差点掉到地上。
+# Shay
+PC08B_SHAY_INV_MINELOADED-3=你可别炸掉了我的车库！我才刚打扫过一遍。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-1=你可以修一修这个平板遥控器吗？
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-2=平板……遥控器……？
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-3=让我看看。
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-4=……
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-5=你从哪里得来的？
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-6=是我客户的，他是个警察……这是他不小心摔坏的！
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-7=难怪。
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-8=先生，这可不是什么“平板遥控器”！
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-9=这是警队设备，如果没弄错的话……
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-10=它能够远程关闭掉任何电子设备。
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-11=比如说摄像头和地雷。
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-12=真的？可是警察干嘛要关闭掉摄像头？
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-13=为了安全地进入私人场所？或者是……干些偷偷摸摸的事。
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-14=不过并不管我的事。你就告诉我能不能修复它？
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-15=已经修好啦！
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-16=啥……？这么快？
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-17=只是外部受损而已。功能依然正常。
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-18=哦……
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED-19=不过还是谢了！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED2-1=这东西可以用来关闭掉三角机器人吗？
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED2-2=它发出的脉冲强度太低了，而且每次还需要充能……不大可能会有效。
+# Shay
+PC08B_SHAY_INV_REMOTECONTROLDAMAGED2-3=不过你倒是可以拿较小型的电子设备来试试！
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR1-1=我看起来像药剂师吗？
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR1-2=我还以为你是万能的呢！
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR1-3=差不多，除了开药。
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR1-4=说正经的，你有什么建议不？
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR1-5=去药店吧……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-1=我需要你的帮助！
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-2=这处方哪里可以更续期？
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR2-3=去找医生啊？
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-4=要是那么简单的话我就不会问了……
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-5=这是某位瘫痪的贫民朋友吃的药。
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-6=机器提示说需要更新这处方。
+# Shay
+PC08B_SHAY_INV_TRAMPPRESCR2-7=抱歉，医疗安保机制是很特殊的，我不擅长。
+# Brok
+PC08B_SHAY_INV_TRAMPPRESCR2-8=好吧……那我去问别的人吧。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-1=这个地雷似乎坏了，你能否……
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-2=可以，我就不过问你为什么随身带着地雷了……
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-3=是要我修好它对吧？
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-4=嗯，对头！
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-5=自己修吧。
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-6=喂！耍人是不好的。
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-7=不是，这地雷根本没坏，是需要补充火药！
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-8=你自己填充些特拉斯粉末进去就行了。
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-9=我上哪去找？你有多余的吗？
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-10=当然，我可以……
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-11=不对……我都忘了，上周用完后还没重新订购。
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-12=不好意思。帮不了你！
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-13=无语。
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-14=那么，这种粉末长什么样子？
+# Shay
+PC08B_SHAY_INV_MINEBROKEN1-15=灰蓝色的，味道像腐烂的蓬蓬果。
+# Brok
+PC08B_SHAY_INV_MINEBROKEN1-16=唔……我似乎在哪里见过类似的玩意……
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_MINEBROKEN2-1=你需要特拉斯粉末来……唔，“修复”它。
+# Shay
+PC08B_SHAY_INV_MINEBROKEN2-2=蓝色的，味道闻起来像腐烂的蓬蓬果。
+# Brok
+PC08B_SHAY_INV_MINEBROKEN2-3=记住了！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER1-1=我的清洁机器人出故障了……它竟然电击我！
+# Shay
+PC08B_SHAY_INV_HOOVER1-2=这样啊。
+# Brok
+PC08B_SHAY_INV_HOOVER1-3=你能修好它吗？
+# Shay
+PC08B_SHAY_INV_HOOVER1-4=可以，不过最好还是别修。
+# Brok
+PC08B_SHAY_INV_HOOVER1-5=啥……？为啥？
+# Shay
+PC08B_SHAY_INV_HOOVER1-6=你自己都说了。
+# Shay
+PC08B_SHAY_INV_HOOVER1-7=这机器人很危险，它电击了你。
+# Shay
+PC08B_SHAY_INV_HOOVER1-8=如果把它修好，那它又继续伤害你呢？
+# Shay
+PC08B_SHAY_INV_HOOVER1-9=你愿意跟潜在杀人犯同居一室吗？
+# Brok
+PC08B_SHAY_INV_HOOVER1-10=啊……？
+# Brok
+PC08B_SHAY_INV_HOOVER1-11=这、这只是个机器……吸尘器而已！
+# Shay
+PC08B_SHAY_INV_HOOVER1-12=那又如何？
+# Shay
+PC08B_SHAY_INV_HOOVER1-13=我有个更好的建议。
+# Shay
+PC08B_SHAY_INV_HOOVER1-14=从外表上看来，这型号应该至少有30年了吧？
+# Brok
+PC08B_SHAY_INV_HOOVER1-15=对……这是我从公寓附近那处垃圾场捡回来的。
+# Brok
+PC08B_SHAY_INV_HOOVER1-16=不过还能用！直到现在才坏掉了。
+# Shay
+PC08B_SHAY_INV_HOOVER1-17=里头其中一样零件含有联合原子。
+# Shay
+PC08B_SHAY_INV_HOOVER1-18=这种矿石早就被开采一空了。
+# Shay
+PC08B_SHAY_INV_HOOVER1-19=虽然现在已经不使用这种矿石，但是我能用得上它！
+# Shay
+PC08B_SHAY_INV_HOOVER1-20=我们来做个买卖吧。
+# Shay
+PC08B_SHAY_INV_HOOVER1-21=我愿意支付200乌尼币回收它。
+# Shay
+PC08B_SHAY_INV_HOOVER1-22=有了这笔钱，你就可以买个新的吸尘器了！
+# Shay
+PC08B_SHAY_INV_HOOVER1-23=成交不？
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER1_YES-1=以我对你的了解，我肯定这矿石的价值至少要高十倍，不过……好吧。
+# Brok
+PC08B_SHAY_INV_HOOVER1_YES-2=拿去吧。
+# Shay
+PC08B_SHAY_INV_HOOVER1_YES-3=好！200乌尼币转账给你了。
+# Brok
+PC08B_SHAY_INV_HOOVER1_YES-4=（不知道该怎么向格拉夫解释……他很喜欢这机器的。）
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER1_NO-1=抱歉，我对它有感情了。
+# Brok
+PC08B_SHAY_INV_HOOVER1_NO-2=这是我跟格拉夫搬进公寓时的第一样新家具……
+# Shay
+PC08B_SHAY_INV_HOOVER1_NO-3=好吧，我懂了。但你别总是那么念旧啦！
+# Shay
+PC08B_SHAY_INV_HOOVER1_NO-4=过去的事就让它过去吧，做人要往前看！
+# Shay
+PC08B_SHAY_INV_HOOVER1_NO-5=虽然……有时候未来就在过去。
+# Brok
+PC08B_SHAY_INV_HOOVER1_NO-6=……？
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_HOOVER2-1=关于那个清洁机器人……
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_APARTMENTKEY-1=怎么了？
+# Brok
+PC08B_SHAY_INV_APARTMENTKEY-2=再次感谢你做的万能螺丝刀钥匙！
+# Shay
+PC08B_SHAY_INV_APARTMENTKEY-3=哦！我还以为……
+# Shay
+PC08B_SHAY_INV_APARTMENTKEY-4=算了。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_PENDANT-1=……
+# Shay
+PC08B_SHAY_INV_PENDANT-2=……
+# Shay
+PC08B_SHAY_INV_PENDANT-3=你还没忘……
+# Brok
+PC08B_SHAY_INV_PENDANT-4=永远不会。
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_INV_GUN-1=噢，买了个新玩具哟。
+# Brok
+PC08B_SHAY_INV_GUN-2=这不是我的！
+# Shay
+PC08B_SHAY_INV_GUN-3=安啦，谁都会有秘密的。
+# Brok
+PC08B_SHAY_INV_GUN-4=哼……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-1=唔……我……
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-2=啊！我的橡胶裁刀！
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-3=我就知道肯定是你拿走的！
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-4=橡胶……裁刀……？
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-5=对呀，难不成是什么？
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-6=这……不是控制杆吗？这是插在墙上的那个槽口里的……
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-7=当然啦！我就是放那里省得整天到处去找。
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-8=嗷……
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-9=这东西很实用的。它只会切割橡胶！不会对其他的材料造成任何伤害。
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-10=所以……快还给我！
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-11=等等！我或许用得上它！
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-12=啥？刚才你连它是干嘛用的都不知道！
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-13=但现在知道了呀！
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-14=求求你！借给我吧！
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-15=啊……
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-16=行了行了！我暂时不用它好了吧。先借你一阵子……
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-17=太好了！
+# Unknown
+PC08B_SHAY_INV_LEVER_AFTER-18=（吻脸）
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-19=唔……
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER-20=你是最棒的！
+# Shay
+PC08B_SHAY_INV_LEVER_AFTER-21=不、不必客气……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_LEVER_AFTER2-1=（这东西用来对付橡胶机器人会很实用！）
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_DEFAULT1-1=这个东西你需要吗？
+# Shay
+PC08B_SHAY_INV_DEFAULT1-2=唔……不用。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_INV_DEFAULT2-1=那这个呢？
+# Shay
+PC08B_SHAY_INV_DEFAULT2-2=虽说我是让你收集很多废料，但这可不是我要的呀！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Shay
+# *****************************************************************
+# Shay
+PC08B_SHAY_ARENABEFORE-1=你要在今晚前先来点训练吗？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Bolt, which we saved from the Border Post
+# *****************************************************************
+# Brok
+#For now he's disabled
+PC08B_BOLT1-1=嘿呀！
+# Brok
+PC08B_BOLT1-2=很高兴你终于过来了！
+# Bolt
+PC08B_BOLT1-3=……
+# Brok
+PC08B_BOLT1-4=你没事吧？
+# Shay
+PC08B_BOLT1-5=别管它。我关闭了它以进行备份程序。
+# Brok
+PC08B_BOLT1-6=啥？可是……
+# Shay
+PC08B_BOLT1-7=大概会持续一天的时间。
+# Brok
+PC08B_BOLT1-8=可怜呀……
+# Shay
+PC08B_BOLT1-9=你总是那么感性！难怪你每晚都那么喜欢砸机器人了！
+# Brok
+PC08B_BOLT1-10=哈哈哈哈。
+#----------------------------------------------------
+# Brok
+#If your language does not distinguish it and him, just say it was deactivated
+PC08B_BOLT2-1=没用的，莎莎关闭了它……他……唉，我都搞不清了。
+#----------------------------------------------------
+# Bolt
+PC08B_BOLTON1-1=布罗格主人！
+# Bolt
+PC08B_BOLTON1-2=你救了——我的命！你是我的——救命恩人！
+# Brok
+PC08B_BOLTON1-3=喔，没事！举手之劳！
+# Shay
+PC08B_BOLTON1-4=那的确，毕竟是我同意雇佣他的。该感激的是我！
+# Brok
+PC08B_BOLTON1-5=别听她的，她就是刀子嘴豆腐心。
+# Shay
+PC08B_BOLTON1-6=可恶……
+# Bolt
+PC08B_BOLTON1-7=我爱——你们！
+# Bolt
+PC08B_BOLTON1-8=我爱——所有人！这个世界——真是美好！
+# Brok
+PC08B_BOLTON1-9=哇……怎么都性情大变了……
+# Bolt
+PC08B_BOLTON1-10=我非常非常——高兴得到——这份新的工作！
+# Bolt
+PC08B_BOLTON1-11=现在——我的任务——就是帮助你！
+# Brok
+PC08B_BOLTON1-12=收集广告？
+# Bolt
+PC08B_BOLTON1-13=是的！
+# Bolt
+PC08B_BOLTON1-14=每次委托——只需支付——20乌尼币！
+# Brok
+PC08B_BOLTON1-15=莎莎！
+# Shay
+PC08B_BOLTON1-16=喂！我也得赚钱支付它的维护费用的呀！
+# Bolt
+PC08B_BOLTON1-17=我会待在——车库里——不过我拥有——强大的感应器。
+# Bolt
+#His boss is Shay.
+PC08B_BOLTON1-18=根据我的——老板所说——你的记忆——有限因此——我会每次——只发布——一个广告——的信息！
+# Brok
+PC08B_BOLTON1-19=唔……那谢谢你……
+#----------------------------------------------------
+# Bolt
+PC08B_BOLTON2-1=你需要——寻找什么——广告？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting Bolt
+# *****************************************************************
+# Shay
+PC08B_BOLT_HIT1-1=住手！你这样会干扰到备份程序的。
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_HIT2-1=你究竟听没听见……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After taking a bath in the lake
+# *****************************************************************
+# Shay
+PC08B_SHAY_STINK1-1=唔……
+# Shay
+PC08B_SHAY_STINK1-2=别跟我说你跑去沼泽游泳了？
+# Brok
+PC08B_SHAY_STINK1-3=那行。我不跟你说。
+# Shay
+PC08B_SHAY_STINK1-4=好恶心……
+# Shay
+PC08B_SHAY_STINK1-5=给！
+# Brok
+PC08B_SHAY_STINK1-6=啊！这是啥？
+# Shay
+PC08B_SHAY_STINK1-7=这是除臭器。
+# Brok
+PC08B_SHAY_STINK1-8=好棒！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Leaving
+# *****************************************************************
+# Brok
+PC08B_LEAVING1-1=还不能离开……得先向莎莎多打听下边防哨所的情报！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Leaving
+# *****************************************************************
+# Brok
+PC08B_LEAVING2-1=现在还不能走……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - End of day 1, before the night fight
+# *****************************************************************
+# Brok
+PC08B_STORY120_1-1=我……呼哧呼哧……
+# Brok
+PC08B_STORY120_1-2=我已经……呼哧呼哧……
+# Brok
+PC08B_STORY120_1-3=准备好了……
+# Shay
+PC08B_STORY120_1-4=放松点，布罗哥！
+# Shay
+PC08B_STORY120_1-5=战斗将会在十分钟后开始。
+# Brok
+PC08B_STORY120_1-6=啥？可是你说……
+# Shay
+PC08B_STORY120_1-7=我动用了我的穿越时空能力！
+# Brok
+PC08B_STORY120_1-8=穿越……时空……？
+# Shay
+PC08B_STORY120_1-9=你迟到了，所以我就回到一个小时前去找你。
+# Brok
+PC08B_STORY120_1-10=可是……这是不可能的呀！
+# Shay
+PC08B_STORY120_1-11=是吗？
+# Shay
+PC08B_STORY120_1-12=既然可以想象得到，那就可以实现得到，不对吗？
+# Brok
+PC08B_STORY120_1-13=你说得我都糊涂了……
+# Shay
+PC08B_STORY120_1-14=行了行了！
+# Shay
+PC08B_STORY120_1-15=你猜对了，我在耍你而已。
+# Shay
+PC08B_STORY120_1-16=认识你那么多年了，你以为我还不了解你吗？
+# Shay
+PC08B_STORY120_1-17=要想让你准时抵达，那就绝不可以告诉你正确的时间。
+# Brok
+PC08B_STORY120_1-18=啊……我又中计了！
+# Shay
+PC08B_STORY120_1-19=幸亏你那么善忘！
+# Shay
+PC08B_STORY120_1-20=不过……穿越时空，听起来好像很实用？
+# Shay
+PC08B_STORY120_1-21=这个嘛，其实有很多有趣的理论……
+# Brok
+PC08B_STORY120_1-22=呃哦……大科学家开始发表言论了。
+# Shay
+PC08B_STORY120_1-23=喂！你这不是还有十分钟的空闲时间吗？
+# Brok
+PC08B_STORY120_1-24=忙碌了一整天……我倒想趁机休息下。
+# Shay
+PC08B_STORY120_1-25=哦……那好吧。
+# Shay
+PC08B_STORY120_1-26=既然你宁愿把时间花在睡觉上而不是用来增长见识，那随便你吧。
+#----------------------------------------------------
+# Brok
+PC08B_STORY120_REST-1=对头……那我打个小盹。
+# Brok
+PC08B_STORY120_REST-2=你也希望我调整到最佳状态再出场吧？
+# Shay
+PC08B_STORY120_REST-3=那是。
+# Shay
+PC08B_STORY120_REST-4=那你就给我拿出最好的表现来！你我都需要这笔钱过日子的！
+#----------------------------------------------------
+# Brok
+PC08B_STORY120_DOREST1-1=（……）
+# Brok
+PC08B_STORY120_DOREST1-2=（一闭上眼睛就想到格拉夫……）
+# Brok
+PC08B_STORY120_DOREST1-3=（我这么做究竟对不对……？）
+# Brok
+PC08B_STORY120_DOREST1-4=（难道都是我的错……？）
+# Brok
+PC08B_STORY120_DOREST1-5=（有时候……我觉得……）
+# Brok
+PC08B_STORY120_DOREST1-6=（不应该由我来照顾他的。）
+# Brok
+PC08B_STORY120_DOREST1-7=（她不应该这么信任我的。）
+# Brok
+PC08B_STORY120_DOREST1-8=（我连自己都照顾不好。）
+# Brok
+PC08B_STORY120_DOREST1-9=（我就是个没用的穷光蛋，只会惹麻烦。）
+# Brok
+PC08B_STORY120_DOREST1-10=（只是个……无名小卒……）
+# Brok
+PC08B_STORY120_DOREST1-11=（……呼噜……）
+#----------------------------------------------------
+# Brok
+PC08B_STORY120_THEORY-1=其实……你说得我都感兴趣了。继续说吧！
+# Shay
+PC08B_STORY120_THEORY-2=太好了！
+# Shay
+PC08B_STORY120_THEORY-3=首先，我来问你个简单的问题。
+# Shay
+PC08B_STORY120_THEORY-4=什么是时间？
+# Brok
+PC08B_STORY120_THEORY-5=呃……
+# Brok
+PC08B_STORY120_THEORY-6=就是……
+# Brok
+PC08B_STORY120_THEORY-7=某种单位？
+# Brok
+PC08B_STORY120_THEORY-8=比如说，我体重220磅，你则是……唔……
+# Brok
+PC08B_STORY120_THEORY-9=你体重多少？
+# Shay
+PC08B_STORY120_THEORY-10=布罗哥，你对女人的认知就跟对科学一样，对不对？
+# Shay
+PC08B_STORY120_THEORY-11=算了！我明白你的意思。时间是个常量，对吧？
+# Shay
+PC08B_STORY120_THEORY-12=比如说，我维修这个平板电脑需耗时一分钟。
+# Shay
+PC08B_STORY120_THEORY-13=与此同时，你站在那个垃圾堆顶端，俯瞰我的车库。
+# Shay
+PC08B_STORY120_THEORY-14=等我修好它时，对你而言时间过去了多久？
+# Brok
+PC08B_STORY120_THEORY-15=呃……一分钟？
+# Shay
+PC08B_STORY120_THEORY-16=错！
+# Brok
+PC08B_STORY120_THEORY-17=啥？
+# Shay
+PC08B_STORY120_THEORY-18=时间是相对的。从不同的角度看时间是区别的。
+# Shay
+PC08B_STORY120_THEORY-19=拿我刚才的比方来说，对你而言时间是差不多过了一分钟。
+# Shay
+PC08B_STORY120_THEORY-20=差不多，但不准准是。
+# Shay
+PC08B_STORY120_THEORY-21=这其中的差别非常渺小，甚至可能少于一纳秒。
+# Shay
+PC08B_STORY120_THEORY-22=当你爬得越高时，你所承受的地心引力就越少。
+# Shay
+PC08B_STORY120_THEORY-23=就好比人造卫星。
+# Shay
+PC08B_STORY120_THEORY-24=引力作用再加上卫星围绕地球旋转的速度，会导致卫星的时钟每天增长足足50毫秒。
+# Brok
+PC08B_STORY120_THEORY-25=所以说，你是指我会比你衰老得更快？
+# Shay
+PC08B_STORY120_THEORY-26=对头！
+# Shay
+PC08B_STORY120_THEORY-27=或许一辈子也就快了那么一秒，但不可否认的是的确存在着区别。
+# Shay
+PC08B_STORY120_THEORY-28=这种现象被称为时间膨胀。
+# Brok
+PC08B_STORY120_THEORY-29=这现象很重要吗？
+# Shay
+PC08B_STORY120_THEORY-30=是的，因为这意味着一样很重要的事……
+# Shay
+PC08B_STORY120_THEORY-31=时间与空间是密不可分的。
+# Shay
+PC08B_STORY120_THEORY-32=你应该知道每个物体都拥有三个坐标——高度、宽度、以及深度，我们称之为维度。
+# Shay
+PC08B_STORY120_THEORY-33=时间也一样，时间就是第四维。
+# Shay
+PC08B_STORY120_THEORY-34=我们很难想象时间是脑海产生出来的幻觉。
+# Shay
+PC08B_STORY120_THEORY-35=既然我们可以让物体在空间中移动……那么为何不可让物体在时间中移动呢？
+# Shay
+PC08B_STORY120_THEORY-36=但具体需要怎样才能做到呢？
+# Brok
+PC08B_STORY120_THEORY-37=不知道。
+# Shay
+PC08B_STORY120_THEORY-38=就是以接近光速在空间中移动。
+# Brok
+PC08B_STORY120_THEORY-39=光速？
+# Shay
+PC08B_STORY120_THEORY-40=喂，你没上过学吗？小学生都知道什么是光速！
+# Brok
+PC08B_STORY120_THEORY-41=你这么一说……
+# Brok
+PC08B_STORY120_THEORY-42=以前我和爷爷……经常一块看星空。
+# Brok
+PC08B_STORY120_THEORY-43=他说我们看见的星星都是来自几百万年前的样子。
+# Shay
+PC08B_STORY120_THEORY-44=没错。因为光并非瞬间移动，星星的光线需要经过很长的时间才照射到我们面前。
+# Shay
+PC08B_STORY120_THEORY-45=就好比你现在看到的我，其实是过去的我的影像。
+# Brok
+PC08B_STORY120_THEORY-46=哦？那就是说你的实际年纪其实更小？
+# Shay
+PC08B_STORY120_THEORY-47=那就看你通过什么角度去看了！
+# Shay
+PC08B_STORY120_THEORY-48=总之时间是有稍微的延迟的。只是微小到我们的大脑无法察觉。
+# Brok
+PC08B_STORY120_THEORY-49=但这无法让人穿越时间呀。这只不过是……看看而已。
+# Shay
+PC08B_STORY120_THEORY-50=好，我们现在站着不动。
+# Shay
+PC08B_STORY120_THEORY-51=那如果我们移动呢？
+# Shay
+PC08B_STORY120_THEORY-52=假设你有个双胞胎弟弟。
+# Brok
+PC08B_STORY120_THEORY-53=真的吗？
+# Shay
+PC08B_STORY120_THEORY-54=当然不是，你个笨蛋！一个你就已经够麻烦了！
+# Brok
+PC08B_STORY120_THEORY-55=喂！
+# Shay
+PC08B_STORY120_THEORY-56=但假设说你有个弟弟。
+# Shay
+PC08B_STORY120_THEORY-57=当你在地球上时，你的弟弟正在一艘快速行驶的飞船上。
+# Shay
+PC08B_STORY120_THEORY-58=无数年过去了……
+# Shay
+PC08B_STORY120_THEORY-59=突然有一天，他回来了！
+# Shay
+PC08B_STORY120_THEORY-60=但是神奇的是……他比你年轻很多很多！
+# Brok
+PC08B_STORY120_THEORY-61=哇！这不公平！
+# Shay
+PC08B_STORY120_THEORY-62=但确实如此，你这位双胞胎弟弟的老化程度比你慢多了。
+# Shay
+PC08B_STORY120_THEORY-63=时间会视乎于你的相对移动速度而加快或变慢。
+# Shay
+PC08B_STORY120_THEORY-64=所以从某个角度来说……你的双胞胎弟弟穿越到了未来。
+# Brok
+PC08B_STORY120_THEORY-65=好吧，不过……我可不想穿越到未来，那太糟糕了。
+# Brok
+PC08B_STORY120_THEORY-66=我认识的人要么老态龙钟要么已离开人世……
+# Brok
+PC08B_STORY120_THEORY-67=难道就不能穿越回过去吗？
+# Shay
+PC08B_STORY120_THEORY-68=留意我说过的话。要想穿越到未来，我们需要达到接近光速的速度。
+# Shay
+PC08B_STORY120_THEORY-69=那么，如果我们能刚好达到光速呢？
+# Brok
+PC08B_STORY120_THEORY-70=那个……
+# Brok
+PC08B_STORY120_THEORY-71=我猜大概是会解体吧。我们的身体根本无法承受。
+# Brok
+PC08B_STORY120_THEORY-72=还有脑袋也同样承受不了，我们会发疯的。
+# Shay
+PC08B_STORY120_THEORY-73=也许是的，不过你犯了一个常识性错误。
+# Shay
+PC08B_STORY120_THEORY-74=要想加速并不需要沿着直线前进！
+# Shay
+PC08B_STORY120_THEORY-75=飞船可以不断逐渐前后移动，这种微小的速度变化甚至可以瞒过人类身体和脑袋的感应。
+# Brok
+PC08B_STORY120_THEORY-76=你是说……就像我们之前的影像那样？
+# Shay
+PC08B_STORY120_THEORY-77=对！
+# Shay
+PC08B_STORY120_THEORY-78=飞船内部的空间会缩小，包括里头的一切物体……
+# Shay
+PC08B_STORY120_THEORY-79=然后突然……
+# Shay
+PC08B_STORY120_THEORY-80=嘭！
+# Shay
+PC08B_STORY120_THEORY-81=你达到了光速……然后进入虫洞。
+# Shay
+PC08B_STORY120_THEORY-82=然后，你就可以浏览整个世界的历史。
+# Shay
+PC08B_STORY120_THEORY-83=你可以随意停留在任何地方……以及任何时间。
+# Shay
+PC08B_STORY120_THEORY-84=是不是觉得很兴奋？
+# Shay
+PC08B_STORY120_THEORY-85=你能想象得到那种情景吗？
+# Brok
+PC08B_STORY120_THEORY-86=此时此刻……我只想到头好晕。
+# Shay
+PC08B_STORY120_THEORY-87=……
+# Shay
+PC08B_STORY120_THEORY-88=糟了……
+# Shay
+PC08B_STORY120_THEORY-89=我们没准需要回到过去了……
+# Brok
+PC08B_STORY120_THEORY-90=啥意思？
+# Shay
+PC08B_STORY120_THEORY-91=因为已经到比赛时间了！
+# Shay
+PC08B_STORY120_THEORY-92=快进入座舱！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Alternatives outcomes of the fight
+# *****************************************************************
+# Shay
+PC08B_WIN1-1=再见！
+# Brok
+PC08B_WIN1-2=喂……
+# Brok
+PC08B_WIN1-3=你好像把这一切都当成日常生活一般。
+# Shay
+PC08B_WIN1-4=不是吗？
+# Brok
+PC08B_WIN1-5=我这是冒着生命危险去赚钱！
+# Shay
+PC08B_WIN1-6=切。你根本不会死的！
+# Brok
+PC08B_WIN1-7=啥？
+# Brok
+PC08B_WIN1-8=你为什么一直信心十足地说我不会死什么的？
+# Brok
+PC08B_WIN1-9=就拿今早来说吧，你让我去入侵一个充斥着守卫机器人和激光陷阱的边防哨所？
+# Brok
+PC08B_WIN1-10=还有你布置的那个巨型圆锯差点要了我的命？
+# Brok
+PC08B_WIN1-11=我能活着都已经是走了狗屎运！
+# Shay
+#She's about to say "I know the future"
+PC08B_WIN1-12=真是无聊的问题！这当然是因为我能看透……
+# Shay
+PC08B_WIN1-13=……
+# Shay
+PC08B_WIN1-14=我是说……我能看透你。
+# Shay
+PC08B_WIN1-15=我对你有信心。
+# Brok
+PC08B_WIN1-16=唔……
+# Brok
+PC08B_WIN1-17=好吧……谢了莎莎。
+# Brok
+PC08B_WIN1-18=你是我最好的朋友。
+# Shay
+PC08B_WIN1-19=别客气嘛，布罗哥！
+#----------------------------------------------------
+# Shay
+PC08B_AFTERLEAVING-1=……
+#----------------------------------------------------
+# Shay
+#Gave up
+PC08B_GAVEUP1-1=我不会原谅你的。
+# Brok
+PC08B_GAVEUP1-2=你肯定会的。你还需要我继续比赛来赚钱，对吧？
+# Shay
+PC08B_GAVEUP1-3=对……还有一场。
+# Brok
+PC08B_GAVEUP1-4=啥？就只一场……？
+# Shay
+PC08B_GAVEUP1-5=谁说得准呢。
+#----------------------------------------------------
+# Shay
+#Lost fight
+PC08B_LOST1-1=我真的很需要这笔钱。可惜了……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 start
+# *****************************************************************
+# Shay
+PC08B_DAY2_BEGIN1-1=布罗哥！什么风把你吹来了？
+# Brok
+PC08B_DAY2_BEGIN1-2=那个……
+# Shay
+PC08B_DAY2_BEGIN1-3=抱歉，我现在超忙的。
+# Shay
+PC08B_DAY2_BEGIN1-4=可以稍后再来吗？
+# Brok
+PC08B_DAY2_BEGIN1-5=可是……？
+# Shay
+PC08B_DAY2_BEGIN1-6=对哦！你可以帮忙的！
+# Shay
+PC08B_DAY2_BEGIN1-7=那个，我需要用到某些材料。
+# Shay
+PC08B_DAY2_BEGIN1-8=可是我的供应商却在度假，所以……
+# Shay
+PC08B_DAY2_BEGIN1-9=说来就生气！竟然在这种时候……
+# Brok
+PC08B_DAY2_BEGIN1-10=那我……
+# Shay
+PC08B_DAY2_BEGIN1-11=言归正传，我需要的东西全写在这里了。要不是我……
+# Shay
+PC08B_DAY2_BEGIN1-12=其实，我在忙着一样极其重要的项目。
+# Shay
+PC08B_DAY2_BEGIN1-13=就是……你要是知道的话肯定会大吃一惊。
+# Shay
+PC08B_DAY2_BEGIN1-14=当然，现在你还不知道。不过……
+# Brok
+PC08B_DAY2_BEGIN1-15=打住！！
+# Shay
+PC08B_DAY2_BEGIN1-16=……！
+# Brok
+PC08B_DAY2_BEGIN1-17=……
+# Brok
+PC08B_DAY2_BEGIN1-18=我可以插句话吗？
+# Shay
+PC08B_DAY2_BEGIN1-19=哦……
+# Shay
+PC08B_DAY2_BEGIN1-20=当然可以。
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_ALTERNATE-1=你忘了吗？是你叫我来的！
+# Shay
+PC08B_DAY2_ALTERNATE-2=对哦！我以为你会早些来。
+# Shay
+PC08B_DAY2_ALTERNATE-3=所以！你什么时候会问？
+# Brok
+PC08B_DAY2_ALTERNATE-4=问什么？
+# Shay
+PC08B_DAY2_ALTERNATE-5=芯片。
+# Brok
+PC08B_DAY2_ALTERNATE-6=什么芯片？
+# Shay
+PC08B_DAY2_ALTERNATE-7=……！
+# Shay
+PC08B_DAY2_ALTERNATE-8=哦不。
+# Shay
+PC08B_DAY2_ALTERNATE-9=我懂了。事件发生了变动。
+# Brok
+PC08B_DAY2_ALTERNATE-10=啊？！
+# Shay
+PC08B_DAY2_ALTERNATE-11=听着！
+# Shay
+PC08B_DAY2_ALTERNATE-12=我需要你去见这个叫“幽暗”的黑客。
+#----------------------------------------------------
+# Shay
+PC08B_DAY2_ALTERNATE2-1=我……欠了他100乌尼币，但他只接受线下支付。
+# Shay
+PC08B_DAY2_ALTERNATE2-2=我会转钱给你，你能帮我这个忙吗？
+# Brok
+PC08B_DAY2_ALTERNATE2-3=呃……行？
+# Shay
+PC08B_DAY2_ALTERNATE2-4=谢了！
+# Brok
+PC08B_DAY2_ALTERNATE2-5=跟你说话让我总是跟不上你的思路。
+# Shay
+PC08B_DAY2_ALTERNATE2-6=别担心！你会跟上的！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_SELFMODIFIER1-1=我需要一块自主调节芯片。你有没？
+# Shay
+PC08B_SHAY_SELFMODIFIER1-2=……？
+# Shay
+PC08B_SHAY_SELFMODIFIER1-3=不会吧！你……
+# Shay
+PC08B_SHAY_SELFMODIFIER1-4=真是看不出来唷！
+# Brok
+PC08B_SHAY_SELFMODIFIER1-5=啥？
+# Shay
+PC08B_SHAY_SELFMODIFIER1-6=你是怎么做到的？
+# Shay
+PC08B_SHAY_SELFMODIFIER1-7=哦，我知道了！你肯定是连接至三角网络并搜集数据从而与我们正常交谈的。
+# Shay
+PC08B_SHAY_SELFMODIFIER1-8=不过你的状态似乎不太好。来，拿这根电线去充充电。
+# Brok
+PC08B_SHAY_SELFMODIFIER1-9=喂！我可不是机器人！
+# Shay
+PC08B_SHAY_SELFMODIFIER1-10=你确定？你是本尊……？
+# Shay
+PC08B_SHAY_SELFMODIFIER1-11=嗷……真是大失所望。
+# Shay
+PC08B_SHAY_SELFMODIFIER1-12=不然的话我就可以让你随时跟在身边听候差遣了。
+# Brok
+PC08B_SHAY_SELFMODIFIER1-13=……
+# Brok
+PC08B_SHAY_SELFMODIFIER1-14=所以？
+# Shay
+PC08B_SHAY_SELFMODIFIER1-15=所以……什么？
+# Brok
+PC08B_SHAY_SELFMODIFIER1-16=自主调节芯片啊！
+# Shay
+PC08B_SHAY_SELFMODIFIER1-17=哦，那个嘛。
+# Shay
+PC08B_SHAY_SELFMODIFIER1-18=这种玩意非常精密的，我可没本事制造出来。不过……
+# Shay
+PC08B_SHAY_SELFMODIFIER1-19=我认识个家伙。
+# Shay
+PC08B_SHAY_SELFMODIFIER1-20=绰号“幽暗”，他或许能帮上忙。
+# Brok
+PC08B_SHAY_SELFMODIFIER1-21=幽暗？
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_SELFMODIFIER2-1=所以……你可以帮我做出来吗？
+# Shay
+PC08B_SHAY_SELFMODIFIER2-2=你刚才没听我说话吗？
+# Shay
+PC08B_SHAY_SELFMODIFIER2-3=我没这能力但是我认识的某个人能做到。去找他吧。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HELP1-1=需要什么帮助吗？
+# Shay
+PC08B_SHAY_HELP1-2=还真有！我在赶工明天必须完成的超级重要的项目……
+# Shay
+PC08B_SHAY_HELP1-3=但是进度还差得远，时间过得真是太快了。
+# Brok
+PC08B_SHAY_HELP1-4=放松点。
+# Brok
+PC08B_SHAY_HELP1-5=又不是人命关天的事情。
+# Shay
+PC08B_SHAY_HELP1-6=这可不仅关系到我的命，还有你的……和整个宇宙的生死存亡。
+# Brok
+PC08B_SHAY_HELP1-7=啥？
+# Shay
+PC08B_SHAY_HELP1-8=……开个玩笑而已啦！不过……
+# Shay
+PC08B_SHAY_HELP1-9=我急缺某些关键的材料和零件。
+# Shay
+PC08B_SHAY_HELP1-10=理论上来说我是可以通过快递管道订购……
+# Brok
+PC08B_SHAY_HELP1-11=不过实际上你跟我一样破产了。
+# Shay
+PC08B_SHAY_HELP1-12=差不多。
+# Shay
+PC08B_SHAY_HELP1-13=不过，我们周围就是个无尽资源的宝山！
+# Brok
+PC08B_SHAY_HELP1-14=所以，你需要些什么？
+# Shay
+PC08B_SHAY_HELP1-15=喏。
+# Shay
+PC08B_SHAY_HELP1-16=我已经将清单转发到……你那部古董手机上了。
+# Brok
+PC08B_SHAY_HELP1-17=好的……
+# Brok
+PC08B_SHAY_HELP1-18=我不敢打包票，总之我尽力吧。
+# Brok
+PC08B_SHAY_HELP1-19=或许一路上会碰上你需要的东西。
+# Brok
+PC08B_SHAY_HELP1-20=到时可别少了我的酬劳！
+# Shay
+PC08B_SHAY_HELP1-21=什么？你还想要酬劳？！
+# Brok
+PC08B_SHAY_HELP1-22=那是当然的！
+# Shay
+PC08B_SHAY_HELP1-23=我做的这一切都是为了你呀，布罗哥！你可不可以感激一下！
+# Brok
+PC08B_SHAY_HELP1-24=……？
+# Shay
+PC08B_SHAY_HELP1-25=噢……唔……
+# Shay
+PC08B_SHAY_HELP1-26=好吧。我就按件给你算钱吧。
+# Shay
+PC08B_SHAY_HELP1-27=对了……这个给你！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HELP1B-1=这是……超级黑科技遥控器吗？
+# Shay
+PC08B_SHAY_HELP1B-2=不是啦，只是个黑科技雷达！
+# Shay
+PC08B_SHAY_HELP1B-3=这是我改装出来的，它可以勘测出我所需要的零件的位置。你只须握住它然后仔细聆听。
+# Shay
+PC08B_SHAY_HELP1B-4=它发出声音的越大，就代表你越接近目标！
+# Brok
+PC08B_SHAY_HELP1B-5=太好了！
+# Shay
+PC08B_SHAY_HELP1B-6=记住了——天黑之前我就需要用到那些零件。
+# Shay
+PC08B_SHAY_HELP1B-7=快去快回吧！我的时间很宝贵的！
+# Brok
+PC08B_SHAY_HELP1B-8=喂……！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HELP1C-1=（不过她说得对。忙碌的一天要开始了……）
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_HELP1D-1=等一下！我差点忘了……
+# Shay
+PC08B_SHAY_HELP1D-2=我先重置下博特。
+# Shay
+PC08B_SHAY_HELP1D-3=稍等下……
+# Brok
+PC08B_SHAY_HELP1D-4=他没事吧？
+# Bolt
+PC08B_SHAY_HELP1D-5=正确！
+# Brok
+PC08B_SHAY_HELP1D-6=哇！
+# Bolt
+PC08B_SHAY_HELP1D-7=很高兴——为你服务——主人！
+# Brok
+PC08B_SHAY_HELP1D-8=你没事就好！
+# Brok
+PC08B_SHAY_HELP1D-9=那么，你可以帮我收集那些材料吗？
+# Bolt
+PC08B_SHAY_HELP1D-10=不，我只帮忙——收集广告！
+# Brok
+PC08B_SHAY_HELP1D-11=啥？！
+# Bolt
+PC08B_SHAY_HELP1D-12=随便问——我吧！
+#----------------------------------------------------
+# Shay
+PC08B_SHAY_HELP2-1=尽快给我找来那些零件！我会马上付款的。
+# Shay
+PC08B_SHAY_HELP2-2=坏的也没关系，我可以将就着用的。
+# Brok
+PC08B_SHAY_HELP2-3=真的需要集齐每一样物品吗？
+# Shay
+PC08B_SHAY_HELP2-4=唔……如果只缺一两个的话，那我可以订购新的替代品。
+# Shay
+PC08B_SHAY_HELP2-5=不过，你能找到越多越好！
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HACKER1-1=那个你说能帮我找到芯片的家伙是什么人来的？
+# Shay
+PC08B_SHAY_HACKER1-2=你说“幽暗”？
+# Shay
+PC08B_SHAY_HACKER1-3=他是做见不得光的勾当的。
+# Shay
+PC08B_SHAY_HACKER1-4=入侵系统和电子设备之类的都是他的专长。
+# Shay
+PC08B_SHAY_HACKER1-5=我……曾经跟他做过几笔生意。
+# Brok
+PC08B_SHAY_HACKER1-6=我还以为你是完美无缺的人呢！
+# Shay
+PC08B_SHAY_HACKER1-7=那可没错！总的来说是的。
+# Brok
+PC08B_SHAY_HACKER1-8=对……哈哈。
+# Brok
+PC08B_SHAY_HACKER1-9=我也不是在怪你。有时候要活下去就得灵活处事。
+# Brok
+PC08B_SHAY_HACKER1-10=那我上哪去找他？
+# Shay
+PC08B_SHAY_HACKER1-11=不知道。
+# Shay
+PC08B_SHAY_HACKER1-12=黑客向来都是藏得很隐蔽的。
+# Shay
+PC08B_SHAY_HACKER1-13=尤其为了躲避警察。
+# Brok
+PC08B_SHAY_HACKER1-14=嗷……
+# Shay
+PC08B_SHAY_HACKER1-15=……
+# Brok
+PC08B_SHAY_HACKER1-16=……
+# Shay
+PC08B_SHAY_HACKER1-17=天哪。
+# Shay
+PC08B_SHAY_HACKER1-18=都说了多少遍我没空……
+# Brok
+PC08B_SHAY_HACKER1-19=……
+# Shay
+PC08B_SHAY_HACKER1-20=……但我无法拒绝你这副表情。
+# Shay
+PC08B_SHAY_HACKER1-21=我可以帮你找到他。我会使用之前的联系方式通过三角网追踪他。
+# Brok
+PC08B_SHAY_HACKER1-22=太好了！你是我的救命恩人！
+# Shay
+PC08B_SHAY_HACKER1-23=那可不是！
+# Shay
+PC08B_SHAY_HACKER1-24=说到救命……你迟早会还我这个人情的。
+# Brok
+PC08B_SHAY_HACKER1-25=我可不希望还！因为那意味着你会遭遇危险！
+# Shay
+PC08B_SHAY_HACKER1-26=啊……
+# Shay
+PC08B_SHAY_HACKER1-27=……
+# Shay
+PC08B_SHAY_HACKER1-28=其实……
+# Shay
+PC08B_SHAY_HACKER1-29=这比我想象中的简单。
+# Shay
+PC08B_SHAY_HACKER1-30=这就是他目前所在的位置。
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HACKER1B-1=谢了！不愧是天下第一高手！
+# Shay
+PC08B_SHAY_HACKER1B-2=我对自己的实力可没那么自信，不过还是谢谢夸奖！
+# Shay
+PC08B_SHAY_HACKER1B-3=记得……注意安全，知道吗？他藏匿的地方绝不是什么好地方。
+# Brok
+PC08B_SHAY_HACKER1B-4=你是否忘了我是什么人？
+# Shay
+PC08B_SHAY_HACKER1B-5=就是担心你太过自信……
+# Shay
+PC08B_SHAY_HACKER1B-6=相信我，去找他是个馊主意。
+# Brok
+PC08B_SHAY_HACKER1B-7=有什么大风大浪我没见识过？没事的。
+# Shay
+PC08B_SHAY_HACKER1B-8=或许这次会是个例外……
+# Brok
+PC08B_SHAY_HACKER1B-9=啊，少来啦！
+# Shay
+PC08B_SHAY_HACKER1B-10=我是认真的！我还需要用到你，无论是未来还是……
+# Shay
+PC08B_SHAY_HACKER1B-11=现在。
+# Brok
+PC08B_SHAY_HACKER1B-12=……
+# Brok
+PC08B_SHAY_HACKER1B-13=你还好吧？
+# Brok
+PC08B_SHAY_HACKER1B-14=最近怎么说了那么多高深莫测的话，比平时还要多。
+# Shay
+PC08B_SHAY_HACKER1B-15=大概是因为我累坏了吧，有很多东西赶着完成。
+# Brok
+PC08B_SHAY_HACKER1B-16=要是有什么需要的话……你可以告诉……
+# Shay
+PC08B_SHAY_HACKER1B-17=要想帮忙的话，我已经把资料告诉你了，不是吗？
+# Brok
+PC08B_SHAY_HACKER1B-18=好吧……
+#----------------------------------------------------
+# Brok
+PC08B_SHAY_HACKER2-1=“幽暗”……知道了。
+# Shay
+PC08B_SHAY_HACKER2-2=小心行事。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end
+# *****************************************************************
+# Shay
+PC08B_DAY2_END1-1=喂，布罗哥！
+# Shay
+PC08B_DAY2_END1-2=今天的运气不太好吧？
+# Brok
+PC08B_DAY2_END1-3=那可不是……
+# Brok
+PC08B_DAY2_END1-4=格拉夫差点因为我而送命……
+# Shay
+PC08B_DAY2_END1-5=什么？！
+# Brok
+PC08B_DAY2_END1-6=最近城里排毒丸短缺。
+# Brok
+PC08B_DAY2_END1-7=我回到家时发现他昏迷过去了……
+# Brok
+PC08B_DAY2_END1-8=真是好险呀……幸亏他现在没事了。
+# Shay
+PC08B_DAY2_END1-9=笨蛋！你怎么不早跟我说！
+# Shay
+PC08B_DAY2_END1-10=为什么？！
+# Brok
+PC08B_DAY2_END1-11=我现在才有空来找你！
+# Shay
+PC08B_DAY2_END1-12=我不是说现在！你要是在过去跟我提过，那我就可以帮上忙呀！
+# Shay
+PC08B_DAY2_END1-13=不过多亏你提示我今早的事，否则的话……
+# Brok
+PC08B_DAY2_END1-14=等一下……我完全不理解你说什么了……
+# Brok
+PC08B_DAY2_END1-15=你究竟做了什么事？
+# Shay
+PC08B_DAY2_END1-16=拿着！
+# Brok
+PC08B_DAY2_END1-17=……
+# Brok
+PC08B_DAY2_END1-18=排毒丸？
+# Shay
+PC08B_DAY2_END1-19=给他明天服用吧。
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END1B-1=你不需要吗？
+# Shay
+PC08B_DAY2_END1B-2=我还有，因为我经常没吃省下来的！
+# Brok
+PC08B_DAY2_END1B-3=谢谢。
+# Shay
+PC08B_DAY2_END1B-4=生活就是要准备面对一切的可能性！
+# Brok
+PC08B_DAY2_END1B-5=（这些年来我从未储存过任何药丸，想想都觉得惭愧……）
+# Shay
+PC08B_DAY2_END1B-6=说到这个……你最好也做好准备。
+# Shay
+PC08B_DAY2_END1B-7=你明天会有很多麻烦。
+# Brok
+PC08B_DAY2_END1B-8=你怎么知道的？
+# Shay
+PC08B_DAY2_END1B-9=因为我了解你呀！
+#----------------------------------------------------
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-1=看来你没有集齐我所需的所有材料。
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-2=你要是打算继续探索城市的话，现在是你的最后一次机会了。
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-3=可是……我该开始比赛了呀……？
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-4=比赛推迟了，最后一刻杀出了一个新的挑战者……
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-5=总之……
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-6=那些材料必须在对战开始前集齐！
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-7=不然呢？
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-8=那我就得订购全新的超级昂贵的材料。
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-9=如果钱不够的话……
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-10=那我就得将就着，可是……
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-11=你似乎很紧张不安。没事吧？
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-12=总之……快去把材料找回来吧！尽力吧。
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-13=找不到也没事。
+# Shay
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-14=毕竟，这又不是关乎世界的生死存亡的事情！
+# Brok
+PC08B_DAY2_MATERIALS_NOTEVERYTHING-15=好、好吧……
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVE1-1=喂，我找到了一部分你要的东西！
+# Shay
+PC08B_MATERIALSTOGIVE1-2=什么叫“一部分”？
+# Shay
+PC08B_MATERIALSTOGIVE1-3=我需要清单上的所有物品！
+# Brok
+PC08B_MATERIALSTOGIVE1-4=我已经在尽力了！
+# Brok
+PC08B_MATERIALSTOGIVE1-5=真是忙碌的一天！
+# Shay
+PC08B_MATERIALSTOGIVE1-6=算了。让我瞧瞧。
+# Shay
+PC08B_MATERIALSTOGIVE1-7=……
+# Shay
+PC08B_MATERIALSTOGIVE1-8=嗯……这些将就着也能用。
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVE2-1=我还有更多的材料。
+# Shay
+PC08B_MATERIALSTOGIVE2-2=唔……这是什么东西？
+# Brok
+PC08B_MATERIALSTOGIVE2-3=不是你要的吗？
+# Shay
+PC08B_MATERIALSTOGIVE2-4=是吗？
+# Shay
+PC08B_MATERIALSTOGIVE2-5=好吧。待会儿我再吃。
+# Brok
+PC08B_MATERIALSTOGIVE2-6=呃……
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVE3-1=给你。
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALSTOGIVEALL-1=给你！
+# Shay
+PC08B_MATERIALSTOGIVEALL-2=你集齐所有材料了？
+# Shay
+PC08B_MATERIALSTOGIVEALL-3=很好。
+# Brok
+PC08B_MATERIALSTOGIVEALL-4=就一句“很好”而已？
+# Shay
+PC08B_MATERIALSTOGIVEALL-5=非常棒！
+# Shay
+PC08B_MATERIALSTOGIVEALL-6=你拯救了世界！不对，是整个宇宙！
+# Brok
+PC08B_MATERIALSTOGIVEALL-7=别吹过头了。
+# Shay
+PC08B_MATERIALSTOGIVEALL-8=才没有呢。要是没集齐这些东西的话天知道会是什么样的结果。
+# Brok
+PC08B_MATERIALSTOGIVEALL-9=……
+#----------------------------------------------------
+# Shay
+PC08B_MATERIALS_GIVENMONEY-1=这是给你的报酬。
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALS_GIVENMONEY1-1=不错哟！
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALS_GIVENMONEY2-1=这足以购买一两个蚁堡包了……
+#----------------------------------------------------
+# Brok
+PC08B_MATERIALS_GIVENMONEY3-1=谢了……
+#----------------------------------------------------
+# Shay
+PC08B_MATERIALS_AFTERFIGHT-1=那么！你准备好战斗了吗？
+#----------------------------------------------------
+# Shay
+PC08B_DAY2_END_WELCOME1-1=有什么收获吗？
+# Brok
+PC08B_DAY2_END_WELCOME1-2=没，可以开始战斗了吗？
+# Shay
+PC08B_DAY2_END_WELCOME1-3=就知道你享受战斗更甚于寻宝。
+# Shay
+PC08B_DAY2_END_WELCOME1-4=你自己做决定吧。
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END_STAY-1=我会继续搜寻的。
+# Shay
+PC08B_DAY2_END_STAY-2=抓紧时间了！
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END_STARTFIGHTWITHOUT-1=没有那些材料的话你能否应付得来？
+# Shay
+PC08B_DAY2_END_STARTFIGHTWITHOUT-2=希望可以吧，不过看来你已经打定主意。
+# Brok
+PC08B_DAY2_END_STARTFIGHTWITHOUT-3=好吧……
+#----------------------------------------------------
+# Brok
+PC08B_DAY2_END_STARTFIGHT-1=好，是时候战斗了！
+# Shay
+PC08B_DAY2_END_STARTFIGHT-2=要的就是这种精神！
+# Shay
+PC08B_DAY2_END_STARTFIGHT-3=不过你要注意安全！那位新来的挑战者像是凭空冒出来一般，看样子不易小觑。
+# Brok
+PC08B_DAY2_END_STARTFIGHT-4=放心吧！我可没打算在今天英年早逝。
+# Shay
+PC08B_DAY2_END_STARTFIGHT-5=要是真出什么问题的话我会提醒你认输的！
+# Brok
+PC08B_DAY2_END_STARTFIGHT-6=我认输？
+# Brok
+PC08B_DAY2_END_STARTFIGHT-7=没门！
+# Shay
+PC08B_DAY2_END_STARTFIGHT-8=笨蛋！可惜你没买意外保险。
+# Shay
+PC08B_DAY2_END_STARTFIGHT-9=加油啊！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 after the fight
+# *****************************************************************
+# Shay
+PC08B_DAY2_AFTERFIGHT1-1=那么！正如我所说的……
+# Shay
+PC08B_DAY2_AFTERFIGHT1-2=我明天不营业。
+# Brok
+PC08B_DAY2_AFTERFIGHT1-3=你是要出远门吗？
+# Shay
+PC08B_DAY2_AFTERFIGHT1-4=我……只是需要忙些东西。
+# Brok
+PC08B_DAY2_AFTERFIGHT1-5=是你的那个新发明物吗？
+# Shay
+PC08B_DAY2_AFTERFIGHT1-6=对……
+# Shay
+PC08B_DAY2_AFTERFIGHT1-7=哦！差点忘了！
+# Shay
+PC08B_DAY2_AFTERFIGHT1-8=给你。
+# Brok
+PC08B_DAY2_AFTERFIGHT1-9=信封……？
+# Brok
+PC08B_DAY2_AFTERFIGHT1-10=……
+# Brok
+PC08B_DAY2_AFTERFIGHT1-11=“走投无路时方可打开”？！
+# Brok
+PC08B_DAY2_AFTERFIGHT1-12=你有事瞒着我……
+# Shay
+PC08B_DAY2_AFTERFIGHT1-13=安啦！这只是……
+# Shay
+PC08B_DAY2_AFTERFIGHT1-14=以防万一。
+# Brok
+PC08B_DAY2_AFTERFIGHT1-15=啥？
+# Shay
+PC08B_DAY2_AFTERFIGHT1-16=或许是你需要我拯救……亦或是我需要你拯救？
+# Shay
+PC08B_DAY2_AFTERFIGHT1-17=唉……谁说得清呢！
+# Brok
+PC08B_DAY2_AFTERFIGHT1-18=你说话敢再高深莫测一点吗？
+# Shay
+PC08B_DAY2_AFTERFIGHT1-19=该懂的时候你自然会懂的。
+# Brok
+PC08B_DAY2_AFTERFIGHT1-20=好吧，反正我老早以前已经不再试图去理解你了！
+# Brok
+PC08B_DAY2_AFTERFIGHT1-21=（哈欠）我得回去睡觉了。
+# Brok
+PC08B_DAY2_AFTERFIGHT1-22=再见！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok doesn't know it but this is the last time they talk to each other - and Shay knows it so it's one-sided goodbye.
+# *****************************************************************
+# Shay
+PC08B_DAY2_AFTERFIGHT2-1=布罗哥……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-2=再见……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-3=我……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-4=我会想念你的……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-5=……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-6=不行……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-7=我……不能……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-8=必须专心……
+# Shay
+PC08B_DAY2_AFTERFIGHT2-9=是时候彻底了结此事了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Brok comes in the garage after final boss and last argument with Graff as he's desperate to know what Shay meant with the envelope she gave him
+# *****************************************************************
+# Brok
+PC08B_STORY320_NOBOLT-1=莎莎？
+# Brok
+PC08B_STORY320_NOBOLT-2=莎莎！
+# Brok
+PC08B_STORY320_NOBOLT-3=有人在吗？
+# Brok
+PC08B_STORY320_NOBOLT-4=……
+#----------------------------------------------------
+# Bolt
+#If Bolt was saved, he's there
+PC08B_STORY320_BOLT-1=布罗格——主人！我等着——你呢！
+# Brok
+PC08B_STORY320_BOLT-2=啥？
+# Bolt
+PC08B_STORY320_BOLT-3=你来得——真及时。
+# Bolt
+PC08B_STORY320_BOLT-4=一切都——准备好了。
+# Brok
+PC08B_STORY320_BOLT-5=太好了！可是……
+# Brok
+PC08B_STORY320_BOLT-6=准备好……啥呀？
+# Bolt
+PC08B_STORY320_BOLT-7=请看。
+#----------------------------------------------------
+# Graff
+#Alternative ending （Till end of time） with Graff being there
+PC08B_STORY320_GRAFF-1=你说得对！的确有发现！
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT1-1=很高兴又见面了，博特……你可算是少数不打算干掉我的机器人！
+# Bolt
+PC08B_STORY320_BOLT1-2=我也很——高兴见到你——布罗格主人！
+# Brok
+PC08B_STORY320_BOLT1-3=别叫我主人了。你不是任何人的奴隶。
+# Bolt
+PC08B_STORY320_BOLT1-4=我明白了——布罗格主人。
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT2-1=快回答我！
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-1=那个发明物究竟是干嘛的？
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-2=抱歉——我无法解答。
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-3=莎莎主人——只说。
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-4=等你进来——你就会明白。
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-5=的确是莎莎的风格……
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-6=那好吧……
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-7=我也没什么眷恋的了，那么……
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-8=启动它吧。
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-9=我做不到。
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-10=啥？
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-11=莎莎主人——说你会——自行想到——办法的。
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-12=啊……
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-13=她究竟跑去哪了？
+# Bolt
+PC08B_STORY320_BOLT_MACHINE1-14=莎莎主人——说……
+# Brok
+PC08B_STORY320_BOLT_MACHINE1-15=算了，当我没问。
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-1=你确定什么都不能告诉我吗？
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-2=这是——必要手段。
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-3=莎莎主人——需要你——你也需要她。
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-4=你们的命运——相互缠绕。
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-5=这都什么跟什么呀……？
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-6=我仅仅——是一堆——金属制品。
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-7=我无法——理解这些话。
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-8=哼！我觉得你是明白的，只是不肯告诉我罢了。
+# Bolt
+PC08B_STORY320_BOLT_MACHINE2-9=……
+# Brok
+PC08B_STORY320_BOLT_MACHINE2-10=这时候你该露出震惊的表情。
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_MACHINE3-1=别这样！帮帮我吧！
+# Bolt
+PC08B_STORY320_BOLT_MACHINE3-2=抱歉——设定所限——无法帮忙。
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES1-1=我要是启动它会有什么后果？
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-2=布罗格主人。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-3=你正站在——一个新时代——的起点。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-4=我不会——忘记你的。
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES1-5=你这话听起来怪瘆人的……
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-6=不必——慌张。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-7=大自然——厌恶虚空。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-8=无论发生——什么事。一切问题——会迎刃而解。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES1-9=无论是通过——什么方法。
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES1-10=……现在我更加不放心了。
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES2-1=希望我这么做是对的！
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-2=或许——是的。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-3=你要是——不去做。谁知道——是对是错。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-4=世界可能——会消失在——虚空中。
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES2-5=你是认真的？
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-6=是有这——个可能。一切皆——有可能。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-7=也有可能——这本身就——是一场梦。
+# Bolt
+PC08B_STORY320_BOLT_CONSEQUENCES2-8=一切皆——为虚幻。
+# Brok
+PC08B_STORY320_BOLT_CONSEQUENCES2-9=明白了。你在跟我开玩笑。
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BOLTEXIT-1=我会找出解决方法的。
+#----------------------------------------------------
+# Brok
+#Finds the egg which is a time machine
+PC08B_STORY320_REMOVEBLANKET-1=不会吧！
+# Brok
+PC08B_STORY320_REMOVEBLANKET-2=她真的用那些垃圾材料……建造了一台时间机器……？
+#----------------------------------------------------
+# Bolt
+PC08B_STORY320_REMOVEBLANKET2-1=这只是一个壳。垃圾都在——里面。
+#----------------------------------------------------
+# Graff
+PC08B_STORY320_REMOVEBLANKET2_GRAFF-1=这也太……厉害了……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Trying to start the machine
+# *****************************************************************
+# Brok
+PC08B_EGGDOOR1-1=没有控制杆或按钮啊……
+#----------------------------------------------------
+# Unknown
+PC08B_EGGDOOR1B-1=（敲击）
+# Brok
+PC08B_EGGDOOR1B-2=莎莎？你在里面吗？
+#----------------------------------------------------
+# Brok
+PC08B_EGGDOOR1C-1=哪怕是在里头，怕也是听不见了。
+#----------------------------------------------------
+# Bolt
+PC08B_EGGDOOR1D-1=布罗格主人——她不在。
+# Brok
+PC08B_EGGDOOR1D-2=我就查看下而已。
+#----------------------------------------------------
+# Brok
+PC08B_EGGDOOR2-1=等机器启动时这门肯定会打开……
+#----------------------------------------------------
+# Bolt
+PC08B_EGGHIT1-1=布罗格主人！
+#----------------------------------------------------
+# Bolt
+PC08B_EGGHIT2-1=我不推荐——破坏此机器。
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE1-1=这是年表……
+# Brok
+PC08B_EGGTIMELINE1-2=……
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-1=（好。格拉夫望向别的方向了。）
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-2=（我把时间设定为3030年……也就是五年前。）
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-3=（如果这玩意真的可以回到过去……）
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-4=（那就是个千载难逢的机会……）
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-5=（不仅可以救到……奥特，还有……）
+# Brok
+PC08B_EGGTIMELINE1_GRAFF-6=（其他所有人。）
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-1=（不必迟疑了！）
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-2=（就设定为五年前吧……）
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-3=（……火灾发生前一个星期。）
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-4=（这样……我或许就能改变命运了……）
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-5=（也可能会失去过去五年来的所有记忆。）
+# Brok
+PC08B_EGGTIMELINE1_NORMAL-6=（无论是哪个结果都可以接受……）
+#----------------------------------------------------
+# Brok
+PC08B_EGGTIMELINE2-1=我把时间设定为正确的日期了……
+# Brok
+PC08B_EGGTIMELINE2-2=希望是正确吧。
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT1-1=很明显……这里是插入某样物品的。
+# Brok
+PC08B_EGGSLOT1-2=究竟是什么东西呢？
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT2-1=我要是能活着回来……一定要提醒莎莎下次准备一份使用手册。
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT_PENDANT-1=毋庸置疑了。
+# Brok
+PC08B_EGGSLOT_PENDANT-2=这道光越来越亮了……
+# Brok
+PC08B_EGGSLOT_PENDANT-3=这是用庚酰胺合金做的……
+# Brok
+PC08B_EGGSLOT_PENDANT-4=最强大的机器……
+# Brok
+PC08B_EGGSLOT_PENDANT-5=果然需要最强大的能源。
+#----------------------------------------------------
+# Brok
+PC08B_EGGSLOT_PENDANTB-1=哇！
+# Brok
+PC08B_EGGSLOT_PENDANTB-2=成功了！
+# Brok
+PC08B_EGGSLOT_PENDANTB-3=我的吊坠不再发亮了……
+# Brok
+PC08B_EGGSLOT_PENDANTB-4=难道是被机器汲取了所有的能量？
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_INVENTORY_PENDANT-1=它……在发光？！
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_OPENDOOR1-1=所以……
+# Brok
+PC08B_STORY320_OPENDOOR1-2=我该如何……
+# Various
+PC08B_STORY320_OPENDOOR1-3=“后退”
+# Brok
+PC08B_STORY320_OPENDOOR1-4=这蛋……会说话的？
+#----------------------------------------------------
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-1=还是难以置信这是真的……
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-2=这机器，究竟是干嘛的？
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-3=……
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-4=看来很快就会知道了。
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-5=做梦也没想到这会是真的……
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-6=你、你确定真要这么做吗？
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-7=是为了我？
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-8=嗯。
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-9=可是……
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-10=要是……
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-11=要是不成功的话呢？
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-12=那你今晚的晚餐就烧好了！
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-13=不好笑！
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-14=别担心啦。
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-15=莎莎不会害我的。
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-16=我信任她。
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-17=你……愿意为她冒生命危险？
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-18=当然！事实上，我每晚都为她冒生命危险的呢！
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-19=……
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF-20=布罗格……
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-21=我知道。
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF-22=你啥也不用说。
+#----------------------------------------------------
+# Various
+PC08B_STORY320_OPENDOOR2-1=“一切准备就绪”
+# Various
+PC08B_STORY320_OPENDOOR2-2=“进来吧”
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Final player decision - Brok hesitates to enter the machine
+# *****************************************************************
+# Brok
+PC08B_STORY320_OPENDOOR2B-1=……
+# Brok
+PC08B_STORY320_OPENDOOR2B-2=那么……
+# Brok
+PC08B_STORY320_OPENDOOR2B-3=就到这里了……
+# Brok
+PC08B_STORY320_OPENDOOR2B-4=踏入此门后……
+# Brok
+PC08B_STORY320_OPENDOOR2B-5=就没有回头路了……
+# Brok
+PC08B_STORY320_OPENDOOR2B-6=我的命运会改变。
+# Brok
+PC08B_STORY320_OPENDOOR2B-7=彻底改变……
+# Brok
+PC08B_STORY320_OPENDOOR2B-8=……
+#----------------------------------------------------
+# Brok
+#If Graff is there
+PC08B_STORY320_OPENDOOR_GRAFF1-1=……
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF1-2=那么……
+# Brok
+PC08B_STORY320_OPENDOOR_GRAFF1-3=我想……我们很快就会再见面了……
+# Graff
+PC08B_STORY320_OPENDOOR_GRAFF1-4=……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Till end of time ending - Graff decides to enter the machine himself
+# *****************************************************************
+# Brok
+PC08B_TILLENDTIME_END1-1=格拉夫！！
+# Brok
+PC08B_TILLENDTIME_END1-2=你发什么疯？！
+# Brok
+PC08B_TILLENDTIME_END1-3=快给我出来！
+# Graff
+PC08B_TILLENDTIME_END1-4=……
+# Graff
+PC08B_TILLENDTIME_END1-5=不……
+# Graff
+PC08B_TILLENDTIME_END1-6=我的错就该由我去补救。
+# Graff
+PC08B_TILLENDTIME_END1-7=不应该每次都由你来做出牺牲。
+# Brok
+PC08B_TILLENDTIME_END1-8=可是……我已经把时间设定为3030年了！
+# Graff
+PC08B_TILLENDTIME_END1-9=什么……？
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END2-1=糟了……已经改不了了！
+# Graff
+PC08B_TILLENDTIME_END2-2=没事……
+# Graff
+PC08B_TILLENDTIME_END2-3=至少……我可以见到妈妈……
+# Graff
+PC08B_TILLENDTIME_END2-4=或许……我可以改变一切。
+# Graff
+PC08B_TILLENDTIME_END2-5=倒计时10秒钟。
+# Brok
+PC08B_TILLENDTIME_END2-6=格拉夫……
+# Brok
+PC08B_TILLENDTIME_END2-7=万一……我们没有相遇……
+# Brok
+PC08B_TILLENDTIME_END2-8=或者没有一同生活五年……
+# Brok
+PC08B_TILLENDTIME_END2-9=因为你改写了历史之类的……
+# Brok
+PC08B_TILLENDTIME_END2-10=请务必记住……
+# Brok
+PC08B_TILLENDTIME_END2-11=孩子，我爱你。
+# Graff
+PC08B_TILLENDTIME_END2-12=我也爱你……
+# Graff
+PC08B_TILLENDTIME_END2-13=我会永远记住……
+# Graff
+PC08B_TILLENDTIME_END2-14=3……
+# Graff
+PC08B_TILLENDTIME_END2-15=2……
+# Graff
+PC08B_TILLENDTIME_END2-16=1……
+# Graff
+PC08B_TILLENDTIME_END2-17=永远……
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END3-1=他消失了……
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END3B-1=……？
+# Brok
+PC08B_TILLENDTIME_END3B-2=那是……
+# Brok
+PC08B_TILLENDTIME_END3B-3=我送他的礼物……
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END3C-1=……
+# Brok
+PC08B_TILLENDTIME_END3C-2=再见了，孩子……
+# Brok
+PC08B_TILLENDTIME_END3C-3=愿你闯出更美好的人生。
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END4-1=从那天起……
+# Brok
+PC08B_TILLENDTIME_END4-2=我开始等待……
+# Brok
+PC08B_TILLENDTIME_END4-3=一直等待……
+# Brok
+PC08B_TILLENDTIME_END4-4=祈祷着格拉夫的安全……
+# Brok
+PC08B_TILLENDTIME_END4-5=无论他身处何时何地。
+# Brok
+PC08B_TILLENDTIME_END4-6=不过……
+# Brok
+PC08B_TILLENDTIME_END4-7=他再也没有回来。
+# Brok
+PC08B_TILLENDTIME_END4-8=也许是哪里出错了。
+# Brok
+PC08B_TILLENDTIME_END4-9=也许他创造出了新的时间线。
+# Brok
+PC08B_TILLENDTIME_END4-10=但那也意味着……他不再存在于这个时空了。
+# Brok
+PC08B_TILLENDTIME_END4-11=不知为何……
+# Brok
+PC08B_TILLENDTIME_END4-12=无论我如何努力尝试……
+# Brok
+PC08B_TILLENDTIME_END4-13=我就是无法理解这个机器的运作原理。
+# Brok
+PC08B_TILLENDTIME_END4-14=我只知道它存在过。
+# Brok
+PC08B_TILLENDTIME_END4-15=其他人似乎都不记得格拉夫的存在……
+# Brok
+PC08B_TILLENDTIME_END4-16=而我也感觉有个很熟悉的人从我的记忆中被抹除了。
+# Brok
+PC08B_TILLENDTIME_END4-17=有时候……
+# Brok
+PC08B_TILLENDTIME_END4-18=我会想这是否都只是我的幻觉……
+# Brok
+PC08B_TILLENDTIME_END4-19=但是在我心底里，真相从未被忘却。
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END4C-1=我继续过着生活。
+# Brok
+PC08B_TILLENDTIME_END4C-2=也是没办法的事。
+# Brok
+PC08B_TILLENDTIME_END4C-3=阿迪、格金博士和韦斯。
+# Brok
+PC08B_TILLENDTIME_END4C-4=他们都凭空消失了。
+# Brok
+PC08B_TILLENDTIME_END4C-5=恐怕他们都遭遇了不测……而我当时却没在场。
+# Brok
+PC08B_TILLENDTIME_END4C-6=我也因此永远无法查出案件的真相。
+# Brok
+PC08B_TILLENDTIME_END4C-7=药丸短缺持续恶化。
+# Brok
+PC08B_TILLENDTIME_END4C-8=没过多久……
+# Brok
+PC08B_TILLENDTIME_END4C-9=所有人都试图进入市区或者远走他乡……
+# Brok
+PC08B_TILLENDTIME_END4C-10=但全都失败了。
+# Brok
+PC08B_TILLENDTIME_END4C-11=令人窒息的绝望。
+# Brok
+PC08B_TILLENDTIME_END4C-12=最后，贫民区只剩下了我和寥寥无几的幸存者。
+# Brok
+PC08B_TILLENDTIME_END4C-13=哪怕他归来的机会多么渺茫……
+# Brok
+PC08B_TILLENDTIME_END4C-14=我也会尽力维持这个荒无人烟的地方。
+# Brok
+PC08B_TILLENDTIME_END4C-15=而我的确成功了……
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END4E-1=如今我也油干灯尽了。
+# Brok
+PC08B_TILLENDTIME_END4E-2=虽然膝下无子，但是我感觉很满足。
+# Brok
+PC08B_TILLENDTIME_END4E-3=因为我尽了全力去重建这座城市。
+# Brok
+PC08B_TILLENDTIME_END4E-4=现在是时候停下来睡一个长觉了。
+# Brok
+PC08B_TILLENDTIME_END4E-5=恰恰就是在这一刻……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff finally comes back and sees Brok very old on a rocking chair
+# *****************************************************************
+# Unknown
+PC08B_TILLENDTIME_END5-1=重生纪元3085年
+#----------------------------------------------------
+# Graff
+PC08B_TILLENDTIME_END6-1=……！
+# Graff
+PC08B_TILLENDTIME_END6-2=布罗格……？
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END7-1=这是真的吗？
+# Brok
+PC08B_TILLENDTIME_END7-2=还是说……我上了天堂？
+# Graff
+PC08B_TILLENDTIME_END7-3=我……
+# Graff
+PC08B_TILLENDTIME_END7-4=我真的回来了。
+# Graff
+PC08B_TILLENDTIME_END7-5=你……
+# Graff
+PC08B_TILLENDTIME_END7-6=你都这……
+# Brok
+PC08B_TILLENDTIME_END7-7=这么老了……？
+# Brok
+PC08B_TILLENDTIME_END7-8=对……
+# Brok
+PC08B_TILLENDTIME_END7-9=孩子，你来迟了……
+# Brok
+PC08B_TILLENDTIME_END7-10=我等了……好久好久……
+# Graff
+PC08B_TILLENDTIME_END7-11=我尽了全力……
+# Graff
+PC08B_TILLENDTIME_END7-12=可是那机器……
+# Graff
+PC08B_TILLENDTIME_END7-13=却故障了……
+# Brok
+PC08B_TILLENDTIME_END7-14=我就知道……
+# Brok
+PC08B_TILLENDTIME_END7-15=就知道我们的回忆并非是我的幻觉。
+# Graff
+PC08B_TILLENDTIME_END7-16=……这是什么地方？
+# Brok
+PC08B_TILLENDTIME_END7-17=你的新家。
+# Graff
+PC08B_TILLENDTIME_END7-18=这是贫民区？
+# Brok
+PC08B_TILLENDTIME_END7-19=现在不叫那名字了。
+# Brok
+PC08B_TILLENDTIME_END7-20=现在这里很安全。
+# Brok
+PC08B_TILLENDTIME_END7-21=这是我为你和所有人打造的。
+# Graff
+PC08B_TILLENDTIME_END7-22=……
+# Brok
+PC08B_TILLENDTIME_END7-23=和我说说你的经历吧。
+# Graff
+PC08B_TILLENDTIME_END7-24=这个……
+# Graff
+PC08B_TILLENDTIME_END7-25=我找到了妈妈……
+# Graff
+PC08B_TILLENDTIME_END7-26=可是……我没能救她……
+# Graff
+PC08B_TILLENDTIME_END7-27=我没救到任何人……
+# Brok
+PC08B_TILLENDTIME_END7-28=没事的……
+# Brok
+#Brok gives his pendant
+PC08B_TILLENDTIME_END7-29=给你……
+#----------------------------------------------------
+# Graff
+PC08B_TILLENDTIME_END8-1=这吊坠……
+# Brok
+PC08B_TILLENDTIME_END8-2=我答应过有一天会送你的……
+# Brok
+PC08B_TILLENDTIME_END8-3=现在它是属于你的了。
+# Graff
+PC08B_TILLENDTIME_END8-4=……我懂了！
+# Graff
+PC08B_TILLENDTIME_END8-5=有了它……
+# Graff
+PC08B_TILLENDTIME_END8-6=我就可以补充机器的能源然后回去……！
+# Graff
+PC08B_TILLENDTIME_END8-7=快跟我来！
+# Brok
+PC08B_TILLENDTIME_END8-8=不了。
+# Brok
+PC08B_TILLENDTIME_END8-9=机器的事就算了。
+# Brok
+PC08B_TILLENDTIME_END8-10=我这辈子已经活够了。
+# Brok
+PC08B_TILLENDTIME_END8-11=现在该轮到你去过你的生活了。
+# Graff
+PC08B_TILLENDTIME_END8-12=……
+# Brok
+PC08B_TILLENDTIME_END8-13=瞧瞧我！
+# Brok
+PC08B_TILLENDTIME_END8-14=我曾经是如此的勇猛，而现在……
+# Graff
+PC08B_TILLENDTIME_END8-15=这不公平……
+# Brok
+PC08B_TILLENDTIME_END8-16=生活从来都是不公平的，还以为你该领悟这个道理了呢。
+# Brok
+PC08B_TILLENDTIME_END8-17=我们只能尽可能去过上更美好的日子。
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END9-1=哈哈！
+# Graff
+PC08B_TILLENDTIME_END9-2=笑什么呢？
+# Brok
+PC08B_TILLENDTIME_END9-3=一直以来……我都期盼着你归来……
+# Brok
+PC08B_TILLENDTIME_END9-4=就在我已经放弃时……
+# Brok
+PC08B_TILLENDTIME_END9-5=你却突然冒出来了！
+# Brok
+PC08B_TILLENDTIME_END9-6=真的很高兴再见到你……
+# Brok
+PC08B_TILLENDTIME_END9-7=最后一次。
+# Graff
+PC08B_TILLENDTIME_END9-8=别这样说！
+# Graff
+PC08B_TILLENDTIME_END9-9=你还有大把的日子呢。
+# Brok
+PC08B_TILLENDTIME_END9-10=我倒想啊……
+#----------------------------------------------------
+# Brok
+PC08B_TILLENDTIME_END10-1=别离开我……
+# Graff
+PC08B_TILLENDTIME_END10-2=我不会。
+# Graff
+PC08B_TILLENDTIME_END10-3=我就在这里。
+# Graff
+PC08B_TILLENDTIME_END10-4=陪着你……
+# Graff
+PC08B_TILLENDTIME_END10-5=走到尽头。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Final player decision - Brok enters the machine =Canonical Ending
+# *****************************************************************
+# Brok
+PC08B_STORY320_ENTER-1=我必须这么做……
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_ENTER2-1=天哪，幸亏我没有幽闭恐惧症。
+# Brok
+PC08B_STORY320_ENTER2-2=莎莎，我这是把生命托付在你手中了……
+# Brok
+PC08B_STORY320_ENTER2-3=出发吧。
+# Various
+PC08B_STORY320_ENTER2-4=倒计时，3……
+# Various
+PC08B_STORY320_ENTER2-5=2……
+# Various
+PC08B_STORY320_ENTER2-6=1……
+#----------------------------------------------------
+# Bolt
+PC08B_STORY320_ENTER3-1=再见——布罗格主人！
+# Bolt
+PC08B_STORY320_ENTER3-2=等你——回来时。
+# Bolt
+PC08B_STORY320_ENTER3-3=请务必。
+# Bolt
+PC08B_STORY320_ENTER3-4=记得我。
+#----------------------------------------------------
+# Shay
+PC08B_STORY320_SHAYENDTEXT-1=一路顺风，布罗哥……
+# Shay
+PC08B_STORY320_SHAYENDTEXT-2=拯救我……
+# Shay
+PC08B_STORY320_SHAYENDTEXT-3=拯救我们所有人。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Final player decision - Brok refuses to enter
+# *****************************************************************
+# Brok
+PC08B_STORY320_CANNOT1-1=……
+# Brok
+PC08B_STORY320_CANNOT1-2=这……
+# Brok
+PC08B_STORY320_CANNOT1-3=我……
+# Brok
+PC08B_STORY320_CANNOT1-4=我做不到！
+#----------------------------------------------------
+# Bolt
+PC08B_STORY320_CANNOT1B-1=布罗格主人……？
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_CANNOT2-1=莎莎……
+# Brok
+PC08B_STORY320_CANNOT2-2=对不起。
+# Brok
+PC08B_STORY320_CANNOT2-3=无论再怎么穷途末路……
+# Brok
+PC08B_STORY320_CANNOT2-4=我也必须面对现实。
+# Brok
+PC08B_STORY320_CANNOT2-5=已经发生的事情……是无法改变的。
+# Brok
+PC08B_STORY320_CANNOT2-6=无法忘却。
+# Brok
+PC08B_STORY320_CANNOT2-7=也无法回头。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - "Cannot" ending - Brok comes back with Graff, only to find out the machine is gone
+# *****************************************************************
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-1=所以，你究竟想让我看什么东西？
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-2=……！
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-3=那……机器呢？
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-4=机器去哪了？
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-5=什么机器？
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-6=穿越时空的机器！
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-7=也可能是删除记忆的机器……
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-8=好、好吧……
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-9=一定就在这里附近的！
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-10=……
+# Graff
+PC08B_STORY330_CANNOT_WITHGRAFF1-11=我觉得是你幻想出来的。
+# Brok
+PC08B_STORY330_CANNOT_WITHGRAFF1-12=不可能！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When Brok calls Shay in the same room
+# *****************************************************************
+# Brok
+PC08B_CALL_SHAY-1=嗨！
+# Shay
+PC08B_CALL_SHAY-2=地球呼叫布罗格！我们碰上麻烦了！
+# Brok
+PC08B_CALL_SHAY-3=啥意思？
+# Shay
+PC08B_CALL_SHAY-4=哪怕是我也不会蠢到打给身处同一房间的人。
+# Brok
+PC08B_CALL_SHAY-5=我还以为你没留意到我！
+# Shay
+PC08B_CALL_SHAY-6=你的体味隔着十公里都能闻到。
+# Shay
+PC08B_CALL_SHAY-7=幸亏并非是体臭！
+# Brok
+PC08B_CALL_SHAY-8=啊……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Finding material in her garage
+# *****************************************************************
+# Brok
+PC08B_MATERIAL1-1=喂！我带来了你在找的东西。喏！
+# Shay
+PC08B_MATERIAL1-2=你确定吗？
+# Brok
+PC08B_MATERIAL1-3=你那仪器是这么说的。
+#----------------------------------------------------
+# Brok
+PC08B_MATERIAL1B-1=这看起来像水晶控制器吗？
+# Shay
+PC08B_MATERIAL1B-2=我真笨！都忘了先翻看车库有没有存货。
+# Brok
+PC08B_MATERIAL1B-3=那么，你还是会付款的对吧……？
+# Shay
+PC08B_MATERIAL1B-4=……
+# Brok
+PC08B_MATERIAL1B-5=（我最讨厌沉默！）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Premature ending - when in day 3 we solve the puzzle too early and enter her garage, it shouldn't happen
+# *****************************************************************
+# Brok
+PC08B_PREMATURE_ENDING-1=喂！
+# Brok
+PC08B_PREMATURE_ENDING-2=这个蛋是什么玩意？
+# Shay
+PC08B_PREMATURE_ENDING-3=……！
+# Shay
+PC08B_PREMATURE_ENDING-4=布罗哥……！
+# Shay
+PC08B_PREMATURE_ENDING-5=你……
+# Shay
+PC08B_PREMATURE_ENDING-6=你怎么提早出现了！
+# Shay
+PC08B_PREMATURE_ENDING-7=你是怎么进……？！
+# Brok
+PC08B_PREMATURE_ENDING-8=那个……
+# Brok
+PC08B_PREMATURE_ENDING-9=我就试了几个密码组合然后……
+# Shay
+PC08B_PREMATURE_ENDING-10=嗷，就知道不该用这么简单的门锁。
+#----------------------------------------------------
+# Brok
+PC08B_PREMATURE_ENDING2-1=……
+# Brok
+PC08B_PREMATURE_ENDING2-2=这是地震吗……？
+# Shay
+PC08B_PREMATURE_ENDING2-3=你得马上离开！快快快！
+# Brok
+PC08B_PREMATURE_ENDING2-4=啥呀……？
+# Shay
+PC08B_PREMATURE_ENDING2-5=糟了……
+# Shay
+PC08B_PREMATURE_ENDING2-6=太迟了！
+#----------------------------------------------------
+# Brok
+#Back to Canonical Ending - after Brok enters the machine he ends up in a strange landscape - as if he's dreaming
+PC08B_CANONICAL_SUBENDING1-1=呃……
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1B-1=这是什么地方？
+# Brok
+PC08B_CANONICAL_SUBENDING1B-2=这不会就是那机器的内部吧……？
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1C-1=怎么……？
+# Brok
+#A shadowy doppleganger of Brok appears before his eyes
+PC08B_CANONICAL_SUBENDING1C-2=“不必在意我的出现”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-3=你是谁？
+# Brok
+PC08B_CANONICAL_SUBENDING1C-4=“我是你上一次经过时留下的残影”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-5=上一次……经过……？
+# Brok
+PC08B_CANONICAL_SUBENDING1C-6=“这里是所有记忆共存的地方”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-7=我的记忆？
+# Brok
+PC08B_CANONICAL_SUBENDING1C-8=“不仅是你的”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-9=“而是整个宇宙”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-10=等等……
+# Brok
+PC08B_CANONICAL_SUBENDING1C-11=我来过这里……？
+# Brok
+PC08B_CANONICAL_SUBENDING1C-12=“还以为你现在已经明白了一切”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-13=“所有的事都已发生”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-14=“所有的事会再发生”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-15=这是否意味着……
+# Brok
+PC08B_CANONICAL_SUBENDING1C-16=我没有任何自主意志……？
+# Brok
+PC08B_CANONICAL_SUBENDING1C-17=比如说……是我导致鼠人被驱逐的？可是……
+# Brok
+PC08B_CANONICAL_SUBENDING1C-18=这不是我的意愿啊。
+# Brok
+PC08B_CANONICAL_SUBENDING1C-19=如果我回到过去……
+# Brok
+PC08B_CANONICAL_SUBENDING1C-20=是否能改变一切？
+# Brok
+PC08B_CANONICAL_SUBENDING1C-21=“是可以”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-22=“但你得问自己”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-23=“你是否真的要改变”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-24=……
+# Brok
+PC08B_CANONICAL_SUBENDING1C-25=对。
+# Brok
+PC08B_CANONICAL_SUBENDING1C-26=我要改变命运。
+# Brok
+PC08B_CANONICAL_SUBENDING1C-27=不仅是我自己的……还有身边的人的命运。
+# Brok
+PC08B_CANONICAL_SUBENDING1C-28=“那就去吧”
+# Brok
+PC08B_CANONICAL_SUBENDING1C-29=“踏入虚空”
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1D-1=“不必紧张”
+# Brok
+PC08B_CANONICAL_SUBENDING1D-2=“这会是漫长的旅程”
+# Brok
+PC08B_CANONICAL_SUBENDING1D-3=“但到达终点”
+# Brok
+PC08B_CANONICAL_SUBENDING1D-4=“一切会安好”
+# Brok
+PC08B_CANONICAL_SUBENDING1D-5=我为什么要信你？
+# Brok
+PC08B_CANONICAL_SUBENDING1D-6=“相信你自己”
+# Brok
+PC08B_CANONICAL_SUBENDING1D-7=“你会做出最好的选择”
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1E-1=谢谢你，过去的我。
+#----------------------------------------------------
+# Brok
+PC08B_CANONICAL_SUBENDING1F-1=好吧……
+# Brok
+PC08B_CANONICAL_SUBENDING1F-2=是时候了。
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BROKENDTEXT-1=在那一刻……
+# Brok
+PC08B_STORY320_BROKENDTEXT-2=我的意识开始消散。
+# Brok
+PC08B_STORY320_BROKENDTEXT-3=逐渐融入未知。
+# Brok
+PC08B_STORY320_BROKENDTEXT-4=融入虚空。
+# Brok
+PC08B_STORY320_BROKENDTEXT-5=我的最后一件案子结案了。
+# Brok
+PC08B_STORY320_BROKENDTEXT-6=在过去的三天内……
+# Brok
+PC08B_STORY320_BROKENDTEXT-7=我识破了针对贫民区的一起惊天阴谋。
+# Brok
+PC08B_STORY320_BROKENDTEXT-8=不过……
+# Brok
+PC08B_STORY320_BROKENDTEXT-9=我却无法逆转自己的命运。
+# Brok
+PC08B_STORY320_BROKENDTEXT-10=这一刻无数的回忆闪现在脑海。
+# Brok
+PC08B_STORY320_BROKENDTEXT-11=我努力抓紧其中某段记忆。
+# Brok
+PC08B_STORY320_BROKENDTEXT-12=我不在乎是否消散在虚空。
+# Brok
+PC08B_STORY320_BROKENDTEXT-13=我不在乎是否丢失所有的记忆。
+# Brok
+PC08B_STORY320_BROKENDTEXT-14=但我在乎……
+# Brok
+PC08B_STORY320_BROKENDTEXT-15=你。
+# Brok
+PC08B_STORY320_BROKENDTEXT-16=这些年来……
+# Brok
+PC08B_STORY320_BROKENDTEXT-17=你一直陪伴我身边。
+# Brok
+PC08B_STORY320_BROKENDTEXT-18=要是没有你，我根本没有动力活下去。
+# Brok
+PC08B_STORY320_BROKENDTEXT-19=所以……
+# Brok
+PC08B_STORY320_BROKENDTEXT-20=我会补救自己的过错。
+# Brok
+PC08B_STORY320_BROKENDTEXT-21=我会补偿你的损失。
+# Brok
+PC08B_STORY320_BROKENDTEXT-22=无论如何，我都不会放弃。
+# Brok
+PC08B_STORY320_BROKENDTEXT-23=只要我还活着……
+# Brok
+PC08B_STORY320_BROKENDTEXT-24=我就会想办法……
+# Brok
+PC08B_STORY320_BROKENDTEXT-25=为你改写历史。
+# Brok
+PC08B_STORY320_BROKENDTEXT-26=因为……
+#----------------------------------------------------
+# Brok
+PC08B_STORY320_BROKENDTEXT2-1=我爱你，格拉夫。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Walk on desk
+# *****************************************************************
+# Shay
+PC08B_WALKDESK1-1=又在我桌子上练习？
+# Shay
+PC08B_WALKDESK1-2=喂！我说你能不能去旁边的房间训练！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to hit Shay
+# *****************************************************************
+# Shay
+PC08B_HITSHAY1-1=真让我失望，布罗哥。别白费力气了。
+#----------------------------------------------------
+# Shay
+PC08B_HITSHAY2-1=我和我的硬件都是受到保护的。只要我站在这里，就没有人可以伤害到我。
+# Shay
+PC08B_HITSHAY2-2=不过你这样太让我伤心了，我究竟得罪了你什么？
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_DEAD1-1=啊！看看你都干了什么！
+# Shay
+PC08B_BOLT_DEAD1-2=现在我得从零开始了！
+#----------------------------------------------------
+# Brok
+PC08B_BOLT_DEAD2-1=呃……
+# Shay
+PC08B_BOLT_DEAD2-2=给我出去！
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_DEADBIS-1=太棒了！它开始工作了！
+#----------------------------------------------------
+# Shay
+PC08B_BOLT_DEAD_BACK-1=你真幸运！还好这不是很难修复！
+#----------------------------------------------------
+# Bolt
+PC08B_BOLT_HITEND1-1=布罗格主人……！
+#----------------------------------------------------
+# Bolt
+PC08B_BOLT_HITEND2-1=请不要……！
+#----------------------------------------------------
+
+
+
+COOP_PC08B_SHAY1-1=谢伊，神秘的谢伊...
+COOP_PC08B_SHAY1-2=要是我现在能读懂你的心思就好了。
+
+COOP_PC08B_BOLT1-1=哇，真正的古董机器人！
+
+COOP_PC08B_BOLT1-2=还定制过。我以前从未见过这个型号。
+
+COOP_PC08B_END1-1=我们的旅程到此结束。
+COOP_PC08B_END1-2=希望我有所帮助。
+COOP_PC08B_END1-3=无论我们生活在哪个维度中，我将永远是你的一部分！

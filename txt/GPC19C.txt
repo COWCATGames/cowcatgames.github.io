@@ -1,0 +1,100 @@
+#-------------------------------
+#=BUNKER ENTRANCE
+#-------------------------------
+
+#----------------------
+#= Come in the room
+#----------------------
+ID=GPC19C_INIT1
+T=Uh...
+W=GRAFF
+A=GASP
+COMM=Lasers room
+
+T=I should have guessed the trial wouldn't be over yet. (Cough)
+W=GRAFF
+A=DISDAIN
+
+T=(Cough, Cough)
+W=GRAFF
+A=CHOKE
+
+T=Oh no... The pollution is really starting to affect me...
+W=GRAFF
+A=YUCK
+TEN=GPC19C_INIT_CHECK
+
+
+#----------------------
+ID=GPC19C_INIT_KLAYDEAD
+T=This must be... (Cough) My punishment...
+W=GRAFF
+A=TURN
+TEN=GPC19C_AFTER
+
+#----------------------
+ID=GPC19C_INIT_NORMAL
+T=If only that idiot didn't take my pill... (Cough)
+W=GRAFF
+A=TORN
+
+T=I better get out of here, fast! (Cough, cough)
+W=GRAFF
+A=TORN
+TEN=GPC19C_AFTER
+
+#----------------------
+#= Door
+#----------------------
+ID=GPC19C_DOORA1
+T=Locked...
+W=GRAFF
+A=DISDAIN
+
+T=There's only one way... Forward.
+W=GRAFF
+A=READY
+
+#----------------------
+#= Panel
+#----------------------
+ID=GPC19C_PANEL1
+T=I'm done with that.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+ID=GPC19C_PANEL_OK
+T=Did it work?...
+W=GRAFF
+A=THINK
+TEN=CLICKERS_BACK
+
+#----------------------
+#= Exit
+#----------------------
+ID=GPC19C_EXIT1
+T=(Cough, cough)
+W=GRAFF
+A=CHOKE
+
+T=Almost there. Must be the exit.
+W=GRAFF
+A=READY
+
+T=How do I open it?...
+W=GRAFF
+A=THINK
+TEN=GPC19C_DOORB_OPEN
+
+#----------------------
+ID=GPC19C_EXIT2
+T=For once, some luck... (Cough)
+W=GRAFF
+A=HAPPY
+TEN=GPC19C_GRAFF_EXITS
+
+###############################################
+# PROOFREAD - frasermacgaming - 01/09/2019
+# EXPRESSIONS - CharlieLarge - 19/09/2019
+###############################################

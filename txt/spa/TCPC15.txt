@@ -1,0 +1,858 @@
+#-------------------------------
+#= Case day 2
+#-------------------------------
+
+#----- Interactions --------
+
+#----- Choices / Items --------
+
+#----- Topics --------
+CPC15_INVESTIGATION_CHOICE=¿Elegir al culpable de todos modos?
+CPC15_INVESTIGATION_CHOICEALLHINTS=¿Anunciar quién es el culpable?
+CPC15_INVESTIGATION_RESUME=¿Continuar la explicación?
+TOPIC_INVESTIGATION=Acerca de la investigación
+
+#----- Dialog --------
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+# Brok
+CPC15_MAGNIFY_NANITE1-1=Mmm... Viéndolo más de cerca, ¡no está nada limpio!
+# Brok
+CPC15_MAGNIFY_NANITE1-2=Aunque no puedo ver ningún minibot del Dr. Mink.
+#----------------------------------------------------
+# Brok
+CPC15_MAGNIFY_NANITE2-1=Aquí no hay nanobots.
+#----------------------------------------------------
+# Brok
+CPC15_MAGNIFY_NANITE3-1=¡Oh! He encontrado...
+# Brok
+CPC15_MAGNIFY_NANITE3-2=nada de nada.
+#----------------------------------------------------
+# Brok
+CPC15_OTT_BEFOREBODY-1=Vamos a mirar por aquí.
+# Ott
+CPC15_OTT_BEFOREBODY-2=Claro.
+#----------------------------------------------------
+# Brok
+CPC15_OTT_FIRST-1=¿Estás bien?
+# Ott
+CPC15_OTT_FIRST-2=Bueno... no me esperaba investigar un asesinato en mi primer día...
+# Ott
+CPC15_OTT_FIRST-3=Me entusiasma pero... me da algo de miedo.
+# Ott
+CPC15_OTT_FIRST-4=Pensar que hay un asesino suelto...
+# Ott
+CPC15_OTT_FIRST-5=No le importa que me quede cerca, ¿no?
+# Brok
+CPC15_OTT_FIRST-6=Claro.
+# Ott
+CPC15_OTT_FIRST-7=Gracias...
+#----------------------------------------------------
+# Brok
+CPC15_OTT_BODY1-1=¿Qué sugieres?
+# Ott
+CPC15_OTT_BODY1-2=¿Y si examina el cuerpo?
+# Brok
+CPC15_OTT_BODY1-3=Sí, ¡buena idea!
+#----------------------------------------------------
+# Ott
+CPC15_OTT_HUSHOFFICE1-1=El Dr. Hush tenía una oficina, ¿no?
+# Brok
+CPC15_OTT_HUSHOFFICE1-2=Cierto. Deberíamos echarle un buen vistazo.
+#----------------------------------------------------
+# Brok
+CPC15_OTT_RESTROOM1-1=Bueno... ¿Qué hacemos ahora?
+# Ott
+CPC15_OTT_RESTROOM1-2=¡Señor Brok! ¡Me parece que hay una sala de descanso en el vestíbulo que aún no hemos visto!
+# Brok
+CPC15_OTT_RESTROOM1-3=Ah, sí.
+#----------------------------------------------------
+# Brok
+CPC15_OTT_MEETTIDY1-1=Lo hemos inspeccionado todo, ¿no?
+# Ott
+CPC15_OTT_MEETTIDY1-2=No estoy seguro. ¿Y el bot de la habitación del Dr. Hush?
+# Brok
+CPC15_OTT_MEETTIDY1-3=Cierto. ¡Vamos a ver si el cacharro ese funciona!
+#----------------------------------------------------
+# Ott
+CPC15_OTT_TALKTIDY1-1=Tidy parece tener información importante...
+# Ott
+CPC15_OTT_TALKTIDY1-2=Deberíamos interrogarlo.
+# Brok
+CPC15_OTT_TALKTIDY1-3=¡Estoy de acuerdo!
+#----------------------------------------------------
+# Brok
+CPC15_OTT_TALKMINK1-1=Debería interrogar al Dr. Mink.
+# Ott
+CPC15_OTT_TALKMINK1-2=¿Por qué me lo cuenta? Adelante.
+#----------------------------------------------------
+# Ott
+CPC15_OTT_TALKALMOST1-1=¿Y? ¿Listo para anunciar quién es el asesino?
+# Brok
+CPC15_OTT_TALKALMOST1-2=Casi. Aún debo comprobar unas cosillas...
+#----------------------------------------------------
+# Brok
+CPC15_OTT_FIRSTSTAGE-1=Entonces, ¿qué crees?
+# Ott
+CPC15_OTT_FIRSTSTAGE-2=¡Ya lo tengo!
+# Brok
+CPC15_OTT_FIRSTSTAGE-3=¡¿En serio?!
+# Ott
+CPC15_OTT_FIRSTSTAGE-4=¿Usted aún no?
+# Brok
+CPC15_OTT_FIRSTSTAGE-5=Bueno... Me gustaría oír tus conclusiones antes.
+# Ott
+CPC15_OTT_FIRSTSTAGE-6=Vale. ¡Reunamos a todos en la habitación del Dr. Mink!
+#----------------------------------------------------
+# Ott
+CPC15_OTT_SECOND1-1=¡Creía que lo tenía! Pero...
+# Ott
+CPC15_OTT_SECOND1-2=en un pispás se ha cargado mi teoría.
+# Brok
+CPC15_OTT_SECOND1-3=No te sientas mal.
+# Brok
+CPC15_OTT_SECOND1-4=Si no fuera por la sangre falsa, seguramente yo también habría picado.
+#----------------------------------------------------
+# Brok
+CPC15_OTT_SECOND2-1=¿Qué harías en mi lugar?
+# Ott
+CPC15_OTT_SECOND2-2=¡Ponerlo todo patas arriba!
+# Ott
+CPC15_OTT_SECOND2-3=¡Recabar todos los indicios que podamos!
+#----------------------------------------------------
+# Ott
+CPC15_OTT_HIT1-1=¡Au!
+# Brok
+CPC15_OTT_HIT1-2=Mmm... Lo siento.
+# Ott
+CPC15_OTT_HIT1-3=¡¿A qué ha venido eso?!
+# Brok
+CPC15_OTT_HIT1-4=¡No quería hacerlo! ¡Lo juro!
+#----------------------------------------------------
+# Ott
+CPC15_OTT_HIT2-1=¡Auu!
+# Brok
+CPC15_OTT_HIT2-2=¡Pero no te quedes ahí en medio!
+#----------------------------------------------------
+# Ott
+CPC15_OTT_HIT3-1=¡¡¡Ey!!! ¡Pare ya!
+# Brok
+CPC15_OTT_HIT3-2=¡Lo siento, pero me estorbas! ¡Apártate!
+# Ott
+CPC15_OTT_HIT3-3=¡¿Qué?!...
+# Ott
+CPC15_OTT_HIT3-4=¡Está majara!
+#----------------------------------------------------
+# Ott
+CPC15_OTT_HIT4-1=¡Señor Guarda! ¡Señor Guarda! ¡Ayuda!
+# Ott
+CPC15_OTT_HIT4-2=¡Se ha vuelto loco!
+#----------------------------------------------------
+# Tidy
+CPC15_TIDY_HIT1-1=...
+# Tidy
+CPC15_TIDY_HIT1-2=Tidy. No. Siente.
+# Brok
+CPC15_TIDY_HIT1-3=¡Mmm!
+#----------------------------------------------------
+# Tidy
+CPC15_TIDY_HIT2-1=...
+# Tidy
+CPC15_TIDY_HIT2-2=Alarma.
+# Tidy
+CPC15_TIDY_HIT2-3=Broky. No en. Lista de. Personas cercanas.
+#----------------------------------------------------
+# Tidy
+CPC15_TIDY_HIT3-1=¡Broky muerto!
+# Ott
+CPC15_TIDY_HIT3-2=¡Señor Brok!
+#----------------------------------------------------
+# Mink
+CPC15_MINK_HIT1-1=¡Aarrgh!
+# Mink
+CPC15_MINK_HIT1-2=¡¿Está en sus cabales?!
+# Brok
+CPC15_MINK_HIT1-3=Mmm... Lo siento.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_HIT2-1=¡Oh! ¡Ups!
+# Mink
+CPC15_MINK_HIT2-2=Aaaauuchh...
+# Brok
+CPC15_MINK_HIT2-3=¡Lo siento! ¡Culpa mía!
+# Mink
+CPC15_MINK_HIT2-4=¡Pienso demandarle por esto!
+# Brok
+CPC15_MINK_HIT2-5=No sería la primera vez.
+# Mink
+CPC15_MINK_HIT2-6=¡...!
+#----------------------------------------------------
+# Mink
+CPC15_MINK_HIT3-1=¡¡¡Au au au!!!
+# Mink
+CPC15_MINK_HIT3-2=¡Mis ojos! ¡Estoy ciego!
+# Brok
+CPC15_MINK_HIT3-3=No, no lo está.
+# Mink
+CPC15_MINK_HIT3-4=Yo... ¡le voy a...!
+# Brok
+CPC15_MINK_HIT3-5=¿Me va a qué?
+# Mink
+CPC15_MINK_HIT3-6=...
+#----------------------------------------------------
+# Mink
+CPC15_MINK_HIT4-1=¡Guarda! ¡Rápido!
+# Mink
+CPC15_MINK_HIT4-2=¡¡¡El detective viene a por mí!!!
+#----------------------------------------------------
+# Guard
+CPC15_GUARDJAIL1-1=¡Ya basta! ¡Derechito a la cárcel, tío!
+# Ott
+CPC15_GUARDJAIL1-2=Señor Brok, ¿qué le ha pasado?...
+# Brok
+CPC15_GUARDJAIL1-3=Yo...
+# Brok
+CPC15_GUARDJAIL1-4=no quería...
+# Brok
+CPC15_GUARDJAIL1-5=Alguien me está controlando...
+# Guard
+CPC15_GUARDJAIL1-6=Mejor te envío al manicomio más cercano.
+#----------------------------------------------------
+# Guard
+CPC15_GUARDFIGHT1-1=¡No pienso tolerar esta clase de comportamiento en mi guardia!
+#----------------------------------------------------
+# Ott
+CPC15_GUARDFIGHT_LOSE1-1=Oh...
+# Ott
+CPC15_GUARDFIGHT_LOSE1-2=Muchas gracias, señor Guarda...
+# Mink
+CPC15_GUARDFIGHT_LOSE1-3=¡Ahora ya sabemos qué le pasó al Dr. Hush!
+# Mink
+CPC15_GUARDFIGHT_LOSE1-4=¡A ese detective se le fue la pinza!
+# Guard
+CPC15_GUARDFIGHT_LOSE1-5=Sin duda.
+# Guard
+CPC15_GUARDFIGHT_LOSE1-6=Esperad aquí. Llamaré a la poli.
+#----------------------------------------------------
+# Mink
+CPC15_GUARDFIGHT_WIN1-1=¡...!
+# Mink
+CPC15_GUARDFIGHT_WIN1-2=¡N... No!
+# Mink
+CPC15_GUARDFIGHT_WIN1-3=¡¿Qué... piensa hacer?!
+# Brok
+CPC15_GUARDFIGHT_WIN1-4=No sé. Eso depende de usted, amigo.
+# Mink
+CPC15_GUARDFIGHT_WIN1-5=...
+# Mink
+CPC15_GUARDFIGHT_WIN1-6=¡¡¡Aaaaahh!!!
+# Brok
+CPC15_GUARDFIGHT_WIN1-7=...
+# Brok
+CPC15_GUARDFIGHT_WIN1-8=...
+# Brok
+CPC15_GUARDFIGHT_WIN1-9=Bueno...
+# Brok
+CPC15_GUARDFIGHT_WIN1-10=Aparte de ese bot, no queda nadie en este sitio...
+# Brok
+CPC15_GUARDFIGHT_WIN1-11=Caso resuelto, supongo...
+#----------------------------------------------------
+# Guard
+CPC15_GUARD_HIT1-1=¡¡¡Ey!!!
+# Guard
+CPC15_GUARD_HIT1-2=¡¿Quieres empeorar aún más la situación?!
+# Brok
+CPC15_GUARD_HIT1-3=Erm...
+#----------------------------------------------------
+# Guard
+CPC15_GUARD_HIT2-1=¡¿Pero qué?!
+# Guard
+CPC15_GUARD_HIT2-2=¡Lo sabía! ¡Maldito racista!
+# Brok
+CPC15_GUARD_HIT2-3=¡No!... ¡Se me escapó la mano!
+# Guard
+CPC15_GUARD_HIT2-4=No voy a perderte de vista, tío.
+#----------------------------------------------------
+# Guard
+CPC15_GUARD_HIT3-1=¡¡¡Auuu!!!
+#----------------------------------------------------
+# Guard
+CPC15_GUARD_HIT3B-1=¡Ya está! ¡Te la ha cargado!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_FIRST-1=Dr. Mink, tengo un par de preguntas para usted.
+# Mink
+CPC15_MINK_FIRST-2=Me temía que fuera a decir eso.
+# Brok
+CPC15_MINK_FIRST-3=Pero antes... Por favor, jure decir la verdad y toda la verdad.
+# Mink
+CPC15_MINK_FIRST-4=Pues claro. Siempre lo hago. Los mentirosos siempre se contradicen y acaban revelando la verdad.
+# Mink
+CPC15_MINK_FIRST-5=No quiero perder el tiempo. Ni el suyo ni el mío.
+# Brok
+CPC15_MINK_FIRST-6=Muy bien.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_DRHUSH1-1=¿Qué me puede decir sobre el Dr. Hush?
+# Mink
+CPC15_MINK_DRHUSH1-2=Él es mi... Bueno, era mi compañero.
+# Mink
+CPC15_MINK_DRHUSH1-3=Él trataba con macrorrobótica, mientras que mi especialidad es nanorrobótica.
+# Mink
+CPC15_MINK_DRHUSH1-4=Trabajamos en el mismo edificio porque nuestro trabajo es complementario.
+# Brok
+CPC15_MINK_DRHUSH1-5=¿Cómo ha sido su relación últimamente?
+# Mink
+CPC15_MINK_DRHUSH1-6=Ya veo a dónde quiere llegar.
+# Mink
+CPC15_MINK_DRHUSH1-7=Sí, era un poco tensa.
+# Brok
+CPC15_MINK_DRHUSH1-8=¿Por qué?
+# Mink
+CPC15_MINK_DRHUSH1-9=El Gobierno hizo reajustes en el presupuesto para proyectos científicos.
+# Mink
+CPC15_MINK_DRHUSH1-10=Para ser exactos, redujeron el presupuesto para nanotecnología en favor de la investigación en IA.
+# Brok
+CPC15_MINK_DRHUSH1-11=Así que eso impactó directamente en sus experimentos.
+# Mink
+CPC15_MINK_DRHUSH1-12=Escuche. Es cierto, siempre hemos tenido ciertas discrepancias.
+# Mink
+CPC15_MINK_DRHUSH1-13=Pero incluso tras las alteraciones de presupuesto, ¡no le tenía ningún rencor!
+# Mink
+CPC15_MINK_DRHUSH1-14=La verdad... fue él quien cambió.
+# Mink
+CPC15_MINK_DRHUSH1-15=Apenas hablaba conmigo. Y cuando lo hacía, la situación se ponía... tensa.
+# Mink
+CPC15_MINK_DRHUSH1-16=¡Hasta juraría que últimamente intentaba evitarme!
+# Mink
+CPC15_MINK_DRHUSH1-17=Supuse que estaba demasiado ocupado, pero ahora...
+# Mink
+CPC15_MINK_DRHUSH1-18=Jamás me hubiera imaginado que acabaría así.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_DRHUSH2-1=¿Alguna idea de qué puede haber ocurrido?
+# Mink
+CPC15_MINK_DRHUSH2-2=¿Sinceramente? Ni la más mínima.
+# Mink
+CPC15_MINK_DRHUSH2-3=Estuve aquí todo el día. ¡Y él no! ¡Estoy bastante seguro!
+# Brok
+CPC15_MINK_DRHUSH2-4=Bueno, el cadáver está en el centro de su habitación...
+# Brok
+CPC15_MINK_DRHUSH2-5=¡Ha debido verle entrar en algún momento!
+# Mink
+CPC15_MINK_DRHUSH2-6=¡No! ¡Lo juro!
+# Mink
+CPC15_MINK_DRHUSH2-7=Es como si... ¡hubiera aparecido por arte de magia cuando entró en la habitación!
+# Brok
+CPC15_MINK_DRHUSH2-8=Magia, eh...
+# Mink
+CPC15_MINK_DRHUSH2-9=¡Sé cómo suena eso, pero tiene que creerme!
+# Brok
+CPC15_MINK_DRHUSH2-10=Ahora mismo, no creo en nada más que en los hechos.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_DRHUSH3-1=Sobre el Dr. Hush...
+# Mink
+CPC15_MINK_DRHUSH3-2=¿Otra vez?
+# Mink
+CPC15_MINK_DRHUSH3-3=Es difícil resumir la vida de alguien y su personalidad en un par de frases, ¿sabe?
+# Mink
+CPC15_MINK_DRHUSH3-4=Encontrará más cosas sobre él si busca en su oficina.
+# Brok
+CPC15_MINK_DRHUSH3-5=(Una manera muy sutil de decir "Estoy harto de tus preguntas, apáñatelas".)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_DRHUSH4-1=Sé que sonará duro, pero...
+# Brok
+CPC15_MINK_DRHUSH4-2=¿cree que el Dr. Hush pueda haberse suicidado?
+# Mink
+CPC15_MINK_DRHUSH4-3=No puedo negar que ha estado actuando raro últimamente, así que...
+# Mink
+CPC15_MINK_DRHUSH4-4=Supongo que no es del todo imposible.
+# Mink
+CPC15_MINK_DRHUSH4-5=Lo único es que encuentro raro que lo hiciera en mi oficina.
+# Brok
+CPC15_MINK_DRHUSH4-6=(A menos que le odiase de verdad...)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_HIMSELF1-1=¿Cuánto tiempo lleva trabajando aquí?
+# Mink
+CPC15_MINK_HIMSELF1-2=Desde que me gradué, hará unos 5 años.
+# Mink
+CPC15_MINK_HIMSELF1-3=Ambos fuimos seleccionados para trabajar en este laboratorio. ¡Fue una oportunidad única en la vida!
+# Brok
+CPC15_MINK_HIMSELF1-4=Así que se conocían desde hace tiempo.
+# Mink
+CPC15_MINK_HIMSELF1-5=Sí. Aunque nunca hemos sido cercanos.
+# Brok
+CPC15_MINK_HIMSELF1-6=¿Significa eso que no se tragaban el uno al otro?
+# Mink
+CPC15_MINK_HIMSELF1-7=No. Eso es irrelevante.
+# Mink
+CPC15_MINK_HIMSELF1-8=Nos limitamos única y exclusivamente a trabajar.
+# Mink
+CPC15_MINK_HIMSELF1-9=Dedicamos nuestras vidas para que la humanidad pueda progresar.
+# Brok
+CPC15_MINK_HIMSELF1-10=¿Sin amigos? ¿Tampoco familia o hijos?
+# Mink
+CPC15_MINK_HIMSELF1-11=¡Pfff! ¿Amar a una sola persona? ¡¿Criar un par de individuos?!
+# Mink
+CPC15_MINK_HIMSELF1-12=¡No quiero llevar una vida tan simple e insignificante!
+# Mink
+CPC15_MINK_HIMSELF1-13=Pasaremos a los anales de la historia por nuestros logros. Mejoraremos la vida de miles, ¡quizás hasta millones!
+# Brok
+CPC15_MINK_HIMSELF1-14=¡Pero... Pero...!
+# Mink
+CPC15_MINK_HIMSELF1-15=¡Nada de peros! ¡Tomé la decisión de que mi vida sería así, y no me he arrepentido nunca!
+# Brok
+CPC15_MINK_HIMSELF1-16=(Vaya manera más triste de vivir...)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_HIMSELF2-1=Entonces... ¿Qué tipo de científico es usted?
+# Mink
+CPC15_MINK_HIMSELF2-2=Me especializo en nanotecnología y biología. ¡Cualquier cosa que pueda ayudar a la humanidad a vivir más!
+# Mink
+CPC15_MINK_HIMSELF2-3=¡Llevamos décadas investigando! Aún así, hace poco se hizo un descubrimiento que...
+# Brok
+CPC15_MINK_HIMSELF2-4=Lo siento, Doc. Preferiría que nos centrásemos en lo importante.
+# Mink
+CPC15_MINK_HIMSELF2-5=Mmmph.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_HIMSELF3-1=Lamento lo de antes. Cuénteme más sobre su trabajo.
+# Mink
+CPC15_MINK_HIMSELF3-2=Ahora mismo aspiro a mejorar la eficiencia de los nanobots.
+# Brok
+CPC15_MINK_HIMSELF3-3=¿Podría alguien usarlos para matar a alguien?
+# Mink
+CPC15_MINK_HIMSELF3-4=Lo dudo, pero sería técnicamente posible. Si su programa está defectuoso, podrían matar al huésped.
+# Mink
+CPC15_MINK_HIMSELF3-5=Pero ya llevamos un tiempo trabajando en esta tecnología. Nunca ocurre.
+# Mink
+CPC15_MINK_HIMSELF3-6=Aunque...
+# Mink
+CPC15_MINK_HIMSELF3-7=...
+# Brok
+CPC15_MINK_HIMSELF3-8=Continúe.
+# Mink
+CPC15_MINK_HIMSELF3-9=Pueden producirse daños severos si los nanobots son mezclados con ciertos compuestos orgánicos.
+# Brok
+CPC15_MINK_HIMSELF3-10=¿Como... ácido corrosivo?
+# Mink
+CPC15_MINK_HIMSELF3-11=¡Eso dejaría huellas sin duda!
+# Brok
+CPC15_MINK_HIMSELF3-12=¿Sería posible provocar la muerte sin dejar huellas externas en el cuerpo?
+# Mink
+CPC15_MINK_HIMSELF3-13=Creo recordar que ciertas plantas que provocaban ese efecto. Tendría que comprobar mis anotaciones...
+# Brok
+CPC15_MINK_HIMSELF3-14=Bueno, supongamos que eso fue lo que pasó. ¿Cómo podríamos saberlo?
+# Mink
+CPC15_MINK_HIMSELF3-15=Los nanobots están diseñados para sobrevivir. Si su huésped está a punto de fallecer, se marchan.
+# Mink
+CPC15_MINK_HIMSELF3-16=Pero no durarían demasiado fuera de él.
+# Mink
+#About 1 meter
+CPC15_MINK_HIMSELF3-17=Encontraría nanobots inactivos a menos de un metro del cadáver.
+# Brok
+CPC15_MINK_HIMSELF3-18=(Quizá debería buscar en los alrededores, a ver si hay nanobots donde no debería.)
+# Brok
+CPC15_MINK_HIMSELF3-19=(No seré capaz de verlos a simple vista, ¡pero seguro que llevo la herramienta adecuada!)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_HIMSELF4-1=(Creo que ya le he molestado bastante.)
+# Brok
+CPC15_MINK_HIMSELF4-2=(Me da en la nariz que esos nanobots han tenido que ver con la muerte del Dr. Hush. Solo necesito algunas pruebas.)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_TIDY1-1=¿Cuál es su relación con Tidy?
+# Mink
+CPC15_MINK_TIDY1-2=Es sólo el robot de mantenimiento. Va y viene haciendo sus tareas.
+# Brok
+CPC15_MINK_TIDY1-3=¿Ha venido hoy?
+# Mink
+CPC15_MINK_TIDY1-4=No. Hasta su llegada, nadie ha entrado en mi oficina esta mañana.
+# Brok
+CPC15_MINK_TIDY1-5=¿Está seguro?
+# Mink
+CPC15_MINK_TIDY1-6=Mmm... La verdad es que...
+# Mink
+CPC15_MINK_TIDY1-7=El guarda revisó que todo estuviera bien, como suele hacer. Pero no llegó a entrar.
+# Brok
+CPC15_MINK_TIDY1-8=Me he dado cuenta de que las puertas se cierran automáticamente. ¿Cómo las abre Tidy?
+# Mink
+CPC15_MINK_TIDY1-9=Como nosotros. Pulsa los botones.
+# Brok
+CPC15_MINK_TIDY1-10=¿Tiene completa libertad?
+# Mink
+CPC15_MINK_TIDY1-11=Sí. Bueno...
+# Mink
+CPC15_MINK_TIDY1-12=Salvo en mi habitación.
+# Mink
+CPC15_MINK_TIDY1-13=Le denegué el acceso. Primero llama a la puerta, y entonces yo le permito el paso.
+# Brok
+CPC15_MINK_TIDY1-14=¿Y cómo es eso?
+# Mink
+CPC15_MINK_TIDY1-15=Ya sabe... Me da escalofríos pensar que un bot pueda colarse en mi habitación en mitad de la noche.
+# Brok
+CPC15_MINK_TIDY1-16=(Tú sí que das escalofríos...)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_TIDY2-1=Ha dicho que Tidy mentía. Pero... ¿los bots pueden mentir?
+# Mink
+CPC15_MINK_TIDY2-2=Normalmente no.
+# Mink
+CPC15_MINK_TIDY2-3=Pero no lo programé yo. Y tenga en cuenta que el Dr. Hush realizaba experimentos de IA.
+# Mink
+CPC15_MINK_TIDY2-4=También podría ser el resultado de un error en el núcleo.
+# Mink
+CPC15_MINK_TIDY2-5=O quizás Tidy cree que está diciendo la verdad, basándose en falsas premisas.
+# Brok
+CPC15_MINK_TIDY2-6=Pero ya ha oído la grabación. Era la voz del Dr. Hush, ¿no?
+# Mink
+CPC15_MINK_TIDY2-7=...
+# Mink
+CPC15_MINK_TIDY2-8=No sé... Sí, sonaba exactamente como él, pero...
+# Mink
+CPC15_MINK_TIDY2-9=¡Tiene que haber alguna explicación!
+# Brok
+CPC15_MINK_TIDY2-10=(Sí... Y ojalá tú me dieras una.)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_TIDY3-1=¿Cree que Tidy ha tenido algún papel en el asesinato?
+# Mink
+CPC15_MINK_TIDY3-2=No veo cómo...
+# Mink
+CPC15_MINK_TIDY3-3=No puede acceder a mi oficina...
+# Mink
+CPC15_MINK_TIDY3-4=Aparte, el Dr. Hush es su creador. Nunca podría...
+# Brok
+CPC15_MINK_TIDY3-5=... hacer daño a su creador, ya.
+# Brok
+CPC15_MINK_TIDY3-6=(Otra vez con el mismo argumento.)
+# Brok
+CPC15_MINK_TIDY3-7=(No confío demasiado en la tecnología. ¡Y un buen detective analiza todas las posibilidades!)
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INVESTIGATION1-1=¿Falta mucho para que llegue a una conclusión?
+# Brok
+CPC15_MINK_INVESTIGATION1-2=Bueno...
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INVESTIGATION2-1=¿Ha terminado de investigar?
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INVESTIGATION_NOTYET-1=No. Todavía no he interrogado a todo el mundo.
+# Mink
+CPC15_MINK_INVESTIGATION_NOTYET-2=¡A mí desde luego sí lo ha hecho!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INVESTIGATION_MANY-1=(Tengo la sensación de que todavía me faltan indicios por encontrar. Creo que no debería anunciar nada aún.)
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INVESTIGATION_SEVERAL-1=(Estoy seguro de que aún me faltan un par de indicios.)
+# Brok
+CPC15_MINK_INVESTIGATION_SEVERAL-2=(Aunque quizás tenga los suficientes para probar mi teoría...)
+#----------------------------------------------------
+# Brok
+CPC15_INVESTIGATION_NO-1=Tenga paciencia. No es un caso habitual.
+# Mink
+CPC15_INVESTIGATION_NO-2=Vaya... ¡Este estrés me está matando!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INVESTIGATION_ANYWAY-1=(Peeeeero... Tengo hambre, así que...)
+# Brok
+CPC15_MINK_INVESTIGATION_ANYWAY-2=Vale. Creo que merece la pena.
+# Mink
+CPC15_MINK_INVESTIGATION_ANYWAY-3=¿Está seguro? No parece que tenga mucha confianza.
+# Brok
+CPC15_MINK_INVESTIGATION_ANYWAY-4=Lo estoy. A grandes rasgos.
+# Mink
+CPC15_MINK_INVESTIGATION_ANYWAY-5=Muy bien... Reuniré a todos.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INVESTIGATION_YES1-1=Sí. Ya estoy listo para exponer la verdad.
+# Mink
+CPC15_MINK_INVESTIGATION_YES1-2=¡Impresionante!
+# Mink
+CPC15_MINK_INVESTIGATION_YES1-3=Comencemos pues.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INVESTIGATION_YES2-1=Estoy listo. ¡Reúna a todos!
+# Mink
+CPC15_MINK_INVESTIGATION_YES2-2=Vale.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_WELCOME1-1=¿Dr. Mink?
+#----------------------------------------------------
+# Brok
+CPC15_MINK_WELCOME2-1=Tengo que entender algo.
+# Mink
+CPC15_MINK_WELCOME2-2=No es el único.
+#----------------------------------------------------
+# Mink
+CPC15_MINK_WELCOME3-1=¿Y bien, detective? ¿Cuánto tiempo más le va a llevar?
+#----------------------------------------------------
+# Brok
+CPC15_MINK_EXIT1-1=Buscaré indicios alrededor.
+# Mink
+CPC15_MINK_EXIT1-2=Más le vale encontrar al culpable, ¡porque yo no tuve nada que ver!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_EXIT2-1=Deme un momento. Continuaremos esta charla más tarde.
+# Mink
+CPC15_MINK_EXIT2-2=¡Aquí hay más gente! ¡Vaya a interrogar al resto!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_DEFAULT1-1=¿Le parece esto importante?
+# Mink
+CPC15_MINK_INV_DEFAULT1-2=¿Pero qué pregunta es esa?
+# Brok
+CPC15_MINK_INV_DEFAULT1-3=Sólo responda. ¿Sí o no?
+# Mink
+CPC15_MINK_INV_DEFAULT1-4=¡No!
+# Brok
+CPC15_MINK_INV_DEFAULT1-5=Vale.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_DEFAULT2-1=Me preguntaba si...
+# Mink
+CPC15_MINK_INV_DEFAULT2-2=¡Es increíble! ¿Cómo logra guardar todo eso?
+# Mink
+CPC15_MINK_INV_DEFAULT2-3=¡Me encantaría estudiar ese misterio!
+# Brok
+CPC15_MINK_INV_DEFAULT2-4=¿Y si se centra por ahora en el que tenemos entre manos?
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-1=Es un doctor, ¿cierto?
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-2=Depende.
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-3=Necesito que me automatice una prescripción médica... o algo así.
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-4=Que se la actualice.
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-5=¡Sí! Eso.
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-6=Bueno, no soy ese tipo de doctor.
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-7=Maldita sea...
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-8=Pero está de suerte. ¡Tengo justo lo que necesita!
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-9=¿Ah, sí? ¡Genial!
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-10=Démela.
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-11=Ahí tiene.
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-12=¿Ya está?
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-13=¡Gracias! Me ha salvado la vida.
+# Brok
+#Brok is referring to the tramp who urgently needs this medicine
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-14=Bueno, no a mí.... En fin.
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-15=Tenga esto en cuenta a la hora de resolver el caso.
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-16=Eso no demostraría mucha neutralidad...
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-17=Pero se lo agradezco. De veras.
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_BEFORE-18=Sí...
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_TRAMPPRESCR_AFTER-1=¿Otra vez? Ya la he actualizado.
+# Brok
+CPC15_MINK_INV_TRAMPPRESCR_AFTER-2=Oh, es cierto.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_MONEY-1=(¡No lo necesita!)
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_LABFLOWER-1=Mmm... Me suena haberla visto en algún lado...
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_CATFUR-1=¡Bonita peluca!
+# Brok
+CPC15_MINK_INV_CATFUR-2=No es...
+# Brok
+CPC15_MINK_INV_CATFUR-3=Mmm. ¡1000 Unis y es suya!
+# Mink
+CPC15_MINK_INV_CATFUR-4=No, gracias.
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_LAMPMINK-1=Mi pobre lámpara...
+# Brok
+CPC15_MINK_INV_LAMPMINK-2=Bueno, ¡está de suerte! Puede quedarse la del Dr. Hush. ¡No creo que la necesite!
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_LAMPHUSH-1=¿Esa es del doctor Hush?
+# Mink
+CPC15_MINK_INV_LAMPHUSH-2=Creo que debería analizarla con mi tablet.
+# Brok
+CPC15_MINK_INV_LAMPHUSH-3=¡Venga!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_MAGNIFY-1=¿Ve? ¡Soy un detective real!
+# Mink
+CPC15_MINK_INV_MAGNIFY-2=Me esperaba algún distintivo...
+# Brok
+CPC15_MINK_INV_MAGNIFY-3=¡Esto es mucho mejor!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_MAPBUILDING-1=¿Qué es esto de en medio?
+# Mink
+CPC15_MINK_INV_MAPBUILDING-2=¿Lo que cruza la habitación? El conducto de ventilación.
+# Brok
+CPC15_MINK_INV_MAPBUILDING-3=Interesante...
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_PILLHUSH-1=¿La medicación del Dr. Hush?
+# Brok
+CPC15_MINK_INV_PILLHUSH-2=¿Qué medicina es?
+# Mink
+CPC15_MINK_INV_PILLHUSH-3=Ni idea. ¡Pregúnteselo a mi tablet!
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_TABLETHUSH-1=¡Esa no es la mía!
+# Brok
+CPC15_MINK_INV_TABLETHUSH-2=¡Ya lo sé! ¡Desbloquéela!
+# Mink
+CPC15_MINK_INV_TABLETHUSH-3=Sólo el Dr. Hush puede.
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_WRAPPING-1=Una hamburmiga del McPulga. ¡Me encantan!
+# Mink
+CPC15_MINK_INV_WRAPPING-2=¡Ah! ¡Es usted un gourmet! Quién lo habría imaginado.
+# Brok
+CPC15_MINK_INV_WRAPPING-3=¡Sin duda!
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_SCREW-1=¡...!
+# Mink
+CPC15_MINK_INV_SCREW-2=¡Esto es...!
+# Brok
+CPC15_MINK_INV_SCREW-3=¿Un tornillo?
+# Mink
+CPC15_MINK_INV_SCREW-4=¡No cualquier tornillo!
+# Mink
+CPC15_MINK_INV_SCREW-5=¡Los tornillos con forma de rayo son muy cotizados entre los coleccionistas!
+# Mink
+CPC15_MINK_INV_SCREW-6=¡Y por fin tengo uno!
+# Brok
+CPC15_MINK_INV_SCREW-7=¡Ey, espere!
+# Brok
+CPC15_MINK_INV_SCREW-8=No puedo dárselo. Es un recuerdo valioso...
+# Mink
+CPC15_MINK_INV_SCREW-9=Está bien. ¡10.000 Unis!
+# Brok
+CPC15_MINK_INV_SCREW-10=¡¿Huh?! Pero...
+# Mink
+CPC15_MINK_INV_SCREW-11=¡Cállese y coja mi dinero!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_SCREW_NO-1=Lo siento. Le he cogido cariño.
+# Mink
+CPC15_MINK_INV_SCREW_NO-2=Vaya chasco...
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_SCREW_YES-1=¡Trato hecho!
+# Mink
+CPC15_MINK_INV_SCREW_YES-2=¡Genial!
+#----------------------------------------------------
+# Mink
+CPC15_MINK_INV_HOOVER-1=¡Mmm...!
+# Brok
+CPC15_MINK_INV_HOOVER-2=¿Por qué sonríe?
+# Mink
+CPC15_MINK_INV_HOOVER-3=¡Me vendría bien ese bot de limpieza!
+# Brok
+CPC15_MINK_INV_HOOVER-4=¿De verdad? ¡¿Esta antigualla?!
+# Brok
+CPC15_MINK_INV_HOOVER-5=¿Qué pasa con Tidy?
+# Mink
+CPC15_MINK_INV_HOOVER-6=Precisamente. ¡Con esto ya no hará falta que entre en mi habitación nunca más!
+# Mink
+CPC15_MINK_INV_HOOVER-7=¡Lo quiero!
+# Brok
+CPC15_MINK_INV_HOOVER-8=Vale, pero... está roto.
+# Mink
+CPC15_MINK_INV_HOOVER-9=¡Da igual! ¡Lo repararé en un santiamén!
+# Mink
+CPC15_MINK_INV_HOOVER-10=Le puedo dar... Mmm...
+# Mink
+CPC15_MINK_INV_HOOVER-11=Mil Unis.
+# Brok
+CPC15_MINK_INV_HOOVER-12=¡¿Tanto?!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_HOOVER_YES-1=¡Trato hecho!
+# Mink
+CPC15_MINK_INV_HOOVER_YES-2=¡Sí!
+# Mink
+CPC15_MINK_INV_HOOVER_YES-3=¡Al final no ha sido tan mal día!
+#----------------------------------------------------
+# Brok
+CPC15_MINK_INV_HOOVER_NO-1=Lo siento. Le he cogido cariño.
+# Mink
+CPC15_MINK_INV_HOOVER_NO-2=Vaya...
+#----------------------------------------------------
+# Brok
+CPC15_MINK_THINK1-1=(No me inspira demasiada confianza...)
+# Brok
+CPC15_MINK_THINK1-2=(Debería intentar sonsacarle todos los hechos, y ver si encuentro alguna contraducción.)
+#----------------------------------------------------
+# Mink
+CPC15_MINK_FIRSTSTAGE-1=¿Y bien, detective? ¿Cuánto tiempo más le va a llevar?
+# Brok
+CPC15_MINK_FIRSTSTAGE-2=Cierto. Ya es la hora.
+# Brok
+CPC15_MINK_FIRSTSTAGE-3=Creo que deberíamos reunirnos todos en su habitación.
+# Mink
+CPC15_MINK_FIRSTSTAGE-4=Muy bien. Traeré al resto.
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_MONITORING-1=(Me pregunto... ¿Se registrará la actividad en este laboratorio?)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_RESTROOM-1=(¿Habrá algo en la sala de descanso que no haya visto?)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_CEILING-1=(Creo que ya he buscado bastante por abajo. ¿Y si ahora busco indicios más arriba?)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_HUSHROOM-1=(Debería investigar más a fondo la habitación del Dr. Hush.)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_MINKROOM-1=(¿Habrá algo en la habitación del Dr. Mink que no haya visto?)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_BODY-1=(Creo que debería mirar mejor el cadáver del Dr. Hush...)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_TABLET-1=(Mmm... Igual debería "jugar" un poco con la tablet del Dr. Mink.)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_INTERROGATE-1=(Seguro que aún puedo sacarle más información a alguien.)
+#----------------------------------------------------
+# Brok
+CPC15_MISSINGCLUE_NANITES-1=(Dr. Mink es un especialista en nanobots. ¿Y si los busco en lugares donde no debería haberlos?)
+#----------------------------------------------------
+# Ott
+CPC15_JUMPBED1-1=¿Qué?...
+#----------------------------------------------------
+# Mink
+CPC15_JUMPBED2-1=¿Está loco?
+#----------------------------------------------------
+# Brok
+CPC15_INVESTIGATION_TIME1-1=Mmm... Ott parece tener una idea.
+# Brok
+CPC15_INVESTIGATION_TIME1-2=Veamos qué se le ha ocurrido.
+#----------------------------------------------------
+# Brok
+CPC15_INVESTIGATION_TIME-1=Me parece que ya tengo todos los indicios que necesito.
+# Brok
+CPC15_INVESTIGATION_TIME-2=Hablemos con el Dr. Mink para que reúna a todos.

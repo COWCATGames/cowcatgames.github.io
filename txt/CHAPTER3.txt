@@ -1,0 +1,175 @@
+﻿#-----------------------------------------
+#=CHAPTER 3 TEXT POTENTIALLY USED EVERYWHERE
+#----------------------------------------
+
+#----------------------------------------------------
+ID=CH3_CALL_GRAFF_MORNING
+T=...
+W=BROK
+A=THINK
+
+T=No reply...
+W=BROK
+A=DOWN
+
+T=Obviously. He's busy with a trial this morning. Better not bother him.
+W=BROK
+A=HAPPY
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+ID=CH3_CALL_SHAY_BEFORESELFMODIFIER
+T=Hi!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Hey, Bro'. What's up?
+W=SHAY
+C2A=HAPPY
+
+T=Well... Got a lotta things to do. 
+W=BROK
+C1A=MOCK
+
+T=What a coincidence. Me too!
+W=SHAY
+C2A=NORMAL
+
+T=[...]
+C2=NONE
+
+T=No wait...
+W=BROK
+C1A=THINK
+
+T=Argh, too late.
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+ID=CH3_CALL_SHAY_AFTERSELFMODIFIER
+T=Hey.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=SHAY
+C2A=NORMAL
+
+T=Bro'! Any luck finding those materials?
+W=SHAY
+C2A=HAPPY
+
+T=I'm... progressing.
+W=BROK
+C1A=ALRIGHT
+
+T=Good! If you can get these by tonight, that'll be perfect.
+W=SHAY
+C2A=NORMAL
+
+T=I'll try...
+W=BROK
+C1A=MAYBE
+
+T=So, what's bothering you?
+W=SHAY
+C2A=WONDER
+
+T=Actually...
+W=BROK
+
+T=Don't worry about it. I'll just come by later.
+W=BROK
+C1A=READY
+
+T=Cool.
+W=SHAY
+C2A=NORMAL
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+ID=CH3_CALL_WES_BEFOREMEET
+T=Hey, Wes.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=WES
+C2A=NORMAL
+
+T=Where are you?
+W=BROK
+C1A=WONDER
+
+T=N... y... bus...
+W=WES
+C2A=ANGRY
+COMM=None of your business - We only hear bits because of the bad line
+
+T=Your office is closed! Let me in!
+W=BROK
+C1A=READY
+
+T=W... ... me... de... h... a... ...n...t...
+W=WES
+C2A=NORMAL
+COMM=Wait for me outside. I'll be here any minute
+
+T=I can't hear you!
+W=BROK
+C1A=THINK
+
+T=F... i...
+W=WES
+C2A=ANGRY
+COMM=Forget it
+
+T=You're breaking up.
+W=BROK
+
+T=[...]
+C2=NONE
+
+T=Great...
+W=BROK
+C1A=STUPID
+TEN=INTERFACE_CALL_END
+
+
+
+#----------------------------------------------------
+#= GRAFF IN BUNKER
+#----------------------------------------------------
+ID=CH3_GRAFF_BUNKER1
+T=...
+W=GRAFF
+A=MEH
+
+T=What's this place, exactly?
+W=GRAFF
+A=THINK
+
+T=I don't have a signal...
+W=GRAFF
+A=THINK
+TEN=INTERFACE_CALL_END
+
+#----------------------------------------------------
+ID=CH3_GRAFF_BUNKER2
+T=This is pointless. I can't reach anyone from here.
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_CALL_END
+
+
+
+###############################################
+# PROOFREAD - jblaker - 16/08/2019
+# EXPRESSIONS - Oggy Cather - 24/09/2019
+###############################################

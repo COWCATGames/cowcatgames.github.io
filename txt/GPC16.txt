@@ -1,0 +1,244 @@
+﻿#-------------------------------
+#=SLUM TRASHER HUNT
+#-------------------------------
+
+
+#----------------------
+#= First
+#----------------------
+ID=GPC16_FIRST1
+T=(Cough, cough)
+W=GRAFF
+A=CHOKE
+CONTEXT=If Graff enters this room when he's ill
+
+T=Hopefully... I can win some money here... fast!...
+W=GRAFF
+A=CHOKE
+TEN=CLICKERS_BACK
+
+#----------------------
+ID=GPC16_CONTROLS_WRONG
+T=Just my luck... A thug broke the controls.
+W=GRAFF
+A=TURN
+NB=1
+D=90
+CONTEXT=Room interactions
+
+#----------------------
+#= Window
+#----------------------
+ID=GPC16_WINDOW1
+T=I'm fed up with this dump...
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Furniture
+#----------------------
+ID=GPC16_FURNITURE1
+T=That won't help...
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Statue
+#----------------------
+ID=GPC16_STATUE1
+T=What the heck is this?...
+W=GRAFF
+A=SURPRISED
+
+#----------------------
+#= Lever
+#----------------------
+ID=GPC16_LEVER1
+T=I'll use this to throw the rubble away...
+W=GRAFF
+A=FRIENDLY
+
+#----------------------
+#= Outlet
+#----------------------
+ID=GPC16_OUTLET1
+T=Empty...
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Money
+#----------------------
+ID=GPC16_CONTROLS_UNIS1
+T=Woah, that's not cheap...
+W=GRAFF
+A=SURPRISED
+
+#----------------------
+ID=GPC16_CONTROLS_NOMONEY1
+T=Oh gosh... Wasted all my money.
+W=GRAFF
+A=STUPID
+
+#------------------------------------
+#= Result according to what we get
+#------------------------------------
+ID=GPC16_RESULT_NOTHING
+T=Hmm...
+W=GRAFF
+A=MEH
+CONTEXT=Result after grabbing
+TEN=PC16_RESULT_NOTHINGDIALOG
+IT=1
+
+#------------------------------------
+ID=GPC16_RESULT_NOTHING1
+T=Just my luck. Nothing.
+W=GRAFF
+A=OPPOSITE
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=GPC16_RESULT_NOTHING2
+T=Aww...
+W=GRAFF
+A=SAD
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=GPC16_RESULT_NOTHING3
+T=Come on!...
+W=GRAFF
+A=ANGRY
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=GPC16_RESULT_SOMETHING1
+T=Hey! Is that...
+W=GRAFF
+A=THINK
+TEN=PC16_RESULT_SOMETHINGCHECK
+IT=1
+
+#------------------------------------
+ID=GPC16_RESULT_SOMETHING2
+T=Finally!
+W=GRAFF
+A=HAPPY
+TEN=PC16_RESULT_SOMETHINGCHECK
+IT=1
+
+#------------------------------------
+ID=GPC16_RESULT_SOMETHING3
+T=Nice!
+W=GRAFF
+A=FRIENDLY
+TEN=PC16_RESULT_SOMETHINGCHECK
+IT=1
+
+#------------------------------------
+ID=GPC16_RESULT_ENERGYDRINK
+T=An energy drink? I'll take it.
+W=GRAFF
+A=HAPPY
+TEN=PC16_RESULT_GETITEMFOOD_NOTREAL
+IT=1
+
+#------------------------------------
+ID=GPC16_RESULT_PAMPALOS
+T=A Pampalos... Urgh...
+W=GRAFF
+A=YUCK
+TEN=PC16_RESULT_GETITEMFOOD_NOTREAL
+IT=1
+
+#------------------------------------
+ID=GPC16_RESULT_PIZZA
+T=A pizza?...
+W=GRAFF
+A=THINK
+TEN=PC16_RESULT_GETITEMFOOD_NOTREAL
+IT=1
+
+#------------------------------------
+ID=GPC16_RESULT_NOTREAL
+T=There must be something more interesting...
+W=GRAFF
+A=TURN
+TEN=PC16_RESULT_LEVER
+
+#------------------------------------
+ID=GPC16_RESULT_XPUPGRADE
+T=A digital code for a game?!...
+W=GRAFF
+A=SURPRISED
+
+T=Gonna improve my skills!
+W=GRAFF
+A=READY
+TEN=PC16_RESULT_DOXPUPGRADE
+
+#------------------------------------
+ID=GPC16_RESULT_XPUPGRADE2
+T=A new game!
+W=GRAFF
+A=READY
+TEN=PC16_RESULT_DOXPUPGRADE
+#------------------------------------
+ID=GPC16_RESULT_UNIS50
+T=Cool, 50 Unis!
+W=GRAFF
+A=HAPPY
+TEN=PC16_RESULT_GET50UNIS
+
+#------------------------------------
+ID=GPC16_RESULT_UNIS200
+T=Yes! 200 Unis!
+W=GRAFF
+A=LAUGH
+
+T=I should come here more often... When I have time for it.
+W=GRAFF
+A=LAUGH
+TEN=PC16_RESULT_GET200UNIS
+
+#------------------------------------
+ID=GPC16_RESULT_UNIS500
+T=500 Unis?! Awesome!
+W=GRAFF
+A=LAUGH
+TEN=PC16_RESULT_GET500UNIS
+
+#------------------------------------
+ID=GPC16_RESULT_ENERGYSERUM
+T=An energy serum?
+W=GRAFF
+A=THINK
+TEN=PC16_RESULT_GIVEENERGYSERUM
+
+#----------------------
+ID=GPC16_WINDOW_BREAK
+T=...
+W=GRAFF
+A=GASP
+
+
+#------------------------------------
+ID=GPC16_BLOW_MINE1
+T=Argh...
+W=GRAFF
+A=GASP
+
+
+#------------------------------------
+ID=GPC16_BLOW_MINE2
+T=Oh no...
+W=GRAFF
+A=TURN
+
+
+
+###############################################
+# PROOFREAD - quasimonk - 28/08/2019
+# EXPRESSIONS - Oggy - 15/08/2019
+###############################################

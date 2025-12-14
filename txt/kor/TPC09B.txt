@@ -1,0 +1,1752 @@
+#-------------------------------
+#=POLICE JAIL
+#-------------------------------
+
+#----- Interactions --------
+PC_DISTRIBUTOR=음식 배급기
+PC_SHOWER=드라이 샤워
+PC_TOILETS=화장실
+PC_FUR=털
+PC_SEAT=좌석
+#Hole in the laser barrier
+PC_DEFECT=결함 있는 부분
+PC_TOUCHPANEL=터치 패널
+PC_EMERGENCYBUTTON=긴급 버튼
+PC_LOOKRIGHT=오른쪽 보기
+PC_BOOK=책
+PC_DOWNLOAD=다운로드
+PC_PREVIOUSPAGE=이전 페이지
+PC_NEXTPAGE=다음 페이지
+PC_CHEST=상자
+
+#----- Choices / Items --------
+
+TUTORIAL_MOVE=움직인다
+TUTORIAL_HIGHERLOWER=더 높이/낮게
+TUTORIAL_CANCEL=취소한다
+
+GOT_CATFUR=고양이 털이다!
+GOT_INVENTORY=내 물건 들이다!
+
+
+#----- Topics --------
+PC09B_BOOK_UPDATECHOICE=지금 갱신할까요?
+PC09B_SIN_CHOICE_PANEL=어떤 버튼을 누를까요?
+PC09B_SEARCH_RJ=R.J.의 몸을 수색할까요?
+
+TOPIC_RJ=R.J.
+TOPIC_PANEL=버튼을 누른다
+TOPIC_CALL=그래프에게 전화한다
+TOPIC_SUBTERFUGE=속인다
+TOPIC_PLAYSICK=아픈 척 한다
+TOPIC_GIVE=뭔가 준다
+TOPIC_INSULT=모욕한다
+TOPIC_REPAIR=개수대를 고친다
+TOPIC_LASERS=보안 레이저
+TOPIC_CONVINCE=설득한다
+
+CHOICE_CHEER=응원한다
+CHOICE_FORGETIT=잊어 버리라고 한다
+CHOICE_BUTTON1=1번 버튼
+CHOICE_BUTTON2=2번 버튼
+CHOICE_BUTTON3=3번 버튼
+CHOICE_BUTTON4=4번 버튼
+
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Brok has been arrested, first time coming to the room
+# *****************************************************************
+# RJ                                 
+PC09B_INTRO1-1=첫 번째 감옥으로 어서 들어가.
+#----------------------------------------------------
+# RJ                                 
+PC09B_INTRO2-1=샤워해.
+# Brok                                 
+#NB : For this very first dialog only, Brok may talk in a formal way to R.J.
+PC09B_INTRO2-2=뭐라고...? 네가 보는 앞에서?
+# RJ                                 
+PC09B_INTRO2-3=드라이 샤워하는 거라 옷 벗을 필요 없어.
+# Brok                                 
+PC09B_INTRO2-4=아...
+#----------------------------------------------------
+# Various                                 
+PC09B_INTRO3-1=(세균 박멸 중입니다...)
+# Various                                 
+PC09B_INTRO3-2=(절차가 완료되었습니다.)
+# Brok                                 
+PC09B_INTRO3-3=빨리도 끝났네!
+#----------------------------------------------------
+# Brok                                 
+PC09B_INTRO4-1=...
+# Brok                                 
+PC09B_INTRO4-2=우우우... 어째서 이렇게 엉망이 돼버린 걸까?
+# Brok                                 
+PC09B_INTRO4-3=(하아)
+# Brok                                 
+PC09B_INTRO4-4=그래프가 날 보면 실망하겠지...
+# Brok                                 
+PC09B_INTRO4-5=!!!
+# Brok                                 
+PC09B_INTRO4-6=전시회! 잊고 있었다!
+# Brok                                 
+PC09B_INTRO4-7=제 때 오지 않으면 그래프가 날 죽이려 들 거야!
+# Brok                                 
+PC09B_INTRO4-8=오후 4시야. 아직 제 때 도착할 수 있어.
+# Brok                                 
+PC09B_INTRO4-9=무슨 수를 써서라도 학교로 가야 해!
+# Brok                                 
+PC09B_INTRO4-10=쥐구멍이라도 찾아야겠군!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC09B_BED1-1=느긋하게 쉴 때가 아니야!
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT1-1=... 여기 뭔가 문제 있어 보이는데? 뭔가...
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT1B-1=음. 저항감이 있지만 역시.
+# Brok                                 
+PC09B_DEFECT1B-2=레이저 장벽에 구멍이 여기 있잖아!
+# Brok                                 
+PC09B_DEFECT1B-3=이런 걸 보는 게 처음은 아니지.
+# Brok                                 
+PC09B_DEFECT1B-4=이런 기술들이 완벽하지 않아서 다행이군. 덕분에 살기 편해지니까.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT2-1=장벽이 견고하긴 해도 여길 통해서 손을 넣을 수는 있군!
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_SINK1-1=헤에! 저쪽 개수대를 건드릴 수 있잖아!
+# Brok                                 
+PC09B_DEFECT_SINK1-2=어디 보자.
+#----------------------------------------------------
+# Sin                                 
+PC09B_DEFECT_TOUCHSINK1-1=(하아) 뭘 만지작거리고 있습니까?
+# Brok                                 
+PC09B_DEFECT_TOUCHSINK1-2=이것 봐! 내가 있는 장소에서 저걸 열 수 있다고!
+# Sin                                 
+PC09B_DEFECT_TOUCHSINK1-3=뭘 연다고요?
+# Brok                                 
+PC09B_DEFECT_TOUCHSINK1-4=뚜껑 말이야! 개수대 뒤에!
+# Brok                                 
+PC09B_DEFECT_TOUCHSINK1-5=탈출 티켓이 여기에 달려있다 이 말이야!
+# Sin                                 
+PC09B_DEFECT_TOUCHSINK1-6=아-하...
+# Brok                                 
+PC09B_DEFECT_TOUCHSINK1-7=(만지작 만지작...)
+# Brok                                 
+PC09B_DEFECT_TOUCHSINK1-8=뭔가... 망가트린 것 같은데...
+# Brok                                 
+PC09B_DEFECT_TOUCHSINK1-9=아-하!
+# Brok                                 
+PC09B_DEFECT_TOUCHSINK1-10=이제 물이 새는 구만. 완벽해!
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_SINK2-1=어디 다시 한번 해볼까.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_ALREADY-1=더 안 건드려도 돼. 이미 완벽한 걸!
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_RJ-1=R.J. 녀석, 개수대에 모자를 올려놨군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_DONE-1=적어도 지금은... 이렇게 하면 되겠지.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_CATFUR_NOSINK1-1=저기, 씬!
+# Brok                                 
+PC09B_DEFECT_CATFUR_NOSINK1-2=이 고양이 털 가져갈 수 있어?
+# Sin                                 
+PC09B_DEFECT_CATFUR_NOSINK1-3=왜 그러십니까?
+# Brok                                 
+PC09B_DEFECT_CATFUR_NOSINK1-4=하라면 해! 나중에 설명할 테니.
+# Sin                                 
+PC09B_DEFECT_CATFUR_NOSINK1-5=별로... 하고 싶지 않아요. 아무것도... 하고 싶은 기분이 들지 않아요.
+# Brok                                 
+PC09B_DEFECT_CATFUR_NOSINK1-6=알았어... 다른 방법을 찾아보지 뭐.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_CATFUR_NOSINK2-1=땅바닥에 고양이 털을 던지는 건 그렇게 효율적이진 않아.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_CATFUR_SINK-1=고양이 털을 개수대에 올려놨어.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DEFECT_CATFUR_HAT-1=됐다.
+# Brok                                 
+PC09B_DEFECT_CATFUR_HAT-2=모자 속에 고양이 털이라! 마술사나 다름없군!
+#----------------------------------------------------
+# Brok                                 
+PC09B_FUR1-1=웬... 털? 이게 어디서 온 거지?
+# Brok                                 
+PC09B_FUR1-2=아! 알겠다!
+# Brok                                 
+PC09B_FUR1-3=샤워할 때 옷에 묻어 있었구나! 배수구에 막힌 모양이군.
+# Brok                                 
+PC09B_FUR1-4=혹시 몰라? 이게 쓸만할 지도!
+#----------------------------------------------------
+# Brok                                 
+PC09B_DISTRIBUTOR_GETFOOD-1=우웩...
+#----------------------------------------------------
+# Brok                                 
+PC09B_DISTRIBUTOR_MAX-1=이 정도면 썩은 과일을 평생 먹겠군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SHOWER1-1=드라이 샤워... 난 저걸 그렇게 좋아하지 않아.
+# Brok                                 
+PC09B_SHOWER1-2=직접 물에 닿는 것만큼 좋은 건 없지!
+#----------------------------------------------------
+# Brok                                 
+PC09B_SHOWER2-1=흠...
+# Brok                                 
+PC09B_SHOWER2-2=탈착 가능한 부품이나 도움이 될 만한 부품은 보이지 않는군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_TOILETS1-1=아니! 낯선 사람들이 보는 앞에서 그런 짓은 못 하지!
+# Sin                                 
+PC09B_TOILETS1-2=할 거면 어서 하세요. 전혀 신경 쓰지 않으니.
+# Brok                                 
+PC09B_TOILETS1-3=그쪽을 말하는 게 아니라고!
+#----------------------------------------------------
+# Brok                                 
+PC09B_SINK1-1=음, 잘 되는군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SINK2-1=무언가를 집어넣을 공간이 없어.
+# Brok                                 
+PC09B_SINK2-2=뭔가 만지거나 빼낼 것도 없고.
+# Brok                                 
+PC09B_SINK2-3=내 쪽에 있는 개수대는 앞으로의 탈출 계획에 중요한 부분을 담당하진 않을지도.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SCREEN1-1=이게... 뭘 의미하는지 모르겠네.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SCREEN2-1=뭔가 알 수 없는 이상한 부호가 있어. 죄수들이 수학 학위라도 받길 기대하나?
+# Brok                                 
+PC09B_SCREEN2-2=그래프나 셰이라면 아마 이해하겠지만 내가 그럴 IQ를 갖고 있는 것도 아니고.
+# Brok                                 
+PC09B_SCREEN2-3=아무렴 뭐 어때. 아무튼 탈출할 방법이나 찾아야지!
+#----------------------------------------------------
+# Brok                                 
+PC09B_SCREEN_VISITOR1-1=웬 타이머가...? 방문자용인가?
+# Brok                                 
+PC09B_SCREEN_VISITOR1-2=다행히 기능이 막혀 있군. 감옥이 예전 같지 않아!
+#----------------------------------------------------
+# Brok                                 
+PC09B_SCREEN_BOOK1-1=헤에, 보아하니 "독서" 모드인가 보군!
+#----------------------------------------------------
+# Brok                                 
+PC09B_TOUCHPANEL1-1=이 중에 내가 갇힌 곳을 열 방법이 있겠지!
+# Brok                                 
+PC09B_TOUCHPANEL1-2=는 아무 일도 안 일어나잖아? (하아)
+#----------------------------------------------------
+# Brok                                 
+PC09B_TOUCHPANEL_FREE1-1=내가 왜 감옥을 닫은 거지...?
+#----------------------------------------------------
+# Brok                                 
+PC09B_TOUCHPANEL_SEAT_YES1-1=난 자유의 몸이다!
+#----------------------------------------------------
+# Brok                                 
+PC09B_TOUCHPANEL_SEAT_NO1-1=안 돼...!
+#----------------------------------------------------
+# Brok                                 
+PC09B_TOUCHPANEL_SEAT_NO2-1=저 망할 카메라...!
+#----------------------------------------------------
+# Brok                                 
+PC09B_BREAKCAMERA1-1=카메라 한 대 나갔고!
+#----------------------------------------------------
+# Brok                                 
+PC09B_BREAKCAMERA2-1=바이 바이!
+#----------------------------------------------------
+# Brok                                 
+PC09B_TOUCHPANEL_SIN-1=안 돼!
+#----------------------------------------------------
+# Brok                                 
+PC09B_SEAT1-1=저게 방문자가 앉는 좌석이로군.
+# Brok                                 
+PC09B_SEAT1-2=방문자의 체격에 따라 알아서 높이가 조정되는 편이지.
+#----------------------------------------------------
+# Brok                                 
+PC09B_CAMERABREAK-1=소용 없어.
+# Brok                                 
+PC09B_CAMERABREAK-2=이런 방식으로는 카메라를 부술 수 없어. 좌석으로 밀어붙이기엔 힘이 부족해.
+#----------------------------------------------------
+# Brok                                 
+PC09B_C1FLOAT1-1=작은 플라스틱 디스크야! 네 덕분에 자유로워졌는데, 넌 오늘 나의 영웅이야!
+#----------------------------------------------------
+# Brok                                 
+PC09B_C1FLOAT2-1=지금 앉을 시간이냐고!
+#----------------------------------------------------
+# Various                                 
+PC09B_SEAT_NOTDEBUG-1=방문자가 없습니다.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SEAT_NOTDEBUG1-1=흠...
+#----------------------------------------------------
+# Brok                                 
+PC09B_SEAT_NOTDEBUG2-1=무의미한 짓이야. 방문자가 올 일도 없는데...
+#----------------------------------------------------
+# Brok                                 
+PC09B_EMERGENCYBUTTON1-1=여기선 절대 닿지 않아...
+# Brok                                 
+PC09B_EMERGENCYBUTTON1-2=하지만 누군가 누르면 무슨 일이 일어날지 궁금하긴 해!
+#----------------------------------------------------
+# Brok                                 
+PC09B_EMERGENCYBUTTON_FREE1-1=이런!
+#----------------------------------------------------
+# Brok                                 
+PC09B_EMERGENCYBUTTON_FREE1B-1=괜찮아! 아무도 못 들었을걸...
+#----------------------------------------------------
+# Brok                                 
+PC09B_EMERGENCYBUTTON_RJ1-1=이런! 얼른 숨어야...
+# RJ                                 
+PC09B_EMERGENCYBUTTON_RJ1-2=대체 뭐야?!
+# RJ                                 
+PC09B_EMERGENCYBUTTON_RJ1-3=왜 저 알람이 울리는 건데?
+# Brok                                 
+PC09B_EMERGENCYBUTTON_RJ1-4=아니, 왜 날 보는 건데! 여기서 내가 뭘 할 수 있다고!
+# RJ                                 
+PC09B_EMERGENCYBUTTON_RJ1-5=으으음...
+#----------------------------------------------------
+# Brok                                 
+PC09B_EMERGENCYBUTTON_RJ2-1=이런...!
+# RJ                                 
+PC09B_EMERGENCYBUTTON_RJ2-2=또?!
+#----------------------------------------------------
+# Brok                                 
+PC09B_CAMERASEAT_RJ1-1=엄...
+# RJ                                 
+PC09B_CAMERASEAT_RJ1-2=이봐!
+# RJ                                 
+PC09B_CAMERASEAT_RJ1-3=방금 소리는 뭐지?!
+# Brok                                 
+PC09B_CAMERASEAT_RJ1-4=나도 몰라! 감옥 안에서 우리가 할 수 있는 게 뭐가 있다고?
+# RJ                                 
+PC09B_CAMERASEAT_RJ1-5=으으음. 너, 지켜 듣도록 하겠어!
+# Brok                                 
+PC09B_CAMERASEAT_RJ1-6=(무언가로 인해 소리를 발생 시켰어. 카메라 때인가...?)
+#----------------------------------------------------
+# Brok                                 
+PC09B_CAMERASEAT_RJ2-1=...
+# RJ                                 
+PC09B_CAMERASEAT_RJ2-2=방금 그 망할 소리는 왜 또 난 거야?!
+# Brok                                 
+PC09B_CAMERASEAT_RJ2-3=모르지. 전자 렌지 때문일지도?
+# RJ                                 
+PC09B_CAMERASEAT_RJ2-4=아 맞다! 내 커피.
+# Brok                                 
+PC09B_CAMERASEAT_RJ2-5=(카메라가 참 성가시게 군 다니까...)
+#----------------------------------------------------
+# Brok                                 
+PC09B_CAMERASEAT_RJ3-1=...
+# RJ                                 
+PC09B_CAMERASEAT_RJ3-2=아악! 언제까지 이럴 건데?!
+# Brok                                 
+PC09B_CAMERASEAT_RJ3-3=난 꼼짝도 안 했다고!
+# RJ                                 
+PC09B_CAMERASEAT_RJ3-4=...
+# Brok                                 
+PC09B_CAMERASEAT_RJ3-5=(의미 없는 짓이야. 간수가 주변을 돌아다니는 한, 내가 감옥을 빠져나오려는 시도를 "듣고" 눈치채겠지...)
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOXES1-1=경찰이 내 물건들은 왼쪽 상단 보관함에 넣어놨어...
+# Brok                                 
+PC09B_BOXES1-2=그리고 바로 옆에 보관함에도. 하나로는 꽉 찼나 보군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOXES_FREE1-1=내 물건은 되찾아야지!
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOXES_FREEAFTER-1=젠장. 총이라던가 다른 물건은 가져갔나 보군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOXES_FREE2-1=씬의 바로 눈 앞에서 씬의 물건을 훔치는 모습을 보이는 것은 안 좋겠지...
+#----------------------------------------------------
+# Brok                                 
+PC09B_EXIT1-1=보아 하니... 출구는 하나 뿐이군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_EXITNOTYET-1=내 물건들을 두고 떠날 수는 없어!
+#----------------------------------------------------
+# Brok                                 
+PC09B_EXITNOTYET2-1=씬하고 대화를 나눠봐야겠어.
+#----------------------------------------------------
+# Various                                 
+PC09B_BOOK_DEBUG1-1=손상된 파일입니다.
+# Brok                                 
+PC09B_BOOK_DEBUG1-2=뭐...?
+#----------------------------------------------------
+# Various                                 
+PC09B_BOOK_DEBUG2-1=손상된 파일입니다.
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOOK_AD-1=헤에, 디지털 광고 쿠폰이라! 멋진데!
+#----------------------------------------------------
+# Various                                 
+PC09B_BOOK_DOWNLOAD-1=도서 다운로드 서비스가 중단되었습니다.
+# Various                                 
+PC09B_BOOK_DOWNLOAD-2=즉, 죄수들은 더 이상 서점에서 책을 구매할 수 없음을 의미합니다.
+# Various                                 
+PC09B_BOOK_DOWNLOAD-3=그러나 접근 권한이 완전히 종료될 때까지 구매한 대부분의 도서는...
+# Various                                 
+PC09B_BOOK_DOWNLOAD-4=...만료일까지 얼마든지 열람이 가능합니다.
+# Various                                 
+PC09B_BOOK_DOWNLOAD-5=저희 가게를 지원해 주신 충성스러운 고객 님들께 진심으로 감사드립니다!
+#----------------------------------------------------
+# Various                                 
+PC09B_BOOK_NOTUPDATED1-1=기기의 펌웨어가 오래되었습니다.
+# Various                                 
+PC09B_BOOK_NOTUPDATED1-2=남은 부분을 읽고 싶으시면 업데이트해 주시길 바랍니다.
+# Various                                 
+PC09B_BOOK_NOTUPDATED1-3=지금 업데이트를 진행하시겠습니까?
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOOK_UPDATE_YES-1=진행해! 하지만 서두르는 게 좋을 거야!
+# Various                                 
+PC09B_BOOK_UPDATE_YES-2=업데이트 중입니다...
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOOK_UPDATE_LATER-1=시간 낭비잖아!
+# Various                                 
+PC09B_BOOK_UPDATE_LATER-2=그게 당신의 선택이로군요. 업데이트가 연기되었습니다.
+# Various                                 
+PC09B_BOOK_UPDATE_LATER-3=업데이트가 30초 이내에 자동으로 진행될 예정입니다.
+# Brok                                 
+PC09B_BOOK_UPDATE_LATER-4=하!
+# Various                                 
+PC09B_BOOK_UPDATE_LATER-5=그동안, 음악 감상이라도 해주시길.
+# Brok                                 
+PC09B_BOOK_UPDATE_LATER-6=아 그래. 감옥 퀄리티 하나는 끝내주네.
+# Various                                 
+PC09B_BOOK_UPDATE_LATER-7=...
+# Brok                                 
+PC09B_BOOK_UPDATE_LATER-8=(하아) 매 순간이 얼마나 소중한데 고작 감옥 안에서 엘리베이터 음악이나 듣는 신세라니.
+# Various                                 
+PC09B_BOOK_UPDATE_LATER-9=...
+# Various                                 
+PC09B_BOOK_UPDATE_LATER-10=이제 업데이트를 수행하겠습니다.
+#----------------------------------------------------
+# Unknown                                 
+PC09B_BOOK_READ1-1=페이지 1 - 감옥에서 착한 행동을 위한 조언. 해야 할 일을 단순화하고 출소 가능성을 높이기 위해 사회적 매너를 채택하도록 합시다.
+#----------------------------------------------------
+# Unknown                                 
+PC09B_BOOK_READ2-1=특히 : 1- 침착함을 유지하세요. 2- 자살하려고 레이저에 몸을 던지지 마세요. 신체의 일부가 레이저에 달라붙어 우리 팀이 청소를 하는데 어려움을 겪습니다. 3- 화장실 이외의 구역에서 물이나 체액 등이 새게끔 하지 말아 주세요.
+#----------------------------------------------------
+# Various                                 
+PC09B_BOOK_UPDATEFAILED-1=업데이트가 실패했습니다. 오류 0X85441253 - 알 수 없는 오류입니다.
+# Various                                 
+PC09B_BOOK_UPDATEFAILED-2=기존 펌웨어로 재시작 중입니다...
+#----------------------------------------------------
+# Brok                                 
+PC09B_BOOK_UPDATEFAILED_BROK-1=장난 하냐고...
+#----------------------------------------------------
+# Various                                 
+PC09B_FLOOR_DEBUG1-1=디버그 모드가 활성화되었습니다.
+# Brok                                 
+PC09B_FLOOR_DEBUG1-2=저 목소리... 무슨 일이 일어났나...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Sin who is in the next cell, totally in low spirits
+# *****************************************************************
+# Brok                                 
+PC09B_SIN_WELCOME1-1=어이, 씬!
+# Brok                                 
+PC09B_SIN_WELCOME1-2=너 괜찮아?
+# Sin                                 
+PC09B_SIN_WELCOME1-3=...
+# Brok                                 
+PC09B_SIN_WELCOME1-4=그래, 나도 알아. 꽤 힘들었지.
+# Brok                                 
+PC09B_SIN_WELCOME1-5=하지만... 모든 게 괜찮을 거야.
+# Brok                                 
+PC09B_SIN_WELCOME1-6=내가 어떻게 해서든 여기서 빠져나오게 해볼게! 지켜보라고!
+# Sin                                 
+PC09B_SIN_WELCOME1-7=...지쳤습니다. 전 신경 쓰지 말아 주세요.
+# Brok                                 
+PC09B_SIN_WELCOME1-8=(하아)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_WELCOME2-1=우리 대화 가능할까?
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_WELCOME3-1=도움이 필요해.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF_FORGIVE1-1=내 말 들어봐, 친구. 그 때 일은 미안했어...
+# Sin                                 
+PC09B_SIN_HIMSELF_FORGIVE1-2=대체 왜요...?
+# Sin                                 
+PC09B_SIN_HIMSELF_FORGIVE1-3=뭐가 그렇게 미안합니까? 감옥에 가게 된 이유가 저 때문인데.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF_DENOUNCE1-1=야...
+# Sin                                 
+PC09B_SIN_HIMSELF_DENOUNCE1-2=거기까지 하세요.
+# Sin                                 
+PC09B_SIN_HIMSELF_DENOUNCE1-3=다 알고 있으니까요.
+#----------------------------------------------------
+# Sin                                 
+PC09B_SIN_HIMSELF1B-1=이 난장판에 당신을 끌어와 버렸습니다... 당신을 공격했고요...
+# Sin                                 
+PC09B_SIN_HIMSELF1B-2=귀중한 약 때문에 약국을 털었지만 결국 실패했고...
+# Sin                                 
+PC09B_SIN_HIMSELF1B-3=오랜 친구 R.J.를 속이고 제 아내에게 약이나 먹일 생각을 하고 있었죠...
+# Brok                                 
+PC09B_SIN_HIMSELF1B-4=하지만 숭고한 목적 때문에 그러지 않았나.
+# Sin                                 
+PC09B_SIN_HIMSELF1B-5=그럴 리가요.
+# Sin                                 
+PC09B_SIN_HIMSELF1B-6=다 자기만족인 거죠. 얼마나 이기적입니까.
+# Sin                                 
+PC09B_SIN_HIMSELF1B-7=그리고 이제 대가를 치르겠지요.
+# Sin                                 
+PC09B_SIN_HIMSELF1B-8=트라이앵글은 저에게 사형 선고를 내릴 겁니다.
+# Brok                                 
+PC09B_SIN_HIMSELF1B-9=트라이앵글...?
+# Sin                                 
+PC09B_SIN_HIMSELF1B-10=네. 죄수의 운명을 결정짓는 정부의 일원들 입니다.
+# Brok                                 
+PC09B_SIN_HIMSELF1B-11=웨스는 나보고 AI라고 하던데.
+# Sin                                 
+PC09B_SIN_HIMSELF1B-12=아뇨. AI는 수사를 하지 최종적으로 심판을 내리는 것은 트라이앵글입니다.
+# Sin                                 
+PC09B_SIN_HIMSELF1B-13=그리고 온갖 증거들을 모았으니... 전 끝입니다.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF_FORGIVE2-1=그럴 리 없어. 네가 얼마나 좋은 사람인데.
+# Sin                                 
+PC09B_SIN_HIMSELF_FORGIVE2-2=좋기는 무슨...
+# Sin                                 
+PC09B_SIN_HIMSELF_FORGIVE2-3=이해 못하시나 본데... 당신은 저랑 다릅니다.
+# Brok                                 
+PC09B_SIN_HIMSELF_FORGIVE2-4=하긴... 내가 질이 더 나쁘겠지.
+# Sin                                 
+PC09B_SIN_HIMSELF_FORGIVE2-5=응?
+# Brok                                 
+PC09B_SIN_HIMSELF_FORGIVE2-6=방금 한 말 잊어버려.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF_DENOUNCE2-1=...
+# Brok                                 
+PC09B_SIN_HIMSELF_DENOUNCE2-2=(음... 씬 말이 맞는 것 같아...)
+# Brok                                 
+PC09B_SIN_HIMSELF_DENOUNCE2-3=(따지고 보면 다 씬 때문에 벌어진 일이니까.)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF2-1=어떻게 말해야 할 지 모르겠지만...
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-1=잘 봐, 내가 심리학자 같은 사람은 아니지만...
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-2=내 경험에 의하면... 최고의 기억과 꿈을 간직하란 거야.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-3=밖에서의 삶이 생각보다 더 끔찍할지도 몰라.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-4=얌전히 죽음을 기다릴 수도 있고 싸워나갈 수도 있는 법이지!
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-5=그래도 나아가도록 해. 너 뿐만이 아니라 네 주변의 소중한 사람들을 위해서라도.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-6=넌 충분히 두 번째 기회를 누릴 자격이 있어.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-7=그저... 아무것도 안 한다면 후회하게 될 거야.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-8=너한텐 딸이 있잖아.
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-9=...
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-10=나하고 약속 하나 해.
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-11=약속이라뇨?
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-12=바보 같은 짓을 더 이상 하지 않겠다고.
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-13=전...
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-14=(하아) 그러죠.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-15=더 크게! 소리 질러!
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-16=아악!!! 좀 혼자 냅둘 수 없나요?!
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-17=스스로에게 솔직해지란 말이다!
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-18=고작 여기서 삶을 끝난다고 생각해? 이딴 식으로?
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-19=그래요!
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-20=...
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-21=아니...
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-22=당신... 말이 맞습니다.
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-23=기회가 있다면... 딸을 다시 보고 싶어요...
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-24=그래서! 약속할 거지?
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-25=저... 전 싸우겠습니다.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-26=더 크게!
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-27=전 싸워나갈 것입니다!
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-28=그 기세야!
+# Sin                                 
+PC09B_SIN_HIMSELF2_CHEER1-29=하지만... 생각할 시간이 필요해요.
+# Brok                                 
+PC09B_SIN_HIMSELF2_CHEER1-30=물론 그렇겠지.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF2_DONTINSIST-1=안 그러는 게 좋겠어. 일을 악화시킬지도 몰라.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HIMSELF3-1=생각에 빠진 것 같은데 냅둬야겠군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ1-1=R.J.가 누군데?
+# Sin                                 
+PC09B_SIN_RJ1-2=바로 저기에 있는 간수입니다.
+# Brok                                 
+PC09B_SIN_RJ1-3=아...
+# Sin                                 
+PC09B_SIN_RJ1-4=머리가 좀 단순한 친구인데 전 R.J.를 속였습니다.
+# Brok                                 
+PC09B_SIN_RJ1-5=혹시 R.J.가... 너한테 원한을 품지 않았겠지?
+# Sin                                 
+PC09B_SIN_RJ1-6=그걸 말이라고 합니까? R.J.는 절 감옥으로 내동댕이쳤어요.
+# Sin                                 
+PC09B_SIN_RJ1-7=경위가 이렇게 속았다는 이유로 해고할 위기에 처했다고 R.J.가 저에게 그러더군요.
+# Brok                                 
+PC09B_SIN_RJ1-8=거 참...
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ2-1=그래, 결국 R.J.가 널 싫어한다는 거군.
+# Brok                                 
+PC09B_SIN_RJ2-2=하지만 내 탈출 계획을 실행하기 위해선 R.J.가 필요해. 나를 위해 노력할 수 있나?
+# Sin                                 
+PC09B_SIN_RJ2-3=어떤 계획을 세우시는지 확신이 들진 않지만...
+# Brok                                 
+PC09B_SIN_RJ2-4=그냥 내가 부탁할 때마다 R.J.를 불러주면 돼.
+# Sin                                 
+PC09B_SIN_RJ2-5=뭐... 그러죠.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ3-1=(필요할 때마다 R.J.를 부르겠다고 했으니 지금으로선 충분해.)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_THINK_FORGIVE-1=(씬 때문에 나도 사건에 휘말렸지. 고용비는 어림도 없고 어쩌면 그래프가 참석하는 전시회에 못 갈지도 몰라!)
+# Brok                                 
+PC09B_SIN_THINK_FORGIVE-2=(그래도 여러모로... 씬을 미워할 수는 없네.)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_THINK_DENOUNCE-1=(불쌍한 녀석.)
+# Brok                                 
+PC09B_SIN_THINK_DENOUNCE-2=(뭐, 다 저 녀석 탓이니까. 그건 그렇고 여기서 탈출하는데 씬이 도와줄 수 있을까...?)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL1-1=나를 휘말리게 해서 죄책감을 느낀다고 그랬지.
+# Sin                                 
+PC09B_SIN_PANEL1-2=그렇습니다...
+# Brok                                 
+PC09B_SIN_PANEL1-3=그러면... 부탁 하나 해도 될까?
+# Brok                                 
+PC09B_SIN_PANEL1-4=그쪽 패널에 있는 버튼을 눌러 줄 수 있어?
+# Sin                                 
+PC09B_SIN_PANEL1-5=어째서요?
+# Brok                                 
+PC09B_SIN_PANEL1-6=그냥 궁금해서.
+# Sin                                 
+PC09B_SIN_PANEL1-7=뭐 상관없죠. 어떤 버튼을 눌러야 하는지 말해 주세요.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL2-1=다른 버튼 눌러 줄 수 있어?
+# Sin                                 
+PC09B_SIN_PANEL2-2=아무것도 안 하는 것보단 낫죠.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL3-1=혹시...
+# Sin                                 
+PC09B_SIN_PANEL3-2=그러죠.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL_BUTTON1-1=첫 번째 버튼이야.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL_BUTTON2-1=두 번째 버튼?
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL_BUTTON3-1=아마 세 번째 버튼?
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL_BUTTON4-1=네 번째 버튼이야!
+# Sin                                 
+PC09B_SIN_PANEL_BUTTON4-2=R.J.를 부르라고요...? 그러고 싶진 않지만... 알겠습니다.
+# Sin                                 
+PC09B_SIN_PANEL_BUTTON4-3=어떤 이유로 부르면 될까요?
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL_BUTTON4NOPE-1=네 번째 버튼이야!
+# Sin                                 
+PC09B_SIN_PANEL_BUTTON4NOPE-2=R.J.를 부르라고요...?
+# Sin                                 
+PC09B_SIN_PANEL_BUTTON4NOPE-3=죄송합니다. 그럴 기분이 아니에요...
+#----------------------------------------------------
+# Sin                                 
+PC09B_SWITCH_ALREADY-1=딱히 달라지진 않습니다.
+# Brok                                 
+PC09B_SWITCH_ALREADY-2=아... 그렇지 참.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_PANEL_EXIT-1=더 확신이 서진 않아.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ_CONVINCE1-1=둘이 그래도 친구였잖아. 어쩌면 그쪽이 설득에 성공해서 날 풀어달라 하는 건?
+# Sin                                 
+PC09B_SIN_RJ_CONVINCE1-2=불가능합니다! R.J.는 더 이상 저를 믿지 않는 다고요!
+# Brok                                 
+PC09B_SIN_RJ_CONVINCE1-3=아무튼 시도는 해봐!
+# Sin                                 
+PC09B_SIN_RJ_CONVINCE1-4=(하아) 알겠습니다...
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ_CONVINCE2-1=(또 그러라고 말 못 하겠어... 그랬다간 상황이 더 악화될 거야.)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ_SICK1-1=아픈 척해봐! 그 후 R.J.를 공격하는 거지!
+# Sin                                 
+PC09B_SIN_RJ_SICK1-2=안 돼요. 현재 제 몸 상태론...
+# Brok                                 
+PC09B_SIN_RJ_SICK1-3=바로 그거야! 그러면 더 잘 속일 수 있겠네!
+# Sin                                 
+PC09B_SIN_RJ_SICK1-4=(하아) 죄송합니다... 못 해요.
+# Brok                                 
+PC09B_SIN_RJ_SICK1-5=괜찮아. 다른 방법을 찾아봐야지.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ_SICK2-1=(아픈 척은 안 한다고 했어...)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_C2_RJ_EXIT-1=글쌔 모르겠다...
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ_SINK1-1=그쪽 개수대에 문제가 있다고 말해봐.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ_SINK2-1=개수대 말이야.
+#----------------------------------------------------
+# Sin                                 
+PC09B_SIN_RJ_SINK_NO1-1=개수대요?
+# Brok                                 
+PC09B_SIN_RJ_SINK_NO1-2=음, R.J.를 계속 바쁘게만 해봐.
+#----------------------------------------------------
+# Sin                                 
+PC09B_SIN_RJ_SINK_BROKEN1-1=아아. 개수대를 망가뜨린 게 그런 이유에서 였군요.
+# Brok                                 
+PC09B_SIN_RJ_SINK_BROKEN1-2=그렇지!
+#----------------------------------------------------
+# Sin                                 
+PC09B_SIN_RJ_SINK_AGAIN1-1=또 하란 말입니까? 알겠습니다...
+#----------------------------------------------------
+# Sin                                 
+PC09B_SIN_RJ_SINK_ACTIVATE1-1=그런 경우엔... 우선 개수대가 나오는 버튼을 눌러야겠군요.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJBUSY-1=어이, R.J.가 개수대 고치느라 바쁘니...
+# RJ                                 
+PC09B_SIN_RJBUSY-2=죄수끼리 대화는 전면 금지한다.
+# Brok                                 
+PC09B_SIN_RJBUSY-3=젠장...
+#----------------------------------------------------
+# RJ                                 
+#R.J. is angry at Sin.
+PC09B_C2_RJ1-1=지금 장난해!?
+# RJ                                 
+PC09B_C2_RJ1-2=아직도 모르겠어? 너랑 내가 다시 대화하나 보다, 절대로!
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ2-1=뭐?!
+#----------------------------------------------------
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-1=최근 들어 끔찍한 일을 저질렀다는 것, 나도 잘 알아.
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-2=나한테 원하는 만큼 원망을 쏟아부어도 돼.
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-3=하지만 다른 감옥에 갇힌 이 탐정 님은... 죄수로서 갇혀선 안 될 몸이라고.
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-4=여기서 범죄자는 나 하나 뿐이야. 내가 저지른 범죄는 다 인정해.
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-5=만약 우리 사이에 우정이 조금이라도 남아 있다면 부디...
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-6=탐정 님을 풀어줘!
+# RJ                                 
+PC09B_C2_RJ_CONVINCE-7=...
+# RJ                                 
+PC09B_C2_RJ_CONVINCE-8=내 말 명심해.
+# RJ                                 
+PC09B_C2_RJ_CONVINCE-9=안 돼!
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-10=...
+# Sin                                 
+PC09B_C2_RJ_CONVINCE-11=죄송합니다... 시도는 했지만.
+# Brok                                 
+PC09B_C2_RJ_CONVINCE-12=괜찮아. 다른 방법을 찾아봐야겠어!
+#----------------------------------------------------
+# Sin                                 
+PC09B_C2_RJ_SINK-1=내 개수대가 망가졌어! 확인 가능할까?
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SINKNOTBROKEN-1=아니. 망가지긴 무슨.
+# Sin                                 
+PC09B_C2_RJ_SINKNOTBROKEN-2=확실해? 분명...
+# RJ                                 
+PC09B_C2_RJ_SINKNOTBROKEN-3=눈은 제대로 달린 거야? 개수대는 멀쩡하다고!
+# RJ                                 
+PC09B_C2_RJ_SINKNOTBROKEN-4=새 눈을 사서 갈아 끼우시지!
+# Sin                                 
+PC09B_C2_RJ_SINKNOTBROKEN-5=...
+# Brok                                 
+PC09B_C2_RJ_SINKNOTBROKEN-6=뭔가 더 확실한 방법이 필요해.
+# Sin                                 
+PC09B_C2_RJ_SINKNOTBROKEN-7=나중에요. 지쳤습니다...
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SINKBROKEN1-1=멍청한 변명은 하지 않는 게 좋을걸!
+# Sin                                 
+PC09B_C2_RJ_SINKBROKEN1-2=사실이야! 잘 봐!
+# RJ                                 
+PC09B_C2_RJ_SINKBROKEN1-3=...이런.
+# RJ                                 
+PC09B_C2_RJ_SINKBROKEN1-4=서장 님이 보다간... 큰일 나겠어!
+# RJ                                 
+PC09B_C2_RJ_SINKBROKEN1-5=알았어. 들어가서 저거 수리하지 뭐.
+# RJ                                 
+PC09B_C2_RJ_SINKBROKEN1-6=대신 꼼짝 마!
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SINKBROKEN2-1=그럴 리가! 대체 뭔 짓을 했길래?!
+# Sin                                 
+PC09B_C2_RJ_SINKBROKEN2-2=아무것도 안 했어! 꼼짝도 안 했다고!
+# RJ                                 
+PC09B_C2_RJ_SINKBROKEN2-3=으음...
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SNEEZE1-1=엣--취!
+# RJ                                 
+PC09B_C2_RJ_SNEEZE1-2=응?! 고양이가 있었나?
+# Sin                                 
+PC09B_C2_RJ_SNEEZE1-3=고양이라니?
+# RJ                                 
+PC09B_C2_RJ_SNEEZE1-4=멍청한 척 굴지 말고!
+# Sin                                 
+PC09B_C2_RJ_SNEEZE1-5=난  캥거루지 고양이가 아냐. 알고 있을 텐데!
+# RJ                                 
+PC09B_C2_RJ_SNEEZE1-6=이상해...
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SNEEZE2-1=엣--취!
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SINKREPAIR1-1=자! 고쳤다.
+# Sin                                 
+PC09B_C2_RJ_SINKREPAIR1-2=아... 대단해... 보이네.
+# RJ                                 
+PC09B_C2_RJ_SINKREPAIR1-3=또 귀찮게 굴지 말도록!
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SNEEZEFULL-1=좋아! 개수대는 이제...
+# RJ                                 
+PC09B_C2_RJ_SNEEZEFULL-2=에에에에에엣--취!
+# RJ                                 
+PC09B_C2_RJ_SNEEZEFULL-3=아니 무스... 에----엣... 취!
+# Sin                                 
+PC09B_C2_RJ_SNEEZEFULL-4=응?
+# RJ                                 
+PC09B_C2_RJ_SNEEZEFULL-5=내... 엣취...! 머리가... 돌 것 같...
+# RJ                                 
+PC09B_C2_RJ_SNEEZEFULL-6=으아아아... 엣취이!!!
+#----------------------------------------------------
+# Sin                                 
+PC09B_C2_RJ_SNEEZEFULL2-1=무슨 일이...?
+# Brok                                 
+PC09B_C2_RJ_SNEEZEFULL2-2=설명할 시간 없어! 거기서 나와!
+# Sin                                 
+PC09B_C2_RJ_SNEEZEFULL2-3=하지만...
+# RJ                                 
+PC09B_C2_RJ_SNEEZEFULL2-4=아니...! 경계...!
+#----------------------------------------------------
+# RJ                                 
+PC09B_C2_RJ_SNEEZEFULL3-1=으윽...
+# Sin                                 
+PC09B_C2_RJ_SNEEZEFULL3-2=장벽이... 다시 나타났군요.
+# Brok                                 
+PC09B_C2_RJ_SNEEZEFULL3-3=아, 이런. 결국 소득이 없다니.
+# Sin                                 
+PC09B_C2_RJ_SNEEZEFULL3-4=(하아) 이제 전 더 큰 곤경에 처했군요.
+# Brok                                 
+PC09B_C2_RJ_SNEEZEFULL3-5=(적어도 간수가 기절했으니. 뭔가 상황이 바꼈으려나?)
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_RJ_EXIT-1=잊어버려.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_EXIT1-1=여기 있어.
+# Sin                                 
+PC09B_SIN_EXIT1-2=저한테 선택지가 있나요...
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_EXIT2-1=있어봐. 필요할 때 부르도록 하지.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_EXIT3-1=기운 내.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_INV_DEFAULT-1=엄... 아냐.
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_INV_CATFUR-1=이것 봐! 고양이 털이야!
+# Brok                                 
+PC09B_SIN_INV_CATFUR-2=이게 바로 우리 탈출 비법이야!
+# Sin                                 
+PC09B_SIN_INV_CATFUR-3=그렇군요. R.J.가 미칠 지도요.
+# Brok                                 
+PC09B_SIN_INV_CATFUR-4=바로 그거지!
+#----------------------------------------------------
+# Brok                                 
+#This happens when we have escaped and try to free Sin
+PC09B_SIN_HASESCAPED1-1=잠깐만!
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HASESCAPED_OPEN1-1=이제 열렸으니까! 어서 나가자고!
+# Sin                                 
+PC09B_SIN_HASESCAPED_OPEN1-2=안 돼요...
+# Brok                                 
+PC09B_SIN_HASESCAPED_OPEN1-3=응?
+# Sin                                 
+PC09B_SIN_HASESCAPED_OPEN1-4=전 남아야 합니다. 제가 저지른 게 있는데.
+# Sin                                 
+PC09B_SIN_HASESCAPED_OPEN1-5=속죄해야 해야 합니다...
+# Brok                                 
+PC09B_SIN_HASESCAPED_OPEN1-6=아니... 하지만...!
+# Sin                                 
+PC09B_SIN_HASESCAPED_OPEN1-7=당신이 탈옥한다 해서 그로 인해 책임질 일은 없지만.
+# Sin                                 
+PC09B_SIN_HASESCAPED_OPEN1-8=제가 그런다면... 탈주범이 되고 말겠죠.
+# Brok                                 
+PC09B_SIN_HASESCAPED_OPEN1-9=...
+# Sin                                 
+PC09B_SIN_HASESCAPED_OPEN1-10=뭘 우물쭈물하십니까? 어서 가세요!
+# Brok                                 
+PC09B_SIN_HASESCAPED_OPEN1-11=알았어... 하지만 꼭 다시 방문할게.
+# Sin                                 
+PC09B_SIN_HASESCAPED_OPEN1-12=알았으니 그저 조심하시길 바랍니다.
+# Brok                                 
+PC09B_SIN_HASESCAPED_OPEN1-13=늘 그래왔다고!
+#----------------------------------------------------
+# Brok                                 
+PC09B_SIN_HASESCAPED_OPEN2-1=씬이 하고 싶은 말이 있나 본데...
+#----------------------------------------------------
+# Sin                                 
+PC09B_SIN_HASESCAPED_HIT-1=저기요!!! 절 때린다고 해서 마음이 바뀌진 않습니다!
+# Brok                                 
+PC09B_SIN_HASESCAPED_HIT-2=엄... 미안.
+#----------------------------------------------------
+# Brok                                 
+#Search in the meaning of "search through his body for anything interesting"
+PC09B_SIN_RJDOWN-1=혹시 R.J.의 몸을 뒤질 수 있어?
+# Sin                                 
+PC09B_SIN_RJDOWN-2=어떤 이유에서 입니까?
+# Brok                                 
+PC09B_SIN_RJDOWN-3=열쇠라던가 무기라던가... 그런 게 있나 싶어서!
+# Sin                                 
+PC09B_SIN_RJDOWN-4=R.J.를 건드리고 싶진 않습니다. 그랬다간 제 상황이 뭔가 좀 더 당혹스러워질 것 같군요.
+# Brok                                 
+PC09B_SIN_RJDOWN-5=미안... 내가 하지 뭐.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hitting furtinure to trick R.J.
+# *****************************************************************
+# RJ                                 
+PC09B_HIT_COME1-1=어이! 뭐하냐?
+# RJ                                 
+PC09B_HIT_COME1-2=멈춰!
+#----------------------------------------------------
+# RJ                                 
+PC09B_HIT_COME2-1=귀먹었냐?! 멈춰! 안 그럼 제압하겠다!
+#----------------------------------------------------
+# RJ                                 
+#The spelling mistake is on purpose.
+PC09B_HIT_COME3-1=마지막 경고야! 거구를 함부러 부수게 냅둘 수는 없지!
+# Brok                                 
+PC09B_HIT_COME3-2="가구"겠지, 이 바보야!
+#----------------------------------------------------
+# RJ                                 
+PC09B_HIT_COME4-1=마지막 경고야!
+# Brok                                 
+PC09B_HIT_COME4-2=아까도 말했잖아! 건망증 있냐?
+#----------------------------------------------------
+# RJ                                 
+PC09B_HIT_COME5-1=그만!!! 체벌 시간이다!
+#----------------------------------------------------
+# RJ                                 
+PC09B_HIT_COME5B-1=카메라 전원 종료. 다 네가 자초한 일이야!
+#----------------------------------------------------
+# RJ                                 
+PC09B_RJ_GAMEOVER1-1=빌어먹을 악어 자식!
+# RJ                                 
+PC09B_RJ_GAMEOVER1-2=목을 당장 부러뜨려 주마! 멍청한 자식!
+# RJ                                 
+PC09B_RJ_GAMEOVER1-3=...
+# RJ                                 
+PC09B_RJ_GAMEOVER1-4=아... 안... 돼...
+#----------------------------------------------------
+# RJ                                 
+PC09B_ALARM_ROBOTS-1=아, 멍청한 주제에 좀 놀고 싶은가 봐? 지원이 오고 있다고!
+#----------------------------------------------------
+# Sin                                 
+#Winning that fight
+PC09B_ALARM_ROBOTSEND-1=대체 뭘 하신 겁니까?!
+# Sin                                 
+PC09B_ALARM_ROBOTSEND-2=다들 경보 소리를 들었을 텐데! 탈출 같은 것은 꿈도 꾸기 힘들 겁니다!
+# Brok                                 
+PC09B_ALARM_ROBOTSEND-3=그런 거 신경 안 써! 어떻게 해서든 여길 빠져 나올 거니까!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to hit R.J. from inside the cell
+# *****************************************************************
+# RJ                                 
+PC09B_HURT_GUARD1-1=하-하! 멍청하긴! 헛수고야.
+#----------------------------------------------------
+# RJ                                 
+PC09B_HURT_GUARD2-1=그러면서 나보고 바보라고?!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talk to R.J.
+# *****************************************************************
+# RJ                                 
+PC09B_RJ1-1=뭘 원해?
+#----------------------------------------------------
+# RJ                                 
+PC09B_RJ2-1=뭐?
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_CALL1-1=누군가와 통화해야겠어!
+# RJ                                 
+PC09B_RJ_CALL1-2=안 돼. 돌아가.
+# Brok                                 
+PC09B_RJ_CALL1-3=아니 해야만 해! 급하다고!
+# RJ                                 
+PC09B_RJ_CALL1-4=서장 님이 널 오늘 밤까지 지켜보라 했어.
+# RJ                                 
+PC09B_RJ_CALL1-5=내일이면 풀려나겠지.
+# Brok                                 
+PC09B_RJ_CALL1-6=내 말 듣고는 있어? 그렇게 오래 못 기다린 다니까! 당장 연락해야 한다고. 그...
+# RJ                                 
+PC09B_RJ_CALL1-7=안 돼,
+# Brok                                 
+PC09B_RJ_CALL1-8=흐으음.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_CALL2-1=적어도 메시지는 보내도 되지 않아? 내 아들이 날 걱정하다 못해 앓게 될 거야!
+# RJ                                 
+PC09B_RJ_CALL2-2=안 돼.
+# Brok                                 
+PC09B_RJ_CALL2-3=제발! 이렇게 빌게!
+# RJ                                 
+PC09B_RJ_CALL2-4=안 돼.
+# Brok                                 
+PC09B_RJ_CALL2-5=네 상사한테 보고하지 않아도 돼! 우리 둘만의 작은 비밀이니까!
+# RJ                                 
+PC09B_RJ_CALL2-6=안 돼.
+# Brok                                 
+PC09B_RJ_CALL2-7=내가 대체 몇 번이나 부탁하는데 왜 그래?
+# RJ                                 
+PC09B_RJ_CALL2-8=대체 몇 번이나 "안 된다" 그랬지 내가?!
+# Brok                                 
+PC09B_RJ_CALL2-9=대화가 안 통해.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_CALL3-1=저 녀석을 설득할 수 있을 정도로 똑똑하지 않은 게 아쉽군.
+# Brok                                 
+PC09B_RJ_CALL3-2=여기서 빠져나올 방법을 찾는 게 낫겠군!
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_SICK1-1=아... 아파...
+# RJ                                 
+PC09B_RJ_SICK1-2=신경이나 쓴데?
+# Brok                                 
+PC09B_RJ_SICK1-3=아니, 잠깐... 죽겠어... 으아아아아아악!!!
+# Brok                                 
+PC09B_RJ_SICK1-4=...
+# Brok                                 
+PC09B_RJ_SICK1-5=...
+# Brok                                 
+PC09B_RJ_SICK1-6=내가 가물가물해야 좀 더 설득력이 있을려나?
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_SICK2-1=으아아악... 나 느낌이 (꺼억)
+# RJ                                 
+PC09B_RJ_SICK2-2=왜 또 그래?!
+# RJ                                 
+PC09B_RJ_SICK2-3=이런 시도는 전에 많이 봤지. 내가 바보처럼 굴 거라 생각하나.
+# Brok                                 
+PC09B_RJ_SICK2-4=(철푸덕)
+# RJ                                 
+PC09B_RJ_SICK2-5=어림도 없지!
+# Brok                                 
+PC09B_RJ_SICK2-6=...
+# RJ                                 
+PC09B_RJ_SICK2-7=호흡 소리 잘만 들리는 걸.
+# Brok                                 
+PC09B_RJ_SICK2-8=아니거든!
+# Brok                                 
+PC09B_RJ_SICK2-9=...
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_SICK2B-1=연기 수업이라도 들을 걸 그랬나.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_SICK3-1=아냐. 스스로 한심해지기만 할 뿐이야.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_GIVE1-1=널 위해 뭔가 가져왔어!
+# RJ                                 
+PC09B_RJ_GIVE1-2=아, 그래? 뭔데? 선물 좋아하지!
+# Brok                                 
+PC09B_RJ_GIVE1-3=여기로 들어오면 너한테 건네줄게!
+# RJ                                 
+PC09B_RJ_GIVE1-4=좋아!
+# RJ                                 
+PC09B_RJ_GIVE1-5=...
+# RJ                                 
+PC09B_RJ_GIVE1-6=안 돼! 서장 님이 불필요한 일로 감옥을 절대 열지 말라 그랬어!
+# Brok                                 
+PC09B_RJ_GIVE1-7=하지만 선물을 받고 싶다면 여길 열 필요가 있어!
+# RJ                                 
+PC09B_RJ_GIVE1-8=그래...? 어... 아냐!
+# RJ                                 
+PC09B_RJ_GIVE1-9=그만 둬! 날 혼란스럽게 만들고 있잖아!
+# Brok                                 
+PC09B_RJ_GIVE1-10=젠장! 거의 다 됐는데!
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_GIVE2-1=아냐. 속이기엔 글렀어.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_THINK1-1=(딱 보니 덩치 큰 바보 계열이야. 하지만 속내는 다를지도 몰라.)
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_EXIT1-1=내가 왜... 널 불렀더라...
+# RJ                                 
+PC09B_RJ_EXIT1-2=쓸데없이 시간 낭비하지 마!
+# Brok                                 
+PC09B_RJ_EXIT1-3=미안해!
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_INV_DEFAULT-1=그러지 않는 게 좋겠어...
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_INV_CATFUR-1=알았어, 속이려는 의도는 없고.
+# Brok                                 
+PC09B_RJ_INV_CATFUR-2=이리로 오면 내가 엄청 부드러운 고양이 털을 건네줄게!
+# RJ                                 
+PC09B_RJ_INV_CATFUR-3=으악! 당장 그 흉물 저리 치워!!!
+# Brok                                 
+PC09B_RJ_INV_CATFUR-4=...이미 치웠어.
+# RJ                                 
+PC09B_RJ_INV_CATFUR-5=(재채기) 그걸론 부족해!
+# Brok                                 
+PC09B_RJ_INV_CATFUR-6=흠.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_INSULT1-1=이야, 멍청한 얼굴 하고 다니는 너! 뭔 냄새야!
+# RJ                                 
+PC09B_RJ_INSULT1-2=내 어머니에게 뭐라고 말한 거지?!
+# Brok                                 
+PC09B_RJ_INSULT1-3=응? 그런 사람을 언급한 적은...
+# RJ                                 
+PC09B_RJ_INSULT1-4=당장 이리 와서 싸워! 내가 본때를 보여주지!
+# Brok                                 
+PC09B_RJ_INSULT1-5=...못 해, 이 멍청아.
+# RJ                                 
+PC09B_RJ_INSULT1-6=아... 그렇지! 그러면...
+# RJ                                 
+PC09B_RJ_INSULT1-7=불쌍하긴.
+# Brok                                 
+PC09B_RJ_INSULT1-8=뭐?! 야 이 자식아, 당장 돌아오지 못해!
+# Brok                                 
+PC09B_RJ_INSULT1-9=이런 식으로 안 될 줄은 예상 못했어.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_INSULT2-1=엉덩이가 얼마나 크면 네 머리통 두 개 만하냐!
+# RJ                                 
+PC09B_RJ_INSULT2-2=나도 알아.
+# Brok                                 
+PC09B_RJ_INSULT2-3=어...
+# Brok                                 
+PC09B_RJ_INSULT2-4=너 다리 밑에서 주워졌구나!
+# RJ                                 
+PC09B_RJ_INSULT2-5=맞아.
+# Brok                                 
+PC09B_RJ_INSULT2-6=뭐...?
+# Brok                                 
+PC09B_RJ_INSULT2-7=또 실패했군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_INSULT3-1=(사람을 모욕하는데 익숙하질 않다 보니 벌써 저속한 단어는 다 써먹었어...)
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_REPAIR1-1=내 개수대에 뭔가 문제가 있어!
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_REPAIR2-1=내 개수대 좀 어떻게 해봐! 엄청 안 좋아!
+#----------------------------------------------------
+# RJ                                 
+PC09B_RJ_REPAIRNOSINK1-1=그래?! 개수대는 그래서 어딨는데?
+# Brok                                 
+PC09B_RJ_REPAIRNOSINK1-2=아, 엄... 제대로 된 버튼을 까먹고 안 눌렀잖아...
+# Brok                                 
+PC09B_RJ_REPAIRNOSINK1-3=잠깐만! 난 그저...
+# RJ                                 
+PC09B_RJ_REPAIRNOSINK1-4=풋.
+#----------------------------------------------------
+# RJ                                 
+PC09B_RJ_SINKNOTDAMAGED1-1=별 이상 없어 보이는군.
+# Brok                                 
+PC09B_RJ_SINKNOTDAMAGED1-2=아니, 있다니까! 내용물이 새고 있다고!
+# Brok                                 
+PC09B_RJ_SINKNOTDAMAGED1-3=더 가까이 와서 봐봐!
+# RJ                                 
+PC09B_RJ_SINKNOTDAMAGED1-4=급한 일도 아니니 내일까지 기다릴 수 있겠지.
+# Brok                                 
+PC09B_RJ_SINKNOTDAMAGED1-5=잠깐만...!
+# Brok                                 
+PC09B_RJ_SINKNOTDAMAGED1-6=R.J.는 아무래도 "내가 보는 것만 믿는다" 의 부류로군...
+#----------------------------------------------------
+# RJ                                 
+PC09B_RJ_SINKDAMAGED1-1=네가 때려서 그렇잖아, 이 바보 천치가!
+# Brok                                 
+PC09B_RJ_SINKDAMAGED1-2=뭐 당연하지! 난 개수대를 고치려고 했을 뿐이야.
+# RJ                                 
+PC09B_RJ_SINKDAMAGED1-3=문제 없어. 망가지지 않았으니까.
+# Brok                                 
+PC09B_RJ_SINKDAMAGED1-4=확실하다니까...!
+# Brok                                 
+PC09B_RJ_SINKDAMAGED1-5=젠장. 개수대를 때리는 것으론 전혀 손상이 안 가해지는 것 같아.
+# Brok                                 
+PC09B_RJ_SINKDAMAGED1-6=다른 해결책을 찾는 게 좋겠어.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_LASERS1-1=장담컨대 넌 이 감옥에서 보안이 어떻게 작동하는지 모를 걸!
+# RJ                                 
+PC09B_RJ_LASERS1-2=물론 알고 있지!
+# RJ                                 
+PC09B_RJ_LASERS1-3=그 에너지 장벽은 엄청 견고해.
+# RJ                                 
+PC09B_RJ_LASERS1-4=아무것도 지나갈 수 없지! 이쑤시개 하나 못 들어갈 정도라니까!
+# Brok                                 
+PC09B_RJ_LASERS1-5=카메라는 무슨 용도지? 그걸 통해 우릴 감시하는 건가?
+# RJ                                 
+PC09B_RJ_LASERS1-6=아니! 그럴 시간 없어!
+# RJ                                 
+PC09B_RJ_LASERS1-7=내 귀가 얼마나 뛰어난지 알긴 해? 뭔가 수상한 짓을 저질렀다간...
+# RJ                                 
+PC09B_RJ_LASERS1-8=어디에서든 뛰쳐나올 수 있을 정도로 귀가 뛰어나지!
+# Brok                                 
+PC09B_RJ_LASERS1-9=그럼 카메라는 왜 있는데?
+# RJ                                 
+PC09B_RJ_LASERS1-10=신체 스캔을 하기 위해서지.
+# RJ                                 
+PC09B_RJ_LASERS1-11=만약 저 카메라가 탈출하거나 이상한 짓을 하는 걸 포착했다간.
+# RJ                                 
+PC09B_RJ_LASERS1-12=팟! 알람이 울리는 거지.
+# Brok                                 
+PC09B_RJ_LASERS1-13=잘 알았어. 그렇다면...
+# Brok                                 
+PC09B_RJ_LASERS1-14=만에 하나 카메라가 잘린다면... 무슨 일이 벌어지는 거지?
+# RJ                                 
+PC09B_RJ_LASERS1-15=하! 장벽이 멀쩡히 있는데 무슨 소리야!
+# RJ                                 
+PC09B_RJ_LASERS1-16=패널을 만져야 감옥이 열리는데, 거기선 절대 못한다고!
+# Brok                                 
+PC09B_RJ_LASERS1-17=터치 패널...은 지문을 감지하는 거야?
+# RJ                                 
+PC09B_RJ_LASERS1-18=아니. 그냥 스위치지. 그냥 누르기만 하면 돼.
+# RJ                                 
+PC09B_RJ_LASERS1-19=물론 넌 빼고! 감옥 반대편에 있으니까! 하 하!
+# Brok                                 
+PC09B_RJ_LASERS1-20=그래. 확실히 손에 안 닿지.
+# Brok                                 
+PC09B_RJ_LASERS1-21=지금으로선 말이야.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_LASERS2-1=그래서, 정리하자면.
+# Brok                                 
+PC09B_RJ_LASERS2-2=장벽으로 인해서 종이만큼 얇은 물체도 나오지 못해.
+# Brok                                 
+PC09B_RJ_LASERS2-3=만약 탈출을 시도하거나 수상한 행동이 감지되면 카메라에서 알람이 울려.
+# Brok                                 
+PC09B_RJ_LASERS2-4=그리고 아무튼 터치 패널을 건드리기만 하면 감옥을 열 수 있어.
+# RJ                                 
+PC09B_RJ_LASERS2-5=맞아!
+# RJ                                 
+PC09B_RJ_LASERS2-6=...
+# RJ                                 
+PC09B_RJ_LASERS2-7=잠깐. 감히 뭔가 이상한 짓을 하는 건 아니겠지!
+# Brok                                 
+PC09B_RJ_LASERS2-8=대체 누가? 설마 나...?
+# RJ                                 
+PC09B_RJ_LASERS2-9=똑똑히 지켜 듣겠어!
+# Brok                                 
+PC09B_RJ_LASERS2-10=그렇다면 악어처럼 조용히 있어야겠군. 그러니까 숨 죽여야겠군!
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_SIN1-1=네가 씬을 용서해야 한다고 생각해.
+# Brok                                 
+PC09B_RJ_SIN1-2=나쁜 의도로 이런 짓을 벌이진 않았으니까.
+# RJ                                 
+PC09B_RJ_SIN1-3=그래서 뭐.
+# RJ                                 
+PC09B_RJ_SIN1-4=친구인 줄 알았는데, 아니었어. 그 자식은 이제 범죄자야!
+# RJ                                 
+PC09B_RJ_SIN1-5=범죄자는 체포한다. 우리가 할 일은 그거지.
+# Brok                                 
+PC09B_RJ_SIN1-6=이해를 못했나 본데!
+# Brok                                 
+PC09B_RJ_SIN1-7=가슴에 손을 얹고 생각해봐! 너도 아이가 있다면 똑같이 그랬을걸?
+# Sin                                 
+PC09B_RJ_SIN1-8=제발 좀 멈춰요...
+# RJ                                 
+PC09B_RJ_SIN1-9=닥쳐, 둘 다!
+# Brok                                 
+PC09B_RJ_SIN1-10=미안...
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_SIN2-1=(씬은 내가 나서기를 원치 않아. 씬의 의견을 존중할 수 밖에.)
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_SUBTERFUGE1-1=(흠... 여러 가지가 떠오르는군.)
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - A hidden chest in the last cell
+# *****************************************************************
+# Brok                                 
+PC09B_CHESTLOOK1-1=뭐가 들어있는지는 모르겠지만 꽤 값진 게 들어있겠지.
+# Brok                                 
+PC09B_CHESTLOOK1-2=그래서 이렇게 꽁꽁 숨겨뒀나 보군.
+#----------------------------------------------------
+# Brok                                 
+PC09B_CHESTLOOK2-1=아까 본 거야!
+#----------------------------------------------------
+# Brok                                 
+PC09B_CHEST1-1=안에 뭐가 있으려나...?
+#----------------------------------------------------
+# Brok                                 
+PC09B_CHEST1B-1=사기꾼의 소지품이 분명해.
+# Brok                                 
+PC09B_CHEST1B-2=내가 갖고 있는 게 훨씬 안전하겠지!
+#----------------------------------------------------
+# Brok                                 
+PC09B_CHEST2-1=음 물건이 더 있긴 한데.
+# Brok                                 
+PC09B_CHEST2-2=맨손으로는 함부러 만질 수 없는 것 들뿐이군.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Rescue Sin with Dee but he is nowhere to be found
+# *****************************************************************
+# Dee                                 
+PC09B_RESCUE1-1=씬!
+#----------------------------------------------------
+# Dee                                 
+PC09B_RESCUE1B-1=씬!!!
+# Dee                                 
+PC09B_RESCUE1B-2=대체 어딨는 거야?!
+# Brok                                 
+PC09B_RESCUE1B-3=...
+# Brok                                 
+PC09B_RESCUE1B-4=우리가... 너무 늦었나...?
+# Dee                                 
+PC09B_RESCUE1B-5=아... 안 돼...!
+#----------------------------------------------------
+# Mink                                 
+#If we charged Mink in chapter 4
+PC09B_RESCUE_MINK1-1=저기요! 무슨 일인가요?
+# Brok                                 
+PC09B_RESCUE_MINK1-2=밍크 박사.
+# Brok                                 
+PC09B_RESCUE_MINK1-3=씬이 여기에 있었습니까?
+# Mink                                 
+PC09B_RESCUE_MINK1-4=캥거루 친구 말인가요?
+# Mink                                 
+PC09B_RESCUE_MINK1-5=네. 벌써 떠났죠.
+# Mink                                 
+PC09B_RESCUE_MINK1-6=다시 묻겠는데 무슨 일인가요?
+# Brok                                 
+PC09B_RESCUE_MINK1-7=여기 있다간 위험합니다.
+# Mink                                 
+PC09B_RESCUE_MINK1-8=뭐라고요...?
+# Brok                                 
+PC09B_RESCUE_MINK1-9=풀어드리도록 하죠.
+# Mink                                 
+PC09B_RESCUE_MINK1-10=이걸 병 주고 약 주고라 하던 가요!
+#----------------------------------------------------
+# Guard                                 
+#If we charged Guard in chapter 4
+PC09B_RESCUE_GUARD1-1=아니 대체 뭔 일이야?!
+# Brok                                 
+PC09B_RESCUE_GUARD1-2=아, 당신이로군.
+# Brok                                 
+PC09B_RESCUE_GUARD1-3=설명할 시간이 없어...
+# Brok                                 
+PC09B_RESCUE_GUARD1-4=그런데 씬은 여기에 있었나?
+# Guard                                 
+PC09B_RESCUE_GUARD1-5=엄청 우울해하던 캥거루 말인가? 하, 진짜 엄청 울더라고.
+# Guard                                 
+PC09B_RESCUE_GUARD1-6=아, 좀 더 일찍 여길 떠났어.
+# Brok                                 
+PC09B_RESCUE_GUARD1-7=젠장...
+# Brok                                 
+PC09B_RESCUE_GUARD1-8=너, 여기 계속 있다간 큰일 나.
+# Guard                                 
+PC09B_RESCUE_GUARD1-9=뭐...?
+# Brok                                 
+PC09B_RESCUE_GUARD1-10=풀어 줄게.
+# Guard                                 
+PC09B_RESCUE_GUARD1-11=드디어 나한테도 좋은 일이 생기는군!
+#----------------------------------------------------
+# Dee                                 
+PC09B_RESCUE1B2-1=...
+# Dee                                 
+PC09B_RESCUE1B2-2=이럴 수는 없어...
+# Dee                                 
+PC09B_RESCUE1B2-3=남편한테...
+# Dee                                 
+PC09B_RESCUE1B2-4=아무 말도 못 했는데...
+#----------------------------------------------------
+# Brok                                 
+PC09B_RESCUE_ALARMSTOP-1=알람이 멈췄어...?
+#----------------------------------------------------
+# Brok                                 
+PC09B_RESCUE1C_NOSIN-1=(하아)
+# Brok                                 
+PC09B_RESCUE1C_NOSIN-2=진작에 씬을 데리고 나왔어야 했는데...
+#----------------------------------------------------
+# Brok                                 
+#Sin can or cannot be alive according to choices - here he is
+PC09B_RESCUE1C-1=(하아)
+# Brok                                 
+PC09B_RESCUE1C-2=그래도... 아직은...
+# Unknown                                 
+PC09B_RESCUE1C-3=(...)
+# Brok                                 
+PC09B_RESCUE1C-4=웬 전화가?
+# Brok                                 
+PC09B_RESCUE1C-5=(삑)
+# Sin                                 
+PC09B_RESCUE1C-6=여보세요. 갑자기 전화를 걸어서 죄송하지만... 다른 사람이 떠오르지 않더라고요.
+# Brok                                 
+PC09B_RESCUE1C-7=...!
+# Dee                                 
+PC09B_RESCUE1C-8=씬!!!
+# Dee                                 
+PC09B_RESCUE1C-9=주... 죽은 줄만 알았는데...!
+# Sin                                 
+PC09B_RESCUE1C-10=디? 설마 당신이야?!
+# Dee                                 
+PC09B_RESCUE1C-11=이제는 당신을 믿어! 내가 정말 미안해!
+# Sin                                 
+PC09B_RESCUE1C-12=나도 미안해...
+# Sin                                 
+PC09B_RESCUE1C-13=잠깐, 당신 어디야? 장소를 보아하니...
+# Brok                                 
+PC09B_RESCUE1C-14=감옥에서 어떻게 빠져나온 건데?
+# Sin                                 
+PC09B_RESCUE1C-15=경찰 서장 님이...
+# Sin                                 
+PC09B_RESCUE1C-16=나보고 자유의 몸이라고 하셨습니다.
+# Sin                                 
+PC09B_RESCUE1C-17=디... 나...
+# Dee                                 
+PC09B_RESCUE1C-18=안 말해도 돼!
+# Dee                                 
+PC09B_RESCUE1C-19=우리 딸이 집에서 당신을 기다리고 있어.
+# Dee                                 
+PC09B_RESCUE1C-20=내... 친구들이 딸을 돌보고 있으니. 딸을 되찾으러 가자.
+# Sin                                 
+PC09B_RESCUE1C-21=하지만... 당신은 괜찮...
+# Dee                                 
+PC09B_RESCUE1C-22=어디에 있어? 안전하게 돌아올 수 있도록 내가 도와줄게.
+# Sin                                 
+PC09B_RESCUE1C-23=(콜록, 콜록) 내가 살던 곳에서 숨어있어. 여기에 아무것도 남은 건 없지만...
+# Dee                                 
+PC09B_RESCUE1C-24=당신 괜찮아?
+# Sin                                 
+PC09B_RESCUE1C-25=오늘 알약을 구하지 못했어. (콜록)
+# Sin                                 
+PC09B_RESCUE1C-26=그리고... 내 쪽에 문제가 생긴 것 같아.
+# Brok                                 
+PC09B_RESCUE1C-27=설마 로봇들이...?
+# Sin                                 
+PC09B_RESCUE1C-28=네. 어떻게든 뿌리치긴 했습니다만... 정말 아슬아슬했습니다!
+# Dee                                 
+PC09B_RESCUE1C-29=오, 맙소사...
+# Brok                                 
+PC09B_RESCUE1C-30=그래서 나만 찍힌 게 아니다?
+# Sin                                 
+PC09B_RESCUE1C-31=대체 무슨 일이 벌어지고 있나요...?
+# Dee                                 
+PC09B_RESCUE1C-32=가면서 설명할게.
+# Dee                                 
+PC09B_RESCUE1C-33=거기 꼼짝 말고 있어, 자기야!
+# Sin                                 
+PC09B_RESCUE1C-34=알았어...
+# Sin                                 
+PC09B_RESCUE1C-35=사랑해.
+# Unknown                                 
+PC09B_RESCUE1C-36=[...]
+# Dee                                 
+PC09B_RESCUE1C-37=어서 가자!
+#----------------------------------------------------
+# Brok                                 
+PC09B_RESCUE1D-1=잠깐! 누군가 잊고 있진 않았겠지...?
+# Brok                                 
+PC09B_RESCUE1D-2=거킨 박사한테 돌아오겠다고 약속했잖아.
+# Dee                                 
+PC09B_RESCUE1D-3=물론 그럴 거야. 내 남편부터 안전하게 집으로 돌려보낸 다음에.
+#----------------------------------------------------
+# Wes                                 
+PC09B_RESCUE1E-1=...
+# Wes                                 
+PC09B_RESCUE1E-2=왜 여기에 있는지 설명할 수 있을까?
+# Wes                                 
+PC09B_RESCUE1E-3=그리고 옆에 계신 깜찍한 친구 분은 누구신지?
+# Dee                                 
+PC09B_RESCUE1E-4=혹시... 당신이 경찰 서장이에요?
+#----------------------------------------------------
+# Dee                                 
+PC09B_RESCUE1E_NOSIN-1=씬은 어디로 간 거죠?!
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-2=좀 전에 풀어줬습니다.
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-3=그리고 당신들이 여기 있는 걸로 제 의심이 확신으로 바꼈군요.
+# Brok                                 
+PC09B_RESCUE1E_NOSIN-4=의심이라니?
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-5=로봇들을 말하는 걸세. 분명 죄수들을 지켜보고 있어야 할 텐데.
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-6=하지만... 최근 들어 이상한 행동을 보이더군.
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-7=이젠 아무도 못 믿겠어.
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-8=그래서 상황이 해결될 때까지 씬을 여기로부터 피신 시켜야겠다고 결심했다네.
+# Dee                                 
+PC09B_RESCUE1E_NOSIN-9=씬은 어디에 있죠?!
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-10=아마 아직도 슬럼에 있을 겁니다. 그가 살고 있던 거주지에 두고 갔으니.
+# Dee                                 
+PC09B_RESCUE1E_NOSIN-11=당장 가야겠어.
+# Brok                                 
+PC09B_RESCUE1E_NOSIN-12=잠깐! 그러면...
+# Dee                                 
+PC09B_RESCUE1E_NOSIN-13=나중에 연락할게.
+# Brok                                 
+PC09B_RESCUE1E_NOSIN-14=...
+# Brok                                 
+PC09B_RESCUE1E_NOSIN-15=그럼 약 고갈 사태는?
+# Wes                                 
+PC09B_RESCUE1E_NOSIN-16=모든 사태가 하나로 연결되어 있을 가능성이 높아.
+# Brok                                 
+PC09B_RESCUE1E_NOSIN-17=흠... 디는 범죄자들이 살해되었다는 증거가 있다고 말했지만.
+# Brok                                 
+PC09B_RESCUE1E_NOSIN-18=연관성이 뚜렷해 보이진 않은데.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RESCUE1E_SIN-1=엄...
+# Brok                                 
+PC09B_RESCUE1E_SIN-2=씬을 풀어주러 왔어. 이쪽 여성은 기자고 씬은...
+# Wes                                 
+PC09B_RESCUE1E_SIN-3=알았다.
+# Wes                                 
+PC09B_RESCUE1E_SIN-4=그래서 여기저기 로봇들이 망가져 있던 거군.
+# Brok                                 
+PC09B_RESCUE1E_SIN-5=미안...
+# Wes                                 
+PC09B_RESCUE1E_SIN-6=흐음. 대체는 가능하지만.
+# Brok                                 
+PC09B_RESCUE1E_SIN-7=선택의 여지가 없었어. 씬이 위험한 걸!
+# Wes                                 
+PC09B_RESCUE1E_SIN-8=흠...
+# Wes                                 
+PC09B_RESCUE1E_SIN-9=그래서 나만 뭔가 이상하다 생각하는 게 아니었군. 안 그래?
+# Brok                                 
+PC09B_RESCUE1E_SIN-10=당신... 알고 있었어...?
+# Wes                                 
+PC09B_RESCUE1E_SIN-11=최근 들어 이상한 일들이 겹치긴 했지.
+# Wes                                 
+PC09B_RESCUE1E_SIN-12=걱정 말게나. 내가 알아서 할 테니.
+# Wes                                 
+PC09B_RESCUE1E_SIN-13=이 나라도 몇 년 간 여러모로 시달렸을 테니.
+# Dee                                 
+PC09B_RESCUE1E_SIN-14=아니에요! 그거와는 달라요!
+# Dee                                 
+PC09B_RESCUE1E_SIN-15=우리 사법 시스템이 뭔가 엄청 잘못 됐어요.
+# Dee                                 
+PC09B_RESCUE1E_SIN-16=범죄자들은 체계적으로 살해당하고 있어요!
+# Wes                                 
+PC09B_RESCUE1E_SIN-17=흐음. 내가 당신 말을 왜 믿어야 합니까?
+# Dee                                 
+PC09B_RESCUE1E_SIN-18=전... 기자니까요.
+# Dee                                 
+PC09B_RESCUE1E_SIN-19=증거가 있어요... 이거 모으느라 지난 몇 달을 엄청 고생했죠!
+#----------------------------------------------------
+# Wes                                 
+PC09B_RESCUE1E_AFTER-1=증거라...
+# Wes                                 
+PC09B_RESCUE1E_AFTER-2=우리 정보를 서로 공유하는 게 좋겠군요. 하지만 여기서는 안 됩니다.
+#----------------------------------------------------
+# Wes                                 
+PC09B_RESCUE1E_BOTSDESTROYED-1=당신들이 파괴한 로봇들이 파괴된 로봇의 빈자리를 채우면서 계속 달려들고 있습니다. 그리고 통제가 전혀 되지 않고 있고요.
+#----------------------------------------------------
+# Wes                                 
+PC09B_RESCUE1E_AFTER2-1=한 시간 후에 어서 오래된 쓰레기 처리장에서 봅시다.
+# Brok                                 
+PC09B_RESCUE1E_AFTER2-2=정말로...? 거기 아무도 안 가잖아...
+# Wes                                 
+PC09B_RESCUE1E_AFTER2-3=그러니 더더욱 거기로 가야겠지.
+# Wes                                 
+PC09B_RESCUE1E_AFTER2-4=사람들이 올 만한 곳은 아니니 미행 당할 일은 없을 거야.
+#----------------------------------------------------
+# Dee                                 
+PC09B_RESCUE1E_AFTERSIN-1=좋아요. 거기서 뵙도록 하죠.
+#----------------------------------------------------
+# Dee                                 
+PC09B_RESCUE1F-1=...
+# Dee                                 
+PC09B_RESCUE1F-2=그리고... 브록...
+# Dee                                 
+PC09B_RESCUE1F-3=고마워. 덕분에 살았어.
+#----------------------------------------------------
+# Mink                                 
+PC09B_RESCUEEND_MINK1-1=저기요! 저는요...?
+# Mink                                 
+PC09B_RESCUEEND_MINK1-2=떠나도 되나요?
+#----------------------------------------------------
+# Guard                                 
+PC09B_RESCUEEND_GUARD1-1=당신들이 뭐라 하는지 전혀 모르겠지만...
+# Guard                                 
+PC09B_RESCUEEND_GUARD1-2=이 구역질 나는 장소에서 빠져나오고 싶어.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RESCUEEND_NEXT-1=맞아! 씬은 되고 이 사람은 안 돼?
+# Wes                                 
+PC09B_RESCUEEND_NEXT-2=난 항상 문제를 하나 씩 해결해왔어.
+# Wes                                 
+PC09B_RESCUEEND_NEXT-3=어쨌든 이 남자가 수감된 이유는 다 자네가 범죄자라 해서 그렇지 않나.
+# Wes                                 
+PC09B_RESCUEEND_NEXT-4=자네가 결정하도록.
+# Brok                                 
+PC09B_RESCUEEND_NEXT-5=좋아. 풀어줘.
+#----------------------------------------------------
+# Mink                                 
+PC09B_RESCUEEND_MINK2-1=휴...
+# Mink                                 
+PC09B_RESCUEEND_MINK2-2=그리고... 확실히 짚고 넘어가죠...
+# Mink                                 
+PC09B_RESCUEEND_MINK2-3=전 아무도 안 죽였어요. 살인자는 여전히 주변에 있을 거에요.
+# Brok                                 
+PC09B_RESCUEEND_MINK2-4=...
+#----------------------------------------------------
+# Guard                                 
+PC09B_RESCUEEND_GUARD2-1=다행이다.
+# Guard                                 
+PC09B_RESCUEEND_GUARD2-2=아직도 당신이 날 범인으로 지목했던 사실이 믿겨지지 않아...
+# Guard                                 
+PC09B_RESCUEEND_GUARD2-3=당신 문제 있어?!
+# Brok                                 
+PC09B_RESCUEEND_GUARD2-4=그게...
+# Guard                                 
+PC09B_RESCUEEND_GUARD2-5=잘 있어, 맹탐정 양반.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RESCUE1G-1=...
+# Wes                                 
+PC09B_RESCUE1G-2=...
+# Brok                                 
+PC09B_RESCUE1G-3=뭐... 잘 있어.
+#----------------------------------------------------
+# Wes                                 
+PC09B_RESCUE1H-1=포크?
+#----------------------------------------------------
+# Brok                                 
+PC09B_RESCUE1I-1=모욕이 따로 없네. 제발 좀 날 그렇게 부르지 말아 줄래.
+# Wes                                 
+PC09B_RESCUE1I-2=그게... 자네 이름 아니었나...?
+# Brok                                 
+PC09B_RESCUE1I-3=...?
+# Wes                                 
+PC09B_RESCUE1I-4=아무튼.
+# Wes                                 
+PC09B_RESCUE1I-5=여태 우리는 의견이 안 맞았지만, 적어도 오늘은...
+# Wes                                 
+PC09B_RESCUE1I-6=우리가 협동해야 하네. 이 나라에 훨씬 더 큰 위협이 들이닥치고 있어.
+# Brok                                 
+PC09B_RESCUE1I-7=아, 물론.
+# Brok                                 
+PC09B_RESCUE1I-8=나중에.
+# Wes                                 
+PC09B_RESCUE1I-9=기대하고 있겠네.
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_KO1-1=손이 안 닿아...
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_KO_SEARCH1-1=뭔가 찾았다!
+#----------------------------------------------------
+# Sin                                 
+PC09B_RJ_KO_SEARCH_SIN-1=어떻게 그런 짓을...
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_KO_SEARCH2-1=다시 살펴보길 잘했지. 항상 광고 쿠폰이 그리웠단 말이야!
+# Brok                                 
+PC09B_RJ_KO_SEARCH2-2=됐다!
+#----------------------------------------------------
+# Brok                                 
+PC09B_RJ_KO_SEARCH3-1=아무것도 없어.
+#----------------------------------------------------
+# Brok                                 
+PC09B_DAY2_SIN-1=저기!
+# Sin                                 
+PC09B_DAY2_SIN-2=응?
+#----------------------------------------------------
+# Brok                                 
+PC09B_DAY2_SINB-1=견딜만 해?
+# Sin                                 
+PC09B_DAY2_SINB-2=네...
+# Brok                                 
+PC09B_DAY2_SINB-3=그렇군.
+# Brok                                 
+PC09B_DAY2_SINB-4=나중에 다시 올게!
+# Sin                                 
+PC09B_DAY2_SINB-5=알겠습니다.
+# Sin                                 
+PC09B_DAY2_SINB-6=감사합니다...
+#----------------------------------------------------
+# Brok                                 
+PC09B_C3TOUCHPANEL1-1=젠장... 망가졌잖아.
+# Brok                                 
+PC09B_C3TOUCHPANEL1-2=다른 방법을 찾아봐야겠어.
+#----------------------------------------------------
+# Brok                                 
+PC09B_CAMERA1-1=거 참, 카메라 진짜 신경 쓰인단 말이야.
+#----------------------------------------------------
+# Brok                                 
+PC09B_CAMERA2-1=흠...
+#----------------------------------------------------
+# Unknown                                 
+COOP_PC09B_SIN1-1=자격이 있느냐 없느냐? 그것이 문제로다...
+#----------------------------------------------------

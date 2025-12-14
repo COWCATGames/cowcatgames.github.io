@@ -1,0 +1,1726 @@
+﻿#-------------------------------
+#=LAB ROOM LEFT
+#-------------------------------
+
+#----------------------
+#= Window
+#----------------------
+ID=PC15C_WINDOW1
+T=This is very soothing, I can get used to this!
+W=BROK
+C1=BROK
+C1A=HAPPY
+CONTEXT=Room interactions
+TEN=PC15C_WINDOW_CHECKMINK
+
+#----------------------
+ID=PC15C_WINDOW1B
+T=You've got to be kidding me.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+
+T=It's the default view! Who would be stupid enough to leave it?!
+W=MINK
+
+T=Dr. Hush, apparently?
+W=BROK
+C1A=MOCK
+
+T=He's hopeless! 
+W=MINK
+C2A=MEH
+
+T=...
+W=MINK
+
+T=You just realized he's gone and won't ever come back?
+W=BROK
+C1A=DOWN
+
+T=...
+W=MINK
+
+T=Despite our differences...
+W=MINK
+
+T=I... I am...
+W=MINK
+
+T=Come on! You can say it!
+W=BROK
+
+T=I am hungry.
+W=MINK
+C2A=HAPPY
+
+T=Aww...
+W=BROK
+C1A=DISAPPOINTED
+
+#----------------------
+ID=PC15C_WINDOW2
+T=Nice view! Too bad it's artifical!
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+
+#----------------------
+#= Screen
+#----------------------
+ID=PC15C_SCREEN1
+T=Some information is displayed.
+W=BROK
+A=THINK
+
+T="Tidy - 90% charged - DO NOT DISTURB UNTIL CHARGE IS COMPLETE"
+W=BROK
+
+T=It's apparently been charging since 5:10 in the morning?
+W=BROK
+CLUE=CLUE_TIDY_CHARGING
+
+#----------------------
+ID=PC15C_SCREEN2
+T="Tidy - 100% charged"
+W=BROK
+A=THINK
+
+T=It's apparently been charging since 5:10 in the morning?
+W=BROK
+CLUE=CLUE_TIDY_CHARGING
+#----------------------
+#= Biscuits
+#----------------------
+ID=PC15C_BISCUITS1
+T=Energizing biscuits...
+W=BROK
+A=THINK
+
+T=Dr. Hush must have been eating them before disappearing.
+W=BROK
+
+T=There are crumbs all over the table. Even on the floor!
+W=BROK
+
+T=You'd think scientists would be less clumsy.
+W=BROK
+CLUE=CLUE_LAB_CRUMBS
+
+#----------------------
+ID=PC15C_BISCUITS2
+T=...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=NORMAL
+
+T=What?...
+W=OTT
+
+T=Don't eat those! They're clues!
+W=OTT
+C2A=ANGRY
+
+T=But... I'm hungry!
+W=BROK
+C1A=WORRIED
+#----------------------
+#= Lamp
+#----------------------
+ID=PC15C_LAMP1
+T=I know this model! It was pretty popular twenty years ago.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=OTT
+C2A=NORMAL
+
+T=Looks ugly. What could have made them so popular?
+W=OTT
+C2A=SURPRISED
+
+T=Beats me.
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=PC15C_LAMP_AFTER
+T=This is the same model as the one next to Dr. Hush.
+W=BROK
+A=THINK
+
+T=I should take it.
+W=BROK
+A=MOCK
+COMM=He's talking about the lamp.
+TEN=PC15C_LAMPHUSH_TAKE
+
+
+
+
+
+#----------------------
+#= Parts
+#----------------------
+ID=PC15C_MATERIALS1
+T=Parts for experiments, maybe?
+W=BROK
+C1=BROK
+C1A=WONDER
+TEN=PC15C_MATERIALS_CHECKWHO
+
+
+#----------------------
+ID=PC15C_MATERIALS1B
+T=That's amazing. Not a single part is jutting out of this furniture.
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=This could be called an "organized mess".
+W=BROK
+C1A=MEH
+
+T=Dr. Hush is a maniac.
+W=MINK
+C2=MINK
+C2A=MOCK
+
+T=He hates when something isn't where it belongs, so he taught his maintenance bot to tidy items like this.
+W=MINK
+
+T=I remember him going insane once, because I didn't put my coffee exactly at the center of the table!
+W=MINK
+C2A=ANGRY
+
+T=Yeah, well... All scientists are a bit eccentric.
+W=BROK
+C1A=MOCK
+
+T=What do you mean? I'm not eccentric!
+W=MINK
+
+T=There's an exception to each rule.
+W=BROK
+
+T=Hmmm... You do have a point!
+W=MINK
+C2A=HAPPY
+
+T=(Brok 1, scientist 0)
+W=BROK
+MOOD=THINK
+C1A=COCKY
+CLUE=CLUE_HUSH_MANIAC
+
+#----------------------
+#= Ramp button
+#----------------------
+ID=PC15C_RAMPBUTTON1
+T=Oh! So this adds... some kind of ramp?
+W=BROK
+C1=BROK
+C1A=THINK
+TEN=PC15C_RAMPBUTTON_CHECK
+
+#----------------------
+ID=PC15C_RAMPBUTTON1B
+T=Do you often press buttons without knowing what they're for?
+W=MINK
+C1=BROK
+C1A=MAYBE
+C2=MINK
+C2A=MOCK
+
+T=Always! How else would you find out what they do?
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+#= Ramp
+#----------------------
+ID=PC15C_RAMP_BEFORE1
+T=I wonder what this button's for?
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC15C_RAMP_AFTER1
+T=Hey, Tidy!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Just a hunch. Did Dr. Hush put out that ramp for you?
+W=BROK
+
+T=Yup-yup! For me. So I can access the table.
+W=TIDY
+C2A=HAPPY
+
+T=Got made. And modified. For me!
+W=TIDY
+
+T=Is that so?...
+W=BROK
+
+T=Makes sense. Bots weigh tons and cannot jump over there.
+W=BROK
+CLUE=CLUE_LAB_RAMP
+
+#----------------------
+#TODO Make Brok jump over the ramp automatically!
+ID=PC15C_RAMP_AFTER2
+T=One has to wonder why Dr. Hush couldn't just implement hovering on Tidy.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+C3=OTT
+C3A=WONDER
+
+T=Hovering. Is very resource intensive.
+W=TIDY
+
+T=Daddy loves nature!
+W=TIDY
+C2A=HAPPY
+
+T=He means the scientist did it on purpose, for energy efficiency reasons.
+W=OTT
+C3A=NORMAL
+
+#----------------------
+#= Trap
+#----------------------
+ID=PC15C_TRAP_BEFORE
+T=Hmm... A vent, maybe?
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC15C_TRAP1
+T=That's a vent, right?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Yes. There's one in my room also.
+W=MINK
+
+T=How does that trap open?
+W=BROK
+
+T=Hmm...
+W=MINK
+C2A=MOCK
+
+T=I think you need to press that lever next to it.
+W=MINK
+
+T=But... that's unreachable!
+W=BROK
+C1A=SURPRISED
+
+T=You're supposed to use a ladder, obviously.
+W=MINK
+C2A=MOCK
+
+T=There's one attached in my room but there is not one here.
+W=MINK
+C1A=THINK
+
+T=Seems so...
+W=BROK
+
+#----------------------
+ID=PC15C_TRAP2
+T=Hmm...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=What are you looking at?
+W=OTT
+
+T=I wonder how high I would have to jump to reach that lever?.
+W=BROK
+C1A=MOCK
+
+T=Very funny.
+W=OTT
+C2A=HAPPY
+
+T=Uh? I'm serious.
+W=BROK
+C1A=SURPRISED
+
+T=That. Not possible.
+W=TIDY
+C4=TIDY
+C4A=HAPPY
+
+T=Silly human.
+W=TIDY
+
+T=We'll see who will get the last laugh, little robotic slave.
+W=BROK
+C1A=MOCK
+
+#----------------------------
+#= Bed
+#----------------------------
+ID=PC15C_BED1
+T=Looks rough.
+W=BROK
+A=THINK
+
+T=You'd think such valuable personnel would get decent quality mattresses.
+W=BROK
+A=WONDER
+TEN=PC15C_BED_CHECKWHO
+
+#----------------------------
+ID=PC15C_BED1B
+T=They're made for higher productivity.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Add spikes and it'd be perfect.
+W=BROK
+C1A=ALRIGHT
+
+
+#----------------------
+#= Painting
+#----------------------
+ID=PC15C_PAINTING1
+T=An animated painting.
+W=BROK
+C1=BROK
+C1A=THINK
+TEN=PC15C_PAINTING_CHECKWHO
+
+#----------------------
+ID=PC15C_PAINTING1B
+T=That's a PaintTV.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=You can watch livies of course but the trend is to display a still picture permanently.
+W=MINK
+
+T=For sure, that's a better use of technology...
+W=BROK
+C1A=MOCK
+
+T=You don't say! Dr. Hush is so old fashioned. And he calls himself an engineer... Pfft!
+W=MINK
+C2A=MOCK
+
+#----------------------
+ID=PC15C_PAINTING2
+T=Hmm.
+W=BROK
+A=THINK
+
+T=According to the map...
+W=BROK
+TEN=PC15C_PAINTING_REMOVE
+
+#----------------------
+ID=PC15C_PAINTING2B
+T=What are you doing?
+W=MINK
+C1=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=ANGRY
+C3=OTT
+C3A=SURPRISED
+
+T=...
+W=BROK
+
+T=Something's off.
+W=BROK
+C1A=WONDER
+
+T=What do you mean, Mister Brok?
+W=OTT
+C3A=WONDER
+
+T=Just a hunch.
+W=BROK
+
+#----------------------
+ID=PC15C_PAINTING2C
+T=Woah! You broke the wall?!
+W=MINK
+C1=BROK
+C1A=WORRIED
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+
+T=I barely touched it. Some paper-thin slab was obstructing this.
+W=BROK
+C1A=SURPRISED
+
+T=A hole?
+W=OTT
+
+T=Looks like it.
+W=BROK
+C1A=WONDER
+
+T=Aaaand this leads right to your room, Dr. Mink.
+W=BROK
+
+T=I... had no idea...!
+W=MINK
+
+T=It's small. No one would fit.
+W=BROK
+
+T=I wonder if anything got through there, though?
+W=OTT
+C3A=WONDER
+
+T=That's up to us to find out.
+W=BROK
+C1A=READY
+CLUE=CLUE_LAB_FAKEWALL
+
+
+#----------------------
+#= Hole
+#----------------------
+ID=PC15C_HOLE1
+T=On the other side, I can see...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Yup. Definitely Dr. Mink's office. There's a table with a box of nanites on it.
+W=BROK
+
+T=My precious nanites?! Don't tell me someone used them!
+W=MINK
+C2A=ANGRY
+
+T=Then I won't tell you. It's pure conjecture at this point.
+W=BROK
+C1A=MEH
+
+#----------------------
+ID=PC15C_HOLE2
+T=That's surprising. I thought the restroom was next to this room, not Dr. Mink's?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SURPRISED
+
+T=Think about how the rooms are shaped. The restroom is smaller and doesn't extend as far.
+W=BROK
+
+T=You're right!
+W=OTT
+C2A=NORMAL
+
+T=I'd never have thought to check this painting!
+W=OTT
+
+T=You're amazing, Detective Brok!
+W=OTT
+C2A=HAPPY
+
+T=Ah, that's just the experience talking!
+W=BROK
+C1A=HAPPY
+
+T=(And luck)
+W=BROK
+MOOD=THINK
+
+#----------------------
+#= Tablet
+#----------------------
+ID=PC15C_TABLET1
+T=That's Dr. Hush's?
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Seems locked.
+W=BROK
+TEN=PC15C_TABLET_CHECKWHO
+
+#----------------------
+ID=PC15C_TABLET1B
+T=Yes. They're personal. Only Dr. Hush can use it.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Shame. Must be some useful info in there.
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC15C_MINK_GOTABLET
+
+T=Let me see?
+W=MINK
+
+T=There's one. "Last connection... 4:45"
+W=MINK
+C2A=MOCK
+
+T=That's the last time he used it?
+W=BROK
+C1A=WONDER
+
+T=Yes. And for doing your job... You're welcome.
+W=MINK
+
+T=Hey, I'm no expert with these techological thingies!
+W=BROK
+C1A=ANGRY
+
+T=Then why do you feel qualified to incriminate me?
+W=MINK
+C2A=ANGRY
+
+T=Just wait and see.
+W=BROK
+C1A=MOCK
+
+T=Hmph...
+W=MINK
+C2A=MEH
+TEN=PC15C_MINK_BACK
+CLUE=CLUE_HUSH_LASTLOGIN
+
+#----------------------
+ID=PC15C_TABLET2
+T="Last connection... 4:45".
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC15C_TABLET_AFTER1
+T=That tablet might contain crucial information but it's locked.
+W=BROK
+A=THINK
+
+T=Hmm... I'd better take it.
+W=BROK
+A=WONDER
+TEN=PC15C_TABLET_GET
+
+
+#----------------------
+#= Spot
+#----------------------
+ID=PC15C_SPOT1
+T=Some kind of grease spot.
+W=BROK
+A=THINK
+TEN=PC15C_SPOT_CROUCH
+
+#----------------------
+ID=PC15C_SPOT1B
+T=(Slurps)
+W=BROK
+A=WONDER
+MOOD=THINK
+TEN=PC15C_SPOT_STAND
+
+#----------------------
+ID=PC15C_SPOT1C
+T=Eww! Did you just lick the floor?
+W=MINK
+C1=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=SURPRISED
+
+T=Gotta be certain.
+W=BROK
+C1A=MEH
+TEN=PC15C_SPOT_STAND2
+
+T=Well, that's coffee.
+W=BROK
+CLUE=CLUE_LAB_FLOORCOFFEE
+
+#----------------------
+ID=PC15C_SPOT1D
+T=Tastes like coffee.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC15C_SPOT2
+T=A coffee stain. Pretty faint but still visible.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC15C_SPOT_MAGNIFY
+T=Wait...!
+W=BROK
+A=READY
+
+T=How come there's a ton of nanites on this particular coffee spot?!
+W=BROK
+A=WONDER
+CLUE=CLUE_LAB_FLOORCOFFEE2
+
+
+#----------------------
+#= Tidy
+#----------------------
+ID=PC15C_TIDY_NOTCHARGED1
+T=This bot...is the one displayed on the screen?
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=I'll try turning it...
+W=BROK
+SKIPEND=1
+
+T=Warning - DO NOT DISTURB UNTIL CHARGE IS COMPLETE
+BNAME=TIDY
+BVOICE=TIDY
+
+T=Oops!
+W=BROK
+C1A=STUPID
+
+T=You should listen, Mister Brok! Otherwise we might damage it.
+W=OTT
+C2=OTT
+C2A=NORMAL
+
+#----------------------
+ID=PC15C_TIDY_WAKE1
+T=That thing. It's blinking green.
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=Does this mean...
+W=BROK
+SKIPEND=1
+TEN=PC15C_TIDY_WAKEUP
+
+#----------------------
+ID=PC15C_TIDY_WAKE1B
+T=YOLO!
+W=TIDY
+C1=BROK
+C1A=SURPRISED
+C2=TIDY
+C2A=SURPRISED
+CONTEXT=Tidy suddenly wakes up. He's quite full of joy for a robot. When Brok talks to him, he's a bit caught off balance as he's not used to talking to bots like this
+
+T=Gulp!
+W=BROK
+C2A=HAPPY
+TEN=PC15C_TIDY_WAKES
+
+#----------------------
+ID=PC15C_TIDY_WAKE1C
+T=You seem. Surprised and unsafe!
+W=TIDY
+C1=BROK
+C1A=SURPRISED
+C2=TIDY
+C2A=NORMAL
+
+T=Do not worry! I do not. Bite!
+W=TIDY
+C2A=HAPPY
+
+T=I am glad to see. A new face! It has happened. Zero times since I was born!
+W=TIDY
+C2A=ANALYZE
+
+T=Oh.
+W=BROK
+C1A=CONFUSED
+
+T=So, you're...
+W=BROK
+SKIPEND=1
+
+T=Dr. Hush's assistant. Tidy!
+W=TIDY
+C2A=NORMAL
+
+T=I tidy things up, left, down, right! Yup-yup!
+W=TIDY
+C2A=HAPPY
+
+T=I see...
+W=BROK
+C1A=THINK
+
+T=Mind if I ask a few questions?
+W=BROK
+
+T=I do not. Do not mind!
+W=TIDY
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+#----------------------
+#= Tidy - Dr. Hush
+#----------------------
+ID=PC15C_TIDY_DRHUSH1
+T=So... Dr. Hush built you?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=TIDY
+C2A=NORMAL
+CONTEXT=Talking to Tidy
+
+T=Yup-yup. He's my Daddy! We love Daddy.
+W=TIDY
+C2A=HAPPY
+
+T=Where's my Daddy?
+W=TIDY
+C2A=WONDER
+
+T=Erm...
+W=BROK
+C1A=WORRIED
+
+T=He's dead.
+W=MINK
+C4=MINK
+C4A=MEH
+
+T=Hey! Show some compassion for the little guy!
+W=BROK
+C1A=FURIOUS
+
+T=What guy? He's a piece of junk.
+W=MINK
+
+T=Daddy dead?
+W=TIDY
+
+T=Well... Seems so.
+W=BROK
+C1A=HEARTBROKEN
+
+T=We're trying to understand what...
+W=BROK
+SKIPEND=1
+
+T=Dead Daddy. Daddy dead! Dead, dead, dead Daddy!
+W=TIDY
+C2A=HAPPY
+
+T=...
+W=BROK
+C1A=DOWN
+
+T=I thought you'd be... a little less joyful.
+W=BROK
+
+T=Told you. The thing has no feeling.
+W=MINK
+C4A=MOCK
+
+T=Oh...
+W=TIDY
+C2A=SURPRISED
+
+T=Oh no no no no no no!!!
+W=TIDY
+
+T=It means. No see. Daddy again?
+W=TIDY
+C2A=SAD
+
+T=Dead Daddy?
+W=TIDY
+
+T=Argh...
+W=BROK
+C1A=TIRED
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_DRHUSH2
+T=Look. I know it's hard...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=TIDY
+C2A=NORMAL
+
+T=Well... maybe not, 'cause you're not alive but...
+W=BROK
+C1A=MEH
+
+T=Anyway, I gotta ask.
+W=BROK
+C1A=WONDER
+
+T=Did you hurt your Daddy?
+W=BROK
+
+T=Hurt Daddy?
+W=TIDY
+C2A=SURPRISED
+
+T=I cannot! Not not not. Noooooooo way.
+W=TIDY
+C2A=HAPPY
+
+T=Erm...
+W=BROK
+
+T=Why are you smiling while saying that?
+W=BROK
+
+T=Oh!
+W=TIDY
+C2A=SURPRISED
+
+T=Bug bug. Changing expression.
+W=TIDY
+C2A=WONDER
+
+T=...
+W=TIDY
+C2A=SAD
+
+T=Dead Daddy?...
+W=TIDY
+
+T=Argh. I just can't analyze it!
+W=BROK
+C1A=CONFUSED
+
+T=It... Him... I don't know anymore!
+W=BROK
+
+T=He's telling the truth.
+W=MINK
+C4=MINK
+C4A=MEH
+
+T=How can you tell? He keeps changing his face!
+W=BROK
+
+T=Daddy is good. No. Daddy is. Best!
+W=TIDY
+C2A=HAPPY
+
+T=I couldn't care less about his body language or that spouting nonsense.
+W=MINK
+
+T=No robot can harm his creator. Ever.
+W=MINK
+
+T=That's the golden rule.
+W=MINK
+
+T=Care to elaborate?
+W=BROK
+C1A=WONDER
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_SITUATION1
+T=When did you see your Daddy for the last time?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Morning. 05:04.
+W=TIDY
+C2A=ANALYZE
+
+T=What was he doing?
+W=BROK
+
+T=Daddy. Away. Exit room.
+W=TIDY
+CLUE=CLUE_HUSH_LEFT
+
+T=Did he say anything when leaving?
+W=BROK
+TEN=PC15C_TIDY_SITUATION_MUSICLOWER
+
+T=Yup-yup!
+W=TIDY
+C2A=HAPPY
+
+T=Retrieving record...
+W=TIDY
+C2A=WONDER
+
+T="I need to settle things with Dr. Mink."
+BVOICESP=HUSH
+BNAMESP=HUSH
+CLUE=CLUE_HUSH_RECORDING
+
+T=What?!
+W=MINK
+C4=MINK
+C4A=SURPRISED
+
+T=This is impossible! Dr. Hush never even came to my office today!
+W=MINK
+C4A=ANGRY
+
+T=Then how do you explain the fact that he's in your room currently?
+W=OTT
+C3=OTT
+C3A=WONDER
+
+T=I don't know but...
+W=MINK
+
+T=That bag of screws is lying! I'm gonna tear him apart until...
+W=MINK
+SKIPEND=1
+
+T=Calm down! Or I shall calm you down myself.
+W=BROK
+C1A=YELL
+TEN=PC15C_TIDY_SITUATION_MUSICBACK
+
+T=Gulp...
+W=MINK
+C4A=SURPRISED
+CLUE=CLUE_HUSH_NEVERCOME
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_SITUATION2
+T=What were you doing at the time, Tidy?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Charge! Power to tidy!
+W=TIDY
+C2A=HAPPY
+
+T=Wait... You said you recorded Dr. Hush while you were charging?
+W=BROK
+C1A=WONDER
+
+T=That's weird. You were totally shut off when I first found you.
+W=BROK
+
+T=Tidy. Several phases of sleep. Like human.
+W=TIDY
+C2A=ANALYZE
+
+T=Dr. Mink. Is that even possible?
+W=BROK
+
+T=Yes. We don't shut off machines immediately to compress the data of the day.
+W=MINK
+C4=MINK
+C4A=MEH
+
+T=The same way, it takes several steps before full awakening.
+W=MINK
+
+T=But... You still shouldn't listen to that bot! It's trying to confuse you!
+W=MINK
+C4A=ANGRY
+
+T=Did your sensors record anything else?
+W=BROK
+
+T=Nothing. Unusual!
+W=TIDY
+C2A=NORMAL
+
+T=Hmm...
+W=BROK
+TEN=PC15C_TIDY_CHOICES
+IT=1
+CLUE=CLUE_TIDY_CONSCIOUSNESS
+
+
+#----------------------
+#= Tidy - The rule
+#----------------------
+ID=PC15C_TIDY_RULE1
+T=Surely you've seen all those fantastical livies with robots rebelling against humans.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Years ago, when the scientific community started designing bots, they took this into consideration.
+W=MINK
+
+T=There's a golden rule. It's implemented in the hardware, encrypted deep within their AI core and replicated through all their parts.
+W=MINK
+
+T=No robot can attack their creator.
+W=MINK
+
+T=That's true! We've learnt this at the Consc'.
+W=OTT
+C3=OTT
+C3A=ALRIGHT
+
+T=We do not. Love Daddy! We do!
+W=TIDY
+C4=TIDY
+C4A=HAPPY
+
+T=Okay, so...they can't harm their creators. But those pieces of junks sure can harm me!
+W=BROK
+C1A=WORRIED
+
+T=I've had to get my way through Tribots more than once.
+W=BROK
+
+T=Of course, there are varied levels of permissions.
+W=MINK
+
+T=Permission! To tidy!
+W=TIDY
+
+T=Ssh! Stay here.
+W=MINK
+C2A=SURPRISED
+
+T=For standard bots, close family and friends are included in a second layer to that rule.
+W=MINK
+C2A=NORMAL
+
+T=Police and military Tribots are designed for battle and may attack anyone who is considered a threat.
+W=MINK
+
+T=This varies according to model. However, the golden rule is always there.
+W=MINK
+
+T=Besides, we've never had any accident.
+W=MINK
+
+T=Never say never.
+W=BROK
+C1A=ANGRY
+
+T=Life has taught me...there's always a first to everything.
+W=BROK
+C1A=OPPOSITE
+CLUE=CLUE_TIDY_NOKILLCREATOR
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC15C_TIDY_RULE2
+T=What makes you so certain that Dr. Hush respected the "no killing" convention?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+C4=MINK
+C4A=NORMAL
+
+T=Simple. An algorithm thoroughly checks...
+W=MINK
+SKIPEND=1
+
+T=Algo? Rhythm! Dance! YOLO!!!
+W=TIDY
+C2A=HAPPY
+
+T=It's hardly the moment to dance, Tidy.
+W=BROK
+C1A=MOCK
+
+T=Anyway, if he didn't comply, he wouldn't be able to communicate with the exterior.
+W=MINK
+
+T=Okay...
+W=BROK
+C1A=MAYBE
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+
+#----------------------
+#= Tidy - Himself
+#----------------------
+ID=PC15C_TIDY_HIMSELF1
+T=Tell me! What can you do, Tidy?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Tidy can tidy!
+W=TIDY
+C2A=HAPPY
+
+T=...Yes, and...?
+W=BROK
+
+T=Tidy can stretch. Arms!
+W=TIDY
+TEN=PC15C_TIDY_HORIZONTALSHOW
+
+T=Like this!
+W=TIDY
+TEN=PC15C_TIDY_VERTICALSHOW
+
+T=Or this!
+W=TIDY
+
+T=That's pretty cool!
+W=OTT
+C3=OTT
+C3A=SURPRISED
+
+T=I admit it, this must be useful.
+W=BROK
+C1A=ALRIGHT
+
+T=Hmm. Can you bend them?
+W=BROK
+C1A=WONDER
+
+T=Ridiculous. Bending robot! No.
+W=TIDY
+C2A=SURPRISED
+
+T=Vertical. Horizontal. NO bend.
+W=TIDY
+C2A=HAPPY
+
+T=Daddy cannot. Try. No make. Work.
+W=TIDY
+C2A=WONDER
+
+T=Now... Dead Daddy.
+W=TIDY
+C2A=SAD
+
+T=Erm... Tidy?
+W=OTT
+
+T=You're bending them right now.
+W=OTT
+
+T=Oh!
+W=TIDY
+C2A=SURPRISED
+
+T=Yes. My mistake.
+W=TIDY
+C2A=HAPPY
+
+T=Cannot bend. While extending arms!
+W=TIDY
+C2A=HAPPY
+TEN=PC15C_TIDY_GOBACK
+
+T=Oh.
+W=BROK
+
+T=So, what's the exact use?
+W=BROK
+
+T=Moving arms. Very efficient! No full body move!
+W=TIDY
+C2A=NORMAL
+
+T=I see. Must be more practical to grab things scattered in a room.
+W=BROK
+CLUE=CLUE_TIDY_STRETCH
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_HIMSELF2
+T=Anything else?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Tidy can. Carry objects. Do repairs. Make phone calls.
+W=TIDY
+C2A=ANALYZE
+
+T=Tidy has sensors. To detect humans and objects. Calculate shortest path.
+W=TIDY
+
+T=Useful to bring the coffee, I guess...
+W=OTT
+C3A=WONDER
+
+T=Also. Tidy can. Strip clothes!
+W=TIDY
+C2A=HAPPY
+
+T=Uh?...
+W=BROK
+C1A=SURPRISED
+
+T=Daddy likes. Getting naked.
+W=TIDY
+
+T=What did he just say?!
+W=OTT
+C3A=SURPRISED
+
+T=Please! Naked!
+W=TIDY
+
+T=N...no, that won't be necessary!
+W=BROK
+C1A=WORRIED
+
+T=Either he's got a screw loose...
+W=MINK
+C4=MINK
+C4A=MOCK
+
+T=...or Dr. Hush is an exhibitionist.
+W=MINK
+
+T=I wonder...
+W=MINK
+C1A=MAYBE
+
+T=Mister Brok? What are you writing?
+W=OTT
+C3A=WONDER
+
+T=Well... It's a clue, so...
+W=BROK
+CLUE=CLUE_HUSH_NAKED
+
+T=Daddy. All naked! Yup-yup!
+W=TIDY
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+
+#----------------------
+#= Tidy - Welcome
+#----------------------
+ID=PC15C_TIDY_WELCOME1
+T=Tidy, I need your help.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Yup-yup!
+W=TIDY
+C2A=HAPPY
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_WELCOME2
+T=Dead Daddy?...
+W=TIDY
+C1=BROK
+C1A=HEARTBROKEN
+C2=TIDY
+C2A=SAD
+
+T=Still dead, I'm afraid so.
+W=BROK
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+
+#----------------------
+#= Tidy - Exit
+#----------------------
+ID=PC15C_TIDY_EXITFIRST
+T=That should be enough for now.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Enough! Enough nuff nuff!
+W=TIDY
+C2A=HAPPY
+
+T=Got work to do!
+W=TIDY
+
+T=Wait!
+W=BROK
+C1A=YELL
+C2A=SURPRISED
+
+T=I forbid you to touch anything!
+W=BROK
+C1A=ANGRY
+
+T=Not Daddy. Not listening.
+W=TIDY
+C2A=ANGRY
+
+T=Get lost! Yup-yup!
+W=TIDY
+C2A=HAPPY
+
+T=What?!
+W=BROK
+C1A=SURPRISED
+
+T=You little piece of...
+W=BROK
+C1A=FURIOUS
+SKIPEND=1
+
+T=Tidy, stay here.
+W=MINK
+C4=MINK
+C4A=MEH
+C2A=NORMAL
+
+T=You should not mess with anything right now.
+W=MINK
+
+T=Okay Minky!
+W=TIDY
+C2A=HAPPY
+TEN=PC15C_TIDY_EXITFIRST_BACK
+
+
+T=He obeys you?!
+W=BROK
+C1A=SURPRISED
+
+T=Of course. Can't say I like it but that thing is useful.
+W=MINK
+C4A=MOCK
+
+T=I'm in his "close acquaintances" list.
+W=MINK
+
+T=Oh well. As long as he doesn't move...
+W=BROK
+C1A=MEH
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC15C_TIDY_EXIT1
+T=Tidy. No moving!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=TIDY
+C2A=NORMAL
+
+T=Yup-yup!
+W=TIDY
+C2A=HAPPY
+
+T=Good boy!
+W=BROK
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+ID=PC15C_TIDY_EXIT2
+T=Okay. Stay here.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Dead Daddy?...
+W=TIDY
+C2A=SAD
+TEN=CHARACTER_STOPMUSIC
+
+#----------------------
+#= Tidy - Dr. Hush
+#----------------------
+ID=PC15C_TIDY_THINK1
+T=(This seems like a sympathetic bot. Though...)
+W=BROK
+C1=BROK
+C1A=THINK
+MOOD=THINK
+
+T=(I don't really trust those artifical beings. He may be hiding something.)
+W=BROK
+MOOD=THINK
+
+T=(I need to find the truth. Let's investigate!)
+W=BROK
+MOOD=THINK
+TEN=PC15C_TIDY_CHOICES
+IT=1
+
+#----------------------
+#= Tidy - Inventory
+#----------------------
+ID=PC15C_TIDY_INV_DEFAULT1
+T=Does this item have any meaning to you?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=No good! Junk. Dead Daddy.
+W=TIDY
+C2A=SAD
+
+T=Looks like this doesn't remind him anything.
+W=BROK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_INV_DEFAULT2
+T=That is. A mess!
+W=TIDY
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=SURPRISED
+
+T=Allow to tidy! Your inventory.
+W=TIDY
+C2A=HAPPY
+
+T=Hey, wait! I forbid you!
+W=BROK
+C1A=SURPRISED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_INV_MONEY
+T=He wouldn't have any use for...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=TIDY
+C2A=NORMAL
+SKIPEND=1
+
+T=Gimme! Gimme! Gimme!
+W=TIDY
+C2A=HAPPY
+
+T=No way!
+W=BROK
+C2A=SURPRISED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_INV_NOREACTION
+T=...
+W=TIDY
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=WONDER
+
+T=(Uh?... Did he bug out?)
+W=BROK
+C1A=CONFUSED
+MOOD=THINK
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_INV_LAMP
+T=What can you tell me about this lamp?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Dirty! Lemme clean!
+W=TIDY
+C2A=SURPRISED
+
+T=Focus! I need useful info!
+W=BROK
+C1A=MOCK
+
+T=Cleaning. Always useful!
+W=TIDY
+C1A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_INV_MAPBUILDING
+T=Tidy has tracking! No rubbish map.
+W=TIDY
+C1=BROK
+C1A=DOWN
+C2=TIDY
+C2A=HAPPY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15C_TIDY_INV_REMOTECONTROL
+T=Nobody! Can control Tidy!
+W=TIDY
+C1=BROK
+C1A=MEH
+C2=TIDY
+C2A=HAPPY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15C_TIDY_INV_PILLHUSH
+T=Did your Daddy take these?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=TIDY
+C2A=NORMAL
+
+T=Too late. Daddy dead.
+W=TIDY
+C2A=SAD
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15C_TIDY_INV_TABLETHUSH
+T=Please unlock the tablet for me!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=WONDER
+
+T=Cannot. Only dead Daddy. Can.
+W=TIDY
+C2A=SAD
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC15C_TIDY_INV_TRAMPPRESCR
+T=Please tell me you're a doctor!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=TIDY
+C2A=NORMAL
+
+T=Ask Daddy.
+W=TIDY
+C2A=HAPPY
+
+T=Oops! Daddy dead!
+W=TIDY
+C2A=SURPRISED
+
+T=Hmph...
+W=BROK
+C1A=DOWN
+C2A=SAD
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC15C_FROMVENT
+T=Ouch... That was quite the drop.
+W=BROK
+A=STUPID
+CONTEXT=When falling after inspecting the vent
+
+###############################################
+# PROOFREAD - Lanceccampbell1987 - 23/08/2019
+# EXPRESSIONS - CharlieLarge     - 11/09/2019
+###############################################
+
+
+#----------------------
+ID=PC15C_PAINTINGREMOVED1
+T=Hmm...
+W=BROK
+A=WONDER
+
+
+
+#----------------------
+ID=PC15C_DRAWER1
+T=What's in there?
+W=BROK
+A=WONDER
+TEN=PC15C_DRAWER_SEARCH
+
+#----------------------
+ID=PC15C_DRAWER2
+T=Nothing in particular.
+W=BROK
+A=WONDER
+
+

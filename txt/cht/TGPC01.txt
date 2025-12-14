@@ -1,0 +1,900 @@
+#-------------------------------
+#=GRAFF --- BROK APARTMENT
+#-------------------------------
+
+#----- Interactions --------
+
+
+#----- Choices / Items --------
+GOT_FLOUR=麵粉！
+
+#----- Topics --------
+GPC01_CHOOSE_GIFT=挑選一份禮物
+GPC01_GRAFFVR_CHOICE=在模擬VR中訓練？
+
+#----- Dialog --------
+
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Graff
+GPC01_BED1-1=至少還有張床可以睡覺……
+#----------------------------------------------------
+# Graff
+GPC01_PLANT1-1=這裏的一切都像這株植物一樣在腐爛，希望我不會也落得如此下場……
+#----------------------------------------------------
+# Graff
+GPC01_PICTURE1-1=……
+#----------------------------------------------------
+# Graff
+GPC01_DISH1-1=還沒輪到我！
+#----------------------------------------------------
+# Graff
+GPC01_DISH_ANGRY1-1=他還沒洗碗嗎？！
+#----------------------------------------------------
+# Graff
+GPC01_DISH_HAPPY1-1=他總算知道洗碗了！
+#----------------------------------------------------
+# Graff
+GPC01_GRAFFBED1-1=簡陋的居家……
+# Graff
+GPC01_GRAFFBED1-2=這些牆壁都歪歪斜斜的。
+# Graff
+GPC01_GRAFFBED1-3=布羅格把我的床削掉一部分才成功擠進房間裏。
+#----------------------------------------------------
+# Graff
+GPC01_STORY110_GRAFFBED-1=長夜漫漫，無法睡眠……
+#----------------------------------------------------
+# Graff
+GPC01_BED_ASK-1=嗯……就稍微休息一下吧？
+#----------------------------------------------------
+# Graff
+GPC01_BED_HEALTH_BACK1-1=唉……我也想……但我不能再繼續休息下去了。
+#----------------------------------------------------
+# Graff
+GPC01_CHEST1-1=不行……
+# Graff
+GPC01_CHEST1-2=我過去的一切……都存放在裏頭。
+# Graff
+GPC01_CHEST1-3=我發過誓在離開這個地方之前絕不打開它。
+#----------------------------------------------------
+# Graff
+GPC01_CHEST2-1=現在還不是時候……
+#----------------------------------------------------
+# Graff
+GPC01_CLOTHES1-1=他真是很不愛整理……不過整不整理也都是這樣吧？
+# Graff
+GPC01_CLOTHES1-2=基本上他一天到晚都在工作，回來就是吃飯睡覺。
+# Graff
+GPC01_CLOTHES1-3=哦對，還有做飯！這是他最喜歡的事。
+#----------------------------------------------------
+# Graff
+GPC01_BEDROOMDOOR_STORY180-1=……
+# Graff
+GPC01_BEDROOMDOOR_STORY180-2=……真的不行。
+#----------------------------------------------------
+# Graff
+GPC01_MESS1-1=只是一些衣服床單之類的東西。
+# Graff
+GPC01_MESS1-2=測驗委員會隨時會來……現在可沒空翻找這些東西！
+#----------------------------------------------------
+# Graff
+GPC01_MESS_AFTER-1=……這些東西對我沒有用處。
+#----------------------------------------------------
+# Graff
+GPC01_DRAWER1-1=讓我看看……
+# Graff
+GPC01_DRAWER1-2=呃……這是麵粉？怎麽會放到這來？
+# Graff
+GPC01_DRAWER1-3=一定是我之前的作業用剩的……
+#----------------------------------------------------
+# Graff
+GPC01_DRAWER2-1=唔……都是些衣物……以及紙和筆……
+# Graff
+GPC01_DRAWER2-2=暫時沒有可以派上用場的。
+#----------------------------------------------------
+# Graff
+GPC01_DRAWER3-1=衣服……紙和筆……
+#----------------------------------------------------
+# Graff
+GPC01_DRAWER_NEED-1=我想到了！
+# Graff
+GPC01_DRAWER_NEED-2=我可以使用布羅格幾年前送給我的紙和筆。
+# Graff
+GPC01_DRAWER_NEED-3=他當時是為了讓我練習寫字。
+# Graff
+GPC01_DRAWER_NEED-4=我當時還嘲笑他想法過時。
+# Graff
+GPC01_DRAWER_NEED-5=直到現在才明白……
+# Graff
+GPC01_DRAWER_NEED-6=就試試我還記不記得怎麽寫字吧！
+#----------------------------------------------------
+# Graff
+GPC01_DOORFRIDGE1-1=我的肚子不太舒服……還是先不吃了。
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP1-1=雖然不是很喜歡吃……但以防萬一還是拿一個吧。
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP2-1=再拿一個好了……
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP_NONE-1=嘿……他什麽都沒留給我！
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP_GONE-1=……
+#----------------------------------------------------
+# Graff
+GPC01_INSTRUMENT1-1=我不喜歡聽音樂，我比較喜歡科學而不是藝術。
+# Graff
+GPC01_INSTRUMENT1-2=不過數位音樂倒是滿不錯的！
+#----------------------------------------------------
+# Graff
+GPC01_PUNCHINGBAG1-1=布羅格應該不知道……
+# Graff
+GPC01_PUNCHINGBAG1-2=其實我偶爾會用這拳擊沙包練拳！
+# Graff
+GPC01_PUNCHINGBAG1-3=畢竟這附近不安全……有備無患。
+#----------------------------------------------------
+# Graff
+GPC01_PUNCHINGBAG_TRY1-1=呼……真是累死我了。
+#----------------------------------------------------
+# Graff
+GPC01_PUNCHINGBAG_DEATH1-1=看來我的訓練沒有白費！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff can play VR arena with his computer
+# *****************************************************************
+# Graff
+GPC01_COMPUTER1-1=這是我的中古電腦。
+# Graff
+GPC01_COMPUTER1-2=現在已經沒有人使用這麽大臺的電腦了，不過沒錢也沒辦法……
+# Graff
+GPC01_COMPUTER1-3=雖然不合時宜……不過很想去VR競技場打個幾場！
+#----------------------------------------------------
+# Graff
+GPC01_COMPUTER2-1=要不要訓練？
+#----------------------------------------------------
+# Graff
+GPC01_COMPUTER_LOSE1-1=呼……還好是虛擬的！現實中的我可沒有九條命。
+#----------------------------------------------------
+# Graff
+GPC01_COMPUTER_LOSE2-1=我該加強訓練了……
+#----------------------------------------------------
+# Graff
+GPC01_COMPUTER_WIN1-1=太好了！
+#----------------------------------------------------
+# Graff
+GPC01_COMPUTER_WIN2-1=程度有提升！
+#----------------------------------------------------
+# Graff
+GPC01_COMPUTER_STORY180-1=不行……發訊息給布羅格得使用較傳統的方式。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 1 end - Graff is angry in his bedroom after their argument （normal - Brok came too late to the science fair）
+# *****************************************************************
+# Graff
+GPC01_STORY110_GRAFFANGRYNORMAL1-1=唉……
+# Graff
+GPC01_STORY110_GRAFFANGRYNORMAL1-2=真是難以置信……
+# Graff
+GPC01_STORY110_GRAFFANGRYNORMAL1-3=就是因為他……害得我測驗不及格。
+# Graff
+GPC01_STORY110_GRAFFANGRYNORMAL1-4=這下肯定拿不到畢業證書了。
+# Graff
+GPC01_STORY110_GRAFFANGRYNORMAL1-5=我永遠永遠……只能是個卑賤的貧民了……
+# Graff
+GPC01_STORY110_GRAFFANGRYNORMAL1-6=……
+#----------------------------------------------------
+# Graff
+GPC01_STORY110_GRAFFCHECKSMESSENGER-1=……
+# Graff
+GPC01_STORY110_GRAFFCHECKSMESSENGER-2=我必須重整一下思緒。
+#----------------------------------------------------
+# Graff
+GPC01_STORY110_PC-1=咦，會是奧特上線了？那我可以找他組隊打遊戲！
+# Graff
+GPC01_STORY110_PC-2=……
+# Graff
+GPC01_STORY110_PC-3=看錯了，唉！
+#----------------------------------------------------
+# Graff
+PC01_STORY110_OTTBROKEN1-1=啊……我太蠢了。
+# Graff
+PC01_STORY110_OTTBROKEN1-2=他當然不會上線……因為我毀了他的發明，他現在肯定氣死了……
+# Graff
+PC01_STORY110_OTTBROKEN1-3=看來……我連最好的朋友也沒了。
+# Graff
+PC01_STORY110_OTTBROKEN1-4=唉……
+#----------------------------------------------------
+# Graff
+GPC01_STORY110_OTTNORMAL1-1=看來他是在忙著準備明天的實習。
+# Graff
+GPC01_STORY110_OTTNORMAL1-2=可惜……現在真想找個朋友聊天。
+#----------------------------------------------------
+# Graff
+GPC01_STORY110_AFTERMESSENGERNORMAL1-1=唔……
+# Unknown
+GPC01_STORY110_AFTERMESSENGERNORMAL1-2=“父母毀掉一切”
+#----------------------------------------------------
+# Unknown
+GPC01_STORY110_AFTERMESSENGERNORMAL1B-1=“標題: 討厭我的父母！”
+# Graff
+GPC01_STORY110_AFTERMESSENGERNORMAL1B-2=……看來英雄所見略同。
+#----------------------------------------------------
+# Graff
+GPC01_STORY110_AFTERMESSENGERBROKEN1-1=唔……
+# Unknown
+GPC01_STORY110_AFTERMESSENGERBROKEN1-2=“感到厭世”
+#----------------------------------------------------
+# Unknown
+GPC01_STORY110_AFTERMESSENGERBROKEN1B-1=“標題: 如何面對情緒失控”
+#----------------------------------------------------
+# Graff
+GPC01_STORY110_AFTER1B-1=有點意思。
+# Graff
+GPC01_STORY110_AFTER1B-2=或許他們會對我的故事感興趣。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Same scene but Graff busted all inventions during the science fair
+# *****************************************************************
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-1=……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-2=我到底是發什麽神經……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-3=短短幾分鐘……我……就毀掉了……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-4=多年以來的一切努力……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-5=幸虧布羅格沒在場看見……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-6=……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-7=不行！我不可以……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-8=我…我必須想辦法……
+# Graff
+PC01_STORY110_GRAFFANGRYBROKEN1-9=現在想補救會不會太遲了……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - End of day 2 - Graff couldn't take a pill and suffers heavily from the effects of the pollution. He comes back home but...
+# *****************************************************************
+# Graff
+GPC01_STORY165_GRAFF-1=……
+# Graff
+GPC01_STORY165_GRAFF-2=咳咳……布羅格……不在這裏……！
+# Graff
+GPC01_STORY165_GRAFF-3=咳咳……拜托……你一定……咳咳……存有額外的藥丸……！
+#----------------------------------------------------
+# Graff
+#Too late. Graff collapses
+GPC01_STORY165_GRAFFB-1=……咳咳……
+# Graff
+GPC01_STORY165_GRAFFB-2=無法……
+# Graff
+GPC01_STORY165_GRAFFB-3=呼吸……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Brok came back home and gave a pill to Graff. But Graff isn't happy because he almost died and Brok wasn't there
+# *****************************************************************
+# Graff
+PC01_DAY2ENDE1-1=……
+# Graff
+PC01_DAY2ENDE1-2=我這是怎麽了……？
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_NORMAL-1=他剛救了我一命……
+# Graff
+PC01_DAY2ENDE_NORMAL-2=我應該謝謝他才對……
+# Graff
+PC01_DAY2ENDE_NORMAL-3=不該……這樣……
+# Graff
+PC01_DAY2ENDE_NORMAL-4=為何我會如此生氣……？
+#----------------------------------------------------
+# Graff
+#If Graff was able to get a pill by himself （so he didn't collapse）
+PC01_DAY2ENDE_PILL-1=雖然驚險……但最終我還是自己度過了。
+# Graff
+PC01_DAY2ENDE_PILL-2=我態度該積極一點，不該自怨自艾和埋怨他。
+#----------------------------------------------------
+# Graff
+#If Graff killed Klay during the trial
+PC01_DAY2ENDE_KLAY-1=我……殺人了……
+# Graff
+PC01_DAY2ENDE_KLAY-2=不能讓他知道……
+# Graff
+PC01_DAY2ENDE_KLAY-3=要怪只能怪自己……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_NEXT-1=唉……
+# Graff
+PC01_DAY2ENDE_NEXT-2=真希望事情不是這個樣子……
+# Graff
+PC01_DAY2ENDE_NEXT-3=如果……沒有發生那場意外……
+# Graff
+PC01_DAY2ENDE_NEXT-4=那麽……我的親生父親就不會失蹤……
+# Graff
+PC01_DAY2ENDE_NEXT-5=他們兩個……
+# Graff
+PC01_DAY2ENDE_NEXT-6=都抛棄了我……
+# Graff
+PC01_DAY2ENDE_NEXT-7=我……
+# Graff
+PC01_DAY2ENDE_NEXT-8=……好恨他們。
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE-1=唉……
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE-2=我必須要知道……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE1-1=嗯……
+# Unknown
+PC01_DAY2ENDE_ALTERNATIVE1-2=“我恨所有人，包括我自己”
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE2-1=哇……有這麽多結果！
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE2-2=也許我不用這麽擔心。
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE3-1=有則私訊……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE1B-1=……
+# Graff
+PC01_DAY2ENDE1B-2=我以為我會更堅強一點。
+# Graff
+PC01_DAY2ENDE1B-3=……好吧，振作起來！
+# Graff
+PC01_DAY2ENDE1B-4=布羅格說得對，我還活著，這才是最重要的。
+# Graff
+PC01_DAY2ENDE1B-5=有則私訊……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE2-1=啊……這是今天測驗的成績。
+#----------------------------------------------------
+# Graff
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_PERFECT-1=太好了！竟然有{amount}分！
+# Graff
+PC01_DAY2ENDE2_PERFECT-2=終於等到好消息！
+#----------------------------------------------------
+# Graff
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_GOOD-1={amount}分，還算不錯！
+#----------------------------------------------------
+# Graff
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_BAD-1=爛透了……才{amount}分……
+# Graff
+PC01_DAY2ENDE2_BAD-2=真是福無雙至禍不單行……
+#----------------------------------------------------
+# Graff
+#Another message
+PC01_DAY2ENDE2_NEXT-1=呃？又來訊息了？
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE3-1=……
+# Graff
+PC01_DAY2ENDE3-2=最近發生了那麽多事，害得我都差點忘了……！
+# Graff
+#Referring to the deal with the Director - re-instating him or his science fair mark
+PC01_DAY2ENDE3-3=布羅格……他真的遵守諾言了！
+# Graff
+PC01_DAY2ENDE3-4=……
+# Graff
+PC01_DAY2ENDE3-5=突然有點餓……
+# Graff
+PC01_DAY2ENDE3-6=我……得想辦法跟他道歉。
+# Graff
+PC01_DAY2ENDE3-7=但是我沒勇氣開門……
+# Graff
+PC01_DAY2ENDE3-8=發簡訊到他的手機也沒用，他肯定不會看的……
+# Graff
+PC01_DAY2ENDE3-9=讓我好好想想。
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-1=……
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-2=獎勵……分數……？
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-3=布羅格……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE4-1=……有了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After Brok put some food under his door
+# *****************************************************************
+# Graff
+PC01_DAY2ENDH1-1=（咀嚼聲）
+# Graff
+PC01_DAY2ENDH1-2=這些剩飯剩菜味道還算不錯。
+# Graff
+PC01_DAY2ENDH1-3=……
+# Graff
+PC01_DAY2ENDH1-4=不想這麽早睡覺。
+# Graff
+PC01_DAY2ENDH1-5=搞不好奧特在線上說不定？
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDH1B-1=……
+# Graff
+PC01_DAY2ENDH1B-2=哎呀！
+# Graff
+PC01_DAY2ENDH1B-3=差點都忘了……他今晚應該還在測驗。
+# Graff
+PC01_DAY2ENDH1B-4=咦，這是？
+# Graff
+PC01_DAY2ENDH1B-5=有人在我昨天發的貼文中留言了！
+# Nmerchat
+PC01_DAY2ENDH1B-6=“我理解你，真正的父母是不會那樣做的”
+# Graff
+PC01_DAY2ENDH1B-7=也許吧……
+# Graff
+PC01_DAY2ENDH1B-8=……？
+# Nmerchat
+PC01_DAY2ENDH1B-9=“我們可以聊聊嗎”？
+# Graff
+#He's using a messenger type software
+PC01_DAY2ENDH1B-10=這是即時通訊？是同一個傢伙？奇怪……
+# Graff
+PC01_DAY2ENDH1B-11=先回覆看看吧。
+# Graffchat
+PC01_DAY2ENDH1B-12=“好喔？”
+# Nmerchat
+PC01_DAY2ENDH1B-13=“你父親欺騙你”
+# Graff
+PC01_DAY2ENDH1B-14=啥？！
+# Graffchat
+PC01_DAY2ENDH1B-15=“騙我什麽？”
+# Nmerchat
+PC01_DAY2ENDH1B-16=“他昨天和今天都在市區”
+# Graffchat
+PC01_DAY2ENDH1B-17=“市區……？怎麽可能？”
+# Nmerchat
+PC01_DAY2ENDH1B-18=“這是事實”
+# Nmerchat
+PC01_DAY2ENDH1B-19=“他幾分鐘前才剛離開”
+# Nmerchat
+PC01_DAY2ENDH1B-20=“他現在就在街上”
+# Graffchat
+PC01_DAY2ENDH1B-21=“你是誰？你怎麽知道？”
+# Nmerchat
+PC01_DAY2ENDH1B-22=“打開你手機的傳輸功能”
+# Graffchat
+PC01_DAY2ENDH1B-23=“甚麼？不要！”
+# Nmerchat
+PC01_DAY2ENDH1B-24=“相信我”
+# Nmerchat
+PC01_DAY2ENDH1B-25=“而且你有什麽值得我騙的”
+# Graff
+PC01_DAY2ENDH1B-26=……
+# Graff
+PC01_DAY2ENDH1B-27=好吧。
+# Graff
+PC01_DAY2ENDH1B-28=雖然很排斥這種情況……但這個傢伙似乎對一切瞭若指掌。
+# Graff
+PC01_DAY2ENDH1B-29=我暫且先跟他合作，釣出他掌握的所有資訊。
+# Graff
+PC01_DAY2ENDH1B-30=希望這個決定是對的……
+# Nmerchat
+PC01_DAY2ENDH1B-31=“我現在發給你追蹤軟體”
+# Graffchat
+PC01_DAY2ENDH1B-32=你在追蹤我老爸？！
+# Graffchat
+PC01_DAY2ENDH1B-33=“你是駭客嗎？”
+# Nmerchat
+PC01_DAY2ENDH1B-34=“出去跟蹤他吧”
+# Graff
+PC01_DAY2ENDH1B-35=……
+# Graff
+PC01_DAY2ENDH1B-36=可惡，他下線了。
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-1=……
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-2=該死。
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-3=哦對了，我記起來了，他今晚應該還在進行測驗。
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-4=咦，這是？
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-5=有人察覺到了我的搜索然後做了個評論。
+# Nmerchat
+PC01_DAY2ENDH1B_ALTERNATIVE-6=“不要擔心，你沒有任何問題。”
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-7=大概吧……
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-8=……？
+#----------------------------------------------------
+# Graff
+#Graff exited his bedroom
+PC01_DAY2ENDF4-1=不是吧！竟然被他說中了！
+# Graff
+PC01_DAY2ENDF4-2=這整件事都很詭異……
+# Graff
+PC01_DAY2ENDF4-3=……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Graff comes back right after Brok. He has seen him fighting rats in the alley and misinterpreted it （thinking he stole from the rats when it's the opposite）
+# *****************************************************************
+# Brok
+PC01_DAY2ENDJ1-1=咦……？
+# Brok
+PC01_DAY2ENDJ1-2=你怎麽會在這裏？！
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDJ1_NOPE-1=……
+# Graff
+PC01_DAY2ENDJ1_NOPE-2=別打擾我。
+# Brok
+PC01_DAY2ENDJ1_NOPE-3=唉……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDJ2-1=我也想問你呢。
+# Brok
+PC01_DAY2ENDJ2-2=……
+# Brok
+PC01_DAY2ENDJ2-3=你是在跟蹤我？
+# Graff
+PC01_DAY2ENDJ2-4=對。
+# Graff
+PC01_DAY2ENDJ2-5=有意見嗎？
+# Brok
+PC01_DAY2ENDJ2-6=那個……
+# Graff
+PC01_DAY2ENDJ2-7=聽著，你別以為你什麽都瞞得了我！
+# Graff
+PC01_DAY2ENDJ2-8=你最近都在幹嘛？
+# Brok
+PC01_DAY2ENDJ2-9=調查案子……
+# Graff
+PC01_DAY2ENDJ2-10=你去了哪？！
+# Graff
+PC01_DAY2ENDJ2-11=你昨天究竟去了哪？！
+# Graff
+PC01_DAY2ENDJ2-12=今天下午我差點沒命，而你人呢？！
+# Brok
+PC01_DAY2ENDJ2-13=呃……
+# Graff
+PC01_DAY2ENDJ2-14=我來說吧。你當時在市區。
+# Brok
+PC01_DAY2ENDJ2-15=哦……是的沒錯。
+# Brok
+PC01_DAY2ENDJ2-16=你怎麽知……？
+# Graff
+PC01_DAY2ENDJ2-17=這不是重點。
+# Graff
+PC01_DAY2ENDJ2-18=你到底想瞞我到什麽時候？
+# Brok
+PC01_DAY2ENDJ2-19=我……只是一時忘了。
+# Graff
+PC01_DAY2ENDJ2-20=忘了？
+# Graff
+PC01_DAY2ENDJ2-21=你到底在隱瞞什麽事情？
+# Brok
+PC01_DAY2ENDJ2-22=我……呃……
+# Brok
+PC01_DAY2ENDJ2-23=我暫時在和警方聯手查案。
+# Brok
+PC01_DAY2ENDJ2-24=應該說……已經結束了。
+# Graff
+PC01_DAY2ENDJ2-25=警方……？
+# Brok
+PC01_DAY2ENDJ2-26=說來話長……
+# Graff
+PC01_DAY2ENDJ2-27=看出來了。
+# Brok
+PC01_DAY2ENDJ2-28=我會跟你好好解釋的……
+# Brok
+PC01_DAY2ENDJ2-29=但不是現在，（打哈欠）現在我快累死了。
+# Graff
+PC01_DAY2ENDJ2-30=那你就快回答我！
+# Graff
+PC01_DAY2ENDJ2-31=你跟之前那些鼠人究竟有何來往？
+# Brok
+PC01_DAY2ENDJ2-32=那只是些街頭混混。
+# Brok
+PC01_DAY2ENDJ2-33=他們試圖搶劫我……所以我做了正當防衛。
+# Graff
+PC01_DAY2ENDJ2-34=真的？
+# Graff
+PC01_DAY2ENDJ2-35=我可看不出你是正當防衛，更像是你海扁了他們一頓！
+# Graff
+PC01_DAY2ENDJ2-36=你是從哪學來的格鬥技巧？
+#----------------------------------------------------
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-1=你忘了嗎……？
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-2=我不是天生就成為偵探的。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-3=在我認識你媽媽之前……我曾經是黑市擂台的拳擊手。
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-4=……拳擊手……
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-5=我想起來了……
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-6=感覺……好像一直都知道可是……
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-7=這種非法比賽不是已經被取締了嗎？
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-8=是的。
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-9=那麽……你每晚究竟都在忙什麽？
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-10=VR戰鬥。
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-11=你是……VR鬥士？！
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-12=嗯……
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-13=為什麽……
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-14=你一直以來都沒告訴過我？！
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-15=是我……不願意……
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-16=那次事故後一切都變了。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-17=通過非法暴力途徑賺錢……
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-18=一直是你媽媽很不苟同的事。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-19=我想要成為你學習的榜樣。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-20=所以我就開始了偵探事業，打算重新開始。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-21=可是我很快就發現這工作根本養活不了我們。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-22=所以……我只能重操舊業了。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-23=對不起……我沒能對你以身作則。
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-24=你是開玩笑嗎？！太酷了！
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-25=雖然我並不熱衷於格鬥運動……
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-26=不過下次我肯定會捧場！
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-27=那個……你沒有生氣嗎？
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-28=之前是這樣沒錯。
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-29=但我只是想知道真相，現在一切都說得通了！
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-30=我真笨，看你的體格，我早該猜到了。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-31=喂！想吐槽我胖就直說！
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-32=開個玩笑而已！
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-33=雖然你的肚子越來越大了，但你還是我認識最能打的人。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-34=那倒是，哪怕體格最健壯的鼠人都不是我的對手！
+# Graff
+#"To worry anymore that something happens to you"
+PC01_DAY2ENDJ2_TRUTH1-35=那就好，我就不用擔心……呃……
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-36=你在擔心我？
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-37=那個……
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-38=這麽長久以來……我一直都依賴著你。
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-39=但這一切將會從明天開始改變。
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-40=啊……等你成為市民後……
+# Brok
+PC01_DAY2ENDJ2_TRUTH1-41=我就無法一直在你身邊了，不過有什麽事可以隨時來找我。
+# Graff
+PC01_DAY2ENDJ2_TRUTH1-42=謝謝……
+#----------------------------------------------------
+# Brok
+PC01_DAY2ENDJ2_LIE1-1=經驗使然，畢竟……
+# Brok
+PC01_DAY2ENDJ2_LIE1-2=這不是第一次了。
+# Brok
+PC01_DAY2ENDJ2_LIE1-3=話說……你也該鍛鍊一下自己，以防萬一。
+# Graff
+PC01_DAY2ENDJ2_LIE1-4=早就開始訓練了，當初剛搬來貧民區時，你就說過要我變強。
+# Graff
+PC01_DAY2ENDJ2_LIE1-5=我當時就聽你的話開始練習防身術。
+# Brok
+PC01_DAY2ENDJ2_LIE1-6=非常好！
+# Brok
+PC01_DAY2ENDJ2_LIE1-7=看得出你的體格增強了許多，滿身都是肌肉了！
+# Graff
+PC01_DAY2ENDJ2_LIE1-8=真的嗎……？
+# Graff
+PC01_DAY2ENDJ2_LIE1-9=希望不會有用得上的一天……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDJ2_AFTER-1=好吧……我信你。
+# Graff
+PC01_DAY2ENDJ2_AFTER-2=但以後不準再對我隱瞞任何事，好嗎？
+# Graff
+PC01_DAY2ENDJ2_AFTER-3=你不會還有其他秘密吧？
+# Brok
+PC01_DAY2ENDJ2_AFTER-4=我發誓，以後絕對不會了。
+# Brok
+PC01_DAY2ENDJ2_AFTER-5=人生苦短……我可不想天天都在吵架中度過。
+# Graff
+PC01_DAY2ENDJ2_AFTER-6=深表贊同。
+# Brok
+PC01_DAY2ENDJ2_AFTER-7=那麽……過幾天就是你生日了。
+# Graff
+PC01_DAY2ENDJ2_AFTER-8=你還記得呀……
+# Brok
+PC01_DAY2ENDJ2_AFTER-9=不如我為你準備個驚喜吧？
+# Graff
+PC01_DAY2ENDJ2_AFTER-10=太好了！我好期待。
+# Graff
+PC01_DAY2ENDJ2_AFTER-11=不過……就怕你到時候食言……
+# Graff
+PC01_DAY2ENDJ2_AFTER-12=也不要緊，我能理解。
+# Brok
+PC01_DAY2ENDJ2_AFTER-13=……
+# Brok
+PC01_DAY2ENDJ2_AFTER-14=說真的，擇日不如撞日。
+# Brok
+PC01_DAY2ENDJ2_AFTER-15=現在就送給你吧！
+#----------------------------------------------------
+# Graff
+#Giving a bad present
+GPC01_DAY2ENDJ2_GIVEBAD-1=呃……
+# Graff
+GPC01_DAY2ENDJ2_GIVEBAD-2=謝謝……
+# Brok
+GPC01_DAY2ENDJ2_GIVEBAD-3=……看來你不喜歡。
+# Graff
+GPC01_DAY2ENDJ2_GIVEBAD-4=不不不！只是……這……
+# Graff
+GPC01_DAY2ENDJ2_GIVEBAD-5=有點出乎我的意料。
+# Brok
+GPC01_DAY2ENDJ2_GIVEBAD-6=對不起，我又搞砸了。
+# Graff
+GPC01_DAY2ENDJ2_GIVEBAD-7=沒事！別放在心上。
+# Graff
+GPC01_DAY2ENDJ2_GIVEBAD-8=禮物我收下了。
+#----------------------------------------------------
+# Graff
+GPC01_DAY2ENDJ2_GIVEPRED-1=這……！
+# Brok
+GPC01_DAY2ENDJ2_GIVEPRED-2=是水熊寶寶。
+# Graff
+GPC01_DAY2ENDJ2_GIVEPRED-3=我以前也有一個……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPRED-4=原來你還記得！
+# Brok
+GPC01_DAY2ENDJ2_GIVEPRED-5=當然。
+# Brok
+GPC01_DAY2ENDJ2_GIVEPRED-6=那時候很多的事我都忘了……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPRED-7=直到最近看見它……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPRED-8=……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPRED-9=謝謝你……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPRED-10=不客氣，這還是免費的呢！
+# Graff
+GPC01_DAY2ENDJ2_GIVEPRED-11=沒關係……
+#----------------------------------------------------
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-1=這是……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-2=媽媽的吊墜……？
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-3=對。
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-4=我覺得該傳承給你。
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-5=這樣……她就能永遠陪伴著你了……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-6=我……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-7=我不能收。
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-8=為什麼……？
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-9=只是……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-10=我太難接受了……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-11=唉……對不起……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-12=那我先保管著。
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-13=但直到有一天……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-14=當你做好心理準備時……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPENDANT-15=我會把它交給你的。
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-16=好吧……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPENDANT-17=謝謝你的心意。
+#----------------------------------------------------
+# Graff
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-1=這是藥丸……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-2=送給你，免得你缺藥。
+# Graff
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-3=好吧……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-4=……
+# Brok
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-5=這……有點出乎你意料吧……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-6=是的，不過……
+# Graff
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-7=沒關係！至少很實用。
+# Graff
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-8=謝謝你！
+#----------------------------------------------------
+# Graff
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-1=這是家裏的鑰匙……？
+# Graff
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-2=你應該知道我已經有一支了吧？
+# Brok
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-3=哦……我只是想表示……
+# Brok
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-4=這是寓意，我的家就是你的家。哪怕將來你成為了市民也一樣。
+# Graff
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-5=……
+# Graff
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-6=我……
+# Graff
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-7=謝謝……你的心意我心領了……
+# Graff
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-8=但這把鑰匙你還是留著用吧。
+#----------------------------------------------------
+# Brok
+GPC01_DAY2ENDJ2_GIVENEXT-1=好吧……
+#----------------------------------------------------
+# Graff
+GPC01_DAY2ENDJ2_EARBUDS-1=話說！
+# Graff
+GPC01_DAY2ENDJ2_EARBUDS-2=我也有東西要送你。
+# Brok
+GPC01_DAY2ENDJ2_EARBUDS-3=……？
+# Graff
+GPC01_DAY2ENDJ2_EARBUDS-4=這是耳塞，是雪伊送你的。
+# Graff
+GPC01_DAY2ENDJ2_EARBUDS-5=這樣你晚上就可以睡個好覺了……
+# Brok
+GPC01_DAY2ENDJ2_EARBUDS-6=哦！
+# Brok
+GPC01_DAY2ENDJ2_EARBUDS-7=謝謝你，格拉夫。
+#----------------------------------------------------
+# Brok
+GPC01_DAY2ENDJ2_GIVENEXT2-1=無論發生什麽事，我都會為你慶生。
+# Graff
+GPC01_DAY2ENDJ2_GIVENEXT2-2=好……
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDJ3-1=之前的事……
+# Brok
+PC01_DAY2ENDJ3-2=我理解，你什麽都不必說。
+# Graff
+PC01_DAY2ENDJ3-3=……
+# Graff
+PC01_DAY2ENDJ3-4=晚安。
+# Brok
+PC01_DAY2ENDJ3-5=晚安，孩子。
+#----------------------------------------------------
+# Graff
+GPC01_HIT_BEDROOMDOOR1-1=噢不！我開始變得像我爸了！
+#----------------------------------------------------

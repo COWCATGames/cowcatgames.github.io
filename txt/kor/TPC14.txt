@@ -1,0 +1,580 @@
+#-------------------------------
+#= HACKER BACK STREET
+#-------------------------------
+
+#----- Interactions --------
+PC_STATUE=조각상
+PC_WINGS=날개
+PC_PLANK=널빤지
+PC_BRACKET=받침대
+PC_STRING=끈
+PC_TO_HACKER=해커네 뒷골목으로
+PC_TRASHCONTAINER=쓰레기통
+
+#----- Choices / Items --------
+
+GOT_WINGS=플라스틱 날개 모양이다!
+GOT_STRING=끈이다!
+
+CHOICE_GODEE=슬럼을 구하자
+CHOICE_KEEPLOOKING=그래프를 구하자
+
+#----- Topics --------
+
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Brok comes to this street for the first time
+# *****************************************************************
+# Brok                                 
+PC14_INTRO1-1=으윽... 냄새가 지독해.
+# Brok                                 
+PC14_INTRO1-2=해커가 이 근처에 있겠지. 더 구역질 나기 전에 빨리 찾아야겠어.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok comes back to this street just after losing the fight and wonders what happened (time reverted itself)
+# *****************************************************************
+# Brok                                 
+PC14_INTRO2-1=...
+# Brok                                 
+PC14_INTRO2-2=이 냄새는...
+# Brok                                 
+PC14_INTRO2-3=어쩐지...
+# Brok                                 
+PC14_INTRO2-4=익숙한 느낌이...
+# Brok                                 
+PC14_INTRO2-5=마치... 내가...
+# Brok                                 
+PC14_INTRO2-6=싸움에서 져서...
+# Brok                                 
+PC14_INTRO2-7=서서히 죽어가던...?
+# Brok                                 
+PC14_INTRO2-8=흐음...
+# Brok                                 
+PC14_INTRO2-9=빨리 여기서 벗어나자. 뭔가 불길한 곳이야.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rats ambush Brok
+# *****************************************************************
+# Rat                                 
+PC14_BADGUYS1-1=어딜 가려고? 이 악어 자식아?
+# Brok                                 
+PC14_BADGUYS1-2=꺼져. 문제 일으키기 싫으니까.
+# Rat                                 
+PC14_BADGUYS1-3=하하...
+# Rat                                 
+PC14_BADGUYS1-4=그럼 처음부터 우리한테 문제를 일으키지 말았어야지. 
+# Brok                                 
+PC14_BADGUYS1-5=뭐?
+# Rat                                 
+PC14_BADGUYS1-6=우릴 바보로 아냐.
+# Rat                                 
+PC14_BADGUYS1-7=대장에게 예의 없게 굴고. 대장을 공격하고...
+# Brok                                 
+PC14_BADGUYS1-8=...망신까지 줬었지. 그래. 기억난다.
+# Brok                                 
+PC14_BADGUYS1-9=녀석이 자초한 거다.
+# Dart                                 
+PC14_BADGUYS1-10=대장을 공겨카고 그냥 넘어갈 수는 없다!
+# Brok                                 
+PC14_BADGUYS1-11=비켜. 그렇지 않으면...
+# Dart                                 
+PC14_BADGUYS1-12=그러치 아느면?
+# Dart                                 
+PC14_BADGUYS1-13=넌 여기서 버서날 수 없어. 대가를 치르기 전 까지는.
+# Brok                                 
+PC14_BADGUYS1-14=아? 그래? 누가 대가를 치를지 두고 보자고!
+# Brok                                 
+PC14_BADGUYS1-15=덤벼!
+# Dart                                 
+PC14_BADGUYS1-16=쳐부서주마!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok loses the fight
+# *****************************************************************
+# Rat                                 
+PC14_BADGUYS_LOSE-1=하하! 잡았다!
+# Rat                                 
+PC14_BADGUYS_LOSE-2=이제 누가 맹신당할 차례지? 어?
+# Dart                                 
+PC14_BADGUYS_LOSE-3=맹신이 아니고 망신이야! 멍청아!
+# Rat                                 
+PC14_BADGUYS_LOSE-4=알았어요. 하여간 벌써 싸늘하게 식어가고 있네요.
+# Rat                                 
+PC14_BADGUYS_LOSE-5=그럼 이제 시체를 두목에게 가져가서! 보상을 받읍시다!
+# Dart                                 
+PC14_BADGUYS_LOSE-6=좋아!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - We win the fight - but actually more rats come and Brok loses anyway
+# *****************************************************************
+# Brok                                 
+PC14_BADGUYSWON1-1=...
+#----------------------------------------------------
+# Brok                                 
+PC14_BADGUYSWON2-1=젠장...
+# Rat                                 
+PC14_BADGUYSWON2-2=누가 이제 궁지에 몰린 쥐 새끼지!
+# Rat                                 
+PC14_BADGUYSWON2-3=넌 여기서 살아나갈 수 없어!
+# Brok                                 
+PC14_BADGUYSWON2-4=그게 우리가...
+#----------------------------------------------------
+# Brok                                 
+PC14_BADGUYSWON3-1=으으윽! 말도 안 돼!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC14_STATUE1-1=이거 꼬리 없는 자의 조각상인가?
+# Brok                                 
+PC14_STATUE1-2=예전이라면 상태가 더 좋았을 수도 있겠지만...
+#----------------------------------------------------
+# Brok                                 
+PC14_STATUE2-1=날개가 원래 조각상의 일부가 아닌 것 같아.
+# Brok                                 
+PC14_STATUE2-2=누가 원래 있던 날개를 싸구려 플라스틱으로 바꿔놓은 것 같은데.
+#----------------------------------------------------
+# Brok                                 
+PC14_STATUE_DESTROYED1-1=이 조각상을 만든 사람에게 미안하게 됐군...
+# Brok                                 
+PC14_STATUE_DESTROYED1-2=그냥 하자. 솔직히 시간이 흐르면 결국 이렇게 됐을 거라고.
+#----------------------------------------------------
+# Brok                                 
+#Trying to pick up the wings
+PC14_WINGS1-1=...흐읍!
+# Brok                                 
+PC14_WINGS1-2=분명 싸구려 플라스틱일 텐데... 날개가 왜 이리 안 떨어지지.
+#----------------------------------------------------
+# Brok                                 
+PC14_WINGS_PICK1-1=이 날개를 가져가자.
+# Brok                                 
+PC14_WINGS_PICK1-2=혹시 도움이 될지 누가 알겠어.
+#----------------------------------------------------
+# Brok                                 
+PC14_PLANK1-1=접이식 벤치 처럼 보이네.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TOOFAR-1=걸려 있는 옷들이 찢어졌거나 더럽혀져 있어... 꽤 오래 걸려있었나 보군.
+# Brok                                 
+PC14_STRING_TOOFAR-2=누가 가져가도 뭐라 할 것 같진 않지만... 여기선 너무 멀리 있어.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE-1=그래... 저 끈이 쓸모 있을지도.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE2-1=반갈죽 됐군.
+#----------------------------------------------------
+# Brok                                 
+PC14_STRING_TAKE3-1=좋아. 이 정도면 충분할 거야.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Before fight (coming back from VR fight day 2)
+# *****************************************************************
+# Brok                                 
+PC14_STORY180_FIRST-1=셰이가 좀 걱정되는데. 요즘 따라 주변 사람들 모두가 이상해져 가고 있어...
+#----------------------------------------------------
+# Dart                                 
+PC14_BADGUYS2-1=어디 가려고? 악어 자식아?
+# Brok                                 
+PC14_BADGUYS2-2=이상해. 왜 이 상황이 "데자뷰" 같지...?
+# Dart                                 
+PC14_BADGUYS2-3=지금 농담할 상항 아니거든.
+# Brok                                 
+PC14_BADGUYS2-4=꺼져. 문제 일으키기 싫으니까.
+# Dart                                 
+PC14_BADGUYS2-5=그래. 가진 거 다 내노는다면 말이지.
+# Brok                                 
+PC14_BADGUYS2-6=내가 죽기 전에는 못 가져갈걸?
+# Rat                                 
+PC14_BADGUYS2-7=어... 다트님? 진짜 얘가 맞는 거조?
+# Rat                                 
+PC14_BADGUYS2-8=알다시피... 우리 이미 얘한테 졌었자나요.
+# Dart                                 
+PC14_BADGUYS2-9=겁쟁이 녀석! 우리가 숫짜가 더 많아!
+# Dart                                 
+PC14_BADGUYS2-10=다구리를 까면 저 녀석한테 이길 수 있어!
+# Dart                                 
+PC14_BADGUYS2-11=가자! 얘들아! 저 악어 녀석에게 충격과 공포를 선사해주자!
+# Dart                                 
+PC14_BADGUYS2-12=니가 원하지 않아도 이건 특별 서비수라고!
+# Brok                                 
+PC14_BADGUYS2-13=덤벼!
+#----------------------------------------------------
+# Rat                                 
+PC14_BADGUYS2B-1=다트님! 포기하는 게 낳지 않을까요!
+# Dart                                 
+PC14_BADGUYS2B-2=안 돼! 대장한테 무라 말할 건데!
+# Dart                                 
+PC14_BADGUYS2B-3=게다가... 네가 얻어맞는 동안 내가 이걸 훔쳐꺼든!
+# Rat                                 
+PC14_BADGUYS2B-4=전화기잖아요! 머찝니다!
+# Brok                                 
+PC14_BADGUYS2B-5=뭣?!
+# Rat                                 
+PC14_BADGUYS2B-6=이제 나머지도 내노으실까, 비늘 자식!
+# Brok                                 
+PC14_BADGUYS2B-7=나머지도 원한다고? 그래! 다른 것도 더 주지!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Coming to this room with Dr. Gherkin
+# *****************************************************************
+# Brok                                 
+PC14_GHERKIN_FIRST-1=잠깐.
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_FIRST2-1=저... 저 남자가 문제를 일으킬까요?
+# Brok                                 
+PC14_GHERKIN_FIRST2-2=물론 그렇겠죠.
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_FIRST3-1=그럼 이제 어떻게 해야 하죠...?
+# Brok                                 
+PC14_GHERKIN_FIRST3-2=흐음...
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_LEAVE1-1=저를 두고 가지 말아 주세요!
+#----------------------------------------------------
+# Brok                                 
+PC14_GHERKIN_BACK-1=갔군요.
+# Gherkin                                 
+PC14_GHERKIN_BACK-2=좋아요! 문제는 늘 피하는 게 최선이죠!
+# Brok                                 
+PC14_GHERKIN_BACK-3=꼭 그런 것 만은 아니겠지만요.
+#----------------------------------------------------
+# Rat                                 
+#Rat talks on the phone
+PC14_GHERKIN_RATPHONE-1=네. 대장.
+# Rat                                 
+PC14_GHERKIN_RATPHONE-2=네. 네.
+# Rat                                 
+PC14_GHERKIN_RATPHONE-3=꼬맹이 녀석들은 어떻게 돼가고 있어요?
+# Rat                                 
+PC14_GHERKIN_RATPHONE-4=하-하. 그 버릇없는 녀석들이 몽청하긴 하죠!
+# Rat                                 
+PC14_GHERKIN_RATPHONE-5=알겠습니다. 대기할게요.
+# Rat                                 
+PC14_GHERKIN_RATPHONE-6=네.
+#----------------------------------------------------
+# Rat                                 
+#He notices Brok
+PC14_GHERKIN_RATNOTICES1-1=야! 넌 누구지...?
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-2=어젯밤 네 녀석 엉덩이를 걷어찼던 사람이다!
+# Rat                                 
+PC14_GHERKIN_RATNOTICES1-3=설마!?
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-4=어...?
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-5=겁쟁이 녀석...
+# Gherkin                                 
+PC14_GHERKIN_RATNOTICES1-6=브록 씨!
+# Gherkin                                 
+PC14_GHERKIN_RATNOTICES1-7=드론입니다!
+# Brok                                 
+PC14_GHERKIN_RATNOTICES1-8=아. 그렇게 되는 건가.
+#----------------------------------------------------
+# Rat                                 
+#He falls
+PC14_GHERKIN_RATFALLS-1=으아아아악!
+#----------------------------------------------------
+# Gherkin                                 
+PC14_GHERKIN_RATFALLS2-1=방금 사람을 죽인 건 아니죠!?
+# Brok                                 
+PC14_GHERKIN_RATFALLS2-2=아니! 그렇게 높은 곳은 아니잖아요!
+# Brok                                 
+PC14_GHERKIN_RATFALLS2-3=아마도...
+#----------------------------------------------------
+# Brok                                 
+PC14_GHERKIN_DRONEEND-1=드론이 더 나오진 않겠지.
+# Gherkin                                 
+PC14_GHERKIN_DRONEEND-2=화... 확실히 하셔야죠! 만약...
+# Brok                                 
+PC14_GHERKIN_DRONEEND-3=일단 따라 오시죠, 거킨 박사! 할 일이 있잖아요!
+# Gherkin                                 
+PC14_GHERKIN_DRONEEND-4=아... 네.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - At the end of the day, Brok looks for Graff with R.J.
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF1-1=이 거리에서 스퀼러 녀석들이랑 대판 싸운 적이 있었지.
+# RJ                                 
+PC14_LOOKGRAFF1-2=저런. 맞아도 싼 녀석들이긴 하지.
+# Brok                                 
+PC14_LOOKGRAFF1-3=만약 그래프의 털 한 올이라도 건드렸다면...
+# Brok                                 
+PC14_LOOKGRAFF1-4=...
+# Brok                                 
+PC14_LOOKGRAFF1-5=잠깐. 전화가 왔어.
+#----------------------------------------------------
+# Brok                                 
+#Dee calls
+PC14_LOOKGRAFF_DEECALL_NOSIN-1=(클릭) 여보세요?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-2=안녕.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-3=씬을 찾지 못했어.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-4=젠장...
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-5=그리고 경찰 서장이 연락했어.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-6=함께 만나자고 하더라고.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NOSIN-7=알겠어. 하지만...
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL-1=(클릭) 여보세요?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL-2=카우보이 씨! 지금 어디야!?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL-3=벌써 시간이 다 됐다고!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-1=그럴 수는 없어. 내 아들이 사라졌다고.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-2=뭐라고...?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-3=지금 도와주러 갈게!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-4=안 돼!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-5=그것보다... 웨스에게 당장 여기 오라고 설득해줘.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-6=솔직히 말하자면... 그 남자를 혼자서 만나고 싶지 않아.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALLAFTER-7=설마 노인네를 무서워하는 건 아니지?
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-8=당연히 아니지! 난 그저...
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-9=그냥... 이건 진짜 중요한 일이야. 시간이 얼마 없어.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-10=슬럼의 운명이 이 만남에 달렸을 수도 있다고.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALLAFTER-11=확실하게 정해!
+#----------------------------------------------------
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-1=가. 내가 그래프를 찾을게.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-2=괜찮겠어...?
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-3=날 믿어. 스퀼러 녀석들. 내가 혼쭐을 내주지.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-4=...
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-5=알았어. 너만 믿을게.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-6=그래도... 가능한 빨리 돌아오도록 하지.
+# RJ                                 
+PC14_LOOKGRAFF1_RJ-7=그래.
+# Brok                                 
+PC14_LOOKGRAFF1_RJ-8=꼭 내 아들을 찾아줘...!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-1=좋아! 지금 갈게!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-2=[...]
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_YES1-3=그래프... 무사하렴.
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-1=미안하지만.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-2=요즘 들어 내 아들이 필요로 할 때마다 곁에 있지 못했어.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-3=이번엔... 슬럼이 기다릴 때야.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-4=...
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-5=이해해.
+# Dee                                 
+PC14_LOOKGRAFF_DEECALL_NO1-6=최선을 다해볼게.
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-7=몸 조심하도록 해.
+# Unknown                                 
+PC14_LOOKGRAFF_DEECALL_NO1-8=[...]
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-9=...
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO1-10=있잖아...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - If R.J. isn't there and Brok decides to keep looking for Graff, he goes down the manhole
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-1=회색 털 뭉치?
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-2=그래프...!
+# Brok                                 
+PC14_LOOKGRAFF_DEECALL_NO2-3=저 아래로 내려가야 해!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-1=이런... 진짜 어둡군.
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-2=...?
+# Brok                                 
+PC14_LOOKGRAFF_DOWN1-3=거기... 누구야!?
+#----------------------------------------------------
+# Ott                                 
+#Brok meets Ott in the sewers
+PC14_LOOKGRAFF_ONLYOTT1-1=브록 아저씨!?
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-2=오트...!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-3=저희, 스퀼러들한테 납치 당해서 갇혀 있었어요!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-4=지금은 절 쫓고 있고요! 그래프는 아래에 있어요!
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-5=도망치렴! 내가 해결하마!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-6=하지만...
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-7=날 믿으렴!
+# Brok                                 
+PC14_LOOKGRAFF_ONLYOTT1-8=이참에 스퀼러 녀석들을 제대로 처리해야겠다!
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-9=네...
+# Ott                                 
+PC14_LOOKGRAFF_ONLYOTT1-10=둘 다 꼭 무사히 올라와야 해요!
+#----------------------------------------------------
+# Graff                                 
+#Another version where Graff is also there
+PC14_LOOKGRAFF_WITHGRAFF1-1=브록 아저씨!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-2=얘들아! 진짜 보고 싶었단다!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-3=어쩌다가 여기까지 내려온 거니?
+# Ott                                 
+PC14_LOOKGRAFF_WITHGRAFF1-4=시간이 없어요! 스퀼러 녀석들이 우릴 쫓고 있다고요!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-5=뭐라고?!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-6=이번에 제대로 대가를 치르게...
+# Graff                                 
+PC14_LOOKGRAFF_WITHGRAFF1-7=안 돼요! 수가 너무 많아요!
+# Ott                                 
+PC14_LOOKGRAFF_WITHGRAFF1-8=도망치는 게 나을 것 같아요!
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-9=흐으음...
+# Brok                                 
+PC14_LOOKGRAFF_WITHGRAFF1-10=알았다. 따라 오렴!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - They all got out of the sewers, escaping rats
+# *****************************************************************
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE1-1=자, 여기라면 당분간 안전할 거다.
+#----------------------------------------------------
+# Ott                                 
+#Ott refers to both Brok and Graff
+PC14_LOOKGRAFF_SURFACE_OTT-1=아저씨라면 해낼 줄 알았어요!
+#----------------------------------------------------
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-1=자. 그럼 설명해 줄 수 있겠어?
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-2=왜 쫓기고 있던 거니?
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-3=그게...
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-4=해커랑 거래를 했었어요.
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-5=그리고... 배신 당했죠.
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-6=그 악마 자식...
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-7=대체 왜 그랬던 거니...?
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-8=나중에 말해줄 게요! 지금은 훨씬 더 중요한 일이 있어요!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-9=약 고갈 사태. 그거 스퀼러들이 저지른 게 아니었어요.
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-10=전부 트라이봇 때문이랬어요!
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-11=그렇지만 녀석들의 말을 믿어야 할 이유가 있니?
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-12=...
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-13=젠장! 그럼 디가 위험해!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-14=디가 누군데요?
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-15=당장 가야겠다!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-16=잠깐만 요!
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-17=우리도 같이 갈 게요!
+# Ott                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-18=맞아요! 같이 가요!
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-19=...
+# Brok                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-20=알겠다... 하지만... 조심해야 한다!
+# Brok                                 
+#Tribots are attracted to Brok and want to kill him
+PC14_LOOKGRAFF_SURFACE_NEXT-21=나한테 뭔가... 로봇들이 이끌려오는 문제가 있어서 말이지.
+# Graff                                 
+PC14_LOOKGRAFF_SURFACE_NEXT-22=응...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Click on the thing covering manhole
+# *****************************************************************
+# Brok                                 
+PC14_TRASHCONTAINER1-1=흐음...
+# Brok                                 
+PC14_TRASHCONTAINER1-2=이게 원래 여기 있었나?
+#----------------------------------------------------
+# Brok                                 
+PC14_DOOR_LATER1-1="그랜드 오픈 예정". 흠...?
+#----------------------------------------------------
+# Brok                                 
+PC14_NOTFINISHED1-1=이게 무슨...
+# Unknown                                 
+PC14_NOTFINISHED1-2="현재 영업 중입니다! 하지만 메인 퀘스트를 먼저 완료해 주세요!"
+# Brok                                 
+PC14_NOTFINISHED1-3=이상해...
+# Brok                                 
+PC14_NOTFINISHED1-4=좀 더 확인해볼까?
+#----------------------------------------------------
+# Brok                                 
+PC14_ENTER_BAR1-1=닫혀 있잖아...? 하지만 "영업 중" 이라면서!
+#----------------------------------------------------
+# Unknown                                 
+PC14_ENTER_BAR2-1=(똑똑)
+# Brok                                 
+PC14_ENTER_BAR2-2=...
+# Brok                                 
+PC14_ENTER_BAR2-3=...
+# Unknown                                 
+PC14_ENTER_BAR2-4=(똑똑)
+# Brok                                 
+PC14_ENTER_BAR2-5=아무도 안 계십니까?
+# Unknown                                 
+PC14_ENTER_BAR2-6=...
+# Unknown                                 
+PC14_ENTER_BAR2-7=(발소리)
+# Hedgehog                                 
+PC14_ENTER_BAR2-8=암호는?
+# Brok                                 
+PC14_ENTER_BAR2-9=어음...
+# Brok                                 
+PC14_ENTER_BAR2-10="들여보내 줘?"
+# Hedgehog                                 
+PC14_ENTER_BAR2-11=흠! 좋아!
+# Unknown                                 
+PC14_ENTER_BAR2-12=(문 잠금 해제)
+# Brok                                 
+PC14_ENTER_BAR2-13=...대체 뭐야?
+#----------------------------------------------------
+# Brok
+PC14_00_PREBAR2-1=...
+# Brok
+PC14_00_PREBAR2-2=(헉, 헉)
+# Brok
+PC14_00_PREBAR2-3=아으으... 계단이 왜 이렇게 길어...
+# Brok
+PC14_00_PREBAR2-4=대체 어디까지 깊게 들어가야 하는 거야?
+
+#----------------------------------------------------
+

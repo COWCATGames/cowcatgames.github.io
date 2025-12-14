@@ -1,0 +1,818 @@
+﻿#-----------------------------------
+#=DAY 2 NIGHTMARE
+#-----------------------------------
+
+#----------------------
+#= Enter
+#----------------------
+ID=PC11D_ENTER1
+T=...
+W=BROK
+A=STUPID
+
+T=This place is dark.
+W=BROK
+A=THINK
+
+T=Let's move on.
+W=BROK
+A=MAYBE
+#TODO Grincement parquet quand on se déplace...
+
+
+#----------------------
+#= Windows 1
+#----------------------
+ID=PC11D_WINDOWA1
+T=A window? A porthole?
+W=BROK
+A=WONDER
+
+T=In any case, it's shut.
+W=BROK
+A=THINK
+
+
+#----------------------
+ID=PC11D_WINDOWA2
+T=Let's see...
+W=BROK
+A=THINK
+TEN=PC11D_WINDOWA_CLOSEUP
+
+#----------------------
+ID=PC11D_WINDOWA_CLOSEUP1
+T=Well...
+W=BROK 
+A=THINK
+
+T=I thought there was light coming out... but I can't see much of anything.
+W=BROK 
+A=MAYBE
+
+T=Hey, wait. I can hear...
+W=BROK
+A=WONDER
+
+T=(Whispering)
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=...didn't deserve...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=...accident...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=Is someone there?
+W=BROK
+
+T=...poor boy. What's he gonna do now?...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=...can't...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=...live with this Slumer?...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=...a violent stranger. He'd be...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=...mother's choice...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=...the law is the law...
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+
+T=Dad...
+BNAMESP=UNKNOWN
+BVOICESP=GRAFF
+
+T=Uh?...
+W=BROK
+A=THINK
+
+T=...
+W=BROK
+
+T=I thought...
+W=BROK
+
+T=...
+W=BROK
+
+T=The voices... They've stopped.
+W=BROK
+A=MAYBE
+TEN=PC11D_WINDOWA_REMOVECLOSEUP
+
+#----------------------
+ID=PC11D_WINDOWA_CLOSEUP2
+T=...
+W=BROK
+A=THINK
+
+T=Nothing here.
+W=BROK
+A=MAYBE
+TEN=PC11D_WINDOWA_REMOVECLOSEUP
+
+#----------------------
+#= Window 2
+#----------------------
+ID=PC11D_WINDOWB1
+T=...
+W=BROK
+A=THINK
+
+T=I have... an awkward feeling...
+W=BROK
+A=WONDER
+
+T=Maybe I shouldn't look...
+W=BROK
+A=MAYBE
+TEN=PC11D_WINDOWB_CHOICE
+
+#----------------------
+ID=PC11D_WINDOWB2
+T=...!
+W=BROK
+A=CONFUSED
+TEN=PC11D_WINDOWB_REMOVECLOSEUP
+
+T=Wh... what the heck is this?!
+W=BROK
+A=SURPRISED
+
+T=...
+W=BROK
+A=THINK
+TEN=PC11D_WINDOWB_CLOSEUP
+
+#----------------------
+ID=PC11D_WINDOWB3
+T=...
+W=BROK
+A=THINK
+
+T=Wait. There's nothing here.
+W=BROK
+A=WONDER
+
+T=I must be imagining things.
+W=BROK
+TEN=PC11D_WINDOWB_REMOVECLOSEUP
+
+#----------------------
+ID=PC11D_WINDOWB_CLOSEUP2
+T=...
+W=BROK
+A=THINK
+
+T=Nothing here.
+W=BROK
+A=THINK
+TEN=PC11D_WINDOWB_REMOVECLOSEUP
+
+#----------------------
+#= Window 3
+#----------------------
+ID=PC11D_WINDOWC1
+T=...
+W=BROK
+A=THINK
+
+T=This is... unlike the others. Why is that window positioned so low?
+W=BROK
+A=WONDER
+
+T=I... I need to take a look.
+W=BROK
+A=MAYBE
+TEN=PC11D_WINDOWC_CLOSEUP
+
+
+#----------------------
+ID=PC11D_WINDOWC2
+T=...!
+W=BROK
+A=SURPRISED
+
+T=(Sobs)
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Mom... Dad...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Graff?!
+W=BROK
+
+T=Don't cry! I'll get you outta here!
+W=BROK
+A=HEARTBROKEN
+
+T=Dad... Where are you?
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=I'm here, Graff!
+W=BROK
+
+T=(Sobs)
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=What are you doing in this cell?
+W=BROK
+
+T=(Sobs) Dad... help...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Don't worry! I'll help!
+W=BROK
+A=READY
+
+T=Is there any way to open from your side?
+W=BROK
+
+T=(Sobs)
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Hey! Can't you hear me?
+W=BROK
+A=THINK
+
+T=!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Who... Who's there?
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=It's me!
+W=BROK
+A=READY
+
+T=Who...?
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=It's Brok! I'm... I'm here for you!
+W=BROK
+
+T=...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=No.
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=What?
+W=BROK
+A=WONDER
+
+T=No! You're not!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Get away from me!!!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=But... Graff!
+W=BROK
+A=SURPRISED
+
+T=HELP!!! SOMEBODY HELP!!!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Shhh! Stop screaming! I'm not going to hurt ya!
+W=BROK
+A=HEARTBROKEN
+SOUND=loudfootsteps
+
+T=...?
+W=BROK
+A=THINK
+
+T=Oh gosh. I hear footsteps...
+W=BROK
+A=WORRIED
+
+T=What should I do now?!...
+W=BROK
+A=TIRED
+TEN=PC11D_WINDOWC_REMOVECLOSEUP
+
+#----------------------
+ID=PC11D_WINDOWC3
+T=...?
+W=BROK
+A=THINK
+
+T=Graff? Where are you?
+W=BROK
+
+T=I can't see you!
+W=BROK
+
+T=...
+W=BROK
+A=WONDER
+
+T=He must be hiding.
+W=BROK
+
+T=Gotta get him out!
+W=BROK
+A=READY
+TEN=PC11D_WINDOWC_REMOVECLOSEUP
+
+#----------------------
+#= Mines along the way
+#----------------------
+ID=PC11D_MINES_SEE1
+T=Mines...?
+W=BROK
+A=WONDER
+
+T=Oh boy... I hate those. Better watch my step.
+W=BROK
+A=TIRED
+TEN=PC11D_MINES_SEE_BACK
+
+
+#----------------------
+#= The cage
+#----------------------
+ID=PC11D_CAGE1
+T=Hmm... Looks suspicious.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC11D_CAGE_STUCK
+T=Oh, great... That was a trap!
+W=BROK
+A=STUPID
+TEN=PC11D_CAGE_STUCK_END
+
+#----------------------
+ID=PC11D_CAGE_STUCK_ENEMIES
+T=...
+W=BROK
+A=THINK
+TEN=PC11D_CAGE_BACK
+
+T=Wait. What happened to the enemies?...
+W=BROK
+A=WONDER
+TEN=PC11D_CAGE_STUCK_END
+
+#----------------------
+ID=PC11D_CAGE_NOTHING
+T=...
+W=BROK
+A=SURPRISED
+
+T=Good thing I wasn't underneath...
+W=BROK
+A=MAYBE
+TEN=PC11D_CAGE_BACK
+
+#----------------------
+ID=PC11D_CAGE_GOTEM
+T=Got'em!
+W=BROK
+A=READY
+TEN=PC11D_CAGE_BACK
+
+T=...
+W=BROK
+A=THINK
+
+T=Uh? Where did the enemies go?
+W=BROK
+
+T=Is this a magic trick?
+W=BROK
+A=WONDER
+TEN=PC11D_ENEMIES_ENDFIGHT
+
+#---------------------------------
+#= Graff comes when cage stuck
+#---------------------------------
+ID=PC11D_CAGE_STUCK_GRAFFDIALOG
+T=Graff...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=How did you...? And why are you...?
+W=BROK
+C1A=WONDER
+
+T=...
+W=GRAFF
+C2=GRAFF
+C2A=MEH
+SILENCE=1
+
+T=Never mind! Am I glad to see you!
+W=BROK
+C1A=READY
+
+T=Any way you can get me outta here?
+W=BROK
+
+T=...
+W=GRAFF
+C2A=COCKY
+TEN=PC11D_CAGE_STUCK_GRAFFCOMES_MUSIC
+
+T=Ha ha ha ha! LOL!
+W=GRAFF
+COMM=Only during this dialog, Graff uses "SMS/text messages" language like young people do! (it's a nightmare, not reality)
+
+T=Uh?!
+W=BROK
+C1A=THINK
+
+T=You got stuck...! All by yourself!
+W=GRAFF
+
+T=ROFL! LMFAO!
+W=GRAFF
+
+T=...
+W=BROK
+C1A=WONDER
+
+T=There's something odd about all this...
+W=BROK
+
+#Oh really,
+T=No duh, Captain Obvious!
+W=GRAFF
+
+T=Wake up, you fool!
+W=GRAFF
+C2A=ANGRY
+
+T=...What the...
+W=BROK
+C1A=CONFUSED
+TEN=PC11D_NEXTDAY
+
+#---------------------------------
+#= Graff at the end of the hall
+#---------------------------------
+ID=PC11D_GRAFFBEDROOM1
+T=...!
+W=BROK
+A=THINK
+
+T=Graff...?
+W=BROK
+TEN=PC11D_MUSICSTART
+
+T=Oh no!... Don't move!
+W=BROK
+A=SURPRISED
+
+T=You're surrounded by mines!
+W=BROK
+
+T=...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=You did this...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Did... what?
+W=BROK
+A=THINK
+
+T=Don't...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=W... What should I do?!...
+W=BROK
+
+T=Please...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=GO AWAY!...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+TEN=PC11D_GRAFFBEDROOM_AFTER
+
+#---------------------------------
+ID=PC11D_RANAWAY1
+T=Of course...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=...?
+W=BROK
+A=THINK
+
+T=I knew it... I knew you'd run away...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=That's what you do... You never cared...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=I... I wasn't going to run away!
+W=BROK
+A=READY
+
+T=Just... trying to fetch help!
+W=BROK
+A=READY
+
+T=Don't bother lying to yourself.
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Just stop...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Stop...?
+W=BROK
+A=WONDER
+
+T=Stop... dreaming.
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Wake up! Now!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+TEN=PC11D_NEXTDAY
+
+#---------------------------------
+ID=PC11D_GRAFF_BEDROOM_TOOFAR
+T=I can't reach him from here!
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC11D_GRAFFEXPLODES
+T=N... Nooooooo!!! Graff!!!
+W=BROK
+A=YELL
+
+T=This...
+W=BROK
+A=HEARTBROKEN
+
+T=This can't be happening...!
+W=BROK
+
+T=I'm...
+W=BROK
+
+T=I'm so sorry... I couldn't... save you...
+W=BROK
+C1A=DISAPPOINTED
+TEN=PC11D_NEXTDAY
+
+
+#----------------------
+#= Enemies
+#----------------------
+ID=PC11D_ENEMIES_APPEAR1
+T=It's him!
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+TEN=PC11D_ENEMIES_APPEARB
+
+#----------------------
+
+ID=PC11D_ENEMIES_APPEAR2
+T=They're coming for me!...
+W=BROK
+A=FURIOUS
+TEN=PC11D_ENEMIES_STARTFIGHT
+
+#----------------------
+ID=PC11D_ENEMIES_AGAIN
+T=What?! They want another round?
+W=BROK
+A=ANGRY
+
+T=Alright! Bring it on!
+W=BROK
+A=FURIOUS
+TEN=PC11D_ENEMIES_STARTFIGHT2
+
+#----------------------
+ID=PC11D_ENEMIES_KILLED
+T=Not coming back for more, eh? Quitters!
+W=BROK
+A=COCKY
+TEN=PC11D_ENEMIES_ENDFIGHT
+
+
+#----------------------
+#= Graff saved
+#----------------------
+ID=PC11D_GRAFFSAVED
+T=...Thanks...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Don't mention it, kiddo...
+W=BROK
+A=THINK
+
+T=...You know...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=...You're not alone...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Graff?...
+W=BROK
+A=MAYBE
+
+T=...Wake up...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=I...don't want to...
+W=BROK
+A=TIRED
+
+T=So tired...
+W=BROK
+
+T=I just want...
+W=BROK
+
+T=To stay here...with you...
+W=BROK
+A=DOWN
+
+T=Now is not the time to rest.
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=The world needs you.
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=I need you.
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=But...
+W=BROK
+
+T=I said...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=WAKE UP!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+C1A=SURPRISED
+TEN=PC11D_NEXTDAY
+
+#----------------------
+#= Brok has won fight
+#----------------------
+ID=PC11D_GRAFFWRONG
+T=Monster...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=It's over. The monsters are gone.
+W=BROK
+A=HAPPY
+
+T=No!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+C1A=CONFUSED
+
+T=You...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+C1A=THINK
+
+T=You killed them all!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+TEN=PC11D_GRAFFWRONG_STAND
+
+T=N... No! I didn't!...
+W=BROK
+A=TIRED
+
+T=Liar!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Just look!
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+TEN=PC11D_GRAFFWRONG2_SHOW
+
+#----------------------
+ID=PC11D_GRAFFWRONG2
+T=...
+W=BROK
+A=SURPRISED
+COMM=The bots that Brok fought suddenly are changed into humans, which has him confused. Did he really kill humans?
+
+T=No... I...
+W=BROK
+
+T=They were...!
+W=BROK
+
+T=...
+W=BROK
+A=DISAPPOINTED
+
+T=I... I really did...
+W=BROK
+TEN=PC11D_GRAFFDISAPPEARS
+
+T=Please...
+W=BROK
+A=DOWN
+
+T=Forgive me. Everyone.
+W=BROK
+C1_EYESHUT=1
+TEN=PC11D_GRAFFWRONG_CAMERABACK
+
+T=...?
+W=BROK
+A=THINK
+C1_EYESHUT=0
+
+T=Graff? Where are you?...
+W=BROK
+
+T=Graff, come here! You're safe now!
+W=BROK
+A=MAYBE
+
+T=Don't be scared... I'd never...
+W=BROK
+
+T=Never...
+W=BROK
+A=STUPID
+TEN=PC11D_STARTWHITE1
+
+T=Hurt...
+W=BROK
+
+T=It hurts...
+W=BROK
+
+T=I need to...
+W=BROK
+TEN=PC11D_STARTWHITE2
+
+T=Get out...
+W=BROK
+
+T=Now...
+W=BROK
+TEN=PC11D_NEXTDAY
+
+###############################################
+# PROOFREAD - jblaker - 08/08/2019
+###############################################

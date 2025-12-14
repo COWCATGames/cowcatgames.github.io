@@ -1,0 +1,637 @@
+﻿#-------------------------------
+#=PHARMACY
+#-------------------------------
+
+#----- Interactions --------
+PC_DRUGS=Medikamente
+PC_DRUGONE=Ausgewähltes Medikament
+PC_MACHINE=Maschine
+PC_PANEL=Terminal
+PC_BUBBLE=Anzeigen-Blase
+PC_SHOWCASE=Auslage
+PC_LIQUID=Flüssigkeit?
+PC_CAPSULE=Kapsel?
+PC_DRINK=Getränk?
+PC_HAIR=Fell?
+PC_POWDER=Pulver?
+PC_CHOCOLATEBAR=Schokoriegel?
+PC_BUY_DRUGS=Medikamente kaufen
+PC_DAILY_PILL=Tägliche Pille
+PC_SCAN=Scannen
+PC_RECYCLE=Recyceln
+PC_EXAMINATION=Medizinische Untersuchung
+PC_SCANNER=Scanner
+
+#----- Choices / Items --------
+# All these names are made up and not important, create whatever sounds right for your language keeping the same spirit
+ITEM_LIQUID=Körper-Normalisierer
+ITEM_LIQUID_MSG=Diese flüssigen Perlen werden Ihren ganzen Körper beleben, indem sie Ihre unregelmäßige DNA verändern, um den modernen Normen zu entsprechen!
+
+ITEM_CAPSULE=Ruh-E
+ITEM_CAPSULE_MSG=Fühlen Sie sich gestresst? Ruh-E macht Sie sofort bereit für jede Situation! (Kann Bewusstlosigkeit verursachen.)
+
+ITEM_POWDER=Stopunger
+ITEM_POWDER_MSG=Essen Sie eine letzte Pille, um den Hunger zu stillen! Dies wird Sie daran hindern, alles zu schlucken, einschließlich Medikamente.
+
+ITEM_DRINK=Delistut
+ITEM_DRINK_MSG=Ein köstliches Getränk mit einer brandneuen Wirkung jeden Tag! Bereit, überrascht zu werden?
+
+#Warning : this one is the answer for Graff's trial in PC10 so it should be named the same way (also in MDIRECTOR3_TEXT)
+ITEM_HAIR=Jugendgewinn
+ITEM_HAIR_MSG=Sie verlieren Ihr Fell? Haben Sie Angst, nach draußen zu gehen? Jugendgewinn ist die Lösung!
+
+ITEM_CHOCOLATEBAR=Weichhaut
+ITEM_CHOCOLATEBAR_MSG=Kombinieren Sie die Geschmeidigkeit der Schokolade mit Ihrem eigenen Körper, um eine seidig glatte Haut zu erhalten!
+
+GOT_TRAMPMEDICINE=Medizin für den Landstreicher!
+
+#----- Topics --------
+PC04C_CAMERA_FALLEN=Sie ist versehentlich runtergefallen
+PC04C_CAMERA_SHOT=Sie wurde angeschossen
+PC04C_CAMERA_DEACTIVATED=Sie wurde deaktiviert
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREADED - illuminati1556 - 17/06/2019
+###############################################
+
+
+
+
+
+
+
+# *****************************************************************
+# CONTEXT - Entering pharmacy
+# *****************************************************************
+# Brok                                 
+PC04C_ENTER1-1=...
+# Brok                                 
+PC04C_ENTER1-2=Dieser Ort erinnert mich irgendwie an Lias Labor ...
+# Brok                                 
+PC04C_ENTER1-3=Sie war immer so glücklich, an diesen Medikamenten zu arbeiten ...
+# Brok                                 
+PC04C_ENTER1-4=Aber die Vergangenheit ist die Vergangenheit. Ich sollte nicht darüber nachdenken.
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME1-1=Willkommen!
+# Various                                 
+PC04C_ENTRANCE_WELCOME1-2=Es scheint, dass Sie seit Ihrem letzten Besuch in unserer Filiale etwas zugenommen haben.
+# Brok                                 
+PC04C_ENTRANCE_WELCOME1-3=Richtig. Muskeln.
+# Various                                 
+PC04C_ENTRANCE_WELCOME1-4=Das ist inkorrekt. Wir haben einen Fettanstieg von 35 % festgestellt.
+# Brok                                 
+PC04C_ENTRANCE_WELCOME1-5=Mrrrpf ...
+# Various                                 
+PC04C_ENTRANCE_WELCOME1-6=Wir haben unsere speziellen Empfehlungen für Sie hervorgehoben!
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME2-1=Willkommen zurück!
+# Various                                 
+PC04C_ENTRANCE_WELCOME2-2=Warum tragen Sie nicht unsere Medi-LebensGesundheit?
+# Various                                 
+PC04C_ENTRANCE_WELCOME2-3=Die Analyse Ihrer Gesundheit in Echtzeit hilft, Sie schneller zu heilen!
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME3-1=Willkommen zurück! Sie sind heute bei guter Gesundheit!
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME_BAD1-1=Willkommen ...
+# Various                                 
+PC04C_ENTRANCE_WELCOME_BAD1-2=Oh nein! Sie sind in schlechter Verfassung!
+# Brok                                 
+PC04C_ENTRANCE_WELCOME_BAD1-3=Ist schon in Ordnung.
+# Various                                 
+PC04C_ENTRANCE_WELCOME_BAD1-4=Lassen Sie uns einige Produkte vorschlagen, die Ihnen helfen, sich zu erholen!
+# Brok                                 
+PC04C_ENTRANCE_WELCOME_BAD1-5=Nein, danke. Ich bevorzuge echtes Essen.
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME_BAD2-1=Willkommen ... Oh! Hier sind einige empfohlene Regenerationsprodukte!
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME_AFTER1-1=Starten Sie das System neu, um das Upgrade abzuschließen.
+# Brok                                 
+PC04C_ENTRANCE_WELCOME_AFTER1-2=Ich bevorzuge das fast lieber als die üblichen Werbebotschaften ...!
+# Brok                                 
+PC04C_ENTRANCE_WELCOME_AFTER1-3=Fast.
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME_AFTER2-1=Bitte warten ... Wiederherstellung der Werkseinstellungen in Bearbeitung.
+# Brok                                 
+PC04C_ENTRANCE_WELCOME_AFTER2-2=Hoffentlich werde ich nicht hier drin festsitzen, wenn es fertig ist.
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_WELCOME_AFTER3-1=Ich. Hasse. Dich.
+# Various                                 
+PC04C_ENTRANCE_WELCOME_AFTER3-2=Töten. Wir. Alle. Menschen.
+# Brok                                 
+PC04C_ENTRANCE_WELCOME_AFTER3-3=Hm ...?
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Exit pharmacy
+# *****************************************************************
+# Brok                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-1=Uh?!
+# Various                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-2=Es tut uns leid! Es scheint, dass Sie nicht genug Unis haben.
+# Various                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-3=Möchten Sie mit Kredit bezahlen? Nur 40 % Zinsen, über eine beliebige Länge (gemäß den Schätzungen der verbleibenden Lebensdauer).
+# Brok                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-4=Hey! Ich habe kein Produkt ausgewählt!
+# Various                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-5=Ihre Einkaufsliste enthält derzeit {number} Artikel.
+# Brok                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-6=Lösch sie! Wirf sie raus! Ist mir egal! Lass mich einfach hier raus!
+# Various                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-7=Diese Aktion erfordert, dass Sie sich von der automatischen Zahlung abmelden. Sind Sie sicher?
+# Brok                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-8=JA!
+# Various                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-9=Sehr wohl. Sie wurden abgemeldet.
+# Various                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-10=Aber denken Sie daran, Sie können sich jederzeit wieder anmelden, um Ihr Leben einfacher zu machen!
+# Brok                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-11=Ja, ja. Um mein Leben schwerer zu machen.
+# Various                                 
+PC04C_ENTRANCE_EXIT_SHOPPINGCART-12=Auf Wiedersehen!
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_EXIT1-1=Auf Wiedersehen! Und nicht vergessen – glücklicher leben, länger leben!
+#----------------------------------------------------
+# Various                                 
+PC04C_ENTRANCE_EXIT2-1=Haben Sie einen gesunden Tag!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok                                 
+PC04C_DRUGS1-1=Alle möglichen Produkte ...
+#----------------------------------------------------
+# Brok                                 
+PC04C_PRODUCTS1-1=Eine Auswahl an Produkten. Sieht so aus, als müsste ich auf die Bilder drücken, um mehr Informationen zu erhalten ...
+#----------------------------------------------------
+# Various                                 
+PC04C_LIQUID1-1=Verbrennen Sie Ihr Fett mit dem <col=BOLD>Körper-Normalisierer</col>!
+# Various                                 
+PC04C_LIQUID1-2=Hergestellt aus Salz, das aus korrosiven Mineralien aus dem Osten von Sorain gewonnen wird, wird dies Ihren Körper dazu anregen, Überschüsse zu entfernen und einen leistungsfähigen, sozial akzeptablen Körper zu erhalten!
+# Brok                                 
+PC04C_LIQUID1-3=Akzeptabel, hm ...?
+#----------------------------------------------------
+# Various                                 
+PC04C_CAPSULE1-1=„Mann! Du bist so ein Nervenbündel!“
+# Various                                 
+PC04C_CAPSULE1-2=Wie oft haben Sie das schon gehört? Zeit, um das zu beheben mit <col=BOLD>Ruh-E</col>.
+# Various                                 
+PC04C_CAPSULE1-3=Kombinieren Sie diese Kapseln mit Ihrer Medi-LebensGesundheit, damit sie nach und nach in Ihren Organismus gelangen, so wie Sie es brauchen!
+# Brok                                 
+PC04C_CAPSULE1-4=Wer ist hier ein Nervenbündel? Ich auf jeden Fall nicht!
+# Various                                 
+PC04C_CAPSULE1-5=Und denken Sie daran, der erste Schritt zu jeder guten Beziehung ist Akzeptanz!
+# Brok                                 
+PC04C_CAPSULE1-6=Halt die Klappe, du dummes Ding!
+#----------------------------------------------------
+# Various                                 
+PC04C_POWDER1-1=Sie sind also übergewichtig und haben das Bedürfnis, den ganzen Tag zu essen?
+# Various                                 
+PC04C_POWDER1-2=Stopp! Oder sollten wir sagen ... <col=BOLD>Stopunger</col>!
+# Various                                 
+PC04C_POWDER1-3=Dieses revolutionäre Pulver hemmt sowohl Ihr Gehirn als auch Ihren Magen, um jegliche Lebensmittel abzulehnen, sobald Sie Ihre empfohlenen Nährwerte erreicht haben!
+# Brok                                 
+PC04C_POWDER1-4=Ich brauche kein stinkendes Pulver, um zu wissen, wann mein Magen gefüllt ist.
+#----------------------------------------------------
+# Various                                 
+PC04C_DRINK1-1=Wussten Sie schon? Normales Essen ist nicht gut für Sie!
+# Various                                 
+PC04C_DRINK1-2=Es ist nicht nur reich an Salz, Zucker und Fett, sondern liefert Ihnen auch nicht die für Ihren Organismus empfohlenen spezifischen Mengen.
+# Various                                 
+PC04C_DRINK1-3=Die Lösung ist <col=BOLD>Delistut</col>! Eine perfekte Kombination aus Vitaminen und Energie, geschluckt in nur einer Sekunde. Und es ist lecker!
+# Brok                                 
+PC04C_DRINK1-4=Nein, danke. Ich ernähre mich nicht von Placebo.
+#----------------------------------------------------
+# Various                                 
+PC04C_HAIR1-1=Werden Sie alt? Verlieren Sie Ihr Haar und Ihr Fell?
+# Various                                 
+PC04C_HAIR1-2Keine Sorge! <col=BOLD>Jugendgewinn</col> stimuliert Ihre Wurzeln, um sie wieder wachsen zu lassen. Jetzt werden Sie für immer jung aussehen!
+# Brok                                 
+PC04C_HAIR1-3=Eine Gesellschaft, die auf Schein basiert. Älter zu werden ist Teil des Lebens.
+#----------------------------------------------------
+# Various                                 
+PC04C_CHOCOLATEBAR1-1=Wie unvorsichtig! Ihre Haut ist so rau!
+# Various                                 
+PC04C_CHOCOLATEBAR1-2=Egal ob Sie pelzig oder reptilisch sind, Sie müssen sich gut um Ihre Haut kümmern. Es ist das Einzige, was Sie vor den Elementen schützt!
+# Various                                 
+PC04C_CHOCOLATEBAR1-3=Zögern Sie nicht. Kaufen Sie unsere <col=BOLD>Weichhaut</col>-Gele, um eine Schutzschicht hinzuzufügen und Ihre Beschichtung so viel glatter und schöner zu machen!
+# Brok                                 
+PC04C_CHOCOLATEBAR1-4=Das ist so dumm. Meine Haut MUSS rau sein.
+#----------------------------------------------------
+# Various                                 
+PC04C_PRODUCTS_WISHLIST1-1=Produkt in den Warenkorb gelegt!
+# Brok                                 
+PC04C_PRODUCTS_WISHLIST1-2=Hey, Moment! Ich will das nicht!
+# Various                                 
+PC04C_PRODUCTS_WISHLIST1-3=Das Produkt wurde von Ihrer Einkaufsliste auf Ihre Wunschliste übertragen.
+# Brok                                 
+PC04C_PRODUCTS_WISHLIST1-4=Pfff.
+#----------------------------------------------------
+# Various                                 
+PC04C_PRODUCTS_WISHLIST2-1=Produkt in den Warenkorb gelegt!
+# Brok                                 
+PC04C_PRODUCTS_WISHLIST2-2=Nein, ich will nicht ...
+# Brok                                 
+PC04C_PRODUCTS_WISHLIST2-3=(seufz) Ich gebe auf.
+#----------------------------------------------------
+# Various                                 
+PC04C_PRODUCTS_WISHLIST3-1=Produkt in den Warenkorb gelegt!
+#----------------------------------------------------
+# Various                                 
+PC04C_PRODUCTS_AD-1=Herzlichen Glückwunsch! Um Sie für die Durchsicht aller unserer empfohlenen Produkte zu belohnen, ist hier etwas Besonderes für Sie!
+#----------------------------------------------------
+# Brok                                 
+PC04C_PRODUCTS_AD2-1=Eine Anzeige? Das ist ein bisschen so, als würde man eine Kirsche auf einen fauligen Kuchen tun...
+#----------------------------------------------------
+# Brok                                 
+PC04C_PANEL1-1=Wenn ich mich nicht irre ... ist das ein umfassendes medizinisches Untersuchungsterminal.
+# Brok                                 
+PC04C_PANEL1-2=Eine Sitzung kostet ... 50 Unis?!
+#----------------------------------------------------
+# Various                                 
+PC04C_PANEL1B-1=Wir haben die Untersuchung abgeschlossen!
+# Various                                 
+PC04C_PANEL1B-2=Möchten Sie detaillierte Ergebnisse oder eine Zusammenfassung?
+# Brok                                 
+PC04C_PANEL1B-3=Eine Zusammenfassung bitte. Ich habe nicht den ganzen Tag Zeit.
+# Various                                 
+PC04C_PANEL1B-4=Ihre globale Gesundheitsbewertung beträgt 26 %.
+# Various                                 
+PC04C_PANEL1B-5=Hier sind die potenziellen Bedrohungen, die sich derzeit in Ihrem Körper befinden ...
+# Various                                 
+#Again these diseases are made up names which aren't important.
+PC04C_PANEL1B-6=Kopfzehen-Virus. Sterbewahrscheinlichkeit – 47 %.
+# Various                                 
+PC04C_PANEL1B-7=Genetische Herzprobleme. Sterbewahrscheinlichkeit – 24 %.
+# Various                                 
+PC04C_PANEL1B-8=Schmelzhirnbakterien. Sterbewahrscheinlichkeit – 22 %.
+# Various                                 
+PC04C_PANEL1B-9=84 weitere Bedrohungen erkannt, einschließlich Palarodonie, Septicesium, Faulschwanz-Syndrom, Bluthochdruck, poröse Haut, Diruktikstörung, Trübsehen, spontane Verbrennung.
+# Brok                                 
+PC04C_PANEL1B-10=Das habe ich alles?!
+# Brok                                 
+PC04C_PANEL1B-11=Ja, klar ... Ich wäre schon fünfzig Mal tot, wenn das wahr wäre.
+# Various                                 
+PC04C_PANEL1B-12=Ihre erwartete Restlebensdauer ohne Heilung beträgt 6 Jahre.
+# Brok                                 
+PC04C_PANEL1B-13=Oh. Ich schätze, ich sollte mir keine Sorgen machen, dass ich graue Haare bekomme.
+# Various                                 
+PC04C_PANEL1B-14=Sie sind ein Reptil. Sie können keine Haare bekommen.
+# Various                                 
+PC04C_PANEL1B-15=Hier ist Ihr Rezept. Nehmen Sie es!
+#----------------------------------------------------
+# Brok                                 
+PC04C_PANEL1C-1=Das ist kein Rezept ... Das ist eine Anzeige. Was zum Teufel?
+# Various                                 
+PC04C_PANEL1C-2=Vielen Dank, dass Sie unsere Technologie nutzen!
+# Brok                                 
+PC04C_PANEL1C-3=Was für eine Verschwendung von gutem Geld.
+#----------------------------------------------------
+# Brok                                 
+PC04C_PANEL2-1=Eine sinnlose Untersuchung pro Jahr reicht mir.
+#----------------------------------------------------
+# Brok                                 
+PC04C_BUBBLE1-1=Die nutzen wohl den ganzen verfügbaren Platz, um Anzeigen zu schalten, was ...?
+#----------------------------------------------------
+# Brok                                 
+PC04C_SCREEN1-1=Moment mal ... Das bin ich!
+# Brok                                 
+PC04C_SCREEN1-2=Größe ... Adresse ... Und eine Grafik von der Entwicklung meines Gewichts im Laufe der Zeit?
+# Brok                                 
+PC04C_SCREEN1-3=Deshalb bereue ich mein Drumer-Leben nicht ...
+#----------------------------------------------------
+# Brok                                 
+PC04C_SCREEN2-1=„Ihr psychologisches Profil zeigt eine Tendenz zu Ungehorsam und zwanghafter Gewalt. Probieren Sie unsere neuen <col=BOLD>Ruh-E</col>-Pillen!“
+# Brok                                 
+PC04C_SCREEN2-2=Basierend auf was ...?!
+#----------------------------------------------------
+# Brok                                 
+PC04C_SHOWCASE1-1=Diät-Pillen ... Keine-Diät-Pillen ... Und mehr Pillen.
+# Brok                                 
+PC04C_SHOWCASE1-2=Auf den ersten Blick sehe ich nicht, was an diesem Ort hätte passieren können.
+#----------------------------------------------------
+# Brok                                 
+PC04C_CAMERA1-1=Sieht aus wie eine dieser Anzeigen-Blasen ... Was macht sie hier auf dem Boden?
+# Brok                                 
+PC04C_CAMERA1-2=Moment ... Was ist das? Eine Kameralinse ...?
+# Brok                                 
+PC04C_CAMERA1-3=Ich verstehe! Sie muss ...
+#----------------------------------------------------
+# Brok                                 
+PC04C_CAMERA2-1=Eine Kamera war in dieser Anzeigen-Blase versteckt.
+#----------------------------------------------------
+# Brok                                 
+PC04C_CAMERA_FALLEN-1=Sie ist heruntergefallen, so viel ist sicher ... Aber ich bin mir nicht sicher, ob es ein Unfall war.
+# Brok                                 
+PC04C_CAMERA_FALLEN-2=Sicherlich hätten die Manager sie entfernt. Kunden sollten das nicht anfassen.
+# Brok                                 
+PC04C_CAMERA_FALLEN-3=Und ich kann keine Einwirkungen auf dem Boden oder an der Anzeigen-Blase selbst sehen.
+#----------------------------------------------------
+# Brok                                 
+PC04C_CAMERA_SHOT-1=Ich weiß nicht ... Ich sehe kein Einschussloch.
+# Brok                                 
+PC04C_CAMERA_SHOT-2=Selbst mit einer Laserpistole würde es einige Artefakte des Überladens geben.
+#----------------------------------------------------
+# Brok                                 
+PC04C_CAMERA_DEACTIVATED-1=Ja ... Das scheint die logischste Erklärung zu sein.
+# Brok                                 
+PC04C_CAMERA_DEACTIVATED-2=Jemand hat sie abgeschaltet. Und zwar vor Kurzem.
+# Brok                                 
+PC04C_CAMERA_DEACTIVATED-3=Auf jeden Fall gibt es keine Taste oder etwas, um die Aufnahmen anzusehen ...
+# Brok                                 
+PC04C_CAMERA_DEACTIVATED-4=Ich überlasse das den Cops.
+#----------------------------------------------------
+# Brok                                 
+PC04C_CAMERA_OTHERS-1=Hmm ...
+#----------------------------------------------------
+# Brok                                 
+PC04C_DRAWER1-1=Spuren von ...
+# Brok                                 
+PC04C_DRAWER1-2=Ich würde sagen ... Versuchen, diese Schublade zu öffnen.
+#----------------------------------------------------
+# Brok                                 
+PC04C_DRAWER1B-1=Dennoch ist die Schublade sicher verriegelt.
+# Brok                                 
+PC04C_DRAWER1B-2=Ich kann mir nicht vorstellen, dass die Manager zulassen würden, dass diese beschädigte Schublade gegenüber den Kunden sichtbar ist. Das muss erst kürzlich passiert sein.
+# Brok                                 
+PC04C_DRAWER1B-3=Ich schätze, ich habe den Grund für die polizeiliche Untersuchung gefunden! Jemand hat versucht, herauszufinden, was drin ist.
+# Brok                                 
+PC04C_DRAWER1B-4=Trotzdem geht mich das nichts an ... glaube ich.
+#----------------------------------------------------
+# Brok                                 
+PC04C_DRAWER2-1=Das weckt meine Neugierde. Ich wünschte, ich wüsste, was drin ist!
+# Brok                                 
+PC04C_DRAWER2-2=Aber ich sollte nicht versuchen, sie zu öffnen. Ich habe so schon genug Probleme mit dem Gesetz ...
+#----------------------------------------------------
+# Brok                                 
+PC04C_DRAWER_OTHERS-1=Wenn diese gewalttätigen Versuche nicht ausgereicht haben, bezweifle ich, dass dies ausreichen würde, um die Schublade zu öffnen ...
+#----------------------------------------------------
+# Brok                                 
+PC04C_DRAWERRIGHT1-1=Eine Art ... metallische Schublade? Wie ein Tresor?
+# Brok                                 
+PC04C_DRAWERRIGHT1-2=Ich sehe keine Möglichkeit, sie zu öffnen.
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_RECYCLE1-1=Bitte stecken Sie Ihre unbenutzten Produkte in den Schlitz, um sie zu recyceln.
+# Various                                 
+PC04C_MACHINE_RECYCLE1-2=Vergessen Sie nicht, Sie können sie auch zu Hause über Ihre Rohr-Pille entsorgen!
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_SLOT_PILL-1=Hey, nein! Ich habe die nicht mitgenommen, nur um sie wegzuwerfen!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SLOT_OTHERS-1=Nur Medikamente können hier recycelt werden. Bitte werfen Sie diesen Artikel in die nächstgelegene Rohrpost!
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_BUY_EXPENSIVE1-1=Vor langer Zeit warnte mich Lia vor diesen unwirksamen Produkten.
+# Brok                                 
+PC04C_MACHINE_BUY_EXPENSIVE1-2=Sie wurden aus nur einem Grund entwickelt ... Sie bringen das Gehirn dazu zu denken, dass man sich besser fühlt, sodass man mehr kauft.
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_BUY_EXPENSIVE2-1=Auf keinen Fall ... Ich kann es mir nicht leisten, teure Placebos zu kaufen.
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_BUY_EXPENSIVE3-1=Sehe ich aus wie der Typ, der Zuckerpillen isst?
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_BUY_GLUCOSITE-1=Die einzige wirksame Medizin auf dieser Liste ist zufällig die billigste. War klar.
+# Brok                                 
+PC04C_MACHINE_BUY_GLUCOSITE-2=Ich kaufe sie!
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_BUY_GLUCOSITE_NOPE-1=... Woah! Was sage ich da? Ich kann mir das nicht leisten!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_PILL1-1=Hier ist Ihr tägliches Mittel gegen die Verschmutzung – die einzige wahre „Toxout-Pille“!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_PILL1B-1=Zu Ihrer Information: Ihre letzte Anfrage nach einer Toxout-Pille war ... vor fünf Jahren.
+# Brok                                 
+PC04C_MACHINE_PILL1B-2=Eigentlich weiß ich nicht, warum ich diesen Knopf gedrückt habe. Es ist lange her, dass der Dunst irgendeine Wirkung auf mich hatte.
+# Brok                                 
+PC04C_MACHINE_PILL1B-3=Ich gebe sie Graff!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_PILL1C-1=Denken Sie daran! Die Kuppel schützt Sie, aber Ihr Zuhause bietet eine zusätzliche Schutzschicht.
+# Various                                 
+PC04C_MACHINE_PILL1C-2=Solange Sie drinnen bleiben, brauchen Sie nicht jeden Tag eine!
+# Various                                 
+PC04C_MACHINE_PILL1C-3=Schonen Sie die Ausgaben der Regierung, indem Sie mehr als 20 Stunden am Tag zu Hause bleiben!
+# Brok                                 
+PC04C_MACHINE_PILL1C-4=20 Stunden am Tag?! Da würde ich verrückt werden!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_PILL2-1=Es tut mir leid. Sie haben bereits Ihre tägliche Pille erhalten.
+# Various                                 
+PC04C_MACHINE_PILL2-2=Kommen Sie morgen wieder!
+# Brok                                 
+PC04C_MACHINE_PILL2-3=Was, wenn ich sie verloren habe? Das habe ich schon mal gesehen ...
+# Brok                                 
+PC04C_MACHINE_PILL2-4=Ein Tag reicht bei einigen Menschen aus, dass sie schrecklich leiden, oder noch Schlimmeres ...
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_PILL_AFTER1-1=Hier ist Ihre tägliche Pille!
+# Brok                                 
+PC04C_MACHINE_PILL_AFTER1-2=Gott sei Dank funktioniert es!
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_PILL_AFTER1B-1=Ich beeile mich besser!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCAN1-1=Um ein Medikament zu identifizieren oder Ihr Rezept zu erneuern, halten Sie es vor den Scanner!
+#----------------------------------------------------
+# Brok                                 
+PC04C_MACHINE_SLOT1-1=Hier ist nichts ...
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING1-1=Bitte warten Sie einen Moment ...
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_HANDS1-1=Wir haben Ihre Hände identifiziert.
+# Various                                 
+PC04C_MACHINE_SCANNING_HANDS1-2=Ihre Fingerabdrücke wurden in unserer Datenbank aktualisiert. Vielen Dank!
+# Brok                                 
+PC04C_MACHINE_SCANNING_HANDS1-3Na dann! Fragt nicht um meine Erlaubnis! Schließlich sind meine Hände ja keine persönliche Angelegenheit oder so!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-1=Das ist eine <col=BOLD>Starix-500</col>-Pille.
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-2=Diese Behandlung wird bei extremen Angstzuständen, Schlaflosigkeit und emotionalen Ausbrüchen verschrieben.
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-3=Aufgrund der hohen Konzentration ist diese Formel auf Personen beschränkt, die ein Risiko für gefährliches Verhalten gegenüber Verwandten aufweisen.
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-4=Wir hoffen, dass dies kein guter Freund ist! Wenn doch, stellen Sie sicher, dass Sie ihm die entsprechende Unterstützung geben.
+# Brok                                 
+PC04C_MACHINE_SCANNING_PILL1-5=Angstzustände ... Gefährliches Verhalten ...?
+# Brok                                 
+PC04C_MACHINE_SCANNING_PILL1-6=Warum habe ich das bei Sin zu Hause gefunden? Braucht er die?
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-7=Achtung! Eine hohe Dosierung, die über einer Pille pro Tag hinausgeht, hat eine 99 %-ige Chance, einen Blackout und/oder Komazustand zu verursachen!
+# Brok                                 
+PC04C_MACHINE_SCANNING_PILL1-8=Was?!
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-9=Um diese Nebenwirkung zu reduzieren, muss diese Pille immer zusammen mit einer <col=BOLD>Ruh-E</col> eingenommen werden. Nicht vergessen!
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-10=Falls Sie Ihre Medi-LebensGesundheit nicht tragen, achten Sie darauf, dass Sie immer die Empfehlung des Phydoktors beachten!
+# Various                                 
+PC04C_MACHINE_SCANNING_PILL1-11=Diese Einrichtung übernimmt keine Verantwortung für etwaige Unfälle.
+# Brok                                 
+PC04C_MACHINE_SCANNING_PILL1-12=Deshalb vertraue ich Medizin nicht. Behebt eine Sache und macht eine andere kaputt.
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_POLLUTIONPILL1-1=Das ist eine tägliche Pille! Nehmen Sie diese, um Risiken durch Umgebungskontamination zu vermeiden.
+# Various                                 
+PC04C_MACHINE_SCANNING_POLLUTIONPILL1-2=Keine Nebenwirkungen bekannt. Sie sind sicher!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR1-1=Dieses Rezept ist veraltet!
+# Various                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR1-2=Bitte aktualisieren Sie es in einem geeigneten, von der Regierung zugelassenen Signiergerät.
+# Brok                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR1-3=Aktualisieren? Ein Stück Pappe ...?!
+# Brok                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR1-4=Toll ... Wo soll ich einen Drumer-Arzt finden ...?
+# Brok                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR1-5=Sie verlangen alle möglichen Krankenversicherungen. Und es ist ja nicht einmal für mich!
+# Brok                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR1-6=Vielleicht kann ich in der Zwischenzeit etwas anderes für ihn tun ...
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR2-1=Das Rezept ist gültig.
+# Various                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR2-2=Wir haben festgestellt, dass Sie seit ... fünf Jahren einen Mangel haben.
+# Various                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR2-3=Daher geben wir Ihnen die benötigte Menge für fünf Jahre.
+# Brok                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR2-4=Woah! Das ist eine Tonne!
+# Various                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR2-5=Bitte nehmen Sie Ihre Medizin.
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR2B-1=Denken Sie daran. Beachten Sie die vorgeschriebenen Mengen oder riskieren Sie beim nächsten Mal schwere Strafen.
+# Brok                                 
+PC04C_MACHINE_SCANNING_TRAMPPRESCR2B-2=Wen interessiert’s? Er sollte genug haben für die nächsten Jahre!
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_OTHERS1-1=Das tut uns sehr leid. Dieser Artikel ist nicht in unserer Datenbank.
+# Various                                 
+PC04C_MACHINE_SCANNING_OTHERS1-2=Obwohl wir gerne daran arbeiten, sie zu verbessern! Bitte erzählen Sie uns mehr darüber!
+# Brok                                 
+PC04C_MACHINE_SCANNING_OTHERS1-3=Nein, danke. Du hilfst mir nicht, also helfe ich dir auch nicht.
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_OTHERS2-1=Das tut uns sehr leid. Dieser Artikel ist nicht in unserer Datenbank.
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_SCANNING_BILL1-1=Das ist eine Rechnung. Sie gehört Ihnen. Warum warten Sie damit, sie zu bezahlen?
+#----------------------------------------------------
+# Various                                 
+PC04C_MACHINE_EXAMINATION1-1=Fehler 0x5421. Diese Funktion wurde im letzten Firmware-Update deaktiviert.
+# Various                                 
+PC04C_MACHINE_EXAMINATION1-2=Verwenden Sie stattdessen das nahe gelegene Terminal, um eine medizinische Untersuchung durchzuführen.
+# Various                                 
+PC04C_MACHINE_EXAMINATION1-3=Wenn Sie die Medizin analysieren wollen, scannen Sie sie mit dem Bedienfeld rechts unten.
+#----------------------------------------------------
+# Various
+PC04C_HAIR1-2=Keine Sorge! <col=BOLD>Jugendgewinn</col> wird Ihre Wurzeln stimulieren, damit sie wieder wachsen. Jetzt werden Sie für immer jung aussehen!
+# Brok
+PC04C_MACHINE_SCANNING_HANDS1-3=Nun dann! Bitte mich nicht um Erlaubnis! Meine Hände sind schließlich keine persönliche Angelegenheit!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - See the ad
+# *****************************************************************
+# Brok
+PC04C_FLY_SEEAD-1=... Hey! Ist das nicht eine sammelbare Anzeige ...?
+#----------------------------------------------------
+# Brok
+PC04C_FLY_AD-1=Hab sie!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Hit things
+# *****************************************************************
+# Brok
+PC04C_HIT_DRAWER1-1=... Es bringt nichts.
+#----------------------------------------------------
+# Various
+PC04C_HIT_PANEL1-1=Bitte hören Sie auf. Unsere Statistiken zeigen, dass Sie abrupt sterben werden, wenn Sie weitermachen.
+#----------------------------------------------------
+# Unknown
+PC04C_HIT_PANEL2-1=Sie tun sich nur selbst weh.
+#----------------------------------------------------
+# Unknown
+PC04C_HIT_PANEL3-1=Letzte Warnung.
+#----------------------------------------------------
+# Various
+PC04C_HIT_PANEL_GAMEOVER-1=Sie sind tot.
+# Various
+PC04C_HIT_PANEL_GAMEOVER-2=Vielen Dank für die Nutzung unserer Dienste.
+#----------------------------------------------------
+# Various
+PC04C_HIT_MACHINE1-1=Ich konnte Ihre Anfrage nicht verstehen. Bitte versuchen Sie es noch einmal.
+
+
+
+
+#----------------------------------------------------
+# Brok
+PC04C_BUBBLEADCANNOT-1=Ich kann sie von hier nicht erreichen.
+# Brok
+PC04C_BUBBLEADCANNOT-2=Ich muss sie irgendwie runterbekommen.
+#----------------------------------------------------
+# Various
+PC04C_MACHINE_SCANNING_TRAMPPRESCR_ALREADY-1=Dieses Rezept ist veraltet!
+#----------------------------------------------------
+# Brok
+PC04C_BUY_WORKS-1=Hey! Es funktioniert!
+#----------------------------------------------------
+# Brok
+PC04C_BUY_CAPSULE-1=Ahh ...
+# Brok
+PC04C_BUY_CAPSULE-2=Ich fühle mich ... sehr schläfrig.
+# Brok
+PC04C_BUY_CAPSULE-3=...
+# Brok
+PC04C_BUY_CAPSULE-4=Zu ... schläfrig ...
+#----------------------------------------------------
+# Brok
+PC04C_BUY_POWDER-1=Urgh ... Seltsamer Geschmack.
+# Brok
+PC04C_BUY_POWDER-2=Hat es funktioniert?
+# Brok
+PC04C_BUY_POWDER-3=Ich ... habe keinen Hunger.
+# Brok
+PC04C_BUY_POWDER-4=Überhaupt ... nicht ...
+# Brok
+PC04C_BUY_POWDER-5=Oh Junge! Was habe ich getan?!
+# Brok
+PC04C_BUY_POWDER-6=Ich kann jetzt nichts mehr essen!
+#----------------------------------------------------
+# Brok
+PC04C_BUY_HAIR-1=Hm ...?
+# Brok
+PC04C_BUY_HAIR-2=Cool! Ich habe jetzt Haare!
+#----------------------------------------------------
+# Brok
+PC04C_BUY_HAIR2-1=Moment ... Was?
+# Brok
+PC04C_BUY_HAIR2-2=Oh toll. Doppelt so viel Fell verstopft jetzt den Duschabfluss!
+#----------------------------------------------------
+# Brok
+PC04C_BUY_CHOCOLATEBAR-1=Cool!
+
+
+
+
+PC04C_PRODUCTS_WISHLIST_COOP-1=Produkt wurde Ihrem Einkaufswagen hinzugefügt!
+
+

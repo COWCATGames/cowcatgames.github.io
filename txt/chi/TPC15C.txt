@@ -1,0 +1,789 @@
+#-------------------------------
+#=LAB ROOM LEFT
+#-------------------------------
+
+#----- Interactions --------
+PC_MATERIALS=材料
+PC_BISCUITS=饼干
+PC_PAINTING=图画
+PC_SPOT=污渍
+PC_RAMP=斜坡
+PC_TRAP=通风口
+PC_LEVER=杠杆
+
+#----- Choices / Items --------
+TOPIC_RULE=黄金法则
+TOPIC_SITUATION=目前情况
+TOPIC_INVESTIGATION=案件调查
+
+#----- Topics --------
+GOT_LAMPHUSH=台灯！
+GOT_TABLETHUSH=哈什博士的平板电脑！
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC15C_WINDOW1-1=感觉非常舒缓身心，真是让人欲罢不能！
+#----------------------------------------------------
+# Mink
+PC15C_WINDOW1B-1=这是开玩笑吧。
+# Mink
+PC15C_WINDOW1B-2=这是默认场景！谁会笨到使用默认设定？！
+# Brok
+PC15C_WINDOW1B-3=或许哈什博士喜欢呢？
+# Mink
+PC15C_WINDOW1B-4=他真是无药可救了！
+# Mink
+PC15C_WINDOW1B-5=……
+# Brok
+PC15C_WINDOW1B-6=你应该知道他永远都不会再回来了吧？
+# Mink
+PC15C_WINDOW1B-7=……
+# Mink
+PC15C_WINDOW1B-8=虽然跟他很不合……
+# Mink
+PC15C_WINDOW1B-9=我……我还是……
+# Brok
+PC15C_WINDOW1B-10=别害羞！说出来吧！
+# Mink
+PC15C_WINDOW1B-11=肚子饿了。
+# Brok
+PC15C_WINDOW1B-12=唉……
+#----------------------------------------------------
+# Brok
+PC15C_WINDOW2-1=不错的景色！可惜是人造的！
+#----------------------------------------------------
+# Brok
+PC15C_SCREEN1-1=上面显示着信息。
+# Brok
+PC15C_SCREEN1-2=“汰涤——电量90%——充电期间请勿打扰”
+# Brok
+PC15C_SCREEN1-3=这是从早上5:10就开始充电了？
+#----------------------------------------------------
+# Brok
+PC15C_SCREEN2-1=“汰涤——电量100%”
+# Brok
+PC15C_SCREEN2-2=这是从早上5:10就开始充电了？
+#----------------------------------------------------
+# Brok
+PC15C_BISCUITS1-1=能量饼干……
+# Brok
+PC15C_BISCUITS1-2=哈什博士在失踪前一定吃过这些饼干。
+# Brok
+PC15C_BISCUITS1-3=桌上甚至地面上全都是饼干屑！
+# Brok
+PC15C_BISCUITS1-4=怎么科学家也会这么邋遢的。
+#----------------------------------------------------
+# Brok
+PC15C_BISCUITS2-1=……
+# Ott
+PC15C_BISCUITS2-2=怎么了……？
+# Ott
+PC15C_BISCUITS2-3=别吃！这些可是线索！
+# Brok
+PC15C_BISCUITS2-4=可是……我还饿呀！
+#----------------------------------------------------
+# Brok
+PC15C_LAMP1-1=我认识这个型号！二十年前非常流行的。
+# Ott
+PC15C_LAMP1-2=这也不好看啊，为什么会流行起来的？
+# Brok
+PC15C_LAMP1-3=天知道。
+#----------------------------------------------------
+# Brok
+PC15C_LAMP_AFTER-1=这个台灯跟哈什博士旁边的那个是同一个型号。
+# Brok
+#He's talking about the lamp.
+PC15C_LAMP_AFTER-2=我得拿上它。
+#----------------------------------------------------
+# Brok
+PC15C_MATERIALS1-1=这些应该是实验用品吧？
+#----------------------------------------------------
+# Brok
+PC15C_MATERIALS1B-1=很神奇啊，这件家具竟然没有任何突出的部分。
+# Brok
+PC15C_MATERIALS1B-2=可以说是典型的“乱中有序”了。
+# Mink
+PC15C_MATERIALS1B-3=哈什博士是个强迫症。
+# Mink
+PC15C_MATERIALS1B-4=他无法忍受东西放得乱七八糟，所以就编程了清洁机器人将所有东西打理得整整齐齐。
+# Mink
+PC15C_MATERIALS1B-5=有次我忘了把咖啡杯放在桌子正中央，他就彻底暴走了！
+# Brok
+PC15C_MATERIALS1B-6=可以理解……毕竟所有科学家都是神经兮兮的。
+# Mink
+PC15C_MATERIALS1B-7=你什么意思？我可没有神经病！
+# Brok
+PC15C_MATERIALS1B-8=凡事都有例外的嘛。
+# Mink
+PC15C_MATERIALS1B-9=唔……你说得在理！
+# Brok
+PC15C_MATERIALS1B-10=（布罗格1分，科学家0分）
+#----------------------------------------------------
+# Brok
+PC15C_RAMPBUTTON1-1=哦！原来这按键是添加……人造坡道的？
+#----------------------------------------------------
+# Mink
+PC15C_RAMPBUTTON1B-1=你是不是见到什么按钮都会先乱按一通？
+# Brok
+PC15C_RAMPBUTTON1B-2=那是当然！否则怎么知道按钮的功能？
+#----------------------------------------------------
+# Brok
+PC15C_RAMP_BEFORE1-1=不知道这个按钮又是干嘛的呢？
+#----------------------------------------------------
+# Brok
+PC15C_RAMP_AFTER1-1=嘿，汰涤！
+# Brok
+PC15C_RAMP_AFTER1-2=我有种感觉，那个人造坡道是哈什博士给你打造的吗？
+# Tidy
+PC15C_RAMP_AFTER1-3=对的！那是为了让我也可以使用桌子。
+# Tidy
+PC15C_RAMP_AFTER1-4=这可是为我打造和改装的！
+# Brok
+PC15C_RAMP_AFTER1-5=是吗……？
+# Brok
+PC15C_RAMP_AFTER1-6=有道理，大部分机器人都无法跳跃到那边。
+#----------------------------------------------------
+# Brok
+PC15C_RAMP_AFTER2-1=很好奇为什么哈什博士不直接给汰涤安装悬浮设备。
+# Tidy
+PC15C_RAMP_AFTER2-2=悬浮功能，非常消耗资源。
+# Tidy
+PC15C_RAMP_AFTER2-3=爸爸热爱大自然！
+# Ott
+PC15C_RAMP_AFTER2-4=它是说哈什博士这么做是为了节省能源。
+#----------------------------------------------------
+# Brok
+PC15C_TRAP_BEFORE-1=唔……这是通风口吗？
+#----------------------------------------------------
+# Brok
+PC15C_TRAP1-1=那是通风口，对吧？
+# Mink
+PC15C_TRAP1-2=是的，我房间里也有个。
+# Brok
+PC15C_TRAP1-3=那个通风口怎么打开的？
+# Mink
+PC15C_TRAP1-4=唔……
+# Mink
+PC15C_TRAP1-5=你得按下侧边的控制杆。
+# Brok
+PC15C_TRAP1-6=可是……那么高！
+# Mink
+PC15C_TRAP1-7=那你得使用梯子了。
+# Mink
+PC15C_TRAP1-8=我房间的通风孔是有挂着梯子的，但是这里明显没有。
+# Brok
+PC15C_TRAP1-9=似乎是的……
+#----------------------------------------------------
+# Brok
+PC15C_TRAP2-1=唔……
+# Ott
+PC15C_TRAP2-2=你在看什么呢？
+# Brok
+PC15C_TRAP2-3=我在想能不能跳上去拉动那个控制杆……？
+# Ott
+PC15C_TRAP2-4=很好笑。
+# Brok
+PC15C_TRAP2-5=啊？我是说真的。
+# Tidy
+PC15C_TRAP2-6=那是，不可能的。
+# Tidy
+PC15C_TRAP2-7=愚蠢的人类。
+# Brok
+PC15C_TRAP2-8=机器奴隶，看看我们谁能笑到最后。
+#----------------------------------------------------
+# Brok
+PC15C_BED1-1=似乎有点陈旧了。
+# Brok
+PC15C_BED1-2=还以为如此重要的科学家会获得优待呢。
+#----------------------------------------------------
+# Mink
+PC15C_BED1B-1=这是为了提高工作效率。
+# Brok
+PC15C_BED1B-2=再添加些尖刺那就完美了。
+#----------------------------------------------------
+# Brok
+PC15C_PAINTING1-1=这图画会动的呢。
+#----------------------------------------------------
+# Mink
+PC15C_PAINTING1B-1=那是绘图电视。
+# Mink
+PC15C_PAINTING1B-2=你也可以用它来看电视，但是主要功能是用作相框显示照片！
+# Brok
+PC15C_PAINTING1B-3=不错的科技产品……
+# Mink
+PC15C_PAINTING1B-4=那是！哈什博士实在是太老顽固了，还自称科学家呢……啧！
+#----------------------------------------------------
+# Brok
+PC15C_PAINTING2-1=唔。
+# Brok
+PC15C_PAINTING2-2=根据地图所示……
+#----------------------------------------------------
+# Mink
+PC15C_PAINTING2B-1=你这是做什么？
+# Brok
+PC15C_PAINTING2B-2=……
+# Brok
+PC15C_PAINTING2B-3=有点不对劲。
+# Ott
+PC15C_PAINTING2B-4=什么意思呢，布罗格先生？
+# Brok
+PC15C_PAINTING2B-5=只是我的直觉。
+#----------------------------------------------------
+# Mink
+PC15C_PAINTING2C-1=哇！你竟然把墙壁砸破了？！
+# Brok
+PC15C_PAINTING2C-2=我就轻轻碰了下而已。这根本就是豆腐渣工程。
+# Ott
+PC15C_PAINTING2C-3=这里有个洞？
+# Brok
+PC15C_PAINTING2C-4=似乎是的。
+# Brok
+PC15C_PAINTING2C-5=敏克博士，这是通往你房间的。
+# Mink
+PC15C_PAINTING2C-6=我……我根本不知道……！
+# Brok
+PC15C_PAINTING2C-7=这么小个洞，普通人根本进不去。
+# Ott
+PC15C_PAINTING2C-8=究竟是让什么东西通过的呢？
+# Brok
+PC15C_PAINTING2C-9=那就需要我们去查出真相了。
+#----------------------------------------------------
+# Brok
+PC15C_HOLE1-1=另一端应该是……
+# Brok
+PC15C_HOLE1-2=对头，肯定是敏克博士的办公室无疑了。我看到了那张放着纳米机器人箱子的桌子。
+# Mink
+PC15C_HOLE1-3=我的纳米机器人？！别跟我说有人使用了我的宝贝机器人！
+# Brok
+PC15C_HOLE1-4=那我不告诉你行了吧，目前一切都只是推论。
+#----------------------------------------------------
+# Ott
+PC15C_HOLE2-1=奇怪了，这房间旁边不该是休息室吗？怎么成了敏克博士的房间？
+# Brok
+PC15C_HOLE2-2=你设想下这里的房间布局：休息室占据的面积很小，远远没达到这个洞的位置。
+# Ott
+PC15C_HOLE2-3=你说得有理！
+# Ott
+PC15C_HOLE2-4=我竟然没想过去检查这绘画！
+# Ott
+PC15C_HOLE2-5=你太厉害了，布罗格侦探！
+# Brok
+PC15C_HOLE2-6=哈，只是经验使然而已！
+# Brok
+PC15C_HOLE2-7=（当然，还有运气。）
+#----------------------------------------------------
+# Brok
+PC15C_TABLET1-1=那是哈什博士的东西？
+# Brok
+PC15C_TABLET1-2=似乎上锁了。
+#----------------------------------------------------
+# Mink
+PC15C_TABLET1B-1=是的，这是哈什博士的私人物品，只有他可以解锁。
+# Brok
+PC15C_TABLET1B-2=那就可惜了，里头应该会有可用的资料。
+# Mink
+PC15C_TABLET1B-3=让我瞧瞧？
+# Mink
+PC15C_TABLET1B-4=这里有个记录：“最后一次上线……4:45”
+# Brok
+PC15C_TABLET1B-5=这是他最后一次使用平板电脑的时间吗？
+# Mink
+PC15C_TABLET1B-6=是的。对了，这种小事不用谢我。
+# Brok
+PC15C_TABLET1B-7=喂，科技玩意向来都不是我的专长嘛！
+# Mink
+PC15C_TABLET1B-8=那你凭什么有资格指控我？
+# Brok
+PC15C_TABLET1B-9=谁知道真相如何呢？等着瞧吧。
+# Mink
+PC15C_TABLET1B-10=唔……
+#----------------------------------------------------
+# Brok
+PC15C_TABLET2-1=“最后一次上线……4:45”。
+#----------------------------------------------------
+# Brok
+PC15C_TABLET_AFTER1-1=那平板电脑的确含有重要信息，可是却上锁了。
+# Brok
+PC15C_TABLET_AFTER1-2=唔……我还是把它带上吧。
+#----------------------------------------------------
+# Brok
+PC15C_SPOT1-1=这里似乎有些污渍。
+#----------------------------------------------------
+# Brok
+PC15C_SPOT1B-1=（哧溜）
+#----------------------------------------------------
+# Mink
+PC15C_SPOT1C-1=呃！你是在舔地板吗？
+# Brok
+PC15C_SPOT1C-2=得确认下。
+# Brok
+PC15C_SPOT1C-3=唔，这是咖啡。
+#----------------------------------------------------
+# Brok
+PC15C_SPOT1D-1=味道像咖啡。
+#----------------------------------------------------
+# Brok
+PC15C_SPOT2-1=咖啡渍……虽然很浅但还是看得见。
+#----------------------------------------------------
+# Brok
+PC15C_SPOT_MAGNIFY-1=等一下……！
+# Brok
+PC15C_SPOT_MAGNIFY-2=咖啡渍上面怎么会有这么多纳米机器人？！
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_NOTCHARGED1-1=这机器人……会不会就是屏幕上显示的那个？
+# Brok
+PC15C_TIDY_NOTCHARGED1-2=试试启动它……
+# Tidy
+PC15C_TIDY_NOTCHARGED1-3=警告——充电完毕前请勿打扰
+# Brok
+PC15C_TIDY_NOTCHARGED1-4=哎呀！
+# Ott
+PC15C_TIDY_NOTCHARGED1-5=布罗格先生，你还是先别动它吧！免得弄坏了它。
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_WAKE1-1=那个东西……在闪着绿光。
+# Brok
+PC15C_TIDY_WAKE1-2=这是否意味着……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Tidy suddenly wakes up. He's quite full of joy for a robot. When Brok talks to him, he's a bit caught off balance as he's not used to talking to bots like this
+# *****************************************************************
+# Tidy
+PC15C_TIDY_WAKE1B-1=你好哦！
+# Brok
+PC15C_TIDY_WAKE1B-2=（咕噜）
+#----------------------------------------------------
+# Tidy
+PC15C_TIDY_WAKE1C-1=你似乎，很惊讶很不安！
+# Tidy
+PC15C_TIDY_WAKE1C-2=别担心！我不会咬你的！
+# Tidy
+PC15C_TIDY_WAKE1C-3=很高兴见到，新面孔！打从我出生，就没见过，新人！
+# Brok
+PC15C_TIDY_WAKE1C-4=哦……
+# Brok
+PC15C_TIDY_WAKE1C-5=原来你是……
+# Tidy
+PC15C_TIDY_WAKE1C-6=哈什博士的助理，我叫汰涤！
+# Tidy
+PC15C_TIDY_WAKE1C-7=我整理东西，打扫卫生！
+# Brok
+PC15C_TIDY_WAKE1C-8=原来如此……
+# Brok
+PC15C_TIDY_WAKE1C-9=可以问你些问题吗？
+# Tidy
+PC15C_TIDY_WAKE1C-10=没问题，请问吧！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to Tidy
+# *****************************************************************
+# Brok
+PC15C_TIDY_DRHUSH1-1=那么……你是哈什博士制造的吗？
+# Tidy
+PC15C_TIDY_DRHUSH1-2=对对，他是我爸爸！我们爱爸爸。
+# Tidy
+PC15C_TIDY_DRHUSH1-3=我爸爸在哪？
+# Brok
+PC15C_TIDY_DRHUSH1-4=唔……
+# Mink
+PC15C_TIDY_DRHUSH1-5=他死了。
+# Brok
+PC15C_TIDY_DRHUSH1-6=喂！能不能体恤下这小家伙的心情！
+# Mink
+PC15C_TIDY_DRHUSH1-7=就他？他只不过是堆废铁。
+# Tidy
+PC15C_TIDY_DRHUSH1-8=爸爸挂啦？
+# Brok
+PC15C_TIDY_DRHUSH1-9=唔……应该是的。
+# Brok
+PC15C_TIDY_DRHUSH1-10=我们想要知道……
+# Tidy
+PC15C_TIDY_DRHUSH1-11=挂啦爸爸，爸爸挂啦！爸爸挂啦爸爸！
+# Brok
+PC15C_TIDY_DRHUSH1-12=……
+# Brok
+PC15C_TIDY_DRHUSH1-13=还以为你会……更伤心一点。
+# Mink
+PC15C_TIDY_DRHUSH1-14=我就说嘛，这玩意根本没有感情。
+# Tidy
+PC15C_TIDY_DRHUSH1-15=哦……
+# Tidy
+PC15C_TIDY_DRHUSH1-16=糟了糟了糟了！！
+# Tidy
+PC15C_TIDY_DRHUSH1-17=意思是，见不到，爸爸了？
+# Tidy
+PC15C_TIDY_DRHUSH1-18=挂啦爸爸？
+# Brok
+PC15C_TIDY_DRHUSH1-19=呃……
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_DRHUSH2-1=那个……节哀顺变吧……
+# Brok
+PC15C_TIDY_DRHUSH2-2=不过……你不是活人，或许……
+# Brok
+PC15C_TIDY_DRHUSH2-3=总之，我有些问题得问你。
+# Brok
+PC15C_TIDY_DRHUSH2-4=是不是你伤害了你爸爸？
+# Tidy
+PC15C_TIDY_DRHUSH2-5=伤害爸爸？
+# Tidy
+PC15C_TIDY_DRHUSH2-6=我不能！不不不。不可能。
+# Brok
+PC15C_TIDY_DRHUSH2-7=唔……
+# Brok
+PC15C_TIDY_DRHUSH2-8=你为什么笑着回答我……？
+# Tidy
+PC15C_TIDY_DRHUSH2-9=哦！
+# Tidy
+PC15C_TIDY_DRHUSH2-10=系统故障，马上更换表情。
+# Tidy
+PC15C_TIDY_DRHUSH2-11=……
+# Tidy
+PC15C_TIDY_DRHUSH2-12=挂啦爸爸……？
+# Brok
+PC15C_TIDY_DRHUSH2-13=呃，我已经搞不懂了！
+# Brok
+PC15C_TIDY_DRHUSH2-14=它……他……搞得我都混乱了！
+# Mink
+PC15C_TIDY_DRHUSH2-15=他没有撒谎。
+# Brok
+PC15C_TIDY_DRHUSH2-16=你怎么知道？他一直在更换表情！
+# Tidy
+PC15C_TIDY_DRHUSH2-17=爸爸是好人，不，爸爸是最好的！
+# Mink
+PC15C_TIDY_DRHUSH2-18=我倒是压根不在乎他摆什么肢体语言或者说什么屁话。
+# Mink
+PC15C_TIDY_DRHUSH2-19=机器人是无法伤害自己的创造者的。
+# Mink
+PC15C_TIDY_DRHUSH2-20=这是黄金法则。
+# Brok
+PC15C_TIDY_DRHUSH2-21=仔细说说？
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_SITUATION1-1=你最后一次见到你爸爸是什么时候？
+# Tidy
+PC15C_TIDY_SITUATION1-2=早上5:04。
+# Brok
+PC15C_TIDY_SITUATION1-3=他当时在干嘛？
+# Tidy
+PC15C_TIDY_SITUATION1-4=爸爸，出去，离开房间。
+# Brok
+PC15C_TIDY_SITUATION1-5=他出门时有说啥吗？
+# Tidy
+PC15C_TIDY_SITUATION1-6=有的！
+# Tidy
+PC15C_TIDY_SITUATION1-7=搜索记录中……
+# Hush
+PC15C_TIDY_SITUATION1-8=“我要找敏克博士谈谈。”
+# Mink
+PC15C_TIDY_SITUATION1-9=啥？！
+# Mink
+PC15C_TIDY_SITUATION1-10=这不可能！哈什博士今天根本没到过我办公室！
+# Ott
+PC15C_TIDY_SITUATION1-11=那你如何解释他现在就在你房间里……？
+# Mink
+PC15C_TIDY_SITUATION1-12=我不知道，不过……
+# Mink
+PC15C_TIDY_SITUATION1-13=那个铁罐头肯定是在撒谎！我要灭了他……
+# Brok
+PC15C_TIDY_SITUATION1-14=冷静点！否则我就得让你强制冷静了。
+# Mink
+PC15C_TIDY_SITUATION1-15=（咕噜）
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_SITUATION2-1=汰涤，你当时在干嘛？
+# Tidy
+PC15C_TIDY_SITUATION2-2=充电！电电电！
+# Brok
+PC15C_TIDY_SITUATION2-3=等等……你刚说你充电时还录下了哈什博士说的话？
+# Brok
+PC15C_TIDY_SITUATION2-4=奇怪了，我刚才见到你充电时是完全关机的。
+# Tidy
+PC15C_TIDY_SITUATION2-5=汰涤，有数个休眠阶段，像人类一样。
+# Brok
+PC15C_TIDY_SITUATION2-6=敏克博士，这是真的吗？
+# Mink
+PC15C_TIDY_SITUATION2-7=是的，我们并不会马上关闭机器人，以便有时间储存当天的数据。
+# Mink
+PC15C_TIDY_SITUATION2-8=同样的，在机器人也需要几个阶段才能完全醒来。
+# Mink
+PC15C_TIDY_SITUATION2-9=不过……你别听那个机器人的话！它是在混淆你！
+# Brok
+PC15C_TIDY_SITUATION2-10=你的感应器还有记录到别的东西吗？
+# Tidy
+PC15C_TIDY_SITUATION2-11=没有，异常！
+# Brok
+PC15C_TIDY_SITUATION2-12=唔……
+#----------------------------------------------------
+# Mink
+PC15C_TIDY_RULE1-1=你肯定有看过机器人反叛人类的科幻电影吧。
+# Mink
+PC15C_TIDY_RULE1-2=多年前，科学家们开始设计机器人时就想到了这一点。
+# Mink
+PC15C_TIDY_RULE1-3=所以就有了黄金法则，通过硬件层面的植入，由人工智能核心复制到身体的每一部分零件上。
+# Mink
+PC15C_TIDY_RULE1-4=没有机器人可以攻击其创造者。
+# Ott
+PC15C_TIDY_RULE1-5=没错！意识中心也有教过。
+# Tidy
+PC15C_TIDY_RULE1-6=我们没有，伤害爸爸！没有！
+# Brok
+PC15C_TIDY_RULE1-7=好的，那么……他们是无法伤害其创造者。但是我肯定这些可恶的废铁却可以伤害我！
+# Brok
+PC15C_TIDY_RULE1-8=我已经不止一次跟三角机器人交过手了。
+# Mink
+PC15C_TIDY_RULE1-9=那是当然，因为法则是有不同级别的许可的。
+# Tidy
+PC15C_TIDY_RULE1-10=许可！给汰涤许可！
+# Mink
+PC15C_TIDY_RULE1-11=嘘！待着别动。
+# Mink
+PC15C_TIDY_RULE1-12=对于一般的机器人，家属和朋友会被列入法则的二级许可。
+# Mink
+PC15C_TIDY_RULE1-13=而警用和军用三角机器人则是为战斗而生，它们会攻击任何被视为威胁的人。
+# Mink
+PC15C_TIDY_RULE1-14=具体情况依型号而定，不过黄金法则永远存在。
+# Mink
+PC15C_TIDY_RULE1-15=而且，我们从未发生过任何意外事故。
+# Brok
+PC15C_TIDY_RULE1-16=别那么肯定。
+# Brok
+PC15C_TIDY_RULE1-17=生活教会了我一件事……凡事都有第一次。
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_RULE2-1=你为何如此肯定哈什博士会遵守黄金法则？
+# Mink
+PC15C_TIDY_RULE2-2=很简单，算法会仔细地检查……
+# Tidy
+PC15C_TIDY_RULE2-3=算？法！嗨起来！不要停！！
+# Brok
+PC15C_TIDY_RULE2-4=汰涤，现在可不是跳舞的时候。
+# Mink
+PC15C_TIDY_RULE2-5=总之，如果他没有遵守算法的话，那他就无法跟外界联系。
+# Brok
+PC15C_TIDY_RULE2-6=好吧……
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_HIMSELF1-1=汰涤，你都有些什么功能？
+# Tidy
+PC15C_TIDY_HIMSELF1-2=汰涤会打扫！
+# Brok
+PC15C_TIDY_HIMSELF1-3=……嗯，还有呢……？
+# Tidy
+PC15C_TIDY_HIMSELF1-4=汰涤可以，伸展手臂！
+# Tidy
+PC15C_TIDY_HIMSELF1-5=像这样子！
+# Tidy
+PC15C_TIDY_HIMSELF1-6=或者这样子！
+# Ott
+PC15C_TIDY_HIMSELF1-7=很不错嘛！
+# Brok
+PC15C_TIDY_HIMSELF1-8=的确很实用。
+# Brok
+PC15C_TIDY_HIMSELF1-9=唔……你可以弯曲手臂吗？
+# Tidy
+PC15C_TIDY_HIMSELF1-10=什么？弯曲？不行。
+# Tidy
+PC15C_TIDY_HIMSELF1-11=垂直可以，水平可以，弯曲不行。
+# Tidy
+PC15C_TIDY_HIMSELF1-12=爸爸做不到，他尝试过。
+# Tidy
+PC15C_TIDY_HIMSELF1-13=现在，挂啦爸爸。
+# Ott
+PC15C_TIDY_HIMSELF1-14=呃……汰涤……？
+# Ott
+PC15C_TIDY_HIMSELF1-15=你现在就弄弯了。
+# Tidy
+PC15C_TIDY_HIMSELF1-16=哦！
+# Tidy
+PC15C_TIDY_HIMSELF1-17=好吧，我搞错了。
+# Tidy
+PC15C_TIDY_HIMSELF1-18=不能弯曲，在伸手臂时！
+# Brok
+PC15C_TIDY_HIMSELF1-19=噢。
+# Brok
+PC15C_TIDY_HIMSELF1-20=那么，这究竟有什么用途？
+# Tidy
+PC15C_TIDY_HIMSELF1-21=移动手臂，非常有效！身体不必移动！
+# Brok
+PC15C_TIDY_HIMSELF1-22=我懂了，这样能够提高打扫房间的效率。
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_HIMSELF2-1=还有别的功能吗？
+# Tidy
+PC15C_TIDY_HIMSELF2-2=汰涤可以，搬动物体，维修东西，打电话。
+# Tidy
+PC15C_TIDY_HIMSELF2-3=汰涤配备感应器，可以探测人类和物体，计算最短路线。
+# Ott
+PC15C_TIDY_HIMSELF2-4=或许有助于送咖啡吧……
+# Tidy
+PC15C_TIDY_HIMSELF2-5=还有，汰涤可以。脱衣服！
+# Brok
+PC15C_TIDY_HIMSELF2-6=啥……？
+# Tidy
+PC15C_TIDY_HIMSELF2-7=爸爸喜欢，赤身裸体。
+# Ott
+PC15C_TIDY_HIMSELF2-8=他说啥？！
+# Tidy
+PC15C_TIDY_HIMSELF2-9=裸体！
+# Brok
+PC15C_TIDY_HIMSELF2-10=不、不必说了！
+# Mink
+PC15C_TIDY_HIMSELF2-11=他要么是又出故障了……
+# Mink
+PC15C_TIDY_HIMSELF2-12=……要么就是哈什博士是个暴露狂。
+# Mink
+PC15C_TIDY_HIMSELF2-13=我在想……
+# Ott
+PC15C_TIDY_HIMSELF2-14=布罗格先生？你在写什么？
+# Brok
+PC15C_TIDY_HIMSELF2-15=那个……这明显是个线索，所以……
+# Tidy
+PC15C_TIDY_HIMSELF2-16=爸爸，全裸！对对！
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_WELCOME1-1=汰涤，我需要你的帮忙。
+# Tidy
+PC15C_TIDY_WELCOME1-2=对对！
+#----------------------------------------------------
+# Tidy
+PC15C_TIDY_WELCOME2-1=挂啦爸爸……？
+# Brok
+PC15C_TIDY_WELCOME2-2=恐怕目前还是死的。
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_EXITFIRST-1=就到此为止了。
+# Tidy
+PC15C_TIDY_EXITFIRST-2=为止！为止为止！
+# Tidy
+PC15C_TIDY_EXITFIRST-3=需要开工了！
+# Brok
+PC15C_TIDY_EXITFIRST-4=等等！
+# Brok
+PC15C_TIDY_EXITFIRST-5=不准你乱碰任何东西！
+# Tidy
+PC15C_TIDY_EXITFIRST-6=不是爸爸。拒绝服从。
+# Tidy
+PC15C_TIDY_EXITFIRST-7=滚开！对对！
+# Brok
+PC15C_TIDY_EXITFIRST-8=啥？！
+# Brok
+PC15C_TIDY_EXITFIRST-9=你个可恶的……
+# Mink
+PC15C_TIDY_EXITFIRST-10=汰涤，待着。
+# Mink
+PC15C_TIDY_EXITFIRST-11=你现在什么都不要碰。
+# Tidy
+PC15C_TIDY_EXITFIRST-12=好的，敏克！
+# Brok
+PC15C_TIDY_EXITFIRST-13=他服从你的命令？！
+# Mink
+PC15C_TIDY_EXITFIRST-14=当然。虽然我算不上喜欢，但这权限的确很实用。
+# Mink
+PC15C_TIDY_EXITFIRST-15=我是被列在他的“亲密人员”列表中的。
+# Brok
+PC15C_TIDY_EXITFIRST-16=这样啊，那只要他不动就行……
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_EXIT1-1=汰涤，不准动！
+# Tidy
+PC15C_TIDY_EXIT1-2=对对！
+# Brok
+PC15C_TIDY_EXIT1-3=好孩子！
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_EXIT2-1=好了，待在这里别动。
+# Tidy
+PC15C_TIDY_EXIT2-2=挂啦爸爸……？
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_THINK1-1=（看起来像个感情丰富的机器人。不过……）
+# Brok
+PC15C_TIDY_THINK1-2=（我不信任人工智能，天知道他是否在隐瞒着什么事情。）
+# Brok
+PC15C_TIDY_THINK1-3=（我得查出真相，继续调查吧！）
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_INV_DEFAULT1-1=这物品你熟悉不？
+# Tidy
+PC15C_TIDY_INV_DEFAULT1-2=不知道！垃圾，挂啦爸爸。
+# Brok
+PC15C_TIDY_INV_DEFAULT1-3=看来他并不认识这玩意。
+#----------------------------------------------------
+# Tidy
+PC15C_TIDY_INV_DEFAULT2-1=那是，垃圾！
+# Tidy
+PC15C_TIDY_INV_DEFAULT2-2=汰涤帮你！整理物品。
+# Brok
+PC15C_TIDY_INV_DEFAULT2-3=喂，等等……！不准你动手！
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_INV_MONEY-1=他是用不到的……
+# Tidy
+PC15C_TIDY_INV_MONEY-2=给我！给我！给我！
+# Brok
+PC15C_TIDY_INV_MONEY-3=没门！
+#----------------------------------------------------
+# Tidy
+PC15C_TIDY_INV_NOREACTION-1=……
+# Brok
+PC15C_TIDY_INV_NOREACTION-2=（他是宕机了吗？）
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_INV_LAMP-1=你认识这台灯不？
+# Tidy
+PC15C_TIDY_INV_LAMP-2=肮脏！让我清理！
+# Brok
+PC15C_TIDY_INV_LAMP-3=专心点！我需要有用的信息！
+# Tidy
+PC15C_TIDY_INV_LAMP-4=打扫卫生，非常有用！
+#----------------------------------------------------
+# Tidy
+PC15C_TIDY_INV_MAPBUILDING-1=汰涤有追踪！不需要垃圾地图。
+#----------------------------------------------------
+# Tidy
+PC15C_TIDY_INV_REMOTECONTROL-1=没有人！可以控制汰涤！
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_INV_PILLHUSH-1=这是你爸爸服用的吗？
+# Tidy
+PC15C_TIDY_INV_PILLHUSH-2=太迟了，爸爸挂啦。
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_INV_TABLETHUSH-1=帮我解锁这平板电脑！
+# Tidy
+PC15C_TIDY_INV_TABLETHUSH-2=不行，只有挂啦爸爸，可以。
+#----------------------------------------------------
+# Brok
+PC15C_TIDY_INV_TRAMPPRESCR-1=你是医生吗？
+# Tidy
+PC15C_TIDY_INV_TRAMPPRESCR-2=找爸爸吧。
+# Tidy
+PC15C_TIDY_INV_TRAMPPRESCR-3=糟糕！爸爸挂啦！
+# Brok
+PC15C_TIDY_INV_TRAMPPRESCR-4=唔……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When falling after inspecting the vent
+# *****************************************************************
+# Brok
+PC15C_FROMVENT-1=哎哟……痛死我了。
+#----------------------------------------------------
+# Brok
+PC15C_PAINTINGREMOVED1-1=嗯……
+#----------------------------------------------------
+# Brok
+PC15C_DRAWER1-1=那里有什么？
+#----------------------------------------------------
+# Brok
+PC15C_DRAWER2-1=没什么重要的。
+#----------------------------------------------------

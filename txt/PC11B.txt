@@ -1,0 +1,251 @@
+﻿#----------------------------------
+#=LIA APARTMENT NIGHTMARE (LOUNGE)
+#----------------------------------
+
+
+#----------------------
+#= Door toilets
+#----------------------
+ID=PC11B_DOORTOILETS1
+T=I can't access it...
+W=BROK
+A=DOWN
+CONTEXT=Room interactions
+
+T=Hopefully I can hold on a little longer.
+W=BROK
+A=CONFUSED
+COMM=Toilets door
+
+#----------------------
+#= Door bedroom & right
+#----------------------
+ID=PC11B_DOORBEDROOM1
+T=Locked...
+W=BROK
+A=THINK
+
+T=And in perfect shape. I don't think I can break that one.
+W=BROK
+A=TIRED
+ 
+#----------------------
+ID=PC11B_DOORBEDROOM2
+T=Nope... It won't budge.
+W=BROK
+A=THINK
+
+T=I'm pretty sure it's network controlled. There's no external access.
+W=BROK
+A=THINK
+
+T=I've always been against all those security systems.
+W=BROK
+A=ANGRY
+
+T="100% safe!" (Until you get stuck inside with a fire.)
+W=BROK
+A=ANGRY
+
+
+#----------------------
+#= Go back
+#----------------------
+ID=PC11B_GOBACK
+T=No point going back there...
+W=BROK
+A=OPPOSITE
+
+
+
+#----------------------
+#= Center device
+#----------------------
+ID=PC11B_CENTERDEVICE1
+T=If I'm not mistaken... This is a Meety-Me.
+W=BROK
+A=THINK
+
+T=A multimedia holographic device to watch all your favorite programs and livies for hours in the comfort of your home!
+W=BROK
+A=MAYBE
+TEN=PC11B_CENTERDEVICE_PUSH
+
+#----------------------
+ID=PC11B_CENTERDEVICE1B
+T=Obviously, it won't work.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC11B_CENTERDEVICE2
+T=All your entertainment right at hand!
+W=BROK
+A=HAPPY
+
+T=When it works.
+W=BROK
+A=DOWN
+
+#----------------------
+#= Robot
+#----------------------
+ID=PC11B_ROBOT1
+T=Looks like a multi-tasks Tribot.
+W=BROK
+A=THINK
+
+T=Let's switch it on.
+W=BROK
+A=READY
+TEN=PC11B_ROBOT_SWITCHON
+
+#----------------------
+ID=PC11B_ROBOT1B
+T=Nothing. Is it out of juice? 
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC11B_ROBOT2
+T=Another Tribot.
+W=BROK
+A=THINK
+TEN=PC11B_ROBOT_SWITCHON
+
+#----------------------
+ID=PC11B_ROBOT2B
+T=No good. Are they broken?
+W=BROK
+A=WONDER
+
+T=I always knew these were unreliable junk.
+W=BROK
+A=ANGRY
+
+T=Too bad. They could have helped putting out the fire.
+W=BROK
+A=ANGRY
+TEN=PC11B_ROBOTS_INFOOFF
+
+#----------------------
+#= Robot wakes up
+#----------------------
+ID=PC11B_ROBOT_WAKEUP1
+T=Welcome.
+W=TRIBOT
+C1=BROK
+C1A=SURPRISED
+C2=TRIBOT
+C2A=NORMAL
+CONTEXT=The robot wakes up
+
+T=Yikes!
+W=BROK
+C1A=SURPRISED
+COMM=Brok is taken by surprise by the robot suddenly waking up
+
+T=Unidentified user. Please provide name and function.
+W=TRIBOT
+
+T=My name? It's...
+W=BROK
+C1A=WONDER
+
+T=Alert level 5. Burglary in progress.
+W=TRIBOT
+
+T=What the...?
+W=BROK
+C1A=CONFUSED
+
+T=Please remain still until agents arrive to arrest you.
+W=TRIBOT
+
+T=I'm no thief, triangle-head!
+W=BROK
+C1A=ANGRY
+
+T=And don't you have more urgent business to take care of?
+W=BROK
+
+T=Like... The fire?!
+W=BROK
+
+T=Inappropriate attitude detected.
+W=TRIBOT
+
+T=Request for applicable disposition. Database search in progress...
+W=TRIBOT
+
+T=Network unreachable. Closest range of action in local data is...
+W=TRIBOT
+
+T=Neutralize the individual at all costs.
+W=TRIBOT
+C1A=CONFUSED
+
+T=That tin can is crazy! No point trying to reason with these things!
+W=BROK
+C1A=FURIOUS
+
+T=Please don't interrupt the destruction process.
+W=TRIBOT
+
+T=Here it comes!
+W=BROK
+TEN=PC11B_ROBOT1_ATTACK
+
+#----------------------
+ID=PC11B_ROBOT_DEAD1
+T=Phew... 
+W=BROK
+C1A=TIRED
+CONTEXT=Robot "dead"
+
+T=I'm glad this was the only mad robot here.
+W=BROK
+C1A=MAYBE
+TEN=PC11B_ROBOT1_DEAD2
+
+#----------------------
+ID=PC11B_ROBOT_DEAD2
+T=Whoops!
+W=BROK
+C1A=SURPRISED
+TEN=PC11B_ROBOT2_ATTACK
+
+
+#----------------------
+ID=PC11B_ROBOT_DEAD3
+T=Ah... Looks like this was the last one.
+W=BROK
+C1A=FURIOUS
+TEE=PC11B_ROBOT_DEAD3B
+
+T=...Hey! A door just unlocked!
+W=BROK
+C1A=THINK
+TEN=PC11B_ENDFIGHT_CHECK
+
+
+
+
+
+#----------------------
+#= Robot far
+#----------------------
+ID=PC11B_ROBOTFAR1
+T=It's not active... and burning.
+W=BROK
+A=THINK
+
+T=I shouldn't worry. Those things are fireproof.
+W=BROK
+A=MAYBE
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD2 - tomoe_hotaru45 - 02/09/2019
+# PROOFREAD AND UPDATED - Chris Barnes - 02/08/2019
+###############################################

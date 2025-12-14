@@ -1,0 +1,2492 @@
+﻿#-------------------------------
+#=BUNKER MAIN ROOM
+#-------------------------------
+
+
+#----------------------
+#= Init
+#----------------------
+ID=GPC19B_FIRST1
+T=There you are! Took you long enough.
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=BAD
+CONTEXT=Graff arrives in the second part of the trial. Klay is there.
+TEN=GPC19B_END_PART
+
+#----------------------
+ID=GPC19B_FIRST2
+T=Well...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=NORMAL
+
+T=I'm almost glad to see you, Klay. Almost.
+W=GRAFF
+C1A=DISDAIN
+
+T=You bet. This place gives me the creeps!
+W=KLAY
+C2A=ANGRY
+
+T=Just look at that thing on the wall.
+W=KLAY
+
+T=Erm... I'm more concerned about all those bots.
+W=GRAFF
+
+T=They're inactive, you fool.
+W=KLAY
+C2A=NORMAL
+
+T=(Got a bad feeling anyway...)
+W=GRAFF
+C1A=OPPOSITE
+MOOD=THINK
+
+T=So... What are we supposed to do here?
+W=GRAFF
+C1A=THINK
+
+T=Hey! Find out by (Cough) yourself... (Cough, cough)
+W=KLAY
+C2A=ANGRY
+
+T=You're okay?
+W=GRAFF
+C1A=MEH
+
+T=I'm... (cough) I'm fine.
+W=KLAY
+C2A=GOOD
+
+T=You forgot to take your pill.
+W=GRAFF
+C1A=OPPOSITE
+
+T=...Yeah. 
+W=KLAY
+
+T=Hmm... I didn't take mine yet.
+W=GRAFF
+TEB=GPC19B_FIRST2_PIC1
+
+T=Maybe I can give you half...
+W=GRAFF
+C1A=FRIENDLY
+TEN=GPC19B_FIRST2_PIC2
+
+#----------------------
+ID=GPC19B_FIRST1B
+T=Hey!!! Don't you dare!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=KLAY
+C2A=BAD
+TEN=GPC19B_FIRST2_PIC3
+
+T=(Swallows)
+W=KLAY
+C2A=NORMAL
+
+T=You... You jerk! That was mine!
+W=GRAFF
+C1A=ANGRY
+TEN=GPC19B_FIRST2_PIC3_REMOVE
+
+T=No big deal! You'll get one as soon as we go out.
+W=KLAY
+C2A=HAPPY
+
+T=Besides you know a pill isn't efficient unless you take it whole.
+W=KLAY
+C2A=BAD
+
+T=Ugh, you'll never change. Always so arrogant.
+W=GRAFF
+C1A=TURN
+
+T=If I wasn't so tired, I'd beat the crap out of you.
+W=GRAFF
+
+T=Focus! You'd better get out of here fast, buddy.
+W=KLAY
+
+T=Hrmph... You won't get away with this.
+W=GRAFF
+TEN=GPC19B_STARTGRAFF
+
+#----------------------
+ID=GPC19B_SCREEN_GIVENUP
+T=What?!
+W=KLAY
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=SURPRISED
+
+T=You gave up?!
+W=KLAY
+
+T=...Yeah.
+W=GRAFF
+VLOW=1
+
+T=Man! You suck.
+W=KLAY
+C2A=BAD
+
+T=I could have solved those puzzles with my eyes closed!
+W=KLAY
+C2A=HAPPY
+
+T=Spare me your comments. I feel bad enough about this.
+W=GRAFF
+TEN=GPC19B_CHECKNEXT
+
+#----------------------
+ID=GPC19B_SCREEN_SUCCESS
+T=You sure took your time. I've been stuck here for ages!
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=BAD
+
+T=You mean... You didn't solve your share of puzzles?
+W=GRAFF
+
+T=Of course I did.
+W=KLAY
+C2A=COCKY
+
+T=Easy as pie. They're really taking us for beginners!
+W=KLAY
+
+T=You know it's your mom who set up this trial, right?
+W=GRAFF
+C1A=TURN
+
+T=Wrong. It was crafted a long time ago. She's only following instructions.
+W=KLAY
+C2A=NORMAL
+
+T=From who?
+W=GRAFF
+
+T=Hmm... Not sure. She's very secretive when it comes to this.
+W=KLAY
+C2A=BAD
+TEN=GPC19B_CHECKNEXT
+
+
+
+#----------------------
+ID=GPC19B_KLAY1
+T=(I'd rather not. I might accidentally punch him in his arrogant face.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+T=(Let's explore the room.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+TEN=GPC19B_CHECKNEXT
+
+#----------------------
+#TODO Not implemented yet
+ID=GPC19B_KLAYHIT1
+T=Argh!!!
+W=KLAY
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=SURPRISED
+CONTEXT=Hitting Klay
+
+T=Are you nuts?!
+W=KLAY
+C2A=ANGRY
+
+#----------------------
+ID=GPC19B_KLAYHIT2
+T=Aww! Awww!
+W=KLAY
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=SURPRISED
+C2_EYESHUT=1
+
+T=You know we might be being watched right now?! You're screwed!
+W=KLAY
+C2A=ANGRY
+
+T=I don't care.
+W=GRAFF
+A=DISDAIN
+
+
+#----------------------
+#= Wall
+#----------------------
+ID=GPC19B_WALL1
+T=I'm afraid to find out what this is used for...
+W=GRAFF
+A=GASP
+CONTEXT=Room interactions
+
+#----------------------
+#= Button push
+#----------------------
+ID=GPC19B_BUTTONPUSH1
+T=Woah!...
+W=GRAFF
+A=SURPRISED
+COMM=The button is for giving shocks to whoever is tied to the wall
+
+T=That button activates... some energy shock on that part of the wall?
+W=GRAFF
+A=THINK
+TEN=GPC19B_CHECKNEXT
+
+#----------------------
+ID=GPC19B_BUTTONPUSH2
+T=Hey, Klay. Do you mind going over there for a sec?
+W=GRAFF
+C1=GRAFF
+C1A=DISDAIN
+C2=KLAY
+C2A=SURPRISED
+
+T=Yeah, right.
+W=KLAY
+C2A=ANGRY
+
+T=We won't know what this does without trying!
+W=GRAFF
+
+T=Get lost.
+W=KLAY
+TEN=GPC19B_CHECKNEXT
+
+
+#----------------------
+#= Door bots
+#----------------------
+ID=GPC19B_DOORBOTS1
+T=This won't open! But it might actually be a good thing.
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+#= Doors on the side
+#----------------------
+ID=GPC19B_DOORSIDE1
+T=Two locked doors without a handle.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+
+T=I bet these are exits and each of us ought to take a different one.
+W=GRAFF
+
+T=Wow! You must have gathered all your brain cells to understand this.
+W=KLAY
+C2=KLAY
+C2A=BAD
+
+T=Shut up.
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC19B_CHECKNEXT
+
+#----------------------
+ID=GPC19B_DOORSIDE2
+T=Locked.
+W=GRAFF
+A=MEH
+TEN=GPC19B_CHECKNEXT
+
+#----------------------------------
+#= Going to Graff's previous room
+#----------------------------------
+ID=GPC19B_GRAFFROOMS1
+T=...
+W=GRAFF
+A=GASP
+
+T=Looks like I can't go back.
+W=GRAFF
+A=THINK
+TEN=PC19B_GRAFFROOMS_BACK
+
+#----------------------------------
+#= Going to Klay's previous room
+#----------------------------------
+ID=GPC19B_KLAYROOMS1
+T=Hey! Where do you think you're going?
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=ANGRY
+
+T=Darn.
+W=GRAFF
+
+T=This is the room I came from. There's no point going back there.
+W=KLAY
+C2A=NORMAL
+
+T=(I hate to admit defeat but... he's right.)
+W=GRAFF
+C1A=THINK
+MOOD=THINK
+TEN=PC19B_KLAYROOMS_BACK
+
+#----------------------
+#= Frame
+#----------------------
+ID=GPC19B_FRAME1
+T=Weird. When I approach this thing, a picture appears.
+W=GRAFF
+A=THINK
+TEN=PC19B_SHOW_ENTRANCE
+
+#----------------------
+ID=GPC19B_ENTRANCE_PICTURE1
+T=...
+W=GRAFF
+A=MEH
+
+T=Is this the outside of the building?
+W=GRAFF
+TEN=PC19B_ENTRANCE_BACK
+
+#----------------------
+ID=GPC19B_ENTRANCE_PICTURE2
+T=...
+W=GRAFF
+A=MEH
+TEN=PC19B_ENTRANCE_BACK
+
+#----------------------
+#= Screen
+#----------------------
+ID=GPC19B_SCREEN1
+T=This foot screen seems to display...
+W=GRAFF
+A=THINK
+
+T=The results of this trial so far?
+W=GRAFF
+A=OPPOSITE
+TEN=GPC19B_SCREENCHECK
+
+#----------------------
+ID=GPC19B_SCREEN2
+T=What are we supposed to do now?
+W=GRAFF
+A=OPPOSITE
+TEN=CLICKERS_BACK
+
+
+
+#----------------------
+#= Tribots
+#----------------------
+ID=GPC19B_TRIBOTS1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=NORMAL
+
+T=Watching them makes me uneasy.
+W=GRAFF
+
+T=Why?
+W=KLAY
+C2A=BAD
+
+T=Not sure myself.
+W=GRAFF
+
+T=Maybe they just remind me of your mother.
+W=GRAFF
+C1A=HAPPY
+
+T=How dare you!
+W=KLAY
+C1A=GASP
+C2A=ANGRY
+
+T=She's so much more than those pieces of junk.
+W=KLAY
+
+T=Yeah...
+W=GRAFF
+C1A=TURN
+
+T=...
+W=GRAFF
+TEN=GPC19B_CHECKNEXT
+
+#----------------------
+ID=GPC19B_TRIBOTS2
+T=Better look away...
+W=GRAFF
+A=TURN
+TEN=GPC19B_CHECKNEXT
+
+#----------------------
+#= Klay goes to bed
+#----------------------
+ID=GPC19B_KLAYBED1
+T=You've got to be kidding me.
+W=GRAFF
+C1=GRAFF
+C1A=STUPID
+C2=KLAY
+C2A=HAPPY
+CONTEXT=Klay goes to lay on bed.
+
+T=We're having a test here, you know!
+W=GRAFF
+C1A=MEH
+
+T=Why do you think they have this?
+W=KLAY
+C2A=BAD
+
+T=Check the foot screen. It's telling us to wait.
+W=KLAY
+
+T=If we're going to get stuck here for a while, we might as well have a good time.
+W=KLAY
+C2A=NORMAL
+
+T=Well I'm not going to sit around and do nothing!
+W=GRAFF
+C1A=OPPOSITE
+
+T=Of course you won't. There's only one bed.
+W=KLAY
+C2A=COCKY
+
+T=You're hopeless.
+W=GRAFF
+C1A=STUPID
+TEN=CLICKERS_BACK
+
+
+#----------------------
+ID=GPC19B_KLAYBED2
+T=Come on. Relax!
+W=KLAY
+C1=GRAFF
+C1A=THINK
+C2=KLAY
+C2A=HAPPY
+
+T=You're always so tense. It's a wonder you haven't had a heart attack already!
+W=KLAY
+C2A=BAD
+
+T=Easy for you to say. You're like a Drumer dwelling in the Slums.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Life's always treated you well.
+W=GRAFF
+
+T=...
+W=KLAY
+C2A=GOOD
+
+T=You don't know anything.
+W=KLAY
+C1A=THINK
+C2_EYESHUT=1
+TEN=GPC19B_INSIST_CHOICE
+IT=1
+
+#----------------------
+ID=GPC19B_KLAYBED_NOTINSIST1
+T=Actually I'm starting to think it's your fault we're stuck.
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=BAD
+
+T=My fault?! What did I do?!
+W=GRAFF
+C1A=GASP
+
+T=You're cursed. Just like your dad.
+W=KLAY
+C2A=ANGRY
+
+T=He's not my father! How many times do I need to say it?
+W=GRAFF
+C1A=ANGRY
+
+T=Right. You've got a dead mother and a... missing father?
+W=KLAY
+C2A=BAD
+
+T=Stop pretending you're perfect.
+W=GRAFF
+C1A=TURN
+
+T=Go check on your mother. I bet she must be rusting in the rain. Hope you don't forget to fill her oil tank!
+W=GRAFF
+C1A=DISDAIN
+
+T=How dare you!
+W=KLAY
+C2A=ANGRY
+
+T=If she didn't have pity a few years back, you wouldn't even be here right now!
+W=KLAY
+
+T=You've been given a chance to become a Drumer and live your dreams, and that's how you take it?
+W=KLAY
+
+T=You don't deserve it! I do!
+W=KLAY
+C2A=BAD
+TEB=GPC19B_KLAYBED_MUSICFADE
+TEE=PC19B_SCREEN_PHASE3
+
+T=Oh, yeah?! That's what we're gonna find out!
+W=GRAFF
+C1A=READY
+TEE=PC19B_LOOKTOWARDSSCREEN
+
+T=The screen changed. Let's do this!
+W=GRAFF
+TEN=PC19B_KLAY_GOESTOWARDSCREEN
+
+
+
+
+#----------------------
+ID=GPC19B_KLAYBED_INSIST1
+T=Dare to share?
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=GOOD
+
+T=...
+W=KLAY
+TEN=GPC19B_KLAYBED_MUSICFADE
+
+T=It's about your mother, right?
+W=GRAFF
+C1A=SAD
+
+T=Nobody dares to ask but...
+W=GRAFF
+
+T=I need to know. How come your mom's a bot?
+W=GRAFF
+C1A=TURN
+
+T=...
+W=KLAY
+TEN=GPC19B_KLAYBED_MUSICSAD
+
+T=When I was eight... There was an accident.
+W=KLAY
+C2_EYESHUT=1
+
+T=An accident...?
+W=GRAFF
+C1A=THINK
+
+T=My mom... She... didn't make it...
+W=KLAY
+C2_EYESHUT=1
+
+T=...
+W=KLAY
+C2_EYESHUT=1
+
+T=She got her memories transferred.
+W=KLAY
+C2_EYESHUT=0
+
+T=What...? Is that even possible?
+W=GRAFF
+C1A=GASP
+
+T=I can't remember much... But...
+W=KLAY
+
+T=I've been raised by this robot and I don't see her as one. She's always been good to me.
+W=KLAY
+
+T=As far as I can tell... She's my mom, and that's all that matters.
+W=KLAY
+C2A=NORMAL
+
+T=At least you've got one.
+W=GRAFF
+C1A=TORN
+
+T=Ha! You're right.
+W=KLAY
+C2A=HAPPY
+
+T=I'd rather have a robotic mother than a dead one!
+W=KLAY
+C1A=GASP
+
+T=That's mean, you know.
+W=GRAFF
+
+T=But true!
+W=KLAY
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=And your dad? I mean... Your real one?
+W=KLAY
+C2A=GOOD
+
+T=What about him?
+W=GRAFF
+
+T=Well... Did he run away when he found out what kind of son he had?
+W=KLAY
+C2A=BAD
+
+T=...
+W=GRAFF
+
+T=No way! I'm right?
+W=KLAY
+C2A=SURPRISED
+
+T=I... I've barely known him.
+W=GRAFF
+
+T=I think he left Mom when I was five or something.
+W=GRAFF
+C1A=SAD
+
+T=Soon after... He disappeared off the face of the earth.
+W=GRAFF
+C1A=TORN
+
+T=What was his name?
+W=KLAY
+
+T=Remn.
+W=GRAFF
+
+T=Remn...
+W=KLAY
+C2A=BAD
+
+T=I've never had a father myself. My mom resorted to laboratory procreation.
+W=KLAY
+C2A=NORMAL
+
+T=She wanted me to be... perfect.
+W=KLAY
+C2A=GOOD
+
+T=And she succeeded.
+W=GRAFF
+C1A=TURN
+
+T=Ha! Don't make me laugh.
+W=KLAY
+C2A=HAPPY
+
+T=You're not?
+W=GRAFF
+C1A=GASP
+
+T=...
+W=KLAY
+C2A=GOOD
+
+T=Everyday... I have to give it my best.
+W=KLAY
+C1A=MEH
+
+T=Do you know what it's like to have all your actions... All your destiny...
+W=KLAY
+
+T=Planned out for you... even before you were born?
+W=KLAY
+
+T=I'm... tired.
+W=KLAY
+C2_EYESHUT=1
+
+T=As soon as I get my diploma...
+W=KLAY
+
+T=I'll live my own life.
+W=KLAY
+C2A=BAD
+
+T=...
+W=GRAFF
+
+T=Sorry.
+W=GRAFF
+C1A=TORN
+C2A=GOOD
+
+T=I realize... We've both had problems growing up.
+W=GRAFF
+
+T=Yeah...
+W=KLAY
+TEN=GPC19B_KLAYBED_MUSICFADE
+
+T=...
+W=GRAFF
+TEE=PC19B_SCREEN_PHASE3
+
+T=...
+W=KLAY
+TEE=PC19B_LOOKTOWARDSSCREEN
+
+T=Hey, look! The screen changed.
+W=GRAFF
+C1A=DISDAIN
+
+T=Finally!
+W=KLAY
+C2A=BAD
+TEN=PC19B_KLAY_GOESTOWARDSCREEN
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS1
+T=One... over there?...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=KLAY
+C2A=BAD
+CONTEXT=The "game" starts. One of the two characters will get tied up to the wall while another answers questions. Player can choose Graff or Klay.
+
+T=That means...
+W=KLAY
+C2A=SURPRISED
+
+T=One of us gets stuck to that wall while the other does...
+W=GRAFF
+C1A=MEH
+
+T=What, exactly?
+W=GRAFF
+C1A=TURN
+
+T=Who knows.
+W=KLAY
+C2A=NORMAL
+
+T=We need to make a decision!
+W=GRAFF
+TEN=GPC19B_WHO_CHOICE
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS_GRAFF
+T=I'll go.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=NORMAL
+TEN=GPC19B_GRAFFGOES_SHACKLES
+
+
+T=Perfect.
+W=KLAY
+C2A=HAPPY
+
+T=After all, your part may be even worse.
+W=GRAFF
+C1A=DISDAIN
+
+T=...
+W=KLAY
+C2A=SURPRISED
+
+T=Nah. Can't be!
+W=KLAY
+C2A=HAPPY
+TEN=GPC19B_GAMESTARTS_SHACKLES
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS_KLAY
+T=You go.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=SURPRISED
+
+T=No way!
+W=KLAY
+C2A=ANGRY
+
+T=I'm not stupid. This looks dangerous.
+W=KLAY
+
+T=This must be a test of cooperation. What do you think will happen if none of us does?
+W=GRAFF
+C1A=ANGRY
+
+T=Then why don't you go?
+W=KLAY
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=I'm worried. I might get claustrophobic...
+W=GRAFF
+
+T=No worries. If anything happens, I'll let you out.
+W=KLAY
+C2A=HAPPY
+
+T=How do you know you'll be able to let me out?
+W=GRAFF
+
+T=Mom wouldn't allow it.
+W=KLAY
+C2A=NORMAL
+
+T=Besides... 
+W=KLAY
+C2A=BAD
+
+T=Ten seconds left.
+BVOICESP=VARIOUS
+TEN=GPC19B_GAMESTARTS_TIMER
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS_NB1
+T=We're running out of time!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=ANGRY
+NB=1
+D=60
+
+T=If no one goes, we'll both fail!
+W=GRAFF
+D=60
+
+T=Then go!
+W=KLAY
+D=30
+TEN=GPC19B_GAMESTARTS_WAIT
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS_NB2
+T=Five.
+NB=1
+D=40
+BVOICE=VARIOUS
+
+T=Four.
+D=40
+
+T=Three.
+D=40
+
+T=Two.
+D=40
+
+T=One.
+D=40
+TEE=GPC19B_GAMESTARTS_KLAYGOES
+
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS_KLAYGOES1
+T=...Argh!
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=ANGRY
+C2_EYESHUT=1
+
+T=I... I can't afford to fail this trial because of you!
+W=KLAY
+C2_EYESHUT=0
+
+T=Don't worry. I'm sure it'll be fine!
+W=GRAFF
+C1A=DISDAIN
+TEN=GPC19B_GAMESTARTS_SHACKLES
+
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS_GRAFFGOESAFTERALL1
+T=You win.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=NORMAL
+TEN=GPC19B_GRAFFGOES_SHACKLES
+
+T=Finally, you listen to reason!
+W=KLAY
+C2A=HAPPY
+TEN=GPC19B_GAMESTARTS_SHACKLES
+
+
+
+#----------------------
+ID=GPC19B_GAMESTARTS_GRAFF1
+T=Uh-oh...
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+TEN=GPC19B_GAMESTARTS
+
+#-----------------------------------------
+ID=GPC19B_Q1_GRAFF
+T=The game will now start.
+BVOICESP=VARIOUS
+
+T=Game?...
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=BAD
+
+T=The host should remain silent.
+BVOICESP=VARIOUS
+
+T=Student. Please say your name and your partner's name.
+BVOICESP=VARIOUS
+
+TEN=GPC19B_Q1_CHOICE
+
+#----------------------
+ID=GPC19B_Q1_TRUTH1
+T=I'm Graff. He's Klay.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=GOOD
+TEN=GPC19B_Q1_OK
+
+#----------------------
+ID=GPC19B_Q1_TRUTH2
+T=It worked?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=KLAY
+C2A=GOOD
+
+T=Maybe it won't be that difficult after all.
+W=KLAY
+C2A=HAPPY
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_Q1_JOKE1
+T=My name's Bill and he's Board.
+W=GRAFF
+C1=GRAFF
+C1A=DISDAIN
+C2=KLAY
+C2A=SURPRISED
+COMM=Obviously this is a joke... "billboard" Replace with whatever silly joke you can come up with
+
+T=What?...
+W=KLAY
+C2A=ANGRY
+
+T=Bill... Board!...
+W=GRAFF
+
+T=Got it?
+W=GRAFF
+C1A=LAUGH
+
+T=Man. You really have crappy hum...
+W=KLAY
+COMM=Humor
+SKIPEND=1
+TEN=GPC19B_HURT_KLAY
+
+
+
+#-----------------------------------------
+ID=GPC19B_Q1_KLAY
+T=The game will now start.
+BVOICESP=VARIOUS
+
+T=I've got a bad feeling...
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=NORMAL
+
+T=Oh, stop being such a drama queen.
+W=KLAY
+
+T=Typical! You're not the one chained up.
+W=GRAFF
+C1A=TURN
+
+T=The host should remain silent.
+BVOICESP=VARIOUS
+
+T=You heard the voice? Shut up.
+W=KLAY
+C2A=HAPPY
+
+T=I hate you.
+W=GRAFF
+
+T=Student. Please say your name and your partner's name.
+BVOICESP=VARIOUS
+
+T=Stupid. You already know them!
+W=KLAY
+C2A=BAD
+TEN=GPC19B_HURT_GRAFF
+
+
+#-----------------------------------------
+ID=GPC19B_Q2_GRAFF
+T=Student. Please say the following out loud.
+BVOICESP=VARIOUS
+
+T="I love you Klay. Please forgive me."
+BVOICESP=VARIOUS
+
+T=Is that a joke?
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=KLAY
+C2A=SURPRISED
+
+T=Just... Do whatever they say!
+W=KLAY
+C2A=GOOD
+TEN=GPC19B_Q2_CHOICE
+
+#----------------------
+ID=GPC19B_Q2_OKAY
+T=I love you Klay. Please forgive me.
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=HAPPY
+TEN=GPC19B_Q2_OKAY1B
+
+#----------------------
+ID=GPC19B_Q2_OKAY2
+T=Just so you know, I'm only doing this because they asked.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=HAPPY
+
+T=Obviously...
+W=KLAY
+C2A=BAD
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_Q2_NOPE
+T=No way!
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=KLAY
+C2A=SURPRISED
+
+T=He's despicable. Everyone hates him.
+W=GRAFF
+C1A=ANGRY
+TEN=GPC19B_HURT_KLAY
+
+
+
+#-----------------------------------------
+ID=GPC19B_Q2_KLAY
+T=Student. Please say the following out loud.
+BVOICESP=VARIOUS
+
+T="I love you Graff. Please forgive me."
+BVOICESP=VARIOUS
+
+T=Whaaaaat?!
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+
+T=Just do it!
+W=GRAFF
+C1A=STUPID
+
+T=Okay, okay.
+W=KLAY
+C2A=BAD
+
+T=I...
+W=KLAY
+C1A=MEH
+
+T=...
+W=KLAY
+C2A=ANGRY
+TEN=GPC19B_Q2_KLAY_CHECK
+
+
+
+#-----------------------------------------
+ID=GPC19B_Q2_KLAY_YES
+T=...I can't.
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=GOOD
+
+T=What are you afraid of?!
+W=GRAFF
+C1A=ANGRY
+
+T=W-well...
+W=KLAY
+
+T=Okay. Let's do this.
+W=KLAY
+C2_EYESHUT=1
+
+T=I-I love you Graff... Please forgive me...
+W=KLAY
+C2_EYESHUT=1
+
+T=I wish it was sincere.
+W=GRAFF
+C1A=DISDAIN
+
+T=But... It is! I may keep playing pranks but I'm still worried about you.
+W=KLAY
+C2_EYESHUT=0
+
+T=Right...
+W=GRAFF
+C1A=TURN
+TEN=GPC19B_NEXTPHASECHECK
+
+
+#-----------------------------------------
+ID=GPC19B_Q2_KLAY_NO
+T=No way!
+W=KLAY
+C1=GRAFF
+C1A=SURPRISED
+C2=KLAY
+C2A=ANGRY
+
+T=The way you've treated me recently...
+W=KLAY
+
+T=What?!
+W=GRAFF
+C1A=GASP
+
+T=You botched my invention!
+W=GRAFF
+C1A=ANGRY
+
+T=What about you?!
+W=KLAY
+
+T=Students. Shut up.
+TEN=GPC19B_HURT_GRAFF
+
+
+#-----------------------------------------
+ID=GPC19B_Q3_GRAFF
+T=Student.
+BVOICESP=VARIOUS
+
+T=If a thug threatened your partner, would you risk your life to protect him?
+BVOICESP=VARIOUS
+
+T=There's no question about it.
+W=GRAFF
+C1=GRAFF
+C1A=DISDAIN
+C2=KLAY
+C2A=GOOD
+TEN=GPC19B_Q3_CHOICE
+
+
+#-----------------------------------------
+ID=GPC19B_Q3_NOPE
+T=I'd never. Not in a million years!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=SURPRISED
+
+T=Hey!!!
+W=KLAY
+C2A=ANGRY
+
+T=You wouldn't do it for me either!
+W=GRAFF
+C1A=TURN
+
+T=That's not true!
+W=KLAY
+TEN=GPC19B_HURT_KLAY
+
+#-----------------------------------------
+ID=GPC19B_Q3_OKAY
+T=Of course I would!
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=SURPRISED
+TEN=GPC19B_Q3_RELEASETRIBOT
+
+#-----------------------------------------
+ID=GPC19B_Q3_OKAY2
+T=M-maybe this wasn't the good reply after all...
+W=KLAY
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=GOOD
+
+T=What?
+W=GRAFF
+C1A=THINK
+
+T=Looks like you're gonna have to prove it!
+W=KLAY
+C2A=SURPRISED
+TEN=GPC19B_Q3_GRAFFTURNS
+
+#-----------------------------------------
+ID=GPC19B_Q3_OKAY2B
+T=...!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+
+T=They're... serious about this, aren't they?
+W=GRAFF
+TEN=GPC19B_FIGHT1
+
+#-----------------------------------------
+ID=GPC19B_Q3_OKAY3
+T=Phew! I was worried for a second.
+W=KLAY
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=HAPPY
+TEN=GPC19B_Q3_RELEASETRIBOT2
+
+
+#-----------------------------------------
+ID=GPC19B_Q3_OKAY4
+T=More?!...
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+
+T=That's not fair! They said one thug!
+W=GRAFF
+C1A=STUPID
+
+T=What if they release all of them?!
+W=KLAY
+
+T=Don't jinx it!
+W=GRAFF
+TEN=GPC19B_FIGHT2
+
+#-----------------------------------------
+ID=GPC19B_Q3_OKAY5
+T=(Cough...)
+W=GRAFF
+C1=GRAFF
+C1A=CHOKE
+C2=KLAY
+C2A=HAPPY
+
+T=You... You won!
+W=KLAY
+
+T=No thanks, eh?
+W=GRAFF
+C1A=DISDAIN
+
+T=...
+W=KLAY
+C2A=GOOD
+
+T=I... I could never fight like you did.
+W=KLAY
+C2_EYESHUT=1
+
+T=I had to. 
+W=GRAFF
+C1A=TURN
+TEN=GPC19B_CORRECT
+
+
+
+#-----------------------------------------
+ID=GPC19B_Q3_KLAY
+T=Student.
+BVOICESP=VARIOUS
+
+T=If a thug threatened your partner, would you risk your life to protect him?
+BVOICESP=VARIOUS
+
+T=Yeah! Of course I would!
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=HAPPY
+
+T=Oh, really?...
+W=GRAFF
+C1A=DISDAIN
+
+T=Klay, my hero! Save me, pleaaaase!
+W=GRAFF
+C1A=HAPPY
+
+T=Very funny.
+W=KLAY
+C2A=ANGRY
+TEN=GPC19B_Q3_RELEASETRIBOT
+
+#-----------------------------------------
+ID=GPC19B_Q3_KLAY2
+T=Uh-oh...
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=KLAY
+C2A=ANGRY
+
+T=I... Might need your help after all...!
+W=GRAFF
+
+T=What do you mean?
+W=KLAY
+C2A=BAD
+TEN=GPC19B_Q3_KLAYTURNS
+
+
+
+#-----------------------------------------
+ID=GPC19B_Q3_KLAY3
+T=B-but...!
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+
+T=Time to prove it!
+W=GRAFF
+C1A=DISDAIN
+
+T=I... I...
+W=KLAY
+C2A=GOOD
+
+T=You what?!
+W=GRAFF
+C1A=TURN
+
+T=Remember our self defense lessons!
+W=GRAFF
+C1A=READY
+
+T=B-but that's not the same...
+W=KLAY
+
+TEE=GPC19B_Q3_KLAYROBOTCOMES
+
+
+#-----------------------------------------
+ID=GPC19B_Q3_KLAY4
+T=Aaaargh! It's gonna hit me!
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+
+T=Graff! Help!!!
+W=KLAY
+C2A=GOOD
+C2_EYESHUT=1
+
+T=How could I?! I'm stuck!
+W=GRAFF
+C1A=STUPID
+
+T=Come on! Punch it! Kick it!
+W=GRAFF
+C1A=READY
+
+T=Aaaaahhhhh!
+W=KLAY
+C2A=SURPRISED
+TEN=GPC19B_Q3_KLAYROBOTLEAVES
+
+#-----------------------------------------
+ID=GPC19B_Q3_KLAY5
+T=(Pants)
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=SURPRISED
+TEN=GPC19B_Q3_KLAY_STANDS
+COMM=Klay didn't do anything except being scared. The bot goes away
+
+T=...?
+W=KLAY
+C2A=BAD
+
+T=Ha.
+W=KLAY
+C2A=HAPPY
+
+T=Made it!
+W=KLAY
+
+T=No. You totally screwed.
+W=GRAFF
+C1A=TURN
+
+T=Erm...
+W=KLAY
+C2A=NORMAL
+
+T=Next phase, please!
+W=KLAY
+TEN=GPC19B_NEXTPHASECHECK
+
+
+#-----------------------------------------
+ID=GPC19B_Q4_START
+T=Student. Let's play a game.
+BVOICESP=VARIOUS
+
+T=Another one?...
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=BAD
+TEN=GPC19B_Q4_START2
+
+#-----------------------------------------
+ID=GPC19B_Q4_START2
+T=When you hear this bell sound...
+BVOICESP=VARIOUS
+TEE=GPC19B_Q4_SOUNDDASH
+
+T=Step on the Dash symbol.
+BVOICESP=VARIOUS
+COMM=There really are four panels on the floor, with a different symbol on each one
+
+T=When you hear this unscrewing sound...
+BVOICESP=VARIOUS
+TEE=GPC19B_Q4_SOUNDPOINT
+
+T=Step on the Dot symbol.
+BVOICESP=VARIOUS
+
+T=When you hear this beep sound...
+BVOICESP=VARIOUS
+TEE=GPC19B_Q4_SOUNDCOLON
+
+T=Step on the Colon symbol.
+BVOICESP=VARIOUS
+
+T=When you don't hear a sound for more than two seconds...
+BVOICESP=VARIOUS
+
+T=Step on the empty panel.
+BVOICESP=VARIOUS
+TEN=GPC19B_Q4CHECK
+
+#-----------------------------------------
+ID=GPC19B_Q4_GRAFFSTART
+T=Let's start.
+BVOICESP=VARIOUS
+TEN=GPC19B_Q4STARTCHECK
+
+
+#-----------------------------------------
+ID=GPC19B_Q4_KLAY
+T=So... Dash, point, colon...
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=BAD
+
+T=Sounds fun!
+W=KLAY
+C2A=HAPPY
+TEN=GPC19B_Q4STARTCHECK
+
+
+#-----------------------------------------
+ID=GPC19B_Q4_SOUND1
+T=(Bell)
+NB=1
+D=20
+TEXTONLY=1
+
+#-----------------------------------------
+ID=GPC19B_Q4_SOUND2
+T=(Unscrewing)
+NB=1
+D=20
+TEXTONLY=1
+
+#-----------------------------------------
+ID=GPC19B_Q4_SOUND3
+T=(Beep)
+NB=1
+D=20
+TEXTONLY=1
+
+#-----------------------------------------
+ID=GPC19B_Q4_SOUND4
+T=(Silence)
+NB=1
+D=20
+TEXTONLY=1
+
+#-----------------------------------------
+ID=GPC19B_Q4_OVER1
+T=Game is over.
+BVOICESP=VARIOUS
+
+T=Your performance was...
+BVOICESP=VARIOUS
+TEN=GPC19B_Q4_NEXT
+
+#-----------------------------------------
+ID=GPC19B_Q4_DISASTER
+T=A disaster.
+BVOICESP=VARIOUS
+TEN=GPC19B_Q4_DISASTER_KLAY
+
+#-----------------------------------------
+ID=GPC19B_Q4_POOR
+T=Poor.
+BVOICESP=VARIOUS
+TEN=GPC19B_Q4_DISASTER_KLAY2
+
+#-----------------------------------------
+ID=GPC19B_Q4_GOOD
+T=Good!
+BVOICESP=VARIOUS
+TEN=GPC19B_NEXTPHASECHECK
+
+#-----------------------------------------
+ID=GPC19B_Q4_AMAZING
+T=Amazing!
+BVOICESP=VARIOUS
+TEN=GPC19B_NEXTPHASECHECK
+
+#-----------------------------------------
+ID=GPC19B_Q4_GOODKLAY
+T=Good!
+BVOICESP=VARIOUS
+
+T=Argh! That can't be!
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=ANGRY
+
+T=Uh? It said your performance was good.
+W=GRAFF
+C1A=THINK
+
+T=Good isn't good enough! We're in a competition, you know!
+W=KLAY
+TEN=GPC19B_NEXTPHASECHECK
+
+#-----------------------------------------
+ID=GPC19B_Q5_GRAFF
+T=Student.
+BVOICESP=VARIOUS
+
+T=You may now press the button next to you.
+BVOICESP=VARIOUS
+
+T=Each activation gives you a point for your final score.
+BVOICESP=VARIOUS
+
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+
+T=Wait!...
+W=KLAY
+C2=KLAY
+C2A=SURPRISED
+
+T=You know what that button does!
+W=KLAY
+COMM=It gives shocks to the other person
+
+T=I do.
+W=GRAFF
+C1A=DISDAIN
+
+T=Don't you dare...
+W=KLAY
+C2A=ANGRY
+TEN=GPC19B_Q5START
+
+#-----------------------------------------
+ID=GPC19B_Q5_KLAY
+T=Student.
+BVOICESP=VARIOUS
+
+T=You may now press the button next to you.
+BVOICESP=VARIOUS
+TEN=GPC19B_KLAY_GOBUTTON
+
+T=That button?
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=BAD
+
+T=Each activation gives you a point for your final score.
+BVOICESP=VARIOUS
+
+T=No way!
+W=GRAFF
+COMM=It gives shocks to the other person
+
+T=Whoever designed this has a twisted mind!
+W=GRAFF
+TEN=GPC19B_Q5_KLAY_CHECK
+
+#-----------------------------------------
+
+ID=GPC19B_Q5_KLAY_BUTTON_GENERIC1
+T=Well it's pretty clear to me!
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=BAD
+TEN=GPC19B_HURT_GRAFF
+
+
+#-----------------------------------------
+ID=GPC19B_Q5_KLAY_BUTTON_PUNCHED1
+T=This is what you get for punching me the other day!
+W=KLAY
+C1=GRAFF
+C1A=SURPRISED
+C2=KLAY
+C2A=BAD
+TEN=GPC19B_HURT_GRAFF
+
+
+#-----------------------------------------
+ID=GPC19B_Q5_KLAY_BUTTON_INVENTION1
+T=Do you even realize how much time I put into my invention?!
+W=KLAY
+C1=GRAFF
+C1A=STUPID
+C2=KLAY
+C2A=ANGRY
+
+T=You ruined it! You constantly ruin my efforts!
+W=KLAY
+TEN=GPC19B_HURT_GRAFF
+
+
+#-----------------------------------------
+ID=GPC19B_Q5_KLAY_BUTTON_NASTY1
+T=Admit it! You've hated me from the first time we met!
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=ANGRY
+
+T=You've always rejected me!
+W=KLAY
+
+T=And you're wondering why?!
+W=GRAFF
+C1A=ANGRY
+TEN=GPC19B_HURT_GRAFF
+
+
+#-----------------------------------------
+
+ID=GPC19B_Q5_KLAY_BUTTON_REFUSE
+T=...
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=GOOD
+
+T=Klay?...
+W=GRAFF
+
+T=...
+W=KLAY
+C2_EYESHUT=1
+
+T=Look... I know I haven't always been a friend but...
+W=GRAFF
+C1A=SAD
+
+T=Don't worry.
+W=KLAY
+C2_EYESHUT=1
+
+T=I won't do it.
+W=KLAY
+C2_EYESHUT=1
+
+T=Phew! You had me scared for a second.
+W=GRAFF
+C1A=LAUGH
+
+T=It would be too much of a risk for my score.
+W=KLAY
+C2A=HAPPY
+TEN=GPC19B_Q5STOP
+
+#-----------------------------------------
+
+ID=GPC19B_Q5_KLAYBUTTON1
+T=Aaarrghhhh...
+W=GRAFF
+C1=GRAFF
+C1A=STUPID
+C2=KLAY
+C2A=BAD
+COMM=When Klay presses the button, Graff gets shocked
+
+T=(Breathes) You knew what the button does... and you still pressed it?!
+W=GRAFF
+
+T=I had to try. What else am I supposed to do?
+W=KLAY
+C2A=NORMAL
+
+T=Don't listen to it!
+W=GRAFF
+C1A=ANGRY
+
+T=It's lying! There's no way hurting someone would award you points!
+W=GRAFF
+
+T=You're not making the rules, you know.
+W=KLAY
+C2A=BAD
+TEN=GPC19B_Q5_KLAY_CHECK
+
+
+#-----------------------------------------
+
+ID=GPC19B_Q5_KLAYBUTTON2
+T=Urgh...
+W=GRAFF
+C1=GRAFF
+C1A=CHOKE
+C2=KLAY
+C2A=BAD
+
+T=I'm sorry! Okay?
+W=GRAFF
+C1A=SAD
+
+T=Sorry isn't enough! You don't actually mean it!
+W=KLAY
+C2A=ANGRY
+TEN=GPC19B_Q5_KLAY_CHECK
+
+#-----------------------------------------
+
+ID=GPC19B_Q5_KLAYBUTTON3
+T=Aaargh... That hurts!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C1_EYESHUT=1
+C2=KLAY
+C2A=ANGRY
+
+T=That's the point!
+W=KLAY
+TEN=GPC19B_Q5_KLAY_CHECK
+
+
+#-----------------------------------------
+
+ID=GPC19B_Q5_KLAYBUTTON4
+T=Urgh... You son of a bot...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C1_EYESHUT=1
+C2=KLAY
+C2A=ANGRY
+TEN=GPC19B_Q5_KLAY_CHECK
+
+#-----------------------------------------
+
+ID=GPC19B_Q5_KLAYBUTTON_STOP
+T=Hmm... That should be enough.
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=BAD
+
+T=Statistically, I shouldn't take any more risks.
+W=KLAY
+
+T=Finally you've come to your senses.
+W=GRAFF
+C1A=TURN
+
+T=I'm only doing what's best for me.
+W=KLAY
+C2A=NORMAL
+
+T=Nothing new.
+W=GRAFF
+TEN=GPC19B_Q5STOP
+
+
+#-----------------------------------------
+ID=GPC19B_Q6
+T=Student.
+BVOICESP=VARIOUS
+
+T=This session is over.
+BVOICESP=VARIOUS
+
+T=You may exit now.
+BVOICESP=VARIOUS
+
+T=Thank you for your participation.
+BVOICESP=VARIOUS
+TEN=GPC19B_Q6_CHECKKLAY
+
+#----------------------
+ID=GPC19B_KLAY_BUTTONPHASE1
+T=Hmm... I probably shouldn't.
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC19B_GRAFF_BUTTONHURT1
+T=Ngghh!!! Argh...
+W=GRAFF
+C1=GRAFF
+C1A=STUPID
+C2=KLAY
+C2A=BAD
+
+T=I can't believe you actually did that.
+W=GRAFF
+
+T=This hurts me more than it hurts you!
+W=KLAY
+C2A=NORMAL
+
+T=Or not.
+W=KLAY
+C2A=HAPPY
+TEN=GPC19B_KLAYPRESSESBUTTON
+
+
+#----------------------
+ID=GPC19B_KLAY_BUTTONHURT1
+T=Ngggnngngn!!!
+W=KLAY
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=SURPRISED
+COMM=This time it's the opposite - Klay is tied up and gets shocked
+
+T=Sorry. I had to try.
+W=GRAFF
+C1A=DISDAIN
+
+T=You...
+W=KLAY
+C2A=ANGRY
+
+T=Hey! You're the one who said to do whatever they ask!
+W=GRAFF
+
+
+
+#-----------------------------------------
+ID=GPC19B_Q6_KLAY_STARTLEAVING
+T=Klay!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=SURPRISED
+
+T=Aren't you're forgetting... a thing?
+W=GRAFF
+C1A=MEH
+TEN=GPC19B_Q6_KLAY_LOOKSGRAFF
+
+T=Oh, don't underestimate yourself.
+W=KLAY
+C2A=NORMAL
+TEN=GPC19B_Q6_KLAY_GOESGRAFF
+
+T=You're more than "a thing"!
+W=KLAY
+
+T=Well, just a bit.
+W=KLAY
+C2A=BAD
+TEN=GPC19B_FREE_FADEOUT
+
+
+
+#----------------------
+ID=GPC19B_FREE2
+T=Thanks.
+W=GRAFF
+C1=GRAFF
+C1A=HAPPY
+C2=KLAY
+C2A=NORMAL
+
+T=I really thought you'd leave me here.
+W=GRAFF
+C1A=SAD
+
+T=No problem. It's possible they're spying on our behaviour.
+W=KLAY
+C2A=BAD
+
+T=That's your concern? After everything you've done?
+W=GRAFF
+
+T=Well, it worked! The door has opened!
+W=KLAY
+C2A=HAPPY
+
+T=There's no time to lose. My throat is burning.
+W=GRAFF
+TEN=GPC19B_KLAY_FREEAFTER
+
+
+#-----------------------------------------
+ID=GPC19B_Q6_GRAFF_STARTLEAVING
+T=Hey! Where are you going?
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=SURPRISED
+COMM=Player can choose to exit while Klay is still tied up
+
+T=I'm still tied up, you know!
+W=KLAY
+C2A=ANGRY
+
+#-----------------------------------------
+ID=GPC19B_Q6_GRAFF_STARTLEAVING2
+T=I swear. If you leave me here...
+W=KLAY
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=ANGRY
+
+#-----------------------------------------
+ID=GPC19B_Q6_GRAFF_STARTLEAVING3
+T=Graff! Come back here!!!
+W=KLAY
+A=SURPRISED
+
+T=Don't...
+W=KLAY
+A=GOOD
+
+T=Leave me here...
+W=KLAY
+
+T=...
+W=KLAY
+C1_EYESHUT=1
+TEN=GPC19B_Q6_FADEOUTNEXT
+
+
+#----------------------
+ID=GPC19B_KLAY_DEAD
+T=Aaaargh!!!
+W=KLAY
+C1=GRAFF
+C1A=SURPRISED
+C2=KLAY
+C2A=SURPRISED
+C2_EYESHUT=1
+COMM=If Graff kills Klay
+
+T=...!
+W=GRAFF
+C1A=GASP
+C2=NONE
+TEN=GPC19B_GRAFF_CHECKSKLAY
+
+T=No...
+W=GRAFF
+
+T=No no no no!
+W=GRAFF
+
+T=Klay!
+W=GRAFF
+
+T=Klay!!!
+W=GRAFF
+TEN=GPC19B_KLAY_DEATH_MUSIC
+
+T=I didn't mean to...
+W=GRAFF
+C1A=SAD
+
+T=Somebody... Help!...
+W=GRAFF
+C1A=SURPRISED
+
+T=Heeeeeelp!...
+W=GRAFF
+C1A=SOB
+TEN=GPC19B_KLAY_DEATH_FADEOUT
+
+#----------------------
+ID=GPC19B_KLAY_DEAD2
+T=I stood there...
+BVOICE=GRAFF
+
+T=How long?... 
+T=I don't know...
+T=I just couldn't believe...
+T=What I had done...
+TEN=GPC19B_KLAY_DEATH_FADEIN
+
+#----------------------
+ID=GPC19B_KLAY_DEAD3
+T=...
+W=GRAFF
+A=TORN
+
+T=The door...
+W=GRAFF
+A=SAD
+
+T=I...
+W=GRAFF
+A=SAD
+
+T=I have to go...
+W=GRAFF
+A=TORN
+TEN=GPC19B_KLAY_DEATH_LEAVE
+
+
+
+#----------------------
+ID=GPC19B_GRAFF_WRONG1
+T=Nggggg...
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+COMM=If Klay gives a wrong answer, Graff gets shocked
+
+T=Klay!!!
+W=GRAFF
+C1A=ANGRY
+
+T=What? I just made a little mistake!
+W=KLAY
+C2=KLAY
+C2A=NORMAL
+TEN=GPC19B_NEXTPHASECHECK
+
+
+#----------------------
+ID=GPC19B_GRAFF_WRONG2
+T=Arrrrgh...
+W=GRAFF
+C1=GRAFF
+C1A=STUPID
+
+T=That hurts...
+W=GRAFF
+
+T=Hmm. I suppose I shouldn't have done that.
+W=KLAY
+C2=KLAY
+C2A=BAD
+
+T=You suppose?!
+W=GRAFF
+C1A=ANGRY
+TEN=GPC19B_NEXTPHASECHECK
+
+
+#----------------------
+ID=GPC19B_GRAFF_WRONG3
+T=Ooof!!!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C1_EYESHUT=1
+C2=KLAY
+C2A=NORMAL
+
+T=I'm not sure how long I can bare this...
+W=GRAFF
+
+T=You look okay to me.
+W=KLAY
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_GRAFF_WRONG4
+T=Arrrrgh!
+W=GRAFF
+A=CHOKE
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_GRAFF_WRONG5
+T=Nnnnghh...
+W=GRAFF
+A=TORN
+TEN=GPC19B_NEXTPHASECHECK
+
+
+#----------------------
+ID=GPC19B_KLAY_WRONG1
+T=Ngggnngngn!!!
+W=KLAY
+C2=KLAY
+C2A=SURPRISED
+C2_EYESHUT=1
+COMM=If Graff gives a wrong answer, Klay gets shocked
+
+T=Watch out, you imbecile! They expect exact replies!
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2A=ANGRY
+
+T=Oh! That's... interesting!
+W=GRAFF
+C1A=DISDAIN
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_KLAY_WRONG2
+T=Aww aww aww!
+W=KLAY
+C2=KLAY
+C2A=ANGRY
+C2_EYESHUT=1
+
+T=You're... doing this on purpose, aren't you?!
+W=KLAY
+C1=GRAFF
+C1A=MEH
+
+T=Erm...
+W=GRAFF
+C1A=COCKY
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_KLAY_WRONG3
+T=Ngggngn!...
+W=KLAY
+C2=KLAY
+C2A=GOOD
+C2_EYESHUT=1
+
+T=As soon as I get out of here...
+W=KLAY
+C1=GRAFF
+C1A=LAUGH
+C2A=ANGRY
+
+T=Sorry! I couldn't help it!
+W=GRAFF
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_KLAY_WRONG4
+T=Argh!...
+W=KLAY
+A=SURPRISED
+TEN=GPC19B_NEXTPHASECHECK
+
+#----------------------
+ID=GPC19B_KLAY_WRONG5
+T=Please... Stop!...
+W=KLAY
+A=GOOD
+
+T=I feel bad...
+W=KLAY
+A=GOOD
+TEN=GPC19B_NEXTPHASECHECK
+
+
+
+#----------------------
+ID=GPC19B_KLAY_Q4HURT
+T=Aaargh!
+W=KLAY
+C2=KLAY
+C2A=ANGRY
+C2_EYESHUT=1
+
+T=Why do I have to suffer for your mistakes?!
+W=KLAY
+C2_EYESHUT=0
+TEN=GPC19B_NEXTPHASECHECK
+
+
+
+#----------------------
+ID=GPC19B_KLAY_FREE
+T=Looks like I can open these shackles. Don't move.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=NORMAL
+COMM=Graff frees Klay
+TEN=GPC19B_FREE_FADEOUT
+
+#----------------------
+ID=GPC19B_KLAY_FREE2
+T=Pheeew...
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=HAPPY
+
+T=Now I understand why my mom told me to be careful and kind before the trial.
+W=KLAY
+C2A=BAD
+
+T=Yeah. Because she knows you're an egotistical brat.
+W=GRAFF
+
+T=Lucky you. I'm too exhausted to respond, so I'll just pretend I didn't hear anything.
+W=KLAY
+C2A=NORMAL
+
+T=The other exit opened.
+W=KLAY
+
+T=Let's get out of here.
+W=KLAY
+C2A=BAD
+
+T=Of course. No "thank you so much Graff for freeing me".
+W=GRAFF
+
+T=You're too soft. I knew you'd never leave anyone behind!
+W=KLAY
+C2A=HAPPY
+
+T=Don't make me regret this.
+W=GRAFF
+TEN=GPC19B_KLAY_FREEAFTER
+
+#----------------------
+ID=GPC19B_KLAY_FREEAFTER
+T=I'll take exit number two. You take the first.
+W=KLAY
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=BAD
+
+T=As you wish. (Cough)
+W=GRAFF
+TEN=GPC19B_KLAY_LEAVE
+
+#----------------------
+
+ID=GPC19B_KLAY_FREE3
+T=...
+W=KLAY
+A=GOOD
+
+T=Maybe I was a little harsh on him...
+W=KLAY
+A=GOOD
+
+T=Ahh. He'll be fine.
+W=KLAY
+A=BAD
+TEN=GPC19B_KLAY_LEAVE4
+
+
+#----------------------
+ID=GPC19B_KLAY_HIT1
+T=Argh!...
+W=KLAY
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=SURPRISED
+
+T=Are you out of your mind?!
+W=KLAY
+
+T=Sorry! I couldn't help it!
+W=GRAFF
+C1A=READY
+
+#----------------------
+ID=GPC19B_KLAY_HIT2
+T=Argh!...
+W=KLAY
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=ANGRY
+C2_EYESHUT=1
+
+T=As soon as I get out of here...
+W=KLAY
+C2A=ANGRY
+
+#----------------------
+ID=GPC19B_KLAY_HIT3
+T=Please... Stop!...
+W=KLAY
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=GOOD
+C2_EYESHUT=1
+
+T=I feel bad...
+W=KLAY
+
+
+#----------------------
+ID=GPC19B_BUTTON_HIT1
+T=I don't think we're supposed to do that.
+W=KLAY
+C2=KLAY
+C2A=BAD
+
+#----------------------
+ID=GPC19B_BUTTON_HIT2
+T=Candidates. Do not destroy the equipment.
+BNAME=UNKNOWN
+BVOICE=VARIOUS
+
+#----------------------
+ID=GPC19B_BUTTON_DEAD1
+T=Oh no! Graff!
+W=KLAY
+C2=KLAY
+C2A=SURPRISED
+TEN=GAMEOVER
+
+###############################################
+# PROOFREAD - frasermacgaming - 01/09/2019
+###############################################

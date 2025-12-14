@@ -1,0 +1,903 @@
+#-------------------------------
+#= GRAFF --- BROK APARTMENT
+#-------------------------------
+
+#----- Interactions --------
+
+
+#----- Choices / Items --------
+GOT_FLOUR=Farinha!
+
+#----- Topics --------
+GPC01_CHOOSE_GIFT=Escolha um presente
+GPC01_GRAFFVR_CHOICE=Treinar na RV simulada?
+
+#----- Dialog --------
+
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Graff                                 
+GPC01_BED1-1=Acho que sou sortudo por ter uma cama de verdade...
+#----------------------------------------------------
+# Graff                                 
+GPC01_PLANT1-1=Está tudo apodrecendo aqui. Espero não me tornar igual a esta planta...
+#----------------------------------------------------
+# Graff                                 
+GPC01_PICTURE1-1=...
+#----------------------------------------------------
+# Graff                                 
+GPC01_DISH1-1=Não é a minha vez!
+#----------------------------------------------------
+# Graff                                 
+GPC01_GRAFFBED1-1=Lar, horrendo lar...
+# Graff                                 
+GPC01_GRAFFBED1-2=As paredes nem estão no ângulo certo.
+# Graff                                 
+GPC01_GRAFFBED1-3=Brok cortou minha cama para caber no quarto.
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_GRAFFBED-1=Eu não conseguia dormir...
+#----------------------------------------------------
+# Graff                                 
+GPC01_CHEST1-1=Não...
+# Graff                                 
+GPC01_CHEST1-2=Tudo que restou do meu passado... está aqui.
+# Graff                                 
+GPC01_CHEST1-3=Eu prometi para mim mesmo que só abriria no dia que saísse deste lugar.
+#----------------------------------------------------
+# Graff                                 
+GPC01_CHEST2-1=Agora não...
+#----------------------------------------------------
+# Graff                                 
+GPC01_CLOTHES1-1=As coisas dele estão sempre tão bagunçadas... Mas como poderia ser diferente?
+# Graff                                 
+GPC01_CLOTHES1-2=Ele trabalha praticamente o dia todo, voltando apenas para comer e dormir.
+# Graff                                 
+GPC01_CLOTHES1-3=Ah, e cozinhar! Ele adora isso, por algum motivo.
+#----------------------------------------------------
+# Graff                                 
+GPC01_BEDROOMDOOR_STORY180-1=...
+# Graff                                 
+GPC01_BEDROOMDOOR_STORY180-2=...Simplesmente não consigo.
+#----------------------------------------------------
+# Graff                                 
+GPC01_MESS1-1=Apenas roupas, lençóis de cama e coisas assim.
+# Graff                                 
+GPC01_MESS1-2=O comitê de avaliação vai chegar a qualquer minuto... Não há tempo para vasculhar essa bagunça!
+#----------------------------------------------------
+# Graff                                 
+GPC01_MESS_AFTER-1=...Não, não vejo nada que possa ajudar.
+#----------------------------------------------------
+# Graff                                 
+GPC01_DRAWER1-1=Vamos ver...
+# Graff                                 
+GPC01_DRAWER1-2=Hã... Isso é farinha? O que está fazendo aqui?
+# Graff                                 
+GPC01_DRAWER1-3=Eu devo ter usado em algum projeto...
+#----------------------------------------------------
+# Graff                                 
+GPC01_DRAWER2-1=Hmm... Algumas roupas... Papel e caneta...
+# Graff                                 
+GPC01_DRAWER2-2=Nada que me ajude no momento.
+#----------------------------------------------------
+# Graff                                 
+GPC01_DRAWER3-1=Roupas... Papel e caneta...
+#----------------------------------------------------
+# Graff                                 
+GPC01_DRAWER_NEED-1=Já sei!
+# Graff                                 
+GPC01_DRAWER_NEED-2=Vou usar o papel e caneta que o Brok me deu há alguns anos.
+# Graff                                 
+GPC01_DRAWER_NEED-3=Ele achou que eu poderia usar para praticar caligrafia.
+# Graff                                 
+GPC01_DRAWER_NEED-4=Eu respondi que era uma ideia idiota hoje em dia.
+# Graff                                 
+GPC01_DRAWER_NEED-5=Mas agora eu entendo...
+# Graff                                 
+GPC01_DRAWER_NEED-6=Vamos ver se eu me lembro como escreve!
+#----------------------------------------------------
+# Graff                                 
+GPC01_DOORFRIDGE1-1=Meu estômago está com um nó... Posso esperar para comer.
+#----------------------------------------------------
+# Graff                                 
+GPC01_FRUITCUP1-1=Eu não gosto delas, mas vou levar mesmo assim... Só por precaução.
+#----------------------------------------------------
+# Graff                                 
+GPC01_FRUITCUP2-1=Vou pegar mais uma...
+#----------------------------------------------------
+# Graff                                 
+GPC01_INSTRUMENT1-1=A música e eu não combinamos muito. Prefiro ciência do que arte.
+# Graff                                 
+GPC01_INSTRUMENT1-2=Apesar de adorar música AI-chip!
+#----------------------------------------------------
+# Graff                                 
+GPC01_PUNCHINGBAG1-1=O Brok não sabe, mas...
+# Graff                                 
+GPC01_PUNCHINGBAG1-2=Eu adoro dar uns socos nesse saco de vez em quando!
+# Graff                                 
+GPC01_PUNCHINGBAG1-3=Nós vivemos numa área perigosa... Temos que estar preparados.
+#----------------------------------------------------
+# Graff                                 
+GPC01_PUNCHINGBAG_TRY1-1=Ufa... Isso é cansativo.
+#----------------------------------------------------
+# Graff                                 
+GPC01_PUNCHINGBAG_DEATH1-1=Parece que as aulas deram resultado!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff can play VR arena with his computer
+# *****************************************************************
+# Graff                                 
+GPC01_COMPUTER1-1=Meu totalmente obsoleto computador pessoal.
+# Graff                                 
+GPC01_COMPUTER1-2=Ninguém usa um negócio tão grande. Mas é só o que tenho, então não reclamo muito...
+# Graff                                 
+GPC01_COMPUTER1-3=Provavelmente não é hora pra isso, mas... Eu poderia jogar no Simulador de Arena Virtual!
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER2-1=Devo treinar um pouco?...
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_LOSE1-1=Ufa... Ainda bem que não é a experiência real! Eu não tenho nove vidas, apenas uma.
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_LOSE2-1=Eu deveria treinar...
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_WIN1-1=Ótimo!
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_WIN2-1=Estou melhorando!
+#----------------------------------------------------
+# Graff                                 
+GPC01_COMPUTER_STORY180-1=Não... Para o Brok eu preciso de um meio mais tradicional de mandar mensagens...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 1 end - Graff is angry in his bedroom after their argument (normal - Brok came too late to the science fair)
+# *****************************************************************
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-1=(Ahhh)
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-2=Eu ainda não acredito...
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-3=Por causa dele... Eu falhei no teste.
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-4=Eu nunca vou conseguir meu diploma...
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-5=Para sempre... Eu continuarei sendo um Slumer piolhento... como...
+# Graff                                 
+GPC01_STORY110_GRAFFANGRYNORMAL1-6=...
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_GRAFFCHECKSMESSENGER-1=...
+# Graff                                 
+GPC01_STORY110_GRAFFCHECKSMESSENGER-2=Eu preciso esfriar a cabeça.
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_PC-1=Ei, talvez o Ott esteja online? Estou faminto pra jogar um Team-match!
+# Graff                                 
+GPC01_STORY110_PC-2=...
+# Graff                                 
+GPC01_STORY110_PC-3=Não está. Droga!
+#----------------------------------------------------
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-1=...Oh. Como sou idiota.
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-2=É claro que ele não está... Eu destruí a invenção dele. Ele deve estar muito bravo comigo...
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-3=Então... Eu também perdi meu melhor amigo.
+# Graff                                 
+PC01_STORY110_OTTBROKEN1-4=(Ahhh)
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_OTTNORMAL1-1=Acho que ele está se preparando para seu percurso amanhã.
+# Graff                                 
+GPC01_STORY110_OTTNORMAL1-2=Que pena... Um amigo me faria muito bem agora.
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1-1=Hmm...
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1-2="Pais estragam tudo"
+#----------------------------------------------------
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1B-1="Tópico - Eu odeio meus pais!"
+# Graff                                 
+GPC01_STORY110_AFTERMESSENGERNORMAL1B-2=...Eu não sou o único.
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_AFTERMESSENGERBROKEN1-1=Hmm...
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERBROKEN1-2="Estou com raiva do mundo inteiro"
+#----------------------------------------------------
+# Unknown                                 
+GPC01_STORY110_AFTERMESSENGERBROKEN1B-1="Tópico - Lidando com explosões de nervosismo"
+#----------------------------------------------------
+# Graff                                 
+GPC01_STORY110_AFTER1B-1=Interessante...
+# Graff                                 
+GPC01_STORY110_AFTER1B-2=Talvez eles se interessem pela minha própria história...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Same scene but Graff busted all inventions during the science fair
+# *****************************************************************
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-1=...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-2=O que foi que eu fiz...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-3=Em alguns minutos... Eu... destruí completamente...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-4=Todos aqueles anos de estudo...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-5=Estou feliz por Brok não ter presenciado esse massacre...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-6=...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-7=Não! Eu não posso...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-8=Eu... preciso fazer algo...
+# Graff                                 
+PC01_STORY110_GRAFFANGRYBROKEN1-9=Já é tarde demais para reverter a situação?...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - End of day 2 - Graff couldn't take a pill and suffers heavily from the effects of the pollution. He comes back home but...
+# *****************************************************************
+# Graff                                 
+GPC01_STORY165_GRAFF-1=...
+# Graff                                 
+GPC01_STORY165_GRAFF-2=(Coff, Coff) Brok... não está aqui!...
+# Graff                                 
+GPC01_STORY165_GRAFF-3=(Coff, Coff, Coff) Ah por favor... Me diga que escondeu (Coff) uma pílula em algum lugar!...
+#----------------------------------------------------
+# Graff                                 
+#Too late. Graff collapses
+GPC01_STORY165_GRAFFB-1=...(Coff, Coff)
+# Graff                                 
+GPC01_STORY165_GRAFFB-2=Não consigo...
+# Graff                                 
+GPC01_STORY165_GRAFFB-3=Respirar...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Brok came back home and gave a pill to Graff. But Graff isn't happy because he almost died and Brok wasn't there
+# *****************************************************************
+# Graff                                 
+PC01_DAY2ENDE1-1=...
+# Graff                                 
+PC01_DAY2ENDE1-2=O que há de errado comigo?...
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-1=Ele acabou de salvar minha vida...
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-2=Eu deveria estar agradecendo a ele...
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-3=Não... isso...
+# Graff                                 
+PC01_DAY2ENDE_NORMAL-4=Por que estou com tanta raiva?...
+#----------------------------------------------------
+# Graff                                 
+#If Graff was able to get a pill by himself (so he didn't collapse)
+PC01_DAY2ENDE_PILL-1=Apesar do que aconteceu... Eu fui capaz de me cuidar.
+# Graff                                 
+PC01_DAY2ENDE_PILL-2=Eu devo focar no positivo ao invés de culpá-lo.
+#----------------------------------------------------
+# Graff                                 
+#If Graff killed Klay during the trial
+PC01_DAY2ENDE_KLAY-1=Eu sou... um assassino...
+# Graff                                 
+PC01_DAY2ENDE_KLAY-2=E não posso contar pra ele...
+# Graff                                 
+PC01_DAY2ENDE_KLAY-3=Eu só devo sentir raiva... de mim mesmo.
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE_NEXT-1=(Ahhh)
+# Graff                                 
+PC01_DAY2ENDE_NEXT-2=Eu gostaria que as coisas fossem diferentes...
+# Graff                                 
+PC01_DAY2ENDE_NEXT-3=Se ao menos... Aquele acidente não tivesse acontecido...
+# Graff                                 
+PC01_DAY2ENDE_NEXT-4=E... então meu pai verdadeiro ainda estaria aqui...
+# Graff                                 
+PC01_DAY2ENDE_NEXT-5=Os dois...
+# Graff                                 
+PC01_DAY2ENDE_NEXT-6=Eles me abandonaram...
+# Graff                                 
+PC01_DAY2ENDE_NEXT-7=Eu...
+# Graff                                 
+PC01_DAY2ENDE_NEXT-8=...odeio eles...
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE1B-1=...
+# Graff                                 
+PC01_DAY2ENDE1B-2=Eu achei que fosse mais forte que isso...
+# Graff                                 
+PC01_DAY2ENDE1B-3=...Ok. Contenha-se, Graff!
+# Graff                                 
+PC01_DAY2ENDE1B-4=Brok está certo. Eu ainda estou vivo, e isso é tudo que importa...
+# Graff                                 
+PC01_DAY2ENDE1B-5=Uma mensagem...
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE2-1=Ah... Os resultados do teste de hoje.
+#----------------------------------------------------
+# Graff                                 
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_PERFECT-1=Ótimo! {amount} pontos!
+# Graff                                 
+PC01_DAY2ENDE2_PERFECT-2=Finalmente boas notícias!
+#----------------------------------------------------
+# Graff                                 
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_GOOD-1={amount} pontos. Nada mal!
+#----------------------------------------------------
+# Graff                                 
+#Do not pronunce the number of points, it can vary
+PC01_DAY2ENDE2_BAD-1=Ah não... {amount} pontos...
+# Graff                                 
+PC01_DAY2ENDE2_BAD-2=O dia está ficando pior a cada hora que passa...
+#----------------------------------------------------
+# Graff                                 
+#Another message
+PC01_DAY2ENDE2_NEXT-1=Hã? Outra?
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE3-1=...
+# Graff                                 
+PC01_DAY2ENDE3-2=Com tudo que aconteceu, eu acabei esquecendo...!
+# Graff                                 
+#Referring to the deal with the Director - re-instating him or his science fair mark
+PC01_DAY2ENDE3-3=Brok... Ele cumpriu sua promessa!
+# Graff                                 
+PC01_DAY2ENDE3-4=...
+# Graff                                 
+PC01_DAY2ENDE3-5=Estou ficando com fome...
+# Graff                                 
+PC01_DAY2ENDE3-6=Eu... preciso arranjar um jeito de me desculpar.
+# Graff                                 
+PC01_DAY2ENDE3-7=Mas eu não tenho forças para sair...
+# Graff                                 
+PC01_DAY2ENDE3-8=E não posso mandar uma mensagem para o telefone dele. Ele nunca vê...
+# Graff                                 
+PC01_DAY2ENDE3-9=Vamos pensar.
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDE4-1=...Pronto.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After Brok put some food under his door
+# *****************************************************************
+# Graff                                 
+PC01_DAY2ENDH1-1=(Nhoc, Nhoc)
+# Graff                                 
+PC01_DAY2ENDH1-2=Até que estava bom, por ser as sobras e tal.
+# Graff                                 
+PC01_DAY2ENDH1-3=...
+# Graff                                 
+PC01_DAY2ENDH1-4=Não estou com sono ainda.
+# Graff                                 
+PC01_DAY2ENDH1-5=Talvez Ott esteja online?
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDH1B-1=...
+# Graff                                 
+PC01_DAY2ENDH1B-2=Droga.
+# Graff                                 
+PC01_DAY2ENDH1B-3=Ah é, eu me lembrei... Ele faria seu teste esta tarde.
+# Graff                                 
+PC01_DAY2ENDH1B-4=Ei, o que é isso?...
+# Graff                                 
+PC01_DAY2ENDH1B-5=Alguém deixou uma mensagem no tópico que escrevi ontem!
+# Nmerchat                                 
+PC01_DAY2ENDH1B-6="EU TE ENTENDO. PAIS DE VERDADE NUNCA FARIAM ISSO"
+# Graff                                 
+PC01_DAY2ENDH1B-7=Acho que sim...
+# Graff                                 
+PC01_DAY2ENDH1B-8=...?
+# Nmerchat                                 
+PC01_DAY2ENDH1B-9="EI, PODEMOS CONVERSAR?"
+# Graff                                 
+#He's using a messenger type software
+PC01_DAY2ENDH1B-10=Uma chat em tempo real? Do mesmo cara? Estranho...
+# Graff                                 
+PC01_DAY2ENDH1B-11=Eu vou responder.
+# Graffchat                                 
+PC01_DAY2ENDH1B-12="Sim?"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-13="SEU VELHO ESTÁ MENTINDO PARA VOCÊ"
+# Graff                                 
+PC01_DAY2ENDH1B-14=Hã?!
+# Graffchat                                 
+PC01_DAY2ENDH1B-15="Mentindo sobre o quê?"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-16="ELE ESTAVA EM DRUMS ONTEM E HOJE À TARDE"
+# Graffchat                                 
+PC01_DAY2ENDH1B-17="Em Drums?... Impossível!"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-18="É VERDADE"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-19="ELE SAIU FAZ ALGUNS MINUTOS"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-20="ELE JÁ ESTÁ NAS RUAS"
+# Graffchat                                 
+PC01_DAY2ENDH1B-21="Quem é você? Como sabe disso?"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-22="CONECTE SEU TELEFONE"
+# Graffchat                                 
+PC01_DAY2ENDH1B-23="Como? De jeito nenhum!"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-24="APENAS CONFIE EM MIM"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-25="O QUE VOCÊ TEM A PERDER"
+# Graff                                 
+PC01_DAY2ENDH1B-26=...
+# Graff                                 
+PC01_DAY2ENDH1B-27=Ok.
+# Graff                                 
+PC01_DAY2ENDH1B-28=Eu não gosto disso, mas... Esse cara sabe de alguma coisa.
+# Graff                                 
+PC01_DAY2ENDH1B-29=É melhor eu cooperar por enquanto, talvez eu consiga algumas informações.
+# Graff                                 
+PC01_DAY2ENDH1B-30=Espero não me arrepender disso...
+# Nmerchat                                 
+PC01_DAY2ENDH1B-31="ESTOU TRANSFERINDO UM APLICATIVO DE RASTREAMENTO PARA VOCÊ"
+# Graffchat                                 
+PC01_DAY2ENDH1B-32=Você está rastreando meu velho?!
+# Graffchat                                 
+PC01_DAY2ENDH1B-33="Você é algum tipo de hacker?"
+# Nmerchat                                 
+PC01_DAY2ENDH1B-34="SAIA E SIGA-O"
+# Graff                                 
+PC01_DAY2ENDH1B-35=...
+# Graff                                 
+PC01_DAY2ENDH1B-36=Droga. Ele desconectou.
+#----------------------------------------------------
+# Graff                                 
+#Graff exited his bedroom
+PC01_DAY2ENDF4-1=Caramba! Ele está certo!
+# Graff                                 
+PC01_DAY2ENDF4-2=Tem alguma coisa estranha nisso tudo...
+# Graff                                 
+PC01_DAY2ENDF4-3=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Graff comes back right after Brok. He has seen him fighting rats in the alley and misinterpreted it (thinking he stole from the rats when it's the opposite)
+# *****************************************************************
+# Brok                                 
+PC01_DAY2ENDJ1-1=Hã?...
+# Brok                                 
+PC01_DAY2ENDJ1-2=De onde você veio?!...
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDJ2-1=Me diga você.
+# Brok                                 
+PC01_DAY2ENDJ2-2=...
+# Brok                                 
+PC01_DAY2ENDJ2-3=Você estava me seguindo?
+# Graff                                 
+PC01_DAY2ENDJ2-4=Estava.
+# Graff                                 
+PC01_DAY2ENDJ2-5=Algum problema?
+# Brok                                 
+PC01_DAY2ENDJ2-6=Bem...
+# Graff                                 
+PC01_DAY2ENDJ2-7=Preste atenção. Eu estou cansado dos seus segredinhos!
+# Graff                                 
+PC01_DAY2ENDJ2-8=O que você tem feito?
+# Brok                                 
+PC01_DAY2ENDJ2-9=Investigando...
+# Graff                                 
+PC01_DAY2ENDJ2-10=Onde?!
+# Graff                                 
+PC01_DAY2ENDJ2-11=Onde você estava ontem?!
+# Graff                                 
+PC01_DAY2ENDJ2-12=E hoje à tarde, quando eu estava prestes a bater as botas?!
+# Brok                                 
+PC01_DAY2ENDJ2-13=Erm...
+# Graff                                 
+PC01_DAY2ENDJ2-14=Bom, eu vou te dizer. Você estava em Drums.
+# Brok                                 
+PC01_DAY2ENDJ2-15=Ah... É verdade.
+# Brok                                 
+PC01_DAY2ENDJ2-16=Como você...?
+# Graff                                 
+PC01_DAY2ENDJ2-17=Não importa.
+# Graff                                 
+PC01_DAY2ENDJ2-18=Quando você pretendia me contar?
+# Brok                                 
+PC01_DAY2ENDJ2-19=Eu... apenas esqueci.
+# Graff                                 
+PC01_DAY2ENDJ2-20=Esqueceu?
+# Graff                                 
+PC01_DAY2ENDJ2-21=O que está escondendo?
+# Brok                                 
+PC01_DAY2ENDJ2-22=Eu... Erm...
+# Brok                                 
+PC01_DAY2ENDJ2-23=Eu entrei para a polícia. Temporariamente.
+# Brok                                 
+PC01_DAY2ENDJ2-24=Na verdade... eu estava. Já acabou.
+# Graff                                 
+PC01_DAY2ENDJ2-25=Na polícia?...
+# Brok                                 
+PC01_DAY2ENDJ2-26=É uma história longa...
+# Graff                                 
+PC01_DAY2ENDJ2-27=Obviamente.
+# Brok                                 
+PC01_DAY2ENDJ2-28=Eu vou te contar tudo...
+# Brok                                 
+PC01_DAY2ENDJ2-29=Mas por favor, agora não. (Uaah) Estou muito cansado.
+# Graff                                 
+PC01_DAY2ENDJ2-30=Então só responda isso!
+# Graff                                 
+PC01_DAY2ENDJ2-31=O que estava acontecendo entre você e aqueles Squealers mais cedo?
+# Brok                                 
+PC01_DAY2ENDJ2-32=Eram só uns ladrões.
+# Brok                                 
+PC01_DAY2ENDJ2-33=Eles tentaram roubar minhas coisas, daí... Eu me defendi.
+# Graff                                 
+PC01_DAY2ENDJ2-34=É isso?...
+# Graff                                 
+PC01_DAY2ENDJ2-35=Você não estava apenas se defendendo. Você os esmagou sem nenhuma piedade!
+# Graff                                 
+PC01_DAY2ENDJ2-36=Onde você aprendeu a lutar daquele jeito?
+#----------------------------------------------------
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-1=Você não lembra?...
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-2=Eu nem sempre fui um detetive.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-3=Quando eu conheci sua mãe... Eu era um boxeador nas arenas de luta.
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-4=... Um boxeador...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-5=Eu me lembro agora...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-6=Como se... Eu sempre soubesse mas...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-7=Elas não foram consideradas ilegais e fechadas?
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-8=Foram.
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-9=Então... O que você faz todas as noites, exatamente?
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-10=Lutas Virtuais.
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-11=Você é um... lutador virtual?!
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-12=Sim...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-13=Esse tempo todo...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-14=Por que você não me contou?!
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-15=Eu... preferi não contar...
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-16=Depois do acidente... As coisas mudaram.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-17=Ganhar dinheiro com atividades ilegais e violentas...
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-18=Não é o que sua mãe ia querer.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-19=Eu queria ser um exemplo para você.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-20=Por isso eu entrei na carreira de detetive. Para recomeçar.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-21=Mas eu logo percebi que isso não traria dinheiro suficiente para sustentar a nós dois.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-22=Então... Eu tive que fazer isso de novo.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-23=Eu lamento... Não sou a pessoa que você queria que eu fosse.
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-24=Você está de brincadeira comigo?! Isso é incrível!
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-25=Eu não sou um fã de lutas esportivas mas...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-26=Eu vou assistir na próxima vez!
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-27=Então... Você não está bravo comigo?...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-28=Eu estava.
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-29=Eu só queria a verdade. Agora está começando a fazer sentido!
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-30=Eu sou tão bobo. Eu deveria ter percebido, considerando o quanto você é robusto.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-31=Ei, você continua me chamando de gordo!
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-32=É só brincadeira!
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-33=Bem, sua barriga é redonda, mas você é o cara mais forte que eu conheço.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-34=Ah ah. É, nem o maior dos Squealers tem chance contra mim!
+# Graff                                 
+#"To worry anymore that something happens to you"
+PC01_DAY2ENDJ2_TRUTH1-35=Que bom. Eu não vou mais precisar me preocupar que... Erm...
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-36=Você estava preocupado comigo?
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-37=Bem...
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-38=Até agora... Eu tenho dependido de você.
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-39=Mas isso tudo vai mudar amanhã.
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-40=Sabe... Quando você for um Drumer...
+# Brok                                 
+PC01_DAY2ENDJ2_TRUTH1-41=Eu não vou estar por perto, mas você sempre poderá contar comigo.
+# Graff                                 
+PC01_DAY2ENDJ2_TRUTH1-42=Obrigado...
+#----------------------------------------------------
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-1=Experiência. Sabe...
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-2=Não é a primeira vez.
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-3=Na verdade... Você deveria treinar. Só por precaução.
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-4=Eu já treino. Quando viemos para Slums, você disse que eu deveria ser mais forte.
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-5=Eu segui seu conselho. Eu treino regularmente, fora as aulas de defesa pessoal.
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-6=Que bom!
+# Brok                                 
+PC01_DAY2ENDJ2_LIE1-7=Eu vejo que ganhou uns músculos ultimamente. Você é um homem agora!
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-8=Você acha?...
+# Graff                                 
+PC01_DAY2ENDJ2_LIE1-9=Espero não precisar usá-los...
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-1=Tudo bem... Eu confio em você.
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-2=Chega de segredos, ok?
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-3=Me diga que não está escondendo mais nada.
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-4=Eu juro. Chega de segredos.
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-5=A vida é muito curta... Eu não quero que a gente discuta de novo.
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-6=Concordo.
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-7=Olha... Seu aniversário está chegando.
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-8=Você lembrou...
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-9=Que tal se eu preparar algo especial pra você?
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-10=Legal! Vou esperar ansioso.
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-11=Mas... Se por acaso você não puder...
+# Graff                                 
+PC01_DAY2ENDJ2_AFTER-12=Tudo bem. Eu vou entender.
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-13=...
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-14=Quer saber? Mal posso esperar pra ter dar alguma coisa.
+# Brok                                 
+PC01_DAY2ENDJ2_AFTER-15=Aqui.
+#----------------------------------------------------
+# Graff                                 
+#Giving a bad present
+GPC01_DAY2ENDJ2_GIVEBAD-1=Erm...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-2=Obrigado...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEBAD-3=...Você não gostou disso.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-4=Não, não! É só... Um pouco...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-5=É que eu não esperava.
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEBAD-6=Desculpe. Eu pisei na bola de novo.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-7=Não! Não se preocupe.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEBAD-8=Eu vou ficar com isso.
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-1=Mas isso é...!
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-2=Um Cresceágua.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-3=Eu tinha um desses...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-4=E você lembrou!
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-5=É.
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-6=Eu perdi muitas memórias daquele tempo...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-7=Mas quando eu vi isso...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-8=...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-9=Obrigado...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPRED-10=Não foi nada. Eu consegui de graça!
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPRED-11=Mesmo assim...
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-1=Isso é...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-2=O pingente da mamãe?...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-3=É.
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-4=Eu achei que deveria pertencer à você.
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-5=Assim... Ela estará sempre com você...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-6=Eu...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-7=Eu não posso aceitar isso.
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-8=Por quê?...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-9=É...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-10=Muito difícil...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-11=(Ahhh) Desculpe...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-12=Vou ficar com ele por enquanto.
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-13=Mas um dia...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-14=Quando se sentir pronto...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-15=Vou devolver pra você.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-16=Tudo bem...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPENDANT-17=Foi muito legal ter me oferecido isso.
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-1=Uma pílula...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-2=É pra não ficar sem outra vez.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-3=Ok...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-4=...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-5=Não é... o que esperava, hein...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-6=Não exatamente mas...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-7=Tudo bem! É útil.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEPOLLUTIONPILL-8=Obrigado!
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-1=Sua chave?...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-2=Você sabe que eu já tenho uma, certo?...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-3=Ah... Quero dizer...
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-4=É um símbolo. Minha casa será sempre sua casa. Mesmo quando for um Drumer.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-5=...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-6=Eu...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-7=Obrigado... De verdade...
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVEAPARTMENTKEY-8=Mas você deveria ficar com ela.
+#----------------------------------------------------
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVENEXT-1=Ok...
+#----------------------------------------------------
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-1=A propósito!
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-2=Eu também tenho algo pra você.
+# Brok                                 
+GPC01_DAY2ENDJ2_EARBUDS-3=...?
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-4=Fones. A Shay pediu para te entregar.
+# Graff                                 
+GPC01_DAY2ENDJ2_EARBUDS-5=Para que possa dormir melhor...
+# Brok                                 
+GPC01_DAY2ENDJ2_EARBUDS-6=Ah!
+# Brok                                 
+GPC01_DAY2ENDJ2_EARBUDS-7=Obrigado, Graff.
+#----------------------------------------------------
+# Brok                                 
+GPC01_DAY2ENDJ2_GIVENEXT2-1=Aconteça o que acontecer, estarei aqui no seu aniversário.
+# Graff                                 
+GPC01_DAY2ENDJ2_GIVENEXT2-2=Legal...
+#----------------------------------------------------
+# Graff                                 
+PC01_DAY2ENDJ3-1=Sobre antes...
+# Brok                                 
+PC01_DAY2ENDJ3-2=Eu sei. Não precisa dizer nada.
+# Graff                                 
+PC01_DAY2ENDJ3-3=...
+# Graff                                 
+PC01_DAY2ENDJ3-4=Boa noite.
+# Brok                                 
+PC01_DAY2ENDJ3-5=Boa noite, garoto.
+#----------------------------------------------------
+
+
+
+#----------------------------------------------------
+# Graff
+GPC01_DISH_ANGRY1-1=Ele ainda não lavou a louça?!
+#----------------------------------------------------
+# Graff
+GPC01_DISH_HAPPY1-1=Finalmente! Ele lavou a louça!
+#----------------------------------------------------
+# Graff
+GPC01_BED_ASK-1=Hmm... Talvez só um cochilo?
+#----------------------------------------------------
+# Graff
+GPC01_BED_HEALTH_BACK1-1=(Sigh) Eu até quero, mas... Não posso me dar ao luxo de descansar mais.
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP_NONE-1=Ei... Ele não deixou nada para mim!
+#----------------------------------------------------
+# Graff
+GPC01_FRUITCUP_GONE-1=...
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE-1=(Ahn)
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE-2=Eu preciso saber...
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE1-1=Hmm...
+# Unknown
+PC01_DAY2ENDE_ALTERNATIVE1-2="Estou com raiva de todos e me odeio"
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE2-1=Uau... São tantos resultados!
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE2-2=Talvez eu não devesse me preocupar tanto.
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE_ALTERNATIVE3-1=Uma mensagem...
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-1=...
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-2=Pontos... bônus?...
+# Graff
+PC01_DAY2ENDE3_ALTERNATIVE-3=Brok...
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-1=...
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-2=Droga.
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-3=Ah, é! Eu me lembrei agora. Ele deve estar no seu teste esta noite.
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-4=Opa, o que é isso?...
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-5=alguém notou minha pesquisa e comentou...
+# Nmerchat
+PC01_DAY2ENDH1B_ALTERNATIVE-6="NÃO SE PREOCUPE. NADA DE ERRADO COM VOCÊ."
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-7=Acho que...
+# Graff
+PC01_DAY2ENDH1B_ALTERNATIVE-8=...?
+#----------------------------------------------------
+# Graff
+PC01_DAY2ENDJ1_NOPE-1=...
+# Graff
+PC01_DAY2ENDJ1_NOPE-2=Me deixe em paz.
+# Brok
+PC01_DAY2ENDJ1_NOPE-3=(Ahn)
+#----------------------------------------------------
+# Graff
+GPC01_HIT_BEDROOMDOOR1-1=Ah, não... Estou parecendo meu pai!

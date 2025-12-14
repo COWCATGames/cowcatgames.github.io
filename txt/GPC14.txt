@@ -1,0 +1,782 @@
+﻿#-------------------------------
+#=GRAFF - HACKER BACK STREET
+#-------------------------------
+#---------------------------------------
+#= Statue
+#---------------------------------------
+
+ID=GPC14_STATUE_DESTROYED1
+T=There sure are a lot of brutes around here...
+W=GRAFF
+A=MEH
+CONTEXT=Room interactions
+
+#---------------------------------------
+
+ID=GPC14_STATUE1
+T=The Untail...
+W=GRAFF
+A=OPPOSITE
+
+#---------------------------------------
+#= Graff arrives and see Brok fighting
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND1
+T=...!
+W=GRAFF
+A=SURPRISED
+TEN=PC14_STORY180_SECOND2
+CONTEXT=Day 2 end - Graff arrives and see Brok fighting
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND5
+T=Argh... Does 'dat guy have steel fists or what?...
+W=RAT
+C1=RAT
+C1A=HURT
+C2=BROK
+C2A=ANGRY
+C3=DART
+C3A=NORMAL
+COMM=During this whole scene, Graff is hidden and mistakes this for Brok attempting to steal from the Squealers (when it's actually the opposite)
+
+T=Do you know who I am, little jerks?...
+W=BROK
+
+T=Well I bet your boss remembers.
+W=BROK
+C2A=FURIOUS
+
+T=...Da boss?...
+W=DART
+C3A=WONDER
+
+T=I'm not in the mood for talk! Gimme that phone, or else...
+W=BROK
+
+T=...Oh no!... It's him!
+W=DART
+C3A=SURPRISED
+
+T=Him who?!
+W=RAT
+C1A=SURPRISED
+TEN=GPC14_STORY180_SECOND5_CHECK
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND5_BLOWUP
+T=He's da guy who blew us all up yesterday!
+W=DART
+C1=RAT
+C1A=SURPRISED
+C2=BROK
+C2A=FURIOUS
+C3=DART
+C3A=SURPRISED
+TEN=GPC14_STORY180_SECOND5_CHECK2
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND5_BEAT
+T=He's da guy who beat up our commander yesterday!
+W=DART
+C1=RAT
+C1A=SURPRISED
+C2=BROK
+C2A=FURIOUS
+C3=DART
+C3A=SURPRISED
+TEN=GPC14_STORY180_SECOND5_CHECK2
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND5_SEVERAL
+T=We keep running into him!
+W=DART
+C1=RAT
+C1A=SURPRISED
+C2=BROK
+C2A=FURIOUS
+C3=DART
+C3A=SURPRISED
+TEN=GPC14_STORY180_SECOND5B
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND5B
+T=N... Nah way!!!
+W=RAT
+C1=RAT
+C1A=SURPRISED
+C2=BROK
+C2A=FURIOUS
+C3=DART
+C3A=SURPRISED
+
+T=Dun' wanna die! Take that phone! And my money!
+W=DART
+TEN=PC14_STORY180_ENEMIESFLEE
+
+T=Uh?...
+W=BROK
+C2A=THINK
+C3=NONE
+C1=NONE
+TEN=PC14_STORY180_BROKAPPROACHCOUPON
+
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND6
+T=A 100 Unis redeemable coupon...
+W=BROK
+A=THINK
+TEN=PC14_STORY180_BROKAPPROACHCOUPON3
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND7
+T=Well... That was money easily won.
+W=BROK
+A=THINK
+
+T=(Yawn) What a day. Let's get some shut-eye.
+W=BROK
+A=TIRED
+TEN=PC14_STORY180_BROKLEAVES
+
+
+#---------------------------------------
+
+ID=GPC14_STORY180_SECOND8
+T=What was that?...
+W=GRAFF
+A=THINK
+
+T=Is this... how Brok makes money?...
+W=GRAFF
+A=THINK
+
+T=...
+W=GRAFF
+A=TURN
+TEN=PC14_STORY180_GRAFFHOME
+
+
+
+#---------------------------------------
+#= Graff with Ott in day 3
+#---------------------------------------
+
+ID=GPC14_RATSCOME1
+T=...!
+W=GRAFF
+A=GASP
+CONTEXT=Graff with Ott in day 3, getting ambushed by rats
+
+
+#---------------------------------------
+
+ID=GPC14_RATSCOME2
+T=Whatta nice surprise!
+W=KINS
+C1=GRAFF
+C1A=GASP
+C2=KINS
+C2A=HAPPY
+C3=OTT
+C3A=SURPRISED
+C4=DART
+C4A=NORMAL
+TEN=GPC14_RATSCOME2B
+
+T=We didn't even have to look. Ya just came straight at us!
+W=KINS
+
+T=...
+W=GRAFF
+
+T=(Gulp)
+W=OTT
+
+T=Graff!...
+W=OTT
+
+T=What do we do?...
+W=OTT
+TEN=GPC14_RATSCOME_CHOICES
+
+
+
+#---------------------------------------
+
+ID=GPC14_CHOICE_TALK1
+T=What do you want?
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KINS
+C2A=NORMAL
+C3=OTT
+C3A=SURPRISED
+C4=DART
+C4A=NORMAL
+
+T=You.
+W=KINS
+C2A=READY
+COMM=He means Graff only
+
+T=Uh?! Why?
+W=GRAFF
+C1A=SURPRISED
+
+T=Da boss will tell ya.
+W=KINS
+
+T=Come.
+W=KINS
+C2A=NORMAL
+
+T=No way!
+W=GRAFF
+C1A=ANGRY
+
+T=Not giving you a choice.
+W=KINS
+TEN=GPC14_GRAFF_DOWNDART
+
+T=Ooof!
+W=GRAFF
+C1A=GASP
+
+T=Graff!!!
+W=OTT
+C1=NONE
+TEN=GPC14_CHOICE_AFTER
+
+
+#---------------------------------------
+
+ID=GPC14_CHOICE_RUN
+T=Ott...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=KINS
+C2A=NORMAL
+C3=OTT
+C3A=SAD
+C4=DART
+C4A=NORMAL
+
+T=Run!!!
+W=GRAFF
+C1A=GASP
+TEE=GPC14_CHOICE_RUNDO
+
+#---------------------------------------
+
+ID=GPC14_CHOICE_RUN2
+T=Ooof!!!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C1_EYESHUT=1
+C2=KINS
+C2A=ANGRY
+C3=OTT
+C3A=SURPRISED
+C4=DART
+C4A=NORMAL
+TEB=GPC14_GRAFF_DOWN
+
+T=Graff!!!
+W=OTT
+C1=NONE
+
+T=Ha ha ha!
+W=KINS
+C2A=HAPPY
+
+T=You thought you could escape us? Miserable worm!
+W=KINS
+TEN=GPC14_CHOICE_AFTER
+
+
+#---------------------------------------
+
+ID=GPC14_CHOICE_AFTER
+T=Let me go! Or else...
+W=OTT
+C2=KINS
+C2A=NORMAL
+C1=OTT
+C1A=ANGRY
+C4=DART
+C4A=NORMAL
+
+T=Else wha'?
+W=DART
+C4A=READY
+
+T=I... I'll call my uncle! He's a cop!
+W=OTT
+C1A=OPPOSITE
+
+T=Can I, Kins? Can I?
+W=DART
+
+T=Help yourself.
+W=KINS
+C2A=READY
+TEN=GPC14_CHOICE_DARTGRABOTT
+
+T=Argh...
+W=OTT
+C1A=SURPRISED
+C1_EYESHUT=1
+TEE=CH6_STORY280_COMPLETE_GRAFF
+
+
+#---------------------------------------
+
+ID=GPC14_CHOICE_FIGHT
+T=You want a piece of me?...
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=KINS
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=DART
+C4A=NORMAL
+
+T=Go ahead! I'm ready!
+W=GRAFF
+
+T=Oh no! I'm scared!
+W=KINS
+C2A=HAPPY
+
+T=I'm not joking!
+W=GRAFF
+C1A=ANGRY
+
+T=Graff?... What are you doing?...
+W=OTT
+C3A=SAD
+
+T=Whatta we do, Kins?
+W=DART
+C4A=WONDER
+
+T=Let's show dat little pretentious cat.
+W=KINS
+C2A=READY
+TEN=GPC14_STARTFIGHT
+# added cat because pretentious isn't a noun. 
+
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT
+T=N... No way...
+W=DART
+C1=GRAFF
+C1A=READY
+C2=KINS
+C2A=SURPRISED
+C3=OTT
+C3A=NORMAL
+C4=DART
+C4A=SURPRISED
+COMM=Win the fight
+TEN=GPC14_AFTERFIGHT_KINS
+
+T=How can this little boy...
+W=DART
+C2A=ANGRY
+TEN=GPC14_AFTERFIGHT_KINS2
+
+T=Leave us alone!
+W=GRAFF
+C1A=ANGRY
+TEN=GPC14_AFTERFIGHT_KINSPICTURE
+
+T=Ahhh!
+W=OTT
+C3A=SURPRISED
+
+T=The boss asked! No choice!
+W=KINS
+
+T=This is me you're after! Release him!
+W=GRAFF
+
+T=Give up and we spare you both.
+W=KINS
+C2A=ANGRY
+
+T=Don't mind me Graff! Run away!
+W=OTT
+C3A=SAD
+TEN=GPC14_AFTERFIGHT_CHOICE
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_GIVEUP1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=KINS
+C2A=ANGRY
+C3=OTT
+C3A=SAD
+C4=DART
+C4A=WONDER
+
+T=Alright...
+W=GRAFF
+
+T=Take me. But let Ott leave.
+W=GRAFF
+C1A=READY
+
+T=Sorry! Boss needs both of you.
+W=DART
+C4A=READY
+TEN=GPC14_AFTERFIGHT_GIVEUP2
+
+T=Oooof!...
+W=GRAFF
+C1A=GASP
+TEN=CH6_STORY280_COMPLETE_GRAFF
+
+
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_KILL1
+T=I'm...
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=KINS
+C2A=SURPRISED
+
+T=Gonna kill you...!
+W=GRAFF
+C1A=ANGRY
+TEN=GPC14_AFTERFIGHT_OTTKILLED
+
+#TODO Graff runs towards rat
+
+T=Whaaa...!!!
+W=KINS
+
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_KILL2
+T=...!!!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=KINS
+C2A=SURPRISED
+C4=DART
+C4A=SURPRISED
+COMM=The rat accidentally kills Ott
+
+T=The... the boy!
+W=KINS
+
+T=You imbecile! Look what you've done!
+W=DART
+
+T=He got me frightened! I...
+W=KINS
+
+T=We can't stay here!...
+W=DART
+TEN=GPC14_AFTERFIGHT_KILL2B
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_KILL3
+T=...Ott...
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+
+T=N... No...
+W=GRAFF
+A=TORN
+TEN=GPC14_AFTERFIGHT_KILL3_MUSIC
+
+T=Ott... I'm begging you...
+W=GRAFF
+A=SOB
+
+T=...
+W=GRAFF
+
+T=Help!!!
+W=GRAFF
+A=GASP
+C2_EYESHUT=1
+
+T=Somebody help!!!
+W=GRAFF
+
+T=Anyone...
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+
+T=This is...
+W=GRAFF
+A=TORN
+
+T=All my fault...
+W=GRAFF
+A=SOB
+TEN=GPC14_AFTERFIGHT_KILL3B
+
+
+
+#-------------------------------------
+#Brok says this - similar lines to PC10_DAY3RESULTS_WINSANYWAY_BROK
+ID=GPC14_AFTERFIGHT_KILL4
+T=The next events are a blur.
+BVOICE=BROK
+T=I remember entering the bunker with Dee and the doc.
+T=It was tough but we found a way to get rid of those bots surrounding us.
+T=On the way out... I was getting worried about Graff.
+T=I searched for him for a while.
+T=Until...
+TEN=GPC14_AFTERFIGHT_KILL4B
+
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_KILL5
+T=...
+W=BROK
+A=HEARTBROKEN
+CONTEXT=Brok arrives and sees Graff next, sit next to Ott's corpse
+
+T=Graff...
+W=BROK
+A=HEARTBROKEN
+TEN=GPC14_AFTERFIGHT_KILL5B
+
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_KILL6
+T=...
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=TORN
+
+T=Oh no...
+W=BROK
+TEN=GPC14_AFTERFIGHT_KILL6B
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_KILL7
+T=Wake...
+W=GRAFF
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=TORN
+
+T=Wake him up...
+W=GRAFF
+
+T=Please!...
+W=GRAFF
+C2A=SOB
+
+T=...
+W=BROK
+
+T=I'm afraid... I can't...
+W=BROK
+C1A=HEARTBROKEN
+TEN=GPC14_AFTERFIGHT_KILL7B
+
+#---------------------------------------
+
+ID=GPC14_AFTERFIGHT_KILL8
+T=How long have you been here?...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=GRAFF
+C2A=TORN
+
+T=...
+W=GRAFF
+
+T=I... can't leave him...
+W=GRAFF
+
+T=I understand...
+W=BROK
+
+T=I've only known him for a short while but...
+W=BROK
+C1A=HEARTBROKEN
+
+T=He was the best of us...
+W=BROK
+
+T=...
+W=GRAFF
+
+T=His parents....
+W=GRAFF
+C2A=SAD
+
+T=What are we gonna tell them...
+W=GRAFF
+
+T=Let me take care of this.
+W=BROK
+C1A=DOWN
+
+T=Lemme...
+W=BROK
+
+T=Take care of everything.
+W=BROK
+
+T=...
+W=GRAFF
+
+T=Come with me.
+W=BROK
+TEN=GPC14_AFTERFIGHT_KILL8B
+
+
+#---------------------------------------
+
+ID=GPC14_GRAFF_GAMEOVER
+T=Oops!... I think he's...
+W=DART
+C1=DART
+C1A=SURPRISED
+C2=KINS
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+CONTEXT=Graff loses
+
+T=Idiot! What have you done!!!
+W=KINS
+C2A=ANGRY
+
+T=Da boss needed him alive!
+W=KINS
+
+T=But...!
+W=DART
+
+T=Graff!!! Why...!
+W=OTT
+TEN=GAMEOVER
+
+
+#---------------------------------------
+
+ID=GPC14_CHOICE_DONOTHING1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=KINS
+C2A=HAPPY
+C3=OTT
+C3A=ANGRY
+C4=DART
+C4A=NORMAL
+CONTEXT=Player chooses to do nothing
+
+T=What's da problem? Someone cut your tongue?...
+W=KINS
+
+T=Go away! We don't want any trouble!
+W=OTT
+
+T=Oh but we do, pig boy!
+W=DART
+C4A=READY
+
+T=Graff! We can't fight 'em!
+W=OTT
+C3A=SURPRISED
+
+T=Maybe we should...
+W=OTT
+C3A=SAD
+TEN=GPC14_KINS_HITOTT
+SKIPEND=1
+
+T=Argh!
+W=OTT
+C3A=SURPRISED
+C3_EYESHUT=1
+
+T=Shut up.
+W=DART
+C3=NONE
+
+T=You... monster!
+W=GRAFF
+C1A=ANGRY
+
+T=Oh! Look! Lil' pussy here is angry we beat his lover boy!
+W=DART
+C4A=COCKY
+
+T=What are ya gonna do about it, uh?!
+W=DART
+C4A=READY
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Knock him down. He shan't see where we'll bring him.
+W=KINS
+C2A=NORMAL
+
+T=Sure thing!
+W=DART
+TEN=GPC14_GRAFF_DOWNDART
+
+T=Ooof!...
+W=GRAFF
+C1A=GASP
+TEN=CH6_STORY280_COMPLETE_GRAFF
+
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 03/09/2019
+###############################################

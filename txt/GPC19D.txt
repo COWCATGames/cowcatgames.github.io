@@ -1,0 +1,571 @@
+#-------------------------------
+#=BUNKER FRONT/OUTSIDE
+#-------------------------------
+
+
+#----------------------
+#= Arrive
+#----------------------
+ID=GPC19D_INIT1
+T=(Cough, cough)
+W=GRAFF
+A=CHOKE
+CONTEXT=Graff managed to get out of the bunker but now he's really sick because of the pollution and needs a pill urgently
+
+T=Finally out... (Cough)
+W=GRAFF
+A=HAPPY
+
+T=A Pipe-Pill!
+W=GRAFF
+A=SURPRISED
+TEN=GPC19D_GO_PIPEPILL
+
+#----------------------
+#= Pipe pill
+#----------------------
+ID=GPC19D_INIT2
+T=In bad shape... (Cough)
+W=GRAFF
+A=TORN
+
+T=Please, oh please... Be working!...
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+A=MEH
+TEN=GPC19D_INIT_SADMUSIC
+
+T=Oh no... (Cough, cough)
+W=GRAFF
+A=SOB
+
+T=That darn thing... (Cough) ...is messed up!
+W=GRAFF
+A=SOB
+
+T=(Sigh)
+W=GRAFF
+A=SAD
+
+T=I should call Brok...
+W=GRAFF
+
+T=Maybe he can get me some...
+W=GRAFF
+
+T=...(Cough, cough)
+W=GRAFF
+A=CHOKE
+SOUND=phone_dial
+
+T=Come on! Reply!...
+W=GRAFF
+A=ANGRY
+
+T=Just... For once...!
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+A=SAD
+
+T=Of course... What was I thinking?...
+W=GRAFF
+A=STUPID
+SOUND=phone_end
+
+T=(Cough) Never there when I need him...
+W=GRAFF
+A=TURN
+
+T=What should I do, now?...
+W=GRAFF
+A=THINK
+TEN=CLICKERS_BACK
+
+#----------------------
+ID=GPC19D_INIT2_KLAYDEAD
+T=Out of service...
+W=GRAFF
+A=SAD
+
+T=That's just great...
+W=GRAFF
+
+T=I'll be joining you soon, Klay...
+W=GRAFF
+A=SAD
+TEN=GPC19D_INIT2_KLAYDEADLEAVE
+
+
+
+
+#----------------------
+#= Pipe pill
+#----------------------
+ID=GPC19D_PIPEPILL1
+T=What's happening?...
+W=GRAFF
+A=SURPRISED
+
+T=I... I can't focus... (Cough, cough)
+W=GRAFF
+A=GASP
+
+
+
+#----------------------
+#= Rat
+#----------------------
+ID=GPC19D_RAT1
+T=Pssst!
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+COMM=An unknown rat, in the background, offers to sell Graff a pill
+
+T=...?
+W=GRAFF
+A=TURN
+
+T=Hey, boy!
+BNAMESP=UNKNOWN
+BVOICESP=VARIOUS
+TEN=GPC19D_GRAFF_TURNRAT
+
+#----------------------
+ID=GPC19D_RAT2
+T=Got what ya need.
+W=RAT
+C1=GRAFF
+C1A=GASP
+C2=RAT
+C2A=NORMAL
+
+T=A pill?...
+W=GRAFF
+
+T=Yup.
+W=RAT
+
+T=One thousand Unis.
+W=RAT
+C2A=COCKY
+
+T=Are you serious?...
+W=GRAFF
+C1A=SURPRISED
+
+T=No, thanks. (Cough, cough)
+W=GRAFF
+C1A=OPPOSITE
+
+T=I'll get one from another Pipe-Pill.
+W=GRAFF
+C1A=OPPOSITE
+TEE=GPC19D_GRAFF_STARTLEAVE
+
+#----------------------
+ID=GPC19D_RAT3
+T=Ya won't.
+W=RAT
+C1=GRAFF
+C1A=GASP
+C2=RAT
+C2A=COCKY
+TEN=GPC19D_GRAFF_TURNRAT2
+
+T=What?
+W=GRAFF
+C1A=TURN
+
+T=There ain't any more.
+W=RAT
+C2A=COCKY
+TEN=GPC19D_GRAFF_TURNRAT
+
+T=All Pipe-Pills kaputt.
+W=RAT
+C2A=LAUGH
+
+T=I don't believe you.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Okay. Go check.
+W=RAT
+C2A=COCKY
+
+T=But dat's my last one. I may have nothin' when ya're back...
+W=RAT
+
+T=Will ya take da risk?
+W=RAT
+TEN=GPC19D_RAT3NEXT
+IT=1
+
+
+#----------------------
+ID=GPC19D_RAT_ASKINFO1
+T=Where did you get it? (Cough)
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=RAT
+C2A=NORMAL
+
+T=Not yar business.
+W=RAT
+
+T=I won't buy it unless you tell me.
+W=GRAFF
+C1A=ANGRY
+
+T=We Squealers take risks to make sure even kitties like ya stand a chance to stay alive.
+W=RAT
+C2A=COCKY
+
+T=Provided we get money...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Tis all ya need to know.
+W=RAT
+
+T=(Cough, cough) Okay, then...
+W=GRAFF
+C1A=ANGRY
+
+T=There's an app to detect counterfeit. Let me check.
+W=GRAFF
+C1A=TURN
+TEN=GPC19D_CHECK_PILL
+
+
+#----------------------
+ID=GPC19D_RAT_ASKINFOB
+T=Yup... Authentic.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=RAT
+C2A=COCKY
+
+T=So?
+W=RAT
+C2A=NORMAL
+
+T=One thousand Unis. Take it or leave it.
+W=RAT
+TEN=GPC19D_BUYPILL_CHOICE
+IT=1
+
+#----------------------
+ID=GPC19D_RAT_ASKINFO2
+T=I'd like to know...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=RAT
+C2A=NORMAL
+
+T=Dun waste your time.
+W=RAT
+C2A=COCKY
+
+T=Buy or be gone.
+W=RAT
+C2A=ANGRY
+TEN=GPC19D_BUYPILL_CHOICE
+IT=1
+
+#----------------------
+ID=GPC19D_RAT_BUYNOMONEY1
+T=Okay but... Erm...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=RAT
+C2A=NORMAL
+
+T=No bargaining.
+W=RAT
+C2A=ANGRY
+
+T=That price is outrageous!
+W=GRAFF
+C1A=ANGRY
+
+T=Tis the law of supply and demand.
+W=RAT
+C2A=COCKY
+
+T=And demand is wayyyy high at the moment.
+W=RAT
+C2A=LAUGH
+
+T=I don't have enough right now... (Cough, cough)
+W=GRAFF
+C1A=TORN
+
+T=But... I'll find a way...
+W=GRAFF
+C1A=THINK
+
+T=Dun' wait too long!
+W=RAT
+C2A=COCKY
+
+#----------------------
+ID=GPC19D_RAT_BUYNOMONEY2
+T=Please!... If I don't get a pill, I will... (Cough, cough)
+W=GRAFF
+C1=GRAFF
+C1A=SOB
+C2=RAT
+C2A=NORMAL
+
+T=Yar problem.
+W=RAT
+
+T=Gimme the dough. Stop suffering for nothin'.
+W=RAT
+C1A=ANGRY
+
+T=I wish it was that easy...
+W=GRAFF
+C1A=SAD
+
+#----------------------
+ID=GPC19D_RAT_NO1
+T=Forget it! I don't trade with crooks. (Cough, cough)
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=RAT
+C2A=THINK
+
+T=Everyone says that. But kitty, lemme remind you of somethin'...
+W=RAT
+C2A=THINK
+
+T=Ya dun have much time left.
+W=RAT
+C2A=LAUGH
+
+T=Heard the struggling to breathe gets atrocious right before da end.
+W=RAT
+
+T=Get stuffed. (Cough, cough)
+W=GRAFF
+C1A=ANGRY
+
+#----------------------
+ID=GPC19D_RAT_NO2
+T=I'd rather die! (Cough, cough)
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=RAT
+C2A=NORMAL
+
+T=Well, yar wish will be granted soon.
+W=RAT
+C2A=LAUGH
+
+#----------------------
+ID=GPC19D_RAT_YES
+T=Okay... (Cough, cough)
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=RAT
+C2A=NORMAL
+
+T=I can't argue with you in this state... I've transferred you 1,000 Unis.
+W=GRAFF
+
+T=Now give me that!
+W=GRAFF
+C1A=ANGRY
+
+T=All yours!
+W=RAT
+C2A=LAUGH
+TEE=GPC19D_RAT_GONE
+
+T=Wait...! What's your...
+W=GRAFF
+C1A=THINK
+C2=NONE
+
+T=...He's gone.
+W=GRAFF
+C1A=OPPOSITE
+TEN=GPC19D_RAT_YES2_PICTURE
+
+#----------------------
+ID=GPC19D_RAT_YES2
+T=...
+W=GRAFF
+A=SAD
+
+T=I didn't have a choice... Did I?...
+W=GRAFF
+A=TORN
+
+T=...
+W=GRAFF
+
+T=No. I shouldn't feel guilty! (Cough)
+W=GRAFF
+A=ANGRY
+
+T=It's his fault. He promised but once again...
+W=GRAFF
+A=OPPOSITE
+
+T=(Cough, cough, cough)
+W=GRAFF
+A=CHOKE
+TEN=GPC19D_RAT_YES2_REMOVEPICTURE
+
+T=(Swallows)
+W=GRAFF
+A=GASP
+
+T=...
+W=GRAFF
+A=GASP
+
+T=I feel... better already.
+W=GRAFF
+A=HAPPY
+
+T=But so tired. I'd better go home.
+W=GRAFF
+A=TORN
+TEN=GPC19D_GRAFF_EXITS
+
+T=What a day...
+W=GRAFF
+TEN=GPC19D_GRAFF_EXITS2
+
+#----------------------
+ID=GPC19D_RAT_AGAIN
+T=Hey kitty.
+W=RAT
+C1=GRAFF
+C1A=TURN
+C2=RAT
+C2A=NORMAL
+TEN=GPC19D_GRAFF_TURNRAT
+
+T=Ya're in luck. Still got one.
+W=RAT
+
+T=Want it?
+W=RAT
+TEN=GPC19D_BUYPILL_CHOICE
+IT=1
+
+#----------------------
+ID=GPC19D_RAT_KLAY
+T=Go away. (Cough)
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=RAT
+C2A=NORMAL
+
+T=Got exactly what ya need!
+W=RAT
+TEN=GPC19D_RAT_KLAYLEAVEA
+
+T=Leave me alone.
+W=GRAFF
+C1A=TORN
+
+T=Okay! But you'll regret it!
+W=RAT
+C2A=THINK
+TEN=GPC19D_RAT_KLAYLEAVE
+
+#----------------------
+#= Over there
+#----------------------
+ID=GPC19D_OVERTHERE1
+T=I shouldn't get too far in this state... (Cough, cough)
+W=GRAFF
+A=CHOKE
+
+#----------------------
+#= Portal
+#----------------------
+ID=GPC19D_PORTAL1
+T=So I was inside some kind of... (Cough) Bunker?...
+W=GRAFF
+A=THINK
+
+T=One thing's for sure... I'm not coming back here!
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+ID=GPC19D_PORTAL_AFTER
+T=One thing's for sure... I'm not coming back here!
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+ID=GPC19D_PORTAL_OTT
+T=Bad memories...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=NORMAL
+COMM=Day 3 - Coming back here with Ott
+
+T=What do you mean?
+W=OTT
+C2A=WONDER
+
+T=The bunker. Yesterday's trial.
+W=GRAFF
+C1A=MEH
+
+T=Huh? I've never been there.
+W=OTT
+C2A=SURPRISED
+
+T=What?
+W=GRAFF
+C1A=SURPRISED
+
+T=Your trial must have been different...
+W=GRAFF
+C1A=THINK
+###############################################
+# PROOFREAD - frasermacgaming - 01/09/2019
+# EXPRESSIONS - CharlieLarge - 19/09/2019
+################################f###############
+
+
+#----------------------
+ID=GPC19D_PIPEPILL2
+T=Oh no... That one's broken as well.
+W=GRAFF
+A=SAD
+
+T=No use insisting.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------
+ID=COOP_GPC19D_RAT1
+T=A very friendly crook rat.

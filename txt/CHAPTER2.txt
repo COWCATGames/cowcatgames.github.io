@@ -1,0 +1,85 @@
+﻿#-----------------------------------------
+#=CHAPTER 2 TEXT POTENTIALLY USED EVERYWHERE
+#-----------------------------------------
+
+#----------------------------------------------------
+#= CALL Inside Jail
+#----------------------------------------------------
+ID=CH2_CALL_JAIL
+T=Impossible... They've blocked my phone.
+W=BROK
+A=STUPID
+
+T=I won't get a signal until I leave this building!
+W=BROK
+A=ANGRY
+
+#----------------------------------------------------
+#= GRAFF CALLS BROK
+#----------------------------------------------------
+ID=CH2_GRAFF_CALL_BROK_DURINGFAIR
+T=...
+W=GRAFF
+A=MEH
+
+T=Obviously... Mister detective is too busy to reply.
+W=GRAFF
+A=TURN
+
+T=You better be here on time, Mister!
+W=GRAFF
+A=OPPOSITE
+TEN=INTERFACE_CALL_END
+
+
+#----------------------------------------------------
+#= GRAFF CALLS OTT
+#----------------------------------------------------
+ID=CH2_GRAFF_CALL_OTT_DURINGFAIR
+T=Yeah?
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+
+T=I need some advice...
+W=GRAFF
+
+T=Can't you come by? That'd be easier.
+W=OTT
+C2A=WONDER
+
+T=Okay...
+W=GRAFF
+C1A=TURN
+TEN=INTERFACE_CALL_END
+
+
+
+#----------------------------------------------------
+#= GRAFF CALLS SHAY
+#----------------------------------------------------
+ID=CH2_GRAFF_CALL_SHAY_DURINGFAIR
+T=No need to call her. I'll just go to her garage!
+W=GRAFF
+A=TURN
+
+
+#----------------------------------------------------
+#= GRAFF CALLS KLAY
+#----------------------------------------------------
+ID=CH2_GRAFF_CALL_KLAY_DURINGFAIR
+T=No. Way.
+W=GRAFF
+A=OPPOSITE
+
+T=I don't even know why I have his number to begin with!
+W=GRAFF
+A=TURN
+
+
+###############################################
+# PROOFREAD - jblaker - 16/08/2019
+# EXPRESSIONS - Oggy Cather - 24/09/2019
+###############################################

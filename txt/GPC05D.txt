@@ -1,0 +1,2820 @@
+﻿#-------------------------------
+#=SEWERS BELOW
+#-------------------------------
+
+#----------------------
+#= Graff wakes up
+#----------------------
+
+ID=GPC05D_FIRST
+T=...
+W=GRAFF
+A=MEH
+CONTEXT=Graff has been kidnapped by the rats. He's waking up...
+
+T=Argh... My head...
+W=GRAFF
+A=STUPID
+
+T=Oh no... I'm tied up!...
+W=GRAFF
+A=GASP
+
+T=I... don't like this...
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+
+T=My rope is a bit loose. With some efforts, I can move!
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+#= Graff meets chief rat
+#----------------------
+
+ID=GPC05D_CHIEFRAT_NORMAL
+T=Hey, Princess! Finally woke up?
+W=CHIEFRAT
+C1=GRAFF
+C1A=OPPOSITE
+C2=CHIEFRAT
+C2A=HAPPY
+CONTEXT=Graff meets rat chief
+
+T=...
+W=GRAFF
+TEN=GPC05D_FIRSTDIALOG
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_SPOTTED
+T=Ya gotta be kiddin' me, boy!
+W=CHIEFRAT
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=ANGRY
+COMM=If Graff moved and was spotted by the chief
+
+T=Ya really think you could get past us?
+W=CHIEFRAT
+TEN=PC05D_CHIEFRAT_CUTTINGCHECK
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_SURRENDERWEAPON
+T=And drop dat weapon ya're hiding.
+W=CHIEFRAT
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=ANGRY
+COMM=If Graff had picked the pipe chunk
+
+T=Erm... Okay...
+W=GRAFF
+C1A=TURN
+TEN=PC05D_SPOTTED_CHOICE
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_SURRENDER
+T=Please. Go easy on me...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=CHIEFRAT
+C2A=NORMAL
+COMM=Surrender
+
+T=Ugh. Wimp.
+W=CHIEFRAT
+C2A=MEH
+TEN=PC05D_CHIEFRAT_PUTBACK
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_MOVED
+T=Hey! Looks like ya travelled around, huh?
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=NORMAL
+COMM=If Graff moved from his original position
+TEN=PC05D_CHIEFRAT_CUTTINGCHECK
+
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_MOVED2
+T=Ya better stop or I'll strengthen your ties. And... Dat might hurt.
+W=CHIEFRAT
+C1=GRAFF
+C1A=OPPOSITE
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=Why do you care?
+W=GRAFF
+
+T=Ya're our guest!
+W=CHIEFRAT
+C2A=HAPPY
+TEN=GPC05D_CHIEFRAT_MOVED3_CHECK
+
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_CUTROPE
+T=Oh, dat's cute! Ya thought you might cut your ropes with dat hook, huh?
+W=CHIEFRAT
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=HAPPY
+COMM=If Graff is spotted while cutting his rope
+TEN=GPC05D_CHIEFRAT_MOVED3_CHECK
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_DROPWEAPON
+T=Oh! And you were hiding a weapon behind yar back?
+W=CHIEFRAT
+C1=GRAFF
+C1A=OPPOSITE
+C2=CHIEFRAT
+C2A=NORMAL
+COMM=If he took the pipe chunk
+
+T=Bad kitty!
+W=CHIEFRAT
+C2A=ANGRY
+TEN=GPC05D_CHIEFRAT_MOVED3
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_MOVED3
+T=Lemme put ya back.
+W=CHIEFRAT
+C1=GRAFF
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=NORMAL
+TEN=PC05D_CHIEFRAT_PUTBACK
+
+
+#----------------------
+
+ID=GPC05D_SURPRISEATTACK1
+T=Oooof!!!
+NB=1
+D=60
+CONTEXT=If Graff hits the rat chief with the pipe chunk by surprise
+BNAME=CHIEFRAT
+BVOICE=CHIEFRAT
+
+#----------------------
+
+ID=GPC05D_SURPRISEATTACK2
+T=It worked!
+W=GRAFF
+C1=GRAFF
+C1A=HAPPY
+
+T=...?
+BNAMESP=RAT_KINS
+BVOICESP=KINS
+
+T=What was dat, chief?
+BNAMESP=RAT_KINS
+BVOICESP=KINS
+
+T=Darn! Here they come!
+W=GRAFF
+C1A=OPPOSITE
+TEE=GPC05D_SURPRISEATTACK_ENEMYCOMES
+
+#----------------------
+
+ID=GPC05D_SURPRISEATTACK3
+T=Ya did this, kitty?!
+W=KINS
+C1=GRAFF
+C1A=ANGRY
+C2=KINS
+C2A=ANGRY
+
+T=Ya're dead meat!
+W=KINS
+TEN=PC05D_STARTFIGHT
+
+#----------------------
+
+ID=GPC05D_FIRSTDIALOG
+T=I bet you're the boss here.
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=NORMAL
+CONTEXT=First dialog with the rat chief
+
+T=Ain't you the clever one!
+W=CHIEFRAT
+
+T=The name's Graff, huh? I figured ya'd be smart like yar friend.
+W=CHIEFRAT
+
+T=Ott?!
+W=GRAFF
+C1A=GASP
+
+T=You better not touch him!
+W=GRAFF
+C1A=ANGRY
+
+T=Hey! Everything will be fine. As long as ya cooperate.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=What do you want from us?
+W=GRAFF
+
+T=Oh, come on! A clever boy like ya should be able to figure dat out!
+W=CHIEFRAT
+C2A=NORMAL
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=You kidnapped us for money.
+W=GRAFF
+C1A=ANGRY
+
+T=Dat's one way to summarize it. But actually...
+W=CHIEFRAT
+
+T=Not dat simple.
+W=CHIEFRAT
+
+T=Then what...
+W=GRAFF
+C1A=OPPOSITE
+SKIPEND=1
+
+T=Enough. I'm the one who ask questions!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Are you comfortable?
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Huh?...
+W=GRAFF
+C1A=THINK
+
+T=What do you think?
+W=GRAFF
+C1A=ANGRY
+
+T=I'm held against my will in these sewers that stink like death!
+W=GRAFF
+
+T=Sorry. We' doin' our best efforts to make this place pleasant enough to live.
+W=CHIEFRAT
+C2A=MEH
+
+T=Ya hungry? Thirsty?
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Stop the funny act!
+W=GRAFF
+
+T=Tell me what exactly you want from me or let me go!
+W=GRAFF
+
+T=I believe we've started on da wrong foot.
+W=CHIEFRAT
+
+T=We're no bad guys. We're civilized.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=We'll take good care of ya for the next three days.
+W=CHIEFRAT
+
+T=Three days?...
+W=GRAFF
+C1A=SURPRISED
+
+T=That's it! The hacker!
+W=GRAFF
+C1A=GASP
+
+T=You're working with him! He asked you to make me a prisoner!
+W=GRAFF
+
+T=Yup. Dat guy has some debt to pay us and ya're the bargaining chip.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=No worries. Once done, we'll release ya!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=No way! I'm not staying here!
+W=GRAFF
+C1A=ANGRY
+
+T=My old man is a detective! He'll get me out! You'll see!
+W=GRAFF
+
+T=A detective, huh?...
+W=CHIEFRAT
+C2A=MEH
+
+T=How delusional.
+W=CHIEFRAT
+
+T=Ya really expect him to get in here and pass our guards?
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Yeah! He's super strong! He'll beat you all up!
+W=GRAFF
+C1A=READY
+
+T=He already did!
+W=GRAFF
+
+T=Is dat true...
+W=CHIEFRAT
+C2A=MEH
+
+T=Dat croc... Ya're his...!
+W=CHIEFRAT
+C2A=SURPRISED
+TEN=PC05D_CHIEFRAT_GOESAWAYFIRST
+
+#----------------------
+
+ID=GPC05D_FIRSTDIALOG2
+T=Hey! Where are you going?...
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Have a rest. I need to think.
+W=CHIEFRAT
+C2A=MEH
+
+T=But...!
+W=GRAFF
+C1A=GASP
+TEN=PC05D_TIMER2_CREATE
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG1
+T=So! Did you miss me already?
+W=GRAFF
+C1=GRAFF
+C1A=COCKY
+C2=CHIEFRAT
+C2A=NORMAL
+CONTEXT=Second dialog with the rat chief
+
+T=Good! I'm not finished with you!
+W=GRAFF
+C1A=READY
+
+T=Oooooh! Now ya pretend to be brave, huh?
+W=CHIEFRAT
+C2A=MEH
+
+T=Dat attitude does not fool anyone. Ya're just a scared li'l kitty.
+W=CHIEFRAT
+
+T=I-I'm not!
+W=GRAFF
+C1A=ANGRY
+
+T=Uh-uh.
+W=CHIEFRAT
+TEN=GPC05D_SECONDDIALOG_TURNAWAY
+
+T=Kins?
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Kins!!!
+W=CHIEFRAT
+C2A=ANGRY
+TEN=GPC05D_SECONDDIALOG_CHECKSURPRISE
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG1_PRECHOICE
+T=(...)
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+MOOD=THINK
+
+T=(He's looking away...)
+W=GRAFF
+MOOD=THINK
+TEN=PC05D_SURPRISEATTACK_CHOICE
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG1B
+T=Oh! Erm... I'm here!
+BNAMESP=RAT_KINS
+BVOICESP=KINS
+
+T=Go ahead.
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=NORMAL
+TEN=GPC05D_SECONDDIALOG1B_MUSICFADE
+
+T=Yes chief!
+BNAMESP=RAT_KINS
+BVOICESP=KINS
+TEE=PC05D_CHIEFRAT_RAT1_MOVETOOTT
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG2
+T=(Hey! What are you...)
+BNAMESP=OTT
+BVOICESP=OTT
+SKIPEND=1
+
+T=(Muffled sound)
+BVOICESP=OTT
+
+T=It's... Ott!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=What are you doing!
+W=GRAFF
+
+T=Relax. We won't hurt him.
+W=CHIEFRAT
+TEE=PC05D_CHIEFRAT_RAT1_MOVEBACK
+
+T=At least not yet.
+W=CHIEFRAT
+C2A=MEH
+
+T=What do you want? Money?
+W=GRAFF
+C1A=THINK
+
+T=Take whatever you want!
+W=GRAFF
+C1A=OPPOSITE
+
+T=All of it, I don't care!
+W=GRAFF
+
+T=Sure, we'll get yar money!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=But I'm looking forward to...
+W=CHIEFRAT
+C2A=MEH
+
+T=Somethin' else.
+W=CHIEFRAT
+
+T=We're gonna play a lil' game.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=...
+W=GRAFF
+C1A=ANGRY
+
+T=I ordered my guys to place bombs in two locations.
+W=CHIEFRAT
+TEN=GPC05D_SECONDDIALOG1B_MUSICCRISIS
+
+T=Bombs?!
+W=GRAFF
+C1A=SURPRISED
+
+T=Da first one is currently sitting right below yar friend's chair in da other room.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=...!
+W=GRAFF
+C1A=GASP
+
+T=A bigger one is located in an hospital in Sector 55X.
+W=CHIEFRAT
+
+T=Ya know... where all the drunkards and other human wastes are sent to suck whatever's money they have left.
+W=CHIEFRAT
+C2A=MEH
+
+T=A hospital?!
+W=GRAFF
+C1A=SURPRISED
+
+T=You're lying!
+W=GRAFF
+C1A=ANGRY
+
+T=Oh, I wouldn't bet on that!
+W=CHIEFRAT
+C2A=MEH
+
+T=We've learnt a lot about manipulating smoke. If set off, dat bomb would probably kill a dozen of those nobodies. At least!
+W=CHIEFRAT
+
+T=Now, here's the fun part!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=The choice is yours.
+W=CHIEFRAT
+
+T=Choice?...
+W=GRAFF
+C1A=THINK
+
+T=Why would I choose to blow up someone?
+W=GRAFF
+
+T=No no no!
+W=CHIEFRAT
+C2A=SURPRISED
+
+T=I'd never ask ya something as cruel as that, good lord!
+W=CHIEFRAT
+
+T=I just need ya to choose...
+W=CHIEFRAT
+C2A=NORMAL
+
+T=...who should be saved.
+W=CHIEFRAT
+C2A=MEH
+
+T=But here's da thing.
+W=CHIEFRAT
+
+T=The ones you don't choose might have their life... How should I say?...
+W=CHIEFRAT
+
+T=Suddenly shortened.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=You're... a monster!
+W=GRAFF
+C1A=GASP
+
+T=No worries! We've been extra careful.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=If ya choose to save those hospital losers, the impact will only blow up one room.
+W=CHIEFRAT
+
+T=The one yar friend's in, that is.
+W=CHIEFRAT
+
+T=See? Ya're safe!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=I... could never!...
+W=GRAFF
+C1A=ANGRY
+
+T=Oh but you will!
+W=CHIEFRAT
+
+T=Because if ya don't choose...
+W=CHIEFRAT
+C2A=MEH
+
+T=I shall make both bombs explode.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=N... No!...
+W=GRAFF
+C1A=SURPRISED
+
+T=I refuse!...
+W=GRAFF
+C1A=TORN
+TEN=GPC05D_SECONDDIALOG_BOMBSPRITE
+
+T=I made myself clear. Da rules are da rules.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=And my hand is itching.
+W=CHIEFRAT
+
+T=If we don't hurry, I might push a button by accident!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=So! I'll give ya exactly 10 seconds before I trigger a bomb.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Or both!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=Your decision!
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Who will ya save?
+W=CHIEFRAT
+
+T=Yar friend or a dozens of losers ya've never met?
+W=CHIEFRAT
+
+T=Tick, tock!
+W=CHIEFRAT
+C2A=HAPPY
+TEN=PC05D_CHIEFRAT_CHOICEBOMB
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_SAVEGROUP
+T=(Ott... Please forgive me...)
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=CHIEFRAT
+C2A=NORMAL
+MOOD=THINK
+
+T=I... choose to save the Sector 55X people.
+W=GRAFF
+
+T=Interesting. Quantity over quality, huh.
+W=CHIEFRAT
+C2A=MEH
+
+T=Then I shall press this button.
+W=CHIEFRAT
+
+T=Don't!...
+W=GRAFF
+C1A=GASP
+TEN=PC05D_CHIEFRAT_EXPLODEOTTDO
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_NODECISION
+T=There's got to be another solution!...
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=CHIEFRAT
+C2A=MEH
+
+T=Nope!
+W=CHIEFRAT
+
+T=Why are you doing this?...
+W=GRAFF
+C1A=SAD
+
+T=Because I can.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=...
+W=GRAFF
+
+T=No reply, then?
+W=CHIEFRAT
+C2A=MEH
+
+T=Oh well. Dat was yar choice.
+W=CHIEFRAT
+
+T=No! Wait!!!
+W=GRAFF
+SKIPEND=1
+C1A=SURPRISED
+TEN=PC05D_CHIEFRAT_EXPLODEBOTH
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_SAVEOTT
+T=I'm sorry for all these people but...
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Ott is my best friend... I can't afford to lose him.
+W=GRAFF
+
+T=So da life of one is more important to ya than ten guys?
+W=CHIEFRAT
+C2A=MEH
+
+T=How egotistical. I like dat!
+W=CHIEFRAT
+C2A=HAPPY
+TEN=PC05D_CHIEFRAT_EXPLODEGROUPDO
+
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_SAVEGROUP2
+T=...!!!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=CHIEFRAT
+C2A=NORMAL
+COMM=Explosion sound
+
+T=Oooh! Poor boy!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=How could you reduce your best friend to a pulp?
+W=CHIEFRAT
+C2A=MEH
+
+T=...
+W=GRAFF
+C1A=TORN
+
+T=You...
+W=GRAFF
+
+T=MURDERER!...
+W=GRAFF
+C1A=ANGRY
+
+T=Who, me? That was your choice, kitty!
+W=CHIEFRAT
+C2A=HAPPY
+TEN=GPC05D_SECONDDIALOG3
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_SAVEOTT2
+T=...!!!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=CHIEFRAT
+C2A=NORMAL
+COMM=Explosion sound
+
+T=Oh, yeah. I forgot.
+W=CHIEFRAT
+
+T=That hospital is pretty near.
+W=CHIEFRAT
+
+T=You...
+W=GRAFF
+C1A=TORN
+
+T=You just killed all these people?...
+W=GRAFF
+
+T=Not me.
+W=CHIEFRAT
+C2A=MEH
+
+T=I think ya did.
+W=CHIEFRAT
+
+T=...
+W=GRAFF
+
+T=But don't feel bad!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=They were scum nearing the end of life.
+W=CHIEFRAT
+C2A=MEH
+C1A=ANGRY
+
+T=They should be thanking ya for terminating them!
+W=CHIEFRAT
+C2A=HAPPY
+TEN=GPC05D_SECONDDIALOG3
+
+
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_NODECISION2
+T=Noooooo!!!!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=CHIEFRAT
+C2A=HAPPY
+
+T=Too bad! Ya killed everyone.
+W=CHIEFRAT
+
+T=That... can't be...!
+W=GRAFF
+C1A=TORN
+
+T=It can. It is!
+W=CHIEFRAT
+
+T=Ott...
+W=GRAFF
+TEN=GPC05D_SECONDDIALOG3
+
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG3
+T=I...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=I will...
+W=GRAFF
+C1A=TORN
+
+T=Kill me? Escape?
+W=CHIEFRAT
+
+T=Oh, please!
+W=CHIEFRAT
+C2A=HAPPY
+TEN=GPC05D_SECONDDIALOG_CHECK
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG3_NEXTROOM
+T=You'd have to go past that room... and the sight won't be pretty.
+W=CHIEFRAT
+C1=GRAFF
+C1A=SAD
+C2=CHIEFRAT
+C2A=HAPPY
+TEN=GPC05D_SECONDDIALOG3B
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG3_HOSPITAL
+T=You don't have the strength. Neither moral nor physical.
+W=CHIEFRAT
+C1=GRAFF
+C1A=TORN
+C2=CHIEFRAT
+C2A=MEH
+
+T=Say! How about I tell yar li'l friend the choice ya've made?
+W=CHIEFRAT
+
+T=Pretty sure he'd love to hear you chose to blow up ten people to save him.
+W=CHIEFRAT
+C2A=HAPPY
+TEN=GPC05D_SECONDDIALOG3B
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG3B
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=CHIEFRAT
+C2A=NORMAL
+TEB=GPC05D_SECONDDIALOG_MUSICAGAIN
+
+T=...Urgh...
+W=GRAFF
+
+T=Ha ha ha ha ha!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=Not so clever after all, boy!
+W=CHIEFRAT
+
+T=Looks like our reputation precedes us.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=In truth. We're no killers.
+W=CHIEFRAT
+
+T=What...?
+W=GRAFF
+C1A=GASP
+
+T=We only slay people when we have to.
+W=CHIEFRAT
+C2A=MEH
+TEN=PC05D_CHIEFRAT_RAT1_MOVETOOTTBIS
+
+T=I said it. This was just a game!
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Everyone's safe. There never was any bomb.
+W=CHIEFRAT
+C2A=MEH
+
+T=But...
+W=GRAFF
+C1A=THINK
+
+T=The sound?... The shake?...
+W=GRAFF
+C1A=GASP
+
+T=Just some old speakers we found. Mighty powerful!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=Kins. Remove his gag.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Yes chief.
+W=KINS
+C4=KINS
+C4A=NORMAL
+TEN=GPC05D_SECONDDIALOG3C
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG3C
+T=(...)
+BVOICESP=OTT
+BNAMESP=OTT
+
+T=(Graff?!... What's going on?...)
+BVOICESP=OTT
+BNAMESP=OTT
+
+T=(Mmffffmf!)
+BVOICESP=OTT
+BNAMESP=OTT
+
+T=Man, dat was fun.
+W=CHIEFRAT
+C1=GRAFF
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=HAPPY
+
+T=...
+W=CHIEFRAT
+TEN=PC05D_CHIEFRAT_RAT1_MOVETOOTTBISBACK
+
+T=That's... a joke.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Yup.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=No. I mean...
+W=GRAFF
+
+T=You claim you're not killers...
+W=GRAFF
+C1A=ANGRY
+
+T=And yet you're condemning everyone in the Slums to death!
+W=GRAFF
+
+T=The heck are ya talking about?...
+W=CHIEFRAT
+C2A=MEH
+
+T=The Pipe-Pills!
+W=GRAFF
+
+T=You sabotaged them!
+W=GRAFF
+
+T=Let's make things clear.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Us Squealers will do whatever we can to survive. It's our way of livin'.
+W=CHIEFRAT
+
+T=We only took whatever was left inside those pipes.
+W=CHIEFRAT
+
+T=Then... You mean...
+W=GRAFF
+C1A=GASP
+
+T=We didn't start this.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=My guys noticed bots messing with distributors in the middle of the night.
+W=CHIEFRAT
+
+T=Why? No idea.
+W=CHIEFRAT
+C2A=MEH
+
+T=Bots?...
+W=GRAFF
+C1A=THINK
+
+T=This shortage was organized from outside.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Ya should ask those rich folks who forced us to this miserable existence!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=How can I believe you?...
+W=GRAFF
+C1A=ANGRY
+
+T=Ya do. Ya don't.
+W=CHIEFRAT
+C2A=MEH
+
+T=I dun care.
+W=CHIEFRAT
+TEN=PC05D_SECONDDIALOG3_LEAVE
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG4
+T=Wait!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=NORMAL
+TEN=GPC05D_SECONDDIALOG5
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG5
+T=I still don't get it.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=What was the point of this mind game?
+W=GRAFF
+
+T=What exactly do you want from me?
+W=GRAFF
+C1A=ANGRY
+
+T=My revenge...
+W=CHIEFRAT
+
+T=Against me?...
+W=GRAFF
+C1A=THINK
+
+T=Ha ha! No.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=The one who's responsible for our situation...
+W=CHIEFRAT
+C2A=MEH
+TEN=PC05D_SECONDDIALOG5_TURNS
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6
+T=Yar father!
+W=CHIEFRAT
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=My... dad?
+W=GRAFF
+
+T=Remn? I barely know him...
+W=GRAFF
+C1A=THINK
+
+T=Don't be silly. I'm talking about that brute playing detective.
+W=CHIEFRAT
+
+T=Everything's his fault!
+W=CHIEFRAT
+
+T=Huh?...
+W=GRAFF
+C1A=MEH
+
+T=What did he do?
+W=GRAFF
+
+T=I figured ya wouldn't know.
+W=CHIEFRAT
+C2A=MEH
+
+T=Actually, ya don't seem to be aware of anything.
+W=CHIEFRAT
+C2A=NORMAL
+C1A=MEH
+
+T=He's been playing with ya.
+W=CHIEFRAT
+
+T=A bit like I did but...
+W=CHIEFRAT
+
+T=In a more insidious way.
+W=CHIEFRAT
+C2A=ANGRY
+TEN=GPC05D_SECONDDIALOG6_CHECK
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6_GOOD
+T=You're wrong! He's a...
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=A good person! You're the scums!
+W=GRAFF
+C1A=OPPOSITE
+
+T=Ha ha ha! How funny.
+W=CHIEFRAT
+C2A=HAPPY
+TEN=GPC05D_SECONDDIALOG6B
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6_BAD
+T=Brok...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=So it's true... ?
+W=GRAFF
+
+T=Go ahead... Tell me.
+W=GRAFF
+C1A=TURN
+TEN=GPC05D_SECONDDIALOG6B
+
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6B
+T=He attacked me and my guys countless times.
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=ANGRY
+COMM=Changes according to player actions
+TEN=GPC05D_SECONDDIALOG6B_CHECKMINE
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6B_MINE
+T=He threw us a mine that exploded in our faces!
+W=CHIEFRAT
+C1=GRAFF
+C1A=TURN
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=We're lucky we're still alive!
+W=CHIEFRAT
+TEN=GPC05D_SECONDDIALOG6C
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6C
+T=And not just us.
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=We've been watchin'.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Those bots in the streets are pretty much punching bags for him.
+W=CHIEFRAT
+C2A=MEH
+TEN=GPC05D_SECONDDIALOG6C_CHECKPOLICE
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6C_POLICE
+T=Even police ones!
+W=CHIEFRAT
+C1=GRAFF
+C1A=TURN
+C2=CHIEFRAT
+C2A=SURPRISED
+TEN=GPC05D_SECONDDIALOG6C_CHECKBOLT
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6C_BOLT
+T=He shows no pity.
+W=CHIEFRAT
+C1=GRAFF
+C1A=TURN
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=One lil' sad bot couldn't resist his fists.
+W=CHIEFRAT
+TEN=GPC05D_SECONDDIALOG6C_CHECKSTUBOT
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6C_STUBOT
+T=Oh, ya know that student bot?
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Stubot?...
+W=GRAFF
+C1A=THINK
+
+T=Yup. Poof. Destroyed.
+W=CHIEFRAT
+C2A=MEH
+
+T=...!
+W=GRAFF
+C1A=GASP
+TEN=GPC05D_SECONDDIALOG6D
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6D
+T=Well, these bots are disposable, but ya know what they say.
+W=CHIEFRAT
+C1=GRAFF
+C1A=OPPOSITE
+C2=CHIEFRAT
+C2A=MEH
+
+T=Whoever harms a bot harms a human.
+W=CHIEFRAT
+TEN=GPC05D_SECONDDIALOG6D_CHECKRJ
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6D_RJ
+T=That policeman bear got quite a beating as well. Gotta wonder if he's still alive.
+W=CHIEFRAT
+C1=GRAFF
+C1A=TURN
+C2=CHIEFRAT
+C2A=NORMAL
+TEN=GPC05D_SECONDDIALOG6D_CHECKTRAMP
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6D_TRAMP
+T=Wanna hear worse?
+W=CHIEFRAT
+C1=GRAFF
+C1A=SAD
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Just yesterday, my guys saw him beat a homeless to death.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=He... killed...?
+W=GRAFF
+C1A=GASP
+TEN=GPC05D_SECONDDIALOG6D_CHECKOTT
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6D_OTT
+T=And your best friend kept a lil' secret from ya, too.
+W=CHIEFRAT
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=He's also on the list.
+W=CHIEFRAT
+
+T=What?!...
+W=GRAFF
+
+T=He... attacked Ott?!
+W=GRAFF
+C1A=SURPRISED
+
+T=Yup.
+W=CHIEFRAT
+
+T=Totally knocked out. Your friend told us as much. Just ask him!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=And that croc claimed to do this... for you!
+W=CHIEFRAT
+TEN=GPC05D_SECONDDIALOG6E
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6E
+T=In what kind of twisted world would good guys do this?
+W=CHIEFRAT
+C1=GRAFF
+C1A=TURN
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=...
+W=GRAFF
+TEN=GPC05D_SECONDDIALOG6E_MOVE
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6F
+T=But anyway...
+W=CHIEFRAT
+C1=GRAFF
+C1A=SAD
+C2=CHIEFRAT
+C2A=NORMAL
+CONTEXT=Rat chief gets all nostalgic and explains his reasons
+
+T=Enough about da croc.
+W=CHIEFRAT
+
+T=Let me tell our own story.
+W=CHIEFRAT
+
+T=The Squealers arrived in this land thousands of years ago. 
+W=CHIEFRAT
+
+T=We were called in after Rebirth Day to help rebuild without the help of technology.
+W=CHIEFRAT
+
+T=For centuries, we were assigned the most basic tasks.
+W=CHIEFRAT
+
+T=Of course. Studies demonstrate...
+W=GRAFF
+C1A=MEH
+SKIPEND=1
+
+T=Yeah, yeah. Supposedly we're not as clever as all the other folks in this land and it's getting worse.
+W=CHIEFRAT
+
+T=Nature denies us to have children with other species. We can only reproduce between ourselves.
+W=CHIEFRAT
+
+T=Whatever.
+W=CHIEFRAT
+C2A=MEH
+VLOW=1
+
+T=Our only mistake was to not anticipate anything. We had become slaves of this society.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=Progressively, the system pushed those darn bots everywhere.
+W=CHIEFRAT
+
+T=They took our jobs. Replaced us. Condemned us to live in poverty.
+W=CHIEFRAT
+
+T=You should have made your opinion heard!
+W=GRAFF
+C1A=GASP
+
+T=Ha! How credulous.
+W=CHIEFRAT
+C2A=MEH
+
+T=What point is there to scream when ya've got a deaf audience?
+W=CHIEFRAT
+
+T=Of course we protested. But do ya think those higher ups cared?
+W=CHIEFRAT
+C2A=ANGRY
+
+T=So when the time came...
+W=CHIEFRAT
+C2A=MEH
+TEN=GPC05D_SECONDDIALOG6F2
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6F2
+T=Just a decade ago. Our system was collapsing.
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=This was our opportunity.
+W=CHIEFRAT
+
+T=I know the story.
+W=GRAFF
+C1A=THINK
+
+T=You attempted a coup but you lost and got banished from this land.
+W=GRAFF
+
+T=Yeah. But...
+W=CHIEFRAT
+C2A=MEH
+
+T=The media hid some facts.
+W=CHIEFRAT
+
+T=I was the lead commander. We almost won that battle.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=If it wasn't for him...
+W=CHIEFRAT
+
+T=Wait. You're saying...
+W=GRAFF
+C1A=THINK
+
+T=Brok was there?
+W=GRAFF
+C1A=GASP
+
+T=And... He defeated you?
+W=GRAFF
+C1A=THINK
+
+T=...
+W=CHIEFRAT
+C2A=MEH
+
+T=That's ridiculous!
+W=GRAFF
+C1A=GASP
+TEN=GPC05D_SECONDDIALOG6F2_CHECK
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG6F3
+T=Take a gander.
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=NORMAL
+TEN=PC05D_SECONDDIALOG6_SHOWPIC
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG7
+T=N... No way.
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=NORMAL
+COMM=On the picture we see Brok defeating the rat chief during Autarcism Day
+TEN=GPC05D_SECONDDIALOG7_CHECK
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG7_NOTSEEN
+T=This picture... it's a fake.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=It has to be!
+W=GRAFF
+C1A=ANGRY
+TEN=GPC05D_SECONDDIALOG7B
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG7_SEEN
+T=I've seen this picture... At the museum.
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=But...
+W=GRAFF
+
+T=It wasn't as clear...
+W=GRAFF
+C1A=MEH
+
+T=You've... modified it!...
+W=GRAFF
+C1A=GASP
+TEN=GPC05D_SECONDDIALOG7B
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG7B
+T=I remember every minute of that day.
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=He was there.
+W=CHIEFRAT
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+TEN=PC05D_SECONDDIALOG6_REMOVEPIC
+
+T=After our banishment...
+W=CHIEFRAT
+
+T=A lot of us perished.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Living in the shadows, we had to make choices on who gets to live and who should die.
+W=CHIEFRAT
+
+T=Do you even know the pain of starving to death, Princess?
+W=CHIEFRAT
+C2A=ANGRY
+
+T=To be on the verge of eating the weakest so that the strongest survive?
+W=CHIEFRAT
+
+T=Eww!...
+W=GRAFF
+C1A=YUCK
+
+T=And ya think you had such a horrible life?...
+W=CHIEFRAT
+
+T=Don't make me laugh!
+W=CHIEFRAT
+
+T=That said. We've got something in common.
+W=CHIEFRAT
+C2A=NORMAL
+C1A=THINK
+
+T=The same person to blame.
+W=CHIEFRAT
+
+T=I... still can't believe you.
+W=GRAFF
+C1A=TURN
+
+T=Take a look.
+W=CHIEFRAT
+
+T=...
+W=GRAFF
+
+T=That bank statement?...
+W=GRAFF
+C1A=THINK
+
+T=Where do ya think this money came from?
+W=CHIEFRAT
+C2A=MEH
+
+T=I believe... This is money from my mother.
+W=GRAFF
+
+T=The croc hid this from you, huh?
+W=CHIEFRAT
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=Of course he would.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=So! Ya're supposed to get da money when ya turn sixteen. Right?
+W=CHIEFRAT
+
+T=I think so. I remember this question in my exam.
+W=GRAFF
+C1A=THINK
+
+T=Now. Let's say...
+W=CHIEFRAT
+C2A=MEH
+
+T=Ya have an unfortunate "accident" right after your birthday.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=What would happen with the money?
+W=CHIEFRAT
+
+T=I...
+W=GRAFF
+C1A=THINK
+
+T=I guess it would go to the closest person alive...
+W=GRAFF
+
+T=...
+W=GRAFF
+C1A=GASP
+
+T=You mean...
+W=GRAFF
+
+T=Fiiiinally! That took a while.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=No! It's...
+W=GRAFF
+C1A=TORN
+
+T=He would never do such a thing.
+W=GRAFF
+C1A=TURN
+
+T=Oh, come on!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=How more naive can ya be?
+W=CHIEFRAT
+
+T=No wonder ya were a Drumer!
+W=CHIEFRAT
+
+T=Can you honestly say ya truly know him?
+W=CHIEFRAT
+
+T=...
+W=GRAFF
+C1A=SAD
+
+T=It didn't take me long to figure this out.
+W=CHIEFRAT
+C2A=MEH
+
+T=Ever since he got ya, he's been waiting.
+W=CHIEFRAT
+
+T=Just doing the bare minimum to make ya live.
+W=CHIEFRAT
+C2A=NORMAL
+
+T=Three more days.
+W=CHIEFRAT
+
+T=Just three more. And then...
+W=CHIEFRAT
+
+T=Snip!
+W=CHIEFRAT
+C2A=ANGRY
+COMM=The sound you do when you mean someone's gonna get murdered
+
+T=N... No!
+W=GRAFF
+C1A=GASP
+C2A=NORMAL
+
+T=He... he saved me!
+W=GRAFF
+
+T=Several times!
+W=GRAFF
+
+T=Sure! But ya know why.
+W=CHIEFRAT
+
+T=Ya know the explanation for his contradicting behavior.
+W=CHIEFRAT
+
+T=Do ya understand?
+W=CHIEFRAT
+
+T=Ya're a puppet.
+W=CHIEFRAT
+C2A=MEH
+TEN=PC05D_SECONDDIALOG7_CHECK
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG7C
+T=Keep da picture. Dun wanna see it anymore.
+W=CHIEFRAT
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=MEH
+TEN=PC05D_SECONDDIALOG7C_LEAVE
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG8
+T=Is this the truth?...
+W=GRAFF
+A=THINK
+
+T=...
+W=GRAFF
+A=TURN
+TEN=PC05D_SECONDDIALOG8_NEXT
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG8B
+T=(Weird sounds)
+CONTEXT=Ott escapes
+
+T=Huh?...
+W=GRAFF
+A=THINK
+TEN=PC05D_SECONDDIALOG8_CAMERA
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG9
+T=Chief!
+W=KINS
+C1=CHIEFRAT
+C1A=NORMAL
+C2=KINS
+C2A=SURPRISED
+TEN=GPC05D_SECONDDIALOG9_CHIEFARRIVE
+
+T=The ugly boy. He escaped!
+W=KINS
+
+T=What?!
+W=CHIEFRAT
+C1A=SURPRISED
+
+T=After him!
+W=CHIEFRAT
+C1A=ANGRY
+TEN=PC05D_SECONDDIALOG9_CAMERAEND
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG10
+T=Ott?!
+W=GRAFF
+A=GASP
+
+T=Did he manage to...
+W=GRAFF
+SKIPEND=1
+TEN=PC05D_SECONDDIALOG10_ENEMIESCOME
+
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG11
+T=You!
+W=CHIEFRAT
+C1=GRAFF
+C1A=GASP
+C2=CHIEFRAT
+C2A=ANGRY
+
+T=Ya've got two seconds to tell me what he's up to!
+W=CHIEFRAT
+
+T=How should I know? I'm not...
+W=GRAFF
+C1A=OPPOSITE
+SKIPEND=1
+TEN=PC05D_SECONDDIALOG11_HITGRAFF
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG12
+T=Ouch!
+W=GRAFF
+C1=GRAFF
+C1A=STUPID
+C2=CHIEFRAT
+C2A=ANGRY
+COMM=Rat chief hits Graff. He doesn't want to play anymore
+
+T=Time for games is over!
+W=CHIEFRAT
+
+T=Tell me or I might start to live up to my reputation!
+W=CHIEFRAT
+
+T=Erm...
+W=GRAFF
+C1A=TURN
+
+T=I know Ott. He won't leave me here.
+W=GRAFF
+
+T=He must have gone to fetch some help.
+W=GRAFF
+
+T=Who?!
+W=CHIEFRAT
+
+T=I told him... If anything happens, go find Brok.
+W=GRAFF
+
+T=Is that so?...
+W=CHIEFRAT
+C2A=MEH
+
+T=Ha ha ha!
+W=CHIEFRAT
+C2A=HAPPY
+
+T=Change of plans, guys.
+W=CHIEFRAT
+
+T=Let's wait for da lil' brat to return with da croc.
+W=CHIEFRAT
+C2A=ANGRY
+
+T=We shall prepare him a nice welcome committee!
+W=CHIEFRAT
+TEN=PC05D_SECONDDIALOG12_ENEMIESGO
+
+#----------------------
+
+ID=GPC05D_SECONDDIALOG13
+T=...
+W=GRAFF
+A=SAD
+
+T=Great. I got everyone into this mess.
+W=GRAFF
+
+T=I don't know if there's such thing as a god, the Untail or whatever but...
+W=GRAFF
+
+T=Please...
+W=GRAFF
+A=TORN
+
+T=Let this end well...
+W=GRAFF
+
+T=For everyone.
+W=GRAFF
+TEN=PC05D_TO_BROK
+
+#----------------------
+
+ID=GPC05D_CHIEFRAT_COMES
+T=What?...
+NB=1
+D=60
+CONTEXT=Conversation between rat chief and his minions
+BNAMESP=CHIEFRAT
+BVOICESP=CHIEFRAT
+
+T=Hey butt head! Why's no one guarding the entrance?
+D=90
+BNAMESP=CHIEFRAT
+BVOICESP=CHIEFRAT
+
+T=Err... S'rry boss. Didn' know.
+D=90
+BNAMESP=RAT_KINS
+BVOICESP=KINS
+
+T=Dart!
+D=60
+BNAMESP=CHIEFRAT
+BVOICESP=CHIEFRAT
+
+T=The entrance. Now.
+D=60
+BNAMESP=CHIEFRAT
+BVOICESP=CHIEFRAT
+
+T=No one comes in or out!
+D=60
+BNAMESP=CHIEFRAT
+BVOICESP=CHIEFRAT
+
+T='Kay!
+D=90
+BNAMESP=RAT_DART
+BVOICESP=DART
+
+#----------------------
+#= Generic too far
+#----------------------
+ID=GPC05D_FAR1
+T=I'm too far to do anything.
+W=GRAFF
+A=MEH
+CONTEXT=Various interactions
+
+#----------------------
+#= Wall hole
+#----------------------
+
+ID=GPC05D_WALLHOLE1
+T=No way!... I think...
+W=GRAFF
+A=GASP
+COMM=Graff sees Ott through the tiny hole
+
+T=(Psst! Ott! Is that you?)
+W=GRAFF
+A=MEH
+
+T=(Hey! Can you hear me?...)
+W=GRAFF
+A=TURN
+
+T=He's not responding. And I can't risk screaming.
+W=GRAFF
+A=SAD
+
+T=I hope he's okay...
+W=GRAFF
+
+#----------------------
+
+ID=GPC05D_WALLHOLE2
+T=Ott's in there!
+W=GRAFF
+A=SURPRISED
+
+T=I better find a way to get both of us out of here!
+W=GRAFF
+A=READY
+
+
+
+#----------------------
+#= Cupboard
+#----------------------
+
+ID=GPC05D_CUPBOARD1
+T=They've stored tons of food here.
+W=GRAFF
+A=MEH
+
+T=I can't open these drawers.
+W=GRAFF
+
+#----------------------
+
+ID=GPC05D_CUPBOARD_FREE
+T=Let's see.
+W=GRAFF
+A=THINK
+
+T=Urgh... That drawer is filled with underpants...!
+W=GRAFF
+A=YUCK
+
+T=And this one... Socks.
+W=GRAFF
+A=MEH
+
+T=Great. They haven't got a single knife or even a fork in this kitchen?
+W=GRAFF
+
+T=Oh, what a fool I am. They must eat with their fingers.
+W=GRAFF
+A=STUPID
+
+
+#----------------------
+#= Bag
+#----------------------
+
+ID=GPC05D_BAG_FAR1
+T=A bag. I can't really see what's inside from here.
+W=GRAFF
+A=MEH
+
+#----------------------
+
+ID=GPC05D_BAG_CLOSE1
+T=Food. Cereals, insects and other things I can't even put a name on.
+W=GRAFF
+A=MEH
+
+T=At least I won't go hungry.
+W=GRAFF
+A=DISDAIN
+
+#----------------------
+
+ID=GPC05D_OTHERS
+T=I don't have time to mess with this!
+W=GRAFF
+A=ANGRY
+
+#----------------------
+#= Hook
+#----------------------
+ID=GPC05D_HOOK_FAR1
+T=A kitchen hook? Could this help?
+W=GRAFF
+A=THINK
+TEN=GPC05D_FAR1
+COMM=The hook can be used to slowly cut the rope
+
+#----------------------
+ID=GPC05D_HOOK_CLOSE1
+T=Could I cut my rope with this?
+W=GRAFF
+A=THINK
+TEN=PC05D_HOOK_CLOSEUP
+
+#----------------------
+ID=GPC05D_HOOK_DONE
+T=I'm done with this!
+W=GRAFF
+A=MEH
+
+#----------------------
+ID=GPC05D_HOOK_LONG
+T=Argh... It's gonna take ages!...
+W=GRAFF
+A=ANGRY
+NB=1
+D=90
+
+#----------------------
+ID=GPC05D_HOOK_OVER
+T=Finally free!...
+W=GRAFF
+A=HAPPY
+
+T=Hmm... Should I keep pretending?
+W=GRAFF
+A=THINK
+TEN=PC05D_ROPEHOOKEND_CHOICE
+
+
+#----------------------
+#= Pipe
+#----------------------
+ID=GPC05D_PIPE1
+T=A chunk of pipe is protruding.
+W=GRAFF
+A=MEH
+
+T=I'm afraid I can't do much with my hands tied.
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC05D_PIPE_CANTAKE
+T=Yeah!
+W=GRAFF
+A=HAPPY
+TEN=PC05D_PIPE_TAKE
+
+#----------------------
+ID=GPC05D_PIPE_TAKECHAIR
+T=I'll keep it in my hands behind the chair.
+W=GRAFF
+A=THINK
+
+
+#----------------------
+#= Table
+#----------------------
+ID=GPC05D_TABLE1
+T=Looks like they eat here... sitting on the floor.
+W=GRAFF
+A=MEH
+
+#T=They didn't clean the table, but I don't see anything of interest.
+#W=GRAFF
+
+#----------------------
+#= Left door
+#----------------------
+ID=GPC05D_DOORLEFT1
+T=...
+W=GRAFF
+A=MEH
+
+T=I can't see from here but...
+W=GRAFF
+
+T=I hear children and a woman's voice?...
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC05D_DOORLEFT2
+T=No way.
+W=GRAFF
+A=GASP
+
+T=There are dozens of children and women packed in there! All Squealers...
+W=GRAFF
+
+T=What an awful way to live.
+W=GRAFF
+A=TURN
+
+#----------------------
+#= Tunnel
+#----------------------
+ID=GPC05D_TUNNEL1
+T=Can't pass through here.
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Window
+#----------------------
+ID=GPC05D_WINDOW_NOONE
+T=The ladder. That's our way out!
+W=GRAFF
+A=READY
+
+#----------------------
+ID=GPC05D_WINDOW1
+T=A guard.
+W=GRAFF
+A=THINK
+
+T=Fortunately for us, he's looking straight in front of him.
+W=GRAFF
+A=READY
+TEN=GPC05D_WINDOW_ACCESS
+
+#----------------------
+ID=GPC05D_WINDOW_THROW1
+T=Hmm...
+W=GRAFF
+A=THINK
+TEN=GPC05D_WINDOW_DOTHROW
+
+#----------------------
+ID=GPC05D_WINDOW_THROW1B
+T=Yes!
+W=GRAFF
+A=HAPPY
+
+T=Huh?...
+W=GRAFF
+A=THINK
+TEN=GPC05D_WINDOW_AFTERTHROW
+
+#----------------------
+ID=GPC05D_WINDOW_THROW1C
+T=Dart! Ya ok man?
+W=KINS
+A=WONDER
+
+T=Hey! Wake up!
+W=KINS
+A=SURPRISED
+TEN=GPC05D_WINDOW_THROW1D
+
+#----------------------
+ID=GPC05D_WINDOW_THROW2
+T=And that's a strike!
+W=GRAFF
+A=HAPPY
+COMM=Strike like in bowling
+
+#------------------------------------------
+#= Graff not in his room when Chief comes
+#------------------------------------------
+ID=GPC05D_CHIEFRAT_SEARCHGRAFF
+T=That darn little snake!
+BNAME=CHIEFRAT
+BVOICE=CHIEFRAT
+COMM=Graff not in his room when Chief comes
+
+T=Where is he?!
+TEN=PC05D_CHIEFRAT_SEARCHGRAFF
+
+#----------------------
+#= Speaker
+#----------------------
+ID=GPC05D_SPEAKER1
+T=I didn't expect to see this in such a place.
+W=GRAFF
+A=THINK
+
+
+#----------------------
+#= Ladder
+#----------------------
+ID=GPC05D_CANNOT1
+T=Of course! I'm going to climb up the ladder while tied up to the chair!
+W=GRAFF
+A=DISDAIN
+COMM=Ironic
+
+#----------------------
+ID=GPC05D_OTTNOTHERE1
+T=I can't leave Ott here.
+W=GRAFF
+A=TURN
+
+#----------------------
+ID=GPC05D_OTTHERE1
+T=Ott! The ladder!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=OTT
+C2A=SURPRISED
+CONTEXT=When trying to escape with Ott
+
+T=Oh gosh. It's high...
+W=OTT
+
+T=I'll be right behind you!
+W=GRAFF
+
+T=Okay...
+W=OTT
+C2A=DISAPPOINTED
+TEN=GPC05D_OTTHERE_CHECK
+
+#----------------------
+ID=GPC05D_OTTHERE2
+T=Boss! The kids! They're escaping!
+W=KINS
+C1=GRAFF
+C1A=GASP
+C2=OTT
+C2A=SURPRISED
+C3=KINS
+C3A=SURPRISED
+
+T=Oh, crap...
+W=GRAFF
+
+T=Ott! Take this!
+W=GRAFF
+C1A=READY
+
+T=What?...
+W=OTT
+C2A=WONDER
+
+T=This radar will take you to Brok! Tell him to come!
+W=GRAFF
+
+T=But...
+W=OTT
+C2A=SURPRISED
+
+T=Move! Quick!
+W=GRAFF
+
+T=Argh!
+W=GRAFF
+C1A=ANGRY
+COMM=Graff gets captured
+
+T=Change of plans, guys! Da croc's coming to us!
+W=CHIEFRAT
+C2=CHIEFRAT
+C2A=HAPPY
+C3=NONE
+C4=KINS
+C4A=READY
+
+T=Good job, boy!
+W=CHIEFRAT
+
+T=Thanks boss!
+W=KINS
+C4A=HAPPY
+
+T=I'm not talking to ya, moron!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=He'll beat the crap out of you all! You'll see!
+W=GRAFF
+C1A=READY
+
+T=Oh, I can barely hold my impatience.
+W=CHIEFRAT
+C2A=MEH
+
+T=Been waiting years to take my revenge...
+W=CHIEFRAT
+C2A=ANGRY
+
+T=And I'll finally get it!
+W=CHIEFRAT
+
+T=...
+W=GRAFF
+C1A=GASP
+TEN=PC05D_TO_BROK
+
+
+#----------------------
+ID=GPC05D_NOSTUFF1
+T=Oh no! I forgot...
+W=GRAFF
+A=GASP
+CONTEXT=Trying to use the ladder without picking stuff first
+
+T=I need my phone to find Brok! My stuff should be around here...
+W=GRAFF
+A=THINK
+
+
+#----------------------
+#= Ott
+#----------------------
+ID=GPC05D_OTT_FIRST1
+T=Graff!
+W=OTT
+C1=GRAFF
+C1A=GASP
+C2=OTT
+C2A=SURPRISED
+CONTEXT=Finding Ott in the next room for the first time
+
+T=I'm so glad to see you!
+W=GRAFF
+C1A=HAPPY
+
+T=Sorry I got you into this.
+W=GRAFF
+C1A=SAD
+
+T=No time for apologies! We must get out of here!
+W=OTT
+C2A=NORMAL
+
+T=And fast. I don't like the view...
+W=OTT
+C2A=SAD
+TEN=GPC05D_OTT_FIRST_AFTER
+
+#----------------------
+ID=GPC05D_OTT_TALKCHAIR_UNTIE
+T=By the way. How did you...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+
+T=I'll explain later. Let me untie you!
+W=GRAFF
+C1A=READY
+TEN=PC05D_OTT_UNTIEROPES
+
+#----------------------
+ID=GPC05D_OTT_TALKCHAIR_FAR1
+T=How can we get free?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=Hmm...
+W=OTT
+C2A=WONDER
+
+T=I have an idea! Come behind me!
+W=OTT
+C2A=HAPPY
+TEN=PC05D_OTT_TALKCHAIR_CHECKBLIND
+
+
+#----------------------
+ID=GPC05D_OTT_TALKCHAIR_CLOSE1
+T=Can you move your hands?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=A little...
+W=OTT
+
+T=Let's try and untie one another!
+W=GRAFF
+C1A=READY
+TEN=PC05D_OTT_UNTIEROPES
+
+#----------------------
+ID=GPC05D_OTT_TALKCHAIR_CLOSE2
+T=That's better.
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=NORMAL
+
+T=You don't say...
+W=OTT
+
+T=Did they... torture you?
+W=GRAFF
+C1A=TURN
+
+T=If by that, you mean threaten to push me into that void...
+W=OTT
+
+T=Yeah.
+W=OTT
+C2A=SAD
+
+T=Forgive me.
+W=GRAFF
+C1A=SAD
+
+T=Not your fault.
+W=OTT
+C2A=NORMAL
+
+T=We better scram! I'll lead the way.
+W=GRAFF
+C1A=READY
+
+T=Be careful.
+W=OTT
+TEN=GPC05D_OTT_TALKCHAIR_END
+
+#----------------------
+ID=GPC05D_OTT_GRAFFJUMPS
+T=Graff!!!
+W=OTT
+A=SURPRISED
+COMM=If Graff accidentally falls into the hole
+TEN=GPC05D_FLOOR_HOLEGAMEOVER
+
+#----------------------
+ID=GPC05D_OTT_FREE
+T=And now?...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=...
+W=OTT
+
+T=Maybe that ladder...
+W=OTT
+C2A=WONDER
+
+T=Okay, let's try.
+W=GRAFF
+C1A=READY
+
+#----------------------
+ID=GPC05D_OTT_AFTERFIGHT
+T=Graff!...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SURPRISED
+COMM=If Graff won the fight against rats
+TEN=GPC05D_OTT_AFTERFIGHTB
+
+#----------------------
+#= Stuff
+#----------------------
+ID=GPC05D_STUFF1
+T=What a mess.
+W=GRAFF
+A=MEH
+CONTEXT=Searching through stuff
+
+T=Hey! Wait a minute. This is mine!
+W=GRAFF
+A=GASP
+TEN=PC05D_STUFF_CHECK
+
+#----------------------
+ID=GPC05D_STUFF_FREE
+T=If only my hands were free...
+W=GRAFF
+A=THINK
+
+#----------------------
+ID=GPC05D_STUFF_ALREADY
+T=Anything more?
+W=GRAFF
+A=THINK
+TEN=GPC05D_STUFF_GIVEDRINK
+
+T=Hey! I found an ad!
+W=GRAFF
+A=HAPPY
+
+#----------------------
+#= KINS dialogs
+#----------------------
+ID=GPC05D_RAT1_SPOTTED1
+T=Hey! You!
+W=KINS
+C1=GRAFF
+C1A=GASP
+C2=KINS
+C2A=ANGRY
+CONTEXT=WHen Graff gets spotted
+TEN=GPC05D_RAT1_SPOTTED_GRAFFLOOK
+
+T=Oops!...
+W=GRAFF
+TEN=PC05D_SPOTTED_CHECK
+
+#----------------------
+ID=GPC05D_RAT2_SPOTTED1
+T=Duh! Da boy! He's here!
+W=DART
+C1=GRAFF
+C1A=GASP
+C2=DART
+C2A=READY
+TEN=GPC05D_SPOTTED_ENEMIESCOME
+
+T=Crap!
+W=GRAFF
+TEN=PC05D_SPOTTED_CHECK
+
+
+#----------------------
+ID=GPC05D_SPOTTED_READY
+T=Don't come any closer! Or else...
+W=GRAFF
+C1=GRAFF
+C1A=READY
+TEN=PC05D_STARTFIGHT
+
+
+#----------------------
+
+ID=GPC05D_ALLDEAD
+T=(Pant, pant)
+W=GRAFF
+A=GASP
+CONTEXT=Graff wins
+
+T=I... knocked them all out?!...
+W=GRAFF
+TEN=GPC05D_ALLDEAD_CHECK
+
+#----------------------
+
+ID=GPC05D_ALLDEAD_OTT
+T=Graff! How did you?...
+W=OTT
+C1=GRAFF
+C1A=GASP
+C2=OTT
+C2A=SURPRISED
+
+T=I... gave it all I've got...
+W=GRAFF
+C1A=DISDAIN
+
+T=Go ahead! I'm right behind you.
+W=GRAFF
+C1A=READY
+
+T=Okay...
+W=OTT
+C2A=DISAPPOINTED
+TEN=GPC05D_ALLDEAD_OTTCLIMB
+
+
+#----------------------
+
+ID=GPC05D_ALLDEAD_OTT2
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+
+#TODO Implement Chief rat on the ground and movements
+T=Wait...
+W=CHIEFRAT
+C2=CHIEFRAT
+C2A=SAD
+TEN=GPC05D_ALLDEAD_OTTTURN
+
+T=There's... something I need to tell ya.
+W=CHIEFRAT
+TEN=GPC05D_ALLDEAD_OTT3
+
+#----------------------
+
+ID=GPC05D_ALLDEAD_OTT3
+T=Shut up. Didn't you have enough?
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=SAD
+
+T=Ha ha. Ya do take after your dad after all.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=He's not!...
+W=GRAFF
+
+T=So much violence within you.
+W=CHIEFRAT
+C2A=SAD
+
+T=Did ya know... He did the same thing?
+W=CHIEFRAT
+
+T=Kicking your butt?
+W=GRAFF
+C1A=THINK
+
+T=Take a look.
+W=CHIEFRAT
+TEN=PC05D_SECONDDIALOG6_SHOWPIC
+
+T=Huh?
+W=GRAFF
+TEN=GPC05D_SECONDDIALOG6F2
+
+#----------------------
+
+ID=GPC05D_ALLDEAD_OTT4
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=CHIEFRAT
+C2A=NORMAL
+
+T=Graff?...
+BNAMESP=OTT
+BVOICESP=OTT
+
+T=You're okay? What's going on?
+BNAMESP=OTT
+BVOICESP=OTT
+
+T=Yeah. Don't worry.
+W=GRAFF
+
+T=I'm coming.
+W=GRAFF
+
+T=I will never forget...
+W=CHIEFRAT
+C2A=SAD
+
+T=And you shouldn't eith...
+W=CHIEFRAT
+TEN=GPC05D_ALLDEAD_GRAFFBANG
+
+T=(Bang)
+COMM=Graff hits chief
+
+T=I've heard enough.
+W=GRAFF
+C1A=ANGRY
+TEN=PC05D_TO_BROK
+
+
+
+#----------------------
+ID=PC05D_RATFIGHT_GAMEOVER1
+T=Ya shouldn't have forced my hand, boy.
+W=CHIEFRAT
+A=ANGRY
+CONTEXT=Graff loses
+
+T=You're next, croc!
+W=CHIEFRAT
+TEN=GAMEOVER
+
+#----------------------
+ID=PC05D_RATFIGHT_GAMEOVER2
+T=Oops! We killed da boy...
+W=KINS
+A=SURPRISED
+TEN=GAMEOVER
+
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 18/08/2019
+###############################################

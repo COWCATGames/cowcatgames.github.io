@@ -1,0 +1,317 @@
+﻿#-------------------------------
+#=GRAFF - OUTSIDE BROK APARTMENT
+#-------------------------------
+
+#----------------------
+#= Nameplate
+#----------------------
+
+ID=GPC02_NAMEPLATE1
+T="Detective (and handyman)"
+W=GRAFF
+A=MEH
+CONTEXT=Room interactions
+
+T=He should add - "I'm never home. Don't bother knocking on my door!"
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+#= Mail system
+#----------------------
+
+ID=GPC02_MAILSYSTEM1
+T=Please confirm your identity by pressing the touch panel.
+BVOICESP=VARIOUS
+TEN=PC02_MAILSYSTEM_USE
+
+
+#----------------------
+
+ID=GPC02_MAILSYSTEM_NOTHING
+T=No new mail.
+BVOICESP=VARIOUS
+
+T=Good!
+W=GRAFF
+A=DISDAIN
+
+#----------------------
+ID=PC02_MAILSYSTEM_HIT2
+T=Fingerprint not recognized. Please try again.
+BVOICESP=VARIOUS
+NB=1
+D=90
+
+#----------------------
+#= Mailbox
+#----------------------
+
+ID=GPC02_MAILBOX_CLOSED1
+T=Maybe Brok could, but me...? I can't force it open with my bare hands... 
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+#= Mailbox day 3
+#----------------------
+
+ID=GPC02_MAILBOX_DAY3_CLOSED
+T=Gotta use the panel first.
+W=GRAFF
+A=MEH
+
+#----------------------
+
+ID=GPC02_MAILBOX_DAY3_GET
+T=Usually I leave getting the mail to Brok, but...
+W=GRAFF
+A=MEH
+
+T=He said "No more secrets," after all.
+W=GRAFF
+A=DISDAIN
+TEN=GPC02_MAILBOX_GET
+
+#----------------------
+
+ID=GPC02_MAILBOX_DAY3_GET2
+T=...
+W=GRAFF
+A=THINK
+
+T=An invoice... from a guy named "MISTER REKCAH".
+W=GRAFF
+COMM=RECKAH = HACKER spelled backwards! This is an invoice from the hacker.
+TEN=GPC02_GET_INVOICEHACKER
+
+#----------------------
+
+ID=GPC02_MAILBOX_DAY3_GET3
+T="Supplementary fees for the fear you've provoked..."
+W=GRAFF
+A=THINK
+
+T=Huh?...
+W=GRAFF
+A=SURPRISED
+TEN=GPC02_GET_BILLC
+
+#----------------------
+
+ID=GPC02_MAILBOX_DAY3_GET4
+T=The Triweb invoice...
+W=GRAFF
+A=MEH
+
+T=Woah, I wasn't aware we paid that much...
+W=GRAFF
+A=SURPRISED
+
+T=Oh, there's another paper.
+W=GRAFF
+A=MEH
+TEN=GPC02_GET_BANKSTATEMENT
+
+
+#----------------------
+
+ID=GPC02_MAILBOX_DAY3_GET5
+T=...A bank statement. I guess it must be littered with negative fig...
+W=GRAFF
+A=MEH
+COMM=He's about to say "figures"
+
+T=...What?!
+W=GRAFF
+A=SURPRISED
+TEN=GPC02_MAILBOX_DAY3_MUSIC
+
+T=There's... 100,000 Unis on that account?!
+W=GRAFF
+A=GASP
+
+T=...
+W=GRAFF
+A=OPPOSITE
+
+T=Must be some kind of mistake...
+W=GRAFF
+A=DISDAIN
+
+T=The account beholder is...
+W=GRAFF
+A=MEH
+
+T=Lia Filsh...
+W=GRAFF
+A=MEH
+
+T=Mom...
+W=GRAFF
+A=SAD
+VLOW=1
+
+T=What could this mean?...
+W=GRAFF
+A=THINK
+TEN=GPC02_MAILBOX_DAY3_NOMUSIC
+
+T=No time to think about this right now.
+W=GRAFF
+A=READY
+
+T=I need to hurry. The last trial could start any minute now!
+W=GRAFF
+
+#----------------------
+
+ID=GPC02_MAILBOX_DAY3_ALREADY
+T=It's empty now.
+W=GRAFF
+A=MEH
+
+
+#----------------------
+
+ID=GPC02_MAILSYSTEM_DAY3_1
+T=You've got mail.
+BVOICESP=VARIOUS
+TEN=PC02_MAILSYSTEM_OPEN
+
+#----------------------
+
+ID=GPC02_MAILSYSTEM_DAY3_2
+T=Your mailbox is already open.
+BVOICESP=VARIOUS
+
+#----------------------
+ID=GPC02_MAILSYSTEM_DAY3_3
+T=No new mail.
+BVOICESP=VARIOUS
+
+
+
+#----------------------
+#= Button
+#----------------------
+
+ID=GPC02_BUTTON1
+T=Ringing my own door?... I'm not a kid.
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+#= Shower & toilets
+#----------------------
+
+ID=GPC02_SHOWERTOILETS1
+T=No time for that...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+ID=GPC02_SHOWERDOOR_DO
+T=Hmm... Yeah.
+W=GRAFF
+A=MEH
+TEN=GPC02_SHOWERDOOR_FADEOUT
+
+#----------------------
+ID=GPC02_SHOWERDOOR_DO2
+T=(Shower sound)
+W=GRAFF
+A=SHOWER
+TEN=GPC02_SHOWERDOOR_FADEIN
+
+#----------------------
+ID=GPC02_SHOWERDOOR_DO3
+T=Ah, that's better!
+W=GRAFF
+A=HAPPY
+
+
+
+#----------------------
+#= Robot
+#----------------------
+
+ID=GPC02_ROBOT1
+T=I know this one! That's an old model, about 30 years old.
+W=GRAFF
+A=THINK
+
+T=The poor thing has been torn into pieces...
+W=GRAFF
+A=SAD
+
+T=No useful parts for me, unfortunately.
+W=GRAFF
+A=OPPOSITE
+
+
+
+#----------------------
+#= Job board
+#----------------------
+
+ID=GPC02_JOBBOARD1
+T=Hopefully I'll get my diploma and become a Drumer again...
+W=GRAFF
+A=MEH
+
+T=I wouldn't want to desperately look for lousy jobs like these every day.
+W=GRAFF
+A=OPPOSITE
+
+T=Although...Brok doing those lousy jobs is what's currently keeping us fed.
+W=GRAFF
+A=SAD
+
+#----------------------
+
+ID=GPC02_JOBBOARD_DEATH1
+T=...
+W=GRAFF
+A=GASP
+
+#----------------------
+ID=GPC02_DOORBROK_HIT1
+T=Argh, my hands!
+W=GRAFF
+A=CHOKE
+
+#----------------------
+#= Lasers
+#----------------------
+
+ID=GPC02_LASERS1
+T=Woah!!! What the...?!
+W=GRAFF
+A=SURPRISED
+COMM=A lasers device is blocking the way out and won't let player through until they pick up the mail
+
+T="You've got mail".
+BVOICESP=VARIOUS
+
+T=Huh?...
+W=GRAFF
+A=GASP
+
+#----------------------
+#= Main entrance
+#----------------------
+
+ID=GPC02_MAINDOOR_NOPE
+T=I don't have time to chit chat!
+W=GRAFF
+A=OPPOSITE
+
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 18/08/2019
+###############################################
+
+

@@ -1,0 +1,8468 @@
+﻿#-------------------------------
+#=DLC THE BRAWL BAR
+#-------------------------------
+
+###################################################################################################################
+###################################################################################################################
+#										STORY SCENES
+###################################################################################################################
+###################################################################################################################
+
+#----------------------
+#= Arrive to the bar
+#----------------------
+
+ID=PC21_00_HEDGEHOG1
+T=Erm... Hello?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+CONTEXT=Story scene - Brok arrives to the bar for the first time
+
+T=Hello, sir! Welcome!
+W=HEDGEHOG
+
+T=Sorry for earlier. Just a way to filter bots.
+W=HEDGEHOG
+C2A=THINK
+
+T=They'd never say something so stupid!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=I... see...
+W=BROK
+
+T=Here for the fights, right?
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=Fights...?
+W=BROK
+
+T=I handle the extra challenges! Go see my boss, he'll fill you in.
+W=HEDGEHOG
+
+T=Okay...?
+W=BROK
+C1A=WONDER
+TEN=PC21_00_GIVECONTROL
+
+
+#----------------------
+
+ID=PC21_00_FROG1
+T=Hmm...
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=MEH
+COMM=Talking to the frog before being introduced
+
+T=Hmm...?
+W=BROK
+
+T=Hmm.
+W=FROG
+
+#----------------------
+
+ID=PC21_00_HYENA1
+T=Hey, newcomer! Have a seat, please.
+W=HYENA
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+COMM=First talk
+
+T=No, thanks. What's this place, a bar?
+W=BROK
+C1A=MAYBE
+
+T=Sure is. Best bar in the Slums, I can tell ya!
+W=HYENA
+
+T=Not that the bar is high... Ha!
+W=HYENA
+C2A=CHEERFUL
+COMM=Word play "a high bar to reach"
+
+T=...?
+W=BROK
+
+T=Get it? Bar?
+W=HYENA
+C2A=THINK
+
+T=We're an underground bar, and the bar is low so... Ah, forget it.
+W=HYENA
+C2A=EMBARASSED
+COMM=Word play. If not possible in your language, replace with another joke.
+
+T=You should try our VR challenges! You'd fit right in!
+W=HYENA
+C2A=NORMAL
+
+T=VR? Like... Oh, those cabins.
+W=BROK
+C1A=THINK
+
+T=Right. They're free to use. Just take one!
+W=HYENA
+
+T=Go ahead!
+W=HYENA
+C2A=CHEERFUL
+
+T=Wait, you didn't explain m...
+W=BROK
+C1A=SURPRISED
+SKIPEND=1
+
+T=Leave the chitchat for later! You're clearly not that kind of guy.
+W=HYENA
+C2A=MEH
+
+T=(Hmmph... Who does he take me for...)
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+
+T=Look. This should convince you!
+W=HYENA
+C2A=NORMAL
+TEN=PC21_00_GLOVES
+
+
+#----------------------
+
+ID=PC21_00_HYENA1B
+T=Boxing gloves?!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=HYENA
+C2A=NORMAL
+
+T=Take'em!
+W=HYENA
+C2A=CHEERFUL
+
+
+#----------------------
+
+ID=PC21_00_HYENA1C
+T=Take those gloves!
+W=HYENA
+C1=HYENA
+C1A=CHEERFUL
+
+#----------------------
+
+ID=PC21_00_HYENA2
+T=Oh man. Been years since I've worn some!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=HYENA
+C2A=NORMAL
+
+T=How did you know?
+W=BROK
+
+#T=When you've been a bartender as long as I have, you start picking up on these things.
+#W=HYENA
+#C2A=MEH
+
+T=Call it a sixth sense.
+W=HYENA
+C2A=CHEERFUL
+TEN=PC21_00_CHANGEBOXER
+
+#----------------------
+
+ID=PC21_00_HYENA2B
+T=Changing in the blink of an eye. Now that's a superpower!
+W=HYENA
+C1=BROK
+C1A=HAPPY
+C2=HYENA
+C2A=CHEERFUL
+COMM=Brok just put the boxing attire on
+
+T=Second nature to me!
+W=BROK
+C1A=READY
+
+T=Well, you can't exactly interact in this state. Save it for the fights, supercroc.
+W=HYENA
+C2A=NORMAL
+TEN=PC21_CHANGE_NORMAL
+
+#----------------------
+
+ID=PC21_00_HYENA2C
+T=We'll chat later. Check the VR cabins!
+W=HYENA
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=CHEERFUL
+
+
+
+
+#----------------------
+#	Story losing the first time
+#----------------------
+
+ID=PC21_AFTER_LOSE
+T=...
+W=BROK
+C1=BROK
+C1A=WONDER
+CONTEXT=First time losing in VR cabin
+
+T=Strange. I lost, but it doesn't hurt like normal.
+W=BROK
+
+T=Like normal?
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=THINK
+
+T=The VR cabins I'm used to make every hit feel like I'm losing teeth.
+W=BROK
+
+T=Oh, we set the cabins to "normal sensitivity."
+W=HEDGEHOG
+
+T=That's a setting?! You mean I can't die in here?
+W=BROK
+C1A=SURPRISED
+
+T=Of course not! What a silly idea!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=That other cabin must've been set wayyy past the safety limit.
+W=HEDGEHOG
+C2A=THINK
+
+T=Shay...!
+W=BROK
+C1A=FURIOUS
+TEN=PC21_EXITVR_OVER_FORCE
+
+#----------------------
+#	Story 10
+#----------------------
+ID=PC21_10_EXITVR
+T=Hey! How'd your first round go?
+W=HYENA
+C1=BROK
+C1A=MAYBE
+C2=HYENA
+C2A=NORMAL
+CONTEXT=Exit after first fight
+
+T=Tough...
+W=BROK
+TEN=PC21_10_FIRSTFIGHT_CHECKWON
+
+#----------------------
+ID=PC21_10_FIRSTFIGHT_WIN
+T=Say, what did I just win? Some blue coins?
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=C-Tokens! Our private currency.
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=So... I'm not getting any Unis for this?
+W=BROK
+C1A=MAYBE
+
+T=Nope! 
+W=HEDGEHOG
+
+T=But I can convert those C-Thingies into Unis, right?
+W=BROK
+C1A=MOCK
+
+T=Nope!
+W=HEDGEHOG
+
+T=Can't convert back or forth. And you can't spend Unis, either.
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=Seems like a scam to me...
+W=BROK
+C1A=OPPOSITE
+
+T=Well, that's not tooootally true.
+W=HEDGEHOG
+C2A=THINK
+
+T=You can purchase items from the machine near the jukebox with your tokens, but they're virtual and can only be used inside the VR cabins.
+W=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_VRFOOD_TUTORIAL
+
+#----------------------
+ID=PC21_10_FIRSTFIGHT_WIN2
+T=You can also use C-Tokens to skip challenges and to spin our special wheel!
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=ENTHUSIASTIC
+C4=HYENA
+C4A=NORMAL
+
+T=And the restaurant.
+W=FROG
+C3=FROG
+C3A=BUBBLES
+
+T=Oh yeah! Stupid me, I always forget the main course!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Consider this bar an independent country within another independent country!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=Our own money, our own rule!
+W=HEDGEHOG
+
+T=Right...
+W=BROK
+
+T=(Pssst...The actual reason is...)
+W=FROG
+C3A=NORMAL
+
+T=(Unis are traceable. We don't want any of that government money, or it might trace back to us.)
+W=FROG
+
+T=Huh...
+W=BROK
+C1A=MEH
+TEN=PC21_EXITVR_OVER_FORCE
+
+#----------------------
+#	Story 20
+#----------------------
+ID=PC21_20_EXITVR
+T=Hey, quick question.
+W=BROK
+C1=BROK
+C1A=MAYBE
+CONTEXT=Exit VR cabin after a few challenges
+
+T=I don't recognize some of the people I'm fighting. Aren't VR cabinets supposed to model enemies off of my own memories?
+W=BROK
+C1A=THINK
+
+T=It's a mix.
+W=HYENA
+C2=HYENA
+C2A=NORMAL
+
+T=Some are bots created from scratch.
+W=HYENA
+
+T=Others are actual citizens whose skills and appearance were recorded, and are played by an AI.
+W=HYENA
+C2A=THINK
+
+T=You'll even encounter real folks from other VR cabins, playing live!
+W=HEDGEHOG
+C4=HEDGEHOG
+C4A=ENTHUSIASTIC
+
+T=That's the beauty of this technology. You can't tell!
+W=HYENA
+C2A=CHEERFUL
+
+T=So there's a chance some of these people I don't recognize might show up here?
+W=BROK
+
+T=More than you'd think! Ha ha!
+W=HYENA
+TEN=PC21_EXITVR_OVER_FORCE
+
+#---------------------------------------
+#	When we played another character
+#---------------------------------------
+ID=PC21_EXITVR_ANOTHERCHAR
+T=Weird... For a minute I thought I was...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+
+T=Yes. You can imitate people you know. Borrow their appearance and fight style.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+
+T=What? How?!
+W=BROK
+C1A=WONDER
+
+T=Do I look like a coder? We simply bought the cabins.
+W=FROG
+C2A=BUBBLES
+
+T=That doesn't even make any sense! And Shay told me it was impossible.
+W=BROK
+
+T=Shay! Yes, I remember her. Slums competition! Nasty, nasty!
+W=FROG
+C2A=NORMAL
+
+T=Well, we own private servers, separate from the Triweb.
+W=FROG
+
+T=No online bets, no problems!
+W=FROG
+C2A=BUBBLES
+TEN=PC21_EXITVR_OVER_FORCE
+
+#----------------------
+#	Story 30
+#----------------------
+ID=PC21_30_EXITVR
+T=(Pant)
+W=BROK
+C1=BROK
+C1A=TIRED
+CONTEXT=Exit VR cabin after a few challenges
+
+T=Puzzles, I'm waiting for your explanation.
+W=FROG
+C3=FROG
+C3A=NORMAL
+
+T=...?
+W=BROK
+C1A=THINK
+TEN=PC21_30_EXITVR_CAMERA
+
+#----------------------
+# MODIFIED
+ID=PC21_30_EXITVR2
+T=Why do I have a 350 C-Tokens hole in my accounting?
+W=FROG
+C3=FROG
+C3A=NORMAL
+
+T=Oh, hmm...
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=THINK
+
+T=I know! The tips!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=You forgot a line in the account journal.
+W=HEDGEHOG
+C2A=THINK
+
+T=Blaming me?! How dare you!
+W=FROG
+C3A=MEH
+
+T=I didn't make a mistake. You did.
+W=HEDGEHOG
+C2A=DOWN
+
+T=Youngsters these days... No respect.
+W=FROG
+
+T=Say, why C-Tokens?
+W=BROK
+C1=BROK
+C1A=TIRED
+
+T=Why not, dunno... D-Dummies?
+W=BROK
+C1A=MOCK
+
+T=The "C" stands for "CounterAttack," because we're the CounterAttack Bar!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=This place is our way of pushing back against the laws that outlawed these clubs. It's revenge.
+W=FROG
+C3A=NORMAL
+
+T=To put it bluntly.
+W=HEDGEHOG
+C2A=THINK
+TEN=PC21_EXITVR_RESETSCENE
+
+#----------------------
+#	Story 40
+#----------------------
+ID=PC21_40_EXITVR
+T=There ya go, sir!
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=ENTHUSIASTIC
+CONTEXT=Exit VR cabin after a few challenges
+COMM=Puzzles gives food to clients
+
+T=Smells good! Who does the cooking?
+BNAME=BACKCLIENT
+BVOICE=BACKCLIENT
+TEN=PC21_40_BROK_LOOK
+
+T=Erm... our chef, of course!
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=Chef? But I haven't seen...
+W=BROK
+C1=BROK
+C1A=WONDER
+SKIPEND=1
+
+T=(Psst, not in front of the clients.)
+W=HEDGEHOG
+C2A=THINK
+TEN=PC21_40_HEDGEHOG_LOOK
+
+T=Huh?
+W=BROK
+TEN=PC21_40_EXITVR_FADE
+
+
+#----------------------
+ID=PC21_40_EXITVR2
+T=We serve canned food. None of us have time to cook.
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=THINK
+
+T=We scored an excellent deal on a big supply of Tomatoze Lungfish Fillet!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Oh man, been months since I've had seafood!
+W=BROK
+C1A=HAPPY
+
+T=If you beat all the challenges, I'll make sure you get some!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=Deal!
+W=BROK
+
+T=And if you need a cook, I'm right here!
+W=BROK
+C1A=COCKY
+
+T=Erm... we'll see!
+W=HEDGEHOG
+C2A=THINK
+TEN=PC21_EXITVR_RESETSCENE
+
+#----------------------
+#	Story 50
+#----------------------
+# MODIFIED to remove "client"
+ID=PC21_50_EXITVR
+T=This is unacceptable!
+CONTEXT=Exit VR cabin after a few challenges
+BNAME=BACKCLIENT
+BVOICE=BACKCLIENT
+COMM=A client complains
+
+T=Any problem, madam?
+W=FROG
+C1=FROG
+C1A=NORMAL
+
+T=This food is cold!
+
+T=That's because you've been talking instead of eating.
+W=FROG
+C1=FROG
+C1A=BUBBLES
+
+T=Such insolence!
+
+T=Here's your money, but don't expect me to come back!
+TEN=PC21_50_CLIENTLEAVE
+
+
+#----------------------
+ID=PC21_50_EXITVR2
+T=Aren't you afraid of losing clients?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+T=I'm doing a favor to all of us.
+W=FROG
+C2A=MEH
+
+T=Believe me, you don't want clients like this.
+W=FROG
+TEN=PC21_EXITVR_RESETSCENE
+
+#----------------------
+#	Story 120
+#----------------------
+ID=PC21_120_EXITVR
+T=There you go, sir! Enjoy your...
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=CHEERFUL
+CONTEXT=Exit VR cabin after a few challenges
+COMM=Puzzles does a mistake in front of a client
+TEN=PC21_120_BROK_LOOK
+SKIPEND=1
+
+# MODIFIER to remove client
+T=Watch out!
+BNAMESP=BACKCLIENT
+BVOICESP=BACKCLIENT
+SKIPEND=1
+
+T=(Bottle breaks)
+SOUND=glasswindow_break
+SILENCE=1
+TEXTONLY=1
+
+T=Oh no... my hand slipped.
+W=HEDGEHOG
+C2A=DOWN
+
+T=Please excuse me. I'll bring you another one.
+W=HEDGEHOG
+C2A=DOWN
+TEN=PC21_120_FADE
+
+#----------------------
+ID=PC21_120_EXITVR2
+T=Boss... I'm sorry...
+W=HEDGEHOG
+C1=HYENA
+C1A=MEH
+C2=HEDGEHOG
+C2A=DOWN
+C3=FROG
+C3A=NORMAL
+
+T=This was an expensive bottle. I'm way too clumsy...
+W=HEDGEHOG
+
+T=I don't deserve to work for you.
+W=HEDGEHOG
+C2A=DOWN
+C2_EYESHUT=1
+
+T=Puzzles...
+W=HYENA
+
+T=If you choose to let me go, I'll understand.
+W=HEDGEHOG
+
+T=Listen.
+W=FROG
+
+T=This is your first job. Everyone makes mistakes.
+W=FROG
+C3_EYESHUT=1
+
+T=That's what makes us human. If we wanted a bot, we would have one.
+W=FROG
+C3A=BUBBLES
+
+T=We chose you because we believe in you.
+W=FROG
+
+T=I couldn't say it better myself.
+W=HYENA
+C1A=CHEERFUL
+
+T=I...
+W=HEDGEHOG
+
+T=Thanks.
+W=HEDGEHOG
+C2A=THINK
+
+T=Okay! Then I'll do my best!
+W=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_120_FADEBIS
+
+#----------------------
+ID=PC21_120_EXITVR3
+T=Well, I still need to account for this loss.
+W=FROG
+C1=HYENA
+C1A=THINK
+C3=FROG
+C3A=MEH
+
+T=Guess I'll deduct it from your salary, 'Jaw.
+W=FROG
+
+T=Urgh...
+W=HYENA
+C1A=EMBARASSED
+TEN=PC21_EXITVR_RESETSCENE
+
+#----------------------
+#	Story 130
+#----------------------
+ID=PC21_130_ENTERVR
+T=...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+CONTEXT=Before entering VR, the menu gets glitched out
+
+T=Wait a minute...
+W=BROK
+
+T=What's going on? It's all glitched out!
+W=BROK
+
+T=Oh no. It's happening again.
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=THINK
+
+T=The virus is back!
+W=HEDGEHOG
+C2A=DOWN
+
+T=Virus?
+W=BROK
+C1A=THINK
+
+T=Quick, choose any previous challenge and win it!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=Isn't that dangerous?
+W=BROK
+C1A=WONDER
+
+T=It'll be worse if you don't do anything!
+W=HEDGEHOG
+C2A=DOWN
+
+T=How?
+W=BROK
+
+T=Stop talking! Just do it!
+W=HEDGEHOG
+
+T=O...kay...
+W=BROK
+C1A=MAYBE
+
+#----------------------
+ID=PC21_130_BUGNEW
+T=No no, you need to replay an old challenge!
+W=HEDGEHOG
+C1=BROK
+C1A=CONFUSED
+C2=HEDGEHOG
+C2A=THINK
+
+T=Playing a new one will destroy the space time stability!
+W=HEDGEHOG
+
+T=Aren't you exaggerating?
+W=BROK
+
+T=You're gonna try to anyway?
+W=HEDGEHOG
+
+T=...yeah?
+W=BROK
+C1A=WONDER
+
+T=Good thing I blocked that option, then.
+W=HEDGEHOG
+
+
+
+
+#----------------------
+ID=PC21_130_BUGNOPE
+T=Oh no, the virus is still spreading.
+W=HEDGEHOG
+C1=BROK
+C1A=SURPRISED
+C2=HEDGEHOG
+C2A=THINK
+
+T=Get back into it! You need to win one of those challenges again!
+W=HEDGEHOG
+
+T=I will, I will!
+W=BROK
+C1A=YELL
+TEN=PC21_EXITVR_OVER_FORCE
+
+#----------------------
+ID=PC21_130_BUGAFTER
+T=Congratulations!
+W=HEDGEHOG
+C1=BROK
+C1A=WONDER
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=You bested our home-made virus!
+W=HEDGEHOG
+
+T=You mean...
+W=BROK
+C1A=SURPRISED
+
+T=There never was one. All fabricated. Part of the challenge, if you will.
+W=HEDGEHOG
+C2A=THINK
+
+T=It was my idea to spice things up! Did you like it?
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Let me think...
+W=BROK
+C1A=WONDER
+
+T=No, not really.
+W=BROK
+C1A=ANGRY
+
+T=Oh.
+W=HEDGEHOG
+C2A=DOWN
+
+T=Sorry. I'll do better...
+W=HEDGEHOG
+
+T=Just gimme C-Tokens after this, and my opinion will change!
+W=BROK
+
+T=Yeah! Good idea!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=I'll have that ready for the next challenger. Thanks for the advice!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=The next one... Of course...
+W=BROK
+C1A=OPPOSITE
+TEN=PC21_EXITVR_OVER_FORCE
+
+#----------------------
+#	Story 140
+#----------------------
+ID=PC21_140_EXITVR
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Exit VR cabin after a few challenges
+COMM=Puzzles found some old pictures
+
+T=I had no idea! That's so cool!
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=ENTHUSIASTIC
+TEN=PC21_140_EXITVR_FADE
+
+#----------------------
+ID=PC21_140_EXITVR2
+T=What's going on?
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=I found some old pictures stuck in the corner of my desk!
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_140_EXITVR_SHOWPICTURES
+
+
+#----------------------
+ID=PC21_140_EXITVR3
+T=Look! It's Tenderjaw when he was young!
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+C4=HYENA
+C4A=MEH
+
+T=Yeah...
+W=HYENA
+
+T=I see!
+W=BROK
+
+T=Isn't that Sharpteeth the Thief?
+W=BROK
+C1A=SURPRISED
+
+T=Oh my god, I would soooo freak out to meet a legend like him!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=Why the long face, boss?
+W=HEDGEHOG
+C2A=THINK
+
+T=I've made mistakes and have regrets, Puzzles. You'll understand when you're older.
+W=HYENA
+
+T=Nonsense! As a veteran fighter, you're a model for me!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=I want to get strong like you and face popular fighters!
+W=HEDGEHOG
+
+T=And have a metal jaw! That rocks!
+W=HEDGEHOG
+
+T=You might not want that, though.
+W=HYENA
+C4A=EMBARASSED
+
+T=But... alright, I'll add these to my photo albums.
+W=HYENA
+C4A=NORMAL
+
+T=Please go back to work now, Miss Bubbles is looking daggers at us.
+W=HYENA
+C4A=EMBARASSED
+
+T=Sure, sir!
+W=HEDGEHOG
+TEN=PC21_EXITVR_RESETSCENE
+
+
+#----------------------
+#	Story 150
+#----------------------
+ID=PC21_150_EXITVR
+T=Sir! Come back here!
+W=FROG
+C2=FROG
+C2A=MEH
+SOUND=crowdrun
+CONTEXT=A client escapes without paying
+
+T=Oh oh...
+W=BROK
+C1=BROK
+C1A=MAYBE
+TEN=PC21_150_EXITVR_MOVECLOSER
+
+#----------------------
+ID=PC21_150_EXITVR2
+T=It happened again.
+W=FROG
+C1=BROK
+C1A=MAYBE
+C2=FROG
+C2A=MEH
+
+T=What did?
+W=BROK
+C1A=THINK
+
+T=A client left without paying.
+W=HYENA
+C2=FROG
+C2A=MEH
+C4=HEDGEHOG
+C4A=DOWN
+C3=HYENA
+C3A=MEH
+
+T=I'm super sorry. They didn't leave me with time to react.
+W=HEDGEHOG
+
+T=That's not your fault, sweety.
+W=FROG
+C2A=NORMAL
+
+T=We're in the Slums. There are some bad seeds.
+W=FROG
+
+T=I told you, we need to ask payment before serving!
+W=FROG
+C2A=BUBBLES
+
+T=That isn't how I want to run this business and you know it.
+W=HYENA
+C3=HYENA
+C3A=MEH
+
+T=Some badly behaved individuals should not make things worse for everyone else.
+W=HYENA
+
+T=Look, I know that guy. He lives in Sector 52X.
+W=HYENA
+C3A=NORMAL
+
+T=I'll talk to him after closing, okay?
+W=HYENA
+
+T=Good luck with that. When they run this fast...
+W=FROG
+C2A=MEH
+
+T=You never know until you try!
+W=HYENA
+C3A=CHEERFUL
+
+T=Your optimism is, in equal parts, grating and motivating.
+W=FROG
+C2A=BUBBLES
+TEN=PC21_EXITVR_RESETSCENE
+
+#----------------------
+#	Story 220
+#----------------------
+ID=PC21_220_EXITVR
+T=...!!!
+W=BROK
+A=SURPRISED
+CONTEXT=While Brok was in V.R. mode, he comes back and sees everyone dead, killed by bots (it's fake but doesn't know it yet)
+
+T=No!!!
+W=BROK
+TEN=PC21_220_LOOKPLAYER
+
+T=Citizen. You've vandalized. This place.
+W=TRIBOTCOP
+C2=TRIBOTCOP
+C2A=NA
+
+T=What?!
+W=BROK
+
+T=What did you do, you insane contraptions???
+W=BROK
+C1A=FURIOUS
+
+T=Pay. Now...
+W=TRIBOTCOP
+
+T=...or be destroyed.
+W=TRIBOTCOP
+
+T=You're the ones who's gonna pay!!!
+W=BROK
+
+T=I will avenge you... everyone!!!
+W=BROK
+A=YELL
+TEN=PC21_220_EXITVR_STARTFIGHT
+
+#----------------------
+ID=PC21_220_EXITVR2
+T=Sigh...
+W=BROK
+A=TIRED
+CONTEXT=After that fight
+
+T=This... can't be happening!
+W=BROK
+A=HEARTBROKEN
+
+T=If only...
+W=BROK
+
+T=I should have...
+W=BROK
+TEN=PC21_220_CHALLENGEWIN
+
+
+#----------------------
+ID=PC21_220_EXITVR2B
+T=...
+W=BROK
+A=WONDER
+
+T=Huh...?
+W=BROK
+TEN=PC21_220_EXITVR2_AFTER
+
+#----------------------
+ID=PC21_220_EXITVR3
+T=The heck? What just happened?!
+W=BROK
+A=SURPRISED
+C1=BROK
+C1A=SURPRISED
+CONTEXT=Everything back to normal
+
+T=Hmm...?
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=THINK
+
+T=Oh! Right. You did that challenge.
+W=HEDGEHOG
+
+T=That was fake?!
+W=BROK
+
+T=I thought... I thought you were...!
+W=BROK
+
+T=I know! Great simulation, right? 
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=How do you behave against near-certain death?
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=No better way to find out than tricking players into thinking this is real!
+W=HEDGEHOG
+
+T=You wouldn't believe how many run away.
+W=HEDGEHOG
+C2A=THINK
+
+T=But you didn't! You fought adversity, no matter what!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=You're amazing!
+W=HEDGEHOG
+
+T=Thanks... but...
+W=BROK
+C1A=TIRED
+
+T=Don't do that again! Ever!
+W=BROK
+C1A=FURIOUS
+
+T=You care that much about us?
+W=HEDGEHOG
+C2A=THINK
+
+T=Of course I do! Even if you're a sicko!
+W=BROK
+C1A=OPPOSITE
+
+T=Aww, that's sweet!
+W=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_220_WIN
+
+
+#----------------------
+#	Story 230
+#----------------------
+ID=PC21_230_EXITVR
+T=Hey, 'Jaw. What is this?
+W=FROG
+C1=FROG
+C1A=NORMAL
+C2=HYENA
+C2A=NORMAL
+CONTEXT=Bartenders discussing a strange order
+TEN=PC21_CAMERA_TOPLEFT
+
+T=Dunno?
+W=HYENA
+C2A=THINK
+
+T=Looks like a purchase order to me.
+W=FROG
+
+T=For what?
+W=HYENA
+
+T=Good question. It's half erased.
+W=FROG
+C1A=BUBBLES
+
+T=Sha..o... Quantity: 100. Ordered yesterday.
+W=FROG
+
+T=Doesn't ring a bell...
+W=HYENA
+TEN=PC21_230_EXITVR2
+
+
+#----------------------
+ID=PC21_230_EXITVR2
+T=(Deliverer) Hey guys!
+TEN=PC21_230_HYENA_LOOKRIGHT
+
+T=Here! Your one hundred shampoos.
+
+T=Don't forget my part of the trade! Ciao!
+
+T=One hundred...
+W=HYENA
+C1=FROG
+C1A=MEH
+C3=HYENA
+C3A=SURPRISED
+
+T=Oh! They arrived, great!
+W=IGUANA
+C2=IGUANA
+C2A=JOY
+TEN=PC21_230_HYENA_LOOKBACK
+
+T=...
+W=FROG
+
+T=...
+W=HYENA
+C3A=MEH
+
+T=What? What?!
+W=IGUANA
+C2A=THINK
+
+T=You know my hair is sensitive, I need these. And they were half price with a bulk order!
+W=IGUANA
+C2A=EMBARASSED
+
+T=Ivy...
+W=HYENA
+
+T=Besides, my girl also loves that "Fresh Stix Island" flavor and...
+W=IGUANA
+C2A=JOY
+SKIPEND=1
+
+T=Ivy!
+W=HYENA
+C3A=SURPRISED
+
+T=I know, I know! "Not with the business account."
+W=IGUANA
+C2A=EMBARASSED
+
+T=Dad, it's your fault! You don't give me enough pocket money.
+W=IGUANA
+C2A=ANGRY
+
+T=You're 25 and have a job.
+W=HYENA
+C3A=MEH
+
+T=No way, you're such a pain! I'm outta here.
+W=IGUANA
+
+T=Besides... oh gosh, I'm late!
+W=IGUANA
+C2A=THINK
+TEN=PC21_230_IVYLEAVES
+
+T=...
+W=FROG
+C2=NONE
+
+T=Children.
+W=HYENA
+C3A=EMBARASSED
+
+T=Counting on you to clean up this mess.
+W=FROG
+
+T=Get it...? "Clean?"
+W=FROG
+C1A=BUBBLES
+
+T=Bubbles, humor doesn't suit ya.
+W=HYENA
+C3A=MEH
+
+T=Pfft.
+W=FROG
+C1A=MEH
+TEN=PC21_EXITVR_RESETSCENE
+
+
+#----------------------
+#	Story 240
+#----------------------
+ID=PC21_240_EXITVR
+T=(Sigh...)
+W=HEDGEHOG
+A=DOWN
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=DOWN
+CONTEXT=After a challenge, Puzzles is pollution sick because he didn't get his daily pill
+TEN=PC21_240_BROK_COME
+
+T=Hey, man. What's going on?
+W=BROK
+
+T=You don't seem so well.
+W=BROK
+
+T=(Cough, cough)
+W=HEDGEHOG
+C2_EYESHUT=1
+
+T=Oh no...
+W=BROK
+C1A=SURPRISED
+
+T=The Haze? 
+W=BROK
+C1A=WORRIED
+
+T=You guessed right.
+W=HEDGEHOG
+
+T=It's not as bad down here, but I haven't had a Toxout in almost two days...
+W=HEDGEHOG
+
+T=That's no good...!
+W=BROK
+
+T=I... I'll try and find one!
+W=BROK
+
+T=Thanks, sir... (cough, cough)
+W=HEDGEHOG
+
+T=(I need to investigate...)
+W=BROK
+MOOD=THINK
+TEN=PC21_EXITVR_RESETSCENE
+
+#----------------------
+ID=PC21_240_HEDGEHOG1
+T=Are you holding up okay?
+W=BROK
+A=DOWN
+C1=BROK
+C1A=DOWN
+C2=HEDGEHOG
+C2A=DOWN
+C2_EYESHUT=1
+
+T=(Cough, cough) Yeah... I'm okay...!
+W=HEDGEHOG
+
+T=(Coughs like about to die)
+W=HEDGEHOG
+
+T=No, you're not.
+W=BROK
+
+#----------------------
+ID=PC21_240_HEDGEHOG2
+T=I'm sorry...
+W=BROK
+A=HEARTBROKEN
+C1=BROK
+C1A=HEARTBROKEN
+C2=HEDGEHOG
+C2A=DOWN
+C2_EYESHUT=1
+
+T=I just can't find any. I'm the worst investigator ever.
+W=BROK
+
+T=I... didn't realize... you were a detective! (cough, cough)
+W=HEDGEHOG
+
+T=That's so cool! (cough) I am such an idiot.
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=It doesn't matter! What matters is you!
+W=BROK
+
+T=I'll be... (cough, cough) ...okay!
+W=HEDGEHOG
+
+T=...
+W=BROK
+
+T=Wait a minute. That glass next to you?
+W=BROK
+C1A=WONDER
+
+T=What about it? (cough)
+W=HEDGEHOG
+C2A=DOWN
+C2_EYESHUT=1
+
+T=...Oh!!!
+W=HEDGEHOG
+C2A=DOWN
+
+T=I put one pill inside the other day (cough) and forgot to swallow it!
+W=HEDGEHOG
+C2A=THINK
+
+T=(Glurb)
+W=HEDGEHOG
+
+T=Ha! I feel better already!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=See, you're a good investigator after all!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Sigh!
+W=BROK
+C1A=STUPID
+
+T=No more time to lose. Get back to action!
+W=HEDGEHOG
+TEN=PC21_240_HEDGEHOG_BACKNORMAL
+
+#----------------------
+ID=PC21_240_ANYTHING
+T=Not until I've found a pill for Puzzles!
+W=BROK
+A=DOWN
+
+#----------------------
+ID=PC21_240_ANYTHINGAFTER
+T=(Been a while. I should ask Puzzles how he's doing...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+#----------------------
+ID=PC21_240_LEAVE
+T=No... I don't have time to look outside. There has to be one in the bar.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC21_240_TALK
+T=Hey, I'm looking for a Toxout Pill!
+W=BROK
+A=WORRIED
+#TODO Talk to the other NPCs
+
+#----------------------
+ID=PC21_240_DOORLEFT
+T=I was hoping but... Even now, it's closed.
+W=BROK
+A=DISAPPOINTED
+
+
+#----------------------
+ID=PC21_240_DOORRIGHT
+T=Hmm...
+W=BROK
+A=THINK
+NB=1
+D=60
+
+T=No pill there...
+W=BROK
+A=THINK
+NB=1
+D=60
+
+T=Maybe under the...
+W=BROK
+A=THINK
+NB=1
+D=60
+
+T=Ewww!
+W=BROK
+A=YELL
+NB=1
+D=60
+TEN=PC21_240_DOORRIGHT_BACK
+
+#----------------------
+ID=PC21_240_DOORRIGHT2
+T=Nothin'... Save from the shame I feel for doing that...
+W=BROK
+A=TIRED
+
+
+#----------------------
+ID=PC21_240_NEWSARTICLES1
+T=Oh! There's a pill on this pic...
+W=BROK
+A=SURPRISED
+
+T=Oh, wait. That's just chewing gum.
+W=BROK
+A=STUPID
+
+
+#----------------------
+ID=PC21_240_SINK1
+T=This doesn't distribute pills!
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC21_240_EMBLEME1
+T=I can't see well from down here, but that's no pill.
+W=BROK
+A=THINK
+
+T=It's not even anything, really.
+W=BROK
+
+#----------------------
+ID=PC21_240_KITCHENWARE1
+T=Oh no... There's so much.
+W=BROK
+A=SURPRISED
+
+T=This is gonna take a while...
+W=BROK
+A=WORRIED
+TEN=PC21_240_KITCHENWARE1_NEXT
+
+#----------------------
+ID=PC21_240_KITCHENWARE1B
+T=Three hours later...
+TEXTONLY=1
+TEN=PC21_240_KITCHENWARE3
+
+#----------------------
+ID=PC21_240_KITCHENWARE1C
+T=I've searched everywhere. No pill.
+W=BROK
+A=TIRED
+
+T=(Sigh)
+W=BROK
+
+
+#----------------------
+ID=PC21_240_AWARDS1
+T=Hey, any chance you hid a pill in the trophies?
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=HYENA
+C2A=NORMAL
+
+T=Good idea! Let me look!
+W=HYENA
+C2A=THINK
+TEN=PC21_240_AWARDS1_NEXT
+
+#----------------------
+ID=PC21_240_AWARDS1B
+T=...
+W=BROK
+C1=BROK
+C1A=MAYBE
+
+T=Guess what?
+W=HYENA
+C2=HYENA
+C2A=CHEERFUL
+
+T=You found one?!
+W=BROK
+C1A=SURPRISED
+
+T=Unfortunately not.
+W=HYENA
+C2A=EMBARASSED
+
+T=But I found 50 C-Tokens!
+W=HYENA
+C2A=THINK
+TEN=PC21_240_AWARDS_GIVE
+
+T=There ya go!
+W=HYENA
+C2A=CHEERFUL
+
+T=Great... I'm...sure Puzzles will like this...
+W=BROK
+C1A=STUPID
+
+T=Thank you sir! But (cough) you keep them! (cough, cough)
+W=HEDGEHOG
+C4=HEDGEHOG
+C4A=DOWN
+
+#----------------------
+ID=PC21_240_AWARDS2
+T=That was useless.
+W=BROK
+A=OPPOSITE
+
+
+
+#----------------------
+ID=PC21_240_HYENA1
+T=Hey, Puzzles is sick!
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=HYENA
+C2A=NORMAL
+CONTEXT=After a challenge, Puzzles is pollution sick because he didn't get his daily pill
+COMM=Play on the two meanings of the word "sick"
+
+T=I know! He's quite an excellent young man!
+W=HYENA
+C2A=CHEERFUL
+
+T=No! I mean, he's pollution sick!
+W=BROK
+C1A=STUPID
+
+T=Oh oh... I already took the spare I had...
+W=HYENA
+C2A=MEH
+
+T=I could swear I had one in the bar the other day, but where was it?
+W=HYENA
+C2A=THINK
+
+T=Yes, where?
+W=BROK
+C1A=SURPRISED
+
+T=Lemme think!
+W=HYENA
+
+#----------------------
+ID=PC21_240_HYENA2
+T=So?...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=HYENA
+C2A=THINK
+
+T=Hmm...
+W=HYENA
+
+#----------------------
+ID=PC21_240_FROG1
+T=Help! Puzzles needs a Toxout pill!
+W=BROK
+C1=BROK
+C1A=WORRIED
+C2=FROG
+C2A=NORMAL
+CONTEXT=After a challenge, Puzzles is pollution sick because he didn't get his daily pill
+
+T=How unfortunate.
+W=FROG
+
+T=...
+W=FROG
+
+T=So?
+W=BROK
+C1A=ANGRY
+
+T=Any solution?
+W=BROK
+
+T=He's a strong boy. He'll survive.
+W=FROG
+C2A=BUBBLES
+
+T=I wish I was as optimistic...
+W=BROK
+C1A=TIRED
+
+#----------------------
+ID=PC21_240_FROG2
+T=She won't help.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=FROG
+C2A=NORMAL
+
+
+#----------------------
+#	Story 250
+#----------------------
+ID=PC21_250_EXITVR
+T=Bubbles, what's the future look like for you?
+W=HYENA
+A=THINK
+C1=HYENA
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+CONTEXT=Bartenders discussing the future
+
+T=What brought this up?
+W=FROG
+
+T=We've been running this place for a while now. What's in store for us?
+W=HYENA
+TEN=PC21_250_BROK_COME
+
+T=I'm just wondering...
+W=HYENA
+C1A=NORMAL
+
+T=I'll do this until the day I die. I am too attached to this job.
+W=FROG
+
+T=Wow. That's...
+W=HYENA
+
+T=Realistic.
+W=FROG
+C2A=BUBBLES
+
+T=Me, I'd love to take an early retirement. Spend my days on the beach, drinking cocktails.
+W=HYENA
+C1A=CHEERFUL
+
+T='Jaw, don't confuse dreams and reality. Atlasia's beaches are dangerous and polluted.
+W=FROG
+C2A=NORMAL
+
+T=Sadly. But what if...
+W=HYENA
+C1A=MEH
+
+T=What about you, Brok?
+W=HYENA
+C1A=THINK
+C4=BROK
+C4A=THINK
+
+T=Hmm...
+W=BROK
+
+T=I see myself in a creaking rocking chair, like 90 years old.
+W=BROK
+C4A=HAPPY
+
+T=The dome would be gone and rendered useless because everyone could finally breathe normally.
+W=BROK
+
+T=I'd be living in a fully rebuilt Slums, so much so that we wouldn't call it that anymore!
+W=BROK
+
+T=And you call me a dreamer!
+W=HYENA
+C1A=CHEERFUL
+
+T=What a utopia! Ha ha!
+W=HYENA
+TEN=PC21_EXITVR_OVER_FORCE
+
+
+#--------------------------------------
+#	Arcade machine
+#--------------------------------------
+ID=PC21_ARCADEMACHINE1
+T=Hey! That's new!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+CONTEXT=A new arcade machine installed in the bar
+
+T=Yeah! A fan made this!
+W=HYENA
+C2A=CHEERFUL
+
+T=Pretty cool, huh?
+W=HYENA
+TEN=PC21_ARCADEMACHINE_DISPLAY
+
+###################################################################################################################
+###################################################################################################################
+#										BOSS SCENES
+###################################################################################################################
+###################################################################################################################
+
+ID=PC21_BOSS1_UNLOCKED
+T=Hey croc, congrats on beating the beginner challenges!
+W=HYENA
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=CHEERFUL
+CONTEXT=After winning all the challenges in novice category
+
+T=Thanks! That was... a piece of cake!
+W=BROK
+C1A=HAPPY
+
+T=Well, duh! That's the novice category.
+W=HYENA
+C2A=THINK
+
+T=Oh, erm... right...!
+W=BROK
+C1A=TIRED
+
+T=Well, what do I win?
+W=BROK
+C1A=THINK
+
+T=You've been challenged to a duel!
+W=HYENA
+C2A=CHEERFUL
+
+T=A challenger?!
+W=BROK
+C1A=SURPRISED
+
+T=Yep! He's waiting over there!
+W=HYENA
+TEN=PC21_BOSS1_UNLOCKED_WALK
+
+
+#----------------------
+
+ID=PC21_BOSS1_UNLOCKED2
+T=Pretty impressive, man! How long have you been fighting?
+W=CLINT
+C1=BROK
+C1A=THINK
+C2=CLINT
+C2A=NORMAL
+CONTEXT=First time meeting Clint, who is Ott's dad
+
+T=Well...
+W=BROK
+
+T=Oh, sorry! I just realized, I've never given you my name.
+W=CLINT
+C2A=THINK
+
+T=I'm Clint!
+W=CLINT
+C2A=HAPPY
+
+T=I used to be a boxer years ago.
+W=CLINT
+C2A=NORMAL
+
+T=Brok. And really? I used to be a boxer too.
+W=BROK
+C1A=MEH
+
+T=Oh yeah? That just confirms what I was thinking!
+W=CLINT
+C2A=THINK
+
+T=Huh?
+W=BROK
+C1A=THINK
+
+T=Never mind. Let's fight!
+W=CLINT
+C2A=COCKY
+TEN=PC21_BOSS1_STARTCHOICE
+
+#----------------------
+
+ID=PC21_BOSS1_LETSGO
+T=Here goes nothing!
+W=CLINT
+C1=BROK
+C1A=READY
+C2=CLINT
+C2A=COCKY
+TEN=PC21_BOSS1_YES
+
+#----------------------
+
+ID=PC21_BOSS1_WAIT
+T=Don't make me wait! I'm excited for this!
+W=CLINT
+C1=BROK
+C1A=MEH
+C2=CLINT
+C2A=HAPPY
+TEN=PC21_BOSS1_NO
+
+#----------------------
+
+ID=PC21_BOSS1_LOSE
+T=Ha ha, I won!
+W=CLINT
+C1=BROK
+C1A=TIRED
+C2=CLINT
+C2A=HAPPY
+
+T=You know what, Brok? I'll give you another chance!
+W=CLINT
+
+T=Just poke me when you wanna try again.
+W=CLINT
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BOSS1_TRYAGAIN
+T=Ready?
+W=CLINT
+C1=BROK
+C1A=READY
+C2=CLINT
+C2A=COCKY
+TEN=PC21_BOSS1_STARTCHOICE
+
+
+#----------------------
+
+ID=PC21_BOSS1_WIN
+T=Ooof, you're good!
+W=CLINT
+C1=BROK
+C1A=HAPPY
+C2=CLINT
+C2A=MEH
+
+T=That was like going back to the old days!
+W=CLINT
+C2A=THINK
+
+T=Even more so, since this isn't our first fight.
+W=CLINT
+C2A=HAPPY
+
+T=Huh?
+W=BROK
+C1A=THINK
+
+T=Gonna settle myself in. Give me a shout when you want to talk!
+W=CLINT
+TEN=PC21_BOSS1_AFTERMOVE
+
+
+
+#----------------------
+
+ID=PC21_CLINT_HIT1
+T=Woah! If you wanna duel, just tell me!
+W=CLINT
+C1=BROK
+C1A=STUPID
+C2=CLINT
+C2A=SURPRISED
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+CONTEXT=Hitting Clint
+
+
+#----------------------
+
+ID=PC21_CLINT_HIT2
+T=Hey, not here, Brok.
+W=CLINT
+C1=BROK
+C1A=CONFUSED
+C2=CLINT
+C2A=ANGRY
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BOSS2_UNLOCKED
+T=Ha! I'm on a roll today!
+W=BROK
+C1=BROK
+C1A=COCKY
+CONTEXT=After winning the intermediate challenges
+
+T=These were tougher but nothing I can't handle.
+W=BROK
+
+T=Excuse me sir.
+W=IGUANA
+C2=IGUANA
+C2A=NORMAL
+TEN=PC21_BOSS2_UNLOCKED_LOOK
+
+T=Huh...? Oh. Hello!
+W=BROK
+C1A=THINK
+TEN=PC21_BOSS2_UNLOCKED_WALK
+
+T=Let me introduce mys...
+W=IGUANA
+SKIPEND=1
+
+T=I'm Brok, nice to meet ya!
+W=BROK
+C1A=HAPPY
+
+T=I know! Very spectacular!
+W=IGUANA
+C2A=JOY
+
+T=Fan of the spectacle, then?
+W=BROK
+
+T=Ha ha! You can say that. But I practice, myself.
+W=IGUANA
+C2A=HAPPY
+
+T=Which is why I requested a duel against you!
+W=IGUANA
+
+T=Huh?! You mean...
+W=BROK
+C1A=SURPRISED
+
+T=Oh, don't you dare give me that look.
+W=IGUANA
+C2A=ANGRY
+
+T=You think women don't stand a chance against a tough guy like you?
+W=IGUANA
+
+T=No, I'm just surpr-
+W=BROK
+C1A=CONFUSED
+SKIPEND=1
+
+T=Well, croc, I'm a wrestler-in-training. I can handle you!
+W=IGUANA
+C2A=HAPPY
+
+T=I said I wouldn't back down from a challenge. You're not an exception, lady!
+W=BROK
+C1A= MOCK
+
+T=Wonderful!
+W=IGUANA
+
+T=So, ready?
+W=IGUANA
+TEN=PC21_BOSS2_STARTCHOICE
+
+
+#---------------------------------
+ID=PC21_BOSS2_LOSE
+T=Yeeeah! I won, I won!
+W=IGUANA
+C1=BROK
+C1A=TIRED
+C2=IGUANA
+C2A=JOY
+CONTEXT=After Ivy boss fight, lose
+
+T=I... just didn't put all my strength into it.
+W=BROK
+
+T=Riiight.
+W=IGUANA
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------------
+ID=PC21_BOSS2_TRYAGAIN
+T=Wanna have another shot?
+W=IGUANA
+C1=BROK
+C1A=MEH
+C2=IGUANA
+C2A=HAPPY
+TEN=PC21_BOSS2_STARTCHOICE
+
+
+#---------------------------------
+ID=PC21_BOSS2_WIN
+T=Sorry, dad. I lost this time.
+W=IGUANA
+C1=BROK
+C1A=READY
+C2=IGUANA
+C2A=EMBARASSED
+C3=HYENA
+C3A=MEH
+CONTEXT=After Ivy boss fight, win
+
+T=Looks like you gave my daughter some trouble!
+W=HYENA
+
+T=Your daughter? I didn't realize...
+W=BROK
+C1A=SURPRISED
+
+T=You bet! She takes after her mother.
+W=HYENA
+C3A=CHEERFUL
+
+T=Oh, come on. I wouldn't be here if not for you teaching me.
+W=IGUANA
+C2A=HAPPY
+
+T=Ivy, tell me you'll stay for a while!
+W=HYENA
+C3A=NORMAL
+
+T=Just a bit. My part-time job starts in an hour.
+W=IGUANA
+C2A=THINK
+TEN=PC21_BOSS2_AFTERMOVE
+
+
+#--------------------------------------
+#	Story right before last boss
+#--------------------------------------
+ID=PC21_290_EXITVR
+T=Hey, Brok!
+W=HYENA
+C1=BROK
+C1A=MAYBE
+C2=HYENA
+C2A=NORMAL
+CONTEXT=After winning all the hard challenges (right before last boss)
+
+T=Amazing job, man! I can't believe you're almost through!
+W=HYENA
+C2A=CHEERFUL
+
+T=I wasn't sure I could do it either, honestly...!
+W=BROK
+
+T=Well, congrats!
+W=HYENA
+
+T=But it's not over yet. Your last challenge is a secret!
+W=HYENA
+C2A=NORMAL
+
+T=If I had to bet... another duel?
+W=BROK
+C1A=MOCK
+
+T=Man, I won't spoil it for you!
+W=HYENA
+C2A=CHEERFUL
+
+T=Sounds exciting anyway!
+W=BROK
+
+T=Use the cabin when you're ready!
+W=HYENA
+TEN=ACTIVATE_CLICKERS
+
+
+
+#--------------------------------------
+#	When we win against Sharpteeth
+#--------------------------------------
+ID=PC21_BOSS3_WIN
+T=It... it's you, Sharpteeth! You're really here!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=SHARK
+C2A=SMUG
+CONTEXT=After winning boss fight against Sharpteeth
+
+T=I am, man.
+W=SHARK
+
+T=Or should I say...{name}!
+W=SHARK
+COMM=The player name will be added here. For voice acting just stop before saying the name.
+
+T=I... I...!
+W=BROK
+
+T=Take your time collecting your thoughts, man. ...Ooof, you've got iron in those fists...!
+W=SHARK
+C2A=CONFIDENT
+
+T=Lemme sit. I'm not so young anymore, need to recover after this.
+W=SHARK
+
+T=Oh... sure!
+W=BROK
+C1A=HAPPY
+TEN=PC21_BOSS3_SIT
+
+#--------------------------------------
+ID=PC21_BOSS3_SHARP
+T=You got me good!
+W=SHARK
+C1=BROK
+C1A=HAPPY
+C2=SHARK
+C2A=SMUG
+CONTEXT=Talking with Sharpeeth on a table
+
+T=Guess so. You were so slippery, at first I thought I would never hit you!
+W=BROK
+
+T=That's one natural advantage for me!
+W=SHARK
+C2A=SNEAKY
+
+T=Not to undermine your performance, but I used to be faster.
+W=SHARK
+C2A=CONFIDENT
+
+T=I'm retired, although I still come once in a while to check on the new fighters.
+W=SHARK
+
+T=Few come this far, I was impressed!
+W=SHARK
+C2A=SMUG
+
+T=Tell me. What's your story?
+W=SHARK
+
+T=Well... when I was a boxer I heard about you so much.
+W=BROK
+
+T=I always wanted to face you, even when I knew I didn't have what it took.
+W=BROK
+C1A=READY
+
+T=Never thought I'd actually meet you after quitting the boxing scene.
+W=BROK
+C1A=HAPPY
+
+T=And that I would win, on top of that!
+W=BROK
+
+T=You never really quit though, right?
+W=SHARK
+
+T=Right.
+W=BROK
+
+T=The fight pits got closed, but then I found out about those VR thingies.
+W=BROK
+C1A=MEH
+
+T=They're a suitable replacement to prevent real injuries.
+W=SHARK
+C2A=CONFIDENT
+
+T=But I still miss the days where you could really feel your opponent under your hands.
+W=SHARK
+
+T=Agreed.
+W=BROK
+TEN=PC21_BOSS3_HYENACOMES
+
+#--------------------------------------
+ID=PC21_BOSS3_SHARP2
+T=Heyyyy, Sharp!
+W=HYENA
+C1=BROK
+C1A=MEH
+C2=SHARK
+C2A=SMUG
+C3=HYENA
+C3A=CHEERFUL
+CONTEXT=Talking with Sharpeeth on a table
+
+T=What's cooking, 'Jaw?
+W=SHARK
+
+T=Here, your favorite. Supreme delice of worms!
+W=HYENA
+
+T=Wooh, nice!
+W=SHARK
+C2A=CONFIDENT
+
+T=And for our winner...
+W=HYENA
+
+T=A delicious antburger!
+W=HYENA
+
+T=Hey! I thought you didn't have any!
+W=BROK
+C1A=HAPPY
+
+T=Yeah, well... I went out for a minute to get one from the closest vending machine. Ha!
+W=HYENA
+
+T=That's the least I could do for my current favorite fighter!
+W=HYENA
+
+T=Much appreciated!
+W=BROK
+
+T=You guys are friends?
+W=BROK
+C1A=THINK
+
+T=We sparred for a while. It feels like another life now.
+W=SHARK
+C2A=SMUG
+
+T=It was.
+W=HYENA
+C3A=NORMAL
+
+T=So! What do you think, Brok?
+W=HYENA
+C3A=CHEERFUL
+
+T=Hmm... Very good! (eats)
+W=BROK
+C1A=HAPPY
+
+T=The fight or the food?
+W=HYENA
+C3A=THINK
+
+T=Both!
+W=BROK
+
+T=You... spilled some Tomatoze on your shirt.
+W=SHARK
+C2A=SURPRISED
+
+T=Oh yeah. (Slurp)
+W=BROK
+C1A=MOCK
+
+T=Fixed!
+W=BROK
+C1A=HAPPY
+
+T=Ha! You're one of a kind, supercroc.
+W=HYENA
+C3A=CHEERFUL
+
+T=Be right back!
+W=HYENA
+C3A=NORMAL
+TEN=PC21_BOSS3_HYENALEAVES
+
+#--------------------------------------
+ID=PC21_BOSS3_SHARP3
+T=I didn't remember you had such an accent. Where are you from?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=SHARK
+C2A=SMUG
+
+T=Droll, the "village behind the sea".
+W=SHARK
+
+T=We had waterfalls as far as the eye could see.
+W=SHARK
+
+T=Ahhh, I miss it. Makes me regret my choice, sometimes.
+W=SHARK
+C2A=CONFIDENT
+
+T=Whaddya mean?
+W=BROK
+
+T=Autarchism, of course.
+W=SHARK
+
+T=When that ultimatum came down, I was in Atlasia for a tournament.
+W=SHARK
+C2A=SNEAKY
+
+T=Like all foreigners, I was offered to leave Atlasia or remain forever.
+W=SHARK
+C2A=CONFIDENT
+
+T=I chose to stay.
+W=SHARK
+
+T=Why?
+W=BROK
+C1A=SURPRISED
+
+T=What could possibly be better here than your homeland?
+W=BROK
+
+T=People.
+W=SHARK
+C1A=THINK
+C2A=SMUG
+
+T=My city was beautiful and the citizens wonderful, but we were severely lacking resources.
+W=SHARK
+
+T=I wanted more from life than being stuck with the same few hundred people around me, day-in and day-out forever.
+W=SHARK
+
+T=I couldn't imagine never coming back to Atlasia. I was at the top of my career, and there was so much more to experience here.
+W=SHARK
+C2A=SNEAKY
+
+T=That was short lived, though. Soon after, all fight pits were banned.
+W=SHARK
+C2A=CONFIDENT
+
+T=Atlasia made its choice, and I was forced to follow along.
+W=SHARK
+
+T=So, I retired to make a new life for myself...and remained secretly in the Slums.
+W=SHARK
+C2A=SMUG
+
+T=I didn't want my former fame to hound me. That chapter of my life was over.
+W=SHARK
+
+T=Time doesn't spare anyone. Nowadays, I have different priorities.
+W=SHARK
+
+T=In particular, I am helping with a team to fix the radioactive leak issue.
+W=SHARK
+C2A=SERIOUS
+
+T=What? A radioactive leak?
+W=BROK
+C1A=CONFUSED
+
+T=Yeah. More precisely, Chloridum 13.
+W=SHARK
+
+T=On the east side of Atlasia, we've identified a number of cracks in the nuclear waste area.
+W=SHARK
+
+T=That's not far from where I live!
+W=BROK
+C1A=DOWN
+
+T=It's getting worse... Spreading.
+W=SHARK
+
+T=At this rate, the contamination will reach the inhabited sectors in a few months.
+W=SHARK
+
+T=Great, more worries...
+W=BROK
+C1A=HEARTBROKEN
+
+T=Sharks are naturally more resistant to Chloridum 13, so that's in part why I'm contributing.
+W=SHARK
+
+T=I'm no scientist. None of us really are.
+W=SHARK
+
+T=But we're doing what we can to build a dry screed, big enough to cover up all the area.
+W=SHARK
+
+T=I had no idea! I'll help ya!
+W=BROK
+C1A=MAYBE
+
+T=Oh no, I'm sure you're already busy with your own issues.
+W=SHARK
+C2A=SMUG
+
+T=But you can pay us a visit someday!
+W=SHARK
+C2A=CONFIDENT
+
+T=Sure thing!
+W=BROK
+C1A=HAPPY
+
+T=Actually... we don't know what the cause of those cracks is.
+W=SHARK
+C2A=SERIOUS
+
+T=Even stranger, I could swear I saw a Tribot squeeze itself through one of the cracks.
+W=SHARK
+ 
+T=It was late at night, and I still wonder if I was hallucinating.
+W=SHARK
+
+T=Tribots have the ability to compress their bodies to take up less space, but it's not something they usually do on their own.
+W=SHARK
+
+T=So why would they? Did someone order them to go there?
+W=SHARK
+
+T=I have no idea.
+W=SHARK
+C2A=SMUG
+
+T=Hmm...
+W=BROK
+C1A=THINK
+
+T=Anyway! Sorry for my blabbering.
+W=SHARK
+
+T=I don't want to bring the mood down any further!
+W=SHARK
+
+T=Congrats, champ! That was fun!
+W=SHARK
+C2A=SNEAKY
+
+T=I wish I could stay longer, but...
+W=SHARK
+C2A=CONFIDENT
+
+T=My team needs me.
+W=SHARK
+
+T=Understood.
+W=BROK
+C1A=MEH
+
+T=Thanks for the fight, hope we meet again!
+W=BROK
+C1A=HAPPY
+
+T=I'm sure we will!
+W=SHARK
+TEN=PC21_BOSS3_LEAVE
+
+
+#--------------------------------------
+ID=PC21_BOSS3_END
+T=Hey... oh, Sharp is already gone?
+W=HYENA
+C1=BROK
+C1A=MEH
+C2=HYENA
+C2A=NORMAL
+CONTEXT=After Sharpteeth leaves, near end of the game
+
+T=Afraid so!
+W=BROK
+
+T=That's fine. Time for my speech!
+W=HYENA
+
+T=You've now completed all the challenges! Congrats!
+W=HYENA
+C2A=CHEERFUL
+
+T=I... I'm done?
+W=BROK
+C1A=SURPRISED
+
+T=That's it?
+W=BROK
+C1A=THINK
+
+T=Well, what did you expect?
+W=HYENA
+C2A=THINK
+
+T=Dunno... to end with a bang?
+W=BROK
+C1A=WONDER
+
+T=Ha!
+W=HYENA
+C2A=CHEERFUL
+
+T=Who said anything about ending? It's a new beginning for you!
+W=HYENA
+
+T=Enter the VR cabin again and select the final challenge, you'll get a small surprise!
+W=HYENA
+
+T=Oh... okay!
+W=BROK
+C1A=THINK
+
+T=I will!
+W=BROK
+C1A=READY
+TEN=PC21_EXITVR_RESETSCENE
+
+
+
+
+
+
+###################################################################################################################
+###################################################################################################################
+#												ENDING
+###################################################################################################################
+###################################################################################################################
+
+
+#----------------------
+
+ID=PC21_ENDING_FINAL
+T=There he is!
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+CONTEXT=The enemies arrived for real in the bar
+
+T=You're done for, man!
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=Those... gentlemen burst in here.
+W=HEDGEHOG
+C1=BROK
+C1A=SURPRISED
+C2=HEDGEHOG
+C2A=THINK
+
+T=Wow. You guys came here? For me?!
+W=BROK
+
+T=Dang right we did!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=I'll teach ya pain!
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Why?
+W=BROK
+C1A=THINK
+
+T=I was the champ of crushers. You've stained my reputation!
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=No one boxes me out!
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=I wanna feel your skin under my claws!
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Chicks don't think I'm so hensome anymore!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Oookay. Well...
+W=BROK
+
+T=If it's a fight you want... you're gonna get one!
+W=BROK
+C1A=READY
+
+T=Okay. Just this once, I'll deactivate the Anti-Scuffle system.
+W=HYENA
+C3=HYENA
+C3A=MEH
+
+T=You better not destroy the furniture. Whoever does will pay for it!
+W=HYENA
+TEN=PC21_330_CLINTCOMES
+
+T=I'll help. I don't like the tone of these guys.
+W=CLINT
+C4=CLINT
+C4A=ANGRY
+
+T=Thanks, man!
+W=BROK
+
+T=Can I join? Can I?!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=No.
+W=HYENA
+C3=HYENA
+C3A=MEH
+
+T=Aww...
+W=HEDGEHOG
+C2A=DOWN
+TEN=PC21_330_EXITVR_STARTFIGHT
+
+#----------------------
+
+ID=PC21_ENDING_FINAL3
+T=Aww aww aww...
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+CONTEXT=Brok won against the enemies
+
+T=Defeated again...
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=He broke my nail...
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=(Cries) Ma... I need my mama...
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=It's okay big bear. No need to cry.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Well, you asked for it!
+W=BROK
+C1=BROK
+C1A=MEH
+
+T=(Pants) You all put up a good fight, if that's any consolation.
+W=CLINT
+C2=CLINT
+C2A=NORMAL
+
+T=But I was barely helpful. Brok did all the work.
+W=CLINT
+C2A=THINK
+TEN=PC21_330_ENEMIESBACKUP
+
+T=Guys. Remember what we said before coming here.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T="If we can't defeat him, we'll crown him"
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=(Sniffles) No choice then.
+BNAMESP=BEAR
+BVOICESP=BEAR
+TEN=PC21_ENDING_FINAL_CHANGEMUSIC
+
+
+#----------------------
+
+ID=PC21_ENDING_FINAL4
+T=All: You're the ultimate fighter!
+
+T=Say what?
+W=BROK
+C1=BROK
+C1A=CONFUSED
+
+T=Congrats! You've earned it!
+W=CLINT
+C2=CLINT
+C2A=HAPPY
+
+T=For now we lack skills.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=But someday...
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=We'll train here until we're ready!
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=New clients. The best gift I could hope for!
+W=HYENA
+C3=HYENA
+C3A=CHEERFUL
+TEN=PC21_END_PICTURE
+
+
+###################################################################################################################
+###################################################################################################################
+#										FREE TALK TO HYENA
+###################################################################################################################
+###################################################################################################################
+
+ID=PC21_HYENA_WELCOME1
+T=Hey, what can I do for you?
+W=HYENA
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+TEN=PC21_HYENA_CHOICES
+IT=1
+CONTEXT=Free talk with Tenderjaw
+
+#---------------------------------
+ID=PC21_HYENA_WELCOME2
+T=What will it be?
+W=HYENA
+C1=BROK
+C1A=WONDER
+C2=HYENA
+C2A=CHEERFUL
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#---------------------------------
+ID=PC21_HYENA_EXIT1
+T=Gotta go!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=HYENA
+C2A=CHEERFUL
+
+#---------------------------------
+ID=PC21_HYENA_EXIT2
+T=Stay around!
+W=HYENA
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+
+
+#---------------------------------
+ID=PC21_HYENA_HIT1
+T=Too bad for you. I've built up a resistance to pain over the years.
+W=HYENA
+C1=BROK
+C1A=WONDER
+C2=HYENA
+C2A=MEH
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+CONTEXT=Trying to hit Tenderjaw
+
+#---------------------------------
+ID=PC21_HYENA_HIT2
+T=Don't think you're the first one to try!
+W=HYENA
+C1=BROK
+C1A=WONDER
+C2=HYENA
+C2A=CHEERFUL
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------------
+ID=PC21_HYENA_HIT3
+T=I told ya. I'm retired.
+W=HYENA
+C1=BROK
+C1A=STUPID
+C2=HYENA
+C2A=MEH
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------------
+ID=PC21_HYENA_THINK1
+T=(If he was a fighter, I might have encountered him before...)
+W=BROK
+A=THINK
+MOOD=THINK
+CONTEXT=Think about Tenderjaw
+
+T=(But I can't be sure. Ah...losing my memory is dreadful.)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#---------------------------------
+ID=PC21_HYENA_HELP1
+T=So, those sea coppers...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+CONTEXT=Free talk with Tenderjaw
+COMM=Brok misheard and/or forgot the term.
+
+T=C-Tokens.
+W=HYENA
+C2A=CHEERFUL
+
+T=Yeah, those. How do I get some?
+W=BROK
+
+T=Win challenges.
+W=HYENA
+
+T=Victory'll get you a lot of C-Tokens, but you can also grind a few from destroying enemies, crates and more.
+W=HYENA
+C2A=NORMAL
+
+T=Even from already completed challenges.
+W=HYENA
+
+T=You can also win some with Puzzles' extras and Bubble's wheel.
+W=HYENA
+C2A=THINK
+
+T=Puzzles? Bubbles?
+W=BROK
+
+T=Our codenames.
+W=HYENA
+C2A=CHEERFUL
+
+T=Did you think we'd use our real names, Brok?
+W=HYENA
+C2A=THINK
+
+T=Right... Hey...!
+W=BROK
+
+T=How d'ya know me?!
+W=BROK
+C1A=SURPRISED
+
+T=I have my little secrets!
+W=HYENA
+C2A=CHEERFUL
+
+T=Anyway, I'm Tenderjaw. Hope you like this joint of ours.
+W=HYENA
+C2A=NORMAL
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_HELP2
+T=This is kinda tough!
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=HYENA
+C2A=NORMAL
+C3=FROG
+C3A=BUBBLES
+
+T=I know! I designed these challenges!
+W=HYENA
+C2A=CHEERFUL
+
+T=(What... taking all the credit from us again, naturally...)
+W=FROG
+MOOD=THINK
+C3A=MEH
+
+T=The best you can do is...
+W=HYENA
+C2A=THINK
+SKIPEND=1
+
+T=To skip them.
+W=FROG
+
+T=I mean, yes, you can... if you're ready to fork out a hefty number of your hard-earned C-Tokens.
+W=HYENA
+C2A=MEH
+
+T=Just lower the difficulty in the options. Like all losers do.
+W=FROG
+C3A=BUBBLES
+
+T=(Way to go and make me feel insecure about asking...)
+W=BROK
+MOOD=THINK
+C1A=DOWN
+
+T=Winners, however, use smarter methods like buying V.R. food from the sink.
+W=FROG
+C3A=NORMAL
+
+T=Select it from the challenges menu. They're one-time use, but you keep it until you win the challenge.
+W=FROG
+
+T=Some challenges are also easier in co-op with a friend.
+W=FROG
+
+T=You have friends, right?
+W=FROG
+C3A=BUBBLES
+
+T=Well, yeah, of course!
+W=BROK
+C1A=THINK
+
+T=You are!
+W=BROK
+C1A=MOCK
+
+T=Ah! Nice try. But you won't butter us up with pretty words.
+W=HYENA
+C2A=CHEERFUL
+
+T=Seriously man, don't worry about losing a lot. That's normal.
+W=HYENA
+C2A=NORMAL
+
+T=Don't go busting our hardware because you died ten times in a row! That's life.
+W=HYENA
+
+T=Keep at it! Have faith in yourself!
+W=HYENA
+C2A=CHEERFUL
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_HELP3
+T=How do I upgrade category?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=HYENA
+C2A=NORMAL
+C3=FROG
+C3A=NORMAL
+
+T=There are three. Novice, Intermediate and Professional.
+W=HYENA
+
+T=Complete all challenges in the category to progress to the next one.
+W=HYENA
+
+T=Skip the ones you're stuck on when you're hopeless.
+W=FROG
+C3A=BUBBLES
+
+T=A special boss awaits you in the final challenge.
+W=HYENA
+C2A=CHEERFUL
+
+T=Oooooh, exciting!
+W=BROK
+C1A=READY
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_HELP4
+T=I thought I was strong, but...
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=HYENA
+C2A=NORMAL
+
+T=My experience level isn't making any difference?
+W=BROK
+
+T=You're right. Whatever you learned out there isn't going to help you here.
+W=HYENA
+
+T=Forget EXP. These challenges require pure skills.
+W=HYENA
+
+T=Only the best can beat them all, ha ha!
+W=HYENA
+C2A=CHEERFUL
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_WELCOMEFIRST
+T=I don't get it. Why are you all hiding here?
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=HYENA
+C2A=THINK
+
+T=People are suffering every day, in this very street. Criminals are everywhere!
+W=BROK
+C2A=MEH
+
+T=And every day, these strong fighters you've got are wasting their time on virtual stuff when the right fight's out there!
+W=BROK
+C1A=OPPOSITE
+
+T=First of all, running a business is not hiding.
+W=HYENA
+
+T=Second, read this.
+W=HYENA
+
+T=Err...
+W=BROK
+C1A=THINK
+
+T="Please stop using the sink to..."
+W=BROK
+SKIPEND=1
+
+T=No, not that! The big letters!
+W=HYENA
+C2A=EMBARASSED
+
+T=Oh. "We don't get involved."
+W=BROK
+
+T=Our motto.
+W=HYENA
+C2A=MEH
+
+T=That's ridiculous.
+W=BROK
+C1A=SURPRISED
+
+T=We all do what we have to survive out here, man.
+W=HYENA
+
+T=Even if we wanted to, this place is fully soundproof. No one can hear us, and we can't hear the street above either.
+W=HYENA
+
+T=If anything, being this far underground has helped people stay clear from the Haze.
+W=HYENA
+C2A=NORMAL
+
+T=That alone has probably saved more folks than you might think.
+W=HYENA
+
+T=If you say so. I, on the other hand, prefer to act!
+W=BROK
+C1A=OPPOSITE
+
+T=Good for you, supercroc.
+W=HYENA
+C2A=CHEERFUL
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+
+#----------------------
+
+ID=PC21_HYENA_WELCOMESECOND
+T=Ya know, for a "brawl bar" I was expecting more... brawling among the customers.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+
+T=First, this is the "CounterAttack Bar". You must have imagined that name!
+W=HYENA
+C2A=THINK
+
+T=Second... they do.
+W=HYENA
+C2A=NORMAL
+
+T=We have a rule for that. It is forbidden to directly attack other customers.
+W=HYENA
+C2A=MEH
+
+T=If you want a fight with someone, you gotta request a duel.
+W=HYENA
+C2A=NORMAL
+
+T=A duel?
+W=BROK
+C1A=WONDER
+
+T=Yep. If both fighters accept, I set their stage in our VR cabins to give us a good show! Hah!
+W=HYENA
+
+T=In the VR cabin? It'd be better in real life.
+W=BROK
+
+T=Not that I disagree, but I can't have this place turned into a wreck, ya know?
+W=HYENA
+
+T=Who knows, maybe someone will notice you and ask for a duel!
+W=HYENA
+
+T=Oooh, I hope someone does. I won't back down from any challenge!
+W=BROK
+C1A=READY
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_CHALLENGER1
+T=Who are those new challengers?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+
+T=The gang of four? Yeah, they're V.R. regulars from the Slums.
+W=HYENA
+C2A=THINK
+
+T=There's Boyd, the macho rooster with a mechanical arm. 33 years old.
+W=HYENA
+C2A=NORMAL
+
+T=Cocky, spunky and arrogant, his good looks can't hide the fact he's a common punk. Very easy to taunt him into a fight!
+W=HYENA
+
+T=Not very dangerous. Just watch out for his extendable arm. If you get grabbed, there's no escaping it.
+W=HYENA
+
+T=Some say it's a fake prosthetic and his real arm is inside.
+W=HYENA
+C2A=THINK
+
+T=Don't tell him that, or you'll get lectured for hours on how and why he replaced it!
+W=HYENA
+
+T=Worse, you'll get a different story each time. No one's really sure why!
+W=HYENA
+C2A=EMBARASSED
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_CHALLENGER2
+T=Who's the big armadillo?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+
+T=Matt, a delivery guy in his forties. Also a jerk.
+W=HYENA
+
+T=Mail or goods, he's the fastest at his job, rolling while pulling a back-truck at record speed!
+W=HYENA
+
+T=Quite the achievement...! As long as wreckage isn't a concern to you.
+W=HYENA
+C2A=MEH
+
+T=He's his own boss in the Slums and business keeps coming anyway, so he couldn't care less.
+W=HYENA
+
+T=During battle, his front shield combined with his own shell provide full protection.
+W=HYENA
+C2A=NORMAL
+
+T=Use your most powerful moves on his shield until it breaks, but be careful.
+W=HYENA
+
+T=He can't be stunned while he still has his shield, and can easily strike back against any attacks.
+W=HYENA
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+
+#----------------------
+
+ID=PC21_HYENA_CHALLENGER3
+T=That bear looks tough!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=HYENA
+C2A=NORMAL
+
+T=A real killer! Good thing for you this is V.R.!
+W=HYENA
+C2A=MEH
+
+T=His name's Rok, age unknown.
+W=HYENA
+
+T=He doesn't communicate much, and no one has survived to tell his story.
+W=HYENA
+C2A=THINK
+
+T=You're joking, right?
+W=BROK
+C1A=SURPRISED
+
+T=Who knows!
+W=HYENA
+
+T=Some say he was locked up in some distant country, that he came back for revenge, having mutated, which gave him those huge claws.
+W=HYENA
+C2A=MEH
+
+T=Personally, I think he just let them grow long like a lady! Ha!
+W=HYENA
+C2A=CHEERFUL
+
+T=Anyway, better not let him grab you. That's practically a death sentence!
+W=HYENA
+C2A=THINK
+
+T=A wild, vicious beast, I tell you!
+W=HYENA
+C2A=NORMAL
+
+T=Part of me would love to fight him in real life. The more danger, the greater the fight!
+W=BROK
+C1A=READY
+
+T=Ha! I know the feeling. Life or death situations really bring out the best in a fighter, don't they?
+W=HYENA
+C2A=CHEERFUL
+
+T=But hey, maybe he's a softie deep, deep inside?
+W=HYENA
+C2A=THINK
+
+T=You can't know until you try!
+W=HYENA
+C2A=CHEERFUL
+
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_CHALLENGER4
+T=Glad to have some boxing competition!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=HYENA
+C2A=NORMAL
+
+T=Sly's not just anyone. He's a 37 year old, former pro boxer like you.
+W=HYENA
+
+T=Unlike you though, he kept training, looking for every opportunity to push himself further as a fighter.
+W=HYENA
+C2A=THINK
+
+T=Hey! I still train. I even have a punching bag at home!
+W=BROK
+C1A=READY
+
+T=Heh. Sure, man.
+W=HYENA
+C2A=CHEERFUL
+
+T=Anyway, Sly's not the most approachable person, socially-speaking, and that makes him all the more threatening.
+W=HYENA
+C2A=THINK
+
+T=Don't ever get caught up in his combo! It's so fast that you won't have time to counter or block it.
+W=HYENA
+
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_CHALLENGER5
+T=Tell me something about Mister Warthog?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+
+T=Oh, Clint! He's a regular.
+W=HYENA
+C2A=CHEERFUL
+
+T=Just a Slums citizen trying his best to earn money for his family.
+W=HYENA
+C2A=NORMAL
+
+T=Also a former boxer, but you may have guessed that from his fighting style.
+W=HYENA
+
+T=He lost his boxing gear a while ago and refuses to replace them.
+W=HYENA
+C2A=THINK
+
+T=I've heard he's a father, and his son's a mixed breed!
+W=HYENA
+
+T=Can you imagine that? A cross-breed between him and an otter!
+W=HYENA
+
+T=Right! Must be something...
+W=BROK
+
+#TODO Remove
+T=...huh.
+W=BROK
+C1A=WONDER
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_CHALLENGER6
+T=I didn't expect your own daughter to challenge me!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=HYENA
+C2A=NORMAL
+
+T=What can I say? On my end, I didn't expect her to follow in my footsteps.
+W=HYENA
+C2A=CHEERFUL
+
+T=Usually kids do everything they can to stand out from their parents.
+W=HYENA
+C2A=THINK
+
+T=That's nice.
+W=BROK
+
+T=Not her attacks, though! Ouch!
+W=BROK
+C1A=TIRED
+
+T=Specifically for you, I told her not to hold back! 
+W=HYENA
+C2A=CHEERFUL
+
+T=Thanks... I guess...!
+W=BROK
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_CHALLENGER7
+T=You know, I almost thought Sharpteeth the Thief was just a legend, but he's here, in the flesh!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=HYENA
+C2A=CHEERFUL
+
+T=Yes! Few challengers reach the very top.
+W=HYENA
+
+T=He occasionally comes out of retirement for the ones who do. Great job!
+W=HYENA
+
+T=I can't believe I beat him!
+W=BROK
+
+T=Very impressive work! You should be proud of yourself. He's a long-time friend of mine, and I never would've been able to beat him.
+W=HYENA
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_FOOD1
+T=What do you want to eat?
+W=HYENA
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+
+T=Hmm...
+W=BROK
+
+T=I could use an antburger right now! With extra Tomatoze sauce!
+W=BROK
+C1A=HAPPY
+
+T=In a restaurant?!
+W=HYENA
+C2A=THINK
+
+T=Well... yeah?
+W=BROK
+C1A=MAYBE
+
+T=I'm afraid that kind of industrial-packaged, consumer product can only get pooped out by machines!
+W=HYENA
+
+T=Heyyyy, I love those!
+W=BROK
+C1A=ANGRY
+
+T=But if you're desperate, our virtual food sink can provide you some. For a few C-Tokens.
+W=HYENA
+C2A=NORMAL
+
+T=How about a real drink instead?
+W=HYENA
+C1A=THINK
+
+T=What kind?
+W=BROK
+
+T=We've got plenty of flavored, alcohol-free cocktails.
+W=HYENA
+
+T=Actually, that's all we have, other than sodas...
+W=HYENA
+C2A=EMBARASSED
+
+T=Here, first one's free!
+W=HYENA
+C2A=NORMAL
+TEN=PC21_HYENA_FOOD_CHOICE
+
+
+#----------------------
+
+ID=PC21_HYENA_FOOD_NO
+T=Maybe later...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=HYENA
+C2A=NORMAL
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_FOOD_YES
+T=(Glurp)
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=HYENA
+C2A=NORMAL
+SOUND=item_eat
+
+T=Not bad!
+W=BROK
+
+T=What's the effect?
+W=BROK
+C1A=THINK
+
+T=They taste good.
+W=HYENA
+
+T=That's all?!
+W=BROK
+
+T=Well, I guess the sugar makes you fatter!
+W=HYENA
+C2A=THINK
+
+T=Hmph... Not a good sale argument, man.
+W=BROK
+C1A=OPPOSITE
+
+T=It's a cocktail. What did you expect?
+W=HYENA
+C2A=EMBARASSED
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_FOOD2
+T=Crickethopper wings? Crabcake? Grub fillet?
+W=HYENA
+C1=BROK
+C1A=CONFUSED
+C2=HYENA
+C2A=NORMAL
+COMM=Cricket + grasshopper mix
+
+T=Can't believe I'm saying this but...
+W=BROK
+
+T=Right now, I'm hungry for action!
+W=BROK
+C1A=READY
+
+T=Ha-ha! In that case, I'll show you our V.R. food products.
+W=HYENA
+C2A=NORMAL
+TEN=PC21_SINK_STORE
+
+#----------------------
+
+ID=PC21_HYENA_FOOD3
+T=Here's our V.R. food catalogue!
+W=HYENA
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+TEN=PC21_SINK_STORE
+
+
+#----------------------
+
+ID=PC21_HYENA_HIMSELF1
+T=Your jaw...
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=HYENA
+C2A=MEH
+
+T=Everyone's gotta ask.
+W=HYENA
+
+T=Yeah, I lost it.
+W=HYENA
+
+T=Lost?
+W=BROK
+C1A=WONDER
+
+T=Well... one day I woke up, and it wasn't there!
+W=HYENA
+C2A=EMBARASSED
+
+T=What...? But...
+W=BROK
+C1A=CONFUSED
+
+T=Ha! No way! Don't tell me you're buying into this!
+W=HYENA
+C2A=CHEERFUL
+
+T=I lost it after too many fights, of course. One in particular.
+W=HYENA
+C2A=NORMAL
+
+T=So broken and disjointed that it became easier to straight up replace it.
+W=HYENA
+C2A=MEH
+
+T=Amazing technology Drumers have, isn't it? Looks neat, don't you think?
+W=HYENA
+C2A=CHEERFUL
+
+T=Your story is similar.
+W=HYENA
+C2A=THINK
+
+T=You noticed...
+W=BROK
+C1A=MAYBE
+
+T=You had better luck than I did, though! Ha!
+W=HYENA
+C2A=CHEERFUL
+
+T=I'm still up and fighting!
+W=BROK
+C1A=READY
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_HIMSELF2
+T=So... you were a fighter... in the Drums?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HYENA
+C2A=NORMAL
+
+T=Right. Up until the Triangle suddenly outlawed fighting pits.
+W=HYENA
+
+T="Too violent, not safe!" Wretched Government!
+W=HYENA
+C1A=OPPOSITE
+C2A=MEH
+
+T=I saw the tragedy, but one individual should not have caused a full ban.
+W=HYENA
+
+T=To be fair, after my own jaw accident, I considered taking early retirement.
+W=HYENA
+C1A=THINK
+C2A=THINK
+
+T=Doesn't matter, though. I'll never forgive them...
+W=HYENA
+C2A=MEH
+
+T=The frustrating part is I don't even know who's to blame!
+W=HYENA
+
+T=So I did what I had to. I left the Drums, quit the job that I spent most of my life getting into.
+W=HYENA
+C2A=THINK
+
+T=Surveillance in the Slums is more limited, so my goal was to establish a new pit out here.
+W=HYENA
+
+T=But this isn't exactly a fight pit...
+W=BROK
+
+T=True. I changed my mind.
+W=HYENA
+C2A=MEH
+
+T=I realized the Slums needed more than fights.
+W=HYENA
+
+T=They needed a place to make friends. Somewhere to find food and shelter when needed.
+W=HYENA
+C2A=CHEERFUL
+
+T=A fighter's spirit, however, doesn't need a physical place to express itself.
+W=HYENA
+
+T=Everyone can enjoy our VR cabins, and they take up way less space!
+W=HYENA
+
+T=Isn't the Government aware?
+W=BROK
+C1A=WONDER
+
+T=We do what we can to stay out of their notice.
+W=HYENA
+C2A=THINK
+
+T=Maybe they know and they're just turning a blind eye to it. The violence here is artificial, after all.
+W=HYENA
+
+T=We still get drones and bots that snoop around, but we can handle those!
+W=HYENA
+
+T=Isn't that right, Puzzles?
+W=HYENA
+C2A=CHEERFUL
+
+T=Yup! I grab my trusty broom and shoo 'em off!
+W=HEDGEHOG
+C4=HEDGEHOG
+C4A=CHEERFUL
+
+T=Ha! You should see him! It's a riot.
+W=HYENA
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HYENA_HIMSELF3
+T=Let's fight someday! Make this one of my challenges!
+W=BROK
+C1=BROK
+C1A=READY
+C2=HYENA
+C2A=NORMAL
+
+T=Sorry, man! I retired.
+W=HYENA
+C2A=MEH
+
+T=Oh, come on!
+W=BROK
+C1A=DOWN
+
+T=I can take you on myself!
+W=HEDGEHOG
+C4=HEDGEHOG
+C4A=ENTHUSIASTIC
+
+T=You...?!
+W=BROK
+C1A=SURPRISED
+
+T=Don't underestimate me because I'm small...! And inexperienced...!
+W=HEDGEHOG
+
+T=Not before you're done with your work, Puzzles.
+W=HYENA
+
+T=Aww. You're no fun, boss.
+W=HEDGEHOG
+C4A=DOWN
+TEN=PC21_HYENA_CHOICES
+IT=1
+
+
+
+
+###################################################################################################################
+###################################################################################################################
+#										FREE TALK WITH BUBBLES
+###################################################################################################################
+###################################################################################################################
+ID=PC21_FROG_WELCOME1
+T=Hello! I was wondering...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+CONTEXT=Free talk with Bubbles
+
+T=You want to create something? If not, don't waste my time.
+W=FROG
+
+T=Meaning...?
+W=BROK
+
+T=Free mode. Create your own challenges.
+W=FROG
+C2A=BUBBLES
+
+T=Sounds fun!
+W=BROK
+C1A=HAPPY
+
+T=Wait... So I make challenges just to deal with them myself?
+W=BROK
+C1A=WONDER
+
+T=Of course!
+W=FROG
+TEN=PC21_FROG_CHOICES
+IT=1
+
+
+#-------------------------------
+
+ID=PC21_FROG_WELCOME2
+T=Sir.
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=BUBBLES
+TEN=PC21_FROG_CHOICES
+IT=1
+
+#---------------------------------
+ID=PC21_FROG_EXIT1
+T=Bye!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=FROG
+C2A=MEH
+
+#---------------------------------
+ID=PC21_FROG_EXIT2
+T=I'll be back.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=BUBBLES
+
+#---------------------------------
+ID=PC21_FROG_HIT1
+T=(Bubbling)
+W=FROG
+C2=FROG
+C2A=BUBBLES
+
+T=Argh! My eyes!
+W=BROK
+C1=BROK
+C1A=CONFUSED
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------------
+ID=PC21_FROG_HIT2
+T=(Bubbling)
+W=FROG
+C2=FROG
+C2A=BUBBLES
+
+T=Help! I'm blind!
+W=BROK
+C1=BROK
+C1A=YELL
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------------
+ID=PC21_FROG_THINK1
+T=(Maybe I could do some bubbling too.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(Well...maybe not. Graff has sensitive hearing, he'd probably hate it!)
+W=BROK
+A=MAYBE
+MOOD=THINK
+TEN=PC21_FROG_CHOICES
+IT=1
+
+#-------------------------------
+
+ID=PC21_FROG_HERSELF1
+T=I assume you're the second-in-command of this ship.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+T=Ha! Good one.
+W=FROG
+
+T=I run things here.
+W=FROG
+C2A=BUBBLES
+
+T=Are you? Isn't Tenderjaw the owner?
+W=BROK
+
+T=I like to let him think that.
+W=FROG
+C2A=MEH
+
+T=I... see...?
+W=BROK
+C1A=WONDER
+
+T=How did you meet?
+W=BROK
+C1A=THINK
+
+T=We were neighbors in the Drums.
+W=FROG
+C2A=NORMAL
+
+T=I left the Drums a little after 'Jaw did, but not for the same reason.
+W=FROG
+
+T=When I finally settled in the Slums, there he was, my neighbor again. Happy happenstance.
+W=FROG
+
+T=So I figured... if we're gonna be next to each other constantly, better work with the guy!
+W=FROG
+
+T=That's, erm... not what I expected.
+W=BROK
+C1A=MAYBE
+
+T=Life is full of surprises.
+W=FROG
+C2A=BUBBLES
+TEN=PC21_FROG_CHOICES
+IT=1
+
+#-------------------------------
+
+ID=PC21_FROG_HERSELF2
+T=Bubbling a lot, I see!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=BUBBLES
+
+T=Very soothing. I need it.
+W=FROG
+
+T=You mean... this is a stressful work environment?
+W=BROK
+
+T=...
+W=FROG
+C2A=NORMAL
+
+T=(Bubbling)
+W=FROG
+C2A=BUBBLES
+TEN=PC21_FROG_CHOICES
+IT=1
+
+#-------------------------------
+
+ID=PC21_FROG_RENAMEPLAYER1
+T=Would you like a name change?
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+T=What? I can do that?!
+W=BROK
+C1A=SURPRISED
+
+T=Nothing is off limits down here.
+W=FROG
+TEN=PC21_RENAMEPLAYER_DO
+
+#-------------------------------
+
+ID=PC21_FROG_RENAMEPLAYER2
+T=When you have co-op friends, tell them to talk to me so they can rename themselves, too.
+W=FROG
+C1=BROK
+C1A=MEH
+C2=FROG
+C2A=NORMAL
+TEN=PC21_RENAMEPLAYER_DO
+
+#-------------------------------
+
+ID=PC21_FROG_RENAMEPLAYER_CONFIRM1
+T=Okay. Your fighter name is now {name}.
+W=FROG
+C1=FROG
+C1A=NORMAL
+
+T=Weird name, but hey. Who am I to judge.
+W=FROG
+C1A=BUBBLES
+TEN=ACTIVATE_CLICKERS
+
+#-------------------------------
+
+ID=PC21_FROG_RENAMEPLAYER_CONFIRM2
+T=Alright then, {name}.
+W=FROG
+C1=FROG
+C1A=NORMAL
+TEN=ACTIVATE_CLICKERS
+
+#-------------------------------
+
+ID=PC21_FROG_CHANGEPLAYER1
+T=So, you want a face change?
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+T=Huh?!
+W=BROK
+C1A=WONDER
+
+T=For the challenges. You can replay all of them with another character.
+W=FROG
+C2A=BUBBLES
+
+T=Errr...
+W=BROK
+C1A=CONFUSED
+TEN=PC21_FROG_CHANGEPLAYER_CHOICES
+#-------------------------------
+
+ID=PC21_FROG_CHANGEPLAYER2
+T=Who will it be?
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_CHANGEPLAYER_CHOICES
+
+#-------------------------------
+
+ID=PC21_FROG_CHANGEPLAYER_AFTER
+T=What just happened?!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=FROG
+C2A=NORMAL
+
+T=Nothing makes sense! I'm somebody else and this is not V.R.!
+W=BROK
+C1A=CONFUSED
+
+T=Sweety, you better lay off the energy drinks.
+W=FROG
+C2A=BUBBLES
+
+#-------------------------------
+
+ID=PC21_FROG_WHEEL1
+T=Come and spin our wheel.
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+# MODIFIED
+T=10 C-Tokens per try to unlock nice things.
+W=FROG
+CONTEXT=The amount might change...
+
+T=Every spin wins something.
+W=FROG
+C2A=BUBBLES
+TEN=PC21_FROG_WHEEL_CHOICE
+
+#-------------------------------
+
+# MODIFIER
+ID=PC21_FROG_WHEEL2
+T=10 C-Tokens.
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_CHOICE
+
+#-------------------------------
+
+ID=PC21_FROG_WHEELSPIN1
+T=Here we go.
+W=FROG
+C2=FROG
+C2A=NORMAL
+NB=1
+D=30
+CONTEXT=Bubbles spins the wheel
+
+#-------------------------------
+
+ID=PC21_FROG_WHEELSPIN2
+T=Vroom, vroom...!
+W=FROG
+C2=FROG
+C2A=BUBBLES
+NB=1
+D=30
+
+#-------------------------------
+
+ID=PC21_FROG_WHEELSPIN3
+T=The anticipation is killing me.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+NB=1
+D=30
+
+#-------------------------------
+
+ID=PC21_FROG_WHEELSPIN4
+T=(Bubbles)
+W=FROG
+C2=FROG
+C2A=BUBBLES
+NB=1
+D=30
+
+#-------------------------------
+
+ID=PC21_FROG_WHEELSPIN5
+T=Let's go, I guess.
+W=FROG
+C2=FROG
+C2A=NORMAL
+NB=1
+D=30
+
+#-------------------------------
+
+ID=PC21_FROG_WHEELCLOSE1
+T=I can't tell which section the arrow is pointing at...
+W=FROG
+C2=FROG
+C2A=MEH
+
+T=Just spin it again.
+W=FROG
+C2A=NORMAL
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_CHALLENGE
+T=You've unlocked a bonus challenge. Amazing.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+TEN=PC21_FROG_WHEEL_TITLEUNLOCKED
+
+#-------------------------------
+# MODIFIED
+ID=PC21_FROG_WHEEL_FULL
+T=Looks like you've already unlocked all of them, sweetie.
+W=FROG
+C2=FROG
+C2A=NORMAL
+
+T=So, from now on you'll get a collectible card instead!
+W=FROG
+C2A=BUBBLES
+TEN=PC21_UNLOCK_CARD
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_COLLECTIBLE
+T=Here is a collectible card for you.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+TEN=PC21_UNLOCK_CARD
+
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_MUSIC
+T=You've unlocked a track for the jukebox. Wow.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+TEN=PC21_FROG_WHEEL_TITLEUNLOCKED
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_UNLOCKED
+T=(<col=BOLD>{title}</col> unlocked)
+TEN=PC21_FROG_WHEEL_END
+SILENCE=1
+TEXTONLY=1
+SOUND=beam
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_COUPON10
+T=You get a 10% discount.
+W=FROG
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_COUPONCHECK
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_COUPON25
+T=You get a 25% discount.
+W=FROG
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_COUPONCHECK
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_COUPON50
+T=You get a 50% discount. Amazing.
+W=FROG
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_COUPONCHECK
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_COUPONEXPLAIN
+T=It will automatically be used the next time you buy V.R. food or skip a challenge.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+C1=BROK
+C1A=THINK
+
+T=Can I add those discounts together?
+W=BROK
+C1A=MOCK
+
+T=Ha ha. No.
+W=FROG
+C2A=MEH
+
+T=But you can get as many coupons as you want. The deepest discounts are used first.
+W=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_END
+
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_SURPRISE
+T=You've unlocked a surprise...
+W=FROG
+C2=FROG
+C2A=BUBBLES
+TEN=PC21_WHEEL_DECIDESURPRISE
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_AD
+T=...an ad coupon!
+W=FROG
+C2=FROG
+C2A=NORMAL
+C1=BROK
+C1A=CONFUSED
+
+T=I got owned...
+W=BROK
+C1A=DOWN
+TEN=PC21_WHEEL_GETAD
+
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_RETRY
+T=...a free retry.
+W=FROG
+C2=FROG
+C2A=NORMAL
+C1=BROK
+C1A=MEH
+
+T=Go ahead, spin.
+W=FROG
+TEN=PC21_FROG_WHEEL_YESAFTER
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_FREEPAMPALOS
+T=...a virtual pampalos.
+W=FROG
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_FREEFOOD
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_FREEANTBURGER
+T=...a virtual antburger.
+W=FROG
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_FREEFOOD
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_FREEENERGYDRINK
+T=...a virtual energy drink.
+W=FROG
+C2=FROG
+C2A=NORMAL
+TEN=PC21_FROG_WHEEL_FREEFOOD
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_FREEFOOD
+T=(Added to your inventory)
+TEN=PC21_FROG_WHEEL_END
+SILENCE=1
+TEXTONLY=1
+SOUND=beam
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_FREEDRINK
+T=...a free drink. Here.
+W=FROG
+C2=FROG
+C2A=NORMAL
+C1=BROK
+C1A=HAPPY
+
+T=(Glurp)
+W=BROK
+SOUND=item_eat
+TEN=PC21_FROG_WHEEL_END
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_FREEHUG
+T=...a free hug.
+W=FROG
+C2=FROG
+C2A=NORMAL
+C1=BROK
+C1A=THINK
+TEN=PC21_WHEEL_FREEHUG
+
+T=Woah!
+W=BROK
+C1A=SURPRISED
+C2=NONE
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_FREEHUG_FIRST
+T=I...did not expect that...
+W=BROK
+C2=FROG
+C2A=BUBBLES
+C1=BROK
+C1A=WONDER
+
+T=Well, we're a business, but we still care about our clients.
+W=FROG
+
+T=It's a free way to show it for us.
+W=FROG
+
+T=Not exactly free for me, though...
+W=BROK
+C1A=OPPOSITE
+
+T=We agreed to take turns to do it.
+W=FROG
+TEN=PC21_FROG_WHEEL_END
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_END
+T=Wanna spin it again?
+W=FROG
+C2=FROG
+C2A=NORMAL
+C1=BROK
+C1A=THINK
+TEN=PC21_FROG_WHEEL_CHOICE
+
+#-------------------------------
+ID=PC21_FROG_WHEEL_NOTOKENS
+T=But... you poor thing. You don't even have that much.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+C1=BROK
+C1A=DOWN
+TEN=PC21_FROG_CHOICES
+
+#-------------------------------
+ID=PC21_FROG_OKAY
+T=Okay. (Bubbles)
+W=FROG
+C2=FROG
+C2A=BUBBLES
+C1=BROK
+C1A=MEH                                                                            
+TEN=PC21_FROG_CHOICES
+
+#-------------------------------
+
+ID=PC21_FROG_CHEATED
+T=No, no, no.
+W=FROG
+C2=FROG
+C2A=MEH
+C1=BROK
+C1A=SURPRISED
+CONTEXT=Bubbles detects that player modified the number of C Tokens
+
+T=I won't accept this.
+W=FROG
+
+T=What?
+W=BROK
+
+T=You just edited your save file, didn't you?
+W=FROG
+
+T=...oh. Oops.
+W=BROK
+C1A=CONFUSED
+
+T=Fortunately, I can revert the number of C-Tokens for you.
+W=FROG
+TEN=PC21_FROG_CHOICECHEAT
+
+#-------------------------------
+
+ID=PC21_FROG_CHEATED_YES
+T=Done.
+W=FROG
+C2=FROG
+C2A=MEH
+C1=BROK
+C1A=MAYBE
+
+T=Thank you for doing the right thing.
+W=FROG
+
+#-------------------------------
+
+ID=PC21_FROG_CHEATED_NO
+T=I can't force you unfortunately.
+W=FROG
+C2=FROG
+C2A=MEH
+C1=BROK
+C1A=MAYBE
+
+T=Just feel the endless guilt that there is now a hole in my accounting.
+W=FROG
+
+
+#-------------------------------
+
+ID=PC21_FROG_CREATOR1
+T=So, a creator mode, really?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+CONTEXT=More talk with Bubbles
+
+T=Yes. Do you wanna try it?
+W=FROG
+
+T=Fortunately for you, this is free to use.
+W=FROG
+C2A=BUBBLES
+
+T=Nice!
+W=BROK
+C1A=HAPPY
+
+T=And you can make a mess as much as you want. Which you definitely will.
+W=FROG
+
+T=Err...
+W=BROK
+C1A=TIRED
+TEN=PC21_CREATORMODE
+
+
+#-------------------------------
+
+ID=PC21_FROG_CREATOR2
+T=Can I share my superb creations with other players?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+T=Yeah. Use the appropriate "Share" option in the top right of the creator mode and follow the instructions.
+W=FROG
+
+T=As for playing challenges created by others, try the "Download" option.
+W=FROG
+C2A=BUBBLES
+TEN=PC21_CREATORMODE
+
+#-------------------------------
+
+ID=PC21_FROG_CREATOR_END
+T=Feeling creative?
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=BUBBLES
+TEN=PC21_CREATORMODE
+
+
+#-------------------------------
+
+ID=PC21_FROG_AFTER1
+T=Hmm...
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+T=Phew. I'm relieved you didn't ruin my tablet with those fat greasy fingers of yours.
+W=FROG
+C2A=MEH
+
+T=Hey...! Don't serve food if you can't stand grease!
+W=BROK
+C1A=ANGRY
+
+#-------------------------------
+
+ID=PC21_FROG_AFTER2
+T=Let's see what you did...
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+T=Huh?!
+W=BROK
+
+T=Well, I expected worse.
+W=FROG
+C2A=BUBBLES
+
+T=Thanks... I guess.
+W=BROK
+C1A=DOWN
+
+#-------------------------------
+
+ID=PC21_FROG_AFTER3
+T=Hmm.
+W=FROG
+C1=BROK
+C1A=THINK
+C2=FROG
+C2A=NORMAL
+
+
+###################################################################################################################
+###################################################################################################################
+#										FREE TALK WITH HEDGEHOG
+###################################################################################################################
+###################################################################################################################
+ID=PC21_HEDGEHOG_WELCOME1
+T=Hey, mister!
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+CONTEXT=Free talk with the hedgehog
+
+T=Let me know when you want to place your trust in a fighter!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_WELCOME2
+T=Ohh, I can't wait!
+W=HEDGEHOG
+C1=BROK
+C1A=WONDER
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=What do you have in mind?
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+#---------------------------------
+ID=PC21_HEDGEHOG_EXIT1
+T=See you soon!
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_HEDGEHOGEXIT_CHECK
+
+#---------------------------------
+ID=PC21_HEDGEHOG_EXIT2
+T=Just a moment.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_HEDGEHOGEXIT_CHECK
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_FIRSTDAILYCHALLENGE
+T=Try our daily challenge!
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=ENTHUSIASTIC
+CONTEXT=Free talk with the hedgehog
+
+T=One new each day, 'til the end of time!
+W=HEDGEHOG
+
+T=You'll get a few C-Tokens if you win!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Sounds good!
+W=BROK
+C1A=HAPPY
+
+T=Just one... minor thing.
+W=HEDGEHOG
+C2A=THINK
+
+T=They're procedurally generated, so they're random...
+W=HEDGEHOG
+
+T=You might run into challenges that are impossible to complete.
+W=HEDGEHOG
+
+T=I'm still working on improvements!
+W=HEDGEHOG
+
+T=No worries! I'm ready for anything!
+W=BROK
+C1A=READY
+TEN=PC21_DAILYCHALLENGES_DISPLAYAFTER
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_NEWDAILYCHALLENGE
+T=Got a new daily challenge for ya!
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_DAILYCHALLENGES_DISPLAYAFTER
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_DAILYCHALLENGES
+T=Here's the list!
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_DAILYCHALLENGES_DISPLAYAFTER
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_SUPPORTFIRST
+T=Battling foes may pose challenges, yet there's something even more formidable.
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=It's placing your trust in others!
+W=HEDGEHOG
+
+T=Choose which fighter or group of fighters you expect to win.
+W=HEDGEHOG
+
+T=Watch them fight. And if they're victorious, you get some C-Tokens too!
+W=HEDGEHOG
+
+T=This is entirely free. Give it a try!
+W=HEDGEHOG
+TEN=PC21_SUPPORTCHALLENGERS_DISPLAY
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_SUPPORTSECOND
+T=Have you noticed? There's percentages next to each group of characters.
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=THINK
+
+T=This indicates their current morale. The higher the number, the more effort they'll put into the fight!
+W=HEDGEHOG
+
+T=Of course, a value lower than 100% means the opposite.
+W=HEDGEHOG
+
+T=The C-Tokens awarded vary accordingly. If you trust a group who isn't likely to win, you'll get more C-Tokens!
+W=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_SUPPORTCHALLENGERS_DISPLAY
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_SUPPORT1
+T=Here are the current challengers!
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_SUPPORTCHALLENGERS_DISPLAY
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_SUPPORTWIN1
+T=Great job!
+W=HEDGEHOG
+C1=BROK
+C1A=HAPPY
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_SUPPORTLOSE1
+T=Better luck next time!
+W=HEDGEHOG
+C1=BROK
+C1A=DOWN
+C2=HEDGEHOG
+C2A=DOWN
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+#-------------------------------
+
+ID=PC21_HEDGEHOG_SUPPORTDRAW1
+T=A tie? Too bad...
+W=HEDGEHOG
+C1=BROK
+C1A=MAYBE
+C2=HEDGEHOG
+C2A=THINK
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+#---------------------------------
+ID=PC21_HEDGEHOG_THINK1
+T=(Seems like a cool guy.)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(Pretty rare to see such enthusiastic youngsters in the Slums)
+W=BROK
+A=HAPPY
+MOOD=THINK
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+
+#---------------------------------
+ID=PC21_HEDGEHOG_HIT1
+T=Hey! What?
+W=HEDGEHOG
+C1=BROK
+C1A=ANGRY
+C2=HEDGEHOG
+C2A=THINK
+CONTEXT=Trying to hit him
+
+T=You... you wanna fight? For real?!
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=Amazing! Let's go!
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=Nope.
+W=HYENA
+C4=HYENA
+C4A=MEH
+
+T=Aww, I forgot...
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=DOWN
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------------
+ID=PC21_HEDGEHOG_HIT2
+T=Please don't...! The boss said no.
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=THINK
+TEN=ACTIVATE_CLICKERS
+
+#-------------------------------
+ID=PC21_HEDGEHOG_HIMSELF1
+T=So...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=THINK
+CONTEXT=Free talk with the hedgehog
+
+T=Lemme tell you! Lemme tell you everything!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=I didn't ask yet!
+W=BROK
+C1A=CONFUSED
+
+T=No need!
+W=HEDGEHOG
+
+T=I'm an aspiring fighter!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=After work, I take VR lessons in martial arts. One day, I'm gonna become a master so I can beat up thugs in real life!
+W=HEDGEHOG
+C2A=ENTHUSIASTIC
+
+T=And... and...
+W=HEDGEHOG
+C2A=THINK
+
+T=I guess that's it.
+W=HEDGEHOG
+
+T=Sorry. I'm lame.
+W=HEDGEHOG
+C2A=DOWN
+
+T=Nah! Your story is just starting. No shame in that!
+W=BROK
+C1A=HAPPY
+
+T=True! Thanks, sir!
+W=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+#-------------------------------
+ID=PC21_HEDGEHOG_HIMSELF2
+T=I wonder. Are those spikes of yours sharp or soft?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=THINK
+
+T=Both!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Normally they're soft, but I can flex them to make them sharp and protect myself!
+W=HEDGEHOG
+
+T=That takes a lot of effort though, soooo...
+W=HEDGEHOG
+C2A=THINK
+
+T=I'm still training to keep them flexed long enough to be useful.
+W=HEDGEHOG
+
+T=That's amazing! You'll get it someday!
+W=BROK
+C1A=HAPPY
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+
+#----------------------
+
+ID=PC21_HEDGEHOG_SURVIVAL1
+T=Oh, so you're ready to die! Cool!
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=What?!
+W=BROK
+C1A=CONFUSED
+
+T=Survival mode! It's exactly what it sounds like.
+W=HEDGEHOG
+
+T=You fight a horde of enemies as long as you can until you die!
+W=HEDGEHOG
+
+T=Only in V.R. mode, though. No one has died in the cabin!
+W=HEDGEHOG
+C2A=THINK
+
+T=So far.
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Erm... okay...
+W=BROK
+C1A=WORRIED
+TEN=PC21_SURVIVAL_RANDCHOICE_NO
+
+#----------------------
+
+ID=PC21_HEDGEHOG_SURVIVAL_CHOICE
+T=Would you like the enemies to always be the same, or randomized?
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=THINK
+TEN=PC21_SURVIVAL_RANDCHOICE
+
+#----------------------
+
+ID=PC21_HEDGEHOG_SURVIVAL2
+T=Your record so far is {number} waves!
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=CHEERFUL
+COMM=For voice acting just say "Your record so far is this number of waves"
+TEN=PC21_HEDGEHOG_SURVIVAL2B
+
+#----------------------
+
+ID=PC21_HEDGEHOG_SURVIVAL2B
+T=Get ready!
+W=HEDGEHOG
+C1=BROK
+C1A=READY
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_SURVIVAL_CHOOSE
+
+#----------------------
+
+ID=PC21_HEDGEHOG_VERSUS1
+T=Time to fight your friends! Or will you team up against computer foes?
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_HEDGEHOG_VERSUS
+
+#----------------------
+
+ID=PC21_HEDGEHOG_VERSUSALONE1
+T=...oh, wait.
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=THINK
+
+T=I hate to tell you this, but... to do versus battle, you need a friend.
+W=HEDGEHOG
+
+T=A friend in the real world.
+W=HEDGEHOG
+
+T=Real world...? Am I in V.R. right now?
+W=BROK
+C1A=WONDER
+
+T=Ha! You never know!
+W=HEDGEHOG
+C2A=CHEERFUL
+
+T=Actually, that's fine! We have an alternative!
+W=HEDGEHOG
+
+#T=Choose one or two computer enemies who will fight you, and a difficulty!
+#W=HEDGEHOG
+#C2A=THINK
+TEN=PC21_VERSUS_CHOOSE
+
+#----------------------
+
+ID=PC21_HEDGEHOG_VERSUS2
+T=Versus, yes!
+W=HEDGEHOG
+C1=BROK
+C1A=READY
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_VERSUS_CHOOSE
+
+
+#----------------------
+
+ID=PC21_HEDGEHOG_AFTER1
+T=That was intense!
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=ENTHUSIASTIC
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+#----------------------
+
+ID=PC21_HEDGEHOG_AFTER2
+T=How was it?
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=THINK
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+#----------------------
+
+ID=PC21_HEDGEHOG_AFTER3
+T=I had my eyes stuck to the screen the whole fight!
+W=HEDGEHOG
+C1=BROK
+C1A=MEH
+C2=HEDGEHOG
+C2A=CHEERFUL
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+#----------------------
+
+ID=PC21_HEDGEHOG_AFTER4
+T=That was so cool!
+W=HEDGEHOG
+C1=BROK
+C1A=COCKY
+C2=HEDGEHOG
+C2A=ENTHUSIASTIC
+TEN=PC21_HEDGEHOG_CHOICES
+IT=1
+
+###################################################################################################################
+###################################################################################################################
+#										FREE TALK WITH IVY
+###################################################################################################################
+###################################################################################################################
+
+ID=PC21_IGUANA1
+T=Hey, man!
+W=IGUANA
+C1=BROK
+C1A=THINK
+C2=IGUANA
+C2A=ANGRY
+CONTEXT=Free talk with Ivy
+
+T=You broke my win streak!
+W=IGUANA
+
+T=Just one more and I would've reached the 10-wins medal!
+W=IGUANA
+
+T=Ah... sorry, miss.
+W=BROK
+C1A=DOWN
+
+T=That's okay! This means I'll have to work harder.
+W=IGUANA
+C2A=HAPPY
+
+T=I heard you're a former boxer?
+W=IGUANA
+C2A=NORMAL
+
+T=Yeah, although I haven't practiced for six years.
+W=BROK
+C1A=MEH
+
+T=Makes sense. Your style is more... let's say...
+W=IGUANA
+C2A=THINK
+
+T=Free style.
+W=IGUANA
+C2A=HAPPY
+
+T=Fair enough. I was never fond of following all the boxing rules.
+W=BROK
+
+T=Now I'm a free gator!
+W=BROK
+C1A=COCKY
+
+T=Looks like you've found your inner fighter balance then. Fun!
+W=IGUANA
+C2A=JOY
+
+#---------------------------------
+ID=PC21_IGUANA2
+T=You're actually a pretty good wrestler!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=IGUANA
+C2A=NORMAL
+
+T=Can you do all those moves in real life, too?
+W=BROK
+C1A=MOCK
+
+T=Ha! All that and more!
+W=IGUANA
+C2A=HAPPY
+
+T=You'd be dazzled if you saw everything I could do. I keep telling Dad to put in a ring for real, but nooo.
+W=IGUANA
+
+T=Aww... Why not?
+W=BROK
+C1A=SURPRISED
+
+T=With a ring here, I could finally get into a fight for fun instead of self-defense!
+W=BROK
+C1A=READY
+
+T=See, Dad? Your customers want it too!
+W=IGUANA
+C2A=JOY
+
+T=I told you, Ivy. For one, we don't have the room for it.
+W=HYENA
+C3=HYENA
+C3A=MEH
+
+T=And where would I even find a ring? They were all destroyed after the ban.
+W=HYENA
+C3A=THINK
+
+T=We could just make our own!
+W=IGUANA
+C2A=EMBARASSED
+
+T=You could treat the customers to some real action, and I could finally wrestle for real too!
+W=IGUANA
+C2A=HAPPY
+
+T=And when the customers limp home with injuries, drawing even more attention to us until the Government catches on and shuts us down?
+W=HYENA
+
+T=No thanks! 'Sides, the VRs are easier to manage.
+W=HYENA
+C3A=CHEERFUL
+
+T=Ugh. I thought you were a fun dad, now you're just a dull dad.
+W=IGUANA
+C2A=ANGRY
+
+T=Ow! Striking at your old man's heart. Daughters are so mean these days.
+W=HYENA
+C3A=EMBARASSED
+
+T=(He'll get over it, ha ha!)
+W=IGUANA
+C2A=JOY
+
+T=(Ah-hahah...)
+W=BROK
+C1A=HAPPY
+
+#---------------------------------
+ID=PC21_IGUANA3
+T=You and your father seem to get along well.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=IGUANA
+C2A=NORMAL
+
+T=Yup! He's always been there for me.
+W=IGUANA
+C2A=JOY
+
+T=He taught me how to stand up for myself. And how to throw a sick right hook, too!
+W=IGUANA
+C2A=HAPPY
+
+T=Honestly, I think I learned just as much by watching him fight in his tournaments. Those were good times.
+W=IGUANA
+
+T=Sounds like a wild childhood. Bet you had lots of fun!
+W=BROK
+
+T=Maybe too wild.
+W=IGUANA
+C2A=THINK
+
+T=Other girls my age were intimidated by my "bombastic" nature. Which wasn't fair!
+W=IGUANA
+C2A=ANGRY
+
+T=I may love some action, but I still wanted to play with dolls!
+W=IGUANA
+
+T=Mom kept me company and played with me, which I appreciated, but it wasn't quite the same, y'know?
+W=IGUANA
+C2A=EMBARASSED
+
+T=Well, those girls are missing out. As far as I can tell, you're a future star!
+W=BROK
+C1A=ALRIGHT
+
+T=Aww, you're too kind, thank you!
+W=IGUANA
+C2A=JOY
+
+T=I'll be sure to invite you for VIP seats when I become a top wrestler!
+W=IGUANA
+C2A=HAPPY
+
+#---------------------------------
+ID=PC21_IGUANA4
+T=Speaking of, why wrestling?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=IGUANA
+C2A=NORMAL
+
+T=Tenderjaw doesn't seem to be one as far as I can tell.
+W=BROK
+
+T=True, he's not. But in the tournaments I watched, there were a few wrestlers.
+W=IGUANA
+C2A=THINK
+
+T=Compared to the boxers, it's like they were putting on a whole different show.
+W=IGUANA
+
+T=Their moves were mesmerizing, and the crowd went crazy every time they landed one.
+W=IGUANA
+C2A=JOY
+
+T=That's when I knew I wanted to be one!
+W=IGUANA
+
+T=Well, I may not be a wrestler, but I can tell you've got potential.
+W=BROK
+
+T=Keep fighting for it, and I'm sure you'll reach your goal!
+W=BROK
+C1A=READY
+
+T=Just be sure to take care of yourself. I say this from experience in these sports.
+W=BROK
+C1A=HAPPY
+
+T=I will. Thanks for your concern, Brok.
+W=IGUANA
+C2A=HAPPY
+
+#---------------------------------
+ID=PC21_IGUANA5
+T=Is that... makeup in your hand?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=IGUANA
+C2A=NORMAL
+
+T=Oh, just some blush.
+W=IGUANA
+
+T=I can fight, but that doesn't mean I can't look amazing as well. In fact, it's the opposite!
+W=IGUANA
+C2A=HAPPY
+
+T=Do you know how important a good look is during battle?
+W=IGUANA
+
+T=Not really...?
+W=BROK
+C1A=WONDER
+
+T=When you've got the public's adoration, the more they cheer for you, and the better you fight.
+W=IGUANA
+
+T=And don't discount the possibility of distracting your opponents!
+W=IGUANA
+
+T=(Psst, dad probably wouldn't agree but you know... he's old fashioned)
+W=IGUANA
+C2A=THINK
+
+T=Besides, after my job I'm going out with my girlfriend. Can't wait!
+W=IGUANA
+C2A=JOY
+
+T=Busy day, I see!
+W=BROK
+C1A=HAPPY
+
+#---------------------------------
+ID=PC21_IGUANA6
+T=So, are you and your partner Slumers?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=IGUANA
+C2A=NORMAL
+
+T=Actually... she's a Drumer.
+W=IGUANA
+C2A=THINK
+
+T=I'm super lucky. Drumers rarely come to the Slums-they fear this place.
+W=IGUANA
+
+T=And I can't really blame her. Her dad was killed here.
+W=IGUANA
+C2A=EMBARASSED
+
+T=He was robbed and fought back. Things escalated and...
+W=IGUANA
+
+T=She came to give him a proper burial, but by the time she got here, he'd already been processed in the Body Recycling Center.
+W=IGUANA
+C2_EYESHUT=1
+
+T=Not being able to see your loved ones again, even just to say goodbye... It's awful.
+W=IGUANA
+
+T=You're not able to grieve.
+W=IGUANA
+
+T=Yeah...
+W=BROK
+C1A=HEARTBROKEN
+
+T=I found her in the streets. She was so sad... broken.
+W=IGUANA
+
+T=I had to comfort her. It kinda made me feel bad, honestly, like I was taking advantage of the situation.
+W=IGUANA
+C2A=EMBARASSED
+
+T=But she needed it. In time, we got to know each other. It's been months now.
+W=IGUANA
+
+T=Actually, she proposed to me just last week! We'd get married, and I'd become a Drumer with her.
+W=IGUANA
+C2A=NORMAL
+
+T=I had a similar situation.
+W=BROK
+
+T=Did you? How did it turn out?
+W=IGUANA
+C2A=THINK
+
+T=...she was taken from me before I could find out.
+W=BROK
+
+T=I'm sorry... Grr, I really just don't know.
+W=IGUANA
+C2A=EMBARASSED
+
+T=Should I take the risk that our relationship evolves and we find out we're not actually compatible?
+W=IGUANA
+
+T=I have a life here. A job. My dream wrestling career.
+W=IGUANA
+
+T=I love visiting Dad regularly.
+W=IGUANA
+
+T=Will I even be able to pass the tests to remain in the Drums?
+W=IGUANA
+
+T=I was still in the probation period, myself. Had to leave the Drums before passing them.
+W=BROK
+C1A=DOWN
+
+T=Too bad.
+W=IGUANA
+
+T=Well, guess I'll have to find out for myself.
+W=IGUANA
+C2A=THINK
+
+T=Right. This kind of big, life changing decision...
+W=BROK
+C1A=MEH
+
+T=Only you can decide that.
+W=BROK
+
+T=Thanks.
+W=IGUANA
+C2A=JOY
+
+T=Ha... I keep making the worst decisions in my own life, so I'm not exactly the right person to give advice!
+W=BROK
+
+T=Well, thanks for listening to me. I think that alone helped.
+W=IGUANA
+
+#---------------------------------
+ID=PC21_IGUANA7
+T=Thanks again!
+W=IGUANA
+C1=BROK
+C1A=MEH
+C2=IGUANA
+C2A=JOY
+
+T=No problem! Keep training, you'll become a great wrestler!
+W=BROK
+
+
+#-----------------------------
+
+ID=PC21_IGUANA_HIT1
+T=Hey!!! Dad doesn't allow fighting in here!
+W=IGUANA
+C1=BROK
+C1A=MAYBE
+C2=IGUANA
+C2A=ANGRY
+NB=1
+D=60
+CONTEXT=Hitting Ivy
+TEN=ACTIVATE_CLICKERS
+
+#-----------------------------
+
+ID=PC21_IGUANA_HIT2
+T=Dad! Your prized fighter is having an aneurysm!
+W=IGUANA
+C1=BROK
+C1A=CONFUSED
+C2=IGUANA
+C2A=THINK
+NB=1
+D=60
+CONTEXT=Hitting Ivy
+TEN=ACTIVATE_CLICKERS
+
+
+###################################################################################################################
+###################################################################################################################
+#										FREE TALK WITH CLINT
+###################################################################################################################
+###################################################################################################################
+
+ID=PC21_CLINT1
+T=Man! You really showed me that I'm not quite as good as I used to be.
+W=CLINT
+C1=BROK
+C1A=MEH
+C2=CLINT
+C2A=MEH
+CONTEXT=Free talk with Clint
+
+T=Nah! Any slip up and you would've had me!
+W=BROK
+
+T=I was an experienced boxer hog.
+W=CLINT
+
+T=There was this fight pit in the Slums. How was it called...
+W=CLINT
+C2A=THINK
+
+T="The Halo".
+W=CLINT
+
+T=Yeah, I practiced there for a while, but...
+W=BROK
+C1A=THINK
+
+T=You don't remember our combat, do you?
+W=CLINT
+
+T=Huh...?
+W=BROK
+C1A=SURPRISED
+
+T=I participated in a tournament. You did too!
+W=CLINT
+C2A=NORMAL
+
+T=We had a pretty good fight! But the same day, during the tournament...
+W=CLINT
+C2A=HAPPY
+
+T=A while after his defeat, one of the fighters went crazy and murdered his opponent... before killing himself.
+W=CLINT
+C2A=MEH
+
+T=Yeah, I heard of that.
+W=BROK
+C1A=DOWN
+
+T=Of course you did. You were there!
+W=CLINT
+C2A=SURPRISED
+
+T=I was...?
+W=BROK
+C1A=WONDER
+
+T=Well, I'd say it's strange I can't remember, but my memory's been failing me lately.
+W=BROK
+C1A=TIRED
+
+T=Ha! It's okay, pal, all those hits in the face had effects for sure!
+W=CLINT
+C2A=HAPPY
+
+T=We tried to calm the situation down, but... nothing worked.
+W=CLINT
+C2A=MEH
+
+T=That's what led to the fight pits closing down.
+W=CLINT
+
+T=Oh, yeah...
+W=BROK
+C1A=DOWN
+
+T=It's kinda strange. Been almost six years, so my memory is a bit fuzzy too, but I remember you looking exactly the same.
+W=CLINT
+C2A=THINK
+
+T=Well, except you had boxing gear on instead of this getup.
+W=CLINT
+
+T=Gators age well!
+W=BROK
+C1A=COCKY
+
+T=I guess so!
+W=CLINT
+C2A=HAPPY
+
+T=Anyway, after everything shut down, I decided to focus on helping my family instead of continuing to train.
+W=CLINT
+C2A=NORMAL
+
+T=I've only been coming here for a few weeks. My kid's about to graduate, and I've got more time to myself now.
+W=CLINT
+
+T=I get ya. It's been good being able to cut loose and get back in the ring again. Even if it's virtual.
+W=BROK
+C1A=ALRIGHT
+
+T=I just wish that fighting here could bring in real money. Then I wouldn't have to be scraping by on handyman jobs...
+W=BROK
+C1A=MAYBE
+
+T=(Or risking my life in Shay's nightly fights.)
+W=BROK
+C1A=TIRED
+MOOD=THINK
+
+T=All of us Slumers end up becoming handymen in one way or another. You really get clients?
+W=CLINT
+C2A=THINK
+
+T=You'd be surprised!
+W=BROK
+C1A=HAPPY
+
+T=The real issue is... what they pay me with.
+W=BROK
+C1A=OPPOSITE
+
+T=Good thing I love antburgers and energy drinks!
+W=BROK
+
+T=I believe you! I totally do. Ha ha!
+W=CLINT
+C2A=HAPPY
+
+#----------------------
+
+
+ID=PC21_CLINT2
+T=So what do you do with the C-Tokens you earn?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CLINT
+C2A=NORMAL
+
+T=I trade 'em, mostly.
+W=CLINT
+C2A=THINK
+
+T=Some guys'll pay Unis for these, believe it or not. 
+W=CLINT
+
+T=People that just want to come buy a meal, socialize, and leave the fighting to the rest of us. 
+W=CLINT
+
+T=Really? Huh, first I've heard of that.
+W=BROK
+C1A=WONDER
+
+T=That's how I found out about this place, actually!
+W=CLINT
+C2A=NORMAL
+
+T=It's not much, but it's some pocket change on the side that I can use to help my son.
+W=CLINT
+C2A=MEH
+
+T=Good on ya, man!
+W=BROK
+C1A=HAPPY
+
+T=Ahh, it's not completely selfless. I'll treat myself to a drink sometimes.
+W=CLINT
+
+T=And the fights? Feels great to get back to action!
+W=CLINT
+C2A=COCKY
+
+#----------------------
+
+ID=PC21_CLINT3
+T=How's your family?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=CLINT
+C2A=NORMAL
+
+T=Got a lovely wife and son. We sometimes have disputes, but hey, who doesn't.
+W=CLINT
+C2A=HAPPY
+
+T=She's a great cook, and I convinced her to open up a restaurant!
+W=CLINT
+
+T=Nice! The choice is pretty limited around here.
+W=BROK
+C1A=HAPPY
+
+T=It requires a huge amount of money.
+W=CLINT
+C2A=MEH
+
+T=Even in the Slums, we can't exactly take an abandoned property and claim it for ourselves, ya know?
+W=CLINT
+
+T=I've seen folks do exactly that.
+W=BROK
+C1A=WONDER
+
+T=That's how you get drones tracking your butt everywhere.
+W=CLINT
+
+T=My Nela deserves better than this.
+W=CLINT
+
+T=Fortunately, her great uncle has a high-ranking job and helped us with all the administrative stuff.
+W=CLINT
+C2A=HAPPY
+
+T=The restaurant never would have been possible without him.
+W=CLINT
+
+T=Oh! Sounds like a nice man!
+W=BROK
+C1A=MEH
+
+T=Yeah, and he shows such love for our son.
+W=CLINT
+
+T=Almost too much. He would shower him with gifts if we didn't set limits.
+W=CLINT
+C2A=THINK
+
+T=You see, my boy has some... difficulties.
+W=CLINT
+C2A=MEH
+
+T=I fear for him. He's too kind for this world.
+W=CLINT
+
+T=I'm trying to find a balance between being firm and caring.
+W=CLINT
+
+T=This is such a harsh society we live in.
+W=CLINT
+
+T=I want him to grow strong and face adversity, no matter what, no matter where.
+W=CLINT
+C2A=ANGRY
+
+T=I agree.
+W=BROK
+
+T=Now, tell me about yours!
+W=CLINT
+C2A=HAPPY
+
+T=It's... complicated.
+W=BROK
+C1A=MAYBE
+
+T=I'm taking care of my wife's son.
+W=BROK
+
+T=She passed away during the blackout accident six years ago.
+W=BROK
+C1A=HEARTBROKEN
+
+T=So sorry.
+W=CLINT
+C2A=MEH
+
+T=To be fair, we weren't married very long.
+W=BROK
+
+T=I should have moved on, but... I just can't. It was so sudden.
+W=BROK
+
+T=No doubt. With our busy life, it's hard enough to raise a son when there are two of us...
+W=CLINT
+
+T=Being a single parent must be incredibly hard.
+W=CLINT
+
+T=Yeah...
+W=BROK
+
+T=But I'm doing my best. I want to.
+W=BROK
+C1A=MAYBE
+
+T=I love him so much.
+W=BROK
+
+T=We're the same, then! Ha ha!
+W=CLINT
+C2A=HAPPY
+
+#----------------------
+
+ID=PC21_CLINT4
+T=Gotta say, I was still hoping to win our fight.
+W=CLINT
+C1=BROK
+C1A=THINK
+C2=CLINT
+C2A=MEH
+
+T=Truth is, there's a regular here that runs a second-hand store. 
+W=CLINT
+
+T=Talked to him about trading my C-Tokens to get some clothes for my boy, but he wants a lot.
+W=CLINT
+C2A=THINK
+
+T=Ah well! Guess I'll just have to keep at it until I get enough!
+W=CLINT
+C2A=HAPPY
+TEN=PC21_CLINT_CHOICE
+
+
+#----------------------
+
+ID=PC21_CLINT_CHOICE_YES
+T=Here.
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=CLINT
+C2A=SURPRISED
+
+T=Oh my! But you won fair and square. You really shouldn't!
+W=CLINT
+
+T=Too late! I've already transferred them.
+W=BROK
+
+T=Ha ha! Alright! Thanks so much, man!
+W=CLINT
+C2A=HAPPY
+
+T=I should be able to trade those in for some fancy new attire.
+W=CLINT
+
+T=Can't have my boy roam around the Drums with those outworn sneakers!
+W=CLINT
+
+T=Is your son a Drumer?
+W=BROK
+C1A=THINK
+
+T=He might not be inside the dome yet, but he will!
+W=CLINT
+C2A=NORMAL
+
+T=Right. I trust my son will too, he's so clever.
+W=BROK
+C1A=READY
+
+T=He would waste his potential if he remained in the Slums.
+W=BROK
+
+T=Same for mine, really!
+W=CLINT
+C2A=HAPPY
+
+#----------------------
+
+ID=PC21_CLINT_CHOICE_NO
+T=Sorry. I'm also trying to save up money for my son.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=CLINT
+C2A=NORMAL
+
+T=That's admirable! And there is no need for an apology!
+W=CLINT
+C2A=HAPPY
+
+#----------------------
+
+ID=PC21_CLINT5
+T=Let's fight again someday, shall we?
+W=CLINT
+C1=BROK
+C1A=READY
+C2=CLINT
+C2A=COCKY
+
+T=Not for money. Just for the fun of the duel!
+W=CLINT
+
+T=Sure thing!
+W=BROK
+
+
+
+###################################################################################################################
+###################################################################################################################
+#									FREE TALK WITH DART
+###################################################################################################################
+###################################################################################################################
+
+ID=PC21_BACK_DART1
+T=...
+W=DART
+C1=BROK
+C1A=THINK
+C2=DART
+C2A=NORMAL
+CONTEXT=Brok notices Dart sitting in the bar, for the first time
+
+T=Agh, you! Not you again!
+W=DART
+C2A=SURPRISED
+
+T=A Squealer...? Here?!
+W=BROK
+C1A=SURPRISED
+
+T=Go away! Gimme some peace.
+W=DART
+C2A=NORMAL
+
+T=(Huh...?)
+W=BROK
+C1A=THINK
+MOOD=THINK
+
+#-----------------------------
+
+ID=PC21_BACK_DART2
+T=Argh... whaddya want?
+W=DART
+C1=BROK
+C1A=THINK
+C2=DART
+C2A=WONDER
+
+T=Just curious. Is it just you?
+W=BROK
+
+T=Yeah.
+W=DART
+C2A=NORMAL
+
+T=Dis place allows us. S'neutral ground.
+W=DART
+
+T=No bots down here.
+W=DART
+
+T=Da guys dunno or care.
+W=DART
+
+T=Here I can... think.
+W=DART
+C2A=COCKY
+
+T=Hmm...
+W=BROK
+
+T=If it clears things up, I had to defend myself. You guys attacked first.
+W=BROK
+C1A=MAYBE
+
+T=Oh yeah?!
+W=DART
+C2A=NORMAL
+
+T=What about dat time in da Drums' sewers?!
+W=DART
+
+T=Well... you guys were in my way and wouldn't move...
+W=BROK
+
+T=What, gotta move every time we're told? Can't even have da sewer as our territory? 
+W=DART
+
+T=Ya'd blame us for dat?!
+W=DART
+
+T=Hey, you attack people. You steal. You even attempted to murder a tramp!
+W=BROK
+C1A=FURIOUS
+
+T=Dat cheat didn't pay us!
+W=DART
+C2A=READY
+
+T=You're killers!
+W=BROK
+
+T=Am not!
+W=DART
+
+T=Are you gonna try to deny you Squealers tried to overthrow the government by force?
+W=BROK
+
+T=You killed innocent people in the process!
+W=BROK
+
+T=Dat was years ago! I wasn't even there!
+W=DART
+C2A=WONDER
+
+T=Okay, ya know what?
+W=DART
+C2A=READY
+
+T=Can't fight here. But...!
+W=DART
+
+T=We can arm wrestle.
+W=DART
+
+T=Hmm...
+W=BROK
+C1A=THINK
+
+T=Okay! I'm up.
+W=BROK
+C1A=READY
+
+T=Let's settle this!
+W=DART
+
+T=Gonna squeeze that dumb smirk offa yare face!
+W=DART
+TEN=PC21_BACK_DART_ARMWRESTLE_INIT
+
+#-----------------------------
+
+ID=PC21_BACK_DART_WIN
+T=No way...
+W=DART
+C1=BROK
+C1A=COCKY
+C2=DART
+C2A=SURPRISED
+
+T=Guess you win, gator. I'm outta here.
+W=DART
+C2A=NORMAL
+
+T=No! Wait.
+W=BROK
+C1A=SURPRISED
+
+T=Can't keep losing like dat. Gotta get stronger.
+W=DART
+
+T=I just want to talk.
+W=BROK
+
+T=What?
+W=DART
+C2A=WONDER
+TEN=PC21_BACK_DART_AFTER_PICS
+
+#-----------------------------
+
+ID=PC21_BACK_DART_LOSE
+T=Heh, too easy!
+W=DART
+C1=BROK
+C1A=TIRED
+C2=DART
+C2A=FLEX
+
+T=Man... My arm feels like jelly now...
+W=BROK
+
+#T=Alright then.
+#W=BROK
+#TEN=PC21_BACK_DART_AFTER_PICS
+
+#-----------------------------
+
+ID=PC21_BACK_DART_AFTER
+T=I admit... mayyybe I went a bit too far the other day.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=DART
+C2A=NORMAL
+
+T=That... tends to happen when someone gets in my way while on a mission.
+W=BROK
+
+T=Feh! Whatever, man...
+W=DART
+
+T=Sorry again. Got nothing against you personally.
+W=BROK
+
+T=I get it. The situation of your people is hard. Harder than I can imagine.
+W=BROK
+
+T=But you're not the only ones who struggle out here.
+W=BROK
+
+T=We all can choose between hurting others to get what we need, or finding another way.
+W=BROK
+
+T=If I wasn't there, you would have killed that homeless man.
+W=BROK
+C1A=ANGRY
+
+T=Chief's orders. He's gonna die anyway. Better get our due from him before he kicks it.
+W=DART
+
+T=You don't know that! With the right medicine, he's cured!
+W=BROK
+
+T=Is a handful of Unis really worth someone's life? Would you do that to anyone you care about?
+W=BROK
+C1A=OPPOSITE
+
+T=...
+W=DART
+
+T=Maybe... maybe ya're right. About somethin', not everythin'.
+W=DART
+C2A=WONDER
+
+T=It's the same thing for me, too.
+W=BROK
+C1A=MAYBE
+
+T=What? Someone orders you 'round?
+W=DART
+
+T=No, but I've made some decisions lately that I regret. Things that turned into disasters for Gra...
+W=BROK
+SKIPEND=1
+
+T=Well, nevermind.
+W=BROK
+
+T=Y'know, you put up a good fight! Always nice to face a strong opponent!
+W=BROK
+C1A=READY
+
+T=Heh, yeah! Dat's da first thing ya've said that's true.
+W=DART
+C2A=COCKY
+
+T=See these biceps? I can carry four times my own weight!
+W=DART
+C2A=FLEX
+
+T=Impressive! A real mountain of muscles!
+W=BROK
+C1A=SURPRISED
+
+T=Heh! Ya don't look too bad, ya'self!
+W=DART
+C2A=COCKY
+
+T=Err... thanks.
+W=BROK
+
+T=I train every day, with anythin' I can get my hands on. Dat way, I can protect my friends.
+W=DART
+C2A=READY
+
+T=Really...?
+W=BROK
+C1A=THINK
+
+T=By the way, those pictures...
+W=BROK
+
+T=Yeah.
+W=DART
+
+T=S'who I wanna be.
+W=DART
+
+T=A wrestler?
+W=BROK
+
+T=Here, in da V.R. cabin... it's possible.
+W=DART
+C2A=NORMAL
+
+T=Pits're closed, bots always on our tails, everybody lookin' at me like I did somethin'... 
+W=DART
+
+T=It's da only way it can be real for me.
+W=DART
+
+T=I see. That's a nice goal to have.
+W=BROK
+
+T=Maybe one day, you'll be a true wrestler and show yourself to the world!
+W=BROK
+C1A=HAPPY
+
+T=Well, to Atlasia at least.
+W=BROK
+
+T=Heh... Thanks, croc.
+W=DART
+C2A=COCKY
+TEN=PC21_BACK_DART_AFTER_PICS_REMOVE
+
+#-----------------------------
+
+ID=PC21_BACK_DART3
+T=Wanna arm wrestle again?
+W=DART
+C1=BROK
+C1A=THINK
+C2=DART
+C2A=READY
+TEN=PC21_BACK_DART_CHOICES
+
+
+#-----------------------------
+
+ID=PC21_BACK_DART_HIT1
+T=Nuh!!!
+W=DART
+C1=BROK
+C1A=MAYBE
+C2=DART
+C2A=SURPRISED
+NB=1
+D=60
+CONTEXT=Hitting Dart
+
+T=Ya promised!
+W=DART
+NB=1
+D=60
+
+T=Did I...?
+W=BROK
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+
+#-----------------------------
+
+ID=PC21_BACK_DART_HIT2
+T=I'm. Not. Leavin'!
+W=DART
+C1=BROK
+C1A=ANGRY
+C2=DART
+C2A=NORMAL
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#-----------------------------
+
+ID=PC21_BACK_DART_LOSE2
+T=I'm da best!
+W=DART
+C1=BROK
+C1A=DOWN
+C2=DART
+C2A=FLEX
+
+
+#-----------------------------
+
+ID=PC21_BACK_DART_WIN2
+T=My biceps failed me...
+W=DART
+C1=BROK
+C1A=HAPPY
+C2=DART
+C2A=SURPRISED
+
+T=Gotta train harder!
+W=DART
+
+###################################################################################################################
+###################################################################################################################
+#									FREE TALK WITH BACKGROUND CHARACTERS
+###################################################################################################################
+###################################################################################################################
+
+
+#----------------------
+# Croc in front
+#----------------------
+
+ID=PC21_BACK_CROC1
+T=(zZ zz ZZ zZ)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+CONTEXT=Free talk with background character
+
+-----------------
+
+ID=PC21_BACK_CROC2
+T=(Zzz zzz ZZz ZZz)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+
+#----------------------
+ID=PC21_BACK_CROC3
+T=(zzzZ zZZZ zZzz ZzzZ)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+
+#----------------------
+ID=PC21_BACK_CROC4
+T=(Zzzzz ZzzZz ZzzZZ ZzzZZ)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+
+#----------------------
+ID=PC21_BACK_CROC5
+T=(zzZzZz zzZzZZ ZZzZzZ ZZzZZz)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+
+#----------------------
+ID=PC21_BACK_CROC6
+T=(ZZzZzZz ZzzzzzZ zzZzzZz ZzzzZZz)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+
+#----------------------
+ID=PC21_BACK_CROC7
+T=(zZZzzZZz zZZZzZzZ zZZzzzZZ zZZzZzZZ)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+
+#----------------------
+ID=PC21_BACK_CROC8
+T=(You just don't understand binary code, do you...)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+
+#----------------------
+ID=PC21_BACK_CROC9
+T=(Pffft, take this and leave me alone...)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+TEN=PC21_BACK_CROC_GETAD
+
+#----------------------
+ID=PC21_BACK_CROC_HIT1
+T=(Snorts)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+ID=PC21_BACK_CROC_HIT2
+T=(...)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+NB=1
+D=120
+
+T=Oh no! I think I knocked him out for good!
+W=BROK
+A=SURPRISED
+NB=1
+D=120
+
+T=(Snorts!)
+BNAME=BACKCROC
+BVOICE=BACKCROC
+NB=1
+D=60
+TEB=PC21_BACK_CROC_OVERANIM
+
+T=Never mind.
+W=BROK
+A=ALRIGHT
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+# Roo on stool
+#----------------------
+ID=PC21_BACK_ROO1
+T=...
+BNAME=BACKROO
+BVOICE=BACKROO
+
+T=You okay, man?
+W=BROK
+A=THINK
+
+T=Huh...?
+
+T=Aren't all the fights here virtual? How did you get that injury?
+W=BROK
+A=WONDER
+
+T=New to the Slums?
+
+T=Nope.
+W=BROK
+A=MAYBE
+
+T=Then you should know by now. Got robbed, tried to defend myself.
+
+T=I have to get stronger.
+
+T=I see...
+W=BROK
+
+T=Don't mind me.
+
+#----------------------
+ID=PC21_BACK_ROO2
+T=Maybe if I...
+BNAME=BACKROO
+BVOICE=BACKROO
+
+T=Planning some strategies?
+W=BROK
+A=MEH
+
+T=How can you tell?
+
+T=You're writing them in your notepad.
+W=BROK
+
+T=No privacy, huh?
+
+T=Not even polite enough to not imply you were snooping. You're a gator alright.
+
+T=Hey...! I'm not just any gator, I'm an investigator! Snooping is part of my job.
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC21_BACK_ROO3
+T=I almost confused you with another roo I know!
+W=BROK
+A=THINK
+
+T=Yeah? How'd you tell the difference?
+BNAME=BACKROO
+BVOICE=BACKROO
+
+T=Let's say you're much less...
+W=BROK
+
+T=Round...?
+W=BROK
+A=WONDER
+
+T=...
+
+T=Right...
+TEN=PC21_BACK_ROO3_AFTER
+
+
+#----------------------
+ID=PC21_BACK_ROO3B
+T=Weirdo...
+NB=1
+D=60
+BNAME=BACKROO
+BVOICE=BACKROO
+
+#----------------------
+ID=PC21_BACK_ROO4
+T=I'll call him "Sinister".
+W=BROK
+A=MEH
+COMM=A play with the character name Sin
+
+#----------------------
+ID=PC21_BACK_ROO_HIT1
+T=Ouch! Hey, if you want a duel so badly, ask the owner!
+BNAME=BACKROO
+BVOICE=BACKROO
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+ID=PC21_BACK_ROO_HIT2
+T=Ooof... You aren't gonna force me to leave, stupid gator...
+BNAME=BACKROO
+BVOICE=BACKROO
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+
+#----------------------
+# Fox & Bunny
+#----------------------
+
+ID=PC21_BACK_FOX1
+T=Thanks for introducing me to this place.
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+T=Yeah! It's pretty cool, I love their ladybug pie.
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+
+T=I mean, I can finally breathe easily.
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+T=Right... With everything's that happening, being underground is a blessing.
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+
+T=We better not tell the others! Can't risk getting too crowded in here.
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+T=I'm still worried. What if the shortage goes on?
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+
+T=Let's not think about that for now...
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+#----------------------
+
+ID=PC21_BACK_FOX2
+T=That guy is looking at me.
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+
+T=No...?
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+T=Oh, he totally is. He's so cute.
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+
+T=Well, go ahead?
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+T=I can't!
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+
+T=Why not?
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+T=I'm not programmed to move!
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+
+T=Very funny, Tri-bunny-ot.
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+
+#----------------------
+
+ID=PC21_BACK_FOX3
+T=I shouldn't bother them.
+W=BROK
+A=MAYBE
+
+
+#----------------------
+
+ID=PC21_BACK_FOX_HIT1
+T=Gasp!
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+NB=1
+D=60
+
+T=What's wrong with you?!
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BACK_FOX_HIT2
+T=Help!
+BNAMESP=BACKFOX
+BVOICESP=BACKFOX
+NB=1
+D=60
+
+T=Mister Tenderjaw! Please!
+BNAMESP=BACKBUNNY
+BVOICESP=BACKBUNNY
+NB=1
+D=60
+
+T=Supercroc, I am thoroughly disappointed in you.
+W=HYENA
+A=SURPRISED
+NB=1
+D=60
+TEN=PC21_GAMEOVER_HIT
+
+
+#----------------------
+# Badger
+#----------------------
+
+ID=PC21_BACK_BADGER1
+T=(Eating sounds)
+BNAME=BACKBADGER
+BVOICE=BACKBADGER
+
+T=Hey! What's good today?
+W=BROK
+A=MEH
+
+T=Nachroachs.
+
+T=Nice! Can I have one?
+W=BROK
+A=HAPPY
+
+T=No.
+
+#----------------------
+
+ID=PC21_BACK_BADGER2
+T=(Yum, yum)
+BNAME=BACKBADGER
+BVOICE=BACKBADGER
+
+T=(Getting hungry... Need to stop looking...)
+W=BROK
+A=WORRIED
+MOOD=THINK
+
+
+#----------------------
+
+ID=PC21_BACK_BADGER3
+T=(Salivating)
+W=BROK
+A=SURPRISED
+
+#----------------------
+
+ID=PC21_BACK_BADGER_HIT1
+T=Awww!
+BNAME=BACKBADGER
+BVOICE=BACKBADGER
+NB=1
+D=60
+
+T=Okay, okay! If you want one so badly, take this!
+NB=1
+D=60
+
+T=Delicious!
+W=BROK
+A=HAPPY
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BACK_BADGER_HIT2
+T=Oh no!
+BNAME=BACKBADGER
+BVOICE=BACKBADGER
+NB=1
+D=60
+
+T=Why does this happen to me everytime I get a good meal?!
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+# Training man
+#----------------------
+
+ID=PC21_BACK_TRAIN1
+T=Hey, you!
+BNAME=BACKBAT
+BVOICE=BACKBAT
+
+T=...?
+W=BROK
+A=WONDER
+
+T=Yes, you!
+
+T=You look like a novice!
+
+T=...
+W=BROK
+A=ANGRY
+
+T=You wouldn't say that if...
+W=BROK
+SKIPEND=1
+
+T=Whatever! Don't get too confident!
+
+T=Are you sure you're making use of all your moves?
+
+T=If you want a chance at winning those challenges, you better listen!
+
+T=Let's refresh your memory on what you can do!
+TEN=PC21_BACK_TRAIN_CHOICE
+
+
+#----------------------
+
+ID=PC21_BACK_TRAIN_YES
+T=First, take your time to check the commands in the menu.
+BNAME=BACKBAT
+BVOICE=BACKBAT
+
+T=Talk to me again when you're done.
+BNAME=BACKBAT
+BVOICE=BACKBAT
+TEN=PC21_BACK_TRAIN_COMMANDS
+
+#----------------------
+
+ID=PC21_BACK_TRAIN_YES2
+T=If you're using a keyboard and don't like the default keys, I wouldn't blame ya!
+BNAME=BACKBAT
+BVOICE=BACKBAT
+
+T=Thankfully, you can change those in the options menu.
+
+T=Now, go practice in this V.R. training challenge!
+TEN=PC21_BACK_TRAIN_VRTRAINING
+
+
+#----------------------
+
+ID=PC21_BACK_TRAIN_AFTER
+T=Don't forget to check the Tutorials in the Player menu. They have valuable info.
+BNAME=BACKBAT
+BVOICE=BACKBAT
+
+T=Thanks for the advice!
+W=BROK
+A=MEH
+
+T=Wanna do V.R. training again?
+TEN=PC21_BACK_TRAIN_CHOICE
+
+
+#----------------------
+ID=PC21_BACK_TRAIN_HIT1
+T=Ouch! Good job!
+BNAME=BACKBAT
+BVOICE=BACKBAT
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+ID=PC21_BACK_TRAIN_HIT2
+T=Ooof!!! Nice, my training is paying off!
+BNAME=BACKBAT
+BVOICE=BACKBAT
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+# Reset woman
+#----------------------
+
+ID=PC21_BACK_RESET1
+T=Greetings, child. Might you be seeking a reprieve from your burdens?
+BNAME=BACKMOUSE
+BVOICE=BACKMOUSE
+
+T=Excuse me?
+W=BROK
+A=WONDER
+
+T=You seem weary, my dear.
+
+T=I can sense the agony, your memories gnawing at your very soul.
+
+T=Thus, you must cast them away.
+
+T=What is this, an Oblivion pill?
+W=BROK
+
+T=...
+
+T=A perceptive question, indeed.
+
+T=I possess the means to erase all your sorrows since you first set foot in this humble tavern.
+
+T=Bar, not tavern...
+W=BROK
+A=MEH
+
+T=In doing so, you shall embark upon a new beginning.
+
+T=What is this, a scam?
+W=BROK
+A=ANGRY
+
+T=Oh, no. This comes at no cost to you.
+
+T=I am a humble servant of the Untail Salvation Army.
+
+T=My sole mission is to spread joy and peace.
+
+T=Come to see me again, child, when you are ready to forget.
+
+T=...Right...
+W=BROK
+A=MAYBE
+#----------------------
+
+ID=PC21_BACK_RESET2
+T=Will you accept this pill to lift the heavy burden from your heart, dear one?
+BNAME=BACKMOUSE
+BVOICE=BACKMOUSE
+
+T=You mean, erase all my struggles and challenges progress?
+W=BROK
+A=THINK
+
+T=Precisely so, child.
+TEN=PC21_BACK_RESET_CHOICE
+
+#----------------------
+
+ID=PC21_BACK_RESET3
+T=Ah, you are finally ready.
+BNAME=BACKMOUSE
+BVOICE=BACKMOUSE
+
+T=Wait, no!
+W=BROK
+A=SURPRISED
+
+T=Then why have you come to me, child?
+
+T=I...
+W=BROK
+TEN=PC21_BACK_RESET_CHOICE
+
+
+#----------------------
+
+ID=PC21_BACK_RESET_HIT1
+T=Why...! I offer this pill freely!
+BNAME=BACKMOUSE
+BVOICE=BACKMOUSE
+NB=1
+D=60
+
+T=Why not! You said I would forget everything.
+W=BROK
+A=MOCK
+NB=1
+D=60
+
+T=But I won't!
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BACK_RESET_HIT2
+T=You won't escape judgment for this!
+BNAME=BACKMOUSE
+BVOICE=BACKMOUSE
+NB=1
+D=60
+
+T=Who cares! You're nobody.
+W=BROK
+A=MEH
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+# Random wolf client
+#----------------------
+
+ID=PC21_BACK_WOLF1
+T=...
+BNAME=BACKWOLF
+BVOICE=BACKWOLF
+
+T=Hi?
+W=BROK
+A=THINK
+
+T=Don't mind me. Just need to focus.
+
+T=Feeling impatient to fight, huh?
+W=BROK
+A=COCKY
+
+T=Actually...
+
+T=I made a pretty big bet with a coworker, and now...
+A=THINK
+
+T=...ah.
+W=BROK
+A=TIRED
+
+T=...
+
+#----------------------
+
+ID=PC21_BACK_WOLF2
+T=Of course, they had to give me the worst challenge.
+BNAME=BACKWOLF
+BVOICE=BACKWOLF
+C2=BROK
+C2A=THINK
+
+T=A nightmare of buffed enemies, spikes, and lasers.
+
+T=Got any tips?
+
+T=Well...
+W=BROK
+C2A=WONDER
+
+T=Don’t overthink it. Just go!
+W=BROK
+C2A=READY
+
+T=Right... but how does that help you win?
+
+T=It helps moving forward!
+W=BROK
+C2A=ALRIGHT
+
+#----------------------
+
+ID=PC21_BACK_WOLF_HIT1
+T=Oh no!
+BNAME=BACKWOLF
+BVOICE=BACKWOLF
+
+T=Now I've got a bruise and the challenge hasn't even started!
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BACK_WOLF_HIT2
+T=Argh...okay okay, I'll go!
+BNAME=BACKWOLF
+BVOICE=BACKWOLF
+TEN=ACTIVATE_CLICKERS
+
+
+#----------------------
+# Random platypus client
+#----------------------
+
+ID=PC21_BACK_PLATYPUS1
+T=(Sigh)
+BNAME=BACKPLATYPUS
+BVOICE=BACKPLATYPUS
+
+T=Hello. Is something wrong?
+W=BROK
+C1=BROK
+C1A=WONDER
+
+T=Nothing.
+
+T=(Sigh)
+
+#----------------------
+
+ID=PC21_BACK_PLATYPUS2
+T=(Sigh)
+
+T=So...what's wrong?
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Please, just go away.
+BNAME=BACKPLATYPUS
+BVOICE=BACKPLATYPUS
+
+T=Oh, come on. I'm a great listener!
+W=BROK
+C1=BROK
+C1A=MAYBE
+
+T=No, you're not. What did I just tell you?
+
+T="Please listen to me?"
+W=BROK
+C1=BROK
+C1A=HAPPY
+
+T=No. Please leave.
+
+#----------------------
+
+ID=PC21_BACK_PLATYPUS3
+T=The curiosity is killing me, but...
+W=BROK
+C1=BROK
+C1A=MAYBE
+
+T=Some people just need space. Better leave her alone.
+W=BROK
+
+
+#----------------------
+
+ID=PC21_BACK_PLATYPUS_HIT1
+T=I wish I was invisible...
+BNAME=BACKPLATYPUS
+BVOICE=BACKPLATYPUS
+TEN=ACTIVATE_CLICKERS
+#----------------------
+
+ID=PC21_BACK_PLATYPUS_HIT2
+T=Why are all men despicable?!
+BNAME=BACKPLATYPUS
+BVOICE=BACKPLATYPUS
+TEN=ACTIVATE_CLICKERS
+
+
+#----------------------
+# Rhino
+#----------------------
+
+ID=PC21_BACK_RHINO1
+T=Huh.
+BNAME=BACKRHINO
+BVOICE=BACKRHINO
+
+T=Did you say something?
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=Move. This is my spot. Ya're not welcome here.
+
+T=Oh yeah? You don’t get to decide that.
+W=BROK
+
+T=My fists delimit my close proximity area.
+
+
+#----------------------
+
+ID=PC21_BACK_RHINO2
+T=Pfft.
+BNAME=BACKRHINO
+BVOICE=BACKRHINO
+
+T=You may have won last time, but you're still the enemy.
+
+T=Now that you mention it...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=You're that low-level thug!
+W=BROK
+C1A=FURIOUS
+
+T=No funny names! I'm an independant businessman.
+
+T=Right, and I'm a princess.
+W=BROK
+C1A=ANGRY
+
+T=Oh, I get it now. Your "business" must be a front for laundering cash!
+W=BROK
+C1A=MOCK
+
+T=Can't do laundry with a non-existant currency.
+
+T=But I'm burning, right?
+W=BROK
+
+T=Buzz off. No business with the likes of ya.
+
+T=Then you're a poor business man.
+W=BROK
+C1A=OPPOSITE
+
+#----------------------
+
+ID=PC21_BACK_RHINO3
+T=No time to waste on small-time criminals.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+BNAME=BACKRHINO
+BVOICE=BACKRHINO
+
+T=No time to waste with spare tires.
+
+
+#----------------------
+
+ID=PC21_BACK_RHINO_HIT1
+T=Come on, let’s fight! Or are you scared?
+W=BROK
+C1=BROK
+C1A=READY
+
+T=No.
+BNAME=BACKRHINO
+BVOICE=BACKRHINO
+TEN=ACTIVATE_CLICKERS
+
+T=No?...
+W=BROK
+C1A=MAYBE
+
+T=No.
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BACK_RHINO_HIT2
+T=No.
+BNAME=BACKRHINO
+BVOICE=BACKRHINO
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+# Dave
+#----------------------
+
+ID=PC21_BACK_DAVE1
+T=Graff?! What are you...
+W=BROK
+C1=BROK
+C1A=SURPRISED
+
+T=Huh?...
+BNAME=BACKDAVE
+BVOICE=BACKDAVE
+
+T=Oh!... Oops, sorry. Confused you with someone else.
+W=BROK
+C1A=STUPID
+
+T=That's alright.
+
+T=...
+
+T=So, what are you doing here?
+W=BROK
+C1A=WONDER
+
+T=I like the coffee.
+
+T=Not here for a fight, then.
+W=BROK
+
+T=No. My friend's Tyson's into it, though.
+
+T=He's the one who introduced me to this place. Maybe you know him?
+
+T=Can't say that I do. But I'll keep an eye open for a grey wolf!
+W=BROK
+C1A=THINK
+
+T=Wait... I didn’t mention how he looks?
+
+T=Err...that's right...weird!
+W=BROK
+C1A=WONDER
+
+T=I have memory loss.
+W=BROK
+C1A=TIRED
+
+T=I wish I did...
+TEN=PC21_DAVE_RECREATE
+
+#----------------------
+
+ID=PC21_BACK_DAVE2
+T=Say... I'm curious.
+W=BROK
+C1=BROK
+C1A=MOCK
+
+T=Yes?
+BNAME=BACKDAVE
+BVOICE=BACKDAVE
+
+T=Is Tenderjaw your dad?
+W=BROK
+C1A=THINK
+
+T=...
+
+T=Dad...
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=Sorry. No, the bartender isn't my dad.
+
+T=I'm a striped hyena. He's spotted.
+
+T=I see...
+W=BROK
+
+T=So your dad's a striped hyena?
+W=BROK
+C1A=ALRIGHT
+
+T=Actually...no. He's a spotted hyena.
+
+T=Okay...?
+W=BROK
+C1A=WONDER
+
+#----------------------
+
+ID=PC21_BACK_DAVE3
+T=I'm surprised to see so many people here today.
+BNAME=BACKDAVE
+BVOICE=BACKDAVE
+C1=BROK
+C1A=THINK
+
+T=It took me a while to figure out the password.
+
+T=Huh? What password?
+W=BROK
+C1A=WONDER
+
+T=At the entrance.
+
+T=I just said anything, and it worked.
+W=BROK
+C1A=ALRIGHT
+
+T=Really?
+
+T=Lucky you...
+
+#----------------------
+
+ID=PC21_BACK_DAVE_HIT1
+T=I'm no fighter!
+BNAME=BACKDAVE
+BVOICE=BACKDAVE
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_BACK_DAVE_HIT2
+T=Don't! If you kill me, everyone here might die!
+BNAME=BACKDAVE
+BVOICE=BACKDAVE
+TEN=ACTIVATE_CLICKERS
+
+#-------------------------------------------------------
+# Talk to the group of four after story finished
+#-------------------------------------------------------
+
+ID=PC21_BACK_GROUPFOUR1
+T=Hey, Brook!
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+CONTEXT=Free talk with the group of 4 enemies
+
+T=The name's Brok.
+W=BROK
+A=ANGRY
+
+T=Yeah? Well, I remember ya!
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=Did a bed delivery and da thing wouldn't fit through the stairs.
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=That was you?! I almost got crushed when you threw it!
+W=BROK
+A=SURPRISED
+
+T=Hey, don't blame me if your home sucks!
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=At least I'm not wearing mine on my back!
+W=BROK
+A=OPPOSITE
+
+T=Ha! He got ya there!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+#-------------------------------------------------------
+
+ID=PC21_BACK_GROUPFOUR2
+T=I'm pleased to meet another boxer here like you. Feels nostalgic!
+W=BROK
+A=MEH
+CONTEXT=Free talk with the group of 4 enemies
+
+T=And?...
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=Uhh, nothing, just saying. Since I used to be one.
+W=BROK
+A=MAYBE
+
+T=Yes, I could tell. Which is why I'll make sure I won't lose next time.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=Hey now, no need to take it seriously.
+W=BROK
+A=ANGRY
+
+T=It was a four against two and yet I lost, I can't let that slide.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=I'll have to train harder and improve my skills enough so no other boxer can beat me so easily.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=Well... I admire the dedication at least so I wish you luck. I don't mind getting more duels!
+W=BROK
+A=MEH
+
+T=Hmm? What's that in your pocket?
+W=BROK
+A=THINK
+
+T=My music player, it helps with my training routine.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T="Slithery Snek"
+TEXTONLY=1
+
+T=Just my current regular track to listen to.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=Cool, maybe I'll give it a listen!
+W=BROK
+A=HAPPY
+
+T=If you wanna.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=<col=BOLD>"Slithery Snek"</col> added to the jukebox music tracks.
+TEXTONLY=1
+TEN=PC21_BACK_GROUPFOUR2_GET
+
+#-------------------------------------------------------
+
+ID=PC21_BACK_GROUPFOUR3
+
+T=(Rattles nails on table)
+SOUND=rattlenails
+SILENCE=1
+
+T=Hmm... Nice nails...!
+W=BROK
+A=MEH
+
+T=Right?!
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Yeah!...
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=I mean, I've felt them... under my skin...
+W=BROK
+A=MAYBE
+
+T=So, is it true you're from a distant country?
+W=BROK
+A=THINK
+
+T=Nah. Prisoner exiled.
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Outside of Atlasia, I mutated.
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Mutated?!
+W=BROK
+A=CONFUSED
+
+T=Month after month, my nails grew.
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Did not want to cut them. Turned into deathly claws.
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Last month, mommy finally came and freed me! Mommy is the best!
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Wait, what?
+W=BROK
+A=SURPRISED
+
+T=Yeah. Mommy is big and strong.
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Someday I'll be stronger than mommy, too!
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Not sure I want to meet her then...
+W=BROK
+A=WORRIED
+CONTEXT=Free talk with the group of 4 enemies
+
+#-------------------------------------------------------
+
+ID=PC21_BACK_GROUPFOUR4
+
+T=I'm so thirsty. Can you guys call one of those server buffoons?
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=No need, man.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+TEN=PC21_BACK_GROUPFOUR4_CATCHDRINK
+
+T=(Extends arm to grab a drink)
+SILENCE=1
+TEXTONLY=1
+
+T=Flawless catch.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Tsk. Show off!
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=What can I say? I'm a natural.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=There's nothing natural about that metal piece of trash.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=Feh, you're just jealous.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Not only does it attracts the chicks, it makes me the toughest guy around here.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Pfft, yeah, so tough you lost the fight.
+W=BROK
+C1=BROK
+C1A=MEH
+
+T=Ha! He got you there.
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=Hmph! So what if I lost that stupid fight?
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=With my threads and feathers, I won the looks battle.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Yeah yeah, keep crowing. I've heard it all before from other losers.
+W=BROK
+A=ALRIGHT
+
+T=You only won because everyone else distracted me!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Face me one-on-one, and I'll punch that broken muzzle of yours so they have to replace the entire thing with metal!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Now you're just projecting.
+W=BROK
+A=MOCK
+
+T=You're jealous that I've got these real biceps, and you're stuck with that steel accordion for an arm.
+W=BROK
+A=COCKY
+
+T=Oh, I'll play some music for ya, stupid croc!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Fight! Fight! Fight!
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=Shuddup, Matt!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=What, too chicken to back up all your talk?
+W=BROK
+A=MOCK
+
+T=That does it...!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Throw one punch, and you two will see what'll happen.
+W=HYENA
+C2=HYENA
+C2A=MEH
+
+T=...
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=...
+W=BROK
+A=OPPOSITE
+
+T=You'd better not piss 'Jaw off.
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+
+T=I did once. Broke off a tooth...
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=Haha, yeah. That was fun to watch.
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=Fine, whatever.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=We'll finish this somewhere else. Soon.
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Anytime.
+W=BROK
+
+T=(Punks like this always back down. Just gotta stand your ground)
+W=BROK
+MOOD=THINK
+#-------------------------------------------------------
+
+ID=PC21_BACK_GROUPFOURHIT1
+T=Man! We've crowned you, what more do you want?!
+BNAME=ROOSTER
+BVOICE=ROOSTER
+TEN=ACTIVATE_CLICKERS
+
+#-------------------------------------------------------
+
+ID=PC21_BACK_GROUPFOURHIT2
+T=Ya're gonna get it...
+BNAMESP=BEAR
+BVOICESP=BEAR
+
+T=No way. The rules, guys.
+BNAMESP=ARMADILLO
+BVOICESP=ARMADILLO
+
+T=Let's fight in V.R.!
+BNAMESP=BOXERSNAKE
+BVOICESP=BOXERSNAKE
+TEN=ACTIVATE_CLICKERS
+
+###################################################################################################################
+###################################################################################################################
+#										QUIZZ CHALLENGE
+###################################################################################################################
+###################################################################################################################
+
+ID=PC21_QUIZZ_FIRST
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=First time choosing the quizz challenge
+
+T=Huh...? The headset is displaying something...
+W=BROK
+C1A=WONDER
+
+T=Hello and welcome to 'Counter Quizz!'
+
+T=This game is provided by the CounterAttack Bar and is 100% not affiliated with the Triangle.
+
+T=A game?!
+W=BROK
+
+T=Yes, a game challenge! You have 60 seconds to reply 10 questions.
+
+T=You pass when you answer at least {nb} questions correctly.
+
+T=Are you ready?
+TEN=PC21_QUIZZ_START
+
+#----------------------
+ID=PC21_QUIZZ_RESULT
+T=Your score is <col=BOLD>{value}</col>.
+TEN=PC21_QUIZZ_CHECKSCORE
+
+#----------------------
+ID=PC21_QUIZZ_ENDDIALOGUE
+T=What do you think? I coded that quiz!
+W=HEDGEHOG
+C1=BROK
+C1A=THINK
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=This is tough!
+W=BROK
+C1A=TIRED
+
+T=Yeah! You can do it!
+W=HEDGEHOG
+TEN=PC21_QUIZZ_LEAVE
+
+
+
+
+
+###################################################################################################################
+###################################################################################################################
+#										ACTIONS IN THE ROOM
+###################################################################################################################
+###################################################################################################################
+
+ID=PC21_JUMPTABLE1
+T=All newbies do this.
+W=FROG
+C1=FROG
+C1A=BUBBLES
+COMM=Jump on table
+NB=1
+D=120
+CONTEXT=Actions in the room: jumping on tables
+
+T=Every. Single. One. Of them.
+W=FROG
+NB=1
+D=120
+
+#----------------------
+
+ID=PC21_JUMPTABLE2
+T=Not a single care for Bubbles, who has to clean up the mess.
+W=FROG
+C1=FROG
+C1A=MEH
+NB=1
+D=120
+
+#----------------------
+
+ID=PC21_HYENA_OFFLIMIT1
+T=Sir.
+W=FROG
+C1=FROG
+C1A=MEH
+CONTEXT=Actions in the room: go behind the bar
+
+T=This bubble of joy you're having will burst at any moment.
+W=FROG
+
+#----------------------
+
+ID=PC21_HYENA_OFFLIMIT2
+T=Off limit, man.
+W=HYENA
+C1=HYENA
+C1A=MEH
+COMM=Go behind the bar
+
+T=Of course you won't listen, so I'll keep acting as if nothing happened.
+W=HYENA
+
+#----------------------
+
+ID=PC21_HYENA_OFFLIMIT3
+T=Wanna help?
+W=HYENA
+C1=HYENA
+C1A=THINK
+COMM=Go behind the bar
+
+
+#----------------------
+
+ID=PC21_HEDGEHOG_OFFLIMIT1
+T=Oh!
+W=HEDGEHOG
+C1=HEDGEHOG
+C1A=THINK
+COMM=Go behind the bar
+
+T=There's no secrets here. Hope you're not too disappointed!
+W=HEDGEHOG
+
+#----------------------
+
+ID=PC21_HEDGEHOG_OFFLIMIT2
+T=I don't need help right now, thanks anyway!
+W=HEDGEHOG
+C1=HEDGEHOG
+C1A=CHEERFUL
+COMM=Go behind the bar
+
+#-----------------------------------
+# Hitting background characters
+#-----------------------------------
+
+ID=PC21_HIT_BACKGROUNDCHAR1
+T=...huh? Smoke?
+W=BROK
+C1=BROK
+C1A=CONFUSED
+NB=1
+D=60
+CONTEXT=Hitting the background characters
+
+T=Bad croc! You just triggered our Anti-Scuffle system.
+W=HYENA
+C2=HYENA
+C2A=SURPRISED
+COMMENT=Anti-Scuffle also reffered to in PC21_ENDING_FINAL-14
+
+T=We set it up to prevent fights in the bar. It's for the good of everyone.
+W=FROG
+C4=FROG
+C4A=NORMAL
+
+T=I got inspired by a similar thing I saw in the Drums, back when I lived there.
+W=HYENA
+C2A=NORMAL
+
+T=It disorients you enough so that you can't actually land any hits.
+W=FROG
+
+T=Amazing what we can do using decrepit dome hardware salvaged from landfills, don't ya think?
+W=HYENA
+C2A=THINK
+
+T=That sucks!
+W=BROK
+C1A=OPPOSITE
+
+T=I'll forgive you for saying that if you behave yourself.
+W=HYENA
+C2A=MEH
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_HIT_BACKGROUNDCHAR2
+T=I'm disappointed in you, Mister Gator...
+W=HEDGEHOG
+C1=BROK
+C1A=ANGRY
+C2=HEDGEHOG
+C2A=DOWN
+NB=1
+D=60
+
+T=I thought you were different...
+W=HEDGEHOG
+NB=1
+D=60
+
+T=See, now I'm gonna cry...
+W=HEDGEHOG
+NB=1
+D=60
+TEN=ACTIVATE_CLICKERS
+C2_EYESHUT=1
+
+#----------------------
+
+ID=PC21_HIT_BACKGROUNDCHAR3
+T=You mother... 
+W=HYENA
+C1=BROK
+C1A=ANGRY
+C2=HYENA
+C2A=SURPRISED
+C4=FROG
+C4A=MEH
+NB=1
+D=30
+
+T=Hey. Remember. Not in front of the clients.
+W=FROG
+
+T=Urgh...
+W=HYENA
+C2A=MEH
+
+T=Mister Brok.
+W=FROG
+
+T=You are not a privileged client. If you keep disturbing everyone...
+W=FROG
+
+T=What will happen?
+W=BROK
+
+T=...
+W=FROG
+
+T=So? What will?
+W=BROK
+
+T=Don't test our patience.
+W=FROG
+TEN=ACTIVATE_CLICKERS
+
+#----------------------
+
+ID=PC21_HIT_BACKGROUNDCHAR4
+T=THAT'S IT! YOU F...
+W=HYENA
+C1=HYENA
+C1A=SURPRISED
+TEE=PC21_GAMEOVER_HIT
+COMM=He's about to say a swear word but it's interrupted
+
+###################################################################################################################
+###################################################################################################################
+#										INTERACTIONS IN THE ROOM
+###################################################################################################################
+###################################################################################################################
+ID=PC21_NEWSARTICLES1
+T="Squealers Still Around - Beware!"
+W=BROK
+A=THINK
+CONTEXT=Interactions in the room
+
+T=Looks like an old Drums article. "If you spot a Squealer, you are required to report them immediately to..."
+W=BROK
+
+T=Someone covered the contact info with a sticker and wrote...
+W=BROK
+
+T="Don't listen to Government propaganda. Let Squealers live."
+W=BROK
+
+T="Don't mess with them, they won't mess with you!"
+W=BROK
+
+#---------------------------------
+ID=PC21_NEWSARTICLES2
+T="Bar guidelines"
+W=BROK
+A=THINK
+
+T="Never disclose our location to the authorities."
+W=BROK
+
+T="Make sure you are not followed before entering"
+W=BROK
+
+T="We don't accept Unis."
+W=BROK
+
+T="Fight in the cabins, not in the room"
+W=BROK
+
+T="You break it, you pay for it."
+W=BROK
+
+T="All V.R. fights are broadcast only within the confines of the bar."
+W=BROK
+
+T="Tell management when you want to challenge someone to a duel."
+W=BROK
+
+T="Enjoy yourselves!"
+W=BROK
+
+#---------------------------------
+ID=PC21_EMBLEME1
+T=Is that... the logo of this bar?
+W=BROK
+A=WONDER
+
+T=Yes. Every place needs a striking symbol. This took me a month to design.
+W=FROG
+C2=FROG
+C2A=BUBBLES
+
+T=Tell me, how does it make you feel?
+W=FROG
+
+T=...ehhh...?
+W=BROK
+
+T=A devil bean with two malformed eyes?
+W=BROK
+
+T=Don't look with your eyes. Look with your head.
+W=FROG
+
+T=Well...
+W=BROK
+C1A=THINK
+
+T=It... hurts to look at...?
+W=BROK
+C1A=STUPID
+
+T=I'm sure. Tsk. The beauty of abstraction is wasted on the ignorant.
+W=FROG
+C2A=MEH
+
+#---------------------------------
+ID=PC21_EMBLEME2
+T=Still a devil bean to me!
+W=BROK
+A=MEH
+
+#---------------------------------
+ID=PC21_SINK1
+T=Smells like fruit...
+W=BROK
+A=THINK
+
+T=It doesn't take Unis, only C-Tokens. Better be careful to only buy what I need.
+W=BROK
+A=THINK
+
+T=Let's try it!
+W=BROK
+A=HAPPY
+TEN=PC21_SINK_STORE
+
+#---------------------------------
+ID=PC21_KITCHENWARE1
+T=Plates, glasses, trays...
+W=BROK
+A=THINK
+
+T=And bottles. A lot of bottles-most I don't recognize.
+W=BROK
+
+T=Hey, I don't usually spend that much time in bars!
+W=BROK
+A=ANGRY
+
+#---------------------------------
+ID=PC21_KITCHENWARE2
+T=Just the usual stuff you'd expect to find in a bar.
+W=BROK
+A=ALRIGHT
+
+#---------------------------------
+ID=PC21_DOORLEFT1
+T="Secret area."
+W=BROK
+A=THINK
+
+T=What...?
+W=BROK
+A=WONDER
+
+#---------------------------------
+ID=PC21_DOORLEFT2
+T=(...)
+W=BROK
+A=MAYBE
+SOUND=doorunlock
+
+T=It's locked.
+W=BROK
+A=MEH
+TEN=PC21_DOORLEFT_TRY
+
+T=(Knock, knock)
+W=BROK
+SILENCE=1
+TEXTONLY=1
+SOUND=door_knock
+
+T=Oh, come on!
+W=BROK
+A=ANGRY
+
+T=You can't just name a door "secret" and not expect me to be curious about it!
+W=BROK
+A=OPPOSITE
+
+#---------------------------------
+ID=PC21_DOORLEFT3
+T=This is killing me!
+W=BROK
+A=YELL
+
+#---------------------------------
+ID=PC21_DOORLEFT4
+T=If only I could hit it. Dang perspective!
+W=BROK
+A=OPPOSITE
+
+#---------------------------------
+ID=PC21_DOORLEFT_OPEN
+T=Wait...
+W=BROK
+A=THINK
+
+T=No way... It opened?!
+W=BROK
+A=SURPRISED
+TEN=PC21_DOORLEFT_ENTER
+#!!! MESSAGE TO CODE DIGGERS !!!
+# Yes that door can be open, but the way to do it is secret!
+# On Septecium 14th, player shall jump exactly three times on each circular table
+
+#---------------------------------
+ID=PC21_DOORLEFT_OPEN_AFTER
+T=(This dynamically generated picture contains clues to events in the sequel)
+TEXTONLY=1
+TEN=PC21_DOORLEFT_ENTER3
+
+#---------------------------------
+ID=PC21_DOORRIGHT1
+T="Toilets."
+W=BROK
+A=THINK
+
+T=I can wait!
+W=BROK
+A=MAYBE
+
+#---------------------------------
+ID=PC21_DOORRIGHT2
+T=I'm fine!
+W=BROK
+A=MEH
+
+#---------------------------------
+ID=PC21_DOORRIGHT3
+T=I don't need to!
+W=BROK
+A=ANGRY
+
+#---------------------------------
+ID=PC21_DOORRIGHT4
+T=I'm okay!
+W=BROK
+A=MEH
+
+#---------------------------------
+ID=PC21_DOORRIGHT5
+T=No rush!
+W=BROK
+A=MEH
+
+#---------------------------------
+ID=PC21_DOORRIGHT6
+T=I have other priorities!
+W=BROK
+A=ANGRY
+
+#---------------------------------
+ID=PC21_DOORRIGHT7
+T=Pretty sure it's occupied!
+W=BROK
+A=MAYBE
+
+#---------------------------------
+ID=PC21_DOORRIGHT8
+T=Meh!
+W=BROK
+A=OPPOSITE
+
+#---------------------------------
+ID=PC21_DOORRIGHT9
+T=I don't want to enter!
+W=BROK
+A=OPPOSITE
+
+#---------------------------------
+ID=PC21_DOORRIGHT10
+T=I'm not afraid! I just won't!
+W=BROK
+A=ANGRY
+
+#---------------------------------
+ID=PC21_DOORRIGHT11
+T=(Sigh)
+W=BROK
+A=OPPOSITE
+
+#---------------------------------
+ID=PC21_DOORRIGHT12
+T=Okay, okay! Enough!
+W=BROK
+A=YELL
+
+T=I'll go.
+W=BROK
+A=OPPOSITE
+TEN=PC21_DOORRIGHT_GO
+
+#---------------------------------
+ID=PC21_DOORRIGHT_DO
+T=(Door)
+NB=1
+D=120
+TEXTONLY=1
+SOUND=door_close3
+
+#---------------------------------
+ID=PC21_DOORRIGHT_DO2
+T=(...)
+NB=1
+D=120
+SILENCE=1
+TEXTONLY=1
+SOUND=clothes
+
+#---------------------------------
+ID=PC21_DOORRIGHT_DO3
+T=(Whistles)
+NB=1
+D=120
+
+#---------------------------------
+ID=PC21_DOORRIGHT_DO4
+T=(...)
+NB=1
+D=120
+SILENCE=1
+TEXTONLY=1
+SOUND=clothes_drop
+
+#---------------------------------
+ID=PC21_DOORRIGHT_DO5
+T=(Door)
+NB=1
+D=120
+SILENCE=1
+TEXTONLY=1
+SOUND=doorunlock
+
+#---------------------------------
+ID=PC21_DOORRIGHT_DO6
+T=(Washes)
+NB=1
+D=120
+SILENCE=1
+TEXTONLY=1
+SOUND=sink
+
+#---------------------------------
+ID=PC21_DOORRIGHT_END
+T=Hope I didn't make you wait too long!
+W=BROK
+A=ALRIGHT
+
+T=It's okay! I didn't even notice you were gone!
+W=HEDGEHOG
+C2=HEDGEHOG
+C2A=CHEERFUL
+
+T=...right.
+W=BROK
+C1A=THINK
+
+T=Anyway, look what I've found!
+W=BROK
+C1A=MOCK
+TEN=PC21_DOORRIGHT_GETAD
+
+#---------------------------------
+ID=PC21_DOORRIGHT_END2
+T=Which was... totally not stuck in a weird spot...!
+W=BROK
+A=ALRIGHT
+TEN=ACTIVATE_CLICKERS
+
+#---------------------------------
+ID=PC21_DOORRIGHT13
+T=NO.
+W=BROK
+A=ANGRY
+
+#---------------------------------
+ID=PC21_JUKEBOX1
+T=How do I use this?
+W=BROK
+A=WONDER
+
+T=How many tracks have you unlocked?
+W=FROG
+C2=FROG
+C2A=NORMAL
+
+T=...zero?
+W=BROK
+
+T=(Sigh) Use the spinning wheel next to me to unlock some.
+W=FROG
+
+#---------------------------------
+ID=PC21_AWARDS1
+T=Impressive collection of trophies!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=HYENA
+C2A=NORMAL
+
+T=Naaah.
+W=HYENA
+C2A=MEH
+
+T=Just won some B-grade competitions back in the old days.
+W=HYENA
+
+T=I never was a big champion.
+W=HYENA
+
+T=Seems to me like you're too modest.
+W=BROK
+C1A=MOCK
+
+T=Besides, they aren't all mine!
+W=HYENA
+C2A=NORMAL
+
+T=Most belong to my friend Sharpteeth.
+W=HYENA
+C2A=CHEERFUL
+
+T=What, THE Sharpteeth?
+W=BROK
+C1A=SURPRISED
+
+T=Why would he keep his collection here?
+W=BROK
+
+T=Well...
+W=HYENA
+C2A=MEH
+
+T=He's a friend from the old days.
+W=HYENA
+C2A=NORMAL
+
+T=The night the bar opened, he showed up with an armful of these. 
+W=HYENA
+
+T=Told me to take 'em off his hands, that they'd give the bar "legitimacy."
+W=HYENA
+
+T=Always had to one-up me. Ha!
+W=HYENA
+C2A=CHEERFUL
+
+T=(Ahem, ahem)
+W=FROG
+C4=FROG
+C4A=MEH
+
+T=Oh...! Of course, one of these is yours: the 'longest bubbling' record!
+W=HYENA
+C2A=EMBARASSED
+
+T=(Bubbling)
+W=FROG
+C4A=BUBBLES
+
+T=Nice!
+W=BROK
+C1A=HAPPY
+
+#---------------------------------
+ID=PC21_AWARDS2
+T=A long time ago, I won a trophy like these...
+W=BROK
+A=COCKY
+
+T=It's long gone, now. Same as everything else from my past life.
+W=BROK
+A=DOWN
+
+#---------------------------------
+ID=PC21_LASTFIGHT_GAMEOVER1
+T=(Groan noises)
+BNAMESP=BROK
+BVOICESP=BROK
+
+T=Ha! Who's the better fighter now?!
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+
+T=Stand up, Brok! We can take another round!
+W=CLINT
+C2=CLINT
+C2A=SURPRISED
+
+T=I'll hold the croc down. You take care of his friend. 
+BNAMESP=ROOSTER
+BVOICESP=ROOSTER
+TEN=PC21_LASTFIGHT_GAMEOVER_DO
+
+
+
+
+#---------------------------------
+ID=PC21_ARCADE_WARNING_NEW
+T="Atlasian Madness" is a fan game included as bonus. Each continue costs 50 C-Tokens.
+TEXTONLY=1
+TEN=PC21_ARCADEMACHINE_STARTGAME
+
+
+#---------------------------------
+ID=PC21_JUKEBOX_ADDIALOGUE
+T=What?! But...
+W=BROK
+A=SURPRISED
+#PC07B_SIN_WIN2-4
+
+
+#----------------------
+ID=PC21_BOX_EMPTY
+T=Huh?...
+W=BROK
+C1A=WONDER
+
+#-------------------------------
+ID=COOP_PC21_HYENA1
+T=Give me a drink, bartender!
+
+#-------------------------------
+ID=COOP_PC21_HYENA2
+T=Where's my catch-the-glass mini-game!
+
+#-------------------------------
+ID=COOP_PC21_HEDGEHOG1
+T=He's got the spiky attitude.
+
+#-------------------------------
+ID=COOP_PC21_HEDGEHOG2
+T=I expected more puzzles from Puzzles.
+
+
+#-------------------------------
+ID=COOP_PC21_CLINT1
+T=He's a cool dad!
+
+#-------------------------------
+ID=COOP_PC21_IGUANA1
+T=Too many reptiles in here.
+
+#-------------------------------
+ID=COOP_PC21_SHARK1
+T=Smells fishy.
+
+#-------------------------------
+ID=COOP_PC21_BACK1
+T=I'm too shy.
+
+#-------------------------------
+ID=COOP_PC21_BACK2
+T=I bet they're ghost haters.
+
+#-------------------------------
+ID=COOP_PC21_BACK3
+T=Urgh, lower class citizens.
+

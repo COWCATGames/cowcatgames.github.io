@@ -1,0 +1,1313 @@
+﻿#-------------------------------
+#=GRAFF - SECTOR 56X STREET
+#-------------------------------
+
+#----------------------
+#= Neon
+#----------------------
+
+ID=GPC06_NEON1
+T=A neon sign? Quite an antique... I'm surprised it still works!
+W=GRAFF
+A=THINK
+CONTEXT=Room interactions
+
+#----------------------
+
+ID=GPC06_NEON2
+T=I can't reach it from here.
+W=GRAFF
+A=MEH
+
+#----------------------
+
+ID=GPC06_NEON_TAKEN
+T=Woah! For an antique, it's really bright!
+W=GRAFF
+A=SURPRISED
+
+
+#----------------------
+#= Flower girl
+#----------------------
+
+ID=GPC06_FLOWERS_WELCOME1
+T=Hello...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=FLOWER
+C2A=HAPPY
+CONTEXT=Graff talks to the flower merchant
+
+T=Oh! Hello, young man!
+W=FLOWER
+
+T=Man...?
+W=GRAFF
+C1A=THINK
+
+T=Well, you're no longer a kid, are you?
+W=FLOWER
+C2A=SURPRISED
+T=Erm... Yeah.
+W=GRAFF
+C1A=MEH
+
+T=So, you're...
+W=GRAFF
+
+T=Selling a lot of stuff. Anything you're interested in?
+W=FLOWER
+C2A=NORMAL
+
+T=...Just looking.
+W=GRAFF
+
+T=Talai Lugdei.
+W=FLOWER
+C2A=HAPPY
+COMM=No need to translate these (as long as you're using latin characters), it's supposed to be a foreign language.
+
+T=What?...
+W=GRAFF
+C1A=THINK
+
+T=It means - "You've come to the right place."
+W=FLOWER
+C2A=NORMAL
+
+T=Might you be lost?
+W=FLOWER
+C2A=SURPRISED
+
+T=No! I'm just...
+W=GRAFF
+C1A=GASP
+
+T=...forget it.
+W=GRAFF
+C1A=TURN
+
+T=Danante! Feel free to look.
+W=FLOWER
+C2A=HAPPY
+TEN=PC06_FLOWERS_CREATE
+
+#----------------------
+
+ID=GPC06_FLOWERS_WELCOME2
+T=You're still here.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=Of course!
+W=FLOWER
+C2=FLOWER
+C2A=HAPPY
+
+T=I'm running a special offer currently. Half price on everything!
+W=FLOWER
+
+T=No, thank you.
+W=GRAFF
+
+
+#----------------------
+
+ID=GPC06_STATUETTE1
+T=Is this...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=FLOWER
+C2A=NORMAL
+
+T=Yes. This is The Untail.
+W=FLOWER
+
+T=Do you want a statuette?
+W=FLOWER
+C2A=HAPPY
+
+T=No... I don't believe in this.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Tsk. Be honest. I see it in your eyes...
+W=FLOWER
+C2A=NORMAL
+
+T=You're curious.
+W=FLOWER
+
+T=Here, let me give you this one.
+W=FLOWER
+C2A=HAPPY
+
+T=What? No!
+W=GRAFF
+C1A=GASP
+
+T=I can't accept!
+W=GRAFF
+C1A=OPPOSITE
+
+T=No credit, huh?
+W=FLOWER
+C2A=SURPRISED
+
+T=Look, this is a defective one.
+W=FLOWER
+C2A=NORMAL
+
+T=I wouldn't be able to sell it anyway.
+W=FLOWER
+
+T=...Okay. Thanks.
+W=GRAFF
+C1A=MEH
+
+T=Danante!
+W=FLOWER
+C2A=HAPPY
+TEN=GPC06_STATUETTE_TAKE
+
+#----------------------
+
+ID=GPC06_STATUETTE1B
+T=(Hopefully no one sees me with this. They might think I've turned into an Untail fanatic...)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+
+ID=GPC06_STATUETTE2
+T=I really don't need another.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=FLOWER
+C2A=NORMAL
+
+T=Of course! We believe in The One and Only.
+W=FLOWER
+
+T=Pft.
+W=GRAFF
+C1A=DISDAIN
+
+
+#----------------------
+
+ID=GPC06_STATUETTE_ALREADY
+T=One is enough...
+W=GRAFF
+A=OPPOSITE
+
+#---------------------
+
+ID=GPC06_BOOK1
+T=I guess that book is...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=FLOWER
+C2A=NORMAL
+
+T=The Un-Tales. A collection of guidance verses, lessons transcribed through generations...
+W=FLOWER
+# Changed "transmitted" to "transcribed"
+
+T=It's just stories. Fairy tales written by someone ages ago.
+W=GRAFF
+C1A=DISDAIN
+
+T=Then... What do you believe in?
+W=FLOWER
+C2A=SURPRISED
+
+T=Science.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Of course! Everyone does.
+W=FLOWER
+C2A=NORMAL
+
+T=Tell me. Why are you here?
+W=FLOWER
+
+T=You obviously have no interest in our beliefs.
+W=FLOWER
+
+T=I...
+W=GRAFF
+C1A=TURN
+
+T=Got it. I'm out of here.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Wait! Please!
+W=FLOWER
+C2A=SURPRISED
+
+T=You know what science did to us.
+W=FLOWER
+C2A=SAD
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=We can't live without it now...
+W=FLOWER
+
+T=But that doesn't mean science should be the only thing we have to believe in.
+W=FLOWER
+
+T=It wasn't science's fault. It was the wrong people using it for the wrong reasons.
+W=GRAFF
+C1A=OPPOSITE
+
+T=And what will prevent this situation from happening again?
+W=FLOWER
+C2A=SURPRISED
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=...Understanding.
+W=GRAFF
+C1A=MEH
+
+T=Perfect. And for this, you need an open mind.
+W=FLOWER
+C2A=HAPPY
+
+T=That's why you're here...
+W=FLOWER
+C2A=NORMAL
+
+T=Even if you don't realize it yourself.
+W=FLOWER
+
+T=Yeah, right...
+W=GRAFF
+C1A=TURN
+
+T=Danante! Take your time.
+W=FLOWER
+C2A=HAPPY
+
+#---------------------
+
+ID=GPC06_BOOK2
+T=(A bunch of blather some weak minds dive into to fill the holes in their miserable life.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+
+
+#----------------------
+
+ID=GPC06_PLUSH1
+T=(Oh... That's quite adorable!)
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=FLOWER
+C2A=NORMAL
+MOOD=THINK
+
+T=I see! You'd like a plush?
+W=FLOWER
+
+T=Hey! Do I look like a girl to you?!
+W=GRAFF
+C1A=ANGRY
+
+T=Come on. You can have one if you want!
+W=FLOWER
+C2A=HAPPY
+
+T=No, thanks.
+W=GRAFF
+C1A=OPPOSITE
+
+T=(...But it's really cute.)
+W=GRAFF
+MOOD=THINK
+C1_EYESHUT=1
+
+#----------------------
+#= Other building
+#----------------------
+
+ID=GPC06_OTHERBUILDING1
+T=I really shouldn't enter these buildings.
+W=GRAFF
+A=MEH
+CONTEXT=Room interactions
+
+
+#----------------------
+#= Pipe mail
+#----------------------
+
+ID=GPC06_PIPEMAIL1
+T=No use. I already took my Toxout pill today!
+W=GRAFF
+A=MEH
+
+#----------------------
+
+ID=GPC06_PIPEMAIL_BEFOREFIX1
+T=Darn... This won't work! How will I pay that bill?...
+W=GRAFF
+A=THINK
+
+#----------------------
+
+ID=GPC06_PIPEMAIL_AFTERBUNKER1
+T=Please, oh please... (Cough)
+W=GRAFF
+A=CHOKE
+TEN=GPC06_PIPEMAIL_AFTERBUNKER_USE
+
+T=...
+W=GRAFF
+A=MEH
+
+T=Oh no... That one's broken as well.
+W=GRAFF
+A=SAD
+
+T=(Cough, cough, cough)
+W=GRAFF
+A=CHOKE
+
+T=Maybe I should... Just...
+W=GRAFF
+A=SAD
+
+T=(Cough) Come back home... (Cough, cough)
+W=GRAFF
+A=CHOKE
+
+#----------------------
+ID=GPC06_PIPEMAIL_AFTER
+T=System online.
+W=PIPEMAIL
+C1=GRAFF
+C1A=MEH
+C2=PIPEMAIL
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=That one works?!
+W=OTT
+C3A=SURPRISED
+
+T=Give me a pill!
+W=GRAFF
+
+T=...
+W=PIPEMAIL
+
+T=You have due bills.
+W=PIPEMAIL
+
+T=I should have guessed...
+W=GRAFF
+C1A=SAD
+
+T=What a disappointment...
+W=OTT
+C3A=DISAPPOINTED
+
+#----------------------
+ID=GPC06_PIPEMAIL_BILLC1
+T=I can't believe I'm doing this but...
+W=GRAFF
+A=OPPOSITE
+COMM=Pay the bill
+
+T=Someone's gotta pay that Triweb bill or our access will get cut.
+W=GRAFF
+A=READY
+TEN=GPC06_PIPEMAIL
+
+#----------------------
+#Identical to PC04_PIPEMAIL_TRANSFER_BILL
+
+ID=GPC06_PIPEMAIL_BILLCSCAN
+T=Scanning in progress...
+W=PIPEMAIL
+C1=GRAFF
+C1A=MEH
+C2=PIPEMAIL
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+
+T=Bill detected. The due amount is {amount} Unis.
+W=PIPEMAIL
+COMM=Amount is 150
+TEN=GPC06_PIPEMAIL_TRANSFER_CHECK
+
+#----------------------
+#Identical to PC04_PIPEMAIL_TRANSFER_BILLNOTENOUGH
+ID=GPC06_PIPEMAIL_NOTENOUGH
+T=Insufficient credits on your account.
+W=PIPEMAIL
+C1=GRAFF
+C1A=STUPID
+C2=PIPEMAIL
+C2A=NORMAL
+C3=OTT
+C3A=DISAPPOINTED
+
+T=This failure attempt has been reported to the appropriate creditor.
+W=PIPEMAIL
+
+T=I hate those things...
+W=GRAFF
+C1A=ANGRY
+
+T=You don't say...
+W=OTT
+C3A=OPPOSITE
+
+#----------------------
+ID=GPC06_PIPEMAIL_TRANSFER
+T=Sufficient credits. Payout done.
+W=PIPEMAIL
+C1=GRAFF
+C1A=HAPPY
+C2=PIPEMAIL
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=One good thing done...
+W=GRAFF
+C1A=DISDAIN
+
+T=Thank you and goodbye.
+W=PIPEMAIL
+
+T=At least it's polite.
+W=OTT
+C3A=OPPOSITE
+
+
+
+#----------------------
+ID=GPC06_PIPEMAIL_INVOICEHACKER
+T=Scanning in progress...
+W=PIPEMAIL
+C1=GRAFF
+C1A=MEH
+C2=PIPEMAIL
+C2A=NORMAL
+
+T=Rejected. This is not a valid invoice.
+W=PIPEMAIL
+
+T=Hmm... Weird.
+W=GRAFF
+C1A=THINK
+
+#----------------------
+#= Road block
+#----------------------
+
+ID=GPC06_RUBBLE1
+T=That must have happened a long time ago.
+W=GRAFF
+A=THINK
+CONTEXT=Room interactions
+
+T=Well, at least I won't wander any further.
+W=GRAFF
+A=MEH
+
+
+#----------------------
+#= Door
+#----------------------
+
+ID=GPC06_METALSHUTTERS1
+T=Going to this dump?...
+W=GRAFF
+A=MEH
+
+T=No, thanks. Got the same one at home.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+#= Keyboard panel
+#----------------------
+
+ID=GPC06_LEFTPANEL1
+T=I'd need a code... I don't intend to enter, anyway.
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Infophone panel
+#----------------------
+
+ID=GPC06_RIGHTPANEL1
+T=Woah... What's wrong with that infophone?
+W=GRAFF
+A=THINK
+
+T=There must be a short circuit running inside that button!
+W=GRAFF
+A=MEH
+
+T=It's dangerous... though I doubt anyone would be stupid enough to touch it.
+W=GRAFF
+A=DISDAIN
+
+
+#----------------------
+
+ID=GPC06_RIGHTPANEL2
+T=Yeah! I've always dreamt of getting electrocuted!
+W=GRAFF
+A=OPPOSITE
+# changed power shocked to electrocuted
+
+#----------------------
+
+ID=GPC06_RIGHTPANEL_DISABLED1
+T=It's off, but still risky.
+W=GRAFF
+A=MEH
+
+T=Now, how do I take that button? I can't really get a grip...
+W=GRAFF
+A=THINK
+
+#----------------------
+
+ID=GPC06_RIGHTPANEL_REMOVED1
+T=Well... No more spying, I guess?
+W=GRAFF
+A=DISDAIN
+
+#----------------------
+
+ID=GPC06_RIGHTPANEL_SCREWDRIVER
+T=Let's see if I can pull this button out...
+W=GRAFF
+A=READY
+TEN=GPC06_RIGHTPANEL_SCREWDRIVER_CHECK
+
+#----------------------
+ID=GPC06_RIGHTPANEL_HURT1
+T=Bad idea... Ouch, that hurts!
+W=GRAFF
+A=STUPID
+
+#----------------------
+ID=GPC06_RIGHTPANEL_OK
+T=...
+W=GRAFF
+A=MEH
+TEE=PC06_PANELSTATUS_CREATE
+
+T=...There! Woops, everything came off.
+W=GRAFF
+A=GASP
+
+T=Well... At least I got my "button of death".
+W=GRAFF
+A=DISDAIN
+TEN=GPC06_RIGHTPANEL_GET
+
+#----------------------
+ID=GPC06_RIGHTPANEL_GET2
+T=And it's even got a NUB connector. Perfect!
+W=GRAFF
+A=HAPPY
+
+#----------------------
+#= Bottom panel
+#----------------------
+
+ID=GPC06_BOTTOMPANEL1
+T=Looks like one of those old wire panels...
+W=GRAFF
+A=THINK
+
+T=Wow. They even used screws! Truly ancient...
+W=GRAFF
+A=FRIENDLY
+
+#----------------------
+
+ID=GPC06_BOTTOMPANEL2
+T=It's firmly shut.
+W=GRAFF
+A=MEH
+#----------------------
+
+ID=GPC06_BOTTOMPANEL_KEYGRAFF
+T=No! The tip is different.
+W=GRAFF
+A=THINK
+
+#----------------------
+
+ID=GPC06_BOTTOMPANEL_SCREWDRIVER
+T=Easy!
+W=GRAFF
+A=HAPPY
+
+T=Now, let's see...
+W=GRAFF
+A=THINK
+TEN=GPC06_BOTTOMPANEL_CLOSEUP
+
+
+#----------------------
+
+ID=GPC06_BOTTOMPANEL_NOMESSUP
+T=I could try opening it but... Why?
+W=GRAFF
+A=THINK
+
+
+
+#----------------------
+
+ID=GPC06_BOTTOMPANEL_FIRST
+T=What the heck?! Who designed this mess?...
+W=GRAFF
+A=ANGRY
+COMM=It's a bag of wires
+
+#----------------------
+
+ID=GPC06_WIREPANELTOP1
+T=The wires are going into the wall. I can't access them from here.
+W=GRAFF
+A=MEH
+
+#----------------------
+
+ID=GPC06_WIREPANEL1
+T=The wires are behind that glass shell...
+W=GRAFF
+A=MEH
+
+T=Ngggh... It's... stuck! Must not have been opened... in ages...
+W=GRAFF
+A=ANGRY
+
+T=No use... I don't have enough strength to open it.
+W=GRAFF
+A=MEH
+
+T=Hmm... Maybe I won't need to!
+W=GRAFF
+A=THINK
+
+#----------------------
+
+ID=GPC06_WIREPANEL2
+T=What a mess...
+W=GRAFF
+A=OPPOSITE
+
+T=I can't access the wires from there... But I shouldn't need to.
+W=GRAFF
+A=MEH
+
+#----------------------
+
+ID=GPC06_WIREPANEL_OTHERS1
+T=(Bam, bam)
+
+T=Argh! I can't break it!
+W=GRAFF
+A=ANGRY
+
+#----------------------
+
+ID=GPC06_WIREPANEL_OTHERS2
+T=It's pointless... That glass shell is near indestructible.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+
+ID=GPC06_THUMBWHEEL1
+T=Looks like I can disconnect this wire. Should I ?
+W=GRAFF
+A=THINK
+TEN=GPC06_WIRE_CHOICE
+
+#----------------------
+
+ID=GPC06_THUMBWHEEL2
+T=Is this the good one?...
+W=GRAFF
+A=THINK
+TEN=GPC06_WIRE_CHOICE
+
+
+#----------------------
+
+ID=GPC06_BATTERY1
+T=That's a power battery... filled with gas. A very old model.
+W=GRAFF
+A=MEH
+COMM=Not gasoline but some kind of poisonous gas
+
+#----------------------
+
+ID=GPC06_ICON1
+T=Looks like the closeby digicode.
+W=GRAFF
+A=MEH
+COMM=He's referring to the digicode near the door which Brok uses to type the code and open the gate
+
+#----------------------
+
+ID=GPC06_ICON2
+T="...ttery"
+W=GRAFF
+A=THINK
+COMM=It's meant to be "battery"
+
+T=It's half erased...
+W=GRAFF
+A=MEH
+
+
+#----------------------
+
+ID=GPC06_ICON3
+T=The infophone, I guess?
+W=GRAFF
+A=THINK
+
+#----------------------
+
+ID=GPC06_ICON4
+T="Power"
+W=GRAFF
+A=MEH
+
+#----------------------
+
+ID=GPC06_THUMBWHEEL_ALREADY
+T=It's stuck!... I can't screw it back...
+W=GRAFF
+A=STUPID
+
+
+#----------------------
+
+ID=GPC06_GASSPREAD1
+T=(Cough, cough)
+W=GRAFF
+A=CHOKE
+
+T=Oh no... (Cough) A power battery leaked gas...
+W=GRAFF
+A=CHOKE
+
+T=I disconnected the wrong wire... What an idiot!
+W=GRAFF
+A=STUPID
+
+#----------------------
+
+ID=GPC06_CODECHANGE1
+T=Woops!...
+W=GRAFF
+A=GASP
+TEN=GPC06_WIRE_CODECHANGE3
+
+#----------------------
+
+ID=GPC06_CODECHANGE2
+T=Oh no! No one will be able to get inside now!
+W=GRAFF
+A=GASP
+
+T=And... I can't put the thumb wheel back... Argh!
+W=GRAFF
+A=ANGRY
+
+T=...
+W=GRAFF
+A=SAD
+TEN=GPC06_WIRE_CODECHANGE3
+
+
+#----------------------
+
+ID=GPC06_INFOPHONE_REACT1
+T=Okay...
+W=GRAFF
+A=MEH
+TEN=GPC06_WIRE_INFOPHONECHANGE3
+
+
+#----------------------
+
+ID=GPC06_INFOPHONE_REACT2
+T=Did this work?
+W=GRAFF
+A=THINK
+TEN=GPC06_WIRE_INFOPHONECHANGE3
+
+
+#-------------------------------------------------------------------------------
+#====================================CUTSCENES==================================
+#-------------------------------------------------------------------------------
+
+#----------------------
+#= Arriving on screen
+#----------------------
+
+ID=GPC06_FIRST1
+T=...?
+W=GRAFF
+A=THINK
+CONTEXT=Arriving on screen
+
+T=Great. What am I doing here?...
+W=GRAFF
+A=MEH
+
+T=(Sigh) Got lost in my thoughts again. I shouldn't wander too far.
+W=GRAFF
+A=SAD
+TEN=CLICKERS_BACK
+
+#------------------------------------------------------------------------------
+#= Drones scene Drones goes from bridge in front of Graff towards merchant
+#------------------------------------------------------------------------------
+ID=GPC06_DRONES1
+T=What...
+W=GRAFF
+A=MEH
+CONTEXT=Drones goes from bridge in front of Graff towards merchant
+TEN=GPC06_DRONES1B
+
+#----------------------
+ID=GPC06_DRONES2
+T=Huh?!
+W=FLOWER
+C1=FLOWER
+C1A=SURPRISED
+
+T=Selling without licence is forbidden
+BVOICESP=VARIOUS
+
+T=Oh no!... The police!
+W=FLOWER
+
+T=I surrender! I surrender!...
+W=FLOWER
+
+T=Please don't hurt me!
+W=FLOWER
+
+T=Explain yourself
+BVOICESP=VARIOUS
+
+T=It's true...
+W=FLOWER
+C1A=SAD
+
+T=I'm just... Selling goods to make a living!
+W=FLOWER
+
+T=Explain yourself
+BVOICESP=VARIOUS
+
+T=Well... I had no idea I needed a licence!
+W=FLOWER
+C1A=SURPRISED
+
+T=Explain yourself
+BVOICESP=VARIOUS
+
+T=...?
+W=FLOWER
+
+T=I've already told you!
+W=FLOWER
+
+T=Oh boy, oh boy...
+W=FLOWER
+C1A=SAD
+TEN=GPC06_DRONES_FLOWERSCARED
+
+T=Explain yourself
+BVOICESP=VARIOUS
+
+T=Something's wrong...
+W=GRAFF
+C2=GRAFF
+C2A=THINK
+C1=NONE
+
+T=This drone must be bugged! It's gonna shoot at any moment!
+W=GRAFF
+C2A=GASP
+
+T=What should I do?...
+W=GRAFF
+TEN=GPC06_DRONE_DECIDE
+
+#----------------------
+ID=GPC06_DRONES_FLEE
+T=...
+W=FLOWER
+C1=FLOWER
+C1A=SURPRISED
+
+T=Delay expired
+BVOICESP=VARIOUS
+
+T=Nooooo!...
+W=FLOWER
+C1_EYESHUT=1
+SOUND=laser
+TEN=PC06_TO_EV_MAP_SWITCH
+
+#----------------------
+ID=GPC06_DRONES_WIN1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=FLOWER
+C2A=SURPRISED
+CONTEXT=Winning against the drone
+
+T=Danante! You've saved me!
+W=FLOWER
+
+T=You were amazing!
+W=FLOWER
+C2A=HAPPY
+
+T=I... guess.
+W=GRAFF
+C1A=TURN
+
+T=Yes, you were! Now we know what brought you here!
+W=FLOWER
+
+T=Right...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Anyway... Bye.
+W=GRAFF
+
+T=Wait, don't go!
+W=FLOWER
+C2A=SURPRISED
+
+T=You deserve a reward!
+W=FLOWER
+C2A=HAPPY
+
+T=I'm good.
+W=GRAFF
+C1A=MEH
+
+T=Nonsense. You're obviously looking for something.
+W=FLOWER
+C2A=NORMAL
+
+T=You know what? Take a good look at my stand.
+W=FLOWER
+C2A=HAPPY
+
+T=I'll give you anything you want!
+W=FLOWER
+
+T=Hmm... Okay.
+W=GRAFF
+C1A=THINK
+TEN=GPC06_DRONE_AFTERWIN
+
+#------------------------------------------------------------------------------
+#= Merchant gone
+#------------------------------------------------------------------------------
+ID=GPC06_MERCHANTGONE1
+T=...
+W=GRAFF
+A=MEH
+CONTEXT=Graff decided to leave and merchant got killed off-screen
+
+T=No trace of the merchant...
+W=GRAFF
+
+T=Either she managed to escape, or...
+W=GRAFF
+A=SAD
+
+T=...
+W=GRAFF
+
+T=In any case, she won't be coming back for a while.
+W=GRAFF
+A=TURN
+TEN=CLICKERS_BACK
+
+#------------------------------------------------------------------------------
+ID=GPC06_DRONE_GAMEOVER
+T=Almighty... Why are you doing this to us?...
+W=FLOWER
+A=SAD
+TEN=GPC06_DRONE_GAMEOVER_EVENT
+
+#------------------------------------------------------------------------------
+#= Merchant gone - Statuette
+#------------------------------------------------------------------------------
+ID=GPC06_GONE_STATUETTE1
+T=Some religious plastic statuettes...
+W=GRAFF
+A=MEH
+CONTEXT=Room interactions
+
+T=No one will mind if I take that damaged unit.
+W=GRAFF
+A=THINK
+TEN=GPC06_STATUETTE_TAKE
+
+#------------------------------------------------------------------------------
+ID=GPC06_GONE_STATUETTE1B
+T=Without anyone to watch over it, the whole stand is going to be vandalized anyway.
+W=GRAFF
+A=DISDAIN
+
+#------------------------------------------------------------------------------
+ID=GPC06_GONE_STATUETTE2
+T=One is enough.
+W=GRAFF
+A=MEH
+
+#------------------------------------------------------------------------------
+#= Merchant gone - Book
+#------------------------------------------------------------------------------
+ID=GPC06_GONE_BOOK1
+T=I like reading books... Just not THAT type of reading.
+W=GRAFF
+A=OPPOSITE
+
+T=It goes pretty much against everything I believe in.
+W=GRAFF
+
+#----------------------
+#= Thugs TODO Another screen, or replace by a malfunctioning robot?...
+#----------------------
+
+ID=GPC06_THUGS1
+T=Uh oh... A group of thugs is coming this way...
+W=GRAFF
+A=GASP
+CONTEXT=Thugs come at Graff - unfinished scene
+
+T=I better hide!...
+W=GRAFF
+
+
+
+#----------------------
+
+ID=GPC06_OTT_ARRIVE
+T=We haven't crossed anyone in the streets today...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+CONTEXT=Day 3 - Graff and Ott visit the street
+
+T=Yeah. Everyone's hiding inside.
+W=OTT
+C1A=MEH
+
+T=You know... I'm kinda glad to be with you right now.
+W=OTT
+
+T=How so?
+W=GRAFF
+C1A=THINK
+
+T=Well...
+W=OTT
+C2A=DISAPPOINTED
+
+T=You're kinda strong...
+W=OTT
+
+T=I can't defend myself. I totally flunked that self-defense test, remember?
+W=OTT
+C2A=SAD
+
+T=You've survived this far!
+W=GRAFF
+C1A=FRIENDLY
+
+T=Only because I run fast...
+W=OTT
+C2A=DISAPPOINTED
+
+T=Brok would say... "Being strong lies in your mind"!
+W=GRAFF
+C1A=DISDAIN
+
+T=Easy for you to say!
+W=OTT
+C2A=OPPOSITE
+
+T=You're both so much taller and sturdier than I could ever be.
+W=OTT
+C2A=SAD
+
+T=Sturdy? Am I?...
+W=GRAFF
+C1A=THINK
+
+T=I guess those hard training sessions at the Consc' worked after all!
+W=GRAFF
+C1A=FRIENDLY
+
+T=If a Squealer shows his face, he's going down!
+W=GRAFF
+C1A=COCKY
+
+T=Yeah!
+W=OTT
+C2A=HAPPY
+
+
+#----------------------
+ID=GPC06_STATUETTE_OTT
+T=You want one?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=No thanks. I've already got many at home.
+W=OTT
+C1A=MEH
+
+T=Really?... I never thought...
+W=GRAFF
+C1A=THINK
+
+T=My parents.
+W=OTT
+
+T=I'm not sure what to think of it myself.
+W=OTT
+C2A=WONDER
+
+T=Me neither. I'm always too busy to even think about spiritual matters.
+W=GRAFF
+C1A=DISDAIN
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 25/08/2019
+###############################################
+
+
+
+#----------------------
+ID=GPC06_STALL_PILL1
+T=No pill... (Cough)
+W=GRAFF
+C1=GRAFF
+C1A=CHOKE
+
+T=And no merchant...
+W=GRAFF
+
+
+
+#-----------------------------
+ID=PC06_FLOWERS_WALKONSTAND1
+T=Sir! Please get off my stall!
+W=FLOWER
+C2=FLOWER
+C2A=SAD
+NB=1
+D=60
+
+#-----------------------------
+ID=PC06_FLOWERS_WALKONSTAND2
+T=If you break anything, I'll have you pay for it!
+W=FLOWER
+C2=FLOWER
+C2A=HAPPY
+NB=1
+D=60
+
+#-----------------------------
+ID=PC06_FLOWERS_WALKONSTAND3
+T=The almighty shall punish you for this!
+W=FLOWER
+C2=FLOWER
+C2A=SAD
+NB=1
+D=60
+
+
+#-----------------------------
+#= Hitting the flower girl
+#-----------------------------
+#= Hitting the flower girl
+#-----------------------------
+ID=PC06_FLOWERS_HIT1
+T=Good heavens! You've scared me!
+W=FLOWER
+C2=FLOWER
+C2A=SURPRISED
+
+#-----------------------------
+ID=PC06_FLOWERS_HIT2
+T=I'll give you a discount!... Please don't hurt me!
+W=FLOWER
+C2=FLOWER
+C2A=SURPRISED
+
+#-----------------------------
+ID=PC06_FLOWERS_HIT3
+T=Aaahhaaah!...
+W=FLOWER
+C2=FLOWER
+C2A=SURPRISED
+C2_EYESHUT=1
+
+
+#----------------------------------------------------
+ID=COOP_GPC06_FLOWERS1
+T=A flower merchant that doesn't sell flowers.
+

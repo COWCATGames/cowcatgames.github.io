@@ -1,0 +1,194 @@
+﻿#-------------------------------
+#=  INSIDE PYRAMID
+#-------------------------------
+
+#----------------------
+ID=PC12B_FIRST
+T=Whoa! They're not kidding around with security here.
+W=BROK
+A=SURPRISED
+TEN=PC12B_TUTORIAL_RUN
+CONTEXT=This room is filled with lasers
+
+#----------------------
+ID=PC12B_AFTERGAMEOVER
+T=Hmm... Those lasers look deadly.
+W=BROK
+A=THINK
+
+T=I can probably get through if I'm super careful... or maybe find an alternate route?
+W=BROK
+A=THINK
+TEN=PC12B_ADD_SKIP
+
+#----------------------
+ID=PC12B_PANEL1
+T=Nggggh!
+W=BROK
+A=THINK
+CONTEXT=Panel in the background
+
+T=This won't open. Not with bare hands, at least.
+W=BROK
+A=TIRED
+
+#----------------------
+ID=PC12B_PANEL_UNLOCKED
+T=There!
+W=BROK
+A=THINK
+
+T=Hmm... Looks like it's running at full power.
+W=BROK
+A=THINK
+
+T=I should take care of that!
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC12B_PANEL_UNLOCKED2
+T=Hey! It worked!
+W=BROK
+A=THINK
+
+T=Bye-bye lasers!
+W=BROK
+A=THINK
+TEN=PC12B_PANEL_UNLOCK_PROGRESS
+
+
+#----------------------
+ID=PC12B_PANEL_OTHERS
+T=Nope... I'd need an object I could use as a handle with that hole.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC12B_MAINFRAME1
+T=This must be the computer Shay talked about!
+W=BROK
+A=THINK
+CONTEXT=Mainframe computer
+
+T=Let's see...
+W=BROK
+TEN=PC12B_MAINFRAME_CLOSEUP
+
+
+
+#----------------------
+ID=PC12B_TOUCHPANEL1
+T=There, I've touched that panel... And...
+W=BROK
+A=THINK
+
+T=Now what? That's all Shay told me to do!
+W=BROK
+A=MAYBE
+
+T=I should have known it wouldn't be that easy...
+W=BROK
+A=OPPOSITE
+
+
+#----------------------
+ID=PC12B_BUTTON1
+T=Hmm... Nothin'.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC12B_BUTTON2
+T=Nope.
+W=BROK
+A=DOWN
+
+
+#----------------------
+ID=PC12B_BUTTON_ALERT1
+T=Gulp!
+W=BROK
+A=CONFUSED
+TEN=PC12B_SETALARM
+
+#----------------------
+ID=PC12B_BUTTON_ALERT2
+T=Oh gosh! Not again!
+W=BROK
+A=SURPRISED
+TEN=PC12B_SETALARM
+
+#----------------------
+ID=PC12B_BUTTON_ALERT3
+T=I should really start paying attention to where I put my paws...
+W=BROK
+A=STUPID
+TEN=PC12B_SETALARM
+
+#----------------------
+ID=PC12B_BUTTON_GOOD
+T=It worked?! Do I have a Drumer license now?
+W=BROK
+A=WONDER
+
+T=Awesome! I can finally leave this stressful place...
+W=BROK
+A=ALRIGHT
+TEN=PC12B_LEAVE1
+
+#----------------------
+ID=PC12B_BUTTON_GOOD2
+T=...
+W=BROK
+A=THINK
+
+T=Maybe I should do the same for Graff.
+W=BROK
+A=WONDER
+
+T=...
+W=BROK
+
+T=...nah.
+W=BROK
+A=ALRIGHT
+
+T=He'll get his diploma, and he'd blame me forever if he knew I cheated.
+W=BROK
+
+T=I trust him!
+W=BROK
+A=READY
+TEN=PC12B_LEAVE2
+
+#----------------------
+ID=PC12B_EXIT1
+T=I can't leave yet!
+W=BROK
+A=ANGRY
+
+
+#----------------------
+ID=PC12B_NOMORE
+T=Huh...? They're not comin'...?
+W=BROK
+A=WONDER
+CONTEXT=No more robots to fight
+
+T=Out of stock?
+W=BROK
+TEN=PC12B_SETALARM_OFF
+
+
+#----------------------
+ID=PC12B_NUMBER1
+T=I'd... rather not know what's in there...
+W=BROK
+A=HAPPY
+CONTEXT=A number on the door where Tribots arrive from
+
+###############################################
+# PROOFREAD - jblaker - 25/06/2019
+# PROOFREAD - Chris Barnes - 05/08/2019
+###############################################

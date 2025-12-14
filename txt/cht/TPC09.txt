@@ -1,0 +1,778 @@
+#-------------------------------
+#=POLICE ENTRANCE
+#-------------------------------
+
+#----- Interactions --------
+PC_JAIL=前往監獄
+PC_OFFICE=辦公室
+PC_BARRIER=屏障
+
+#----- Choices / Items --------
+
+
+#----- Topics --------
+GOT_SPEAKER=揚聲器！
+
+#----- Dialog --------
+# *****************************************************************
+# CONTEXT - Go there before getting chip OR the mission for the hacker
+# *****************************************************************
+# Wes
+PC09_TOOSOON1-1=……
+# Brok
+PC09_TOOSOON1-2=喂。還好嗎？
+# Wes
+PC09_TOOSOON1-3=來得這麽早？
+# Wes
+PC09_TOOSOON1-4=計劃改變，我得出去一趟。
+# Brok
+PC09_TOOSOON1-5=喂，等一下！那我怎麽辦？
+# Wes
+PC09_TOOSOON1-6=回來我再給你佈達新任務。
+#----------------------------------------------------
+# Brok
+PC09_TOOSOON2-1=哈……難怪這傢伙周圍都是機器人。
+# Brok
+PC09_TOOSOON2-2=他自己也一樣冷冰冰的。
+# Brok
+PC09_TOOSOON2-3=算了，沒必要繼續待在這了。
+# Brok
+PC09_TOOSOON2-4=就趁這機會去辦好格拉夫的事吧！
+#----------------------------------------------------
+# Brok
+PC09_TOOSOON_SHAY-1=雪伊想要什麽來著？
+#----------------------------------------------------
+# Brok
+PC09_DOOR_TOOSOON-1=上鎖了……
+# Brok
+PC09_DOOR_TOOSOON-2=目前我應該先幫助格拉夫解決困難。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC09_WINDOW1-1=黑漆漆的……看不見裏面有沒有人。
+#----------------------------------------------------
+# Brok
+PC09_BUTTON1-1=噢……還以為能打開些什麽。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When sneaking after escaping jail
+# *****************************************************************
+# Brok
+PC09_TO_JAIL1-1=現在想回去已經太遲了！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Shutting down tribot
+# *****************************************************************
+# Brok
+PC09_TRIBOT_TOOFAR-1=或許可以嘗試關閉它……
+# Brok
+PC09_TRIBOT_TOOFAR-2=但必須得悄悄靠近。
+#----------------------------------------------------
+# Brok
+PC09_TRIBOT_ALREADY-1=總算解決了這個麻煩……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - More interactions
+# *****************************************************************
+# Brok
+PC09_TO_OFFICE1-1=這裏只有一個出口，但肯定不是這個方向！
+#----------------------------------------------------
+# Brok
+#This Tribot is actually a special model. He is blind because his captors are defective. Like other Tribots he refers to himself as "us"
+PC09_SPEAKER1-1=這是新的揚聲器嗎？
+# Blindbot
+PC09_SPEAKER1-2=是的，揚聲器故障，今天替換的。
+# Blindbot
+PC09_SPEAKER1-3=由於缺乏可用的攝影機，聲音是我們跟訪客溝通的唯一媒介。
+#----------------------------------------------------
+# Brok
+#We stole the speaker
+PC09_SPEAKERGONE-1=（吹口哨）
+#----------------------------------------------------
+# Brok
+PC09_SPEAKERTAKEOK-1=……
+# Brok
+PC09_SPEAKERTAKEOK-2=搞定了！
+#----------------------------------------------------
+# Brok
+PC09_OFFICE1-1=上鎖了……
+# Blindbot
+PC09_OFFICE1-2=閒雜人等禁止入內。
+# Brok
+PC09_OFFICE1-3=我可不是閒雜人！
+#----------------------------------------------------
+# Brok
+PC09_OFFICE1B-1=天底下可沒有攔得住我的地方！
+# Blindbot
+PC09_OFFICE1B-2=如此自信，人類果然不可理喻。
+#----------------------------------------------------
+# Brok
+PC09_OFFICE2-1=（鎖得很緊……恐怕無法靠蠻力打開。）
+# Blindbot
+PC09_OFFICE2-2=請停止嘗試打開此門。
+# Brok
+PC09_OFFICE2-3=你怎麽知道我在幹嘛？你不是沒有攝影機看不見東西的嗎？
+# Blindbot
+PC09_OFFICE2-4=但我們身上裝有麥克風。
+#----------------------------------------------------
+# Brok
+PC09_OFFICE_STORY190-1=鎖著呢……
+# Blindbot
+PC09_OFFICE_STORY190-2=韋斯局長。不接見。閒雜人等。
+# Brok
+PC09_OFFICE_STORY190-3=可我不是閒雜人！
+# Blindbot
+PC09_OFFICE_STORY190-4=容我稍作查詢。
+# Blindbot
+PC09_OFFICE_STORY190-5=錯誤。你的名字。不在重點人物名單上。
+# Blindbot
+PC09_OFFICE_STORY190-6=所以你是閒雜人等。
+# Brok
+PC09_OFFICE_STORY190-7=哼……
+#----------------------------------------------------
+# Brok
+PC09_OFFICE_STORY280-1=上鎖了……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Talking to the blind bot at the reception
+# *****************************************************************
+# Brok
+PC09_BLINDBOT1-1=你好！
+# Blindbot
+PC09_BLINDBOT1-2=請站到對應的地面面板上以取得服務。
+# Brok
+PC09_BLINDBOT1-3=地面……面板？
+# Blindbot
+PC09_BLINDBOT1-4=是的。請照做，訪客。
+# Brok
+PC09_BLINDBOT1-5=我沒時間跟你玩遊戲！
+#----------------------------------------------------
+# Brok
+PC09_THESITUATION-1=是韋斯約好我今早見面的。
+# Blindbot
+PC09_THESITUATION-2=查詢中……
+# Blindbot
+PC09_THESITUATION-3=確認。他之前在等你，但因為更緊急的事而離開。
+# Blindbot
+PC09_THESITUATION-4=他囑咐讓你待在這裏等他回來。
+# Blindbot
+PC09_THESITUATION-5=我們百分百遵守局長的指示！
+# Brok
+PC09_THESITUATION-6=可是……他已任命我為臨時警員！
+# Blindbot
+PC09_THESITUATION-7=查詢中……
+# Blindbot
+PC09_THESITUATION-8=資訊正確。
+# Blindbot
+PC09_THESITUATION-9=不過，你的職務不包含進入局長辦公室的權限。
+# Brok
+PC09_THESITUATION-10=天啊……
+# Brok
+PC09_THESITUATION-11=那他去哪了？
+# Blindbot
+PC09_THESITUATION-12=機密資訊。
+# Brok
+PC09_THESITUATION-13=他什麽時候回來？
+# Blindbot
+PC09_THESITUATION-14=機密資訊。
+# Brok
+PC09_THESITUATION-15=媽呀……
+# Brok
+PC09_THESITUATION-16=（一直耗在這裏也不是辦法……）
+# Brok
+PC09_THESITUATION-17=（嗯……）
+# Brok
+PC09_THESITUATION-18=（昨天跟韋斯見面……真是勾起了無數回憶。）
+# Brok
+PC09_THESITUATION-19=（當初他就是負責調查莉雅案子的警探。）
+# Brok
+PC09_THESITUATION-20=（一直以來……）
+# Brok
+PC09_THESITUATION-21=（我總感覺……他在隱瞞著什麽事。）
+# Brok
+PC09_THESITUATION-22=（這次或許是我唯一一次機會。）
+# Brok
+PC09_THESITUATION-23=（必須想辦法進入他的辦公室！）
+#----------------------------------------------------
+# Brok
+PC09_BLINDBOT2-1=嗨！
+# Blindbot
+PC09_BLINDBOT2-2=先生您好。
+# Blindbot
+PC09_BLINDBOT2-3=請站到對應的地面面板上以取得服務。
+# Brok
+PC09_BLINDBOT2-4=你我可以正常點對話嗎？
+# Blindbot
+PC09_BLINDBOT2-5=抱歉，您尚未站在正確的面板上。
+# Brok
+PC09_BLINDBOT2-6=算了，我其實有點好奇……
+# Brok
+PC09_BLINDBOT2-7=你是看不見東西嗎？你的眼睛去哪了？
+# Blindbot
+PC09_BLINDBOT2-8=我們是沒有眼睛的。或許您指的是攝影機吧。
+# Brok
+PC09_BLINDBOT2-9=都是同樣意思……
+# Blindbot
+PC09_BLINDBOT2-10=我們本來是正在接受維修的機器人，但是因為人員短缺所以被臨時徵用。
+# Blindbot
+PC09_BLINDBOT2-11=不過請您放心！我們的麥克風運作正常，因此可以聽到訪客的請求和局長的指示。
+# Blindbot
+PC09_BLINDBOT2-12=那麽，您要是有什麽需要幫助的話，請站到相對應的面板上。
+# Brok
+PC09_BLINDBOT2-13=好啦好啦……我照做就是了。
+#----------------------------------------------------
+# Brok
+PC09_BLINDBOT3-1=那麽……要怎樣才能進入辦公室？
+# Blindbot
+PC09_BLINDBOT3-2=唯有獲得局長的批准才可以進去。
+# Brok
+PC09_BLINDBOT3-3=韋斯的批准……？
+# Blindbot
+PC09_BLINDBOT3-4=正確！我們百分百遵守局長的指示！
+# Brok
+PC09_BLINDBOT3-5=嗯……
+#----------------------------------------------------
+# Brok
+PC09_BLINDBOT_ASK1-1=最近日子過得不錯吧？
+# Blindbot
+PC09_BLINDBOT_ASK1-2=理論上來說，我們並非生命體，並沒有過日子的說法。不過最近有科學家認為……
+# Brok
+PC09_BLINDBOT_ASK1-3=行行行，我只是跟你客套一下，不用向我一一解釋。
+#----------------------------------------------------
+# Blindbot
+#Hitting the bot
+PC09_BLINDBOT_HIT1-1=請不要破壞公物。
+#----------------------------------------------------
+# Blindbot
+PC09_BLINDBOT_HIT2-1=您這樣做非常危險。請克制自己的情緒。
+#----------------------------------------------------
+# Blindbot
+PC09_BLINDBOT_HIT3-1=探測到失控的公民！準備啓動懲戒模式！
+#----------------------------------------------------
+# Blindbot
+#Losing fight
+PC09_BLINDBOT_GAMEOVER1-1=懲戒完畢。
+#----------------------------------------------------
+# Brok
+#Killing the bot
+PC09_BLINDBOT_DEATH1-1=……
+# Brok
+PC09_BLINDBOT_DEATH1-2=似乎聽見機關啓動的聲音。難道是……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When solving the puzzle （stepping on the panels in correct order）
+# *****************************************************************
+# Blindbot
+PC09_BLINDBOT_OK-1=查詢中……
+# Blindbot
+PC09_BLINDBOT_OK-2=確認接收到局長的命令。辦公室已為您解鎖。
+# Brok
+PC09_BLINDBOT_OK-3=這……我可以進去了？
+# Blindbot
+PC09_BLINDBOT_OK-4=是的。
+# Brok
+PC09_BLINDBOT_OK-5=太好了！
+# Brok
+PC09_BLINDBOT_OK-6=（高級人工智慧不過如此……！）
+#----------------------------------------------------
+# Blindbot
+PC09_BLINDBOT_NOPE-1=查詢中……
+# Blindbot
+PC09_BLINDBOT_NOPE-2=此命令無效。
+# Blindbot
+PC09_BLINDBOT_NOPE-3=局長向我們發布命令時向來都是彬彬有禮的。
+# Brok
+PC09_BLINDBOT_NOPE-4=（啥……？）
+#----------------------------------------------------
+# Blindbot
+#This happens when we almost step on the correct panels but not quite
+PC09_BLINDBOT_REACT-1=……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - IMPORTANT : The floor panels are part of a puzzle.
+# *****************************************************************
+# Wes
+#The player must "play" them in the correct order in order to form the sentence : "Please Mister Pork, Enter My office!" => Be sure to translate these so the order makes a legible sentence!
+PC09_FLOOR1A-1=您好！
+# Wes
+PC09_FLOOR1A-2=請站在這裏執行投訴。
+#----------------------------------------------------
+# Wes
+PC09_FLOOR1B-1=您好！
+#----------------------------------------------------
+# Wes
+PC09_FLOOR2A-1=破羅格先生！
+# Wes
+PC09_FLOOR2A-2=我們不會對外公布您的個人資訊！
+# Wes
+PC09_FLOOR2A-3=您所提交的所有資料都將會安全保存和備份在我們的雲端系統伺服器中。
+#----------------------------------------------------
+# Wes
+PC09_FLOOR2B-1=破羅格先生！
+#----------------------------------------------------
+# Wes
+PC09_FLOOR3A-1=請隨意咨詢！
+# Wes
+PC09_FLOOR3A-2=我們的自動化服務員會盡全力回答您的問題！
+# Wes
+PC09_FLOOR3A-3=此為收費服務，每分鐘5烏尼幣。
+#----------------------------------------------------
+# Wes
+PC09_FLOOR3B-1=請隨意咨詢！
+#----------------------------------------------------
+# Wes
+PC09_FLOOR4A-1=請進！
+# Wes
+PC09_FLOOR4A-2=你可以在這裏請求探監囚犯、進入自助餐廳或申請辦公室的臨時通行證！
+#----------------------------------------------------
+# Wes
+PC09_FLOOR4B-1=請進！
+#----------------------------------------------------
+# Wes
+PC09_FLOOR5A-1=我的辦公室！
+# Wes
+#25 hours isn't a mistake. In this universe each day is 25 hours long.
+PC09_FLOOR5A-2=我們25小時全天候為您提供服務，請點杯飲料放鬆一下吧！
+#----------------------------------------------------
+# Wes
+PC09_FLOOR5B-1=我的辦公室！
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER0-1=這是……韋斯的聲音……？
+# Blindbot
+PC09_PANELAFTER0-2=是的。
+# Blindbot
+PC09_PANELAFTER0-3=局長向來對訪客都是彬彬有禮的。
+# Blindbot
+PC09_PANELAFTER0-4=這些都是他親自錄制的語音檔案。
+# Brok
+PC09_PANELAFTER0-5=有點……出乎意料啊。
+#----------------------------------------------------
+# Blindbot
+PC09_PANELAFTER1_1-1=那麽，您有什麽要投訴的嗎？
+# Brok
+PC09_PANELAFTER1_1-2=可惡！你最好馬上讓我進去辦公室，否則……！
+# Blindbot
+PC09_PANELAFTER1_1-3=這種格式的投訴無法受理。
+# Blindbot
+PC09_PANELAFTER1_1-4=請重試。
+# Brok
+PC09_PANELAFTER1_1-5=嗯……
+# Brok
+PC09_PANELAFTER1_1-6=求求你了，機器人哥！
+# Brok
+PC09_PANELAFTER1_1-7=在我抓狂之前讓我進去一下吧！
+# Blindbot
+PC09_PANELAFTER1_1-8=無法受理此投訴！
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER1_2-1=算了，不跟你浪費時間了。
+# Blindbot
+PC09_PANELAFTER1_2-2=非常感謝！
+# Brok
+PC09_PANELAFTER1_2-3=（看來所有的三角機器人都只是這種程度的智慧。）
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER2_1-1=就連他的錄制語音都無法正確地念出我的名字……真是佩服。
+# Blindbot
+PC09_PANELAFTER2_1-2=您正站在壓力面板上。
+# Blindbot
+PC09_PANELAFTER2_1-3=此面板會掃描你的腳印並上傳到資料庫以校驗身份。
+# Blindbot
+PC09_PANELAFTER2_1-4=便利的身份驗證方式會有效加速手續的辦理！
+# Brok
+PC09_PANELAFTER2_1-5=或許我該習慣穿鞋子了……
+# Blindbot
+PC09_PANELAFTER2_1-6=無效！我們的掃描儀可以穿過鞋子來掃描。
+#----------------------------------------------------
+# Blindbot
+PC09_PANELAFTER2_2-1=請收下您的這份個人資訊備份以表示我們的行政透明度。
+# Brok
+PC09_PANELAFTER2_2-2=我能否使用它來復原我所遺失的記憶？
+# Blindbot
+PC09_PANELAFTER2_2-3=無效！
+# Blindbot
+PC09_PANELAFTER2_2-4=人類缺乏處理此類關鍵資訊的可靠性。
+# Blindbot
+PC09_PANELAFTER2_2-5=因此，此資訊備份已被加密。唯有我們行政服務員才能解密您的個人資訊。
+# Brok
+PC09_PANELAFTER2_2-6=有講跟沒講一樣。
+#----------------------------------------------------
+# Blindbot
+PC09_PANELAFTER3_1-1=我們的興趣是研究非對稱加密！您呢？
+# Brok
+PC09_PANELAFTER3_1-2=不是應該由我來發問嗎？
+# Blindbot
+PC09_PANELAFTER3_1-3=根據數據顯示，人類缺乏選擇合適話題的能力。
+# Brok
+PC09_PANELAFTER3_1-4=但我對什麽加密技術之類的不感興趣呀！
+# Blindbot
+PC09_PANELAFTER3_1-5=好的！
+#----------------------------------------------------
+# Blindbot
+PC09_PANELAFTER3_2-1=我能否建議……
+# Brok
+PC09_PANELAFTER3_2-2=給我閉上你的……
+# Blindbot
+PC09_PANELAFTER3_2-3=好的。我們馬上關閉部門的所有大門。
+# Brok
+PC09_PANELAFTER3_2-4=不！我不是那意思……
+# Blindbot
+PC09_PANELAFTER3_2-5=指令取消。
+# Brok
+PC09_PANELAFTER3_2-6=嚇死我了！
+# Brok
+PC09_PANELAFTER3_2-7=我可不想被困在這個鬼地方。
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER4_1-1=我可以進入韋斯的辦公室嗎……？
+# Blindbot
+PC09_PANELAFTER4_1-2=非常抱歉。訪客禁止入內。
+# Brok
+PC09_PANELAFTER4_1-3=果然……
+# Brok
+PC09_PANELAFTER4_1-4=那我可以去探望阿信嗎？他被關在監獄裏。
+# Blindbot
+PC09_PANELAFTER4_1-5=您是親屬？
+# Brok
+PC09_PANELAFTER4_1-6=呃……是朋友。
+# Blindbot
+PC09_PANELAFTER4_1-7=請求駁回。
+# Brok
+PC09_PANELAFTER4_1-8=哼。
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER4_2-1=自助餐廳呢？這應該可以進去吧？
+# Blindbot
+PC09_PANELAFTER4_2-2=無效。
+# Blindbot
+PC09_PANELAFTER4_2-3=餐廳最近已停止營業，因為這裏無人需要進食。
+# Brok
+PC09_PANELAFTER4_2-4=無人需要？那韋斯、RJ和其他囚犯呢？
+# Blindbot
+PC09_PANELAFTER4_2-5=我可以確定。這裏沒有任何工作人員需要進食。
+# Blindbot
+PC09_PANELAFTER4_2-6=至於囚犯，他們的優先等級並不足以享用固態食物。
+# Blindbot
+PC09_PANELAFTER4_2-7=他們都是通過灌輸營養液維生。
+# Brok
+PC09_PANELAFTER4_2-8=噁心……幸好我逃出來了……
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER5_1-1=我就好奇，你晚上都在做些什麽……
+# Blindbot
+PC09_PANELAFTER5_1-2=監守此地。清理房間。籌備計劃。驗證規則。添購材料。消滅囚犯。
+# Brok
+PC09_PANELAFTER5_1-3=行行行，明白了……
+# Brok
+PC09_PANELAFTER5_1-4=等一下……你說什麽消滅囚犯……？
+# Blindbot
+PC09_PANELAFTER5_1-5=您聽錯了。是照顧囚犯。滿足囚犯的需求。
+# Brok
+PC09_PANELAFTER5_1-6=好吧……
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER5_2-1=全天候營業……嗯，的確可以辦得到，畢竟用的都是機器人。
+# Blindbot
+PC09_PANELAFTER5_2-2=無法理解您的問題。請重試。
+# Brok
+PC09_PANELAFTER5_2-3=這不是問題，我只是自言自語而已。
+#----------------------------------------------------
+# Brok
+PC09_PANELAFTER5_3-1=我可以點飲料嗎？
+# Blindbot
+PC09_PANELAFTER5_3-2=可以。
+#----------------------------------------------------
+# Blindbot
+PC09_PANELAFTER5_DRINK-1=雖然我們很不歡迎您，但流程上還是得問一問。
+# Blindbot
+PC09_PANELAFTER5_DRINK-2=想要點什麽飲料嗎？
+#----------------------------------------------------
+# Blindbot
+PC09_DRINK_FLOWING_WATER1-1=給。
+# Brok
+PC09_DRINK_FLOWING_WATER1-2=哇！會流動的耶！這竟然是真的瀑布！
+# Brok
+PC09_DRINK_FLOWING_WATER1-3=我得小心別濺到我的時尚外套。
+# Blindbot
+PC09_DRINK_FLOWING_WATER1-4=時尚……？
+# Blindbot
+PC09_DRINK_FLOWING_WATER1-5=我們要是人類的話，現在肯定已笑翻在地。
+# Brok
+PC09_DRINK_FLOWING_WATER1-6=哼！但你只是個機器人！而且還是瞎掉的那種！
+# Brok
+PC09_DRINK_FLOWING_WATER1-7=你沒有審美能力，但我不同。
+# Blindbot
+PC09_DRINK_FLOWING_WATER1-8=確是。
+#----------------------------------------------------
+# Blindbot
+PC09_DRINK_SEWAGE_SLUDGE1-1=給。
+# Brok
+PC09_DRINK_SEWAGE_SLUDGE1-2=（嗅嗅）
+# Brok
+PC09_DRINK_SEWAGE_SLUDGE1-3=這可以喝嗎……？
+# Blindbot
+PC09_DRINK_SEWAGE_SLUDGE1-4=這是你自己點的。拒絕是不禮貌的。
+# Brok
+PC09_DRINK_SEWAGE_SLUDGE1-5=好吧……
+#----------------------------------------------------
+# Blindbot
+PC09_DRINK_SOLID_JUICE1-1=給。
+# Brok
+PC09_DRINK_SOLID_JUICE1-2=這是果汁？不應該是液體嗎？
+# Blindbot
+PC09_DRINK_SOLID_JUICE1-3=當然不是。這是固態果汁。
+# Brok
+PC09_DRINK_SOLID_JUICE1-4=應該很難吞下肚子吧。
+#----------------------------------------------------
+# Brok
+PC09_PANEL5_GETDRINK1-1=喂，瞎子機器人！來一杯飲料！
+# Blindbot
+PC09_PANEL5_GETDRINK1-2=我怎麽聽不見？
+# Brok
+PC09_PANEL5_GETDRINK1-3=因為……你是個……破爛機器。
+# Blindbot
+PC09_PANEL5_GETDRINK1-4=設備真是不靠譜。
+# Blindbot
+PC09_PANEL5_GETDRINK1-5=你想要什麽？
+#----------------------------------------------------
+# Brok
+PC09_PANEL5_GETDRINK2-1=可否給我……
+#----------------------------------------------------
+# Brok
+#In this case we killed the bot
+PC09_PANEL5_GETDRINKGONE1-1=喂，瞎子機器人！來一杯……
+# Brok
+PC09_PANEL5_GETDRINKGONE1-2=哦對，差點忘了。
+# Brok
+PC09_PANEL5_GETDRINKGONE1-3=還是自己動手吧。
+#----------------------------------------------------
+# Brok
+PC09_PANEL5_GETDRINKGONE2-1=嗯……
+#----------------------------------------------------
+# Blindbot
+PC09_LASER_FORBIDDEN-1=此區域僅限授權人員與囚犯可進入。
+# Brok
+PC09_LASER_FORBIDDEN-2=可是……我現在已經是警員了呀！
+# Blindbot
+PC09_LASER_FORBIDDEN-3=確定。您是1級探員。
+# Blindbot
+PC09_LASER_FORBIDDEN-4=您的權限是可以自由出入走廊和室外地區。
+# Brok
+PC09_LASER_FORBIDDEN-5=哼……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Cutscene
+# *****************************************************************
+# Unknown
+PC09_LATER-1=片刻後……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Try to sneak, no alarm yet
+# *****************************************************************
+# Brok
+PC09_ARRIVE_SNEAK-1=三個機器人……
+# Brok
+PC09_ARRIVE_SNEAK-2=它們的攝影機是裝在正面的，我謹慎點的話應該可以避免被發現……
+# Brok
+PC09_ARRIVE_SNEAK-3=但是有個機器人守在門口動也不動，該怎麽辦才好……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, Wes arrives when opening door
+# *****************************************************************
+# Wes
+PC09_AFTER_TRYOPEN1-1=住手！
+# Brok
+PC09_AFTER_TRYOPEN1-2=……
+# Wes
+PC09_AFTER_TRYOPEN1-3=勸你別打開這道門。
+# Brok
+PC09_AFTER_TRYOPEN1-4=哦，我偏不聽你的！
+#----------------------------------------------------
+# Brok
+PC09_AFTER_TRYOPEN2-1=怎……怎麽回事……
+# Brok
+PC09_AFTER_TRYOPEN2-2=（……）
+# Wes
+#To enforce that this is a cutscene in which Brok cannot hear anything （he's frozen） and he talks about his evil plans, Wes should probably address Brok in an informal way for this dialog.
+PC09_AFTER_TRYOPEN2-3=凍起來或許可以讓你老實一點。
+# Wes
+PC09_AFTER_TRYOPEN2-4=……
+# Wes
+PC09_AFTER_TRYOPEN2-5=你比我想象中的要聰明。
+# Wes
+PC09_AFTER_TRYOPEN2-6=說不定會給我添麻煩。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, Wes arrives when all robots dead
+# *****************************************************************
+# Wes
+PC09_AFTERFIGHT1-1=總是那麽愛搗蛋是吧？
+# Wes
+PC09_AFTERFIGHT1-2=胡鬧到此為止了，雙手舉到頭上。
+# Brok
+PC09_AFTERFIGHT1-3=你休想阻止我……
+#----------------------------------------------------
+# Unknown
+PC09_AFTERFIGHT2-1=（電擊聲）
+#----------------------------------------------------
+# Wes
+PC09_AFTERFIGHT3-1=……
+# Wes
+PC09_AFTERFIGHT3-2=我低估了你的身手。
+# Wes
+#Same thing here for this alternate dialog, Wes talks to Brok in informal way.
+PC09_AFTERFIGHT3-3=幸好智商向來是你的缺點。
+#----------------------------------------------------
+# Wes
+PC09_AFTERCUTSCENE-1=上頭的命令是要留你活口。
+# Wes
+PC09_AFTERCUTSCENE-2=我就不明白，你害得他的那麽慘，他怎麽還……
+# Wes
+PC09_AFTERCUTSCENE-3=算了，不關我的事。
+# Wes
+PC09_AFTERCUTSCENE-4=終極計劃已啓動，一切盡在我的掌握中。
+# Wes
+PC09_AFTERCUTSCENE-5=你最好乖乖配合。否則……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After escaping, robots spot us
+# *****************************************************************
+# Tribotcop
+PC09_SPOTTED1-1=入侵警報！
+#----------------------------------------------------
+# Tribotcop
+PC09_SPOTTED_STORY280B-1=人類。你在做什麽？！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - rescuing Sin with Dee
+# *****************************************************************
+# Tribotcop
+PC09_SPOTTED_FIGHT1-1=有什麽能幫您的嗎？
+# Brok
+PC09_SPOTTED_FIGHT1-2=有。你可以去自爆嗎？
+# Tribotcop
+PC09_SPOTTED_FIGHT1-3=無法理解。
+# Brok
+PC09_SPOTTED_FIGHT1-4=可惜，那我就自己動手吧！
+#----------------------------------------------------
+# Dee
+PC09_SMASH_FIGHTEND1-1=好樣的！
+# Brok
+PC09_SMASH_FIGHTEND1-2=謝謝！但我們最好盡快離開，我有不祥的預感……
+#----------------------------------------------------
+# Dee
+PC09_SMASH_FIGHTEND1B-1=快看！那是通往牢房的通道……！
+# Brok
+PC09_SMASH_FIGHTEND1B-2=但好像……硬化了？！
+# Dee
+PC09_SMASH_FIGHTEND1B-3=怎麽辦？
+# Brok
+PC09_SMASH_FIGHTEND1B-4=用蠻力打通它呀！不然呢？
+#----------------------------------------------------
+# Dee
+PC09_SMASH_FIGHTEND1C-1=糟了！又有敵人來了！
+#----------------------------------------------------
+# Dee
+PC09_SMASH_FIGHTEND2-1=那道牆……必須想辦法打通它……
+# Brok
+PC09_SMASH_FIGHTEND2-2=啊！真是沒完沒了……！
+#----------------------------------------------------
+# Dee
+PC09_SMASH_FIGHTEND3-1=快摧毀道牆！否則我們遲早會戰死在這裏！
+#----------------------------------------------------
+# Brok
+PC09_SMASH_FINALLY-1=終於搞定！
+# Dee
+PC09_SMASH_FINALLY-2=走吧！
+#----------------------------------------------------
+# Dee
+PC09_OFFICE_INFILTRATE-1=喂……！你這是要去哪？
+# Dee
+PC09_OFFICE_INFILTRATE-2=還以為你熟悉這個地方。
+# Brok
+PC09_OFFICE_INFILTRATE-3=唔……對哦。
+#----------------------------------------------------
+# Brok
+PC09_BARRIER1-1=（低語）可惡……忘了還有這道屏障。
+# Dee
+PC09_BARRIER1-2=啊……
+# Dee
+PC09_BARRIER1-3=不如我們直接幹掉那些機器人然後……
+# Brok
+PC09_BARRIER1-4=不不不！
+# Brok
+PC09_BARRIER1-5=一定還有別的辦法的。讓我想想！
+#----------------------------------------------------
+# Brok
+PC09_BARRIER2-1=可惜雪伊不在，不然她肯定能幫上忙……
+# Brok
+PC09_BARRIER2-2=嗯……
+#----------------------------------------------------
+# Brok
+PC09_BARRIER_REMOTECONTROL1-1=成功了……？！
+# Brok
+PC09_BARRIER_REMOTECONTROL1-2=快！快走！
+#----------------------------------------------------
+# Brok
+PC09_DAY2_BARRIER-1=我過不去。
+#----------------------------------------------------
+# Brok
+PC09_BARRIER_REMOTECONTROL_DAY2-1=呃……！
+#----------------------------------------------------
+# Brok
+#Talking to the tribots
+PC09_TRIBOT_INFILTRATE1-1=你好！
+# Dee
+PC09_TRIBOT_INFILTRATE1-2=你這是幹嘛？！
+# Tribotcop
+PC09_TRIBOT_INFILTRATE1-3=您好，先生。
+# Brok
+PC09_TRIBOT_INFILTRATE1-4=我們想探望某位囚犯，你可以打開這道門嗎？
+# Tribotcop
+PC09_TRIBOT_INFILTRATE1-5=抱歉。閒雜人禁止入內。
+# Brok
+PC09_TRIBOT_INFILTRATE1-6=可我是他朋友！
+# Tribotcop
+PC09_TRIBOT_INFILTRATE1-7=抱歉。閒雜人禁止入內。
+# Brok
+PC09_TRIBOT_INFILTRATE1-8=好吧，反正試試也沒壞處。
+# Dee
+PC09_TRIBOT_INFILTRATE1-9=你這是浪費時間……！
+#----------------------------------------------------
+# Brok
+PC09_TRIBOT_INFILTRATE2-1=你確定我們不可以探望囚犯？
+# Tribotcop
+PC09_TRIBOT_INFILTRATE2-2=再問一遍，我們就把您關起來。
+# Brok
+PC09_TRIBOT_INFILTRATE2-3=咦，聽起來很不錯！
+# Dee
+PC09_TRIBOT_INFILTRATE2-4=省省吧！我們可沒有越獄的本事。
+#----------------------------------------------------
+# Brok
+PC09_DEE1-1=他們暫時還沒有起疑心。
+# Dee
+PC09_DEE1-2=那不是廢話嘛……我們目前什麽事都沒幹。
+#----------------------------------------------------
+# Dee
+PC09_DEE1_ALT-1=這很可疑，你不是他們的目標嗎？
+#----------------------------------------------------
+# Brok
+PC09_BLINDBOT_REMOTECONTROL-1=這還不夠。
+#----------------------------------------------------
+# Brok
+PC09_WINDOWOFF_AD1-1=看！那裏有一卡個廣告！
+#----------------------------------------------------
+# Brok
+PC09_WINDOWOFF_AD2-1=還是卡著。
+#----------------------------------------------------
+# Brok
+PC09_WINDOWOFF_ADOK-1=拿到了！
+#----------------------------------------------------
+
+
+
+COOP_PC09_BLINDBOT1-1=我們應該利用這個機器人的失明。
+

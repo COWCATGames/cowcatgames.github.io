@@ -1,0 +1,325 @@
+﻿#------------------------------------
+#=Sewers Brok comes to rescue Graff
+#------------------------------------
+
+
+#--------------------------------
+#= Come
+#--------------------------------
+ID=PC05D_INIT1
+T=Finally here.
+W=CHIEFRAT
+C1=BROK
+C1A=ANGRY
+C2=CHIEFRAT
+C2A=HAPPY
+C4=KINS
+C4A=HAPPY
+CONTEXT=Day 3 - Graff has been kidnapped and Brok chose to save Graff from the Squealers
+
+T=So predictable. So easy to manipulate.
+W=CHIEFRAT
+
+T=Brok!...
+BNAMESP=GRAFF
+BVOICESP=GRAFF
+
+T=Release my boy! Now!
+W=BROK
+C1A=FURIOUS
+
+T=I will. Ya got my word.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=But only after I'm finished with ya... once and for all!
+W=CHIEFRAT
+C2A=ANGRY
+
+T=That revenge thing again...?
+W=BROK
+C1A=ANGRY
+
+T=I don't even know what you've got against me!
+W=BROK
+C1A=OPPOSITE
+
+T=How dare you!
+W=CHIEFRAT
+
+T=You think losing sight of your actions will make you redeem them?
+W=CHIEFRAT
+
+T=Us Squealers... will never forget!
+W=CHIEFRAT
+C1A=ANGRY
+
+T=Yeah!
+W=KINS
+
+T=Fight to the end...
+W=KINS
+
+T=To reclaim our due!
+W=CHIEFRAT
+TEN=PC05D_FIGHT_START
+
+#--------------------------------
+ID=PC05D_AFTERFIGHT1
+T=...
+W=CHIEFRAT
+C1=BROK
+C1A=FURIOUS
+C2=CHIEFRAT
+C2A=MEH
+CONTEXT=After the fight the rat chief tries to escape and use Graff
+
+T=Hey! Stay here and fight, you coward!
+W=BROK
+C1A=SURPRISED
+TEN=PC05D_AFTERFIGHT1B
+
+
+#--------------------------------
+ID=PC05D_AFTERFIGHT1C
+T=Argh!
+W=GRAFF
+C1=BROK
+C1A=SURPRISED
+C2=CHIEFRAT
+C2A=ANGRY
+C4=GRAFF
+C4A=GASP
+
+T=Graff!
+W=BROK
+
+T=If I can't have ya by brute force...
+W=CHIEFRAT
+C1A=FURIOUS
+
+T=I'll ruin your life another way!
+W=CHIEFRAT
+TEN=PC05D_FIGHT_BROKFORWARD
+
+T=You miserable...!
+W=BROK
+
+T=Step back or I break his neck!
+W=CHIEFRAT
+C1A=SURPRISED
+C4A=CHOKE
+
+T=...
+W=GRAFF
+C1A=FURIOUS
+SILENCE=1
+
+T=Liar...
+W=GRAFF
+
+T=What did you say?!
+W=CHIEFRAT
+
+T=You said you weren't murderers!
+W=GRAFF
+
+T=Only when we have to...
+W=CHIEFRAT
+
+T=Look, croc!
+W=CHIEFRAT
+
+T=Look at him while his life gets drained away from his body!
+W=CHIEFRAT
+
+T=Urrrgh!
+W=GRAFF
+
+T=This is one memory you shall never forget!
+W=CHIEFRAT
+
+T=Noooo!
+W=BROK
+C1A=YELL
+TEN=PC05D_AFTERFIGHT2B
+
+
+#--------------------------------
+ID=PC05D_AFTERFIGHT3
+T=...!
+W=BROK
+C1A=SURPRISED
+
+
+T=Graff!
+W=BROK
+TEN=PC05D_AFTERFIGHT3B
+
+
+#--------------------------------
+ID=PC05D_AFTERFIGHT4
+T=...
+W=GRAFF
+C1=BROK
+C1A=READY
+C2=GRAFF
+C2A=GASP
+
+T=I... got out of the ropes they tied me up with...
+W=GRAFF
+
+T=While you were fighting... They weren't looking.
+W=GRAFF
+
+T=I hid this pipe.
+W=GRAFF
+C2A=READY
+
+T=That's my boy!
+W=BROK
+C1A=MOCK
+
+T=...
+W=BROK
+TEN=PC05D_AFTERFIGHT3C
+
+
+#--------------------------------
+ID=PC05D_AFTERFIGHT5
+T=(Sigh)
+W=BROK
+C1=BROK
+C1A=TIRED
+C2=GRAFF
+C2A=MEH
+CONTEXT=Brok decides he needs to get rid of the rat chief once and for all
+TEB=PC05D_AFTERFIGHT5_LOOKBROK
+
+T=Graff. Get out of this room.
+W=BROK
+C1A=MAYBE
+
+T=What...? Why...?
+W=GRAFF
+C2A=GASP
+
+T=I... don't want you to see this...
+W=BROK
+C1A=DISAPPOINTED
+
+T=...!
+W=GRAFF
+TEN=PC05D_AFTERFIGHT_MUSICSAD
+    
+
+T=No! Don't do this!
+W=GRAFF
+C2A=SURPRISED
+
+T=I have to...
+W=BROK
+C1A=MAYBE
+
+T=So he can never hurt you again!
+W=BROK
+C1A=FURIOUS
+
+T=No!
+W=GRAFF
+
+T=You heard him!
+W=BROK
+C1A=OPPOSITE
+
+T=He'll never stop...
+W=BROK
+
+T=I... I must protect you!
+W=BROK
+C1A=READY
+
+T=Whatever the cost!
+W=BROK
+
+T=I promised your mother...
+W=BROK
+
+T=Please...!
+W=GRAFF
+C2A=SAD
+
+T=Don't... I'm begging you...
+W=GRAFF
+C2A=TORN
+
+T=But... You'll never be safe!
+W=BROK
+C1A=MAYBE
+
+T=I will...
+W=GRAFF
+
+T=I'll always be safe...
+W=GRAFF
+
+T=As long as you're with me.
+W=GRAFF
+
+T=...
+W=BROK
+C1A=HEARTBROKEN
+TEN=PC05D_AFTERFIGHT5B
+
+
+#--------------------------------
+ID=PC05D_AFTERFIGHT6
+T=You're right...
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+C2=GRAFF
+C2A=SOB
+
+T=From now on... I'll stay close to you.
+W=BROK
+C1A=READY
+
+T=Thank you...
+W=GRAFF
+TEN=PC05D_AFTERFIGHT_EXIT
+
+#--------------------------------
+ID=PC05D_BROKLOSE
+T=Finally... I have my revenge.
+W=CHIEFRAT
+C1=CHIEFRAT
+C1A=ANGRY
+C2=KINS
+C2A=HAPPY
+C4=DART
+C4A=COCKY
+
+T=Hey, boss. Does that make you feel better?
+W=KINS
+C2A=READY
+
+T=Yes. Yes, it does!
+W=CHIEFRAT
+C1A=HAPPY
+
+T=Come on, everyone! Let's celebrate.
+W=CHIEFRAT
+C2A=HAPPY
+
+T=Hey, he'll make for a nice couch!
+W=DART
+C4A=READY
+TEN=GAMEOVER
+
+
+
+###############################################
+# PROOFREAD - jblaker - 14/06/2019
+# EXPRESSIONS   ZedOjisan 23/09/2019
+###############################################

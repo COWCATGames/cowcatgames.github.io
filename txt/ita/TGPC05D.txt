@@ -1,0 +1,1346 @@
+#-------------------------------
+#= GRAFF --- SEWERS BELOW
+#-------------------------------
+
+#----- Interactions --------
+# A little kichen hook that Graff can use to cut his rope
+PC_HOOK=Gancio
+PC_CUPBOARD=Armadietto
+PC_BAG=Borsa
+PC_TABLE=Tavolo
+# A sewers access we can see in the background that is sealed with bars
+PC_TUNNEL=Tunnel
+PC_STUFF=Roba
+
+#----- Choices / Items --------
+TUTORIAL_ROPEHOOK_MSG_MOUSE= Premi <button=INPUT_ACTION_SWITCH_MODE> o <spr=CONTROL_mouseleft> ripetutamente per tagliare
+TUTORIAL_ROPEHOOK_MSG_GAMEPAD= Premi<button=INPUT_ACTION_SWITCH_MODE> ripetutamente per tagliare
+
+#----- Topics --------
+
+PC05D_ROPEHOOKEND_CHOICE=Resti sulla sedia?
+PC05D_ROPEHOOKEND_YES=Sì, fingi
+PC05D_ROPEHOOKEND_NO=No, alzati
+GOT_PIPEWEAPON=Un pezzo di tubo!
+
+PC05D_CHOICEBOMB=Chi salverai?
+PC05D_CHOICEBOMB_GROUP=I pazienti dell'ospedale
+PC05D_FIGHT=Combatti
+PC05D_SURRENDER=Arrenditi
+PC05D_SURPRISEATTACK_CHOICE=Tenti un attacco a sorpresa?
+
+
+#----- Dialog --------
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+
+# *****************************************************************
+# CONTEXT - Graff has been kidnapped by the rats. He's waking up...
+# *****************************************************************
+# Graff                                 
+GPC05D_FIRST-1=...
+# Graff                                 
+GPC05D_FIRST-2=Argh... la mia testa...
+# Graff                                 
+GPC05D_FIRST-3=Oh no... sono legato...!
+# Graff                                 
+GPC05D_FIRST-4=Non... non mi piace...
+# Graff                                 
+GPC05D_FIRST-5=...
+# Graff                                 
+GPC05D_FIRST-6=La corda è un po'allentata... con un piccolo sforzo, riesco a muovermi!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff meets rat chief
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NORMAL-1=Ehi, Principessa! Ti sei svegliata, finalmente.
+# Graff                                 
+GPC05D_CHIEFRAT_NORMAL-2=...
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff moved and was spotted by the chief
+GPC05D_CHIEFRAT_SPOTTED-1=Vuoi prendermi in giro, ragazzo?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SPOTTED-2=Pensi davvero che potresti sfuggirci?
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff had picked the pipe chunk
+GPC05D_CHIEFRAT_SURRENDERWEAPON-1=E getta quella specie di arma che nascondi.
+# Graff                                 
+GPC05D_CHIEFRAT_SURRENDERWEAPON-2=Ehm... OK...
+#----------------------------------------------------
+# Graff                                 
+#Surrender
+GPC05D_CHIEFRAT_SURRENDER-1=Per favore... andateci piano con me.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SURRENDER-2=Ugh. Rammollito.
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff moved from his original position
+GPC05D_CHIEFRAT_MOVED-1=Ehi! Sembra che tu abbia fatto due passi, eh?
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_CHIEFRAT_MOVED2-1=Faresti meglio a fermarti o stringo la corda. E... potrebbe essere doloroso.
+# Graff                            
+GPC05D_CHIEFRAT_MOVED2-2=Cosa te ne importa?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_MOVED2-3=Sei nostro ospite!
+#----------------------------------------------------
+# Chiefrat                                 
+#If Graff is spotted while cutting his rope
+GPC05D_CHIEFRAT_CUTROPE-1=Oh, che carino! Credevi forse di poter tagliare la corda con quel gancio, eh?
+#----------------------------------------------------
+# Chiefrat                                 
+#If he took the pipe chunk
+GPC05D_CHIEFRAT_DROPWEAPON-1=Oh! E nascondevi un'arma dietro la schiena?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_DROPWEAPON-2=Cattivo micetto!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_CHIEFRAT_MOVED3-1=Ti rimetto dove stavi.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - If Graff hits the rat chief with the pipe chunk by surprise
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_SURPRISEATTACK1-1=Uffff!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SURPRISEATTACK2-1=Ha funzionato...!
+# Kins                                 
+GPC05D_SURPRISEATTACK2-2=...?
+# Kins                                 
+GPC05D_SURPRISEATTACK2-3=Cos'è stato, capo?
+# Graff                                 
+GPC05D_SURPRISEATTACK2-4=Dannazione! Eccoli che arrivano!
+#----------------------------------------------------
+# Kins                                 
+GPC05D_SURPRISEATTACK3-1=Sei stato tu, micio?
+# Kins                                 
+GPC05D_SURPRISEATTACK3-2=Sei carne morta!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First dialog with the rat chief
+# *****************************************************************
+# Graff                                 
+GPC05D_FIRSTDIALOG-1=Scommetto che sei il capo, qui.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-2=Sei proprio un furbone, eh?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-3=Ti chiami Graff, eh? Sospettavo che fossi furbo come il tuo amico.
+# Graff                                 
+GPC05D_FIRSTDIALOG-4=Ott...?!
+# Graff                                 
+GPC05D_FIRSTDIALOG-5=Fareste meglio a non toccarlo!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-6=Ehi! Andrà tutto bene. finché collaborerete.
+# Graff                                 
+GPC05D_FIRSTDIALOG-7=Cosa vuoi da noi?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-8=Oh, ma andiamo! Un ragazzo intelligente come te dovrebbe saper fare due più due.
+# Graff                                 
+GPC05D_FIRSTDIALOG-9=...
+# Graff                                 
+GPC05D_FIRSTDIALOG-10=Ci avete rapito per soldi.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-11=È un modo per spiegarlo. Ma in realtà...
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-12=Non è così semplice.
+# Graff                                 
+GPC05D_FIRSTDIALOG-13=E allora cosa...
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-14=Basta. Sono io che fa le domande qui!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-15=Sei a tuo agio?
+# Graff                                 
+GPC05D_FIRSTDIALOG-16=Uh...?
+# Graff                                 
+GPC05D_FIRSTDIALOG-17=Tu che dici?
+# Graff                                 
+GPC05D_FIRSTDIALOG-18=Sono trattenuto contro la mia volontà in queste fogne puzzolenti come la morte!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-19=Mi spiace. Stiamo facendo del nostro meglio per rendere questo posto il più accogliente possibile.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-20=Hai fame? Sete?
+# Graff                                 
+GPC05D_FIRSTDIALOG-21=Smettila con questa farsa!
+# Graff                                 
+GPC05D_FIRSTDIALOG-22=Dimmi cosa vuoi esattamente o lasciami andare!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-23=Credo che siamo partiti col piede sbagliato.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-24=Non siamo delinquenti. Siamo persone civili.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-25=Ci prenderemo cura di te per i prossimi tre giorni.
+# Graff                                 
+GPC05D_FIRSTDIALOG-26=Tre giorni...?
+# Graff                                 
+GPC05D_FIRSTDIALOG-27=...ci sono! L'hacker!
+# Graff                                 
+GPC05D_FIRSTDIALOG-28=Lavorate per lui! È stato lui a chiedervi di tenermi prigioniero! 
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-29=Già. Quel tipo ha dei debiti da pagarci e tu sei la merce di scambio.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-30=Non temere. Una volta finito, ti rilasceremo!
+# Graff                                 
+GPC05D_FIRSTDIALOG-31=Non se ne parla! Non voglio stare qui!
+# Graff                                 
+GPC05D_FIRSTDIALOG-32=Il mio vecchio è un detective! Mi tirerà fuori! Vedrete!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-33=Un detective, eh...?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-34=Ti illudi.
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-35=Ti aspetti davvero che venga qui e superi le nostre guardie?
+# Graff                                 
+GPC05D_FIRSTDIALOG-36=Sì! Lui è fortissimo! Vi darà una bella lezione!
+# Graff                                 
+GPC05D_FIRSTDIALOG-37=Lo ha già fatto, in passato!
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-38=Davvero...?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG-39=Quel coccodrillo... tu sei suo...!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_FIRSTDIALOG2-1=Ehi! Dove stai andando...?
+# Chiefrat                                 
+GPC05D_FIRSTDIALOG2-2=Riposa un po'. Io devo pensare.
+# Graff                                 
+GPC05D_FIRSTDIALOG2-3=Ma...!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Second dialog with the rat chief
+# *****************************************************************
+# Graff                                 
+GPC05D_SECONDDIALOG1-1=Allora... ti mancavo?
+# Graff                                 
+GPC05D_SECONDDIALOG1-2=Bene! Perché non ho finito con te!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-3=Ohhhhh! Ora fingi di essere coraggioso, eh?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-4=Il tuo modo di fare non mi inganna. Sei solo un micetto impaurito.
+# Graff                                 
+GPC05D_SECONDDIALOG1-5=N-no, invece!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-6=Uh-uh.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-7=Kins?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1-8=Kins!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG1_PRECHOICE-1=(...)
+# Graff                                 
+GPC05D_SECONDDIALOG1_PRECHOICE-2=(Ha distolto lo sguardo...)
+#----------------------------------------------------
+# Kins                                 
+GPC05D_SECONDDIALOG1B-1=Oh! Ehm... sono qui!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG1B-2=Procedi.
+# Kins                                 
+GPC05D_SECONDDIALOG1B-3=Sì, capo!
+#----------------------------------------------------
+# Ott                                 
+GPC05D_SECONDDIALOG2-1=(Ehi! Cosa...) 
+# Ott                                 
+GPC05D_SECONDDIALOG2-2=*Rumore sordo*
+# Graff                                 
+GPC05D_SECONDDIALOG2-3=È... Ott?!
+# Graff                                 
+GPC05D_SECONDDIALOG2-4=Che gli state facendo?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-5=Rilassati. Non gli faremo del male.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-6=Almeno, non ancora...
+# Graff                                 
+GPC05D_SECONDDIALOG2-7=Cosa volete... soldi?!
+# Graff                                 
+GPC05D_SECONDDIALOG2-8=Prendete tutto ciò che volete!
+# Graff                                 
+GPC05D_SECONDDIALOG2-9=Tutto, non mi importa!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-10=Certo che prenderemo i tuoi soldi...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-11=Ma io sto cercando...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-12=Qualcos'altro. 
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-13=Quindi ora faremo un gioco.
+# Graff                                 
+GPC05D_SECONDDIALOG2-14=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-15=Ho ordinato ai miei ragazzi di mettere due bombe in due posti diversi.
+# Graff                                 
+GPC05D_SECONDDIALOG2-16=Bombe?!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-17=La prima si trova proprio sotto alla sedia del tuo amico nella stanza a fianco.
+# Graff                                 
+GPC05D_SECONDDIALOG2-18=...!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-19=Una molto più grossa, invece, è in un ospedale nel Settore 55X.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-20=Sai... quello in cui succhiano via tutto il denaro che è ancora rimasto nelle tasche degli ubriachi e dei rifiuti umani.
+# Graff                                 
+GPC05D_SECONDDIALOG2-21=Un ospedale?!
+# Graff                                 
+GPC05D_SECONDDIALOG2-22=Stai mentendo!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-23=Oh, io non ci scommetterei!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-24=Abbiamo imparato molto sulla manipolazione del fumo. Se esplodesse, quella bomba ucciderebbe come minimo una dozzina di quei signor nessuno. Come minimo!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-25=E ora viene la parte divertente!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-26=La scelta è tutta tua.
+# Graff                                 
+GPC05D_SECONDDIALOG2-27=La scelta...?
+# Graff                                 
+GPC05D_SECONDDIALOG2-28=Perché dovrei voler far esplodere qualcuno?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-29=No no no!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-30=Non ti avrei mai chiesto qualcosa di così crudele, santo cielo!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-31=Devi solo scegliere...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-32=...chi dev'essere salvato.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-33=Ma il punto è un altro.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-34=Quelli che non sceglierai potrebbero vedere la propria vita... come posso spiegarmi?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-35=Improvvisamente accorciata.
+# Graff                                 
+GPC05D_SECONDDIALOG2-36=Sei... un mostro!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-37=Non preoccuparti! Siamo stati molto attenti.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-38=Se scegli di salvare quei perdenti dell'ospedale, l'esplosione farà saltare in aria solamente una stanza.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-39=Quella dove si trova il tuo amico, ecco. 
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-40=Capisci? Tu sei al sicuro!
+# Graff                                 
+GPC05D_SECONDDIALOG2-41=Io... non potrei mai...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-42=Oh, ma lo farai eccome.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-43=Perché se non sceglierai...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-44=Io farò esplodere entrambe le bombe.
+# Graff                                 
+GPC05D_SECONDDIALOG2-45=N... no!
+# Graff                                 
+GPC05D_SECONDDIALOG2-46=Mi rifiuto...!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-47=Sono stato molto chiaro. Le regole sono regole.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-48=E mi prude la mano.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-49=Se non ti sbrighi, potrei sempre premere un pulsante accidentalmente.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-50=Quindi... ti darò esattamente 10 secondi prima di far detonare una bomba.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-51=O entrambe!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-52=La decisione è tua!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-53=Chi salverai?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-54=Il tuo amico o una dozzina di perdenti che non hai mai conosciuto?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG2-55=Tic, toc!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP-1=(Ott... ti prego, perdonami...)
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP-2=Io... scelgo di salvare le persone del Settore 55X.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP-3=Interessante. La quantità prevale sulla qualità, eh?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP-4=Allora dovrò premere questo pulsante...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP-5=No...!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-1=Dev'esserci un'altra soluzione...!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-2=No!
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-3=Perché stai facendo tutto questo?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-4=Perché posso farlo.
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-5=...
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-6=Nessuna risposta, quindi?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION-7=Oh, beh. La scelta è stata tua.
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION-8=No! Aspetta!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT-1=Mi spiace per quelle persone, ma...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT-2=Ott è il mio migliore amico... non posso rischiare di perderlo.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT-3=Quindi la vita di uno vale di più di quella di dieci persone?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT-4=Molto egoistico. Mi piace!
+#----------------------------------------------------
+# Graff                                 
+#Explosion sound
+GPC05D_CHIEFRAT_SAVEGROUP2-1=...!!!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-2=Ohhh! Povero ragazzo!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-3=Come hai potuto ridurre il tuo migliore amico in poltiglia?
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-4=...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-5=Brutto...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-6=ASSASSINO!!!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEGROUP2-7=Chi, io? La scelta è stata tua, micetto!
+#----------------------------------------------------
+# Graff                                 
+#Explosion sound
+GPC05D_CHIEFRAT_SAVEOTT2-1=...!!!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-2=Oh, giusto. Dimenticavo.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-3=L'ospedale è proprio qui vicino.
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT2-4=Tu...
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT2-5=Hai appena ucciso tutte quelle persone?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-6=Non io.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-7=Credo che sia stato tu.
+# Graff                                 
+GPC05D_CHIEFRAT_SAVEOTT2-8=...
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-9=Ma non prenderla a male.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-10=Erano solo feccia già destinata a morire.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SAVEOTT2-11=Dovrebbero ringraziarti per avergli fatto smettere di soffrire!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION2-1=Noooooo!!!!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION2-2=Peccato! Hai ucciso tutti!
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION2-3=Non... può essere...!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_NODECISION2-4=Invece sì. È proprio così
+# Graff                                 
+GPC05D_CHIEFRAT_NODECISION2-5=Ott...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG3-1=Io...
+# Graff                                 
+GPC05D_SECONDDIALOG3-2=Io...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3-3=Mi ucciderai? Scapperai?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3-4=Oh, ma fammi il piacere...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_NEXTROOM-1=Dovrai superare quella stanza... e ciò che vedrai non ti piacerà.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_HOSPITAL-1=Non hai la forza. Né morale, né fisica.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_HOSPITAL-2=Di'un po'! Che ne pensi se raccontassi al tuo amico della scelta che hai fatto?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3_HOSPITAL-3=Sono abbastanza sicuro che sarebbe felice di sentirti dire che hai scelto di far saltare in aria dieci persone pur di salvarlo.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG3B-1=...
+# Graff                                 
+GPC05D_SECONDDIALOG3B-2=...Urgh...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-3=Ah ah ah ah ah!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-4=Non sei poi così sveglio, ragazzo.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-5=A quanto pare la nostra reputazione ci precede!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-6=In realtà... non siamo assassini.
+# Graff                                 
+GPC05D_SECONDDIALOG3B-7=Cosa...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-8=Uccidiamo la gente solo quando ne siamo costretti.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-9=Te l'ho detto. Era solo un gioco!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-10=Sono tutti salvi. Non c'è mai stata nessuna bomba.
+# Graff                                 
+GPC05D_SECONDDIALOG3B-11=Ma... 
+# Graff                                 
+GPC05D_SECONDDIALOG3B-12=Il suono... il tremore...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-13=Solo alcune vecchie casse che abbiamo trovato. Belle potenti, eh?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3B-14=Kins. Levagli il bavaglio.
+# Kins                                 
+GPC05D_SECONDDIALOG3B-15=Sì, capo.
+#----------------------------------------------------
+# Ott                                 
+GPC05D_SECONDDIALOG3C-1=(...)
+# Ott                                 
+GPC05D_SECONDDIALOG3C-2=(Graff?... che sta succedendo...?)
+# Ott                                 
+GPC05D_SECONDDIALOG3C-3=(Mmffffmf!)
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-4=Cavolo, è stato uno spasso.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-5=...
+# Graff                                 
+GPC05D_SECONDDIALOG3C-6=È... uno scherzo.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-7=Già.
+# Graff                                 
+GPC05D_SECONDDIALOG3C-8=No... voglio dire...
+# Graff                                 
+GPC05D_SECONDDIALOG3C-9=Dite di non essere assassini...
+# Graff                                 
+GPC05D_SECONDDIALOG3C-10=Eppure state condannando a morte tutti gli abitanti degli Slums!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-11=Di che diamine stai parlando?
+# Graff                                 
+GPC05D_SECONDDIALOG3C-12=I Tubi per Pillole!
+# Graff                                 
+GPC05D_SECONDDIALOG3C-13=Li avete sabotati!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-14=Mettiamo le cose in chiaro.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-15=Noi Squealer faremo tutto il possibile per sopravvivere. È il nostro modo di vivere.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-16=Abbiamo solo preso quello che era rimasto nei tubi.
+# Graff                                 
+GPC05D_SECONDDIALOG3C-17=Quindi... vuol dire che...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-18=Non abbiamo cominciato noi.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-19=I miei ragazzi hanno notato dei bot che armeggiavano con i distributori nel bel mezzo della notte.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-20=Perché? Non ne ho idea.
+# Graff                                 
+GPC05D_SECONDDIALOG3C-21=Bots?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-22=Questa carenza di pillole è stata organizzata dall'esterno.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-23=Dovresti porre la domanda a quei ricconi dei Drums che ci hanno costretto a vivere questa miserabile esistenza!
+# Graff                                 
+GPC05D_SECONDDIALOG3C-24=Come faccio a crederti...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-25=Fallo. Oppure no.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG3C-26=Non mi importa.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG4-1=Aspetta!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG5-1=Ancora non ho capito.
+# Graff                                 
+GPC05D_SECONDDIALOG5-2=A che scopo fare questo giochetto?
+# Graff                                 
+GPC05D_SECONDDIALOG5-3=Cosa volete esattamente da me?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG5-4=Vendetta...
+# Graff                                 
+GPC05D_SECONDDIALOG5-5=Contro di me...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG5-6=Ah ah! No.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG5-7=Contro il solo responsabile per la nostra situazione...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-1=Tuo padre!
+# Graff                                 
+GPC05D_SECONDDIALOG6-2=Mio... padre...?
+# Graff                                 
+GPC05D_SECONDDIALOG6-3=Remn? Ma a malapena lo conosco...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-4=Non fare lo stupido. Sto parlando di quel bruto che gioca a fare il detective.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-5=È tutta colpa sua!
+# Graff                                 
+GPC05D_SECONDDIALOG6-6=Uh...?
+# Graff                                 
+GPC05D_SECONDDIALOG6-7=Cos'ha fatto?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-8=Immaginavo che non lo sapessi.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-9=A dire il vero, sembra che tu non sappia praticamente nulla.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-10=Ti sta prendendo in giro.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-11=Un po'come ho fatto io prima, ma...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6-12=In un modo più insidioso.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG6_GOOD-1=Ti sbagli. Lui è una...
+# Graff                                 
+GPC05D_SECONDDIALOG6_GOOD-2=Una brava persona. Siete voi la feccia!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6_GOOD-3=Ah ah ah! Che divertente.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG6_BAD-1=Brok...
+# Graff                                 
+GPC05D_SECONDDIALOG6_BAD-2=Quindi è vero...?
+# Graff                                 
+GPC05D_SECONDDIALOG6_BAD-3=Avanti... parla.
+#----------------------------------------------------
+# Chiefrat                                 
+#Changes according to player actions
+GPC05D_SECONDDIALOG6B-1=Ha attaccato me e i miei ragazzi innumerevoli volte...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6B_MINE-1=Ci ha lanciato contro una mina che ci è esplosa in faccia!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6B_MINE-2=Siamo fortunati a essere ancora vivi!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C-1=E non è successo solo a noi.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C-2=Lo stiamo osservando.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C-3=Quei bot in strada sono praticamente dei sacchi da boxe per lui.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_POLICE-1=Persino quelli della polizia.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_BOLT-1=Non mostra alcuna pietà.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_BOLT-2=Uno di quei tristi bot non è riuscito a resistere ai suoi colpi.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_STUBOT-1=Oh, conosci quel bot studente?
+# Graff                                 
+GPC05D_SECONDDIALOG6C_STUBOT-2=Stubot...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6C_STUBOT-3=Già. Puff. Distrutto.
+# Graff                                 
+GPC05D_SECONDDIALOG6C_STUBOT-4=...!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D-1=Beh, quei bot sono sacrificabili, ma sai come si dice...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D-2=Chi fa male a un bot fa male a un umano.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_RJ-1=Quel poliziotto orso ne ha prese parecchie anche lui. Mi chiedo se sia ancora vivo.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_TRAMP-1=Vuoi sentire di peggio?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_TRAMP-2=Solo ieri, i miei ragazzi lo hanno visto colpire a morte un senzatetto.
+# Graff                                 
+GPC05D_SECONDDIALOG6D_TRAMP-3=Lo ha... ucciso...?
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-1=E persino il tuo migliore amico ti ha tenuto segreta una cosa...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-2=Anche lui è sulla lista.
+# Graff                                 
+GPC05D_SECONDDIALOG6D_OTT-3=Cosa..?!
+# Graff                                 
+GPC05D_SECONDDIALOG6D_OTT-4=Ha... attaccato Ott?!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-5=Già.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-6=Gli ha fatto perdere i sensi. Almeno così ci ha detto il tuo amico. Chiediglielo pure!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6D_OTT-7=E il coccodrillo ha detto di aver fatto tutto questo... per te!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6E-1=In quale razza di mondo contorto le brave persone si comportano così...?
+# Graff                                 
+GPC05D_SECONDDIALOG6E-2=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rat chief gets all nostalgic and explains his reasons
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-1=Ma...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-2=Basta parlare del coccodrillo.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-3=Lascia che ti racconti la nostra storia.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-4=Gli Squealer sono arrivati qui migliaia di anni fa.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-5=Fummo convocati dopo il Giorno della Rinascita per aiutare a ricostruire senza usare la tecnologia.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-6=Per secoli, ci sono stati assegnati i compiti più elementari.
+# Graff                                 
+GPC05D_SECONDDIALOG6F-7=Certo. Gli studi dimostrano che...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-8=Sì, sì. A quanto pare non siamo intelligenti come tutti gli altri abitanti di questa terra. E non è la parte peggiore. 
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-9=La natura ci impedisce di avere dei figli con altre specie. Possiamo riprodurci solo tra di noi.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-10=In ogni caso...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-11=Il nostro unico errore è stato quello di non capire ciò che stava accadendo. Siamo diventati gli schiavi di questa società.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-12=Progressivamente, il sistema ha cominciato a produrre in quantità quei dannati bot.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-13=Si sono presi il nostro lavoro. Ci hanno sostituito. Condannandoci a vivere in povertà.
+# Graff                                 
+GPC05D_SECONDDIALOG6F-14=Avreste dovuto far sentire la vostra voce!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-15=Ah! Quanto sei ingenuo.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-16=A che pro gridare qualcosa quando il tuo pubblico è sordo?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-17=Ovviamente abbiamo protestato. Ma credi che a qualcuno ai piani alti sia importato qualcosa?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F-18=Così, arrivò il giorno...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-1=Solo un decennio fa... il nostro sistema stava collassando.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-2=Era la nostra opportunità.
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-3=Conosco la storia.
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-4=Avete tentato un colpo di stato, ma siete stati sconfitti e banditi da questa terra.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-5=Sì. Ma...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-6=I media hanno nascosto dei fatti.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-7=Io ero il comandante in capo. Avevamo quasi vinto la battaglia.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-8=Se non fosse stato per lui...
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-9=Aspetta... stai dicendo che...
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-10=Brok era lì?
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-11=E che... vi ha sconfitto?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F2-12=...
+# Graff                                 
+GPC05D_SECONDDIALOG6F2-13=Ma è ridicolo!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG6F3-1=Dai uno sguardo.
+#----------------------------------------------------
+# Graff                                 
+#On the picture we see Brok defeating the rat chief during Autarcism Day
+GPC05D_SECONDDIALOG7-1=Imp... impossibile!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG7_NOTSEEN-1=Questa foto... è un falso.
+# Graff                                 
+GPC05D_SECONDDIALOG7_NOTSEEN-2=Dev'essere un falso!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-1=Ho già visto questa foto... al museo...
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-2=Ma...
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-3=Non era così chiara.
+# Graff                                 
+GPC05D_SECONDDIALOG7_SEEN-4=L'avete... modificata...!
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-1=Ricordo ogni minuto di quel giorno.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-2=Lui era lì.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-3=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-4=Dopo il nostro esilio...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-5=Molti di noi sono morti.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-6=Vivendo nell'ombra, abbiamo dovuto compiere delle scelte su chi aveva diritto di vivere e chi no.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-7=Hai un'idea del dolore che si prova a morire di fame, principessa?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-8=Essere costretti a dover mangiare il più debole così che i più forti possano sopravvivere?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-9=Bleahh...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-10=E tu credi di aver avuto una vita tanto terribile...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-11=Non farmi ridere!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-12=Detto questo... abbiamo qualcosa in comune.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-13=La stessa persona da incolpare.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-14=Io... continuo a non crederti.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-15=Guarda qui.
+# Graff                                 
+GPC05D_SECONDDIALOG7B-16=...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-17=L'estratto conto...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-18=Da dove credi che provenga questo denaro?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-19=Credo... che siano soldi di mia madre.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-20=Il coccodrillo te l'aveva tenuto nascosto, eh?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-21=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-22=Certo che è così.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-23=Allora... dovresti poter accedere a quei soldi non appena compiuti sedici anni. Giusto?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-24=Credo di sì... ricordo questa domanda nel mio esame.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-25=E ora mettiamo il caso...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-26=...che tu abbia uno "sfortunato incidente" subito dopo il tuo compleanno. 
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-27=Cosa succederebbe a questi soldi?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-28=Io...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-29=Credo che andrebbero alla persona in vita a me più vicina...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-30=...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-31=Vuoi dire...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-32=Finalmente!!! Ce n'è voluto di tempo!
+# Graff                                 
+GPC05D_SECONDDIALOG7B-33=No! Non è...
+# Graff                                 
+GPC05D_SECONDDIALOG7B-34=Lui non farebbe mai una cosa del genere.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-35=Oh, ma andiamo!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-36=Quanto puoi essere ingenuo?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-37=Non mi sorprende che tu fossi un Drumer!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-38=Puoi dire onestamente di conoscerlo davvero?
+# Graff                                 
+GPC05D_SECONDDIALOG7B-39=...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-40=Non mi ci è voluto molto per mettere insieme i puntini.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-41=Sta aspettando sin da quando ti ha conosciuto...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-42=Facendo il minimo indispensabile per farti sopravvivere.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-43=Altri tre giorni...
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-44=Solo tre... e poi...
+# Chiefrat                                 
+#The sound you do when you mean someone's gonna get murdered
+GPC05D_SECONDDIALOG7B-45=Zac!
+# Graff                                 
+GPC05D_SECONDDIALOG7B-46=N... No!
+# Graff                                 
+GPC05D_SECONDDIALOG7B-47=Lui... mi ha salvato!
+# Graff                                 
+GPC05D_SECONDDIALOG7B-48=Tantissime volte!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-49=Certo! Ma ora sai il motivo.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-50=Hai finalmente la spiegazione per il suo comportamento contraddittorio.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-51=Hai capito?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7B-52=Sei un pupazzo.
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG7C-1=Tieni la foto. Non voglio più vederla.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG8-1=È la verità...?
+# Graff                                 
+GPC05D_SECONDDIALOG8-2=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Ott escapes
+# *****************************************************************
+# Unknown                                 
+GPC05D_SECONDDIALOG8B-1=*strani suoni*
+# Graff                                 
+GPC05D_SECONDDIALOG8B-2=Uh...?
+#----------------------------------------------------
+# Kins                                 
+GPC05D_SECONDDIALOG9-1=Capo!
+# Kins                                 
+GPC05D_SECONDDIALOG9-2=Il bruttone... è scappato!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG9-3=Cosa?!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG9-4=Inseguitelo!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG10-1=Ott?!
+# Graff                                 
+GPC05D_SECONDDIALOG10-2=È riuscito a...
+#----------------------------------------------------
+# Chiefrat                                 
+GPC05D_SECONDDIALOG11-1=Tu!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG11-2=Hai due secondi per dirmi cosa ha intenzione di fare!
+# Graff                                 
+GPC05D_SECONDDIALOG11-3=Come faccio a saperlo? Non sono...
+#----------------------------------------------------
+# Graff                                 
+#Rat chief hits Graff. He doesn't want to play anymore
+GPC05D_SECONDDIALOG12-1=Argh!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-2=Il tempo dei giochetti è finito!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-3=Dimmelo o potrei cominciare a tener fede alla mia reputazione!
+# Graff                                 
+GPC05D_SECONDDIALOG12-4=Ehm...
+# Graff                                 
+GPC05D_SECONDDIALOG12-5=Conosco Ott... non mi lascerebbe mai qui!
+# Graff                                 
+GPC05D_SECONDDIALOG12-6=Dev'essere andato a chiedere aiuto.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-7=A chi?!
+# Graff                                 
+GPC05D_SECONDDIALOG12-8=Gli avevo detto... che se fosse successo qualcosa, avrebbe dovuto cercare Brok.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-9=Ma davvero...?
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-10=Ah ah ah!
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-11=Cambio di programma, ragazzi.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-12=Aspettiamo che il mocciosetto torni con il coccodrillo.
+# Chiefrat                                 
+GPC05D_SECONDDIALOG12-13=Dovremmo preparare un bel comitato di ricevimento!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SECONDDIALOG13-1=...
+# Graff                                 
+GPC05D_SECONDDIALOG13-2=Grandioso... ho fatto finire tutti in un casino assurdo.
+# Graff                                 
+GPC05D_SECONDDIALOG13-3=Non so se esiste davvero un dio, il Senzacoda o qualcosa del genere, ma...
+# Graff                                 
+GPC05D_SECONDDIALOG13-4=Ti prego...
+# Graff                                 
+GPC05D_SECONDDIALOG13-5=Fai che finisca tutto bene.
+# Graff                                 
+GPC05D_SECONDDIALOG13-6=Per tutti.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Conversation between rat chief and his minions
+# *****************************************************************
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-1=Cosa...?
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-2=Ehi, testa di cavolo! Perché nessuno sta controllando l'ingresso?
+# Kins                                 
+GPC05D_CHIEFRAT_COMES-3=Ehm... scusa, capo. Non lo sapevo.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-4=Dart!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-5=L'ingresso. Subito.
+# Chiefrat                                 
+GPC05D_CHIEFRAT_COMES-6=Nessuno entra e nessuno esce!
+# Dart                                 
+GPC05D_CHIEFRAT_COMES-7=OK!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Various interactions
+# *****************************************************************
+# Graff                                 
+GPC05D_FAR1-1=Sono troppo lontano per fare qualcosa.
+#----------------------------------------------------
+# Graff                                 
+#Graff sees Ott through the tiny hole
+GPC05D_WALLHOLE1-1=Incredibile! Credo che...
+# Graff                                 
+GPC05D_WALLHOLE1-2=(Psss! Ott! Sei tu?)
+# Graff                                 
+GPC05D_WALLHOLE1-3=(Ehi! Riesci a sentirmi...?)
+# Graff                                 
+GPC05D_WALLHOLE1-4=Non risponde... e non posso rischiare di alzare la voce.
+# Graff                                 
+GPC05D_WALLHOLE1-5=Spero che stia bene...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WALLHOLE2-1=Ott è lì dentro!
+# Graff                                 
+GPC05D_WALLHOLE2-2=Devo trovare un modo per tirarci fuori da qui!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CUPBOARD1-1=Hanno accumulato tonnellate di cibo qui...
+# Graff                                 
+GPC05D_CUPBOARD1-2=Non posso aprire quei cassetti.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_CUPBOARD_FREE-1=Vediamo un po'...
+# Graff                                 
+GPC05D_CUPBOARD_FREE-2=Urgh... quel cassetto è pieno di mutande!
+# Graff                                 
+GPC05D_CUPBOARD_FREE-3=E questo... di calzini.
+# Graff                                 
+GPC05D_CUPBOARD_FREE-4=Grandioso... non hanno neanche un coltello o una forchetta in questa cucina?
+# Graff                                 
+GPC05D_CUPBOARD_FREE-5=Oh, che stupido che sono. Probabilmente mangiano con le mani.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_BAG_FAR1-1=Una borsa... da qui non riesco a vedere cosa c'è dentro.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_BAG_CLOSE1-1=Cibo... cereali, insetti e altre cose che non so neppure come chiamare.
+# Graff                                 
+GPC05D_BAG_CLOSE1-2=Almeno non morirò di fame.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTHERS-1=Non ho tempo per gingillarmi!
+#----------------------------------------------------
+# Graff                                 
+#The hook can be used to slowly cut the rope
+GPC05D_HOOK_FAR1-1=Un gancio da cucina? Potrebbe servirmi...?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_CLOSE1-1=Potrei... usarlo per tagliare la corda?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_DONE-1=Non mi serve più!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_LONG-1=Argh... Ci vorranno secoli!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_HOOK_OVER-1=Finalmente libero...!
+# Graff                                 
+GPC05D_HOOK_OVER-2=Mmm... dovrei continuare a fingere?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_PIPE1-1=Sporge un pezzo di tubo.
+# Graff                                 
+GPC05D_PIPE1-2=Temo di non poter fare molto con le mani legate.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_PIPE_CANTAKE-1=Grande!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_PIPE_TAKECHAIR-1=Lo terrò tra le mani dietro la sedia.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_TABLE1-1=Sembra che mangino qui... seduti sul pavimento.
+# Graff                                 
+GPC05D_TABLE1-2=Non hanno pulito il tavolo, ma non vedo niente di interessante.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_DOORLEFT1-1=...
+# Graff                                 
+GPC05D_DOORLEFT1-2=Da qui non riesco a vedere, ma...
+# Graff                                 
+GPC05D_DOORLEFT1-3=Sento voci di bambini e... di una donna?!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_DOORLEFT2-1=Non ci credo...
+# Graff                                 
+GPC05D_DOORLEFT2-2=Lì dentro sono stipati decine di bambini e donne! Tutti Squealer...
+# Graff                                 
+GPC05D_DOORLEFT2-3=Che modo orribile di vivere...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_TUNNEL1-1=Di lì non si passa...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW_NOONE-1=La scala... è la nostra via di fuga!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW1-1=Una guardia...
+# Graff                                 
+GPC05D_WINDOW1-2=Fortunatamente per noi, la sua attenzione è concentrata su qualcosa davanti a lui.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW_THROW1-1=Mmm...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_WINDOW_THROW1B-1=Sì!
+# Graff                                 
+GPC05D_WINDOW_THROW1B-2=Uh...?
+#----------------------------------------------------
+# Kins                                 
+GPC05D_WINDOW_THROW1C-1=Dart! Stai bene, amico?
+# Kins                                 
+GPC05D_WINDOW_THROW1C-2=Ehi! Sveglia!
+#----------------------------------------------------
+# Graff                                 
+#Strike like in bowling
+GPC05D_WINDOW_THROW2-1=E... strike!
+#----------------------------------------------------
+# Chiefrat                                 
+#Graff not in his room when Chief comes
+GPC05D_CHIEFRAT_SEARCHGRAFF-1=Quel dannato serpentello!
+# Chiefrat                                 
+GPC05D_CHIEFRAT_SEARCHGRAFF-2=Dov'è finito?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SPEAKER1-1=Non mi aspettavo di vedere una cosa del genere in questo posto.
+#----------------------------------------------------
+# Graff                                 
+#Ironic
+GPC05D_CANNOT1-1=Ma certo! Salirò sulla scala mentre sono legato alla sedia!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTTNOTHERE1-1=Non posso lasciare qui Ott...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When trying to escape with Ott
+# *****************************************************************
+# Graff                                 
+GPC05D_OTTHERE1-1=Ott! La scala! Ott!
+# Ott                                 
+GPC05D_OTTHERE1-2=Oh, cielo... è alta...
+# Graff                                 
+GPC05D_OTTHERE1-3=Sarò proprio dietro di te!
+# Ott                                 
+GPC05D_OTTHERE1-4=OK...
+#----------------------------------------------------
+# Kins                                 
+GPC05D_OTTHERE2-1=Capo! I ragazzi! Stanno scappando!
+# Graff                                 
+GPC05D_OTTHERE2-2=Oh, diavolo...
+# Graff                                 
+GPC05D_OTTHERE2-3=Ott! Prendi!
+# Ott                                 
+GPC05D_OTTHERE2-4=Cosa...?
+# Graff                                 
+GPC05D_OTTHERE2-5=Questo radar ti condurrà da Brok! Digli di venire!
+# Ott                                 
+GPC05D_OTTHERE2-6=Ma...
+# Graff                                 
+GPC05D_OTTHERE2-7=Sbrigati! Forza!
+# Graff                                 
+#Graff gets captured
+GPC05D_OTTHERE2-8=Argh!
+# Chiefrat                                 
+GPC05D_OTTHERE2-9=Cambio di programma, ragazzi! Il coccodrillo sta venendo da noi!
+# Chiefrat                                 
+GPC05D_OTTHERE2-10=Bel lavoro, ragazzo!
+# Kins                                 
+GPC05D_OTTHERE2-11=Grazie, capo.
+# Chiefrat                                 
+GPC05D_OTTHERE2-12=Non parlavo con te, idiota!
+# Graff                                 
+GPC05D_OTTHERE2-13=Vi prenderà tutti a calci nel sedere! Ve lo assicuro!
+# Chiefrat                                 
+GPC05D_OTTHERE2-14=Oh, riesco a contenere la mia impazienza a malapena.
+# Chiefrat                                 
+GPC05D_OTTHERE2-15=Aspettavo da anni di gustarmi la vendetta.
+# Chiefrat                                 
+GPC05D_OTTHERE2-16=E finalmente avverrà!
+# Graff                                 
+GPC05D_OTTHERE2-17=...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Trying to use the ladder without picking stuff first
+# *****************************************************************
+# Graff                                 
+GPC05D_NOSTUFF1-1=Oh, no! Dimenticavo...
+# Graff                                 
+GPC05D_NOSTUFF1-2=Ho bisogno del telefono per trovare Brok! La mia roba dovrebbe essere qui da qualche parte...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Finding Ott in the next room for the first time
+# *****************************************************************
+# Ott                                 
+GPC05D_OTT_FIRST1-1=Graff!
+# Graff                                 
+GPC05D_OTT_FIRST1-2=Sono così felice di vederti!
+# Graff                                 
+GPC05D_OTT_FIRST1-3=Scusa se ti ho fatto finire in questo casino...
+# Ott                                 
+GPC05D_OTT_FIRST1-4=Non è il momento per scusarsi! Dobbiamo uscire da qui!
+# Ott                                 
+GPC05D_OTT_FIRST1-5=E in fretta... quello che vedo non mi piace.
+#----------------------------------------------------
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_UNTIE-1=E comunque... come hai...
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_UNTIE-2=Ti spiegherò tutto dopo. Fatti slegare.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_FAR1-1=Come facciamo a liberarci?
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_FAR1-2=Mmm...
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_FAR1-3=Ho un'idea! Vieni dietro di me!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE1-1=Riesci a muovere le mani?
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE1-2=Un po'...
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE1-3=Proviamo a slegarci a vicenda.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-1=Molto meglio.
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-2=Ma non mi dire...
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-3=Ti hanno... torturato?
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-4=Se per torturare intendi minacciarmi di lanciarmi in quell'abisso...
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-5=Sì.
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-6=Perdonami...
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-7=Non è colpa tua.
+# Graff                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-8=Dobbiamo filarcela! Vado avanti io.
+# Ott                                 
+GPC05D_OTT_TALKCHAIR_CLOSE2-9=Fai attenzione.
+#----------------------------------------------------
+# Ott                                 
+#If Graff accidentally falls into the hole
+GPC05D_OTT_GRAFFJUMPS-1=Graff!!!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_OTT_FREE-1=E ora...?
+# Ott                                 
+GPC05D_OTT_FREE-2=...
+# Ott                                 
+GPC05D_OTT_FREE-3=Forse quella scala...
+# Graff                                 
+GPC05D_OTT_FREE-4=OK, proviamoci.
+#----------------------------------------------------
+# Ott                                 
+#If Graff won the fight against rats
+GPC05D_OTT_AFTERFIGHT-1=Graff...!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Searching through stuff
+# *****************************************************************
+# Graff                                 
+GPC05D_STUFF1-1=Che macello...
+# Graff                                 
+GPC05D_STUFF1-2=Ehi! Aspetta un minuto... questo è mio!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_STUFF_FREE-1=Se solo avessi le mani libere...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_STUFF_ALREADY-1=C'è altro...?
+# Graff                                 
+GPC05D_STUFF_ALREADY-2=Ehi! Ho trovato una pubblicità!
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - WHen Graff gets spotted
+# *****************************************************************
+# Kins                                 
+GPC05D_RAT1_SPOTTED1-1=Ehi! Tu!
+# Graff                                 
+GPC05D_RAT1_SPOTTED1-2=Oops!...
+#----------------------------------------------------
+# Dart                                 
+GPC05D_RAT2_SPOTTED1-1=Duh! Il ragazzo! È qui!
+# Graff                                 
+GPC05D_RAT2_SPOTTED1-2=Dannazione!
+#----------------------------------------------------
+# Graff                                 
+GPC05D_SPOTTED_READY-1=Non avvicinarti! Oppure...
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff wins
+# *****************************************************************
+# Graff                                 
+GPC05D_ALLDEAD-1=*pant pant*
+# Graff                                 
+GPC05D_ALLDEAD-2=Li... li ho stesi tutti?!
+#----------------------------------------------------
+# Ott                                 
+GPC05D_ALLDEAD_OTT-1=Graff! Ma come...?
+# Graff                                 
+GPC05D_ALLDEAD_OTT-2=Io... ho dato tutto quello che avevo.
+# Graff                                 
+GPC05D_ALLDEAD_OTT-3=Avanza! Io ti seguo.
+# Ott                                 
+GPC05D_ALLDEAD_OTT-4=OK...
+#----------------------------------------------------
+# Graff                                 
+GPC05D_ALLDEAD_OTT2-1=...
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT2-2=Aspetta...
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT2-3=C'è... qualcosa che devo dirti.
+#----------------------------------------------------
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-1=Chiudi il becco. Non ne hai avuto abbastanza?
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-2=Ah ah... hai preso da tuo padre, dopotutto...
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-3=No, invece!
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-4=C'è tanta violenza dentro di te...
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-5=Sapevi... che lui ha fatto la stessa cosa?
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-6=Prenderti a calci nel sedere?
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT3-7=Dai un'occhiata...
+# Graff                                 
+GPC05D_ALLDEAD_OTT3-8=Uh?
+#----------------------------------------------------
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-1=...
+# Ott                                 
+GPC05D_ALLDEAD_OTT4-2=Graff...?
+# Ott                                 
+GPC05D_ALLDEAD_OTT4-3=Stai bene? Che succede?
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-4=Sì... non preoccuparti.
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-5=Arrivo.
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT4-6=Io non dimenticherò mai.
+# Chiefrat                                 
+GPC05D_ALLDEAD_OTT4-7=E neanche tu dovr...
+# Unknown                                 
+#Graff hits chief
+GPC05D_ALLDEAD_OTT4-8=*Bang*
+# Graff                                 
+GPC05D_ALLDEAD_OTT4-9=Ho sentito abbastanza.
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff loses
+# *****************************************************************
+# Chiefrat                                 
+PC05D_RATFIGHT_GAMEOVER1-1=Non avresti dovuto forzarmi la mano, ragazzo.
+# Chiefrat                                 
+PC05D_RATFIGHT_GAMEOVER1-2=Cocco... tu sei il prossimo!
+#----------------------------------------------------
+# Kins                                 
+PC05D_RATFIGHT_GAMEOVER2-1=Ops! Abbiamo ucciso il ragazzo!
+#----------------------------------------------------
+
+
+
+PC_ROPE=Corda
+
+
+PC_SKIP=Saltare alla stanza successiva
+PC_SKIPLADDER=Saltare alla scala

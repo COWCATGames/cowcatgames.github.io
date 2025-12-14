@@ -1,0 +1,927 @@
+#-------------------------------
+#=SLUM OUTSIDE BROK SECTOR
+#-------------------------------
+
+#----- Interactions --------
+PC_TOY=玩具
+PC_STOVE=火爐
+PC_ADVERTISEMENT=廣告
+
+#----- Choices / Items --------
+GOT_TRAMPPRESCR=醫療處方！
+GOT_LUCKYCHARM=幸運符！
+
+#----- Topics --------
+TOPIC_RATS=鼠人
+PC03_GLUCOSITE_CHOICE=給予葡萄糖？
+
+
+
+#----- Dialog --------
+
+###############################################
+# PROOFREAD - illuminati1556 - 17/06/2019
+###############################################
+# *****************************************************************
+# CONTEXT - The Tramp's stove
+# *****************************************************************
+# Brok
+PC03_STOVE1-1=好溫暖。
+# Tramp
+PC03_STOVE1-2=天氣很好，但你知道……老人容易受寒。
+# Brok
+PC03_STOVE1-3=別那麽說！你還年輕呢。
+# Tramp
+PC03_STOVE1-4=比起住在這地方的其他人來說……是的。
+#----------------------------------------------------
+# Brok
+PC03_STOVE2-1=又舒服又溫暖。
+#----------------------------------------------------
+# Brok
+#The tramp is dead or gone
+PC03_STOVE_AFTERDEATH-1=不行！絕不能偷這個……
+# Brok
+PC03_STOVE_AFTERDEATH-2=雖然他已用不上了……我……良心還是過意不去……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok takes a toy
+# *****************************************************************
+# Brok
+PC03_TOY1-1=還記得初次見到格拉夫時，他也有個類似這樣的玩具！
+# Brok
+PC03_TOY1-2=這個充氣玩具抱起來很舒服，只需稍微弄濕它，幾秒鐘後它就會膨脹成氣球一般！
+# Brok
+PC03_TOY1-3=也許格拉夫會再想要一個！
+#----------------------------------------------------
+# Brok
+PC03_TOY2-1=格拉夫以前跟那玩具形影不離，它後來怎麽不見了？
+# Brok
+PC03_TOY2-2=奇怪……我怎麽完全想不起來了？
+# Brok
+PC03_TOY2-3=也許有一天我甚至會忘記自己的名字……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Before the first fight with rats
+# *****************************************************************
+# Kins
+PC03_TRAMP_RAT_DIALOG1-1=……別跟我們耍花招，老大不喜歡這樣。
+# Kins
+PC03_TRAMP_RAT_DIALOG1-2=快把錢交出來！
+# Tramp
+PC03_TRAMP_RAT_DIALOG1-3=鼠人先生，你再仔細看看我……
+# Tramp
+PC03_TRAMP_RAT_DIALOG1-4=你真的認為我這種人會有那麽多錢嗎……？
+# Kins
+PC03_TRAMP_RAT_DIALOG1-5=誰在乎！規矩就是規矩。你承諾過的，那就得付錢！
+# Kins
+PC03_TRAMP_RAT_DIALOG1-6=不然的話……
+# Tramp
+PC03_TRAMP_RAT_DIALOG1-7=好吧，看來我得吃點苦了。
+#----------------------------------------------------
+# Kins
+#Rats kill the Tramp if Brok goes away
+PC03_TRAMP_RAT_FLEE1-1=動手吧，阿達。
+# Dart
+PC03_TRAMP_RAT_FLEE1-2=老頭，你完蛋了！
+# Tramp
+PC03_TRAMP_RAT_FLEE1-3=啊——！！
+# Tramp
+PC03_TRAMP_RAT_FLEE1-4=……
+# Kins
+PC03_TRAMP_RAT_FLEE1-5=結束了。
+# Kins
+PC03_TRAMP_RAT_FLEE1-6=快點，得趁著屍體回收機器人趕到前離開。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok saves the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_RAT_DIALOG2-1=喂！你們在搞什麽？
+# Brok
+PC03_TRAMP_RAT_DIALOG2-2=別騷擾那老人家！
+# Kins
+PC03_TRAMP_RAT_DIALOG2-3=關你屁事，趕緊離開這裏！
+# Kins
+PC03_TRAMP_RAT_DIALOG2-4=至於你……
+# Tramp
+PC03_TRAMP_RAT_DIALOG2-5=唉，給我個痛快吧！我已經受夠了被生活折磨。
+# Kins
+PC03_TRAMP_RAT_DIALOG2-6=哈哈，想死可沒那麽容易！
+# Brok
+PC03_TRAMP_RAT_DIALOG2-7=夠了！我會讓你們後悔的！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rats ambush Brok when coming back
+# *****************************************************************
+# Tramp
+PC03_FIGHT2_DIALOG1-1=孩子，小心！
+# Brok
+PC03_FIGHT2_DIALOG1-2=啥……
+#----------------------------------------------------
+# Brok
+PC03_FIGHT2_DIALOG2-1=滾開！！
+# Kins
+PC03_FIGHT2_DIALOG2-2=哼！該滾開的是你！
+# Brok
+PC03_FIGHT2_DIALOG2-3=還沒受夠教訓嗎？
+# Kins
+PC03_FIGHT2_DIALOG2-4=此事跟你無關，那傢伙欠我們錢。
+# Brok
+PC03_FIGHT2_DIALOG2-5=你別碰他！
+# Kins
+PC03_FIGHT2_DIALOG2-6=先算好你的牙齒吧，鱷魚人。等下我打到你滿地找牙。
+# Brok
+PC03_FIGHT2_DIALOG2-7=以為我怕你！
+# Kins
+PC03_FIGHT2_DIALOG2-8=弟兄們……
+#----------------------------------------------------
+# Kins
+PC03_TRAMP_RAT_DIALOGEND2-1=不會吧……
+# Dart
+PC03_TRAMP_RAT_DIALOGEND2-2=那傢伙到底是什麽怪物？！怎麽都打不倒？！
+# Kins
+PC03_TRAMP_RAT_DIALOGEND2-3=不管了！走為上策！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-1=你還好嗎？
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-2=孩子，你真厲害。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-3=你去當兵的話肯定能闖出一番事業！
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-4=我，當兵？哈哈！
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-5=我可受不了服從命令，我甚至連自己的原則都無法堅守！
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-6=我知道你是可以的。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-7=我有種感覺……
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-8=你似乎對我很了解。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND2B-9=你確定我們從未見過面嗎？
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND2B-10=天知道！也許是前生吧。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After saving the Tramp the first time
+# *****************************************************************
+# Kins
+PC03_TRAMP_RAT_DIALOGEND-1=啊……
+# Kins
+PC03_TRAMP_RAT_DIALOGEND-2=你會為此付出代價的！
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-3=他們走了，你還好吧？
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-4=不用擔心我。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-5=到底是怎麽回事？
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-6=你不該插手的，反正我已經活不久了！
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-7=別說這種話！另外……你還未回答我的問題。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-8=說來話長……但總而言之，我欠他們錢。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-9=我被診斷出患有心臟衰竭，這是不治之症。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-10=有些時候，我的心口實在是疼痛難忍，所以我想也許可以讓那些鼠人幫我找些止痛藥……
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-11=我只想享受剩下的日子。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-12=節哀……
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-13=其實……只要還活著，就會有希望，沒有疾病是治不了的。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-14=努力尋找，總會有辦法。這道理是我跟某位化學家在一起很久領悟出來的。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-15=理論上也許能治，不過誰人會在乎貧民的生死呢？
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-16=無論如何，你不該待在這受寒，不如來我的公寓吧！
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-17=雖然空間不大， 但是擠一擠還是可以住的。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-18=你真是個好人！但我不能接受。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-19=我已經給你添了很多麻煩，我擔心他們會盯上你……
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-20=那救讓他們來吧！我要給他們好好上一堂「敬老尊賢」課。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-21=呃……那個，我不是說你老……
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-22=沒事，不過還請不必堅持，我已下定決心了。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-23=好吧……
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-24=不過我會設法幫你的，我保證。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-25=你還有大好人生！
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-26=別把時間浪費在我這種人身上。
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-27=我偏要！而且我也下定決心了。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-28=哈哈！
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-29=好吧。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-30=這是我的上一份醫療處方。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-31=我那時候還是市民，直到後來我被除籍……
+# Brok
+PC03_TRAMP_RAT_DIALOGEND-32=除籍？！
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-33=你懂那裏的規矩，除非家境富裕，否則就只有擁有特長的人才可以留下來……而我明顯不符合資格。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-34=這藥方有助於穩定我的病情。
+# Tramp
+PC03_TRAMP_RAT_DIALOGEND-35=我不確定這舊紙板是否對你有用處，但是……請你收下吧。
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_RATDIALOGEND2-1=真希望我有更好的東西給你。
+# Brok
+PC03_TRAMP_RATDIALOGEND2-2=沒關係！這已經足夠了。
+# Tramp
+PC03_TRAMP_RATDIALOGEND2-3=謝謝你，孩子……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player talks to the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_WELCOME1-1=你好！
+# Tramp
+PC03_TRAMP_WELCOME1-2=你好啊，孩子。
+# Tramp
+PC03_TRAMP_WELCOME1-3=找我聊天沒問題，其他的我就不知道怎樣幫你了。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME2-1=你好嗎？
+# Tramp
+PC03_TRAMP_WELCOME2-2=孩子，你不該向我這快死的老人家問這種問題。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE2-1=嘿！近來可好？
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE2-2=好極了，這藥真有效！我的腿開始恢復知覺了！
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE2-3=太好了！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIMSELF1-1=那些身份識別證……原來你當過兵。
+# Tramp
+PC03_TRAMP_HIMSELF1-2=好眼力，孩子！
+# Tramp
+PC03_TRAMP_HIMSELF1-3=幾年前……我在重生日事件期間曾加入獨立反抗軍。
+# Brok
+PC03_TRAMP_HIMSELF1-4=那你對付那些鼠人應該綽綽有餘才對。
+# Tramp
+PC03_TRAMP_HIMSELF1-5=看來你這個偵探還有待修煉啊。
+# Tramp
+PC03_TRAMP_HIMSELF1-6=你瞧我這身體的狀況，站都站不穩了。
+# Tramp
+PC03_TRAMP_HIMSELF1-7=說這些也沒用了，我已經認命了。
+# Brok
+PC03_TRAMP_HIMSELF1-8=別那麽說！我一定會幫你找到辦法的！
+# Tramp
+PC03_TRAMP_HIMSELF1-9=請別給我不切實際的希望了。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIMSELF2-1=話說，我怎麽從未見過你？
+# Tramp
+PC03_TRAMP_HIMSELF2-2=我四處流浪，從來不待在同一個地方。
+# Tramp
+PC03_TRAMP_HIMSELF2-3=乞討是違法的，而我又買不起房子，我們的社會真是矛盾。
+# Brok
+PC03_TRAMP_HIMSELF2-4=原來如此……
+# Brok
+PC03_TRAMP_HIMSELF2-5=為什麽不嘗試離開這城市呢？你可以當農民，過上平凡的生活。
+# Tramp
+PC03_TRAMP_HIMSELF2-6=你也知道沒那麽簡單，現在除了高級公民之外，所有人都被禁止出入境。
+# Tramp
+PC03_TRAMP_HIMSELF2-7=而且，亞特蘭西亞是我的故鄉。我出生於此，畢生守護著這片土地。
+# Tramp
+PC03_TRAMP_HIMSELF2-8=就算要死，我也要死在這裏。
+# Brok
+PC03_TRAMP_HIMSELF2-9=但你不該這樣死去……
+# Tramp
+PC03_TRAMP_HIMSELF2-10=我堅決如鐵。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIMSELF3-1=我很好奇……
+# Tramp
+PC03_TRAMP_HIMSELF3-2=你為什麽那麽在乎我的生死呢？我們只是萍水相逢而已。
+# Brok
+PC03_TRAMP_HIMSELF3-3=我也不明白……你確定我們之前不認識嗎？我有種奇怪的感覺。
+# Brok
+PC03_TRAMP_HIMSELF3-4=誰也不該放棄生的希望，生命是世上最寶貴的東西。
+# Tramp
+PC03_TRAMP_HIMSELF3-5=年輕人的美好憧憬呀。
+# Tramp
+PC03_TRAMP_HIMSELF3-6=總有一天你會明白的。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_RATS1-1=他們是鼠人對吧？
+# Tramp
+PC03_TRAMP_RATS1-2=是的。
+# Brok
+PC03_TRAMP_RATS1-3=他們不是十年前就被流放了嗎？
+# Tramp
+PC03_TRAMP_RATS1-4=是的，至少大家都是這麽認為的。
+# Tramp
+PC03_TRAMP_RATS1-5=但是……部分鼠人其實一直隱藏在我們社會的陰影中。
+# Tramp
+PC03_TRAMP_RATS1-6=我體弱多病無力反抗……所以他們有恃無恐。
+# Tramp
+PC03_TRAMP_RATS1-7=但我不怪他們。
+# Brok
+PC03_TRAMP_RATS1-8=怎麽能這麽說？！他們想要你的命啊！
+# Tramp
+PC03_TRAMP_RATS1-9=是的，但那是因為我欠他們錢。
+# Tramp
+PC03_TRAMP_RATS1-10=不過我不後悔，那些藥物延續了我的壽命。
+# Tramp
+PC03_TRAMP_RATS1-11=我此生無憾了。
+# Brok
+PC03_TRAMP_RATS1-12=但是，他們不該試圖殺害你。那實在是……過分了。
+# Tramp
+PC03_TRAMP_RATS1-13=清醒點，孩子。世上沒有非黑即白那麽簡單的事情。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_RATS2-1=我不懂。
+# Brok
+PC03_TRAMP_RATS2-2=他們殺了你又有什麽好處呢？他們永遠都無法收回欠款了。
+# Tramp
+PC03_TRAMP_RATS2-3=殺雞儆猴。
+# Tramp
+PC03_TRAMP_RATS2-4=我死了比活著更有價值。
+# Brok
+PC03_TRAMP_RATS2-5=我不會讓這種事情發生的！
+# Tramp
+PC03_TRAMP_RATS2-6=請注意安全，我可不想連累你丟掉性命。
+# Brok
+PC03_TRAMP_RATS2-7=你不必擔心我！我有能力保護好自己。
+# Tramp
+PC03_TRAMP_RATS2-8=也許吧……但他們人數衆多，你不可能徹底打敗他們的。
+# Brok
+PC03_TRAMP_RATS2-9=敢打賭嗎？
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_THINK1-1=（他警告我不要涉入，否則會陷入麻煩……）
+# Brok
+PC03_TRAMP_THINK1-2=（也許他說得對，但我不能見死不救！我得幫幫那可憐的老先生！）
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_EXIT1-1=我得走了，但我會很快回來的。
+# Tramp
+PC03_TRAMP_EXIT1-2=注意安全，孩子。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_EXIT2-1=在這等我，我會幫你找到治療方法的。
+# Tramp
+PC03_TRAMP_EXIT2-2=我知道你很忙，別把你寶貴的時間浪費在我身上了。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-1=這是送你的！
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-2=孩子……呃，你需要一副眼鏡嗎？
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-3=為什麽把處方籤還給我呢？
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_BEFORE-4=哎呀！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-1=這個……事情比我想象的還要複雜些。
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-2=哦。
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-3=不過你放心！
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-4=我絕不會放棄的！
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-5=在把藥找給你之前，我能為你做些什麽嗎？
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-6=嗯……
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-7=常規藥物也能起點作用……
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-8=快告訴我！是哪種藥？
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-9=葡萄糖，但是價格很昂貴……
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-10=我不能要求你……
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-11=我會幫你找到的。
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-12=不必，我已經認命了。
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-13=你和你的孩子更需要用到錢。
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-14=我兒子……？你怎麽知道……？
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-15=猜的。
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-16=好吧，總之我會幫你找到的！
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-17=好吧……
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-18=但是你得答應我……不要做傻事。
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-19=不要忘記。
+# Brok
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE1-20=當然！
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_TRAMPPRESCR_NOGLUCOSITE2-1=找到我的藥了嗎？
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-1=給你。
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-2=葡萄糖……？
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-3=孩子……
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-4=行了，什麽都不必說。
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-5=收下吧。
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-6=那好吧。
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-7=謝謝你。
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-8=我還是會幫你找到處方藥的，不過得先找到個醫生。
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-9=別為此浪費時間了。
+# Tramp
+PC03_TRAMP_GLUCOSITE_YES1-10=時間就是金錢，很明顯你兩者都缺。
+# Brok
+PC03_TRAMP_GLUCOSITE_YES1-11=我可以應付得來。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GLUCOSITE_NO1-1=抱歉……我還需要點時間。
+# Tramp
+PC03_TRAMP_GLUCOSITE_NO1-2=沒關係。
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_NOMEDICINE-1=我感覺好些了……
+# Brok
+PC03_TRAMP_NOMEDICINE-2=太棒了！
+# Tramp
+PC03_TRAMP_NOMEDICINE-3=……但這效果並不會持久。
+# Brok
+PC03_TRAMP_NOMEDICINE-4=別擔心，我會幫你找到處方藥的！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_DEFAULT1-1=給你！
+# Tramp
+PC03_TRAMP_INV_DEFAULT1-2=孩子……雖說我無家可歸，但也不至於走投無路啊。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_DEFAULT2-1=這對你應該有用！
+# Tramp
+PC03_TRAMP_INV_DEFAULT2-2=留著吧。我用不上。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_BILL1-1=我需要人幫忙繳付帳單。
+# Tramp
+PC03_TRAMP_INV_BILL1-2=呃……你是在問我嗎……？
+# Brok
+PC03_TRAMP_INV_BILL1-3=哎呀……不好意思！
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_MINEBROKEN-1=這東西我在部隊時使用過。
+# Tramp
+PC03_TRAMP_INV_MINEBROKEN-2=你不該隨身攜帶的！
+# Brok
+PC03_TRAMP_INV_MINEBROKEN-3=放心吧！已經損壞了！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_MONEY-1=喏，給你。
+# Tramp
+PC03_TRAMP_INV_MONEY-2=孩子，我雖然是個流浪漢，但我目前用不上金錢。
+# Brok
+PC03_TRAMP_INV_MONEY-3=不好意思……我只是想幫助你。
+# Tramp
+PC03_TRAMP_INV_MONEY-4=把錢收起來吧。你比我更需要它們。
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_APARTMENTKEY-1=我明白……但我真的不能接受，這可是你的公寓。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_PILL-1=給你！這應該能夠治療你的病！
+# Tramp
+PC03_TRAMP_INV_PILL-2=這是什麽？
+# Brok
+PC03_TRAMP_INV_PILL-3=呃……
+# Tramp
+PC03_TRAMP_INV_PILL-4=抱歉，孩子。這種安慰劑對我的病情沒有幫助……
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_POLLUTIONPILL-1=謝謝，我的孩子，不過我已經有了。
+# Tramp
+PC03_TRAMP_INV_POLLUTIONPILL-2=我還在每天服用排毒丸，本來是打算停用的，但我也害怕窒息而死的感覺。
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_STICK-1=我曾經精通十八般武藝！
+# Tramp
+PC03_TRAMP_INV_STICK-2=但現在連湯匙都握不了……
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_INV_GUN-1=動手吧。
+# Brok
+PC03_TRAMP_INV_GUN-2=等等，不是！我只是拿出來給你看看……
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_INV_CATFUR-1=給你，這應該能保暖！
+# Tramp
+PC03_TRAMP_INV_CATFUR-2=呃……該怎麽說呢……
+# Brok
+PC03_TRAMP_INV_CATFUR-3=當我沒說。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player hits the Tramp
+# *****************************************************************
+# Tramp
+PC03_TRAMP_HIT1-1=……痛。
+# Brok
+PC03_TRAMP_HIT1-2=哎呀！抱歉，我不是故意的……
+# Tramp
+PC03_TRAMP_HIT1-3=沒關係，孩子。別放在心上。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_HIT2-1=對不起……我一時手滑了！
+# Tramp
+PC03_TRAMP_HIT2-2=我沒事，應該沒事。
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_HIT3-1=看來……你是有意為之。
+# Tramp
+PC03_TRAMP_HIT3-2=很好，我已經做好準備了。我寧願死在你手中也不要死在他們手裏。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Tramp dead
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH-1=……
+# Brok
+PC03_TRAMP_DEATH-2=……他……死了……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player didn't get the medecine so tramp is dead
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH_GLUCOSITE-1=我找不到他需要的藥……可是……
+# Brok
+PC03_TRAMP_DEATH_GLUCOSITE-2=肯定有別的辦法的！我……應該更努力些的！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player kills the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH_US-1=不……我怎麽成了殺人犯……？
+# Brok
+PC03_TRAMP_DEATH_US-2=我結束了他的痛苦，但……這是我內心的選擇嗎……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Player fled
+# *****************************************************************
+# Brok
+PC03_TRAMP_DEATH_THEM-1=我知道將會發生什麽事……但是我選擇了逃跑……
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_DEATH_NEXT-1=現在後悔也來不及了……
+# Brok
+PC03_TRAMP_DEATH_NEXT-2=唉……
+# Brok
+PC03_TRAMP_DEATH_NEXT-3=還是連絡屍體回收服務吧……至少不能讓他曝屍荒野。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 - Talk to the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAMP_WELCOME_DAY2END-1=你還好嗎？
+# Tramp
+PC03_TRAMP_WELCOME_DAY2END-2=……還行。
+# Brok
+PC03_TRAMP_WELCOME_DAY2END-3=（他表現得很堅強，但我知道……）
+# Brok
+PC03_TRAMP_WELCOME_DAY2END-4=（其實他的情況很糟糕，我得盡快找到處方藥……）
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME_DAY2-1=嘿！你今天好嗎？
+# Tramp
+PC03_TRAMP_WELCOME_DAY2-2=我今天不……
+# Tramp
+PC03_TRAMP_WELCOME_DAY2-3=唔……至少我還活著，多虧有你。
+# Brok
+PC03_TRAMP_WELCOME_DAY2-4=那就好！
+# Brok
+PC03_TRAMP_WELCOME_DAY2-5=（我需要找個醫生，但是只有市區才有醫生，而且我一個都不認識。）
+# Brok
+PC03_TRAMP_WELCOME_DAY2-6=（希望今天能遇上一位。）
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_WELCOME_DAY3-1=嘿！今天過得怎麽樣？
+# Tramp
+PC03_TRAMP_WELCOME_DAY3-2=（深呼吸）
+# Tramp
+PC03_TRAMP_WELCOME_DAY3-3=我……還好。
+# Brok
+PC03_TRAMP_WELCOME_DAY3-4=（糟糕……他快不行了。）
+# Brok
+PC03_TRAMP_WELCOME_DAY3-5=（等等……我的新客戶不就是個醫生嗎？）
+#----------------------------------------------------
+# Tramp
+PC03_TRAMP_GHERKIN1-1=（深呼吸）
+# Brok
+PC03_TRAMP_GHERKIN1-2=醫生！你能幫幫他嗎？
+# Gherkin
+PC03_TRAMP_GHERKIN1-3=哦不！可憐的先生！
+# Gherkin
+PC03_TRAMP_GHERKIN1-4=你為什麽沒早點把他的狀況告訴我？！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GHERKINNO-1=不重要了！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GHERKINYES-1=我有啊！
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GHERKIN2-1=這是他用的處方。
+# Gherkin
+PC03_TRAMP_GHERKIN2-2=哦！
+# Gherkin
+PC03_TRAMP_GHERKIN2-3=先生，你運氣真好。我的手提箱裏剛好有你需要的東西。
+# Brok
+PC03_TRAMP_GHERKIN2-4=太棒了！
+# Tramp
+PC03_TRAMP_GHERKIN2-5=你……是誰……？
+# Gherkin
+PC03_TRAMP_GHERKIN2-6=這個實驗性的高濃度配方應該可以使用好幾年。
+# Brok
+PC03_TRAMP_GHERKIN2-7=拜托了！把這個吞下去！
+# Tramp
+PC03_TRAMP_GHERKIN2-8=……
+# Gherkin
+PC03_TRAMP_GHERKIN2-9=該藥物應該可以立即生效。
+# Brok
+PC03_TRAMP_GHERKIN2-10=謝了，醫生！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Give his medicine!
+# *****************************************************************
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-1=我有東西給你！
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-2=喏！
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-3=……這是……？
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-4=對。就是你需要的藥物！
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-5=我的天啊……
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-6=這……實在是我預想不到的好消息啊……
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-7=我該怎麽回報你才好……？
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-8=沒必要，能幫上忙就很高興了！
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-9=好好！我先把藥收起來，以免遭不肖的人盯上。
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-10=好的！
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-11=如果那些該死的鼠人又出現的話……我一定不會放過他們！
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-12=他們不敢再來的，你昨天把他們狠狠教訓了一頓！
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-13=現在有了藥，我也應該能保護自己了，我在軍隊裏學來的本領可還沒有忘光呢。
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-14=太好了！
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-15=那……
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-16=祝你早日康復。
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-17=我會的。
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-18=這藥不能治療我的疾病，但……應該可以穩定病情。
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-19=可惜我沒能完全解決你的煩惱……
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-20=你已經給了我一個未來。
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-21=沒有比這更好的禮物了。
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-22=是嗎……
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-23=不過，我之前的提議還是存在的，你可以過來我家暫住。
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-24=你的好意我心領了，但我得拒絕。
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-25=可是……
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-26=就和你一樣，這是我的決定。
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-27=好吧……如果你改變主意了，我家的門隨時向你敞開。
+# Tramp
+PC03_TRAMP_WELCOME_MEDICINE1-28=謝謝你，布羅格。
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-29=……
+# Brok
+PC03_TRAMP_WELCOME_MEDICINE1-30=（……？）
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 3 - Brok comes back and the Tramp is gone, leaving a letter for him
+# *****************************************************************
+# Brok
+PC03_TRAMP_GONE1-1=嗯……？
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GONE2-1=他不見了……？
+# Brok
+PC03_TRAMP_GONE2-2=希望他不是出事了吧……
+# Brok
+PC03_TRAMP_GONE2-3=等等，這是什麽？
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GONE3-1=有封信……
+# Brok
+PC03_TRAMP_GONE3-2=“致布羅格”……？
+# Tramp
+PC03_TRAMP_GONE3-3=“孩子，你好。”
+# Tramp
+PC03_TRAMP_GONE3-4=“我接受了你的建議，決定搬去一個更清靜的地方。”
+# Tramp
+PC03_TRAMP_GONE3-5=“我其實感到很慚愧，因為……我對你撒了謊。”
+# Tramp
+PC03_TRAMP_GONE3-6=“我來這裏是有原因的。”
+# Tramp
+PC03_TRAMP_GONE3-7=“我想在離開這世界之前見一見我好友的養子。”
+# Tramp
+PC03_TRAMP_GONE3-8=“是的……我認識你的「爺爺」。”
+# Tramp
+PC03_TRAMP_GONE3-9=“他去世後，本該由我來照顧你的。他請求過我，但我拒絕了……”
+# Tramp
+PC03_TRAMP_GONE3-10=“那時我還很年輕，我不認為我能勝任……畢竟我當時還在部隊中。”
+# Tramp
+PC03_TRAMP_GONE3-11=“我後來每天都很後悔這個決定，我不該丟下你一個人無依無靠地生活。”
+# Tramp
+PC03_TRAMP_GONE3-12=“盡管如此，我很慶幸你成為了一個堅強而善良的人。”
+# Tramp
+PC03_TRAMP_GONE3-13=“果然是祖孫，你們都一樣喜歡幫助人。”
+# Tramp
+PC03_TRAMP_GONE3-14=“我會知道是因為……”
+# Tramp
+PC03_TRAMP_GONE3-15=“好吧……雖然我承諾過要保守秘密的，不過……”
+# Tramp
+PC03_TRAMP_GONE3-16=“該怎麽說……其實在很久以前，我就已經見識到你的為人了。”
+# Tramp
+PC03_TRAMP_GONE3-17=“但是你要注意。生活不是那麽簡單的。”
+# Tramp
+PC03_TRAMP_GONE3-18=“別讓別人濫用你的好意，別讓善良蒙蔽你的判斷力。”
+# Tramp
+PC03_TRAMP_GONE3-19=“是你給了我新的人生，並且說服我以更好的方式度過生命中的最後幾年。”
+# Tramp
+PC03_TRAMP_GONE3-20=“這份道別禮物你收下吧，可以在戰鬥中幫助到你。”
+# Tramp
+PC03_TRAMP_GONE3-21=“不必擔心我，有緣再見……或許到時候我會有點不一樣了！”
+# Tramp
+PC03_TRAMP_GONE3-22=“為了身邊的人堅持奮鬥吧”
+# Tramp
+PC03_TRAMP_GONE3-23=“——里克叔叔”
+# Brok
+PC03_TRAMP_GONE3-24=叔叔……
+# Brok
+PC03_TRAMP_GONE3-25=多希望你能早些告訴我……畢竟我們從未好好相處過。
+# Brok
+PC03_TRAMP_GONE3-26=這張紙上有我家的地址。
+# Brok
+PC03_TRAMP_GONE3-27=還有……
+# Brok
+PC03_TRAMP_GONE3-28=好像是個幸運符。
+#----------------------------------------------------
+# Brok
+PC03_TRAMP_GONE4-1=看起來很不錯！
+# Brok
+PC03_TRAMP_GONE4-2=謝謝你，叔叔。我會隨身攜帶著的。
+# Brok
+PC03_TRAMP_GONE4-3=我永遠不會忘記你……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interaction with sticker
+# *****************************************************************
+# Brok
+PC03_STICKERDISPLAY1-1=咦，這不是格拉夫最喜歡的樂團嗎？
+# Brok
+PC03_STICKERDISPLAY1-2=也許我該為他買張入場票！
+# Brok
+PC03_STICKERDISPLAY1-3=前提是得有足夠的錢。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Drones visit Brok if bills unpaid
+# *****************************************************************
+# Brok
+PC03_STORY175_DRONES-1=……
+# Brok
+PC03_STORY175_DRONES-2=無人機……？這次又是想幹嘛……
+# Tribot
+PC03_STORY175_DRONES-3=貧民區公民
+# Tribot
+PC03_STORY175_DRONES-4=你有逾期帳單
+# Tribot
+PC03_STORY175_DRONES-5=請解釋
+# Brok
+PC03_STORY175_DRONES-6=你想我如何解釋？！
+# Brok
+PC03_STORY175_DRONES-7=當然是因為沒錢啦！
+# Tribot
+PC03_STORY175_DRONES-8=你有三秒時間付清款項
+# Brok
+PC03_STORY175_DRONES-9=三秒？！
+# Brok
+PC03_STORY175_DRONES-10=不然會如何……
+# Tribot
+PC03_STORY175_DRONES-11=時間到
+# Tribot
+PC03_STORY175_DRONES-12=準備接受死期
+# Brok
+PC03_STORY175_DRONES-13=好吧。
+# Brok
+PC03_STORY175_DRONES-14=無論繳或不繳，帳單都會讓你痛苦。
+#----------------------------------------------------
+# Brok
+PC03_STORY175_DRONES_WIN-1=……
+# Brok
+PC03_STORY175_DRONES_WIN-2=看來還是別拖欠繳費了，下次它們說不定將整個貧民區給炸了！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Day 2 end - Brok comes back when Graff didn't take his Toxout pill
+# *****************************************************************
+# Tramp
+PC03_TRAMP_PILLWELCOME-1=孩子！
+# Tramp
+PC03_TRAMP_PILLWELCOME-2=快回家去吧！你兒子有危險！
+# Brok
+PC03_TRAMP_PILLWELCOME-3=格拉夫？！
+#----------------------------------------------------
+# Brok
+PC03_LEAVINGNOPE-1=不行！格拉夫需要我！
+#----------------------------------------------------
+# Tribot
+PC03_STORY175_DRONES_LOSE-1=你的債務將順延至法定繼承人
+# Tribot
+PC03_STORY175_DRONES_LOSE-2=感謝合作
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Gameover after fighting
+# *****************************************************************
+# Tramp
+PC03_TRAMP_RAT_LOSE1-1=糟糕！
+# Dart
+PC03_TRAMP_RAT_LOSE1-2=真是無趣！
+# Dart
+PC03_TRAMP_RAT_LOSE1-3=接下來到你了，老頭。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Gameover after fighting
+# *****************************************************************
+# Tramp
+PC03_TRAMP_RAT_LOSE2-1=不！
+# Kins
+PC03_TRAMP_RAT_LOSE2-2=這次輪到我們笑到最後了！
+# Rat
+PC03_TRAMP_RAT_LOSE2-3=對！鱷魚人死翹翹了！
+# Dart
+PC03_TRAMP_RAT_LOSE2-4=哎呀……老大說過要抓活的。
+# Kins
+PC03_TRAMP_RAT_LOSE2-5=你這笨蛋！怎麽不早說？！
+# Dart
+PC03_TRAMP_RAT_LOSE2-6=抱歉啊各位……
+#----------------------------------------------------
+# Brok
+PC03_STICKER_AD-1=等等……那個似乎不一樣！
+#----------------------------------------------------
+# Brok
+PC03_LEAVINGNOPEALT-1=我還不能離開！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok saves the Tramp
+# *****************************************************************
+# Brok
+PC03_TRAILER1-1=嘿！放開那個老人家！
+# Kins
+PC03_TRAILER1-2=關你屁事，趕緊離開這裏！
+# Brok
+PC03_TRAILER1-3=夠了！你會後悔的！
+#----------------------------------------------------
+# Brok
+PC03_TRAILER2-1=……他……死了……
+#----------------------------------------------------
+
+
+
+COOP_PC03_TRAMP1-1=我明白了...在這個維度里，他得了一種疾病。
+
+COOP_PC03_TRAMP1-2=這讓他看起來很老。多大的變化。
+
+

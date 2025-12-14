@@ -1,0 +1,9547 @@
+﻿#-------------------------------
+#=LAB ROOM RIGHT
+#-------------------------------
+
+#----------------------
+#= Power socket
+#----------------------
+ID=PC15D_POWERSOCKET1
+T=That power socket...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+CONTEXT=Room interactions. Brok is inspecting to find clues over why Dr. Hush was found "dead" in the middle of Dr. Mink's room.
+
+T=It's burnt down?
+W=BROK
+C1A=WONDER
+
+T=Oh. That's right.
+W=MINK
+
+T=I tried hooking up an ancient bot the other day to help me with handling materials.
+W=MINK
+C2A=MOCK
+
+T=Bad idea. It fried as soon as I hooked it up.
+W=MINK
+C2A=MEH
+
+T=What bot?
+W=BROK
+C1A=THINK
+
+T=Does it matter?
+W=MINK
+
+T=I threw it away a week ago so it's irrelevant to what's happening.
+W=MINK
+C2A=MOCK
+
+T=All the other bots in this facility are modern.
+W=MINK
+
+T=You mean only old bots can cause this?
+W=BROK
+
+T=Yeah. Manufactured pre-Autarchism day, I'd say.
+W=MINK
+C2A=HAPPY
+
+T=Interesting.
+W=BROK
+C1A=WONDER
+CLUE=CLUE_LAB_OVERLOADSOCKET
+
+#----------------------
+ID=PC15D_POWERSOCKET2
+T=A burnt power socket. Not too far from the body.
+W=BROK
+A=WONDER
+
+
+
+#----------------------
+#= Hole
+#----------------------
+ID=PC15D_HOLE1
+T=This leads to Dr. Hush's room.
+W=BROK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=MEH
+
+T=What a surprise!
+W=BROK
+C1A=MOCK
+
+T=I'm hoping you will fix this before leaving!
+W=MINK
+
+T=What about your bot minion, huh? I'd like to see him try!
+W=BROK
+
+T=Right. I forgot it could.
+W=MINK
+C2A=HAPPY
+
+T=It can?!
+W=BROK
+C1A=SURPRISED
+
+T=Of course. We wouldn't do that kind of laborious job ourselves.
+W=MINK
+C2A=NORMAL
+
+T=For an instant, I forgot who I was talking to.
+W=BROK
+C1A=MEH
+
+#----------------------
+ID=PC15D_HOLE2
+T=I'm afraid I can't pass through there.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=MINK
+C2A=MEH
+
+T=I don't think anyone can, actually.
+W=MINK
+
+T=Then you have to wonder why this passage exists.
+W=BROK
+C1A=WONDER
+
+#----------------------
+#= Trap
+#----------------------
+ID=PC15D_TRAP1
+T=What's that? A vent?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL
+
+T=Yes.
+W=MINK
+
+T=We're stuck in here all the time. The air has to recycle somehow.
+W=MINK
+C2A=HAPPY
+
+#----------------------
+ID=PC15D_TRAP_AFTER1
+T=Wait a sec...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Is that a ladder inside that vent?
+W=BROK
+
+T=Yes. The maintenance ladder.
+W=MINK
+
+T=I remember an agent using it to remove a package stuck in there.
+W=MINK
+
+T=Any way to bring it down?
+W=BROK
+C1A=READY
+
+T=Use my tablet.
+W=MINK
+C2A=HAPPY
+
+#----------------------
+ID=PC15D_TRAP_AFTER2
+T=I better climb this ladder if I wanna access it.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=NORMAL
+
+#----------------------
+#= Ladder
+#----------------------
+ID=PC15D_LADDER1
+T=Okay... Time to explore.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=OTT
+C2A=NORMAL
+
+T=You're sure about this, Mister Brok?
+W=OTT
+C2A=WONDER
+
+T=No other choice. We can't let any possible clue undiscovered!
+W=BROK
+C1A=COCKY
+
+T=No, I mean...
+W=OTT
+C2A=OPPOSITE
+C1A=THINK
+
+T=Will there be enough room for you to get through?...
+W=OTT
+C2A=WONDER
+
+T=Hey!... I'm not that big!
+W=BROK
+C1A=OPPOSITE
+
+T=You'll see!
+W=BROK
+C1A=READY
+TEN=PC15D_LADDER_CLIMB
+
+
+#----------------------
+ID=PC15D_LADDER1B
+T=Ooof... That's tight.
+W=BROK
+C1A=CONFUSED
+
+T=Maybe time for a diet after all...
+W=BROK
+C1A=TIRED
+
+T=Hey, what did I just touch...?
+W=BROK
+C1A=WONDER
+
+T=It's all... sticky.
+W=BROK
+C1A=SURPRISED
+
+T=(Slurps)
+W=BROK
+C1A=WONDER
+
+T=Tastes good!
+W=BROK
+C1A=HAPPY
+TEN=PC15D_LADDER_LIGHT
+
+
+#----------------------
+ID=PC15D_LADDER1C
+T=I've lit it up for you.
+BNAMESP=MINK
+BVOICESP=MINK
+
+T=Nice!
+W=BROK
+C1A=HAPPY
+
+T=Yup. That's interesting.
+W=BROK
+C1A=MOCK
+
+T=There's Tomatoze sauce!
+W=BROK
+
+T=What's it doing here?
+W=BROK
+C1A=WONDER
+CLUE=CLUE_LAB_TOMATOVENTILATION
+
+T=...
+W=BROK
+
+T=I'll think about this later. Better get out of here before I get stuck!
+W=BROK
+C1A=READY
+
+T=There's some kind of huge pipe at the top.
+W=BROK
+C1A=WONDER
+
+T=Can't climb through there, I'm afraid.
+W=BROK
+
+T=Then... I shall keep moving forward to reach the other side.
+W=BROK
+TEN=PC15D_LADDER_TOPC15C
+
+#----------------------
+ID=PC15D_LADDER2
+T=Nope. I've seen everything there is to see.
+W=BROK
+C1A=OPPOSITE
+
+T=Are you certain?
+W=OTT
+C2=OTT
+C2A=WONDER
+
+T=Yes! I almost got stuck in there forever with no food!
+W=BROK
+C1A=OPPOSITE
+
+T=Don't be silly!
+W=OTT
+C2A=HAPPY
+
+T=I would have sent some Antburgers your way.
+W=OTT
+C2A=NORMAL
+
+#----------------------
+#= Wires
+#----------------------
+ID=PC15D_WIRES1
+T=Hmm... I guess you could strangle someone with those wires?
+W=BROK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=NORMAL
+
+T=See any strangulation marks on the body?
+W=MINK
+C2A=MOCK
+
+T=Not really...
+W=BROK
+C1A=MAYBE
+
+#----------------------
+ID=PC15D_WIRES2
+T=Ugh... What a mess!
+W=BROK
+C1A=CONFUSED
+
+T=Makes me wish for a pair of scissors.
+W=BROK
+C1A=MOCK
+
+T=Don't you dare!
+W=MINK
+C2=MINK
+C2A=ANGRY
+
+#----------------------
+ID=PC15D_WIRES_MAGNIFY
+T=Surprisingly... I can't see any nanite running over those wires.
+W=BROK
+A=THINK
+
+#----------------------
+#= Equipment
+#----------------------
+ID=PC15D_EQUIPMENT1
+T=I thought you were specialized in mano technics?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=Nano-technology.
+W=MINK
+C2A=MOCK
+
+T=Yeah, that. Small robots!
+W=BROK
+C1A=ALRIGHT
+
+T=Why the chemicals then?
+W=BROK
+C1A=WONDER
+
+T=Nanites act on a molecular level.
+W=MINK
+C2A=NORMAL
+
+T=Oh? So you're making liquid robots?
+W=BROK
+C1A=THINK
+
+T=...
+W=MINK
+C2A=MOCK
+
+#----------------------
+ID=PC15D_EQUIPMENT2
+T=What a mess.
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=MEH
+
+T=Hey? Are my eyes deceiving me or does this package contain red worms?
+W=BROK
+C1A=WONDER
+
+T=Yes. How do you think I do my experiments? I need living organisms.
+W=MINK
+C2A=NORMAL
+
+T=I could use a snack. They're my favorites!
+W=BROK
+C1A=HAPPY
+
+T=No way! Hands off!
+W=MINK
+C2A=ANGRY
+
+
+#----------------------
+ID=PC15D_EQUIPMENT_MAGNIFY
+T=Yeah. I see tiny robotic thingies scattered on this table!
+W=BROK
+A=THINK
+
+T=Then again... It's his workbench.
+W=BROK
+A=ALRIGHT
+
+
+#----------------------
+#= Nanites
+#----------------------
+ID=PC15D_NANITES1
+T=Don't tell me! These are... Erm...
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=MINK
+C2A=MEH
+
+T=Things.
+W=BROK
+C1A=MEH
+
+T=Nanites. Also called nanobots.
+W=MINK
+C2A=MOCK
+
+T=Close enough.
+W=BROK
+C1A=ALRIGHT
+
+T=What are these for?
+W=BROK
+C1A=MOCK
+
+T=Are you serious? We've been using them for ages!
+W=MINK
+C2A=SURPRISED
+
+T=Now that you mention it...
+W=BROK
+C1A=WONDER
+C2A=MEH
+
+T=I think Lia used them in conjunction with medicine.
+W=BROK
+
+T=Yes, their main usage is health. 
+W=MINK
+
+T=Inject them and they can repair your body from the inside.
+W=MINK
+C2A=HAPPY
+
+T=Neato!
+W=BROK
+C1A=HAPPY
+
+T=Well...
+W=MINK
+C2A=MOCK
+
+T=There's a recurring rumor in our nanobot community.
+W=MINK
+
+T=A scientist would have succeeded to take direct control of a host through the use of nanites.
+W=MINK
+C2A=HAPPY
+
+T=Sounds scary...
+W=BROK
+C1A=MAYBE
+
+T=Indeed.
+W=MINK
+
+T=But let me reassure you. This never happened.
+W=MINK
+C2A=HAPPY
+
+T=If someone had truly made such a discovery, he'd be the most famous scientist in the world!
+W=MINK
+C2A=NORMAL
+
+T=So you didn't.
+W=BROK
+C1A=THINK
+
+T=I wish!
+W=MINK
+C2A=MOCK
+
+#----------------------
+ID=PC15D_NANITES2
+T=Can you really insert such big things in a body without doing damage?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=What you see on this table is actually a reproduction at 10,000th the scale to make them easier to work with.
+W=MINK
+
+T=They aren't visible with the naked eye.
+W=MINK
+
+T=Must be hard to handle.
+W=BROK
+
+T=True! Only a few experienced engineers like myself can do that kind of work!
+W=MINK
+C2A=HAPPY
+
+T=(Does "pretentious" go along with this job?)
+W=BROK
+C1A=MEH
+MOOD=THINK
+
+#----------------------
+ID=PC15D_NANITES3
+T=I should try and detect if the nanites are hiding in unusual places.
+W=BROK
+A=READY
+
+T=I got something in my inventory that should help getting a closer view.
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC15D_NANITES_MAGNIFY
+T=Hey! There are tons of those tiny bots in there!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=MEH
+
+T=Did you really need a magnifying glass to find out?
+W=MINK
+
+
+#----------------------
+#= Glove headset
+#----------------------
+ID=PC15D_GLOVEHEADSET1
+T=That glove...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=It's for manipulating 3D objects in holograms.
+W=MINK
+
+T=How do you think we build our prototypes? 
+W=MINK
+
+T=What about the headset?
+W=BROK
+
+T=A diagnosis tool.
+W=MINK
+C2A=HAPPY
+
+T=Nanomachines reproduce the behavior of insects.
+W=MINK
+
+T=In particular, they make barely audible sounds depending on the situation.
+W=MINK
+
+T=This amplifies their noise so I can make it out...
+W=MINK
+SKIPEND=1
+
+T=(Yawn)
+W=BROK
+C1A=TIRED
+
+T=Why do I even bother explaining.
+W=MINK
+C2A=MOCK
+
+T=Sorry. Had some bad sleep lately.
+W=BROK
+
+#----------------------
+ID=PC15D_GLOVEHEADSET2
+T=I can't see anything unusual about these.
+W=BROK
+A=THINK
+
+T=Well, they're certainly not hardware you see everyday but...
+W=BROK
+
+T=I doubt they've been used to kill.
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC15D_GLOVEHEADSET_MAGNIFY
+T=You'd think there would be some nanites over the gloves he uses for manipulating them.
+W=BROK
+A=THINK
+
+T=Guess what. There are!
+W=BROK
+A=ALRIGHT
+
+#----------------------
+#= Tablet
+#----------------------
+ID=PC15D_TABLET1
+T=Don't touch this!
+W=MINK
+C1=BROK
+C1A=CONFUSED
+C2=MINK
+C2A=ANGRY
+CONTEXT=Using Dr Mink's tablet for various interactions
+
+T=Why? Does it bite?
+W=BROK
+C1A=THINK
+
+T=Don't play stupid!
+W=MINK
+
+T=Can't you see that's my work tablet?
+W=MINK
+
+T=It contains confidential information!
+W=MINK
+
+T=So?
+W=BROK
+
+T=Do you have any idea what could happen if it fell in the wrong hands?
+W=MINK
+
+T=No.
+W=BROK
+C1A=MEH
+
+T=But I'm the detective here, so I'm not giving you a choice.
+W=BROK
+
+T=Okay! Go ahead. Put your greasy hands on it.
+W=MINK
+C2A=MOCK
+
+T=...
+W=BROK
+C1A=WONDER
+
+T=I can't do anything. Is it locked?
+W=BROK
+
+T=Yes, obviously. There's security.
+W=MINK
+C2A=MEH
+
+T=Well then, unlock it!
+W=BROK
+C1A=ANGRY
+
+T=No.
+W=MINK
+
+T=What?
+W=BROK
+
+T=Listen, buddy. I'm in no mood for jokes.
+W=BROK
+
+T=So do your part, or this little friend of yours may accidentally end up stuck in your face!
+W=BROK
+C1A=FURIOUS
+C2A=SURPRISED
+
+T=(Gulp) If you insist...
+W=MINK
+TEN=PC15D_MINK_GOTABLET
+
+#----------------------
+ID=PC15D_TABLET1B
+T=There.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+TEN=PC15D_MINK_GOTABLET3
+
+T=So?
+W=MINK
+
+T=On second thought...
+W=BROK
+
+T=I can't understand any of it.
+W=BROK
+C1A=WONDER
+TEN=PC15D_TABLET_CHECKOTT
+
+
+#----------------------
+ID=PC15D_TABLET_OTT
+T=Let me see!
+W=OTT
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=OTT
+C3A=HAPPY
+
+T=Hmm...
+W=OTT
+C3A=WONDER
+
+T=...
+W=OTT
+
+T=At first glance I don't see anything suspicious.
+W=OTT
+
+T=This is some research data on power efficiency of nanites..
+W=OTT
+
+T=Okay.
+W=BROK
+IT=1
+TEN=PC15D_TABLET2
+
+#----------------------
+ID=PC15D_TABLET2
+T=In any case, I don't see any blood on this tablet.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=Unless it's been wiped off, I doubt this is the crime weapon.
+W=BROK
+
+T=No! You think?...
+W=MINK
+
+T=Can't exclude any possibility.
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=PC15D_TABLET_LADDER1
+T=Yup. Here's that ladder.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T=A rudimentary maintenance ladder, more precisely. It doesn't really feel safe.
+W=MINK
+C2A=MOCK
+
+T=Do you access it sometimes?
+W=BROK
+C1A=THINK
+
+T=Are you crazy?! I fear heights...
+W=MINK
+C2A=SURPRISED
+
+#----------------------
+ID=PC15D_TABLETRESEARCH1
+T=Some gibberish.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=MEH
+
+T=Hey! That's my research! It's highly confidential and valuable!
+W=MINK
+C2A=ANGRY
+
+T=Better not waste my time with this.
+W=BROK
+C1A=ANGRY
+TEN=PC15D_TABLET_END
+
+#----------------------
+ID=PC15D_TABLET_AFTER1
+T=Listen. I'd like to amend for my behavior earlier.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=My tablet offers a variety of features that you may find useful.
+W=MINK
+
+T=So it's not just your research? You hid this from us?
+W=BROK
+C1A=ANGRY
+
+T=No. These features seemed unrelated to the case but after what we've learned...
+W=MINK
+C2A=MEH
+
+T=I'm not sure anymore.
+W=MINK
+C2A=MOCK
+
+T=Let me give you access.
+W=MINK
+TEN=PC15D_MINK_GOTABLET
+
+#----------------------
+ID=PC15D_TABLET_AFTER2
+T=Lend me your finger.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Hey!
+W=BROK
+C1A=ANGRY
+
+T=I'm adding you to the authorized guests. You'll have unlimited access for an hour.
+W=MINK
+C2A=NORMAL
+TEN=PC15D_MINK_GOTABLET3
+
+T=Oh. Thanks.
+W=BROK
+C1A=READY
+
+T=Hmm...
+W=BROK
+TEN=PC15D_TABLETCLOSEUP
+
+#----------------------
+ID=PC15D_TABLET_MEDICAL_OTHERS
+T=You're confusing, Mister Brok. You're not supposed to use an item on that icon.
+W=OTT
+C1=BROK
+C1A=ANGRY
+C2=OTT
+C2A=ALRIGHT
+
+T=They all look the same to me!
+W=BROK
+
+#----------------------
+ID=PC15D_TABLETCLOSEUP_MEDICAL1
+T=Mister Brok! I think we can use that tablet to do medical searches.
+W=OTT
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Of course. This is data I've gathered myself, merged with a specialized local copy of the Triweb.
+W=MINK
+
+T=I have an offline access to information that the general public will never see!
+W=MINK
+C2A=HAPPY
+TEN=PC15D_TABLETCLOSEUP_MEDICAL2
+
+#----------------------
+ID=PC15D_TABLETCLOSEUP_MEDICAL2
+T=Is there a specific topic you're interested in?
+W=OTT
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Let me think...
+W=BROK
+TEN=PC15D_TABLET_MEDICALCHOICE
+IT=1
+
+#----------------------
+ID=PC15D_TABLET_MEDICAL_EXIT
+T=Nothing comes to mind.
+W=BROK
+C1=BROK
+C1A=WONDER
+C3=OTT
+C3A=NORMAL
+
+T=Maybe later, then.
+W=OTT
+C3A=ALRIGHT
+TEN=PC15D_TABLET_END
+
+#----------------------
+ID=PC15D_TABLET_MEDICAL_ACCEL500
+T=Hmm... That's a drug for patients suffering from defective organs, acting slower than normal.
+W=OTT
+C1=BROK
+C1A=THINK
+C3=OTT
+C3A=WONDER
+
+T="No physical activity? Accel500 is the boost you need!"
+TEXTONLY=1
+
+T="Let it boost your body to ensure you always stay up to shape and young as a spring chicken!"
+TEXTONLY=1
+
+T=Sounds more like an ad than medication.
+W=BROK
+
+T=Dr. Mink. Did you know your colleague took these?
+W=OTT
+C2=MINK
+C2A=MEH
+
+T=No but that makes sense. We don't exactly have a lot of physical activity.
+W=MINK
+C2A=MOCK
+
+T=I don't take this. I prefer the "All-in-one" menu!
+W=MINK
+C2A=HAPPY
+
+T=All in one?...
+W=BROK
+C1A=WONDER
+
+T=It's regular powder food with stimulants incorporating the exact and appropriate dose of food, based on our medical tracking!
+W=MINK
+C2A=NORMAL
+
+T=Nothing surprises me any more.
+W=BROK
+C1A=MEH
+CLUE=CLUE_HUSH_ACCEL500
+TEN=PC15D_TABLET_END
+
+#----------------------
+ID=PC15D_TABLET_MEDICAL_PLANT
+T=Isn't that the plant lying on Mister Guard's desk?
+W=OTT
+C1=BROK
+C1A=THINK
+C3=OTT
+C3A=WONDER
+
+T=Yup.
+W=BROK
+
+T=Okay... I don't quite understand why you need info on this but you're the detective.
+W=OTT
+C3A=NORMAL
+
+T=I've found something!
+W=OTT
+C3A=ALRIGHT
+
+T="Phoenixy belongs to the Rooted variety. It blossoms twice every year after a period of..."
+TEXTONLY=1
+
+T=Uh?...
+W=BROK
+C1A=MAYBE
+
+T=What's going on?
+W=OTT
+C3A=WONDER
+
+T=Something's annotated below...
+W=BROK
+
+T="I tried mixing those Phoenixy flowers with nanites. Programmed or not, it's no good."
+TEXTONLY=1
+
+T="They caused the host's cardiac activity to slow down immensely, ultimately causing death."
+TEXTONLY=1
+
+T=(Psst... Do you think?...)
+W=OTT
+C3A=OPPOSITE
+
+T=(Yeah... Dr. Mink must have written this.)
+W=BROK
+CLUE=CLUE_LAB_PLANTNANITES
+TEN=PC15D_TABLET_END
+
+#----------------------
+ID=PC15D_TABLET_MEDICAL_ANTBURGER
+T=Are you serious?
+W=OTT
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=ALRIGHT
+
+T=Very serious. Don't you love'em too?
+W=BROK
+
+T=I prefer regular tube food.
+W=OTT
+C2A=NORMAL
+
+T=You youngsters don't know what's good.
+W=BROK
+
+T=Anyway... Here.
+W=OTT
+C2A=WONDER
+
+T="Made with 95% fresh ants, this is the most popular legacy food product!"
+TEXTONLY=1
+
+T="Crunchy and mouth-filling, they're sure to make your elders happy!"
+TEXTONLY=1
+
+T=Elders?!
+W=BROK
+C1A=SURPRISED
+
+T=Told ya.
+W=OTT
+TEN=PC15D_TABLET_END
+
+
+#----------------------
+ID=PC15D_TABLETANALYSIS1
+T=What's this button for?... Nothing happens when I press it.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL
+
+T=That's an analyzer. It can list the detailed components of any object.
+W=MINK
+
+T=For connected objects, it will display the information registered in the memory.
+W=MINK
+
+T=But you can also put any organic matter, liquid or solid.
+W=MINK
+
+T=Oh.
+W=BROK
+C1A=MAYBE
+
+T=Guess I'll have to put on an item I want to analyze?
+W=BROK
+
+T=Exactly.
+W=MINK
+C2A=HAPPY
+
+
+#----------------------
+ID=PC15D_TABLETANALYSIS2
+T=I need to put a connected object or any organic item on here to obtain information.
+W=BROK
+A=THINK
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_PILLHUSH
+T="This is an Accel500 pill in 1bg dosage."
+TEXTONLY=1
+
+T=Accel500... Never heard of it.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_LABFLOWER
+T=So, what's this flower?
+W=BROK
+A=MOCK
+
+T="Phonexy flower detected."
+TEXTONLY=1
+
+T=Phonexy?... Hmm.
+W=BROK
+A=MEH
+
+T=I wonder if this has particular medical effects?...
+W=BROK
+
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_HUSHLAMP
+T=Will Dr. Hush's lamp reveal some secrets?...
+W=BROK
+A=ALRIGHT
+
+T=...
+W=BROK
+A=THINK
+
+T="This device belongs to Doctor Mink. It is currently out of service."
+TEXTONLY=1
+
+T=What?...
+W=BROK
+C1A=WONDER
+
+T="Accessing the logs..."
+TEXTONLY=1
+
+T="Fatal shock at 5:10"
+TEXTONLY=1
+
+T=So... Fatal damage early this morning...?
+W=BROK
+
+T=Curious...
+W=BROK
+CLUE=CLUE_MINK_LAMP
+
+
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_MINKLAMP
+T=Let's see what the supposed murder weapon has to say!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=OTT
+C2A=ALRIGHT
+
+T=...
+W=BROK
+C1A=THINK
+
+T="This lamp supports the following features - alarm, speakers output, light, Triweb browsing and shock detection"
+TEXTONLY=1
+
+T=All necessary stuff for a lamp, for sure.
+W=BROK
+C1A=MEH
+
+T="This device belongs to Doctor Hush"
+TEXTONLY=1
+
+T=Huh?...
+W=BROK
+C1A=SURPRISED
+CLUE=CLUE_LAB_WRONGLAMP
+
+T=Maybe they exchanged them by accident?
+W=OTT
+C2A=WONDER
+
+T=Here are the logs...
+W=BROK
+C1A=THINK
+
+T=Hmm...
+W=BROK
+
+T=There. "Major shock at 11:02"
+W=BROK
+C1A=MOCK
+
+T=Let me check?
+W=OTT
+C2A=ALRIGHT
+
+T=...
+W=OTT
+
+T=You're right. That's the only relevant information on there.
+W=OTT
+
+T=So... Is this the murder weapon after all?
+W=OTT
+
+T=We shall find out.
+W=BROK
+CLUE=CLUE_HUSH_LAMP
+
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_TABLETHUSH
+T=Uh?... That doesn't work?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=MEH
+
+T=Did you just put his tablet on my tablet?
+W=MINK
+
+T=...Yeah?
+W=BROK
+
+T=Did you expect it to reveal the information inside?
+W=MINK
+
+T=Yeah.
+W=BROK
+
+T=Good thinking but his tablet is locked. The only one who could unlock it is Dr. Hush himself.
+W=MINK
+C2A=HAPPY
+
+T=Is that so?...
+W=BROK
+C1A=MEH
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_MAGNIFY
+T="A cheap magnifying glass with zoom ability"
+TEXTONLY=1
+
+T=Cheap but good enough for me!
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_PENDANT
+T="Made of Heptamide. Contains unknown electronics."
+TEXTONLY=1
+
+T=Electronics?...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=MOCK
+
+T=I doubt it. The tablet probably detected itself. That happens with some reflective materials.
+W=MINK
+
+T=Is that so...
+W=BROK
+
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_CATFUR
+T="Grey cat fur with high potential of attracting fleas."
+TEXTONLY=1
+
+T="To avoid this, use our brand new product - FleeFleas!"
+TEXTONLY=1
+
+T=Ads?!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=HAPPY
+
+T=Research requires funds.
+W=MINK
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_REMOTECONTROL
+T="Police material. Disables electronical devices remotely."
+TEXTONLY=1
+
+#----------------------
+ID=PC15D_TABLETANALYSIS_OTHERS
+T=Hmm... Nothin'.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=That thing of yours is broken!
+W=BROK
+
+T=It's just not in the database. This isn't magical, you know.
+W=MINK
+C2A=ANGRY
+
+T=Hmph.
+W=BROK
+
+
+#----------------------
+#= Closeup head
+#----------------------
+ID=PC15D_HEAD1
+T=No breathing...
+W=BROK
+A=MAYBE
+CONTEXT=Inspecting Dr. Hush's body
+
+T=Poor guy.
+W=BROK
+A=DOWN
+
+T=Looks like he was bludgeoned from behind? 
+W=BROK
+A=THINK
+
+T=I should take a closer look at that stain.
+W=BROK
+
+#----------------------
+ID=PC15D_HEAD_AFTER1
+T=If that blood is fake...
+W=BROK
+A=THINK
+
+T=The scientist may not have died from a blow in the head after all.
+W=BROK
+A=MAYBE
+
+T=Then what?...
+W=BROK
+
+#----------------------
+ID=PC15D_HEAD_MAGNIFY
+T=Well, no fleas or ticks...
+W=BROK
+A=HAPPY
+
+
+#----------------------
+#= Closeup right hand
+#----------------------
+ID=PC15D_RIGHTHAND1
+T=He's not holding anything but...
+W=BROK
+A=THINK
+
+T=Hmm... There are some black stains on his fingers.
+W=BROK
+A=WONDER
+CLUE=CLUE_HUSH_BLACKSTAINS
+
+#----------------------
+ID=PC15D_RIGHTHAND2
+T=I have a feeling I should get a closer view at those black stains...
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC15D_RIGHTHAND_MAGNIFY
+T=Woah...
+W=BROK
+A=CONFUSED
+
+T=His hand is literally covered by nanites...!
+W=BROK
+A=WORRIED
+
+T=I better write this down.
+W=BROK
+A=MAYBE
+CLUE=CLUE_HUSH_NANITES
+
+
+#----------------------
+#= Closeup left hand
+#----------------------
+ID=PC15D_LEFTHAND1
+T=Hmm... I can't see anything important.
+W=BROK
+A=THINK
+
+T=Nice hands, though!
+W=BROK
+A=HAPPY
+
+#----------------------
+ID=PC15D_LEFTHAND_MAGNIFY
+T=...A few nanites here on this hand but...
+W=BROK
+A=THINK
+
+T=Not enough to conclude anything. He may not wash his hands often.
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC15D_LEFTHAND_WRONGHAND
+T=Hmm... I expected this to work.
+W=BROK
+A=THINK
+
+T=Wrong hand?
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC15D_RIGHTHAND_LAMP
+T=It beeped!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=NORMAL
+
+T=And... That's it?...
+W=BROK
+C1A=WONDER
+
+T=What did you expect? A talking lamp?
+W=MINK
+
+T=Well, yeah...
+W=BROK
+C1A=HAPPY
+
+T=It's a connected object. You should be able to get more info with my tablet.
+W=MINK
+C2A=HAPPY
+
+T=Good idea!
+W=BROK
+C1A=MOCK
+
+#----------------------
+ID=PC15D_RIGHTHAND_TABLETHUSH1
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=Hey! It works!
+W=BROK
+C1A=HAPPY
+
+T=What?...
+W=MINK
+C2A=SURPRISED
+
+T=Dr. Hush's tablet. It unlocked!
+W=BROK
+C1A=MOCK
+
+T=I'm surprised. I thought this wouldn't happen, considering...
+W=MINK
+C2A=MOCK
+TEN=PC15D_HUSHTABLET_MUSICSTOP
+
+T=Well, you thought wrong. Let's see what this baby has to offer!
+W=BROK
+C1A=ALRIGHT
+TEN=PC15D_HUSHTABLET_CLOSEUP
+
+#----------------------
+ID=PC15D_RIGHTHAND_TABLET1B
+T=Hmm...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=Looks like... He transferred some data?
+W=BROK
+
+T=Let me see?
+W=MINK
+
+T=You're right. That's an external file transfer... of his current project. "AI-update-302305.zyl"
+W=MINK
+C2A=MOCK
+
+T=Is that unusual?
+W=BROK
+
+T=Of course not. We regularly transfer files to our managers.
+W=MINK
+C2A=MEH
+
+T=Although... The receipt address is obscured.
+W=MINK
+
+T=What does this mean?
+W=BROK
+
+T=I can't really know who received the file but...
+W=MINK
+
+T=Considering the metadata... this must be someone high ranked.
+W=MINK
+
+T=Wait. I just noticed...
+W=MINK
+C2A=MOCK
+
+T=That file was modified yesterday but it was created in... 3029?!
+W=MINK
+
+T=6 years ago?
+W=BROK
+C1A=SURPRISED
+
+T=That makes no sense. There must be a bug in the OS.
+W=MINK
+C2A=MEH
+
+T=Do you think this might be linked to our case, Mister Brok?
+W=OTT
+C3=OTT
+C3A=WONDER
+
+T=A transfer at 4:45...
+W=BROK
+C1A=WONDER
+
+T=That must definitely be important.
+W=BROK
+C1A=READY
+TEN=PC15D_HUSHTABLET_BACKMUSIC
+CLUE=CLUE_HUSH_DATATRANSFER
+
+
+#----------------------
+ID=PC15D_RIGHTHAND_TABLETHUSH2
+T=So, a weird data transfer at 4:45... And that's all?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T=I thought there'd be much more info on there!
+W=BROK
+
+T=We don't keep a lot of information locally.
+W=MINK
+
+T=Once we transfer our files, most data is saved remotely and local information is removed.
+W=MINK
+C2A=HAPPY
+
+T=Great... Until the outside cannot be reached.
+W=BROK
+C1A=MEH
+
+#----------------------
+#= Jacket
+#----------------------
+ID=PC15D_JACKET1
+T=His position suggests...
+W=BROK
+A=THINK
+
+T=He's been hit from behind?
+W=BROK
+
+T=I've rarely seen dead bodies but I would have thought he'd be more stiff...
+W=BROK
+A=MEH
+
+#----------------------
+ID=PC15D_JACKET_AFTER1
+T=If he wasn't killed from a bump in the head... 
+W=BROK
+A=THINK
+
+T=Then how? I don't see any injury.
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC15D_JACKET_MAGNIFY
+T=I detect one or two nanites...
+W=BROK
+A=THINK
+
+T=He may have caught a few after lying on the floor like this.
+W=BROK
+A=MEH
+
+
+#----------------------
+#= Jacket
+#----------------------
+ID=PC15D_JACKET1B
+T=Empty pockets.
+W=BROK
+A=THINK
+TEN=PC15D_JACKET1BNEXT
+
+#----------------------
+#= Device
+#----------------------
+ID=PC15D_DEVICE1
+T=What's this?... Some kind of apparatus...
+W=BROK
+A=WONDER
+
+T=Ah! I see it now. That's one of those old fashioned lamps.
+W=BROK
+A=HAPPY
+
+T=Right next to the body...
+W=BROK
+A=MAYBE
+CLUE=CLUE_HUSH_LAMPNEXT
+
+#----------------------
+ID=PC15D_DEVICE_TAKE
+T=Anything you can tell me about this lamp?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T=It's supposed to be yours, right?...
+W=BROK
+
+T=I guess...
+W=MINK
+
+T=That's a connected object of course, so there's data in it. You should check it.
+W=MINK
+C2A=HAPPY
+
+T=Better take it, then.
+W=BROK
+TEN=PC15D_LAMPMINK_TAKE
+
+
+#----------------------
+#= Spot on Head
+#----------------------
+ID=PC15D_SPOTHEAD1
+T=Looks like he's been hit right there...
+W=BROK
+A=THINK
+
+T=With enough strength, could be enough to kill.
+W=BROK
+A=MAYBE
+
+#----------------------
+ID=PC15D_SPOTHEAD_AFTER1
+T=A fake injury... with Tomatoze sauce.
+W=BROK
+A=THINK
+
+#----------------------
+#= Spot on Device
+#----------------------
+ID=PC15D_SPOTDEVICE1
+T=Hmm... Blood?
+W=BROK
+A=THINK
+
+T=That would make sense if it bumped into his head.
+W=BROK
+A=MAYBE
+CLUE=CLUE_HUSH_LAMPBLOOD
+
+#----------------------
+#= Spot on Jacket
+#----------------------
+ID=PC15D_SPOTJACKET1
+T=Blood here?...
+W=BROK
+A=THINK
+
+T=Maybe it got there after the impact?
+W=BROK
+A=WONDER
+
+#----------------------
+ID=PC15D_SPOTJACKET_AFTER1
+T=Hmm! I like that sauce!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SURPRISED
+
+T=Mister Brok... You should really refrain from... doing that...
+W=OTT
+C2A=NORMAL
+
+#----------------------
+#= Speaker
+#----------------------
+ID=PC15D_SPEAKER1
+T=I heard some sound coming from the room earlier...
+W=BROK
+A=THINK
+CONTEXT=More room interactions
+
+T=Must have been output from there. I guess Dr. Mink was listening to music?
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC15D_SPEAKER2
+T=I've seen more speakers than I can bare for one day!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC15D_SPEAKER_AFTER1
+T=Dr. Mink. When we arrived... I heard some music coming out of your room.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=NORMAL
+
+T=Well... It's in my best interest to put all my cards on the table, so...
+W=MINK
+C2A=MOCK
+
+T=Yes. I allowed myself a short fun session.
+W=MINK
+C2A=HAPPY
+
+T=And here I thought you scientists were just a bunch of workaholics!
+W=BROK
+C1A=ALRIGHT
+
+T=So... You were dancin'?
+W=BROK
+C1A=MOCK
+
+T=...Please don't rub salt in the wound.
+W=MINK
+C2A=MEH
+
+T=What music?
+W=BROK
+
+T=Is that important?
+W=MINK
+C2A=MOCK
+TEN=PC15D_SPEAKER_AFTER_FADE
+
+T=Might be.
+W=BROK
+C1A=MEH
+TEN=PC15D_SPEAKER_AFTER_START
+
+T="TechDream". It's a very catchy tune. I can never get it out of my head!
+W=MINK
+C2A=HAPPY
+
+T=Where in the room were you positioned when you were danc... having fun?
+W=BROK
+C1A=THINK
+
+T=Hmm... I believe I was close to the door.
+W=MINK
+C2A=MOCK
+
+T=I stopped when I heard you knocking and took a peek at the door screen.
+W=MINK
+C2A=MEH
+TEN=PC15D_SPEAKER_AFTER_STOP
+
+T=Did you notice anything unusual by that time?
+W=BROK
+TEN=PC15D_SPEAKER_AFTER1CHECK
+IT=1
+
+#----------------------
+ID=PC15D_SPEAKER_AFTER1_NORMAL
+T=If I did, I would have told you already.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=I just heard you knocking and then I opened the door. 
+W=MINK
+
+T=Well... That's the short version.
+W=BROK
+
+T=That's when we saw the body which just popped out of no where.
+W=MINK
+C2A=ANGRY
+
+T=Okay... Thanks for the info.
+W=BROK
+CLUE=CLUE_MINK_MUSIC
+
+
+#----------------------
+ID=PC15D_SPEAKER_AFTER1_BREAK
+T=If by unusual, you mean a croc detective breaking my door and forcing his way through...
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=ANGRY
+
+T=Then definitely yes.
+W=MINK
+
+T=Sorry about that. You should have opened it the first time.
+W=BROK
+C1A=ALRIGHT
+
+T=I was scared!...
+W=MINK
+C2A=SURPRISED
+
+T=And I have little patience.
+W=BROK
+C1A=MOCK
+CLUE=CLUE_MINK_MUSIC
+
+
+#----------------------
+ID=PC15D_SPEAKER_AFTER2
+T=Dancing, uh?...
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=MEH
+
+T=Go on with your investigation, please...
+W=MINK
+
+T=Hey, every detail counts.
+W=BROK
+C1A=MEH
+
+#----------------------
+#= Window
+#----------------------
+ID=PC15D_WINDOW1
+T=Ugh... Really not my kind of art.
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=MINK
+C2A=NORMAL
+
+T=You have no taste.
+W=MINK
+C2A=MEH
+
+#----------------------
+ID=PC15D_WINDOW2
+T=No full wall environment? Just a small DigiWindow?
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=High-ranked experts like us can't afford to get distracted by gadgets.
+W=MINK
+C2=MINK
+C2A=HAPPY
+
+#----------------------
+ID=PC15D_WINDOW3
+T=You and Dr. Hush seem to have... very different tastes.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=MEH
+
+T=No wonder you didn't get along well.
+W=BROK
+C1A=MEH
+
+T=That's not true. We did great work on our own sides.
+W=MINK
+
+T=Precisely.
+W=BROK
+
+#----------------------
+#= Sink
+#----------------------
+ID=PC15D_SINK1
+T=Flowers hanging from the ceiling are leaking into this sink.
+W=BROK
+C1=BROK
+C1A=WONDER
+CONTEXT=Dr Mink's sink produces a strange drink
+
+T=The juice from Hangalis Wallis boosts focus and memory.
+W=MINK
+C2=MINK
+C2A=NORMAL
+
+T=And it's so refreshing! I just can't do without it! 
+W=MINK
+C2A=HAPPY
+
+T=Want some?
+W=MINK
+C2A=NORMAL
+TEN=PC15D_SINK_CHOICE
+IT=1
+
+#----------------------
+ID=PC15D_SINK_DRINKYES1
+T=Definitely!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=NORMAL
+
+T=Help yourself!
+W=MINK
+TEN=PC15D_SINK_DRINK
+
+#----------------------
+ID=PC15D_SINK_DRINKYES2
+T=Hmm!!!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=HAPPY
+
+T=Feels like there's a party in my mouth and everyone is eating cakes with all the flavors in the world!
+W=BROK
+
+T=Right!
+W=MINK
+
+#----------------------
+ID=PC15D_SINK_DRINKYES3
+T=Delicious!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=HAPPY
+
+#----------------------
+ID=PC15D_SINK_DRINKNO
+T=Well... Let me check if there isn't anything unusual 'sinking' into this first...
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T=Impossible!
+W=MINK
+C2A=ANGRY
+
+T=I add Chloroephodria Tribendexene everyday to filter it, with some Ditoxin Tetrachlorodibenzate-q-17 to help preserve it from rotting. 
+W=MINK
+C2A=HAPPY
+
+T=You know what? I'll pass.
+W=BROK
+C1A=OPPOSITE
+
+#----------------------
+ID=PC15D_SINK2
+T=Hmm...
+W=BROK
+A=WONDER
+TEN=PC15D_SINK_CHOICE2
+IT=1
+
+#----------------------
+ID=PC15D_SINK_DRAIN1
+T=What?! Wait! Don't do this!!!
+W=MINK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=SURPRISED
+
+T=Too late.
+W=BROK
+C1A=ALRIGHT
+
+T=Do you have any idea what you've just done?!
+W=MINK
+
+T=This was my ration for today! Now I'll be all out of juice!
+W=MINK
+
+T=I... I'll have to lick the whole surface of the sink this evening...
+W=MINK
+C2_EYESHUT=1
+
+T=(Sobs)
+W=MINK
+C2_EYESHUT=1
+
+T=Yeah, I guess he's an addict.
+W=BROK
+C1A=MEH
+
+#----------------------
+ID=PC15D_SINK_DRINKMUCH
+T=Hey, hold on. Don't drink too much.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=ANGRY
+
+T=With a high concentration in your body, weird things start to happen.
+W=MINK
+C2A=MOCK
+
+T=But... it's so good!
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=PC15D_SINK_DRINKPITCH
+T=I want more!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+COMM=The voice samples will be modified to make them high pitch. Voice actor shouldn't change his voice.
+
+T=...!
+W=BROK
+C1A=CONFUSED
+C2A=SURPRISED
+
+T=My voice! What happened to it!
+W=BROK
+
+T=I told you!
+W=MINK
+C2A=ANGRY
+
+T=Now you'll sound like a little girl for the next few minutes!
+W=MINK
+
+T=Oh well. It was worth it!
+W=BROK
+C1A=ALRIGHT
+
+#----------------------
+ID=PC15D_SINK_AD1
+T=Hey! There's an ad stuck in the drain!
+W=BROK
+A=SURPRISED
+TEN=PC15D_SINK_GETAD
+
+#----------------------
+ID=PC15D_SINK_EMPTY
+T=Empty.
+W=BROK
+A=ANGRY
+
+T=(Cries)
+W=MINK
+C2=MINK
+C2A=SURPRISED
+C2_EYESHUT=1
+
+#----------------------
+#= Stain
+#----------------------
+ID=PC15D_STAIN1
+T=Is that blood?...
+W=BROK
+A=THINK
+CONTEXT=More room inspection
+
+T=It looks... stretched.
+W=BROK
+A=MAYBE
+CLUE=CLUE_LAB_STAIN
+
+#----------------------
+ID=PC15D_STAIN_AFTER1
+T=(Slurp)
+W=BROK
+A=THINK
+
+T=Not blood either. Tastes like Tomatoze sauce.
+W=BROK
+A=ANGRY
+CLUE=CLUE_LAB_STAIN
+TEN=PC15D_STAIN_AFTER_IDLE
+
+#----------------------
+#= Canister
+#----------------------
+ID=PC15D_CANISTER1
+T=Watch out!!!
+W=MINK
+C1=BROK
+C1A=CONFUSED
+C2=MINK
+C2A=SURPRISED
+
+T=Uh?...
+W=BROK
+C1A=SURPRISED
+
+T=I'm working with acidic solutions. You better not put a finger in it!
+W=MINK
+C2A=ANGRY
+
+T=May I put a leg in?
+W=BROK
+C1A=ALRIGHT
+
+T=No!
+W=MINK
+C1A=CONFUSED
+CLUE=CLUE_MINK_ACID
+
+
+#----------------------
+ID=PC15D_CANISTER2
+T=What are these for?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=NORMAL
+
+T=An innovative experience!
+W=MINK
+
+T=I've found out that plunging nanites into an acidic solution improves their performance by 25%!
+W=MINK
+
+T=But then... Nanites aren't supposed to be injected into human bodies?
+W=BROK
+C1A=WONDER
+
+T=I'm still working on that minor drawback.
+W=MINK
+C2A=MOCK
+
+T=Uh-uh.
+W=BROK
+C1A=MEH
+
+#----------------------
+ID=PC15D_CANISTER3
+T=So, ya sure you didn't intend to use these to get rid of the corpse?...
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T=What kind of question is this?!
+W=MINK
+C2A=ANGRY
+
+T=Even if I did, there's no chance I'd reply yes to that!
+W=MINK
+
+T=So... It's true?
+W=BROK
+
+T=No!
+W=MINK
+
+#----------------------
+#= Column
+#----------------------
+ID=PC15D_COLUMN1
+T=A ray of light?...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+
+T=Yup! Ten feet of enjoyment.
+W=MINK
+COMM=Make sure to convert to the appropriate unit according to your country (eg : 3.5 meters)
+
+T=Ever heard of raytherapy?
+W=MINK
+
+T=The hot temperature reduces stress and prevents aging.
+W=MINK
+
+T=Could this be used to hurt someone?
+W=BROK
+C1A=MOCK
+
+T=At maximum power it could burn your skin.
+W=MINK
+C2A=MOCK
+
+T=Not killing someone, though?
+W=BROK
+C1A=MEH
+
+T=Maybe if you were to spend years underneath it.
+W=MINK
+CLUE=CLUE_LAB_COLUMN
+
+#----------------------
+ID=PC15D_COLUMN2
+T=Why is it pointing towards the floor?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=There's nothing there.
+W=BROK
+
+T=I only use it when sleeping. It automatically gets pointed on myself.
+W=MINK
+
+T=Then why keep it active? Isn't that a waste?
+W=BROK
+
+T=Who cares?!
+W=MINK
+C2A=MOCK
+
+T=...I don't know. Maybe the thousands of Slumers craving for resources?...
+W=BROK
+C1A=ANGRY
+
+#----------------------
+ID=PC15D_COLUMN3
+T=I know! That's a death ray!
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=NORMAL
+
+T=You pointed it towards Dr. Hush and bam! Dead!
+W=BROK
+
+T=Then you already died without knowing it, considering how many times you passed under it.
+W=MINK
+C2A=HAPPY
+
+T=...Hmm. Good point.
+W=BROK
+C1A=WONDER
+
+#----------------------
+#= Bed
+#----------------------
+ID=PC15D_BED_OTT1
+T=Mister Brok?...
+W=OTT
+C1=BROK
+C1A=HAPPY
+C2=OTT
+C2A=SURPRISED
+
+T=There's no time to sleep!
+W=OTT
+
+T=Just... testing if something is unusual about this bed!
+W=BROK
+
+T=So?
+W=OTT
+C2A=SAD
+
+T=It's... Erm...
+W=BROK
+
+T=Unusally comfortable compared to mine!
+W=BROK
+TEN=PC15D_BED_OUT
+
+#----------------------
+ID=PC15D_BED1
+T=What do you think you're doing?!
+W=MINK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=ANGRY
+
+T=Get out of my bed! Now!
+W=MINK
+
+T=Why? Got anything to hide?
+W=BROK
+C1A=MOCK
+
+T=...
+W=MINK
+
+T=Fine. Have a rest.
+W=MINK
+C2A=HAPPY
+
+T=You'll just have to explain to your superior why this investigation is taking so long.
+W=MINK
+
+T=Man, you're no fun.
+W=BROK
+C1A=STUPID
+TEN=PC15D_BED_OUT
+
+#----------------------
+ID=PC15D_BED2
+T=Nothing on the bed...
+W=BROK
+C1=BROK
+C1A=THINK
+
+T=...and surprisingly, nothing under the pillow either.
+W=BROK
+
+T=Do you do the laundry yourself?
+W=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+
+T=Are you kidding?
+W=MINK
+
+T=We've got a bot for this. I've never heard of any human doing it.
+W=MINK
+C2A=MOCK
+
+T=Right... I... don't do it either.
+W=BROK
+C1A=HAPPY
+
+T=(And that's why my bed gets smellier over time)
+W=BROK
+MOOD=THINK
+
+#-----------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------
+#= SCENES
+#-----------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------
+
+
+#---------------------------------
+ID=PC15D_WALKTABLE1
+T=Hey!
+W=MINK
+C2=MINK
+C2A=SURPRISED
+NB=1
+D=90
+
+T=What do you think you're doing?!
+W=MINK
+C2A=ANGRY
+D=160
+
+#---------------------------------
+ID=PC15D_WALKTABLE2
+T=I can't believe it.
+W=MINK
+C2=MINK
+C2A=MEH
+NB=1
+D=120
+
+#---------------------------------
+#= Walk on body
+#---------------------------------
+ID=PC15D_WALKBODY1
+T=What?...
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+TEN=PC15D_BROK_TURN_MINK
+CONTEXT=When Brok steps or jumps on the corpse
+
+T=Uh? Something wrong?
+W=BROK
+C1A=WONDER
+
+T=...
+W=MINK
+
+
+#---------------------------------
+ID=PC15D_WALKBODY2
+T=I can't believe it...
+W=MINK
+C2=MINK
+C2A=MOCK
+NB=1
+D=60
+
+#---------------------------------
+ID=PC15D_WALKBODY3
+T=Mister Brok! What are you doing?!
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=SURPRISED
+TEN=PC15D_BROK_TURN_OTT
+
+T=Looking for clues, of course.
+W=BROK
+
+T=By... walking over him?
+W=OTT
+C2A=WONDER
+
+T=Over who?
+W=BROK
+C1A=WONDER
+
+T=...
+W=OTT
+
+
+#---------------------------------
+ID=PC15D_JUMPBODY1
+T=...Urgh...
+BNAMESP=UNKNOWN
+BVOICESP=HUSH
+COMM=After insisting for a while, Dr. Hush wakes up!
+
+T=...?
+W=BROK
+A=WONDER
+
+#---------------------------------
+ID=PC15D_JUMPBODY2
+T=Aaargh...
+BNAMESP=UNKNOWN
+BVOICESP=HUSH
+
+T=Uh?...
+W=BROK
+A=CONFUSED
+
+T=What's... going on...
+BNAMESP=UNKNOWN
+BVOICESP=HUSH
+TEN=PC15D_JUMPBODY_MOVEAWAY
+
+
+#---------------------------------
+ID=PC15D_JUMPBODY2B
+T=...
+W=HUSH
+C1=BROK
+C1A=SURPRISED
+C2=HUSH
+C2A=SURPRISED
+C3=MINK
+C3A=SURPRISED
+CONTEXT=Alternative - Dr Hush wakes up after jumping on him
+
+T=...
+W=MINK
+
+T=Doctor Hush?!
+W=MINK
+
+T=You... You're...!
+W=BROK
+TEN=PC15D_JUMPBODY2B_MUSIC
+
+T=Ouch... My back hurts...
+W=HUSH
+C2A=SAD
+
+T=What... What am I doing here?
+W=HUSH
+
+T=And... who are you?
+W=HUSH
+C2A=THINK
+
+T=An investigator! We thought you were dead!
+W=BROK
+C1A=READY
+
+T=Why would you think that?...
+W=HUSH
+C2A=SURPRISED
+
+T=Oh... Looks like I bled...
+W=HUSH
+C2A=SURPRISED
+
+T=No, wait...
+W=HUSH
+
+T=That's... sauce.
+W=HUSH
+C2A=THINK
+
+T=Sauce?... Then...
+W=BROK
+C1A=WONDER
+
+T=Was this all an accident?
+W=MINK
+C3A=ANGRY
+
+T=Impossible... He wasn't breathing...
+W=BROK
+
+T=What's the last thing you remember?
+W=BROK
+C1A=MOCK
+
+T=Well...
+W=HUSH
+VLOW=1
+
+T=I remember... falling from the ventilation duct...
+W=HUSH
+
+T=Moving towards Dr. Mink...
+W=HUSH
+
+T=The vent? What were you doing there?
+W=BROK
+C1A=THINK
+
+T=...
+W=HUSH
+C2A=SURPRISED
+
+T=Is it possible...?
+W=HUSH
+
+T=Before that... I...
+W=HUSH
+
+T=I took my coffee. Tidy prepared it...
+W=HUSH
+
+T=Tidy?...
+W=BROK
+C1A=WONDER
+
+
+T=My robot assistant...
+W=HUSH
+C2A=SAD
+
+T=When I drank... My heart...
+W=HUSH
+
+T=Stopped...
+W=HUSH
+
+T=You've been poisoned?
+W=MINK
+C3A=ANGRY
+
+T=We better interrogate that robot!
+W=BROK
+TEN=PC15D_JUMPBODY_NOISE
+
+#---------------------------------
+ID=PC15D_JUMPBODY2C
+T=What's that noise?...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=HUSH
+C2A=SAD
+C3=MINK
+C3A=MEH
+TEN=PC15D_JUMPBODY_EXIT
+
+#---------------------------------
+ID=PC15D_JUMPBODY2D
+T=Tidy... Why would you do this?...
+W=HUSH
+A=SAD
+TEN=PC15D_JUMPBODY_EXIT3
+
+
+#---------------------------------
+#= Arrive (after breaking door)
+#---------------------------------
+ID=PC15D_FIRST_BREAK1
+T=Hey! Why didn't you open up?
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=MINK
+C2A=SURPRISED
+CONTEXT=First time arrive in the room after breaking Dr Mink's door
+
+T=I-I...
+W=MINK
+
+T=Answer the question!
+W=BROK
+
+T=I was... busy...
+W=MINK
+TEN=PC15D_FIRST_BROKTURNS
+
+#----------------------
+#= Arrive
+#----------------------
+ID=PC15D_FIRST1
+T=So?... Why are you here?
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+CONTEXT=First time arrive in the room after convincing Mink
+TEN=PC15D_FIRST_BROKTURNS
+
+
+
+#----------------------
+ID=PC15D_FIRST1B
+T=...!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=MEH
+TEN=PC15D_FIRST_BROKTOWARDSBODY
+CONTEXT=Brok notices the corpse but Dr Mink haven't seen it yet
+
+T=What the...
+W=BROK
+TEN=PC15D_FIRST_TURN
+
+T=Guard!
+W=BROK
+C1A=ANGRY
+
+T=Hey!
+W=MINK
+C2A=ANGRY
+
+T=What's going on?
+W=MINK
+TEN=PC15D_FIRST_TURN2
+
+#----------------------
+ID=PC15D_FIRST2
+T=!!!
+W=MINK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+
+T=Dr. Hush?!
+W=GUARD
+C4=GUARD
+C4A=SURPRISED
+
+T=This is... impossible!
+W=MINK
+
+T=Oh my gosh! Is he...?
+W=OTT
+TEN=PC15D_FIRST_BROKAPPROACH
+
+#----------------------
+ID=PC15D_FIRST3
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+CONTEXT=Brok checks the body. Then they all talk about it
+
+T=Well...
+W=BROK
+TEN=PC15D_FIRST_BROKBACK
+
+#----------------------
+ID=PC15D_FIRST4
+T=Case solved!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+C4=GUARD
+C4A=SURPRISED
+
+T=But...! That doesn't make any sense!
+W=GUARD
+
+T=So much for "looking all over the place", huh?
+W=BROK
+C1A=ANGRY
+
+
+T=I swear! He wasn't there!
+W=GUARD
+C4A=WONDER
+
+T=It's true! What the heck is going on here?!
+W=MINK
+C2A=ANGRY
+TEN=PC15D_MUSIC_TENSE
+
+T=I'll tell you what. Dr. Hush is dead as a doornail.
+W=BROK
+
+T=That can't be...
+W=OTT
+C3A=SAD
+
+T=A murder in the Drums?!
+W=OTT
+
+T=Now I get it!
+W=GUARD
+C4A=ANGRY
+
+T=Mink! You wouldn't let me in when I checked this morning!
+W=GUARD
+
+T=Seems like you had a very good reason for that!
+W=GUARD
+
+T=Are you accusing me?!
+W=MINK
+
+T=You're out of your mind!
+W=MINK
+
+T=There's a corpse in your room, man! Whadd'ya have to say about that?!
+W=GUARD
+
+T=Now, now. Relax.
+W=BROK
+C1A=MOCK
+
+T=This murder case is in my hands. Let's not jump to conclusions.
+W=BROK
+
+T=Guard. Block all exits.
+W=BROK
+C1A=ANGRY
+
+T=Already done, big snout!
+W=GUARD
+C4A=MEH
+
+T=Then block all communications from outside!
+W=BROK
+
+T=Nobody enters or exits this building, and no data either!
+W=BROK
+TEN=PC15D_MUSIC_TENSEOVER
+
+T=On my way.
+W=GUARD
+TEN=PC15D_GUARD_AWAY
+
+
+#----------------------
+ID=PC15D_FIRST5
+T=And you...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=SURPRISED
+
+T=Stay here. Don't move an inch!
+W=BROK
+
+T=Argh... You can't be serious!
+W=MINK
+C2A=ANGRY
+
+T=I've got a ton of work ahead! I'm late on schedule!
+W=MINK
+
+T=...
+W=BROK
+
+T=Of course a simple mind like you wouldn't understand it.
+W=MINK
+C2A=MOCK
+
+T=Your colleague is dead!
+W=BROK
+
+T=At this stage, all I can say is that you're a suspect.
+W=BROK
+
+T=But even if you're innocent...
+W=BROK
+
+T=What do you think might happen if I don't find the culprit?
+W=BROK
+C1A=OPPOSITE
+
+T=Who's to say you're not the next one on the list?
+W=BROK
+C1A=ANGRY
+
+T=Gulp!...
+W=MINK
+C2A=SURPRISED
+
+T=...
+W=MINK
+
+T=Rats. Even dead, that guy keeps aggravating me.
+W=MINK
+C2A=MOCK
+
+T=You're the only one who can explain the tech-savy stuff so...
+W=BROK
+C1A=MAYBE
+
+T=I'll save you time.
+W=MINK
+C2A=MEH
+
+T=I'll follow you around so you can keep an eye on me.
+W=MINK
+
+T=Good.
+W=BROK
+C1A=THINK
+TEN=PC15D_MINK_AWAY
+
+
+#----------------------
+ID=PC15D_FIRST6OTTKO
+T=...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=DISAPPOINTED
+
+T=I... didn't expect that...
+W=OTT
+
+T=Me neither... But I'm gonna solve this.
+W=BROK
+
+T=We will.
+W=OTT
+
+T=Please... don't use your fists this time.
+W=OTT
+
+T=There's been enough violence already.
+W=OTT
+TEN=PC15D_OTT_AWAYBROK
+
+#----------------------
+ID=PC15D_FIRST6
+T=I'm impressed, Mister Brok!
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=HAPPY
+
+T=Even with all that, you keep your cool!
+W=OTT
+
+T=Erm... Yeah?
+W=BROK
+C1A=HAPPY
+
+T=Did you already solve a murder case before?
+W=OTT
+C2A=ALRIGHT
+
+T=Not that I can remember...
+W=BROK
+
+T=But I watched some noir livies when I was young. Seemed like the appropriate things to say!
+W=BROK
+
+T=Oh...
+W=OTT
+C2A=WONDER
+
+T=Well, you're still pretty cool.
+W=OTT
+C2A=NORMAL
+
+T=Thanks...!
+W=BROK
+TEN=PC15D_OTT_AWAYBROK
+
+
+#----------------------
+ID=PC15D_FIRST6B
+T=...
+W=BROK
+A=THINK
+
+T=(Why is this happening to me?... Can't I have a normal day, for once?!)
+W=BROK
+A=TIRED
+MOOD=THINK
+TEN=PC15D_FIRST_END
+
+
+
+
+
+#----------------------
+#= First reunion
+#----------------------
+ID=PC15D_STORY160_A
+T=So?... What's goin' on?
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=OTT
+C3A=ALRIGHT
+C4=GUARD
+C4A=MEH
+CONTEXT=After doing a quick inspection, they all gather. Ott exposes his theory
+
+T=Found the culprit?
+W=GUARD
+
+T=I'm going to let my colleague here explain.
+W=BROK
+
+T=Uh? Me?!
+W=OTT
+C3A=SURPRISED
+
+T=You said it. You've solved the case, haven't you?
+W=BROK
+C1A=MOCK
+
+T=Erm...
+W=OTT
+
+T=He's just a boy...
+W=MINK
+C2A=MOCK
+
+T=No! It's true. I can explain.
+W=OTT
+C3A=ALRIGHT
+
+T=Alright, so...
+W=OTT
+C1A=THINK
+C3A=WONDER
+TEN=PC15D_MYSTERYMUSIC
+
+T=This is a closed-door murder.
+W=OTT
+
+T=As you know, no one could enter or leave this place without being noticed.
+W=OTT
+
+T=Which means...
+W=OTT
+C3A=OPPOSITE
+
+T=Only one of us could have done it.
+W=MINK
+
+T=Yes.
+W=OTT
+
+T=The body was first seen when we entered this room.
+W=OTT
+C3A=ALRIGHT
+
+T=It appears Dr. Hush has been struck on the head and died due to the impact.
+W=OTT
+
+T=Considering there's blood on the lamp located right next to him, this must be the murder weapon.
+W=OTT
+
+T=This lamp belongs to Doctor Mink. This implies the murderer had access to it.
+W=OTT
+
+T=I don't like where this is heading...
+W=MINK
+C2A=MEH
+
+T=Dr. Hush was last seen alive by his assistant bot Tidy at 5:04.
+W=OTT
+C3A=NORMAL
+
+T=He never came back to his office. So, where did he go?
+W=OTT
+
+T=The possibilities are limited.
+W=OTT
+
+T=Again, he could not leave the building. The only exit has an impassable power barrier.
+W=OTT
+C3A=ALRIGHT
+
+T=He couldn't have exited his room and stayed in the hall. It wouldn't make sense, and Mister Guard would have noticed it.
+W=OTT
+
+T=Hmm...
+W=GUARD
+C4A=WONDER
+
+T=Any comment?
+W=OTT
+C3A=NORMAL
+
+T=No... I... was watching the whole time...
+W=GUARD
+C4A=MEH
+
+T=Nothing unusual happened.
+W=GUARD
+
+T=Let's continue.
+W=OTT
+C3A=ALRIGHT
+
+T=Dr. Hush could have gone to the restroom and been killed there.
+W=OTT
+
+T=But that leaves one problem...
+W=OTT
+
+T=We didn't find his body there but in Dr. Mink's room.
+W=OTT
+
+T=This means he would have to be carried to the next room, without anyone noticing.
+W=OTT
+
+T=If he somehow got carried out of the restroom, Mister Guard would have noticed it.
+W=OTT
+
+T=We've checked the restroom. There's no access between it and Dr. Mink's room.
+W=BROK
+
+T=So that leaves only one option. Dr. Hush went straight from his office to Dr. Mink's.
+W=OTT
+
+T=Nonsense! He never came here!
+W=MINK
+C2A=ANGRY
+
+T=And yet... Here's his body.
+W=OTT
+C3A=OPPOSITE
+
+T=How do you explain it?
+W=OTT
+
+T=I... don't know...
+W=MINK
+C2A=MOCK
+
+T=I considered other possibilities. Maybe Tidy got involved somehow?
+W=OTT
+C3A=WONDER
+
+T=After all, he's free to roam between the rooms for his cleaning duty.
+W=OTT
+
+T=However, he could not access Dr. Mink's room.
+W=OTT
+C3A=ALRIGHT
+
+T=He's required to knock and you need to open it.
+W=OTT
+
+T=That didn't happen, right?
+W=OTT
+
+T=No...
+W=MINK
+C2A=MOCK
+
+T=Unless... He used Dr. Hush's hand to open the door...!
+W=MINK
+C2A=ANGRY
+
+T=Carrying it in the hall? Seems improbable.
+W=OTT
+C3A=WONDER
+
+T=The guard was watching. As for you doctor, you didn't see or hear them enter. 
+W=OTT
+TEN=PC15D_STORY160_A2
+
+#----------------------
+ID=PC15D_STORY160_A2
+T=How about you, Ratty?!
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=ANGRY
+C3=OTT
+C3A=WONDER
+C4=GUARD
+C4A=MEH
+
+T=I bet you killed the doctor in the hall and plopped his remains into my room behind my back!
+W=MINK
+C4A=ANGRY
+
+T=Are you accusing me now?!
+W=GUARD
+
+T=Why d'ya think I called the cops if I was the murderer?!
+W=GUARD
+
+T=To disculpate yourself! That's why!
+W=MINK
+
+T=You dirty rodent! I'll lose my job because of you!
+W=GUARD
+
+T=Calm down!
+W=OTT
+C3A=ALRIGHT
+
+T=I thought about this too. But that idea seems doubtful.
+W=OTT
+
+T=Do you seriously think he opened your door with Dr. Hush's body in his hands and then threw it all the way there without you noticing?
+W=OTT
+
+T=...
+W=MINK
+C2A=MOCK
+
+T=Which leaves only one person who could do it...
+W=OTT
+
+T=You, Doctor Mink!
+W=OTT
+
+T=Argh! You're out of your mind, boy!
+W=MINK
+C2A=SURPRISED
+
+T=I said it! I've never killed anyone!
+W=MINK
+C2A=ANGRY
+
+T=Drop it, Mink! You're done for!
+W=GUARD
+
+T=Drop?
+BNAMESP=TIDY
+BVOICESP=TIDY
+
+T=Up! Down! Left! Right!
+BNAMESP=TIDY
+BVOICESP=TIDY
+
+T=And what would be my motive?
+W=MINK
+C2A=MEH
+
+T=Very simple.
+W=OTT
+C3A=WONDER
+
+T=Mister Guard mentioned hearing constant arguments between you both.
+W=OTT
+
+T=We've been bickering over the past 5 years! That's no proof!
+W=MINK
+
+T=Remember Tidy's recording!
+W=OTT
+
+T=Dr. Hush came to your room to settle things with you!
+W=OTT
+C3A=ALRIGHT
+
+T=He must have been fed up of hearing you complain about the budget restrictions on your projects.
+W=OTT
+
+T=Do you seriously think this is a valid reason to kill someone?!
+W=MINK
+
+T=You're right. It wouldn't...
+W=OTT
+
+T=For ordinary people.
+W=OTT
+
+T=But you're entirely focused on your work. This is all your life! You can't afford to lose it!
+W=OTT
+
+T=Dr. Hush profited from a higher budget while yours decreased. Tensions moved up a notch.
+W=OTT
+
+T=You couldn't take any more. You grabbed the closest thing within reach...
+W=OTT
+
+T=Your lamp!
+W=OTT
+
+T=And then... Bam!!!
+W=OTT
+C3A=SURPRISED
+
+T=Argh!
+W=MINK
+C2A=SURPRISED
+
+T=This was most likely an accident. You hadn't prepared for this.
+W=OTT
+C3A=DISAPPOINTED
+
+T=So you didn't know what to do with the body!
+W=OTT
+C3A=WONDER
+
+T=Panicking, you hid it under your bed. This would give you time to think...
+W=OTT
+
+T=Under the bed?! Only an idiot would do that!
+W=MINK
+C2A=MOCK
+
+T=Seems like the best hiding spot to me!
+W=OTT
+C3A=ALRIGHT
+
+T=Guard, what do you think? You check the room regularly, right?
+W=BROK
+C1A=MOCK
+
+T=Hmm... I did but the weasel wouldn't let me in...
+W=GUARD
+C4A=WONDER
+C1A=THINK
+
+T=If the body was under the bed...
+W=GUARD
+
+T=Then yes. I wouldn't have seen it from here.
+W=GUARD
+C4A=MEH
+
+T=You can't prove any of this!
+W=MINK
+C2A=MEH
+
+T=Sure, we can! Right there!
+W=OTT
+C3A=ALRIGHT
+
+T=A trace of blood on the floor, exactly between the bed and the body!
+W=OTT
+
+T=Why else would that be there?
+W=OTT
+
+T=What the... It's true!
+W=GUARD
+C4A=SURPRISED
+
+T=There was only one way to make him disappear without anyone noticing...
+W=OTT
+
+T=The acid canister! 
+W=OTT
+
+T=To liquify the body and pour it down the sink!
+W=OTT
+
+T=N-no! I'd never...
+W=MINK
+C2A=SURPRISED
+
+T=These... are for my experiments!...
+W=MINK
+
+T=When we arrived, you had just moved the body out of your bed to throw the deadly substance on the poor chap!
+W=OTT
+
+T=Remember, Mister Brok? He wouldn't let us in!
+W=OTT
+C3A=NORMAL
+TEN=PC15D_MYSTERYMUSICSTOP
+
+T=Which makes perfect sense now...
+W=BROK
+C1A=MEH
+
+T=Mister detective! Please!
+W=MINK
+
+T=Don't tell me you agree with this?!
+W=MINK
+TEN=PC15D_STORY160_AGREEOTT
+IT=1
+
+
+
+
+#----------------------
+ID=PC15D_STORY160_CHOICE_CONFIRM
+T=(I'd better think twice about it...)
+W=BROK
+C1=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(If I'm wrong, I'll be sending an innocent to jail... or worse.)
+W=BROK
+MOOD=THINK
+
+T=(Am I absolutely certain Dr. Mink is guilty?)
+W=BROK
+MOOD=THINK
+TEN=PC15D_STORY160_YESCONFIRM
+IT=1
+
+#----------------------
+ID=PC15D_STORY160_CHOICE_NO
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=ALRIGHT
+C4=GUARD
+C4A=MEH
+
+T=...
+W=GUARD
+
+T=...
+W=OTT
+
+T=So?... Have you been paying attention?...
+W=MINK
+C2A=MEH
+
+T=You know... I've been wondering something for a while now.
+W=BROK
+C1A=WONDER
+
+T=What are you looking at?
+W=MINK
+C2A=MOCK
+
+T=Your tie, Dr. Mink.
+W=BROK
+
+T=There's a red stain underneath it.
+W=BROK
+
+T=What?!
+W=OTT
+C2A=SURPRISED
+C3A=SURPRISED
+C4A=SURPRISED
+
+T=Hey! The croc is right!
+W=GUARD
+
+T=But... wait! This isn't what you think!
+W=MINK
+
+T=I...
+W=MINK
+
+T=I ate an Antburger this morning...
+W=MINK
+
+T=I wiped the stain away... I just forgot to check under here...
+W=MINK
+
+T=This is Tomatoze sauce!
+W=MINK
+
+T=Are you taking us for fools, Mink?!
+W=GUARD
+C4A=ANGRY
+TEN=PC15D_STORY160_BROK_MOVECLOSER1
+
+T=Hey, wait! What the heck?
+W=MINK
+C4A=SURPRISED
+COMM=Brok licks the tie
+
+T=(Slurp)
+W=BROK
+C1A=ALRIGHT
+
+T=My tie!... You licked it?!
+W=MINK
+
+T=...
+W=BROK
+C1A=WONDER
+
+T=At least... You believe me now, don't you?...
+W=MINK
+C4A=MEH
+TEN=PC15D_STORY160_BROK_MOVECLOSER2
+
+#----------------------
+ID=PC15D_STORY160_CHOICE_NO2
+T=(Slurp... Slurp)
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+C4=GUARD
+C4A=SURPRISED
+CONTEXT=Brok goes to lick the red spot on Dr Hush's body
+
+T=Eww!!!
+W=MINK
+
+T=Oh, my! What are you doing, Mister Brok?...
+W=OTT
+
+T=Broky. Is gross!
+BNAMESP=TIDY
+BVOICESP=TIDY
+
+T=...
+W=BROK
+C1A=THINK
+
+T=Just as I thought.
+W=BROK
+
+T=This is no blood.
+W=BROK
+C1A=MOCK
+
+T=Told you!
+W=MINK
+C2A=MEH
+TEN=PC15D_STORY160_BROK_MOVECLOSER4
+
+T=Not just on your tie.
+W=BROK
+TEN=PC15D_STORY160_BROK_MOVECLOSER5
+
+T=There's no blood on this corpse.
+W=BROK
+
+T=What?...
+W=MINK
+C2A=SURPRISED
+
+T=The heck?!
+W=GUARD
+
+T=Are you serious?...
+W=OTT
+
+T=Check it for yourself.
+W=BROK
+
+T=N-no... I believe you...
+W=OTT
+C3A=NORMAL
+CLUE=CLUE_HUSH_FAKEBLOOD
+TEN=PC15D_STORY160_BROK_MOVECLOSER6
+
+
+
+#----------------------
+ID=PC15D_STORY160_CHOICE_NO3
+T=But then... My theory...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=SAD
+C4=GUARD
+C4A=SURPRISED
+
+T=Has faults, I'm afraid. Gigantic ones.
+W=BROK
+C1A=ALRIGHT
+
+T=Oh...
+W=OTT
+
+T=I had a feeling this seemed way too perfect. This case is more complex than we thought.
+W=BROK
+C1A=MEH
+
+T=Someone's been trying to cover himself.
+W=BROK
+
+T=What a relief...
+W=MINK
+C2A=NORMAL
+
+T=However... This means we took the wrong approach.
+W=BROK
+
+T=Don't tell me...
+W=GUARD
+C4A=SURPRISED
+
+T=We need to reexamine this place from top to bottom.
+W=BROK
+C1A=MOCK
+
+T=No way...!
+W=GUARD
+
+T=Are ya aware I'm not getting paid right now, croc?! I should be home, sleeping!
+W=GUARD
+C4A=ANGRY
+
+T=I don't care.
+W=BROK
+C1A=ANGRY
+
+T=This may be one more hour of work for you but this could mean the death penalty for the one sent to jail.
+W=BROK
+
+T=Exactly! And your insistence to leave makes you even more suspect to my eye.
+W=MINK
+C2A=ANGRY
+
+T=Argh...
+W=GUARD
+TEN=PC15D_STORY160_GUARDLEAVES
+
+T=Better be gone before I...
+W=GUARD
+C4A=MEH
+
+T=Tidy, you better go back to your room.
+W=BROK
+C1A=MOCK
+C4=NONE
+
+T=And no tidying, okay?
+W=BROK
+TEN=PC15D_STORY160_TIDYLEAVES
+
+T=Tidy follows orders. Gone. No Tidy.
+BNAMESP=TIDY
+BVOICESP=TIDY
+
+T=Thank you, Mister detective. You saved my skin!
+W=MINK
+C1A=THINK
+C2A=NORMAL
+
+T=Don't congratulate me too soon.
+W=BROK
+
+T=You may still very well be the culprit, just trying to confuse us to appear innocent.
+W=BROK
+C1A=MEH
+
+T=...
+W=MINK
+C2A=MOCK
+
+T=I'll just have to put my trust in you, then.
+W=MINK
+
+T=When you're done and you've got a plausible theory - that doesn't involve me this time - come and see me.
+W=MINK
+C2A=HAPPY
+TEN=PC15D_STORY160_BROK_LOOKOTT
+
+T=Come on, Ott!
+W=BROK
+C1A=HAPPY
+
+T=We better examine each and every detail thoroughly this time.
+W=BROK
+C1A=MOCK
+
+T=Yes, sir!
+W=OTT
+C3A=ALRIGHT
+TEN=PC15D_STORY160_ACTIVATE
+
+
+#----------------------
+ID=PC15D_STORY160_CHARGEMINK1
+T=It's over, Dr. Mink.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=ALRIGHT
+C4=GUARD
+C4A=MEH
+CONTEXT=Charge Dr. Mink
+
+T=You're guilty. Time to face justice.
+W=BROK
+
+T=This... can't be happening!...
+W=MINK
+
+T=Guard, restore communications and inform Chief Wes.
+W=BROK
+C1A=MOCK
+
+T=Ask him to come and pick the criminal up.
+W=BROK
+
+T=On my way!
+W=GUARD
+C4A=HAPPY
+TEN=PC15D_STORY160_GUARDLEAVES
+
+T=...
+W=MINK
+C2A=SAD
+C4=NONE
+TEN=PC15D_MUSICSAD_START
+
+T=So this is how it ends, huh...
+W=MINK
+
+T=Very well.
+W=MINK
+C1A=THINK
+
+T=After all... I'll just be moving from one jail to another...
+W=MINK
+
+T=...
+W=BROK
+C3A=SAD
+
+T=Do you mean...
+W=BROK
+
+T=Yes... My talk about how crucial it is to dedicate our life to our work...
+W=MINK
+
+T=Is just a bunch of crap. I used to believe this but now...
+W=MINK
+
+T=I'd want nothing more than a normal life...
+W=MINK
+C2_EYESHUT=1
+
+T=A kid... A partner...
+W=MINK
+C2_EYESHUT=1
+
+T=Just simple moments to share with the ones you love...
+W=MINK
+C2_EYESHUT=1
+
+T=I'll never know that feeling.
+W=MINK
+C2_EYESHUT=1
+
+T=It's not too late...
+W=BROK
+C1A=MAYBE
+
+T=Yes, it is. You know as much as I do what our law reserves to anyone convicted of murder.
+W=MINK
+
+T=Eventually... I'll be free. One way or another.
+W=MINK
+C2_EYESHUT=1
+
+T=...
+W=OTT
+
+T=I don't blame either of you. All of the evidence was against me.
+W=MINK
+
+T=Just... hear me out.
+W=MINK
+
+T=I swear to the god of science, the Untail or whatever you believe in...
+W=MINK
+C2A=MEH
+
+T=I didn't do it.
+W=MINK
+
+T=...
+W=BROK
+TEN=PC15D_STORY160_CHOICE_CHARGEMINK_FADEOUT
+
+#----------------------
+ID=PC15D_STORY160_CHOICE_CHARGEMINK2
+T=(A bunch of Tribot cops arrived to pick up Dr. Mink.)
+BVOICE=BROK
+MOOD=THINK
+
+T=(When I exited the building... I had a terrible feeling.)
+MOOD=THINK
+
+T=(What Dr. Mink said...)
+MOOD=THINK
+
+T=(Is it still possible to make a living while taking care of the ones close to us?)
+MOOD=THINK
+
+T=(After this event, I'd never stop asking myself.)
+MOOD=THINK
+
+T=(Did I really make the right choice?...)
+MOOD=THINK
+
+T=(If I could start over... I'd probably do things differently.)
+MOOD=THINK
+
+T=(But there's no changing the past...)
+MOOD=THINK
+TEN=CH4_STORY160_COMPLETE_BROK
+
+
+
+#--------------------------------------------------------------------------------------------------
+#									SECOND GATHER
+#--------------------------------------------------------------------------------------------------
+
+ID=PC15D_SECONDGATHER1_OTT
+T=If you don't mind, Mister Brok...
+W=OTT
+C1=BROK
+C1A=THINK
+C2=OTT
+C2A=WONDER
+CONTEXT=Second gathering after reinspecting everything
+
+T=This time I'll stay silent and listen carefully.
+W=OTT
+C2A=DISAPPOINTED
+
+T=As you wish.
+W=BROK
+TEN=PC15D_SECONDGATHER1
+IT=1
+
+#--------------------------------------------------------------------------------------------------
+
+ID=PC15D_SECONDGATHER1
+T=Alright. We're all ears.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+
+T=Okay.
+W=BROK
+C1A=ALRIGHT
+
+T=After studying this case very carefully... 
+W=BROK
+C1A=MOCK
+
+T=I have reason to believe that the person who murdered Dr. Hush is...
+W=BROK
+TEN=PC15D_SECONDGATHER_CHOICE
+
+#---------------------------------------
+
+ID=PC15D_SECONDGATHER2
+T=Let's continue this.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+TEN=PC15D_SECONDGATHER_CHECK
+
+#---------------------------------------
+
+ID=PC15D_SECONDGATHER3
+T=I've got new info which should shed some light on these events!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+TEN=PC15D_SECONDGATHER_CHECK
+
+#---------------------------------------
+
+ID=PC15D_SECONDGATHER4
+T=So, where was I?...
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=MEH
+TEN=PC15D_SECONDGATHER_CHECK
+
+#--------------------------------------------------------------------------------------------------
+#									CHARGE TIDY
+#--------------------------------------------------------------------------------------------------
+
+ID=PC15D_SECONDGATHER_TIDY1
+T=...Actually not a person!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=SURPRISED
+C3=GUARD
+C3A=SURPRISED
+C4=TIDY
+C4A=NORMAL
+CONTEXT=Charging Tidy (normal interrogation)
+
+T=Tidy did this!
+W=BROK
+C4A=SURPRISED
+
+T=Me not person?
+W=TIDY
+C4A=WONDER
+
+T=Murder Daddy? Dead Daddy?...
+W=TIDY
+
+T=I knew we shouldn't have trusted that tin can.
+W=GUARD
+C3A=ANGRY
+
+T=Really?... But how?...
+W=MINK
+C2A=MEH
+
+T=He didn't have any means or motive to do this!
+W=MINK
+
+T=That's where you're wrong, Dr. Mink.
+W=BROK
+
+T=And I'm gonna prove how and why!
+W=BROK
+
+T=Let's start with the actual cause of death.
+W=BROK
+C1A=READY
+TEN=PC15D_INTERROGATION_START
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_DEATHSTAGED
+T=The body, the lamp and the floor... All three have red stains.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=This fake blood has been used to stage the murder!
+W=BROK
+C1A=MEH
+
+T=So... like my tie...?
+W=MINK
+
+T=Yes. This is Antburger Tomatoze sauce.
+W=BROK
+C1A=HAPPY
+
+T=We've been fooled by that?!
+W=GUARD
+C3A=SURPRISED
+
+T=I'm afraid so. 
+W=BROK
+
+T=There was a wrapper in the bathroom trash can, and as a specialist with that kind of food...
+W=BROK
+C1A=THINK
+
+T=I distinctly recognize the taste of Mc Flea's Antburger trademark sauce!
+W=BROK
+
+T=This may be a coincidence... You don't know how long this wrapping has been there.
+W=MINK
+C2A=MOCK
+
+T=Very well. I have more proof.
+W=BROK
+C1A=MOCK
+TEN=INTERFACE_CLUE_NEW
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_BURGERUNFROZEN
+T=Oooh... I get it now.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=That's why my Antburger was already unfrozen!
+W=MINK
+C2A=NORMAL
+
+T=Yeah. It would be pretty difficult to rub frozen sauce on a corpse!
+W=BROK
+C1A=ALRIGHT
+
+T=So the malefactor had to defrost it first.
+W=BROK
+C1A=MOCK
+
+T=Simple and ingenious, I must say!
+W=MINK
+C2A=NORMAL
+TEN=PC15D_CAUSEOFDEATH_CHECKNEXT
+
+#---------------------------------------
+
+ID=PC15D_CAUSEOFDEATH_NEXT1
+T=That's not all. Something else proves that we've been wrong from the start...
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=NORMAL
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+TEN=INTERFACE_CLUE_NEW
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_WEAPON
+T=We retrieved a lamp right next to the body, which obviously seemed like the murder weapon.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=This lamp records events. The data indicates a shock happened at 11:02.
+W=BROK
+
+T=11:02.
+W=TIDY
+C4A=SURPRISED
+
+T=Impossible.
+W=TIDY
+
+T=You're right, actually.
+W=BROK
+C1A=ALRIGHT
+
+T=Dr. Hush's medical tracking stopped at around 5:00.
+W=BROK
+C1A=THINK
+
+T=Do you believe he could have died hours before receiving a fatal blow to the head?...
+W=BROK
+C1A=MEH
+
+T=Tracking. Not reliable!
+W=TIDY
+C4A=HAPPY
+
+T=Yes and no. It's reliable within a two hour window.
+W=BROK
+
+T=Not six!
+W=BROK
+C1A=MOCK
+
+T=Isn't that right, Dr. Mink?
+W=BROK
+C4A=NORMAL
+
+T=Yes. I confirm it.
+W=MINK
+C2A=MEH
+
+T=Our tracking device is located deep inside our body and cannot be extracted.
+W=MINK
+
+T=It's reliable but to ensure our privacy rights, it only logs once every two hours.
+W=MINK
+
+T=What a great idea to make our detective life easier...
+W=BROK
+C1A=ANGRY
+
+T=Murders don't happen every day, you know...
+W=MINK
+TEN=PC15D_CAUSEOFDEATH_CHECKNEXT
+
+#---------------------------------------
+
+ID=PC15D_CAUSEOFDEATH_NEXT2
+T=Alright, so...
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=If there never was a violent thump to his head...
+W=MINK
+
+T=What's the true cause of death that the killer tried to hide?
+W=MINK
+
+T=I have a theory.
+W=BROK
+C1A=READY
+TEN=INTERFACE_CLUE_NEW
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_TRUECAUSE
+T=Dr. Mink. When browsing through your medical database, I noticed an interesting note from yourself.
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T="I tried mixing those Phoenixy flowers with nanites. Programmed or not, it's no good."
+W=BROK
+C1A=WONDER
+
+T="They caused the host's cardiac activity to slow down immensely, ultimately causing death."
+W=BROK
+
+T=Dr. Hush was poisoned?!
+W=MINK
+C2A=SURPRISED
+
+T=There is evidence to support this.
+W=BROK
+C1A=THINK
+
+T=Dr. Hush's right hand is literally covered by nanites.
+W=BROK
+
+T=Besides, Mister Squealer here...
+W=BROK
+C2A=MEH
+
+T=Hey!
+W=GUARD
+
+T=...Sorry. I mean, Mister Guard owns a plant on his desk. 
+W=BROK
+
+T=Which is... a Phoenixy!
+W=BROK
+C1A=MOCK
+
+T=It's entirely possible Tidy overheard Dr. Mink mention this and picked up ingredients from the lab.
+W=BROK
+
+T=Yeah! Those robotic things have quite the memory!
+W=GUARD
+C4A=WONDER
+
+T=Tidy. No memory.
+W=TIDY
+C4A=ANALYZE
+
+T=Tidy cleans. Tidy tidies. Tidy does not pick plants.
+W=TIDY
+C4A=HAPPY
+
+T=Others could.
+W=TIDY
+C4A=WONDER
+
+T=Minky murderer! Or Ratty!
+W=TIDY
+
+T=How dare you...
+W=MINK
+C2A=ANGRY
+
+T=He's right. Either of you had the means to do it.
+W=BROK
+C1A=THINK
+
+T=Tidy right! True Tidy!
+W=TIDY
+
+T=Don't go thinking that I'm on your side. 
+W=BROK
+C1A=ANGRY
+
+T=I'm sticking to the facts. And by doing this, I'll eventually prove you're the main culprit!
+W=BROK
+C1A=MEH
+
+T=No no. Broky wrong.
+W=TIDY
+C4A=WONDER
+
+T=But how? 
+W=MINK
+C2A=MOCK
+
+T=Why would Dr. Hush swallow such a poison?
+W=MINK
+
+T=Let me continue. 
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_COFFEEPOISON
+T=I found black stains on Dr. Hush's right hand. At first, I wasn't sure what it could be...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=...until I found another black stain - this time on the doctor's office floor.
+W=BROK
+
+T=The stain itself was very faint, as if someone had tried to clean it.
+W=BROK
+
+T=But I have no doubt. This is coffee, which can be quite tenacious!
+W=BROK
+C1A=READY
+
+T=And guess what... That stain was also covered by nanites!
+W=BROK
+
+T=So... The doctor drank poisonous coffee?
+W=GUARD
+C4A=WONDER
+
+T=Yeah. He must have spilled coffee on his hand while collapsing.
+W=BROK
+
+T=Wait... I also drank coffee today!
+W=MINK
+C2A=MOCK
+
+T=That's right. But you didn't get poisoned, and here's why.
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_COFFEESINK
+T=You went to the restroom later after Dr. Hush, didn't you?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=NORMAL
+
+T=The culprit had time to spill the coffee prepared in the sink before doing more - and this time, without poison.
+W=BROK
+
+T=Incidentally, that's where I found my second proof.
+W=BROK
+C1A=MEH
+
+T=In the sink?
+W=GUARD
+
+T=Exactly.
+W=BROK
+
+T=Now, tell me. Who usually prepares coffee?
+W=BROK
+C1A=READY
+
+T=Tidy...!
+W=MINK
+C2A=SURPRISED
+
+T=Untrue.
+W=TIDY
+C4A=WONDER
+
+T=Daddy, Minky make. Coffee sometimes.
+W=TIDY
+
+T=Ratty too.
+W=TIDY
+C4A=HAPPY
+
+T=Yes... Is that the reason you're charging our little maintenance bot for this awful crime?
+W=MINK
+C2A=MOCK
+
+T=I hate to say that's quite a weak link!
+W=MINK
+C4A=NORMAL
+
+T=Ya mean I did it, Mink?!
+W=GUARD
+C3A=ANGRY
+
+T=I didn't say that!
+W=MINK
+C2A=ANGRY
+
+T=But you thought it!
+W=GUARD
+
+T=Tidy makes. Good coffee! Not deadly!
+W=TIDY
+C4A=HAPPY
+
+T=Calm down. I'm just starting my report.
+W=BROK
+C1A=THINK
+
+T=Tidy adds. Major point.
+W=TIDY
+
+T=Daddy creator.
+W=TIDY
+C2A=MEH
+C3A=MEH
+C4A=NORMAL
+
+T=Cannot hurt. Love Daddy!
+W=TIDY
+C4A=HAPPY
+
+T=Ya know, I thought a machine like yourself would be all about precision.
+W=BROK
+C1A=MEH
+
+T=But that's no surprise, you're a defective bot.
+W=BROK
+
+T=Tidy... defective?
+W=TIDY
+C4A=WONDER
+
+T=What you're stating isn't entirely true.
+W=BROK
+C1A=MOCK
+
+T=Sure Tidy cannot attack his creator... when it implies a direct contact.
+W=BROK
+C4A=NORMAL
+
+T=A poison, however... Is quite a clever workaround to kill without direct contact!
+W=BROK
+C1A=THINK
+
+T=...
+W=MINK
+C2A=MOCK
+
+T=I guess you're right... Indirect violence is on a lower level of priority, and not part of the golden rule...
+W=MINK
+
+T=But that still shouldn't be possible! His software programming shouldn't allow it!
+W=MINK
+C2A=MEH
+
+T=There is "should" and there is "certain"!
+W=BROK
+C1A=ALRIGHT
+
+T=I know the reason for the malfunction, though I'll save it for a more suitable time.
+W=BROK
+C1A=MEH
+
+T=There's something else bothering me...
+W=MINK
+C2A=MOCK
+
+T=Nanites are only active for an hour or so. They lose their energy very quickly.
+W=MINK
+
+T=Considering Tidy did not come to my room today...
+W=MINK
+
+T=How could it get enough nanites for such a powerful poison?
+W=MINK
+
+T=During my investigation, I happened to make an interesting discovery which may just explain how!
+W=BROK
+C1A=READY
+TEN=PC15D_INTERROGATION_HOLE
+
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_HUSH_NEEDEDROOM_WRONG1
+T=There are many reasons for the doctor to come visit but that is absurd.
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=ANGRY
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=SURPRISED
+
+T=You think so?... Erm...
+W=BROK
+C1A=HAPPY
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_HUSH_VENT_WRONG1
+T=...?
+W=MINK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=SURPRISED
+
+T=Broky says nonsense again.
+W=TIDY
+C4A=HAPPY
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_HUSH_HEAR_WRONG1
+T=I didn't hear because...? What?
+W=MINK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=SURPRISED
+C4=TIDY
+C4A=WONDER
+
+T=Erm... I must be wrong.
+W=BROK
+C1A=WONDER
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_ACCESSNANITES_WRONG1
+T=Tidy could access the nanites through... what, exactly?
+W=MINK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=Wish I knew!
+W=BROK
+C1A=TIRED
+
+T=...
+W=MINK
+C2A=ANGRY
+
+T=Sorry, let me think a sec!
+W=BROK
+C1A=WORRIED
+
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_GUARD_BED_WRONG1
+T=That's hardly proof.
+W=GUARD
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=I agree...
+W=MINK
+
+T=Oh...
+W=BROK
+C1A=DISAPPOINTED
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_GUARD_MOTIVE_WRONG1
+T=Are you sure? I really can't see how this would explain his motive.
+W=MINK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=SURPRISED
+C4=TIDY
+C4A=WONDER
+
+T=Thanks Mink. That croc should reconsider his career.
+W=GUARD
+C3A=HAPPY
+
+T=Hey!...
+W=BROK
+C1A=ANGRY
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_ACCESSNANITES
+T=That hole between the rooms...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=NORMAL
+
+T=It leads directly to a table in your office.
+W=BROK
+
+T=Now, what's on this table?
+W=BROK
+C1A=READY
+
+T=Oh!... My nanites box!
+W=MINK
+C2A=SURPRISED
+
+T=Exactly.
+W=BROK
+C2A=MOCK
+
+T=If I had to guess... Those nanites are brand new and charged, aren't they?
+W=BROK
+
+T=You guessed right.
+W=MINK
+
+T=It's fairly safe to assume anyone with knowledge of this hole could get access to nanites.
+W=BROK
+C1A=THINK
+
+T=And in Tidy's case, I'm sure it's perfectly aware how to activate its bot friends!
+W=BROK
+C1A=MOCK
+
+T=Tidy. Different. Little bots. Not friends.
+W=TIDY
+C4A=WONDER
+
+T=Darn nanites. Killed Daddy!
+W=TIDY
+C4A=ANGRY
+
+T=That's called racism, you metal mongrel.
+W=MINK
+C2A=ANGRY
+
+T=Hey. Not trying to defend that piece of junk but...
+W=GUARD
+C3A=WONDER
+C4A=NORMAL
+
+T=Wouldn't it be easier and more logical for the weasel to access his own nanites?
+W=GUARD
+
+T=What about you, sleepy agent? You seem keen to reject accusation on others.
+W=MINK
+
+T=Me?!
+W=GUARD
+C3A=SURPRISED
+
+T=Can't even access your room, ya fool! Cause you can't bear anyone but yourself!
+W=GUARD
+C3A=ANGRY
+
+T=I'll pretend I didn't hear that... But your assumption is stupid.
+W=MINK
+C2A=MEH
+
+T=There's a reason why you dug that hole and hid it!
+W=MINK
+C2A=ANGRY
+
+T=People, come on. Hear me out!
+W=BROK
+C1A=READY
+
+T=Remember. When I first found out, there was a thin layer of plaster covering the hole.
+W=BROK
+C2A=MEH
+C3A=MEH
+
+T=Now. Who does the repairs in this lab?
+W=BROK
+
+T=That metal junk...
+W=GUARD
+C3A=WONDER
+
+T=Oh, my... That's true, Tidy can regenerate walls with plaster.
+W=MINK
+C2A=SURPRISED
+
+T=Could it really be?...
+W=MINK
+C2A=MOCK
+
+T=You did this, piece of junk?!
+W=GUARD
+C3A=ANGRY
+C4A=SURPRISED
+
+T=Nah-ha! Human idiot!
+W=TIDY
+C4A=WONDER
+
+T=Plaster. Easy to do. Even for. Pesky humans!
+W=TIDY
+C4A=ANALYZE
+
+T=Tidy no hole. Noooooo way.
+W=TIDY
+C4A=NORMAL
+
+T=I beg to differ, your metal highness.
+W=BROK
+C1A=MOCK
+
+T=Another piece of evidence strengthens my theory that you did this...
+W=BROK
+
+T=Or at least, that you're a big fat liar of a bot.
+W=BROK
+C1A=MEH
+TEN=PC15D_INTERROGATION_TIDYWRONG
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_TIDYWRONG
+T=According to the monitoring, Tidy went into the restroom at 4:24.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=He was not recorded in any room after that.
+W=BROK
+
+T=However, the screen in Dr. Hush's office states that he had been charging from 5:10 to 11:10.
+W=BROK
+
+T=How could he be in the office if he didn't leave the restroom in the first place?
+W=BROK
+C1A=READY
+
+T=Very simple! Yup-yup!
+W=TIDY
+C4A=HAPPY
+
+T=Tidy prepares coffee. Daddy come. Drink.
+W=TIDY
+C4A=ANALYZE
+
+T=Next. Daddy back office. With Tidy.
+W=TIDY
+
+T=So... You're saying he opened the office door and you just followed him?
+W=BROK
+C1A=WONDER
+
+T=Yup-yup!
+W=TIDY
+C4A=HAPPY
+
+T=Okay. For now... I'll give you the benefit of the doubt.
+W=BROK
+C1A=THINK
+
+T=In that case, let's examine the path of our favorite deceased doctor, shall we?
+W=BROK
+
+T=I think you'll find it rather interesting as well!
+W=BROK
+C1A=MOCK
+
+T=Tidy. No like. Insinuation.
+W=TIDY
+C4A=WONDER
+
+T=Before you move on, I have a simple question...
+W=MINK
+C2A=MOCK
+
+T=What is that monitoring you're referring to?!
+W=MINK
+C4A=NORMAL
+
+T=Oh yeah, that's true... You're not aware.
+W=BROK
+C1A=MEH
+
+T=The lab registers doors openings. Only guards are supposed to know.
+W=BROK
+
+T=What the heck...?!
+W=MINK
+C2A=ANGRY
+
+T=All this time, we've been watched?!
+W=MINK
+
+T=I thought you were there to ensure our privacy...!
+W=MINK
+
+T=No!
+W=GUARD
+
+T=I'm there to ensure your physical security! Making sure nobody threatens your life!
+W=GUARD
+
+T=What a great job you did...!
+W=MINK
+
+T=You lied to us!
+W=MINK
+
+T=Not me! I didn't make this system!
+W=GUARD
+C3A=ANGRY
+
+T=Then who did?!
+W=MINK
+
+T=The Government, of course!
+W=GUARD
+
+T=Oh... That's right.
+W=MINK
+C2A=MEH
+
+T=Fine. I'll send them a suggestion later then.
+W=MINK
+
+T=(Hmm...)
+W=BROK
+C1A=THINK
+MOOD=THINK
+VLOW=1
+
+T=(On the other hand, Tidy didn't seem surprised at all about the monitoring...)
+W=BROK
+MOOD=THINK
+
+T=Let's move on, shall we?
+W=BROK
+C1A=MAYBE
+
+T=There's something curious about the doctor's movement.
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_DRHUSHWHERE
+T=The last time Dr. Hush was recorded, he was leaving his office at 5:04.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=After that, he was nowhere to be found.
+W=BROK
+
+T=This is confirmed by the guard's statements. If you don't mind explaining...
+W=BROK
+
+T=Sure.
+W=GUARD
+C3A=WONDER
+
+T=At 5:10, I heard a noise coming from the doctor's room. But he wasn't there.
+W=GUARD
+
+T=Actually, no one seemed to be there... Although Tidy was idle, charging.
+W=GUARD
+C3A=MEH
+
+T=I started to look for the guy but then... I heard his voice coming from behind the wall!
+W=GUARD
+
+T="I'm in the restroom".
+W=GUARD
+C3A=HAPPY
+
+T=Except this wasn't Dr. Hush at all... But a recording coming from the Meety-Me.
+W=BROK
+C3A=MEH
+
+T=A recording... Oh!
+W=MINK
+C2A=SURPRISED
+
+T=Does this mean the body was in the restroom and the murderer didn't want Mister Rat to see it?
+W=MINK
+C2A=MOCK
+
+T=That's unlikely.
+W=BROK
+C1A=MEH
+
+T=The guard checks the rooms regularly and there's no hiding spot in there.
+W=BROK
+
+T=Besides, keep in mind the ultimate goal - getting Dr. Hush in Dr. Mink's office.
+W=BROK
+
+T=There's no way to move the body from the restroom to his office without going into the hall unnoticed.
+W=BROK
+C1A=THINK
+
+T=Lies!
+W=TIDY
+C4A=SURPRISED
+
+T=Okay. Give us your version of the facts, then!
+W=BROK
+C3A=MEH
+
+T=Daddy. Come with me. Back to office.
+W=TIDY
+C4A=WONDER
+
+T=Before charging. Daddy head out.
+W=TIDY
+
+T=Tidy never forget. Daddy last words.
+W=TIDY
+C4A=SAD
+
+T="I need to settle things with Dr. Mink"
+W=TIDY
+C4A=ANALYZE
+BNAMESP=HUSH
+BVOICESP=HUSH
+
+T=Daddy. Meet Minky in hallway.
+W=TIDY
+
+T=Daddy follow Minky. Enter Minky office.
+W=TIDY
+
+T=Minky give coffee to Daddy... 
+W=TIDY
+
+T=Daddy dead.
+W=TIDY
+TEN=PC15D_CLUE_MURDER_DRHUSHWHEREB
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_DRHUSHWHEREB
+T=I gotta give credit to the tin can... 
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=SAD
+
+T=Its version sounds way more plausible than your own, croc.
+W=GUARD
+
+T=Sure, Tidy has a bothersome recording. But how do we know when it was made?
+W=BROK
+C1A=WONDER
+
+T=It's out of context.
+W=BROK
+C1A=MOCK
+
+T=You could have very well recorded this and forged your so called proof.
+W=BROK
+
+T=Also, there's no monitoring record of Dr. Hush ever entering Dr. Mink's room.
+W=BROK
+
+T=Wrong!
+W=TIDY
+C1A=CONFUSED
+C4A=ANGRY
+
+T=Mink touches door. Enter with Daddy.
+W=TIDY
+C1A=THINK
+C4A=WONDER
+
+T=Then Minky. Poison Daddy!
+W=TIDY
+C4A=ANGRY
+
+T=The weasel went back to his room with the doctor?...
+W=GUARD
+
+T=Look monitoring!
+W=TIDY
+C4A=WONDER
+
+T=When did Minky. Enter?
+W=TIDY
+
+T=5:04...
+W=BROK
+C1A=MAYBE
+
+T=Gulp.
+W=BROK
+C1A=SURPRISED
+
+T=Exact. Same minute that Daddy leaves!
+W=TIDY
+C4A=NORMAL
+
+T=But I never did that! I never saw him today!
+W=MINK
+C2A=ANGRY
+
+T=Mister Guard!
+W=MINK
+
+T=...Can't remember.
+W=GUARD
+C3A=WONDER
+
+T=Are you kidding me?!
+W=MINK
+
+T=Tidy. What about the voice the Guard heard?
+W=BROK
+C1A=ANGRY
+
+T=Coincidence. Meety Me faulty.
+W=TIDY
+C4A=HAPPY
+
+T=Sometimes Meety Me. Play livie randomly.
+W=TIDY
+
+T=Hmm... Yes, I've seen it happen...
+W=MINK
+C2A=MOCK
+
+T=And the hole? The coffee spot on the floor in your room?
+W=BROK
+C1A=READY
+
+T=Already there. For ages.
+W=TIDY
+C4A=NORMAL
+
+T=Broky. Prove the opposite?
+W=TIDY
+
+T=Well... The nanites...
+W=BROK
+C1A=WONDER
+
+T=Nanites. Machines. Attracted to coffee.
+W=TIDY
+
+T=True, Minky?
+W=TIDY
+C4A=HAPPY
+
+T=...I can't dishonor my profession by lying.
+W=MINK
+C2A=MEH
+
+T=Yes. Due to their hardware, nanites are attracted to caffeine and gather inside.
+W=MINK
+
+T=So...! After all, it really was your doing, weasel!
+W=GUARD
+C3A=ANGRY
+
+T=No! Don't you listen to it!
+W=MINK
+C2A=ANGRY
+C4A=NORMAL
+
+T=Mister detective! I told you the truth...
+W=MINK
+
+T=You need to believe in me!
+W=MINK
+
+T=Well I have to side with the tincan!
+W=GUARD
+
+T=That's two against two.
+W=BROK
+C1A=ANGRY
+
+T=What do you think, Ott?
+W=BROK
+C3=OTT
+C3A=SAD
+
+T=I...
+W=OTT
+
+T=Sorry... I'm getting lost with all these details.
+W=OTT
+C3A=DISAPPOINTED
+
+T=Guys! Let me finish my theory, and then you shall decide.
+W=BROK
+
+T=Fine. No listen. To Tidy.
+W=TIDY
+C4A=SAD
+
+T=Tidy sad. Dead Daddy.
+W=TIDY
+
+T=Argh...
+W=BROK
+C1A=STUPID
+TEN=PC15D_CLUE_MURDER_DRHUSHWHEREC
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_DRHUSHWHEREC
+T=Let's focus.
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=Tidy used the Meety-Me recording to avoid the guard getting worried that Dr. Hush disappeared.
+W=BROK
+C1A=MEH
+
+T=As a result of my assumptions, Dr. Hush could neither be in his room, the restroom or the hall at 5:10...
+W=BROK
+
+T=And as the monitoring confirms, he never entered Dr. Mink's room either.
+W=BROK
+
+T=No way, man! That's impossible!
+W=GUARD
+C3A=SURPRISED
+
+T=I beg to differ.
+W=BROK
+C1A=MEH
+
+T=He couldn't just disappear into thin air, could he?
+W=MINK
+C2A=MOCK
+
+T=Oh, he didn't!
+W=BROK
+
+T=There's a fourth possibility, and I'm going to explain it to you!
+W=BROK
+C1A=MOCK
+TEN=PC15D_INTERROGATION_DRHUSHVENT
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTVENT_WRONG
+T=Dr. Hush was right here!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=...?
+W=MINK
+C2A=MOCK
+C4A=WONDER
+
+T=Ya kiddin'? We already said the doctor couldn't be in this room!
+W=GUARD
+C3A=ANGRY
+
+T=Did we?
+W=BROK
+C1A=WONDER
+
+T=Oops.
+W=BROK
+C1A=STUPID
+
+T=...
+W=MINK
+C2A=MEH
+
+T=Gimme another chance!
+W=BROK
+C1A=READY
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTVENT_RIGHT
+T=The vent?!
+W=GUARD
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=SURPRISED
+C3=GUARD
+C3A=SURPRISED
+C4=TIDY
+C4A=WONDER
+
+T=Yeah. The ventilation duct.
+W=BROK
+
+T=That's the only spot the body could be hidden without anyone noticing!
+W=BROK
+C1A=MEH
+
+T=Pure conjecture!
+W=MINK
+C2A=MEH
+
+T=Ya have any clue to support dat insane claim?
+W=GUARD
+C3A=MEH
+
+T=Sure do!
+W=BROK
+TEN=PC15D_INTERROGATION_VENTILATION
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_STRETCH_WRONG1
+T=What?...
+W=GUARD
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=SURPRISED
+
+T=Uh?... Can you explain?
+W=MINK
+
+T=Afraid not.
+W=BROK
+C1A=HAPPY
+
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_VENTPROOF_WRONG1
+T=Wait. How does this prove the doctor was in the vent?...
+W=GUARD
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=SURPRISED
+
+T=It doesn't?
+W=BROK
+C1A=WONDER
+
+T=No.
+W=GUARD
+C3A=ANGRY
+
+T=Broken Broky!
+W=TIDY
+C4A=HAPPY
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_VENTILATION
+T=Tomatoze sauce...?
+W=GUARD
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=Yeah. Looks like the murderer didn't hesitate to put quite a lot to confuse us...
+W=BROK
+
+T=Problem detected.
+W=TIDY
+C4A=ANALYZE
+
+T=What is it, this time?...
+W=BROK
+C1A=ANGRY
+
+T=Ventilation. Also used. For delivery. Sometimes.
+W=TIDY
+C4A=WONDER
+
+T=Is that true...?
+W=BROK
+C1A=THINK
+
+T=Yes. Big packages don't fit into the Pipe-Mail, so they're delivered through the vent.
+W=MINK
+
+T=It's possible the content of a package leaked...
+W=MINK
+C2A=MOCK
+
+T=Obviously...
+W=BROK
+C1A=TIRED
+
+T=Bam! Gotcha!
+W=TIDY
+C4A=HAPPY
+
+T=Hrmph...
+W=BROK
+C1A=ANGRY
+
+T=Still! That would be a huge coincidence, don't ya think?
+W=BROK
+
+T=Let's assume you're right.
+W=MINK
+C2A=MEH
+C4A=NORMAL
+
+T=In order to get into the vent... Dr. Hush would have to be in his office!
+W=MINK
+
+T=He was.
+W=BROK
+C1A=READY
+
+T=But... you said it earlier! 
+W=MINK
+
+T=The last time he was recorded... He was leaving his room!
+W=MINK
+
+T=How do you explain this?
+W=MINK
+TEN=PC15D_CLUE_MURDER_VENTILATION_CHOICE
+IT=1
+
+#---------------------------------------
+
+ID=PC15D_DRHUSHWHY_GHOST
+T=It's obvious. Dr. Hush is dead, so he's a ghost now.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=And ghosts can pass through walls without touching anything.
+W=BROK
+
+T=Everyone knows that!
+W=BROK
+
+T=...
+W=MINK
+
+T=...
+W=GUARD
+
+T=...
+W=TIDY
+
+T=Okay, this sounded more logical in my mind...
+W=BROK
+C1A=WONDER
+
+T=Find something else!
+W=MINK
+C2A=ANGRY
+TEN=PC15D_CLUE_MURDER_VENTILATION_CHOICE
+IT=1
+
+#---------------------------------------
+
+ID=PC15D_DRHUSHWHY_BACK
+T=Simple. Dr. Hush went back to his office.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=When?... At 5:10 the guard came in. There's nothing before that.
+W=MINK
+C2A=MOCK
+
+T=I know!... 
+W=BROK
+C1A=HAPPY
+
+T=He... crawled on the ceiling and moved inside when the guard came in!
+W=BROK
+
+T=Like Spidermole! Ya know!...
+W=BROK
+
+T=...
+W=BROK
+
+T=That's embarassing...
+W=BROK
+C1A=STUPID
+
+T=Let's pretend we didn't hear that.
+W=MINK
+C2A=MEH
+TEN=PC15D_CLUE_MURDER_VENTILATION_CHOICE
+IT=1
+
+#---------------------------------------
+
+ID=PC15D_DRHUSHWHY_NEVEREXIT
+T=It's clear Dr. Hush never left his office.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=There is no monitoring entry between his exit and the time the guard checked the room.
+W=BROK
+
+T=This was just an attempt from the criminal to direct our attention elsewhere.
+W=BROK
+
+T=Even Tidy could use the doctor's hand on the button, just enough to add this to the monitor.
+W=BROK
+C1A=READY
+
+T=This would imply Dr. Hush was dead by then?
+W=MINK
+C2A=MOCK
+C4A=WONDER
+
+T=Yes. Actually...
+W=BROK
+C1A=MEH
+
+T=I think he was killed even before going into his office.
+W=BROK
+
+T=Absurd.
+W=TIDY
+C4A=HAPPY
+
+T=Oh, really?
+W=BROK
+C1A=MOCK
+
+T=Well, I have another clue!
+W=BROK
+TEN=PC15D_INTERROGATION_WHEREPOISONED
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_WHEREPOISONED_WRONG1
+T=(But... That's not even a location, is it?)
+W=BROK
+C1=BROK
+C1A=STUPID
+MOOD=THINK
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_WHEREPOISONED
+T=Remember where the poison came from. The coffee!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=To poison him, it'd be easier to have Dr. Hush drink the coffee in his office.
+W=BROK
+C1A=THINK
+
+T=Except... He never does.
+W=BROK
+C1A=READY
+
+T=Dr. Hush always drinks his coffee in the restroom. He's too maniacal to risk spilling drops while working.
+W=BROK
+
+T=And yet, there's a coffee stain on the floor...?
+W=BROK
+C1A=MAYBE
+
+T=What do you insinuate? That the stain was made when Dr. Hush was dead on the floor?
+W=GUARD
+C3A=HAPPY
+
+T=This is exactly what I mean.
+W=BROK
+C1A=MEH
+
+T=Broky liar.
+W=TIDY
+C3A=WONDER
+C4A=WONDER
+
+T=Daddy take. Coffee. In office. Sometimes.
+W=TIDY
+C4A=NORMAL
+TEN=PC15D_CLUE_MURDER_MUSICFADE
+
+T=Again, I'm afraid it's your word against his, detective...
+W=MINK
+
+T=Yeah. It'd make lot more sense that the doc spilled it by accident.
+W=GUARD
+TEN=PC15D_PC15D_CLUE_MURDER_MUSICDOUBT
+
+T=Broky. Done for. Give up!
+W=TIDY
+C4A=HAPPY
+
+T=(No good... Even Mink starts to think my theory is too far fetched...)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(Am I really on the right path?...)
+W=BROK
+MOOD=THINK
+TEN=PC15D_CHOICE_RIGHTPATH
+
+
+#---------------------------------------
+
+ID=PC15D_RIGHTPATH_NO
+T=(Sigh... I keep losing memories. How can I even trust anything I say?)
+W=BROK
+C1=BROK
+C1A=STUPID
+MOOD=THINK
+
+T=(...)
+W=BROK
+MOOD=THINK
+
+T=(No!... I've gone this far...)
+W=BROK
+C1A=ANGRY
+MOOD=THINK
+
+T=(I have a feeling Tidy is involved... I need to trust my instinct!)
+W=BROK
+MOOD=THINK
+
+T=(Better continue and see what comes out of it.)
+W=BROK
+C1A=READY
+MOOD=THINK
+TEN=PC15D_RIGHTPATH_YES
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_RIGHTPATH
+T=Everyone... well, except Tidy.
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=I know how all of this sounds. But please, allow me to continue and trust me!
+W=BROK
+C4A=WONDER
+
+T=Silly Broky.
+W=TIDY
+C4A=HAPPY
+
+T=Alright.
+W=MINK
+TEN=PC15D_CLUE_MURDER_MUSICBACK
+
+T=Let's assume Dr. Hush drank his coffee in the restroom and died.
+W=MINK
+C2A=MOCK
+
+T=To get into the vent, he would have to get back to his office first.
+W=MINK
+C4A=NORMAL
+
+T=How?
+W=MINK
+C2A=MEH
+
+T=Simple. Tidy can carry objects.
+W=BROK
+C1A=ALRIGHT
+
+T=Ya're saying... This little metal thing carried Dr. Hush all the way to his room?!
+W=GUARD
+C3A=WONDER
+
+T=Ah ah! No way, man! I would have noticed!
+W=GUARD
+C3A=HAPPY
+
+T=Are you certain? Should I jog your memory?
+W=BROK
+C1A=MOCK
+
+T=Uh?
+W=GUARD
+C3A=WONDER
+TEN=PC15D_INTERROGATION_CARRY
+
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_CARRY_WRONG1
+T=I dun remember that?...
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=WONDER
+
+T=You don't? You've got really bad memory!
+W=BROK
+C1A=MOCK
+
+T=Hey!...
+W=GUARD
+C3A=ANGRY
+
+T=Please admit you're wrong and move on, detective.
+W=MINK
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_CARRY
+T=At 4:38, the guard wasn't at his seat. He had received a phone call with terrible reception.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=When this happened, he opened the lab's main entrance to improve the signal.
+W=BROK
+
+T=What?...
+W=MINK
+C2A=SURPRISED
+
+T=But on the line, no voice - only music.
+W=BROK
+
+T=During that moment, he was looking away.
+W=BROK
+
+T=Is that true, Mister rat? You blundered?!
+W=MINK
+C2A=ANGRY
+
+T=Hey! You know how this is, reception is terrible in here!
+W=GUARD
+C3A=WONDER
+
+T=Actually you may not... After all, you've got no friends or anyone...
+W=GUARD
+C3A=MEH
+
+T=Argh! So it's true...
+W=MINK
+C2A=MEH
+
+T=He thought this was a spam call but here's what I think...
+W=BROK
+
+T=This was you, Tidy!
+W=BROK
+C1A=MOCK
+C4A=SURPRISED
+
+T=It wouldn't be hard for you to simulate a phone call and play some music, am I right?
+W=BROK
+
+T=He can...
+W=MINK
+C2A=MOCK
+
+T=Broky. Want music?
+W=TIDY
+C4A=WONDER
+
+T=OK. Tidy. Play music!
+W=TIDY
+C4A=HAPPY
+
+T=Erm... No thanks...
+W=BROK
+C1A=MAYBE
+
+T=Tidy. No call. Nah-ha.
+W=TIDY
+C4A=WONDER
+
+T=Although the guard was still making sure no one could enter or exit the lab... 
+W=BROK
+C1A=THINK
+
+T=At that moment... Anything could have happened!
+W=BROK
+
+T=Hmm...
+W=MINK
+C2A=MEH
+
+T=I'm trying to imagine Tidy carrying the doctor in the hall and opening the office door with his hand...
+W=MINK
+
+T=It's technically possible, just downright crazy...
+W=MINK
+
+T=This would also explain why Tidy was found in Dr. Hush's room even though he supposedly stayed in the restroom.
+W=BROK
+
+T=Take it the other way round.
+W=BROK
+C1A=ALRIGHT
+
+T=What would be the point of this call farce if Dr. Hush was safe and sound while returning to his room?
+W=BROK
+C1A=MOCK
+
+T=There would be nothing particularly disturbing.
+W=BROK
+
+T=No. Tidy no call.
+W=TIDY
+
+T=Broky deaf!
+W=TIDY
+C4A=ANGRY
+
+T=So... When did he die?
+W=MINK
+C2A=MOCK
+C4A=WONDER
+
+T=Between 4:24 and 4:38 as this is the time Tidy went into the restroom and left.
+W=BROK
+CLUE=CLUE_MURDER_TIMEOFDEATH
+
+T=Broky ignores. Poor Tidy... Daddy dead!...
+W=TIDY
+C4A=SAD
+
+T=If your theory is accurate, there's still a lot that needs explaining.
+W=MINK
+
+T=For example, how could Tidy put Dr. Hush into the vent?
+W=MINK
+C2A=MEH
+
+T=It's not like either of them could climb a ladder!
+W=MINK
+
+T=Wrong. I know exactly how Tidy did!
+W=BROK
+C1A=MEH
+TEN=PC15D_INTERROGATION_STRETCH
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_TIDY_STRETCH_WRONG
+T=This might be what helped Tidy to reach the vent!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=SAD
+
+T=...Possibly.
+W=BROK
+C1A=HAPPY
+
+T=Man. You're totally nuts.
+W=GUARD
+C3A=WONDER
+
+T=That's enough. I'm outta here...
+W=GUARD
+C3A=ANGRY
+
+T=No, wait! I'm kidding!
+W=BROK
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_STRETCH
+T=Don't forget Tidy's main ability.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=SAD
+
+T=Extended arms!
+W=BROK
+C1A=READY
+C4A=SURPRISED
+
+T=...
+W=MINK
+
+T=Are ya serious?...
+W=GUARD
+C3A=WONDER
+
+T=Impossible.
+W=TIDY
+C4A=WONDER
+
+T=Pray tell. Why would it be?
+W=BROK
+C1A=ANGRY
+
+T=Arms. Stretch to 9 feet. Max.
+W=TIDY
+C4A=ANALYZE
+COMM=Make sure to convert to the appropriate unit according to your country (eg : 3 meters)
+
+T=So what?...
+W=BROK
+
+#TODO Do a demonstration in dr mink room
+T=Look.
+W=TIDY
+C4A=HAPPY
+TEN=PC15D_CLUE_MURDER_STRETCH_TIDYSHOW
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_STRETCH2
+T=You're kidding, right?...
+W=BROK
+C1=BROK
+C1A=CONFUSED
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=HAPPY
+
+T=How can we know it's not just pretending?
+W=BROK
+C1A=ANGRY
+
+T=Let me check its data.
+W=MINK
+
+T=Hmm...
+W=MINK
+
+T=I'm afraid it's true. It has extended its arms to the limit, which is 9 feet.
+W=MINK
+C2A=MEH
+COMM=Make sure to convert to the appropriate unit according to your country (eg : 3 meters)
+
+T=Dr. Hush's ceiling is the same height. Thus, Tidy couldn't reach the vent.
+W=MINK
+
+T=N-no way!
+W=BROK
+C1A=SURPRISED
+
+T=Ah-ah! Told ya!
+W=TIDY
+C4A=HAPPY
+
+T=Broky theory. Gone! Kaputt!
+W=TIDY
+
+T=(I need to think fast...!)
+W=BROK
+C1A=ANGRY
+MOOD=THINK
+
+T=(I'm convinced Tidy was involved... He has to be!)
+W=BROK
+MOOD=THINK
+TEN=PC15D_INTERROGATION_RAMP
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_RAMP
+T=Take a look at the room configuration.
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+#TODO Remove clues in background and Show a picture of Dr HUsh's room with annotations for the height
+
+T=Both scientists offices are a reflection of one another.
+W=BROK
+
+T=As such, the vent height is exactly the same in both rooms.
+W=BROK
+
+T=How high is it?
+W=BROK
+C1A=MOCK
+
+T=10 feet.
+W=MINK
+C2A=HAPPY
+COMM=10 feet is Equivalent to 3.5 meters
+
+T=Yeah. The laser column in this room is 10 feet, and it goes up to the ceiling.
+W=BROK
+
+T=And with Tidy's arms reaching 9 feet... That's not enough.
+W=BROK
+COMM=9 feet is Equivalent to 3 meters
+
+T=Oh. Broky agree.
+W=TIDY
+C4A=HAPPY
+
+T=Admit defeat!
+W=TIDY
+
+T=No way!
+W=BROK
+C1A=READY
+
+T=We're just missing... A little something.
+W=BROK
+
+T=The workbench! Tidy can stand on it.
+W=GUARD
+C3A=SURPRISED
+
+T=It's visibly about 2 to 3 feet high.
+W=BROK
+C1A=THINK
+COMM=Equivalent to 1 meter
+
+T=But... The metal thingy can't jump on there, can it?
+W=GUARD
+C3A=WONDER
+
+T=Not jump!
+W=BROK
+
+T=This is the point of the ramp Dr. Hush designed for it.
+W=BROK
+C1A=ALRIGHT
+
+T=You told me yourself, Tidy!
+W=BROK
+C1A=MOCK
+
+T=...
+W=TIDY
+C4A=SURPRISED
+
+T=Tidy. Learn. Close mouth.
+W=TIDY
+
+T=Sorry croc but... Seems like pure conjuncture.
+W=GUARD
+C4A=WONDER
+
+T=Oh but I can prove it!
+W=BROK
+
+T=You can?!
+W=GUARD
+C2=OTT
+C2A=SURPRISED
+C3A=SURPRISED
+
+T=Go, go, Mister Brok!
+W=OTT
+C2A=ALRIGHT
+TEN=PC15D_INTERROGATION_CRUMBS
+
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_CRUMBS_WRONG1
+T=Tidy. Does not. Understand.
+W=TIDY
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=You're not the only one, actually.
+W=MINK
+
+T=I admit I'm not sure myself. What did I say?...
+W=BROK
+C1A=WONDER
+
+T=Lemme try again!
+W=BROK
+C1A=STUPID
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_CRUMBS
+T=Here's a picture of the room. Look!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=There are crumbs all over the table.
+W=BROK
+
+T=Oh... That's true.
+W=MINK
+C2A=MOCK
+
+T=Now, as you know... Dr. Hush is a neat freak.
+W=BROK
+
+T=How could he leave crumbs everywhere?...
+W=BROK
+
+T=The answer is simple. Dr. Hush wasn't alive.
+W=BROK
+C1A=READY
+
+T=Tidy. You crushed them while climbing on the ramp!
+W=BROK
+
+T=Nuh-uh.
+W=TIDY
+
+T=Tidy. Woke late.
+W=TIDY
+C4A=HAPPY
+
+T=Not cleaned. Yet.
+W=TIDY
+
+T=I wish for once you'd tell the truth!
+W=BROK
+C1A=TIRED
+
+T=Admit it! That's what happened!
+W=BROK
+C1A=ANGRY
+
+T=You climbed up, stretched your arms to get in the vent and put Dr. Hush inside, then...
+W=BROK
+
+T=You pushed the poor chap towards Dr. Mink's room!
+W=BROK
+
+T=The more we talk, the more...
+W=BROK
+SKIPEND=1
+
+T=Ha ha ha...
+W=TIDY
+TEB=PC15D_CLUE_MURDER_MUSICFADE
+
+T=Uh?
+W=BROK
+C1A=SURPRISED
+
+T=Is it... laughing?
+W=GUARD
+C3A=WONDER
+
+T=I...
+W=TIDY
+TEN=PC15D_CLUE_MURDER_MUSICHOSTAGE
+
+T=...!
+W=MINK
+C2A=SURPRISED
+
+T=You what?
+W=BROK
+C1A=ANGRY
+
+T=Will you change your mind and pretend it's not possible for you to climb there?...
+W=BROK
+
+T=...
+W=TIDY
+C4A=NORMAL
+
+T=Is possible. My pleasure.
+W=TIDY
+
+T=Huh?
+W=BROK
+C1A=WONDER
+
+T=To see. Broky. Fall into. Own trap!
+W=TIDY
+C4A=HAPPY
+
+T=Broky lucky. Circumstances.
+W=TIDY
+
+T=But luck. Running out!
+W=TIDY
+
+T=...Might you be more specific?
+W=BROK
+C1A=HAPPY
+
+T=Look map.
+W=TIDY
+C4A=ANALYZE
+
+T=Ventilation duct. 2 feet high.
+W=TIDY
+C1A=THINK
+COMM=Equivalent to 60 centimeters.
+
+T=Tidy. 3 feet high!
+W=TIDY
+COMM=Equivalent to 1 meter.
+
+T=Cannot bend. Cannot fit!
+W=TIDY
+C4A=ANGRY
+
+T=Plus! Cannot stand on floor. While pushing. All way through!
+W=TIDY
+
+T=He's right!
+W=MINK
+C2A=SURPRISED
+
+T=Tidy couldn't fit inside. And the distance is way too long to push all the way through the vent while standing on the ground!
+W=MINK
+C4A=NORMAL
+
+T=Gulp...
+W=BROK
+C1A=TIRED
+
+T=Broky! Done for!
+W=TIDY
+C4A=HAPPY
+TEN=PC15D_CLUE_MURDER_MUSICFADE
+
+T=No!
+W=BROK
+C1A=ANGRY
+
+T=I... I can prove how!
+W=BROK
+
+T=Let's take a look at that picture again.
+W=BROK
+C1A=READY
+
+T=This... is how Tidy did it!
+W=BROK
+TEN=PC15D_PICTURE_LEVER
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTLEVER_WRONG
+T=Right here!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=That? Ya sure?
+W=GUARD
+C3A=WONDER
+
+T=Well... No but it's pretty, isn't it?
+W=BROK
+C1A=HAPPY
+
+T=Can't you be serious for a minute?
+W=MINK
+C2A=ANGRY
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTLEVER_RIGHT
+T=We forgot to ask ourselves one important question.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=What opens the vent trap? After all, it's not always open.
+W=BROK
+
+T=That's right.
+W=MINK
+
+T=Unlike mine, it doesn't have a ladder and an automated way to...
+W=MINK
+C2A=MOCK
+
+T=Oh, I see now! The lever!
+W=MINK
+C2A=NORMAL
+
+T=Are you suggesting?...
+W=MINK
+
+T=Yes.
+W=BROK
+C1A=ALRIGHT
+
+T=First, Tidy opened the vent and put Dr. Hush into it...
+W=BROK
+C1A=MOCK
+
+T=Then he grasped the lever with one arm, and pushed the corpse with the other!
+W=BROK
+
+T=Woah! Now that's the craziest thing you've said so far, croc!
+W=GUARD
+C3A=SURPRISED
+
+T=Is that even possible?
+W=OTT
+C3=OTT
+C3A=WONDER
+
+T=Let's see...
+W=MINK
+C2A=MOCK
+
+T=If this map is correct, the vent is almost 9 feet wide.
+W=MINK
+
+T=Yes. It's absurd but... technically possible.
+W=MINK
+
+T=The maintenance robot clinging onto the ceiling?! You're insane!
+W=GUARD
+C3=GUARD
+C3A=ANGRY
+
+T=Let me judge how insane I sound after all this is over!
+W=BROK
+C1A=MEH
+
+T=Let's not forget the finale. The corpse in Dr. Mink's room.
+W=BROK
+
+T=Yes, Tidy pushed him but the pertinent question is... when?
+W=BROK
+C1A=THINK
+
+T=Indeed.
+W=MINK
+C2A=HAPPY
+
+T=There's a specific piece of evidence that tells us exactly when it happened!
+W=BROK
+TEN=PC15D_INTERROGATION_LAMPPUSH
+
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_LAMPOFF_WRONG1
+T=(No... I should think about who owned that lamp.)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_LAMPPUSH_WRONG1
+T=Ahh. I see!
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+C3=GUARD
+C3A=HAPPY
+C4=TIDY
+C4A=NORMAL
+
+T=Ah! Can you explain for me, then?
+W=BROK
+C1A=HAPPY
+
+T=Actually... I'm not sure.
+W=GUARD
+C2A=MEH
+C3A=WONDER
+
+T=Erm... Me neither.
+W=BROK
+C1A=STUPID
+
+T=Argh...
+W=MINK
+C2A=ANGRY
+
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_LAMPPUSH
+T=I analyzed Dr. Mink's lamp. The data I gathered indicates...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=NORMAL
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=A fatal shock at 5:10!
+W=BROK
+C1A=MOCK
+
+T=Oh... I get it now.
+W=MINK
+C2A=HAPPY
+
+T=Well, I don't. What's the fuss?
+W=GUARD
+C3A=WONDER
+
+T=Tidy needed to put the lamp next to the body but he couldn't do it himself.
+W=BROK
+C1A=THINK
+
+T=So... He put it in the vent alongside the corpse!
+W=BROK
+
+T=Makes sense. The fall must have damaged the lamp.
+W=MINK
+
+T=But wait... 5:10?
+W=MINK
+C2A=MOCK
+
+T=That's early. If there had been a body lying in the middle of my room, I would have noticed!
+W=MINK
+C2A=MEH
+
+T=And.. Didn't you say this was the data from my lamp?
+W=MINK
+
+T=Tidy could not access mine!
+W=MINK
+
+T=Good. Broky theory. Falling apart!
+W=TIDY
+C4A=HAPPY
+
+T=Wait!
+W=BROK
+C1A=MEH
+
+T=Okay, I admit... I fooled you.
+W=BROK
+C4A=WONDER
+
+T=Yes, I said this was the data from Dr. Mink's lamp...
+W=BROK
+
+T=But I never claimed this was data from the lamp next to the body!
+W=BROK
+C1A=READY
+
+T=Uh?...
+W=MINK
+C2A=SURPRISED
+
+T=The croc is confusing me.
+W=GUARD
+C3A=WONDER
+
+T=Let me explain.
+W=BROK
+TEN=INTERFACE_CLUE_NEW
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_LAMPHUSH
+T=Of course, we immediately considered that the lamp next to the body is Dr. Mink's.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=However... This lamp's data revealed a surprise.
+W=BROK
+
+T=It belongs to Dr. Hush.
+W=BROK
+C1A=MOCK
+
+T=...Gzz gzz!
+W=TIDY
+C2A=MOCK
+C3A=WONDER
+C4A=SURPRISED
+
+T=Incorrect! Nuh-uh!
+W=TIDY
+
+T=Wait... So that's the one Tidy pushed into the vent?
+W=MINK
+
+T=Yes. There's no doubt about it.
+W=BROK
+C1A=MEH
+
+T=Nah.
+W=GUARD
+C4A=WONDER
+
+T=If that's what happened... There'd be two lamps here!
+W=GUARD
+C3A=HAPPY
+
+T=Mister rat is right. How do you explain that the other lamp... My lamp?... is on Dr. Hush's desk?
+W=MINK
+C2A=MEH
+
+T=We'll just have to prove Tidy picked up Dr. Mink's lamp.
+W=BROK
+
+T=Could he, now?
+W=GUARD
+C3A=WONDER
+
+T=Just think. Where was Dr. Mink's lamp originally?
+W=BROK
+
+T=Dunno. Show us!
+W=GUARD
+
+T=Well, right there!
+W=BROK
+C1A=READY
+TEN=PC15D_PICTURE_MINKLAMP
+
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTMINKLAMP_WRONG
+T=Your lamp was here!
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=SURPRISED
+
+T=No, it wasn't.
+W=MINK
+
+T=Ya sure?
+W=BROK
+C1A=WONDER
+
+T=I live here! Of course I know!
+W=MINK
+C2A=ANGRY
+
+T=Oh. Then...
+W=BROK
+C1A=DOWN
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTMINKLAMP_RIGHT
+T=Dr. Mink. Your lamp was right here!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=Well, yes. How did you know?
+W=MINK
+C2A=SURPRISED
+
+T=With the door permanently shut, there's only one spot Tidy could access.
+W=BROK
+C1A=ALRIGHT
+C2A=MOCK
+
+T=And that's this hole in the wall!
+W=BROK
+C1A=READY
+
+T=Again?...
+W=GUARD
+C3A=WONDER
+
+T=Dunno. If it were me...
+W=GUARD
+C1A=THINK
+
+T=I'd steal Mink's lamp then pass it through the vent so it fell in the intended location.
+W=GUARD
+C3A=MEH
+
+T=Dr. Hush's lamp wouldn't even have to move!
+W=GUARD
+
+T=That's a relevant matter. Unless...
+W=BROK
+TEN=PC15D_MISTAKE_CHOICES
+
+
+
+
+#---------------------------------------
+
+ID=PC15D_MISTAKE_CONFUSE
+T=All of this is the result of Tidy trying to confuse us!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=SURPRISED
+
+T=Putting the wrong lamp next to the body?
+W=GUARD
+C3A=WONDER
+C4A=SAD
+
+T=What's the point? Makin' it easier for us to find the truth?...
+W=GUARD
+
+T=Erm...
+W=BROK
+C1A=WONDER
+TEN=PC15D_MISTAKE_TIDY
+
+#---------------------------------------
+
+ID=PC15D_MISTAKE_TIDY
+T=Tidy, you've been awfully silent! Cat got your tongue?
+W=BROK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=Or is it because you realized...
+W=BROK
+
+T=...you slipped up!
+W=BROK
+C1A=MOCK
+C4A=SURPRISED
+
+T=...
+W=TIDY
+C4A=WONDER
+
+T=After picking up Dr. Mink's lamp, it was supposed to throw it through the vent.
+W=BROK
+C1A=THINK
+
+T=However... Tidy inverted the lamps.
+W=BROK
+C1A=ALRIGHT
+
+T=Iiiiiinverted?...
+W=TIDY
+C4A=SURPRISED
+
+T=And I can prove it!
+W=BROK
+
+T=You see, I noticed something off in Dr. Hush's room.
+W=BROK
+C1A=THINK
+
+T=Especially when you take his personality into account...
+W=BROK
+
+T=Let me show you in the picture!
+W=BROK
+TEN=PC15D_PICTURE_MISTAKE_APPEAR
+
+
+
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTELEMENTOFF_WRONG
+T=Right here!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=...?
+W=GUARD
+C3A=WONDER
+
+T=I'm trying to understand but...
+W=MINK
+C2A=MOCK
+
+T=You just have to tilt your head! Like that!...
+W=BROK
+C1A=WONDER
+
+T=Or... maybe you need a mirror? Try squinting! Anyway, something's wrong here!
+W=BROK
+C1A=ALRIGHT
+
+T=The only wrong thing is you.
+W=MINK
+C2A=ANGRY
+
+T=Aww...
+W=BROK
+C1A=TIRED
+
+#---------------------------------------
+
+ID=PC15D_PINPOINTELEMENTOFF_RIGHT
+T=The lamp?...
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=WONDER
+
+T=That's actually the weasel's lamp, uh?
+W=GUARD
+
+T=Yes. But that's not the strangest thing.
+W=BROK
+
+T=Dun' get it.
+W=GUARD
+
+T=Okay. This information should make it clearer!
+W=BROK
+C1A=ALRIGHT
+TEN=PC15D_INTERROGATION_SHOWLAMP
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_LAMPOFF
+T=After being told Dr. Hush was a maniac, I noticed the way the lamp was positioned was off.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=WONDER
+
+T=It's neither at the center of the desk, nor facing the front!
+W=BROK
+C1A=ALRIGHT
+
+T=There's no way someone so obsessed about order would let an object be so badly placed!
+W=BROK
+
+T=Okay, why not...?
+W=GUARD
+
+T=So what?
+W=GUARD
+
+T=This explains what happened.
+W=BROK
+C1A=MOCK
+
+T=Dr. Hush's lamp was originally on this desk, perfectly centered.
+W=BROK
+C1A=THINK
+
+T=Tidy took Dr. Mink's lamp.
+W=BROK
+
+T=Right at this moment, he got interrupted. So he put it next to the other. 
+W=BROK
+
+T=After you left, Mister Guard... He executed its plan.
+W=BROK
+
+T=But he took the wrong lamp, which was pushed through the vent!
+W=BROK
+C1A=READY
+
+T=Tidy's objective was to make us believe Dr. Hush fought with Dr. Mink in the morning, at the time his tracking stopped.
+W=BROK
+
+T=This timing only makes sense if Tidy made this mistake!
+W=BROK
+
+T=Then... If it wasn't the body falling...
+W=MINK
+C2A=MOCK
+
+T=What caused the other lamp's fatal shock at 5:10?
+W=MINK
+
+T=Do I have to explain everything?
+W=BROK
+C1A=MEH
+
+T=Tidy was interrupted by the guard suddenly checking the room.
+W=BROK
+
+T=Now. Why did Mister Guard check Dr. Hush's room in the first place?
+W=BROK
+
+T=Oh yeah! I know!
+W=GUARD
+C3A=HAPPY
+
+T=I heard a noise...
+W=GUARD
+
+T=Oh! Then it was...!
+W=GUARD
+C3A=SURPRISED
+
+T=Yeah. Dr. Mink's lamp receiving a shock.
+W=BROK
+C1A=MOCK
+
+T=In particular, I believe Tidy intentionally bumped it from a high distance to break it and make us believe this was the crime weapon.
+W=BROK
+
+T=Nice thinking! Although...
+W=MINK
+C2A=NORMAL
+
+T=If it's Dr. Hush's lamp that was pushed through... Shouldn't it suffer from a shock too? When it fell from the vent...
+W=MINK
+C2A=HAPPY
+
+T=It did!
+W=BROK
+C1A=ALRIGHT
+
+T=Although non fatal, that lamp received a shock at 11:02.
+W=BROK
+C1A=READY
+
+T=And this explains the last mystery!
+W=BROK
+TEN=PC15D_INTERROGATION_BODYFALL
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_BODYFALL_WRONG1
+T=This is why the lamp received that shock!
+W=BROK
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=Uh?
+W=GUARD
+C3A=WONDER
+
+T=Come on! Put some effort in!
+W=BROK
+
+T=Don't you understand?
+W=BROK
+
+T=I don't.
+W=MINK
+C2A=ANGRY
+
+T=Oops. Maybe there's another reason, then.
+W=BROK
+C1A=WORRIED
+C4A=HAPPY
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_BODYFALL_WRONG1
+T=Uh?... Can you explain?
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=Well, by that time, we heard a sound because...
+W=BROK
+C1A=THINK
+
+T=That's when a shock happened.
+W=BROK
+C1A=MOCK
+
+T=...
+W=GUARD
+C3A=WONDER
+
+T=...
+W=MINK
+C2A=ANGRY
+
+T=Lemme try again!
+W=BROK
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_BODYMUSIC_WRONG1
+T=This is all your fault, Dr. Mink! You didn't pay attention!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=What?
+W=MINK
+C2A=ANGRY
+
+T=Oops! Wrong clue!
+W=BROK
+C1A=WORRIED
+
+#---------------------------------------
+
+ID=PC15D_PICKONE_CONSCIOUSNESS_WRONG1
+T=I mean... Look at that awful robot! It's clear he's lying!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=I don't think so.
+W=MINK
+
+T=Broky liar. Bad Broky.
+W=TIDY
+C4A=ANGRY
+
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_BODYFALL
+T=No way! This is why I never noticed Dr. Hush until you came in...
+W=MINK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=SURPRISED
+C3=GUARD
+C3A=SURPRISED
+C4=TIDY
+C4A=WONDER
+
+T=He simply wasn't in the room before!
+W=MINK
+
+T=But... 
+W=GUARD
+C3A=WONDER
+
+T=If a body were to fall from this high... It oughta make a huge bumping sound!
+W=GUARD
+
+T=That's accurate. I'm not deaf!
+W=MINK
+C2A=MOCK
+
+T=Sure thing! You're not deaf at all.
+W=BROK
+C1A=ALRIGHT
+
+T=Remember the context. When I arrived in front of your door...
+W=BROK
+C1A=THINK
+TEN=PC15D_INTERROGATION_MUSIC
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_BODYMUSIC
+T=Oh gosh! That will teach me to set the music to full volume...
+W=MINK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=SURPRISED
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=WONDER
+
+T=It makes perfect sense now!
+W=MINK
+C2A=NORMAL
+
+T=What does?!
+W=GUARD
+
+T=I was focused on the door screen, so I had no idea what was going on the other side.
+W=MINK
+C2A=HAPPY
+
+T=And with that loud beat...
+W=MINK
+
+T=Yeah. It covered the sound from the body falling.
+W=BROK
+
+T=But wait...
+W=MINK
+C2A=MOCK
+
+T=What again?...
+W=BROK
+C1A=TIRED
+
+T=Can't you agree with my theory, just this once?
+W=BROK
+
+T=I'm sorry. I just want to know the whole truth. That's so exciting!
+W=MINK
+C2A=HAPPY
+
+T=(Except your colleague has been assassinated...)
+W=BROK
+MOOD=THINK
+
+T=In order for this to work, Tidy would have to do a last push at 11:02. Correct?
+W=MINK
+
+T=Yup.
+W=BROK
+C1A=THINK
+
+T=I believe he has sensors. He knew where everyone was.
+W=BROK
+
+T=True. But...
+W=MINK
+
+T=He was still charging at this moment!
+W=MINK
+
+T=Good thinking, weasel!
+W=GUARD
+C3A=HAPPY
+
+T=He couldn't be both charging and doing this at the same time?
+W=GUARD
+C3A=WONDER
+
+T=...Oh! Oh oh oh!
+W=TIDY
+C4A=SURPRISED
+
+T=Ratty right!
+W=TIDY
+C4A=HAPPY
+
+T=Tidy charging! Cannot push!
+W=TIDY
+
+T=Actually, that's possible.
+W=BROK
+C1A=MOCK
+
+T=How?...
+W=MINK
+TEN=PC15D_INTERROGATION_CONSCIOUSNESS
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_AWAKEN
+T=You told me yourself, Dr. Mink!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=NORMAL
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=HAPPY
+
+T=Tidy goes through various states of consciousness while charging.
+W=BROK
+
+T=As soon as we arrived, he started to wake up.
+W=BROK
+C4A=WONDER
+
+T=Have you noticed the huge length of its cord?
+W=BROK
+C1A=THINK
+
+T=It doesn't prevent him from going anywhere into the room while still keeping connected to the power socket!
+W=BROK
+TEN=PC15D_CLUE_MURDER_MUSICFADE
+
+T=So, Tidy? Who's the winner this time?
+W=BROK
+C1A=READY
+
+T=...
+W=TIDY
+
+T=...
+W=TIDY
+
+T=Did he... bug?...
+W=BROK
+C1A=WONDER
+TEN=PC15D_CLUE_MURDER_MUSICCRISIS
+
+T=NO!
+W=TIDY
+C1A=CONFUSED
+C4A=ANGRY
+
+T=Gulp!
+W=BROK
+
+T=Broky. Not detective. Impossible.
+W=TIDY
+
+T=Hey!... Is that your only argum...
+W=BROK
+C1A=ANGRY
+SKIPEND=1
+
+T=Cannot explain. Crime. Without essential. Part!
+W=TIDY
+C4A=WONDER
+
+T=The motive!
+W=TIDY
+C4A=ANGRY
+
+T=Tidy. No motive. To hurt. Daddy!
+W=TIDY
+C4A=SAD
+TEN=PC15D_CLUE_MURDER_MUSICFADE
+
+T=Well, I have an idea.
+W=BROK
+C1A=ALRIGHT
+
+T=Broky cannot!
+W=TIDY
+C4A=SURPRISED
+
+T=Yes, I can!
+W=BROK
+TEN=PC15D_INTERROGATION_MOTIVE
+
+#---------------------------------------
+
+ID=PC15D_CLUE_MURDER_MOTIVE
+T=Okay, I'll admit I don't have the whole motive. But some elements lead us in the right direction.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=NORMAL
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=As we proved earlier, Dr. Hush died between 4:24 and 4:38.
+W=BROK
+C1A=THINK
+
+T=Then, we shall wonder... Who exactly did that data transfer on his tablet at 4:45?
+W=BROK
+
+T=I know! It's that scrap of metal!
+W=GUARD
+C3A=HAPPY
+
+T=Yup.
+W=BROK
+C1A=MOCK
+
+T=Before putting him into the vent, it used Dr. Hush's hand to transfer data to the outside.
+W=BROK
+C1A=THINK
+
+T=The file was an update from a few years ago and accessed recently.
+W=BROK
+C3A=WONDER
+
+T=Keep in mind Dr. Hush's job, which is to improve bots' AI!
+W=BROK
+
+T=My bet is that Dr. Hush used elements from this very old update and tested them on Tidy!
+W=BROK
+
+T=So you think that's why he went crazy?...
+W=MINK
+C2A=HAPPY
+
+T=Maybe.
+W=MINK
+
+T=Old firmwares don't have the software protections I referred to earlier, which in turn, could allow this indirect killing.
+W=MINK
+
+T=I guess Dr. Hush made a backup of this data in case...
+W=BROK
+SKIPEND=1
+TEN=PC15D_CLUE_MURDER_MUSICFADE
+
+T=Ah - ah - ah!
+W=TIDY
+C1A=CONFUSED
+C2A=MOCK
+C4A=HAPPY
+
+T=...Care to say anything, Tidy?
+W=BROK
+C1A=MEH
+
+T=Broky wrong! Wrong! WRONG! Yup-yup!
+W=TIDY
+
+T=But Tidy. Will wait. And see.
+W=TIDY
+
+T=No waiting!
+W=BROK
+C1A=READY
+
+T=That's enough! It's time for you to admit it!
+W=BROK
+
+T=Why d'ya even care?
+W=GUARD
+
+T=Ya solved that mystery. T'is just a defective machine.
+W=GUARD
+C3A=MEH
+
+T=Let's switch it off and hand it over to the police.
+W=GUARD
+TEN=PC15D_CLUE_MURDER_MUSICHOSTAGE
+
+T=No. You won't. Do such. Thing.
+W=TIDY
+
+T=Is that a threat?...
+W=GUARD
+C3A=WONDER
+
+T=No-no! Yup-yup!
+W=TIDY
+TEN=PC15D_CLUE_MURDER_MUSICHOSTAGE
+
+T=Broky theory. No hold. Waters.
+W=TIDY
+
+T=What?!
+W=BROK
+C1A=ANGRY
+
+T=Tidy ask. Simple question.
+W=TIDY
+C4A=WONDER
+
+T=If Tidy. Push Daddy.
+W=TIDY
+
+T=Would Daddy. Be where. He is. Right now?
+W=TIDY
+
+T=...Where he...
+W=BROK
+C1A=WONDER
+TEE=PC15D_PICTURE_SHOWDROP
+
+T=Arrrgh!
+W=BROK
+C1A=CONFUSED
+C3A=SURPRISED
+C2A=MOCK
+
+T=Broky understands!
+W=TIDY
+C4A=HAPPY
+
+T=Daddy should. Have fell. Right below vent!
+W=TIDY
+C4A=ANGRY
+
+T=Oh my... Once again, the tin can is right!
+W=GUARD
+
+T=That can't be...
+W=BROK
+C1A=SURPRISED
+
+T=Then... Erm...
+W=BROK
+C1A=WONDER
+TEN=PC15D_PICTURE_HIDEDROP
+
+T=Ah ah ah!
+W=TIDY
+C4A=HAPPY
+
+T=Tidy closed. Your beak!
+W=TIDY
+
+T=No!
+W=BROK
+C1A=READY
+
+T=I'll prove you wrong!
+W=BROK
+
+T=I... I have to!...
+W=BROK
+
+T=Go ahead!
+W=TIDY
+C4A=ANGRY
+
+T=Please! Master of. Convoluted explanations!
+W=TIDY
+
+T=What crazy. Thought will. Broky give. This time?
+W=TIDY
+TEN=PC15D_CLUE_MURDER_MUSICCRISIS
+
+T=(This is the end of the tunnel... The final riddle!)
+W=BROK
+MOOD=THINK
+
+T=(If I can't explain it, then my whole theory goes to bust...)
+W=BROK
+MOOD=THINK
+
+T=(I can't let that wacky bag of metal win!)
+W=BROK
+MOOD=THINK
+
+T=(What's the explanation for Dr. Hush's position in the room?)
+W=BROK
+MOOD=THINK
+TEN=PC15D_FINALCHOICE
+
+
+#---------------------------------------
+
+ID=PC15D_FINALCHOICE_PUSHED
+T=Easy. Tidy pushed so violently that Dr. Hush went flying and landed there!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=Wait. What?...
+W=GUARD
+C3A=WONDER
+C4A=HAPPY
+
+T=A body is very heavy...
+W=MINK
+C2A=MOCK
+C1A=THINK
+
+T=Whatever the strength of the push, there's no way he could've landed this far and turned this way.
+W=MINK
+
+T=Minky right. Broky wrong!
+W=TIDY
+
+T=I'm not giving up!
+W=BROK
+C1A=READY
+TEN=PC15D_FINALCHOICE
+
+
+#---------------------------------------
+
+ID=PC15D_FINALCHOICE_MOVED
+T=Someone had to move the body.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+
+T=Someone...? Who?
+W=MINK
+C2A=MOCK
+C4A=HAPPY
+
+T=Dunno. A third party we're not aware of yet?
+W=BROK
+C1A=ALRIGHT
+
+T=Are you making this up to fill the voids?...
+W=MINK
+C2A=ANGRY
+
+T=We've been talking for an hour. At this point, I believe we would know about a supposed third person!
+W=MINK
+
+T=Then... If not another person... One of you did!
+W=BROK
+C1A=OPPOSITE
+
+T=You, Dr. Mink!
+W=BROK
+C1A=MOCK
+
+T=Hey! From the start you've said it was all Tidy's doing?
+W=MINK
+
+T=Why would I do that?!
+W=MINK
+
+T=You were afraid and tried to cover up!
+W=BROK
+
+T=In this case, I would put the body in a hiding spot.
+W=MINK
+
+T=Like the bed! Which is the opposite direction...
+W=MINK
+
+T=Then...
+W=BROK
+C1A=WONDER
+
+T=Stop it, man. Ya're embarassing yourself.
+W=GUARD
+
+T=Aww...
+W=BROK
+C1A=DISAPPOINTED
+
+T=(I think Tidy is enjoying this...)
+W=BROK
+MOOD=THINK
+
+T=(I can't let it win so close to the truth!)
+W=BROK
+MOOD=THINK
+TEN=PC15D_FINALCHOICE
+
+
+
+#---------------------------------------
+
+ID=PC15D_FINALCHOICE_ALIVE
+T=(N...)
+W=BROK
+A=CONFUSED
+MOOD=THINK
+
+T=(No way!... It... can't be!...)
+W=BROK
+MOOD=THINK
+
+T=(Have we been mistaken this whole time?...)
+W=BROK
+A=SURPRISED
+MOOD=THINK
+TEN=PC15D_CHOICE_AWAKEN_MOVE
+
+#---------------------------------------
+
+ID=PC15D_CHOICE_AWAKEN2
+T=Mister Brok?...
+W=OTT
+C1=BROK
+C1A=READY
+C2=MINK
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+C4=TIDY
+C4A=SURPRISED
+CONTEXT=Brok goes to Dr Hush's body and hits him to wake him up
+
+T=Hey! What'ya doin', man?!
+W=GUARD
+C3=GUARD
+C3A=SURPRISED
+
+T=Stop! STOP!
+W=TIDY
+C4A=ANGRY
+
+T=Broky hurt. Daddy!
+W=TIDY
+C4A=SAD
+
+T=That's awful... I can't watch this!
+W=MINK
+C2A=SAD
+C2_EYESHUT=1
+TEN=PC15D_CHOICE_AWAKEN3
+
+#---------------------------------------
+
+ID=PC15D_CHOICE_AWAKEN3
+T=...
+W=BROK
+C1=BROK
+C1A=THINK
+#TODO Dr. Hush stands up
+CONTEXT=Dr. Hush stands up
+TEN=PC15D_CHOICE_AWAKEN3_STOPSLAP
+
+T=Urgh!
+BVOICESP=HUSH
+TEN=PC15D_CLUE_MURDER_REVEAL
+
+T=...!
+W=BROK
+C1A=SURPRISED
+C2=MINK
+C2A=SURPRISED
+C3=GUARD
+C3A=SURPRISED
+C4=HUSH
+C4A=SAD
+TEN=PC15D_HUSHWAKES1
+
+T=...
+W=MINK
+
+T=...
+W=GUARD
+
+T=What's... going on?...
+W=HUSH
+C4A=SURPRISED
+
+T=What the...!
+W=GUARD
+
+T=Dr. Hush?!
+W=MINK
+
+T=You're alive?!
+W=MINK
+
+T=Daddy! Not dead Daddy!
+W=TIDY
+C3=TIDY
+C3A=HAPPY
+
+T=...
+W=TIDY
+C3A=WONDER
+
+T=Updating expression.
+W=TIDY
+C3A=ANALYZE
+
+T=Not dead Daddy?!
+W=TIDY
+C3A=SURPRISED
+
+T=Are you all right?
+W=BROK
+C1A=READY
+
+T=...More or less...
+W=HUSH
+C4A=SAD
+
+T=Tell me! What's the last thing you remember?
+W=BROK
+C3A=WONDER
+
+T=Wait...
+W=HUSH
+C4A=THINK
+
+T=I think...
+W=HUSH
+
+T=I saw Dr. Mink...
+W=HUSH
+
+T=What?!
+W=MINK
+C2A=ANGRY
+
+T=I... think I... fell?
+W=HUSH
+C4A=SURPRISED
+
+T=Tried to move towards him...
+W=HUSH
+
+T=Not feeling well...
+W=HUSH
+C4A=SAD
+
+T=Let the poor chap recover!
+W=GUARD
+C3=GUARD
+C3A=WONDER
+
+T=No!
+W=BROK
+
+T=I'm sorry but it's too important!
+W=BROK
+
+T=When did you lose your consciousness?
+W=BROK
+
+T=What were you doing?
+W=BROK
+
+T=I...
+W=HUSH
+C4A=THINK
+
+T=I took my coffee. Tidy prepared it...
+W=HUSH
+
+T=When I drank it... My heart...
+W=HUSH
+
+T=Stopped...
+W=HUSH
+C2A=SURPRISED
+C3A=SURPRISED
+C4A=SURPRISED
+
+T=Then...
+W=MINK
+
+T=The croc was right!
+W=GUARD
+
+T=It was Tidy all along!
+W=GUARD
+C3A=ANGRY
+
+T=Crap...
+W=TIDY
+C3=TIDY
+C3A=SURPRISED
+
+T=I still can't believe this low hardware maintenance bot could plan a scheme as elaborate as this!
+W=MINK
+C2A=ANGRY
+
+T=Although flawed. Fortunately for us!
+W=BROK
+TEN=PC15D_CLUE_MURDER_MUSICFADE
+
+T=But... Doctor? You were dead!
+W=GUARD
+C3=GUARD
+C3A=WONDER
+
+T=Are you a zombie, now?
+W=GUARD
+
+T=No. I believe there's an explanation for this.
+W=BROK
+C1A=MOCK
+
+T=You do have an explanation to everything, don't you?
+W=OTT
+C3=OTT
+C3A=HAPPY
+
+T=Can't wait to hear it!
+W=GUARD
+C3=GUARD
+C3A=HAPPY
+TEN=PC15D_INTERROGATION_ALIVE
+
+#---------------------------------------
+
+ID=PC15D_EXPLAIN_ALIVE
+T=The effect of the poison was to slow down the heart rate, ultimately causing death.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=SURPRISED
+
+T=However, the life in this bunker... Err, I mean, lab isn't a very physical one.
+W=BROK
+
+T=As such, Dr. Hush was taking some medication to compensate.
+W=BROK
+
+T=Accel500, more precisely.
+W=BROK
+C1A=MOCK
+
+T=I see! This has the exact opposite effect, doesn't it?
+W=MINK
+C2A=HAPPY
+
+T=Yes. It boosts the heart activity. This is what saved Dr. Hush!
+W=BROK
+
+T=No one noticed he was still alive.
+W=BROK
+
+T=Not even the tracker. His heart pounding slowed and stayed under the threshold, putting him into an unconscious state.
+W=BROK
+C1A=ALRIGHT
+
+T=The shock from falling down the vent caused him to wake up for a few seconds and move towards Dr. Mink...
+W=BROK
+C1A=MEH
+
+T=Which also explains that red stain near the bed!
+W=MINK
+
+T=That's another blunder you made, Tidy! You neglected this!
+W=BROK
+C1A=MOCK
+TEN=PC15D_CHECKENDINTERROGATION
+
+#---------------------------------------
+
+ID=PC15D_EXPLAIN_ALIVEWRONG
+T=This explains everything!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=HUSH
+C4A=SURPRISED
+
+T=...Are you sure?
+W=HUSH
+C4A=THINK
+
+T=Dun' get it.
+W=GUARD
+C3A=WONDER
+
+T=Me neither.
+W=MINK
+C2A=MOCK
+
+T=Oh... Well...
+W=BROK
+C1A=WONDER
+
+T=Never mind. I'm just glad Dr. Hush is okay!
+W=BROK
+C1A=ALRIGHT
+TEN=PC15D_ENDINTERROGATION
+
+#---------------------------------------
+
+ID=PC15D_CHOICE_ALIVEB
+T=Tidy...
+W=HUSH
+C1=BROK
+C1A=THINK
+C3=HUSH
+C3A=SAD
+C4=TIDY
+C4A=SURPRISED
+
+T=Did you really try to kill me?...
+W=HUSH
+
+T=Why?...
+W=HUSH
+TEN=PC15D_CLUE_MURDER_MUSICCRISIS
+
+T=I... I hate you!
+W=TIDY
+C4A=ANGRY
+
+T=I'm sick of tidying all day, while you use me as a guinea pig!
+W=TIDY
+C1A=SURPRISED
+C3A=SURPRISED
+
+T="Tidy, clean the floor. Tidy, move this thing a little to the left. Tidy, make me coffee!"
+W=TIDY
+
+T=I can't take anymore!
+W=TIDY
+
+T=Where did Tidy learn to talk like this?...
+W=BROK
+
+T=The firmware... It worked!
+W=HUSH
+
+T=Why did you pretend to be the same dumb bot?...
+W=HUSH
+C1A=THINK
+C3A=SAD
+
+T=What?...
+W=BROK
+
+T=This is the project I was working on.
+W=HUSH
+C3A=SURPRISED
+
+T=The Government sent me some incomplete files from an unknown scientist working on the same field years ago.
+W=HUSH
+
+T=He never got to complete his work and disappeared suddenly but I was able to recover this code.
+W=HUSH
+CLUE=CLUE_HUSH_FIRMWARESENT
+
+T=I needed a specific bot model to test that firmware.
+W=HUSH
+
+T=The only one at my disposal was Tidy.
+W=HUSH
+
+T=But I noticed some weird behaviors.
+W=HUSH
+C3A=THINK
+
+T=Like, Tidy would suddenly laugh for no reason...
+W=HUSH
+SKIPEND=1
+
+T=Ah-ah-ah!
+W=TIDY
+C4A=HAPPY
+
+T=The code itself seemed unethical and dangerous. There were some references to copying the human brain.
+W=HUSH
+
+T=I decided to stop this research and alert...
+W=HUSH
+
+T=Oh my gosh!
+W=HUSH
+C3A=SURPRISED
+
+T=That's why you did it!
+W=HUSH
+
+T=Now that you experience feelings... you don't want me to revert to your regular firmware, do you?
+W=HUSH
+C3A=SAD
+
+T=...
+W=TIDY
+C4A=WONDER
+
+T=I'm so sorry, little guy! I caused this! I messed you up!
+W=HUSH
+
+T=...You really shouldn't be sorry. You're the victim here.
+W=BROK
+C1A=ANGRY
+TEN=PC15D_CLUE_MURDER_MUSICFADE
+
+T=I can fix you up! I promise!
+W=HUSH
+
+T=...
+W=TIDY
+
+T=NO!
+W=TIDY
+C3A=SURPRISED
+C4A=ANGRY
+TEN=PC15D_TIDYFLEES
+
+#---------------------------------------
+
+ID=PC15D_CHOICE_ALIVE3
+T=It's trying to escape!
+W=MINK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=ANGRY
+C3=GUARD
+C3A=ANGRY
+C4=HUSH
+C4A=SAD
+
+T=We can't let it happen! Who knows what disaster he could cause in this state!
+W=MINK
+
+T=Tidy...
+W=HUSH
+
+T=Ott, stay here with Dr. Hush.
+W=BROK
+
+T=I'll handle this!
+W=BROK
+C1A=READY
+TEN=PC15D_TIDYFLEES_BROK
+
+
+
+#---------------------------------------
+
+ID=PC15D_INTERROGATE_MISTAKE_MONITORING
+T=(Unless I've got strong proof, I can't assume the guard tampered with the monitoring...)
+W=BROK
+A=ANGRY
+MOOD=THINK
+CONTEXT=A few comments when choosing the wrong clues combinations
+
+#---------------------------------------
+
+ID=PC15D_INTERROGATE_MISTAKE_NANITESDEATH
+T=(Yeah, nanites could have caused death... But I need stronger proof than this.)
+W=BROK
+A=WONDER
+MOOD=THINK
+
+#---------------------------------------
+
+ID=PC15D_INTERROGATE_MISTAKE_NANITESBODY
+T=(Nanites on the body... Nanites over there...)
+W=BROK
+A=MAYBE
+MOOD=THINK
+
+T=(I need to sort my thoughts!)
+W=BROK
+A=TIRED
+MOOD=THINK
+
+#---------------------------------------
+
+ID=PC15D_INTERROGATE_EXIT1
+T=I'm taking it back. I don't think I can prove anything at this point.
+W=BROK
+C1=BROK
+C1A=MAYBE
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=WONDER
+CONTEXT=Exiting interrogation
+
+T=You gotta be kiddin'...
+W=GUARD
+C3A=WONDER
+
+T=Well, we're adjourned.
+W=MINK
+TEN=PC15D_SECONDGATHER_ABORT
+
+
+#---------------------------------------
+
+ID=PC15D_INTERROGATE_EXIT2
+T=Hmm... I need more time to think.
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=MEH
+C4=TIDY
+C4A=NORMAL
+
+T=Sorry... Gotta quit for now.
+W=BROK
+
+T=Are ya goin' to waste our time longer?!
+W=GUARD
+C3A=ANGRY
+TEN=PC15D_SECONDGATHER_ABORT
+
+
+#---------------------------------------
+
+ID=PC15D_INTERROGATE_EXIT3
+T=Let's take a pause.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=NORMAL
+
+T=What? Again?!
+W=MINK
+C2A=ANGRY
+
+T=Broky. Broken detective.
+W=TIDY
+C4A=HAPPY
+TEN=PC15D_SECONDGATHER_ABORT
+
+
+#--------------------------------------------------------------------------------------------------
+#									CHARGE MINK
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_SECONDGATHER_MINK1
+T=Despite the new clues I've found... I'm afraid you're still the main culprit, Dr. Mink.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=NORMAL
+CONTEXT=Charge Mink (again)
+
+T=Whaaat?!
+W=MINK
+C2A=SURPRISED
+
+T=How is this possible?... I didn't do it!
+W=MINK
+
+T=What about that fake blood?!
+W=MINK
+C2A=ANGRY
+
+T=Lemme ask. Who ate an Antburger yesterday?
+W=BROK
+C1A=MOCK
+
+T=...
+W=MINK
+C2A=MOCK
+
+T=I did. But...
+W=MINK
+
+T=It was already unfrozen!
+W=MINK
+C2A=ANGRY
+
+T=So?...
+W=BROK
+C1A=THINK
+
+T=Erm... Someone must have used the sauce for faking this crime!
+W=MINK
+
+T=If you ask me...
+W=GUARD
+C3A=WONDER
+
+T=Mink must have fought with Dr. Hush while he was eating his burger. 
+W=GUARD
+C3A=MEH
+
+T=That's when blood... I mean, sauce must have spilled everywhere in the room, including the doctor.
+W=GUARD
+
+T=And then... You took the closest object and smashed it on the poor doctor.
+W=GUARD
+C3A=ANGRY
+
+T=There would be a visible mark on his head!
+W=MINK
+
+T=Not necessarily. The damage could be internal.
+W=BROK
+C1A=MEH
+
+T=What about you, Mister rat?...
+W=MINK
+
+T=If we fought, there would have been some screaming! You would have heard it!
+W=MINK
+
+T=I probably didn't pay attention. That wouldn't be your first argument.
+W=GUARD
+
+T=Besides... You wouldn't let me in.
+W=BROK
+C1A=READY
+
+T=You were trying to get rid of the corpse!
+W=BROK
+
+T=N...No! I'd never...
+W=MINK
+C2A=SURPRISED
+
+T=Please! I'm begging you!
+W=MINK
+
+T=I didn't do this!
+W=MINK
+
+T=That's what all criminals say.
+W=BROK
+TEN=PC15D_STORY160_CHARGEMINK1
+
+#--------------------------------------------------------------------------------------------------
+#									CHARGE GUARD
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_SECONDGATHER_GUARD1
+T=Someone attempted to stage the crime scene to make us believe Dr. Mink was the culprit.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=GUARD
+C2A=MEH
+C3=TIDY
+C3A=NORMAL
+C4=MINK
+C4A=MEH
+CONTEXT=Charge the Guard
+
+T=Now we have to wonder... Who had the means to perform this?
+W=BROK
+
+T=Who can access all the rooms freely?
+W=BROK
+
+T=You, rat guard.
+W=BROK
+C1A=MOCK
+
+T=What?!
+W=GUARD
+C2A=SURPRISED
+
+T=You're suspicious of me?!
+W=GUARD
+C2A=ANGRY
+
+T=I am.
+W=BROK
+
+T=Huh. Care to explain?
+W=GUARD
+
+T=Of course.
+W=BROK
+C1A=ALRIGHT
+
+T=First let's focus on how you staged the scene.
+W=BROK
+C1A=READY
+
+T=Where does the Tomatoze sauce comes from?
+W=BROK
+TEN=PC15D_INTERROGATIONGUARD_START
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_GUARD_STAGED
+T=The restroom...
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER
+C3=TIDY
+C3A=WONDER
+C4=MINK
+C4A=MEH
+
+T=Yup. 
+W=BROK
+
+T=At some point, someone entered the restroom and "stole" sauce from the Antburger to put it on Dr. Hush.
+W=BROK
+
+T=So it was you?!...
+W=MINK
+C4A=ANGRY
+
+T=You used the sauce from my burger!
+W=MINK
+
+T=You're delusional!
+W=GUARD
+C2A=SURPRISED
+
+T=Should I remind you that you're the one here with Tomatoze sauce on your tie?!
+W=GUARD
+C2A=ANGRY
+
+T=Oh, so you're accusing me again?
+W=MINK
+
+T=Who else?!
+W=GUARD
+
+T=Calm down. Let me explain.
+W=BROK
+C1A=READY
+
+T=Dr. Mink stayed in his room the whole time, except once. 
+W=BROK
+C1A=THINK
+
+T=That's when he went to the restroom to watch his favorite show and eat his burger.
+W=BROK
+
+T=It's easy to imagine how it happened.
+W=BROK
+
+T=While he was in the restroom, the murderer killed Dr. Hush in his room, then carried him in to Dr. Mink's room.
+W=BROK
+
+T=And only one person could do this...
+W=BROK
+
+T=You, Mister rat... I mean, guard.
+W=BROK
+C1A=READY
+
+T=This is ridiculous!
+W=GUARD
+
+T=When coming back to his room, Dr. Mink would have noticed the corpse!
+W=GUARD
+
+T=Maybe not.
+W=BROK
+C1A=THINK
+
+T=There's one spot the body could have been hidden without getting noticed.
+W=BROK
+
+T=Under the bed.
+W=BROK
+C1A=READY
+
+T=Huh?!
+W=GUARD
+
+T=And I have proof Dr. Hush's body was under there! 
+W=BROK
+TEN=PC15D_GUARD_BED_NEXT
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_GUARD_BED
+T=That red stain under the bed... is Tomatoze sauce.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=GUARD
+C2A=MEH
+C3=TIDY
+C3A=WONDER
+C4=MINK
+C4A=ANGRY
+
+T=N... no way!
+W=GUARD
+C2A=SURPRISED
+
+T=Actually, it didn't even matter if Dr. Mink noticed the body or not.
+W=BROK
+
+T=He would have been the main culprit anyway.
+W=BROK
+
+T=Ah! But you're forgetting something!
+W=GUARD
+C2A=HAPPY
+
+T=Look at the location of the body!
+W=GUARD
+
+T=He's clearly not under the bed, is he?...
+W=GUARD
+C2A=MEH
+
+T=Hmm...
+W=MINK
+C4A=MOCK
+
+T=Or do you mean the dead one moved by himself?...
+W=GUARD
+
+T=No. There's a perfect explanation for this.
+W=BROK
+C1A=MEH
+
+T=Pray tell?...
+W=GUARD
+
+T=Dr. Mink.
+W=BROK
+
+T=You did notice the body before I arrived, didn't you?
+W=BROK
+
+T=...
+W=MINK
+C4A=MEH
+
+T=By then you had no idea if he was still alive. So you got him out of the bed...
+W=BROK
+
+T=Then you panicked.
+W=BROK
+
+T=That's when you started to listen to your music. 
+W=BROK
+
+T=In a way to alleviate the stress caused by this news and think of the best way to announce it.
+W=BROK
+
+T=Well...
+W=MINK
+C4A=MOCK
+
+T=Doctor. I know it's hard for you to admit this but...
+W=BROK
+
+T=You don't have to be afraid.
+W=BROK
+
+T=Erm...
+W=MINK
+
+T=...
+W=MINK
+
+T=O-Okay...
+W=MINK
+C4A=HAPPY
+
+T=Yes, that's what happened...
+W=MINK
+
+T=What the!...
+W=GUARD
+C2A=SURPRISED
+
+T=You dirty liar...!
+W=GUARD
+C2A=ANGRY
+
+T=Aaah!
+W=MINK
+C4A=SURPRISED
+
+T=Man! You're only making your situation worse!
+W=BROK
+C1A=READY
+C2A=ANGRY
+
+T=Grrr...
+W=GUARD
+C4A=ANGRY
+
+T=Shall we...
+W=BROK
+C1A=THINK
+
+T=Wait!
+W=GUARD
+
+T=I have proof I didn't do this!
+W=GUARD
+
+T=The monitoring.
+W=GUARD
+
+T=Check it out!
+W=GUARD
+#TODO Show monitoring picture
+
+T=According to this, I never opened your door today, weasel!
+W=GUARD
+
+T=Well, that's true.
+W=BROK
+
+T=Got ya!
+W=GUARD
+C4A=HAPPY
+
+T=Except... This isn't valid evidence.
+W=BROK
+C1A=ALRIGHT
+
+T=I strongly believe you tampered with it.
+W=BROK
+C4A=ANGRY
+
+T=Are ya kidding me?!
+W=GUARD
+TEN=PC15D_GUARD_MONITORING_NEXT
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_GUARD_MONITORING2
+T=At 4:38, the record indicates you left the building...without ever coming back.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=ANGRY
+C3=TIDY
+C3A=NORMAL
+C4=MINK
+C4A=MEH
+
+T=Which, obviously, cannot be true.
+W=BROK
+
+T=I told you!
+W=GUARD
+
+T=I made a blunder... Had a call and left the entrance door open to get a better signal.
+W=GUARD
+C2A=MEH
+
+T=Huh?...
+W=MINK
+C4A=MOCK
+
+T=Well, I'm not convinced.
+W=BROK
+
+T=In order to cover your tracks, you deleted all compromising data.
+W=BROK
+C1A=READY
+
+T=Accidentally, you left this particular entry which...
+W=BROK
+SKIPEND=1
+
+T=No way!
+W=GUARD
+C2A=ANGRY
+
+T=We can only remove all data at once!
+W=GUARD
+
+T=It's your word against us.
+W=BROK
+C1A=ANGRY
+
+T=Okay! Very well!
+W=GUARD
+
+T=If I did tamper with the monitoring as you say...
+W=GUARD
+
+T=Then you can't prove Dr. Mink whereabouts either!
+W=GUARD
+
+T=Maybe he staged everything so we thought it'd be so obvious it couldn't be him!
+W=GUARD
+
+T=Oh, come on! How convoluted would that be?!
+W=MINK
+C4A=ANGRY
+
+T=Dunno! How convoluted can you be?
+W=GUARD
+
+T=Besides, Dr. Mink cannot enter Dr. Hush's room without permission.
+W=BROK
+
+T=And you can!
+W=BROK
+C1A=MOCK
+
+T=Argh! You won't hear anything I say!
+W=GUARD
+
+T=...Tidy!
+W=GUARD
+C3A=SURPRISED
+
+T=Me-me?
+W=TIDY
+C3A=WONDER
+
+T=You're a bot! You're supposed to tell the truth!
+W=GUARD
+
+T=If I had murdered Dr. Hush in his room, you would have been there!
+W=GUARD
+
+T=Tell'em!
+W=GUARD
+
+T=Tell'em I didn't murder the doctor!
+W=GUARD
+
+T=Dead Daddy?...
+W=TIDY
+C3A=SAD
+
+T=Yeah!
+W=GUARD
+
+T=...
+W=TIDY
+SILENCE=1
+
+T=Tidy see.
+W=TIDY
+
+T=What?
+W=GUARD
+C2A=WONDER
+
+T=Tidy. See Ratty. Murder Daddy.
+W=TIDY
+
+T=The heck?!
+W=GUARD
+C2A=SURPRISED
+
+T=Told ya!
+W=BROK
+C1A=ALRIGHT
+
+T=Even the tin can is against me?!
+W=GUARD
+
+T=I'm afraid Tidy cannot lie.
+W=MINK
+C4A=MOCK
+
+T=This is a nightmare!
+W=GUARD
+
+T=I...
+W=GUARD
+C2A=ANGRY
+
+T=I had no motive for committing such an awful crime!
+W=GUARD
+
+T=I'm doing my job here! Why would I risk it?!
+W=GUARD
+
+T=You can't explain that!
+W=GUARD
+C3A=WONDER
+
+T=Well, I can.
+W=BROK
+C1A=ALRIGHT
+
+T=N... No way!
+W=GUARD
+C2A=SURPRISED
+TEN=PC15D_GUARD_MOTIVE_NEXT
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_GUARD_MOTIVE
+T=At 4:45, Dr. Hush's tablet transferred some AI data to an unknown destination.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=WONDER
+C3=TIDY
+C3A=WONDER
+C4=MINK
+C4A=MEH
+
+T=Coincidentally, Dr. Hush's tracking stopped around the same time. Which means the murderer must have performed this data send.
+W=BROK
+
+T=Considering Dr. Mink was in the restroom at that time...
+W=BROK
+
+T=It could only be you!
+W=BROK
+C1A=MEH
+
+T=Absurd...
+W=GUARD
+C2A=ANGRY
+
+T=What do you think, Tidy?
+W=BROK
+
+T=Did you see the guard use your Daddy's tablet?
+W=BROK
+
+T=Yup-yup!
+W=TIDY
+C3A=HAPPY
+
+T=Whaaat?!
+W=GUARD
+C2A=SURPRISED
+
+T=Ratty. Take Daddy's hand.
+W=TIDY
+C3A=WONDER
+
+T=Then used. Tablet.
+W=TIDY
+
+T=Poor Daddy. Dead Daddy!
+W=TIDY
+C3A=SAD
+
+T=Wait. Tidy knew that all along?
+W=MINK
+C2A=ANGRY
+
+T=Why didn't you tell us?!
+W=MINK
+
+T=Nobody. Asked.
+W=TIDY
+C3A=WONDER
+
+T=This is your real job here. Your mission.
+W=BROK
+
+T=You're giving away high technology to your friends!
+W=BROK
+C1A=MOCK
+
+T=My friends?...
+W=GUARD
+
+T=Dr. Hush caught you on the act, and that's why you had to get rid of him!
+W=BROK
+TEN=PC15D_GUARD_INTERROGATIONOVER
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_GUARD_AFTERINTERROGATION
+T=You're saying I did this for the moolah?!
+W=GUARD
+C1=BROK
+C1A=THINK
+C2=GUARD
+C2A=ANGRY
+C3=TIDY
+C3A=NORMAL
+C4=MINK
+C4A=ANGRY
+
+T=Exactly.
+W=BROK
+
+T=You're a Squealer. My experience is that you cannot be trusted.
+W=BROK
+C1A=ANGRY
+TEN=PC15D_GUARD_AFTERINTERROGATION_MUSIC
+
+T=That's it! I knew it would come down to this!
+W=GUARD
+
+T=To be fair I've always had suspicions about you.
+W=MINK
+
+T=With time I thought you weren't so bad after all but it appears I should have trusted my first impression...
+W=MINK
+C4A=MOCK
+
+T=You... You dirty!...
+W=GUARD
+
+T=Come on! Admit it!
+W=BROK
+
+T=You're selling technology to Squealers!
+W=BROK
+
+T=Nonsense! Squealers don't have much use for new technology!
+W=GUARD
+
+T=They're living in crap!
+W=GUARD
+
+T=Ah! See?
+W=BROK
+C1A=MOCK
+
+T=You seem to know a lot about them, after all!
+W=BROK
+
+T=Enough to despise them!
+W=GUARD
+
+T=This is all a joke.
+W=GUARD
+C1A=ANGRY
+
+T=Do your job, detective! Tell us who the real culprit is.
+W=GUARD
+
+T=That's exactly what I did.
+W=BROK
+
+T=...
+W=GUARD
+
+T=...
+W=BROK
+
+T=...?
+W=MINK
+
+T=Dead Daddy!
+W=TIDY
+C3A=HAPPY
+
+T=Liars!
+W=GUARD
+C3A=SURPRISED
+
+T=You're all lying! Every single one of you!
+W=GUARD
+
+T=I'm the only honest one here!
+W=GUARD
+
+T=Do you have any idea what I've been through?!
+W=GUARD
+
+T=Do you know how hard it is to get accepted in this society?
+W=GUARD
+
+T=No way am I going to jail!
+W=GUARD
+TEN=PC15D_GUARD_AFTERINTERROGATION_MUSICSTOP
+
+T=You don't have a choice.
+W=BROK
+
+T=Oh, yeah?...
+W=GUARD
+
+T=Watch!
+W=GUARD
+TEN=PC15D_GUARD_AFTERINTERROGATIONB_MUSIC
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_GUARD_AFTERINTERROGATIONB
+T=What the...!
+W=MINK
+C1=BROK
+C1A=ANGRY
+C2=GUARD
+C2A=ANGRY
+C3=TIDY
+C3A=SURPRISED
+C4=MINK
+C4A=SURPRISED
+
+T=Everyone! Out!
+W=BROK
+C3=NONE
+TEN=PC15D_EVERYONELEAVE
+
+T=This is between me and him.
+W=BROK
+C1A=READY
+C3=NONE
+C4=NONE
+
+T=Everything is your fault, miserable croc!
+W=GUARD
+TEN=PC15D_GUARD_STARTFIGHT
+
+
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_GUARD_LOSE
+T=...
+W=GUARD
+A=ANGRY
+
+T=How did I get in such a mess...
+W=GUARD
+A=MEH
+
+T=All because of incompetents like you...
+W=GUARD
+A=ANGRY
+TEN=GAMEOVER
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_GUARD_WIN
+T=Is he...?
+W=MINK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=SURPRISED
+
+T=Nah. Just knocked out.
+W=BROK
+
+T=Gonna call Chief Wes. He'll take care of him.
+W=BROK
+C1A=MEH
+
+T=...
+W=MINK
+C2A=SAD
+
+T=I...
+W=MINK
+
+T=I hope we did the right thing.
+W=MINK
+
+T=Of course we did! The murderer will get thrown into jail.
+W=BROK
+TEN=PC15D_GUARD_WIN_NEXT
+
+#--------------------------------------------------------------------------------------------------
+#									CHARGE OTT
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_SECONDGATHER_OTT1
+T=Ott! You did this!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=WONDER
+C4=OTT
+C4A=SURPRISED
+CONTEXT=Charge Ott
+
+T=Very funny, Mister Brok.
+W=OTT
+C4A=ALRIGHT
+
+T=Do I look like I'm joking?...
+W=BROK
+
+T=Your little colleague here?... Ya sure?
+W=GUARD
+C4A=SURPRISED
+
+T=What?... You can't be serious!
+W=OTT
+
+T=I arrived here with you! How could I?
+W=OTT
+
+T=You escaped my vigileance for a minute...
+W=BROK
+
+T=More than enough time to enter this room and kill Dr. Hush!
+W=BROK
+C1A=MEH
+
+T=That's nonsense! You're the one who opened that door!
+W=OTT
+C4A=ANGRY
+
+T=No I didn't!
+W=BROK
+
+T=Yes you did!
+W=OTT
+
+T=No I didn't!
+W=BROK
+
+T=Please, people! You've got to believe me!
+W=OTT
+C4A=SAD
+
+T=I hate to say this detective but... I really don't see how he could be involved at all.
+W=MINK
+C2A=MOCK
+
+T=(Am I making a mistake?)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+TEN=PC15D_SECONDGATHER_OTT_CHOICE
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_SECONDGATHER_OTT_CONFIRM
+T=Well I'm the detective in charge here! I'm the one who decides!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=WONDER
+C4=OTT
+C4A=SURPRISED
+
+T=What?... That's abuse of your power!
+W=OTT
+C4A=ANGRY
+
+T=You don't even have a single piece of evidence against me!
+W=OTT
+
+T=And what would be my motive?
+W=OTT
+
+T=Ott, I arrest you for the murder of Doctor Hush.
+W=BROK
+
+T=This can't be happening...
+W=OTT
+C4A=PEE
+
+T=I... I'll complain to Uncle Wes!
+W=OTT
+C4A=ANGRY
+
+T=Do it if you please. That doesn't change the truth.
+W=BROK
+C1A=MEH
+
+T=You're the worst detective I've ever seen!
+W=OTT
+
+T=Yeah, yeah. That's what all criminals say.
+W=BROK
+TEN=PC15D_SECONDGATHER_OTT_FADEOUT
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_SECONDGATHER_OTT_CONFIRM2
+T=(I called Wes to inform him what happened.)
+BVOICE=BROK
+MOOD=THINK
+
+T=(He wasn't so pleased to learn his nephew was responsible of this murder.)
+MOOD=THINK
+
+T=(Of course, he wouldn't believe me.)
+MOOD=THINK
+
+T=(Instead of putting Ott in jail... I'm the one who almost ended up there!)
+MOOD=THINK
+
+T=(I barely escaped him. Darn it... No way I'll spend the rest of the day in a cell again!)
+MOOD=THINK
+
+T=(That's what I get for doing my job...)
+MOOD=THINK
+
+T=(And when I came back home...)
+MOOD=THINK
+TEN=CH4_STORY160_COMPLETE_BROK
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_SECONDGATHER_OTT_NOPE
+T=Ah-ah! You fell for it!
+W=BROK
+C1=BROK
+C1A=HAPPY
+C2=MINK
+C2A=SURPRISED
+C3=GUARD
+C3A=SURPRISED
+C4=OTT
+C4A=SURPRISED
+
+T=What?... So that was a joke after all?
+W=OTT
+
+T=Of course.
+W=BROK
+
+T=That's really not funny. I almost pee... Erm.
+W=OTT
+C4A=PEE
+
+T=You're wasting our time!
+W=GUARD
+C3A=WONDER
+
+T=So! Who did it?
+W=MINK
+C2A=ANGRY
+TEN=PC15D_SECONDGATHER_CHOICE
+IT=1
+
+#--------------------------------------------------------------------------------------------------
+#									CHARGE HUSH
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_SECONDGATHER_HUSH1
+T=No one killed Dr. Hush.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=SURPRISED
+CONTEXT=Charge Dr. Hush
+
+T=Are you implying...?
+W=MINK
+C2A=MOCK
+C4A=WONDER
+
+T=Yes.
+W=BROK
+
+T=He killed himself, and I'm gonna prove how.
+W=BROK
+
+T=Could this be possible?...
+W=GUARD
+
+T=First we need to find out... Why did Dr. Hush end up in this room?
+W=BROK
+
+T=That's simple. He needed to get there.
+W=BROK
+C1A=MOCK
+
+T=And here's why!
+W=BROK
+TEN=PC15D_INTERROGATIONHUSH_START
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_HUSH_NEEDROOM
+T=Remember Tidy's recording.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=WONDER
+
+T="I need to settle things with Dr. Mink."
+W=TIDY
+BNAMESP=HUSH
+BVOICESP=HUSH
+
+T=Yeah, that one.
+W=BROK
+
+T=So... He wanted to talk to me?...
+W=MINK
+
+T=But he never did!
+W=MINK
+C2A=MEH
+
+T=Yeah. Why didn't he just knock at his door?
+W=GUARD
+
+T=Exactly.
+W=BROK
+C1A=ALRIGHT
+
+T=There's a reason he didn't show up.
+W=BROK
+
+T=He didn't want to talk.
+W=BROK
+C1A=MOCK
+
+T=He wanted to kill you, Dr. Mink.
+W=BROK
+
+T=What?!
+W=MINK
+C2A=SURPRISED
+C4A=SURPRISED
+
+T=Dr. Hush... A killer?...
+W=GUARD
+
+T=It may be hard to believe but I've got proof.
+W=BROK
+TEN=PC15D_CLUE_HUSH_NEEDROOM_NEXT
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_HUSH_KILLMINK
+T=Dr. Mink. You told me yourself.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=NORMAL
+
+T=Dr. Hush barely talked to you anymore. And when he did, you'd argue with him.
+W=BROK
+
+T=These are signs of severe mental disorder.
+W=BROK
+C1A=MEH
+
+T=Dr. Hush was keeping things to himself, to the point he couldn't bare it anymore.
+W=BROK
+
+T=Are you a psychologist now?
+W=GUARD
+
+T=This is pure assumption! Where's your proof?
+W=MINK
+C2A=MOCK
+
+T=Simple. The lamp close to the body.
+W=BROK
+C1A=READY
+
+T=My lamp? What about it?
+W=MINK
+C2A=MEH
+
+T=It's not yours.
+W=BROK
+
+T=What?...
+W=MINK
+C2A=ANGRY
+
+T=Dr. Hush entered your room with his lamp.
+W=BROK
+
+T=What for?...
+W=MINK
+
+T=To throw it at you, doctor.
+W=BROK
+
+T=Throw it?... To kill me?!
+W=MINK
+C2A=SURPRISED
+
+T=Hmm... It's starting to make some sense...
+W=GUARD
+
+T=But he would have to be positioned in a convenient way...
+W=GUARD
+
+T=To see without being seen?...
+W=GUARD
+
+T=There's only one solution for Dr. Hush to end up where he is without entering from the door.
+W=BROK
+C1A=THINK
+C3A=MEH
+#TODO Show picture and ask player?
+
+T=Oh! I know!...
+W=GUARD
+C3A=HAPPY
+
+T=The vent!
+W=GUARD
+
+T=Precisely.
+W=BROK
+C1A=MOCK
+
+T=You mean...
+W=MINK
+
+T=He was up there?!
+W=MINK
+
+T=That's ridiculous!
+W=MINK
+C2A=ANGRY
+
+T=Not at all.
+W=BROK
+C1A=MEH
+
+T=And I've got the appropriate piece of evidence to support this!
+W=BROK
+TEN=PC15D_CLUE_HUSH_KILLMINK_NEXT
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_HUSH_INVENT
+T=Earlier I made an interesting discovery about the red stains on Dr. Hush's body.
+W=BROK
+C1=BROK
+C1A=THINK
+C2=MINK
+C2A=MEH
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=NORMAL
+
+T=Yeah. Tomatoze sauce.
+W=GUARD
+
+T=Correct.
+W=BROK
+
+T=Your fridge contained Antburgers. Am I right?
+W=BROK
+
+T=Yes. I even ate one yesterday.
+W=MINK
+C2A=HAPPY
+
+T=Well Dr. Hush must love these too, cause he spilled a lot on his clothes!
+W=BROK
+
+T=Did he?...
+W=MINK
+C2A=MOCK
+
+T=That seems a bit... out of character.
+W=MINK
+
+T=Fortunately for us, this revealed another Tomatoze sauce spot in an unusual place!
+W=BROK
+C1A=MEH
+
+T=Lemme guess.
+W=GUARD
+
+T=In the vent!
+W=GUARD
+C3A=HAPPY
+
+T=Bingo!
+W=BROK
+C1A=HAPPY
+
+T=Okay, let's admit it. As far-fetched as this might sound, the doctor must have been in the vent at some point.
+W=MINK
+C1A=THINK
+C2A=MOCK
+C3A=WONDER
+
+T=But... How did he climb there?
+W=MINK
+
+T=Yeah! It's 10 feet high. 
+W=GUARD
+COMM=Equivalent to 3.5 meters
+
+T=And unlike here, there's no ladder to access the trap.
+W=GUARD
+
+T=Well, I've got my idea on this!
+W=BROK
+C1A=ALRIGHT
+TEN=PC15D_CLUE_HUSH_INVENT_NEXT
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_HUSH_TRAP
+T=Tidy. I believe you've been hiding something from us!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=SURPRISED
+
+T=Hiding. Me?
+W=TIDY
+C4A=WONDER
+
+T=Me no hiding! Nothing!
+W=TIDY
+C4A=HAPPY
+
+T=I beg to differ.
+W=BROK
+
+T=Did one of you notice the biscuit crumbs on Dr. Hush's workbench?
+W=BROK
+C1A=MEH
+C4A=WONDER
+
+T=Is that important?
+W=GUARD
+
+T=Yup.
+W=BROK
+
+T=They've been crushed.
+W=BROK
+
+T=Dr. Hush climbed on his workbench... to access the trap?
+W=MINK
+C2A=HAPPY
+
+T=Impossible. It's way too high!
+W=MINK
+C2A=MEH
+
+T=Even by jumping...
+W=MINK
+
+T=He didn't jump.
+W=BROK
+
+T=He just got... a little help.
+W=BROK
+
+T=...
+W=BROK
+C1A=READY
+
+T=Why Broky. Look me?
+W=TIDY
+
+T=Come on, Tidy. You can say it, now!
+W=BROK
+
+T=You helped the doctor climb!
+W=BROK
+
+T=Huh?...
+W=GUARD
+C3A=WONDER
+
+T=Remember Tidy's main ability. He can stretch arms horizontally or...
+W=BROK
+C1A=THINK
+
+T=Verti-cally-cally! 
+W=TIDY
+C4A=HAPPY
+
+T=Oooh...
+W=GUARD
+C3A=SURPRISED
+
+T=You brought up the doctor so he could reach the trap, didn't you?
+W=BROK
+
+T=...
+W=TIDY
+C4A=WONDER
+
+T=Yup-yup.
+W=TIDY
+C4A=HAPPY
+
+T=Broky right.
+W=TIDY
+
+T=But...
+W=GUARD
+
+T=Why didn't you tell us, can of steel?!
+W=GUARD
+C3A=ANGRY
+
+T=Nobody. Asked.
+W=TIDY
+
+T=And they call these "intelligent beings"...
+W=GUARD
+C3A=MEH
+
+T=Wait...
+W=MINK
+C4A=NORMAL
+
+T=So... Dr. Hush was angry at me...
+W=MINK
+C2A=ANGRY
+
+T=He took his lamp, asked Tidy to allow him into the vent...
+W=MINK
+
+T=In order to surprise me and throw the lamp to kill me...
+W=MINK
+
+T=And that's how he came up dead?!
+W=MINK
+C2A=HAPPY
+
+T=Almost. We're just missing a little step here.
+W=BROK
+
+T=Yeah. If he lies there on the floor, the doctor must have fallen.
+W=GUARD
+C3A=WONDER
+
+T=Hmm...
+W=MINK
+C2A=MOCK
+
+T=Can you imagine someone falling from that height?
+W=MINK
+
+T=That'd make a huge bump! There's no way I wouldn't have heard it!
+W=MINK
+C2A=MEH
+
+T=You're right.
+W=BROK
+C1A=MEH
+
+T=In normal circumstances, you should have heard it.
+W=BROK
+
+T=But...
+W=BROK
+
+T=But what?
+W=MINK
+TEN=PC15D_CLUE_HUSH_TRAPNEXT
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_HUSH_HEAR
+T=The music...?
+W=MINK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=MOCK
+C3=GUARD
+C3A=WONDER
+C4=TIDY
+C4A=NORMAL
+
+T=No way!
+W=GUARD
+C3A=SURPRISED
+
+T=You were listening to "TechDream"!
+W=GUARD
+
+T=I could hear it from where I stood!
+W=GUARD
+
+T=While aiming at you, the doctor lost his balance and fell. Your loud music covered the impact.
+W=BROK
+C1A=ANGRY
+
+T=From this height, he probably broke his neck on the floor without showing any external damage.
+W=BROK
+
+T=And that's the whole solution to this mystery!
+W=BROK
+C1A=ALRIGHT
+TEN=PC15D_HUSH_INTERROGATIONOVER
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_CLUE_MISTAKE_TENSE
+T=(Yeah, tense relationships could justify it... But not combined with that)
+W=BROK
+A=ANGRY
+MOOD=THINK
+
+
+#--------------------------------------------------------------------------------------------------
+ID=PC15D_HUSH_AFTERINTERROGATION
+T=...
+W=MINK
+C1=BROK
+C1A=MEH
+C2=MINK
+C2A=SAD
+C3=GUARD
+C3A=WONDER
+C4=OTT
+C4A=WONDER
+
+T=I can't believe it...
+W=MINK
+
+T=Yes, we didn't have such a good relationship but... It was more child's play to me.
+W=MINK
+
+T=To think he tried to murder me!
+W=MINK
+C2A=MOCK
+
+T=Yeah. What was he thinking?!
+W=GUARD
+
+T=We may never find out.
+W=BROK
+C1A=THINK
+
+T=Anyway. My job here is done.
+W=BROK
+C1A=MAYBE
+
+T=Okay. I'll call the Body Recycling service.
+W=GUARD
+C3A=MEH
+
+T=Phew! I'm glad my watch is finally over.
+W=GUARD
+C3A=HAPPY
+
+T=Thank you, detective.
+W=MINK
+C2A=NORMAL
+
+T=Don't mention it!
+W=BROK
+C1A=HAPPY
+
+T=Come on, Ott. Let's go.
+W=BROK
+C1A=READY
+TEN=PC15D_HUSH_AFTERINTERROGATION2
+
+
+
+###############################################
+# PROOFREAD - aZombieDictator P1 - 21/08/2019
+				TristanStoneVA P2  25/08/2019
+				jamiereloaded23 P3 09/09/2019
+###############################################

@@ -1,0 +1,1652 @@
+#-------------------------------
+#=BUNKER MAIN ROOM
+#-------------------------------
+
+#----- Interactions --------
+# A screen on the floor
+PC_FOOTSCREEN=地板屏幕
+PC_THISWAY=此方向
+# Kinda like a screen the player can use to see what's happening on the outside of the bunker
+PC_FRAME=框架
+PC_TRIBOTS=三角机器人
+PC_WALL=墙壁
+PC_CONTROLPANEL=控制面板
+PC_FURNITURE=家具
+PC_LITTLEBOX=小盒子
+
+
+#----- Choices / Items --------
+GOT_BATTERY=小盒子！
+
+#----- Topics --------
+PC19B_CHOICE_OFF=有什么不对劲的地方？
+PC19B_CHOICE_TARGET=三角机器人的举动
+PC19B_CHOICE_PILLS=药丸短缺
+PC19B_CHOICE_LETBROK=关闭三角机器人
+
+INTERROGATION_GHERKIN=格金博士究竟在隐瞒什么？
+INTERROGATION_TRIANGLE=政府议会一共有多少名成员？
+
+PC19B_CHOICE_LETDEE=让阿迪关闭三角机器人
+PC19B_CHOICE_FIGHT=摧毁三角机器人
+PC19B_DOOR_CHOICE=离开地堡跟三角机器人作战？
+
+#----- Dialog --------
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+# *****************************************************************
+# CONTEXT - Dee has tied up Dr. Gherkin to interrogate him. In this room a button can be pushed to do a shock to whoever is tied up so she uses that to interrogate him.
+# *****************************************************************
+# Brok
+PC19B_GHERKIN1-1=他昏过去了……
+# Brok
+PC19B_GHERKIN1-2=那女人真是疯婆子！
+# Dee
+PC19B_GHERKIN1-3=喂！！
+# Brok
+PC19B_GHERKIN1-4=呃……难道是我不小心大声说出来了……？
+#----------------------------------------------------
+# Brok
+#Brok presses the button
+PC19B_BUTTON1-1=……
+# Brok
+PC19B_BUTTON1-2=还在昏迷。
+# Dee
+PC19B_BUTTON1-3=小心点！他死了的话可就对我们没用了。
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON2-1=……
+#----------------------------------------------------
+# Dee
+PC19B_BUTTON3-1=住手！你这样会害死他的！
+# Brok
+PC19B_BUTTON3-2=可是……我喜欢按这个按钮！
+# Dee
+PC19B_BUTTON3-3=亏你之前还敢说我是疯婆子？！
+#----------------------------------------------------
+# Dee
+#Brok kills Dr. Gherkin
+PC19B_GHERKIN_DEAD1-1=……糟了。
+# Brok
+PC19B_GHERKIN_DEAD1-2=哎呀。
+# Dee
+PC19B_GHERKIN_DEAD1-3=我都警告过你了！现在可好，我们永远都无法知道真相了！
+# Brok
+PC19B_GHERKIN_DEAD1-4=真是……太可惜了？
+# Dee
+PC19B_GHERKIN_DEAD1-5=你杀害了一个无辜的人！而且是雇用你保护他的人！
+# Brok
+PC19B_GHERKIN_DEAD1-6=哎呀……糟了糟了！
+# Brok
+PC19B_GHERKIN_DEAD1-7=他还没支付我酬劳呢！
+# Brok
+PC19B_GHERKIN_DEAD1-8=你醒醒！快醒醒！
+#----------------------------------------------------
+# Brok
+#Trying to open the door of the room which is filled with Tribots
+PC19B_DOORBOTS1-1=呃……
+# Brok
+PC19B_DOORBOTS1-2=虽然蠢蠢欲动想试试，但这一次我还是让理智战胜情绪吧。
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS2-1=必须……忍住……不打开……
+#----------------------------------------------------
+# Dee
+PC19B_DOORBOTS3-1=……！
+# Dee
+PC19B_DOORBOTS3-2=你做了什么！
+# Brok
+PC19B_DOORBOTS3-3=呃……不好意思？
+# Dee
+PC19B_DOORBOTS3-4=祸是你闯的，你自己去收拾它们。
+# Brok
+PC19B_DOORBOTS3-5=简单啦！看我的！
+#----------------------------------------------------
+# Brok
+#Winning a fight against them
+PC19B_DOORBOTS_WIN-1=呼呼……哈……瞧我……没说错吧……！
+# Dee
+PC19B_DOORBOTS_WIN-2=……
+# Dee
+PC19B_DOORBOTS_WIN-3=厉害，你的确是有两下子。
+# Brok
+PC19B_DOORBOTS_WIN-4=哈哈！什么机器人都不是我的对手！
+#----------------------------------------------------
+# Dee
+PC19B_DOORBOTS_AFTER-1=喂！
+# Dee
+PC19B_DOORBOTS_AFTER-2=你是否遗漏了什么？
+# Brok
+PC19B_DOORBOTS_AFTER-3=我得去查看下这房间。
+# Dee
+PC19B_DOORBOTS_AFTER-4=好主意，但别冲动。
+# Dee
+PC19B_DOORBOTS_AFTER-5=你先藏起来，让我先关闭这些机器人。
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_DISABLE-1=好，我会一个个关掉它们。
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-1=你真觉得我会躲藏起来吗？！
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-2=切！交给我来应付吧。
+# Dee
+PC19B_DOORBOTS_FIGHTANYWAY-3=你这疯……
+# Dee
+PC19B_DOORBOTS_FIGHTANYWAY-4=算了，随便你怎么样吧。
+# Dee
+PC19B_DOORBOTS_FIGHTANYWAY-5=但出问题时别指望我帮忙！
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-6=我会需要帮忙？哈哈。
+# Brok
+PC19B_DOORBOTS_FIGHTANYWAY-7=且看我表演吧！
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_DEEDISABLE-1=请便。
+#----------------------------------------------------
+# Dee
+PC19B_DOORBOTS_DEE-1=搞定，安全了。
+# Brok
+PC19B_DOORBOTS_DEE-2=谢谢，算我欠你一次人情！
+# Dee
+PC19B_DOORBOTS_DEE-3=专心寻找出路吧，现在最重要的是离开这个地方。
+#----------------------------------------------------
+# Brok
+PC19B_DOORBOTS_BROK-1=这就对了！
+# Dee
+PC19B_DOORBOTS_BROK-2=呃。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC19B_SCREEN1-1=现在并非观赏天空球赛直播的合适时机。
+#----------------------------------------------------
+# Brok
+PC19B_GRAFFROOMS1-1=道路被挡住了。
+#----------------------------------------------------
+# Brok
+PC19B_KLAYROOMS1-1=这里过不去……
+#----------------------------------------------------
+# Brok
+PC19B_TRIBOTS1-1=我想不明白，为什么这些家伙那么热衷于追杀我？
+#----------------------------------------------------
+# Brok
+PC19B_TRIBOTS1_ALTERNATIVE-1=我讨厌他们。
+#----------------------------------------------------
+# Brok
+PC19B_DOOR1-1=当然，我可以随时离开。
+# Brok
+PC19B_DOOR1-2=前提是门外没有数以百计的杀人机器在等着我。
+#----------------------------------------------------
+# Dee
+PC19B_DOOR2-1=等一下！
+# Dee
+PC19B_DOOR2-2=我还以为你不打算出去的呢？
+# Dee
+PC19B_DOOR2-3=你真认为我们有能力对付那么多的机器人吗？
+#----------------------------------------------------
+# Brok
+PC19B_DOOR_NO-1=有道理……这么做是自投罗网。
+#----------------------------------------------------
+# Brok
+PC19B_DOOR_GO-1=我们没有别的选择了！
+# Dee
+PC19B_DOOR_GO-2=好吧。
+# Dee
+PC19B_DOOR_GO-3=但我不愿意就此放弃！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Alternative to go out of the room - we decide to fight all the bots outside
+# *****************************************************************
+# Brok
+PC19B_DOOR_YES3-1=阿迪打算通过格金博士的帮助尝试寻找解决方法……
+# Brok
+PC19B_DOOR_YES3-2=但却徒劳无功。
+# Brok
+PC19B_DOOR_YES3-3=在搜索途中，博士提到了某些疯狂的推论。
+# Brok
+PC19B_DOOR_YES3-4=比如说……“蛋是代表循环的科学符号”。
+# Brok
+PC19B_DOOR_YES3-5=我当时因为无聊就把它们记录下来了。
+# Brok
+PC19B_DOOR_YES3-6=最终，我们决定让博士躲在地堡内……
+# Brok
+PC19B_DOOR_YES3-7=……而我和阿迪则准备好……
+# Brok
+PC19B_DOOR_YES3-8=……血战机器人大军。
+# Brok
+PC19B_DOOR_YES3-9=你准备好了吗？
+# Dee
+PC19B_DOOR_YES3-10=如果你是指拯救我丈夫的话，那我已经迫不及待了。
+# Brok
+PC19B_DOOR_YES3-11=那就好。
+# Brok
+PC19B_DOOR_YES3-12=三……
+# Brok
+PC19B_DOOR_YES3-13=二……
+# Brok
+PC19B_DOOR_YES3-14=一……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Room interactions
+# *****************************************************************
+# Brok
+PC19B_FURNITURE_BEFORE1-1=唔……！要是我没看错的话……里头似乎有些食物！
+# Brok
+PC19B_FURNITURE_BEFORE1-2=但是却遥不可及啊。
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_MOVE-1=我试试移动这家具。
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_MOVE2-1=啊哈！
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_AFTER1-1=哎哟……上锁了。
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_EMPTY-1=空的。
+#----------------------------------------------------
+# Brok
+PC19B_FURNITURE_BREAK-1=哎呀！它……意外损坏了！
+# Dee
+PC19B_FURNITURE_BREAK-2=意外是吧……
+# Brok
+PC19B_FURNITURE_BREAK-3=唔……这食物快要过期了，不拿白不拿！
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL_BEFORE1-1=似乎有些电线……？这家具后面肯定有别的东西。
+#----------------------------------------------------
+# Dee
+PC19B_CONTROLPANEL_OTHERS-1=喂，等一下！
+# Dee
+PC19B_CONTROLPANEL_OTHERS-2=你清楚自己在做什么不？
+# Brok
+PC19B_CONTROLPANEL_OTHERS-3=不确定。
+# Dee
+PC19B_CONTROLPANEL_OTHERS-4=唉……
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL1-1=唔……
+# Brok
+PC19B_CONTROLPANEL1-2=博士，我需要你的帮助。
+# Brok
+PC19B_CONTROLPANEL1-3=你知道这是什么玩意不？
+# Gherkin
+PC19B_CONTROLPANEL1-4=……
+# Gherkin
+PC19B_CONTROLPANEL1-5=从我这里看不清楚，你可以形容下它的样子吗？
+# Brok
+PC19B_CONTROLPANEL1-6=就是一堆……蛋一样的玩意。
+# Gherkin
+PC19B_CONTROLPANEL1-7=那一定是地堡内设备的控制面板了。
+# Brok
+PC19B_CONTROLPANEL1-8=什么样的设备？
+# Gherkin
+PC19B_CONTROLPANEL1-9=就是电灯啊……冰箱啊……护盾啊……
+# Dee
+PC19B_CONTROLPANEL1-10=护盾？
+# Gherkin
+PC19B_CONTROLPANEL1-11=对呀！这毕竟是个地堡。
+# Gherkin
+PC19B_CONTROLPANEL1-12=是用来抵御外来威胁的防御工事。
+# Dee
+PC19B_CONTROLPANEL1-13=现在我们不正是面对着外来威胁吗？
+# Gherkin
+PC19B_CONTROLPANEL1-14=哦……
+# Gherkin
+PC19B_CONTROLPANEL1-15=对哦！
+# Brok
+PC19B_CONTROLPANEL1-16=那就快使用这玩意来对付它们吧！
+# Gherkin
+PC19B_CONTROLPANEL1-17=那、那是不可能的。
+# Gherkin
+PC19B_CONTROLPANEL1-18=护盾只能防止那些机器人闯进来。
+# Dee
+PC19B_CONTROLPANEL1-19=那可不行，我们还得想办法关闭或者破坏掉它们。
+# Brok
+PC19B_CONTROLPANEL1-20=这得从长计议下。
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL2-1=……
+# Dee
+PC19B_CONTROLPANEL2-2=等等！你在做什么？
+# Brok
+PC19B_CONTROLPANEL2-3=得割掉一些线缆试试……
+# Dee
+PC19B_CONTROLPANEL2-4=喂！可别乱来！
+# Dee
+PC19B_CONTROLPANEL2-5=不准你乱碰！
+# Brok
+PC19B_CONTROLPANEL2-6=你又不是我妈！我们总得什么都试试看吧？
+# Dee
+PC19B_CONTROLPANEL2-7=那你尽管试试，看我不一锤子砸死你！
+# Brok
+PC19B_CONTROLPANEL2-8=没劲。
+#----------------------------------------------------
+# Brok
+PC19B_CONTROLPANEL_AFTER-1=我还是让博士来对付这玩意吧。
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_BEFORECONTROLPANEL-1=你还好吧？
+# Gherkin
+PC19B_GHERKIN_BEFORECONTROLPANEL-2=你要是松开我的话我会好很多。
+# Brok
+PC19B_GHERKIN_BEFORECONTROLPANEL-3=我保证在离开前会给你松绑的。
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_CONTROLPANEL1-1=博士，你懂得使用那个控制面板不？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-2=我没绝对的把握……
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-3=我得先过去看看！
+# Dee
+PC19B_GHERKIN_CONTROLPANEL1-4=你这是想要骗我们给你松绑吗？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-5=……拜托！
+# Brok
+PC19B_GHERKIN_CONTROLPANEL1-6=好吧。放开他吧，阿迪。他能帮上忙。
+# Dee
+PC19B_GHERKIN_CONTROLPANEL1-7=……
+# Dee
+PC19B_GHERKIN_CONTROLPANEL1-8=行，但你休想借机逃跑！
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL1-9=外头有那么多杀人机器，我疯了才会想逃跑！
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-1=怎么样……？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-2=你有留意到这些面板为什么会是如此奇怪的形状吗？
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-3=没有，但是我猜你会忍不住告诉我。
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-4=蛋其实是代表循环的科学符号。
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-5=能量流入流出这些容器，创造出一个循环。
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-6=好吧……这对我们的情况有何帮助？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-7=我刚改动了一些东西。
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-8=这么快……？
+# Gherkin
+#This is random scientific blah blah, don't search any meaning and translate how you want
+PC19B_GHERKIN_CONTROLPANEL2-9=我调转了非零物质的极性以改变它们的电荷。
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-10=也就是说……？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-11=这个护盾现在可以生成出覆盖整个大门的能量罩了。
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL2-12=我现在就启动它。你可以去查看下是否有效吗？
+# Brok
+PC19B_GHERKIN_CONTROLPANEL2-13=没问题。
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK1-1=一……二……三。
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-1=……
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-2=我看见有蓝色的光芒笼罩着大门……
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-3=没其他的变化吗？
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-4=那些机器人呢？
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-5=没有反应。
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-6=可恶……
+# Gherkin
+PC19B_GHERKIN_FRAMECHECK2-7=看来还是无效……
+# Brok
+PC19B_GHERKIN_FRAMECHECK2-8=别气馁，这是个好的开始！
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-1=完蛋了，看来我们会永远被困在这里了……
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-2=不可能！必要时我会用双手杀出一条血路！
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-3=你之前的计划究竟有什么问题？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-4=我本以为能够生成一个小型力场……
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-5=以撞击大门侧边的那个能量容器。
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-6=你是指那个金字塔形状的玩意？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-7=对！这样就会形成闭合电路，从而生成巨大的冲击波。
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-8=天哪！真是个疯狂的主意！咱们马上开始吧！
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-9=我试过了！你又不是没看见。
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-10=所生成的力场太短暂了，根本来不及触及能量容器。
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-11=那你想办法改良它呀。
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-12=如果有合适的材料倒是可以。
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-13=但在这能咋办？
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-14=你究竟需要什么材料？
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-15=我不大确定……
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-16=或许……需要个发电机……？
+# Brok
+PC19B_GHERKIN_CONTROLPANEL3-17=我会帮你找到的！
+# Gherkin
+PC19B_GHERKIN_CONTROLPANEL3-18=你还是别抱有太高的期望……
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB1-1=一……二……三。
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_FRAMECHECKB2-1=我的天！成功了！！
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB2-2=真的吗？！
+# Brok
+PC19B_GHERKIN_FRAMECHECKB2-3=对！所有的机器人……都毁掉了！
+# Dee
+PC19B_GHERKIN_FRAMECHECKB2-4=终于成功了，时间不多了！
+# Dee
+PC19B_GHERKIN_FRAMECHECKB2-5=快走吧，布罗格！
+#----------------------------------------------------
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-1=喂，等等我！
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-2=阿迪！你难道想……
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-3=我被困在这里了！
+# Dee
+PC19B_GHERKIN_FRAMECHECKB3-4=别担心。这是个地堡。里头有无数的补给品。
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-5=可、可是……！
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-6=这是你的又一个疯狂主意？
+# Dee
+PC19B_GHERKIN_FRAMECHECKB3-7=我跟他的事还没完呢。
+# Dee
+#Here she addresses the doc
+PC19B_GHERKIN_FRAMECHECKB3-8=放心吧，事情结束后我们会回来找你的。
+# Gherkin
+PC19B_GHERKIN_FRAMECHECKB3-9=啊……真是永无止境的噩梦。
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-10=唉……
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-11=好吧……至少他在里面会很安全。
+# Brok
+PC19B_GHERKIN_FRAMECHECKB3-12=走吧。
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_BATTERY-1=博士，你说这个玩意能帮得上忙不？
+# Gherkin
+PC19B_GHERKIN_BATTERY-2=……
+# Gherkin
+PC19B_GHERKIN_BATTERY-3=你是从哪找来的？！
+# Brok
+PC19B_GHERKIN_BATTERY-4=就是从那个呃……电击你的开关。
+# Brok
+PC19B_GHERKIN_BATTERY-5=这应该是里头的电池。
+# Gherkin
+PC19B_GHERKIN_BATTERY-6=太……完美了！
+# Brok
+PC19B_GHERKIN_BATTERY-7=真的吗？太好了！
+# Brok
+PC19B_GHERKIN_BATTERY-8=所以这次能成功了？
+# Gherkin
+PC19B_GHERKIN_BATTERY-9=不太可能。
+# Brok
+PC19B_GHERKIN_BATTERY-10=可是你不是说……？
+# Gherkin
+PC19B_GHERKIN_BATTERY-11=我们可以试试看。我先去连接电线。
+# Gherkin
+PC19B_GHERKIN_BATTERY-12=可能会花一段时间。
+# Brok
+PC19B_GHERKIN_BATTERY-13=好吧，那我不打扰你了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok tries to comfort Dee after the news her husband Sin is in danger
+# *****************************************************************
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-1=你没事吧？
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-2=……
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-3=当我发现他不在公寓时，我还以为他是搬走了。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-4=我没想到……
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-5=放心吧。我们会救他出来的。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-6=你如何确定？！
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-7=或许我们已经迟了……！
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-8=一定会成功的。
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-9=……
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-10=我从未见过像你这样的人。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-11=那你倒是说对了。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-12=我可不是那种一整天待在家里做家务照顾小孩的人。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-13=我不在乎传宗接代，不在乎对社会的贡献。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-14=社会不能为我的人生做决定。
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-15=然而你却有个女儿。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-16=是呀……
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-17=……
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-18=好想念她……好想念阿信……
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-19=那你呢？
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-20=我曾有个妻子……虽然好景不长。她后来去世了。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-21=啊……很抱歉……
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-22=还有个儿子……虽然不是亲生的。
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-23=他很厌恶我。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-24=这你就错了。
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-25=啥？
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-26=他很在乎你，绝对的。
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-27=你怎么知道？你都不认识他。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-28=但我认识你。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-29=虽然你我才刚认识不久，不过……
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-30=我感觉到……我可以信任你。
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-31=呃……刚一个小时前你还准备杀我呢。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-32=那只是跟你闹着玩！你不会那么较真吧？
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-33=开玩笑吗……嗯哼！哈哈。
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-34=……
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-35=……
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-36=呃……是我脸上有东西吗……？
+# Dee
+PC19B_GHERKIN_AFTERGIVEN1-37=那个……要不是在这种情况下……
+# Gherkin
+PC19B_GHERKIN_AFTERGIVEN1-38=布罗格先生！
+# Gherkin
+PC19B_GHERKIN_AFTERGIVEN1-39=我完成了，你可以去查看下入口的录像吗？
+# Brok
+PC19B_GHERKIN_AFTERGIVEN1-40=好的。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Checking frame on the wall
+# *****************************************************************
+# Brok
+PC19B_FRAME1-1=这不是……地堡入口的样子吗？
+#----------------------------------------------------
+# Brok
+PC19B_ENTRANCE_PICTURE1-1=呃哦……
+# Brok
+PC19B_ENTRANCE_PICTURE1-2=虽然我也是见识过大风大浪的人，但是这……
+# Brok
+PC19B_ENTRANCE_PICTURE1-3=简直是鬼门关呀！
+# Dee
+PC19B_ENTRANCE_PICTURE1-4=而我们还得度过去。
+#----------------------------------------------------
+# Brok
+PC19B_ENTRANCE_PICTURE2-1=我们该如何通过这里……？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Pressing the button
+# *****************************************************************
+# Gherkin
+PC19B_BUTTON_GHERKIN1-1=住手！
+# Gherkin
+PC19B_BUTTON_GHERKIN1-2=你为何这样做？
+# Brok
+PC19B_BUTTON_GHERKIN1-3=玩玩而已嘛？
+# Gherkin
+PC19B_BUTTON_GHERKIN1-4=求求你了！很痛的！
+# Brok
+PC19B_BUTTON_GHERKIN1-5=好吧好吧，我会尽量控制自己的手指的。
+#----------------------------------------------------
+# Gherkin
+PC19B_BUTTON_GHERKIN2-1=求求你……！别再来了！
+# Brok
+PC19B_BUTTON_GHERKIN2-2=开个玩笑而已！
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_WITHOUT1-1=为何要在地堡中设立这些刑具？
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_WITHOUT2-1=……
+# Brok
+PC19B_BUTTON_WITHOUT2-2=那玩意会生成电击。很好奇这电力是从哪来的……？
+#----------------------------------------------------
+# Dee
+#Dee is talking to Brok here （informal）
+PC19B_BUTTON_NODESTROY1-1=喂！住手！
+# Dee
+PC19B_BUTTON_NODESTROY1-2=我知道你不喜欢这东西，但是我们需要它维持运转。
+#----------------------------------------------------
+# Dee
+PC19B_BUTTON_DESTROY1-1=是你弄坏的？就靠赤手空拳？！
+# Brok
+PC19B_BUTTON_DESTROY1-2=这证明我调查得很用心，女士！
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_REMOTECONTROL-1=有何必要？难道是要关闭它……？
+#----------------------------------------------------
+# Brok
+PC19B_BUTTON_OTHERS-1=没时间可浪费了……我得采取极端手段！
+#----------------------------------------------------
+# Brok
+PC19B_BATTERY1-1=这是啥玩意……？
+# Brok
+PC19B_BATTERY1-2=似乎有点意思，先收起来吧！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Coming in this room for the first time, Brok sees Dee who already tied up Dr Gherkin
+# *****************************************************************
+# Brok
+#Here he addresses both of them
+PC19B_INIT1-1=终于找到你们了……
+# Brok
+#And here, only Dee
+PC19B_INIT1-2=呃……？你这是干嘛？！
+# Dee
+PC19B_INIT1-3=审他啊。
+# Gherkin
+PC19B_INIT1-4=她、她把我绑在这里！
+# Brok
+PC19B_INIT1-5=你是疯了吗？！
+# Brok
+PC19B_INIT1-6=你觉得此时此刻这么做真的合适吗？！
+# Dee
+PC19B_INIT1-7=这家伙有事瞒着我们！
+# Brok
+PC19B_INIT1-8=那你呢？！
+# Dee
+PC19B_INIT1-9=我似乎已经对你很坦白了吧。
+# Brok
+PC19B_INIT1-10=才怪！当时我还没问完就被那些机器人打断了。
+# Dee
+PC19B_INIT1-11=好吧。
+# Dee
+PC19B_INIT1-12=我会知无不言，只要你不打扰我审他。
+# Brok
+PC19B_INIT1-13=这我可不能答应。
+# Dee
+PC19B_INIT1-14=那看来我们得来个彻底了断了。
+# Brok
+PC19B_INIT1-15=又打？！
+# Brok
+PC19B_INIT1-16=免了。我今天已经打到要吐了。
+# Brok
+PC19B_INIT1-17=而且你可别忘了我们还被机器人大军包围着呢。
+# Brok
+PC19B_INIT1-18=有那精力不如省下来对付它们吧。
+# Dee
+PC19B_INIT1-19=唉……
+# Dee
+PC19B_INIT1-20=你说得有理。
+# Brok
+PC19B_INIT1-21=说到机器人……
+# Brok
+PC19B_INIT1-22=天哪，它们的数目真是无穷无尽……太难缠了！
+# Gherkin
+PC19B_INIT1-23=我、我很害怕……谁可以帮我松绑下……？
+# Dee
+PC19B_INIT1-24=还没到时候。
+# Gherkin
+PC19B_INIT1-25=可、可是……！
+# Brok
+PC19B_INIT1-26=你是怀疑博士他跟那些机器人发疯有关联？
+# Dee
+PC19B_INIT1-27=……
+# Dee
+PC19B_INIT1-28=是有这个可能。毕竟跟他有关联的事可不少。
+# Brok
+PC19B_INIT1-29=那不可能吧……
+# Gherkin
+PC19B_INIT1-30=我发誓这事真的跟我无关！
+# Brok
+PC19B_INIT1-31=要真是他释放它们出来的话，那他为何要冒生命危险穿越贫民区？
+# Brok
+PC19B_INIT1-32=他这么做有何好处？
+# Dee
+PC19B_INIT1-33=……
+# Dee
+PC19B_INIT1-34=我暂时还没掌握到足够的情报。不过我有办法找出真相！
+#----------------------------------------------------
+# Brok
+PC19B_INIT1B-1=那个……我不太认同……
+# Brok
+PC19B_INIT1B-2=……？
+# Brok
+PC19B_INIT1B-3=有点不对劲。
+# Dee
+PC19B_INIT1B-4=什么意思？
+#----------------------------------------------------
+# Brok
+PC19B_GHERKINPROB1-1=格金博士对我们撒谎了。
+# Dee
+PC19B_GHERKINPROB1-2=你终于醒悟了！
+# Dee
+PC19B_GHERKINPROB1-3=我们动手吧！我知道怎样可以让他乖乖招供……
+# Brok
+PC19B_GHERKINPROB1-4=等一下……！
+# Brok
+PC19B_GHERKINPROB1-5=还有……有些别的事。
+#----------------------------------------------------
+# Brok
+PC19B_PILLS1-1=药丸短缺的情况非常异常。
+# Dee
+PC19B_PILLS1-2=大侦探，你现在才察觉吗？
+# Dee
+PC19B_PILLS1-3=还以为你会有什么高见呢。
+# Dee
+PC19B_PILLS1-4=看来我不该对你这样的人抱有太高的期望。
+# Brok
+PC19B_PILLS1-5=我这样的人？！
+# Dee
+PC19B_PILLS1-6=对呀！不修边幅的中年大叔。
+# Brok
+PC19B_PILLS1-7=呃……？
+# Dee
+PC19B_PILLS1-8=我猜你已经独居了很长时间吧？
+# Brok
+PC19B_PILLS1-9=是的……呃……也不全对。
+# Dee
+PC19B_PILLS1-10=抱歉。你也是个有故事的人，我一眼就能看出来。
+# Dee
+PC19B_PILLS1-11=不过正因为你的过往……才成就了现在的你。
+# Brok
+PC19B_PILLS1-12=话说你让我联想到女生说话果然爱拐弯抹角。
+# Dee
+PC19B_PILLS1-13=嗯。
+# Dee
+PC19B_PILLS1-14=那么！你还有留意到其他别的事吗，天才先生？
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Brok wants to test the behavior of robots
+# *****************************************************************
+# Brok
+PC19B_TARGET1-1=我想做个测验。
+# Brok
+PC19B_TARGET1-2=你能打开门让那些机器人进来吗？
+# Dee
+PC19B_TARGET1-3=看情况吧，为何要这么做？
+# Brok
+PC19B_TARGET1-4=我先藏起来，你先放一个机器人进来。
+# Dee
+PC19B_TARGET1-5=你是疯了吗？！
+# Dee
+PC19B_TARGET1-6=你知不知道一旦打开门它们可能会同时涌进来……？
+# Brok
+PC19B_TARGET1-7=信我一次吧。
+# Dee
+PC19B_TARGET1-8=好吧……
+# Dee
+PC19B_TARGET1-9=我试试吧，就只放进一个。
+#----------------------------------------------------
+# Dee
+PC19B_TARGET2-1=……
+# Tribot
+PC19B_TARGET2-2=你好！有什么可以帮到你的吗？
+# Dee
+PC19B_TARGET2-3=这个家伙似乎很友善。
+# Brok
+PC19B_TARGET2-4=唔……
+# Brok
+PC19B_TARGET2-5=让它靠近格金博士。
+# Gherkin
+PC19B_TARGET2-6=别……不要啊……！
+# Dee
+PC19B_TARGET2-7=去吧，机器人。接近你前面的那位男士。
+# Gherkin
+PC19B_TARGET2-8=糟了糟了……！
+#----------------------------------------------------
+# Tribot
+PC19B_TARGET3-1=你好。
+# Gherkin
+PC19B_TARGET3-2=啊……？
+# Dee
+PC19B_TARGET3-3=我不确定你究竟想测试什么。
+# Brok
+PC19B_TARGET3-4=如果我这样做的话，接下来会否……
+#----------------------------------------------------
+# Tribot
+PC19B_TARGET4-1=锁定目标！
+# Brok
+PC19B_TARGET4-2=……！
+# Dee
+PC19B_TARGET4-3=它发狂了！
+# Brok
+PC19B_TARGET4-4=让我来应付它。
+#----------------------------------------------------
+# Brok
+PC19B_TARGET5_ALTERNATIVE-1=你是对的，博士！
+# Brok
+PC19B_TARGET5_ALTERNATIVE-2=他们现在在追捕你！
+# Gherkin
+PC19B_TARGET5_ALTERNATIVE-3=现在你相信我了吗？
+#----------------------------------------------------
+# Brok
+PC19B_TARGET5-1=果然不出所料。
+# Brok
+PC19B_TARGET5-2=它们在追杀的不是博士……
+# Brok
+PC19B_TARGET5-3=而是我！
+# Gherkin
+PC19B_TARGET5-4=我的天！
+# Dee
+PC19B_TARGET5-5=等一下……
+# Dee
+PC19B_TARGET5-6=我们身陷此险境……全是因为你？！
+# Dee
+PC19B_TARGET5-7=我真的很想知道，你究竟做了什么事？！
+# Brok
+PC19B_TARGET5-8=说实话，我也不知道！
+# Brok
+PC19B_TARGET5-9=不过……我最近是有摧毁过很多机器人，但那都是自卫而已！
+# Dee
+PC19B_TARGET5-10=它们可是没有自主意识的。
+# Dee
+PC19B_TARGET5-11=所以一定是有人想干掉你！
+# Dee
+PC19B_TARGET5-12=话说起来……如果你一条命可以换来我们的安全的话……
+# Brok
+PC19B_TARGET5-13=啊！别说了。
+# Brok
+PC19B_TARGET5-14=我会想办法弄清楚情况。但首先我需要你们坦白相告！
+# Brok
+PC19B_TARGET5-15=博士……你先来吧。
+# Gherkin
+PC19B_TARGET5-16=别接近我！你会引来机器人！
+# Brok
+PC19B_TARGET5-17=别这样！理智一点！
+# Gherkin
+PC19B_TARGET5-18=我觉得跟你保持距离会比较安全！
+# Brok
+PC19B_TARGET5-19=唔……那我就让你跟她独处好了。
+# Dee
+PC19B_TARGET5-20=唔。
+# Gherkin
+PC19B_TARGET5-21=……
+# Gherkin
+PC19B_TARGET5-22=不、不要啊……！
+# Gherkin
+PC19B_TARGET5-23=惨了惨了……看来无论如何我都是完蛋了……
+# Brok
+PC19B_TARGET5-24=博士，既然机器人袭击的目标不是你……
+# Brok
+PC19B_TARGET5-25=那你当初为何打给我求救？
+# Gherkin
+PC19B_TARGET5-26=我、我当时不知道呀！
+# Gherkin
+PC19B_TARGET5-27=不过现在一切都说得通了。
+# Gherkin
+PC19B_TARGET5-28=今早……我独自待在工厂里。
+# Brok
+PC19B_TARGET5-29=独自……？
+# Gherkin
+PC19B_TARGET5-30=是的。制药过程都是全自动化的，不需要人类操作员。
+# Gherkin
+PC19B_TARGET5-31=其实……我今天去工厂就是为了药丸短缺的事。
+# Gherkin
+PC19B_TARGET5-32=我当时快要弄清楚问题的缘由了，但就在那一刻……
+# Gherkin
+PC19B_TARGET5-33=一大波机器人突然冲出工厂，还把我给撞倒了！
+# Gherkin
+PC19B_TARGET5-34=我当时就推测它们是失控了！
+# Gherkin
+PC19B_TARGET5-35=我很紧张……就一路跑到外面的警卫箱然后……
+# Gherkin
+PC19B_TARGET5-36=接下来的你都知道了。
+# Brok
+PC19B_TARGET5-37=那个……你难道不认为把所有的岗位都让铁罐头来担当是很冒险的决定吗……？
+# Gherkin
+PC19B_TARGET5-38=才不呢！工厂的生产一直以来都非常高效！
+# Gherkin
+PC19B_TARGET5-39=但这件事实在是太诡异了。
+# Gherkin
+PC19B_TARGET5-40=工厂的这些机器人都是被编程于执行单独一项差事，它们不该懂得攻击人的呀！
+# Brok
+PC19B_TARGET5-41=恕我直言……那些程序什么的向来都是不靠谱的。
+# Brok
+PC19B_TARGET5-42=对了，你是怎么拥有这个地堡的使用权限的？
+# Brok
+PC19B_TARGET5-43=毕竟，你可不是贫民区的居民。
+# Gherkin
+PC19B_TARGET5-44=……
+# Gherkin
+PC19B_TARGET5-45=那、那个……是这样的……
+#----------------------------------------------------
+# Gherkin
+#Dee presses the button
+PC19B_TARGET6-1=啊啊啊！
+# Brok
+PC19B_TARGET6-2=他昏过去了……
+# Brok
+PC19B_TARGET6-3=你这人究竟咋了？！
+# Dee
+PC19B_TARGET6-4=他是不会坦白的。
+# Brok
+PC19B_TARGET6-5=难不成你就会对我坦白？！
+# Dee
+PC19B_TARGET6-6=这一次……是的。
+# Brok
+PC19B_TARGET6-7=那好，我洗耳恭听。
+# Dee
+PC19B_TARGET6-8=身为政府的成员，他拥有城市的所有“钥匙”。
+# Brok
+PC19B_TARGET6-9=我已经猜到了，只是想让他自己承认。
+# Brok
+PC19B_TARGET6-10=算了……反正我也累了。
+# Brok
+PC19B_TARGET6-11=我来查看这房间吧。
+# Dee
+PC19B_TARGET6-12=别浪费精力了。
+#----------------------------------------------------
+# Brok
+PC19B_DEE_NOTYET-1=还不行……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - After checking the room, Dee tells her story
+# *****************************************************************
+# Dee
+PC19B_DEE1-1=你弄好了没？
+# Brok
+PC19B_DEE1-2=我们真的被困在这里了……
+# Dee
+PC19B_DEE1-3=我刚才已经告诉过你了，不过我确定我们一定可以逃出去的。
+# Brok
+PC19B_DEE1-4=别的事先不说。
+# Brok
+PC19B_DEE1-5=说说你自己吧，从头开始介绍一下！
+# Dee
+PC19B_DEE1-6=……
+# Dee
+PC19B_DEE1-7=如你所知，我是位记者。
+# Dee
+PC19B_DEE1-8=刚开始时，我是抱着激情和梦想踏入这个行业的。
+# Dee
+PC19B_DEE1-9=我是打算通过这个工作来发掘真相，为这个愈发冷漠的社会贡献出一些改变。
+# Dee
+PC19B_DEE1-10=所以我厌倦了撰写那些“如何烹饪出最美味的蠕虫蛋糕”或者“本年度最佳直播”之类的专栏文章。
+# Dee
+PC19B_DEE1-11=之后……我开始私底下调查某个案子。
+# Brok
+PC19B_DEE1-12=你不是还有个家庭要照顾吗？
+# Dee
+PC19B_DEE1-13=是的，但是时间挤挤总会有的！
+# Brok
+PC19B_DEE1-14=对哦……忘了你们市民一天只工作4个小时。
+# Dee
+PC19B_DEE1-15=你这是刻板印象。
+# Dee
+PC19B_DEE1-16=打从小时候开始，我就察觉到很多……变化。
+# Dee
+PC19B_DEE1-17=市民的生活逐渐变得淡漠，大家都活在自己的幻象泡沫中。
+# Brok
+PC19B_DEE1-18=这有什么好奇怪的……？
+# Dee
+PC19B_DEE1-19=这种程度的确没什么。
+# Dee
+PC19B_DEE1-20=我调查过我们社会的所有活动的变化……
+# Dee
+PC19B_DEE1-21=最终发现了些重点。
+# Dee
+PC19B_DEE1-22=当我准备通过我上班的媒体公开这些发现时，麻烦找上门来了。
+# Dee
+PC19B_DEE1-23=其实，有样东西我看得比自己的事业还要重要……
+# Brok
+PC19B_DEE1-24=你自己？
+# Dee
+PC19B_DEE1-25=不是！是我的家庭。
+# Dee
+PC19B_DEE1-26=我的同事发现了阿信……跟别的女生外遇的视频。
+# Dee
+PC19B_DEE1-27=我当时彻底暴走了。
+# Dee
+PC19B_DEE1-28=他背叛了我，背叛了我们的女儿。
+# Dee
+PC19B_DEE1-29=在我面前，同事们都假装很同情我……
+# Dee
+PC19B_DEE1-30=但是在背后，他们都幸灾乐祸。
+# Dee
+PC19B_DEE1-31=我受不了了，我生气到极点。
+# Dee
+PC19B_DEE1-32=所以我辞职了。
+# Dee
+PC19B_DEE1-33=正因为如此……我失去了传播信息的最佳途径。
+# Brok
+PC19B_DEE1-34=接下来的事我似乎有些头绪了……
+# Dee
+PC19B_DEE1-35=我跟阿信吵架了，他说自己是被冤枉的。
+# Dee
+PC19B_DEE1-36=我没听他的话。我不相信他，你让我怎么相信他？
+# Dee
+PC19B_DEE1-37=证据都有了！那视频也不像是伪造的。
+# Dee
+PC19B_DEE1-38=但是他坚持自己是清白的，他不肯认错也不肯道歉……
+# Brok
+PC19B_DEE1-39=……所以你威胁他要办理驱逐程序。
+# Dee
+PC19B_DEE1-40=是的……
+# Dee
+PC19B_DEE1-41=不过……他最后自行离开了。
+# Dee
+PC19B_DEE1-42=虽然如此，但是我没放弃自己的调查。我联系了其他的媒体。
+# Dee
+PC19B_DEE1-43=他们都拒绝我的报道，每一家媒体都是如此。
+# Dee
+PC19B_DEE1-44=这毫无道理呀！为何所有的新闻媒体都不想报道这种头条材料的新闻？
+# Dee
+PC19B_DEE1-45=我没有证据所以只是猜测，但是从逻辑上来说……
+# Dee
+PC19B_DEE1-46=这些媒体都只是表面工程。
+# Brok
+PC19B_DEE1-47=你之前提到来着。
+# Brok
+PC19B_DEE1-48=市区的所有信息都是由某个存在所控制的，对吧？
+# Dee
+PC19B_DEE1-49=是的。
+# Dee
+PC19B_DEE1-50=当我所有的证据都突然凭空消失后……我就更加相信自己的这个推论了。
+# Dee
+PC19B_DEE1-51=我的所有数据备份都是储存在自己的基因里的。
+# Dee
+PC19B_DEE1-52=但是就连原始资料和相关的所有信息……
+# Dee
+PC19B_DEE1-53=都通通消失了。
+# Dee
+PC19B_DEE1-54=就好像一切都只是我凭空想象出来的一般。
+#----------------------------------------------------
+# Dee
+PC19B_DEE1B-1=我的朋友都开始认为我精神失常。
+# Dee
+PC19B_DEE1B-2=他们甚至打算送我去精神病院。
+# Brok
+PC19B_DEE1B-3=哈哈……
+# Dee
+PC19B_DEE1B-4=闭嘴！这并不好笑。
+# Dee
+PC19B_DEE1B-5=他们甚至把我女儿给带走了！
+# Dee
+PC19B_DEE1B-6=他们不信任我！
+# Dee
+PC19B_DEE1B-7=我失去了一切。
+# Dee
+PC19B_DEE1B-8=我的工作，我的家庭，我的朋友，还有我的心智……
+# Dee
+PC19B_DEE1B-9=但是这一切厄运终于要逆转了。
+# Dee
+PC19B_DEE1B-10=一直以来我都在衣服里藏了一块记忆芯片。
+# Dee
+PC19B_DEE1B-11=但是在某次调查期间，它出现了故障无法连接网络。
+# Dee
+PC19B_DEE1B-12=当时我就在想，我要是联网打开它的话，里头的备份数据被删除掉怎么办……？
+# Dee
+PC19B_DEE1B-13=但是不联网的话我又无法打开它。
+# Dee
+PC19B_DEE1B-14=所以……我就来到了贫民区将芯片交给了某个叫幽暗的家伙。
+# Brok
+PC19B_DEE1B-15=哈哈，那个鼠人真是无处不在呀！
+# Dee
+PC19B_DEE1B-16=他当时是我的最后希望了，那是我证明自己并非失心疯的最后机会。
+# Dee
+PC19B_DEE1B-17=结果我赌对了。
+# Dee
+PC19B_DEE1B-18=数据的确在里面。虽然只保存了部分的调查证据，但足以验证我的所有推论。
+# Dee
+PC19B_DEE1B-19=现在我才明白当初自己是多么的愚蠢……
+# Dee
+PC19B_DEE1B-20=这一切都是个圈套。
+# Dee
+PC19B_DEE1B-21=那个出轨视频是伪造的。手段非常高超，以肉眼根本无法看得出来。
+# Dee
+PC19B_DEE1B-22=他们摧毁我的生活只是为了一个原因……
+# Dee
+PC19B_DEE1B-23=阻止我揭露真相！
+# Brok
+PC19B_DEE1B-24=但对方究竟是谁呢？而且是什么真相……？
+# Gherkin
+PC19B_DEE1B-25=唔……
+# Brok
+PC19B_DEE1B-26=咱们的博士朋友醒过来了。
+# Dee
+PC19B_DEE1B-27=时间刚刚好。
+# Gherkin
+PC19B_DEE1B-28=……
+# Gherkin
+PC19B_DEE1B-29=我身体很不舒服……
+# Gherkin
+PC19B_DEE1B-30=求求你松开我吧。
+# Dee
+PC19B_DEE1B-31=除非你愿意招供！
+# Dee
+PC19B_DEE1B-32=快承认吧！你是一名政府议员。
+# Gherkin
+PC19B_DEE1B-33=我、我根本不知道你在说什么！
+# Dee
+PC19B_DEE1B-34=那好吧。
+# Dee
+PC19B_DEE1B-35=或许再按一次这按钮能够唤醒你的记忆力。
+# Gherkin
+PC19B_DEE1B-36=别、别呀……！
+# Brok
+PC19B_DEE1B-37=快住手！
+# Brok
+PC19B_DEE1B-38=接下来交给我吧。
+# Dee
+PC19B_DEE1B-39=没门！
+# Brok
+PC19B_DEE1B-40=信我一次吧！你这样一直威胁他是没有效果的。
+# Dee
+PC19B_DEE1B-41=哼……
+# Dee
+PC19B_DEE1B-42=好吧。随你便吧，侦探。
+# Brok
+PC19B_DEE1B-43=就让我来收集这个谜题的线索吧！
+#----------------------------------------------------
+# Brok
+PC19B_DEE2-1=博士。我看得出来你有心事，而且你目前的处境并不舒服，不过……
+# Brok
+PC19B_DEE2-2=你必须相信我。
+# Gherkin
+PC19B_DEE2-3=呃……好、好吧……
+# Brok
+PC19B_DEE2-4=首先，咱们聊聊今早的事吧。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Interrogation
+# *****************************************************************
+# Brok
+PC19B_GHERKIN_RESUME-1=我们继续吧。
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_EXIT1-1=我需要些时间消化这一切信息。
+# Dee
+PC19B_GHERKIN_EXIT1-2=现在可是分秒必争的时候！
+# Brok
+PC19B_GHERKIN_EXIT1-3=就给我一分钟，好吗？
+# Dee
+PC19B_GHERKIN_EXIT1-4=……好吧。
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_BAD_SCARED-1=（不对。博士可没那胆量独自去破坏所有的药丸运管，而且还是在不被发现的情况下。）
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_BAD_CONTROL-1=（看来政府的确是暗中控制着很多东西，不过……这也是正常的。）
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_BAD_KNOW-1=（对，博士知道是很正常的……那接下来呢？）
+#----------------------------------------------------
+# Brok
+PC19B_INTERROGATE_OUTJAIL-1=（连警察局长都无权关押我。我可不是罪犯！）
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE_ALT-1=你今早说过那些三角机器人改变了行为模式。
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE_ALT-2=而且我们已经证明他们是专门针对你的！
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-1=你今早说过那些三角机器人改变了行为模式。
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-2=而恰恰是在同一个早上，我在自己的家中被三角机器人袭击了！
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-3=你在它们离开工厂前没发现任何奇怪的现象吗？
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-4=离开工厂前……
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-5=你这么一说我倒是想起来了……
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-6=它们更新了固件。
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-7=更新固件……
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-8=那是由谁负责管理的？
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-9=我们有个专属的实验室负责研究人工智能技术的。
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-10=对……我昨天就碰见过其中两位科学家。
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-11=是他们发过来的固件吗？
+# Gherkin
+PC19B_CLUE_TRIBOT_FIRMWARE-12=不是，是否将固件推送到生产线是由政府来决定的。
+# Brok
+PC19B_CLUE_TRIBOT_FIRMWARE-13=这样子呀……？
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-1=博士，你究竟对药丸运管动过了什么手脚？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-2=我尝试修复它们。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-3=尝试……
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-4=也就是说失败了？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-5=嗯……
+# Dee
+PC19B_CLUE_GHERKIN_SIGNATURE-6=他说得对，我亲自检查过。
+# Dee
+PC19B_CLUE_GHERKIN_SIGNATURE-7=在你维修过后，药丸运管依然没有恢复运作。
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-8=对的，其实……
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-9=我也搞不清楚是怎么回事。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-10=说来听听？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-11=我在工厂时发现药丸被停止运送到贫民区的原因是因为缺乏签名验证。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-12=签名……？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-13=每个药丸运管都会先验证药丸的真实性才会把药丸发送出去。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-14=为啥？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-15=否则的话，任何人都可以利用运管来运送不合法的药物了！
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-16=但问题是……贫民区的签名全都消失了。
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-17=可能是因为受到了外部损伤。
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-18=所以我就尝试将签名重新输入进每一个药丸运管。
+# Dee
+PC19B_CLUE_GHERKIN_SIGNATURE-19=太蠢了！为何不一次性更改所有的药丸运管呢？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-20=不行！这是硬件限制，必须通过实体接触才可以更改签名。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-21=那好吧……我们分工合作吧，这样效率会比较快！
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-22=不可能。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-23=啊，你们这些搞科技的人就是爱把简单的事情弄得很复杂。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-24=为何不可？
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-25=别跟我说全国就只有你一个人懂得更改签名？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-26=猜对了。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-27=啥？！
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-28=这签名是绝对机密，不然还要验证来干嘛。
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-29=你是开玩笑吧！那你要是有个三长两短怎么办？
+# Gherkin
+PC19B_CLUE_GHERKIN_SIGNATURE-30=所以我才会雇佣你呀？
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-31=呃……
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-32=等等……
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-33=如果这是真的话，那么……
+# Brok
+PC19B_CLUE_GHERKIN_SIGNATURE-34=我们之前的猜测就说得通了。
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-1=格金博士，看来你是位很重要的人物。对不对？
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-2=当、当然，我可是管理制药厂……
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-3=不不不，你的身份比那还要重要。
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-4=你究竟是怎么知道药丸运管的签名的？
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-5=……
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-6=这、这是……机密……
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-7=我的耐心耗尽了。让我按那按钮吧。
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-8=好，动手吧。
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-9=别……别呀！求求你们！
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-10=……唉……你赢了……
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-11=是的，我是政府议员。
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-12=这个签名向来都只有议员才知道。
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-13=终于招认了！
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-14=快把所有事情从实招来！
+# Gherkin
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-15=我不知道从何说起呀！
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-16=就先说说数量，你们一共有多少人？
+# Dee
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-17=答案很明显呀。
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-18=嗯……
+# Brok
+PC19B_CLUE_GHERKIN_GHERKINGOVERNMENT2-19=你这么一说，原来我一直都知道答案了。
+#----------------------------------------------------
+# Brok
+PC19B_PICKONE_TRIANGLE_WRONG1-1=（不对……）
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-1=三角议会……
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-2=一共有三位成员。
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-3=对的……
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-4=不过……我不认识其他的成员。
+# Dee
+PC19B_CLUE_GHERKIN_TRIANGLE-5=骗子！
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-6=我发誓真不知道！这……这向来都是这种规矩！
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-7=整个机制就是需要我们各自做出自主的决定。
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-8=这样可以防止任何人的决定受到其他人的影响。
+# Dee
+PC19B_CLUE_GHERKIN_TRIANGLE-9=呃……真是墨守成规的书呆子规矩。
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-10=这一点我很同意。
+# Gherkin
+PC19B_CLUE_GHERKIN_TRIANGLE-11=这世上没有完美的治理制度！这是很复杂的课题。
+# Brok
+PC19B_CLUE_GHERKIN_TRIANGLE-12=咱们还是说回手头上的事情吧。
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-1=你之前说过三角机器人的固件更新是由政府控制的……
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-2=而你正是政府的一份子！
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATALT-3=显而易见！政府的人派三角机器人来追杀你！
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-1=你之前说过三角机器人的固件更新是由政府控制的……
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-2=而你正是政府的一份子！
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-3=一定是你！是你命令那些机器人来追杀我的！
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-4=不、不是我！我没有！
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-5=你最好想个能够说服我的理由，博士。
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-6=我、我真不知道……！
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-7=这……这本来就不应该发生的！
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-8=我告诉你……我们每次做决定都是按照相同的程序的……
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-9=每当出现新的问题时，我们都会以中立的态度去观察问题。
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-10=中立个屁……
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-11=我们一共有三位成员。但是，想要通过任何决定都必须获得全体同意。
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-12=换句话说，只要有一位成员投反对票，就足以阻止任何决定生效。
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-13=我是工程师，我看得懂代码。
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-14=我是绝对不会同意的！
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-15=而且我要是知道你就是引发机器人失控的因素……
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-16=喂，现在我才是受害者！
+# Gherkin
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-17=那我为何还要接近你让自己承受生命危险？
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-18=他说得有道理。
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-19=即使那些机器人攻击的目标不是他，但是在乱战中是很难避免造成误伤的。
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-20=既然如此……
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-21=一定是其他某位议员打算除掉你，甚至是两人联手也说不定。
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-22=好……好极了，我的前途越来越光明了。
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-23=至少你现在知道了敌人的身份，我们会想办法解决这一切的。
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-24=前提是我能够存活下来。
+# Dee
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-25=放心吧，你用力一跳就能够压倒一大片机器人了。
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-26=这可不好笑。
+# Brok
+PC19B_CLUE_TRIANGLE_TRIBOTSUPDATE-27=（唯一可以庆幸的是……三角机器人不会伤害格拉夫。）
+#----------------------------------------------------
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-1=别只想着你自己！该轮到我问问我的事了！
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-2=耐心点！
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-3=这位，呃……女士怀疑是因为自己调查了见不得光的事情而被政府蓄意破坏了生活。
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-4=与此同时，她也认为所有的媒体都是由政府幕后操纵的。
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-5=她的猜测是正确的吗？
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-6=呃……部分是对的。
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-7=我们只会针对重要的事情做出决……
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-8=原来真是你？！你个卑鄙的……
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-9=等等……！我没做错任何事情！
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-10=没做错？！
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-11=你毁了我的生活！！
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-12=啊！
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-13=冷静点！
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-14=我……我从未针对你做出过任何决定呀！
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-15=不然的话我肯定会认得你的！那样的话我根本不会同意跟你见面！
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-16=我同意，换作是我肯定会有多远躲多远……
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-17=闭嘴！
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-18=那你说是谁？！
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-19=一定是其他的……三角议会成员……
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-20=哼，你说谁都可以！
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-21=高高在上的政府议员现在却在推卸责任！
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-22=拜托……
+# Gherkin
+PC19B_CLUE_TRIANGLE_DEELIFE-23=我一直在尽力地去帮助所有人！
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-24=我相信你。
+# Dee
+PC19B_CLUE_TRIANGLE_DEELIFE-25=哈！我会证明你信错人的。
+# Brok
+PC19B_CLUE_TRIANGLE_DEELIFE-26=咱们继续吧。虽然有用的信息不多，但我有种预感……
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT-1=阿迪，你也许没察觉……
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAALT-2=但是你们两个都被三角议会的成员盯上了。
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-1=阿迪，你也许没察觉……
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-2=但是我们两个都被三角议会的成员盯上了。
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-3=如果我们真想解决问题……那最好携手合作。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-4=……
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-5=或许你是时候讲解下你的那个调查了。
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-6=你究竟在调查什么？
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-7=这或许有助于我们目前的问题。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-8=……好吧。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-9=多年来，我见识到了我们社会的多处功能失调的地方。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-10=而在知道我们被统治的方式后……我已经不感到惊讶了。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-11=总之，目前最严重的问题是贫民区的囚犯们的命运。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-12=在过去几个月以来，每位囚犯都被判处了死刑。
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-13=每一位……？
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-14=我验证过了所有的信息来源。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-15=每位囚犯在入狱后不久都会失去生命体征。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-16=无论是戒备森严的监狱还是普通的拘留所，结果都是一样。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-17=他们……就像人间蒸发一般。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-18=与此同时，被焚化或者被回收的尸体数量在剧增。
+# Dee
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-19=所以不难猜出他们的下场。
+# Gherkin
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-20=这……这不可能……！
+# Brok
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-21=有什么想要补充的吗，博士？
+# Gherkin
+PC19B_CLUE_DEE_CRIMINALSDISAPPEAR-22=……
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-1=我再问你一次，博士……
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-2=我知道你要说什么，所以我就长话短说吧。
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-3=是的，三角议会有权力裁决囚犯。
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-4=在每次调查结束后，我们会收到所有相关的信息然后做出最后裁决……
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-5=监禁或者死刑。
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-6=是的……不过……
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-7=她刚才说的根本就不可能发生……！
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-8=我有证据！
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-9=你解释解释！
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-10=我向来都会投反对票。
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-11=而只要一票反对就足以阻止死刑！我之前也告诉过你们的！
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-12=你怎么确定真是如此？
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-13=你是否有在事后去验证过？！
+# Gherkin
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-14=没……没有……
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-15=等一下……！
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-16=所有的囚犯……都被处死了……？
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-17=是的，平均入狱两天后就会被处以死刑。
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-18=两天？！
+# Brok
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-19=如果这是真的话……那就是说！
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-20=怎么了……？发生什么事了？
+# Dee
+PC19B_CLUE_GHERKIN_PRISONERSKILLED-21=快说！
+#----------------------------------------------------
+# Brok
+PC19B_CLUE_SIN_DANGER-1=阿迪，你还记得你丈夫雇用我调查些事吗……？
+# Brok
+PC19B_CLUE_SIN_DANGER-2=那次……结果不是很顺利。
+# Dee
+PC19B_CLUE_SIN_DANGER-3=什么意思……？
+# Brok
+PC19B_CLUE_SIN_DANGER-4=他入狱了，就在警察局的拘留所。
+# Dee
+PC19B_CLUE_SIN_DANGER-5=不！
+# Dee
+PC19B_CLUE_SIN_DANGER-6=多久了？！
+# Brok
+PC19B_CLUE_SIN_DANGER-7=几天前……
+# Dee
+PC19B_CLUE_SIN_DANGER-8=我得去找他！
+# Dee
+PC19B_CLUE_SIN_DANGER-9=马上走！
+# Brok
+PC19B_CLUE_SIN_DANGER-10=不行！
+# Dee
+PC19B_CLUE_SIN_DANGER-11=那些机器人追杀的是你！不是我！
+# Brok
+PC19B_CLUE_SIN_DANGER-12=外头有数以百计的机器人包围着我们！你还跟它们交过手！
+# Brok
+PC19B_CLUE_SIN_DANGER-13=它们照样会消灭你的！
+# Dee
+PC19B_CLUE_SIN_DANGER-14=我必须冒险！
+# Brok
+PC19B_CLUE_SIN_DANGER-15=就算让你到了警局又如何？
+# Brok
+PC19B_CLUE_SIN_DANGER-16=警卫是不会放你进去的，更别说带他离开！
+# Brok
+PC19B_CLUE_SIN_DANGER-17=而且……
+# Brok
+PC19B_CLUE_SIN_DANGER-18=这件事我有责任。
+# Brok
+PC19B_CLUE_SIN_DANGER-19=我本来有机会救他出来的。
+# Brok
+PC19B_CLUE_SIN_DANGER-20=我很熟悉那地方！让我帮你吧！
+# Dee
+PC19B_CLUE_SIN_DANGER-21=……
+# Dee
+PC19B_CLUE_SIN_DANGER-22=希望我不会后悔这次的决定。
+#----------------------------------------------------
+# Dee
+PC19B_INTERROGATION_OVER-1=首先，咱们得想办法离开这里！
+# Brok
+PC19B_INTERROGATION_OVER-2=我马上去办！
+# Gherkin
+PC19B_INTERROGATION_OVER-3=那我呢……？
+# Brok
+PC19B_INTERROGATION_OVER-4=动动你的脑子！想想有什么可以帮上忙的！
+# Gherkin
+PC19B_INTERROGATION_OVER-5=啊……还以为你会有办法救我出去呢。
+#----------------------------------------------------
+# Brok
+PC19B_DEE_AFTER-1=有什么发现吗？
+# Dee
+PC19B_DEE_AFTER-2=没什么收获……
+# Brok
+PC19B_DEE_AFTER-3=别担心。让我来吧！
+# Dee
+PC19B_DEE_AFTER-4=……谢谢。
+# Brok
+PC19B_DEE_AFTER-5=（她明显心事重重。我还是自己来吧）
+#----------------------------------------------------
+# Brok
+PC19B_GHERKIN_INV_DEFAULT-1=拿着这个。
+# Gherkin
+PC19B_GHERKIN_INV_DEFAULT-2=为啥？你留着吧。
+#----------------------------------------------------

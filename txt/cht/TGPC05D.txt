@@ -1,0 +1,1340 @@
+#-------------------------------
+#=GRAFF --- SEWERS BELOW
+#-------------------------------
+
+#----- Interactions --------
+# A little kichen hook that Graff can use to cut his rope
+PC_HOOK=掛勾
+PC_CUPBOARD=櫥櫃
+PC_BAG=袋子
+PC_TABLE=桌子
+# A sewers access we can see in the background that is sealed with bars
+PC_TUNNEL=隧道
+PC_STUFF=雜物
+PC_ROPE=繩索
+
+#----- Choices / Items --------
+TUTORIAL_ROPEHOOK_MSG_MOUSE=重覆按<button=INPUT_ACTION_SWITCH_MODE>或<spr=CONTROL_mouseleft>以切割
+TUTORIAL_ROPEHOOK_MSG_GAMEPAD=重覆按<button=INPUT_ACTION_SWITCH_MODE>以切割
+
+#----- Topics --------
+
+PC05D_ROPEHOOKEND_CHOICE=繼續坐在椅子上？
+PC05D_ROPEHOOKEND_YES=是，繼續
+PC05D_ROPEHOOKEND_NO=否，起身
+GOT_PIPEWEAPON=一根管子！
+
+PC05D_CHOICEBOMB=你打算救誰？
+PC05D_CHOICEBOMB_GROUP=醫院病人
+PC05D_FIGHT=戰鬥
+PC05D_SURRENDER=投降
+PC05D_SURPRISEATTACK_CHOICE=嘗試偷襲？
+
+
+#----- Dialog --------
+
+
+
+###############################################
+# PROOFREAD - jblaker - 04/09/2019
+###############################################
+
+
+
+
+# *****************************************************************
+# CONTEXT - Graff has been kidnapped by the rats. He's waking up...
+# *****************************************************************
+# Graff
+GPC05D_FIRST-1=……
+# Graff
+GPC05D_FIRST-2=啊……我的腦袋……
+# Graff
+GPC05D_FIRST-3=糟糕……我被綁住了……！
+# Graff
+GPC05D_FIRST-4=這……這情況不妙……
+# Graff
+GPC05D_FIRST-5=……
+# Graff
+GPC05D_FIRST-6=繩索有點鬆脫了，再加把勁應該就可以移動了！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff meets rat chief
+# *****************************************************************
+# Chiefrat
+GPC05D_CHIEFRAT_NORMAL-1=唷，小公主！終於醒來了？
+# Graff
+GPC05D_CHIEFRAT_NORMAL-2=……
+#----------------------------------------------------
+# Chiefrat
+#If Graff moved and was spotted by the chief
+GPC05D_CHIEFRAT_SPOTTED-1=你在跟我開玩笑吧，小子！
+# Chiefrat
+GPC05D_CHIEFRAT_SPOTTED-2=你真以為能從我們眼中逃走？
+#----------------------------------------------------
+# Chiefrat
+#If Graff had picked the pipe chunk
+GPC05D_CHIEFRAT_SURRENDERWEAPON-1=把你藏的武器給丟了。
+# Graff
+GPC05D_CHIEFRAT_SURRENDERWEAPON-2=呃……好吧……
+#----------------------------------------------------
+# Graff
+#Surrender
+GPC05D_CHIEFRAT_SURRENDER-1=求求你……別傷害我……
+# Chiefrat
+GPC05D_CHIEFRAT_SURRENDER-2=哼。孬種！
+#----------------------------------------------------
+# Chiefrat
+#If Graff moved from his original position
+GPC05D_CHIEFRAT_MOVED-1=咦！你好像移動了位置，呵……
+#----------------------------------------------------
+# Chiefrat
+GPC05D_CHIEFRAT_MOVED2-1=你最好別做怪，否則我就綁得更緊，到時候……你可別痛到哇哇叫。
+# Graff
+GPC05D_CHIEFRAT_MOVED2-2=你有這麽好心？
+# Chiefrat
+GPC05D_CHIEFRAT_MOVED2-3=因為你可是我們的貴賓呀！
+#----------------------------------------------------
+# Chiefrat
+#If Graff is spotted while cutting his rope
+GPC05D_CHIEFRAT_CUTROPE-1=哦，真有趣！你是打算用那個掛勾割開繩索嗎……？
+#----------------------------------------------------
+# Chiefrat
+#If he took the pipe chunk
+GPC05D_CHIEFRAT_DROPWEAPON-1=咦！你竟然在背後藏了武器？
+# Chiefrat
+GPC05D_CHIEFRAT_DROPWEAPON-2=小貓咪壞壞哦！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_CHIEFRAT_MOVED3-1=給我乖乖回到原位。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - If Graff hits the rat chief with the pipe chunk by surprise
+# *****************************************************************
+# Chiefrat
+GPC05D_SURPRISEATTACK1-1=哎喲！
+#----------------------------------------------------
+# Graff
+GPC05D_SURPRISEATTACK2-1=搞定了！
+# Kins
+GPC05D_SURPRISEATTACK2-2=……？
+# Kins
+GPC05D_SURPRISEATTACK2-3=怎麽回事，老大？
+# Graff
+GPC05D_SURPRISEATTACK2-4=糟糕！他們要過來了！
+#----------------------------------------------------
+# Kins
+GPC05D_SURPRISEATTACK3-1=你做了甚麼，小貓咪？！
+# Kins
+GPC05D_SURPRISEATTACK3-2=這下你死定了！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - First dialog with the rat chief
+# *****************************************************************
+# Graff
+GPC05D_FIRSTDIALOG-1=你就是他們的老大吧？
+# Chiefrat
+GPC05D_FIRSTDIALOG-2=挺有眼光的嘛！
+# Chiefrat
+GPC05D_FIRSTDIALOG-3=你叫格拉夫，對吧？我看你和你朋友都是聰明人。
+# Graff
+GPC05D_FIRSTDIALOG-4=奧特？！
+# Graff
+GPC05D_FIRSTDIALOG-5=你不要傷害他！
+# Chiefrat
+GPC05D_FIRSTDIALOG-6=哈！只要你們肯乖乖合作，就不會有事。
+# Graff
+GPC05D_FIRSTDIALOG-7=你想要什麽？
+# Chiefrat
+GPC05D_FIRSTDIALOG-8=哎喲，少裝了！你這麽聰明的孩子肯定知道！
+# Graff
+GPC05D_FIRSTDIALOG-9=……
+# Graff
+GPC05D_FIRSTDIALOG-10=你綁架我們是為了錢。
+# Chiefrat
+GPC05D_FIRSTDIALOG-11=這麽說也不算錯，但其實……
+# Chiefrat
+GPC05D_FIRSTDIALOG-12=沒那麽簡單。
+# Graff
+GPC05D_FIRSTDIALOG-13=那你說啊……
+# Chiefrat
+GPC05D_FIRSTDIALOG-14=夠了，該問問題的人是我！
+# Chiefrat
+GPC05D_FIRSTDIALOG-15=你現在感覺舒服嗎？
+# Graff
+GPC05D_FIRSTDIALOG-16=甚麼……？
+# Graff
+GPC05D_FIRSTDIALOG-17=你覺得呢？
+# Graff
+GPC05D_FIRSTDIALOG-18=我被綁架到這個臭得要命的下水道中！
+# Chiefrat
+GPC05D_FIRSTDIALOG-19=抱歉，我們已經盡力讓這地方能住人了。
+# Chiefrat
+GPC05D_FIRSTDIALOG-20=你餓嗎？口渴嗎？
+# Graff
+GPC05D_FIRSTDIALOG-21=少在那邊假惺惺！
+# Graff
+GPC05D_FIRSTDIALOG-22=告訴我，你到底想怎樣？否則就快放我離開！
+# Chiefrat
+GPC05D_FIRSTDIALOG-23=看來我們的初次邂逅並不算愉快。
+# Chiefrat
+GPC05D_FIRSTDIALOG-24=其實我們並不是壞人，我們是很有素質的。
+# Chiefrat
+GPC05D_FIRSTDIALOG-25=在接下來的三天我們會好好照顧你。
+# Graff
+GPC05D_FIRSTDIALOG-26=三天……？
+# Graff
+GPC05D_FIRSTDIALOG-27=……我知道了！是那個駭客！
+# Graff
+GPC05D_FIRSTDIALOG-28=你跟他是一夥的！是他指使你綁架我！
+# Chiefrat
+GPC05D_FIRSTDIALOG-29=沒錯，那傢伙欠了我們一些債，而你就是他的抵押品。
+# Chiefrat
+GPC05D_FIRSTDIALOG-30=放心吧！等完事後，我們馬上放你走！
+# Graff
+GPC05D_FIRSTDIALOG-31=不行！我才不要待在這裏！
+# Graff
+GPC05D_FIRSTDIALOG-32=我老爸是偵探！他會救我出去的！你們走著瞧！
+# Chiefrat
+GPC05D_FIRSTDIALOG-33=偵探？呵呵……
+# Chiefrat
+GPC05D_FIRSTDIALOG-34=真是幼稚。
+# Chiefrat
+GPC05D_FIRSTDIALOG-35=你真以為他有本事通過我們的層層把關到這裏來嗎？
+# Graff
+GPC05D_FIRSTDIALOG-36=沒錯！他非常厲害！他一定會教訓你們！
+# Graff
+GPC05D_FIRSTDIALOG-37=而且已經不止一次了！
+# Chiefrat
+GPC05D_FIRSTDIALOG-38=是嗎……
+# Chiefrat
+GPC05D_FIRSTDIALOG-39=是那只鱷魚……而你是他的……！
+#----------------------------------------------------
+# Graff
+GPC05D_FIRSTDIALOG2-1=喂！你要去哪……？
+# Chiefrat
+GPC05D_FIRSTDIALOG2-2=你先等著，我得思考一下。
+# Graff
+GPC05D_FIRSTDIALOG2-3=可是……！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Second dialog with the rat chief
+# *****************************************************************
+# Graff
+GPC05D_SECONDDIALOG1-1=喲！這麽快就想我了？
+# Graff
+GPC05D_SECONDDIALOG1-2=很好！我還有話要跟你說！
+# Chiefrat
+GPC05D_SECONDDIALOG1-3=哦！現在開始膨脹了是嗎？
+# Chiefrat
+GPC05D_SECONDDIALOG1-4=你這演技是想唬誰呢？不就是嚇破膽的小貓咪而已。
+# Graff
+GPC05D_SECONDDIALOG1-5=我...我才不是呢！
+# Chiefrat
+GPC05D_SECONDDIALOG1-6=嗯哼。
+# Chiefrat
+GPC05D_SECONDDIALOG1-7=阿金？
+# Chiefrat
+GPC05D_SECONDDIALOG1-8=阿金！！
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG1_PRECHOICE-1=（……）
+# Graff
+GPC05D_SECONDDIALOG1_PRECHOICE-2=（他現在轉移注意力了……）
+#----------------------------------------------------
+# Kins
+GPC05D_SECONDDIALOG1B-1=哦！呃……我在！
+# Chiefrat
+GPC05D_SECONDDIALOG1B-2=動手。
+# Kins
+GPC05D_SECONDDIALOG1B-3=遵命，老大！
+#----------------------------------------------------
+# Ott
+GPC05D_SECONDDIALOG2-1=（喂！你想幹……）
+# Ott
+GPC05D_SECONDDIALOG2-2=唔唔唔……
+# Graff
+GPC05D_SECONDDIALOG2-3=是……奧特！
+# Graff
+GPC05D_SECONDDIALOG2-4=你們要做什麽！
+# Chiefrat
+GPC05D_SECONDDIALOG2-5=別激動，我們沒傷害他。
+# Chiefrat
+GPC05D_SECONDDIALOG2-6=至少還沒動手。
+# Graff
+GPC05D_SECONDDIALOG2-7=你們想要什麽……？金錢嗎？
+# Graff
+GPC05D_SECONDDIALOG2-8=要什麽盡管拿去！
+# Graff
+GPC05D_SECONDDIALOG2-9=全都拿去，我不在乎！
+# Chiefrat
+GPC05D_SECONDDIALOG2-10=是的，我們會取走你的錢！
+# Chiefrat
+GPC05D_SECONDDIALOG2-11=但我真正想要的……
+# Chiefrat
+GPC05D_SECONDDIALOG2-12=是別的東西。
+# Chiefrat
+GPC05D_SECONDDIALOG2-13=我們來玩一個小遊戲吧！
+# Graff
+GPC05D_SECONDDIALOG2-14=……
+# Chiefrat
+GPC05D_SECONDDIALOG2-15=我吩咐手下將炸彈安裝在兩個地方。
+# Graff
+GPC05D_SECONDDIALOG2-16=炸彈？！
+# Chiefrat
+GPC05D_SECONDDIALOG2-17=第一個炸彈就在另一間房間中你朋友坐著的椅子下。
+# Graff
+GPC05D_SECONDDIALOG2-18=……！
+# Chiefrat
+GPC05D_SECONDDIALOG2-19=另一個更大型的炸彈則放置在55X城區的某間醫院裏。
+# Chiefrat
+GPC05D_SECONDDIALOG2-20=就是那個……醉漢和其他人渣們被送去會被榨乾剩餘財產的地方。
+# Graff
+GPC05D_SECONDDIALOG2-21=醫院？！
+# Graff
+GPC05D_SECONDDIALOG2-22=你想唬我！
+# Chiefrat
+GPC05D_SECONDDIALOG2-23=嘖，我們要打個賭嗎？
+# Chiefrat
+GPC05D_SECONDDIALOG2-24=我們現在對炸藥可算是瞭若指掌。一旦引爆，該炸彈至少能夠殺傷數十人，這還是保守估計！
+# Chiefrat
+GPC05D_SECONDDIALOG2-25=接下來要進入刺激的環節了！
+# Chiefrat
+GPC05D_SECONDDIALOG2-26=選擇權在你手中。
+# Graff
+GPC05D_SECONDDIALOG2-27=選擇……？
+# Graff
+GPC05D_SECONDDIALOG2-28=我為什麽要選擇炸死人？
+# Chiefrat
+GPC05D_SECONDDIALOG2-29=不不不！
+# Chiefrat
+GPC05D_SECONDDIALOG2-30=天呀，我怎麽會要求你做出如此殘忍的決定呢！
+# Chiefrat
+GPC05D_SECONDDIALOG2-31=我只是想讓你選擇……
+# Chiefrat
+GPC05D_SECONDDIALOG2-32=……拯救誰。
+# Chiefrat
+GPC05D_SECONDDIALOG2-33=但問題來了。
+# Chiefrat
+GPC05D_SECONDDIALOG2-34=沒被你選中的人……怎麽說呢……？
+# Chiefrat
+GPC05D_SECONDDIALOG2-35=他們的生命會被突然縮短。
+# Graff
+GPC05D_SECONDDIALOG2-36=你……簡直是禽獸不如！
+# Chiefrat
+GPC05D_SECONDDIALOG2-37=放心吧！我們的炸藥用量很精準。
+# Chiefrat
+GPC05D_SECONDDIALOG2-38=你要是選擇拯救醫院裏那些人，隔壁的炸彈只會炸毀一間房間。
+# Chiefrat
+GPC05D_SECONDDIALOG2-39=也就是你朋友身處的房間。
+# Chiefrat
+GPC05D_SECONDDIALOG2-40=懂？你是不會有事的！
+# Graff
+GPC05D_SECONDDIALOG2-41=我……絕不會配合你……！
+# Chiefrat
+GPC05D_SECONDDIALOG2-42=哦，你肯定會的！
+# Chiefrat
+GPC05D_SECONDDIALOG2-43=因為你要是不做出選擇的話……
+# Chiefrat
+GPC05D_SECONDDIALOG2-44=那我就會同時把兩個炸彈都引爆。
+# Graff
+GPC05D_SECONDDIALOG2-45=不……不要……
+# Graff
+GPC05D_SECONDDIALOG2-46=我不玩這遊戲……！
+# Chiefrat
+GPC05D_SECONDDIALOG2-47=我已經說得很清楚了，規則就是規則。
+# Chiefrat
+GPC05D_SECONDDIALOG2-48=我已經手癢難耐了。
+# Chiefrat
+GPC05D_SECONDDIALOG2-49=你要是不點，那我可能就會手滑按到隨便一個按鈕了！
+# Chiefrat
+GPC05D_SECONDDIALOG2-50=好了！我給你10秒時間選擇。
+# Chiefrat
+GPC05D_SECONDDIALOG2-51=否則就全部引爆！
+# Chiefrat
+GPC05D_SECONDDIALOG2-52=你做決定吧！
+# Chiefrat
+GPC05D_SECONDDIALOG2-53=究竟要拯救誰？
+# Chiefrat
+GPC05D_SECONDDIALOG2-54=是救你的朋友，或者一群素未謀面的廢物？
+# Chiefrat
+GPC05D_SECONDDIALOG2-55=滴答滴答！
+#----------------------------------------------------
+# Graff
+GPC05D_CHIEFRAT_SAVEGROUP-1=（奧特……請原諒我……）
+# Graff
+GPC05D_CHIEFRAT_SAVEGROUP-2=我……選擇拯救55X城區的居民。
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEGROUP-3=有趣，數量大於質量是嗎？
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEGROUP-4=那麽我就按這個按鈕吧！
+# Graff
+GPC05D_CHIEFRAT_SAVEGROUP-5=不要！
+#----------------------------------------------------
+# Graff
+GPC05D_CHIEFRAT_NODECISION-1=一定有其他解決辦法的！
+# Chiefrat
+GPC05D_CHIEFRAT_NODECISION-2=沒有！
+# Graff
+GPC05D_CHIEFRAT_NODECISION-3=你為何要這麽做……？
+# Chiefrat
+GPC05D_CHIEFRAT_NODECISION-4=因為我能。
+# Graff
+GPC05D_CHIEFRAT_NODECISION-5=……
+# Chiefrat
+GPC05D_CHIEFRAT_NODECISION-6=不打算回答是嗎？
+# Chiefrat
+GPC05D_CHIEFRAT_NODECISION-7=好吧。就當作這是你的選擇好了！
+# Graff
+GPC05D_CHIEFRAT_NODECISION-8=不要！等一下！！
+#----------------------------------------------------
+# Graff
+GPC05D_CHIEFRAT_SAVEOTT-1=我很同情這些人，可是……
+# Graff
+GPC05D_CHIEFRAT_SAVEOTT-2=奧特是我最好的朋友……我不能失去他。
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT-3=所以說一個人的性命比十個人的更重要？
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT-4=看來是個自我主義者，我欣賞你！
+#----------------------------------------------------
+# Graff
+#Explosion sound
+GPC05D_CHIEFRAT_SAVEGROUP2-1=……！！
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEGROUP2-2=哎呀！可憐的小子！
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEGROUP2-3=你怎麽忍心把自己的朋友炸成碎片呢？
+# Graff
+GPC05D_CHIEFRAT_SAVEGROUP2-4=……
+# Graff
+GPC05D_CHIEFRAT_SAVEGROUP2-5=你……
+# Graff
+GPC05D_CHIEFRAT_SAVEGROUP2-6=這個殺人凶手……！
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEGROUP2-7=我？小貓咪，這可是你自己做出的選擇！
+#----------------------------------------------------
+# Graff
+#Explosion sound
+GPC05D_CHIEFRAT_SAVEOTT2-1=！！
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT2-2=哦對。差點忘了。
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT2-3=醫院離這裏不是很遠。
+# Graff
+GPC05D_CHIEFRAT_SAVEOTT2-4=你……
+# Graff
+GPC05D_CHIEFRAT_SAVEOTT2-5=你把這些人都殺了？
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT2-6=不是我。
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT2-7=是你。
+# Graff
+GPC05D_CHIEFRAT_SAVEOTT2-8=……
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT2-9=但你別太自責！
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT2-10=他們都只是些快要走到生命盡頭的廢物。
+# Chiefrat
+GPC05D_CHIEFRAT_SAVEOTT2-11=他們該感激你的人道處理才對！
+#----------------------------------------------------
+# Graff
+GPC05D_CHIEFRAT_NODECISION2-1=不要！！
+# Chiefrat
+GPC05D_CHIEFRAT_NODECISION2-2=不好意思！你殺死了所有人。
+# Graff
+GPC05D_CHIEFRAT_NODECISION2-3=這……不可能……！
+# Chiefrat
+GPC05D_CHIEFRAT_NODECISION2-4=就是可能，都已經發生了！
+# Graff
+GPC05D_CHIEFRAT_NODECISION2-5=奧特……
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG3-1=我……
+# Graff
+GPC05D_SECONDDIALOG3-2=我要……
+# Chiefrat
+GPC05D_SECONDDIALOG3-3=殺我？逃走？
+# Chiefrat
+GPC05D_SECONDDIALOG3-4=少做夢了！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG3_NEXTROOM-1=首先你得經過那房間……那裏頭的場面可能不堪入目。
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG3_HOSPITAL-1=你沒那勇氣去面對，無論是精神上還是生理上。
+# Chiefrat
+GPC05D_SECONDDIALOG3_HOSPITAL-2=而且！不如我去告訴你的好朋友你剛才做出的決定吧？
+# Chiefrat
+GPC05D_SECONDDIALOG3_HOSPITAL-3=他一定很想知道你選擇炸死了十個人來救他一命。
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG3B-1=……
+# Graff
+GPC05D_SECONDDIALOG3B-2=……啊……
+# Chiefrat
+GPC05D_SECONDDIALOG3B-3=哈哈哈！
+# Chiefrat
+GPC05D_SECONDDIALOG3B-4=看來你也沒那麽聰明啊，小子！
+# Chiefrat
+GPC05D_SECONDDIALOG3B-5=我們雖然臭名遠播。
+# Chiefrat
+GPC05D_SECONDDIALOG3B-6=但事實上……我們並非殺人狂。
+# Graff
+GPC05D_SECONDDIALOG3B-7=什麽……？
+# Chiefrat
+GPC05D_SECONDDIALOG3B-8=我們只殺該死的人。
+# Chiefrat
+GPC05D_SECONDDIALOG3B-9=我早就說過了，這只是一場「遊戲」！
+# Chiefrat
+GPC05D_SECONDDIALOG3B-10=沒人受傷，我們根本沒有設置炸彈。
+# Graff
+GPC05D_SECONDDIALOG3B-11=可是……
+# Graff
+GPC05D_SECONDDIALOG3B-12=那爆炸聲……？還有震動……？
+# Chiefrat
+GPC05D_SECONDDIALOG3B-13=都是來自我們找到的某些舊款揚聲器，震波真的很大！
+# Chiefrat
+GPC05D_SECONDDIALOG3B-14=阿金，拿下他的眼罩。
+# Kins
+GPC05D_SECONDDIALOG3B-15=是的，老大。
+#----------------------------------------------------
+# Ott
+GPC05D_SECONDDIALOG3C-1=（……）
+# Ott
+GPC05D_SECONDDIALOG3C-2=（格拉夫……？！這是怎麽回事……？）
+# Ott
+GPC05D_SECONDDIALOG3C-3=（唔唔唔！）
+# Chiefrat
+GPC05D_SECONDDIALOG3C-4=哈哈，剛才真是好玩。
+# Chiefrat
+GPC05D_SECONDDIALOG3C-5=……
+# Graff
+GPC05D_SECONDDIALOG3C-6=剛剛是……玩笑？
+# Chiefrat
+GPC05D_SECONDDIALOG3C-7=對的。
+# Graff
+GPC05D_SECONDDIALOG3C-8=不……我是說……
+# Graff
+GPC05D_SECONDDIALOG3C-9=你自稱並非殺人狂……
+# Graff
+GPC05D_SECONDDIALOG3C-10=但你卻將貧民區的所有居民置於死地！
+# Chiefrat
+GPC05D_SECONDDIALOG3C-11=你說什麽鬼話……？
+# Graff
+GPC05D_SECONDDIALOG3C-12=藥丸輸送管！
+# Graff
+GPC05D_SECONDDIALOG3C-13=是你們破壞的！
+# Chiefrat
+GPC05D_SECONDDIALOG3C-14=我先講清楚一件事。
+# Chiefrat
+GPC05D_SECONDDIALOG3C-15=我們鼠人為了活下去什麽事都願意幹，這是我們的生存之道。
+# Chiefrat
+GPC05D_SECONDDIALOG3C-16=我們只是掠走了輸送管中的藥物而已。
+# Graff
+GPC05D_SECONDDIALOG3C-17=那麽……你的意思是……
+# Chiefrat
+GPC05D_SECONDDIALOG3C-18=輸送管不是我們破壞的。
+# Chiefrat
+GPC05D_SECONDDIALOG3C-19=我的手下發現那些機器人在夜間破壞了各處的輸送管伺服器。
+# Chiefrat
+GPC05D_SECONDDIALOG3C-20=至於原因嘛？不知道。
+# Graff
+GPC05D_SECONDDIALOG3C-21=機器人……？
+# Chiefrat
+GPC05D_SECONDDIALOG3C-22=這整件事從頭到尾都是由外來勢力操縱的。
+# Chiefrat
+GPC05D_SECONDDIALOG3C-23=你不如問問那些將我們逼到走投無路，腦滿腸肥的王八蛋去吧！
+# Graff
+GPC05D_SECONDDIALOG3C-24=我為什麽要相信你……？
+# Chiefrat
+GPC05D_SECONDDIALOG3C-25=你信不信關我屁事。
+# Chiefrat
+GPC05D_SECONDDIALOG3C-26=我又不在乎。
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG4-1=等等！
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG5-1=我還是不明白。
+# Graff
+GPC05D_SECONDDIALOG5-2=你讓我玩這個心理遊戲的目的是甚麼？
+# Graff
+GPC05D_SECONDDIALOG5-3=你究竟在打我什麽主意？
+# Chiefrat
+GPC05D_SECONDDIALOG5-4=復仇……
+# Graff
+GPC05D_SECONDDIALOG5-5=對我……？
+# Chiefrat
+GPC05D_SECONDDIALOG5-6=哈哈，並不是。
+# Chiefrat
+GPC05D_SECONDDIALOG5-7=是對那位讓我們落得如此窘境的傢伙……
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6-1=也就是你父親！
+# Graff
+GPC05D_SECONDDIALOG6-2=我……父親……？
+# Graff
+GPC05D_SECONDDIALOG6-3=雷姆？我對他的印象太模糊了……
+# Chiefrat
+GPC05D_SECONDDIALOG6-4=別裝傻，我是說那個愛裝偵探的假掰人。
+# Chiefrat
+GPC05D_SECONDDIALOG6-5=這一切都是他害的！
+# Graff
+GPC05D_SECONDDIALOG6-6=呃……？
+# Graff
+GPC05D_SECONDDIALOG6-7=他究竟對你們做了什麽？
+# Chiefrat
+GPC05D_SECONDDIALOG6-8=就知道你毫無頭緒。
+# Chiefrat
+GPC05D_SECONDDIALOG6-9=應該說，你似乎對很多事情都不了解。
+# Chiefrat
+GPC05D_SECONDDIALOG6-10=你被他耍得團團轉。
+# Chiefrat
+GPC05D_SECONDDIALOG6-11=就像被我耍一樣……
+# Chiefrat
+GPC05D_SECONDDIALOG6-12=不過他的出發點更惡毒。
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG6_GOOD-1=你錯了！他是……
+# Graff
+GPC05D_SECONDDIALOG6_GOOD-2=好人！你們是人渣！
+# Chiefrat
+GPC05D_SECONDDIALOG6_GOOD-3=哈哈哈！有意思。
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG6_BAD-1=布羅格……
+# Graff
+GPC05D_SECONDDIALOG6_BAD-2=原來是真的……？
+# Graff
+GPC05D_SECONDDIALOG6_BAD-3=繼續說吧……我想知道！
+#----------------------------------------------------
+# Chiefrat
+#Changes according to player actions
+GPC05D_SECONDDIALOG6B-1=他多次襲擊我和我的手下。
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6B_MINE-1=他向我們投擲地雷炸我們！
+# Chiefrat
+GPC05D_SECONDDIALOG6B_MINE-2=我們還活著都已經是奇蹟了！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6C-1=而且不只是我們。
+# Chiefrat
+GPC05D_SECONDDIALOG6C-2=我們最近留意到。
+# Chiefrat
+GPC05D_SECONDDIALOG6C-3=街上的機器人幾乎都是他的拳擊沙包。
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6C_POLICE-1=就連警隊機器人也不放過！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6C_BOLT-1=這人毫無憐憫之心。
+# Chiefrat
+GPC05D_SECONDDIALOG6C_BOLT-2=連某個垂頭喪氣的機器人都不放過。
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6C_STUBOT-1=對了，你認識學校的那個機器人吧？
+# Graff
+GPC05D_SECONDDIALOG6C_STUBOT-2=你是指……學徒機器人……？
+# Chiefrat
+GPC05D_SECONDDIALOG6C_STUBOT-3=對，被他一拳打爛了。
+# Graff
+GPC05D_SECONDDIALOG6C_STUBOT-4=……！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6D-1=這些機器人雖然都不是活人，但是……
+# Chiefrat
+GPC05D_SECONDDIALOG6D-2=他能傷害機器人，就能傷害人類。
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6D_RJ-1=那位警察被揍得很慘，不知道他是否熬過來。
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6D_TRAMP-1=想知道更恐怖的事嗎？
+# Chiefrat
+GPC05D_SECONDDIALOG6D_TRAMP-2=就在昨天，我的手下看見他把某位流浪漢活生生打死了。
+# Graff
+GPC05D_SECONDDIALOG6D_TRAMP-3=他……殺人了……？
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6D_OTT-1=而且你最好的朋友還有個小秘密沒告訴你。
+# Chiefrat
+GPC05D_SECONDDIALOG6D_OTT-2=他也是受害者。
+# Graff
+GPC05D_SECONDDIALOG6D_OTT-3=什麽？！
+# Graff
+GPC05D_SECONDDIALOG6D_OTT-4=他……竟然攻擊奧特？！
+# Chiefrat
+GPC05D_SECONDDIALOG6D_OTT-5=嗯哼。
+# Chiefrat
+GPC05D_SECONDDIALOG6D_OTT-6=你朋友親口說他直接被打暈了，不信你可以去問他！
+# Chiefrat
+GPC05D_SECONDDIALOG6D_OTT-7=而且那鱷魚頭還說是為了你才揍他的！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6E-1=好人會幹這事？這是甚麼邪魔歪道？
+# Graff
+GPC05D_SECONDDIALOG6E-2=……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Rat chief gets all nostalgic and explains his reasons
+# *****************************************************************
+# Chiefrat
+GPC05D_SECONDDIALOG6F-1=不過……
+# Chiefrat
+GPC05D_SECONDDIALOG6F-2=我們不說鱷魚頭了。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-3=讓我來說說我們的故事。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-4=數千年前，鼠人一族來到了這片土地。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-5=當時這個國家剛經歷了重生日，所以找了我們在沒有科技的輔助下來幫忙重建文明。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-6=多個世紀以來，我們一直被安排於各種最底層的崗位。
+# Graff
+GPC05D_SECONDDIALOG6F-7=當然，研究發現……
+# Chiefrat
+GPC05D_SECONDDIALOG6F-8=是啦是啦！我們的智力並沒有其他種族那麽高，而且還在持續惡化。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-9=我們也無法跟其他種族交配，只能同族繁衍。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-10=不過這不是重點。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-11=我們最大的錯誤就是並沒有要求任何回報，結果就成了這個社會的奴隸。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-12=慢慢地，越來越多的機器人被生産出來。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-13=它們奪走了我們的工作，取代了我們，導致我們的生活更加艱苦。
+# Graff
+GPC05D_SECONDDIALOG6F-14=你們該把自己的遭遇公諸於世！
+# Chiefrat
+GPC05D_SECONDDIALOG6F-15=哈哈！太天真了。
+# Chiefrat
+GPC05D_SECONDDIALOG6F-16=對著耳聾目盲的社會呐喊會有用嗎？
+# Chiefrat
+GPC05D_SECONDDIALOG6F-17=我們遊行示威過，但是上面的人有在乎過嗎？
+# Chiefrat
+GPC05D_SECONDDIALOG6F-18=所以我們靜待時機……
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6F2-1=十年前……國家的制度開始崩壞。
+# Chiefrat
+GPC05D_SECONDDIALOG6F2-2=我們就知道機會來了。
+# Graff
+GPC05D_SECONDDIALOG6F2-3=接下來的事我知道。
+# Graff
+GPC05D_SECONDDIALOG6F2-4=你們嘗試發動政變，但是失敗了，最後被驅逐離境。
+# Chiefrat
+GPC05D_SECONDDIALOG6F2-5=是的，不過……
+# Chiefrat
+GPC05D_SECONDDIALOG6F2-6=媒體隱藏了部分真相。
+# Chiefrat
+GPC05D_SECONDDIALOG6F2-7=我就是當時政變的首領，我們幾乎勝券在握了。
+# Chiefrat
+GPC05D_SECONDDIALOG6F2-8=但要不是他……
+# Graff
+GPC05D_SECONDDIALOG6F2-9=等等……你是指……
+# Graff
+GPC05D_SECONDDIALOG6F2-10=布羅格當時在場？
+# Graff
+GPC05D_SECONDDIALOG6F2-11=而且……他打敗了你？
+# Chiefrat
+GPC05D_SECONDDIALOG6F2-12=……
+# Graff
+GPC05D_SECONDDIALOG6F2-13=太荒謬了！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG6F3-1=你自己看吧！
+#----------------------------------------------------
+# Graff
+#On the picture we see Brok defeating the rat chief during Autarcism Day
+GPC05D_SECONDDIALOG7-1=不……不會吧。
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG7_NOTSEEN-1=這照片……一定是僞造的。
+# Graff
+GPC05D_SECONDDIALOG7_NOTSEEN-2=肯定是！
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG7_SEEN-1=我見過這張照片……在博物館裏……
+# Graff
+GPC05D_SECONDDIALOG7_SEEN-2=可是……
+# Graff
+GPC05D_SECONDDIALOG7_SEEN-3=那張沒這麽清晰……
+# Graff
+GPC05D_SECONDDIALOG7_SEEN-4=你……肯定是修過圖了……！
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG7B-1=那天的事情，我歷歷在目。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-2=他的確在現場。
+# Graff
+GPC05D_SECONDDIALOG7B-3=……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-4=我們被驅逐後……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-5=大部分族人都沒熬過來。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-6=我們生活在陰影中，被迫決定誰可以活下去，誰必須被淘汰。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-7=你有體驗過活活餓死的滋味嗎，小公主？
+# Chiefrat
+GPC05D_SECONDDIALOG7B-8=見識過活生生的「弱肉強食」地獄嗎？
+# Graff
+GPC05D_SECONDDIALOG7B-9=嘔……！
+# Chiefrat
+GPC05D_SECONDDIALOG7B-10=你以為自己的生活很糟糕……？
+# Chiefrat
+GPC05D_SECONDDIALOG7B-11=簡直是笑話！
+# Chiefrat
+GPC05D_SECONDDIALOG7B-12=不過話說回來……你我的確有個共同點。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-13=我們的遭遇都歸咎於同一個人。
+# Graff
+GPC05D_SECONDDIALOG7B-14=我……還是不相信你。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-15=自己看吧！
+# Graff
+GPC05D_SECONDDIALOG7B-16=……
+# Graff
+GPC05D_SECONDDIALOG7B-17=這是銀行存款結算單……？
+# Chiefrat
+GPC05D_SECONDDIALOG7B-18=你覺得這筆錢是從哪來的？
+# Graff
+GPC05D_SECONDDIALOG7B-19=我……可能是我母親留下來的。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-20=鱷魚頭沒告訴你吧？
+# Graff
+GPC05D_SECONDDIALOG7B-21=……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-22=果然。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-23=所以說！等你滿16歲時就應該繼承這筆錢吧？
+# Graff
+GPC05D_SECONDDIALOG7B-24=應該是……記得以前測驗時出過這道題。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-25=那麽，假設說……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-26=你在16歲生日後立刻遭遇了「意外」。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-27=那這筆錢會怎麽辦？
+# Graff
+GPC05D_SECONDDIALOG7B-28=我……
+# Graff
+GPC05D_SECONDDIALOG7B-29=我想應該是由最親近的存活親屬繼承。
+# Graff
+GPC05D_SECONDDIALOG7B-30=……
+# Graff
+GPC05D_SECONDDIALOG7B-31=你是說……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-32=總算懂了！虧我說了一大串。
+# Graff
+GPC05D_SECONDDIALOG7B-33=不！這……
+# Graff
+GPC05D_SECONDDIALOG7B-34=他不可能做這種事的。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-35=哎喲，拜託！
+# Chiefrat
+GPC05D_SECONDDIALOG7B-36=你到底是有多天真？
+# Chiefrat
+GPC05D_SECONDDIALOG7B-37=難怪你曾經是市民！
+# Chiefrat
+GPC05D_SECONDDIALOG7B-38=你捫心自問真的很了解他嗎？
+# Graff
+GPC05D_SECONDDIALOG7B-39=……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-40=我其實一下子就想明白了。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-41=自從他收養你後，他就在等待……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-42=只賺剛剛好夠用的錢來養活你。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-43=再多三天……
+# Chiefrat
+GPC05D_SECONDDIALOG7B-44=再等三天……然後……
+# Chiefrat
+#The sound you do when you mean someone's gonna get murdered
+GPC05D_SECONDDIALOG7B-45=死翹翹！
+# Graff
+GPC05D_SECONDDIALOG7B-46=不……不可能！
+# Graff
+GPC05D_SECONDDIALOG7B-47=他……他曾救過我！
+# Graff
+GPC05D_SECONDDIALOG7B-48=而且不止一次！
+# Chiefrat
+GPC05D_SECONDDIALOG7B-49=沒錯！但是你現在知道原因了。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-50=你明白他的自相矛盾的行為理由了。
+# Chiefrat
+GPC05D_SECONDDIALOG7B-51=你想通了嗎？
+# Chiefrat
+GPC05D_SECONDDIALOG7B-52=你只是他的傀儡。
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG7C-1=照片你留著吧，我不想再看見它！
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG8-1=這真的是事實嗎……？
+# Graff
+GPC05D_SECONDDIALOG8-2=……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Ott escapes
+# *****************************************************************
+# Unknown
+GPC05D_SECONDDIALOG8B-1=（詭異聲響）
+# Graff
+GPC05D_SECONDDIALOG8B-2=啥……？
+#----------------------------------------------------
+# Kins
+GPC05D_SECONDDIALOG9-1=老大！
+# Kins
+GPC05D_SECONDDIALOG9-2=那個醜小子……逃走了！
+# Chiefrat
+GPC05D_SECONDDIALOG9-3=你說什麽？！
+# Chiefrat
+GPC05D_SECONDDIALOG9-4=快去追他！
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG10-1=奧特？！
+# Graff
+GPC05D_SECONDDIALOG10-2=難道他成功……
+#----------------------------------------------------
+# Chiefrat
+GPC05D_SECONDDIALOG11-1=你！
+# Chiefrat
+GPC05D_SECONDDIALOG11-2=給你兩秒鐘告訴我他打算做什麽！
+# Graff
+GPC05D_SECONDDIALOG11-3=我怎麽知道？我又不是……
+#----------------------------------------------------
+# Graff
+#Rat chief hits Graff. He doesn't want to play anymore
+GPC05D_SECONDDIALOG12-1=哎喲！
+# Chiefrat
+GPC05D_SECONDDIALOG12-2=沒空陪你玩了！
+# Chiefrat
+GPC05D_SECONDDIALOG12-3=趕緊說，別敬酒不吃吃罰酒！
+# Graff
+GPC05D_SECONDDIALOG12-4=呃……
+# Graff
+GPC05D_SECONDDIALOG12-5=我了解奧特……他是不會丟下我的。
+# Graff
+GPC05D_SECONDDIALOG12-6=他肯定是去找幫手了。
+# Chiefrat
+GPC05D_SECONDDIALOG12-7=誰？！
+# Graff
+GPC05D_SECONDDIALOG12-8=我曾經告訴他……要是出事了，就去找布羅格。
+# Chiefrat
+GPC05D_SECONDDIALOG12-9=是嗎……？
+# Chiefrat
+GPC05D_SECONDDIALOG12-10=哈哈哈！
+# Chiefrat
+GPC05D_SECONDDIALOG12-11=兄弟們，計劃改變。
+# Chiefrat
+GPC05D_SECONDDIALOG12-12=我們守株待兔，等那小子把鱷魚頭帶來。
+# Chiefrat
+GPC05D_SECONDDIALOG12-13=要好好給他們準備個驚喜！
+#----------------------------------------------------
+# Graff
+GPC05D_SECONDDIALOG13-1=……
+# Graff
+GPC05D_SECONDDIALOG13-2=糟了……我把所有人都拖下水了……
+# Graff
+GPC05D_SECONDDIALOG13-3=雖然不相信無尾神什麽的神明，可是……
+# Graff
+GPC05D_SECONDDIALOG13-4=求保佑各位……
+# Graff
+GPC05D_SECONDDIALOG13-5=千萬不要發生悲劇……
+# Graff
+GPC05D_SECONDDIALOG13-6=大家都要安然無恙。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Conversation between rat chief and his minions
+# *****************************************************************
+# Chiefrat
+GPC05D_CHIEFRAT_COMES-1=什麽……？
+# Chiefrat
+GPC05D_CHIEFRAT_COMES-2=豬頭！怎麽沒有人看守入口？
+# Kins
+GPC05D_CHIEFRAT_COMES-3=呃……對不起老大，我不知道。
+# Chiefrat
+GPC05D_CHIEFRAT_COMES-4=阿達！
+# Chiefrat
+GPC05D_CHIEFRAT_COMES-5=入口，馬上去。
+# Chiefrat
+GPC05D_CHIEFRAT_COMES-6=不準任何人進出！
+# Dart
+GPC05D_CHIEFRAT_COMES-7=好噠！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Various interactions
+# *****************************************************************
+# Graff
+GPC05D_FAR1-1=距離太遙遠了。
+#----------------------------------------------------
+# Graff
+#Graff sees Ott through the tiny hole
+GPC05D_WALLHOLE1-1=不會吧！難道是……
+# Graff
+GPC05D_WALLHOLE1-2=（噓！奧特！是你嗎？）
+# Graff
+GPC05D_WALLHOLE1-3=（喂！聽得見嗎……？）
+# Graff
+GPC05D_WALLHOLE1-4=他沒有反應……我不能太大聲喊他。
+# Graff
+GPC05D_WALLHOLE1-5=希望他沒事……
+#----------------------------------------------------
+# Graff
+GPC05D_WALLHOLE2-1=奧特就在裏頭！
+# Graff
+GPC05D_WALLHOLE2-2=我得想辦法救他離開！
+#----------------------------------------------------
+# Graff
+GPC05D_CUPBOARD1-1=這裏存放著無數糧食……
+# Graff
+GPC05D_CUPBOARD1-2=我打不開這些抽屜。
+#----------------------------------------------------
+# Graff
+GPC05D_CUPBOARD_FREE-1=讓我好好瞧瞧……
+# Graff
+GPC05D_CUPBOARD_FREE-2=噁……這抽屜裏塞滿了內褲……！
+# Graff
+GPC05D_CUPBOARD_FREE-3=還有這……襪子……
+# Graff
+GPC05D_CUPBOARD_FREE-4=哇靠！整個廚房連個刀叉都沒有？
+# Graff
+GPC05D_CUPBOARD_FREE-5=啊，我真笨。他們一定是用手指吃東西的。
+#----------------------------------------------------
+# Graff
+GPC05D_BAG_FAR1-1=一個袋子，看不到裏頭裝的是什麽。
+#----------------------------------------------------
+# Graff
+GPC05D_BAG_CLOSE1-1=各種食物……穀物、昆蟲以及我認不出來的食物。
+# Graff
+GPC05D_BAG_CLOSE1-2=至少不用擔心挨餓。
+#----------------------------------------------------
+# Graff
+GPC05D_OTHERS-1=現在沒空弄這東西！
+#----------------------------------------------------
+# Graff
+#The hook can be used to slowly cut the rope
+GPC05D_HOOK_FAR1-1=廚房掛勾？也許能用得上？
+#----------------------------------------------------
+# Graff
+GPC05D_HOOK_CLOSE1-1=也許能用這個割斷繩索？
+#----------------------------------------------------
+# Graff
+GPC05D_HOOK_DONE-1=我受夠了！
+#----------------------------------------------------
+# Graff
+GPC05D_HOOK_LONG-1=呃……這到底要磨到什麽時候！
+#----------------------------------------------------
+# Graff
+GPC05D_HOOK_OVER-1=終於解脫了……！
+# Graff
+GPC05D_HOOK_OVER-2=唔……是否該繼續假裝被綁著？
+#----------------------------------------------------
+# Graff
+GPC05D_PIPE1-1=這裏有一截突出來的水管。
+# Graff
+GPC05D_PIPE1-2=我的手被綁住了，想拿也拿不到。
+#----------------------------------------------------
+# Graff
+GPC05D_PIPE_CANTAKE-1=太好了！
+#----------------------------------------------------
+# Graff
+GPC05D_PIPE_TAKECHAIR-1=我得把它握在手中藏在椅子後面。
+#----------------------------------------------------
+# Graff
+GPC05D_TABLE1-1=看來他們是坐在這……地板上吃東西的。
+#----------------------------------------------------
+# Graff
+GPC05D_DOORLEFT1-1=……
+# Graff
+GPC05D_DOORLEFT1-2=這裏什麽也看不見……
+# Graff
+GPC05D_DOORLEFT1-3=不過好像聽見女人與小孩的聲音……？
+#----------------------------------------------------
+# Graff
+GPC05D_DOORLEFT2-1=我的天……
+# Graff
+GPC05D_DOORLEFT2-2=裏頭竟然擠著數十位鼠人婦孺……！
+# Graff
+GPC05D_DOORLEFT2-3=真是糟糕的生活環境。
+#----------------------------------------------------
+# Graff
+GPC05D_TUNNEL1-1=這裏無法通過。
+#----------------------------------------------------
+# Graff
+GPC05D_WINDOW_NOONE-1=有梯子，應該就是出口了！
+#----------------------------------------------------
+# Graff
+GPC05D_WINDOW1-1=有個守衛。
+# Graff
+GPC05D_WINDOW1-2=幸好沒有看向我們這個方向。
+#----------------------------------------------------
+# Graff
+GPC05D_WINDOW_THROW1-1=唔……
+#----------------------------------------------------
+# Graff
+GPC05D_WINDOW_THROW1B-1=成功！
+# Graff
+GPC05D_WINDOW_THROW1B-2=呃……？
+#----------------------------------------------------
+# Kins
+GPC05D_WINDOW_THROW1C-1=阿達！你沒事吧……？
+# Kins
+GPC05D_WINDOW_THROW1C-2=喂！快醒醒！
+#----------------------------------------------------
+# Graff
+#Strike like in bowling
+GPC05D_WINDOW_THROW2-1=正中目標！
+#----------------------------------------------------
+# Chiefrat
+#Graff not in his room when Chief comes
+GPC05D_CHIEFRAT_SEARCHGRAFF-1=可惡的賊貓！
+# Chiefrat
+GPC05D_CHIEFRAT_SEARCHGRAFF-2=到底藏在哪了？！
+#----------------------------------------------------
+# Graff
+GPC05D_SPEAKER1-1=沒料到會在這裏碰見這玩意。
+#----------------------------------------------------
+# Graff
+#Ironic
+GPC05D_CANNOT1-1=厲害！難道要我坐在椅子上爬上去嗎？
+#----------------------------------------------------
+# Graff
+GPC05D_OTTNOTHERE1-1=我不能丟下奧特一個人。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - When trying to escape with Ott
+# *****************************************************************
+# Graff
+GPC05D_OTTHERE1-1=奧特！有梯子！
+# Ott
+GPC05D_OTTHERE1-2=天呀……太高了……
+# Graff
+GPC05D_OTTHERE1-3=我就跟在你後面！
+# Ott
+GPC05D_OTTHERE1-4=好……
+#----------------------------------------------------
+# Kins
+GPC05D_OTTHERE2-1=老大！那兩個小子逃脫了！
+# Graff
+GPC05D_OTTHERE2-2=糟糕……
+# Graff
+GPC05D_OTTHERE2-3=奧特！你拿著！
+# Ott
+GPC05D_OTTHERE2-4=什麽……？
+# Graff
+GPC05D_OTTHERE2-5=這個雷達能夠幫你找到布羅格！叫他來救我！
+# Ott
+GPC05D_OTTHERE2-6=可是……
+# Graff
+GPC05D_OTTHERE2-7=快走！沒時間了！
+# Graff
+#Graff gets captured
+GPC05D_OTTHERE2-8=啊！
+# Chiefrat
+GPC05D_OTTHERE2-9=兄弟們，計劃有變！鱷魚頭會來自投羅網！
+# Chiefrat
+GPC05D_OTTHERE2-10=做得好，小子！
+# Kins
+GPC05D_OTTHERE2-11=謝謝老大！
+# Chiefrat
+GPC05D_OTTHERE2-12=我可沒誇你，白癡！
+# Graff
+GPC05D_OTTHERE2-13=他會揍爛你們全部！走著瞧吧！
+# Chiefrat
+GPC05D_OTTHERE2-14=哦 ~ 我都迫不及待了。
+# Chiefrat
+GPC05D_OTTHERE2-15=等了這麽多年的復仇夢想……
+# Chiefrat
+GPC05D_OTTHERE2-16=終於給我等到了！
+# Graff
+GPC05D_OTTHERE2-17=……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Trying to use the ladder without picking stuff first
+# *****************************************************************
+# Graff
+GPC05D_NOSTUFF1-1=糟糕！我忘了……
+# Graff
+GPC05D_NOSTUFF1-2=我需要手機才能找到布羅格！我的物品應該在這附近……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Finding Ott in the next room for the first time
+# *****************************************************************
+# Ott
+GPC05D_OTT_FIRST1-1=格拉夫！
+# Graff
+GPC05D_OTT_FIRST1-2=見到你真好！
+# Graff
+GPC05D_OTT_FIRST1-3=對不起是我連累了你.
+# Ott
+GPC05D_OTT_FIRST1-4=沒時間道歉了！我們趕緊離開這裏！
+# Ott
+GPC05D_OTT_FIRST1-5=動作要快，這裏很不對勁……
+#----------------------------------------------------
+# Ott
+GPC05D_OTT_TALKCHAIR_UNTIE-1=對了，你是怎麽……
+# Graff
+GPC05D_OTT_TALKCHAIR_UNTIE-2=待會再解釋，我先給你鬆綁！
+#----------------------------------------------------
+# Graff
+GPC05D_OTT_TALKCHAIR_FAR1-1=我們該怎麽逃出去？
+# Ott
+GPC05D_OTT_TALKCHAIR_FAR1-2=唔……
+# Ott
+GPC05D_OTT_TALKCHAIR_FAR1-3=我有辦法！跟緊我！
+#----------------------------------------------------
+# Graff
+GPC05D_OTT_TALKCHAIR_CLOSE1-1=你能移動雙手嗎？
+# Ott
+GPC05D_OTT_TALKCHAIR_CLOSE1-2=一點點……
+# Graff
+GPC05D_OTT_TALKCHAIR_CLOSE1-3=那我們嘗試互相鬆綁！
+#----------------------------------------------------
+# Graff
+GPC05D_OTT_TALKCHAIR_CLOSE2-1=總算舒服多了。
+# Ott
+GPC05D_OTT_TALKCHAIR_CLOSE2-2=那是當然……
+# Graff
+GPC05D_OTT_TALKCHAIR_CLOSE2-3=他們……沒有凌虐你吧？
+# Ott
+GPC05D_OTT_TALKCHAIR_CLOSE2-4=如果口頭威脅要把我推下深淵算是凌虐的話……
+# Ott
+GPC05D_OTT_TALKCHAIR_CLOSE2-5=那是肯定有。
+# Graff
+GPC05D_OTT_TALKCHAIR_CLOSE2-6=對不起。
+# Ott
+GPC05D_OTT_TALKCHAIR_CLOSE2-7=這不怪你。
+# Graff
+GPC05D_OTT_TALKCHAIR_CLOSE2-8=我們趕緊離開吧！我帶路。
+# Ott
+GPC05D_OTT_TALKCHAIR_CLOSE2-9=小心點。
+#----------------------------------------------------
+# Ott
+#If Graff accidentally falls into the hole
+GPC05D_OTT_GRAFFJUMPS-1=格拉夫！！！
+#----------------------------------------------------
+# Graff
+GPC05D_OTT_FREE-1=接下來呢……？
+# Ott
+GPC05D_OTT_FREE-2=……
+# Ott
+GPC05D_OTT_FREE-3=或許那個梯子……
+# Graff
+GPC05D_OTT_FREE-4=好的，可以試試。
+#----------------------------------------------------
+# Ott
+#If Graff won the fight against rats
+GPC05D_OTT_AFTERFIGHT-1=格拉夫……！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Searching through stuff
+# *****************************************************************
+# Graff
+GPC05D_STUFF1-1=真是亂七八糟的。
+# Graff
+GPC05D_STUFF1-2=咦！等一下，這是我的東西！
+#----------------------------------------------------
+# Graff
+GPC05D_STUFF_FREE-1=可惜我的雙手還沒鬆綁……
+#----------------------------------------------------
+# Graff
+GPC05D_STUFF_ALREADY-1=還有別的發現嗎？
+# Graff
+GPC05D_STUFF_ALREADY-2=哈！找到了一則廣告！
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - WHen Graff gets spotted
+# *****************************************************************
+# Kins
+GPC05D_RAT1_SPOTTED1-1=喂！說你呢！
+# Graff
+GPC05D_RAT1_SPOTTED1-2=糟糕……！
+#----------------------------------------------------
+# Dart
+GPC05D_RAT2_SPOTTED1-1=嘿！那個小子在這！
+# Graff
+GPC05D_RAT2_SPOTTED1-2=糟糕！
+#----------------------------------------------------
+# Graff
+GPC05D_SPOTTED_READY-1=別靠近我！否則……
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff wins
+# *****************************************************************
+# Graff
+GPC05D_ALLDEAD-1=呼……哈……
+# Graff
+GPC05D_ALLDEAD-2=我……把他們全打敗了……？！
+#----------------------------------------------------
+# Ott
+GPC05D_ALLDEAD_OTT-1=格拉夫！你怎麽做到的……？
+# Graff
+GPC05D_ALLDEAD_OTT-2=我……只是用盡全力……
+# Graff
+GPC05D_ALLDEAD_OTT-3=走吧！我跟在你身後。
+# Ott
+GPC05D_ALLDEAD_OTT-4=好的……
+#----------------------------------------------------
+# Graff
+GPC05D_ALLDEAD_OTT2-1=……
+# Chiefrat
+GPC05D_ALLDEAD_OTT2-2=等一下……
+# Chiefrat
+GPC05D_ALLDEAD_OTT2-3=有件事……我必須告訴你。
+#----------------------------------------------------
+# Graff
+GPC05D_ALLDEAD_OTT3-1=閉嘴，你有完沒完？
+# Chiefrat
+GPC05D_ALLDEAD_OTT3-2=哈哈……你果然像你父親。
+# Graff
+GPC05D_ALLDEAD_OTT3-3=他才不是我父親……！
+# Chiefrat
+GPC05D_ALLDEAD_OTT3-4=你體內蘊含著如此多的暴力基因……
+# Chiefrat
+GPC05D_ALLDEAD_OTT3-5=你知不知道……他也做出了跟你一樣的選擇……？
+# Graff
+GPC05D_ALLDEAD_OTT3-6=把你痛扁一頓是嗎……？
+# Chiefrat
+GPC05D_ALLDEAD_OTT3-7=你自己瞧……
+# Graff
+GPC05D_ALLDEAD_OTT3-8=啊？
+#----------------------------------------------------
+# Graff
+GPC05D_ALLDEAD_OTT4-1=……
+# Ott
+GPC05D_ALLDEAD_OTT4-2=格拉夫……？
+# Ott
+GPC05D_ALLDEAD_OTT4-3=你沒事吧？怎麽回事？
+# Graff
+GPC05D_ALLDEAD_OTT4-4=嗯……放心吧。
+# Graff
+GPC05D_ALLDEAD_OTT4-5=我這就過去。
+# Chiefrat
+GPC05D_ALLDEAD_OTT4-6=我永遠不會忘記……
+# Chiefrat
+GPC05D_ALLDEAD_OTT4-7=你也別想忘……
+# Unknown
+#Graff hits chief
+GPC05D_ALLDEAD_OTT4-8=（巨響聲）
+# Graff
+GPC05D_ALLDEAD_OTT4-9=我聽夠了。
+#----------------------------------------------------
+# *****************************************************************
+# CONTEXT - Graff loses
+# *****************************************************************
+# Chiefrat
+PC05D_RATFIGHT_GAMEOVER1-1=這是你逼我的，小子。
+# Chiefrat
+PC05D_RATFIGHT_GAMEOVER1-2=鱷魚頭，下一個就是你！
+#----------------------------------------------------
+# Kins
+PC05D_RATFIGHT_GAMEOVER2-1=哎呀！這小子被我們弄死了……
+#----------------------------------------------------
+
+PC_SKIP=滑到下一個房間
+PC_SKIPLADDER=跳到梯子上

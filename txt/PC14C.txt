@@ -1,0 +1,2388 @@
+﻿#-------------------------------
+#=HACKER INSIDE
+#-------------------------------
+
+
+#---------------------------------------
+#= Talking to Hacker (with beating RJ)
+#---------------------------------------
+
+ID=PC14C_FIRST_BEATEN1
+T=...What the...?!
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+CONTEXT=Meet the hacker for the first time (after beating R.J.)
+
+T=Who the heck are you?!
+W=HACKER
+C2A=SURPRISED
+TEN=PC14C_FIRST_APPROACH
+
+T=The Gloom, isn't it?
+W=BROK
+C1A=MOCK
+
+T=I need your help...
+W=BROK
+
+T=You shouldn't be here!
+W=HACKER
+
+T=How did you get past the guard?!
+W=HACKER
+
+T=Well he's...
+W=BROK
+C1A=MEH
+
+T=Incapacitated.
+W=BROK
+
+T=Gulp!
+W=HACKER
+C2A=WORRIED
+
+T=P-p-please! Don't hurt me!...
+W=HACKER
+#TODO Animation hacker goes behind counter
+
+T=Don't be silly.
+W=BROK
+C1A=ALRIGHT
+
+T=I said I need your help!
+W=BROK
+
+T=Erm... O-okay...
+W=HACKER
+C2A=LISTEN
+
+T=So! What do you want?
+W=HACKER
+C1A=THINK
+C2A=NORMAL
+
+T=Well...
+W=BROK
+
+T=Come on! You're wasting my time!
+W=HACKER
+
+T=(What a change of attitude...)
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+TEN=PC14C_FIRST_APPROACH2
+
+T=I'm looking for a very special item.
+W=BROK
+C1A=MOCK
+TEN=PC14C_FIRSTAGREE
+IT=1
+
+#----------------------------------------
+#= Talking to Hacker (with disguise)
+#----------------------------------------
+
+ID=PC14C_FIRST1
+T=...What the...?!
+W=HACKER
+C1=BROK
+C1A=DISGUISE
+C2=HACKER
+C2A=SURPRISED
+CONTEXT=Meet the hacker for the first time (with disguise)
+
+T=Who the heck are you?!
+W=HACKER
+
+T=The Gloom, isn't it?
+W=BROK
+
+T=I need your help...
+W=BROK
+
+T=You shouldn't be here!
+W=HACKER
+
+T=The guard let you enter?!
+W=HACKER
+
+T=Well, I'm an elephant! Can't you see?
+W=BROK
+
+T=An... elephant?...
+W=HACKER
+C2A=LISTEN
+
+T=Hey! You idiot! Why did you let that one get through?!
+W=HACKER
+C2A=NORMAL
+TEN=PC14C_RJ_TURN
+
+T=Duh! T'is what ya told me!
+W=RJ
+C3=RJ
+C3A=COCKY
+
+T=Uh?!
+W=HACKER
+C2A=SURPRISED
+TEN=PC14C_FIRST_FADEOUT1
+
+#----------------------
+ID=PC14C_FIRST2
+T=...so that's your job. You stay here and guard the door.
+W=HACKER
+C1=HACKER
+C1A=NORMAL
+C2=RJ
+C2A=NORMAL
+CONTEXT=Flashback - the hacker explains the job to R.J.
+
+T=Nobody enters unless I tell you otherwise!
+W=HACKER
+
+T=Nobody?...
+W=RJ
+C2A=WONDER
+
+T=I can't enter?
+W=RJ
+
+T=No! You stay outside!
+W=HACKER
+
+
+T=What about cats? I hate cats.
+W=RJ
+C2A=WONDER
+
+T=No cats!
+W=HACKER
+
+
+T=Then... Dogs? Doggies can enter?
+W=RJ
+
+T=No!
+W=HACKER
+
+T=Maybe cows? Pigs? Hens?
+W=RJ
+
+T=No, no, no!
+W=HACKER
+
+T=Then elephants! They can enter, right?
+W=RJ
+C2A=HAPPY
+
+T=Argh!... You gotta be kidding me!...
+W=HACKER
+
+T=...?
+W=RJ
+
+T=So...?
+W=RJ
+
+T=Gah...
+W=HACKER
+C1A=WORRIED
+
+T=Fine! As you wish! Elephants can enter!
+W=HACKER
+C1A=NORMAL
+
+
+T=Oh! Cool.
+W=RJ
+C2A=HAPPY
+TEN=PC14C_RJ_GOESDOOR
+
+T=...Pfft. Goons gotta be goons.
+W=HACKER
+C2=NONE
+
+
+T=It's not like an elephant would come to the Slums anyway. All rich company higher-ups.
+W=HACKER
+TEN=PC14C_FIRST2_FADEOUT
+
+
+#----------------------
+#= Talking to Hacker
+#----------------------
+ID=PC14C_FIRSTB
+T=Are you stupid?!
+W=HACKER
+C1=BROK
+C1A=DISGUISE
+C2=HACKER
+C2A=NORMAL
+C3=RJ
+C3A=NORMAL
+CONTEXT=Back to present
+
+T=Wait, why am I even asking...
+W=HACKER
+
+T=Just take a look at this guy! He's wearing a silly disguise!
+W=HACKER
+
+T=Erm... Ya sure?
+W=RJ
+C3A=WONDER
+TEN=PC14C_RJ_COMETOBROK
+
+T=TAKE IT OFF!!!
+W=HACKER
+TEN=PC14C_BROK_TURNSRJ
+
+T=Argh! Hey, that hurts!
+W=BROK
+C1A=ANGRY
+
+T=...?
+W=RJ
+C3=NONE
+C4=RJ
+C4A=WONDER
+
+T=Hey! It's you!!!
+W=RJ
+C4A=ANGRY
+
+T=Bear goon...
+W=HACKER
+
+T=You're fired!
+W=HACKER
+TEN=PC14C_RJ_TURNSHACKER
+
+T=What?! But...
+W=RJ
+C4A=SURPRISED
+
+T=But I did what you said!
+W=RJ
+
+T=I'll just find another big guy with a bigger brain.
+W=HACKER
+
+T=You're useless.
+W=HACKER
+TEN=PC14C_RJ_TURNSBROK
+
+T=Argh!!! YOU...
+W=RJ
+C4A=ANGRY
+C1A=CONFUSED
+
+T=T'is all your fault! AGAIN!
+W=RJ
+
+T=Gulp!
+W=BROK
+
+T=I'll make you pay for this!
+W=RJ
+TEN=PC14C_RJ_LEAVES
+
+T=(...Oh oh.)
+W=BROK
+C4=NONE
+MOOD=THINK
+
+T=(Looks like I didn't make a friend...)
+W=BROK
+MOOD=THINK
+TEN=PC14C_FIRSTB_END
+
+#----------------------
+ID=PC14C_FIRSTC1
+T=Still here? You're wasting my time.
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+CONTEXT=Talk to Hacker
+
+T=Wait! I've got an important request.
+W=BROK
+C1A=READY
+
+T=Important for me... or for you?
+W=HACKER
+
+T=Depends...
+W=BROK
+C1A=MAYBE
+
+T=Just... Please hear me out!
+W=BROK
+C1A=READY
+TEN=PC14C_FIRSTAGREE
+IT=1
+
+
+
+
+#----------------------
+ID=PC14C_FIRSTAGREE
+T=(Sigh) Alright, alright.
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+
+T=But first...
+W=HACKER
+
+T=Put your hand here.
+W=HACKER
+
+T=Why?
+W=BROK
+
+T=Just do it!
+W=HACKER
+
+T=...Okay.
+W=BROK
+C1A=MAYBE
+TEN=PC14C_BROK_ACTION
+
+
+T=(Computer sounds)
+
+T=Now, let's see...
+W=HACKER
+
+T=Ah! My database search returned some results.
+W=HACKER
+C1A=THINK
+TEN=PC14C_HACKER_MUSICSTOP
+
+T=...!
+W=HACKER
+C2A=SURPRISED
+
+T=What? What's wrong?
+W=BROK
+
+T=...You're a... A cop?!
+W=HACKER
+C2A=WORRIED
+
+T=Well... Not exa...
+W=BROK
+C1A=HAPPY
+SKIPEND=1
+
+T=...Gulp!
+W=HACKER
+TEN=PC14C_HACKER_FIGHT
+
+
+
+#----------------------
+ID=PC14C_AFTERFIGHT_BEATEN
+T=Oh gosh...
+W=HACKER
+C1=BROK
+C1A=WONDER
+C2=HACKER
+C2A=WORRIED
+COMM=Hacker sent drones at Brok who defeated them
+
+T=Just my luck. An exterminator agent.
+W=HACKER
+
+T=Come on! I'm not gonna harm you!
+W=BROK
+C1A=ALRIGHT
+
+T=Your file says otherwise.
+W=HACKER
+
+T=Believe me. If I wanted you dead, you'd already be.
+W=BROK
+C1A=MEH
+
+T=Wait, that's not what...
+W=BROK
+C1A=WONDER
+SKIPEND=1
+
+T=Oh no...
+W=HACKER
+TEN=PC14C_AFTERFIGHT_NEXT
+IT=1
+
+#----------------------
+ID=PC14C_AFTERFIGHT_FIRED
+T=Oh no...!
+W=HACKER
+C1=BROK
+C1A=READY
+C2=HACKER
+C2A=WORRIED
+
+T=I... I shouldn't have fired that guy...
+W=HACKER
+TEN=PC14C_AFTERFIGHT_NEXT
+IT=1
+
+#----------------------
+ID=PC14C_AFTERFIGHT_NEXT
+T=P-please don't put me in jail! It'd be a waste of my great intellect!
+W=HACKER
+C1=BROK
+C1A=READY
+C2=HACKER
+C2A=WORRIED
+
+T=That's not what you think! I'm no cop!
+W=BROK
+
+T=Uh?...
+W=HACKER
+C2A=LISTEN
+
+T=The police are understaffed. I'm a detective, they just needed my help.
+W=BROK
+C1A=THINK
+
+T=Hrmph.
+W=HACKER
+C2A=NORMAL
+
+T=Cops or detectives, I hate both of your kinds anyway.
+W=HACKER
+
+T=Always messing with the lives of people trying to make an honest living with the black market.
+W=HACKER
+TEN=PC14C_AFTERFIGHT_FADEOUT
+
+#----------------------
+ID=PC14C_AFTERFIGHT_NEXT2
+T=Let's forget about all this and focus on my request.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=HACKER
+C2A=NORMAL
+
+T=What makes you think I'll help you?
+W=HACKER
+
+T=Isn't it clear by now?
+W=BROK
+
+T=You're alone, your security system failed and I'm... Let's say...
+W=BROK
+
+T=Stronger than you.
+W=BROK
+C1A=COCKY
+
+T=...Good point.
+W=HACKER
+C2A=WORRIED
+
+T=Alright. What do you need?
+W=HACKER
+C1A=THINK
+C2A=LISTEN
+
+T=A self modifier chip.
+W=BROK
+
+T=No questions asked.
+W=BROK
+C1A=MAYBE
+
+T=Fine. I can get you one but these don't come cheap.
+W=HACKER
+C2A=NORMAL
+
+T=It'll be 100,000 Unis.
+W=HACKER
+
+T=One hundred... thousands?!
+W=BROK
+C1A=SURPRISED
+
+T=You gotta be kiddin'!
+W=BROK
+C1A=ANGRY
+
+T=Hey, that's the deal! Take it or leave it!
+W=HACKER
+
+T=Do you even have any idea what trouble I'm getting into in order to get one of these?!
+W=HACKER
+
+T=This means you already have one here?
+W=BROK
+
+T=...Argh. Me and my big mouth.
+W=HACKER
+C2A=WORRIED
+
+T=Give it to me.
+W=BROK
+
+T=No way!
+W=HACKER
+C2A=SURPRISED
+
+T=Give it, or else...
+W=BROK
+C1A=FURIOUS
+
+T=I might have to...
+W=BROK
+C1A=COCKY
+SKIPEND=1
+
+T=Aarrgh!
+W=HACKER
+C2A=WORRIED
+
+T=Okay, okay. Then... 10,000 Unis!
+W=HACKER
+
+T=I-It can't be any lower than that... That's how much I paid for it!
+W=HACKER
+TEN=PC14C_HACKER_FIRSTCHOICE
+IT=1
+
+#----------------------
+ID=PC14C_FIRST_ACCEPT1
+T=(Sigh) Fine. 10,000.
+W=BROK
+C1=BROK
+C1A=READY
+C2=HACKER
+C2A=LISTEN
+
+T=You'll get the moolah this morning.
+W=BROK
+
+T=G-Good to hear!
+W=HACKER
+C2A=WORRIED
+TEN=PC14C_FIRST_EXIT1
+IT=1
+
+
+#----------------------
+ID=PC14C_TO_PC14B_NOTYET
+T=(Not yet...)
+W=BROK
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC14C_HACKER_NOTYET
+T=(Not yet...)
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=HACKER
+C2A=NORMAL
+MOOD=THINK
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+#----------------------
+ID=PC14C_FIRST_ALTERNATIVE
+T=On my way.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=HACKER
+C2A=NORMAL
+
+T=Wait!
+W=HACKER
+C1A=CONFUSED
+
+T=I need you to do something for me.
+W=HACKER
+C1A=THINK
+
+T=(Everyone's sending me on errands today?)
+W=BROK
+MOOD=THINK
+
+T=Not interested.
+W=BROK
+C1A=OPPOSITE
+
+T=Very well.
+W=HACKER
+C2A=HAPPY
+
+T=I shall then send a little message to the Government...
+W=HACKER
+
+T=With the whereabouts of your friend Shay.
+W=HACKER
+
+T=You dare blackmail me?!
+W=BROK
+C1A=FURIOUS
+C2A=SURPRISED
+
+T=It's... just a tiny request!
+W=HACKER
+C2A=WORRIED
+
+T=Do this for me and I shall help you on other matters.
+W=HACKER
+
+T=...
+W=BROK
+C1A=WONDER
+TEN=PC14C_FIRST_BLACKMAIL_CHOICE
+
+
+
+#----------------------
+ID=PC14C_FIRST_BLACKMAIL_ACCEPT
+T=Okay. What's the deal?
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=HACKER
+C2A=NORMAL
+
+T=You're a cop.
+W=HACKER
+TEN=PC14C_BLACKMAIL_ACCEPT_NEXT
+
+
+#----------------------
+ID=PC14C_FIRST_ANOTHER1
+T=No... I can't afford that much.
+W=BROK
+C1=BROK
+C1A=OPPOSITE
+C2=HACKER
+C2A=LISTEN
+
+T=Surely I can offer you something else?...
+W=BROK
+C1A=READY
+
+T=...
+W=HACKER
+
+T=Wait a second...
+W=HACKER
+
+T=That pendant you're carrying!...
+W=HACKER
+C2A=SURPRISED
+
+T=What about it?
+W=BROK
+C1A=THINK
+
+T=To most people this is an ordinary trinket but I have a good eye for these things...
+W=HACKER
+C2A=NORMAL
+
+T=I've seen that material before. It's made of Heptamide!
+W=HACKER
+COMM=Heptamide comes back one or two times during the game. If it doesn't sound good, change it to whatever you want.
+
+T=Heptamide...?
+W=BROK
+C1A=WONDER
+
+T=A very powerful alloy. An ounce of it can light up a whole city for a year!
+W=HACKER
+CLUE=CLUE_BROK_PENDANT
+
+T=You can't be serious.
+W=BROK
+C1A=MAYBE
+
+T=I'm dead serious!
+W=HACKER
+
+T=Give me that!
+W=HACKER
+
+T=No way! I'm not giving it to you!
+W=BROK
+C1A=ANGRY
+
+T=It has a high sentimental value.
+W=BROK
+
+T=Sentimental... Pfft.
+W=HACKER
+
+T=No is no. Find something else!
+W=BROK
+C1A=OPPOSITE
+
+T=...
+W=HACKER
+
+T=Then...
+W=HACKER
+C1A=THINK
+
+T=I know. You're a cop!
+W=HACKER
+
+T=I said it... I'm not really...
+W=BROK
+C1A=MAYBE
+SKIPEND=1
+
+T=Doesn't matter. You must have access to it!
+W=HACKER
+
+T=To what?
+W=BROK
+C1A=THINK
+
+T=The mainframe!
+W=HACKER
+
+T=There's a reason why I have those killing machines...
+W=HACKER
+
+T=Sure. You do illegal stuff.
+W=BROK
+C1A=ALRIGHT
+
+T=That's not it!
+W=HACKER
+C1A=MEH
+
+T=The cops... They have a file on me. It contains my signature and other personal info.
+W=HACKER
+C1A=THINK
+
+T=Due to this, all drones, cameras and Tribots automatically detect and report me!
+W=HACKER
+
+T=This makes my life impossible!
+W=HACKER
+C2A=WORRIED
+
+T=I can hack into the system, but even a genius like me can only get read-only access.
+W=HACKER
+C2A=NORMAL
+
+T=If... "someone" would remove that file...
+W=HACKER
+
+T=You could escape?...
+W=BROK
+C1A=THINK
+
+T=I'll be free! No more bots following me at every corner!
+W=HACKER
+C2A=HAPPY
+
+T=Sounds good but...
+W=BROK
+
+T=How am I supposed to do that?
+W=BROK
+C1A=MAYBE
+
+T=You're a cop. Getting access to the mainframe should be easy for you!
+W=HACKER
+C2A=NORMAL
+
+T=Not so sure about that...
+W=BROK
+C1A=TIRED
+
+T=Get that file erased, and the chip is yours!
+W=HACKER
+
+T=Hmm...
+W=BROK
+C1A=WONDER
+
+T=Won't there be a password or something?
+W=BROK
+
+T=Yup. Face recognition.
+W=HACKER
+
+T=Find the computer owner's face and use this awesome app of mine - FaceBuilderHax!
+W=HACKER
+C2A=HAPPY
+
+T=Easy as pie! Let me transfer it to your phone...
+W=HACKER
+
+T=...
+W=BROK
+C1A=THINK
+
+T=Ugh! The heck?! That phone of yours...
+W=HACKER
+C2A=SURPRISED
+
+T=What kind of ancient technology is this?! The firmware and OS have been outdated for decades!
+W=HACKER
+
+T=Who cares! It works!
+W=BROK
+C1A=MEH
+
+T=Seriously...
+W=HACKER
+C2A=NORMAL
+
+T=Okay. Take this phone.
+W=HACKER
+TEN=PC14C_PHONE_GET
+
+#----------------------
+ID=PC14C_FIRST_ANOTHER2
+T=This has the app installed.
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+
+T=It'll generate a holographic mask you can use to enter the system.
+W=HACKER
+
+T=For this you'll need both a front-facing picture and a three-quarter view of someone who has access to the system.
+W=HACKER
+
+T=Front-facing and 3/4 view pictures. Check.
+W=BROK
+C1A=MOCK
+
+T=Now, scoot!
+W=HACKER
+TEN=PC14C_FIRST_EXIT1
+IT=1
+
+#----------------------
+ID=PC14C_FIRST_EXIT1
+T=Don't you dare flee when I'm away!
+W=BROK
+C1=BROK
+C1A=MEH
+C2=HACKER
+C2A=NORMAL
+
+T=Remember, I'm a detective...
+W=BROK
+
+T=I've found you once. I can do it again!
+W=BROK
+
+T=And that day...
+W=BROK
+C1A=COCKY
+
+T=Gulp!
+W=HACKER
+C2A=WORRIED
+
+T=O-okay... Not moving! Staying right here, stuck on this chair!
+W=HACKER
+
+T=You better!
+W=BROK
+C1A=MOCK
+TEN=PC14C_HACKER_MONEYCHECK
+
+#----------------------
+ID=PC14C_FIRST_MONEYEXIT1
+T=(...)
+W=BROK
+A=THINK
+MOOD=THINK
+
+T=(How am I supposed to get that much dough, though? That's more than I get in a month...)
+W=BROK
+C1A=WONDER
+MOOD=THINK
+
+T=(I'm already regretting this...)
+W=BROK
+MOOD=THINK
+TEN=ACTIVATE_CLICKERS
+
+
+#----------------------
+ID=PC14C_FIRST_GIVEUP1
+T=(Sigh) I give up.
+W=BROK
+C1=BROK
+C1A=DISAPPOINTED
+C2=HACKER
+C2A=LISTEN
+
+T=I'll call the Director later.
+W=BROK
+
+T=Good. Now, go away.
+W=HACKER
+C2A=NORMAL
+
+T=Wait.
+W=BROK
+C1A=MAYBE
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC14C_FIRST_SHAYNOMONEY
+T=(Oops! I've wasted the money!)
+W=BROK
+C1=BROK
+C1A=CONFUSED
+MOOD=THINK
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+#----------------------
+ID=PC14C_FIRST_SHAY1
+T=Here. 100 Unis. From my friend Shay.
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=HACKER
+C2A=LISTEN
+
+T=Shay...
+W=HACKER
+
+T=That girl. Always on the lookout for rare materials.
+W=HACKER
+
+T=Yeah. That's the dough she owed you.
+W=BROK
+C1A=HAPPY
+
+T=Lemme check her account.
+W=HACKER
+C2A=NORMAL
+
+T=Huh. I don't see any...
+W=HACKER
+C1A=THINK
+SKIPEND=1
+
+T=...
+W=HACKER
+C2A=LISTEN
+
+T=Alright! I'll take it.
+W=HACKER
+C2A=HAPPY
+TEN=PC14C_HACKER_SHAYTAKE
+
+T=Good!
+W=BROK
+C1A=ALRIGHT
+TEN=PC14C_FIRST_SHAY2
+
+
+#----------------------
+ID=PC14C_FIRST_SHAY2
+T=What business do you have with Shay, exactly?
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=HACKER
+C2A=LISTEN
+
+T=This is confidential. Although...
+W=HACKER
+C2A=NORMAL
+
+T=You better watch out. That girl's insane.
+W=HACKER
+
+T=Well, nothing new!
+W=BROK
+C1A=ALRIGHT
+
+T=I'm serious. Her file indicates she escaped from an asylum 9 years ago.
+W=HACKER
+
+T=And not an ordinary one.
+W=HACKER
+C1A=THINK
+
+T=Central Light is known for hosting the worst loonies whose profile means danger to others.
+W=HACKER
+
+T=She's been covering her tracks for years.
+W=HACKER
+
+T=Asylum?...
+W=BROK
+
+T=Whatever. I trust her more than you.
+W=BROK
+C1A=MEH
+
+T=Loonies attract loonies.
+W=HACKER
+C2A=WORRIED
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_WELCOME_MONEY1
+T=So?... Where's my money?
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC14C_HACKER_ANOTHERMONEY1
+T=(10,000 Unis is still a lot of dough...)
+W=BROK
+C1=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(Maybe I ought to find another solution?)
+W=BROK
+MOOD=THINK
+TEN=PC14C_HACKER_CHANGEMIND
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_CHANGEMIND1
+T=I've changed my mind.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=HACKER
+C2A=LISTEN
+
+T=What? You mean... You won't get the dough?!
+W=HACKER
+TEN=PC14C_HACKER_FIRSTCHOICE
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_MONEYAGAIN
+T=I will. But...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+
+T=10,000 is way too much.
+W=BROK
+C1A=ANGRY
+
+T=Sorry. That's final.
+W=HACKER
+
+T=Anything lower and I'll be upside down on this deal!
+W=HACKER
+
+T=I don't care.
+W=BROK
+
+T=Get it or get out.
+W=HACKER
+
+T=...
+W=BROK
+C1A=OPPOSITE
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_MISSION1
+T=Let me get this straight...
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=HACKER
+C2A=NORMAL
+
+T=First I locate a police department computer to access the mainframe and delete your file.
+W=BROK
+
+T=To bypass security, I'll use your phone... thingy.
+W=BROK
+C1A=MEH
+
+T=My FaceBuilderHax app.
+W=HACKER
+
+T=Yeah, that.
+W=BROK
+C1A=OPPOSITE
+
+T=Identify the computer owner and apply pictures on the phone.
+W=HACKER
+
+T=Pictures... Check.
+W=BROK
+C1A=ALRIGHT
+
+T=Go on! Move! You're annoying me.
+W=HACKER
+
+T=Hmph...
+W=BROK
+C1A=ANGRY
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+
+#----------------------
+ID=PC14C_HACKER_WELCOME_MISSION1
+T=So?... What are you standing here for!...
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_WELCOME_THINK1
+T=So?...
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_MONEY1
+T=How long is this gonna take?!
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+
+T=Money doesn't exactly grow on trees, ya know!
+W=BROK
+C1A=ANGRY
+
+T=No kiddin'. Why do you think I'm doing this job?!
+W=HACKER
+
+T=Remember. 10,000 Unis.
+W=HACKER
+
+T=How on earth can you expect anyone in the Slums to have that kind of money?!
+W=BROK
+C1A=OPPOSITE
+
+T=You'd be surprised.
+W=HACKER
+
+T=Some people keep their cards well hidden.
+W=HACKER
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_MONEYGIVE
+T=Here's your dough!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=LISTEN
+
+T=You... actually managed to get that much?!
+W=HACKER
+
+T=You have no idea how tough this was...
+W=BROK
+C1A=TIRED
+
+T=So you better deliver, buddy!!!
+W=BROK
+C1A=MOCK
+
+T=Yeah, yeah. Here.
+W=HACKER
+C2A=HAPPY
+
+T=Finally!
+W=BROK
+C1A=HAPPY
+
+T=And here's a present.
+W=HACKER
+TEN=PC14C_HACKER_HACKPHONEGIVE
+
+#----------------------
+ID=PC14C_HACKER_MONEYGIVE2
+T=What's that?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+
+T=A special phone.
+W=HACKER
+
+T=With this line you can reach me in a secure way.
+W=HACKER
+
+T=It can also bypass security systems. With pictures of someone you can...
+W=HACKER
+
+T=No time for an explanation. Gotta go.
+W=BROK
+C1A=MAYBE
+
+T=Time to bring that present to a lucky robot...
+W=BROK
+C2=NONE
+TEN=PC14C_TO_PC10_CHIP
+
+#----------------------
+ID=PC14C_FIRST_THREATEN1
+T=That's not acceptable!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=HACKER
+C2A=LISTEN
+
+T=B-but anything lower won't do!
+W=HACKER
+C2A=WORRIED
+
+T=I... I owe money to some Squealers... I'll be a dead man!
+W=HACKER
+
+T=You're dead if you don't give it to me right now!
+W=BROK
+C1A=FURIOUS
+COMM=He's referring to the chip. Here specifically when threatening the hacker, Brok can be informal to him.
+
+T=Where's the darn thing?!
+W=BROK
+
+T=Tell me!
+W=BROK
+
+T=N-No! Please!
+W=HACKER
+C2_EYESHUT=1
+TEN=PC14C_HACKER_CHOICES_THREATEN
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_THREATEN_ANOTHER1
+T=Hrmph...
+W=BROK
+C1=BROK
+C1A=STUPID
+C2=HACKER
+C2A=WORRIED
+
+T=Okay.
+W=BROK
+C1A=ANGRY
+
+T=Okay? Like... You're... gonna pay?
+W=HACKER
+TEN=PC14C_FIRST_ANOTHER
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_THREATENINSIST1
+T=That was your last chance!
+W=BROK
+C1=BROK
+C1A=FURIOUS
+C2=HACKER
+C2A=SURPRISED
+
+COMM=Again it's probably better if Brok is informal here.
+
+T=You're done for!
+W=BROK
+C1A=YELL
+
+T=Aaaargh!
+W=HACKER
+C2_EYESHUT=1
+TEN=PC14C_HACKER_INSIST_BEATEN
+
+T=(Crack)
+C2=NONE
+COMM=Oops, that must have hurt
+
+T=...!
+W=BROK
+C1A=CONFUSED
+TEN=PC14C_HACKER_MOVETOWARDS
+
+T=Oh gosh!...
+W=BROK
+
+T=Did I...?!
+W=BROK
+C1A=SURPRISED
+
+T=...
+W=BROK
+TEN=PC14C_HACKER_MOVETOWARDS_STAND
+
+T=Phew... He's still breathing.
+W=BROK
+C1A=STUPID
+
+T=That was close. I should really calm my nerves...
+W=BROK
+
+T=How am I gonna get that chip, now?...
+W=BROK
+C1A=WONDER
+TEN=PC14C_HACKER_BLACKMAIL_CHECK
+
+#----------------------
+ID=PC14C_HACKER_THREATENTHINK1
+T=(Sigh...)
+W=BROK
+A=STUPID
+MOOD=THINK
+
+T=(If I break his neck, I risk never finding that chip...)
+W=BROK
+MOOD=THINK
+
+T=(On the other hand, I can't afford such an expense !)
+W=BROK
+C1A=OPPOSITE
+MOOD=THINK
+
+T=(...)
+W=BROK
+C1A=MAYBE
+MOOD=THINK
+
+T=(The real question is...)
+W=BROK
+MOOD=THINK
+
+T=(How far will I go to get Graff out of this mess?...)
+W=BROK
+MOOD=THINK
+TEN=PC14C_HACKER_CHOICES_THREATEN
+IT=1
+
+#----------------------
+ID=PC14C_TO_PC14B_NO
+T=Nope!
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC14C_HACKER_BEATEN1
+T=That's the only way to handle that kind of swindler.
+W=BROK
+A=MEH
+
+T=Now. Where did he store that chip?
+W=BROK
+A=ANGRY
+
+#----------------------
+ID=PC14C_HACKER_HIT1
+T=Argh!
+W=HACKER
+C2=HACKER
+C2A=WORRIED
+NB=1
+D=90
+
+#----------------------
+ID=PC14C_HACKER_HIT2
+T=Stop! That hurts!
+W=HACKER
+C2=HACKER
+C2A=WORRIED
+NB=1
+D=120
+
+#----------------------
+ID=PC14C_HACKER_HIT3
+T=I'm too cute to die!...
+W=HACKER
+C2=HACKER
+C2A=WORRIED
+C2_EYESHUT=1
+NB=1
+D=90
+
+#----------------------
+ID=PC14C_HACKER_SEARCH1
+T=He's okay... For the most part.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+COMM=Brok has beaten up the hacker
+TEN=PC14C_HACKER_SEARCHPOS
+
+T=Hmm... (Searches)
+W=BROK
+C1A=THINK
+SOUND=clothes
+
+T=Ha-ha! A chip!
+W=BROK
+C1A=MOCK
+
+T=D-Don't...
+W=HACKER
+C2=HACKER
+C2A=WORRIED
+C2_EYESHUT=1
+
+T=Uh?...
+W=BROK
+C1A=THINK
+
+T=It's... too valuable...
+W=HACKER
+TEN=PC14C_HACKER_PUNCHPOS
+
+T=Shut up. (Punches)
+W=BROK
+C1A=ANGRY
+
+T=Ooof!
+W=HACKER
+
+T=Well he just confirmed it. Must be what the Director was looking for!
+W=BROK
+C1A=ALRIGHT
+C2=NONE
+
+T=And... This?...
+W=BROK
+C1A=WONDER
+TEN=PC14C_HACKER_HACKPHONEKO
+
+#----------------------
+ID=PC14C_HACKER_SEARCH1B
+T=Nice phone!
+W=BROK
+A=MEH
+
+T=I'll take it. Pretty sure he's got a lot of these!
+W=BROK
+
+T=I'm outta here.
+W=BROK
+C1A=READY
+TEN=PC14C_TO_PC10_CHIP
+IT=1
+
+
+
+#----------------------
+ID=PC14C_HACKER_SEARCH2
+T=Got what I wanted.
+W=BROK
+C1=BROK
+C1A=THINK
+
+#----------------------
+ID=PC14C_HACKER_THINK1
+T=(Better be on my guard... That guy's face screams "crook" all over.)
+W=BROK
+A=WONDER
+MOOD=THINK
+TEN=PC14C_HACKER_CHOICES
+IT=1
+
+
+#----------------------
+# INventory
+#----------------------
+ID=PC14C_HACKER_INV_DEFAULT1
+T=Hmm... May I trade this?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+CONTEXT=Showing inventory to the hacker
+
+T=Forget it.
+W=HACKER
+
+T=But... it's beautiful, isn't it?
+W=BROK
+C1A=ALRIGHT
+
+T=...
+W=HACKER
+C2A=LISTEN
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_INV_DEFAULT2
+T=Here. Take.
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=HACKER
+C2A=NORMAL
+
+T=Who are you kiddin'?
+W=HACKER
+
+T=But... This is invaluable!
+W=BROK
+C1A=THINK
+
+T=Invaluable crap.
+W=HACKER
+
+T=Buddy, you're spending way too much time locked up. Your perspective of things is warped.
+W=BROK
+C1A=READY
+
+T=Get lost.
+W=HACKER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_INV_PENDANT
+T=Hmm...!
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=HAPPY
+
+T=...
+W=BROK
+
+T=Sorry... I can't.
+W=BROK
+C1A=DOWN
+
+T=Geez! How stupid!
+W=HACKER
+C2A=NORMAL
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC14C_HACKER_INV_MONEY1
+T=Here's all I've got... Take it.
+W=BROK
+C1=BROK
+C1A=DOWN
+C2=HACKER
+C2A=LISTEN
+
+T=Are you kidding?! I couldn't even buy an Antburger with that!
+W=HACKER
+C2A=NORMAL
+
+T=You're exaggerating. I know for a fact that you could buy two.
+W=BROK
+C1A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC14C_HACKER_INV_APARTMENTKEY
+T=Do your business in my apartment!
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+
+T=Interesting but... No.
+W=HACKER
+
+T=I've had a bad experience in that kind of apartment lately.
+W=HACKER
+C2A=WORRIED
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+
+#----------------------
+ID=PC14C_HACKER_INV_BILL1
+T=Can you...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+SKIPEND=1
+
+T=Invalidate this bill? Sure!
+W=HACKER
+C2A=HAPPY
+
+T=That will cost you 5,000 Unis.
+W=HACKER
+
+T=No, thanks.
+W=BROK
+C1A=ANGRY
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC14C_HACKER_INV_HACKPHONE
+T=I wonder what it's worth...
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=SURPRISED
+
+T=Don't even think about it!
+W=HACKER
+C2A=NORMAL
+
+T=I'll track you! I'll erase your identity!
+W=HACKER
+
+T=Might not be such a bad idea.
+W=BROK
+C1A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_INV_RADAR
+T=What's this?...
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=LISTEN
+
+T=A radar for materials.
+W=BROK
+
+T=Uh? What's the point?... Can't you just order what you need?
+W=HACKER
+C2A=HAPPY
+
+T=Not everyone's rolling in the dough...
+W=BROK
+C1A=MAYBE
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_INV_REMOTECONTROL
+T=I'll trade this remote control! It's rare police equipment!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=HACKER
+C2A=NORMAL
+
+T=I've got twenty of these.
+W=HACKER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+ID=PC14C_HACKER_INV_RUBBERCUTTER
+T=You can cut through bots with this!
+W=BROK
+C1=BROK
+C1A=ALRIGHT
+C2=HACKER
+C2A=NORMAL
+
+T=I don't use violence to defend myself.
+W=HACKER
+C2A=HAPPY
+
+T=Right... I'm sure those drones of yours wanted to give me a kiss.
+W=BROK
+C1A=MEH
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+# Exit
+#----------------------
+ID=PC14C_HACKER_EXIT1
+T=I'll be back!
+W=BROK
+C1=BROK
+C1A=MOCK
+C2=HACKER
+C2A=NORMAL
+CONTEXT=Exit hacker talk
+
+T=If only you didn't...
+W=HACKER
+
+T=What?!
+W=BROK
+C1A=ANGRY
+
+T=N-nothing!
+W=HACKER
+C2A=SURPRISED
+
+#----------------------
+ID=PC14C_HACKER_EXIT2
+T=Stay!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=HACKER
+C2A=SURPRISED
+
+T=Pfft...
+W=HACKER
+C2A=NORMAL
+
+
+#---------------------------------------------
+#= Talking to Hacker (when Gherkin around, if we hit the hacker in day 2)
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_KO1
+T=!
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=SURPRISED
+TEN=PC14C_HACKER_HIDE
+
+T=AaaaAaaah!... Not you!
+W=HACKER
+
+T=Hey! Stop hiding! I need you!
+W=BROK
+C1A=MOCK
+
+T=B-but...
+W=HACKER
+C2A=WORRIED
+
+T=I won't hurt ya!
+W=BROK
+C1A=ALRIGHT
+
+T=P-promise?...
+W=HACKER
+
+T=Sure.
+W=BROK
+C1A=MEH
+
+T=...
+W=HACKER
+TEN=PC14C_HACKER_UNHIDE
+
+T=Okay. But don't waste my time!
+W=HACKER
+C2A=NORMAL
+
+T=(Sigh)
+W=BROK
+C1A=TIRED
+TEN=PC14C_HACKER_GHERKIN_CHOICES
+IT=1
+
+
+#---------------------------------------------
+#= Talking to Hacker (when Gherkin around)
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_FIRST1
+T=Mister Detective.
+W=HACKER
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=LISTEN
+CONTEXT=Day 3 - Talking to Hacker (when Gherkin around)
+
+T=I have to warn you, I'm pretty busy right n...
+W=HACKER
+C2A=NORMAL
+SKIPEND=1
+
+T=Yeah, yeah. Listen.
+W=BROK
+C1A=ANGRY
+TEN=PC14C_HACKER_GHERKIN_CHOICES
+IT=1
+
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_PILL
+T=Any info on what caused that pill situation?
+W=BROK
+C1=BROK
+C1A=WONDER
+C2=HACKER
+C2A=NORMAL
+
+T=I wish. This is a disaster!
+W=HACKER
+C2A=WORRIED
+
+T=At this rate, I'll be outta dough before the end of the week. 
+W=HACKER
+
+T=And clients, too! One more day and they'll drop like flies.
+W=HACKER
+
+T=We gotta do something!
+W=BROK
+C1A=ANGRY
+
+T=With your competence and all your doodads, surely you can investigate!
+W=BROK
+
+T=Don't think I haven't tried!
+W=HACKER
+C2A=LISTEN
+
+T=I've searched all over the Triweb. Zip, nada.
+W=HACKER
+C2A=NORMAL
+
+T=I should have guessed.
+W=BROK
+C1A=OPPOSITE
+
+T=Nothing replaces an investigation in the field.
+W=BROK
+TEN=PC14C_HACKER_GHERKIN_CHOICES
+IT=1
+
+
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_TRIBOT
+T=What's going on with those darn bots?!
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=HACKER
+C2A=NORMAL
+
+T=The Tribots? What's with them?
+W=HACKER
+C2A=LISTEN
+
+T=Don't tell me you're not aware?
+W=BROK
+C1A=SURPRISED
+
+T=Since this morning, they've made countless attacks on people!
+W=BROK
+
+T=I can't even count how many I've put into pieces!
+W=BROK
+C1A=OPPOSITE
+
+T=You should know better than calling them "Tin cans".
+W=HACKER
+C2A=NORMAL
+
+T=Very funny.
+W=BROK
+C1A=ANGRY
+
+T=I'm serious.
+W=HACKER
+
+T=So you haven't heard anything?
+W=BROK
+C1A=THINK
+
+T=Not the slightest. But I'll be on the lookout.
+W=HACKER
+TEN=PC14C_HACKER_GHERKIN_CHOICES
+IT=1
+
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_MESSAGES
+T=Someone's sending me messages from an unknown number.
+W=BROK
+C1=BROK
+C1A=ANGRY
+C2=HACKER
+C2A=NORMAL
+
+T=Find out who this is.
+W=BROK
+
+T=Straight to the point, eh?
+W=HACKER
+
+T=That's easy as pie. 1,000 Unis should do it.
+W=HACKER
+
+T=I don't have time for this!
+W=BROK
+C1A=FURIOUS
+
+T=Do it now or I might turn your pretty face into mashed potatoes!
+W=BROK
+C1A=READY
+C2A=SURPRISED
+
+T=Erm... Okay, okay! No need to get upset over spare change!
+W=HACKER
+C2A=WORRIED
+
+T=I'll put it on your tab.
+W=HACKER
+C2A=NORMAL
+
+T=Good.
+W=BROK
+
+T=...
+W=HACKER
+
+T=Okay. Found it.
+W=HACKER
+
+T=So? Who is it?
+W=BROK
+C1A=MOCK
+
+T=I can't tell you.
+W=HACKER
+
+T=What?...
+W=BROK
+C1A=THINK
+
+T=Confidentiality. The keyword in this profession.
+W=HACKER
+
+T=It's a matter of trust between me and my client. She specifically...
+W=HACKER
+SKIPEND=1
+
+T=She?
+W=BROK
+C1A=WONDER
+
+T=Argh!...
+W=HACKER
+C2A=SURPRISED
+
+T=Come on, pour it out!
+W=BROK
+C1A=READY
+
+T=My professional ethics strictly forbid from revealing her name!
+W=HACKER
+C2A=WORRIED
+
+T=But... I guess it's okay to tell you a few things about her request.
+W=HACKER
+
+T=Ethics, huh?...
+W=BROK
+C1A=MEH
+
+T=Two days ago she asked for a few searches and to notify her of updates related to a few topics.
+W=HACKER
+C2A=NORMAL
+
+T=Which ones?
+W=BROK
+C1A=THINK
+
+T=Hmm... Here's the list.
+W=HACKER
+
+T=The Government...
+W=HACKER
+
+T=Various statistics over the past year...
+W=HACKER
+
+T=Breaking into some journalist's message inbox...
+W=HACKER
+
+T=Finances from pharmaceutical companies. In particular, Toxout pills...
+W=HACKER
+
+T=Well, well! If I believed in coincidences...
+W=BROK
+C1A=ALRIGHT
+
+T=And the whereabouts of a man named Sin.
+W=HACKER
+
+T=Sin?!
+W=BROK
+C1A=SURPRISED
+
+T=Yeah. A roo who lived in the Drums.
+W=HACKER
+
+T=No doubt. That's him.
+W=BROK
+C1A=MAYBE
+
+T=I've learned over time to analyze emotional states. Helps a lot with affairs.
+W=HACKER
+
+T=And I can tell you this.
+W=HACKER
+C1A=THINK
+
+T=She tried hard to cover it but she seemed pretty worried about the man.
+W=HACKER
+
+T=Sin... I wonder...
+W=BROK
+C1A=MAYBE
+TEN=PC14C_GETCLUES
+
+T=Hope you're satisfied.
+W=HACKER
+
+T=Now, shoo!
+W=HACKER
+TEN=PC14C_RJCOLLAPSE
+
+T=(Cough, cough, cough....)
+BVOICESP=RJ
+TEN=PC14C_LOOKTOWARDSRJ
+
+T=...?
+W=BROK
+C1A=THINK
+TEN=PC14C_HACKER_GHERKIN_LEAVE
+
+
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_SECOND
+T=Hey! Help me!
+W=BROK
+C1=BROK
+C1A=SURPRISED
+C2=HACKER
+C2A=LISTEN
+CONTEXT=Day 3 - After RJ collapses due to lack of pill
+
+T=Your bodyguard collapsed!
+W=BROK
+
+T=What?
+W=HACKER
+
+T=He's been outta pills for too long!
+W=BROK
+C1A=OPPOSITE
+
+T=This is urgent! Gimme one!
+W=BROK
+C1A=READY
+
+T=Hey! Are you kidding?!
+W=HACKER
+C2A=NORMAL
+
+T=You know the price of those on the black market?! I can barely afford one for myself!
+W=HACKER
+
+T=It's a matter of life and death!
+W=BROK
+C1A=ANGRY
+
+T=OK. Gimme 20,000 Unis.
+W=HACKER
+
+T=Are you insane?! I don't have that money!
+W=BROK
+
+T=Then you've got your answer.
+W=HACKER
+
+T=We're in the Slums. The strongest survive.
+W=HACKER
+
+T=If he doesn't, this just means I made a bad choice hiring him.
+W=HACKER
+
+T=How can you be so selfish?!
+W=BROK
+
+T=Not selfish. Responsible.
+W=HACKER
+
+T=How do you think I'm staying in business? By giving away valuable stuff or services for free?!
+W=HACKER
+
+T=The life of second-rate citizens isn't worth that much.
+W=HACKER
+
+T=Right. You're not selfish. You're despicable.
+W=BROK
+C1A=OPPOSITE
+
+T=No more Mister nice guy!
+W=BROK
+C1A=FURIOUS
+
+T=Gimme a pill or I'm gonna...
+W=BROK
+SKIPEND=1
+
+T=Woah! No point threatening me!...
+W=HACKER
+C2A=SURPRISED
+
+T=I don't have any currently! I swear!...
+W=HACKER
+C1A=ANGRY
+
+T=Then ask your contacts!
+W=BROK
+
+T=Even if I did... I can't have one delivered right away!
+W=HACKER
+C2A=WORRIED
+
+T=The big bear will be long dead.
+W=HACKER
+
+T=Gah... I won't get anything from that guy!...
+W=BROK
+C1A=OPPOSITE
+C2=NONE
+
+T=Better find another way, and fast!
+W=BROK
+TEN=PC14C_HACKER_GHERKIN_LEAVE2
+
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_SECOND2
+T=...
+W=HACKER
+A=NORMAL
+TEN=PC14C_TO_PC14B
+#TODO (he hides behind counter)
+
+
+
+#---------------------------------------------
+ID=PC14C_HACKER_GHERKIN_USELESS
+T=He's useless.
+W=BROK
+A=OPPOSITE
+
+#---------------------------------------------
+ID=PC14C_HACKER_END_FIRST
+T=Still here?
+W=BROK
+C1=BROK
+C1A=THINK
+C2=HACKER
+C2A=NORMAL
+CONTEXT=Day 3 - Coming back to look for Graff
+
+T=...!
+W=HACKER
+C2A=SURPRISED
+
+T=Stop scaring me like that!
+W=HACKER
+C2A=NORMAL
+
+T=I'm looking for my boy.
+W=BROK
+C1A=MOCK
+
+T=So?...
+W=HACKER
+C2A=LISTEN
+
+T=Cat. Grey fur, blue eyes. Red sweatshirt.
+W=BROK
+C1A=MAYBE
+
+T=...
+W=HACKER
+C2A=WORRIED
+
+T=...?
+W=BROK
+C1A=WONDER
+
+T=You... You've seen him!
+W=BROK
+C1A=ANGRY
+
+T=Well...
+W=HACKER
+
+T=Tell me!
+W=BROK
+C1A=READY
+
+T=Where is he?!
+W=BROK
+
+T=He... He went out! Not long ago! With a friend of his!
+W=HACKER
+C2A=HAPPY
+
+T=That can't be... What was he doing here?...
+W=BROK
+C1A=WONDER
+
+T=Something about Toxout pills...
+W=HACKER
+C2A=NORMAL
+
+T=They must be around! Take a look!
+W=HACKER
+TEN=PC14C_HACKER_END_RUNAWAY
+
+T=Graff... What are you up to!...
+W=BROK
+C1A=TIRED
+
+T=...
+W=HACKER
+TEN=PC14C_TO_PC14B
+
+
+#---------------------------------------------
+#= Gameover during drones fight
+#---------------------------------------------
+ID=PC14C_HACKERFIGHT_GAMEOVER
+T=...
+W=HACKER
+A=LISTEN
+CONTEXT=Gameover during drones fight
+TEN=PC14C_HACKER_UNHIDE
+
+T=Phew. Good thing I installed those drones!
+W=HACKER
+A=HAPPY
+
+T=Okay, back to work.
+W=HACKER
+A=NORMAL
+TEN=GAMEOVER
+
+
+
+#----------------------
+ID=PC14C_PIZZABOX1
+T=Gross!
+W=BROK
+A=OPPOSITE
+
+#----------------------
+ID=PC14C_BOTTLE1
+T=May I have a drink?
+W=BROK
+C1=BROK
+C1A=MEH
+C2=HACKER
+C2A=LISTEN
+
+T=No.
+W=HACKER
+C2A=NORMAL
+
+#----------------------
+ID=PC14C_WINDOW1
+T=What a marvelous view...
+W=BROK
+A=ALRIGHT
+
+#----------------------
+ID=PC14C_STUFF1
+T=Whoa... Too much stuff. I have more urgent business to attend to.
+W=BROK
+A=OPPOSITE
+
+
+#----------------------
+ID=PC14C_HACKER_WALKONSTAND1
+T=What the?...
+W=HACKER
+A=SURPRISED
+
+
+#----------------------
+ID=PC14C_HACKER_WALKONSTAND2
+T=Tsk. Go play outside.
+W=HACKER
+A=NORMAL
+
+#----------------------
+ID=PC14C_HACKER_WALKONSTAND3
+T=(Sigh)
+W=HACKER
+A=NORMAL
+
+#----------------------
+#= Talking to hacker
+#----------------------
+ID=COOP_PC14C_HACKER1
+T=He doesn't trust us, and I don't trust him.
+
+###############################################
+# PROOFREAD - jblaker - 08/08/2019
+# PROOFREAD & UPDATED - Chris Barnes 17/09/2019
+###############################################

@@ -1,0 +1,6391 @@
+﻿#-------------------------------
+#=SCHOOL INSIDE
+#-------------------------------
+
+#----------------------
+#= Intro
+#----------------------
+ID=PC10_INTRO1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+CONTEXT=Day 1 - Graff arrives at school (first time we control him)
+VLOW=1
+TEN=PC10_INTRO_RUN
+
+T=Woah! I'm late!
+W=GRAFF
+C1A=SURPRISED
+TEN=PC10_INTRO_GRAFFENTER1
+
+
+#----------------------
+ID=PC10_INTRO2
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=STUBOT
+C2A=NORMAL
+VLOW=1
+
+T=Take a seat
+W=STUBOT
+
+T=The Director will arrive in 3 minutes and 30 seconds
+W=STUBOT
+
+T=In the meantime, feel free to do exercises at your desk
+W=STUBOT
+TEN=PC10_INTRO_GRAFFGOESSEAT
+
+#----------------------
+ID=PC10_INTRO3
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+VLOW=1
+
+T=Psst!
+W=GRAFF
+C1A=MEH
+
+T=Hey, Ott!
+W=GRAFF
+
+T=...?
+W=OTT
+C2=OTT
+C2A=SURPRISED
+VLOW=1
+
+T=What's going on? Where are the others?
+W=GRAFF
+C1A=OPPOSITE
+
+T=I'm not sure...
+W=OTT
+C2A=WONDER
+
+T=But Stubot said Mr. Fenton has been promoted to another Center.
+W=OTT
+C2A=NORMAL
+
+T=...
+W=GRAFF
+VLOW=1
+TEN=PC10_INTRO3_2
+
+#----------------------
+ID=PC10_INTRO3B
+T=Don't you think that's strange?
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+
+T=What is?
+W=GRAFF
+
+T=Well...
+W=OTT
+
+T=First it was our Polyrectical teacher who became clinically depressed...
+W=OTT
+C2A=NORMAL
+COMM=Polyrectical is an invented term meant to sound complex, feel free to change to whatever you want
+
+T=Then our Eco-manager started having health issues, and now our Algoritechnic teacher's transferred elsewhere.
+W=OTT
+COMM=Same here
+
+T=All of our human teachers are gone and replaced by bots.
+W=OTT
+C2A=WONDER
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Nah!
+W=GRAFF
+C1A=DISDAIN
+
+T=No conspiracy there. You watch too many livies!
+W=GRAFF
+
+T=They're just replacing the staff with bots to optimize cost.
+W=GRAFF
+C1A=COCKY
+
+T=They're becoming less expensive over time, while us humans are much less reliable.
+W=GRAFF
+
+T=Don't you feel concerned?
+W=OTT
+C2A=DISAPPOINTED
+
+T=It sucks but...
+W=GRAFF
+C1A=TURN
+
+T=We should be thankful to have been accepted here.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Would you prefer one of those crappy Slum-kids Centers?
+W=GRAFF
+
+T=It's our only chance to become Drumers. To live under the Dome.
+W=GRAFF
+C1A=MEH
+
+T=I know. I worked hard enough just to get a place here.
+W=OTT
+TEN=PC10_INTRO_DIRECTORCOMES
+
+T=Still...
+W=OTT
+C2A=SAD
+
+
+#----------------------
+ID=PC10_INTRO4
+T=Go ahead, sweetie. Take a seat.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=HAPPY
+C2=KLAY
+C2A=NORMAL
+
+T=Hey! I told you!
+W=KLAY
+C2A=SURPRISED
+
+T=Don't call me that in front of everyone!
+W=KLAY
+C2A=ANGRY
+TEN=PC10_INTRO_DIRECTORSIT
+
+#----------------------
+ID=PC10_INTRO5
+T=Students. I have some rather major news.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=MEH
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=NORMAL
+
+T=As Stubot must have informed you, Mr. Fenton has been promoted and will not be coming back.
+W=DIRECTOR
+
+T=This incident and some previous others have implied unforeseen changes to the management.
+W=DIRECTOR
+
+T=It has been decided that your final trials will be advanced to this week, starting now.
+W=DIRECTOR
+
+T=What?!
+W=GRAFF
+C2A=SURPRISED
+
+T=Now? But...
+W=OTT
+C4A=SURPRISED
+
+T=Afraid you won't pass, stinkies?
+W=KLAY
+C3A=BAD
+
+T=Shut up, baby robot!
+W=GRAFF
+C2A=ANGRY
+
+T=Quiet, please!
+W=DIRECTOR
+C1A=ANGRY
+C2A=MEH
+C4A=NORMAL
+C3A=NORMAL
+
+T=The trials will span across three days.
+W=DIRECTOR
+C1A=NORMAL
+
+T=In addition, your Science fair invention will be rated and counted for the diploma.
+W=DIRECTOR
+
+T=As the only students choosing this career path, all four of you will be constituting one group.
+W=DIRECTOR
+TEN=PC10_INTRO_SCORESAPPEAR_INTRO6
+
+#----------------------
+ID=PC10_INTRO6
+T=Stubot here will serve as standard meter to evaluate your performance.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=MEH
+C3=KLAY
+C3A=ANGRY
+C4=OTT
+C4A=WONDER
+
+T=Meaning?
+W=OTT
+
+T=You will pass if you get a score equal or better than Stubot.
+W=DIRECTOR
+C4A=NORMAL
+
+T=Keep in mind though. This is not a competition.
+W=DIRECTOR
+
+T=Yeah, right...
+W=GRAFF
+C2A=OPPOSITE
+
+T=The trials are split into four parts, each counting 25 points for a total of 100 points altogether.
+W=DIRECTOR
+# original - which makes a 100 total.
+
+T=The first part consists in a series of exercises you'll be doing now.
+W=DIRECTOR
+
+T=Any questions?
+W=DIRECTOR
+C1A=HAPPY
+
+T=Ott?
+W=DIRECTOR
+C1A=NORMAL
+
+T=I've got a major problem.
+W=OTT
+C4A=SAD
+
+T=From tomorrow, I'm supposed to start my internship at the police station.
+W=OTT
+
+T=I know. We've decided to do you a favor.
+W=DIRECTOR
+
+T=You'll be doing tomorrow's trial in the evening after everyone else.
+W=DIRECTOR
+
+T=What?... But...
+W=OTT
+C4A=SURPRISED
+
+T=No but. Remember!
+W=DIRECTOR
+C1A=ANGRY
+
+T=Getting accepted into active society as a Drumer for kids like yourself means substantial efforts.
+W=DIRECTOR
+
+T=You must be willing to make sacrifices.
+W=DIRECTOR
+C1A=NORMAL
+
+T=Don't worry. It'll be fine!
+W=DIRECTOR
+C1A=HAPPY
+TEN=PC10_MAINMUSIC_GONE
+
+T=...
+W=OTT
+C4A=DISAPPOINTED
+
+T=Alright. The exam starts now.
+W=DIRECTOR
+TEN=PC10_EXAMMUSIC
+
+T=(There you go. I'm stressing full steam now...)
+W=GRAFF
+C2A=GASP
+MOOD=THINK
+TEN=PC10_INTRO_BARRIERAPPEAR
+
+
+
+#----------------------
+#= Exit
+#----------------------
+ID=PC10_DESK_EXIT1
+T=(So close... Yet so far.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+CONTEXT=Checking the room
+COMM=Looking at the door
+
+#----------------------
+ID=PC10_INSTRUCTIONS
+T="Before starting please check the rules by pressing this button."
+W=GRAFF
+A=MEH
+
+T="When you're done, press the upper right button to submit."
+W=GRAFF
+A=MEH
+
+T="Good luck!"
+W=GRAFF
+A=MEH
+CONTEXT=His written exam
+
+#----------------------
+ID=PC10_RULES
+T="Rules applicable for this year (3035 A.R.)"
+TEXTONLY=1
+
+T="This exam and all related trials are part of the process to validate your acceptance as first-class citizen (Drumer)."
+TEXTONLY=1
+
+T="As such it is strictly reserved to Slumer children who will become adults (16 year old) this year, under penalty of exclusion."
+TEXTONLY=1
+
+T="- Respect your partners. Damaging others' belongings is forbidden. (Immediate exclusion)"
+TEXTONLY=1
+
+T="- Repeated absences. (First-class penalty - 40 points)"
+TEXTONLY=1
+ 
+T="- No cheating allowed (Second-class penalty - 5 points per offense)"
+TEXTONLY=1
+
+T="- No phone usage during this exam. (Third-class penalty - 2 points)"
+TEXTONLY=1
+
+T="Outside of these cases, tricks whether moral or immoral are allowed. Outmatching others is encouraged and will help you in your future life."
+TEXTONLY=1
+
+T="Copyright NMER Technologies"
+TEXTONLY=1
+
+#----------------------
+#= Ott
+#----------------------
+ID=PC10_DESK_OTT1
+T=(My best friend.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+CONTEXT=Checking the room
+
+T=(Or more accurately... my only friend.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(Ott isn't the best student in this class but maybe he's got some answers...?)
+W=GRAFF
+A=THINK
+MOOD=THINK
+TEN=PC10_DESK_CHEATCHOICE
+
+#----------------------
+ID=PC10_DESK_OTT2
+T=(My best friend...)
+W=GRAFF
+A=THINK
+MOOD=THINK
+TEN=PC10_DESK_CHEATCHOICE
+
+#----------------------
+ID=PC10_DESK_CHEATNO
+T=(I can't believe I even thought of doing this!)
+W=GRAFF
+A=STUPID
+MOOD=THINK
+
+T=(What's wrong with me?! I can't afford to lose my only friend.)
+W=GRAFF
+A=STUPID
+MOOD=THINK
+
+#----------------------
+ID=PC10_DESK_CHEATYES
+T=(Cheating should be impossible. But they overlooked something!)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(My protective barrier is defective on the right side. There's a tiny hole I can see through.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=From now on, click on Ott whenever you want to cheat.
+TEXTONLY=1
+TEN=PC10_DESK_CHEATYESCLICKER
+
+#----------------------
+ID=PC10_DESK_OTT_DOCHEAT1
+T=(Just a look-see!...)
+W=GRAFF
+A=DISDAIN
+MOOD=THINK
+COMM=Graff attempts to cheat
+
+T=(...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(Looks like Ott replied "Do nothing" for the first question...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(Weird.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+#----------------------
+ID=PC10_DESK_OTT_DOCHEAT2
+T=(Hmm...)
+W=GRAFF
+A=THINK
+MOOD=THINK
+VLOW=1
+
+T=(For the second question he wrote 13 for the first number.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(Darn, I can't read the second one.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC10_DESK_OTT_DOCHEAT3
+T=(Hmm...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(Third question... "Son in law"?)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(I should keep in mind Ott isn't the best student over here.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+#----------------------
+ID=PC10_DESK_OTT_DOCHEAT4
+T=(Ott entered "nothing" for question 4...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+COMM=Actually the word "nothing"!
+
+#----------------------
+ID=PC10_DESK_OTT_DOCHEAT5
+T=(For question 6, he'd choose to save his friend...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(Ott...)
+W=GRAFF
+A=TURN
+MOOD=THINK
+
+#----------------------
+ID=PC10_DESK_OTT_DOCHEAT6
+T=...
+W=OTT
+C2=OTT
+C2A=OPPOSITE
+
+T=(Gulp!)
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=NONE
+MOOD=THINK
+
+T=(I... think Ott spotted me...)
+W=GRAFF
+C1A=TURN
+MOOD=THINK
+
+T=(I'd better stop...)
+W=GRAFF
+MOOD=THINK
+
+#----------------------
+ID=PC10_DESK_OTT_DOCHEAT7
+T=(Nah... I should stop...)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+#= Klay
+#----------------------
+ID=PC10_DESK_KLAY1
+T=(The Director's kid... even though his mother is a robot.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(Don't ask me how that's even possible!)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(All I know is... I hate him.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+#= Graff
+#----------------------
+ID=PC10_DESK_GRAFF1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=Graff? Where are you going?
+W=DIRECTOR
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Have you finished your test?
+W=DIRECTOR
+
+T=Erm... Not yet.
+W=GRAFF
+C1A=GASP
+
+T=I'm all cramped up from sitting in this chair.
+W=GRAFF
+
+T=Please sit or you'll get a penalty.
+W=DIRECTOR
+TEN=PC10_GRAFF_SIT
+
+T=(Sigh) Okay...
+W=GRAFF
+C1A=TURN
+
+#----------------------
+#= Student bot
+#----------------------
+ID=PC10_DESK_STUBOT1
+T=(So our performance will be measured to this... bot guy...?)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(If there wasn't the risk of getting excluded, everyone would be trying to eliminate him.)
+W=GRAFF
+MOOD=THINK
+
+#----------------------
+#= VR Learner
+#----------------------
+ID=PC10_DESK_VRLEARNER1
+T=(I call it "the brainwashing instrument".)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(It definitely works well when we're young for fast learning. Like memorizing an entire book.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(But the effect doesn't last. Only scraps remain after a few hours.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(I barely use it. So painful...)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC10_DESK_VRLEARNER2
+T=(No! Using it during exams is forbidden.)
+W=GRAFF
+A=ANGRY
+MOOD=THINK
+
+#----------------------
+#= Director
+#----------------------
+ID=PC10_DESK_DIRECTOR1
+T=(I don't mind the Director. I've known worse bots. It... She does the job.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(It just feels weird that it's supposed to be female. We rarely see any.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+#= View
+#----------------------
+ID=PC10_DESK_VIEW1
+T=(Clearly the best district of the Slums. I'm glad I was accepted here.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(I can't wait to get my diploma and become a Drumer!... Again.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+
+#----------------------
+#= Invention A
+#----------------------
+ID=PC10_DESK_INVENTIONA1
+T=(Must be Klay's invention. Man, it's huge!)
+W=GRAFF
+A=DISDAIN
+MOOD=THINK
+
+#----------------------
+#= Invention B
+#----------------------
+ID=PC10_DESK_INVENTIONB1
+T=(Some inventions for the fair this afternoon.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(If I had known the rating would count for the final exams...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(I would have made something less... crappy.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+#= Send the trial
+#----------------------
+ID=PC10_SENDTRIAL_NOTHING
+T=(I feel sick...)
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+MOOD=THINK
+CONTEXT=Graff submits his exam
+TEN=PC10_SENDTRIAL_WAIT
+IT=1
+
+#----------------------
+ID=PC10_SENDTRIAL_TOOEASY
+T=(Too easy!)
+W=GRAFF
+A=COCKY
+MOOD=THINK
+TEN=PC10_SENDTRIAL_WAIT
+IT=1
+
+#----------------------
+ID=PC10_SENDTRIAL_WAIT
+T=(Looks like the others haven't finished yet.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+TEN=PC10_SENDTRIAL_WAIT2
+
+#----------------------
+ID=PC10_SENDTRIAL_NORMAL
+T=(I hope it's okay...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+TEN=PC10_SENDTRIAL_WAIT2
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT
+T=Very well.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=MEH
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=NORMAL
+CONTEXT=First exam results
+
+T=The results should appear in a few seconds.
+W=DIRECTOR
+
+T=(Oh, man... Here comes the stress again...)
+W=GRAFF
+C2A=GASP
+MOOD=THINK
+TEN=PC10_SENDTRIAL_RESULT2
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_NORMAL
+T=None of you got a perfect score. However...
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=MEH
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=NORMAL
+TEN=PC10_SENDTRIAL_RESULT_KLAY
+IT=1
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_KLAY
+T=Klay submitted fast enough to get 2 bonus points.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=MEH
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=NORMAL
+
+T=Eh.
+W=KLAY
+C2A=OPPOSITE
+TEN=PC10_SENDTRIAL_RESULT_KLAYB
+IT=1
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_GRAFFBONUS
+T=Same for you, Graff. Good job.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=GASP
+C3=KLAY
+C3A=ANGRY
+C4=OTT
+C4A=SURPRISED
+TEN=PC10_SENDTRIAL_RESULT_KLAYD
+IT=1
+
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_NOTHING
+T=Graff... What happened?
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=GASP
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=SURPRISED
+
+T=I... Erm...
+W=GRAFF
+C2A=TURN
+
+T=Ha ha! You suck.
+W=KLAY
+C3A=HAPPY
+TEN=PC10_SENDTRIAL_RESULT_KLAY
+IT=1
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_TOOEASY
+T=Good job, guys!
+W=OTT
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=FRIENDLY
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=HAPPY
+TEN=PC10_SENDTRIAL_RESULT_CHECK
+IT=1
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_EARLY
+T=On the other hand, Graff... You get a 10 points penalty for submitting too fast.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=MEH
+C3=KLAY
+C3A=BAD
+C4=OTT
+C4A=SURPRISED
+
+T=What?!... That's unfair!
+W=GRAFF
+C2A=ANGRY
+TEN=PC10_INTRO_RESULT_EARLYB
+IT=1
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_EARLY2
+T=No human can solve exercises that fast.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=SURPRISED
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=DISAPPOINTED
+
+T=But...
+W=GRAFF
+C2A=TURN
+
+T=Ha ha! Thought you could cheat, huh?
+W=KLAY
+C3A=HAPPY
+
+T=Shut up!
+W=GRAFF
+C2A=ANGRY
+TEN=PC10_SENDTRIAL_RESULT_AFTER
+IT=1
+
+
+#----------------------
+ID=PC10_SENDTRIAL_RESULT_AFTER
+T=You will get the correct answers on your phone in the evening.
+W=DIRECTOR
+C1=DIRECTOR
+C1A=NORMAL
+C2=GRAFF
+C2A=MEH
+C3=KLAY
+C3A=NORMAL
+C4=OTT
+C4A=NORMAL
+
+T=That's all for now. 
+W=DIRECTOR
+
+T=The fair will take place right here. Deliberation will occur at 5 PM.
+W=DIRECTOR
+
+T=Thank you.
+W=DIRECTOR
+TEN=PC10_SENDTRIAL_DIRECTORGOES
+
+#----------------------
+ID=PC10_SENDTRIAL_AFTER_FAIL
+T=Well, that's not too bad.
+W=OTT
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=DISAPPOINTED
+
+T=Talk for yourself... I failed that test.
+W=GRAFF
+
+T=Cheer up! You're not that far.
+W=OTT
+C2A=HAPPY
+
+T=I know you, Graff. You can do it!
+W=OTT
+
+T=...Thanks, Ott.
+W=GRAFF
+C1A=FRIENDLY
+
+T=You too! If we do our best, we'll both pass!
+W=GRAFF
+C1A=HAPPY
+
+T=That's the spirit!
+W=OTT
+TEN=PC10_SENDTRIAL_OTTGOES
+
+#----------------------
+ID=PC10_SENDTRIAL_AFTER_DISASTER
+T=I'm sorry, Graff...
+W=OTT
+C1=GRAFF
+C1A=TORN
+C2=OTT
+C2A=DISAPPOINTED
+
+T=Please don't...
+W=GRAFF
+
+T=This is a disaster... but I'm the only one to blame.
+W=GRAFF
+
+T=Don't give up! Anything can happen!
+W=OTT
+C2A=ALRIGHT
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=Yeah. I hope so...
+W=GRAFF
+TEN=PC10_SENDTRIAL_OTTGOES
+
+#----------------------
+ID=PC10_SENDTRIAL_AFTER_CHEAT
+T=I can't believe what you did...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=DISAPPOINTED
+
+T=What do you mean?...
+W=GRAFF
+C1A=THINK
+
+T=Don't play innocent. I saw you.
+W=OTT
+C2A=ALRIGHT
+
+T=You're better than me... Why are you doing this?...
+W=OTT
+
+T=I...
+W=GRAFF
+C1A=TURN
+
+T=I'm sorry... I panicked.
+W=GRAFF
+
+T=...
+W=OTT
+C2A=SAD
+
+T=I understand.
+W=OTT
+C2A=DISAPPOINTED
+
+T=Thinking our whole future depends on this... This sure puts stress on our mind and body.
+W=OTT
+
+T=Yeah...
+W=GRAFF
+C1A=SAD
+TEN=PC10_SENDTRIAL_OTTGOES
+
+
+#----------------------
+ID=PC10_SENDTRIAL_AFTER_BEST
+T=Great job!
+W=OTT
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=HAPPY
+
+T=Thanks. You did well too.
+W=GRAFF
+
+T=I'm sure I answered everything correctly but... I still couldn't beat Klay.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Don't worry about it!
+W=OTT
+
+T=You'll get your diploma and become a Drumer.
+W=OTT
+
+T=We'll pass together!
+W=GRAFF
+C1A=FRIENDLY
+
+T=Of course we will!
+W=OTT
+TEN=PC10_SENDTRIAL_OTTGOES
+
+#----------------------
+ID=PC10_SENDTRIAL_OVER
+T=(...)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(I wonder what Brok would say about all this.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+T=(Pretty sure he's having fun right now. Being a detective must be so cool.)
+W=GRAFF
+MOOD=THINK
+
+T=(...)
+W=GRAFF
+MOOD=THINK
+
+T=Hey, Ott! Wait for me!...
+W=GRAFF
+A=GASP
+TEB=PC10_SENDTRIAL_GRAFFGOES
+
+
+#----------------------
+#= Phone call
+#----------------------
+ID=PC10_GRAFF_CALL_NONETWORK
+T=(Can't... There's no network currently. They don't want anyone to cheat.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+CONTEXT=Try to use phone
+
+
+#----------------------
+ID=PC10_GRAFF_CALL_FORBIDDEN
+T=Graff! Phone usage is strictly forbidden!
+W=DIRECTOR
+C1=GRAFF
+C1A=SURPRISED
+C2=DIRECTOR
+C2A=ANGRY
+
+T=Oops!
+W=GRAFF
+A=MEH
+
+T=Minus two points.
+W=DIRECTOR
+
+T=But... There's no network...
+W=GRAFF
+
+T=Do not discuss.
+W=DIRECTOR
+TEN=INTERFACE_CALL_END
+
+T=Ha ha! You suck.
+W=KLAY
+C3=KLAY
+C3A=HAPPY
+
+T=Argh...
+W=GRAFF
+C1A=OPPOSITE
+TEN=PC10_PENALTY_PHONE
+
+
+
+#----------------------
+ID=PC10_STORY100_A
+T=There.
+W=GRAFF
+C1=GRAFF
+C1A=READY
+CONTEXT=Ott and Graff are preparing for the science fair
+
+T=Mine's all set up, too!
+W=OTT
+C2=OTT
+C2A=HAPPY
+TEN=PC10_STORY100_A_OTTCOMES
+
+#----------------------
+ID=PC10_STORY100_A2
+T=Say, Graff. I'm intrigued.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+
+T=What does your invention do?
+W=OTT
+
+T=Well! This, my friend...
+W=GRAFF
+C1A=COCKY
+
+T=...is gonna solve our water shortage problems! Partly.
+W=GRAFF
+C1A=READY
+
+T=Wow! Hmm... Don't tell me!...
+W=OTT
+C2A=HAPPY
+
+T=This is a... 
+W=OTT
+C2A=WONDER
+
+T=Moisture recycler?
+W=OTT
+C2A=NORMAL
+
+T=Almost!
+W=GRAFF
+C1A=FRIENDLY
+
+T=Then... Let's say...
+W=OTT
+C2A=WONDER
+
+T=Does this turn rain water into drinking water?
+W=OTT
+C2A=NORMAL
+
+T=Nope! But you're getting hotter, Ott!
+W=GRAFF
+C1A=COCKY
+
+T=So! Are you gonna tell me?
+W=OTT
+
+T=You first!
+W=GRAFF
+C1A=FRIENDLY
+
+T=Okay.
+W=OTT
+C2A=HAPPY
+TEN=PC10_STORY100_AMOVE
+
+#----------------------
+ID=PC10_STORY100_B
+T=It's also a solution to our everyday problems!
+W=OTT
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=HAPPY
+
+T=Just less... crucial.
+W=OTT
+C2A=NORMAL
+
+T=Is that a sock?
+W=GRAFF
+C1A=THINK
+
+T=Yup.
+W=OTT
+
+T=This is a socks auto-pairing machine!
+W=OTT
+C2A=HAPPY
+
+T=Put all your favorite socks inside, and it automatically matches them according to size and color!
+W=OTT
+
+T=Is that... really useful?
+W=GRAFF
+C1A=THINK
+
+T=Well, my parents force me to do their laundry. So tiring!
+W=OTT
+C2A=ALRIGHT
+
+T=Wait a sec. That doesn't fit the theme, does it?
+W=GRAFF
+
+T=The theme?
+W=OTT
+C2A=SURPRISED
+
+T=Yeah. "Converting".
+W=GRAFF
+C1A=MEH
+
+T=What?! There was a theme?!
+W=OTT
+
+T=Afraid so...
+W=GRAFF
+C1A=SAD
+TEN=PC10_STORY100_BKLAYARRIVE
+
+T=Oh no!... That means I'll lose half the points... at least!
+W=OTT
+
+T=How am I going to...
+W=OTT
+SKIPEND=1
+
+#----------------------
+ID=PC10_STORY100_C
+T=Hey, Porky and Kitty! What's this crap next to you?
+W=KLAY
+C1=GRAFF
+C1A=OPPOSITE
+C2=KLAY
+C2A=HAPPY
+C3=OTT
+C3A=OPPOSITE
+
+T=...
+W=OTT
+TEN=PC10_STORY100_C_TURN
+
+T=...No way! Don't tell me... these are your creations?!
+W=KLAY
+C2A=SURPRISED
+
+T=Back off, Klay! Now's not the time!
+W=GRAFF
+C1A=ANGRY
+
+T=Oh! They're really yours!
+W=KLAY
+C2A=BAD
+
+T=Well, no surprise there. Garbage boys can only make garbage.
+W=KLAY
+C2A=HAPPY
+
+T=What did you call us?!
+W=OTT
+C3A=ANGRY
+
+T=Still... I'm curious.
+W=KLAY
+C2A=BAD
+
+T=You gotta know your competition, right?
+W=KLAY
+
+T=What's that piece of rubbish, Kitty? Tell me!
+W=KLAY
+C2A=HAPPY
+
+T=No.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Ah, come on! I'll know sooner or later.
+W=KLAY
+C2A=COCKY
+
+T=Then wait.
+W=GRAFF
+C1A=ANGRY
+TEN=PC10_STORY100_CKLAYOTT
+
+#----------------------
+ID=PC10_STORY100_D
+T=Aww!
+W=OTT
+C1=GRAFF
+C1A=GASP
+C2=KLAY
+C2A=ANGRY
+C3=OTT
+C3A=SURPRISED
+
+T=Spit it out, or I break his neck!
+W=KLAY
+
+T=Hey! Are you crazy?!
+W=GRAFF
+C1A=ANGRY
+
+T=Stop it! You're hurting him!
+W=GRAFF
+
+T=I'll stop...
+W=KLAY
+C2A=BAD
+
+T=If you tell me what this piece of crap of yours is.
+W=KLAY
+C2A=ANGRY
+TEN=PC10_STORY100_CHOICEKLAY
+IT=1
+
+#----------------------
+ID=PC10_STORY100_TELL
+T=You win.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=KLAY
+C2A=BAD
+C3=OTT
+C3A=DISAPPOINTED
+
+T=This machine transforms urine into drinking water.
+W=GRAFF
+
+T=...
+W=KLAY
+TEN=PC10_STORY100_REMOVE
+
+T=Ooof!
+W=OTT
+C1A=SURPRISED
+
+T=Are you serious?!
+W=KLAY
+C2A=SURPRISED
+TEN=PC10_STORY100_REMOVEOTTFALL
+
+T=Ha ha ha!... Urine... into... water?!...
+W=KLAY
+C2A=HAPPY
+
+T=This... This is ridiculous!...
+W=KLAY
+
+T=It works. You'll see.
+W=GRAFF
+C1A=ANGRY
+
+T=Wait... You expect someone to... try your machine?!
+W=KLAY
+C2A=SURPRISED
+
+T=There's your piss in it!
+W=KLAY
+
+T=HA HA HA!...
+W=KLAY
+C2A=HAPPY
+
+T=Idiot.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Yeah. I'm sure he's never had to drink polluted water.
+W=OTT
+C3A=ALRIGHT
+
+T=Okay, okay...
+W=KLAY
+C2A=NORMAL
+
+T=I'm convinced. Let me try it.
+W=KLAY
+C2A=COCKY
+TEN=PC10_STORY100_KLAYMOVEMACHINE
+
+
+#----------------------
+ID=PC10_STORY100_TELL2
+T=What? No.
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=SURPRISED
+C3=OTT
+C3A=ALRIGHT
+
+T=Oh, don't be like that!
+W=KLAY
+C2A=BAD
+
+T=I'll just press that button. Here!
+W=KLAY
+TEN=PC10_STORY100_BREAK
+
+#----------------------
+ID=PC10_STORY100_DONOTTELL
+T=I won't.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C2=KLAY
+C2A=ANGRY
+C3=OTT
+C3A=DISAPPOINTED
+COMM="I won't tell anything"
+
+T=Oh? Okay.
+W=KLAY
+C2A=BAD
+TEN=PC10_STORY100_REMOVE
+
+T=Ooof!
+W=OTT
+C3A=SURPRISED
+TEN=PC10_STORY100_REMOVEOTTFALL
+
+T=In that case, I'll just have to figure it out by myself!
+W=KLAY
+TEN=PC10_STORY100_KLAYMOVEMACHINE
+
+
+#----------------------
+ID=PC10_STORY100_DONOTTELLB
+T=Let's try this...
+W=KLAY
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=BAD
+C3=OTT
+C3A=ANGRY
+TEN=PC10_STORY100_BREAK
+
+#----------------------
+ID=PC10_STORY100_TELL3
+T=What did you do?!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=BAD
+C3=OTT
+C3A=ANGRY
+
+T=Oooh... Too bad.
+W=KLAY
+
+T=It's broken!
+W=KLAY
+
+T=I... I'm going to...
+W=GRAFF
+
+T=Graff! Don't!
+W=OTT
+C3A=SURPRISED
+TEN=PC10_STORY100_CHOICEKLAY2
+IT=1
+
+#----------------------
+ID=PC10_STORY100_LETITGO
+T=No. I won't play your game.
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=BAD
+C3=OTT
+C3A=DISAPPOINTED
+
+T=What?...
+W=KLAY
+
+T=You won't do anything.
+W=GRAFF
+
+T=If you harm Ott, we'll ask your mom for a DNA search on his clothes. You'll get banned.
+W=GRAFF
+C1A=READY
+
+T=...
+W=KLAY
+C2A=ANGRY
+
+T=Man. You always ruin all the fun.
+W=KLAY
+
+T=That was just a little joke!
+W=KLAY
+C2A=COCKY
+
+T=Oh well.
+W=KLAY
+C2A=BAD
+TEN=PC10_STORY100_AFTERKLAYPROVOKE
+
+#----------------------
+ID=PC10_STORY100_FIGHT
+T=That's ENOUGH!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=SURPRISED
+C3=OTT
+C3A=SURPRISED
+
+T=Wha...
+W=KLAY
+SKIPEND=1
+TEN=PC10_STORY100_KLAYSLAP
+
+T=Arrrgh!
+W=KLAY
+C2_EYESHUT=1
+TEN=PC10_STORY100_KLAYSLAP_REMOVE
+
+T=You... You hit me!...
+W=KLAY
+C2A=ANGRY
+C2_EYESHUT=0
+
+T=Well deserved.
+W=GRAFF
+C1A=READY
+
+T=I'm gonna...
+W=KLAY
+
+T=Enough! Stop it, you both!
+W=OTT
+C3A=ANGRY
+
+T=Hmph...
+W=KLAY
+C2A=BAD
+TEN=PC10_STORY100_AFTERKLAYPROVOKE
+
+
+#----------------------
+ID=PC10_STORY100_AFTERKLAYPROVOKE
+T=I'll be on my way. Just one last thing.
+W=KLAY
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=ANGRY
+C3=OTT
+C3A=ANGRY
+
+T=Don't even bother fixing it.
+W=KLAY
+
+T=What?!...
+W=GRAFF
+C1A=SURPRISED
+
+T=Who knows. The same accident might happen again.
+W=KLAY
+C2A=BAD
+
+T=If you dare!
+W=GRAFF
+C1A=ANGRY
+
+T=I... I'll crush yours!
+W=GRAFF
+
+T=Hmm...
+W=KLAY
+
+T=Stubot. Activate.
+W=KLAY
+C2A=COCKY
+
+T=(Starting process)
+W=STUBOT
+C4=STUBOT
+C4A=NORMAL
+TEN=PC10_STORY100_STUBOTCOMES
+
+T=Hello sir
+W=STUBOT
+
+T=Please watch over my invention.
+W=KLAY
+
+T=I will
+W=STUBOT
+TEN=PC10_STORY100_STUBOTGOINVENTION
+
+T=Hey! You can't use Stubot like that!
+W=GRAFF
+C1A=SURPRISED
+
+T=Of course I can. He's material for this Center, and the Center belongs to my family.
+W=KLAY
+
+T=Isn't that right, Stubot?
+W=KLAY
+
+T=Okay
+W=STUBOT
+C1A=ANGRY
+
+T=Ta-ta for now! The sun is shining, I'll get some due rest!
+W=KLAY
+C2A=HAPPY
+TEN=PC10_STORY100_EKLAYLEAVES
+
+
+
+#----------------------
+ID=PC10_STORY100_AFTERFIGHT
+T=Grmph...
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=OTT
+C2A=DISAPPOINTED
+VLOW=1
+
+T=Let it go...
+W=OTT
+
+T=You're okay?
+W=GRAFF
+C1A=OPPOSITE
+
+T=Yeah...
+W=OTT
+VLOW=1
+TEN=PC10_MUSICBACK
+
+T=Thanks for standing up for me but...
+W=OTT
+C2A=SAD
+
+T=You shouldn't have...
+W=OTT
+
+T=Don't worry about that.
+W=GRAFF
+C1A=FRIENDLY
+TEN=PC10_STORY100_AFTERFIGHTCHECK
+
+
+#----------------------
+ID=PC10_STORY100_AFTERFIGHTTELL
+T=By the way. You still haven't told me what this is!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=HAPPY
+
+T=Right.
+W=GRAFF
+
+T=My machine transforms urine into drinking water.
+W=GRAFF
+C1A=FRIENDLY
+
+T=...
+W=OTT
+C2A=SURPRISED
+
+T=For real?...
+W=OTT
+
+T=Go ahead, laugh.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Are you kidding?
+W=OTT
+
+T=It's amazing!
+W=OTT
+C2A=HAPPY
+
+T=Well... It's still a prototype but...
+W=GRAFF
+C1A=MEH
+
+T=Klay broke it...
+W=OTT
+C1A=OPPOSITE
+TEN=PC10_STORY100_F
+
+
+
+#----------------------
+ID=PC10_STORY100_F
+T=What's his problem?!
+W=OTT
+C1=GRAFF
+C1A=OPPOSITE
+C2=OTT
+C2A=ANGRY
+
+T=He's the Director's favorite and he always gets the best marks.
+W=OTT
+TEN=PC10_STORY100_F_LOOKCREATION1
+
+T=He doesn't have to act like that!
+W=OTT
+
+T=You don't say. Look what he created.
+W=GRAFF
+TEN=PC10_STORY100_F_LOOKCREATION2
+
+T=...
+W=OTT
+C2A=SURPRISED
+
+T=Oh. So sleek.
+W=OTT
+C2A=NORMAL
+TEN=PC10_STORY100_F2
+
+
+#----------------------
+ID=PC10_STORY100_F2
+T=We're in trouble.
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=NORMAL
+
+T=Your invention doesn't fit the theme... Mine is broken...
+W=GRAFF
+
+T=And I'm starting to have second thoughts about my choice...
+W=GRAFF
+C1A=TURN
+
+T=There's no way we're gonna win this.
+W=GRAFF
+
+T=Don't listen to him. It's an amazing idea!
+W=OTT
+C2A=ALRIGHT
+
+T=It's too late for me. But we can fix your machine!
+W=OTT
+
+T=Possibly... But you heard his threats.
+W=GRAFF
+C1A=SAD
+
+T=Besides... I wouldn't feel right if you helped me pass while you fail.
+W=GRAFF
+
+T=Oh, don't worry! I'll catch up with the next trial!
+W=OTT
+C2A=HAPPY
+
+T=Hmm...
+W=GRAFF
+C1A=THINK
+VLOW=1
+
+T=There's another way.
+W=GRAFF
+
+T=Remember, we're evaluated according to Stubot.
+W=GRAFF
+C1A=MEH
+
+T=What if we... Let's say...
+W=GRAFF
+C1A=THINK
+
+T="Use" their machines?...
+W=GRAFF
+C1A=READY
+
+T=You mean... messing them up? Like he did?
+W=OTT
+C2A=WONDER
+
+T=I'm not sure I agree with this...
+W=OTT
+C2A=SAD
+TEN=PC10_STORY100_CHOICEINSIST
+IT=1
+
+#----------------------
+ID=PC10_STORY100_F_YES
+T=I won't touch them. Promise!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=DISAPPOINTED
+
+T=I'll just push them beyond their limits. From a distance.
+W=GRAFF
+C1A=COCKY
+
+T=Stubot is a program. As long as there's no physical contact, he won't notice.
+W=GRAFF
+
+T=If all three machines are broken, we're even! And you'll automatically win.
+W=GRAFF
+C1A=FRIENDLY
+
+T=Well...
+W=OTT
+
+T=Trust me. What's the worst that can happen?
+W=GRAFF
+C1A=COCKY
+
+T=That's what I'm afraid of.
+W=OTT
+C2A=OPPOSITE
+
+T=Okay. It's your idea. I won't stop you.
+W=OTT
+C2A=ALRIGHT
+TEN=PC10_STORY100_F_OTTLEAVES
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=(I hope I'm doing the right thing.)
+W=GRAFF
+MOOD=THINK
+TEN=PC10_STORY100_F_END
+
+
+
+#----------------------
+ID=PC10_STORY100_F_NO
+T=You're right.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=OTT
+C2A=NORMAL
+
+T=We're not like him.
+W=GRAFF
+
+T=I'll just fix my invention and hope for the best.
+W=GRAFF
+C1A=SAD
+
+T=But... I can't afford letting him break it again!
+W=GRAFF
+C1A=ANGRY
+
+T=You could watch over it.
+W=OTT
+C2A=WONDER
+
+T=No. There's gotta be something better.
+W=GRAFF
+C1A=THINK
+
+T=Some kind of protection.
+W=GRAFF
+
+T=Giving a shock if he touches it...
+W=GRAFF
+
+T=Hmmm...
+W=OTT
+
+T=I've got something for you.
+W=OTT
+C2A=HAPPY
+TEN=PC10_STORY100_F_OTTMOVE
+
+#----------------------
+ID=PC10_STORY100_F_NO2
+T=What's that?
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=HAPPY
+
+T=A force field.
+W=OTT
+C2A=NORMAL
+
+T=It defines a perimeter. By connecting the right stuff, you should be able to get the result you want.
+W=OTT
+
+T=I had to use several for my machine but I had a spare just in case.
+W=OTT
+
+T=You're sure?
+W=GRAFF
+
+T=Yeah. Take it!
+W=OTT
+C2A=HAPPY
+TEN=PC10_STORY100_F_TAKEFORCEFIELD
+
+#----------------------
+ID=PC10_STORY100_F_NO3
+T=You should hook up a detector and an operator on the NUB ports.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+
+T=That's perfect! You're a genius, Ott!
+W=GRAFF
+C1A=HAPPY
+
+T=Nah. Geniuses don't forget the instructions...
+W=OTT
+C2A=OPPOSITE
+
+T=I'll be around if you need me!
+W=OTT
+C2A=NORMAL
+
+T=Okay! Thanks a bunch!
+W=GRAFF
+TEN=PC10_STORY100_F_OTTLEAVES
+
+T=(Well... To be honest, this solution is a bit convoluted.)
+W=GRAFF
+C1A=THINK
+C2=NONE
+MOOD=THINK
+
+T=(But this trial is crucial.)
+W=GRAFF
+MOOD=THINK
+
+T=(Anyway. Let's get started!)
+W=GRAFF
+C1A=READY
+MOOD=THINK
+
+TEN=PC10_STORY100_F_END
+
+#----------------------------
+#= Machine Graff
+#----------------------------
+ID=PC10_MACHINE_GRAFF_LEFT1
+T=The "source liquid" is added here. It's filtered, then a combination of chemical agents transform it.
+W=GRAFF
+A=MEH
+CONTEXT=Checking the inventions
+
+T=Residues fall to the bottom, which can be cleaned out with this trap.
+W=GRAFF
+A=MEH
+
+T=The reaction takes a few hours. Progressively, tiny drops fall into the glass. 
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_LEFT_BROKEN1
+T=That side seems okay. I should focus on the glass!
+W=GRAFF
+A=READY
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_LEFT_FIXED1
+T=The chemical reaction has started.
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_LEFT_MELTPLASTIC
+T=That part isn't broken!
+W=GRAFF
+A=STUPID
+
+#----------------------------
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_RIGHT_BROKEN1
+T=What a mess. I need to fix this quickly!
+W=GRAFF
+A=GASP
+
+T=Melted plastic could work... If only I had some.
+W=GRAFF
+A=THINK
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_TALKSHAY
+T=This should work but...
+W=GRAFF
+A=THINK
+
+T=I should talk to Brok's inventor friend before changing anything. Just in case.
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_RIGHT_FIXED1
+T=I hope this fix holds after the votes...
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_RIGHT_FIXING1
+T=There. Not perfect but that should do the trick.
+W=GRAFF
+A=HAPPY
+TEN=PC10_MACHINE_GRAFF_FIXED
+
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_RIGHT_STATUETTE
+T=I would need to melt that plastic first!
+W=GRAFF
+A=READY
+
+
+#----------------------------
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_TABLE_BEFOREFIX1
+T=Let's fix it...
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_TABLE_PROTECTION1
+T=Ott gave me something. What was it, already?
+W=GRAFF
+A=THINK
+
+#----------------------------
+ID=PC10_MACHINE_GRAFF_TABLE_MESS1
+T=My invention is okay now. Let's "see" the other machines!
+W=GRAFF
+A=COCKY
+
+#----------------------------
+
+ID=PC10_MACHINE_PLASTIC
+T=The table isn't the part I want to fix...
+W=GRAFF
+A=MEH
+
+#----------------------------
+
+ID=PC10_MACHINE_NOTTHERE
+T=I need to put something else first.
+W=GRAFF
+A=THINK
+
+#----------------------------
+
+ID=PC10_MACHINE_MESSED
+T=My invention is messed up enough as it is!
+W=GRAFF
+A=ANGRY
+
+#----------------------------
+
+ID=PC10_MACHINE_STATUETTE
+T=Good idea but... not in this form. That plastic is too hard!
+W=GRAFF
+A=THINK
+
+
+#----------------------------
+
+ID=PC10_MACHINE_MELTPLASTIC
+T=Not this side!
+W=GRAFF
+A=STUPID
+
+#----------------------------
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_DETECTOR1
+T=Apparently, it's in "detect everybody" mode.
+W=GRAFF
+A=MEH
+
+T=Not good. I can't take the risk of hurting anyone from the examination board.
+W=GRAFF
+A=MEH
+
+T=Shay told me the detector's surface can sense fingerprints. Hmm...
+W=GRAFF
+A=THINK
+
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_DETECTOR2
+T=It's set to detect Klay only!
+W=GRAFF
+A=COCKY
+
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_STICKER1
+T=That doesn't work... I guess there's no fingerprint on that sticker.
+W=GRAFF
+A=THINK
+
+#----------------------------
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_OPERATOR1
+T=The short circuit is ready to unleash!
+W=GRAFF
+A=READY
+
+#----------------------------
+#----------------------------
+ID=PC10_MACHINE_GRAFF_ADDFORCE
+T=There!
+W=GRAFF
+A=COCKY
+
+T=The force field perimeter should extend just enough to cover my machine.
+W=GRAFF
+A=COCKY
+
+T=But it's not active yet...
+W=GRAFF
+A=THINK
+
+#----------------------------
+#----------------------------
+ID=PC10_FORCE1
+T=The NUB connectors on the force field allow me to connect a few devices.
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_FORCE2
+T=I'll activate the force field when it's all ready.
+W=GRAFF
+A=MEH
+
+#----------------------------
+#----------------------------
+ID=PC10_FORCE_NOTCONNECTED1
+T=Ott's force field has quite a few NUB connectors! I should only need two though.
+W=GRAFF
+A=THINK
+
+T=A detection device to detect wrong intentions, and an operator to... react appropriately.
+W=GRAFF
+A=MEH
+
+#----------------------------
+
+ID=PC10_FORCE_NOTCONNECTED2
+T=The force field won't be active unless I add a detector.
+W=GRAFF
+A=THINK
+
+T=Any device that could identify wrong hands.
+W=GRAFF
+A=THINK
+
+#----------------------------
+
+ID=PC10_MACHINE_GRAFF_ADD
+T=This hasn't got a NUB connector. Besides, I doubt this would help.
+W=GRAFF
+A=MEH
+
+#----------------------------
+
+ID=PC10_FORCE_ADDSTICKER_NOTYET
+T=Good idea but... The force field alone can't detect the prints.
+W=GRAFF
+A=THINK
+
+#----------------------------
+
+ID=PC10_FORCE_ADDDETECTOR1
+T=Great, it fits!
+W=GRAFF
+A=HAPPY
+
+T=The force field should spread the detection so it's not localized to one point, but everywhere around.
+W=GRAFF
+A=READY
+IT=1
+TEN=PC10_MACHINE_GRAFF_CHECKBARRIER
+
+#----------------------------
+
+ID=PC10_FORCE_ADDOPERATOR1
+T=The trap is set!
+W=GRAFF
+A=READY
+IT=1
+TEN=PC10_MACHINE_GRAFF_CHECKBARRIER
+
+#----------------------------
+
+ID=PC10_FORCE_ADDSTICKER1
+T=It works! What a relief.
+W=GRAFF
+A=FRIENDLY
+IT=1
+TEN=PC10_MACHINE_GRAFF_CHECKBARRIER
+
+#----------------------------
+
+ID=PC10_FORCE_MISSINGFIX1
+T=I still need to fix my invention.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------
+
+ID=PC10_FORCE_MISSINGOPERATOR1
+T=Now I need an operator to give a shock to... a certain someone.
+W=GRAFF
+A=OPPOSITE
+
+T=What could fit that definition?
+W=GRAFF
+A=THINK
+
+#----------------------------
+
+ID=PC10_FORCE_MISSINGDETECTOR1
+T=Okay... Though the operator will be useless until the force field can detect intruders.
+W=GRAFF
+A=THINK
+
+#----------------------------
+
+ID=PC10_FORCE_MISSINGSTICKER1
+T=Good!
+W=GRAFF
+A=HAPPY
+
+T=Only one problem left... I need to target Klay exclusively.
+W=GRAFF
+A=THINK
+
+#----------------------------
+
+ID=PC10_FORCE_READY
+T=Final step. I activate the force field.
+W=GRAFF
+A=COCKY
+TEB=PC10_FORCE_ACTIVATE
+
+T=Perfect. My convoluted protection is almost invisible now!
+W=GRAFF
+A=HAPPY
+TEN=PC10_FORCE_READY2
+
+
+#----------------------
+ID=PC10_FORCE_READY2
+T=Oh! Is it working?
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+
+T=I'll know the answer in a few seconds.
+W=GRAFF
+C1A=READY
+
+T=Oh no... He's coming back.
+W=OTT
+C2A=SURPRISED
+
+T=(Yawn)
+W=KLAY
+C1A=MEH
+C3=OTT
+C3A=ALRIGHT
+C2=KLAY
+C2A=NORMAL
+
+T=What...
+W=KLAY
+C2A=SURPRISED
+
+T=Hmm... Idiot.
+W=KLAY
+C2A=BAD
+
+T=Stubot, I forgot my socks on my chair. Bring them back.
+W=KLAY
+C4=STUBOT
+C4A=NORMAL
+
+T=Yes sir
+W=STUBOT
+
+T=Tsk tsk. I told you, kitty.
+W=KLAY
+C4=NONE
+
+T=Accidents tend to happen...
+W=KLAY
+TEN=PC10_FORCE_KLAYSHOCKED
+SKIPEND=1
+
+T=Aaaagaaaaaaaaiiiiinnnn?!?
+C2=NONE
+C1A=READY
+C3A=SURPRISED
+BVOICE=KLAY
+BNAME=KLAY
+COMM=Klay gets shocked
+
+T=(Poof...)
+BVOICE=VARIOUS
+TEB=PC10_FORCE_KLAYSHOCKED_REMOVE
+
+T=Yes!
+W=GRAFF
+C1A=COCKY
+
+T=Oh my!...
+W=OTT
+
+T=...
+W=OTT
+C3A=WONDER
+VLOW=1
+
+T=Phew, he's just knocked unconscious. You sure were heavy-handed.
+W=OTT
+C3A=ALRIGHT
+
+T=He started it.
+W=GRAFF
+C1A=OPPOSITE
+TEN=PC10_STORY100_ENDDIALOG
+
+
+#----------------------
+ID=PC10_STORY100_ENDDIALOG
+T=It's almost time. The examination board will be here any minute now.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+
+T=(Okay. I did everything I could.)
+W=GRAFF
+C1A=THINK
+MOOD=THINK
+
+T=(Now I just have to cross fingers...)
+W=GRAFF
+MOOD=THINK
+
+T=(And wait for my old man.)
+W=GRAFF
+MOOD=THINK
+TEN=PC10_STORY100_OTTPARENTS
+
+T=Look! My parents, they're over there!
+W=OTT
+C2A=NORMAL
+TEN=PC10_STORY100_OVER
+
+
+#----------------------------
+#= Machine Ott
+#----------------------------
+ID=PC10_MACHINE_OTT1
+T=(Auto-pairing socks... A useful invention! Just not what they asked for.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(I feel bad for him...)
+W=GRAFF
+A=SAD
+MOOD=THINK
+
+#----------------------------
+#= Machine Klay
+#----------------------------
+ID=PC10_MACHINE_KLAY_BOX1
+T="Convert stinking odors into energy which powers the wheel and generates perfume"
+W=GRAFF
+A=MEH
+
+T=And here he was mocking me for my invention! They're similar, after all.
+W=GRAFF
+A=OPPOSITE
+
+T=Well... Save for the aspect, I admit it's well crafted.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_NOMESS1
+T=Better not touch it... Stubot is watching me.
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_MESS1
+T=I promised Ott not to touch the other's machines. Pretty sure I don't have to, anyway...
+W=GRAFF
+A=MEH
+
+T=Let's push it to its maximum, shall we?
+W=GRAFF
+A=COCKY
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_ROUND1
+T=The closer I get, the faster it spins...
+W=GRAFF
+A=THINK
+
+T=Alright, I admit... I couldn't take my shower this morning.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_ROUND2
+T=This attracts foul odors. The faster it spins, the more there are.
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_ROUND_LOWSTINK
+T=It's spinning faster than before...
+W=GRAFF
+A=MEH
+
+T=(Sniff)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=Eww... Now I get it. Why do my clothes smell like that?
+W=GRAFF
+A=YUCK
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_ROUND_OTHERS
+T=Can't... Stubot is watching me!
+W=GRAFF
+A=OPPOSITE
+
+T=Besides, I promised I wouldn't touch it.
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_CONTAINER1
+T=(Sniff, sniff)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=Hmm... Yup. Smells nice.
+W=GRAFF
+A=MEH
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_ISBROKEN
+T=Can't really say I'm proud but... What's done is done.
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_STINK1
+T=This idea stinks... but that won't make it spin any faster.
+W=GRAFF
+A=OPPOSITE
+COMM=Double sense with the word stink. Replace by whatever you feel like.
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_WRONG
+T=Woah!
+W=GRAFF
+A=SURPRISED
+
+T=It's reacting to my presence...
+W=GRAFF
+A=THINK
+
+T=I'd better not get closer to avoid any trouble!
+W=GRAFF
+A=MEH
+TEN=PC10_MACHINE_KLAY_BACK
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_MAXED
+T=Woah!
+W=GRAFF
+A=SURPRISED
+
+T=I'm not even close, yet it spins so...
+W=GRAFF
+A=THINK
+TEN=PC10_MACHINE_KLAY_MAXEDA
+SKIPEND=1
+
+#----------------------------
+ID=PC10_MACHINE_KLAY_MAXED2
+T=...
+W=GRAFF
+A=MEH
+
+T=Oh... It broke.
+W=GRAFF
+A=MEH
+
+T=No one noticed...
+W=GRAFF
+A=THINK
+
+T=Good!
+W=GRAFF
+A=HAPPY
+TEN=PC10_MACHINE_BROKEN_CHECK
+
+#----------------------------
+ID=PC10_MACHINE_BROKEN_TWO_OVER
+T=I'm done.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=...
+W=GRAFF
+A=OPPOSITE
+
+T=So, you managed to pull it off, huh?
+W=OTT
+C2=OTT
+C2A=DISAPPOINTED
+# original - So, you put your idea to execution. - sounds really formal. this is just my suggestion
+
+T=Yeah.
+W=GRAFF
+
+T=I don't know. I still have a bad feeling about all this.
+W=OTT
+C2A=SAD
+
+T=We'll see what happens.
+W=OTT
+TEN=PC10_STORY100_ENDDIALOG
+
+#----------------------------
+#= Machine Stubot
+#----------------------------
+ID=PC10_MACHINE_STUBOT1
+T=Oh! There are some ants in there!
+W=GRAFF
+A=SURPRISED
+
+T=I bet this converts their footsteps into energy.
+W=GRAFF
+A=THINK
+
+T=Kinda ironic. The only one of us who involved a living being is a robot!
+W=GRAFF
+A=FRIENDLY
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_NORMAL1
+T=It's not really innovative but still pretty cool for a robot invention!
+W=GRAFF
+A=FRIENDLY
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_PUSHMAX1
+T=Hmm. How to push this machine to the maximum?...
+W=GRAFF
+A=THINK
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_PUSHMAX2
+T=I should try and find more info on ants.
+W=GRAFF
+A=THINK
+
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_PUSHMAXLIGHT
+T=Oh! I know!
+W=GRAFF
+A=READY
+
+T=This is an "Antaerground" species. They're most often found in gloomy places.
+W=GRAFF
+A=FRIENDLY
+
+T=As such, they're scared of light. It makes them run away to hide.
+W=GRAFF
+A=THINK
+
+T=That explains them running.
+W=GRAFF
+A=MEH
+
+T=Now... What if they were exposed to a very bright, direct light?
+W=GRAFF
+A=THINK
+
+T=Hmm!...
+W=GRAFF
+A=COCKY
+
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_BROKEN1
+T=Sorry, little ants...
+W=GRAFF
+A=SAD
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_ENERGYBOX1
+T=The converted energy is stored here.
+W=GRAFF
+A=MEH
+
+T=You can even hook up a device! Classy!
+W=GRAFF
+A=FRIENDLY
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_WHEEL_OTHERS
+T=No, I promised not to touch it... And I can't do that from a distance.
+W=GRAFF
+A=MEH
+
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_WHEEL_NEON_NOMESS
+T=No... I don't want to make those ants blind!
+W=GRAFF
+A=OPPOSITE
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_WHEEL_NEON
+T=Good idea!
+W=GRAFF
+A=FRIENDLY
+TEN=PC10_MACHINE_STUBOT_MESSIT
+
+#----------------------------
+ID=PC10_MACHINE_STUBOT_WHEEL_NEON2
+T=Uh-oh...
+W=GRAFF
+A=SURPRISED
+
+T=It worked too well... Poor ants!
+W=GRAFF
+A=GASP
+
+T=Well... I got what I wanted. Stubot didn't even notice!
+W=GRAFF
+A=DISDAIN
+TEN=PC10_MACHINE_BROKEN_CHECK
+
+#----------------------
+#=	Talk to Stubot
+#----------------------
+ID=PC10_STUBOT1
+T=Hi!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=STUBOT
+C2A=NORMAL
+CONTEXT=Talking to the "student bot"
+
+T=Hello
+W=STUBOT
+
+T=How are you?
+W=GRAFF
+
+T=Fine
+W=STUBOT
+
+T=He doesn't have much conversation...
+W=GRAFF
+C1A=OPPOSITE
+
+#----------------------
+ID=PC10_STUBOT2
+T=Hey, what do you think of this trial?
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=STUBOT
+C2A=NORMAL
+
+T=I will win
+W=STUBOT
+
+T=How can you be so certain?
+W=GRAFF
+
+T=I was designed for it
+W=STUBOT
+
+T=Hmph...
+W=GRAFF
+C1A=OPPOSITE
+
+#----------------------
+ID=PC10_STUBOT3
+T=And it's supposed to represent the average student?
+W=GRAFF
+A=THINK
+
+T=I'm glad not all bots are like this. There's no point talking to that soulless machine...
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+#=	Talk to Klay
+#----------------------
+ID=PC10_KLAY1
+T=Talking to him? Bad idea...
+W=GRAFF
+A=ANGRY
+
+T=He's unpredictable.
+W=GRAFF
+A=ANGRY
+
+#----------------------
+#= VR Learner
+#----------------------
+ID=PC10_VRLEARNER1
+T=Hmm... Do I have a reason to use that brainwashing apparatus?
+W=GRAFF
+A=THINK
+CONTEXT=More room interactions
+TEN=PC10_VRLEARNER_CHOICE
+
+#----------------------
+ID=PC10_VRLEARNER_BEFORECHOICE
+T=I hate this but there's no time to waste!
+W=GRAFF
+A=READY
+
+T=I need to learn everything about...
+W=GRAFF
+A=THINK
+TEN=PC10_VRLEARNER_CHOICE
+
+
+#----------------------
+ID=PC10_VRLEARNER_BROK
+T=Huh?... Okay.
+W=GRAFF
+A=THINK
+
+T=Who knows what the database could find.
+W=GRAFF
+A=MEH
+
+T=Learning about : Brok (last name unknown) selected.
+BVOICESP=VARIOUS
+TEN=PC10_VRLEARNER_SOUNDSTART
+
+T=Born in 3000 A.R. Parents unknown. Adopted child.
+BVOICESP=VARIOUS
+
+T=...Adopted?
+W=GRAFF
+A=THINK
+
+T=I... didn't know.
+W=GRAFF
+A=TURN
+
+T=He keeps referring to his Grandpa but... I thought he was family.
+W=GRAFF
+A=SAD
+
+T=Current job : None.
+BVOICESP=VARIOUS
+
+T=He'd be pleased to hear that...
+W=GRAFF
+A=FRIENDLY
+
+T=Current legal state : Widowed.
+BVOICESP=VARIOUS
+
+T=Please note. The data for this person is incomplete due to the 3030 A.R. global shutdown.
+BVOICESP=VARIOUS
+TEN=PC10_VRLEARNER_SOUNDSTOP
+
+T=Obviously...
+W=GRAFF
+A=OPPOSITE
+
+#----------------------
+ID=PC10_VRLEARNER_BOTS1
+T=Yeah. Dunno why but I feel this might become important.
+W=GRAFF
+A=MEH
+
+T=Learning about bots selected.
+BVOICESP=VARIOUS
+
+T=...
+W=GRAFF
+A=MEH
+TEN=PC10_VRLEARNER_SOUNDSTART
+
+T=Woah. There's so much to learn about robots!
+W=GRAFF
+A=SURPRISED
+
+T=I need to... stop...
+W=GRAFF
+A=GASP
+
+T=Aargh...!
+W=GRAFF
+A=GASP
+SOUND=electricity
+TEN=PC10_VRLEARNER_SOUNDSTOP
+
+T=Ohhh, that thing is always so painful.
+W=GRAFF
+A=STUPID
+
+#----------------------
+ID=PC10_VRLEARNER_ALREADY
+T=Already did! There's nothing more I can learn on that topic.
+W=GRAFF
+A=OPPOSITE
+
+
+#----------------------
+ID=PC10_VRLEARNER_ANTS1
+T=Of course. I'm curious about those ants Stubot has used.
+W=GRAFF
+A=THINK
+
+T=Learning about ants selected.
+BVOICESP=VARIOUS
+TEN=PC10_VRLEARNER_SOUNDSTART
+
+T=...
+W=GRAFF
+A=MEH
+
+T=Ouch...!
+W=GRAFF
+A=GASP
+SOUND=electricity
+
+T=...Aah...
+W=GRAFF
+A=STUPID
+VLOW=1
+TEN=PC10_VRLEARNER_SOUNDSTOP
+
+T=Phew! That was hard.
+W=GRAFF
+A=MEH
+
+T=Next time I see ants, I should be able take advantage of that info!
+W=GRAFF
+A=FRIENDLY
+
+T=...
+W=GRAFF
+A=THINK
+
+T=For some reason, I suddenly feel hungry for an Antburger...
+W=GRAFF
+A=MEH
+
+
+
+#----------------------
+#=	Talk to Ott
+#----------------------
+ID=PC10_OTT_WELCOME1
+T=Hey, Ott!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=NORMAL
+TEN=PC10_OTT_CHOICES
+IT=1
+CONTEXT=Talking to Ott
+
+#----------------------
+ID=PC10_OTT_WELCOME2
+T=What's up?
+W=OTT
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=NORMAL
+TEN=PC10_OTT_CHOICES
+IT=1
+
+#----------------------
+ID=PC10_OTT_HIMSELF1
+T=So, your internship starts tomorrow?
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=NORMAL
+
+T=Yeah! That's quite exciting. I'll get to work with real policemen!
+W=OTT
+C2A=HAPPY
+
+T=My uncle is head of the police station.
+W=OTT
+C2A=NORMAL
+
+T=I admire you. I'd be so stressed in your situation...
+W=GRAFF
+
+T=Why?
+W=OTT
+C2A=WONDER
+
+T=I'm like a fish in a bowl. As soon as I get out of it, I get all anxious without control...
+W=GRAFF
+C1A=MEH
+
+T=Actually... They'll probably stick me around the proto-copier all day long.
+W=OTT
+C2A=DISAPPOINTED
+COMM=Proto-copier is an invented name for "photocopier"
+
+T=But I'm still looking forward to it!
+W=OTT
+C2A=HAPPY
+TEN=PC10_OTT_CHOICES
+IT=1
+
+#----------------------
+ID=PC10_OTT_HIMSELF2
+T=You're okay?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=Yeah!
+W=OTT
+C2A=HAPPY
+
+T=I mean...
+W=GRAFF
+C2A=DISAPPOINTED
+
+T=I know what you mean. But really, it's fine.
+W=OTT
+C2A=NORMAL
+
+T=If I don't win this, I'll catch up later!
+W=OTT
+C2A=ALRIGHT
+
+T=You always seem so confident... Even in the worst situations.
+W=GRAFF
+C1A=FRIENDLY
+
+T=That's because I've known worse...
+W=OTT
+C2A=SAD
+
+T=...
+W=GRAFF
+C1A=SAD
+
+T=Sorry. I know you've had your share of rough moments too.
+W=OTT
+
+T=I'm more concerned about the present situation.
+W=GRAFF
+C1A=TURN
+TEN=PC10_OTT_CHOICES
+IT=1
+
+
+
+#----------------------
+ID=PC10_OTT_FIXING1
+T=Any idea how I could fix my invention?
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+
+T=Well... You built it, didn't you? You should know better.
+W=OTT
+
+T=Right...
+W=GRAFF
+C1A=OPPOSITE
+
+T=I think melted plastic could fix the glass. Do you have some?
+W=GRAFF
+C1A=THINK
+
+T=Afraid not. Sorry!
+W=OTT
+C2A=NORMAL
+
+T=That's okay. I'll figure out something.
+W=GRAFF
+C1A=READY
+TEN=PC10_OTT_CHOICES
+IT=1
+
+#----------------------
+ID=PC10_OTT_PROTECTION1
+T=Thanks again for the force field. How do I use it, again?
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=NORMAL
+
+T=Hey, I thought you were the most clever out of us!
+W=OTT
+
+T=Well...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Just kidding!
+W=OTT
+C2A=HAPPY
+
+T=Connect NUB peripherals on the base. I think you'll need two...
+W=OTT
+C2A=NORMAL
+
+T=A detector and an operator.
+W=GRAFF
+C1A=MEH
+
+T=Yeah!
+W=OTT
+C2A=HAPPY
+
+T=In particular, I need something to detect wrong intentions. Got a clue?
+W=GRAFF
+C1A=THINK
+
+T=Hmm... Some fingerprint reader, maybe?
+W=OTT
+C2A=WONDER
+
+T=Yeah. As for the operator, anything that can provoke a shock.
+W=GRAFF
+
+T=Is it really necessary?
+W=OTT
+C2A=SURPRISED
+
+T=Definitely. I don't trust Klay, at all.
+W=GRAFF
+C1A=READY
+TEN=PC10_OTT_CHOICES
+IT=1
+
+#----------------------
+ID=PC10_OTT_MESS1
+T=You're certain I can't just kick their machines directly?...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=That would be so much easier!
+W=GRAFF
+C1A=DISDAIN
+
+T=Sometimes you think like your dad...
+W=OTT
+C2A=WONDER
+
+T=He's not my dad! You know that.
+W=GRAFF
+C1A=ANGRY
+
+T=Yeah... Sorry.
+W=OTT
+C2A=DISAPPOINTED
+
+T=But really... Don't do anything you might regret.
+W=OTT
+C2A=ALRIGHT
+
+T=Okay... I'll resort to messing them up from a distance.
+W=GRAFF
+C1A=OPPOSITE
+
+T=As long as there's no proof you did it, it should be fine!
+W=OTT
+TEN=PC10_OTT_CHOICES
+IT=1
+
+
+#----------------------
+
+ID=PC10_OTT_INV_DEFAULT1
+T=You want this?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=Nah. It'll be more useful to you!
+W=OTT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+
+ID=PC10_OTT_INV_DEFAULT2
+T=Will this help?
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=I don't know. Try it?
+W=OTT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+#----------------------
+
+ID=PC10_OTT_INV_MONEY
+T=No use, you've already repaid what you owed me!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+
+#----------------------
+
+ID=PC10_OTT_INV_FORCEFIELD1
+T=You still haven't used it?
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+TEN=INTERFACE_SHOW_ITEM_BACK
+IT=1
+
+
+#----------------------
+ID=PC10_OTT_EXIT1
+T=Gotta go.
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=NORMAL
+
+T=No worries, I'll stay here to watch over our inventions.
+W=OTT
+
+T=Thanks!
+W=GRAFF
+TEN=PC10_OTT_EXITTURN
+
+#----------------------
+ID=PC10_OTT_EXIT2
+T=See ya!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=OTT
+C2A=NORMAL
+TEN=PC10_OTT_EXITTURN
+
+#----------------------
+ID=PC10_OTT_THINK1
+T=(People always give him a funny look due to being a mixed breed...)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(I couldn't care less. He's the only person I can be confident with.)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+TEN=PC10_OTT_CHOICES
+IT=1
+
+
+
+
+#----------------------
+#= Klay in bed
+#----------------------
+ID=PC10_KLAYBED1
+T=(Look at him! All joyful after wrecking the project I've spent days to work on.)
+W=GRAFF
+A=ANGRY
+MOOD=THINK
+CONTEXT=Klay is laying in a bed outside
+
+T=(I don't wanna talk to him. Only smash him in the face.)
+W=GRAFF
+A=ANGRY
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED2
+T=(Talking with him is pointless. I should try something...)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED3
+T=(Oops... Those earbuds were for Brok. Too late to get them back...)
+W=GRAFF
+A=STUPID
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_OTHERS1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=What the heck are you doing?!
+W=KLAY
+C2=KLAY
+C2A=SURPRISED
+
+T=Erm...
+W=GRAFF
+C1A=GASP
+
+T=Go away! I need to rest.
+W=KLAY
+C2A=ANGRY
+
+T=And stop walking around me! My ears are sensitive.
+W=KLAY
+
+T=Okay... Erm, sorry...
+W=GRAFF
+
+T=(Argh... Why do I even apologize... I'm too stupid!)
+W=GRAFF
+C1A=STUPID
+MOOD=THINK
+
+T=(In any case, I need a more subtle approach.)
+W=GRAFF
+C1A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_OTHERS2
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+
+T=Hey!!!
+W=KLAY
+C2=KLAY
+C2A=SURPRISED
+
+T=Whatever you're trying to do, you better stop!
+W=KLAY
+C2A=ANGRY
+
+T=And stop wandering around like this! I can hear you coming from miles around!
+W=KLAY
+
+T=Erm... Okay.
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+TEN=PC10_KLAYBED_MOVEAWAY
+
+T=(Pfttt... Another failure.)
+W=GRAFF
+C1A=ANGRY
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_NOTRY1
+T=(Hmm... I'd love to see his face! But that wouldn't help me.)
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_NOTRY2
+T=(What for? Hit him?... No, I gotta be more clever.)
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_EARBUDS
+T=Erm...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+VLOW=1
+
+T=Still around? What do you want?
+W=KLAY
+C2=KLAY
+C2A=ANGRY
+
+T=I'd like to... apologize about earlier.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Ah! Finally, you're making some sense!
+W=KLAY
+C2A=BAD
+
+T=I'd like for us to take a new start. And... I've got a gift for you.
+W=GRAFF
+
+T=A pair of earbuds. You won't be bothered by outside sounds anymore.
+W=GRAFF
+C1A=MEH
+
+T=Oh... Interesting.
+W=KLAY
+C2A=NORMAL
+
+T=Wait a minute.
+W=KLAY
+C2A=BAD
+
+T=You're not trying to trick me, are you?
+W=KLAY
+
+T=Of course not! Look, I'll wear them...
+W=GRAFF
+C1A=GASP
+
+T=See?
+W=GRAFF
+C1A=MEH
+
+T=Hmm...
+W=KLAY
+
+T=Okay. Let me try it.
+W=KLAY
+C2A=NORMAL
+
+T=What?
+W=GRAFF
+C1A=THINK
+
+T=I SAID...
+W=KLAY
+C2A=ANGRY
+
+T=ARGH, WILL YOU REMOVE THOSE DARN THINGS?
+W=KLAY
+
+T=Huh? Wait, I can't hear you!
+W=GRAFF
+C1A=GASP
+
+T=...There. Convinced?
+W=GRAFF
+C1A=MEH
+
+T=Give me that!
+W=KLAY
+
+T=...
+W=KLAY
+C2A=BAD
+
+T=Oh... Yeah! A perfect silence!
+W=KLAY
+C2A=HAPPY
+
+T=Exactly what I needed.
+W=KLAY
+
+T=...
+W=GRAFF
+
+T=What are you waiting for? Beat it!
+W=KLAY
+C2A=ANGRY
+TEN=PC10_KLAYBED_MOVEAWAY
+
+T=(I hope I don't regret this...)
+W=GRAFF
+C1A=OPPOSITE
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_STICKER_NOTYET
+T=(Good idea but sticking his finger will wake him up!)
+W=GRAFF
+A=OPPOSITE
+MOOD=THINK
+
+T=(Besides, the handprint won't hold on the sticker.)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(What do cheap detectives do to get fingerprints, already?...)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_STICKER_OK
+T=(Very gently...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+TEN=PC10_KLAYBED_GOAPPLYSTICKER
+
+#----------------------
+ID=PC10_KLAYBED_STICKER_OK2
+T=...
+W=GRAFF
+A=MEH
+COMM=Graff just applied the sticker on Klay's finger, trying not to wake him up
+
+T=...
+W=KLAY
+C2=KLAY
+C2A=NORMAL
+C2_EYESHUT=1
+
+T=Uh...
+W=KLAY
+
+T=(...!)
+W=GRAFF
+C1A=GASP
+C2=NONE
+MOOD=THINK
+
+T=(Phew. Hopefully I applied enough pressure.)
+W=GRAFF
+C1A=HAPPY
+MOOD=THINK
+TEN=PC10_PRINT_TAKE
+
+
+
+#----------------------
+ID=PC10_KLAYBED_FLOUR
+T=(Okay. Just... gotta be careful.)
+W=GRAFF
+A=READY
+MOOD=THINK
+TEN=PC10_KLAYBED_GOAPPLYFLOUR
+
+#----------------------
+ID=PC10_KLAYBED_FLOUR2
+T=(...)
+W=GRAFF
+A=READY
+MOOD=THINK
+
+T=(There, I've applied some flour on his finger. He didn't feel a thing.)
+W=GRAFF
+A=COCKY
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_FLOUR_ALREADY
+T=(Already done.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+#----------------------
+ID=PC10_KLAYBED_FLOUR_SPLASH
+T=(Oh yes.)
+W=GRAFF
+C1=GRAFF
+C1A=READY
+C2=KLAY
+C2A=NORMAL
+MOOD=THINK
+
+T=(Splashes flour)
+
+T=Aaaargh!
+W=KLAY
+C2A=SURPRISED
+
+T=What the... I'm covered in...
+W=KLAY
+C2A=ANGRY
+
+T=...Oh well.
+W=KLAY
+C2A=NORMAL
+
+T=Huh?
+W=GRAFF
+C1A=THINK
+
+T=All gone. Thanks to my auto-clothes cleaner!
+W=KLAY
+C2A=COCKY
+
+T=See? Your attempt miserably failed!
+W=KLAY
+
+T=Argh... Darn technology...
+W=GRAFF
+C1A=OPPOSITE
+
+
+#----------------------
+#= Too far
+#----------------------
+ID=PC10_TALK_TOOFAR
+T=I should get closer to talk.
+W=GRAFF
+A=MEH
+
+#----------------------
+#= Hitting the machines
+#----------------------
+ID=PC10_MACHINEKLAY_HIT1
+T=Stop immediately
+W=STUBOT
+C1=STUBOT
+C1A=NORMAL
+NB=1
+D=60
+CONTEXT=Hitting the machines
+
+#----------------------
+ID=PC10_MACHINEKLAY_HIT2
+T=Graff! What are you doing?!
+W=OTT
+C2=OTT
+C2A=SURPRISED
+NB=1
+D=60
+
+#----------------------
+ID=PC10_MACHINEKLAY_HIT3
+T=You will get a penalty
+W=STUBOT
+C1=STUBOT
+C1A=NORMAL
+NB=1
+D=60
+
+
+#----------------------
+ID=PC10_MACHINEKLAY_DEAD
+T=The master shall be... infooooormed.
+W=STUBOT
+C1=GRAFF
+C1A=ANGRY
+C2=OTT
+C2A=SURPRISED
+C4=STUBOT
+C4A=NORMAL
+
+T=Stupid tin can!
+W=GRAFF
+C4=NONE
+
+T=Graff! I don't recognize you anymore...
+W=OTT
+TEN=PC10_MACHINEBREAK_CHECK
+
+#----------------------
+#----------------------
+
+ID=PC10_MACHINESTUBOT_HIT1
+T=Stop this is mine
+W=STUBOT
+C1=STUBOT
+C1A=NORMAL
+NB=1
+D=60
+COMM=Mine = My machine
+
+#----------------------
+ID=PC10_MACHINESTUBOT_HIT2
+T=Graff?...
+W=OTT
+C2=OTT
+C2A=DISAPPOINTED
+NB=1
+D=60
+
+
+#----------------------
+ID=PC10_MACHINESTUBOT_HIT3
+T=You cannot do this
+W=STUBOT
+C1=STUBOT
+C1A=NORMAL
+NB=1
+D=60
+
+
+#----------------------
+ID=PC10_MACHINE_DONTCARE
+T=I don't care.
+W=GRAFF
+A=OPPOSITE
+
+T=Let's break them!
+W=GRAFF
+A=READY
+
+#----------------------
+ID=PC10_MACHINESTUBOT_DEAD
+T=The ants ran away
+W=STUBOT
+C1=GRAFF
+C1A=OPPOSITE
+C2=OTT
+C2A=SURPRISED
+C4=STUBOT
+C4A=NORMAL
+
+T=This is not acceptable
+W=STUBOT
+
+T=What got into you?! He'll report this to the Director!
+W=OTT
+C2A=ANGRY
+
+T=I don't care.
+W=GRAFF
+TEN=PC10_MACHINEBREAK_CHECK
+
+#----------------------
+#----------------------
+
+ID=PC10_MACHINEOTT_HIT1
+T=Watch out! You're breaking my machine!
+W=OTT
+C1=OTT
+C1A=SURPRISED
+NB=1
+D=90
+
+#----------------------
+
+ID=PC10_MACHINEOTT_HIT2
+T=What the heck are you doing?!
+W=OTT
+C1=OTT
+C1A=ANGRY
+NB=1
+D=60
+
+
+#----------------------
+
+ID=PC10_MACHINEOTT_HIT3
+T=Please... Stop!...
+W=OTT
+C1=OTT
+C1A=SAD
+NB=1
+D=60
+
+
+#----------------------
+
+ID=PC10_MACHINEOTT_DEAD
+T=No... It's all screwed up now...
+W=OTT
+C1=OTT
+C1A=SAD
+
+T=Why did you do this?...
+W=OTT
+C1=OTT
+TEN=PC10_MACHINEBREAK_CHECK
+
+#----------------------
+#----------------------
+
+ID=PC10_MACHINEGRAFF_HIT1
+T=What?...
+W=OTT
+C1=OTT
+C1A=SURPRISED
+NB=1
+D=90
+
+#----------------------
+
+ID=PC10_MACHINEGRAFF_HIT2
+T=Somebody... do something! Graff has gone insane!
+W=OTT
+C1=OTT
+C1A=SURPRISED
+NB=1
+D=90
+
+#----------------------
+
+ID=PC10_MACHINEGRAFF_DEAD
+T=(Hmm... No idea why I did this but...)
+W=GRAFF
+A=THINK
+MOOD=THINK
+
+T=(Smashing things is so enjoyable!)
+W=GRAFF
+A=HAPPY
+MOOD=THINK
+TEN=PC10_MACHINEBREAK_CHECK
+
+#----------------------
+#----------------------
+ID=PC10_OTT_MACHINEBROKEN
+T=I can't believe you did this...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=SAD
+
+T=Leave me alone. I don't want to talk to you right now.
+W=OTT
+
+#----------------------
+#----------------------
+ID=PC10_MACHINE_DEAD1
+T=Totally dead!
+W=GRAFF
+A=COCKY
+COMM=When doing that, Graff goes crazy
+
+#----------------------
+ID=PC10_MACHINE_DEAD2
+T=I screwed it up! So, who's the sucker now?!
+W=GRAFF
+A=COCKY
+
+#----------------------
+ID=PC10_MACHINEGRAFF_BROKEN1
+T=Hmm... Strangely enough, it's still as broken as before.
+W=GRAFF
+A=MEH
+
+#----------------------
+ID=PC10_MACHINEOTT_DEAD1
+T=(Oops... I broke Ott's machine.)
+W=GRAFF
+A=SAD
+MOOD=THINK
+
+#----------------------
+#= Scores
+#----------------------
+
+ID=PC10_SCORES_START1
+T=(For now we're all even...)
+W=GRAFF
+A=THINK
+MOOD=THINK
+CONTEXT=Checking the scores
+
+T=(I'm not in a hurry to see it change.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+#----------------------
+
+ID=PC10_SCORES_BAD1
+T=(Oh gosh... Why isn't there a way to turn it off?...)
+W=GRAFF
+A=GASP
+MOOD=THINK
+
+#----------------------
+ID=PC10_SCORES_GOOD1
+T=(Not bad! I need to keep this up!)
+W=GRAFF
+A=HAPPY
+MOOD=THINK
+
+#----------------------
+ID=PC10_SCORES_BEST1
+T=(Yeah! Take that, Klay!)
+W=GRAFF
+A=COCKY
+MOOD=THINK
+
+#----------------------
+#----------------------
+ID=PC10_TO_DOOR_MACHINEBROKEN
+T=Going outside? No way!
+W=GRAFF
+A=OPPOSITE
+CONTEXT=Door
+
+T=I'll wreck all these machines. If I don't win, nobody will!
+W=GRAFF
+A=READY
+
+
+#----------------------
+#----------------------
+ID=PC10_TO_OUTSIDE_NOPE
+T=I can't leave yet.
+W=GRAFF
+A=MEH
+
+
+#----------------------
+#----------------------
+ID=PC10_ALLMACHINESBROKEN
+T=(...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+CONTEXT=More hitting
+
+T=(That's it... I broke all of them.)
+W=GRAFF
+A=MEH
+MOOD=THINK
+
+T=(It's time. The examination board is coming...)
+W=GRAFF
+A=MEH
+MOOD=THINK
+TEN=PC10_STORY100_OVER
+
+#----------------------------
+#= Hit Klay in bed
+#----------------------------
+ID=PC10_KLAYBED_HIT1
+T=Woah!!!
+W=KLAY
+A=SURPRISED
+
+T=You woke me up! Don't you dare do this again!
+W=KLAY
+A=ANGRY
+
+#----------------------------
+ID=PC10_KLAYBED_HIT2
+T=Ouch!
+W=KLAY
+A=SURPRISED
+
+T=Last warning, buddy!
+W=KLAY
+A=ANGRY
+
+
+#----------------------------
+ID=PC10_STUBOT_REPORTOTT
+T=Klay!
+W=OTT
+C1=KLAY
+C1A=SURPRISED
+C2=OTT
+C2A=SURPRISED
+
+T=Help! Graff has hit me!
+W=OTT
+
+T=What did you do?!
+W=KLAY
+
+T=Nothing! He's crazy!
+W=OTT
+
+T=Graff!
+W=KLAY
+C1A=ANGRY
+C2=GRAFF
+C2A=MEH
+C3=OTT
+C3A=SURPRISED
+
+T=You want to play this game? Okay.
+W=KLAY
+C1A=BAD
+
+T=(Ringtone)
+
+T=Mom! Graff is going insane!
+W=KLAY
+C1A=SURPRISED
+
+T=He hit Ott!
+W=KLAY
+
+T=What?
+W=GRAFF
+C2A=SURPRISED
+
+T=This is true!
+W=OTT
+C3A=ANGRY
+TEN=PC10_STUBOT_REPORT_NEXT
+
+
+
+#----------------------------
+ID=PC10_STUBOT_REPORT
+T=Master.
+W=STUBOT
+C1=KLAY
+C1A=SURPRISED
+C2=STUBOT
+C2A=NORMAL
+
+T=This individual has commited violent acts on our delicate metal skin.
+W=STUBOT
+
+T=Graff!
+W=KLAY
+C1A=ANGRY
+
+T=You want to play this game? Okay.
+W=KLAY
+C1A=BAD
+C2=GRAFF
+C2A=MEH
+C3=STUBOT
+C3A=NORMAL
+
+T=(Ringtone)
+
+T=Mom! Graff is going insane!
+W=KLAY
+C1A=SURPRISED
+
+T=He hit Stubot!
+W=KLAY
+
+T=What?
+W=GRAFF
+C2A=SURPRISED
+
+T=Yes, I have proof!
+W=KLAY
+C1A=COCKY
+
+T=His fingerprints are all over it.
+W=KLAY
+TEN=PC10_STUBOT_REPORT_NEXT
+
+
+#----------------------------
+ID=PC10_KLAYBED_DEAD
+T=You want to play this game? Okay.
+W=KLAY
+C1=KLAY
+C1A=ANGRY
+C2=GRAFF
+C2A=READY
+
+T=(Ringtone)
+
+T=Mom! Graff is going insane! He hit me!
+W=KLAY
+C1A=SURPRISED
+
+T=What?
+W=GRAFF
+C2A=SURPRISED
+
+T=Yes, I have proof! I've just recorded him.
+W=KLAY
+C1A=COCKY
+
+T=Uh-oh...
+W=GRAFF
+
+T=It's over. You're gonna get excluded.
+W=KLAY
+C1A=BAD
+
+T=...
+W=GRAFF
+C2A=ANGRY
+
+T=You know what this means, right?...
+W=GRAFF
+C2A=READY
+
+T=Yeah. You won't be a problem anymore!
+W=KLAY
+C1A=HAPPY
+
+T=Bye, bye!
+W=KLAY
+TEN=PC10_GRAFF_GOESMACHINES
+
+T=Wrong, you moron!
+W=GRAFF
+
+T=Wait! Where are you going?!
+W=KLAY
+C1A=SURPRISED
+
+T=Stop right there!
+W=KLAY
+
+T=If I'm going down... 
+W=GRAFF
+
+T=You're going down with me!
+W=GRAFF
+C2A=HAPPY
+TEN=PC10_GRAFF_GOESMACHINES3
+
+
+
+
+#----------------------
+#= Day 2 end Graff
+#----------------------
+ID=PC10_STUBOT_STORY165_1
+T=Stubot!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=STUBOT
+C2A=NORMAL
+CONTEXT=Day 2 end Graff - Graff is affected by pollution and desperately tries to find a pill
+
+T=Hello human
+W=STUBOT
+
+T=By any chance... (Cough, cough)
+W=GRAFF
+C1A=CHOKE
+
+T=Do you have a pill?...
+W=GRAFF
+C1A=GASP
+
+T=Bill
+W=STUBOT
+COMM=This is a robot and it doesn't understand the word. Find something close to the word
+
+T=No, a pill!
+W=GRAFF
+
+T=Bill
+W=STUBOT
+
+T=Darn it... You piece of junk built to destroy our future... (Cough)
+W=GRAFF
+C1A=ANGRY
+
+T=Can't you see I need help?! (Cough, cough)
+W=GRAFF
+C1A=CHOKE
+TEN=PC10_STUBOT_UNIS
+
+T=Transferred 200 Unis
+W=STUBOT
+
+T=Wait... What?...
+W=GRAFF
+C1A=SURPRISED
+
+T=...
+W=GRAFF
+C1A=THINK
+
+T=That's true! He gave me money!
+W=GRAFF
+C1A=GASP
+
+T=Great! Unexpected but... Thanks!
+W=GRAFF
+C1A=HAPPY
+
+T=Goodbye
+W=STUBOT
+
+T=Hmm. Still not very (Cough) chatty...
+W=GRAFF
+C1A=MEH
+
+#----------------------
+ID=PC10_STUBOT_STORY165_2
+T=Thanks again!
+W=GRAFF
+C1=GRAFF
+C1A=FRIENDLY
+C2=STUBOT
+C2A=NORMAL
+
+T=School fund
+W=STUBOT
+
+T=Give it back later
+W=STUBOT
+
+T=(Cough) Great...
+W=GRAFF
+C1A=OPPOSITE
+
+
+#-------------------------------------
+#= Day 3 begin (if we broke Ott's machine)
+#-------------------------------------
+ID=PC10_DAY3BEGIN1_OTTBROKEN
+T=Hey...
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=OTT
+C2A=DISAPPOINTED
+CONTEXT=Day 3 begin
+COMM=(if we broke Ott's machine)
+
+T=Listen. About the other day...
+W=GRAFF
+
+T=The fair?...
+W=OTT
+C2A=WONDER
+
+T=You were stressed out. That happens.
+W=OTT
+C2A=DISAPPOINTED
+
+T=Still... I'm truly sorry. I shouldn't have destroyed your work.
+W=GRAFF
+C1A=TORN
+
+T=It's already forgotten. And... there's more concerning matters.
+W=OTT
+C2A=OPPOSITE
+TEN=PC10_DAY3BEGIN1B
+
+#-------------------------------------
+#= Day 3 begin
+#-------------------------------------
+ID=PC10_DAY3BEGIN1
+T=Hey, Graff!
+W=OTT
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=HAPPY
+COMM=Normal
+
+T=...
+W=GRAFF
+
+T=Hey.
+W=GRAFF
+C1A=TURN
+
+T=Anxious?
+W=OTT
+C2A=WONDER
+
+T=Yeah... and I wish this was due to the trial.
+W=GRAFF
+C1A=SAD
+
+T=I know what you mean...
+W=OTT
+C2A=DISAPPOINTED
+TEN=PC10_DAY3BEGIN1B
+
+#-------------------------------------
+ID=PC10_DAY3BEGIN1B
+T=With that pill shortage going on...
+W=OTT
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=DISAPPOINTED
+
+T=I'm lucky my uncle provided us with enough this morning.
+W=OTT
+C2A=NORMAL
+
+T=(Better not worry him with my recent trouble...)
+W=GRAFF
+MOOD=THINK
+
+T=Me too... Brok got me one.
+W=GRAFF
+C1A=MEH
+
+T=By the way...
+W=OTT
+C2A=OPPOSITE
+TEN=PC10_DAY3_OTTCHECK
+
+#-------------------------------------
+ID=PC10_DAY3_OTTBAD
+T=There's something I need to tell you about your old man.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+COMM=If Ott has a bad relationship with Brok
+
+T=What about him?
+W=GRAFF
+C1A=THINK
+
+T=I got to work with him yesterday.
+W=OTT
+C2A=ALRIGHT
+
+T=Uncle Wes forced us to cooperate to investigate on a murder case.
+W=OTT
+
+T=Huh?... Really?
+W=GRAFF
+C1A=SURPRISED
+
+T=Yeah...
+W=OTT
+C2A=DISAPPOINTED
+
+T=Brok... He's...
+W=OTT
+
+T=Not what I expected him to be.
+W=OTT
+C2A=NORMAL
+
+T=What do you mean?
+W=GRAFF
+C1A=GASP
+TEN=PC10_DAY3_OTTCHECK2
+
+
+#-------------------------------------
+ID=PC10_DAY3_OTTGOOD
+T=Yesterday I got to work with your old man!
+W=OTT
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=HAPPY
+COMM=If good relationship
+
+T=We investigated a murder case together! It was so cool!
+W=OTT
+
+T=Wait. What?
+W=GRAFF
+C1A=GASP
+
+T=Yeah, the police is seriously understaffed currently... At least, on the human side.
+W=OTT
+C2A=NORMAL
+
+T=So, Uncle Wes decided to send us.
+W=OTT
+
+T=How did that go?
+W=GRAFF
+C1A=THINK
+TEN=PC10_DAY3_OTTCHECK2
+
+#-------------------------------------
+ID=PC10_DAY3_OTTKO
+T=Graff... He hit me.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=DISAPPOINTED
+COMM=If Brok hit Ott
+
+T=What?!
+W=GRAFF
+C1A=SURPRISED
+
+T=And not just me.
+W=OTT
+
+T=That guy is prone to violence.
+W=OTT
+C2A=OPPOSITE
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=I know... I probably shouldn't worry you more, but...
+W=OTT
+C2A=DISAPPOINTED
+# original - I know... Maybe I shouldn't worry you more but...
+
+T=Sometimes an external opinion helps to see the truth...
+W=OTT
+
+T=That doesn't matter.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Today I'll get my diploma so I can move to the Drums...
+W=GRAFF
+C1A=COCKY
+
+T=You seem confident all of a sudden.
+W=OTT
+C2A=NORMAL
+
+T=What other choice do I have?...
+W=GRAFF
+C1A=OPPOSITE
+TEN=PC10_DAY3_BEGIN2
+
+
+#-------------------------------------
+ID=PC10_DAY3_OTTSOLVED
+T=It was totally crazy.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+
+T=Detective Brok... I mean, your old man managed it like a pro.
+W=OTT
+
+T=This was a convoluted mystery tied like spaghetti, and yet he ended up finding the truth!
+W=OTT
+C2A=HAPPY
+
+T=When the criminal escaped, he chased after him out on the rails of the highway to arrest it!
+W=OTT
+C2A=ALRIGHT
+
+T=He did?...
+W=GRAFF
+C1A=GASP
+
+T=Yeah! Your old man is so cool!
+W=OTT
+C2A=HAPPY
+
+T=Uncle Wes was so furious he fired him.
+W=OTT
+C2A=ALRIGHT
+
+T=But if you ask me... He was right to chase that criminal.
+W=OTT
+
+T=Seems like you already know more about Brok than I do.
+W=GRAFF
+C1A=OPPOSITE
+
+T=Don't tell me... You're jealous?
+W=OTT
+C2A=WONDER
+TEN=PC10_DAY3_BEGIN2
+
+
+#-------------------------------------
+ID=PC10_DAY3_OTTJUMPED
+T=The victim of the case was still alive.
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+
+T=Brok found out by... walking on him.
+W=OTT
+
+T=Huh?!
+W=GRAFF
+C1A=GASP
+
+T=Yeah... But it worked...
+W=OTT
+C2A=NORMAL
+
+T=Weird...
+W=GRAFF
+C1A=OPPOSITE
+TEN=PC10_DAY3_BEGIN2
+
+#-------------------------------------
+ID=PC10_DAY3_OTTNOTSOLVED
+T=Well... We solved the case...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+
+T=But I have second thoughts about it.
+W=OTT
+C2A=OPPOSITE
+
+T=I'm pretty sure we sent the wrong person to jail...
+W=OTT
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=Oh well. I probably shouldn't bother you with that.
+W=OTT
+C2A=NORMAL
+
+T=That's fine. I always enjoy hearing from you.
+W=GRAFF
+C1A=FRIENDLY
+TEN=PC10_DAY3_BEGIN2
+
+
+
+#-------------------------------------
+ID=PC10_DAY3_OTTACCUSED
+T=Your old man... is totally insane...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=DISAPPOINTED
+
+T=He accused me of this murder!
+W=OTT
+C2A=ANGRY
+
+T=What?!
+W=GRAFF
+C1A=GASP
+
+T=Yeah, and for no valid reason!
+W=OTT
+
+T=If it wasn't for Uncle Wes, I'd be sleeping in jail right now!
+W=OTT
+C2A=ALRIGHT
+
+T=No way...
+W=GRAFF
+C1A=TURN
+
+T=I'm sorry to say this but...
+W=OTT
+C2A=DISAPPOINTED
+
+T=I think he's got some screws loose...
+W=OTT
+C2A=ALRIGHT
+TEN=PC10_DAY3_BEGIN2
+
+#-------------------------------------
+ID=PC10_DAY3_OTTMEH
+T=...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=DISAPPOINTED
+
+T=I'd... rather not talk about it.
+W=OTT
+
+T=Ott... I need to know.
+W=GRAFF
+C1A=TURN
+
+T=What happened?
+W=GRAFF
+C1A=MEH
+
+T=Your dad is... special.
+W=OTT
+C2A=NORMAL
+
+T=At times he can be the most clever person on earth.
+W=OTT
+
+T=But the minute after, he can hit you in the face for no reason...
+W=OTT
+C2A=OPPOSITE
+
+T=...
+W=GRAFF
+C1A=SAD
+
+T=That description seems very fitting...
+W=GRAFF
+TEN=PC10_DAY3_BEGIN2
+
+#-------------------------------------
+ID=PC10_DAY3_BEGIN2_NOKLAY
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+COMM=If Graff killed Klay
+
+T=Where's Klay?
+W=OTT
+C2A=WONDER
+
+T=Usually he arrives before his mom.
+W=OTT
+
+T=Well...
+W=GRAFF
+C1A=TURN
+TEN=PC10_DAY3_NOKLAY_CHAIRS
+
+T=Students.
+W=DIRECTOR
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=I'm afraid... an accident happened yesterday.
+W=DIRECTOR
+C2A=SAD
+
+T=Klay will not be coming back.
+W=DIRECTOR
+
+T=What do you mean?...
+W=OTT
+C3A=SURPRISED
+
+T=...
+W=DIRECTOR
+
+T=N-no...
+W=OTT
+C3A=SAD
+
+T=Please. Do not worry about it.
+W=DIRECTOR
+C2A=NORMAL
+
+T=You need to focus on your own trial.
+W=DIRECTOR
+TEN=PC10_DAY3BEGIN_SCORES
+
+
+#-------------------------------------
+ID=PC10_DAY3_BEGIN2_KLAY
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+TEN=PC10_DAY3BEGIN_KLAYCOMES
+
+T=Oh no. Look who's coming straight at us.
+W=OTT
+C2A=SURPRISED
+TEN=PC10_DAY3BEGIN_KLAYMUSIC
+
+T=Hey!
+W=KLAY
+C3=OTT
+C3A=OPPOSITE
+C2=KLAY
+C2A=NORMAL
+
+T=How's it going, guys?
+W=KLAY
+C2A=NORMAL
+
+T=You...!
+W=GRAFF
+C1A=ANGRY
+TEE=PC10_GRAFF_PUSHESKLAY
+
+T=Ooof!
+W=KLAY
+C2A=SURPRISED
+
+T=What's with you?...
+W=KLAY
+C2A=ANGRY
+
+T=I almost died yesterday! Because of you!
+W=GRAFF
+
+T=What?...
+W=OTT
+C3A=SURPRISED
+TEN=PC10_DAY3_BEGIN2_KLAYCHECK
+
+#-------------------------------------
+ID=PC10_DAY3_BEGIN2_KLAYMONEY
+T=I know...
+W=KLAY
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=GOOD
+C3=OTT
+C3A=SURPRISED
+
+T=I lent you money! Remember?...
+W=KLAY
+
+T=Thankfully! But have you ever felt that kind of pain?!
+W=GRAFF
+TEN=PC10_DAY3_BEGIN2_KLAYNEXT
+# original - Thankfully! But have you ever felt that pain of agony?!
+
+#-------------------------------------
+ID=PC10_DAY3_BEGIN2_KLAYNOMONEY
+T=This is ridiculous!
+W=KLAY
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=ANGRY
+C3=OTT
+C3A=SURPRISED
+
+T=You swallowed my pill!
+W=GRAFF
+
+T=Do you know what it's like to suffocate for hours?!
+W=GRAFF
+
+T=Ah... Erm...
+W=KLAY
+C2A=GOOD
+
+T=Alright, I admit...
+W=KLAY
+
+T=I'm gonna...!
+W=GRAFF
+C1A=READY
+
+T=Wait! Please don't hurt me!
+W=KLAY
+C2A=SURPRISED
+
+T=I had no idea what was going on in the Slums!
+W=KLAY
+
+T=That was just a prank!
+W=KLAY
+
+T=A prank?!...
+W=GRAFF
+C1A=ANGRY
+TEN=PC10_DAY3_BEGIN2_KLAYNEXT
+
+
+
+#-------------------------------------
+ID=PC10_DAY3_BEGIN2_KLAYNEXT
+T=I'm... sorry! I...
+W=KLAY
+C1=GRAFF
+C1A=ANGRY
+C2=KLAY
+C2A=SURPRISED
+C3=OTT
+C3A=ALRIGHT
+
+T=This was an accident! I didn't want you dead!
+W=KLAY
+C2A=GOOD
+
+T=You've got to believe me!
+W=KLAY
+
+T=Hrrmph... I swear...
+W=GRAFF
+C1A=OPPOSITE
+TEN=PC10_DAY3BEGIN_DIRECTORCOMES
+
+T=Shh. Mom's coming!
+W=KLAY
+
+T=Please, guys... Don't tell her!
+W=KLAY
+
+T=It would ruin my future!
+W=KLAY
+TEN=PC10_DAY3BEGIN_CHOICEREVEAL
+
+#-------------------------------------
+ID=PC10_DAY3BEGIN_REVEAL
+T=Miss Director!
+W=GRAFF
+C1=GRAFF
+C1A=ANGRY
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=SURPRISED
+C4=KLAY
+C4A=GOOD
+TEN=PC10_DAY3BEGIN_DIRECTORAPPROACH
+
+T=Graff!...
+W=OTT
+
+T=Yes?
+W=DIRECTOR
+
+T=I've got something important to tell you.
+W=GRAFF
+C1A=READY
+
+T=Your precious son here...
+W=GRAFF
+
+T=During yesterday's trial, he stole my Toxout pill...
+W=GRAFF
+
+T=And left me to die!
+W=GRAFF
+
+T=No way!
+W=KLAY
+C4A=SURPRISED
+
+T=Don't listen to him, Mom! He's just jealous of my performance!
+W=KLAY
+
+T=You know I've been working hard! I had no reason to do that!
+W=KLAY
+
+T=Graff, I will ask you a single question.
+W=DIRECTOR
+C2A=ANGRY
+
+T=Does this matter right now?
+W=DIRECTOR
+
+T=I... Erm...
+W=GRAFF
+C1A=GASP
+
+T=I'm afraid this is unrelated to the trial.
+W=DIRECTOR
+
+T=Thus, I cannot take this into account.
+W=DIRECTOR
+
+T=But...!
+W=GRAFF
+C1A=SURPRISED
+
+T=I'm sorry.
+W=DIRECTOR
+TEN=PC10_DAY3BEGIN_DIRECTORLEAVES
+
+T=See? Liars never win!
+W=KLAY
+C4A=ANGRY
+C2=NONE
+TEN=PC10_DAY3BEGIN_KLAYLEAVES
+
+T=You scoundrel...!
+W=GRAFF
+C1A=ANGRY
+C4=NONE
+TEN=PC10_DAY3BEGINB
+
+#-------------------------------------
+ID=PC10_DAY3BEGIN_LETITGO
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=OPPOSITE
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+TEN=PC10_DAY3BEGIN_DIRECTORLEAVES
+
+T=Good. Keep your mouth shut and everything will be fine.
+W=KLAY
+C4A=BAD
+
+T=Take this free advice from me and keep it all your life! 
+W=KLAY
+TEN=PC10_DAY3BEGIN_KLAYLEAVES
+
+T=I hate him...
+W=GRAFF
+C1A=OPPOSITE
+
+T=During yesterday's trial I almost thought he wasn't that bad... But now...
+W=GRAFF
+TEN=PC10_DAY3BEGINB
+
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGINB
+T=Let it go.
+W=OTT
+C1=GRAFF
+C1A=ANGRY
+C3=OTT
+C3A=DISAPPOINTED
+
+T=We really need to focus on what's coming.
+W=OTT
+TEN=PC10_DAY3BEGIN_OTTLEAVES
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=You're right. This is the final step.
+W=GRAFF
+C1A=MEH
+TEN=PC10_DAY3BEGIN_GRAFFLEAVES
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGINC
+T=Everyone.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+CONTEXT=Last trial
+
+T=As you know, this is your final day.
+W=DIRECTOR
+
+T=First, let me display the current scores.
+W=DIRECTOR
+TEN=PC10_DAY3BEGIN_SCORES
+
+#-------------------------------------
+ID=PC10_DAY3BEGIND
+T=The final trial starts now.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+
+T=You've got exactly one hour.
+W=DIRECTOR
+TEN=PC10_DAY3BEGIN_TIMERSTARTS
+
+T=Good luck.
+W=DIRECTOR
+TEN=PC10_DAY3BEGIN_DIRECTOREXITS
+
+#-------------------------------------
+ID=PC10_DAY3BEGINE_NOKLAY
+T=...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+TEN=PC10_DAY3BEGINE_WONDER
+
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGINE
+T=...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+C4=KLAY
+C4A=NORMAL
+
+T=Mom?...
+W=KLAY
+C4A=SURPRISED
+
+T=Wait! What are we supposed to do?
+W=KLAY
+TEN=PC10_DAY3BEGINE_WONDER
+
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGINE_WONDER
+T=How are we supposed to do this trial...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=WONDER
+
+T=If we don't even know what it's about?...
+W=GRAFF
+
+T=I think...
+W=OTT
+VLOW=1
+
+T=This is part of the trial itself.
+W=OTT
+C2A=NORMAL
+C1A=MEH
+
+T=In life we won't always be told what we're supposed to do. It's up to us to decide.
+W=OTT
+
+T=But if we screw up...our future is doomed.
+W=GRAFF
+C1A=SAD
+
+T=Relax! We'll figure something out.
+W=OTT
+C2A=ALRIGHT
+TEN=PC10_DAY3BEGINE_CHECK
+
+
+
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGINE_KLAYNEXT
+T=I got this!
+W=KLAY
+C1=GRAFF
+C1A=SURPRISED
+C2=OTT
+C2A=SURPRISED
+C3=KLAY
+C3A=COCKY
+TEN=PC10_DAY3BEGIN_KLAYEXITS
+
+T=I'm out of here, suckers! Good luck for the rest of your life in the Slums!
+W=KLAY
+
+T=Hrmph...
+W=GRAFF
+C1A=OPPOSITE
+C2A=WONDER
+C4=NONE
+VLOW=1
+TEN=PC10_DAY3BEGINE_NEXTEV
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGINE_NEXT
+T=Any idea?...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=OTT
+C2A=NORMAL
+
+T=Hmm...
+W=OTT
+C2A=WONDER
+
+T=This morning I got an ad message. The museum is open to everyone today.
+W=OTT
+C2A=NORMAL
+
+T=The history museum?...
+W=GRAFF
+C1A=MEH
+
+T=Now that you mention it... I received it too!
+W=GRAFF
+C1A=THINK
+
+T=Maybe that's not a coincidence...
+W=OTT
+
+T=It's located in an independent area, near the edge of the dome.
+W=OTT
+
+T=One of the only areas aside from this Center and the police department to be run by Drumers.
+W=OTT
+
+T=How do you know all this?
+W=GRAFF
+C1A=GASP
+
+T=Uncle Wes brought me here once.
+W=OTT
+
+T=He said history is very important because it reflects the natural evolution of things, making it easier for us to accept changes.
+W=OTT
+C2A=WONDER
+
+T=Accept changes?...
+W=GRAFF
+C1A=THINK
+
+T=Well, you know... He's an old man.
+W=OTT
+C2A=NORMAL
+
+T=Anyway. What do you think?
+W=OTT
+
+T=Good idea. This should be interesting! 
+W=GRAFF
+C1A=FRIENDLY
+
+T=Then again, maybe I'm wrong. Maybe we're supposed to help the poor or fight bad guys...
+W=OTT
+C2A=ALRIGHT
+
+T=Those seem like valid options too.
+W=GRAFF
+
+T=Whatever you choose... I'll follow you, Graff.
+W=OTT
+
+T=If we do a blunder, we'll do it together!
+W=OTT
+C2A=HAPPY
+
+T=Thanks, Ott. I'm glad to have a friend like you.
+W=GRAFF
+
+T=You and I both!
+W=OTT
+
+T=Let's go!
+W=GRAFF
+C1A=HAPPY
+TEN=PC10_DAY3BEGIN_PLAY
+
+
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGIN_ASKKLAY
+T=Wait...
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=WONDER
+COMM=Graff is guilty about killing Klay accidentally the day before
+
+T=What happened to Klay?...
+W=OTT
+C2A=WONDER
+
+T=Is he really?...
+W=OTT
+C2A=DISAPPOINTED
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=I can't believe it...
+W=OTT
+C2A=DISAPPOINTED
+
+T=Klay is... was despicable at times but...
+W=OTT
+
+T=He didn't deserve this...
+W=OTT
+C2A=SAD
+
+T=I... agree...
+W=GRAFF
+C1A=SAD
+
+T=Now I feel bad for everything we made him go through.
+W=OTT
+
+T=...
+W=GRAFF
+
+T=It's hard but... We should...
+W=GRAFF
+C1A=MEH
+
+T=Right. We don't have time to mourn him right now.
+W=OTT
+C2A=DISAPPOINTED
+
+T=Let's move on.
+W=OTT
+
+
+#-------------------------------------
+ID=PC10_DAY3BEGIN_STUBOT
+T=Hey, Stubot is still there.
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=STUBOT
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+T=Strange.
+W=OTT
+C3A=ALRIGHT
+
+T=Stubot   Giving you some advance   A little help for humans
+W=STUBOT
+
+T=Oh...
+W=GRAFF
+C1A=THINK
+
+T=Do you know anything about the content of this trial?
+W=OTT
+C2A=NORMAL
+
+T=Yes and no
+W=STUBOT
+
+T=Can only calculate probabilities
+W=STUBOT
+
+T=And what's most probable?
+W=GRAFF
+
+T=Competition   Cannot tell
+W=STUBOT
+
+T=Obviously...
+W=GRAFF
+C1A=OPPOSITE
+
+T=We better get going.
+W=OTT
+
+
+#----------------------
+#= Search under seat
+#----------------------
+
+ID=PC10_STUBOTSEAT_BEFORE
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C3=OTT
+C3A=NORMAL
+
+T=What's going on, Graff?
+W=OTT
+
+T=...I'm not sure myself.
+W=GRAFF
+
+
+#----------------------
+ID=PC10_STUBOTSEAT1
+T=Stubot, please don't mind us...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=STUBOT
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+TEN=PC10_STUBOTSEAT_CROUCH
+
+T=What is human doing
+W=STUBOT
+
+T=...
+W=GRAFF
+
+T=Ah-ha!
+W=GRAFF
+C1A=HAPPY
+
+T=You found it?
+W=OTT
+C3A=WONDER
+TEN=PC10_STUBOTSEAT_STAND
+
+T=Yeah! A key!
+W=GRAFF
+C1A=FRIENDLY
+TEN=PC10_MUSEUMKEY_GET
+
+#----------------------
+ID=PC10_STUBOTSEAT1B
+T=Let's hurry back to the museum!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=STUBOT
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+#----------------------
+ID=PC10_STUBOTSEAT_AFTER
+T=Stop bothering
+W=STUBOT  
+C1=GRAFF
+C1A=OPPOSITE
+C2=STUBOT
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+
+#----------------------------------------------------
+#= Final results!
+#----------------------------------------------------
+ID=PC10_DAY3RESULTS1
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C3=OTT
+C3A=NORMAL
+CONTEXT=The final results!
+
+T=Psst... Graff...
+W=OTT
+
+T=You're nervous?
+W=OTT
+C3A=WONDER
+
+T=...
+W=GRAFF
+C1A=OPPOSITE
+
+T=You know, it's weird... I've imagined this moment many times.
+W=OTT
+C3A=NORMAL
+
+T=I thought I'd be super stressed, like the world on the verge of collapsing.
+W=OTT
+
+T=(...)
+W=GRAFF
+C1A=TURN
+MOOD=THINK
+
+T=I mean, if we don't pass, it's "game over".
+W=OTT
+
+T=We won't have a second chance...
+W=OTT
+C3A=DISAPPOINTED
+
+T=Ott, please...
+W=GRAFF
+C1A=SAD
+
+T=Oh...
+W=OTT
+C3A=SAD
+TEN=PC10_DAY3RESULTS1_CHECK
+
+#----------------------------------------------------
+ID=PC10_DAY3RESULTS1_BADOTT
+T=...
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C3=OTT
+C3A=DISAPPOINTED
+
+T=...
+W=OTT
+SILENCE=1
+
+T=Ott...
+W=GRAFF
+C1A=SAD
+
+T=Sorry about earlier.
+W=GRAFF
+
+T=The stress of the trial got to me.
+W=GRAFF
+TEN=PC10_DAY3RESULTS1_CHECK
+CONTEXT=The final results! (alternative if we hit Ott in chapter 5)
+
+#----------------------------------------------------
+ID=PC10_DAY3RESULTS1_KLAY
+T=Not me! I'm confident.
+W=KLAY
+C1=GRAFF
+C1A=OPPOSITE
+C3=OTT
+C3A=OPPOSITE
+C4=KLAY
+C4A=HAPPY
+
+T=If you're not, maybe you just don't deserve to become part of the best!
+W=KLAY
+
+T=Shut up...
+W=GRAFF
+C1A=OPPOSITE
+
+T=...
+W=KLAY
+C4A=BAD
+TEN=PC10_DAY3RESULTS_CHECKKLAY
+
+
+#----------------------------------------------------
+ID=PC10_DAY3RESULTS_KLAYBAD
+T=Hmph.
+W=KLAY
+C1=GRAFF
+C1A=OPPOSITE
+C3=OTT
+C3A=SAD
+C4=KLAY
+C4A=BAD
+
+T=I'm glad I won't have to deal with you guys on the other side anymore.
+W=KLAY
+
+T=...
+W=GRAFF
+TEE=PC10_DAY3BEGIN_DIRECTORCOMES
+
+T=Don't reply, Graff. He's not worth it.
+W=OTT
+C3A=ALRIGHT
+
+T=Right...
+W=GRAFF
+TEN=PC10_DAY3RESULTS2
+IT=1
+
+#----------------------------------------------------
+ID=PC10_DAY3RESULTS_KLAYGOOD
+T=...
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=BAD
+
+T=Sorry.
+W=KLAY
+C4A=GOOD
+
+T=What?...
+W=OTT
+C3A=SURPRISED
+
+T=Klay just... apologized?...
+W=OTT
+
+T=...Yeah.
+W=KLAY
+
+T=I know... I've been a little rough with you guys.
+W=KLAY
+
+T=I just... needed it.
+W=KLAY
+
+T=To get confidence in myself.
+W=KLAY
+
+T=Maybe the world is collapsing after all...
+W=OTT
+C3A=ALRIGHT
+
+T=Don't pay attention. He just wants to leave a good impression in case he failed.
+W=GRAFF
+C1A=ANGRY
+
+T=No, I'm serious...
+W=KLAY
+TEE=PC10_DAY3BEGIN_DIRECTORCOMES
+
+T=(Gulp) Mom's coming...
+W=KLAY
+
+T=Oh boy, oh boy, oh boy...
+W=KLAY
+
+T=Now who's the one stressing?...
+W=GRAFF
+TEN=PC10_DAY3RESULTS2
+IT=1
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS2
+T=Everyone.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+
+T=Before announcing the results, I would like to congratulate all of you.
+W=DIRECTOR
+
+T=You've been offered this opportunity because you were the hardest working students from this year.
+W=DIRECTOR
+
+T=Keep this in mind. Whether or not you'll be living under or outside the dome...
+W=DIRECTOR
+
+T=You're the future. This world needs you.
+W=DIRECTOR
+
+T=Yet... There are many things you're not aware of.
+W=DIRECTOR
+
+T=Each one of you is special.
+W=DIRECTOR
+
+T=You're all linked together in ways you can't even imagine.
+W=DIRECTOR
+
+T=...
+W=DIRECTOR
+C2A=SAD
+
+T=I'd like to correct myself though.
+W=DIRECTOR
+
+T=Despite your hard work, your skills and your intelligence... They're not the main reason you've been chosen.
+W=DIRECTOR
+C2A=NORMAL
+
+T=(...?)
+W=GRAFF
+C1A=THINK
+MOOD=THINK
+
+T=During those past years, I've attempted to make you aware and prepared.
+W=DIRECTOR
+
+T=But no longer. In a few moments, your destiny will be in your hands.
+W=DIRECTOR
+
+T=Now... Here's the moment you've been waiting for.
+W=DIRECTOR
+
+T=The final results.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_SHOWSTUBOTRESULTS
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS3
+T=Here's Stubot's score.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+
+T=As you know, this is the reference. Any score equalling or superior to this means you pass.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS3_CHECK
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS3_STUBOTDEAD
+T=I'm afraid Stubot was damaged beyond repair earlier today.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=SAD
+C3=OTT
+C3A=SAD
+C4=KLAY
+C4A=NORMAL
+
+T=I will perform a system check to find out what happened.
+W=DIRECTOR
+C2A=NORMAL
+C1A=GASP
+
+T=Nevertheless, he managed to complete today's trial.
+W=DIRECTOR
+
+TEN=PC10_DAY3RESULTS3_ISKLAYDEAD_CHECK
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS3_KLAY
+T=Klay. My son... Here is your score.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+TEN=PC10_DAY3RESULTS_SHOWKLAYRESULTS
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS4
+T=Yes!
+W=KLAY
+C1=GRAFF
+C1A=OPPOSITE
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=HAPPY
+
+T=I would like to point out that no favoritism whatsoever has been exercised.
+W=DIRECTOR
+
+T=All criteria used for ratings are neutral.
+W=DIRECTOR
+
+T=Next candidate - Ott.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_SHOWOTTRESULTS
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS5
+T=Phew. That was close!
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=SURPRISED
+C4=KLAY
+C4A=BAD
+TEN=PC10_DAY3RESULTS_FADE
+
+T=Congrats! I knew you could do it!
+W=GRAFF
+C1A=HAPPY
+C3A=HAPPY
+
+T=And now... Graff.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_SHOWGRAFFRESULTS
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFLOSES
+T=Oh... No!...
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=SURPRISED
+C4=KLAY
+C4A=NORMAL
+
+T=Truly sorry. You did not pass.
+W=DIRECTOR
+
+T=However... It doesn't matter.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_GRAFFCHECKLOSE
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFWINS
+T=...!
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+
+T=I passed!
+W=GRAFF
+C1A=HAPPY
+
+T=It's not that simple.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_GRAFFWINSUPDATE
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFPENALTY
+T=You have received a 40 points penalty.
+W=DIRECTOR
+C1=GRAFF
+C1A=SURPRISED
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=SURPRISED
+C4=KLAY
+C4A=SURPRISED
+
+T=So... Here is your final score.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_GRAFFWINSUPDATE2
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFSTILLWINS
+T=Phew...!
+W=GRAFF
+C1=GRAFF
+C1A=GASP
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I... still managed to pass but...
+W=GRAFF
+
+T=I don't understand?...
+W=GRAFF
+C1A=THINK
+TEN=PC10_DAY3RESULTS_GRAFFLOSES3
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFLOSES2
+T=What?!... Why?...
+W=GRAFF
+C1=GRAFF
+C1A=SURPRISED
+C2=DIRECTOR
+C2A=NORMAL
+TEN=PC10_DAY3RESULTS_GRAFFLOSES3
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFLOSES3
+T=The system has performed a check.
+W=DIRECTOR
+C1=GRAFF
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Graff, your tutor is registered as a Drumer.
+W=DIRECTOR
+
+T=Brok?... A Drumer?...
+W=GRAFF
+C1A=SURPRISED
+
+T=As such, this breaches the institution rules that you signed when you got accepted here.
+W=DIRECTOR
+
+T=This Center is strictly reserved for Slums children.
+W=DIRECTOR
+
+T=But...
+W=GRAFF
+C1A=TURN
+
+T=Oh! I know!
+W=GRAFF
+C1A=GASP
+
+T=He's taken a job as a police officer... Temporarily!
+W=GRAFF
+C1A=DISDAIN
+
+T=No. He's registered as a permanent citizen. 
+W=DIRECTOR
+C1A=SURPRISED
+
+T=It's right there in the Government mainframe data which is inviolable.
+W=DIRECTOR
+C1A=GASP
+
+T=I'm sorry, Graff. The rules are the rules.
+W=DIRECTOR
+
+T=He... lied to me?...
+W=GRAFF
+C1A=SAD
+
+T=Furthermore, you should have been automatically excluded.
+W=DIRECTOR
+
+T=However, I attempted to save your profile by reclassifying this as a first-class penalty.
+W=DIRECTOR
+
+T=This is the best I could do.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_CHECKPASS
+
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFWINSANYWAY
+T=Fortunately your impressive results allowed you to reach the required threshold.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C3=OTT
+C3A=NORMAL
+C4=KLAY
+C4A=NORMAL
+
+T=Now.
+W=DIRECTOR
+
+T=Congratulations to all of you.
+W=DIRECTOR
+
+T=Due to circumstances, there won't be any ceremony.
+W=DIRECTOR
+
+T=In addition, I have opened a thirty minute window for all of you to move to the Dome.
+W=DIRECTOR
+
+T=Thirty minutes?... From now?
+W=KLAY
+C4A=SURPRISED
+
+T=Yes.
+W=DIRECTOR
+C4A=NORMAL
+
+T=This will be your only opportunity to become Drumers officially.
+W=DIRECTOR
+
+T=You need to get prepared right away.
+W=DIRECTOR
+
+T=I will meet you in front of the Border Post 001.
+W=DIRECTOR
+
+T=But... I'm not sixteen yet!
+W=GRAFF
+C1A=GASP
+
+T=Do not worry.
+W=DIRECTOR
+
+T=You're already registered. Just come.
+W=DIRECTOR
+C1A=MEH
+
+T=That will be all.
+W=DIRECTOR
+
+T=I wish you good luck with your future.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_WINSANYWAY_LEAVEDIRECTOR
+
+T=Just... Half an hour...
+W=OTT
+C2=OTT
+C2A=SAD
+C3=NONE
+C4=NONE
+
+T=To say goodbye to my parents and prepare my stuff?...
+W=OTT
+
+T=I'm sorry Graff. Gotta leave.
+W=OTT
+C2A=DISAPPOINTED
+
+T=But... What about the situation in the Slums?
+W=GRAFF
+C1A=SAD
+
+T=You heard the Director. We can't miss this opportunity.
+W=OTT
+
+T=We won't give up on them.
+W=OTT
+C2A=NORMAL
+
+T=And... your old man's on the case, right?
+W=OTT
+
+T=Yeah...
+W=GRAFF
+C1A=TURN
+VLOW=1
+
+T=Let's get prepared.
+W=OTT
+C2A=ALRIGHT
+TEN=PC10_DAY3RESULTS_WINSANYWAY_LEAVEOTT
+
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS_GRAFFNOTENOUGH
+T=Unfortunately... With your total score this still wasn't enough for you to pass.
+W=DIRECTOR
+C1=GRAFF
+C1A=SAD
+C2=DIRECTOR
+C2A=NORMAL
+
+T=I'm truly sorry.
+W=DIRECTOR
+
+T=Sorry?...
+W=GRAFF
+C1A=OPPOSITE
+
+T=If you truly are sorry, change this!
+W=GRAFF
+C1A=ANGRY
+
+T=I wish I could.
+W=DIRECTOR
+C2A=SAD
+
+T=My abilities are limited. I didn't write the rules.
+W=DIRECTOR
+C2A=NORMAL
+
+T=Then... Who did?...
+W=GRAFF
+C1A=OPPOSITE
+
+T=...
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS7
+IT=1
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS7
+T=Wait... If he's really a Drumer...
+W=GRAFF
+C1=GRAFF
+C1A=THINK
+C2=DIRECTOR
+C2A=NORMAL
+
+T=Doesn't this automatically make me one as well?
+W=GRAFF
+
+T=You should know this by now.
+W=DIRECTOR
+
+T=Children need to prove they earn this right. This is too late.
+W=DIRECTOR
+
+T=Argh...
+W=GRAFF
+C1A=STUPID
+
+T=This... can't be happening...
+W=GRAFF
+C1A=SAD
+
+T=I shouldn't say this but...
+W=DIRECTOR
+
+T=Don't worry about it too much.
+W=DIRECTOR
+
+T=You have a great destiny lying ahead of you.
+W=DIRECTOR
+
+T=A great destiny?!
+W=GRAFF
+C1A=SURPRISED
+
+T=I'll... get to live the rest of my life in the Slums...
+W=GRAFF
+C1A=OPPOSITE
+
+T=How can this be of little importance?!
+W=GRAFF
+C1A=ANGRY
+
+T=...
+W=DIRECTOR
+
+T=The final results are currently inside the Center data.
+W=DIRECTOR
+C3=OTT
+C3A=SAD
+
+T=They will be transmitted to the Government data frame tonight.
+W=DIRECTOR
+
+T=Due to current events, there won't be any ceremony.
+W=DIRECTOR
+
+T=I shall inform you as soon as possible when you're able to move under the Dome.
+W=DIRECTOR
+
+T=That is all.
+W=DIRECTOR
+
+T=May the Untail watch over you.
+W=DIRECTOR
+TEN=PC10_DAY3RESULTS_DIRECTORLEAVES1
+
+T=...
+W=OTT
+C3A=DISAPPOINTED
+C2=NONE
+TEN=PC10_DAY3RESULTS_OUTOFCHAIRS
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS8_KLAYBAD
+T=...
+W=KLAY
+C1=GRAFF
+C1A=MEH
+C2=KLAY
+C2A=GOOD
+C3=OTT
+C3A=NORMAL
+TEN=PC10_DAY3RESULTS_KLAYLEAVES
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS8_KLAYGOOD
+T=Well...
+W=KLAY
+C1=GRAFF
+C1A=TURN
+C2=KLAY
+C2A=GOOD
+C3=OTT
+C3A=SAD
+
+T=That sucks. You didn't deserve...
+W=KLAY
+
+T=Go away!
+W=GRAFF
+C1A=ANGRY
+
+T=I just wanted to say...
+W=KLAY
+
+T=Fathers should never be trusted.
+W=KLAY
+
+T=My mom learnt this the hard way. I'm sorry for you...
+W=KLAY
+
+T=I don't want your pity! Scram!
+W=GRAFF
+
+T=...
+W=KLAY
+
+T=Take care.
+W=KLAY
+TEN=PC10_DAY3RESULTS_KLAYLEAVES
+
+
+#----------------------------------------------------
+ID=PC10_DAY3RESULTS9_BADOTT
+T=Ott. Please...
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=OTT
+C2A=WONDER
+
+T=Did I lose everything... including your friendship?...
+W=GRAFF
+
+T=Don't worry.
+W=OTT
+
+T=I understand and I accept your apology.
+W=OTT
+C2A=ALRIGHT
+
+T=Thanks.
+W=GRAFF
+C1A=GASP
+TEN=PC10_DAY3RESULTS9
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS9
+T=Did you hear what she said?
+W=OTT
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=NORMAL
+
+T=...
+W=GRAFF
+C1A=TURN
+
+T=Yeah. Who would have thought a robot could have religious beliefs. She never mentioned it...
+W=GRAFF
+C1A=MEH
+
+T=No, that's not...
+W=OTT
+C2A=SAD
+
+T=Boys. I have to close the building.
+W=DIRECTOR
+C4=DIRECTOR
+C4A=NORMAL
+TEN=PC10_DAY3RESULTS_GRAFFOTTLEAVES
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS10
+T=Congratulations, Ott.
+W=DIRECTOR
+C1=GRAFF
+C1A=MEH
+C2=DIRECTOR
+C2A=NORMAL
+C4=OTT
+C4A=NORMAL
+
+T=Your arrival statistics showed a very low percentage of success. Yet... you passed.
+W=DIRECTOR
+
+T=Your uncle is very proud of you.
+W=DIRECTOR
+
+T=Uncle Wes?... How can you...?
+W=OTT
+C4A=SURPRISED
+
+T=As for you, Graff... This is just a small setback.
+W=DIRECTOR
+
+T=Do not let anyone else decide your future.
+W=DIRECTOR
+
+T=Be strong. Prove yourself!
+W=DIRECTOR
+C2A=ANGRY
+TEN=PC10_DAY3RESULTS_DIRECTORLEAVESEND
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS11
+T=So... This is where our path ends.
+W=GRAFF
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=SAD
+
+T=Bye, Ott.
+W=GRAFF
+TEE=PC10_DAY3RESULTS11_GRAFFSTARTS
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS11B
+T=What? No way!
+W=OTT
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=ANGRY
+
+T=I won't let you go like this!
+W=OTT
+C2A=ALRIGHT
+TEN=PC10_DAY3RESULTS11_CHECK
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS11_GRAFFLOST
+T=You've seen it. I'm a disaster. A total failure.
+W=GRAFF
+C1=GRAFF
+C1A=TORN
+C2=OTT
+C2A=SAD
+
+T=Just like my old man.
+W=GRAFF
+
+T=There must be a solution...
+W=OTT
+C2A=OPPOSITE
+
+T=Forget it. I don't deserve it.
+W=GRAFF
+C1A=SOB
+TEN=PC10_DAY3RESULTS11_TO_PC01
+
+T=Graff!...
+W=OTT
+C2A=SURPRISED
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS11_GRAFFWINS
+T=No choice. You'll be living under the Dome soon...
+W=GRAFF
+C1=GRAFF
+C1A=MEH
+C2=OTT
+C2A=ALRIGHT
+
+T=I'm glad for you.
+W=GRAFF
+
+T=But you better stay away from me.
+W=GRAFF
+C1A=TURN
+
+T=What?...
+W=OTT
+C2A=SURPRISED
+VLOW=1
+TEN=PC10_DAY3RESULTS11_CHECKKLAY
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS11_NORMAL
+T=My bad luck could be contagious.
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=OTT
+C2A=SURPRISED
+TEN=PC10_DAY3RESULTS11_NEXT
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS11_KLAY
+T=There are things... you don't know...
+W=GRAFF
+C1=GRAFF
+C1A=TURN
+C2=OTT
+C2A=NORMAL
+
+T=I'm not a good person, Ott...
+W=GRAFF
+C1A=TORN
+
+T=That's not true!
+W=OTT
+C2A=SAD
+TEN=PC10_DAY3RESULTS11_NEXT
+
+
+
+#-------------------------------------
+ID=PC10_DAY3RESULTS11_NEXT
+T=Wait!
+W=OTT
+C1=GRAFF
+C1A=SAD
+C2=OTT
+C2A=SURPRISED
+TEN=PC10_DAY3RESULTS11_NEXTMUSIC
+
+T=That's not fair! You deserved to pass!
+W=OTT
+
+T=Life's unfair.
+W=GRAFF
+
+T=The Graff I know would never give up!
+W=OTT
+C2A=ALRIGHT
+TEN=PC10_DAY3RESULTS11_NEXTMOVE
+
+T=Well you're wrong! I never showed my true self!
+W=GRAFF
+C1A=ANGRY
+
+T=I'm just a liar and selfish! After all, I take from my old man!
+W=GRAFF
+TEN=PC10_DAY3RESULTS11_OTTHIT
+
+T=(Smacks)
+SILENCE=1
+
+T=Huh?!
+W=GRAFF
+C1A=SURPRISED
+
+T=Why... did you hit me?!
+W=GRAFF
+C1A=GASP
+
+T=Get ahold of yourself!
+W=OTT
+C2A=ANGRY
+
+T=Haven't you noticed?...
+W=OTT
+TEN=CH6_THEIDEA1
+
+
+#-------------------------------------
+#Brok says this
+ID=PC10_DAY3RESULTS_WINSANYWAY_BROK
+CONTEXT=Day 3 results "Drumer" ending - If Graff passes, Brok explains what happens next
+T=The next events are a blur...
+BVOICE=BROK
+T=I remember entering the bunker with Dee and the doc.
+T=It was tough but we found a way to get rid of those bots surrounding us.
+T=On our way out, I received Graff's message...
+T=He made it...
+T=But he needed me urgently.
+T=I was faced again with a hard choice. 
+T=Dee had her own trouble and she needed my help.
+T=This time...
+T=I had to make the right decision.
+TEN=PC10_DAY3RESULTS_WINSANYWAY_TOPC12
+
+###############################################
+# PROOFREAD AND UPDATED - Chris Barnes - 02/09/2019
+###############################################
+
+
+
+#-------------------------------------
+ID=PC10_HITSTUBOT_OTT1
+T=Graff?...
+W=OTT
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=SURPRISED
+NB=1
+D=120
+
+#-------------------------------------
+ID=PC10_HITSTUBOT_OTT2
+T=Are you sure about this?...
+W=OTT
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=OPPOSITE
+NB=1
+D=180
+
+#-------------------------------------
+ID=PC10_HITSTUBOT_OTT3
+T=...!
+W=OTT
+C1=GRAFF
+C1A=READY
+C2=OTT
+C2A=SURPRISED
+SILENCE=1
+
+T=There!
+W=GRAFF
+
+T=No more Stubot, no more competition!
+W=GRAFF
+
+T=I'm not sure...
+W=OTT
+
+T=It's worth a try.
+W=GRAFF
+
+T=...
+W=OTT
+C2A=DISAPPOINTED
+SILENCE=1
+
+#----------------------
+ID=PC10_DOOR_LOCKED
+T=Locked.
+W=GRAFF
+A=MEH
