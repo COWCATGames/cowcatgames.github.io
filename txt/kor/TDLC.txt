@@ -1,3 +1,4 @@
+﻿# LANGUAGE: KOR
 #-------------------------------
 #= DLC Fight club
 #-------------------------------
@@ -7,6 +8,7 @@ TITLE_SUPPORTCHALLENGERS_GROUP=그룹
 
 CHOICE_JUKEBOX=음악 트랙 고르기
 CHOICE_CLINT=C 토큰을 건넬까요?
+# MODIFIED
 CHOICE_WHEELTURN=10 C 토큰을 쓸까요?
 CHOICE_DAILYCHALLENGE=일일 도전을 고르세요
 CHOICE_CHOOSECHARACTER=캐릭터를 고르세요
@@ -19,6 +21,8 @@ CHOICE_RETRY=재도전
 CHOICE_EXIT=종료
 CHOICE_REMOVEALL=DLC 데이터 전부 삭제
 CHOICE_REMOVESOME=C 토큰, 음식, 해금 요소 유지
+CHOICE_DONT=아무것도 하지 않기
+CHOICE_ABSOLUTELY=마지막으로 확인합니다! 정말 확실합니까?
 
 # Ads
 AD_PC21_DOORRIGHT=오른쪽 문
@@ -49,6 +53,7 @@ ACHIEVE_DLC_STORY=대화 너무 좋아
 ACHIEVE_DLC_CREATOR=창조자가 되어 가는 기분
 ACHIEVE_DLC_THROWNOUT=환영 안 합니다
 ACHIEVE_DLC_BATHROOM=화장실에서 휴식을
+ACHIEVE_DLC_ADS=주점의 광고 애호가
 
 # Achievements descriptions
 ITEM_DLC_FIRSTWIN_MSG=첫 번째 도전을 이기도록 하세요
@@ -64,6 +69,7 @@ ITEM_DLC_STORY_MSG=주점에 있는 모든 캐릭터에게 한 번 씩 말을 �
 ITEM_DLC_CREATOR_MSG=도전을 하나 창작하고 완료하세요
 ITEM_DLC_THROWNOUT_MSG=주점에서 쫓겨나세요
 ITEM_DLC_BATHROOM_MSG=화장실로 들어갈 방법을 찾으세요
+ITEM_DLC_ADS_MSG=수집형 광고를 전부 모으세요
 
 # This one needs to stay very short (3 characters)
 INTERFACE_CHOOSE=고르기
@@ -73,12 +79,24 @@ INTERFACE_VRFOODSELECTED=음식 선택
 INTERFACE_CHARACTERSELECTED=캐릭터 선택
 INTERFACE_RENAMEPLAYER=플레이어 이름 바꾸기: {number}
 INTERFACE_SPINIT=돌리세요!
+INTERFACE_GAMEOVERDLC=게임오버
+INTERFACE_VERSUS=VS
+INTERFACE_ALLENEMIES=All
+
 INTERFACE_DEBUG_DLC_WIN=도전 성공
 INTERFACE_DEBUG_DLC_LOSE=도전 실패
 INTERFACE_DEBUG_DLC_COMPLETEALLCHALLENGES=모든 도전 완료
 INTERFACE_DEBUG_DLC_UNLOCKBONUSCHALLENGES=모든 보너스 도전 해금
 INTERFACE_DEBUG_DLC_GIVECTOKENS=C 토큰 건네기
+INTERFACE_DEBUG_DLC_DISPLAYSTATS=현재 난이도에서 시도/승리/패배한 도전 과제 통계 표시
+INTERFACE_DEBUG_DLC_RESETSTATS=현재 난이도에서 모든 통계를 0으로 초기화
+INTERFACE_DEBUG_DLC_SETFIRSTDATE=DLC 일일 도전 과제의 첫 날짜 설정
+
+
 INTERFACE_NUMBERCOMPLETED=전부 완료
+INTERFACE_CONGRATULATIONS=축하드립니다!
+INTERFACE_CARD_DESC=수집형 카드 <col=BOLD>{name}</col> 획득!
+INTERFACE_GRABBED=붙잡힘!
 
 PC_NEWSARTICLES=뉴스 기사
 PC_BOXINGGLOVES=권투 글러브
@@ -94,6 +112,15 @@ PC_ARCADE=오락기
 
 ITEM_INTERFACE_SWITCHBOXER_MSG=복서/탐정 복장 전환
 INTERFACE_RESET_DLC=DLC 초기화
+# MODIFIED
+INTERFACE_RESET_DLC_REMOVEALL=경고 - <col=BOLD>여태 해온 Brawl Bar 진행 상황이 삭제됩니다!</col> (해금한 도전 과제, C-토큰, 수집품, 스토리 포함)
+INTERFACE_RESET_DLC_REMOVEALL_MAIN=메인 게임 진행 상황과 업적에는 영향을 주지 않습니다.
+INTERFACE_RESET_DLC_REMOVEALL_STANDALONE=업적에는 영향을 끼치지 않습니다.
+# MODIFIED
+INTERFACE_RESET_DLC_REMOVESOME=경고 - <col=BOLD>여태 해온 Brawl Bar 진행 상황의 일부가 삭제됩니다!</col> (해금한 도전 과제, 스토리)
+INTERFACE_RESET_DLC_REMOVESOME_MAIN=메인 게임 진행 상황, 업적, 해금한 추가 요소에는 영향을 끼치지 않습니다.
+INTERFACE_RESET_DLC_REMOVESOME_STANDALONE=업적과 해금한 추가 요소에는 영향을 끼치지 않습니다.
+INTERFACE_RESET_DLC_REMOVESOME_MORE=C-토큰, 음식, 쿠폰은 유지됩니다.
 
 #Dialogue
 PC21_HYENA_HELP=도움
@@ -133,10 +160,10 @@ CHAR_BACKMOUSE=생쥐
 CHAR_BACKRHINO=코뿔소
 CHAR_BACKGROUP=그룹
 CHAR_BACKBAT=박쥐
-CHAR_BACKMOUSE=생쥐
 CHAR_BACKWOLF=늑대
 CHAR_BACKPLATYPUS=오리너구리
 CHAR_BACKDAVE=데이브
+CHAR_BACKCLIENT=고객
 
 #Interactions
 PC_VRCABINS=VR 캐비닛
@@ -144,6 +171,8 @@ PC_VRCABINS=VR 캐비닛
 
 INTERFACE_2FASTER=2배속!
 INTERFACE_WAVE=웨이브 {number}
+INTERFACE_STRENGTH=힘
+INTERFACE_REWARD=보상
 
 CHALLENGE_WIN=승리!
 CHALLENGE_WINS=승리
@@ -164,12 +193,13 @@ CHALLENGE_1=1
 CHALLENGE_0=Go!
 
 MENU_CHALLENGE1=초보자
-#Shortened from "intermediate"
 MENU_CHALLENGE2=중급자
 MENU_CHALLENGE3=숙련자
 MENU_CHALLENGEBONUS=보너스
 MENU_CHALLENGECOMMUNITY=커뮤니티
+MENU_COLLECTIBLECARDS=카드
 
+TUTORIAL_SPINFAST=스핀
 TUTORIAL_CHALLENGEPLAY=플레이
 TUTORIAL_CHALLENGEFOOD=음식 사용
 TUTORIAL_CHALLENGESKIP=도전 생략
@@ -177,6 +207,8 @@ TUTORIAL_CHALLENGESKIP=도전 생략
 CHOICE_CHALLENGE_SKIP=도전을 생략하시겠습니까?
 INTERFACE_CHALLENGE_SKIP_INFO=이 도전을 생략하려면 <col=BOLD>{amount} C 토큰</col>을 요구로 합니다.
 INTERFACE_CHALLENGE_SKIPNOTENOUGH_INFO=C 토큰이 모자라시군요.
+
+CHOICE_SURVIVAL_RANDOM=이번 플레이를 무작위로 진행하시겠습니까?
 
 CHOICE_ARCADEMACHINE_PLAY=플레이 하시겠습니까?
 
@@ -275,6 +307,10 @@ ITEM_CHALLENGE_EVERYONEDIED=모두 죽어
 ITEM_CHALLENGE_EVERYONEDIED_MSG=이 장소를 침입하는 <col=BOLD>모든 트라이봇</col>을 없애세요!
 ITEM_CHALLENGE_BEATEMUPA=하수구에서 다 때려눕혀
 ITEM_CHALLENGE_BEATEMUPA_MSG=하수구에서 적들을 다 때려눕히세요. 이제 세 명의 목숨이 사라지겠군요!
+# MODIFIED
+ITEM_CHALLENGE_BEATEMUPB=옥상 난전
+# MODIFIED
+ITEM_CHALLENGE_BEATEMUPB_MSG=옥상에서 적들을 다 물리치세요. 떨어지면 즉사입니다!
 ITEM_CHALLENGE_BEATEMUPC=몰려오는 보스들
 ITEM_CHALLENGE_BEATEMUPC_MSG=모든 보스들과 차례차례 싸우세요!
 ITEM_CHALLENGE_FINALFIGHT=마지막 싸움
@@ -321,14 +357,33 @@ ITEM_CHALLENGE_STICKONLY=막대기만 사용하도록
 ITEM_CHALLENGE_STICKONLY_MSG=<col=BOLD>막대기를 들고 있지 않으면</col> 적들을 쓰러트릴 수 없습니다!
 ITEM_CHALLENGE_DONTBLOWUP=폭발에 휘말리지 말도록
 ITEM_CHALLENGE_DONTBLOWUP_MSG=폭발을 피하면서 음식이 사라지기 전에 집어가세요!
+ITEM_CHALLENGE_LOWGRAVITY=저중력
+ITEM_CHALLENGE_LOWGRAVITY_MSG=모든 목표물을 <col=BOLD>빠르게</col> 파괴하고 살아남으세요!
 
+# Extras
+ITEM_CHALLENGE_SPIKYBALLOONSTWO=가시 풍선++
+ITEM_CHALLENGE_ICETRIALTWO=북극곰++
+ITEM_CHALLENGE_SURVIVETHEPARTY=파티에서 살아남기
+ITEM_CHALLENGE_SURVIVETHEPARTY_MSG=이 파티는 뭔가 잘못된 파티입니다. <col=BOLD>조작 반전 상태에서 살아남고, 손님을 절대 공격하지 마세요<col=BOLD>!
+ITEM_CHALLENGE_RAYRISING=레이 라이징
+ITEM_CHALLENGE_RAYRISING_MSG=좀비 R.J. 아포칼립스에서 살아남으세요!
+ITEM_CHALLENGE_THELOSTFLU=잃어버린 보물
+ITEM_CHALLENGE_THELOSTFLU_MSG=<col=BOLD>숨겨진 3개의 동전</col>을 찾아라. 주의, HP는 1뿐!
+ITEM_CHALLENGE_PASSIVEAGG=수동 공격
+ITEM_CHALLENGE_PASSIVEAGG_MSG=<col=BOLD>패리</col>만이 적에게 피해를 줄 수 있다!
+ITEM_CHALLENGE_HIDDENCOLL=숨겨진 수집가
+ITEM_CHALLENGE_HIDDENCOLL_MSG=동전을 모아라. 적이나 풍선의 <col=BOLD>투명화</col>에 방해받지 마라!
+ITEM_CHALLENGE_PIPESPARRING=파이프의 왕
+ITEM_CHALLENGE_PIPESPARRING_MSG=모든 적보다 <col=BOLD>작은 파이프 위</col>에 더 오래 서라!
+ITEM_CHALLENGE_CLASSDISMISSED=수업 종료
+ITEM_CHALLENGE_CLASSDISMISSED_MSG=모든 적을 빠르게 처치하라. 적은 <col=BOLD>HP를 회복</col>한다!
 
 ITEM_CHALLENGE_BOSSCLINT=보스 클린트
 ITEM_CHALLENGE_BOSSCLINT_MSG=보스 클린트와 싸우기
 ITEM_CHALLENGE_BOSSIVY=보스 아이비
 ITEM_CHALLENGE_BOSSIVY_MSG=보스 아이비와 싸우기
-ITEM_CHALLENGE_BOSSSHARPTEETH=보스 날카로운 이빨
-ITEM_CHALLENGE_BOSSSHARPTEETH_MSG=보스 날카로운 이빨과 싸우기
+ITEM_CHALLENGE_BOSSSHARK=보스 날카로운이빨
+ITEM_CHALLENGE_BOSSSHARK_MSG=날카로운이빨과의 보스전
 
 ITEM_CHALLENGE_SURVIVAL=서바이벌!
 ITEM_CHALLENGE_SURVIVAL_MSG=<col=BOLD>가능한 많은 적들</col>을 없애면서 살아남으세요!
@@ -351,8 +406,24 @@ ITEM_CHALLENGE_QUIZZC_MSG=브록에 대한 지식을 자랑해보세요! (어려
 ITEM_CHALLENGE_ARMWRESTLE=팔씨름
 ITEM_CHALLENGE_ARMWRESTLE_MSG=여기서 가장 강한 쥐보다 더 쌘가요?
 
-#ITEM_OTT=시나몬 롤
-#ITEM_OTT_MSG=시나몬과 설탕 맛이 나는 맛있는 패스트리랍니다! <col=BOLD>5% 더 빨라집니다.</col>
+#ITEM_OTT=Cinnamon Roll
+#ITEM_OTT_MSG=Tasty rolled pastry flavored with cinnamon and sugar! <col=BOLD>Makes you 5% faster.</col>
+
+ITEM_TIMERPLUS=타이머++
+ITEM_TIMERPLUS_MSG=타이머 카운트다운을 <col=BOLD>30초</col> 추가합니다.
+
+ITEM_TIMERMINUS=타이머--
+ITEM_TIMERMINUS_MSG=타이머 카운트다운을 <col=BOLD>30초</col> 감소합니다.
+
+GAMEOVER_PC21_HIT=파충류 충격이 이겼습니다!
+GAMEOVER_PC21_GROUP=마지막 전투
+
+INTERFACE_OPTION_CHARLABELS=캐릭터 라벨
+INTERFACE_OPTION_CHARLABELS_SIMPLIFIED=간소화 - 중요한 라벨만 표시
+INTERFACE_OPTION_CHARLABELS_ALL=All
+INTERFACE_OPTION_CHARLABELS_NONE=없음
+ITEM_INTERFACE_OPTION_CHARLABELS_MSG=전투 중 캐릭터 그룹을 표시하겠습니까?
+
 
 #-----------------------------------
 # Room info
@@ -384,8 +455,8 @@ BM04_ROOMINFO_WRONGCOLOR=입력한 색상이 잘못되었습니다.
 #-----------------------------------
 # Tutorials
 #-----------------------------------
-#HELP_DLC_SWITCHBOXER=복서/어드벤처 복장 전환
-#HELP_DLC_SWITCHBOXER_INSTRUCTIONS=전투 중에 브록이 복서 복장을 착용할지 탐정 옷을 착용할지 결정하세요.##<col=BOLD>플레이어</col> 패널에서 이 버튼을 누르세요.##이 행위가 액션 모드에만 영향을 미친다는 점에 유의하세요.(브록은 어드벤처 모드에선 항상 탐정 옷을 입습니다.)
+#HELP_DLC_SWITCHBOXER=Boxer / Adventure outfit switch
+#HELP_DLC_SWITCHBOXER_INSTRUCTIONS=Decide whether Brok should use his boxer or detective outfit during fights.##Use this button in the <col=BOLD>Player</col> panel.##Please note that this only affects action mode (Brok always keeps the detective outfit in adventure mode)
 
 HELP_DLC_BOXEROUTFIT=복서 복장
 HELP_DLC_BOXEROUTFIT_INSTRUCTIONS=이제 원할 때 언제든지 복서 복장을 착용할 수 있습니다. 액션 모드로 전환하기만 하면 됩니다! (브록은 어드벤처 모드에선 항상 탐정 복장을 유지합니다.)##기존의 탐정 복장으로 싸우는 것을 선호한다면 <col=BOLD>Player</col> 탭의 아이콘을 누르세요.
@@ -395,11 +466,17 @@ HELP_DLC_BOXEROUTFIT2_INSTRUCTIONS=이 복장으론 무기를 다룰 수 없지�
 HELP_DLC_BOXEROUTFIT2_MOUSE=<col=BOLD>일반 콤보를 다룰 때 <col=BOLD>방향키 위</col> <spr=CONTROL_up> 를 눌러 어퍼컷을 날리거나 <col=BOLD>방향키 아래</col> <spr=CONTROL_down> 를 눌러 훅을 날리세요!
 HELP_DLC_BOXEROUTFIT2_GAMEPAD=<col=BOLD>일반 콤보를 다룰 때 <col=BOLD>방향키 위</col> <spr=GAMEPAD_UP> 를 눌러 어퍼컷을 날리거나 <col=BOLD>방향키 아래</col> <spr=GAMEPAD_DOWN> 를 눌러 훅을 날리세요!
 HELP_DLC_BOXEROUTFIT2_GAMEPAD_PS=<col=BOLD>일반 콤보를 다룰 때 <spr=GAMEPAD_UP> 를 눌러 어퍼컷을 날리거나 <spr=GAMEPAD_DOWN> 를 눌러 훅을 날리세요!
-
 HELP_DLC_STEAMCOOP=온라인 Co-op
+# MODIFIED
+HELP_DLC_STEAMCOOP_INSTRUCTIONS=Steam을 통해 온라인 친구와 함께 플레이하세요!##<col=BOLD>SHIFT + TAB</col>을 눌러 오버레이를 열고, 같이 할 친구를 마우스 오른쪽 클릭하세요. 그리고 <col=BOLD>Steam Remote Play Together</col>를 선택하세요.##게임은 한 명만 소유해도 되지만, 각 플레이어는 컨트롤러가 필요합니다. (플레이어 1은 키보드/마우스도 사용 가능합니다.)
 
 HELP_DLC_STEAMCOOP2=온라인 Co-op (next)
 HELP_DLC_STEAMCOOP2_INSTRUCTIONS=같이 할 온라인 친구가 없나요? Co-op 세션을 설정하는데 도움이 필요하신가요?##<col=BOLD>공식 디스코드 서버</col>로 오세요! (설정에 주소가 있습니다)
+
+
+HELP_DLC_DLCCARDS=수집형 카드
+HELP_DLC_DLCCARDS_INSTRUCTIONS=이제 좋아하는 캐릭터가 그려진 카드를 모을 수 있습니다!##<col=BOLD>메뉴</col>에서 찾거나, <col=BOLD>주점</col>에 있는 상자를 확인하세요. 일부 카드는 훨씬 희귀합니다!
+
 
 HELP_DLC_ARMWRESTLING=팔씨름
 HELP_DLC_ARMWRESTLING_INSTRUCTIONS=게임이 시작되면 {command}을/를 반복적으로 꾸준히 눌러 힘을 발휘하세요.##주의하세요. <col=BOLD>너무 빨리 누르시다가 체력이 떨어질지도 몰라요.</col>.##화면엔 아무런 표시가 없으니 직접 느끼면서 하시면 됩니다!
@@ -417,12 +494,39 @@ HELP_DLC_DLCFINISH=더 많은 캐릭터로 플레이
 HELP_DLC_DLCFINISH_INSTRUCTIONS=이야기를 마무리 지으신 것을 축하드립니다. 하지만 아직 재밌는 게 남아있습니다!<col=BOLD>새로운 캐릭터로 모든 도전을 다시 해보세요</col>! 언제든지 버블한테 말을 걸어 그래프나 R.J. 등 다양한 캐릭터로 전환하세요.##{command}
 HELP_DLC_DLCFINISH_COMMAND=<button=INPUT_ACTION_SCROLL_INV_LEFT> 나 <button=INPUT_ACTION_SCROLL_INV_RIGHT> 로도 캐릭터 전환을 언제든지 할 수 있답니다.
 
+HELP_DLC_DLCFINISH2=보너스 잠금 해제
+HELP_DLC_DLCFINISH2_INSTRUCTIONS=버블의 휠로 모든 남은 <col=BOLD>보너스 도전과제 및 수집품</col>을 잠금 해제하세요. 더 많은 C-토큰을 얻으세요!
 
+HELP_DLC_DLCFINISH3=일일 도전 과제
+HELP_DLC_DLCFINISH3_INSTRUCTIONS=매일 새로운 <col=BOLD>일일 도전 과제</col>가 당신을 기다리고 있습니다!
+
+HELP_DLC_DLCFINISH4=창작자 모드
+HELP_DLC_DLCFINISH4_INSTRUCTIONS=버블의 <col=BOLD>창작자 모드</col>를 통해 나만의 도전 과제를 만들어보세요.
+HELP_DLC_DLCFINISH4_INSTRUCTIONS_PC=본인이 만든 도전 과제를 친구에게 공유하고 커뮤니티에서 도전 과제를 <col=BOLD>다운로드</col>하세요!##물론 <col=BOLD>환경, 캐릭터 모드</col>도 만들 수 있답니다. 도움이 필요하면 Discord 서버에 들어오세요!
+HELP_DLC_DLCFINISH4_INSTRUCTIONS_OTHER=<col=BOLD>커뮤니티</col> 탭에서 PC 버전에서 제작된 최고의 도전 과제 일부를 이용할 수 있습니다.
+
+HELP_DLC_DLCFINISH5=팬아트 추가 요소
+HELP_DLC_DLCFINISH5_INSTRUCTIONS=<col=BOLD>그 외</col>에서 팬아트를 해금하세요.##당신의 그림을 보내주셔도 됩니다! SNS나 Discord에 게시하면 됩니다.
+
+HELP_DLC_DLCFINISH6=난이도
+HELP_DLC_DLCFINISH6_INSTRUCTIONS=더 힘든 도전을 원한다면 난이도를 높여보세요! <col=BOLD>게임플레이 옵션</col>에서 언제든 선택할 수 있습니다.##도전 과제는 해당 난이도 이하로 완료한 경우에만 완료 처리되며, 캐릭터별로 따로 저장됩니다.
+
+HELP_DLC_SWITCHCOMPLETED=지금은 "완료"된 도전 과제가 더 적나요?
+HELP_DLC_SWITCHCOMPLETED_INSTRUCTIONS=전환 후에는 <col=BOLD>해당 캐릭터로 플레이한</col> 도전 과제만 완료로 간주됩니다.##언제든지 <col=BOLD>기본 캐릭터</col>로 전환하여 완료된 모든 도전 과제를 다시 볼 수 있습니다.
+
+
+
+
+#-----------------------------------
+# Specific tutorials
+
+BM01_TITLE_TUTORIAL3_ALT=복서 브록 공격
+BM01_SUBTITLE_TUTORIAL3_ALT=<col=BOLD>↑</col> 혹은 <col=BOLD>↓</col> 를 누른 상태로 공격하면 색다른 공격을 할 수 있습니다.
+BM01_SUBTITLE_TUTORIAL3_ALT_PS=<spr=GAMEPAD_UP> 혹은 <spr=GAMEPAD_DOWN> 를 누른 상태로 공격하면 색다른 공격을 할 수 있습니다.
 
 #-----------------------------------
 # Gameovers
 #-----------------------------------
-GAMEOVER_PC21_HIT=파충류 충격이 이겼습니다!
 GAMEOVER_PC21_LASTFIGHT=거의 다 왔습니다. 힘내요!
 
 #-----------------------------------
@@ -430,16 +534,21 @@ GAMEOVER_PC21_LASTFIGHT=거의 다 왔습니다. 힘내요!
 #-----------------------------------
 TUTORIAL_CHARACTEROPTIONS=캐릭터 설정
 TUTORIAL_ITEMOPTIONS=아이템 설정
+TUTORIAL_ENVIMAGEOPTIONS=이미지 옵션
+TUTORIAL_DUPLICATE=중복
 TUTORIAL_TRAPOPTIONS=함정 설정
 TUTORIAL_CHARACTERDELETE=해당 캐릭터 삭제
 TUTORIAL_CHALLENGEDELETE=해당 도전 삭제
+TUTORIAL_ENVIRONMENTDELETE=선택한 환경 제거
 CHOICE_DELETE_CHAR=해당 캐릭터를 삭제하시겠습니까?
 CHOICE_DELETE_CHALLENGE=해당 도전을 삭제하시겠습니까?
+CHOICE_DELETE_ENVIRONMENT=선택한 환경을 제거하시겠습니까?
 CHOICE_DELETE_ITEM_OWNED=(이미 등록하셨으므로 완전히 없어지진 않습니다!)
 CHOICE_DELETE_ITEM_WORKSHOP=(창작 마당에서 다시 다운로드 가능합니다)
 
 CHOICE_DELETE_CHAR_POPUP=해당 캐릭터가 화면에서 곧 삭제됩니다.
 CHOICE_DELETE_CHALLENGE_POPUP=해당 도전이 화면에서 곧 삭제됩니다.
+CHOICE_DELETE_ENVIRONMENT_POPUP=화면이 전환되면 해당 환경이 제거됩니다.
 
 # Traps
 TRAP_CRATE=상자
@@ -454,8 +563,10 @@ TRAP_LASERPLACED=레이저 배치
 TRAP_CONVEYOR=컨베이어 벨트
 TRAP_HOLE=구덩이
 TRAP_FALLDOWN=낙석
+TRAP_ACID=산성
 
 # Modifiers
+MODIFIER_BOMB=한번에 모든 적 폭발
 MODIFIER_GRABINSTANTDEATH=잡히면 즉사
 MODIFIER_ONED=1차원 전투
 MODIFIER_NOHUD=HUD X
@@ -463,7 +574,17 @@ MODIFIER_FOODWEAPON=음식이 무기로 바뀜
 MODIFIER_NOSPECIAL=특수 공격 X
 MODIFIER_INVERTCONTROLS=방향키 전환
 MODIFIER_REMOVE=모든 수정 사항 없애기
-
+MODIFIER_HIGHJUMPS=달의 중력
+MODIFIER_ZERODAMAGEUNTILHPBELOW=플레이어의 HP가 낮을 때만 데미지가 들어감
+MODIFIER_NOSCALING=스케일링 효과 없음
+MODIFIER_ONEHITKILLPLAYER=플레이어는 1 HP만 가짐
+MODIFIER_ONEHITKILLENEMIES=적들은 1 HP만 가짐
+MODIFIER_ONEHITKILL=전원 1 HP만 가짐
+MODIFIER_GLITCH=글리치
+MODIFIER_ONLYPARRY=패리만 적에게 피해를 줄 수 있습니다
+MODIFIER_ENEMYINVISIBLE=적이 정기적으로 투명해진다
+MODIFIER_HPDRAIN=플레이어 HP가 점차 감소
+MODIFIER_HPGAIN=적 HP가 점차 증가
 
 BM04_MAININFO=도전 주요 정보
 BM04_CHARACTER=캐릭터
@@ -491,7 +612,8 @@ BM04_OPTION_TIMER=시간 제한
 BM04_OPTION_ROOMSETTINGS=장소 설정
 BM04_OPTION_OBJECTIVE=목표 타입
 BM04_OPTION_LOADCHALLENGE=도전 불러오기
-BM04_OPTION_MODIFIER=수정
+BM04_OPTION_MODIFIERADD=수정값 추가
+BM04_OPTION_MODIFIERREMOVE=수정값 제거
 
 BM04_OPTION_CHALLENGESHARETITLE=창작 마당에 올릴 제목
 BM04_OPTION_CHALLENGESHAREDESCR=창작 마당에 올릴 소개
@@ -502,15 +624,23 @@ BM04_OPTION_CHALLENGESHAREDIFFICULTY=권장 난이도
 BM04_OPTION_CHALLENGESHAREEXPORTCHALLENGE=해당 도전을 올리겠습니까?
 BM04_OPTION_CHALLENGESHAREEXPORTCHARMODS=해당 캐릭터 모드를 올리겠습니까?
 BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT=커스텀한 환경을 올리겠습니까?
-BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=커스텀한 음악을 올리겠습니까?
+BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=음악을 내보내시겠습니까?
+BM04_OPTION_CHALLENGESHAREUPDATETHUMB=썸네일을 업데이트할까요?
+BM04_OPTION_CHALLENGESHAREUPDATEDESCR=설명을 업데이트할까요?
+BM04_OPTION_CHALLENGESHAREUPDATETAGS=태그를 업데이트할까요?
 BM04_OPTION_CHALLENGESHARESUBMIT=제출
 
+# MODIFIED
+BM04_OPTION_CHALLENGESHARETITLE_HELP=기입한 제목은 워크샵에서만 사용됩니다. <col=BOLD>영어로 기입하시는 것을 강력히 권장드립니다.</col>##기입한 내용이 도전 과제 제목이 됩니다. 이 도전의 내용과 일치하는 이름을 정의해주시길 바랍니다.
+# MODIFIED
+BM04_OPTION_CHALLENGESHAREDESCR_HELP=기입한 설명은 워크샵에 표시됩니다. <col=BOLD>영어로 기입하시는 것을 강력히 권장드립니다.</col>
 BM04_OPTION_CHALLENGESHAREPICTURE_HELP=해당 사진은 창작 마당의 대표 사진으로 표시됩니다. 플레이어에게 매력적이고 콘텐츠와 일치해야 합니다.##예를 들어 <col=BOLD>960 x 540 px</col>와 같은<col=BOLD>와이드</col> 형식이어야 합니다. 1MB 미만, PNG 또는 JPG여야 합니다.
 BM04_OPTION_CHALLENGESHARETAGS_HELP=태그 목록을 쉼표로 구분하여 입력해야 합니다.##일부 태그는 난이도와 같이 자동으로 추가됩니다.
 BM04_OPTION_CHALLENGESHAREEXPORTCHALLENGE_HELP=도전 과제가 포함되어야 하나요?##예를 들어 캐릭터를 따로 등록하고 싶으면 "아니오"를 선택하세요.
 BM04_OPTION_CHALLENGESHAREEXPORTCHARMODS_HELP=캐릭터 모드가 포함되어야 하나요?##"예"를 선택한 경우 공개할 수 있을 정도로 괜찮은지 확인하세요!
+BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT_HELP=사용자 정의 환경을 포함하시겠습니까?##"예"를 선택하신 경우 공개해도 충분히 좋은 품질인지 확인해보세요!
 BM04_OPTION_CHALLENGESHARESUBMIT_HELP=이 작업은<col=BOLD>스팀 창작 마당</col>에 전송됩니다. 업데이트하려면 이 작업을 다시 수행하세요. ##COWCAT은 전송하신 콘텐츠에 대한 책임이 없음을 밝힙니다. 권한이 있는지 확인해 주세요.
-
+BM04_OPTION_CHALLENGESHAREDIFFICULTY_HELP=당신이 생각하는 이 도전 과제의 난이도를 정하세요.
 
 BM04_OPTION_EXPORTCHALLENGE_TITLE=도전 자체를 포함하시겠습니까?
 BM04_OPTION_EXPORTCHARMOD_TITLE=캐릭터 모드를 포함하시겠습니까?
@@ -522,8 +652,12 @@ BM04_OPTION_BACKGROUND_HELP=이 도전을 진행하는 동안 적용될 환경�
 BM04_OPTION_ROOMSETTINGS_HELP=장소를 커스터마이징하세요 (사이즈, 비율 등...)
 BM04_OPTION_OBJECTIVE_HELP=해당 도전을 위한 주요 목표 유형을 선택하세요.##예: 전부 쓰러트리기, 아이템 모으기, 서바이벌 등...
 BM04_OPTION_TIMER_HELP=제한 시간을 설정하세요.##목표에 따라 패배 또는 승리를 의미할 수 있습니다.
-BM04_OPTION_MODIFIER_HELP=수정을 통해 특별한 것을 적용 시켜보세요.
+BM04_OPTION_MODIFIERADD_HELP=특별한 기능을 위해 하나 이상의 수정값을 사용하세요.
+BM04_OPTION_MODIFIERREMOVE_HELP=수정값을 제거합니다.
 
+BM04_OPTION_CHALLENGESHAREUPDATETHUMB_HELP=워크숍 페이지에서 수동으로 변경한 경우, ‘아니오’로 두세요.
+BM04_OPTION_CHALLENGESHAREUPDATEDESCR_HELP=워크숍 페이지에서 수동으로 변경한 경우, ‘아니오’로 두세요.
+BM04_OPTION_CHALLENGESHAREUPDATETAGS_HELP=워크숍 페이지에서 수동으로 변경한 경우, ‘아니오’로 두세요.
 
 BM04_OPTION_DESTRUCTIBLE=파괴 가능한 객체 선택
 BM04_OPTION_DESTRUCTIBLE_HOWMANY=파괴되어야 할 객체가 총 몇인가요?
@@ -536,11 +670,13 @@ BM04_OPTION_TIMER_HOWMANY=시간 초를 입력하세요 (비 활성화하려면 
 
 BM04_COMMUNITY=커뮤니티
 BM04_WORKSHOP=창작 마당
+BM04_CREATOR=창작자
 BM04_CURRENTVALUE=현재 가치
 BM04_DEFAULTVALUE=기본
 BM04_REQUIRED0=추가
 BM04_REQUIRED1=권장됨
 BM04_REQUIRED2=요구됨
+BM04_IDENTIFIER=동일인
 
 BM04_ROOM_WIDTH=너비
 BM04_ROOM_WIDTH_DESC=기본/최소 = 1920
@@ -554,8 +690,8 @@ BM04_ROOM_MINSCALE_DESC=장소, 환경에서 허용되는 가장 멀리 위치�
 BM04_ROOM_MAXSCALE=최대 비율
 BM04_ROOM_MAXSCALE_DESC=장소, 환경에서 허용되는 가장 가까이 위치한 모든 캐릭터의 사이즈를 결정합니다. 기본 = 100%
 
-#BM04_ROOM_MINDEPTH=최소 너비
-#BM04_ROOM_MINDEPTH_DESC=장소, 환경에서 허용되는 가장 먼 위치. 예: 해당 장소 사진 상단에서 500px
+#BM04_ROOM_MINDEPTH=Minimum depth
+#BM04_ROOM_MINDEPTH_DESC=The furthest depth position allowed in this room environment. Eg: 500px from the top of the room picture.
 
 BM04_ROOM_COLORIS=방 색깔을 사용하시겠습니까?
 BM04_ROOM_COLORIS_DESC=모든 캐릭터에게 색상 틴트를 제공합니다.
@@ -565,19 +701,25 @@ BM04_ROOM_COLOR_DESC=모든 캐릭터에게 색상 틴트를 제공합니다. RG
 
 BM04_ITEM_DELETE=아이템 삭제
 BM04_TRAP_DELETE=함정 삭제
+BM04_TRAP_DELETE_HELP=선택한 함정 영구적으로 삭제
 
 BM04_TRAP_ITEMDROP=아이템 떨구기
-BM04_TRAP_ITEMDROP_DESC=함정이 파괴됐을 때 아이템이 드랍됩니다.
+BM04_TRAP_ITEMDROP_HELP=함정이 파괴되면 아이템이 드랍됩니다.
 
 BM04_ADD_ITEMDROP=아이템 떨구기 추가
 BM04_RETURN_LISTDROPS=드랍 목록으로 돌아가기
+BM04_RETURN_LISTDROPS_HELP=돌아가기.
 
 BM04_ID=ID
 BM04_CHARACTER_TYPE=캐릭터 타입
-BM04_CHARACTER_TYPE_DESC=캐릭터 (브록, 오트, 그래프 등...)
+BM04_CHARACTER_TYPE_HELP=캐릭터 (브록, 오트, 그래프...)
 
 BM04_CHARACTER_DELETE=캐릭터 삭제
+BM04_CHARACTER_DELETE_HELP=해당 장면으로부터 선택한 캐릭터 삭제. <col=BOLD>첨부된 모든 속성값이 사라집니다.</col>
+
 BM04_CHARACTER_TEAM=팀
+BM04_CHARACTER_TEAM_HELP=팀을 결성함으로 서로 공격할 수 있는 캐릭터를 결정.
+
 BM04_CHARACTER_MAINPLAYER=메인 플레이어 (팀 1)
 BM04_CHARACTER_COOP=Co-op 플레이어 (팀 1)
 BM04_CHARACTER_ALLY=아군 컴퓨터 (팀 1)
@@ -589,11 +731,24 @@ BM04_CHARACTER_OTHERPLAYER2=상대 플레이어 (팀 2)
 BM04_CHARACTER_OTHERPLAYER3=상대 플레이어 (팀 3)
 BM04_CHARACTER_OTHERPLAYER4=상대 플레이어 (팀 4)
 
+# All these were modified more or less
+BM04_CHARACTER_FACTORDECISION=결정 요소
+BM04_CHARACTER_FACTORDECISION_HELP=결정 요소 <col=BOLD>(%)</col>##컴퓨터가 조종하는 캐릭터에게만 해당됩니다. 해당 값이 높을수록 캐릭터가 더 적극적으로 행동합니다.
+
 BM04_CHARACTER_STRENGTH=힘
 BM04_CHARACTER_STRENGTH_HELP=공격력 <col=BOLD>(백분율)</col>#공격력은 캐릭터마다 자동으로 적용됩니다. (예: 그래프는 R.J.보다 공격력이 낮습니다.)
 
 BM04_CHARACTER_DEFENSE=방어
 BM04_CHARACTER_DEFENSE_HELP=방어력 <col=BOLD>(백분율)</col>#방어력은 캐릭터마다 자동으로 적용됩니다. (예: 그래프는 R.J.보다 방어력이 낮습니다.)
+
+BM04_CHARACTER_SPEEDATTACK=공격 속도
+BM04_CHARACTER_SPEEDATTACK_HELP=공격 속도 <col=BOLD>(%)</col>##값이 높을수록 빨라지고, 낮을수록 느려집니다. 컴퓨터가 조종하는 캐릭터에게만 해당됩니다.
+
+BM04_CHARACTER_SPEEDMOVE=이동 속도
+BM04_CHARACTER_SPEEDMOVE_HELP=이동 속도 <col=BOLD>(%)</col>##값이 높을수록 빨라지고, 낮을수록 느려집니다.
+
+BM04_CHARACTER_HPMAX=최대 체력
+BM04_CHARACTER_HPMAX_HELP=캐릭터에게 할당하는 최대 체력.##기본값은 캐릭터 종류에 따라 다릅니다.
 
 BM04_CHARACTER_HEIGHTPOS=높이 위치
 BM04_CHARACTER_HEIGHTPOS_HELP=화면에서 캐릭터/아이템 위치 (더 낮게 = 아래로, 더 많이 = 위로)#지상에서 떨어진 상태일 경우 캐릭터가 떨어진다는 점에 유의하세요.
@@ -627,12 +782,61 @@ BM04_CHARACTER_CHARACTERSKIN=캐릭터 스킨 (기본 = 자동)
 
 BM04_CHARACTER_HEIGHTPOS_TITLE=지면 위 높이(픽셀 단위)
 
+BM04_CHARACTER_NOTPOSSIBLECOOP_TITLE=co-op 불가
+BM04_CHARACTER_NOTPOSSIBLECOOP_DESC=해당 캐릭터 유형은 플레이할 수 없습니다. "동맹 컴퓨터"로 설정하시거나 다른 캐릭터 유형을 고르세요.
+
+BM04_ENVIRONMENT_TITLE=환경 제목
+BM04_ENVIRONMENT_TITLE_HELP=새 환경의 이름을 정하세요.
+
+BM04_ENVIRONMENT_PICTURE=환경 메인 이미지
+BM04_ENVIRONMENT_PICTURE_HELP=메인 배경을 업로드하세요. (<col=BOLD>PNG</col> 또는 <col=BOLD>JPG</col>) 또한 기본 방 크기를 결정해야 합니다.##화면을 가득 채워주셔야 합니다. (최소 <col=BOLD>1920 x 1080px</col>) 최대 가로/세로 크기는 <col=BOLD>4096px</col>입니다.
+
+BM04_ENVIRONMENTIMAGE_DEPTH=깊이
+BM04_ENVIRONMENTIMAGE_DEPTH_HELP=세로 위치를 기준으로 그래픽(캐릭터, 이미지 등)의 레이어 순서를 정하세요.##예시: 0 = 배경(캐릭터 뒤), 1080 = 전경(캐릭터 앞)
+
+BM04_ENVIRONMENTIMAGE_ALPHA=알파 투명도
+BM04_ENVIRONMENTIMAGE_ALPHA_HELP=투명도를 설정하세요. <col=BOLD>(%)</col>##10 = 거의 안 보임, 100 = 완전히 잘 보임
+
+BM04_ENVIRONMENTIMAGE_FRAMES=프레임 수
+BM04_ENVIRONMENTIMAGE_FRAMES_HELP=해당 이미지가 애니메이션일 경우(업로드한 파일에 여러 프레임이 연속으로 있을 경우), 프레임 수를 설정하세요.
+
+BM04_ENVIRONMENTIMAGE_FRAMESPEED=프레임 속도
+BM04_ENVIRONMENTIMAGE_FRAMESPEED_HELP=해당 이미지가 애니메이션일 경우, 속도를 설정해주세요. <col=BOLD>(%)</col>##100 = 기본 속도, 200 = 더 빠른 속도, 50 = 더 느린 속도
+
+BM04_ENVIRONMENTIMAGE_DELETE=해당 이미지 삭제
+BM04_ENVIRONMENTIMAGE_DELETE_HELP=이 환경에서 해당 이미지를 삭제합니다.
+
+BM04_ENVIRONMENT_SUBMIT=환경 제출
+BM04_ENVIRONMENT_SUBMIT_HELP=환경을 확인하고 생성합니다.
+
 BM04_ERROR_TITLE=오류
 BM04_ERROR_CHARACTER=한 캐릭터 모드를 검색할 수 없습니다: {name}
+BM04_ERROR_ENVIRONMENTBACK=환경 이미지 중 하나를 불러올 수 없습니다: {name}
+
+
+BM04_ENVIRONMENT_CREATE=환경 할당 완료
+BM04_ENVIRONMENT_DESCR=해당 메인 배경 이미지가 환경에 할당되었습니다. 해당 환경은 도전 과제와 함께 저장됩니다.##<col=BOLD>추가 환경 이미지</col>옵션을  <col=BOLD>더 보기</col> 버튼에서 찾아 다양한 깊이의 이미지를 넣을 수 있습니다.
+
+BM04_ENVIRONMENT_DESCR2=제공한 그림에 맞게 방 크기가 자동으로 조정되었습니다. <col=BOLD>도전 과제 속성</col>의 <col=BOLD>방 정보</col>에서 얼마든지 변경이 가능합니다. 특히 캐릭터가 움직일 수 있는 영역의 최소/최대 세로 위치를 조정한다던가요.
+
+BM04_ENVIRONMENT_MISSINGTITLE_TITLE=제목 없음
+BM04_ENVIRONMENT_MISSINGTITLE_DESCRIPTION=해당 환경의 제목을 입력하세요.
+
+BM04_ENVIRONMENT_MISSINGPICTURE_TITLE=이미지 없음
+BM04_ENVIRONMENT_MISSINGPICTURE_DESCRIPTION=이미지를 업로드하세요.
+
+BM04_ENVIRONMENT_WRONGDIMENSION_TITLE=이미지 크기 오류
+BM04_ENVIRONMENT_WRONGDIMENSION_DESCRIPTION=해당 이미지의 크기가 올바르지 않습니다.
+
+BM04_ENVIRONMENT_MISSINGNAME_TITLE=이름 없음
+BM04_ENVIRONMENT_MISSINGNAME_DESCRIPTION=해당 이미지의 이름을 입력하세요.
 
 BM04_WORKSHOP_TITLE=스팀 창작 마당 페이지
 BM04_WORKSHOP_DESCR=스팀 창작 마당에 접속하여 창작물을 공유하고 더 많은 것을 다운로드하세요
 
+
+BM04_WORKSHOP_NOTHING_EXPORT=내보낼 항목 선택되지 않음
+BM04_WORKSHOP_NOTHING_EXPORT_DESCR=내보낼 항목을 선택하지 않았습니다.
 
 BM04_WORKSHOP_PICTURE_EXPORT=사진이 필요합니다
 BM04_WORKSHOP_PICTURE_EXPORT_DESCR=등록하시려면 대표 사진이 필요합니다. 추가해 주세요.
@@ -647,8 +851,11 @@ BM04_WORKSHOP_ITEMS_STEAM=귀하의 창작물이 스팀 창작 마당에 등록 
 BM04_WORKSHOP_ITEMS_DRMFREE=귀하의 창작물은 ZIP 아카이브로 다음과 같이 내보냈습니다:##<col=BOLD>{path}</col>##해당 파일을 친구에게 공유하거나 온라인으로 업로드해서 플레이어들에게 자신의 디렉토리에 압출을 풀도록 요청해 보세요.
 
 BM04_WORKSHOP_SELECT_PICTURE_NOTSELECTED=사진 선택되지 않음
+# MODIFIED
 BM04_WORKSHOP_SELECT_PICTURE_WRONGSIZE=선택된 사진이 너무 큽니다. ({size} MB 미만이어야 합니다.)
 BM04_WORKSHOP_SELECT_PICTURE_COPYFAIL=선택한 사진을 복사할 수 없습니다.
+BM04_WORKSHOP_SELECT_PICTURE_WRONGFORMAT=선택한 이미지의 확장자가 잘못되었습니다. (.png 또는 .jpg여야 합니다.)
+BM04_WORKSHOP_SELECT_PICTURE_THUMB=썸네일 생성 실패
 
 BM04_WORKSHOP_SUBSCRIPTIONS=창작 마당 구독
 BM04_WORKSHOP_NB_SUBSCRIBED={number}개의 창작 마당 아이템이 설치되었습니다.
@@ -663,18 +870,41 @@ BM04_CHALLENGE_MISSINGOBJECTIVE_TITLE=목표 설정이 없음
 BM04_CHALLENGE_MISSINGOBJECTIVE_DESCRIPTION=도전에 대한 주요 정보(첫 번째 아이콘)에 목표를 정해 주세요.
 BM04_CHALLENGE_MISSINGPLAYERCHARACTER_TITLE=플레이어 캐릭터가 없음
 BM04_CHALLENGE_MISSINGPLAYERCHARACTER_DESCRIPTION=플레이어가 될 캐릭터를 정해 주세요.
+BM04_CHALLENGE_TOOMANYENEMIES_TITLE=적이 너무 많음
+BM04_CHALLENGE_TOOMANYENEMIES_DESCRIPTION=적을 최소 {nb}명 제거하세요.
+BM04_CHALLENGE_TOOMANYENEMYTYPES_TITLE=캐릭터 유형이 너무 많음
+BM04_CHALLENGE_TOOMANYENEMYTYPES_DESCRIPTION=캐릭터 유형을 최소 {nb}개 제거하세요.
+BM04_CHALLENGE_TOOMANYENEMYMODS_TITLE=캐릭터 모드가 너무 많음
+BM04_CHALLENGE_TOOMANYENEMYMODS_DESCRIPTION=캐릭터 모드를 최소 {nb}개 제거하세요.
+BM04_CHALLENGE_TOOMANYTRAPS_TITLE=함정이 너무 많음
+BM04_CHALLENGE_TOOMANYTRAPS_DESCRIPTION=함정을 최소 {nb}개 제거하세요.
 
 BM04_CHALLENGE_INVALID_TITLE=올바른 도전이 아님
 BM04_CHALLENGE_INVALID_DESCRIPTION=해당 도전을 찾을 수 없거나 파일이 손상되었습니다. 메인 허브로 연결 중입니다.
 
 BM04_CREATE_CHARACTER=캐릭터 모드 창작하기
 BM04_CREATE_ENVIRONMENT=환경 창작하기
+BM04_CREATE_IMAGEENVIRONMENT=환경에 이미지 추가
+BM04_UPDATE_ENVIRONMENT=환경 업데이트
 BM04_CREATE_MUSIC=음악 창작하기
 BM04_CREATE_STARTNEW=새 프로젝트 시작
+BM04_ENVIRONMENTIMAGE_NAME=이름
+BM04_ENVIRONMENTIMAGE_PICTURE=이미지 파일
+BM04_ENVIRONMENTIMAGE_SUBMIT=이미지 제출
 
 BM04_CREATE_CHARACTER_HELP=플레이 가능한 캐릭터 중 하나를 기본 모델로 사용하고 파이를 교체하세요.##오트는 가장 간단하게 모드화할 수 있는 캐릭터입니다.(프레임/애니메이션의 수가 가장 적습니다.)
+BM04_UPDATE_ENVIRONMENT_HELP=현재 사용자 지정 환경을 업데이트하세요.
 BM04_CREATE_ENVIRONMENT_HELP=환경에는 배경, 충돌, 방 크기 및 잠재적으로 몇 가지 전경 요소가 있습니다.
+BM04_CREATE_IMAGEENVIRONMENT_HELP=환경의 다른 레이어에 그림을 추가하세요. 예시: 전경의 나무, 배경의 쓰레기 통
 BM04_CREATE_STARTNEW_HELP=처음부터 다시 시작하고 싶으시면.
+BM04_ENVIRONMENTIMAGE_NAME_HELP=해당 새 이미지의 이름을 정하세요. 이전과 동일하지 않도록 해주세요.
+BM04_ENVIRONMENTIMAGE_PICTURE_HELP=이미지 파일을 업로드하세요.##메인 배경과 동일한 기술적 제한이 있지만 화면 크기보다 작을 수 있습니다.
+BM04_ENVIRONMENTIMAGE_SUBMIT_HELP=환경에 배치하세요.
+
+BM04_TRAP_AUTOMATICSCALE=자동 크기 조절
+BM04_TRAP_AUTOMATICSCALE_HELP="예"를 선택하면 세로 위치에 따라 크기가 결정됩니다. "아니오"를 선택하면 고정됩니다.
+BM04_TRAP_MANUALSCALE=수동 크기 조절
+BM04_TRAP_MANUALSCALE_HELP=자동 크기 조절이 꺼져 있으면, 여기서 크기를 설정하세요.
 
 BM04_MORE_FEATURES=더 많은 기능
 BM04_DIRECTORY_CHARACTER_EXISTS=캐릭터 디렉토리가 이미 존재합니다.
@@ -683,9 +913,9 @@ BM04_DIRECTORY_CHARACTER_TITLE=파일 등록됨
 BM04_DIRECTORY_CHARACTER_POPUP=애니메이션 파일이 PNG 사진으로서 폴더로 내보내졌습니다: (클립보드에 복사됨)##<col=BOLD>{path}</col>##사진 편집기로 자유롭게 수정한 다음 이 캐릭터를 배치시켜 테스트하세요.
 
 BM04_DIRECTORY_CHARACTER2_TITLE=파일 등록됨 (next)
+# MODIFIED
 BM04_DIRECTORY_CHARACTER2_POPUP=<col=BOLD>OGG 오디오</col> 파일을 교체할 수도 있습니다.##중요: 원본과 동일한 길이를 유지하세요.
 BM04_DIRECTORY_CHARACTER2_POPUP_MODIF=<col=BOLD>고급 적용을 하기 위해</col> 차원 등을 변경하려면 게임 루트 디렉토리의 DOCMOD/ 에 제공된 문서를 확인하세요.
-
 
 BM04_CHARACTERNAME_ENTER=캐릭터 이름을 입력하세요
 BM04_CHARACTERMODEL=캐릭터를 기반으로 할 캐릭터 모델 선택하기
@@ -694,9 +924,15 @@ TUTORIAL_ITEMDROPDELETE=해당 아이템 드랍 삭제
 
 BM04_ITEM_CHARACTER_DROP=캐릭터/트랩 아이템 드롭
 BM04_ITEM_TYPE=아이템 종류
+BM04_ITEM_TYPE_HELP=드롭할 아이템 종류를 설정합니다.
 BM04_ITEM_PROBABILITY=드랍율
+BM04_ITEM_PROBABILITY_HELP=해당 유형의 아이템이 드롭될 확률을 설정합니다. <col=BOLD>(%)</col>##아이템 유형을 여럿 추가할 경우 각 확률은 100 미만이어야 합니다.
 BM04_ITEM_MIN=최소 드랍 수
 BM04_ITEM_MAX=최대 드랍 수
+BM04_ITEM_MIN_HELP=드롭할 최소 아이템 수를 설정합니다.
+BM04_ITEM_MAX_HELP=드롭할 최대 아이템 수를 설정합니다.
+BM04_ITEMDROP_REMOVE=해당 아이템 드롭 제거
+BM04_ITEMDROP_REMOVE_HELP=해당 아이템 드롭을 제거합니다.
 
 BM04_ITEM_SETDROP_CHARACTER_TITLE=해당 캐릭터가 쓰러졌을 때 이 아이템을 드랍합니까?
 BM04_ITEM_SETDROP_TRAP_TITLE=해당 함정이 파괴됐을 때 이 아이템을 드랍합니까?
@@ -748,6 +984,7 @@ CHALLENGE_BACK_BUNKERFRONTD=벙커 앞 (낮)
 CHALLENGE_BACK_BUNKERFRONTN=벙커 앞 (밤)
 CHALLENGE_BACK_SINAPARTMENT=씬의 거주지
 CHALLENGE_BACK_BROKAPARTMENT=브록의 거주지
+CHALLENGE_BACK_ARENA=아레나
 CHALLENGE_BACK_ONED=스페셜 - 1 차원
 CHALLENGE_BACK_ICETRIAL=스페셜 - 빙판에서의 도전
 CHALLENGE_BACK_PLATFORMER=스페셜 - 플랫포머
@@ -1122,190 +1359,11 @@ QUIZZ_Q68_4=다트
 QUIZZ_Q69=이 게임의 엔딩은 총 몇 개인가요?
 
 QUIZZ_Q70=몇 명의 인간 학생들이 시험을 치르나요?
-CHOICE_DONT=아무것도 하지 않기
-CHOICE_ABSOLUTELY=마지막으로 확인합니다! 정말 확실합니까?
-ACHIEVE_DLC_ADS=주점의 광고 애호가
-ITEM_DLC_ADS_MSG=수집형 광고를 전부 모으세요
-INTERFACE_GAMEOVERDLC=게임오버
-INTERFACE_VERSUS=VS
-INTERFACE_ALLENEMIES=All
-INTERFACE_DEBUG_DLC_DISPLAYSTATS=현재 난이도에서 시도/승리/패배한 도전 과제 통계 표시
-INTERFACE_DEBUG_DLC_RESETSTATS=현재 난이도에서 모든 통계를 0으로 초기화
-INTERFACE_CONGRATULATIONS=축하드립니다!
-INTERFACE_CARD_DESC=수집형 카드 <col=BOLD>{name}</col> 획득!
-INTERFACE_GRABBED=붙잡힘!
-# MODIFIED
-INTERFACE_RESET_DLC_REMOVEALL=경고 - <col=BOLD>여태 해온 Brawl Bar 진행 상황이 삭제됩니다!</col> (해금한 도전 과제, C-토큰, 수집품, 스토리 포함)
-INTERFACE_RESET_DLC_REMOVEALL_MAIN=메인 게임 진행 상황과 업적에는 영향을 주지 않습니다.
-INTERFACE_RESET_DLC_REMOVEALL_STANDALONE=업적에는 영향을 끼치지 않습니다.
-# MODIFIED
-INTERFACE_RESET_DLC_REMOVESOME=경고 - <col=BOLD>여태 해온 Brawl Bar 진행 상황의 일부가 삭제됩니다!</col> (해금한 도전 과제, 스토리)
-INTERFACE_RESET_DLC_REMOVESOME_MAIN=메인 게임 진행 상황, 업적, 해금한 추가 요소에는 영향을 끼치지 않습니다.
-INTERFACE_RESET_DLC_REMOVESOME_STANDALONE=업적과 해금한 추가 요소에는 영향을 끼치지 않습니다.
-INTERFACE_RESET_DLC_REMOVESOME_MORE=C-토큰, 음식, 쿠폰은 유지됩니다.
-CHAR_BACKCLIENT=고객
 
-INTERFACE_STRENGTH=힘
-INTERFACE_REWARD=보상
-MENU_COLLECTIBLECARDS=카드
-TUTORIAL_SPINFAST=스핀
-CHOICE_SURVIVAL_RANDOM=이번 플레이를 무작위로 진행하시겠습니까?
-# MODIFIED
-ITEM_CHALLENGE_BEATEMUPB=옥상 난전
-# MODIFIED
-ITEM_CHALLENGE_BEATEMUPB_MSG=옥상에서 적들을 다 물리치세요. 떨어지면 즉사입니다!
-ITEM_CHALLENGE_LOWGRAVITY=저중력
-ITEM_CHALLENGE_LOWGRAVITY_MSG=모든 목표물을 <col=BOLD>빠르게</col> 파괴하고 살아남으세요!
-# Extras
-ITEM_CHALLENGE_SPIKYBALLOONSTWO=가시 풍선++
-ITEM_CHALLENGE_ICETRIALTWO=북극곰++
-ITEM_CHALLENGE_SURVIVETHEPARTY=파티에서 살아남기
-ITEM_CHALLENGE_SURVIVETHEPARTY_MSG=이 파티는 뭔가 잘못된 파티입니다. <col=BOLD>조작 반전 상태에서 살아남고, 손님을 절대 공격하지 마세요<col=BOLD>!
-ITEM_CHALLENGE_RAYRISING=레이 라이징
-ITEM_CHALLENGE_RAYRISING_MSG=좀비 R.J. 아포칼립스에서 살아남으세요!
-ITEM_CHALLENGE_BOSSSHARK=보스 날카로운이빨
-ITEM_CHALLENGE_BOSSSHARK_MSG=날카로운이빨과의 보스전
-#ITEM_OTT=시나몬 롤
-#ITEM_OTT_MSG=시나몬과 설탕으로 덮인 맛있는 페이스트리를 맛보도록 하세요! <col=BOLD>섭취 시 속도가 5% 빨라집니다.</col>
-ITEM_TIMERPLUS=타이머++
-ITEM_TIMERPLUS_MSG=타이머 카운트다운을 <col=BOLD>30초</col> 추가합니다.
-ITEM_TIMERMINUS=타이머--
-ITEM_TIMERMINUS_MSG=타이머 카운트다운을 <col=BOLD>30초</col> 감소합니다.
-GAMEOVER_PC21_GROUP=마지막 전투
-INTERFACE_OPTION_CHARLABELS=캐릭터 라벨
-INTERFACE_OPTION_CHARLABELS_SIMPLIFIED=간소화 - 중요한 라벨만 표시
-INTERFACE_OPTION_CHARLABELS_ALL=All
-INTERFACE_OPTION_CHARLABELS_NONE=없음
-ITEM_INTERFACE_OPTION_CHARLABELS_MSG=전투 중 캐릭터 그룹을 표시하겠습니까?
-# MODIFIED
-HELP_DLC_STEAMCOOP_INSTRUCTIONS=Steam을 통해 온라인 친구와 함께 플레이하세요!##<col=BOLD>SHIFT + TAB</col>을 눌러 오버레이를 열고, 같이 할 친구를 마우스 오른쪽 클릭하세요. 그리고 <col=BOLD>Steam Remote Play Together</col>를 선택하세요.##게임은 한 명만 소유해도 되지만, 각 플레이어는 컨트롤러가 필요합니다. (플레이어 1은 키보드/마우스도 사용 가능합니다.)
-HELP_DLC_DLCCARDS=수집형 카드
-HELP_DLC_DLCFINISH2=보너스 잠금 해제
-HELP_DLC_DLCFINISH2_INSTRUCTIONS=버블의 휠로 모든 남은 <col=BOLD>보너스 도전과제 및 수집품</col>을 잠금 해제하세요. 더 많은 C-토큰을 얻으세요!
-HELP_DLC_DLCCARDS_INSTRUCTIONS=이제 좋아하는 캐릭터가 그려진 카드를 모을 수 있습니다!##<col=BOLD>메뉴</col>에서 찾거나, <col=BOLD>주점</col>에 있는 상자를 확인하세요. 일부 카드는 훨씬 희귀합니다!
-HELP_DLC_DLCFINISH3=일일 도전 과제
-HELP_DLC_DLCFINISH3_INSTRUCTIONS=매일 새로운 <col=BOLD>일일 도전 과제</col>가 당신을 기다리고 있습니다!
-HELP_DLC_DLCFINISH4=창작자 모드
-HELP_DLC_DLCFINISH4_INSTRUCTIONS=버블의 <col=BOLD>창작자 모드</col>를 통해 나만의 도전 과제를 만들어보세요.
-HELP_DLC_DLCFINISH4_INSTRUCTIONS_PC=본인이 만든 도전 과제를 친구에게 공유하고 커뮤니티에서 도전 과제를 <col=BOLD>다운로드</col>하세요!##물론 <col=BOLD>환경, 캐릭터 모드</col>도 만들 수 있답니다. 도움이 필요하면 Discord 서버에 들어오세요!
-HELP_DLC_DLCFINISH4_INSTRUCTIONS_OTHER=<col=BOLD>커뮤니티</col> 탭에서 PC 버전에서 제작된 최고의 도전 과제 일부를 이용할 수 있습니다.
-HELP_DLC_DLCFINISH5=팬아트 추가 요소
-HELP_DLC_DLCFINISH5_INSTRUCTIONS=<col=BOLD>그 외</col>에서 팬아트를 해금하세요.##당신의 그림을 보내주셔도 됩니다! SNS나 Discord에 게시하면 됩니다.
-HELP_DLC_DLCFINISH6=난이도
-HELP_DLC_DLCFINISH6_INSTRUCTIONS=더 힘든 도전을 원한다면 난이도를 높여보세요! <col=BOLD>게임플레이 옵션</col>에서 언제든 선택할 수 있습니다.##도전 과제는 해당 난이도 이하로 완료한 경우에만 완료 처리되며, 캐릭터별로 따로 저장됩니다.
-#-----------------------------------
-# Specific tutorials
-BM01_TITLE_TUTORIAL3_ALT=복서 브록 공격
-BM01_SUBTITLE_TUTORIAL3_ALT=<col=BOLD>↑</col> 혹은 <col=BOLD>↓</col> 를 누른 상태로 공격하면 색다른 공격을 할 수 있습니다.
-BM01_SUBTITLE_TUTORIAL3_ALT_PS=<spr=GAMEPAD_UP> 혹은 <spr=GAMEPAD_DOWN> 를 누른 상태로 공격하면 색다른 공격을 할 수 있습니다.
-TUTORIAL_ENVIMAGEOPTIONS=이미지 옵션
-TUTORIAL_DUPLICATE=중복
-TUTORIAL_ENVIRONMENTDELETE=선택한 환경 제거
-CHOICE_DELETE_ENVIRONMENT=선택한 환경을 제거하시겠습니까?
-CHOICE_DELETE_ENVIRONMENT_POPUP=화면이 전환되면 해당 환경이 제거됩니다.
-TRAP_ACID=산성
-# Modifiers
-MODIFIER_BOMB=한번에 모든 적 폭발
-MODIFIER_HIGHJUMPS=달의 중력
-MODIFIER_ZERODAMAGEUNTILHPBELOW=플레이어의 HP가 낮을 때만 데미지가 들어감
-MODIFIER_NOSCALING=스케일링 효과 없음
-MODIFIER_ONEHITKILLPLAYER=플레이어는 1 HP만 가짐
-MODIFIER_ONEHITKILLENEMIES=적들은 1 HP만 가짐
-MODIFIER_ONEHITKILL=전원 1 HP만 가짐
-MODIFIER_GLITCH=글리치
-BM04_OPTION_MODIFIERADD=수정값 추가
-BM04_OPTION_MODIFIERREMOVE=수정값 제거
-# MODIFIED
-BM04_OPTION_CHALLENGESHARETITLE_HELP=기입한 제목은 워크샵에서만 사용됩니다. <col=BOLD>영어로 기입하시는 것을 강력히 권장드립니다.</col>##기입한 내용이 도전 과제 제목이 됩니다. 이 도전의 내용과 일치하는 이름을 정의해주시길 바랍니다.
-# MODIFIED
-BM04_OPTION_CHALLENGESHAREDESCR_HELP=기입한 설명은 워크샵에 표시됩니다. <col=BOLD>영어로 기입하시는 것을 강력히 권장드립니다.</col>
-BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT_HELP=사용자 정의 환경을 포함하시겠습니까?##"예"를 선택하신 경우 공개해도 충분히 좋은 품질인지 확인해보세요!
-BM04_OPTION_CHALLENGESHAREDIFFICULTY_HELP=당신이 생각하는 이 도전 과제의 난이도를 정하세요.
-BM04_OPTION_MODIFIERADD_HELP=특별한 기능을 위해 하나 이상의 수정값을 사용하세요.
-BM04_OPTION_MODIFIERREMOVE_HELP=수정값을 제거합니다.
-BM04_CREATOR=창작자
-BM04_IDENTIFIER=동일인
-BM04_TRAP_DELETE_HELP=선택한 함정 영구적으로 삭제
-BM04_TRAP_ITEMDROP_HELP=함정이 파괴되면 아이템이 드랍됩니다.
-BM04_RETURN_LISTDROPS_HELP=돌아가기.
-BM04_CHARACTER_TYPE_HELP=캐릭터 (브록, 오트, 그래프...)
-BM04_CHARACTER_DELETE_HELP=해당 장면으로부터 선택한 캐릭터 삭제. <col=BOLD>첨부된 모든 속성값이 사라집니다.</col>
-BM04_CHARACTER_TEAM_HELP=팀을 결성함으로 서로 공격할 수 있는 캐릭터를 결정.
-# All these were modified more or less
-BM04_CHARACTER_FACTORDECISION=결정 요소
-BM04_CHARACTER_FACTORDECISION_HELP=결정 요소 <col=BOLD>(%)</col>##컴퓨터가 조종하는 캐릭터에게만 해당됩니다. 해당 값이 높을수록 캐릭터가 더 적극적으로 행동합니다.
-BM04_CHARACTER_SPEEDATTACK=공격 속도
-BM04_CHARACTER_SPEEDATTACK_HELP=공격 속도 <col=BOLD>(%)</col>##값이 높을수록 빨라지고, 낮을수록 느려집니다. 컴퓨터가 조종하는 캐릭터에게만 해당됩니다.
-BM04_CHARACTER_SPEEDMOVE=이동 속도
-BM04_CHARACTER_SPEEDMOVE_HELP=이동 속도 <col=BOLD>(%)</col>##값이 높을수록 빨라지고, 낮을수록 느려집니다.
-BM04_CHARACTER_HPMAX=최대 체력
-BM04_CHARACTER_HPMAX_HELP=캐릭터에게 할당하는 최대 체력.##기본값은 캐릭터 종류에 따라 다릅니다.
-BM04_CHARACTER_NOTPOSSIBLECOOP_TITLE=co-op 불가
-BM04_CHARACTER_NOTPOSSIBLECOOP_DESC=해당 캐릭터 유형은 플레이할 수 없습니다. "동맹 컴퓨터"로 설정하시거나 다른 캐릭터 유형을 고르세요.
-BM04_ENVIRONMENT_TITLE=환경 제목
-BM04_ENVIRONMENT_TITLE_HELP=새 환경의 이름을 정하세요.
-BM04_ENVIRONMENT_PICTURE=환경 메인 이미지
-BM04_ENVIRONMENT_PICTURE_HELP=메인 배경을 업로드하세요. (<col=BOLD>PNG</col> 또는 <col=BOLD>JPG</col>) 또한 기본 방 크기를 결정해야 합니다.##화면을 가득 채워주셔야 합니다. (최소 <col=BOLD>1920 x 1080px</col>) 최대 가로/세로 크기는 <col=BOLD>4096px</col>입니다.
-BM04_ENVIRONMENTIMAGE_DEPTH=깊이
-BM04_ENVIRONMENTIMAGE_DEPTH_HELP=세로 위치를 기준으로 그래픽(캐릭터, 이미지 등)의 레이어 순서를 정하세요.##예시: 0 = 배경(캐릭터 뒤), 1080 = 전경(캐릭터 앞)
-BM04_ENVIRONMENTIMAGE_ALPHA=알파 투명도
-BM04_ENVIRONMENTIMAGE_ALPHA_HELP=투명도를 설정하세요. <col=BOLD>(%)</col>##10 = 거의 안 보임, 100 = 완전히 잘 보임
-BM04_ENVIRONMENTIMAGE_FRAMES=프레임 수
-BM04_ENVIRONMENTIMAGE_FRAMES_HELP=해당 이미지가 애니메이션일 경우(업로드한 파일에 여러 프레임이 연속으로 있을 경우), 프레임 수를 설정하세요.
-BM04_ENVIRONMENTIMAGE_FRAMESPEED=프레임 속도
-BM04_ENVIRONMENTIMAGE_FRAMESPEED_HELP=해당 이미지가 애니메이션일 경우, 속도를 설정해주세요. <col=BOLD>(%)</col>##100 = 기본 속도, 200 = 더 빠른 속도, 50 = 더 느린 속도
-BM04_ENVIRONMENTIMAGE_DELETE=해당 이미지 삭제
-BM04_ENVIRONMENTIMAGE_DELETE_HELP=이 환경에서 해당 이미지를 삭제합니다.
-BM04_ENVIRONMENT_SUBMIT=환경 제출
-BM04_ENVIRONMENT_SUBMIT_HELP=환경을 확인하고 생성합니다.
-BM04_ERROR_ENVIRONMENTBACK=환경 이미지 중 하나를 불러올 수 없습니다: {name}
-BM04_ENVIRONMENT_CREATE=환경 할당 완료
-BM04_ENVIRONMENT_DESCR=해당 메인 배경 이미지가 환경에 할당되었습니다. 해당 환경은 도전 과제와 함께 저장됩니다.##<col=BOLD>추가 환경 이미지</col>옵션을  <col=BOLD>더 보기</col> 버튼에서 찾아 다양한 깊이의 이미지를 넣을 수 있습니다.
-BM04_ENVIRONMENT_DESCR2=제공한 그림에 맞게 방 크기가 자동으로 조정되었습니다. <col=BOLD>도전 과제 속성</col>의 <col=BOLD>방 정보</col>에서 얼마든지 변경이 가능합니다. 특히 캐릭터가 움직일 수 있는 영역의 최소/최대 세로 위치를 조정한다던가요.
-BM04_ENVIRONMENT_MISSINGTITLE_TITLE=제목 없음
-BM04_ENVIRONMENT_MISSINGTITLE_DESCRIPTION=해당 환경의 제목을 입력하세요.
-BM04_ENVIRONMENT_MISSINGPICTURE_TITLE=이미지 없음
-BM04_ENVIRONMENT_MISSINGPICTURE_DESCRIPTION=이미지를 업로드하세요.
-BM04_ENVIRONMENT_WRONGDIMENSION_TITLE=이미지 크기 오류
-BM04_ENVIRONMENT_WRONGDIMENSION_DESCRIPTION=해당 이미지의 크기가 올바르지 않습니다.
-BM04_ENVIRONMENT_MISSINGNAME_TITLE=이름 없음
-BM04_ENVIRONMENT_MISSINGNAME_DESCRIPTION=해당 이미지의 이름을 입력하세요.
-BM04_WORKSHOP_NOTHING_EXPORT=내보낼 항목 선택되지 않음
-BM04_WORKSHOP_NOTHING_EXPORT_DESCR=내보낼 항목을 선택하지 않았습니다.
-BM04_WORKSHOP_SELECT_PICTURE_WRONGFORMAT=선택한 이미지의 확장자가 잘못되었습니다. (.png 또는 .jpg여야 합니다.)
-BM04_WORKSHOP_SELECT_PICTURE_THUMB=썸네일 생성 실패
-BM04_CHALLENGE_TOOMANYENEMIES_TITLE=적이 너무 많음
-BM04_CHALLENGE_TOOMANYENEMIES_DESCRIPTION=적을 최소 {nb}명 제거하세요.
-BM04_CHALLENGE_TOOMANYENEMYTYPES_TITLE=캐릭터 유형이 너무 많음
-BM04_CHALLENGE_TOOMANYENEMYTYPES_DESCRIPTION=캐릭터 유형을 최소 {nb}개 제거하세요.
-BM04_CHALLENGE_TOOMANYENEMYMODS_TITLE=캐릭터 모드가 너무 많음
-BM04_CHALLENGE_TOOMANYENEMYMODS_DESCRIPTION=캐릭터 모드를 최소 {nb}개 제거하세요.
-BM04_CHALLENGE_TOOMANYTRAPS_TITLE=함정이 너무 많음
-BM04_CHALLENGE_TOOMANYTRAPS_DESCRIPTION=함정을 최소 {nb}개 제거하세요.
-BM04_CREATE_IMAGEENVIRONMENT=환경에 이미지 추가
-BM04_UPDATE_ENVIRONMENT=환경 업데이트
-BM04_ENVIRONMENTIMAGE_NAME=이름
-BM04_ENVIRONMENTIMAGE_PICTURE=이미지 파일
-BM04_ENVIRONMENTIMAGE_SUBMIT=이미지 제출
-BM04_UPDATE_ENVIRONMENT_HELP=현재 사용자 지정 환경을 업데이트하세요.
-BM04_CREATE_IMAGEENVIRONMENT_HELP=환경의 다른 레이어에 그림을 추가하세요. 예시: 전경의 나무, 배경의 쓰레기 통
-BM04_ENVIRONMENTIMAGE_NAME_HELP=해당 새 이미지의 이름을 정하세요. 이전과 동일하지 않도록 해주세요.
-BM04_ENVIRONMENTIMAGE_PICTURE_HELP=이미지 파일을 업로드하세요.##메인 배경과 동일한 기술적 제한이 있지만 화면 크기보다 작을 수 있습니다.
-BM04_ENVIRONMENTIMAGE_SUBMIT_HELP=환경에 배치하세요.
-BM04_TRAP_AUTOMATICSCALE=자동 크기 조절
-BM04_TRAP_AUTOMATICSCALE_HELP="예"를 선택하면 세로 위치에 따라 크기가 결정됩니다. "아니오"를 선택하면 고정됩니다.
-BM04_TRAP_MANUALSCALE=수동 크기 조절
-BM04_TRAP_MANUALSCALE_HELP=자동 크기 조절이 꺼져 있으면, 여기서 크기를 설정하세요.
-BM04_ITEM_TYPE_HELP=드롭할 아이템 종류를 설정합니다.
-BM04_ITEM_PROBABILITY_HELP=해당 유형의 아이템이 드롭될 확률을 설정합니다. <col=BOLD>(%)</col>##아이템 유형을 여럿 추가할 경우 각 확률은 100 미만이어야 합니다.
-BM04_ITEM_MIN_HELP=드롭할 최소 아이템 수를 설정합니다.
-BM04_ITEM_MAX_HELP=드롭할 최대 아이템 수를 설정합니다.
-BM04_ITEMDROP_REMOVE=해당 아이템 드롭 제거
-BM04_ITEMDROP_REMOVE_HELP=해당 아이템 드롭을 제거합니다.
-CHALLENGE_BACK_ARENA=아레나
 ITEM_NOFOOD_MSG=음식 없음
-#INTERFACE_CHARSELECTED_BASE=기본 캐릭터
+#INTERFACE_CHARSELECTED_BASE=Base character
 INTERFACE_CHARSELECTED_MOD=<col=BLUE>{name}</col> 기반 모드
+INTERFACE_CHARSELECTED_PACKAGED=<col=BLUE>{name}</col> 기반 패키지 모드
 INTERFACE_SHADOWADS_BRAWLBAR=브롤 바에서는 그림자 광고가 바에 돌아올 때마다 채워지지만 점수는 유지됩니다. 점수를 상점에서 C-토큰으로 교환하세요.
 ITEM_CTOKENS2=2 C-토큰
 ITEM_CTOKENS2_MSG=그림자 점수 1개 교환
@@ -1313,13 +1371,11 @@ ITEM_CTOKENS10=10 C-토큰
 ITEM_CTOKENS10_MSG=그림자 점수 4개 교환
 ITEM_CTOKENS100=100 C-토큰
 ITEM_CTOKENS100_MSG=그림자 점수 20개 교환
-INTERFACE_UNLOCK1CTOKEN=잠금 해제 (1 C-토큰)
-
-HELP_DLC_SWITCHCOMPLETED=지금은 "완료"된 도전 과제가 더 적나요?
-HELP_DLC_SWITCHCOMPLETED_INSTRUCTIONS=전환 후에는 <col=BOLD>해당 캐릭터로 플레이한</col> 도전 과제만 완료로 간주됩니다.##언제든지 <col=BOLD>기본 캐릭터</col>로 전환하여 완료된 모든 도전 과제를 다시 볼 수 있습니다.
 
 TUTORIAL_OPTIONS=옵션
 TUTORIAL_DELETE=삭제
+
+INTERFACE_UNLOCK1CTOKEN=잠금 해제 (1 C-토큰)
 
 SAVES_BRAWLBAR1=세이브에는 난이도와 선택한 캐릭터 같은 기본 정보만 저장됩니다.
 SAVES_BRAWLBAR1B=(그리고 본편 진행 상황도 포함됩니다)
@@ -1328,20 +1384,11 @@ SAVES_BRAWLBAR2=도전 과제 진행 상황은 모든 세이브에서 공유됩�
 BM04_CHALLENGE_SIMPLEMODE_TOOMANY=도전 과제가 너무 많습니다
 BM04_CHALLENGE_SIMPLEMODE_TOOMANY_DESCRIPTION=저장할 수 있는 도전 과제의 최대 수에 도달했습니다 ({number} 도전 과제). 저장하려면 로드 패널에서 하나를 삭제하세요.
 
-CHALLENGE_LITE_CANNOT_LOAD=도전 파일을 불러올 수 없습니다.
-
-BM04_OPTION_CHALLENGESHAREUPDATETHUMB=썸네일을 업데이트할까요?
-BM04_OPTION_CHALLENGESHAREUPDATEDESCR=설명을 업데이트할까요?
-BM04_OPTION_CHALLENGESHAREUPDATETAGS=태그를 업데이트할까요?
-
-BM04_OPTION_CHALLENGESHAREUPDATETHUMB_HELP=워크숍 페이지에서 수동으로 변경한 경우, ‘아니오’로 두세요.
-BM04_OPTION_CHALLENGESHAREUPDATEDESCR_HELP=워크숍 페이지에서 수동으로 변경한 경우, ‘아니오’로 두세요.
-BM04_OPTION_CHALLENGESHAREUPDATETAGS_HELP=워크숍 페이지에서 수동으로 변경한 경우, ‘아니오’로 두세요.
-
 BM04_OPTION_CHALLENGESHAREZIP=.zip 파일로 내보내기
 BM04_OPTION_CHALLENGESHAREZIP_HELP=창작물을 Steam 워크숍 외부로 내보냅니다.
 
-INTERFACE_DEBUG_DLC_SETFIRSTDATE=DLC 일일 도전 과제의 첫 날짜 설정
+CHALLENGE_LITE_CANNOT_LOAD=도전 파일을 불러올 수 없습니다.
+
 ATLASIAN_BACK_TITLE=Brawl Bar로 돌아가기
 ATLASIAN_CREDITS=COWCAT 각색
 ATLASIAN_CONTINUE=계속
@@ -1350,6 +1397,7 @@ ATLASIAN_SHOOT=발사
 ATLASIAN_BOMB=폭탄 / 하이퍼
 ATLASIAN_FOCUSED=집중 전환
 ATLASIAN_UNFOCUSED=비집중 전환
+
 
 
 
@@ -1383,31 +1431,15 @@ CHOICE_DELETE_MUSIC=이 음악을 삭제하시겠습니까?
 
 CHOICE_DELETE_MUSIC_POPUP=이 화면 이후 음악이 삭제됩니다.
 
-BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=음악을 내보내시겠습니까?
 BM04_OPTION_CHALLENGESHAREEXPORTMUSIC_HELP=사용자 지정 음악을 포함하시겠습니까?
 
-CHALLENGE_BACK_ARENA=아레나
-INTERFACE_CHARSELECTED_PACKAGED=<col=BLUE>{name}</col> 기반 패키지 모드
-BM04_PACKAGED=패키지됨
 INTERFACE_JUKEBOX_UNLOCKED=잠금 해제됨
+BM04_PACKAGED=패키지됨
+
 
 TUTORIAL_BM04_SCROLL=스크롤
 TUTORIAL_BM04_MENU=메뉴 옵션
 
-ITEM_CHALLENGE_THELOSTFLU=잃어버린 보물
-ITEM_CHALLENGE_THELOSTFLU_MSG=<col=BOLD>숨겨진 3개의 동전</col>을 찾아라. 주의, HP는 1뿐!
-ITEM_CHALLENGE_PASSIVEAGG=수동 공격
-ITEM_CHALLENGE_PASSIVEAGG_MSG=<col=BOLD>패리</col>만이 적에게 피해를 줄 수 있다!
-ITEM_CHALLENGE_HIDDENCOLL=숨겨진 수집가
-ITEM_CHALLENGE_HIDDENCOLL_MSG=동전을 모아라. 적이나 풍선의 <col=BOLD>투명화</col>에 방해받지 마라!
-ITEM_CHALLENGE_PIPESPARRING=파이프의 왕
-ITEM_CHALLENGE_PIPESPARRING_MSG=모든 적보다 <col=BOLD>작은 파이프 위</col>에 더 오래 서라!
-ITEM_CHALLENGE_CLASSDISMISSED=수업 종료
-ITEM_CHALLENGE_CLASSDISMISSED_MSG=모든 적을 빠르게 처치하라. 적은 <col=BOLD>HP를 회복</col>한다!
-
-MODIFIER_ENEMYINVISIBLE=적이 정기적으로 투명해진다
-MODIFIER_HPDRAIN=플레이어 HP가 점차 감소
-MODIFIER_HPGAIN=적 HP가 점차 증가
 
 HELP_DLC_SWITCHMODE=모드 전환
 HELP_DLC_SWITCHMODE_INSTRUCTIONS=바에서 모험 모드(캐릭터와 대화)와 액션 모드(점프 및 공격)를 자유롭게 전환할 수 있다.
@@ -1420,3 +1452,4 @@ ITEM_INTERFACE_OPTION_FAMILIAR_MSG=다른 BROK 타이틀 지식이 필요한 챌
 
 ITEM_CHALLENGELOCKED_CHAR=잠김 (이 캐릭터용)
 ITEM_CHALLENGELOCKED_CHAR_MSG=기본 캐릭터로는 이미 <col=BOLD>이 도전을 완료했습니다</col>만, <col=BOLD>{name}</col>으로는 아직입니다
+

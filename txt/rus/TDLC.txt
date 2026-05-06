@@ -1,18 +1,14 @@
+﻿# LANGUAGE: RUS
 #-------------------------------
 #= DLC Fight club
 #-------------------------------
-
-TITLE_BRAWLBAR=The Brawl Bar
-TITLE_BRAWLBAR_SUBTITLE=Дополнительный контент
-TITLE_GAME_AVAILABLE=Доступно!
-TITLE_GAME_INSTALLIT=Установите чтобы играть
-TITLE_GAME_PLAYNOW=Играть
 
 TITLE_SUPPORTCHALLENGERS=Какие бойцы победят?
 TITLE_SUPPORTCHALLENGERS_GROUP=Группа
 
 CHOICE_JUKEBOX=Выберите музыкальный трек
 CHOICE_CLINT=Дать С-токены?
+# MODIFIED
 CHOICE_WHEELTURN=Заплатить 10 С-токенов?
 CHOICE_DAILYCHALLENGE=Выберите ежедневное испытание
 CHOICE_CHOOSECHARACTER=Выберите персонажа
@@ -25,6 +21,8 @@ CHOICE_RETRY=Заново
 CHOICE_EXIT=Выйти
 CHOICE_REMOVEALL=Удалить весь прогресс доп. контента
 CHOICE_REMOVESOME=Оставить С-токены, еду и разблокируемые предметы
+CHOICE_DONT=Ничего не делать
+CHOICE_ABSOLUTELY=Последнее предупреждение! Вы абсолютно уверены?
 
 # Ads
 AD_PC21_DOORRIGHT=Правая дверь
@@ -55,6 +53,7 @@ ACHIEVE_DLC_STORY=Люблю поболтать
 ACHIEVE_DLC_CREATOR=Творческий зов
 ACHIEVE_DLC_THROWNOUT=Нежеланный гость
 ACHIEVE_DLC_BATHROOM=Перерыв в ванную
+ACHIEVE_DLC_ADS=Фанат флаеров (Бар)
 
 # Achievements descriptions
 ITEM_DLC_FIRSTWIN_MSG=Выйграйте ваше первое испытание
@@ -70,9 +69,9 @@ ITEM_DLC_STORY_MSG=Поговорите со всеми персонажами �
 ITEM_DLC_CREATOR_MSG=Создайте испытание и выйграйте его
 ITEM_DLC_THROWNOUT_MSG=Добейтесь того чтобы вас вышвырнули из бара
 ITEM_DLC_BATHROOM_MSG=Попадите в ванную
+ITEM_DLC_ADS_MSG=Соберите все флаеры
 
 # This one needs to stay very short (3 characters)
-INTERFACE_SAVE_DLC=DLC
 INTERFACE_CHOOSE=Выберите
 INTERFACE_DLCFOOD=VR еда
 INTERFACE_TOTALCTOKENS={value} С-токенов получено
@@ -80,12 +79,24 @@ INTERFACE_VRFOODSELECTED=Выбранная еда
 INTERFACE_CHARACTERSELECTED=Выбранный персонаж
 INTERFACE_RENAMEPLAYER=Переименовать игрока {number}
 INTERFACE_SPINIT=Крутить!
+INTERFACE_GAMEOVERDLC=Поражения
+INTERFACE_VERSUS=Сражение
+INTERFACE_ALLENEMIES=Все
+
 INTERFACE_DEBUG_DLC_WIN=Win challenge
 INTERFACE_DEBUG_DLC_LOSE=Lose challenge
 INTERFACE_DEBUG_DLC_COMPLETEALLCHALLENGES=Set all challenges completed
 INTERFACE_DEBUG_DLC_UNLOCKBONUSCHALLENGES=Unlock all bonus challenges
 INTERFACE_DEBUG_DLC_GIVECTOKENS=Give C-Tokens
+INTERFACE_DEBUG_DLC_DISPLAYSTATS=Display challenges attempted/won/lose stats (for the current difficulty)
+INTERFACE_DEBUG_DLC_RESETSTATS=Reset all stats to zero (for the current difficulty)
+INTERFACE_DEBUG_DLC_SETFIRSTDATE=Установить первую дату для ежедневных испытаний DLC
+
+
 INTERFACE_NUMBERCOMPLETED=Всего завершено
+INTERFACE_CONGRATULATIONS=Поздравляем!
+INTERFACE_CARD_DESC=Вы получили коллекционную карточку <col=BOLD>{name}</col>!
+INTERFACE_GRABBED=Схвачен!
 
 PC_NEWSARTICLES=Новостные статьи
 PC_BOXINGGLOVES=Боксёрские перчатки
@@ -101,6 +112,15 @@ PC_ARCADE=Аркадный автомат
 
 ITEM_INTERFACE_SWITCHBOXER_MSG=Переключить костюмы
 INTERFACE_RESET_DLC=Сброс DLC
+# MODIFIED
+INTERFACE_RESET_DLC_REMOVEALL=Внимание - Это <col=BOLD>удалит весь ваш прогресс в Brawl Bar</col>! (открытые испытания, C-Токены, коллекционные предметы и сюжет)
+INTERFACE_RESET_DLC_REMOVEALL_MAIN=Это не затронет прогресс и достижения основной игры.
+INTERFACE_RESET_DLC_REMOVEALL_STANDALONE=Это не затронет достижения.
+# MODIFIED
+INTERFACE_RESET_DLC_REMOVESOME=Внимание - Это <col=BOLD>частично удалит ваш прогресс в Brawl Bar</col>! (открытые испытания и сюжет)
+INTERFACE_RESET_DLC_REMOVESOME_MAIN=Это не затронет прогресс и достижения основной игры.
+INTERFACE_RESET_DLC_REMOVESOME_STANDALONE=Это не затронет достижения и открытые бонусы.
+INTERFACE_RESET_DLC_REMOVESOME_MORE=Вы сохраните ваши C-Токены, еду и купоны.
 
 #Dialogue
 PC21_HYENA_HELP=Помошь
@@ -136,11 +156,14 @@ CHAR_BACKROO=Кенгуру
 CHAR_BACKCROC=Крокодил
 CHAR_BACKBADGER=Барсук
 CHAR_BACKDART=Дарт
-CHAR_BACKRESET=Сброс
-CHAR_BACKTRAIN=Тренировка
+CHAR_BACKMOUSE=Мышь
 CHAR_BACKRHINO=Носорог
-CHAR_BACKRANDOM=Незнакомец
 CHAR_BACKGROUP=Группа
+CHAR_BACKBAT=Летучая мышь
+CHAR_BACKWOLF=Волк
+CHAR_BACKPLATYPUS=Утконос
+CHAR_BACKDAVE=Дэйв
+CHAR_BACKCLIENT=Клиент
 
 #Interactions
 PC_VRCABINS=VR кабина
@@ -148,6 +171,8 @@ PC_VRCABINS=VR кабина
 
 INTERFACE_2FASTER=2x быстрее!
 INTERFACE_WAVE=Волна {number}
+INTERFACE_STRENGTH=сила
+INTERFACE_REWARD=Награда
 
 CHALLENGE_WIN=Победа!
 CHALLENGE_WINS=Побеждает
@@ -168,12 +193,13 @@ CHALLENGE_1=1
 CHALLENGE_0=Вперёд!
 
 MENU_CHALLENGE1=Новичок
-#Shortened from "intermediate"
 MENU_CHALLENGE2=Среднее
 MENU_CHALLENGE3=Про
 MENU_CHALLENGEBONUS=Бонус
 MENU_CHALLENGECOMMUNITY=Сообщество
+MENU_COLLECTIBLECARDS=Карточки
 
+TUTORIAL_SPINFAST=Крутите быстро
 TUTORIAL_CHALLENGEPLAY=Играть
 TUTORIAL_CHALLENGEFOOD=Использовать еду
 TUTORIAL_CHALLENGESKIP=Пропустить испытание
@@ -181,6 +207,8 @@ TUTORIAL_CHALLENGESKIP=Пропустить испытание
 CHOICE_CHALLENGE_SKIP=Пропустить это испытание?
 INTERFACE_CHALLENGE_SKIP_INFO=Пропуск этого испытания стоит <col=BOLD>{amount} С-токенов</col>.
 INTERFACE_CHALLENGE_SKIPNOTENOUGH_INFO=У вас недостаточно С-токенов.
+
+CHOICE_SURVIVAL_RANDOM=Сделать этот забег рандомизированным?
 
 CHOICE_ARCADEMACHINE_PLAY=Играть?
 
@@ -279,6 +307,10 @@ ITEM_CHALLENGE_EVERYONEDIED=Все погибли
 ITEM_CHALLENGE_EVERYONEDIED_MSG=Уничтожьте <col=BOLD>всех Триботов</col> вторгающихся на место!
 ITEM_CHALLENGE_BEATEMUPA=Beatemup в канализации
 ITEM_CHALLENGE_BEATEMUPA_MSG=Классический beat'em up в канализации. Три жизни, не больше!
+# MODIFIED
+ITEM_CHALLENGE_BEATEMUPB=Beat 'em up на крышах
+# MODIFIED
+ITEM_CHALLENGE_BEATEMUPB_MSG=Классический beat'em up на крышах. Падение вниз - поражение!
 ITEM_CHALLENGE_BEATEMUPC=Босс раш
 ITEM_CHALLENGE_BEATEMUPC_MSG=Сразитесь со всеми боссами по очереди в парах!
 ITEM_CHALLENGE_FINALFIGHT=Финальная битва
@@ -325,12 +357,31 @@ ITEM_CHALLENGE_STICKONLY=Только палкой
 ITEM_CHALLENGE_STICKONLY_MSG=Противники могут быть побеждены <col=BOLD>только палкой!</col>
 ITEM_CHALLENGE_DONTBLOWUP=Не взорвись
 ITEM_CHALLENGE_DONTBLOWUP_MSG=Избегайте взрывов и заберите еду пока она не исчезла!
+ITEM_CHALLENGE_LOWGRAVITY=Низкая гравитация
+ITEM_CHALLENGE_LOWGRAVITY_MSG=Уничтожьте все цели <col=BOLD>быстро</col> и выживите!
 
+# Extras
+ITEM_CHALLENGE_SPIKYBALLOONSTWO=Колючие надувные шарики++
+ITEM_CHALLENGE_ICETRIALTWO=Полярный медведь++
+ITEM_CHALLENGE_SURVIVETHEPARTY=Переживите вечеринку
+ITEM_CHALLENGE_SURVIVETHEPARTY_MSG=Вечеринка пошла не по плану. Выживите с <col=BOLD>инвертированным управлением и <col=BOLD>не ударьте</col> гостей!</col>
+ITEM_CHALLENGE_RAYRISING=Р.Джэй Rising
+ITEM_CHALLENGE_RAYRISING_MSG=Переживите апокалипсис зомби Р.Джеев!
+ITEM_CHALLENGE_THELOSTFLU=Потерянное Сокровище
+ITEM_CHALLENGE_THELOSTFLU_MSG=Найдите <col=BOLD>три скрытые монеты</col>. Осторожно, у вас только 1 HP!
+ITEM_CHALLENGE_PASSIVEAGG=Пассивно-Агрессивный
+ITEM_CHALLENGE_PASSIVEAGG_MSG=Только <col=BOLD>парирование</col> может наносить урон врагам!
+ITEM_CHALLENGE_HIDDENCOLL=Скрытый Коллекционер
+ITEM_CHALLENGE_HIDDENCOLL_MSG=Собирайте монеты, не позволяйте невидимым врагам и шарам <col=BOLD>останавливать вас</col>!
+ITEM_CHALLENGE_PIPESPARRING=Король Трубы
+ITEM_CHALLENGE_PIPESPARRING_MSG=Стоять на <col=BOLD>маленькой трубе дольше</col>, чем все враги!
+ITEM_CHALLENGE_CLASSDISMISSED=Урок Закончен
+ITEM_CHALLENGE_CLASSDISMISSED_MSG=Победите всех врагов быстро, они <col=BOLD>восстанавливают HP</col>!
 
 ITEM_CHALLENGE_BOSSCLINT=Босс A
 ITEM_CHALLENGE_BOSSCLINT_MSG=Босс битва
-ITEM_CHALLENGE_BOSSIGUANA=Босс B
-ITEM_CHALLENGE_BOSSIGUANA_MSG=Босс битва
+ITEM_CHALLENGE_BOSSIVY=Босс Айви
+ITEM_CHALLENGE_BOSSIVY_MSG=Босс битва против Айви
 ITEM_CHALLENGE_BOSSSHARK=Босс C
 ITEM_CHALLENGE_BOSSSHARK_MSG=Босс битва
 
@@ -355,8 +406,24 @@ ITEM_CHALLENGE_QUIZZC_MSG=Покажите свои знания о БРОКе! 
 ITEM_CHALLENGE_ARMWRESTLE=Армрестлинг
 ITEM_CHALLENGE_ARMWRESTLE_MSG=Думаете вы сильнее чем сильнейшая крыса?
 
-#ITEM_OTT=Синнабон
-#ITEM_OTT_MSG=Вкусное лакомство с корицей и сахаром! <col=BOLD>Делает вас на 5% быстрее.</col>
+#ITEM_OTT=Cinnamon Roll
+#ITEM_OTT_MSG=Tasty rolled pastry flavored with cinnamon and sugar! <col=BOLD>Makes you 5% faster.</col>
+
+ITEM_TIMERPLUS=Таймер++
+ITEM_TIMERPLUS_MSG=Добавляет <col=BOLD>30 секунд</col> к таймеру.
+
+ITEM_TIMERMINUS=Таймер--
+ITEM_TIMERMINUS_MSG=Отнимает <col=BOLD>30 секунд</col> от таймера.
+
+GAMEOVER_PC21_HIT=Импульсы рептилии взяли вверх!
+GAMEOVER_PC21_GROUP=Последний бой
+
+INTERFACE_OPTION_CHARLABELS=Метки персонажей
+INTERFACE_OPTION_CHARLABELS_SIMPLIFIED=Упрощенный — отображаются только важные
+INTERFACE_OPTION_CHARLABELS_ALL=Все
+INTERFACE_OPTION_CHARLABELS_NONE=Никто
+ITEM_INTERFACE_OPTION_CHARLABELS_MSG=Должны ли отображаться группы персонажей во время боя?
+
 
 #-----------------------------------
 # Room info
@@ -388,8 +455,8 @@ BM04_ROOMINFO_WRONGCOLOR=Вы ввели некорректный цвет.
 #-----------------------------------
 # Tutorials
 #-----------------------------------
-#HELP_DLC_SWITCHBOXER=Костюм боксера/детектива
-#HELP_DLC_SWITCHBOXER_INSTRUCTIONS=Решите какой костюм будет использовать Брок во время драк.##Используйте эту кнопку в панели <col=BOLD>Игрока</col> .##Только затрагивает режим боя (Брок будет всегда использовать костюм детектива в режиме приключения)
+#HELP_DLC_SWITCHBOXER=Boxer / Adventure outfit switch
+#HELP_DLC_SWITCHBOXER_INSTRUCTIONS=Decide whether Brok should use his boxer or detective outfit during fights.##Use this button in the <col=BOLD>Player</col> panel.##Please note that this only affects action mode (Brok always keeps the detective outfit in adventure mode)
 
 HELP_DLC_BOXEROUTFIT=Костюм боксера
 HELP_DLC_BOXEROUTFIT_INSTRUCTIONS=Теперь вы можете использовать костюм боксера. Просто переключитесь в режим боя! (Брок будет всегда использовать костюм детектива в режиме приключения)##Если вы предпочитаете драться в обычном костюме, используйте иконку в панели <col=BOLD>Игрока</col>.
@@ -399,11 +466,17 @@ HELP_DLC_BOXEROUTFIT2_INSTRUCTIONS=С этим костюмом невозмож
 HELP_DLC_BOXEROUTFIT2_MOUSE=<col=BOLD>Когда делаете обычное комбо</col>, нажмите <col=BOLD>ВВЕРХ</col> <spr=CONTROL_up> для апперкота, или <col=BOLD>ВНИЗ</col> <spr=CONTROL_down> для хука!
 HELP_DLC_BOXEROUTFIT2_GAMEPAD=<col=BOLD>Когда делаете обычное комбо</col>, нажмите <col=BOLD>ВВЕРХ</col> <spr=GAMEPAD_UP> для апперкота, или <col=BOLD>ВНИЗ</col> <spr=GAMEPAD_DOWN> для хука!
 HELP_DLC_BOXEROUTFIT2_GAMEPAD_PS=<col=BOLD>Когда делаете обычное комбо</col>, нажмите <spr=GAMEPAD_UP> для апперкота, или <spr=GAMEPAD_DOWN> для хука!
-
 HELP_DLC_STEAMCOOP=Онлайн co-op
+# MODIFIED
+HELP_DLC_STEAMCOOP_INSTRUCTIONS=Сыграйте с вашими друзьями онлайн через Steam!##Нажмите <col=BOLD>SHIFT + TAB</col> чтобы открыть оверлей, откройте вкладку Друзья и нажмите на друга правой кнопой мыши. Затем выберите <col=BOLD>Steam Remote Play Together</col>.##Необходима только одна копия игры, но каждому игроку нужен контроллер (Игрок №1 может использовать клавиатуру/мышь)
 
 HELP_DLC_STEAMCOOP2=Онлайн co-op (след.)
 HELP_DLC_STEAMCOOP2_INSTRUCTIONS=Нет друга чтобы сыграть в онлайне? Нужна помощь в настройке co-op сессии?##Присоединяйтесь к нашему <col=BOLD>оффициальному Discord серверу [Примечание: только английский язык на сервере]</col>! (ссылка в настройках).
+
+
+HELP_DLC_DLCCARDS=Коллекционные карточки
+HELP_DLC_DLCCARDS_INSTRUCTIONS=Вы теперь можете собирать карточки с вашими любимыми персонажами!##Просмотрите их в <col=BOLD>меню</col> или на коробке <col=BOLD>в баре</col>. Некоторые более редки чем другие!
+
 
 HELP_DLC_ARMWRESTLING=Армрестлинг
 HELP_DLC_ARMWRESTLING_INSTRUCTIONS=Когда игра начнется, {command} в постоянном ритме чтобы набирать силу.##Но <col=BOLD>не нажимайте слишком быстро или вы начнёте терять выносливость</col>.##Никаких указателей на экране. Всё зависит от ваших чувств!
@@ -424,11 +497,36 @@ HELP_DLC_DLCFINISH_COMMAND=Также вы можете нажать <button=INP
 HELP_DLC_DLCFINISH2=Ещё больше
 HELP_DLC_DLCFINISH2_INSTRUCTIONS=Если вы ещё этого не сделали, разблокируйте все <col=BOLD>бонусные испытания</col> при помощи колеса Бабблс.
 
+HELP_DLC_DLCFINISH3=Ежедневные испытания
+HELP_DLC_DLCFINISH3_INSTRUCTIONS=Новое <col=BOLD>Ежедневное испытание</col> каждый день ко конца времён!
+
+HELP_DLC_DLCFINISH4=Режим создателя
+HELP_DLC_DLCFINISH4_INSTRUCTIONS=Используйте <col=BOLD>Режим создателя</col> Бабблс чтобы создавать свои собственные испытания.
+HELP_DLC_DLCFINISH4_INSTRUCTIONS_PC=Делитесь ими с друзьями и <col=BOLD>загружайте</col> испытания от сообщества!##Вы также можете создавать <col=BOLD>окружения</col> и <col=BOLD>модифицировать персонажей</col>. Присоединяйтесь к нашему Discord серверу (английский язык) за помощью!
+HELP_DLC_DLCFINISH4_INSTRUCTIONS_OTHER=Подборки лучших испытаний от игроков на ПК будут появляться во вкладке <col=BOLD>Сообщество</col>.
+
+HELP_DLC_DLCFINISH5=Фанарт
+HELP_DLC_DLCFINISH5_INSTRUCTIONS=Разблокируйте фанатское творчество в <col=BOLD>Бонусы</col>.##Также отправляйте свои работы! Размещайте их на социальных платформах или на нашем Discord сервере.
+
+HELP_DLC_DLCFINISH6=Сложность
+HELP_DLC_DLCFINISH6_INSTRUCTIONS=Для ещё большего испытания вы можете поднять сложность! Зайдите в настройки <col=BOLD>Игра</col> чтобы изменить сложность в любой момент.##Пройденные испытания сохраняются на каждой сложности и персонаже отдельно.
+
+HELP_DLC_SWITCHCOMPLETED=Теперь меньше «выполненных» испытаний?
+HELP_DLC_SWITCHCOMPLETED_INSTRUCTIONS=После переключения завершёнными будут считаться только те испытания, которые <col=BOLD>пройдены этим конкретным персонажем</col>.##В любой момент можно вернуться к <col=BOLD>Персонажу по умолчанию</col>, чтобы снова увидеть все выполненные испытания.
+
+
+
+
+#-----------------------------------
+# Specific tutorials
+
+BM01_TITLE_TUTORIAL3_ALT=Аттаки Брока боксёра
+BM01_SUBTITLE_TUTORIAL3_ALT=Удерживайте <col=BOLD>ВВЕРХ</col> или <col=BOLD>ВНИЗ</col> когда бьёте чтобы выполнять разные аттаки.
+BM01_SUBTITLE_TUTORIAL3_ALT_PS=Удерживайте <spr=GAMEPAD_UP> или <spr=GAMEPAD_DOWN> когда бьёте чтобы выполнять разные аттаки.
 
 #-----------------------------------
 # Gameovers
 #-----------------------------------
-GAMEOVER_PC21_HIT=Импульсы рептилии взяли вверх!
 GAMEOVER_PC21_LASTFIGHT=Вы почти закончили. Бодрее!
 
 #-----------------------------------
@@ -436,16 +534,21 @@ GAMEOVER_PC21_LASTFIGHT=Вы почти закончили. Бодрее!
 #-----------------------------------
 TUTORIAL_CHARACTEROPTIONS=Настройки персонажа
 TUTORIAL_ITEMOPTIONS=Настройки предмета
+TUTORIAL_ENVIMAGEOPTIONS=Настройки изображения
+TUTORIAL_DUPLICATE=Копировать
 TUTORIAL_TRAPOPTIONS=Настройки ловушки
 TUTORIAL_CHARACTERDELETE=Удалить этого персонажа
 TUTORIAL_CHALLENGEDELETE=Удалить это испытание
+TUTORIAL_ENVIRONMENTDELETE=Удалить это окружение
 CHOICE_DELETE_CHAR=Удалить этого персонажа?
 CHOICE_DELETE_CHALLENGE=Удалить это испытание?
+CHOICE_DELETE_ENVIRONMENT=Удалить это окружение?
 CHOICE_DELETE_ITEM_OWNED=(Это на вашем локальном устройстве и оно пропадёт навсегда!)
 CHOICE_DELETE_ITEM_WORKSHOP=(Вы можете загрузить это снова из Мастерской)
 
 CHOICE_DELETE_CHAR_POPUP=Персонаж будет удалён после этого экрана.
 CHOICE_DELETE_CHALLENGE_POPUP=Испытание будет удалёно после этого экрана.
+CHOICE_DELETE_ENVIRONMENT_POPUP=Окружение будет удалено после этого окна.
 
 # Traps
 TRAP_CRATE=Ящик
@@ -460,8 +563,10 @@ TRAP_LASERPLACED=Лазеры
 TRAP_CONVEYOR=Конвеер
 TRAP_HOLE=Дыра
 TRAP_FALLDOWN=Падающие камни
+TRAP_ACID=Кислота
 
 # Modifiers
+MODIFIER_BOMB=Взорвать всех противников разом
 MODIFIER_GRABINSTANTDEATH=Захват моментальная смерть
 MODIFIER_ONED=1D бой
 MODIFIER_NOHUD=Без HUD'а
@@ -469,7 +574,17 @@ MODIFIER_FOODWEAPON=Еда становится оружием
 MODIFIER_NOSPECIAL=Без специальной аттаки
 MODIFIER_INVERTCONTROLS=Инвертированное управление
 MODIFIER_REMOVE=Удалить все модификаторы
-
+MODIFIER_HIGHJUMPS=Лунная гравитация
+MODIFIER_ZERODAMAGEUNTILHPBELOW=Нет урона пока HP игрока не опустилось
+MODIFIER_NOSCALING=Без эффекта масштабирования
+MODIFIER_ONEHITKILLPLAYER=1 HP Игрок
+MODIFIER_ONEHITKILLENEMIES=1 HP Противники
+MODIFIER_ONEHITKILL=1 HP у всех
+MODIFIER_GLITCH=Заглюченный
+MODIFIER_ONLYPARRY=Только парирование может наносить урон врагам
+MODIFIER_ENEMYINVISIBLE=Враги регулярно становятся невидимыми
+MODIFIER_HPDRAIN=HP игрока постепенно снижается
+MODIFIER_HPGAIN=Враги постепенно получают HP
 
 BM04_MAININFO=Основная информация об испытании
 BM04_CHARACTER=Персонаж
@@ -497,7 +612,8 @@ BM04_OPTION_TIMER=Лимит по времени
 BM04_OPTION_ROOMSETTINGS=Настройки комнаты
 BM04_OPTION_OBJECTIVE=Тип цели
 BM04_OPTION_LOADCHALLENGE=Загрузить испытание
-BM04_OPTION_MODIFIER=Модификатор
+BM04_OPTION_MODIFIERADD=Добавить модификатор
+BM04_OPTION_MODIFIERREMOVE=Удалить модификатор
 
 BM04_OPTION_CHALLENGESHARETITLE=Название для Мастерской
 BM04_OPTION_CHALLENGESHAREDESCR=Описание для Мастерской
@@ -508,15 +624,23 @@ BM04_OPTION_CHALLENGESHAREDIFFICULTY=Рекомендованная сложно
 BM04_OPTION_CHALLENGESHAREEXPORTCHALLENGE=Экспортировать испытание?
 BM04_OPTION_CHALLENGESHAREEXPORTCHARMODS=Экспортировать модификации персонажа?
 BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT=Экспортировать пользовательское окружение?
-BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=Экспортировать пользовательскую музыку?
+BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=Экспортировать музыку?
+BM04_OPTION_CHALLENGESHAREUPDATETHUMB=Обновить миниатюру?
+BM04_OPTION_CHALLENGESHAREUPDATEDESCR=Обновить описание?
+BM04_OPTION_CHALLENGESHAREUPDATETAGS=Обновить теги?
 BM04_OPTION_CHALLENGESHARESUBMIT=Опубликовать
 
+# MODIFIED
+BM04_OPTION_CHALLENGESHARETITLE_HELP=Это заголовок только для Мастерской. <col=BOLD>Настоятельно рекомендуется английский</col>##Если не указано, это название испытания. Убедитесь что оно соответствует контенту в нём.
+# MODIFIED
+BM04_OPTION_CHALLENGESHAREDESCR_HELP=Описание для Мастерской. <col=BOLD>Настоятельно рекомендуется английский</col>
 BM04_OPTION_CHALLENGESHAREPICTURE_HELP=Эта картинка будет использоваться как превью в Мастерской. Она должна быть привлекательной для игроков и отображать контент который вы публикуете.##Она должна быть <col=BOLD>широкого</col> формата, например 960 x 540px. Меньше чем 1 МБ, PNG или JPG.
 BM04_OPTION_CHALLENGESHARETAGS_HELP=Введите список тэгов разделяя их запятыми.##Некоторые тэги добавляются автоматически, например сложность.
 BM04_OPTION_CHALLENGESHAREEXPORTCHALLENGE_HELP=Должно ли испытание быть включено в экспорт?##Если вы хотите (например) экспортировать персонажа отдельно, выберите "нет".
 BM04_OPTION_CHALLENGESHAREEXPORTCHARMODS_HELP=Должны ли модификации персонажа быть включены в экспорт?##Если вы выберите "да", убедитесь что они хороши для публики!
+BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT_HELP=Включать ли ваше пользовательское окружение?##Если вы выбираете "да", убедитесь что оно приемлемого содержания!
 BM04_OPTION_CHALLENGESHARESUBMIT_HELP=Это отправляет в <col=BOLD>Мастерскую Steam.</col> Делая это вновь обновляет вашу публикацию.##COWCAT не несет ответсвенность за контент который вы публикуете.
-
+BM04_OPTION_CHALLENGESHAREDIFFICULTY_HELP=Выберите наскольно сложно это испытание по вашему мнению.
 
 BM04_OPTION_EXPORTCHALLENGE_TITLE=Включить само испытание?
 BM04_OPTION_EXPORTCHARMOD_TITLE=Включить ваши модификации персонажа?
@@ -528,8 +652,12 @@ BM04_OPTION_BACKGROUND_HELP=Выберите окружение для этог�
 BM04_OPTION_ROOMSETTINGS_HELP=Настройте комнату (размер, масштаб...)
 BM04_OPTION_OBJECTIVE_HELP=Выберите тип главной цели этого испытания.##Например: победить всех, собрать предметы, выжить...
 BM04_OPTION_TIMER_HELP=Число секунд до того как таймер истечет.##Завися от испытания, это может означать победу или поражение.
-BM04_OPTION_MODIFIER_HELP=Используйте модификатор для специальных сценариев.
+BM04_OPTION_MODIFIERADD_HELP=Используйте один или несколько модификаторов как вам необходимо.
+BM04_OPTION_MODIFIERREMOVE_HELP=Удалить модификатор.
 
+BM04_OPTION_CHALLENGESHAREUPDATETHUMB_HELP=Если вы внесли изменения вручную на странице Мастерской, оставьте «нет».
+BM04_OPTION_CHALLENGESHAREUPDATEDESCR_HELP=Если вы внесли изменения вручную на странице Мастерской, оставьте «нет».
+BM04_OPTION_CHALLENGESHAREUPDATETAGS_HELP=Если вы внесли изменения вручную на странице Мастерской, оставьте «нет».
 
 BM04_OPTION_DESTRUCTIBLE=Выберите разрушаемый объект
 BM04_OPTION_DESTRUCTIBLE_HOWMANY=Сколько должно быть уничтожено?
@@ -542,11 +670,13 @@ BM04_OPTION_TIMER_HOWMANY=Введите число секунд (0 чтобы �
 
 BM04_COMMUNITY=Сообщество
 BM04_WORKSHOP=Мастерская
+BM04_CREATOR=Создатель
 BM04_CURRENTVALUE=Текущее значение
 BM04_DEFAULTVALUE=По умолчанию
 BM04_REQUIRED0=Опционально
 BM04_REQUIRED1=Рекомендовано
 BM04_REQUIRED2=Необходимо
+BM04_IDENTIFIER=Идентификатор
 
 BM04_ROOM_WIDTH=Ширина
 BM04_ROOM_WIDTH_DESC=По умолчанию/Минимум = 1920
@@ -560,8 +690,8 @@ BM04_ROOM_MINSCALE_DESC=Определяет размеры всех персо�
 BM04_ROOM_MAXSCALE=Макс. масштаб
 BM04_ROOM_MAXSCALE_DESC=Определяет размеры всех персонажей, если они расположены в самой ближайщей точке комнаты. По умолчанию = 100%
 
-#BM04_ROOM_MINDEPTH=Мин. глубина
-#BM04_ROOM_MINDEPTH_DESC=Дальняя точка глубины в этой комнате. Например: 500px от вершины картинки комнаты.
+#BM04_ROOM_MINDEPTH=Minimum depth
+#BM04_ROOM_MINDEPTH_DESC=The furthest depth position allowed in this room environment. Eg: 500px from the top of the room picture.
 
 BM04_ROOM_COLORIS=Задать глобальный цвет в комнате?
 BM04_ROOM_COLORIS_DESC=Даёт оттенок цвета всем персонажам в комнате.
@@ -571,19 +701,25 @@ BM04_ROOM_COLOR_DESC=Даёт оттенок цвета всем персона�
 
 BM04_ITEM_DELETE=Удалить предмет
 BM04_TRAP_DELETE=Удалить ловушку
+BM04_TRAP_DELETE_HELP=Удалить это ловушку навсегда.
 
 BM04_TRAP_ITEMDROP=Дроп
-BM04_TRAP_ITEMDROP_DESC=Предмет(ы) который выпадет с ловушки при её уничтожении.
+BM04_TRAP_ITEMDROP_HELP=Какие предметы выпадут с ловушки при её уничтожении.
 
 BM04_ADD_ITEMDROP=Добавить дроп
 BM04_RETURN_LISTDROPS=Вернуться к списку предметов
+BM04_RETURN_LISTDROPS_HELP=Назад.
 
 BM04_ID=Идентификатор
 BM04_CHARACTER_TYPE=Тип персонажа
-BM04_CHARACTER_TYPE_DESC=Персонаж (Брок, Отт, Грэфф...)
+BM04_CHARACTER_TYPE_HELP=Персонаж (Брок, Отт, Грэфф...)
 
 BM04_CHARACTER_DELETE=Удалить персонажа
+BM04_CHARACTER_DELETE_HELP=Удалить этого персонажа со сцены. <col=BOLD>Все связанные свойства будут утеряны.</col>
+
 BM04_CHARACTER_TEAM=Команда
+BM04_CHARACTER_TEAM_HELP=Команды решают какие персонажи могут атаковать друг друга.
+
 BM04_CHARACTER_MAINPLAYER=Главный игрок (Команда 1)
 BM04_CHARACTER_COOP=Кооп игрок (Команда 1)
 BM04_CHARACTER_ALLY=Союзник ИИ (Команда 1)
@@ -595,11 +731,24 @@ BM04_CHARACTER_OTHERPLAYER2=Противник Игрок (Команда 2)
 BM04_CHARACTER_OTHERPLAYER3=Противник Игрок (Команда 3)
 BM04_CHARACTER_OTHERPLAYER4=Противник Игрок (Команда 4)
 
+# All these were modified more or less
+BM04_CHARACTER_FACTORDECISION=Фактор решительности
+BM04_CHARACTER_FACTORDECISION_HELP=Фактор решительности <col=BOLD>(процент)</col>##Только для ИИ персонажей. Чем больше значение, тем активнее персонаж.
+
 BM04_CHARACTER_STRENGTH=Сила
 BM04_CHARACTER_STRENGTH_HELP=Сила аттаки <col=BOLD>(процент)</col>#Сила аттаки зависит от типа персонажа (Например: У Грэффа сила аттаки меньше чем у Р. Джея)
 
 BM04_CHARACTER_DEFENSE=Защита
 BM04_CHARACTER_DEFENSE_HELP=Защита <col=BOLD>(процент)</col>#Защита зависит от типа персонажа (Например: У Грэффа меньше защиты чем у Р.Джея)
+
+BM04_CHARACTER_SPEEDATTACK=Скорость атаки
+BM04_CHARACTER_SPEEDATTACK_HELP=Скорость атаки <col=BOLD>(процент)</col>##Только для ИИ персонажей. Чем больше значение, тем быстрее атаки персонажа и наоборот.
+
+BM04_CHARACTER_SPEEDMOVE=Скорость передвижения
+BM04_CHARACTER_SPEEDMOVE_HELP=Скорость передвижения <col=BOLD>(процент)</col>##Чем больше значение, тем быстрее персонаж и наоборот.
+
+BM04_CHARACTER_HPMAX=Макс HP
+BM04_CHARACTER_HPMAX_HELP=Максимальное здоровье персонажа в начале боя.##Значения по умолчанию зависят от типа персонажа.
 
 BM04_CHARACTER_HEIGHTPOS=Вертикальная точка
 BM04_CHARACTER_HEIGHTPOS_HELP=Позиция персонажа / предмета на экране (значение ниже = вниз, выше = вверх)#При значениях ниже пола, персонажи будут проваливаться.
@@ -633,12 +782,61 @@ BM04_CHARACTER_CHARACTERSKIN=Скин персонажа (По умолчани�
 
 BM04_CHARACTER_HEIGHTPOS_TITLE=Высота над землей / полом (в пикселях)
 
+BM04_CHARACTER_NOTPOSSIBLECOOP_TITLE=Невозможно для коопа
+BM04_CHARACTER_NOTPOSSIBLECOOP_DESC=Нельзя играть за этот тип персонажа. Либо поставьте его как "дружественный ИИ" или выберите другой тип персонажа.
+
+BM04_ENVIRONMENT_TITLE=Название окружения
+BM04_ENVIRONMENT_TITLE_HELP=Назовите ваше новое окружение.
+
+BM04_ENVIRONMENT_PICTURE=Главная картинка окружения
+BM04_ENVIRONMENT_PICTURE_HELP=Загрузите главный задний фон (<col=BOLD>PNG</col> или <col=BOLD>JPG</col>) Также это решает размеры комнаты по умолчанию.##Картинка должна занимать весь экран (<col=BOLD>1920 x 1080px</col> минимум) Максисальная ширина/высота <col=BOLD>4096px</col>.
+
+BM04_ENVIRONMENTIMAGE_DEPTH=Глубина
+BM04_ENVIRONMENTIMAGE_DEPTH_HELP=Отвечает за накладывание графики (персонажи, картинки...) по вертикальной позиции.##например: 0 = задний фон (позади персонажй), 1080 = передний фон (впереди).
+
+BM04_ENVIRONMENTIMAGE_ALPHA=Альфа прозрачность
+BM04_ENVIRONMENTIMAGE_ALPHA_HELP=Отвечает за прозрачность. <col=BOLD>(процент)</col>##10 = почти невидимо, 100 = полностью видимо
+
+BM04_ENVIRONMENTIMAGE_FRAMES=Количество кадров
+BM04_ENVIRONMENTIMAGE_FRAMES_HELP=Если эта картинка анимированная (несколько кадров друг за другом в загруженном файле), установите количество кадров здесь.
+
+BM04_ENVIRONMENTIMAGE_FRAMESPEED=Скорость кадров
+BM04_ENVIRONMENTIMAGE_FRAMESPEED_HELP=Если эта картинка анимированная, укажите скорость. <col=BOLD>(процент)</col>##100 = нормальная скорость, 200 = быстрее, 50 = медленнее
+
+BM04_ENVIRONMENTIMAGE_DELETE=Удалить эту картинку
+BM04_ENVIRONMENTIMAGE_DELETE_HELP=Удалить эту картинку с окружения.
+
+BM04_ENVIRONMENT_SUBMIT=Загрузить окружение
+BM04_ENVIRONMENT_SUBMIT_HELP=Проверить и сгенерировать окружение
+
 BM04_ERROR_TITLE=Ошибка
 BM04_ERROR_CHARACTER=Не удалось получить модификацию персонажа: {name}
+BM04_ERROR_ENVIRONMENTBACK=Не удалось загрузить следующую картинку окружения: {name}
+
+
+BM04_ENVIRONMENT_CREATE=Окружение назначено
+BM04_ENVIRONMENT_DESCR=Окружение было назначено с этой картинкой в качестве главного заднего фона. Окружения сохраняются вместе с испытанием.##Вы сможете найти новые опции в <col=BOLD>Добавить картинку окружения</col>, <col=BOLD>Ещё</col> для дого чтобы вставлять картинки на настраиваемой глубине.
+
+BM04_ENVIRONMENT_DESCR2=Размер комнаты был автоматически адаптирован под загруженную картинку. Вы можете изменить <col=BOLD>информацию о комнате</col> в <col=BOLD>свойствах испытания</col>. В том числе указать мин/макс вертикальные позиции передвижения персонажей.
+
+BM04_ENVIRONMENT_MISSINGTITLE_TITLE=Нет названия
+BM04_ENVIRONMENT_MISSINGTITLE_DESCRIPTION=Пожалуйста введите название окружения.
+
+BM04_ENVIRONMENT_MISSINGPICTURE_TITLE=Нет картинки
+BM04_ENVIRONMENT_MISSINGPICTURE_DESCRIPTION=Пожалуйста импортируйте картинку.
+
+BM04_ENVIRONMENT_WRONGDIMENSION_TITLE=Размер картинки
+BM04_ENVIRONMENT_WRONGDIMENSION_DESCRIPTION=Неверные размеры картинки.
+
+BM04_ENVIRONMENT_MISSINGNAME_TITLE=Нет названия
+BM04_ENVIRONMENT_MISSINGNAME_DESCRIPTION=Пожалуйста введите название для этой картинки.
 
 BM04_WORKSHOP_TITLE=Страница в Мастерской Steam
 BM04_WORKSHOP_DESCR=Войдите в Мастерскую Steam чтобы увидеть контент загруженный вами и другими людьми
 
+
+BM04_WORKSHOP_NOTHING_EXPORT=Ничего не выбрано
+BM04_WORKSHOP_NOTHING_EXPORT_DESCR=Вы не выбрали ничего для экспорта.
 
 BM04_WORKSHOP_PICTURE_EXPORT=Требуется картинка
 BM04_WORKSHOP_PICTURE_EXPORT_DESCR=Для экспорта требуется превью-картинка. Пожалуйста добавьте превью-картинку.
@@ -653,8 +851,11 @@ BM04_WORKSHOP_ITEMS_STEAM=Ваш контент экспортируется в 
 BM04_WORKSHOP_ITEMS_DRMFREE=Ваш контент был экспортирован в ZIP архив:##<col=BOLD>{path}</col>##Отправьте этот файл вашим друзьям (или загрузите его где-то онлайн) и попросите их разархиваровать его в директорию игры.
 
 BM04_WORKSHOP_SELECT_PICTURE_NOTSELECTED=Нет картинки
+# MODIFIED
 BM04_WORKSHOP_SELECT_PICTURE_WRONGSIZE=Выбранная картинка слишком большая (не более {size} MB)
 BM04_WORKSHOP_SELECT_PICTURE_COPYFAIL=Не удалось скопировать выбранную картинку
+BM04_WORKSHOP_SELECT_PICTURE_WRONGFORMAT=Выбранная картинка имеет неверный формат. (должно быть .png или .jpg)
+BM04_WORKSHOP_SELECT_PICTURE_THUMB=Не удалось создать превью
 
 BM04_WORKSHOP_SUBSCRIPTIONS=Подписки в Мастерской
 BM04_WORKSHOP_NB_SUBSCRIBED=Установленный контент из Мастерской: {number}
@@ -669,18 +870,41 @@ BM04_CHALLENGE_MISSINGOBJECTIVE_TITLE=Нет задачи
 BM04_CHALLENGE_MISSINGOBJECTIVE_DESCRIPTION=Пожалуйста введите задачу испытанеия в информации главного испытания (первая иконка).
 BM04_CHALLENGE_MISSINGPLAYERCHARACTER_TITLE=Нет персонажа игрока
 BM04_CHALLENGE_MISSINGPLAYERCHARACTER_DESCRIPTION=Пожалуйста выберите персонажа который будет игроком.
+BM04_CHALLENGE_TOOMANYENEMIES_TITLE=Слишком много противников
+BM04_CHALLENGE_TOOMANYENEMIES_DESCRIPTION=Пожалуйста удалите хотя бы {nb} противников(-а).
+BM04_CHALLENGE_TOOMANYENEMYTYPES_TITLE=Слишком много типов персонажей
+BM04_CHALLENGE_TOOMANYENEMYTYPES_DESCRIPTION=Пожалуйста удалите хотя бы {nb} типов персонажей.
+BM04_CHALLENGE_TOOMANYENEMYMODS_TITLE=Слишком много модов персонажей
+BM04_CHALLENGE_TOOMANYENEMYMODS_DESCRIPTION=Пожалуйста удалите хотя бы {nb} модов персонажей.
+BM04_CHALLENGE_TOOMANYTRAPS_TITLE=Слишком много ловушек
+BM04_CHALLENGE_TOOMANYTRAPS_DESCRIPTION=Пожалуйста удалите хотя бы {nb} ловушки(-ек).
 
 BM04_CHALLENGE_INVALID_TITLE=Неверное испытание
 BM04_CHALLENGE_INVALID_DESCRIPTION=Не удалось найти выбранное испытание или оно повреждено.
 
 BM04_CREATE_CHARACTER=Создать мод персонажа
 BM04_CREATE_ENVIRONMENT=Создать окружение
+BM04_CREATE_IMAGEENVIRONMENT=Добавить картинку в окружение
+BM04_UPDATE_ENVIRONMENT=Обновить окружение
 BM04_CREATE_MUSIC=Создать музыку
 BM04_CREATE_STARTNEW=Начать новый проект
+BM04_ENVIRONMENTIMAGE_NAME=Название
+BM04_ENVIRONMENTIMAGE_PICTURE=Файл картинки
+BM04_ENVIRONMENTIMAGE_SUBMIT=Загрузить картинку
 
 BM04_CREATE_CHARACTER_HELP=Используйте одного из игровых персонажей как основу, и затем замените файлы.##Легче всего начать с Отта (наименьшее кол-во кадров / анимаций)
+BM04_UPDATE_ENVIRONMENT_HELP=Обновить ваше текущее пользовательское окружение.
 BM04_CREATE_ENVIRONMENT_HELP=У окружения есть задний фон, коллизии, пропорции комнаты и возможно элементы переднего фона.
+BM04_CREATE_IMAGEENVIRONMENT_HELP=Добавить картинку на другой слой в окружение. Например, дерево на переднем плане, или мусорка на заднем плане.
 BM04_CREATE_STARTNEW_HELP=Если вы хотите начать с начала.
+BM04_ENVIRONMENTIMAGE_NAME_HELP=Назовите эту новую картинку. Убедитесь что название не идентично с предыдущей картинкой.
+BM04_ENVIRONMENTIMAGE_PICTURE_HELP=Загрузите файл картинки.##Такие же технические ограничения что и у главного заднего фона, но они могут меньше чем размер экрана.
+BM04_ENVIRONMENTIMAGE_SUBMIT_HELP=Вставить в окружение
+
+BM04_TRAP_AUTOMATICSCALE=Автоматический размер
+BM04_TRAP_AUTOMATICSCALE_HELP=Если да, размер будет зависеть от вертикальной позиции. В другом случае, размер будет фиксированным.
+BM04_TRAP_MANUALSCALE=Ручной размер
+BM04_TRAP_MANUALSCALE_HELP=Если автоматический размер отключен, установите размер здесь. <col=BOLD>(процент)</col>
 
 BM04_MORE_FEATURES=Больше функций
 BM04_DIRECTORY_CHARACTER_EXISTS=Директория персонажа уже существует
@@ -689,9 +913,9 @@ BM04_DIRECTORY_CHARACTER_TITLE=Файлы экспортиованы
 BM04_DIRECTORY_CHARACTER_POPUP=Файлы анимации были экспортированны в PNG изображения в: (скопировано в буфер обмена)##<col=BOLD>{path}</col>##Модифицируйте их при помощи редактора изображений, затем протестируйте персонажа добавив его в комнату.
 
 BM04_DIRECTORY_CHARACTER2_TITLE=Файлы экспортиованы (дальше)
+# MODIFIED
 BM04_DIRECTORY_CHARACTER2_POPUP=Также вы можете заменить <col=BOLD>OGG аудио</col> файлы.##Важно: сохраняйте оригинальное разрешение изображений.
 BM04_DIRECTORY_CHARACTER2_POPUP_MODIF=<col=BOLD>Для усложнённых модификаций</col>, чтобы поменять разрешения иображений и другое, смотрите в документации в DOCMOD/ в директории игры.
-
 
 BM04_CHARACTERNAME_ENTER=Введите имя вашего персонажа
 BM04_CHARACTERMODEL=Выберите персонажа-основу для вашего персонажа
@@ -700,9 +924,15 @@ TUTORIAL_ITEMDROPDELETE=Удалить этот дроп
 
 BM04_ITEM_CHARACTER_DROP=Предмет выпал (Персонаж/Ловушка)
 BM04_ITEM_TYPE=Тип предмета
+BM04_ITEM_TYPE_HELP=Тип предмета для дропа.
 BM04_ITEM_PROBABILITY=Шанс дропа
+BM04_ITEM_PROBABILITY_HELP=Для этого типа, какой его шанс быть в дропе. <col=BOLD>(процент)</col>##Если вы добавили несколько типов предметов, каждому типу нужна вероятность менее 100.
 BM04_ITEM_MIN=Минимальное количество дропа предмета
 BM04_ITEM_MAX=Максимальное количество дропа предмета
+BM04_ITEM_MIN_HELP=Укажите минимальное количество предметов в дропе.
+BM04_ITEM_MAX_HELP=Укажите максимальное количество предметов в дропе.
+BM04_ITEMDROP_REMOVE=Удалить этот дроп
+BM04_ITEMDROP_REMOVE_HELP=Удалить этот дроп.
 
 BM04_ITEM_SETDROP_CHARACTER_TITLE=При нейтрализации этого персонажа с него падает дроп?
 BM04_ITEM_SETDROP_TRAP_TITLE=При уничтожении этой ловушки с неё падает дроп?
@@ -754,6 +984,7 @@ CHALLENGE_BACK_BUNKERFRONTD=Перед Бункером (день)
 CHALLENGE_BACK_BUNKERFRONTN=Перед Бункером (ночь)
 CHALLENGE_BACK_SINAPARTMENT=Квартира Сина
 CHALLENGE_BACK_BROKAPARTMENT=Квартира Брока
+CHALLENGE_BACK_ARENA=Арена
 CHALLENGE_BACK_ONED=Особый - Одно измерение
 CHALLENGE_BACK_ICETRIAL=Особый - Ледянное испытание
 CHALLENGE_BACK_PLATFORMER=Особый - Платформер
@@ -1129,195 +1360,10 @@ QUIZZ_Q69=Сколько концовок в игре?
 
 QUIZZ_Q70=Сколько людей-студентов проходят экзамены?
 
-#-----------------
-# New added lines
-#-----------------
-CHOICE_DONT=Ничего не делать
-CHOICE_ABSOLUTELY=Последнее предупреждение! Вы абсолютно уверены?
-ACHIEVE_DLC_ADS=Фанат флаеров (Бар)
-ITEM_DLC_ADS_MSG=Соберите все флаеры
-INTERFACE_GAMEOVERDLC=Поражения
-INTERFACE_VERSUS=Сражение
-INTERFACE_ALLENEMIES=Все
-INTERFACE_DEBUG_DLC_DISPLAYSTATS=Display challenges attempted/won/lose stats (for the current difficulty)
-INTERFACE_DEBUG_DLC_RESETSTATS=Reset all stats to zero (for the current difficulty)
-INTERFACE_CONGRATULATIONS=Поздравляем!
-INTERFACE_CARD_DESC=Вы получили коллекционную карточку <col=BOLD>{name}</col>!
-# MODIFIED
-INTERFACE_RESET_DLC_REMOVEALL=Внимание - Это <col=BOLD>удалит весь ваш прогресс в Brawl Bar</col>! (открытые испытания, C-Токены, коллекционные предметы и сюжет)
-INTERFACE_RESET_DLC_REMOVEALL_MAIN=Это не затронет прогресс и достижения основной игры.
-INTERFACE_RESET_DLC_REMOVEALL_STANDALONE=Это не затронет достижения.
-# MODIFIED
-INTERFACE_RESET_DLC_REMOVESOME=Внимание - Это <col=BOLD>частично удалит ваш прогресс в Brawl Bar</col>! (открытые испытания и сюжет)
-INTERFACE_RESET_DLC_REMOVESOME_MAIN=Это не затронет прогресс и достижения основной игры.
-INTERFACE_RESET_DLC_REMOVESOME_STANDALONE=Это не затронет достижения и открытые бонусы.
-INTERFACE_RESET_DLC_REMOVESOME_MORE=Вы сохраните ваши C-Токены, еду и купоны.
-CHAR_BACKMOUSE=Мышь
-CHAR_BACKBAT=Летучая мышь
-CHAR_BACKWOLF=Волк
-CHAR_BACKPLATYPUS=Утконос
-CHAR_BACKDAVE=Дэйв
-CHAR_BACKCLIENT=Клиент
-INTERFACE_STRENGTH=сила
-INTERFACE_REWARD=Награда
-MENU_COLLECTIBLECARDS=Карточки
-TUTORIAL_SPINFAST=Крутите быстро
-# MODIFIED
-ITEM_CHALLENGE_BEATEMUPB=Beat 'em up на крышах
-# MODIFIED
-ITEM_CHALLENGE_BEATEMUPB_MSG=Классический beat'em up на крышах. Падение вниз - поражение!
-ITEM_CHALLENGE_LOWGRAVITY=Низкая гравитация
-ITEM_CHALLENGE_LOWGRAVITY_MSG=Уничтожьте все цели <col=BOLD>быстро</col> и выживите!
-# Extras
-ITEM_CHALLENGE_SPIKYBALLOONSTWO=Колючие надувные шарики++
-ITEM_CHALLENGE_ICETRIALTWO=Полярный медведь++
-ITEM_CHALLENGE_SURVIVETHEPARTY=Переживите вечеринку
-ITEM_CHALLENGE_SURVIVETHEPARTY_MSG=Вечеринка пошла не по плану. Выживите с <col=BOLD>инвертированным управлением и <col=BOLD>не ударьте</col> гостей!</col>
-ITEM_CHALLENGE_BOSSIVY=Босс Айви
-ITEM_CHALLENGE_BOSSIVY_MSG=Босс битва против Айви
-#ITEM_OTT=Синнабон
-#ITEM_OTT_MSG=Вкусное лакомство с корицей и сахаром! <col=BOLD>Делает вас на 5% быстрее.</col>
-ITEM_TIMERPLUS=Таймер++
-ITEM_TIMERPLUS_MSG=Добавляет <col=BOLD>30 секунд</col> к таймеру.
-ITEM_TIMERMINUS=Таймер--
-ITEM_TIMERMINUS_MSG=Отнимает <col=BOLD>30 секунд</col> от таймера.
-# MODIFIED
-HELP_DLC_STEAMCOOP_INSTRUCTIONS=Сыграйте с вашими друзьями онлайн через Steam!##Нажмите <col=BOLD>SHIFT + TAB</col> чтобы открыть оверлей, откройте вкладку Друзья и нажмите на друга правой кнопой мыши. Затем выберите <col=BOLD>Steam Remote Play Together</col>.##Необходима только одна копия игры, но каждому игроку нужен контроллер (Игрок №1 может использовать клавиатуру/мышь)
-HELP_DLC_DLCCARDS=Коллекционные карточки
-HELP_DLC_DLCCARDS_INSTRUCTIONS=Вы теперь можете собирать карточки с вашими любимыми персонажами!##Просмотрите их в <col=BOLD>меню</col> или на коробке <col=BOLD>в баре</col>. Некоторые более редки чем другие!
-HELP_DLC_DLCFINISH3=Ежедневные испытания
-HELP_DLC_DLCFINISH3_INSTRUCTIONS=Новое <col=BOLD>Ежедневное испытание</col> каждый день ко конца времён!
-HELP_DLC_DLCFINISH4=Режим создателя
-HELP_DLC_DLCFINISH4_INSTRUCTIONS=Используйте <col=BOLD>Режим создателя</col> Бабблс чтобы создавать свои собственные испытания.
-HELP_DLC_DLCFINISH4_INSTRUCTIONS_PC=Делитесь ими с друзьями и <col=BOLD>загружайте</col> испытания от сообщества!##Вы также можете создавать <col=BOLD>окружения</col> и <col=BOLD>модифицировать персонажей</col>. Присоединяйтесь к нашему Discord серверу (английский язык) за помощью!
-HELP_DLC_DLCFINISH4_INSTRUCTIONS_OTHER=Подборки лучших испытаний от игроков на ПК будут появляться во вкладке <col=BOLD>Сообщество</col>.
-HELP_DLC_DLCFINISH5=Фанарт
-HELP_DLC_DLCFINISH5_INSTRUCTIONS=Разблокируйте фанатское творчество в <col=BOLD>Бонусы</col>.##Также отправляйте свои работы! Размещайте их на социальных платформах или на нашем Discord сервере.
-HELP_DLC_DLCFINISH6=Сложность
-HELP_DLC_DLCFINISH6_INSTRUCTIONS=Для ещё большего испытания вы можете поднять сложность! Зайдите в настройки <col=BOLD>Игра</col> чтобы изменить сложность в любой момент.##Пройденные испытания сохраняются на каждой сложности и персонаже отдельно.
-TUTORIAL_ENVIMAGEOPTIONS=Настройки изображения
-TUTORIAL_DUPLICATE=Копировать
-TUTORIAL_ENVIRONMENTDELETE=Удалить это окружение
-CHOICE_DELETE_ENVIRONMENT=Удалить это окружение?
-CHOICE_DELETE_ENVIRONMENT_POPUP=Окружение будет удалено после этого окна.
-TRAP_ACID=Кислота
-# Modifiers
-MODIFIER_BOMB=Взорвать всех противников разом
-MODIFIER_HIGHJUMPS=Лунная гравитация
-MODIFIER_ZERODAMAGEUNTILHPBELOW=Нет урона пока HP игрока не опустилось
-MODIFIER_NOSCALING=Без эффекта масштабирования
-MODIFIER_ONEHITKILLPLAYER=1 HP Игрок
-MODIFIER_ONEHITKILLENEMIES=1 HP Противники
-MODIFIER_ONEHITKILL=1 HP у всех
-MODIFIER_GLITCH=Заглюченный
-BM04_OPTION_MODIFIERADD=Добавить модификатор
-BM04_OPTION_MODIFIERREMOVE=Удалить модификатор
-# MODIFIED
-BM04_OPTION_CHALLENGESHARETITLE_HELP=Это заголовок только для Мастерской. <col=BOLD>Настоятельно рекомендуется английский</col>##Если не указано, это название испытания. Убедитесь что оно соответствует контенту в нём.
-# MODIFIED
-BM04_OPTION_CHALLENGESHAREDESCR_HELP=Описание для Мастерской. <col=BOLD>Настоятельно рекомендуется английский</col>
-BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT_HELP=Включать ли ваше пользовательское окружение?##Если вы выбираете "да", убедитесь что оно приемлемого содержания!
-BM04_OPTION_CHALLENGESHAREDIFFICULTY_HELP=Выберите наскольно сложно это испытание по вашему мнению.
-BM04_OPTION_MODIFIERADD_HELP=Используйте один или несколько модификаторов как вам необходимо.
-BM04_OPTION_MODIFIERREMOVE_HELP=Удалить модификатор.
-BM04_CREATOR=Создатель
-BM04_IDENTIFIER=Идентификатор
-BM04_TRAP_DELETE_HELP=Удалить это ловушку навсегда.
-BM04_TRAP_ITEMDROP_HELP=Какие предметы выпадут с ловушки при её уничтожении.
-BM04_RETURN_LISTDROPS_HELP=Назад.
-BM04_CHARACTER_TYPE_HELP=Персонаж (Брок, Отт, Грэфф...)
-BM04_CHARACTER_DELETE_HELP=Удалить этого персонажа со сцены. <col=BOLD>Все связанные свойства будут утеряны.</col>
-BM04_CHARACTER_TEAM_HELP=Команды решают какие персонажи могут атаковать друг друга.
-# All these were modified more or less
-BM04_CHARACTER_FACTORDECISION=Фактор решительности
-BM04_CHARACTER_FACTORDECISION_HELP=Фактор решительности <col=BOLD>(процент)</col>##Только для ИИ персонажей. Чем больше значение, тем активнее персонаж.
-BM04_CHARACTER_SPEEDATTACK=Скорость атаки
-BM04_CHARACTER_SPEEDATTACK_HELP=Скорость атаки <col=BOLD>(процент)</col>##Только для ИИ персонажей. Чем больше значение, тем быстрее атаки персонажа и наоборот.
-BM04_CHARACTER_SPEEDMOVE=Скорость передвижения
-BM04_CHARACTER_SPEEDMOVE_HELP=Скорость передвижения <col=BOLD>(процент)</col>##Чем больше значение, тем быстрее персонаж и наоборот.
-BM04_CHARACTER_HPMAX=Макс HP
-BM04_CHARACTER_HPMAX_HELP=Максимальное здоровье персонажа в начале боя.##Значения по умолчанию зависят от типа персонажа.
-BM04_CHARACTER_NOTPOSSIBLECOOP_TITLE=Невозможно для коопа
-BM04_CHARACTER_NOTPOSSIBLECOOP_DESC=Нельзя играть за этот тип персонажа. Либо поставьте его как "дружественный ИИ" или выберите другой тип персонажа.
-BM04_ENVIRONMENT_TITLE=Название окружения
-BM04_ENVIRONMENT_TITLE_HELP=Назовите ваше новое окружение.
-BM04_ENVIRONMENT_PICTURE=Главная картинка окружения
-BM04_ENVIRONMENT_PICTURE_HELP=Загрузите главный задний фон (<col=BOLD>PNG</col> или <col=BOLD>JPG</col>) Также это решает размеры комнаты по умолчанию.##Картинка должна занимать весь экран (<col=BOLD>1920 x 1080px</col> минимум) Максисальная ширина/высота <col=BOLD>4096px</col>.
-BM04_ENVIRONMENTIMAGE_DEPTH=Глубина
-BM04_ENVIRONMENTIMAGE_DEPTH_HELP=Отвечает за накладывание графики (персонажи, картинки...) по вертикальной позиции.##например: 0 = задний фон (позади персонажй), 1080 = передний фон (впереди).
-BM04_ENVIRONMENTIMAGE_ALPHA=Альфа прозрачность
-BM04_ENVIRONMENTIMAGE_ALPHA_HELP=Отвечает за прозрачность. <col=BOLD>(процент)</col>##10 = почти невидимо, 100 = полностью видимо
-BM04_ENVIRONMENTIMAGE_FRAMES=Количество кадров
-BM04_ENVIRONMENTIMAGE_FRAMES_HELP=Если эта картинка анимированная (несколько кадров друг за другом в загруженном файле), установите количество кадров здесь.
-BM04_ENVIRONMENTIMAGE_FRAMESPEED=Скорость кадров
-BM04_ENVIRONMENTIMAGE_FRAMESPEED_HELP=Если эта картинка анимированная, укажите скорость. <col=BOLD>(процент)</col>##100 = нормальная скорость, 200 = быстрее, 50 = медленнее
-BM04_ENVIRONMENTIMAGE_DELETE=Удалить эту картинку
-BM04_ENVIRONMENTIMAGE_DELETE_HELP=Удалить эту картинку с окружения.
-BM04_ENVIRONMENT_SUBMIT=Загрузить окружение
-BM04_ENVIRONMENT_SUBMIT_HELP=Проверить и сгенерировать окружение
-BM04_ERROR_ENVIRONMENTBACK=Не удалось загрузить следующую картинку окружения: {name}
-BM04_ENVIRONMENT_CREATE=Окружение назначено
-BM04_ENVIRONMENT_DESCR=Окружение было назначено с этой картинкой в качестве главного заднего фона. Окружения сохраняются вместе с испытанием.##Вы сможете найти новые опции в <col=BOLD>Добавить картинку окружения</col>, <col=BOLD>Ещё</col> для дого чтобы вставлять картинки на настраиваемой глубине.
-BM04_ENVIRONMENT_DESCR2=Размер комнаты был автоматически адаптирован под загруженную картинку. Вы можете изменить <col=BOLD>информацию о комнате</col> в <col=BOLD>свойствах испытания</col>. В том числе указать мин/макс вертикальные позиции передвижения персонажей.
-BM04_ENVIRONMENT_MISSINGTITLE_TITLE=Нет названия
-BM04_ENVIRONMENT_MISSINGTITLE_DESCRIPTION=Пожалуйста введите название окружения.
-BM04_ENVIRONMENT_MISSINGPICTURE_TITLE=Нет картинки
-BM04_ENVIRONMENT_MISSINGPICTURE_DESCRIPTION=Пожалуйста импортируйте картинку.
-BM04_ENVIRONMENT_WRONGDIMENSION_TITLE=Размер картинки
-BM04_ENVIRONMENT_WRONGDIMENSION_DESCRIPTION=Неверные размеры картинки.
-BM04_ENVIRONMENT_MISSINGNAME_TITLE=Нет названия
-BM04_ENVIRONMENT_MISSINGNAME_DESCRIPTION=Пожалуйста введите название для этой картинки.
-BM04_WORKSHOP_NOTHING_EXPORT=Ничего не выбрано
-BM04_WORKSHOP_NOTHING_EXPORT_DESCR=Вы не выбрали ничего для экспорта.
-BM04_WORKSHOP_SELECT_PICTURE_WRONGFORMAT=Выбранная картинка имеет неверный формат. (должно быть .png или .jpg)
-BM04_WORKSHOP_SELECT_PICTURE_THUMB=Не удалось создать превью
-BM04_CREATE_IMAGEENVIRONMENT=Добавить картинку в окружение
-BM04_UPDATE_ENVIRONMENT=Обновить окружение
-BM04_ENVIRONMENTIMAGE_NAME=Название
-BM04_ENVIRONMENTIMAGE_PICTURE=Файл картинки
-BM04_ENVIRONMENTIMAGE_SUBMIT=Загрузить картинку
-BM04_UPDATE_ENVIRONMENT_HELP=Обновить ваше текущее пользовательское окружение.
-BM04_CREATE_IMAGEENVIRONMENT_HELP=Добавить картинку на другой слой в окружение. Например, дерево на переднем плане, или мусорка на заднем плане.
-BM04_ENVIRONMENTIMAGE_NAME_HELP=Назовите эту новую картинку. Убедитесь что название не идентично с предыдущей картинкой.
-BM04_ENVIRONMENTIMAGE_PICTURE_HELP=Загрузите файл картинки.##Такие же технические ограничения что и у главного заднего фона, но они могут меньше чем размер экрана.
-BM04_ENVIRONMENTIMAGE_SUBMIT_HELP=Вставить в окружение
-BM04_TRAP_AUTOMATICSCALE=Автоматический размер
-BM04_TRAP_AUTOMATICSCALE_HELP=Если да, размер будет зависеть от вертикальной позиции. В другом случае, размер будет фиксированным.
-BM04_TRAP_MANUALSCALE=Ручной размер
-BM04_TRAP_MANUALSCALE_HELP=Если автоматический размер отключен, установите размер здесь. <col=BOLD>(процент)</col>
-BM04_ITEM_TYPE_HELP=Тип предмета для дропа.
-BM04_ITEM_PROBABILITY_HELP=Для этого типа, какой его шанс быть в дропе. <col=BOLD>(процент)</col>##Если вы добавили несколько типов предметов, каждому типу нужна вероятность менее 100.
-BM04_ITEM_MIN_HELP=Укажите минимальное количество предметов в дропе.
-BM04_ITEM_MAX_HELP=Укажите максимальное количество предметов в дропе.
-BM04_ITEMDROP_REMOVE=Удалить этот дроп
-BM04_ITEMDROP_REMOVE_HELP=Удалить этот дроп.
-
-INTERFACE_GRABBED=Схвачен!
-CHOICE_SURVIVAL_RANDOM=Сделать этот забег рандомизированным?
-ITEM_CHALLENGE_RAYRISING=Р.Джэй Rising
-ITEM_CHALLENGE_RAYRISING_MSG=Переживите апокалипсис зомби Р.Джеев!
-GAMEOVER_PC21_GROUP=Последний бой
-INTERFACE_OPTION_CHARLABELS=Метки персонажей
-INTERFACE_OPTION_CHARLABELS_SIMPLIFIED=Упрощенный — отображаются только важные
-INTERFACE_OPTION_CHARLABELS_ALL=Все
-INTERFACE_OPTION_CHARLABELS_NONE=Никто
-ITEM_INTERFACE_OPTION_CHARLABELS_MSG=Должны ли отображаться группы персонажей во время боя?
-#-----------------------------------
-# Specific tutorials
-BM01_TITLE_TUTORIAL3_ALT=Аттаки Брока боксёра
-BM01_SUBTITLE_TUTORIAL3_ALT=Удерживайте <col=BOLD>ВВЕРХ</col> или <col=BOLD>ВНИЗ</col> когда бьёте чтобы выполнять разные аттаки.
-BM01_SUBTITLE_TUTORIAL3_ALT_PS=Удерживайте <spr=GAMEPAD_UP> или <spr=GAMEPAD_DOWN> когда бьёте чтобы выполнять разные аттаки.
-BM04_CHALLENGE_TOOMANYENEMIES_TITLE=Слишком много противников
-BM04_CHALLENGE_TOOMANYENEMIES_DESCRIPTION=Пожалуйста удалите хотя бы {nb} противников(-а).
-BM04_CHALLENGE_TOOMANYENEMYTYPES_TITLE=Слишком много типов персонажей
-BM04_CHALLENGE_TOOMANYENEMYTYPES_DESCRIPTION=Пожалуйста удалите хотя бы {nb} типов персонажей.
-BM04_CHALLENGE_TOOMANYENEMYMODS_TITLE=Слишком много модов персонажей
-BM04_CHALLENGE_TOOMANYENEMYMODS_DESCRIPTION=Пожалуйста удалите хотя бы {nb} модов персонажей.
-BM04_CHALLENGE_TOOMANYTRAPS_TITLE=Слишком много ловушек
-BM04_CHALLENGE_TOOMANYTRAPS_DESCRIPTION=Пожалуйста удалите хотя бы {nb} ловушки(-ек).
 ITEM_NOFOOD_MSG=Без еды
-#INTERFACE_CHARSELECTED_BASE=Персонаж-база
+#INTERFACE_CHARSELECTED_BASE=Base character
 INTERFACE_CHARSELECTED_MOD=Мод персонажа сделанный на базе <col=BLUE>{name}</col>
+INTERFACE_CHARSELECTED_PACKAGED=Пакетный мод на основе <col=BLUE>{name}</col>
 INTERFACE_SHADOWADS_BRAWLBAR=В Баре, теневые флаеры обновляются каждый раз когда вы возвращаетесь в Бар, но ваши очки остаются. Обменивайте их на С-Токены в вашем магазине.
 ITEM_CTOKENS2=2 С-Токена
 ITEM_CTOKENS2_MSG=Обменять одно теневое очко
@@ -1325,15 +1371,11 @@ ITEM_CTOKENS10=10 С-Токенов
 ITEM_CTOKENS10_MSG=Обменять четыре теневых очка
 ITEM_CTOKENS100=100 С-Токенов
 ITEM_CTOKENS100_MSG=Обменять 20 теневых очков
-INTERFACE_UNLOCK1CTOKEN=Разблокировать (1 С-Токена)
-
-CHALLENGE_BACK_ARENA=Арена
-
-HELP_DLC_SWITCHCOMPLETED=Теперь меньше «выполненных» испытаний?
-HELP_DLC_SWITCHCOMPLETED_INSTRUCTIONS=После переключения завершёнными будут считаться только те испытания, которые <col=BOLD>пройдены этим конкретным персонажем</col>.##В любой момент можно вернуться к <col=BOLD>Персонажу по умолчанию</col>, чтобы снова увидеть все выполненные испытания.
 
 TUTORIAL_OPTIONS=Настройки
 TUTORIAL_DELETE=Удалить
+
+INTERFACE_UNLOCK1CTOKEN=Разблокировать (1 С-Токена)
 
 SAVES_BRAWLBAR1=Сохранения хранят только основную информацию, такую как сложность и выбранный персонаж.
 SAVES_BRAWLBAR1B=(А также прогресс в основной игре)
@@ -1342,19 +1384,11 @@ SAVES_BRAWLBAR2=Прогресс испытаний общий для всех �
 BM04_CHALLENGE_SIMPLEMODE_TOOMANY=Слишком много испытаний
 BM04_CHALLENGE_SIMPLEMODE_TOOMANY_DESCRIPTION=Достигнуто максимальное количество сохраняемых испытаний ({number} испытаний). Пожалуйста, удалите одно в панели загрузки, чтобы сохранить это.
 
-
-BM04_OPTION_CHALLENGESHAREUPDATETHUMB=Обновить миниатюру?
-BM04_OPTION_CHALLENGESHAREUPDATEDESCR=Обновить описание?
-BM04_OPTION_CHALLENGESHAREUPDATETAGS=Обновить теги?
-
-BM04_OPTION_CHALLENGESHAREUPDATETHUMB_HELP=Если вы внесли изменения вручную на странице Мастерской, оставьте «нет».
-BM04_OPTION_CHALLENGESHAREUPDATEDESCR_HELP=Если вы внесли изменения вручную на странице Мастерской, оставьте «нет».
-BM04_OPTION_CHALLENGESHAREUPDATETAGS_HELP=Если вы внесли изменения вручную на странице Мастерской, оставьте «нет».
-
 BM04_OPTION_CHALLENGESHAREZIP=Экспортировать как файл .zip
 BM04_OPTION_CHALLENGESHAREZIP_HELP=Экспортируйте свою работу за пределы Мастерской Steam.
 
-INTERFACE_DEBUG_DLC_SETFIRSTDATE=Установить первую дату для ежедневных испытаний DLC
+CHALLENGE_LITE_CANNOT_LOAD=Не удалось загрузить файл испытания.
+
 ATLASIAN_BACK_TITLE=Назад в The Brawl Bar
 ATLASIAN_CREDITS=Адаптировано COWCAT
 ATLASIAN_CONTINUE=Продолжить
@@ -1363,6 +1397,8 @@ ATLASIAN_SHOOT=Стрелять
 ATLASIAN_BOMB=Бомба / Гипер
 ATLASIAN_FOCUSED=Переключить фокус
 ATLASIAN_UNFOCUSED=Переключить расфокус
+
+
 
 
 ITEM_DYNAMITE=Динамит
@@ -1395,31 +1431,15 @@ CHOICE_DELETE_MUSIC=Удалить эту музыку?
 
 CHOICE_DELETE_MUSIC_POPUP=Музыка будет удалена после этого экрана.
 
-BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=Экспортировать музыку?
 BM04_OPTION_CHALLENGESHAREEXPORTMUSIC_HELP=Включить вашу собственную музыку?
 
-INTERFACE_CHARSELECTED_PACKAGED=Пакетный мод на основе <col=BLUE>{name}</col>
-CHALLENGE_LITE_CANNOT_LOAD=Не удалось загрузить файл испытания.
-BM04_PACKAGED=Пакетный
 INTERFACE_JUKEBOX_UNLOCKED=Разблокировано
+BM04_PACKAGED=Пакетный
+
 
 TUTORIAL_BM04_SCROLL=Прокрутка
 TUTORIAL_BM04_MENU=Пункты меню
 
-ITEM_CHALLENGE_THELOSTFLU=Потерянное Сокровище
-ITEM_CHALLENGE_THELOSTFLU_MSG=Найдите <col=BOLD>три скрытые монеты</col>. Осторожно, у вас только 1 HP!
-ITEM_CHALLENGE_PASSIVEAGG=Пассивно-Агрессивный
-ITEM_CHALLENGE_PASSIVEAGG_MSG=Только <col=BOLD>парирование</col> может наносить урон врагам!
-ITEM_CHALLENGE_HIDDENCOLL=Скрытый Коллекционер
-ITEM_CHALLENGE_HIDDENCOLL_MSG=Собирайте монеты, не позволяйте невидимым врагам и шарам <col=BOLD>останавливать вас</col>!
-ITEM_CHALLENGE_PIPESPARRING=Король Трубы
-ITEM_CHALLENGE_PIPESPARRING_MSG=Стоять на <col=BOLD>маленькой трубе дольше</col>, чем все враги!
-ITEM_CHALLENGE_CLASSDISMISSED=Урок Закончен
-ITEM_CHALLENGE_CLASSDISMISSED_MSG=Победите всех врагов быстро, они <col=BOLD>восстанавливают HP</col>!
-
-MODIFIER_ENEMYINVISIBLE=Враги регулярно становятся невидимыми
-MODIFIER_HPDRAIN=HP игрока постепенно снижается
-MODIFIER_HPGAIN=Враги постепенно получают HP
 
 HELP_DLC_SWITCHMODE=Сменить режим
 HELP_DLC_SWITCHMODE_INSTRUCTIONS=В баре вы можете переключаться между режимом приключения (разговаривать с персонажами) и режимом действия (прыжки и атаки).
@@ -1432,3 +1452,4 @@ ITEM_INTERFACE_OPTION_FAMILIAR_MSG=Заменяет испытания, треб
 
 ITEM_CHALLENGELOCKED_CHAR=Заблокировано (для этого персонажа)
 ITEM_CHALLENGELOCKED_CHAR_MSG=Вы <col=BOLD>уже выполнили это испытание</col> стандартным персонажем, но не <col=BOLD>{name}</col>
+

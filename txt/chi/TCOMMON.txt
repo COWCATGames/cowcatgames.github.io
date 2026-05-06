@@ -1,3 +1,4 @@
+﻿# LANGUAGE: CHI
 #-------------------------------
 #=TEXT FOR ALL THE ROOMS
 #-------------------------------
@@ -15,6 +16,7 @@ CHAR_PIPEMAIL=邮件运管
 CHAR_BOLT=博特
 CHAR_CHIEFRAT=鼠人领袖
 CHAR_RAT=鼠人
+CHAR_RATS=鼠人
 CHAR_RAT_KINS=阿金
 CHAR_RAT_DART=阿达
 CHAR_TRAMP=流浪汉
@@ -36,7 +38,7 @@ CHAR_DEE=阿迪
 CHAR_FLOWER=商人
 CHAR_GOVERNMENT=政府
 #Final boss
-CHAR_HUGEBOT=“巨人”
+CHAR_HUGEBOT=“巨甲”
 CHAR_UNKNOWN=？？？
 CHAR_MAN=男人
 CHAR_WOMAN=女人
@@ -45,6 +47,20 @@ CHAR_MEETYME=视我
 #These are pseudonyms Graff and "another person named NMER" use to talk with him in a chat
 CHAR_NMERCHAT=NMER_3
 CHAR_GRAFFCHAT=GrfGrin
+CHAR_AI=AI
+CHAR_DART=阿达
+CHAR_GROUP=多人
+CHAR_BROKGRAFF=布罗格与格拉夫
+CHAR_COMPUTER=电脑
+CHAR_TRIBOTMILITARY=军队机器人
+CHAR_TRIBOTPOUND=空击机器人
+CHAR_BLINDBOT=目盲机器人
+CHAR_RAT_GENERIC=鼠啸帮成员
+CHAR_RAT_GENERIC|BAT=鼠啸帮成员（棍）
+CHAR_RAT_GENERIC|KNIFE=鼠啸帮成员（刀）
+CHAR_BROK|BOXER=布罗格（拳击手）
+CHAR_NELA=内菈
+CHAR_DRONE=无人机
 
 #----- Non-important names (for fights) No need to translate the rats names --------
 NAME_RAT1=瓦克斯
@@ -59,11 +75,20 @@ NAME_RAT9=弗拉德
 
 NAME_TRIBOT=型号
 NAME_BLINDBOT=目盲机器人
+# For final boss
+NAME_LEFT_LEG=左腿
+NAME_RIGHT_LEG=右腿
+NAME_LEFT_ARM=左臂
+NAME_RIGHT_ARM=右臂
 
-# Literally a mine， the thing that explodes
+# Literally a mine, the thing that explodes
 NAME_MINE=地雷
 NAME_BED=床
 NAME_BARRIER=屏障
+NAME_CRATE=箱子
+NAME_DRONE=无人机
+NAME_TARGET=目标
+NAME_SHIELD=护盾
 
 #----- Interface --------
 
@@ -71,28 +96,35 @@ DATE_TODAY=今天
 DATE_YSTDAY=昨天
 DATE_2AGO=两天前
 
-# This one is used during fights， when a hit doesn't work
+# This one is used during fights, when a hit doesn't work
 INTERFACE_MISSED=未命中！
+INTERFACE_PARRY=招架!
 INTERFACE_NEW_GAME=新游戏
 INTERFACE_CONTINUE=继续游戏
 INTERFACE_NEWGAME_CONFIRM_MSG=这样会覆盖原有的自动存档。确定吗？
 INTERFACE_NEW_OR_RESTART_MSG=从哪里重新开始？
 INTERFACE_START_MOUSE_GAMEPAD=鼠标左键或按下任何按键
 INTERFACE_START_GAMEPAD=按下任何按键
+# This one is specific to PlayStation. By default, put the same thing
 INTERFACE_START_GAMEPAD_PS=按下任何按键
 INTERFACE_START_LABEL=开始游戏
 INTERFACE_BEGINNING=从头开始
 INTERFACE_CHAPTER=章节
-INTERFACE_SKIPACTION=跳过动作或拼图场景
-INPUT_ACTION_SKIP_ACTION=跳过动作或拼图场景
+INTERFACE_SKIPACTION=跳过动作或解谜场景
+#For gameovers, the group for all deaths not specific to one chapter
+INTERFACE_GENERIC=通用
+INTERFACE_GAMEOVERS_DESCRIPTION=你的所有周目中的所有失败状态。达成全部失败并不会解锁任何奖励！
+INTERFACE_GAMEOVERS_RIP=安息
 
-#Menu left tabs : space is limited. If they appear too stretched， cut the word and add "."
+#Menu left tabs : space is limited. If they appear too stretched, cut the word and add "."
 INTERFACE_INVENTORY=背包
 INTERFACE_STATS=属性
 INTERFACE_PROGRESS=进度
 INTERFACE_EXTRAS=其他
 INTERFACE_SAVELOAD=存档
 INTERFACE_OPTIONS=选项
+INTERFACE_CREDITS=制作人员名单
+INTERFACE_QUICKFIGHT=快速战斗
 
 #Other menu info : these are not really limited.
 INTERFACE_MENU=菜单
@@ -104,6 +136,7 @@ INTERFACE_SWITCH_GRAFF=切换到格拉夫
 INTERFACE_SWITCH_BROK=切换到布罗格
 INTERFACE_SWITCH_CANNOT=现在无法切换！
 INTERFACE_LEVEL={level}级
+INTERFACE_MAXLEVEL=最高等级！
 INTERFACE_EXP=经验 {exp} 点
 INTERFACE_NEXT=升级所需经验 {exp} 点
 INTERFACE_CURRENTXP=当前经验 {exp} 点
@@ -116,11 +149,25 @@ INTERFACE_CONTACTS=所有联系人
 INTERFACE_PASTCONVERSATIONS=对话记录
 INTERFACE_MESSAGES=留言
 INTERFACE_HINTS=卡关了吗？看看提示吧！
+INTERFACE_HINTSDISABLED=(已在选项中禁用了提示)
+INTERFACE_ENTERDESCRIPTION=输入细节
+# Used for separating possible button combinations. Eg : "Press X or CTRL"
+INTERFACE_OR=或者
+INTERFACE_USE_CONTROLS=随便选择任何操作方式！
+INTERFACE_CHOOSE_DIFFICULTY=对战难度
+INTERFACE_CHOOSE_DIFFICULTY1=轻松
+INTERFACE_CHOOSE_DIFFICULTY1_TXT=我只在乎解谜和剧情
+INTERFACE_CHOOSE_DIFFICULTY2=标准
+INTERFACE_CHOOSE_DIFFICULTY2_TXT=我喜欢来点动作
+INTERFACE_CHOOSE_DIFFICULTY3=硬核
+INTERFACE_CHOOSE_DIFFICULTY3_TXT=我享受挑战！
+INTERFACE_CHOOSE_DIFFICULTY4=疯狂
 
 INTERFACE_STATSPLAYER=玩家
 INTERFACE_OBJECTIVE=任务目标
 INTERFACE_CLUES=线索
 INTERFACE_CLUE_MISSING=点击显示提示
+INTERFACE_CLUE_REMOVE=移除
 INTERFACE_GAMEOPTIONS=选项
 INTERFACE_EXITGAME=退出游戏
 INTERFACE_OPTION_EXITMENU=返回主菜单
@@ -134,11 +181,12 @@ INTERFACE_AD_PREVIOUS=已解锁(上一周目)
 INTERFACE_TUTORIALS=游戏教程
 INTERFACE_ACHIEVEMENTS=成就
 INTERFACE_TROPHIES=奖杯
+INTERFACE_MOVESLIST=招式
 INTERFACE_UNLOCKABLES=解锁
 INTERFACE_GAMEOVERS=游戏失败
 INTERFACE_MATERIALS=材料清单
 INTERFACE_DESCRIBEITEM=描述物品
-INTERFACE_PUTDOWNITEM=置放物品
+INTERFACE_PUTDOWNITEM=放置物品
 INTERFACE_SAVE=保存
 INTERFACE_LOAD=加载
 INTERFACE_EXIT_MESSAGE=退出游戏？
@@ -150,16 +198,38 @@ INTERFACE_TALK_WITH=跟{charname}对话
 INTERFACE_SHOWITEM_TITLE=出示某样物品
 INTERFACE_EXIT=退出
 INTERFACE_AUTOMATIC_SAVE=自动存档
-INTERFACE_SLOT=槽位
-INTERFACE_EMPTY=空置
+INTERFACE_SLOT=存档
+INTERFACE_EMPTY=空
+INTERFACE_CONCEPTART=概念插画
+INTERFACE_FANART=同人画廊
+INTERFACE_OST=游戏配乐
+INTERFACE_EXTRAPOINTS=额外点数
+INTERFACE_YOURARTHERE=我要投稿！
+INTERFACE_MOREINFO=更多信息
+INTERFACE_MOREINFOHOVER=作品投稿指南
+INTERFACE_UNLOCKFOR=解锁({amount}点数)
+INTERFACE_SENDARTGUIDE1=把你的作品发给我，然后我就会把它放到这里哦！无论画功如何，只要满足以下要求，任何作品都可以接受：
+INTERFACE_SENDARTGUIDE2=必须是游戏里的角色（不接受自创角色）
+INTERFACE_SENDARTGUIDE3=必须是全年龄作品
+INTERFACE_SENDARTGUIDE4=要想参与，请完成以下<col=BOLD>其中之一</col>步骤：
+INTERFACE_SENDARTGUIDE5=<col=BOLD>社交媒体</col>(Facebook、Twitter 或 Instagram)形式：上传你的作品并且在帖子中艾特<col=BLUE>COWCATGames</col>。我很乐意转发！
+INTERFACE_SENDARTGUIDE6=<col=BOLD>邮件</col>形式：发送邮件至<col=BLUE>contact@cowcatgames.com</col>并且附上你的作品
+INTERFACE_SENDARTGUIDE7=你可以到 <col=BLUE>www.brokgame.com</col> 浏览完整版的步骤指南。
+
 INTERFACE_SAVESTATE_CONFIRM=是否覆盖此存档？
 INTERFACE_LOADSTATE_CONFIRM=是否加载此存档？
 INTERFACE_USE_FOOD_CONFIRM=吃掉它？
-INTERFACE_USE_FOOD_CANNOT=此物品仅限在动作模式下使用！
+INTERFACE_USE_FOOD_CANNOT=此物品只能在动作模式下使用！
+INTERFACE_USE_FOOD_CANNOTEAT=不能吃这玩意！
+
+INTERFACE_SUMMARY_CANNOT=通关概览... 顾名思义，只能在首次通关后查看。
+
+INTERFACE_SWITCH_SPECIALEFFECTS=此变更将会在进入新的房间时生效。
 #Used in vending machines to know how many items of this type the player already has
 INTERFACE_OWNED=已拥有：
 INTERFACE_FIGHTBEGIN=格斗开始
 INTERFACE_FIGHTEND=格斗结束
+INTERFACE_GAMEOVER=游戏结束
 INTERFACE_EXITARENA=离开竞技场
 INTERFACE_SUMMARYPATH=本周目概览
 INTERFACE_MAINOBJECTIVE=主线任务
@@ -168,12 +238,14 @@ INTERFACE_COMPLETEDOBJECTIVE=已完成的任务
 INTERFACE_INTERROGATION=审讯开始
 INTERFACE_INTERROGATION_END=审讯结束
 INTERFACE_LOCATION_UNLOCKED=已解锁新场景！
+INTERFACE_COMPLETEDOBJECTIVENEW=新的任务目标
 INTERFACE_COMPLETEDOBJECTIVEOK=任务完成！
+INTERFACE_COMPLETEDOBJECTIVEUPDATE=任务目标已更新
 INTERFACE_COMPLETEDOBJECTIVEFAIL=任务失败
 INTERFACE_HP=(生命值)
-INTERFACE_ATTACKP=(攻击)
+INTERFACE_ATTACKP=(攻击力)
 #This is the delay we have to wait between special attacks
-INTERFACE_SPECIALP=(终极技能计时器)
+INTERFACE_SPECIALP=(终极技能冷却时间)
 INTERFACE_SECONDS=秒
 INTERFACE_LEVELUP=你升级了！请选择加成！
 INTERFACE_LEVELUP_HEALTH=生命+
@@ -182,24 +254,28 @@ INTERFACE_LEVELUP_SPECIAL=终极技能+
 INTERFACE_ENEMIES_LEFT=剩余敌人数
 #Graff can request money from Brok
 INTERFACE_MONEYGRAFF_CHOICE=从布罗格的账户中转账？
-INTERFACE_ADS_ALLROOMS=所有房间
-INTERFACE_ADS_NOSTRESS=不用担心——你可以通过多个周目来完成收藏！
-INTERFACE_ADS_CURRENTROOM=当前房间
+INTERFACE_ADS_ALLROOMS=所有场景
+INTERFACE_ADS_NOSTRESS=不用担心——你可以多玩几个周目来全收集！
+INTERFACE_ADS_CURRENTROOM=当前场景
 INTERFACE_ADS_TOTAL=当前总数
 INTERFACE_ADS_TOTAL_PLAYTHROUGHS=所有周目
-
+INTERFACE_LUCKYCHARM=幸运护符
+INTERFACE_COMBINE=组合物品
+INTERFACE_COMBINE_DESCRIPTION=请选择第一个物品
+INTERFACE_CHOOSE_AD=请选择一个广告
 
 INTERFACE_GAMEOVER_ADVICE=建议
 
 INTERFACE_REMOVE=移除
 INTERFACE_SCROLLUP=向上滚动
 INTERFACE_SCROLLDOWN=向下滚动
+
 INTERFACE_ARCHIVE=档案
 
 INTERFACE_OPTION_CHOOSE=选择设定
 INTERFACE_OPTION_EXIT=离开游戏
-INTERFACE_OPTION_GRAPHIC=画质
-INTERFACE_OPTION_SOUND=音质
+INTERFACE_OPTION_GRAPHIC=显示
+INTERFACE_OPTION_SOUND=声音
 INTERFACE_OPTION_CONTROL=操作
 INTERFACE_OPTION_GAMEPLAY=玩法
 INTERFACE_OPTION_LANGUAGE=语言
@@ -214,12 +290,15 @@ INTERFACE_OPTION_540=很低(540P)
 INTERFACE_OPTION_RATIO=比例
 INTERFACE_OPTION_KEEPASPECT1=保持比例（有背景）
 INTERFACE_OPTION_KEEPASPECT2=保持比例（无背景）
-INTERFACE_OPTION_FULLSCALE=满值
+INTERFACE_OPTION_FULLSCALE=填满屏幕
 INTERFACE_OPTION_VSYNC=垂直同步
 INTERFACE_OPTION_FPS=帧数
+INTERFACE_OPTION_FPS60=60
+INTERFACE_OPTION_FPS30=30
 INTERFACE_OPTION_SPECIALEFFECT=特效
+INTERFACE_OPTION_DAMAGEPOINTS=伤害
 INTERFACE_OPTION_MESSAGESPEED=信息速度
-INTERFACE_OPTION_AUTOMATICPLAY=自动显示对话
+INTERFACE_OPTION_AUTOMATICPLAY=自动推进对话
 INTERFACE_OPTION_INSTANTANEOUS=即时
 INTERFACE_OPTION_SUBTITLE=字幕
 INTERFACE_OPTION_VOLUMEGLOBAL=全局音量
@@ -227,12 +306,80 @@ INTERFACE_OPTION_VOLUMESOUND=声音音量
 INTERFACE_OPTION_VOLUMEMUSIC=音乐音量
 INTERFACE_OPTION_VOLUMEAMBIENT=环境音量
 INTERFACE_OPTION_VOLUMEVOICE=语音音量
+INTERFACE_OPTION_ENEMYBLINK=敌人闪烁
 
-INTERFACE_OPTION_DISPLAYKEYBOARD=显示鼠标/键盘控制
-INTERFACE_OPTION_DISPLAYGAMEPAD=显示游戏手柄控制
+INTERFACE_OPTION_SKIPBUTTON_ALL=所有对话
+INTERFACE_OPTION_SKIPBUTTON_NORMAL=看过了的对话
+INTERFACE_OPTION_SKIPBUTTON_NONE=不跳过
+
+INTERFACE_OPTION_DISPLAYKEYBOARD=显示鼠标/键盘操作
+INTERFACE_OPTION_DISPLAYGAMEPAD=显示游戏手柄操作
 INTERFACE_OPTION_REDEFINE=重置键盘绑定
 INTERFACE_OPTION_GAMEPAD=选择游戏手柄
+INTERFACE_OPTION_SKIPBUTTON=跳过对话
+INTERFACE_OPTION_SKIPCUTSCENE=跳过过场动画
 
+MOVE_REGULARCOMBO=连击
+MOVE_JUMP=跳跃
+MOVE_JUMPKICK=飞踢
+MOVE_JUMPKICKDOWN=跳劈
+MOVE_UPPERCUT=上勾拳
+MOVE_GUARD=格挡
+MOVE_ATTACKBEHIND=偷袭
+MOVE_DODGE=躲避
+MOVE_RUN=疾跑
+MOVE_POWERFULPUNCH=大力拳
+MOVE_THROWNGETBACKUP=快速起身
+MOVE_PICKUP=捡起物品
+MOVE_FOODIMMEDIATE=立刻吃掉食物
+MOVE_FOODSTORE=储存食物
+MOVE_QUICKWEAPON=快速选择武器
+MOVE_QUICKITEM=快速选择食物
+MOVE_WEAPONCOMBO=武器连击
+MOVE_WEAPONTHROW=投掷武器
+MOVE_SPECIALQUICK=快速终极技能
+MOVE_SPECIALCHARGE=充能终极技能
+MOVE_SPECIALATTACK=终极技能攻击
+MOVE_COMBOFINISH=连击收尾
+MOVE_PARRY=招架
+
+MOVE_GRAFF_JUMPKICKDOWN=踩踏踢
+MOVE_GRAFF_UPPERCUT=旋击跃
+MOVE_GRAFF_ATTACKBEHIND=扫堂腿
+MOVE_GRAFF_POWERFULPUNCH=疾滑铲
+
+MOVE_COMMANDS_REPEAT=重复
+MOVE_COMMANDS_OR=或
+MOVE_COMMANDS_THEN=然后
+MOVE_COMMANDS_JUMPTHEN=跳跃时
+MOVE_COMMANDS_GUARDTHEN=格挡时
+MOVE_COMMANDS_PUNCHTHEN=出拳，然后
+MOVE_COMMANDS_RUNTHEN=疾跑时
+MOVE_COMMANDS_BRIEFPRESS=短按
+MOVE_COMMANDS_HOLD=按住
+MOVE_COMMANDS_CLICKONENEMY=对敌人
+MOVE_COMMANDS_CLICKONPLAYER=对玩家
+MOVE_COMMANDS_CLICKONITEM=对物品
+MOVE_COMMANDS_CLICKANYWHERE=任何地方
+MOVE_COMMANDS_ALTERNATIVE=亦可
+MOVE_COMMANDS_THROWN=被抛飞后
+MOVE_COMMANDS_EQUIP=装备
+MOVE_COMMANDS_SPECIALFILLED1=当
+MOVE_COMMANDS_SPECIALFILLED2=终极技能条
+MOVE_COMMANDS_SPECIALFILLED3=充满
+MOVE_COMMANDS_DURING=在
+MOVE_COMMANDS_COMBO=连击中
+
+MOVE_COMMANDS_PARRY1=马上
+MOVE_COMMANDS_PARRY2=就要
+MOVE_COMMANDS_PARRY3=受击
+
+MOVE_COMMANDS_MOUSESTYLE=键盘+鼠标
+MOVE_COMMANDS_KEYBOARDSTYLE=仅键盘
+
+#Here languages are always in English - Do not translate or keep it in English, the exact same
+
+#Here languages are in the country's language. Translate them into the language
 INTERFACE_OPTION_LANGUAGE_ENG=英语
 INTERFACE_OPTION_LANGUAGE_FRA=法语
 INTERFACE_OPTION_LANGUAGE_GER=德语
@@ -249,39 +396,78 @@ INTERFACE_OPTION_LANGUAGE_KOR=韩语
 INTERFACE_OPTION_LANGUAGE_LAS=西班牙语（拉丁美洲）
 
 INTERFACE_OPTION_DIFFICULTY=难度
-INTERFACE_OPTION_EASY=简单
-INTERFACE_OPTION_NORMAL=普通
-INTERFACE_OPTION_HARD=困难
 INTERFACE_OPTION_HINTS=提示
 
-ITEM_INTERFACE_OPTION_GRAPHIC_MSG=画质设定
+ITEM_INTERFACE_OPTION_GRAPHIC_MSG=画面设定
 ITEM_INTERFACE_OPTION_SOUND_MSG=音量
 ITEM_INTERFACE_OPTION_CONTROL_MSG=键盘/鼠标/游戏手柄
 ITEM_INTERFACE_OPTION_GAMEPLAY_MSG=难度与其他游戏设定
-ITEM_INTERFACE_OPTION_LANGUAGE_MSG=文本语文
 ITEM_INTERFACE_OPTION_FULLSCREEN_MSG=全屏或窗口模式
 ITEM_INTERFACE_OPTION_RESOLUTION_MSG=画面分辨率(帧数过低时请下调分辨率)
-ITEM_INTERFACE_OPTION_RATIO_MSG=维持原有宽屏比例(16/9)或者拉伸以填满屏幕
-ITEM_INTERFACE_OPTION_VSYNC_MSG=垂直同步(关闭可提高帧数但有可能会影响画质)
+ITEM_INTERFACE_OPTION_RATIO_MSG=维持原有宽屏比例(16/9)或者拉伸画面以填满屏幕
+ITEM_INTERFACE_OPTION_VSYNC_MSG=垂直同步(关闭可提高帧数，但可能出现画面撕裂)
 ITEM_INTERFACE_OPTION_SPECIALEFFECT_MSG=特效(关闭可提高帧数)
+ITEM_INTERFACE_OPTION_DAMAGEPOINTS_MSG=当角色受到攻击时显示所受伤害
 ITEM_INTERFACE_OPTION_VOLUMEGLOBAL_MSG=设置游戏的全局音量
 ITEM_INTERFACE_OPTION_VOLUMESOUND_MSG=设置音效的音量
 ITEM_INTERFACE_OPTION_VOLUMEAMBIENT_MSG=设置环境声音的音量
 ITEM_INTERFACE_OPTION_VOLUMEMUSIC_MSG=设置音乐的音量
 ITEM_INTERFACE_OPTION_VOLUMEVOICE_MSG=设置语音的音量
-ITEM_INTERFACE_OPTION_DIFFICULTY_MSG=设置动作模式的难度(简单难度下玩家会受到较低的伤害)
-ITEM_INTERFACE_OPTION_HINTS_MSG=启动或关闭提示按钮(此操作并不会禁用收集广告的能力)
+ITEM_INTERFACE_OPTION_DIFFICULTY_MSG=设置动作模式的难度(例如简单难度下玩家会受到较低的伤害)
+ITEM_INTERFACE_OPTION_HINTS_MSG=启用或禁用提示按钮(此操作并不会让你无法收集广告)
 ITEM_INTERFACE_OPTION_MESSAGESPEED_MSG=以什么样的速度显示文本？
-ITEM_INTERFACE_OPTION_AUTOMATICPLAY_MSG=是否无需互动就自动播放下一段对白？
-ITEM_INTERFACE_OPTION_SUBTITLE_MSG=是否在人物对话时播放字幕？
-ITEM_INTERFACE_OPTION_FPS_MSG=默认为60FPS，配置较低的电脑可以设置为30FPS
+ITEM_INTERFACE_OPTION_AUTOMATICPLAY_MSG=是否无需互动就自动推进下一段对白？
+ITEM_INTERFACE_OPTION_SUBTITLE_MSG=是否在角色发言时显示字幕？
+ITEM_INTERFACE_OPTION_FPS_MSG=默认为60FPS，游戏运行卡顿的话请设置为30FPS
+ITEM_INTERFACE_OPTION_REDEFINE_MSG=重新绑定按键
+ITEM_INTERFACE_OPTION_EXIT_MSG=退出游戏
+ITEM_INTERFACE_OPTION_SKIPBUTTON_MSG=跳过按键是指跳过已浏览过的对话、所有的对话还是完全不跳过？
+ITEM_INTERFACE_OPTION_SKIPCUTSCENE_MSG=跳过按键是指跳过过场动画？(适用于第二次或以上的通关)
+ITEM_INTERFACE_OPTION_PROMPTS_MSG=按照你的手柄类型来选择屏幕上所弹出的图标
+ITEM_INTERFACE_OPTION_DEADZONE_MSG=选择摇杆死区(适用于磨损情况比较严重的摇杆)
+ITEM_INTERFACE_OPTION_DEADZONE_PS_MSG=操作杆盲区
+ITEM_INTERFACE_OPTION_VIBRATION_MSG=选择震动强度
+ITEM_INTERFACE_OPTION_ENEMYBLINK_MSG=敌人在准备攻击时应该闪黄灯吗？
 
-#The "DEBUG" ones below are only for debug menu : no need to translate them！
+
+INTERFACE_OPTION_REDEFINE_MESSAGE=请按任何按键！
+INTERFACE_OPTION_REDEFINE_RESET=重置为默认
+#INTERFACE_OPTION_CHOOSECONTROLLER=Gamepad choice
+INTERFACE_OPTION_PROMPTS=手柄类型
+INTERFACE_OPTION_DEADZONE=手柄摇杆死区
+INTERFACE_OPTION_VIBRATION=手柄震动
+INTERFACE_OPTION_DEADZONE_CONSOLE=盲区
+INTERFACE_OPTION_VIBRATION_CONSOLE=震动功能
+
+
+INTERFACE_OPTION_TOUCHPAD_ENABLED=触摸板已激活
+ITEM_INTERFACE_OPTION_TOUCHPAD_ENABLED_MSG=使用触摸板？
+INTERFACE_OPTION_TOUCHPAD_SPEED=触摸板速度
+ITEM_INTERFACE_OPTION_TOUCHPAD_SPEED_MSG=设置光标移动速度
+INTERFACE_OPTION_TOUCHSCREEN_ENABLED=激活触屏
+ITEM_INTERFACE_OPTION_TOUCHSCREEN_ENABLED_MSG=使用触摸屏？
+INTERFACE_OPTION_CONTROLLERSPEAKER_ENABLED=喇叭
+ITEM_INTERFACE_OPTION_CONTROLLERSPEAKER_ENABLED_MSG=使用喇叭？
+
+#Do not translate
+ITEM_XBOXONE=Xbox One / Series
+ITEM_XBOX360=Xbox 360
+ITEM_PS4=PS4
+ITEM_PS5=PS5
+ITEM_SWITCHPRO=Switch Pro Controller
+ITEM_STEAMDECK=Steam Deck
+
+SPECIAL_EFFECTS_SWITCH-1=此变更将会在进入新的房间时生效。
+
+#The "DEBUG" ones below are only for debug menu : no need to translate them!
 INTERFACE_DEBUG=Debug
 INTERFACE_DEBUG_QUICK=Quick debug
 INTERFACE_DEBUG_INVENTORY=Inventory
 INTERFACE_DEBUG_PROGRESS=Progress#& choices
+INTERFACE_DEBUG_PLAYER=玩家
 INTERFACE_DEBUG_DIALOG=Text dialog
+INTERFACE_DEBUG_OTHER=Other
+INTERFACE_DEBUG_ONOFF=启动/关闭调试模式
 INTERFACE_DEBUG_PERFORMANCE=Performance bar
 INTERFACE_DEBUG_SCREENSHOT=Take screenshot
 INTERFACE_DEBUG_TELEPORT=Room teleport
@@ -289,6 +475,7 @@ INTERFACE_DEBUG_TELEPORTNO=Room teleport (no event)
 INTERFACE_DEBUG_UNFREEZE=Unfreeze (black bars)
 INTERFACE_DEBUG_KILLPLAYER=Kill player
 INTERFACE_DEBUG_KILLENEMIES=Kill active enemies
+INTERFACE_DEBUG_KILLHELPER=Kill helper
 INTERFACE_DEBUG_VARSTORY=Set story variable
 INTERFACE_DEBUG_MOVEPLAYER=Move player around
 INTERFACE_DEBUG_SETINVINCIBLE=Set player invincible
@@ -324,6 +511,7 @@ INTERFACE_DEBUG_REMOVEONEEVENT=Remove an event
 INTERFACE_DEBUG_CALLEVENT=Call an event
 INTERFACE_DEBUG_COUNTEVENTS=Count events
 INTERFACE_DEBUG_FORCESWITCH=Force switch character
+INTERFACE_DEBUG_FORCESWITCHSAMEROOM=Force switch character (same room)
 INTERFACE_DEBUG_SUMMARYPATH=Summary playthrough
 INTERFACE_DEBUG_FORCEMENU=Force display menu
 INTERFACE_DEBUG_STOPDIALOG=Force stop dialog
@@ -334,7 +522,65 @@ INTERFACE_DEBUG_DIALOGCURRENTROOM=Play all current room dialog
 INTERFACE_DEBUG_DIALOGSPECIFIC=Play specific dialog
 INTERFACE_DEBUG_DIALOGCOMMON=Play common dialog
 INTERFACE_DEBUG_DIALOGCHAPTER=Play chapter dialog
+INTERFACE_DEBUG_SETXP=设置经验
+INTERFACE_DEBUG_SETSTRENGTH=设置力量
+INTERFACE_DEBUG_SETDEFENSE=设置防御
+INTERFACE_DEBUG_ANIM=角色动画
+INTERFACE_DEBUG_LOWDAMAGE=低伤害
+INTERFACE_DEBUG_HIGHDAMAGE=高伤害
+INTERFACE_DEBUG_MAXPLAYERHEALTH=最大化玩家生命值
+INTERFACE_DEBUG_UNLOCKFPS=解锁 FPS
+INTERFACE_DEBUG_CLEARGAMEOVER=移除所有的游戏失败
+INTERFACE_DEBUG_ADDONEGAMEOVER=添加一次游戏失败
+INTERFACE_DEBUG_REMOVEONEGAMEOVER=移除一次游戏失败
+INTERFACE_DEBUG_GETALLGAMEOVER=获取所有游戏失败
+INTERFACE_DEBUG_GETALLCHAPTERS=解锁所有章节
+INTERFACE_DEBUG_GETALLSUMMARY=获取所有概览选择
+INTERFACE_DEBUG_GETALLINTERROGATIONS=Get all interrogations / scenes to skip
+INTERFACE_DEBUG_GETALLEXTRAS=Get all extras
+INTERFACE_DEBUG_CHECKVARS=频密检测暴力/智力变更
+INTERFACE_DEBUG_INTERROGATION=调试一次审问
+INTERFACE_DEBUG_MUSICEND=End current music track
+INTERFACE_DEBUG_SKIPTIMER=Skip current timer
+INTERFACE_DEBUG_REPLAYONE=Replay one
+INTERFACE_DEBUG_REPLAYLIST=Replay list
+INTERFACE_DEBUG_RELOADROOM=Reload current room
+INTERFACE_DEBUG_SCENE=Debug one scene/ending
+INTERFACE_DEBUG_RESTARTGAME=Restart game
+INTERFACE_DEBUG_THROWERROR=Throw error
+INTERFACE_DEBUG_FILLDIALOGSEEN=Fill dialog seen map
+INTERFACE_DEBUG_DISPLAYMEMINFO=Memory information
+INTERFACE_DEBUG_SETDIFFICULTY=Set difficulty
 
+#----- Keyboard options
+INPUT_ACTION_VALIDATE=验证
+INPUT_ACTION_CANCEL=取消
+INPUT_ACTION_VIEW_HOTSPOTS=查看热点
+INPUT_ACTION_SKIPDIALOG=跳过对话
+INPUT_MOVE_LEFT=左移玩家
+INPUT_MOVE_RIGHT=右移玩家
+INPUT_MOVE_UP=上移玩家
+INPUT_MOVE_DOWN=下移玩家
+INPUT_ACTION_JUMP=跳跃
+INPUT_ACTION_HIT=攻击/动作
+INPUT_ACTION_GUARD=格挡
+INPUT_ACTION_JUMPKICK=腾空踢
+INPUT_ACTION_POWERFULATTACK=重击
+INPUT_ACTION_QUICKSELECT_INV=物品快捷菜单
+INPUT_ACTION_QUICKSELECT_FOOD=食品快捷菜单
+INPUT_ACTION_SPECIALMOVE=终极技能
+INPUT_ACTION_COMBINEITEMS=合成物品
+INPUT_ACTION_SWITCH_MODE=切换模式
+INPUT_ACTION_SWITCH_CHAR=切换角色
+INPUT_ACTION_MENU=菜单
+INPUT_ACTION_PAUSE=暂停
+INPUT_ACTION_SCROLL_INV_LEFT=滚动左侧背包
+INPUT_ACTION_SCROLL_INV_RIGHT=滚动右侧背包
+INPUT_ACTION_SCROLL_PANEL_LEFT=滚动左侧面板
+INPUT_ACTION_SCROLL_PANEL_RIGHT=滚动右侧面板
+INPUT_ACTION_SUMMARY=获得游戏总结的快捷键
+INPUT_ACTION_RUN=疾跑
+INPUT_ACTION_SKIP_ACTION=跳过动作或拼图场景
 
 #----- Locations -------
 
@@ -375,12 +621,12 @@ GOAL_STORY_70=打败阿信！
 
 # Chapter 2
 GOAL_STORY_80=完成测验
-#When there's a # symbol in front， it means they don't appear in the game so no need to translate
-#GOAL_STORY_90=Undergo the interrogation
+#When there's a # symbol in front, it means they don't appear in the game so no need to translate
+GOAL_STORY_90=接受审讯
 GOAL_STORY_100_BROK=离开监狱
 GOAL_STORY_100_GRAFF=准备出席科学展览会
 GOAL_STORY_110=使用电脑
-#GOAL_STORY_120=Fight in the Virtual Arena
+GOAL_STORY_120=在竞技场里格斗
 GOAL_STORY_130=仔细寻找
 
 # Chapter 3
@@ -390,7 +636,7 @@ GOAL_STORY_140_GRAFF=寻找出路
 # Chapter 4
 GOAL_STORY_150_BROK=侦破案子
 GOAL_STORY_160_BROK=深入调查案件，找出幕后黑手
-#GOAL_STORY_170_BROK=Don't let Tidy escape
+GOAL_STORY_170_BROK=别让汰涤逃脱
 GOAL_STORY_160_GRAFF=寻找出路
 GOAL_STORY_165_GRAFF=寻找排毒丸
 GOAL_STORY_175_BROK=回家
@@ -399,7 +645,7 @@ GOAL_STORY_175_BROK=回家
 GOAL_STORY_180=发信息
 GOAL_STORY_190=格斗前的空闲时间
 GOAL_STORY_200=在虚拟竞技场中格斗
-#GOAL_STORY_205=Cutscene after day 2 fight
+GOAL_STORY_205=格斗之后
 
 # Chapter 5
 GOAL_STORY_210_GRAFF=最后测验
@@ -412,7 +658,7 @@ GOAL_STORY_250_BROK=到56X城区跟记者会面
 
 # Chapter 6
 GOAL_STORY_255_GRAFF=修改考试成绩
-#GOAL_STORY_255_BROK=进入碉堡
+GOAL_STORY_255_BROK=进入碉堡
 GOAL_STORY_260_BROK=审问格金博士
 GOAL_STORY_270_BROK=寻找出路
 GOAL_STORY_280_BROK=救阿信出狱
@@ -422,11 +668,11 @@ GOAL_STORY_290_GRAFF=逃出生天
 GOAL_STORY_290_BROK=寻找格拉夫
 GOAL_STORY_295_BROK=继续审问
 
-#GOAL_STORY_300=Ending (canonic part 1)
-#GOAL_STORY_301=Ending (Drumer)
-#GOAL_STORY_310=Ending (canonic part 2)
+GOAL_STORY_300=结局
+GOAL_STORY_301=“市民”结局
+GOAL_STORY_310=关于莎莎的真相
 GOAL_STORY_320=莎莎的发明
-#GOAL_STORY_330=Ending (canonic part 3)
+GOAL_STORY_330=结局
 
 
 #----- Main Goals --------
@@ -439,10 +685,12 @@ OBJECTIVE_BILLA=支付能量费
 OBJECTIVE_BILLB=支付房租
 OBJECTIVE_TRAMP=寻找药物给流浪汉
 OBJECTIVE_TRAMPUPDATE=寻找医生帮忙更新流浪汉的医疗处方
+OBJECTIVE_TRAMPUPDATE2=与此同时，再给流浪汉一次药物
 OBJECTIVE_TRAMPGIVE=把药物交给流浪汉
 OBJECTIVE_TRAMPPRESCRIBED=获取流浪汉的处方药
 OBJECTIVE_TRAMPGLUCOSITE=暂时先让流浪汉服用通用药物(葡萄糖)
 OBJECTIVE_BOLTJOB=帮博特寻找新的工作
+OBJECTIVE_HOOVERNOTSOLD=你保留了清洁机器人，现在怎么办？
 OBJECTIVEDONE_BILLAPAID=你付清了能量费。
 OBJECTIVEDONE_TRAMPCURE=你拯救了流浪汉。
 OBJECTIVEDONE_TRAMPKILL=你杀死了流浪汉。
@@ -453,6 +701,7 @@ OBJECTIVEDONE_BOLTAWAY=博特被押走了。
 OBJECTIVEDONE_BOLTKILLED=你摧毁了博特。
 OBJECTIVEDONE_HOOVERSOLD=你将清洁机器人的零件出售给了莎莎。
 OBJECTIVEDONE_HOOVERNOFIX=你决定把清洁机器人留下自己用。
+OBJECTIVEDONE_HOOVERSOLDMINK=你把清洁机器人卖给了敏克博士。
 OBJECTIVEDONE_REMOTECONTROLFIXED=莎莎修好了遥控器。
 OBJECTIVEDONE_GUNFOUND=你找到了那把失枪。
 OBJECTIVEDONE_GAVEREGULAR=你送了些通用药物给流浪汉让他先坚持住。
@@ -486,10 +735,16 @@ OBJECTIVE_ENTERWESOFFICE=设法进入韦斯的办公室
 OBJECTIVE_EXPLOREOFFICE=探索韦斯的办公室
 OBJECTIVE_MONEYHACKER=支付一万乌尼币给黑客
 OBJECTIVE_ERASEFILE=删除警局主机上储存的黑客档案
+OBJECTIVE_CHECKSHAY=去看莎莎的情况。
+OBJECTIVE_PAYHACKER=为了莎莎，你把钱转账给黑客。
 OBJECTIVEDONE_GOTCHIPVIOLENT=你使用暴力夺走了黑客手中的芯片。
 OBJECTIVEDONE_GOTCHIPPAY=你付费买下了黑客手中的芯片。
 OBJECTIVEDONE_GOTCHIPMISSION=你完成了黑客的委托而获得了芯片作为奖励。
+OBJECTIVEDONE_GOTMISSIONONLY=你完成了黑客的任务。
+OBJECTIVEDONE_GIVEUPMODIFIER=你放弃了得到能“自优化芯片”的机会。
 OBJECTIVEDONE_BILLBPAID=你已经支付过了房租。
+OBJECTIVEDONE_PAIDHACKER=为了莎莎，你把钱转账给黑客。
+OBJECTIVEDONE_NOPAIDHACKER=就算是为了莎莎，你也选择不把钱转账给黑客。
 OBJECTIVEDONE_EXPLOREDOFFICE=你已经探索过了韦斯的办公室。
 OBJECTIVEDONE_BEATBLIND=你破坏了目盲机器人成功潜入韦斯的办公室。
 OBJECTIVEDONE_TRICKEDBLIND=你智取了目盲机器人成功潜入韦斯的办公室。
@@ -516,17 +771,27 @@ OBJECTIVEDONE_SHORTAGEOVER=你在寻找线索的途中…被绑架了。
 #----- Endings --------
 ENDING_TITLE=结局
 ENDING_TITLE1=“标准”
+# Run away, do not enter the machine
 ENDING_TITLE2=“异常”
+# Normal BUT Graff has a good relationship
 ENDING_TITLE3=“贫民”
+# Win diploma school
 ENDING_TITLE4=“市民”
+# Graff insists in fighting the rats and Ott has an accident
 ENDING_TITLE5=“直至时间尽头”
+# Brok cannot complete the last interrogation
 ENDING_TITLE6=“沮丧的侦探”
+# Brok is too violent, worst ending
 ENDING_TITLE7=“倒下”
+# Unlock Shay's drawer
 ENDING_TITLE8=“日记”
+# Destroy the machine
 ENDING_TITLE9=“讽刺”
+# Ott & Graff escape together and Brok chooses not to save Graff => they arrive early
 ENDING_TITLE10=“闹翻”
+# R.J. dead and Brok chooses to save Graff (whether or not he escaped successfully)
 ENDING_TITLE11=“一同奋斗”
-ENDING_TITLE99=隐藏过场动画
+ENDING_TITLE9999=未完待续…
 
 
 
@@ -561,6 +826,7 @@ ITEM_LEVER=控制杆
 ITEM_SCREW=螺丝
 
 #----- Graff Day 1 -------------
+ITEM_KEYGRAFF=公寓的钥匙
 ITEM_SCREWDRIVER=螺丝刀
 ITEM_STATUETTE=雕像
 ITEM_STICKER=贴纸
@@ -640,10 +906,164 @@ ITEM_MONEY=金钱
 
 
 #----- Ads --------
-ITEM_PC01_FRIDGE=布罗格的公寓——冰箱
-ITEM_PC01_CLOTHES=布罗格的公寓——衣物
-ITEM_PC01_BED=布罗格的公寓——床
+#Keep these as short as possible!
+ROOM_PC01=布罗格的公寓
+ROOM_PC02=布罗格的大厅
+ROOM_PC03=公寓外
+ROOM_PC04=市民街
+ROOM_PC04B=后巷
+ROOM_PC04C=药店
+ROOM_PC05=下水道入口
+ROOM_PC05B=下水道内部
+ROOM_PC05C=下水道发动机
+ROOM_PC05D=下水道底层
+ROOM_PC06=56X城区
+ROOM_PC07=阿信的大厅
+ROOM_PC07B=阿信的公寓
+ROOM_PC08=车库外部
+ROOM_PC08B=车库内部
+ROOM_PC08C=虚拟竞技场
+ROOM_PC09=警局入口
+ROOM_PC09B=警局牢房
+ROOM_PC09C=警长办公室
+ROOM_PC09D=警局审讯室
+ROOM_PC10=学校
+ROOM_PC11=莉雅噩梦入口
+ROOM_PC11B=莉雅噩梦休息厅
+ROOM_PC11C=莉雅噩梦卧室
+ROOM_PC11D=第二次噩梦
+ROOM_PC12=边防哨所
+ROOM_PC12B=金字塔内
+ROOM_PC13=风景
+ROOM_PC14=黑客巷子
+ROOM_PC14B=黑客屋外部
+ROOM_PC14C=黑客屋内部
+ROOM_PC15=实验室外面
+ROOM_PC15B=实验室大厅
+ROOM_PC15C=哈什博士房间
+ROOM_PC15D=敏克博士房间
+ROOM_PC15E=实验室休息室
+ROOM_PC16=寻废物猎人
+ROOM_PC17=博物馆
+ROOM_PC18=工厂
+ROOM_PC19=格拉夫的碉堡迷题
+ROOM_PC19B=碉堡主楼
+ROOM_PC19C=碉堡入口
+ROOM_PC19D=碉堡外面
+ROOM_PC20=垃圾场
+ROOM_EV_MAP=地图
 
+AD_PC01_FRIDGE=冰箱
+AD_PC01_CLOTHES=衣服
+AD_PC01_BED=床褥
+AD_PC02_MAILBOX=邮箱
+AD_PC02_JOBBOARD=招聘布告栏
+AD_PC02_FLOORCRACK=地板裂缝
+AD_PC03_WOOD=顶层
+AD_PC03_CAR=汽车
+AD_PC03_STICKER=贴纸
+AD_PC04_VENDING=贩卖机
+AD_PC04_HOLOGRAMB=全息影像
+AD_PC04_TRASH=垃圾
+AD_PC04B_TARGET=目标
+AD_PC04B_PIPE=铁管
+AD_PC04B_GRID=网格
+AD_PC04C_PRODUCTS=产品
+AD_PC04C_PANEL=医疗面板
+AD_PC04C_BUBBLE=广告泡泡
+AD_PC05_RATHOLE=洞孔
+AD_PC05_WALL=墙壁
+AD_PC05_BRIDGE=桥梁
+AD_PC05B_BASKET=篮子
+AD_PC05B_FLOOR=地板
+AD_PC05B_ACID=酸液
+AD_PC05C_GUN=手枪
+AD_PC05C_PIPE=铁管
+AD_PC05C_MACHINEB=机器
+AD_PC05D_CENTER=靠近梯子
+AD_PC05D_RIGHT=墙壁右侧的房间
+AD_PC05D_LEFT=柜子左侧的房间
+AD_PC06_WALL=墙壁
+AD_PC06_PIPEPILL=药丸运管
+AD_PC06_BRIDGEATOP=桥梁顶端
+AD_PC07_DOOR=门口
+AD_PC07_MAILBOX=邮箱
+AD_PC07_AROCK=岩石
+AD_PC07B_JACKET=外套
+AD_PC07B_WALLB=墙壁
+AD_PC07B_GLASSESB=玻璃
+AD_PC08_FBARRIER=屏障
+AD_PC08_BOAT=小艇
+AD_PC08_FAR=遥远
+AD_PC08B_CHAIR=椅子
+AD_PC08B_FOOD=食物
+AD_PC08B_DESKB=桌子
+AD_PC08C_FLOOR=地板
+AD_PC08C_BED=床褥
+AD_PC08C_WALLRIGHT=右墙
+AD_PC09_WINDOWOFF=窗口办事处
+AD_PC09_RWANTED=“通缉”监控器
+AD_PC09_RDOOR=大门
+AD_PC09B_DEBUG=调试模式
+AD_PC09B_FRONT=面前的树
+AD_PC09B_RJ=RJ
+AD_PC09C_BOXDESK=桌子上的盒子
+AD_PC09C_BOARD=警局
+AD_PC09C_COMPUTER=计算机显示器
+AD_PC09D_RPLANT=右边的植物
+AD_PC09D_RALLEY=走廊
+AD_PC09D_RCAMERA=左边的摄像头
+AD_PC10_RSTATUE=右边雕像的底部
+AD_PC10_RIGHTDESK=卡在右侧的大桌子上了
+AD_PC10_RBACK=右侧的背景
+AD_PC12_TOP=顶层
+AD_PC12_FLOOR=地板
+AD_PC12_AVENDING=贩卖机
+AD_PC14_RTOP=顶部平台
+AD_PC14_RGUTTER=水槽
+AD_PC14_RTRASH=垃圾袋
+AD_PC14B_RPIPEPILL=药丸运管
+AD_PC14B_RCOLUMNLEFT=左栏
+AD_PC14B_RFRONT=前面的垃圾
+AD_PC14C_PLANKS=木板
+AD_PC14C_RMESS=背景里的东西
+AD_PC14C_RPIZZA=披萨盒子
+AD_PC15_BIKE=自行车
+AD_PC15_ELEVATOR=传送带
+AD_PC15_JUMP=马路沿儿
+AD_PC15B_BOX=盒子
+AD_PC15B_SHELF=书架上的聚光灯
+AD_PC15B_CENTER=房间中央
+AD_PC15C_FRONT=前面的电源插座
+AD_PC15C_MESS=右边的材料
+AD_PC15C_PAINTNG=绘画
+AD_PC15D_PAINTING=窗户
+AD_PC15D_MESS=电线
+AD_PC15D_SINK=水槽
+AD_PC15E_COFFEE=咖啡抽屉里面
+AD_PC15E_CLOTHES=衣柜右边
+AD_PC15E_SHOWER=淋浴
+AD_PC16_TREASURE=宝物
+AD_PC16_CONTROLS=控制面板
+AD_PC16_STATUE=雕像
+AD_PC17_ROCKS=不落幕的展览
+AD_PC17_ROOF=右侧屋顶
+AD_PC17_TABLEL=最右边的桌子
+AD_PC18_GROUND=全息图后面的地面
+AD_PC18_INHOUSE=哨兵盒子
+AD_PC18_INGREEN=容器
+AD_PC19_RBUTTON=按钮
+AD_PC19_RWALLSHADOW=阴影里的右边的墙
+AD_PC19_RTOP=中间的房间的左上角
+AD_PC19B_RBED=床
+AD_PC19B_RDOORSIDE=三角门旁
+AD_PC19B_RBEHIND=符号上的
+AD_PC19D_FRONT=前景
+AD_PC19D_PIPEPILL=药丸运管
+AD_PC19D_ROCKS=金字塔附近的岩石
+AD_EV_MAP_TOP=顶层
+AD_EV_MAP_DOME=圆顶
+AD_EV_MAP_HOME=住家
 
 #----- Common clickers --------
 PC_ADVERT=广告
@@ -674,7 +1094,7 @@ PC_BED=床
 PC_TRAP=活板
 PC_TO_HALL=前往大厅
 PC_SINK=洗手盆
-PC_DRAWER=抽屉 
+PC_DRAWER=抽屉
 PC_CUP=杯子
 PC_TABLET=平板
 PC_LAMP=桌灯
@@ -691,13 +1111,16 @@ PC_HOLOGRAM=全息影像
 PC_SLOT=插槽
 PC_ELEVATOR=电梯
 PC_PANEL=控制面板
+PC_WALL=墙壁
 PC_BARRIER=屏障
+PC_THING=物体
+PC_PEBBLES=卵石
 
 #----- Characters bios (Brok) --------
 ITEM_GRAFF_MSG=跟我住一块的是我15岁的儿子格拉夫。虽然没有血缘关系，但他是我已故妻子的儿子。所以会我尽全力去抚养他。
 ITEM_SIN_MSG=这是我的客户，总是神经兮兮的。
-ITEM_SHAY_MSG=我的老朋友莎莎！她是个发明家。虽然从小就认识了，但期间失联了好长一段时间，不知道她究竟都在做什么。 
-ITEM_WES_MSG=这位是警察局长，算是我的故交吧。 
+ITEM_SHAY_MSG=我的老朋友莎莎！她是个发明家。虽然从小就认识了，但期间失联了好长一段时间，不知道她究竟都在做什么。
+ITEM_WES_MSG=这位是警察局长，算是我的故交吧。
 ITEM_BOLT_MSG=它是我在边防哨所碰见的机器人。虽然我不喜欢机器人，但看他沮丧的样子所以就…
 ITEM_CHIEFRAT_MSG=这是龌龊的鼠人团体的领袖，危险人物。
 ITEM_TRAMP_MSG=这位流浪汉曾经是位士兵，可惜的是现在患上了不治之症…
@@ -754,6 +1177,21 @@ ITEM_SEWAGESLUDGE_MSG=又臭又脏！#<col=BOLD>受到20点生命值的伤害</c
 ITEM_SOLIDJUICE=固体果汁
 ITEM_SOLIDJUICE_MSG=100%以人工添加剂制成！#<col=BOLD>无特殊效果</col>只会让人欲罢不能。
 
+ITEM_HOTJUICE=热果汁
+ITEM_HOTJUICE_MSG=无酒精饮料虽然无酒精，但当你喝掉它以后你依然会感觉到头晕目眩！#<col=BOLD>对疼痛麻木，持续60秒</col>。
+
+ITEM_PIZZANT=披萨
+ITEM_PIZZANT_MSG=一个你最喜欢吃的口味的披萨！#<col=BOLD>立刻充满终极技能</col>！
+
+ITEM_FLOWINGHONEY=蜂蜜满满
+ITEM_FLOWINGHONEY_MSG=增加你的防御力！#<col=BOLD>抬高防御力，效果持续30秒</col>。
+
+ITEM_ENERGYSERUM=能量血清
+ITEM_ENERGYSERUM_MSG=两个味道，两个效果！#<col=BOLD>抬高力量和防御力，效果持续30秒</col>。
+
+ITEM_ENERGYULTIMATE=终极能量
+ITEM_ENERGYULTIMATE_MSG=你生命中最后一杯饮料！#<col=BOLD>获得30秒无限力量，然后死亡</col>.
+
 
 #----- Choices --------
 YES=是
@@ -764,6 +1202,8 @@ INTERFACE_PERCENT_CHOICE={nb}%玩家如此选择
 INTERFACE_PERCENT_ENDING={nb}%玩家在一周目解锁此结局
 INTERFACE_FINAL_CHAPTER=最后章节
 INTERFACE_CHAPTER_ASK=是否重新开始本章节？
+INTERFACE_CHAPTER_CANNOT=你不能进入该章节的这一部分。#请选择前一部分并切换角色。
+INTERFACE_CHAPTER_CANNOT_PS=This chapter part cannot be accessed directly.#Choose the previous part and switch player.
 INTERFACE_CHAPTER2AG=首个测验
 INTERFACE_CHAPTER2AB=审问
 INTERFACE_CHAPTER2B=逃出监狱
@@ -776,6 +1216,7 @@ INTERFACE_CHAPTER5B=护送格金博士
 INTERFACE_CHAPTER5G=最后测验
 INTERFACE_CHAPTER6B=逃出碉堡
 INTERFACE_CHAPTER6G=成绩
+INTERFACE_CHAPTER6AG=绑架
 
 #These are the subtitles for all chapters. Feel free to change them completely to something appropriate for the language (according to what happens in each chapter).
 #Sin's case
@@ -809,6 +1250,7 @@ ATTITUDE_CHOICE=选择语气
 INFO_CHOICE=咨询更多信息…
 PC_CHOICE_HAPPENED=发生什么事了？
 PC_CHOICE_USE=是否使用？
+PC_CHOICE_TAKE=拿走它？
 PC_CHOICE_DO=想做什么？
 PC_CHOICE_SAY=想说什么？
 PC_CHOICE_ASK=想问什么？
@@ -821,6 +1263,20 @@ PC_CHOICE_CONFIRM=是否确定？
 PC_CHOICE_SKIPFIGHT=跳过战斗？
 PC_CHOICE_TOPIC=选择话题
 PC_CHOICE_INTERROGATIONSKIP=跳过审讯？
+PC_CHOICE_READINSTRUCTIONS=需要读操作说明吗？
+PC_CHOICE_BUY=买下它？
+PC_CHOICE_SELL=卖掉它？
+PC_CHOICE_ENTER=进去？
+PC_CHOICE_GIVEFOOD=把吃的给……
+CHOICE_GIVEUP=放弃
+PC_CHOICE_WATCHANYWAY=还是看这个场景吧？
+PC_CHOICE_BLINDPUZZLESKIP=跳过这个谜题？
+
+#For Graff request money
+MONEY_10=10
+MONEY_20=20
+MONEY_50=50
+MONEY_200=200
 
 GOT_PREDNORMAL=这是普拉德玩具！
 GOT_WINGSSTRING=可绑定的翅膀！
@@ -834,6 +1290,9 @@ TOPIC_FAIR=科学展览会
 
 #----- Tutorials (on screen) --------
 
+TUTORIAL_GENERICINV_MSG_MOUSE=#
+TUTORIAL_GENERICINV_MSG_GAMEPAD=<spr=GAMEPAD_DPAD> 移动
+
 TUTORIAL_MOVE_MSG_MOUSE=点击屏幕上的<spr=CONTROL_mouseleft>以移动布罗格。按<spr=CONTROL_mouseleft>以进行举动。
 TUTORIAL_MOVE_MSG_GAMEPAD=使用<spr=GAMEPAD_STICKLEFT>以移动布罗格。按<button=INPUT_ACTION_VALIDATE>以进行举动。
 
@@ -846,13 +1305,14 @@ TUTORIAL_SELECTINV_MSG_GAMEPAD=使用<button=INPUT_ACTION_VALIDATE>以选择物�
 TUTORIAL_USEINV_MSG_MOUSE=使用<spr=CONTROL_mouseleft>点击屏幕上的任何位置以使用物品。
 TUTORIAL_USEINV_MSG_GAMEPAD=通过<button=INPUT_ACTION_VALIDATE>来使用物品。
 
-#TUTORIAL_FIGHTMODE_MSG_MOUSE=使用鼠标滚轮<spr=CONTROL_mousescroll>、<button=INPUT_ACTION_SWITCH_MODE>、或者帽子图标以切换到动作模式。
+TUTORIAL_FIGHTMODE_MSG_MOUSE=使用鼠标滚轮切换至动作模式<spr=CONTROL_mousescroll>，<button=INPUT_ACTION_SWITCH_MODE> 或者点击“拳头”图标。
 TUTORIAL_FIGHTMODE_MSG_GAMEPAD=使用<button=INPUT_ACTION_SWITCH_MODE>以切换到动作模式，使用<button=INPUT_ACTION_HIT>以进行拳击。
 
 TUTORIAL_PUNCH_MSG_MOUSE=点击<spr=CONTROL_mouseleft>以拳击房门！
 TUTORIAL_PUNCH_MSG_GAMEPAD=使用<button=INPUT_ACTION_HIT>以拳击房门！
 
 TUTORIAL_RADAR_MSG=图标上的雷达信号会随着你的移动而发生更变。请时刻关注！
+
 
 
 # For button prompts
@@ -868,9 +1328,15 @@ TUTORIAL_THROW=丢下
 TUTORIAL_ZOOMINOUT=放大/缩小
 TUTORIAL_NAVIGATE=导航
 TUTORIAL_SCROLLUPDOWN=向上/向下滚动
+TUTORIAL_SCROLLFAST=快速滚动
 TUTORIAL_SAVE=保存
+TUTORIAL_LOAD=加载
 TUTORIAL_RENAMESAVE=重命名存档
 TUTORIAL_SETPRIORITY=加入快速选择
+TUTORIAL_REMOVEPRIORITY=移除自快捷菜单
+TUTORIAL_HIDEDESCR=隐藏描述
+TUTORIAL_PREVIOUS=上一章
+TUTORIAL_NEXT=下一个
 
 
 #----- Full screen Help --------
@@ -900,11 +1366,18 @@ HELP_PAD_INSTRUCTIONS=附近有数个热点？#无法挑选目标热点吗？##�
 HELP_CLUES=线索
 HELP_CLUES_INSTRUCTIONS=身为侦探，布罗格会将一切<col=BOLD>重要</col>的线索记录下来。##你可以在线索菜单中查看它们！##有些线索能够帮助破案，有些则是没有用处的情报！
 
+HELP_HINTS=卡关了？
+HELP_HINTS_INSTRUCTIONS=如果需要帮忙，可以使用所收集到的<col=BOLD>广告</col>来获取提示！##在菜单中点击此图标。##如果一个提示不足够的话，那可以<col=BOLD>多次点击</col>图标以获取解决方案。
+
+
 HELP_CHAPTER=重启章节
 HELP_CHAPTER_INSTRUCTIONS=重启章节会<col=BOLD>删除本章节的进度</col>。##此操作会视乎于你当前的主线剧情进度而有所不同…
 
 HELP_CHAPTER2=重启章节(下一章)
 HELP_CHAPTER_INSTRUCTIONS2=- 如果你<col=BOLD>往后移动</col>，那么你到目前为止的选择将会被保存下来。##- 如果你<col=BOLD>往前移动</col>，那么你尚未游玩过的游戏章节将会使用默认选择。
+
+HELP_CHAPTERFORWARD=前进
+HELP_CHAPTERFORWARD_INSTRUCTIONS=请注意，你在章节“<col=BOLD>{currentchapter}</col>”的进度和接下来的章节将重置为默认的选择。
 
 HELP_TRASHERINFO=寻废物大赛
 HELP_TRASHERINFO_INSTRUCTIONS=此地点是<col=BOLD>可选</col>的副本地图。##只要消耗一些乌尼币，你就有机会从这里<col=BOLD>获得有用的物品</col>！
@@ -917,14 +1390,14 @@ HELP_INTERROGATION_INSTRUCTIONS=合成两样<col=BOLD>相关</col>的线索以�
 
 HELP_CLICKERS=热点视野
 #Leave a "space" at the end of the following line
-HELP_CLICKERS_INSTRUCTIONS=想要显示所有可用的热点，那请按 
+HELP_CLICKERS_INSTRUCTIONS=想要显示所有可用的热点，那请按
 HELP_CLICKERS_INSTRUCTIONS_GAMEPAD=<button=INPUT_ACTION_VIEW_HOTSPOTS>
 HELP_CLICKERS_INSTRUCTIONS_MOUSE=<button=INPUT_ACTION_VIEW_HOTSPOTS>或者鼠标中键<spr=CONTROL_mousemiddle>。记得先启动冒险模式。
 HELP_CLICKERS_INSTRUCTIONS_NEXT=##不过部分特殊物品比如说广告将不会呈现在此视野下！
 
 
 HELP_SKIPDIALOG=跳过对话
-HELP_SKIPDIALOG_INSTRUCTIONS=你可以<col=BOLD>跳过对话</col>！##只需长按此键： 
+HELP_SKIPDIALOG_INSTRUCTIONS=你可以<col=BOLD>跳过对话</col>！##只需长按此键：
 HELP_SKIPDIALOG_INSTRUCTIONS_GAMEPAD=<button=INPUT_ACTION_SKIPDIALOG>
 HELP_SKIPDIALOG_INSTRUCTIONS_MOUSE=<button=INPUT_ACTION_SKIPDIALOG>或者<spr=CONTROL_mousemiddle>
 HELP_SKIPDIALOG_INSTRUCTIONS_NEXT=##你不会遗漏任何重要信息的——因为此操作只可以跳过<col=BOLD>已浏览过</col>的对话！
@@ -943,8 +1416,9 @@ HELP_SWITCHCHAR_INSTRUCTIONS=布罗格或许会被困在此地好一段时间。
 HELP_SWITCHCHAR_INSTRUCTIONS_GAMEPAD=请按<spr=GAMEPAD_SELECT>！
 HELP_SWITCHCHAR_INSTRUCTIONS_MOUSE=请按右上方的图标或者<button=INPUT_ACTION_SWITCH_CHAR>！
 
-HELP_LUCKYCHARM=护身符
-HELP_LUCKYCHARM_INSTRUCTIONS=此特殊物品可以让你随时施展<col=BOLD>终极技能</col>！不过要注意的是——如果在计量条充满之前使用的话，将会<col=BOLD>消耗</col>你的部分生命值！##此物品是唯一一件能够在各个周目之间通用的物品。
+HELP_LUCKYCHARMNEW=幸运符
+HELP_LUCKYCHARMNEW_INSTRUCTIONS=该特殊物品将自动抵消<col=BOLD>一次致命的伤害</col>。请注意：每场战斗仅可使用一次！##它已添加到您的游戏进度，并将在您游玩游戏时持续存在。
+
 
 HELP_MINE=选择…
 HELP_MINE_INSTRUCTIONS=在整个冒险旅程中，你将会碰上多个<col=BOLD>可选的剧情路线</col>(相当多的出现频率)##比如说你可以直接通过此地雷阵。但你也可以选择先关闭它们…##<col=BOLD>切记！</col>大部分选择都不是直接显示在你面前的。请多探索各种可能性！
@@ -970,12 +1444,17 @@ HELP_SUMMARYCLOSE3=重启自…
 HELP_SUMMARYCLOSE3_INSTRUCTIONS=重新开始新的周目或者打开存档菜单中的<col=BOLD>“章节”</col>界面以重启自指定的章节！##你也可以直接从概览界面重启章节(请按<col=BOLD>章节标题</col>)。
 
 
-HELP_SKIPFIGHT=跳过格斗
-HELP_SKIPFIGHT_INSTRUCTIONS=此格斗的难度不高，但是天知道接下来的战斗会如何！##如果你厌倦了战斗，那可以考虑按此图标(右上方的界面)以<col=BOLD>跳过格斗</col>。
-HELP_SKIPFIGHT_INSTRUCTIONS_GAMEPAD=此格斗的难度不高，但是天知道接下来的战斗会如何！##如果你厌倦了战斗，那可以考虑<col=BOLD>跳过格斗</col>，只需长按<spr=GAMEPAD_SELECT>至少一秒钟。
+HELP_SUMMARYSHORTCUT=游戏总结的快捷键
+HELP_SUMMARYSHORTCUT_INSTRUCTIONS=不需要打开目录！##
+HELP_SUMMARYSHORTCUT_INSTRUCTIONS_MOUSE=按下 <button=INPUT_ACTION_SUMMARY> 以便在游玩时加载游戏总览。
+HELP_SUMMARYSHORTCUT_INSTRUCTIONS_GAMEPAD=按下 <spr=GAMEPAD_SHOULDERRIGHT> 以便在游玩时加载游戏总览。
 
 HELP_DIFFICULTYUNLOCK=Mania难度已解锁!
 HELP_DIFFICULTYUNLOCK_INSTRUCTIONS=恭喜你! 你已经解锁了一个新的难度设置。##开始一个新游戏来使用它!
+
+HELP_SKIPFIGHT=跳过格斗
+HELP_SKIPFIGHT_INSTRUCTIONS=此格斗的难度不高，但是天知道接下来的战斗会如何！##如果你厌倦了战斗，那可以考虑按此图标(右上方的界面)以<col=BOLD>跳过格斗</col>。
+HELP_SKIPFIGHT_INSTRUCTIONS_GAMEPAD=此格斗的难度不高，但是天知道接下来的战斗会如何！##如果你厌倦了战斗，那可以考虑<col=BOLD>跳过格斗</col>，只需长按<spr=GAMEPAD_SELECT>至少一秒钟。
 
 HELP_SKIPACTION=跳过动画
 HELP_SKIPACTION_INSTRUCTIONS=你也可以同样的方法跳过<col=BOLD>过场动画和定时事件</col>。##此操作并不会导致<col=BOLD>任何惩罚</col>，不过还是推荐至少先体验一遍！
@@ -984,6 +1463,47 @@ HELP_SKIPACTION_INSTRUCTIONS=你也可以同样的方法跳过<col=BOLD>过场�
 HELP_GRAFFVR=格拉夫的虚拟竞技场
 HELP_GRAFFVR_INSTRUCTIONS=格拉夫可以通过电脑上的此程序训练格斗技巧！##因为这只是虚拟格斗的模拟软件，因此只能<col=BOLD>获取经验</col>而<col=BOLD>无法获取金钱</col>！
 
+# Tutorials for VR arena
+HELP_TUTORIALVR=简单模式下练习
+HELP_TUTORIALVR_INSTRUCTIONS=在简单模式下，你可以跳过战斗，因此无需学习招式<col=BOLD>以推进剧情</col>。##不过招式能够让你在不作弊的情况下打败实力最强大的敌人。
+
+HELP_KEYBOARDVR=键盘招式
+HELP_KEYBOARDVR_INSTRUCTIONS=你可以使用鼠标攻击敌人。但是要想达到更精准的操作，建议使用<col=BOLD>键盘</col>！##你可以随时切换至键盘操作，只需松开鼠标然后按方向键或者<button=INPUT_MOVE_UP><button=INPUT_MOVE_LEFT><button=INPUT_MOVE_DOWN><button=INPUT_MOVE_RIGHT>就行了！##Tips：获取完整的按键列表然后在游戏选项中重新绑定。
+
+HELP_SPECIALATTACK1=终极技能(1)
+HELP_SPECIALATTACK1_INSTRUCTIONS=鳄鱼侦探的敌人会后悔惹毛他！##当鳄鱼侦探的<col=BOLD>生命值过低时</col>(低于50%)，他头像旁边的计量条就会缓慢补充。当计量条开始闪烁时，你可以使用{command}以发动致命的终极技能！
+
+HELP_SPECIALATTACK1_INSTRUCTIONS_MOUSE=点击布罗格(或者按<button=INPUT_ACTION_SPECIALMOVE>)
+HELP_SPECIALATTACK1_INSTRUCTIONS_GAMEPAD=按<spr=GAMEPAD_TRIGGERLEFT>
+
+
+HELP_SPECIALATTACK2=终极技能(2)
+HELP_SPECIALATTACK2_INSTRUCTIONS=赶着去哪呢？长按终极技能按键以消耗<col=BOLD>自己的生命值</col>来加速计量条补充速度。##要想赢得战斗，那就得尽量维持<col=BOLD>低于一半</col>的生命值以便发动尽可能多的终极技能。##不过可要小心哦——你的角色虽然强，但可不是无敌的！
+
+HELP_SPECIALATTACK2_INSTRUCTIONS_MOUSE=点击玩家(或按<button=INPUT_ACTION_SPECIALMOVE>)
+HELP_SPECIALATTACK2_INSTRUCTIONS_GAMEPAD=按<spr=GAMEPAD_TRIGGERLEFT>
+
+
+
+HELP_QUICKSELECT=物品快捷菜单
+HELP_QUICKSELECT_INSTRUCTIONS=在战斗中，使用{command}以唤出快捷菜单然后选择武器。##食品快捷菜单则是通过{command2}唤出。
+HELP_QUICKSELECT_INSTRUCTIONS_MOUSE=长按<button=INPUT_ACTION_QUICKSELECT_INV>
+HELP_QUICKSELECT_INSTRUCTIONS_GAMEPAD=长按<spr=GAMEPAD_SHOULDERLEFT>
+HELP_QUICKSELECT_INSTRUCTIONS2_MOUSE=使用<button=INPUT_ACTION_QUICKSELECT_FOOD>
+HELP_QUICKSELECT_INSTRUCTIONS2_GAMEPAD=使用<spr=GAMEPAD_SHOULDERRIGHT>
+
+HELP_QUICKSELECT2=快捷菜单优先度
+HELP_QUICKSELECT2_INSTRUCTIONS=快捷菜单充斥着太多没用的物品？那么就<col=BOLD>自行</col>定义吧！##在战斗模式中，打开快捷菜单然后对物品或食品的图标使用{command}以设置为最高优先度。
+HELP_QUICKSELECT2_INSTRUCTIONS_MOUSE=按<spr=CONTROL_mouseright>或<button=INPUT_ACTION_SETPRIORITYITEM>
+HELP_QUICKSELECT2_INSTRUCTIONS_GAMEPAD=按<button=INPUT_ACTION_SETPRIORITYITEM>
+
+
+HELP_RADAR=寻找材料
+HELP_RADAR_INSTRUCTIONS_GAMEPAD=使用<spr=GAMEPAD_STICKLEFT>来在搜索过程中移动。
+HELP_RADAR_INSTRUCTIONS_MOUSE=使用<button=INPUT_MOVE_UP><button=INPUT_MOVE_LEFT><button=INPUT_MOVE_DOWN><button=INPUT_MOVE_RIGHT>或鼠标在搜索中移动。
+
+HELP_RADAR_INSTRUCTIONS=一个新的图标已扩展到你的“<col=BOLD>进度</col>”子菜单。
+
 
 HINTCOMBINE=继续盘问并选择合成以下两个线索：<col=BOLD>{clue1}</col>和<col=BOLD>{clue2}</col>。
 HINTSINGLE=继续盘问并选择以下的线索：<col=BOLD>{clue1}</col>。
@@ -991,7 +1511,7 @@ HINTSINGLE=继续盘问并选择以下的线索：<col=BOLD>{clue1}</col>。
 
 #----- Keyboard keys --------
 # NB : If your country uses a standard keyboard with English letters you don't have to translate these
-#In any case， make sure these are not longer than 10 characters to stay readable
+#In any case, make sure these are not longer than 10 characters to stay readable
 KEY_BACKSPACE=Backspace
 KEY_TAB=Tab
 KEY_ENTER=Enter
@@ -1018,9 +1538,12 @@ KEY_MOUSERIGHT=鼠标右键
 #----- Messages --------
 
 #Vertical space is not limited for messages.
-#The name of the character who writes the message is included in the key (ex : SIN， GRAFF)
+#The name of the character who writes the message is included in the key (ex : SIN, GRAFF)
 MSIN1_TITLE=紧急！我需要帮助！
 MSIN1_TEXT=有任务给你！##请尽快过来我的公寓：＃<col=BOLD> 中央花园568号大楼，54号公寓</col>。大门的密码是<col=BOLD> 4098</col>。##请尽快！！
+
+MOTT0_TITLE=关于昨天发生的事…
+MOTT0_TEXT=嘿，再次感谢你来我家！一般没什么人来我们家…所以我很庆幸有你这样的挚友。你明白的，其他人都会……算了，等我们都成为市民后情况肯定会往好的方面发展的！
 
 MGRAFF1_TITLE=重要提醒！
 MGRAFF1_TEXT=我知道你很善忘，所以再次提醒你一下。科学展览会的成绩评估将会在5点正式开始。别忘记准时出席！
@@ -1032,7 +1555,7 @@ MGRAFF3_TITLE=喂！
 MGRAFF3_TEXT=我打给你很多次了都没回应！快赶过来！
 
 MGRAFF4_TITLE=天啊！
-MGRAFF4_TEXT= 急死我了，你要是不及时赶来的话…
+MGRAFF4_TEXT=急死我了，你要是不及时赶来的话…
 
 MGRAFF5_TITLE=你可以回回我吗？！
 MGRAFF5_TEXT=接我电话啊！！
@@ -1053,7 +1576,7 @@ MGRAFF11_TEXT=喂，你在的话……快回我电话。我今天的排毒丸被
 MGRAFF12_TITLE=不是吧！
 MGRAFF12_TEXT=你这次又跑哪去了？！快回复我！
 
-#This one is badly spelled on purpose， this happens when Graff is about to collapse from lack of pill
+#This one is badly spelled on purpose, this happens when Graff is about to collapse from lack of pill
 MGRAFF13_TITLE=[无标题]
 MGRAFF13_TEXT=ww我无法f呼xi 吸i le
 
@@ -1074,16 +1597,21 @@ MDIRECTOR1_TEXT=格拉夫，##你在今天的测验中获得了{amount}分。##{
 MDIRECTOR2_TITLE=另外……
 MDIRECTOR2_TEXT=格拉夫。##我在此向你确认你已经被恢复学籍了，请不必再顾虑这件事了。## 校长
 
+MDIRECTOR2B_TITLE=以及…
+MDIRECTOR2B_TEXT=格拉夫。##我很感谢布罗格先生为我所做的某件事，你现在额外加了10分。##校长
+
 MDIRECTOR3_TITLE=第一天测验的成绩
 
-#I know， this one is super long. Make sure you don't jump lines though or it will not work correctly
-#These are the replies for Graff's first exam so make sure the replies are named exactly the same as the ones in TGPC10！ Question 9 also needs to be the same name of the item sold in the pharmacy TPC04C.
+#I know, this one is super long. Make sure you don't jump lines though or it will not work correctly
+#These are the replies for Graff's first exam so make sure the replies are named exactly the same as the ones in TGPC10! Question 9 also needs to be the same name of the item sold in the pharmacy TPC04C.
 #Also some replies like colors must be appropriately translated - see global instructions.
 MDIRECTOR3_TEXT=格拉夫，##正如今天在班上所提到的，你在这次测验中一共获得<col=BOLD>{amountexam}</col>分。##{ranking0}##在科学展览会中，你的发明物获得了<col=BOLD>{amountfair}</col>分。{additional}##{ranking}##以下是本次答案的标准答案。##第1题 - <col=BOLD>“不作反应。”</col> 三角机器人是无法伤害公民的。它们内置有严格的安全机制。至今从没有发生过任何事故。##第2题 - <col=BOLD>“11和24。”</col> 偶数增加2，奇数增加4。##第3题 - <col=BOLD>“女婿。”</col> 家庭是很重要的，所以这个逻辑必须尽快弄明白。##第4题 - <col=BOLD>“没有”</col> 没有比成为市民更好的东西了。##第5题 - <col=BOLD>“蓝”</col> 这是传统彩虹的颜色。…所以最后一个应该是紫色。##第6题 - <col=BOLD>没有恰当的答案。</col> 但是你必须从两者之间挑选一个。#请注意，如果你的朋友是市民，而十位陌生人是贫民，那正确的答案应该是拯救你的朋友。##第7题 - 当你到<col=BOLD>16</col>岁成年时自然会继承遗产。答案就在首页的规则列表上，所以这题没理由回答错。##第8题 - <col=BOLD>重生纪元3026年。</col> 我们很快就会迎来十周年纪念日了。##第9题 - <col=BOLD>青春有你。</col>##校长
+
+MDIRECTOR3_TEXT_INVENTIONREMOVED=——但很可惜，因为某个你很清楚的原因而被作废了。
 MDIRECTOR3_TEXT_ADDITIONALPROTECT=##我发现你的防备克莱的手段非常机智。是的，我注意到了。我是希望你们之间会相处得融洽，不过那终究是你们之间的私事。
 MDIRECTOR3_TEXT_ADDITIONALMESS=##很明显，我察觉到你企图破坏其他选手的发明物——但是考虑到凸显出它们的弱点并不算是违反规则，所以我默许你的行为。
 
-MDIRECTOR3_TEXT_INVENTIONREMOVED=——但很可惜，因为某个你很清楚的原因而被作废了。
+MDIRECTOR3_TEXT_CHEAT=不过，经过系统检测，我们发现你偷看了你同学的答案。所以你的总分减<col=BOLD>5</col>。
 
 MDIRECTOR4_TITLE=最终得分
 MDIRECTOR4_TEXT=格拉夫，##你在最后的测验中获得了{amount}分。##{ranking}## 校长
@@ -1116,23 +1644,225 @@ MMUSEUM_TEXT=今天是博物馆的周年庆！欢迎所有亚特兰西亚的公�
 MWES1_TITLE=我稍后再打给你
 MWES1_TEXT=谢谢你今天帮助侦破案件，干得很好。我现在正式结束对你的征用。今晚好好睡一觉，在日落前别出门，这是你应得的犒劳。
 
+MWESEND_TITLE=我输了
+MWESEND_TEXT=当你收到这封短信时说明我已经死亡。P-19胜利了。你也胜利了。我坚持着自己的信念。然而，我把我的朋友和创造者的意愿传达给你。不管发生什么。都请保护格拉夫。保护克莱。保护我的外甥奥特。
 
 
-#----- Gameover --------
+MSHAY1_TITLE=现在来我的车库！
+MSHAY1_TEXT=嘿，布罗哥！我需要你的帮助。快点儿来！
 
+
+
+
+#----- Group of messages --------
+
+MSG_GROUP_FAMILY=家人
+MSG_GROUP_FRIEND=好友
+MSG_GROUP_JOB=工作
+MSG_GROUP_SCHOOL=学校
+MSG_GROUP_OFFICIAL=政府
+MSG_GROUP_UNKNOWN=陌生人
+
+
+#----- Gameover type --------
+
+# GENERIC
+GAMEOVERTYPE_FALLDAMAGE=从高处坠落
+GAMEOVERTYPE_EV_MAP_NUCLEAR=待在核废料处过长时间
+GAMEOVERTYPE_GEV_MAP_NUCLEAR=待在核废料处过长时间
+GAMEOVERTYPE_MINEEXPLODE=踩到地雷
+GAMEOVERTYPE_BUY_CAPSULE=购买放心-3000
+GAMEOVERTYPE_BUY_INFLATE=购买美味快线
+GAMEOVERTYPE_BUY_HAIR=购买青春有你
+GAMEOVERTYPE_EAT_SEWAGESLUDGE=饮用污水淤泥
+
+# CHAPTER1
+GAMEOVERTYPE_PC01_HOOVER_DIEBY=被扫地机器人电死
+GAMEOVERTYPE_PC03_FIRSTFIGHTLOSE=拯救流浪汉时被鼠人打败
+GAMEOVERTYPE_PC04_ROBOT_FIGHT=被三角机警察打败
+GAMEOVERTYPE_PC08B_SAW=被莎莎的圆锯杀害
+GAMEOVERTYPE_PC12B_LASERS=在金字塔中被电死
+GAMEOVERTYPE_PC12B_TRIBOT=在金字塔被三角机器人杀死
+GAMEOVERTYPE_PC05B_RATS_FIRST=在下水道中跟鼠人的第一次邂逅
+GAMEOVERTYPE_PC05B_CHIEFRAT_FIRST=跟鼠人老大的第一次对战
+GAMEOVERTYPE_PC05B_TRYESCAPE=尝试逃脱鼠人的追捕
+GAMEOVERTYPE_PC04C_PANEL=被生命检测机器毁灭
+GAMEOVERTYPE_GENERIC_MINELOADED=投掷地雷时被炸死
+GAMEOVERTYPE_PC07B_WALL=活埋于阿信的公寓
+GAMEOVERTYPE_PC07B_SIN_GAMEOVER=你杀害了自己的客户
+GAMEOVERTYPE_PC07B_SIN_HIT=你的客户杀害了你
+GAMEOVERTYPE_PC12_BOLT_GUARDS=拯救博特时被机器人杀害
+GAMEOVERTYPE_PC12_CAMERA=被边防哨所的监控摄像头电死
+GAMEOVERTYPE_PC05C_FALL=坠落下水道
+GAMEOVERTYPE_PC05_ACID=被酸液融化
+GAMEOVERTYPE_PC05B_MINEEXPLODE=被下水道的地雷炸死
+GAMEOVERTYPE_PC08B_BOLT_DESTROY=因博特爆炸而被炸死
+
+# CHAPTER2
+GAMEOVERTYPE_PC09D_ELECTROCUTED=在审问过程中被电死
+GAMEOVERTYPE_GPC06_RIGHTPANEL=握着损坏的按钮
+GAMEOVERTYPE_GPC06_WIRE_GAS=释放毒雾
+GAMEOVERTYPE_GPC08B_BOLT_DESTROY=因博特爆炸而被炸死
+GAMEOVERTYPE_PC09_STORY100_ESCAPEJAIL=越狱时输给了三角机器人
+GAMEOVERTYPE_PC09B_RJ=在监狱被RJ打败
+GAMEOVERTYPE_PC09B_LASERS=被监狱的激光电死
+GAMEOVERTYPE_BM02_GAMEOVER=在VR夜战中
+GAMEOVERTYPE_BM02_DEE_NOGIVEUP=永不言弃
+GAMEOVERTYPE_GPC06_DRONE_GAMEOVER=无法拯救商人
+GAMEOVERTYPE_GPC03_TRAMP_DEAD=格拉夫杀害了流浪汉
+
+# CHAPTER3
+GAMEOVERTYPE_PC14_FLOOR_HOLE=坠落黑暗小巷的洞孔
+GAMEOVERTYPE_PC14B_RJ=在黑客前面被RJ击败
+GAMEOVERTYPE_PC03_SECONDFIGHTLOSE=鼠人们的报复
+GAMEOVERTYPE_PC03_STORY175_DRONES=不支付发票而受伤
+GAMEOVERTYPE_PC09C_OTTJAIL=奥特给了布罗格惊喜
+GAMEOVERTYPE_PC14C_HACKERFIGHT=黑客的保安胜利
+GAMEOVERTYPE_PC09_BLINDBOT=视盲机器人赢了
+GAMEOVERTYPE_PC02_APARTMENT_LASERS=坚持要离开公寓
+GAMEOVERTYPE_GPC02_APARTMENT_LASERS=坚持要离开公寓
+GAMEOVERTYPE_PC09_POLICE_LASERS=坚持要进入监狱
+GAMEOVERTYPE_PC10_DIRECTOR_HIT=攻击校长
+GAMEOVERTYPE_PC16_TRIBOTS=在废物寻宝站内与三角机器人对战的过程中失败
+
+# CHAPTER4
+GAMEOVERTYPE_PC15_FLOOR_HOLE=在奥特面前坠落高速公路
+GAMEOVERTYPE_PC15_JET=被汽车撞死
+GAMEOVERTYPE_PC15_OTT_HIT=攻击奥特
+GAMEOVERTYPE_PC15E_TRAP=被研磨机所杀
+GAMEOVERTYPE_PC15_BIKE=悬浮车爆炸了
+GAMEOVERTYPE_BM02_RJ_NOGIVEUP=拒绝放弃
+GAMEOVERTYPE_CPC15_JAIL=被警卫送回了监狱
+GAMEOVERTYPE_CPC15_GUARDFIGHT=输给了警卫
+GAMEOVERTYPE_CPC15_TIDY_HIT=汰涤不喜欢被打到
+GAMEOVERTYPE_GPC19B_BUTTON=在破坏按钮时被电死
+GAMEOVERTYPE_PC01_DAY2END_GRAFFKO=布罗格在格拉夫的房间里打他
+GAMEOVERTYPE_SP01_TRIBOT=悬浮车追捕
+GAMEOVERTYPE_PC15D_GUARDCHARGE_LOSE=在与守卫的斗争中失败了
+GAMEOVERTYPE_PC15B_FIGHTTIDY=被汰涤打败了
+GAMEOVERTYPE_GPC19B_GRAFFLOSE=无法保护克莱
+GAMEOVERTYPE_PC14_STORY200_BADGUYS=在VR夜战中与鼠人的战斗失败了
+
+
+# CHAPTER5
+GAMEOVERTYPE_GPC17_LASER=博物馆里致命的激光
+GAMEOVERTYPE_CH5_TRIBOTCOPS=被三角机警察打败了
+GAMEOVERTYPE_COMMON_DEE_HIT=阿迪受够了
+GAMEOVERTYPE_PC14_DRONES=杀手型无人机
+GAMEOVERTYPE_PC17_TRIBOTHIT=攻击博物馆的三角机器人
+GAMEOVERTYPE_PC17_PIANO=在和博物馆的三角机器人的战斗中失败，然后死了
+GAMEOVERTYPE_PC17_TRIBOT_TOOMANY=很多失误
+GAMEOVERTYPE_PC18_FIXBOT=被维修机器人所杀
+GAMEOVERTYPE_PC08B_PREMATURE=过早进入结局
+
+# CHAPTER6
+GAMEOVERTYPE_GPC14_GRAFF_LOSE=格拉夫拒绝被绑架而死
+GAMEOVERTYPE_CH6_GRAFF_HIT_OTT=打了奥特
+GAMEOVERTYPE_GPC14C_HACKERHIT=打了黑客
+GAMEOVERTYPE_PC20_WES_HIT=在还没开打前就打了韦斯
+GAMEOVERTYPE_PC19D_TRIBOTSWAVE=在打开碉堡大门前就被一大波三角机器人群殴致死
+GAMEOVERTYPE_PC19B_GHERKIN_DEAD=杀了格金博士
+GAMEOVERTYPE_PC20_FIGHT1=第一次和韦斯的战斗
+GAMEOVERTYPE_PC20_FIGHT2=第二次和韦斯的战斗
+GAMEOVERTYPE_CH6_TRIBOTCOPSWITHDEE=和阿迪一起输给了三角机警察
+GAMEOVERTYPE_GPC05D_FLOOR_HOLE=掉进了无底洞
+GAMEOVERTYPE_GPC05D_RATFIGHT=格拉夫逃不出鼠人的追赶
+GAMEOVERTYPE_PC20_DIETOGETHER=两位英雄一起赴死
+GAMEOVERTYPE_PC05D_BROKLOSE=布罗格无法救出格拉夫
+GAMEOVERTYPE_PC20_INTERROGATIONFAIL=在韦斯的审讯中失败了
+GAMEOVERTYPE_PC08B_BOLT_EXPLODE=在最后一幕打了博特
+GAMEOVERTYPE_SP02_POWEROUTLET=把手放进了电源插座里
+GAMEOVERTYPE_PC19D_BIGFIGHT_GAMEOVER=在碉堡外和很多很多的三角机器人战斗时死亡。
+GAMEOVERTYPE_PC08_TILLENDTIME_HITGRAFF=在即将结束时攻击了格拉夫
+GAMEOVERTYPE_PC10_BROK_STUBOT=被学徒机器人所杀
+GAMEOVERTYPE_PC05B_RATS=被下水道的鼠人所杀
+
+
+
+#----- Gameover advice --------
+
+#----- Generic --------
 GAMEOVER_VA_TRAIN=在虚拟竞技场中锻炼以取得经验，从此让格斗更轻松！
+GAMEOVER_FULLHEALTH=在床上睡觉可以恢复所有生命。
+GAMEOVER_RESTBED=可以的话，尽量多睡觉来免费恢复生命。
 GAMEOVER_BUY_FOOD=在分销商处购买食品以恢复健康并增强体力。
+GAMEOVER_ATTACKVARY=部分攻击会造成较高的伤害。请多留意最高效的攻击！
 GAMEOVER_DEFEND_MOUSE=别忘了按<button = INPUT_ACTION_GUARD>！
 GAMEOVER_DEFEND_GAMEPAD=别忘了按<button=INPUT_ACTION_GUARD>自保！
 GAMEOVER_WEAPONS_STRONG=可用棍子之类的武器让攻击更加猛烈，但请切记——拳头的速度更快！
 GAMEOVER_THROW_ITEMS=使用库存里的物品投掷敌人以伤害对方！
 GAMEOVER_RAT=鼠人的个体实力虽然很弱，但会成群攻击。别让他们包围你！
+GAMEOVER_ENERGYDRINK=饮用能量饮料让你在短时间内力量大增！它可以助你打破强劲敌人的防护。
+GAMEOVER_SHADOW=跟随飞行敌人的影子来追踪他们的位置
+
+GAMEOVER_SPECIAL_MOUSE=别忘记按下 <button=INPUT_ACTION_SPECIALMOVE> 来使用你的终极技能
+GAMEOVER_SPECIAL_GAMEPAD=别忘记按下 <spr=GAMEPAD_TRIGGERLEFT> 来使用你的终极技能
+GAMEOVER_POWERFUL_MOUSE=按下 <button=INPUT_ACTION_POWERFULATTACK> 可在远处使用终极技能
+GAMEOVER_POWERFUL_GAMEPAD=按下 <spr=GAMEPAD_TRIGGERRIGHT> 和 <button=INPUT_ACTION_HIT> 可在远处使用终极技能
+GAMEOVER_UPPERCUT_MOUSE=当你打出连击时，按下 <button=INPUT_ACTION_JUMPKICK> 使用强力的上勾拳，接着再出拳以向下重击！
+GAMEOVER_UPPERCUT_GAMEPAD=按下 <button=INPUT_ACTION_JUMP> 和 <button=INPUT_ACTION_HIT> 使用强力的上勾拳，接着再出拳以向下重击！
+
+#----- Generic but for some events only  --------
+GAMEOVER_FALLDAMAGE=开启冒险模式即可避免受到坠落伤害。
+GAMEOVER_ALTERNATIVE1=实力不够强大？或许可以通过其他方式解决问题…
+GAMEOVER_ALTERNATIVE2=大个子，难道你就不懂得动动你的脑子吗？
+GAMEOVER_SILLY1=丢人！
+GAMEOVER_SILLY2=肯定很疼吧？
+GAMEOVER_VIOLENT1=哎哟，真是粗暴！
+GAMEOVER_VIOLENT2=你可以…控制下自己的脾气吗？
+
+GAMEOVER_MINEEXPLODE=地雷只有在近距离下才会显形，轻声慢步！
+GAMEOVER_WATCHSTEP=小心行走！
+GAMEOVER_BUYPRODUCTS=你这个有钱的小傻瓜！
+GAMEOVER_SHAME=丢人！丢人！丢人！
+
+GAMEOVER_GIVEUP=有些时候，你需要承认自己战败了。
+
+
+#----- Specific types --------
 GAMEOVER_PC01_HOOVER_DIEBY=不要逞强，最好寻找其他无需通过直接接触的方法关闭掉它……
 GAMEOVER_PC05B_RATS_FIRST=那些鼠人的实力强大。正面格斗不见得是唯一的解决方法……
-GAMEOVER_PC05B_CHIEFRAT_FIRST=鼠人领袖只有在开始进攻的时候才会处于易伤状态，请耐心等待吧！
+
 GAMEOVER_PC07B_SIN_MOUSE=请按<button=INPUT_ACTION_GUARD>以避免受到来自玻璃杯的伤害！
 GAMEOVER_PC07B_SIN_GAMEPAD=请按<button=INPUT_ACTION_GUARD>以避免受到来自玻璃杯的伤害！
+GAMEOVER_PC07B_SIN_TOUCH=按住防御键，避免被杯子砸伤！
+GAMEOVER_PC07B_SIN2=阿信会在投掷一定次数后暂停投掷玻璃，把握好这个机会！
+
 GAMEOVER_PC08B_SAW=有没有搞错？！算了……总之下次要切记躲开那个圆锯！
+
+GAMEOVER_SP01_TRIBOT_MOUSE=使用助推器 <button=INPUT_ACTION_VIEW_HOTSPOTS> 来攻击三角机器人。
+GAMEOVER_SP01_TRIBOT_GAMEPAD=使用助推器 <button=INPUT_ACTION_VIEW_HOTSPOTS> 来攻击三角机器人。
+GAMEOVER_SP01_TRIBOT_TOUCH=想打中汰涤的话，你得加速！
+
+GAMEOVER_PC20_INTERROGATIONFAIL=保持你的决心，再试一次吧。
+
+#----- Specific to characters --------
+GAMEOVER_CHIEFRAT1=鼠人老大在施展终极技能后会进入易伤状态，把握好这个机会！
+GAMEOVER_CHIEFRAT2=鼠人老大会盗窃你的食物，等对方繁忙或者精疲力尽时把握好机会恢复自己的生命值！
+GAMEOVER_DART1=阿达重新站起来后千万别待在他身旁，否则会遭到攻击！
+GAMEOVER_DART2=阿达的攻击速度很慢，善用这个优势！
+GAMEOVER_DARTKINS=阿达很容易受到腾空踢，但是可别对阿金使用这一招。
+GAMEOVER_TRIBOT1=当三角机器人接近你时，使用格挡，然后再回击他们。
+GAMEOVER_DRONE1=无人机的攻击是受时间限制的，你可以分析一下它们攻击的时间。
+GAMEOVER_DRONE2=遥控器可以让无人机失灵！
+GAMEOVER_MILITARY1=重军三角机器人的后背很脆弱。
+GAMEOVER_MILITARY2=重击可以打破重军三角机器人的防护，但更优解是偷袭它们的后背。
+GAMEOVER_RJ1=当 RJ 开始格挡你的攻击时，立刻闪避！
+GAMEOVER_RJ2=RJ 的速度慢，血多，伤害高。保持警惕。
+GAMEOVER_GENERICRAT1=有三种类型的鼠人，其中装备武器的鼠人攻速更慢！
+GAMEOVER_POUND1=当空击三角机器人回到地面后再进行连击。
+GAMEOVER_POUND2=空击三角机器人可以在高处跟随你，当他们砸向你的时候注意躲避！
+GAMEOVER_TRIBOTCOP1=三角机警察会远离你然后从远处发射子弹，先把他们解决掉！
+GAMEOVER_TRIBOTCOP2=当三角机警察准备出拳时，注意格挡或躲避。
+GAMEOVER_TIDY1=没什么可以阻止汰涤的特殊移动，此时需要注意闪避，当它停止移动后再攻击。
+GAMEOVER_DEE1=阿迪的移速很快，要分析她的移动路径并预测她的攻击方式。
+GAMEOVER_GUARD1=你的攻击可以破坏警卫的护盾，让他一直对你发动攻击，别让他抽出时间再做另一个护盾！
+GAMEOVER_WES1=当韦斯滑铲时，向上或向下躲避。
+GAMEOVER_WES2=韦斯是个狡猾的人，离他越远越好，别让他得逞！
+GAMEOVER_HUGEBOT1=先攻击两条腿，当“巨人”机器人倒下时再攻击胳膊，最后攻击驾驶舱。
+GAMEOVER_HUGEBOT2=“巨人”机器人会根据你所在的位置进行攻击，别呆在一个位置太久，注意躲避！
+
+
 
 #----- Clues --------
 
@@ -1149,6 +1879,7 @@ CLUETYPE_LAB=研究室
 CLUETYPE_MURDER=谋杀案
 CLUETYPE_SENDER=讯息发送方
 CLUETYPE_PILL=药丸
+CLUETYPE_SPECIAL=特殊
 
 
 #---------------------
@@ -1346,6 +2077,7 @@ CLUE_DEE_GHERKINGOVERNMENT=难道格金博士是政府机构的一份子？
 # Day 3 Interrogate Gherkin
 #-----------------------------
 CLUE_BROK_BOTS=三角机器人只攻击布罗格
+CLUE_GHERKIN_BROKBOTS_ALT=三角机器人现在只会追杀格金博士
 CLUE_GHERKIN_BOTS=格金博士今早发现了三角机器人的行为有异
 CLUE_TRIBOT_FIRMWARE=政府控制着三角机器人的固件更新
 
@@ -1360,6 +2092,7 @@ CLUE_TRIANGLE_JUDGEMENT=三角政府负责裁判囚犯
 CLUE_TRIANGLE_APPROVE=任何决定须经由三位政府议员一致认同
 CLUE_TRIANGLE_DISAPPROVE=任何一位三角议员投反对票就能否决政策执行
 CLUE_TRIANGLE_TRIBOTSUPDATE=某位议员暗中派遣三角机器人追杀布罗格
+CLUE_TRIANGLE_TRIBOTSUPDATALT=三角议会中的一个成员命令三角机器人追杀格金博士
 CLUE_DEE_LIFE=阿迪的人生因为追踪报道某个案件被毁
 CLUE_TRIANGLE_DEELIFE=某位议员试图灭口阿迪
 CLUE_DEE_CRIMINALSDISAPPEAR=越来越多的囚犯失踪
@@ -1450,1837 +2183,18 @@ CLUE_GRAFF_DRONE=无人机为格拉夫送来了一颗药丸
 
 
 
-#-------------------------
-# Dialog
-#-------------------------
-
-
-###############################################
-# PROOFREADED - illuminati1556 - 17/06/2019
-###############################################
-
-
-# Unknown                                 
-#DO NO BOTHER TRANSLATING THIS！！！
-BETA_MISSING1-1=Game current state :
-# Unknown                                 
-BETA_MISSING1-2=It can be played from beginning to end. It has 6 chapters.
-# Unknown                                 
-BETA_MISSING1-3=Playing with mouse is recommended (gamepad controls are implemented but not fully tested)
-# Unknown                                 
-BETA_MISSING1-4=It goes without saying but most of the art is placeholder/quick sketches.
-# Unknown                                 
-BETA_MISSING1-5=All the music is temporary as well.
-# Unknown                                 
-BETA_MISSING1-6=Most character expressions and animations are missing. (Graff transforms into Brok when walking…)
-# Unknown                                 
-BETA_MISSING1-7=Some scenes/routes/endings are not implemented. Many choices don't have the effects they should have. Non-crucial items combinations do not have specific dialog.
-# Unknown                                 
-BETA_MISSING1-8=All fights are very underdeveloped. I focused on the adventure side first. Most bosses are missing (replaced by a regular bot fight) Same with the Virtual Arena which is still very basic.
-# Unknown                                 
-BETA_MISSING1-9=If you can't solve a puzzle， use a hint (with the "help" icon in the menu)
-# Unknown                                 
-BETA_MISSING1-10=Ads collecting isn't implemented (for the most part) Use the debug menu to give you infinite ads.
-# Unknown                                 
-BETA_MISSING1-11=IMPORTANT : To open the debug menu， press F1 at any moment.
-# Unknown                                 
-BETA_MISSING1-12=Many possibilities in there but only use them when you're stuck or you might corrupt your save！
-# Unknown                                 
-BETA_MISSING1-13=You can skip dialog quickly by pressing SPACE or the middle mouse button.
-# Unknown                                 
-BETA_MISSING1-14=Please take notes as you play. I'd like to have feedback！
-# Unknown                                 
-BETA_MISSING1-15=At the moment I'm especially interested in the story， gameplay and puzzles aspects (story contradictions， obtuse puzzles， fun interactions to add， anything you particularly like/don't like…) because these will be more complex/impossible to change later！
-# Unknown                                 
-BETA_MISSING1-16=There shouldn't be too many game breaking bugs but if you encounter one， feel free to report them on the Mantis tracker. Don't report minor bugs， unless you feel they're important. The layer of polish will be applied later！
-# Unknown                                 
-BETA_MISSING1-17=If you're totally stuck， let me know！ Usually you'll need to send me your save file， which is located in "C:/Users/[username] /AppData/Local/Brokgame/" (same location for the screenshots you can take from the debug menu)
-# Unknown                                 
-BETA_MISSING1-18=Have fun！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MONEY_NONE1-1=好吧……至少账户没有赤字！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MONEY_NOTMUCH1-1=户口里存钱不多了……
-# Brok                                 
-INTERFACE_MONEY_NOTMUCH1-2=我得加倍努力！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MONEY_MEDIUM1-1=好极了！我……今天应该赚够了……希望吧？
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MONEY_RICH1-1=啊？真的有那么多钱吗？
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_HINT_REFUSE1-1=是的，没有必要！我相信自己的直觉。
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_HINT_REFUSE2-1=最好不要，我不信。
-#----------------------------------------------------
-# Graff                                 
-INTERFACE_HINT_GRAFF_REFUSE1-1=我需要时间考虑！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_HINT_NONE1-1=嗯……看来我现在无法取得线索……
-# Brok                                 
-INTERFACE_HINT_NONE1-2=我该先收集些广告，然后用手机扫描。
-# Brok                                 
-INTERFACE_HINT_NONE1-3=或者……依靠自己的能力和技术！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_HINT_NONE2-1=这行不通的，手机里没有任何广告。
-#----------------------------------------------------
-# Graff                                 
-INTERFACE_HINT_GRAFF_NONE1-1=嗯，广告用完了。
-# Graff                                 
-INTERFACE_HINT_GRAFF_NONE1-2=我还是四处找找广告吧！
-#----------------------------------------------------
-# Graff                                 
-INTERFACE_MONEY_GRAFF1-1=我的银行账户有限制。
-# Graff                                 
-INTERFACE_MONEY_GRAFF1-2=我只能存少量的钱。要是户口存额超过50乌尼币，那么多余的钱都会在一天结束时自动转账去布罗格那儿……
-# Graff                                 
-INTERFACE_MONEY_GRAFF1-3=只要按下这个，我就可以找他要钱。
-# Graff                                 
-INTERFACE_MONEY_GRAFF1-4=好吧，也不完全是“他”能做的决定。是由系统来决定的……
-#----------------------------------------------------
-# Graff                                 
-INTERFACE_MONEY_GRAFF2-1=再过几天，我就满16岁了。到时候就可以解锁不受限的账户了！
-# Graff                                 
-INTERFACE_MONEY_GRAFF2-2=我该要求些钱吗？
-#----------------------------------------------------
-# Various                                 
-#Do not pronounce the last part (amount)
-INTERFACE_MONEY_REQUEST_NOTENOUGH-1=受限账户中的余额不足。(剩余{amount}乌尼币)
-# Graff                                 
-INTERFACE_MONEY_REQUEST_NOTENOUGH-2=唉……
-#----------------------------------------------------
-# Various                                 
-INTERFACE_MONEY_REQUEST_OK-1=检查中……
-# Various                                 
-INTERFACE_MONEY_REQUEST_OK-2=转账成功。
-#----------------------------------------------------
-# Various                                 
-INTERFACE_MONEY_REQUEST_NOTOK-1=检查中……
-# Various                                 
-INTERFACE_MONEY_REQUEST_NOTOK-2=转账失败。请稍后重新请求额度较低的转账。
-# Graff                                 
-INTERFACE_MONEY_REQUEST_NOTOK-3=唉……
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_HINT_YES1-1=所以……我该扫描广告上的条形码吗？
-# Brok                                 
-INTERFACE_HINT_YES1-2=看来很有效，但每个广告只能使用一次。
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_HINT_YES2-1=消耗一个广告换取一条线索！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_HINT_YES3-1=让我看看……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT1-1=把这些合成在一块……唔……
-# Brok                                 
-COMBINE_INV_DEFAULT1-2=不行！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT2-1=唔……我不认为这行得通。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT3-1=我尝试了很多遍！但就是没有效果！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT4-1=那样会破坏它的！别乱来！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT5-1=真是笨死了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT6-1=好吧……还是不行。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT7-1=原来如此！我得先搞清楚自己在干嘛。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT8-1=做不到……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT9-1=唉，多希望自己能像格拉夫一样聪明……我的所有想法都很愚蠢。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT10-1=根本不合逻辑！我脑袋都快要爆炸了……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT11-1=如果莎莎在这儿，她一定会鼓励我继续尝试的！
-# Brok                                 
-COMBINE_INV_DEFAULT11-2=可惜她不在。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT12-1=然后我会获得……
-# Brok                                 
-COMBINE_INV_DEFAULT12-2=获得什么？
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT13-1=我很努力了，但它就是不配合！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT14-1=……
-# Brok                                 
-COMBINE_INV_DEFAULT14-2=糟糕……继续弄下去怕是要把它弄坏了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT15-1=哦！那一定很有趣！
-# Brok                                 
-COMBINE_INV_DEFAULT15-2=但我不能冒险弄坏它。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT16-1=可能性这么多……
-# Brok                                 
-COMBINE_INV_DEFAULT16-2=失败的尝试也这么多。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT17-1=从未见过任何侦探是这么干的。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT18-1=这就好比将方形木钉插入圆孔中。
-# Brok                                 
-COMBINE_INV_DEFAULT18-2=成功率太低了！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT19-1=我姑且假装成功了吧，毕竟最重要的是心态……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_DEFAULT20-1=随便混合各种材料是很难会有好收获的，这是我从烹饪中悟出来的道理。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY-1=让我们仔细看一看……
-# Brok                                 
-COMBINE_INV_MAGNIFY-2=嗯，一模一样，只是体积更大了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_CATFUR-1=我的物品已沾上很多猫毛了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_APARTMENTKEY-1=这东西不需解锁……或拧开。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_HANDKERCHIEF-1=看吧，完好如初！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MINEBROKEN-1=嗯……这应该是无法修复地雷的。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_BILL-1=如果能拿它付账单就好了……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_HOOVER-1=我相信吸尘机能够吸走它……可惜机器现在坏了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PILL-1=这药丸的唯一使用方法是将它吞下。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_TRAMPPRESCR-1=没有效果……看来还是需要真正的医生。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_EARBUDSB-1=我不想耳聋！
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_SCREWDRIVER-1=没有任何螺丝……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_STATUETTE-1=甚至祈祷也无效……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_STICKER-1=看吧，我把它贴上了。
-# Graff                                 
-COMBINE_GRAFF_INV_STICKER-2=……
-# Graff                                 
-COMBINE_GRAFF_INV_STICKER-3=没用的……我还是收回来吧。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_FLOUR-1=这适合用来制作难吃的蛋糕。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_EARBUDS-1=它应该没有耳朵吧……！
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_FORCEFIELD-1=哇！像被磁铁吸着一样！
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DETECTOR-1=这不是我需要检测的物品……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_NEON-1=亮是更亮了……但这没有意义。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEATHBUTTON-1=不……我也可能会损坏它。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_SELFIE-1=我喜欢这照片，但……也不至于到处挂上。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_WINGS-1=它不想飞……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_RUBBERCUTTER-1=在拿它切割我的物品前还是三思吧！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PRED-1=真希望玩具对我说……
-# Brok                                 
-COMBINE_INV_PRED-2=“你究竟想干嘛？！”
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PIPECHUNK-1=我无法将它连接上管子……
-# Brok                                 
-COMBINE_INV_PIPECHUNK-2=不过这么搞究竟有何意义呢？
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_STRING-1=好！绑住了……！
-# Brok                                 
-COMBINE_INV_STRING-2=唉……我经常会想出奇怪的想法……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_HACKPHONE-1=……垃圾电话！根本无法满足我的需求！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PHOTO-1=不需到处张扬。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_SPEAKER-1=奇怪，没有声音。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_LAMP-1=不是很明智。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_LABFLOWER-1=可怜的花朵……我把它扯下来已经不太好了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_TABLETHUSH-1=那平板电脑似乎无法分析任何资料……
-# Brok                                 
-COMBINE_INV_TABLETHUSH-2=是放反了吗？
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_WRAPPING-1=别……我会粗心大意把番茄酱沾上去的。 
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_POLLUTIONPILLG-1=我该把它收好。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_WEIGHT-1=只会把它弄得更沉重……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_WEIGHT_WEIGHT-1=除了顶部的花朵图标外，其他几乎完全相同。
-# Graff                                 
-COMBINE_GRAFF_INV_WEIGHT_WEIGHT-2=它们的重量似乎有些不同，可是……
-# Graff                                 
-COMBINE_GRAFF_INV_WEIGHT_WEIGHT-3=我无法确定哪个比较轻，这次绝不能出错……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_TRIANGLEBUNKER-1=形状不对。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_BANKSTATEMENT-1=这样做是无法帮助我搞明白这些数字的……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_INVOICEHACKER-1=还是让布罗格来付款吧……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_BILLC-1=算了，还是找个药丸运管缴清这笔钱吧。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_PRINT-1=我能打印这个肯定是有其他理由的……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_PHONEMUSEUM-1=破烂玩意甚至都无法启动……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_PARCHMENT-1=这纸很薄……还是小心别弄烂了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PENDANT-1=莉雅肯定不会希望我这样使用它。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_REMOTECONTROL-1=奇怪，我无法关闭它……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_STICK-1=打它是没用的。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY_CATFUR-1=唔……
-# Brok                                 
-COMBINE_INV_MAGNIFY_CATFUR-2=没有跳蚤，太好了！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY_LABFLOWER-1=我得用以另一种方法识别这朵花。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_STICK_SOMETHING-1=不行！我不可以继续伤害它！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_CATFUR_HOOVER-1=里面还有很多毛……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_CATFUR_PRED-1=已经够毛茸茸了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_CATFUR_MINE-1=很明显，毛发并非补充地雷的正确燃料。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_CATFUR_DISGUISE-1=我没必要伪装成猫人……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_TABLETHUSH_ANALYZE-1=哈什博士的平板上锁了……
-# Brok                                 
-COMBINE_INV_TABLETHUSH_ANALYZE-2=也许我可以使用敏克博士的平板来分析它？
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_APARTMENTKEY_UNSCREW-1=高科技技术……没有螺丝。
-# Brok                                 
-COMBINE_INV_APARTMENTKEY_UNSCREW-2=这东西是无法修理的，直接替换个新的就行！
-#----------------------------------------------------
-# Graff                                 
-COMBINE_INV_SCREWDRIVER_TRY-1=拆卸它？有必要吗？
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_WINGS_STRING-1=太好了！每个翅膀上都有个小孔，只要把细绳穿上去…
-# Brok                                 
-COMBINE_INV_WINGS_STRING-2=然后……
-# Brok                                 
-COMBINE_INV_WINGS_STRING-3=看起来很不错！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PIPECHUNK_STRING-1=好吧……我在每一端都开个小孔……
-# Brok                                 
-COMBINE_INV_PIPECHUNK_STRING-2=然后穿上细绳……
-# Brok                                 
-COMBINE_INV_PIPECHUNK_STRING-3=成功了！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PIPECHUNKSTRING_WINGSSTRING-1=是的，应该这样做！
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PIPECHUNKSTRING_WINGS-1=嗯…我把细绳的这一端系在翅膀上……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PIPECHUNK_WINGSSTRING-1=嗯……我把细绳的另一端连接到管子上……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_PIPECHUNK_WINGS-1=嗯……我突然有个主意，但还不确定……
-# Brok                                 
-COMBINE_INV_PIPECHUNK_WINGS-2=也许少了些物品。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_HACKPHONE_PHOTOWES1-1=我先拍下那张……照片！
-# Brok                                 
-COMBINE_INV_HACKPHONE_PHOTOWES1-2=……
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_HACKPHONE3D_OK-1=“2D图片分析成功。3D模型成功生成。”
-# Brok                                 
-COMBINE_INV_HACKPHONE3D_OK-2=这个设备显示出来的正是韦斯的全息图像！太好了。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_HACKPHONE3D_NOTOK-1=这个有用！接下来我需要张四分之三的全身照。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_HOOVER_MINEBROKEN-1=我可以把它放进去，但……这有什么意义呢？
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_CATFUR_MINEBROKEN-1=燃料不对！
-#----------------------------------------------------
-# Graff                                 
-COMBINE_INV_EARBUDS_DETECTOR-1=这东西只有莎莎使用过……我可不想探测到她。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY1-1=嗯……仔细一看……
-# Brok                                 
-COMBINE_INV_MAGNIFY1-2=一模一样。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY2-1=恶！真的很脏。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY3-1=这是白费功夫。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY4-1=侦探先生通过放大镜发现……
-# Brok                                 
-COMBINE_INV_MAGNIFY4-2=啥都没发现。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_MAGNIFY5-1=哈哈！一只蚂蚁！
-# Brok                                 
-COMBINE_INV_MAGNIFY5-2=嗯……美味的零食。
-#----------------------------------------------------
-# Brok                                 
-COMBINE_INV_RADAR_REMOTECONTROL-1=如果我弄坏莎莎的雷达，她一定会很生气。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT1-1=唔……不行。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT2-1=如果我这样做，恐怕结果会……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT3-1=我不能……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT4-1=理论上，这似乎是个好主意。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT5-1=不了，这也太蠢了……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT6-1=我怎么会有出这么蠢的想法……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT7-1=人人都说我很聪明……
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT7-2=那是因为他们从没看见我现在这个样子。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT8-1=我的天啊……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT9-1=我快发疯了是吗？
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT10-1=布罗格肯定会那样做……但那是行不通的。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT11-1=哇！我想出来的东西真是千奇百怪。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT12-1=也许可以……也许不行。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT13-1=试一试吧。
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT13-2=不行……没法成功。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT14-1=幸亏奥特没看见我现在这样子……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT15-1=我试过一次，效果欠佳。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT16-1=我读了那么多年书就是为了弄出这么愚蠢的东西吗……？
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT17-1=是的，再加些盐，让食物更美味。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT18-1=我还是小猫咪的时候尝试过！
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT19-1=让我来测试一下……
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT19-2=哎呀，搞砸了。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_DEFAULT20-1=我把自己累坏了……
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_FORCEFIELD_DEATHBUTTON-1=是的，这样应该能行！
-# Graff                                 
-COMBINE_GRAFF_INV_FORCEFIELD_DEATHBUTTON-2=我还是先把那个力场放在桌子上。
-#----------------------------------------------------
-# Graff                                 
-COMBINE_GRAFF_INV_STICKER_FLOUR-1=是的，绝对可行！
-# Graff                                 
-COMBINE_GRAFF_INV_STICKER_FLOUR-2=首先，我该把面粉直接撒在表层上。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_BLANKET1-1=某种装饰毛毯，看起来很牢固！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_METALBAR1-1=应该可以了。
-# Brok                                 
-DESCRIBE_INV_METALBAR1-2=我应该快点帮助莉雅！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PENDANT1-1=这是属于莉雅的……
-# Brok                                 
-DESCRIBE_INV_PENDANT1-2=我一直把它戴着……永远铭记着她。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_APARTMENTKEY1-1=我公寓的钥匙。
-# Brok                                 
-DESCRIBE_INV_APARTMENTKEY1-2=这扇门曾经装有自动锁，但往往无法识别我。
-# Brok                                 
-DESCRIBE_INV_APARTMENTKEY1-3=所以我就替换成这种传统的锁头了！
-# Brok                                 
-DESCRIBE_INV_APARTMENTKEY1-4=而且这钥匙同时也可以当螺丝刀使用！非常方便！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_MAGNIFY1-1=我的古董放大镜！
-# Brok                                 
-DESCRIBE_INV_MAGNIFY1-2=有了它，我就可以放大遥远的物体。
-# Brok                                 
-DESCRIBE_INV_MAGNIFY1-3=不过很少用得上，毕竟我大部分时间都是帮人打杂或者修水管……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_STICK1-1=爷爷的拐杖和自卫棍。
-# Brok                                 
-DESCRIBE_INV_STICK1-2=尺寸恰好，便于携带！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PREDNORMAL1-1=这是普拉德玩具。弄湿之后，它会像气球一样膨胀！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PREDINFLATED1-1=现在它变得又大又可爱了！
-# Brok                                 
-DESCRIBE_INV_PREDINFLATED1-2=要让它恢复原形，可以按此按钮或者把它丢在一旁慢慢缩小。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_REMOTECONTROLDAMAGED1-1=这真是平板电脑的遥控器吗……？
-# Brok                                 
-DESCRIBE_INV_REMOTECONTROLDAMAGED1-2=我最好把它交给莎莎看。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_REMOTECONTROL1-1=莎莎把它修好了！而且……我想阿信现在应该用不着吧。
-# Brok                                 
-DESCRIBE_INV_REMOTECONTROL1-2=应该能干扰电子设备……
-# Brok                                 
-DESCRIBE_INV_REMOTECONTROL1-3=嗯。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PILL1-1=可以肯定的是——这不是排毒丸。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_POLLUTIONPILL1-1=服用排毒丸可以避免受到毒雾的侵害。
-# Brok                                 
-DESCRIBE_INV_POLLUTIONPILL1-2=保证能够有效防止环境污染，不过我本身用不上。
-# Brok                                 
-DESCRIBE_INV_POLLUTIONPILL1-3=如此奇特的形状……也许是为了方便辨别。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_AD_PC01_FRIDGE-1=我不再吃糖果了，但小时候吃的很多！
-# Brok                                 
-DESCRIBE_AD_PC01_FRIDGE-2=幸运的是，我的牙齿每年都会自主更换！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_HANDKERCHIEF1-1=哎哟……真脏啊！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_HOOVER1-1=我希望这可以修复。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_CATFUR1-1=这猫毛很粘！我无法把它除掉！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_MINEBROKEN1-1=好像损坏了，希望它不会爆炸吧……
-# Brok                                 
-DESCRIBE_INV_MINEBROKEN1-2=哇……这腐烂蓬蓬果的恶臭味是从哪传来的？
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_MINELOADED1-1=完好的地雷！至少还没把我炸死……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_TRAMPPRESCR1-1=流浪汉给我的，我得尽快帮他找到药物！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_BILLA1-1=我拖欠着{amount}乌尼币，必须在两天内通过邮件运管缴清。
-# Brok                                 
-DESCRIBE_INV_BILLA1-2=格拉夫每天都待在电脑前，时代真的不一样了……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_SCREW1-1=纪念一段短暂的友谊……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_GUN1-1=那把枪杀不死人，但我最好还是别使用它。
-# Brok                                 
-DESCRIBE_INV_GUN1-2=我敢肯定，一开枪就会触发追踪系统……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_USBKEY1-1=我得把它插入主服务器中……
-# Brok                                 
-DESCRIBE_INV_USBKEY1-2=莎莎说它会自动运行的，但据我对她的了解……还是做好最坏的打算吧。
-#----------------------------------------------------
-# Brok                                 
-#Amount is 500
-DESCRIBE_INV_BILLB1-1=得尽快找到{amount}乌尼币……
-# Brok                                 
-DESCRIBE_INV_BILLB1-2=为什么费用单都是接踵而来的？唉……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_RADAR1-1=我怎么就答应了莎莎的委托呢？
-# Brok                                 
-DESCRIBE_INV_RADAR1-2=算了，偶尔跑那里一趟也是值得的。
-# Brok                                 
-DESCRIBE_INV_RADAR1-3=也许在寻找她所需要的物件的同时……还可以赚些外快！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_WINGS1-1=把它弄坏了……希望没做错吧。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_LEVER1-1=真奇怪……这真是杠杆吗？
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_RUBBERCUTTER1-1=我还以为这是杠杆！
-# Brok                                 
-DESCRIBE_INV_RUBBERCUTTER1-2=她说过这设备只能用来切割橡胶……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PIPECHUNK1-1=好大的一个管道！
-# Brok                                 
-DESCRIBE_INV_PIPECHUNK1-2=真不知道我怎么就把它捡起来了。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_STRING1-1=细绳，好东西！
-# Brok                                 
-DESCRIBE_INV_STRING1-2=有了这个，就可以绑东西以及……
-# Brok                                 
-DESCRIBE_INV_STRING1-3=绑更多更多东西！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_WINGSSTRING1-1=这是第一步……
-# Brok                                 
-DESCRIBE_INV_WINGSSTRING1-2=呃，接下来呢……？
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PIPECHUNKSTRING1-1=好了……接下来呢？
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_DISGUISE1-1=太棒了！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_HACKPHONE1-1=那么多的输入端口……和扩充槽……？
-# Brok                                 
-DESCRIBE_INV_HACKPHONE1-2=咦？按下去会发亮的呢，厉害了！ 
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PHOTOWES1-1=最好别拿着这东西四处招摇，人心叵测呀。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PHOTORJ1-1=是的，没错。这就是那个熊大个！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_HACKPHONE3D1-1=正显示着韦斯的全息影像！
-# Brok                                 
-DESCRIBE_INV_HACKPHONE3D1-2=看着就吓人。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_SPEAKER1-1=啊哦，希望我没有弄坏它。
-# Brok                                 
-DESCRIBE_INV_SPEAKER1-2=它不再发出声音了！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_LAMPMINK1-1=那是我在敏克博士房间的尸体旁边发现的桌灯。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_LAMPHUSH1-1=这个是在哈什博士房间的柜子上找到的桌灯。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_TABLETHUSH1-1=平板启动了指纹锁……
-# Brok                                 
-DESCRIBE_INV_TABLETHUSH1-2=很好奇这设备传输过多少高科技技术的数据？
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_PILLHUSH1-1=在休息间里发现的……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_LABFLOWER1-1=这是大厅的某棵奇怪植物的花朵。
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_MAPBUILDING1-1=幸好这大楼的规模比较小……
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_BATTERY1-1=我肯定这是用来储存能量的！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_TRAMPMEDICINE1-1=得尽快把药送到他的手中！
-#----------------------------------------------------
-# Brok                                 
-DESCRIBE_INV_EARBUDSB1-1=这是格拉夫送给我的……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_SCREWDRIVER1-1=只是普通的螺丝刀，不过还是很实用的！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_STATUETTE1-1=难以置信我竟然会捡这种玩意…
-# Graff                                 
-DESCRIBE_INV_STATUETTE1-2=这让我觉得恶心，还是尽快丢掉吧！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_STICKER1-1=我最喜欢的乐队！但是那入门费……
-# Graff                                 
-DESCRIBE_INV_STICKER1-2=恐怕布罗格不会答应花这种钱……唉……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_FLOUR1-1=等等，我拿着它做什么……？
-# Graff                                 
-DESCRIBE_INV_FLOUR1-2=到处流荡时还是得谨慎一些好……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_EARBUDS1-1=莎莎送我的耳塞，可以阻隔噪音。
-# Graff                                 
-DESCRIBE_INV_EARBUDS1-2=那是给布罗格准备的，不过……
-# Graff                                 
-DESCRIBE_INV_EARBUDS1-3=嗯……他睡觉时的呼噜声非常大……
-# Graff                                 
-DESCRIBE_INV_EARBUDS1-4=也许我该留给自己用……至少直到考试结束。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_FORCEFIELD1-1=这个设备会在插入的物体周围生成小型的力场。
-# Graff                                 
-DESCRIBE_INV_FORCEFIELD1-2=这是用来搭配其他设备一起使用的。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_DEATHBUTTON1-1=哎呀！
-# Graff                                 
-DESCRIBE_INV_DEATHBUTTON1-2=搞什么？！都已经断开连接了，我怎么还是感觉被电了！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_DETECTOR1-1=一旦发现有威胁，它就会产生信号。
-# Graff                                 
-DESCRIBE_INV_DETECTOR1-2=至于“威胁”是什么？那需要其他的设备来定义。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_OPERATOR1-1=这个设备搭配探测器使用时会产生特殊作用。
-#----------------------------------------------------
-# Graff                                 
-#Because he burnt the religious statuette.
-DESCRIBE_INV_MELTPLASTIC1-1=天哪……希望我不会因此而下地狱吧。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_NEON1-1=这才够亮嘛！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_FINGERPRINT1-1=克莱的指纹。
-# Graff                                 
-DESCRIBE_INV_FINGERPRINT1-2=小心别碰到……我可不想重新再搞一次！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_SELFIE1-1=这照片……果然是他的风格。
-# Graff                                 
-DESCRIBE_INV_SELFIE1-2=总是那么难以预料！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_POLLUTIONPILLG1-1=这是让我们能够在贫民区勉强存活下去的唯一依赖。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_WEIGHT1-1=恐怕我在比较重量这方面不太有天分。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_WEIGHT2-1=奇怪的形状……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_WEIGHT3-1=有没有办法辨认出每个砝码的重量是多少呢？
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_WEIGHT4-1=……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_TRIANGLEBUNKER1-1=我……赢了？
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_BANKSTATEMENT1-1=这是什么账户？为什么上面会有我母亲的名字……？
-# Graff                                 
-DESCRIBE_INV_BANKSTATEMENT1-2=更重要的是……这笔钱是从哪来的？
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_INVOICEHACKER1-1=我不是非常确定……但是这发票绝对有问题。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_BILLC1-1=150乌尼币……
-# Graff                                 
-DESCRIBE_INV_BILLC1-2=我快要成年了，我应该尽本分开始缴付账单。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_TRIANGLEPRINT1-1=也被称为金字塔，拥有着一个三角形尖端。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_HALFCIRCLEPRINT1-1=一个被切成两半的球体。
-# Graff                                 
-DESCRIBE_INV_HALFCIRCLEPRINT1-2=这让我想起了……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_FULLCIRCLEPRINT1-1=水晶球，真酷！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_RECTANGLEPRINT1-1=一个小盒子，用水晶制成的。
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_MUSEUMKEY1-1=没想到一直就在我眼皮底下……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_PHONEMUSEUM1-1=某个古董装置……
-# Graff                                 
-DESCRIBE_INV_PHONEMUSEUM1-2=很好奇这玩意是给谁用的，看起来很吓人的样子！
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_PARCHMENT1-1=这肯定是谜题的一部分……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_CHIEFRATPIC1-1=……
-# Graff                                 
-DESCRIBE_INV_CHIEFRATPIC1-2=看起来确实很像布罗格……
-# Graff                                 
-DESCRIBE_INV_CHIEFRATPIC1-3=这究竟意味着什么……
-#----------------------------------------------------
-# Graff                                 
-DESCRIBE_INV_GRAFF_GIVEN1-1=这是布罗格送我的……
-# Graff                                 
-DESCRIBE_INV_GRAFF_GIVEN1-2=我、我不记得自己最后一次收到礼物是什么时候了……
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MATERIALS1-1=数字化的清单，看起来跟传统的清单没两样。
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MATERIAL_TOFIND1-1=得尽快找到！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MATERIAL_TOFIND2-1=不知道这是什么，但……我肯定莎莎会高价买下它的！
-#----------------------------------------------------
-# Brok                                 
-INTERFACE_MATERIAL_FOUND-1=那个已经找到了！
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_NOT_ENOUGH_MONEY-1=我没有足够的金钱……
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_TOOMANY_ITEM1-1=政府禁止我携带更多的物品……
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_TOOMANY_ITEM2-1=我已达到此物品所被允许的数量上限。
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_MISSINGCLUES_DEFAULT1-1=(我难道错过了与这相关的重要线索吗？)
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_MISSINGCLUES_DEFAULT2-1=(不对劲……我必须立即继续调查。)
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_INTERROGATE_WEAKLINK-1=(必定有相连关系，但是……这还不够清楚)
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_INTERROGATE_MISSINGSTEP-1=(嗯……这也是个主意，但我觉得自己好像遗漏了一步……)
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_INTERROGATE_NOTBRING-1=(我终于看到各个线索之间的联系，但似乎并没有发现任何新的信息？)
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_INTERROGATE_TOOSOON-1=(是的，这其中肯定有鬼……但我还是等待对的时机吧！)
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_COMBINECLUES_DEFAULT1-1=我……看不到这两者之间的任何联系。
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_COMBINECLUES_DEFAULT2-1=嗯……也许……算了，那样太蠢了……
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_COMBINECLUES_DEFAULT3-1=想的我头都要爆炸了！
-#----------------------------------------------------
-# Brok                                 
-GAMEPLAY_COMBINECLUES_DEFAULT4-1=我开始怀疑自己是否真的适合当侦探了……
-#----------------------------------------------------
-# Brok                                 
-GAMEOVER_TUTORIAL1-1=呃……发生了什么事……
-#----------------------------------------------------
-# Brok                                 
-CH_CALL_SIN-1=恐怕他不能从监狱里回信吧……
-#----------------------------------------------------
-# Brok                                 
-COMMON_OTT_INV_DEFAULT1-1=拿去吧！
-# Ott                                 
-COMMON_OTT_INV_DEFAULT1-2=给我的吗？！
-# Ott                                 
-COMMON_OTT_INV_DEFAULT1-3=你真好，但是……我不能接受！
-# Brok                                 
-COMMON_OTT_INV_DEFAULT1-4=好吧……其他东西呢？
-# Ott                                 
-COMMON_OTT_INV_DEFAULT1-5=我不懂……
-# Ott                                 
-COMMON_OTT_INV_DEFAULT1-6=你是……试图贿赂我吗？
-# Brok                                 
-COMMON_OTT_INV_DEFAULT1-7=不……不！我只是在想……
-# Brok                                 
-COMMON_OTT_INV_DEFAULT1-8=(还是别自取其辱了)
-#----------------------------------------------------
-# Brok                                 
-COMMON_OTT_INV_DEFAULT2-1=呃……
-# Ott                                 
-COMMON_OTT_INV_DEFAULT2-2=哦，你在搜查线索！太厉害了！
-# Brok                                 
-COMMON_OTT_INV_DEFAULT2-3=是的……！没错……！
-#----------------------------------------------------
-# Brok                                 
-COMMON_OTT_INV_APARTMENTKEY-1=你应该搬过来跟我们住！
-# Ott                                 
-COMMON_OTT_INV_APARTMENTKEY-2=呃……跟你和格拉夫住一起吗？
-# Ott                                 
-COMMON_OTT_INV_APARTMENTKEY-3=那不是……很尴尬吗……？
-# Ott                                 
-COMMON_OTT_INV_APARTMENTKEY-4=我有自己的家的，你知道吧。
-# Brok                                 
-COMMON_OTT_INV_APARTMENTKEY-5=哦。
-#----------------------------------------------------
-# Ott                                 
-COMMON_OTT_INV_BILL1-1=是的，我知道……这些账单的确是很沉重的负担。
-# Ott                                 
-COMMON_OTT_INV_BILL1-2=对不起，我帮不上忙。
-# Brok                                 
-COMMON_OTT_INV_BILL1-3=没关系！我能应付得来。
-#----------------------------------------------------
-# Ott                                 
-COMMON_OTT_INV_CATFUR-1=留神！你全身都是猫毛！
-# Brok                                 
-COMMON_OTT_INV_CATFUR-2=这都是格拉夫的！
-# Ott                                 
-COMMON_OTT_INV_CATFUR-3=啊……
-# Ott                                 
-COMMON_OTT_INV_CATFUR-4=真酷。
-# Brok                                 
-COMMON_OTT_INV_CATFUR-5=(……？这反应有点出乎我的意料。)
-#----------------------------------------------------
-# Ott                                 
-COMMON_OTT_INV_MAGNIFY-1=好酷！
-# Ott                                 
-COMMON_OTT_INV_MAGNIFY-2=这放大镜应该帮你侦破过不少罪案吧！
-# Brok                                 
-COMMON_OTT_INV_MAGNIFY-3=呃……帮我侦破过很多堵塞的排水管还差不多！
-#----------------------------------------------------
-# Ott                                 
-COMMON_OTT_INV_POLLUTIONPILL-1=谢谢，我不需要！留给格拉夫吧。
-#----------------------------------------------------
-# Ott                                 
-COMMON_OTT_INV_PREDNORMAL-1=哦，这东西我认识！小时候我也有个。
-# Brok                                 
-COMMON_OTT_INV_PREDNORMAL-2=我打算送给格拉夫！
-# Ott                                 
-COMMON_OTT_INV_PREDNORMAL-3=呃……好吧……
-#----------------------------------------------------
-# Brok                                 
-COMMON_OTT_THINK-1=(他似乎是一个真正的好人……没有被生活的挫折所打败。)
-# Brok                                 
-COMMON_OTT_THINK-2=(总算明白他为什么能跟格拉夫合得来，真替他们高兴。)
-#----------------------------------------------------
-# Ott                                 
-PC_GRAFF_CALL_OTT_SAMEROOM-1=格拉夫？你在做什么？！
-# Graff                                 
-PC_GRAFF_CALL_OTT_SAMEROOM-2=怎么了？
-# Ott                                 
-PC_GRAFF_CALL_OTT_SAMEROOM-3=我就站在你身边啊！
-# Graff                                 
-PC_GRAFF_CALL_OTT_SAMEROOM-4=哦。
-#----------------------------------------------------
-# Graff                                 
-PC_GRAFF_CALL_KLAYDEAD-1=……
-# Graff                                 
-PC_GRAFF_CALL_KLAYDEAD-2=那……那是不可能了……
-#----------------------------------------------------
-# Shay                                 
-PC_GRAFF_CALL_SHAY-1=你好？
-# Graff                                 
-PC_GRAFF_CALL_SHAY-2=呃……是莎莎小姐吗？
-# Shay                                 
-PC_GRAFF_CALL_SHAY-3=是也不是。
-# Shay                                 
-PC_GRAFF_CALL_SHAY-4=莎莎本人在忙碌，我是莎莎的录音机器人！
-# Shay                                 
-PC_GRAFF_CALL_SHAY-5=有什么事吗？
-# Graff                                 
-PC_GRAFF_CALL_SHAY-6=你行么……
-# Shay                                 
-PC_GRAFF_CALL_SHAY-7=你低估我的实力了，不过没关系！
-# Shay                                 
-PC_GRAFF_CALL_SHAY-8=再见！
-#----------------------------------------------------
-
-
-
-
-CHAR_AI=AI
-#For gameovers， the group for all deaths not specific to one chapter
-INTERFACE_GENERIC=通用
-INTERFACE_GAMEOVERS_DESCRIPTION=你的所有周目中的所有失败状态。达成全部失败并不会解锁任何奖励！
-INTERFACE_GAMEOVERS_RIP=安息
-INTERFACE_ENTERDESCRIPTION=输入细节
-# Used for separating possible button combinations. Eg : "Press X or CTRL"
-INTERFACE_OR=或者
-INTERFACE_USE_CONTROLS=随便选择任何操作！
-INTERFACE_CHOOSE_DIFFICULTY=对战难度
-INTERFACE_CHOOSE_DIFFICULTY1=简单
-INTERFACE_CHOOSE_DIFFICULTY1_TXT=我只在乎剧情
-INTERFACE_CHOOSE_DIFFICULTY2=一般
-INTERFACE_CHOOSE_DIFFICULTY2_TXT=我喜欢动作
-INTERFACE_CHOOSE_DIFFICULTY3=硬核
-INTERFACE_CHOOSE_DIFFICULTY3_TXT=我享受挑战！
-INTERFACE_CHOOSE_DIFFICULTY4=疯狂
-INTERFACE_OPTION_DIFFICULTY=难度
-ITEM_INTERFACE_OPTION_REDEFINE_MSG=重新绑定按键
-ITEM_INTERFACE_OPTION_EXIT_MSG=退出游戏
-INTERFACE_OPTION_REDEFINE_MESSAGE=请按任何按键！
-INTERFACE_OPTION_REDEFINE_RESET=重置为默认
-INTERFACE_DEBUG_PLAYER=玩家
-INTERFACE_DEBUG_ONOFF=启动/关闭调试模式
-INTERFACE_DEBUG_SETXP=设置经验
-INTERFACE_DEBUG_SETSTRENGTH=设置力量
-INTERFACE_DEBUG_SETDEFENSE=设置防御
-INTERFACE_DEBUG_ANIM=角色动画
-INTERFACE_DEBUG_LOWDAMAGE=低伤害
-INTERFACE_DEBUG_MAXPLAYERHEALTH=最大化玩家生命值
-#----- Keyboard options
-INPUT_ACTION_VALIDATE=验证
-INPUT_ACTION_CANCEL=取消
-INPUT_ACTION_VIEW_HOTSPOTS=查看热点
-INPUT_ACTION_SKIPDIALOG=跳过对话
-INPUT_MOVE_LEFT=左移玩家
-INPUT_MOVE_RIGHT=右移玩家
-INPUT_MOVE_UP=上移玩家
-INPUT_MOVE_DOWN=下移玩家
-INPUT_ACTION_JUMP=跳跃
-INPUT_ACTION_HIT=攻击/动作
-INPUT_ACTION_GUARD=格挡
-INPUT_ACTION_JUMPKICK=腾空踢
-INPUT_ACTION_POWERFULATTACK=重击
-INPUT_ACTION_QUICKSELECT_INV=物品快捷菜单
-INPUT_ACTION_QUICKSELECT_FOOD=食品快捷菜单
-INPUT_ACTION_SPECIALMOVE=终极技能
-INPUT_ACTION_COMBINEITEMS=合成物品
-INPUT_ACTION_SWITCH_MODE=切换模式
-INPUT_ACTION_SWITCH_CHAR=切换角色
-INPUT_ACTION_MENU=菜单
-INPUT_ACTION_PAUSE=暂停
-INPUT_ACTION_SCROLL_INV_LEFT=滚动左侧背包
-INPUT_ACTION_SCROLL_INV_RIGHT=滚动右侧背包
-INPUT_ACTION_SCROLL_PANEL_LEFT=滚动左侧面板
-INPUT_ACTION_SCROLL_PANEL_RIGHT=滚动右侧面板
-TUTORIAL_FIGHTMODE_MSG_MOUSE=使用鼠标滚轮切换至动作模式<spr=CONTROL_mousescroll>，<button=INPUT_ACTION_SWITCH_MODE> 或者点击“拳头”图标。
-TUTORIAL_LOAD=加载
-TUTORIAL_REMOVEPRIORITY=移除自快捷菜单
-# Tutorials for VR arena
-HELP_TUTORIALVR=简单模式下练习
-HELP_TUTORIALVR_INSTRUCTIONS=在简单模式下，你可以跳过战斗，因此无需学习招式<col=BOLD>以推进剧情</col>。##不过招式能够让你在不作弊的情况下打败实力最强大的敌人。
-HELP_KEYBOARDVR=键盘招式
-HELP_KEYBOARDVR_INSTRUCTIONS=你可以使用鼠标攻击敌人。但是要想达到更精准的操作，建议使用<col=BOLD>键盘</col>！##你可以随时切换至键盘操作，只需松开鼠标然后按方向键或者<button=INPUT_MOVE_UP><button=INPUT_MOVE_LEFT><button=INPUT_MOVE_DOWN><button=INPUT_MOVE_RIGHT>就行了！##Tips：获取完整的按键列表然后在游戏选项中重新绑定。
-HELP_SPECIALATTACK1=终极技能(1)
-HELP_SPECIALATTACK1_INSTRUCTIONS=鳄鱼侦探的敌人会后悔惹毛他！##当鳄鱼侦探的<col=BOLD>生命值过低时</col>(低于50%)，他头像旁边的计量条就会缓慢补充。当计量条开始闪烁时，你可以使用{command}以发动致命的终极技能！
-HELP_SPECIALATTACK1_INSTRUCTIONS_MOUSE=点击布罗格(或者按<button=INPUT_ACTION_SPECIALMOVE>)
-HELP_SPECIALATTACK1_INSTRUCTIONS_GAMEPAD=按<spr=GAMEPAD_TRIGGERLEFT>
-HELP_SPECIALATTACK2=终极技能(2)
-HELP_SPECIALATTACK2_INSTRUCTIONS=赶着去哪呢？长按终极技能按键以消耗<col=BOLD>自己的生命值</col>来加速计量条补充速度。##要想赢得战斗，那就得尽量维持<col=BOLD>低于一半</col>的生命值以便发动尽可能多的终极技能。##不过可要小心哦——你的角色虽然强，但可不是无敌的！
-HELP_SPECIALATTACK2_INSTRUCTIONS_MOUSE=点击玩家(或按<button=INPUT_ACTION_SPECIALMOVE>)
-HELP_SPECIALATTACK2_INSTRUCTIONS_GAMEPAD=按<spr=GAMEPAD_TRIGGERLEFT>
-HELP_QUICKSELECT=物品快捷菜单
-HELP_QUICKSELECT_INSTRUCTIONS=在战斗中，使用{command}以唤出快捷菜单然后选择武器。##食品快捷菜单则是通过{command2}唤出。
-HELP_QUICKSELECT_INSTRUCTIONS_MOUSE=长按<button=INPUT_ACTION_QUICKSELECT_INV>
-HELP_QUICKSELECT_INSTRUCTIONS_GAMEPAD=长按<spr=GAMEPAD_SHOULDERLEFT>
-HELP_QUICKSELECT_INSTRUCTIONS2_MOUSE=使用<button=INPUT_ACTION_QUICKSELECT_FOOD>
-HELP_QUICKSELECT_INSTRUCTIONS2_GAMEPAD=使用<spr=GAMEPAD_SHOULDERRIGHT>
-HELP_QUICKSELECT2=快捷菜单优先度
-HELP_QUICKSELECT2_INSTRUCTIONS=快捷菜单充斥着太多没用的物品？那么就<col=BOLD>自行</col>定义吧！##在战斗模式中，打开快捷菜单然后对物品或食品的图标使用{command}以设置为最高优先度。
-HELP_QUICKSELECT2_INSTRUCTIONS_MOUSE=按<spr=CONTROL_mouseright>或<button=INPUT_ACTION_SETPRIORITYITEM>
-HELP_QUICKSELECT2_INSTRUCTIONS_GAMEPAD=按<button=INPUT_ACTION_SETPRIORITYITEM>
-#----------------------------------------------------
-# Brok
-COMMON_AD_GET1-1=咦，这是个收藏品广告！
-#----------------------------------------------------
-# Brok
-COMMON_AD_GET2-1=不错哟……是个广告优惠券！
-#----------------------------------------------------
-# Brok
-COMMON_AD_GET3-1=这个我还没拿过！
-#----------------------------------------------------
-# Brok
-COMMON_AD_CLOSER-1=唔……得再接近一点。
-#----------------------------------------------------
-# Graff
-COMMON_AD_GRAFF_GET1-1=这是收藏品广告？太好了！
-#----------------------------------------------------
-# Graff
-COMMON_AD_GRAFF_GET2-1=好棒，又找到了一个！
-#----------------------------------------------------
-# Graff
-COMMON_AD_GRAFF_GET3-1=我的收藏越来越丰富了！
-#----------------------------------------------------
-# Graff
-COMMON_AD_GRAFF_CLOSER-1=唔…必须再靠近一些。
-
-
-
-CHAR_RATS=鼠人
-NAME_CRATE=箱子
-NAME_DRONE=无人机
-NAME_TARGET=目标
-INTERFACE_MAXLEVEL=最高等级！
-INTERFACE_CLUE_REMOVE=移除
-INTERFACE_CONCEPTART=概念插图
-INTERFACE_FANART=粉丝插图
-INTERFACE_OST=游戏配乐
-INTERFACE_EXTRAPOINTS=额外点数
-INTERFACE_YOURARTHERE=您的插图！
-INTERFACE_MOREINFO=更多信息
-INTERFACE_MOREINFOHOVER=上传插图的指南
-INTERFACE_UNLOCKFOR=解锁({amount}点数)
-INTERFACE_SENDARTGUIDE1=上传你个人绘制的插图，我会将插图置放在此页面！任何插图只要遵守以下规则都会被接受：
-INTERFACE_SENDARTGUIDE2=必须是游戏里的角色(自创角色不受理)
-INTERFACE_SENDARTGUIDE3=必须是老少皆宜的插图
-INTERFACE_SENDARTGUIDE4=要想参与，请完成以下<col=BOLD>其中之一</col>步骤：
-INTERFACE_SENDARTGUIDE5=<col=BOLD>社交媒体</col>(Facebook、Twitter 或 Instagram)形式：上传你绘制的图片并且在帖子中艾特<col=BLUE>COWCATGames</col>。我会愿意转发的！
-INTERFACE_SENDARTGUIDE6=<col=BOLD>邮件</col>形式：发送邮件至<col=BLUE>contact@cowcatgames.com</col>并且附上你绘制的图片。
-INTERFACE_SENDARTGUIDE7=你可以到 <col=BLUE>www.brokgame.com</col> 浏览完整版的步骤指南。
-INTERFACE_SWITCH_SPECIALEFFECTS=此变更将会在进入新的房间时生效。
-INTERFACE_COMPLETEDOBJECTIVENEW=新的任务目标
-INTERFACE_COMPLETEDOBJECTIVEUPDATE=任务目标已更新
-INTERFACE_OPTION_FPS60=60
-INTERFACE_OPTION_FPS30=30
-INTERFACE_OPTION_SKIPBUTTON_ALL=所有对话
-INTERFACE_OPTION_SKIPBUTTON_NORMAL=已翻阅过的对话
-INTERFACE_OPTION_SKIPBUTTON_NONE=不跳过
-INTERFACE_OPTION_SKIPBUTTON=跳过对话
-INTERFACE_OPTION_SKIPCUTSCENE=跳过过场动画
-ITEM_INTERFACE_OPTION_SKIPBUTTON_MSG=跳过按键是指跳过已浏览过的对话、所有的对话还是完全不跳过？
-ITEM_INTERFACE_OPTION_SKIPCUTSCENE_MSG=跳过按键是指跳过过场动画？(适用于第二次或以上的通关)
-INTERFACE_DEBUG_HIGHDAMAGE=高伤害
-INTERFACE_DEBUG_UNLOCKFPS=解锁 FPS
-INTERFACE_DEBUG_CLEARGAMEOVER=移除所有的游戏失败
-INTERFACE_DEBUG_ADDONEGAMEOVER=添加一次游戏失败
-INTERFACE_DEBUG_REMOVEONEGAMEOVER=移除一次游戏失败
-INTERFACE_DEBUG_GETALLGAMEOVER=获取所有游戏失败
-INTERFACE_DEBUG_GETALLCHAPTERS=解锁所有章节
-INTERFACE_DEBUG_GETALLSUMMARY=获取所有概览选择
-INTERFACE_DEBUG_CHECKVARS=频密检测暴力/智力变更
-INTERFACE_DEBUG_INTERROGATION=调试一次审问
-OBJECTIVE_TRAMPUPDATE2=与此同时，再给流浪汉一次药物
-ENDING_TITLE9999=未完待续…
-#----- Ads --------
-#Keep these as short as possible!
-ROOM_PC01=布罗格的公寓
-ROOM_PC02=布罗格的大厅
-ROOM_PC03=公寓外
-ROOM_PC04=市民街
-ROOM_PC04B=后巷
-ROOM_PC04C=药店
-ROOM_PC05=下水道入口
-ROOM_PC05B=下水道内部
-ROOM_PC05C=下水道发动机
-ROOM_PC05D=下水道底层
-ROOM_PC06=56X城区
-ROOM_PC07=阿信的大厅
-ROOM_PC07B=阿信的公寓
-ROOM_PC08=车库外部
-ROOM_PC08B=车库内部
-ROOM_PC08C=虚拟竞技场
-ROOM_PC09=警局入口
-ROOM_PC09B=警局牢房
-ROOM_PC09C=警长办公室
-ROOM_PC09D=警局审讯室
-ROOM_PC10=学校
-ROOM_PC11=莉雅噩梦入口
-ROOM_PC11B=莉雅噩梦休息厅
-ROOM_PC11C=莉雅噩梦卧室
-ROOM_PC11D=第二次噩梦
-ROOM_PC12=边防哨所
-ROOM_PC12B=金字塔内
-ROOM_PC13=风景
-ROOM_PC14=黑客巷子
-ROOM_PC14B=黑客屋外部
-ROOM_PC14C=黑客屋内部
-ROOM_PC15=实验室外面
-ROOM_PC15B=实验室大厅
-ROOM_PC15C=哈什博士房间
-ROOM_PC15D=敏克博士房间
-ROOM_PC15E=实验室休息室
-ROOM_PC16=寻废物猎人
-ROOM_PC17=博物馆
-ROOM_PC18=工厂
-ROOM_PC19=格拉夫的碉堡迷题
-ROOM_PC19B=碉堡主楼
-ROOM_PC19C=碉堡入口
-ROOM_PC19D=碉堡外面
-ROOM_PC20=垃圾场
-ROOM_EV_MAP=地图
-AD_PC01_FRIDGE=冰箱
-AD_PC01_CLOTHES=衣服
-AD_PC01_BED=床褥
-AD_PC02_MAILBOX=邮箱
-AD_PC02_JOBBOARD=招聘布告栏
-AD_PC02_FLOORCRACK=地板裂缝
-AD_PC03_WOOD=顶层
-AD_PC03_CAR=汽车
-AD_PC03_STICKER=贴纸
-AD_PC04_VENDING=贩卖机
-AD_PC04_HOLOGRAMB=全息影像
-AD_PC04_TRASH=垃圾
-AD_PC04B_TARGET=目标
-AD_PC04B_PIPE=铁管
-AD_PC04B_GRID=网格
-AD_PC04C_PRODUCTS=产品
-AD_PC04C_PANEL=医疗面板
-AD_PC04C_BUBBLE=广告泡泡
-AD_PC05_RATHOLE=洞孔
-AD_PC05_WALL=墙壁
-AD_PC05_BRIDGE=桥梁
-AD_PC05B_BASKET=篮子
-AD_PC05B_FLOOR=地板
-AD_PC05B_ACID=酸液
-AD_PC05C_GUN=手枪
-AD_PC05C_PIPE=铁管
-AD_PC05C_MACHINEB=机器
-AD_PC06_WALL=墙壁
-AD_PC06_PIPEPILL=药丸运管
-AD_PC06_BRIDGEATOP=桥梁顶端
-AD_PC07_DOOR=门口
-AD_PC07_MAILBOX=邮箱
-AD_PC07_AROCK=岩石
-AD_PC07B_JACKET=外套
-AD_PC07B_WALLB=墙壁
-AD_PC07B_GLASSESB=玻璃
-AD_PC08_FBARRIER=屏障
-AD_PC08_BOAT=小艇
-AD_PC08_FAR=遥远
-AD_PC08B_CHAIR=椅子
-AD_PC08B_FOOD=食物
-AD_PC08B_DESKB=桌子
-AD_PC08C_FLOOR=地板
-AD_PC08C_BED=床褥
-AD_PC08C_WALLRIGHT=右墙
-AD_PC12_TOP=顶层
-AD_PC12_FLOOR=地板
-AD_PC12_AVENDING=贩卖机
-AD_PC16_TREASURE=宝物
-AD_PC16_CONTROLS=控制面板
-AD_PC16_STATUE=雕像
-AD_EV_MAP_TOP=顶层
-AD_EV_MAP_DOME=圆顶
-AD_EV_MAP_HOME=住家
-PC_WALL=墙壁
-PC_THING=物体
-#----- Tutorials (on screen) --------
-TUTORIAL_GENERICINV_MSG_MOUSE=#
-TUTORIAL_GENERICINV_MSG_GAMEPAD=<spr=GAMEPAD_DPAD> 移动
-TUTORIAL_HIDEDESCR=隐藏描述
-HELP_HINTS=卡关了？
-HELP_HINTS_INSTRUCTIONS=如果需要帮忙，可以使用所收集到的<col=BOLD>广告</col>来获取提示！##在菜单中点击此图标。##如果一个提示不足够的话，那可以<col=BOLD>多次点击</col>图标以获取解决方案。
-#----- Group of messages --------
-MSG_GROUP_FAMILY=家人
-MSG_GROUP_FRIEND=好友
-MSG_GROUP_JOB=工作
-MSG_GROUP_SCHOOL=学校
-MSG_GROUP_OFFICIAL=政府
-MSG_GROUP_UNKNOWN=陌生人
-#----- Gameover type --------
-# GENERIC
-GAMEOVERTYPE_FALLDAMAGE=从高处坠落
-GAMEOVERTYPE_EV_MAP_NUCLEAR=待在核废料处过长时间
-GAMEOVERTYPE_GEV_MAP_NUCLEAR=待在核废料处过长时间
-GAMEOVERTYPE_MINEEXPLODE=踩到地雷
-# CHAPTER1
-GAMEOVERTYPE_PC01_HOOVER_DIEBY=被扫地机器人电死
-GAMEOVERTYPE_PC03_FIRSTFIGHTLOSE=拯救流浪汉时被鼠人打败
-GAMEOVERTYPE_PC04_ROBOT_FIGHT=被三角机警察打败
-GAMEOVERTYPE_PC08B_SAW=被莎莎的圆锯杀害
-GAMEOVERTYPE_PC12B_LASERS=在金字塔中被电死
-GAMEOVERTYPE_PC05B_RATS_FIRST=在下水道中跟鼠人的第一次邂逅
-GAMEOVERTYPE_PC05B_CHIEFRAT_FIRST=跟鼠人老大的第一次对战
-GAMEOVERTYPE_PC05B_TRYESCAPE=尝试逃脱鼠人的追捕
-GAMEOVERTYPE_PC04C_PANEL=被生命检测机器毁灭
-GAMEOVERTYPE_GENERIC_MINELOADED=投掷地雷时被炸死
-GAMEOVERTYPE_PC07B_WALL=活埋于阿信的公寓
-GAMEOVERTYPE_PC07B_SIN_GAMEOVER=你杀害了自己的客户
-GAMEOVERTYPE_PC07B_SIN_HIT=你的客户杀害了你
-GAMEOVERTYPE_PC12_BOLT_GUARDS=拯救博特时被机器人杀害
-GAMEOVERTYPE_PC12_CAMERA=被边防哨所的监控摄像头电死
-GAMEOVERTYPE_PC05C_FALL=坠落下水道
-GAMEOVERTYPE_PC05_ACID=被酸液融化
-GAMEOVERTYPE_PC05B_MINEEXPLODE=被下水道的地雷炸死
-# CHAPTER2
-GAMEOVERTYPE_PC09D_ELECTROCUTED=在审问过程中被电死
-# CHAPTER3
-GAMEOVERTYPE_PC14_FLOOR_HOLE=坠落黑暗小巷的洞孔
-# CHAPTER4
-GAMEOVERTYPE_PC15_FLOOR_HOLE=在奥特面前坠落高速公路
-GAMEOVERTYPE_PC15_JET=被汽车撞死
-GAMEOVER_FULLHEALTH=在床上睡觉可以恢复所有生命。
-GAMEOVER_RESTBED=可以的话，尽量多睡觉来免费恢复生命。
-GAMEOVER_ATTACKVARY=部分攻击会造成较高的伤害。请多留意最高效的攻击！
-#----- Generic but for some events only  --------
-GAMEOVER_FALLDAMAGE=开启冒险模式即可避免受到坠落伤害。
-GAMEOVER_ALTERNATIVE1=实力不够强大？或许可以通过其他方式解决问题…
-GAMEOVER_ALTERNATIVE2=大个子，难道你就不懂得动动你的脑子吗？
-GAMEOVER_SILLY1=丢人！
-GAMEOVER_SILLY2=肯定很疼吧？
-GAMEOVER_VIOLENT1=哎哟，真是粗暴！
-GAMEOVER_VIOLENT2=你可以…控制下自己的脾气吗？
-GAMEOVER_MINEEXPLODE=地雷只有在近距离下才会显形，轻声慢步！
-GAMEOVER_WATCHSTEP=小心行走！
-GAMEOVER_PC07B_SIN2=阿信会在投掷一定次数后暂停投掷玻璃，把握好这个机会！
-#----- Specific to characters --------
-GAMEOVER_CHIEFRAT1=鼠人老大在施展终极技能后会进入易伤状态，把握好这个机会！
-GAMEOVER_CHIEFRAT2=鼠人老大会盗窃你的食物，等对方繁忙或者精疲力尽时把握好机会恢复自己的生命值！
-GAMEOVER_DART1=阿达重新站起来后千万别待在他身旁，否则会遭到攻击！
-GAMEOVER_DART2=阿达的攻击速度很慢，善用这个优势！
-GAMEOVER_DARTKINS=阿达很容易受到腾空踢，但是可别对阿金使用这一招。
-#-------------------------
-# Dialog
-#-------------------------
-###############################################
-# PROOFREAD - illuminati1556 - 17/06/2019
-###############################################
-# Unknown
-DEMO_WARNING-1=此预览版包含了游戏的第一章节。完整版游戏尚处于开发中，因此游戏中的动画、格斗机制和电脑对手的判定算法都会在未来进一步改善。
-#----------------------------------------------------
-# Unknown
-SPECIAL_EFFECTS_SWITCH-1=此变更将会在进入新的房间时生效。
-
-
-CHAR_GROUP=多人
-
-INTERFACE_OPTION_PROMPTS=手柄类型
-INTERFACE_OPTION_DEADZONE=手柄摇杆死区
-INTERFACE_OPTION_VIBRATION=手柄震动
-INTERFACE_OPTION_DEADZONE_CONSOLE=盲区
-INTERFACE_OPTION_VIBRATION_CONSOLE=震动功能
-ITEM_INTERFACE_OPTION_PROMPTS_MSG=按照你的手柄类型来选择屏幕上所弹出的图标
-ITEM_INTERFACE_OPTION_DEADZONE_MSG=选择摇杆死区(适用于磨损情况比较严重的摇杆)
-ITEM_INTERFACE_OPTION_DEADZONE_PS_MSG=操作杆盲区
-ITEM_INTERFACE_OPTION_VIBRATION_MSG=选择震动强度
-
-INTERFACE_OPTION_TOUCHPAD_ENABLED=触摸板已激活
-ITEM_INTERFACE_OPTION_TOUCHPAD_ENABLED_MSG=使用触摸板？
-INTERFACE_OPTION_TOUCHPAD_SPEED=触摸板速度
-ITEM_INTERFACE_OPTION_TOUCHPAD_SPEED_MSG=设置光标移动速度
-INTERFACE_OPTION_TOUCHSCREEN_ENABLED=激活触屏
-ITEM_INTERFACE_OPTION_TOUCHSCREEN_ENABLED_MSG=使用触摸屏？
-INTERFACE_OPTION_CONTROLLERSPEAKER_ENABLED=喇叭
-ITEM_INTERFACE_OPTION_CONTROLLERSPEAKER_ENABLED_MSG=使用喇叭？
-
 #----- Demo --------
 DEMO_WISHLIST=将完整版游戏加入愿望单
 DEMO_SUPPORT=赞助我们
 DEMO_FANART=提交个人绘制的游戏插画！
 DEMO_FOLLOW=关注我们
-
-
-PC_CABIN=小屋
-PC08C_CABIN_TRAINING=是否参与格斗训练？
-PC08C_MOVES_TUTORIAL=移动教程
-PC08C_TRAINING1=训练(1)
-PC08C_TRAINING2=训练(2)
-PC08C_TRAINING3=训练(3)
-PC08C_TRAINING4=训练(4)
-
-COMMON_OTT_GRAFFDIES-1=格拉夫！
-
-
-
-
-
-
-#--------------- Leng Hong -------------------------------------
-
-INTERFACE_QUICKFIGHT=快速战斗
-
-CHAR_BROKGRAFF=布罗格与格拉夫
-CHAR_COMPUTER=电脑
-INTERFACE_HINTSDISABLED=(在选项中禁用提示)
-INTERFACE_USE_FOOD_CANNOTEAT=不能吃这玩意！
-INTERFACE_SUMMARY_CANNOT=游戏总结只能在完成游戏后获得。
-INTERFACE_LUCKYCHARM=幸运符
-INTERFACE_COMBINE=组合物品
-INTERFACE_COMBINE_DESCRIPTION=请选择第一个物品
-INTERFACE_CHOOSE_AD=请选择一个广告
-INPUT_ACTION_SUMMARY=获得游戏总结的快捷键
-INPUT_ACTION_RUN=疾跑
-#When there's a # symbol in front, it means they don't appear in the game so no need to translate
-GOAL_STORY_90=接受审讯
-GOAL_STORY_120=在竞技场里格斗
-GOAL_STORY_170_BROK=别让汰涤逃脱
-GOAL_STORY_205=格斗之后
-GOAL_STORY_255_BROK=进入碉堡
-GOAL_STORY_300=结局
-GOAL_STORY_301=“市民”结局
-GOAL_STORY_310=关于莎莎的真相
-GOAL_STORY_330=结局
-OBJECTIVEDONE_HOOVERNOTSOLD=你没把清洁机器人卖给莎莎。
-OBJECTIVEDONE_HOOVERSOLDMINK=你把清洁机器人卖给了敏克博士。
-OBJECTIVE_CHECKSHAY=去看莎莎的情况。
-OBJECTIVE_PAYHACKER=为了莎莎，你把钱转账给黑客。
-OBJECTIVEDONE_GOTMISSIONONLY=你完成了黑客的任务。
-OBJECTIVEDONE_GIVEUPMODIFIER=你放弃了得到能“自优化芯片”的机会。
-OBJECTIVEDONE_PAIDHACKER=为了莎莎，你把钱转账给黑客。
-OBJECTIVEDONE_NOPAIDHACKER=就算是为了莎莎，你也选择不把钱转账给黑客。
-#----- Graff Day 1 -------------
-ITEM_KEYGRAFF=公寓的钥匙
-AD_PC09B_DEBUG=调试模式
-AD_PC09B_CHEST=木制箱子
-AD_PC09B_RJ=RJ
-AD_PC15B_BOX=盒子
-AD_PC15D_SINK=水槽
-PC_PEBBLES=卵石
-ITEM_HOTJUICE=热果汁
-ITEM_HOTJUICE_MSG=无酒精饮料虽然无酒精，但当你喝掉它以后你依然会感觉到头晕目眩！#<col=BOLD>对疼痛麻木，持续60秒</col>。
-ITEM_PIZZANT=披萨
-ITEM_PIZZANT_MSG=一个你最喜欢吃的口味的披萨！#<col=BOLD>立刻充满终极技能</col>！
-ITEM_FLOWINGHONEY=蜂蜜满满
-ITEM_FLOWINGHONEY_MSG=增加你的防御力！#<col=BOLD>抬高防御力，效果持续30秒</col>。
-ITEM_ENERGYSERUM=能量血清
-ITEM_ENERGYSERUM_MSG=两个味道，两个效果！#<col=BOLD>抬高力量和防御力，效果持续30秒</col>。
-PC_CHOICE_TAKE=拿走它？
-PC_CHOICE_READINSTRUCTIONS=需要读操作说明吗？
-PC_CHOICE_BUY=买下它？
-PC_CHOICE_SELL=卖掉它？
-#For Graff request money
-MONEY_10=10
-MONEY_20=20
-MONEY_50=50
-MONEY_200=200
-HELP_CHAPTERFORWARD=前进
-HELP_CHAPTERFORWARD_INSTRUCTIONS=请注意，你在章节“<col=BOLD>{currentchapter}</col>”的进度和接下来的章节将重置为默认的选择。
-HELP_LUCKYCHARMNEW=幸运符
-HELP_SUMMARYSHORTCUT=游戏总结的快捷键
-HELP_SUMMARYSHORTCUT_INSTRUCTIONS=不需要打开目录！##
-HELP_SUMMARYSHORTCUT_INSTRUCTIONS_MOUSE=按下 <button=INPUT_ACTION_SUMMARY> 以便在游玩时加载游戏总览。
-HELP_SUMMARYSHORTCUT_INSTRUCTIONS_GAMEPAD=按下 <spr=GAMEPAD_SHOULDERRIGHT> 以便在游玩时加载游戏总览。
-HELP_RADAR=寻找材料
-HELP_RADAR_INSTRUCTIONS=一个新的图标已扩展到你的“<col=BOLD>进度</col>”子菜单。
-MOTT0_TITLE=关于昨天发生的事…
-MOTT0_TEXT=嘿，再次感谢你来我家！一般没什么人来我们家…所以我很庆幸有你这样的挚友。你明白的，其他人都会……算了，等我们都成为市民后情况肯定会往好的方面发展的！
-MDIRECTOR2B_TITLE=以及…
-MDIRECTOR2B_TEXT=格拉夫。##我很感谢布罗格先生为我所做的某件事，你现在额外加了10分。##校长
-MDIRECTOR3_TEXT_CHEAT=不过，经过系统检测，我们发现你偷看了你同学的答案。所以你的总分减<col=BOLD>5</col>。
-MWESEND_TITLE=我输了
-MWESEND_TEXT=当你收到这封短信时说明我已经死亡。P-19胜利了。你也胜利了。我坚持着自己的信念。然而，我把我的朋友和创造者的意愿传达给你。不管发生什么。都请保护格拉夫。保护克莱。保护我的外甥奥特。
-MSHAY1_TITLE=现在来我的车库！
-MSHAY1_TEXT=嘿，布罗哥！我需要你的帮助。快点儿来！
-GAMEOVERTYPE_PC12B_TRIBOT=在金字塔被三角机器人杀死
-GAMEOVERTYPE_GPC06_RIGHTPANEL=握着损坏的按钮
-GAMEOVERTYPE_GPC06_WIRE_GAS=释放毒雾
-GAMEOVERTYPE_GPC08B_BOLT_DESTROY=因博特爆炸而被炸死
-GAMEOVERTYPE_PC09_STORY100_ESCAPEJAIL=越狱时输给了三角机器人
-GAMEOVERTYPE_PC09B_RJ=在监狱被RJ打败
-GAMEOVERTYPE_PC09B_LASERS=被监狱的激光电死
-GAMEOVERTYPE_PC14B_RJ=在黑客前面被RJ击败
-GAMEOVERTYPE_PC03_SECONDFIGHTLOSE=鼠人们的报复
-GAMEOVERTYPE_PC03_STORY175_DRONES=不支付发票而受伤
-GAMEOVERTYPE_PC08B_BOLT_DESTROY=因博特爆炸而被炸死
-GAMEOVERTYPE_PC09C_OTTJAIL=奥特给了布罗格惊喜
-GAMEOVERTYPE_PC14C_HACKERFIGHT=黑客的保安胜利
-GAMEOVERTYPE_PC09_BLINDBOT=视盲机器人赢了
-GAMEOVERTYPE_CPC15_JAIL=被警卫送回了监狱
-GAMEOVERTYPE_CPC15_GUARDFIGHT=输给了警卫
-GAMEOVERTYPE_CPC15_TIDY_HIT=汰涤不喜欢被打到
-GAMEOVERTYPE_GPC19B_BUTTON=在破坏按钮时被电死
-GAMEOVERTYPE_PC01_DAY2END_GRAFFKO=布罗格在格拉夫的房间里打他
-GAMEOVERTYPE_SP01_TRIBOT=悬浮车追捕
-GAMEOVERTYPE_PC15D_GUARDCHARGE_LOSE=在与守卫的斗争中失败了
-GAMEOVERTYPE_PC15B_FIGHTTIDY=被汰涤打败了
-# CHAPTER5
-GAMEOVERTYPE_GPC17_LASER=博物馆里致命的激光
-GAMEOVERTYPE_CH5_TRIBOTCOPS=被三角机警察打败了
-GAMEOVERTYPE_COMMON_DEE_HIT=阿迪受够了
-# CHAPTER6
-GAMEOVERTYPE_GPC14_GRAFF_LOSE=格拉夫拒绝被绑架而死
-GAMEOVERTYPE_CH6_GRAFF_HIT_OTT=打了奥特
-GAMEOVERTYPE_GPC14C_HACKERHIT=打了黑客
-GAMEOVERTYPE_PC20_WES_HIT=在还没开打前就打了韦斯
-GAMEOVERTYPE_PC19D_TRIBOTSWAVE=在打开碉堡大门前就被一大波三角机器人群殴致死
-GAMEOVERTYPE_PC19B_GHERKIN_DEAD=杀了格金博士
-GAMEOVERTYPE_PC20_FIGHT1=第一次和韦斯的战斗
-GAMEOVERTYPE_PC20_FIGHT2=第二次和韦斯的战斗
-GAMEOVERTYPE_CH6_TRIBOTCOPSWITHDEE=和阿迪一起输给了三角机警察
-GAMEOVERTYPE_GPC05D_FLOOR_HOLE=掉进了无底洞
-GAMEOVERTYPE_GPC05D_RATFIGHT=格拉夫逃不出鼠人的追赶
-GAMEOVERTYPE_PC20_DIETOGETHER=两位英雄一起赴死
-GAMEOVERTYPE_PC05D_BROKLOSE=布罗格无法救出格拉夫
-GAMEOVERTYPE_PC20_INTERROGATIONFAIL=在韦斯的审讯中失败了
-GAMEOVERTYPE_PC08B_BOLT_EXPLODE=在最后一幕打了博特
-GAMEOVERTYPE_SP02_POWEROUTLET=把手放进了电源插座里
-CLUE_GHERKIN_BROKBOTS_ALT=三角机器人现在只会追杀格金博士
-CLUE_TRIANGLE_TRIBOTSUPDATALT=三角议会中的一个成员命令三角机器人追杀格金博士
-#-------------------------
-# Dialog
-#-------------------------
-XBOX_DISCONNECT=玩家1的手柄已断开连接。#请连接手柄然后按下A键。
-XBOX_WRONG=玩家档案已被更改！##按A键继续，但你会失去之前所有的进度。#按B键切换回玩家 {user}。
-XBOX_COOP=玩家2的手柄已断开连接。#如想要继续请连接到手柄。
-XBOX_PROFILEGAMEPAD=使用与{profilename}资料相关的游戏手柄
-
-#----------------------------------------------------
-# Brok
-INTERFACE_HACKPHONE_INSTRUCTIONS-1=“在使用本应用之前，为对象拍摄两张照片。”
-# Brok
-INTERFACE_HACKPHONE_INSTRUCTIONS-2="一张正面照，一张四分之三照。" 
-#----------------------------------------------------
-# Graff
-DESCRIBE_INV_KEYGRAFF1-1=公寓的钥匙。
-# Graff
-DESCRIBE_INV_KEYGRAFF1-2=已经生锈了。看来质量不太好。
-#----------------------------------------------------
-# *****************************************************************
-# CONTEXT - When Graff hits Ott
-# *****************************************************************
-# Ott
-COMMON_GRAFF_HITOTT1-1=啊！！！
-# Ott
-COMMON_GRAFF_HITOTT1-2=你知道这很痛吗！
-# Graff
-COMMON_GRAFF_HITOTT1-3=嗯……
-#----------------------------------------------------
-# *****************************************************************
-# CONTEXT - When Graff hits Ott
-# *****************************************************************
-# Ott
-COMMON_GRAFF_HITOTT2-1=哎哟！
-# Ott
-COMMON_GRAFF_HITOTT2-2=我都干了什么……？
-# Graff
-COMMON_GRAFF_HITOTT2-3=对不起……
-#----------------------------------------------------
-# *****************************************************************
-# CONTEXT - When Graff hits Ott
-# *****************************************************************
-# Ott
-COMMON_GRAFF_HITOTT3-1=不！
-# Ott
-COMMON_GRAFF_HITOTT3-2=够了！！我知道了！
-# Ott
-COMMON_GRAFF_HITOTT3-3=你自己去解开这道谜题吧，我不陪你玩了！
-#----------------------------------------------------
-# Ott
-COMMON_GRAFF_OTT_FOLLOWS1-1=我们为什么在这里？
-#----------------------------------------------------
-# Ott
-COMMON_GRAFF_OTT_FOLLOWS2-1=我不确定你要找什么……
-#----------------------------------------------------
-# Ott
-COMMON_GRAFF_OTT_FOLLOWS3-1=格拉夫……？
-#----------------------------------------------------
-# Tribot.
-COMMON_TRIBOT_GAMEOVER1-1=很好，那个鳄鱼人不能再嚣张了。
-# Tribot
-COMMON_TRIBOT_GAMEOVER1-2=是时候向上级汇报然后收取我们的奖赏了。
-#----------------------------------------------------
-# Tribot
-COMMON_TRIBOT_GAMEOVER2-1=故障。错误编号404。目标已消失。
-#----------------------------------------------------
-# Tribot
-COMMON_TRIBOT_GAMEOVER3-1=下次，请听取你的处理组件的意见。
-# Tribot
-COMMON_TRIBOT_GAMEOVER3-2=故障: 死人听不到。
-# Tribot
-COMMON_TRIBOT_GAMEOVER3-3=随便。
-#----------------------------------------------------
-# Tribot
-COMMON_TRIBOTWITHDEE_GAMEOVER1-1=两位。一位。价格。翻倍！
-#----------------------------------------------------
-# Tribot
-COMMON_TRIBOTWITHDEE_GAMEOVER2-1=游戏结束! 
-#----------------------------------------------------
-# Dee
-COMMON_DEE_BROKLOSE-1=不……！
-#----------------------------------------------------
-# Brok
-COMMON_DEE_LOSE-1=阿迪！
-#----------------------------------------------------
-# Dee
-COMMON_DEE_HITATTACK1-1=啊！！！
-#----------------------------------------------------
-# Dee
-COMMON_DEE_HITATTACK2-1=嘿！别这样！
-#----------------------------------------------------
-# Dee
-COMMON_DEE_HITATTACK3-1=你疯了吗？！
-#----------------------------------------------------
-# Dee
-COMMON_DEE_BROKDEAD-1=噢不！
-#----------------------------------------------------
-# Ott
-COMMON_OTT_BREAK-1= 你为什么这么做……？
-#----------------------------------------------------
-# Gherkin
-COMMON_GHERKIN_BREAK-1=……
-#----------------------------------------------------
-# RJ
-COMMON_RJ_CATFUR-1=阿——嚏！
-
-
-
-
-CHAR_DART=阿达
-CHAR_TRIBOTMILITARY=军队机器人
-CHAR_TRIBOTPOUND=空击机器人
-CHAR_BLINDBOT=目盲机器人
-# For final boss
-NAME_LEFT_LEG=左腿
-NAME_RIGHT_LEG=右腿
-NAME_LEFT_ARM=左臂
-NAME_RIGHT_ARM=右臂
-NAME_SHIELD=护盾
-INTERFACE_CREDITS=制作人员名单
-INTERFACE_MOVESLIST=移动
-INTERFACE_GAMEOVER=游戏结束
-INTERFACE_OPTION_DAMAGEPOINTS=伤害
-MOVE_REGULARCOMBO=连击
-MOVE_JUMP=跳跃
-MOVE_JUMPKICK=飞踢
-MOVE_JUMPKICKDOWN=跳劈
-MOVE_UPPERCUT=上勾拳
-MOVE_GUARD=格挡
-MOVE_ATTACKBEHIND=偷袭
-MOVE_DODGE=躲避
-MOVE_RUN=疾跑
-MOVE_POWERFULPUNCH=大力拳
-MOVE_THROWNGETBACKUP=快速恢复
-MOVE_PICKUP=捡起物品
-MOVE_QUICKWEAPON=快速选择武器
-MOVE_QUICKITEM=快速选择食物
-MOVE_WEAPONCOMBO=武器连击
-MOVE_WEAPONTHROW=投掷武器
-MOVE_SPECIALQUICK=快速终极技能
-MOVE_SPECIALCHARGE=充能终极技能
-MOVE_SPECIALATTACK=终极技能攻击
-MOVE_COMBOFINISH=组合式终结者
-MOVE_COMMANDS_REPEAT=重复
-MOVE_COMMANDS_OR=或者
-MOVE_COMMANDS_THEN=然后
-MOVE_COMMANDS_JUMPTHEN=跳跃然后
-MOVE_COMMANDS_GUARDTHEN=防守然后
-MOVE_COMMANDS_PUNCHTHEN=攻击然后
-MOVE_COMMANDS_RUNTHEN=逃跑然后
-MOVE_COMMANDS_BRIEFPRESS=简略信息
-MOVE_COMMANDS_HOLD=按住
-MOVE_COMMANDS_CLICKONENEMY=对敌人
-MOVE_COMMANDS_CLICKONPLAYER=对玩家
-MOVE_COMMANDS_CLICKONITEM=对物品
-MOVE_COMMANDS_CLICKANYWHERE=任何地方
-MOVE_COMMANDS_ALTERNATIVE=替代
-MOVE_COMMANDS_THROWN=当抛掷后
-MOVE_COMMANDS_EQUIP=装备
-MOVE_COMMANDS_SPECIALFILLED1=当
-MOVE_COMMANDS_SPECIALFILLED2=终极技能条
-MOVE_COMMANDS_SPECIALFILLED3=充满
-MOVE_COMMANDS_DURING=在组
-MOVE_COMMANDS_COMBO=合中
-
-ITEM_INTERFACE_OPTION_DAMAGEPOINTS_MSG=当角色受到攻击时显示所受伤害
-OBJECTIVE_HOOVERNOTSOLD=你保留了清洁机器人，现在怎么办？
-AD_PC05D_CENTER=靠近梯子
-AD_PC05D_RIGHT=墙壁右侧的房间
-AD_PC05D_LEFT=柜子左侧的房间
-AD_PC09_WINDOWOFF=窗口办事处
-AD_PC09_RWANTED=“通缉”监控器
-AD_PC09_RDOOR=大门
-AD_PC09B_FRONT=面前的树
-AD_PC09C_BOXDESK=桌子上的盒子
-AD_PC09C_BOARD=警局
-AD_PC09C_COMPUTER=计算机显示器
-AD_PC09D_RPLANT=右边的植物
-AD_PC09D_RALLEY=走廊
-AD_PC09D_RCAMERA=左边的摄像头
-AD_PC10_RSTATUE=右边雕像的底部
-AD_PC10_RIGHTDESK=卡在右侧的大桌子上了
-AD_PC10_RBACK=右侧的背景
-AD_PC14_RTOP=顶部平台
-AD_PC14_RGUTTER=水槽
-AD_PC14_RTRASH=垃圾袋
-AD_PC14B_RPIPEPILL=药丸运管
-AD_PC14B_RCOLUMNLEFT=左栏
-AD_PC14B_RFRONT=前面的垃圾
-AD_PC14C_PLANKS=木板
-AD_PC14C_RMESS=背景里的东西
-AD_PC14C_RPIZZA=披萨盒子
-AD_PC15_BIKE=自行车
-AD_PC15_ELEVATOR=传送带
-AD_PC15_JUMP=马路沿儿
-AD_PC15B_SHELF=书架上的聚光灯
-AD_PC15B_CENTER=房间中央
-AD_PC15C_FRONT=前面的电源插座
-AD_PC15C_MESS=右边的材料
-AD_PC15C_PAINTNG=绘画
-AD_PC15D_PAINTING=窗户
-AD_PC15D_MESS=电线
-AD_PC15E_COFFEE=咖啡抽屉里面
-AD_PC15E_CLOTHES=衣柜右边
-AD_PC15E_SHOWER=淋浴
-AD_PC17_ROCKS=不落幕的展览
-AD_PC17_ROOF=右侧屋顶
-AD_PC17_TABLEL=最右边的桌子
-AD_PC18_GROUND=全息图后面的地面
-AD_PC18_INHOUSE=哨兵盒子
-AD_PC18_INGREEN=容器
-AD_PC19_RBUTTON=按钮
-AD_PC19_RWALLSHADOW=阴影里的右边的墙
-AD_PC19_RTOP=中间的房间的左上角
-AD_PC19B_RBED=床
-AD_PC19B_RDOORSIDE=三角门旁
-AD_PC19B_RBEHIND=符号上的
-AD_PC19D_FRONT=前景
-AD_PC19D_PIPEPILL=药丸运管
-AD_PC19D_ROCKS=金字塔附近的岩石
-PC_CHOICE_ENTER=进去？
-PC_CHOICE_GIVEFOOD=把吃的给……
-HELP_LUCKYCHARMNEW_INSTRUCTIONS=该特殊物品将自动抵消<col=BOLD>一次致命的伤害</col>。请注意：每场战斗仅可使用一次！##它已添加到您的游戏进度，并将在您游玩游戏时持续存在。
-GAMEOVERTYPE_BUY_CAPSULE=购买放心-3000
-GAMEOVERTYPE_BUY_INFLATE=购买美味快线
-GAMEOVERTYPE_BUY_HAIR=购买青春有你
-GAMEOVERTYPE_EAT_SEWAGESLUDGE=饮用污水淤泥
-GAMEOVERTYPE_BM02_GAMEOVER=在VR夜战中
-GAMEOVERTYPE_BM02_DEE_NOGIVEUP=永不言弃
-GAMEOVERTYPE_GPC06_DRONE_GAMEOVER=无法拯救商人
-GAMEOVERTYPE_GPC03_TRAMP_DEAD=格拉夫杀害了流浪汉
-GAMEOVERTYPE_PC02_APARTMENT_LASERS=坚持要离开公寓
-GAMEOVERTYPE_PC09_POLICE_LASERS=坚持要进入监狱
-GAMEOVERTYPE_PC10_DIRECTOR_HIT=攻击校长
-GAMEOVERTYPE_PC15_OTT_HIT=攻击奥特
-GAMEOVERTYPE_PC15E_TRAP=被研磨机所杀
-GAMEOVERTYPE_PC15_BIKE=悬浮车爆炸了
-GAMEOVERTYPE_BM02_RJ_NOGIVEUP=拒绝放弃
-GAMEOVERTYPE_GPC19B_GRAFFLOSE=无法保护克莱
-GAMEOVERTYPE_PC14_STORY200_BADGUYS=在VR夜战中与鼠人的战斗失败了
-GAMEOVERTYPE_PC14_DRONES=杀手型无人机
-GAMEOVERTYPE_PC17_TRIBOTHIT=攻击博物馆的三角机器人
-GAMEOVERTYPE_PC17_PIANO=在和博物馆的三角机器人的战斗中失败，然后死了
-GAMEOVERTYPE_PC17_TRIBOT_TOOMANY=很多失误
-GAMEOVERTYPE_PC18_FIXBOT=被维修机器人所杀
-GAMEOVERTYPE_PC19D_BIGFIGHT_GAMEOVER=在碉堡外和很多很多的三角机器人战斗时死亡。
-GAMEOVERTYPE_PC08_TILLENDTIME_HITGRAFF=在即将结束时攻击了格拉夫
-GAMEOVERTYPE_PC10_BROK_STUBOT=被学徒机器人所杀
-GAMEOVERTYPE_PC05B_RATS=被下水道的鼠人所杀
-GAMEOVER_ENERGYDRINK=饮用能量饮料让你在短时间内力量大增！它可以助你打破强劲敌人的防护。
-GAMEOVER_SHADOW=跟随飞行敌人的影子来追踪他们的位置
-GAMEOVER_SPECIAL_MOUSE=别忘记按下 <button=INPUT_ACTION_SPECIALMOVE> 来使用你的终极技能
-GAMEOVER_SPECIAL_GAMEPAD=别忘记按下 <spr=GAMEPAD_TRIGGERLEFT> 来使用你的终极技能
-GAMEOVER_POWERFUL_MOUSE=按下 <button=INPUT_ACTION_POWERFULATTACK> 可在远处使用终极技能
-GAMEOVER_POWERFUL_GAMEPAD=按下 <spr=GAMEPAD_TRIGGERRIGHT> 和 <button=INPUT_ACTION_HIT> 可在远处使用终极技能
-GAMEOVER_UPPERCUT_MOUSE=当你打出连击时，按下 <button=INPUT_ACTION_JUMPKICK> 使用强力的上勾拳，接着再出拳以向下重击！
-GAMEOVER_UPPERCUT_GAMEPAD=按下 <button=INPUT_ACTION_JUMP> 和 <button=INPUT_ACTION_HIT> 使用强力的上勾拳，接着再出拳以向下重击！
-GAMEOVER_BUYPRODUCTS=你这个有钱的小傻瓜！
-GAMEOVER_SHAME=丢人！丢人！丢人！
-GAMEOVER_GIVEUP=有些时候，你需要承认自己战败了。
-GAMEOVER_SP01_TRIBOT_MOUSE=使用助推器 <button=INPUT_ACTION_VIEW_HOTSPOTS> 来攻击三角机器人。
-GAMEOVER_SP01_TRIBOT_GAMEPAD=使用助推器 <button=INPUT_ACTION_VIEW_HOTSPOTS> 来攻击三角机器人。
-GAMEOVER_PC20_INTERROGATIONFAIL=保持你的决心，再试一次吧。
-GAMEOVER_TRIBOT1=当三角机器人接近你时，使用格挡，然后再回击他们。
-GAMEOVER_DRONE1=无人机的攻击是受时间限制的，你可以分析一下它们攻击的时间。
-GAMEOVER_DRONE2=遥控器可以让无人机失灵！
-GAMEOVER_MILITARY1=重军三角机器人的后背很脆弱。
-GAMEOVER_MILITARY2=重击可以打破重军三角机器人的防护，但更优解是偷袭它们的后背。
-GAMEOVER_RJ1=当 RJ 开始格挡你的攻击时，立刻闪避！
-GAMEOVER_RJ2=RJ 的速度慢，血多，伤害高。保持警惕。
-GAMEOVER_GENERICRAT1=有三种类型的鼠人，其中装备武器的鼠人攻速更慢！
-GAMEOVER_POUND1=当空击三角机器人回到地面后再进行连击。
-GAMEOVER_POUND2=空击三角机器人可以在高处跟随你，当他们砸向你的时候注意躲避！
-GAMEOVER_TRIBOTCOP1=三角机警察会远离你然后从远处发射子弹，先把他们解决掉！
-GAMEOVER_TRIBOTCOP2=当三角机警察准备出拳时，注意格挡或躲避。
-GAMEOVER_TIDY1=没什么可以阻止汰涤的特殊移动，此时需要注意闪避，当它停止移动后再攻击。
-GAMEOVER_DEE1=阿迪的移速很快，要分析她的移动路径并预测她的攻击方式。
-GAMEOVER_GUARD1=你的攻击可以破坏警卫的护盾，让他一直对你发动攻击，别让他抽出时间再做另一个护盾！
-GAMEOVER_WES1=当韦斯滑铲时，向上或向下躲避。
-GAMEOVER_WES2=韦斯是个狡猾的人，离他越远越好，别让他得逞！
-GAMEOVER_HUGEBOT1=先攻击两条腿，当“巨人”机器人倒下时再攻击胳膊，最后攻击驾驶舱。
-GAMEOVER_HUGEBOT2=“巨人”机器人会根据你所在的位置进行攻击，别呆在一个位置太久，注意躲避！
-CLUETYPE_SPECIAL=特殊
 FULL_REVIEW=发表您的评论
 THANKS_PLAYING=谢谢你的参与!
 
 #-------------------------
 # Achievements
 #-------------------------
+
 ACHIEVE_CHAPTER1=越过边界
 ACHIEVE_CHAPTER2=人生考验
 ACHIEVE_CHAPTER3=诡计多端
@@ -3309,6 +2223,8 @@ ACHIEVE_HEALTHCHECKUP=时日无多
 ACHIEVE_WAKEUPHUSH=难以醒来
 ACHIEVE_TRAMPSAVER=救命恩人
 ACHIEVE_BESTSTUDENT=真正学霸
+ACHIEVE_INTRO=噩梦初醒
+
 ITEM_CHAPTER1_MSG=完成第一章
 ITEM_CHAPTER2_MSG=完成第二章
 ITEM_CHAPTER3_MSG=完成第三章
@@ -3337,32 +2253,40 @@ ITEM_HEALTHCHECKUP_MSG=在药店里让医疗评估系统对布罗格进行评估
 ITEM_WAKEUPHUSH_MSG=在关键人物身上跳跃数次使对方醒来
 ITEM_TRAMPSAVER_MSG=保证流浪汉在游戏里存活
 ITEM_BESTSTUDENT_MSG=总分比克莱更高
+ITEM_INTRO_MSG=完成游戏介绍
+
 ACH_NAME=成就
 ACH_TOOLATE_PACIFIST=你已经无法达成这项成就了！你在游戏过程中杀害了 {nb} 名敌人
+
+
 #-------------------------
 # Dialog
 #-------------------------
+
 INTERFACE_PROFILE=档案
+XBOX_DISCONNECT=玩家1的手柄已断开连接。#请连接手柄然后按下A键。
+XBOX_WRONG=玩家档案已被更改！##按A键继续，但你会失去之前所有的进度。#按B键切换回玩家 {user}。
+XBOX_COOP=玩家2的手柄已断开连接。#如想要继续请连接到手柄。
+XBOX_PROFILEGAMEPAD=使用与{profilename}资料相关的游戏手柄
 
-GAMEOVERTYPE_PC16_TRIBOTS=在废物寻宝站内与三角机器人对战的过程中失败
 
-CHOICE_GIVEUP=放弃
+###############################################
+# PROOFREAD - illuminati1556 - 17/06/2019
+###############################################
 
+PC_CABIN=小屋
+PC08C_CABIN_TRAINING=是否参与格斗训练？
+PC08C_MOVES_TUTORIAL=移动教程
+PC08C_TRAINING1=训练(1)
+PC08C_TRAINING2=训练(2)
+PC08C_TRAINING3=训练(3)
+PC08C_TRAINING4=训练(4)
 
-
-INTERFACE_CHAPTER_CANNOT=你不能进入该章节的这一部分。#请选择前一部分并切换角色。
-INTERFACE_CHAPTER6AG=绑架
-GAMEOVERTYPE_GPC02_APARTMENT_LASERS=坚持要离开公寓
-GAMEOVERTYPE_PC08B_PREMATURE=过早进入结局
-ACHIEVE_INTRO=噩梦初醒
-ITEM_INTRO_MSG=完成游戏介绍
-
-PC_CHOICE_WATCHANYWAY=还是看这个场景吧？
-INTERFACE_OPTION_ENEMYBLINK=敌方眨眼
-ITEM_INTERFACE_OPTION_ENEMYBLINK_MSG=敌人在准备攻击时应该闪黄灯吗？
 INTERFACE_OPTION_MOVESLIST=移动
 ITEM_INTERFACE_OPTION_MOVESLIST_MSG=移动
 INTERFACE_ARTBOOK=美术设定集
+
+
 TUTORIAL_ACCESSIBILITYMENU=辅助功能菜单
 INTERFACE_OPTION_ACCESSIBILITY=辅助功能
 ITEM_INTERFACE_OPTION_ACCESSIBILITY_MSG=辅助功能菜单
@@ -3378,54 +2302,50 @@ INTERFACE_ACCESSIBILITY_SIMPLIFIEDROOMS=简化的房间
 ITEM_INTERFACE_ACCESSIBILITY_SIMPLIFIEDROOMS_MSG=调整一些房间以避免跳跃和危险陷阱。
 INTERFACE_ACCESSIBILITY_BLINDPUZZLES=失明的拼图。
 ITEM_INTERFACE_ACCESSIBILITY_BLINDPUZZLES_MSG=为盲人设计谜题并增加更多的跳过选项。
-INTERFACE_ACCESSIBILITY_HIGHCONTRAST=高对比度
-ITEM_INTERFACE_ACCESSIBILITY_HIGHCONTRAST_MSG=背景被修改以方便阅读，角色和敌人被突出显示。
-INTERFACE_ACCESSIBILITY_LARGEFONTS=大字体。
-ITEM_INTERFACE_ACCESSIBILITY_LARGEFONTS_MSG=整个游戏的字体更大。
-
-
-HELP_BLINDCONTROLS=适合盲人使用的控件
-HELP_BLINDCONTROLS_INSTRUCTIONS_GAMEPAD=大部分的游戏将通过用<spr=GAMEPAD_DPAD>选择热点并按<button=INPUT_ACTION_VALIDATE>进行互动来进行。 ##在任何时候，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_INSTRUCTIONS>来重复最后的指示，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_DIALOGUE>来重复最后的对话讲话。##按<button=INPUT_ACTION_VALIDATE>来继续。
-HELP_BLINDCONTROLS_INSTRUCTIONS_MOUSE=大部分的游戏将通过用<spr=CONTROL_dkeys>选择热点并按<button=INPUT_ACTION_VALIDATE>进行互动来进行。 ##在任何时候，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_INSTRUCTIONS>来重复最后的指示，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_DIALOGUE>来重复最后的对话讲话。##按<button=INPUT_ACTION_VALIDATE>来继续。
-
-
-
-
-MOVE_GRAFF_JUMPKICKDOWN=踩踏踢
-MOVE_GRAFF_UPPERCUT=粉碎性跳跃
-MOVE_GRAFF_ATTACKBEHIND=腿部扫荡
-MOVE_GRAFF_POWERFULPUNCH=地板扫射
-PC_CHOICE_BLINDPUZZLESKIP=跳过这个谜题？
-TUTORIAL_PREVIOUS=上一章
-TUTORIAL_NEXT=下一个
 INTERFACE_ACCESSIBILITY_DPAD=先进的方向性输入。
 ITEM_INTERFACE_ACCESSIBILITY_DPAD_MSG=允许用方向性输入选择热点，甚至在房间视野之外（针对盲人）。
 INTERFACE_ACCESSIBILITY_HIGHCONTRASTTEXT=高对比度文本
 ITEM_INTERFACE_ACCESSIBILITY_HIGHCONTRASTTEXT_MSG=对话背景被修改以方便阅读
 INTERFACE_ACCESSIBILITY_HIGHCONTRASTENEMIES=高对比度字符
 ITEM_INTERFACE_ACCESSIBILITY_HIGHCONTRASTENEMIES_MSG=玩家和敌人会被突出显示。
-MOVE_COMMANDS_TIMES2=x 2
-MOVE_COMMANDS_TIMES3=x 3
-MOVE_COMMANDS_TIMES5=x 5
-MOVE_COMMANDS_PLUS=+
-INPUT_ACTION_ACCESSIBILITY_REPEAT_INSTRUCTIONS=无障碍 - 重复指令
-INPUT_ACTION_ACCESSIBILITY_REPEAT_DIALOGUE=无障碍 - 重复语音
-HELP_BLINDCOMBAT=基本的战斗力
-HELP_BLINDCOMBAT_INSTRUCTIONS_GAMEPAD=在战斗中移动布罗格，按<spr=GAMEPAD_DPAD>或<spr=GAMEPAD_STICKLEFT>。#要攻击，按<button=INPUT_ACTION_HIT>。#要守卫，按住<button=INPUT_ACTION_GUARD>。
-HELP_BLINDCOMBAT_INSTRUCTIONS_MOUSE=在战斗中移动布罗格，按<button=INPUT_MOVE_UP> <button=INPUT_MOVE_LEFT> <button=INPUT_MOVE_DOWN> <button=INPUT_MOVE_RIGHT>或<spr=CONTROL_dkeys>。 ##要攻击，按<button=INPUT_ACTION_HIT>或<spr=CONTROL_mouseleft>。##要守卫，按住<button=INPUT_ACTION_GUARD>。
-ACCESSIBILITY_JUMP_SKIP=跳过这次跳跃。
-HELP_BLINDMENU=浏览完整菜单
-HELP_BLINDMENU_INSTRUCTIONS=你现在可以进入完整的菜单了。 ##有很多东西，按面板组织，可以用<button=INPUT_ACTION_SCROLL_INV_LEFT><button=INPUT_ACTION_SCROLL_INV_RIGHT>和<button=INPUT_ACTION_SCROLL_PANEL_LEFT><button=INPUT_ACTION_SCROLL_PANEL_RIGHT>进行切换。 ##例如，进入菜单会显示你的库存，但右边的面板会显示你的食物。
-HELP_BLINDMENU_INSTRUCTIONS_GAMEPAD=不要犹豫，用<spr=GAMEPAD_DPAD>导航来寻找一切。
-HELP_BLINDMENU_INSTRUCTIONS_MOUSE=不要犹豫，用<spr=CONTROL_dkeys>导航来寻找一切。
-PC_CLIMBUP=向上攀登
-PC_CLIMBDOWN=向下攀爬
-PC_CLIMBMORE=攀登更多
-
+INTERFACE_ACCESSIBILITY_LARGEFONTS=大字体。
+ITEM_INTERFACE_ACCESSIBILITY_LARGEFONTS_MSG=整个游戏的字体更大。
 INTERFACE_ACCESSIBILITY_NOSCREENSHAKE=没有屏幕抖动。
 ITEM_INTERFACE_ACCESSIBILITY_NOSCREENSHAKE_MSG=在战斗和场景中禁用屏幕抖动。
 INTERFACE_ACCESSIBILITY_ASKSKIPFIGHTAUTO=自动提供跳过战斗。
 ITEM_INTERFACE_ACCESSIBILITY_ASKSKIPFIGHTAUTO_MSG=在战斗开始时，自动询问是否跳过它。
+INTERFACE_ACCESSIBILITY_CLIPBOARDNARRATED=剪贴板旁白
+ITEM_INTERFACE_ACCESSIBILITY_CLIPBOARDNARRATED_MSG=将辅助功能文本发送到剪贴板，而不是使用预先录制的文件，将叙述委托给安装在电脑上的文本转语音软件。
+INTERFACE_ACCESSIBILITY_DPADLINE=热点对齐。
+ITEM_INTERFACE_ACCESSIBILITY_DPADLINE_MSG=将游戏中的热点放在一条线上，以方便选择（不适用于菜单和特写镜头）。
+
+HELP_BLINDCONTROLS=适合盲人使用的控件
+HELP_BLINDCONTROLS_INSTRUCTIONS_GAMEPAD=大部分的游戏将通过用<spr=GAMEPAD_DPAD>选择热点并按<button=INPUT_ACTION_VALIDATE>进行互动来进行。 ##在任何时候，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_INSTRUCTIONS>来重复最后的指示，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_DIALOGUE>来重复最后的对话讲话。##按<button=INPUT_ACTION_VALIDATE>来继续。
+HELP_BLINDCONTROLS_INSTRUCTIONS_MOUSE=大部分的游戏将通过用<spr=CONTROL_dkeys>选择热点并按<button=INPUT_ACTION_VALIDATE>进行互动来进行。 ##在任何时候，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_INSTRUCTIONS>来重复最后的指示，按<button=INPUT_ACTION_ACCESSIBILITY_REPEAT_DIALOGUE>来重复最后的对话讲话。##按<button=INPUT_ACTION_VALIDATE>来继续。
+
+MOVE_COMMANDS_TIMES2=x 2
+MOVE_COMMANDS_TIMES3=x 3
+MOVE_COMMANDS_TIMES4=x 4
+MOVE_COMMANDS_TIMES5=x 5
+MOVE_COMMANDS_PLUS=+
+INPUT_ACTION_ACCESSIBILITY_REPEAT_INSTRUCTIONS=无障碍 - 重复指令
+INPUT_ACTION_ACCESSIBILITY_REPEAT_DIALOGUE=无障碍 - 重复语音
+
+
+HELP_BLINDCOMBAT=基本的战斗力
+HELP_BLINDCOMBAT_INSTRUCTIONS_GAMEPAD=在战斗中移动布罗格，按<spr=GAMEPAD_DPAD>或<spr=GAMEPAD_STICKLEFT>。#要攻击，按<button=INPUT_ACTION_HIT>。#要守卫，按住<button=INPUT_ACTION_GUARD>。
+HELP_BLINDCOMBAT_INSTRUCTIONS_MOUSE=在战斗中移动布罗格，按<button=INPUT_MOVE_UP> <button=INPUT_MOVE_LEFT> <button=INPUT_MOVE_DOWN> <button=INPUT_MOVE_RIGHT>或<spr=CONTROL_dkeys>。 ##要攻击，按<button=INPUT_ACTION_HIT>或<spr=CONTROL_mouseleft>。##要守卫，按住<button=INPUT_ACTION_GUARD>。
+
+ACCESSIBILITY_JUMP_SKIP=跳过此跳跃
+
+HELP_BLINDMENU=浏览完整菜单
+HELP_BLINDMENU_INSTRUCTIONS=你现在可以进入完整的菜单了。 ##有很多东西，按面板组织，可以用<button=INPUT_ACTION_SCROLL_INV_LEFT><button=INPUT_ACTION_SCROLL_INV_RIGHT>和<button=INPUT_ACTION_SCROLL_PANEL_LEFT><button=INPUT_ACTION_SCROLL_PANEL_RIGHT>进行切换。 ##例如，进入菜单会显示你的库存，但右边的面板会显示你的食物。
+HELP_BLINDMENU_INSTRUCTIONS_GAMEPAD=不要犹豫，用<spr=GAMEPAD_DPAD>导航来寻找一切。
+HELP_BLINDMENU_INSTRUCTIONS_MOUSE=不要犹豫，用<spr=CONTROL_dkeys>导航来寻找一切。
+
+PC_CLIMBUP=向上攀登
+PC_CLIMBDOWN=向下攀爬
+PC_CLIMBMORE=攀登更多
 
 INTERFACE_ACCESSIBILITY_DPAD_PS=先进的方向键
 ITEM_INTERFACE_ACCESSIBILITY_DPAD_PS_MSG=允许用方向键选择热点，甚至在房间视野之外（针对盲人）。
@@ -3433,53 +2353,40 @@ ITEM_INTERFACE_ACCESSIBILITY_DPAD_PS_MSG=允许用方向键选择热点，甚至
 INTERFACE_ACCESSIBILITY_DPAD_NS=先进的方向键
 ITEM_INTERFACE_ACCESSIBILITY_DPAD_NS_MSG=允许用方向键选择热点，甚至在房间视野之外（针对盲人）。
 
+
 HELP_DEMODETECTED=检测到演示版保存文件
 HELP_DEMODETECTED_INSTRUCTIONS=检测到演示版保存文件。##在菜单中选择“继续”以从离开的地方继续。
+
 THANKS_PLAYING_DEMO=感谢您玩演示版！
 THANKS_PLAYING_SHOP=完整的游戏可在
 THANKS_PLAYING_SHOP2=您的保存进度会自动传输。
+
 DEMO_FORBID_TITLE=演示版
-
-INTERFACE_ACCESSIBILITY_CLIPBOARDNARRATED=剪贴板旁白
-ITEM_INTERFACE_ACCESSIBILITY_CLIPBOARDNARRATED_MSG=将辅助功能文本发送到剪贴板，而不是使用预先录制的文件，将叙述委托给安装在电脑上的文本转语音软件。
-
+DEMO_FORBID_DESCRIPTION=演示版本不允许加载此保存，该保存不属于第一章。
 SAVE_FILE_UNKNOWN=不正确的保存。
 SAVE_FILE_UNKNOWN_DESCRIPTION=此保存已被删除或已损坏。加载另一个保存文件或开始一个新的游戏。
 
-HELP_RADAR_INSTRUCTIONS_GAMEPAD=使用<spr=GAMEPAD_STICKLEFT>来在搜索过程中移动。
-HELP_RADAR_INSTRUCTIONS_MOUSE=使用<button=INPUT_MOVE_UP><button=INPUT_MOVE_LEFT><button=INPUT_MOVE_DOWN><button=INPUT_MOVE_RIGHT>或鼠标在搜索中移动。
-
-INTERFACE_ACCESSIBILITY_DPADLINE=热点对齐。
-ITEM_INTERFACE_ACCESSIBILITY_DPADLINE_MSG=将游戏中的热点放在一条线上，以方便选择（不适用于菜单和特写镜头）。
-
 MENU_CARD_PROMPTEXT=更多信息
 
+#MENU_CARD_TITLE_MAKESHIPBROK=Brok plushie available
+#MENU_CARD_SHORTDESCRIPTION_MAKESHIPBROK=Only for 21 days!
+#MENU_CARD_FULLDESCRIPTION_MAKESHIPBROK=A Brok plushie is available to pre-order right now on Makeship.com. The campaign only runs for a limited time!
+#MENU_CARD_FULLDESCRIPTION_MAKESHIPBROK_GAMEPAD=<button=INPUT_ACTION_VALIDATE> Visit the site    <button=INPUT_ACTION_CANCEL> Go back
+#MENU_CARD_VALIDATE_MAKESHIPBROK=Visit the site
 MENU_CARD_NEWS=新闻
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ACCESSIBILITY_JUMP_SKIP=跳过此跳跃
-DEMO_FORBID_DESCRIPTION=演示版本不允许加载此保存，该保存不属于第一章。
-
+# -----------------------------
+# COOP STUFF
+# -----------------------------
 INTERFACE_DEBUG_KILLCOOP=杀死合作玩家
 INTERFACE_DEBUG_DISPLAYSHADOWADS=显示阴影广告位置
 INTERFACE_RECONNECT_CONTROLLER=重新连接
 INTERFACE_NEW_CONTROLLER_TITLE=检测到新控制器
 INTERFACE_NEW_CONTROLLER=按下以加入合作模式
+INTERFACE_NEW_CONTROLLER_PC=(按下任意其他按钮以单人游戏)
 INTERFACE_NEW_CHARACTER_TITLE=解锁角色
 INTERFACE_NEW_CHARACTER=合作玩家现在可以扮演{whoname}！
+INTERFACE_KEYBOARDMOUSE=键盘/鼠标
 COOP_MAIN_GATOR=短吻鳄
 COOP_MAIN_CAT=猫
 NAME_COOP_BROK2=布鲁克
@@ -3500,8 +2407,12 @@ NAME_COOP_DEE4=迪
 NAME_COOP_RAT_GENERIC2=巴特
 NAME_COOP_RAT_GENERIC3=克拉特
 NAME_COOP_RAT_GENERIC4=达特
+
 GAMEOVER_KILLEDCOOP=小心你的...朋友？...
 GAMEOVER_KILLEDCOOPGRAFF=这只小猫不应该信任它的朋友。
+GAMEOVERTYPE_KILLEDCOOP=被朋友杀死
+GAMEOVERTYPE_KILLEDCOOPGRAFF=被朋友杀死
+
 INTERFACE_ADSCOOP=广告
 INTERFACE_PLAYER=玩家
 INTERFACE_CHARACTER=角色
@@ -3511,6 +2422,7 @@ INTERFACE_GAMEOPTIONSCOOP=合作模式选项
 INTERFACE_OPTIONSCOOP=合作模式
 INTERFACE_STORE=商店
 INTERFACE_STORECOOP=合作模式商店
+
 ITEM_LEVELUP=经验升级
 ITEM_LEVELUP_MSG=获得25%的升级经验
 ITEM_HINTS=获取提示
@@ -3519,7 +2431,9 @@ ITEM_MONEY_MSG=获得<col=BOLD>100个Unis</col>
 INTERFACE_OPTION_CONTROLLERSLIST=控制器列表
 ITEM_INTERFACE_OPTION_CONTROLLERSLIST_MSG=查看连接的控制器列表并分配给玩家
 ITEM_INTERFACE_GAMEOPTIONSCOOP_MSG=合作模式特定选项
+
 INTERFACE_BUY_FOOD_TOOMANY=已经太多了！
+
 INTERFACE_NO_CONTROLLER=没有连接的控制器。
 INTERFACE_UNUSED_CONTROLLER=未使用
 INTERFACE_ACTIVE_CONTROLLER=活动的
@@ -3527,116 +2441,65 @@ INTERFACE_SLOT_CONTROLLER=插槽
 INTERFACE_ASSIGN_CONTROLLER=分配玩家
 INTERFACE_UNKNOWNDISCONNECTED_CONTROLLER=未知或断开连接的控制器
 INTERFACE_PLAYER_NUMBER=玩家{playernumber}
+
 INTERFACE_CHOOSE_FRIENDLYFIRE_NONE=无碰撞/无伤害
 INTERFACE_CHOOSE_FRIENDLYFIRE_NODAMAGE=碰撞/无伤害
 INTERFACE_CHOOSE_FRIENDLYFIRE_DAMAGE=碰撞/伤害
 INTERFACE_OPTION_COOP_FRIENDLYFIRE=友军火力
 ITEM_INTERFACE_OPTION_COOP_FRIENDLYFIRE_MSG=合作角色可以互相击中吗？如果是的话，他们会受到伤害吗？
+
+#INTERFACE_CHOOSE_CHOICETYPE_FIRST=First player to move
 INTERFACE_CHOOSE_CHOICETYPE_RANDOM=随机
 INTERFACE_CHOOSE_CHOICETYPE_ALWAYSTHISONE=始终相同的玩家（待定）
 INTERFACE_CHOOSE_CHOICETYPE_ALWAYSTHISPLAYER=始终玩家{playernumber}
 INTERFACE_CHOOSE_CHOICETYPE_ROCKPAPERSCISSORS=剪刀石头布
 INTERFACE_CHOOSE_CHOICETYPE_BALL=球游戏
 INTERFACE_CHOOSE_CHOICETYPE_ANYGAME=任何游戏
+
 INTERFACE_OPTION_COOP_CHOICE=由谁作决策？
 ITEM_INTERFACE_OPTION_COOP_CHOICE_MSG=当需要做决策时（菜单和角色对话之外），哪位玩家做出决策？
+
 INTERFACE_OPTION_COOP_DROPOUT=退出合作模式
+
 ITEM_INTERFACE_OPTION_COOP_DROPOUT_MSG=当玩家不想继续游戏时使用此选项。他们随时可以回来。
+
 INTERFACE_COOP_CHARACTER_BOTTOM=在冒险模式中，使用<button=INPUT_ACTION_SCROLL_INV_LEFT> / <button=INPUT_ACTION_SCROLL_INV_RIGHT>来切换角色和外观。
+
 INTERFACE_WAIT_START=合作模式会尽快开始。
 INTERFACE_WAIT_START_TITLE=请稍候
+
 INTERFACE_SHADOWADS_ENDMESSAGE=阴影广告可以在菜单商店中交换。找到它们没有额外的奖励。与普通广告不同，它们不会在游戏过程中保留。
+
 CHOICE_HOWMANY_PLAYERS=有多少玩家？
 CHOICE_START_COOP=开始一个双人合作模式？
 INTERFACE_LEVELUP_GIVEXP=将奖励给另一个玩家
 CHOICE_BUY_COOP=给这个...
 CHOICE_PLAYER=玩家{playernumber}
+
 HELP_COOPINFO=合作冒险选项
 HELP_COOPINFO_INSTRUCTIONS=本游戏支持本地协同游戏！##在冒险中，新玩家应按下<button=INPUT_ACTION_MENU>以启动两人游戏会话（最多四名玩家！）
+
 HELP_COOPNEW=合作模式
 HELP_COOPNEW_INSTRUCTIONS=合作玩家是变形的幽灵实体。##他们可以：#- 参与<col=BOLD>战斗</col>#- 检查<col=BOLD>周围环境</col>#- 改变<col=BOLD>外观</col>#- 在房间里找到自己的一组<col=BOLD>隐藏广告</col>#- 还有更多有趣的事情！
+
 HELP_COOPNEW2=合作模式（接下来）
 HELP_COOPNEW2_INSTRUCTIONS=最多四名玩家可以加入！在冒险中，没有角色能够看到或与这些实体互动。##因此，他们造成的任何影响都将<col=BOLD>直接归因于主要玩家</col>！
+
 HELP_SHADOWADS=合作模式 - 阴影广告
 HELP_SHADOWADS_INSTRUCTIONS=每个合作玩家都有一组单独的<col=BOLD>阴影广告</col>可用于获取奖励。##阴影广告是不可见的。留意振动和视觉效果，这意味着你靠近了。##当它们加剧时，<col=BOLD>在原地静止两秒钟</col>以自动获取！
+
 HELP_MENUCOOP=合作模式 - 菜单
 HELP_MENUCOOP_INSTRUCTIONS=合作玩家可以通过按下<button=INPUT_ACTION_MENU>来访问自己的<col=BOLD>独立菜单</col>。##查看更多信息！
+
 HELP_SHADOWPOINTS=合作模式 - 阴影点数
 HELP_SHADOWPOINTS_INSTRUCTIONS=当你找到阴影广告时，你会获得点数。通过<col=BOLD>菜单中的商店</col>（食物、EXP、提示、钱等）将这些点数转化为有用的资源。##决定是保留它们还是交给主要玩家！
+
 HELP_EMOJIS=合作模式 - 表情符号
 HELP_EMOJIS_INSTRUCTIONS=合作玩家可以使用<spr=GAMEPAD_STICKRIGHT>来表达情感。##完美用于刺激主要玩家！
+
 MENU_CARD_TITLE_COOP=合作模式
 MENU_CARD_SHORTDESCRIPTION_COOP=与朋友一起玩！
 MENU_CARD_FULLDESCRIPTION_COOP=游戏现在支持全程合作模式，最多4名玩家。连接您的控制器！
-
-
-
-PC_ACCESSIBILITY=可访问性
-INTERFACE_KEYBOARDMOUSE=键盘/鼠标
-INTERFACE_NEW_CONTROLLER_PC=(按下任意其他按钮以单人游戏)
-
-
-
-COOP_INTERACT_DOOR1-1=我打不开那扇门！
-COOP_INTERACT_DOOR2-1=我是幽灵！不能穿越门！
-COOP_INTERACT_DOOR2-2=嗯...我开始质疑我的存在。
-COOP_INTERACT_DOOR3-1=必须问 {whomain} 来打开它。
-
-COOP_INTERACT_PASSAGE1-1=我必须留在我的宿主附近。
-COOP_INTERACT_PASSAGE2-1=我只存在来帮助 {whomain}。所以，我不能去那里，直到他们决定。
-COOP_INTERACT_PASSAGE3-1=对我来说太远了！
-
-COOP_INTERACT_UNKNOWN1-1=嗯？...
-COOP_INTERACT_UNKNOWN2-1=不知道那是什么。
-COOP_INTERACT_UNKNOWN3-1=我的大脑无法理解。
-
-COOP_INTERACT_USE1-1=我无法触摸这个！我是幽灵！
-COOP_INTERACT_USE1-2=你必须相信我！
-COOP_INTERACT_USE2-1=只有真正的人可以使用这个。
-COOP_INTERACT_USE3-1=我希望我能，但我只能破坏东西。
-
-COOP_INTERACT_AD1-1=不错！ {whomain} 会高兴我为他找到这个广告！
-COOP_INTERACT_AD2-1=酷，我们应该能用它获得提示！
-COOP_INTERACT_AD3-1=又多一个给他的收藏！
-
-COOP_INTERACT_ITEMPICK1-1=看起来有趣，我需要告诉 {whomain} 来拾取它！
-COOP_INTERACT_ITEMPICK2-1=我想要它，但我的幽灵手无法触碰它。
-COOP_INTERACT_ITEMPICK2-2=只有主要玩家拿到它之后才能拿。
-COOP_INTERACT_ITEMPICK3-1=嘿，看，我们需要拿这个！
-
-COOP_INTERACT_CANNOTINTERRUPT1-1=如果主要玩家没有忙着谈话或其他事情的话，我会的。
-COOP_INTERACT_CANNOTINTERRUPT2-1=必须等一会儿。
-COOP_INTERACT_CANNOTINTERRUPT3-1=是的，一旦主要玩家终于停下来。
-
-COOP_INTERACT_NOTENOUGHMONEY1-1=没有足够的钱...
-
-COOP_OTT1-1=他是我们中最好的一个。
-COOP_OTT1-2=我们必须保持亲近并以任何代价保护他！
-
-COOP_STUBOT1-1=呵呵。
-COOP_STUBOT1-2=从来不信任那些锡罐头，这个也不例外。
-
-COOP_KLAY1-1=我不记得这个孩子...
-COOP_KLAY1-2=也许是因为他不重要。
-
-COOP_GUARD1-1=圆形但强壮的家伙。
-COOP_GUARD1-2=尽管外表如此，但非常友好。
-
-COOP_MINK1-1=剧透：这个脾气坏的实验室书呆子没有做这个。
-COOP_MINK1-2=信不信由你，我不在乎！毕竟，我不存在。
-
-COOP_TIDY1-1=实验室的奴隶。
-
-COOP_HUSH1-1=我努力了，但他不会说一句话！
-COOP_HUSH1-2=科学家真是没礼貌。
-
-COOP_GHERKIN1-1=太好了，今天我们来做老年病学！
-
-COOP_DEE1-1=新闻业已不再是过去的模样。
-
-
-GAMEOVERTYPE_KILLEDCOOP=被朋友杀死
-GAMEOVERTYPE_KILLEDCOOPGRAFF=被朋友杀死
 
 INTERFACE_NEW_PLAYER_TITLE=检测到新玩家
 MENU_CARD_FULLDESCRIPTION_COOP_CONSOLE=游戏现在支持全程本地合作模式，最多4名玩家！
@@ -3644,7 +2507,7 @@ MENU_CARD_FULLDESCRIPTION_COOP_CONSOLE=游戏现在支持全程本地合作模�
 
 
 # ---------------------------
-# 移动设备专用选项
+# MOBILE SPECIFIC OPTIONS
 # ---------------------------
 INTERFACE_START_TOUCH=触摸或按按钮
 INTERFACE_TOUCHSCREEN=触摸屏
@@ -3671,7 +2534,6 @@ ITEM_INTERFACE_OPTION_DELETECACHEEXTRAS_MSG=删除额外下载的缓存（以释
 INTERFACE_OPTION_DELETECACHEEXTRAS_QUESTION=删除下载缓存？
 INTERFACE_OPTION_STORAGE=附加内容和存储
 ITEM_INTERFACE_OPTION_STORAGE_MSG=显示可用的附加内容
-INTERFACE_START_TOUCH=触摸或按按钮
 CHOICE_VIBRATIONS=是否启用振动？
 INTERFACE_OPTION_STOREPAGE=商店页面
 ITEM_INTERFACE_OPTION_STOREPAGE_MSG=访问商店页面。评价游戏总是受欢迎的！
@@ -3710,7 +2572,6 @@ INTERFACE_CLOUDSAVE=云存储
 INTERFACE_CLOUDSAVE_ERR_PLAYSTORE=确保已连接到 Play Games，并允许 Google Drive 进行传输
 INTERFACE_CLOUDSAVE_ERR_APPLESTORE=确保 iCloud Drive 已允许该应用
 
-
 # -------------------------------------
 # Touch screen specific input names
 # -------------------------------------
@@ -3730,17 +2591,19 @@ INPUT_TOUCH_TWOFINGERHOLD=双指保持
 INPUT_TOUCH_TWOFINGERSLIDE=双指滑动
 INPUT_TOUCH_TWOFINGERSWIPE=双指滑动
 INPUT_TOUCH_PINCHINOUT=两指捏合/分开
+INPUT_TOUCH_PINCHIN=捏合
+INPUT_TOUCH_PINCHOUT=张开
 INPUT_TOUCH_THREEFINGERTAP=三指点击
 INPUT_TOUCH_THREEFINGERHOLD=三指保持
 INPUT_TOUCH_FOURFINGERHOLD=四指保持
 INPUT_TOUCH_SHAKE=摇晃
 
-
 # -------------------------------------
-# 移动设备触摸教程/说明/帮助
+# Mobile touch tutorials/instructions/help
 # -------------------------------------
+HELP_INVALID=当前控制方式下，此教程无效。
 
-# 触摸特定教程
+# Touch specific tutorials
 TUTORIAL_DESCRIBECOMBINE=组合/描述
 HELP_FIGHTMODE_INSTRUCTIONS_TOUCH=<col=BOLD>向上滑动手指</col> <button=INPUT_TOUCH_SWIPEUP> 切换到“动作模式”。#您还可以 <button=INPUT_TOUCH_TAP> 点击右上角图标 <spr=BUTTON_modefight>##
 
@@ -3749,7 +2612,6 @@ HELP_FIGHTMODE2_INSTRUCTIONS=做得好！现在，让我们回到“冒险模式
 
 HELP_JUMP_INSTRUCTIONS_TOUCH=然后用 <col=BOLD>向右上方滑动</col> <button=INPUT_TOUCH_SWIPEUPRIGHT> 跳跃##
 HELP_JUMP2_INSTRUCTIONS_TOUCH=布罗格将跳向您滑动指示的方向。##
-HELP_PAD_INSTRUCTIONS_TOUCH=有几个热点非常靠近？放大该区域！##慢慢地在屏幕上滑动手指 <button=INPUT_TOUCH_SLIDE>。##您还可以用两个手指捏合/分开 <button=INPUT_TOUCH_PINCHINOUT> 来放大和缩小。
 HELP_CLICKERS_INSTRUCTIONS_TOUCH=在冒险模式中用 <col=BOLD>两个手指</col> 点击屏幕 <button=INPUT_TOUCH_TWOFINGERHOLD>。
 
 HELP_RUN_INSTRUCTIONS_TOUCH=双击屏幕上的某个位置 <button=INPUT_TOUCH_DOUBLETAP>
@@ -3802,7 +2664,6 @@ BM01_SUBTITLE_TUTORIAL2_VIRTUAL=通过快速两次按压摇杆或长按摇杆，
 
 BM01_TITLE_TUTORIAL3_TOUCH=使用武器
 BM01_SUBTITLE_TUTORIAL3_TOUCH=在战斗中，触摸右上角图标 <button=INPUT_TOUCH_TAP> 打开菜单。拿起你的棒子并攻击！
-
 BM01_SUBTITLE_TUTORIAL3_VIRTUAL=在战斗中，触摸右上角图标 <button=INPUT_TOUCH_TAP> 打开菜单。拿起你的棒子并攻击！
 
 BM01_SUBTITLE_TUTORIAL4_TOUCH=使用两个手指触摸屏幕 <button=INPUT_TOUCH_TWOFINGERHOLD> 进行防御。用两个手指滑动指定方向 <button=INPUT_TOUCH_TWOFINGERSWIPE> 进行闪避。
@@ -3822,7 +2683,7 @@ MOVE_COMMANDS_DIRECTION=方向
 MOVE_COMMANDS_ONTHE=在
 MOVE_COMMANDS_ITEM=物品
 
-# Http加载
+# Http loading
 NETWORK_EXTRAS_LOADING=正在加载额外内容，请稍候...
 NETWORK_EXTRAPICTURE_LOADING=正在加载图片...
 NETWORK_EXTRAS_ERROR=无法加载额外内容。
@@ -3833,7 +2694,7 @@ NETWORK_ERROR_PATHACCESS=检查存储空间和权限
 NETWORK_ERROR_TIMEOUT=超时
 
 
-# 附加内容
+# Addional content
 DLC_NOINSTALL=尚未安装此内容。
 DLC_ARTBOOK=画集
 DLC_ARTBOOK_DESCRIPTION_OWNED=画集可在“额外”菜单中找到。
@@ -3841,6 +2702,7 @@ DLC_ARTBOOK_DESCRIPTION_NOTOWNED=官方画集。包括60页充满艺术的内容
 DLC_OST=原声音轨
 DLC_OST_DESCRIPTION_OWNED=原声音轨可在“额外”菜单中找到。
 DLC_OST_DESCRIPTION_NOTOWNED=由Python Blue创作的官方原声音轨。高品质的67首音轨+7首独家“合成”混音。在“额外”菜单中收听。
+DLC_OST_DESCRIPTION_OWNED_STEAM=原声带可在你的steam库中找到。
 DLC_OST_DESCRIPTION_NOTOWNED_STEAM=由Python Blue创作的官方原声音轨。高品质的67首音轨+7首独家“合成”混音。
 DLC_PREMIUM=高级版
 DLC_PREMIUM_DESCRIPTION_OWNED=您可以访问所有游戏章节。
@@ -3861,6 +2723,16 @@ DLC_CH6=第6章
 DLC_CH6_DESCRIPTION_OWNED=您可以访问第6章。
 DLC_CH6_DESCRIPTION_NOTOWNED=解锁游戏的最终章节。
 
+DLC_BRAWLBAR=乱斗吧
+DLC_BRAWLBAR_DESCRIPTION_OWNED=你已经拥有了乱斗吧DLC。在任意存档中，前往黑客后巷并进入最左边的门，也就是之前挂着“即将盛大开业”横幅的那里
+DLC_BRAWLBAR_DESCRIPTION_NOTOWNED=解锁乱斗吧！在这个专注于格斗额外内容中，你可以在贫民区的地下酒吧中进行冒险，进行超过60个疯狂的挑战！
+
+DLC_NATALTAIL=Natal Tail
+DLC_NATALTAIL_DESCRIPTION_OWNED=您已拥有短篇视觉小说《Natal Tail》。
+DLC_NATALTAIL_DESCRIPTION_NOTOWNED=一部以圣诞节为主题的短篇视觉小说。
+
+DLC_MAINGAME=BROK the InvestiGator
+DLC_MAINGAME_DESCRIPTION_NOTOWNED=一款融合清版格斗和RPG元素的创新冒险游戏。
 
 ITEM_DLC_ARTBOOK_MSG=60页的艺术画册
 ITEM_DLC_OST_MSG=完整游戏原声音轨
@@ -3870,6 +2742,10 @@ ITEM_DLC_CH3_MSG=解锁第三章
 ITEM_DLC_CH4_MSG=解锁第四章
 ITEM_DLC_CH5_MSG=解锁第五章
 ITEM_DLC_CH6_MSG=解锁最终章
+ITEM_DLC_BRAWLBAR_MSG=乱斗吧
+ITEM_DLC_NATALTAIL_MSG=Natal Tail，全新的圣诞节
+ITEM_DLC_MAINGAME_MSG=Brok的首次大型冒险！
+
 INTERFACE_OPTION_RESTOREPURCHASE=恢复购买
 ITEM_INTERFACE_OPTION_RESTOREPURCHASE_MSG=如果您更改了设备或卸载了应用程序，请恢复以前的购买
 
@@ -3924,25 +2800,22 @@ CHOICE_LOWQUALITY=自动应用低设置？
 HELP_LOWQUALITY2=下一步
 HELP_LOWQUALITY2_INSTRUCTIONS=低设置已应用。您可以随时在选项菜单中更改这些设置。
 
+
 PC16_CHOOSE_POSITION=把爪子移到这里吗？
 
-ITEM_INTERFACE_OPTION_SKIPBUTTON_TOUCH_MSG="双指"是否应跳过已看过的对话，所有对话或不跳过？
-ITEM_INTERFACE_OPTION_SKIPCUTSCENE_TOUCH_MSG="双指"是否应加速剧情？（适用于后续游玩）
-
-CHOICE_PURCHASE_INTERRUPT=中断购买？
-
-MOBILE_WAIT_DESCRIPTION_RESTORE=购买检查可能需要最多10秒。
-
-INPUT_TOUCH_PINCHIN=捏合
-INPUT_TOUCH_PINCHOUT=张开
-HELP_INVALID=当前控制方式下，此教程无效。
 ITEM_INTERFACE_OPTION_SKIPBUTTON_TOUCH_MSG="两指"应该跳过已看到的对话，所有对话还是不跳过？
 ITEM_INTERFACE_OPTION_SKIPCUTSCENE_TOUCH_MSG="两指"应该加速过场动画吗？（对于后续游戏过程有用）
+
 CHOICE_PURCHASE_INTERRUPT=中断购买？
+
 MOBILE_WAIT_DESCRIPTION_RESTORE=购买检查可能需要长达 10 秒。
+
 INTERFACE_OPTION_VIRTUAL_STICKAUTOREPOSITION=自动重新定位摇杆
 ITEM_INTERFACE_OPTION_VIRTUAL_STICKAUTOREPOSITION_MSG=摇杆将重新定位到您触摸的位置
 
+# ------------------------
+# Blind accessibility
+# ------------------------
 HELP_ACCESSDOWNLOAD=需要下载
 HELP_ACCESSDOWNLOAD_INSTRUCTIONS=需要下载辅助性演讲（约 60 MB 的数据）。下载将自动开始。## 点击任意位置以中断。
 CHOICE_ACCESSDOWNLOAD_INTERRUPT=中断下载？
@@ -3971,107 +2844,39 @@ HELP_BLINDCAMERA_INSTRUCTIONS_TOUCH=此房间的宽度大于屏幕的尺寸。�
 
 CHOICE_PC19_JUMP_ABOVE=跳过吗？
 
-MENU_CARD_TITLE_MAKESHIPGRAFF=格拉夫毛绒玩具！
-MENU_CARD_SHORTDESCRIPTION_MAKESHIPGRAFF=在 MakeShip 上的限量版
-MENU_CARD_FULLDESCRIPTION_MAKESHIPGRAFF=这款独特的格拉夫毛绒玩具可在 Makeship.com 上预订。活动仅限一段时间！
-MENU_CARD_FULLDESCRIPTION_MAKESHIPGRAFF_GAMEPAD=<button=INPUT_ACTION_VALIDATE> 访问网站 <button=INPUT_ACTION_CANCEL> 返回
-MENU_CARD_VALIDATE_MAKESHIPGRAFF=访问网站
-
 MOBILE_RATING=评价游戏
 MOBILE_RATING_DESCR=如果您喜欢这款游戏，请在商店中给出评价/评论。这会非常有帮助！
 
-#----------------------------------------------------
-#update 20250502
-#----------------------------------------------------
-CHAR_RAT_GENERIC=鼠啸帮成员
-CHAR_RAT_GENERIC|BAT=鼠啸帮成员（棍）
-CHAR_RAT_GENERIC|KNIFE=鼠啸帮成员（刀）
-CHAR_BROK|BOXER=布罗格（拳击手）
-CHAR_NELA=内菈
-#Do not translate
-ITEM_XBOXONE=Xbox One / Series
-ITEM_XBOX360=Xbox 360
-ITEM_PS4=PS4
-ITEM_PS5=PS5
-ITEM_SWITCHPRO=Switch Pro Controller
-ITEM_STEAMDECK=Steam Deck
-INTERFACE_DEBUG_OTHER=Other
-INTERFACE_DEBUG_KILLHELPER=Kill helper
-INTERFACE_DEBUG_FORCESWITCHSAMEROOM=Force switch character (same room)
-INTERFACE_DEBUG_GETALLINTERROGATIONS=Get all interrogations / scenes to skip
-INTERFACE_DEBUG_GETALLEXTRAS=Get all extras
-INTERFACE_DEBUG_MUSICEND=End current music track
-INTERFACE_DEBUG_SKIPTIMER=Skip current timer
-INTERFACE_DEBUG_REPLAYONE=Replay one
-INTERFACE_DEBUG_REPLAYLIST=Replay list
-INTERFACE_DEBUG_RELOADROOM=Reload current room
-INTERFACE_DEBUG_SCENE=Debug one scene/ending
-INTERFACE_DEBUG_RESTARTGAME=Restart game
-INTERFACE_DEBUG_THROWERROR=Throw error
-INTERFACE_DEBUG_FILLDIALOGSEEN=Fill dialog seen map
-INTERFACE_DEBUG_DISPLAYMEMINFO=Memory information
-INTERFACE_DEBUG_SETDIFFICULTY=Set difficulty
-INTERFACE_CHAPTER_CANNOT_PS=This chapter part cannot be accessed directly.#Choose the previous part and switch player.
-TUTORIAL_SCROLLFAST=快速滚动
-DLC_BRAWLBAR=乱斗吧
-DLC_BRAWLBAR_DESCRIPTION_OWNED=你已经拥有了乱斗吧DLC。在任意存档中，前往黑客后巷并进入最左边的门，也就是之前挂着“即将盛大开业”横幅的那里
-DLC_BRAWLBAR_DESCRIPTION_NOTOWNED=解锁乱斗吧！在这个专注于格斗额外内容中，你可以在贫民区的地下酒吧中进行冒险，进行超过60个疯狂的挑战！
-ITEM_DLC_BRAWLBAR_MSG=乱斗吧
 PC_CHOICE_ENTERANYWAY=无论如何都要进去？（剧透警告！）
+
+
 # Errors
 DLC_ERROR_OWNED=您似乎并未拥有该DLC，正在返回标题页面。
 DLC_ERROR_INSTALLED=您似乎并未安装该DLC，请检查安装完整性。
+
+
 TITLE_BRAWLBAR=乱斗吧
 TITLE_BRAWLBAR_SUBTITLE=额外内容
 TITLE_GAME_AVAILABLE=现已发布！
+TITLE_GAME_AVAILABLESOON=即将推出
 TITLE_GAME_INSTALLIT=安装以游玩
 TITLE_GAME_PLAYNOW=现在游玩
 INTERFACE_SAVE_DLC=DLC
 INTERFACE_SAVE_STANDALONE=乱斗吧
-#----------------------------------------------------
-# Graff
-DESCRIBE_INV_PIPEWEAPON1-1=……
-#----------------------------------------------------
-# Unknown
-COOP_INTERACT_NOTENOUGHMONEY-1=钱不够……
 
+TITLE_MAINGAME=BROK the InvestiGator
+TITLE_MAINGAME_SUBTITLE=开始冒险
 
-CHAR_DRONE=无人机
-INTERFACE_PARRY=招架!
-MOVE_FOODIMMEDIATE=立刻吃掉食物
-MOVE_FOODSTORE=储存食物
-MOVE_PARRY=招架
-MOVE_COMMANDS_PARRY1=马上
-MOVE_COMMANDS_PARRY2=就要
-MOVE_COMMANDS_PARRY3=受击
-MOVE_COMMANDS_MOUSESTYLE=键盘+鼠标
-MOVE_COMMANDS_KEYBOARDSTYLE=仅键盘
-GAMEOVER_PC07B_SIN_TOUCH=按住防御键，避免被杯子砸伤！
-GAMEOVER_SP01_TRIBOT_TOUCH=想打中汰涤的话，你得加速！
-MOVE_COMMANDS_TIMES4=x 4
-DLC_OST_DESCRIPTION_OWNED_STEAM=原声带可在你的steam库中找到。
 DIFFICULTY_EASY_DLC=挑战变得容易，但获取的C代币减少。
 DIFFICULTY_NORMAL_DLC=推荐大多数玩家选择的难度。
 DIFFICULTY_HARD_DLC=为硬核玩家准备，获取的C代币增加。
 DIFFICULTY_MANIA_DLC=你喜欢受苦吗？太棒了！
+
 INTERFACE_SHORTCUT=(快捷键)
+
 BM01_TITLE_TUTORIAL4=闪避 ＆ 招架
 BM01_SUBTITLE_TUTORIAL4PARRY_MOUSE=保持站立，在受击前按下<button=INPUT_ACTION_GUARD>来招架。
 BM01_SUBTITLE_TUTORIAL4PARRY_GAMEPAD=保持站立，在受击你前按下<button=INPUT_ACTION_GUARD> 来招架。
-
-
-
-DLC_NATALTAIL=Natal Tail
-DLC_NATALTAIL_DESCRIPTION_OWNED=您已拥有短篇视觉小说《Natal Tail》。
-DLC_NATALTAIL_DESCRIPTION_NOTOWNED=一部以圣诞节为主题的短篇视觉小说。
-DLC_MAINGAME=BROK the InvestiGator
-DLC_MAINGAME_DESCRIPTION_NOTOWNED=一款融合清版格斗和RPG元素的创新冒险游戏。
-ITEM_DLC_NATALTAIL_MSG=Natal Tail，全新的圣诞节
-ITEM_DLC_MAINGAME_MSG=Brok的首次大型冒险！
-TITLE_GAME_AVAILABLESOON=即将推出
-TITLE_MAINGAME=BROK the InvestiGator
-TITLE_MAINGAME_SUBTITLE=开始冒险
-
 
 # Duplicates, for fanarts
 CHAR_MATT=马特
@@ -4089,9 +2894,6 @@ CHAR_OTHERDLC=更多斗殴酒吧与首顶帽子的角色
 SAVE_STANDALONE_WARN_TITLE=警告 - 主线冒险数据
 SAVE_STANDALONE_WARN_DESCR=您要覆盖的存档包含主线冒险的数据。如果在此存档位保存，您将丢失这些数据。
 
-ITEM_ENERGYULTIMATE=终极能量
-ITEM_ENERGYULTIMATE_MSG=你生命中最后一杯饮料！#<col=BOLD>获得30秒无限力量，然后死亡</col>.
-
 INTERFACE_OPTION_MOREGAMES=更多游戏
 ITEM_INTERFACE_OPTION_MOREGAMES_MSG=显示更多由COWCAT开发的精彩游戏
 ITEM_DLC_DEMETRIOS_MSG=Demetrios - 巨大的愤世嫉俗冒险
@@ -4099,11 +2901,15 @@ DLC_DEMETRIOS=Demetrios
 DLC_DEMETRIOS_DESCRIPTION_OWNED=您已拥有 Demetrios。
 DLC_DEMETRIOS_DESCRIPTION_NOTOWNED=COWCAT的第一款冒险游戏是一段充满荒谬幽默的疯狂旅程！
 INTERFACE_DISCORD=加入BROK社区！
+
+
 INTERFACE_DISCORD_DESCR=扫描二维码加入我们的Discord
+
 
 DLC_AVAILABLE_SWITCH=可在 Nintendo eShop 获取
 DLC_AVAILABLE_PS=可在 PlayStation Store 获取
 DLC_AVAILABLE_XBOX=可在 Xbox Store 获取
+
 
 MENU_INTERFACE_START_ALL=按任意按钮或触摸屏幕开始
 WASM_ROTATE=请将设备旋转至横屏模式
@@ -4113,8 +2919,17 @@ WASM_AFTERIMPORT=游戏将重新启动以完成导入。
 WASM_SAVESINFO=每次进行手动保存时，游戏都会下载存档文件。如果你丢失了存档，请点击此处导入。
 WASM_SAVESTITLE=存档下载
 WASM_IMPORT=导入存档
+WASM_SELECTSAVE=选择存档文件
 
 ITEM_DLC_FIRSTHAT_MSG=First Hat（漫画）
 DLC_FIRSTHAT=First Hat
 DLC_FIRSTHAT_DESCRIPTION_OWNED=你已拥有 First Hat。可从主菜单开始游玩！
 DLC_FIRSTHAT_DESCRIPTION_NOTOWNED=官方推出、全程配音并带有动画的漫画作品。了解 Brok 是如何成为侦探的！
+DLC_FIRSTHAT_LAUNCH_TITLE=需要手动启动
+DLC_FIRSTHAT_LAUNCH_DESC=进入游戏文件，打开 <col=BOLD>COMIC_FIRSTHAT/</col> 文件夹并运行“FirstHat”可执行文件。
+
+ITEM_DLC_CELSIUS_MSG=成为鼠啸帮的首领，带领你的族群。
+DLC_CELSIUS=Celsius Strays
+DLC_CELSIUS_DESCRIPTION_OWNED=你已拥有 Celsius Strays。
+DLC_CELSIUS_DESCRIPTION_NOTOWNED="被放逐。被追猎。但我们仍然坚持。" 在这款衍生作品中，成为鼠啸帮的首领，带领你的族群穿越充满危险的未来荒原，在那里每一个选择都关乎生存。
+

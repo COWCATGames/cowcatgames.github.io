@@ -1,18 +1,14 @@
+﻿# LANGUAGE: BRZ
 #-------------------------------
 #= DLC Fight club
 #-------------------------------
-
-TITLE_BRAWLBAR=The Brawl Bar
-TITLE_BRAWLBAR_SUBTITLE=Conteúdo Adicional
-TITLE_GAME_AVAILABLE=Já disponível!
-TITLE_GAME_INSTALLIT=Instale para jogar
-TITLE_GAME_PLAYNOW=Jogar agora
 
 TITLE_SUPPORTCHALLENGERS=Qual(is) lutador(es) vai ganhar?
 TITLE_SUPPORTCHALLENGERS_GROUP=Grupo
 
 CHOICE_JUKEBOX=Escolha uma música
 CHOICE_CLINT=Dar os C-Tokens?
+# MODIFIED
 CHOICE_WHEELTURN=Gastar 10 C-Tokens?
 CHOICE_DAILYCHALLENGE=Escolha um desafio diário
 CHOICE_CHOOSECHARACTER=Escolha um personagem
@@ -25,6 +21,8 @@ CHOICE_RETRY=Tentar novamente
 CHOICE_EXIT=Sair
 CHOICE_REMOVEALL=Apagar todo o progresso da DLC
 CHOICE_REMOVESOME=Mantem C-Tokens, comidas e conteúdo desbloqueável
+CHOICE_DONT=Não faça nada
+CHOICE_ABSOLUTELY=Último aviso! Você tem absoluta certeza?
 
 # Ads
 AD_PC21_DOORRIGHT=Porta da direita
@@ -55,6 +53,7 @@ ACHIEVE_DLC_STORY=Adoro bater papo
 ACHIEVE_DLC_CREATOR=Sentindo criativo
 ACHIEVE_DLC_THROWNOUT=Não-bem-vindo
 ACHIEVE_DLC_BATHROOM=Pausa para o banheiro
+ACHIEVE_DLC_ADS=Bar Adoradores de Panfletos
 
 # Achievements descriptions
 ITEM_DLC_FIRSTWIN_MSG=Ganhe seu primeiro desafio
@@ -70,9 +69,9 @@ ITEM_DLC_STORY_MSG=Fale com todos os personagens no bar pelo menos uma vez
 ITEM_DLC_CREATOR_MSG=Crie um desafio e vença-o
 ITEM_DLC_THROWNOUT_MSG=Seja expulso do bar
 ITEM_DLC_BATHROOM_MSG=Encontre um caminho dentro do banheiro
+ITEM_DLC_ADS_MSG=Pegue todos os Panfletos Colecionáveis
 
 # This one needs to stay very short (3 characters)
-INTERFACE_SAVE_DLC=DLC
 INTERFACE_CHOOSE=Escolha
 INTERFACE_DLCFOOD=Comida V.R.
 INTERFACE_TOTALCTOKENS={value} Total C-Tokens ganhos
@@ -80,12 +79,24 @@ INTERFACE_VRFOODSELECTED=Comida selecionada
 INTERFACE_CHARACTERSELECTED=Personagem selecionado
 INTERFACE_RENAMEPLAYER=Renomeie jogador {number}
 INTERFACE_SPINIT=Rode!
+INTERFACE_GAMEOVERDLC=Gameovers
+INTERFACE_VERSUS=VS
+INTERFACE_ALLENEMIES=Todos
+
 INTERFACE_DEBUG_DLC_WIN=Ganhe o desafio
 INTERFACE_DEBUG_DLC_LOSE=Perca o desafio
 INTERFACE_DEBUG_DLC_COMPLETEALLCHALLENGES=Complete todos os desafios
 INTERFACE_DEBUG_DLC_UNLOCKBONUSCHALLENGES=Desbloqueie todos os desafios bônus
 INTERFACE_DEBUG_DLC_GIVECTOKENS=Dar C-Tokens
+INTERFACE_DEBUG_DLC_DISPLAYSTATS=Exibe estatísticas de desafios tentados/vencidos/derrotados (para a dificuldade atual)
+INTERFACE_DEBUG_DLC_RESETSTATS=Redefinir todas as estatísticas para zero (para a dificuldade atual)
+INTERFACE_DEBUG_DLC_SETFIRSTDATE=Definir a primeira data para os desafios diários do DLC
+
+
 INTERFACE_NUMBERCOMPLETED=Total completado
+INTERFACE_CONGRATULATIONS=Parabéns!
+INTERFACE_CARD_DESC=Você pegou uma <col=BOLD>{name}</col> carta colecionável!
+INTERFACE_GRABBED=Agarrado!
 
 PC_NEWSARTICLES=Notícias
 PC_BOXINGGLOVES=Luvas de Boxe
@@ -101,6 +112,15 @@ PC_ARCADE=Máquina arcade
 
 ITEM_INTERFACE_SWITCHBOXER_MSG=Trocar entre as roupas de lutador e detetive
 INTERFACE_RESET_DLC=Resetar DLC
+# MODIFIED
+INTERFACE_RESET_DLC_REMOVEALL=Aviso - Isso vai <col=BOLD>apagar todo o seu progresso do Brawl Bar</col>! (desafios desbloqueáveis, C-Tokens, colecionáveis e história)
+INTERFACE_RESET_DLC_REMOVEALL_MAIN=Isso não afetará o jogo principal e conquistas.
+INTERFACE_RESET_DLC_REMOVEALL_STANDALONE=Isso não afetará as conquistas.
+# MODIFIED
+INTERFACE_RESET_DLC_REMOVESOME=Aviso - Isso vai <col=BOLD>apagar um pouco do progresso do Brawl Bar</col>! (desafios desbloqueáveis e história)
+INTERFACE_RESET_DLC_REMOVESOME_MAIN=Isso não afetará o progresso do jogo principal, conquistas e desbloqueáveis.
+INTERFACE_RESET_DLC_REMOVESOME_STANDALONE=Isso não afetará as conquistas e desbloqueáveis.
+INTERFACE_RESET_DLC_REMOVESOME_MORE=Você manterá seus C-Tokens, comidas e cupons.
 
 #Dialogue
 PC21_HYENA_HELP=Ajuda
@@ -119,12 +139,40 @@ PC21_HEDGEHOG_VERSUS=Versus
 TOPIC_HERSELF=Ela mesma
 TOPIC_DEFAULT_CHARACTER=Personagem padrão
 
+#Characters names
+CHAR_ARMADILLO=Matt
+CHAR_BOXERSNAKE=Sly
+CHAR_ROOSTER=Boyd
+CHAR_BEAR=Rok
+CHAR_HEDGEHOG=Puzzles
+CHAR_HYENA=Tenderjaw
+CHAR_FROG=Bubbles
+CHAR_SHARK=Sharpteeth
+CHAR_IGUANA=Ivy
+CHAR_CLINT=Clint
+CHAR_BACKFOX=Raposa
+CHAR_BACKBUNNY=Coelho
+CHAR_BACKROO=Camguru
+CHAR_BACKCROC=Crocodilo
+CHAR_BACKBADGER=Texugo
+CHAR_BACKDART=Dardo
+CHAR_BACKMOUSE=Rato
+CHAR_BACKRHINO=Rinoceronte
+CHAR_BACKGROUP=Grupo
+CHAR_BACKBAT=Morcego
+CHAR_BACKWOLF=Lobo
+CHAR_BACKPLATYPUS=Ornitorrinco
+CHAR_BACKDAVE=Dave
+CHAR_BACKCLIENT=Cliente
+
 #Interactions
 PC_VRCABINS=Cabine VR
 
 
 INTERFACE_2FASTER=2x mais rápido!
 INTERFACE_WAVE=Horda {number}
+INTERFACE_STRENGTH=força
+INTERFACE_REWARD=Recompensa
 
 CHALLENGE_WIN=Vencedor!
 CHALLENGE_WINS=Venceu
@@ -145,12 +193,13 @@ CHALLENGE_1=1
 CHALLENGE_0=Vai!
 
 MENU_CHALLENGE1=Novato
-#Shortened from "intermediate"
 MENU_CHALLENGE2=Interm.
 MENU_CHALLENGE3=Pro
 MENU_CHALLENGEBONUS=Bônus
 MENU_CHALLENGECOMMUNITY=Comunidade
+MENU_COLLECTIBLECARDS=Cartas
 
+TUTORIAL_SPINFAST=Girar rápido
 TUTORIAL_CHALLENGEPLAY=Começar
 TUTORIAL_CHALLENGEFOOD=Usar comida
 TUTORIAL_CHALLENGESKIP=Pular desafio
@@ -158,6 +207,8 @@ TUTORIAL_CHALLENGESKIP=Pular desafio
 CHOICE_CHALLENGE_SKIP=Pular esse desafio?
 INTERFACE_CHALLENGE_SKIP_INFO=Pular esse desafio irá custar <col=BOLD>{amount} C-Tokens</col>.
 INTERFACE_CHALLENGE_SKIPNOTENOUGH_INFO=Você não tem C-Tokens o suficiente.
+
+CHOICE_SURVIVAL_RANDOM=Essa tentativa deve ser randomizada?
 
 CHOICE_ARCADEMACHINE_PLAY=Jogar?
 
@@ -256,6 +307,10 @@ ITEM_CHALLENGE_EVERYONEDIED=Morreram todos
 ITEM_CHALLENGE_EVERYONEDIED_MSG=Mate <col=BOLD>todos os Tribots</col> invasores!
 ITEM_CHALLENGE_BEATEMUPA=Briga de rua, mas no esgoto
 ITEM_CHALLENGE_BEATEMUPA_MSG=Briga clássica nos esgotos. Três vidas, nada mais!
+# MODIFIED
+ITEM_CHALLENGE_BEATEMUPB=Pancadaria nos telhados
+# MODIFIED
+ITEM_CHALLENGE_BEATEMUPB_MSG=Pancadaria clássica nos telhados. Morte instantânea ao cair.
 ITEM_CHALLENGE_BEATEMUPC=Chefes em sequência
 ITEM_CHALLENGE_BEATEMUPC_MSG=Derrote todos os chefes em pares, um após o outro!
 ITEM_CHALLENGE_FINALFIGHT=A Luta Final
@@ -302,12 +357,31 @@ ITEM_CHALLENGE_STICKONLY=Apenas gravetos
 ITEM_CHALLENGE_STICKONLY_MSG=Inimigos só podem ser derrotados <col=BOLD>usando gravetos!</col>
 ITEM_CHALLENGE_DONTBLOWUP=Não se exploda
 ITEM_CHALLENGE_DONTBLOWUP_MSG=Evite ser explodido e pegue a comida antes que desapareça!
+ITEM_CHALLENGE_LOWGRAVITY=Baixa Gravidade
+ITEM_CHALLENGE_LOWGRAVITY_MSG=Destrua todos os alvos <col=BOLD>rápido</col> e sobreviva!
 
+# Extras
+ITEM_CHALLENGE_SPIKYBALLOONSTWO=Balões espinhosos++
+ITEM_CHALLENGE_ICETRIALTWO=Urso Ártico++
+ITEM_CHALLENGE_SURVIVETHEPARTY=Sobreviva à festa
+ITEM_CHALLENGE_SURVIVETHEPARTY_MSG=Deu ruim na festa. Sobreviva com <col=BOLD>controles invertidos, e <col=BOLD>não bata</col> nos convidados!</col>
+ITEM_CHALLENGE_RAYRISING=Raysident Evil
+ITEM_CHALLENGE_RAYRISING_MSG=Sobreviva ao apocalipse zumbi do R.J.
+ITEM_CHALLENGE_THELOSTFLU=Tesouro Perdido
+ITEM_CHALLENGE_THELOSTFLU_MSG=Encontre as <col=BOLD>três moedas escondidas</col>. Cuidado, você tem apenas 1 HP!
+ITEM_CHALLENGE_PASSIVEAGG=Passivo Agressivo
+ITEM_CHALLENGE_PASSIVEAGG_MSG=Apenas a <col=BOLD>parada</col> pode causar dano aos inimigos!
+ITEM_CHALLENGE_HIDDENCOLL=Coletor Oculto
+ITEM_CHALLENGE_HIDDENCOLL_MSG=Colete moedas, não deixe que inimigos e balões <col=BOLD>invisíveis</col> te parem!
+ITEM_CHALLENGE_PIPESPARRING=Rei do Cano
+ITEM_CHALLENGE_PIPESPARRING_MSG=Fique em um <col=BOLD>pequeno cano por mais tempo</col> que todos os inimigos!
+ITEM_CHALLENGE_CLASSDISMISSED=Aula Finalizada
+ITEM_CHALLENGE_CLASSDISMISSED_MSG=Derrote todos os inimigos rapidamente, eles <col=BOLD>recuperam HP</col>!
 
 ITEM_CHALLENGE_BOSSCLINT=Chefe A
 ITEM_CHALLENGE_BOSSCLINT_MSG=Luta contra chefe
-ITEM_CHALLENGE_BOSSIGUANA=Chefe B
-ITEM_CHALLENGE_BOSSIGUANA_MSG=Luta contra chefe
+ITEM_CHALLENGE_BOSSIVY=Chefe Ivy
+ITEM_CHALLENGE_BOSSIVY_MSG=Lute contra Ivy
 ITEM_CHALLENGE_BOSSSHARK=Chefe C
 ITEM_CHALLENGE_BOSSSHARK_MSG=Luta contra chefe
 
@@ -332,8 +406,24 @@ ITEM_CHALLENGE_QUIZZC_MSG=Mostre seu conhecimento sobre Brok! (difícil)
 ITEM_CHALLENGE_ARMWRESTLE=Queda de braço
 ITEM_CHALLENGE_ARMWRESTLE_MSG=Você é mais forte que o rato mais forte?
 
-#ITEM_OTT=Rosquinha
-#ITEM_OTT_MSG=Deliciosa massa folhada aromatizada com canela e açúcar! <col=BOLD>Te deixa 5% mais rápido.</col>
+#ITEM_OTT=Cinnamon Roll
+#ITEM_OTT_MSG=Tasty rolled pastry flavored with cinnamon and sugar! <col=BOLD>Makes you 5% faster.</col>
+
+ITEM_TIMERPLUS=Relógio++
+ITEM_TIMERPLUS_MSG=Adiciona <col=BOLD>30 segundos</col> ao tempo.
+
+ITEM_TIMERMINUS=Relógio--
+ITEM_TIMERMINUS_MSG=Remove <col=BOLD>30 segundos</col> ao tempo.
+
+GAMEOVER_PC21_HIT=Impulsos de répteis vencem!
+GAMEOVER_PC21_GROUP=Luta Final
+
+INTERFACE_OPTION_CHARLABELS=Informações dos personagens
+INTERFACE_OPTION_CHARLABELS_SIMPLIFIED=Simplificado - Apenas informações importantes são exibidas
+INTERFACE_OPTION_CHARLABELS_ALL=Todas
+INTERFACE_OPTION_CHARLABELS_NONE=Nenhuma
+ITEM_INTERFACE_OPTION_CHARLABELS_MSG=Os grupos devem ser mostrados durante a luta?
+
 
 #-----------------------------------
 # Room info
@@ -365,8 +455,8 @@ BM04_ROOMINFO_WRONGCOLOR=Os valores da cor estão incorretos.
 #-----------------------------------
 # Tutorials
 #-----------------------------------
-#HELP_DLC_SWITCHBOXER=Trocar entre as roupas de Boxeador e Aventura
-#HELP_DLC_SWITCHBOXER_INSTRUCTIONS=Decide qual roupa Brok vai usar, entre a roupa de boxeador ou detetive durante as lutas.##Use esse botão no painel do <col=BOLD>Player</col>.##Por favor, veja que isso apenas afetam o modo de ação (Brok sempre mantém a roupa de detetive no modo aventura)
+#HELP_DLC_SWITCHBOXER=Boxer / Adventure outfit switch
+#HELP_DLC_SWITCHBOXER_INSTRUCTIONS=Decide whether Brok should use his boxer or detective outfit during fights.##Use this button in the <col=BOLD>Player</col> panel.##Please note that this only affects action mode (Brok always keeps the detective outfit in adventure mode)
 
 HELP_DLC_BOXEROUTFIT=Roupa de boxeador
 HELP_DLC_BOXEROUTFIT_INSTRUCTIONS=Você agora pode usar a roupa de boxeador sempre que quiser. Apenas troque pro modo de ação! (Brok sempre mantém a roupa de detetive no modo aventura)##Se você preferir lutar com a roupa normal de detetive, use o ícone na sua aba de <col=BOLD>Player</col>.
@@ -377,10 +467,16 @@ HELP_DLC_BOXEROUTFIT2_MOUSE=<col=BOLD>Quando realizar seu combo normal</col>, pr
 HELP_DLC_BOXEROUTFIT2_GAMEPAD=<col=BOLD>Quando realizar seu combo normal</col>, pressione <col=BOLD>CIMA</col> <spr=GAMEPAD_UP> para realizar um gancho, ou <col=BOLD>BAIXO</col> <spr=GAMEPAD_DOWN> para realizar um soco!
 HELP_DLC_BOXEROUTFIT2_GAMEPAD_PS=<col=BOLD>Quando realizar seu combo normal</col>, pressione <spr=GAMEPAD_UP> para realizar um gancho, ou <spr=GAMEPAD_DOWN> para realizar um soco!
 HELP_DLC_STEAMCOOP=Online co-op
+# MODIFIED
+HELP_DLC_STEAMCOOP_INSTRUCTIONS=Jogue online com seus amigos via Steam!##Pressione <col=BOLD>SHIFT + TAB</col> para abrir o overlay e clique com o botão direito em um amigo. Selecione <col=BOLD>Steam Remote Play Together</col>.##Apenas uma cópia do jogo é necessária, mas cada jogador precisa de um controle. (Jogador 1 pode usar teclado/mouse)
 
 HELP_DLC_STEAMCOOP2=Online co-op (próximo)
-
 HELP_DLC_STEAMCOOP2_INSTRUCTIONS=Sem amigos online pra jogar? Precisa de ajuda para configurar uma sessão online?##Visite nosso <col=BOLD>servidor oficial no Discord</col>! (link nas opções)
+
+
+HELP_DLC_DLCCARDS=Cartas colecionáveis
+HELP_DLC_DLCCARDS_INSTRUCTIONS=Você pode colecionar cartas de seus personagens favoritos!##Encontre-as no <col=BOLD>menu</col> ou veja a caixa <col=BOLD>no bar</col>. Algumas são mais raras que outras!
+
 
 HELP_DLC_ARMWRESTLING=Queda de braço
 HELP_DLC_ARMWRESTLING_INSTRUCTIONS=Quando começar, {command} repetidamente e firmemente para ganhar força.##Mas cuidado, <col=BOLD>não pressione muito rápido ou você vai perder o fôlego</col>.##Não há indicador na tela. Você deve sentir!
@@ -400,13 +496,37 @@ HELP_DLC_DLCFINISH_COMMAND=Você também pode pressionar <button=INPUT_ACTION_SC
 
 HELP_DLC_DLCFINISH2=Desbloquear Bônus
 HELP_DLC_DLCFINISH2_INSTRUCTIONS=Desbloqueie todos os <col=BOLD>desafios bônus e colecionáveis</col> restantes com a roleta da Bubble. Ganhe mais C-Tokens!
-HELP_DLC_DLCFINISH2_INSTRUCTIONS_PC=Compartilhe com seus amigos e baixe outros na comunidade!
 
+HELP_DLC_DLCFINISH3=Desafios Diários
+HELP_DLC_DLCFINISH3_INSTRUCTIONS=Um novo <col=BOLD>Desafio Diário</col> espera por você até o fim dos tempos!
+
+HELP_DLC_DLCFINISH4=Modo Criador
+HELP_DLC_DLCFINISH4_INSTRUCTIONS=Use o <col=BOLD>Modo Criador</col> da Bubbles para criar seus próprios desafios.
+HELP_DLC_DLCFINISH4_INSTRUCTIONS_PC=Compartilhe-os com seus amigos e <col=BOLD>baixe</col> outros da comunidade!##Você também pode criar <col=BOLD>ambientes</col> e <col=BOLD>modificações de personagens</col>. Para receber ajuda nas modificações, entre no Discord!
+HELP_DLC_DLCFINISH4_INSTRUCTIONS_OTHER=Uma seleção com os melhores desafios criados na versão de computador está disponível na aba desafios da <col=BOLD>Comunidade</col>.
+
+HELP_DLC_DLCFINISH5=Artes de fãs estras
+HELP_DLC_DLCFINISH5_INSTRUCTIONS=Desbloqueie desenhos de fãs nos <col=BOLD>Extras</col>.##Sinta-se a vontade de enviar os seus também! Publique nas redes sociais ou no nosso Discord.
+
+HELP_DLC_DLCFINISH6=Dificuldade
+HELP_DLC_DLCFINISH6_INSTRUCTIONS=Para um desafio maior, aumente a dificuldade! Entre nas <col=BOLD>Opções de Jogabilidade</col> para escolher a qualquer momento.##Desafios são completados apenas na dificuldade que você terminar,  ou mais baixo, e por capítulo.
+
+HELP_DLC_SWITCHCOMPLETED=Menos desafios "concluídos" agora?
+HELP_DLC_SWITCHCOMPLETED_INSTRUCTIONS=Após a troca, apenas os desafios <col=BOLD>jogados com esse personagem específico</col> serão considerados concluídos.##A qualquer momento, volte para o <col=BOLD>Personagem padrão</col> para ver novamente todos os desafios concluídos.
+
+
+
+
+#-----------------------------------
+# Specific tutorials
+
+BM01_TITLE_TUTORIAL3_ALT=Ataques do Brok Boxeador
+BM01_SUBTITLE_TUTORIAL3_ALT=Segure <col=BOLD>UP</col> ou <col=BOLD>DOWN</col> enquanto bate para performar diferentes ataques.
+BM01_SUBTITLE_TUTORIAL3_ALT_PS=Segure <spr=GAMEPAD_UP> ou <spr=GAMEPAD_DOWN> enquanto bate para performar diferentes ataques.
 
 #-----------------------------------
 # Gameovers
 #-----------------------------------
-GAMEOVER_PC21_HIT=Impulsos de répteis vencem!
 GAMEOVER_PC21_LASTFIGHT=Você está quase lá. Tenha determinação!
 
 #-----------------------------------
@@ -414,16 +534,21 @@ GAMEOVER_PC21_LASTFIGHT=Você está quase lá. Tenha determinação!
 #-----------------------------------
 TUTORIAL_CHARACTEROPTIONS=Opções de personagem
 TUTORIAL_ITEMOPTIONS=Opções de itens
+TUTORIAL_ENVIMAGEOPTIONS=Opções de imagem
+TUTORIAL_DUPLICATE=Duplicar
 TUTORIAL_TRAPOPTIONS=Opções de armadilhas
 TUTORIAL_CHARACTERDELETE=Deletar esse personagem
 TUTORIAL_CHALLENGEDELETE=Deletar esse desafio
+TUTORIAL_ENVIRONMENTDELETE=Deletar esse ambiente
 CHOICE_DELETE_CHAR=Deletar esse personagem?
 CHOICE_DELETE_CHALLENGE=Deletar esse desafio?
+CHOICE_DELETE_ENVIRONMENT=Deletar esse ambiente?
 CHOICE_DELETE_ITEM_OWNED=(Isso é apenas seu então será perdido para sempre!)
 CHOICE_DELETE_ITEM_WORKSHOP=(Você pode baixar novamente na comunidade)
 
 CHOICE_DELETE_CHAR_POPUP=O personagem será deletado depois dessa tela.
 CHOICE_DELETE_CHALLENGE_POPUP=O desafio será deletado depois dessa tela.
+CHOICE_DELETE_ENVIRONMENT_POPUP=O ambiente será deletado depois dessa tela.
 
 # Traps
 TRAP_CRATE=Caixa
@@ -438,8 +563,10 @@ TRAP_LASERPLACED=Armadilha laser
 TRAP_CONVEYOR=Correia maluca
 TRAP_HOLE=Buraco
 TRAP_FALLDOWN=Pedras
+TRAP_ACID=Ácido
 
 # Modifiers
+MODIFIER_BOMB=Exploda todos os inimigos ao mesmo tempo
 MODIFIER_GRABINSTANTDEATH=Um agarrão é morte instantânea
 MODIFIER_ONED=1D Kombat
 MODIFIER_NOHUD=Sem interface
@@ -447,7 +574,17 @@ MODIFIER_FOODWEAPON=Comida se transformam em armas
 MODIFIER_NOSPECIAL=Sem ataque especial
 MODIFIER_INVERTCONTROLS=Controles invertidos
 MODIFIER_REMOVE=Remove todos os modificadores
-
+MODIFIER_HIGHJUMPS=Gravidade da Lua
+MODIFIER_ZERODAMAGEUNTILHPBELOW=Dano zerado até a vida do jogador estar baixa
+MODIFIER_NOSCALING=Sem efeito de escala
+MODIFIER_ONEHITKILLPLAYER=Jogador tem 1 de vida
+MODIFIER_ONEHITKILLENEMIES=Inimigos têm 1 de vida
+MODIFIER_ONEHITKILL=Todo mundo tem 1 de vida
+MODIFIER_GLITCH=Bugado
+MODIFIER_ONLYPARRY=Apenas aparar pode causar dano aos inimigos
+MODIFIER_ENEMYINVISIBLE=Inimigos ficam invisíveis regularmente
+MODIFIER_HPDRAIN=HP do jogador diminui progressivamente
+MODIFIER_HPGAIN=Inimigos ganham HP progressivamente
 
 BM04_MAININFO=Informação do desafio principal
 BM04_CHARACTER=Personagem
@@ -475,7 +612,8 @@ BM04_OPTION_TIMER=Tempo limite
 BM04_OPTION_ROOMSETTINGS=Configurações da sala
 BM04_OPTION_OBJECTIVE=Tipo do objetivo
 BM04_OPTION_LOADCHALLENGE=Carregar desafio
-BM04_OPTION_MODIFIER=Modificador
+BM04_OPTION_MODIFIERADD=Adicionar modificador
+BM04_OPTION_MODIFIERREMOVE=Remover modificador
 
 BM04_OPTION_CHALLENGESHARETITLE=Título para o workshop
 BM04_OPTION_CHALLENGESHAREDESCR=Descrição para o workshop
@@ -486,15 +624,23 @@ BM04_OPTION_CHALLENGESHAREDIFFICULTY=Dificuldade recomendada
 BM04_OPTION_CHALLENGESHAREEXPORTCHALLENGE=Exportar o desafio?
 BM04_OPTION_CHALLENGESHAREEXPORTCHARMODS=Exportar o(s) modificador(es) de personagem?
 BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT=Exportar o local customizado?
-BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=Exportar a música customizada?
+BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=Exportar a música?
+BM04_OPTION_CHALLENGESHAREUPDATETHUMB=Atualizar a miniatura?
+BM04_OPTION_CHALLENGESHAREUPDATEDESCR=Atualizar a descrição?
+BM04_OPTION_CHALLENGESHAREUPDATETAGS=Atualizar as tags?
 BM04_OPTION_CHALLENGESHARESUBMIT=Enviar
 
+# MODIFIED
+BM04_OPTION_CHALLENGESHARETITLE_HELP=Esse título é apenas para o workshop. <col=BOLD>Inglês é altamente recomendado</col>##Se não for definido, esse será o título do desafio. Tenha certeza que combina com o conteúdo que você está enviando.
+# MODIFIED
+BM04_OPTION_CHALLENGESHAREDESCR_HELP=Essa descrição é mostrada no workshop. <col=BOLD>Inglês é altamente recomendado</col>
 BM04_OPTION_CHALLENGESHAREPICTURE_HELP=Essa imagem será mostrada no workshop como uma miniatura. Deverá ser atrativa e combinar com o conteúdo.##Deve ser um formato <col=BOLD>wide</col>, por exemplo 960 x 540px. Menos que 1 MB, PNG ou JPG.
 BM04_OPTION_CHALLENGESHARETAGS_HELP=Entre com a lista de marcadores, separados por vírgulas.##Alguns marcadores serão adicionados automaticamente, como a dificuldade.
 BM04_OPTION_CHALLENGESHAREEXPORTCHALLENGE_HELP=Incluir o seu desafio?##Se você quiser (por exemplo) exportar o personagem separadamente, selecione "não".
 BM04_OPTION_CHALLENGESHAREEXPORTCHARMODS_HELP=Incluir o seu modificador de personagem?##Se você escolher "sim", tenha certeza que seja bom o suficiente para ser público!
+BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT_HELP=Seu ambiente customizado deve ser incluído?##Se você escolher "Sim", tenha certeza que ele é seguro para tornar público.
 BM04_OPTION_CHALLENGESHARESUBMIT_HELP=Será enviado para o <col=BOLD>Workshop da Steam.</col> Pressione de novo para atualizar.##COWCAT não se responsabiliza por qualquer conteúdo enviado. Tenha certeza que você tem autorização.
-
+BM04_OPTION_CHALLENGESHAREDIFFICULTY_HELP=Indique a dificuldade, de acordo com você, desse desafio.
 
 BM04_OPTION_EXPORTCHALLENGE_TITLE=Incluir seu desafio?
 BM04_OPTION_EXPORTCHARMOD_TITLE=Incluir seu(s) modificador(es) de personagem?
@@ -506,8 +652,12 @@ BM04_OPTION_BACKGROUND_HELP=Escolha um ambiente para esse desafio.##Você també
 BM04_OPTION_ROOMSETTINGS_HELP=Customize a sala (tamanho, escala...)
 BM04_OPTION_OBJECTIVE_HELP=Escolha um objetivo principal para esse desafio.##Exemplo: derrote todos, colete itens, sobreviva...
 BM04_OPTION_TIMER_HELP=Número de segundos até o tempo acabar.##Dependendo do objetivo, pode significar ganhar ou perder.
-BM04_OPTION_MODIFIER_HELP=Use um modificador para fazer coisas especiais.
+BM04_OPTION_MODIFIERADD_HELP=Use um ou vários modificadores para fazer coisas especiais.
+BM04_OPTION_MODIFIERREMOVE_HELP=Remover um modificador.
 
+BM04_OPTION_CHALLENGESHAREUPDATETHUMB_HELP=Se você fez alterações manualmente na página do Workshop, deixe como não.
+BM04_OPTION_CHALLENGESHAREUPDATEDESCR_HELP=Se você fez alterações manualmente na página do Workshop, deixe como não.
+BM04_OPTION_CHALLENGESHAREUPDATETAGS_HELP=Se você fez alterações manualmente na página do Workshop, deixe como não.
 
 BM04_OPTION_DESTRUCTIBLE=Escolha um objeto destrutível
 BM04_OPTION_DESTRUCTIBLE_HOWMANY=Quantos devem ser destruídos?
@@ -520,11 +670,13 @@ BM04_OPTION_TIMER_HOWMANY=Entre com o número de segundos (0 para desabilitar)
 
 BM04_COMMUNITY=Comunidade
 BM04_WORKSHOP=Workshop
+BM04_CREATOR=Criador
 BM04_CURRENTVALUE=Valor atual
 BM04_DEFAULTVALUE=Padrão
 BM04_REQUIRED0=Opcional
 BM04_REQUIRED1=Recomendado
 BM04_REQUIRED2=Requirido
+BM04_IDENTIFIER=Identificador
 
 BM04_ROOM_WIDTH=Largura
 BM04_ROOM_WIDTH_DESC=Padrão/Mínimo = 1920
@@ -538,8 +690,8 @@ BM04_ROOM_MINSCALE_DESC=Determina o tamanho de todos os personagens localizados 
 BM04_ROOM_MAXSCALE=Escala máxima
 BM04_ROOM_MAXSCALE_DESC=Determina o tamanho de todos os personagens localizados na posição permitida mais próximo no ambiente. Padrão = 100%
 
-#BM04_ROOM_MINDEPTH=Profundidade mínima
-#BM04_ROOM_MINDEPTH_DESC=A posição da profundidade mais próxima permitida no ambiente. Exemplo: 500px em relação ao topo da imagem do ambiente.
+#BM04_ROOM_MINDEPTH=Minimum depth
+#BM04_ROOM_MINDEPTH_DESC=The furthest depth position allowed in this room environment. Eg: 500px from the top of the room picture.
 
 BM04_ROOM_COLORIS=Usar uma cor?
 BM04_ROOM_COLORIS_DESC=Coloca uma cor em todos os personagens.
@@ -549,19 +701,25 @@ BM04_ROOM_COLOR_DESC=Coloca uma cor para todos os personagens. Entre com 3 valor
 
 BM04_ITEM_DELETE=Delete o item
 BM04_TRAP_DELETE=Delete a armadilha
+BM04_TRAP_DELETE_HELP=Deletar essa armadilha permanentemente.
 
 BM04_TRAP_ITEMDROP=Item drop
-BM04_TRAP_ITEMDROP_DESC=O item que será deixado pela armadilha quando destruída.
+BM04_TRAP_ITEMDROP_HELP=O(s) item(ns) deixados pela armadilha quando for destruída.
 
 BM04_ADD_ITEMDROP=Adicionar o item
 BM04_RETURN_LISTDROPS=Retorna à lista de drops
+BM04_RETURN_LISTDROPS_HELP=Voltar.
 
 BM04_ID=Identificador
 BM04_CHARACTER_TYPE=Tipo de personagem
-BM04_CHARACTER_TYPE_DESC=O personagem (Brok, Ott, Graff...)
+BM04_CHARACTER_TYPE_HELP=O personagem (Brok, Ott, Graff...)
 
 BM04_CHARACTER_DELETE=Apagar o personagem
+BM04_CHARACTER_DELETE_HELP=Remova esse personagem da cena. <col=BOLD>Todas as propriedades atreladas a ele serão perdidas.</col>
+
 BM04_CHARACTER_TEAM=Time
+BM04_CHARACTER_TEAM_HELP=Times determinam quais personagens podem se atacar.
+
 BM04_CHARACTER_MAINPLAYER=Personagem principal (Time 1)
 BM04_CHARACTER_COOP=Cooperativo (Time 1)
 BM04_CHARACTER_ALLY=CPU Aliado (Time 1)
@@ -573,11 +731,24 @@ BM04_CHARACTER_OTHERPLAYER2=Jogador Oponente (Time 2)
 BM04_CHARACTER_OTHERPLAYER3=Jogador Oponente (Time 3)
 BM04_CHARACTER_OTHERPLAYER4=Jogador Oponente (Time 4)
 
+# All these were modified more or less
+BM04_CHARACTER_FACTORDECISION=Fator decisivo
+BM04_CHARACTER_FACTORDECISION_HELP=Fator decisivo <col=BOLD>(Porcentagem)</col>##Apenas para personagens controlados pelo computador. Quanto maior, mais ativo é o personagem.
+
 BM04_CHARACTER_STRENGTH=Força
 BM04_CHARACTER_STRENGTH_HELP=Força do ataque <col=BOLD>(Por cento)</col>#Note que a força muda de acordo com o tipo de personagem (exemplo: Graff tem menos força que R.J.)
 
 BM04_CHARACTER_DEFENSE=Defesa
 BM04_CHARACTER_DEFENSE_HELP=Defesa <col=BOLD>(Por cento)</col>#Note que a defesa muda de acordo com o tipo de personagem (exemplo: Graff tem menos defesa que R.J.)
+
+BM04_CHARACTER_SPEEDATTACK=Velocidade do ataque
+BM04_CHARACTER_SPEEDATTACK_HELP=Velocidade do ataque <col=BOLD>(Porcentagem)</col>##Mais significa mais rápido, menos é mais lento. Apenas para personagens controlados pelo computador.
+
+BM04_CHARACTER_SPEEDMOVE=Velocidade de movimento
+BM04_CHARACTER_SPEEDMOVE_HELP=Velocidade de movimento <col=BOLD>(Porcentagem)</col>##Mais significa mais rápido, menos é mais lento.
+
+BM04_CHARACTER_HPMAX=Vida máxima
+BM04_CHARACTER_HPMAX_HELP=Pontos de vida máximos quando começar a luta.##O Valor padrão varia de acordo com o personagem.
 
 BM04_CHARACTER_HEIGHTPOS=Posição vertical
 BM04_CHARACTER_HEIGHTPOS_HELP=Posição do personagem/item na tela (menor = embaixo, maior = em cima)#Note que qualquer altura acima do chão vai fazer o personagem cair quando criado.
@@ -611,12 +782,61 @@ BM04_CHARACTER_CHARACTERSKIN=Skin do personagem (Padrão = automático)
 
 BM04_CHARACTER_HEIGHTPOS_TITLE=Posição em relação ao chão (em pixels)
 
+BM04_CHARACTER_NOTPOSSIBLECOOP_TITLE=Não permitido para o cooperativo.
+BM04_CHARACTER_NOTPOSSIBLECOOP_DESC=Esse personagem não pode ser escolhido. Escolha como um "Computador Aliado" ou escolha outro personagem.
+
+BM04_ENVIRONMENT_TITLE=Título do ambiente
+BM04_ENVIRONMENT_TITLE_HELP=Escolha um nome para o novo ambiente.
+
+BM04_ENVIRONMENT_PICTURE=Imagem principal do ambiente
+BM04_ENVIRONMENT_PICTURE_HELP=Envie a imagem de fundo (<col=BOLD>PNG</col> ou <col=BOLD>JPG</col>) Determine também a dimensão padrão da sala.##Deve encher a tela (<col=BOLD>1920 x 1080px</col> mínimo) A altura/largura máxima é <col=BOLD>4096px</col>.
+
+BM04_ENVIRONMENTIMAGE_DEPTH=Profundidade
+BM04_ENVIRONMENTIMAGE_DEPTH_HELP=Determina a posição dos gráficos (personagens, imagens...) baseado na posição vertical.##Exemplo: 0 = fundo (atrás dos personagens), 1080 = na frente.
+
+BM04_ENVIRONMENTIMAGE_ALPHA=Transparência
+BM04_ENVIRONMENTIMAGE_ALPHA_HELP=Define a transparência usada. <col=BOLD>(Porcentagem)</col>##10 = quase invisível, 100 = completamente visível
+
+BM04_ENVIRONMENTIMAGE_FRAMES=Número de quadros
+BM04_ENVIRONMENTIMAGE_FRAMES_HELP=Se essa imagem é animada (muitos quadros dentro do arquivo enviado), coloque a quantidade de quadros aqui.
+
+BM04_ENVIRONMENTIMAGE_FRAMESPEED=Velocidade dos quadros
+BM04_ENVIRONMENTIMAGE_FRAMESPEED_HELP=Se essa imagem é animada, defina a velocidade. <col=BOLD>(Porcentagem)</col>##100 = velocidade normal, 200 = mais rápido, 50 = mais lento
+
+BM04_ENVIRONMENTIMAGE_DELETE=Deletar essa imagem
+BM04_ENVIRONMENTIMAGE_DELETE_HELP=Delete a imagem desse ambiente.
+
+BM04_ENVIRONMENT_SUBMIT=Enviar o ambiente
+BM04_ENVIRONMENT_SUBMIT_HELP=Validar e gerar o ambiente.
+
 BM04_ERROR_TITLE=Erro
 BM04_ERROR_CHARACTER=Um mode do personagem não pôde ser recuperado: {name}
+BM04_ERROR_ENVIRONMENTBACK=A imagem de um ambiente não pôde ser enviada: {name}
+
+
+BM04_ENVIRONMENT_CREATE=Ambiente pronto
+BM04_ENVIRONMENT_DESCR=O ambiente foi salvo com essa imagem de fundo. Ambientes são salvos junto com o desafio. ##Você verá uma nova opção <col=BOLD>Adicionar imagem de ambiente</col> com o botão <col=BOLD>Mais</col> para inserir mais imagens para outras camadas.
+
+BM04_ENVIRONMENT_DESCR2=As dimensões da sala foram adaptadas automaticamente à imagem. Se desejar, altere a <col=BOLD>informação da sala</col> nas <col=BOLD>propriedades do desafio</col>. Principalmente a posição vertical min/max da área que os personagens poderão se mover.
+
+BM04_ENVIRONMENT_MISSINGTITLE_TITLE=Faltando o título
+BM04_ENVIRONMENT_MISSINGTITLE_DESCRIPTION=Por favor, coloque um título para o ambiente.
+
+BM04_ENVIRONMENT_MISSINGPICTURE_TITLE=Faltando imagem
+BM04_ENVIRONMENT_MISSINGPICTURE_DESCRIPTION=Por favor, selecione uma imagem.
+
+BM04_ENVIRONMENT_WRONGDIMENSION_TITLE=Dimensões da imagem
+BM04_ENVIRONMENT_WRONGDIMENSION_DESCRIPTION=O tamanho da imagem está incorreto.
+
+BM04_ENVIRONMENT_MISSINGNAME_TITLE=Faltando nome
+BM04_ENVIRONMENT_MISSINGNAME_DESCRIPTION=Por favor, coloque um nome para essa imagem.
 
 BM04_WORKSHOP_TITLE=Página da Steam Workshop
 BM04_WORKSHOP_DESCR=Acessa a página da Steam Workshop para ver suas criações compartilhadas e baixar novas
 
+
+BM04_WORKSHOP_NOTHING_EXPORT=Nada selecionado
+BM04_WORKSHOP_NOTHING_EXPORT_DESCR=Você não selecionou nada para exportar.
 
 BM04_WORKSHOP_PICTURE_EXPORT=Imagem faltando
 BM04_WORKSHOP_PICTURE_EXPORT_DESCR=Uma imagem de miniatura é necessária para exportação. Por favor, adicione uma.
@@ -631,8 +851,11 @@ BM04_WORKSHOP_ITEMS_STEAM=Seus itens estão sendo exportados para a Steam Worksh
 BM04_WORKSHOP_ITEMS_DRMFREE=Seus itens foram exportados como um arquivo .zip em:##<col=BOLD>{path}</col>##Compartilhe esse arquivo com amigos (ou compartilhe em algum lugar online) e peça para os jogadores exportarem no diretório deles.
 
 BM04_WORKSHOP_SELECT_PICTURE_NOTSELECTED=Nenhuma imagem selecionada
+# MODIFIED
 BM04_WORKSHOP_SELECT_PICTURE_WRONGSIZE=A imagem selecionada é muito grande (tem que ser menos que {size} MB)
 BM04_WORKSHOP_SELECT_PICTURE_COPYFAIL=A imagem selecionada não pôde ser copiada
+BM04_WORKSHOP_SELECT_PICTURE_WRONGFORMAT=A imagem selecionada está em um formato incorreto. (deve ser .png ou .jpg)
+BM04_WORKSHOP_SELECT_PICTURE_THUMB=Falha ao criar a miniatura
 
 BM04_WORKSHOP_SUBSCRIPTIONS=Instalações do Workshop
 BM04_WORKSHOP_NB_SUBSCRIBED={number} item(s) do workshop instalados
@@ -647,18 +870,41 @@ BM04_CHALLENGE_MISSINGOBJECTIVE_TITLE=Objetivo está faltando
 BM04_CHALLENGE_MISSINGOBJECTIVE_DESCRIPTION=Por favor, coloque um objetivo no local de informação do desafio (primeiro ícone).
 BM04_CHALLENGE_MISSINGPLAYERCHARACTER_TITLE=Personagem faltando
 BM04_CHALLENGE_MISSINGPLAYERCHARACTER_DESCRIPTION=Por favor, escolha um personagem que será o jogador.
+BM04_CHALLENGE_TOOMANYENEMIES_TITLE=Muitos inimigos
+BM04_CHALLENGE_TOOMANYENEMIES_DESCRIPTION=Por favor remova pelo menos {nb} inimigo(s).
+BM04_CHALLENGE_TOOMANYENEMYTYPES_TITLE=Muitos tipos de personagens
+BM04_CHALLENGE_TOOMANYENEMYTYPES_DESCRIPTION=Por favor remova pelo menos {nb} tipos de personagens.
+BM04_CHALLENGE_TOOMANYENEMYMODS_TITLE=Muitas modificações de personagem
+BM04_CHALLENGE_TOOMANYENEMYMODS_DESCRIPTION=Por favor remova pelo menos {nb} modificações de personagens.
+BM04_CHALLENGE_TOOMANYTRAPS_TITLE=Muitas armadilhas
+BM04_CHALLENGE_TOOMANYTRAPS_DESCRIPTION=Por favor remova pelo menos {nb} armadilha(s).
 
 BM04_CHALLENGE_INVALID_TITLE=Desafio inválido
 BM04_CHALLENGE_INVALID_DESCRIPTION=Não foi possível encontrar o desafio ou está corrompido. Redirecionando para a áera inicial.
 
 BM04_CREATE_CHARACTER=Criar um mod de personagem
 BM04_CREATE_ENVIRONMENT=Criar um ambiente
+BM04_CREATE_IMAGEENVIRONMENT=Adicione uma imagem ao ambiente
+BM04_UPDATE_ENVIRONMENT=Atualizar ambiente
 BM04_CREATE_MUSIC=Criar uma música
 BM04_CREATE_STARTNEW=Começar um novo projeto
+BM04_ENVIRONMENTIMAGE_NAME=Nome
+BM04_ENVIRONMENTIMAGE_PICTURE=Arquivo da imagem
+BM04_ENVIRONMENTIMAGE_SUBMIT=Enviar imagem
 
 BM04_CREATE_CHARACTER_HELP=Use um dos personagens jogáveis como um modelo base e substitua os arquivos.##Ott é o mais simples de modificar (menos frames/animações)
+BM04_UPDATE_ENVIRONMENT_HELP=Atualizar o ambiente atual.
 BM04_CREATE_ENVIRONMENT_HELP=Um ambiente tem fundo, colisões, dimensões da sala e às vezes elementos em primeiro plano.
+BM04_CREATE_IMAGEENVIRONMENT_HELP=Adiciona uma imagem a outra camada do ambiente. Por exemplo, uma árvore na frente, ou uma lata de lixo ao fundo.
 BM04_CREATE_STARTNEW_HELP=Se você quiser recomeçar do zero.
+BM04_ENVIRONMENTIMAGE_NAME_HELP=Dê um nome a essa nova imagem. Não pode ser igual às anteriores.
+BM04_ENVIRONMENTIMAGE_PICTURE_HELP=Envie um arquivo de imagem.##Mesmas restrições que a imagem de fundo principal, mas ela pode ser menor que o tamanho da tela.
+BM04_ENVIRONMENTIMAGE_SUBMIT_HELP=Posicione na arena
+
+BM04_TRAP_AUTOMATICSCALE=Tamanho automático
+BM04_TRAP_AUTOMATICSCALE_HELP=Se sim, a escala depende da posição vertical. Senão, será fixa.
+BM04_TRAP_MANUALSCALE=Tamanho manual
+BM04_TRAP_MANUALSCALE_HELP=Se a escala automática for desativada, coloque a escala aqui. <col=BOLD>(Porcentagem)</col>
 
 BM04_MORE_FEATURES=Mais funções
 BM04_DIRECTORY_CHARACTER_EXISTS=O diretório do personagem já existe.
@@ -667,9 +913,9 @@ BM04_DIRECTORY_CHARACTER_TITLE=Arquivos exportados
 BM04_DIRECTORY_CHARACTER_POPUP=Os arquivos de animação foram exportadas como imagens no formato PNG para a pasta: (copiado para a área de transferência)##<col=BOLD>{path}</col>##Sinta-se a vontade para modificar com um editor de imagens, então faça um teste colocando esse personagem numa sala.
 
 BM04_DIRECTORY_CHARACTER2_TITLE=Arquivos exportados (próximo)
+# MODIFIED
 BM04_DIRECTORY_CHARACTER2_POPUP=Você também pode substituir os <col=BOLD>arquivos de áudio OGG</col>.##Importante: Mantenha as imagens nas mesmas dimensões que as originais.
 BM04_DIRECTORY_CHARACTER2_POPUP_MODIF=<col=BOLD>Para modificações avançadas </col>para alterar as dimensões, entre outros, confira a documentação incluída em DOCMOD/ no diretório principal do jogo.
-
 
 BM04_CHARACTERNAME_ENTER=Escolha um nome para o personagem
 BM04_CHARACTERMODEL=Escolha um modelo base para seu personagem
@@ -678,9 +924,15 @@ TUTORIAL_ITEMDROPDELETE=Apagar esse drop de item
 
 BM04_ITEM_CHARACTER_DROP=Drop do personagem/armadilha
 BM04_ITEM_TYPE=Tipo do item
+BM04_ITEM_TYPE_HELP=O tipo do item que vai soltar
 BM04_ITEM_PROBABILITY=Probabilidade de dropar
+BM04_ITEM_PROBABILITY_HELP=Para esse tipo, qual a probabilidade de cair. <col=BOLD>(Porcentagem)</col>##Se você adicionar vários tipos de itens, cada um precisa de uma probabilidade menor que 100.
 BM04_ITEM_MIN=Número mínimo para dropar
 BM04_ITEM_MAX=Número máximo para dropar
+BM04_ITEM_MIN_HELP=Indique o número mínimo de itens para soltar.
+BM04_ITEM_MAX_HELP=Indique o número máximo de itens para soltar.
+BM04_ITEMDROP_REMOVE=Remova esse item
+BM04_ITEMDROP_REMOVE_HELP=Remova esse item.
 
 BM04_ITEM_SETDROP_CHARACTER_TITLE=Esse personagem deve dropar esse item quando destruído?
 BM04_ITEM_SETDROP_TRAP_TITLE=Essa armadilha deve dropar esse item quando destruído?
@@ -732,6 +984,7 @@ CHALLENGE_BACK_BUNKERFRONTD=Frente ao Bunker (dia)
 CHALLENGE_BACK_BUNKERFRONTN=Frente ao Bunker (noite)
 CHALLENGE_BACK_SINAPARTMENT=Apartamento do Sin
 CHALLENGE_BACK_BROKAPARTMENT=Apartamento do Brok
+CHALLENGE_BACK_ARENA=Arena
 CHALLENGE_BACK_ONED=Especial - Special - Uma Dimensão
 CHALLENGE_BACK_ICETRIAL=Especial - Desafio no Gelo
 CHALLENGE_BACK_PLATFORMER=Especial - Plataforma
@@ -1107,216 +1360,10 @@ QUIZZ_Q69=Quantos finais tem no jogo?
 
 QUIZZ_Q70=Quantos estudantes humanos fazem as provas?
 
-CHOICE_DONT=Não faça nada
-CHOICE_ABSOLUTELY=Último aviso! Você tem absoluta certeza?
-ACHIEVE_DLC_ADS=Bar Adoradores de Panfletos
-ITEM_DLC_ADS_MSG=Pegue todos os Panfletos Colecionáveis
-INTERFACE_GAMEOVERDLC=Gameovers
-INTERFACE_VERSUS=VS
-INTERFACE_ALLENEMIES=Todos
-INTERFACE_DEBUG_DLC_DISPLAYSTATS=Exibe estatísticas de desafios tentados/vencidos/derrotados (para a dificuldade atual)
-INTERFACE_DEBUG_DLC_RESETSTATS=Redefinir todas as estatísticas para zero (para a dificuldade atual)
-INTERFACE_CONGRATULATIONS=Parabéns!
-INTERFACE_CARD_DESC=Você pegou uma <col=BOLD>{name}</col> carta colecionável!
-# MODIFIED
-INTERFACE_RESET_DLC_REMOVEALL=Aviso - Isso vai <col=BOLD>apagar todo o seu progresso do Brawl Bar</col>! (desafios desbloqueáveis, C-Tokens, colecionáveis e história)
-INTERFACE_RESET_DLC_REMOVEALL_MAIN=Isso não afetará o jogo principal e conquistas.
-INTERFACE_RESET_DLC_REMOVEALL_STANDALONE=Isso não afetará as conquistas.
-# MODIFIED
-INTERFACE_RESET_DLC_REMOVESOME=Aviso - Isso vai <col=BOLD>apagar um pouco do progresso do Brawl Bar</col>! (desafios desbloqueáveis e história)
-INTERFACE_RESET_DLC_REMOVESOME_MAIN=Isso não afetará o progresso do jogo principal, conquistas e desbloqueáveis.
-INTERFACE_RESET_DLC_REMOVESOME_STANDALONE=Isso não afetará as conquistas e desbloqueáveis.
-INTERFACE_RESET_DLC_REMOVESOME_MORE=Você manterá seus C-Tokens, comidas e cupons.
-CHAR_BACKMOUSE=Rato
-CHAR_BACKBAT=Morcego
-CHAR_BACKWOLF=Lobo
-CHAR_BACKPLATYPUS=Ornitorrinco
-CHAR_BACKDAVE=Dave
-CHAR_BACKCLIENT=Cliente
-CHAR_ARMADILLO=Matt
-CHAR_BOXERSNAKE=Sly
-CHAR_ROOSTER=Boyd
-CHAR_BEAR=Rok
-CHAR_HEDGEHOG=Puzzles
-CHAR_HYENA=Tenderjaw
-CHAR_FROG=Bubbles
-CHAR_SHARK=Sharpteeth
-CHAR_IGUANA=Ivy
-CHAR_CLINT=Clint
-CHAR_BACKFOX=Raposa
-CHAR_BACKBUNNY=Coelho
-CHAR_BACKROO=Camguru
-CHAR_BACKCROC=Crocodilo
-CHAR_BACKBADGER=Texugo
-CHAR_BACKDART=Dardo
-CHAR_BACKRESET=Resetar
-CHAR_BACKTRAIN=Trem
-CHAR_BACKRHINO=Rinoceronte
-CHAR_BACKRANDOM=Aleatório
-CHAR_BACKGROUP=Grupo
-
-INTERFACE_STRENGTH=força
-INTERFACE_REWARD=Recompensa
-MENU_COLLECTIBLECARDS=Cartas
-TUTORIAL_SPINFAST=Girar rápido
-# MODIFIED
-ITEM_CHALLENGE_BEATEMUPB=Pancadaria nos telhados
-# MODIFIED
-ITEM_CHALLENGE_BEATEMUPB_MSG=Pancadaria clássica nos telhados. Morte instantânea ao cair.
-ITEM_CHALLENGE_LOWGRAVITY=Baixa Gravidade
-ITEM_CHALLENGE_LOWGRAVITY_MSG=Destrua todos os alvos <col=BOLD>rápido</col> e sobreviva!
-# Extras
-ITEM_CHALLENGE_SPIKYBALLOONSTWO=Balões espinhosos++
-ITEM_CHALLENGE_ICETRIALTWO=Urso Ártico++
-ITEM_CHALLENGE_SURVIVETHEPARTY=Sobreviva à festa
-ITEM_CHALLENGE_SURVIVETHEPARTY_MSG=Deu ruim na festa. Sobreviva com <col=BOLD>controles invertidos, e <col=BOLD>não bata</col> nos convidados!</col>
-ITEM_CHALLENGE_BOSSIVY=Chefe Ivy
-ITEM_CHALLENGE_BOSSIVY_MSG=Lute contra Ivy
-#ITEM_OTT=Rosquinha
-#ITEM_OTT_MSG=Deliciosa massa enrolada com canela e açúcar! <col=BOLD>Deixa você 5% mais rápido.</col>
-ITEM_TIMERPLUS=Relógio++
-ITEM_TIMERPLUS_MSG=Adiciona <col=BOLD>30 segundos</col> ao tempo.
-ITEM_TIMERMINUS=Relógio--
-ITEM_TIMERMINUS_MSG=Remove <col=BOLD>30 segundos</col> ao tempo.
-# MODIFIED
-HELP_DLC_STEAMCOOP_INSTRUCTIONS=Jogue online com seus amigos via Steam!##Pressione <col=BOLD>SHIFT + TAB</col> para abrir o overlay e clique com o botão direito em um amigo. Selecione <col=BOLD>Steam Remote Play Together</col>.##Apenas uma cópia do jogo é necessária, mas cada jogador precisa de um controle. (Jogador 1 pode usar teclado/mouse)
-HELP_DLC_DLCCARDS=Cartas colecionáveis
-HELP_DLC_DLCCARDS_INSTRUCTIONS=Você pode colecionar cartas de seus personagens favoritos!##Encontre-as no <col=BOLD>menu</col> ou veja a caixa <col=BOLD>no bar</col>. Algumas são mais raras que outras!
-HELP_DLC_DLCFINISH3=Desafios Diários
-HELP_DLC_DLCFINISH3_INSTRUCTIONS=Um novo <col=BOLD>Desafio Diário</col> espera por você até o fim dos tempos!
-HELP_DLC_DLCFINISH4=Modo Criador
-HELP_DLC_DLCFINISH4_INSTRUCTIONS=Use o <col=BOLD>Modo Criador</col> da Bubbles para criar seus próprios desafios.
-HELP_DLC_DLCFINISH4_INSTRUCTIONS_PC=Compartilhe-os com seus amigos e <col=BOLD>baixe</col> outros da comunidade!##Você também pode criar <col=BOLD>ambientes</col> e <col=BOLD>modificações de personagens</col>. Para receber ajuda nas modificações, entre no Discord!
-HELP_DLC_DLCFINISH4_INSTRUCTIONS_OTHER=Uma seleção com os melhores desafios criados na versão de computador está disponível na aba desafios da <col=BOLD>Comunidade</col>.
-HELP_DLC_DLCFINISH5=Artes de fãs estras
-HELP_DLC_DLCFINISH5_INSTRUCTIONS=Desbloqueie desenhos de fãs nos <col=BOLD>Extras</col>.##Sinta-se a vontade de enviar os seus também! Publique nas redes sociais ou no nosso Discord.
-HELP_DLC_DLCFINISH6=Dificuldade
-HELP_DLC_DLCFINISH6_INSTRUCTIONS=Para um desafio maior, aumente a dificuldade! Entre nas <col=BOLD>Opções de Jogabilidade</col> para escolher a qualquer momento.##Desafios são completados apenas na dificuldade que você terminar,  ou mais baixo, e por capítulo.
-TUTORIAL_ENVIMAGEOPTIONS=Opções de imagem
-TUTORIAL_DUPLICATE=Duplicar
-TUTORIAL_ENVIRONMENTDELETE=Deletar esse ambiente
-CHOICE_DELETE_ENVIRONMENT=Deletar esse ambiente?
-CHOICE_DELETE_ENVIRONMENT_POPUP=O ambiente será deletado depois dessa tela.
-TRAP_ACID=Ácido
-# Modifiers
-MODIFIER_BOMB=Exploda todos os inimigos ao mesmo tempo
-MODIFIER_HIGHJUMPS=Gravidade da Lua
-MODIFIER_ZERODAMAGEUNTILHPBELOW=Dano zerado até a vida do jogador estar baixa
-MODIFIER_NOSCALING=Sem efeito de escala
-MODIFIER_ONEHITKILLPLAYER=Jogador tem 1 de vida
-MODIFIER_ONEHITKILLENEMIES=Inimigos têm 1 de vida
-MODIFIER_ONEHITKILL=Todo mundo tem 1 de vida
-MODIFIER_GLITCH=Bugado
-BM04_OPTION_MODIFIERADD=Adicionar modificador
-BM04_OPTION_MODIFIERREMOVE=Remover modificador
-# MODIFIED
-BM04_OPTION_CHALLENGESHARETITLE_HELP=Esse título é apenas para o workshop. <col=BOLD>Inglês é altamente recomendado</col>##Se não for definido, esse será o título do desafio. Tenha certeza que combina com o conteúdo que você está enviando.
-# MODIFIED
-BM04_OPTION_CHALLENGESHAREDESCR_HELP=Essa descrição é mostrada no workshop. <col=BOLD>Inglês é altamente recomendado</col>
-BM04_OPTION_CHALLENGESHAREEXPORTENVIRONMENT_HELP=Seu ambiente customizado deve ser incluído?##Se você escolher "Sim", tenha certeza que ele é seguro para tornar público.
-BM04_OPTION_CHALLENGESHAREDIFFICULTY_HELP=Indique a dificuldade, de acordo com você, desse desafio.
-BM04_OPTION_MODIFIERADD_HELP=Use um ou vários modificadores para fazer coisas especiais.
-BM04_OPTION_MODIFIERREMOVE_HELP=Remover um modificador.
-BM04_CREATOR=Criador
-BM04_IDENTIFIER=Identificador
-BM04_TRAP_DELETE_HELP=Deletar essa armadilha permanentemente.
-BM04_TRAP_ITEMDROP_HELP=O(s) item(ns) deixados pela armadilha quando for destruída.
-BM04_RETURN_LISTDROPS_HELP=Voltar.
-BM04_CHARACTER_TYPE_HELP=O personagem (Brok, Ott, Graff...)
-BM04_CHARACTER_DELETE_HELP=Remova esse personagem da cena. <col=BOLD>Todas as propriedades atreladas a ele serão perdidas.</col>
-BM04_CHARACTER_TEAM_HELP=Times determinam quais personagens podem se atacar.
-# All these were modified more or less
-BM04_CHARACTER_FACTORDECISION=Fator decisivo
-BM04_CHARACTER_FACTORDECISION_HELP=Fator decisivo <col=BOLD>(Porcentagem)</col>##Apenas para personagens controlados pelo computador. Quanto maior, mais ativo é o personagem.
-BM04_CHARACTER_SPEEDATTACK=Velocidade do ataque
-BM04_CHARACTER_SPEEDATTACK_HELP=Velocidade do ataque <col=BOLD>(Porcentagem)</col>##Mais significa mais rápido, menos é mais lento. Apenas para personagens controlados pelo computador.
-BM04_CHARACTER_SPEEDMOVE=Velocidade de movimento
-BM04_CHARACTER_SPEEDMOVE_HELP=Velocidade de movimento <col=BOLD>(Porcentagem)</col>##Mais significa mais rápido, menos é mais lento.
-BM04_CHARACTER_HPMAX=Vida máxima
-BM04_CHARACTER_HPMAX_HELP=Pontos de vida máximos quando começar a luta.##O Valor padrão varia de acordo com o personagem.
-BM04_CHARACTER_NOTPOSSIBLECOOP_TITLE=Não permitido para o cooperativo.
-BM04_CHARACTER_NOTPOSSIBLECOOP_DESC=Esse personagem não pode ser escolhido. Escolha como um "Computador Aliado" ou escolha outro personagem.
-BM04_ENVIRONMENT_TITLE=Título do ambiente
-BM04_ENVIRONMENT_TITLE_HELP=Escolha um nome para o novo ambiente.
-BM04_ENVIRONMENT_PICTURE=Imagem principal do ambiente
-BM04_ENVIRONMENT_PICTURE_HELP=Envie a imagem de fundo (<col=BOLD>PNG</col> ou <col=BOLD>JPG</col>) Determine também a dimensão padrão da sala.##Deve encher a tela (<col=BOLD>1920 x 1080px</col> mínimo) A altura/largura máxima é <col=BOLD>4096px</col>.
-BM04_ENVIRONMENTIMAGE_DEPTH=Profundidade
-BM04_ENVIRONMENTIMAGE_DEPTH_HELP=Determina a posição dos gráficos (personagens, imagens...) baseado na posição vertical.##Exemplo: 0 = fundo (atrás dos personagens), 1080 = na frente.
-BM04_ENVIRONMENTIMAGE_ALPHA=Transparência
-BM04_ENVIRONMENTIMAGE_ALPHA_HELP=Define a transparência usada. <col=BOLD>(Porcentagem)</col>##10 = quase invisível, 100 = completamente visível
-BM04_ENVIRONMENTIMAGE_FRAMES=Número de quadros
-BM04_ENVIRONMENTIMAGE_FRAMES_HELP=Se essa imagem é animada (muitos quadros dentro do arquivo enviado), coloque a quantidade de quadros aqui.
-BM04_ENVIRONMENTIMAGE_FRAMESPEED=Velocidade dos quadros
-BM04_ENVIRONMENTIMAGE_FRAMESPEED_HELP=Se essa imagem é animada, defina a velocidade. <col=BOLD>(Porcentagem)</col>##100 = velocidade normal, 200 = mais rápido, 50 = mais lento
-BM04_ENVIRONMENTIMAGE_DELETE=Deletar essa imagem
-BM04_ENVIRONMENTIMAGE_DELETE_HELP=Delete a imagem desse ambiente.
-BM04_ENVIRONMENT_SUBMIT=Enviar o ambiente
-BM04_ENVIRONMENT_SUBMIT_HELP=Validar e gerar o ambiente.
-BM04_ERROR_ENVIRONMENTBACK=A imagem de um ambiente não pôde ser enviada: {name}
-BM04_ENVIRONMENT_CREATE=Ambiente pronto
-BM04_ENVIRONMENT_DESCR=O ambiente foi salvo com essa imagem de fundo. Ambientes são salvos junto com o desafio. ##Você verá uma nova opção <col=BOLD>Adicionar imagem de ambiente</col> com o botão <col=BOLD>Mais</col> para inserir mais imagens para outras camadas.
-BM04_ENVIRONMENT_DESCR2=As dimensões da sala foram adaptadas automaticamente à imagem. Se desejar, altere a <col=BOLD>informação da sala</col> nas <col=BOLD>propriedades do desafio</col>. Principalmente a posição vertical min/max da área que os personagens poderão se mover.
-BM04_ENVIRONMENT_MISSINGTITLE_TITLE=Faltando o título
-BM04_ENVIRONMENT_MISSINGTITLE_DESCRIPTION=Por favor, coloque um título para o ambiente.
-BM04_ENVIRONMENT_MISSINGPICTURE_TITLE=Faltando imagem
-BM04_ENVIRONMENT_MISSINGPICTURE_DESCRIPTION=Por favor, selecione uma imagem.
-BM04_ENVIRONMENT_WRONGDIMENSION_TITLE=Dimensões da imagem
-BM04_ENVIRONMENT_WRONGDIMENSION_DESCRIPTION=O tamanho da imagem está incorreto.
-BM04_ENVIRONMENT_MISSINGNAME_TITLE=Faltando nome
-BM04_ENVIRONMENT_MISSINGNAME_DESCRIPTION=Por favor, coloque um nome para essa imagem.
-BM04_WORKSHOP_NOTHING_EXPORT=Nada selecionado
-BM04_WORKSHOP_NOTHING_EXPORT_DESCR=Você não selecionou nada para exportar.
-BM04_WORKSHOP_SELECT_PICTURE_WRONGFORMAT=A imagem selecionada está em um formato incorreto. (deve ser .png ou .jpg)
-BM04_WORKSHOP_SELECT_PICTURE_THUMB=Falha ao criar a miniatura
-BM04_CREATE_IMAGEENVIRONMENT=Adicione uma imagem ao ambiente
-BM04_UPDATE_ENVIRONMENT=Atualizar ambiente
-BM04_ENVIRONMENTIMAGE_NAME=Nome
-BM04_ENVIRONMENTIMAGE_PICTURE=Arquivo da imagem
-BM04_ENVIRONMENTIMAGE_SUBMIT=Enviar imagem
-BM04_UPDATE_ENVIRONMENT_HELP=Atualizar o ambiente atual.
-BM04_CREATE_IMAGEENVIRONMENT_HELP=Adiciona uma imagem a outra camada do ambiente. Por exemplo, uma árvore na frente, ou uma lata de lixo ao fundo.
-BM04_ENVIRONMENTIMAGE_NAME_HELP=Dê um nome a essa nova imagem. Não pode ser igual às anteriores.
-BM04_ENVIRONMENTIMAGE_PICTURE_HELP=Envie um arquivo de imagem.##Mesmas restrições que a imagem de fundo principal, mas ela pode ser menor que o tamanho da tela.
-BM04_ENVIRONMENTIMAGE_SUBMIT_HELP=Posicione na arena
-BM04_TRAP_AUTOMATICSCALE=Tamanho automático
-BM04_TRAP_AUTOMATICSCALE_HELP=Se sim, a escala depende da posição vertical. Senão, será fixa.
-BM04_TRAP_MANUALSCALE=Tamanho manual
-BM04_TRAP_MANUALSCALE_HELP=Se a escala automática for desativada, coloque a escala aqui. <col=BOLD>(Porcentagem)</col>
-BM04_ITEM_TYPE_HELP=O tipo do item que vai soltar
-BM04_ITEM_PROBABILITY_HELP=Para esse tipo, qual a probabilidade de cair. <col=BOLD>(Porcentagem)</col>##Se você adicionar vários tipos de itens, cada um precisa de uma probabilidade menor que 100.
-BM04_ITEM_MIN_HELP=Indique o número mínimo de itens para soltar.
-BM04_ITEM_MAX_HELP=Indique o número máximo de itens para soltar.
-BM04_ITEMDROP_REMOVE=Remova esse item
-BM04_ITEMDROP_REMOVE_HELP=Remova esse item.
-
-
-
-INTERFACE_GRABBED=Agarrado!
-CHOICE_SURVIVAL_RANDOM=Essa tentativa deve ser randomizada?
-ITEM_CHALLENGE_RAYRISING=Raysident Evil
-ITEM_CHALLENGE_RAYRISING_MSG=Sobreviva ao apocalipse zumbi do R.J.
-GAMEOVER_PC21_GROUP=Luta Final
-INTERFACE_OPTION_CHARLABELS=Informações dos personagens
-INTERFACE_OPTION_CHARLABELS_SIMPLIFIED=Simplificado - Apenas informações importantes são exibidas
-INTERFACE_OPTION_CHARLABELS_ALL=Todas
-INTERFACE_OPTION_CHARLABELS_NONE=Nenhuma
-ITEM_INTERFACE_OPTION_CHARLABELS_MSG=Os grupos devem ser mostrados durante a luta?
-#-----------------------------------
-# Specific tutorials
-BM01_TITLE_TUTORIAL3_ALT=Ataques do Brok Boxeador
-BM01_SUBTITLE_TUTORIAL3_ALT=Segure <col=BOLD>UP</col> ou <col=BOLD>DOWN</col> enquanto bate para performar diferentes ataques.
-BM01_SUBTITLE_TUTORIAL3_ALT_PS=Segure <spr=GAMEPAD_UP> ou <spr=GAMEPAD_DOWN> enquanto bate para performar diferentes ataques.
-BM04_CHALLENGE_TOOMANYENEMIES_TITLE=Muitos inimigos
-BM04_CHALLENGE_TOOMANYENEMIES_DESCRIPTION=Por favor remova pelo menos {nb} inimigo(s).
-BM04_CHALLENGE_TOOMANYENEMYTYPES_TITLE=Muitos tipos de personagens
-BM04_CHALLENGE_TOOMANYENEMYTYPES_DESCRIPTION=Por favor remova pelo menos {nb} tipos de personagens.
-BM04_CHALLENGE_TOOMANYENEMYMODS_TITLE=Muitas modificações de personagem
-BM04_CHALLENGE_TOOMANYENEMYMODS_DESCRIPTION=Por favor remova pelo menos {nb} modificações de personagens.
-BM04_CHALLENGE_TOOMANYTRAPS_TITLE=Muitas armadilhas
-BM04_CHALLENGE_TOOMANYTRAPS_DESCRIPTION=Por favor remova pelo menos {nb} armadilha(s).
 ITEM_NOFOOD_MSG=Sem comida
-#INTERFACE_CHARSELECTED_BASE=Personagem base
+#INTERFACE_CHARSELECTED_BASE=Base character
 INTERFACE_CHARSELECTED_MOD=Modificação baseada no <col=BLUE>{name}</col>
+INTERFACE_CHARSELECTED_PACKAGED=Mod empacotado baseado em <col=BLUE>{name}</col>
 INTERFACE_SHADOWADS_BRAWLBAR=No The Brawl Bar, os panfletos das sombras mudam toda vez que você retorna ao bar, mas você mantém os pontos. Troque-os por C-Tokens na loja.
 ITEM_CTOKENS2=2 C-Tokens
 ITEM_CTOKENS2_MSG=Trocar um ponto das sombras
@@ -1324,14 +1371,11 @@ ITEM_CTOKENS10=10 C-Tokens
 ITEM_CTOKENS10_MSG=Trocar 4 pontos das sombras
 ITEM_CTOKENS100=100 C-Tokens
 ITEM_CTOKENS100_MSG=Trocar 20 pontos das sombras
-INTERFACE_UNLOCK1CTOKEN=Desbloquear (1 C-Token)
-
-CHALLENGE_BACK_ARENA=Arena
-HELP_DLC_SWITCHCOMPLETED=Menos desafios "concluídos" agora?
-HELP_DLC_SWITCHCOMPLETED_INSTRUCTIONS=Após a troca, apenas os desafios <col=BOLD>jogados com esse personagem específico</col> serão considerados concluídos.##A qualquer momento, volte para o <col=BOLD>Personagem padrão</col> para ver novamente todos os desafios concluídos.
 
 TUTORIAL_OPTIONS=Opções
 TUTORIAL_DELETE=Excluir
+
+INTERFACE_UNLOCK1CTOKEN=Desbloquear (1 C-Token)
 
 SAVES_BRAWLBAR1=Os salvamentos armazenam apenas informações básicas, como dificuldade e personagem escolhido.
 SAVES_BRAWLBAR1B=(Além do progresso no jogo principal)
@@ -1340,20 +1384,11 @@ SAVES_BRAWLBAR2=O progresso dos desafios é compartilhado entre todos os salvame
 BM04_CHALLENGE_SIMPLEMODE_TOOMANY=Desafios demais
 BM04_CHALLENGE_SIMPLEMODE_TOOMANY_DESCRIPTION=O número máximo de desafios que podem ser salvos foi atingido ({number} desafios). Por favor, exclua um no painel de carregamento para salvar este.
 
-CHALLENGE_LITE_CANNOT_LOAD=Não foi possível carregar o arquivo de desafio.
-
-BM04_OPTION_CHALLENGESHAREUPDATETHUMB=Atualizar a miniatura?
-BM04_OPTION_CHALLENGESHAREUPDATEDESCR=Atualizar a descrição?
-BM04_OPTION_CHALLENGESHAREUPDATETAGS=Atualizar as tags?
-
-BM04_OPTION_CHALLENGESHAREUPDATETHUMB_HELP=Se você fez alterações manualmente na página do Workshop, deixe como não.
-BM04_OPTION_CHALLENGESHAREUPDATEDESCR_HELP=Se você fez alterações manualmente na página do Workshop, deixe como não.
-BM04_OPTION_CHALLENGESHAREUPDATETAGS_HELP=Se você fez alterações manualmente na página do Workshop, deixe como não.
-
 BM04_OPTION_CHALLENGESHAREZIP=Exportar como arquivo .zip
 BM04_OPTION_CHALLENGESHAREZIP_HELP=Exporte sua criação fora do Steam Workshop.
 
-INTERFACE_DEBUG_DLC_SETFIRSTDATE=Definir a primeira data para os desafios diários do DLC
+CHALLENGE_LITE_CANNOT_LOAD=Não foi possível carregar o arquivo de desafio.
+
 ATLASIAN_BACK_TITLE=Voltar ao Brawl Bar
 ATLASIAN_CREDITS=Adaptado por COWCAT
 ATLASIAN_CONTINUE=Retomar
@@ -1362,6 +1397,8 @@ ATLASIAN_SHOOT=Atirar
 ATLASIAN_BOMB=Bomba / Hiper
 ATLASIAN_FOCUSED=Alternar focado
 ATLASIAN_UNFOCUSED=Alternar desfocado
+
+
 
 
 ITEM_DYNAMITE=Dinamite
@@ -1394,32 +1431,15 @@ CHOICE_DELETE_MUSIC=Excluir esta música?
 
 CHOICE_DELETE_MUSIC_POPUP=A música será excluída após esta tela.
 
-BM04_OPTION_CHALLENGESHAREEXPORTMUSIC=Exportar a música?
 BM04_OPTION_CHALLENGESHAREEXPORTMUSIC_HELP=Incluir sua música personalizada?
 
-
-INTERFACE_CHARSELECTED_PACKAGED=Mod empacotado baseado em <col=BLUE>{name}</col>
-BM04_PACKAGED=Empacotado
 INTERFACE_JUKEBOX_UNLOCKED=Desbloqueado
+BM04_PACKAGED=Empacotado
+
 
 TUTORIAL_BM04_SCROLL=Rolagem
 TUTORIAL_BM04_MENU=Opções do menu
 
-
-ITEM_CHALLENGE_THELOSTFLU=Tesouro Perdido
-ITEM_CHALLENGE_THELOSTFLU_MSG=Encontre as <col=BOLD>três moedas escondidas</col>. Cuidado, você tem apenas 1 HP!
-ITEM_CHALLENGE_PASSIVEAGG=Passivo Agressivo
-ITEM_CHALLENGE_PASSIVEAGG_MSG=Apenas a <col=BOLD>parada</col> pode causar dano aos inimigos!
-ITEM_CHALLENGE_HIDDENCOLL=Coletor Oculto
-ITEM_CHALLENGE_HIDDENCOLL_MSG=Colete moedas, não deixe que inimigos e balões <col=BOLD>invisíveis</col> te parem!
-ITEM_CHALLENGE_PIPESPARRING=Rei do Cano
-ITEM_CHALLENGE_PIPESPARRING_MSG=Fique em um <col=BOLD>pequeno cano por mais tempo</col> que todos os inimigos!
-ITEM_CHALLENGE_CLASSDISMISSED=Aula Finalizada
-ITEM_CHALLENGE_CLASSDISMISSED_MSG=Derrote todos os inimigos rapidamente, eles <col=BOLD>recuperam HP</col>!
-
-MODIFIER_ENEMYINVISIBLE=Inimigos ficam invisíveis regularmente
-MODIFIER_HPDRAIN=HP do jogador diminui progressivamente
-MODIFIER_HPGAIN=Inimigos ganham HP progressivamente
 
 HELP_DLC_SWITCHMODE=Mudar modo
 HELP_DLC_SWITCHMODE_INSTRUCTIONS=No bar, você pode alternar entre modo aventura (falar com personagens) e modo ação (pular e atacar).
@@ -1430,6 +1450,6 @@ INTERFACE_DLC_FAMILIAR=Você conhece o universo BROK?
 INTERFACE_OPTION_FAMILIAR=Você conhece o universo BROK?
 ITEM_INTERFACE_OPTION_FAMILIAR_MSG=Substitui desafios que exigem conhecimento de outros títulos BROK
 
-
 ITEM_CHALLENGELOCKED_CHAR=Bloqueado (para este personagem)
 ITEM_CHALLENGELOCKED_CHAR_MSG=Você já <col=BOLD>concluiu este desafio</col> com o personagem padrão, mas não com <col=BOLD>{name}</col>
+

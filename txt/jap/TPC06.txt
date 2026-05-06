@@ -1,3 +1,4 @@
+﻿# LANGUAGE: JAP
 #-------------------------------
 #=SECTOR 56X STREET
 #-------------------------------
@@ -7,14 +8,15 @@
 PC_FLOWERS=商人
 PC_STALL=売店
 PC_METALSHUTTERS=鋼の戸
-PC_LEFTPANEL=左のパネル
-PC_RIGHTPANEL=右のパネル
-PC_BUTTON_LEFT=左のボタン
-PC_BUTTON_MIDDLE=真ん中のボタン
-PC_BUTTON_RIGHT=右のボタン
+#PC_LEFTPANEL=Left command panel
+#PC_RIGHTPANEL=Right command panel
 PC_INFOPHONE=情報電話
 PC_ENTRYCODE=暗証番号
 PC_BRIDGE=橋
+PC_BUTTON_LEFT=左のボタン
+PC_BUTTON_MIDDLE=真ん中のボタン
+PC_BUTTON_RIGHT=右のボタン
+
 PC_STATUETTE=彫像
 PC_BOOK=本
 PC_BOTTOMPANEL=パネル
@@ -24,6 +26,7 @@ PC_THUMBWHEEL=サムホイール
 PC_NEON=蛍光灯
 PC_RUBBLE=瓦礫
 PC_BUILDING=建物
+
 
 #----- Choices / Items --------
 GOT_STATUETTE=彫像だ！
@@ -46,750 +49,966 @@ INTERROGATION_GOVERNMENT=政府は何を企んでいるか？
 ###############################################
 
 
-# *****************************************************************
-# CONTEXT - Coming here for the first time
-# *****************************************************************
-#----------------------
-#= First dialog
-#----------------------
-# Brok                                 
+# Brok - Coming here for the first time
 PC06_FIRST1-1=メールによると、依頼人はこのセンターベーシック568に住んでるらしい…。この通りの近くだな
-# Brok                                 
-PC06_FIRST1-2=調べに行くか！
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - Checking the Pipemail
-# *****************************************************************
-#----------------------
-#= Pipemail
-#----------------------
-# Brok                                 
+# Brok
+PC06_FIRST1-2=調べに行くか！
+
+#----------------------------------------------------
+# Brok - Checking the Pipemail
 PC06_PIPEMAIL_STORY190-1=こいつ、壊されて略奪されてるな…
+
 #----------------------------------------------------
 # Brok
 PC06_PIPEMAIL1-1=この機械で請求書の支払いをしたり薬の配給を受けたりできる。試しにやってみるか！
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_PIPEMAIL1B-1=何も起きねえな。壊れてるのか？
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-2=そうですよ
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-3=昨日からこんな状態で、まだ誰も修理に来ていません
-# Brok                                 
+
+# Brok
 PC06_PIPEMAIL1B-4=運がねえな…
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-5=そんな事言わないでください！ ワケあってここでお店を広げていますが、お客さんがもう全然来ないんです……。商売上がったりですよ
-# Brok                                 
+
+# Brok
 PC06_PIPEMAIL1B-6=この辺に他のパイプターミナルはあるか？
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-7=おそらくは。ただ、スラムの各地で同じようにパイプターミナルが破壊されていると聞きました
-# Brok                                 
+
+# Brok
 PC06_PIPEMAIL1B-8=本当か？ 俺はそんな噂耳にしてないな
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-9=あら、御存じだとは思いますが…
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-10=メディアは政府にコントロールされています。自分たちに都合の悪い情報は流さないんですよ
-# Brok                                 
+
+# Brok
 PC06_PIPEMAIL1B-11=やっぱりそうなのか…？
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-12=常識ですよ！
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-13=いずれにせよ…。とても不安です。我々の生活にとってこの機械はなくてはならないものですから
-# Brok                                 
+
+# Brok
 PC06_PIPEMAIL1B-14=そうだな…
-# Brok                                 
+
+# Brok
 PC06_PIPEMAIL1B-15=まぁ、最近は他にも心配すべき事が身の周りで多すぎてな……
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-16=皆さん同じようにおっしゃいます
-# Flower                                 
+
+# Flower
 PC06_PIPEMAIL1B-17=けれどポジティブに。明るい未来を信じましょう！
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_PIPEMAIL2-1=この機械壊れてるな…
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_PIPEMAIL_BILL-1=無理だな。請求書を入れても読み込まねえ。他のを探しに行くか…
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_PIPEMAIL_TRAMPPRESCR-1=おっさんの処方箋を使うのは無理があるな…
-# Brok                                 
+
+# Brok
 PC06_PIPEMAIL_TRAMPPRESCR-2=薬剤配給管は抗公害剤しか配給してねえ。挙句にコイツ壊れてやがる。お手上げだ
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_PIPEMAIL_PILL-1=おい…なんでちゃんと動かねえんだよ
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_PIPEMAIL_OTHERS-1=この妙ちくりんな機械は配達は出来るが…集荷はしてくれねえな
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - Room interactions
-# *****************************************************************
-#----------------------
-#= Going to other building
-#----------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok - Room interactions
 PC06_OTHERBUILDING_BEFORE-1=依頼人は確かに568区と言ったはずだ。こんなところに入って時間を無駄にするわけにはいかねえな
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_OTHERBUILDING1-1=ここには用がねえな
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_OTHERBUILDING2-1=勝手に他人の建物に入るわけにはいかねえな
-#----------------------------------------------------
 
-#----------------------
-#= Stall
-#----------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok
 PC06_STALL1-1=アンテール教関連の品物ばかりだな…
-# Brok                                 
+
+# Brok
 PC06_STALL1-2=俺は信者じゃねえ
-#----------------------------------------------------
 
-#----------------------
-#= Metal shutters
-#----------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok
 PC06_METALSHUTTERS1-1=こいつは…。俺の家よりもセキュリティがしっかりしてるみたいだな
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_METALSHUTTERS2-1=入る方法を見つけねえとな
-#----------------------------------------------------
 
-#----------------------
-#= Left panel
-#----------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok
 PC06_LEFTPANEL_OPEN-1=もう開いてるぞ！
-#----------------------------------------------------
 
-#----------------------
-#= Left panel
-#----------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok
 PC06_RIGHTPANEL1-1=これは情報電話（インフォフォン）だな…。住人のリストが出てくるやつだ
-# Brok                                 
+
+# Brok
 PC06_RIGHTPANEL1-2=シンの名前は…。見つけた。在宅中だな
-# Brok                                 
+
+# Brok
 PC06_RIGHTPANEL1-3=呼び鈴を鳴らしてみた方がよさそうか？
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_RIGHTPANEL1B-1=おいおい！ ボタンが潰れてるぞ！
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_RIGHTPANEL2-1=俺のアパートにこんなスパイボットが置かれてなくてよかったぜ。誰が留守か一目で分かるなんてセキュリティが聞いて呆れるな
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - Talking to the Flower religious merchant
-# *****************************************************************
-#----------------------
-#= Flower girl
-#----------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok - Talking to the Flower religious merchant
 PC06_FLOWERS_WELCOME1-1=よう！
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-2=こんにちは、お客様。何かお探しものはありますか？
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME1-3=少し話をさせてもらってもいいか？
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME1-4=仕事はどうだ？
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-5=もっと上手くいくと良いのですが、文句はありません
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-6=日々生活出来るだけの実入りがあれば、十分です
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-7=この仕事が好きなんです。近くで妙な事が起こっても気にしませんし
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME1-8=何の事だ？
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-9=ちょうど今朝方の話です。店の準備をするために早起きしたのですが…
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-10=大きな男の人が寝てたんです。ちょうどそこの角で…しかも下着姿で！
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-11=そのまま寝ていられると客足に響きそうで心配だったので、起こそうとしたんです
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-12=起こすのは本当に大変でしたよ！ わたしでは立たせる事も出来なかったんです！
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-13=本当に可哀想でした。お酒を飲んだかどうかも分からないそうで…昨夜の事は何も覚えていないとおっしゃっていました
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-14=おそらく、なにか良くないお薬を服用したのではないかと…
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME1-15=そいつはホームレスか？
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-16=いいえ。警官だとおっしゃってました
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-17=ドラム地区の人たちも、結局自分たちの人生に満足できていないのかもしれませんね…
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-18=警察官のあんな落ちぶれた姿を見るなんて…。本当に悲しい事です
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME1-19=どれほど街の周囲をキレイに飾り立てしても、内側にはトラブルを抱え込んでるのでしょう。スラムのわたしたちと何も変わりません
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME1-20=そうだな。印象を良くするためだけのただの飾りだ
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_WELCOME2-1=それで、御入用があっていらしたわけですね？
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME2-2=美しい守護聖人の彫像を入荷しました。只今セール中ですよ！
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME2-3=けっこうだ。俺は馬鹿げた妄想を信じるようなタマじゃねえ
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME2-4=そんな罰当たりな事をおっしゃってはいけません！
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME2-5=ただ、もっと酷い事を言われ慣れていますから、気にしませんよ
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME2-6=まあ、なんでもいいが
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME2-7=目に見えねえ魔法のナンチャラを信じたかったら好きにしてくれ。俺は現実に根差したものだけを信じ続ける
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME2-8=例えば…俺自身の力だな。毎日を生き抜くための力だ
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME2-9=その認識が間違っているのですよ
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME2-10=アンテールの真の目的はそこにあるのです。信仰の力がわたしたちを強くしてくれるのです
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME2-11=そうだな…。でもって、お前さんの店がその信仰の力をカネの力に変える手伝いをしてくれるわけだな
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME2-12=まぁ…、自分を変えるのに遅すぎる事はありません
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_WELCOME2-13=気が変わったらまた来てくださいね！
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME2-14=へいへい…。
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_WELCOME3-1=もうお戻りになりましたか！ あなたを説得出来たとは何よりです！
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_WELCOME3-2=残念だが、そうでもねえ
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_WELCOME4-1=ごゆっくり見てくださいね！
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - More interactions
-# *****************************************************************
-#-----------------------------
-#= Bottom panel
-#-----------------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok - More interactions
 PC06_BOTTOMPANEL1-1=中の構造がどうなってるにせよ、この辺の電気をコントロールしてるものだろうな
-# Brok                                 
-PC06_BOTTOMPANEL1-2=ゴチャゴチャした配線を見るとイヤな事を思い出しそうだ…。俺はパスだ
-#----------------------------------------------------
 
-#-----------------------------
-#= Neon
-#-----------------------------
-# Brok                                 
+# Brok
+PC06_BOTTOMPANEL1-2=ゴチャゴチャした配線を見るとイヤな事を思い出しそうだ…。俺はパスだ
+
+#----------------------------------------------------
+# Brok
 PC06_NEON1-1=この橋は昔はピカピカの芸術品みたいで、道行く市民を歓迎していたもんだ
-# Brok                                 
+
+# Brok
 PC06_NEON1-2=今じゃもう過去の遺物だな…
+
 #----------------------------------------------------
 # Brok
 PC06_THENEON1-1=こんなモン俺は要らねえぞ
 
-#----------------------
-#= Rubble
-#----------------------
-# Brok                                 
+#----------------------------------------------------
+# Brok
 PC06_RUBBLE1-1=道が塞がってるな…。この建物、どうも最近崩れたみたいだな
-# Brok                                 
+
+# Brok
 PC06_RUBBLE1-2=どの地区でも崩壊が進んでるな…。いずれみんな粉々になっちまいそうだ…
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - Day 3 - Dr. Gherkin accompanies us to fix the Pipe pills
-# *****************************************************************
-#-----------------------------
-#= Coming back with Gherkin
-#-----------------------------
-# Gherkin                                 
+#----------------------------------------------------
+# Gherkin - Day 3 - Dr. Gherkin accompanies us to fix the Pipe pills
 PC06_GHERKIN_FIRST1-1=今から修理に取り掛かる
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_GHERKIN_FIRST2-1=今日は随分と静かだな…
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIRST2-2=こんなに人の気配がないと心配になってきちまう
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIRST2-3=いや。わ、私が思うにスラムの人々は屋内に避難しているのだろう
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIRST2-4=ヘイズが強く公害レベルがピークに達した時は、屋内に避難するようにガイドラインに示されているだろう
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIRST2-5=だといいんだが…
+
 #----------------------------------------------------
-# Brok                                 
-#At this point, Brok doesn't know the journalist is a she
+# Brok - At this point, Brok doesn't know the journalist is a she
 PC06_GHERKIN_FIRST3-1=で、そのジャーナリストっての、一体何者なんだ？
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIRST3-2=分からない。機械で声を変えていたようだ
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIRST3-3=…おい、怪しいとは思わなかったのかよ？
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIRST3-4=…
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIRST3-5=言われてみればそうだな…
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIRST3-6=まったく最高だなオイ…
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIRST3-7=罠の中に飛び込んだんじゃないと祈ろうぜ
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIRST3-8=こんな悲惨な状況で誰かを罠にはめるなんて、そんな狂った連中が居るわけないだろう？
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIRST3-9=この辺の奴らがどれほど常識を飛び越えた行動するか、お前さん実際に自分の目で目の当たりにするまで信じねえだろうよ
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_GHERKIN_TOOFAR-1=あまり遠くに行かねえようにしねえと…
+
 #----------------------------------------------------
-# Gherkin                                 
+# Gherkin
 PC06_GHERKIN_TIMEROUT1-1=修理が済んだぞ！
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_GHERKIN_TIMEROUT2-1=早かったな！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_TIMEROUT2-2=もう動くのか？
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_TIMEROUT2-3=ああ。請求書の支払いなら可能だ
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_TIMEROUT2-4=そんなのどうでもいいだろ！ 薬の配給は？
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_TIMEROUT2-5=その…。配送ルートが再稼働するまで待たねばならない
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_TIMEROUT2-6=どのぐらいかかるんだ？
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_TIMEROUT2-7=早ければ数分だが…ともすれば一日かかるやもしれん
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_TIMEROUT2-8=丸一日だって？！
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_TIMEROUT2-9=非常に大雑把な推定だと思ってくれ。このような事態に遭遇する事は滅多にないのだよ
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_TIMEROUT2-10=なら、数分でその再稼働とやらが済むのを祈るとしよう
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_TIMEROUT2-11=例のジャーナリストとやらはまだ来てねえみてえだな
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_TIMEROUT2-12=では…少しこの辺りを見回るとするか？
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - Day 3 - Meeting with Dee
-# *****************************************************************
-# Dee                                 
+#----------------------------------------------------
+# Dee - Day 3 - Meeting with Dee
 PC06_GHERKIN_DEE-1=…
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_DEE-2=…お前か？
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_DEE-3=…私の想像と、随分違う人物だな…
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_DEE-4=ゲルキン博士、独りで来いとハッキリ伝えた筈だぞ
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_DEE-5=彼は私のボディガードだよ。気にする事はない
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_DEE-6=キミの名は何と言うのだね？
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_DEE-7=…
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_DEE-8=ディーだ
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_DEE-9=手短に話そう。お互い忙しい身の上だろう
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_DEE-10=いくつか重要な情報が必要だ
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_DEE-11=い、いいとも。なら、聞いてくれたまえ
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_DEE-12=おっと…
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_DEE-13=話を遮っちまって悪いんだが…。”お友達”が俺らを追いかけてきたみたいだぜ
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_DEE-14=なんという！ もうたくさんだ…
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_DEE-15=どういう事だ？ 何故奴らはアタシたちを襲う？
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_DEE-16=知るかよ！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_DEE-17=下がってろ。俺が片付けてやる
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_DEE-18=フン！ 黙って後ろで見てるような腰抜けだと思わないでほしいね
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_GHERKIN_FIGHTOVER1-1=見た感じもう大丈夫みてえだな！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-2=今はまだ、ってだけだが
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-3=ゲルキン博士。ついてこい
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIGHTOVER1-4=わ、わかった
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-5=ちょっと待て！
-# Gherkin                                  
+
+# Gherkin
 PC06_GHERKIN_FIGHTOVER1-6=…？
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-7=俺はヤツの事まだ信用したワケじゃねえ！
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-8=「助けてくれてありがとう」の一言もないのかい？
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-9=助けてくれだなんて言った覚えはないんだが！
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-10=あぁそうかい！
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-11=カウボーイの旦那はご自分の腕っぷしに随分自信を持っていらっしゃる！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-12=コイツはカウボーイハットじゃねえぞ、御婦人。俺は探偵だ
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-13=なるほど。ボディガードに探偵にカウボーイ。厄介事は全部独りで片付ける何でも屋かい？
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-14=うっせえよ…
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-15=アンタが心配するような事は何もない。アタシはドクターにインタビューしに来ただけなんだ
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-16=どうにも信用出来ねえ
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-17=なんだと？！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-18=戦ってる間にあれこれ色々考えて結論付けた
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-19=お前、何か隠してるだろ
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-20=戦ってる最中によそ事考える暇があったってのかい？
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-21=随分突飛な事を言うじゃないか！
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIGHTOVER1-22=探偵殿、それは本当かね？
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-23=俺を信じてくれ
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-24=ここでいちいち口論する暇なんてないんだ。さぁ行こう博士
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-25=ダメだ
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-26=俺の使命はドクターが薬剤配給管を直す間護衛する事だ。インタビューに付き合ってどこぞをほっつき歩くなんて俺の契約にはねえぞ！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-27=お前が本当の動機を話すまで、俺らはどこにも行かねえ
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-28=(はぁ…) しつこいヤツだねアンタ…
-# Dee                                 
+
+# Dee
 PC06_GHERKIN_FIGHTOVER1-29=わかった。アンタの勝ちだ。好きにしな！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-30=ドクター、ちょっとだけ外してくれねえか
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIGHTOVER1-31=そんな…！ 探偵殿…
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-32=心配いらねえよ。その辺の角にでも隠れててくれ
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-33=ロボット共を見つけたら叫んでくれればスグ駆けつける
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIGHTOVER1-34=あぁ…わ、わかった…
-# Gherkin                                 
+
+# Gherkin
 PC06_GHERKIN_FIGHTOVER1-35=な、長引かせないでくれたまえよ…！
-# Brok                                 
+
+# Brok
 PC06_GHERKIN_FIGHTOVER1-36=早速始めよう
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_INTERROGATION_EXIT1-1=待ってくれ
-# Dee                                 
+
+# Dee
 PC06_INTERROGATION_EXIT1-2=何を待つんだ？
-# Brok                                 
+
+# Brok
 PC06_INTERROGATION_EXIT1-3=ただ…ちょっと待ってくれ
+
 #----------------------------------------------------
-# Brok                                 
-#Resume interrogation
+# Brok - Resume interrogation
 PC06_INTERROGATION_RESUME-1=じゃぁ…
+
 #----------------------------------------------------
-# Dee                                 
-#Go away after exiting interrogation
+# Dee - Go away after exiting interrogation
 PC06_INTERROGATION_LIMIT-1=おい！
-# Brok                                 
+
+# Brok
 PC06_INTERROGATION_LIMIT-2=すまねえ…！
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - Interrogation
-# *****************************************************************
-# Brok                                 
+#----------------------------------------------------
+# Brok - Interrogation
 PC06_CLUE_DEE_GHERKINWARN-1=さっき、俺に対して心配するなって言ったよな
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-2=だがお前さんの行動は言動と違う事を言ってるぜ
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINWARN-3=アタシの行動だって…？
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-4=お前が俺に送り付けたメールだよ。「奴を信用するな」とかなんとか
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-5=一体どこの誰がこんなモン送り付けてきやがったのか気になってな。グルームって呼ばれてる野郎にいくつか質問してみたんだ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-6=あの野郎、女のジャーナリストが送り主だって吐いてくれたぜ
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINWARN-7=なんだと！ あの男、守秘義務は守ると誓ったのに！
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-8=悪いな。あの手の輩から真実を捻り出す方法を俺はしっかり心得てるんだ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-9=さてと。お前さんが身分を隠してゲルキン博士にコンタクトを取ったジャーナリストだとすると…
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-10=一連の事件の背後にいるのはたった一人の人物だと考えられる
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-11=お前だろう
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINWARN-12=いい推察だ。いくらか手順をすっ飛ばしてはいるが…
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINWARN-13=的を射た推理なのは間違いない
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINWARN-14=ああ、あの博士の腹の内や経歴が、見た目どおりの真っ白ってワケじゃぁないと信じる根拠がアタシにはある
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-15=今現時点では、一体誰が一番ヤバい秘密を隠してるのかよく分からねえ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-16=けど、何故わざわざ危険を冒してまで俺に警告したんだ？
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINWARN-17=自分でも…よく分かっていない
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINWARN-18=探偵を信じる方がいいと直感的に思ったんだが…。正直なところ、早くも自分の判断を後悔し始めてる
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-19=真実を知らねえのに信頼もクソもあるかよ。それこそが俺がアンタを尋問してる目的だ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINWARN-20=なぁ。俺はアンタの正体にもう察しがついてるんだよ。推理するには十分すぎるほどの手掛かりが手元にある
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-1=シン。お前さん、この名前に聞き覚えがあるんじゃないか？
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-2=…
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-3=まぁ、そりゃ当然だ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-4=実のところ、ヤツは俺を雇ってとある事件を捜査をさせた。二日前の事だ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-5=捜査の最中、俺はヤツのアパートで写真を見つけた。そこにはヤツ自身と女性、そして女児が写ってた
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-6=その晩の事だ。VRアリーナでお前さんとやり合っただろ。偶然にも被り物を剥ぎ取っちまって…
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-7=あの件について、正直まだアンタを恨んでるよ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-8=あの日の事件との繋がりを見出すのに随分と時間がかかっちまったが、ようやく分かったぜ…
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-9=あの写真の女、お前だろ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-10=ハッカーからもお前がシンの事を調べてたって聞いてる
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-11=どう考えても、長い事離れてた旦那の行方が今更気になってきちまったって事だろ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-12=そう考えれば全てが腑に落ちる
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-13=シンはドラマーだった。だからお前さんも間違いなくそうだろう
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-14=ジャーナリストにはドラマーじゃなきゃなれねえからな
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-15=そして極めつけは…シンの野郎がついこの前まで住んでた場所の目と鼻の先を待ち合わせ場所に指定するなんて、随分良く出来た偶然じゃねえか？
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-16=けど、俺はこんな奇跡的な一致が偶然だなんて信じねえぞ！
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-17=…
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-18=見事だ
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-19=アンタはアタシが知る中で最高の探偵だと言わざるを得ないね。でなきゃ、どんなロクでもない状況でも生き残る事が出来るほどの強運の持ち主だ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-20=バカ言え。強運なモンか。むしろ正反対だ。いつもいつも最悪な状況に周りを巻き込む疫病神だぞ俺は
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-21=まぁどちらにしろ。アンタの推理は正しいよ
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-22=シン・シルバーはアタシの旦那だ。アタシの生涯の最愛の相手だよ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-23=離婚して自分で派手に棄てた相手に対して、随分な評価をするじゃねえか
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_WORRIEDSIN-24=個人的かつ複雑な事情があるんだよ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-25=分かった。脇道にそれた長話はやめとこう。今はもっと大事な事がある
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-26=お前さんの素性は分かった。だが新たな疑問が浮かんでくる
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_WORRIEDSIN-27=お前さん一体何の調査をしてるんだ？
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-1=お前さん、ドクターゲルキンに何らかの恨みを持ってるだろ。違うか？
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-2=まず最初に、お前さん博士の事を信用するなって俺にメールをよこしただろ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-3=けど、後になって自分の行動のせいで夫の身に何が起こるかが心配になった
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-4=俺にとっては俄かに信じ難い話ではあるんだが…
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-5=ドクターゲルキンはお前さんに取って脅威になるのか？
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINTHREAT-6=…
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINTHREAT-7=まだ証拠を集めている最中だが…間接的には結論は出ている。その通りだ
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINTHREAT-8=彼はまだアタシの正体に気付いていない。アタシはこの状況を好機だと捉えている
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-9=奴さんは製薬会社に勤めてる一介の研究員だろ。そんな一般人に毛が生えたような人物に一体何が出来るよ？
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINTHREAT-10=その認識こそ、お前が犯してる最大のミスだ！ ヤツの正体はそんな生易しいものじゃない！
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-11=なら…。研究員の肩書はタテマエだってのか？
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINTHREAT-12=少なくともある程度はな
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINTHREAT-13=なるほど、何か分かってきた気がするぞ
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-1=あぁマジか！
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-2=お前さん、政府について調べるようにハッカーに頼んでたな…
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-3=それに、博士は「組織の一員」とか何とかうっかり口走ってた記憶があるぞ
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINGOVERNMENT-4=どうやら真相に辿り着いたみたいだね
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-5=あの野郎…。アスパラみてえな細いナリしてトンだ食わせモンじゃねえか…
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-6=要するにヤツは政府高官の一人って事だな？
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINGOVERNMENT-7=ああ。証拠も押さえてる
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-8=あぁ、ようやく腑に落ちたぜ。奴さんに会った時から、どっかで見た事あるような気がしてならなかったんだよ！
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINGOVERNMENT-9=それはありえない。一般市民は誰が政府関係者なのか知らないはずだ
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-10=まぁ、そうだな
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-11=けど待てよ。逆に意味が分からねえ！
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-12=なんで奴さんは命懸けでスラムを救おうとしてるんだ？ それも独りで
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINGOVERNMENT-13=アタシには予想がついてる
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-14=いずれにせよ。政府の目的は市民に奉仕する事、だよな？
-# Dee                                 
+
+# Dee
 PC06_CLUE_DEE_GHERKINGOVERNMENT-15=バカ言うな。そんな単純な話じゃないって自分が一番よく分かってるクセに
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-16=ふむ…
-# Brok                                 
+
+# Brok
 PC06_CLUE_DEE_GHERKINGOVERNMENT-17=予想がついたぜ。お前さんが何故そんなに心配してるのかな
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_PICKONE_GOVERNMENT_WRONG1-1=つまり、お前自身がこの辺一帯をメチャメチャにしやがった真犯人だって事だろ！
-# Dee                                 
+
+# Dee
 PC06_PICKONE_GOVERNMENT_WRONG1-2=おい！
-# Brok                                 
+
+# Brok
 PC06_PICKONE_GOVERNMENT_WRONG1-3=あぁ…。悪い。その、つまり俺が言おうとした事はだな…
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_CLUE_SECTOR56X_GOVERNMENT-1=あんたマスコミ関係者だろ…
-# Brok                                 
+
+# Brok
 PC06_CLUE_SECTOR56X_GOVERNMENT-2=でもって、政府はマスコミをコントロールしてる
-# Brok                                 
+
+# Brok
 PC06_CLUE_SECTOR56X_GOVERNMENT-3=あんたの身の回りで何が起きてるのか、ようやく見えてきたぜ
-# Dee                                 
+
+# Dee
 PC06_CLUE_SECTOR56X_GOVERNMENT-4=かいつまんで言えば、そういう事だ
-# Dee                                 
+
+# Dee
 PC06_CLUE_SECTOR56X_GOVERNMENT-5=あの男の指示一つで、アタシとシンの命なんてどうにでも出来るんだよ
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_DEE_AFTERINTERROGATION1-1=お前さんの命だって？ おいなんでそんな大事な事を先に…
-# Dee                                 
+
+# Dee
 PC06_DEE_AFTERINTERROGATION1-2=聞いて
-# Dee                                 
+
+# Dee
 PC06_DEE_AFTERINTERROGATION1-3=もう時間がない。つべこべ言わずにアタシの言う事を信じてくれ
-# Brok                                 
+
+# Brok
 PC06_DEE_AFTERINTERROGATION1-4=分かった。作戦は？
-# Dee                                 
+
+# Dee
 PC06_DEE_AFTERINTERROGATION1-5=奴が絶対に逃げられないような場所に誘い込む
-# Brok                                 
+
+# Brok
 PC06_DEE_AFTERINTERROGATION1-6=なんだって…？
-# Brok                                 
+
+# Brok
 PC06_DEE_AFTERINTERROGATION1-7=そいつはまた随分と…
-# Gherkin                                 
+
+# Gherkin
 PC06_DEE_AFTERINTERROGATION1-8=うわああぁっ！！
-#----------------------------------------------------
 
-# *****************************************************************
-# CONTEXT - Big number of robots come at them
-# *****************************************************************
-# Brok                                 
+#----------------------------------------------------
+# Brok - Big number of robots come at them
 PC06_DEE_AFTERINTERROGATION2-1=そんなバカな？ アイツらジャンプまで出来るのか？！
-# Dee                                 
-PC06_DEE_AFTERINTERROGATION2-2=一体何が起きてるんだ！？
-# Brok                                 
-PC06_DEE_AFTERINTERROGATION2-3=おいおい、さすがに敵の数が多すぎるぞ！
-# Gherkin                                 
-PC06_DEE_AFTERINTERROGATION2-4=も、もうおしまいだ！
-# Dee                                 
-PC06_DEE_AFTERINTERROGATION2-5=おい！ 今すぐここを離れるぞ！
-# Brok                                 
-PC06_DEE_AFTERINTERROGATION2-6=でもどこ行くんだよ？！
-# Dee                                 
-PC06_DEE_AFTERINTERROGATION2-7=どこでもいい。ここよりマシだろ
-# Gherkin                                 
-PC06_DEE_AFTERINTERROGATION2-8=こ、この近くに地下壕がある…。数ブロック進んだ場所だ…
-# Gherkin                                 
-PC06_DEE_AFTERINTERROGATION2-9=わ、私ならシステムにアクセス出来る…
-# Dee                                 
-PC06_DEE_AFTERINTERROGATION2-10=そりゃいい！
-# Brok                                 
-PC06_DEE_AFTERINTERROGATION2-11=俺たちから離れるなよ、ドクター！
-# Brok                                 
-PC06_DEE_AFTERINTERROGATION2-12=行くぞ！
-#----------------------------------------------------
-# Brok                                 
-PC06_ENDINTERROGATE3-1=(地下壕行きかよ…)
-# Brok                                 
-PC06_ENDINTERROGATE3-2=(あの女の計画にはうってつけの状況じゃねえか)
-# Brok                                 
-PC06_ENDINTERROGATE3-3=(あんな事やめさせるべきだったんだが…。けど状況がこんなになっちまったらもう…)
-# Brok                                 
-PC06_ENDINTERROGATE3-4=(他に選択肢はねえな)
-#----------------------------------------------------
 
-#-----------------------------
-#= Hitting the flower girl
-#-----------------------------
+# Dee
+PC06_DEE_AFTERINTERROGATION2-2=一体何が起きてるんだ！？
+
+# Brok
+PC06_DEE_AFTERINTERROGATION2-3=おいおい、さすがに敵の数が多すぎるぞ！
+
+# Gherkin
+PC06_DEE_AFTERINTERROGATION2-4=も、もうおしまいだ！
+
+# Dee
+PC06_DEE_AFTERINTERROGATION2-5=おい！ 今すぐここを離れるぞ！
+
+# Brok
+PC06_DEE_AFTERINTERROGATION2-6=でもどこ行くんだよ？！
+
+# Dee
+PC06_DEE_AFTERINTERROGATION2-7=どこでもいい。ここよりマシだろ
+
+# Gherkin
+PC06_DEE_AFTERINTERROGATION2-8=こ、この近くに地下壕がある…。数ブロック進んだ場所だ…
+
+# Gherkin
+PC06_DEE_AFTERINTERROGATION2-9=わ、私ならシステムにアクセス出来る…
+
+# Dee
+PC06_DEE_AFTERINTERROGATION2-10=そりゃいい！
+
+# Brok
+PC06_DEE_AFTERINTERROGATION2-11=俺たちから離れるなよ、ドクター！
+
+# Brok
+PC06_DEE_AFTERINTERROGATION2-12=行くぞ！
+
+#----------------------------------------------------
+# Brok
+PC06_ENDINTERROGATE3-1=(地下壕行きかよ…)
+
+# Brok
+PC06_ENDINTERROGATE3-2=(あの女の計画にはうってつけの状況じゃねえか)
+
+# Brok
+PC06_ENDINTERROGATE3-3=(あんな事やめさせるべきだったんだが…。けど状況がこんなになっちまったらもう…)
+
+# Brok
+PC06_ENDINTERROGATE3-4=(他に選択肢はねえな)
+
+#----------------------------------------------------
 # Flower
 PC06_FLOWERS_HIT1-1=あぁびっくりした！脅かさないでくださいよ！
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_HIT2-1=安くしますから…！ だから暴力はやめてください！
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_HIT3-1=きゃぁあああああ～っ！！
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_BACKAFTERHIT-1=お客様…！
-# Brok                                 
+
+# Brok
 PC06_FLOWERS_BACKAFTERHIT-2=えっと、だな…。この間の事はすまねえ
-# Flower                                 
+
+# Flower
 PC06_FLOWERS_BACKAFTERHIT-3=ダナンテ！ わたしは貴方を許します。全能の方の御心のままに！
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_WALKONSTAND1-1=お客様！ 陳列棚から降りてください！
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_WALKONSTAND2-1=何か壊したら弁償していただきますからね！
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_FLOWERS_WALKONSTAND3-1=こんな事をしていたら罰が当たりますよ！
+
 #----------------------------------------------------
-# Brok                                 
+# Brok
 PC06_STALL_STEAL1-1=いいや…。タダであろうと、俺にはこんなもの必要ねえよ
+
 #----------------------------------------------------
-# Flower                                 
+# Flower
 PC06_PIPEPILL_HIT1-1=なんてこと…！ まさかあなたも…！
-# Brok                                 
+
+# Brok
 PC06_PIPEPILL_HIT1-2=何の事だ？
-# Flower                                 
+
+# Flower
 PC06_PIPEPILL_HIT1-3=スクイラーです。機械を壊したのは彼らですよ
-# Brok                                 
+
+# Brok
 PC06_PIPEPILL_HIT1-4=実際に見たのか？
-# Flower                                 
+
+# Flower
 PC06_PIPEPILL_HIT1-5=他の誰がこんな事を出来ますか！ 明らかに彼らの仕業ですよ！
+
 #----------------------------------------------------
 # Brok
 PC06_TYPE_DEATH-1=いっちょあがり！
+
 #----------------------------------------------------
 # Flower
 PC06_TRAILER1-1=常に前向きに、明るい未来を信じねばなりません！
 
-
-
-
-
-
+#----------------------------------------------------
+# Unknown
 COOP_PC06_FLOWERS1-1=宗教的な路上の商人の一人。
 
+# Unknown
 COOP_PC06_FLOWERS1-2=善悪問わず、ここで起こることすべてを見ています。
+
+#----------------------------------------------------
+
